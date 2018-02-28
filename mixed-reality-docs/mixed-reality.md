@@ -26,7 +26,7 @@ Now, the combination of all three – computer processing, human input, and envi
 
 Since mixed reality is the blending of the physical world and digital world, these two realities define the polar ends of a spectrum known as the virtuality continuum. For simplicity, we refer to this as the *mixed reality spectrum*. On the left-hand side we have physical reality in which we, humans, exist. Then on the right-hand side we have the corresponding digital reality.
 
-[!VIDEO https://www.youtube.com/embed/_xpI0JosYUk]
+>[!VIDEO https://www.youtube.com/embed/_xpI0JosYUk]
 
 Most mobile phones on the market today have little to no environmental understanding capabilities. Thus the experiences they offer cannot mix between physical and digital realities. The experiences that overlay graphics on video streams of the physical world are *augmented reality*, and the experiences that occlude your view to present a digital experience are *virtual reality*. As you can see, the experiences enabled between these two extremes is *mixed reality*:
 * Starting with the physical world, placing a digital object, such as a hologram, as if it was really there.

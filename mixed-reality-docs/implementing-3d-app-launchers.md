@@ -16,7 +16,7 @@ The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) i
 
 **Note:** 3D app launchers are not currently available for use on HoloLens.
 
-[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
+>[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
 ## 3D app launcher creation process
 

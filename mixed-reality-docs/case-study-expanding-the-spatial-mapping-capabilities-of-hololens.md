@@ -16,7 +16,7 @@ When creating our first apps for Microsoft HoloLens, we were eager to see just h
 
 ## Watch the video
 
-[!VIDEO https://www.youtube.com/embed/iUmTi3_Ynus]
+>[!VIDEO https://www.youtube.com/embed/iUmTi3_Ynus]
 
 ## Beyond spatial mapping
 

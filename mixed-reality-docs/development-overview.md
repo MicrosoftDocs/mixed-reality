@@ -14,7 +14,7 @@ keywords:
 
 Mixed reality apps are built with the [Universal Windows Platform](https://dev.windows.com/en-us/getstarted). All mixed reality apps are Universal Windows apps, and all Universal Windows apps can be made to run on Windows Mixed Reality devices. With Windows 10 and familiarity with middleware tools like Unity, you can start building mixed reality experiences today.
 
-[!VIDEO https://www.youtube.com/embed/A784OdX8xzI]
+>[!VIDEO https://www.youtube.com/embed/A784OdX8xzI]
 
 ## Basics of mixed reality development
 
