@@ -20,7 +20,11 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif",
+          "**/*.pdf",
+          "**/*.wav"
         ],
         "exclude": [
           "**/obj/**",
@@ -31,11 +35,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/mixed-reality-docs/breadcrumb/toc.json",
+      "breadcrumb_path": "/mixed-reality/breadcrumb/toc.json",
       "extendBreadcrumb": true
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "mixed-reality-docs"
+    "dest": "mixed-reality"
   }
 }
