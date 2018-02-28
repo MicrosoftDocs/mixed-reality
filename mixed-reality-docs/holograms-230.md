@@ -19,7 +19,7 @@ keywords:
 * Go beyond the placement techniques we learned in [Holograms 101](holograms-101.md), and provide feedback about where a hologram can be placed in the environment.
 * Explore occlusion effects, so when your hologram is behind a real-world object, you can still see it with x-ray vision!
 
-[!VIDEO https://www.youtube.com/embed/NSNYRkUX6Mw]
+>[!VIDEO https://www.youtube.com/embed/NSNYRkUX6Mw]
 
 **Prerequisites**
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
@@ -39,7 +39,7 @@ keywords:
 
 ## Unity Setup
 
-[!VIDEO https://www.youtube.com/embed/y2Y4LhK6TEM]
+>[!VIDEO https://www.youtube.com/embed/y2Y4LhK6TEM]
 * Start **Unity**.
 * Select **New** to create a new project.
 * Name the project **Planetarium**.
@@ -79,7 +79,7 @@ keywords:
 
 ## Chapter 1 - Scanning
 
-[!VIDEO https://www.youtube.com/embed/888oW51z_cE]
+>[!VIDEO https://www.youtube.com/embed/888oW51z_cE]
 
 **Objectives**
 * Learn about the SurfaceObserver and how its settings impact experience and performance.
@@ -152,7 +152,7 @@ Finally, let's save our room mesh and load it into Unity.
 
 ## Chapter 2 - Visualization
 
-[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4] **Objectives**
 * Learn the basics of shaders.
 * Visualize your surroundings.
 
@@ -182,7 +182,7 @@ Unity does a great job of previewing materials, but it's always a good idea to c
 
 ## Chapter 3 - Processing
 
-[!VIDEO https://www.youtube.com/embed/kaUKiNiDxwY] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/kaUKiNiDxwY] **Objectives**
 * Learn techniques to process spatial mapping data for use in your application.
 * Analyze spatial mapping data to find planes and remove triangles.
 * Use planes for hologram placement.
@@ -417,7 +417,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 
 ## Chapter 4 - Placement
 
-[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc] **Objectives**
 * Determine if a hologram will fit on a surface.
 * Provide feedback to the user when a hologram can/cannot fit on a surface.
 
@@ -1032,7 +1032,7 @@ public class Placeable : MonoBehaviour
 
 ## Chapter 5 - Occlusion
 
-[!VIDEO https://www.youtube.com/embed/6Xrzh_w-7SE]
+>[!VIDEO https://www.youtube.com/embed/6Xrzh_w-7SE]
 
 **Objectives**
 * Determine if a hologram is occluded by the spatial mapping mesh.

@@ -16,7 +16,7 @@ The HoloLens team is listening to feedback from developers in the Windows Inside
 
 **Latest release:** Windows Holographic August 2016 Update (**10.0.14393.0**, Windows 10 Anniversary Release)
 
-[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
+>[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
 To [update to the current release](updating-the-hololens-device.md), open the *Settings* app, go to *Update & Security*, then select the *Check for updates* button.
 

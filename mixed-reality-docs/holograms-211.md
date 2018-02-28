@@ -14,7 +14,7 @@ keywords:
 
 [Gestures](gestures.md) turn user intention into action. With gestures, users can interact with holograms. In this course, we'll learn how to track the user's hands, respond to user input, and give feedback to the user based on hand state and location.
 
-[!VIDEO https://www.youtube.com/embed/c9zlpfFeEtc]
+>[!VIDEO https://www.youtube.com/embed/c9zlpfFeEtc]
 
 In [Holograms 101](holograms-101.md), we used a simple air-tap gesture to interact with our holograms. Now, we'll move beyond the air-tap gesture and explore new concepts to:
 * Detect when the user's hand is being tracked and provide feedback to the user.
@@ -71,7 +71,7 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 
 ## Chapter 1 - Hand detected feedback
 
-[!VIDEO https://www.youtube.com/embed/D1FcIyuFTZQ]
+>[!VIDEO https://www.youtube.com/embed/D1FcIyuFTZQ]
 
 **Objectives**
 * Subscribe to hand tracking events.
@@ -112,7 +112,7 @@ The **CursorFeedback.cs** script works like this:
 
 ## Chapter 2 - Navigation
 
-[!VIDEO https://www.youtube.com/embed/sm-kxtKksSo]
+>[!VIDEO https://www.youtube.com/embed/sm-kxtKksSo]
 
 **Objectives**
 * Use Navigation gesture events to rotate the astronaut.
@@ -554,7 +554,7 @@ public class GestureAction : MonoBehaviour
 
 ## Chapter 3 - Hand Guidance
 
-[!VIDEO https://www.youtube.com/embed/ULzlVw4e14I]
+>[!VIDEO https://www.youtube.com/embed/ULzlVw4e14I]
 
 **Objectives**
 * Use **hand guidance score** to help predict when hand tracking will be lost.
@@ -579,7 +579,7 @@ public class GestureAction : MonoBehaviour
 
 ## Chapter 4 - Manipulation
 
-[!VIDEO https://www.youtube.com/embed/f3m8MvU60-I]
+>[!VIDEO https://www.youtube.com/embed/f3m8MvU60-I]
 
 **Objectives**
 * Use Manipulation events to move the astronaut with your hands.
@@ -688,7 +688,7 @@ public class GestureAction : MonoBehaviour
 
 ## Chapter 5 - Model expansion
 
-[!VIDEO https://www.youtube.com/embed/dA11P4P0VO8]
+>[!VIDEO https://www.youtube.com/embed/dA11P4P0VO8]
 
 **Objectives**
 * Expand the Astronaut model into multiple, smaller pieces that the user can interact with.

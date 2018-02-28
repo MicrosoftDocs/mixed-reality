@@ -18,7 +18,7 @@ keywords:
 * Context appropriate
 * Sufficiently distinct from other options within the same context
 
-[!VIDEO https://www.youtube.com/embed/BYpYsVFYjdw]
+>[!VIDEO https://www.youtube.com/embed/BYpYsVFYjdw]
 
 In [Holograms 101](holograms-101.md), we used the KeywordRecognizer to build two simple voice commands. In Holograms 212, we'll dive deeper and learn how to:
 * Design voice commands that are optimized for the HoloLens speech engine.
@@ -77,7 +77,7 @@ In this course, we'll revisit Model Explorer, which we built in [Holograms 210](
 
 ## Chapter 1 - Awareness
 
-[!VIDEO https://www.youtube.com/embed/fDwijJWuEc0] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/fDwijJWuEc0] **Objectives**
 * Learn the **Dos and Don'ts** of voice command design.
 * Use **KeywordRecognizer** to add gaze based voice commands.
 * Make users aware of voice commands using cursor **feedback**.
@@ -123,7 +123,7 @@ In this chapter, you'll learn about designing voice commands. When creating voic
 
 ## Chapter 2 - Acknowledgement
 
-[!VIDEO https://www.youtube.com/embed/87ViteoPpyU] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/87ViteoPpyU] **Objectives**
 * Record a message using the Microphone input.
 * Give feedback to the user that the application is listening to their voice.
 
@@ -168,7 +168,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 
 ## Chapter 3 - Understanding and the Dictation Recognizer
 
-[!VIDEO https://www.youtube.com/embed/TIMddr-HqEU] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/TIMddr-HqEU] **Objectives**
 * Use the Dictation Recognizer to convert the user's speech to text.
 * Show the Dictation Recognizer's hypothesized and final results in the communicator.
 
@@ -394,7 +394,7 @@ public class MicrophoneManager : MonoBehaviour
 
 ## Chapter 4 - Grammar Recognizer
 
-[!VIDEO https://www.youtube.com/embed/J2dYJNSvv18] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/J2dYJNSvv18] **Objectives**
 * Use the Grammar Recognizer to recognize the user's speech according to an SRGS, or Speech Recognition Grammar Specification, file.
 
 **Note**

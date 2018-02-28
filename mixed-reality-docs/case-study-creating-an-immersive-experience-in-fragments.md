@@ -14,7 +14,7 @@ keywords:
 
 Fragments is an interactive crime drama for Microsoft Hololens, where you follow the clues to solve a mystery that takes place in your real-world space. Find out how the Fragments development team used the unique features of the HoloLens to immerse players in the action, putting them directly in the center of the story.
 
-[!VIDEO https://www.youtube.com/embed/9ULJV4G5XkA]
+>[!VIDEO https://www.youtube.com/embed/9ULJV4G5XkA]
 
 ## See also
 * [Case studies](category/case-studies.md)

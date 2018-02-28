@@ -32,7 +32,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 
 ## Chapter 1 - Holo World
 
-[!VIDEO https://www.youtube.com/embed/IC0rp6rLiEc]
+>[!VIDEO https://www.youtube.com/embed/IC0rp6rLiEc]
 
 ### Objectives
 
@@ -94,7 +94,7 @@ At this point the application will just render a hologram. We will add interacti
 
 ## Chapter 2 - Interaction
 
-[!VIDEO https://www.youtube.com/embed/Lrb1y4sQRvI]
+>[!VIDEO https://www.youtube.com/embed/Lrb1y4sQRvI]
 
 ### Objectives
 
@@ -156,7 +156,7 @@ This time you can select the island to move it. On HoloLens you can move the isl
 
 ## Chapter 3 - Sharing
 
-[!VIDEO https://www.youtube.com/embed/1diycJvxfDc]
+>[!VIDEO https://www.youtube.com/embed/1diycJvxfDc]
 
 ### Objectives
 
@@ -213,7 +213,7 @@ This point in the project is a contained sharing application; it doesn't do very
 
 ## Chapter 4 - Immersion and teleporting
 
-[!VIDEO https://www.youtube.com/embed/kUHZ5tCOfvY]
+>[!VIDEO https://www.youtube.com/embed/kUHZ5tCOfvY]
 
 ### Objectives
 
@@ -269,7 +269,7 @@ Details to notice:
 
 ## Chapter 5 - Finale
 
-[!VIDEO https://www.youtube.com/embed/n_HDWJbfpNg]
+>[!VIDEO https://www.youtube.com/embed/n_HDWJbfpNg]
 
 ### Objectives
 

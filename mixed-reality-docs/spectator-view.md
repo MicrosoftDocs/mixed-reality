@@ -22,7 +22,7 @@ keywords:
 
 ## Use cases
 
-[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]
+>[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]
 
 ![Spectator view photo capture scenario example](images/fall-350px.jpg) ![Spectator view video capture scenario example](images/spectatorviewvideo.gif) There are three key scenarios that work well with this technology:
 1. **Photo capture**\
@@ -82,7 +82,7 @@ To make your app ready for spectator view, you'll need to build a [shared exp
 
 **NOTICE & DISCLAIMER:** When making modifications to your HoloLens hardware (including, but not limited to, setting up your HoloLens for "spectator view") basic safety precautions should always be observed. Read all instructions and manuals before making any modifications. It is your responsibility to follow all instructions and use tools as directed. You may have purchased or licensed your HoloLens with a limited warranty or no warranty. Please read your applicable [HoloLens License Agreement or Terms of Use and Sale](http://microsoft.com/microsoft-hololens/en-us/order-now) to understand your warranty options.
 
-[!VIDEO https://www.youtube.com/embed/aKX8UMejtWc]
+>[!VIDEO https://www.youtube.com/embed/aKX8UMejtWc]
 
 ### Rig Assembly
 

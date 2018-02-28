@@ -33,7 +33,7 @@ In this tutorial, we will:
 
 ## Chapter 1 - Holo World
 
-[!VIDEO https://www.youtube.com/embed/c7qHYYW8rxQ]
+>[!VIDEO https://www.youtube.com/embed/c7qHYYW8rxQ]
 
 In this chapter, we'll setup our first Unity project and step through the build and deploy process.
 
@@ -85,7 +85,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 ## Chapter 2 - Interaction
 
-[!VIDEO https://www.youtube.com/embed/W60xG15a8gc]
+>[!VIDEO https://www.youtube.com/embed/W60xG15a8gc]
 
 In this chapter, we'll interact with our holograms. First, we'll add a cursor to visualize our [Gaze](gaze.md). Then, we'll add [Gestures](gestures.md) and use our hand to place our holograms in space.
 
@@ -119,7 +119,7 @@ In this chapter, we'll interact with our holograms. First, we'll add a cursor to
 
 ## Chapter 3 - Shared Coordinates
 
-[!VIDEO https://www.youtube.com/embed/Ey8yBgWiqtg]
+>[!VIDEO https://www.youtube.com/embed/Ey8yBgWiqtg]
 
 It's fun to see and interact with holograms, but let's go further. We'll set up our first shared experience - a hologram everyone can see together.
 
@@ -275,7 +275,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 ## Chapter 4 - Discovery
 
-[!VIDEO https://www.youtube.com/embed/5NxJWMV4BP8]
+>[!VIDEO https://www.youtube.com/embed/5NxJWMV4BP8]
 
 Everyone can now see the same hologram! Now let's see everyone else connected to our shared holographic world. In this chapter, we'll grab the head location and rotation of all other HoloLens devices in the same sharing session.
 
@@ -580,7 +580,7 @@ public class AppStateManager : Singleton<AppStateManager>
 
 ## Chapter 5 - Placement
 
-[!VIDEO https://www.youtube.com/embed/afFTwHQIw0s]
+>[!VIDEO https://www.youtube.com/embed/afFTwHQIw0s]
 
 In this chapter, we'll make the anchor able to be placed on real-world surfaces. We'll use shared coordinates to place that anchor in the middle point between everyone connected to the shared experience.
 
@@ -960,7 +960,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 ## Chapter 6 - Real-World Physics
 
-[!VIDEO https://www.youtube.com/embed/XNpQVSyXwMo]
+>[!VIDEO https://www.youtube.com/embed/XNpQVSyXwMo]
 
 In this chapter we'll add holograms that bounce off real-world surfaces. Watch your space fill up with projects launched by both you and your friends!
 
@@ -980,7 +980,7 @@ In this chapter we'll add holograms that bounce off real-world surfaces. Watch y
 
 ## Chapter 7 - Grand Finale
 
-[!VIDEO https://www.youtube.com/embed/kDUPUvZEqRg]
+>[!VIDEO https://www.youtube.com/embed/kDUPUvZEqRg]
 
 In this chapter, we'll uncover a portal that can only be discovered with collaboration.
 

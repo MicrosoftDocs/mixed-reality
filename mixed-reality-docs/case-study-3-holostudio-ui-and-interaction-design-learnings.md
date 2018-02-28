@@ -18,7 +18,7 @@ We know that not everyone has the resources at their disposal to do this type of
 
 ## Watch the video
 
-[!VIDEO https://www.youtube.com/embed/sX6yKHmN1qM]
+>[!VIDEO https://www.youtube.com/embed/sX6yKHmN1qM]
 
 ## Problem #1: People didn't want to move around their creations
 
