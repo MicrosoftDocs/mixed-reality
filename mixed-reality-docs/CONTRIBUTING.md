@@ -1,12 +1,10 @@
 # Contributing to Windows Mixed Reality developer documentation
 
-Welcome to the private repo for Hydrogen developer documentation! Any articles you create or edit in this repo **will not be visible to the public.** Hydrogen docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown. This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution! 
+Welcome to the public repo for Windows Mixed Reality developer documentation! Any articles you create or edit in this repo **will be visible to the public.** Windows Mixed reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown. This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution! 
 
 ## Before you start 
 
-If you don't already have one, you'll need to create a GitHub account and link it to your Microsoft identity. You can find instructions on [this page](https://docs.microsoft.com/en-us/contribute/help-crr/help-content/contribute/contribute-get-started-setup-github). Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias. 
-
-The linked page also has instructions on setting up a Liveyre account. You don't need to set this up right now, but when documentation goes public you'll use Livefyre to interact with public comments on each article.
+If you don't already have one, you'll need to create a GitHub account and link it to your Microsoft identity (if you're a Microsoft employee). You can find instructions on [this page](https://docs.microsoft.com/en-us/contribute/help-crr/help-content/contribute/contribute-get-started-setup-github). Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
 
 ## Editing an existing article
 
@@ -30,8 +28,9 @@ Use the following workflow to make updates to the documentation:
 
 Use the following workflow to create new articles in the documentation:
 * Create a branch for your edits based on master (using branch drop-down in top left).
-* In the **hydrogen-docs** folder, click the **New** button in the top right and choose **File.**
-* Create a page name for the article (use hyphens for spaces).
+  ![Create a new branch based on master.](images/newbranch.png)
+* In the **mixed-reality-docs** folder, click the **New** button in the top right and choose **File.**
+* Create a page name for the article (use hyphens instead of spaces).
 * At the top of your new page, add the following metadata block:
 ```md
     ---
@@ -63,7 +62,7 @@ Because of the way docs.microsoft.com styles tables, they won’t have borders o
 You’ll need to upload your images to the images folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot respectively. [You can find solid guidance here.](https://review.docs.microsoft.com/en-us/help/style/style-how-to-visuals-static-art-types?branch=master)
 
 ### Previewing your work
-While editing in the browser, you can click the **Preview** tab near the top of the page to preview your work before committing. Once your contributions have been merged into the master branch, you can see what the documentation would look like when it goes public at https://review.docs.microsoft.com/en-us/windows/hydrogen/?branch=master
+While editing in the browser, you can click the **Preview** tab near the top of the page to preview your work before committing. Once your contributions have been merged into the master branch, you can see what the documentation would look like when it goes public at https://review.docs.microsoft.com/en-us/windows/mixed-reality/?branch=master
 
 
 ## Editing in the browser vs. editing with a desktop client
