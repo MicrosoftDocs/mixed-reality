@@ -1,4 +1,4 @@
-﻿---
+---
 title: Mixed Reality Partner Program
 description: 
 author: 

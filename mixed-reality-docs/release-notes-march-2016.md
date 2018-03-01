@@ -1,4 +1,4 @@
-﻿---
+---
 title: Release notes - March 2016
 description: 
 author: 

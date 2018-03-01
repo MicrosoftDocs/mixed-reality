@@ -1,4 +1,4 @@
-﻿---
+---
 title: Updating your existing universal app for HoloLens
 description: 
 author: 

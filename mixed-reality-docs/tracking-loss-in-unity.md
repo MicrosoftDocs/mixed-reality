@@ -1,4 +1,4 @@
-﻿---
+---
 title: Tracking loss in Unity
 description: 
 author: 

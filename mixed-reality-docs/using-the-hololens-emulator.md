@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using the HoloLens emulator
 description: 
 author: 

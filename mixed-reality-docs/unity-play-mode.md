@@ -1,4 +1,4 @@
-﻿---
+---
 title: Unity Play Mode
 description: 
 author: 

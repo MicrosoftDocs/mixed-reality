@@ -1,4 +1,4 @@
-﻿---
+---
 title: Spectator view
 description: 
 author: 

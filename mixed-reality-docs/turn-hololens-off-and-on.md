@@ -1,4 +1,4 @@
-﻿---
+---
 title: Turn HoloLens off and on
 description: 
 author: 

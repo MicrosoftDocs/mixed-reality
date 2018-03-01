@@ -1,4 +1,4 @@
-﻿---
+---
 title: Updating the HoloLens device
 description: 
 author: 

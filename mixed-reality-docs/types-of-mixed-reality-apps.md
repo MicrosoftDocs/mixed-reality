@@ -1,4 +1,4 @@
-﻿---
+---
 title: Types of mixed reality apps
 description: 
 author: 

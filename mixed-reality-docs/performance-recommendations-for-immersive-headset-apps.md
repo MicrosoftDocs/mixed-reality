@@ -1,4 +1,4 @@
-﻿---
+---
 title: Performance recommendations for immersive headset apps
 description: 
 author: 

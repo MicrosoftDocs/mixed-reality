@@ -1,4 +1,4 @@
-﻿---
+---
 title: Sensor tuning
 description: 
 author: 

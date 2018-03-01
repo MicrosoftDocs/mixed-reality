@@ -1,4 +1,4 @@
-﻿---
+---
 title: Voice input
 description: 
 author: 

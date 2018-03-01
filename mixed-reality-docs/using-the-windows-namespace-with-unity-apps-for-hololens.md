@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using the Windows namespace with Unity apps for HoloLens
 description: 
 author: 

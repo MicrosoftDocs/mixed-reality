@@ -1,4 +1,4 @@
-﻿---
+---
 title: Object collection
 description: 
 author: 

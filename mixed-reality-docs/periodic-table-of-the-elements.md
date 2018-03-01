@@ -1,4 +1,4 @@
-﻿---
+---
 title: Periodic Table of the Elements
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Spatial anchors
 description: 
 author: 

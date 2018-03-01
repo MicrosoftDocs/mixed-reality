@@ -1,4 +1,4 @@
-﻿---
+---
 title: Room scan visualization
 description: 
 author: 

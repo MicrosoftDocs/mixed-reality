@@ -1,4 +1,4 @@
-﻿---
+---
 title: Mixed Reality 213
 description: 
 author: 

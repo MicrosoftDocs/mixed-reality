@@ -1,4 +1,4 @@
-﻿---
+---
 title: Rendering in DirectX
 description: 
 author: 

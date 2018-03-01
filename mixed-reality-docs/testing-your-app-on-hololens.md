@@ -1,4 +1,4 @@
-﻿---
+---
 title: Testing your app on HoloLens
 description: 
 author: 

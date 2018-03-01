@@ -1,4 +1,4 @@
-﻿---
+---
 title: See your photos
 description: 
 author: 

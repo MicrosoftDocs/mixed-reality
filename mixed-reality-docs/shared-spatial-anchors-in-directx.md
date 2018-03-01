@@ -1,4 +1,4 @@
-﻿---
+---
 title: Shared spatial anchors in DirectX
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Navigating the Windows Mixed Reality home
 description: 
 author: 

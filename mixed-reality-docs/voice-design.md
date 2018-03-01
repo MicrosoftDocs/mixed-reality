@@ -1,4 +1,4 @@
-﻿---
+---
 title: Voice design
 description: 
 author: 

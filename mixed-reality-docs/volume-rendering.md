@@ -1,4 +1,4 @@
-﻿---
+---
 title: Volume rendering
 description: 
 author: 
