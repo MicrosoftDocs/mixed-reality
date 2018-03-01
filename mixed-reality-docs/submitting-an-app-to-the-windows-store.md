@@ -1,5 +1,5 @@
 ---
-title: Submitting an app to the Windows Store
+title: Submitting an app to the Microsoft Store
 description: 
 author: 
 ms.author: mazeller
@@ -10,9 +10,9 @@ keywords:
 
 
 
-# Submitting an app to the Windows Store
+# Submitting an app to the Microsoft Store
 
-Both [HoloLens](hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens or PC (or both), you'll submit your app to the Windows Store through the [Windows Dev Center dashboard](https://developer.microsoft.com/overview).
+Both [HoloLens](hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens or PC (or both), you'll submit your app to the Microsoft Store through the [Windows Dev Center dashboard](https://developer.microsoft.com/overview).
 
 If you don't already have a Windows Dev Center account, you can [sign up today](https://dev.windows.com/en-us/programs/join).
 
@@ -134,7 +134,7 @@ The Windows Universal Platform allows you to create a single application that ru
 
 If you are submitting a mixed reality app that is based on a Unity project, please see this [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) first.
 
-In general, submitting a Windows Mixed Reality app that works on HoloLens and/or immersive headsets is just like submitting any UWP app to the Windows Store. Once you've [created your app by reserving its name](https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name), you should follow the [UWP submission checklist](https://docs.microsoft.com/en-us/windows/uwp/publish/app-submissions).
+In general, submitting a Windows Mixed Reality app that works on HoloLens and/or immersive headsets is just like submitting any UWP app to the Microsoft Store. Once you've [created your app by reserving its name](https://docs.microsoft.com/en-us/windows/uwp/publish/create-your-app-by-reserving-a-name), you should follow the [UWP submission checklist](https://docs.microsoft.com/en-us/windows/uwp/publish/app-submissions).
 
 One of the first things you'll do is [select a category and sub-category](https://docs.microsoft.com/en-us/windows/uwp/publish/category-and-subcategory-table) for your mixed reality experience. It's important that you **choose the most accurate category for your app** so that we can merchandise your application in the right Store categories and ensure it shows up using relevant search queries. **Listing your VR title as a game will not result in better exposure for your app,** and may prevent it from showing up in categories that are more fitting and less crowded.
 
@@ -203,9 +203,9 @@ If you've [packaged your app correctly](https://docs.microsoft.com/en-us/windows
 
 If your mixed reality app works on immersive headsets, then at least "Windows 10 Desktop" should be selected in the table. If your mixed reality app works on HoloLens, then at least "Windows 10 Holographic" should be selected. If your app runs on both Windows Mixed Reality headset types, like the [Mixed Reality Academy "island" app](mixed-reality-250.md), both "Windows 10 Desktop" and "Windows 10 Holographic" should be selected.
 
-**Note:** many developers run into errors when uploading their app's package related to mismatches between the package manifest and your app/publisher account information in Dev Center. These errors can often be avoided by signing into Visual Studio with the same account associated with your Windows developer account (the one you use to sign into Windows Dev Center). If you use the same account, you'll be able to associate your app with its identity in the Windows Store before you package it.
+**Note:** many developers run into errors when uploading their app's package related to mismatches between the package manifest and your app/publisher account information in Dev Center. These errors can often be avoided by signing into Visual Studio with the same account associated with your Windows developer account (the one you use to sign into Windows Dev Center). If you use the same account, you'll be able to associate your app with its identity in the Microsoft Store before you package it.
 
-![Associate your app with the Windows Store](images/associate-your-app-700px.png)
+![Associate your app with the Microsoft Store](images/associate-your-app-700px.png)
 
 ### Store listing page
 
