@@ -58,5 +58,5 @@ The [app model](app-model.md) for mixed reality is designed to use the Mixed Rea
 It is important to test your app to make sure the text is readable, the buttons are targetable, and the overall app looks correct. You can [test](testing-your-app-on-hololens.md) on a desktop headset, a HoloLens, an emulator, or a touch device with resolution set to 1280x720 @150%.
 
 ## See also
-* [Submitting an app to the Windows Store](submitting-an-app-to-the-windows-store.md)
+* [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
 * [Testing your app on HoloLens](testing-your-app-on-hololens.md)

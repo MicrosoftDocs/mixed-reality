@@ -161,7 +161,7 @@ There are 177 pages in the documentation.
 * [Spatial sound in DirectX](../spatial-sound-in-directx.md)
 * [Spatial sound in Unity](../spatial-sound-in-unity.md)
 * [Spectator view](../spectator-view.md)
-* [Submitting an app to the Windows Store](../submitting-an-app-to-the-windows-store.md)
+* [Submitting an app to the Windows Store](../submitting-an-app-to-the-microsoft-store.md)
 * [Testing your app on HoloLens](../testing-your-app-on-hololens.md)
 * [Text in Unity](../text-in-unity.md)
 * [Tracking loss in Unity](../tracking-loss-in-unity.md)

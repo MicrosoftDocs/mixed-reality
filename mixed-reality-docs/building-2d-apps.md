@@ -163,7 +163,7 @@ Here are the high level concepts/scenarios you should understand for input when 
 
 ## Publish and Maintain your Universal app
 
-Once your app is up and running, package your app to [submit it to the Universal Windows Store](submitting-an-app-to-the-windows-store.md).
+Once your app is up and running, package your app to [submit it to the Universal Windows Store](submitting-an-app-to-the-microsoft-store.md).
 
 ## See also
 * [App model](app-model.md)
@@ -172,5 +172,5 @@ Once your app is up and running, package your app to [submit it to the Universal
 * [Gesture](gestures.md)
 * [Motion controllers](motion-controllers.md)
 * [Voice](voice-input.md)
-* [Submitting an app to the Windows Store](submitting-an-app-to-the-windows-store.md)
+* [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)

@@ -56,7 +56,7 @@ You will be prompted to set target and minimum version of Windows when you creat
 
 ### Specifying target device families
 
-Windows Mixed Reality applications (for both [HoloLens](hololens-hardware-details.md) and [immersive headsets](immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a [target device family](https://msdn.microsoft.com/en-us/library/windows/apps/dn986903.aspx) of "Windows.Universal" is capable of running on HoloLens or Windows 10 PCs with immersive headsets. That being said, if you do not specify a target device family in your app manifest you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, and then [double-check that the correct device families are selected when you upload your app package in Dev Center to submit to the Store.](submitting-an-app-to-the-windows-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality applications (for both [HoloLens](hololens-hardware-details.md) and [immersive headsets](immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a [target device family](https://msdn.microsoft.com/en-us/library/windows/apps/dn986903.aspx) of "Windows.Universal" is capable of running on HoloLens or Windows 10 PCs with immersive headsets. That being said, if you do not specify a target device family in your app manifest you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, and then [double-check that the correct device families are selected when you upload your app package in Dev Center to submit to the Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 To set this field in Visual Studio, right click on the Package.appxmanifest and select "View Code" then find the TargetDeviceFamily Name field. By default, it might look like the following:
 
@@ -139,10 +139,10 @@ In general, submitting a Windows Mixed Reality app that works on HoloLens and/or
 One of the first things you'll do is [select a category and sub-category](https://docs.microsoft.com/en-us/windows/uwp/publish/category-and-subcategory-table) for your mixed reality experience. It's important that you **choose the most accurate category for your app** so that we can merchandise your application in the right Store categories and ensure it shows up using relevant search queries. **Listing your VR title as a game will not result in better exposure for your app,** and may prevent it from showing up in categories that are more fitting and less crowded.
 
 However, there are four key areas in the submission process where you'll want to make mixed reality-specific selections:
-1. In the **[Product declarations](submitting-an-app-to-the-windows-store.md#mixed-reality-product-declarations)** section under [Properties](https://docs.microsoft.com/en-us/windows/uwp/publish/enter-app-properties).
-2. In the **[System requirements](submitting-an-app-to-the-windows-store.md#mixed-reality-system-requirements)** section under [Properties](https://docs.microsoft.com/en-us/windows/uwp/publish/enter-app-properties).
-3. In the **[Device family availability](submitting-an-app-to-the-windows-store.md#device-family-availability)** section under [Packages](https://docs.microsoft.com/en-us/windows/uwp/publish/upload-app-packages).
-4. In several of the **[Store listing page](submitting-an-app-to-the-windows-store.md#store-listing-page)** fields.
+1. In the **[Product declarations](submitting-an-app-to-the-microsoft-store.md#mixed-reality-product-declarations)** section under [Properties](https://docs.microsoft.com/en-us/windows/uwp/publish/enter-app-properties).
+2. In the **[System requirements](submitting-an-app-to-the-microsoft-store.md#mixed-reality-system-requirements)** section under [Properties](https://docs.microsoft.com/en-us/windows/uwp/publish/enter-app-properties).
+3. In the **[Device family availability](submitting-an-app-to-the-microsoft-store.md#device-family-availability)** section under [Packages](https://docs.microsoft.com/en-us/windows/uwp/publish/upload-app-packages).
+4. In several of the **[Store listing page](submitting-an-app-to-the-microsoft-store.md#store-listing-page)** fields.
 
 ### Mixed reality product declarations
 

@@ -227,7 +227,7 @@ See [KnownFolders](https://msdn.microsoft.com/en-us/library/windows/apps/windows
 
 ## App package
 
-With Windows 10 you no longer target an operating system but instead [target your app to one or more device families](https://msdn.microsoft.com/en-us/library/windows/apps/dn894631.aspx?f=255&MSPPError=-2147217396#device_families). A device family identifies the APIs, system characteristics, and behaviors that you can expect across devices within the device family. It also determines the set of devices on which your app can be installed from the [Windows Store](submitting-an-app-to-the-windows-store.md#specifying-target-device-families).
+With Windows 10 you no longer target an operating system but instead [target your app to one or more device families](https://msdn.microsoft.com/en-us/library/windows/apps/dn894631.aspx?f=255&MSPPError=-2147217396#device_families). A device family identifies the APIs, system characteristics, and behaviors that you can expect across devices within the device family. It also determines the set of devices on which your app can be installed from the [Windows Store](submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families).
 * To target both Desktop headsets and HoloLens, target your app at the **Windows.Universal** device family.
 * To target just Desktop headsets, target your app at the **Windows.Desktop** device family.
 * To target just HoloLens, target your app at the **Windows.Holographic** device family.

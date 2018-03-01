@@ -72,4 +72,4 @@ Regardless of the type of app you're building, these tools will facilitate your 
 * [Open source projects](community.md#open-source-projects)
 * [Holograms 100](holograms-100.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
-* [Submitting an app to the Windows Store](submitting-an-app-to-the-windows-store.md)
+* [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
