@@ -1,4 +1,4 @@
-﻿---
+---
 title: Gestures and motion controllers in Unity
 description: 
 author: 

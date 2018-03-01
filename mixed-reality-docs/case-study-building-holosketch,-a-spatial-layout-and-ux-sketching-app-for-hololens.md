@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Building HoloSketch, a spatial layout and UX sketching app for HoloLens
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Color, light and materials
 description: 
 author: 

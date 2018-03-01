@@ -1,4 +1,4 @@
-﻿---
+---
 title: Style
 description: 
 author: 

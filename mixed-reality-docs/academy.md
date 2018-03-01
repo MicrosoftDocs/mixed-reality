@@ -1,4 +1,4 @@
-﻿---
+---
 title: Academy
 description: <meta name="description" content="The Holographic Academy provides tutorials on starting holographic development and access to expert advice from those who have built the best holographic experiences." />
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 101
 description: 
 author: 

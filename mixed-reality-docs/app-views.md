@@ -1,4 +1,4 @@
-﻿---
+---
 title: App views
 description: 
 author: 

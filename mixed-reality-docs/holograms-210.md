@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 210
 description: 
 author: 

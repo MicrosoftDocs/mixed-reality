@@ -1,4 +1,4 @@
-﻿---
+---
 title: Getting a HolographicSpace
 description: 
 author: 

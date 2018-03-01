@@ -1,4 +1,4 @@
-﻿---
+---
 title: HoloLens known issues
 description: 
 author: 

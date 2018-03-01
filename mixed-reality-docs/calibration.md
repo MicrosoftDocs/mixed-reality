@@ -1,4 +1,4 @@
-﻿---
+---
 title: Calibration
 description: 
 author: 

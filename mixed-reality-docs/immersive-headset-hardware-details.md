@@ -1,4 +1,4 @@
-﻿---
+---
 title: Immersive headset hardware details
 description: 
 author: 

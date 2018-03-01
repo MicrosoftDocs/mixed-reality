@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - The pursuit of more personal computing
 description: 
 author: 

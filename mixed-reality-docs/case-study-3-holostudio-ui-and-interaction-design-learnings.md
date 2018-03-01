@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - 3 HoloStudio UI and interaction design learnings
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - AfterNow's process - envisioning, prototyping, building
 description: 
 author: 

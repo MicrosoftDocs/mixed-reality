@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case studies
 description: 
 author: 

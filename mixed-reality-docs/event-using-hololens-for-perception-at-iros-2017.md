@@ -1,4 +1,4 @@
-﻿---
+---
 title: Event - Using HoloLens for Perception at IROS 2017
 description: 
 author: 

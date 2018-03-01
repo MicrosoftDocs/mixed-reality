@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 100
 description: 
 author: 

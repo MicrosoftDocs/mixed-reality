@@ -1,4 +1,4 @@
-﻿---
+---
 title: In App Purchases
 description: 
 author: 

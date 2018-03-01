@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holographic frame
 description: 
 author: 

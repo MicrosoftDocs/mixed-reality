@@ -1,4 +1,4 @@
-﻿---
+---
 title: Advanced HoloLens Emulator and Mixed Reality Simulator input
 description: 
 author: 

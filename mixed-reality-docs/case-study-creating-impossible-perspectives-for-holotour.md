@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Creating impossible perspectives for HoloTour
 description: 
 author: 

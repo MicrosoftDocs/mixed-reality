@@ -1,4 +1,4 @@
-﻿---
+---
 title: Asset creation process
 description: 
 author: 

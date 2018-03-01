@@ -1,4 +1,4 @@
-﻿---
+---
 title: Gaze
 description: 
 author: 

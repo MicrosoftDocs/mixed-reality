@@ -1,4 +1,4 @@
-﻿---
+---
 title: Color design
 description: 
 author: 

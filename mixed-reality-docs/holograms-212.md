@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 212
 description: 
 author: 

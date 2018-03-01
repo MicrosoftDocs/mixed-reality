@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Creating an immersive experience in Fragments
 description: 
 author: 

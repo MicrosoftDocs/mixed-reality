@@ -1,4 +1,4 @@
-﻿---
+---
 title: Creating 3D models for use in the Windows Mixed Reality home
 description: 
 author: 

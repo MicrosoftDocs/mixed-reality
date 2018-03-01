@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Scaling Datascape across devices with different performance
 description: 
 author: 

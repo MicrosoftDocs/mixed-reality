@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 230
 description: 
 author: 

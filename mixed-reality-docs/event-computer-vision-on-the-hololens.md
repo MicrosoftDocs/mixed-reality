@@ -1,4 +1,4 @@
-﻿---
+---
 title: Event - Computer vision on the HoloLens
 description: 
 author: 

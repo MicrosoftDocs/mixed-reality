@@ -1,4 +1,4 @@
-﻿---
+---
 title: Event - Computer Vision on the HoloLens at ICCV 2017
 description: 
 author: 

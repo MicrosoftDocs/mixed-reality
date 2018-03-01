@@ -1,4 +1,4 @@
-﻿---
+---
 title: Windows Mixed Reality
 description: <meta name="description" content="Windows Mixed Reality enables developers to blend the physical world with digital content. The documentation educates developers and designers on how to build immersive experiences that run on Microsoft HoloLens and mixed reality headsets that target laptops, desktops and Xbox." />
 author: 

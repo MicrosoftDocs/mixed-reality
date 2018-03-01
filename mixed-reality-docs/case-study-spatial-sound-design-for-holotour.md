@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Spatial sound design for HoloTour
 description: 
 author: 

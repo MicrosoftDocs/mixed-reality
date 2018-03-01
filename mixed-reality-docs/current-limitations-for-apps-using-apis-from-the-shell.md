@@ -1,4 +1,4 @@
-﻿---
+---
 title: Current limitations for apps using APIs from the shell
 description: 
 author: 

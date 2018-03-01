@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 220
 description: 
 author: 

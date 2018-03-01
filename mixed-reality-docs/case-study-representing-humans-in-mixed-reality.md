@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Representing humans in mixed reality
 description: 
 author: 

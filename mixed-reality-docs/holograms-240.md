@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 240
 description: 
 author: 

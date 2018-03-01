@@ -1,4 +1,4 @@
-﻿---
+---
 title: Implementing 3D app launchers
 description: 
 author: 
