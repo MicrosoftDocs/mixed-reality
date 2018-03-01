@@ -29,8 +29,9 @@ Use the following workflow to make updates to the documentation:
 Use the following workflow to create new articles in the documentation:
 * Create a branch for your edits based on master (using branch drop-down in top left).
   ![Create a new branch based on master.](images/newbranch.png)
-* In the **mixed-reality-docs** folder, click the **New** button in the top right and choose **File.**
-* Create a page name for the article (use hyphens instead of spaces).
+* In the **mixed-reality-docs** folder, click the **Create new file** button in the top right.
+* Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes).
+  ![Name your new page.](images/newpagetitle.png)
 * At the top of your new page, add the following metadata block:
 ```md
     ---
@@ -63,7 +64,6 @@ You’ll need to upload your images to the images folder in the repo, and then r
 
 ### Previewing your work
 While editing in the browser, you can click the **Preview** tab near the top of the page to preview your work before committing. Once your contributions have been merged into the master branch, you can see what the documentation would look like when it goes public at https://review.docs.microsoft.com/en-us/windows/mixed-reality/?branch=master
-
 
 ## Editing in the browser vs. editing with a desktop client
 
