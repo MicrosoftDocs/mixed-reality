@@ -1,4 +1,3 @@
-
 # Contributing to Windows Mixed Reality developer documentation
 
 Welcome to the public repo for Windows Mixed Reality developer documentation! Any articles you create or edit in this repo **will be visible to the public.** Windows Mixed reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown. This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution! 
@@ -11,6 +10,7 @@ If you don't already have one, you'll need to create a GitHub account and link i
 
 Use the following workflow to make updates to the documentation:
 * Create a branch for your edits based on master (using branch drop-down in top left).
+
   ![Create a new branch based on master.](images/newbranch.png)
 * Edit the content of relevant articles in your branch.
 * Update metadata as relevant at the top of each article:
@@ -29,6 +29,7 @@ Use the following workflow to make updates to the documentation:
 
 Use the following workflow to create new articles in the documentation:
 * Create a branch for your edits based on master (using branch drop-down in top left).
+
   ![Create a new branch based on master.](images/newbranch.png)
 * In the **mixed-reality-docs** folder, click the **Create new file** button in the top right.
 * Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
