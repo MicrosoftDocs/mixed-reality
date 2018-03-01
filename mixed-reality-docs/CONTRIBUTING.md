@@ -30,7 +30,7 @@ Use the following workflow to create new articles in the documentation:
 * Create a branch for your edits based on master (using branch drop-down in top left).
   ![Create a new branch based on master.](images/newbranch.png)
 * In the **mixed-reality-docs** folder, click the **Create new file** button in the top right.
-* Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes).
+* Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
   ![Name your new page.](images/newpagetitle.png)
 * At the top of your new page, add the following metadata block:
 ```md
