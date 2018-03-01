@@ -1,4 +1,4 @@
-﻿---
+---
 title: Gestures
 description: 
 author: 

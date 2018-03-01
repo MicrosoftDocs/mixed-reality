@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Lessons from the Lowe's kitchen
 description: 
 author: 

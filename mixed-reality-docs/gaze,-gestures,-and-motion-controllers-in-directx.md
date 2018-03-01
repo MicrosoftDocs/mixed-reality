@@ -1,4 +1,4 @@
-﻿---
+---
 title: Gaze, gestures, and motion controllers in DirectX
 description: 
 author: 

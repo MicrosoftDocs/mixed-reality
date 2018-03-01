@@ -1,4 +1,4 @@
-﻿---
+---
 title: Keyboard, mouse, and controller input in DirectX
 description: 
 author: 

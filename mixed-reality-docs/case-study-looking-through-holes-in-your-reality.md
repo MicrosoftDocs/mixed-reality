@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Looking through holes in your reality
 description: 
 author: 

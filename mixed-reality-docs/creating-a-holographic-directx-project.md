@@ -1,4 +1,4 @@
-﻿---
+---
 title: Creating a holographic DirectX project
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 230
 description: 
 author: 
@@ -152,7 +152,8 @@ Finally, let's save our room mesh and load it into Unity.
 
 ## Chapter 2 - Visualization
 
->[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4] 
+**Objectives**
 * Learn the basics of shaders.
 * Visualize your surroundings.
 
@@ -417,7 +418,8 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 
 ## Chapter 4 - Placement
 
->[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc] 
+**Objectives**
 * Determine if a hologram will fit on a surface.
 * Provide feedback to the user when a hologram can/cannot fit on a surface.
 

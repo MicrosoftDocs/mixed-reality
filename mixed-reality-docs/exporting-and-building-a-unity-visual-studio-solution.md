@@ -1,4 +1,4 @@
-﻿---
+---
 title: Exporting and building a Unity Visual Studio solution
 description: 
 author: 

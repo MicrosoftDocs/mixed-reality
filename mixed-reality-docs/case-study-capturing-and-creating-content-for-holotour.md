@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Capturing and creating content for HoloTour
 description: 
 author: 

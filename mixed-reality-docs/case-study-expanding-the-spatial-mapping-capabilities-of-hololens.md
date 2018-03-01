@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Expanding the spatial mapping capabilities of HoloLens
 description: 
 author: 

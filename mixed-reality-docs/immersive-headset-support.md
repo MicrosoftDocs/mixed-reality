@@ -1,4 +1,4 @@
-﻿---
+---
 title: Immersive headset support
 description: 
 author: 

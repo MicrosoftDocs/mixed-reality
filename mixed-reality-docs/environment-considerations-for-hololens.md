@@ -1,4 +1,4 @@
-﻿---
+---
 title: Environment considerations for HoloLens
 description: 
 author: 

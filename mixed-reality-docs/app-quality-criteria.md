@@ -1,4 +1,4 @@
-﻿---
+---
 title: App quality criteria
 description: 
 author: 

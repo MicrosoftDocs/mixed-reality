@@ -1,4 +1,4 @@
-﻿---
+---
 title: Hardware accessories
 description: 
 author: 

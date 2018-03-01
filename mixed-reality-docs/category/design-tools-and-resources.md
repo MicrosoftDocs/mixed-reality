@@ -1,4 +1,4 @@
-﻿---
+---
 title: Design tools and resources
 description: 
 author: 

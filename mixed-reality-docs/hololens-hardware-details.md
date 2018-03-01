@@ -1,4 +1,4 @@
-﻿---
+---
 title: HoloLens hardware details
 description: 
 author: 

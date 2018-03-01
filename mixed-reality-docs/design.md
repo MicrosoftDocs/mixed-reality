@@ -1,4 +1,4 @@
-﻿---
+---
 title: Design
 description: <meta name="description" content="Read the documentation for in depth knowledge of holographic app development, building blocks of mixed reality apps, and the tools you&#39;ll need to build holographic experiences." />
 author: 

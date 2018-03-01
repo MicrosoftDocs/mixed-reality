@@ -1,4 +1,4 @@
-﻿---
+---
 title: About this design guidance
 description: 
 author: 

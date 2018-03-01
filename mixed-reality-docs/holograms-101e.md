@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 101E
 description: <meta name="description" content="Follow this coding walkthrough using Unity, Visual Studio and the HoloLens Emulator to learn the basics of a holographic application." />
 author: 

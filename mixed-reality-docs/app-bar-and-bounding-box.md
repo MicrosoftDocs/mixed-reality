@@ -1,4 +1,4 @@
-﻿---
+---
 title: App bar and bounding box
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Galaxy Explorer
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: How it works - Mixed Reality Capture Studios
 description: 
 author: 

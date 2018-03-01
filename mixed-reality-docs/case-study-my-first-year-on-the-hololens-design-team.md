@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - My first year on the HoloLens design team
 description: 
 author: 

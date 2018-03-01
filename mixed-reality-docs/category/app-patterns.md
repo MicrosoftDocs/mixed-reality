@@ -1,4 +1,4 @@
-﻿---
+---
 title: App patterns
 description: 
 author: 

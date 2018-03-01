@@ -1,4 +1,4 @@
-﻿---
+---
 title: Community
 description: <meta name="description" content="Find support for&#160;mixed reality development in open source projects,&#160;forums, and more. Meet people in person at developer events and&#160;meetups." />
 author: 

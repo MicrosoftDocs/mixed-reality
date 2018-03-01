@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Using spatial sound in RoboRaid
 description: 
 author: 

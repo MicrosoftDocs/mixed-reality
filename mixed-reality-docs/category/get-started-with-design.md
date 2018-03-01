@@ -1,4 +1,4 @@
-﻿---
+---
 title: Get started with design
 description: 
 author: 

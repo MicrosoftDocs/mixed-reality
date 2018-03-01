@@ -1,4 +1,4 @@
-﻿---
+---
 title: Focus point in Unity
 description: 
 author: 

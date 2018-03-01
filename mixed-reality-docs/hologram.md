@@ -1,4 +1,4 @@
-﻿---
+---
 title: Hologram
 description: 
 author: 

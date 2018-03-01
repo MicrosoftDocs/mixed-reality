@@ -1,4 +1,4 @@
-﻿---
+---
 title: Best practices for working with Unity and Visual Studio
 description: 
 author: 

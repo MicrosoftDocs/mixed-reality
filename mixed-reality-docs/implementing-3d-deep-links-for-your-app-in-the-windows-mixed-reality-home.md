@@ -1,4 +1,4 @@
-﻿---
+---
 title: Implementing 3D deep links for your app in the Windows Mixed Reality home
 description: 
 author: 

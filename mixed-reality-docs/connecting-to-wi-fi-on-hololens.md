@@ -1,4 +1,4 @@
-﻿---
+---
 title: Connecting to Wi-Fi on HoloLens
 description: 
 author: 

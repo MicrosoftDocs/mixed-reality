@@ -1,4 +1,4 @@
-﻿---
+---
 title: Install the tools
 description: 
 author: 

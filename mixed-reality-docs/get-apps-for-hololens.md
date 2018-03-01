@@ -1,4 +1,4 @@
-﻿---
+---
 title: Get apps for HoloLens
 description: 
 author: 

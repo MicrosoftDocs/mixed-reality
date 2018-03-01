@@ -1,4 +1,4 @@
-﻿---
+---
 title: App model
 description: 
 author: 

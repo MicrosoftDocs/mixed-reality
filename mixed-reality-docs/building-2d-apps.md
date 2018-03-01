@@ -1,4 +1,4 @@
-﻿---
+---
 title: Building 2D apps
 description: 
 author: 

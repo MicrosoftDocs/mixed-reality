@@ -1,4 +1,4 @@
-﻿---
+---
 title: Case study - Creating a galaxy in mixed reality
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Device portal API reference
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Gaze targeting
 description: 
 author: 

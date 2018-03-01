@@ -1,4 +1,4 @@
-﻿---
+---
 title: Gaze in Unity
 description: 
 author: 

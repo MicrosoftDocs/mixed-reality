@@ -1,4 +1,4 @@
-﻿---
+---
 title: 3D app launcher design guidance
 description: 
 author: 

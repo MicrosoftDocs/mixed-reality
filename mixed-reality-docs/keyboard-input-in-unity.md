@@ -1,4 +1,4 @@
-﻿---
+---
 title: Keyboard input in Unity
 description: 
 author: 

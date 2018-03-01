@@ -1,4 +1,4 @@
-﻿---
+---
 title: Locatable camera
 description: 
 author: 

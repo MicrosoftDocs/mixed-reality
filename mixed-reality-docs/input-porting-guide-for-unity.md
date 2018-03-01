@@ -1,4 +1,4 @@
-﻿---
+---
 title: Input porting guide for Unity
 description: 
 author: 

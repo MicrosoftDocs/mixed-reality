@@ -1,4 +1,4 @@
-﻿---
+---
 title: HoloLens emulator archive
 description: 
 author: 

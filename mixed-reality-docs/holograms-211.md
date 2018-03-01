@@ -1,4 +1,4 @@
-﻿---
+---
 title: Holograms 211
 description: 
 author: 
