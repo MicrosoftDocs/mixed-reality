@@ -122,5 +122,5 @@ We will update this list as future flights enable APIs.
 
 ## See also
 * [App model](app-model.md)
-* [Submitting an app to the Windows Store](submitting-an-app-to-the-windows-store.md)
+* [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
 * [Updating your existing universal app for HoloLens](updating-your-existing-universal-app-for-hololens.md)

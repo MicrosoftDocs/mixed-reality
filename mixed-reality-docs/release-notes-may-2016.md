@@ -110,5 +110,5 @@ We fixed issues with Visual Studio where
 * [Hardware accessories](hardware-accessories.md)
 * [Mixed reality capture](mixed-reality-capture.md)
 * [Voice input](voice-input.md)
-* [Submitting an app to the Windows Store](submitting-an-app-to-the-windows-store.md)
+* [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
