@@ -34,7 +34,7 @@ See the installation checklist for immersive headsets on [this page](install-the
 
 ## Unity setup
 
-[!VIDEO https://www.youtube.com/embed/cBAOALaHys4]
+>[!VIDEO https://www.youtube.com/embed/cBAOALaHys4]
 
 **Objectives**
 * Optimize Unity for Windows Mixed Reality development
@@ -108,7 +108,7 @@ This tutorial uses **[Mixed Reality Toolkit - Unity](https://github.com/Microsof
 
 ## Chapter 1 - Controller visualization
 
-[!VIDEO https://www.youtube.com/embed/Kw0bf5NqyRg]
+>[!VIDEO https://www.youtube.com/embed/Kw0bf5NqyRg]
 
 **Objectives**
 * Learn how to render motion controller models in Unity's game mode and at runtime.
@@ -163,7 +163,7 @@ You will be able to see the scene with motion controllers in your headset. You c
 
 ## Chapter 2 - Attaching UI elements to the controller
 
-[!VIDEO https://www.youtube.com/embed/e-mLlwmTzJo]
+>[!VIDEO https://www.youtube.com/embed/e-mLlwmTzJo]
 
 **Objectives**
 * Learn about the elements of the motion controllers
@@ -291,7 +291,7 @@ private IEnumerator Start() {
 
 ## Chapter 3 - Working with touchpad input
 
-[!VIDEO https://www.youtube.com/embed/SUyw0kxZPFw]
+>[!VIDEO https://www.youtube.com/embed/SUyw0kxZPFw]
 
 **Objectives**
 * Learn how to get touchpad input data events
@@ -384,7 +384,7 @@ In **Update()**, **selectorPosition** is used to cast a ray at the color wheel's
 
 ## Chapter 4 - Overriding controller model
 
-[!VIDEO https://www.youtube.com/embed/8gBFqA_DZ_U]
+>[!VIDEO https://www.youtube.com/embed/8gBFqA_DZ_U]
 
 **Objectives**
 * Learn how to override the controller model with a custom 3D model.
@@ -410,7 +410,7 @@ You will find the **Tip** component in **BrushController**. We will use its tran
 
 ## Chapter 5 - Painting with Select input
 
-[!VIDEO https://www.youtube.com/embed/QTrYaMHIs7w]
+>[!VIDEO https://www.youtube.com/embed/QTrYaMHIs7w]
 
 **Objectives**
 * Learn how to use the Select button event to start and stop a line drawing
@@ -499,7 +499,7 @@ private void OnEnable()
 
 ## Chapter 6 - Object spawning with Select input
 
-[!VIDEO https://www.youtube.com/embed/z4IxyzFHP0U]
+>[!VIDEO https://www.youtube.com/embed/z4IxyzFHP0U]
 
 **Objectives**
 * Learn how to use Select and Grasp button input events

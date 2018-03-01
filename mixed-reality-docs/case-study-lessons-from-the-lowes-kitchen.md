@@ -14,7 +14,7 @@ keywords:
 
 The HoloLens team wants to share some of the best practices that were derived from the Lowe's HoloLens project. Below is a video of the Lowe's HoloLens projected demonstrated at Satya's 2016 Ignite keynote.
 
-[!VIDEO https://www.youtube.com/embed/gC_4JxF0e_k]
+>[!VIDEO https://www.youtube.com/embed/gC_4JxF0e_k]
 
 ## Lowe's HoloLens Best Practices
 
@@ -31,7 +31,7 @@ The two videos cover best practices that were derived from the Lowe's HoloLens P
 
 Some of the most important things to look at when developing on HoloLens is asset optimization/decimation, using custom shaders (available for free in the [HoloLens Toolkit](https://github.com/Microsoft/HoloToolkit-Unity)). Another important consideration is to measure the frame rate from the very beginning of your project. Depending on the project, the order of displaying your assets can also be a big contributor
 
-[!VIDEO https://www.youtube.com/embed/o0QIPwgiP9A]
+>[!VIDEO https://www.youtube.com/embed/o0QIPwgiP9A]
 
 ## Video 2
 
@@ -43,4 +43,4 @@ Some of the most important things to look at when developing on HoloLens is asse
 
 **Interacting with customers** Lowe's designers are not using a HoloLens, but they need to see what the customers are seeing. We show how to capture what the customer is seeing on a UWP application.
 
-[!VIDEO https://www.youtube.com/embed/LceMdyKZ4PI]
+>[!VIDEO https://www.youtube.com/embed/LceMdyKZ4PI]

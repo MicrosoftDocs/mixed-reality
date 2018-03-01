@@ -16,7 +16,7 @@ Welcome to Windows Holographic, available for the first time on Microsoft HoloLe
 
 **Release version:** Windows Holographic March 2016 Release (**10.0.11082.1033**)
 
-[!VIDEO https://www.youtube.com/embed/C98qaPAMVQU]
+>[!VIDEO https://www.youtube.com/embed/C98qaPAMVQU]
 
 ## What's in Windows Holographic
 

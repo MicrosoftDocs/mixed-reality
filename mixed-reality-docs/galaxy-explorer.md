@@ -19,47 +19,47 @@ The Galaxy Explorer Project is ready. You shared your ideas with the community, 
 
 Our HoloLens [development team](galaxy-explorer.md#meet-the-team) of designers, artists, and developers built Galaxy Explorer and invited all of you to be part of this journey with them. After six weeks of core development and two weeks of refinement, this app is now ready for you! You can also follow along our whole journey through the video series below.
 
-[!VIDEO https://www.youtube.com/embed/HsnH2Q7HxOA]
+>[!VIDEO https://www.youtube.com/embed/HsnH2Q7HxOA]
 
 ## Ep 1: Trust the Process
 
-[!VIDEO https://www.youtube.com/embed/rIX2XrRQgDg]
+>[!VIDEO https://www.youtube.com/embed/rIX2XrRQgDg]
 
 In Episode 1, the development team begins the creative process: brainstorming, concepting, and deciding what to prototype.
 
 ## Ep 2: Let's Do This
 
-[!VIDEO https://www.youtube.com/embed/q1ee8a-84Ro]
+>[!VIDEO https://www.youtube.com/embed/q1ee8a-84Ro]
 
 In Episode 2, the development team completes the prototyping phase – tackling hard problems and figuring out which ideas to pursue further.
 
 ## Ep 3: Laying Foundations
 
-[!VIDEO https://www.youtube.com/embed/fUqni6C4nmo]
+>[!VIDEO https://www.youtube.com/embed/fUqni6C4nmo]
 
 In Episode 3, the team starts the first week of development – creating a plan, writing production code, creating art assets, and figuring out the user interface.
 
 ## Ep 4: Make It Real
 
-[!VIDEO https://www.youtube.com/embed/ePA6hcaqoug]
+>[!VIDEO https://www.youtube.com/embed/ePA6hcaqoug]
 
 In Episode 4, the team dives deeper into development – bringing in scientific data, optimizing the rendering process, and incorporating spatial mapping.
 
 ## Ep 5: See What Happens
 
-[!VIDEO https://www.youtube.com/embed/Up1EDRrCrho]
+>[!VIDEO https://www.youtube.com/embed/Up1EDRrCrho]
 
 In Episode 5, the development team tests the app, searches for bugs that need to be fixed, and refines the experience.
 
 ## Ep 6: Coming to Life
 
-[!VIDEO https://www.youtube.com/embed/sMuJFKbylY4]
+>[!VIDEO https://www.youtube.com/embed/sMuJFKbylY4]
 
 In Episode 6, the team finishes the last week of development, prepares for two weeks of polish work, and reflects on the progress they’ve made
 
 ## Ep 7: The Final Product
 
-[!VIDEO https://www.youtube.com/embed/HsnH2Q7HxOA]
+>[!VIDEO https://www.youtube.com/embed/HsnH2Q7HxOA]
 
 In Episode 7, the team completes the project and shares their code.
 

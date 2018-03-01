@@ -21,7 +21,7 @@ To update to the latest release for each device, open the **Settings** app, go t
  **Latest release for Desktop:** Windows 10 Desktop October 2017 (**10.0.16299.15**, Windows 10 Fall Creators Update)\
  **Latest release for HoloLens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
 
-[!VIDEO https://www.youtube.com/embed/YBcLy1lkegg]
+>[!VIDEO https://www.youtube.com/embed/YBcLy1lkegg]
 
 ## Introducing Windows Mixed Reality
 

@@ -12,7 +12,7 @@ keywords:
 
 # Holograms 101E
 
- [!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
+ >[!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
 
 This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Holographic and HoloLens features including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
 
@@ -28,7 +28,7 @@ This tutorial will walk you through a complete project, built in Unity, that dem
 
 ## Chapter 1 - "Holo" world
 
-[!VIDEO https://www.youtube.com/embed/qotpUpIQxVU]
+>[!VIDEO https://www.youtube.com/embed/qotpUpIQxVU]
 
 In this chapter, we'll setup our first Unity project and step through the build and deploy process.
 
@@ -90,7 +90,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 ## Chapter 2 - Gaze
 
-[!VIDEO https://www.youtube.com/embed/BPWTbAC210k]
+>[!VIDEO https://www.youtube.com/embed/BPWTbAC210k]
 
 In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze.md).
 
@@ -166,7 +166,7 @@ public class WorldCursor : MonoBehaviour
 
 ## Chapter 3 - Gestures
 
-[!VIDEO https://www.youtube.com/embed/6d-0RHeKHq4]
+>[!VIDEO https://www.youtube.com/embed/6d-0RHeKHq4]
 
 In this chapter, we'll add support for [gestures](gestures.md). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
 
@@ -279,7 +279,7 @@ public class SphereCommands : MonoBehaviour
 
 ## Chapter 4 - Voice
 
-[!VIDEO https://www.youtube.com/embed/LxbOhnd2_GM]
+>[!VIDEO https://www.youtube.com/embed/LxbOhnd2_GM]
 
 In this chapter, we'll add support for two [voice commands](voice-input.md): "Reset world" to returns the dropped spheres to their original location, and "Drop sphere" to make the sphere fall.
 
@@ -404,7 +404,7 @@ public class SphereCommands : MonoBehaviour
 
 ## Chapter 5 - Spatial sound
 
-[!VIDEO https://www.youtube.com/embed/Xc3C4VA10w4]
+>[!VIDEO https://www.youtube.com/embed/Xc3C4VA10w4]
 
 In this chapter, we'll add music to the app, and then trigger sound effects on certain actions. We'll be using [spatial sound](spatial-sound.md) to give sounds a specific location in 3D space.
 
@@ -513,7 +513,7 @@ public class SphereSounds : MonoBehaviour
 
 ## Chapter 6 - Spatial mapping
 
-[!VIDEO https://www.youtube.com/embed/S-517Y63Cnk]
+>[!VIDEO https://www.youtube.com/embed/S-517Y63Cnk]
 
 Now we are going to use [spatial mapping](spatial-mapping.md) to place the game board on a real object in the real world.
 

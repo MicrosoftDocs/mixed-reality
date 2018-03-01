@@ -16,7 +16,7 @@ Voice is one of the three key forms of input on HoloLens. It allows you to direc
 
 Voice input is powered by the [same engine](https://msdn.microsoft.com/en-us/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps.
 
-[!VIDEO https://www.youtube.com/embed/eHMkOpNUtR8]
+>[!VIDEO https://www.youtube.com/embed/eHMkOpNUtR8]
 
 ## Device support
 

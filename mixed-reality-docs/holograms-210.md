@@ -1,4 +1,4 @@
----
+=======
 title: Holograms 210
 description: 
 author: 
@@ -14,7 +14,7 @@ keywords:
 
 [Gaze](gaze.md) is the first form of input and reveals the user's intent and awareness. Holograms 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Holographic. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
 
-[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]\
+>[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]\
 
 
 We have a friendly astronaut here to help you learn gaze concepts. In [Holograms 101](holograms-101.md), we had a simple cursor that just followed your gaze. Today we're moving a step beyond the simple cursor:
@@ -42,7 +42,7 @@ We have a friendly astronaut here to help you learn gaze concepts. In [Holograms
 
 ## Chapter 1 - Unity Setup
 
-[!VIDEO https://www.youtube.com/embed/_Ccn6riQ6vU]
+>[!VIDEO https://www.youtube.com/embed/_Ccn6riQ6vU]
 
 **Objectives**
 * Optimize Unity for HoloLens development.
@@ -119,7 +119,7 @@ We need to let Unity know that the app we are trying to export should create an 
 
 ## Chapter 2 - Cursor and target feedback
 
-[!VIDEO https://www.youtube.com/embed/S24u0V_T7ZI]
+>[!VIDEO https://www.youtube.com/embed/S24u0V_T7ZI]
 
 **Objectives**
 * Cursor visual design and behavior.
@@ -539,7 +539,7 @@ public class Interactible : MonoBehaviour
 
 ## Chapter 3 - Targeting Techniques
 
-[!VIDEO https://www.youtube.com/embed/TFnuLva4VJ0]
+>[!VIDEO https://www.youtube.com/embed/TFnuLva4VJ0]
 
 **Objectives**
 * Make it easier to target holograms.
@@ -676,7 +676,7 @@ namespace Academy.HoloToolkit.Unity
 
 ## Chapter 4 - Directional indicator
 
-[!VIDEO https://www.youtube.com/embed/htVbJCMlj64]
+>[!VIDEO https://www.youtube.com/embed/htVbJCMlj64]
 
 **Objectives**
 * Add a directional indicator on the cursor to help find holograms.
@@ -700,7 +700,7 @@ Let's get started.
 
 ## Chapter 5 - Billboarding
 
-[!VIDEO https://www.youtube.com/embed/qFiLr_LUACE]
+>[!VIDEO https://www.youtube.com/embed/qFiLr_LUACE]
 
 **Objectives**
 * Use billboarding to have holograms always face towards you.
@@ -716,7 +716,7 @@ We will be using the **Billboard.cs** file to keep a GameObject oriented such th
 
 ## Chapter 6 - Tag-Along
 
-[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
+>[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
 
 **Objectives**
 * Use Tag-Along to have our holograms follow us around the room.

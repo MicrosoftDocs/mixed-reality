@@ -14,7 +14,7 @@ keywords:
 
 Get the tools you need to build apps for Windows, including Windows Mixed Reality apps. There is no separate SDK for Windows Mixed Reality development; you'll use Visual Studio with the Windows 10 SDK (version 1511 or later). Don't have a mixed reality device? You can install the [HoloLens emulator](using-the-hololens-emulator.md) to build mixed reality apps without a HoloLens. You can also use the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) to test your mixed reality apps for immersive headsets. We recommend installing the Unity game engine as an easy way to get started creating mixed reality apps.
 
-[!VIDEO https://www.youtube.com/embed/3l20TWhw4S8]
+>[!VIDEO https://www.youtube.com/embed/3l20TWhw4S8]
 
 ## Installation checklist for HoloLens
 

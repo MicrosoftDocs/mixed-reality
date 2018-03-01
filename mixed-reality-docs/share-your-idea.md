@@ -24,4 +24,4 @@ Be a part of the first community-sourced HoloLens experience.
 * [Get the code](https://github.com/Microsoft/GalaxyExplorer)
 * [Experience the journey](galaxy-explorer.md)
 
-[!VIDEO https://www.youtube.com/embed/ZxGdW_ASrRc]
+>[!VIDEO https://www.youtube.com/embed/ZxGdW_ASrRc]

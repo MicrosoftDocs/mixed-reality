@@ -16,7 +16,7 @@ The HoloLens team is committed to provide you with an update on our latest featu
 
 **Release version:** Windows Holographic May 2016 Update (**10.0.14342.1016**)
 
-[!VIDEO https://www.youtube.com/embed/XM5OHHrOGqQ]
+>[!VIDEO https://www.youtube.com/embed/XM5OHHrOGqQ]
 
 To update to the current release, open the *Settings* app, go to *Update & Security*, then select the *Check for updates* button.
 

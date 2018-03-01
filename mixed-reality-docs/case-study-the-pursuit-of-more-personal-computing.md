@@ -78,7 +78,7 @@ The past year of developer partnerships has uncovered areas of opportunity that 
 
 One of the chief opportunities of mixed reality is the ability to see and manipulate 3D designs in real time, in a real-world setting, at true size and scale. Design and prototyping tools have escaped the confines of screens, returning to a realm of design usually reserved for tangible, physical materials like wood and clay.
 
-[!VIDEO https://www.youtube.com/embed/Hx6biWE2VsM]
+>[!VIDEO https://www.youtube.com/embed/Hx6biWE2VsM]
 
 [Autodesk](https://www.youtube.com/watch?v=Hx6biWE2VsM) created a mixed reality experience aimed at improving collaboration across the entire product development process. The ability for engineers and designers to survey and critique 3D models in their environment allowed them to iterate on a design in real-time. This not only enabled faster prototyping but gave way to more confident decisions in the process.
 
@@ -88,7 +88,7 @@ Experiences like this highlight the need for core collaboration experiences, the
 
 From the increasing amount of specialization on factory floors to the rapid advancements of supply chain management, seamless access to relevant information is key. Mixed reality offers the ability to synthesize extensive data sets and provide visual displays that aid in areas like navigation and operations. These are often highly technical, niche fields where integration with custom datasets and services are crucial to reducing complexity and providing a successful experience.
 
-[!VIDEO https://www.youtube.com/embed/8OWhGiyR4Ns]
+>[!VIDEO https://www.youtube.com/embed/8OWhGiyR4Ns]
 
 Elevator manufacturer [ThyssenKrupp](https://www.youtube.com/watch?v=8OWhGiyR4Ns) created an experience for elevator service technicians, allowing them to visualize and identify problems in preparation for a job. With a team spanning over 24,000 technicians, devices like HoloLens allow these technicians to have remote, hands-free access to technical and expert information.
 
@@ -98,7 +98,7 @@ ThyssenKrupp highlights a powerful concept here that critical, contextually-rele
 
 Representing objects and information in three dimensions offer new ways to explain scenarios visually and with spatial understanding. Training becomes a key area of opportunity, leveraging the ability to digitally represent enormous, complex objects (like jet engines) to create training simulations for a fraction of the cost of a physical solution.
 
-[!VIDEO https://www.youtube.com/embed/GjZgI2oDcwM]
+>[!VIDEO https://www.youtube.com/embed/GjZgI2oDcwM]
 
 [Japan Airlines](https://www.youtube.com/watch?v=GjZgI2oDcwM&t=158s) has been experimenting with concept programs to provide supplemental training for engine mechanics and flight crews. The massive jet engines (in both size and complexity) can be represented in 3D, ignoring the limitations of the physical world to move and rotate virtual objects around trainees, allowing them to see how airline components work in real-time.
 
@@ -108,7 +108,7 @@ Training with virtual components (and reducing the need for expensive, physical 
 
 Interactions between two people (whether both participants are in mixed reality devices or one is on a traditional PC or phone) can provide both a sense of immersion within a new environment or a sense of presence when communicating virtually with others. In enterprise scenarios this sense of presence is a boon to mobile teams, helping to increase understanding of projects and lessen the need for travel.
 
-[!VIDEO https://www.youtube.com/embed/kXVW4sUsh3A]
+>[!VIDEO https://www.youtube.com/embed/kXVW4sUsh3A]
 
 Commercial tech manufacturer [Trimble](https://www.youtube.com/watch?v=kXVW4sUsh3A) developed a solution for architecture and construction industry professionals to collaborate and review work during building development. Professionals can remotely immerse themselves into a project to discuss progress or be on location and review plans as they would look (in their final form) in the environment around them.
 
@@ -118,7 +118,7 @@ Shared experiences are a major area of investment for Microsoft, with apps like 
 
 The nature of immersion in mixed reality can have a tremendous impact on the way customers engage with entertainment and marketing. Artists and entertainment studios have explored mixed reality as a compelling medium for storytelling, while companies are exploring the implications for brand marketing. From product demos in private showrooms to vision pieces told at trade expos, content can be delivered in more immersive and tailored ways.
 
-[!VIDEO https://www.youtube.com/embed/DilzwF90vec]
+>[!VIDEO https://www.youtube.com/embed/DilzwF90vec]
 
 Volvo created an experience for showcasing their latest car models (immersing users in different colors and configurations) while highlighting how advanced sensors work to create a better, safer driving experience. Taking customers through a guided showroom experience allows Volvo to tell the story behind cutting-edge car feature while delivering a memorable portrayal of their brand story.
 

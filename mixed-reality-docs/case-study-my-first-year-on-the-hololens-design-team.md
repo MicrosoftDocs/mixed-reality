@@ -114,7 +114,7 @@ For HoloLens prototyping, I tried out all the tutorials at [Mixed Reality Academ
 
 After acquiring basic understanding of HoloLens prototyping, I wanted to empower other non-coders to prototype on their own. So I made a video tutorial that teaches how to develop a simple projectile using HoloLens. I briefly explain the basic concepts, so even if you have zero experience in HoloLens development, you should be able to follow along.
 
-[!VIDEO https://www.youtube.com/embed/58612RT2CT8]
+>[!VIDEO https://www.youtube.com/embed/58612RT2CT8]
 
 I made this simple tutorial for non-programmers like myself.
 

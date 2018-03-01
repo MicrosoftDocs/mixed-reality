@@ -19,7 +19,7 @@ This tutorial will walk you through creating a basic mixed reality app built wit
 
 ## Chapter 1 - Create a New Project
 
-[!VIDEO https://www.youtube.com/embed/2L5IFO0hnYA]
+>[!VIDEO https://www.youtube.com/embed/2L5IFO0hnYA]
 
 To build an app with Unity, you first need to create a project. This project is organized into a few folders, the most important of which is your Assets folder. This is the folder that holds all assets you import from digital content creation tools such as Maya, Max Cinema 4D or Photoshop, all code you create with Visual Studio or your favorite code editor, and any number of content files that Unity creates as you compose scenes, animations and other Unity asset types in the editor.
 
@@ -35,7 +35,7 @@ Congrats, you are all setup to get started with your mixed reality customization
 
 ## Chapter 2 - Setup the Camera
 
-[!VIDEO https://www.youtube.com/embed/eP1ZwB4wSNA]
+>[!VIDEO https://www.youtube.com/embed/eP1ZwB4wSNA]
 
 The Unity Main Camera handles head tracking and stereoscopic rendering. There are a few changes to make to the Main Camera to use it with mixed reality.
 1. Select File > New Scene
@@ -65,7 +65,7 @@ Finally, let us save our progress so far. To save the scene changes, select **Fi
 
 ## Chapter 3 - Setup the Project Settings
 
-[!VIDEO https://www.youtube.com/embed/ItRoiXccC0g]
+>[!VIDEO https://www.youtube.com/embed/ItRoiXccC0g]
 
 In this chapter, we will set some Unity project settings that help us target the Windows Holographic SDK for development. We will also set some quality settings for our application. Finally, we will ensure our build targets are set to Windows Store.
 
@@ -90,7 +90,7 @@ Awesome job on getting all the project settings applied. Next, let us add a holo
 
 ## Chapter 4 - Create a cube
 
-[!VIDEO https://www.youtube.com/embed/qKcK1Yuj-HQ]
+>[!VIDEO https://www.youtube.com/embed/qKcK1Yuj-HQ]
 
 Creating a cube in your Unity project is just like creating any other object in Unity. Placing a cube in front of the user is easy because Unity's coordinate system is mapped to the real world - where one meter in Unity is approximately one meter in the real world.
 1. In the top left corner of the **Hierarchy** panel, select the **Create** dropdown and choose **3D Object > Cube**.
@@ -101,7 +101,7 @@ Creating a cube in your Unity project is just like creating any other object in 
 
 ## Chapter 5 - Verify on device from Unity editor
 
-[!VIDEO https://www.youtube.com/embed/vmCfiIdRb6Q]
+>[!VIDEO https://www.youtube.com/embed/vmCfiIdRb6Q]
 
 Now that we have created our cube, it is time to do a quick check in device. You can do this directly from within the Unity editor.
 
@@ -127,7 +127,7 @@ You will now be able to see the cube rendering in your mixed reality headset and
 
 ## Chapter 6 - Build and deploy to device from Visual Studio
 
-[!VIDEO https://www.youtube.com/embed/USSu8yHUdbk]
+>[!VIDEO https://www.youtube.com/embed/USSu8yHUdbk]
 
 We are now ready to compile our project to Visual Studio and deploy to our target device.
 

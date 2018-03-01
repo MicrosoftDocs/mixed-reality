@@ -16,7 +16,7 @@ When objects are out of our line of sight, one of the ways that we can perceive 
 
 Although holograms can only appear visually where the user's gaze is pointing, your app's sound can come from all directions; above, below, behind, to the side, etc. You can use this feature to draw attention to an object that might not currently be in the user's view. A user can perceive sounds to be emanating from a source in the mixed-reality world. For example, as the user gets closer to an object or the object gets closer to them, the volume increases. Similarly, as objects move around a user, or vice versa, spatial sounds give the illusion that sounds are coming directly from the object.
 
-[!VIDEO https://www.youtube.com/embed/PTPvx7mDon4]
+>[!VIDEO https://www.youtube.com/embed/PTPvx7mDon4]
 
 ## Device support
 
@@ -34,7 +34,7 @@ Although holograms can only appear visually where the user's gaze is pointing, y
 
 By analyzing how sound reaches both our ears, our brain determines the distance and direction of the object emitting the sound. An HRTF (or Head Related Transfer Function) simulates this interaction by modeling the spectral response that characterizes how an ear receives sound from a point in space. The spatial audio engine uses personalized HRTFs to expand the mixed reality experience, and simulate sounds that are coming from various directions and distances.
 
-[!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
+>[!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
 
 Left or right audio (azimuth) cues originate from differences in the time sound arrives at each ear. Up and down cues originate from spectral changes produced by the outer ear shape (pinnae). By designating where audio is coming from, the system can simulate the experience of sound arriving at different times to our ears. Note that on HoloLens, while azimuth spatialization is personalized, the simulation of elevation is based on an average set of anthropometrics. Thus, elevation accuracy may be less accurate than azimuth accuracy.
 
