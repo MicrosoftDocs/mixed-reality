@@ -1,4 +1,4 @@
-﻿---
+---
 title: Performance recommendations for Unity
 description: 
 author: 

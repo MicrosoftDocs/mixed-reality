@@ -1,4 +1,4 @@
-﻿---
+---
 title: Spatial mapping in DirectX
 description: 
 author: 

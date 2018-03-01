@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using the Windows Device Portal
 description: 
 author: 

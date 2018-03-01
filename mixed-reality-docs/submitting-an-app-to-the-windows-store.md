@@ -1,4 +1,4 @@
-﻿---
+---
 title: Submitting an app to the Windows Store
 description: 
 author: 

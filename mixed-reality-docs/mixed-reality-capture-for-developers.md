@@ -1,4 +1,4 @@
-﻿---
+---
 title: Mixed reality capture for developers
 description: 
 author: 

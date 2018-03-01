@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using the Windows Mixed Reality simulator
 description: 
 author: 

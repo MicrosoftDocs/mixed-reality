@@ -1,4 +1,4 @@
-﻿---
+---
 title: Recommended settings for Unity
 description: 
 author: 

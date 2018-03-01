@@ -1,4 +1,4 @@
-﻿---
+---
 title: Using XAML with holographic DirectX apps
 description: 
 author: 

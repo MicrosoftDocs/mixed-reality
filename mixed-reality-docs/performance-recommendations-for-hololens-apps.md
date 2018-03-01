@@ -1,4 +1,4 @@
-﻿---
+---
 title: Performance recommendations for HoloLens apps
 description: 
 author: 

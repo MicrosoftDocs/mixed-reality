@@ -1,4 +1,4 @@
-﻿---
+---
 title: Reset or recover your HoloLens
 description: 
 author: 

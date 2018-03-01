@@ -1,4 +1,4 @@
-﻿---
+---
 title: Shared experiences in mixed reality
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Spatial sound
 description: 
 author: 

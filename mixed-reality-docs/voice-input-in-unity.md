@@ -1,4 +1,4 @@
-﻿---
+---
 title: Voice input in Unity
 description: 
 author: 

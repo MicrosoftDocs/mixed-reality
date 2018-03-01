@@ -1,4 +1,4 @@
-﻿---
+---
 title: Unity development overview
 description: 
 author: 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Mixed Reality 250
 description: 
 author: 

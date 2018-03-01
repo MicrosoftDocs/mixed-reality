@@ -1,4 +1,4 @@
-﻿---
+---
 title: Text in Unity
 description: 
 author: 

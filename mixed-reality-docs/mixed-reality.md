@@ -1,4 +1,4 @@
-﻿---
+---
 title: Mixed reality
 description: 
 author: 

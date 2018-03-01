@@ -1,4 +1,4 @@
-﻿---
+---
 title: Updating your SteamVR application for Windows Mixed Reality
 description: 
 author: 

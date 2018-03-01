@@ -1,4 +1,4 @@
-﻿---
+---
 title: Rendering
 description: 
 author: 

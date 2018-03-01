@@ -1,4 +1,4 @@
-﻿---
+---
 title: What can I do with HoloLens offline
 description: 
 author: 

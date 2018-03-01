@@ -1,4 +1,4 @@
-﻿---
+---
 title: Share your idea
 description: 
 author: 
