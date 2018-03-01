@@ -64,7 +64,7 @@ Because of the way docs.microsoft.com styles tables, they won’t have borders o
 You’ll need to upload your images to the images folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot respectively. [You can find solid guidance here.](https://review.docs.microsoft.com/en-us/help/style/style-how-to-visuals-static-art-types?branch=master)
 
 ### Previewing your work
-While editing in the browser, you can click the **Preview** tab near the top of the page to preview your work before committing. Once your contributions have been merged into the master branch, you can see what the documentation would look like when it goes public at https://review.docs.microsoft.com/en-us/windows/mixed-reality/?branch=master
+While editing in the browser, you can click the **Preview** tab near the top of the page to preview your work before committing. Once your contributions have been merged into the master branch, you can see what the documentation will look like when it goes public at https://review.docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools?branch=master (find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
