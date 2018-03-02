@@ -41,7 +41,6 @@ Due to the nature of additive displays, certain colors can appear different on h
 Due to the nature of additive displays, dark colors appear transparent. A solid black object will appear no different from the real world. See Alpha channel below. To give the appearance of “black” try a very dark grey RGB value such as 16,16,16.
 
 ![Normal vs. wide color gamut](images/640px-widegamut.png)
-
 Normal vs. wide color gamut
 
 ## Technical considerations
