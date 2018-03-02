@@ -1,6 +1,6 @@
 # Contributing to Windows Mixed Reality developer documentation
 
-Welcome to the public repo for Windows Mixed Reality developer documentation! Any articles you create or edit in this repo **will be visible to the public.** Windows Mixed reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown. This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution! 
+Welcome to the [public repo for Windows Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.** Windows Mixed reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown. This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution! 
 
 ## Before you start 
 
