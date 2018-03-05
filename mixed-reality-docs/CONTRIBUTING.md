@@ -4,7 +4,7 @@ Welcome to the [public repo for Windows Mixed Reality developer documentation](h
 
 ## Before you start 
 
-If you don't already have one, you'll need to create a GitHub account and link it to your Microsoft identity (if you're a Microsoft employee). You can find instructions on [this page](https://docs.microsoft.com/en-us/contribute/help-crr/help-content/contribute/contribute-get-started-setup-github). Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
+If you don't already have one, you'll need to create a GitHub account and link it to your Microsoft identity (if you're a Microsoft employee). You can find instructions on [this page](https://docs.microsoft.com/en-us/contribute/contribute/get-started-setup-github). Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
 
 ## Editing an existing article
 
