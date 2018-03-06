@@ -1,11 +1,11 @@
 ---
 title: Case study - Looking through holes in your reality
-description: 
-author: 
-ms.author: randyw
+description: Consider—essentially a magic trick—to look into or through real physical objects around you.
+author: EricRehmeyer
+ms.author: ericrehm
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens
 ---
 
 
@@ -98,8 +98,12 @@ Here are some ideas of where you can take this idea next:
 
 ## About the author
 
-![Picture of Eric Rehmeyer](images/genericusertile.jpg) Eric Rehmeyer \
- Senior Software Engineer @Microsoft
+<table style="border-collapse:collapse">
+<tr>
+<td style="border-style: none"><img alt="Picture of Eric Rehmeyer" width="60" height="60" src="images/genericusertile.jpg"></td>
+<td style="border-style: none"><b>Eric Rehmeyer</b><br>Senior Software Engineer @Microsoft</td>
+</tr>
+</table>
 
 ## See also
 * [Case studies](category/case-studies.md)
