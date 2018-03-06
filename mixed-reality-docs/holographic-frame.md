@@ -1,7 +1,7 @@
 ---
 title: Holographic frame
 description: 
-author: 
+author: Mark Vitazko
 ms.author: mavitazk
 ms.date: 2/28/2018
 ms.topic: article
