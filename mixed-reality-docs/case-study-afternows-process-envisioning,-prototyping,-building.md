@@ -1,14 +1,12 @@
 ---
 title: Case study - AfterNow's process - envisioning, prototyping, building
-description: 
+description: AfterNow's process - envisioning, prototyping, building
 author: 
 ms.author: randyw
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, AfterNow, envisioning, prototyping, building
 ---
-
-
 
 # Case study - AfterNow's process - envisioning, prototyping, building
 
@@ -97,12 +95,12 @@ We spend 20 minutes privately jotting down some rough ideas.
 We spend eight minutes creating eight frames. This is where we rapidly sketch a variation of one of our best ideas in each frame.
 
 **Solution**
-
 We spend 30 minutes sketching storyboards. We take the best variations of ideas from Crazy 8s and create a three-panel storyboard of the idea.
 
 ![Sketching storyboards](images/sketching-storyboards-640px.png)
 
 ## DAY 3 - Decide
+
 
 This day involves a lot of critiquing and voting. Here's the breakdown:
 
@@ -138,7 +136,9 @@ Physically act out the user flow which involves all the user parties in the orde
 
 ## About the author
 
-![Tile for Rafai Eddy](images/kurohyo1-60px.png) Rafai Eddy \
- @[AfterNow](https://www.afternow.io/)
-
- 
+<table style="border:0;width:800px">
+<tr>
+<td style="border:0"> <img alt="Rafai Eddy, AfterNow" width="60" height="60" src="images/kurohyo1-60px.png"></td>
+ <td style="border:0"><b>Rafai Eddy</b><br>AfterNow</td>
+</tr>
+</table>
