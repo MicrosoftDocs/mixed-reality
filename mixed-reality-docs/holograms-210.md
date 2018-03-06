@@ -1,18 +1,18 @@
 =======
 title: Holograms 210
-description: 
-author: 
-ms.author: neerajw
+description: <meta name="description" content="Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of gaze concepts." />
+author: keveleigh
+ms.author: kurtie
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity
 ---
 
 
 
 # Holograms 210
 
-[Gaze](gaze.md) is the first form of input and reveals the user's intent and awareness. Holograms 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Holographic. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
+[Gaze](gaze.md) is the first form of input and reveals the user's intent and awareness. Holograms 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Mixed Reality. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
 
 >[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]\
 

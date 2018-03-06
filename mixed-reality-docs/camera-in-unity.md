@@ -1,11 +1,11 @@
 ---
 title: Camera in Unity
-description: 
-author: 
-ms.author: neerajw
+description: <meta name="description" content="Describing Unity's Main Camera for Windows Mixed Reality development." />
+author: keveleigh
+ms.author: kurtie
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity
 ---
 
 

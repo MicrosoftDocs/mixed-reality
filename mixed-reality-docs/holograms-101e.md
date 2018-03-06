@@ -1,8 +1,8 @@
 ---
 title: Holograms 101E
-description: <meta name="description" content="Follow this coding walkthrough using Unity, Visual Studio and the HoloLens Emulator to learn the basics of a holographic application." />
-author: 
-ms.author: neerajw
+description: <meta name="description" content="Follow this coding walkthrough using Unity, Visual Studio and HoloLens Emulator to learn the basics of a holographic application." />
+author: keveleigh
+ms.author: kurtie
 ms.date: 2/28/2018
 ms.topic: article
 keywords: 
@@ -14,7 +14,7 @@ keywords:
 
  >[!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
 
-This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Holographic and HoloLens features including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
+This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
 
 **Prerequisites**
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).

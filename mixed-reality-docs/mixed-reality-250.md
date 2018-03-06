@@ -1,11 +1,11 @@
 ---
 title: Mixed Reality 250
-description: 
-author: 
-ms.author: neerajw
+description: <meta name="description" content="Follow this coding walkthrough using Unity, Visual Studio and Windows Mixed Reality headsets to learn the details of sharing holograms." />
+author: keveleigh
+ms.author: kurtie
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motioncontroller, sharing, xboxcontroller
 ---
 
 

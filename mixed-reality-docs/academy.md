@@ -1,11 +1,11 @@
 ---
 title: Academy
-description: <meta name="description" content="The Holographic Academy provides tutorials on starting holographic development and access to expert advice from those who have built the best holographic experiences." />
-author: 
-ms.author: neerajw
+description: <meta name="description" content="The Mixed Reality Academy provides tutorials on starting development and access to expert advice from those who have built the best holographic experiences." />
+author: keveleigh
+ms.author: kurtie
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity
 ---
 
 
