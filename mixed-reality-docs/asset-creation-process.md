@@ -5,7 +5,7 @@ author:
 ms.author: randyw
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: asset, creation, process, budget, polygons, textures, shaders, performance
 ---
 
 
@@ -19,6 +19,10 @@ The assets you create for a project come in many shapes and forms. They can be c
 ![Concept, creation, integration and iteration flow](images/concept-creation-integration-iteration-flow-640px.jpg)
 
 ## Things to consider
+
+When looking at the experience you're trying to create think of it as a **budget** that you can spend to try to create the best experience. There is not necessarily hard limits on the number of **polygons** or **types of materials** use in your assets but more a budgeted set of tradeoffs.
+
+Below is an example budget for your experience. Performance is usually not a single point of failure but death by a thousand cuts per-se.
 
 <table style="float:right; margin-left: 10px;">
 <tr>
@@ -45,12 +49,6 @@ The assets you create for a project come in many shapes and forms. They can be c
 <td> <b>Total</b></td><td> <b>65%</b></td><td> <b>90%</b></td><td> <b>70%</b></td>
 </tr>
 </table>
-
-
-
-When looking at the experience you're trying to create think of it as a **budget** that you can spend to try to create the best experience. There is not necessarily hard limits on the number of **polygons** or **types of materials** use in your assets but more a budgeted set of tradeoffs.
-
-To the right is an example budget for your experience. Performance is usually not a single point of failure but death by a thousand cuts per-se.
 
 **Total number of assets**
 * How many assets are active in the scene?
