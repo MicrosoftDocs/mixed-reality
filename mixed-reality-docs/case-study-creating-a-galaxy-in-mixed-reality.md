@@ -1,11 +1,11 @@
 ---
 title: Case study - Creating a galaxy in mixed reality
-description: 
+description: Before Microsoft HoloLens shipped, we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device. More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called "Galaxy Explorer."
 author: 
-ms.author: randyw
+ms.author: kaluccin, azibits
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Galaxy Explorer, HoloLens, Windows Mixed Reality
 ---
 
 
@@ -69,9 +69,14 @@ We started with raw circular patterns with thousands of particles. This gave us 
 
 ![We attempted various patterns and particle systems that rotated, like these.](images/galaxy-patterns-500px.png)
 
+We attempted various patterns and particle systems that rotated, like these.
+
 Our team did some research about the way galaxies function and we made a custom particle system specifically for the galaxy so that we could move the particles on ellipses based on "[density wave theory](https://en.wikipedia.org/wiki/Density_wave_theory)," which theorizes that the arms of a galaxy are areas of higher density but in constant flux, like a traffic jam. It appears stable and solid, but the stars are actually moving in and out of the arms as they move along their respective ellipses. In our system, the particles never exist on the CPU—we generate the cards and orient them all on the GPU, so the whole system is simply initial state + time. It progressed like this:
 
 ![Progression of particle system with GPU rendering](images/spiral-galaxy-arms-500px.jpg)
+
+Progression of particle system with GPU rendering
+
 
 Once enough ellipses are added and are set to rotate, the galaxies began to form “arms” where the movement of stars converge. The spacing of the stars along each elliptical path was given some randomness, and each star got a bit of positional randomness added. This created a much more natural looking distribution of star movement and arm shape. Finally, we added the ability to drive color based on distance from center.
 
@@ -80,6 +85,9 @@ Once enough ellipses are added and are set to rotate, the galaxies began to form
 To animate the general star motion, we needed to add a constant angle for each frame and to get stars moving along their ellipses at a constant radial velocity. This is the primary reason for using **curveOffset**. This isn’t technically correct as stars will move faster along the long sides of the ellipses, but the general motion felt good.
 
 ![Stars move faster on the long arc, slower on the edges.](images/ellipse-movement.jpg)
+
+Stars move faster on the long arc, slower on the edges.
+
 
 With that, each star is fully described by (**curveOffset**, **ellipseSize**, **elevation**, **Age**) where **Age** is an accumulation of the total time that has passed since the scene was loaded.
 
@@ -105,9 +113,16 @@ This allowed us to generate tens of thousands of stars once at the start of the 
 
 ![Here’s what it looks like when drawing white quads.](images/drawing-white-quads-300px.jpg)
 
+Here’s what it looks like when drawing white quads.
+
+
+
 To make each quad face the camera, we used a geometry shader to transform each star position to a 2D rectangle on the screen that will contain our star texture.
 
 ![Diamonds instead of quads.](images/drawing-white-quads-300px.jpg)
+
+Diamonds instead of quads.
+
 
 Because we wanted to limit the overdraw (number of times a pixel will be processed) as much as possible, we rotated our quads so that they would have less overlap.
 
@@ -118,6 +133,10 @@ There are many ways to get a volumetric feeling with particles—from ray marchi
 On our second attempt, we tried having as many particles as possible. The best visuals were achieved when we additively drew particles and blurred them before adding them to the scene. The typical problems with that approach were related to how many particles we could draw at a single time and how much screen area they covered while still maintaining 60fps. Blurring the resulting image to get this cloud feeling was usually a very costly operation.
 
 ![Without texture, this is what the clouds would look like with 2% opacity.](images/clouds-without-texture-300px.jpg)
+
+Without texture, this is what the clouds would look like with 2% opacity.
+
+
 
 Being additive and having a lot of them means that we would have several quads on top of each other, repeatedly shading the same pixel. In the center of the galaxy, the same pixel has hundreds of quads on top of each other and this had a huge cost when being done full screen.
 
@@ -137,9 +156,16 @@ Instead of rendering to a full screen and losing those precious milliseconds we 
 
 ![x3 upscale back to full resolution.](images/galaxy-resolutions-300px.png)
 
+x3 upscale back to full resolution.
+
+
+
 This allowed us to get the cloud part with only a fraction of the original cost. Instead of adding clouds on the full resolution, we only paint 1/64th of the pixels and just stretch the texture back to full resolution.
 
 ![Left, with an upscale from 1/8th to full resolution; and right, with 3 upscale using power of 2.](images/stars-upscaled-300px.jpg)
+
+Left, with an upscale from 1/8th to full resolution; and right, with 3 upscale using power of 2.
+
 
 Note that trying to go from 1/64th of the size to the full size in one go would look completely different, as the graphic card would still use 4 pixels in our setup to shade a bigger area and artifacts start to appear.
 
@@ -150,6 +176,9 @@ Then, if we add full resolution stars with smaller cards, we get the full galaxy
 Once we were on the right track with the shape, we added a layer of clouds, swapped out the temporary dots with ones we painted in Photoshop, and added some additional color. The result was a Milky Way Galaxy our art and engineering teams both felt good about and it met our goals of having depth, volume, and motion—all without taxing the CPU.
 
 ![Our final Milky Way Galaxy in 3D.](images/final-galaxy-500px.jpg)
+
+Our final Milky Way Galaxy in 3D.
+
 
 ### More to explore
 
