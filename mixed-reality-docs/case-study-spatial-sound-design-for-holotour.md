@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: jsylte
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, HoloTour, spatial sound
+keywords: Windows Mixed Reality, HoloLens, HoloTour, spatial sound, case study
 ---
 
 
