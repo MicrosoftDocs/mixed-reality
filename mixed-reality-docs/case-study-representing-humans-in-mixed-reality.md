@@ -1,11 +1,11 @@
 ---
 title: Case study - Representing humans in mixed reality
-description: 
-author: 
-ms.author: randyw
+description: What kind of opportunities emerge when we cannot only create fantastic elements, but utilize the most realistic captures of environments, objects, and people in mixed reality?
+author: mavitazk
+ms.author: mavitazk
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, humans
 ---
 
 
@@ -16,7 +16,7 @@ James Turrell designs with light. Stepping into his work blurs one’s sense of 
 
 ![Wide Out - James Turrell (1998)](images/wide-out-james-turrell.jpg)
 
-### How do you represent complex real-world environments in mixed reality?
+## How do you represent complex real-world environments in mixed reality?
 
 Representing Turrell’s work in an immersive experience makes for a compelling challenge. Lighting, scale, and spatial audio present opportunities to represent his work. While the exhibit’s geometric surroundings would require relatively simple 3D modeling, they are secondary to the artist’s focus: the light’s impact on the senses.
 
@@ -42,7 +42,7 @@ For environments and objects, 360° imaging software is evolving to include elem
 
 For people, new methods are emerging that combine and extend motion capture and scanning: Motion capture has been foundational to bringing detailed human movement to visual effects and cinematic characters, while scanning has advanced to capture detailed human visuals like faces and hands. With advancements in rendering technology, a new method called volumetric video builds off these techniques, combining visual and depth information, to create the next generation of 3D human captures.
 
-### Volumetric video and the pursuit of authentic human capture
+## Volumetric video and the pursuit of authentic human capture
 
 Humans are central to storytelling — in the most literal sense: a human speaking, performing, or as the story’s subject. Some of the most immersive and eye-opening moments of today’s early immersive experiences are social. From sharing a mixed reality experience together in your living room, to seeing your friends in unbelievable new environments. The human element makes even the most fantastic reality, a reality.
 
@@ -58,7 +58,7 @@ Authentic human capture unlocks new unique categories of experiences in mixed re
 
 Today the team is pushing the bounds of volumetric video by focusing on sectors like entertainment and education: [Actiongram](https://www.microsoft.com/en-us/hololens/apps/actiongram) features creative characters and [celebrities](https://www.youtube.com/watch?v=BwWueXlsOrA) to create mixed reality stories. [Destination: Mars exhibit](https://www.jpl.nasa.gov/news/news.php?feature=6220), now at NASA’s Kennedy Space Center, features a volumetric video of legendary astronaut Buzz Aldrin. The experience allows visitors to walk around the surface of Mars with Buzz as he introduces the pursuit of human colonization on Mars.
 
-### Humans are fundamental to mixed reality
+## Humans are fundamental to mixed reality
 
 Designing ways to make these videos seem natural poses a challenge but one in which the team sees enormous potential. And these opportunities will expand as the technology becomes more accessible and moves from recordings to real-time capture.
 
@@ -72,5 +72,9 @@ Just as the abstract art of James Turrell and the critical realism of Ai Weiwei 
 
 ## About the author
 
-![Picture of Mark Vitazko](images/mark-vitazko.jpg) Mark Vitazko \
- UX Designer @Microsoft
+<table style="border-collapse:collapse">
+<tr>
+<td style="border-style: none"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
+<td style="border-style: none"><b>Mark Vitazko</b><br>UX Designer @Microsoft</td>
+</tr>
+</table>
