@@ -300,14 +300,14 @@ Design for worst case scenarios, and maybe consider using adaptive rendering for
 
 ## About the authors
 
-![Picture of Robert Ferrese](images/robert-ferrese-60px.jpg) 
-**[Robert Ferrese](mailto:roferres@microsoft.com)**
-Software engineer @Microsoft
+![Picture of Robert Ferrese](images/robert-ferrese-60px.jpg)<br> 
+**[Robert Ferrese](mailto:roferres@microsoft.com)**<br>
+Software engineer - Microsoft<br>
 For this project, Robert focused on data acquisition and rendering. He had been a mixed reality developer for two years before this project. His background is in gameplay, user interactions, user experiences and virtual reality development.
 
-![Picture of Dan Andersson](images/dan-andersson-60px.jpg) 
-**[Dan Andersson](mailto:daander@microsoft.com)**
-Software engineer @Microsoft
+![Picture of Dan Andersson](images/dan-andersson-60px.jpg)<br>
+**[Dan Andersson](mailto:daander@microsoft.com)**<br>
+Software engineer - Microsoft<br>
 Dan spent 20 years in the games industry producing games from the original Battlefront to Halo 5, and is now helping shape the future of Mixed Reality at Microsoft. He enjoys his 4 kids, a casual game of soccer and has a black belt in Swedish snaps songs.
 
 ## See also
