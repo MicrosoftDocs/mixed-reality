@@ -1,11 +1,11 @@
 ---
 title: Periodic Table of the Elements
-description: 
-author: 
-ms.author: randyw
+description: Periodic Table of the Elements is an open-source sample app from Microsoft's Mixed Reality Design Labs where you can learn how to lay out an array of objects in 3D space with various surface types using an Object collection.
+author: cre8ivepark
+ms.author: dongpark
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, design, sample app, controls
 ---
 
 
@@ -48,17 +48,20 @@ The user can change the surface type by air tapping the buttons on the bottom of
 
 ![nteractable object](images/640px-periodictable-interactableobject.jpg)
 
+<br>
 **Object collection**
 
 [Object collection](object-collection.md) is an object which helps you lay out multiple objects in various shapes. It supports plane, cylinder, sphere and scatter. You can configure additional properties such as radius, number of rows and the spacing. [Learn more](object-collection.md)
 
 ![Object collection](images/640px-periodictable-collections.jpg)
 
+<br>
 **Fitbox**
 
 By default, holograms will be placed in the location where the user is gazing at the moment the application is launched. This sometimes leads to unwanted result such as holograms being placed behind a wall or in the middle of a table. A fitbox allows a user to use gaze to determine the location where the hologram will be placed. It is made with a simple PNG image texture which can be easily customized with your own images or 3D objects.
 
 ![Fitbox](images/450px-periodictable-fitbox.jpg)
+
 
 ## Technical details
 
@@ -78,6 +81,7 @@ Using the same controls and interaction model as the Periodic Table of the Eleme
 
 ![Application example: Finance (3 of 3)](images/640px-periodictable-applicationexamples-finance3.jpg)
 
+<br>
 **Sports app**
 
 This is an example of visualizing sports data using Object collection and other components from the Periodic Table of the Elements sample app.
@@ -90,8 +94,12 @@ This is an example of visualizing sports data using Object collection and other 
 
 ## About the author
 
-![Picture of Dong Yoon Park](images/dongyoonpark.jpg) [Dong Yoon Park](mailto:dongyoon.park@microsoft.com) \
- UX Designer @Microsoft
+<table style="border-collapse:collapse">
+<tr>
+<td style="border-style: none"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>UX Designer @Microsoft</td>
+</tr>
+</table>
 
 ## See also
 
