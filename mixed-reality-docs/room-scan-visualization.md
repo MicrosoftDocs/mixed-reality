@@ -1,11 +1,11 @@
 ---
 title: Room scan visualization
-description: 
-author: 
-ms.author: randyw
+description: Applications that require spatial mapping data rely on the device to automatically collect this data over time and across sessions as the user explores their environment with the device active.
+author: mattzmsft
+ms.author: alexpf
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, App patterns, design, HoloLens, room scan, spatial mapping
 ---
 
 
