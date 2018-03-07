@@ -1,6 +1,6 @@
 ---
 title: Camera in Unity
-description: <meta name="description" content="Describing Unity's Main Camera for Windows Mixed Reality development." />
+description: Describing Unity's Main Camera for Windows Mixed Reality development.
 author: keveleigh
 ms.author: kurtie
 ms.date: 2/28/2018
