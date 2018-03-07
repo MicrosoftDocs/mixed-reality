@@ -1,11 +1,11 @@
 ---
 title: Development overview
-description: 
-author: 
+description: This article outlines the basic building blocks of developing a Windows Mixed Reality app.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: getting started, basics, HoloLens, immersive headset, unity, visual studio
 ---
 
 
@@ -69,7 +69,7 @@ Regardless of the type of app you're building, these tools will facilitate your 
 ## See also
 * [Install the tools](install-the-tools.md)
 * [Holographic Academy tutorials](academy.md)
-* [Open source projects](community.md#open-source-projects)
+* [Open source projects](https://developer.microsoft.com/en-us/windows/mixed-reality/community#open_source_projects)
 * [Holograms 100](holograms-100.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
