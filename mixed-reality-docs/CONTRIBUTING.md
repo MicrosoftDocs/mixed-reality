@@ -13,7 +13,7 @@ Use the following workflow to make updates to the documentation:
 * Click the edit button (pencil icon) in the top right. This will automatically fork a disposable branch off master.
 
   ![Edit an article.](images/editpage.png)
-* Edit the content of the article.
+* Edit the content of the article (see "Mardown basics" below for guidance).
 * Update metadata as relevant at the top of each article:
     * title: This is the page title that appears in the browser tab when the article is being viewed. As this is used for SEO and indexing, you shouldn't change the title unless necessary (though this is less critical before documentation goes public).
     * description: Write a brief description of the article's content. This aids in SEO and discovery.
