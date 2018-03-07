@@ -1,11 +1,11 @@
 ---
 title: Holograms 240
-description: <meta name="description" content="Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of sharing holograms." />
+description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of sharing holograms.
 author: keveleigh
 ms.author: kurtie
 ms.date: 2/28/2018
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, sharing
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, sharing, networking, academy, tutorial
 ---
 
 
