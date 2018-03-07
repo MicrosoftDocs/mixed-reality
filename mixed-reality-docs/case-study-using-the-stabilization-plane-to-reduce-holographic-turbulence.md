@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: bestruku
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, stabilization
+keywords: Windows Mixed Reality, holograms, stabilization, case study
 ---
 
 
