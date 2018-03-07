@@ -1,11 +1,11 @@
 ---
 title: Case study - Capturing and creating content for HoloTour
-description: 
-author: 
-ms.author: randyw
+description: HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. 
+author: davidhaley
+ms.author: daaske, jsylte, traviste
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: HoloTour, HoloLens, Windows Mixed Reality
 ---
 
 
@@ -28,17 +28,30 @@ Taking advantage of the [spatial sound](spatial-sound.md) capabilities on the Ho
 
 ![Our 360° camera rig set up for filming outside the Pantheon.](images/camera-pantheon-200px.png)
 
+Our 360° camera rig set up for filming outside the Pantheon. 
+
+
 We tested out our homemade rig by taking it up to Rattlesnake Ridge near Seattle, capturing the scenery at the top of the hike. The result, though significantly less polished than the locations you see in HoloTour today, gave us confidence that our rig design was good enough to make you feel like you’re really there.
 
 We upgraded our rig from Velcro and cardboard to a 3D-printed camera housing and bought external battery packs for the GoPro cameras to simplify battery management. We then did a more extensive test, traveling down to San Francisco to create a miniature tour of the city’s coast and the iconic Golden Gate bridge. This camera rig is what we used for most of our captures of the locations you visit in HoloTour.
 
 ![The 360° camera rig filming in Machu Picchu.](images/camera-machu-pichu-500px.png)
 
+The 360° camera rig filming in Machu Picchu. 
+
+
 ## Behind the scenes
 
 Before filming, we needed to figure out which locations we wanted to include on our virtual tour. Rome was the first location we intended to ship and we wanted to get it right, so we decided to do a scouting trip in advance. We sent a team of six people—including artists, designers, and producers—for an in-person visit to the sites we were considering. The trip took about 9 days – 2.5 for travel, the rest for filming. (For Machu Picchu we opted not to do a scout trip, researching in advance and booking a few days of buffer for filming.)
 
-While in Rome, the team took photos of each area and noted interesting facts as well as practical considerations, such as how hard it is to travel to each spot and how difficult it would be to film because of crowds or restrictions. This may sound like a vacation, but it’s a lot of work. Days started early in the morning and would go non-stop until evening. Each night, footage was uploaded for the team back in Seattle to review. ![Our capture crew in Rome.](images/holotour-filming-crew-rome-500px.jpg) After the scout trip was completed, a final plan was made for actual filming. This required a detailed list of where we were going to film, on what day, and at what time. Every day overseas is expensive, so these trips needed to be efficient. We booked guides and handlers in Rome to help us and fully used every day from before sunrise to after sunset. We need to get the best footage possible in order to make you feel like you’re really there.
+While in Rome, the team took photos of each area and noted interesting facts as well as practical considerations, such as how hard it is to travel to each spot and how difficult it would be to film because of crowds or restrictions. This may sound like a vacation, but it’s a lot of work. Days started early in the morning and would go non-stop until evening. Each night, footage was uploaded for the team back in Seattle to review. 
+
+![Our capture crew in Rome.](images/holotour-filming-crew-rome-500px.jpg) 
+
+Our capture crew in Rome. 
+
+
+After the scout trip was completed, a final plan was made for actual filming. This required a detailed list of where we were going to film, on what day, and at what time. Every day overseas is expensive, so these trips needed to be efficient. We booked guides and handlers in Rome to help us and fully used every day from before sunrise to after sunset. We need to get the best footage possible in order to make you feel like you’re really there.
 
 ### Capturing the video
 
@@ -46,7 +59,11 @@ Doing a few simple things during capture can make post-processing much easier. F
 
 Because it’s much easier to prevent the worst artifacts while filming than it is to correct them in post-processing, we tried to keep people and things far away from the camera in the hopes we could eliminate the need to stitch close-up objects. Maintaining a large clearing around our camera was probably one of the biggest challenges we had during shooting and we had to get creative to make it work. Working with local guides was a huge help in managing crowds, but we also found that using signs—and sometimes small cones or bean bags—to mark our filming space was reasonably effective, especially since we only needed to get a short amount of footage at each location. Often the best way to get a good capture was to just to arrive very early in the morning, before most people showed up.
 
-Some other useful capture techniques come straight from traditional film practices. For example, we used a color correction card on all of our cameras and captured reference photos of textures and objects we might need later. ![A rough cut of Machu Picchu showing the color correction card.](images/rough-cut-machu-picchu-500px.png)
+Some other useful capture techniques come straight from traditional film practices. For example, we used a color correction card on all of our cameras and captured reference photos of textures and objects we might need later. 
+
+![A rough cut of Machu Picchu showing the color correction card.](images/rough-cut-machu-picchu-500px.png)
+
+A rough cut of Pantheon footage before stitching.
 
 ### Processing the video
 
@@ -54,7 +71,15 @@ Capturing 360° content is only the first step—a lot of processing is needed t
 
 ![A rough cut of Pantheon footage before stitching.](images/rough-cut-pantheon-500px.png)
 
-To stitch the videos together, we used a tool called [PTGui](http://www.ptgui.com/) and integrated it into our processing pipeline. As part of post-processing we extracted still frames from our videos and found a stitching pattern that looked good for one of those frames. We then applied that pattern to a custom plugin we wrote that allowed our video artists to fine tune and tweak the stitching pattern directly while compositing in After Effects. ![Screenshot of PTGui showing the stitched Pantheon footage.](images/stitching-tool-pantheon-500px.png)
+A rough cut of Pantheon footage before stitching. 
+
+
+To stitch the videos together, we used a tool called [PTGui](http://www.ptgui.com/) and integrated it into our processing pipeline. As part of post-processing we extracted still frames from our videos and found a stitching pattern that looked good for one of those frames. We then applied that pattern to a custom plugin we wrote that allowed our video artists to fine tune and tweak the stitching pattern directly while compositing in After Effects. 
+
+![Screenshot of PTGui showing the stitched Pantheon footage.](images/stitching-tool-pantheon-500px.png)
+
+Screenshot of PTGui showing the stitched Pantheon footage. 
+
 
 ### Video playback
 
@@ -62,7 +87,24 @@ After processing of the footage is completed, we have a seamless video but it’
 
 The easiest optimization is to avoid decoding parts of the video that don’t change much. We wrote a tool to identify areas in each scene that have little or no motion. For those regions we show a static image rather than decoding a video each frame. To make this possible, we divided up the massive video into much smaller chunks.
 
-We also made sure that every pixel we decoded was used most effectively. We experimented with compression techniques to lower the size of the video; we split the video regions according to the polygons of the geometry it would be projected onto; we adjusted UVs and repacked the videos based on how much detail different polygons included. The result of this work is that what started as a single 8k video turned into many chunks that look almost unintelligible until they are properly re-projected into the scene. For a game developer who understands texture mapping and UV packing, this will probably look familiar. ![A full view of the Pantheon before optimizations.](images/pantheon-before-optimization-500px.png) ![The right half of the Pantheon, processed for video playback.](images/pantheon-process-video-playback-500px.png) ![Example of a single video region after optimization and packing.](images/single-video-region-after-optimization-500px.png) Another trick we used was to avoid decoding video you aren’t actively viewing. While in HoloTour, you can only see part of the full scene at any given moment. We only decode videos within or shortly outside of your field of view (FOV). As you rotate your head, we start playing the regions of the video that are now in your FOV and stop playing ones that are no longer within it. Most people won’t even notice this is happening, but if you turn around rapidly, you’ll see the video takes a second to start— in the meantime you’ll see a static image which then fades back to video once it’s ready.
+We also made sure that every pixel we decoded was used most effectively. We experimented with compression techniques to lower the size of the video; we split the video regions according to the polygons of the geometry it would be projected onto; we adjusted UVs and repacked the videos based on how much detail different polygons included. The result of this work is that what started as a single 8k video turned into many chunks that look almost unintelligible until they are properly re-projected into the scene. For a game developer who understands texture mapping and UV packing, this will probably look familiar. 
+
+![A full view of the Pantheon before optimizations.](images/pantheon-before-optimization-500px.png) 
+
+A full view of the Pantheon before optimizations. 
+
+
+![The right half of the Pantheon, processed for video playback.](images/pantheon-process-video-playback-500px.png) 
+
+The right half of the Pantheon, processed for video playback. 
+
+
+![Example of a single video region after optimization and packing.](images/single-video-region-after-optimization-500px.png) 
+
+Example of a single video region after optimization and packing. 
+
+
+Another trick we used was to avoid decoding video you aren’t actively viewing. While in HoloTour, you can only see part of the full scene at any given moment. We only decode videos within or shortly outside of your field of view (FOV). As you rotate your head, we start playing the regions of the video that are now in your FOV and stop playing ones that are no longer within it. Most people won’t even notice this is happening, but if you turn around rapidly, you’ll see the video takes a second to start— in the meantime you’ll see a static image which then fades back to video once it’s ready.
 
 To make this strategy work we developed an extensive video playback system. We optimized the low level playback code in order to make video switching extremely efficient. Additionally, we had to encode our videos in a special way to make it possible to rapidly switch to any video at any time. This playback pipeline took a significant amount of development time so we implemented it in stages. We started with a simpler system that was less efficient, but allowed designers and artists to work on the experience, and slowly improved it to a more robust playback system that allowed us to ship at the final quality bar. This final system had custom tools we created within Unity to set up the video within the scene and monitor the playback engine.
 
@@ -76,7 +118,12 @@ Other assets, like the fountain outside the Pantheon, are real objects that exis
 
 First, we need additional information about each object. While on location for filming, our team captured a lot of reference footage of these objects so that we would have enough detailed images to accurately recreate the textures. The team also performed a [photogrammetry](https://en.wikipedia.org/wiki/Photogrammetry) scan, which constructs a 3D model from dozens of 2D images, giving us a rough model of the object at perfect scale.
 
-As we process our footage, objects that will later be replaced with a 3D representation are removed from the video. The 3D asset is based on the photogrammetry model but cleaned up and simplified by our artists. For some objects, we can use parts of the video—such as the water texture on the fountain—but most of the fountain is now a 3D object, which allows users to perceive depth and walk around it in a limited space in the experience. Having near-space objects like this greatly adds to the sense of realism and helps to ground the users in the virtual location. ![Pantheon footage with the fountain removed. It will be replaced with a 3D asset.](images/object-removal-pantheon-500px.png)
+As we process our footage, objects that will later be replaced with a 3D representation are removed from the video. The 3D asset is based on the photogrammetry model but cleaned up and simplified by our artists. For some objects, we can use parts of the video—such as the water texture on the fountain—but most of the fountain is now a 3D object, which allows users to perceive depth and walk around it in a limited space in the experience. Having near-space objects like this greatly adds to the sense of realism and helps to ground the users in the virtual location. 
+
+![Pantheon footage with the fountain removed. It will be replaced with a 3D asset.](images/object-removal-pantheon-500px.png)
+
+Pantheon footage with the fountain removed. It will be replaced with a 3D asset.
+
 
 ## Final thoughts
 
