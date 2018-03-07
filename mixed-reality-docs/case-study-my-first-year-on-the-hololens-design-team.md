@@ -14,7 +14,7 @@ keywords: Windows Mixed Reality, HoloLens, design, editorial, personal
 
 My journey from a 2D flatland to the 3D world started when I joined the HoloLens design team in January, 2016. Before joining the team, I had very little experience in 3D design. It was like the Chinese proverb about a journey of a thousand miles beginning with a single step, except in my case that first step was a leap!
 
-![Taking the Leap from 2D to 3D](images/2d-to-3d-1000px.gif)
+![Taking the Leap from 2D to 3D](images/2D_to_3D-800px.gif)
 
 
 **“I felt as though I had jumped into the driver’s seat without knowing how to drive the car. I was overwhelmed and scared, yet very focused.”
@@ -126,6 +126,7 @@ After acquiring basic understanding of HoloLens prototyping, I wanted to empower
 
 I made this simple tutorial for non-programmers like myself.
 
+<br>
 For VR prototyping, I took courses at [VR Dev School](http://learn.vrdev.school/) and also took [3D Content Creation for Virtual Reality](https://www.lynda.com/Unreal-Engine-tutorials/3D-Content-Creation-Virtual-Reality/482055-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aVirtual+Reality+%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2/) at Lynda.com. VR Dev school provided me more in depth knowledge in coding and the Lynda course offered me a nice short introduction to creating assets for VR.
 
 ## Take the leap
