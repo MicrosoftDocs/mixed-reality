@@ -1,11 +1,11 @@
 ---
 title: Voice design
-description: 
-author: 
+description: Gaze, gesture and voice (GGV) are the primary means of interaction on HoloLens. This article provides thoughtful guidance on voice design.
+author: rwinj
 ms.author: randyw
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, design, interaction, voice
 ---
 
 
