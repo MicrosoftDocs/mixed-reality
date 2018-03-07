@@ -1,6 +1,6 @@
 ---
 title: Holograms
-description: HoloLens lets you create holograms, objects made of light and sound that appear in the world around you.
+description: HoloLens lets you view and interact with three-dimensional holograms, objects made of light and sound that appear in the world around you.
 author: rwinj
 ms.author: befolsom
 ms.date: 2/28/2018
