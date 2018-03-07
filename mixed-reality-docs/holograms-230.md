@@ -5,7 +5,7 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 2/28/2018
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial mapping, spatial reconstruction, mesh
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial mapping, surface reconstruction, mesh
 ---
 
 
