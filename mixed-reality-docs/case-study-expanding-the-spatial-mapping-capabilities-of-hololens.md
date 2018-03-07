@@ -1,11 +1,11 @@
 ---
 title: Case study - Expanding the spatial mapping capabilities of HoloLens
-description: 
-author: 
-ms.author: randyw
+description: When creating our first apps for Microsoft HoloLens, we were eager to see just how far we could push the boundaries of spatial mapping on the device.
+author: mattzmsft
+ms.author: jevertt
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens, spatial mapping
 ---
 
 
@@ -43,6 +43,10 @@ When you load the spatial understanding module, the first thing you'll do is sca
 The mesh seen during this phase is an important piece of visual feedback that lets users know what parts of the room are being scanned. The DLL for the spatial understanding module internally stores the playspace as a grid of 8cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume.
 
 ![Spatial mapping mesh in white and understanding playspace mesh in green](images/spatial-mapping-500px.png)
+
+Spatial mapping mesh in white and understanding playspace mesh in green
+
+
 
 The included SpatialUnderstanding.cs file manages the scanning phase process. It calls the following functions:
 * **SpatialUnderstanding_Init**: Called once at the start.
@@ -156,6 +160,10 @@ Wrapper functions are provided in the Unity module for easy creation of custom s
 
 ![The blue rectangle highlights the results of the chair shape query.](images/chair-shape-query-500px.png)
 
+The blue rectangle highlights the results of the chair shape query.
+
+
+
 ### Object placement solver
 
 Object placement queries can be used to identify ideal locations in the physical room to place your objects. The solver will find the best-fit location given the object rules and constraints. In addition, object queries persist until the object is removed with **Solver_RemoveObject** or **Solver_RemoveAllObjects** calls, allowing constrained multi-object placement.
@@ -245,6 +253,9 @@ If successful, an **ObjectPlacementResult** structure containing the placement p
 
 ![The blue boxes show the result from three Place On Floor queries with "away from camera position" rules.](images/away-from-camera-position-500px.png)
 
+The blue boxes show the result from three Place On Floor queries with "away from camera position" rules.
+
+
 **Tips:**
 * When solving for placement location of multiple objects required for a level or application scenario, first solve indispensable and large objects to maximize the probability that a space can be found.
 * Placement order is important. If object placements cannot be found, try less constrained configurations. Having a set of fallback configurations is critical to supporting functionality across many room configurations.
@@ -285,6 +296,9 @@ Internally, the raycast is computed against the computed 8cm cubed voxel represe
 In the Unity sample, the cursor casts a ray each frame. First, against Unity’s colliders; second, against the understanding module’s world representation; and finally, against the UI elements. In this application, UI gets priority, then the understanding result, and finally, Unity’s colliders. The **SurfaceType** is reported as text next to the cursor.
 
 ![Raycast result reporting intersection with the floor.](images/raycast-result-500px.jpg)
+
+Raycast result reporting intersection with the floor.
+
 
 ## Get the code
 
