@@ -5,7 +5,7 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, Controls
+keywords: Windows Mixed Reality, design, Controls, font, typography, ui, ux
 ---
 
 
