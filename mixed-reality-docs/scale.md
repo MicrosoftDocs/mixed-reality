@@ -1,11 +1,11 @@
 ---
 title: Scale
-description: 
-author: 
-ms.author: randyw
+description: A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible.
+author: mavitazk
+ms.author: mavitazk
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, Style, design
 ---
 
 
