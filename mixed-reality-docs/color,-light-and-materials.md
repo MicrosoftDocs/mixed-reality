@@ -1,11 +1,11 @@
 ---
 title: Color, light and materials
-description: 
-author: 
-ms.author: randyw
+description: Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
+author: mavitazk
+ms.author: pinkb, mavitazk 
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, design, color, light, materials
 ---
 
 
@@ -41,6 +41,7 @@ Due to the nature of additive displays, certain colors can appear different on h
 Due to the nature of additive displays, dark colors appear transparent. A solid black object will appear no different from the real world. See Alpha channel below. To give the appearance of “black” try a very dark grey RGB value such as 16,16,16.
 
 ![Normal vs. wide color gamut](images/640px-widegamut.png)
+<br>
 Normal vs. wide color gamut
 
 ## Technical considerations
