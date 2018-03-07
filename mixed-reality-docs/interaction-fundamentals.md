@@ -1,11 +1,11 @@
 ---
 title: Interaction fundamentals
-description: 
-author: 
+description: As we've built experiences across HoloLens and immersive headsets, we've started writing down some things we found useful to share. 
+author: rwinj
 ms.author: randyw
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, interaction, design
 ---
 
 
