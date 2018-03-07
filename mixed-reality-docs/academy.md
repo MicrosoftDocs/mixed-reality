@@ -1,6 +1,6 @@
 ---
 title: Academy
-description: <meta name="description" content="The Mixed Reality Academy provides tutorials on starting development and access to expert advice from those who have built the best holographic experiences." />
+description: The Mixed Reality Academy provides tutorials on starting development and access to expert advice from those who have built the best holographic experiences.
 author: keveleigh
 ms.author: kurtie
 ms.date: 2/28/2018
