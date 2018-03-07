@@ -1,11 +1,11 @@
 ---
 title: Gaze
-description: 
-author: 
-ms.author: randyw
+description: Gaze is the first form of input and is a primary form of targeting within mixed reality. 
+author: rwinj
+ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, Gaze, Interaction, design
 ---
 
 
@@ -18,6 +18,7 @@ Mixed reality headsets use the position and orientation of your user's head, not
 
 On HoloLens, interactions should generally derive their targeting from the user's gaze, rather than trying to render or interact at the hand's location directly. Once an interaction has started, relative motions of the hand may be used to control the [gesture](gestures.md), as with the [manipulation or navigation](gestures.md#composite-gestures) gesture. With immersive headsets, you can target using either gaze or pointing-capable [motion controllers](motion-controllers.md).
 
+<br>
 >[!VIDEO https://www.youtube.com/embed/zCPiZlWdVws]
 
 ## Device support
