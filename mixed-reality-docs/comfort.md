@@ -1,11 +1,11 @@
 ---
 title: Comfort
-description: 
-author: 
-ms.author: randyw
+description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
+author: rwinj
+ms.author: roheld, phguan, mcrisler
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, design, comfort
 ---
 
 
@@ -18,6 +18,7 @@ During natural viewing, the human visual system relies on multiple sources of in
 
 To view objects clearly, humans must [accommodate](https://en.wikipedia.org/wiki/Accommodation_%28eye%29), or adjust their eyes’ focus, to the distance of the object. At the same time, the two eyes must [converge](https://en.wikipedia.org/wiki/Convergence_(eye)) to the object’s distance to avoid seeing double images. In natural viewing, vergence and accommodation are linked. When you view something near (e.g. a housefly close to your nose) your eyes cross and accommodate to a near point. Conversely, if you view something at infinity, your eyes’ lines of sight become parallel and the your eyes accommodates to infinity. In most head-mounted displays users will always accommodate to the focal distance of the display (to get a sharp image), but converge to the distance of the object of interest (to get a single image). When users accommodate and converge to different distances, the natural link between the two cues must be broken and this can lead to visual discomfort or fatigue.
 
+<br>
 >[!VIDEO https://www.youtube.com/embed/-606oZKLa_s]
 
 **Guidance for holographic devices**
