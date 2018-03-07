@@ -11,6 +11,7 @@ When setting up your account, we also recommend these security precautions:
 - Save your [recovery codes](https://github.com/settings/auth/recovery-codes) in a safe place.
 - Update your pubic profile settings on the top right of your profile (https://github.com/your_name), select the drop-down arrow next to your profile photo on the top right, then select *Settings*, set your name and consider setting your *Public email* to *Don't show my email address*. We also recommend that you upload a profile picture as a thumbnail will be shown on docs pages that you contribute to. 
 - If you plan to use a command line workflow, consider setting up [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) so that you don't have to enter your password each time you make a contribution. 
+
 Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
 
 ## Editing an existing article
