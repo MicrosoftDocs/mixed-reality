@@ -1,19 +1,20 @@
 ---
-title: Hologram
-description: 
-author: 
-ms.author: randyw
+title: Holograms
+description: HoloLens lets you view and interact with three-dimensional holograms, objects made of light and sound that appear in the world around you.
+author: rwinj
+ms.author: befolsom
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
 ---
 
 
 
-# Hologram
+# Holograms
 
 HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they are real objects. Holograms respond to your [gaze](gaze.md), [gestures](gestures.md) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
 
+<br>
 >[!VIDEO https://www.youtube.com/embed/MVXH5V8MVQo]
 
 ## Device support
