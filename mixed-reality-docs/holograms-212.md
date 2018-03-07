@@ -77,7 +77,9 @@ In this course, we'll revisit Model Explorer, which we built in [Holograms 210](
 
 ## Chapter 1 - Awareness
 
->[!VIDEO https://www.youtube.com/embed/fDwijJWuEc0] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/fDwijJWuEc0]
+
+**Objectives**
 * Learn the **Dos and Don'ts** of voice command design.
 * Use **KeywordRecognizer** to add gaze based voice commands.
 * Make users aware of voice commands using cursor **feedback**.
@@ -123,7 +125,9 @@ In this chapter, you'll learn about designing voice commands. When creating voic
 
 ## Chapter 2 - Acknowledgement
 
->[!VIDEO https://www.youtube.com/embed/87ViteoPpyU] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/87ViteoPpyU]
+
+**Objectives**
 * Record a message using the Microphone input.
 * Give feedback to the user that the application is listening to their voice.
 
@@ -147,9 +151,6 @@ The **Microphone** capability must be declared for an app to record from the mic
 Communicator.cs is responsible for setting the proper button states on the communicator device. This will allow our users to record a message, play it back, and send the message to the astronaut. It will also start and stop an animated wave form, to acknowledge to the user that their voice was heard.
 * In **Communicator.cs**, delete the following lines from the **Start** method. This will enable the 'Record' button on the communicator.
 
-
-
-
 ```
 // TODO: 2.a Delete the following two lines:
 RecordButton.SetActive(false);
@@ -168,7 +169,9 @@ MessageUIRenderer.gameObject.SetActive(false);
 
 ## Chapter 3 - Understanding and the Dictation Recognizer
 
->[!VIDEO https://www.youtube.com/embed/TIMddr-HqEU] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/TIMddr-HqEU]
+
+**Objectives**
 * Use the Dictation Recognizer to convert the user's speech to text.
 * Show the Dictation Recognizer's hypothesized and final results in the communicator.
 
@@ -198,9 +201,6 @@ We're going to edit **MicrophoneManager.cs** to use the Dictation Recognizer. Th
 
 Let's get started.
 * Complete all coding exercises for 3.a in **MicrophoneManager.cs**, or copy and paste the finished code found below:
-
-
-
 
 ```
 using Academy.HoloToolkit.Unity;

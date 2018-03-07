@@ -208,9 +208,6 @@ PlaySpaceManager.cs contains application-specific code. We will add functionalit
 
 Complete the coding exercises marked in PlaySpaceManager.cs, or replace the script with the finished solution from below:
 
-
-
-
 ```
 using System.Collections.Generic;
 using UnityEngine;
@@ -440,9 +437,6 @@ The **Placeable** script is already attached to the posters and projection box t
 7. Smoothly place the hologram on the selected surface to avoid jumping or snapping behavior.
 
 Uncomment all code in the coding exercise below, or use this completed solution:
-
-
-
 
 ```
 using System.Collections.Generic;
@@ -1060,9 +1054,6 @@ Finally, we are going to enable an x-ray vision effect for planets in our solar 
 3. Hide the wireframe representation of a planet when it is not blocked by the SpatialMapping layer.
 
 Follow the coding exercise in PlanetOcclusion.cs, or use the following solution:
-
-
-
 
 ```
 using UnityEngine;

@@ -156,9 +156,6 @@ Follow the rest of the instructions on **all PCs** that will join the shared exp
 * Double-click the **HologramPlacement** script to open it in Visual Studio.
 * Replace the contents with the code below.
 
-
-
-
 ```
 using UnityEngine;
 using System.Collections.Generic;
@@ -262,6 +259,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
     }
 }
 ```
+
 * Back in Unity, select the **HologramCollection** in the **Hierarchy panel**.
 * In the **Inspector panel** click the **Add Component** button.
 * In the menu, type in the search box **App State Manager**. Select the search result.
@@ -290,9 +288,6 @@ Everyone can now see the same hologram! Now let's see everyone else connected to
 * In the **Project panel** navigate to the **Scripts** folder.
 * Double-click the **AvatarSelector** script to open it in Visual Studio.
 * Replace the contents with the code below.
-
-
-
 
 ```
 using UnityEngine;
@@ -333,6 +328,7 @@ public class AvatarSelector : MonoBehaviour
     }
 }
 ```
+
 * In the **Hierarchy** select the **HologramCollection** object.
 * In the **Inspector** click **Add Component**.
 * In the search box, type **Local Player Manager**. Select the search result.
@@ -341,9 +337,6 @@ public class AvatarSelector : MonoBehaviour
 * In the search box, type **Remote Player Manager**. Select the search result.
 * Open the **HologramPlacement** script in Visual Studio.
 * Replace the contents with the code below.
-
-
-
 
 ```
 using UnityEngine;
@@ -500,11 +493,9 @@ public class HologramPlacement : Singleton<HologramPlacement>
     }
 }
 ```
+
 * Open the **AppStateManager** script in Visual Studio.
 * Replace the contents with the code below.
-
-
-
 
 ```
 using UnityEngine;
@@ -593,9 +584,6 @@ In this chapter, we'll make the anchor able to be placed on real-world surfaces.
 * In the **Project panel** navigate to the **Scripts** folder.
 * Double-click the **AppStateManager** script to open it in Visual Studio.
 * Replace the contents with the code below.
-
-
-
 
 ```
 using UnityEngine;
@@ -699,12 +687,10 @@ public class AppStateManager : Singleton<AppStateManager>
     }
 }
 ```
+
 * In the **Project panel** navigate to the **Scripts** folder.
 * Double-click the **HologramPlacement** script to open it in Visual Studio.
 * Replace the contents with the code below.
-
-
-
 
 ```
 using UnityEngine;

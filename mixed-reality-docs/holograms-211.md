@@ -130,9 +130,6 @@ Let's get started.
 
 We track the focused Interactible object in **HandsManager.cs**. Copy the completed code below into **HandsManager.cs**, or you can code this yourself by following the marked coding exercises.
 
-
-
-
 ```
 using UnityEngine;
 using UnityEngine.XR.WSA.Input;
@@ -274,9 +271,6 @@ We need to edit the **GestureManager.cs** file to perform these steps:
 3. Handle NavigationStarted, NavigationUpdated, NavigationCompleted, NavigationCanceled events.
 
 You are welcome to write code by following the comments for coding sections found in **GestureManager.cs**, or you can replace the file contents with the following code block:
-
-
-
 
 ```
 using UnityEngine;
@@ -480,9 +474,6 @@ Next, open **GestureAction.cs** in Visual Studio. Edit the script to do the foll
 
 Complete the coding exercises in the script, or replace the code with the completed solution below:
 
-
-
-
 ```
 using Academy.HoloToolkit.Unity;
 using UnityEngine;
@@ -607,9 +598,6 @@ Now we need to add code to **GestureAction.cs** to enable the following:
 
 Complete the coding exercise in **GestureAction.cs**, or use our completed solution below:
 
-
-
-
 ```
 using Academy.HoloToolkit.Unity;
 using UnityEngine;
@@ -701,9 +689,6 @@ In this section, we will accomplish the following tasks:
 2. Add a new Keyword "**Reset Model**" to return the model to its original form.
 
 Complete the coding exercise in **AstronautManager.cs**, or copy and paste the finished code from below:
-
-
-
 
 ```
 using Academy.HoloToolkit.Unity;

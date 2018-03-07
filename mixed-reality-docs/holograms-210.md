@@ -1,4 +1,4 @@
-=======
+---
 title: Holograms 210
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of gaze concepts.
 author: keveleigh
@@ -14,8 +14,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 [Gaze](gaze.md) is the first form of input and reveals the user's intent and awareness. Holograms 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Mixed Reality. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
 
->[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]\
-
+>[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]
 
 We have a friendly astronaut here to help you learn gaze concepts. In [Holograms 101](holograms-101.md), we had a simple cursor that just followed your gaze. Today we're moving a step beyond the simple cursor:
 * We're making the cursor and our holograms gaze-aware: both will change based on where the user is looking - or where the user is *not* looking. This makes them context-aware.
@@ -155,9 +154,6 @@ At this point, you need to edit the GazeManager.cs file, and edit it to perform 
 
 You can write the code yourself by locating comments in GazeManager.cs labeled "Coding Exercise" - each comment corresponds to one line of code. You can also use this completed version:
 
-
-
-
 ```
 using UnityEngine;
 
@@ -282,9 +278,6 @@ Next you will need to edit **CusorManager.cs** in order to achieve the following
 
 Again, you are welcome to write your own code by locating the comments labeled "Coding Exercise" in CursorManager.cs, or use the following:
 
-
-
-
 ```
 using UnityEngine;
 
@@ -350,6 +343,7 @@ namespace Academy.HoloToolkit.Unity
     }
 }
 ```
+
 * Rebuild the app from **File > Build Settings**.
 * Open the **App Folder**.
 * Open the **ModelExplorer Visual Studio Solution**.
@@ -369,9 +363,6 @@ You'll need to edit both **InteractibleManager.cs** and **Interactible.cs** in o
 4. Handle the **GazeEntered** and **GazeExited** callbacks in **Interactible.cs**.
 
 Give it a try yourself with the coding exercises in InteractibleManager.cs and Interactible.cs, or use the following solutions:
-
-
-
 
 ```
 using Academy.HoloToolkit.Unity;
@@ -444,9 +435,6 @@ public class InteractibleManager : Singleton<InteractibleManager>
     }
 }
 ```
-
-
-
 
 ```
 using UnityEngine;
@@ -534,6 +522,7 @@ public class Interactible : MonoBehaviour
     }
 }
 ```
+
 * As before, build the project and deploy to the HoloLens.
 * Observe what happens when the gaze is aimed at an object, and when it's not.
 
@@ -553,9 +542,6 @@ public class Interactible : MonoBehaviour
 Now we'll modify our GazeManager to use the GazeStabilizer.
 1. Open the **GazeManager** script in Visual Studio.
 2. Copy the code below into GazeManager.cs, or complete coding exercise 3.a yourself.
-
-
-
 
 ```
 using UnityEngine;
@@ -747,9 +733,6 @@ To do this:
 * We first must change the **Interactible.cs** script to send a message to **InteractibleAction.**
 * Edit **Interactible.cs** by completing the coding exercise or use the following:
 
-
-
-
 ```
 using UnityEngine;
 
@@ -854,9 +837,6 @@ We need to add the following:
 
 Here's our solution:
 
-
-
-
 ```
 using Academy.HoloToolkit.Unity;
 using UnityEngine;
@@ -901,5 +881,6 @@ public class InteractibleAction : MonoBehaviour
     }
 }
 ```
+
 * Try it! Build and deploy the app to the HoloLens.
 * Watch how the content follows the center of the gaze point, but not continuously and without blocking it.
