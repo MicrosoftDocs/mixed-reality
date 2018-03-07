@@ -1,11 +1,11 @@
 ---
 title: Lunar Module
-description: 
-author: 
-ms.author: randyw
+description: LunarModule is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend Hololens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems.
+author: radicalad
+ms.author: adlinv
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, Sample apps, Design, HoloLens
 ---
 
 
@@ -23,15 +23,18 @@ High up in the atmosphere, a small ship reminiscent of the Apollo module methodi
 ![Original interface from Atari’s 1979 Lunar Lander](images/640px-atari-lunar-lander.png)
 
 Original interface from Atari’s 1979 Lunar Lander
+<br>
 
 [Lunar Lander](https://en.wikipedia.org/wiki/Lunar_Lander_(1979_video_game)) is an arcade classic where players attempt to pilot a moon lander onto a flat spot of lunar terrain. Anyone born in the 1970s has most likely spent hours in an arcade with their eyes glued to this vector ship plummeting from the sky. As a player navigates their ship toward a desired landing area the terrain scales to reveal progressively more detail. Success means landing within the safe threshold of horizontal and vertical speed. Points are awarded for time spent landing and remaining fuel, with a multiplier based on the size of the landing area.
 
 Aside from the gameplay, the arcade era of games brought constant innovation of control schemes. From the simplest 4-way joystick and button configurations (seen in the iconic [Pac-Man](https://en.wikipedia.org/wiki/Pac-Man)) to the highly specific and complicated schemes seen in the late 90s and 00s (like those in golf simulators and rail shooters). The input scheme used in the Lunar Lander machine is particularly intriguing for two reasons: curb appeal and immersion.
 
+<br>
 ![Atari’s Lunar Lander’s arcade console](images/atariconsole.png)
 
-**Why did Atari and so many other game companies decide to rethink input?**
+Why did Atari and so many other game companies decide to rethink input?
 
+<br>
 A kid walking through an arcade will naturally be intrigued by the newest, flashiest machine. But Lunar Lander features a novel input mechanic that stood out from the crowd.
 
 Lunar Lander uses two buttons for rotating the ship left and right and a **thrust lever** to control the amount of thrust the ship produces. This lever gives users a certain level of finesse a regular joystick can’t provide. It is also happens to be a component common to modern aviation cockpits. Atari wanted Lunar Lander to immerse the user in the feeling that they were in fact piloting a lunar module. This concept is known as **tactile immersion**.
@@ -48,12 +51,14 @@ How might we apply tactile immersion to an updated, volumetric sequel to the Ata
 
 Visualizing surface mapping in HoloLens
 
+<br>
 By leveraging a user’s surroundings, we effectively have infinite terrain options for landing our lunar module. To make the game most like the original title, a user could potentially manipulate and place landing pads of varying difficulties in their environment.
 
 ![Flying the Lunar Module](images/640px-lm-hero.jpg)
 
 Flying the Lunar Module
 
+<br>
 Requiring the user to learn the input scheme, control the ship, and have a small target to land on is a lot to ask. A successful game experience features the right mix of challenge and reward. The user should be able to choose a level of difficulty, with the easiest mode simply requiring the user to successfully land in a user-defined area on a surface scanned by the HoloLens. Once a user gets the hang of the game, they can then crank up the difficulty as they see fit.
 
 ### Adding input for hand gestures
@@ -62,7 +67,12 @@ The HoloLens’ base input has only two gestures - [Air Tap and Bloom](gestures.
 
 Looking back at the original control scheme, **we needed to solve for thrust and rotation**. The caveat is rotation in the new context adds an additional axis (technically two, but the Y axis is less important for landing). The two distinct ship movements naturally lend themselves to be mapped to each hand:
 
-![Tap and drag gesture to rotate lander on all three axes](images/module-handdrag.gif)**Thrust** - The lever on the original arcade machine mapped to a scale of values, the higher the lever was moved the more thrust was applied to the ship. An important nuance to point out here is the user can take their hand off of the control and maintain a desired value. We can effectively use tap-and-drag behavior to achieve the same result. The thrust value starts at zero. The user taps and drags to increase the value. At that point they could let go to maintain it. Any tap-and-drag gesture value change would be the delta from the original value.
+![Tap and drag gesture to rotate lander on all three axes](images/module-handdrag.gif)
+
+Tap and drag gesture to rotate lander on all three axes
+
+<br>
+**Thrust** - The lever on the original arcade machine mapped to a scale of values, the higher the lever was moved the more thrust was applied to the ship. An important nuance to point out here is the user can take their hand off of the control and maintain a desired value. We can effectively use tap-and-drag behavior to achieve the same result. The thrust value starts at zero. The user taps and drags to increase the value. At that point they could let go to maintain it. Any tap-and-drag gesture value change would be the delta from the original value.
 
 **Rotation** - This is a little more tricky. Having holographic “rotate” buttons to tap makes for a terrible experience. There isn’t a physical control to leverage, so the behavior must come from manipulation of an object representing the lander, or with the lander itself. We came up with a method using tap-and-drag which enables a user to effectively “push and pull” it in the direction they want it to face. Any time a user taps and holds, the point in space where the gesture was initiated becomes the origin for rotation. Dragging from the origin converts the delta of the hand's translation (X,Y,Z) and applies it to the delta of the lander's rotation values. Or more simply, *dragging left <-> right, up <-> down, forward <-> back in spaces rotates the ship accordingly*.
 
@@ -76,6 +86,9 @@ There are multiple ways to apply the relatively straight-forward control scheme 
 
 ![Left thumbstick is mapped to Yaw and Roll, Right thumbstick is mapped to Pitch and Roll](images/thumbsticksidebyside.gif)
 
+Left thumbstick is mapped to Yaw and Roll, Right thumbstick is mapped to Pitch and Roll.
+
+<br>
 The dual thumbsticks naturally lend themselves to controlling ship rotation. Unfortunately, there are 3 axes on which the ship can rotate and two thumbsticks which both support two axes. This mismatch means either one thumbstick controls one axis; or there is overlap of axes for the thumbsticks. The former solution ended up feeling "broken" since thumbsticks inherently blend their local X and Y values. The latter solution required some testing to find which redundant axes feel the most natural. The final sample uses *Yaw* and *Roll* (Y and X axes) for the left thumbstick, and *Pitch* and *Roll* (Z and X axes) for the right thumbstick. This felt the most natural as *Roll* seems to independently pair well with *Yaw* and *Pitch*. As a side note, using both thumbsticks for *Roll* also happens to double the rotation value, its pretty fun to have the lander do loops.
 
 This sample app demonstrates how spatial recognition and tactile immersion can significantly change an experience thanks to Windows Mixed Reality's extensible input modalities. While Lunar Lander may be nearing 40 years in age, the concepts exposed with that little octagon-with-legs will live on forever. When imagining the future, why not look at the past?
