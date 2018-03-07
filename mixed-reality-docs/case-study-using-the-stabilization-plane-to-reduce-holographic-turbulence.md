@@ -1,11 +1,11 @@
 ---
 title: Case study - Using the stabilization plane to reduce holographic turbulence
-description: 
-author: 
-ms.author: randyw
+description: Using the stabilization plane to reduce holographic turbulence
+author: mattzmsft
+ms.author: bestruku
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, holograms, stabilization, case study
 ---
 
 
