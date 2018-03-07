@@ -1,11 +1,11 @@
 ---
 title: Gaze targeting
-description: 
-author: 
-ms.author: randyw
+description: All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality.
+author: cre8ivepark
+ms.author: dongpark
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, Gaze, gaze targeting, interaction, design
 ---
 
 
@@ -32,7 +32,10 @@ To enable a user to work with an experience successfully, the system's calculate
 
 The gaze vector has been shown repeatedly to be usable for fine targeting, but often works best for gross targeting (acquiring somewhat larger targets). Minimum target sizes of 1 to 1.5 degrees should allow successful user actions in most scenarios, though targets of 3 degrees often allow for greater speed. Note that the size that the user targets is effectively a 2D area even for 3D elements--whichever projection is facing them should be the targetable area. Providing some salient cue that an element is "active" (that the user is targeting it) is extremely helpful - this can include treatments like visible "hover" effects, audio highlights or clicks, or clear alignment of a cursor with an element.
 
-![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg) Optimal target size at 2 meter distance
+![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg) 
+
+Optimal target size at 2 meter distance
+<br>
 
 ![An example of highlighting a gaze targeted object](images/gazetargeting-highlighting-640px.jpg)
 
@@ -42,7 +45,9 @@ An example of highlighting a gaze targeted object
 
 Users will often fail to find UI elements that are positioned very high or very low in their field of view, focusing most of their attention on areas around their main focus (usually roughly eye level). Placing most targets in some reasonable band around eye level can help. Given the tendency for users to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), grouping UI elements together to the degree that they're related conceptually can leverage attention-chaining behaviors from item to item as a user moves their gaze through an area. When designing UI, keep in mind the potential large variation in field of view between HoloLens and immersive headsets.
 
-![An example of grouped UI elements for easier gaze targeting in Galaxy Explorer](images/gazetargeting-grouping-1000px.jpg) An example of grouped UI elements for easier gaze targeting in Galaxy Explorer
+![An example of grouped UI elements for easier gaze targeting in Galaxy Explorer](images/gazetargeting-grouping-1000px.jpg) 
+
+An example of grouped UI elements for easier gaze targeting in Galaxy Explorer
 
 ## Improving targeting behaviors
 
