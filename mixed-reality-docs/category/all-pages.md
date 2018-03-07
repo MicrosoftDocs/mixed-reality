@@ -50,7 +50,6 @@ There are 177 pages in the documentation.
 * [Color, light and materials](../color,-light-and-materials.md)
 * [Comfort](../comfort.md)
 * [Commercial features](../commercial-features.md)
-* [Community](../community.md)
 * [Connecting to Wi-Fi on HoloLens](../connecting-to-wi-fi-on-hololens.md)
 * [Coordinate systems](../coordinate-systems.md)
 * [Coordinate systems in DirectX](../coordinate-systems-in-directx.md)
