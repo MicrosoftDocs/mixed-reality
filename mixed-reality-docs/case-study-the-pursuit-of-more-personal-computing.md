@@ -1,11 +1,11 @@
 ---
 title: Case study - The pursuit of more personal computing
-description: 
-author: 
-ms.author: randyw
+description: Tomorrow’s opportunities are uncovered by building products today. The solutions these products provide reveal what’s necessary to advance the future.
+author: mavitazk
+ms.author: mavitazk
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios
 ---
 
 
@@ -28,7 +28,9 @@ We live our lives among two worlds: the physical and the digital. Both have fund
 
 **The digital world is one of bits and logic.** Computations are made instantly while information can be distributed effortlessly. Despite the speed and flow of information, interactions are too often limited to small screens, abstract inputs, and noisy feeds.
 
-![HoloStudio](images/holostudio-450px.jpg)What if we could combine the advantages of the physical and digital worlds? This is the cornerstone of experiences across the spectrum of mixed reality: a medium where the physical and digital co-exist and seamlessly interact. Combining these worlds builds a new foundation for interacting more naturally with technology — an evolution in personal computing.
+![HoloStudio](images/holostudio-450px.jpg)
+<br>
+What if we could combine the advantages of the physical and digital worlds? This is the cornerstone of experiences across the spectrum of mixed reality: a medium where the physical and digital co-exist and seamlessly interact. Combining these worlds builds a new foundation for interacting more naturally with technology — an evolution in personal computing.
 
 The spectrum of mixed reality has exploded as developers have begun exploring the opportunities of immersion and presence. Bringing users into the digital world with immersive (virtual reality) experiences and creating digital objects in the physical world with holographic (augmented reality) experiences. But what are the benefits of mapping the physical world to the digital world? What happens when we give computers eyes to see?
 
@@ -66,7 +68,9 @@ In this world of contextual experiences, catering to the mobility of the user is
 
 ## Designing for tomorrow's experiences today
 
-![Designing for tomorrow's experiences today](images/designing-for-tomorrows-experiences-today-450px.jpg) Each one of the core technologies behind this new class of experiences are enabling designers and developers to create compelling and successful experiences today. By reducing abstraction, we can interact more directly with the digital world, allowing us to design in ways that augment and amplify human abilities. Voice technology (through bots and digital assistants like Cortana) is allowing users to carry out increasingly complex conversations and scenarios, while AI technology (through tools like Microsoft Cognitive Services) is causing companies to rethink how users will interact with everything from social media to supply chain management.
+![Designing for tomorrow's experiences today](images/designing-for-tomorrows-experiences-today-450px.jpg) 
+<br>
+Each one of the core technologies behind this new class of experiences are enabling designers and developers to create compelling and successful experiences today. By reducing abstraction, we can interact more directly with the digital world, allowing us to design in ways that augment and amplify human abilities. Voice technology (through bots and digital assistants like Cortana) is allowing users to carry out increasingly complex conversations and scenarios, while AI technology (through tools like Microsoft Cognitive Services) is causing companies to rethink how users will interact with everything from social media to supply chain management.
 
 These types of interactions will rely on both a new class of design tools as well fundamental support from the platform. Creating these tools and building this platform for devices and services relies on understanding how tomorrow's experiences will solve real, tangible problems. We've identified five areas of opportunity where our enterprise partners have delivered valuable solutions and where we believe continued investment will help us prepare for this new class of computing. 
 
@@ -77,7 +81,7 @@ The past year of developer partnerships has uncovered areas of opportunity that 
 ### 1. Creation and design
 
 One of the chief opportunities of mixed reality is the ability to see and manipulate 3D designs in real time, in a real-world setting, at true size and scale. Design and prototyping tools have escaped the confines of screens, returning to a realm of design usually reserved for tangible, physical materials like wood and clay.
-
+<br>
 >[!VIDEO https://www.youtube.com/embed/Hx6biWE2VsM]
 
 [Autodesk](https://www.youtube.com/watch?v=Hx6biWE2VsM) created a mixed reality experience aimed at improving collaboration across the entire product development process. The ability for engineers and designers to survey and critique 3D models in their environment allowed them to iterate on a design in real-time. This not only enabled faster prototyping but gave way to more confident decisions in the process.
@@ -87,7 +91,7 @@ Experiences like this highlight the need for core collaboration experiences, the
 ### 2. Assembly and manufacturing
 
 From the increasing amount of specialization on factory floors to the rapid advancements of supply chain management, seamless access to relevant information is key. Mixed reality offers the ability to synthesize extensive data sets and provide visual displays that aid in areas like navigation and operations. These are often highly technical, niche fields where integration with custom datasets and services are crucial to reducing complexity and providing a successful experience.
-
+<br>
 >[!VIDEO https://www.youtube.com/embed/8OWhGiyR4Ns]
 
 Elevator manufacturer [ThyssenKrupp](https://www.youtube.com/watch?v=8OWhGiyR4Ns) created an experience for elevator service technicians, allowing them to visualize and identify problems in preparation for a job. With a team spanning over 24,000 technicians, devices like HoloLens allow these technicians to have remote, hands-free access to technical and expert information.
@@ -97,7 +101,7 @@ ThyssenKrupp highlights a powerful concept here that critical, contextually-rele
 ### 3. Training and development
 
 Representing objects and information in three dimensions offer new ways to explain scenarios visually and with spatial understanding. Training becomes a key area of opportunity, leveraging the ability to digitally represent enormous, complex objects (like jet engines) to create training simulations for a fraction of the cost of a physical solution.
-
+<br>
 >[!VIDEO https://www.youtube.com/embed/GjZgI2oDcwM]
 
 [Japan Airlines](https://www.youtube.com/watch?v=GjZgI2oDcwM&t=158s) has been experimenting with concept programs to provide supplemental training for engine mechanics and flight crews. The massive jet engines (in both size and complexity) can be represented in 3D, ignoring the limitations of the physical world to move and rotate virtual objects around trainees, allowing them to see how airline components work in real-time.
@@ -107,7 +111,7 @@ Training with virtual components (and reducing the need for expensive, physical 
 ### 4. Communication and understanding
 
 Interactions between two people (whether both participants are in mixed reality devices or one is on a traditional PC or phone) can provide both a sense of immersion within a new environment or a sense of presence when communicating virtually with others. In enterprise scenarios this sense of presence is a boon to mobile teams, helping to increase understanding of projects and lessen the need for travel.
-
+<br>
 >[!VIDEO https://www.youtube.com/embed/kXVW4sUsh3A]
 
 Commercial tech manufacturer [Trimble](https://www.youtube.com/watch?v=kXVW4sUsh3A) developed a solution for architecture and construction industry professionals to collaborate and review work during building development. Professionals can remotely immerse themselves into a project to discuss progress or be on location and review plans as they would look (in their final form) in the environment around them.
@@ -117,7 +121,7 @@ Shared experiences are a major area of investment for Microsoft, with apps like 
 ### 5. Entertainment and engagement
 
 The nature of immersion in mixed reality can have a tremendous impact on the way customers engage with entertainment and marketing. Artists and entertainment studios have explored mixed reality as a compelling medium for storytelling, while companies are exploring the implications for brand marketing. From product demos in private showrooms to vision pieces told at trade expos, content can be delivered in more immersive and tailored ways.
-
+<br>
 >[!VIDEO https://www.youtube.com/embed/DilzwF90vec]
 
 Volvo created an experience for showcasing their latest car models (immersing users in different colors and configurations) while highlighting how advanced sensors work to create a better, safer driving experience. Taking customers through a guided showroom experience allows Volvo to tell the story behind cutting-edge car feature while delivering a memorable portrayal of their brand story.
@@ -130,7 +134,10 @@ It's hard to say what the far future of mixed reality will look like for consume
 
 ## About the author
 
-![Picture of Mark Vitazko](images/mark-vitazko.jpg) Mark Vitazko \
- UX Designer @Microsoft
-
+<table style="border-collapse:collapse">
+<tr>
+<td style="border-style: none"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
+<td style="border-style: none"><b>Mark Vitazko</b><br>UX Designer @Microsoft</td>
+</tr>
+</table>
  

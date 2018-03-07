@@ -1,11 +1,11 @@
 ---
 title: Case study - My first year on the HoloLens design team
-description: 
-author: 
-ms.author: randyw
+description: My journey from a 2D flatland to the 3D world started when I joined the HoloLens design team in January, 2016.
+author: designnomad
+ms.author: haejinl
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens, design, editorial, personal
 ---
 
 
@@ -17,8 +17,8 @@ My journey from a 2D flatland to the 3D world started when I joined the HoloLens
 ![Taking the Leap from 2D to 3D](images/2d-to-3d-1000px.gif)
 
 
-“I felt as though I had jumped into the driver’s seat without knowing how to drive the car. I was overwhelmed and scared, yet very focused.”
-— Hae Jin Lee
+**“I felt as though I had jumped into the driver’s seat without knowing how to drive the car. I was overwhelmed and scared, yet very focused.”
+— Hae Jin Lee**
 
 During the past year, I picked up skills and knowledge as fast as I could, but I still have a lot to learn. Here, I’ve written up 4 observations with a video tutorial documenting my transition from a 2D to 3D interaction designer. I hope my experience will inspire other designers to take the leap to 3D.
 
@@ -32,10 +32,12 @@ I understood this conceptually, but in the beginning I made the mistake of simpl
 
 Body-locked
 
+<br><br>
+
 ![World-locked](images/worldlocked.gif)
 
 World-locked
-
+<br>
 ### Fragments: An example of great Diegetic UI
 
 [Fragments](https://www.microsoft.com/microsoft-hololens/en-us/apps/Fragments/), a first-person crime thriller developed by [Asobo Studio](http://www.asobostudio.com/) for HoloLens demonstrates a great Diegetic UI. In this game, the user becomes a main character, a detective who tries to solve a mystery. The pivotal clues to solve this mystery get sprinkled in the user’s physical room and are often times embedded inside a fictional object rather than existing on their own. This diegetic UI tends to be less discoverable than body-locked UI, so the Asobo team cleverly used many cues including virtual characters’ gaze direction, sound, light, and guides (e.g., arrow pointing the location of the clue) to grab user’s attention.
@@ -43,7 +45,7 @@ World-locked
 ![Fragments - Diegetic UI examples](images/fragments-game-example-1.jpg)
 
 Fragments - Diegetic UI examples
-
+<br>
 ### Observations about diegetic UI
 
 Spatial UI (both body-locked and world-locked) and diegetic UI have their own strengths and weaknesses. I encourage designers to try out as many MR/VR apps as possible, and to develop their own understanding and sensibility for various UI positioning methods.
@@ -62,6 +64,7 @@ The benefit of Skeuomorphism is clear. Familiar environments and objects within 
 
 Job Simulator
 
+<br><br>
 Because MR/VR is still a developing medium, using a certain degree of skeuomorphism is necessary to demystify MR/VR technology and to introduce it to larger audiences around the world. Additionally, using skeuomorphism or realistic representation could be beneficial for specific types of applications like surgery or flight simulation. Since the goal of these apps is to develop and refine specific skills that can be directly applied in the real world, the closer the simulation is to the real world, the more transferable the knowledge is.
 
 Remember that skeuomorphism is only one approach. The potential of the MR/VR world is far greater than that, and designers should strive to create magical hyper-natural interactions — new affordances that are uniquely possible in MR/VR world. As a start, consider adding magical powers to ordinary objects to enable users to fulfill their fundamental desires—including teleportation and omniscience.
@@ -82,9 +85,10 @@ When I designed for the 2D medium, I had to focus on touch, mouse, and keyboard 
 
 Available inputs in HoloLens
 
+<br>
 
-“Everything is best for something, and worst for something else.”
-— [Bill Buxton](https://www.billbuxton.com/)
+**“Everything is best for something, and worst for something else.”
+— [Bill Buxton](https://www.billbuxton.com/)**
 
 For example, gesture input using bare hand and camera sensors on an HMD device frees users hand from holding controllers or wearing sweaty gloves, but frequent use can cause physical fatigue (a.k.a gorilla arm). Also, users have to keep their hands within the line of sight; if the camera cannot see the hands, the hands cannot be used.
 
@@ -94,7 +98,9 @@ Besides gesture and speech, hand-held tracked controllers (e.g., Oculus touch, V
 
 ![Senso (Left) and Manus VR(Right)](images/senso-and-manus-vr.jpg)
 
-Senso (Left) and Manus VR(Right)
+Senso (Left) and Manus VR (Right)
+
+<br>
 
 While not as popular as controllers, gloves are gaining momentum again thanks to the MR/VR wave. Most recently, brain/mind input have started to gain traction as an interface for virtual environments by integrating EEG or EMG sensor to headset (e.g., [MindMaze VR](http://www.mindmaze.com/)).
 
@@ -107,12 +113,14 @@ These are a just a sample of input devices available in the market for MR/VR. Th
 When I worked in 2D, I mostly sketched just the content. However, in mixed reality space that wasn’t sufficient. I had to sketch out the entire scene to better imagine the relationships between the user and virtual objects. To help my spatial thinking, I started to sketch scenes in [Cinema 4D](https://www.maxon.net/en/products/cinema-4d/overview/) and sometimes create simple assets for prototyping in [Maya](http://www.autodesk.com/products/maya/overview/). I had never used either program before joining the HoloLens team and I am still a newbie, but working with these 3D programs definitely helped me get comfortable with new terminology, such as [shader](https://en.wikipedia.org/wiki/Shader/) and [IK (inverse kinematics)](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-07C3BA47-32BB-477B-B6C5-1090E5C9B81C-htm.html/).
 
 
-“No matter how closely I sketched out the scene in 3D, the actual experience in headset was almost never the same as the sketch. That’s why it’s important to test out the scene in the target headsets.”
-— Hae Jin Lee
+**“No matter how closely I sketched out the scene in 3D, the actual experience in headset was almost never the same as the sketch. That’s why it’s important to test out the scene in the target headsets.”
+— Hae Jin Lee**
 
 For HoloLens prototyping, I tried out all the tutorials at [Mixed Reality Academy](academy.md) to start. Then I began to play with [HoloToolkit.Unity](https://github.com/Microsoft/HoloToolkit-Unity/) that Microsoft provides to developers to accelerate development of holographic applications. When I got stuck with something, I posted my question to [HoloLens Question & Answer Forum](https://forums.hololens.com/categories/questions-and-answers/).
 
 After acquiring basic understanding of HoloLens prototyping, I wanted to empower other non-coders to prototype on their own. So I made a video tutorial that teaches how to develop a simple projectile using HoloLens. I briefly explain the basic concepts, so even if you have zero experience in HoloLens development, you should be able to follow along.
+
+
 
 >[!VIDEO https://www.youtube.com/embed/58612RT2CT8]
 
@@ -126,7 +134,11 @@ A year ago, I felt like all of this was a bit overwhelming. Now I can tell you t
 
 ## About the author
 
-![Picture of Hae Jin Lee](images/haejinlee.jpg) Hae Jin Lee \
- UX Designer @Microsoft
+<table style="border-collapse:collapse">
+<tr>
+<td style="border-style: none"><img alt="Picture of Hae Jin Lee" width="60" height="60" src="images/haejinlee.jpg"></td>
+<td style="border-style: none"><b>Hae Jin Lee</b><br>UX Designer @Microsoft</td>
+</tr>
+</table>
 
  

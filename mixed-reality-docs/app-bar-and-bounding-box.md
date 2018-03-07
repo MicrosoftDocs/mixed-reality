@@ -1,11 +1,11 @@
 ---
 title: App bar and bounding box
-description: 
-author: 
-ms.author: randyw
+description: The App bar is a object-level menu containing a series of buttons that displays on the bottom edge of a hologram's bounds.
+author: radicalad
+ms.author: adlinv
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, App bar, bounding box
 ---
 
 
@@ -27,6 +27,10 @@ The App bar was designed primarily as a way to manage placed objects in a user's
 ## What is the bounding box?
 
 ![A 2d and 3d resize gizmo, and a holographic bounding box](images/boundingbox-progression-1000px.jpg)
+
+A 2d and 3d resize gizmo, and a holographic bounding box
+
+
 
 The bounding box is a state for objects editable in a user’s environment. It provides the user an affordance that the object is currently adjustable. The corners tell the user that the object can also scale. This visual affordance shows users the total area of the object – even if it’s not visible outside of an adjustment mode. This is especially important because if it weren’t there, an object snapped to another object or surface may appear to behave as if there was space around it that shouldn’t be there.
 

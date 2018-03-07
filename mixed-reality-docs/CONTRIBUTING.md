@@ -2,17 +2,26 @@
 
 Welcome to the [public repo for Windows Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.** Windows Mixed reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown. This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution! 
 
-## Before you start 
+## Before you start
+If you don't already have one, you'll need to create a GitHub account ([https://github.com/join](https://github.com/join)) and link it to your Microsoft alias (if you're a Microsoft employee) on the Microsoft Open Source portal ([https://repos.opensource.microsoft.com/](https://repos.opensource.microsoft.com/) -- Join the **"Microsoft"** and **"MicrosoftDocs"** organizations).  
 
-If you don't already have one, you'll need to create a GitHub account and link it to your Microsoft identity (if you're a Microsoft employee). You can find instructions on [this page](https://docs.microsoft.com/en-us/contribute/contribute/get-started-setup-github). Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
+When setting up your account, we also recommend these security precautions:
+- Create a [strong password for your Github account](https://github.com/settings/admin).
+- Enable [two-factor authentication](https://github.com/settings/two_factor_authentication/configure).
+- Save your [recovery codes](https://github.com/settings/auth/recovery-codes) in a safe place.
+- Update your pubic profile settings on the top right of your profile (https://github.com/your_name), select the drop-down arrow next to your profile photo on the top right, then select *Settings*, set your name and consider setting your *Public email* to *Don't show my email address*. We also recommend that you upload a profile picture as a thumbnail will be shown on docs pages that you contribute to. 
+- If you plan to use a command line workflow, consider setting up [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) so that you don't have to enter your password each time you make a contribution. 
+
+Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
 
 ## Editing an existing article
 
 Use the following workflow to make updates to the documentation:
-* Create a branch for your edits based on master (using branch drop-down in top left).
+* Navigate to the article you wish to edit.
+* Click the edit button (pencil icon) in the top right. This will automatically fork a disposable branch off master.
 
-  ![Create a new branch based on master.](images/newbranch.png)
-* Edit the content of relevant articles in your branch.
+  ![Edit an article.](images/editpage.png)
+* Edit the content of the article (see "Mardown basics" below for guidance).
 * Update metadata as relevant at the top of each article:
     * title: This is the page title that appears in the browser tab when the article is being viewed. As this is used for SEO and indexing, you shouldn't change the title unless necessary (though this is less critical before documentation goes public).
     * description: Write a brief description of the article's content. This aids in SEO and discovery.
@@ -20,31 +29,31 @@ Use the following workflow to make updates to the documentation:
     * ms.author: If you are the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
     * ms.date: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
     * keywords: Keywords aid in SEO. Add keywords, separated by a comma and a space, that are specific to your article (but no punctuation after the last keyword in your list); you don't need to add global keywords that apply to all articles as those are managed elsewhere. 
-* When finished, commit changes to your branch.
-* Create a pull request to merge your branch into master.
+* When finished, scroll down and click the **Propose file change** button.
+* On the next page, click **Create pull request** to merge your automatically created branch into master.
 * After the pull request is completed, the site admin will delete your branch (this is easiest, so you don't have to keep it in sync with master).
 * Repeat!
 
 ## Creating a new article
 
 Use the following workflow to create new articles in the documentation:
-* Create a branch for your edits based on master (using branch drop-down in top left).
+* Create a fork off the master branch (using the **Fork** button in the top right).
 
-  ![Create a new branch based on master.](images/newbranch.png)
+  ![Fork the master branch.](images/forkbranch.png)
 * In the **mixed-reality-docs** folder, click the **Create new file** button in the top right.
 * Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
   ![Name your new page.](images/newpagetitle.PNG)
 * At the top of your new page, add the following metadata block:
 ```md
-    ---
-    title: 
-    description: 
-    author: 
-    ms.author: 
-    ms.date: 
-    keywords: 
-    ---
+---
+title: 
+description: 
+author: 
+ms.author: 
+ms.date: 
+keywords: 
+---
 ```
 
 * Fill in the relevant metadata fields per the instructions in the section above.
@@ -52,7 +61,6 @@ Use the following workflow to create new articles in the documentation:
 * Add a "See also" section at the bottom of the article with links to other relevant articles.
 * When finished, commit changes to your branch.
 * Create a pull request to merge your branch into master.
-* After the pull request is completed, the site admin will delete your branch (this is easiest, so you don't have to keep it in sync with master).
 
 ## Markdown basics
 * [How to use Markdown for docs.microsoft.com](https://docs.microsoft.com/en-us/contribute/help-crr/help-content/contribute/contribute-how-to-write-use-markdown)
