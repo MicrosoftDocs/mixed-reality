@@ -394,7 +394,9 @@ public class MicrophoneManager : MonoBehaviour
 
 ## Chapter 4 - Grammar Recognizer
 
->[!VIDEO https://www.youtube.com/embed/J2dYJNSvv18] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/J2dYJNSvv18]
+
+**Objectives**
 * Use the Grammar Recognizer to recognize the user's speech according to an SRGS, or Speech Recognition Grammar Specification, file.
 
 **Note**

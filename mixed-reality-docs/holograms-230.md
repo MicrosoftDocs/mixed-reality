@@ -40,6 +40,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 ## Unity Setup
 
 >[!VIDEO https://www.youtube.com/embed/y2Y4LhK6TEM]
+
 * Start **Unity**.
 * Select **New** to create a new project.
 * Name the project **Planetarium**.
@@ -152,7 +153,8 @@ Finally, let's save our room mesh and load it into Unity.
 
 ## Chapter 2 - Visualization
 
->[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4] 
+>[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4]
+
 **Objectives**
 * Learn the basics of shaders.
 * Visualize your surroundings.
@@ -183,7 +185,9 @@ Unity does a great job of previewing materials, but it's always a good idea to c
 
 ## Chapter 3 - Processing
 
->[!VIDEO https://www.youtube.com/embed/kaUKiNiDxwY] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/kaUKiNiDxwY]
+
+**Objectives**
 * Learn techniques to process spatial mapping data for use in your application.
 * Analyze spatial mapping data to find planes and remove triangles.
 * Use planes for hologram placement.
@@ -415,7 +419,8 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 
 ## Chapter 4 - Placement
 
->[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc] 
+>[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc]
+
 **Objectives**
 * Determine if a hologram will fit on a surface.
 * Provide feedback to the user when a hologram can/cannot fit on a surface.
