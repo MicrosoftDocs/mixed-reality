@@ -5,7 +5,7 @@ author: mavitazk
 ms.author: mavitazk
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens
+keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios
 ---
 
 
