@@ -1,6 +1,6 @@
 ---
 title: Gestures
-description: Hand gestures allow users take action in mixed reality. 
+description: Hand gestures allow users to take action in mixed reality. 
 author: rwinj
 ms.author: randyw
 ms.date: 2/28/2018
