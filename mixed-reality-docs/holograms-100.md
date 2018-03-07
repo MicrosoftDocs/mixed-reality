@@ -1,11 +1,11 @@
 ---
 title: Holograms 100
-description: <meta name="description" content="Learn how to create your first basic mixed reality hello world application." />
+description: Learn how to create your first basic mixed reality hello world application.
 author: keveleigh
 ms.author: kurtie
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial
 ---
 
 
