@@ -1,11 +1,11 @@
 ---
 title: Building 2D apps
-description: 
-author: 
+description: This article outlines updating your existing 2D Universal Windows Platform app to run on HoloLens and Windows Mixed Reality immersive headsets.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: 2D app, UWP, flat app, HoloLens, immersive headset
 ---
 
 
@@ -39,17 +39,17 @@ If you have a 2D Unity app today built as a Win32 app (the "PC, Mac & Linux Stan
 
 We'll talk about ways that you can restrict your app specifically to the HoloLens device using the Windows.Holographic device family [below](#publish-and-maintain-your-universal-app-on-hololens).
 
-### Run your 2D app in a desktop mixed reality headset
+### Run your 2D app in a Windows Mixed Reality immersive headset
 
 If you've deployed your 2D app to the desktop machine where you are developing and tried it out on your monitor, you're already ready to try it out in an immersive desktop headset!
 
 Just go to the Start menu within the mixed reality headset and launch the app from there. The desktop shell and the holographic shell both share the same set of UWP apps, and so the app should already be present once you've deployed from Visual Studio.
 
-## Targeting both desktop headsets and HoloLens
+## Targeting both immersive headsets and HoloLens
 
 Congratulations! Your app is now using the Windows 10 Universal Windows Platform (UWP).
 
-Your app is now capable of running on today's Windows devices like Desktop, Mobile, Xbox, and HoloLens as well as future Windows devices. However, to actually target all of those devices, you will need to ensure your app is targeting the Windows.Universal device family.
+Your app is now capable of running on today's Windows devices like Desktop, Mobile, Xbox, Windows Mixed Reality immersive headsets, and HoloLens, as well as future Windows devices. However, to actually target all of those devices, you will need to ensure your app is targeting the Windows.Universal device family.
 
 ### Change your device family to Windows.Universal
 
@@ -172,5 +172,5 @@ Once your app is up and running, package your app to [submit it to the Universal
 * [Gesture](gestures.md)
 * [Motion controllers](motion-controllers.md)
 * [Voice](voice-input.md)
-* [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
+* [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
