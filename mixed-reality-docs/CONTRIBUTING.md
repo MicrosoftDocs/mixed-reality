@@ -38,14 +38,14 @@ Use the following workflow to create new articles in the documentation:
   ![Name your new page.](images/newpagetitle.PNG)
 * At the top of your new page, add the following metadata block:
 ```md
-    ---
-    title: 
-    description: 
-    author: 
-    ms.author: 
-    ms.date: 
-    keywords: 
-    ---
+---
+title: 
+description: 
+author: 
+ms.author: 
+ms.date: 
+keywords: 
+---
 ```
 
 * Fill in the relevant metadata fields per the instructions in the section above.
