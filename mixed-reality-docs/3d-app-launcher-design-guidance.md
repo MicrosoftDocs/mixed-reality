@@ -5,7 +5,7 @@ author: thmignon
 ms.author: thmignon
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, 3D app launcher
+keywords: Windows Mixed Reality, design, 3D app launcher, immersive headset, live cube
 ---
 
 
