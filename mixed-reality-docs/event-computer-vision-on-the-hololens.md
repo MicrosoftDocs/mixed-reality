@@ -18,7 +18,7 @@ Tutorial: Computer Vision on Microsoft HoloLens\
 
 ## Follow Up
 
-**Samples from the July 26th tutorial will be placed in our GitHub project: <http://github.com/Microsoft/HoloLensForCV/>. To be alerted when new material is posted there, [watch that repo](https://github.com/Microsoft/HoloLensForCV/subscription).**
+Samples from the July 26th tutorial will be placed in our GitHub project: <http://github.com/Microsoft/HoloLensForCV/>. To be alerted when new material is posted there, [watch that repo](https://github.com/Microsoft/HoloLensForCV/subscription).
 
 ## Presenters
 * Marc Pollefeys
