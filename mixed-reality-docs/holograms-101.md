@@ -116,9 +116,6 @@ In this chapter, we are going to introduce the first of three ways of interactin
 * Double-click the **WorldCursor** script to open it in Visual Studio.
 * Copy and paste this code into **WorldCursor.cs** and **Save All**.
 
-
-
-
 ```
 using UnityEngine;
 
@@ -163,6 +160,7 @@ public class WorldCursor : MonoBehaviour
     }
 }
 ```
+
 * Rebuild the app from **File > Build Settings**.
 * Return to the Visual Studio solution previously used to deploy to your HoloLens.
 * Select 'Reload All' when prompted.
@@ -184,9 +182,6 @@ We'll start by creating a script then can detect the Select gesture.
 * In the **Scripts** folder, create a script named **GazeGestureManager**.
 * Drag the **GazeGestureManager** script onto the **OrigamiCollection** object in the Hierarchy.
 * Open the **GazeGestureManager** script in Visual Studio and add the following code:
-
-
-
 
 ```
 using UnityEngine;
@@ -252,14 +247,12 @@ public class GazeGestureManager : MonoBehaviour
     }
 }
 ```
+
 * Create another script in the Scripts folder, this time named **SphereCommands**.
 * Expand the **OrigamiCollection** object in the Hierarchy view.
 * Drag the **SphereCommands** script onto the **Sphere1** object in the Hierarchy panel.
 * Drag the **SphereCommands** script onto the **Sphere2** object in the Hierarchy panel.
 * Open the script in Visual Studio for editing, and replace the default code with this:
-
-
-
 
 ```
 using UnityEngine;
@@ -278,6 +271,7 @@ public class SphereCommands : MonoBehaviour
     }
 }
 ```
+
 * Export, build and deploy the app to your HoloLens.
 * Look at one of the spheres.
 * Perform the select gesture and watch the sphere drop onto the surface below.
@@ -297,9 +291,6 @@ In this chapter, we'll add support for two [voice commands](voice-input.md): "Re
 * Drag the **SpeechManager** script onto the **OrigamiCollection** object in the Hierarchy
 * Open the **SpeechManager** script in Visual Studio.
 * Copy and paste this code into **SpeechManager.cs** and **Save All**:
-
-
-
 
 ```
 using System.Collections.Generic;
@@ -349,11 +340,9 @@ public class SpeechManager : MonoBehaviour
     }
 }
 ```
+
 * Open the **SphereCommands** script in Visual Studio.
 * Update the script to read as follows:
-
-
-
 
 ```
 using UnityEngine;
@@ -403,6 +392,7 @@ public class SphereCommands : MonoBehaviour
     }
 }
 ```
+
 * Export, build and deploy the app to your HoloLens.
 * Look at one of the spheres, and say "**Drop Sphere**".
 * Say "**Reset World**" to bring them back to their initial positions.
@@ -431,9 +421,6 @@ In this chapter, we'll add music to the app, and then trigger sound effects on c
 * In the **Scripts** folder, create a script named **SphereSounds**.
 * Drag and drop **SphereSounds** to the **Sphere1** and **Sphere2** objects in the Hierarchy.
 * Open **SphereSounds** in Visual Studio, update the following code and **Save All**.
-
-
-
 
 ```
 using UnityEngine;
@@ -512,6 +499,7 @@ public class SphereSounds : MonoBehaviour
     }
 }
 ```
+
 * Save the script, and return to Unity.
 * Export, build and deploy the app to your HoloLens.
 * Move closer and further from the Stage and turn side-to-side to hear the sounds change.
@@ -542,9 +530,6 @@ Now we'll show you how to move the OrigamiCollection to a new location:
 * In the **Hierarchy**, expand the **OrigamiCollection** and select the **Stage** object.
 * Drag the **TapToPlaceParent** script onto the Stage object.
 * Open the **TapToPlaceParent** script in Visual Studio, and update it to be the following:
-
-
-
 
 ```
 using UnityEngine;
@@ -601,6 +586,7 @@ public class TapToPlaceParent : MonoBehaviour
     }
 }
 ```
+
 * Export, build and deploy the app.
 * Now you should now be able to place the game in a specific location by gazing at it, using the Select gesture and then moving to a new location, and using the Select gesture again.
 
@@ -619,9 +605,6 @@ Now we'll show you how to uncover the holographic underworld:
 * Expand the **Stage** object and select the **Target** object (blue fan).
 * Drag the **HitTarget** script onto the **Target** object.
 * Open the **HitTarget** script in Visual Studio, and update it to be the following:
-
-
-
 
 ```
 using UnityEngine;
@@ -644,6 +627,7 @@ public class HitTarget : MonoBehaviour
     }
 }
 ```
+
 * In Unity, select the **Target** object.
 * Two public properties are now visible on the **Hit Target** component and need to reference objects in our scene:
 * Drag **Underworld** from the **Hierarchy** panel to the **Underworld** property on the **Hit Target** component.

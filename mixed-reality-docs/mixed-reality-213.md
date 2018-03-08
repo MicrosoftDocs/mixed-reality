@@ -18,11 +18,21 @@ In Mixed Reality 213, we will explore the motion controller's input events by cr
 
 **Topics covered in this tutorial**
 
-| ![MixedReality213 Topic1](images/mr213-topic1.png) | ![MixedReality213 Topic2](images/mr213-topic2.png) | ![MixedReality213 Topic3](images/mr213-topic3.png) | 
-|  **Controller visualization** \
-Learn how to render motion controller models in Unity's game mode and runtime.  |  **Controller input events** \
-Understand different types of button events and their applications.  |  **Custom controller & UI** \
-Learn how to overlay UI elements on top of the controller or fully customize it. | 
+<table>
+<tr>
+<td><img src="images/mr213-topic1.png" alt="MixedReality213 Topic1"/></td>
+<td><img src="images/mr213-topic2.png" alt="MixedReality213 Topic2"/></td>
+<td><img src="images/mr213-topic3.png" alt="MixedReality213 Topic3"/></td>
+</tr>
+<tr>
+<td><b>Controller visualization</b><br>
+Learn how to render motion controller models in Unity's game mode and runtime.</td>
+<td><b>Controller input events</b><br>
+Understand different types of button events and their applications.</td>
+<td><b>Custom controller and UI</b><br>
+Learn how to overlay UI elements on top of the controller or fully customize it.</td>
+</tr>
+</table>
 
 **Prerequisites**
 
