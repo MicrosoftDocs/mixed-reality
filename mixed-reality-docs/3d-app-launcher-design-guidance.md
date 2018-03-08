@@ -1,11 +1,11 @@
 ---
 title: 3D app launcher design guidance
-description: 
-author: 
+description: A 3D app launcher is a “physical” object in the user’s mixed reality house that they can select to launch an app.
+author: thmignon
 ms.author: thmignon
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, design, 3D app launcher, immersive headset, live cube
 ---
 
 
@@ -63,11 +63,11 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 <div class="row">
 <div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Logo only" width="640" height="619" src="images/20171016-140436-mixedreality-640px.jpg" /><br />Logo only
+ <img alt="Logo only" width="479" src="images/20171016-140436-mixedreality-640px.jpg" /><br />Logo only
 </div>
 </div><div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="More recognizable with a character" width="640" height="617" src="images/20171016-140557-mixedreality-640px.jpg" /><br />More recognizable with a character
+ <img alt="More recognizable with a character" width="479" src="images/20171016-140557-mixedreality-640px.jpg" /><br />More recognizable with a character
 </div>
 </div>
 </div>
@@ -83,11 +83,11 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 <div class="row">
 <div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Flat approach, not surprisingly, feels flat" width="640" height="619" src="images/20171016-155101-mixedreality-640px.jpg" /><br />Flat approach, not surprisingly, feels flat
+ <img alt="Flat approach, not surprisingly, feels flat" width="479" src="images/20171016-155101-mixedreality-640px.jpg" /><br />Flat approach, not surprisingly, feels flat
 </div>
 </div><div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Volumetric approach better showcases your app" width="640" height="619" src="images/20171016-161407-mixedreality-640px.jpg" /><br />Volumetric approach better showcases your app
+ <img alt="Volumetric approach better showcases your app" width="479" src="images/20171016-161407-mixedreality-640px.jpg" /><br />Volumetric approach better showcases your app
 </div>
 </div>
 </div>
@@ -136,11 +136,11 @@ Avoid high-contrast, small busy patterns
 <div class="row">
 <div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Flat type without a backdrop can be hard to view from certain angles and in certain environments." width="640" height="424" src="images/flattype-640px.png" /><br />Flat type without a backdrop can be hard to view from certain angles and in certain environments.
+ <img alt="Flat type without a backdrop can be hard to view from certain angles and in certain environments." width="479" src="images/flattype-640px.png" /><br />Flat type without a backdrop can be hard to view from certain angles and in certain environments.
 </div>
 </div><div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Type with a built-in backdrop can work well." width="640" height="424" src="images/flattypeandbkg-640px.png" /><br />Type with a built-in backdrop can work well.
+ <img alt="Type with a built-in backdrop can work well." width="479" src="images/flattypeandbkg-640px.png" /><br />Type with a built-in backdrop can work well.
 </div>
 </div>
 </div>
@@ -156,7 +156,7 @@ Avoid high-contrast, small busy patterns
 <div class="row">
 <div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Extruded type can work well if you shade the sides." width="640" height="424" src="images/20171016-160221-mixedreality-640px.jpg" /><br />Extruded type can work well if you shade the sides.
+ <img alt="Extruded type can work well if you shade the sides." width="479" src="images/20171016-160221-mixedreality-640px.jpg" /><br />Extruded type can work well if you shade the sides.
 </div>
 </div><div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
@@ -200,7 +200,9 @@ Make sure your launcher looks good in both light and shadows.
 
 ## Texturing
 
-**Authoring your textures** ![Example: Fresh Note app](images/pbr-freshnote1-640px-500px.png) The end format of your 3D app launcher will be a .glb file, which is made using the PBR (Physically Based Rendering) pipeline. This can be a tricky process - now is a good time to employ a technical artist if you haven't already. If you’re a brave DIY-er, taking the time to [research and learn PBR terminology](http://wiki.polycount.com/wiki/PBR) and what’s happening under the hood before you begin will help you avoid common mistakes. 
+**Authoring your textures** The end format of your 3D app launcher will be a .glb file, which is made using the PBR (Physically Based Rendering) pipeline. This can be a tricky process - now is a good time to employ a technical artist if you haven't already. If you’re a brave DIY-er, taking the time to [research and learn PBR terminology](http://wiki.polycount.com/wiki/PBR) and what’s happening under the hood before you begin will help you avoid common mistakes. 
+
+![Example: Fresh Note app](images/pbr-freshnote1-640px-500px.png) 
 
 **Recommended authoring tool**
 
