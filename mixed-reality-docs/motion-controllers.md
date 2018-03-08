@@ -9,12 +9,12 @@ keywords:
 ---
 
 
-
 # Motion controllers
 
 Motion controllers are [hardware accessories](hardware-accessories.md) that allow users to take action in mixed reality. An advantage of motion controllers over [gestures](gestures.md) is that the controllers have a precise position in space, allowing for fine grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.
 
 ![Windows Mixed Reality motion controllers](images/winmr-ck-1080x1080-350px.jpg)
+
 
 ## Device support
 
@@ -110,6 +110,8 @@ Windows Mixed Reality supports motion controllers in a variety of form factors, 
 
 To better represent these controllers, there are two kinds of poses you can investigate for each interaction source, the **grip pose** and the **pointer pose**.
 
+
+
 ### Grip pose
 
 The **grip pose** represents the location of either the palm of a hand detected by a HoloLens, or the palm holding a motion controller.
@@ -181,18 +183,20 @@ Both [hand gestures](gestures.md) and motion controllers can be tracked over tim
 
 ## Rendering the motion controller model
 
-**3D controller models**\
+**3D controller models**
  Windows makes available to apps a renderable model of each motion controller currently active in the system. By having your app dynamically load and articulate these system-provided controller models at runtime, you can ensure your app is forward-compatible to any future controller designs.
 
 These renderable models should all be rendered at the **grip pose** of the controller, as the origin of the model is aligned with this point in the physical world. If you are rendering controller models, you may then wish to raycast into your scene from the **pointer pose**, which represents the ray along which users will naturally expect to point, given that controller's physical design.
 
 For more information about how to load controller models dynamically in Unity, see the [Rendering the motion controller model in Unity](gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) section.
 
-**2D controller line art**\
+**2D controller line art**
  While we recommend attaching in-app controller tips and commands to the in-app controller models themselves, some developers may want to use 2D line art representations of the motion controllers in flat "tutorial" or "how-to" UI. For those developers, we've made .png motion controller line art files available in both black and white below (right-click to save).
 
-![Preview of motion controllers line art](images/motioncontrollers-black-preview-300px.png)\
- [Full-resolution motion controllers line art in '''white'''](images/motioncontrollers-white.png)\
+![Preview of motion controllers line art](images/motioncontrollers-black-preview-300px.png)
+
+ [Full-resolution motion controllers line art in '''white'''](images/motioncontrollers-white.png)
+ 
  [Full-resolution motion controllers line art in '''black'''](images/motioncontrollers-black.png)
 
 ## FAQ
