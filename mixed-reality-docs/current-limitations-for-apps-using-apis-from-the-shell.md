@@ -35,6 +35,7 @@ In the current version of Windows Holographic, there are several APIs that are n
 We will update this list as future flights enable APIs.
 
 | **Namespace** | **Classname** | 
+|----------|----------|
 | Windows.ApplicationModel.Background | PushNotificationTrigger | 
 | Windows.ApplicationModel.Background | ToastNotificationActionTrigger | 
 | Windows.ApplicationModel.Background | ToastNotificationHistoryChangedTrigger | 
