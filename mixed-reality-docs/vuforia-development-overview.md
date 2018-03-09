@@ -1,11 +1,11 @@
 ---
 title: Vuforia development overview
-description: 
-author: 
+description: Leverage Vuforioa to build windows mixed reality applications in Unity
+author: ChimeraScorn
 ms.author: cwhite
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Vuforia, markers, coordinates, frame of reference, tracking
 ---
 
 
