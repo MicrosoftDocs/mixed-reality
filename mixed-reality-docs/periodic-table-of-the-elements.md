@@ -94,9 +94,9 @@ This is an example of visualizing sports data using Object collection and other 
 
 ## About the author
 
-<table style="border-collapse:collapse">
+<table style="border-collapse:collapse" padding-left="0px">
 <tr>
-<td style="border-style: none"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
+<td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
 <td style="border-style: none"><b>Dong Yoon Park</b><br>UX Designer @Microsoft</td>
 </tr>
 </table>
