@@ -139,7 +139,7 @@ It's hard to say what the far future of mixed reality will look like for consume
 
 ## About the author
 
-<table style="border-collapse:collapse">
+<table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
 <td style="border-style: none"><b>Mark Vitazko</b><br>UX Designer @Microsoft</td>
