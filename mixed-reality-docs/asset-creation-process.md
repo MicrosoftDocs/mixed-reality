@@ -115,7 +115,7 @@ Another option for larger projects that require more assets than your team is eq
   * Poly count range
   * Number of textures
   * Type of shader (For Unity and HoloLens you should always default to mobile shaders first)
-  * **Understand the costs**
+* **Understand the costs**
   * What's the outsourcing policy for change requests?
 
 Outsourcing can work extremely well based on your projects timeline but requires more oversight to guarantee that you get the right assets you need the first time.
