@@ -36,8 +36,7 @@ When adding a UI or canvas based text element to a scene, the size disparity is 
 
 Unity UI Text with different dynamic pixels per unit values
 
-
-
+<br>
 Disclaimer: The default value of any font may be affected by the texture size of that font or how the font was imported into Unity. These tests were performed based on the default Arial font in Unity, as well as one other imported font.
 
 ## Sharp text rendering quality with proper dimension
