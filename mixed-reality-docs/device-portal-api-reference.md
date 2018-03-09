@@ -282,7 +282,7 @@ Deletes a mixed reality recording from the device.
 Parameters
 * filename : Name, hex64 encoded, of the file to delete
 
-** /api/holographic/mrc/settings (GET) **
+**/api/holographic/mrc/settings (GET)**
 
 Gets the default mixed reality capture settings
 
