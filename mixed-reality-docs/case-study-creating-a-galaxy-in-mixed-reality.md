@@ -1,7 +1,7 @@
 ---
 title: Case study - Creating a galaxy in mixed reality
 description: Before Microsoft HoloLens shipped, we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device. More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called "Galaxy Explorer."
-author: 
+author: KarimLUCCIN
 ms.author: kaluccin, azibits
 ms.date: 2/28/2018
 ms.topic: article
