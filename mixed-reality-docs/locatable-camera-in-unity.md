@@ -1,11 +1,11 @@
 ---
 title: Locatable camera in Unity
-description: 
-author: 
+description: HoloLens locatable camera usage in Unity
+author: wguyman
 ms.author: wguyman
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: photo, video, hololens, camera, unity, locatable
 ---
 
 
