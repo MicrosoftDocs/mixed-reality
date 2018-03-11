@@ -1,11 +1,11 @@
 ---
 title: Motion controllers
-description: 
-author: 
+description: Details on the Mixed Reality Motion Controllers
+author: wguyman
 ms.author: wguyman
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: 6dof controllers, motion controllers
 ---
 
 
@@ -110,7 +110,7 @@ Windows Mixed Reality supports motion controllers in a variety of form factors, 
 
 To better represent these controllers, there are two kinds of poses you can investigate for each interaction source, the **grip pose** and the **pointer pose**.
 
-
+(images/GripVsPointer.png)
 
 ### Grip pose
 
