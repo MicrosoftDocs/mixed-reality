@@ -1,11 +1,11 @@
 ---
 title: Using WebVR in Edge with Windows Mixed Reality
-description: 
-author: 
-ms.author: leweaver
+description: Overview of using and developing for WebVR in Windows Mixed Reality
+author: YashMaster
+ms.author: yabahman
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: WebVR, WebXR, WinMR, web vr, web xr, web mr, 360, 360 video, 360 videos, 360 photo, 360 photos, immersive web, immersiveweb
 ---
 
 
