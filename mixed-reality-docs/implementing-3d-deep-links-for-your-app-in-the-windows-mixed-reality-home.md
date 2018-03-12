@@ -1,11 +1,11 @@
 ---
 title: Implementing 3D deep links for your app in the Windows Mixed Reality home
-description: 
-author: 
+description: Learn how to create 3D deep links for your Windows Mixed reality application an place 3D content in the mixed reality home. 
+author: thmignon
 ms.author: thmignon
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: 3D, tile, deep link, deep, link, holograms, holograms app
 ---
 
 
