@@ -162,8 +162,8 @@ Please reference [Why HoloLens](https://www.microsoft.com/en-us/hololens/why-hol
 
 The exit criteria for the readiness step includes:
 1. Deliver to a customer a HoloLens app meets our [app quality criteria](app-quality-criteria.md). There are basically two ways to complete this criteria:
-* Fast-track: show us a finished HoloLens project you completed for a customer
-* Readiness training: we will provide training and mentorship through the process of you completing a HoloLens project for a customer
+  * Fast-track: show us a finished HoloLens project you completed for a customer
+  * Readiness training: we will provide training and mentorship through the process of you completing a HoloLens project for a customer
 2. Complete our sales and marketing readiness training
 3. Complete a business plan with us that includes a view into your MR opportunity pipeline
 
@@ -329,8 +329,11 @@ An important aim of the Mixed Reality Partner Program is to help our partners ma
 
 There are four key principles of partner-led sales and marketing of mixed reality solutions:
 
+|     |     |
+|-----|-----|
 |  Differentiated  |  Performance-based | 
 |  Digital first  |  Intelligent | 
+
 * **Differentiated.** Partners lead with their own differentiated services/product offering, and they should have or develop advanced marketing skills and a differentiated value proposition.
 * **Performance-based.** As part of business planning, partners agree to specific, measurable performance metrics, and demonstrate measurable return on marketing investment in order to receive additional investment and incentives via the program.
 * **Digital first.**Partners should prioritize digital marketing and sales strategies. They should collaborate with and learn from digital marketing agencies (if needed) to plan and execute cost-effective digital marketing and social selling strategies across all their customer engagement channels.
