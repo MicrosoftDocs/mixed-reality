@@ -1,11 +1,11 @@
 ---
 title: Shared experiences in Unity
-description: 
-author: 
+description: Share the same holograms between multiple users in a Unity application.
+author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Sharing, Anchor, WorldAnchor, Mixed Reality 250, WorldAnchorTransferBatch, SpatialPerception
 ---
 
 
