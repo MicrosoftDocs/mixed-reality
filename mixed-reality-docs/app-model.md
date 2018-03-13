@@ -1,11 +1,11 @@
 ---
 title: App model
-description: 
-author: 
+description: The UWP app model that defines the lifecycle of Windows Mixed Reality apps
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: UWP, app model, lifecycle, suspend, resume, tile, views, contracts
 ---
 
 
