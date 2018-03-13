@@ -1,7 +1,7 @@
 ---
 title: Case study - Capturing and creating content for HoloTour
 description: HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. 
-author: davidhaley
+author: DannyAskew
 ms.author: daaske, jsylte, traviste
 ms.date: 2/28/2018
 ms.topic: article
