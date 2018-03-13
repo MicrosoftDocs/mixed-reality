@@ -1,11 +1,11 @@
 ---
 title: Spatial mapping
-description: Spatial mapping provides a detailed representation of real-world surfaces in the environment around the HoloLens
-author: cedmonds
-ms.author: cedmonds
+description: Spatial mapping provides a detailed representation of real-world surfaces in the environment around the HoloLens.
+author: mattzmsft
+ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: spatial mapping, HoloLens, mixed reality
+keywords: spatial mapping, HoloLens, mixed reality, surface reconstruction, mesh, sr
 ---
 
 
