@@ -5,7 +5,7 @@ author: thmignon
 ms.author: thmignon
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile
+keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube
 ---
 
 
