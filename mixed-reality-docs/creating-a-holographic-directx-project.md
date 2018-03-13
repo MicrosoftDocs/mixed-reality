@@ -1,11 +1,11 @@
 ---
 title: Creating a holographic DirectX project
-description: 
-author: 
+description: Explains how to create a new holographic app based on the Windows Mixed Reality app template.
+author: mriches@microsoft.com
 ms.author: mriches
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, holographic app, new app, UWP app, template app, holograms, new project, walkthrough, download, sample code
 ---
 
 
