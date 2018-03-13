@@ -1,11 +1,11 @@
 ---
 title: Voice input in DirectX
-description: 
-author: 
+description: explains how to implement voice commands and small phrase and sentence recognition in a DirectX app for Windows Mixed Reality
+author: mriches@microsoft.com
 ms.author: mriches
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords:walkthrough, voice command, phrase, recognition, speech, directx, platform, cortana, windows mixed reality
 ---
 
 
