@@ -1,11 +1,11 @@
 ---
 title: Shared spatial anchors in DirectX
-description: explains how to synchronize two HoloLens devices by sharing spatial anchors
-author: mriches@microsoft.com
+description: Explains how to synchronize two HoloLens devices by sharing spatial anchors.
+author: MikeRiches
 ms.author: mriches
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Windows mixed reality, synchronize, spatial anchor, transfer, multiplayer, view, scenario, walkthrough, sample code
+keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, scenario, walkthrough, sample code
 ---
 
 
