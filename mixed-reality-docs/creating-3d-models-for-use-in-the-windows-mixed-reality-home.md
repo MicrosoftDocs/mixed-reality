@@ -1,11 +1,11 @@
 ---
 title: Creating 3D models for use in the Windows Mixed Reality home
-description: Asset requirements and authoring guidance for 3D models to be used in the Windows Mixed Reality Home.
+description: Asset requirements and authoring guidance for 3D models to be used in the Windows Mixed Reality home.
 author: thmignon
 ms.author: thmignon
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 3D, modeling, modeling guidance, asset requirements, authoring guidelines, launcher, 3D launcher, texture, materials, complexity, triangles, mesh, ploygons, polycount, limits
+keywords: 3D, modeling, modeling guidance, asset requirements, authoring guidelines, launcher, 3D launcher, texture, materials, complexity, triangles, mesh, polygons, polycount, limits
 ---
 
 
