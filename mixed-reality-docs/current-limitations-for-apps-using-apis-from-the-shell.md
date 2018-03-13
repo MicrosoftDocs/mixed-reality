@@ -1,11 +1,11 @@
 ---
 title: Current limitations for apps using APIs from the shell
-description: 
-author: 
+description: Learn about the UWP features that are not currently available on HoloLens.
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: uwp, windows 10, unavailable, features, limitations
 ---
 
 
