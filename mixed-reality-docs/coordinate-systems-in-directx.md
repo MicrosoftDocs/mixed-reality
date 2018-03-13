@@ -1,11 +1,11 @@
 ---
 title: Coordinate systems in DirectX
-description: 
-author: 
+description: Explains how to use Windows Mixed Reality spatial locators, reference frames, spatial anchors, and coordinate systems, how to use the SpatialStage, how to handle tracking loss, how to save and load anchors, and how to do image stabilization
+author: mriches@microsoft.com
 ms.author: mriches
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, spatial locator, spatial reference frame, spatial coordinate system, spatial stage, sample code, image stabilization, spatial anchor, spatial anchor store, tracking loss, walkthrough
 ---
 
 
