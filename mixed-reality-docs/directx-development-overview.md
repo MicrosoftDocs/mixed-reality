@@ -1,6 +1,6 @@
 ---
 title: DirectX development overview
-description: Building a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly
+description: Building a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
