@@ -1,11 +1,11 @@
 ---
 title: DirectX development overview
-description: 
-author: 
+description: Building a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, platform APIs, custom engine, middleware
 ---
 
 
