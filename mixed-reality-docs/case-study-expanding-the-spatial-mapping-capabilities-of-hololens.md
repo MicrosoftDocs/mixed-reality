@@ -1,7 +1,7 @@
 ---
 title: Case study - Expanding the spatial mapping capabilities of HoloLens
 description: When creating our first apps for Microsoft HoloLens, we were eager to see just how far we could push the boundaries of spatial mapping on the device.
-author: mattzmsft
+author: jevertt
 ms.author: jevertt
 ms.date: 2/28/2018
 ms.topic: article
