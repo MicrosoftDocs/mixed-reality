@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: app model, uwp, lifecycle
+keywords: UWP, app model, lifecycle, suspend, resume, tile, views, contracts
 ---
 
 # App model

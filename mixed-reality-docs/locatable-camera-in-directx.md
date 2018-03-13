@@ -1,11 +1,11 @@
 ---
 title: Locatable camera in DirectX
-description: 
-author: 
+description: Explains how to use the point-of-view (POV) camera in a HoloLens app.
+author: MikeRiches
 ms.author: mriches
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, locatable camera, point of view, POV, unporoject, media foundation, MF, custom sink, walkthrough, sample code
 ---
 
 
