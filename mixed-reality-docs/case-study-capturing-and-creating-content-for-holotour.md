@@ -143,7 +143,7 @@ We hope that sharing solutions to some of the bigger challenges we had during pr
 <tr>
 <td style="border:0" width="60px"> <img alt="Jason Syltebo" width="60" height="60" src="images/syltebo.png" /></td>
 <td style="border:0"> <b>Jason Syltebo</b> is an Audio Designer who made sure you could experience the soundscape of every destination you visit, even when you go back in time.</td>
-<td style="border:0" width="60px> <img alt="Travis Steiner" width="60" height="60" src="images/steiner.png" /></td>
+<td style="border:0" width="60px"> <img alt="Travis Steiner" width="60" height="60" src="images/steiner.png" /></td>
 <td style="border:0"> <b>Travis Steiner</b> is a Design Director who researched and scouted locations, created trip plans, and directed filming on site.</td>
 </tr>
 </table>
