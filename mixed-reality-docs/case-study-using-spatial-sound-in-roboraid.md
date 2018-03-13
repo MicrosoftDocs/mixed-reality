@@ -82,7 +82,12 @@ You can try this yourself using the audio assets below:
 
 ## About the author
 
-**Charles Sinex** has been making sounds and writing music for various Hololens apps and demos since 2012. Some of them worked and some of them caused people to throw Hololens dev kits across the room while screaming in agony. Days like that make him realize taking student loan to go to a sound design school was really worth it.
+<table style="border-collapse:collapse">
+<tr>
+<td style="border-style: none" width="60px"><img alt="Picture of Charles Sinex" width="60" height="60" src="images/genericusertile.jpg"></td>
+<td style="border-style: none"><b>Charles Sinex</b><br>Audio Engineer @Microsoft</td>
+</tr>
+</table>
 
 ## See Also
 * [Spatial sound](spatial-sound.md)
