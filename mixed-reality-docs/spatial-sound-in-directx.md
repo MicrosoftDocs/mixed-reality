@@ -1,11 +1,11 @@
 ---
 title: Spatial sound in DirectX
-description: 
-author: 
+description: Add spatial sound to your Windows Mixed Reality apps based on DirectX by using the XAudio2 and xAPO audio libraries.
+author: mriches@microsoft.com
 ms.author: mriches
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Windows mixed reality, spatial sound, apps, XAudio2, low level, xAPO, audio library, walkthrough
 ---
 
 
