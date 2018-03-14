@@ -41,6 +41,7 @@ The coordinate system for opaque Windows Mixed Reality immersive headsets is acc
 
 First, we get the spatial stage and subscribe for updates to it: 
 
+Code for **Spatial stage initialization**
 
 ```
 SpatialStageManager::SpatialStageManager(
@@ -60,7 +61,7 @@ SpatialStageManager::SpatialStageManager(
 In the OnCurrentChanged method, your app should inspect the spatial stage and update the player experience accordingly. In this example, we provide a visualization of the stage boundary, as well as the start position specified by the user and the stage's range of view and range of movement properties. We also fall back to our own stationary coordinate system, when a stage cannot be provided.
 
 
-
+Code for **Spatial stage update**
 
 ```
 void SpatialStageManager::OnCurrentChanged(Object^ /*o*/)
@@ -167,7 +168,7 @@ void SpatialStageManager::OnCurrentChanged(Object^ /*o*/)
 The set of vertices that define the stage boundary are provided in clockwise order. The Windows Mixed Reality shell draws a fence at the boundary when the user approaches it; you may wish to triangularize the walkable area for your own purposes. The following algorithm can be used to triangularize the stage.
 
 
-
+Code for **Spatial stage triangularization**
 
 ```
 std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<float3> const& vertices)
