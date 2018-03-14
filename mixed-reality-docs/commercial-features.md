@@ -39,7 +39,7 @@ The Microsoft HoloLens Commercial Suite includes features that make it easier fo
 </tr><tr>
 <td>Virtual Private Network (VPN)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="using-the-windows-device-portal.md#kiosk-mode">Kiosk mode</a></td><td></td><td style="text-align: center;">X</td>
+<td><a href="using-the-windows-device-portal.md#kiosk-mode">Kiosk mode</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Management and deployment</th>
 </tr><tr>
@@ -65,7 +65,7 @@ The Microsoft HoloLens Commercial Suite includes features that make it easier fo
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Servicing and Support</th>
 </tr><tr>
-<td>Automatic system updates as they arrive</td><td style="text-align: center;">X</td><td style="text-align: center;">✔️</td>
+<td>Automatic system updates as they arrive</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td><a href="https://technet.microsoft.com/en-us/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
