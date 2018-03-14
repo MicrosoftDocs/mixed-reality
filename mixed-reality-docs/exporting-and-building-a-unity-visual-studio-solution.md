@@ -34,7 +34,7 @@ If you don't intend on using the system keyboard in your application, our recomm
 13. Once Unity has finished building, a Windows Explorer window will open to the project root directory. Navigate into the newly created folder.
 14. Open the generated Visual Studio solution file located inside this folder.
 
-![Unity build settings](images/unitybuildsettings-300px.png)
+![Unity build settings](images/unitybuildsettings-300px.png)<br>
 Unity build settings
 
 ## When to re-export from Unity
