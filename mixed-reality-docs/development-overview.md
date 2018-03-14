@@ -32,7 +32,7 @@ Mixed reality apps are built with the [Universal Windows Platform](https://dev.w
 </tr><tr>
 <td> <a href="voice-input.md">Voice</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td> Gamepad</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="hardware-accessories.md">Gamepad</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
