@@ -1,11 +1,11 @@
 ---
 title: In App Purchases
-description: 
-author: 
+description: In App Purchases are supported in HoloLens, but there is some work to set them up.
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: in-app purchases, hololens
 ---
 
 
