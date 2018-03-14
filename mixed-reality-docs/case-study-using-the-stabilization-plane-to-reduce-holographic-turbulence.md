@@ -90,7 +90,7 @@ Turn to your right once more until you see a new configuration of dots. In this 
 <table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Ben Strukus" width="60" height="60" src="images/genericusertile.jpg"></td>
-<td style="border-style: none"><b>Charles Sinex</b><br>Software Engineer @Microsoft</td>
+<td style="border-style: none"><b>Ben Strukus</b><br>Software Engineer @Microsoft</td>
 </tr>
 </table>
 
