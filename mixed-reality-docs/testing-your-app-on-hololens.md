@@ -1,11 +1,11 @@
 ---
 title: Testing your app on HoloLens
-description: 
-author: 
+description: Guidance and suggestions for testing your HoloLens app
+author: JonMLyons
 ms.author: jlyons
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, testing
 ---
 
 
