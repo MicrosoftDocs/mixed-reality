@@ -32,7 +32,7 @@ There are three ways to install new apps on your HoloLens. The primary method wi
   >Make sure to reference any associated dependency and certificate files.
 4. Click **Go**.
 
-![Install app form in Windows Device Portal on Microsoft HoloLens](images/deviceportal-appmanager.jpg)
+![Install app form in Windows Device Portal on Microsoft HoloLens](images/deviceportal-appmanager.jpg)<br>
 Using Windows Device Portal to install an app on HoloLens
 
 ### Deploying from Microsoft Visual Studio 2015
