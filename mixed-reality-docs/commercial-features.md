@@ -1,11 +1,11 @@
 ---
 title: Commercial features
-description: 
+description: The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices.
 author: 
 ms.author: xerxesb
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
 ---
 
 
@@ -18,11 +18,10 @@ The Microsoft HoloLens Commercial Suite includes features that make it easier fo
 
 ## Key commercial features
 
-![With kiosk mode, HoloLens launches directly into the app of your choice.](images/201608-kioskmode-400px.png)
 * **Kiosk mode.** With HoloLens kiosk mode, you can limit which apps to run to enable demo or showcase experiences.
-
-![Mobile Device Management on HoloLens provides enterprise grade device management across multiple devices.](images/201608-enterprisemanagement-400px.png)
+  ![With kiosk mode, HoloLens launches directly into the app of your choice.](images/201608-kioskmode-400px.png)
 * **Mobile Device Management (MDM) for HoloLens.** Your IT department can manage multiple HoloLens devices simultaneously using solutions like Microsoft Intune. You will be able to manage settings, select apps to install and set security configurations tailored to your organization's need.
+  ![Mobile Device Management on HoloLens provides enterprise grade device management across multiple devices.](images/201608-enterprisemanagement-400px.png)
 * **Windows Update for Business.** Controlled operating system updates to devices and support for long term servicing branch.
 * **Data security.** BitLocker data encryption is enabled on HoloLens to provide the same level of security protection as any other Windows device.
 * **Work access.** Anyone in your organization can remotely connect to the corporate network through virtual private network on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials.
