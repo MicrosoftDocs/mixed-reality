@@ -64,10 +64,10 @@ To figure this out, you may try decreasing the viewport scaling factor. If that 
 
 There are quite a few things you can do on a GPU bound game. The first step is to start identifying issues with a profiler. Either the [Unity frame debugger](performance-recommendations-for-immersive-headset-apps.md#unity-frame-debugger) or Intel GPA (especially if you have an intel GPU to test on) will work well for this. Some easy things to look for here are:
 1. **Reduce the number of full screen passes**.
-* **Use [single pass instanced rendering](https://docs.unity3d.com/Manual/SinglePassStereoRenderingHoloLens.html)**. This might involve modifying some shaders, but should give you a performance boost without reducing graphic quality.
-* **Turn off [HDR](https://docs.unity3d.com/Manual/HDR.html)**. HDR requires an extra texture copy per frame. Disabling this should get you a performance win.
-* **Remove, replace or reduce MSAA**. Anti-aliasing is quite expensive and hardware MSAA can be quite slow on lower end machines. Unity allows you to turn this off or reduce the number of passes in its [quality settings](https://docs.unity3d.com/Manual/class-QualitySettings.html) or you can try some software ones such as FXAA in Unity's post effect pipeline.
-* **Use Unity's [post effects pipeline](https://www.assetstore.unity3d.com/en/#!/content/83912)**. If you are using more than one post processing effect, you may want to consider removing some or combining them, either manually or with this pipeline.
+ * **Use [single pass instanced rendering](https://docs.unity3d.com/Manual/SinglePassStereoRenderingHoloLens.html)**. This might involve modifying some shaders, but should give you a performance boost without reducing graphic quality.
+ * **Turn off [HDR](https://docs.unity3d.com/Manual/HDR.html)**. HDR requires an extra texture copy per frame. Disabling this should get you a performance win.
+ * **Remove, replace or reduce MSAA**. Anti-aliasing is quite expensive and hardware MSAA can be quite slow on lower end machines. Unity allows you to turn this off or reduce the number of passes in its [quality settings](https://docs.unity3d.com/Manual/class-QualitySettings.html) or you can try some software ones such as FXAA in Unity's post effect pipeline.
+ * **Use Unity's [post effects pipeline](https://www.assetstore.unity3d.com/en/#!/content/83912)**. If you are using more than one post processing effect, you may want to consider removing some or combining them, either manually or with this pipeline.
 2. **Reduce poly count**. You may want to create lower poly models for many of your most complicated assets. [Simplygon](https://www.simplygon.com/) can automate this. Unity's [LOD System](https://docs.unity3d.com/Manual/LevelOfDetail.html) is useful here and can be configured in your [Unity Settings](https://docs.unity3d.com/Manual/class-QualitySettings.html)
 3. **Reduce number of particles**. Particle effects can be quite expensive, and sometimes having fewer can still give you the effect you want without reducing framerate.
 4. **Reduce the resolution**. You can take advantage of [dynamic resolution scaling](performance-recommendations-for-immersive-headset-apps.md#dynamic-resolution-scaling) or decide to reduce the [default render target size](performance-recommendations-for-immersive-headset-apps.md#default-render-target-size).
@@ -80,7 +80,7 @@ There are quite a few things you can do on a GPU bound game. The first step is t
 // Stats for Vertex shader:
 //        d3d11: 39 math
 // Stats for Fragment shader:
-//        d3d11: 4 math, 1 texture<br>
+//        d3d11: 4 math, 1 texture
 ```
 
 **App thread CPU bound scenes**
