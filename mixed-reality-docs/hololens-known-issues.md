@@ -1,11 +1,11 @@
 ---
 title: HoloLens known issues
-description: 
-author: 
+description: This is the list of known issues that may affect HoloLens developers.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: troubleshoot, known issue, help
 ---
 
 
@@ -24,17 +24,17 @@ We recommend using a Bluetooth keyboard for entering long passwords.
 * 30 seconds after a new update, the shell may disappear one time. Please perform the **bloom** gesture to resume your session.
 
 ## Visual Studio
-* We recommend Visual Studio 2015 Update 3 for HoloLens development. If you encounter any issues with an older build of Visual Studio, we recommend updating to Update 3.
+* See [Install the tools](install-the-tools.md) for the most up-to-date version of Visual Studio recommended for HoloLens development.
 * When deploying an app from Visual Studio to your HoloLens, you may see the error: **The requested operation cannot be performed on a file with a user-mapped section open. (Exception from HRESULT: 0x800704C8)**. If this happens, try again and your deployment will generally succeed.
 
 ## Emulator
-* Not all apps in the Windows Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
+* Not all apps in the Microsoft Store are compatible with the emulator. For example, Young Conker and Fragments are not playable on the emulator.
 * You cannot use the PC webcam in the Emulator.
 * The Live Preview feature of the Windows Device Portal does not work with the emulator. You can still capture Mixed Reality videos and images.
 
 ## Unity
+* See [Install the tools](install-the-tools.md) for the most up-to-date version of Unity recommended for HoloLens development.
 * Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](http://forum.unity3d.com/threads/known-issues.394627/).
-* Users should ensure they are using version 5.4.0f1-HTP or later to avoid a bug that can adversely affect framerate
 
 ## Windows Device Portal
 * The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.
