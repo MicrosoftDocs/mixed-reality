@@ -54,7 +54,7 @@ For your [holograms](hologram.md) to look crisp, clear, and stable, your HoloLen
 
 ### Calibration
 
-If your holograms look jittery or shaky, or if you’re having trouble placing holograms, the first thing to try is the Calibration app. This app can also help if you’re experiencing any discomfort while using your HoloLens.
+If your holograms look jittery or shaky, or if you’re having trouble placing holograms, the first thing to try is the [Calibration app](calibration.md). This app can also help if you’re experiencing any discomfort while using your HoloLens.
 
 To get to the Calibration app, go to Settings > System > Utilities. Select Open Calibration and follow the instructions.
 
@@ -65,3 +65,4 @@ If someone else is going to be using your HoloLens, they should run the Calibrat
 ## See also
 * [Spatial mapping design](spatial-mapping-design.md)
 * [Holograms](hologram.md)
+* [Calibration](calibration.md)
