@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: galaxy explorer, case study, project
+keywords: galaxy explorer, case study, project, sample
 ---
 
 
