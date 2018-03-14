@@ -35,41 +35,41 @@ The Microsoft HoloLens Commercial Suite includes features that make it easier fo
 <tr>
 <th>Features</th><th>Development Edition</th><th>Commercial Suite</th>
 </tr><tr>
-<td>Device Encryption (Bitlocker)</td><td></td><td style="text-align: center;">X</td>
+<td>Device Encryption (Bitlocker)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Virtual Private Network (VPN)</td><td></td><td style="text-align: center;">X</td>
+<td>Virtual Private Network (VPN)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td><a href="using-the-windows-device-portal.md#kiosk-mode">Kiosk mode</a></td><td></td><td style="text-align: center;">X</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Management and deployment</th>
 </tr><tr>
-<td>Mobile Device Management (MDM)</td><td style="text-align: center;"></td><td style="text-align: center;">X</td>
+<td>Mobile Device Management (MDM)</td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Ability to block un-enrollment</td><td></td><td style="text-align: center;">X</td>
+<td>Ability to block un-enrollment</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Cert Based Corporate Wi-Fi Access</td><td></td><td style="text-align: center;">X</td>
+<td>Cert Based Corporate Wi-Fi Access</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Windows Store (Consumer)</td><td style="text-align: center;">Consumer</td><td style="text-align: center;">Filtering via MDM</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">Business Store Portal</a></td><td></td><td style="text-align: center;">X</td>
+<td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">Business Store Portal</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Security and Identity</th>
 </tr><tr>
-<td>Login with Azure Active Directory (AAD)</td><td style="text-align: center;">X</td><td style="text-align: center;">X</td>
+<td>Login with Azure Active Directory (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Login with Microsoft Account (MSA)</td><td style="text-align: center;">X</td><td style="text-align: center;">X</td>
+<td>Login with Microsoft Account (MSA)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Next Generation Credentials with PIN unlock</td><td style="text-align: center;">X</td><td style="text-align: center;">X</td>
+<td>Next Generation Credentials with PIN unlock</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview">Secure boot</a></td><td style="text-align: center;">X</td><td style="text-align: center;">X</td>
+<td><a href="https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview">Secure boot</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Servicing and Support</th>
 </tr><tr>
-<td>Automatic system updates as they arrive</td><td style="text-align: center;">X</td><td style="text-align: center;">X</td>
+<td>Automatic system updates as they arrive</td><td style="text-align: center;">X</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/en-us/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">X</td>
+<td><a href="https://technet.microsoft.com/en-us/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Long term servicing branch</td><td></td><td style="text-align: center;">X</td>
+<td>Long term servicing branch</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
 </table>
 
