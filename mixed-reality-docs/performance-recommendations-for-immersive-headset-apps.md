@@ -72,11 +72,7 @@ There are quite a few things you can do on a GPU bound game. The first step is t
 3. **Reduce number of particles**. Particle effects can be quite expensive, and sometimes having fewer can still give you the effect you want without reducing framerate.
 4. **Reduce the resolution**. You can take advantage of [dynamic resolution scaling](performance-recommendations-for-immersive-headset-apps.md#dynamic-resolution-scaling) or decide to reduce the [default render target size](performance-recommendations-for-immersive-headset-apps.md#default-render-target-size).
 5. **Improve shader performance**. If you find an object with a high render time on its own, you can try swapping out the shader for some of the fast shaders found in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/Utilities/Shaders). You can also optimize your shaders yourself. Unity can compile your shaders for you and show you how many operations they call, which can help compare relative speed. To see this, navigate to a shader in your project menu, and in the inspector menu click the “compile and show code” button. A Visual Studio window should open with stats like these:
-
-
-
-
-```
+```Shader stats output
 // Stats for Vertex shader:
 //        d3d11: 39 math
 // Stats for Fragment shader:
@@ -87,11 +83,11 @@ There are quite a few things you can do on a GPU bound game. The first step is t
 
 For reducing app thread time, the [Unity Profiler](performance-recommendations-for-immersive-headset-apps.md#unity-performance-profiler) is your friend. Strategies we've found useful are:
 1. **Cache data, and avoid expensive calls**:
-* GetComponent
-* FindObjectOfType
-* RaycastAll
-* Anything that traverses the scene graph.
-* Even static accessors, like Vector3.zero, are faster when cached as class variables.
+ * GetComponent
+ * FindObjectOfType
+ * RaycastAll
+ * Anything that traverses the scene graph.
+ * Even static accessors, like Vector3.zero, are faster when cached as class variables.
 2. **Simplify animations**. Often similar effects can be achieved by simplifying animations, or removing extra ones.
 3. **Pool your objects**. [Object pooling](https://unity3d.com/learn/tutorials/topics/scripting/object-pooling) can be extremely effective especially if allocations are costing you performance.
 4. **Simplify physics**. Reducing the number of iterations can improve performance significantly. Unfortunately, this usually has behavior consequences, so make sure to *test these changes*.
@@ -109,8 +105,7 @@ Once you've improved performance across your app, you can use the same tool to s
 
 After adding this package to you project, you'll need to predefine a set of performance buckets corresponding to your different quality levels. The set must be ordered in a list starting with the highest performance settings (lower quality, small viewport) and going up to the lowest performance settings (high quality, full viewport). The set of buckets is hard coded as an array field in `AdaptivePerformance.cs` script. You should see something like this: 
 
-
-```
+```Adaptive Performance Bucket Set
 private PerformanceBucket[] perfBucketList=
     {
          new PerformanceBucket()
@@ -173,7 +168,7 @@ For either sort of device you may want to scale the default resolution target sm
 If you are running in C++ or with the IL2CPP backend of unity, add the following code to the Initialize function in your app.cpp file: 
 
 
-```
+```Sample C++ code for setting render scale with SystemInfoHelper Project
 auto holographicDisplay = Windows::Graphics::Holographic::HolographicDisplay::GetDefault();
 if (nullptr != holographicDisplay)
 {
