@@ -1,7 +1,7 @@
 ---
 title: Persistence in Unity
 description: Persistence lets your users pin individual holograms or a workspace wherever they want it, and then find it later where they expect over many uses of your app.
-author: 
+author: JonMLyons
 ms.author: jlyons
 ms.date: 2/28/2018
 ms.topic: article
