@@ -1,11 +1,11 @@
 ---
 title: How it works - Mixed Reality Capture Studios
-description: 
+description: Learn how the amazing technology behind Microsoft's 360-degree holographic video capture works.
 author: 
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: volumetric video, holographic video, mixed reality video, hologram
 ---
 
 
@@ -18,6 +18,6 @@ To learn more about the technology behind the studio, and how it's brought to li
 
 >[!VIDEO https://www.youtube.com/embed/OzIo8OTZFy0]
 
-**Whitepaper:**\
- ![Preview of whitepaper](images/siggraph-whitepaper-thumb-200px.png)\
- [Download "High-Quality Streamable Free-Viewpoint Video" whitepaper](images/high-quality-streamable-free-viewpoint-video.pdf)
+**Whitepaper:**<br>
+![Preview of whitepaper](images/siggraph-whitepaper-thumb-200px.png)<br>
+[Download "High-Quality Streamable Free-Viewpoint Video" whitepaper](images/high-quality-streamable-free-viewpoint-video.pdf)
