@@ -1,11 +1,11 @@
 ---
 title: Gestures and motion controllers in Unity
-description: 
-author: 
+description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: gestures, motion controllers, unity, gaze, input
 ---
 
 
@@ -16,12 +16,9 @@ There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md),
 
 Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common Input.GetButton/Input.GetAxis APIs that work across multiple Unity VR SDKs, and an InteractionManager/GestureRecognizer API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
 > [!NOTE]
-> 
-
-
-This article has been updated for the final shipping Unity 2017.2 API shapes:
-* If you are using Unity 5.6, you will see an older version of these APIs under the UnityEngine.VR namespace rather than UnityEngine.XR. Beyond the namespace change, there are other minor breaking API changes between Unity 5.6 and Unity 2017.2 that Unity's script updater will fix for you when moving to 2017.2.
-* If you are using an earlier beta build of Unity 2017.2, you will see these APIs under UnityEngine.XR as expected, but you may see some differences from what is described below, as the initial 2017.2 beta builds contain an older version of the API shape.
+> This article has been updated for the final shipping Unity 2017.2 API shapes:
+> * If you are using Unity 5.6, you will see an older version of these APIs under the UnityEngine.VR namespace rather than UnityEngine.XR. Beyond the namespace change, there are other minor breaking API changes between Unity 5.6 and Unity 2017.2 that Unity's script updater will fix for you when moving to 2017.2.
+> * If you are using an earlier beta build of Unity 2017.2, you will see these APIs under UnityEngine.XR as expected, but you may see some differences from what is described below, as the initial 2017.2 beta builds contain an older version of the API shape.
 
 ## Unity button/axis mapping table
 
@@ -45,7 +42,7 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 </tr><tr>
 <td> Select trigger partially pressed </td><td> Button 14 <i>(gamepad compat)</i> </td><td> Button 15 <i>(gamepad compat)</i> </td><td> selectPressedAmount &gt; 0.0</td>
 </tr><tr>
-<td> Menu button pressed </td><td> Button 6 <b>*</b> </td><td> Button 7 <b>*</b> </td><td> menuPressed</td>
+<td> Menu button pressed </td><td> Button 6* </td><td> Button 7* </td><td> menuPressed</td>
 </tr><tr>
 <td> Grip button pressed </td><td> Axis 11 = 1.0 (no analog values)<br />Button 4 <i>(gamepad compat)</i> </td><td> Axis 12 = 1.0 (no analog values)<br />Button 5 <i>(gamepad compat)</i> </td><td> grasped</td>
 </tr><tr>
@@ -55,13 +52,13 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 </tr><tr>
 <td> Thumbstick pressed </td><td> Button 8 </td><td> Button 9 </td><td> thumbstickPressed</td>
 </tr><tr>
-<td> Touchpad X <i>(left: -1.0, right: 1.0)</i> </td><td> Axis 17 <b>*</b> </td><td> Axis 19 <b>*</b> </td><td> touchpadPosition.x</td>
+<td> Touchpad X <i>(left: -1.0, right: 1.0)</i> </td><td> Axis 17* </td><td> Axis 19* </td><td> touchpadPosition.x</td>
 </tr><tr>
-<td> Touchpad Y <i>(top: -1.0, bottom: 1.0)</i> </td><td> Axis 18 <b>*</b> </td><td> Axis 20 <b>*</b> </td><td> touchpadPosition.y</td>
+<td> Touchpad Y <i>(top: -1.0, bottom: 1.0)</i> </td><td> Axis 18* </td><td> Axis 20* </td><td> touchpadPosition.y</td>
 </tr><tr>
-<td> Touchpad touched </td><td> Button 18 <b>*</b> </td><td> Button 19 <b>*</b> </td><td> touchpadTouched</td>
+<td> Touchpad touched </td><td> Button 18* </td><td> Button 19 <b>*</b> </td><td> touchpadTouched</td>
 </tr><tr>
-<td> Touchpad pressed </td><td> Button 16 <b>*</b> </td><td> Button 17 <b>*</b> </td><td> touchpadPressed</td>
+<td> Touchpad pressed </td><td> Button 16* </td><td> Button 17* </td><td> touchpadPressed</td>
 </tr><tr>
 <td> 6DoF grip pose or pointer pose </td><td colspan="2"> <i>Grip</i> pose only: <a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR.InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalRotation.html">XR.InputTracking.GetLocalRotation</a></td><td> Pass <i>Grip</i> or <i>Pointer</i> as an argument: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br />sourceState.sourcePose.TryGetRay<br /></td>
 </tr><tr>
@@ -71,7 +68,7 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 
 
 
-***** These button/axis IDs differ from the IDs that Unity uses for OpenVR due to collisions in the mappings used by gamepads, Oculus Touch and OpenVR.
+> \* These button/axis IDs differ from the IDs that Unity uses for OpenVR due to collisions in the mappings used by gamepads, Oculus Touch and OpenVR.
 
 ## Grip pose vs. pointing pose
 
@@ -109,7 +106,8 @@ If the user moves the controllers out of the headset's field of view, in most ca
 
 At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing.
 
-The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:\
+The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
+
  >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g]
 
 ### Reasoning about tracking state explicitly
@@ -150,7 +148,7 @@ Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose in
 
 To use the general Unity input APIs, you'll typically start by wiring up buttons and axes to logical names in the [Unity Input Manager](https://docs.unity3d.com/Manual/ConventionalGameInput.html), binding a button or axis IDs to each name. You can then write code that refers to that logical button/axis name:
 
-```
+```cs
 if (Input.GetButton("Fire1"))
 {
   // ...
@@ -161,7 +159,7 @@ if (Input.GetButton("Fire1"))
 
 You can also access buttons manually by their fully-qualified name, using Input.GetKey:
 
-```
+```cs
 if (Input.GetKey("joystick button 8"))
 {
   // ...
@@ -172,7 +170,7 @@ if (Input.GetKey("joystick button 8"))
 
 You can access the position and rotation of the controller, using XR.InputTracking:
 
-```
+```cs
 Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
 Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ```
@@ -193,21 +191,21 @@ To get at more detailed information about Windows Mixed Reality hand input (for 
 
 You can poll for this frame's state for each interaction source (hand or motion controller) using the GetCurrentReading method.
 
-```
+```cs
 var interactionSourceStates = InteractionManager.GetCurrentReading();
 ```
 
 Each InteractionSourceState you get back represents an interaction source at the current moment in time. The InteractionSourceState exposes info such as:
 * Which [kinds of presses](motion-controllers.md) are occurring (Select/Menu/Grasp/Touchpad/Thumbstick)
 
-```
+```cs
 if (interactionSourceState.selectPressed) {
           // ...
       }
 ```
 * Other data specific to motion controllers, such the touchpad and/or thumbstick's XY coordinates and touched state
 
-```
+```cs
 if (interactionSourceState.touchpadTouched && interactionSourceState.touchpadPosition.x > 0.5) {
           // ...
       }
@@ -221,12 +219,12 @@ if (interactionSourceState.touchpadTouched && interactionSourceState.touchpadPos
 If you prefer to handle events rather than poll each frame:
 * Register for a InteractionManager input event. For each type of interaction event that you are interested in, you need to subscribe to it.
 
-```
+```cs
 InteractionManager.SourcePressed += InteractionManager_SourcePressed;
 ```
 * Handle the event. Once you have subscribed to an interaction event, you will get the callback when appropriate. In the SourcePressed example, this will be after the source was detected and before it is released or lost.
 
-```
+```cs
 void InteractionManager_SourcePressed(InteractionSourceState state)
 {
     // state has information about:
@@ -241,7 +239,7 @@ void InteractionManager_SourcePressed(InteractionSourceState state)
 
 You need to stop handling an event when you are no longer interested in the event or you are destroying the object that has subscribed to the event. To stop handling the event, you unsubscribe from the event.
 
-```
+```cs
 InteractionManager.SourcePressed -= InteractionManager_SourcePressed;
 ```
 
@@ -256,7 +254,7 @@ These events describe when an input source is:
 
 ### Example
 
-```
+```cs
 using UnityEngine.XR.WSA.Input;
 
 void Start ()
@@ -285,7 +283,8 @@ void InteractionManager_SourceDetected(InteractionSourceState state)
 
 void InteractionManager_SourceLost(InteractionSourceState state)
 {
-    // Source was lost. This will be after a SourceDetected event and no other events for this source id will occur until it is Detected again
+    // Source was lost. This will be after a SourceDetected event and no other events for this
+    // source id will occur until it is Detected again
     // state has the current state of the source including id, position, kind, etc.
 }
 
@@ -297,13 +296,15 @@ void InteractionManager_SourceUpdated(InteractionSourceState state)
 
 void InteractionManager_SourcePressed(InteractionSourceState state)
 {
-    // Source was pressed. This will be after the source was detected and before it is released or lost
+    // Source was pressed. This will be after the source was detected and before it is 
+    // released or lost
     // state has the current state of the source including id, position, kind, etc.
 }
 
 void InteractionManager_SourceReleased(InteractionSourceState state)
 {
-    // Source was released. The source would have been detected and pressed before this point. This event will not fire if the source is lost
+    // Source was released. The source would have been detected and pressed before this point. 
+    // This event will not fire if the source is lost
     // state has the current state of the source including id, position, kind, etc.
 }
 ```
@@ -328,7 +329,7 @@ There are only a few steps required to capture gestures using a Gesture Recogniz
 
 To use the GestureRecognizer, you must have created a GestureRecognizer:
 
-```
+```cs
 GestureRecognizer recognizer = new GestureRecognizer();
 ```
 
@@ -336,7 +337,7 @@ GestureRecognizer recognizer = new GestureRecognizer();
 
 Specify which gestures you are interested in via SetRecognizableGestures():
 
-```
+```cs
 recognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.Hold);
 ```
 
@@ -344,7 +345,7 @@ recognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.Hold);
 
 Subscribe to events for the gestures you are interested in.
 
-```
+```cs
 recognizer.TappedEvent += MyTapEventHandler;
 recognizer.HoldEvent += MyHoldEventHandler;
 ```
@@ -355,7 +356,7 @@ recognizer.HoldEvent += MyHoldEventHandler;
 
 By default, a GestureRecognizer does not monitor input until StartCapturingGestures() is called. It is possible that a gesture event may be generated after StopCapturingGestures() is called if input was performed before the frame where StopCapturingGestures() was processed. Because of this, it is reliable if you want to start and stop gesture monitoring depending on which object the player is currently gazing at.
 
-```
+```cs
 recognizer.StartCapturingGestures();
 ```
 
@@ -363,7 +364,7 @@ recognizer.StartCapturingGestures();
 
 To stop gesture recognition:
 
-```
+```cs
 recognizer.StopCapturingGestures();
 ```
 
@@ -371,7 +372,7 @@ recognizer.StopCapturingGestures();
 
 Remember to unsubscribe from subscribed events before destroying a GestureRecognizer object.
 
-```
+```cs
 void OnDestroy()
 {
     recognizer.TappedEvent -= MyTapEventHandler;
@@ -403,13 +404,17 @@ You can find an example of how we recommend to implement throwing [here](https:/
 * **Use the controller’s *velocity* instead of position**. In the November update to Windows, we introduced a change in behavior when in the [''Approximate'' positional tracking state](motion-controllers.md#controller-tracking-state). When in this state, velocity information about the controller will continue to be reported for as long as we believe it is high accuracy, which is often longer then position remains high accuracy.\
 
 * **Incorporate the *angular velocity* of the controller**. This logic is all contained in the `throwing.cs` file in the `GetThrownObjectVelAngVel` static method, within the package linked above:
-1. As angular velocity is conserved, the thrown object must maintain the same angular velocity as it had at the moment of the throw: \
-`objectAngularVelocity = throwingControllerAngularVelocity;`
-2. As the center of mass of the thrown object is likely not at the origin of the grip pose, it likely has a different velocity then that of the controller in the frame of reference of the user. The portion of the object’s velocity contributed in this way is the instantaneous tangential velocity of the center of mass of the thrown object around the controller origin. This tangential velocity is the cross product of the angular velocity of the controller with the vector representing the distance between the controller origin and the center of mass of the thrown object.<br \>`Vector3 radialVec = thrownObjectCenterOfMass - throwingControllerPos;<br \>Vector3 tangentialVelocity = Vector3.Cross(throwingControllerAngularVelocity, radialVec);`
-3. The total velocity of the thrown object is thus the sum of velocity of the controller and this tangential velocity:\
-`objectVelocity = throwingControllerVelocity + tangentialVelocity;`\
+    1. As angular velocity is conserved, the thrown object must maintain the same angular velocity as it had at the moment of the throw:
+    `objectAngularVelocity = throwingControllerAngularVelocity;`
+    2. As the center of mass of the thrown object is likely not at the origin of the grip pose, it likely has a different velocity then that of the controller in the frame of reference of the user. The portion of the object’s velocity contributed in this way is the instantaneous tangential velocity of the center of mass of the thrown object around the controller origin. This tangential velocity is the cross product of the angular velocity of the controller with the vector representing the distance between the controller origin and the center of mass of the thrown object.
+    ```cs
+    Vector3 radialVec = thrownObjectCenterOfMass - throwingControllerPos;
+    Vector3 tangentialVelocity = Vector3.Cross(throwingControllerAngularVelocity, radialVec);
+    ```
+    3. The total velocity of the thrown object is thus the sum of velocity of the controller and this tangential velocity:
+    `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
-* **Pay close attention to the *time* at which we apply the velocity**. When a button is pressed, it can take up to 20ms for that event to bubble up through Bluetooth to the operating system. This means that if you poll for a controller state changes from pressed to not pressed or vice versa, the controller pose information you get with it will actually be ahead of this change in state. Further, the controller pose presented by our polling API is forward predicted to reflect a likely pose at the time the frame will be displayed which could be more then 20ms in the future. This is good for *rendering* held objects, but compounds our time problem for calculating the trajectory for the moment the user threw the object. Fortunately, with the November update, when a Unity event like InteractionSourcePressed or InteractionSourceReleased is sent, the historical pose information from when that button was pressed is sent with it. This means that in order to get the pose that most closely reflects the state of the controller when the user signaled a throw, we must use the pose given in the event.\
+* **Pay close attention to the *time* at which we apply the velocity**. When a button is pressed, it can take up to 20ms for that event to bubble up through Bluetooth to the operating system. This means that if you poll for a controller state changes from pressed to not pressed or vice versa, the controller pose information you get with it will actually be ahead of this change in state. Further, the controller pose presented by our polling API is forward predicted to reflect a likely pose at the time the frame will be displayed which could be more then 20ms in the future. This is good for *rendering* held objects, but compounds our time problem for calculating the trajectory for the moment the user threw the object. Fortunately, with the November update, when a Unity event like InteractionSourcePressed or InteractionSourceReleased is sent, the historical pose information from when that button was pressed is sent with it. This means that in order to get the pose that most closely reflects the state of the controller when the user signaled a throw, we must use the pose given in the event.
 
 * **Use the grip pose**. Angular velocity and velocity are reported relative to the grip pose, not pointer pose.
 
