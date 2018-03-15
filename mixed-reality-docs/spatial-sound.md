@@ -1,11 +1,11 @@
 ---
 title: Spatial sound
-description: Spatial sound
+description: Using spatial sound in a mixed reality application allows you to convincingly place sounds in a 3D space.
 author: hakons
 ms.author: hakons
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
 ---
 
 
