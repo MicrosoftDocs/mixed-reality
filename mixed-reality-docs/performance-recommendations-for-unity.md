@@ -1,6 +1,6 @@
 ---
 title: Performance recommendations for Unity
-description: 
+description: Unity-specific tips to improve performance with mixed reality apps.
 author: DanHolbertMS
 ms.author: daholbe
 ms.date: 2/28/2018
