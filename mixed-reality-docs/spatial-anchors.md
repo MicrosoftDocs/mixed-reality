@@ -1,11 +1,11 @@
 ---
 title: Spatial anchors
-description: 
-author: 
+description: Best practices for using spatial anchors to render stable holograms
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: coordinate system, spatial coordinate system, world-scale, world, scale, position, orientation, anchor, spatial anchor, world-locked, world-locking, persistence, sharing
 ---
 
 
