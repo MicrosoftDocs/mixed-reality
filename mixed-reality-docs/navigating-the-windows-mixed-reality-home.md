@@ -1,11 +1,11 @@
 ---
 title: Navigating the Windows Mixed Reality home
-description: 
-author: 
+description: HoloLens and Windows Mixed Reality headsets share a paradigm for launching, placing, and manipulating apps and 3D models in your environment (whether physical or digital). Learn how to navigate the Windows Mixed Reality home on both device types.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: shell, os, platform, cliff house, house, home, environment, start, start menu, home menu, pins, app, launch apps, place apps, teleport, move, navigate
 ---
 
 
