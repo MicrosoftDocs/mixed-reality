@@ -1,6 +1,6 @@
 ---
 title: Unity Play Mode
-description: Using Play Mode in the Unity editor to preview your changes on a device without deploying an app
+description: Using Play Mode in the Unity editor to preview your changes on a device without deploying an app.
 author: JonMLyons
 ms.author: jlyons
 ms.date: 2/28/2018

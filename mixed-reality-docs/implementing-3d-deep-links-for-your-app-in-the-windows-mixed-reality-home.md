@@ -22,7 +22,7 @@ Your 2D applications can be enhanced for Windows Mixed Reality by adding the abi
 
  You can place 3D content from your application using “secondaryTiles” by defining a mixed reality model at creation time. Mixed reality models are created by referencing a 3D asset in your app package and optionally defining a bounding box. **Note:** creating “secondaryTiles” from within an exclusive view is not currently supported.
 
-```
+```cs
 using Windows.UI.StartScreen;
 using Windows.Foundation.Numerics;
 using Windows.Perception.Spatial;
@@ -57,7 +57,7 @@ A bounding box can be used to add an additional buffer region around the object.
 
 Developers can get back a list of their existing secondary tiles, which includes the properties that they previously specified. They can also update the properties by changing the value and then calling UpdateAsync().
 
-```
+```cs
 // Grab the existing secondary tile
 SecondaryTile tile = (await SecondaryTile.FindAllAsync()).First();
 

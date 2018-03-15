@@ -1,6 +1,6 @@
 ---
 title: Updating your existing universal app for HoloLens
-description: How to make your existing 2D UWP app work best on HoloLens
+description: How to make your existing 2D UWP app work best on HoloLens.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018

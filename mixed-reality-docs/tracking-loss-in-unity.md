@@ -1,6 +1,6 @@
 ---
 title: Tracking loss in Unity
-description: Handling tracking loss within a Unity app
+description: Handling tracking loss within a Unity app.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
@@ -36,7 +36,7 @@ When handling tracking changes on your own you either need to poll for the state
 
 The most important state is PositionalLocatorState.Active which means tracking is fully functional. Any other state will result in only rotational deltas to the main camera. For example:
 
-```
+```cs
 void Update()
 {
     switch (UnityEngine.VR.WSA.WorldManager.state)
@@ -59,7 +59,7 @@ void Update()
 
 Alternatively and more conveniently, you can also subscribe to OnPositionalLocatorStateChanged to handle the transitions:
 
-```
+```cs
 void Start()
 {
     UnityEngine.VR.WSA.WorldManager.OnPositionalLocatorStateChanged += WorldManager_OnPositionalLocatorStateChanged;
