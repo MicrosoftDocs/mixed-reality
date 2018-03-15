@@ -1,6 +1,6 @@
 ---
 title: Install the tools
-description: 
+description: Start here to prepare for mixed reality development. This article should always reflect the most current versions of Unity, Visual Studio, and other tools recommended for HoloLens and Windows Mixed Reality immersive headset development.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
@@ -12,7 +12,14 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
 
 # Install the tools
 
-Get the tools you need to build apps for Windows, including Windows Mixed Reality apps. There is no separate SDK for Windows Mixed Reality development; you'll use Visual Studio with the Windows 10 SDK (version 1511 or later). Don't have a mixed reality device? You can install the [HoloLens emulator](using-the-hololens-emulator.md) to build mixed reality apps without a HoloLens. You can also use the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) to test your mixed reality apps for immersive headsets. We recommend installing the Unity game engine as an easy way to get started creating mixed reality apps.
+Get the tools you need to build apps for Microsoft HoloLens and Windows Mixed Reality immersive headsets. There is no separate SDK for Windows Mixed Reality development; you'll use Visual Studio with the Windows 10 SDK. 
+
+Don't have a mixed reality device? You can install the [HoloLens emulator](using-the-hololens-emulator.md) to build mixed reality apps without a HoloLens. You can also use the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) to test your mixed reality apps for immersive headsets. 
+
+We recommend installing the Unity game engine as an easy way to get started creating mixed reality apps.
+
+>![TIP]
+>Bookmark this page and check it regularly to keep up-to-date on the most recent version of each tool recommended for mixed reality development.
 
 >[!VIDEO https://www.youtube.com/embed/3l20TWhw4S8]
 
@@ -80,34 +87,40 @@ Get the tools you need to build apps for Windows, including Windows Mixed Realit
 </tr>
 </table>
 
+## Mixed Reality Toolkit
 
+The Mixed Reality Toolkit is an open source project on GitHub that can help accelerate your mixed reality app development for both HoloLens and immersive headsets with scripts and components.
+* [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit)
+* [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 
 ## System requirements
 
-The Windows 10 SDK works best on the **Windows 10 operating system**. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. Visual Studio also has [system requirements](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
+The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. Visual Studio also has [system requirements](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
 
 ### HoloLens Emulator
 
 The HoloLens emulator is based on Hyper-V and uses RemoteFx for hardware accelerated graphics. To use the emulator, make sure your PC meets these hardware requirements:
-* 64-bit Windows 10 Pro, Enterprise, or Education (**The Home edition does not support Hyper-V or the HoloLens emulator**)
+* 64-bit Windows 10 Pro, Enterprise, or Education (**Note: the Home edition does not support Hyper-V or the HoloLens emulator**)
 * 64-bit CPU
 * CPU with 4 cores (or multiple CPU's with a total of 4 cores)
 * 8 GB of RAM or more
 * In the BIOS, the following features must be [supported and enabled](http://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx):
-* Hardware-assisted virtualization
-* Second Level Address Translation (SLAT)
-* Hardware-based Data Execution Prevention (DEP)
+  * Hardware-assisted virtualization
+  * Second Level Address Translation (SLAT)
+  * Hardware-based Data Execution Prevention (DEP)
 * GPU (The emulator might work with an unsupported GPU, but will be significantly slower)
-* DirectX 11.0 or later
-* WDDM 1.2 driver or later
+  * DirectX 11.0 or later
+  * WDDM 1.2 driver or later
 
 If your system meets the above requirements, **please ensure that the "Hyper-V" feature has been enabled on your system** through Control Panel -> Programs -> Programs and Features -> Turn Windows Features on or off -> ensure that "Hyper-V" is selected for the Emulator installation to be successful.
 
 ### Immersive headset development
 
-**The following guidelines are the current minimum and recommended specs for your immersive headset *development PC*, and may be updated regularly.**
+>[!NOTE]
+>The following guidelines are the current minimum and recommended specs for your immersive headset *development PC*, and may be updated regularly.
 
-**Note: do not confuse this with the [minimum PC hardware compatibility guidelines](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), which outlines the *consumer PC specs* to which you should target your immersive headset app or game. **
+>[!WARNING]
+>Do not confuse this with the [minimum PC hardware compatibility guidelines](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), which outlines the *consumer PC specs* to which you should target your immersive headset app or game.
 
 If your immersive headset development PC does not have full-sized HDMI and/or USB 3.0 ports, you'll need [adapters](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs) to connect your headset.
 
@@ -144,12 +157,12 @@ There are currently [known issues](https://docs.microsoft.com/en-us/windows/mixe
 ## Troubleshooting
 
 You may see an error while installing the emulator that you need *"Visual Studio 2015 Update 1 and UWP tools version 1.2"*. There are three possible causes of this error:
-1. You do not have a recent enough version of Visual Studio (Visual Studio 2017 or Visual Studio 2015 Update 1 or later) Follow the instructions above to install the latest release of Visual Studio.
-2. You have a recent enough version of Visual Studio, but you do not have the Universal Windows Platform (UWP) tools installed. This is an optional feature for Visual Studio.
+* You do not have a recent enough version of Visual Studio (Visual Studio 2017 or Visual Studio 2015 Update 1 or later) Follow the instructions above to install the latest release of Visual Studio.
+* You have a recent enough version of Visual Studio, but you do not have the Universal Windows Platform (UWP) tools installed. This is an optional feature for Visual Studio.
 
 You may also see an error installing the emulator on a non-PRO/Enterprise/Education SKU of Windows or if you do not have Hyper-V feature enabled.
-1. Please read the 'System Requirements' section above for a complete set of requirements
-2. Please also ensure that Hyper-V feature has been enabled on your system.
+* Please read the 'System Requirements' section above for a complete set of requirements
+* Please also ensure that Hyper-V feature has been enabled on your system.
 
 ## See also
 * [Development overview](development-overview.md)
