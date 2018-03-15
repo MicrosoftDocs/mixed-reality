@@ -113,7 +113,7 @@ Aside from Garbage Collection, you also need to be aware of the general CPU cost
 Other than the tools listed in [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md), check out
 * The [Unity Frame Debugger](http://docs.unity3d.com/Manual/FrameDebugger.html)
 * The [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html)
-  * **Note**: The Unity profilerwill disable some asynchronous rendering resulting in about half of the normal allowed time for CPU and GPU work to maintain framerate. This will appear in the profiler as Device.Present taking a long time. Additionally, not all CPU work is shown in the profile such as WorldAnchor update calculations.
+  * **Note**: The Unity profiler will disable some asynchronous rendering resulting in about half of the normal allowed time for CPU and GPU work to maintain framerate. This will appear in the profiler as Device.Present taking a long time. Additionally, not all CPU work is shown in the profile such as WorldAnchor update calculations.
 
 ## See also
 * [Unity development overview](unity-development-overview.md)
