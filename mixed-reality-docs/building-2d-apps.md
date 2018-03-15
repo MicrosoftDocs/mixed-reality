@@ -55,16 +55,14 @@ Your app is now capable of running on today's Windows devices like Desktop, Mobi
 
 Now let's jump into your AppX manifest to ensure your Windows 10 UWP app can run on HoloLens:
 * Open your app's solution file with **Visual Studio** and navigate to the app package manifest
-* Right click the **Package.appxmanifest** file in your Solution and go to **View Code**
-
-![package.appxmanifest in Solution Explorer](images/openappxmanifest-500px.png)
+* Right click the **Package.appxmanifest** file in your Solution and go to **View Code**<br>
+  ![package.appxmanifest in Solution Explorer](images/openappxmanifest-500px.png)<br>
 * Ensure your Target Platform is Windows.Universal in the dependencies section
-
-```
-<Dependencies>
-  <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />
-</Dependencies>
-```
+  ```
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />
+  </Dependencies>
+  ```
 * Save!
 
 If you do not use Visual Studio for your development environment, you can open **AppXManifest.xml** in the text editor of your choice to ensure you're targeting the **Windows.Universal** *TargetDeviceFamily*.
@@ -75,15 +73,15 @@ Now that your UWP app targets "Windows.Universal", let's build your app and run 
 * Make sure you have [installed the HoloLens Emulator](install-the-tools.md).
 * In Visual Studio, select the **x86** build configuration for your app
 
-![x86 build configuration in Visual Studio](images/x86setting.png)
+  ![x86 build configuration in Visual Studio](images/x86setting.png)<br>
 * Select **HoloLens Emulator** in the deployment target drop-down menu
 
-![HoloLens Emulator in deployment target list](images/deployemulator-500px.png)
+  ![HoloLens Emulator in deployment target list](images/deployemulator-500px.png)<br>
 * Select **Debug > Start Debugging** to deploy your app and start debugging.
 * The emulator will start and run your app.
 * With a keyboard, mouse, and/or an Xbox controller, place your app in the world to launch it.
 
-![HoloLens Emulator loaded with a UWP sample](images/hololensemulatorwithuwpsample-800px.png)
+  ![HoloLens Emulator loaded with a UWP sample](images/hololensemulatorwithuwpsample-800px.png)<br>
 
 ### Next steps
 
@@ -111,7 +109,7 @@ These steps will walk you through debugging your UWP app using the Visual Studio
 * Select **Debug > Start Debugging** to deploy your app and start debugging.
 * Place the app in the world with your mouse, keyboard, or Xbox controller.
 * Visual Studio should now break somewhere in your app code.
-* If your app doesn't immediately crash or break into the debugger because of an unhandled error, then go through a test pass of the core features of your app to make sure everything is running and functional. You may see errors like pictured below (internal exceptions that are being handled). To ensure you don't miss internal errors that impact the experience of your app, run through your automated tests and unit tests to make sure everything behaves as expected.
+  - If your app doesn't immediately crash or break into the debugger because of an unhandled error, then go through a test pass of the core features of your app to make sure everything is running and functional. You may see errors like pictured below (internal exceptions that are being handled). To ensure you don't miss internal errors that impact the experience of your app, run through your automated tests and unit tests to make sure everything behaves as expected.
 
 ![HoloLens Emulator loaded with a UWP sample showing a system exception](images/hololensemulatorwithuwpsampleexception-800px.png)
 
