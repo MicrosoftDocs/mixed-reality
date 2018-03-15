@@ -1,7 +1,7 @@
 ---
 title: Performance recommendations for Unity
-description: 
-author: 
+description: Performance recommendations for Unity
+author: daholbe
 ms.author: daholbe
 ms.date: 2/28/2018
 ms.topic: article
@@ -20,12 +20,20 @@ Unity's defaults lean towards the average case for all platforms, including desk
 
 ### Use the fastest quality settings
 
+**Unity quality settings**
+
+
 ![Unity quality settings](images/unityqualitysettings-350px.png)
 * On the *"Edit > Project Settings > Quality"* page, select the dropdown under the Windows Store logo and select *"Fastest"*. This ensures that most tunable quality options are set to maximize for performance.
 
 ### Enable player options to maximize performance
 
-![Unity player settings](images/unityplayersettings-350px.png) Go to the player settings by navigating to *"Edit > Project Settings > Player"* page, click on the *"Windows Store"*, then consider the settings below:
+**Unity player settings**
+
+
+![Unity player settings](images/unityplayersettings-350px.png) 
+
+Go to the player settings by navigating to *"Edit > Project Settings > Player"* page, click on the *"Windows Store"*, then consider the settings below:
 * Use *Shader preloading* and other tricks to optimize [shader load time](http://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html). In particular shader preloading means you won't see any hitches due to runtime shader compilation.
 * Make sure *"Rendering > Rendering Path"* is set to *Forward* (this is the default). While deferred rendering is an excellent rendering technique for other platforms, it does eat up a lot of memory bandwidth (and thus power) which makes it unsuitable for mobile devices such as HoloLens.
 * The "Use 16-bit Depth Buffers" setting allows you to enable 16-bit depth buffers, which drastically reduces the bandwidth (and thus power) associated with depth buffer traffic. This can be a big power win, but is only applicable for experiences with a small depth range. You should carefully tune your near/far planes to tightly encapsulate your experience so as to not waste any precision here.
@@ -105,7 +113,7 @@ Aside from Garbage Collection, you also need to be aware of the general CPU cost
 Other than the tools listed in [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md), check out
 * The [Unity Frame Debugger](http://docs.unity3d.com/Manual/FrameDebugger.html)
 * The [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html)
-* **Note**: The Unity profilerwill disable some asynchronous rendering resulting in about half of the normal allowed time for CPU and GPU work to maintain framerate. This will appear in the profiler as Device.Present taking a long time. Additionally, not all CPU work is shown in the profile such as WorldAnchor update calculations.
+  * **Note**: The Unity profilerwill disable some asynchronous rendering resulting in about half of the normal allowed time for CPU and GPU work to maintain framerate. This will appear in the profiler as Device.Present taking a long time. Additionally, not all CPU work is shown in the profile such as WorldAnchor update calculations.
 
 ## See also
 * [Unity development overview](unity-development-overview.md)
