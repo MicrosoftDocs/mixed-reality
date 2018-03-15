@@ -1,11 +1,11 @@
 ---
 title: Spatial sound in Unity
-description: 
-author: 
+description: This topic describes how to use Spatial Sound in your Unity projects.
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: spatial sound, unity
 ---
 
 
@@ -29,9 +29,9 @@ Your Unity project is now configured to use Spatial Sound.
 Spatial Sound is used in your Unity project by adjusting three settings on your Audio Source components. The following steps will configure your Audio Source components for Spatial Sound.
 * In the **Hierarchy** panel, select the game object that has an attached **Audio Source**.
 * In the **Inspector** panel, under the **Audio Source** component
-* Check the **Spatialize** option.
-* Set **Spatial Blend** to **3D** (numeric value 1).
-* For best results, expand **3D Sound Settings** and set **Volume Rolloff** to **Custom Rolloff**.
+    * Check the **Spatialize** option.
+    * Set **Spatial Blend** to **3D** (numeric value 1).
+    * For best results, expand **3D Sound Settings** and set **Volume Rolloff** to **Custom Rolloff**.
 
 ![Inspector panel in Unity showing the Audio Source](images/audiosource.png)
 
@@ -51,7 +51,7 @@ The size of room that is being simulated by Spatial Sound. The approximate sizes
 
 The MixedRealityToolkit for Unity provides a static class that makes setting the Spatial Sound settings easy. This class can be found in the [MixedRealityToolkit\SpatialSound folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/SpatialSound) and can be called from any script in your project. It is recommended that you set these parameters on each Audio Source component in your project. The following example shows selecting the medium room size for an attached Audio Source.
 
-```
+```cs
 AudioSource audioSource = gameObject.GetComponent<AudioSource>()
 
 if (audioSource != null) {
@@ -63,7 +63,7 @@ if (audioSource != null) {
 
 If you don't want to use the excellent Audio tools in the MixedRealityToolkit, here is how you would change HRTF Parameters. You can copy/paste this into a script called **SetHRTF**.cs that you will want to attach to every HRTF AudioSource. It lets you change parameters important to HRTF.
 
-```
+```cs
 using UnityEngine;
    using System.Collections;
    public class SetHRTF : MonoBehaviour    {
