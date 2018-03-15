@@ -15,6 +15,7 @@ keywords: feedback, bug, issue, error, troubleshoot, help
 Use the Feedback Hub to tell us which features you love, which features you could do without, or when something could be better.
 
 ## Feedback for Windows Mixed Reality immersive headset on PC
+
 * Ensure you have the immersive headset connected to your PC.
 * Launch **Feedback Hub** on desktop with the HMD connected.
 * Go to **Feedback Tab** on the left pane. <br>
@@ -54,6 +55,7 @@ Use the Feedback Hub to tell us which features you love, which features you coul
 > - Ensure that a non-metered network is available in order to upload cabs.
 
 ## Feedback for HoloLens
+
 1. Use the **bloom** gesture to bring up the Start menu.
 2. Select **Feedback Hub** from Start.<br>
   ![Start Menu on Microsoft HoloLens](images/startmenu.jpg)
