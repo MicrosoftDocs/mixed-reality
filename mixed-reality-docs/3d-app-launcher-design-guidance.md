@@ -57,7 +57,37 @@ Your 3D app launcher should instantly express “your app’s brand” to people
 
 Your app deserves more than just putting your logo on a flat plane and calling it a day. Your launcher should feel like an exciting, 3D, physical object in the user’s space. A good approach is to imagine your app was going to have a balloon in the Macy’s Thanksgiving Day Parade. Ask yourself, what would really wow people as it came down the street? What would look great from all viewing angles?
 
-<div class="row">
+<table>
+<tr>
+<th>Logo only</th>
+<th>More recognizable with a character</th>
+</tr>
+<tr>
+<td>
+<img alt="Logo only" width="479" src="images/20171016-140436-mixedreality-640px.jpg" />
+</td>
+<td>
+<img alt="More recognizable with a character" width="479" src="images/20171016-140557-mixedreality-640px.jpg" />
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th>Flat approach, not surprisingly, feels flat</th>
+<th>Volumetric approach better showcases your app</th>
+</tr>
+<tr>
+<td>
+<img alt="Flat approach, not surprisingly, feels flat" width="479" src="images/20171016-155101-mixedreality-640px.jpg" />
+</td>
+<td>
+<img alt="Volumetric approach better showcases your app" width="479" src="images/20171016-161407-mixedreality-640px.jpg" />
+</td>
+</tr>
+</table>
+
+<!-- <div class="row">
 <div class="col-xs-24">
 <div class="section remove-header-rule spacer-32-bottom">
 <div class="row">
@@ -97,7 +127,7 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 </div>
 </div>
 </div>
-</div>
+</div> -->
 
 
 

@@ -382,7 +382,9 @@ void OnDestroy()
 
 ## Rendering the motion controller model in Unity
 
-![Motion Controller model and teleportation](images/motioncontrollertest-teleport-1000px.png) If you're looking to add the motion controller models that Windows provides into your Unity project, see our samples in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/).
+![Motion Controller model and teleportation](images/motioncontrollertest-teleport-1000px.png) 
+
+If you're looking to add the motion controller models that Windows provides into your Unity project, see our samples in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/).
 
 In particular, compare against the [MotionControllerTest scene](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity).
 
