@@ -1,7 +1,7 @@
 ---
 title: Commercial features
 description: The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices.
-author: 
+author: xerxesb85
 ms.author: xerxesb
 ms.date: 2/28/2018
 ms.topic: article
