@@ -1,11 +1,11 @@
 ---
 title: Unity Play Mode
-description: 
-author: 
+description: Unity uses Holographic Remoting in Play Mode to provide a fast way to preview your content on a real HoloLens device.
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: unity, play mode, holographic remoting
 ---
 
 
