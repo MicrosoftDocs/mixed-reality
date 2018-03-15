@@ -160,7 +160,6 @@
 ### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [In App Purchases](in-app-purchases.md)
-### [Meet the evangelists](meet-the-evangelists.md)
 ### [Mixed reality](mixed-reality.md)
 ### [Mixed reality capture](mixed-reality-capture.md)
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
