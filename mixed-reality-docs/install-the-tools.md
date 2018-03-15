@@ -89,9 +89,10 @@ We recommend installing the Unity game engine as an easy way to get started crea
 
 ## Mixed Reality Toolkit
 
-The Mixed Reality Toolkit is an open source project on GitHub that can help accelerate your mixed reality app development for both HoloLens and immersive headsets with scripts and components.
+The Mixed Reality Toolkit is a collection of scripts and components intended to accelerate development of applications targeting Microsoft HoloLens and Windows Mixed Reality headsets. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as we all grow. 
 * [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit)
-* [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)
+* [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity) - uses code from the base toolkit and makes it easier to consume in Unity.
+* [MixedRealityCompanionKit](https://github.com/Microsoft/MixedRealityCompanionKit) - code bits and components that may not run directly on HoloLens or immersive headsets, but instead pair with them to build experiences targeting Windows Mixed Reality.
 
 ## System requirements
 
