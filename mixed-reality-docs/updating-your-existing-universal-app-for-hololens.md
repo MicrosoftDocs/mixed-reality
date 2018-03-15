@@ -1,11 +1,11 @@
 ---
 title: Updating your existing universal app for HoloLens
-description: 
-author: 
+description: This is a quick guide to making your 2D UWP app work great in mixed reality.
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: uwp, mixed reality
 ---
 
 
