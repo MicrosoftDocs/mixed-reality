@@ -1,11 +1,11 @@
 ---
 title: Spatial anchors
-description: A spatial anchor represents an important point in the world that the system should keep track of over time.
+description: Best practices for using spatial anchors to render stable holograms.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: spatial anchor, hologram, coordinate system
+keywords: coordinate system, spatial coordinate system, world-scale, world, scale, position, orientation, anchor, spatial anchor, world-locked, world-locking, persistence, sharing
 ---
 
 

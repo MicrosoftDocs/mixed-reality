@@ -30,20 +30,20 @@ The primary types provided for spatial mapping development are as follows:
 * [SpatialSurfaceMeshBuffer](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshbuffer.aspx) wraps a single type of mesh data.
 
 When developing an application using these APIs, your basic program flow will look like this (as demonstrated in the sample application described below):
-* **Set up your SpatialSurfaceObserver**
-* Call [RequestAccessAsync](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.requestaccessasync.aspx), to ensure that the user has given permission for your application to use the device's spatial mapping capabilities.
-* Instantiate a SpatialSurfaceObserver object.
-* Call [SetBoundingVolumes](https://msdn.microsoft.com/en-us/library/windows/apps/mt592747.aspx) to specify the regions of space in which you want information about spatial surfaces. You may modify these regions in the future by simply calling this function again. Each region is specified using a [SpatialBoundingVolume](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx).
-* Register for the [ObservedSurfacesChanged](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx) event, which will fire whenever new information is available about the spatial surfaces in the regions of space you have specified.
-* **Process ObservedSurfacesChanged events**
-* In your event handler, call [GetObservedSurfaces](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.getobservedsurfaces.aspx) to receive a map of SpatialSurfaceInfo objects. Using this map, you can update your records of which spatial surfaces [exist in the user's environment](spatial-mapping.md#mesh-caching).
-* For each SpatialSurfaceInfo object, you may query [TryGetBounds](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.trygetbounds.aspx) to determine the spatial extents of the surface, expressed in a [spatial coordinate system](coordinate-systems.md) of your choosing.
-* If you decide to request mesh for a spatial surface, call [TryComputeLatestMeshAsync](https://msdn.microsoft.com/en-us/library/windows/apps/mt592715.aspx). You may provide options specifying the desired density of triangles, and the format of the returned mesh data.
-* **Receive and process mesh**
-* Each call to TryComputeLatestMeshAsync will aysnchronously return one SpatialSurfaceMesh object.
-* From this object you can access the contained SpatialSurfaceMeshBuffer objects in order to access the triangle indices, vertex positions and (if requested) vertex normals of the mesh. This data will be in a format directly compatible with the [Direct3D 11 APIs](https://msdn.microsoft.com/en-us/library/windows/desktop/ff476501(v=vs.85).aspx) used for rendering meshes.
-* From here your application can optionally perform analysis or [processing](spatial-mapping.md#mesh-processing) of the mesh data, and use it for [rendering](spatial-mapping.md#rendering) and physics [raycasting and collision](spatial-mapping.md#raycasting-and-collision).
-* One important detail to note is that you must apply a scale to the mesh vertex positions (for example in the vertex shader used for rendering the meshes), to convert them from the optimized integer units in which they are stored in the buffer, to meters. You can retrieve this scale by calling [VertexPositionScale](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx).
+- **Set up your SpatialSurfaceObserver**
+  - Call [RequestAccessAsync](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.requestaccessasync.aspx), to ensure that the user has given permission for your application to use the device's spatial mapping capabilities.
+  - Instantiate a SpatialSurfaceObserver object.
+  - Call [SetBoundingVolumes](https://msdn.microsoft.com/en-us/library/windows/apps/mt592747.aspx) to specify the regions of space in which you want information about spatial surfaces. You may modify these regions in the future by simply calling this function again. Each region is specified using a [SpatialBoundingVolume](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx).
+  - Register for the [ObservedSurfacesChanged](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx) event, which will fire whenever new information is available about the spatial surfaces in the regions of space you have specified.
+- **Process ObservedSurfacesChanged events**
+  - In your event handler, call [GetObservedSurfaces](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.getobservedsurfaces.aspx) to receive a map of SpatialSurfaceInfo objects. Using this map, you can update your records of which spatial surfaces [exist in the user's environment](spatial-mapping.md#mesh-caching).
+  - For each SpatialSurfaceInfo object, you may query [TryGetBounds](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.trygetbounds.aspx) to determine the spatial extents of the surface, expressed in a [spatial coordinate system](coordinate-systems.md) of your choosing.
+  - If you decide to request mesh for a spatial surface, call [TryComputeLatestMeshAsync](https://msdn.microsoft.com/en-us/library/windows/apps/mt592715.aspx). You may provide options specifying the desired density of triangles, and the format of the returned mesh data.
+- **Receive and process mesh**
+  - Each call to TryComputeLatestMeshAsync will aysnchronously return one SpatialSurfaceMesh object.
+  - From this object you can access the contained SpatialSurfaceMeshBuffer objects in order to access the triangle indices, vertex positions and (if requested) vertex normals of the mesh. This data will be in a format directly compatible with the [Direct3D 11 APIs](https://msdn.microsoft.com/en-us/library/windows/desktop/ff476501(v=vs.85).aspx) used for rendering meshes.
+  - From here your application can optionally perform analysis or [processing](spatial-mapping.md#mesh-processing) of the mesh data, and use it for [rendering](spatial-mapping.md#rendering) and physics [raycasting and collision](spatial-mapping.md#raycasting-and-collision).
+  - One important detail to note is that you must apply a scale to the mesh vertex positions (for example in the vertex shader used for rendering the meshes), to convert them from the optimized integer units in which they are stored in the buffer, to meters. You can retrieve this scale by calling [VertexPositionScale](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx).
 
 ### Troubleshooting
 * Don't forget to scale mesh vertex positions in your vertex shader, using the scale returned by [SpatialSurfaceMesh.VertexPositionScale](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)
@@ -64,7 +64,7 @@ Your app must be able to use the spatial mapping capability. This is necessary b
 </Capabilities>
 ```
 
-The capability comes from the **uap2** namespace. To get access to this namespace in your manifest, include it as an *xlmns* attribute in the <Package> element. Here's an example:
+The capability comes from the **uap2** namespace. To get access to this namespace in your manifest, include it as an *xlmns* attribute in the &lt;Package> element. Here's an example:
 
 ```
 <Package
@@ -78,7 +78,7 @@ The capability comes from the **uap2** namespace. To get access to this namespac
 
 ### Check for spatial mapping feature support
 
-Windows Mixed Reality supports a wide range of devices, including devices which do not support spatial mapping. If your app can use spatial mapping, or must use spatial mapping, to provide functionality &#151; it should check to make sure that spatial mapping is supported before trying to use it. For example, if spatial mapping is required by your mixed reality app, it should display a message to that effect if a user tries running it on a device without spatial mapping. Or, your app may be able to render its own virtual environment in place of the user's environment, providing an experience that is similar to what would happen if spatial mapping were available. In any event, this API allows your app to be aware of when it will not get spatial mapping data and respond in the appropriate way.
+Windows Mixed Reality supports a wide range of devices, including devices which do not support spatial mapping. If your app can use spatial mapping, or must use spatial mapping, to provide functionality, it should check to make sure that spatial mapping is supported before trying to use it. For example, if spatial mapping is required by your mixed reality app, it should display a message to that effect if a user tries running it on a device without spatial mapping. Or, your app may be able to render its own virtual environment in place of the user's environment, providing an experience that is similar to what would happen if spatial mapping were available. In any event, this API allows your app to be aware of when it will not get spatial mapping data and respond in the appropriate way.
 
 To check the current device for spatial mapping support, first make sure the UWP contract is at level 4 or greater and then call SpatialSurfaceObserver::IsSupported(). Here's how to do so in the context of the [Holographic Spatial Mapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) code sample. Support is checked just before requesting access.
 
@@ -179,7 +179,7 @@ m_surfaceObserver->SetBoundingVolumes(/* iterable collection of bounding volumes
 
 It is also possible to use other bounding shapes - such as a view frustum, or a bounding box that is not axis aligned.
 
-* This is pseudocode:*
+*This is pseudocode:*
 
 ```
 m_surfaceObserver->SetBoundingVolume(
@@ -214,7 +214,7 @@ m_surfaceObserver->ObservedSurfacesChanged += ref new TypedEventHandler<SpatialS
             );
 ```
 
-Our code sample is also configured to respond these events. Let's walk through how we do this.
+Our code sample is also configured to respond to these events. Let's walk through how we do this.
 
 **NOTE:** This might not be the most efficient way for your app to handle mesh data. This code is written for clarity and is not optimized.
 
@@ -361,7 +361,7 @@ CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositio
 }
 ```
 
-*NOTE:* For the CreateDirectXBuffer helper function used in the previous snippet, see the Surface Mapping code sample: SurfaceMesh.cpp, GetDataFromIBuffer.h. Now the device resource creation is complete, and the mesh is considered to be loaded and ready for update and render.
+**NOTE:** For the CreateDirectXBuffer helper function used in the previous snippet, see the Surface Mapping code sample: SurfaceMesh.cpp, GetDataFromIBuffer.h. Now the device resource creation is complete, and the mesh is considered to be loaded and ready for update and render.
 
 ### Update and render surface meshes
 

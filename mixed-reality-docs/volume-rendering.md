@@ -1,11 +1,11 @@
 ---
 title: Volume rendering
-description: 
-author: 
+description: Volumetric images contain rich information with opacity and color throughout the volume that cannot be easily expressed as surfaces. Learn how to efficiently render volumetric images within Windows Mixed Reality. 
+author: KevinKennedy
 ms.author: kkennedy
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: volumetric image, volume rendering, performance, mixed reality
 ---
 
 
@@ -27,9 +27,7 @@ There is only a certain amount of information that can be transferred from the a
 * 1028 * 720 * 2 * 10 = 14803200 (3.9% of full) (sub-volume slice: 10 samples per pixel, runs fairly smoothly, looks 3d)
 * 200 * 200 * 2 * 256 = 20480000 (5% of full) (lower res volume: fewer pixels, full volume, looks 3d but a bit blury)
 
-## Implementation
-
-### Representing 3D Textures
+## Representing 3D Textures
 
 On the CPU:
 
@@ -84,7 +82,7 @@ float3 _VolBufferSize;
  }
 ```
 
-### Shading and Gradients
+## Shading and Gradients
 
 How to shade an volume, such as MRI, for useful visualization. The primary method is to have an 'intensity window' (a min and max) that you want to see intensities within, and simply scale into that space to see the black and white intensity. A 'color ramp' can then be applied to the values within that range, and stored as a texture, so that different parts of the intensity spectrum can be shaded different colors:
 
@@ -104,7 +102,7 @@ In many our applications we store in our volume both a raw intensity value and a
  color.rgb = SegmentColors[ segment_index ] * color.a; // brighter alpha gives brighter color
 ```
 
-### Volume Slicing in a Shader
+## Volume Slicing in a Shader
 
 A great first step is to create a "slicing plane" that can move through the volume, 'slicing it', and how the scan values at each point. This assumes that there is a 'VolumeSpace' cube, which represents where the volume is in world space, that can be used as a reference for placing the points:
 
@@ -119,7 +117,7 @@ A great first step is to create a "slicing plane" that can move through the volu
  float4 color = ShadeVol( SampleVol( volSpace ) );
 ```
 
-### Volume Tracing in Shaders
+## Volume Tracing in Shaders
 
 How to use the GPU to do sub-volume tracing (walks a few voxels deep then layers on the data from back to front):
 
@@ -163,7 +161,7 @@ float4 AlphaBlend(float4 dst, float4 src) {
  float4 color = volTraceSubVolume( volSpace, cameraInVolSpace );
 ```
 
-### Whole Volume Rendering
+## Whole Volume Rendering
 
 Modifying the sub-volume code above we get:
 
@@ -176,7 +174,7 @@ float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
    int numLoops = min( distanceInVoxels, maxSamples ); // put a min on the voxels to sample
 ```
 
-### Mixed Resolution Scene Rendering
+## Mixed Resolution Scene Rendering
 
 How to render a part of the scene with a low resolution and put it back in place:
 1. Setup two off-screen cameras, one to follow each eye that update each frame

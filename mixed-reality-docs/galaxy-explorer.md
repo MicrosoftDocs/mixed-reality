@@ -1,11 +1,11 @@
 ---
 title: Galaxy Explorer
-description: 
-author: 
+description: Follow along with us as we build the mixed reality app Galaxy Explorer, the winner of the Share Your Idea campaign.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: galaxy explorer, case study, project, sample
 ---
 
 
@@ -15,7 +15,8 @@ keywords:
 **You shared your ideas. We’re sharing the code.**
 
 The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code. If you have a device, Galaxy Explorer Project is also available for download from the Windows Store for Microsoft HoloLens.
-* [Get the code](https://github.com/Microsoft/GalaxyExplorer)
+>[!TIP]
+>[Get the code](https://github.com/Microsoft/GalaxyExplorer)
 
 Our HoloLens [development team](galaxy-explorer.md#meet-the-team) of designers, artists, and developers built Galaxy Explorer and invited all of you to be part of this journey with them. After six weeks of core development and two weeks of refinement, this app is now ready for you! You can also follow along our whole journey through the video series below.
 
@@ -73,7 +74,8 @@ In Episode 7, the team completes the project and shares their code.
 
 ## Meet the team
 
-![Galaxy Explorer development team](images/syiteampic.jpg)
+![Galaxy Explorer development team](images/syiteampic.jpg)<br>
+Galaxy Explorer development team
 
 We learned the building the right team is one of the most important investments we could make. We decided to organize similarly to a game studio for those of you familiar with that development model. We chose to have eleven core team members to control scope, since we had a fixed timeframe (create something cool before Build on March 30).
 

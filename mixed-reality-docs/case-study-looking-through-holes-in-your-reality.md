@@ -98,7 +98,7 @@ Here are some ideas of where you can take this idea next:
 
 ## About the author
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Eric Rehmeyer" width="60" height="60" src="images/genericusertile.jpg"></td>
 <td style="border-style: none"><b>Eric Rehmeyer</b><br>Senior Software Engineer @Microsoft</td>

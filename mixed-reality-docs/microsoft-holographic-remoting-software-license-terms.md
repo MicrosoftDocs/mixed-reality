@@ -1,11 +1,11 @@
 ---
 title: Microsoft Holographic Remoting Software License Terms
-description: 
-author: 
+description: Microsoft Holographic Remoting Software License Terms
+author: JonMLyons
 ms.author: jlyons
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, Remoting, License
 ---
 
 

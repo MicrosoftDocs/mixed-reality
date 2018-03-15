@@ -130,7 +130,6 @@ Windows Mixed Reality has a number of built-in apps, such as:
 
 ## See also
 * [App views](app-views.md)
-* [Immersive headset setup](immersive-headset-setup.md)
 * [Motion controllers](motion-controllers.md)
 * [Hardware accessories](hardware-accessories.md)
 * [Environment considerations for HoloLens](environment-considerations-for-hololens.md)

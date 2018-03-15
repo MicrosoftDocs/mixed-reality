@@ -1,11 +1,11 @@
 ---
 title: Calibration
-description: 
+description: Calibrating your IPD (interpupillary distance) can improve the quality of your visuals. Both HoloLens and Windows Mixed Reality immersive headsets offer ways to customize IPD.
 author: 
 ms.author: jakebo
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: calibration, comfort, visuals, quality, ipd
 ---
 
 
@@ -54,3 +54,6 @@ To change IPD within your headset, open the Settings app and navigate to **Mixed
 You can also adjust this setting by going to **Settings** > **Mixed reality** > **Headset display** on your PC.
 
 If your headset does not support IPD customization, this setting will be disabled.
+
+## See also
+* [Environment considerations for HoloLens](environment-considerations-for-hololens.md)

@@ -89,48 +89,52 @@ Importing images and 3D objects through OneDrive
 Before uploading to your OneDrive folder, please follow the steps below to package your 3D objects into a Unity asset bundle. Using this process you can import your FBX/OBJ files from 3D software such as Maya, Cinema 4D and Microsoft Paint 3D.
 
 **Important: Currently, asset bundle creation is supported with Unity version 5.4.5f1.**
-1.  Download and open the Unity project ['AssetBunlder_Unity'](https://github.com/Microsoft/MRDesignLabs/tree/master/ReleasedApps/HoloSketch/AssetBundler_Unity). This Unity project includes the script for the bundle asset generation.
-2.  Create a new GameObject.
-3.  Name the GameObject based on the contents.
-4.  In the Inspector panel, click ‘Add Component’ and add ‘Box Collider’. 
+
+1 Download and open the Unity project ['AssetBunlder_Unity'](https://github.com/Microsoft/MRDesignLabs/tree/master/ReleasedApps/HoloSketch/AssetBundler_Unity). This Unity project includes the script for the bundle asset generation.
+
+2 Create a new GameObject.
+
+3 Name the GameObject based on the contents.
+
+4 In the Inspector panel, click ‘Add Component’ and add ‘Box Collider’. 
+
 
 ![In the Inspector panel, click ‘Add Component’ and add ‘Box Collider’](images/holosketch-10a-assetbundles-1000px.png)
 
 ![In the Inspector panel, click ‘Add Component’ and add ‘Box Collider’ #2](images/holosketch-10b-assetbundles-1000px.png)
 
 
-5.  Import the 3D FBX file by dragging it into the project panel.
+5 Import the 3D FBX file by dragging it into the project panel.
 
-6.  Drag the object into the Hierarchy panel **under your new GameObjectBold**
+6 Drag the object into the Hierarchy panel **under your new GameObjectBold**
 
 ![Drag the object into the Hierarchy panel under your new GameObject](images/holosketch-12-assetbundles-1000px.png)
 
-
-7.  Adjust the collider dimension if it does not match the object. Rotate the object to face **Z-axis**
+7 Adjust the collider dimension if it does not match the object. Rotate the object to face **Z-axis**
 
 ![Adjust collider dimension if it does not match the object.](images/holosketch-13-assetbundles-1000px.png)
 
 
-8.  Drag the object from the Hierarchy panel to the Project panel to **make it prefab**.
+8 Drag the object from the Hierarchy panel to the Project panel to **make it prefab**.
 
-9.  On the bottom of the inspector panel, click the dropdown, create and assign a new unique name. Below example shows adding and assigning 'brownchair' for the AssetBundle Name. 
+9 On the bottom of the inspector panel, click the dropdown, create and assign a new unique name. Below example shows adding and assigning 'brownchair' for the AssetBundle Name. 
 
 ![On the bottom of the inspector panel, click the dropdown and '''assign a new unique name'''.](images/holosketch-14-assetbundles-1000px.png)
 
 
-10. Prepare an image which can be used as thumbnail in OneDrive's list. You can create one by taking screen shot of the object in Unity. No specific size or ratio required. Drag the image into the project panel. On the bottom of the inspector panel, click the dropdown and **assign the same name used for the Prefab**. 3D model Prefab and thumbnail image should have same AssetBundle name. Below example shows assigning 'brownchair' which was assigned to 3D model Prefab. 
+10 Prepare an image which can be used as thumbnail in OneDrive's list. You can create one by taking screen shot of the object in Unity. No specific size or ratio required. Drag the image into the project panel. On the bottom of the inspector panel, click the dropdown and **assign the same name used for the Prefab**. 3D model Prefab and thumbnail image should have same AssetBundle name. Below example shows assigning 'brownchair' which was assigned to 3D model Prefab. 
 
 ![Drag an image into the project panel and assign the name used for the object.](images/holosketch-15-assetbundles-1000px.png)
 
 
-11. Create a folder named ‘Assetbundles’ under the Unity project’s ‘Asset’ folder.
+11 Create a folder named ‘Assetbundles’ under the Unity project’s ‘Asset’ folder.
 
-12. From the Assets menu, select ‘Build AssetBundles’ to generate file. 
+12 From the Assets menu, select ‘Build AssetBundles’ to generate file. 
 
 ![From the Assets menu, select ‘Build AssetBundles’ to generate file.](images/holosketch-15a-assetbundles.png)
 
 
-13. **Upload the generated file to the /Files/Documents/HoloSketch folder on OneDrive.** (Upload the asset_unique_name file only. You don’t need to upload manifest files or AssetBundles file.) 
+13 **Upload the generated file to the /Files/Documents/HoloSketch folder on OneDrive.** (Upload the asset_unique_name file only. You don’t need to upload manifest files or AssetBundles file.) 
 
 ![Add files to Files/Documents/HoloSketch/ folder](images/holosketch-onedriveupload-1000px.png)
 
@@ -168,7 +172,14 @@ Move, Rotate, Scale, Save and Load Scene are available from the Tool Belt Menu.
 
 ## Download the app
 
-![HoloSketch app icon](images/holosketch-app-icon.png) [Download and install the HoloSketch app for free from the Windows Store](https://www.microsoft.com/en-us/store/p/holosketch/9p3br4t5m4tv).
+<table style="border-collapse:collapse">
+<tr>
+<td style="border-style: none" width="60px"><img alt="HoloSketch app icon" width="60" height="60" src="images/holosketch-app-icon.png">
+</td>
+<td style="border-style: none"><a href="https://www.microsoft.com/en-us/store/p/holosketch/9p3br4t5m4tv">Download and install the HoloSketch app for free from the Windows Store</a>
+</td>
+</tr>
+</table>
 
 
 ## Known issues
@@ -184,16 +195,13 @@ You can use the video recording feature in HoloLens by saying 'Hey Cortana, Star
 
 ## About the authors
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Dong Yoon Park</b><br>UX Designer @Microsoft</td>
+<td style="border-style: none" width="408"><b>Dong Yoon Park</b><br>UX Designer @Microsoft</td>
 </tr>
-</table>
- 
-<table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Patrick Sebring" width="60" height="60" src="images/paseb-60px.jpg"></td>
-<td style="border-style: none"><b>Patrick Sebring</b><br>Developer @Microsoft</td>
+<td style="border-style: none" width="408"><b>Patrick Sebring</b><br>Developer @Microsoft</td>
 </tr>
 </table> 

@@ -125,7 +125,7 @@
 ### [Vuforia development overview](vuforia-development-overview.md)
 
 
-## [Community](community.md)
+## [Open source projects](open-source-projects.md)
 ### [Galaxy Explorer](galaxy-explorer.md)
 ### [Mixed Reality Partner Program](mixed-reality-partner-program.md)
 ### [Share your idea](share-your-idea.md)
@@ -159,10 +159,7 @@
 ### [HoloLens known issues](hololens-known-issues.md)
 ### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
-### [Immersive headset setup](immersive-headset-setup.md)
-### [Immersive headset support](immersive-headset-support.md)
 ### [In App Purchases](in-app-purchases.md)
-### [Meet the evangelists](meet-the-evangelists.md)
 ### [Mixed reality](mixed-reality.md)
 ### [Mixed reality capture](mixed-reality-capture.md)
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)

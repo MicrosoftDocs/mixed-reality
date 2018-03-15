@@ -136,9 +136,10 @@ Physically act out the user flow which involves all the user parties in the orde
 
 ## About the author
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table style="border-collapse:collapse">
 <tr>
-<td style="border:0"width="60"><img alt="Rafai Eddy, AfterNow" width="60" height="60" src="images/kurohyo1-60px.png"></td>
- <td style="border:0"><b>Rafai Eddy</b><br>AfterNow</td>
+<td style="border:0" width="60"><img alt="Rafai Eddy, AfterNow" width="60" height="60" src="images/kurohyo1-60px.png"></td>
+<td style="border:0"><b>Rafai Eddy</b><br>AfterNow</td>
 </tr>
 </table>
+

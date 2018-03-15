@@ -87,13 +87,12 @@ Turn to your right once more until you see a new configuration of dots. In this 
 
 ## About the author
 
-<table style="border:0">
+<table style="border-collapse:collapse">
 <tr>
-<td style="border:0"> <img alt="Placeholder silhouette for Ben Strukus" width="200" height="150" src="images/silhouette.png" /></td><td style="border:0"> With a background in game and simulation development, <b>Ben Strukus</b> is lending his passion for problem solving to the world of AR. When he&#39;s not helping build the future, he likes meal prep, eating good food, and lifting weights.</td>
+<td style="border-style: none" width="60px"><img alt="Picture of Ben Strukus" width="60" height="60" src="images/genericusertile.jpg"></td>
+<td style="border-style: none"><b>Ben Strukus</b><br>Software Engineer @Microsoft</td>
 </tr>
 </table>
-
-
 
 ## See also
 * [Case studies](category/case-studies.md)

@@ -12,8 +12,6 @@ keywords: Windows Mixed Reality, design, controls, ui, ux
 
 # Progress
 
-*This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.*
-
 A progress control provides feedback to the user that a long-running operation is underway. It can mean that the user cannot interact with the app when the progress indicator is visible, and can also indicate how long the wait time might be, depending on the indicator used.
 
 ![Progress ring example in HoloLens](images/640px-progress-hero.jpg)

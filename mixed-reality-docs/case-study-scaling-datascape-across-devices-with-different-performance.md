@@ -300,15 +300,17 @@ Design for worst case scenarios, and maybe consider using adaptive rendering for
 
 ## About the authors
 
-![Picture of Robert Ferrese](images/robert-ferrese-60px.jpg)<br> 
-**[Robert Ferrese](mailto:roferres@microsoft.com)**<br>
-Software engineer - Microsoft<br>
-For this project, Robert focused on data acquisition and rendering. He had been a mixed reality developer for two years before this project. His background is in gameplay, user interactions, user experiences and virtual reality development.
+<table style="border:0">
+<tr>
+<td style="border:0" width="60px"><img alt="Picture of Robert Ferrese" width="60" height="60" src="images/robert-ferrese-60px.jpg"></td>
+<td style="border:0"><b>Robert Ferrese</b><br>Software engineer @Microsoft</td>
+</tr>
+<tr>
+<td style="border:0" width="60px"><img alt="Picture of Dan Andersson" width="60" height="60" src="images/dan-andersson-60px.jpg"></td>
+<td style="border:0"><b>Dan Andersson</b><br>Software engineer @Microsoft</td>
+</tr>
+</table>
 
-![Picture of Dan Andersson](images/dan-andersson-60px.jpg)<br>
-**[Dan Andersson](mailto:daander@microsoft.com)**<br>
-Software engineer - Microsoft<br>
-Dan spent 20 years in the games industry producing games from the original Battlefront to Halo 5, and is now helping shape the future of Mixed Reality at Microsoft. He enjoys his 4 kids, a casual game of soccer and has a black belt in Swedish snaps songs.
 
 ## See also
 * [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)

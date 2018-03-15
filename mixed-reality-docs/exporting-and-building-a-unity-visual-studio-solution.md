@@ -1,11 +1,11 @@
 ---
 title: Exporting and building a Unity Visual Studio solution
-description: 
+description: This article outlines exporting your mixed reality project from Unity so you can build and deploy in Visual Studio.
 author: 
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: unity, visual studio, export, build, deploy
 ---
 
 
@@ -16,7 +16,6 @@ If you don't intend on using the system keyboard in your application, our recomm
 
 ## How to export from Unity
 
-![Unity build settings](images/unitybuildsettings-300px.png)
 1.  When you are ready to export your project from Unity, open the **File** menu and select **Build Settings...**
 2.  Click **Add Open Scenes** to add your scene to the build
 3.  In the **Build Settings** dialog, choose the following options to export for HoloLens:
@@ -34,6 +33,9 @@ If you don't intend on using the system keyboard in your application, our recomm
 12. Select the newly created folder and click **Select Folder**.
 13. Once Unity has finished building, a Windows Explorer window will open to the project root directory. Navigate into the newly created folder.
 14. Open the generated Visual Studio solution file located inside this folder.
+
+![Unity build settings](images/unitybuildsettings-300px.png)<br>
+Unity build settings
 
 ## When to re-export from Unity
 

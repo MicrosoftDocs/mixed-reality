@@ -91,7 +91,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 * [Release notes - March 2016](release-notes-march-2016.md)
 
 ## See also
-* [Immersive headset support](immersive-headset-support.md)
+* [Immersive headset support (external link)](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens known issues](hololens-known-issues.md)
 * [Install the tools](install-the-tools.md)
 * [Give us feedback](give-us-feedback.md)

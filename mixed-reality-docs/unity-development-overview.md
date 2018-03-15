@@ -1,11 +1,11 @@
 ---
 title: Unity development overview
-description: The fastest path to building a mixed reality app is with Unity.
+description: Getting started building mixed reality apps in Unity.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: unity, mixed reality
+keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
 ---
 
 
