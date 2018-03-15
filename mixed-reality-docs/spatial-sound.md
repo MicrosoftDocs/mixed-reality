@@ -1,7 +1,7 @@
 ---
 title: Spatial sound
-description: 
-author: 
+description: Spatial sound
+author: hakons
 ms.author: hakons
 ms.date: 2/28/2018
 ms.topic: article
