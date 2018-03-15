@@ -1,11 +1,11 @@
 ---
 title: Performance recommendations for immersive headset apps
-description: 
-author: 
+description: Instructions for improving performance, and information related to performance 
+author: keluecke
 ms.author: keluecke
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Performance, Speed, Perf, Slow, Fast, Immersive, Unity, Render, Render Target, Viewport, Scale, Improve, Adaptive, GPU, CPU, analysis, quality, bucket, Tools, optimise, Analyzers, graphics, buckets, toolkit, framerate, fps, time, dynamic, information, info
 ---
 
 
