@@ -1,11 +1,11 @@
 ---
 title: Performance recommendations for HoloLens apps
-description: Performance recommendations for HoloLens apps
+description: This article covers tips to optimize performance for HoloLens apps.
 author: gschneid
 ms.author: gschneid
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: performance, optimization, target, HoloLens
 ---
 
 
