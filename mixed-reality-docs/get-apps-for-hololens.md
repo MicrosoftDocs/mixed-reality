@@ -30,6 +30,7 @@ There are three ways to install new apps on your HoloLens. The primary method wi
 3. Under **App Package** Browse to the .appx file associated with your application.
   >[!IMPORTANT]
   >Make sure to reference any associated dependency and certificate files.
+
 4. Click **Go**.
 
 ![Install app form in Windows Device Portal on Microsoft HoloLens](images/deviceportal-appmanager.jpg)<br>
