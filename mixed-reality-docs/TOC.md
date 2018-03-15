@@ -48,7 +48,6 @@
 ### [Coordinate systems in Unity](coordinate-systems-in-unity.md)
 ### [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 ### [Creating a holographic DirectX project](creating-a-holographic-directx-project.md)
-### [Current limitations for apps using APIs from the shell](current-limitations-for-apps-using-apis-from-the-shell.md)
 ### [Development overview](development-overview.md)
 ### [Device portal API reference](device-portal-api-reference.md)
 ### [DirectX development overview](directx-development-overview.md)
