@@ -1,11 +1,11 @@
 ---
 title: Install the tools
 description: 
-author: 
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
 ---
 
 
@@ -111,7 +111,7 @@ If your system meets the above requirements, **please ensure that the "Hyper-V" 
 
 If your immersive headset development PC does not have full-sized HDMI and/or USB 3.0 ports, you'll need [adapters](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs) to connect your headset.
 
-There are currently [known issues](immersive-headset-support.md) with some hardware configurations, particularly with notebooks that have hybrid graphics.
+There are currently [known issues](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) with some hardware configurations, particularly with notebooks that have hybrid graphics.
 
 <table>
 <tr>
