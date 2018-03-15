@@ -44,6 +44,7 @@
     },
     "fileMetadata": {},
     "template": [],
-    "dest": "mixed-reality"
+    "dest": "mixed-reality",
+    "markdownEngineName": "markdig"
   }
 }
