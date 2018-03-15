@@ -1,11 +1,11 @@
 ---
 title: Unity development overview
-description: 
-author: 
+description: The fastest path to building a mixed reality app is with Unity.
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: unity, mixed reality
 ---
 
 
@@ -45,27 +45,34 @@ Your app can now do basic holographic rendering and spatial input. To go further
 
 |  Capability  |  APIs requiring capability | 
 |----------|----------|
-|  SpatialPerception  |  SurfaceObserver (access to [spatial mapping](spatial-mapping.md) meshes on HoloLens)\
-*No capability needed for general spatial tracking of the headset* | 
+|  SpatialPerception  |  SurfaceObserver (access to [spatial mapping](spatial-mapping.md) meshes on HoloLens)&mdash;*No capability needed for general spatial tracking of the headset* | 
 |  WebCam  |  PhotoCapture and VideoCapture | 
 |  PicturesLibrary / VideosLibrary  |  PhotoCapture or VideoCapture, respectively (when storing the captured content) | 
 |  Microphone  |  VideoCapture (when capturing audio), DictationRecognizer, GrammarRecognizer, and KeywordRecognizer | 
 |  InternetClient  |  DictationRecognizer (and to use the Unity Profiler) | 
 
-![Unity quality settings](images/unityqualitysettings-150px.png) HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want the quality settings tuned for fastest performance to ensure we maintain full framerate:
+**Unity quality settings**
+
+![Unity quality settings](images/unityqualitysettings-150px.png)
+
+HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want the quality settings tuned for fastest performance to ensure we maintain full framerate:
 1. Select **Edit > Project Settings > Quality**
 2. Select the **dropdown** under the **Windows Store** logo and select **Fastest**. You'll know the setting is applied correctly when the box in the Windows Store column and **Fastest** row is green.
 
 ### Per-scene settings
 
-![Unity camera settings](images/unitycamerasettings-130px.png) Once you enable the "Virtual Reality Supported" checkbox, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](rendering.md). There is no need to replace it with a custom camera to do this.
+**Unity camera settings**
+
+![Unity camera settings](images/unitycamerasettings-130px.png) 
+
+Once you enable the "Virtual Reality Supported" checkbox, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](rendering.md). There is no need to replace it with a custom camera to do this.
 
 If your app is targeting HoloLens specifically, there are a few settings that need to be changed to optimize for the device's transparent displays, so your app will show through to the physical world:
 1. In the **Hierarchy**, select the **Main Camera**
-1. In the **Inspector** panel, set the transform **position** to **0, 0, 0** so the location of the users head starts at the Unity world origin.
-2. Change **Clear Flags** to **Solid Color**.
-3. Change the **Background** color to **RGBA 0,0,0,0**. Black renders as transparent in HoloLens.
-4. Change **Clipping Planes - Near** to the [HoloLens recommended](camera-in-unity.md#clip-planes) 0.85 (meters).
+2. In the **Inspector** panel, set the transform **position** to **0, 0, 0** so the location of the users head starts at the Unity world origin.
+3. Change **Clear Flags** to **Solid Color**.
+4. Change the **Background** color to **RGBA 0,0,0,0**. Black renders as transparent in HoloLens.
+5. Change **Clipping Planes - Near** to the [HoloLens recommended](camera-in-unity.md#clip-planes) 0.85 (meters).
 
 If you delete and create a new camera, make sure your camera is **Tagged** as **MainCamera**.
 
@@ -110,11 +117,11 @@ With that VS solution in hand, you can then run your app in one of three ways, u
 
 In addition to this documentation available on the Windows Dev Center, Unity installs documentation for Windows Mixed Reality functionality alongside the Unity Editor. The Unity provided documentation includes two separate sections:
 1. **Unity scripting reference**
-* This section of the documentation contains details of the scripting API that Unity provides.
-* Accessible from the Unity Editor through **Help > Scripting Reference**
+    * This section of the documentation contains details of the scripting API that Unity provides.
+    * Accessible from the Unity Editor through **Help > Scripting Reference**
 2. **Unity manual**
-* This manual is designed to help you learn how to use Unity, from basic to advanced techniques.
-* Accessible from the Unity Editor through **Help > Manual**
+    * This manual is designed to help you learn how to use Unity, from basic to advanced techniques.
+    * Accessible from the Unity Editor through **Help > Manual**
 
 ## See also
 * [Holograms 100](holograms-100.md)
