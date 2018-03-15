@@ -1,11 +1,11 @@
 ---
 title: Performance recommendations for HoloLens apps
-description: 
-author: 
+description: This article covers tips to optimize performance for HoloLens apps.
+author: gschneid
 ms.author: gschneid
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: performance, optimization, target, HoloLens
 ---
 
 
@@ -28,6 +28,7 @@ Both frame rate and power consumption can be observed in the HoloLens Device Man
 
 **Essential Performance Targets**
 
+
 |  Metric  |  Target | 
 |----------|----------|
 |  [Frame Rate](hologram-stability.md#frame-rate)  |  60 fps | 
@@ -48,16 +49,16 @@ This section provides broad recommendations for application, especially visual c
 
 **General**
 * Rendering pixels is often the bottleneck, so avoid drawing too many pixels or using shaders that are too expensive.
-* Limit overdraw. Aim for no more than 1x - 1.5x overdraw.
-* Limit memory bandwidth wherever possible by reducing overdraw, geometry and texture samples. Use mip-maps wherever possible.
-* Consider trading off resolution to allow for more complex visuals and geometry.
-* Avoid full screen effects such as FXAA and SSAO.
+  * Limit overdraw. Aim for no more than 1x - 1.5x overdraw.
+  * Limit memory bandwidth wherever possible by reducing overdraw, geometry and texture samples. Use mip-maps wherever possible.
+  * Consider trading off resolution to allow for more complex visuals and geometry.
+  * Avoid full screen effects such as FXAA and SSAO.
 * Batch draw calls and use instancing to minimize DirectX overhead.
 * Race to sleep on CPU/GPU by aligning tasks with the Present intervals.
 * Use 16bit depth buffers.
 * Turn off physics if your project doesn't use it.
 
-** Geometry **
+**Geometry**
 * Perform frustum culling against the combined left and right eye frustum.
 * Relax your culling frustum by about 5 degrees to account for some head movement.
 * Use last frame's head pose for the culling and grab a fresh [HolographicFrame](rendering-in-directx.md) as late as possible for actual rendering.
@@ -139,9 +140,9 @@ Each graph, SoC and System power, show current power consumption and power consu
 
 ![Power graphs for SoC and System on HoloLens](images/performance-soc-and-system-power-graphs.png)
 
-*Green zone:* Application power consumption is well within the device's capabilities. \
- *Orange zone:* Applications operating in the orange zone is acceptable even in elevated ambient temperature environments. \
- *Red zone:* Applications operating in the red zone might be acceptable, especially in cooler environments such as Offices or typical living environments. \
+*Green zone:* Application power consumption is well within the device's capabilities. 
+*Orange zone:* Applications operating in the orange zone is acceptable even in elevated ambient temperature environments.
+*Red zone:* Applications operating in the red zone might be acceptable, especially in cooler environments such as Offices or typical living environments.
 
 
 **Frame Rate**
