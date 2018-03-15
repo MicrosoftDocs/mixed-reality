@@ -34,7 +34,7 @@ Mixed reality apps are built with the [Universal Windows Platform](https://dev.w
 </tr><tr>
 <td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Perception and spatial features</th> <th><a href="hololens-hardware-details.md">HoloLens</a></th><th> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th> Perception and spatial features</th> <th><a href="hololens-hardware-details.md">HoloLens</a></th><th> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> <a href="coordinate-systems.md">World coordinates</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
