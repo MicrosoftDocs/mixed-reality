@@ -35,7 +35,7 @@ When you create a new project in Visual Studio, it creates a simple default tile
 
  First, at the top of the app manifest add the uap5 schema and include it as an ignorable namespace:
 
-```
+```xml
 <Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
          xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
          xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
@@ -46,7 +46,7 @@ When you create a new project in Visual Studio, it creates a simple default tile
 
 Next specify the "MixedRealityModel" in the default tile for your application:
 
-```
+```xml
 <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
