@@ -78,7 +78,8 @@ Note: If your application has any dependencies on device specific services, such
 Step 5 is no longer required. We are leaving it here so that the indexing of steps remains the same.
 
 ### Unity step 6: Get your Windows Mixed Reality hardware set up
-1. Review steps in [Immersive headset setup](immersive-headset-setup.md)
+1. Review steps in [Immersive headset setup](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/before-you-start
+)
 2. Learn about [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 
 ### Unity step 7: Target your application to run on Windows Mixed Reality
