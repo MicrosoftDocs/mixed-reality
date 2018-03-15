@@ -1,6 +1,6 @@
 ---
 title: Vuforia development overview
-description: Leverage Vuforioa to build windows mixed reality applications in Unity
+description: Leverage Vuforioa to build Windows Mixed Reality applications in Unity.
 author: ChimeraScorn
 ms.author: cwhite
 ms.date: 2/28/2018
@@ -43,11 +43,11 @@ Vuforia uses the ARCamera prefab as its scene camera in a Unity project. You’l
 **Follow these steps to bind the HoloLens scene camera to the Vuforia ARCamera:**
 1. Add an ARCamera and HoloLens scene camera to your scene Hierarchy
 2. Set up the scene for stereo rendering in the ARCamera’s digital eyewear behavior component.
-* Eyewear type = Optical See-Through
+    * Eyewear type = Optical See-Through
 3. Select HoloLens as the device configuration
-* See Through Config = HoloLens
+    * See Through Config = HoloLens
 4. Bind the HoloLens scene camera to the ARCamera
-* Drag the HoloLens Scene camera onto the Central Anchor Point field
+    * Drag the HoloLens Scene camera onto the Central Anchor Point field
 
 ![Unity editor window showing the HoloLensCamera selected](images/vuforia-bind-the-scene-camera.png)
 
@@ -57,15 +57,15 @@ Vuforia uses the ARCamera prefab as its scene camera in a Unity project. You’l
 3.  Add the sample scenes to *Scenes in Build.*
 4.  Set your platform build target for Windows Store in *File > Build Settings.*
 5.  Select the following platform build configuration settings
-* SDK = Universal10
-* UWP Build Type = D3D
+    * SDK = Universal10
+    * UWP Build Type = D3D
 6.  Define a unique *Product Name*, in *Player Settings*, to serve as the name of the app when installed on the HoloLens.
 7.  Select *Landscape Left* as the in *Player Settings > Resolution and Presentation*
 8.  Check *Virtual Reality Supported* + *Windows Holographic* in *Player Settings* > *Other Settings*
 9.  Check the following Capabilities in *Player Settings* > *Publish Settings*
-* InternetClient
-* WebCam
-* SpatialPerception - if you intend to use the Surface Observer API
+    * InternetClient
+    * WebCam
+    * SpatialPerception - if you intend to use the Surface Observer API
 10. Select Build to generate a Visual Studio project
 11. Build the executable from Visual Studio and install it on your HoloLens
 
