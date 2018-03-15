@@ -52,7 +52,7 @@ One key difference from other Windows 10 shells is how the app is informed of an
 
 ### Extended execution
 
-Sometimes your app needs to continue doing work in the background or playing audio. [Background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest) are available on HoloLens with some [limitations](current-limitations-for-apps-using-apis-from-the-shell.md).
+Sometimes your app needs to continue doing work in the background or playing audio. [Background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest) are available on HoloLens.
 
 ![Apps can run in the background](images/slide10-800px.png)
 
@@ -126,7 +126,7 @@ The Start menu uses the standard small tile and medium tile for pins and the **A
 
 ## App to app interactions
 
-As you build apps, you have access to the rich app to app communication mechanisms available on Windows 10. Even though HoloLens currently does not support the new [app service protocol launches](current-limitations-for-apps-using-apis-from-the-shell.md), many of the new Protocol APIs and file registrations work perfectly on HoloLens to enable app launching and communication. 
+As you build apps, you have access to the rich app to app communication mechanisms available on Windows 10. Many of the new Protocol APIs and file registrations work perfectly on HoloLens to enable app launching and communication. 
 
 Note that for desktop headsets, the app associated with a given file extension or protocol may be a Win32 app that can only appear on the desktop monitor or in the desktop slate.
 
@@ -157,7 +157,7 @@ By default, the following extensions are supported locally:
 
 ### App contracts and Windows Mixed Reality extensions
 
-App contracts and extension points allow you to register your app to take advantage of deeper operating system features like handling a file extension or using background tasks. This is a list of the supported and unsupported contracts and extension points on HoloLens. This is different than [APIs that are supported](current-limitations-for-apps-using-apis-from-the-shell.md).
+App contracts and extension points allow you to register your app to take advantage of deeper operating system features like handling a file extension or using background tasks. This is a list of the supported and unsupported contracts and extension points on HoloLens.
 
 |  Contract or Extension  |  Supported? | 
 |----------|----------|
