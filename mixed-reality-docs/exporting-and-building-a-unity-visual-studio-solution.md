@@ -19,9 +19,9 @@ If you don't intend on using the system keyboard in your application, our recomm
 1.  When you are ready to export your project from Unity, open the **File** menu and select **Build Settings...**
 2.  Click **Add Open Scenes** to add your scene to the build
 3.  In the **Build Settings** dialog, choose the following options to export for HoloLens:
-* **Platform:** *Windows Store* and be sure to select **Switch Platform** for your selection to take effect
-* **SDK:** *Universal 10*
-* **UWP Build Type:** *D3D* or *XAML*
+  * **Platform:** *Windows Store* and be sure to select **Switch Platform** for your selection to take effect
+  * **SDK:** *Universal 10*
+  * **UWP Build Type:** *D3D* or *XAML*
 4.  **Optional**: **Unity C# Projects:** Checked. NOTE: Checking this box allows you to 1.) debug your app in the Visual Studio remote debugger, and 2.) edit scripts in the Unity C# project while using IntelliSense for WinRT APIs.
 5.  From the **Build Settings...** window, open **Player Settings...**
 6.  Select the **Settings for Windows Store** tab
