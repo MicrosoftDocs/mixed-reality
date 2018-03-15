@@ -65,13 +65,13 @@ With **immersive headsets**, you can similarly get up and walk around in your pl
 
 **To teleport:**
 1. Bring up the teleportation reticle.
-* Using [motion controllers](motion-controllers.md): press the thumbstick forward and hold it in that position.
-* Using an Xbox controller: press the left thumbstick forward and hold it in that position.
-* Using a mouse: hold down the right-click mouse button (and use the scroll wheel to rotate the direction you want to face when you teleport).
+   * Using [motion controllers](motion-controllers.md): press the thumbstick forward and hold it in that position.
+   * Using an Xbox controller: press the left thumbstick forward and hold it in that position.
+   * Using a mouse: hold down the right-click mouse button (and use the scroll wheel to rotate the direction you want to face when you teleport).
 2. Place the reticle where you want to teleport.
-* Using [motion controllers](motion-controllers.md): tilt the controller (on which you're holding the thumbstick forward) to move the reticle.
-* Using an Xbox controller: use your [gaze](gaze.md) to move the reticle.
-* Using a mouse: move your mouse to move the reticle.
+   * Using [motion controllers](motion-controllers.md): tilt the controller (on which you're holding the thumbstick forward) to move the reticle.
+   * Using an Xbox controller: use your [gaze](gaze.md) to move the reticle.
+   * Using a mouse: move your mouse to move the reticle.
 3. Release the button to teleport where the reticle was placed.
 
 **To virtually "walk:"**
@@ -90,9 +90,9 @@ Navigation commands coming soon.
 
 ### Gamepad
 * **Left thumbstick:**
-* Press and hold the left thumbstick forward to bring up the [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) reticle.
-* Tap the thumbstick left, right, or back to move left, right, or back in small increments.
-* Click down on the left thumbstick and hold, then move the thumbstick in the direction you want to [virtually "walk."](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
+  * Press and hold the left thumbstick forward to bring up the [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) reticle.
+  * Tap the thumbstick left, right, or back to move left, right, or back in small increments.
+  * Click down on the left thumbstick and hold, then move the thumbstick in the direction you want to [virtually "walk."](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * Tap the **right thumbstick** left or right to rotate the direction you're facing by 45 degrees.
 * Pressing the **A** button performs a select and acts like the [air tap](gestures.md#air-tap) gesture.
 * Pressing the **Guide** button brings up the [Start menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](gestures.md#bloom) gesture.
