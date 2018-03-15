@@ -90,6 +90,8 @@ A store experience from Lowe's invites customers into a full-scale mockup of a k
 
 Physical surfaces act as static landmarks for the user to ground themselves in the experience, as a Lowe's associate guides the user through different product options and finishes. In this way, the associate can verbally direct the user's attention to the 'refrigerator' or 'center of the kitchen' to showcase digital content.
 
+**A Lowe's associate uses a tablet to guide customers through the HoloLens experience.**
+
 ![A Lowe's associate uses a tablet to guide customers through the HoloLens experience.](images/loweskitchen-750px.jpg)
 
 The user's experience is managed, in part, by a tablet experience controlled by the Lowe's associate. Part of the associate's role in this case would also be to limit excessive head movement, directing their attention smoothly across the points of interest in the kitchen. The tablet experience also provides the Lowe's associate with gaze data in the form of a heatmap view of the kitchen, helping understand where the user is dwelling (for example, on a specific area of cabinetry) to more accurately provide them with remodeling guidance.
@@ -99,6 +101,8 @@ For a deeper look at the Lowe's Kitchen experience, see [Microsoft's keynote at 
 ### Fragments
 
 In the HoloLens game Fragments, you living room is transformed into virtual crime scene showing clues and evidence, as well as a virtual meeting room, where you talk with characters that sit on your chairs and lean on your walls.
+
+**Fragments was designed to take place in a user's home, with characters interacting with real-world objects and surfaces.**
 
 ![Fragments was designed to take place in a user's home, with characters interacting with real-world objects and surfaces.](images/fragments-750px.jpg)
 
@@ -110,9 +114,13 @@ Throughout the experience, characters become focal points and act as visual dire
 
 In the Destination: Mars experience featured at [NASA's Kennedy Space Center](https://blogs.windows.com/devices/2016/09/19/hololens-experience-destination-mars-now-open-at-kennedy-space-center-visitor-complex/), visitors were invited into an immersive trip to the surface of Mars, guided by virtual representation of legendary astronaut Buzz Aldrin.
 
+**A virtual Buzz Aldrin becomes the focal point for users in Destination: Mars.**
+
 ![A virtual Buzz Aldrin becomes the focal point for users in Destination: Mars.](images/destinationmars-750px.png)
 
 As an immersive experience, these users were encouraged to look around, moving their head in all directions to see the virtual Martian landscape. Although to ensure the comfort of the users, Buzz Aldrin's narration and virtual presence provided a focal point throughout the experience. This virtual recording of Buzz (created by [Microsoft's Mixed Reality Capture Studios](https://www.microsoft.com/en-us/mixed-reality/capture-studios)) stood at real, human size, in the corner of the room allowing users to see him in near-complete view. Buzz's narration directed users to focus on different points in the environment (for example, a set of Martian rocks on the floor or a mountain range in the distance) with specific scene changes or objects introduced by him.
+
+**The virtual narrators will turn to follow a user's movement, creating a powerful focal point throughout the experience.**
 
 ![The virtual narrators will turn to follow a user's movement, creating a powerful focal point throughout the experience.](images/gazereset-750px.png)
 
