@@ -65,7 +65,9 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 <div class="section item-section">
  <img alt="Logo only" width="479" src="images/20171016-140436-mixedreality-640px.jpg" /><br />Logo only
 </div>
-</div><div class="col-xs-24 col-md-12 col-lg-12">
+</div>
+<br/>
+<div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
  <img alt="More recognizable with a character" width="479" src="images/20171016-140557-mixedreality-640px.jpg" /><br />More recognizable with a character
 </div>
@@ -85,7 +87,9 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 <div class="section item-section">
  <img alt="Flat approach, not surprisingly, feels flat" width="479" src="images/20171016-155101-mixedreality-640px.jpg" /><br />Flat approach, not surprisingly, feels flat
 </div>
-</div><div class="col-xs-24 col-md-12 col-lg-12">
+</div>
+<br/>
+<div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
  <img alt="Volumetric approach better showcases your app" width="479" src="images/20171016-161407-mixedreality-640px.jpg" /><br />Volumetric approach better showcases your app
 </div>
@@ -215,9 +219,9 @@ We recommend using [Substance Painter](https://www.allegorithmic.com/products/su
 * Our shader is expecting a Metal/Roughness work flow – The Unreal PBR shader is a close facsimile.
 * When exporting your textures keep the [recommended texture sizes](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#texture-resolutions-and-workflow) in mind.
 * Make sure to build your objects for real-time lighting — this means:
-* Avoid baked shadows – or painted shadows
-* Avoid baked lighting in the textures
-* Use one of the PBR material authoring packages to get the right maps generated for our shader
+    * Avoid baked shadows – or painted shadows
+    * Avoid baked lighting in the textures
+    * Use one of the PBR material authoring packages to get the right maps generated for our shader
 
 ## See also
 * [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
