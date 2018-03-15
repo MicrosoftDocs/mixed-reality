@@ -1,11 +1,11 @@
 ---
 title: Updating your existing universal app for HoloLens
-description: 
-author: 
+description: How to make your existing 2D UWP app work best on HoloLens
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: UWP, 2D app, flat app, app model, back button, app bar, dpi
 ---
 
 
