@@ -41,8 +41,8 @@ Using Windows Device Portal to install an app on HoloLens
 2. Open the project's **Properties** .
 3. Select the following build configuration: Master/x86/Remote Machine.
 4. When you select Remote Machine:
-  * Make sure the address points to the HoloLens' WiFi IP address.
-  * Set authentication to Universal (Unencrypted Protocol).
+   * Make sure the address points to the HoloLens' WiFi IP address.
+   * Set authentication to Universal (Unencrypted Protocol).
 5. Build your solution.
 6. Click the **Remote Machine** button to deploy the app from your development PC to your HoloLens. If you already have an existing build on the HoloLens, select yes to re-install this newer version.<br>
   ![Remote Machine deployment for apps to Microsoft HoloLens in Visual Studio](images/vs2015-remotedeployment.jpg)<br>
