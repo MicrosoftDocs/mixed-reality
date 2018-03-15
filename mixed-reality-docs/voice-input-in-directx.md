@@ -5,7 +5,7 @@ author: MikeRiches
 ms.author: mriches
 ms.date: 2/28/2018
 ms.topic: article
-keywords:walkthrough, voice command, phrase, recognition, speech, directx, platform, cortana, windows mixed reality
+keywords: walkthrough, voice command, phrase, recognition, speech, directx, platform, cortana, windows mixed reality
 ---
 
 

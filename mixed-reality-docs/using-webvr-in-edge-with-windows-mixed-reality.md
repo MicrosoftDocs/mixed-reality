@@ -5,7 +5,7 @@ author: YashMaster
 ms.author: yabahman
 ms.date: 2/28/2018
 ms.topic: article
-keywords: WebVR, WebXR, WinMR, web vr, web xr, web mr, 360, 360 video, 360 videos, 360 photo, 360 photos, immersive web, immersiveweb
+keywords: WebVR, WebXR, WinMR, WebAR, web vr, web xr, web mr, web ar, 360, 360 video, 360 videos, 360 photo, 360 photos, 360 content, immersive web, immersiveweb, IW
 ---
 
 
@@ -14,9 +14,9 @@ keywords: WebVR, WebXR, WinMR, web vr, web xr, web mr, 360, 360 video, 360 video
 
 ## Creating WebVR content for Windows Mixed reality immersive headsets
 
-WebVR 1.1 is available in Microsoft Edge beginning with the Windows 10 Creators Update as a developer unlock feature. Developers can now use this API to create immersive VR experiences on the web.
+WebVR 1.1 is available in Microsoft Edge beginning with the Windows 10 Fall Creators Update. Developers can now use this API to create immersive VR experiences on the web.
 
-The WebVR API provides HMD pose data to the page which can be used to render a stereo WebGL scene back to the HMD. Details on API support is available on the [Microsoft Edge Platform Status page](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webvr/). The WebVR API surface area is present at all times within Microsoft Edge. However, a call to getVRDisplays() will only return a headset if the operating system has been placed in Developer Mode, and either a headset is plugged in or the simulator has been turned on.
+The WebVR API provides HMD pose data to the page which can be used to render a stereo WebGL scene back to the HMD. Details on API support is available on the [Microsoft Edge Platform Status page](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/webvr/). The WebVR API surface area is present at all times within Microsoft Edge. However, a call to getVRDisplays() will only return a headset if either a headset is plugged in or the simulator has been turned on.
 
 ## Viewing WebVR content in Windows Mixed Reality immersive headsets
 

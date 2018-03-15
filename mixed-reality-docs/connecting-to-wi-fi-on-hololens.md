@@ -1,11 +1,11 @@
 ---
 title: Connecting to Wi-Fi on HoloLens
-description: 
-author: 
+description: Instructions on how to connect to wireless internet with HoloLens and how to identify the device's IP address.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, wifi, wireless, internet, ip, ip address
 ---
 
 

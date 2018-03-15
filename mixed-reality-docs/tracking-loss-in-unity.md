@@ -1,11 +1,11 @@
 ---
 title: Tracking loss in Unity
-description: When the device cannot locate itself in the world, the app experiences "tracking loss".
+description: Handling tracking loss within a Unity app.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: tracking loss, unity
+keywords: Unity, tracking loss, tracking loss image
 ---
 
 

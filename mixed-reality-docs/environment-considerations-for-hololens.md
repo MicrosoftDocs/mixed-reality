@@ -1,11 +1,11 @@
 ---
 title: Environment considerations for HoloLens
-description: 
-author: 
+description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: holographic frame, field of view, fov, calibration, spaces, environment, how-to
 ---
 
 
@@ -14,11 +14,9 @@ keywords:
 
 HoloLens blends the holographic with the "real" world, placing holograms in your surroundings. A holographic app window "hangs" on the wall, a holographic ballerina spins on the tabletop, bunny ears sit on top of your unwitting friend’s head. When you’re using an immersive game or app, the holographic world will spread to fill your surroundings—but you’ll still be able to see and move around the space.
 
-The holograms you place will stay where you’ve put them, even if you turn off your device. Here are some things to keep in mind for the best experience with the holographic world. Note, HoloLens is designed to be used indoors in a safe space with no tripping hazards. Don’t use it while driving or performing other activities that require your full attention.
+The holograms you place will stay where you’ve put them, even if you turn off your device. 
 
-**Get the best view**
-
-Holograms can be placed throughout your environment—high, low, and all around you—but you’ll see them through a view frame that extends for a few feet on either side of you. To get the best view, make sure to adjust your device so you can see the entire frame. And don’t hesitate to walk around your environment and explore!
+Here are some things to keep in mind for the best experience with the holographic world. Note, HoloLens is designed to be used indoors in a safe space with no tripping hazards. Don’t use it while driving or performing other activities that require your full attention.
 
 ## Spaces
 
@@ -50,11 +48,13 @@ You can see and manage your spaces by going to Settings > System > Spaces. There
 
 ## Hologram quality
 
+Holograms can be placed throughout your environment—high, low, and all around you—but you’ll see them through a [holographic frame](holographic-frame.md) that sits in front of your eyes. To get the best view, make sure to adjust your device so you can see the entire frame. And don’t hesitate to walk around your environment and explore!
+
 For your [holograms](hologram.md) to look crisp, clear, and stable, your HoloLens needs to be calibrated just for you. When you first set up your HoloLens, you’ll be guided through this process. Later on, if holograms don’t look right or you’re seeing a lot of errors, you can make adjustments.
 
 ### Calibration
 
-If your holograms look jittery or shaky, or if you’re having trouble placing holograms, the first thing to try is the Calibration app. This app can also help if you’re experiencing any discomfort while using your HoloLens.
+If your holograms look jittery or shaky, or if you’re having trouble placing holograms, the first thing to try is the [Calibration app](calibration.md). This app can also help if you’re experiencing any discomfort while using your HoloLens.
 
 To get to the Calibration app, go to Settings > System > Utilities. Select Open Calibration and follow the instructions.
 
@@ -65,3 +65,4 @@ If someone else is going to be using your HoloLens, they should run the Calibrat
 ## See also
 * [Spatial mapping design](spatial-mapping-design.md)
 * [Holograms](hologram.md)
+* [Calibration](calibration.md)

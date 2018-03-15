@@ -1,11 +1,11 @@
 ---
 title: App quality criteria
-description: 
-author: 
+description: This document describes the top factors impacting the quality of mixed reality apps.
+author: cjdgit
 ms.author: crderr
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: app quality criteria, mixed reality, mixed reality app
 ---
 
 
@@ -38,9 +38,10 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 **Quality criteria**
 
-|  Best  |  The app consistently meets frames per second (FPS) goal for target device: 60fps on HoloLens; 90fps on Ultra PCs; and 60fps on mainstream PCs. | 
-|  Meets |  The app has intermittent frame drops not impeding the core experience; or FPS is consistently lower than desired goal but doesn’t impede the app experience. | 
-|  Fail  |  The app is experiencing a drop in frame rate on average every ten seconds or less. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+| The app consistently meets frames per second (FPS) goal for target device: 60fps on HoloLens; 90fps on Ultra PCs; and 60fps on mainstream PCs. | The app has intermittent frame drops not impeding the core experience; or FPS is consistently lower than desired goal but doesn’t impede the app experience. | The app is experiencing a drop in frame rate on average every ten seconds or less. | 
+
 
 **How to measure**
 * A real-time frame rate graph is provided through by the [Windows Device Portal](using-the-windows-device-portal.md#system-performance) under "System Performance".
@@ -88,9 +89,9 @@ Stable holograms will increase the usability and believability of your app, and 
 
 **Quality criteria**
 
-|  Best  |  Holograms consistently appear stable. | 
-|  Meets |  Secondary content exhibits unexpected movement; or unexpected movement does not impede overall app experience. | 
-|  Fail  |  Primary content in frame exhibits unexpected movement. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  Holograms consistently appear stable. | Secondary content exhibits unexpected movement; or unexpected movement does not impede overall app experience. | Primary content in frame exhibits unexpected movement. | 
 
 **How to measure**
 
@@ -137,9 +138,9 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 
 **Quality criteria**
 
-|  Best  |  Holograms align to the surface typically in the centimeters to inches range. If more accuracy is required, the app should provide an efficient means for collaboration within the desired app spec. | 
-|  Meets |  NA | 
-|  Fail  |  The holograms appear unaligned with the physical target object by either breaking the surface plane or appearing to float away from the surface. If accuracy is required, Holograms should meet the proximity spec of the scenario. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+| Holograms align to the surface typically in the centimeters to inches range. If more accuracy is required, the app should provide an efficient means for collaboration within the desired app spec. | NA | The holograms appear unaligned with the physical target object by either breaking the surface plane or appearing to float away from the surface. If accuracy is required, Holograms should meet the proximity spec of the scenario. | 
 
 **How to measure**
 * Holograms that are placed on spatial map should not appear to dramatically float above or below the surface.
@@ -236,9 +237,9 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
 
 **Quality criteria**
 
-|  Best  |  Limited or natural depth switching that doesn’t cause the user to unnaturally refocus. | 
-|  Meets |  Abrupt depth switch this is core and designed into the app experience, or abrupt depth switch that is caused by unexpected real-world content. | 
-|  Fail  |  Consistent depth switch, or abrupt depth switching that isn’t necessary or core to the app experience. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  Limited or natural depth switching that doesn’t cause the user to unnaturally refocus. | Abrupt depth switch this is core and designed into the app experience, or abrupt depth switch that is caused by unexpected real-world content. | Consistent depth switch, or abrupt depth switching that isn’t necessary or core to the app experience. | 
 
 **How to measure**
 * If the app requires the user to consistently and/or abruptly change depth focus, there is depth switching problem.
@@ -268,9 +269,9 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
 
 **Quality criteria**
 
-|  Best  |  Sound is logically spatialized, and the UX appropriately uses sound to assist with object discovery and user feedback. Sound is natural and relevant to objects and normalized across the scenario. | 
-|  Meets |  Spatial audio is used appropriately for believability but missing as means to help with user feedback and discoverability. | 
-|  Fail  |  Sound is not spatialized as expected, and/or lack of sound to assist user within the UX. Or spatial audio was not considered or used in the design of the scenario. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  Sound is logically spatialized, and the UX appropriately uses sound to assist with object discovery and user feedback. Sound is natural and relevant to objects and normalized across the scenario. | Spatial audio is used appropriately for believability but missing as means to help with user feedback and discoverability. | Sound is not spatialized as expected, and/or lack of sound to assist user within the UX. Or spatial audio was not considered or used in the design of the scenario. | 
 
 **How to measure**
 * In general, relevant sounds should emit from target holograms (eg., bark sound coming from holographic dog.)
@@ -315,9 +316,9 @@ Well-designed user experiences can create and maintain useful context of the vir
 
 **Quality criteria**
 
-|  Best  |  User never loses context and viewing is comfortable. Context assistance is provided for large objects. Discoverability and viewing guidance is provided for objects outside the frame. In general, motion design and scale of the holograms are appropriate for a comfortable viewing experience. | 
-|  Meets |  User never loses context, but extra neck motion may be required in limited situations. In limited situations scale causes holograms to break either the vertical or horizontal frame causing some neck motion to view holograms. | 
-|  Fail  |  User likely to lose context and/or consistent neck motion is required to view holograms. No context guidance for large holographic objects, moving objects easy to lose outside the frame with no discoverability guidance, or tall holograms requires regular neck motion to view. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  User never loses context and viewing is comfortable. Context assistance is provided for large objects. Discoverability and viewing guidance is provided for objects outside the frame. In general, motion design and scale of the holograms are appropriate for a comfortable viewing experience. | User never loses context, but extra neck motion may be required in limited situations. In limited situations scale causes holograms to break either the vertical or horizontal frame causing some neck motion to view holograms. | User likely to lose context and/or consistent neck motion is required to view holograms. No context guidance for large holographic objects, moving objects easy to lose outside the frame with no discoverability guidance, or tall holograms requires regular neck motion to view. | 
 
 **How to measure**
 * Context for a (large) hologram is lost or not understood due to being clipped at the boundaries.
@@ -412,9 +413,9 @@ Input interaction clarity is critical to an app's usability and includes input c
 
 **Quality criteria**
 
-|  Best  |  Input interaction methods are consistent with Windows Mixed Reality provided [guidance](interaction-fundamentals.md). Any custom input should not be redundant with standard input (rather use standard interaction) and must be clearly communicated and demonstrated to the user. | 
-|  Meets |  Similar to best, but custom inputs are redundant with standard input methods. User can still achieve the goal and progress through the app experience. | 
-|  Fail  |  Difficult to understand input method or button mapping. Input is heavily customized, does not support standard input, no instructions, or likely to cause fatigue and comfort issues. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  Input interaction methods are consistent with Windows Mixed Reality provided [guidance](interaction-fundamentals.md). Any custom input should not be redundant with standard input (rather use standard interaction) and must be clearly communicated and demonstrated to the user. | Similar to best, but custom inputs are redundant with standard input methods. User can still achieve the goal and progress through the app experience. | Difficult to understand input method or button mapping. Input is heavily customized, does not support standard input, no instructions, or likely to cause fatigue and comfort issues. | 
 
 **How to measure**
 * The app uses consistent [standard input methods.](interaction-fundamentals.md)
@@ -479,9 +480,9 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 
 **Quality criteria**
 
-|  Best  |  Regardless of form, interactable objects are recognizable through visual and audio cues across three states: idle, targeted, and selected. "See it, say it" is clear and consistently used throughout the experience. Objects are scaled and distributed to allow for error free targeting. | 
-|  Meets |  User can recognize object as interactable through audio or visual feedback, and can target and activate the object. | 
-|  Fail  |  Given no visual or audio cues, user cannot recognize an interactable object. Interactions are error prone due to object scale or distance between objects. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  Regardless of form, interactable objects are recognizable through visual and audio cues across three states: idle, targeted, and selected. "See it, say it" is clear and consistently used throughout the experience. Objects are scaled and distributed to allow for error free targeting. | User can recognize object as interactable through audio or visual feedback, and can target and activate the object. | Given no visual or audio cues, user cannot recognize an interactable object. Interactions are error prone due to object scale or distance between objects. | 
 
 **How to measure**
 * Interactable objects are recognizable as 'interactable'; including buttons, menus, and app specific content. As a rule of thumb there should be a visual and audio cue when targeting interactable objects.
@@ -522,9 +523,9 @@ Apps that require spatial mapping data rely on the device to automatically colle
 
 **Quality criteria**
 
-|  Best  |  Visualization of the spatial mesh tell users scanning is in progress. User clearly knows what to do and when the scan starts and stops. | 
-|  Meets |  Visualization of the spatial mesh is provided, but the user may not clearly know what to do and no progress information is provided. | 
-|  Fail  |  No visualization of mesh. No guidance information provided to the user regarding where to look, or when the scan starts/stops. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  Visualization of the spatial mesh tell users scanning is in progress. User clearly knows what to do and when the scan starts and stops. | Visualization of the spatial mesh is provided, but the user may not clearly know what to do and no progress information is provided. | No visualization of mesh. No guidance information provided to the user regarding where to look, or when the scan starts/stops. | 
 
 **How to measure**
 * During a required room scan, visual and audio guidance is provided indicating where to look, and when to start and stop scanning.
@@ -565,9 +566,9 @@ In a mixed reality app, content may be outside the field of view or occluded by 
 
 **Quality criteria**
 
-|  Best  |  Visual and audio cues directly guide the user to relevant content outside the field of view. | 
-|  Meets |  An arrow or some indicator that points the user in the general direction of the content. | 
-|  Fail  |  Relevant content is outside of the field of view, and poor or no location guidance is provided to the user. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  Visual and audio cues directly guide the user to relevant content outside the field of view. | An arrow or some indicator that points the user in the general direction of the content. | Relevant content is outside of the field of view, and poor or no location guidance is provided to the user. | 
 
 **How to measure**
 * Relevant content outside of the user field of view is discoverable through visual and/or audio cues.
@@ -597,9 +598,9 @@ A progress control provides feedback to the user that a long-running operation i
 
 **Quality criteria**
 
-|  Best  |  Animated visual indicator, in the form of a progress bar or ring, showing progress during any data loading or processing. The visual indicator provides guidance on how long the wait could be. | 
-|  Meets |  User is informed that data loading is in progress, but there is no indication of how long the wait could be. | 
-|  Fail  |  No data loading or process indicators for task taking longer than 5 seconds. | 
+|  Best  |  Meets |  Fail |
+--- | --- | ---
+|  Animated visual indicator, in the form of a progress bar or ring, showing progress during any data loading or processing. The visual indicator provides guidance on how long the wait could be. | User is informed that data loading is in progress, but there is no indication of how long the wait could be. | No data loading or process indicators for task taking longer than 5 seconds. | 
 
 **How to measure**
 * During data loading verify there is no blank state for more than 5 seconds.

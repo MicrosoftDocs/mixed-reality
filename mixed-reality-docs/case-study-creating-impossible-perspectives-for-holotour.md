@@ -1,7 +1,7 @@
 ---
 title: Case study - Creating impossible perspectives for HoloTour
 description: We wanted your experiences in HoloTour for Microsoft HoloLens to be unforgettable. In addition to the traditional tourist stops, we planned out some "impossible perspectives".
-author: davidhaley
+author: DannyAskew
 ms.author: daaske, jsylte
 ms.date: 2/28/2018
 ms.topic: article
@@ -88,14 +88,17 @@ In post-production, the gladiators were composited onto the arena floor and the 
 
 <table style="border:0">
 <tr>
-<td style="border:0; width:230px"> <img alt="David Haley" width="227" height="226" src="images/haley.png" /></td><td style="border:0; width:300px"> <b>David Haley</b> is a Senior Developer who learned more about camera rigs and video playback than he thought possible from working on HoloTour.</td>
-</tr><tr>
-<td style="border:0; width:230px"> <img alt="Jason Syltebo" width="227" height="224" src="images/syltebo.png" /></td><td style="border:0; width:300px"> <b>Jason Syltebo</b> is an Audio Designer who made sure you could experience the soundscape of every destination you visit, even when you go back in time.</td>
-</tr><tr>
-<td style="border:0; width:230px"> <img alt="Danny Askew" width="227" height="226" src="images/askew.png" /></td><td style="border:0; width:300px"> <b>Danny Askew</b> is a Video Artist who made sure your journey through Rome was as flawless as possible.</td>
+<td style="border:0" width="60px"> <img alt="David Haley" width="60" height="60" src="images/haley.png" /></td>
+<td style="border:0" width="408"> <b>David Haley</b> is a Senior Developer who learned more about camera rigs and video playback than he thought possible from working on HoloTour.</td>
+
+<td style="border:0" width="60px"> <img alt="Jason Syltebo" width="60" height="60" src="images/syltebo.png" /></td>
+<td style="border:0" width="408"> <b>Jason Syltebo</b> is an Audio Designer who made sure you could experience the soundscape of every destination you visit, even when you go back in time.</td>
+</tr>
+<tr>
+<td style="border:0" width="60px"> <img alt="Danny Askew" width="60" height="60" src="images/askew.png" /></td>
+<td style="border:0" width="408"> <b>Danny Askew</b> is a Video Artist who made sure your journey through Rome was as flawless as possible.</td>
 </tr>
 </table>
-
 
 
 ## See also

@@ -1,7 +1,7 @@
 ---
 title: Case study - Spatial sound design for HoloTour
 description: To create a truly immersive 3D virtual tour for Microsoft HoloLens, the panoramic videos and holographic scenery are only part of the formula.
-author: mattzmsft
+author:  JSyltebo
 ms.author: jsylte
 ms.date: 2/28/2018
 ms.topic: article
@@ -63,13 +63,12 @@ When you're putting together audio for a scene, there are some additional method
 
 ## About the author
 
-<table style="border:0">
+<table style="border-collapse:collapse">
 <tr>
-<td style="border:0"> <img alt="Jason Syltebo" width="227" height="224" src="images/syltebo.png" /></td><td style="border:0"> <b>Jason Syltebo</b> is an Audio Designer who made sure you could experience the soundscape of every destination you visit, even when you go back in time.</td>
+<td style="border-style: none" width="60px"><img alt="Picture of Jason Syltebo" width="60" height="60" src="images/syltebo.png"></td>
+<td style="border-style: none"><b>Jason Syltebo</b><br>Audio Designer @Microsoft</td>
 </tr>
 </table>
-
-
 
 ## See also
 * [Spatial sound](spatial-sound.md)

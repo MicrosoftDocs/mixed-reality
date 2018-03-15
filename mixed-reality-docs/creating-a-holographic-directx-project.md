@@ -48,7 +48,7 @@ Note that if your holographic C# project did not start from the Windows Holograp
 Your holographic app starts in the **main** function in AppView.cpp. The **main** function creates the app's [IFrameworkView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) and starts the [CoreApplication](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.coreapplication.aspx) with it.
 
 
-
+From **AppView.cpp**
 
 ```
 // The main function is only used to initialize our IFrameworkView class.

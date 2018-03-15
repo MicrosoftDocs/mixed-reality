@@ -1,11 +1,11 @@
 ---
 title: Voice input in Unity
-description: 
-author: 
+description: Unity exposes three ways to add Voice input to your Windows Mixed Reality application.
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Voice input, KeywordRecognizer, GrammarRecognizer, microphone, dictation, voice
 ---
 
 

@@ -62,13 +62,12 @@ Users need to be able to easily access UI controls even if they've been blocked,
 
 ## About the author
 
-<table style="border:0;width:800px">
+<table style="border-collapse:collapse">
 <tr>
-<td style="border:0"> <img alt="Marcus Ghaly, Sr. Holographic Designer" width="200" height="200" src="images/marcus-ghaly-200px.jpg" /></td><td style="border:0"> <b>Marcus Ghaly</b> is a Sr. Holographic Designer working on everything from holographic UI, to 3D user input, 2D design, and volumetric interactions. He received his Bachelor of Arts from the University of Washington and spent nearly a decade in the games industry working as a character artist, technical artist, and environment co-lead. He received his Master’s degree in design while in Sweden and has been a holographic designer and researcher ever since.</td>
+<td style="border-style: none" width="60"><img alt="Picture of Marcus Ghaly" width="60" height="60" src="images/marcus-ghaly-200px.jpg"></td>
+<td style="border-style: none"><b>Marcus Ghaly</b><br>Sr. Holographic Designer @Microsoft</td>
 </tr>
 </table>
-
-
 
 ## See also
 * [Interaction fundamentals](interaction-fundamentals.md)

@@ -12,8 +12,6 @@ keywords: Windows Mixed Reality, App bar, bounding box
 
 # App bar and bounding box
 
-*This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.*
-
 The App bar is a object-level menu containing a series of buttons that displays on the bottom edge of a hologram's bounds. This pattern is commonly used to give users the ability to remove and adjust holograms.
 
 ![Bounding boxes are a necessary control for object manipulation in Mixed Reality.](images/640px-boundingbox-hero.jpg)

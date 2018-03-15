@@ -1,11 +1,11 @@
 ---
 title: Performance recommendations for immersive headset apps
-description: 
-author: 
+description: Instructions for improving performance, and information related to performance 
+author: keluecke
 ms.author: keluecke
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: Performance, Speed, Perf, Slow, Fast, Immersive, Unity, Render, Render Target, Viewport, Scale, Improve, Adaptive, GPU, CPU, analysis, quality, bucket, Tools, optimise, Analyzers, graphics, buckets, toolkit, framerate, fps, time, dynamic, information, info
 ---
 
 
@@ -64,34 +64,32 @@ To figure this out, you may try decreasing the viewport scaling factor. If that 
 
 There are quite a few things you can do on a GPU bound game. The first step is to start identifying issues with a profiler. Either the [Unity frame debugger](performance-recommendations-for-immersive-headset-apps.md#unity-frame-debugger) or Intel GPA (especially if you have an intel GPU to test on) will work well for this. Some easy things to look for here are:
 1. **Reduce the number of full screen passes**.
-* **Use [single pass instanced rendering](https://docs.unity3d.com/Manual/SinglePassStereoRenderingHoloLens.html)**. This might involve modifying some shaders, but should give you a performance boost without reducing graphic quality.
-* **Turn off [HDR](https://docs.unity3d.com/Manual/HDR.html)**. HDR requires an extra texture copy per frame. Disabling this should get you a performance win.
-* **Remove, replace or reduce MSAA**. Anti-aliasing is quite expensive and hardware MSAA can be quite slow on lower end machines. Unity allows you to turn this off or reduce the number of passes in its [quality settings](https://docs.unity3d.com/Manual/class-QualitySettings.html) or you can try some software ones such as FXAA in Unity's post effect pipeline.
-* **Use Unity's [post effects pipeline](https://www.assetstore.unity3d.com/en/#!/content/83912)**. If you are using more than one post processing effect, you may want to consider removing some or combining them, either manually or with this pipeline.
+  * **Use [single pass instanced rendering](https://docs.unity3d.com/Manual/SinglePassStereoRenderingHoloLens.html)**. This might involve modifying some shaders, but should give you a performance boost without reducing graphic quality.
+  * **Turn off [HDR](https://docs.unity3d.com/Manual/HDR.html)**. HDR requires an extra texture copy per frame. Disabling this should get you a performance win.
+  * **Remove, replace or reduce MSAA**. Anti-aliasing is quite expensive and hardware MSAA can be quite slow on lower end machines. Unity allows you to turn this off or reduce the number of passes in its [quality settings](https://docs.unity3d.com/Manual/class-QualitySettings.html) or you can try some software ones such as FXAA in Unity's post effect pipeline.
+  * **Use Unity's [post effects pipeline](https://www.assetstore.unity3d.com/en/#!/content/83912)**. If you are using more than one post processing effect, you may want to consider removing some or combining them, either manually or with this pipeline.
 2. **Reduce poly count**. You may want to create lower poly models for many of your most complicated assets. [Simplygon](https://www.simplygon.com/) can automate this. Unity's [LOD System](https://docs.unity3d.com/Manual/LevelOfDetail.html) is useful here and can be configured in your [Unity Settings](https://docs.unity3d.com/Manual/class-QualitySettings.html)
 3. **Reduce number of particles**. Particle effects can be quite expensive, and sometimes having fewer can still give you the effect you want without reducing framerate.
 4. **Reduce the resolution**. You can take advantage of [dynamic resolution scaling](performance-recommendations-for-immersive-headset-apps.md#dynamic-resolution-scaling) or decide to reduce the [default render target size](performance-recommendations-for-immersive-headset-apps.md#default-render-target-size).
 5. **Improve shader performance**. If you find an object with a high render time on its own, you can try swapping out the shader for some of the fast shaders found in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/Utilities/Shaders). You can also optimize your shaders yourself. Unity can compile your shaders for you and show you how many operations they call, which can help compare relative speed. To see this, navigate to a shader in your project menu, and in the inspector menu click the “compile and show code” button. A Visual Studio window should open with stats like these:
 
-
-
-
+**Shader stats output:**
 ```
 // Stats for Vertex shader:
 //        d3d11: 39 math
 // Stats for Fragment shader:
-//        d3d11: 4 math, 1 texture<br>
+//        d3d11: 4 math, 1 texture
 ```
 
 **App thread CPU bound scenes**
 
 For reducing app thread time, the [Unity Profiler](performance-recommendations-for-immersive-headset-apps.md#unity-performance-profiler) is your friend. Strategies we've found useful are:
 1. **Cache data, and avoid expensive calls**:
-* GetComponent
-* FindObjectOfType
-* RaycastAll
-* Anything that traverses the scene graph.
-* Even static accessors, like Vector3.zero, are faster when cached as class variables.
+  * GetComponent
+  * FindObjectOfType
+  * RaycastAll
+  * Anything that traverses the scene graph.
+  * Even static accessors, like Vector3.zero, are faster when cached as class variables.
 2. **Simplify animations**. Often similar effects can be achieved by simplifying animations, or removing extra ones.
 3. **Pool your objects**. [Object pooling](https://unity3d.com/learn/tutorials/topics/scripting/object-pooling) can be extremely effective especially if allocations are costing you performance.
 4. **Simplify physics**. Reducing the number of iterations can improve performance significantly. Unfortunately, this usually has behavior consequences, so make sure to *test these changes*.
@@ -109,7 +107,7 @@ Once you've improved performance across your app, you can use the same tool to s
 
 After adding this package to you project, you'll need to predefine a set of performance buckets corresponding to your different quality levels. The set must be ordered in a list starting with the highest performance settings (lower quality, small viewport) and going up to the lowest performance settings (high quality, full viewport). The set of buckets is hard coded as an array field in `AdaptivePerformance.cs` script. You should see something like this: 
 
-
+**Adaptive Performance Bucket Set:**
 ```
 private PerformanceBucket[] perfBucketList=
     {
@@ -172,7 +170,7 @@ For either sort of device you may want to scale the default resolution target sm
 
 If you are running in C++ or with the IL2CPP backend of unity, add the following code to the Initialize function in your app.cpp file: 
 
-
+**Sample C++ code for setting render scale with SystemInfoHelper Project:**
 ```
 auto holographicDisplay = Windows::Graphics::Holographic::HolographicDisplay::GetDefault();
 if (nullptr != holographicDisplay)
@@ -244,12 +242,10 @@ The [Windows Device Portal](using-the-windows-device-portal.md) lets you configu
 
 ## See also
 * Intel
-* [VR Content Developer Guide](https://software.intel.com/en-us/articles/vr-content-developer-guide)
-* [How To Plan Optimizations with Unity](https://software.intel.com/en-us/articles/how-to-plan-optimizations-with-unity)
-* [Render Queue Ordering in Unity](https://www.youtube.com/watch?v=ijK8hI7pGZs)
+  * [VR Content Developer Guide](https://software.intel.com/en-us/articles/vr-content-developer-guide)
+  * [How To Plan Optimizations with Unity](https://software.intel.com/en-us/articles/how-to-plan-optimizations-with-unity)
+  * [Render Queue Ordering in Unity](https://www.youtube.com/watch?v=ijK8hI7pGZs)
 * Unity
-* [Analyzing your game performance using Event Tracing for Windows](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
+  * [Analyzing your game performance using Event Tracing for Windows](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 * [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md)
 * [Case study - Scaling Datascape across devices with different performance](case-study-scaling-datascape-across-devices-with-different-performance.md)
-
- 

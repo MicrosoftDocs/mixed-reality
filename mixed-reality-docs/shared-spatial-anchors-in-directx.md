@@ -28,7 +28,7 @@ Declare this capability in the package.appxmanifest file for your app. Here's an
    </Capabilities>
 ```
 
-The capability comes from the **uap2** namespace. To get access to this namespace in your manifest, include it as an *xlmns* attribute in the <Package> element. Here's an example:
+The capability comes from the **uap2** namespace. To get access to this namespace in your manifest, include it as an *xlmns* attribute in the &lt;Package> element. Here's an example:
 
 ```
 <Package
@@ -59,7 +59,7 @@ A helper function is included in the code sample to export (serialize) [SpatialA
    {
 ```
 
-First, we need to set up the data stream. This will allow us to 1.) use TryExportAnchorsAsync to put the data in a buffer owned by the app, and 2.) read data from the exported byte buffer stream - which is a WinRT data stream - into our own memory buffer, which is a std::vector<byte>.
+First, we need to set up the data stream. This will allow us to 1.) use TryExportAnchorsAsync to put the data in a buffer owned by the app, and 2.) read data from the exported byte buffer stream - which is a WinRT data stream - into our own memory buffer, which is a std::vector&lt;byte>.
 
 ```
 // Create a random access stream to process the anchor byte data.
@@ -293,7 +293,7 @@ Like the export of a single SpatialAnchor, the blob contains a representation of
 
 ## Example: Send anchor data using a Windows::Networking::StreamSocket
 
-Here, we provide an example of how to use exported anchor data by sending it across a TCP network. This is from the HolographicSpatialAnchorTransferSample [download TBD].
+Here, we provide an example of how to use exported anchor data by sending it across a TCP network. This is from the HolographicSpatialAnchorTransferSample.
 
 The WinRT StreamSocket class uses the PPL task library. In the case of network errors, the error is returned to the next task in the chain using an exception that is re-thrown. The exception contains an HRESULT indicating the error status.
 

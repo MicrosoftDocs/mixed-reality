@@ -190,10 +190,14 @@ Interested in finding out more about the development process for Galaxy Explorer
 
 <table style="border:0">
 <tr>
-<td style="border:0; width:230px"> <img alt="Picture of Karim Luccin at his desk" width="200" height="200" src="images/karim-thumb.jpg" /></td><td style="border:0; width:300px"> <b>Karim Luccin</b> is a Software Engineer and fancy visuals enthusiast. He was the Graphics Engineer for Galaxy Explorer.</td><td style="border:0; width:230px"> <img alt="Photo of art lead Andy Zibits" width="200" height="200" src="images/andy-avatar.png" /></td><td style="border:0; width:300px"> <b>Andy Zibits</b> is an Art Lead and space enthusiast who managed the 3D modeling team for Galaxy Explorer and fought for even more particles.</td>
+<td style="border:0" width="60px"> <img alt="Picture of Karim Luccin at his desk" width="60" height="60" src="images/karim-thumb.jpg" /></td>
+<td style="border:0" width="408"><b>Karim Luccin</b> is a Software Engineer and fancy visuals enthusiast. He was the Graphics Engineer for Galaxy Explorer.</td>
+</tr>
+<tr>
+<td style="border:0" width="60px"> <img alt="Photo of art lead Andy Zibits" width="60" height="60" src="images/andy-avatar.png" /></td>
+<td style="border:0" width="408"><b>Andy Zibits</b> is an Art Lead and space enthusiast who managed the 3D modeling team for Galaxy Explorer and fought for even more particles.</td>
 </tr>
 </table>
-
 
 
 ## See also
