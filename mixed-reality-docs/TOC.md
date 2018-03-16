@@ -170,5 +170,4 @@
 ### [See your photos](see-your-photos.md)
 ### [Sensor tuning](sensor-tuning.md)
 ### [HoloLens troubleshooting](troubleshooting.md)
-### [Turn HoloLens off and on](turn-hololens-off-and-on.md)
 ### [Updating HoloLens](updating-hololens.md)
