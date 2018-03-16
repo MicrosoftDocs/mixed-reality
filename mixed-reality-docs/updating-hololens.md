@@ -1,5 +1,5 @@
 ---
-title: Updating the HoloLens device
+title: Updating HoloLens
 description: How to update HoloLens and join the Windows Insider program for preview builds.
 author: mattzmsft
 ms.author: mazeller
@@ -10,7 +10,7 @@ keywords: how-to, insider, preview, update, features, new release
 
 
 
-# Updating the HoloLens device
+# Updating HoloLens
 
 Your HoloLens will automatically download and install system updates whenever it is plugged-in and connected to Wi-Fi, even when it is in standby. However, you can also trigger a system update manually if there is one available.
 
