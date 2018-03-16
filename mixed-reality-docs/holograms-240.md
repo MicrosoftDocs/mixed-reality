@@ -26,9 +26,9 @@ In this tutorial, we will:
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-240-SharedHolograms.zip) required by the project. Requires Unity 2017.2 or later.
-* If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).
-* If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).
-* If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).
+    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).
+    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).
+    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).
 * Unarchive the files to your desktop or other easy to reach location. Keep the folder name as **SharedHolograms**.
 
 ## Chapter 1 - Holo World
@@ -77,9 +77,9 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * Open **SharedHolograms.sln** to launch Visual Studio.
 * Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.
 * Click on the drop-down arrow next to Local Machine, and select **Remote Device**.
-* Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
-* Leave the **Authentication Mode** set to **Universal**.
-* Click **Select**
+    * Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
+    * Leave the **Authentication Mode** set to **Universal**.
+    * Click **Select**
 * Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
 * Put on your HoloLens and find the EnergyHub hologram.
 
@@ -156,7 +156,7 @@ Follow the rest of the instructions on **all PCs** that will join the shared exp
 * Double-click the **HologramPlacement** script to open it in Visual Studio.
 * Replace the contents with the code below.
 
-```
+```cs
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Windows.Speech;
@@ -289,7 +289,7 @@ Everyone can now see the same hologram! Now let's see everyone else connected to
 * Double-click the **AvatarSelector** script to open it in Visual Studio.
 * Replace the contents with the code below.
 
-```
+```cs
 using UnityEngine;
 using Academy.HoloToolkit.Unity;
 
@@ -338,7 +338,7 @@ public class AvatarSelector : MonoBehaviour
 * Open the **HologramPlacement** script in Visual Studio.
 * Replace the contents with the code below.
 
-```
+```cs
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Windows.Speech;
@@ -497,7 +497,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * Open the **AppStateManager** script in Visual Studio.
 * Replace the contents with the code below.
 
-```
+```cs
 using UnityEngine;
 using Academy.HoloToolkit.Unity;
 
@@ -585,7 +585,7 @@ In this chapter, we'll make the anchor able to be placed on real-world surfaces.
 * Double-click the **AppStateManager** script to open it in Visual Studio.
 * Replace the contents with the code below.
 
-```
+```cs
 using UnityEngine;
 using Academy.HoloToolkit.Unity;
 
@@ -692,7 +692,7 @@ public class AppStateManager : Singleton<AppStateManager>
 * Double-click the **HologramPlacement** script to open it in Visual Studio.
 * Replace the contents with the code below.
 
-```
+```cs
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Windows.Speech;
