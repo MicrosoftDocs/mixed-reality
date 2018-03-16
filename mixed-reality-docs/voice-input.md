@@ -1,7 +1,7 @@
 ---
 title: Voice input
 description: Voice input is a core input for HoloLens and Windows Mixed Reality immersive headsets. Voice can be used for commands, dictation, Cortana, and more.
-author: 
+author: Hak0n
 ms.author: hakons
 ms.date: 2/28/2018
 ms.topic: article
