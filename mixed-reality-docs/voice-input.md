@@ -1,11 +1,11 @@
 ---
 title: Voice input
-description: 
+description: Voice input is a core input for HoloLens and Windows Mixed Reality immersive headsets. Voice can be used for commands, dictation, Cortana, and more.
 author: 
 ms.author: hakons
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: ggv, voice, cortana, speech, input
 ---
 
 
@@ -32,9 +32,10 @@ Voice input is powered by the [same engine](https://msdn.microsoft.com/en-us/lib
 
 ## The "select" command
 
-Even without specifically adding voice support to your app, your users can activate your holograms simply by saying "select". This behaves the same as a press and release with your hand or a [clicker](hardware-accessories.md#hololens-clicker). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
+Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gestures.md#air-tap) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
-![Say "select" to use the voice command for selection](images/kma-voice-select-00170-800px.png)
+![Say "select" to use the voice command for selection](images/kma-voice-select-00170-800px.png)<br>
+Say select to use the voice command for selection
 
 ## Hey Cortana
 
