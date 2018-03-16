@@ -125,7 +125,7 @@ Here are the high level concepts/scenarios you should understand for input when 
 
 ## Publish and Maintain your Universal app
 
-Once your app is up and running, package your app to [submit it to the Universal Windows Store](submitting-an-app-to-the-microsoft-store.md).
+Once your app is up and running, package your app to [submit it to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md).
 
 ## See also
 * [App model](app-model.md)
