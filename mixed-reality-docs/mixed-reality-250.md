@@ -21,7 +21,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 * Create a shared experience where HoloLens users guide immersive headsets users through some simple puzzles.
 
 **Prerequisites**
-* A Windows 10 PC with the [necessary development tools](install-the-tools.md) and [configured to support a Windows Mixed Reality immersive headset](immersive-headset-setup.md).
+* A Windows 10 PC with the [necessary development tools](install-the-tools.md) and [configured to support a Windows Mixed Reality immersive headset](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 * An Xbox controller that works with your PC.
 * At least one HoloLens device and one immersive headset.
 * A network which allows UDP Broadcast for discovery.
