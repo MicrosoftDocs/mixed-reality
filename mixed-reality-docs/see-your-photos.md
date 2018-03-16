@@ -1,11 +1,11 @@
 ---
 title: See your photos
-description: 
-author: 
+description: How to view photos, videos, and slideshows on HoloLens, and place them in your physical environment.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: photo, video, mrc, mixed reality capture, how-to, OneDrive, HoloLens, pin, place, slideshow
 ---
 
 
@@ -40,7 +40,7 @@ There are five options on the left navigation bar:
 
 Clicking on an individual photo/video will switch to one-up view.
 
-** One-up mode **
+**One-up mode**
 
 In one-up mode you are able to:
 * Play videos
@@ -51,7 +51,7 @@ In one-up mode you are able to:
 
 You can press the collection button to return the collection mode.
 
-** Slideshow **
+**Slideshow**
 
 In slideshow mode your photos and videos will automatically cycle in reverse chronological order.
 
@@ -61,11 +61,11 @@ The Photos app shows you all of the photos and videos stored in:
 * The device's Camera Roll folder
 * OneDrive's Camera Roll special folder (if OneDrive is enabled)
 
-** OneDrive for Business **
+**OneDrive for Business**
 
 OneDrive for Business is not currently supported. The Photos app will prompt you for a Microsoft account to connect with the consumer OneDrive service.
 
-** OneDrive synchronization **
+**OneDrive synchronization**
 
 OneDrive sync is enabled by default. To disable:
 1. In the Photos app, go to collection mode
@@ -84,6 +84,7 @@ Any photos and videos uploaded will be available on all of your other OneDrive e
 3. Use gaze to position the photo or video, then air-tap or say “Place.”
 
 ![Pin a photo or video in your Mixed World](images/pin-photos-app-300px.png)
+Pin a photo or video in your physical environment
 
 ## OneDrive
 
