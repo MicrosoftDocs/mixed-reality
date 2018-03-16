@@ -24,7 +24,7 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
 
 * You can now **run up to three apps in 2D view simultaneously**. This enables endless use cases for multi-tasking in HoloLens. Have the new Feedback Hub with the list of Quests open while exploring the new features on this flight.
 
-  ![HoloLens can run three apps at the same time](images/img-3625-400px.jpg)
+  ![HoloLens can run three apps at the same time](images/img-3625-400px.jpg)<br>
   Run up to three apps in 2D view simultaneously
 
 * We've added new **voice commands**:
@@ -36,7 +36,7 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
 * **2D Apps now hide the app bar and cursor when watching video full screen** to avoid distraction. With this, your video watching experience will be even more enjoyable on HoloLens.
 * You can also **pin photos without the app bar** in your world .
 
-  ![The app bar can be hidden for 2D apps like photos](images/img-3626-400px.jpg)
+  ![The app bar can be hidden for 2D apps like photos](images/img-3626-400px.jpg)<br>
   The app bar can be hidden for apps with a 2D view, like Photos
   
 * **File picker** works just like you expect it to on HoloLens.
@@ -44,7 +44,7 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
 * **Groove Music** app is now on HoloLens. Visit the store to download it and try playing in the background.
 * You can easily customize how apps are arranged in your world. Try **rotating your holograms** in adjust mode by simply click and drag on circle in the middle vertical wireframes. You might notice holograms have **tighter fitted bounding boxes** to ensure maximized interaction. You can also resize all flat apps vertically (except Photos and Hologram apps).
 
-  ![Holograms can be rotated after you place them in the world](images/img-3627-400px.jpg)
+  ![Holograms can be rotated after you place them in the world](images/img-3627-400px.jpg)<br>
   Rotate holograms after you place them in your world
 
 * We've made a lot of **input improvement** in this flight. You can connect a regular Bluetooth mouse to HoloLens. The clicker has been fine tuned to enable resizing & moving holograms with a clicker. Keyboard is also running better than ever.
