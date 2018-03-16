@@ -14,7 +14,6 @@ keywords: sensors, calibrate, calibration, tune, settings, how-to
 
 The sensor tuning utility allows HoloLens to update its sensor calibration information. Running this application can improve hologram quality.
 
-## Sensor Tuning App
 1. Open Settings App
 
    ![Setting app in HoloLens](images/settingssensortuning-500px.png)
