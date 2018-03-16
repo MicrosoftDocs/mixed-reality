@@ -33,9 +33,9 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-211-Gesture.zip) required by the project. Requires Unity 2017.2 or later.
-* If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-211.zip).
-* If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-211.zip).
-* If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-211.zip).
+    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-211.zip).
+    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-211.zip).
+    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-211.zip).
 * Unarchive the files to your desktop or other easy to reach location.
 
 **Errata and Notes**
@@ -103,7 +103,7 @@ The **CursorFeedback.cs** script works like this:
 * In Unity, use **File > Build Settings** to rebuild the application.
 * Open the **App** folder.
 * If it's not already open, open the **ModelExplorer Visual Studio Solution**.
-* (If you already built/deployed this project in Visual Studio during set-up, then you can open that instance of VS and click 'Reload All' when prompted).
+    * (If you already built/deployed this project in Visual Studio during set-up, then you can open that instance of VS and click 'Reload All' when prompted).
 * In Visual Studio, click **Debug -> Start Without debugging** or press **Ctrl + F5**.
 * After the application deploys to the HoloLens, dismiss the fit box using the air-tap gesture.
 * Move your hand into view and point your index finger to the sky to start hand tracking.
@@ -130,7 +130,7 @@ Let's get started.
 
 We track the focused Interactible object in **HandsManager.cs**. Copy the completed code below into **HandsManager.cs**, or you can code this yourself by following the marked coding exercises.
 
-```
+```cs
 using UnityEngine;
 using UnityEngine.XR.WSA.Input;
 
@@ -272,7 +272,7 @@ We need to edit the **GestureManager.cs** file to perform these steps:
 
 You are welcome to write code by following the comments for coding sections found in **GestureManager.cs**, or you can replace the file contents with the following code block:
 
-```
+```cs
 using UnityEngine;
 using UnityEngine.XR.WSA.Input;
 
@@ -474,7 +474,7 @@ Next, open **GestureAction.cs** in Visual Studio. Edit the script to do the foll
 
 Complete the coding exercises in the script, or replace the code with the completed solution below:
 
-```
+```cs
 using Academy.HoloToolkit.Unity;
 using UnityEngine;
 
@@ -598,7 +598,7 @@ Now we need to add code to **GestureAction.cs** to enable the following:
 
 Complete the coding exercise in **GestureAction.cs**, or use our completed solution below:
 
-```
+```cs
 using Academy.HoloToolkit.Unity;
 using UnityEngine;
 
@@ -690,7 +690,7 @@ In this section, we will accomplish the following tasks:
 
 Complete the coding exercise in **AstronautManager.cs**, or copy and paste the finished code from below:
 
-```
+```cs
 using Academy.HoloToolkit.Unity;
 using System.Collections.Generic;
 using System.Linq;
