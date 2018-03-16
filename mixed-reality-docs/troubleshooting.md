@@ -1,16 +1,16 @@
 ---
-title: Troubleshooting
-description: 
-author: 
+title: HoloLens troubleshooting
+description: Troubleshooting steps for Microsoft HoloLens.
+author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 
+keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 ---
 
 
 
-# Troubleshooting
+# HoloLens Troubleshooting
 
 ## My HoloLens is unresponsive or won’t boot
 
@@ -51,7 +51,7 @@ If HoloLens can’t map or load your space, it will enter Limited mode and you w
 * Make sure there’s enough light in your environment so HoloLens can see and map the space.
 * Make sure you’re connected to a Wi-Fi network. If you’re not connected to Wi-Fi, HoloLens can’t identify and load a known space.
 * If you need to create a new space, connect to Wi-Fi, then restart your HoloLens.
-* To see if the correct space is active, or to manually load a space, go to Settings > System > Spaces.
+* To see if the correct space is active, or to manually load a space, go to **Settings** > **System** > **Spaces**.
 * If the correct space is loaded and you’re still having problems, the space may be corrupt. To fix this, select the space, then select Remove. Once the space is removed, HoloLens will start mapping your surroundings and create a new space.
 
 ## My HoloLens frequently enters Limited mode or shows a “Tracking lost” message.
