@@ -5,14 +5,14 @@ author: KarimLUCCIN
 ms.author: kaluccin, azibits
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Galaxy Explorer, HoloLens, Windows Mixed Reality
+keywords: Galaxy Explorer, HoloLens, Windows Mixed Reality, share your idea, case study
 ---
 
 
 
 # Case study - Creating a galaxy in mixed reality
 
-Before Microsoft HoloLens shipped, [we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device](share-your-idea.md). More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called "Galaxy Explorer."
+Before Microsoft HoloLens shipped, we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device. More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called [Galaxy Explorer](galaxy-explorer.md).
 
 Andy Zibits, the art lead on the project, and Karim Luccin, the team's graphics engineer, talk about the collaborative effort between art and engineering that led to the creation of an accurate, interactive representation of the Milky Way galaxy in Galaxy Explorer.
 
