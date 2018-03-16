@@ -162,7 +162,6 @@
 ### [Mixed reality](mixed-reality.md)
 ### [Mixed reality capture](mixed-reality-capture.md)
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
-### [News archive](news-archive.md)
 ### [Release notes](release-notes.md)
 ### [Release notes - August 2016](release-notes-august-2016.md)
 ### [Release notes - March 2016](release-notes-march-2016.md)
