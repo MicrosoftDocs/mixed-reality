@@ -18,7 +18,7 @@ The HoloLens team is listening to feedback from developers in the Windows Inside
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-To [update to the current release](updating-the-hololens-device.md), open the *Settings* app, go to *Update & Security*, then select the *Check for updates* button.
+To [update to the current release](updating-hololens.md), open the *Settings* app, go to *Update & Security*, then select the *Check for updates* button.
 
 ## New features
 
