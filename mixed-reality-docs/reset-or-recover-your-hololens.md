@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down
+keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down
 ---
 
 
