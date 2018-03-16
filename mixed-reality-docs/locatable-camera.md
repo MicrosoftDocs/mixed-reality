@@ -1,6 +1,6 @@
 ---
 title: Locatable camera
-description: General information about the HoloLens front facing camera
+description: General information about the HoloLens front facing camera.
 author: wguyman
 ms.author: wguyman
 ms.date: 2/28/2018
@@ -223,7 +223,7 @@ On the receiving side, using Unity, we've already synced all of the holograms in
 
 Once we have the camera set up properly, we combine what holograms the camera sees onto the frame we received from Skype, creating a mixed reality view of what the HoloLens user sees using Graphics.Blit.
 
-```
+```cs
 private void OnFrameReceived(Texture frameTexture, Vector3 cameraPosition, Quaternion cameraRotation, Matrix4x4 cameraProjectionMatrix)
 {
     //set material that will be blitted onto the RenderTexture

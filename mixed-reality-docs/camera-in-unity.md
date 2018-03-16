@@ -28,9 +28,9 @@ By default, when you create a new scene in Unity, it will contain a Main Camera 
 The default settings on the Unity Camera component are for traditional 3D applications which need a skybox-like background as they don't have a real world.
 * When running on an **immersive headset**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
 * However, when running on a **holographic headset** like HoloLens, the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
-1. Select the Main Camera in the Hierarchy panel
-2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
-3. Select the Background color picker and change the RGBA values to (0, 0, 0, 0)
+    1. Select the Main Camera in the Hierarchy panel
+    2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
+    3. Select the Background color picker and change the RGBA values to (0, 0, 0, 0)
 
 You can use script code to determine at runtime whether the headset is immersive or holographic by checking **HolographicSettings.IsDisplayOpaque**.
 

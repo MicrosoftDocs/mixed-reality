@@ -31,9 +31,9 @@ We have a friendly astronaut here to help you learn gaze concepts. In [Holograms
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-210-Gaze.zip) required by the project. Requires Unity 2017.2 or later.
-* If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-210.zip).
-* If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-210.zip).
-* If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-210.zip).
+    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-210.zip).
+    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-210.zip).
+    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-210.zip).
 * Unarchive the files to your desktop or other easy to reach location.
 
 **Errata and Notes**
@@ -81,10 +81,10 @@ We need to let Unity know that the app we are trying to export should create an 
 * Drag and drop the **Main Camera** from the **Prefabs** folder into the **Hierarchy**.
 * Right-click the **Directional Light** in the Hierarchy and select **Delete**.
 * In the **Holograms** folder, drag and drop the following assets into the root of the **Hierarchy**:
-* **AstroMan**
-* **Lights**
-* **SpaceAudioSource**
-* **SpaceBackground**
+    * **AstroMan**
+    * **Lights**
+    * **SpaceAudioSource**
+    * **SpaceBackground**
 * Start **Play Mode** to view the astronaut.
 * Click **Play Mode** again to **Stop**.
 * In the **Holograms** folder, find the **Fitbox** asset and drag it to the root of the **Hierarchy**.
@@ -154,7 +154,7 @@ At this point, you need to edit the GazeManager.cs file, and edit it to perform 
 
 You can write the code yourself by locating comments in GazeManager.cs labeled "Coding Exercise" - each comment corresponds to one line of code. You can also use this completed version:
 
-```
+```cs
 using UnityEngine;
 
 namespace Academy.HoloToolkit.Unity
@@ -278,7 +278,7 @@ Next you will need to edit **CusorManager.cs** in order to achieve the following
 
 Again, you are welcome to write your own code by locating the comments labeled "Coding Exercise" in CursorManager.cs, or use the following:
 
-```
+```cs
 using UnityEngine;
 
 namespace Academy.HoloToolkit.Unity
@@ -364,7 +364,9 @@ You'll need to edit both **InteractibleManager.cs** and **Interactible.cs** in o
 
 Give it a try yourself with the coding exercises in InteractibleManager.cs and Interactible.cs, or use the following solutions:
 
-```
+From **InteractibleManager.cs**:
+
+```cs
 using Academy.HoloToolkit.Unity;
 using UnityEngine;
 
@@ -436,7 +438,9 @@ public class InteractibleManager : Singleton<InteractibleManager>
 }
 ```
 
-```
+From **Interactible.cs**:
+
+```cs
 using UnityEngine;
 
 /// <summary>
@@ -543,7 +547,7 @@ Now we'll modify our GazeManager to use the GazeStabilizer.
 1. Open the **GazeManager** script in Visual Studio.
 2. Copy the code below into GazeManager.cs, or complete coding exercise 3.a yourself.
 
-```
+```cs
 using UnityEngine;
 
 namespace Academy.HoloToolkit.Unity
@@ -733,7 +737,7 @@ To do this:
 * We first must change the **Interactible.cs** script to send a message to **InteractibleAction.**
 * Edit **Interactible.cs** by completing the coding exercise or use the following:
 
-```
+```cs
 using UnityEngine;
 
 /// <summary>
@@ -823,21 +827,21 @@ public class Interactible : MonoBehaviour
 The **InteractibleAction.cs** script performs custom actions when you gaze at the holograms. Let's update it for use with the tag-along.
 * In the **Scripts** folder click on **InteractibleAction.cs** asset to open in Visual Studio.
 * Complete the coding exercise or change it to this:
-* At the top of the **Hierarchy**, in the search bar type **ChestButton_Center** and select the result.
-* In the **Inspector** panel, click the **Add Component** button.
-* In the menu, type in the search box **Interactible Action**. Select the search result.
-* In **Holograms** folder find the **Tagalong** asset.
-* Select the **ChestButton_Center** object in the **Hierarchy**. Drag and drop the **TagAlong** object from the **Project** panel onto the **Inspector** into the **Object to TagAlong** property.
-* Double click the **InteractibleAction** script to open it in Visual Studio.
+    * At the top of the **Hierarchy**, in the search bar type **ChestButton_Center** and select the result.
+    * In the **Inspector** panel, click the **Add Component** button.
+    * In the menu, type in the search box **Interactible Action**. Select the search result.
+    * In **Holograms** folder find the **Tagalong** asset.
+    * Select the **ChestButton_Center** object in the **Hierarchy**. Drag and drop the **TagAlong** object from the **Project** panel onto the **Inspector** into the **Object to TagAlong** property.
+    * Double click the **InteractibleAction** script to open it in Visual Studio.
 
 We need to add the following:
 * Add functionality to the PerformTagAlong function in the InteractibleAction script.
 * Add billboarding to the gazed-upon object, and set the pivot axis to free.
 * Then add simple Tag-Along to the object.
 
-Here's our solution:
+Here's our solution, from **InteractibleAction.cs**:
 
-```
+```cs
 using Academy.HoloToolkit.Unity;
 using UnityEngine;
 

@@ -21,7 +21,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 * Create a shared experience where HoloLens users guide immersive headsets users through some simple puzzles.
 
 **Prerequisites**
-* A Windows 10 PC with the [necessary development tools](install-the-tools.md) and [configured to support a Windows Mixed Reality immersive headset](immersive-headset-setup.md).
+* A Windows 10 PC with the [necessary development tools](install-the-tools.md) and [configured to support a Windows Mixed Reality immersive headset](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 * An Xbox controller that works with your PC.
 * At least one HoloLens device and one immersive headset.
 * A network which allows UDP Broadcast for discovery.
@@ -44,43 +44,43 @@ An application that shows a hologram on either HoloLens or a Windows Mixed Reali
 
 ### Steps
 * Open Unity.
-* Select **Open**.
-* Navigate to where you extracted the project files.
-* Click **Select Folder**.
-* *It will take a little while for Unity to process the project the first time.*
+    * Select **Open**.
+    * Navigate to where you extracted the project files.
+    * Click **Select Folder**.
+    * *It will take a little while for Unity to process the project the first time.*
 * Check that Mixed Reality is enabled in Unity.
-* Open the build settings dialog (**Control+Shift+B** or **File > Build Settings...**).
-* Select **Universal Windows Platform** then click **Switch Platform**.
-* Select **Edit>Player Settings**.
-* In the **Inspector** panel on the right hand side, expand **XR Settings**.
-* Check the **Virtual Reality Supported** box.
-* *Windows Mixed Reality should be the Virtual Reality SDK.*
+    * Open the build settings dialog (**Control+Shift+B** or **File > Build Settings...**).
+    * Select **Universal Windows Platform** then click **Switch Platform**.
+    * Select **Edit>Player Settings**.
+    * In the **Inspector** panel on the right hand side, expand **XR Settings**.
+    * Check the **Virtual Reality Supported** box.
+    * *Windows Mixed Reality should be the Virtual Reality SDK.*
 * Create a scene.
-* In the **Hierarchy** right click **Main Camera** select **Delete**.
-* From **HoloToolkit > Input > Prefabs** drag **MixedRealityCameraParent** to the **Hierarchy**.
+    * In the **Hierarchy** right click **Main Camera** select **Delete**.
+    * From **HoloToolkit > Input > Prefabs** drag **MixedRealityCameraParent** to the **Hierarchy**.
 * Add Holograms to the scene
-* From **AppPrefabs** drag **Skybox** to the **Scene View**.
-* From **AppPrefabs** drag **Managers** to the **Hierarchy**.
-* From **AppPrefabs** drag **Island** to the **Hierarchy**.
+    * From **AppPrefabs** drag **Skybox** to the **Scene View**.
+    * From **AppPrefabs** drag **Managers** to the **Hierarchy**.
+    * From **AppPrefabs** drag **Island** to the **Hierarchy**.
 * Save And build
-* Save (either **Control+S** or **File > Save Scene**)
-* Since this is a new scene, you'll need to name it. Name doesn't matter, but we use SharedMixedReality.
+    * Save (either **Control+S** or **File > Save Scene**)
+    * Since this is a new scene, you'll need to name it. Name doesn't matter, but we use SharedMixedReality.
 * Export To Visual Studio
-* Open the build menu (**Control+Shift+B** or **File > Build Settings**)
-* Click **Add Open Scenes.**
-* Check **Unity C# Projects**
-* Click **Build**.
-* In the file explorer window that appears, create a New Folder named **App**.
-* Single click the **App** folder.
-* Press **Select Folder.**
-* **Wait for the build to complete**
-* In the file explorer window that appears, navigate into the **App** folder.
-* Double-click **SharedMixedReality.sln** to launch Visual Studio
+    * Open the build menu (**Control+Shift+B** or **File > Build Settings**)
+    * Click **Add Open Scenes.**
+    * Check **Unity C# Projects**
+    * Click **Build**.
+    * In the file explorer window that appears, create a New Folder named **App**.
+    * Single click the **App** folder.
+    * Press **Select Folder.**
+    * **Wait for the build to complete**
+    * In the file explorer window that appears, navigate into the **App** folder.
+    * Double-click **SharedMixedReality.sln** to launch Visual Studio
 * Build From Visual Studio
-* Using the top toolbar change target to **Release** and **x86**.
-* Click the arrow next to **Local Machine** and select **Device** to deploy to HoloLens
-* Click the arrow next to **Device** and select **Local Machine** to deploy for the mixed reality headset.
-* Click **Debug->Start Without Debugging** or **Control+F5** to start the application.
+    * Using the top toolbar change target to **Release** and **x86**.
+    * Click the arrow next to **Local Machine** and select **Device** to deploy to HoloLens
+    * Click the arrow next to **Device** and select **Local Machine** to deploy for the mixed reality headset.
+    * Click **Debug->Start Without Debugging** or **Control+F5** to start the application.
 
 ### Digging into the code
 
@@ -108,26 +108,26 @@ Building on the application from chapter 1, we will add functionality to allow t
 
 ### Steps
 * Add Input manager
-* From **HoloToolkit > Input > Prefabs** drag **InputManager** to **Hierarchy** as a child of **Managers**.
-* From **HoloToolkit > Input > Prefabs > Cursor** drag **Cursor** to **Hierarchy**.
+    * From **HoloToolkit > Input > Prefabs** drag **InputManager** to **Hierarchy** as a child of **Managers**.
+    * From **HoloToolkit > Input > Prefabs > Cursor** drag **Cursor** to **Hierarchy**.
 * Add Spatial Mapping
-* From **HoloToolkit > SpatialMapping > Prefabs** drag **SpatialMapping** to **Hierarchy**.
+    * From **HoloToolkit > SpatialMapping > Prefabs** drag **SpatialMapping** to **Hierarchy**.
 * Add Virtual Playspace
-* In **Hierarchy** expand **MixedRealityCameraParent** select **Boundary**
-* In **Inspector** panel check the box to enable **Boundary**
-* From **AppPrefabs** drag **VRRoom** to **Hierarchy**.
+    * In **Hierarchy** expand **MixedRealityCameraParent** select **Boundary**
+    * In **Inspector** panel check the box to enable **Boundary**
+    * From **AppPrefabs** drag **VRRoom** to **Hierarchy**.
 * Add WorldAnchorManager
-* In **Hierarchy**, Select **Managers**.
-* In **Inspector**, click **Add Component**.
-* Type **World Anchor Manager**.
-* Select **World Anchor Manager** to add it.
+    * In **Hierarchy**, Select **Managers**.
+    * In **Inspector**, click **Add Component**.
+    * Type **World Anchor Manager**.
+    * Select **World Anchor Manager** to add it.
 * Add TapToPlace to the Island
-* In **Hierarchy**, expand **Island**.
-* Select **MixedRealityLand**.
-* In **Inspector**, click **Add Component**.
-* Type **Tap To Place** and select it.
-* Check **Place Parent On Tap**.
-* Set **Placement Offset** to **(0, 0.1, 0)**.
+    * In **Hierarchy**, expand **Island**.
+    * Select **MixedRealityLand**.
+    * In **Inspector**, click **Add Component**.
+    * Type **Tap To Place** and select it.
+    * Check **Place Parent On Tap**.
+    * Set **Placement Offset** to **(0, 0.1, 0)**.
 * Save and Build as before
 
 ### Digging into the code
@@ -168,15 +168,15 @@ We will convert our project to a multiplayer project. We will add UI and logic t
 
 ### Steps
 * Remove Island and VRRoom
-* In **Hierarchy** right-click **Island** select **Delete**
-* In **Hierarchy** right-click **VRRoom** select **Delete**
+    * In **Hierarchy** right-click **Island** select **Delete**
+    * In **Hierarchy** right-click **VRRoom** select **Delete**
 * Add Usland
-* From **AppPrefabs** drag **Usland** to **Hierarchy**.
+    * From **AppPrefabs** drag **Usland** to **Hierarchy**.
 * From **AppPrefabs** drag each of the following to **Hierarchy**:
-* **UNETSharingStage**
-* **UNetAnchorRoot**
-* **UIContainer**
-* **DebugPanelButton**
+    * **UNETSharingStage**
+    * **UNetAnchorRoot**
+    * **UIContainer**
+    * **DebugPanelButton**
 * Save and Build as before
 
 ### Digging into the code
@@ -229,11 +229,11 @@ We will update the application to put immersive headset users on the island with
 
 ### Steps
 * Add MixedRealityTeleport to MixedRealityCameraParent
-* In **Hierarchy**, select **Usland**.
-* In **Inspector**, enable **Level Control**.
-* In **Hierarchy**, select **MixedRealityCameraParent**.
-* In **Inspector**, click **Add Component**.
-* Type **Mixed Reality Teleport** and select it.
+    * In **Hierarchy**, select **Usland**.
+    * In **Inspector**, enable **Level Control**.
+    * In **Hierarchy**, select **MixedRealityCameraParent**.
+    * In **Inspector**, click **Add Component**.
+    * Type **Mixed Reality Teleport** and select it.
 
 ### Digging into the code
 
@@ -295,14 +295,14 @@ We will start in the Update() function. You will note that there is a 'cheat' fu
 
 CheckGoal does some math to see if we are more or less standing on the pad. When we are, we Debug.Log "Arrived at goal" and then we call 'SendAtGoalMessage()'. In SendAtGoalMessage we call playerController.SendAtGoal. To save you some time, here's the code:
 
-```
+```cs
 private void CmdSendAtGoal(int GoalIndex)
        {
            levelState.SetGoalIndex(GoalIndex);
        }
 ```
 
-```
+```cs
 public void SendAtGoal(int GoalIndex)
        {
            if (isLocalPlayer)

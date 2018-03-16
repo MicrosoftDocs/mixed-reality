@@ -71,7 +71,11 @@ In this chapter, we will set some Unity project settings that help us target the
 
 ### Unity performance and quality settings
 
-![Unity quality settings for HoloLens](images/qualitysettings.png) Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
+**Unity quality settings for HoloLens**
+
+![Unity quality settings for HoloLens](images/qualitysettings.png) 
+
+Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
 1. Select **Edit > Project Settings > Quality**
 2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and Fastest row is green.
 
@@ -79,7 +83,16 @@ In this chapter, we will set some Unity project settings that help us target the
 
 ### Target Windows 10 SDK
 
-![Target Windows Holographic SDK](images/xrsettings.png) We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK. ![Verify .NET Configuration](images/configoptions-375px.png)
+**Target Windows Holographic SDK**
+
+![Target Windows Holographic SDK](images/xrsettings.png) 
+
+We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK.
+
+**Verify .NET Configuration**
+
+![Verify .NET Configuration](images/configoptions-375px.png)
+
 1. Select **Edit > Project Settings > Player**
 2. In the **Inspector** panel click on the **Windows Store** tab
 3. Expand the **XR Settings** group.

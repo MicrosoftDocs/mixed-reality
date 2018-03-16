@@ -18,7 +18,7 @@ In Mixed Reality 213, we will explore the motion controller's input events by cr
 
 **Topics covered in this tutorial**
 
-<table>
+<!-- <table>
 <tr>
 <td><img src="images/mr213-topic1.png" alt="MixedReality213 Topic1"/></td>
 <td><img src="images/mr213-topic2.png" alt="MixedReality213 Topic2"/></td>
@@ -32,7 +32,25 @@ Understand different types of button events and their applications.</td>
 <td><b>Custom controller and UI</b><br>
 Learn how to overlay UI elements on top of the controller or fully customize it.</td>
 </tr>
-</table>
+</table> -->
+
+![MixedReality213 Topic1](images/mr213-topic1.png)
+
+**Controller visualization**: Learn how to render motion controller models in Unity's game mode and runtime.
+
+&nbsp;
+
+![MixedReality213 Topic2](images/mr213-topic2.png)
+
+**Controller input events**: Understand different types of button events and their applications.
+
+&nbsp;
+
+![MixedReality213 Topic3](images/mr213-topic3.png)
+
+**Custom controller and UI**: Learn how to overlay UI elements on top of the controller or fully customize it.
+
+&nbsp;
 
 **Prerequisites**
 
@@ -65,7 +83,7 @@ See the installation checklist for immersive headsets on [this page](install-the
 * Set Build Type to **D3D**
 * Set SDK to **Latest Installed**
 * Check **Unity C# Projects**
-* This allows you modify script files in the Visual Studio project without rebuilding Unity project.
+    * This allows you modify script files in the Visual Studio project without rebuilding Unity project.
 * Click **Player Settings**.
 * In the **Inspector** panel, scroll down to the bottom
 * In XR Settings, check **Virtual Reality Supported**
@@ -82,22 +100,22 @@ This tutorial uses **[Mixed Reality Toolkit - Unity](https://github.com/Microsof
 
 **Completed scenes for your reference**
 * You will find two completed Unity scenes under **Scenes** folder.
-* **MixedReality213**: Completed scene with single brush
-* **MixedReality213Advanced**: Completed scene for advanced design with multiple brushes
+    * **MixedReality213**: Completed scene with single brush
+    * **MixedReality213Advanced**: Completed scene for advanced design with multiple brushes
 
 **New Scene setup for the tutorial**
 * In Unity, click **File > New Scene**
 * Delete **Main Camera** and **Directional Light**
 * From the **Project panel**, search and drag the following prefabs into the **Hierarchy** panel:
-* Assets/HoloToolkit/Input/Prefabs/**MixedRealityCamera**
-* Assets/AppPrefabs/**Environment**
+    * Assets/HoloToolkit/Input/Prefabs/**MixedRealityCamera**
+    * Assets/AppPrefabs/**Environment**
 
 ![Camera and Environment](images/mr213-cameraenvironment-300px.jpg)
 * There are two camera prefabs in Mixed Reality Toolkit:
-* **MixedRealityCamera.prefab**: Camera only
-* **MixedRealityCameraParent.prefab**: Camera + Teleportation + Boundary
-* In this tutorial, we will use **MixedRealityCamera** without teleportation feature. Because of this, we added simple **Environment** prefab which contains a basic floor to make the user feel grounded.
-* To learn more about the teleportation with **MixedRealityCameraParent**, see [Advanced design - Teleportation and locomotion](mixed-reality-213.md#advanced-design-teleportation-and-locomotion)
+    * **MixedRealityCamera.prefab**: Camera only
+    * **MixedRealityCameraParent.prefab**: Camera + Teleportation + Boundary
+    * In this tutorial, we will use **MixedRealityCamera** without teleportation feature. Because of this, we added simple **Environment** prefab which contains a basic floor to make the user feel grounded.
+    * To learn more about the teleportation with **MixedRealityCameraParent**, see [Advanced design - Teleportation and locomotion](mixed-reality-213.md#advanced-design-teleportation-and-locomotion)
 
 **Skybox setup**
 * Click **Window > Lighting > Settings**
@@ -148,7 +166,7 @@ In this chapter, we will learn about the examples of these controller customizat
 
 The **MotionControllerVisualizer** and **MotionControllerInfo** classes provide the means to access & modify the default controller models. **MotionControllerVisualizer** subscribes to Unity's **InteractionSourceDetected** event and automatically instantiates controller models when they are found.
 
-```
+```cs
 protected override void Awake()
 {
     ...
@@ -164,7 +182,7 @@ Once the controller has been delivered, scripts can use **MotionControllerInfo**
 
 In a later chapter, we will learn how to use these scripts to attach UI elements to the controllers.
 
-*In some scripts, you will find code blocks with **#if !UNITY_EDITOR** or **UNITY_WSA**. These code blocks run only on the UWP runtime when you deploy to Windows. This is because the set of APIs used by the Unity editor and the UWP app runtime are different. *
+*In some scripts, you will find code blocks with **#if !UNITY_EDITOR** or **UNITY_WSA**. These code blocks run only on the UWP runtime when you deploy to Windows. This is because the set of APIs used by the Unity editor and the UWP app runtime are different.*
 * **Save** the scene and click the **play** button.
 
 You will be able to see the scene with motion controllers in your headset. You can see detailed animations for button clicks, thumbstick movement, and touchpad touch highlighting.
@@ -211,7 +229,7 @@ In **AttachElementToController()**,
 * Get specific element of the controller using **MotionControllerInfo.TryGetElement()**
 * After retrieving the element's transform from the controller model, parent the object under it and set object's local position & rotation to zero.
 
-```
+```cs
 public MotionControllerInfo.ControllerElementEnum Element { get { return element; } }
 
 private void AttachElementToController(MotionControllerInfo newController)
@@ -262,7 +280,7 @@ Since **ColorPickerWheel** inherits **AttachToController**, it shows **Handednes
 
 **ColorPickerWheel** overrides the **OnAttachToController** and **OnDetatchFromController** to subscribe to the input event which will be used in next chapter for color selection with touchpad input.
 
-```
+```cs
 public class ColorPickerWheel : AttachToController, IPointerTarget
 {
     protected override void OnAttachToController()
@@ -287,7 +305,7 @@ public class ColorPickerWheel : AttachToController, IPointerTarget
 
 We recommend that your scripts inherit from **AttachToController** and override **OnAttachToController**. However, this may not always be possible. An alternative is using it as a standalone component. This can be useful when you want to attach an existing prefab to a controller without refactoring your scripts. Simply have your class wait for IsAttached to be set to true before performing any setup. The simplest way to do this is by using a coroutine for 'Start.'
 
-```
+```cs
 private IEnumerator Start() {
     AttachToController attach = gameObject.GetComponent<AttachToController>();
 
@@ -332,7 +350,7 @@ In **InteractionSourceUpdated()**, the script first checks to ensure that it:
 
 If both are true, the touchpad position (obj.state.**touchpadPosition**) is assigned to **selectorPosition**.
 
-```
+```cs
 private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 {
     if (obj.state.source.handedness == handedness && obj.state.touchpadTouched)
@@ -345,7 +363,7 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 In **Update()**, based on **visible** property, it triggers Show and Hide animation triggers in the color picker's animator component
 
-```
+```cs
 if (visible != visibleLastFrame)
 {
     if (visible)
@@ -363,7 +381,7 @@ In **Update()**, **selectorPosition** is used to cast a ray at the color wheel's
 
 ![Color Picker Wheel Raycasting](images/mr213-colorpickerwheel-raycast-700px.png)
 
-```
+```cs
 ...
     // Clamp selector position to a radius of 1
     Vector3 localPosition = new Vector3(selectorPosition.x * inputScale, 0.15f, selectorPosition.y * inputScale);
@@ -433,7 +451,7 @@ You will find the **Tip** component in **BrushController**. We will use its tran
 
 **BrushController** subscribes to the InteractionManager's **InteractionSourcePressed** and **InteractionSourceReleased** events. When **InteractionSourcePressed** event is triggered, the brush's **Draw** property is set to true; when **InteractionSourceReleased** event is triggered, the brush's **Draw** property is set to false.
 
-```
+```cs
 private void InteractionSourcePressed(InteractionSourcePressedEventArgs obj)
 {
     if (obj.state.source.handedness == InteractionSourceHandedness.Right && obj.pressType == InteractionSourcePressType.Select)
@@ -453,7 +471,7 @@ private void InteractionSourceReleased(InteractionSourceReleasedEventArgs obj)
 
 While **Draw** is set to true, the brush will generate points in an instantiated Unity **LineRenderer**. A reference to this prefab is kept in the brush's **Stroke Prefab** field.
 
-```
+```cs
 private IEnumerator DrawOverTime()
 {
     // Get the position of the tip
@@ -494,7 +512,7 @@ private IEnumerator DrawOverTime()
 
 To use the currently selected color from the color picker wheel UI, **BrushController** needs to have a reference to the **ColorPickerWheel** object. Because the **BrushController** prefab is instantiated at runtime as a replacement controller, any references to objects in the scene will have to be set at runtime. In this case we use **GameObject.FindObjectOfType** to locate the **ColorPickerWheel**:
 
-```
+```cs
 private void OnEnable()
 {
     // Locate the ColorPickerWheel
@@ -532,7 +550,7 @@ The **ObjectSpawner** instantiates copies of a primitive mesh (cube, sphere, cyl
 
 For a **Grasp** event, it increments the index of current mesh type (sphere, cube, cylinder)
 
-```
+```cs
 private void InteractionSourcePressed(InteractionSourcePressedEventArgs obj)
 {
     // Check handedness, see if it is left controller
@@ -570,7 +588,7 @@ private void InteractionSourcePressed(InteractionSourcePressedEventArgs obj)
 
 For a **Select** event, in **SpawnObject()**, a new object is instantiated, un-parented and released into the world.
 
-```
+```cs
 private void SpawnObject()
 {
     // Instantiate the spawned object
@@ -616,12 +634,12 @@ In this chapter, you will learn how to replace the default motion controller mod
 * Drag the **BrushSelector** prefab into the **Hierarchy** panel.
 * For organization, create an empty GameObject called **Brushes**
 * Drag following prefabs from the **Project** panel into **Brushes**
-* Assets/AppPrefabs/**BrushFat**
-* Assets/AppPrefabs/**BrushThin**
-* Assets/AppPrefabs/**Eraser**
-* Assets/AppPrefabs/**MarkerFat**
-* Assets/AppPrefabs/**MarkerThin**
-* Assets/AppPrefabs/**Pencil**
+    * Assets/AppPrefabs/**BrushFat**
+    * Assets/AppPrefabs/**BrushThin**
+    * Assets/AppPrefabs/**Eraser**
+    * Assets/AppPrefabs/**MarkerFat**
+    * Assets/AppPrefabs/**MarkerThin**
+    * Assets/AppPrefabs/**Pencil**
 
 ![Brushes](images/mixedreality213-brushes-250px.png)
 * Click **MotionControllers** prefab in the **Hierarchy** panel.
@@ -661,7 +679,7 @@ In the case of the **BrushSelector**, we've chosen to use procedural animation. 
 
 Even in cases where the controller model has been completely replaced, it can be helpful to show input on the original model inputs. This helps to ground the user's actions in reality. For the **BrushSelector** we've chosen to make the touchpad briefly visible when the input is received. This was done by retrieving the Touchpad element from the controller, replacing its material with a custom material, then applying a gradient to that material's color based on the last time touchpad input was received.
 
-```
+```cs
 protected override void OnAttachToController()
 {
     // Turn off the default controller's renderers
@@ -700,7 +718,7 @@ When the brush selector detects touchpad's pressed input, it checks the position
 
 Instead of the **InteractionSourcePressType.Select** event in the **InteractionSourcePressed()**, you can get the analog value of the pressed amount through **selectPressedAmount**. This value can be retrieved in **InteractionSourceUpdated()**.
 
-```
+```cs
 private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 {
     if (obj.state.source.handedness == handedness)
@@ -751,9 +769,9 @@ If you want to allow the user to move around the scene with teleportation using 
 **Instructions**
 * In the **Hierarchy** panel, delete **MixedRealityCamera**, **Environment** and **MotionControllers**
 * From the **Project panel**, search and drag the following prefabs into the **Hierarchy** panel:
-* Assets/AppPrefabs/Input/Prefabs/**MixedRealityCameraParent**
-* Assets/AppPrefabs/Input/Prefabs/**InputManager**
-* Assets/AppPrefabs/Input/Prefabs/Cursor/**DefaultCursor**
+    * Assets/AppPrefabs/Input/Prefabs/**MixedRealityCameraParent**
+    * Assets/AppPrefabs/Input/Prefabs/**InputManager**
+    * Assets/AppPrefabs/Input/Prefabs/Cursor/**DefaultCursor**
 
 ![Mixed Reality Camera Parent](images/mr213-cameraparent-300px.png)
 * In the **Hierarchy** panel, click **Input Manager**
@@ -775,8 +793,8 @@ You are now ready to start creating your own immersive experience with motion co
 ## Completed scenes
 * In Unity's **Project** panel click on the **Scenes** folder.
 * You will find two Unity sceens **MixedReality213** and **MixedReality213Advanced**.
-* **MixedReality213**: Completed scene with single brush
-* **MixedReality213Advanced**: Completed scene with multiple brush with select button's press amount example
+    * **MixedReality213**: Completed scene with single brush
+    * **MixedReality213Advanced**: Completed scene with multiple brush with select button's press amount example
 
 ## See also
 * [Mixed Reality 213 project](https://github.com/Microsoft/MixedReality213)

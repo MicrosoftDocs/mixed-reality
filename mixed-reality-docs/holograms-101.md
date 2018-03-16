@@ -24,9 +24,9 @@ The tutorial will take approximately 1 hour to complete.
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) required by the project. Requires Unity 2017.2 or later.
-* If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
-* If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
-* If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).
+    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
+    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
+    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).
 * Unarchive the files to your desktop or other easy to reach location. Keep the folder name as **Origami**.
 
 ## Chapter 1 - "Holo" world
@@ -59,9 +59,9 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * In the **Hierarchy Panel**, click on **Create** and **Create Empty**.
 * Right-click the new **GameObject** and select Rename. Rename the GameObject to **OrigamiCollection**.
 * From the **Holograms** folder in the Project Panel (expand Assets and select Holograms or double click the Holograms folder in the Project Panel):
-* Drag **Stage** into the Hierarchy to be a child of **OrigamiCollection**.
-* Drag **Sphere1** into the Hierarchy to be a child of **OrigamiCollection**.
-* Drag **Sphere2** into the Hierarchy to be a child of **OrigamiCollection**.
+    * Drag **Stage** into the Hierarchy to be a child of **OrigamiCollection**.
+    * Drag **Sphere1** into the Hierarchy to be a child of **OrigamiCollection**.
+    * Drag **Sphere2** into the Hierarchy to be a child of **OrigamiCollection**.
 * Right-click the **Directional Light** object in the **Hierarchy Panel** and select **Delete**.
 * From the **Holograms** folder, drag **Lights** into the root of the **Hierarchy Panel**.
 * In the **Hierarchy**, select the **OrigamiCollection**.
@@ -85,10 +85,10 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * Open (double click) **Origami.sln**.
 * Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.
 * Click on the arrow next to the Device button, and select **Remote Machine** to deploy over Wi-Fi.
-* Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
-* If the HoloLens is attached over USB, you may instead select **Device** to deploy over USB.
-* Leave the **Authentication Mode** set to **Universal**.
-* Click **Select**
+    * Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
+    * If the HoloLens is attached over USB, you may instead select **Device** to deploy over USB.
+    * Leave the **Authentication Mode** set to **Universal**.
+    * Click **Select**
 * Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
 * The Origami project will now build, deploy to your HoloLens, and then run.
 * Put on your HoloLens and look around to see your new holograms.
@@ -116,7 +116,7 @@ In this chapter, we are going to introduce the first of three ways of interactin
 * Double-click the **WorldCursor** script to open it in Visual Studio.
 * Copy and paste this code into **WorldCursor.cs** and **Save All**.
 
-```
+```cs
 using UnityEngine;
 
 public class WorldCursor : MonoBehaviour
@@ -183,7 +183,7 @@ We'll start by creating a script then can detect the Select gesture.
 * Drag the **GazeGestureManager** script onto the **OrigamiCollection** object in the Hierarchy.
 * Open the **GazeGestureManager** script in Visual Studio and add the following code:
 
-```
+```cs
 using UnityEngine;
 using UnityEngine.XR.WSA.Input;
 
@@ -254,7 +254,7 @@ public class GazeGestureManager : MonoBehaviour
 * Drag the **SphereCommands** script onto the **Sphere2** object in the Hierarchy panel.
 * Open the script in Visual Studio for editing, and replace the default code with this:
 
-```
+```cs
 using UnityEngine;
 
 public class SphereCommands : MonoBehaviour
@@ -292,7 +292,7 @@ In this chapter, we'll add support for two [voice commands](voice-input.md): "Re
 * Open the **SpeechManager** script in Visual Studio.
 * Copy and paste this code into **SpeechManager.cs** and **Save All**:
 
-```
+```cs
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -344,7 +344,7 @@ public class SpeechManager : MonoBehaviour
 * Open the **SphereCommands** script in Visual Studio.
 * Update the script to read as follows:
 
-```
+```cs
 using UnityEngine;
 
 public class SphereCommands : MonoBehaviour
@@ -411,18 +411,18 @@ In this chapter, we'll add music to the app, and then trigger sound effects on c
 * In the Inspector Panel on the right side, find the **Spatializer Plugin** setting and select **MS HRTF Spatializer**.
 * From the **Holograms** folder in the Project panel, drag the **Ambience** object onto the **OrigamiCollection** object in the Hierarchy Panel.
 * Select **OrigamiCollection** and find the **Audio Source** component in the Inspector panel. Change these properties:
-* Check the **Spatialize** property.
-* Check the **Play On Awake**.
-* Change **Spatial Blend** to **3D** by dragging the slider all the way to the right. The value should change from 0 to 1 when you move the slider.
-* Check the **Loop** property.
-* Expand **3D Sound Settings**, and enter **0.1** for **Doppler Level**.
-* Set **Volume Rolloff** to **Logarithmic Rolloff**.
-* Set **Max Distance** to **20**.
+    * Check the **Spatialize** property.
+    * Check the **Play On Awake**.
+    * Change **Spatial Blend** to **3D** by dragging the slider all the way to the right. The value should change from 0 to 1 when you move the slider.
+    * Check the **Loop** property.
+    * Expand **3D Sound Settings**, and enter **0.1** for **Doppler Level**.
+    * Set **Volume Rolloff** to **Logarithmic Rolloff**.
+    * Set **Max Distance** to **20**.
 * In the **Scripts** folder, create a script named **SphereSounds**.
 * Drag and drop **SphereSounds** to the **Sphere1** and **Sphere2** objects in the Hierarchy.
 * Open **SphereSounds** in Visual Studio, update the following code and **Save All**.
 
-```
+```cs
 using UnityEngine;
 
 public class SphereSounds : MonoBehaviour
@@ -519,8 +519,8 @@ Now we are going to use [spatial mapping](spatial-mapping.md) to place the game 
 * Drag the **Spatial Mapping** asset into the root of the **Hierarchy**.
 * Click on the **Spatial Mapping** object in the Hierarchy.
 * In the **Inspector panel**, change the following properties:
-* Check the **Draw Visual Meshes** box.
-* Locate **Draw Material** and click the circle on the right. Type "**wireframe**" into the search field at the top. Click on the result and then close the window. When you do this, the value for Draw Material should get set to Wireframe.
+    * Check the **Draw Visual Meshes** box.
+    * Locate **Draw Material** and click the circle on the right. Type "**wireframe**" into the search field at the top. Click on the result and then close the window. When you do this, the value for Draw Material should get set to Wireframe.
 * Export, build and deploy the app to your HoloLens.
 * When the app runs, a wireframe mesh will overlay your real world.
 * Watch how a rolling sphere will fall off the stage, and onto the floor!
@@ -531,7 +531,7 @@ Now we'll show you how to move the OrigamiCollection to a new location:
 * Drag the **TapToPlaceParent** script onto the Stage object.
 * Open the **TapToPlaceParent** script in Visual Studio, and update it to be the following:
 
-```
+```cs
 using UnityEngine;
 
 public class TapToPlaceParent : MonoBehaviour
@@ -599,14 +599,14 @@ public class TapToPlaceParent : MonoBehaviour
 
 Now we'll show you how to uncover the holographic underworld:
 * From the **Holograms** folder in the Project Panel:
-* Drag **Underworld** into the Hierarchy to be a child of **OrigamiCollection**.
+    * Drag **Underworld** into the Hierarchy to be a child of **OrigamiCollection**.
 * In the **Scripts** folder, create a script named **HitTarget**.
 * In the **Hierarchy**, expand the **OrigamiCollection**.
 * Expand the **Stage** object and select the **Target** object (blue fan).
 * Drag the **HitTarget** script onto the **Target** object.
 * Open the **HitTarget** script in Visual Studio, and update it to be the following:
 
-```
+```cs
 using UnityEngine;
 
 public class HitTarget : MonoBehaviour
@@ -630,8 +630,8 @@ public class HitTarget : MonoBehaviour
 
 * In Unity, select the **Target** object.
 * Two public properties are now visible on the **Hit Target** component and need to reference objects in our scene:
-* Drag **Underworld** from the **Hierarchy** panel to the **Underworld** property on the **Hit Target** component.
-* Drag **Stage** from the **Hierarchy** panel to the **Object to Hide** property on the **Hit Target** component.
+    * Drag **Underworld** from the **Hierarchy** panel to the **Underworld** property on the **Hit Target** component.
+    * Drag **Stage** from the **Hierarchy** panel to the **Object to Hide** property on the **Hit Target** component.
 * Export, build and deploy the app.
 * Place the Origami Collection on the floor, and then use the Select gesture to make a sphere drop.
 * When the sphere hits the target (blue fan), an explosion will occur. The collection will be hidden and a hole to the underworld will appear.
