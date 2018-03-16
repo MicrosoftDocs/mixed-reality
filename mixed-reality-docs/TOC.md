@@ -172,5 +172,3 @@
 ### [Troubleshooting](troubleshooting.md)
 ### [Turn HoloLens off and on](turn-hololens-off-and-on.md)
 ### [Updating the HoloLens device](updating-the-hololens-device.md)
-### [What can I do with HoloLens offline](what-can-i-do-with-hololens-offline.md)
-### [Windows Insider flight and driver notes](windows-insider-flight-and-driver-notes.md)
