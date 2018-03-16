@@ -25,7 +25,7 @@ There are several image assets required by the appx building tools to build your
 | Required Asset | Recommended Scale | Image Format | Where is this displayed? | 
 |----------|----------|----------|------------------|
 | Square 71x71 Logo | Any |  PNG | N/A | 
-| Square 150x150 Logo | 150x150 (100% scale) | 225x225 (150% scale) | PNG | Start pins and All Apps (if 310x310 isn't provided), Store Search Suggestions, Store Listing Page, Store Browse, Store Search | 
+| Square 150x150 Logo | 150x150 (100% scale) or 225x225 (150% scale) | PNG | Start pins and All Apps (if 310x310 isn't provided), Store Search Suggestions, Store Listing Page, Store Browse, Store Search | 
 |  Wide 310x150 Logo |  Any  |  PNG  |  N/A | 
 |  Store Logo |  75x75 (150% scale)  |  PNG  |  Dev Center, Report App, Write a Review, My Library | 
 |  Splash Screen |  930x450 (150% scale)  |  PNG  |  2D app launcher (slate) | 
