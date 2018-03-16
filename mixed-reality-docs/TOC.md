@@ -171,4 +171,4 @@
 ### [Sensor tuning](sensor-tuning.md)
 ### [Troubleshooting](troubleshooting.md)
 ### [Turn HoloLens off and on](turn-hololens-off-and-on.md)
-### [Updating the HoloLens device](updating-the-hololens-device.md)
+### [Updating HoloLens](updating-hololens.md)
