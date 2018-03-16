@@ -22,6 +22,18 @@ Our HoloLens [development team](galaxy-explorer.md#meet-the-team) of designers, 
 
 >[!VIDEO https://www.youtube.com/embed/HsnH2Q7HxOA]
 
+## Share your idea
+
+The Galaxy Explorer journey begins with the "Share your idea" campaign.
+
+>[!VIDEO https://www.youtube.com/embed/ZxGdW_ASrRc]
+
+The Microsoft HoloLens community is bursting with spectacular ideas for how holographic computing will transform our world. We believe the most incredible HoloLens apps will come out of ideas you imagine together.
+
+You shared over 5000 amazing ideas throughout those few weeks! Our development team reviewed the most successful and viable ideas and offered to build one of the top three ideas.
+
+After a 24-hour Twitter poll, Galaxy Explorer was the winning idea! Our HoloLens development team of designers, artists, and developers built Galaxy Explorer and invited all of you to be part of this journey with them. You can follow the development process in the videos below.
+
 ## Ep 1: Trust the Process
 
 >[!VIDEO https://www.youtube.com/embed/rIX2XrRQgDg]
@@ -64,13 +76,18 @@ In Episode 6, the team finishes the last week of development, prepares for two w
 
 In Episode 7, the team completes the project and shares their code.
 
-## Follow Along Blog
+## Follow along blog
+
 * [Week Two Update: Prototyping](https://microsoftstudios.com/hololens/2016/02/03/week-2-update-prototyping)
 * [Prototype Update](https://microsoftstudios.com/hololens/2016/02/09/prototype-update)
 * [Interaction Prototype](https://microsoftstudios.com/hololens/2016/02/18/interaction-prototype)
 * [Working low-fi to high-fi](https://microsoftstudios.com/hololens/2016/02/05/working-low-fi-to-high-fi)
 * [Art process of creating a galaxy](https://microsoftstudios.com/hololens/2016/02/24/art-process-creating-a-galaxy)
 * [Tech process of creating a galaxy](https://microsoftstudios.com/hololens/2016/03/10/tech-process-creating-a-galaxy)
+
+## Case study
+
+You can find even more insights and lessons from developing Galaxy Explorer by reading the ["Creating a galaxy in mixed reality" case study](case-study-creating-a-galaxy-in-mixed-reality.md).
 
 ## Meet the team
 
