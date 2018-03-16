@@ -16,9 +16,10 @@ When you take [mixed reality photos and videos](mixed-reality-capture.md) on you
 
 ## Photos app
 
-The Photos app is one of the default apps on the Start Menu.
+The Photos app is one of the default apps on the Start menu.
 
-![Start Menu on HoloLens](images/20160205-152936-hololens-200px.jpg)
+![Start Menu on HoloLens](images/20160205-152936-hololens-200px.jpg)<br>
+Photos app on the Start menu
 
 ### To see your photos and videos
 1. [Bloom](gestures.md#bloom) to open the Start Menu
@@ -83,7 +84,7 @@ Any photos and videos uploaded will be available on all of your other OneDrive e
 2. Gaze at the Pin button and air-tap.
 3. Use gaze to position the photo or video, then air-tap or say “Place.”
 
-![Pin a photo or video in your Mixed World](images/pin-photos-app-300px.png)
+![Pin a photo or video in your Mixed World](images/pin-photos-app-300px.png)<br>
 Pin a photo or video in your physical environment
 
 ## OneDrive
