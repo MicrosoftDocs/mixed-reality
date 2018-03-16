@@ -39,9 +39,9 @@ In this course, we'll revisit Model Explorer, which we built in [Holograms 210](
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-212-Voice.zip) required by the project. Requires Unity 2017.2 or later.
-* If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-212.zip).
-* If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-212.zip).
-* If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-212.zip).
+    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-212.zip).
+    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-212.zip).
+    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-212.zip).
 * Unarchive the files to your desktop or other easy to reach location.
 
 **Errata and Notes**
@@ -94,12 +94,12 @@ In this chapter, you'll learn about designing voice commands. When creating voic
 **DON'T**
 * Use single syllable commands. As an example, if you were creating a voice command to play a video, you should avoid using the simple command *"Play"*, as it is only a single syllable and could easily be missed by the system. Instead, you should use: *"Play Video"*, because it is concise and has multiple syllables.
 * Use system commands. The *"Select"* command is reserved by the system to trigger a Tap event for the currently focused object. Do not re-use the *"Select"* command in a keyword or phrase, as it might not work as you expect. For example, if the voice command for selecting a cube in your application was *"Select cube"*, but the user was looking at a sphere when they uttered the command, then the sphere would be selected instead. Similarly app bar commands are voice enabled. Don't use the following speech commands in your CoreWindow View:
-1. Go Back
-2. Scroll Tool
-3. Zoom Tool
-4. Drag Tool
-5. Adjust
-6. Remove
+    1. Go Back
+    2. Scroll Tool
+    3. Zoom Tool
+    4. Drag Tool
+    5. Adjust
+    6. Remove
 * Use similar sounds. Try to avoid using voice commands that rhyme. If you had a shopping application which supported *"Show Store"* and *"Show More"* as voice commands, then you would want to disable one of the commands while the other was in use. For example, you could use the *"Show Store"* button to open the store, and then disable that command when the store was displayed so that the *"Show More"* command could be used for browsing.
 
 **Instructions**
@@ -151,7 +151,7 @@ The **Microphone** capability must be declared for an app to record from the mic
 Communicator.cs is responsible for setting the proper button states on the communicator device. This will allow our users to record a message, play it back, and send the message to the astronaut. It will also start and stop an animated wave form, to acknowledge to the user that their voice was heard.
 * In **Communicator.cs**, delete the following lines from the **Start** method. This will enable the 'Record' button on the communicator.
 
-```
+```cs
 // TODO: 2.a Delete the following two lines:
 RecordButton.SetActive(false);
 MessageUIRenderer.gameObject.SetActive(false);
@@ -178,8 +178,8 @@ MessageUIRenderer.gameObject.SetActive(false);
 In this chapter, we'll use the Dictation Recognizer to create a message for the astronaut. When using the Dictation Recognizer, keep in mind that:
 * You must be connected to WiFi for the Dictation Recognizer to work.
 * Timeouts occur after a set period of time. There are two timeouts to be aware of:
-* If the recognizer starts and doesn't hear any audio for the first five seconds, it will timeout.
-* If the recognizer has given a result but then hears silence for twenty seconds, it will timeout.
+    * If the recognizer starts and doesn't hear any audio for the first five seconds, it will timeout.
+    * If the recognizer has given a result but then hears silence for twenty seconds, it will timeout.
 * Only one type of recognizer (Keyword or Dictation) can run at a time.
 
 **Note**
@@ -202,7 +202,7 @@ We're going to edit **MicrophoneManager.cs** to use the Dictation Recognizer. Th
 Let's get started.
 * Complete all coding exercises for 3.a in **MicrophoneManager.cs**, or copy and paste the finished code found below:
 
-```
+```cs
 using Academy.HoloToolkit.Unity;
 using System.Collections;
 using System.Text;
@@ -414,9 +414,9 @@ The **Microphone** capability must be declared for an app to record from the mic
 5. Take a look at the **SRGSColor.xml** file in the **StreamingAssets** folder.
 * The SRGS design spec can be found on the W3C website [here](https://www.w3.org/TR/speech-grammar/).
 * In our SRGS file, we have three types of rules:
-* A rule which lets you say one color from a list of twelve colors.
-* Three rules which listen for a combination of the color rule and one of the three shapes.
-* The root rule, colorChooser, which listens for any combination of the three "color + shape" rules. The shapes can be said in any order and in any amount from just one to all three. This is the only rule that is listened for, as it's specified as the root rule at the top of the file in the initial <grammar> tag.
+    * A rule which lets you say one color from a list of twelve colors.
+    * Three rules which listen for a combination of the color rule and one of the three shapes.
+    * The root rule, colorChooser, which listens for any combination of the three "color + shape" rules. The shapes can be said in any order and in any amount from just one to all three. This is the only rule that is listened for, as it's specified as the root rule at the top of the file in the initial &lt;grammar&gt; tag.
 
 **Build and Deploy**
 * Rebuild the application in Unity, then build and deploy from Visual Studio to experience the app on HoloLens.
