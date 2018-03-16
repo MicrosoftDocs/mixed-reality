@@ -127,7 +127,6 @@
 ## [Open source projects](open-source-projects.md)
 ### [Galaxy Explorer](galaxy-explorer.md)
 ### [Mixed Reality Partner Program](mixed-reality-partner-program.md)
-### [Share your idea](share-your-idea.md)
 
 
 ## Other
