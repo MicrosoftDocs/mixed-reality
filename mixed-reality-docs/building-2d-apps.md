@@ -12,7 +12,7 @@ keywords: 2D app, UWP, flat app, HoloLens, immersive headset
 
 # Updating 2D UWP apps for mixed reality
 
-Windows Mixed Reality enables a user to see holograms as if they are right around you, in your physical or digital world. At its core, both HoloLens and the Desktop PCs you attach headset accessories to are Windows 10 devices; this means that you're able to run almost all of the Universal Windows Platform (UWP) apps in the Store as 2D apps.
+Windows Mixed Reality enables a user to see holograms as if they are right around you, in your physical or digital world. At its core, both HoloLens and the Desktop PCs you attach immersive headset accessories to are Windows 10 devices; this means that you're able to run almost all of the Universal Windows Platform (UWP) apps in the Store as 2D apps.
 
 ## Creating a 2D UWP app for mixed reality
 
@@ -89,18 +89,7 @@ At this point, one of two things can happen:
 1. Your app will show its splash and start running after it is placed in the Emulator! Awesome!
 2. Or after you see a loading animation for a 2D hologram, loading will stop and you will just see your app at its splash screen. This means that something went wrong and it will take more investigation to understand how to bring your app to life in Mixed Reality.
 
-## How to debug issues specific to HoloLens
-
-HoloLens Development Edition is a new device target of the Windows 10 operating system, so there are [Universal Windows Platform APIs that are still undergoing testing and development](current-limitations-for-apps-using-apis-from-the-shell.md#universal-apis-not-supported). We've experienced our own challenges bringing Microsoft UWP apps to HoloLens.
-
-Here are some high level areas that we've found to be a problem:
-* Querying for File System paths not supported on startup.
-* Using legacy authentication methods outside of Web Authentication Broker or Web Account Manager.
-* Making deep device hardware queries on startup (i.e. games).
-* Using Calendar, People, Contact APIs on startup.
-* Using large 3rd party libraries or services that may not be fully vetted on HoloLens.
-
-To get to the bottom of what's causing your UWP app not to start on HoloLens, you'll have to debug.
+To get to the bottom of what may be causing your UWP app not to start on HoloLens, you'll have to debug.
 
 ### Running your UWP app in the debugger
 
@@ -113,36 +102,11 @@ These steps will walk you through debugging your UWP app using the Visual Studio
 
 ![HoloLens Emulator loaded with a UWP sample showing a system exception](images/hololensemulatorwithuwpsampleexception-800px.png)
 
-### Understanding the failure
-
-As mentioned above, there are known issues with APIs under testing and development for the HoloLens Development Edition. If you find that your app uses one of the APIs in the namespaces [listed as having potential problems](current-limitations-for-apps-using-apis-from-the-shell.md#universal-apis-not-supported), use the Windows Feedback tool to send feedback to Microsoft.
-
-**How to open the Windows Feedback tool**
-1. [Bloom](gestures.md#bloom) to see the **Start menu**
-2. Launch and place the **Windows Feedback** app.
-3. Select **Developer Platform** and send us the details of your problem.
-
-We are continually fixing platform bugs in the APIs of UWP. For APIs that are failing by design - because they are not supported on HoloLens - here are the patterns that you can expect in your app and design around:
-
-**Error codes**
-* Should not return a special failure HRESULT just because the API is partially-functional. Instead, APIs should signal failure via the design of the API itself by using empty collections, boolean return values, explicit status codes, etc. Note that if the API already returns HRESULTs due to programming errors (eg, passing invalid arguments) then it will continue to return those failures as appropriate.
-
-**Collections**
-* Should not return a null IVector[View], IMap[View], or Array from a property getter or method return. Instead, they will return a valid object that has zero items in it. If the type of the map or vector is mutable (ie, not a View) then allow the app to make changes even if they are not used anywhere.
-* In some rare cases, APIs expose a read / write collection property that allows the app to provide a value of their own. In these cases, if the API already returns null in the fully-functional case, it should continue to return null in the partially-functional case. Note however that this is an API Design anti-pattern and should not generally be followed by most UWP APIs.
-
-**Asynchronous functions**
-* Should not return a null IAsyncAction or IAsyncOperation from an Async method. Instead, they will return a valid object that is already in the completed state and has the appropriate result (empty collection, status code, etc.).
-
-**Events**
-* Will not fail or ignore event registrations. Instead, API should accept the event registration / un-registration but simply never raise the event. The API must hold on to any registered event handlers (rather than silently ignoring them) since an app might inadvertently rely on the registration for lifetime management.
-
 ## Update your UI
 
-Now that your UWP app is running on Desktop headsets and/or HoloLens as a 2D hologram, next we'll make sure it looks beautiful. Here are some things to consider:
+Now that your UWP app is running on immersive headsets and/or HoloLens as a 2D hologram, next we'll make sure it looks beautiful. Here are some things to consider:
 * Windows Mixed Reality will run all 2D apps at a fixed resolution and DPI that equates to 853x480 effective pixels. Consider if your design needs refinement at this scale and think through our [2D UI guidance](updating-your-existing-universal-app-for-hololens.md) to improve your experience on HoloLens.
-* Windows Mixed Reality [does not support](app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app.
-* Windows Mixed Reality on HoloLens [does not support](current-limitations-for-apps-using-apis-from-the-shell.md) the Share contract, 2D Printing, full screen mode, casting, and other features that may be in your app.
+* Windows Mixed Reality [does not support](app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app or explore 3D live tiles.
 
 ## New input possibilities
 
