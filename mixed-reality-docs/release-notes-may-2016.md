@@ -113,7 +113,7 @@ We fixed issues with Visual Studio where
 * [HoloLens known issues](hololens-known-issues.md)
 * [Install the tools](install-the-tools.md)
 * [Shell](navigating-the-windows-mixed-reality-home.md)
-* [Updating your existing universal app for HoloLens](updating-your-existing-universal-app-for-hololens.md)
+* [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
 * [Hardware accessories](hardware-accessories.md)
 * [Mixed reality capture](mixed-reality-capture.md)
 * [Voice input](voice-input.md)
