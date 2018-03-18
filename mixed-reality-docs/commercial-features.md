@@ -14,6 +14,8 @@ keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk m
 
 The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices. Commercial features are included in the Windows operating system, but they are enabled by a license. In nearly all cases, the license is enabled by Microsoft Device Management when the HoloLens device enrolls in an organization. Contact your local Microsoft account manager to purchase the Microsoft HoloLens Commercial Suite.
 
+&nbsp;
+
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
 ## Key commercial features
