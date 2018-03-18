@@ -115,7 +115,6 @@
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 ### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 ### [Testing your app on HoloLens](testing-your-app-on-hololens.md)
-### [Updating your existing universal app for HoloLens](updating-your-existing-universal-app-for-hololens.md)
 ### [Updating your SteamVR application for Windows Mixed Reality](updating-your-steamvr-application-for-windows-mixed-reality.md)
 ### [Using the HoloLens emulator](using-the-hololens-emulator.md)
 ### [Using the Windows Device Portal](using-the-windows-device-portal.md)
