@@ -1,6 +1,6 @@
 ---
 title: Motion controllers
-description: Details on the Mixed Reality Motion Controllers
+description: Details on the Mixed Reality motion controllers.
 author: wguyman
 ms.author: wguyman
 ms.date: 2/28/2018
@@ -72,23 +72,36 @@ Motion controllers can be bonded with host PC using Windows settings like any ot
 
 6.    Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
 
-7.    Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected. ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png) 8.    You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category”** as **Connected**. At this point, you may get a firmware update – see next section (“Updating controller firmware”).
+7.    Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
+
+**Select Motion controller to pair, if multiple instances select one from appearing bottom of the list**
+
+![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)
+
+8.    You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category”** as **Connected**. At this point, you may get a firmware update – see next section (“Updating controller firmware”).
 
 9.    Reattach battery cover.
 
 10.    Repeat steps 1-9 for the second controller.
 
-After successfully pairing both controllers, your settings should look like this under “**“Mouse, keyboard, & pen” category** ![Motion controllers connected](images/450px-motion-controller-connected-300px.png)
+After successfully pairing both controllers, your settings should look like this under “**“Mouse, keyboard, & pen” category** 
+
+**Motion controllers connected**
+
+![Motion controllers connected](images/450px-motion-controller-connected-300px.png)
 
 If the controllers are turned off after pairing, their status will show up as Paired. If controllers stay permanently under “Other devices” category pairing may have been only partially completed and need to be performed again to get controller functional.
 
 ### Updating controller firmware
 * If an immersive headset is connected to your PC, and new controller firmware is available, the firmware will be pushed to your motion controllers automatically the next time they're turned on. Controller firmware updates are indicated by a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes.
 * After the firmware update completes, the controllers will reboot and reconnect.
-1. Both controllers should be connected now. ![Controllers connected](images/cyk-connected-300px.jpg)
+    1. Both controllers should be connected now. 
+    
+    ![Controllers connected](images/cyk-connected-300px.jpg)
+
 * Verify your controllers work properly:
-1. Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
-2. Move your controllers and verify tracking, test buttons, and verify [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
+    1. Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
+    2. Move your controllers and verify tracking, test buttons, and verify [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
 
 ## Gazing and pointing
 
@@ -109,8 +122,6 @@ To manage any such recoil that may occur when users pull the trigger, your app c
 Windows Mixed Reality supports motion controllers in a variety of form factors, with each controller's design differing in its relationship between the user's hand position and the natural "forward" direction that apps should use for pointing when rendering the controller.
 
 To better represent these controllers, there are two kinds of poses you can investigate for each interaction source, the **grip pose** and the **pointer pose**.
-
-(images/GripVsPointer.png)
 
 ### Grip pose
 
@@ -136,8 +147,9 @@ Like the headsets, the Windows Mixed Reality motion controller requires no setup
 
 If the user moves the controllers out of the headset's field of view, in most cases Windows will continue to infer controller positions and provide them to the app. When the controller has lost visual tracking for long enough, the controller's positions will drop to approximate-accuracy positions.
 
-At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing. \
+At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing.
 
+&nbsp;
 
 >[!VIDEO https://www.youtube.com/embed/rkDpRllbLII]
 
