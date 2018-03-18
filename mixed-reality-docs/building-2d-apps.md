@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: 2D app, UWP, flat app, HoloLens, immersive headset
+keywords: 2D app, UWP, flat app, HoloLens, immersive headset, app model, back button, app bar, dpi, resolution, scale
 ---
 
 
@@ -105,8 +105,51 @@ These steps will walk you through debugging your UWP app using the Visual Studio
 ## Update your UI
 
 Now that your UWP app is running on immersive headsets and/or HoloLens as a 2D hologram, next we'll make sure it looks beautiful. Here are some things to consider:
-* Windows Mixed Reality will run all 2D apps at a fixed resolution and DPI that equates to 853x480 effective pixels. Consider if your design needs refinement at this scale and think through our [2D UI guidance](updating-your-existing-universal-app-for-hololens.md) to improve your experience on HoloLens.
-* Windows Mixed Reality [does not support](app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app or explore 3D live tiles.
+* Windows Mixed Reality will run all 2D apps at a fixed resolution and DPI that equates to 853x480 effective pixels. Consider if your design needs refinement at this scale and review the design guidance below to improve your experience on HoloLens and immersive headsets.
+* Windows Mixed Reality [does not support](app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app or explore [3D app launchers](3d-app-launcher-design-guidance.md).
+
+### 2D app view resolution and scale factor
+
+![From responsive design](images/scale-500px.png)
+
+Windows 10 moves all visual design from real screen pixels to **effective pixels**. That means, developers design their UI following the Windows 10 Human Interface Guidelines for effective pixels, and Windows scaling ensures those effective pixels are the right size for usability across devices, resolutions, DPI, etc. See this [great read on MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) to learn more as well as this [BUILD presentation](http://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
+
+Even with the unique ability to place apps in your world at a range of distances, TV-like viewing distances are recommended to produce the best readability and interaction with gaze/gesture. Because of that, a virtual slate in the Mixed Reality Home will display your flat UWP view at:
+
+**1280x720, 150%DPI** (853x480 effective pixels)
+
+This resolution has several advantages:
+* This effective pixel layout will have about the same information density as a tablet or small desktop.
+* It matches the fixed DPI and effective pixels for UWP apps running on Xbox One, enabling seamless experiences across devices.
+* This size looks good when scaled across our range of operating distances for apps in the world.
+
+### 2D app view interface design best practices
+
+**Do:**
+* Follow the [Windows 10 Human Interface Guidelines (HIG)](https://dev.windows.com/en-us/design) for styles, font sizes and button sizes. HoloLens will do the work to ensure your app will have compatible app patterns, readable text sizes, and appropriate hit target sizing.
+* Ensure your UI follows best practices for [responsive design](https://msdn.microsoft.com/en-us/library/windows/apps/dn958435.aspx) to look best at HoloLen's unique resolution and DPI.
+* Use the "light" color theme recommendations from Windows.
+
+**Don't:**
+* Change your UI too drastically when in mixed reality, to ensure users have a familiar experience in and out of the headset.
+
+### Understand the app model
+
+The [app model](app-model.md) for mixed reality is designed to use the Mixed Reality Home, where many apps live together. Think of this as the mixed reality equivalent of the desktop, where you run many 2D apps at once. This has implications on app life cycle, Tiles, and other key features of your app.
+
+### App bar and back button
+
+2D views are decorated with a app bar above their content. The app bar has two points of app-specific personalization:
+
+**Title:** displays the *displayname* of the Tile associated with the app instance
+
+**Back Button:** raises the *[BackRequested](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* event when pressed. Back Button visibility is controlled by *[SystemNavigationManager.AppViewBackButtonVisibility](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
+
+![App bar UI in 2D app view](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)
+
+### Test your 2D app's design
+
+It is important to test your app to make sure the text is readable, the buttons are targetable, and the overall app looks correct. You can [test](testing-your-app-on-hololens.md) on a desktop headset, a HoloLens, an emulator, or a touch device with resolution set to 1280x720 @150%.
 
 ## New input possibilities
 
