@@ -113,7 +113,7 @@ Like in the previous section, you can use **ApplicationViewSwitcher.SwitchAsync*
 
 2D app views always appear in a fixed virtual slate. This makes all 2D views show the exact same amount of content. Here are some further details about the size of your app's 2D view:
 * The aspect ratio of the app is preserved while resizing.
-* App [resolution and scale factor](updating-your-existing-universal-app-for-hololens.md#universal-app-resolution-and-scale-factor) are not changed by resizing.
+* App [resolution and scale factor](building-2d-apps.md#2d-app-view-resolution-and-scale-factor) are not changed by resizing.
 * Apps are not able to query their actual size in the world.
 
 ![2D apps appear with fixed window sizes](images/12493521-10104043956964683-6118765685995662420-o-500px.jpg)
