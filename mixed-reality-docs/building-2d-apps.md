@@ -172,7 +172,6 @@ Once your app is up and running, package your app to [submit it to the Microsoft
 
 ## See also
 * [App model](app-model.md)
-* [Updating your existing universal app for HoloLens](updating-your-existing-universal-app-for-hololens.md)
 * [Gaze](gaze.md)
 * [Gesture](gestures.md)
 * [Motion controllers](motion-controllers.md)
