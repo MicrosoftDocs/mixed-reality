@@ -149,6 +149,7 @@ If the user moves the controllers out of the headset's field of view, in most ca
 
 At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing.
 
+&nbsp;
 
 >[!VIDEO https://www.youtube.com/embed/rkDpRllbLII]
 
