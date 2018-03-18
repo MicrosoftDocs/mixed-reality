@@ -87,8 +87,8 @@ Create app experiences that span across the spectrum of mixed reality. From imme
 ## Page list
 
 The following 5 pages are in this category.
-* [Billboarding and tag-along](../billboarding-and-tag-along.md)
-* [Performance recommendations for immersive headset apps](../performance-recommendations-for-immersive-headset-apps.md)
-* [Room scan visualization](../room-scan-visualization.md)
-* [Types of mixed reality apps](../types-of-mixed-reality-apps.md)
-* [Updating your existing universal app for HoloLens](../updating-your-existing-universal-app-for-hololens.md)
+* [Billboarding and tag-along](billboarding-and-tag-along.md)
+* [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
+* [Room scan visualization](room-scan-visualization.md)
+* [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+* [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
