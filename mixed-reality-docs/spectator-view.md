@@ -12,7 +12,13 @@ keywords: Spectator View, BlackMagic, Black Magic, Elgato, OpenCV, Compositor, C
 
 # Spectator view
 
-![Spectator view setup](images/spectatorview-300px.png)When wearing a mixed reality headset, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator view allows others to see on a 2D screen what a HoloLens user sees in their world. Using spectator view involves these four components:
+**Spectator view setup**
+
+
+![Spectator view setup](images/spectatorview-300px.png)
+
+
+When wearing a mixed reality headset, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator view allows others to see on a 2D screen what a HoloLens user sees in their world. Using spectator view involves these four components:
 1. An app built specifically to enable spectator view, which is based on [shared experiences in mixed reality](shared-experiences-in-mixed-reality.md).
 2. A user wearing HoloLens using the app.
 3. A spectator view camera rig providing a third-person perspective video.
@@ -24,12 +30,23 @@ keywords: Spectator View, BlackMagic, Black Magic, Elgato, OpenCV, Compositor, C
 
 >[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]
 
-![Spectator view photo capture scenario example](images/fall-350px.jpg) ![Spectator view video capture scenario example](images/spectatorviewvideo.gif) There are three key scenarios that work well with this technology:
-1. **Photo capture**\
+**Spectator view photo capture scenario example**
+
+
+![Spectator view photo capture scenario example](images/fall-350px.jpg)
+
+**Spectator view video capture scenario example**
+
+
+![Spectator view video capture scenario example](images/spectatorviewvideo.gif) 
+
+
+There are three key scenarios that work well with this technology:
+1. **Photo capture**
 Using this technology, you can capture high resolution images of your holograms. These images can be used to showcase content at marketing events, send to your potential clients, or even submit your application to the Windows Store. You get to decide which photo camera you would like to use to capture these images, as such you may prefer a quality DSLR camera.
-2. **Live demonstrations**\
+2. **Live demonstrations**
 Spectator view is a preferred approach for live demonstrations as the camera position remains steady or controlled. Because you can use a high-quality video camera, you can also produce high-quality images meant for a big screen. This is also appropriate for streaming live demos on a screen, possibly to eager participants waiting in line for their turn.
-3. **Video capture**\
+3. **Video capture**
 Videos are the best story telling mechanism for sharing a holographic app experience with many people. Spectator view lets you choose the camera, lens, and framing that best suits how you want to showcase your app. It puts you in control of the video quality based on the video hardware you have available.
 
 
@@ -38,7 +55,13 @@ Videos are the best story telling mechanism for sharing a holographic app experi
 
 [Mixed reality capture](mixed-reality-capture.md) (MRC) provides a video composite of what the HoloLens user is seeing from a first person point-of-view. Spectator view produces a video from a third-person perspective, allowing the video observer to see the environment with holograms and the user wearing a HoloLens device. Because you have a choice of camera, spectator views can also produce higher resolution and better quality images than the built-in HoloLens camera used for MRC images. For this reason, spectator view is better suited for app images in the Windows Store, marketing videos, or for projecting a live view for an audience.
 
-![Spectator view professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)Spectator view has been an essential piece of how Microsoft HoloLens has presented experiences to audiences since the very beginning when the product was announced in January 2015. The professional setup used had high demands and an expensive price tag to go with it. For example, the camera uses a genlock signal to ensure precise timing that coordinates with the HoloLens tracking system. In this setup, moving the spectator view camera was possible while keeping holograms stable to match the experience of someone who is seeing the experience directly in HoloLens.
+**Spectator view professional camera used in Microsoft keynote presentations**
+
+
+![Spectator view professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)
+
+
+Spectator view has been an essential piece of how Microsoft HoloLens has presented experiences to audiences since the very beginning when the product was announced in January 2015. The professional setup used had high demands and an expensive price tag to go with it. For example, the camera uses a genlock signal to ensure precise timing that coordinates with the HoloLens tracking system. In this setup, moving the spectator view camera was possible while keeping holograms stable to match the experience of someone who is seeing the experience directly in HoloLens.
 
 The open-source version of spectator view trades off the ability to move the camera rig in order to dramatically lower the cost of the overall setup. This project uses an external camera rigidly mounted to a HoloLens to take high-definition pictures and video of your holographic Unity project. **During live demonstrations, the camera should remain in a fixed position.** Movement of the camera can lead to hologram jitter or drift. This is because the timing of the video frame and the rendering of holograms on the PC may not be precisely synchronized. Therefore, keeping the camera steady or limiting movement will produce a result close to what the person wearing a HoloLens can see.
 
@@ -46,10 +69,16 @@ To make your app ready for spectator view, you'll need to build a [shared exp
 
 ## Hardware shopping list
 
-![Spectator View Rig](images/spectatorviewrig-350px.jpg)Below is a recommended list of hardware, but you can experiment with other compatible units too. 
+**Spectator View Rig**
+
+
+![Spectator View Rig](images/spectatorviewrig-350px.jpg)
+
+
+Below is a recommended list of hardware, but you can experiment with other compatible units too. 
 
 |  Hardware component  |  Recommendation | 
-|----------|----------|
+| --- | --- |
 |  A PC configuration that works for holographic development with the HoloLens emulator.  |  | 
 |  Camera with HDMI out or photo capture SDK. | For photo and video capture, we have tested the [Canon EOS 5D Mark III](https://www.amazon.com/Canon-Frame-Full-HD-Digital-Camera/dp/B007FGYZFI/ref=sr_1_3?s=photo&ie=UTF8&qid=1480537693&sr=1-3&keywords=Canon+5D+Mark+III) camera. For live demonstrations, we have tested the [Blackmagic Design Production Camera 4K](https://www.amazon.com/Blackmagic-Design-Production-Camera-Mount/dp/B00CWLSHYG/ref=sr_1_1?s=photo&ie=UTF8&qid=1480537790&sr=1-1&keywords=blackmagic+design+production+camera+4k). Note, any camera with HDMI out (e.g. GoPro) should work. Many of our videos use the [Canon EF 14mm f/2.8L II USM Ultra-Wide Angle Fixed Lens](https://www.amazon.com/Canon-Ultra-Wide-Angle-Digital-Cameras/dp/B000V5P94Q), but you should choose a camera lens that meets your needs. | 
 |  Capture card for your PC to get color frames from your camera to calibrate your rig and preview your composite scene. |  We have tested the [Blackmagic Design Intensity Pro 4K capture card](https://www.amazon.com/dp/B00U3QNP7Q). | 
@@ -86,7 +115,12 @@ To make your app ready for spectator view, you'll need to build a [shared exp
 
 ### Rig Assembly
 
+**Assembled spectator view rig with HoloLens and DSLR camera**
+
+
 ![Assembled spectator view rig with HoloLens and DSLR camera.](images/assembly.gif)
+
+
 * Use a T7 screwdriver to remove the headband from the HoloLens. Once the screws are loose, poke them out with a paperclip from the other side.
 * Remove the screw cap on the inside front of the HoloLens visor with a small flat head screwdriver.
 * Use a T15 screwdriver to remove the small torx bolts from the HoloLens bracket to remove the U and Hook-shaped attachments.
@@ -121,23 +155,35 @@ After setting up your spectator view rig, you must calibrate in order to get the
 * In this solution, you will find the file dependencies.props which creates macros for the inc locations of the 3rd party sources.
 * Update this file with the location you installed OpenCV 3.1, the Blackmagic SDK, and the Canon SDK (if applicable)
 
+**Dependency locations snapshot in Visual Studio**
+
+
 ![Dependency locations snapshot in Visual Studio](images/dependencies-600px.png)
+
+
 * Print out the calibration pattern Calibration\CalibrationPatterns\2_66_grid_FULL.png on a flat, rigid surface.
 * Plug your HoloLens into your PC over USB.
 * Update the preprocessor definitions **HOLOLENS_USER** and **HOLOLENS_PW** in **stdafx.h** with your HoloLens' device portal credentials.
 * Attach your camera to your capture card over HDMI and turn it on.
 * Run the Calibration solution.
-* Move the checkerboard pattern around the view like this:![Calibrating the spectator view rig](images/calibration.gif)
+* Move the checkerboard pattern around the view like this:!
+
+**Calibrating the spectator view rig**
+
+
+[Calibrating the spectator view rig](images/calibration.gif)
+
+
 * A picture will automatically be taken when a checkerboard is in view. Look for the white light on the HoloLens' visor before advancing to the next pose.
 * When finished, press **Enter** with the Calibration app in focus to create a **CalibrationData.txt** file.
 * This file will be saved to **Documents\CalibrationFiles\CalibrationData.txt**
 * Inspect this file to see if your calibration data is accurate:
-* **DSLR RMS** should be close to 0.
-* **HoloLens RMS** should be close to 0.
-* **Stereo RMS** may be 20-50, this is acceptable since the field of view between the two cameras may be different.
-* **Translation** is the distance from the HoloLens' camera to the attached camera's lens. This is in meters.
-* **Rotation** should be close to identity.
-* **DSLR_fov** y value should be close to the vertical field of view expected from your lens' focal length and any camera body crop factor.
+   * **DSLR RMS** should be close to 0.
+   * **HoloLens RMS** should be close to 0.
+   * **Stereo RMS** may be 20-50, this is acceptable since the field of view between the two cameras may be different.
+   * **Translation** is the distance from the HoloLens' camera to the attached camera's lens. This is in meters.
+   * **Rotation** should be close to identity.
+   * **DSLR_fov** y value should be close to the vertical field of view expected from your lens' focal length and any camera body crop factor.
 * If any of the above values do not appear to make sense, recalibrate.
 * Copy this file to the **Assets** directory in your Unity project.
 
@@ -164,16 +210,18 @@ If starting from a new Unity project, you will need to do some setup first:
 * Add your **CalibrationData.txt** file to your Assets directory.
 
 ![Unity assets directory snapshot](images/files-400px.png)
+
 * Add the **HolographicCameraRig\Prefabs\SpectatorViewManager** prefab to your scene and fill in the fields:
-* **HolographicCameraManager** should be populated with the HolographicCameraManager prefab from the HolographicCameraRig prefab directory.
-* **Anchor** should be populated with the Anchor prefab from the HolographicCameraRig prefab directory.
-* **Sharing** should be populated with the Sharing prefab from the MixedRealityToolkit.
-* Note: If any of these prefabs already exist in your project hierarchy, the existing prefabs will be used instead of these ones.
-* **Spectator View IP** should be the IP of your HoloLens attached to your spectator view rig.
-* **Sharing Service IP** should be the IP of the PC running the MixedRealityToolkit SharingService.
-* Optional: If you have multiple spectator view rigs attached to multiple PC's, **Local Computer IP** should be set with the PC the spectator view rig will communicate with.
+   * **HolographicCameraManager** should be populated with the HolographicCameraManager prefab from the HolographicCameraRig prefab directory.
+   * **Anchor** should be populated with the Anchor prefab from the HolographicCameraRig prefab directory.
+   * **Sharing** should be populated with the Sharing prefab from the MixedRealityToolkit.
+   * Note: If any of these prefabs already exist in your project hierarchy, the existing prefabs will be used instead of these ones.
+   * **Spectator View IP** should be the IP of your HoloLens attached to your spectator view rig.
+   * **Sharing Service IP** should be the IP of the PC running the MixedRealityToolkit SharingService.
+   * Optional: If you have multiple spectator view rigs attached to multiple PC's, **Local Computer IP** should be set with the PC the spectator view rig will communicate with.
 
 ![Spectator View Manager properties in Unity](images/spectatorviewmanager-500px.png)
+
 * Start the MixedRealityToolkit **Sharing Service**
 * Build and deploy the app as a D3D UWP to the HoloLens attached to the spectator view rig.
 * Deploy the app to any other HoloLens devices in the experience.
@@ -183,17 +231,18 @@ If starting from a new Unity project, you will need to do some setup first:
 * Launch the compositor window under **Spectator View/Compositor**
 
 ![Compositor view for spectator view in Unity](images/compositor-500px.png)
+
 * This window allows you to:
-* Start recording video
-* Take a picture
-* Change hologram opacity
-* Change the frame offset (which adjusts the color timestamp to account for capture card latency)
-* Open the directory the captures are saved to
-* Request spatial mapping data from the spectator view camera (if a SpatialMappingManager exists in your project)
-* Visualize the scene's composite view as well as color, holograms, and alpha channel individually.
-* Turn your camera on.
-* Press play in Unity.
-* When the camera is moved, holograms in Unity should be where they are in the real world relative to your camera color feed.
+   * Start recording video
+   * Take a picture
+   * Change hologram opacity
+   * Change the frame offset (which adjusts the color timestamp to account for capture card latency)
+   * Open the directory the captures are saved to
+   * Request spatial mapping data from the spectator view camera (if a SpatialMappingManager exists in your project)
+   * Visualize the scene's composite view as well as color, holograms, and alpha channel individually.
+   * Turn your camera on.
+   * Press play in Unity.
+   * When the camera is moved, holograms in Unity should be where they are in the real world relative to your camera color feed.
 
 ## See also
 * [Mixed reality capture](mixed-reality-capture.md)
