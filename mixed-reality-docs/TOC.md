@@ -108,7 +108,7 @@
 ### [HoloLens emulator archive](hololens-emulator-archive.md)
 ### [Implementing 3D app launchers](implementing-3d-app-launchers.md)
 ### [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
-### [In App Purchases](in-app-purchases.md)
+### [In-app purchases](in-app-purchases.md)
 ### [Locatable camera](locatable-camera.md)
 ### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 ### [Perception simulation](perception-simulation.md)
