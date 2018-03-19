@@ -1,5 +1,5 @@
 ---
-title: Mixed reality
+title: What is mixed reality?
 description: This article defines mixed reality and demonstrates where simple AR and VR devices, as well as Windows Mixed Reality devices like Microsoft HoloLens and Windows Mixed Reality immersive headsets, sit along the mixed reality spectrum.
 author: BrandonBray
 ms.author: branbray
@@ -10,7 +10,7 @@ keywords: mixed reality, holographic, ar, vr, mr, xr, augmented reality, virtual
 
 
 
-# Mixed reality
+# What is mixed reality?
 
 Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations. It is made possible by advancements in computer vision, graphical processing power, display technology, and input systems. The term *mixed reality* was originally introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](http://etclab.mie.utoronto.ca/people/paul_dir/IEICE94/ieice.html)." Their paper introduced the concept of the *virtuality continuum* and focused on how the categorization of taxonomy applied to displays. Since then, the application of mixed reality goes beyond displays but also includes environmental input, spatial sound, and location.
 
