@@ -39,10 +39,10 @@ Mixed reality apps can design for a broad range of user experiences, from 360-de
 | Experience scale | Requirements | Example experience | 
 |----------|----------|----------|
 |  **Orientation-only** |  **Headset orientation** (gravity-aligned) |  360° video viewer | 
-|  **Seated-scale** |  Above, plus **headset position** relative to zero position |  Elite: Dangerous | 
-|  **Standing-scale** |  Above, plus **stage floor origin** |  Obduction | 
-|  **Room-scale** |  Above, plus **stage bounds polygon** |  Fantastic Contraption | 
-|  **World-scale** |  **Spatial anchors** (and typically [spatial mapping](spatial-mapping.md)) |  RoboRaid | 
+|  **Seated-scale** |  Above, plus **headset position** relative to zero position |  Racing game or space simulator | 
+|  **Standing-scale** |  Above, plus **stage floor origin** |  Action game where you duck and dodge in place  | 
+|  **Room-scale** |  Above, plus **stage bounds polygon** |  Puzzle game where you walk around the puzzle | 
+|  **World-scale** |  **Spatial anchors** (and typically [spatial mapping](spatial-mapping.md)) |  Game with enemies coming from your real walls, such as [RoboRaid](https://www.microsoft.com/hololens/apps/roboraid) | 
 
 These experience scales follow a "nesting dolls" model. The key design principle here for Windows Mixed Reality is that a given headset supports apps built for a target experience scale, as well as all lesser scales:
 
