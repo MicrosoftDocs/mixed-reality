@@ -3,8 +3,8 @@
 ## [Install the tools](install-the-tools.md)
 
 ## Fundamentals
-### [Mixed reality](mixed-reality.md)
-### [Hologram](hologram.md)
+### [What is mixed reality?](mixed-reality.md)
+### [What is a hologram?](hologram.md)
 ### [HoloLens hardware details](hololens-hardware-details.md)
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Hardware accessories](hardware-accessories.md)
