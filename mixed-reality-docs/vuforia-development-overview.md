@@ -1,6 +1,6 @@
 ---
-title: Vuforia development overview
-description: Leverage Vuforioa to build Windows Mixed Reality applications in Unity.
+title: Using Vuforia with Unity
+description: Leverage Vuforia to build Windows Mixed Reality applications in Unity.
 author: ChimeraScorn
 ms.author: cwhite
 ms.date: 2/28/2018
@@ -10,7 +10,7 @@ keywords: Vuforia, markers, coordinates, frame of reference, tracking
 
 
 
-# Vuforia development overview
+# Using Vuforia with Unity
 
 Vuforia brings an important capability to HoloLens – the power to connect AR experiences to specific images and objects in the environment. You can use this capability to overlay guided step by step instructions on top of machinery or to add digital features to a physical product.
 
