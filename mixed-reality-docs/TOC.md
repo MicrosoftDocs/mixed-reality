@@ -79,7 +79,6 @@
 #### [Shared experiences in Unity](shared-experiences-in-unity.md)
 #### [Tracking loss in Unity](tracking-loss-in-unity.md)
 #### [Keyboard input in Unity](keyboard-input-in-unity.md)
-#### [Input porting guide for Unity](input-porting-guide-for-unity.md)
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ### DirectX
@@ -98,6 +97,7 @@
 ### Porting apps
 #### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
 #### [Porting guides](porting-guides.md)
+#### [Input porting guide for Unity](input-porting-guide-for-unity.md)
 #### [Updating your SteamVR application for Windows Mixed Reality](updating-your-steamvr-application-for-windows-mixed-reality.md)
 ### [Add holographic remoting](add-holographic-remoting.md)
 ### [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
