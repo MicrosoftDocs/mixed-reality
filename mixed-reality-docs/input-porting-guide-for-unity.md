@@ -14,11 +14,6 @@ keywords: input, unity, porting
 
 You can port your input logic to Windows Mixed Reality using one of two approaches, Unity's general Input.GetButton/GetAxis APIs that span across multiple platforms, or the Windows-specific XR.WSA.Input APIs that offer richer data specifically for motion controllers and HoloLens hands.
 
-> [!NOTE]
-> This article has been updated for the final shipping Unity 2017.2 API shapes:
-> * If you are using Unity 5.6, you will see an older version of these APIs under the UnityEngine.VR namespace rather than UnityEngine.XR. Beyond the namespace change, there are other minor breaking API changes between Unity 5.6 and Unity 2017.2 that Unity's script updater will fix for you when moving to 2017.2.
-> * If you are using an earlier beta build of Unity 2017.2, you will see these APIs under UnityEngine.XR as expected, but you may see some differences from what is described below, as the initial 2017.2 beta builds contain an older version of the API shape.
-
 ## General Input.GetButton/GetAxis APIs
 
 Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) and [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for input, this is the easiest path for supporting motion controllers in Windows Mixed Reality: you should just need to remap buttons and axes in the Input Manager.
