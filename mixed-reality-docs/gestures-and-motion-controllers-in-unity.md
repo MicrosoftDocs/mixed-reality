@@ -15,10 +15,6 @@ keywords: gestures, motion controllers, unity, gaze, input
 There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](gestures.md) and [motion controllers](motion-controllers.md). You access the data for both sources of spatial input through the same APIs in Unity.
 
 Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common Input.GetButton/Input.GetAxis APIs that work across multiple Unity VR SDKs, and an InteractionManager/GestureRecognizer API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
-> [!NOTE]
-> This article has been updated for the final shipping Unity 2017.2 API shapes:
-> * If you are using Unity 5.6, you will see an older version of these APIs under the UnityEngine.VR namespace rather than UnityEngine.XR. Beyond the namespace change, there are other minor breaking API changes between Unity 5.6 and Unity 2017.2 that Unity's script updater will fix for you when moving to 2017.2.
-> * If you are using an earlier beta build of Unity 2017.2, you will see these APIs under UnityEngine.XR as expected, but you may see some differences from what is described below, as the initial 2017.2 beta builds contain an older version of the API shape.
 
 ## Unity button/axis mapping table
 
@@ -56,11 +52,11 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 </tr><tr>
 <td> Touchpad Y <i>(top: -1.0, bottom: 1.0)</i> </td><td> Axis 18* </td><td> Axis 20* </td><td> touchpadPosition.y</td>
 </tr><tr>
-<td> Touchpad touched </td><td> Button 18* </td><td> Button 19 <b>*</b> </td><td> touchpadTouched</td>
+<td> Touchpad touched </td><td> Button 18* </td><td> Button 19* </td><td> touchpadTouched</td>
 </tr><tr>
 <td> Touchpad pressed </td><td> Button 16* </td><td> Button 17* </td><td> touchpadPressed</td>
 </tr><tr>
-<td> 6DoF grip pose or pointer pose </td><td colspan="2"> <i>Grip</i> pose only: <a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR.InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalRotation.html">XR.InputTracking.GetLocalRotation</a></td><td> Pass <i>Grip</i> or <i>Pointer</i> as an argument: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br />sourceState.sourcePose.TryGetRay<br /></td>
+<td> 6DoF grip pose or pointer pose </td><td colspan="2"> <i>Grip</i> pose only: <a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR.InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalRotation.html">XR.InputTracking.GetLocalRotation</a></td><td> Pass <i>Grip</i> or <i>Pointer</i> as an argument: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
 </tr><tr>
 <td> Tracking state </td><td colspan="2"> <i>Position accuracy and source loss risk only available through MR-specific API</i> </td><td> <a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState.properties.sourceLossRisk</a></td>
 </tr>
@@ -187,12 +183,15 @@ Note that the relationship between this grip pose and the pointer pose (where th
 
 To get at more detailed information about Windows Mixed Reality hand input (for HoloLens) and motion controllers, you can choose to use the Windows-specific spatial input APIs under the **UnityEngine.XR.WSA.Input** namespace. This lets you access additional information, such as position accuracy or the source kind, letting you tell hands and controllers apart.
 
-### How to poll for the state of hands and motion controllers
+### Polling for the the state of hands and motion controllers
 
 You can poll for this frame's state for each interaction source (hand or motion controller) using the GetCurrentReading method.
 
 ```cs
 var interactionSourceStates = InteractionManager.GetCurrentReading();
+foreach (var interactionSourceState in interactionSourceStates) {
+    // ...
+}
 ```
 
 Each InteractionSourceState you get back represents an interaction source at the current moment in time. The InteractionSourceState exposes info such as:
@@ -200,34 +199,62 @@ Each InteractionSourceState you get back represents an interaction source at the
 
 ```cs
 if (interactionSourceState.selectPressed) {
-          // ...
-      }
+    // ...
+}
 ```
 * Other data specific to motion controllers, such the touchpad and/or thumbstick's XY coordinates and touched state
 
 ```cs
 if (interactionSourceState.touchpadTouched && interactionSourceState.touchpadPosition.x > 0.5) {
-          // ...
-      }
+    // ...
+}
 ```
-* The head pose at the moment in time when this gesture data was captured, which can be used to determine what the user was [gazing](gaze.md) at. This is especially useful for targeting a user's hand gestures, since there is some latency before hand poses are processed by the system and provided to the app.
-* The grip pose and pointing pose of the interaction source at that point in time
 * The InteractionSourceKind to know if the source is a hand or a motion controller
+```cs
+if (interactionSourceState.source.kind == InteractionSourceKind.Hand) {
+    // ...
+}
+```
 
-### How to start handling an interaction event
+### Polling for forward-predicted rendering poses
+* When polling for interaction source data from hands and controllers, the poses you get are forward-predicted poses for the moment in time when this frame's photons will reach the user's eyes.  These forward-predicted poses are best used for **rendering** the controller or a held object each frame.  If you are targeting a given press or release with the controller, that will be most accurate if you use the historical event APIs described below.
+```cs
+var sourcePose = interactionSourceState.sourcePose;
+Vector3 sourceGripPosition;
+Quaternion sourceGripRotation;
+if ((sourcePose.TryGetPosition(out sourceGripPosition, InteractionSourceNode.Grip)) &&
+    (sourcePose.TryGetRotation(out sourceGripRotation, InteractionSourceNode.Grip))) {
+    // ...
+}
+```
+* You can also get the forward-predicted head pose for this current frame.  As with the source pose, this is useful for **rendering** a cursor, although targeting a given press or release will be most accurate if you use the historical event APIs described below.
+```cs
+var headPose = interactionSourceState.headPose;
+var headRay = new Ray(headPose.position, headPose.forward);
+RaycastHit raycastHit;
+if (Physics.Raycast(headPose.position, headPose.forward, out raycastHit, 10)) {
+    var cursorPos = raycastHit.point;
+    // ...
+}
+```
 
-If you prefer to handle events rather than poll each frame:
+### Handling interaction source events
+
+To handle input events as they happen with their accurate historical pose data, you can handle interaction source events instead of polling.
+
+To handle interaction source events:
 * Register for a InteractionManager input event. For each type of interaction event that you are interested in, you need to subscribe to it.
 
 ```cs
-InteractionManager.SourcePressed += InteractionManager_SourcePressed;
+InteractionManager.InteractionSourcePressed += InteractionManager_InteractionSourcePressed;
 ```
 * Handle the event. Once you have subscribed to an interaction event, you will get the callback when appropriate. In the SourcePressed example, this will be after the source was detected and before it is released or lost.
 
 ```cs
-void InteractionManager_SourcePressed(InteractionSourceState state)
-{
-    // state has information about:
+void InteractionManager_InteractionSourceDetected(InteractionSourceDetectedEventArgs args)
+    var interactionSourceState = args.state;
+    
+    // args.state has information about:
        // targeting head ray at the time when the event was triggered
        // whether the source is pressed or not
        // properties like position, velocity, source loss risk
@@ -240,72 +267,114 @@ void InteractionManager_SourcePressed(InteractionSourceState state)
 You need to stop handling an event when you are no longer interested in the event or you are destroying the object that has subscribed to the event. To stop handling the event, you unsubscribe from the event.
 
 ```cs
-InteractionManager.SourcePressed -= InteractionManager_SourcePressed;
+InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSourcePressed;
 ```
 
-### Input Source Change Events
+### List of interaction source events
 
-These events describe when an input source is:
-* detected (becomes active)
-* lost (becomes inactive)
-* updates (moves or otherwise changes some state)
-* is pressed (tap, button press, or select uttered)
-* is released (end of a tap, button released, or end of select uttered)
+The available interaction source events are:
+* InteractionSourceDetected (source becomes active)
+* InteractionSourceLost (becomes inactive)
+* InteractionSourcePressed (tap, button press, or "Select" uttered)
+* InteractionSourceReleased (end of a tap, button released, or end of "Select" uttered)
+* InteractionSourceUpdated (moves or otherwise changes some state)
 
-### Example
+### Events for historical targeting poses that most accurately match a press or release
+The polling APIs described earlier give your app forward-predicted poses.  While those predicted poses are best for rendering the controller or a virtual handheld object, future poses are not optimal for targeting, for two key reasons:
+* When the user presses a button on a controller, there can be about 20ms of wireless latency over Bluetooth before the system receives the press.
+* Then, if you are using a forward-predicted pose, there would be another 10-20ms of forward prediction applied to target the time when the current frame's photons will reach the user's eyes.
+
+This means that polling gives you a source pose or head pose that is 30-40ms forward from where the user's head and hands actually were back when the press or release happened.  For HoloLens hand input, while there's no wireless transmission delay, there is a similar processing delay to detect the press.
+
+To accurately target based on the user's original intent for a hand or controller press, you should use the historical source pose or head pose from that InteractionSourcePressed or InteractionSourceReleased input event.
+
+You can target a press or release with historical pose data from the user's head or their controller:
+* The head pose at the moment in time when a gesture or controller press occurred, which can be used for **targeting** to determine what the user was [gazing](gaze.md) at:
+```cs
+void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args) {
+    var interactionSourceState = args.state;
+    var headPose = interactionSourceState.headPose;
+    RaycastHit raycastHit;
+    if (Physics.Raycast(headPose.position, headPose.forward, out raycastHit, 10)) {
+        var targetObject = raycastHit.collider.gameObject;
+        // ...
+    }
+}
+```
+
+* The source pose at the moment in time when a motion controller press occurred, which can be used for **targeting** to determine what the user was pointing the controller at.  This will be the state of the controller that experienced the press.  If you are rendering the controller itself, you can request the pointer pose rather than the grip pose, to shoot the targeting ray from what the user will consider the natural tip of that rendered controller:
+```cs
+void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args)
+{
+    var interactionSourceState = args.state;
+    var sourcePose = interactionSourceState.sourcePose;
+    Vector3 sourceGripPosition;
+    Quaternion sourceGripRotation;
+    if ((sourcePose.TryGetPosition(out sourceGripPosition, InteractionSourceNode.Pointer)) &&
+        (sourcePose.TryGetRotation(out sourceGripRotation, InteractionSourceNode.Pointer))) {
+        RaycastHit raycastHit;
+        if (Physics.Raycast(sourceGripPosition, sourceGripRotation * Vector3.forward, out raycastHit, 10)) {
+            var targetObject = raycastHit.collider.gameObject;
+            // ...
+        }
+    }
+}
+```
+
+### Event handlers example
 
 ```cs
 using UnityEngine.XR.WSA.Input;
 
-void Start ()
+void Start()
 {
-    InteractionManager.SourceDetected += InteractionManager_SourceDetected;
-    InteractionManager.SourceUpdated += InteractionManager_SourceUpdated;
-    InteractionManager.SourceLost += InteractionManager_SourceLost;
-    InteractionManager.SourcePressed += InteractionManager_SourcePressed;
-    InteractionManager.SourceReleased += InteractionManager_SourceReleased;
+    InteractionManager.InteractionSourceDetected += InteractionManager_InteractionSourceDetected;
+    InteractionManager.InteractionSourceLost += InteractionManager_InteractionSourceLost;
+    InteractionManager.InteractionSourcePressed += InteractionManager_InteractionSourcePressed;
+    InteractionManager.InteractionSourceReleased += InteractionManager_InteractionSourceReleased;
+    InteractionManager.InteractionSourceUpdated += InteractionManager_InteractionSourceUpdated;
 }
 
 void OnDestroy()
 {
-    InteractionManager.SourceDetected -= InteractionManager_SourceDetected;
-    InteractionManager.SourceUpdated -= InteractionManager_SourceUpdated;
-    InteractionManager.SourceLost -= InteractionManager_SourceLost;
-    InteractionManager.SourcePressed -= InteractionManager_SourcePressed;
-    InteractionManager.SourceReleased -= InteractionManager_SourceReleased;
+    InteractionManager.InteractionSourceDetected -= InteractionManager_InteractionSourceDetected;
+    InteractionManager.InteractionSourceLost -= InteractionManager_InteractionSourceLost;
+    InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSourcePressed;
+    InteractionManager.InteractionSourceReleased -= InteractionManager_InteractionSourceReleased;
+    InteractionManager.InteractionSourceUpdated -= InteractionManager_InteractionSourceUpdated;
 }
 
-void InteractionManager_SourceDetected(InteractionSourceState state)
+void InteractionManager_InteractionSourceDetected(InteractionSourceDetectedEventArgs args)
 {
     // Source was detected
-    // state has the current state of the source including id, position, kind, etc.
+    // args.state has the current state of the source including id, position, kind, etc.
 }
 
-void InteractionManager_SourceLost(InteractionSourceState state)
+void InteractionManager_InteractionSourceLost(InteractionSourceLostEventArgs state)
 {
     // Source was lost. This will be after a SourceDetected event and no other events for this
     // source id will occur until it is Detected again
-    // state has the current state of the source including id, position, kind, etc.
+    // args.state has the current state of the source including id, position, kind, etc.
 }
 
-void InteractionManager_SourceUpdated(InteractionSourceState state)
-{
-    // Source was updated. The source would have been detected before this point
-    // state has the current state of the source including id, position, kind, etc.
-}
-
-void InteractionManager_SourcePressed(InteractionSourceState state)
+void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs state)
 {
     // Source was pressed. This will be after the source was detected and before it is 
     // released or lost
-    // state has the current state of the source including id, position, kind, etc.
+    // args.state has the current state of the source including id, position, kind, etc.
 }
 
-void InteractionManager_SourceReleased(InteractionSourceState state)
+void InteractionManager_InteractionSourceReleased(InteractionSourceReleasedEventArgs state)
 {
     // Source was released. The source would have been detected and pressed before this point. 
     // This event will not fire if the source is lost
-    // state has the current state of the source including id, position, kind, etc.
+    // args.state has the current state of the source including id, position, kind, etc.
+}
+
+void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventArgs state)
+{
+    // Source was updated. The source would have been detected before this point
+    // args.state has the current state of the source including id, position, kind, etc.
 }
 ```
 
@@ -346,15 +415,20 @@ recognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.Hold);
 Subscribe to events for the gestures you are interested in.
 
 ```cs
-recognizer.TappedEvent += MyTapEventHandler;
-recognizer.HoldEvent += MyHoldEventHandler;
+void Start()
+{
+    recognizer.Tapped += GestureRecognizer_Tapped;
+    recognizer.HoldStarted += GestureRecognizer_HoldStarted;
+    recognizer.HoldCompleted += GestureRecognizer_HoldCompleted;
+    recognizer.HoldCanceled += GestureRecognizer_HoldCanceled;
+}
 ```
 
 *Note: Navigation and Manipulation gestures are mutually exclusive on an instance of a GestureRecognizer.*
 
 ### Start capturing gestures
 
-By default, a GestureRecognizer does not monitor input until StartCapturingGestures() is called. It is possible that a gesture event may be generated after StopCapturingGestures() is called if input was performed before the frame where StopCapturingGestures() was processed. Because of this, it is reliable if you want to start and stop gesture monitoring depending on which object the player is currently gazing at.
+By default, a GestureRecognizer does not monitor input until StartCapturingGestures() is called. It is possible that a gesture event may be generated after StopCapturingGestures() is called if input was performed before the frame where StopCapturingGestures() was processed. The GestureRecognizer will remember whether it was on or off during the previou frame in which the gesture actually occurred, and so it is reliable to start and stop gesture monitoring based on this frame's gaze targeting.
 
 ```cs
 recognizer.StartCapturingGestures();
@@ -375,8 +449,10 @@ Remember to unsubscribe from subscribed events before destroying a GestureRecogn
 ```cs
 void OnDestroy()
 {
-    recognizer.TappedEvent -= MyTapEventHandler;
-    recognizer.HoldEvent -= MyHoldEventHandler;
+    recognizer.Tapped -= GestureRecognizer_Tapped;
+    recognizer.HoldStarted -= GestureRecognizer_HoldStarted;
+    recognizer.HoldCompleted -= GestureRecognizer_HoldCompleted;
+    recognizer.HoldCanceled -= GestureRecognizer_HoldCanceled;
 }
 ```
 
@@ -416,7 +492,9 @@ You can find an example of how we recommend to implement throwing [here](https:/
     3. The total velocity of the thrown object is thus the sum of velocity of the controller and this tangential velocity:
     `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
-* **Pay close attention to the *time* at which we apply the velocity**. When a button is pressed, it can take up to 20ms for that event to bubble up through Bluetooth to the operating system. This means that if you poll for a controller state changes from pressed to not pressed or vice versa, the controller pose information you get with it will actually be ahead of this change in state. Further, the controller pose presented by our polling API is forward predicted to reflect a likely pose at the time the frame will be displayed which could be more then 20ms in the future. This is good for *rendering* held objects, but compounds our time problem for calculating the trajectory for the moment the user threw the object. Fortunately, with the November update, when a Unity event like InteractionSourcePressed or InteractionSourceReleased is sent, the historical pose information from when that button was pressed is sent with it. This means that in order to get the pose that most closely reflects the state of the controller when the user signaled a throw, we must use the pose given in the event.
+* **Pay close attention to the *time* at which we apply the velocity**. When a button is pressed, it can take up to 20ms for that event to bubble up through Bluetooth to the operating system. This means that if you poll for a controller state change from pressed to not pressed or vice versa, the controller pose information you get with it will actually be ahead of this change in state. Further, the controller pose presented by our polling API is forward predicted to reflect a likely pose at the time the frame will be displayed which could be more then 20ms in the future. This is good for *rendering* held objects, but compounds our time problem for *targeting* the object as we calculate the trajectory for the moment the user released their throw. Fortunately, with the November update, when a Unity event like InteractionSourcePressed or InteractionSourceReleased is sent, the state includes the historical pose data from back when the button was actually pressed or released.  To get the most accurate controller rendering and controller targeting during throws, you must correctly use polling and eventing, as appropriate:
+    * For **controller rendering** each frame, your app should position the controller's GameObject at the forward-predicted controller pose for the current frame’s photon time.  You get this data from Unity polling APIs like [XR.InputTracking.GetLocalPosition](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalPosition.html) or [XR.WSA.Input.InteractionManager.GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html).
+    * For **controller targeting** upon a press or release, your app should raycast and calculate trajectories based on the historical controller pose for that press or release event.  You get this data from Unity eventing APIs, like [InteractionManager.InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html).
 
 * **Use the grip pose**. Angular velocity and velocity are reported relative to the grip pose, not pointer pose.
 
