@@ -81,6 +81,7 @@
 #### [Keyboard input in Unity](keyboard-input-in-unity.md)
 #### [Input porting guide for Unity](input-porting-guide-for-unity.md)
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
+#### [Using Vuforia with Unity](vuforia-development-overview.md)
 ### DirectX
 #### [DirectX development overview](directx-development-overview.md)
 #### [Creating a holographic DirectX project](creating-a-holographic-directx-project.md)
@@ -123,7 +124,6 @@
 ### [Using Visual Studio](using-visual-studio.md)
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ### [Volume rendering](volume-rendering.md)
-### [Vuforia development overview](vuforia-development-overview.md)
 
 ## [Open source projects](open-source-projects.md)
 ### [Galaxy Explorer](galaxy-explorer.md)
