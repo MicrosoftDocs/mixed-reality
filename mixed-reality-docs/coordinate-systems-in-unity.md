@@ -13,10 +13,6 @@ keywords: coordinate system, spatial coordinate system, orientation-only, seated
 Windows Mixed Reality supports apps across a wide range of [experience scales](coordinate-systems.md), from orientation-only and seated-scale apps up through room-scale apps. On HoloLens, you can go further and build world-scale apps that let users walk beyond 5 meters, exploring an entire floor of a building and beyond.
 
 Your first step in building a mixed reality experience in Unity is to determine which [experience scale](coordinate-systems.md) your app will target.
-> [!NOTE]
-> This article has been updated for the final shipping Unity 2017.2 API shapes:
-> * If you are using Unity 5.6, you will see an older version of these APIs under the UnityEngine.VR namespace rather than UnityEngine.XR. Beyond the namespace change, there are other minor breaking API changes between Unity 5.6 and Unity 2017.2 that Unity's script updater will fix for you when moving to 2017.2.
-> * If you are using an earlier beta build of Unity 2017.2, you will see these APIs under UnityEngine.XR as expected, but you may see some differences from what is described below, as the initial 2017.2 beta builds contain an older version of the API shape.
 
 ## Building an orientation-only or seated-scale experience
 
