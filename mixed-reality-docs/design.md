@@ -262,7 +262,7 @@ Build great experiences from samples designed and created by our team.
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Lunar Module</h3>
-                                                    <p>Learn how to extend Hololens' base gestures with two-handed tracking and Xbox controller input.</p>
+                                                    <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.</p>
                                                 </div>
                                             </div>
                                         </div>
