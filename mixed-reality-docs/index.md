@@ -96,7 +96,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                              <a href="https://github.com/Microsoft/MixedRealityToolkit" title="MRTK on Github" data-linktype="absolute-path">
+                              <a href="open-source-projects.md" title="Open source projects" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -106,8 +106,8 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Mixed Reality Toolkit (MRTK)</h3>
-                                                  <p>The Mixed Reality Toolkit is a collection of scripts and components intended to accelerate development of applications targeting Microsoft HoloLens and Windows Mixed Reality headsets. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as we all grow.</p>
+                                                    <h3 class="x-hidden-focus">Open source projects</h3>
+                                                  <p>These open source projects, sample apps, and toolkits should help you accelerate development of applications targeting Microsoft HoloLens and Windows Mixed Reality immersive headsets. Leverage anything you find here and please contribute back as you learn - our whole community will benefit!</p>
                                                 </div>
                                             </div>
                                         </div>
