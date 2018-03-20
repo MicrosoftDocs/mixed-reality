@@ -49,7 +49,7 @@
 #### [Gaze targeting](Gaze-targeting.md)
 #### [Gestures](Gestures.md)
 #### [Voice design](Voice-design.md)
-#### [What is a hologram?](Holograms.md)
+#### [What is a hologram?](Hologram.md)
 #### [Holographic frame](Holographic-frame.md)
 #### [Spatial mapping design](Spatial-mapping-design.md)
 #### [Spatial sound design](Spatial-sound-design.md)
