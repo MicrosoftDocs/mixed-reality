@@ -223,7 +223,8 @@ This guidance is authored by Microsoft designers, developers, program managers, 
         </div>
     </li>
 </ul>
-    
+
+
 ## Sample apps
 
 Build great experiences from samples designed and created by our team.
