@@ -106,7 +106,6 @@ Here are some ideas of where you can take this idea next:
 </table>
 
 ## See also
-* [Case studies](category/case-studies.md)
 * [Holograms 101](holograms-101.md)
 * [Coordinate systems](coordinate-systems.md)
 * [Spatial anchors](spatial-anchors.md)

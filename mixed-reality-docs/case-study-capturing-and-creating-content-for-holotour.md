@@ -151,5 +151,4 @@ We hope that sharing solutions to some of the bigger challenges we had during pr
 
 
 ## See also
-* [Case studies](category/case-studies.md)
 * [Video: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)

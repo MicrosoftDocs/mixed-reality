@@ -71,6 +71,5 @@ Users need to be able to easily access UI controls even if they've been blocked,
 
 ## See also
 * [Interaction fundamentals](interaction-fundamentals.md)
-* [Case studies](category/case-studies.md)
 
  

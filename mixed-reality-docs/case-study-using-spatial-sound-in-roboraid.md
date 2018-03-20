@@ -91,5 +91,4 @@ You can try this yourself using the audio assets below:
 
 ## See Also
 * [Spatial sound](spatial-sound.md)
-* [Case studies](category/case-studies.md)
 * [RoboRaid for Microsoft HoloLens](https://www.microsoft.com/microsoft-hololens/en-us/apps/RoboRaid)

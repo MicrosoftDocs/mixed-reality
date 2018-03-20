@@ -103,4 +103,3 @@ In post-production, the gladiators were composited onto the arena floor and the 
 
 ## See also
 * [Video: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
-* [Case studies](category/case-studies.md)

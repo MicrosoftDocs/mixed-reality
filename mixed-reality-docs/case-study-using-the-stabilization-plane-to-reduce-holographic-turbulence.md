@@ -95,7 +95,6 @@ Turn to your right once more until you see a new configuration of dots. In this 
 </table>
 
 ## See also
-* [Case studies](category/case-studies.md)
 * [Holograms 100](holograms-100.md)
 * [Focus point in Unity](focus-point-in-unity.md)
 * [Hologram stability](hologram-stability.md)

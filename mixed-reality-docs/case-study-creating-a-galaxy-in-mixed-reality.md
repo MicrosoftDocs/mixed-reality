@@ -201,6 +201,5 @@ Interested in finding out more about the development process for Galaxy Explorer
 
 
 ## See also
-* [Case studies](category/case-studies.md)
 * [Galaxy Explorer on GitHub](https://github.com/Microsoft/GalaxyExplorer)
 * [Galaxy Explorer project updates on YouTube](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)

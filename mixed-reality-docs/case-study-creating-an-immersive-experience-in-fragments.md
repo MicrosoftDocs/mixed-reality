@@ -17,6 +17,5 @@ Fragments is an interactive crime drama for Microsoft Hololens, where you follow
 >[!VIDEO https://www.youtube.com/embed/9ULJV4G5XkA]
 
 ## See also
-* [Case studies](category/case-studies.md)
 * [Spatial mapping](spatial-mapping.md)
 * [Fragments for Microsoft HoloLens](https://www.microsoft.com/microsoft-hololens/en-us/apps/Fragments)
