@@ -37,6 +37,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/mixed-reality/breadcrumb/toc.json",
       "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-Hololens",
       "titleSuffix": "Mixed Reality",
       "ms.prod": "windows",
       "ms.date": "3/21/2018",
