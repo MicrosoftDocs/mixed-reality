@@ -22,12 +22,12 @@ Simulation starts by creating an IPerceptionSimulationManager object. From that 
 1. [Install the HoloLens emulator](install-the-tools.md) on your development PC. The emulator includes the libraries you will use for Perception Simulation.
 2. Create a new Visual Studio C# desktop project (a Console Project works great to get started).
 3. Add the following binaries to your project as references (Project->Add->Reference...). You can find them in **%ProgramFiles(x86)%\Microsoft XDE\10.0.11082.0**
-1. PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.
-2. PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.
-3. SimulationStream.Interop.dll - Shared types for simulation.
+    a. PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.
+    b. PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.
+    c. SimulationStream.Interop.dll - Shared types for simulation.
 4. Add the implementation binary PerceptionSimulationManager.dll to your project
-1. First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder. ![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png)
-2. Then make sure that it get's copied to your output folder on build. This is in the property sheet for the binary . ![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)
+    a. First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder. ![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png)
+    b. Then make sure that it get's copied to your output folder on build. This is in the property sheet for the binary . ![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)
 
 ## Creating an IPerceptionSimulation Manager Object
 
