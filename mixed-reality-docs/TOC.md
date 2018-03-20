@@ -37,8 +37,8 @@
 ### [Mixed Reality 250](mixed-reality-250.md)
 
 ## [Design](design.md)
+### [About this design guidance](about-this-design-guidance.md)
 ### Get started with design
-#### [About this design guidance](about-this-design-guidance.md)
 #### [What is mixed reality?](mixed-reality.md)
 #### [My first year on the design team](case-study-my-first-year-on-the-hololens-design-team.md)
 #### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
