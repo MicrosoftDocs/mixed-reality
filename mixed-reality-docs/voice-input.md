@@ -35,7 +35,7 @@ Voice input is powered by the [same engine](https://msdn.microsoft.com/en-us/lib
 Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gestures.md#air-tap) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
 ![Say "select" to use the voice command for selection](images/kma-voice-select-00170-800px.png)<br>
-Say select to use the voice command for selection
+*Say select to use the voice command for selection*
 
 ## Hey Cortana
 
@@ -70,6 +70,7 @@ HoloLens has a "see it, say it" model for voice input, where labels on buttons t
 When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button, you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it.
 
 ![See it, say it commands appear below the buttons](images/voice-seeitsayit-600px.png)
+*"See it, say it" commands appear below the buttons*
 
 ## Voice commands for fast Hologram Manipulation
 
@@ -82,9 +83,10 @@ There are also a number of voice commands you can say while gazing at a hologram
 
 ## Dictation
 
-Rather than typing with [air-taps](gestures.md#air-tap), voice dictation can be more efficient to enter text into an app. This can greatly accelerate input with less effort for the user.
+Rather than typing with [air taps](gestures.md#air-tap), voice dictation can be more efficient to enter text into an app. This can greatly accelerate input with less effort for the user.
 
 ![Voice dictation starts by selecting the microphone button](images/micbuttonfordictation.png)
+*Voice dictation starts by selecting the microphone button on the keyboard*
 
 Any time the holographic keyboard is active, you can switch to dictation mode instead of typing. Select the microphone on the side of the text input box to get started.
 
