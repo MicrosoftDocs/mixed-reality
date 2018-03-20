@@ -6,12 +6,12 @@ author: mattzmsft
 ms.author: randyw, mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Windows Mixed Reality, index, landing page, design, developement, academy, fundamentals, case studies, resources, HoloLens how-to, Open source projects
+keywords: Windows Mixed Reality, index, landing page, design, development, academy, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---
 
 # Windows Mixed Reality documentation
 
-Mixed reality blends real-world and virtual content into hybrid environments where physical and digital objects coexist and interact.
+Mixed reality blends real-world and virtual content into hybrid environments where physical and digital objects coexist and interact. Learn to build mixed reality experiences for Microsoft HoloLens and Windows Mixed Reality immersive headsets (VR).
 
 <br>
 
