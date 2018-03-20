@@ -69,7 +69,7 @@ HoloLens has a "see it, say it" model for voice input, where labels on buttons t
 
 When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button, you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it.
 
-![See it, say it commands appear below the buttons](images/voice-seeitsayit-600px.png)
+![See it, say it commands appear below the buttons](images/voice-seeitsayit-600px.png)<br>
 *"See it, say it" commands appear below the buttons*
 
 ## Voice commands for fast Hologram Manipulation
@@ -85,7 +85,7 @@ There are also a number of voice commands you can say while gazing at a hologram
 
 Rather than typing with [air taps](gestures.md#air-tap), voice dictation can be more efficient to enter text into an app. This can greatly accelerate input with less effort for the user.
 
-![Voice dictation starts by selecting the microphone button](images/micbuttonfordictation.png)
+![Voice dictation starts by selecting the microphone button](images/micbuttonfordictation.png)<br>
 *Voice dictation starts by selecting the microphone button on the keyboard*
 
 Any time the holographic keyboard is active, you can switch to dictation mode instead of typing. Select the microphone on the side of the text input box to get started.
