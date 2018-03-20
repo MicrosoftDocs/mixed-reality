@@ -223,6 +223,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
             </div>
         </div>
     </li>
+ </ul>
     
 ## Sample apps
 
@@ -283,6 +284,6 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                                     </div>
                                </a>
                             </li>
-                        </ul>    
+</ul>    
     
     
