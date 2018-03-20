@@ -247,6 +247,7 @@ Build great experiences from samples designed and created by our team.
                                             </div>
                                         </div>
                                     </div>
+				</a>	    
                             </li>
                             <li>
                                 <a href="lunar-module.md" title="Lunar Module" data-linktype="absolute-path">
@@ -265,6 +266,7 @@ Build great experiences from samples designed and created by our team.
                                             </div>
                                         </div>
                                     </div>
+				</a>
                             </li>
                             <li>
                                   <a href="galaxy-explorer.md" title="Galaxy Explorer" data-linktype="absolute-path">
