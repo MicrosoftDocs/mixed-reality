@@ -59,20 +59,20 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 
 Motion controllers can be bonded with host PC using Windows settings like any other Bluetooth device.
 
-1. Insert 2 AA batteries into the back of the controller. Leave the battery cover off for now.
-2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
-3. Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
-4. Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
-5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
-6. Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
-7. Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
+1. Insert 2 AA batteries into the back of the controller. Leave the battery cover off for now.
+2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
+3. Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
+4. Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
+5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
+6. Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
+7. Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
 
    ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)<br>
    *Select Motion controller to pair, if multiple instances select one from appearing bottom of the list*
    
-8. You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category** as **Connected**. At this point, you may get a firmware update – see [next section](motion-controllers.md#updating-controller-firmware).
-9. Reattach battery cover.
-10. Repeat steps 1-9 for the second controller.
+8. You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category** as **Connected**. At this point, you may get a firmware update – see [next section](motion-controllers.md#updating-controller-firmware).
+9. Reattach battery cover.
+10. Repeat steps 1-9 for the second controller.
 
 After successfully pairing both controllers, your settings should look like this under **“Mouse, keyboard, & pen” category** 
 
