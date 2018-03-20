@@ -12,7 +12,8 @@ keywords: UWP, app model, lifecycle, suspend, resume, tile, views, contracts
 
 Windows Mixed Reality uses the app model provided by the [Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/) (UWP), a model and environment for modern Windows apps. The UWP app model defines how apps are installed, updated, versioned and removed safely and completely. It governs the application life cycle - how apps execute, sleep and terminate - and how they can preserve state. It also covers integration and interaction with the operating system, files and other apps.
 
-![2D apps arranged in the Windows Mixed Reality home in a breakfast area](images/20160112-055908-hololens-500px.jpg)
+![2D apps arranged in the Windows Mixed Reality home in a breakfast area](images/20160112-055908-hololens-500px.jpg)<br>
+*Apps with a 2D view arranged in the Windows Mixed Reality home*
 
 ## App lifecycle
 
@@ -20,13 +21,15 @@ The lifecycle of a mixed reality app involves standard app concepts such as plac
 
 ### Placement is launch
 
-Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Mixed Reality home](navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at the location where they are placed, acting like launchers for anytime you want to get back to the app.
+Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at the location where they are placed, acting like launchers for anytime you want to get back to the app.
 
-![Placement puts a secondary tile in the world](images/slide1-600px.png)
+![Placement puts a secondary tile in the world](images/slide1-600px.png)<br>
+*Placement puts a secondary tile in the world*
 
 As soon as placement completes (unless the placement was started by an [app to app](app-model.md#protocols) launch), the app starts launching. Windows Mixed Reality can run a limited number of apps at one time. As soon as you place and launch an app, other active apps may suspend, leaving a screenshot of the app's last state on its app tile wherever you placed it. See [Windows 10 UWP app lifecycle](https://docs.microsoft.com/windows/uwp/launch-resume/app-lifecycle) for more information on handling resume and other app life cycle events.
 
-![After placing a tile, the app starts running](images/slide2-500px.png) ![State diagram for app running, suspended or not running](images/ic576232-500px.png)
+![After placing a tile, the app starts running](images/slide2-500px.png) ![State diagram for app running, suspended or not running](images/ic576232-500px.png)<br>
+*Left: after placing a tile, the app starts running. Right: state diagram for app running, suspended, or not running.*
 
 ### Remove is close/terminate process
 
@@ -38,7 +41,8 @@ In the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md
 
 When a UWP app suspends, a screenshot is taken of the current state.
 
-![Screenshots are shown for suspended apps](images/slide9-800px.png)
+![Screenshots are shown for suspended apps](images/slide9-800px.png)<br>
+*Screenshots are shown for suspended apps*
 
 One key difference from other Windows 10 shells is how the app is informed of an app instance activation via the [CoreApplication.Resuming](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_Resuming) and [CoreWindow.Activated](https://docs.microsoft.com/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Activated) events.
 
@@ -54,7 +58,8 @@ One key difference from other Windows 10 shells is how the app is informed of an
 
 Sometimes your app needs to continue doing work in the background or playing audio. [Background tasks](https://docs.microsoft.com/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest) are available on HoloLens.
 
-![Apps can run in the background](images/slide10-800px.png)
+![Apps can run in the background](images/slide10-800px.png)<br>
+*Apps can run in the background*
 
 ## App views
 
@@ -62,7 +67,8 @@ When your app activates, you can choose what type of view you'd like to display.
 
 Your app can create an additional 2D app view using technology like XAML, to use Windows 10 features such as in-app purchase. If your app started as a UWP app for other Windows 10 devices, your primary view is 2D, but you could "light up" in mixed reality by adding an additional app view that's immersive to show an experience volumetrically. Imagine building a photo viewer app in XAML where the slideshow button switched to an immersive app view that flew photos from the app across the world and surfaces.
 
-![The running app can have a 2D view or an immersive view](images/slide3-800px.png)
+![The running app can have a 2D view or an immersive view](images/slide3-800px.png)<br>
+*The running app can have a 2D view or an immersive view*
 
 ### Creating an immersive view
 
@@ -72,21 +78,24 @@ An app that is purely immersive should always create an immersive view on launch
 
 An app that starts with a 2D view on the desktop monitor may create a secondary immersive view to show content in the headset. An example of this is a 2D Edge window on the monitor displaying a 360-degree video in the headset.
 
-![Apps running in immersive view are the only one visible](images/slide4-800px.png)
+![Apps running in immersive view are the only one visible](images/slide4-800px.png)<br>
+*An app running in an immersive view is the only one visible*
 
-### 2D view in the Mixed Reality home
+### 2D view in the Windows Mixed Reality home
 
 Anything other than an immersive view is rendered as a 2D view in your world.
 
 An app may have 2D views on both the desktop monitor and in the headset. Note that a new 2D view will be placed in the same shell as the view that created it, either on the monitor or in the headset. It is not currently possible for an app or a user to move a 2D view between the Mixed Reality home and the monitor.
 
-![Apps running in 2D view share the space in the mixed world with other apps](images/slide5-800px.png)
+![Apps running in 2D view share the space in the mixed world with other apps](images/slide5-800px.png)<br>
+*Apps running in a 2D view share the space with other apps*
 
 ### Placement of additional app tiles
 
-You can place as many 2D views in your world as you want with the [Secondary Tile APIs](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles). These "pinned" tiles will appear as splash screens that users must place and then can later use to launch your app. Windows Mixed Reality does not currently support rendering any of the 2D tile content as live tiles.
+You can place as many apps with a 2D view in your world as you want with the [Secondary Tile APIs](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles). These "pinned" tiles will appear as splash screens that users must place and then can later use to launch your app. Windows Mixed Reality does not currently support rendering any of the 2D tile content as live tiles.
 
-![Apps can have multiple placements using secondary tiles](images/slide6-800px.png)
+![Apps can have multiple placements using secondary tiles](images/slide6-800px.png)<br>
+*Apps can have multiple placements using secondary tiles*
 
 ### Switching views
 
@@ -101,7 +110,8 @@ Use [CoreApplication.CreateNewView](https://docs.microsoft.com/uwp/api/Windows.A
 >* **SwitchAsync** should be called using the [Dispatcher](https://docs.microsoft.com/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Dispatcher) associated with the view you are switching into.
 >* You will need to **SwitchAsync** back to the XAML view if you need to launch a virtual keyboard or want to activate another app.
 
-![Apps can switch between 2D views and immersive views](images/slide7-600px.png) ![When an app goes into an immersive view, the mixed world and other apps disappear](images/slide8-600px.png)
+![Apps can switch between 2D views and immersive views](images/slide7-600px.png) ![When an app goes into an immersive view, the mixed world and other apps disappear](images/slide8-600px.png)<br>
+*Left: apps can switch between 2D view and immersive view. Right: when an app goes into an immersive view, the Windows Mixed Reality home and other apps disappear.*
 
 #### Switching from the immersive view back to a keyboard XAML view
 
@@ -116,13 +126,15 @@ Like in the previous section, you can use **ApplicationViewSwitcher.SwitchAsync*
 * App [resolution and scale factor](building-2d-apps.md#2d-app-view-resolution-and-scale-factor) are not changed by resizing.
 * Apps are not able to query their actual size in the world.
 
-![2D apps appear with fixed window sizes](images/12493521-10104043956964683-6118765685995662420-o-500px.jpg)
+![2D apps appear with fixed window sizes](images/12493521-10104043956964683-6118765685995662420-o-500px.jpg)<br>
+*Apps with a 2D view appear with fixed window sizes*
 
 ## App tiles
 
 The Start menu uses the standard small tile and medium tile for pins and the **All Apps** list in mixed reality. 
 
-![The Start menu for Windows Mixed Reality](images/start-500px.png)
+![The Start menu for Windows Mixed Reality](images/start-500px.png)<br>
+*The Start menu for Windows Mixed Reality*
 
 ## App to app interactions
 
@@ -242,4 +254,6 @@ With Windows 10 you no longer target an operating system but instead [target you
 ## See also
 
 * [App views](app-views.md)
-* [Building 2D apps](building-2d-apps.md)
+* [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
+* [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
+* [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
