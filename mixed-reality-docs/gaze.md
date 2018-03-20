@@ -1,7 +1,7 @@
 ---
 title: Gaze
 description: Gaze is the first form of input and is a primary form of targeting within mixed reality. 
-author: rwinj
+author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2018
 ms.topic: article
