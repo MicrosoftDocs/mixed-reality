@@ -96,9 +96,9 @@ The home page shows the following info:
 * **Device Status:** monitors the health of your device and reports critical errors.
 * **Windows information:** shows the name of the HoloLens and the currently installed version of Windows.
 * **Preferences** section contains the following settings:
-* **IPD**: Sets the interpupillary distance (IPD), which is the distance, in millimeters, between the center of the user's pupils when looking straight ahead. The setting takes effect immediately. The default value was calculated automatically when you set up your device.
-* **Device name**: Assign a name to the HoloLens. You must reboot the device after changing this value for it to take effect. After clicking **Save**, a dialog will ask if you want to reboot the device immediately or reboot later.
-* **Sleep settings**: Sets the length of time to wait before the device goes to sleep when it's plugged in and when it's on battery.
+  * **IPD**: Sets the interpupillary distance (IPD), which is the distance, in millimeters, between the center of the user's pupils when looking straight ahead. The setting takes effect immediately. The default value was calculated automatically when you set up your device.
+  * **Device name**: Assign a name to the HoloLens. You must reboot the device after changing this value for it to take effect. After clicking **Save**, a dialog will ask if you want to reboot the device immediately or reboot later.
+  * **Sleep settings**: Sets the length of time to wait before the device goes to sleep when it's plugged in and when it's on battery.
 
 ### 3D View
 
@@ -110,14 +110,14 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
 * Zoom: mouse scroll.
 * **Tracking options**: Turn on continuous visual tracking by checking **Force visual tracking**. **Pause** stops visual tracking.
 * **View options**: Set options on the 3D view:
-* **Tracking**: Indicates whether visual tracking is active.
-* **Show floor**: Displays a checkered floor plane.
-* **Show frustum**: Displays the view frustum.
-* **Show stabilization plane**: Displays the plane that HoloLens uses for stabilizing motion.
-* **Show mesh**: Displays the spatial mapping mesh that represents your surroundings.
-* **Show spatial anchors**: Displays spatial anchors for the active app. You must click the Update button to get and refresh the anchors.
-* **Show details**: Displays hand positions, head rotation quaternions, and the device origin vector as they change in real time.
-* **Full screen button**: Shows the 3D View in full screen mode. Press ESC to exit full screen view.
+  * **Tracking**: Indicates whether visual tracking is active.
+  * **Show floor**: Displays a checkered floor plane.
+  * **Show frustum**: Displays the view frustum.
+  * **Show stabilization plane**: Displays the plane that HoloLens uses for stabilizing motion.
+  * **Show mesh**: Displays the spatial mapping mesh that represents your surroundings.
+  * **Show spatial anchors**: Displays spatial anchors for the active app. You must click the Update button to get and refresh the anchors.
+  * **Show details**: Displays hand positions, head rotation quaternions, and the device origin vector as they change in real time.
+  * **Full screen button**: Shows the 3D View in full screen mode. Press ESC to exit full screen view.
 * **Surface reconstruction**: Click or tap **Update** to display the latest spatial mapping mesh from the device. A full pass may take some time to complete, up to a few seconds. The mesh does not update automatically in the 3D view, and you must manually click **Update** to get the latest mesh from the device. Click **Save** to save the current spatial mapping mesh as an obj file on your PC.
 * **Spatial anchors**: Click Update to display or update the spatial anchors for the active app.
 
@@ -127,11 +127,11 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
 
 Use the [mixed reality capture](mixed-reality-capture.md) page to save media streams from the HoloLens.
 * **Settings**: Control the media streams that are captured by checking the following settings:
-* **Holograms**: Captures the holographic content in the video stream. Holograms are rendered in mono, not stereo.
-* **PV camera**: Captures the video stream from the photo/video camera.
-* **Mic Audio**: Captures audio from the microphone array.
-* **App Audio**: Captures audio from the currently running app.
-* **Live preview quality**: Select the screen resolution, frame rate, and streaming rate for the live preview.
+  * **Holograms**: Captures the holographic content in the video stream. Holograms are rendered in mono, not stereo.
+  * **PV camera**: Captures the video stream from the photo/video camera.
+  * **Mic Audio**: Captures audio from the microphone array.
+  * **App Audio**: Captures audio from the currently running app.
+  * **Live preview quality**: Select the screen resolution, frame rate, and streaming rate for the live preview.
 * Click or tap the **Live preview** button to show the capture stream. **Stop live preview** stops the capture stream.
 * Click or tap **Record** to start recording the mixed-reality stream, using the specified settings. **Stop recording** ends the recording and saves it.
 * Click or tap **Take photo** to take a still image from the capture stream.
