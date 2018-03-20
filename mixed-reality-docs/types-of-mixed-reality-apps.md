@@ -18,7 +18,7 @@ One of the advantages of developing apps for Windows Mixed Reality is that there
 
 One of the most powerful ways that mixed reality can bring value to users is by facilitating the placement of digital information or content in a user’s current environment. This is an enhanced environment app. This approach is popular for apps where the contextual placement of digital content in the real world is paramount and/or keeping the user’s real world environment “present” during their experience is key. This approach also allows users to easily move from real world tasks to digital tasks and back easily, lending even more credence to promise that the mixed reality apps the user sees are truly a part of their environment.
 
-![Enhanced environment apps](images/enhancedenvironmentapps-640px.jpg)
+![Enhanced environment apps](images/enhancedenvironmentapps-640px.jpg)<br>
 *Enhanced environment apps*
 
 **Example uses**
@@ -35,7 +35,7 @@ One of the most powerful ways that mixed reality can bring value to users is by 
 
 Given Windows Mixed Reality’s ability to recognize and map the user's environment, it is capable of creating a digital layer that can be completely overlaid on the user’s space. Thin layer respects the shape and boundaries of the user’s environment, but the app may choose to transform certain elements best suited to immerse the user in the app. This is called a blended environment app. Unlike an enhanced environment app, blended environment apps may only care enough about the environment to best use its makeup for encouraging specific user behavior (like encouraging movement or exploration) or by replacing elements with changes (a kitchen counter is virtually skinned to show a different tile pattern). This type of experience may even transform an element into an entirely different object, but still retain the rough dimensions of the object as its base (a kitchen island is transformed into a dumpster for a crime thriller game).
 
-![Blended environment apps](images/blendedenvironmentapps-640px.jpg)
+![Blended environment apps](images/blendedenvironmentapps-640px.jpg)<br>
 *Blended environment apps*
 
 **Example uses**
@@ -50,7 +50,7 @@ Given Windows Mixed Reality’s ability to recognize and map the user's environm
 
 Immersive environment apps are centered around an environment that completely changes the user’s world and can place them in a different time and space. These environments can feel very real, creating immersive and thrilling experiences that are only limited by the app creator’s imagination. Unlike blended environment apps, once Windows Mixed Reality identifies the user’s space, an immersive environment app may totally disregard the user’s current environment and replace it whole stock with one of its own. These experiences may also completely separate time and space, meaning a user could walk the streets of Rome in an immersive experience, while remaining relatively still in their real world space. Context of the real world environment may not be important to an immersive environment app.
 
-![Immersive environment apps](images/windows-mixed-reality-640px.jpg)
+![Immersive environment apps](images/windows-mixed-reality-640px.jpg)<br>
 *Immersive environment apps*
 
 **Example uses**
