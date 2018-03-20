@@ -33,9 +33,9 @@ Motion is controlled with both rotation and translation (movement) along three a
 You can also control the state of simulated sensor input:
 * **Reset**: This will return all simulated sensors to their default values.
 * **Tracking**: Cycles through the positional tracking modes. This includes:
-* **Default**: The OS chooses the best tracking mode based upon the requests made of the system.
-* **Orientation**: Forces Orientation-only tracking, regardless of the requests made of the system.
-* **Positional**: Forces Positional tracking, regardless of the requests made of the system.
+   * **Default**: The OS chooses the best tracking mode based upon the requests made of the system.
+   * **Orientation**: Forces Orientation-only tracking, regardless of the requests made of the system.
+   * **Positional**: Forces Positional tracking, regardless of the requests made of the system.
 
 ## Types of input
 
@@ -63,7 +63,7 @@ The following table shows how each type of input maps to the keyboard, mouse, an
 The emulator can be controlled in multiple modes, which impact how the controls are interpreted. The input modes are:
 * **Default mode**: The default mode combines the most common operations for ease of use. This is the most commonly used mode.
 * **Hands or controller mode**: The HoloLens emulator simulates gesture input with hands, while the Windows Mixed Reality simulator simulates tracked controllers. To enter this mode, press and hold an alt key on the keyboard: use left alt for the left hand/controller, and/or use right alt for the right hand/controller. You can also press and hold a shoulder button on the Xbox controller to enter this mode: press the left shoulder for the left hand/controller, and/or press the right shoulder for the right hand/controller.
-* Hands are typically not visible to the HoloLens emulator - they are made visible briefly when performing gestures such as [air-tap](gestures.md#air-tap) and bloom using the default input mode. This is a difference from tracked controllers in the Mixed Reality simulator. The corresponding Hand is also made visible when you enter hands mode, or when you click "Turn On" in the **Simulation** tab, which is located in the **Additional Tools** pane. * **Head mode**: The head mode applies controls, where appropriate, exclusively to the head. To enter head mode, press and hold the H key on the keyboard.
+   * Hands are typically not visible to the HoloLens emulator - they are made visible briefly when performing gestures such as [air-tap](gestures.md#air-tap) and bloom using the default input mode. This is a difference from tracked controllers in the Mixed Reality simulator. The corresponding Hand is also made visible when you enter hands mode, or when you click "Turn On" in the **Simulation** tab, which is located in the **Additional Tools** pane. * **Head mode**: The head mode applies controls, where appropriate, exclusively to the head. To enter head mode, press and hold the H key on the keyboard.
 
 The following table shows how each input mode maps each type of input:
 
