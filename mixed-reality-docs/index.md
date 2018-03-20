@@ -28,7 +28,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Fundamentals</h3>
-                                                  <p>Get started with mixed reality key concepts, core building blocks, and app paradigm</p>
+                                                  <p>Get started with mixed reality key concepts, core building blocks, and app paradigms.</p>
                                                 </div>
                                             </div>
                                         </div>
