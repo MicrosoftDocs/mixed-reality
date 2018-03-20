@@ -16,9 +16,11 @@ keywords: galaxy explorer, case study, project, sample
 
 The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code. If you have a device, Galaxy Explorer Project is also available for download from the Windows Store for Microsoft HoloLens.
 >[!TIP]
->[Get the code](https://github.com/Microsoft/GalaxyExplorer)
+>[Get the code](https://github.com/Microsoft/GalaxyExplorer) on GitHub
 
 Our HoloLens [development team](galaxy-explorer.md#meet-the-team) of designers, artists, and developers built Galaxy Explorer and invited all of you to be part of this journey with them. After six weeks of core development and two weeks of refinement, this app is now ready for you! You can also follow along our whole journey through the video series below.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/HsnH2Q7HxOA]
 
@@ -92,7 +94,7 @@ You can find even more insights and lessons from developing Galaxy Explorer by r
 ## Meet the team
 
 ![Galaxy Explorer development team](images/syiteampic.jpg)<br>
-Galaxy Explorer development team
+*Galaxy Explorer development team*
 
 We learned the building the right team is one of the most important investments we could make. We decided to organize similarly to a game studio for those of you familiar with that development model. We chose to have eleven core team members to control scope, since we had a fixed timeframe (create something cool before Build on March 30).
 
@@ -106,4 +108,6 @@ We’ll had one full-time tester – Lena – who tested our builds every day, s
 
 We are all a part of a larger studio here at Microsoft (think team in non-game development). There were a bunch of other people involved as well – we called on the talents of our art director, audio engineer and studio leadership frequently throughout the project, but those folks were shared resources with other projects our broader team has.
 
-So, that's the team! Read and watch on to see what we made :)
+## See also
+* [Case study - Creating a galaxy in mixed reality](case-study-creating-a-galaxy-in-mixed-reality.md)
+* [Galaxy Explorer GitHub repo](https://github.com/Microsoft/GalaxyExplorer)
