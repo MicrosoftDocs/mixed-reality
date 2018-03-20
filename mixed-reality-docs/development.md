@@ -13,6 +13,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
 
 ## Article categories
 
+
 <ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
@@ -165,7 +166,11 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
         </div>
     </li> 
 </ul>
+
+
 ## Windows API reference (external)
+
+
 <ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
@@ -197,7 +202,11 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
         </div>
     </li>
 </ul>
+
+
 ## Unity API reference (external)
+
+
 <ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
