@@ -16,7 +16,8 @@ Windows apps can contain two kinds of views, **immersive views** and **2D views*
 
 An immersive view gives your app the ability to create holograms in the world around you or immerse the user in a virtual environment. When an app is drawing in the immersive view, no other app is drawing at the same time&mdash;holograms from multiple apps are not composited together. By continually adjusting the perspective from which your [app renders](rendering.md) its scene to match the user's head movements, your app can render [world-locked](coordinate-systems.md) holograms that remain at a fixed point in the real world, or it can render a virtual world that holds its position as a user moves within it.
 
-![When in an immersive view, holograms can be placed in the world around you.](images/designoverview.jpg)
+![When in an immersive view, holograms can be placed in the world around you.](images/designoverview.jpg)<br>
+*When in an immersive view, holograms can be placed in the world around you*
 
 On [HoloLens](hololens-hardware-details.md), your app renders its holograms on top of the user's real-world surroundings. On a [Windows Mixed Reality immersive headset](immersive-headset-hardware-details.md), the user cannot see the real world, and so your app must render everything the user will see.
 
@@ -26,9 +27,10 @@ While in an immersive view, your app is also responsible for handling all input.
 
 ## 2D views
 
-![Multiple 2D views laid out around the Windows Mixed Reality home](images/teleportation-640px.png)
+![Multiple 2D views laid out around the Windows Mixed Reality home](images/teleportation-640px.png)<br>
+*Multiple apps with a 2D view placed around the Windows Mixed Reality home*
 
-A 2D view appears in the [shell](navigating-the-windows-mixed-reality-home.md) as a virtual slate, rendered alongside the app launchers and other holograms the user has placed in their world. The user can adjust this slate to move and scale it, though it remains at a fixed resolution regardless of its size. If your app's first view is a 2D view, your 2D content will fill the same slate used to launch the app.
+An app with a 2D view appears in the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) (sometimes called the "shell") as a virtual slate, rendered alongside the app launchers and other holograms the user has placed in their world. The user can adjust this slate to move and scale it, though it remains at a fixed resolution regardless of its size. If your app's first view is a 2D view, your 2D content will fill the same slate used to launch the app.
 
 In a desktop headset, you can run any Universal Windows Platform (UWP) apps that run on your desktop monitor today. These apps are already rendering 2D views today, and their content will automatically appear on a slate in the user's world when launched. 2D UWP apps can target the **Windows.Universal** device family to run on both desktop headsets and on HoloLens as slates.
 
