@@ -18,17 +18,10 @@
 #### [Spatial sound](spatial-sound.md)
 #### [Coordinate systems](coordinate-systems.md)
 #### [Spatial anchors](spatial-anchors.md)
-### App model
+### Apps in mixed reality
 #### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 #### [App model](app-model.md)
 #### [App views](app-views.md)
-### Holographic rendering
-#### [Rendering](rendering.md)
-#### [Volume rendering](volume-rendering.md)
-### Other key features
-#### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
-#### [Locatable camera](locatable-camera.md)
-#### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 
 ## [Academy](academy.md)
 ### [Holograms 100](holograms-100.md)
@@ -69,10 +62,12 @@
 
 ## [Development](development.md)
 ### [Development overview](development-overview.md)
-### [Using Visual Studio](using-visual-studio.md)
+### Rendering
+#### [Holographic rendering](rendering.md)
+#### [Volume rendering](volume-rendering.md)
 ### Unity
+#### [Unity development overview](unity-development-overview.md)
 #### Getting started
-##### [Unity development overview](unity-development-overview.md)
 ##### [Recommended settings for Unity](recommended-settings-for-unity.md)
 ##### [Unity Play Mode](unity-play-mode.md)
 ##### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
@@ -80,12 +75,12 @@
 #### Core building blocks
 ##### [Camera in Unity](camera-in-unity.md)
 ##### [Coordinate systems in Unity](coordinate-systems-in-unity.md)
+##### [Persistence in Unity](persistence-in-unity.md)
 ##### [Gaze in Unity](gaze-in-unity.md)
 ##### [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
 ##### [Voice input in Unity](voice-input-in-unity.md)
-##### [Persistence in Unity](persistence-in-unity.md)
-##### [Spatial sound in Unity](spatial-sound-in-unity.md)
 ##### [Spatial mapping in Unity](spatial-mapping-in-unity.md)
+##### [Spatial sound in Unity](spatial-sound-in-unity.md)
 #### Other key features
 ##### [Shared experiences in Unity](shared-experiences-in-unity.md)
 ##### [Locatable camera in Unity](locatable-camera-in-unity.md)
@@ -96,13 +91,13 @@
 ##### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 ##### [Using Vuforia with Unity](vuforia-development-overview.md)
 ### DirectX
+#### [DirectX development overview](directx-development-overview.md)
 #### Getting started
-##### [DirectX development overview](directx-development-overview.md)
 ##### [Creating a holographic DirectX project](creating-a-holographic-directx-project.md)
 ##### [Getting a HolographicSpace](getting-a-holographicspace.md)
 ##### [Rendering in DirectX](rendering-in-directx.md)
-##### [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
 #### Core building blocks
+##### [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
 ##### [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
 ##### [Voice input in DirectX](voice-input-in-directx.md)
 ##### [Spatial sound in DirectX](spatial-sound-in-directx.md)
@@ -114,7 +109,6 @@
 #### Advanced topics
 ##### [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)
 ##### [Add holographic remoting](add-holographic-remoting.md)
-##### [Holographic Remoting Player](holographic-remoting-player.md)
 ### WebVR
 #### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ### Porting apps
@@ -128,17 +122,26 @@
 #### [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
 #### [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 ### Testing your app
+#### [Using Visual Studio to deploy and debug](using-visual-studio.md)
 #### [Testing your app on HoloLens](testing-your-app-on-hololens.md)
 #### [Using the HoloLens emulator](using-the-hololens-emulator.md)
 #### [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md)
 #### [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
 #### [HoloLens emulator archive](hololens-emulator-archive.md)
 #### [Perception simulation](perception-simulation.md)
-### Publishing your app
+### Finishing your app
 #### [Implementing 3D app launchers](implementing-3d-app-launchers.md)
 #### [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
-#### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 #### [In-app purchases](in-app-purchases.md)
+#### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
+### Remote tools
+#### [Using the Windows Device Portal](using-the-windows-device-portal.md)
+#### [Device portal API reference](device-portal-api-reference.md)
+#### [Holographic Remoting Player](holographic-remoting-player.md)
+### Other
+#### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+#### [Locatable camera](locatable-camera.md)
+#### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 
 ## [Open source projects](open-source-projects.md)
 ### [Galaxy Explorer](galaxy-explorer.md)
@@ -170,11 +173,12 @@
 ### [Spectator view](spectator-view.md)
 ### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
-### Mixed reality release notes
-#### [Current release notes](release-notes.md)
-#### [Release notes - August 2016](release-notes-august-2016.md)
-#### [Release notes - March 2016](release-notes-march-2016.md)
-#### [Release notes - May 2016](release-notes-may-2016.md)
+
+## Mixed reality release notes
+### [Current release notes](release-notes.md)
+### [Release notes - August 2016](release-notes-august-2016.md)
+### [Release notes - March 2016](release-notes-march-2016.md)
+### [Release notes - May 2016](release-notes-may-2016.md)
 
 ## HoloLens how-to
 ### [Accounts on HoloLens](accounts-on-hololens.md)
