@@ -13,6 +13,8 @@ keywords: Windows Mixed Reality, index, landing page, design, developement, acad
 
 Mixed reality blends real-world and virtual content into hybrid environments where physical and digital objects coexist and interact.
 
+<br>
+
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
                               <a href="mixed-reality.md" title="What is mixed reality?" data-linktype="absolute-path">
