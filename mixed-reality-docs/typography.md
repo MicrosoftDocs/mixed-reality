@@ -45,16 +45,22 @@ Avoid using light or semilight font weights for type sizes under 42pt since thin
 In HoloLens, since the holograms are constructed with an additive light system, white text is highly legible. You can find examples of white text on the Start menu and the App bar. Even though white text works well without a back plate on HoloLens, a complex physical background could make the type difficult to read. To improve the user's focus and minimize the distraction from a physical background, we recommend using white text on a dark or colored back plate.
 
 <br>
+
+
 ![We recommend using white text on a dark or colored back plate.](images/typography-whiteonblack2-1000px.jpg)
 
 We recommend using white text on a dark or colored back plate.
 
 <br>
+
+
 ![Black text examples](images/640px-typography-textcolors.jpg)
 
 To use dark text, you should use a bright back plate to make it readable. In additive color systems, black is displayed as transparent. This means you will not be able to see the black text without a colored back plate.
 
 <br>
+
+
 ![Black text examples](images/640px-typography-blackonwhite.jpg)
 
 You can find examples of black text in UWP apps such as the Store or Settings.
