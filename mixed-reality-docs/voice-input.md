@@ -35,7 +35,7 @@ Voice input is powered by the [same engine](https://msdn.microsoft.com/en-us/lib
 Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gestures.md#air-tap) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
 ![Say "select" to use the voice command for selection](images/kma-voice-select-00170-800px.png)<br>
-*Say select to use the voice command for selection*
+*Say "select" to use the voice command for selection*
 
 ## Hey Cortana
 
