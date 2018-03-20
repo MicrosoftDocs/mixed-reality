@@ -16,6 +16,8 @@ When objects are out of our line of sight, one of the ways that we can perceive 
 
 Although holograms can only appear visually where the user's gaze is pointing, your app's sound can come from all directions; above, below, behind, to the side, etc. You can use this feature to draw attention to an object that might not currently be in the user's view. A user can perceive sounds to be emanating from a source in the mixed-reality world. For example, as the user gets closer to an object or the object gets closer to them, the volume increases. Similarly, as objects move around a user, or vice versa, spatial sounds give the illusion that sounds are coming directly from the object.
 
+<br>
+
 >[!VIDEO https://www.youtube.com/embed/PTPvx7mDon4]
 
 ## Device support
@@ -28,11 +30,11 @@ Although holograms can only appear visually where the user's gaze is pointing, y
 </tr>
 </table>
 
-
-
 ## Simulating the perceived location and distance of sounds
 
 By analyzing how sound reaches both our ears, our brain determines the distance and direction of the object emitting the sound. An HRTF (or Head Related Transfer Function) simulates this interaction by modeling the spectral response that characterizes how an ear receives sound from a point in space. The spatial audio engine uses personalized HRTFs to expand the mixed reality experience, and simulate sounds that are coming from various directions and distances.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
 
