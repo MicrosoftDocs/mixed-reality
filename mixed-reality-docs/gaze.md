@@ -46,9 +46,8 @@ As a mixed reality developer, you can do a lot with gaze:
 
 Most apps should use a [cursor](cursors.md) (or other auditory/visual indication) to give the user confidence in what they're about to interact with. You typically position this cursor in the world where their gaze ray first interacts an object, which may be a hologram or a real-world surface.
 
-![An example visual cursor to show gaze](images/cursor.jpg)
-
-An example visual cursor to show gaze
+![An example visual cursor to show gaze](images/cursor.jpg)<br>
+*An example visual cursor to show gaze*
 
 ## Giving action to the user's gaze
 
