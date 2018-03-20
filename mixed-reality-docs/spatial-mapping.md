@@ -14,6 +14,8 @@ keywords: spatial mapping, HoloLens, mixed reality, surface reconstruction, mesh
 
 Spatial mapping provides a detailed representation of real-world surfaces in the environment around the HoloLens, allowing developers to create a convincing mixed reality experience. By merging the real world with the virtual world, an application can make holograms seem real. Applications can also more naturally align with user expectations by providing familiar real-world behaviors and interactions.
 
+<br>
+
 >[!VIDEO https://www.youtube.com/embed/zff2aQ1RaVo]
 
 ## Device support
