@@ -19,7 +19,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                                    <a href="holograms-100.md" title="Design documentation" data-linktype="absolute-path">
+                                    <a href="holograms-100.md" title="Holograms 100" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -35,9 +35,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                             </div>
                                         </div>
                                     </div>
+                               </a>
                             </li>
                             <li>
-                                <a href="holograms-101e.md" title="Design documentation" data-linktype="absolute-path">
+                                <a href="holograms-101e.md" title="Holograms 101E" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -53,9 +54,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                             </div>
                                         </div>
                                     </div>
+                                  </a>
                             </li>
                             <li>
-                                  <a href="holograms-101.md" title="Design documentation" data-linktype="absolute-path">
+                                  <a href="holograms-101.md" title="Holograms 101" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -74,7 +76,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                </a>
                             </li>
                             <li>
-                             <a href="holograms-210.md" title="Design documentation" data-linktype="absolute-path">
+                             <a href="holograms-210.md" title="Holograms 210" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -90,9 +92,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                       </div>
                                   </div>
                               </div>
+                               </a>
                             </li>
                             <li>
-                            <a href="holograms-211.md" title="Design documentation" data-linktype="absolute-path">
+                            <a href="holograms-211.md" title="Holograms 211" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -108,9 +111,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                       </div>
                                   </div>
                               </div>
+                              </a>
                             </li>         
                             <li>
-                             <a href="holograms-212.md" title="Design documentation" data-linktype="absolute-path">
+                             <a href="holograms-212.md" title="Holograms 212" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -126,9 +130,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                       </div>
                                   </div>
                               </div>
+                              </a>
                             </li>
                              <li>
-                              <a href="mixed-reality-213.md" title="Design documentation" data-linktype="absolute-path">
+                              <a href="mixed-reality-213.md" title="Mixed Reality 213" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -144,9 +149,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                       </div>
                                   </div>
                               </div>
+                              </a>
                             </li>   
                               <li>
-                              <a href="holograms-220.md" title="Design documentation" data-linktype="absolute-path">
+                              <a href="holograms-220.md" title="Holograms 220" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -162,9 +168,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                       </div>
                                   </div>
                               </div>
+                              </a>
                             </li>      
                                <li>
-                               <a href="holograms-230.md" title="Design documentation" data-linktype="absolute-path">
+                               <a href="holograms-230.md" title="Holograms 230" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -180,9 +187,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                       </div>
                                   </div>
                               </div>
+                             </a>
                             </li> 
                                 <li>
-                                <a href="holograms-240.md" title="Design documentation" data-linktype="absolute-path">
+                                <a href="holograms-240.md" title="Holograms 240" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -198,9 +206,10 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                       </div>
                                   </div>
                               </div>
+                             </a>
                             </li> 
                                  <li>
-                                   <a href="mixed-reality-250.md" title="Design documentation" data-linktype="absolute-path">
+                                   <a href="mixed-reality-250.md" title="Mixed Reality 250" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -216,8 +225,9 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                                       </div>
                                   </div>
                               </div>
+                              </a>
                             </li> 
- </ul>
+</ul>
 
 ## Microsoft Reactor
 
