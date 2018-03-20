@@ -124,7 +124,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Enthusiast's Guide</h3>
+                                                    <h3>Immersive Headset Enthusiast's Guide</h3>
                                                     <p>We know you might be looking to dive deeper on Windows Mixed Reality and learn how to get the most of your new headset and motion controllers, so we created the Enthusiast's Guide to provide you with exclusive information and answer the top questions people have about Windows Mixed Reality before and after they buy.</p>
                                                 </div>
                                             </div>
