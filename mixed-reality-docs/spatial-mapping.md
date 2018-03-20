@@ -32,7 +32,7 @@ Spatial mapping provides a detailed representation of real-world surfaces in the
 
 ## Conceptual overview
 
-![Mesh surfaces covering a room](images/surfacereconstruction.jpg)<br>
+![Mesh surfaces covering a room](images/SurfaceReconstruction.jpg)<br>
 *An example of a spatial mapping mesh covering a room*
 
 The two primary object types used for spatial mapping are the 'Spatial Surface Observer' and the 'Spatial Surface'.
