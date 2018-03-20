@@ -68,7 +68,7 @@ Motion controllers can be bonded with host PC using Windows settings like any ot
 7. Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
 
    ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)<br>
-   *Select Motion controller to pair, if multiple instances select one from appearing bottom of the list*
+   *Select "Motion controller" to pair; if there are multiple instances, select one from the bottom of the list*
    
 8. You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category** as **Connected**. At this point, you may get a firmware update – see [next section](motion-controllers.md#updating-controller-firmware).
 9. Reattach battery cover.
