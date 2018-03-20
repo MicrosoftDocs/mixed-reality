@@ -19,6 +19,7 @@ Calibrating your IPD (interpupillary distance) can improve the quality of your v
 ### During setup
 
 ![IPD finger-alignment screen at second step](images/ipd-finger-alignment-300px.jpg)
+*IPD finger-alignment screen at second step*
 
 On HoloLens, you'll be prompted to calibrate your visuals during setup. This allows the device to adjust hologram display according to the user's [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). With an incorrect IPD, holograms may appear unstable or at an incorrect distance.
 
