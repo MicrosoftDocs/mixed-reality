@@ -42,24 +42,24 @@ Even without specifically adding voice support to your app, your users can activ
 You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to wait for her to appear to continue asking her your question or giving her an instruction - for example, try saying "Hey Cortana what's the weather?" as a single sentence. For more information about Cortana and what you can do, simply ask her! Say "Hey Cortana what can I say?" and she'll pull up a list of working and suggested commands. If you're already in the Cortana app you can also click the **?** icon on the sidebar to pull up this same menu.
 
 **HoloLens-specific commands**
-* What can I say?
-* Go home | Go to Start - instead of [bloom](gestures.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
-* Launch <app>
-* Move <app> here
-* Take a picture
-* Start recording
-* Stop recording
-* Increase the brightness
-* Decrease the brightness
-* Increase the volume
-* Decrease the volume
-* Mute | Unmute
-* Shut down the device
-* Restart the device
-* Go to sleep
-* What time is it?
-* How much battery do I have left?
-* Call <contact> (requires HoloSkype)
+* "What can I say?"
+* "Go home" or "Go to Start" - instead of [bloom](gestures.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
+* "Launch <app>"
+* "Move <app> here"
+* "Take a picture"
+* "Start recording"
+* "Stop recording"
+* "Increase the brightness"
+* "Decrease the brightness"
+* "Increase the volume"
+* "Decrease the volume"
+* "Mute" or "Unmute"
+* "Shut down the device"
+* "Restart the device"
+* "Go to sleep"
+* "What time is it?"
+* "How much battery do I have left?"
+* "Call <contact>" (requires Skype for HoloLens)
 
 ## "See It, Say It"
 
