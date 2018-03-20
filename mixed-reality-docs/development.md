@@ -70,7 +70,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/DirectXIcon_b.jpg" alt="DirectX icon">
+                            <img src="images/DirectXIcon.jpg" alt="DirectX icon">
                         </div>
                     </div>
                     <div class="cardText">
