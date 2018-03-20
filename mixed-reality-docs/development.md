@@ -20,7 +20,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="GettingStarted.jpg" alt="Get started icon">
+                            <img src="images/GettingStarted.jpg" alt="Get started icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -45,7 +45,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="UnityIcon.jpg" alt="Unity icon">
+                            <img src="images/UnityIcon.jpg" alt="Unity icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -70,7 +70,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="DirectXIcon_b.jpg" alt="DirectX icon">
+                            <img src="images/DirectXIcon_b.jpg" alt="DirectX icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -95,7 +95,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="OpenSourceIcon.jpg" alt="Open source projects icon">
+                            <img src="images/OpenSourceIcon.jpg" alt="Open source projects icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -120,7 +120,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="HoloLensIcon.jpg" alt="Unique to HoloLens icon">
+                            <img src="images/HoloLensIcon.jpg" alt="Unique to HoloLens icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -145,7 +145,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="ImmersiveHeadsets.jpg" alt="Unique to immersive headsets icon">
+                            <img src="images/ImmersiveHeadsets.jpg" alt="Unique to immersive headsets icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -198,11 +198,11 @@ keywords: Windows Mixed Reality, develop, development, HoloLens
             </div>
         </div>
     </li>
-  </ul>
+</ul>
   
 ## Unity API reference (external)
   
-  <ul class="panelContent cardsF">
+<ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
             <div class="cardPadding">
