@@ -133,3 +133,6 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                </a>
                             </li>
 </ul>
+
+>[!IMPORTANT]
+>All Windows Mixed Reality development materials are provided on this site for your reference only. Your app, its usage, and its effect on end users is your sole responsibility as the app developer, including ensuring that your app does not cause discomfort, injury or any other harm to an end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your app to ensure that your app is safe and you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/en-us/legal/windows/agreements/app-developer-agreement). 
