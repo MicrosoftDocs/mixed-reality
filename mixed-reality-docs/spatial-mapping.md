@@ -30,7 +30,8 @@ Spatial mapping provides a detailed representation of real-world surfaces in the
 
 ## Conceptual overview
 
-![Mesh surfaces covering a room](images/surfacereconstruction-150px.jpg)
+![Mesh surfaces covering a room](images/surfacereconstruction.jpg)
+*An example of a spatial mapping mesh covering a room*
 
 The two primary object types used for spatial mapping are the 'Spatial Surface Observer' and the 'Spatial Surface'.
 
@@ -43,28 +44,6 @@ As the HoloLens gathers new data about the environment, and as changes to the en
 ## Common usage scenarios
 
 ![Illustrations of common Spatial Mapping usage scenarios: Placement, Occlusion, Physics and Navigation](images/sm-concepts-1000px.png)
-
-### Occlusion
-
-One of the primary uses of spatial mapping surfaces is simply to occlude holograms. This simple behavior has a huge impact on the perceived realism of holograms, helping to create a visceral sense that really inhabit the same physical space as the user.
-
-Occlusion also provides information to the user; when a hologram appears to be occluded by a real-world surface, this provides additional visual feedback as to the spatial location of that hologram in the world. Conversely, occlusion can also usefully *hide* information from the user; occluding holograms behind walls can reduce visual clutter in an intuitive way. To hide or reveal a hologram, the user merely has to move their head.
-
-Occlusion can also be used to prime expectations for a natural user interface based upon familiar physical interactions; if a hologram is occluded by a surface it is because that surface is solid, so the user should expect that the hologram will *collide* with that surface and not simply pass through it.
-
-Sometimes, occlusion of holograms is undesirable. If a user needs to be able to interact with a hologram, then they need to be able to see it - even if it is behind a real-world surface. In such cases, it usually makes sense to render such a hologram differently when it is occluded (for example, by reducing its brightness). This way, the user will be able to visually locate the hologram, but they will still be aware that it is behind something.
-
-### Visualization
-
-Most of the time it is appropriate for spatial surfaces to be invisible; to minimize visual clutter and let the real world speak for itself. However, sometimes it is useful to visualize spatial mapping surfaces directly, despite the fact that their real-world counterparts are already visible.
-
-For example, when the user is trying to place a hologram onto a surface (placing a holographic cabinet on the wall, say) it can be useful to 'ground' the hologram by casting a shadow onto the surface. This gives the user a much clearer sense of the exact physical proximity between the hologram and the surface. This is also an example of the more general practice of visually 'previewing' a change before the user commits to it.
-
-By visualizing surfaces, the application can share with the user its understanding of the environment. For example, a holographic board game could visualize the horizontal surfaces that it has identified as 'tables', so the user knows where they should go to interact.
-
-Visualizing surfaces can be a useful way to show the user nearby spaces that are hidden from view. This could provide a simple way to give the user access to their kitchen (and all of its contained holograms) from their living room.
-
-The surface meshes provided by spatial mapping may not be particularly 'clean'. Thus it is important to visualize them appropriately. Traditional lighting calculations may highlight errors in surface normals in a visually distracting manner, whilst 'clean' textures projected onto the surface may help to give it a tidier appearance. It is also possible to perform [mesh processing](spatial-mapping.md#mesh-processing) to improve mesh properties, before the surfaces are rendered.
 
 ### Placement
 
@@ -81,6 +60,16 @@ At its extreme, user input can be simplified away entirely and spatial surfaces 
 Note also that the ability of an application to use spatial surfaces for placement depends heavily on the application's [scanning experience](spatial-mapping-design.md#the-environment-scanning-experience). If a surface has not been scanned, then it cannot be used for placement. It is up to the application to make this clear to the user, so that they can either help scan new surfaces or select a new location.
 
 Visual feedback to the user is of paramount importance during placement. The user needs to know where the hologram is in relation to the nearest surface with [grounding effects](spatial-mapping.md#visualization). They should understand why the movement of their hologram is being constrained (for example, due to collision with another nearby surface). If they cannot place a hologram in the current location, then visual feedback should make it clear why not. For example, if the user is trying to place a holographic couch stuck half-way into the wall, then the portions of the couch that are behind the wall should pulsate in an angry color. Or conversely, if the application cannot find a spatial surface in a location where the user can see a real-world surface, then the application should make this clear. The obvious absence of a grounding effect in this area may achieve this purpose.
+
+### Occlusion
+
+One of the primary uses of spatial mapping surfaces is simply to occlude holograms. This simple behavior has a huge impact on the perceived realism of holograms, helping to create a visceral sense that really inhabit the same physical space as the user.
+
+Occlusion also provides information to the user; when a hologram appears to be occluded by a real-world surface, this provides additional visual feedback as to the spatial location of that hologram in the world. Conversely, occlusion can also usefully *hide* information from the user; occluding holograms behind walls can reduce visual clutter in an intuitive way. To hide or reveal a hologram, the user merely has to move their head.
+
+Occlusion can also be used to prime expectations for a natural user interface based upon familiar physical interactions; if a hologram is occluded by a surface it is because that surface is solid, so the user should expect that the hologram will *collide* with that surface and not simply pass through it.
+
+Sometimes, occlusion of holograms is undesirable. If a user needs to be able to interact with a hologram, then they need to be able to see it - even if it is behind a real-world surface. In such cases, it usually makes sense to render such a hologram differently when it is occluded (for example, by reducing its brightness). This way, the user will be able to visually locate the hologram, but they will still be aware that it is behind something.
 
 ### Physics
 
@@ -102,22 +91,34 @@ The key technical challenges involved in implementing navigation functionality w
 
 Note that the built-in NavMesh functionality in Unity cannot be used with spatial mapping surfaces. This is because spatial mapping surfaces are not known until the application starts, whereas NavMesh data files need to be generated from source assets ahead of time. Also note that, the spatial mapping system will not provide [information about surfaces very far away](spatial-mapping-design.md#the-environment-scanning-experience) from the user's current location. So the application must 'remember' surfaces itself if it is to build a map of a very large area.
 
+### Visualization
+
+Most of the time it is appropriate for spatial surfaces to be invisible; to minimize visual clutter and let the real world speak for itself. However, sometimes it is useful to visualize spatial mapping surfaces directly, despite the fact that their real-world counterparts are already visible.
+
+For example, when the user is trying to place a hologram onto a surface (placing a holographic cabinet on the wall, say) it can be useful to 'ground' the hologram by casting a shadow onto the surface. This gives the user a much clearer sense of the exact physical proximity between the hologram and the surface. This is also an example of the more general practice of visually 'previewing' a change before the user commits to it.
+
+By visualizing surfaces, the application can share with the user its understanding of the environment. For example, a holographic board game could visualize the horizontal surfaces that it has identified as 'tables', so the user knows where they should go to interact.
+
+Visualizing surfaces can be a useful way to show the user nearby spaces that are hidden from view. This could provide a simple way to give the user access to their kitchen (and all of its contained holograms) from their living room.
+
+The surface meshes provided by spatial mapping may not be particularly 'clean'. Thus it is important to visualize them appropriately. Traditional lighting calculations may highlight errors in surface normals in a visually distracting manner, whilst 'clean' textures projected onto the surface may help to give it a tidier appearance. It is also possible to perform [mesh processing](spatial-mapping.md#mesh-processing) to improve mesh properties, before the surfaces are rendered.
+
 ## Using The Surface Observer
 
 The starting point for spatial mapping is the surface observer. Program flow is as follows:
 * Create a surface observer object
-* Provide one or more spatial volumes, to define the regions of interest in which the application wishes to receive spatial mapping data. A spatial volume is simply a shape defining a region of space, such as a sphere or a box.
-* Use a spatial volume with a world-locked spatial coordinate system to identify a fixed region of the physical world.
-* Use a spatial volume, updated each frame with a body-locked spatial coordinate system, to identify a region of space that moves (but does not rotate) with the user.
-* These spatial volumes may be changed later at any time, as the status of the application or the user changes.
+   * Provide one or more spatial volumes, to define the regions of interest in which the application wishes to receive spatial mapping data. A spatial volume is simply a shape defining a region of space, such as a sphere or a box.
+   * Use a spatial volume with a world-locked spatial coordinate system to identify a fixed region of the physical world.
+   * Use a spatial volume, updated each frame with a body-locked spatial coordinate system, to identify a region of space that moves (but does not rotate) with the user.
+   * These spatial volumes may be changed later at any time, as the status of the application or the user changes.
 * Use polling or notification to retrieve information about spatial surfaces
-* You may 'poll' the surface observer for spatial surface status at any time. Alternatively, you may register for the surface observer's 'surfaces changed' event, which will notify the application when spatial surfaces have changed.
-* For a dynamic spatial volume, such as the view frustum, or a body-locked volume, applications will need to poll for changes each frame by setting the region of interest and then obtaining the current set of spatial surfaces.
-* For a static volume, such as a world-locked cube covering a single room, applications may register for the 'surfaces changed' event to be notified when spatial surfaces inside that volume may have changed.
+   * You may 'poll' the surface observer for spatial surface status at any time. Alternatively, you may register for the surface observer's 'surfaces changed' event, which will notify the application when spatial surfaces have changed.
+   * For a dynamic spatial volume, such as the view frustum, or a body-locked volume, applications will need to poll for changes each frame by setting the region of interest and then obtaining the current set of spatial surfaces.
+   * For a static volume, such as a world-locked cube covering a single room, applications may register for the 'surfaces changed' event to be notified when spatial surfaces inside that volume may have changed.
 * Process surfaces changes
-* Iterate the provided set of spatial surfaces.
-* Classify spatial surfaces as added, changed or removed.
-* For each added or changed spatial surface, if appropriate submit an asynchronous request to receive updated mesh representing the surface's current state at the desired level of detail.
+   * Iterate the provided set of spatial surfaces.
+   * Classify spatial surfaces as added, changed or removed.
+   * For each added or changed spatial surface, if appropriate submit an asynchronous request to receive updated mesh representing the surface's current state at the desired level of detail.
 * Process the asynchronous mesh request (more details in following sections).
 
 ## Mesh Caching
@@ -132,23 +133,23 @@ When interpreting the 'surfaces changed' event provided by the surface observer,
 * If the application no longer sees a spatial surface with a known ID, it should treat this as a removed spatial surface.
 
 It is up to each application to then make the following choices:
-**For new spatial surfaces, should mesh be requested?**
-* Generally mesh should be requested immediately for new spatial surfaces, which may provide useful new information to the user.
-* However, new spatial surfaces near and in front of the user should be given priority and their mesh should be requested first.
-* If the new mesh is not needed, if for example the application has permanently or temporarily 'frozen' its model of the environment, then it should not be requested.
-**For updated spatial surfaces, should mesh be requested?**
-* Updated spatial surfaces near and in front of the user should be given priority and their mesh should be requested first.
-* It may also be appropriate to give higher priority to new surfaces than to updated surfaces, especially during the scanning experience.
-* To limit processing costs, applications may wish to throttle the rate at which they process updates to spatial surfaces.
-* It may be possible to infer that changes to a spatial surface are minor, for example if the bounds of the surface are small, in which case the update may not be important enough to process.
-* Updates to spatial surfaces outside the current region of interest of the user may be ignored entirely, though in this case it may be more efficient to modify the spatial bounding volumes in use by the surface observer.
-**For removed spatial surfaces, should mesh be discarded?**
-* Generally mesh should be discarded immediately for removed spatial surfaces, so that hologram occlusion remains correct.
-* However, if the application has reason to believe that a spatial surface will reappear shortly (perhaps based upon the design of the user experience), then it may be more efficient to retain it than to discard its mesh and recreate it again later.
-* If the application is building a large-scale model of the user's environment then it may not wish to discard any meshes at all. It will still need to limit resource usage though, possibly by spooling meshes to disk as spatial surfaces disappear.
-* Note that some relatively rare events during spatial surface generation can cause spatial surfaces to be replaced by new spatial surfaces in a similar location but with different IDs. Consequently, applications that choose not to discard a removed surface should take care not to end up with multiple highly-overlapped spatial surface meshes covering the same location.
-**Should mesh be discarded for any other spatial surfaces?**
-* Even while a spatial surface exists, if it is no longer useful to the user's experience then it should be discarded. For example, if the application 'replaces' the room on the other side of a doorway with an alternate virtual space then the spatial surfaces in that room no longer matter.
+* **For new spatial surfaces, should mesh be requested?**
+   * Generally mesh should be requested immediately for new spatial surfaces, which may provide useful new information to the user.
+   * However, new spatial surfaces near and in front of the user should be given priority and their mesh should be requested first.
+   * If the new mesh is not needed, if for example the application has permanently or temporarily 'frozen' its model of the environment, then it should not be requested.
+* **For updated spatial surfaces, should mesh be requested?**
+   * Updated spatial surfaces near and in front of the user should be given priority and their mesh should be requested first.
+   * It may also be appropriate to give higher priority to new surfaces than to updated surfaces, especially during the scanning experience.
+   * To limit processing costs, applications may wish to throttle the rate at which they process updates to spatial surfaces.
+   * It may be possible to infer that changes to a spatial surface are minor, for example if the bounds of the surface are small, in which case the update may not be important enough to process.
+   * Updates to spatial surfaces outside the current region of interest of the user may be ignored entirely, though in this case it may be more efficient to modify the spatial bounding volumes in use by the surface observer.
+* **For removed spatial surfaces, should mesh be discarded?**
+   * Generally mesh should be discarded immediately for removed spatial surfaces, so that hologram occlusion remains correct.
+   * However, if the application has reason to believe that a spatial surface will reappear shortly (perhaps based upon the design of the user experience), then it may be more efficient to retain it than to discard its mesh and recreate it again later.
+   * If the application is building a large-scale model of the user's environment then it may not wish to discard any meshes at all. It will still need to limit resource usage though, possibly by spooling meshes to disk as spatial surfaces disappear.
+   * Note that some relatively rare events during spatial surface generation can cause spatial surfaces to be replaced by new spatial surfaces in a similar location but with different IDs. Consequently, applications that choose not to discard a removed surface should take care not to end up with multiple highly-overlapped spatial surface meshes covering the same location.
+* **Should mesh be discarded for any other spatial surfaces?**
+   * Even while a spatial surface exists, if it is no longer useful to the user's experience then it should be discarded. For example, if the application 'replaces' the room on the other side of a doorway with an alternate virtual space then the spatial surfaces in that room no longer matter.
 
 Here is an example mesh caching strategy, using spatial and temporal hysteresis:
 * Consider an application that wishes to use a frustum-shaped spatial volume of interest that follows the user's gaze as they look around and walk around.
@@ -161,30 +162,30 @@ Here is an example mesh caching strategy, using spatial and temporal hysteresis:
 ## Rendering
 
 There are three primary ways in which spatial mapping meshes tend to be used for rendering:
-**For surface visualization**
-* It is often useful to visualize spatial surfaces directly. For example, casting 'shadows' from objects onto spatial surfaces can provide helpful visual feedback to the user while they are placing holograms on surfaces.
-* One thing to bear in mind is that spatial meshes are different to the kind of meshes that a 3D artist might create. The triangle topology will not be as 'clean' as human-created topology, and the mesh will suffer from [various errors](spatial-mapping-design.md#what-influences-spatial-mapping-quality).
-* In order to create a pleasing visual aesthetic, you may thus want to perform some [mesh processing](spatial-mapping.md#mesh-processing), for example to fill holes or smooth surface normals. You may also wish to use a shader to project artist-designed textures onto your mesh instead of directly visualizing mesh topology and normals.
-**For occluding holograms behind real-world surfaces**
-* Spatial surfaces can be rendered in a depth-only pass which only affects the [depth buffer](https://msdn.microsoft.com/en-us/library/windows/desktop/bb219616(v=vs.85).aspx) and does not affect color render targets.
-* This primes the depth buffer to occlude subsequently-rendered holograms behind spatial surfaces. Accurate occlusion of holograms enhances the sense that holograms really exist within the user's physical space.
-* To enable depth-only rendering, update your blend state to set the [RenderTargetWriteMask](https://msdn.microsoft.com/en-us/library/windows/desktop/hh404492(v=vs.85).aspx) to zero for all color render targets.
-**For modifying the appearance of holograms occluded by real-world surfaces**
-* Normally rendered geometry is hidden when it is occluded. This is achieved by setting the depth function in your [depth-stencil state](https://msdn.microsoft.com/en-us/library/windows/desktop/ff476110(v=vs.85).aspx) to "less than or equal", which causes geometry to be visible only where it is **closer** to the camera than all previously rendered geometry.
-* However, it may be useful to keep certain geometry visible even when it is occluded, and to modify its appearance when occluded as a way of providing visual feedback to the user. For example, this allows the application to show the user the location of an object whilst making it clear that is behind a real-world surface.
-* To achieve this, render the geometry a second time with a different shader that creates the desired 'occluded' appearance. Before rendering the geometry for the second time, make two changes to your [depth-stencil state](https://msdn.microsoft.com/en-us/library/windows/desktop/ff476110(v=vs.85).aspx). First, set the depth function to "greater than or equal" so that the geometry will be visible only where it is **further** from the camera than all previously rendered geometry. Second, set the DepthWriteMask to zero, so that the depth buffer will not be modified (the depth buffer should continue to represent the depth of the geometry **closest** to the camera).
+* **For surface visualization**
+   * It is often useful to visualize spatial surfaces directly. For example, casting 'shadows' from objects onto spatial surfaces can provide helpful visual feedback to the user while they are placing holograms on surfaces.
+   * One thing to bear in mind is that spatial meshes are different to the kind of meshes that a 3D artist might create. The triangle topology will not be as 'clean' as human-created topology, and the mesh will suffer from [various errors](spatial-mapping-design.md#what-influences-spatial-mapping-quality).
+   * In order to create a pleasing visual aesthetic, you may thus want to perform some [mesh processing](spatial-mapping.md#mesh-processing), for example to fill holes or smooth surface normals. You may also wish to use a shader to project artist-designed textures onto your mesh instead of directly visualizing mesh topology and normals.
+* **For occluding holograms behind real-world surfaces**
+   * Spatial surfaces can be rendered in a depth-only pass which only affects the [depth buffer](https://msdn.microsoft.com/en-us/library/windows/desktop/bb219616(v=vs.85).aspx) and does not affect color render targets.
+   * This primes the depth buffer to occlude subsequently-rendered holograms behind spatial surfaces. Accurate occlusion of holograms enhances the sense that holograms really exist within the user's physical space.
+   * To enable depth-only rendering, update your blend state to set the [RenderTargetWriteMask](https://msdn.microsoft.com/en-us/library/windows/desktop/hh404492(v=vs.85).aspx) to zero for all color render targets.
+* **For modifying the appearance of holograms occluded by real-world surfaces**
+   * Normally rendered geometry is hidden when it is occluded. This is achieved by setting the depth function in your [depth-stencil state](https://msdn.microsoft.com/en-us/library/windows/desktop/ff476110(v=vs.85).aspx) to "less than or equal", which causes geometry to be visible only where it is **closer** to the camera than all previously rendered geometry.
+   * However, it may be useful to keep certain geometry visible even when it is occluded, and to modify its appearance when occluded as a way of providing visual feedback to the user. For example, this allows the application to show the user the location of an object whilst making it clear that is behind a real-world surface.
+   * To achieve this, render the geometry a second time with a different shader that creates the desired 'occluded' appearance. Before rendering the geometry for the second time, make two changes to your [depth-stencil state](https://msdn.microsoft.com/en-us/library/windows/desktop/ff476110(v=vs.85).aspx). First, set the depth function to "greater than or equal" so that the geometry will be visible only where it is **further** from the camera than all previously rendered geometry. Second, set the DepthWriteMask to zero, so that the depth buffer will not be modified (the depth buffer should continue to represent the depth of the geometry **closest** to the camera).
 
 [Performance](performance-recommendations-for-hololens-apps.md) is an important concern when rendering spatial mapping meshes. Here are some rendering performance techniques specific to rendering spatial mapping meshes:
-**Adjust triangle density**
-* When requesting spatial surface meshes from your surface observer, request the lowest density of triangle meshes that will suffice for your needs.
-* It may make sense to vary triangle density on a surface by surface basis, depending on the surface's distance from the user, and its relevance to the user experience.
-* Reducing triangle counts will reduce memory usage and vertex processing costs on the GPU, though it will not affect pixel processing costs.
-**Perform frustum culling**
-* Frustum culling skips drawing objects that cannot be seen because they are outside the current display frustum. This reduces both CPU and GPU processing costs.
-* Since culling is performed on a per-mesh basis and spatial surfaces can be large, breaking each spatial surface mesh into smaller chunks may result in more efficient culling (in that fewer offscreen triangles are rendered). There is a tradeoff, however; the more meshes you have, the more draw calls you must make, which can increase CPU costs. In an extreme case, the frustum culling calculations themselves could even have a measurable CPU cost.
-**Adjust rendering order**
-* Spatial surfaces tend to be large, because they represent the user's entire environment surrounding them. Pixel processing costs on the GPU can thus be high, especially in cases where there is more than one layer of visible geometry (including both spatial surfaces and other holograms). In this case, the layer nearest to the user will be occluding any layers further away, so any GPU time spent rendering those more distant layers is wasted.
-* To reduce this redundant work on the GPU, it helps to render opaque surfaces in front-to-back order (closer ones first, more distant ones last). By 'opaque' we mean surfaces for which the DepthWriteMask is set to one in your [depth-stencil state](https://msdn.microsoft.com/en-us/library/windows/desktop/ff476110(v=vs.85).aspx). When the nearest surfaces are rendered, they will prime the depth buffer so that more distant surfaces are efficiently skipped by the pixel processor on the GPU.
+* **Adjust triangle density**
+   * When requesting spatial surface meshes from your surface observer, request the lowest density of triangle meshes that will suffice for your needs.
+   * It may make sense to vary triangle density on a surface by surface basis, depending on the surface's distance from the user, and its relevance to the user experience.
+   * Reducing triangle counts will reduce memory usage and vertex processing costs on the GPU, though it will not affect pixel processing costs.
+* **Perform frustum culling**
+   * Frustum culling skips drawing objects that cannot be seen because they are outside the current display frustum. This reduces both CPU and GPU processing costs.
+   * Since culling is performed on a per-mesh basis and spatial surfaces can be large, breaking each spatial surface mesh into smaller chunks may result in more efficient culling (in that fewer offscreen triangles are rendered). There is a tradeoff, however; the more meshes you have, the more draw calls you must make, which can increase CPU costs. In an extreme case, the frustum culling calculations themselves could even have a measurable CPU cost.
+* **Adjust rendering order**
+   * Spatial surfaces tend to be large, because they represent the user's entire environment surrounding them. Pixel processing costs on the GPU can thus be high, especially in cases where there is more than one layer of visible geometry (including both spatial surfaces and other holograms). In this case, the layer nearest to the user will be occluding any layers further away, so any GPU time spent rendering those more distant layers is wasted.
+   * To reduce this redundant work on the GPU, it helps to render opaque surfaces in front-to-back order (closer ones first, more distant ones last). By 'opaque' we mean surfaces for which the DepthWriteMask is set to one in your [depth-stencil state](https://msdn.microsoft.com/en-us/library/windows/desktop/ff476110(v=vs.85).aspx). When the nearest surfaces are rendered, they will prime the depth buffer so that more distant surfaces are efficiently skipped by the pixel processor on the GPU.
 
 ## Mesh Processing
 
