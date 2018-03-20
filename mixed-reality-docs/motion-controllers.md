@@ -66,8 +66,10 @@ Motion controllers can be bonded with host PC using Windows settings like any ot
 5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
 6. Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
 7. Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
+
    ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)<br>
    *Select Motion controller to pair, if multiple instances select one from appearing bottom of the list*
+   
 8. You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category** as **Connected**. At this point, you may get a firmware update – see [next section](motion-controllers.md#updating-controller-firmware).
 9. Reattach battery cover.
 10. Repeat steps 1-9 for the second controller.
@@ -80,6 +82,7 @@ After successfully pairing both controllers, your settings should look like this
 If the controllers are turned off after pairing, their status will show up as Paired. If controllers stay permanently under “Other devices” category pairing may have been only partially completed and need to be performed again to get controller functional.
 
 ### Updating controller firmware
+
 * If an immersive headset is connected to your PC, and new controller firmware is available, the firmware will be pushed to your motion controllers automatically the next time they're turned on. Controller firmware updates are indicated by a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes.
 * After the firmware update completes, the controllers will reboot and reconnect. Both controllers should be connected now. 
     
