@@ -19,8 +19,7 @@ Whether you want to use DirectX or Unity to develop your mixed reality app, you 
 
 ## Prerequisites
 1. See [Install the Tools](install-the-tools.md) for installation instructions.
-2. Create a new Universal Windows app project in Visual Studio 2015 Update 1 or Visual Studio 2017. C#, C++, and JavaScript projects are all supported.
-1. Or follow the instructions to [create an build an app in Unity](holograms-100.md).
+2. Create a new Universal Windows app project in Visual Studio 2015 Update 1 or Visual Studio 2017. C#, C++, and JavaScript projects are all supported. (Or follow the instructions to [create an build an app in Unity](holograms-100.md).)
 
 ## Enabling Developer Mode
 
@@ -44,18 +43,20 @@ If you are working with a Windows Mixed Reality headset connected to your PC, yo
 4. Enable **Developer Mode**, read the disclaimer for the setting you chose, then click Yes to accept the change.
 
 ## Deploying an app over Wi-Fi (HoloLens)
-1. Select an **x86** build configuration for your app ![x86 build configuration in Visual Studio](images/x86setting.png)
+1. Select an **x86** build configuration for your app 
+![x86 build configuration in Visual Studio](images/x86setting.png)
 2. Select **Remote Machine** in the deployment target drop-down menu ![Remote machine deployment target in Visual Studio](images/remotemachinesetting.png)
 3. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. For C# projects, a dialog will automatically pop-up to configure your connection.
-1. Enter the IP address of your device in the **Address** or **Machine Name** field. Find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
-2. Set Authentication Mode to **Universal (Unencrypted protocol)**![Remote connection dialog in Visual Studio](images/remotedeploy.png)
+  a. Enter the IP address of your device in the **Address** or **Machine Name** field. Find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
+  b. Set Authentication Mode to **Universal (Unencrypted protocol)**![Remote connection dialog in Visual Studio](images/remotedeploy.png)
 4. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploynodebugging.png)
 5. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
 If your HoloLens IP address changes, you can change the IP address of the target machine by going to **Project > Properties > Configuration Properties > Debugging**
 
 ## Deploying an app over USB (HoloLens)
-1. Select an **x86** build configuration for your app![x86 build configuration in Visual Studio](images/x86setting.png)
+1. Select an **x86** build configuration for your app
+![x86 build configuration in Visual Studio](images/x86setting.png)
 2. Select **Device** in the deployment target drop-down menu![Device deployment in Visual Studio](images/buildsettingsusbdeploy.png)
 3. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploynodebugging.png)
 4. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
@@ -75,7 +76,8 @@ To un-pair your HoloLens from all computers it was paired with, launch the **Set
 
 ## Deploying an app to the HoloLens Emulator
 1. Make sure you have **[installed the HoloLens Emulator](install-the-tools.md)**.
-2. Select an **x86** build configuration for your app![x86 build configuration in Visual Studio](images/x86setting.png)
+2. Select an **x86** build configuration for your app.
+![x86 build configuration in Visual Studio](images/x86setting.png)
 3. Select **HoloLens Emulator** in the deployment target drop-down menu![Emulator target in Visual Studio](images/deployemulator.png)
 4. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploynodebugging.png)
 
