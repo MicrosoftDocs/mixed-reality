@@ -1,4 +1,4 @@
----
+im---
 layout: LandingPage
 title: Design
 description: This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets). So, consider this work as a set of topics for ‘how to design for Windows head-mounted displays’.
@@ -22,7 +22,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="GettingStartedIcon.jpg" alt="Getting started icon">
+                            <img src="images/GettingStartedIcon.jpg" alt="Getting started icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -47,7 +47,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="InteractionDesignIcon.jpg" alt="Interaction design icon">
+                            <img src="images/InteractionDesignIcon.jpg" alt="Interaction design icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -78,7 +78,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="StyleIcon.jpg" alt="Style icon">
+                            <img src="images/StyleIcon.jpg" alt="Style icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -106,7 +106,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="AppPatternsIcon.jpg" alt="App patterns icon">
+                            <img src="images/AppPatternsIcon.jpg" alt="App patterns icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -134,7 +134,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="ControlsIcon.jpg" alt="Controls icon">
+                            <img src="images/ControlsIcon.jpg" alt="Controls icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -170,10 +170,9 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="DesignToolsIcon.jpg" alt="Design tools icon">
+                            <img src="images/DesignToolsIcon.jpg" alt="Design tools icon">
                         </div>
-                    </div>
-                    <div class="cardText">
+                    </div>                    <div class="cardText">
                         <h3>Design tools</h3>
                         <p>
                             <a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md">HoloSketch</a>
@@ -201,7 +200,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="MRTKIcon.jpg" alt="MRTK icon">
+                            <img src="images/MRTKIcon.jpg" alt="MRTK icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -223,9 +222,11 @@ This guidance is authored by Microsoft designers, developers, program managers, 
             </div>
         </div>
     </li>
- </ul>
+</ul>
     
 ## Sample apps
+
+Build great experiences from samples designed and created by our team.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
