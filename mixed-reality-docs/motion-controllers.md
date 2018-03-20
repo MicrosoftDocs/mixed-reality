@@ -32,7 +32,7 @@ Motion controllers are [hardware accessories](hardware-accessories.md) that allo
 
 Windows Mixed Reality motion controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. These motion controllers will offer the same ease of setup and portability as Windows Mixed Reality immersive headsets. Our device partners plan to market and sell these controllers on retail shelves this holiday.
 
-![Get to know your controller](images/controllerimage-750px.png)
+![Get to know your controller](images/controllerimage-750px.png)<br>
 *Get to know your controller*
 
 **Features:**
@@ -59,32 +59,22 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 
 Motion controllers can be bonded with host PC using Windows settings like any other Bluetooth device.
 
-1.    Insert 2 AA batteries into the back of the controller. Leave the battery cover off for now.
-
-2.    If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
-
-3.    Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
-
-4.    Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
-
-5.    Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
-
-6.    Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
-
-7.    Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
-
-   ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)
+1. Insert 2 AA batteries into the back of the controller. Leave the battery cover off for now.
+2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
+3. Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
+4. Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
+5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
+6. Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
+7. Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
+   ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)<br>
    *Select Motion controller to pair, if multiple instances select one from appearing bottom of the list*
+8. You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category** as **Connected**. At this point, you may get a firmware update – see [next section](motion-controllers.md#updating-controller-firmware).
+9. Reattach battery cover.
+10. Repeat steps 1-9 for the second controller.
 
-8.    You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category** as **Connected**. At this point, you may get a firmware update – see [next section](motion-controllers.md#updating-controller-firmware).
+After successfully pairing both controllers, your settings should look like this under **“Mouse, keyboard, & pen” category** 
 
-9.    Reattach battery cover.
-
-10.    Repeat steps 1-9 for the second controller.
-
-After successfully pairing both controllers, your settings should look like this under “**“Mouse, keyboard, & pen” category** 
-
-   ![Motion controllers connected](images/450px-motion-controller-connected-300px.png)
+   ![Motion controllers connected](images/450px-motion-controller-connected-300px.png)<br>
    *Motion controllers connected*
 
 If the controllers are turned off after pairing, their status will show up as Paired. If controllers stay permanently under “Other devices” category pairing may have been only partially completed and need to be performed again to get controller functional.
@@ -93,7 +83,7 @@ If the controllers are turned off after pairing, their status will show up as Pa
 * If an immersive headset is connected to your PC, and new controller firmware is available, the firmware will be pushed to your motion controllers automatically the next time they're turned on. Controller firmware updates are indicated by a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes.
 * After the firmware update completes, the controllers will reboot and reconnect. Both controllers should be connected now. 
     
-    ![Controllers connected](images/cyk-connected-300px.jpg)
+    ![Controllers connected](images/cyk-connected-300px.jpg)<br>
     *Controllers connected in Bluetooth settings*
 
 * Verify your controllers work properly:
