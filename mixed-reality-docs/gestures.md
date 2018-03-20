@@ -14,6 +14,7 @@ keywords: Windows Mixed Reality, Gestures, interaction, design
 
 Hand gestures allow users take action in mixed reality. Interaction is built on **gaze** to target and **gesture** or **voice** to act upon whatever element has been targeted. Hand gestures do not provide a precise location in space, but the simplicity of putting on a HoloLens and immediately interacting with content allows users to get to work without any other accessories.
 
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/kwn9Lh0E_vU]
 
