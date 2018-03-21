@@ -44,31 +44,37 @@ Here’s a quick look at some high-level objectives that are guiding this work s
 ### Help solve customer challenges
 
 ![Help solve customer challenges](images/500px-fix-a-broken-switch-with-hololens.jpg) <br>
+
 We wrestle with many of the same issues that you do, and we understand how challenging your work is. It’s exciting to explore and define a new frontier… and it can also be daunting. Old paradigms and practices need to be re-thought; customer need new experiences; and there is so much potential for innovation. Given that, we want this work to be as comprehensive as possible, moving well beyond a style guide. We aim to deliver a comprehensive set of design guidance that covers mixed reality interaction, commanding, navigation, input, and style – all grounded in human behavior and scenarios. 
 
 ### Point the way towards a new, more human way of computing
 
 ![Point the way towards a new, more human way of computing](images/500px-man-and-women-with-holograph-on-table.png)<br>
+
 While it is important to focus on specific customer problems, we also want to push ourselves to think beyond that, and to deliver more. We believe great design is not “just” problem-solving, but also a way to meaningfully activate human evolution. New ways of human behavior; new ways of people relating to themselves, their activities, and their environments; new ways of seeing our world… we want our guidance to reflect all these more aspirational ways of thinking too. 
 
 ### Meet creators where they are
 
 ![Meet creators where they are](images/500px-creators.jpg) <br>
+
 We hope many audiences find this guidance to be helpful. You have different skill-sets (beginning, intermediate, advanced), use different tools (Unity, DirectX, C++, C#, other), are familiar with various platforms (Windows, iOS, Android), come from different backgrounds (mobile, enterprise, gaming), and are working on different size teams (solo, small, medium, large). So, this guidance will be viewed with different perspectives and needs. Whenever possible, we will try to keep this diversity in mind, and make our guidance as relevant as possible to as many people as possible. In addition, we know that many of you are already on GitHub, so we will directly link to GitHub repos and forums to meet you where you already are. 
 
 ### Share as much as possible, from experimental to explicit
 
 ![Share as much as possible, from experimental to explicit](images/500px-man-playinggame.jpg) <br>
+
 One of the challenges of offering design guidance in this new 3D medium is that we don’t always have definitive guidance to offer. Just like you, we are learning, experimenting, prototyping, problem-solving, and adjusting as we hit obstacles. Rather than wait for some mythical future moment when we have it all figured out, we aim to share our thinking with you real time, even if it is not conclusive. Of course, our end goal is to be definitive wherever we can, providing clear, flexible design guidance tied to open-source code, and actionable in Microsoft dev and design tools. But getting to that point takes many rounds of iteration and learning. We want to engage with you, and learn with you, along the way, so we will be doing the best we can to share as we go, even our stuff that is experimental. 
 
 ### The right balance of global and local design
 
-![The right balance of global and local design](images/500px-fluentdesign.jpg)<br>
+![The right balance of global and local design](images/500px-fluentdesign.jpg) <br>
+
 We’ll offer two levels of design guidance: global and local. Our 'global' design guidance is embodied in the [Fluent Design System](http://fluent.microsoft.com). Fluent details how we think about fundamentals like light, depth, motion, material, and scale across all Microsoft design – our devices, products, tools, and services. That said, significant device-specific differences exist across this larger system, so our 'local' design guidance for head-mounted displays will describe designing for holographic and immersive devices that often have different input and output methods, and different user needs and scenarios. So the local design guidance covers topics unique to HMDs, for example 3D environments and objects; shared environments; the use of sensors, eye tracking and spatial mapping; and the opportunities of spatial audio. Throughout our guidance you will likely see us refer to both these global and the local aspects, and hopefully this will help you ground your work in a larger foundation of design while taking advantage of the design differences of specific devices.
 
 ### Have a discussion
 
 ![Have a discussion](images/500px-share.jpg) <br>
+
 Perhaps most importantly, we want to engage with you, the community of holographic and immersive designers and developers, to define this exciting new era of design. As mentioned above, we know we don’t have all the answers, and we believe many exciting solutions and innovations will come from you. We aim to be open and available to hear about them, and discuss with you online and at events, and add value wherever we can. We are excited to be a part of this amazing design community, embarking on an adventure together. 
 
 ## Please dive in
