@@ -63,9 +63,9 @@ keywords:
 * Create a pull request to merge your branch into master.
 
 ## Markdown basics
-* [How to use Markdown for docs.microsoft.com](https://docs.microsoft.com/en-us/contribute/help-crr/help-content/contribute/contribute-how-to-write-use-markdown)
-* For an at-a-glance guide to writing markdown, print this ["Markdown is for Everyone" Poster PDF](images/DocsMarkdownPoster.pdf)
-* [Additional resources for writing Markdown](https://review.docs.microsoft.com/en-us/windows-authoring-guide/writing-guidance/writing-markdown?branch=master)
+* [Markdown Basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+* [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
+* [Unique Markdig differences](https://review.docs.microsoft.com/en-us/new-hope/engineering/tools/markdig/markdig-migration-information?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/en-us/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
 
 ### Adding tables
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy.](http://www.tablesgenerator.com/markdown_tables)
