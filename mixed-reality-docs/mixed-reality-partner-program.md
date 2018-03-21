@@ -96,7 +96,7 @@ Business performance
 
 ### Minimum application requirements
 
-Acceptance into the program is based on an [application](mixed-reality-partner-program.md#phase-1:-intake-application) and interview. Partners must meet these minimum requirements to qualify for the Mixed Reality Partner Program. Meeting the minimum requirement is not a guarantee of entry.
+Acceptance into the program is based on an [application](#phase-1-intake-application) and interview. Partners must meet these minimum requirements to qualify for the Mixed Reality Partner Program. Meeting the minimum requirement is not a guarantee of entry.
 
 Systems integrator and solution provider minimum requirements:
 * Minimum of 25 full time employees
@@ -189,7 +189,7 @@ Our readiness training program is designed to help your company deliver quality 
 * A storyboard check-point review for the POC
 * A mid-term POC check-point review
 * A final POC review and pass/no-pass grade
-* Any variation to this format will be discuss during the [onboarding call](mixed-reality-partner-program.md#phase-2:-onboarding)
+* Any variation to this format will be discuss during the [onboarding call](#phase-2-onboarding)
 
 The final POC must pass our quality bar. If you don’t pass our quality bar, we will provide you details as to why. You will have 30 days to make improvements and try again. If you don't pass the second time, you must enter through the fast-track program.
 
