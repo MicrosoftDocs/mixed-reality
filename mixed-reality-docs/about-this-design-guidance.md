@@ -63,10 +63,8 @@ One of the challenges of offering design guidance in this new 3D medium is that 
 
 ### The right balance of global and local design
 
-![The right balance of global and local design](images/500px-fluentdesign.jpg) <br>
+![The right balance of global and local design](images/500px-fluentdesign.jpg)<br>
 We’ll offer two levels of design guidance: global and local. Our 'global' design guidance is embodied in the [Fluent Design System](http://fluent.microsoft.com). Fluent details how we think about fundamentals like light, depth, motion, material, and scale across all Microsoft design – our devices, products, tools, and services. That said, significant device-specific differences exist across this larger system, so our 'local' design guidance for head-mounted displays will describe designing for holographic and immersive devices that often have different input and output methods, and different user needs and scenarios. So the local design guidance covers topics unique to HMDs, for example 3D environments and objects; shared environments; the use of sensors, eye tracking and spatial mapping; and the opportunities of spatial audio. Throughout our guidance you will likely see us refer to both these global and the local aspects, and hopefully this will help you ground your work in a larger foundation of design while taking advantage of the design differences of specific devices.
-
-
 
 ### Have a discussion
 
