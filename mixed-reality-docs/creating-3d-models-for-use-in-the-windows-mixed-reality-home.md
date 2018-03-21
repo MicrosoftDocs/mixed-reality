@@ -14,7 +14,8 @@ keywords: 3D, modeling, modeling guidance, asset requirements, authoring guideli
 
 The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. You can design your application for Windows Mixed Reality **immersive headsets** to leverage a [3D model as an app launcher](implementing-3d-app-launchers.md) and to allow [3D deep links to be placed into the Windows Mixed Reality home from within your app](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md). This article outlines the guidelines for creating 3D models compatible with the Windows Mixed Reality home.
 
-**Note:** 3D models in the Windows Mixed Reality home are not currently available for use on HoloLens.
+>[!NOTE]
+>3D models in the Windows Mixed Reality home are not currently available for use on HoloLens.
 
 ## Modeling guidelines
 
@@ -32,9 +33,10 @@ Windows expects assets to be generated using the following modeling guidelines t
 ## Triangle counts and levels of detail (LODs)
 
 The Windows Mixed Reality Home does not support models that with more than 10,000 triangles. It’s recommended that you triangulate your meshes before exporting to ensure that they do not exceed this count. Windows MR also supports geometry levels of detail (LODs) to ensure a performant and high-quality experience. Windows determines which LOD to display based on the amount of screen real estate the model is taking up. Only 3 LOD levels are supported with the following recommended triangle counts:
+<br>
 
 |  LOD Level  |  Recommended Triangle Count  |  Max Triangle Count | 
-|----------|----------|----------|
+|------|------|------|
 |  LOD 0 |  10,000 |  10,000 | 
 |  LOD 1 |  5,000  |  10,000 | 
 |  LOD 2 |  2,500  |  10,000 | 
@@ -42,9 +44,10 @@ The Windows Mixed Reality Home does not support models that with more than 10,00
 ## Texture resolutions and workflow
 
 Textures should be prepared using a PBR metal roughness workflow. Begin by creating a full set of textures including Albedo, Normal, Occlusion, Metallic, and Roughness. Windows Mixed Reality supports textures with resolutions up to 4096x4096 but its recommended that you author at 512x512. Additionally textures should be authored at resolutions in multiples of 4 as this is a requirement for the compression format applied to textures in the exporting steps outlined below.
+<br>
 
 |  Recommended Texture Size  |  Max Texture Size | 
-|----------|----------|
+|----|----|
 |  512x512  |  4096x4096 | 
 
 ### Albedo (base color) map
@@ -112,6 +115,7 @@ Windows Mixed Reality home **requires** a series of optimizations on top of the 
 ### Materials
 
 Windows MR only supports rendering DDS textures packed according to the texture packing scheme defined in this section. DDS textures are referenced using the [MSFT_texture_dds extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds). Compressing textures is highly recommended. PC based Mixed Reality experiences expect textures to be packed using a 3-texture setup using the following packing specification:
+<br>
 
 |  glTF Property  |  Texture  |  Packing Scheme | 
 |----------|----------|----------|
@@ -120,9 +124,10 @@ Windows MR only supports rendering DDS textures packed according to the texture 
 |  [MSFT_packing_occlusionRoughnessMetallic](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_packing_occlusionRoughnessMetallic)  |  normalTexture  |  Normal (RG) | 
 
 When compressing the DDS textures the following compression is expected on each map:
+<br>
 
 |  Map  |  Expected Compression | 
-|----------|----------|
+|------|------|
 |  Normal  |  BC5 | 
 |  Base Color, Occlusion, MetallicRoughness, Emissive  |  BC7 | 
 
@@ -131,9 +136,10 @@ When compressing the DDS textures the following compression is expected on each 
 ### Adding mesh LODs
 
 Windows MR uses geometry node LODs to render 3D models in different levels of detail depending on screen coverage. While this feature is technically not required, it's strongly recommended for all assets. Currently Windows supports 3 levels of detail. The default LOD is 0, which represents the highest quality. Other LODs are numbered sequentially, e.g. 1, 2 and get progressively lower in quality. The [Windows Mixed Reality Asset Converter](https://github.com/Microsoft/glTF-Toolkit/releases) supports generating assets that meet this LOD specification by accepting multiple glTF models and merging them into a single asset with valid LOD levels. The following table outlines the expected LOD ordering and triangle targets:
+<br>
 
 |  LOD Level  |  Recommended Triangle Count  |  Max Triangle Count | 
-|----------|----------|----------|
+|-------|-------|-------|
 |  LOD 0 |  10,000 |  10,000 | 
 |  LOD 1 |  5,000  |  10,000 | 
 |  LOD 2 |  2,500  |  10,000 | 
@@ -143,9 +149,10 @@ When using LODs always specify 3 LOD levels. Missing LODs will cause the model t
 ### Screen coverage
 
 LODs are displayed in Windows Mixed Reality based on a system driven by the screen coverage value set on each LOD. Objects that are currently consuming a larger portion of the screen space are displayed at a higher LOD level. Screen coverage is not a part of the core glTF 2.0 spec and must be specified using MSFT_ScreenCoverage in the “extras” section of the [MSFT_lod extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
+<br>
 
 |  LOD Level  |  Recommended Range  |  Default Range | 
-|----------|----------|----------|
+|-------|-------|-------|
 |  LOD 0  |  100% - 50% |  .5 | 
 |  LOD 1 |  Under 50% - 20%  |  .2 | 
 |  LOD 2 |  Under 20% - 1%  |  .01 | 

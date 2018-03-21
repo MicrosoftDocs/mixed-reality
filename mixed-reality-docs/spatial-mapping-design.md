@@ -24,8 +24,6 @@ Effective use of spatial mapping within HoloLens requires careful consideration 
 </tr>
 </table>
 
-
-
 ## Why is spatial mapping important?
 
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues. Occluding your holograms based on other holograms and real world objects helps convince the user that these holograms are actually in their space. Holograms floating in space or moving with the user will not feel as real. When possible, place items for comfort.
@@ -80,7 +78,8 @@ HoloLens learns about the surfaces in its environment as the user looks at them.
 
 Each application that uses spatial mapping should consider providing a 'scanning experience'; the process through which the application guides the user to scan surfaces that are necessary for the application to function correctly.
 
-![Example of scanning](images/sr-mixedworld-140429-8pm-00068-1000px.png)
+![Example of scanning](images/sr-mixedworld-140429-8pm-00068-1000px.png)<br>
+*Example of scanning*
 
 The nature of this scanning experience can vary greatly depending upon each application's needs, but two main principles should guide its design.
 

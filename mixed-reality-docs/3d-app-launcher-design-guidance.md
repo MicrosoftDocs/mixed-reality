@@ -14,7 +14,8 @@ keywords: Windows Mixed Reality, design, 3D app launcher, immersive headset, liv
 
 Windows 10 Fall Creators Update will ship with a mixed reality world. This world starts for the user inside a virtual house on a cliff surrounded by mountains and water. Within the space of this dwelling, a user is free to arrange and organize the 3D objects and apps that they care about any way they want. A **3D app launcher** is a “physical” object in the user’s mixed reality house that they can select to launch an app.
 
-![Example: Floaty Bird 3D app launcher](images/20171016-151526-mixedreality1-1200px-1000px.jpg)
+![Example: Floaty Bird 3D app launcher](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
+*Floaty Bird 3D app launcher example (fictional app)*
 
 ## 3D app launcher creation process
 
@@ -33,9 +34,8 @@ The Windows Mixed Reality world your app launcher lives in is part familiar, par
 
 When you look at your app launcher, its purpose - to launch your app - should be obvious and shouldn’t cause any confusion. For example, be sure your launcher is an obvious-enough representative of your app that it won’t be confused for a piece of decor in the Cliff House. Your app launcher should invite people to touch/select it.
 
-![Example: Fresh Note 3D app launcher](images/20171016-152145-mixedreality1-1200px-1000px.jpg)
-
-Fantastic yet familiar, intuitive example (this is a fictional app).
+![Example: Fresh Note 3D app launcher](images/20171016-152145-mixedreality1-1200px-1000px.jpg)<br>
+*Fresh Note 3D app launcher example (fictional app)*
 
 ### Home scale
 
@@ -45,9 +45,8 @@ Fantastic yet familiar, intuitive example (this is a fictional app).
 
 The app launcher should feel like an object a person would be excited to have in their space. They’ll be virtually surrounding themselves with these things, so the launcher should feel like something the user thought was desirable enough to seek out and keep nearby.
 
-![Example: Astro Warp 3D app launcher](images/20171016-132936-mixedreality-1200px-1000px.jpg)
-
-Home scale and own-able example (this is a fictional app).
+![Example: Astro Warp 3D app launcher](images/20171016-132936-mixedreality-1200px-1000px.jpg)<br>
+*Astro Warp 3D app launcher example (fictional app)*
 
 ### Recognizable
 
@@ -129,11 +128,9 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 </div>
 </div> -->
 
-
-
 ## Tips for good 3D models
 
-**Best practices**
+### Best practices
 * When planning dimensions for your app launcher, shoot for roughly a 30cm cube. So, a 1:1:1 size ratio.
 * Models must be under 10,000 polygons. [Learn more about triangle counts and levels of details (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * Test on an immersive headset when possible.
@@ -143,22 +140,20 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 * Make sure your model reads well at different distances and sizes.
 * When your model is ready to go, read the [exporting assets guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#exporting-assets).
 
-![Model with subtle details in the texture](images/20171013-143334-mixedreality-640px.jpg)
+![Model with subtle details in the texture](images/20171013-143334-mixedreality-640px.jpg)<br>
+*Model with subtle details in the texture*
 
-Model with subtle details in the texture
-
-**What to avoid**
+### What to avoid
 * Don't use high-contrast details or small, busy patterns and textures.
 * Don't use thin geometry – it doesn’t work well at a distance and will alias badly.
 * Don't let parts of your model extend too much beyond the 1:1:1 size ratio. It will create scaling problems.
 
-![Avoid high-contrast, small busy patterns](images/20171013-143603-mixedreality-640px.jpg)
-
-Avoid high-contrast, small busy patterns
+![Avoid high-contrast, small busy patterns](images/20171013-143603-mixedreality-640px.jpg)<br>
+*Avoid high-contrast, small, busy patterns*
 
 ## How to handle type
 
-**Best practices**
+### Best practices
 * We recommend your type comprises about 1/3 of your app launcher (or more). Type is the main thing that gives people an idea that your launcher is, in fact, a launcher so it’s nice if it’s pretty substantial.
 * Avoid making type super wide – try to keep it within the confines of the app launchers core dimensions (more or less).
 * Flat type can work, but be aware that it can be hard to view from certain angles and in certain environments. You might consider putting it a solid object or backdrop behind it to help with this.
@@ -170,19 +165,17 @@ Avoid high-contrast, small busy patterns
 <div class="row">
 <div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Flat type without a backdrop can be hard to view from certain angles and in certain environments." width="479" src="images/flattype-640px.png" /><br />Flat type without a backdrop can be hard to view from certain angles and in certain environments.
+ <img alt="Flat type without a backdrop can be hard to view from certain angles and in certain environments." width="479" src="images/flattype-640px.png" /><br />*Flat type without a backdrop can be hard to view from certain angles and in certain environments*
 </div>
 </div><div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Type with a built-in backdrop can work well." width="479" src="images/flattypeandbkg-640px.png" /><br />Type with a built-in backdrop can work well.
+ <img alt="Type with a built-in backdrop can work well." width="479" src="images/flattypeandbkg-640px.png" /><br />*Type with a built-in backdrop can work well*
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-
-
 
 <div class="row">
 <div class="col-xs-24">
@@ -190,7 +183,7 @@ Avoid high-contrast, small busy patterns
 <div class="row">
 <div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Extruded type can work well if you shade the sides." width="479" src="images/20171016-160221-mixedreality-640px.jpg" /><br />Extruded type can work well if you shade the sides.
+ <img alt="Extruded type can work well if you shade the sides." width="479" src="images/20171016-160221-mixedreality-640px.jpg" /><br />*Extruded type can work well if you shade the sides*
 </div>
 </div><div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
@@ -202,25 +195,23 @@ Avoid high-contrast, small busy patterns
 </div>
 </div>
 
-
-
 **Type colors that work**
 * White
 * Black
 * Bright semi-saturated color
 
-![Type colors that work.](images/20171016-112111-mixedreality-640px.jpg)
+![Type colors that work.](images/20171016-112111-mixedreality-640px.jpg)<br>
+*Type colors that work*
 
-Type colors that work.
+### What to avoid
 
-**What to avoid - type colors that cause trouble**
+**Type colors that cause trouble**
 * Mid-tones
 * Gray
 * Over-saturated colors or desaturated colors
 
-![Type colors that cause trouble.](images/20171016-112246-mixedreality-640px.jpg)
-
-Type colors that cause trouble.
+![Type colors that cause trouble.](images/20171016-112246-mixedreality-640px.jpg)<br>
+*Type colors that cause trouble*
 
 ## Lighting
 
@@ -228,15 +219,17 @@ The lighting for your app launcher comes from the Cliff House environment. Be su
 
 Good places to test how your launcher looks in the various lights in the environment are the Studio, the Media Room, anywhere outside and on the Back Patio (the concrete area with the lawn). Another good test is to put it in half light and half shadow and see what it looks like.
 
-![Make sure your launcher looks good in both light and shadows.](images/20171013-145523-mixedreality-1200px-1000px.jpg)
-
-Make sure your launcher looks good in both light and shadows.
+![Make sure your launcher looks good in both light and shadows.](images/20171013-145523-mixedreality-1200px-1000px.jpg)<br>
+*Make sure your launcher looks good in both light and shadows*
 
 ## Texturing
 
-**Authoring your textures** The end format of your 3D app launcher will be a .glb file, which is made using the PBR (Physically Based Rendering) pipeline. This can be a tricky process - now is a good time to employ a technical artist if you haven't already. If you’re a brave DIY-er, taking the time to [research and learn PBR terminology](http://wiki.polycount.com/wiki/PBR) and what’s happening under the hood before you begin will help you avoid common mistakes. 
+### Authoring your textures
 
-![Example: Fresh Note app](images/pbr-freshnote1-640px-500px.png) 
+The end format of your 3D app launcher will be a .glb file, which is made using the PBR (Physically Based Rendering) pipeline. This can be a tricky process - now is a good time to employ a technical artist if you haven't already. If you’re a brave DIY-er, taking the time to [research and learn PBR terminology](http://wiki.polycount.com/wiki/PBR) and what’s happening under the hood before you begin will help you avoid common mistakes. 
+
+![Example: Fresh Note app](images/pbr-freshnote1-640px-500px.png)<br>
+*Fresh Note 3D app launcher example (fictional app)*
 
 **Recommended authoring tool**
 
@@ -244,7 +237,8 @@ We recommend using [Substance Painter](https://www.allegorithmic.com/products/su
 
 (Alternately [3D-Coat](https://3dcoat.com/home/), [Quixel Suite 2](https://quixel.se/suite2/), or [Marmoset Toolbag](https://www.marmoset.co/toolbag/) would also work if you’re more familiar with one of these.)
 
-**Best practices**
+### Best practices
+
 * If your app launcher object was authored for PBR, it should be pretty straightforward to convert it for the Cliff House environment.
 * Our shader is expecting a Metal/Roughness work flow – The Unreal PBR shader is a close facsimile.
 * When exporting your textures keep the [recommended texture sizes](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#texture-resolutions-and-workflow) in mind.

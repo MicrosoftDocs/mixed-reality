@@ -18,7 +18,6 @@ If you've ever played [Marco Polo](https://en.wikipedia.org/wiki/Marco_Polo_(gam
 
 <br>
 
-
 > [!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
 
 ## Device support
@@ -30,8 +29,6 @@ If you've ever played [Marco Polo](https://en.wikipedia.org/wiki/Marco_Polo_(gam
 <td> Spatial sound</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
-
-
 
 ## Four key things spatial sound does for mixed reality development
 

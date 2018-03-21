@@ -37,16 +37,16 @@ Consider adding voice commands to any experience that you build. Voice is a powe
 ### Best practices
 
 Below are some practices that will aid in smooth speech recognition.
-* **Use concise commands ** - When possible, choose keywords of two or more syllables. One-syllable words tend to use different vowel sounds when spoken by persons of different accents. Example: "Play video" is better than "Play the currently selected video"
-* **Use simple vocabulary ** - Example: "Show note" is better than "Show placard"
+* **Use concise commands** - When possible, choose keywords of two or more syllables. One-syllable words tend to use different vowel sounds when spoken by persons of different accents. Example: "Play video" is better than "Play the currently selected video"
+* **Use simple vocabulary** - Example: "Show note" is better than "Show placard"
 * **Make sure commands are non destructive** - Make sure any action that can be taken by a speech command is non destructive and can easily be undone in case another person speaking near the user accidentally triggers a command.
 * **Avoid similar sounding commands** - Avoid registering multiple speech commands that sound very similar. Example: "Show more" and "Show store" can be very similar sounding.
 * **Unregister your app when not it use** - When your app is not in a state in which a particular speech command is valid, consider unregistering it so that other commands are not confused for that one.
 * **Test with different accents** - Test your app with users of different accents.
-* **Maintain voice command consistency ** - If "Go back" goes to the previous page, maintain this behavior in your applications.
-* **Avoid using system commands ** - The following voice commands are reserved for the system. These should not be used by applications.
-* "Hey Cortana"
-* "Select"
+* **Maintain voice command consistency** - If "Go back" goes to the previous page, maintain this behavior in your applications.
+* **Avoid using system commands** - The following voice commands are reserved for the system. These should not be used by applications.
+   * "Hey Cortana"
+   * "Select"
 
 ### What users can say
 
@@ -58,7 +58,8 @@ Windows Mixed Reality has employed a "see it, say it" voice model where **labels
 
 ![See it say it example 1](images/voice-seeitsayit1-640px.jpg)
 
-![See it say it example 2](images/voice-seeitsayit2-640px.jpg)
+![See it say it example 2](images/voice-seeitsayit2-640px.jpg)<br>
+*Examples of "see it, say it"*
 
 ### Voice's strengths
 
@@ -79,7 +80,8 @@ Voice also has some weaknesses. Fine-grained control is one of them. (for exampl
 
 When Voice is applied properly, the user understands **what they can say and get clear feedback** the system **heard them correctly**. These two signals make the user feel confident in using Voice as a primary input. Below is a diagram showing what happens to the cursor when voice input is recognized and how it communicates that to the user.
 
-![Voice feedback states for cursor](images/voicefeedbackstates.png)
+![Voice feedback states for cursor](images/voicefeedbackstates.png)<br>
+*Voice feedback states for cursor*
 
 ## Top things users should know about "speech" on Windows Mixed Reality
 * Say **"Select"** while targeting a button (you can use this anywhere to click a button).
@@ -89,8 +91,8 @@ When Voice is applied properly, the user understands **what they can say and get
 ## Common questions and concerns users have about voice
 * What can I say?
 * How do I know the system heard me correctly?
-* The system keeps getting my voice commands wrong.
-* It doesn’t react when I give it a voice command.
+   * The system keeps getting my voice commands wrong.
+   * It doesn’t react when I give it a voice command.
 * It reacts the wrong way when I give it a voice command.
 * How do I target my voice to a specific app or app command?
 * Can I use voice to command things out the holographic frame on HoloLens?

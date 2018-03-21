@@ -28,6 +28,8 @@ Our HoloLens [development team](galaxy-explorer.md#meet-the-team) of designers, 
 
 The Galaxy Explorer journey begins with the "Share your idea" campaign.
 
+<br>
+
 >[!VIDEO https://www.youtube.com/embed/ZxGdW_ASrRc]
 
 The Microsoft HoloLens community is bursting with spectacular ideas for how holographic computing will transform our world. We believe the most incredible HoloLens apps will come out of ideas you imagine together.
