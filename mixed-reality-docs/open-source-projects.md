@@ -47,20 +47,20 @@ This repo is where Microsoft's Windows Mixed Reality Design team publishes the U
 
 ## Sample apps
 
-![Galaxy Explorer sample app](images/galaxyexplorer-tile.jpg)<br>
+![Galaxy Explorer sample app](images/galaxyexplorer-tile.jpg)
 ### [Galaxy Explorer](galaxy-explorer.md)
 
 The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code. 
 
-![Lunar Module sample app](images/lunar-module-tile.png)<br>
-### [Lunar Module](lunar-module.md)
-
-Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.
-
-![Periodic Table of the Elements sample app](images/periodictableofelementsapp-tile.jpg)<br>
+![Periodic Table of the Elements sample app](images/periodictableofelementsapp-tile.jpg)
 ### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 
 Learn how to lay out an array of objects in 3D space with various surface types using an Object collection.
+
+![Lunar Module sample app](images/lunar-module-tile.png)
+### [Lunar Module](lunar-module.md)
+
+Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.
 
 
 
