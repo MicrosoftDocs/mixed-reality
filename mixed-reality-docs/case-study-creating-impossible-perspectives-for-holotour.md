@@ -31,11 +31,8 @@ First, it's important to explain that all of the locations you visit in HoloTour
 To create the aerial views for the balloon ride, we worked with other teams at Microsoft to get access to aerial panoramic imagery of Rome. The quality of these images was excellent and the view was stunning, but when we used them in the scenes without modification, they felt lifeless compared to the other parts of the tour and the lack of motion was distracting. 
 
 
-![The hot air balloon basket, floating over Rome.](images/hotairballoon1-300px.png)
-
-The hot air balloon basket, floating over Rome.
-
-
+![The hot air balloon basket, floating over Rome.](images/hotairballoon1-300px.png)<br>
+*The hot air balloon basket, floating over Rome*
 
 To ensure the aerial locations met the same quality bar as other destinations, we decided to transform the static photographs into living, moving scenes. The first step was to edit the image and composite motion into it. We contracted a visual effects artist to help us with this. Editing was done to show clouds slowly drifting, birds flying by, and an occasional plane or helicopter traversing the skyline. On the ground, a number of cars were made to drive the streets. If you’ve been on the tour of Rome in HoloTour, it’s unlikely that you were explicitly aware of any of this movement. That’s actually great! The subtle motion isn’t meant to catch your eye, but without these little touches, people noticed immediately that it was a static image in the scene.
 
@@ -49,9 +46,8 @@ The remnants of monuments and buildings throughout Rome are impressive even two 
 
 Naturally, there isn’t any video footage or static imagery) of the Colosseum as it appeared when it was built, so we needed to create our own. We had to do a lot of research to learn as much about the structure as we could; understanding the materials it was made from, reviewing architectural diagrams, and reading historical descriptions to get enough information to be able to make a virtual recreation. 
 
-![The modern day ruins of the Colosseum with an overlay showing the arena floor as it would have looked in ancient Rome.](images/rome-colosseum-overlay-500px.png) 
-The modern day ruins of the Colosseum with an overlay showing the arena floor as it would have looked in ancient Rome.
-
+![The modern day ruins of the Colosseum with an overlay showing the arena floor as it would have looked in ancient Rome.](images/rome-colosseum-overlay-500px.png)<br>
+*The modern day ruins of the Colosseum with an overlay showing the arena floor as it would have looked in ancient Rome*
 
 The first thing we wanted to do was enhance traditional tours with educational overlays. In HoloTour when you visit the ruins of the Colosseum as it stands today, the arena floor is transformed to show you how it would have looked during use, including the elaborate underground staging areas. On a normal tour you might have this information described to you and you could try to imagine it, but in HoloTour you can actually see it.
 
@@ -63,24 +59,18 @@ While overlays are an engaging way to teach people about history, what we were m
 
 This undertaking was too large for our team to do alone, so our art team worked with Whiskytree, an external effects company that typically works on visual effects for Hollywood movies. Whiskytree helped us recreate the Colosseum in its heyday, allowing us to teach you about the structure while standing on the arena floor and to create a view of a gladiator fight from the emperor’s box. The cheering crowds and waving banners add the subtle motion necessary to make it feel like these are real places and not just images.
 
-
-![The recreated Colosseum as seen from the arena floor. When viewed in HoloTour, the banners flutter in the breeze, giving a feeling of motion.](images/recreated-colosseum-holotour-500px.png)
-
-The recreated Colosseum as seen from the arena floor. When viewed in HoloTour, the banners flutter in the breeze, giving a feeling of motion.
-
-
+![The recreated Colosseum as seen from the arena floor. When viewed in HoloTour, the banners flutter in the breeze, giving a feeling of motion.](images/recreated-colosseum-holotour-500px.png)<br>
+*The recreated Colosseum as seen from the arena floor. When viewed in HoloTour, the banners flutter in the breeze, giving a feeling of motion.*
 
 The tour of Rome culminates with the gladiator fight. Whiskytree provided us with the arena and 3D crowd simulations rendered as video, but we needed to add in the gladiators on the arena floor. This part of our process looked more like a Hollywood video production than a project from an incubation game studio. Members of our team mapped out a rough fight sequence and then refined it with a choreographer. We hired actors to stage our mock battle and purchased armor so they would look the part. Finally, we filmed the whole scene against a green screen.
 
-![Our gladiators, getting instructions between takes.](images/green-screen-gladiators-holotour-500px.jpg)
+![Our gladiators, getting instructions between takes.](images/green-screen-gladiators-holotour-500px.jpg)<br>
+*Our gladiatiors, getting instructions between takes*
 
 This scene places you in the Emperor’s box, which meant that all the footage needed to be from that perspective. If we filmed from where the gladiators were fighting on the arena floor, we wouldn't have been able to correctly composite the fight sequence in later, so we put our camera operator up in a very tall scissor lift, looking down on the fight sequence for filming.
 
-![Getting the right perspective: filming from a scissor lift.](images/scissor-lift-holotour-500px.jpg)
-
-Getting the right perspective: filming from a scissor lift.
-
-
+![Getting the right perspective: filming from a scissor lift.](images/scissor-lift-holotour-500px.jpg)<br>
+*Getting the right perspective: filming from a scissor lift*
 
 In post-production, the gladiators were composited onto the arena floor and the perspective was correct, but one issue remained: the shadows of the gladiators on the green screen were removed as part of the compositing process. Without shadows, it looked like the gladiators were floating in the air. Luckily, Whiskytree is great at solving just this kind of problem and they used a bit of technical wizardry to add shadows back into our scene. The result is what you see in the tour today.
 
@@ -97,6 +87,9 @@ In post-production, the gladiators were composited onto the arena floor and the 
 <tr>
 <td style="border:0" width="60px"> <img alt="Danny Askew" width="60" height="60" src="images/askew.png" /></td>
 <td style="border:0" width="408"> <b>Danny Askew</b> is a Video Artist who made sure your journey through Rome was as flawless as possible.</td>
+
+<td style="border:0" width="60px"></td>
+<td style="border:0" width="408"></td>
 </tr>
 </table>
 

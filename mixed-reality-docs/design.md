@@ -177,6 +177,12 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                         <p>
                             <a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md">HoloSketch</a>
                         </p>
+			 <p>
+                            <a href="3d-app-launcher-design-guidance.md">3D app launcher design guidance</a>	 
+                        </p>
+			<p>
+			  <a href="asset-creation-process.md">Asset creation process</a>
+			</p>
                         <p>
                             <a href="https://www.microsoft.com/en-us/design/inclusive/">Inclusive design at Microsoft</a>
                         </p>

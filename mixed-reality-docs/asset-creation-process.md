@@ -1,7 +1,7 @@
 ---
 title: Asset creation process
-description: 
-author: 
+description: Guidance on creating assets for mixed reality experiences.
+author: rwinj
 ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
@@ -16,7 +16,8 @@ Windows Mixed Reality builds on the decades of investment Microsoft has made int
 
 The assets you create for a project come in many shapes and forms. They can be comprised of a series of textures/images, audio, video, 3D models and animations. We can't begin to cover all the tools that are available to create the different types of assets used in a project. For this article we will focus on 3D asset creation methods.
 
-![Concept, creation, integration and iteration flow](images/concept-creation-integration-iteration-flow-640px.jpg)
+![Concept, creation, integration and iteration flow](images/concept-creation-integration-iteration-flow-640px.jpg)<br>
+*Concept, creation, integration and iteration flow*
 
 ## Things to consider
 
@@ -64,10 +65,10 @@ The creation process for assets is the same regardless of whether you're targeti
 ## Authoring Assets
 
 We'll start with the ways to get assets for your project:
-1. **Creating Assets** (Authoring tools and object capture)
-2. **Purchasing Assets** (Buying assets online)
-3. **Porting Assets** (Taking existing assets)
-4. **Outsourcing Assets** (Importing assets from 3rd parties)
+1. Creating Assets (Authoring tools and object capture)
+2. Purchasing Assets (Buying assets online)
+3. Porting Assets (Taking existing assets)
+4. Outsourcing Assets (Importing assets from 3rd parties)
 
 ### Creating assets
 

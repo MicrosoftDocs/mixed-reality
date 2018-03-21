@@ -54,7 +54,7 @@ When there are multiple Camera components in the scene, Unity knows which camera
 
 ## Recentering a seated experience
 
-If you're building a [seated-scale experience](coordinate-systems.md), you can recenter Unity's world origin at the user's current head position by calling the **[VR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/VR.InputTracking.Recenter.html)** method.
+If you're building a [seated-scale experience](coordinate-systems.md), you can recenter Unity's world origin at the user's current head position by calling the **[XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)** method.
 
 ## See also
 * [Hologram stability](hologram-stability.md)

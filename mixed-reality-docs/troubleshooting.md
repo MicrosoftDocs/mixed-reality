@@ -56,7 +56,7 @@ If HoloLens can’t map or load your space, it will enter Limited mode and you w
 
 ## My HoloLens frequently enters Limited mode or shows a “Tracking lost” message.
 
-If your device often shows a "limited mode" or "tracking lost" message, try the suggestions from [My Holograms don't look good or are moving around](troubleshooting.md#holograms-dont-look-good-or-are-moving-around.)
+If your device often shows a "limited mode" or "tracking lost" message, try the suggestions from [My Holograms don't look good or are moving around](#holograms-dont-look-good-or-are-moving-around).
 
 ## My HoloLens can’t tell what space I’m in.
 
@@ -72,4 +72,4 @@ You’ll need to free up some storage space by doing one or more of the followin
 
 ## My HoloLens can’t create a new space.
 
-The most likely problem is that you’re running low on storage space. Try one of the [tips above](troubleshooting.md#im-getting-a-low-disk-space-error.) to free up some disk space.
+The most likely problem is that you’re running low on storage space. Try one of the [tips above](#im-getting-a-low-disk-space-error) to free up some disk space.
