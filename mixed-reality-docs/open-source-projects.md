@@ -19,7 +19,7 @@ keywords: template, code, sample, snippet, script, component, open source, proje
 
 The Mixed Reality Toolkit is a collection of scripts and components intended to accelerate development of applications targeting Microsoft HoloLens and Windows Mixed Reality headsets. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as we all grow. 
 
-### [Mixed Reality Toolkit Unity](https://github.com/microsoft/HoloToolkit-Unity)
+### [Mixed Reality Toolkit - Unity](https://github.com/microsoft/HoloToolkit-Unity)
 
 Mixed Reality Toolkit - Unity uses code from the base Mixed Reality Toolkit and makes it easier to consume in Unity. 
 
@@ -35,11 +35,15 @@ A client library that wraps the Windows Device Portal REST APIs.
 
 ### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs)
 
-This repo is where Microsoft's Windows Mixed Reality Design team publishes examples and explorations. The goal is to inspire creators and help them to build Mixed Reality experiences. We share sample app projects here that demonstrate how to use various types of common controls and patterns in Mixed Reality. Find out details about common controls and sample apps on https://developer.microsoft.com/en-us/windows/mixed-reality/design
+This repo is where Microsoft's Windows Mixed Reality Design team publishes examples and explorations. The goal is to inspire creators and help them to build Mixed Reality experiences. We share sample app projects here that demonstrate how to use various types of common controls and patterns in Mixed Reality.
 
-### [Mixed Reality Design Labs Unity Tools](https://github.com/Microsoft/MRDesignLabs_Unity_Tools)
+### [Mixed Reality Design Labs - Unity](https://github.com/Microsoft/MRDesignLabs_Unity)
 
-This repo is where Microsoft's Windows Mixed Reality Design team publishes the Unity tools we use in examples and explorations. These set of tools have been separated into this repo for easy inclusion in your project or repo. This tools repository is now used as a submodule throughout our MRDesignLabs examples.
+This repo is where Microsoft's Windows Mixed Reality Design team publishes sample apps and experiments.
+
+### [Mixed Reality Design Labs - Unity Tools](https://github.com/Microsoft/MRDesignLabs_Unity_Tools)
+
+This repo is where Microsoft's Windows Mixed Reality Design team publishes the Unity tools we use in examples and explorations. This set of tools have been separated into this repo for easy inclusion in your project or repo.
 
 ## Sample apps
 
