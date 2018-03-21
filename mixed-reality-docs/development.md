@@ -1,12 +1,12 @@
 ---
 layout: LandingPage
 title: Development
-description: Learn the fundamentals of mixed reality development.
+description: Mixed reality developer documentation for HoloLens and immersive headsets.
 author: mattzmsft 
 ms.author: mazeller
 ms.date: 2/28/2018
 ms.topic: article
-keywords: Windows Mixed Reality, develop, development, HoloLens
+keywords: Windows Mixed Reality, develop, development, HoloLens, unity, directx
 ---
 
 # Development overview
