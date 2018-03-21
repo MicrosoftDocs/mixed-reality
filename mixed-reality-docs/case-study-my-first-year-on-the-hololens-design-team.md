@@ -78,8 +78,8 @@ When I designed for the 2D medium, I had to focus on touch, mouse, and keyboard 
 ![Available inputs in HoloLens](images/inputs.jpg)<br>
 *Available inputs in HoloLens*
 
-**“Everything is best for something, and worst for something else.”
-— [Bill Buxton](https://www.billbuxton.com/)**
+> *“Everything is best for something, and worst for something else.”*
+> — [Bill Buxton](https://www.billbuxton.com/)
 
 For example, gesture input using bare hand and camera sensors on an HMD device frees users hand from holding controllers or wearing sweaty gloves, but frequent use can cause physical fatigue (a.k.a gorilla arm). Also, users have to keep their hands within the line of sight; if the camera cannot see the hands, the hands cannot be used.
 
