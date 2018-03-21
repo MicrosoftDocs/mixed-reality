@@ -37,7 +37,7 @@ Once the tools are installed you can then create a holographic DirectX project. 
 
 ![Screenshot of the holographic app project template in Visual Studio](images/holographic-directx-app-cpp-new-project.png)
 
-Review [Using Visual Studio](using-visual-studio.md) for information on how to build and deploy the sample to your HoloLens, PC with immersive device attached, or an emulator.
+Review [Using Visual Studio to deploy and debug](using-visual-studio.md) for information on how to build and deploy the sample to your HoloLens, PC with immersive device attached, or an emulator.
 
 The project template shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gestures.md#air-tap), or press a button on the controller, to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
 
@@ -100,6 +100,6 @@ The **Render** method in `Main.cpp` takes the [HolographicFrame](https://msdn.mi
 * [Getting a HolographicSpace](getting-a-holographicspace.md)
 * [HolographicSpace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx)
 * [Rendering in DirectX](rendering-in-directx.md)
-* [Using Visual Studio](using-visual-studio.md)
+* [Using Visual Studio to deploy and debug](using-visual-studio.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)

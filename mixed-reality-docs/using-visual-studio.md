@@ -31,7 +31,7 @@ Start by enabling **Developer Mode** on your device so Visual Studio can connect
 3. Gaze at the **Settings** tile and perform the [air-tap](gestures.md#air-tap) gesture. Perform a second air tap to place the app in your environment. The Settings app will launch after you place it.
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
-6. Enable **Developer Mode**. This will allow you to deploy apps from [Visual Studio](using-visual-studio.md) to your HoloLens.
+6. Enable **Developer Mode**. This will allow you to [deploy apps from Visual Studio](using-visual-studio.md) to your HoloLens.
 7. Optional: Scroll down and also enable **Device Portal**. This will also allow you to connect to the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens from a web browser.
 
 ### Windows PC

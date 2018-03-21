@@ -172,7 +172,7 @@ The instructions differ for deploying to a device versus the emulator. Follow th
 2. Enter the IP address of your mixed reality device and change **Authentication Mode** to Universal (Unencrypted Protocol) for HoloLens and **Windows** for other devices.
 3. Click **Debug > Start without debugging**.
 
-**For HoloLens**, If this is the first time deploying to your device, you will need to pair [Using Visual Studio](using-visual-studio.md).
+**For HoloLens**, If this is the first time deploying to your device, you will need to pair [using Visual Studio](using-visual-studio.md).
 
 ### Deploy to mixed reality device over USB
 

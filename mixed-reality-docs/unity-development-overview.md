@@ -109,7 +109,7 @@ There are other key features that many mixed reality apps will want to use, whic
 Once you've got your holographic Unity project ready to test out, your next step is to [export and build a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md).
 
 With that VS solution in hand, you can then run your app in one of three ways, using either a real or simulated device:
-* [Deploy to a real HoloLens or immersive Windows Mixed Reality headset](using-visual-studio.md)
+* [Deploy to a real HoloLens or Windows Mixed Reality immersive headset](using-visual-studio.md)
 * [Deploy to the HoloLens emulator](using-the-hololens-emulator.md)
 * [Deploy to the Windows Mixed Reality immersive headset simulator](using-the-windows-mixed-reality-simulator.md)
 
