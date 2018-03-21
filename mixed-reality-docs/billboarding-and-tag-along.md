@@ -12,8 +12,6 @@ keywords: Windows Mixed Reality, billboarding, tag-along
 
 # Billboarding and tag-along
 
-*This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.*
-
 Billboarding is a behavioral concept that can be applied to objects in mixed reality. Objects with billboarding always orient themselves to face the user. This is especially helpful with text and menuing systems where static objects placed in the user's environment (world-locked) would be otherwise obscured or unreadable if a user were to move around.
 
 ![HoloLens perspective of a menu system that always faces the user](images/billboarding-fragments.gif)
