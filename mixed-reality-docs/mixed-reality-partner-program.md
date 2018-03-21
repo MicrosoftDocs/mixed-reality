@@ -43,10 +43,10 @@ There are several commercial use cases that span our target industries:
 The program is a four-phased program with incentives (benefits) that are earned as the partner achieves key milestones, such as the successful completion of business planning, technical training, or implementation of a POC, pilot, or deployment.
 
 The four phases of the program are:
-1. [Intake application](mixed-reality-partner-program.md#phase-1:-intake-application)
-2. [Onboarding](mixed-reality-partner-program.md#phase-2:-onboarding)
-3. [Readiness training](mixed-reality-partner-program.md#phase-3:-readiness-training)
-4. [Customer engagement](mixed-reality-partner-program.md#phase-4:-customer-engagement)
+1. [Intake application](#phase-1-intake-application)
+2. [Onboarding](#phase-2-onboarding)
+3. [Readiness training](#phase-3-readiness-training)
+4. [Customer engagement](#phase-4-customer-engagement)
 
 ### Partner benefits summary
 
