@@ -3,7 +3,7 @@ title: Comfort
 description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
 author: heldrt
 ms.author: roheld, phguan, mcrisler
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, comfort
 ---

@@ -3,7 +3,7 @@ title: Asset creation process
 description: 
 author: 
 ms.author: randyw
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: asset, creation, process, budget, polygons, textures, shaders, performance
 ---

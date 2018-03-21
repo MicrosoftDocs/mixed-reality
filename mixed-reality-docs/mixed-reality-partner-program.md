@@ -3,7 +3,7 @@ title: Mixed Reality Partner Program
 description: Introduces the Mixed Reality Partner Program and outlines the requirements, target industries, and benefits of the program.
 author: cjdgit
 ms.author: crderr
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: mrpp, partner, agency, agencies
 ---

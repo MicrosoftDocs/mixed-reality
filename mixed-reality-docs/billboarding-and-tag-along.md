@@ -3,7 +3,7 @@ title: Billboarding and tag-along
 description: Objects with billboarding always orient themselves to face the user. 
 author: radicalad
 ms.author: adlinv
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, billboarding, tag-along
 ---

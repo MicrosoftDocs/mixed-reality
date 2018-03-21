@@ -3,7 +3,7 @@ title: HoloLens hardware details
 description: An outline of the components that make up Microsoft HoloLens, the world's first fully untethered holographic computer running Windows.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, components, sensors, technology, tech, tear down, teardown, 
 ---

@@ -3,7 +3,7 @@ title: Device portal API reference
 description: API reference for the Windows Device Portal on HoloLens
 author: JonMLyons
 ms.author: JLyons
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, Windows Device Portal, API
 ---

@@ -3,7 +3,7 @@ title: Best practices for working with Unity and Visual Studio
 description: Tips and tricks to streamline the workflow of creating a mixed reality application with Unity and Visual Studio.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: deploy, unity, visual studio, HoloLens, immersive headset
 ---

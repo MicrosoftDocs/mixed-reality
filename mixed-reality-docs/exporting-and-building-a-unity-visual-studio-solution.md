@@ -3,7 +3,7 @@ title: Exporting and building a Unity Visual Studio solution
 description: This article outlines exporting your mixed reality project from Unity so you can build and deploy in Visual Studio.
 author: 
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: unity, visual studio, export, build, deploy
 ---

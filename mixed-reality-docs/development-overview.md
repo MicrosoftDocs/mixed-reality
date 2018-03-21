@@ -3,7 +3,7 @@ title: Development overview
 description: This article outlines the basic building blocks of developing a Windows Mixed Reality app.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: getting started, basics, HoloLens, immersive headset, unity, visual studio
 ---

@@ -3,7 +3,7 @@ title: Cursors
 description: A cursor, or indicator of your current gaze vector, provides continuous feedback for the user to understand what the HoloLens understands about their intentions.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, cursors, targeting, gaze, gestures
 ---

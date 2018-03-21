@@ -3,7 +3,7 @@ title: Periodic Table of the Elements
 description: Periodic Table of the Elements is an open-source sample app from Microsoft's Mixed Reality Design Labs where you can learn how to lay out an array of objects in 3D space with various surface types using an Object collection.
 author: cre8ivepark
 ms.author: dongpark
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, sample app, controls
 ---

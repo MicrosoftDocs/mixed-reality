@@ -3,7 +3,7 @@ title: Give us feedback
 description: Create actionable feedback for HoloLens and Windows Mixed Reality developers using the Feedback Hub.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: feedback, bug, issue, error, troubleshoot, help
 ---

@@ -3,7 +3,7 @@ title: Release notes - August 2016
 description: HoloLens release notes for the Windows 10 Anniversary Release (Fall 2016)
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, release notes, os, platform, features, commercial suite
 ---

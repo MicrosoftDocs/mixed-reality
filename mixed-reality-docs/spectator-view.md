@@ -3,7 +3,7 @@ title: Spectator view
 description: Visualize holograms from the perspective of an external camera.
 author: fieldsJacksonG
 ms.author: jacksonf
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Spectator View, BlackMagic, Black Magic, Elgato, OpenCV, Compositor, Calibration, Camera, DSLR, Capture Card
 ---

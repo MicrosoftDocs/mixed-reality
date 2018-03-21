@@ -3,7 +3,7 @@ title: Mixed reality capture for developers
 description: Best practices for mixed reality capture for developers.
 author: wguyman
 ms.author: wguyman
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
 ---

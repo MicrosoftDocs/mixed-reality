@@ -3,7 +3,7 @@ title: Gestures
 description: Hand gestures allow users to take action in mixed reality. 
 author: rwinj
 ms.author: randyw
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Gestures, interaction, design
 ---

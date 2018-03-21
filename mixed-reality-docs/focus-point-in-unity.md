@@ -3,7 +3,7 @@ title: Focus point in Unity
 description: Manually tuning hologram stability in Unity by setting the focus point
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, focus point, focus plane, stabilization plane, stabilization point, reprojection, LSR, depth buffer
 ---

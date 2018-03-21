@@ -3,7 +3,7 @@ title: Get apps for HoloLens
 description: Describes installing apps for HoloLens, both via the Microsoft Store and side-loading.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: sideload, side load, side-load, store, uwp, app, install
 ---

@@ -3,7 +3,7 @@ title: About this design guidance
 description: This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets).
 author: MRWied
 ms.author: jonwie
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, introduction, guidance
 ---

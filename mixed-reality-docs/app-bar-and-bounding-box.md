@@ -3,7 +3,7 @@ title: App bar and bounding box
 description: The App bar is a object-level menu containing a series of buttons that displays on the bottom edge of a hologram's bounds.
 author: radicalad
 ms.author: adlinv
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, App bar, bounding box
 ---

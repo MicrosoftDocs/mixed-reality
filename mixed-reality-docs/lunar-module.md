@@ -3,7 +3,7 @@ title: Lunar Module
 description: LunarModule is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend Hololens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems.
 author: radicalad
 ms.author: adlinv
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Sample apps, Design, HoloLens
 ---

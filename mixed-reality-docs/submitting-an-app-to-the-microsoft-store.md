@@ -3,7 +3,7 @@ title: Submitting an app to the Microsoft Store
 description: This article offers tips on submitting your mixed reality apps to the Microsoft Store, including how to package and test your app and tips to pass certification and aid in discoverability of your app in the Store.  
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising
 ---

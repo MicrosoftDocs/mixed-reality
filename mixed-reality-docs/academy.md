@@ -4,7 +4,7 @@ title: Academy
 description: The Mixed Reality Academy provides tutorials on starting development and access to expert advice from those who have built the best holographic experiences.
 author: keveleigh
 ms.author: kurtie
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---

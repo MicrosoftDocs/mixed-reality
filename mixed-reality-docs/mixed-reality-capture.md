@@ -3,7 +3,7 @@ title: Mixed reality capture
 description: Information on using mixed reality capture.
 author: wguyman
 ms.author: wguyman
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: mrc, mixed reality capture, photos, video, camera, capture, usage
 ---

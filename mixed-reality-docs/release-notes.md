@@ -3,7 +3,7 @@ title: Release notes
 description: HoloLens and Windows Mixed Reality release notes for the Windows 10 Fall Creators Update (Fall 2017).
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: release notes, version, windows 10, build, rs3, os
 ---

@@ -3,7 +3,7 @@ title: Environment considerations for HoloLens
 description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: holographic frame, field of view, fov, calibration, spaces, environment, how-to
 ---

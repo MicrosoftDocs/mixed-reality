@@ -3,7 +3,7 @@ title: Immersive headset hardware details
 description: Outlines the specifications of Windows Mixed Reality immersive headsets, delivering VR with inside-out tracking (no external setup required).
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: vr, hardware, specs, specifications, tech, sensors, optics, display
 ---

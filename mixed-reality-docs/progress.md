@@ -3,7 +3,7 @@ title: Progress
 description: A progress control provides feedback to the user that a long-running operation is underway.
 author: cre8ivepark
 ms.author: dongpark
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, controls, ui, ux
 ---

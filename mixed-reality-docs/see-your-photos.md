@@ -3,7 +3,7 @@ title: See your photos
 description: How to view photos, videos, and slideshows on HoloLens, and place them in your physical environment.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: photo, video, mrc, mixed reality capture, how-to, OneDrive, HoloLens, pin, place, slideshow
 ---

@@ -3,7 +3,7 @@ title: App views
 description: The two kinds of views in Windows Mixed Reality apps are immersive views and 2D views.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: immersive view, 2D view, slate
 ---

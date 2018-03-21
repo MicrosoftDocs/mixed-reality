@@ -3,7 +3,7 @@ title: Holograms 220
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of spatial sound concepts.
 author: keveleigh
 ms.author: kurtie
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial sound
 ---

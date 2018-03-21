@@ -3,7 +3,7 @@ title: Case study - Representing humans in mixed reality
 description: What kind of opportunities emerge when we cannot only create fantastic elements, but utilize the most realistic captures of environments, objects, and people in mixed reality?
 author: mavitazk
 ms.author: mavitazk
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, humans, avatar, mixed reality capture, volumetric video
 ---

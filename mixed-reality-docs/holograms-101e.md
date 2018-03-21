@@ -3,7 +3,7 @@ title: Holograms 101E
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens Emulator to learn the basics of a holographic application.
 author: keveleigh
 ms.author: kurtie
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial, emulator
 ---

@@ -3,7 +3,7 @@ title: Spatial sound design
 description: Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed reality applications.
 author: joekellyms
 ms.author: joekelly
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, spatial sound, design, style
 ---

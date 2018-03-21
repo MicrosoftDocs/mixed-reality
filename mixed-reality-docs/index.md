@@ -4,7 +4,7 @@ title: Windows Mixed Reality
 description: Learn to build mixed reality experiences for HoloLens and immersive headsets.
 author: mattzmsft 
 ms.author: randyw, mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, index, landing page, design, development, academy, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---

@@ -3,7 +3,7 @@ title: Case study - Building HoloSketch, a spatial layout and UX sketching app f
 description: HoloSketch is an on-device spatial layout and UX sketching tool for HoloLens to help build holographic experiences.
 author: cre8ivepark
 ms.author: dongpark, paseb
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloSketch, HoloLens, Windows Mixed Reality, sketching, app
 ---

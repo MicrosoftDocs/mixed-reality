@@ -3,7 +3,7 @@ title: Spatial mapping in Unity
 description: Rendering and colliding with the real-world geometry around you in Unity.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component
 ---

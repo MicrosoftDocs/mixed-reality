@@ -3,7 +3,7 @@ title: Locatable camera
 description: General information about the HoloLens front facing camera.
 author: wguyman
 ms.author: wguyman
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: camera, hololens, color camera, front facing
 ---

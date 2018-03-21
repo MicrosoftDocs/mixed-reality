@@ -3,7 +3,7 @@ title: Using the HoloLens emulator
 description: The HoloLens emulator allows you to test holographic apps on your PC without a physical HoloLens.
 author: JonMLyons
 ms.author: jlyons
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, emulator
 ---

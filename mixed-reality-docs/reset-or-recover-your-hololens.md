@@ -3,7 +3,7 @@ title: Reset or recover your HoloLens
 description: Both basic and advanced instructions for rebooting or resetting your HoloLens.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down
 ---

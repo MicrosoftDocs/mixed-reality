@@ -3,7 +3,7 @@ title: Types of mixed reality apps
 description: One of the advantages of developing apps for Windows Mixed Reality is that there is a spectrum of experiences that the platform can support from fully immersive, virtual environments, to light information layering over a user’s current environmentl.
 author: rwinj
 ms.author: willyang
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, app patterns
 ---

@@ -3,7 +3,7 @@ title: Case study - Lessons from the Lowe's kitchen
 description: The HoloLens team wants to share some of the best practices that were derived from the Lowe's HoloLens project.
 author: BrandonBray
 ms.author: kevincol
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Lowe's, HoloLens, kitchen, case study
 ---

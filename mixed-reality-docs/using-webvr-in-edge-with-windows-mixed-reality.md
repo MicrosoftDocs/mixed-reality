@@ -3,7 +3,7 @@ title: Using WebVR in Microsoft Edge with Windows Mixed Reality
 description: Overview of using and developing for WebVR in Windows Mixed Reality
 author: YashMaster
 ms.author: yabahman
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, web vr, web xr, web mr, web ar, 360, 360 video, 360 videos, 360 photo, 360 photos, 360 content, immersive web, immersiveweb, IW
 ---

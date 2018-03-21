@@ -3,7 +3,7 @@ title: Gaze in Unity
 description: Gaze is a primary way for users to target the holograms your app creates in mixed reality.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: gaze, unity, hologram, mixed reality
 ---

@@ -3,7 +3,7 @@ title: Hardware accessories
 description: Describes the types of accessories available to use with HoloLens and Windows Mixed Reality, and how to set them up.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: how-to, accessories, bluetooth, bt, controller, gamepad, clicker, xbox
 ---

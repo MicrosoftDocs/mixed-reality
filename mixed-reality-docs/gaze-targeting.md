@@ -3,7 +3,7 @@ title: Gaze targeting
 description: All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality.
 author: cre8ivepark
 ms.author: dongpark
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Gaze, gaze targeting, interaction, design
 ---

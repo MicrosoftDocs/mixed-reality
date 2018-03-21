@@ -3,7 +3,7 @@ title: Holographic frame
 description: Users see the world of mixed reality through the holographic frame.
 author: mavitazk
 ms.author: mavitazk
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, Windows Mixed Reality, holographic frame, field of view
 ---

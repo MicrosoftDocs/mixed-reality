@@ -3,7 +3,7 @@ title: Gaze, gestures, and motion controllers in DirectX
 description: Combining input coming from gaze, gestures, and motion controllers, you can enable a user to place a hologram in your app.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: gaze, gestures, motion controllers, directx, input, holograms
 ---

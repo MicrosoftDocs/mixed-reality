@@ -3,7 +3,7 @@ title: Accounts on HoloLens
 description: How to set up and manage user accounts on HoloLens.
 author: 
 ms.author: toddly
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, user, account, aad, adfs, microsoft account, msa, credentials
 ---

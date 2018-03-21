@@ -4,7 +4,7 @@ title: Development
 description: Learn the fundamentals of mixed reality development.
 author: mattzmsft 
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, develop, development, HoloLens
 ---

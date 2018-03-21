@@ -3,7 +3,7 @@ title: Case study - Creating an immersive experience in Fragments
 description: Fragments is an interactive crime drama for Microsoft Hololens, where you follow the clues to solve a mystery that takes place in your real-world space.
 author: mattzmsft
 ms.author: miharnis
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Fragments, HoloLens, Windows Mixed Reality
 ---

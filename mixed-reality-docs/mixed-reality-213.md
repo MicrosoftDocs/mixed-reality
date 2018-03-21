@@ -3,7 +3,7 @@ title: Mixed Reality 213
 description: Follow this coding walkthrough using Unity, Visual Studio and immersive headsets to learn the details of motion controllers.
 author: keveleigh
 ms.author: kurtie
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, academy, tutorial
 ---

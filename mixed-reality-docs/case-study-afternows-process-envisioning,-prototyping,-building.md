@@ -3,7 +3,7 @@ title: Case study - AfterNow's process - envisioning, prototyping, building
 description: AfterNow's process - envisioning, prototyping, building
 author: 
 ms.author: randyw
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, AfterNow, envisioning, prototyping, building
 ---

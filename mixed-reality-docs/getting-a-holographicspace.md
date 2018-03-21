@@ -3,7 +3,7 @@ title: Getting a HolographicSpace
 description: Explains the HolographicSpace API, a core concept for holographic rendering and spatial input.
 author: MikeRiches
 ms.author: mriches
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, spatial input, rendering, swap chain, holographic frame, update loop, game loop, frame of reference, locatability, sample code, walkthrough
 ---

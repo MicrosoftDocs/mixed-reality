@@ -3,7 +3,7 @@ title: Galaxy Explorer
 description: Follow along with us as we build the mixed reality app Galaxy Explorer, the winner of the Share Your Idea campaign.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: galaxy explorer, case study, project, sample
 ---

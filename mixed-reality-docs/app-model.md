@@ -3,7 +3,7 @@ title: App model
 description: Windows Mixed Reality uses the app model provided by the Universal Windows Platform, a model and environment for modern Windows apps.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: UWP, app model, lifecycle, suspend, resume, tile, views, contracts
 ---

@@ -3,7 +3,7 @@ title: Open source projects
 description: These open source projects offer scripts, components, samples, and examples from mixed reality development at Microsoft that can help accelerate your mixed reality development.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: template, code, sample, snippet, script, component, open source, project
 ---

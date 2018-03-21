@@ -3,7 +3,7 @@ title: Spatial sound in Unity
 description: Playing spatial sound that comes from a specific 3D point within your Unity scene.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, spatial sound, HRTF, room size
 ---

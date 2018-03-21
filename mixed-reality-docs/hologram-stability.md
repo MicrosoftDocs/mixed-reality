@@ -3,7 +3,7 @@ title: Hologram stability
 description: HoloLens automatically stabilizes holograms, but there are steps developers can take to improve hologram stability further.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: holograms, stability, hololens
 ---

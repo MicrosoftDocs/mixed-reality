@@ -3,7 +3,7 @@ title: HoloLens emulator archive
 description: List of released builds of the Microsoft HoloLens Emulator.
 author: JonMLyons
 ms.author: jlyons
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions
 ---

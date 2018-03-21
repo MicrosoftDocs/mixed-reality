@@ -3,7 +3,7 @@ title: Updating HoloLens
 description: How to update HoloLens and join the Windows Insider program for preview builds.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: how-to, insider, preview, update, features, new release
 ---

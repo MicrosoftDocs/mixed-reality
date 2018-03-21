@@ -3,7 +3,7 @@ title: In-app purchases
 description: In-app purchases are supported in mixed reality apps, but there is some work to set them up.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
 keywords: in-app purchases, hololens
 ---
