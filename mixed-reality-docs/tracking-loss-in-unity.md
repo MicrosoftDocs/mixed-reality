@@ -25,8 +25,8 @@ By default, the update loop of the app as well as all messages and events will s
 To manually handle tracking loss, you need to go to Edit > Project Settings > Player > Universal Windows Platform settings tab > Windows Holographic and uncheck "On Tracking Loss Pause and Show Image". After which, you need to handle tracking changes with the APIs specified below.
 
 **Namespace:** *UnityEngine.VR.WSA*
-
 **Type:** *WorldManager*
+
 * World Manager exposes an event to detect tracking lost/gained (WorldManager.OnPositionalLocatorStateChanged) and a property to query the current state (WorldManager.state)
 * When the tracking state is not active, the camera will not appear to translate in the virtual world even as the user translates. This means objects will no longer correspond to any physical location and all will appear body locked.
 

@@ -33,8 +33,8 @@ The scene implements a Vuforia to HoloLens camera binding, along with the build 
 ### Configuring a Vuforia App for HoloLens
 
 Developing a Vuforia app for HoloLens is fundamentally the same as developing Vuforia apps for other devices. You’ll simply need to apply a binding between the Vuforia ARCamera and the HoloLens scene camera, and enable extended tracking on your targets. You can then apply the build settings described in the Building and Executing a Vuforia app for HoloLens section. That’s all that’s needed to enable Vuforia to work with the HoloLens spatial mapping and positional tracking systems.
-1. Enable *Extended Tracking* on your targets
-2. Bind the *ARCamera* to the HoloLens scene camera
+1. Enable **Extended Tracking** on your targets
+2. Bind the **ARCamera** to the HoloLens scene camera
 
 ### Binding the HoloLens scene camera
 
@@ -49,33 +49,36 @@ Vuforia uses the ARCamera prefab as its scene camera in a Unity project. You’l
 4. Bind the HoloLens scene camera to the ARCamera
     * Drag the HoloLens Scene camera onto the Central Anchor Point field
 
-![Unity editor window showing the HoloLensCamera selected](images/vuforia-bind-the-scene-camera.png)
+![Unity editor window showing the HoloLensCamera selected](images/vuforia-bind-the-scene-camera.png)<br>
+*Unity editor window showing the HoloLensCamera selected*
 
 ## Building and executing a Vuforia app for HoloLens
 1.  [Add an Eyewear App License Key](https://library.vuforia.com/articles/Solution/How-To-add-a-License-Key-to-your-Vuforia-App) in the ARCamera Inspector
 2.  Apply the recommended [Unity engine options for power and performance](performance-recommendations-for-unity.md)
-3.  Add the sample scenes to *Scenes in Build.*
-4.  Set your platform build target for Windows Store in *File > Build Settings.*
+3.  Add the sample scenes to **Scenes in Build.**
+4.  Set your platform build target for Windows Store in **File > Build Settings.**
 5.  Select the following platform build configuration settings
     * SDK = Universal10
     * UWP Build Type = D3D
-6.  Define a unique *Product Name*, in *Player Settings*, to serve as the name of the app when installed on the HoloLens.
-7.  Select *Landscape Left* as the in *Player Settings > Resolution and Presentation*
-8.  Check *Virtual Reality Supported* + *Windows Holographic* in *Player Settings* > *Other Settings*
-9.  Check the following Capabilities in *Player Settings* > *Publish Settings*
+6.  Define a unique **Product Name**, in **Player Settings**, to serve as the name of the app when installed on the HoloLens.
+7.  Select **Landscape Left** as the in **Player Settings > Resolution and Presentation**
+8.  Check **Virtual Reality Supported** + **Windows Holographic** in **Player Settings** > **Other Settings**
+9.  Check the following Capabilities in **Player Settings** > **Publish Settings**
     * InternetClient
     * WebCam
     * SpatialPerception - if you intend to use the Surface Observer API
 10. Select Build to generate a Visual Studio project
 11. Build the executable from Visual Studio and install it on your HoloLens
 
-**Visual Studio Build Configuration:** Be sure to set your build target for x86. Note that the EAP release supports only 32 bit builds.
+>[!IMPORTANT]
+>**Visual Studio Build Configuration:** Be sure to set your build target for x86. Note that the EAP release supports only 32 bit builds.
 
 ## Extended tracking with Vuforia
 
 [Extended tracking](https://library.vuforia.com/articles/Training/Extended-Tracking) creates a map of the environment to maintain tracking even when a target is no longer in view. It is Vuforia’s counterpart to the spatial mapping performed by HoloLens. When you enable extended tracking on a target, you enable the pose of that target to be passed to the spatial mapping system. In this way, targets can exist in both the Vuforia and HoloLens spatial coordinate systems, though not simultaneously.
 
-![Unity settings window](images/vuforia-extendedtracking.png)
+![Unity settings window](images/vuforia-extendedtracking.png)<br>
+*Unity settings window*
 
 **Enabling Extended Tracking on a Target**
 

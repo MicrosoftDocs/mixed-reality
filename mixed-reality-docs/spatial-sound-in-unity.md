@@ -18,11 +18,13 @@ This topic describes how to use Spatial Sound in your Unity projects. It covers 
 
 Spatial Sound, in Unity, is enabled using an audio spatializer plugin. The plugin files are bundled directly into Unity so enabling spatial sound is as easy as going to **Edit > Audio > Spatializer** and enabling the Microsoft HRTF extension. Since Microsoft Spatial Sound only supports 48000 currently, you should also set your System Sample Rate to 48000 to prevent an HRTF failure in the rare case that your system output device is not set to 48000 already:
 
-![Inspector for AudioManager](images/audio-250px.png)
+![Inspector for AudioManager](images/audio-250px.png)<br>
+*Inspector for AudioManager*
 
 Your Unity project is now configured to use Spatial Sound.
 
-**Note that, while the Windows 10 SDK may be used to build HoloLens apps on Windows versions prior to Windows 10, if you aren't using Windows 10, you will not get Spatial Sound in the editor nor on the device.**
+>[!NOTE]
+>If you aren't using a Windows 10 PC for development, you won't get Spatial Sound in the editor nor on the device (even if you're using the Windows 10 SDK).
 
 ## Using Spatial Sound in Unity
 
@@ -33,7 +35,8 @@ Spatial Sound is used in your Unity project by adjusting three settings on your 
     * Set **Spatial Blend** to **3D** (numeric value 1).
     * For best results, expand **3D Sound Settings** and set **Volume Rolloff** to **Custom Rolloff**.
 
-![Inspector panel in Unity showing the Audio Source](images/audiosource.png)
+![Inspector panel in Unity showing the Audio Source](images/audiosource.png)<br>
+*Inspector panel in Unity showing the Audio Source*
 
 Your sounds now realistically exist inside your project's environment!
 

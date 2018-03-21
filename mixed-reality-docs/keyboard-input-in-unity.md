@@ -52,7 +52,8 @@ The HoloLens system keyboard is only available to Unity applications that are ex
 5. Expand the **Other Settings** group
 6. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality Devices** list
 7. Ensure **Windows Holographic** appears in the list of Virtual Reality SDKs
-    * *Without marking the build as Virtual Reality Supported with the HoloLens device, the project will export as a 2D XAML app*
+>[!NOTE]
+>If you don't mark the build as Virtual Reality Supported with the HoloLens device, the project will export as a 2D XAML app.
 
 ## Using the system keyboard in your Unity app
 

@@ -17,7 +17,6 @@ A shared experience is one where multiple users, each with their own HoloLens, c
 ## Anchor Sharing
 
 **Namespace:** *UnityEngine.VR.WSA.Sharing*
-
 **Type**: *WorldAnchorTransferBatch*
 
 To share a [WorldAnchor](coordinate-systems-in-unity.md), one must establish the anchor to be shared. The user of one HoloLens scans their environment and either manually or programmatically chooses a point in space to be the Anchor for the shared experience. The data that represents this point can then be serialized and transmitted to the other devices that are sharing in the experience. Each device then de-serializes the anchor data and attempts to locate that point in space. In order for Anchor Sharing to work, each device must have scanned in enough of the environment such that the point represented by the anchor can be identified.
@@ -31,7 +30,8 @@ How to enable the SpatialPerception capability:
 2. Click on the **"Windows Store"** tab
 3. Expand **"Publishing Settings"** and check the **"SpatialPerception"** capability in the **"Capabilities"** list
 
-Note that if you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](shared-spatial-anchors-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+>[!NOTE]
+>If you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](shared-spatial-anchors-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 ### Setup
 

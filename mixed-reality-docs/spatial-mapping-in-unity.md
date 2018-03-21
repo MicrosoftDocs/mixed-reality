@@ -75,7 +75,6 @@ These components make it drag-and-drop easy to get started with Spatial Mapping.
 If you need more control than you get from the Spatial Mapping Renderer and Spatial Mapping Collider components, you can use the low-level Spatial Mapping script APIs.
 
 **Namespace:** *UnityEngine.VR.WSA*
-
 **Types**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *SurfaceId*
 
 The following is an outline of the suggested flow for an application that uses the spatial mapping APIs.
@@ -239,7 +238,8 @@ Internally, the raycast is computed against the computed 8cm cubed voxel represe
 
 In the Unity sample, the cursor casts a ray each frame. First, against Unity’s colliders. Second, against the understanding module’s world representation. And finally, again UI elements. In this application, UI gets priority, next the understanding result, and lastly, Unity’s colliders. The SurfaceType is reported as text next to the cursor.
 
-![Surface type is labeled next to the cursor](images/su-raycastresults-300px.jpg)
+![Surface type is labeled next to the cursor](images/su-raycastresults-300px.jpg)<br>
+*Surface type is labeled next to the cursor*
 
 ### Topology Queries
 
@@ -323,7 +323,8 @@ shapeConstraints = new List<ShapeConstraint>()
 
 Wrapper functions are provided in the Unity module for easy creation of custom shape definitions. The full list of component and shape constraints can be found in “SpatialUnderstandingDll.cs” within the “ShapeComponentConstraint” and the “ShapeConstraint” structures.
 
-![Rectangle shape is found on this surface](images/su-shapequery-300px.jpg)
+![Rectangle shape is found on this surface](images/su-shapequery-300px.jpg)<br>
+*Rectangle shape is found on this surface*
 
 ### Object Placement Solver
 
@@ -393,7 +394,8 @@ Solver_PlaceObject(
 
 If successful, a “ObjectPlacementResult” structure containing the placement position, dimensions and orientation is returned. In addition, the placement is added to the dll’s internal list of placed objects. Subsequent placement queries will take this object into account. The “LevelSolver.cs” file in the Unity sample contains more example queries.
 
-![Results of object placement](images/su-objectplacement-1000px.jpg) Figure 3: The blue boxes how the result from three place on floor queries with away from camera position rules
+![Results of object placement](images/su-objectplacement-1000px.jpg)<br>
+*Figure 3: The blue boxes how the result from three place on floor queries with away from camera position rules*
 
 When solving for placement location of multiple objects required for a level or application scenario, first solve indispensable and large objects in order to maximizing the probability that a space can be found. Placement order is important. If object placements cannot be found, try less constrained configurations. Having a set of fallback configurations is critical to supporting functionality across many room configurations.
 
@@ -441,7 +443,8 @@ The scanning flow, driven by the “SpatialUnderstanding” behavior calls InitS
 
 The understanding dll internally stores the playspace as a grid of 8cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume. 
 
-![Generated mesh produced from the voxel volume](images/su-custommesh.jpg)
+![Generated mesh produced from the voxel volume](images/su-custommesh.jpg)<br>
+*Generated mesh produced from the voxel volume*
 
 ## Troubleshooting
 * Ensure you have set the [SpatialPerception](#setting-the-spatialperception-capability) capability
