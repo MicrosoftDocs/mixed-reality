@@ -66,7 +66,8 @@ Likewise, voice and AI can extend natural interaction in experience like this. W
 In this world of contextual experiences, catering to the mobility of the user is key. Moving fluidly between devices and services, with highly personalized contexts, users will travel about the physical world seamlessly — creating a *massive* platform challenge. When the physical world becomes a digital end-point, interoperability reigns supreme.
 
 
-> *“Bringing together the digital universe and the physical world will unlock human potential… enabling every person and organization on the planet to achieve more.” — Satya Nadella*
+> *“Bringing together the digital universe and the physical world will unlock human potential… enabling every person and organization on the planet to achieve more.”*
+> — Satya Nadella
 
 Windows Mixed Reality is an effort to create a platform for an ecosystem of devices, enabling developers to create immersive, affordable, and compatible experiences for the largest possible audience. The future will not be limited to a single manufacturer, let alone a single device. Headsets, mobile devices, PCs, accessories… all these physical things must interoperate (as well as digital things like graphs and services) through an underlying platform to successfully deliver on the promise of mixed reality.
 

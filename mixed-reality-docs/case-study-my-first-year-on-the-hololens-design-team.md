@@ -17,7 +17,8 @@ My journey from a 2D flatland to the 3D world started when I joined the HoloLens
 ![Taking the Leap from 2D to 3D](images/2D_to_3D-800px.gif)<br>
 *Taking the leap from 2D to 3D*
 
-> *“I felt as though I had jumped into the driver’s seat without knowing how to drive the car. I was overwhelmed and scared, yet very focused.” — Hae Jin Lee*
+> *“I felt as though I had jumped into the driver’s seat without knowing how to drive the car. I was overwhelmed and scared, yet very focused.”*
+> — Hae Jin Lee
 
 During the past year, I picked up skills and knowledge as fast as I could, but I still have a lot to learn. Here, I’ve written up 4 observations with a video tutorial documenting my transition from a 2D to 3D interaction designer. I hope my experience will inspire other designers to take the leap to 3D.
 
