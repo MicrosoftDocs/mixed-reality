@@ -115,7 +115,7 @@ This tutorial uses **[Mixed Reality Toolkit - Unity](https://github.com/Microsof
     * **MixedRealityCamera.prefab**: Camera only
     * **MixedRealityCameraParent.prefab**: Camera + Teleportation + Boundary
     * In this tutorial, we will use **MixedRealityCamera** without teleportation feature. Because of this, we added simple **Environment** prefab which contains a basic floor to make the user feel grounded.
-    * To learn more about the teleportation with **MixedRealityCameraParent**, see [Advanced design - Teleportation and locomotion](mixed-reality-213.md#advanced-design-teleportation-and-locomotion)
+    * To learn more about the teleportation with **MixedRealityCameraParent**, see [Advanced design - Teleportation and locomotion](#advanced-design---teleportation-and-locomotion)
 
 **Skybox setup**
 * Click **Window > Lighting > Settings**
