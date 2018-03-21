@@ -17,8 +17,8 @@ My journey from a 2D flatland to the 3D world started when I joined the HoloLens
 ![Taking the Leap from 2D to 3D](images/2D_to_3D-800px.gif)<br>
 *Taking the leap from 2D to 3D*
 
-**“I felt as though I had jumped into the driver’s seat without knowing how to drive the car. I was overwhelmed and scared, yet very focused.”
-— Hae Jin Lee**
+> *“I felt as though I had jumped into the driver’s seat without knowing how to drive the car. I was overwhelmed and scared, yet very focused.”*<br>
+> — Hae Jin Lee
 
 During the past year, I picked up skills and knowledge as fast as I could, but I still have a lot to learn. Here, I’ve written up 4 observations with a video tutorial documenting my transition from a 2D to 3D interaction designer. I hope my experience will inspire other designers to take the leap to 3D.
 
@@ -78,8 +78,8 @@ When I designed for the 2D medium, I had to focus on touch, mouse, and keyboard 
 ![Available inputs in HoloLens](images/inputs.jpg)<br>
 *Available inputs in HoloLens*
 
-**“Everything is best for something, and worst for something else.”
-— [Bill Buxton](https://www.billbuxton.com/)**
+> *“Everything is best for something, and worst for something else.”*<br>
+> — [Bill Buxton](https://www.billbuxton.com/)
 
 For example, gesture input using bare hand and camera sensors on an HMD device frees users hand from holding controllers or wearing sweaty gloves, but frequent use can cause physical fatigue (a.k.a gorilla arm). Also, users have to keep their hands within the line of sight; if the camera cannot see the hands, the hands cannot be used.
 

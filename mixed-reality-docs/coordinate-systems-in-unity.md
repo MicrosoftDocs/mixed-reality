@@ -17,7 +17,6 @@ Your first step in building a mixed reality experience in Unity is to determine 
 ## Building an orientation-only or seated-scale experience
 
 **Namespace:** *UnityEngine.XR*
-
 **Type:** *XRDevice*
 
 To build an **orientation-only** or **seated-scale experience**, you must set Unity to the Stationary tracking space type. This sets Unity's world coordinate system to track the [stationary frame of reference](coordinate-systems.md#spatial-coordinate-systems). In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) will appear in front of the user when the app launches.
@@ -27,7 +26,6 @@ XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 ```
 
 **Namespace:** *UnityEngine.XR*
-
 **Type:** *InputTracking*
 
 For a pure **orientation-only experience** such as a 360-degree video viewer (where positional head updates would ruin the illusion), you can then set [XR.InputTracking.disablePositionalTracking](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking-disablePositionalTracking.html) to true:
@@ -45,7 +43,6 @@ InputTracking.Recenter();
 ## Building a standing-scale or room-scale experience
 
 **Namespace:** *UnityEngine.XR*
-
 **Type:** *XRDevice*
 
 For a **standing-scale** or **room-scale experience**, you'll need to place content relative to the floor. You reason about the user's floor using the **[spatial stage](coordinate-systems.md#spatial-coordinate-systems)**, which represents the user's defined floor-level origin and optional room boundary, set up during first run.
@@ -68,7 +65,6 @@ else
 Once your app successfully sets the RoomScale tracking space type, content placed on the y=0 plane will appear on the floor. The origin at (0, 0, 0) will be the specific place on the floor where the user stood during room setup, with -Z representing the forward direction they were facing during setup.
 
 **Namespace:** *UnityEngine.Experimental.XR*
-
 **Type:** *Boundary*
 
 In script code, you can then call the TryGetGeometry method on your the UnityEngine.Experimental.XR.Boundary type to get a boundary polygon, specifying a boundary type of TrackedArea. If the user defined a boundary (you get back a list of vertices), you know it is safe to deliver a **room-scale experience** to the user, where they can walk around the scene you create.
@@ -86,7 +82,6 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 ## Building a world-scale experience
 
 **Namespace:** *UnityEngine.XR.WSA*
-
 **Type:** *WorldAnchor*
 
 For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences. One key technique you'll use is to create a [spatial anchor](coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, regardless of how far the user has roamed, and then [find those holograms again in later sessions](coordinate-systems.md#spatial-anchor-persistence).

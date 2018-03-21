@@ -27,6 +27,7 @@ To get started building a 2D UWP app, check out the [Create your first app](http
 ### Bringing an existing 2D Store app to UWP
 
 If you already have a 2D Windows app in the Store, you must first ensure it is targeting the Windows 10 Universal Windows Platform (UWP). Here are all the potential starting points you may have with your Store app today:
+<br>
 
 |  Starting Point  |  AppX Manifest Platform Target  |  How to make this Universal? | 
 |----------|----------|----------|
@@ -145,7 +146,8 @@ The [app model](app-model.md) for mixed reality is designed to use the Mixed Rea
 
 **Back Button:** raises the *[BackRequested](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* event when pressed. Back Button visibility is controlled by *[SystemNavigationManager.AppViewBackButtonVisibility](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
 
-![App bar UI in 2D app view](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)
+![App bar UI in 2D app view](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
+*App bar UI in 2D app view*
 
 ### Test your 2D app's design
 

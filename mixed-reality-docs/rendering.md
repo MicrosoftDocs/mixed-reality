@@ -18,11 +18,11 @@ Holographic rendering enables your app to draw a hologram in a precise location 
 
 Key to holographic rendering is knowing whether you are rendering to a see-through display like HoloLens, which lets the user see both the physical world and your holograms together, or an opaque display like a Windows Mixed Reality immersive headset, which blocks out the world.
 
-Devices with **see-through displays**, like HoloLens, add light to the world. Black pixels will be fully transparent, while brighter pixels will be increasingly opaque. Because the light from the displays is added to the light from the real world, even white pixels are somewhat translucent.
+Devices with **see-through displays**, like [HoloLens](hololens-hardware-details.md), add light to the world. Black pixels will be fully transparent, while brighter pixels will be increasingly opaque. Because the light from the displays is added to the light from the real world, even white pixels are somewhat translucent.
 
 While stereoscopic rendering provides one depth cue for your holograms, adding [grounding effects](interaction-fundamentals.md) can help users see more easily what surface a hologram is near. One grounding technique is to add a glow around a hologram on the nearby surface and then render a shadow against this glow. In this way, your shadow will appear to subtract light from the environment. [Spatial sound](spatial-sound.md) can be another extremely important depth cue, letting users reason about the distance and relative location of a hologram.
 
-Devices with **opaque displays**, like Windows Mixed Reality immersive headsets, block out the world. Black pixels will be solid black, and any other color will appear as that color to the user. Your app is responsible for rendering everything the user will see, so it's even more important to maintain a constant refresh rate so that users have a comfortable experience.
+Devices with **opaque displays**, like [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md), block out the world. Black pixels will be solid black, and any other color will appear as that color to the user. Your app is responsible for rendering everything the user will see, so it's even more important to maintain a constant refresh rate so that users have a comfortable experience.
 
 ## Predicted rendering parameters
 

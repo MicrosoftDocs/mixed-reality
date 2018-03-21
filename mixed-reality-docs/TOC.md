@@ -79,7 +79,7 @@
 ### Design tools
 #### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 #### [Asset creation process](asset-creation-process.md)
-#### [Holosketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
+#### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 #### [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 
 ## [Development](development.md)

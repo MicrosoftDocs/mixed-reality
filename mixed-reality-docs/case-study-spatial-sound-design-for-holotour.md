@@ -28,9 +28,10 @@ We created HoloTour experiences of two different locations: Rome and Machu Picch
 
 ### Capturing the audio
 
-![This setup captured sound in four directions from the precise location of our camera, giving us enough information to re-create a 3D aural panorama using spatial sound, which we could later synchronize to the 360-degree video.](images/camera-rig-microphones-300px.png)
-<br>
 In our [case study about capturing the visual content for HoloTour](case-study-capturing-and-creating-content-for-holotour.md), we talked about the custom design of our camera rig. It consisted of 14 GoPro cameras contained in a 3D-printed housing, designed to the specific dimensions of the tripod. To capture audio from this rig, we added a quad-microphone array beneath the cameras, which fed into a compact 4-channel recording unit that sat at the base of the tripod. We chose microphones that not only performed well, but which had a very small footprint, so as to not occlude the view of the camera.
+
+![Custom camera and microphone rig](images/camera-rig-microphones-300px.png)<br>
+*Custom camera and microphone rig*
 
 This setup captured sound in four directions from the precise location of our camera, giving us enough information to re-create a 3D aural panorama using spatial sound, which we could later synchronize to the 360-degree video.
 

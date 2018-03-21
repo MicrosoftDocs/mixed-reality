@@ -1,7 +1,7 @@
 ---
 title: Case study - AfterNow's process - envisioning, prototyping, building
 description: AfterNow's process - envisioning, prototyping, building
-author: 
+author: rwinj
 ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
@@ -62,7 +62,8 @@ The goal of this exercise is to enhance our collective understanding of the prob
 
 Our best practice for this process happens when we take individual notes in How might we (HMW) format. HMW is a technique developed by P&G in the 70s. It's a method of note taking in the form of a question which ultimately results in organized and prioritized notes. We will jot down one idea per sticky note which starts with the phrase, "How might we." For example, how might we communicate the values of [your company] in mixed reality?
 
-![Organize and decide](images/organize-and-decide-640px.png)
+![Organize and decide](images/organize-and-decide-640px.png)<br>
+*Organize and decide*
 
 **Organize HMW notes**
 
@@ -95,12 +96,13 @@ We spend 20 minutes privately jotting down some rough ideas.
 We spend eight minutes creating eight frames. This is where we rapidly sketch a variation of one of our best ideas in each frame.
 
 **Solution**
+
 We spend 30 minutes sketching storyboards. We take the best variations of ideas from Crazy 8s and create a three-panel storyboard of the idea.
 
-![Sketching storyboards](images/sketching-storyboards-640px.png)
+![Sketching storyboards](images/sketching-storyboards-640px.png)<br>
+*Sketching storyboards*
 
 ## DAY 3 - Decide
-
 
 This day involves a lot of critiquing and voting. Here's the breakdown:
 

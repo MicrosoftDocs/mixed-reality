@@ -37,6 +37,7 @@ At their core, mixed reality apps place [holograms](hologram.md) in your world t
 ## Mixed reality experience scales
 
 Mixed reality apps can design for a broad range of user experiences, from 360-degree video viewers that just need the headset's orientation, to full world-scale apps and games, which need spatial mapping and spatial anchors:
+<br>
 
 | Experience scale | Requirements | Example experience | 
 |----------|----------|----------|
@@ -47,6 +48,7 @@ Mixed reality apps can design for a broad range of user experiences, from 360-de
 |  **World-scale** |  **Spatial anchors** (and typically [spatial mapping](spatial-mapping.md)) |  Game with enemies coming from your real walls, such as [RoboRaid](https://www.microsoft.com/hololens/apps/roboraid) | 
 
 These experience scales follow a "nesting dolls" model. The key design principle here for Windows Mixed Reality is that a given headset supports apps built for a target experience scale, as well as all lesser scales:
+<br>
 
 | 6DOF tracking | Floor defined | 360° tracking | Bounds defined | Spatial anchors | Max experience | 
 |----------|----------|----------|----------|----------|----------|
