@@ -53,7 +53,8 @@ Your app can now do basic holographic rendering and spatial input. To go further
 
 **Unity quality settings**
 
-![Unity quality settings](images/unityqualitysettings-150px.png)
+![Unity quality settings](images/unityqualitysettings-350px.png)<br>
+*Unity quality settings*
 
 HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want the quality settings tuned for fastest performance to ensure we maintain full framerate:
 1. Select **Edit > Project Settings > Quality**
@@ -63,7 +64,8 @@ HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want 
 
 **Unity camera settings**
 
-![Unity camera settings](images/unitycamerasettings-130px.png) 
+![Unity camera settings](images/unitycamerasettings.png)<br>
+*Unity camera settings*
 
 Once you enable the "Virtual Reality Supported" checkbox, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](rendering.md). There is no need to replace it with a custom camera to do this.
 
