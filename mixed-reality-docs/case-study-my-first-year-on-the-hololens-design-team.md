@@ -94,7 +94,7 @@ For example, gesture input using bare hand and camera sensors on an HMD device f
 
 Speech input is good at traversing complex tasks because it allows users to cut through nested menus with one command (e.g., “Show me the movies made by Laika studio.”) and also very economical when coupled with other modality (e.g., “Face me” command orients the hologram a user is looking at towards the user). However, speech input may not work well in noisy environment or may not appropriate in a very quiet space.
 
-Besides gesture and speech, hand-held tracked controllers (e.g., Oculus touch, Vive, etc.) are very popular input methods because they are easy to use, accurate, leverage people’s [proprioception](https://en.wikipedia.org/wiki/Proprioception/), and provide passive haptic cues. However, these benefits come at the cost of not being able to be bare-hands and use full finger tracking.
+Besides gesture and speech, hand-held tracked controllers (e.g., Oculus touch, Vive, etc.) are very popular input methods because they are easy to use, accurate, leverage people’s [proprioception](https://en.wikipedia.org/wiki/Proprioception), and provide passive haptic cues. However, these benefits come at the cost of not being able to be bare-hands and use full finger tracking.
 
 ![Senso (Left) and Manus VR(Right)](images/senso-and-manus-vr.jpg)
 
