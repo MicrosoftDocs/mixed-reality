@@ -97,6 +97,9 @@ In post-production, the gladiators were composited onto the arena floor and the 
 <tr>
 <td style="border:0" width="60px"> <img alt="Danny Askew" width="60" height="60" src="images/askew.png" /></td>
 <td style="border:0" width="408"> <b>Danny Askew</b> is a Video Artist who made sure your journey through Rome was as flawless as possible.</td>
+
+<td style="border:0" width="60px"></td>
+<td style="border:0" width="408"></td>
 </tr>
 </table>
 
