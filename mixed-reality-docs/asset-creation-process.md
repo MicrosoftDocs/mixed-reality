@@ -24,6 +24,7 @@ The assets you create for a project come in many shapes and forms. They can be c
 When looking at the experience you're trying to create think of it as a **budget** that you can spend to try to create the best experience. There is not necessarily hard limits on the number of **polygons** or **types of materials** use in your assets but more a budgeted set of tradeoffs.
 
 Below is an example budget for your experience. Performance is usually not a single point of failure but death by a thousand cuts per-se.
+<br>
 
 <table style="float:right; margin-left: 10px;">
 <tr>

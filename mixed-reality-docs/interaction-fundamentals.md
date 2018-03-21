@@ -17,6 +17,7 @@ As we've built experiences across HoloLens and immersive headsets, we've started
 ## Device support
 
 Here's an outline of the available Interaction design articles and which device type or types they apply to.
+<br>
 
 <table>
 <tr>
@@ -75,9 +76,10 @@ In 2D development, frequently accessed content and settings may be placed in the
 
 The user may need to be guided to help locate important events or objects beyond their immediate view. You can use arrows, light trails, character head movement, thought bubbles, pointers, spatial sound, and voice prompts to help guide the user to important content in your app.
 
-It is recommended to not lock content to the screen for the user's comfort. If you need to keep content in view, place it in the world and make the content "tag-along" like the Start Menu. Content that gets pulled along with the user's perspective will feel more natural in the environment.
+It is recommended to not lock content to the screen for the user's comfort. If you need to keep content in view, place it in the world and make the content "tag-along" like the Start menu. Content that gets pulled along with the user's perspective will feel more natural in the environment.
 
-![The start menu follows the user's view when it reaches the edge of the frame](images/tagalong-1000px.jpg)
+![The start menu follows the user's view when it reaches the edge of the frame](images/tagalong-1000px.jpg)<br>
+*The Start menu follows the user's view when it reaches the edge of the frame*
 
 On HoloLens, holograms feel real when they fit within the holographic frame since they don't get cut off. Users will move in order to see the bounds of a hologram within the frame. On HoloLens, it's important to simplify your UI to fit within the user's view and keep your focus on the main action. For immersive headsets, it's important to maintain the illusion of a persistent virtual world within the device's field of view.
 

@@ -112,7 +112,7 @@ Before uploading to your OneDrive folder, please follow the steps below to packa
 8. Drag the object from the Hierarchy panel to the Project panel to **make it prefab**.
 9. On the bottom of the inspector panel, click the dropdown, create and assign a new unique name. Below example shows adding and assigning 'brownchair' for the AssetBundle Name. 
 
-   ![On the bottom of the inspector panel, click the dropdown and '''assign a new unique name'''.](images/holosketch-14-assetbundles-1000px.png)
+   ![On the bottom of the inspector panel, click the dropdown and assign a new unique name.](images/holosketch-14-assetbundles-1000px.png)
 
 10. Prepare an image which can be used as thumbnail in OneDrive's list. You can create one by taking screen shot of the object in Unity. No specific size or ratio required. Drag the image into the project panel. On the bottom of the inspector panel, click the dropdown and **assign the same name used for the Prefab**. 3D model Prefab and thumbnail image should have same AssetBundle name. Below example shows assigning 'brownchair' which was assigned to 3D model Prefab. 
 

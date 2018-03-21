@@ -40,9 +40,8 @@ Due to the nature of additive displays, certain colors can appear different on h
 
 Due to the nature of additive displays, dark colors appear transparent. A solid black object will appear no different from the real world. See Alpha channel below. To give the appearance of “black” try a very dark grey RGB value such as 16,16,16.
 
-![Normal vs. wide color gamut](images/640px-widegamut.png)
-<br>
-Normal vs. wide color gamut
+![Normal vs. wide color gamut](images/640px-widegamut.png)<br>
+*Normal vs. wide color gamut*
 
 ## Technical considerations
 * **Aliasing** - Be considerate of aliasing, jagged or “stair steps” where the edge of a hologram’s geometry meets the real world. Using textures with high detail can aggravate this effect. Textures should be mapped and filtering enabled. Consider fading the edges of holograms or adding a texture that creates a black edge border around objects. Avoid thin geometry where possible.
@@ -55,9 +54,8 @@ Light and color can help make your holograms appear more naturally in a user's e
 * **Vignetting** - A 'vignette' effect to darken materials can help focus the user's attention on the center of the field of view. This effect darkens the hologram's material at some radius from the user's gaze vector. Note that this is also effective when the user's views holograms from an oblique or glancing angle.
 * **Emphasis** - Draw attention to objects or points of interaction by contrasting colors, brightness, and lighting. For a more detailed look at lighting methods in storytelling, see [Pixel Cinematography - A Lighting Approach for Computer Graphics](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).
 
-![Use of color to show emphasis for storytelling elements, shown here in a scene from Fragments.](images/640px-fragments.jpg)
-
-Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](http://www.microsoft.com/en-us/hololens/apps/fragments).
+![Use of color to show emphasis for storytelling elements, shown here in a scene from Fragments.](images/640px-fragments.jpg)<br>
+*Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](http://www.microsoft.com/en-us/hololens/apps/fragments).*
 
 ## See also
 * [Color Separation](hologram-stability.md#color-separation)
