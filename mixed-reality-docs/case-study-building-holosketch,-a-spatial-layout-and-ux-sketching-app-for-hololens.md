@@ -123,10 +123,10 @@ Before uploading to your OneDrive folder, please follow the steps below to packa
 
    ![From the Assets menu, select ‘Build AssetBundles’ to generate file.](images/holosketch-15a-assetbundles.png)
 
-13. **Upload the generated file to the /Files/Documents/HoloSketch folder on OneDrive.** (Upload the asset_unique_name file only. You don’t need to upload manifest files or AssetBundles file.) 
+13. **Upload the generated file to the /Files/Documents/HoloSketch folder on OneDrive.** (Upload the asset_unique_name file only. You don’t need to upload manifest files or AssetBundles file.)
 
    ![Add files to Files/Documents/HoloSketch/ folder](images/holosketch-onedriveupload-1000px.png)
-
+   
    ![You will see added 3D object in HoloSketch's OneDrive menu](images/holosketch-14-onedriveexample-1000px.jpg)
 
 ## How to manipulate the objects

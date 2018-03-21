@@ -165,11 +165,11 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 <div class="row">
 <div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Flat type without a backdrop can be hard to view from certain angles and in certain environments." width="479" src="images/flattype-640px.png" /><br />*Flat type without a backdrop can be hard to view from certain angles and in certain environments*
+ <img alt="Flat type without a backdrop can be hard to view from certain angles and in certain environments." width="479" src="images/flattype-640px.png" /><br />Flat type without a backdrop can be hard to view from certain angles and in certain environments
 </div>
 </div><div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Type with a built-in backdrop can work well." width="479" src="images/flattypeandbkg-640px.png" /><br />*Type with a built-in backdrop can work well*
+ <img alt="Type with a built-in backdrop can work well." width="479" src="images/flattypeandbkg-640px.png" /><br />Type with a built-in backdrop can work well
 </div>
 </div>
 </div>
@@ -183,7 +183,7 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 <div class="row">
 <div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
- <img alt="Extruded type can work well if you shade the sides." width="479" src="images/20171016-160221-mixedreality-640px.jpg" /><br />*Extruded type can work well if you shade the sides*
+ <img alt="Extruded type can work well if you shade the sides." width="479" src="images/20171016-160221-mixedreality-640px.jpg" /><br />Extruded type can work well if you shade the sides
 </div>
 </div><div class="col-xs-24 col-md-12 col-lg-12">
 <div class="section item-section">
