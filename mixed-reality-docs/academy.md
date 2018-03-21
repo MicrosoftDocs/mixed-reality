@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Academy
-description: The Mixed Reality Academy provides tutorials on starting development and access to expert advice from those who have built the best holographic experiences.
+description: The Mixed Reality Academy provides code samples and tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
 ms.date: 2/28/2018
