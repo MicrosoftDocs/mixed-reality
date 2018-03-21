@@ -54,7 +54,7 @@ A culminating device that connects the physical world to the digital world allow
 
 For example, think about shared experiences in mixed reality like the OnSight tool NASA’s Jet Propulsion Laboratory built for scientists. Instead of building a system to look at Martian data (abstracting the data onto screens or displays), they brought scientists inside the data, effectively putting them on the surface of Mars as they collaborated.
 
-![NASA OnSight](images/nasa-onsight.jpg)
+![NASA OnSight](images/nasa-onsight.jpg)<br>
 *NASA/JPL OnSight*
 
 Instead of finding the button to draw attention to some Martian geology, scientists can point to it directly. No menus, no pens, no learning curve to using the tool effectively. By leveraging our known abilities from the physical world, more natural interactions in mixed reality can circumvent deep technical literacy in even the most advanced industry tools.
