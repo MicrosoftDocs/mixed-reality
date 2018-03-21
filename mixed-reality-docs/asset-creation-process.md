@@ -65,10 +65,10 @@ The creation process for assets is the same regardless of whether you're targeti
 ## Authoring Assets
 
 We'll start with the ways to get assets for your project:
-1. **Creating Assets** (Authoring tools and object capture)
-2. **Purchasing Assets** (Buying assets online)
-3. **Porting Assets** (Taking existing assets)
-4. **Outsourcing Assets** (Importing assets from 3rd parties)
+1. Creating Assets (Authoring tools and object capture)
+2. Purchasing Assets (Buying assets online)
+3. Porting Assets (Taking existing assets)
+4. Outsourcing Assets (Importing assets from 3rd parties)
 
 ### Creating assets
 
