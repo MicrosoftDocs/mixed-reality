@@ -100,7 +100,7 @@ Below is a recommended list of hardware, but you can experiment with other compa
 3. [Blackmagic Desktop Video Runtime](https://www.blackmagicdesign.com/support).\
  Search for Desktop Video Software Update in "Latest Downloads".\
  Ensure the version number matches the SDK version.
-4. [OpenCV 3.1](http://opencv.org/downloads.html) For calibration or video capture without the Blackmagic capture card.
+4. [OpenCV 3.1](https://opencv.org/releases.html) For calibration or video capture without the Blackmagic capture card.
 5. [Canon SDK](https://www.usa.canon.com/internet/portal/us/home/explore/solutions-services/digital-camera-sdk-information) (Optional).\
  If you are using a Canon camera and have access to the Canon SDK, you can tether your camera to your PC to take higher resolution images.
 6. Unity for your holographic app development.\
