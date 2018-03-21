@@ -14,7 +14,7 @@ keywords: app, uwp, submit, submission, filters, metadata, system requirements, 
 
 Both [HoloLens](hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens or PC (or both), you'll submit your app to the Microsoft Store through the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview).
 
-If you don't already have a Windows Dev Center account, you can [sign up today](https://dev.windows.com/en-us/programs/join).
+If you don't already have a Windows Dev Center account, you can [sign up today](https://developer.microsoft.com/en-us/store/register).
 
 ## Packaging a mixed reality app
 
