@@ -62,9 +62,8 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 </tr>
 </table>
 
-
-
-> \* These button/axis IDs differ from the IDs that Unity uses for OpenVR due to collisions in the mappings used by gamepads, Oculus Touch and OpenVR.
+>[!NOTE]
+>These button/axis IDs differ from the IDs that Unity uses for OpenVR due to collisions in the mappings used by gamepads, Oculus Touch and OpenVR.
 
 ## Grip pose vs. pointing pose
 
@@ -104,6 +103,8 @@ At this point, the system will body-lock the controller to the user, tracking th
 
 The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
+<br>
+
  >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g]
 
 ### Reasoning about tracking state explicitly
@@ -124,8 +125,6 @@ Apps that wish to treat positions differently based on tracking state may go fur
 </tr>
 </table>
 
-
-
 These motion controller tracking states are defined as follows:
 * **High accuracy:** While the motion controller is within the headset's field of view, it will generally provide high-accuracy positions, based on visual tracking. Note that a moving controller that momentarily leaves the field of view or is momentarily obscured from the headset sensors (e.g. by the user's other hand) will continue to return high-accuracy poses for a short time, based on inertial tracking of the controller itself.
 * **High accuracy (at risk of losing):** When the user moves the motion controller past the edge of the headset's field of view, the headset will soon be unable to visually track the controller's position. The app knows when the controller has reached this FOV boundary by seeing the **SourceLossRisk** reach 1.0. At that point, the app may choose to pause controller gestures that require a steady stream of very high-quality poses.
@@ -135,7 +134,6 @@ These motion controller tracking states are defined as follows:
 ## Common Unity APIs (Input.GetButton/GetAxis)
 
 **Namespace:** *UnityEngine*, *UnityEngine.XR*
-
 **Types**: *Input*, *XR.InputTracking*
 
 Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html), [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) and Windows Mixed Reality, including hands and motion controllers. If your app uses these APIs for input, it can easily support motion controllers across multiple VR SDKs, including Windows Mixed Reality.
@@ -178,7 +176,6 @@ Note that the relationship between this grip pose and the pointer pose (where th
 ## Windows-specific APIs (XR.WSA.Input)
 
 **Namespace:** *UnityEngine.XR.WSA.Input*
-
 **Types**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
 
 To get at more detailed information about Windows Mixed Reality hand input (for HoloLens) and motion controllers, you can choose to use the Windows-specific spatial input APIs under the **UnityEngine.XR.WSA.Input** namespace. This lets you access additional information, such as position accuracy or the source kind, letting you tell hands and controllers apart.
@@ -381,7 +378,6 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 ## High-level composite gesture APIs (GestureRecognizer)
 
 **Namespace:** *UnityEngine.XR.WSA.Input*
-
 **Types**: *GestureRecognizer*, *GestureSettings*, *InteractionSourceKind*
 
 Your app can also recognize higher-level composite gestures for spatial input sources, Tap, Hold, Manipulation and Navigation gestures. You can recognize these composite gestures across both [hands](gestures.md) and [motion controllers](motion-controllers.md) using the GestureRecognizer.
@@ -424,7 +420,8 @@ void Start()
 }
 ```
 
-*Note: Navigation and Manipulation gestures are mutually exclusive on an instance of a GestureRecognizer.*
+>[!NOTE]
+>Navigation and Manipulation gestures are mutually exclusive on an instance of a GestureRecognizer.
 
 ### Start capturing gestures
 
@@ -458,7 +455,8 @@ void OnDestroy()
 
 ## Rendering the motion controller model in Unity
 
-![Motion Controller model and teleportation](images/motioncontrollertest-teleport-1000px.png) 
+![Motion Controller model and teleportation](images/motioncontrollertest-teleport-1000px.png)<br>
+*Motion controller model and teleportation*
 
 If you're looking to add the motion controller models that Windows provides into your Unity project, see our samples in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/).
 
@@ -467,12 +465,12 @@ In particular, compare against the [MotionControllerTest scene](https://github.c
 The files you will need to include are:
 * [MotionControllerVisualizer.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/Utilities/MotionControllerVisualizer.cs)
 * [MotionControllerInfo.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/Utilities/MotionControllerInfo.cs)
-* [GLTFComponentStreamingAssets.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Utilities/Scripts/GLTFComponentStreamingAssets.cs)\
-
+* [GLTFComponentStreamingAssets.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Utilities/Scripts/GLTFComponentStreamingAssets.cs)
 * The entire [Utilities\Scripts\GLTF folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/Utilities/Scripts/GLTF).
 * [InteractionSourceExtensions.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/Utilities/Extensions/InteractionSourceExtensions.cs)
 
-**IMPORTANT** You will need the Windows Fall Creators Update SDK or you will not be able to build these scripts. Please install the 16299 UWP SDK.
+>[!IMPORTANT]
+>You will need the Windows 10 Fall Creators Update SDK (or later) or you will not be able to build these scripts. Please install the 16299 UWP SDK (or later).
 
 ## Throwing objects
 

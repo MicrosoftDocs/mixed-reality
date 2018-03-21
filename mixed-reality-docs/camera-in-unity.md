@@ -19,15 +19,16 @@ However, the following settings should be manually applied to the cameras in you
 * Positioning the Camera
 * Clip Planes
 
-Note: These settings need to be applied to the Camera in each scene of your app.
+>[!NOTE]
+>These settings need to be applied to the Camera in each scene of your app.
 
 By default, when you create a new scene in Unity, it will contain a Main Camera GameObject in the Hierarchy which includes the Camera component but does not have the above settings properly applied.
 
 ## Holographic rendering
 
 The default settings on the Unity Camera component are for traditional 3D applications which need a skybox-like background as they don't have a real world.
-* When running on an **immersive headset**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
-* However, when running on a **holographic headset** like HoloLens, the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
+* When running on an **[immersive headset](immersive-headset-hardware-details.md)**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
+* However, when running on a **holographic headset** like [HoloLens](hololens-hardware-details.md), the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
     1. Select the Main Camera in the Hierarchy panel
     2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
     3. Select the Background color picker and change the RGBA values to (0, 0, 0, 0)
@@ -40,7 +41,8 @@ It will be easier to lay out your app if you imagine the starting position of th
 1. Select Main Camera in the Hierarchy panel
 2. In the Inspector panel, find the Transform component and change the Position from (X: 0, Y: 1, Z: -10) to (X: 0, Y: 0, Z: 0)
 
-![Camera in the Inspector pane in Unity](images/maincamera-350px.png)
+   ![Camera in the Inspector pane in Unity](images/maincamera-350px.png)<br>
+   *Camera in the Inspector pane in Unity*
 
 ## Clip planes
 

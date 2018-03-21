@@ -22,7 +22,7 @@ To toggle the holographic splash screen, go to **Edit > Project Settings... > Pl
 * Toggling the **Show Unity Splash Screen** option will enable or disable the Unity branded splash screen. If you do not have a Unity Pro license, the Unity branded splash screen will always be displayed.
 * If a **Holographic Splash Image** is applied, it will always be displayed regardless of whether the Show Unity Splash Screen checkbox is enabled or disabled. Specifying a custom holographic splash image is only available to developers with a Unity Pro license.
 
-|  Show Unity Splash Screen  |  Holographic Splash Image  |  Behavior | 
+|  Show Unity Splash Screen  |  Holographic Splash Image  |  Behavior |
 |----------|----------|----------|
 |  On  |  None  |  Show default Unity splash screen for 5 seconds or until the app is loaded, whichever is longer. | 
 |  On  |  Custom  |  Show Custom splash screen for 5 seconds or until the app is loaded, whichever is longer. | 
@@ -35,19 +35,26 @@ A Mixed reality headset depends on seeing the environment around it to construct
 
 If a loss of tracking occurs, Unity's default behavior is to stop rendering holograms, pause the [game loop](http://docs.unity3d.com/Manual/ExecutionOrder.html)), and display a tracking lost notification that comfortably follows the users gaze. Custom notifications can also be provided in the form of a tracking loss image. For apps that depend upon tracking for their whole experience, it's sufficient to let Unity handle this entirely until tracking is regained.
 
-**Customize tracking loss image.** Developers can supply a custom image to be shown during tracking loss. To customize the tracking lost image, go to **Edit > Project Settings... > Player** page, click on the **Windows Store** tab and find the **Windows Holographic > Tracking Loss Image**.
+### Customize tracking loss image
 
-**Opt-out of automatic pause**. Some apps may not require tracking (e.g. [orientation-only apps](coordinate-systems-in-unity.md) such as 360-degree video viewers) or may need to continue processing uninterrupted while tracking is lost. In these cases, apps can opt out of the default loss of tracking behavior. Developers who choose this are responsible for hiding/disabling any objects which would not render properly in a tracking-loss scenario. In most cases, the only content that is recommended to be render in that case is body-locked content, centered around the main camera.
+Developers can supply a custom image to be shown during tracking loss. To customize the tracking lost image, go to **Edit > Project Settings... > Player** page, click on the **Windows Store** tab and find the **Windows Holographic > Tracking Loss Image**.
+
+### Opt-out of automatic pause
+
+Some apps may not require tracking (e.g. [orientation-only apps](coordinate-systems-in-unity.md) such as 360-degree video viewers) or may need to continue processing uninterrupted while tracking is lost. In these cases, apps can opt out of the default loss of tracking behavior. Developers who choose this are responsible for hiding/disabling any objects which would not render properly in a tracking-loss scenario. In most cases, the only content that is recommended to be render in that case is body-locked content, centered around the main camera.
 
 To opt out of automatic pause behavior, go to **Edit > Project Settings... > Player** page, click on the **Windows Store** tab and find the **Windows Holographic > On Tracking Loss Pause and Show Image** checkbox.
 
-**Tracking loss events.** To define custom behavior when tracking is lost, handle the global [tracking loss events](tracking-loss-in-unity.md).
+### Tracking loss events
+
+To define custom behavior when tracking is lost, handle the global [tracking loss events](tracking-loss-in-unity.md).
 
 ## Capabilities
 
 For an app to take advantage of certain functionality, it must declare the appropriate capabilities in its manifest. The manifest declarations can be made in Unity so they are included in every subsequent project export. The setting are found in **Player Settings > Windows Store > Publishing Settings > Capabilities**. The applicable capabilities for enabling the commonly used APIs for Holographic apps are:
+<br>
 
-|  Capability  |  APIs requiring capability | 
+|  Capability  |  APIs requiring capability |
 |----------|----------|
 |  SpatialPerception  |  SurfaceObserver | 
 |  WebCam  |  PhotoCapture and VideoCapture | 
