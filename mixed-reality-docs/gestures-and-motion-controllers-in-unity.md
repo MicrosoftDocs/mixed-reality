@@ -458,19 +458,10 @@ void OnDestroy()
 ![Motion Controller model and teleportation](images/motioncontrollertest-teleport-1000px.png)<br>
 *Motion controller model and teleportation*
 
-If you're looking to add the motion controller models that Windows provides into your Unity project, see our samples in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/).
+To render motion controllers in your app that match the physical controllers your users are holding and articulate as various buttons are pressed, you can use the **MotionController prefab** in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/).  This prefab dynamically loads the correct glTF model at runtime from the system's installed motion controller driver.  It's important to load these models dynamically rather than importing them manually in the editor, so that your app will show physically accurate 3D models for any current and future controllers your users may have.
 
-In particular, compare against the [MotionControllerTest scene](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity).
-
-The files you will need to include are:
-* [MotionControllerVisualizer.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/Utilities/MotionControllerVisualizer.cs)
-* [MotionControllerInfo.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/Utilities/MotionControllerInfo.cs)
-* [GLTFComponentStreamingAssets.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Utilities/Scripts/GLTFComponentStreamingAssets.cs)
-* The entire [Utilities\Scripts\GLTF folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/Utilities/Scripts/GLTF).
-* [InteractionSourceExtensions.cs](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/Utilities/Extensions/InteractionSourceExtensions.cs)
-
->[!IMPORTANT]
->You will need the Windows 10 Fall Creators Update SDK (or later) or you will not be able to build these scripts. Please install the 16299 UWP SDK (or later).
+1. Follow the [Getting Started](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/GettingStarted.md) instructions to download the Mixed Reality Toolkit and add it to your Unity project.
+2. If you replaced your camera with the MixedRealityCameraParent prefab as part of the Getting Started steps, you're good to go!  That prefab includes motion controller rendering.  Otherwise, add *Assets/HoloToolkit/Input/Prefabs/MotionControllers.prefab* into your scene from the Project pane.  You'll want to add that prefab as a child of whatever parent object you use to move the camera around when the user teleports within your scene, so that the controllers come along with the user.  If your app does not involve teleporting, just add the prefab at the root of your scene.
 
 ## Throwing objects
 
