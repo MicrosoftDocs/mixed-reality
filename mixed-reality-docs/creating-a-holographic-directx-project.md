@@ -35,7 +35,8 @@ Once the tools are installed you can then create a holographic DirectX project. 
 4. Navigate to the **Windows > Universal > Holographic** node and select **Holographic DirectX 11 App (Universal Windows)**.
 5. Fill in the **Name** and **Location** text boxes, and click or tap **OK**. The holographic app project is created.
 
-![Screenshot of the holographic app project template in Visual Studio](images/holographic-directx-app-cpp-new-project.png)
+![Screenshot of the holographic app project template in Visual Studio](images/holographic-directx-app-cpp-new-project.png)<br>
+*Holographic app project template in Visual Studio*
 
 Review [Using Visual Studio to deploy and debug](using-visual-studio.md) for information on how to build and deploy the sample to your HoloLens, PC with immersive device attached, or an emulator.
 

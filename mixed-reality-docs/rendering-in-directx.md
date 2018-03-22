@@ -226,7 +226,8 @@ for (auto cameraPose : prediction->CameraPoses)
 }
 ```
 
-**Note:** Windows will process your depth texture on the GPU, so it must be possible to use your depth buffer as a shader resource. The ID3D11Texture2D that you create should be in a typeless format and it should be bound as a shader resource view. Here is an example of how to create a depth texture that can be committed for image stabilization.
+>[!NOTE]
+>Windows will process your depth texture on the GPU, so it must be possible to use your depth buffer as a shader resource. The ID3D11Texture2D that you create should be in a typeless format and it should be bound as a shader resource view. Here is an example of how to create a depth texture that can be committed for image stabilization.
 
 
 Code for **Depth buffer resource creation for CommitDirect3D11DepthBuffer**
@@ -498,7 +499,7 @@ cbuffer ViewProjectionConstantBuffer : register(b1)
 The render target array index must be set for each pixel. In the following snippet, output.rtvId is mapped to the **SV_RenderTargetArrayIndex** semantic. Note that this requires support for an optional Direct3D 11.3 feature, which allows the render target array index semantic to be set from any shader stage.
 
 
-From **VPRTVertexShader.hls**
+From **VPRTVertexShader.hlsl**
 
 ```
 // Per-vertex data used as input to the vertex shader.
@@ -506,7 +507,7 @@ struct VertexShaderInput
 {
     min16float3 pos     : POSITION;
     min16float3 color   : COLOR0;
-    '''uint        instId  : SV_InstanceID;'''
+    uint        instId  : SV_InstanceID;
 };
     
 // Per-vertex data passed to the geometry shader.
@@ -515,14 +516,14 @@ struct VertexShaderOutput
 {
     min16float4 pos     : SV_POSITION;
     min16float3 color   : COLOR0;
-    '''uint        rtvId   : SV_RenderTargetArrayIndex; // SV_InstanceID % 2'''
+    uint        rtvId   : SV_RenderTargetArrayIndex; // SV_InstanceID % 2
 };
    
 // ...
     
 int idx = input.instId % 2;
 // Set the render target array index.
-'''output.rtvId = idx;'''
+output.rtvId = idx;
 ```
 
 If you want to use your existing instanced drawing techniques with this method of drawing to a stereo render target array, all you have to do is draw twice the number of instances you normally have. In the shader, divide **input.instId** by 2 to get the original instance ID, which can be indexed into (for example) a buffer of per-object data: `int actualIdx = input.instId / 2;`
@@ -589,7 +590,7 @@ context->DrawIndexedInstanced(
 
 Setting the render target array index in the vertex shader requires that the graphics driver supports an optional Direct3D 11.3 feature, which HoloLens does support. Your app may be able to safely implement just that technique for rendering, and all requirements will be met for running on the Microsoft HoloLens.
 
-It may be the case that you want to use the HoloLens emulator as well, which can be a powerful development tool for your holographic app &#151; and support Windows Mixed Reality immersive headset devices that are attached to Windows 10 PCs. Support for the non-HoloLens rendering path &#151; and therefore, for all of Windows Mixed Reality &#151; is also built into the Windows Holographic app template. In the template code, you will find code to enable your holographic app to run on the GPU in your development PC. Here is how the **DeviceResources** class checks for this optional feature support.
+It may be the case that you want to use the HoloLens emulator as well, which can be a powerful development tool for your holographic app - and support Windows Mixed Reality immersive headset devices that are attached to Windows 10 PCs. Support for the non-HoloLens rendering path - and therefore, for all of Windows Mixed Reality - is also built into the Windows Holographic app template. In the template code, you will find code to enable your holographic app to run on the GPU in your development PC. Here is how the **DeviceResources** class checks for this optional feature support.
 
 
 From **DeviceResources::CreateDeviceResources**

@@ -16,7 +16,8 @@ Unity exposes three ways to add [Voice input](voice-input.md) to your Unity appl
 
 With the KeywordRecognizer (one of two types of PhraseRecognizers), your app can be given an array of string commands to listen for. With the GrammarRecognizer (the other type of PhraseRecognizer), your app can be given an SRGS file defining a specific grammar to listen for. With the DictationRecognizer, your app can listen for any word and provide the user with a note or other display of their speech.
 
-**NOTE:** Only dictation or phrase recognition can be handled at once. That means if a GrammarRecognizer or KeywordRecognizer is active, a DictationRecognizer can not be active and vice versa.
+>[!NOTE]
+>Only dictation or phrase recognition can be handled at once. That means if a GrammarRecognizer or KeywordRecognizer is active, a DictationRecognizer can not be active and vice versa.
 
 ## Enabling the capability for Voice
 
@@ -34,7 +35,6 @@ To enable your app to listen for specific phrases spoken by the user then take s
 ### KeywordRecognizer
 
 **Namespace:** *UnityEngine.Windows.Speech*
-
 **Types:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus* We'll need a few using statements to save some keystrokes:
 
 ```
@@ -95,7 +95,6 @@ keywordRecognizer.Start();
 ### GrammarRecognizer
 
 **Namespace:** *UnityEngine.Windows.Speech*
-
 **Types**: *GrammarRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 The GrammarRecognizer is used if you're specifying your recognition grammar using SRGS. This can be useful if your app has more than just a few keywords, if you want to recognize more complex phrases, or if you want to easily turn on and off sets of commands. See: [Create Grammars Using SRGS XML](https://msdn.microsoft.com/en-us/library/hh378349(v=office.14).aspx) for file format information.
@@ -138,7 +137,6 @@ grammarRecognizer.Start();
 ## Dictation
 
 **Namespace:** *UnityEngine.Windows.Speech*
-
 **Types**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
 Use the DictationRecognizer to convert the user's speech to text. The DictationRecognizer exposes [dictation](voice-input.md#dictation) functionality and supports registering and listening for hypothesis and phrase completed events, so you can give feedback to your user both while they speak and afterwards. Start() and Stop() methods respectively enable and disable dictation recognition. Once done with the recognizer, it should be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.
@@ -265,8 +263,8 @@ dictationRecognizer.Dispose();
 * Start() and Stop() methods respectively enable and disable dictation recognition.
 * Once done with the recognizer, it must be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.
 * Timeouts occur after a set period of time. You can check for these timeouts in the DictationComplete event. There are two timeouts to be aware of:
-1. If the recognizer starts and doesn't hear any audio for the first five seconds, it will timeout.
-2. If the recognizer has given a result but then hears silence for twenty seconds, it will timeout.
+   1. If the recognizer starts and doesn't hear any audio for the first five seconds, it will timeout.
+   2. If the recognizer has given a result but then hears silence for twenty seconds, it will timeout.
 
 ## Using both Phrase Recognition and Dictation
 
