@@ -56,77 +56,30 @@ Your 3D app launcher should instantly express “your app’s brand” to people
 
 Your app deserves more than just putting your logo on a flat plane and calling it a day. Your launcher should feel like an exciting, 3D, physical object in the user’s space. A good approach is to imagine your app was going to have a balloon in the Macy’s Thanksgiving Day Parade. Ask yourself, what would really wow people as it came down the street? What would look great from all viewing angles?
 
-<table>
-<tr>
-<th>Logo only</th>
-<th>More recognizable with a character</th>
-</tr>
-<tr>
-<td>
-<img alt="Logo only" width="479" src="images/20171016-140436-mixedreality-640px.jpg" />
-</td>
-<td>
-<img alt="More recognizable with a character" width="479" src="images/20171016-140557-mixedreality-640px.jpg" />
-</td>
-</tr>
-</table>
 
-<table>
-<tr>
-<th>Flat approach, not surprisingly, feels flat</th>
-<th>Volumetric approach better showcases your app</th>
-</tr>
-<tr>
-<td>
-<img alt="Flat approach, not surprisingly, feels flat" width="479" src="images/20171016-155101-mixedreality-640px.jpg" />
-</td>
-<td>
-<img alt="Volumetric approach better showcases your app" width="479" src="images/20171016-161407-mixedreality-640px.jpg" />
-</td>
-</tr>
-</table>
-
-<!-- <div class="row">
-<div class="col-xs-24">
-<div class="section remove-header-rule spacer-32-bottom">
-<div class="row">
-<div class="col-xs-24 col-md-12 col-lg-12">
-<div class="section item-section">
- <img alt="Logo only" width="479" src="images/20171016-140436-mixedreality-640px.jpg" /><br />Logo only
-</div>
-</div>
-<br/>
-<div class="col-xs-24 col-md-12 col-lg-12">
-<div class="section item-section">
- <img alt="More recognizable with a character" width="479" src="images/20171016-140557-mixedreality-640px.jpg" /><br />More recognizable with a character
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+:::row:::
+    :::column:::
+        ![Logo only](images/20171016-140436-mixedreality-640px.jpg)
+        *Logo only*
+    :::column-end:::
+    :::column:::
+        ![More recognizable with a character](images/20171016-140557-mixedreality-640px.jpg)
+        *More recognizable with a character*
+    :::column-end:::
+:::row-end:::
 
 
+:::row:::
+    :::column:::
+        ![Flat approach, not surprisingly, feels flat](images/20171016-155101-mixedreality-640px.jpg)
+        *Flat approach, not surprisingly, feels flat*
+    :::column-end:::
+    :::column:::
+        ![Volumetric approach better showcases your app](images/20171016-161407-mixedreality-640px.jpg)
+        *Volumetric approach better showcases your app*
+    :::column-end:::
+:::row-end:::
 
-<div class="row">
-<div class="col-xs-24">
-<div class="section remove-header-rule spacer-32-bottom">
-<div class="row">
-<div class="col-xs-24 col-md-12 col-lg-12">
-<div class="section item-section">
- <img alt="Flat approach, not surprisingly, feels flat" width="479" src="images/20171016-155101-mixedreality-640px.jpg" /><br />Flat approach, not surprisingly, feels flat
-</div>
-</div>
-<br/>
-<div class="col-xs-24 col-md-12 col-lg-12">
-<div class="section item-section">
- <img alt="Volumetric approach better showcases your app" width="479" src="images/20171016-161407-mixedreality-640px.jpg" /><br />Volumetric approach better showcases your app
-</div>
-</div>
-</div>
-</div>
-</div>
-</div> -->
 
 ## Tips for good 3D models
 
@@ -159,41 +112,22 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 * Flat type can work, but be aware that it can be hard to view from certain angles and in certain environments. You might consider putting it a solid object or backdrop behind it to help with this.
 * Adding dimension to your type feels nice in 3D. Shading the sides of the type a different, darker color can help with readability.
 
-<div class="row">
-<div class="col-xs-24">
-<div class="section remove-header-rule spacer-32-bottom">
-<div class="row">
-<div class="col-xs-24 col-md-12 col-lg-12">
-<div class="section item-section">
- <img alt="Flat type without a backdrop can be hard to view from certain angles and in certain environments." width="479" src="images/flattype-640px.png" /><br />Flat type without a backdrop can be hard to view from certain angles and in certain environments
-</div>
-</div><div class="col-xs-24 col-md-12 col-lg-12">
-<div class="section item-section">
- <img alt="Type with a built-in backdrop can work well." width="479" src="images/flattypeandbkg-640px.png" /><br />Type with a built-in backdrop can work well
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
-<div class="row">
-<div class="col-xs-24">
-<div class="section remove-header-rule spacer-32-bottom">
-<div class="row">
-<div class="col-xs-24 col-md-12 col-lg-12">
-<div class="section item-section">
- <img alt="Extruded type can work well if you shade the sides." width="479" src="images/20171016-160221-mixedreality-640px.jpg" /><br />Extruded type can work well if you shade the sides
-</div>
-</div><div class="col-xs-24 col-md-12 col-lg-12">
-<div class="section item-section">
+:::row:::
+    :::column:::
+        ![Flat type without a backdrop can be hard to view from certain angles and in certain environments](images/flattype-640px.png)
+        *Flat type without a backdrop can be hard to view from certain angles and in certain environments*
+    :::column-end:::
+    :::column:::
+        ![Type with a built-in backdrop can work well](images/flattypeandbkg-640px.png)
+        *Type with a built-in backdrop can work well*
+    :::column-end:::
+    :::column:::
+        ![Extruded type can work well if you shade the sides](images/20171016-160221-mixedreality-640px.jpg)
+        *Extruded type can work well if you shade the sides*
+    :::column-end:::
+:::row-end:::
 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 **Type colors that work**
 * White

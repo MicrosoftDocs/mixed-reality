@@ -67,6 +67,7 @@ Regardless of the type of app you're building, these tools will facilitate your 
 * [Windows Device Portal](using-the-windows-device-portal.md)
 * [HoloLens emulator](using-the-hololens-emulator.md)
 * [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md)
+* [App quality criteria](app-quality-criteria.md)
 
 ## See also
 * [Install the tools](install-the-tools.md)

@@ -23,7 +23,7 @@ Only a single operation can occur with the camera at a time. To determine which 
 
 ## Photo Capture
 
-**Namespace:** *UnityEngine.VR.WSA.WebCam*
+**Namespace:** *UnityEngine.VR.WSA.WebCam*<br>
 **Type:** *PhotoCapture*
 
 The PhotoCapture type allows you to take still photographs with the Photo Video Camera. The general pattern for using PhotoCapture to take a photo is as follows:
@@ -199,7 +199,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ## Video Capture
 
-**Namespace:** *UnityEngine.VR.WSA.WebCam*
+**Namespace:** *UnityEngine.VR.WSA.WebCam*<br>
 **Type:** *VideoCapture*
 
 VideoCapture functions very similarly to PhotoCapture. The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file. The steps to use VideoCapture are as follows:

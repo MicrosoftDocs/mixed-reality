@@ -16,7 +16,7 @@ A shared experience is one where multiple users, each with their own HoloLens, c
 
 ## Anchor Sharing
 
-**Namespace:** *UnityEngine.VR.WSA.Sharing*
+**Namespace:** *UnityEngine.VR.WSA.Sharing*<br>
 **Type**: *WorldAnchorTransferBatch*
 
 To share a [WorldAnchor](coordinate-systems-in-unity.md), one must establish the anchor to be shared. The user of one HoloLens scans their environment and either manually or programmatically chooses a point in space to be the Anchor for the shared experience. The data that represents this point can then be serialized and transmitted to the other devices that are sharing in the experience. Each device then de-serializes the anchor data and attempts to locate that point in space. In order for Anchor Sharing to work, each device must have scanned in enough of the environment such that the point represented by the anchor can be identified.
