@@ -499,7 +499,7 @@ cbuffer ViewProjectionConstantBuffer : register(b1)
 The render target array index must be set for each pixel. In the following snippet, output.rtvId is mapped to the **SV_RenderTargetArrayIndex** semantic. Note that this requires support for an optional Direct3D 11.3 feature, which allows the render target array index semantic to be set from any shader stage.
 
 
-From **VPRTVertexShader.hls**
+From **VPRTVertexShader.hlsl**
 
 ```
 // Per-vertex data used as input to the vertex shader.
@@ -507,7 +507,7 @@ struct VertexShaderInput
 {
     min16float3 pos     : POSITION;
     min16float3 color   : COLOR0;
-    '''uint        instId  : SV_InstanceID;'''
+    uint        instId  : SV_InstanceID;
 };
     
 // Per-vertex data passed to the geometry shader.
@@ -516,14 +516,14 @@ struct VertexShaderOutput
 {
     min16float4 pos     : SV_POSITION;
     min16float3 color   : COLOR0;
-    '''uint        rtvId   : SV_RenderTargetArrayIndex; // SV_InstanceID % 2'''
+    uint        rtvId   : SV_RenderTargetArrayIndex; // SV_InstanceID % 2
 };
    
 // ...
     
 int idx = input.instId % 2;
 // Set the render target array index.
-'''output.rtvId = idx;'''
+output.rtvId = idx;
 ```
 
 If you want to use your existing instanced drawing techniques with this method of drawing to a stereo render target array, all you have to do is draw twice the number of instances you normally have. In the shader, divide **input.instId** by 2 to get the original instance ID, which can be indexed into (for example) a buffer of per-object data: `int actualIdx = input.instId / 2;`
