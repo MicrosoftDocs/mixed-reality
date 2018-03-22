@@ -12,8 +12,8 @@ keywords: HoloLens, persistence, Unity
 
 # Persistence in Unity
 
-**Namespace:** *UnityEngine.WSA.VR.Persistence*\
- **Class:** *WorldAnchorStore*
+**Namespace:** *UnityEngine.WSA.VR.Persistence*<br>
+**Class:** *WorldAnchorStore*
 
 The WorldAnchorStore is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. This lets your users pin individual holograms or a workspace wherever they want it, and then find it later where they expect over many uses of your app.
 
