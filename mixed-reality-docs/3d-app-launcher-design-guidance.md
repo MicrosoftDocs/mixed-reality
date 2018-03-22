@@ -116,15 +116,15 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 :::row:::
     :::column:::
         ![Flat type without a backdrop can be hard to view from certain angles and in certain environments](images/flattype-640px.png)
-        *Flat type without a backdrop can be hard to view from certain angles and in certain environments.*
+        *Flat type without a backdrop can be hard to view from certain angles and in certain environments*
     :::column-end:::
     :::column:::
         ![Type with a built-in backdrop can work well](images/flattypeandbkg-640px.png)
-        *Type with a built-in backdrop can work well.*
+        *Type with a built-in backdrop can work well*
     :::column-end:::
     :::column:::
         ![Extruded type can work well if you shade the sides](images/20171016-160221-mixedreality-640px.jpg)
-        *Extruded type can work well if you shade the sides.*
+        *Extruded type can work well if you shade the sides*
     :::column-end:::
 :::row-end:::
 
