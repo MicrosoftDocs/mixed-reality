@@ -34,7 +34,7 @@ To enable your app to listen for specific phrases spoken by the user then take s
 
 ### KeywordRecognizer
 
-**Namespace:** *UnityEngine.Windows.Speech*
+**Namespace:** *UnityEngine.Windows.Speech*<br>
 **Types:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus* We'll need a few using statements to save some keystrokes:
 
 ```
@@ -94,7 +94,7 @@ keywordRecognizer.Start();
 
 ### GrammarRecognizer
 
-**Namespace:** *UnityEngine.Windows.Speech*
+**Namespace:** *UnityEngine.Windows.Speech*<br>
 **Types**: *GrammarRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 The GrammarRecognizer is used if you're specifying your recognition grammar using SRGS. This can be useful if your app has more than just a few keywords, if you want to recognize more complex phrases, or if you want to easily turn on and off sets of commands. See: [Create Grammars Using SRGS XML](https://msdn.microsoft.com/en-us/library/hh378349(v=office.14).aspx) for file format information.
@@ -136,7 +136,7 @@ grammarRecognizer.Start();
 
 ## Dictation
 
-**Namespace:** *UnityEngine.Windows.Speech*
+**Namespace:** *UnityEngine.Windows.Speech*<br>
 **Types**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
 Use the DictationRecognizer to convert the user's speech to text. The DictationRecognizer exposes [dictation](voice-input.md#dictation) functionality and supports registering and listening for hypothesis and phrase completed events, so you can give feedback to your user both while they speak and afterwards. Start() and Stop() methods respectively enable and disable dictation recognition. Once done with the recognizer, it should be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.

@@ -133,7 +133,7 @@ These motion controller tracking states are defined as follows:
 
 ## Common Unity APIs (Input.GetButton/GetAxis)
 
-**Namespace:** *UnityEngine*, *UnityEngine.XR*
+**Namespace:** *UnityEngine*, *UnityEngine.XR*<br>
 **Types**: *Input*, *XR.InputTracking*
 
 Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html), [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) and Windows Mixed Reality, including hands and motion controllers. If your app uses these APIs for input, it can easily support motion controllers across multiple VR SDKs, including Windows Mixed Reality.
@@ -175,7 +175,7 @@ Note that the relationship between this grip pose and the pointer pose (where th
 
 ## Windows-specific APIs (XR.WSA.Input)
 
-**Namespace:** *UnityEngine.XR.WSA.Input*
+**Namespace:** *UnityEngine.XR.WSA.Input*<br>
 **Types**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
 
 To get at more detailed information about Windows Mixed Reality hand input (for HoloLens) and motion controllers, you can choose to use the Windows-specific spatial input APIs under the **UnityEngine.XR.WSA.Input** namespace. This lets you access additional information, such as position accuracy or the source kind, letting you tell hands and controllers apart.
@@ -377,7 +377,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 
 ## High-level composite gesture APIs (GestureRecognizer)
 
-**Namespace:** *UnityEngine.XR.WSA.Input*
+**Namespace:** *UnityEngine.XR.WSA.Input*<br>
 **Types**: *GestureRecognizer*, *GestureSettings*, *InteractionSourceKind*
 
 Your app can also recognize higher-level composite gestures for spatial input sources, Tap, Hold, Manipulation and Navigation gestures. You can recognize these composite gestures across both [hands](gestures.md) and [motion controllers](motion-controllers.md) using the GestureRecognizer.

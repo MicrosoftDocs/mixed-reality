@@ -12,8 +12,7 @@ keywords: keyboard, input, unity, touchscreenkeyboard
 
 # Keyboard input in Unity
 
-**Namespace:** *UnityEngine*
-
+**Namespace:** *UnityEngine*<br>
  **Type**: [TouchScreenKeyboard](http://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)
 
 While HoloLens supports many forms of input including Bluetooth keyboards, most applications cannot assume that all users will have a physical keyboard available. If your application requires text input, some form of on screen keyboard should be provided.
