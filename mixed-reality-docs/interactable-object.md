@@ -44,25 +44,25 @@ In Windows Mixed Reality, you can find the examples of visualizing different inp
 
 ## Interactable object samples
 
-**Mesh button**
+### Mesh button
 
 ![Mesh button](images/640px-interactibleobject-meshbutton.jpg)
 
 These are examples using primitives and imported 3D meshes as Interactable objects. You can easily assign different scale, offset and color values to respond to each input interaction state.
 
-**Toolbar**
+### Toolbar
 
 ![Toolbar](images/640px-interactibleobject-toolbar.jpg)
 
 A toolbar is a widely used pattern in mixed reality experiences. It is a simple collection of buttons with additional behaviors such as [Billboarding and tag-along](billboarding-and-tag-along.md). This example uses a Billboarding and tag-along script from the MixedRealityToolkit. You can control detailed behaviors including distance, moving speed and threshold values.
 
-**Traditional button**
+**Traditional button
 
 ![Traditional button](images/640px-interactibleobject-traditionalbutton.jpg)
 
 This example shows a traditional 2D style button. Each input state has a slightly different depth and animation property.
 
-**Other examples**
+### Other examples
 
 ![Push button](images/640px-interactibleobject-pushbutton.jpg)<br>
 *Push button*
