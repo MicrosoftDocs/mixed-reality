@@ -58,7 +58,7 @@ You may add both components to your app if you'd like to both visualize and inte
 
 To use these two components in your Unity app:
 1. Select a GameObject at the center of the area in which you'd like to detect spatial surface meshes.
-2. In the Inspector window, **Add Component** > **AR** > **Spatial Mapping Collider** or **Spatial Mapping Renderer**.
+2. In the Inspector window, **Add Component** > **XR** > **Spatial Mapping Collider** or **Spatial Mapping Renderer**.
 
 You can find more details on how to use these components at the [Unity documentation site](https://docs.unity3d.com/Manual/windowsholographic-sm-component.html).
 
