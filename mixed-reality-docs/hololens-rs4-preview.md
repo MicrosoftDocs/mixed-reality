@@ -1,6 +1,6 @@
 ---
 title: HoloLens RS4 Preview
-description: Learn more about the RS4 preview build for HoloLens, including: how to install the preview, a description of the new features included, and how to provide feedback and get support.
+description: Learn more about the RS4 preview build for HoloLens, including how to install the preview, a description of the new features included, and how to provide feedback and get support.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/23/2018
