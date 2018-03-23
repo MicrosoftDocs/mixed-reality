@@ -42,35 +42,35 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
 3. Flash the OS Preview Build using the Windows Device Recovery Tool:
    a. Launch Windows Device Recovery Tool from your Start menu or Desktop shortcut.
    
-   ![XXX](images/WDRT314-RS4Preview-1.png)
+   ![WDRT shortcut](images/WDRT314-RS4Preview-1.png)
    
    b. Plug in your HoloLens device, and then select **Microsoft HoloLens** to continue.
    
-   ![XXX](images/WDRT314-RS4Preview-2.png)
+   ![Device selection](images/WDRT314-RS4Preview-2.png)
    
    c. Select **Manual package selection** to select a custom OS image to use, then navigate to the .FFU file provided as part of the [Preview package](#downloading-the-hololens-rs4-preview-package).
    
-   ![XXX](images/WDRT314-RS4Preview-3.png)
+   ![Manual package selection](images/WDRT314-RS4Preview-3.png)
    
    d. Confirm that the correct package is listed, and then select **Install software** to begin the OS installation.
    
-   ![XXX](images/WDRT314-RS4Preview-4.png)
+   ![Install software](images/WDRT314-RS4Preview-4.png)
    
-   e. WARNING: this process will erase all the content on your HoloLens device; confirm by selecting **Continue**.
+   e. **WARNING:** this process will erase all the content on your HoloLens device; confirm by selecting **Continue**.
    
-   ![XXX](images/WDRT314-RS4Preview-5.png)
+   ![Warning](images/WDRT314-RS4Preview-5.png)
    
    f. The installation process will take a few minutes, during which a progress bar will be displayed on-screen.
    
-   ![XXX](images/WDRT314-RS4Preview-6.png)
+   ![Installation progress](images/WDRT314-RS4Preview-6.png)
    
    g. Once installation is complete, your device will reboot; select **Finish** to complete the process.
    
-   ![XXX](images/WDRT314-RS4Preview-7.png)
+   ![Finish](images/WDRT314-RS4Preview-7.png)
    
    h. You can confirm the new OS version on your device by selecting your device again in the tool, and verifying on the **Device info** page.
    
-   ![XXX](images/WDRT314-RS4Preview-8.png)
+   ![Device info](images/WDRT314-RS4Preview-8.png)
 
 4. Go through the HoloLens on-device OOBE setup flow. Sign-in with your personal or work account to experience all the features of this Preview.
 
