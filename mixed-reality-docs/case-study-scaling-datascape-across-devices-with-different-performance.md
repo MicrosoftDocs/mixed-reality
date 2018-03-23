@@ -280,7 +280,7 @@ By measuring the time spent rendering and comparing it to our desired refresh-ra
 
 When close to dropping frames, we adapt our rendering to make it faster. One simple way of adapting is changing the viewport size of the screen, requiring less pixels to get rendered.
 
-By using *UnityEngine.XR.VRSettings.renderViewportScale* the system shrinks the targeted viewport and automatically stretches the result back up to fit the screen. A small change in scale is barely noticeable on world geometry, and a scale factor of 0.7 requires half the amount of pixels to be rendered.
+By using *UnityEngine.XR.XRSettings.renderViewportScale* the system shrinks the targeted viewport and automatically stretches the result back up to fit the screen. A small change in scale is barely noticeable on world geometry, and a scale factor of 0.7 requires half the amount of pixels to be rendered.
 
 ![70% scale, half the pixels](images/datascape-scaling-700px.jpg)
 
