@@ -28,13 +28,13 @@ XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 **Namespace:** *UnityEngine.XR*<br>
 **Type:** *InputTracking*
 
-For a pure **orientation-only experience** such as a 360-degree video viewer (where positional head updates would ruin the illusion), you can then set [XR.InputTracking.disablePositionalTracking](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking-disablePositionalTracking.html) to true:
+For a pure **orientation-only experience** such as a 360-degree video viewer (where positional head updates would ruin the illusion), you can then set [XR.InputTracking.disablePositionalTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking-disablePositionalTracking.html) to true:
 
 ```cs
 InputTracking.disablePositionalTracking = true;
 ```
 
-For a **seated-scale experience**, to let the user later recenter the seated origin, you can call the [XR.InputTracking.Recenter](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.Recenter.html) method:
+For a **seated-scale experience**, to let the user later recenter the seated origin, you can call the [XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) method:
 
 ```cs
 InputTracking.Recenter();
