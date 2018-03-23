@@ -16,7 +16,7 @@ This topic describes how to use Spatial Sound in your Unity projects. It covers 
 
 ## Enabling Spatial Sound in Unity
 
-Spatial Sound, in Unity, is enabled using an audio spatializer plugin. The plugin files are bundled directly into Unity so enabling spatial sound is as easy as going to **Edit > Audio > Spatializer** and enabling the Microsoft HRTF extension. Since Microsoft Spatial Sound only supports 48000 currently, you should also set your System Sample Rate to 48000 to prevent an HRTF failure in the rare case that your system output device is not set to 48000 already:
+Spatial Sound, in Unity, is enabled using an audio spatializer plugin. The plugin files are bundled directly into Unity so enabling spatial sound is as easy as going to **Edit > Project Settings > Audio** and changing the **Spatializer Plugin** in the Inspector to the **MS HRTF Spatializer**. Since the Microsoft spatializer only supports 48000Hz currently, you should also set your System Sample Rate to 48000 to prevent an HRTF failure in the rare case that your system output device is not set to 48000 already:
 
 ![Inspector for AudioManager](images/audio-250px.png)<br>
 *Inspector for AudioManager*
