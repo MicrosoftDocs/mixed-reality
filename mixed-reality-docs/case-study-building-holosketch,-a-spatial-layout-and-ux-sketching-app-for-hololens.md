@@ -128,7 +128,7 @@ Before uploading to your OneDrive folder, please follow the steps below to packa
    ![Add files to Files/Documents/HoloSketch/ folder](images/holosketch-onedriveupload-1000px.png)
    
    ![You will see added 3D object in HoloSketch's OneDrive menu](images/holosketch-14-onedriveexample-1000px.jpg)
-
+   
 ## How to manipulate the objects
 
 HoloSketch supports the traditional interface that is widely used in 3D software. You can use move, rotate, scale the objects with gestures and a mouse. You can quickly switch between different modes with voice or keyboard.
