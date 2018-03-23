@@ -36,7 +36,7 @@ void Update()
     // plane.
     var normal = -Camera.main.transform.forward;     
     var position = focusedObject.transform.position;
-    UnityEngine.VR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal);
+    UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal);
 }
 ```
 

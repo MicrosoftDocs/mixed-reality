@@ -24,7 +24,7 @@ By default, the update loop of the app as well as all messages and events will s
 
 To manually handle tracking loss, you need to go to Edit > Project Settings > Player > Universal Windows Platform settings tab > Windows Holographic and uncheck "On Tracking Loss Pause and Show Image". After which, you need to handle tracking changes with the APIs specified below.
 
-**Namespace:** *UnityEngine.VR.WSA*<br>
+**Namespace:** *UnityEngine.XR.WSA*<br>
 **Type:** *WorldManager*
 
 * World Manager exposes an event to detect tracking lost/gained (WorldManager.OnPositionalLocatorStateChanged) and a property to query the current state (WorldManager.state)
@@ -39,7 +39,7 @@ The most important state is PositionalLocatorState.Active which means tracking i
 ```cs
 void Update()
 {
-    switch (UnityEngine.VR.WSA.WorldManager.state)
+    switch (UnityEngine.XR.WSA.WorldManager.state)
     {
         case PositionalLocatorState.Active:
             // handle active
@@ -62,7 +62,7 @@ Alternatively and more conveniently, you can also subscribe to OnPositionalLocat
 ```cs
 void Start()
 {
-    UnityEngine.VR.WSA.WorldManager.OnPositionalLocatorStateChanged += WorldManager_OnPositionalLocatorStateChanged;
+    UnityEngine.XR.WSA.WorldManager.OnPositionalLocatorStateChanged += WorldManager_OnPositionalLocatorStateChanged;
 }
 
 private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState oldState, PositionalLocatorState newState)

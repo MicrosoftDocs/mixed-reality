@@ -12,8 +12,6 @@ keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component
 
 # Spatial mapping in Unity
 
-**Namespace:** *UnityEngine.VR.WSA.SurfaceObserver*<br>
-
 This topic describes how to use [spatial mapping](spatial-mapping.md) in your Unity project, retrieving triangle meshes that represent the surfaces in the world around a HoloLens device, for placement, occlusion, room analysis and more.
 
 Unity includes full support for spatial mapping, which is exposed to developers in the following ways:
@@ -74,7 +72,7 @@ These components make it drag-and-drop easy to get started with Spatial Mapping.
 
 If you need more control than you get from the Spatial Mapping Renderer and Spatial Mapping Collider components, you can use the low-level Spatial Mapping script APIs.
 
-**Namespace:** *UnityEngine.VR.WSA*<br>
+**Namespace:** *UnityEngine.XR.WSA*<br>
 **Types**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *SurfaceId*
 
 The following is an outline of the suggested flow for an application that uses the spatial mapping APIs.
