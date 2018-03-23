@@ -134,11 +134,11 @@ Building on the application from chapter 1, we will add functionality to allow t
 
 **Script 1 - GamepadInput.cs**
 
-In the project panel navigate to **Assets\HoloToolkit\Input\Scripts\InputSources** and double click **GamepadInput.cs** to open it. From the same path in the project panel, also double click **GesturesInput.cs**.
+In the project panel navigate to **Assets\HoloToolkit\Input\Scripts\InputSources** and double click **GamepadInput.cs** to open it. From the same path in the project panel, also double click **InteractionSourceInputSource.cs**.
 
 Note that both scripts have a common base class, BaseInputSource.
 
-BaseInputSource keeps a reference to an InputManager, which allows a script to trigger events. In this case, the InputClicked event is relevant. This will be important to remember when we get to script 2, TapToPlace. In the case of GamePadInput, we poll for the A button on the controller to be pressed, then we raise the InputClicked event. In the case of GesturesInput, we raise the InputClicked event in response to the TappedEvent.
+BaseInputSource keeps a reference to an InputManager, which allows a script to trigger events. In this case, the InputClicked event is relevant. This will be important to remember when we get to script 2, TapToPlace. In the case of GamePadInput, we poll for the A button on the controller to be pressed, then we raise the InputClicked event. In the case of InteractionSourceInputSource, we raise the InputClicked event in response to the TappedEvent.
 
 **Script 2 - TapToPlace.cs**
 
@@ -146,7 +146,7 @@ In the project panel navigate to **Assets\HoloToolkit\SpatialMapping\Scripts** a
 
 The first thing many developers want to implement when creating a Holographic application is moving Holograms with gesture input. As such, we've endeavored to thoroughly comment this script. A few things are worth highlighting for this tutorial.
 
-First, note that TapToPlace implements IInputClickHandler. IInputClickHandler exposes the functions that handle the InputClicked event raised by GamePadInput.cs or GesturesInput.cs. OnInputClicked is called when a BaseInputSource detects a click while the object with TapToPlace is in focus. Either airtapping on HoloLens or pressing the A button on the Xbox controller will trigger the event.
+First, note that TapToPlace implements IInputClickHandler. IInputClickHandler exposes the functions that handle the InputClicked event raised by GamePadInput.cs or InteractionSourceInputSource.cs. OnInputClicked is called when a BaseInputSource detects a click while the object with TapToPlace is in focus. Either airtapping on HoloLens or pressing the A button on the Xbox controller will trigger the event.
 
 Second is the code be executed in update to see if a surface is being looked at so we can place the game object on a surface, like a table. The immersive headset doesn't have a concept of real surfaces, so the object that represents the table top (Vroom > TableThingy > Cube) has been marked with the SpatialMapping physics layer, so the ray cast in Update will collide with the virtual table top.
 
