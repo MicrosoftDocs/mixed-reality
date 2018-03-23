@@ -35,7 +35,9 @@ To enable your app to listen for specific phrases spoken by the user then take s
 ### KeywordRecognizer
 
 **Namespace:** *UnityEngine.Windows.Speech*<br>
-**Types:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus* We'll need a few using statements to save some keystrokes:
+**Types:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
+
+We'll need a few using statements to save some keystrokes:
 
 ```
 using UnityEngine.Windows.Speech;
@@ -284,6 +286,6 @@ You could also just start a KeywordRecognizer, which will restart the PhraseReco
 
 ## Using the microphone helper
 
-The mixed reality toolkit on GitHub contains a microphone helper class to hint at developers if there is a usable microphone on the system. One use for it is where one would want to check if there is microphone on system before showing any speech interaction hints in the application.
+The Mixed Reality Toolkit on GitHub contains a microphone helper class to hint at developers if there is a usable microphone on the system. One use for it is where one would want to check if there is microphone on system before showing any speech interaction hints in the application.
 
-The microphone helper can be found in the [Dev_Working_Branch](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/Dev_Working_Branch/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). The GitHub repo also contains a [small sample](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/Dev_Working_Branch/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) demonstrating how to use the helper in Unity script.
+The microphone helper script can be found in the [Input/Scripts/Utilities folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). The GitHub repo also contains a [small sample](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) demonstrating how to use the helper.
