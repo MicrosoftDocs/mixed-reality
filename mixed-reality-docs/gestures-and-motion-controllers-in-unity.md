@@ -14,7 +14,7 @@ keywords: gestures, motion controllers, unity, gaze, input
 
 There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](gestures.md) and [motion controllers](motion-controllers.md). You access the data for both sources of spatial input through the same APIs in Unity.
 
-Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common Input.GetButton/Input.GetAxis APIs that work across multiple Unity VR SDKs, and an InteractionManager/GestureRecognizer API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
+Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common Input.GetButton/Input.GetAxis APIs that work across multiple Unity XR SDKs, and an InteractionManager/GestureRecognizer API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
 
 ## Unity button/axis mapping table
 
@@ -56,9 +56,9 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 </tr><tr>
 <td> Touchpad pressed </td><td> Button 16* </td><td> Button 17* </td><td> touchpadPressed</td>
 </tr><tr>
-<td> 6DoF grip pose or pointer pose </td><td colspan="2"> <i>Grip</i> pose only: <a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR.InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalRotation.html">XR.InputTracking.GetLocalRotation</a></td><td> Pass <i>Grip</i> or <i>Pointer</i> as an argument: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
+<td> 6DoF grip pose or pointer pose </td><td colspan="2"> <i>Grip</i> pose only: <a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html">XR.InputTracking.GetLocalPosition</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalRotation.html">XR.InputTracking.GetLocalRotation</a></td><td> Pass <i>Grip</i> or <i>Pointer</i> as an argument: sourceState.sourcePose.TryGetPosition<br />sourceState.sourcePose.TryGetRotation<br /></td>
 </tr><tr>
-<td> Tracking state </td><td colspan="2"> <i>Position accuracy and source loss risk only available through MR-specific API</i> </td><td> <a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState.properties.sourceLossRisk</a></td>
+<td> Tracking state </td><td colspan="2"> <i>Position accuracy and source loss risk only available through MR-specific API</i> </td><td> <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourcePose-positionAccuracy.html">sourceState.sourcePose.positionAccuracy</a><br /><a href="https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionSourceProperties-sourceLossRisk.html">sourceState.properties.sourceLossRisk</a></td>
 </tr>
 </table>
 
@@ -83,7 +83,7 @@ The grip pose is defined specifically as follows:
 * The **grip orientation's Forward axis**: When you close your hand partially (as if holding the controller), the ray that points "forward" through the tube formed by your non-thumb fingers.
 * The **grip orientation's Up axis**: The Up axis implied by the Right and Forward definitions.
 
-You can access the grip pose through either Unity's cross-vendor input API (**[XR.InputTracking](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.html).GetLocalPosition/Rotation**) or through the Windows MR-specific API (**sourceState.sourcePose.TryGetPosition/Rotation**, requesting pose data for the **Grip** node).
+You can access the grip pose through either Unity's cross-vendor input API (**[XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html).GetLocalPosition/Rotation**) or through the Windows MR-specific API (**sourceState.sourcePose.TryGetPosition/Rotation**, requesting pose data for the **Grip** node).
 
 ### Pointer pose
 
@@ -136,7 +136,7 @@ These motion controller tracking states are defined as follows:
 **Namespace:** *UnityEngine*, *UnityEngine.XR*<br>
 **Types**: *Input*, *XR.InputTracking*
 
-Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html), [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) and Windows Mixed Reality, including hands and motion controllers. If your app uses these APIs for input, it can easily support motion controllers across multiple VR SDKs, including Windows Mixed Reality.
+Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html), [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) and Windows Mixed Reality, including hands and motion controllers. If your app uses these APIs for input, it can easily support motion controllers across multiple XR SDKs, including Windows Mixed Reality.
 
 ### Getting a logical button's pressed state
 
@@ -482,7 +482,7 @@ You can find an example of how we recommend to implement throwing [here](https:/
     `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
 * **Pay close attention to the *time* at which we apply the velocity**. When a button is pressed, it can take up to 20ms for that event to bubble up through Bluetooth to the operating system. This means that if you poll for a controller state change from pressed to not pressed or vice versa, the controller pose information you get with it will actually be ahead of this change in state. Further, the controller pose presented by our polling API is forward predicted to reflect a likely pose at the time the frame will be displayed which could be more then 20ms in the future. This is good for *rendering* held objects, but compounds our time problem for *targeting* the object as we calculate the trajectory for the moment the user released their throw. Fortunately, with the November update, when a Unity event like InteractionSourcePressed or InteractionSourceReleased is sent, the state includes the historical pose data from back when the button was actually pressed or released.  To get the most accurate controller rendering and controller targeting during throws, you must correctly use polling and eventing, as appropriate:
-    * For **controller rendering** each frame, your app should position the controller's GameObject at the forward-predicted controller pose for the current frame’s photon time.  You get this data from Unity polling APIs like [XR.InputTracking.GetLocalPosition](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.GetLocalPosition.html) or [XR.WSA.Input.InteractionManager.GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html).
+    * For **controller rendering** each frame, your app should position the controller's GameObject at the forward-predicted controller pose for the current frame’s photon time.  You get this data from Unity polling APIs like [XR.InputTracking.GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html) or [XR.WSA.Input.InteractionManager.GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html).
     * For **controller targeting** upon a press or release, your app should raycast and calculate trajectories based on the historical controller pose for that press or release event.  You get this data from Unity eventing APIs, like [InteractionManager.InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html).
 
 * **Use the grip pose**. Angular velocity and velocity are reported relative to the grip pose, not pointer pose.
@@ -492,6 +492,6 @@ Throwing will continue to improve with future Windows updates, and you can expec
 ## See also
 * [Gestures](gestures.md)
 * [Motion controllers](motion-controllers.md)
-* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionManager.html)
-* [UnityEngine.XR.InputTracking](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.html)
+* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
+* [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [InteractionInputSource.cs in MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/InputSources/InteractionInputSource.cs)
