@@ -38,7 +38,7 @@ To better represent these controllers, there are two kinds of poses you can inve
     * The **grip orientation's Right axis**: When you completely open your hand to form a flat 5-finger pose, the ray that is normal to your palm (forward from left palm, backward from right palm)
     * The **grip orientation's Forward axis**: When you close your hand partially (as if holding the controller), the ray that points "forward" through the tube formed by your non-thumb fingers.
     * The **grip orientation's Up axis**: The Up axis implied by the Right and Forward definitions.
-    * You can access the grip pose through either Unity's cross-vendor input API (**[XR.InputTracking](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.html).GetLocalPosition/Rotation**) or through the Windows-specific API (**sourceState.sourcePose.TryGetPosition/Rotation**, requesting the Grip pose).
+    * You can access the grip pose through either Unity's cross-vendor input API (**[XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html).GetLocalPosition/Rotation**) or through the Windows-specific API (**sourceState.sourcePose.TryGetPosition/Rotation**, requesting the Grip pose).
 * The **pointer pose**, representing the tip of the controller pointing forward.
     * This pose is best used to raycast when **pointing at UI** when you are rendering the controller model itself.
     * Currently, the pointer pose is available only through the Windows-specific API (**sourceState.sourcePose.TryGetPosition/Rotation**, requesting the Pointer pose).
@@ -48,6 +48,6 @@ These pose coordinates are all expressed in Unity world coordinates.
 ## See also
 * [Motion controllers](motion-controllers.md)
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
-* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.InteractionManager.html)
-* [UnityEngine.XR.InputTracking](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.html)
+* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
+* [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Porting guides](porting-guides.md)

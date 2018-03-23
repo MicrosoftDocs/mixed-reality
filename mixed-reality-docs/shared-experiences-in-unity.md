@@ -16,7 +16,7 @@ A shared experience is one where multiple users, each with their own HoloLens, c
 
 ## Anchor Sharing
 
-**Namespace:** *UnityEngine.VR.WSA.Sharing*<br>
+**Namespace:** *UnityEngine.XR.WSA.Sharing*<br>
 **Type**: *WorldAnchorTransferBatch*
 
 To share a [WorldAnchor](coordinate-systems-in-unity.md), one must establish the anchor to be shared. The user of one HoloLens scans their environment and either manually or programmatically chooses a point in space to be the Anchor for the shared experience. The data that represents this point can then be serialized and transmitted to the other devices that are sharing in the experience. Each device then de-serializes the anchor data and attempts to locate that point in space. In order for Anchor Sharing to work, each device must have scanned in enough of the environment such that the point represented by the anchor can be identified.
@@ -37,20 +37,20 @@ How to enable the SpatialPerception capability:
 
 The sample code on this page has a few fields that will need to be initialized:
 1. GameObject rootGameObject is a GameObject in Unity that has a WorldAnchor Component on it. One user in the shared experience will place this GameObject and export the data to the other users.
-2. WorldAnchor gameRootAnchor is the UnityEngine.VR.WSA.WorldAnchor that is on rootGameObject.
+2. WorldAnchor gameRootAnchor is the UnityEngine.XR.WSA.WorldAnchor that is on rootGameObject.
 3. byte[] importedData is a byte array for the serialized anchor each client is receiving over the network.
 
 ```
 public GameObject rootGameObject;
-private UnityEngine.VR.WSA.WorldAnchor gameRootAnchor;
+private UnityEngine.XR.WSA.WorldAnchor gameRootAnchor;
 
 void Start ()
 {
-    gameRootAnchor = rootGameObject.GetComponent<UnityEngine.VR.WSA.WorldAnchor>();
+    gameRootAnchor = rootGameObject.GetComponent<UnityEngine.XR.WSA.WorldAnchor>();
 
     if (gameRootAnchor == null)
     {
-        gameRootAnchor = rootGameObject.AddComponent<UnityEngine.VR.WSA.WorldAnchor>();
+        gameRootAnchor = rootGameObject.AddComponent<UnityEngine.XR.WSA.WorldAnchor>();
     }
 }
 ```

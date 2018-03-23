@@ -19,11 +19,11 @@ The "WebCam" capability must be declared for an app to use the [camera](locatabl
 2. Click on the "Windows Store" tab
 3. In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities
 
-Only a single operation can occur with the camera at a time. To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.VR.WSA.WebCam.Mode.
+Only a single operation can occur with the camera at a time. To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.XR.WSA.WebCam.Mode.
 
 ## Photo Capture
 
-**Namespace:** *UnityEngine.VR.WSA.WebCam*<br>
+**Namespace:** *UnityEngine.XR.WSA.WebCam*<br>
 **Type:** *PhotoCapture*
 
 The PhotoCapture type allows you to take still photographs with the Photo Video Camera. The general pattern for using PhotoCapture to take a photo is as follows:
@@ -199,7 +199,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ## Video Capture
 
-**Namespace:** *UnityEngine.VR.WSA.WebCam*<br>
+**Namespace:** *UnityEngine.XR.WSA.WebCam*<br>
 **Type:** *VideoCapture*
 
 VideoCapture functions very similarly to PhotoCapture. The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file. The steps to use VideoCapture are as follows:

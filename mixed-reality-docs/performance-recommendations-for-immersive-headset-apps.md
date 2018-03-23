@@ -28,7 +28,7 @@ We recommend testing your app on the lowest-end hardware in each category you in
 
 The target framerate for your VR experience on Windows Mixed Reality immersive headsets will be either 60Hz or 90Hz depending on which [Windows Mixed Reality compatible PCs](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) you wish to support.
 
-For the PC you're currently using, you can determine its target framerate by checking the [holographic frame duration](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFrame#Duration), or, in Unity, checking the device’s [refresh rate](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.XRDevice-refreshRate.html).
+For the PC you're currently using, you can determine its target framerate by checking the [holographic frame duration](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFrame#Duration), or, in Unity, checking the device’s [refresh rate](https://docs.unity3d.com/ScriptReference/XR.XRDevice-refreshRate.html).
 
 ## Optimizing performance for Unity apps
 

@@ -12,7 +12,7 @@ keywords: Unity, focus point, focus plane, stabilization plane, stabilization po
 
 # Focus point in Unity
 
-**Namespace:** *UnityEngine.WSA.VR*<br>
+**Namespace:** *UnityEngine.XR.WSA*<br>
 **Type**: *HolographicSettings*
 
 The [focus point](hologram-stability.md#stabilization-plane) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
@@ -36,7 +36,7 @@ void Update()
     // plane.
     var normal = -Camera.main.transform.forward;     
     var position = focusedObject.transform.position;
-    UnityEngine.VR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal);
+    UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal);
 }
 ```
 
