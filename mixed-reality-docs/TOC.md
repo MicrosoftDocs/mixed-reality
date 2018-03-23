@@ -84,9 +84,6 @@
 
 ## [Development](development.md)
 ### [Development overview](development-overview.md)
-### Rendering
-#### [Holographic rendering](rendering.md)
-#### [Volume rendering](volume-rendering.md)
 ### Unity
 #### [Unity development overview](unity-development-overview.md)
 #### Getting started
@@ -138,7 +135,9 @@
 #### [Input porting guide for Unity](input-porting-guide-for-unity.md)
 #### [Updating your SteamVR application for Windows Mixed Reality](updating-your-steamvr-application-for-windows-mixed-reality.md)
 #### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
-### Performance and stability
+### Rendering and performance
+#### [Holographic rendering](rendering.md)
+#### [Volume rendering](volume-rendering.md)
 #### [Hologram stability](hologram-stability.md)
 #### [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md)
 #### [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
