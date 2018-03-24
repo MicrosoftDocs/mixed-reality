@@ -103,6 +103,16 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
   <tr>
     <td>Improved audio immersion</td><td>You can now hear HoloLens better in noisy environments, and experience more lifelike sound from applications as their sound will be obscured by real walls detected by the device.</td><td>HoloLens finds your space automatically, and no longer requires you to manage or select spaces. If you have problems with holograms around you, you can go to <b>Settings > System > Holograms > Remove nearby holograms</b>. If needed, you can also select <b>Remove all holograms</b>.</td>
   </tr>
+  <tr>
+    <td>File Explorer</td><td>Move and delete files from within HoloLens.</td><td>You can use File Explorer app to move and delete files from within HoloLens.<br><br><b>Tip:</b> If you don’t see any files, the "Recent" filter may be active (clock icon is highlighted in left pane). To fix, select the <b>This Device</b> document icon in the left pane (beneath the clock icon), or open the menu and select <b>This Device</b>.
+</td>
+  </tr>
+  <tr>
+    <td>MTP (Media Transfer Protocol) support</td><td>Enables your desktop PC to access your libraries (photos, videos, documents) on HoloLens for easy transfer.</td><td>Similar to other mobile devices, connect your HoloLens to your PC to bring up <b>File Explorer</b> to access your HoloLens libraries (photos, videos, documents) for easy transfer.<br><br><b>Tips:</b><li>If you don't see any files, please ensure you sign in to your HoloLens to enable access to your data.</li><li>From <b>File Explorer</b> on your PC, you can select <b>Device properties</b> to see Windows Holographic OS version number (firmware version) and device serial number.<br><br><b>Known Issue:</b> Renaming HoloLens via <b>File Explorer</b> on your PC is not enabled.</td>
+  </tr>
+  <tr>
+    <td>Captive portal network support during setup</td><td>You can now set up your HoloLens on a guest network at hotels, conference centers, retail shops, or businesses that use captive portal.</td><td>XXX</td>
+  </tr>
 </table>
 
 ### For developers
