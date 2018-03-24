@@ -78,7 +78,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 <td> <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk">Windows 10 Fall Creators Update SDK</a></td><td> <b>Install the Windows 10 Fall Creators Update SDK</b> The Windows 10 Fall Creators Update SDK is included in the latest version of <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a>. You can also download and install the .EXE or .ISO for the SDK using the link in the column to the left.</td>
 </tr><tr>
 <td> Unity 2017.2 with Mixed Reality Support</td><td><p> <b>Install Unity 2017.2.1 p2 and Windows Store .NET Scripting Backend</b></p><ul>
-<li>Donwload 2017.2.1p2 from the <a href="https://unity3d.com/unity/qa/patch-releases">patch releases page</a></li><li>Make sure to select the Windows Store .NET Scripting Backend (you may install the docs as well).</li>
+<li>Download 2017.2.1p2 from the <a href="https://unity3d.com/unity/qa/patch-releases">patch releases page</a></li><li>Make sure to select the Windows Store .NET Scripting Backend (you may install the docs as well).</li>
 </ul></td>
 </tr><tr>
 <td> <i>For DirectX development:</i> <a href="https://go.microsoft.com/fwlink/?linkid=852626">Holographic Templates</a> (build 10.0.14393.1358)</td><td> If you are doing DirectX development, you can install this package, which includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the HoloLens emulator.</td>
