@@ -75,3 +75,26 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
 4. Go through the HoloLens on-device OOBE setup flow. Sign-in with your personal or work account to experience all the features of this Preview.
 
 ## New features in this preview
+
+Coming soon
+
+## Known issues in this preview
+
+You can find the latest set of known issues with workarounds at [https://aka.ms/hololenspreviewrelnote](https://aka.ms/hololenspreviewrelnote).
+
+## Note for developers
+
+You are welcome to try developing your applications using this build of HoloLens. Continue using the Windows Mixed Reality developer documentation to guide your development, as these apply to this latest build of HoloLens as well. You can use the same builds of [Unity and Visual Studio](install-the-tools.md) that you're already using for HoloLens development.
+
+Reference the [new features list above](#new-features-in-this-preview) for capabilities specific to the HoloLens RS4 Preview.
+
+## Provide feedback and report issues
+
+Please use the [Feedback Hub app on HoloLens](give-us-feedback.md#feedback-for-hololens) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
+
+>[!IMPORTANT]
+>Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
+
+## Questions and support
+
+You can ask questions and engage with our support team in a new section of the [HoloLens developer forums](https://aka.ms/hololenspreviewhelp).
