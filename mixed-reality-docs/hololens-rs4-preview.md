@@ -142,8 +142,33 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
 
 ### For commercial customers
 
+<table>
+  <tr>
+    <th>Feature</th><th>Details</th><th>Instructions</th>
+  </tr>
+  <tr>
+    <td>Use multiple AAD user accounts on a single device</td><td>Share a HoloLens with multiple AAD users, each with their own user settings and user data on device.</td><td><b>Initial Setup:</b> During setup, you must sign in with an AAD account using the option "My work or school owns it". After setup, ensure that the "Windows Holographic for Business" edition update has been applied (<b>Settings >  System > About</b>), and that "Other People" appears in <b>Settings > Accounts</b>.<br><br><b>Adding a user:</b><br><br><ol><li>Trigger sign in by pressing the power button once to go to standby, and again to return to the lock screen <b>or</b> by selecting the user tile on the upper right of the Start menu to sign out the current user.</li><li>In <b>Other user</b> to the right of the current user, enter email address and password as prompted.</li></ol><br><br><b>Subsequent sign-ins</b><br><br><ol><li>Trigger sign in by pressing the power button once to go to standby, and again to return to the lock screen <b>or</b> by selecting the user tile on the upper right of the Start menu to sign out the current user.</li><li>If you are the current user on the center panel, or previous user on the left panel, you can sign in with your password/PIN</li><li>If you do not appear on the left or center panel, you can sign in using <b>Other user</b> on the right panel by entering your email address and password as prompted.</li></ol><br><br><b>To see other user accounts on the device:</b> Go to <b>Settings > Accounts > Other users</b>.<br><br><b>To remove a user from the device:</b> Go to <b>Settings > Accounts > Other users</b> and select <b>Remove</b> to remove the undesired user.<br><br><b>Note:</b>Each subsequent user will need to perform calibration in order to set their correct IPD while signed in.</td>
+  </tr>
+  <tr>
+    <td>Change Wi-Fi network on sign-in</td><td>Change Wi-Fi network before sign-in to enable another user to sign in with his or her AAD user account for the first time, allowing users to share devices at various locations and job sites.</td><td>On the sign-in screen, you can use the network icon below the password field to connect to a network. This is helpful when this is your first time signing into a device.</td>
+  </tr>
+  <tr>
+    <td>Unified enrollment</td><td>XXX</td><td>XXX</td>
+  </tr>
+  <tr>
+    <td>Mail Sync without MDM enrollment</td><td>XXX</td><td>XXX</td>
+  </tr>
+</table>
+
 ### For IT pros
 
+<table>
+  <tr>
+    <th>Feature</th><th>Details</th><th>Instructions</th>
+  </tr>
+  <tr>
+    <td>New OS name when Commercial Suite features enabled: "Windows Holographic for Business"</td><td>Clear edition naming to reduce confusion on edition upgrade license application.</td><td>You can see what edition of Windows Holographic is running in <b>Settings > System > About</b>. "Windows Holographic for Business" will appear if an edition update has been applied to enable Commercial Suite features.</td>
+  </tr>
 
 ## Known issues in this preview
 
