@@ -12,7 +12,7 @@ keywords: HoloLens, preview, insider, os, rs4, new features
 >[!IMPORTANT]
 >By downloading *or* using the HoloLens RS4 preview builds, you are acknowledging and agreeing to the **HoloLens RS4 Preview – EULA (End User License Agreement)**, included in the preview program package.
 
-In this article, you'll learn more about the HoloLens RS4 Preview, a preview of the Windows Holographic OS updates coming to the Windows 10 Spring Creators Update (also known as RS4). Any HoloLens owner who is interested in trying the preview is invited to give it a try, however, please remember that this is a preview build (not final software) and all the warnings that come along with that. If that doesn't worry you, follow the instructions below to install the HoloLens RS4 Preview and read about the new features it includes.
+In this article, you'll learn more about the HoloLens RS4 Preview, a preview of the Windows Holographic OS updates arriving alongside the next release of Windows 10 (RS4). Any HoloLens owner who is interested in trying the preview is invited to give it a try, however, please remember that this is a preview build (not final software) and all the warnings that come along with that. If that doesn't worry you, follow the instructions below to install the HoloLens RS4 Preview and read about the new features it includes.
 
 ## Downloading the HoloLens RS4 Preview package
 
@@ -153,10 +153,10 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
     <td>Change Wi-Fi network on sign-in</td><td>Change Wi-Fi network before sign-in to enable another user to sign in with his or her AAD user account for the first time, allowing users to share devices at various locations and job sites.</td><td>On the sign-in screen, you can use the network icon below the password field to connect to a network. This is helpful when this is your first time signing into a device.</td>
   </tr>
   <tr>
-    <td>Unified enrollment</td><td>XXX</td><td>XXX</td>
+    <td>Unified enrollment</td><td>It's now easy for a HoloLens user who set up the device with a personal Microsoft account to add a work account (AAD) and join the device to their MDM server.</td><td>If you originally signed in with a Microsoft account, you can now add a work account (AAD) via <b> Settings > Accounts > Access Work or School > Connect</b></td>
   </tr>
   <tr>
-    <td>Mail Sync without MDM enrollment</td><td>XXX</td><td>XXX</td>
+    <td>Mail Sync without MDM enrollment</td><td>Support for Exchange Active Sync (EAS) mail sync without requiring MDM enrollment.</td><td>You can now sync email without enrolling in MDM. You can set up the device with a Microsoft Account, download and install the Mail app, and add a work email account directly.</td>
   </tr>
 </table>
 
