@@ -76,7 +76,41 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
 
 ## New features in this preview
 
-Coming soon
+### For all users
+
+<table>
+  <tr>
+    <th>Feature</th><th>Details</th><th>Instructions</th>
+  </tr>
+  <tr>
+    <td>Auto-placement of 2D and 3D content on launch</td><td>A 2D app launcher or 2D UWP app auto-places in the world at an optimal size and distance when launched instead of requiring the user to place it. If an [immersive app](app-views.md) uses a 2D app launcher instead of a [3D app launcher](3d-app-launcher-design-guidance.md), the immersive app will auto-launch from the 2D app launcher same as in RS1.<br><br>A 3D app launcher from the Start menu also auto-places in the world. Instead of auto-launching the app, users can then click on the launcher to launch the immersive app. 3D content opened from the Holograms app and from Edge also auto-places in the world.</td><td>When opening an app from the Start menu, you will no longer be asked to place it in the world.<br><br>If the 2D app/[3D app launcher](3d-app-launcher-design-guidance.md) placement is not optimal, you can easily move them using new fluid app manipulations described below. You can also re-position the 2D app launcher/3D content by saying "Move this" and then using gaze to re-position the content.</td>
+  </tr>
+  <tr>
+    <td>Fluid app manipulation</td><td>Move, resize, and rotate 2D and 3D content without having to enter "Adjust" mode.</td><td>To move a 2D UWP app or 2D app launcher, simply gaze at its app bar and then use the tap + hold + drag gesture. You can move 3D content by gazing anywhere on the object and then using tap + hold + drag.<br><br>To resize 2D content, gaze at its corner. The gaze cursor will turn into a resize cursor, and then you can tap + hold + drag to resize. You can also make 2D content taller or wider by looking at its edges and dragging.<br><br>To resize 3D content, lift up both your hands into gesture frame, fingers up in the ready position. You'll see the cursor turn into a state with 2 little hands. Do the tap and hold gesture with both your hands. Moving your hands closer or farther apart you will change the size of the object. Moving your hands forward and backward relative to each other will rotate the object. You can also resize/rotate 2D content this way.</td>
+  </tr>
+  <tr>
+    <td>2D app horizontal resize with reflow</td><td>Make a 2D UWP app wider in aspect ratio to see more app content. For example, making the Mail app wide enough to show the Preview Pane.</td><td>Simply gaze at the left or right edge of the 2D UWP app to see the resize cursor, then use the tap + hold + drag gesture to resize.</td>
+  </tr>
+  <tr>
+    <td>Expanded voice command support</td><td>You can do more simply using your voice.</td><td>Try these voice commands:<li>"Go to Start" - Brings up the Start menu or exits an [immersive app](app-views.md).</li><li>"Move this" - Allows you to move an object.</li></td>
+  </tr>
+  <tr>
+    <td>Updated Holograms and Photos apps</td><td>Updated Holograms app with new holograms. Updated Photos app.</td><td>You will notice an updated look to the Holograms and Photos apps. The Holograms app includes several new Holograms and a label maker for easier creation of text.</td>
+  </tr>
+  <tr>
+    <td>Improved mixed reality capture</td><td>Hardware shortcut start and end MRC video.</td><td>Hold Volume Up + Down for 3 seconds to start recording MRC video. Tap both again or use the bloom gesture to end.</td>
+  </tr>
+  <tr>
+    <td>Improved audio immersion</td><td>You can now hear HoloLens better in noisy environments, and experience more lifelike sound from applications as their sound will be obscured by real walls detected by the device.</td><td>HoloLens finds your space automatically, and no longer requires you to manage or select spaces. If you have problems with holograms around you, you can go to **Settings** > **System** > **Holograms** > **Remove nearby holograms**. If needed, you can also select **Remove all holograms**.</td>
+  </tr>
+</table>
+
+### For developers
+
+### For commercial customers
+
+### For IT pros
+
 
 ## Known issues in this preview
 
