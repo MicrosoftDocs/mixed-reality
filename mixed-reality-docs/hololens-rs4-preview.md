@@ -16,7 +16,7 @@ In this article, you'll learn more about the HoloLens RS4 Preview, a preview of 
 
 ## Downloading the HoloLens RS4 Preview package
 
-You can download the setup package from the [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
+You can download the setup package from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
 
 ## What's in the package?
 
@@ -40,6 +40,7 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
 >This preview requires WDRT version 3.14.07501 (or newer)
 
 3. Flash the OS Preview Build using the Windows Device Recovery Tool:
+
    a. Launch Windows Device Recovery Tool from your Start menu or Desktop shortcut.
    
    ![WDRT shortcut](images/WDRT314-RS4Preview-1.png)
