@@ -12,7 +12,9 @@ keywords: HoloLens, preview, insider, os, rs4, new features
 >[!IMPORTANT]
 >By downloading *or* using the HoloLens RS4 preview builds, you are acknowledging and agreeing to the **HoloLens RS4 Preview – EULA (End User License Agreement)**, included in the preview program package.
 
-In this article, you'll learn more about the HoloLens RS4 Preview. This preview is available to all HoloLens users, however, please note that installing this preview will erase all of your content and restore your device to factory settings. In order to install this preview, you must first download the latest version of the Windows Device Recovery Tool and ensure that your HoloLens is enrolled in the Windows Insider Program. 
+In this article, you'll learn more about the HoloLens RS4 Preview. This preview is available to all HoloLens users, however, please note that installing this preview will erase all of your content and restore your device to factory settings. Like any pre-release software, you may encounter bugs and other issues along the way. For this reason, Preview builds are made for people who know their way around HoloLens and don’t mind frequent updates with significant changes.
+
+In order to install this preview, you must first download the latest version of the Windows Device Recovery Tool and ensure that your HoloLens is enrolled in the Windows Insider Program. 
 
 ## Downloading the HoloLens RS4 Preview package
 
