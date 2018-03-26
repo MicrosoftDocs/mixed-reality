@@ -201,7 +201,7 @@ You can download the setup package from [https://aka.ms/hololenspreviewdownload]
 
 * When upgrading to this preview build from a public build, any holograms previously placed in the world will be removed. 
 * We're also tracking an issue where internet pages will not load in Microsoft Edge after upgrading to this build. 
-* Some users have reported an issue with taking control of their Insider settings in this build.
+* Some users have reported an issue with Windows Insider Program settings on this build. If you encounter problems, please file a bug in Feedback Hub, and re-flash your device.
 
 ## Note for developers
 
