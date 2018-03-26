@@ -93,7 +93,7 @@ You can download the setup package from [https://aka.ms/hololenspreviewdownload]
     <td>2D app horizontal resize with reflow</td><td>Make a 2D UWP app wider in aspect ratio to see more app content. For example, making the Mail app wide enough to show the Preview Pane.</td><td>Simply gaze at the left or right edge of the 2D UWP app to see the resize cursor, then use the tap + hold + drag gesture to resize.</td>
   </tr>
   <tr>
-    <td>Expanded voice command support</td><td>You can do more simply using your voice.</td><td>Try these voice commands:<ul><li>"Go to Start" - Brings up the Start menu or exits an [immersive app](app-views.md).</li><li>"Move this" - Allows you to move an object.</li></ul></td>
+    <td>Expanded voice command support</td><td>You can do more simply using your voice.</td><td>Try these voice commands:<ul><li>"Go to Start" - Brings up the Start menu or exits an <a href="app-views.md">immersive app</a>.</li><li>"Move this" - Allows you to move an object.</li></ul></td>
   </tr>
   <tr>
     <td>Updated Holograms and Photos apps</td><td>Updated Holograms app with new holograms. Updated Photos app.</td><td>You will notice an updated look to the Holograms and Photos apps. The Holograms app includes several new Holograms and a label maker for easier creation of text.</td>
@@ -137,7 +137,7 @@ You can download the setup package from [https://aka.ms/hololenspreviewdownload]
 </td>
   </tr>
   <tr>
-    <td>Research mode</td><td><b>needs content</b></td><td><b>needs content</b></td>
+    <td>Research mode</td><td><b>coming soon</b></td><td><b>coming soon</b></td>
   </tr>
 </table>
 
