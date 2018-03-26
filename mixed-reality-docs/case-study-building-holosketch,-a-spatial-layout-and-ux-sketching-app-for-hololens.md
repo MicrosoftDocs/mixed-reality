@@ -114,20 +114,18 @@ Before uploading to your OneDrive folder, please follow the steps below to packa
 
    ![On the bottom of the inspector panel, click the dropdown and assign a new unique name.](images/holosketch-14-assetbundles-1000px.png)
 
-10. Prepare an image which can be used as thumbnail in OneDrive's list. You can create one by taking screen shot of the object in Unity. No specific size or ratio required. Drag the image into the project panel. On the bottom of the inspector panel, click the dropdown and **assign the same name used for the Prefab**. 3D model Prefab and thumbnail image should have same AssetBundle name. Below example shows assigning 'brownchair' which was assigned to 3D model Prefab. 
-
+10. Prepare an image which model Prefab. 
    ![Drag an image into the project panel and assign the name used for the object.](images/holosketch-15-assetbundles-1000px.png)
 
 11. Create a folder named ‘Assetbundles’ under the Unity project’s ‘Asset’ folder.
-12. From the Assets menu, select ‘Build AssetBundles’ to generate file. 
 
+12. From the Assets menu, select ‘Build AssetBundles’ to generate file. 
    ![From the Assets menu, select ‘Build AssetBundles’ to generate file.](images/holosketch-15a-assetbundles.png)
 
-13. **Upload the generated file to the /Files/Documents/HoloSketch folder on OneDrive.** (Upload the asset_unique_name file only. You don’t need to upload manifest files or AssetBundles file.)
 
-   ![Add files to Files/Documents/HoloSketch/ folder](images/holosketch-onedriveupload-1000px.png)
-   
-   ![You will see added 3D object in HoloSketch's OneDrive menu](images/holosketch-14-onedriveexample-1000px.jpg)
+13. **Upload the generated file to the /Files/Documents/HoloSketch folder on OneDrive.** Upload the asset_unique_name file only. You don’t need to upload manifest files or AssetBundles file. <br>
+![Add files to Files/Documents/HoloSketch/ folder](images/holosketch-onedriveupload-1000px.png)
+![You will see added 3D object in HoloSketch's OneDrive menu](images/holosketch-14-onedriveexample-1000px.jpg)
 
 ## How to manipulate the objects
 

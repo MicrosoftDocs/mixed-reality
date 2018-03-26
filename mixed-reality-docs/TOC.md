@@ -189,6 +189,7 @@
 ### [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 
 ## Resources
+### [HoloLens RS4 Preview](hololens-rs4-preview.md)
 ### [Mixed Reality Partner Program](mixed-reality-partner-program.md)
 ### [App quality criteria](app-quality-criteria.md)
 ### [Spectator view](spectator-view.md)
