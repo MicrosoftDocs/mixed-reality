@@ -198,7 +198,8 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
 
 ## Known issues in this preview
 
-You can find the latest set of known issues with workarounds at [https://aka.ms/hololenspreviewrelnote](https://aka.ms/hololenspreviewrelnote).
+When upgrading to this preview build from RTM, any Holograms placed in the world previously will be removed. 
+We're also tracking an issue where internet pages will not load in Edge after upgrade to this build. Some users have reported an issue with taking control of their Insider settings on this build. 
 
 ## Note for developers
 
