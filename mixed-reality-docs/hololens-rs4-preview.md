@@ -22,7 +22,7 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
 
 | File | Description |
 |------|------|
-| rs4_release_svc_analog.retail.10.0.17110.1001.FFU | The HoloLens RS4 Preview image that you will flash to your device using the Windows Device Recovery Tool. |
+| rs4_release_svc_analog.retail.10.0.17123.1004.FFU | The HoloLens RS4 Preview image that you will flash to your device using the Windows Device Recovery Tool. |
 | HoloLens RS4 Preview – EULA | HoloLens RS4 Preview - Evaluation Use Terms (End User License Agreement) |
 
 ## Installing the preview
@@ -198,8 +198,9 @@ You can download the setup package from the [https://aka.ms/hololenspreviewdownl
 
 ## Known issues in this preview
 
-When upgrading to this preview build from RTM, any Holograms placed in the world previously will be removed. 
-We're also tracking an issue where internet pages will not load in Edge after upgrade to this build. Some users have reported an issue with taking control of their Insider settings on this build. 
+* When upgrading to this preview build from a public build, any holograms previously placed in the world will be removed. 
+* We're also tracking an issue where internet pages will not load in Microsoft Edge after upgrading to this build. 
+* Some users have reported an issue with taking control of their Insider settings in this build.
 
 ## Note for developers
 
