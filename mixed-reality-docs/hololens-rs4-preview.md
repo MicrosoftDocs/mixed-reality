@@ -200,7 +200,7 @@ You can download the setup package from [https://aka.ms/hololenspreviewdownload]
 
 ## Note for developers
 
-You are welcome to try developing your applications using this build of HoloLens. Continue using the Windows Mixed Reality developer documentation to guide your development, as these apply to this latest build of HoloLens as well. You can use the same builds of [Unity and Visual Studio](install-the-tools.md) that you're already using for HoloLens development.
+You are welcome to try developing your applications using this build of HoloLens. Continue using the [Windows Mixed Reality developer documentation](index.md) to guide your development, as these apply to this latest build of HoloLens as well. You can use the same builds of [Unity and Visual Studio](install-the-tools.md) that you're already using for HoloLens development.
 
 Reference the [new features list above](#new-features-in-this-preview) for capabilities specific to the HoloLens RS4 Preview.
 
