@@ -119,8 +119,8 @@ Digital agency minimum requirements:
 
 ## Program framework
 
-The MRPP program consist of four phases starting with an application.
-<br>
+The MRPP program consist of four phases starting with an application:
+
 ![The four phases of the MRPP program: intake, onboarding, training, and engagement.](images/phases-detailed-view-(004)-750px.png)<br>
 *The four phases of the MRPP program: intake, onboarding, training, and engagement*
 
