@@ -217,12 +217,6 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                         <p>
                             <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity">MixedRealityToolkit-Unity</a>
                         </p>
-                        <p>
-                            <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/Feature_UX_Tooltip/Assets/MixedRealityToolkit-Examples/UX/Readme/README_TooltipExample.md">Tooltip</a>
-                        </p>
-			 <p>
-                            <a href="https://github.com/johnppella/MixedRealityToolkit-Unity/blob/BoundingBoxWithGizmo/Assets/MixedRealityToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.mdd">Bounding Box & App Bar</a>
-                        </p>
                     </div>
                 </div>
             </div>
