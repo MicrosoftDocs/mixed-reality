@@ -91,7 +91,7 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 * Build “water tight” closed geometry. No holes that are not modeled in.
 * Use natural materials in your object. Imagine crafting it in the real world.
 * Make sure your model reads well at different distances and sizes.
-* When your model is ready to go, read the [exporting assets guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#exporting-assets).
+* When your model is ready to go, read the [exporting assets guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#asset-requirements-overview).
 
 ![Model with subtle details in the texture](images/20171013-143334-mixedreality-640px.jpg)<br>
 *Model with subtle details in the texture*
@@ -175,7 +175,7 @@ We recommend using [Substance Painter](https://www.allegorithmic.com/products/su
 
 * If your app launcher object was authored for PBR, it should be pretty straightforward to convert it for the Cliff House environment.
 * Our shader is expecting a Metal/Roughness work flow – The Unreal PBR shader is a close facsimile.
-* When exporting your textures keep the [recommended texture sizes](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#texture-resolutions-and-workflow) in mind.
+* When exporting your textures keep the [recommended texture sizes](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) in mind.
 * Make sure to build your objects for real-time lighting — this means:
     * Avoid baked shadows – or painted shadows
     * Avoid baked lighting in the textures
