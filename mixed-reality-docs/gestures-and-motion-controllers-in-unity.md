@@ -140,14 +140,21 @@ Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose in
 
 ### Getting a logical button's pressed state
 
-To use the general Unity input APIs, you'll typically start by wiring up buttons and axes to logical names in the [Unity Input Manager](https://docs.unity3d.com/Manual/ConventionalGameInput.html), binding a button or axis IDs to each name. You can then write code that refers to that logical button/axis name:
+To use the general Unity input APIs, you'll typically start by wiring up buttons and axes to logical names in the [Unity Input Manager](https://docs.unity3d.com/Manual/ConventionalGameInput.html), binding a button or axis IDs to each name. You can then write code that refers to that logical button/axis name.
+
+For example, to map the left motion controller's trigger button to the Submit action, go to **Edit > Project Settings > Input** within Unity, and expand the properties of the Submit section under Axes. Change the **Alt Positive Button** property to read **joystick button 14**, like this:
+
+![Unity's InputManager](images/unity-input-manager.png)
+
+Your script can then check for the Submit action using Input.GetButton:
 
 ```cs
-if (Input.GetButton("Fire1"))
+if (Input.GetButton("Submit"))
 {
   // ...
 }
 ```
+You can add more logical buttons by changing the Size property under Axes.
 
 ### Getting a physical button's pressed state directly
 
