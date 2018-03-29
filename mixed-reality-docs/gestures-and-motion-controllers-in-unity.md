@@ -492,10 +492,10 @@ You can find an example of how we recommend to implement throwing [here](https:/
    `objectAngularVelocity = throwingControllerAngularVelocity;`
    2. As the center of mass of the thrown object is likely not at the origin of the grip pose, it likely has a different velocity then that of the controller in the frame of reference of the user. The portion of the object’s velocity contributed in this way is the instantaneous tangential velocity of the center of mass of the thrown object around the controller origin. This tangential velocity is the cross product of the angular velocity of the controller with the vector representing the distance between the controller origin and the center of mass of the thrown object.
     
-   ```cs
-   Vector3 radialVec = thrownObjectCenterOfMass - throwingControllerPos;
-   Vector3 tangentialVelocity = Vector3.Cross(throwingControllerAngularVelocity, radialVec);
-   ```
+      ```cs
+      Vector3 radialVec = thrownObjectCenterOfMass - throwingControllerPos;
+      Vector3 tangentialVelocity = Vector3.Cross(throwingControllerAngularVelocity, radialVec);
+      ```
    
    3. The total velocity of the thrown object is thus the sum of velocity of the controller and this tangential velocity:
    `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
