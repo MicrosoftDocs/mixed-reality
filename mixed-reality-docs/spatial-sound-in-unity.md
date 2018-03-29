@@ -64,7 +64,7 @@ if (audioSource != null) {
 
 ### Directly Accessing Parameters from Unity
 
-If you don't want to use the excellent Audio tools in the MixedRealityToolkit, here is how you would change HRTF Parameters. You can copy/paste this into a script called **SetHRTF**.cs that you will want to attach to every HRTF AudioSource. It lets you change parameters important to HRTF.
+If you don't want to use the excellent Audio tools in the MixedRealityToolkit, here is how you would change HRTF Parameters. You can copy/paste this into a script called *SetHRTF.cs* that you will want to attach to every HRTF AudioSource. It lets you change parameters important to HRTF.
 
 ```cs
 using UnityEngine;

@@ -27,14 +27,14 @@ To manually handle tracking loss, you need to go to **Edit** > **Project Setting
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type:** *WorldManager*
 
-* World Manager exposes an event to detect tracking lost/gained (WorldManager.OnPositionalLocatorStateChanged) and a property to query the current state (WorldManager.state)
+* World Manager exposes an event to detect tracking lost/gained (*WorldManager.OnPositionalLocatorStateChanged*) and a property to query the current state (*WorldManager.state*)
 * When the tracking state is not active, the camera will not appear to translate in the virtual world even as the user translates. This means objects will no longer correspond to any physical location and all will appear body locked.
 
-When handling tracking changes on your own you either need to poll for the state property each frame or handle the OnPositionalLocatorStateChanged event.
+When handling tracking changes on your own you either need to poll for the state property each frame or handle the *OnPositionalLocatorStateChanged* event.
 
 ### Polling
 
-The most important state is PositionalLocatorState.Active which means tracking is fully functional. Any other state will result in only rotational deltas to the main camera. For example:
+The most important state is *PositionalLocatorState.Active* which means tracking is fully functional. Any other state will result in only rotational deltas to the main camera. For example:
 
 ```cs
 void Update()
@@ -57,7 +57,7 @@ void Update()
 
 ### Handling the OnPositionalLocatorStateChanged event
 
-Alternatively and more conveniently, you can also subscribe to OnPositionalLocatorStateChanged to handle the transitions:
+Alternatively and more conveniently, you can also subscribe to *OnPositionalLocatorStateChanged* to handle the transitions:
 
 ```cs
 void Start()
