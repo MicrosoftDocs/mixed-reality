@@ -13,23 +13,23 @@ keywords: keyboard, input, unity, touchscreenkeyboard
 # Keyboard input in Unity
 
 **Namespace:** *UnityEngine*<br>
- **Type**: [TouchScreenKeyboard](http://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)
+ **Type**: *[TouchScreenKeyboard](http://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
 While HoloLens supports many forms of input including Bluetooth keyboards, most applications cannot assume that all users will have a physical keyboard available. If your application requires text input, some form of on screen keyboard should be provided.
 
-Unity provides the [TouchScreenKeyboard](http://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html) class for accepting keyboard input when there is no physical keyboard available.
+Unity provides the *[TouchScreenKeyboard](http://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)* class for accepting keyboard input when there is no physical keyboard available.
 
 ## HoloLens system keyboard behavior in Unity
 
-On HoloLens, the TouchScreenKeyboard leverages the system's on screen keyboard. The system's on screen keyboard is unable to overlay on top of a volumetric view so Unity has to create a secondary 2D XAML view to show the keyboard then return back to the volumetric view once input has been submitted. The user flow goes like this:
-1. The user performs an action causing app code to call TouchScreenKeyboard
-    * *The app is responsible for pausing app state before calling TouchScreenKeyboard*
-    * *The app may terminate before ever switching back to the volumetric view*
+On HoloLens, the *TouchScreenKeyboard* leverages the system's on screen keyboard. The system's on screen keyboard is unable to overlay on top of a volumetric view so Unity has to create a secondary 2D XAML view to show the keyboard then return back to the volumetric view once input has been submitted. The user flow goes like this:
+1. The user performs an action causing app code to call *TouchScreenKeyboard*
+    * The app is responsible for pausing app state before calling *TouchScreenKeyboard*
+    * The app may terminate before ever switching back to the volumetric view
 2. Unity switches to a 2D XAML view which is auto-placed in the world
 3. The user enters text using the system keyboard and submits or cancels
 4. Unity switches back to the volumetric view
-    * *The app is responsible for resuming app state when the TouchScreenKeyboard is done*
-5. Submitted text is available in the TouchScreenKeyboard
+    * The app is responsible for resuming app state when the *TouchScreenKeyboard* is done
+5. Submitted text is available in the *TouchScreenKeyboard*
 
 ### Available keyboard views
 
@@ -51,6 +51,7 @@ The HoloLens system keyboard is only available to Unity applications that are ex
 5. Expand the **Other Settings** group
 6. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality Devices** list
 7. Ensure **Windows Holographic** appears in the list of Virtual Reality SDKs
+
 >[!NOTE]
 >If you don't mark the build as Virtual Reality Supported with the HoloLens device, the project will export as a 2D XAML app.
 
@@ -58,7 +59,7 @@ The HoloLens system keyboard is only available to Unity applications that are ex
 
 ### Declare the keyboard
 
-In the class, declare a variable to store the TouchScreenKeyboard and a variable to hold the string the keyboard returns.
+In the class, declare a variable to store the *TouchScreenKeyboard* and a variable to hold the string the keyboard returns.
 
 ```cs
 UnityEngine.TouchScreenKeyboard keyboard;
@@ -109,6 +110,5 @@ if (TouchScreenKeyboard.visible == false && keyboard != null)
 We understand that switching out of a volumetric view into a 2D view isn't the ideal way to get text input from the user.
 
 The current alternatives to leveraging the system keyboard through Unity include:
-* Using speech dictation for input
-    * *This is often error prone for words not found in the dictionary and is not suitable for password entry*
+* Using speech dictation for input (<b>Note:</b> this is often error prone for words not found in the dictionary and is not suitable for password entry)
 * Create a keyboard that works in your applications exclusive view
