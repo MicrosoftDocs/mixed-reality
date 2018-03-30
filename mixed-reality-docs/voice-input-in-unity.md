@@ -173,13 +173,13 @@ There are four dictation events that can be subscribed to and handled to impleme
 
 This event is fired after the user pauses, typically at the end of a sentence. The full recognized string is returned here.
 
-First, subscribe to the DictationHypothesis event:
+First, subscribe to the DictationResult event:
 
 ```
 dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
 ```
 
-Then handle the DictationHypothesis callback:
+Then handle the DictationResult callback:
 
 ```
 private void DictationRecognizer_DictationResult(string text, ConfidenceLevel confidence)
