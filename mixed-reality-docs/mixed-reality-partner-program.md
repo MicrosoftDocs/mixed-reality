@@ -348,7 +348,7 @@ Microsoft provides assistance via market intelligence, content, tools, joint go-
 There are four key principles of partner-led sales and marketing of mixed reality solutions:
 * **Differentiated.** Partners lead with their own differentiated services/product offering, and they should have or develop advanced marketing skills and a differentiated value proposition.
 * **Performance-based.** As part of business planning, partners agree to specific, measurable performance metrics, and demonstrate measurable return on marketing investment in order to receive additional investment and incentives via the program.
-* **Digital first.**Partners should prioritize digital marketing and sales strategies. They should collaborate with and learn from digital marketing agencies (if needed) to plan and execute cost-effective digital marketing and social selling strategies across all their customer engagement channels.
+* **Digital first.** Partners should prioritize digital marketing and sales strategies. They should collaborate with and learn from digital marketing agencies (if needed) to plan and execute cost-effective digital marketing and social selling strategies across all their customer engagement channels.
 * **Intelligent.** Partners should leverage market data insights, account data, analyst report, Microsoft customer data and guidance to tune sales and marketing strategies, and to execute account-based marketing campaigns.
 
 **Sales and marketing content**
