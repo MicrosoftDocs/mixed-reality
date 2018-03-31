@@ -135,7 +135,7 @@ Once we receive your application, we will review it for fit within the program. 
 2. The application did not align with our current needs such as target industries, skills, or location.
 3. The program is full. We will keep you application on record for another 90 days.
 
-If the application looks promising, one of our regional partner managers (RPMs) will reach out to schedule a phone interview with you. The interview will be schedule for one hour. We ask that you have both a business and technical leader from your company on the call. Usually one of these roles will also be the your company's sponsor of the partnership, but if not, please have the internal sponsor on the call as well. During the interview, we will ask some deeper questions pertaining to the answers on your application, including:
+If the application looks promising, one of our regional partner managers (RPMs) will reach out to schedule a phone interview with you. The interview will be scheduled for one hour. We ask that you have both a business and technical leader from your company on the call. Usually one of these roles will also be the your company's sponsor of the partnership, but if not, please have the internal sponsor on the call as well. During the interview, we will ask some deeper questions pertaining to the answers on your application, including:
 * Business opportunities related to Windows Mixed Reality
 * How you approach envisioning and design
 * Team makeup and location
