@@ -339,7 +339,11 @@ The Microsoft team is available to provide technical assistance with pre-sales c
 
 ### Sales and marketing enablement
 
-An important aim of the Mixed Reality Partner Program is to help our partners market and sell their solutions and services. When accepted into the program, partners get access to content, tools, and a variety of sales and marketing support services. **Partner-lead sales and marketing** Microsoft provides assistance via market intelligence, content, tools, joint go-to-market execution (including PR and case study support), and a range of incentives; however, partners are expected to lead their own sales and marketing efforts.
+An important aim of the Mixed Reality Partner Program is to help our partners market and sell their solutions and services. When accepted into the program, partners get access to content, tools, and a variety of sales and marketing support services. 
+
+**Partner-lead sales and marketing** 
+
+Microsoft provides assistance via market intelligence, content, tools, joint go-to-market execution (including PR and case study support), and a range of incentives; however, partners are expected to lead their own sales and marketing efforts.
 
 There are four key principles of partner-led sales and marketing of mixed reality solutions:
 * **Differentiated.** Partners lead with their own differentiated services/product offering, and they should have or develop advanced marketing skills and a differentiated value proposition.
