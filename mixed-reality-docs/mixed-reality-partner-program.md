@@ -297,7 +297,9 @@ As part of readiness training, the Microsoft team provides partners sales and ma
 * selling 101
 * Generating demand with digital marketing
 
-Partners that complete the sales and marketing workshop receive access to a marketing and sales bill of materials that contains content and tools to support partner-led sales and marketing. Customer POC
+Partners that complete the sales and marketing workshop receive access to a marketing and sales bill of materials that contains content and tools to support partner-led sales and marketing. 
+
+**Customer POC**
 
 To “graduate” from the Readiness training phase, partners must conduct a successful customer proof of concept. To help partners meet this requirement, the Microsoft team will assist with the following:
 * Help the partner scope potential target accounts
