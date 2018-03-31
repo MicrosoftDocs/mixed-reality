@@ -371,7 +371,7 @@ Partners receive PR assistance for news-worthy events, customer wins, and large 
 
 **Web presence** 
 
-Partners get placement of company logo and short description on HoloLens.com/partners site, the Microsoft Partner Center, and the soon-to-be-published Mixed Reality web site. In addition, company contact info will be included in auto-locator on HoloLens web site
+Partners get placement of company logo and short description on HoloLens.com/partners site, the Microsoft Partner Center, and the soon-to-be-published Mixed Reality web site. In addition, company contact info will be included in auto-locator on HoloLens web site.
 
 **Microsoft Technology Centers** 
 
