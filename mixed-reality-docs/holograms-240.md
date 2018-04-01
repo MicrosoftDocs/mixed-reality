@@ -176,7 +176,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
     void Start()
     {
         // We care about getting updates for the anchor transform.
-        CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.StageTransform] = this.OnStageTransfrom;
+        CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.StageTransform] = this.OnStageTransform;
 
         // And when a new user join we will send the anchor transform we have.
         SharingSessionTracker.Instance.SessionJoined += Instance_SessionJoined;
@@ -235,7 +235,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
     /// When a remote system has a transform for us, we'll get it here.
     /// </summary>
     /// <param name="msg"></param>
-    void OnStageTransfrom(NetworkInMessage msg)
+    void OnStageTransform(NetworkInMessage msg)
     {
         // We read the user ID but we don't use it here.
         msg.ReadInt64();
@@ -364,7 +364,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
         DisableModel();
 
         // We care about getting updates for the model transform.
-        CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.StageTransform] = this.OnStageTransfrom;
+        CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.StageTransform] = this.OnStageTransform;
 
         // And when a new user join we will send the model transform we have.
         SharingSessionTracker.Instance.SessionJoined += Instance_SessionJoined;
@@ -469,7 +469,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
     /// When a remote system has a transform for us, we'll get it here.
     /// </summary>
     /// <param name="msg"></param>
-    void OnStageTransfrom(NetworkInMessage msg)
+    void OnStageTransform(NetworkInMessage msg)
     {
         // We read the user ID but we don't use it here.
         msg.ReadInt64();
@@ -723,7 +723,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
         DisableModel();
 
         // We care about getting updates for the model transform.
-        CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.StageTransform] = this.OnStageTransfrom;
+        CustomMessages.Instance.MessageHandlers[CustomMessages.TestMessageID.StageTransform] = this.OnStageTransform;
 
         // And when a new user join we will send the model transform we have.
         SharingSessionTracker.Instance.SessionJoined += Instance_SessionJoined;
@@ -907,7 +907,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
     /// When a remote system has a transform for us, we'll get it here.
     /// </summary>
     /// <param name="msg"></param>
-    void OnStageTransfrom(NetworkInMessage msg)
+    void OnStageTransform(NetworkInMessage msg)
     {
         // We read the user ID but we don't use it here.
         msg.ReadInt64();
