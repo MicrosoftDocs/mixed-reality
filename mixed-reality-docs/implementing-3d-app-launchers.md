@@ -20,7 +20,7 @@ The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) i
 
 There are 3 steps to creating a 3D app launcher.
 1. [Designing and concepting](3d-app-launcher-design-guidance.md)
-2. [Modeling and exporting](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
+2. [Modeling and exporting](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. Integrating it into your application (You are here.)
 
 ## Configuring the 3D launcher
