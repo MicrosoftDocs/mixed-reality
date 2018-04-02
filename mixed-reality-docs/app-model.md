@@ -256,4 +256,3 @@ With Windows 10 you no longer target an operating system but instead [target you
 * [App views](app-views.md)
 * [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
 * [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
-* [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
