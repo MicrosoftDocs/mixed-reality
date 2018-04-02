@@ -134,5 +134,4 @@ Windows Mixed Reality has a number of built-in apps, such as:
 * [Hardware accessories](hardware-accessories.md)
 * [Environment considerations for HoloLens](environment-considerations-for-hololens.md)
 * [Implementing 3D app launchers](implementing-3d-app-launchers.md)
-* [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
 * [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
