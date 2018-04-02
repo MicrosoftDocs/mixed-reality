@@ -231,13 +231,13 @@ Check for HoloLens RS4 Preview updates with **Windows Update**:
 
 This build is delivered over the air (OTA) through Windows Update after you've manually installed the HoloLens RS4 Preview using the instructions at the top of this page.
 
-**General changes, improvements, and fixes**
+* **General changes, improvements, and fixes**
 
-Fixes for speech reliability and overall reliability of the product.
+   * Fixes for speech reliability and overall reliability of the product.
 
-**Known issues**
+* **Known issues**
 
-Users may experience reliability issues with using voice to place Skype calls or launch apps for the first time.
+   * Users may experience reliability issues with using voice to place Skype calls or launch apps for the first time.
 
 ### Preview setup package FFU - Build 17123.1004
 
@@ -245,13 +245,13 @@ Users may experience reliability issues with using voice to place Skype calls or
 
 This is the build used for manually installing the HoloLens RS4 Preview (included in the [preview setup package](#downloading-the-hololens-rs4-preview-package) at the top of this page).
 
-**General changes, improvements, and fixes**
+* **General changes, improvements, and fixes**
 
-See the list of [new features in this preview](#new-features-in-this-preview) above.
+   * See the list of [new features in this preview](#new-features-in-this-preview) above.
 
-**Known issues**
+* **Known issues**
 
-Some users have reported an issue with Windows Insider Program settings on this build. If you encounter problems, please file a bug in Feedback Hub, and re-flash your device.
+   * Some users have reported an issue with Windows Insider Program settings on this build. If you encounter problems, please file a bug in Feedback Hub, and re-flash your device.
 
 ## Note for developers
 
