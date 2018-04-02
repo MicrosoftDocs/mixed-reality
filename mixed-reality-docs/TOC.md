@@ -152,7 +152,6 @@
 #### [Perception simulation](perception-simulation.md)
 ### Finishing your app
 #### [Implementing 3D app launchers](implementing-3d-app-launchers.md)
-#### [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
 #### [In-app purchases](in-app-purchases.md)
 #### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 ### Remote tools
