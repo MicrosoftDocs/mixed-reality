@@ -341,7 +341,7 @@ The Microsoft team is available to provide technical assistance with pre-sales c
 
 An important aim of the Mixed Reality Partner Program is to help our partners market and sell their solutions and services. When accepted into the program, partners get access to content, tools, and a variety of sales and marketing support services. 
 
-**Partner-lead sales and marketing** 
+**Partner-led sales and marketing** 
 
 Microsoft provides assistance via market intelligence, content, tools, joint go-to-market execution (including PR and case study support), and a range of incentives; however, partners are expected to lead their own sales and marketing efforts.
 
