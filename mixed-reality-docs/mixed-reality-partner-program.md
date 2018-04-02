@@ -135,7 +135,7 @@ Once we receive your application, we will review it for fit within the program. 
 2. The application did not align with our current needs such as target industries, skills, or location.
 3. The program is full. We will keep you application on record for another 90 days.
 
-If the application looks promising, one of our regional partner managers (RPMs) will reach out to schedule a phone interview with you. The interview will be schedule for one hour. We ask that you have both a business and technical leader from your company on the call. Usually one of these roles will also be the your company's sponsor of the partnership, but if not, please have the internal sponsor on the call as well. During the interview, we will ask some deeper questions pertaining to the answers on your application, including:
+If the application looks promising, one of our regional partner managers (RPMs) will reach out to schedule a phone interview with you. The interview will be scheduled for one hour. We ask that you have both a business and technical leader from your company on the call. Usually one of these roles will also be your company's sponsor of the partnership, but if not, please have the internal sponsor on the call as well. During the interview, we will ask some deeper questions pertaining to the answers on your application, including:
 * Business opportunities related to Windows Mixed Reality
 * How you approach envisioning and design
 * Team makeup and location
@@ -209,7 +209,7 @@ Once you graduate from the Readiness phase, your journey as a Mixed Reality Part
 * **Execute account plans that drive device sales.** We will be looking at the number units sold through your efforts including POC, pilots, and large deployments. As a part of this, we will want to understand your MR opportunity pipeline. This will help us better understand market trends, product needs, and (in general) where we should be putting our outbound efforts and resources.
 * **Deliver light-up scenarios.** We've only scratched the surface of how MR will benefit businesses and consumers. Compelling demos and applications show people what's possible and spawn new ideas. We value partners that are contributing to the Windows Mixed Reality Store. There are also opportunity to showcase your work at our Microsoft Technology Centers and other high-profile locations and events.
 * **Contribute to the MR community.** Windows Mixed Reality is a growing and active community, and being a part of it means learning from each other. We value partners who contribute to our forums and open source projects. Blog, speaking opportunities, hackathons, and other events are all great ways to get involved.
-* **Establish a deep partnership with us.** We encourage your to get to know us and stay in contact. Let us know about exciting new developments and opportunities. Contribute to our events and summits. Occasionally we may offer early access to information or hardware, so engage and give us feedback. By helping us, we can better help you.
+* **Establish a deep partnership with us.** We encourage you to get to know us and stay in contact. Let us know about exciting new developments and opportunities. Contribute to our events and summits. Occasionally we may offer early access to information or hardware, so engage and give us feedback. By helping us, we can better help you.
 
 All of the above represents elements of a business plan. You should expect your Microsoft team to review during our quarterly business updates. It is important to understand that graduation from the readiness program is not a long-term guarantee of staying in the program.
 
@@ -297,7 +297,9 @@ As part of readiness training, the Microsoft team provides partners sales and ma
 * selling 101
 * Generating demand with digital marketing
 
-Partners that complete the sales and marketing workshop receive access to a marketing and sales bill of materials that contains content and tools to support partner-led sales and marketing. Customer POC
+Partners that complete the sales and marketing workshop receive access to a marketing and sales bill of materials that contains content and tools to support partner-led sales and marketing. 
+
+**Customer POC**
 
 To “graduate” from the Readiness training phase, partners must conduct a successful customer proof of concept. To help partners meet this requirement, the Microsoft team will assist with the following:
 * Help the partner scope potential target accounts
@@ -337,12 +339,16 @@ The Microsoft team is available to provide technical assistance with pre-sales c
 
 ### Sales and marketing enablement
 
-An important aim of the Mixed Reality Partner Program is to help our partners market and sell their solutions and services. When accepted into the program, partners get access to content, tools, and a variety of sales and marketing support services. **Partner-lead sales and marketing** Microsoft provides assistance via market intelligence, content, tools, joint go-to-market execution (including PR and case study support), and a range of incentives; however, partners are expected to lead their own sales and marketing efforts.
+An important aim of the Mixed Reality Partner Program is to help our partners market and sell their solutions and services. When accepted into the program, partners get access to content, tools, and a variety of sales and marketing support services. 
+
+**Partner-led sales and marketing** 
+
+Microsoft provides assistance via market intelligence, content, tools, joint go-to-market execution (including PR and case study support), and a range of incentives; however, partners are expected to lead their own sales and marketing efforts.
 
 There are four key principles of partner-led sales and marketing of mixed reality solutions:
 * **Differentiated.** Partners lead with their own differentiated services/product offering, and they should have or develop advanced marketing skills and a differentiated value proposition.
 * **Performance-based.** As part of business planning, partners agree to specific, measurable performance metrics, and demonstrate measurable return on marketing investment in order to receive additional investment and incentives via the program.
-* **Digital first.**Partners should prioritize digital marketing and sales strategies. They should collaborate with and learn from digital marketing agencies (if needed) to plan and execute cost-effective digital marketing and social selling strategies across all their customer engagement channels.
+* **Digital first.** Partners should prioritize digital marketing and sales strategies. They should collaborate with and learn from digital marketing agencies (if needed) to plan and execute cost-effective digital marketing and social selling strategies across all their customer engagement channels.
 * **Intelligent.** Partners should leverage market data insights, account data, analyst report, Microsoft customer data and guidance to tune sales and marketing strategies, and to execute account-based marketing campaigns.
 
 **Sales and marketing content**
@@ -365,7 +371,7 @@ Partners receive PR assistance for news-worthy events, customer wins, and large 
 
 **Web presence** 
 
-Partners get placement of company logo and short description on HoloLens.com/partners site, the Microsoft Partner Center, and the soon-to-be-published Mixed Reality web site. In addition, company contact info will be included in auto-locator on HoloLens web site
+Partners get placement of company logo and short description on HoloLens.com/partners site, the Microsoft Partner Center, and the soon-to-be-published Mixed Reality web site. In addition, company contact info will be included in auto-locator on HoloLens web site.
 
 **Microsoft Technology Centers** 
 
