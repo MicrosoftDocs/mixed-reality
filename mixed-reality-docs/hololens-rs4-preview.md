@@ -33,8 +33,8 @@ You can download the preview setup package from [https://aka.ms/hololenspreviewd
 ## Installing the preview
 
 1. On a retail HoloLens device (Windows Holographic 10.0.14393), opt-in to Insider Preview builds to prepare your device for the RS4 Preview:
-   * Launch the **Settings** app -> **Update & Security** -> **Get Insider Preview builds** -> **Get started**.
-   * Select Restart to restart the device to prepare to install Preview builds and wait until your device is once again booted.
+   * Launch the **Settings** app, then select **Update & Security > Get Insider Preview builds > Get started**.
+   * Select **Restart** to restart the device to prepare to install Preview builds and wait until your device is once again booted.
 
 >[!NOTE]
 >If you need assistance getting your device back to a known state, refer to the [Reset & Recovery instructions](reset-or-recover-your-hololens.md).
@@ -88,7 +88,15 @@ You can download the preview setup package from [https://aka.ms/hololenspreviewd
 >After manually installing the HoloLens RS4 Preview build using the instructions above, you will need to use **Windows Update** to download the most up-to-date preview build. Check this page regularly to learn when [new preview builds are released and see what's changed in each](#update-history).
 
 Check for HoloLens RS4 Preview updates with **Windows Update**:
+1. Launch the **Settings** app, then select **Update & Security > Windows Insider Program** to confirm you're opted-in to Windows Insider Preview builds on HoloLens. 
+   * Select **Get started** if you aren't currently opted-in. You may need to restart your device.
+   * You'll also need to be registered in the Windows Insider Program if you aren't already. Learn more at [http://insider.windows.com](http://insider.windows.com).
+2. Under "What kind of content would you like to receive?”, choose **Active development of Windows**.
+3. Under “What pace do you want to get new builds?”, choose **Fast** to receive builds as soon as possible or **Slow** for less frequent updates.
+4. Navigate to **Windows Update** in the left bar, and select **Check for updates** to ensure you’re on the latest available build.
 
+>[!NOTE]
+>You may need to first select **Get started**, **Fix me**, or **Take control** at the top of the page depending on the state of your Microsoft account, and whether you have previously configured Windows Insider Program settings on your account. Additionally, you may see messages regarding content being on a different release – you can safely ignore these messages, as preview updates will continue to be delivered.
 
 ## New features in this preview
 
