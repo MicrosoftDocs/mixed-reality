@@ -30,9 +30,7 @@ The [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/win
 A new frame object must be used for each rendered frame as it is only valid for an instant in time. The **CurrentPrediction** property contains information such as the camera position. The information is extrapolated to the exact moment in time when the frame is expected to be visible to the user.
 
 
-From **AppMain::Update**
-
-```
+```cpp From HolographicApp1::Update() method:
 HolographicFrame^ holographicFrame = m_holographicSpace->CreateNextFrame();
 
 // Get a prediction of where holographic cameras will be when this frame is presented.
