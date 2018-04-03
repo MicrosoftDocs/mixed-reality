@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
 
 # What is a hologram?
 
-HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they are real objects. Holograms respond to your [gaze](gaze.md), [gestures](gestures.md) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
+HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your [gaze](gaze.md), [gestures](gestures.md) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
 
 <br>
 

@@ -88,7 +88,7 @@ To avoid eye and neck strain content should be designed so that excessive eye an
 
 The optimal (resting) gaze angle is considered between 10-20 degrees below horizontal, as the head tends to tilt downward slightly, especially during activities.
 
-![Allowable field of view (FOV) as determined by neck range of motion](images/optimal-field-of-view-2.png)<br>
+![Allowable field of view (FOV) as determined by neck range of motion](images/optimal-field-of-view-2-750px.png)<br>
 *Allowable field of view (FOV) as determined by neck range of motion*
 
 ## Arm positions

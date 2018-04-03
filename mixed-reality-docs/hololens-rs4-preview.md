@@ -1,6 +1,6 @@
 ---
 title: HoloLens RS4 Preview
-description: Learn more about the RS4 preview build for HoloLens, including how to install the preview, a description of the new features included, and how to provide feedback and get support.
+description: Learn more about the RS4 Preview build for HoloLens, including how to install the preview, a description of the new features included, and how to provide feedback and get support.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/23/2018
@@ -10,17 +10,20 @@ keywords: HoloLens, preview, insider, os, rs4, new features
 # HoloLens RS4 Preview
 
 >[!IMPORTANT]
->By downloading *or* using the HoloLens RS4 preview builds, you are acknowledging and agreeing to the **HoloLens RS4 Preview – EULA (End User License Agreement)**, included in the preview program package.
+>By downloading *or* using the HoloLens RS4 Preview builds, you are acknowledging and agreeing to the **HoloLens RS4 Preview – EULA (End User License Agreement)**, included in the preview setup package.
 
 In this article, you'll learn more about the HoloLens RS4 Preview. This preview is available to all HoloLens users, however, please note that installing this preview will erase all of your content and restore your device to factory settings. Like any pre-release software, you may encounter bugs and other issues along the way. For this reason, Preview builds are made for people who know their way around HoloLens and don’t mind frequent updates with significant changes.
 
-In order to install this preview, you must first download the latest version of the Windows Device Recovery Tool and ensure that your HoloLens is enrolled in the Windows Insider Program. 
+In order to install this preview, you must first download the latest version of the Windows Device Recovery Tool and ensure that your HoloLens is enrolled in the Windows Insider Program. After installing the preview, [check for updated preview builds](#staying-up-to-date) with **Windows Update**.
 
 ## Downloading the HoloLens RS4 Preview package
 
-You can download the setup package from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
+You can download the preview setup package from [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload).
 
-## What's in the package?
+>[!IMPORTANT]
+>All updates to the HoloLens RS4 Preview will be delivered over-the-air (OTA) through Windows Update. If you've already manually installed the HoloLens RS4 Preview, please read [Staying up-to-date](#staying-up-to-date) below. For additional information on each release, refer to [Update history](#update-history) below.
+
+### What's in the package?
 
 | File | Description |
 |------|------|
@@ -30,8 +33,8 @@ You can download the setup package from [https://aka.ms/hololenspreviewdownload]
 ## Installing the preview
 
 1. On a retail HoloLens device (Windows Holographic 10.0.14393), opt-in to Insider Preview builds to prepare your device for the RS4 Preview:
-   * Launch the **Settings** app -> **Update & Security** -> **Get Insider Preview builds** -> **Get started**.
-   * Select Restart to restart the device to prepare to install Preview builds and wait until your device is once again booted.
+   * Launch the **Settings** app, then select **Update & Security > Get Insider Preview builds > Get started**.
+   * Select **Restart** to restart the device to prepare to install Preview builds and wait until your device is once again booted.
 
 >[!NOTE]
 >If you need assistance getting your device back to a known state, refer to the [Reset & Recovery instructions](reset-or-recover-your-hololens.md).
@@ -76,6 +79,24 @@ You can download the setup package from [https://aka.ms/hololenspreviewdownload]
    ![Device info](images/WDRT314-RS4Preview-8.png)
 
 4. Go through the HoloLens on-device OOBE setup flow. Sign-in with your personal or work account to experience all the features of this Preview.
+
+5. After signing-in, check for HoloLens RS4 Preview updates with **Windows Update** (see [Staying up-to-date](#staying-up-to-date) section below).
+
+## Staying up-to-date
+
+>[!IMPORTANT]
+>After manually installing the HoloLens RS4 Preview build using the instructions above, you will need to use **Windows Update** to download the most recent preview build. Check this page regularly for information on [new preview builds](#update-history), including fixes, improvements, and known issues.
+
+Check for HoloLens RS4 Preview updates with **Windows Update**:
+1. Launch the **Settings** app, then select **Update & Security > Windows Insider Program** to confirm you're opted-in to Windows Insider Preview builds on HoloLens. 
+   * Select **Get started** if you aren't currently opted-in. You may need to restart your device.
+   * You also need to sign-up for the Windows Insider Program if you haven't already. Learn more at [http://insider.windows.com](http://insider.windows.com).
+2. Under "What kind of content would you like to receive?”, choose **Active development of Windows**.
+3. Under “What pace do you want to get new builds?”, choose **Fast** to receive builds as soon as possible or **Slow** for less frequent updates.
+4. Navigate to **Windows Update** in the left bar, and select **Check for updates** to ensure you’re on the latest available build.
+
+>[!NOTE]
+>You may need to first select **Get started**, **Fix me**, or **Take control** at the top of the page depending on the state of your Microsoft account, and whether you have previously configured Windows Insider Program settings on your account. Additionally, you may see messages regarding content being on a different release – you can safely ignore these messages, as preview updates will continue to be delivered.
 
 ## New features in this preview
 
@@ -202,9 +223,35 @@ You can download the setup package from [https://aka.ms/hololenspreviewdownload]
   </tr>
 </table>
 
-## Known issues in this preview
+## Update history
 
-* Some users have reported an issue with Windows Insider Program settings on this build. If you encounter problems, please file a bug in Feedback Hub, and re-flash your device.
+### Update 1 - Build 17133.1004
+
+*Released April 3, 2018*
+
+This build is delivered over the air (OTA) through Windows Update after you've manually installed the HoloLens RS4 Preview using the instructions at the top of this page.
+
+* **General changes, improvements, and fixes**
+
+   * Fixes for speech reliability and overall reliability of the product.
+
+* **Known issues**
+
+   * Users may experience reliability issues with using voice to place Skype calls or launch apps for the first time.
+
+### Preview setup package FFU - Build 17123.1004
+
+*Released March 26, 2018*
+
+This is the build used for manually installing the HoloLens RS4 Preview (included in the [preview setup package](#downloading-the-hololens-rs4-preview-package) at the top of this page).
+
+* **General changes, improvements, and fixes**
+
+   * See the list of [new features in this preview](#new-features-in-this-preview) above.
+
+* **Known issues**
+
+   * Some users have reported an issue with Windows Insider Program settings on this build. If you encounter problems, please file a bug in Feedback Hub, and re-flash your device.
 
 ## Note for developers
 
