@@ -488,7 +488,7 @@ Each instance accesses a different view/projection matrix from the constant buff
 
 From **VPRTVertexShader.hlsl**
 
-```
+```HLSL
 cbuffer ViewProjectionConstantBuffer : register(b1)
 {
     float4x4 viewProjection[2];
