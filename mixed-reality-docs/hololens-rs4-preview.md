@@ -210,7 +210,13 @@ Check for HoloLens RS4 Preview updates with **Windows Update**:
   <td>Developer CSP</td><td>Deploy profile to set up HoloLens in <b>Developer mode</b>. Useful for both development and demo devices.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
   </tr>
   <tr>
-  <td>Assigned Access for Kiosk Mode</td><td>Windows assigned access for first-line workers or demos. Single or multi-app lockdown. No need to developer unlock.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+  <td>Assigned access</td><td>Windows assigned access for first-line workers or demos. Single or multi-app lockdown. No need to developer unlock.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+  </tr>
+  <tr>
+  <td>Assigned access with guest</td><td>Windows assigned access with password-less guest account for demos. Single or multi-app lockdown. No need to developer unlock.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+  </tr>
+  <tr>
+  <td>Account management</td><td>Share a HoloLens device and remove user data after sign-out or inactivity/storage thresholds for temporary usage. Supports AAD accounts.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
   </tr>
   <tr>
     <td>Set up (OOBE) diagnostics</td><td>Get diagnostic logs from HoloLens so you can troubleshoot AAD sign-in failures (before Feedback Hub is available to the user whose sign-in failed).</td><td>Diagnostic logs are now available in some cases if you have problems adding your work account during initial device setup. When available, select <b>Collect info</b>. You can connect your HoloLens to a desktop PC and copy the diagnostic files to use for troubleshooting the issue.</td>
