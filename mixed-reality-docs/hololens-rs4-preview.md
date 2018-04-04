@@ -204,7 +204,7 @@ Check for HoloLens RS4 Preview updates with **Windows Update**:
   <td>Windows Configuration Designer (WCD)</td><td>Create and edit provisioning packages to configure HoloLens via updated WCD app. New simple HoloLens wizard for edition update, configurable OOBE, region/time zone, bulk AAD token, network, and developer CSP. Advanced editor filtered to HoloLens supported options, including new Assigned Access and Account Management CSPs.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
   </tr>
   <tr>
-    <td>Bulk AAD token support</td><td>Pre-register device to AAD directory tenant for quicker user setup flow.</td><td><The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+    <td>Bulk AAD token support</td><td>Pre-register device to AAD directory tenant for quicker user setup flow.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
   </tr>
   <tr>
   <td>Developer CSP</td><td>Deploy profile to set up HoloLens in <b>Developer mode</b>. Useful for both development and demo devices.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
