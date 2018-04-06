@@ -259,11 +259,13 @@ This is the build used for manually installing the HoloLens RS4 Preview (include
 
    * Some users have reported an issue with Windows Insider Program settings on this build. If you encounter problems, please file a bug in Feedback Hub, and re-flash your device.
 
-## Note for developers
+## Updating HoloLens apps for RS4
 
-You are welcome to try developing your applications using this build of HoloLens. Continue using the [Windows Mixed Reality developer documentation](index.md) to guide your development, as these apply to this latest build of HoloLens as well. You can use the same builds of [Unity and Visual Studio](install-the-tools.md) that you're already using for HoloLens development.
+You are welcome to try developing your applications using this build of HoloLens. Continue using the [Windows Mixed Reality developer documentation](index.md) to guide your development, as these apply to this latest build of HoloLens as well. You can use the same builds of [Unity and Visual Studio](install-the-tools.md) that you're already using for HoloLens development. Reference the [new features list above](#new-features-in-this-preview) for capabilities specific to the HoloLens RS4 Preview.
 
-Reference the [new features list above](#new-features-in-this-preview) for capabilities specific to the HoloLens RS4 Preview.
+HoloLens RS4 changes that may affect your apps:
+* **Permission requests to use sensitive resources (camera, microphone, etc.)** - RS4 on HoloLens will enforce permission requests for apps intending to access sensitive resources, such as the camera or microphone. RS1 on HoloLens did not force these prompts, so, if your app assumes immediate access to these resources, it may crash in RS4 (even if the user grants permission to the requested resource). Please read the relevant [UWP app capability declarations article](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) for more information.
+* **Calls to apps outside your own** - RS4 on HoloLens will enforce proper use of the [*Windows.System.Launcher* class](https://docs.microsoft.com/en-us/uwp/api/Windows.System.Launcher) to launch another app from your own. For example, we've seen issues with apps calling *Windows.System.Launcher.LaunchUriForResultsAsync* from a non-ASTA (UI) thread. This would succeed in RS1 on HoloLens, but RS4 requires the call to be executed on the UI thread.
 
 ## Provide feedback and report issues
 
