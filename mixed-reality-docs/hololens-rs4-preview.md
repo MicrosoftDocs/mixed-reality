@@ -265,7 +265,7 @@ You are welcome to try developing your applications using this build of HoloLens
 
 HoloLens RS4 changes that may affect your apps:
 * **Permission requests to use sensitive resources (camera, microphone, etc.)** - RS4 on HoloLens will enforce permission requests for apps intending to access sensitive resources, such as the camera or microphone. RS1 on HoloLens did not force these prompts, so, if your app assumes immediate access to these resources, it may crash in RS4 (even if the user grants permission to the requested resource). Please read the relevant [UWP app capability declarations article](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) for more information.
-* **Calls to apps outside your own** - RS4 on HoloLens will enforce proper use of the [*LaunchUriForResultsAsync()*](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/how-to-launch-an-app-for-results) API making calls to an app outside your own. For example, we've seen issues with apps making the call from a non-ASTA (UI) thread. RS4 requires a valid modal parent in order to show a modal view.
+* **Calls to apps outside your own** - RS4 on HoloLens will enforce proper use of the [*Windows.System.Launcher* class](https://docs.microsoft.com/en-us/uwp/api/Windows.System.Launcher) to launch another app from your own. For example, we've seen issues with apps calling *Windows.System.Launcher.LaunchUriForResultsAsync* from a non-ASTA (UI) thread. This would succeed in RS1 on HoloLens, but RS4 requires the call to be executed on the UI thread.
 
 ## Provide feedback and report issues
 
