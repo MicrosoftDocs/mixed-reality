@@ -1,5 +1,5 @@
 ---
-title: Case study: Expanding the design process for mixed reality
+title: Case study - Expanding the design process for mixed reality
 description: Adding techniques to your design process to help your team think spatially and more easily envision mixed reality experiences.
 author: mavitazk
 ms.author: mavitazk
