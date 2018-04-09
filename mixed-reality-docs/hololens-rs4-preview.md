@@ -231,6 +231,21 @@ Check for HoloLens RS4 Preview updates with **Windows Update**:
 
 ## Update history
 
+### Update 2 - Build 17133.1009
+
+*Released April 10, 2018*
+
+This build is delivered over the air (OTA) through Windows Update after you've manually installed the HoloLens RS4 Preview using the instructions at the top of this page.
+
+* **General changes, improvements, and fixes**
+
+   * Fixes for overall reliability and sign-in using PIN.
+
+* **Known issues**
+
+   * Users may experience reliability issues with using voice to launch apps for the first time.
+
+
 ### Update 1 - Build 17133.1004
 
 *Released April 3, 2018*
