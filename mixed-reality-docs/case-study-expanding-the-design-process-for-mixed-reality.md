@@ -20,6 +20,9 @@ Any design process or framework is means to expand a participant’s thinking. T
 
 With mixed reality experience, the requirements for an individual’s contribution to the team, even early in the ideation process, can be unnecessarily high. While 3D tools often include a high degree of proficiency to quickly build out ideas, and while technical challenges can represent far greater unknowns than with more well-understood devices, there is a danger of limiting the design contributions of your team to only those with 3D development backgrounds.
 
+![Teams working during a workshop in the Mixed Reality Academy](images/academyTeam1000.png)<br>
+*Teams working during a workshop in the Mixed Reality Academy*
+
 When we work with external partners it is common to hear stories of teams ‘waiting for the developer to finish the prototype’ before they can continue with their design process. This means the rest of the team is often blocked in making meaningful progress on the product, while the developer is often burdened to understand both the technical feasibility of an idea as well as the details of the user experience (as they attempt to put a rough idea into code). While teams often struggle with this in their initial projects, we have found that many uncover techniques and methods to more effectively include their team and more quickly iterate through complex design problems. These solutions involve doing more design thinking before the prototyping phase, with techniques that lower the skill requirement to offering ideas in 3D. 
 
 While not a formal process, these techniques are intended to supplement rather than replace your workflow. These methods spread the design thinking across specialized areas and points of decision making. Stakeholders can be part of the design process early on to make broad decisions, developers can take part to avoid pursuing unnecessary avenues. Each of these individuals contribute to solving the design problem, and this level of input throughout the process is key to success.
@@ -28,13 +31,22 @@ While not a formal process, these techniques are intended to supplement rather t
 
 Getting your team to think about events occurring in the real world, beyond the traditional world of 2D devices, is key to developing innovative mixed reality experiences. At Microsoft, we’ve found the best way to do this is to encourage interaction with physical props in a real-world space. Using simple, cheap crafting materials we build physical props to represent digital objects, user interfaces, and animations in a proposed experience. This technique is called ‘bodystorming’ and has been a staple of product ideation within the industrial design field for decades. Bodystorming can be used for both generating ideas and evaluating concepts, understanding the use of elements spatially, while also providing a means to see the experience from a user’s perspective.
 
+![Workshop materials in the Mixed Reality Academy](images/academyMat1000.png)<br>
+*Workshop materials in the Mixed Reality Academy*
+
+
 Simple, physical props level the playing field for participants, allowing individuals with different skill sets and backgrounds to contribute ideas and uncover opportunities inherent to mixed reality experiences instead of being locked into the paradigm of 2D thinking. While technical prototyping or high-fidelity storyboarding can take a trained 3D developer or artist, a few Styrofoam balls and cardboard can be enough to showcase how a mixed reality interface might unfold in physical space. These techniques apply to both mixed reality development with the HoloLens as well as immersive experiences. For example, a set of plastic connectors might illustrate the size of holograms that appear in a HoloLens experience or as props to act out interactable elements in a virtual world.
+
+![Teams working with materials in the Mixed Reality Academy](images/academyWork1000.png)
 
 Bodystorming can best be thought of as a technique to quickly generate ideas as well as evaluate nebulous ideas that are too rough to prototype. At Microsoft, often bodystorming is most commonly seen as a quick activity to vet an idea but it can be helpful to host a more in-depth bodystorming session if you are involving outside stakeholders who are not familiar with mixed reality development, or you have very broad ideas that need to be distilled. Remember that the purpose of bodystorming is to ideate quickly and efficiently by encouraging participants to think spatially. Detailed artwork, or precise sizing is not important at this stage. Physical props need only meet the minimum requirements to explore or communicate an idea. Ideas presented through bodystorming are not expected to be full vetted, but the process can help narrow down possibilities that can be tested later during the in-device prototyping phase. Bodystorming is not intended to replace technical prototyping, but rather shift the burden of solving both technical and design challenges during the prototyping phase.
 
 ## Acting and expert feedback
 
 Following the bodystorming process of ideating with physical objects in the real world, the next step is often to walk through an experience with these objects. We call this phase of the process ‘acting’ and it often involves staging how a user would proceed through the experience or a specific interaction.
+
+![Teams acting out a scenario during a workshop in the Mixed Reality Academy](images/academyCollab1000.png)<br>
+*Teams acting out a scenario during a workshop*
 
 Acting with physical props allows participants to not only experience the thinking through the perspective of the user but can allow outside observers to see how events play out. This presents an ideal time to include a wider audience of team members or stakeholders that can provide specific ‘expert’ feedback. For example, if you are exploring a mixed reality experience designed for hospitals, acting out your thinking to a medical professional can provide invaluable feedback. Another example is when you might have a specific challenge you are trying to understand, like spatial audio or budgeting for asset quality vs. performance. In these cases, acting can give experts a quick, rough concept of how the experience might unfold, without the need for a device-based prototype.
 
@@ -44,7 +56,13 @@ Often this sort of acting is not formalized, and there’s no need to bring in p
 
 The best method for conveying the ideas and concepts of your proposed mixed reality experience depends on your intended audience, as well as the type of feedback your next iteration requires. Often when presenting new concepts to team members, low fidelity re-enactments of bodystorming or quick sketches can be enough to bring someone up to speed. In cases where you are showing your design concepts to a new stakeholder the best method is often storyboarding. Storyboarding is a technique common to the entertainment industry (often found behind the scenes in movies and video game development) and helps convey both the overall flow of an experience (at low fidelities) as well as the aesthetic look and feel (at high fidelities). Just as is the case with prototyping, understanding the fidelity needs of your storyboard is key to gathering the right kind of feedback and avoiding counter-productive discussions.
 
-Low-fidelity storyboards can be the right fidelity for quick discussions, especially when conveying high-level ideas. These often contain stick-figure drawings and primitive shapes to denote virtual elements in a scene or the proximity of interactive elements (both physical and virtual). While these can be useful given the relative ease and low skill barrier to execute, remember the lesson from bodystorming: Not everyone can see 2D depictions of an experience and understand the 3D implications. 
+![Example of a low-fidelity storyboard](images/storyboardLow1000.png)<br>
+*Example of a low-fidelity storyboard*
+
+Low-fidelity storyboards can be the right fidelity for quick discussions, especially when conveying high-level ideas. These often contain stick-figure drawings and primitive shapes to denote virtual elements in a scene or the proximity of interactive elements (both physical and virtual). While these can be useful given the relative ease and low skill barrier to execute, remember the lesson from bodystorming: Not everyone can see 2D depictions of an experience and understand the 3D implications.
+
+![Example of a high-fidelity storyboard](images/storyboardHigh1000.png)<br>
+*Example of a high-fidelity storyboard*
 
 High-fidelity storyboards are a powerful tool when bringing in new stakeholders or when combining insights from a bodystorming session with the proposed aesthetic direction of your experience. Storyboards can build off mood boards to illustrate the final appearance of a virtual experience, as well as capture key moments that may be pivotal to the final product. Keep in mind that high-fidelity storyboards often require an artist, especially one embedded in the team, who can capture difficult to describe ideas. At Microsoft we include storyboard artists as part of our mixed reality teams (often with backgrounds in game development) who attend meetings prepared to quickly capture sketches that will later be expanded into higher fidelity mockups. These individuals also work closely with technical artists, helping to convey the artistic direction of assets used in the final experience.
 
@@ -66,7 +84,7 @@ In the early days of HoloLens, these techniques were borne out of necessity as t
 
 In the end, your design process should save you time and effort, helping your team spend energy on new and challenging mixed reality design problems rather than overcoming difficulties communicating ideas. Whether you spend a full day ideating new concepts or just need to spend 10 minutes to explain the behavior of a hologram, remember these techniques to help your team work effectively on your next project.
 
-### Sample list of supplies
+### Sample list of workshop supplies
 
 Simple, cheap art supplies are key to providing team members with the tools necessary to explain ideas without requiring advanced artistic skills. Here is a sample of what our team commonly uses during bodystorming:
 
@@ -88,3 +106,7 @@ Simple, cheap art supplies are key to providing team members with the tools nece
 * Twine
 * Pencils
 * Sharpies
+
+## See also
+* [Case study - My first year on the HoloLens design team](case-study-my-first-year-on-the-hololens-design-team.md)
+* [Case study - AfterNow's process - envisioning, prototyping, building](https://developer.microsoft.com/en-us/windows/mixed-reality/case_study_-_afternow's_process_-_envisioning,_prototyping,_building)
