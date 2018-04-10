@@ -34,6 +34,12 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                             <a href="about-this-design-guidance.md">About this guidance</a>
                         </p>
                         <p>
+                            <a href="case-study-my-first-year-on-the-hololens-design-team.md">My first year on the design team</a>
+                        </p>
+                        <p>
+                            <a href="case-study-expanding-the-design-process-for-mixed-reality.md">Expanding the design process for mixed reality</a>
+                        </p>
+                        <p>
                             <a href="case-study-the-pursuit-of-more-personal-computing.md">The pursuit of more personal computing</a>
                         </p>
                     </div>

@@ -41,8 +41,9 @@
 ### Get started with design
 #### [What is mixed reality?](mixed-reality.md)
 #### [My first year on the design team](case-study-my-first-year-on-the-hololens-design-team.md)
-#### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
+#### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 #### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
+#### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
 ### Interaction design
 #### [Interaction fundamentals](Interaction-fundamentals.md)
 #### [Comfort](Comfort.md)
