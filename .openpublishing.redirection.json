@@ -1,0 +1,14 @@
+{
+	"redirections": [
+		{
+			"source_path": "mixed-reality-docs/doc_name_to_redirect.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/doc_name_destination",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/doc_name_to_redirect.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/doc_name_destination",
+			"redirect_document_id": false
+		}
+	]
+}
