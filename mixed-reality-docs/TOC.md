@@ -177,6 +177,7 @@
 ### [Creating a galaxy in mixed reality](case-study-creating-a-galaxy-in-mixed-reality.md)
 ### [Creating an immersive experience in Fragments](case-study-creating-an-immersive-experience-in-fragments.md)
 ### [Creating impossible perspectives for HoloTour](case-study-creating-impossible-perspectives-for-holotour.md)
+### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [Expanding the spatial mapping capabilities of HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
 ### [HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 ### [Lessons from the Lowe's kitchen](case-study-lessons-from-the-lowes-kitchen.md)
