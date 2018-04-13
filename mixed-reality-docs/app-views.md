@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: immersive view, 2D view, slate
+keywords: immersive view, 2D view, slate, app
 ---
 
 # App views
