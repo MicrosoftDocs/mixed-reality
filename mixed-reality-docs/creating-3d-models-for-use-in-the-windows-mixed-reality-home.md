@@ -11,7 +11,7 @@ keywords: 3D, modeling, modeling guidance, asset requirements, authoring guideli
 
 # Creating 3D models for use in the Windows Mixed Reality home
 
-The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. You can design your application for Windows Mixed Reality headsets to leverage a [3D model as an app launcher](implementing-3d-app-launchers.md) and to allow [3D deep links to be placed into the Windows Mixed Reality home from within your app](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md). This article outlines the guidelines for creating 3D models compatible with the Windows Mixed Reality home.
+The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. You can design your application for Windows Mixed Reality headsets to leverage a [3D model as an app launcher](implementing-3d-app-launchers.md) and to allow 3D deep links to be placed into the Windows Mixed Reality home from within your app. This article outlines the guidelines for creating 3D models compatible with the Windows Mixed Reality home.
 
 ## Asset requirements overview
 When creating 3D models for Windows Mixed Reality there are some requirements that all assets must meet: 
@@ -199,5 +199,4 @@ The following material properties are ignored from core spec:
 
 ## See also
 * [Implementing 3D app launchers](implementing-3d-app-launchers.md)
-* [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
 * [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
