@@ -21,7 +21,7 @@ Windows 10 Fall Creators Update will ship with a mixed reality world. This world
 
 There are 3 steps to creating a 3D app launcher.
 1. Designing and concepting (You are here.)
-2. [Modeling and exporting](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
+2. [Modeling and exporting](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. [Integrating it into your application](implementing-3d-app-launchers.md)
 
 ## Design concepts
@@ -184,3 +184,4 @@ We recommend using [Substance Painter](https://www.allegorithmic.com/products/su
 ## See also
 * [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
 * [Implementing 3D app launchers](implementing-3d-app-launchers.md)
+* [Creating 3D models for use in the Windows Mixed Reality Home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
