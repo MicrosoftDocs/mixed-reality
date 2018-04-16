@@ -29,7 +29,7 @@ When you create a new project in Visual Studio, it creates a simple default tile
 
 ## XML
 > [!NOTE]
-> This feature was added as part of the 2017 Fall Creators update for Immersive headsets, and the 2018 Spring Creators update on HoloLens. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on Immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk)
+> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
  First, at the top of the app manifest add the uap5 schema and include it as an ignorable namespace:
 
@@ -73,7 +73,8 @@ The MixedRealityModel elements accepts a file path pointing to a 3D asset stored
 
 A bounding box can be used to optionally add an additional buffer region around the object. The bounding box is specified using a center point and extents which indicate the distance from the center of the bounding box to its edges along each axis. Units for the bounding box can be mapped to 1 unit = 1 meter. If a bounding box is not provided then one will be automatically fitted to the mesh of the object. If the provided bounding box is smaller than the model then it will be resized to fit the mesh.
 
-Support for the bounding box attribute was added in the 2018 Spring creators update as a property on the MixedRealityModel element. To define a bounding box first at the top of the app manifest add the uap6 schema and include it them as ignorable namespaces:
+Support for the bounding box attribute will come with the Windows RS4 update as a property on the MixedRealityModel element. To define a bounding box first at the top of the app manifest add the uap6 schema and include it them as ignorable namespaces:
+
 ```xml
 <Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
          xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
@@ -107,9 +108,9 @@ Your 2D applications can be enhanced for Windows Mixed Reality by adding the abi
 
 ## Creating a 3D “secondaryTile”
 > [!NOTE]
-> This feature was added as part of the 2017 Fall Creators updated. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299.91 which can be downloaded [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk)
+> This feature was added as part of the 2017 Fall Creators Update (RS3). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299.91 which can be downloaded [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk)
 
- You can place 3D content from your application using “secondaryTiles” by defining a mixed reality model at creation time. Mixed reality models are created by referencing a 3D asset in your app package and optionally defining a bounding box. **Note:** creating “secondaryTiles” from within an exclusive view is not currently supported.
+You can place 3D content from your application using “secondaryTiles” by defining a mixed reality model at creation time. Mixed reality models are created by referencing a 3D asset in your app package and optionally defining a bounding box. **Note:** creating “secondaryTiles” from within an exclusive view is not currently supported.
 
 ```cs
 using Windows.UI.StartScreen;
@@ -145,7 +146,7 @@ A bounding box can be used to add an additional buffer region around the object.
 
 ### Activation behavior
 > [!NOTE]
-> This feature was added as part of the 2018 Spring Creators updated. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 if you plan to use this feature
+> This feature will be supported as of the Windows RS4 update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 if you plan to use this feature
 
 You can define the activation behavior for a 3D secondaryTile to control how it reacts when a user selects it. This can be used to place 3D objects in the Mixed Reality home that are purley informative or decorative. The following activation behavior types are supported:
 1. Default: When a user selects the 3D secondaryTile the app is activated
