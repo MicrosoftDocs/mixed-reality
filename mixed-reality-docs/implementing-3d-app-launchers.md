@@ -1,6 +1,6 @@
 ---
-title: Implementing 3D app launchers
-description: How to create 3D app launchers and logos for Windows Mixed Reality apps and games. 
+title: Implement 3D app launchers
+description: How to create 3D app launchers and logos for Windows Mixed Reality apps and games, both on HoloLens and immersive (VR) headsets. 
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
@@ -10,7 +10,7 @@ keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube
 
 
 
-# Implementing 3D app launchers
+# Implement 3D app launchers
 
 The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating an application for Windows Mixed Reality, by default apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place.
 
