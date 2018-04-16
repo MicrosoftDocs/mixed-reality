@@ -81,7 +81,7 @@
 #### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 #### [Asset creation process](asset-creation-process.md)
 #### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
-#### [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+#### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 
 ## [Development](development.md)
 ### [Development overview](development-overview.md)
@@ -152,7 +152,7 @@
 #### [HoloLens emulator archive](hololens-emulator-archive.md)
 #### [Perception simulation](perception-simulation.md)
 ### Finishing your app
-#### [Implementing 3D app launchers](implementing-3d-app-launchers.md)
+#### [Implement 3D app launchers](implementing-3d-app-launchers.md)
 #### [In-app purchases](in-app-purchases.md)
 #### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 ### Remote tools
