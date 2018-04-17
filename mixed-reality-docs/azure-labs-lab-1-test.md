@@ -58,7 +58,7 @@ To use the Azure Translator API, you will need to configure an instance of the s
     1.	If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 2.	Once you are logged in, click on ***New*** in the top left corner, and search for ***Translator Text API***, and click ***Enter***.
 
-    > [!NOTE]  
+    > [!NOTE]
     > The word ***New*** may have been replaced with ***Create a resource***, in newer portals.
 
     ![New Resource](images/AzureLabs-Lab1-02.png)
@@ -73,7 +73,7 @@ To use the Azure Translator API, you will need to configure an instance of the s
     3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a **Translator Text Service**, a free tier (named F0) should be available to you.
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
     
-        > [!NOTE]  
+        > [!NOTE]
         > If you wish to read more about Azure Resource Groups, please follow this link:
     https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal
 
@@ -103,7 +103,7 @@ To use the Azure Translator API, you will need to configure an instance of the s
 ### **Step 1 – Set up the Unity Project**
 Set up and test your Mixed Reality Immersive Headset. 
 
-> [!NOTE]  
+> [!NOTE]
 > You will ***not*** require Motion Controllers for this Lab. If you need support setting up the Immersive Headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 The following is a typical set up for developing with Mixed Reality, and as such, is a good template for other projects.
@@ -459,7 +459,7 @@ To create this class:
 7.	You can *delete* the **Update()** method since this class will not use it.
 8.	Now you need the methods that the App uses to start and stop the voice capture, and pass it to the **Translator** class, that you will build soon. Copy the following code and paste it beneath the **Start()** method.
 
-    > [!NOTE]  
+    > [!NOTE]
     > Though this application will not make use of it, the **StopCapturingAudio()** method has also been provided here, should you want to implement the ability to stop capturing audio in your application.
 
 ```csharp
@@ -579,7 +579,7 @@ You can find all the languages available by following this [LINK](https://www.mi
 6.	Code for the **Awake()** and **Start()** methods now needs to be added. 
 7.	In this case, the code will make a call to **Azure** using the authorization Key, to get a **Token**.
 
-> [!NOTE]  
+> [!NOTE]
 > The token will expire after 10 minutes. Depending on the scenario for your app, you might have to make the same coroutine call multiple times.
 
 ```csharp
