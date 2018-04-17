@@ -19,23 +19,25 @@ If you don't intend on using the system keyboard in your application, our recomm
 ![Unity build settings](images/unitybuildsettings-300px.png)<br>
 *Unity build settings*
 
-1.  When you are ready to export your project from Unity, open the **File** menu and select **Build Settings...**
-2.  Click **Add Open Scenes** to add your scene to the build
-3.  In the **Build Settings** dialog, choose the following options to export for HoloLens:
-   * **Platform:** *Windows Store* and be sure to select **Switch Platform** for your selection to take effect
-   * **SDK:** *Universal 10*
-   * **UWP Build Type:** *D3D* or *XAML*
-4.  **Optional**: **Unity C# Projects:** Checked. 
+1. When you are ready to export your project from Unity, open the **File** menu and select **Build Settings...**
+2. Click **Add Open Scenes** to add your scene to the build.
+3. In the **Build Settings** dialog, choose the following options to export for HoloLens:
+   * **Platform:** *Windows Store* and be sure to select **Switch Platform** for your selection to take effect.
+   * **SDK:** *Universal 10*.
+   * **UWP Build Type:** *D3D* or *XAML*.
+4. **Optional**: **Unity C# Projects:** Checked.
+
 >[!NOTE]
 >Checking this box allows you to:
->1. Debug your app in the Visual Studio remote debugger
->2. Edit scripts in the Unity C# project while using IntelliSense for WinRT APIs.
-5.  From the **Build Settings...** window, open **Player Settings...**
-6.  Select the **Settings for Windows Store** tab
-7.  Expand the **Other Settings** group
-8.  In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality Devices** list and confirm **"Windows Mixed Reality"** is listed as a supported device.
-9.  Return to the **Build Settings** dialog
-10. Select **Build**
+>* Debug your app in the Visual Studio remote debugger.
+>* Edit scripts in the Unity C# project while using IntelliSense for WinRT APIs.
+
+5. From the **Build Settings...** window, open **Player Settings...**
+6. Select the **Settings for Windows Store** tab.
+7. Expand the **Other Settings** group.
+8. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality Devices** list and confirm **"Windows Mixed Reality"** is listed as a supported device.
+9. Return to the **Build Settings** dialog.
+10. Select **Build**.
 11. In the Windows Explorer dialog that appears, create a new folder to hold Unity's build output. Generally, we name the folder "App".
 12. Select the newly created folder and click **Select Folder**.
 13. Once Unity has finished building, a Windows Explorer window will open to the project root directory. Navigate into the newly created folder.
