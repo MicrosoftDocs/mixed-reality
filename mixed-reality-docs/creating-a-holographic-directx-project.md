@@ -30,11 +30,8 @@ Now you can create your DirectX 11 Windows Mixed Reality App! Note, to remove th
 
 ## Creating the project
 
->[!NOTE] The rest of the instructions in this article describe how to create a UWP holographic project using C++/CX.
->
->C++/WinRT sample code for both UWP and Win32 projects is coming soon.
->
->To create a Win32 holographic project, skip to the [Creating a Win32 project](#creating-a-win32-project) section.
+>[!NOTE]
+>The rest of the instructions in this article describe how to create a UWP holographic project using C++/CX. C++/WinRT sample code for both UWP and Win32 projects is coming soon. To create a Win32 holographic project, skip to the [Creating a Win32 project](#creating-a-win32-project) section.
 
 Once the tools are installed you can then create a holographic DirectX project. To create a new project:
 1. Start **Visual Studio**.
@@ -107,7 +104,8 @@ The **Render** method in `Main.cpp` takes the [HolographicFrame](https://msdn.mi
 
 ## Creating a Win32 project
 
->[!NOTE] A full Win32 holographic project template is coming soon.
+>[!NOTE]
+>A full Win32 holographic project template is coming soon.
 
 To create a Win32 instead of UWP holographic project, you can adapt the standard Win32 desktop project template by following these steps:
 1. Start **Visual Studio**.
