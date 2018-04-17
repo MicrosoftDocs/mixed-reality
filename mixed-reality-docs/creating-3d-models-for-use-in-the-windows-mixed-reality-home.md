@@ -18,7 +18,7 @@ When creating 3D models for Windows Mixed Reality there are some requirements th
 1. [Exporting](#exporting-models) - Assets must be delivered in the .glb file format (binary glTF)
 2. [Modeling](#modeling-guidelines) - Assets must be less than 10k triangles, have no more than 64 nodes and 32 submeshes per LOD
 3. [Materials](#material-guidelines) - Textures cannot be larger than 4096 x 4096
-4. [Animation](#animation-guidelines) - Animations cannot be longer than 20 minutes at 30 FPS (36,000 keyframes) and must contain <=  morph target vertices
+4. [Animation](#animation-guidelines) - Animations cannot be longer than 20 minutes at 30 FPS (36,000 keyframes) and must contain <= 8192 morph target vertices
 5. [Optimizing](#optimizations) - Assets should be optimized using the [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases). This is **required on Windows OS Versions <= 1709** and recommended on Windows OS versions >= 1803
 
 The rest of this article includes a detailed overview of these requirements as well as additional guidelines to ensure your models work well with the Windows Mixed Reality home. 
