@@ -25,11 +25,13 @@ If you don't intend on using the system keyboard in your application, our recomm
    * **Platform:** *Windows Store* and be sure to select **Switch Platform** for your selection to take effect
    * **SDK:** *Universal 10*
    * **UWP Build Type:** *D3D* or *XAML*
-4.  **Optional**: **Unity C# Projects:** Checked. 
+4.  **Optional**: **Unity C# Projects:** Checked.
+
 >[!NOTE]
 >Checking this box allows you to:
->1. Debug your app in the Visual Studio remote debugger
->2. Edit scripts in the Unity C# project while using IntelliSense for WinRT APIs.
+>* Debug your app in the Visual Studio remote debugger
+>* Edit scripts in the Unity C# project while using IntelliSense for WinRT APIs.
+
 5.  From the **Build Settings...** window, open **Player Settings...**
 6.  Select the **Settings for Windows Store** tab
 7.  Expand the **Other Settings** group
