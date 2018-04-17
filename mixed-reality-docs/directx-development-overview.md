@@ -12,13 +12,19 @@ keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, 
 
 # DirectX development overview
 
-Windows Mixed Reality apps are Windows 10 Universal Windows Platform applications that use the [holographic rendering](rendering.md), [gaze](gaze.md), [gesture](gestures.md), [motion controller](motion-controllers.md) and [voice](voice-input.md) APIs. You can create immersive apps using a game engine, such as [Unity](unity-development-overview.md), or you can use Windows Mixed Reality APIs with DirectX 11. Please note that DirectX 12 is not currently supported. If you are leveraging the platform directly, you'll essentially be building your own middleware or framework. The Windows APIs support apps written in both C++ and C#. If you'd like to use C#, your application can leverage the [SharpDX](http://sharpdx.org/) open source software library.
+Windows Mixed Reality apps use the [holographic rendering](rendering.md), [gaze](gaze.md), [gesture](gestures.md), [motion controller](motion-controllers.md), [voice](voice-input.md) and [spatial mapping](spatial-mapping.md) APIs to build [mixed reality](mixed-reality.md) experiences for HoloLens and immersive headsets. You can create mixed reality apps using a 3D engine, such as [Unity](unity-development-overview.md), or you can use Windows Mixed Reality APIs with DirectX 11. Please note that DirectX 12 is not currently supported. If you are leveraging the platform directly, you'll essentially be building your own middleware or framework. The Windows APIs support apps written in both C++ and C#. If you'd like to use C#, your application can leverage the [SharpDX](http://sharpdx.org/) open source software library.
 
-Windows Mixed Reality supports both desktop Universal Windows Platform applications, which show up as an [application with a 2D view](building-2d-apps.md) in the Windows Mixed Reality home, and mixed reality apps, which use the [HolographicSpace API](getting-a-holographicspace.md) to render an immersive view to the user.
+Windows Mixed Reality supports [two kinds of apps](app-views.md):
+* **Mixed reality apps** (UWP or Win32), which use the [HolographicSpace API](getting-a-holographicspace.md) to render an [immersive view](app-views.md) to the user that fills the headset display.
+* **2D apps** (UWP), which use DirectX, XAML or other frameworks to render [2D views](app-views.md#2d-views) on slates in the Windows Mixed Reality home.
 
-The differences between DirectX UWP development for [2D views and immersive views](app-views.md) are primarily related to holographic rendering and spatial input. The [IFrameworkView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) is still required and remains largely the same, as do the WinRT APIs available to your app. However, you use a different subset of these APIs to take advantage of holographic features. For example, the swap chain is managed by the system for holographic apps, and you work with the HolographicSpace API rather than DXGI to present frames.
+The differences between DirectX development for [2D views and immersive views](app-views.md) are primarily related to holographic rendering and spatial input. Your UWP app's [IFrameworkView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 app's HWND are still required and remain largely the same, as do the WinRT APIs available to your app. However, you use a different subset of these APIs to take advantage of holographic features. For example, the swap chain is managed by the system for holographic apps, and you work with the HolographicSpace API rather than DXGI to [present frames](rendering-in-directx.md).
 
-To begin developing [immersive apps](app-model.md), [create a new project using the templates in Visual Studio](creating-a-holographic-directx-project.md). Based on your language, **Visual C++** or **Visual C#**, you will find the templates under **Windows** > **Universal** > **Holographic**. This is a great way to get the code you need to add holographic rendering support to an existing app or engine. Code and concepts are presented in the template in a way that's familiar to any developer of real-time interactive software.
+To begin developing immersive apps:
+* For **UWP apps**, [create a new UWP project using the templates in Visual Studio](creating-a-holographic-directx-project.md). Based on your language, **Visual C++** or **Visual C#**, you will find the UWP templates under **Windows Universal** > **Holographic**.
+* For **Win32 apps**, [create a new Win32 desktop project](creating-a-holographic-directx-project.md#creating-a-win32-project) and then follow the Win32 instructions on the [Getting a HolographicSpace](getting-a-holographicspace.md) page to get a HolographicSpace.
+
+This is a great way to get the code you need to add holographic rendering support to an existing app or engine. Code and concepts are presented in the template in a way that's familiar to any developer of real-time interactive software.
 
 ## Getting started
 
@@ -43,3 +49,4 @@ There are other key features that many immersive apps will want to use, which ar
 
 ## See also
 * [App model](app-model.md)
+* [App views](app-views.md)
