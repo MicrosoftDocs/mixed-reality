@@ -12,15 +12,15 @@ keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, spatial input, re
 
 # Getting a HolographicSpace
 
-The [HolographicSpace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx) class is your portal into the holographic world. It controls full-screen rendering, provides camera data, and provides access to spatial reasoning APIs. You will create one for your app's [CoreWindow](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.corewindow.aspx).
+The [HolographicSpace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx) class is your portal into the holographic world. It controls full-screen rendering, provides camera data, and provides access to spatial reasoning APIs. You will create one for your UWP app's [CoreWindow](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.corewindow.aspx) or your Win32 app's HWND.
 
 ## Set up the holographic space
 
 Creating the holographic space object is the first step in making your Windows Mixed Reality app. Traditional Windows apps render to a Direct3D swap chain created for the core window of their application view. This swap chain is displayed to a slate in the holographic UI. To make your application view holographic rather than a 2D slate, create a holographic space for its core window instead of a swap chain. Presenting holographic frames that are created by this holographic space puts your app into full-screen rendering mode.
 
-Look for this code in the **SetWindow** method in AppView.cpp:
+For a **UWP app** starting from the *Holographic DirectX 11 App (Universal Windows) template*, look for this code in the **SetWindow** method in AppView.cpp:
 
-```
+```cpp
 m_holographicSpace = HolographicSpace::CreateForCoreWindow(window);
 ```
 
@@ -28,6 +28,52 @@ The current holographic space is used in multiple places in the DirectX template
 * The **DeviceResources** class needs to get some information from the HolographicSpace object in order to create the Direct3D device. This is the DXGI adapter ID associated with the holographic display. The [HolographicSpace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx) class uses your app's Direct3D 11 device to create and manage device-based resources, like swap chains for holographic cameras. If you're interested in seeing what this function does under the hood, you'll find it in DeviceResources.cpp.
 * The function **DeviceResources::InitializeUsingHolographicSpace** demonstrates how to obtain the adapter by looking up the LUID – and how to choose a default adapter when no preferred adapter is specified.
 * The main class uses the holographic space in **AppView::SetWindow**, for updates and rendering.
+
+For a **Win32 app** starting from the *Windows Desktop Application* template, add the following code just below the #include directives at the top of the main .cpp file named for your project:
+```cpp
+#include <..\winrt\WinRTBase.h>;
+#include <windows.graphics.holographic.h>;
+#include <..\um\HolographicSpaceInterop.h>;
+#include <wrl.h>;
+```
+
+Then, add the following code block within the **InitInstance** function, just above the call to **ShowWindow**:
+```cpp
+{
+   CoInitializeEx(nullptr, 0);
+
+   using namespace ABI::Windows::Foundation;
+   using namespace ABI::Windows::Graphics::Holographic;
+   using namespace Microsoft::WRL;
+   using namespace Microsoft::WRL::Wrappers;
+   
+   ComPtr<IHolographicSpaceStatics> spHolographicSpaceFactory;
+   HRESULT hr = GetActivationFactory(HStringReference(RuntimeClass_Windows_Graphics_Holographic_HolographicSpace).Get(), &spHolographicSpaceFactory);
+
+   ComPtr<IHolographicSpaceInterop> spHolographicSpaceInterop;
+   if (SUCCEEDED(hr))
+   {
+       hr = spHolographicSpaceFactory.As(&spHolographicSpaceInterop);
+   }
+
+   ComPtr<ABI::Windows::Graphics::Holographic::IHolographicSpace> spHolographicSpace;
+   if (SUCCEEDED(hr))
+   {
+       hr = spHolographicSpaceInterop->CreateForWindow(hWnd, IID_PPV_ARGS(&spHolographicSpace));
+   }
+   
+   ComPtr<IHolographicFrame> spHolographicFrame;
+   if (SUCCEEDED(hr))
+   {
+       hr = spHolographicSpace->CreateNextFrame(&spHolographicFrame);
+   }
+}
+```
+
+Now that you've obtained a HolographicSpace for either your UWP CoreWindow or Win32 HWND, you'll use that HolographicSpace to handle holographic cameras, create coordinate systems and do holographic rendering.  The code you'll write there is the same regardless of whether you're writing a UWP app or Win32 app.
+
+>[!NOTE]
+>While the sections below mention functions like **AppView::SetWindow** that assume that you are using the holographic UWP app template, the code snippets shown apply equally across UWP and Win32 apps.
 
 Next, we'll dive into the setup process that **SetHolographicSpace** is responsible for in the AppMain class.
 
@@ -37,7 +83,7 @@ Your app's holographic content lives in its holographic space, and is viewed thr
 
 Your app needs to respond to **CameraAdded** events by creating any resources that are specific to that camera, like your back buffer render target view. Register this function before the app creates any holographic frames in **AppView::SetWindow**:
 
-```
+```cpp
 m_cameraAddedToken =
    m_holographicSpace->CameraAdded +=
       ref new Windows::Foundation::TypedEventHandler<HolographicSpace^, HolographicSpaceCameraAddedEventArgs^>(
@@ -49,7 +95,7 @@ Your app also needs to respond to **CameraRemoved** events by releasing resource
 
 From **AppView::SetWindow**:
 
-```
+```cpp
 m_cameraRemovedToken =
    m_holographicSpace->CameraRemoved +=
        ref new Windows::Foundation::TypedEventHandler<HolographicSpace^, HolographicSpaceCameraRemovedEventArgs^>(
@@ -80,7 +126,7 @@ The spatial locator represents the Windows Mixed Reality device, and tracks the 
 
 From **AppMain::SetHolographicSpace:**
 
-```
+```cpp
 m_locator = SpatialLocator::GetDefault();
 ```
 
@@ -88,7 +134,7 @@ Create the stationary reference frame once when the app is launched. This is ana
 
 From **AppMain::SetHolographicSpace:**
 
-```
+```cpp
 SpatialStationaryFrameOfReference m_referenceFrame =
        m_locator->CreateStationaryFrameOfReferenceAtCurrentLocation();
 ```
@@ -104,7 +150,7 @@ Rendering world-locked holograms requires the device to be able to locate itself
 
 You app can request to be notified if tracking is interrupted for any reason. Register for the LocatablilityChanged event to detect when the device's ability to locate itself in the world changes. From **AppMain::SetHolographicSpace:**
 
-```
+```cpp
 m_locatabilityChangedToken =
    m_locator->LocatabilityChanged +=
        ref new Windows::Foundation::TypedEventHandler<SpatialLocator^, Object^>(
@@ -115,4 +161,5 @@ m_locatabilityChangedToken =
 Then use this event to determine when holograms cannot be rendered stationary to the world.
 
 ## See also
+* [Rendering in DirectX](rendering-in-directx.md)
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
