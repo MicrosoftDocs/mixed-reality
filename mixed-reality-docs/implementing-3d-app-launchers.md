@@ -12,6 +12,9 @@ keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube
 
 # Implement 3D app launchers
 
+> [!NOTE]
+> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+
 The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating an application for Windows Mixed Reality, by default apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
@@ -28,8 +31,6 @@ There are 3 steps to creating a 3D app launcher.
 When you create a new project in Visual Studio, it creates a simple default tile that displays your app's name and logo. To replace this 2D representation with a custom 3D model edit the app manifest of your application to include the “MixedRealityModel” element as part of your default tile definition. To revert to the 2D launcher just remove the MixedRealityModel definition from the manifest.
 
 ## XML
-> [!NOTE]
-> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
  First, at the top of the app manifest add the uap5 schema and include it as an ignorable namespace:
 
@@ -102,13 +103,15 @@ When working with Unity the project must be built and opened in Visual Studio be
 
 # 3D deep links (secondaryTiles)
 
+> [!NOTE]
+> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+
+>[!IMPORTANT]
+>3D deep links (secondaryTiles) only work with 2D UWP apps. You can, however, create a [3D app launcher](implementing-3d-app-launchers.md) to launch an exclusive app from the Windows Mixed Reality home.
+
 Your 2D applications can be enhanced for Windows Mixed Reality by adding the ability to place 3D models from your app into the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) as deep links to content within your 2D app, just like [2D secondary tiles](https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) on the Windows Start menu. For example, you can create 360° photospheres that link directly into a 360° photo viewer app, or let users place 3D content from a collection of assets that opens a details page about the author. These are just a couple ways to expand the functionality of your 2D application with 3D content.
 
-**Note:** 3D deep links are not currently available for use on HoloLens, and only work with 2D apps on immersive headsets. You can, however, create a [3D app launcher](implementing-3d-app-launchers.md) to launch an exclusive app from the Windows Mixed Reality home.
-
 ## Creating a 3D “secondaryTile”
-> [!NOTE]
-> This feature was added as part of the 2017 Fall Creators Update (RS3). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299.91 which can be downloaded [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk)
 
 You can place 3D content from your application using “secondaryTiles” by defining a mixed reality model at creation time. Mixed reality models are created by referencing a 3D asset in your app package and optionally defining a bounding box. **Note:** creating “secondaryTiles” from within an exclusive view is not currently supported.
 
