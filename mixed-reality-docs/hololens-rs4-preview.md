@@ -237,17 +237,13 @@ Check for HoloLens RS4 Preview updates with **Windows Update**:
 
 This build is delivered over the air (OTA) through Windows Update after you've manually installed the HoloLens RS4 Preview using the instructions at the top of this page.
 
-* **General changes, improvements, and fixes**
+**General changes, improvements, and fixes:**
 
    * Reliability issues for exclusive apps.
    * Interactions while moving slates and blooming.
    * Cortana/Skype integration.
    * Speech in OOBE stability.
    * UWP app reliability with mouse/gamepad integration.
-
-* **Known issues**
-
-   * Users may experience reliability issues with using voice to launch apps for the first time.
 
 ### Update 2 - Build 17133.1009
 
