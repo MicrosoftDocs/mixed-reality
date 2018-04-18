@@ -17,7 +17,7 @@ Windows 10 includes support for immersive and holographic headsets directly. If 
 ## Porting overview
 
 At a high-level, these are the steps involved in porting existing content:
-1. **Make sure your PC is running the Windows 10 Fall Creators Update (16299).** We no longer recommend receiving preview builds from the Insider Fast ring, as those RS4 builds won't be the most stable for mixed reality development.
+1. **Make sure your PC is running the Windows 10 Fall Creators Update (16299).** We no longer recommend receiving preview builds from the Insider Skip Ahead ring, as those builds won't be the most stable for mixed reality development.
 2. **Upgrade to the latest version of your graphics or game engine.** Game engines will need to support the Windows 10 SDK version 10.0.15063.0 (released in April 2017) or higher.
 3. **Upgrade any middleware, plug-ins or components.** If your app contains any components, it's a good idea to upgrade to the latest version. Newer versions of most common plug-ins have support for UWP.
 4. **Remove dependencies on duplicate SDKs**. Depending on which device your content was targeting, you'll need to remove or conditionally compile out that SDK (e.g. SteamVR) so you can target the Windows APIs instead.
