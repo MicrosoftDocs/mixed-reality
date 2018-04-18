@@ -1,28 +1,28 @@
 ---
 title: Azure Lab - Translator Text API
-description: Azure Lab teaching how to implement Azure Translator Text API within a Mixed Reality Unity3D Application.
-author: 
-ms.author: 
+description: Azure Lab teaching how to implement Azure Translator Text API within a mixed reality Unity3D Application.
+author: elliotmoule, StefanoDeflorio
+ms.author:
 ms.date: 
 keywords: azure, translator text, mixed reality, unity3d
 ---
 
 # Mixed Reality, Azure Cognitive Services in Unity
-## Lab 1. Translation Capabilities with Immersive Headsets
+## Lab 1. Translation Capabilities with immersive headsets
  
-In this Lab, you will learn how to add translation capabilities to a **Mixed Reality Application** using Azure Cognitive Services, with the Translator Text API.
+In this Lab, you will learn how to add translation capabilities to a **mixed reality application** using Azure Cognitive Services, with the Translator Text API.
 
 ![Final product](images/AzureLabs-Lab1-00.png)
 
 The Translator Text API is a translation service which works in near real-time. The service is cloud-based, and using a REST API call, an app can make use of the neural machine translation technology, so to translate text to another language. For more information, visit the [Azure Translator Text API page](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/).
 
-1.	The user will speak through the microphone attached to the Immersive Headset
+1.	The user will speak through the microphone attached to the immersive headset
 2.	The app will capture the Dictation and send it to the Azure Translator Text API. 
 3.	The translation result will be displayed in a simple UI group in the Unity Scene. 
 
 This will teach you how to get the results from the Translator Service into your Unity application.
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your Mixed Reality Application.
-This Lab is a self-contained tutorial, which doesn’t directly involve any other Mixed Reality Labs.
+In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
+This Lab is a self-contained tutorial, which doesn’t directly involve any other mixed reality Labs.
 
 ### **Prerequisites**
 This tutorial is designed for developers who have basic experience with Unity and C#.
@@ -32,36 +32,38 @@ The following hardware and software is required:
 
   - Windows 10 Fall Creators Update, Developer Mode enabled
   - Windows 10 SDK (latest version)
-  - Unity 2017.2.1p2 (https://unity3d.com/unity/qa/patch-releases?version=2017.2)
-  - An Immersive Headset
-  - A set of earphones with a built-in microphone (for the Immersive Headset)
+  - Unity 2017.2.1p2 [download here](https://unity3d.com/unity/qa/patch-releases?version=2017.2).
+  - An immersive headset
+  - A set of earphones with a built-in microphone (for the immersive headset)
   - Visual Studio 2017.15.4 or higher
-  - A PC compatible with Windows Mixed Reality 
+  - A PC compatible with Windows mixed reality 
   - Internet Access for Azure, and for Translation retrieval. For more information, please follow this [LINK](https://azure.microsoft.com/en-au/services/cognitive-services/translator-text-api/).
 
 If you wish to build this Lab for Microsoft HoloLens, most of the content will still apply, some modifications to the project may be required. This would include changing the ‘Main Camera’ components to the HoloLens requirements (**Clear Flags:** Solid Color, **Background** ‘Black, Alpha 0’ – #00000000 – and **Transform** *Position* to: 0,0,0). Also ensure you change the **Build Target** within the **Build Settings** area to **HoloLens**.
 
 You may also notice some echo when using the HoloLens mic and built-in speakers. 
 
-### **Before you start**
+#### **Before you start**
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
 2.	The code in this tutorial will allow you to record from the Default Microphone Device on your machine. Make sure the Default Microphone Device is set as the one you wish to use to capture your voice.
-3.	If your headset has a built-in microphone, make sure the option “When I wear my headset, switch to headset mic” is turned on in the Mixed Reality Portal settings.
+3.	If your headset has a built-in microphone, make sure the option “When I wear my headset, switch to headset mic” is turned on in the mixed reality Portal settings.
 
     ![Default Microphone Settings](images/AzureLabs-Lab1-01.png)
 
 4.	To allow your machine to enable Dictation, go to Windows Settings  Speech, Inking & Typing and press on the button Turn On speech services and typing suggestions.
 
-### **Step 0 – The Azure Portal**
+### **Step 1 – The Azure Portal**
 To use the Azure Translator API, you will need to configure an instance of the service to be made available to your application.
-1.	Log in to the Azure Portal (https://portal.azure.com).
-    1.	If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+1.	Log in to the  [Azure Portal](https://portal.azure.com).
+
+> [!NOTE ]If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+
 2.	Once you are logged in, click on ***New*** in the top left corner, and search for ***Translator Text API***, and click ***Enter***.
 
-    > [!NOTE]
-    > The word ***New*** may have been replaced with ***Create a resource***, in newer portals.
-
     ![New Resource](images/AzureLabs-Lab1-02.png)
+
+> [!NOTE]
+> The word ***New*** may have been replaced with ***Create a resource***, in newer portals.
 
 3.	The new page will provide a description of the **Translator Text API** service. At the bottom left of this page, select the ***Create*** button, to create an association with this service.
 
@@ -73,9 +75,8 @@ To use the Azure Translator API, you will need to configure an instance of the s
     3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a **Translator Text Service**, a free tier (named F0) should be available to you.
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
     
-        > [!NOTE]
-        > If you wish to read more about Azure Resource Groups, please follow this link:
-    https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal
+        > If you wish to read more about Azure Resource Groups, please follow this [LINK](
+    https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
 
     5. Select a **Location**. The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
     6. You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
@@ -100,13 +101,13 @@ To use the Azure Translator API, you will need to configure an instance of the s
 10.	From the ***Quick start*** page of your ***Translator Text*** service, navigate to the first step, ***Grab your keys***, and click ***Keys*** (you can also achieve this by clicking the blue hyperlink Keys, located in the services navigation menu, denoted by the key icon). This will reveal your service ***Keys***.
 11.	Take a copy of one of the displayed keys, as you will need this later in your project. 
 
-### **Step 1 – Set up the Unity Project**
-Set up and test your Mixed Reality Immersive Headset. 
+### **Step 2 – Set up the Unity Project**
+Set up and test your mixed reality immersive headset. 
 
 > [!NOTE]
-> You will ***not*** require Motion Controllers for this Lab. If you need support setting up the Immersive Headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+> You will ***not*** require Motion Controllers for this Lab. If you need support setting up the immersive headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
 
-The following is a typical set up for developing with Mixed Reality, and as such, is a good template for other projects.
+The following is a typical set up for developing with mixed reality, and as such, is a good template for other projects.
 1.	Open **Unity** and click **New**. 
 
     ![Start new Unity project.](images/AzureLabs-Lab1-08.png)
@@ -161,7 +162,7 @@ The following is a typical set up for developing with Mixed Reality, and as such
 
             ![Updating publishing settings.](images/AzureLabs-Lab1-17.png)
 
-    3. Further down the panel, in **XR Settings** (found below **Publish Settings**), tick ***Virtual Reality Supported***, make sure the ***Windows Mixed Reality SDK*** is added.
+    3. Further down the panel, in **XR Settings** (found below **Publish Settings**), tick ***Virtual Reality Supported***, make sure the ***Windows mixed reality SDK*** is added.
 
         ![Update the X R Settings.](images/AzureLabs-Lab1-18.png)
 
@@ -169,7 +170,7 @@ The following is a typical set up for developing with Mixed Reality, and as such
 9.	Close the Build Settings window.
 10.	Save your Scene and Project (**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
 
-### **Step 2 – Main Camera Setup**
+### **Step 3 – Main Camera Setup**
 1.	In the **Hierarchy Panel**, you will find an object called **Main Camera**, this object represents your “head” point of view once you are “inside” your application.
 2.	With the Unity Dashboard in front of you, select the **Main Camera GameObject**. You will notice that the **Inspector Panel** (generally found to the right, within the Dashboard) will show the various components of that **GameObject**, with **Transform** at the top, followed by **Camera**, and some other components. You will need to reset the Transform of the Main Camera, so it is positioned correctly.
 3.	To do this, select the ***Gear*** icon next to the Camera’s **Transform** component, and selecting ***Reset***. 
@@ -189,7 +190,7 @@ The following is a typical set up for developing with Mixed Reality, and as such
 
     ![Add an Audio Source component.](images/AzureLabs-Lab1-21.png)
 
-### **Step 3 – Setup Debug Canvas**
+### **Step 4 – Setup Debug Canvas**
 To show the input and output of the translation, a basic UI needs to be created. For this Lab, you will create a Canvas UI object, with several ‘Text’ objects to show the data. 
 1.	Right-click in an empty area of the **Hierarchy Panel**, under **UI**, add a ***Canvas***.
 
@@ -235,7 +236,8 @@ To show the input and output of the translation, a basic UI needs to be created.
         ![Bold Font.](images/AzureLabs-Lab1-25.png)
  
 7.	For each **UI Text object** created in **Step 5**, create a new ***child*** **UI Text object**. These children will display the output of the application. 
-    1.	Create ***child*** objects through right-clicking your intended parent (e.g. ***MicrophoneStatusLabel***) and then select ***UI*** and then select ***Text***.
+    
+    > Create ***child*** objects through right-clicking your intended parent (e.g. ***MicrophoneStatusLabel***) and then select ***UI*** and then select ***Text***.
 8.	For each of these children, select it and use the below tables to set the parameters in the Inspector Panel.
 
     1. For the **Rect Transform** component:
@@ -277,7 +279,7 @@ To show the input and output of the translation, a basic UI needs to be created.
 
         ![Have the scene and game views in the same structure.](images/AzureLabs-Lab1-30.png)
 
-### **Step 4 – Create the Results class**
+### **Step 5 – Create the Results class**
 The first script you need to create is the ***Results*** class, which is responsible for providing a way to see the results of translation. The Class stores and displays the following: 
 
 - The response result from Azure.
@@ -386,7 +388,7 @@ To create this class:
 
 8.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 
-### **Step 5 – Create the *MicrophoneManager* class**
+### **Step 6 – Create the *MicrophoneManager* class**
 The second class you are going to create is the ***MicrophoneManager***.
 
 This class is responsible for:
@@ -459,8 +461,8 @@ To create this class:
 7.	You can *delete* the **Update()** method since this class will not use it.
 8.	Now you need the methods that the App uses to start and stop the voice capture, and pass it to the **Translator** class, that you will build soon. Copy the following code and paste it beneath the **Start()** method.
 
-    > [!NOTE]
-    > Though this application will not make use of it, the **StopCapturingAudio()** method has also been provided here, should you want to implement the ability to stop capturing audio in your application.
+> [!NOTE]
+> Though this application will not make use of it, the **StopCapturingAudio()** method has also been provided here, should you want to implement the ability to stop capturing audio in your application.
 
 ```csharp
     /// <summary> 
@@ -515,10 +517,10 @@ To create this class:
  
 10.	Be sure to save your changes in Visual Studio before returning to Unity.
 
-    > [!WARNING]  
-    > At this point you will notice an error appearing in the **Unity Editor Console** Panel (“The name ‘Translator’ does not exist...”). This is because the code references the **Translator** class, which you will create in the next step.
+> [!WARNING]  
+> At this point you will notice an error appearing in the **Unity Editor Console** Panel (“The name ‘Translator’ does not exist...”). This is because the code references the **Translator** class, which you will create in the next step.
 
-### **Step 6 – Call to Azure and Translation**
+### **Step 7 – Call to Azure and Translation**
 
 The last script you need to create is the **Translator** class. 
 
@@ -646,7 +648,7 @@ You can find all the languages available by following this [LINK](https://www.mi
  
 9.	Next, add the coroutine (with a “support” stream method right below it) to obtain the translation of the text received by the ***MicrophoneManager*** class. 
 
-This code creates a query string to send to the ***Azure Translator Text API***, and then uses the internal Unity UnityWebRequest class to make a ‘Get’ call to the endpoint with the query string.
+    This code creates a query string to send to the ***Azure Translator Text API***, and then uses the internal Unity UnityWebRequest class to make a ‘Get’ call to the endpoint with the query string.
 The result is then used to set the translation in your Results object.
 
 10.	The code below shows the implementation:
@@ -702,12 +704,12 @@ The result is then used to set the translation in your Results object.
         writer.Flush(); 
         stream.Position = 0; 
         return stream; 
-    } 
+    }
 ```
 
 11.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 
-### **Step 7 – Configure the Unity Scene**
+### **Step 8 – Configure the Unity Scene**
 
 1.	Back in the Unity Editor, click and drag the ***Results*** class *from* the **Scripts** folder to the **Main Camera** object in the **Hierarchy Panel**.
 2.	Click on the **Main Camera** and look at the **Inspector Panel**. You will notice that within the newly added *Script* component, there are four fields with empty values. These are the output references to the properties in the code. 
@@ -722,7 +724,7 @@ You will notice that in the script you dragged on, there are two drop down boxes
  
     ![Ensure the intended translation languages are input.](images/AzureLabs-Lab1-35.png)
 
-### **Step 8 – Test in MR**
+### **Step 9 – Test in MR**
 At this point you need to test that the Scene has been properly implemented.
 
 Ensure that:
@@ -732,13 +734,13 @@ Ensure that:
 -	You have placed your **Azure Translator Text API** service ***Key*** within the **authorizationKey** variable within the ***Translator*** Script.  
 -	All the fields in the **Main Camera Inspector Panel** are assigned properly.
 
-You can test the Immersive Headset by pressing the ***Play*** button in the **Unity Editor**.
-The App should be functioning through the attached Immersive Headset.
+You can test the immersive headset by pressing the ***Play*** button in the **Unity Editor**.
+The App should be functioning through the attached immersive headset.
 
 > [!WARNING]  
-> If you see an error in the Unity console about the default audio device changing, the scene may not function as expected. This is due to the way the Mixed Reality portal deals with built-in microphones for headsets that have them. If you see this error, simply stop the scene and start it again and things should work as expected.
+> If you see an error in the Unity console about the default audio device changing, the scene may not function as expected. This is due to the way the mixed reality portal deals with built-in microphones for headsets that have them. If you see this error, simply stop the scene and start it again and things should work as expected.
 
-### **Step 9 – Build the UWP Solution and Sideload on Local Machine**
+### **Step 10 – Build the UWP Solution and Sideload on Local Machine**
 
 Everything needed for the Unity section of this project has now been completed, so it is time to build it from Unity.
 
@@ -752,9 +754,9 @@ Everything needed for the Unity section of this project has now been completed, 
 5.	Unity will begin building your project to the **App** folder. 
 6.	Once Unity has finished building (it might take some time), it will open a **File Explorer** window at the location of your build (check your task bar, as it may not always appear above your windows, but will notify you of the addition of a new window).
 
-### **Step 10 – Deploy to the Immersive Headset**
+### **Step 11 – Deploy to the Immersive Headset**
 
-To deploy on an Immersive Headset:
+To deploy on an immersive headset:
 
 1.	Navigate to your new Unity build (the ***App*** folder) and open the solution file with **Visual Studio**.
 2.	In the Solution Configuration select ***Debug***.
