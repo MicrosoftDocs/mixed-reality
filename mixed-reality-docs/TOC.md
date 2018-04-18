@@ -81,7 +81,7 @@
 #### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 #### [Asset creation process](asset-creation-process.md)
 #### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
-#### [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+#### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 
 ## [Development](development.md)
 ### [Development overview](development-overview.md)
@@ -152,8 +152,7 @@
 #### [HoloLens emulator archive](hololens-emulator-archive.md)
 #### [Perception simulation](perception-simulation.md)
 ### Finishing your app
-#### [Implementing 3D app launchers](implementing-3d-app-launchers.md)
-#### [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
+#### [Implement 3D app launchers](implementing-3d-app-launchers.md)
 #### [In-app purchases](in-app-purchases.md)
 #### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 ### Remote tools
@@ -177,6 +176,7 @@
 ### [Creating a galaxy in mixed reality](case-study-creating-a-galaxy-in-mixed-reality.md)
 ### [Creating an immersive experience in Fragments](case-study-creating-an-immersive-experience-in-fragments.md)
 ### [Creating impossible perspectives for HoloTour](case-study-creating-impossible-perspectives-for-holotour.md)
+### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [Expanding the spatial mapping capabilities of HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
 ### [HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 ### [Lessons from the Lowe's kitchen](case-study-lessons-from-the-lowes-kitchen.md)
