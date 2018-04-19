@@ -190,7 +190,7 @@
 ### [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 
 ## Resources
-### [HoloLens RS4 Preview](hololens-rs4-preview.md)
+### [CVPR 2018 HoloLens Research Mode session](cvpr-2018.md)
 ### [Mixed Reality Partner Program](mixed-reality-partner-program.md)
 ### [App quality criteria](app-quality-criteria.md)
 ### [Spectator view](spectator-view.md)
@@ -198,6 +198,7 @@
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 
 ## Mixed reality release notes
+### [HoloLens RS4 Preview](hololens-rs4-preview.md)
 ### [Current release notes](release-notes.md)
 ### [Release notes - August 2016](release-notes-august-2016.md)
 ### [Release notes - May 2016](release-notes-may-2016.md)
