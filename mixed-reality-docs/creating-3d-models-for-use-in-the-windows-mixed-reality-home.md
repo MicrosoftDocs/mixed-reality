@@ -17,7 +17,7 @@ The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) i
 When creating 3D models for Windows Mixed Reality there are some requirements that all assets must meet: 
 1. [Exporting](#exporting-models) - Assets must be delivered in the .glb file format (binary glTF)
 2. [Modeling](#modeling-guidelines) - Assets must be less than 10k triangles, have no more than 64 nodes and 32 submeshes per LOD
-3. [Materials](#material-guidelines) - Textures cannot be larger than 4096 x 4096
+3. [Materials](#material-guidelines) - Textures cannot be larger than 4096 x 4096 and the smallest mip map should be no larger than 4 on either dimension
 4. [Animation](#animation-guidelines) - Animations cannot be longer than 20 minutes at 30 FPS (36,000 keyframes) and must contain <= 8192 morph target vertices
 5. [Optimizing](#optimizations) - Assets should be optimized using the [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases). This is **required on Windows OS Versions <= 1709** and recommended on Windows OS versions >= 1803
 
@@ -63,12 +63,12 @@ The Windows Mixed Reality home does not support models with more than 64 nodes o
 
 ## Material Guidelines
 
-Textures should be prepared using a PBR metal roughness workflow. Begin by creating a full set of textures including Albedo, Normal, Occlusion, Metallic, and Roughness. Windows Mixed Reality supports textures with resolutions up to 4096x4096 but its recommended that you author at 512x512. Additionally textures should be authored at resolutions in multiples of 4 as this is a requirement for the compression format applied to textures in the exporting steps outlined below.
+Textures should be prepared using a PBR metal roughness workflow. Begin by creating a full set of textures including Albedo, Normal, Occlusion, Metallic, and Roughness. Windows Mixed Reality supports textures with resolutions up to 4096x4096 but its recommended that you author at 512x512. Additionally textures should be authored at resolutions in multiples of 4 as this is a requirement for the compression format applied to textures in the exporting steps outlined below. Finally, when gerating mip maps or a texture the lowest mip must be a maximum of 4x4.
 <br>
 
-|  Recommended Texture Size  |  Max Texture Size | 
-|----|----|
-|  512x512  |  4096x4096 | 
+|  Recommended Texture Size  |  Max Texture Size | Lowest Mip
+|----|----|----|
+|  512x512  |  4096x4096 | max 4x4|
 
 ### Albedo (base color) map
 
