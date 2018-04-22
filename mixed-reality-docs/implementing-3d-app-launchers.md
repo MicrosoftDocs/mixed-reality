@@ -99,7 +99,10 @@ Next, on the MixedRealityModel set the SpatialBoundingBox property to define the
 
 ### Using Unity
 
-When working with Unity the project must be built and opened in Visual Studio before the App Manifest can be edited. **Note:** The 3D launcher must be redefined in the manifest when building and deploying a new Visual Studio solution from Unity.
+When working with Unity the project must be built and opened in Visual Studio before the App Manifest can be edited. 
+
+>[!NOTE]
+>The 3D launcher must be redefined in the manifest when building and deploying a new Visual Studio solution from Unity.
 
 ## 3D deep links (secondaryTiles)
 
