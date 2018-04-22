@@ -5,7 +5,7 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube
+keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep link, secondarytile, secondary tile
 ---
 
 
@@ -15,7 +15,7 @@ keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube
 > [!NOTE]
 > This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
-The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating an application for Windows Mixed Reality, by default apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place.
+The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating an application for Windows Mixed Reality, by default apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place. You can also create a [3D deep link (secondaryTile)](#3D-deep-links-secondaryTiles) as a 3D launcher to content within a 2D UWP app.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -30,7 +30,7 @@ There are 3 steps to creating a 3D app launcher:
 
 When you create a new project in Visual Studio, it creates a simple default tile that displays your app's name and logo. To replace this 2D representation with a custom 3D model edit the app manifest of your application to include the “MixedRealityModel” element as part of your default tile definition. To revert to the 2D launcher just remove the MixedRealityModel definition from the manifest.
 
-## XML
+### XML
 
  First, at the top of the app manifest add the uap5 schema and include it as an ignorable namespace:
 
@@ -70,7 +70,7 @@ The MixedRealityModel elements accepts a file path pointing to a 3D asset stored
 
 ![Select the .glb in your solution explorer and use the properties section to mark it as "Content" in the build settings](images/buildsetting-content-300px.png)<br>
 
-## Bounding box
+### Bounding box
 
 A bounding box can be used to optionally add an additional buffer region around the object. The bounding box is specified using a center point and extents which indicate the distance from the center of the bounding box to its edges along each axis. Units for the bounding box can be mapped to 1 unit = 1 meter. If a bounding box is not provided then one will be automatically fitted to the mesh of the object. If the provided bounding box is smaller than the model then it will be resized to fit the mesh.
 
@@ -97,11 +97,11 @@ Next, on the MixedRealityModel set the SpatialBoundingBox property to define the
         </uap:DefaultTile>
 ```
 
-## Using Unity
+### Using Unity
 
 When working with Unity the project must be built and opened in Visual Studio before the App Manifest can be edited. **Note:** The 3D launcher must be redefined in the manifest when building and deploying a new Visual Studio solution from Unity.
 
-# 3D deep links (secondaryTiles)
+## 3D deep links (secondaryTiles)
 
 > [!NOTE]
 > This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
@@ -111,7 +111,7 @@ When working with Unity the project must be built and opened in Visual Studio be
 
 Your 2D applications can be enhanced for Windows Mixed Reality by adding the ability to place 3D models from your app into the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) as deep links to content within your 2D app, just like [2D secondary tiles](https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) on the Windows Start menu. For example, you can create 360° photospheres that link directly into a 360° photo viewer app, or let users place 3D content from a collection of assets that opens a details page about the author. These are just a couple ways to expand the functionality of your 2D application with 3D content.
 
-## Creating a 3D “secondaryTile”
+### Creating a 3D “secondaryTile”
 
 You can place 3D content from your application using “secondaryTiles” by defining a mixed reality model at creation time. Mixed reality models are created by referencing a 3D asset in your app package and optionally defining a bounding box. **Note:** creating “secondaryTiles” from within an exclusive view is not currently supported.
 
@@ -148,6 +148,7 @@ await tile.RequestCreateAsync();
 A bounding box can be used to add an additional buffer region around the object. The bounding box is specified using a center point and extents which indicate the distance from the center of the bounding box to its edges along each axis. Units for the bounding box can be mapped to 1 unit = 1 meter. If a bounding box is not provided then one will be automatically fitted to the mesh of the object. If the provided bounding box is smaller than the model then it will be resized to fit the mesh.
 
 ### Activation behavior
+
 > [!NOTE]
 > This feature will be supported as of the Windows RS4 update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 if you plan to use this feature
 
@@ -155,7 +156,7 @@ You can define the activation behavior for a 3D secondaryTile to control how it 
 1. Default: When a user selects the 3D secondaryTile the app is activated
 2. None: When the users selects the 3D secondaryTile nothing happens and the app is not activated.
 
-## Obtaining and updating an existing “secondaryTile”
+### Obtaining and updating an existing “secondaryTile”
 
 Developers can get back a list of their existing secondary tiles, which includes the properties that they previously specified. They can also update the properties by changing the value and then calling UpdateAsync().
 
@@ -176,9 +177,9 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 }
 ```
 
-## Checking that you're in Mixed Reality
+### Checking that the user is in Windows Mixed Reality
 
-3D deep links can only be created while the view is being displayed in a Mixed Reality headset. When your view isn't being presented in a Mixed Reality headset we recommend gracefully handling this by either hiding the entry point or showing an error message. You can check this by querying [IsCurrentViewPresentedOnHolographic()](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
+3D deep links (secondaryTiles) can only be created while the view is being displayed in a Windows Mixed Reality headset. When your view isn't being presented in a Windows Mixed Reality headset we recommend gracefully handling this by either hiding the entry point or showing an error message. You can check this by querying [IsCurrentViewPresentedOnHolographic()](https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
 
 ## Tile notifications
 
