@@ -11,7 +11,7 @@ keywords: research mode, cv, rs4, computer vision, research, HoloLens
 # HoloLens Research Mode
 
 > [!NOTE]
-> This feature was added as part of the 2018 Spring Update (RS4) for HoloLens, and is not available on earlier releases. You can test it now by installing the [HoloLens RS4 Preview](./hololens-rs4-preview). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+> This feature was added as part of the Windows 10 RS4 update for HoloLens, and is not available on earlier releases. You can test it now by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
 Research mode is a new capability of HoloLens that provides application access to the key sensors on the device. These include:
 - The four environment tracking cameras used by the system for map building and head tracking.
@@ -30,14 +30,15 @@ Research mode is well named: it is intended for academic and industrial research
 
 ## How do I enable it?
 
-Research mode is a sub-mode of developer mode. You first need to enable developer mode in the Settings app (Settings -> Update and Security ->For Developers):
+Research mode is a sub-mode of developer mode. You first need to enable developer mode in the Settings app (**Settings > Update and Security >For Developers**):
 
-1. Set Use Developer Feature to **On**
-2. Set Enable Device Portal to **On**
+1. Set "Use Developer Feature" to **On**
+2. Set "Enable Device Portal" to **On**
 
-Then using a Web browser that is connected to the same WiFi network as your HoloLens, navigate to the IP address of your HoloLens (obtained through Settings->Network and Internet->Hardware Properties). This is the Device Portal, and you will find a Research Mode page in the System section of the portal:
+Then using a Web browser that is connected to the same WiFi network as your HoloLens, navigate to the IP address of your HoloLens (obtained through **Settings > Network and Internet > Hardware Properties**). This is the Device Portal, and you will find a Research Mode page in the System section of the portal:
 
-![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.jpg)
+![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.jpg)<br>
+*Please insert caption for photo*
 
 After selecting **Allow access to sensor streams**, you will need to reboot the HoloLens. You can do this from the Device Portal under the Power menu item on the top strip.
 
