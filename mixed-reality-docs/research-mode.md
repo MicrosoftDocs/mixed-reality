@@ -10,7 +10,10 @@ keywords: research mode, cv, rs4, computer vision, research, HoloLens
 
 # HoloLens Research Mode
 
-Research mode is a new capability of HoloLens being introduced in RS4. It provides application access to the key sensors on the HoloLens. These include:
+> [!NOTE]
+> This feature was added as part of the 2018 Spring Update (RS4) for HoloLens, and is not available on earlier releases. You can test it now by installing the [HoloLens RS4 Preview](./hololens-rs4-preview). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+
+Research mode is a new capability of HoloLens that provides application access to the key sensors on the device. These include:
 - The four environment tracking cameras used by the system for map building and head tracking.
 - Two versions of the depth camera data – one for high-frequency (30 FPS) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1 FPS) far-depth sensing, currently used by Spatial Mapping,
 - Two versions of an IR-reflectivity stream, used by the HoloLens to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.
@@ -34,7 +37,7 @@ Research mode is a sub-mode of developer mode. You first need to enable develope
 
 Then using a Web browser that is connected to the same WiFi network as your HoloLens, navigate to the IP address of your HoloLens (obtained through Settings->Network and Internet->Hardware Properties). This is the Device Portal, and you will find a Research Mode page in the System section of the portal:
 
-(image of device portal)
+![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.jpg)
 
 After selecting **Allow access to sensor streams**, you will need to reboot the HoloLens. You can do this from the Device Portal under the Power menu item on the top strip.
 
