@@ -8,7 +8,7 @@ keywords: azure, translator text, mixed reality, unity3d
 ---
 
 # Mixed Reality, Azure Cognitive Services in Unity
-## Lab 1. Translation Capabilities with immersive headsets
+## Lab 1. Translation Capabilities with Immersive Headsets
  
 In this Lab, you will learn how to add translation capabilities to a **mixed reality application** using Azure Cognitive Services, with the Translator Text API.
 
@@ -25,23 +25,25 @@ In your application, it is up to you as to how you will integrate the results wi
 This Lab is a self-contained tutorial, which doesn’t directly involve any other mixed reality Labs.
 
 ### **Prerequisites**
-This tutorial is designed for developers who have basic experience with Unity and C#.
-The prerequisites, and written instructions, within this document have been verified with all things mentioned within this document, at that point in time. It should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
+For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
+
+> [!NOTE] This tutorial is designed for developers who have basic experience with Unity and C#.
+Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified with all things mentioned within this document. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
 
 The following hardware and software is required:
 
-  - Windows 10 Fall Creators Update, Developer Mode enabled
+  - Windows 10 Fall Creators Update or later.
+  - Developer Mode enabled
   - Windows 10 SDK (latest version)
-  - Unity 2017.2.1p2 [download here](https://unity3d.com/unity/qa/patch-releases?version=2017.2).
+  - [Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
   - An immersive headset
   - A set of earphones with a built-in microphone (for the immersive headset)
   - Visual Studio 2017.15.4 or higher
   - A PC compatible with Windows mixed reality 
   - Internet Access for Azure, and for Translation retrieval. For more information, please follow this [LINK](https://azure.microsoft.com/en-au/services/cognitive-services/translator-text-api/).
 
-If you wish to build this Lab for Microsoft HoloLens, most of the content will still apply, some modifications to the project may be required. This would include changing the ‘Main Camera’ components to the HoloLens requirements (**Clear Flags:** Solid Color, **Background** ‘Black, Alpha 0’ – #00000000 – and **Transform** *Position* to: 0,0,0). Also ensure you change the **Build Target** within the **Build Settings** area to **HoloLens**.
-
-You may also notice some echo when using the HoloLens mic and built-in speakers. 
+> [!NOTE] It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.  
+> Please also be aware, that you may notice some echo when using the HoloLens mic and built-in speakers, during voice capture. 
 
 #### **Before you start**
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
@@ -50,7 +52,7 @@ You may also notice some echo when using the HoloLens mic and built-in speakers.
 
     ![Default Microphone Settings](images/AzureLabs-Lab1-01.png)
 
-4.	To allow your machine to enable Dictation, go to Windows Settings  Speech, Inking & Typing and press on the button Turn On speech services and typing suggestions.
+4.	To allow your machine to enable Dictation, go to Windows Settings > Speech, Inking & Typing, and press on the button Turn On speech services and typing suggestions.
 
 ### **Step 1 – The Azure Portal**
 To use the Azure Translator API, you will need to configure an instance of the service to be made available to your application.
@@ -125,7 +127,8 @@ The following is a typical set up for developing with mixed reality, and as such
     ![Build Settings window, switch platform to UWP.](images/AzureLabs-Lab1-11.png)
 
 5.	Go to ***File > Build Settings*** and make sure that:
-    1. **Target Device** is set to **Any Device**
+    1. **Target Device** is set to **Any Device**. 
+        > For the Microsoft HoloLens, set **Target Devuce** to *HoloLens*.
     2. **Build Type** is set to **D3D**
     3. **SDK** is set to **Latest installed**
     4. **Visual Studio Version** is set to **Latest installed**
@@ -189,6 +192,10 @@ The following is a typical set up for developing with mixed reality, and as such
 7.	An **Audio Source** component will be added to the **Main Camera**, as demonstrated below.
 
     ![Add an Audio Source component.](images/AzureLabs-Lab1-21.png)
+
+> [!NOTE] For the Microsoft HoloLens, you will need to also change the following, which are part of the **Camera** component, which is on your **Main Camera**:
+> - **Clear Flags:** Solid Color.
+> - **Background** ‘Black, Alpha 0’ – Hex color: #00000000.
 
 ### **Step 4 – Setup Debug Canvas**
 To show the input and output of the translation, a basic UI needs to be created. For this Lab, you will create a Canvas UI object, with several ‘Text’ objects to show the data. 
@@ -754,15 +761,20 @@ Everything needed for the Unity section of this project has now been completed, 
 5.	Unity will begin building your project to the **App** folder. 
 6.	Once Unity has finished building (it might take some time), it will open a **File Explorer** window at the location of your build (check your task bar, as it may not always appear above your windows, but will notify you of the addition of a new window).
 
-### **Step 11 – Deploy to the Immersive Headset**
+### **Step 11 – Deploy your Application**
 
-To deploy on an immersive headset:
+To deploy your application:
 
 1.	Navigate to your new Unity build (the ***App*** folder) and open the solution file with **Visual Studio**.
 2.	In the Solution Configuration select ***Debug***.
 3.	In the Solution Platform, select ***x86***, ***Local Machine***. 
 
+    > For the Microsoft HoloLens, you may find it easier to set this to *Remote Machine*, so that you are not tethered to your computer. Though, you will need to also do the following:
+    > - Know the **IP Address** of your HoloLens, which can be found within the *Settings > Network & Internet > Wi-Fi > Advanced Options*; the IPv4 is the address you should use. 
+    > - Ensure **Developer Mode** is **On**; found in *Settings > Update & Security > For developers*.
+
     ![Deploy the solution from Visual Studio.](images/AzureLabs-Lab1-37.png)
+    
  
 4.	Go to **Build menu** and click on **Deploy Solution** to sideload the application to your PC.
 5.	Your App should now appear in the list of installed apps, ready to be launched.
