@@ -27,7 +27,8 @@ This Lab is a self-contained tutorial, which doesn’t directly involve any othe
 ### **Prerequisites**
 For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
 
-> [!NOTE] This tutorial is designed for developers who have basic experience with Unity and C#.
+> [!NOTE] 
+> This tutorial is designed for developers who have basic experience with Unity and C#.
 Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified with all things mentioned within this document. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
 
 The following hardware and software is required:
@@ -42,7 +43,8 @@ The following hardware and software is required:
   - A PC compatible with Windows mixed reality 
   - Internet Access for Azure, and for Translation retrieval. For more information, please follow this [LINK](https://azure.microsoft.com/en-au/services/cognitive-services/translator-text-api/).
 
-> [!NOTE] It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.  
+> [!NOTE] 
+> It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.  
 > Please also be aware, that you may notice some echo when using the HoloLens mic and built-in speakers, during voice capture. 
 
 #### **Before you start**
