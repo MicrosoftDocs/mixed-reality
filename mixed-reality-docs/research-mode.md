@@ -37,8 +37,8 @@ Research mode is a sub-mode of developer mode. You first need to enable develope
 
 Then using a Web browser that is connected to the same WiFi network as your HoloLens, navigate to the IP address of your HoloLens (obtained through **Settings > Network and Internet > Hardware Properties**). This is the Device Portal, and you will find a Research Mode page in the System section of the portal:
 
-![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.jpg)<br>
-*Please insert caption for photo*
+![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.png)<br>
+*The HoloLens device portal has a new page for enabling and disabling research mode in the System section. A reboot is required to complete the operation.*
 
 After selecting **Allow access to sensor streams**, you will need to reboot the HoloLens. You can do this from the Device Portal under the Power menu item on the top strip.
 
@@ -54,4 +54,4 @@ Problems with research mode or the sample code are discussed in the [issue track
 
 ## See also
 
-**Insert other relevant articles that will aid in understanding or execution, like Media Foundation articles from Windows dev docs, or other articles within this repo**
+All research mode streams are made available through [Windows Media Foundation](https://msdn.microsoft.com/en-us/library/windows/desktop/ms694197(v=vs.85).aspx)
