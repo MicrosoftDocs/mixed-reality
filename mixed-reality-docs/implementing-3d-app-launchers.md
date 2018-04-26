@@ -69,6 +69,7 @@ The MixedRealityModel elements accepts a file path pointing to a 3D asset stored
 
 
 ![Select the .glb in your solution explorer and use the properties section to mark it as "Content" in the build settings](images/buildsetting-content-300px.png)<br>
+*Select the .glb in your solution explorer and use the properties section to mark it as "Content" in the build settings*
 
 ### Bounding box
 
@@ -116,7 +117,10 @@ Your 2D applications can be enhanced for Windows Mixed Reality by adding the abi
 
 ### Creating a 3D “secondaryTile”
 
-You can place 3D content from your application using “secondaryTiles” by defining a mixed reality model at creation time. Mixed reality models are created by referencing a 3D asset in your app package and optionally defining a bounding box. **Note:** creating “secondaryTiles” from within an exclusive view is not currently supported.
+You can place 3D content from your application using “secondaryTiles” by defining a mixed reality model at creation time. Mixed reality models are created by referencing a 3D asset in your app package and optionally defining a bounding box. 
+
+> [!NOTE]
+> Creating “secondaryTiles” from within an exclusive view is not currently supported.
 
 ```cs
 using Windows.UI.StartScreen;
