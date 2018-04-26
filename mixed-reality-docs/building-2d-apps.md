@@ -38,7 +38,7 @@ If you already have a 2D Windows app in the Store, you must first ensure it is t
 
 If you have a 2D Unity app today built as a Win32 app (the "PC, Mac & Linux Standalone" build target), you can target mixed reality by switching Unity to the "Universal Windows Platform" build target instead.
 
-We'll talk about ways that you can restrict your app specifically to the HoloLens device using the Windows.Holographic device family [below](#publish-and-maintain-your-universal-app).
+We'll talk about ways that you can restrict your app specifically to HoloLens using the Windows.Holographic device family [below](#publish-and-maintain-your-universal-app).
 
 ### Run your 2D app in a Windows Mixed Reality immersive headset
 

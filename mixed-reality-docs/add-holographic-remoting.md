@@ -16,7 +16,7 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 
 This page describes how to add Holographic Remoting to a desktop or UWP app.
 
-Holographic remoting allows your app to target a HoloLens with holographic content hosted on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources and making it possible to integrate remote [immersive views](app-views.md) into existing desktop PC software. A remoting host app receives an input data stream from a HoloLens, renders content in a virtual immersive view, and streams content frames back to the HoloLens. The connection is made using standard Wi-Fi. To use remoting, you will use a NuGet package to add holographic remoting to your desktop or UWP app, and write code to handle the connection and to render in an immersive view. Helper libraries are included in the code sample that simplify the task of handling the device connection.
+Holographic remoting allows your app to target a HoloLens with holographic content hosted on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources and making it possible to integrate remote [immersive views](app-views.md) into existing desktop PC software. A remoting host app receives an input data stream from a HoloLens, renders content in a virtual immersive view, and streams content frames back to HoloLens. The connection is made using standard Wi-Fi. To use remoting, you will use a NuGet package to add holographic remoting to your desktop or UWP app, and write code to handle the connection and to render in an immersive view. Helper libraries are included in the code sample that simplify the task of handling the device connection.
 
 A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real-time.
 
@@ -41,7 +41,7 @@ First, we need an instance of HolographicStreamerHelpers. Add this to the class 
        Microsoft::Holographic::HolographicStreamerHelpers^ m_streamerHelpers;
 ```
 
-You'll also need to track connection state. If you want to render the preview, you need to have a texture to copy it to. You also need a few things like a connection state lock, some way of storing the IP address of the HoloLens, and so on.
+You'll also need to track connection state. If you want to render the preview, you need to have a texture to copy it to. You also need a few things like a connection state lock, some way of storing the IP address of HoloLens, and so on.
 
 ```
 private:
@@ -58,7 +58,7 @@ private:
        Microsoft::WRL::ComPtr<ID3D11Texture2D>             m_spTexture;
 ```
 
-### Initialize HolographicStreamerHelpers and connect to the HoloLens
+### Initialize HolographicStreamerHelpers and connect to HoloLens
 
 To connect to a HoloLens device, create an instance of HolographicStreamerHelpers and connect to the target IP address. You will need to set the video frame size to match the HoloLens display width and height, because the Holographic Remoting library expects the encoder and decoder resolutions to match exactly.
 
@@ -203,7 +203,7 @@ void AppView::Tick()
    }
 ```
 
-The holographic app view update, render, and present loop is exactly the same as it is when running on the HoloLens - except that you have access to a much greater amount of system resources on your desktop PC. You can render many more triangles, have more drawing passes, do more physics, and use x64 processes to load content that requires more than 2 GB of RAM.
+The holographic app view update, render, and present loop is exactly the same as it is when running on HoloLens - except that you have access to a much greater amount of system resources on your desktop PC. You can render many more triangles, have more drawing passes, do more physics, and use x64 processes to load content that requires more than 2 GB of RAM.
 
 ### Disconnect and end the remote session
 

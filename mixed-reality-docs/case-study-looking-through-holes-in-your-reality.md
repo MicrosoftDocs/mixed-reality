@@ -30,9 +30,9 @@ This trick is a combination of two effects. First, holographic content is pinned
 
 Secondly, that holographic content is visually limited to a very specific space, so you can only see through the hole in your reality. That occlusion is necessary to require looking through a logical hole, window, or doorway, which sells the trick. Without something blocking most of the view, a crack in space to a secret Jurassic dimension might just look like a poorly placed dinosaur.
 
-![This is not an actual screenshot, but an illustration of how the secret underworld from the Holographic Academy looks on the HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)](images/origamiholecomposited-640px.png)
+![This is not an actual screenshot, but an illustration of how the secret underworld from the Holographic Academy looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)](images/origamiholecomposited-640px.png)
 
-This is not an actual screenshot, but an illustration of how the secret underworld from the Holographic Academy looks on the HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)
+This is not an actual screenshot, but an illustration of how the secret underworld from the Holographic Academy looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)
 
 ### World-locking holographic content
 
@@ -46,13 +46,13 @@ The WorldAnchor component will constantly adjust the position and rotation of it
 
 ### Occluding everything but the virtual hole
 
-There are a variety of ways to selectively block the view to what is hidden in your walls. The simplest one takes advantage of the fact that the HoloLens uses an additive display, which means that fully black objects appear invisible. You can do this in Unity without doing any special shader or material tricks— just create a black material and assign it to an object that boxes in your content. If you don't feel like doing 3D modeling, just use a handful of default Quad objects and overlap them slightly. There are a number of drawbacks to this approach, but it is the fastest way to get something working, and getting a low-fidelity proof of concept working is great, even if you suspect you might want to refactor it later.
+There are a variety of ways to selectively block the view to what is hidden in your walls. The simplest one takes advantage of the fact that HoloLens uses an additive display, which means that fully black objects appear invisible. You can do this in Unity without doing any special shader or material tricks— just create a black material and assign it to an object that boxes in your content. If you don't feel like doing 3D modeling, just use a handful of default Quad objects and overlap them slightly. There are a number of drawbacks to this approach, but it is the fastest way to get something working, and getting a low-fidelity proof of concept working is great, even if you suspect you might want to refactor it later.
 
-One major drawback to the above "black box" approach is that it doesn't photograph well. While your effect might look perfect through the display of the HoloLens, any screenshots you take will show a large black object instead of what remains of your wall or floor. The reason for this is that the physical hardware and screenshots composite holograms and reality differently. Let's detour for a moment into some fake math...
+One major drawback to the above "black box" approach is that it doesn't photograph well. While your effect might look perfect through the display of HoloLens, any screenshots you take will show a large black object instead of what remains of your wall or floor. The reason for this is that the physical hardware and screenshots composite holograms and reality differently. Let's detour for a moment into some fake math...
 
 *Fake math alert! These numbers and formulas are meant to illustrate a point, not to be any sort of accurate metric!*
 
-What you see through the HoloLens:
+What you see through HoloLens:
 
 ```
 ( Reality * darkening_amount ) + Holograms
@@ -84,11 +84,11 @@ Here is the secret underworld from the Holographic Academy tutorial as Unity dra
 
 ## Do it yourself
 
-Have a HoloLens and want to try out the effect for yourself? The easiest thing you can do (no coding required) is to install the free 3D Viewer app and then load the [download the.fbx file I've provided on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/CaseStudy-MagicWindow/MagicWindow) to view a flower pot model in your room. Load it on the HoloLens, and you can see the illusion at work. When you're in front of the model, you can only see into the small hole—everything else is invisible. Look at the model from any other side and it disappears entirely. Use the movement, rotation, and scale controls of 3D Viewer to position the virtual hole against any vertical surface you can think of to generate some ideas!
+Have a HoloLens and want to try out the effect for yourself? The easiest thing you can do (no coding required) is to install the free 3D Viewer app and then load the [download the.fbx file I've provided on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/CaseStudy-MagicWindow/MagicWindow) to view a flower pot model in your room. Load it on HoloLens, and you can see the illusion at work. When you're in front of the model, you can only see into the small hole—everything else is invisible. Look at the model from any other side and it disappears entirely. Use the movement, rotation, and scale controls of 3D Viewer to position the virtual hole against any vertical surface you can think of to generate some ideas!
 
-![Viewing this model in your Unity editor will show a large black box around the flowerpot. On the HoloLens, the box disappears, giving way to a magic window effect.](images/magicwindowflowerpotineditor.png)
+![Viewing this model in your Unity editor will show a large black box around the flowerpot. On HoloLens, the box disappears, giving way to a magic window effect.](images/magicwindowflowerpotineditor.png)
 
-Viewing this model in your Unity editor will show a large black box around the flowerpot. On the HoloLens, the box disappears, giving way to a magic window effect.
+Viewing this model in your Unity editor will show a large black box around the flowerpot. On HoloLens, the box disappears, giving way to a magic window effect.
 
 If you want to build an app that uses this technique, check out the [Holograms 101 tutorial](holograms-101.md) in the [Holographic Academy](academy.md). Chapter 7 ends with an explosion in your floor that reveals a hidden underworld (as pictured above). Who said tutorials had to be boring?
 

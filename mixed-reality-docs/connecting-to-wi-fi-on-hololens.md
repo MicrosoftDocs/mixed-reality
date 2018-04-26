@@ -46,7 +46,7 @@ HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a 
 1. [Bloom](gestures.md#bloom) to pull up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
 2. Look at the top left of the Start Menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
 
-## Identifying the HoloLens IP Address on the Wi-Fi network
+## Identifying the IP Address of your HoloLens on the Wi-Fi network
 
 **Using Settings**
 1. [Bloom](gestures.md#bloom) to pull up the [Start menu](navigating-the-windows-mixed-reality-home.md#start-menu)

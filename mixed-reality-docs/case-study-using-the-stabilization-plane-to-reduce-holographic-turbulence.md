@@ -18,9 +18,9 @@ Working with holograms can be tricky. The fact that you can move around your spa
 
 To make holograms appear as though they're actually sharing the space with you, they should render properly, without color separation. This is achieved, in part, by technology built-in to the HoloLens hardware which keeps holograms anchored on what we call a [stabilization plane](hologram-stability.md#stabilization-plane).
 
-A plane is defined by a point and a normal, but since we always want the plane to face the camera, we're really just concerned with setting the plane's point. We can tell the HoloLens which point to focus its processing on to keep everything anchored and stable, but how to set this focus point is app-specific, and can make or break your app depending on the content.
+A plane is defined by a point and a normal, but since we always want the plane to face the camera, we're really just concerned with setting the plane's point. We can tell HoloLens which point to focus its processing on to keep everything anchored and stable, but how to set this focus point is app-specific, and can make or break your app depending on the content.
 
-In a nutshell, holograms work best when the stabilization plane is properly applied, but what that actually means depends on the type of application you’re creating. Let’s take a look at how some of the apps currently available for the HoloLens tackle this problem.
+In a nutshell, holograms work best when the stabilization plane is properly applied, but what that actually means depends on the type of application you’re creating. Let’s take a look at how some of the apps currently available for HoloLens tackle this problem.
 
 ## Behind the scenes
 
@@ -74,7 +74,7 @@ You'll see several white dots around you at different orientations. In front of 
 
 ### Exercise 2
 
-Now, turn to your right until you see two moving dots, one oscillating on a horizontal path and one on a vertical path. Once again, air-tap to change which dot the plane is set to. Notice how color separation is lessened appears on the dot that is connected to the plane. Tap again to use the dot’s velocity in the plane setting function. This parameter gives a hint to the HoloLens about the object’s intended motion. It’s important to know when to use this, as you’ll notice when velocity is used on one dot, the other moving dot will show greater color separation. Keep this in mind when designing your apps—having a cohesive flow to the motion of your objects can help prevent artifacts from appearing.
+Now, turn to your right until you see two moving dots, one oscillating on a horizontal path and one on a vertical path. Once again, air-tap to change which dot the plane is set to. Notice how color separation is lessened appears on the dot that is connected to the plane. Tap again to use the dot’s velocity in the plane setting function. This parameter gives a hint to HoloLens about the object’s intended motion. It’s important to know when to use this, as you’ll notice when velocity is used on one dot, the other moving dot will show greater color separation. Keep this in mind when designing your apps—having a cohesive flow to the motion of your objects can help prevent artifacts from appearing.
 
 ### Exercise 3
 

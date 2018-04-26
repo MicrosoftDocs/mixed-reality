@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, design, process, case study
 
 # Case study: Expanding the design process for mixed reality
 
-As Microsoft launched the HoloLens to an audience of eager developers in Spring of 2016, our design team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both success and difficulty in the new field of mixed reality design. To help new teams and partners innovate more effectively, we collected their methods and insights into a curriculum of design and development lessons that we teach today in our Mixed Reality Academy (including week-long design workshops we offer to our enterprise partners).
+As Microsoft launched HoloLens to an audience of eager developers in Spring of 2016, our design team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both success and difficulty in the new field of mixed reality design. To help new teams and partners innovate more effectively, we collected their methods and insights into a curriculum of design and development lessons that we teach today in our Mixed Reality Academy (including week-long design workshops we offer to our enterprise partners).
 
 Below is a high-level overview of the process we use to help partners prepare their teams for mixed reality development. While many of these methods were originally targeted for HoloLens development, ideating and sharing thinking in 3D is a critical component across the spectrum of mixed reality experiences.
 
@@ -35,7 +35,7 @@ Getting your team to think about events occurring in the real world, beyond the 
 *Workshop materials in the Mixed Reality Academy*
 
 
-Simple, physical props level the playing field for participants, allowing individuals with different skill sets and backgrounds to contribute ideas and uncover opportunities inherent to mixed reality experiences instead of being locked into the paradigm of 2D thinking. While technical prototyping or high-fidelity storyboarding can take a trained 3D developer or artist, a few Styrofoam balls and cardboard can be enough to showcase how a mixed reality interface might unfold in physical space. These techniques apply to both mixed reality development with the HoloLens as well as immersive experiences. For example, a set of plastic connectors might illustrate the size of holograms that appear in a HoloLens experience or as props to act out interactable elements in a virtual world.
+Simple, physical props level the playing field for participants, allowing individuals with different skill sets and backgrounds to contribute ideas and uncover opportunities inherent to mixed reality experiences instead of being locked into the paradigm of 2D thinking. While technical prototyping or high-fidelity storyboarding can take a trained 3D developer or artist, a few Styrofoam balls and cardboard can be enough to showcase how a mixed reality interface might unfold in physical space. These techniques apply to both mixed reality development with HoloLens as well as immersive experiences. For example, a set of plastic connectors might illustrate the size of holograms that appear in a HoloLens experience or as props to act out interactable elements in a virtual world.
 
 ![Teams working with materials in the Mixed Reality Academy](images/academyWork1000.png)
 
