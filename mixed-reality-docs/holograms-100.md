@@ -88,16 +88,19 @@ Since maintaining high framerate on HoloLens is so important, we want the qualit
 ![Target Windows Holographic SDK](images/xrsettings.png) 
 
 We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK.
+1. Go to **Edit > Project Settings > Player**.
+2. In the **Inspector Panel** for Player Settings, select the **Windows Store** icon.
+3. Expand the **XR Settings** group.
+4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality SDKs** list.
+5. Verify that **Windows Mixed Reality** appears in the list. If not, select the **+** button at the bottom of the list and choose **Windows Mixed Reality**.
 
 **Verify .NET Configuration**
 
 ![Verify .NET Configuration](images/configoptions-375px.png)
 
-1. Select **Edit > Project Settings > Player**
-2. In the **Inspector** panel click on the **Windows Store** tab
-3. Expand the **XR Settings** group.
-4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality SDKs** list and confirm **"Windows Mixed Reality"** is listed as a supported SDK.
-5. In the **Other Settings** Configuration section, make sure that **Scripting Backend** is set to **.NET**
+1. Go to **Edit > Project Settings > Player** (you may still have this up from the previous step).
+2. In the **Inspector Panel** for Player Settings, select the **Windows Store** icon.
+3. In the **Other Settings** Configuration section, make sure that **Scripting Backend** is set to **.NET**
 
 Awesome job on getting all the project settings applied. Next, let us add a hologram!
 
