@@ -32,7 +32,7 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
 **Project files**
-* Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-211-Gesture.zip) required by the project. Requires Unity 2017.2 or later.
+* Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/v2017.2-211.zip) required by the project. Requires Unity 2017.2 or later.
     * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-211.zip).
     * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-211.zip).
     * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-211.zip).

@@ -30,7 +30,7 @@ We have a friendly astronaut here to help you learn gaze concepts. In [Holograms
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
 **Project files**
-* Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-210-Gaze.zip) required by the project. Requires Unity 2017.2 or later.
+* Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/v2017.2-210.zip) required by the project. Requires Unity 2017.2 or later.
     * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-210.zip).
     * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-210.zip).
     * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-210.zip).
@@ -352,9 +352,6 @@ namespace Academy.HoloToolkit.Unity
 * In the **Hierarchy** panel, select the **Managers** object.
 * In the **Inspector** panel, click the **Add Component** button.
 * In the menu, type in the search box **Interactible Manager**. Select the search result.
-* In the **Hierarchy** panel, select the **AstroMan** object.
-* In the **Inspector** panel, click the **Add Component** button.
-* In the menu, type in the search box **Interactible**. Select the search result.
 
 You'll need to edit both **InteractibleManager.cs** and **Interactible.cs** in order to achieve the following:
 1. In **InteractibleManager.cs**, fetch the point the gaze raycast hit and save the **collided GameObject**.
