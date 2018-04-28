@@ -352,9 +352,6 @@ namespace Academy.HoloToolkit.Unity
 * In the **Hierarchy** panel, select the **Managers** object.
 * In the **Inspector** panel, click the **Add Component** button.
 * In the menu, type in the search box **Interactible Manager**. Select the search result.
-* In the **Hierarchy** panel, select the **AstroMan** object.
-* In the **Inspector** panel, click the **Add Component** button.
-* In the menu, type in the search box **Interactible**. Select the search result.
 
 You'll need to edit both **InteractibleManager.cs** and **Interactible.cs** in order to achieve the following:
 1. In **InteractibleManager.cs**, fetch the point the gaze raycast hit and save the **collided GameObject**.
