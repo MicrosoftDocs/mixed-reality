@@ -20,11 +20,11 @@ Andy Zibits, the art lead on the project, and Karim Luccin, the team's graphics 
 
 [Our team](galaxy-explorer.md#meet-the-team) - made up of two designers, three developers, four artists, a producer, and one tester — had six weeks to build a fully functional app which would allow people to learn about and explore the vastness and beauty of our Milky Way Galaxy.
 
-We wanted to take full advantage of the ability for the HoloLens to render 3D objects directly in your living space, so we decided we wanted to create a realistic looking galaxy where people would be able to zoom in close and see individual stars, each on their own trajectories.
+We wanted to take full advantage of the ability of HoloLens to render 3D objects directly in your living space, so we decided we wanted to create a realistic looking galaxy where people would be able to zoom in close and see individual stars, each on their own trajectories.
 
 In the first week of development, we came up with a few goals for our representation of the Milky Way Galaxy: It needed to have depth, movement, and feel volumetric—full of stars that would help create the shape of the galaxy.
 
-The problem with creating an animated galaxy that had billions of stars was that the sheer number of single elements that need updating would be too big per frame for the HoloLens to animate using the CPU. Our solution involved a complex mix of art and science.
+The problem with creating an animated galaxy that had billions of stars was that the sheer number of single elements that need updating would be too big per frame for HoloLens to animate using the CPU. Our solution involved a complex mix of art and science.
 
 ## Behind the scenes
 
@@ -34,7 +34,7 @@ To allow people to explore individual stars, our first step was to figure out ho
 
 Current CPUs are great for processing serial tasks and up to a few parallel tasks at once (depending on how many cores they have), but GPUs are much more effective at processing thousands of operations in parallel. However, because they don’t usually share the same memory as the CPU, exchanging data between CPU<>GPU can quickly become a bottleneck. Our solution was to make a galaxy on the GPU, and it had to live completely on the GPU.
 
-We started stress tests with thousands of point particles in various patterns. This allowed us to get the galaxy on the HoloLens to see what worked and what didn’t.
+We started stress tests with thousands of point particles in various patterns. This allowed us to get the galaxy on HoloLens to see what worked and what didn’t.
 
 ### Creating the position of the stars
 

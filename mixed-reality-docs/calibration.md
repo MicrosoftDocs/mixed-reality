@@ -25,7 +25,7 @@ On HoloLens, you'll be prompted to calibrate your visuals during setup. This all
 
 After Cortana introduces herself, the first setup step is calibration. It's recommended that you complete the calibration step during this setup phase, but it can be skipped by waiting until Cortana prompts you to say "Skip" to move on.
 
-Users are asked to align their finger with a series of six targets per eye. Through this process, the HoloLens sets the correct IPD for the user. If the calibration needs to be updated or adjusted for a new user, it can be run outside of setup using the Calibration app.
+Users are asked to align their finger with a series of six targets per eye. Through this process, HoloLens sets the correct IPD for the user. If the calibration needs to be updated or adjusted for a new user, it can be run outside of setup using the Calibration app.
 
 ### Calibration app
 

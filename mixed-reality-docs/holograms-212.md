@@ -39,9 +39,7 @@ In this course, we'll revisit Model Explorer, which we built in [Holograms 210](
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-212-Voice.zip) required by the project. Requires Unity 2017.2 or later.
-    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-212.zip).
-    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-212.zip).
-    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-212.zip).
+    * If you still need older Unity support or would like to access the previous version of this Academy course, please see the [Holograms 212 archive](holograms-212-archive.md).
 * Unarchive the files to your desktop or other easy to reach location.
 
 **Errata and Notes**
@@ -50,34 +48,43 @@ In this course, we'll revisit Model Explorer, which we built in [Holograms 210](
 ## Unity Setup
 
 **Instructions**
-* Start Unity.
-* Select **Open**.
-* Navigate to your Desktop and find the **HolographicAcademy-Holograms-212-Voice** folder you previously unarchived.
-* Find and select the **Starting\ModelExplorer** folder.
-* Click **Select Folder**.
-* In Unity's **Project** panel click on the **Scenes** folder.
-* Double-click the **ModelExplorer** scene to open it in Unity.
-* In Unity, select **File > Build Settings**.
-* If **Scenes/ModelExplorer** is not listed in **Scenes In Build**, click **Add Open Scenes** to add the scene.
-* Select **Universal Windows Platform** in the **Platform** list and click the **Switch Platform** button.
-* Set **SDK** to **Universal 10** and **UWP Build Type** to **D3D**.
-* Check **Unity C# Projects**.
-* Click **Build**.
-* Create a **New Folder** named "App".
-* Single click the **App** folder.
-* Press **Select Folder**.
-* When Unity is done, a File Explorer window will appear.
-* Open the **App Folder**.
-* Open the **ModelExplorer Visual Studio Solution**.
-* Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.
-* Click on the drop down arrow next to the Device button, and select **Remote Machine**.
-* Enter your **device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, using your HoloLens look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, what's my IP address?"**
-* Click **Debug -> Start Without debugging** in the menu or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to pair it with Visual Studio. Follow these instructions: [Pairing your HoloLens with Visual Studio](using-visual-studio.md#pairing-your-device-hololens)
+1. Start Unity.
+2. Select **Open**.
+3. Navigate to the **HolographicAcademy-Holograms-212-Voice** folder you previously unarchived.
+4. Find and select the **Starting**/**Model Explorer** folder.
+5. Click the **Select Folder** button.
+6. In the **Project** panel, expand the **Scenes** folder.
+7. Double-click **ModelExplorer** scene to load it in Unity.
+
+**Building**
+1. In Unity select **File > Build Settings**.
+2. If **Scenes/ModelExplorer** is not listed in **Scenes In Build**, click **Add Open Scenes** to add the scene.
+3. If you're specifically developing for HoloLens, set **Target device** to **HoloLens**. Otherwise, leave it on **Any device**.
+4. Ensure **Build Type** is set to **D3D** and **SDK** is set to **Latest installed** (which should be SDK 16299 or newer).
+5. Click **Build**.
+6. Create a **New Folder** named "App".
+7. Single click the **App Folder**.
+8. Press **Select Folder** and Unity will start building the project for Visual Studio.
+
+When Unity is done, a File Explorer window will appear.
+1. Open the **App folder**.
+2. Open the **ModelExplorer Visual Studio Solution**.
+
+If deploying to HoloLens:
+1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
+2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
+3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
+5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
+
+If deploying to an immersive headset:
+1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x64**.
+2. Make sure the deployment target is set to **Local Machine**.
+3. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**.
+4. When the app has deployed, dismiss the **Fitbox** by pulling the trigger on a motion controller.
 * **Note,** you might notice some red errors in the Visual Studio Errors panel. It is safe to ignore them. Switch to the Output panel to view actual build progress. Errors in the Output panel will require you to make a fix (most often they are caused by a mistake in a script).
 
 ## Chapter 1 - Awareness
-
->[!VIDEO https://www.youtube.com/embed/fDwijJWuEc0]
 
 **Objectives**
 * Learn the **Dos and Don'ts** of voice command design.
@@ -103,12 +110,12 @@ In this chapter, you'll learn about designing voice commands. When creating voic
 * Use similar sounds. Try to avoid using voice commands that rhyme. If you had a shopping application which supported *"Show Store"* and *"Show More"* as voice commands, then you would want to disable one of the commands while the other was in use. For example, you could use the *"Show Store"* button to open the store, and then disable that command when the store was displayed so that the *"Show More"* command could be used for browsing.
 
 **Instructions**
-* In Unity's **Hierarchy** panel, use the search tool to find the **holoComm_screen_mesh** object.
+* In Unity's **Hierarchy** panel, use the search tool to find the **holoComm_scrwheeleen_mesh** object.
 * Double-click on the **holoComm_screen_mesh** object to view it in the **Scene**. This is the astronaut's watch, which will respond to our voice commands.
-* In the **Inspector** panel, locate the **Keyword Manager (Script)** component.
-* Expand the **Keywords and Responses** section to see the supported voice command: **Open Communicator**.
-* Double-click on **KeywordManager.cs** to open it in Visual Studio.
-* Explore **KeywordManager.cs** to understand how it uses the **KeywordRecognizer** to add voice commands and respond to them with delegates.
+* In the **Inspector** panel, locate the **Speech Input Source (Script)** component.
+* Expand the **Keywords** section to see the supported voice command: **Open Communicator**.
+* Click the cog to the right side, then select **Edit Script**.
+* Explore **SpeechInputSource.cs** to understand how it uses the **KeywordRecognizer** to add voice commands.
 
 **Build and Deploy**
 * In Unity, use **File > Build Settings** to rebuild the application.
@@ -145,11 +152,11 @@ The **Microphone** capability must be declared for an app to record from the mic
 * In the **Project** panel, the **Communicator** prefab should now have focus.
 * Click on the **Communicator** prefab in the **Project** panel to view its components in the **Inspector**.
 * Look at the **Microphone Manager (Script)** component, this will allow us to record the user's voice.
-* Notice that the **Communicator** object has a **Keyword Manager (Script)** component for responding to the **Send Message** command.
+* Notice that the **Communicator** object has a **Speech Input Handler (Script)** component for responding to the **Send Message** command.
 * Look at the **Communicator (Script)** component and double-click on the script to open it in Visual Studio.
 
 Communicator.cs is responsible for setting the proper button states on the communicator device. This will allow our users to record a message, play it back, and send the message to the astronaut. It will also start and stop an animated wave form, to acknowledge to the user that their voice was heard.
-* In **Communicator.cs**, delete the following lines from the **Start** method. This will enable the 'Record' button on the communicator.
+* In **Communicator.cs**, delete the following lines (81 and 82) from the **Start** method. This will enable the 'Record' button on the communicator.
 
 ```cs
 // TODO: 2.a Delete the following two lines:
@@ -203,179 +210,187 @@ Let's get started.
 * Complete all coding exercises for 3.a in **MicrophoneManager.cs**, or copy and paste the finished code found below:
 
 ```cs
-using Academy.HoloToolkit.Unity;
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License. See LICENSE in the project root for license information.
+
 using System.Collections;
 using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Windows.Speech;
 
-public class MicrophoneManager : MonoBehaviour
+namespace Academy
 {
-    [Tooltip("A text area for the recognizer to display the recognized strings.")]
-    public Text DictationDisplay;
-
-    private DictationRecognizer dictationRecognizer;
-
-    // Use this string to cache the text currently displayed in the text box.
-    private StringBuilder textSoFar;
-
-    // Using an empty string specifies the default microphone. 
-    private static string deviceName = string.Empty;
-    private int samplingRate;
-    private const int messageLength = 10;
-
-    // Use this to reset the UI once the Microphone is done recording after it was started.
-    private bool hasRecordingStarted;
-
-    void Awake()
+    public class MicrophoneManager : MonoBehaviour
     {
-        /* TODO: DEVELOPER CODING EXERCISE 3.a */
+        [Tooltip("A text area for the recognizer to display the recognized strings.")]
+        [SerializeField]
+        private Text dictationDisplay;
 
-        // 3.a: Create a new DictationRecognizer and assign it to dictationRecognizer variable.
-        dictationRecognizer = new DictationRecognizer();
-
-        // 3.a: Register for dictationRecognizer.DictationHypothesis and implement DictationHypothesis below
-        // This event is fired while the user is talking. As the recognizer listens, it provides text of what it's heard so far.
-        dictationRecognizer.DictationHypothesis += DictationRecognizer_DictationHypothesis;
-
-        // 3.a: Register for dictationRecognizer.DictationResult and implement DictationResult below
-        // This event is fired after the user pauses, typically at the end of a sentence. The full recognized string is returned here.
-        dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
-
-        // 3.a: Register for dictationRecognizer.DictationComplete and implement DictationComplete below
-        // This event is fired when the recognizer stops, whether from Stop() being called, a timeout occurring, or some other error.
-        dictationRecognizer.DictationComplete += DictationRecognizer_DictationComplete;
-
-        // 3.a: Register for dictationRecognizer.DictationError and implement DictationError below
-        // This event is fired when an error occurs.
-        dictationRecognizer.DictationError += DictationRecognizer_DictationError;
-
-        // Query the maximum frequency of the default microphone. Use 'unused' to ignore the minimum frequency.
-        int unused;
-        Microphone.GetDeviceCaps(deviceName, out unused, out samplingRate);
+        private DictationRecognizer dictationRecognizer;
 
         // Use this string to cache the text currently displayed in the text box.
-        textSoFar = new StringBuilder();
+        private StringBuilder textSoFar;
+
+        // Using an empty string specifies the default microphone. 
+        private static string deviceName = string.Empty;
+        private int samplingRate;
+        private const int messageLength = 10;
 
         // Use this to reset the UI once the Microphone is done recording after it was started.
-        hasRecordingStarted = false;
-    }
+        private bool hasRecordingStarted;
 
-    void Update()
-    {
-        // 3.a: Add condition to check if dictationRecognizer.Status is Running
-        if (hasRecordingStarted && !Microphone.IsRecording(deviceName) && dictationRecognizer.Status == SpeechSystemStatus.Running)
+        void Awake()
         {
-            // Reset the flag now that we're cleaning up the UI.
+            /* TODO: DEVELOPER CODING EXERCISE 3.a */
+
+            // 3.a: Create a new DictationRecognizer and assign it to dictationRecognizer variable.
+            dictationRecognizer = new DictationRecognizer();
+
+            // 3.a: Register for dictationRecognizer.DictationHypothesis and implement DictationHypothesis below
+            // This event is fired while the user is talking. As the recognizer listens, it provides text of what it's heard so far.
+            dictationRecognizer.DictationHypothesis += DictationRecognizer_DictationHypothesis;
+
+            // 3.a: Register for dictationRecognizer.DictationResult and implement DictationResult below
+            // This event is fired after the user pauses, typically at the end of a sentence. The full recognized string is returned here.
+            dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
+
+            // 3.a: Register for dictationRecognizer.DictationComplete and implement DictationComplete below
+            // This event is fired when the recognizer stops, whether from Stop() being called, a timeout occurring, or some other error.
+            dictationRecognizer.DictationComplete += DictationRecognizer_DictationComplete;
+
+            // 3.a: Register for dictationRecognizer.DictationError and implement DictationError below
+            // This event is fired when an error occurs.
+            dictationRecognizer.DictationError += DictationRecognizer_DictationError;
+
+            // Query the maximum frequency of the default microphone. Use 'unused' to ignore the minimum frequency.
+            int unused;
+            Microphone.GetDeviceCaps(deviceName, out unused, out samplingRate);
+
+            // Use this string to cache the text currently displayed in the text box.
+            textSoFar = new StringBuilder();
+
+            // Use this to reset the UI once the Microphone is done recording after it was started.
             hasRecordingStarted = false;
-
-            // This acts like pressing the Stop button and sends the message to the Communicator.
-            // If the microphone stops as a result of timing out, make sure to manually stop the dictation recognizer.
-            // Look at the StopRecording function.
-            SendMessage("RecordStop");
-        }
-    }
-
-    /// <summary>
-    /// Turns on the dictation recognizer and begins recording audio from the default microphone.
-    /// </summary>
-    /// <returns>The audio clip recorded from the microphone.</returns>
-    public AudioClip StartRecording()
-    {
-        // 3.a Shutdown the PhraseRecognitionSystem. This controls the KeywordRecognizers
-        PhraseRecognitionSystem.Shutdown();
-
-        // 3.a: Start dictationRecognizer
-        dictationRecognizer.Start();
-
-        // 3.a Uncomment this line
-        DictationDisplay.text = "Dictation is starting. It may take time to display your text the first time, but begin speaking now...";
-
-        // Set the flag that we've started recording.
-        hasRecordingStarted = true;
-
-        // Start recording from the microphone for 10 seconds.
-        return Microphone.Start(deviceName, false, messageLength, samplingRate);
-    }
-
-    /// <summary>
-    /// Ends the recording session.
-    /// </summary>
-    public void StopRecording()
-    {
-        // 3.a: Check if dictationRecognizer.Status is Running and stop it if so
-        if (dictationRecognizer.Status == SpeechSystemStatus.Running)
-        {
-            dictationRecognizer.Stop();
         }
 
-        Microphone.End(deviceName);
-    }
-
-    /// <summary>
-    /// This event is fired while the user is talking. As the recognizer listens, it provides text of what it's heard so far.
-    /// </summary>
-    /// <param name="text">The currently hypothesized recognition.</param>
-    private void DictationRecognizer_DictationHypothesis(string text)
-    {
-        // 3.a: Set DictationDisplay text to be textSoFar and new hypothesized text
-        // We don't want to append to textSoFar yet, because the hypothesis may have changed on the next event
-        DictationDisplay.text = textSoFar.ToString() + " " + text + "...";
-    }
-
-    /// <summary>
-    /// This event is fired after the user pauses, typically at the end of a sentence. The full recognized string is returned here.
-    /// </summary>
-    /// <param name="text">The text that was heard by the recognizer.</param>
-    /// <param name="confidence">A representation of how confident (rejected, low, medium, high) the recognizer is of this recognition.</param>
-    private void DictationRecognizer_DictationResult(string text, ConfidenceLevel confidence)
-    {
-        // 3.a: Append textSoFar with latest text
-        textSoFar.Append(text + ". ");
-
-        // 3.a: Set DictationDisplay text to be textSoFar
-        DictationDisplay.text = textSoFar.ToString();
-    }
-
-    /// <summary>
-    /// This event is fired when the recognizer stops, whether from Stop() being called, a timeout occurring, or some other error.
-    /// Typically, this will simply return "Complete". In this case, we check to see if the recognizer timed out.
-    /// </summary>
-    /// <param name="cause">An enumerated reason for the session completing.</param>
-    private void DictationRecognizer_DictationComplete(DictationCompletionCause cause)
-    {
-        // If Timeout occurs, the user has been silent for too long.
-        // With dictation, the default timeout after a recognition is 20 seconds.
-        // The default timeout with initial silence is 5 seconds.
-        if (cause == DictationCompletionCause.TimeoutExceeded)
+        void Update()
         {
+            // 3.a: Add condition to check if dictationRecognizer.Status is Running
+            if (hasRecordingStarted && !Microphone.IsRecording(deviceName) && dictationRecognizer.Status == SpeechSystemStatus.Running)
+            {
+                // Reset the flag now that we're cleaning up the UI.
+                hasRecordingStarted = false;
+
+                // This acts like pressing the Stop button and sends the message to the Communicator.
+                // If the microphone stops as a result of timing out, make sure to manually stop the dictation recognizer.
+                // Look at the StopRecording function.
+                SendMessage("RecordStop");
+            }
+        }
+
+        /// <summary>
+        /// Turns on the dictation recognizer and begins recording audio from the default microphone.
+        /// </summary>
+        /// <returns>The audio clip recorded from the microphone.</returns>
+        public AudioClip StartRecording()
+        {
+            // 3.a Shutdown the PhraseRecognitionSystem. This controls the KeywordRecognizers
+            PhraseRecognitionSystem.Shutdown();
+
+            // 3.a: Start dictationRecognizer
+            dictationRecognizer.Start();
+
+            // 3.a Uncomment this line
+            dictationDisplay.text = "Dictation is starting. It may take time to display your text the first time, but begin speaking now...";
+
+            // Set the flag that we've started recording.
+            hasRecordingStarted = true;
+
+            // Start recording from the microphone for 10 seconds.
+            return Microphone.Start(deviceName, false, messageLength, samplingRate);
+        }
+
+        /// <summary>
+        /// Ends the recording session.
+        /// </summary>
+        public void StopRecording()
+        {
+            // 3.a: Check if dictationRecognizer.Status is Running and stop it if so
+            if (dictationRecognizer.Status == SpeechSystemStatus.Running)
+            {
+                dictationRecognizer.Stop();
+            }
+
             Microphone.End(deviceName);
-
-            DictationDisplay.text = "Dictation has timed out. Please press the record button again.";
-            SendMessage("ResetAfterTimeout");
         }
-    }
 
-    /// <summary>
-    /// This event is fired when an error occurs.
-    /// </summary>
-    /// <param name="error">The string representation of the error reason.</param>
-    /// <param name="hresult">The int representation of the hresult.</param>
-    private void DictationRecognizer_DictationError(string error, int hresult)
-    {
-        // 3.a: Set DictationDisplay text to be the error string
-        DictationDisplay.text = error + "\nHRESULT: " + hresult;
-    }
-
-    private IEnumerator RestartSpeechSystem(KeywordManager keywordToStart)
-    {
-        while (dictationRecognizer != null && dictationRecognizer.Status == SpeechSystemStatus.Running)
+        /// <summary>
+        /// This event is fired while the user is talking. As the recognizer listens, it provides text of what it's heard so far.
+        /// </summary>
+        /// <param name="text">The currently hypothesized recognition.</param>
+        private void DictationRecognizer_DictationHypothesis(string text)
         {
-            yield return null;
+            // 3.a: Set DictationDisplay text to be textSoFar and new hypothesized text
+            // We don't want to append to textSoFar yet, because the hypothesis may have changed on the next event
+            dictationDisplay.text = textSoFar.ToString() + " " + text + "...";
         }
 
-        keywordToStart.StartKeywordRecognizer();
+        /// <summary>
+        /// This event is fired after the user pauses, typically at the end of a sentence. The full recognized string is returned here.
+        /// </summary>
+        /// <param name="text">The text that was heard by the recognizer.</param>
+        /// <param name="confidence">A representation of how confident (rejected, low, medium, high) the recognizer is of this recognition.</param>
+        private void DictationRecognizer_DictationResult(string text, ConfidenceLevel confidence)
+        {
+            // 3.a: Append textSoFar with latest text
+            textSoFar.Append(text + ". ");
+
+            // 3.a: Set DictationDisplay text to be textSoFar
+            dictationDisplay.text = textSoFar.ToString();
+        }
+
+        /// <summary>
+        /// This event is fired when the recognizer stops, whether from Stop() being called, a timeout occurring, or some other error.
+        /// Typically, this will simply return "Complete". In this case, we check to see if the recognizer timed out.
+        /// </summary>
+        /// <param name="cause">An enumerated reason for the session completing.</param>
+        private void DictationRecognizer_DictationComplete(DictationCompletionCause cause)
+        {
+            // If Timeout occurs, the user has been silent for too long.
+            // With dictation, the default timeout after a recognition is 20 seconds.
+            // The default timeout with initial silence is 5 seconds.
+            if (cause == DictationCompletionCause.TimeoutExceeded)
+            {
+                Microphone.End(deviceName);
+
+                dictationDisplay.text = "Dictation has timed out. Please press the record button again.";
+                SendMessage("ResetAfterTimeout");
+            }
+        }
+
+        /// <summary>
+        /// This event is fired when an error occurs.
+        /// </summary>
+        /// <param name="error">The string representation of the error reason.</param>
+        /// <param name="hresult">The int representation of the hresult.</param>
+        private void DictationRecognizer_DictationError(string error, int hresult)
+        {
+            // 3.a: Set DictationDisplay text to be the error string
+            dictationDisplay.text = error + "\nHRESULT: " + hresult;
+        }
+
+        /// <summary>
+        /// The dictation recognizer may not turn off immediately, so this call blocks on
+        /// the recognizer reporting that it has actually stopped.
+        /// </summary>
+        public IEnumerator WaitForDictationToStop()
+        {
+            while (dictationRecognizer != null && dictationRecognizer.Status == SpeechSystemStatus.Running)
+            {
+                yield return null;
+            }
+        }
     }
 }
 ```
@@ -408,7 +423,7 @@ The **Microphone** capability must be declared for an app to record from the mic
 
 **Instructions**
 1. In the **Hierarchy** panel, search for **Jetpack_Center** and select it.
-2. Look for the **Interactible Action** script in the **Inspector** panel.
+2. Look for the **Tagalong Action** script in the **Inspector** panel.
 3. Click the little circle to the right of the **Object To Tag Along** field.
 4. In the window that pops up, search for **SRGSToolbox** and select it from the list.
 5. Take a look at the **SRGSColor.xml** file in the **StreamingAssets** folder.
