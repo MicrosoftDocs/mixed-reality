@@ -56,14 +56,12 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 ### Audio
 * As noted above, Bluetooth Audio peripherals do not work well with Windows Mixed Reality voice and spatial sound experiences. They can also negatively affect your motion controller experience. WE do not recommend using Bluetooth Audio headsets with Windows Mixed Reality.
-* You can't use the audio device connected to (or part of) the headset for audio playback when the device is not being worn. If you only have one audio headset, you may want to connect the audio headset to the host PC instead of the headset. If so, then you must turn off "switch to headset audio" in **Settings** > **Mixed Reality** > **Audio and speech**.
 * Some applications, including many of those launched through SteamVR, can lose audio or hang when the audio device changes as you start or stop the Mixed Reality Portal. Restart the app after you have opened the Mixed Reality Portal app to correct this.
 * If you have Cortana enabled on your host PC prior to using your Windows Mixed Reality headset, you may lose the spatial sound simulation applied to the apps you place around the Windows Mixed Reality home. The work around is to enable "Windows Sonic for Headphones" on all the audio devices attached to your PC, even your headset-connected audio device:
    1. Left-click the speaker icon on the desktop taskbar and select from list of audio devices.
    2. Right-click the speaker icon on the desktop taskbar and select "Windows Sonic for Headphones" in the "Speaker setup" menu.
    3. Repeat these steps for all of your audio devices (endpoints).
 >[!NOTE]
-> - Because the headphones/speakers connected to your headset won't appear unless you're wearing it, you have to do this from within the Desktop app window in the Windows Mixed Reality home to apply this setting to the audio device connected to your headset (or integrated into your headset).
 > - Another option is to turn off "Let Cortana respond to Hey Cortana" in **Settings** > **Cortana** on your desktop prior to launching Windows Mixed Reality.
 
 * When another multimedia USB device (such as a web cam) shares the same USB hub (either external or inside your PC) with the Windows Mixed Reality headset, in rare cases the headset's audio jack/headphones may either have a buzzing sound or no audio at all. You can fix this by your headset into a USB port that does not share the same hub as the other device, or disconnect/disable your other USB multimedia device.
