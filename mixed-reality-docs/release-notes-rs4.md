@@ -12,27 +12,25 @@ keywords:
 
 # Release notes - RS4
 
-Welcome to Windows Mixed Reality! The release of the **[Windows 10 April Update](https://blogs.windows.com/windowsexperience/)** 
+Welcome to Windows Mixed Reality! The release of the **[Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update)** includes new features for both HoloLens and Windows Mixed Reality immersive headsets on desktops. 
 
-This update includes new features for both HoloLens and Windows Mixed Reality immersive headsets on desktops. 
+To update to the latest release for each device, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 April 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
 
-To update to the latest release for each device, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 April Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
-
- **Latest release for Desktop:** Windows 10 Desktop October 2017 (**10.0.16299.15**, Windows 10 Fall Creators Update)
+ **Latest release for Desktop:** Windows 10 Desktop April 2018 Update (**10.0.16299.15**, Windows 10 Fall Creators Update)
  **Latest release for HoloLens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
 
 >[!VIDEO https://www.youtube.com/embed/YBcLy1lkegg]
 
 ## Windows Mixed Reality immersive headsets
 
-The Windows 10 April Update includes many improvements for using Windows Mixed Reality headsets with your desktop PC. There are a number of new features, including: 
+The Windows 10 April 2018 Update includes many improvements for using Windows Mixed Reality headsets with your desktop PC, such as: 
 
-A brand-new environment called Sky Loft that you can navigate to by selecting Places on the Mixed Reality Start menu.
-Support for haptic feedback when using motion controllers in SteamVR games in combination with the latest version of SteamVR bridge for Windows Mixed Reality
-Improved performance in SteamVR games with lower video RAM usage. Live video preview in the Mixed Reality Portal on desktop is also more performant. 
-You can now take mixed reality photos directly from your controller by holding the Windows button and then tapping the trigger. This works across environments and apps except for capturing content protected with DRM.
-The automatic performance settings have been updated to provide an optimized experience, and we’ve added a new setting to override the default in Settings > Mixed Reality > Headset display.
-Setup now provides more detailed information about common compatibility issues with USB3.0 controllers and graphics cards.
+* A brand-new environment called Sky Loft that you can navigate to by selecting Places on the Mixed Reality Start menu.
+* Support for haptic feedback when using motion controllers in SteamVR games in combination with the latest version of SteamVR bridge for Windows Mixed Reality
+* Improved performance in SteamVR games with lower video RAM usage. Live video preview in the Mixed Reality Portal on desktop is also more performant. 
+* You can now take mixed reality photos directly from your controller by holding the Windows button and then tapping the trigger. This works across environments and apps except for capturing content protected with DRM.
+* The automatic performance settings have been updated to provide an optimized experience, and we’ve added a new setting to override the default in Settings > Mixed Reality > Headset display.
+* Setup now provides more detailed information about common compatibility issues with USB3.0 controllers and graphics cards.
 
 ## Known issues
 
@@ -51,7 +49,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 * When creating a boundary, tracing may fail. If so, try again, as the system will learn more about your space over time.
 * If you turn Cortana on or off during Windows Mixed Reality setup, this change will be applied to your desktop Cortana settings.
 * If you do not have headphones connected, you may miss additional tips when you first visit the Windows Mixed Reality home.
-* Bluetooth headphones can cause interference with motion controllers. We recommend unpairing or powering down Bluetooth controllers during Windows Mixed Reality sessions.
+* Bluetooth headphones can cause interference with motion controllers. We recommend unpairing or powering down other Bluetooth peripherals during Windows Mixed Reality sessions and making sure your computer's Bluetooth radio is in an unobstructed location.
 
 ### Games and apps from Windows Store
 * Some graphically intensive games, like Forza Motorsports 6, may cause performance issues on less capable PCs when played inside Windows Mixed Reality.
