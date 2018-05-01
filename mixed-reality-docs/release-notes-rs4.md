@@ -36,27 +36,20 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 
 We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [Give us feedback](give-us-feedback.md).
 
-### Desktop app in the Windows Mixed Reality home
-* Snipping Tool does not work in Desktop app.
-* Desktop app does not persist setting on re-launch.
-* If you're using Mixed Reality Portal preview on your desktop, when opening the Desktop app in the Windows Mixed Reality home, you may notice the infinite mirror effect. 
-* Running the Desktop app may cause performance issues on non-Ultra Windows Mixed Reality PCs; it is not recommended.  
-* Desktop app may auto-launch because an invisible window on Desktop has focus. 
-* Desktop User Account Control prompt will make headset display black until the prompt is completed.
+
+### Visual quality
+* If you notice after the April 2018 upgrade that graphics is more blurry or the Field of view looks smaller on your headset, the automatic performance setting is using low visual quality in order to maintain a sufficient framerate on a less powerful graphics card (such as Nvidia 1050).  You can manually override this if you choose by changing Settings > Mixed Reality > Headset display > Experience option to 90hz, then changing visual quality (on the same Settings page)to High.
 
 ### Windows Mixed Reality setup
 * When setting up Windows with a headset connected, your PC monitor may go blank. Unplug your headset to enable output to your PC monitor to complete Windows setup.
 * When creating a boundary, tracing may fail. If so, try again, as the system will learn more about your space over time.
-* If you turn Cortana on or off during Windows Mixed Reality setup, this change will be applied to your desktop Cortana settings.
 * If you do not have headphones connected, you may miss additional tips when you first visit the Windows Mixed Reality home.
-* Bluetooth headphones can cause interference with motion controllers. We recommend unpairing or powering down other Bluetooth peripherals during Windows Mixed Reality sessions and making sure your computer's Bluetooth radio is in an unobstructed location.
+* Other Bluetooth devices can cause interference with motion controllers. If the motion controllers have connection/pairing/tracking issues, make sure the Bluetooth radio (if an external dongle) is plugged in to an unobstructed location and not immediately next to another Bluetooth dongle.  Also try powering down other Bluetooth peripherals during the Windows Mixed Reality sessions to see if it helps.
 
 ### Games and apps from Windows Store
 * Some graphically intensive games, like Forza Motorsports 6, may cause performance issues on less capable PCs when played inside Windows Mixed Reality.
 
 ### Audio
-* As noted above, Bluetooth Audio peripherals do not work well with Windows Mixed Reality voice and spatial sound experiences. They can also negatively affect your motion controller experience. WE do not recommend using Bluetooth Audio headsets with Windows Mixed Reality.
-* Some applications, including many of those launched through SteamVR, can lose audio or hang when the audio device changes as you start or stop the Mixed Reality Portal. Restart the app after you have opened the Mixed Reality Portal app to correct this.
 * If you have Cortana enabled on your host PC prior to using your Windows Mixed Reality headset, you may lose the spatial sound simulation applied to the apps you place around the Windows Mixed Reality home. The work around is to enable "Windows Sonic for Headphones" on all the audio devices attached to your PC, even your headset-connected audio device:
    1. Left-click the speaker icon on the desktop taskbar and select from list of audio devices.
    2. Right-click the speaker icon on the desktop taskbar and select "Windows Sonic for Headphones" in the "Speaker setup" menu.
@@ -67,20 +60,20 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 * When another multimedia USB device (such as a web cam) shares the same USB hub (either external or inside your PC) with the Windows Mixed Reality headset, in rare cases the headset's audio jack/headphones may either have a buzzing sound or no audio at all. You can fix this by your headset into a USB port that does not share the same hub as the other device, or disconnect/disable your other USB multimedia device.
 * In very rare cases, the host PC's USB hub cannot provide enough power to the Windows Mixed Reality headset and you may notice a burst of noise from the headphones connected to the headset.
 
-### Speech
-* Cortana may fail to play her audio cues for listening/thinking and audio responses to commands.
-* Cortana in China and Japan markets do not correctly show text below the Cortana circle during use.
-* Cortana can be slow the first time she is invoked in a Mixed Reality Portal session. You can work around this by making sure "Let Cortana respond to Hey Cortana" under **Settings** > **Cortana** > **Talk to Cortana** is enabled.
-* Cortana may run slower on PCs that are not Windows Mixed Reality Ultra PCs.
-* When your system keyboard is set to a language different from the UI language in Windows Mixed Reality, using dictation from the keyboard in Windows Mixed Reality will result in an error dialog about dictation not working due to not having Wi-Fi connection. To fix the issue simply make sure the system keyboard language matches the Windows Mixed Reality UI language.
-* Spain is not correctly being recognized as a market where speech is enabled for Windows Mixed Reality.
 
 ### Holograms
 * If you've placed a large number of holograms in your Windows Mixed Reality home, some may disappear and reappear as you look around. To avoid this, remove some of the holograms in that area of the Windows Mixed Reality home.
 
 ### Motion controllers
 * Occasionally, if you click on a webpage in Edge, the content will zoom instead of click.
-* Sometimes when you click on a link in Edge, the selection won't work.
+
+### Desktop app in the Windows Mixed Reality home
+* Snipping Tool does not work in Desktop app.
+* Desktop app does not persist setting on re-launch.
+* If you're using Mixed Reality Portal preview on your desktop, when opening the Desktop app in the Windows Mixed Reality home, you may notice the infinite mirror effect. 
+* Running the Desktop app may cause performance issues on non-Ultra Windows Mixed Reality PCs; it is not recommended.  
+* Desktop app may auto-launch because an invisible window on Desktop has focus. 
+* Desktop User Account Control prompt will make headset display black until the prompt is completed.
 
 ## Prior release notes
 * [Release notes - October 2017] (release-notes-october-2017.md)
