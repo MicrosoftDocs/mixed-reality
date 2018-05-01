@@ -91,9 +91,7 @@ Next, on the MixedRealityModel set the SpatialBoundingBox property to define the
 ```xml
         <uap:DefaultTile Wide310x150Logo="Assets\WideLogo.png" >
           <uap5:MixedRealityModel Path="Assets\My3DTile.glb">
-           <uap6:MixedRealityModel.BoundingBox>
-              <uap6:SpatialBoundingBox  Center=”1,2,3” Extents=”1,2,3” >
-           </uap6:MixedRealityModel.BoundingBox>
+              <uap6:SpatialBoundingBox  Center=”1,-2,3” Extents=”1,2,3” />
           </uap5:MixedRealityModel>
         </uap:DefaultTile>
 ```
