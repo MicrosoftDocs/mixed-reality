@@ -64,6 +64,7 @@ Use the following workflow to create new articles in the documentation:
 
 ## Markdown basics
 * [Markdown Basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+* [Markdown at a glance Reference Poster](images/MarkdownPoster.pdf)
 * [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
 * [Unique Markdig differences](https://review.docs.microsoft.com/en-us/new-hope/engineering/tools/markdig/markdig-migration-information?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/en-us/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
 

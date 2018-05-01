@@ -150,7 +150,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 * Spatial map is useful for placing objects on surfaces when precision isn’t required.
 * For the best precision, use markers or posters to set the holograms and an Xbox controller (or some manual alignment mechanism) for final calibration.
 * Consider breaking extra-large holograms into logical parts and aligning each part to the surface.
-* Improperly set interpupilary distance (IPD) can also effect hologram alignment. Always configure the HoloLens to the user's IPD.
+* Improperly set interpupilary distance (IPD) can also effect hologram alignment. Always configure HoloLens to the user's IPD.
 
 **Resources**
 
@@ -173,7 +173,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 
 ## Viewing zone of comfort
 
-App developers control where users' eyes converge by placing content and holograms at various depths. Users wearing HoloLens will always accommodate to 2.0m to maintain a clear image because the HoloLens displays are fixed at an optical distance approximately 2.0m away from the user. Improper content depth can lead to visual discomfort or fatigue.
+App developers control where users' eyes converge by placing content and holograms at various depths. Users wearing HoloLens will always accommodate to 2.0m to maintain a clear image because HoloLens displays are fixed at an optical distance approximately 2.0m away from the user. Improper content depth can lead to visual discomfort or fatigue.
 
 **Device impact**
 

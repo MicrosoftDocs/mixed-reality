@@ -22,7 +22,7 @@ When creating our first apps for Microsoft HoloLens, we were eager to see just h
 
 While we were working on [Fragments](https://www.microsoft.com/microsoft-hololens/en-us/apps/Fragments) and [Young Conker](https://www.microsoft.com/microsoft-hololens/en-us/apps/young-conker), two of the first games for HoloLens, we found that when we were doing procedural placement of holograms in the physical world, we needed a higher level of understanding about the user's environment. Each game had its own specific placement needs: In Fragments, for example, we wanted to be able to distinguish between different surfaces—such as the floor or a table—to place clues in relevant locations. We also wanted to be able to identify surfaces that life-size holographic characters could sit on, such as a couch or a chair. In Young Conker, we wanted Conker and his opponents to be able to use raised surfaces in a player's room as platforms.
 
-[Asobo Studios](http://www.asobostudio.com/index.html), our development partner for these games, faced this problem head-on and created a technology that extends the spatial mapping capabilities of the HoloLens device. Using this, we could analyze a player's room and identify surfaces such as walls, tables, chairs, and floors. It also gave us the ability to optimize against a set of constraints to determine the best placement for holographic objects.
+[Asobo Studios](http://www.asobostudio.com/index.html), our development partner for these games, faced this problem head-on and created a technology that extends the spatial mapping capabilities of HoloLens. Using this, we could analyze a player's room and identify surfaces such as walls, tables, chairs, and floors. It also gave us the ability to optimize against a set of constraints to determine the best placement for holographic objects.
 
 ## The spatial understanding code
 
@@ -30,7 +30,7 @@ We took Asobo's original code and created a library that encapsulates this techn
 
 There are many useful queries included in the Unity sample that will allow you to find empty spaces on walls, place objects on the ceiling or on large spaces on the floor, identify places for characters to sit, and a myriad of other spatial understanding queries.
 
-While the spatial mapping solution provided by the HoloLens is designed to be generic enough to meet the needs of the entire gamut of problem spaces, the spatial understanding module was built to support the needs of two specific games. As such, its solution is structured around a specific process and set of assumptions:
+While the spatial mapping solution provided by HoloLens is designed to be generic enough to meet the needs of the entire gamut of problem spaces, the spatial understanding module was built to support the needs of two specific games. As such, its solution is structured around a specific process and set of assumptions:
 * **Fixed size playspace**: The user specifies the maximum playspace size in the init call.
 * **One-time scan process**: The process requires a discrete scanning phase where the user walks around, defining the playspace. Query functions will not function until after the scan has been finalized.
 * **User driven playspace “painting”**: During the scanning phase, the user moves and looks around the plays pace, effectively painting the areas which should be included. The generated mesh is important to provide user feedback during this phase.

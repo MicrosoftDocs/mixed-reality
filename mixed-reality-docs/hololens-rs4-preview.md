@@ -27,7 +27,7 @@ You can download the preview setup package from [https://aka.ms/hololenspreviewd
 
 | File | Description |
 |------|------|
-| rs4_release_svc_analog.retail.10.0.17123.1004.FFU | The HoloLens RS4 Preview image that you will flash to your device using the Windows Device Recovery Tool. |
+| rs4_release_svc_analog.retail.10.0.17134.1004.FFU | The HoloLens RS4 Preview image that you will flash to your device using the Windows Device Recovery Tool. |
 | HoloLens RS4 Preview – EULA | HoloLens RS4 Preview - Evaluation Use Terms (End User License Agreement) |
 
 ## Installing the preview
@@ -230,6 +230,32 @@ Check for HoloLens RS4 Preview updates with **Windows Update**:
 </table>
 
 ## Update history
+
+### Update 4 - Build 17134.1004
+
+*Released April 25, 2018*
+
+This build is delivered over the air (OTA) through Windows Update to devices that already have the HoloLens RS4 Preview, or can be manually installed using the HoloLens RS4 Preview package at the top of the page.
+
+**General changes, improvements, and fixes:**
+
+   * App launch times.
+   * Animated 3D app launchers.
+   * Device management tool.
+
+### Update 3 - Build 17134.1000
+
+*Released April 18, 2018*
+
+This build is delivered over the air (OTA) through Windows Update after you've manually installed the HoloLens RS4 Preview using the instructions at the top of this page.
+
+**General changes, improvements, and fixes:**
+
+   * Reliability issues for exclusive apps.
+   * Interactions while moving slates and blooming.
+   * Cortana/Skype integration.
+   * Speech in OOBE stability.
+   * UWP app reliability with mouse/gamepad integration.
 
 ### Update 2 - Build 17133.1009
 

@@ -48,7 +48,7 @@ It's much harder in 3D to alert users to things they need to pay attention to. U
 
 There are times when a user wants to interact with a hologram and its associated UI controls, but they are blocked from view because another hologram is in front of them. While we were developing HoloStudio, we used trial and error to come to a solution for this.
 
-![A UI control associated with a hologram can become blocked if there is another hologram between it and the user wearing the HoloLens device.](images/ui-blocked-500px.jpg)
+![A UI control associated with a hologram can become blocked if there is another hologram between it and the user wearing HoloLens.](images/ui-blocked-500px.jpg)
 
 We tried moving the UI control closer to the user so it couldn't get blocked, but found that it wasn't comfortable for the user to look at a control that was near to you while simultaneously looking at a hologram that was far away. If, however, we moved the control in front of the closest hologram to the user, they felt like it was detached from the hologram it should be affecting.
 
