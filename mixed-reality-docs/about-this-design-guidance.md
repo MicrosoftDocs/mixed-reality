@@ -33,7 +33,7 @@ Here’s a quick overview of how this design guidance is organized. You’ll fin
 * **[App patterns](types-of-mixed-reality-apps.md)** - Learn how apps can span scenarios across immersive and real world environments.
 * **[Controls](interactable-object.md)** - Use controls and patterns as building blocks to create your own app experience.
 * **[Sample apps](design.md#sample-apps)** - Build great experiences from samples designed and created by our team.
-* **[Design tools and resources](design.md#resources)** - Jump-start your project with design templates and tools.
+* **[Design tools and resources](design.md#Design-tools)** - Jump-start your project with design templates and tools.
 
 For all the above, we aim to deliver the right mix of text, illustrations and diagrams, and videos, so you’ll see us experimenting with different formats and techniques, all with the intent of delivering what you need. And in the months ahead, we’ll expand this taxonomy to include a broader set of design topics. Whenever possible, we’ll give you a heads-up about what is coming next, so please keep checking back.
 
