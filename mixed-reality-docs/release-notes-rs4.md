@@ -24,11 +24,11 @@ To update to the latest release for each device, open the **Settings** app, go t
 The Windows 10 April 2018 Update includes many improvements for using Windows Mixed Reality headsets with your desktop PC, such as: 
 
 * A brand-new environment called Sky Loft that you can navigate to by selecting Places on the Mixed Reality Start menu.
-* Support for haptic feedback when using motion controllers in SteamVR games in combination with the latest version of SteamVR bridge for Windows Mixed Reality
-* Improved performance in SteamVR games with lower video RAM usage. Live video preview in the Mixed Reality Portal on desktop is also more performant. 
 * You can now take mixed reality photos directly from your controller by holding the Windows button and then tapping the trigger. This works across environments and apps except for capturing content protected with DRM.
 * The automatic performance settings have been updated to provide an optimized experience, and we’ve added a new setting to override the default in Settings > Mixed Reality > Headset display.
 * Setup now provides more detailed information about common compatibility issues with USB3.0 controllers and graphics cards.
+
+With this update of Windows, support for SteamVR in Windows Mixed Reality has also exited early access and brings additional features such as more customizable input, support for haptic feedback when using motion controllers, and improved performance and reliability. 
 
 ## Known issues
 
@@ -72,12 +72,11 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 * Desktop User Account Control prompt will make headset display black until the prompt is completed.
 
 ### Windows Mixed Reality for SteamVR
-* With the April 2018 Update of Windows support for SteamVR in Windows Mixed Reality has exited early access and brings additional features such as more customizable input. 
-* If you have issues launching SteamVR after updating, you may need to launch Mixed Reality Portal to ensure the necessary software updates for 1803 have completed. 
+* You may need to launch Mixed Reality Portal after updating to ensure the necessary software updates for 1803 have completed before launching SteamVR. 
 
 ### Other issues
 * An early version of the 1803 update pushed to Insiders (version 17134.5) was missing a piece of software necessary to run Windows Mixed Reality. We recommend avoiding this version if using Windows Mixed Reality. 
-* We've identified a performance regression when using Surface Book 2 and a small number of other hybrid graphics systems on the initial release of this update (10.0.17134.1) that we are working to fix in an upcoming update patch. We suggest waiting until this has been fixed before updating. 
+* We've identified a performance regression when using Surface Book 2 on the initial release of this update (10.0.17134.1) that we are working to fix in an upcoming update patch. We suggest waiting until this has been fixed before updating manually or waiting for the update to roll out normally.  
 
 ## Prior release notes
 * [Release notes - October 2017] (release-notes-october-2017.md)
