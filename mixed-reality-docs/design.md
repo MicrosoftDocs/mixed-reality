@@ -234,6 +234,7 @@ Build great experiences from samples designed and created by our team.
 </ul>    
     
     
+    
 ## Design tools
 
 <ul id="cardtypes-D" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
@@ -310,6 +311,7 @@ Build great experiences from samples designed and created by our team.
       </a>	
     </li>
 </ul>
+
 
 
 ## General design resources
