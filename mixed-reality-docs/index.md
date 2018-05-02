@@ -102,7 +102,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/MRTKIcon.jpg" alt="MRTK Icon">
+                                                        <img src="images/OpenSource_LunarModule.png" alt="OpenSource LunarModule image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -120,7 +120,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/EnthusiastsGuideIcon_a.jpg" alt="Enthusiast's Guide icon">
+                                                        <img src="images/EnthusiastsGuide_Cliffhouse.png" alt="Enthusiast's Guide image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
