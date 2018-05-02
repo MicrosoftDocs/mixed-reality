@@ -71,6 +71,14 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 * Desktop app may auto-launch because an invisible window on Desktop has focus. 
 * Desktop User Account Control prompt will make headset display black until the prompt is completed.
 
+### Windows Mixed Reality for SteamVR
+* With the April 2018 Update of Windows support for SteamVR in Windows Mixed Reality has exited early access and brings additional features such as more customizable input. 
+* If you have issues launching SteamVR after updating, you may need to launch Mixed Reality Portal to ensure the necessary software updates for 1803 have completed. 
+
+### Other issues
+* An early version of the 1803 update pushed to Insiders (version 17134.5) was missing a piece of software necessary to run Windows Mixed Reality. We recommend avoiding this version if using Windows Mixed Reality. 
+* We've identified a performance regression when using Surface Book 2 and a small number of other hybrid graphics systems on the initial release of this update (10.0.17134.1) that we are working to fix in an upcoming update patch. We suggest waiting until this has been fixed before updating. 
+
 ## Prior release notes
 * [Release notes - October 2017] (release-notes-october-2017.md)
 * [Release notes - August 2016](release-notes-august-2016.md)
