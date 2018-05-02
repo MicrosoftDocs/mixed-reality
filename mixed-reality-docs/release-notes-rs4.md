@@ -25,10 +25,10 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 
 * A brand-new environment called Skyloft that you can navigate to by selecting Places on the Windows Mixed Reality Start menu.
 * You can now take mixed reality photos directly from your controller by holding the Windows button and then tapping the trigger. This works across environments and apps except for capturing content protected with DRM.
-* The automatic performance settings have been updated to provide an optimized experience, and we’ve added a new setting to override the default in Settings > Mixed Reality > Headset display.
+* The automatic performance settings have been updated to provide an optimized experience, and we’ve added a new setting to override the default in Settings > Mixed reality > Headset display > Experience options.
 * Setup now provides more detailed information about common compatibility issues with USB3.0 controllers and graphics cards.
 
-With this update of Windows, support for SteamVR in Windows Mixed Reality has also exited early access and brings additional features such as more customizable input, support for haptic feedback when using motion controllers, and improved performance and reliability. 
+With this update of Windows, support for Windows Mixed Reality for SteamVR has also exited early access and brings additional features such as more customizable input, support for haptic feedback when using motion controllers, and improved performance and reliability. 
 
 ## Known issues
 
@@ -61,7 +61,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 * If you've placed a large number of holograms in your Windows Mixed Reality home, some may disappear and reappear as you look around. To avoid this, remove some of the holograms in that area of the Windows Mixed Reality home.
 
 ### Motion controllers
-* Occasionally, if you click on a webpage in Edge, the content will zoom instead of click.
+* Occasionally, if you click on a webpage in Microsoft Edge, the content will zoom instead of click.
 
 ### Desktop app in the Windows Mixed Reality home
 * Snipping Tool does not work in Desktop app.
