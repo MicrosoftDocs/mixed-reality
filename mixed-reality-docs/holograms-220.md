@@ -65,13 +65,13 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 * Click on the **Starting** folder and then press the **Select Folder** button.
 * Wait for the project to load in Unity.
 * In the **Project** panel, open **Scenes\Decibel.unity**.
-* In the **Hierarchy** panel, expand **HolographicCollection** and select **POLY**.
+* In the **Hierarchy** panel, expand **HolographicCollection** and select **P0LY**.
 * In the Inspector, expand **AudioSource** and notice that there is no **Spatialize** check box.
 
 By default, Unity does not load a spatializer plugin. The following steps will enable Spatial Sound in the project.
 * In Unity's top menu, go to **Edit > Project Settings > Audio**.
 * Find the **Spatializer Plugin** dropdown, and select **MS HRTF Spatializer**.
-* In the **Hierarchy** panel, select **HolographicCollection > POLY**.
+* In the **Hierarchy** panel, select **HolographicCollection > P0LY**.
 * In the **Inspector** panel, find the **Audio Source** component.
 * Check the **Spatialize** checkbox.
 * Drag the **Spatial Blend** slider all the way to **3D**, or enter **1** in the edit box.
@@ -88,7 +88,7 @@ We will now build the project in Unity and configure the solution in Visual Stud
 * Single click the **App** folder.
 * Click **Select Folder**.
 
-Unity begin compiling scripts and creating a Visual Studio solution. When complete, a File Explorer window will appear.
+Unity will begin compiling scripts and creating a Visual Studio solution. When complete, a File Explorer window will appear.
 * At the top of the Visual Studio window, change the target to **Release** and **x86**.
 * Click the small downward facing arrow next to **Local Machine** and select **Remote Machine**.
 * Enter the [IP address of your HoloLens](connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in the **Address** box and leave **Authentication Mode** set to **Universal (Unencrypted Protocol)**.
@@ -111,7 +111,7 @@ The appropriate location for the sound is going to depend on the hologram. For e
 **Instructions**
 
 The following instructions will attach a spatialized sound to a hologram.
-* In the **Hierarchy** panel, expand **HolographicCollection** and select **POLY**.
+* In the **Hierarchy** panel, expand **HolographicCollection** and select **P0LY**.
 * In the **Inspector** panel, in the **AudioSource**, click the circle next to **AudioClip** and select **PolyHover** from the pop-up.
 * Click the circle next to **Output** and select **SoundEffects** from the pop-up.
 
@@ -132,13 +132,13 @@ One example of learned expectations is that birds are generally above the heads 
 
 **Instructions**
 
-The following instructions enable POLY to hide behind you, so that you can use sound to locate the hologram.
+The following instructions enable P0LY to hide behind you, so that you can use sound to locate the hologram.
 * In the **Hierarchy** panel, select **Managers**.
-* In the **Inspector** panel, enable **Keyword Manager**.
-* In **Keyword Manager**, expand **Keywords and Responses**, then **Go Hide**.
-* Change **No Function** to **PolyActions.OnSelect**.
+* In the **Inspector** panel, find **Speech Input Handler**.
+* In **Speech Input Handler**, expand **Go Hide**.
+* Change **No Function** to **PolyActions.GoHide**.
 
-![Keywords and Responses: Go Hide](images/gohide.png)
+![Keyword: Go Hide](images/gohide.png)
 
 ### Gesture Feedback
 
@@ -151,17 +151,13 @@ The following instructions enable POLY to hide behind you, so that you can use s
 * In the **Hierarchy** panel, expand **HologramCollection**.
 * Expand **EnergyHub** and select **Base**.
 * In the **Inspector** panel, click **Add Component** and add **Gesture Sound Handler**.
-* In **Gesture Sound Handler**, click the circle next to **Navigation Started Clip** and **Navigation Updated Clip** and select **RotateClick** from the pop-up.
-* In the **Hierarchy** panel, select **Managers**.
-* In the **Inspector** panel, click **Add Component** and add **Gesture Sound Manager**.
-* Double click on "GestureSoundManager" to load in Visual Studio.
+* In **Gesture Sound Handler**, click the circle next to **Navigation Started Clip** and **Navigation Updated Clip** and select **RotateClick** from the pop-up for both.
+* Double click on "GestureSoundHandler" to load in Visual Studio.
 
-Gesture Sound Manager performs the following tasks:
+Gesture Sound Handler performs the following tasks:
 * Create and configure an **AudioSource**.
 * Place the **AudioSource** at the location of the appropriate **GameObject**.
 * Plays the **AudioClip** associated with the gesture.
-
-The associations of gestures to audio clips is performed by GestureSoundHandler.cs.
 
 **Build and Deploy**
 * In Unity select **File > Build Settings**.
@@ -178,8 +174,8 @@ Check that the Toolbar says "Release", "x86" and "Remote Device". If not, this i
 * **Note,** you might notice some red errors in the Visual Studio Errors panel. It is safe to ignore them. Errors in the Output panel will require you to make a fix (most often they are caused by a mistake in a script).
 
 After the application is deployed:
-* Observe how the sound changes as you move around POLY.
-* Say *"Go Hide"* to make POLY move to a location behind you. Find it by the sound.
+* Observe how the sound changes as you move around P0LY.
+* Say *"Go Hide"* to make P0LY move to a location behind you. Find it by the sound.
 * Gaze at the base of the Energy Hub. Tap and drag left or right to rotate the hologram and notice how the clicking sound confirms the gesture.
 
 Note: There is a text panel that will tag-along with you. This will contain the available voice commands that you can use throughout this course.
@@ -215,7 +211,7 @@ A classic example is a concert hall. When a listener is standing outside of the 
 * High frequency sounds are generally absorbed more than low frequencies.
 
 **Instructions**
-* In the **Hierarchy** panel, expand **HologramCollection** and select **POLY**.
+* In the **Hierarchy** panel, expand **HologramCollection** and select **P0LY**.
 * In the **Inspector** panel, click **Add Component** and add **Audio Emitter**.
 
 The Audio Emitter class provides the following features:
@@ -252,26 +248,27 @@ When multiple occluders are in the path between the user and the **AudioEmitter*
 
 When multiple occluders are in the path between the user and the **AudioEmitter**, the volume pass through is applied additively.
 * In the **Hierarchy** panel, select **Managers**.
-* In the **Inspector** panel, expand **Keyword Manager**.
-* In **Keyword Manager**, expand **Keywords and Responses**, then **Go Charge**.
+* In the **Inspector** panel, expand **Speech Input Handler**.
+* In **Speech Input Handler**, expand **Go Charge**.
 * Change **No Function** to **PolyActions.GoCharge**.
 
-![Keywords and Responses: Go Charge](images/gocharge.png)
+![Keyword: Go Charge](images/gocharge.png)
+
 * Expand **Come Here**.
 * Change **No Function** to **PolyActions.ComeBack**.
 
-![Keywords and Responses: Come Here](images/comehere.png)
+![Keyword: Come Here](images/comehere.png)
 
 **Build and Deploy**
 * As before, build the project in Unity and deploy in Visual Studio.
 
 After the application is deployed:
-* Say *"Go Charge"* to have POLY enter the Energy Hub.
+* Say *"Go Charge"* to have P0LY enter the Energy Hub.
 
 Note the change in the sound. It should sound muffled and a little quieter. If you are able to position yourself with a wall or other object between you and the Energy Hub, you should notice a further muffling of the sound due to the occlusion by the real world.
-* Say *"Come Here"* to have POLY leave the Energy Hub and position itself in front of you.
+* Say *"Come Here"* to have P0LY leave the Energy Hub and position itself in front of you.
 
-Note that the sound occlusion is removed once POLY exits the Energy Hub. If you are still hearing occlusion, POLY may be occluded by the real world. Try moving to ensure you have a clear line of sight to POLY.
+Note that the sound occlusion is removed once P0LY exits the Energy Hub. If you are still hearing occlusion, P0LY may be occluded by the real world. Try moving to ensure you have a clear line of sight to P0LY.
 
 ### Room Models
 
@@ -419,15 +416,15 @@ The user must be facing the GameObject, regardless of distance, for the effect t
 
 User Voice Effect uses the Mic Stream Selector component, from the [MixedRealityToolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity), to select the high quality voice stream and route it into Unity's audio system.
 * In the **Hierarchy** panel, select **Managers**.
-* In the **Inspector** panel, expand **Keyword Manager**.
-* In **Keyword Manager**, expand **Keywords and Responses**, then **Show Underworld**.
+* In the **Inspector** panel, expand **Speech Input Handler**.
+* In **Speech Input Handler**, expand **Show Underworld**.
 * Change **No Function** to **UnderworldBase.OnEnable**.
 
-![Keywords and Responses: Show Underworld](images/showunderworld.png)
+![Keyword: Show Underworld](images/showunderworld.png)
 * Expand **Hide Underworld**.
 * Change **No Function** to **UnderworldBase.OnDisable**.
 
-![Keywords and Responses: Hide Underworld](images/hideunderworld.png)
+![Keyword: Hide Underworld](images/hideunderworld.png)
 
 **Build and Deploy**
 * As before, build the project in Unity and deploy in Visual Studio.
