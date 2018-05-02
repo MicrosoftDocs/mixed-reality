@@ -23,7 +23,7 @@ To update to the latest release for each device, open the **Settings** app, go t
 
 The Windows 10 April 2018 Update includes many improvements for using Windows Mixed Reality headsets with your desktop PC, such as: 
 
-* A brand-new environment called Sky Loft that you can navigate to by selecting Places on the Mixed Reality Start menu.
+* A brand-new environment called Skyloft that you can navigate to by selecting Places on the Windows Mixed Reality Start menu.
 * You can now take mixed reality photos directly from your controller by holding the Windows button and then tapping the trigger. This works across environments and apps except for capturing content protected with DRM.
 * The automatic performance settings have been updated to provide an optimized experience, and we’ve added a new setting to override the default in Settings > Mixed Reality > Headset display.
 * Setup now provides more detailed information about common compatibility issues with USB3.0 controllers and graphics cards.
