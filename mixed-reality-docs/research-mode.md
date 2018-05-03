@@ -29,7 +29,7 @@ Research mode is a new capability of HoloLens that provides application access t
 Applications can access this data by opening [Media Foundation](https://msdn.microsoft.com/en-us/library/windows/desktop/ms694197) streams in exactly the same way they access the photo/video camera stream. All APIs that work for HoloLens development are also available when in Research mode. In particular, the application can know precisely where HoloLens is in 6DoF space at each sensor frame capture time.
 
 ![Research Mode app screenshot](images/sensor-stream-viewer.jpg)<br>
-*A mixed reality capture of a test application that displays the eight sensor streams available in research mode. Source code for sample applications are available on Github. See below.*
+*A mixed reality capture of a test application that displays the eight sensor streams available in Research mode*
 
 ## What do I need to know before I use it?
 
@@ -45,7 +45,7 @@ Research mode is a sub-mode of developer mode. You first need to enable develope
 Then using a web browser that is connected to the same Wi-Fi network as your HoloLens, navigate to the IP address of your HoloLens (obtained through **Settings > Network & Internet > Wi-Fi > Hardware properties**). This is the [Device Portal](using-the-windows-device-portal.md), and you will find a "Research mode" page in the "System" section of the portal:
 
 ![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.png)<br>
-*The HoloLens Device Portal has a new page for enabling and disabling Research mode in the "System" section. A reboot is required to complete the operation.*
+*Research mode in the HoloLens Device Portal*
 
 After selecting **Allow access to sensor streams**, you will need to reboot HoloLens. You can do this from the Device Portal, under the "Power" menu item at the top of the page.
 
