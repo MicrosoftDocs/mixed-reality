@@ -22,7 +22,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/GettingStartedIcon.jpg" alt="Getting started icon">
+                            <img src="images/GetStartedIcon.png" alt="Getting started icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -53,7 +53,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/InteractionDesignIcon.jpg" alt="Interaction design icon">
+                            <img src="images/Interaction_Icon_120x130.png" alt="Interaction design icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -84,7 +84,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/StyleIcon.jpg" alt="Style icon">
+                            <img src="images/Style_Icon_120x130.png" alt="Style icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -112,7 +112,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/AppPatternsIcon.jpg" alt="App patterns icon">
+                            <img src="images/App_patterns_Icon_120x130.png" alt="App patterns icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -140,7 +140,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/ControlsIcon.jpg" alt="Controls icon">
+                            <img src="images/Controls_Icon_120x130.png" alt="Controls icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -174,70 +174,69 @@ Build great experiences from samples designed and created by our team.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                                    <a href="periodic-table-of-the-elements.md" title="Periodic Table of the Elements" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/periodictableofelementsapp-tile.jpg" alt="Periodic Table of the Elements< icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Periodic Table of the Elements</h3>
-                                                    <p>Learn how to lay out an array of objects in 3D space with various surface types using an Object collection.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-				</a>	    
-                            </li>
-                            <li>
-                                <a href="lunar-module.md" title="Lunar Module" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/lunar-module-tile.png" alt="Lunar Module icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Lunar Module</h3>
-                                                    <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-				</a>
-                            </li>
-                            <li>
-                                  <a href="galaxy-explorer.md" title="Galaxy Explorer" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/galaxyexplorer-tile.jpg" alt="Galaxy Explorer icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Galaxy Explorer</h3>
-                                                    <p>The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
+    <li>
+        <a href="periodic-table-of-the-elements.md" title="Periodic Table of the Elements" data-linktype="absolute-path">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="images/periodictableofelementsapp-tile.jpg" alt="Periodic Table of the Elements< icon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Periodic Table of the Elements</h3>
+                            <p>Learn how to lay out an array of objects in 3D space with various surface types using an Object collection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</a>	    
+    </li>
+    <li>
+        <a href="lunar-module.md" title="Lunar Module" data-linktype="absolute-path">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="images/lunar-module-tile.png" alt="Lunar Module icon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Lunar Module</h3>
+                            <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</a>
+    </li>
+    <li>
+        <a href="galaxy-explorer.md" title="Galaxy Explorer" data-linktype="absolute-path">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="images/galaxyexplorer-tile.jpg" alt="Galaxy Explorer icon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Galaxy Explorer</h3>
+                            <p>The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
 </ul>    
-    
     
     
 ## Design tools
 
-<ul id="cardtypes-D" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
     <li>
 	<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit - Unity" data-linktype="absolute-path">
         <div class="cardSize">
@@ -250,6 +249,7 @@ Build great experiences from samples designed and created by our team.
                     </div>                    
 			<div class="cardText">
                         <h3>Mixed Reality Toolkit - Unity</h3>
+                        <p> </p>
                     </div>
                 </div>
             </div>
@@ -268,6 +268,7 @@ Build great experiences from samples designed and created by our team.
                     </div>                    
 			<div class="cardText">
                         <h3>Mixed Reality Toolkit</h3>
+                        <p> </p>
                     </div>
                 </div>
             </div>
@@ -286,6 +287,7 @@ Build great experiences from samples designed and created by our team.
                     </div>                    
 			<div class="cardText">
                         <h3>HoloSketch</h3>
+                        <p> </p>
                     </div>
                 </div>
             </div>
@@ -304,6 +306,7 @@ Build great experiences from samples designed and created by our team.
                     </div>                    
 			<div class="cardText">
                         <h3>Simplygon</h3>
+                        <p> </p>
                     </div>
                 </div>
             </div>
@@ -313,10 +316,9 @@ Build great experiences from samples designed and created by our team.
 </ul>
 
 
-
 ## General design resources
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
     <li>
 	<a href="http://fluent.microsoft.com" title="Fluent Design System" data-linktype="absolute-path">
         <div class="cardSize">
@@ -329,6 +331,7 @@ Build great experiences from samples designed and created by our team.
                     </div>                    
 			<div class="cardText">
                         <h3>Fluent Design System</h3>
+                        <p> </p>
                     </div>
                 </div>
             </div>
@@ -347,6 +350,7 @@ Build great experiences from samples designed and created by our team.
                     </div>                    
 			<div class="cardText">
                         <h3>Inclusive design at Microsoft</h3>
+                        <p> </p>
                     </div>
                 </div>
             </div>
@@ -365,6 +369,7 @@ Build great experiences from samples designed and created by our team.
                     </div>                    
 			<div class="cardText">
                         <h3>Universal Windows Platform (UWP) app design</h3>
+                        <p> </p>
                     </div>
                 </div>
             </div>
