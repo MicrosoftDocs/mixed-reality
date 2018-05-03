@@ -1,6 +1,6 @@
 ---
 title: HoloLens Research Mode
-description: Using Research Mode on HoloLens, an application can access key device sensor streams (depth, environment tracking, and IR-reflectivity).
+description: Using Research mode on HoloLens, an application can access key device sensor streams (depth, environment tracking, and IR-reflectivity).
 author: davidgedye
 ms.author: dgedye
 ms.date: 05/03/2018
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: research mode, cv, rs4, computer vision, research, HoloLens
 ---
 
-# HoloLens Research Mode
+# HoloLens Research mode
 
 > [!NOTE]
 > This feature was added as part of the Windows 10 RS4 update for HoloLens, and is not available on earlier releases. You can test it now by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
