@@ -163,6 +163,7 @@
 #### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 #### [Locatable camera](locatable-camera.md)
 #### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+#### [HoloLens Research mode](research-mode.md)
 
 ## [Open source projects](open-source-projects.md)
 ### [Galaxy Explorer](galaxy-explorer.md)
@@ -190,7 +191,7 @@
 ### [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 
 ## Resources
-### [CVPR 2018 HoloLens Research Mode session](cvpr-2018.md)
+### [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ### [Mixed Reality Partner Program](mixed-reality-partner-program.md)
 ### [App quality criteria](app-quality-criteria.md)
 ### [Spectator view](spectator-view.md)
