@@ -13,6 +13,11 @@ keywords: research mode, cv, rs4, computer vision, research, HoloLens
 > [!NOTE]
 > This feature was added as part of the Windows 10 RS4 update for HoloLens, and is not available on earlier releases. You can test it now by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
+Research mode is a new capability of HoloLens that provides application access to the key sensors on the device. These include:
+- The four environment tracking cameras used by the system for map building and head tracking.
+- Two versions of the depth camera data – one for high-frequency (30 FPS) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1 FPS) far-depth sensing, currently used by Spatial Mapping,
+- Two versions of an IR-reflectivity stream, used by the HoloLens to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.
+
 <table>
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
@@ -20,13 +25,6 @@ keywords: research mode, cv, rs4, computer vision, research, HoloLens
 <td> Research mode</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
 </table>
-
-Research mode is a new capability of HoloLens that provides application access to the key sensors on the device. These include:
-- The four environment tracking cameras used by the system for map building and head tracking.
-- Two versions of the depth camera data – one for high-frequency (30 FPS) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1 FPS) far-depth sensing, currently used by Spatial Mapping,
-- Two versions of an IR-reflectivity stream, used by the HoloLens to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.
-
-Applications can access this data by opening [Media Foundation](https://msdn.microsoft.com/en-us/library/windows/desktop/ms694197) streams in exactly the same way they access the photo/video camera stream. All APIs that work for HoloLens development are also available when in Research mode. In particular, the application can know precisely where HoloLens is in 6DoF space at each sensor frame capture time.
 
 ![Research Mode app screenshot](images/sensor-stream-viewer.jpg)<br>
 *A mixed reality capture of a test application that displays the eight sensor streams available in Research mode*
@@ -52,6 +50,10 @@ After selecting **Allow access to sensor streams**, you will need to reboot Holo
 Once your device has rebooted, applications that have been loaded through Device Portal should be able to access Research mode streams.
 
 ## How do I get sensor data into my apps?
+
+Applications can access sensor stream data by opening [Media Foundation](https://msdn.microsoft.com/en-us/library/windows/desktop/ms694197) streams in exactly the same way they access the photo/video camera stream. 
+
+All APIs that work for HoloLens development are also available when in Research mode. In particular, the application can know precisely where HoloLens is in 6DoF space at each sensor frame capture time.
 
 Sample applications showing how you access the various Research mode streams, how to use the intrinsics and extrinsics, and how to record streams are available in the [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV).
 
