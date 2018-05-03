@@ -27,8 +27,10 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 * You can now take mixed reality photos directly from your controller by holding the Windows button and then tapping the trigger. This works across environments and apps except for capturing content protected with DRM.
 * The automatic performance settings have been updated to provide an optimized experience, and we’ve added a new setting to override the default in Settings > Mixed reality > Headset display > Experience options.
 * Setup now provides more detailed information about common compatibility issues with USB3.0 controllers and graphics cards.
+* Create animated 3D launchers for your applications and place decorative 3D objects in the Mixed Reality Home from your apps and websites
+* Experiment with custom Windows Mixed Reality home environments
 
-With this update of Windows, support for Windows Mixed Reality for SteamVR has also exited early access and brings additional features such as more customizable input, support for haptic feedback when using motion controllers, and improved performance and reliability. 
+With this update of Windows, support for Windows Mixed Reality for SteamVR has also exited early access and brings additional features including support for haptic feedback when using motion controllers, and improved performance and reliability. 
 
 ## Known issues
 
@@ -73,6 +75,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 ### Windows Mixed Reality for SteamVR
 * You may need to launch Mixed Reality Portal after updating to ensure the necessary software updates for 1803 have completed before launching SteamVR. 
+* You must be on a recent version of Windows Mixed Reality for SteamVR to remain compatible with the 1803 update. Make sure automatic updates are turned on for Windows Mixed Reality for SteamVR which is located under the software section of your library in Steam.  
 
 ### Other issues
 * An early version of the 1803 update pushed to Insiders (version 17134.5) was missing a piece of software necessary to run Windows Mixed Reality. We recommend avoiding this version if using Windows Mixed Reality. 
