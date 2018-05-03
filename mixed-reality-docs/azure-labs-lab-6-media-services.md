@@ -301,11 +301,12 @@ instance of the service to be made available to your application (wherein the ac
     will find a **Download URL**. Copy this **Endpoint** as you will use
     it later in your code.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-26.png)
-
-    > [!NOTE] You can also press the ***Play*** button to play your video and test it.
+    ![The Azure Portal](images/AzureLabs-Lab6-26.png)    
 
     ![The Azure Portal](images/AzureLabs-Lab6-27.png)
+
+> [!NOTE] 
+> You can also press the ***Play*** button to play your video and test it.
 
 26. You now need to upload the second video that you will use in this
     Lab. Follow the steps above, repeating the same process for the
