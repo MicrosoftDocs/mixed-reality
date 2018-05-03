@@ -18,6 +18,11 @@ Research mode is a new capability of HoloLens that provides application access t
 - Two versions of the depth camera data – one for high-frequency (30 FPS) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1 FPS) far-depth sensing, currently used by Spatial Mapping,
 - Two versions of an IR-reflectivity stream, used by the HoloLens to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.
 
+![Research Mode app screenshot](images/sensor-stream-viewer.jpg)<br>
+*A mixed reality capture of a test application that displays the eight sensor streams available in Research mode*
+
+## Device support
+
 <table>
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
@@ -26,14 +31,11 @@ Research mode is a new capability of HoloLens that provides application access t
 </tr>
 </table>
 
-![Research Mode app screenshot](images/sensor-stream-viewer.jpg)<br>
-*A mixed reality capture of a test application that displays the eight sensor streams available in Research mode*
-
-## What do I need to know before I use it?
+## Before using Research mode
 
 Research mode is well named: it is intended for academic and industrial researchers trying out new ideas in the fields of Computer Vision and Robotics.  Research mode is not intended for applications that will be deployed across an enterprise or made available in the Microsoft Store. The reason for this is that Research mode lowers the security of your device and consumes significantly more battery power than normal operation. Microsoft is not committing to supporting this mode on any future devices. Thus, we recommend you use it to develop and test new ideas; however, you will not be able to widely deploy applications that use Research mode or have any assurance that it will continue to work on future hardware.
 
-## How do I enable it?
+## Enabling Research mode
 
 Research mode is a sub-mode of developer mode. You first need to enable developer mode in the Settings app (**Settings > Update & Security > For developers**):
 
@@ -49,7 +51,7 @@ After selecting **Allow access to sensor streams**, you will need to reboot Holo
 
 Once your device has rebooted, applications that have been loaded through Device Portal should be able to access Research mode streams.
 
-## How do I get sensor data into my apps?
+## Using sensor data in your apps
 
 Applications can access sensor stream data by opening [Media Foundation](https://msdn.microsoft.com/en-us/library/windows/desktop/ms694197) streams in exactly the same way they access the photo/video camera stream. 
 
