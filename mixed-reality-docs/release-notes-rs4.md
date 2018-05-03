@@ -30,7 +30,7 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 * Create animated 3D launchers for your applications and place decorative 3D objects in the Mixed Reality Home from your apps and websites
 * Experiment with custom Windows Mixed Reality home environments
 
-With this update of Windows, support for Windows Mixed Reality for SteamVR has also exited early access and brings additional features including support for haptic feedback when using motion controllers, and improved performance and reliability. 
+With this update of Windows, support for Windows Mixed Reality for SteamVR has also exited early access and brings additional features including support for haptic feedback when using motion controllers, improved performance and reliability and improvements to how motion controllers appear in SteamVR. 
 
 ## Known issues
 
