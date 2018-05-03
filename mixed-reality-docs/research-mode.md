@@ -3,7 +3,7 @@ title: HoloLens Research Mode
 description: Using Research Mode on HoloLens, an application can access key device sensor streams (depth, environment tracking, and IR-reflectivity).
 author: davidgedye
 ms.author: dgedye
-ms.date: 04/23/2018
+ms.date: 05/03/2018
 ms.topic: article
 keywords: research mode, cv, rs4, computer vision, research, HoloLens
 ---
@@ -17,7 +17,7 @@ keywords: research mode, cv, rs4, computer vision, research, HoloLens
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Gestures</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
+<td> Research mode</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
 </table>
 
