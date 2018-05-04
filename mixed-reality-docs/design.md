@@ -9,7 +9,9 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns, controls, sample apps, Mixed Reality Toolkit, MRTK
 ---
 
-# Design guidance overview
+# Design for mixed reality
+
+![Design for mixed reality](images/Bicycle-Leschi10.gif)
 
 This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets). So, consider this work as a set of topics for ‘how to design for Windows head-mounted displays’.
 
