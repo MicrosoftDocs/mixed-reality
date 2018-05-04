@@ -27,9 +27,8 @@ To start testing out your game or app on Windows Mixed Reality make sure to firs
 ## Controls
 
 When designing or adjusting your control layout keep in mind the following set of reserved commands:
-1. Clicking down the **left analog thumbstick** is reserved for the **Steam Dashboard**.
-2. Clicking down the **right analog thumbstick** is reserved for switching **controller handedness**
-3. The **Windows button** will always return users to the Windows Mixed Reality home.
+1. Clicking down the **left and right analog thumbstick** is reserved for the **Steam Dashboard**.
+2. The **Windows button** will always return users to the Windows Mixed Reality home.
 
 If possible, default to thumb stick based teleportation to match the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) teleportation behavior
 
@@ -40,8 +39,9 @@ Many VR games take advantage of motion controller tooltips and overlays to teach
 Additionally if there are any points in your experience where you display images of the controllers make sure to provide updated images using the Windows Mixed Reality motion controllers.
 
 ## Haptics
+Starting with the Windows April 2018 update haptics are now supported for SteamVR experiences on Windows Mixed Reality. Windows Mixed Reality motion controllers use a standard haptics motor as opposed to the linear actuators found in some other SteamVR motion controllers. This can lead to a slightly different user experience so if possible we recommend testing and tuning your haptics design on Windows Mixed Reality controllers. 
 
-Haptic feedback (vibration) for motion controllers is not yet enabled in the Windows Mixed Reality for SteamVR. This is something we are looking at for a future update.
+For examples, sometimes short haptic pulses (5-10 ms) are less noticeable on Windows Motion controllers. To produce a more noticeable pulse experiment with sending a longer “click” (40-70ms) to gives the motor more time to spin up before being told to power off again.
 
 ## Windows Mixed Reality logo
 
