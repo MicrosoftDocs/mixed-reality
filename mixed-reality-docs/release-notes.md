@@ -99,7 +99,7 @@ We've identified a performance regression when using Surface Book 2 on the initi
 
 ## Prior release notes
 
-* [Release notes - October 2017] (release-notes-october-2017.md)
+* [Release notes - October 2017](release-notes-october-2017.md)
 * [Release notes - August 2016](release-notes-august-2016.md)
 * [Release notes - May 2016](release-notes-may-2016.md)
 * [Release notes - March 2016](release-notes-march-2016.md)
