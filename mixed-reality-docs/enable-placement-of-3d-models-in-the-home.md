@@ -30,7 +30,7 @@ ms-mixedreality:addmodel?uri=<Path to a .glb 3D model either local or remote>
 ```
 If the URI points to a remote resource, then it will automatically be downloaded and placed in the home. Local resources will be copied to the mixed reality homes app data folder before being placed in the home. We recommend designing your experience to account for scenarios where the user might be running on an older Windows OS by hiding the button or disabling it if possible. 
 
-Example: Invoking the add model protocol from a Universal Windows App:
+Invoking the add model protocol from a Universal Windows App
 
 ```C#
 private async void launchURI_Click(object sender, RoutedEventArgs e)
@@ -52,7 +52,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 }
 ```
 
-Invoking the add model protocol from a website:
+Invoking the add model protocol from a website
 ```html
 <a class="btn btn-default" href="ms-mixedreality:addModel?uri=sample.glb"> Place 3D Model </a>
 ```
