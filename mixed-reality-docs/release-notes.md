@@ -24,7 +24,7 @@ To update to the latest release for each device, open the **Settings** app, go t
 
 ## New features for Windows Mixed Reality immersive headsets
 
-The Windows 10 April 2018 Update includes many improvements for using Windows Mixed Reality headsets with your desktop PC, such as: 
+The Windows 10 April 2018 Update includes many improvements for using Windows Mixed Reality immersive (VR) headsets with your desktop PC, such as: 
 
 * **New environment for the mixed reality home** - You can now choose between the Cliff House and the new Skyloft environment by selecting **Places** on the Start menu. We've also added an experimental feature that will let you use original environments you've created (more info coming soon).
 * **Quick access to mixed reality capture** - You can now take mixed reality photos using a motion controller. Hold the Windows button and then tap the trigger. This works across environments and apps, but will not capture content protected with DRM.
@@ -44,7 +44,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 ### Visual quality
 
-If you notice after the Windows 10 April 2018 Update that graphics are more blurry than before, or that the field of view looks smaller on your headset, the automatic performance setting may have been changed in order to maintain a sufficient framerate on a less powerful graphics card (such as Nvidia 1050). You can manually override this (if you choose) by navigating to **Settings > Mixed reality > Headset display > Experience options > Change** and changing "Automatic" to "90 Hz." You can also try changing **Visual quality** (on the same Settings page) to "High."
+* If you notice after the Windows 10 April 2018 Update that graphics are more blurry than before, or that the field of view looks smaller on your headset, the automatic performance setting may have been changed in order to maintain a sufficient framerate on a less powerful graphics card (such as Nvidia 1050). You can manually override this (if you choose) by navigating to **Settings > Mixed reality > Headset display > Experience options > Change** and changing "Automatic" to "90 Hz." You can also try changing **Visual quality** (on the same Settings page) to "High."
 
 ### Windows Mixed Reality setup
 
@@ -54,28 +54,26 @@ If you notice after the Windows 10 April 2018 Update that graphics are more blur
 
 ### Games and apps from the Microsoft Store
 
-Some graphically intensive games, like Forza Motorsport 7, may cause performance issues on less capable PCs when played inside Windows Mixed Reality.
+* Some graphically intensive games, like Forza Motorsport 7, may cause performance issues on less capable PCs when played inside Windows Mixed Reality.
 
 ### Audio
 
-* If you have Cortana enabled on your host PC prior to using your Windows Mixed Reality headset, you may lose spatial sound simulation applied to the apps you place around the Windows Mixed Reality home. The work around is to enable "Windows Sonic for Headphones" on all the audio devices attached to your PC, even your headset-connected audio device:
-   1. Left-click the speaker icon on the desktop taskbar and select from list of audio devices.
-   2. Right-click the speaker icon on the desktop taskbar and select "Windows Sonic for Headphones" in the "Speaker setup" menu.
-   3. Repeat these steps for all of your audio devices (endpoints).
-
->[!NOTE]
->Another option is turning off "Let Cortana respond to Hey Cortana" in **Settings** > **Cortana** on your desktop prior to launching Windows Mixed Reality.
-
+* If you have Cortana enabled on your host PC prior to using your Windows Mixed Reality headset, you may lose spatial sound simulation applied to the apps you place around the Windows Mixed Reality home. 
+   * The work around is to enable "Windows Sonic for Headphones" on all the audio devices attached to your PC, even your headset-connected audio device:
+      1. Left-click the speaker icon on the desktop taskbar and select from list of audio devices.
+      2. Right-click the speaker icon on the desktop taskbar and select "Windows Sonic for Headphones" in the "Speaker setup" menu.
+      3. Repeat these steps for all of your audio devices (endpoints).
+   * Another option is turning off "Let Cortana respond to Hey Cortana" in **Settings** > **Cortana** on your desktop prior to launching Windows Mixed Reality.
 * When another multimedia USB device (such as a web cam) shares the same USB hub (either external or inside your PC) with the Windows Mixed Reality headset, in rare cases the headset's audio jack/headphones may either have a buzzing sound or no audio at all. You can fix this by your headset into a USB port that does not share the same hub as the other device, or disconnect/disable your other USB multimedia device.
 * In very rare cases, the host PC's USB hub cannot provide enough power to the Windows Mixed Reality headset and you may notice a burst of noise from the headphones connected to the headset.
 
 ### Holograms
 
-If you've placed a large number of holograms in your Windows Mixed Reality home, some may disappear and reappear as you look around. To avoid this, remove some of the holograms in that area of the Windows Mixed Reality home.
+* If you've placed a large number of holograms in your Windows Mixed Reality home, some may disappear and reappear as you look around. To avoid this, remove some of the holograms in that area of the Windows Mixed Reality home.
 
 ### Motion controllers
 
-Occasionally, when you click on a web page in Microsoft Edge, the content will zoom instead of click.
+* Occasionally, when you click on a web page in Microsoft Edge, the content will zoom instead of click.
 
 ### Desktop app in the Windows Mixed Reality home
 
