@@ -231,10 +231,12 @@ Build great experiences from samples designed and created by our team.
             </div>
         </a>
     </li>
-</ul>    
-    
-    
+</ul>
+
+
+
 ## Design tools
+
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
     <li>

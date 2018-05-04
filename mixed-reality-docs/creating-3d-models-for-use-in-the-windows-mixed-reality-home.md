@@ -97,8 +97,10 @@ Windows Mixed Reality home offers a series of optimizations on top of the core g
 ### Materials
 
 To improve asset loading time in Mixed Reality environments Windows MR supports rendering compressed DDS textures packed according to the texture packing scheme defined in this section. DDS textures are referenced using the [MSFT_texture_dds extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds). Compressing textures is highly recommended. 
+
 #### HoloLens
-HoloLens based Mixed Reality experiences expect textures to be packed using a 2-texture setup using the following packing specification:
+
+HoloLens-based mixed reality experiences expect textures to be packed using a 2-texture setup using the following packing specification:
 <br>
 
 |  glTF Property  |  Texture  |  Packing Scheme | 
@@ -114,9 +116,12 @@ When compressing the DDS textures the following compression is expected on each 
 |------|------|
 |  baseColorTexture, normalRoughnessMetallicTexture |  BC7 | 
 
-#### PC
-PC based Mixed Reality experiences expect textures to be packed using a 3-texture setup using the following packing specification:
+#### Immersive (VR) headsets
+
+PC-based Windows Mixed Reality experiences for immersive (VR) headsets expect textures to be packed using a 3-texture setup using the following packing specification:
+
 ##### Windows OS >= 1803
+
 <br>
 
 |  glTF Property  |  Texture  |  Packing Scheme | 
@@ -176,10 +181,11 @@ LODs are displayed in Windows Mixed Reality based on a system driven by the scre
 |  LOD 4  |  Under 1%  |  - | 
 
 ## Animation guidelines
-> [!NOTE]
-> This feature was added as part of the upcoming RS4 update. You can test it early by becoming a Windows Insider if you're developing for PC or by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md) if you're developing for HoloLens. On older version of Windows these animations will not play back however they will still load if authored according to the guidance in this article.  
 
-The Windows Mixed Reality home supports animated glTF objects. If you wish to trigger animations on your model you'll need to use the Animation Map extension on the glTF format. This extension lets you trigger animations in the glTF model based on the users presence in the world, for example trigger an animation when the user is close to the object or while they are looking at it. If you glTF object has animations, but doesn't define triggers the animations will not be played back. The section below describes one workflow for adding these triggers to any animated glTF object.
+> [!NOTE]
+> This feature was added as part of the upcoming RS4 update. You can test it early by becoming a Windows Insider (if you're developing for PC) or by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md) (if you're developing for HoloLens). On older versions of Windows these animations will not play back, however, they will still load if authored according to the guidance in this article.  
+
+The mixed reality home supports animated glTF objects on HoloLens and immersive (VR) headsets. If you wish to trigger animations on your model, you'll need to use the Animation Map extension on the glTF format. This extension lets you trigger animations in the glTF model based on the users presence in the world, for example trigger an animation when the user is close to the object or while they are looking at it. If you glTF object has animations, but doesn't define triggers the animations will not be played back. The section below describes one workflow for adding these triggers to any animated glTF object.
 
 ### Tools
 First, download the following tools if you don't have them already. These tools will make it easy to open any glTF model, preview it, make changes and save back out as glTF or .glb:
