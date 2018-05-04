@@ -201,6 +201,7 @@
 ## Mixed reality release notes
 ### [HoloLens RS4 Preview](hololens-rs4-preview.md)
 ### [Current release notes](release-notes.md)
+### [Release notes - October 2017](release-notes-october-2017.md)
 ### [Release notes - August 2016](release-notes-august-2016.md)
 ### [Release notes - May 2016](release-notes-may-2016.md)
 ### [Release notes - March 2016](release-notes-march-2016.md)
