@@ -153,6 +153,7 @@
 #### [Perception simulation](perception-simulation.md)
 ### Finishing your app
 #### [Implement 3D app launchers](implementing-3d-app-launchers.md)
+#### [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 #### [In-app purchases](in-app-purchases.md)
 #### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 ### Remote tools
@@ -201,6 +202,7 @@
 ## Mixed reality release notes
 ### [HoloLens RS4 Preview](hololens-rs4-preview.md)
 ### [Current release notes](release-notes.md)
+### [Release notes - October 2017](release-notes-october-2017.md)
 ### [Release notes - August 2016](release-notes-august-2016.md)
 ### [Release notes - May 2016](release-notes-may-2016.md)
 ### [Release notes - March 2016](release-notes-march-2016.md)
