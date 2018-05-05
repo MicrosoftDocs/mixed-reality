@@ -18,6 +18,16 @@ The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) i
 
 For example, if you're developing an application that surfaces a catalog of 3D furniture for designing a space, you can use the *add model protocol* to allow users to place those 3D furniture models from the catalog. Once placed in the world, users can move, resize, and remove these 3D models just like other holograms in the home. This article provides an overview of implementing the *add model protocol* so that you can start enabling users to decorate their world with 3D objects from your app or the web.
 
+## Device support
+
+<table>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>Add model protocol</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
 ## Overview
 
 There are 2 steps to enabling the placement of 3D models in the Windows Mixed Reality home:
@@ -62,7 +72,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 <a class="btn btn-default" href="ms-mixedreality:addModel?uri=sample.glb"> Place 3D Model </a>
 ```
 
-## Considerations
+## Considerations for immersive (VR) headsets
 
 * For immersive (VR) headsets, the Mixed Reality Portal does not have to be running before invoking the *add model protocol*. In this case, the *add model protocol* will launch the Mixed Reality Portal and place the object directly where the headset is looking once you arrive in the mixed reality home. 
 * When invoking the *add model protocol* from the desktop with the Mixed Reality Portal already running, ensure that the headset is "awake". If not, the placement will not succeed. 
