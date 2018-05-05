@@ -17,7 +17,7 @@ The **[Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience
 To update to the latest release for each device, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 April 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
 
 >[!IMPORTANT]
->The Windows 10 RS4 Update for HoloLens has not yet been publicly released. However, you can install the [HoloLens RS4 Preview](hololens-rs4-preview) and try it early.
+>The Windows 10 RS4 Update for HoloLens has not yet been publicly released. However, you can install the [HoloLens RS4 Preview](hololens-rs4-preview.md) and try it early.
 
 **Latest release for Desktop:** Windows 10 Desktop April 2018 Update (**10.0.17134.1**)<br>
 **Latest release for HoloLens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
@@ -36,7 +36,7 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 
 ## New features for HoloLens
 
-The Windows 10 April 2018 Update has not yet publicly launched on HoloLens, but you can install the [HoloLens RS4 Preview](hololens-rs4-preview) and try it early. New features are documented on the [HoloLens RS4 Preview](hololens-rs4-preview) page, and will be added to these release notes when the update is publicly availalbe for HoloLens.
+The Windows 10 April 2018 Update has not yet publicly launched on HoloLens, but you can install the [HoloLens RS4 Preview](hololens-rs4-preview.md) and try it early. New features are documented on the [HoloLens RS4 Preview](hololens-rs4-preview.md) page, and will be added to these release notes when the update is publicly availalbe for HoloLens.
 
 ## Known issues
 
