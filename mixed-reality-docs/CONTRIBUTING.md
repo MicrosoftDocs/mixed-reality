@@ -147,5 +147,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
    1. **Commit all** changes in **Source Control** (write commit message when prompted).
       
       ![Choose "Commit all" in Source Control](images/source_control_commit.png)
-   1. Click the **sync** button to sync your changes back to origin (your fork on GitHub). **INSERT SAME SYNC BUTTON IMAGE**
+   1. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
+      
+      ![Click the sync button](images/sync_back.png)
 1. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way). **INSERT SAME PR IMAGE**
