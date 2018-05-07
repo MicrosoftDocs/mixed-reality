@@ -4,7 +4,7 @@ Welcome to the [public repo for Windows Mixed Reality developer documentation](h
 
 ## Before you start
 
-If you don't already have one, you'll need to [create a GitHub account](https://github.com/join)).
+If you don't already have one, you'll need to [create a GitHub account](https://github.com/join).
 
 >[!NOTE]
 >If you're a Microsoft employee, link your GitHub account to your Microsoft alias on the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/). Join the **"Microsoft"** and **"MicrosoftDocs"** organizations).
@@ -15,7 +15,7 @@ When setting up your GitHub account, we also recommend these security precaution
 - Save your [recovery codes](https://github.com/settings/auth/recovery-codes) in a safe place.
 - Update your [public profile settings](https://github.com/settings/profile).
    - Set your name, and consider setting your *Public email* to *Don't show my email address*.
-   - We also recommend that you upload a profile picture, as a thumbnail will be shown on docs pages to which you contribute.
+   - We recommend you upload a profile picture, as a thumbnail will be shown on docs pages to which you contribute.
 - If you plan to use a command line workflow, consider setting up [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) so that you don't have to enter your password each time you make a contribution.
 
 Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
@@ -73,6 +73,8 @@ Use the following workflow to create new articles in the documentation via web b
 
 ## Markdown basics
 
+The following resources will help you learn how to edit documentation using the Markdown language:
+
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
 - [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
@@ -122,12 +124,12 @@ For the reasons listed [above](#editing-in-the-browser-vs-editing-with-a-desktop
     1. Install [Visual Studio Code](https://code.visualstudio.com/).
     2. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
     3. In your fork, click **Clone or download** and copy the URL.
-1. Create a local clone of your fork in Visual Studio Code:
+2. Create a local clone of your fork in Visual Studio Code:
     1. From the **View** menu, select **Command Palette**.
-    1. Type "Git:Clone."
-    1. Paste the URL you just copied.
-    1. Choose where to save the clone on your PC.
-    1. Click **Open repo** in the pop-up.
+    2. Type "Git:Clone."
+    3. Paste the URL you just copied.
+    4. Choose where to save the clone on your PC.
+    5. Click **Open repo** in the pop-up.
 
 ### Editing documentation
 
@@ -138,16 +140,27 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 1. Make sure your cloned fork is up-to-date with the official repo.
    1. In a web browser, create a pull request to sync recent changes in MicrosoftDocs/mixed-reality to your fork (make sure the arrow is pointing the right way).
-   1. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
+   2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
 2. Create or edit articles in your cloned repo using Visual Studio Code.
    1. Edit one or more articles (add images to “images” folder if necessary).
-   1. **Save** changes in **Explorer**.
+   2. **Save** changes in **Explorer**.
       
       ![Choose "Save all" in Explorer](images/explorer_save.png)
-   1. **Commit all** changes in **Source Control** (write commit message when prompted).
+   3. **Commit all** changes in **Source Control** (write commit message when prompted).
       
       ![Choose "Commit all" in Source Control](images/source_control_commit.png)
-   1. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
+   4. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
       
       ![Click the sync button](images/sync_back.png)
-1. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way). **INSERT SAME PR IMAGE**
+3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way). **INSERT SAME PR IMAGE**
+
+### Useful extensions
+
+The following Visual Studio Code extensions are very useful when editing documentation:
+
+- [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) - Use **Alt+M** to bring up a menu of docs authoring options like:
+   - Search and reference images you've uploaded.
+   - Add formatting like lists, tables, and docs-specific call-outs like `>[!NOTE]`.
+   - Search and reference internal links and bookmarks (links to specific sections within a page).
+   - Formatting errors are highlighted (hover your mouse over the error to learn more).
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - misspelled words will be underlined; right-click on a misspelled word to change it or save it to the dictionary.
