@@ -69,7 +69,9 @@ Use the following workflow to create new articles in the documentation via web b
 6. Write article content using [Markdown basics](#markdown-basics).
 7. Add a `## See also` section at the bottom of the article with links to other relevant articles.
 8. When finished, click **Commit new file**.
-9. Click **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/mixed-reality 'master.' **INSERT IMAGE**
+9. Click **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
+
+   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.png)
 
 ## Markdown basics
 
@@ -139,8 +141,12 @@ Use the following workflow to make changes to the documentation with Visual Stud
 >All the guidance for [editing](#editing-an-existing-article) and [creating](#creating-a-new-article) articles, and the [basics of editing Markdown](#markdown-basics), from above applies when using Visual Studio Code as well.
 
 1. Make sure your cloned fork is up-to-date with the official repo.
-   1. In a web browser, create a pull request to sync recent changes in MicrosoftDocs/mixed-reality to your fork (make sure the arrow is pointing the right way).
+   1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/mixed-reality 'master' to your fork (make sure the arrow is pointing the right way).
+      
+      ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync_repos.png)
    2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
+      
+      ![Click the sync button](images/sync_clone.png)
 2. Create or edit articles in your cloned repo using Visual Studio Code.
    1. Edit one or more articles (add images to “images” folder if necessary).
    2. **Save** changes in **Explorer**.
@@ -152,7 +158,9 @@ Use the following workflow to make changes to the documentation with Visual Stud
    4. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
       
       ![Click the sync button](images/sync_back.png)
-3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way). **INSERT SAME PR IMAGE**
+3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
+
+   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.png)
 
 ### Useful extensions
 
