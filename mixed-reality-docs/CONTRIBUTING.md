@@ -4,7 +4,7 @@ Welcome to the [public repo for Windows Mixed Reality developer documentation](h
 
 ## Before you start
 
-If you don't already have one, you'll need to [create a GitHub account](https://github.com/join)).
+If you don't already have one, you'll need to [create a GitHub account](https://github.com/join).
 
 >[!NOTE]
 >If you're a Microsoft employee, link your GitHub account to your Microsoft alias on the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/). Join the **"Microsoft"** and **"MicrosoftDocs"** organizations).
@@ -122,12 +122,12 @@ For the reasons listed [above](#editing-in-the-browser-vs-editing-with-a-desktop
     1. Install [Visual Studio Code](https://code.visualstudio.com/).
     2. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
     3. In your fork, click **Clone or download** and copy the URL.
-1. Create a local clone of your fork in Visual Studio Code:
+2. Create a local clone of your fork in Visual Studio Code:
     1. From the **View** menu, select **Command Palette**.
-    1. Type "Git:Clone."
-    1. Paste the URL you just copied.
-    1. Choose where to save the clone on your PC.
-    1. Click **Open repo** in the pop-up.
+    2. Type "Git:Clone."
+    3. Paste the URL you just copied.
+    4. Choose where to save the clone on your PC.
+    5. Click **Open repo** in the pop-up.
 
 ### Editing documentation
 
@@ -138,16 +138,16 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 1. Make sure your cloned fork is up-to-date with the official repo.
    1. In a web browser, create a pull request to sync recent changes in MicrosoftDocs/mixed-reality to your fork (make sure the arrow is pointing the right way).
-   1. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
+   2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
 2. Create or edit articles in your cloned repo using Visual Studio Code.
    1. Edit one or more articles (add images to “images” folder if necessary).
-   1. **Save** changes in **Explorer**.
+   2. **Save** changes in **Explorer**.
       
       ![Choose "Save all" in Explorer](images/explorer_save.png)
-   1. **Commit all** changes in **Source Control** (write commit message when prompted).
+   3. **Commit all** changes in **Source Control** (write commit message when prompted).
       
       ![Choose "Commit all" in Source Control](images/source_control_commit.png)
-   1. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
+   4. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
       
       ![Click the sync button](images/sync_back.png)
-1. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way). **INSERT SAME PR IMAGE**
+3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way). **INSERT SAME PR IMAGE**
