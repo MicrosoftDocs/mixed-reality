@@ -121,15 +121,15 @@ For the reasons listed [above](#editing-in-the-browser-vs-editing-with-a-desktop
 ### Setup
 
 1. In a web browser:
-    a. Install [Visual Studio Code](https://code.visualstudio.com/).
-    b. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
-    c. In your fork, click **Clone or download** and copy the URL.
+    1. Install [Visual Studio Code](https://code.visualstudio.com/).
+    2. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
+    3. In your fork, click **Clone or download** and copy the URL.
 2. Create a local clone of your fork in Visual Studio Code:
-    a. From the **View** menu, select **Command Palette**.
-    b. Type "Git:Clone."
-    c. Paste the URL you just copied.
-    d. Choose where to save the clone on your PC.
-    e. Click **Open repo** in the pop-up.
+    1. From the **View** menu, select **Command Palette**.
+    2. Type "Git:Clone."
+    3. Paste the URL you just copied.
+    4. Choose where to save the clone on your PC.
+    5. Click **Open repo** in the pop-up.
 
 ### Editing documentation
 
@@ -139,17 +139,28 @@ Use the following workflow to make changes to the documentation with Visual Stud
 >All the guidance for [editing](#editing-an-existing-article) and [creating](#creating-a-new-article) articles, and the [basics of editing Markdown](#markdown-basics), from above applies when using Visual Studio Code as well.
 
 1. Make sure your cloned fork is up-to-date with the official repo.
-   a. In a web browser, create a pull request to sync recent changes in MicrosoftDocs/mixed-reality to your fork (make sure the arrow is pointing the right way).
-   b. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
+   1. In a web browser, create a pull request to sync recent changes in MicrosoftDocs/mixed-reality to your fork (make sure the arrow is pointing the right way).
+   2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
 2. Create or edit articles in your cloned repo using Visual Studio Code.
-   a. Edit one or more articles (add images to “images” folder if necessary).
-   b. **Save** changes in **Explorer**.
+   1. Edit one or more articles (add images to “images” folder if necessary).
+   2. **Save** changes in **Explorer**.
       
       ![Choose "Save all" in Explorer](images/explorer_save.png)
-   c. **Commit all** changes in **Source Control** (write commit message when prompted).
+   3. **Commit all** changes in **Source Control** (write commit message when prompted).
       
       ![Choose "Commit all" in Source Control](images/source_control_commit.png)
-   d. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
+   4. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
       
       ![Click the sync button](images/sync_back.png)
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way). **INSERT SAME PR IMAGE**
+
+### Useful extensions
+
+The following Visual Studio Code extensions are very useful when editing documentation:
+
+- [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) - Use **Alt+M** to bring up a menu of docs authoring options like:
+   - Search and reference images you've uploaded.
+   - Add formatting like lists, tables, and docs-specific call-outs like `>[!NOTE]`.
+   - Search and reference internal links and bookmarks (links to specific sections within a page).
+   - Formatting errors are highlighted (hover your mouse over the error to learn more).
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - misspelled words will be underlined; right-click on a misspelled word to change it or save it to the dictionary.
