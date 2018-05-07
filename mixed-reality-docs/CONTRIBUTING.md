@@ -37,7 +37,7 @@ Use the following workflow to make updates to the documentation via web browser:
    * ms.date: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
    * keywords: Keywords aid in SEO. Add keywords, separated by a comma and a space, that are specific to your article (but no punctuation after the last keyword in your list); you don't need to add global keywords that apply to all articles as those are managed elsewhere. 
 5. When finished with your page edits, scroll down and click the **Propose file change** button.
-6. On the next page, click **Create pull request** to merge your automatically created branch into master.
+6. On the next page, click **Create pull request** to merge your automatically-created branch into master.
 7. After the pull request is completed, the site admin will delete your branch (this is easiest, so you don't have to keep it in sync with master).
 8. Repeat the steps above for the next article you want to edit.
 
