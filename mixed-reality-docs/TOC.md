@@ -153,6 +153,7 @@
 #### [Perception simulation](perception-simulation.md)
 ### Finishing your app
 #### [Implement 3D app launchers](implementing-3d-app-launchers.md)
+#### [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 #### [In-app purchases](in-app-purchases.md)
 #### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 ### Remote tools
