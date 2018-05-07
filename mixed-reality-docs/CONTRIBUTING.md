@@ -71,7 +71,7 @@ Use the following workflow to create new articles in the documentation via web b
 8. When finished, click **Commit new file**.
 9. Click **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.png)
+   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.PNG)
 
 ## Markdown basics
 
@@ -86,19 +86,19 @@ The following resources will help you learn how to edit documentation using the 
 
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](http://www.tablesgenerator.com/markdown_tables).
 
-The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) also makes table generation easy if you're using Visual Studio Code to edit the documentation.
+The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code](#using-visual-studio-code) to edit the documentation.
 
 ### Adding images
 
 You’ll need to upload your images to the images folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot respectively. [You can find solid guidance here.](https://review.docs.microsoft.com/en-us/help/style/style-how-to-visuals-static-art-types?branch=master)
 
 >[!IMPORTANT]
->You can only upload images to your forked repo. So, if you plan on adding images to an article, you'll need to use Visual Studio Code or make sure you've done the following in a web browser:
+>You can only upload images to your forked repo. So, if you plan on adding images to an article, you'll need to [use Visual Studio Code](#using-visual-studio-code) or make sure you've done the following in a web browser:
 >
->1. Have already forked the repo.
->2. Edit the article in your fork.
->3. Upload the images you're referencing in your article to the "images" folder in your fork.
->4. Create a **pull request** to merge your fork into the 'MicrosoftDocs/mixed-reality 'master' branch.
+>1. Forked the MicrosoftDocs/mixed-reality repo.
+>2. Edited the article in your fork.
+>3. Uploaded the images you're referencing in your article to the "images" folder in your fork.
+>4. Created a **pull request** to merge your fork into the MicrosoftDocs/mixed-reality 'master' branch.
 >
 >To learn how to set up your own forked repo, follow the instructions for [creating a new article](#creating-a-new-article).
 
@@ -114,7 +114,7 @@ Editing in the browser is the easiest way to make quick changes, however, there 
 - You don't get any smart-linking to other articles (you have to manually type the article's filename).
 - It can be a hassle to upload and reference images.
 
-If you'd rather not deal with these issues, you may prefer to use a desktop client like [Visual Studio Code](https://code.visualstudio.com/) with a couple helpful extensions to contribute to documentation.
+If you'd rather not deal with these issues, you may prefer to use a desktop client like [Visual Studio Code](https://code.visualstudio.com/) with a couple [helpful extensions](#useful-extensions) to contribute to documentation.
 
 ## Using Visual Studio Code
 
@@ -143,7 +143,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 1. Make sure your cloned fork is up-to-date with the official repo.
    1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/mixed-reality 'master' to your fork (make sure the arrow is pointing the right way).
       
-      ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync_repos.png)
+      ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync_repos.PNG)
    2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
       
       ![Click the sync button](images/sync_clone.png)
@@ -160,7 +160,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
       ![Click the sync button](images/sync_back.png)
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.png)
+   ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.PNG)
 
 ### Useful extensions
 
