@@ -73,6 +73,8 @@ Use the following workflow to create new articles in the documentation via web b
 
 ## Markdown basics
 
+The following resources will help you learn how to edit documentation using the Markdown language:
+
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
 - [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
@@ -119,15 +121,15 @@ For the reasons listed [above](#editing-in-the-browser-vs-editing-with-a-desktop
 ### Setup
 
 1. In a web browser:
-    1. Install [Visual Studio Code](https://code.visualstudio.com/).
-    2. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
-    3. In your fork, click **Clone or download** and copy the URL.
+    a. Install [Visual Studio Code](https://code.visualstudio.com/).
+    b. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
+    c. In your fork, click **Clone or download** and copy the URL.
 2. Create a local clone of your fork in Visual Studio Code:
-    1. From the **View** menu, select **Command Palette**.
-    2. Type "Git:Clone."
-    3. Paste the URL you just copied.
-    4. Choose where to save the clone on your PC.
-    5. Click **Open repo** in the pop-up.
+    a. From the **View** menu, select **Command Palette**.
+    b. Type "Git:Clone."
+    c. Paste the URL you just copied.
+    d. Choose where to save the clone on your PC.
+    e. Click **Open repo** in the pop-up.
 
 ### Editing documentation
 
@@ -137,17 +139,17 @@ Use the following workflow to make changes to the documentation with Visual Stud
 >All the guidance for [editing](#editing-an-existing-article) and [creating](#creating-a-new-article) articles, and the [basics of editing Markdown](#markdown-basics), from above applies when using Visual Studio Code as well.
 
 1. Make sure your cloned fork is up-to-date with the official repo.
-   1. In a web browser, create a pull request to sync recent changes in MicrosoftDocs/mixed-reality to your fork (make sure the arrow is pointing the right way).
-   2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
+   a. In a web browser, create a pull request to sync recent changes in MicrosoftDocs/mixed-reality to your fork (make sure the arrow is pointing the right way).
+   b. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
 2. Create or edit articles in your cloned repo using Visual Studio Code.
-   1. Edit one or more articles (add images to “images” folder if necessary).
-   2. **Save** changes in **Explorer**.
+   a. Edit one or more articles (add images to “images” folder if necessary).
+   b. **Save** changes in **Explorer**.
       
       ![Choose "Save all" in Explorer](images/explorer_save.png)
-   3. **Commit all** changes in **Source Control** (write commit message when prompted).
+   c. **Commit all** changes in **Source Control** (write commit message when prompted).
       
       ![Choose "Commit all" in Source Control](images/source_control_commit.png)
-   4. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
+   d. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
       
       ![Click the sync button](images/sync_back.png)
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way). **INSERT SAME PR IMAGE**
