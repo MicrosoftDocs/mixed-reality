@@ -37,8 +37,8 @@ To target Windows Mixed Reality, you first need to set your Unity project to exp
 We then need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do that by enabling "Virtual Reality Supported":
 1. From the **Build Settings...** window, open **Player Settings...**
 2. Select the **Settings for Universal Windows Platform** tab
-3. Expand the **Other Settings** group
-4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add the **Virtual Reality Devices** list.
+3. Expand the **XR Settings** group
+4. In the **XR Settings** section, check the **Virtual Reality Supported** checkbox to add the **Virtual Reality Devices** list.
 5. In the **XR Settings** group, confirm that **"Windows Mixed Reality"** is listed as a supported device. (this may appear as "Windows Holographic" in older versions of Unity)
 
 Your app can now do basic holographic rendering and spatial input. To go further and take advantage of certain functionality, your app must declare the appropriate capabilities in its manifest. The manifest declarations can be made in Unity so they are included in every subsequent project export. The setting are found in **Player Settings > Settings for Universal Windows Platform > Publishing Settings > Capabilities**. The applicable capabilities for enabling commonly-used Unity APIs for Mixed Reality are:
