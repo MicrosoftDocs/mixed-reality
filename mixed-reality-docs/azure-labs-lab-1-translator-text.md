@@ -32,11 +32,7 @@ For the most up-to-date prerequisites for developing with mixed reality, includi
 
 > [!NOTE] 
 > This tutorial is designed for developers who have basic experience with Unity and C#.
-<<<<<<< HEAD:mixed-reality-docs/azure-labs-lab-1-translator-text.md
 Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
-=======
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified with all things mentioned within this document. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
->>>>>>> b8e7aaed88eb435f481cf7f32e1cc647015997c8:mixed-reality-docs/azure-labs-lab-1-test.md
 
 The following hardware and software is required:
 
