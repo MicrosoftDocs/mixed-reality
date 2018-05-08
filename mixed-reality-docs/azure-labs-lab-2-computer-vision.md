@@ -159,6 +159,8 @@ The following is a typical set up for developing with mixed reality, and as such
 
             ![Give new scene a name.](images/AzureLabs-Lab2-13.png)
 
+            > Be aware, you must save your Unity scenes within the *Assets* folder, as they must be associated with the Unity Project. Creating the scenes folder (and other similar folders) is a typical way of structuring a Unity project.
+
     7. The remaining settings, in **Build Settings**, should be left as default for now.
 6. In the ***Build Settings*** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located. 
 

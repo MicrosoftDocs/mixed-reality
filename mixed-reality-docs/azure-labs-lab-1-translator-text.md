@@ -59,6 +59,8 @@ The following hardware and software is required:
 2.	The code in this tutorial will allow you to record from the Default Microphone Device on your machine. Make sure the Default Microphone Device is set as the one you wish to use to capture your voice.
 3.	If your headset has a built-in microphone, make sure the option “When I wear my headset, switch to headset mic” is turned on in the mixed reality Portal settings.
 
+    ![mixed reality settings](images/AzureLabs-Lab1-00-5.png)
+
     ![Default Microphone Settings](images/AzureLabs-Lab1-01.png)
 
 4.	To allow your machine to enable Dictation, go to Windows Settings > Speech, Inking & Typing, and press on the button Turn On speech services and typing suggestions.
@@ -157,6 +159,8 @@ The following is a typical set up for developing with mixed reality, and as such
 
             ![Give new scene a name.](images/AzureLabs-Lab1-14.png)
 
+            > Be aware, you must save your Unity scenes within the *Assets* folder, as they must be associated with the Unity Project. Creating the scenes folder (and other similar folders) is a typical way of structuring a Unity project.
+
     7. The remaining settings, in **Build Settings**, should be left as default for now.
 6. In the ***Build Settings*** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located. 
 
@@ -222,7 +226,7 @@ To show the input and output of the translation, a basic UI needs to be created.
 2.	With the Canvas object selected, in the **Inspector Panel** (within the ‘Canvas’ component), change **Render Mode** to **World Space**. 
 3.	Next, change the following parameters in the **Inspector Panel’s Rect Transform**:
 
-    1. ***POS*** -	**X** 0	**Y** 20	**Z** 40
+    1. ***POS*** -	**X** 0	**Y** 0	**Z** 40
     2. **Width** -	500
     3. **Height** -	300
     4. **Scale** - **X** 0.13	**Y** 0.13	**Z** 0.13
@@ -756,6 +760,7 @@ Ensure that:
 -	The ***Results***, ***Translator***, and ***MicrophoneManager***, scripts are attached to the **Main Camera** object. 
 -	You have placed your **Azure Translator Text API** service ***Key*** within the **authorizationKey** variable within the ***Translator*** Script.  
 -	All the fields in the **Main Camera Inspector Panel** are assigned properly.
+- Your microphone is working when running your scene (if not, check that your attached microphone is the *default* device, and that you have set it up correctly within [Windows](https://support.microsoft.com/en-au/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)).
 
 You can test the immersive headset by pressing the ***Play*** button in the **Unity Editor**.
 The App should be functioning through the attached immersive headset.
