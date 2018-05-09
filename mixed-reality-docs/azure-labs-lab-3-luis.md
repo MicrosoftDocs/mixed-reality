@@ -5,6 +5,7 @@ author: elliotmoule, StefanoDeflorio, drneil
 ms.author:
 ms.date: 
 keywords: azure, language understanding intelligence service, luis, mixed reality, unity3d
+css: ../css/pandoc.css
 ---
 
 # Lab 3. LUIS integration with Immersive Headsets
@@ -30,13 +31,15 @@ This Lab is a self-contained tutorial, which does not directly involve any other
 Be prepared to Train LUIS several times, which is covered in **Step 12**. You will get better results the more times LUIS has been trained. 
 
 ## Prerequisites
+
 For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
 
 > [!NOTE] 
 > This tutorial is designed for developers who have basic experience with Unity and C#.
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified with all things mentioned within this document. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
+Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
 
 The following hardware and software is required:
+
 -	Windows 10 Fall Creators Update, **Developer Mode enabled**
 -	Windows 10 SDK (latest version)
 - [Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
@@ -435,15 +438,22 @@ The following is a typical set up for developing with the mixed reality, and as 
 
     ![Create 3D Text object](images/AzureLabs-Lab3-38.png)
  
-16.	The final scene should look like the image below:
+16. Your Hierarchy Panel structure should now look like this:
+
+    ![text mesh in scene view](images/AzureLabs-Lab3-38b.png)
+
+
+17.	The final scene should look like the image below:
 
     ![The scene view.](images/AzureLabs-Lab3-39.png)
+    
  
 ## Step 5 – Create the MicrophoneManager Class
 
 The first Script you are going to create is the ***MicrophoneManager*** class. Following this, you will create the ***LuisManager***, the ***Behaviours*** class, and lastly the ***Gaze*** class (feel free to create all these now, though it will be covered as you reach each step).
 
 The ***MicrophoneManager*** class is responsible for:
+
 -	Detecting the recording device attached to the headset or machine (whichever is the default one).
 -	Capture the audio (voice) and use dictation to store it as a string.
 -	Once the voice has paused, submit the dictation to the ***LuisManager*** class. 
@@ -981,9 +991,13 @@ Ensure that:
 
 ```
 make the cylinder red
+
 change the cube to yellow
+
 I want the sphere blue
+
 make this to green
+
 change it to white
 ```
 > [!NOTE]
@@ -996,8 +1010,9 @@ Once you have ensured that the application is working in the Unity Editor, you a
 To Build:
 
 1.	Save the current scene by clicking on ***File > Save***.
-2.	Tick the box called ***Unity C# Projects*** (useful for seeing and debugging your code once the UWP project is created.
-3.	Go to ***File > Build Settings***, click on ***Add Open Scenes***, then click ***Build***.
+2.	Go to ***File > Build Settings***.
+3.  Tick the box called ***Unity C# Projects*** (useful for seeing and debugging your code once the UWP project is created.
+4.  click on ***Add Open Scenes***, then click ***Build***.
 
     ![Build Settings window](images/AzureLabs-Lab3-43.png)
 

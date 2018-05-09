@@ -5,6 +5,7 @@ author: elliotmoule, StefanoDeflorio, drneil
 ms.author:
 ms.date: 
 keywords: azure, machine learning, mixed reality, unity3d
+css: ../css/pandoc.css
 ---
 
 # Lab 7. Machine Learning Studio with Immersive Headsets
@@ -371,9 +372,7 @@ To start creating an experiment:
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-31.png)
 
-27. Once it has finished running, you can deploy the web service.
-    Click ***Deploy Web Service*** (Classic) in the menu at the bottom of the
-    page.
+27. Once it has finished running, a ***Deploy Web Service*** button will appear at the bottom of the page. You are ready to deploy the web service. Click ***Deploy Web Service*** (Classic) in the menu at the bottom of the page.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-32.png)
 
@@ -438,7 +437,9 @@ Set up and test your Mixed Reality Immersive Headset.
 4.  Also make sure that:
 
     1.  **Target Device** is set to ***Any Device*.**
+
         > For the Microsoft HoloLens, set **Target Device** to *HoloLens*.
+
     2.  **Build Type** is set to ***D3D*.**
 
     3.  **SDK** is set to ***Latest installed*.**
@@ -543,7 +544,7 @@ As part of the imported package, you will have been given this class, though it 
 1.  Double click on the ***ShelfKeeper*** script, within the **Scripts** folder, to open it with
     **Visual Studio 2017.**
 
-2.  Insert the following code in the ***ShelfKeeper*** class (you will have the four public variables at the top of that script). This code sets the time and date and has a method to show a product.
+2.  Replace all the code existing in the script with the following code, which sets the time and date and has a method to show a product.
 
 ```csharp
 using UnityEngine;
@@ -612,11 +613,11 @@ public class ShelfKeeper : MonoBehaviour
     ![Create the ShelfKeeper class](images/AzureLabs-Lab7-51.png)
 
 > [!IMPORTANT]
-> If your script does not have the reference targets (i.e. *Date (Test Mesh)*), simply drag the corresponding objects from the **Hierarchy Panel**, into the target fields. See below for explanation, if needed:
+> If your script does not have the reference targets (i.e. *Date (Text Mesh)*), simply drag the corresponding objects from the **Hierarchy Panel**, into the target fields. See below for explanation, if needed:
 > 
 > 1.  Open the **Spawn Point** array within the **ShelfKeeper** component script by left-clicking it. A sub-section will appear called ***Size***, which indicates the size of the array. Type ***3*** into the textbox next to **Size** and press ***Enter***, and three slots will be created beneath.
 > 2. Within the **Hierarchy** expand the **Time Display** object (by left-clicking the arrow beside it). Next click the ***Main Camera*** from within the **Hierarchy**, so that the **Inspector** shows its information.
-> 3. Drag the **Date** and **Time** objects from the **Hierarchy Panel** to the **Date Text** and **Time Text** slots within the **Inspector** of the **Main Camera** in the **ShelfKeeper** component.
+> 3. Select the **Main Camera** in the **Hierarchy Panel**. Drag the **Date** and **Time** objects from the **Hierarchy Panel** to the **Date Text** and **Time Text** slots within the **Inspector** of the **Main Camera** in the **ShelfKeeper** component.
 > 4. Drag the **Spawn Points** from the **Hierarchy Panel** (beneath the *Shelf* object) to the **3** **Element** reference targets beneath the **Spawn Point** array, as shown in the image.
 > 
 >     ![Create the ShelfKeeper class](images/AzureLabs-Lab7-52.png)
@@ -764,6 +765,7 @@ using System.Collections;
 > Make sure to insert the **primary key** and **request-response endpoint**, from the Machine Learning Portal, into the variables here. The below images show where you would have taken the key and endpoint from. 
 >  
 > ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-53-1.png)
+>
 > ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-53-2.png)
 
 8.  Insert this code within the **Start()** method. The **Start()**
