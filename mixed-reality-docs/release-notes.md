@@ -73,6 +73,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 ### Motion controllers
 
+* If input is not being routed to the headset, the motion controller will briefly disappear when being held next to the room boundary. Pressing Win+Y to ensure there's a blue banner across the Desktop monitor will resolve this. 
 * Occasionally, when you click on a web page in Microsoft Edge, the content will zoom instead of click.
 
 ### Desktop app in the Windows Mixed Reality home
