@@ -41,7 +41,6 @@ The following hardware and software is required:
 -	A HoloLens, **Developer Mode enabled**
 -	Visual Studio 2017.15.4 or higher
 -	A PC compatible with Windows mixed reality 
--	Adobe Reader installed, for easier use of this document.
 -	A subscription to Azure Computer Vision API Service, with the Auth Key
 -	Internet Access for Azure, and for Computer Vision API retrieval. For more information, please follow this [LINK](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/).
 
