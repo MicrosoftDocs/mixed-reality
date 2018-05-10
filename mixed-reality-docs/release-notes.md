@@ -21,6 +21,7 @@ To update to the latest release for each device, open the **Settings** app, go t
 
 **Latest release for Desktop:** Windows 10 Desktop April 2018 Update (**10.0.17134.1**)<br>
 **Latest release for HoloLens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/O-84oWjSbr0]
 
