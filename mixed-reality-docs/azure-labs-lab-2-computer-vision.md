@@ -31,17 +31,16 @@ For the most up-to-date prerequisites for developing with mixed reality, includi
 
 > [!NOTE] 
 > This tutorial is designed for developers who have basic experience with Unity and C#.
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the information will continue to be valid, should you use a different version of any of the below prerequisites.
+Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
 
 The following hardware and software is required:
 
 -	Windows 10 Fall Creators Update, Developer Mode enabled
 -	Windows 10 SDK (latest version)
 -	[Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
--	A HoloLens, Developer Mode enabled
+-	A HoloLens, **Developer Mode enabled**
 -	Visual Studio 2017.15.4 or higher
 -	A PC compatible with Windows mixed reality 
--	Adobe Reader installed, for easier use of this document.
 -	A subscription to Azure Computer Vision API Service, with the Auth Key
 -	Internet Access for Azure, and for Computer Vision API retrieval. For more information, please follow this [LINK](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/).
 
@@ -146,7 +145,8 @@ The following is a typical set up for developing with mixed reality, and as such
     3. **SDK** is set to **Latest installed**
     4. **Visual Studio Version** is set to **Latest installed**
     5. **Build and Run** is set to **Local Machine**
-    6. Save the scene and add it to the build. 
+    6. Save the scene and add it to the build.
+
         1. Do this by selecting **Add Open Scenes**. A save window will appear.
         
             ![Click add open scenes button](images/AzureLabs-Lab2-11.png)
@@ -159,13 +159,18 @@ The following is a typical set up for developing with mixed reality, and as such
 
             ![Give new scene a name.](images/AzureLabs-Lab2-13.png)
 
+            > Be aware, you must save your Unity scenes within the *Assets* folder, as they must be associated with the Unity Project. Creating the scenes folder (and other similar folders) is a typical way of structuring a Unity project.
+
     7. The remaining settings, in **Build Settings**, should be left as default for now.
+
 6. In the ***Build Settings*** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located. 
 
     ![Open player settings.](images/AzureLabs-Lab2-14.png)
 
 7. In this panel, a few settings need to be verified:
+
     1. In the **Other Settings** tab:
+
         1. **Scripting Runtime Version** should be ***Stable*** (.NET 3.5 Equivalent).
         2. **Scripting Backend** should be ***.NET***
         3. **API Compatibility Level** should be ***.NET 4.6***

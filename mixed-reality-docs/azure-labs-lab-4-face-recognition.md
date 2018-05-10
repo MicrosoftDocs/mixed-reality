@@ -36,7 +36,7 @@ For the most up-to-date prerequisites for developing with mixed reality, includi
 
 > [!NOTE] 
 > This tutorial is designed for developers who have basic experience with Unity and C#.
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified with all things mentioned within this document. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
+Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
 
 The following hardware and software is required:
 
@@ -160,9 +160,13 @@ For more information about this library click on the following [LINK](https://bl
 
 > [!NOTE] 
 > These are just steps, instructions for how to do these things is further down the document. The **Person Maker** app will allow you to:
+>
 > * Create a **Person Group**, which is a group composed of several people which you want to associate with it. With your Azure account you can host multiple Person Groups.
+>
 > * Create a **Person**, which is a member of a Person Group. Each person has a number of **Face** images associated with it.
+>
 > *  Assign **face images** to a **Person**, to allow your Azure Face API Service to recognize a **Person** by the corresponding **face**.
+>
 > *  **Train** your Azure Face API Service.
 
 Be aware, so to train this app to recognize people, you will need ten
@@ -273,7 +277,7 @@ The following is a typical set up for developing with mixed reality, and as such
         
             ![Click add open scenes button](images/AzureLabs-Lab4-12.png)
 
-        2. Create a new folder for this, and any future, scene, then select the **New folder** button, to create a new folder, name it **Scenes**.
+        2. Select the **New folder** button, to create a new folder, name it **Scenes**.
 
             ![Create new scripts folder](images/AzureLabs-Lab4-13.png)
 
@@ -296,8 +300,8 @@ The following is a typical set up for developing with mixed reality, and as such
             ![Update other settings.](images/AzureLabs-Lab4-16.png)
       
     2. Within the **Publishing Settings** tab, under **Capabilities**, check:
-        1. ***InternetClient***
-        2. ***Webcam***
+        - ***InternetClient***
+        - ***Webcam***
 
             ![Updating publishing settings.](images/AzureLabs-Lab4-17.png)
 
@@ -814,12 +818,15 @@ using UnityEngine.XR.WSA.WebCam;
 To perform a thorough test of your application you will need to sideload it onto your HoloLens.
 
 Before you do, ensure that:
+
 -	All the settings mentioned in the Step 3 are set correctly. 
 -	The script **FaceAnalysis** is attached to the Main Camera object. 
 -	Both the **Auth Key** and **Group Id** have been set within the **FaceAnalysis** script.
 
 A this point you are ready to build the Solution. Once the Solution has been built, you will be ready to deploy your application.
+
 To begin the Build process:
+
 1.	Save the current scene by clicking on File, Save.
 2.	Go to File, Build Settings, click on Add Open Scenes.
 3.	Make sure to tick Unity C# Projects.
@@ -858,6 +865,17 @@ To deploy on HoloLens:
 > [!NOTE]
 > To deploy to immersive headset, set the **Solution Platform** to *Local Machine*, and set the **Configuration** to *Debug*, with *x86* as the **Platform**. Then deploy to the local machine, using the **Build menu**, selecting *Deploy Solution*. 
 
+
+## Step 10 - Using the Application
+
+1.  Wearing the HoloLens, launch the app.
+2.  Look at the person that you have registered with the Face Api. Make sure that:
+    -  the person's face is not too distant and clearly visible
+    -  the environment lighting is not too dark
+3.  Use the tap gesture to capture the person's picture.
+4.  Wait for the App to send the analysis request and receive a response.
+5.  If the person has been successfully recognised, the person's name name will appear as UI text.
+6.  You can repeat the capture process using the tap gesture every few seconds.
 
 ## Exercise
 

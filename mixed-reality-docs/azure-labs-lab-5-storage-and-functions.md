@@ -47,7 +47,7 @@ For the most up-to-date prerequisites for developing with mixed reality, includi
 
 > [!NOTE] 
 > This tutorial is designed for developers who have basic experience with Unity and C#.
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified with all things mentioned within this document. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
+Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
 
 The following hardware and software is required:
 
@@ -355,14 +355,17 @@ Set up and test your Mixed Reality Immersive Headset.
     ![player settings in inspector](images/AzureLabs-Lab5-25.png)
 
 8.  In this panel, a few settings need to be verified:
+
     1.  In the **Other Settings** tab:
+
         1.  **Scripting** **Runtime Version** should be ***Experimental*** (.NET 4.6 Equivalent), which will trigger a need to restart the Editor.
         2.  **Scripting Backend** should be ***.NET***
         3.  **API Compatibility Level** should be *.**NET 4.6***
 
     2.  Within the **Publishing Settings** tab, under **Capabilities**,
         check:
-        1.  ***InternetClient***
+        
+        -  ***InternetClient***
 
             ![set capabilities](images/AzureLabs-Lab5-26.png)
 
@@ -516,6 +519,10 @@ Set up and test your Mixed Reality Immersive Headset.
 
 > [!TIP]
 > The selected color here is Hex color: **000000FF**, though feel free to choose your own, just ensure it is readable.
+
+10. Your Hierarchy Panel structure should now look like this:
+
+    ![text mesh in scene view](images/AzureLabs-Lab5-43b.png)
 
 10. Your scene should now look like this:
 
