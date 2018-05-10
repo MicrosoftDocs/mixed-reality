@@ -5,7 +5,6 @@ author: elliotmoule, StefanoDeflorio, drneil
 ms.author:
 ms.date: 
 keywords: azure, language understanding intelligence service, luis, mixed reality, unity3d
-css: ../css/pandoc.css
 ---
 
 # Lab 3. LUIS integration with Immersive Headsets
@@ -1012,7 +1011,7 @@ To Build:
 1.	Save the current scene by clicking on ***File > Save***.
 2.	Go to ***File > Build Settings***.
 3.  Tick the box called ***Unity C# Projects*** (useful for seeing and debugging your code once the UWP project is created.
-4.  click on ***Add Open Scenes***, then click ***Build***.
+4.  Click on ***Add Open Scenes***, then click ***Build***.
 
     ![Build Settings window](images/AzureLabs-Lab3-43.png)
 

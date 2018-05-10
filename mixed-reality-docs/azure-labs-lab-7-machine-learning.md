@@ -5,7 +5,6 @@ author: elliotmoule, StefanoDeflorio, drneil
 ms.author:
 ms.date: 
 keywords: azure, machine learning, mixed reality, unity3d
-css: ../css/pandoc.css
 ---
 
 # Lab 7. Machine Learning Studio with Immersive Headsets

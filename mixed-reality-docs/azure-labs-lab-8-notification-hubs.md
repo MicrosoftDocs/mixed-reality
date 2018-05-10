@@ -58,20 +58,15 @@ Please also be aware that the prerequisites, and written instructions, within th
 
 The following hardware and software is required:
 
--   Windows 10 Fall Creators Update, **Developer Mode enabled** Windows
-    10 SDK (latest version) 
-    
--   [Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
-
--   An immersive headset
-
--   Visual Studio 2017.15.4 or higher
-
--   A PC compatible with Windows mixed reality
-
--   A subscription to **Azure Notification Hubs**.
-
--   Internet Access for Azure, and to access Notification Hubs.
+- Windows 10 Fall Creators Update, **Developer Mode enabled** 
+- Windows 10 SDK (latest version)     
+- [Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
+- An immersive headset
+- Visual Studio 2017.15.4 or higher
+- A PC compatible with Windows mixed reality
+- A subscription to **Azure Notification Hubs**.
+- Internet Access for Azure, and to access Notification Hubs.
+- You must be the **owner** of your Microsoft Developer Portal and your Application Registration Portal, otherwise you will not have permission to access the app in **Step 2**.
 
 > [!NOTE] 
 > It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens. 
@@ -113,11 +108,11 @@ listed, and retrieve the credentials which will be used to setup the
 
 1.  Navigate to the [Application Registration Portal](http://apps.dev.microsoft.com).
 
+    ![application registration portal](images/AzureLabs-Lab8-03.png)
+
 > [!WARNING] 
 > You will need to use your Microsoft Account to Login.  
 > This **must** be the Microsoft Account which you used in the previous step, with the Windows Store Developer portal.
-
-![application registration portal](images/AzureLabs-Lab8-03.png)
 
 2.  You will find your app under the **My applications** section. Once
     you have found it, click on it and you will be taken to a new page
@@ -314,7 +309,8 @@ Studio**.
 > If the Subscription you used to create your *Storage Accounts* is not visible, ensure that you have: 
 > - Logged in to the same account as the one you used for the Azure Portal.
 > - Selected your Subscription from the Account Management Page (you may need to apply a filter from your account settings):  
-    > ![find subscription](images/AzureLabs-Lab8-22-5.png)
+>
+>   ![find subscription](images/AzureLabs-Lab8-22-5.png)
 
 4.  Your Azure cloud services will be shown. Find **Storage Accounts**
     and click the arrow to the left of that to expand your accounts.
@@ -719,8 +715,10 @@ public class UnityGameObject : TableEntity
 
         ![output update](images/AzureLabs-Lab8-51.png)
 
-31.  The **Outputs** page should now match the below, but with
-    ***your*** information instead. Make sure to press **Save**.
+31.  The **Outputs** page should now match the below, but with ***your*** information instead. Make sure to press **Save**.
+
+> [!WARNING]
+> *Do not edit the Notification Hub name directly* (should all be done using the **Advanced Editor**, provided you followed the previous steps correctly.
 
 ![outputs complete](images/AzureLabs-Lab8-50.png)
 
@@ -734,7 +732,22 @@ public class UnityGameObject : TableEntity
 
         ![outputs complete](images/AzureLabs-Lab8-50-2.png)
 
-    3. Click the ***Run*** button at the bottom right, and the test will be run. The output logs of the test will appear in the console area, below your function code.
+    3. Within the **Request body** textbox of the blade, paste the below code:
+
+        ```
+        {  
+            "Type":null,
+            "X":3,
+            "Y":0,
+            "Z":1,
+            "PartitionKey":null,
+            "RowKey":"Obj2",
+            "Timestamp":"0001-01-01T00:00:00+00:00",
+            "ETag":null
+        }
+        ```
+
+    4. With the test code in place, click the ***Run*** button at the bottom right, and the test will be run. The output logs of the test will appear in the console area, below your function code.
 
         ![outputs complete](images/AzureLabs-Lab8-50-3.png)
 
@@ -826,7 +839,7 @@ Set up and test your mixed reality immersive headset.
     2.  Within the **Publishing Settings** tab, under **Capabilities**,
         check:
 
-        1. ***InternetClient***            
+        - ***InternetClient***
 
             ![tick internet client](images/AzureLabs-Lab8-60.png)
 
@@ -1411,7 +1424,7 @@ and as such, is a good template for other projects.
     Project***.
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component for this project (Desktop App), and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%208%20-%20Notification%20Hubs/Azure-MR-Lab-8-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Step 14**. You will still need to add the script components.
+> If you wish to skip the *Unity Set up* component for this project (mixed reality App), and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%208%20-%20Notification%20Hubs/Azure-MR-Lab-8-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Step 14**. You will still need to add the script components.
 
 ### **Step 13 - Importing the DLLs in the Mixed Reality Unity Project**
 
@@ -1621,7 +1634,6 @@ using Windows.Networking.PushNotifications;
     /// </summary>
     private async void InitNotificationsAsync()
     {
-
         // PushNotificationChannel channel = await PushNotificationChannelManager.CreatePushNotificationChannelForApplicationAsync();
 
         // NotificationHub hub = new NotificationHub(hubName, hubListenEndpoint);
@@ -1800,6 +1812,9 @@ using Microsoft.WindowsAzure.Messaging;
         }
     }
 ```
+
+> [!WARNING]
+> The code above has a comment in it: ensure that you have not accidentally *uncommented* that comment (as the code will not compile if you have!).
 
 3. And, lastly, the **Channel_PushNotificationReceived** event:
 

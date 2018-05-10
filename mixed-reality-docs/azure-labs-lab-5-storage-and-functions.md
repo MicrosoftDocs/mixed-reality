@@ -5,7 +5,6 @@ author: elliotmoule, StefanoDeflorio, drneil
 ms.author:
 ms.date: 
 keywords: azure, azure functions, azure storage, mixed reality, unity3d
-css: ../css/pandoc.css
 ---
 
 # **Lab 5. Azure Cloud Storage and Azure Functions**
