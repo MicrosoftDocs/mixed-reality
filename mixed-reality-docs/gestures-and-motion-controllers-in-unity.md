@@ -507,6 +507,22 @@ You can find an example of how we recommend to implement throwing [here](https:/
 
 Throwing will continue to improve with future Windows updates, and you can expect to find more information on it here.
 
+# Mixed Reality Toolkit for Input
+There are two example scenes about InputManager and MotionController in Unity. Through these scenes, you can learn how to use MRTK's InputManager and access data handle events from the motion controller buttons.
+
+- HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity
+- HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity
+- Technical details README File
+
+## How to use MRTK's automatic scene setup
+When you import MRTK release Unity packages or clone the project from the GitHub repository, you are going to find a new menu 'Mixed Reality Toolkit' in Unity. Under 'Configure' menu, you will see the menu 'Apply Mixed Reality Scene Settings'. When you click it, it removes the default camera and adds foundational components - InputManager, MixedRealityCameraParent, and DefaultCursor.
+
+## MixedRealityCamera prefab
+You can also manually add these from the project panel. You can find these components as prefabs. When you search MixedRealityCamera, you will be able to see two different camera prefabs. The difference is, MixedRealityCamera is the camera only prefab whereas, MixedRealityCameraParent includes additional components for the immersive headsets such as Teleportation, Motion Controller and, Boundary.
+
+MixedRealtyCamera supports both HoloLens and immersive headset. It detects the device type and optimizes the properties such as clear flags and Skybox. Below you can find some of the useful properties you can customize such as custom Cursor, Motion Controller models, and Floor.
+
+
 ## See also
 * [Gestures](gestures.md)
 * [Motion controllers](motion-controllers.md)
