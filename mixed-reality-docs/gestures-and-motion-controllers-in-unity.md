@@ -514,14 +514,28 @@ There are two example scenes about InputManager and MotionController in Unity. T
 - HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity
 - Technical details README File
 
+![Input example scenes in MRTK](images/MRTK_ExampleScene_Input.png)<br>
+*Input example scenes in MRTK*
+
 ## How to use MRTK's automatic scene setup
 When you import MRTK release Unity packages or clone the project from the GitHub repository, you are going to find a new menu 'Mixed Reality Toolkit' in Unity. Under 'Configure' menu, you will see the menu 'Apply Mixed Reality Scene Settings'. When you click it, it removes the default camera and adds foundational components - InputManager, MixedRealityCameraParent, and DefaultCursor.
+
+![MRTK Menu for scene setup](images/MRTK_Input_Menu.png)<br>
+*MRTK Menu for scene setup*
+
+![Automatic scene setup in MRTK](images/MRTK_HowTo_Input1.png)<br>
+*Automatic scene setup in MRTK*
 
 ## MixedRealityCamera prefab
 You can also manually add these from the project panel. You can find these components as prefabs. When you search MixedRealityCamera, you will be able to see two different camera prefabs. The difference is, MixedRealityCamera is the camera only prefab whereas, MixedRealityCameraParent includes additional components for the immersive headsets such as Teleportation, Motion Controller and, Boundary.
 
+![Camera prefabs in MRTK](images/MRTK_HowTo_Input2.png)<br>
+*Camera prefabs in MRTK*
+
 MixedRealtyCamera supports both HoloLens and immersive headset. It detects the device type and optimizes the properties such as clear flags and Skybox. Below you can find some of the useful properties you can customize such as custom Cursor, Motion Controller models, and Floor.
 
+![Properties for the Motion controller, Cursor and Floor](images/MRTK_HowTo_Input3.png)<br>
+*Properties for the Motion controller, Cursor and Floor*
 
 ## See also
 * [Gestures](gestures.md)
