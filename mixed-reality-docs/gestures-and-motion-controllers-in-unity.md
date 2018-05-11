@@ -510,9 +510,9 @@ Throwing will continue to improve with future Windows updates, and you can expec
 # Mixed Reality Toolkit for Input
 There are two example scenes about InputManager and MotionController in Unity. Through these scenes, you can learn how to use MRTK's InputManager and access data handle events from the motion controller buttons.
 
-- HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity
-- HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity
-- Technical details README File
+- [HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity)
+- [HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity)
+- [Technical details README File](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/Input)
 
 ![Input example scenes in MRTK](images/MRTK_ExampleScene_Input.png)<br>
 *Input example scenes in MRTK*
@@ -536,6 +536,11 @@ MixedRealtyCamera supports both HoloLens and immersive headset. It detects the d
 
 ![Properties for the Motion controller, Cursor and Floor](images/MRTK_HowTo_Input3.png)<br>
 *Properties for the Motion controller, Cursor and Floor*
+
+## Mixed Reality 213 - Motion controller tutorial
+Find more detailed customization examples in Mixed Reality Academy tutorial.
+[![Mixed Reality 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/en-us/windows/mixed-reality/mixed-reality-213)<br>
+*Mixed Reality 213 - Motion controller*
 
 ## See also
 * [Gestures](gestures.md)
