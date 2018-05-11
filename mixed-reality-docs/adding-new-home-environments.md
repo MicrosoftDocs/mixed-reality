@@ -9,7 +9,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, C
 # Adding custom home environments
 
 >[!NOTE]
->This is an experimental feature. Give it a try and have fun with it, but don't be surprised if everything doesn't quite work as expected. We're evaluating the viability of this feature and interest in using it, so please **Give us feedback** as you find bugs and tell us about your experience in the **developer forums.**
+>This is an experimental feature. Give it a try and have fun with it, but don't be surprised if everything doesn't quite work as expected. We're evaluating the viability of this feature and interest in using it, so please **give us feedback** as you find bugs and tell us about your experience in the **developer forums.**
 
 Starting with the [Windows 10 April 2018 update](#release-notes.md), we've enabled an experimental feature that lets you add custom environments to your **Places** picker to use as the [Windows Mixed Reality home](#navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality has two default environments, Cliff House and Skyloft, that you can choose as your home. Creating custom environments allows you to expand that list with your own creations. We are making this available in an early state to evaluate interest from creators and developers, see what kinds of worlds you create, and understand how you work with different authoring tools.
 
@@ -121,8 +121,10 @@ Windows Mixed Reality translates glTF units to 1 meter when loading environments
 
 The default spawn location is located at 0,0,0 in the environment. Its not currently possible to customize this location, so you must modify the spawn point by exporting your environment with the origin positioned at the desired spawn point.
 
+### The audio doesn't sound correct in the environment
+
+When you create your custom environment, it will be using anacoustics rendering simulation that does not match the physical space you have created. Sound may come from the wrong directions and may sound muffled. 
+
 ## See also
-
-**ADD SOME CROSS-LINKS TO gLTF RESOURCES AND ANYTHING ELSE IN OUR DOCS THAT'S RELEVANT**
-
+* [Navigating the Windows Mixed Reality Home](#navigating-the-windows-mixed-reality-home)
 
