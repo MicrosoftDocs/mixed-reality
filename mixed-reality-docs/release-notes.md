@@ -21,6 +21,11 @@ To update to the latest release for each device, open the **Settings** app, go t
 
 **Latest release for Desktop:** Windows 10 Desktop April 2018 Update (**10.0.17134.1**)<br>
 **Latest release for HoloLens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
+<br>
+
+>[!VIDEO https://www.youtube.com/embed/O-84oWjSbr0]
+
+*A message from Alex Kipman and overview of new mixed reality features in the Windows 10 April 2018 Update*
 
 ## New features for Windows Mixed Reality immersive headsets
 
@@ -73,6 +78,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 ### Motion controllers
 
+* If input is not being routed to the headset, the motion controller will briefly disappear when being held next to the room boundary. Pressing Win+Y to ensure there's a blue banner across the Desktop monitor will resolve this. 
 * Occasionally, when you click on a web page in Microsoft Edge, the content will zoom instead of click.
 
 ### Desktop app in the Windows Mixed Reality home
