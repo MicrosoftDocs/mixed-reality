@@ -33,7 +33,7 @@ We've created a sample environment that shows off some of the creative possibili
    ![Fantasy Island sample environment](images/FantasyLand.jpg)<br>
    *Fantasy Island sample environment*<br>
 
-2. Run the Fantasy_Island.exe file you just downloaded.
+2. Run the **Fantasy_Island.exe** file you just downloaded.
 
 >[!NOTE]
 >When attempting to run a .exe file downloaded from the web (like this one), you may encounter a "Windows protected your PC" pop-up. To run the .exe from this pop-up, select **More info** and then **Run anyway**.
@@ -86,7 +86,7 @@ Flag|Recommended Value(s)|Description
 
 For example:
 
-```note
+```cmd
 WindowsMRAssetConverter FileToConvert.gltf -max-texture-size 1024 -min-version 1803
 ```
 
