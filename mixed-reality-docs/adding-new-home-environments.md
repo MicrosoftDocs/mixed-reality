@@ -13,7 +13,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, C
 
 Starting with the [Windows 10 April 2018 update](#release-notes.md), we've enabled an experimental feature that lets you add custom environments to your **Places** picker to use as the [Windows Mixed Reality home](#navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality has two default environments, Cliff House and Skyloft, that you can choose as your home. Creating custom environments allows you to expand that list with your own creations. We are making this available in an early state to evaluate interest from creators and developers, see what kinds of worlds you create, and understand how you work with different authoring tools.
 
-When using a custom environment you'll notice that teleporting, interacting with apps, and placing holograms works just like it does in the Cliff House and Skyloft. You can browse the web in a fantasy landscape or fill a futuristic city with holograms from - the possibilities are endless!
+When using a custom environment you'll notice that teleporting, interacting with apps, and placing holograms works just like it does in the Cliff House and Skyloft. You can browse the web in a fantasy landscape or fill a futuristic city with holograms - the possibilities are endless!
 
 ## Device support
 
