@@ -61,6 +61,8 @@ While a spatial anchor is active, the system will prioritize keeping around the 
 This is especially important for anchors you have persisted to the spatial anchor store. The sensor data behind these anchors will be kept around permanently to allow your app to find that anchor in future app sessions, which will reduce the space available to track other anchors. Persist only those anchors that you need to find again in future sessions and remove them from the store when they are no longer meaningful to the user.
 
 ## See also
+* [Persistence in Unity](persistence-in-unity.md)
+* [Spatial anchors in DirectX](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [Coordinate systems](coordinate-systems.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 * [Case study - Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)

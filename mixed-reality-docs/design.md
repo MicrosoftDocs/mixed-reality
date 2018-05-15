@@ -9,7 +9,9 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns, controls, sample apps, Mixed Reality Toolkit, MRTK
 ---
 
-# Design guidance overview
+# Design for mixed reality
+
+![Design for mixed reality](images/Bicycle-Leschi10.gif)
 
 This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets). So, consider this work as a set of topics for ‘how to design for Windows head-mounted displays’.
 
@@ -22,7 +24,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/GettingStartedIcon.jpg" alt="Getting started icon">
+                            <img src="images/GetStartedIcon.png" alt="Getting started icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -53,7 +55,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/InteractionDesignIcon.jpg" alt="Interaction design icon">
+                            <img src="images/Interaction_Icon_120x130.png" alt="Interaction design icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -84,7 +86,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/StyleIcon.jpg" alt="Style icon">
+                            <img src="images/Style_Icon_120x130.png" alt="Style icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -112,7 +114,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/AppPatternsIcon.jpg" alt="App patterns icon">
+                            <img src="images/App_patterns_Icon_120x130.png" alt="App patterns icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -140,7 +142,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/ControlsIcon.jpg" alt="Controls icon">
+                            <img src="images/Controls_Icon_120x130.png" alt="Controls icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -167,69 +169,6 @@ This guidance is authored by Microsoft designers, developers, program managers, 
     </li>    
 </ul>
 
-## Resources
-
-<ul class="panelContent cardsF">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/DesignToolsIcon.jpg" alt="Design tools icon">
-                        </div>
-                    </div>                    <div class="cardText">
-                        <h3>Design tools</h3>
-                        <p>
-                            <a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md">HoloSketch</a>
-                        </p>
-			 <p>
-                            <a href="3d-app-launcher-design-guidance.md">3D app launcher design guidance</a>	 
-                        </p>
-			<p>
-			  <a href="asset-creation-process.md">Asset creation process</a>
-			</p>
-                        <p>
-                            <a href="https://www.microsoft.com/en-us/design/inclusive/">Inclusive design at Microsoft</a>
-                        </p>
-                        <p>
-                            <a href="http://fluent.microsoft.com/">Fluent Design System</a>
-                        </p>
-			 <p>
-                            <a href="https://developer.microsoft.com/en-us/windows/apps/design/">UWP app design and UI</a>
-                        </p>
-			 <p>
-                            <a href="https://www.simplygon.com/">3D design tools from Simplygon</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-        <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/MRTKIcon.jpg" alt="MRTK icon">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Mixed Reality Toolkit (on GitHub)</h3>
-                        <p>
-                            <a href="https://github.com/Microsoft/MixedRealityToolkit">MixedRealityToolkit</a>
-                        </p>
-                        <p>
-                            <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity">MixedRealityToolkit-Unity</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
-
 
 ## Sample apps
 
@@ -237,63 +176,208 @@ Build great experiences from samples designed and created by our team.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                                    <a href="periodic-table-of-the-elements.md" title="Periodic Table of the Elements" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/periodictableofelementsapp-tile.jpg" alt="Periodic Table of the Elements< icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Periodic Table of the Elements</h3>
-                                                    <p>Learn how to lay out an array of objects in 3D space with various surface types using an Object collection.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-				</a>	    
-                            </li>
-                            <li>
-                                <a href="lunar-module.md" title="Lunar Module" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/lunar-module-tile.png" alt="Lunar Module icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Lunar Module</h3>
-                                                    <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-				</a>
-                            </li>
-                            <li>
-                                  <a href="galaxy-explorer.md" title="Galaxy Explorer" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/galaxyexplorer-tile.jpg" alt="Galaxy Explorer icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Galaxy Explorer</h3>
-                                                    <p>The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-</ul>    
-    
-    
+    <li>
+        <a href="periodic-table-of-the-elements.md" title="Periodic Table of the Elements" data-linktype="absolute-path">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="images/periodictableofelementsapp-tile.jpg" alt="Periodic Table of the Elements< icon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Periodic Table of the Elements</h3>
+                            <p>Learn how to lay out an array of objects in 3D space with various surface types using an Object collection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</a>	    
+    </li>
+    <li>
+        <a href="lunar-module.md" title="Lunar Module" data-linktype="absolute-path">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="images/lunar-module-tile.png" alt="Lunar Module icon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Lunar Module</h3>
+                            <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</a>
+    </li>
+    <li>
+        <a href="galaxy-explorer.md" title="Galaxy Explorer" data-linktype="absolute-path">
+            <div class="cardSize">
+                <div class="cardPadding">
+                    <div class="card">
+                        <div class="cardImageOuter">
+                            <div class="cardImage">
+                                <img src="images/galaxyexplorer-tile.jpg" alt="Galaxy Explorer icon">
+                            </div>
+                        </div>
+                        <div class="cardText">
+                            <h3>Galaxy Explorer</h3>
+                            <p>The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
+
+
+
+## Design tools
+
+
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
+    <li>
+	<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit - Unity" data-linktype="absolute-path">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="images/MRTKandUnity.png" alt="Mixed Reality Toolkit - Unity">
+                        </div>
+                    </div>                    
+			<div class="cardText">
+                        <h3>Mixed Reality Toolkit - Unity</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </a>	
+    </li>
+    <li>
+	<a href="https://github.com/Microsoft/MixedRealityToolkit" title="Mixed Reality Toolkit" data-linktype="absolute-path">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="images/MRTK.png" alt="Mixed Reality Toolkit">
+                        </div>
+                    </div>                    
+			<div class="cardText">
+                        <h3>Mixed Reality Toolkit</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </a>	
+    </li>	
+        <li>
+	<a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md" title="HoloSketch" data-linktype="absolute-path">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="images/HoloSketch.png" alt="HoloSketch">
+                        </div>
+                    </div>                    
+			<div class="cardText">
+                        <h3>HoloSketch</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </a>	
+    </li>	
+            <li>
+	<a href="https://www.simplygon.com" title="Simplygon" data-linktype="absolute-path">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="images/Simplygon.png" alt="Simplygon">
+                        </div>
+                    </div>                    
+			<div class="cardText">
+                        <h3>Simplygon</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </a>	
+    </li>
+</ul>
+
+
+## General design resources
+
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
+    <li>
+	<a href="http://fluent.microsoft.com" title="Fluent Design System" data-linktype="absolute-path">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="images/Fluent.png" alt="Fluent Design System">
+                        </div>
+                    </div>                    
+			<div class="cardText">
+                        <h3>Fluent Design System</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </a>	
+    </li>
+    <li>
+	<a href="https://www.microsoft.com/en-us/design/inclusive" title="Inclusive design at Microsoft" data-linktype="absolute-path">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="images/Inclusive.png" alt="Inclusive design at Microsoft">
+                        </div>
+                    </div>                    
+			<div class="cardText">
+                        <h3>Inclusive design at Microsoft</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </a>	
+    </li>	
+        <li>
+	<a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md" title="Universal Windows Platform (UWP) app design" data-linktype="absolute-path">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="images/UWP.png" alt="Universal Windows Platform (UWP) app design">
+                        </div>
+                    </div>                    
+			<div class="cardText">
+                        <h3>Universal Windows Platform (UWP) app design</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </a>	
+    </li>	
+</ul>

@@ -21,7 +21,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens, unity, directx
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/GettingStarted.jpg" alt="Get started icon">
+                            <img src="images/GetStartedIcon.png" alt="Get started icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -46,7 +46,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens, unity, directx
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/UnityIcon.jpg" alt="Unity icon">
+                            <img src="images/Unity_Icon_120x130.png" alt="Unity icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -71,7 +71,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens, unity, directx
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/DirectXIcon.jpg" alt="DirectX icon">
+                            <img src="images/DirectX_Icon_120x130.png" alt="DirectX icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -96,7 +96,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens, unity, directx
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/OpenSourceIcon.jpg" alt="Open source projects icon">
+                            <img src="images/OpenSource_Icon_120x130.png" alt="Open source projects icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -121,7 +121,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens, unity, directx
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/HoloLensIcon.jpg" alt="Unique to HoloLens icon">
+                            <img src="images/HoloLens_Icon_120x130.png" alt="Unique to HoloLens icon">
                         </div>
                     </div>
                     <div class="cardText">
@@ -146,7 +146,7 @@ keywords: Windows Mixed Reality, develop, development, HoloLens, unity, directx
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/ImmersiveHeadsets.jpg" alt="Unique to immersive headsets icon">
+                            <img src="images/Headset_Icon_120x130.png" alt="Unique to immersive headsets icon">
                         </div>
                     </div>
                     <div class="cardText">

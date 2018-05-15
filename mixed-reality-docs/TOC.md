@@ -81,15 +81,17 @@
 #### [Object collection](object-collection.md)
 #### [Progress](progress.md)
 #### [App bar and bounding box](app-bar-and-bounding-box.md)
+### Designing for the mixed reality home
+#### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
+#### [Asset creation process](asset-creation-process.md)
+#### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+#### [Add custom home environments]
 ### Sample apps
 #### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 #### [Lunar Module](Lunar-Module.md)
 #### [Galaxy Explorer](Galaxy-Explorer.md)
 ### Design tools
-#### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
-#### [Asset creation process](asset-creation-process.md)
 #### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
-#### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 
 ## [Development](development.md)
 ### [Development overview](development-overview.md)
@@ -161,6 +163,7 @@
 #### [Perception simulation](perception-simulation.md)
 ### Finishing your app
 #### [Implement 3D app launchers](implementing-3d-app-launchers.md)
+#### [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 #### [In-app purchases](in-app-purchases.md)
 #### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 ### Remote tools
@@ -171,6 +174,7 @@
 #### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 #### [Locatable camera](locatable-camera.md)
 #### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+#### [HoloLens Research mode](research-mode.md)
 
 ## [Open source projects](open-source-projects.md)
 ### [Galaxy Explorer](galaxy-explorer.md)
@@ -198,7 +202,7 @@
 ### [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 
 ## Resources
-### [HoloLens RS4 Preview](hololens-rs4-preview.md)
+### [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ### [Mixed Reality Partner Program](mixed-reality-partner-program.md)
 ### [App quality criteria](app-quality-criteria.md)
 ### [Spectator view](spectator-view.md)
@@ -206,7 +210,9 @@
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 
 ## Mixed reality release notes
+### [HoloLens RS4 Preview](hololens-rs4-preview.md)
 ### [Current release notes](release-notes.md)
+### [Release notes - October 2017](release-notes-october-2017.md)
 ### [Release notes - August 2016](release-notes-august-2016.md)
 ### [Release notes - May 2016](release-notes-may-2016.md)
 ### [Release notes - March 2016](release-notes-march-2016.md)

@@ -27,7 +27,7 @@ You can download the preview setup package from [https://aka.ms/hololenspreviewd
 
 | File | Description |
 |------|------|
-| rs4_release_svc_analog.retail.10.0.17123.1004.FFU | The HoloLens RS4 Preview image that you will flash to your device using the Windows Device Recovery Tool. |
+| rs4_release_svc_analog.retail.10.0.17134.1004.FFU | The HoloLens RS4 Preview image that you will flash to your device using the Windows Device Recovery Tool. |
 | HoloLens RS4 Preview – EULA | HoloLens RS4 Preview - Evaluation Use Terms (End User License Agreement) |
 
 ## Installing the preview
@@ -163,7 +163,7 @@ Check for HoloLens RS4 Preview updates with **Windows Update**:
 </td>
   </tr>
   <tr>
-    <td>Research mode</td><td>Allows developers to access key HoloLens sensors when building academic and industrial applications to test new ideas in the fields of computer vision and robotics:<ul><li>The four <b>environment tracking cameras</b> used by the system for spatial map building and head-tracking.</li><li>Two versions of the <b>depth mapping camera data</b> - one for high-frequency (30 fps) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1 fps) far-depth sensing, currently used by spatial mapping.</li><li>Two versions of an <b>IR-reflectivity stream</b>, used to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.</li></ul></td><td>First, ensure "Use developer features" and "Enable Device Portal" are set to <b>On</b> in <b>Settings > Update & Security > For developers</b> on HoloLens. Next, on a desktop PC, use <a href="using-the-windows-device-portal.md">Device Portal</a> to access your HoloLens through a web browser, expand <b>System</b>, select <b>Research mode</b>, and check the box next to "Allow access to sensor streams." Reboot your HoloLens for the settings to take effect.<br><br><b>Note:</b> Apps built using Research mode cannot be submitted to the Microsoft Store.<br><br><b>Coming soon:</b> sample applications and documentation to leverage sensor data will be posted in April 2018.</td>
+      <td><a href="research-mode.md">Research mode</a></td><td>Allows developers to access key HoloLens sensors when building academic and industrial applications to test new ideas in the fields of computer vision and robotics:<ul><li>The four <b>environment tracking cameras</b> used by the system for spatial map building and head-tracking.</li><li>Two versions of the <b>depth mapping camera data</b> - one for high-frequency (30 fps) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1 fps) far-depth sensing, currently used by spatial mapping.</li><li>Two versions of an <b>IR-reflectivity stream</b>, used to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.</li></ul></td><td>First, ensure "Use developer features" and "Enable Device Portal" are set to <b>On</b> in <b>Settings > Update & Security > For developers</b> on HoloLens. Next, on a desktop PC, use <a href="using-the-windows-device-portal.md">Device Portal</a> to access your HoloLens through a web browser, expand <b>System</b>, select <b>Research mode</b>, and check the box next to "Allow access to sensor streams." Reboot your HoloLens for the settings to take effect.<br><br><b>Note:</b> Apps built using Research mode cannot be submitted to the Microsoft Store.<br><br><b>Learn more:</b> <a href="https://github.com/Microsoft/HoloLensForCV">sample applications</a> and <a href="research-mode.md">documentation</a> are now available.</td>
   </tr>
 </table>
 
@@ -230,6 +230,52 @@ Check for HoloLens RS4 Preview updates with **Windows Update**:
 </table>
 
 ## Update history
+
+### Update 6 - Build 17134.1011
+
+*Released May 9, 2018*
+
+This build is delivered over the air (OTA) through Windows Update after you've manually installed the HoloLens RS4 Preview using the instructions at the top of this page.
+
+**General changes, improvements, and fixes:**
+
+Bug fixes and fine-tuning.
+
+### Update 5 - Build 17134.1008
+
+*Released May 2, 2018*
+
+This build is delivered over the air (OTA) through Windows Update after you've manually installed the HoloLens RS4 Preview using the instructions at the top of this page.
+
+**General changes, improvements, and fixes:**
+
+Developer experience improvements (APIs and emulator)
+
+### Update 4 - Build 17134.1004
+
+*Released April 25, 2018*
+
+This build is delivered over the air (OTA) through Windows Update to devices that already have the HoloLens RS4 Preview, or can be manually installed using the HoloLens RS4 Preview package at the top of the page.
+
+**General changes, improvements, and fixes:**
+
+   * App launch times.
+   * Animated 3D app launchers.
+   * Device management tool.
+
+### Update 3 - Build 17134.1000
+
+*Released April 18, 2018*
+
+This build is delivered over the air (OTA) through Windows Update after you've manually installed the HoloLens RS4 Preview using the instructions at the top of this page.
+
+**General changes, improvements, and fixes:**
+
+   * Reliability issues for exclusive apps.
+   * Interactions while moving slates and blooming.
+   * Cortana/Skype integration.
+   * Speech in OOBE stability.
+   * UWP app reliability with mouse/gamepad integration.
 
 ### Update 2 - Build 17133.1009
 
