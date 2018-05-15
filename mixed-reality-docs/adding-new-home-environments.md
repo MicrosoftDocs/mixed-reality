@@ -9,7 +9,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, C
 # Adding custom home environments
 
 >[!NOTE]
->This is an experimental feature. Give it a try and have fun with it, but don't be surprised if everything doesn't quite work as expected. We're evaluating the viability of this feature and interest in using it, so please **give us feedback** as you find bugs and tell us about your experience in the **developer forums.**
+>This is an experimental feature. Give it a try and have fun with it, but don't be surprised if everything doesn't quite work as expected. We're evaluating the viability of this feature and interest in using it, so please tell us about your experience (and any bugs you've found) in the **developer forums.**
 
 Starting with the [Windows 10 April 2018 update](#release-notes.md), we've enabled an experimental feature that lets you add custom environments to your **Places** picker to use as the [Windows Mixed Reality home](#navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality has two default environments, Cliff House and Skyloft, that you can choose as your home. Creating custom environments allows you to expand that list with your own creations. We are making this available in an early state to evaluate interest from creators and developers, see what kinds of worlds you create, and understand how you work with different authoring tools.
 
@@ -28,14 +28,15 @@ When using a custom environment you'll notice that teleporting, interacting with
 ## Trying a sample environment
 
 We've created a sample environment that shows off some of the creative possibilities of custom home environments. Follow these steps to try it out:
-1. [Download our sample Fantasy Island environment](http://download.microsoft.com/download/B/2/5/B25C1AEF-40CD-4B03-A596-4BCA3D33035A/Fantasy_Island.exe) (Link points to self extracting executable)
-![Fantasy Island Sample Environment](images/FantasyLand.jpg)
+1. [Download our sample Fantasy Island environment](http://download.microsoft.com/download/B/2/5/B25C1AEF-40CD-4B03-A596-4BCA3D33035A/Fantasy_Island.exe) (link points to self extracting executable).
+   ![Fantasy Island sample environment](images/FantasyLand.jpg)<br>
+   *Fantasy Island sample environment*<br>
 2. Open **File Explorer** and navigate to the environments folder by pasting the following in the address bar: `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState`.
 3. Copy the sample environment that you downloaded into this folder.
 4. Restart **Mixed Reality Portal**. This will refresh the list of environments in the **Places** picker.
-5. Put on your headset. Once you're in the home, open the Start menu using the Windows button your controller.
-6. Select the **Home** icon above the list of pinned apps to go to the places picker
-7. You will find the "Fantasy Island" environment that you downloaded in your list of places. **Select** it to enter your new custom Mixed Reality home!
+5. Put on your headset. Once you're in the home, open the **Start menu** using the Windows button your controller.
+6. Select the **Places** icon above the list of pinned apps to choose a home environment.
+7. You will find the "Fantasy Island" environment that you downloaded in your list of places. **Select** "Fantasy Island" to enter your new custom home environment!
 
 ## Creating your own custom environment
 
@@ -43,7 +44,7 @@ In addition to using our sample environments, you can export your own custom env
 
 ### Modeling guidelines
 
-When modeling your environment keep the following recommendations in mind. This will help ensure the user spawns in the correct orientation in a believably-sized world:
+When modeling your environment, keep the following recommendations in mind. This will help ensure the user spawns in the correct orientation in a believably-sized world:
 
 1. Users will spawn at 0,0,0 so center your desired spawn location around the origin.
 2. Working Units should be set to meters so that assets can be authored at world scale.
@@ -88,17 +89,17 @@ Once you have your final .glb environment you're ready to test it out in the hea
 
 ## Feedback
 
-While we're evaluating this experimental feature, we're interested to learn how you're using custom environments. Please share any and all feedback for creating and using these environments in the Windows Feedback Hub. The Windows Feedback Hub is preinstalled on Windows, simply search "Feedback Hub" with the Windows search bar and open the first result. When submitting feedback include "Custom Environments" in the title so that we can quickly find your suggestions. **MATT UPDATE THIS**
+While we're evaluating this experimental feature, we're interested in learning how you're using custom environments. Please share any and all feedback for creating and using these environments in the Windows Feedback Hub. The Windows Feedback Hub is preinstalled on Windows, simply search "Feedback Hub" with the Windows search bar and open the first result. When submitting feedback include "Custom Environments" in the title so that we can quickly find your suggestions. **MATT UPDATE THIS**
 
 ## Troubleshooting and tips
 
 ### How do I change the name of the environment?
 
-The file name in the environments folder will be used in the places picker. To change the name of your environment simply rename the environment file name, and then restart Mixed Reality Portal.
+The file name in the environments folder will be used in the Places picker. To change the name of your environment simply rename the environment file name, and then restart Mixed Reality Portal.
 
-### How do I remove custom environments from my places picker?
+### How do I remove custom environments from my Places picker?
 
-To remove a custom environment, simply open up the environments app folder on your PC and delete the environment. Once you restart the Mixed Reality portal this environment will no longer appear in the places picker. 
+To remove a custom environment, open the environments folder on your PC (`%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState`) and delete the environment. Once you restart Mixed Reality Portal, this environment will no longer appear in the Places picker. 
 
 ### How do I default to my favorite custom environment?
 
@@ -106,7 +107,7 @@ You can't currently change the default environment. Each time you restart Mixed 
 
 ### I spawn into a blank space
 
-Windows Mixed Reality [doesn't support environments that exceed 256 mb](#environment-limits). When an environment exceeds this limit you will land in the empty sky box with no model.
+Windows Mixed Reality [doesn't support environments that exceed 256 mb](#environment-limits). When an environment exceeds this limit, you will land in the empty sky box with no model.
 
 ### It takes a long time to load my environment
 
@@ -122,8 +123,9 @@ The default spawn location is located at 0,0,0 in the environment. Its not curre
 
 ### The audio doesn't sound correct in the environment
 
-When you create your custom environment, it will be using anacoustics rendering simulation that does not match the physical space you have created. Sound may come from the wrong directions and may sound muffled. 
+When you create your custom environment, it will be using an acoustics rendering simulation that does not match the physical space you have created. Sound may come from the wrong directions and may sound muffled. 
 
 ## See also
-* [Navigating the Windows Mixed Reality Home](#navigating-the-windows-mixed-reality-home)
+* [Navigating the Windows Mixed Reality Home](#navigating-the-windows-mixed-reality-home.md)
+* [Windows Mixed Reality Asset Converter (on GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
 
