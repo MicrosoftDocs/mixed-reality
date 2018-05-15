@@ -1,11 +1,11 @@
 ---
 title: Typography
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: Text is an important element for delivering information in your app experience.
+author: cre8ivepark
+ms.author: dongpark
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, design, style, font, typography, ui, ux
 ---
 
 
@@ -14,7 +14,8 @@ keywords:
 
 Text is an important element for delivering information in your app experience. Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
 
-![Typography example in HoloLens](images/640px-typography-hero2.jpg)
+![Typography example in HoloLens](images/640px-typography-hero2.jpg)<br>
+*Typography example in HoloLens*
 
 When we talk about type in 3D, we tend to think extruded, volumetric 3D text. Except for some logotype designs and a few other limited applications, extruded text tends to degrade the readability of the text. Even though we are designing experiences for 3D, we use 2D for the type because it is more legible and easier to read.
 
@@ -28,7 +29,8 @@ Typographic rules in mixed reality are no different from anywhere else. Text in 
 
 Build contrast and hierarchy by using different type sizes and weights. Defining a type ramp and following it throughout the app experience will provide a great user experience with consistent information hierarchy.
 
-![Type ramp examples](images/typography-ramp-1000px.jpg)
+![Type ramp examples](images/typography-ramp-1000px.jpg)<br>
+*Type ramp examples*
 
 ### Limit your fonts
 
@@ -44,13 +46,22 @@ Avoid using light or semilight font weights for type sizes under 42pt since thin
 
 In HoloLens, since the holograms are constructed with an additive light system, white text is highly legible. You can find examples of white text on the Start menu and the App bar. Even though white text works well without a back plate on HoloLens, a complex physical background could make the type difficult to read. To improve the user's focus and minimize the distraction from a physical background, we recommend using white text on a dark or colored back plate.
 
+<br>
+
+
 ![We recommend using white text on a dark or colored back plate.](images/typography-whiteonblack2-1000px.jpg)
 
 We recommend using white text on a dark or colored back plate.
 
+<br>
+
+
 ![Black text examples](images/640px-typography-textcolors.jpg)
 
 To use dark text, you should use a bright back plate to make it readable. In additive color systems, black is displayed as transparent. This means you will not be able to see the black text without a colored back plate.
+
+<br>
+
 
 ![Black text examples](images/640px-typography-blackonwhite.jpg)
 

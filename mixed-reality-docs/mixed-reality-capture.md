@@ -1,11 +1,11 @@
 ---
 title: Mixed reality capture
-description: 
-author: 
+description: Information on using mixed reality capture.
+author: wguyman
 ms.author: wguyman
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: mrc, mixed reality capture, photos, video, camera, capture, usage
 ---
 
 
@@ -23,6 +23,8 @@ There are four ways to initiate a mixed reality capture:
 2. On the Start Menu, select either *Photo* or *Video*. Use [air-tap](gestures.md#air-tap) to begin the capture. When finished, bloom to exit the MRC mode.
 3. From the [Windows Device Portal](using-the-windows-device-portal.md), a user can initiate a mixed reality capture.
 4. Press both the volume up and volume down buttons simultaneously to take a picture, regardless of the app currently running.
+
+**Click the camera icon at the bottom of the start menu**
 
 ![Click the camera icon at the bottom of the start menu](images/cameraiconinpins-300px.png)
 

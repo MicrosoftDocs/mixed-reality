@@ -1,11 +1,11 @@
 ---
 title: Gestures
-description: 
-author: 
+description: Hand gestures allow users to take action in mixed reality. 
+author: rwinj
 ms.author: randyw
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, Gestures, interaction, design
 ---
 
 
@@ -13,6 +13,8 @@ keywords:
 # Gestures
 
 Hand gestures allow users take action in mixed reality. Interaction is built on **gaze** to target and **gesture** or **voice** to act upon whatever element has been targeted. Hand gestures do not provide a precise location in space, but the simplicity of putting on a HoloLens and immediately interacting with content allows users to get to work without any other accessories.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/kwn9Lh0E_vU]
 
@@ -26,8 +28,6 @@ Hand gestures allow users take action in mixed reality. Interaction is built on 
 </tr>
 </table>
 
-
-
 ## Gaze-and-commit
 
 To take actions, hand gestures use [Gaze](gaze.md) as the targeting mechanism. The combination of **Gaze** and the **Air tap** gesture results in a **gaze-and-commit** interaction. An alternative to gaze-and-commit is **point-and-commit**, enabled by [motion controllers](motion-controllers.md). Apps that run on HoloLens only need to support gaze-and-commit since HoloLens does not support motion controllers. Apps that run on both HoloLens and immersive headsets should support both gaze-driven and pointing-driven interactions, to give users choice in what input device they use.
@@ -40,15 +40,13 @@ HoloLens currently recognizes two core component gestures - **Air tap** and **Bl
 
 Air tap is a tapping gesture with the hand held upright, similar to a mouse click or select. This is used in most HoloLens experiences for the equivalent of a "click" on a UI element after targeting it with [Gaze](gaze.md). It is a universal action that you learn once and then apply across all your apps. Other ways to perform select are by pressing the single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker) or by speaking the voice command "Select".
 
-![Ready state for hand gestures on HoloLens](images/image9.png)
-
-Ready state for Air tap on HoloLens.
+![Ready state for hand gestures on HoloLens](images/image9.png)<br>
+*Ready state for Air tap on HoloLens.*
 
 Air tap is a discrete gesture. A selection is either completed or it is not, an action is or is not taken within an experience. It is possible, though not recommended without some specific purpose, to create other discrete gestures from combinations of the main components (e.g. a double-tap gesture to mean something different than a single-tap).
 
-![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)
-
-How to perform an Air tap: Raise your index finger to the ready position, press your finger down to tap or select and then back up to release.
+![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
+*How to perform an Air tap: Raise your index finger to the ready position, press your finger down to tap or select and then back up to release.*
 
 ### Bloom
 
@@ -58,9 +56,8 @@ Bloom is the "home" gesture and is reserved for that alone. It is a special syst
 
 To do the bloom gesture on HoloLens, hold out your hand, palm up, with your fingertips together. Then open your hand. Note, you can also always return to Start by saying "Hey Cortana, Go Home". Apps cannot react specifically to a home action, as these are handled by the system.
 
-![Bloom gesture](images/bloom-giphy.gif)
-
-How to perform the bloom gesture on HoloLens.
+![Bloom gesture](images/bloom-giphy.gif)<br>
+*How to perform the bloom gesture on HoloLens.*
 
 ## Composite gestures
 

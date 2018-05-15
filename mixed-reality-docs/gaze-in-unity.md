@@ -1,11 +1,11 @@
 ---
 title: Gaze in Unity
-description: 
-author: 
+description: Gaze is a primary way for users to target the holograms your app creates in mixed reality.
+author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: gaze, unity, hologram, mixed reality
 ---
 
 
@@ -22,7 +22,7 @@ Calling [Physics.RayCast](http://docs.unity3d.com/ScriptReference/Physics.Raycas
 
 ### Example: Implement Gaze
 
-```
+```cs
 void Update()
 {
        RaycastHit hitInfo;

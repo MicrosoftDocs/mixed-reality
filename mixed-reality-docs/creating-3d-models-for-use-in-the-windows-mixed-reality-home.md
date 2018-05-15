@@ -1,20 +1,33 @@
 ---
-title: Creating 3D models for use in the Windows Mixed Reality home
-description: 
-author: 
+title: Create 3D models for use in the home
+description: Asset requirements and authoring guidance for 3D models to be used in the Windows Mixed Reality home on both HoloLens and immersive (VR) headsets.
+author: thmignon
 ms.author: thmignon
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: 3D, modeling, modeling guidance, asset requirements, authoring guidelines, launcher, 3D launcher, texture, materials, complexity, triangles, mesh, polygons, polycount, limits
 ---
 
 
+# Create 3D models for use in the home
 
-# Creating 3D models for use in the Windows Mixed Reality home
+The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. You can design your application for Windows Mixed Reality headsets to leverage a [3D model as an app launcher](implementing-3d-app-launchers.md) and to allow [3D deep links to be placed into the Windows Mixed Reality home](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles) from within your app. This article outlines the guidelines for creating 3D models compatible with the Windows Mixed Reality home.
 
-The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. You can design your application for Windows Mixed Reality **immersive headsets** to leverage a [3D model as an app launcher](implementing-3d-app-launchers.md) and to allow [3D deep links to be placed into the Windows Mixed Reality home from within your app](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md). This article outlines the guidelines for creating 3D models compatible with the Windows Mixed Reality home.
+## Asset requirements overview
+When creating 3D models for Windows Mixed Reality there are some requirements that all assets must meet: 
+1. [Exporting](#exporting-models) - Assets must be delivered in the .glb file format (binary glTF)
+2. [Modeling](#modeling-guidelines) - Assets must be less than 10k triangles, have no more than 64 nodes and 32 submeshes per LOD
+3. [Materials](#material-guidelines) - Textures cannot be larger than 4096 x 4096 and the smallest mip map should be no larger than 4 on either dimension
+4. [Animation](#animation-guidelines) - Animations cannot be longer than 20 minutes at 30 FPS (36,000 keyframes) and must contain <= 8192 morph target vertices
+5. [Optimizing](#optimizations) - Assets should be optimized using the [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases). This is **required on Windows OS Versions <= 1709** and recommended on Windows OS versions >= 1803
 
-**Note:** 3D models in the Windows Mixed Reality home are not currently available for use on HoloLens.
+The rest of this article includes a detailed overview of these requirements as well as additional guidelines to ensure your models work well with the Windows Mixed Reality home. 
+
+## Detailed guidance
+
+## Exporting models
+
+The Windows Mixed Reality home expects 3D assets to be delivered using the .glb file format with embedded images and binary data. Glb is the binary version of the glTF format which is a royalty free open standard for 3D asset delivery maintained by the Khronos group. As glTF evolves as an industry standard for interoperable 3D content so will Microsoft’s support for the format across Windows apps and experiences. If you haven't created a glTF asset before you can find a [list of supported exporters and converters](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) on the glTF working group github page.  
 
 ## Modeling guidelines
 
@@ -24,28 +37,38 @@ Windows expects assets to be generated using the following modeling guidelines t
 3. All assets should be built on the ground plane at the scene origin (0,0,0)
 4. Working Units should be set to meters and assets so that assets can be authored at world scale
 5. All meshes do not need to be combined but it is recommended if you are targeting resource constrained devices
-6. All meshes should share 1 material, with only 1 texture sheet being used for the whole asset
+6. All meshes should share 1 material, with only 1 texture set being used for the whole asset
 7. UVs must be laid out in a square arrangement in the 0-1 space. Avoid tiling textures although they are permitted.
 8. Multi-UVs are not supported
 9. Double sided materials are not supported
 
-## Triangle counts and levels of detail (LODs)
+### Triangle counts and levels of detail (LODs)
 
-The Windows Mixed Reality Home does not support models that with more than 10,000 triangles. It’s recommended that you triangulate your meshes before exporting to ensure that they do not exceed this count. Windows MR also supports geometry levels of detail (LODs) to ensure a performant and high-quality experience. Windows determines which LOD to display based on the amount of screen real estate the model is taking up. Only 3 LOD levels are supported with the following recommended triangle counts:
+The Windows Mixed Reality home does not support models with more than 10,000 triangles. It’s recommended that you triangulate your meshes before exporting to ensure that they do not exceed this count. Windows MR also supports optional geometry levels of detail (LODs) to ensure a performant and high-quality experience. [The WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases) will help you combine 3 versions of your model into a single .glb model. Windows determines which LOD to display based on the amount of screen real estate the model is taking up. Only 3 LOD levels are supported with the following recommended triangle counts:
+<br>
 
 |  LOD Level  |  Recommended Triangle Count  |  Max Triangle Count | 
-|----------|----------|----------|
+|------|------|------|
 |  LOD 0 |  10,000 |  10,000 | 
 |  LOD 1 |  5,000  |  10,000 | 
 |  LOD 2 |  2,500  |  10,000 | 
 
-## Texture resolutions and workflow
+### Node Counts and Submesh limits
+The Windows Mixed Reality home does not support models with more than 64 nodes or 32 submeshes per LOD. Nodes are a concept in the [glTF specification](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) that define the objects in the scene. Submeshes are defined in the array of [primitives](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) on the mesh in the object. 
 
-Textures should be prepared using a PBR metal roughness workflow. Begin by creating a full set of textures including Albedo, Normal, Occlusion, Metallic, and Roughness. Windows Mixed Reality supports textures with resolutions up to 4096x4096 but its recommended that you author at 512x512. Additionally textures should be authored at resolutions in multiples of 4 as this is a requirement for the compression format applied to textures in the exporting steps outlined below.
+|  Feature |  Description  |  Max Supported | Documentation |
+|------|------|------|------|
+|  Nodes |  Objects in the glTF Scene |  64 per LOD | [Here](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy)|
+|  Submeshes |  Sum of primitives on all meshes |  32 per LOD | [Here](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes)|
 
-|  Recommended Texture Size  |  Max Texture Size | 
-|----------|----------|
-|  512x512  |  4096x4096 | 
+## Material Guidelines
+
+Textures should be prepared using a PBR metal roughness workflow. Begin by creating a full set of textures including Albedo, Normal, Occlusion, Metallic, and Roughness. Windows Mixed Reality supports textures with resolutions up to 4096x4096 but its recommended that you author at 512x512. Additionally textures should be authored at resolutions in multiples of 4 as this is a requirement for the compression format applied to textures in the exporting steps outlined below. Finally, when gerating mip maps or a texture the lowest mip must be a maximum of 4x4.
+<br>
+
+|  Recommended Texture Size  |  Max Texture Size | Lowest Mip
+|----|----|----|
+|  512x512  |  4096x4096 | max 4x4|
 
 ### Albedo (base color) map
 
@@ -67,23 +90,154 @@ Value scale map depicting areas of occluded light which blocks reflections
 
 Tells the shader if something is metal or not. Raw Metal = 1.0 white Non metal = 0.0 black. There can be transitional gray values that indicate something covering the raw metal such as dirt, but in general this map should be black and white only.
 
-## Exporting assets
+## Optimizations
 
-Windows Mixed Reality relies on glTF (.glb) as the asset delivery format for 3D launchers and content. glTF is a royalty free open standard for 3D asset delivery maintained by the Khronos group. As glTF evolves as an industry standard for interoperable 3D content so will Microsoft’s support for the format across Windows apps and experiences.
+Windows Mixed Reality home offers a series of optimizations on top of the core glTF spec defined using custom extensions. These optimizations are required on Windows versions <= 1709 and recommended on newer versions of Windows. You can easily optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter available on GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). This tool will perform the correct texture packing and optimizations as specified below. For general usage we recommend using the WindowsMRAssetConverter, but if you need more control over the experience and would like to build your own optmization pipeline then you can refer to the detailed specification below.  
 
-### Creating glTF models
+### Materials
 
-The first step in exporting assets for Windows Mixed Reality endpoints is generating a glTF 2.0 model. The glTF working group maintains a [list of supported exporters and converters](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) to create a glTF 2.0 model. To get started use one of the programs listed on this page to create and export a glTF 2.0 model, or convert an existing model using one of the supported converters.
+To improve asset loading time in Mixed Reality environments Windows MR supports rendering compressed DDS textures packed according to the texture packing scheme defined in this section. DDS textures are referenced using the [MSFT_texture_dds extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds). Compressing textures is highly recommended. 
 
-### Converting glTF Models for the Mixed Reality Home
+#### HoloLens
 
-The Windows Mixed Reality home requires a number of optimizations to be performed on the glTF before adding it to your project (see required] and optional optimizations below). To make this process easier we have created the Windows Mixed Reality Asset Converter which is [available on Github](https://github.com/Microsoft/glTF-Toolkit/releases). This tool uses a set of utilities available in the Microsoft glTF toolkit to convert any standard 2.0 glTF or .glb into a Windows Mixed Reality compatible .glb. This is currently a required step for all assets used in Windows Mixed Reality, and we highly recommend using the converter to make generating your mixed reality home assets easy. For more information about using the tool please refer to the documentation also [available on GitHub](https://github.com/Microsoft/glTF-Toolkit/blob/master/WindowsMRAssetConverter/README.md).
+HoloLens-based mixed reality experiences expect textures to be packed using a 2-texture setup using the following packing specification:
+<br>
 
-### Binary glTF format
+|  glTF Property  |  Texture  |  Packing Scheme | 
+|----------|----------|----------|
+|  pbrMetallicRoughness  |  baseColorTexture  |  Red (R), Green (G), Blue (B) | 
+|  [MSFT_packing_normalRoughnessMetallic](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)  |  normalRoughnessMetallicTexture  |  Normal (RG), Roughness (B), Metallic (A) | 
 
-The [binary glTF format](https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#glb-file-format-specification) packages the glTF file into a single binary package. Windows Mixed Reality Home expects assets to be delivered using the binary glTF format with embedded images and binary data. Assets packed using the binary glTF format use the .glb file extension. Standard glTF models are not supported.
 
-### glTF Implementation notes
+When compressing the DDS textures the following compression is expected on each map:
+<br>
+
+|  Texture  |  Expected Compression | 
+|------|------|
+|  baseColorTexture, normalRoughnessMetallicTexture |  BC7 | 
+
+#### Immersive (VR) headsets
+
+PC-based Windows Mixed Reality experiences for immersive (VR) headsets expect textures to be packed using a 3-texture setup using the following packing specification:
+
+##### Windows OS >= 1803
+
+<br>
+
+|  glTF Property  |  Texture  |  Packing Scheme | 
+|----------|----------|----------|
+|  pbrMetallicRoughness  |  baseColorTexture  |  Red (R), Green (G), Blue (B) | 
+|  [MSFT_packing_occlusionRoughnessMetallic](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_occlusionRoughnessMetallic/README.md)  |  occlusionRoughnessMetallicTexture  |  Occlusion (R), Roughness (G), Metallic (B) | 
+|  [MSFT_packing_occlusionRoughnessMetallic](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_occlusionRoughnessMetallic/README.md)  |  normalTexture  |  Normal (RG) | 
+
+When compressing the DDS textures the following compression is expected on each map:
+<br>
+
+|  Texture  |  Expected Compression | 
+|------|------|
+|  normalTexture  |  BC5 | 
+|  baseColorTexture, occlusionRoughnessMetallicTexture  |  BC7 | 
+
+##### Windows OS <= 1709
+<br>
+
+|  glTF Property  |  Texture  |  Packing Scheme | 
+|----------|----------|----------|
+|  pbrMetallicRoughness  |  baseColorTexture  |  Red (R), Green (G), Blue (B) | 
+|  [MSFT_packing_occlusionRoughnessMetallic](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_occlusionRoughnessMetallic/README.md)  |  roughnessMetallicOcclusionTexture  |  Roughness (R), Metallic (G), Occlusion (B) | 
+|  [MSFT_packing_occlusionRoughnessMetallic](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_occlusionRoughnessMetallic/README.md)  |  normalTexture  |  Normal (RG) | 
+
+When compressing the DDS textures the following compression is expected on each map:
+<br>
+
+|  Texture  |  Expected Compression | 
+|------|------|
+|  normalTexture  |  BC5 | 
+|  baseColorTexture, roughnessMetallicOcclusionTexture | BC7 |
+
+### Adding mesh LODs
+
+Windows MR uses geometry node LODs to render 3D models in different levels of detail depending on screen coverage. While this feature is technically not required, it's strongly recommended for all assets. Currently Windows supports 3 levels of detail. The default LOD is 0, which represents the highest quality. Other LODs are numbered sequentially, e.g. 1, 2 and get progressively lower in quality. The [Windows Mixed Reality Asset Converter](https://github.com/Microsoft/glTF-Toolkit/releases) supports generating assets that meet this LOD specification by accepting multiple glTF models and merging them into a single asset with valid LOD levels. The following table outlines the expected LOD ordering and triangle targets:
+<br>
+
+|  LOD Level  |  Recommended Triangle Count  |  Max Triangle Count | 
+|-------|-------|-------|
+|  LOD 0 |  10,000 |  10,000 | 
+|  LOD 1 |  5,000  |  10,000 | 
+|  LOD 2 |  2,500  |  10,000 | 
+
+When using LODs always specify 3 LOD levels. Missing LODs will cause the model to not render unexpectedly as the LOD system switches to the missing LOD level. glTF 2.0 does not currently support LODs as part of the core spec. LODs should therefore be defined using the [MSFT_LOD extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
+
+### Screen coverage
+
+LODs are displayed in Windows Mixed Reality based on a system driven by the screen coverage value set on each LOD. Objects that are currently consuming a larger portion of the screen space are displayed at a higher LOD level. Screen coverage is not a part of the core glTF 2.0 spec and must be specified using MSFT_ScreenCoverage in the “extras” section of the [MSFT_lod extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
+<br>
+
+|  LOD Level  |  Recommended Range  |  Default Range | 
+|-------|-------|-------|
+|  LOD 0  |  100% - 50% |  .5 | 
+|  LOD 1 |  Under 50% - 20%  |  .2 | 
+|  LOD 2 |  Under 20% - 1%  |  .01 | 
+|  LOD 4  |  Under 1%  |  - | 
+
+## Animation guidelines
+
+> [!NOTE]
+> This feature was added as part of the upcoming RS4 update. You can test it early by becoming a Windows Insider (if you're developing for PC) or by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md) (if you're developing for HoloLens). On older versions of Windows these animations will not play back, however, they will still load if authored according to the guidance in this article.  
+
+The mixed reality home supports animated glTF objects on HoloLens and immersive (VR) headsets. If you wish to trigger animations on your model, you'll need to use the Animation Map extension on the glTF format. This extension lets you trigger animations in the glTF model based on the users presence in the world, for example trigger an animation when the user is close to the object or while they are looking at it. If you glTF object has animations, but doesn't define triggers the animations will not be played back. The section below describes one workflow for adding these triggers to any animated glTF object.
+
+### Tools
+First, download the following tools if you don't have them already. These tools will make it easy to open any glTF model, preview it, make changes and save back out as glTF or .glb:
+1. [Visual Studio Code](https://code.visualstudio.com/)
+2. [glTF Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
+
+
+### Opening and previewing the model
+Start by opening up the glTF model in VSCode by dragging the .glTF file into the editor window. Note that if you have a .glb instead of a .glTF file you can import it into VSCode using the glTF Tools addin that you downloaded. Go to "View -> Command Palette" and then begin typing "glTF" in the command palette and select "glTF: Import from glb" which will pop up a file picker for you to import a .glb with. 
+
+Once you've opened your glTF model you should see the JSON in the editor window. Note that you can also preview the model in a live 3D viewer using the by right clicking the file name and selecting the "glTF: Preview 3D Model" command shortcut from the right click menu. 
+
+### Adding the triggers
+Animation triggers are added to glTF model JSON using the Animation Map extension. The animation map extension is publicly documented [here on GitHub](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) (NOTE: THIS IS A DRAFT EXTENSION). To add the extension to your model just scroll to the end of the glTF file in the editor and add the "extensionsUsed" and "extensions" block to your file if they don't already exist. In the "extensionsUsed" section you'll add a reference to the "EXT_animation_map" extension and in the "extensions" block you'll add your mappings to the animations in the model.
+
+As noted [in the spec](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) you define what triggers the animation using the "semantic" string on a list of "animations" which is an array of animation indices. In the example below we've specified the animation to play while the user is gazing at the object:
+
+```json
+  "extensionsUsed": [
+    "EXT_animation_map"
+  ],
+  "extensions" : {
+      "EXT_animation_map" : {
+            "bindings": [
+                {
+                    "semantic": "GAZE",
+                    "animations": [0]
+                }
+            ]
+      }
+  }
+```
+The following animation triggers semantics are supported by the Windows Mixed Reality home.  
+* "ALWAYS": Constantly loop an animation
+* "HELD": Looped during the entire duration an object is grabbed.
+* "GAZE": Looped  while an object is being looked at
+* "PROXIMITY": Looped while a viewer is near to an object
+* "POINTING": Looped while a user is pointing at an object
+
+### Saving and exporting
+Once you've made the changes to your glTF model you can save it directly as glTF or you can right click the name of the file in the editor and select "glTF: Export to GLB (binary file)" to instead export a .glb. 
+
+### Restrictions
+Animations cannot be longer than 20 minutes and cannot contain more than 36,000 keyframes (20 mins at 30 FPS). Additionally when using morph target based animations do not exceed 8192 morph target vertices or less. Exceeding these count will cuase the animated asset to be unsupported in the Windows Mixed Reality home. 
+
+|Feature|Maximum|
+|-----|-----|
+|Duration|20 minutes|
+|Keyframes|36,000| 
+|Morph Target Vertices|8192|
+
+## glTF Implementation notes
 
 The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader **requires** accessors:
 * Must have min and max values.
@@ -105,61 +259,15 @@ The following material properties are ignored from core spec:
 * occlusionTexture: Must instead use Microsoft optimized texture packing defined below
 * occlusionStrength
 
-## Required Optimizations
-
-Windows Mixed Reality home **requires** a series of optimizations on top of the core glTF spec. These are defined using custom extensions. The following packing formats and extensions are required otherwise the model won’t render successfully. You can easily convert any 2.0 glTF model to meet these required specifications using the [Windows Mixed Reality Asset Converter available on GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). This tool will perform the correct texture packing and optimizations outlined below.
-
-### Materials
-
-Windows MR only supports rendering DDS textures packed according to the texture packing scheme defined in this section. DDS textures are referenced using the [MSFT_texture_dds extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds). Compressing textures is highly recommended. PC based Mixed Reality experiences expect textures to be packed using a 3-texture setup using the following packing specification:
-
-|  glTF Property  |  Texture  |  Packing Scheme | 
-|----------|----------|----------|
-|  pbrMetallicRoughness  |  baseColorTexture  |  Red (R), Green (G), Blue (B) | 
-|  [MSFT_packing_occlusionRoughnessMetallic](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_packing_occlusionRoughnessMetallic)  |  roughnessMetallicOcclusionTexture  |  Roughness (R), Metallic (G), Occlusion (B) | 
-|  [MSFT_packing_occlusionRoughnessMetallic](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_packing_occlusionRoughnessMetallic)  |  normalTexture  |  Normal (RG) | 
-
-When compressing the DDS textures the following compression is expected on each map:
-
-|  Map  |  Expected Compression | 
-|----------|----------|
-|  Normal  |  BC5 | 
-|  Base Color, Occlusion, MetallicRoughness, Emissive  |  BC7 | 
-
-## Optional Optimizations
-
-### Adding mesh LODs
-
-Windows MR uses geometry node LODs to render 3D models in different levels of detail depending on screen coverage. While this feature is technically not required, it's strongly recommended for all assets. Currently Windows supports 3 levels of detail. The default LOD is 0, which represents the highest quality. Other LODs are numbered sequentially, e.g. 1, 2 and get progressively lower in quality. The [Windows Mixed Reality Asset Converter](https://github.com/Microsoft/glTF-Toolkit/releases) supports generating assets that meet this LOD specification by accepting multiple glTF models and merging them into a single asset with valid LOD levels. The following table outlines the expected LOD ordering and triangle targets:
-
-|  LOD Level  |  Recommended Triangle Count  |  Max Triangle Count | 
-|----------|----------|----------|
-|  LOD 0 |  10,000 |  10,000 | 
-|  LOD 1 |  5,000  |  10,000 | 
-|  LOD 2 |  2,500  |  10,000 | 
-
-When using LODs always specify 3 LOD levels. Missing LODs will cause the model to not render unexpectedly as the LOD system switches to the missing LOD level. glTF 2.0 does not currently support LODs as part of the core spec. LODs should therefore be defined using the [MSFT_LOD extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
-
-### Screen coverage
-
-LODs are displayed in Windows Mixed Reality based on a system driven by the screen coverage value set on each LOD. Objects that are currently consuming a larger portion of the screen space are displayed at a higher LOD level. Screen coverage is not a part of the core glTF 2.0 spec and must be specified using MSFT_ScreenCoverage in the “extras” section of the [MSFT_lod extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod).
-
-|  LOD Level  |  Recommended Range  |  Default Range | 
-|----------|----------|----------|
-|  LOD 0  |  100% - 50% |  .5 | 
-|  LOD 1 |  Under 50% - 20%  |  .2 | 
-|  LOD 2 |  Under 20% - 1%  |  .01 | 
-|  LOD 4  |  Under 1%  |  - | 
-
 ## Additional resources
+* [glTF Exporters and Converters](https://github.com/KhronosGroup/glTF#converters-and-exporters)
 * [glTF Toolkit](https://github.com/Microsoft/glTF-Toolkit)
 * [glTF 2.0 Specification](https://github.com/KhronosGroup/glTF/blob/master/README.md)
-* [Microsoft glTF LOD Extension Specification](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod)
-* [PC Mixed Reality Texture Packing Extensions Specification](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_packing_occlusionRoughnessMetallic)
-* [Microsoft DDS Textures glTF extensions specification](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds)
-* [Blender glTF 2.0 exporter](https://github.com/KhronosGroup/glTF-Blender-Exporter)
+* [Microsoft glTF LOD Extension Specification](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_lod/README.md)
+* [PC Mixed Reality Texture Packing Extensions Specification](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_occlusionRoughnessMetallic/README.md)
+* [HoloLens Mixed Reality Texture Packing Extensions Specification](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
+* [Microsoft DDS Textures glTF extensions specification](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
 ## See also
 * [Implementing 3D app launchers](implementing-3d-app-launchers.md)
-* [Implementing 3D deep links for your app in the Windows Mixed Reality home](implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md)
 * [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)

@@ -1,11 +1,11 @@
 ---
 title: Rendering in DirectX
-description: 
-author: 
+description: Explains holographic rendering for Windows Mixed Reality.
+author: MikeRiches
 ms.author: mriches
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, holograms, rendering, 3D graphics, HolographicFrame, render loop, update loop, walkthrough, sample code
 ---
 
 
@@ -29,10 +29,9 @@ The [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/win
 
 A new frame object must be used for each rendered frame as it is only valid for an instant in time. The **CurrentPrediction** property contains information such as the camera position. The information is extrapolated to the exact moment in time when the frame is expected to be visible to the user.
 
+The following code is excerpted from the AppMain::Update() method: 
 
-
-
-```
+```cpp
 HolographicFrame^ holographicFrame = m_holographicSpace->CreateNextFrame();
 
 // Get a prediction of where holographic cameras will be when this frame is presented.
@@ -44,14 +43,14 @@ HolographicFramePrediction^ prediction = holographicFrame->CurrentPrediction;
 Back buffers can change from frame to frame. Your app needs to validate the back buffer for each camera, and release and recreate resource views and depth buffers as needed. Notice that the set of poses in the prediction is the authoritative list of cameras being used in the current frame. Usually, you use this list to iterate on the set of cameras.
 
 
-
+From **AppMain::Update**
 
 ```
 m_deviceResources->EnsureCameraResources(holographicFrame, prediction);
 ```
 
 
-
+From **DeviceResources::EnsureCameraResources**
 
 ```
 for (HolographicCameraPose^ pose : prediction->CameraPoses)
@@ -67,7 +66,7 @@ for (HolographicCameraPose^ pose : prediction->CameraPoses)
 Windows Mixed Reality uses a coordinate system from the attached reference frame that's associated with the current frame to render. Later, this coordinate system is used for creating the stereo view matrices when rendering the sample content.
 
 
-
+From **AppMain::Update**
 
 ```
 SpatialCoordinateSystem^ currentCoordinateSystem = m_referenceFrame->CoordinateSystem;
@@ -84,7 +83,7 @@ Any real-time rendering app will need some way to process time-based updates; we
 In the case of holographic rendering, we've specifically chosen not to put too much into the timer function. This is because you can configure it to be a fixed time step, in which case it might get called more than once per frame – or not at all, for some frames – and our holographic data updates should happen once per frame.
 
 
-
+From **AppMain::Update**
 
 ```
 m_timer.Tick([&] ()
@@ -98,7 +97,7 @@ m_timer.Tick([&] ()
 If you are operating in a single coordinate system, as the template does with the **SpatialStationaryReferenceFrame**, this process isn't different from what you're used to in 3D graphics. Here, we rotate the cube and set the model matrix relative to the position in the stationary coordinate system.
 
 
-
+From **SpinningCubeRenderer::Update**
 
 ```
 // Rotate the cube.
@@ -130,7 +129,7 @@ XMStoreFloat4x4(&m_modelConstantBufferData.model, XMMatrixTranspose(modelTransfo
 Model transforms for content are updated as usual. By now, you will have computed valid transforms for the coordinate system you'll be rendering in.
 
 
-
+From **SpinningCubeRenderer::Update**
 
 ```
 // Update the model transform buffer for the hologram.
@@ -152,7 +151,7 @@ To keep holograms where a developer or a user puts them in the world, Windows Mi
 For best results, your app should provide a depth buffer using the [CommitDirect3D11DepthBuffer](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) API. Windows Mixed Reality can then use geometry information from the depth buffer to optimize image stabilization in real time. In the following sample code, we modify the Render method from the Windows Mixed Reality app template to commit the depth buffer. Note that this also required adding an accessor to the CameraResources class, so that we could acquire the depth buffer texture resource for handoff to the API.
 
 
-
+Code for **CommitDirect3D11DepthBuffer example**
 
 ```
 // Up-to-date frame predictions enhance the effectiveness of image stablization and
@@ -226,10 +225,11 @@ for (auto cameraPose : prediction->CameraPoses)
 }
 ```
 
-**Note:** Windows will process your depth texture on the GPU, so it must be possible to use your depth buffer as a shader resource. The ID3D11Texture2D that you create should be in a typeless format and it should be bound as a shader resource view. Here is an example of how to create a depth texture that can be committed for image stabilization.
+>[!NOTE]
+>Windows will process your depth texture on the GPU, so it must be possible to use your depth buffer as a shader resource. The ID3D11Texture2D that you create should be in a typeless format and it should be bound as a shader resource view. Here is an example of how to create a depth texture that can be committed for image stabilization.
 
 
-
+Code for **Depth buffer resource creation for CommitDirect3D11DepthBuffer**
 
 ```
 // Create a depth stencil view for use with 3D rendering if needed.
@@ -260,7 +260,7 @@ DX::ThrowIfFailed(
 If running on a device such as HoloLens that does not yet support CommitDirect3D11DepthBuffer, your app can also set a manual focus point for image stabilization itself. In the Windows Mixed Reality app template, we check to see if the CommitDirect3D11DepthBuffer method is unavailable, and if so we set the focus point manually to the center of the spinning cube. Note that the focus point (or depth buffer) is provided separately for each camera.
 
 
-
+Code for **HoloLens image stabilization (AppMain::Update)**
 
 ```
 if (!m_canCommitDirect3D11DepthBuffer)
@@ -292,7 +292,7 @@ if (!m_canCommitDirect3D11DepthBuffer)
 When setting a manual focus point on HoloLens, you can also define the image plane by specifying a normal. In this case, the plane passes through the focus point and is perpendicular to the normal you provide. You can also define a velocity for your focus plane to better stabilize moving holograms. For example, [tag-along hologram](https://github.com/Microsoft/Windows-universal-samples/tree/v3.0.23/Samples/HolographicTagAlong) sample sets the velocity of the hologram as it follows you around:
 
 
-
+Code for **Focus point for a tag-along HoloLens hologram**
 
 ```
 if (!m_canCommitDirect3D11DepthBuffer)
@@ -352,7 +352,7 @@ Windows Mixed Reality uses stereoscopic rendering to enhance the illusion of dep
 Each camera has its own render target (back buffer), and view and projection matrices, into the holographic space. Your app will need to create any other camera-based resources - such as the depth buffer - on a per-camera basis. In the Windows Holographic app template, we provide a helper class to bundle these resources together in DX::CameraResources. Start by setting up the render target views:
 
 
-
+From **AppMain::Render**
 
 ```
 // This represents the device-based resources for a HolographicCamera.
@@ -376,7 +376,7 @@ context->ClearDepthStencilView(depthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR
 The view and projection matrices for each holographic camera will change with every frame. Refresh the data in the constant buffer for each holographic camera. Do this after you updated the prediction, and before you make any draw calls for that camera.
 
 
-
+From **AppMain::Render**
 
 ```
 pCameraResources->UpdateViewProjectionBuffer(m_deviceResources, cameraPose, m_referenceFrame->CoordinateSystem); 
@@ -388,7 +388,7 @@ bool cameraActive = pCameraResources->AttachViewProjectionBuffer(m_deviceResourc
 Here, we show how the matrices are acquired from the camera pose. During this process we also obtain the current viewport for the camera. Note how we provide a coordinate system: this is the same coordinate system we used to understand gaze, and it's the same one we used to position the spinning cube.
 
 
-
+From **CameraResources::UpdateViewProjectionBuffer**
 
 ```
 // The system changes the viewport on a per-frame basis for system optimizations.
@@ -436,7 +436,7 @@ if (viewTransformAcquired)
 The viewport should be set each frame. Your vertex shader (at least) will generally need access to the view/projection data.
 
 
-
+From **CameraResources::AttachViewProjectionBuffer**
 
 ```
 // Set the viewport for this camera.
@@ -455,7 +455,7 @@ context->VSSetConstantBuffers(
 It's a good idea to check that **TryGetViewTransform** succeeded before trying to use the view/projection data, because if the coordinate system is not locatable (e.g., tracking was interrupted) your app cannot render with it for that frame. The template only calls **Render** on the spinning cube if the **CameraResources** class indicates a successful update.
 
 
-
+From **AppMain::Render**
 
 ```
 if (cameraActive)
@@ -470,7 +470,7 @@ if (cameraActive)
 The Windows Holographic app template renders content in stereo by using the recommended technique of drawing instanced geometry to a Texture2DArray of size 2. Let's look at the instancing part of this, and how it works on Windows Mixed Reality.
 
 
-
+From **SpinningCubeRenderer::Render**
 
 ```
 // Draw the objects.
@@ -486,9 +486,9 @@ context->DrawIndexedInstanced(
 Each instance accesses a different view/projection matrix from the constant buffer. Here's the constant buffer structure, which is just an array of 2 matrices.
 
 
+From **VPRTVertexShader.hlsl**
 
-
-```
+```HLSL
 cbuffer ViewProjectionConstantBuffer : register(b1)
 {
     float4x4 viewProjection[2];
@@ -498,7 +498,7 @@ cbuffer ViewProjectionConstantBuffer : register(b1)
 The render target array index must be set for each pixel. In the following snippet, output.rtvId is mapped to the **SV_RenderTargetArrayIndex** semantic. Note that this requires support for an optional Direct3D 11.3 feature, which allows the render target array index semantic to be set from any shader stage.
 
 
-
+From **VPRTVertexShader.hlsl**
 
 ```
 // Per-vertex data used as input to the vertex shader.
@@ -506,7 +506,7 @@ struct VertexShaderInput
 {
     min16float3 pos     : POSITION;
     min16float3 color   : COLOR0;
-    '''uint        instId  : SV_InstanceID;'''
+    uint        instId  : SV_InstanceID;
 };
     
 // Per-vertex data passed to the geometry shader.
@@ -515,14 +515,14 @@ struct VertexShaderOutput
 {
     min16float4 pos     : SV_POSITION;
     min16float3 color   : COLOR0;
-    '''uint        rtvId   : SV_RenderTargetArrayIndex; // SV_InstanceID % 2'''
+    uint        rtvId   : SV_RenderTargetArrayIndex; // SV_InstanceID % 2
 };
    
 // ...
     
 int idx = input.instId % 2;
 // Set the render target array index.
-'''output.rtvId = idx;'''
+output.rtvId = idx;
 ```
 
 If you want to use your existing instanced drawing techniques with this method of drawing to a stereo render target array, all you have to do is draw twice the number of instances you normally have. In the shader, divide **input.instId** by 2 to get the original instance ID, which can be indexed into (for example) a buffer of per-object data: `int actualIdx = input.instId / 2;`
@@ -532,7 +532,7 @@ If you want to use your existing instanced drawing techniques with this method o
 Windows Mixed Reality supports the ability to set the render target array index from any shader stage; normally, this is a task that could only be done in the geometry shader stage due to the way the semantic is defined for Direct3D 11. Here, we show a complete example of how to set up a rendering pipeline with just the vertex and pixel shader stages set. The shader code is as described above.
 
 
-
+From **SpinningCubeRenderer::Render**
 
 ```
 const auto context = m_deviceResources->GetD3DDeviceContext();
@@ -589,10 +589,10 @@ context->DrawIndexedInstanced(
 
 Setting the render target array index in the vertex shader requires that the graphics driver supports an optional Direct3D 11.3 feature, which HoloLens does support. Your app may be able to safely implement just that technique for rendering, and all requirements will be met for running on the Microsoft HoloLens.
 
-It may be the case that you want to use the HoloLens emulator as well, which can be a powerful development tool for your holographic app &#151; and support Windows Mixed Reality immersive headset devices that are attached to Windows 10 PCs. Support for the non-HoloLens rendering path &#151; and therefore, for all of Windows Mixed Reality &#151; is also built into the Windows Holographic app template. In the template code, you will find code to enable your holographic app to run on the GPU in your development PC. Here is how the **DeviceResources** class checks for this optional feature support.
+It may be the case that you want to use the HoloLens emulator as well, which can be a powerful development tool for your holographic app - and support Windows Mixed Reality immersive headset devices that are attached to Windows 10 PCs. Support for the non-HoloLens rendering path - and therefore, for all of Windows Mixed Reality - is also built into the Windows Holographic app template. In the template code, you will find code to enable your holographic app to run on the GPU in your development PC. Here is how the **DeviceResources** class checks for this optional feature support.
 
 
-
+From **DeviceResources::CreateDeviceResources**
 
 ```
 // Check for device support for the optional feature that allows setting the render target array index from the vertex shader stage.
@@ -607,7 +607,7 @@ if (options.VPAndRTArrayIndexFromAnyShaderFeedingRasterizer)
 To support rendering without this optional feature, your app must use a geometry shader to set the render target array index. This snippet would be added *after* **VSSetConstantBuffers**, and *before* **PSSetShader** in the code example shown in the previous section that explains how to render stereo on HoloLens.
 
 
-
+From **SpinningCubeRenderer::Render**
 
 ```
 if (!m_usingVprtShaders)
@@ -627,7 +627,7 @@ if (!m_usingVprtShaders)
 **HLSL NOTE**: In this case, you must also load a slightly modified vertex shader that passes the render target array index to the geometry shader using an always-allowed shader semantic, such as TEXCOORD0. The geometry shader does not have to do any work; the template geometry shader passes through all data, with the exception of the render target array index, which is used to set the SV_RenderTargetArrayIndex semantic.
 
 
-
+App template code for **GeometryShader.hlsl**
 
 ```
 // Per-vertex data from the vertex shader.
@@ -670,7 +670,7 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 With Windows Mixed Reality, the system controls the swap chain. The system then manages presenting frames to each holographic camera to ensure a high quality user experience. It also provides a viewport update each frame, for each camera, to optimize aspects of the system such as image stabilization or Mixed Reality Capture. So, a holographic app using DirectX doesn't call **Present** on a DXGI swap chain. Instead, you use the [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) class to present all swapchains for a frame once you're done drawing it.
 
 
-
+From **DeviceResources::Present**
 
 ```
 HolographicFramePresentResult presentResult = frame->PresentUsingCurrentPrediction();
@@ -682,7 +682,7 @@ By default, this API waits for the frame to finish before it returns. Holographi
 In the template, we also discard the render target views for each camera after the frame is presented.
 
 
-
+From **DeviceResources::Present**
 
 ```
 UseHolographicCameraResources<void>([this, prediction](std::map<UINT32, std::unique_ptr<CameraResources>>& cameraResourceMap)
@@ -714,7 +714,7 @@ if (presentResult == HolographicFramePresentResult::DeviceRemoved)
 Note that if the Direct3D device was lost, and you did recreate it, you have to tell the [HolographicSpace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx) to start using the new device. The swap chain will be recreated for this device.
 
 
-
+From **DeviceResources::InitializeUsingHolographicSpace**
 
 ```
 m_holographicSpace->SetDirect3D11Device(m_d3dInteropDevice);
@@ -731,7 +731,7 @@ By default, most sample code demonstrates creating a DirectX device using the de
 To work around any issues this may cause, use the [Holographic​Adapter​Id](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicadapterid) from either [HolographicSpace](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicSpace)->PrimaryAdapterId property or [HolographicDisplay](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicdisplay)->AdapterId. This adapterId can then be used to enumerate the DXGIAdapters
 
 
-
+Code for **GetAdapterFromId Helper Function**
 
 ```
 IDXGIAdapter* GetAdapterFromId(Windows::Graphics::Holographic::HolographicAdapterId adapterId)
@@ -765,7 +765,7 @@ IDXGIAdapter* GetAdapterFromId(Windows::Graphics::Holographic::HolographicAdapte
 ```
 
 
-
+Code to **update DeviceResources::CreateDeviceResources to use IDXGIAdapter**
 
 ```
 // get adapter from HolographicDisplay
@@ -800,7 +800,7 @@ HRESULT hr = D3D11CreateDevice(
 When initializing the ID3D11Device, D3D11_CREATE_DEVICE_VIDEO_SUPPORT flag must be defined as part of the D3D11_CREATE_DEVICE_FLAG. Once the device and context is created, call [SetMultithreadProtected](https://msdn.microsoft.com/en-us/library/windows/desktop/bb173820(v=vs.85).aspx) to enable multithreading. To associate the device with the [IMFDXGIDeviceManager](https://msdn.microsoft.com/en-us/library/windows/desktop/hh447906(v=vs.85).aspx), use the [IMFDXGIDeviceManager::ResetDevice](https://msdn.microsoft.com/en-us/library/windows/desktop/hh447911(v=vs.85).aspx) function.
 
 
-
+Code to **associate a ID3D11Device with IMFDXGIDeviceManager**
 
 ```
 // create dx device for media pipeline

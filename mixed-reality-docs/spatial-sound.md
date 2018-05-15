@@ -1,11 +1,11 @@
 ---
 title: Spatial sound
-description: 
-author: 
+description: Using spatial sound in a mixed reality application allows you to convincingly place sounds in a 3D space.
+author: hak0n
 ms.author: hakons
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
 ---
 
 
@@ -15,6 +15,8 @@ keywords:
 When objects are out of our line of sight, one of the ways that we can perceive what's going on around us is through sound. In Windows Mixed Reality, the audio engine provides the aural component of the mixed-reality experience by simulating 3D sound using direction, distance, and environmental simulations. Using spatial sound in an application allows developers to convincingly place sounds in a 3 dimensional space (sphere) all around the user. Those sounds will then seem as if they were coming from real physical objects or the mixed reality holograms in the user's surroundings. Given that [holograms](hologram.md) are objects made of light and sometimes sound, the sound component helps ground holograms making them more believable and creating a more immersive experience.
 
 Although holograms can only appear visually where the user's gaze is pointing, your app's sound can come from all directions; above, below, behind, to the side, etc. You can use this feature to draw attention to an object that might not currently be in the user's view. A user can perceive sounds to be emanating from a source in the mixed-reality world. For example, as the user gets closer to an object or the object gets closer to them, the volume increases. Similarly, as objects move around a user, or vice versa, spatial sounds give the illusion that sounds are coming directly from the object.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/PTPvx7mDon4]
 
@@ -28,11 +30,11 @@ Although holograms can only appear visually where the user's gaze is pointing, y
 </tr>
 </table>
 
-
-
 ## Simulating the perceived location and distance of sounds
 
 By analyzing how sound reaches both our ears, our brain determines the distance and direction of the object emitting the sound. An HRTF (or Head Related Transfer Function) simulates this interaction by modeling the spectral response that characterizes how an ear receives sound from a point in space. The spatial audio engine uses personalized HRTFs to expand the mixed reality experience, and simulate sounds that are coming from various directions and distances.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
 

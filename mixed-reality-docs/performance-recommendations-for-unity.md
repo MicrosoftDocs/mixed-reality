@@ -1,11 +1,11 @@
 ---
 title: Performance recommendations for Unity
-description: 
-author: 
+description: Unity-specific tips to improve performance with mixed reality apps.
+author: DanHolbertMS
 ms.author: daholbe
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
 ---
 
 
@@ -20,12 +20,20 @@ Unity's defaults lean towards the average case for all platforms, including desk
 
 ### Use the fastest quality settings
 
+**Unity quality settings**
+
+
 ![Unity quality settings](images/unityqualitysettings-350px.png)
 * On the *"Edit > Project Settings > Quality"* page, select the dropdown under the Windows Store logo and select *"Fastest"*. This ensures that most tunable quality options are set to maximize for performance.
 
 ### Enable player options to maximize performance
 
-![Unity player settings](images/unityplayersettings-350px.png) Go to the player settings by navigating to *"Edit > Project Settings > Player"* page, click on the *"Windows Store"*, then consider the settings below:
+**Unity player settings**
+
+
+![Unity player settings](images/unityplayersettings-350px.png) 
+
+Go to the player settings by navigating to *"Edit > Project Settings > Player"* page, click on the *"Windows Store"*, then consider the settings below:
 * Use *Shader preloading* and other tricks to optimize [shader load time](http://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html). In particular shader preloading means you won't see any hitches due to runtime shader compilation.
 * Make sure *"Rendering > Rendering Path"* is set to *Forward* (this is the default). While deferred rendering is an excellent rendering technique for other platforms, it does eat up a lot of memory bandwidth (and thus power) which makes it unsuitable for mobile devices such as HoloLens.
 * The "Use 16-bit Depth Buffers" setting allows you to enable 16-bit depth buffers, which drastically reduces the bandwidth (and thus power) associated with depth buffer traffic. This can be a big power win, but is only applicable for experiences with a small depth range. You should carefully tune your near/far planes to tightly encapsulate your experience so as to not waste any precision here.
@@ -66,7 +74,7 @@ There are also some unintuitive reasons why allocations may occur even when you'
 * Beware of boxing! A common case for that is passing structs to a method that takes an interface as a parameter. Instead, make the method take the concrete type (by ref) so that it can be passed without allocation.
 * Prefer structs to classes whenever you can.
 * Default implementations for value equality and GetHashcode uses reflection, which is not only slow but also performs a lot of allocations.
-* Avoid foreach loops on everything except raw arrays. Each call on a non-array allocates an Enumerator. Prefer regular for loops whenever possible.
+* Avoid foreach loops on everything except raw arrays and List<T>. Each call potentially allocates an Enumerator. Prefer regular for loops whenever possible. (See https://jacksondunstan.com/articles/3805 for more info)
 
 **Other garbage collections concerns.** Another key concept to be aware of is that GC time is largely proportional to the number of references in the heap. Thus, it's preferable to store data as structs instead of objects. For example, instead of referring to an object by reference, you might allocate a bunch of those types of objects as a shared array of structs and then refer to them by index. This is not as important for long-lived types (e.g. the ones you allocate at startup and keep around for the duration of the application), since they will rapidly move into the oldest generation and stay there (where you hopefully don't have many collections at all), but worth keeping in mind whenever it's easy to do.
 
@@ -91,7 +99,7 @@ Aside from Garbage Collection, you also need to be aware of the general CPU cost
 * Do NOT use *FixedUpdate* unless absolutely necessary, as *FixedUpdate* can be called multiple times per frame. Use either *Update* or your own update manager instead.
 * Avoid any synchronous loading code or other long running operations. On HoloLens it's critical to always update the rendering at 60 frames per second, or you might risk causing comfort issues for the user. For this reason you should make sure that any long running operation is asynchronous.
 * Consider caching often-used components. For example, if you often need to access the Rigid Body of an object, just grab it once and reference it with a private variable rather than looking it up each time.
-* Avoid the *foreach* construct. This will sometimes allocate an IEnumerable, and just generally introduce iteration overhead. It's usually much faster to explicitly iterate over a concrete collection type.
+* Avoid the *foreach* construct (except for arrays and List<T>). This will sometimes allocate an IEnumerable, and just generally introduce iteration overhead. It's usually much faster to explicitly iterate over a concrete collection type.
 * Avoid deep object hierarchies for moving objects. When moving a transform, all of the parent and child transforms also get recomputed. If content moves in the scene in each frame, this cost will add up.
 * Disable idle animations. Avoid design patterns where an animator sits in a loop setting a value to the same thing. There is considerable overhead for this technique, with no effect on the application. Instead, terminate the animation and restart when appropriate.
 
@@ -105,7 +113,7 @@ Aside from Garbage Collection, you also need to be aware of the general CPU cost
 Other than the tools listed in [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md), check out
 * The [Unity Frame Debugger](http://docs.unity3d.com/Manual/FrameDebugger.html)
 * The [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html)
-* **Note**: The Unity profilerwill disable some asynchronous rendering resulting in about half of the normal allowed time for CPU and GPU work to maintain framerate. This will appear in the profiler as Device.Present taking a long time. Additionally, not all CPU work is shown in the profile such as WorldAnchor update calculations.
+  * **Note**: The Unity profiler will disable some asynchronous rendering resulting in about half of the normal allowed time for CPU and GPU work to maintain framerate. This will appear in the profiler as Device.Present taking a long time. Additionally, not all CPU work is shown in the profile such as WorldAnchor update calculations.
 
 ## See also
 * [Unity development overview](unity-development-overview.md)

@@ -1,11 +1,11 @@
 ---
 title: Case study - Scaling Datascape across devices with different performance
-description: 
-author: 
-ms.author: mazeller
-ms.date: 2/28/2018
+description: This case study offers insight on how Microsoft developers optimized the Datascape app to deliver a compelling experience across devices with a range of performance capabilities.
+author: danandersson
+ms.author: roferres, daander
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: immersive headset, performance optimization, VR, case study
 ---
 
 
@@ -280,7 +280,7 @@ By measuring the time spent rendering and comparing it to our desired refresh-ra
 
 When close to dropping frames, we adapt our rendering to make it faster. One simple way of adapting is changing the viewport size of the screen, requiring less pixels to get rendered.
 
-By using *UnityEngine.VR.VRSettings.renderViewportScale* the system shrinks the targeted viewport and automatically stretches the result back up to fit the screen. A small change in scale is barely noticeable on world geometry, and a scale factor of 0.7 requires half the amount of pixels to be rendered.
+By using *UnityEngine.XR.XRSettings.renderViewportScale* the system shrinks the targeted viewport and automatically stretches the result back up to fit the screen. A small change in scale is barely noticeable on world geometry, and a scale factor of 0.7 requires half the amount of pixels to be rendered.
 
 ![70% scale, half the pixels](images/datascape-scaling-700px.jpg)
 
@@ -300,11 +300,17 @@ Design for worst case scenarios, and maybe consider using adaptive rendering for
 
 ## About the authors
 
-![Picture of Robert Ferrese](images/robert-ferrese-60px.jpg) [Robert Ferrese](mailto:roferres@microsoft.com)\
-Software engineer @Microsoft  For this project, Robert focused on data acquisition and rendering. He had been a mixed reality developer for two years before this project. His background is in gameplay, user interactions, user experiences and virtual reality development.
+<table style="border:0">
+<tr>
+<td style="border:0" width="60px"><img alt="Picture of Robert Ferrese" width="60" height="60" src="images/robert-ferrese-60px.jpg"></td>
+<td style="border:0"><b>Robert Ferrese</b><br>Software engineer @Microsoft</td>
+</tr>
+<tr>
+<td style="border:0" width="60px"><img alt="Picture of Dan Andersson" width="60" height="60" src="images/dan-andersson-60px.jpg"></td>
+<td style="border:0"><b>Dan Andersson</b><br>Software engineer @Microsoft</td>
+</tr>
+</table>
 
-![Picture of Dan Andersson](images/dan-andersson-60px.jpg) [Dan Andersson](mailto:daander@microsoft.com)\
-Software engineer @Microsoft  Dan spent 20 years in the games industry producing games from the original Battlefront to Halo 5, and is now helping shape the future of Mixed Reality at Microsoft. He enjoys his 4 kids, a casual game of soccer and has a black belt in Swedish snaps songs.
 
 ## See also
 * [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)

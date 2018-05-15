@@ -1,18 +1,20 @@
 ---
-title: Hologram
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+title: What is a hologram?
+description: HoloLens lets you view and interact with three-dimensional holograms, objects made of light and sound that appear in the world around you.
+author: beaufolsom
+ms.author: befolsom
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
 ---
 
 
 
-# Hologram
+# What is a hologram?
 
-HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they are real objects. Holograms respond to your [gaze](gaze.md), [gestures](gestures.md) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
+HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your [gaze](gaze.md), [gestures](gestures.md) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/MVXH5V8MVQo]
 
@@ -25,8 +27,6 @@ HoloLens lets you create **holograms**, objects made of light and sound that app
 <td> Holograms</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
 </table>
-
-
 
 ## A hologram is made of light and sound
 
@@ -48,8 +48,8 @@ Some holograms follow the user instead. These tag-along holograms position thems
 
 **Best practices**
 * Some scenarios may demand that holograms remain easily discoverable or visible throughout the experience. There are two high-level approaches to this kind of positioning. Let's call them **"display-locked"** and **"body-locked"**.
-* Display-locked content is positionally "locked" to the device display. This is tricky for a number of reasons, including an unnatural feeling of "clingyness" that makes many users frustrated and wanting to "shake it off." In general, many designers have found it better to avoid display-locking content.
-* The body-locked approach is far more forgivable. Body-locking is when a hologram is tethered to the user's body or gaze vector, but is positioned in 3d space around the user. Many experiences have adopted a body-locking behavior where the hologram "follows" the users gaze, which allows the user to rotate their body and move through space without losing the hologram. Incorporating a delay helps the hologram movement feel more natural. For example, some core UI of the Windows Holographic OS uses a variation on body-locking that follows the user's gaze with a gentle, elastic-like delay while the user turns their head.
+   * Display-locked content is positionally "locked" to the device display. This is tricky for a number of reasons, including an unnatural feeling of "clingyness" that makes many users frustrated and wanting to "shake it off." In general, many designers have found it better to avoid display-locking content.
+   * The body-locked approach is far more forgivable. Body-locking is when a hologram is tethered to the user's body or gaze vector, but is positioned in 3d space around the user. Many experiences have adopted a body-locking behavior where the hologram "follows" the users gaze, which allows the user to rotate their body and move through space without losing the hologram. Incorporating a delay helps the hologram movement feel more natural. For example, some core UI of the Windows Holographic OS uses a variation on body-locking that follows the user's gaze with a gentle, elastic-like delay while the user turns their head.
 * Place the hologram at a comfortable viewing distance typically about 1-2 meters away from the head.
 * Provide an amount of drift for elements that must be continually in the holographic frame, or consider animating your content to one side of the display when the user changes their point of view.
 
@@ -67,7 +67,7 @@ Holograms aren't only about light and sound; they're also an active part of your
 
 Holograms enable personal interactions that aren't possible elsewhere. Because the HoloLens knows where it is in the world, a holographic character can look you directly in the eyes as you walk around the room.
 
-A hologram can also interact with your surroundings. For example, you can place a holographic bouncing ball above a table. Then, with an [air-tap](gestures.md#air-tap), watch the ball bounce and make sound when it hits the table.
+A hologram can also interact with your surroundings. For example, you can place a holographic bouncing ball above a table. Then, with an [air tap](gestures.md#air-tap), watch the ball bounce and make sound when it hits the table.
 
 Holograms can also be occluded by real-world objects. For example, a holographic character might walk through a door and behind a wall, out of your sight.
 

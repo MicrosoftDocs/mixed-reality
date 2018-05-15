@@ -1,11 +1,11 @@
 ---
 title: Asset creation process
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: Guidance on creating assets for mixed reality experiences.
+author: paseb
+ms.author: paseb
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: asset, creation, process, budget, polygons, textures, shaders, performance
 ---
 
 
@@ -16,9 +16,15 @@ Windows Mixed Reality builds on the decades of investment Microsoft has made int
 
 The assets you create for a project come in many shapes and forms. They can be comprised of a series of textures/images, audio, video, 3D models and animations. We can't begin to cover all the tools that are available to create the different types of assets used in a project. For this article we will focus on 3D asset creation methods.
 
-![Concept, creation, integration and iteration flow](images/concept-creation-integration-iteration-flow-640px.jpg)
+![Concept, creation, integration and iteration flow](images/concept-creation-integration-iteration-flow-640px.jpg)<br>
+*Concept, creation, integration and iteration flow*
 
 ## Things to consider
+
+When looking at the experience you're trying to create think of it as a **budget** that you can spend to try to create the best experience. There is not necessarily hard limits on the number of **polygons** or **types of materials** use in your assets but more a budgeted set of tradeoffs.
+
+Below is an example budget for your experience. Performance is usually not a single point of failure but death by a thousand cuts per-se.
+<br>
 
 <table style="float:right; margin-left: 10px;">
 <tr>
@@ -46,12 +52,6 @@ The assets you create for a project come in many shapes and forms. They can be c
 </tr>
 </table>
 
-
-
-When looking at the experience you're trying to create think of it as a **budget** that you can spend to try to create the best experience. There is not necessarily hard limits on the number of **polygons** or **types of materials** use in your assets but more a budgeted set of tradeoffs.
-
-To the right is an example budget for your experience. Performance is usually not a single point of failure but death by a thousand cuts per-se.
-
 **Total number of assets**
 * How many assets are active in the scene?
 
@@ -66,18 +66,18 @@ The creation process for assets is the same regardless of whether you're targeti
 ## Authoring Assets
 
 We'll start with the ways to get assets for your project:
-1. **Creating Assets** (Authoring tools and object capture)
-2. **Purchasing Assets** (Buying assets online)
-3. **Porting Assets** (Taking existing assets)
-4. **Outsourcing Assets** (Importing assets from 3rd parties)
+1. Creating Assets (Authoring tools and object capture)
+2. Purchasing Assets (Buying assets online)
+3. Porting Assets (Taking existing assets)
+4. Outsourcing Assets (Importing assets from 3rd parties)
 
 ### Creating assets
 
-**Authoring tools**\
- First you can create your own assets in a number of different ways. 3D artists use a number of applications and tools to create models which consist of **meshes**, **textures**, and **materials**. This is then saved in a file format that can be imported or used by the graphics engine used by the app, such as **.FBX** or **.OBJ**. Any tool that generates a model that your chosen graphics engine supports will work on **HoloLens**. Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to use HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) to transform the way assets are created. If you want to get something in quick you can also use [3D Builder](https://developer.microsoft.com/en-us/windows/hardware/3d-print/3d-builder-resources) that comes with Windows to export .OBJ for use in your application.
+**Authoring tools**<br>
+First you can create your own assets in a number of different ways. 3D artists use a number of applications and tools to create models which consist of **meshes**, **textures**, and **materials**. This is then saved in a file format that can be imported or used by the graphics engine used by the app, such as **.FBX** or **.OBJ**. Any tool that generates a model that your chosen graphics engine supports will work on **HoloLens**. Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to use HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) to transform the way assets are created. If you want to get something in quick you can also use [3D Builder](https://developer.microsoft.com/en-us/windows/hardware/3d-print/3d-builder-resources) that comes with Windows to export .OBJ for use in your application.
 
-**Object capture**\
- There is also the option to capture objects in 3D. Capturing inanimate objects in 3D and editing them with digital content creation software is increasingly popular with the rise of 3D printing. Using the **Kinect 2** sensor and [3D Builder](https://developer.microsoft.com/en-us/windows/hardware/3d-print/3d-builder-resources) you can use the capture feature to create assets from real world objects. This is also a [suite of tools](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) to do the same with **photogrammetry** by processing a number of images to stitch together and mesh and textures.
+**Object capture**<br>
+There is also the option to capture objects in 3D. Capturing inanimate objects in 3D and editing them with digital content creation software is increasingly popular with the rise of 3D printing. Using the **Kinect 2** sensor and [3D Builder](https://developer.microsoft.com/en-us/windows/hardware/3d-print/3d-builder-resources) you can use the capture feature to create assets from real world objects. This is also a [suite of tools](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) to do the same with **photogrammetry** by processing a number of images to stitch together and mesh and textures.
 
 ### Purchasing assets
 
@@ -85,16 +85,16 @@ Another excellent option is to purchase assets for your experience. There are a 
 
 When you purchase assets from a 3rd party you always want to check the following:
 * **What's the poly count?**
-* Does it fit within your budget?
+  * Does it fit within your budget?
 * **Are there levels of detail (LODs) for the model?**
-* Level of detail of a model allow you to scale the detail of a model for performance.
+  * Level of detail of a model allow you to scale the detail of a model for performance.
 * **Is the source file available?**
-* Usually not included with [Unity Asset Store](https://www.assetstore.unity3d.com/) but always included with services like [TurboSquid](http://www.turbosquid.com/).
-* Without the source file you won't be able to modify the asset.
-* Make sure the source file provided can be imported by your 3D tools.
+  * Usually not included with [Unity Asset Store](https://www.assetstore.unity3d.com/) but always included with services like [TurboSquid](http://www.turbosquid.com/).
+  * Without the source file you won't be able to modify the asset.
+  * Make sure the source file provided can be imported by your 3D tools.
 * **Know what you're getting**
-* Are animations provided?
-* Make sure to check the contents list of the asset you're purchasing.
+  * Are animations provided?
+  * Make sure to check the contents list of the asset you're purchasing.
 
 ### Porting assets
 
@@ -109,15 +109,15 @@ When porting assets to use in your HoloLens application you will want to ask the
 
 Another option for larger projects that require more assets than your team is equipped to create is to outsource asset creation. The process of outsourcing involves finding the right studio or agency that specializes in outsourcing assets. This can be the most expensive option but also be the most flexible in what you get.
 * **Clearly define what you're requesting**
-* Provide as much detail as possible
-* Front, side and back concept images
-* Reference art showing asset in context
-* Scale of object (Usually specified in centimeters)
+  * Provide as much detail as possible
+  * Front, side and back concept images
+  * Reference art showing asset in context
+  * Scale of object (Usually specified in centimeters)
 * **Provide a Budget**
-* Poly count range
-* Number of textures
-* Type of shader (For Unity and HoloLens you should always default to mobile shaders first)
+  * Poly count range
+  * Number of textures
+  * Type of shader (For Unity and HoloLens you should always default to mobile shaders first)
 * **Understand the costs**
-* What's the outsourcing policy for change requests?
+  * What's the outsourcing policy for change requests?
 
 Outsourcing can work extremely well based on your projects timeline but requires more oversight to guarantee that you get the right assets you need the first time.

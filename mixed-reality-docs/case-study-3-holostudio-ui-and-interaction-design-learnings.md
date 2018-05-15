@@ -1,14 +1,12 @@
 ---
 title: Case study - 3 HoloStudio UI and interaction design learnings
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: HoloStudio UI and interaction design learnings
+author: rwinj
+ms.author: marcghal
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, HoloStudio, Windows Mixed Reality
 ---
-
-
 
 # Case study - 3 HoloStudio UI and interaction design learnings
 
@@ -50,7 +48,7 @@ It's much harder in 3D to alert users to things they need to pay attention to. U
 
 There are times when a user wants to interact with a hologram and its associated UI controls, but they are blocked from view because another hologram is in front of them. While we were developing HoloStudio, we used trial and error to come to a solution for this.
 
-![A UI control associated with a hologram can become blocked if there is another hologram between it and the user wearing the HoloLens device.](images/ui-blocked-500px.jpg)
+![A UI control associated with a hologram can become blocked if there is another hologram between it and the user wearing HoloLens.](images/ui-blocked-500px.jpg)
 
 We tried moving the UI control closer to the user so it couldn't get blocked, but found that it wasn't comfortable for the user to look at a control that was near to you while simultaneously looking at a hologram that was far away. If, however, we moved the control in front of the closest hologram to the user, they felt like it was detached from the hologram it should be affecting.
 
@@ -64,16 +62,14 @@ Users need to be able to easily access UI controls even if they've been blocked,
 
 ## About the author
 
-<table style="border:0;width:800px">
+<table style="border-collapse:collapse">
 <tr>
-<td style="border:0"> <img alt="Marcus Ghaly, Sr. Holographic Designer" width="200" height="200" src="images/marcus-ghaly-200px.jpg" /></td><td style="border:0"> <b>Marcus Ghaly</b> is a Sr. Holographic Designer working on everything from holographic UI, to 3D user input, 2D design, and volumetric interactions. He received his Bachelor of Arts from the University of Washington and spent nearly a decade in the games industry working as a character artist, technical artist, and environment co-lead. He received his Master’s degree in design while in Sweden and has been a holographic designer and researcher ever since.</td>
+<td style="border-style: none" width="60"><img alt="Picture of Marcus Ghaly" width="60" height="60" src="images/marcus-ghaly-200px.jpg"></td>
+<td style="border-style: none"><b>Marcus Ghaly</b><br>Sr. Holographic Designer @Microsoft</td>
 </tr>
 </table>
 
-
-
 ## See also
 * [Interaction fundamentals](interaction-fundamentals.md)
-* [Case studies](category/case-studies.md)
 
  

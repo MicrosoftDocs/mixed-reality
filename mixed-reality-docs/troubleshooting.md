@@ -1,16 +1,16 @@
 ---
-title: Troubleshooting
-description: 
-author: 
+title: HoloLens troubleshooting
+description: Troubleshooting steps for Microsoft HoloLens.
+author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 ---
 
 
 
-# Troubleshooting
+# HoloLens Troubleshooting
 
 ## My HoloLens is unresponsive or won’t boot
 
@@ -51,12 +51,12 @@ If HoloLens can’t map or load your space, it will enter Limited mode and you w
 * Make sure there’s enough light in your environment so HoloLens can see and map the space.
 * Make sure you’re connected to a Wi-Fi network. If you’re not connected to Wi-Fi, HoloLens can’t identify and load a known space.
 * If you need to create a new space, connect to Wi-Fi, then restart your HoloLens.
-* To see if the correct space is active, or to manually load a space, go to Settings > System > Spaces.
+* To see if the correct space is active, or to manually load a space, go to **Settings** > **System** > **Spaces**.
 * If the correct space is loaded and you’re still having problems, the space may be corrupt. To fix this, select the space, then select Remove. Once the space is removed, HoloLens will start mapping your surroundings and create a new space.
 
 ## My HoloLens frequently enters Limited mode or shows a “Tracking lost” message.
 
-If your device often shows a "limited mode" or "tracking lost" message, try the suggestions from [My Holograms don't look good or are moving around](troubleshooting.md#holograms-dont-look-good-or-are-moving-around.)
+If your device often shows a "limited mode" or "tracking lost" message, try the suggestions from [My Holograms don't look good or are moving around](#holograms-dont-look-good-or-are-moving-around).
 
 ## My HoloLens can’t tell what space I’m in.
 
@@ -72,4 +72,4 @@ You’ll need to free up some storage space by doing one or more of the followin
 
 ## My HoloLens can’t create a new space.
 
-The most likely problem is that you’re running low on storage space. Try one of the [tips above](troubleshooting.md#im-getting-a-low-disk-space-error.) to free up some disk space.
+The most likely problem is that you’re running low on storage space. Try one of the [tips above](#im-getting-a-low-disk-space-error) to free up some disk space.

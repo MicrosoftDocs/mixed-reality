@@ -1,11 +1,11 @@
 ---
 title: Hardware accessories
-description: 
-author: 
+description: Describes the types of accessories available to use with HoloLens and Windows Mixed Reality, and how to set them up.
+author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: how-to, accessories, bluetooth, bt, controller, gamepad, clicker, xbox
 ---
 
 
@@ -30,7 +30,9 @@ Pairing a Bluetooth peripheral with Microsoft HoloLens is similar to pairing a B
 
 ## Motion controllers
 
-Windows Mixed Reality [motion controllers](motion-controllers.md) are supported by immersive headsets, but not HoloLens. These controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. Each controller features several methods of input. ![Windows Mixed Reality motion controllers](images/winmr-ck-1080x1080-350px.jpg)
+Windows Mixed Reality [motion controllers](motion-controllers.md) are supported by immersive headsets, but not HoloLens. These controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. Each controller features several methods of input.
+
+![Windows Mixed Reality motion controllers](images/winmr-ck-1080x1080-350px.jpg)
 
 ## HoloLens Clicker
 

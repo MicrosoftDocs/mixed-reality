@@ -1,11 +1,11 @@
 ---
 title: Case study - Expanding the spatial mapping capabilities of HoloLens
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: When creating our first apps for Microsoft HoloLens, we were eager to see just how far we could push the boundaries of spatial mapping on the device.
+author: jevertt
+ms.author: jevertt
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens, spatial mapping
 ---
 
 
@@ -22,7 +22,7 @@ When creating our first apps for Microsoft HoloLens, we were eager to see just h
 
 While we were working on [Fragments](https://www.microsoft.com/microsoft-hololens/en-us/apps/Fragments) and [Young Conker](https://www.microsoft.com/microsoft-hololens/en-us/apps/young-conker), two of the first games for HoloLens, we found that when we were doing procedural placement of holograms in the physical world, we needed a higher level of understanding about the user's environment. Each game had its own specific placement needs: In Fragments, for example, we wanted to be able to distinguish between different surfaces—such as the floor or a table—to place clues in relevant locations. We also wanted to be able to identify surfaces that life-size holographic characters could sit on, such as a couch or a chair. In Young Conker, we wanted Conker and his opponents to be able to use raised surfaces in a player's room as platforms.
 
-[Asobo Studios](http://www.asobostudio.com/index.html), our development partner for these games, faced this problem head-on and created a technology that extends the spatial mapping capabilities of the HoloLens device. Using this, we could analyze a player's room and identify surfaces such as walls, tables, chairs, and floors. It also gave us the ability to optimize against a set of constraints to determine the best placement for holographic objects.
+[Asobo Studios](http://www.asobostudio.com/index.html), our development partner for these games, faced this problem head-on and created a technology that extends the spatial mapping capabilities of HoloLens. Using this, we could analyze a player's room and identify surfaces such as walls, tables, chairs, and floors. It also gave us the ability to optimize against a set of constraints to determine the best placement for holographic objects.
 
 ## The spatial understanding code
 
@@ -30,7 +30,7 @@ We took Asobo's original code and created a library that encapsulates this techn
 
 There are many useful queries included in the Unity sample that will allow you to find empty spaces on walls, place objects on the ceiling or on large spaces on the floor, identify places for characters to sit, and a myriad of other spatial understanding queries.
 
-While the spatial mapping solution provided by the HoloLens is designed to be generic enough to meet the needs of the entire gamut of problem spaces, the spatial understanding module was built to support the needs of two specific games. As such, its solution is structured around a specific process and set of assumptions:
+While the spatial mapping solution provided by HoloLens is designed to be generic enough to meet the needs of the entire gamut of problem spaces, the spatial understanding module was built to support the needs of two specific games. As such, its solution is structured around a specific process and set of assumptions:
 * **Fixed size playspace**: The user specifies the maximum playspace size in the init call.
 * **One-time scan process**: The process requires a discrete scanning phase where the user walks around, defining the playspace. Query functions will not function until after the scan has been finalized.
 * **User driven playspace “painting”**: During the scanning phase, the user moves and looks around the plays pace, effectively painting the areas which should be included. The generated mesh is important to provide user feedback during this phase.
@@ -43,6 +43,10 @@ When you load the spatial understanding module, the first thing you'll do is sca
 The mesh seen during this phase is an important piece of visual feedback that lets users know what parts of the room are being scanned. The DLL for the spatial understanding module internally stores the playspace as a grid of 8cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume.
 
 ![Spatial mapping mesh in white and understanding playspace mesh in green](images/spatial-mapping-500px.png)
+
+Spatial mapping mesh in white and understanding playspace mesh in green
+
+
 
 The included SpatialUnderstanding.cs file manages the scanning phase process. It calls the following functions:
 * **SpatialUnderstanding_Init**: Called once at the start.
@@ -156,6 +160,10 @@ Wrapper functions are provided in the Unity module for easy creation of custom s
 
 ![The blue rectangle highlights the results of the chair shape query.](images/chair-shape-query-500px.png)
 
+The blue rectangle highlights the results of the chair shape query.
+
+
+
 ### Object placement solver
 
 Object placement queries can be used to identify ideal locations in the physical room to place your objects. The solver will find the best-fit location given the object rules and constraints. In addition, object queries persist until the object is removed with **Solver_RemoveObject** or **Solver_RemoveAllObjects** calls, allowing constrained multi-object placement.
@@ -245,6 +253,9 @@ If successful, an **ObjectPlacementResult** structure containing the placement p
 
 ![The blue boxes show the result from three Place On Floor queries with "away from camera position" rules.](images/away-from-camera-position-500px.png)
 
+The blue boxes show the result from three Place On Floor queries with "away from camera position" rules.
+
+
 **Tips:**
 * When solving for placement location of multiple objects required for a level or application scenario, first solve indispensable and large objects to maximize the probability that a space can be found.
 * Placement order is important. If object placements cannot be found, try less constrained configurations. Having a set of fallback configurations is critical to supporting functionality across many room configurations.
@@ -286,6 +297,9 @@ In the Unity sample, the cursor casts a ray each frame. First, against Unity’s
 
 ![Raycast result reporting intersection with the floor.](images/raycast-result-500px.jpg)
 
+Raycast result reporting intersection with the floor.
+
+
 ## Get the code
 
 The open-source code is available in [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity). Let us know on the [HoloLens Developer Forums](https://forums.hololens.com/) if you use the code in a project. We can't wait to see what you do with it!
@@ -306,4 +320,3 @@ The open-source code is available in [MixedRealityToolkit](https://github.com/Mi
 * [Room scan visualization](room-scan-visualization.md)
 * [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 * [Asobo Studio: Lessons from the frontline of HoloLens development](http://www.gamesindustry.biz/articles/2016-05-12-asobo-lessons-from-the-frontline-of-ar-development)
-* [Case studies](category/case-studies.md)

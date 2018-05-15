@@ -1,11 +1,11 @@
 ---
 title: Holograms 220
-description: 
-author: 
-ms.author: neerajw
-ms.date: 2/28/2018
+description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of spatial sound concepts.
+author: keveleigh
+ms.author: kurtie
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial sound
 ---
 
 
@@ -27,9 +27,9 @@ keywords:
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-220-SpatialSound.zip) required by the project. Requires Unity 2017.2 or later.
-* If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-220.zip). This release may no longer be up-to-date.
-* If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-220.zip). This release may no longer be up-to-date.
-* If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-220.zip). This release may no longer be up-to-date.
+    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-220.zip). This release may no longer be up-to-date.
+    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-220.zip). This release may no longer be up-to-date.
+    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-220.zip). This release may no longer be up-to-date.
 * Unarchive the files to your desktop or other easy to reach location.
 
 **Errata and Notes**

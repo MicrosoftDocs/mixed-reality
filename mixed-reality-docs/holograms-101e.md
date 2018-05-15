@@ -1,11 +1,11 @@
 ---
 title: Holograms 101E
-description: <meta name="description" content="Follow this coding walkthrough using Unity, Visual Studio and the HoloLens Emulator to learn the basics of a holographic application." />
-author: 
-ms.author: neerajw
-ms.date: 2/28/2018
+description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens Emulator to learn the basics of a holographic application.
+author: keveleigh
+ms.author: kurtie
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial, emulator
 ---
 
 
@@ -14,16 +14,16 @@ keywords:
 
  >[!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
 
-This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Holographic and HoloLens features including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
+This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
 
 **Prerequisites**
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) required by the project. Requires Unity 2017.2 or later.
-* If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
-* If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
-* If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).
+    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
+    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
+    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).
 * Unarchive the files to your desktop or other easy to reach location. Keep the folder name as **Origami**.
 
 ## Chapter 1 - "Holo" world
@@ -56,9 +56,9 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * In the **Hierarchy Panel**, click on **Create** and **Create Empty**.
 * Right-click the new **GameObject** and select Rename. Rename the GameObject to **OrigamiCollection**.
 * From the **Holograms** folder in the **Project Panel**:
-* Drag **Stage** into the Hierarchy to be a child of **OrigamiCollection**.
-* Drag **Sphere1** into the Hierarchy to be a child of **OrigamiCollection**.
-* Drag **Sphere2** into the Hierarchy to be a child of **OrigamiCollection**.
+    * Drag **Stage** into the Hierarchy to be a child of **OrigamiCollection**.
+    * Drag **Sphere1** into the Hierarchy to be a child of **OrigamiCollection**.
+    * Drag **Sphere2** into the Hierarchy to be a child of **OrigamiCollection**.
 * Right-click the **Directional Light** object in the **Hierarchy Panel** and select **Delete**.
 * From the **Holograms** folder, drag **Lights** into the root of the **Hierarchy Panel**.
 * In the **Hierarchy**, select the **OrigamiCollection**.
@@ -84,9 +84,9 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * Open the **App** folder.
 * Open the **Origami Visual Studio Solution**.
 * Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.
-* Click on the arrow next to the Device button, and select **HoloLens Emulator**.
-* Click **Debug -> Start Without debugging** or press **Ctrl + F5**.
-* After some time the emulator will start with the Origami project. When first launching the [emulator](using-the-hololens-emulator.md), it can take as long as 15 minutes for the emulator to start up. Once it starts, do not close it.
+    * Click on the arrow next to the Device button, and select **HoloLens Emulator**.
+    * Click **Debug -> Start Without debugging** or press **Ctrl + F5**.
+    * After some time the emulator will start with the Origami project. When first launching the [emulator](using-the-hololens-emulator.md), it can take as long as 15 minutes for the emulator to start up. Once it starts, do not close it.
 
 ## Chapter 2 - Gaze
 
@@ -111,10 +111,7 @@ In this chapter, we are going to introduce the first of three ways of interactin
 * Double-click the **WorldCursor** script to open it in Visual Studio.
 * Copy and paste this code into **WorldCursor.cs** and **Save All**.
 
-
-
-
-```
+```cs
 using UnityEngine;
 
 public class WorldCursor : MonoBehaviour
@@ -158,6 +155,7 @@ public class WorldCursor : MonoBehaviour
     }
 }
 ```
+
 * Rebuild the app from **File > Build Settings**.
 * Return to the Visual Studio solution previously used to deploy to the emulator.
 * Select 'Reload All' when prompted.
@@ -180,10 +178,7 @@ We'll start by creating a script than can detect the Select gesture.
 * Drag the **GazeGestureManager** script onto the **OrigamiCollection** object in the Hierarchy.
 * Open the **GazeGestureManager** script in Visual Studio and add the following code:
 
-
-
-
-```
+```cs
 using UnityEngine;
 using UnityEngine.XR.WSA.Input;
 
@@ -247,16 +242,14 @@ public class GazeGestureManager : MonoBehaviour
     }
 }
 ```
+
 * Create another script in the Scripts folder, this time named **SphereCommands**.
 * Expand the **OrigamiCollection** object in the Hierarchy view.
 * Drag the **SphereCommands** script onto the **Sphere1** object in the Hierarchy panel.
 * Drag the **SphereCommands** script onto the **Sphere2** object in the Hierarchy panel.
 * Open the script in Visual Studio for editing, and replace the default code with this:
 
-
-
-
-```
+```cs
 using UnityEngine;
 
 public class SphereCommands : MonoBehaviour
@@ -273,6 +266,7 @@ public class SphereCommands : MonoBehaviour
     }
 }
 ```
+
 * Export, build and deploy the app to the HoloLens emulator.
 * Look around the scene, and center on one of the spheres.
 * Press the **A** button on the Xbox controller or press the Spacebar to simulate the Select gesture.
@@ -293,10 +287,7 @@ In this chapter, we'll add support for two [voice commands](voice-input.md): "Re
 * Open the **SpeechManager** script in Visual Studio.
 * Copy and paste this code into **SpeechManager.cs** and **Save All**:
 
-
-
-
-```
+```cs
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -344,13 +335,11 @@ public class SpeechManager : MonoBehaviour
     }
 }
 ```
+
 * Open the **SphereCommands** script in Visual Studio.
 * Update the script to read as follows:
 
-
-
-
-```
+```cs
 using UnityEngine;
 
 public class SphereCommands : MonoBehaviour
@@ -398,6 +387,7 @@ public class SphereCommands : MonoBehaviour
     }
 }
 ```
+
 * Export, build and deploy the app to the HoloLens emulator.
 * The emulator will support your PC's microphone and respond to your voice: adjust the view so the cursor is on one of the spheres, and say "Drop Sphere".
 * Say "**Reset World**" to bring them back to their initial positions.
@@ -416,21 +406,18 @@ In this chapter, we'll add music to the app, and then trigger sound effects on c
 * Find the **Spatializer Plugin** setting and select **MS HRTF Spatializer**.
 * From the **Holograms** folder, drag the **Ambience** object onto the **OrigamiCollection** object in the Hierarchy Panel.
 * Select **OrigamiCollection** and find the **Audio Source** component. Change these properties:
-* Check the **Spatialize** property.
-* Check the **Play On Awake**.
-* Change **Spatial Blend** to **3D** by dragging the slider all the way to the right.
-* Check the **Loop** property.
-* Expand **3D Sound Settings**, and enter **0.1** for **Doppler Level**.
-* Set **Volume Rolloff** to **Logarithmic Rolloff**.
-* Set **Max Distance** to **20**.
+    * Check the **Spatialize** property.
+    * Check the **Play On Awake**.
+    * Change **Spatial Blend** to **3D** by dragging the slider all the way to the right.
+    * Check the **Loop** property.
+    * Expand **3D Sound Settings**, and enter **0.1** for **Doppler Level**.
+    * Set **Volume Rolloff** to **Logarithmic Rolloff**.
+    * Set **Max Distance** to **20**.
 * In the **Scripts** folder, create a script named **SphereSounds**.
 * Drag **SphereSounds** to the **Sphere1** and **Sphere2** objects in the Hierarchy.
 * Open **SphereSounds** in Visual Studio, update the following code and **Save All**.
 
-
-
-
-```
+```cs
 using UnityEngine;
 
 public class SphereSounds : MonoBehaviour
@@ -507,6 +494,7 @@ public class SphereSounds : MonoBehaviour
     }
 }
 ```
+
 * Save the script, and return to Unity.
 * Export, build and deploy the app to the HoloLens emulator.
 * Wear headphones to get the full effect, and move closer and further from the Stage to hear the sounds change.
@@ -526,8 +514,8 @@ Now we are going to use [spatial mapping](spatial-mapping.md) to place the game 
 * Drag the **Spatial Mapping** asset into the root of the **Hierarchy**.
 * Click on the **Spatial Mapping** object in the Hierarchy.
 * In the **Inspector panel**, change the following properties:
-* Check the **Draw Visual Meshes** box.
-* Locate **Draw Material** and click the circle on the right. Type "**wireframe**" into the search field at the top. Click on the result and then close the window.
+    * Check the **Draw Visual Meshes** box.
+    * Locate **Draw Material** and click the circle on the right. Type "**wireframe**" into the search field at the top. Click on the result and then close the window.
 * Export, build and deploy the app to the HoloLens emulator.
 * When the app runs, a mesh of a previously scanned real-world living room will be rendered in wireframe.
 * Watch how a rolling sphere will fall off the stage, and onto the floor!
@@ -538,10 +526,7 @@ Now we'll show you how to move the OrigamiCollection to a new location:
 * Drag the **TapToPlaceParent** script onto the Stage object.
 * Open the **TapToPlaceParent** script in Visual Studio, and update it to be the following:
 
-
-
-
-```
+```cs
 using UnityEngine;
 
 public class TapToPlaceParent : MonoBehaviour
@@ -596,6 +581,7 @@ public class TapToPlaceParent : MonoBehaviour
     }
 }
 ```
+
 * Export, build and deploy the app.
 * Now you should now be able to place the game in a specific location by gazing at it, using the Select gesture (**A** or Spacebar) and then moving to a new location, and using the Select gesture again.
 

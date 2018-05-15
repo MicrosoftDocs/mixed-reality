@@ -1,11 +1,11 @@
 ---
 title: Mixed Reality Partner Program
-description: 
-author: 
+description: Introduces the Mixed Reality Partner Program and outlines the requirements, target industries, and benefits of the program.
+author: cjdgit
 ms.author: crderr
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: mrpp, partner, agency, agencies, commercial, enterprise
 ---
 
 
@@ -43,16 +43,23 @@ There are several commercial use cases that span our target industries:
 The program is a four-phased program with incentives (benefits) that are earned as the partner achieves key milestones, such as the successful completion of business planning, technical training, or implementation of a POC, pilot, or deployment.
 
 The four phases of the program are:
-1. [Intake application](mixed-reality-partner-program.md#phase-1:-intake-application)
-2. [Onboarding](mixed-reality-partner-program.md#phase-2:-onboarding)
-3. [Readiness training](mixed-reality-partner-program.md#phase-3:-readiness-training)
-4. [Customer engagement](mixed-reality-partner-program.md#phase-4:-customer-engagement)
+1. [Intake application](#phase-1-intake-application)
+2. [Onboarding](#phase-2-onboarding)
+3. [Readiness training](#phase-3-readiness-training)
+4. [Customer engagement](#phase-4-customer-engagement)
 
 ### Partner benefits summary
 
-The four categories of incentives of the program are 1) joint business planning, 2) technical readiness training, 3) technical assistance, and 4) sales and marketing enablement. For details on how to qualify for these incentives, see [Partner incentives](mixed-reality-partner-program.md#partner-incentives).
+The four categories of incentives of the program are:
+1. Joint business planning
+2. Technical readiness training
+3. Technical assistance
+4. Sales and marketing enablement
 
-![The four categories of program incentives.](images/benefits-750px.jpg)
+For details on how to qualify for these incentives, see [Partner incentives](mixed-reality-partner-program.md#partner-incentives).
+
+![The four categories of program incentives.](images/benefits-750px.jpg)<br>
+*The four categories of program incentives*
 
 Joint business planning
 * Connection to partner community (SIs and agencies)
@@ -96,7 +103,7 @@ Business performance
 
 ### Minimum application requirements
 
-Acceptance into the program is based on an [application](mixed-reality-partner-program.md#phase-1:-intake-application) and interview. Partners must meet these minimum requirements to qualify for the Mixed Reality Partner Program. Meeting the minimum requirement is not a guarantee of entry.
+Acceptance into the program is based on an [application](#phase-1-intake-application) and interview. Partners must meet these minimum requirements to qualify for the Mixed Reality Partner Program. Meeting the minimum requirement is not a guarantee of entry.
 
 Systems integrator and solution provider minimum requirements:
 * Minimum of 25 full time employees
@@ -112,9 +119,10 @@ Digital agency minimum requirements:
 
 ## Program framework
 
-The MRPP program consist of four phases starting with an application.
+The MRPP program consist of four phases starting with an application:
 
-![The four phases of the MRPP program: intake, onboarding, training, and engagement.](images/phases-detailed-view-(004)-750px.png)
+![The four phases of the MRPP program: intake, onboarding, training, and engagement.](images/phases-detailed-view-(004)-750px.png)<br>
+*The four phases of the MRPP program: intake, onboarding, training, and engagement*
 
 ### Phase 1: Intake application
 
@@ -127,7 +135,7 @@ Once we receive your application, we will review it for fit within the program. 
 2. The application did not align with our current needs such as target industries, skills, or location.
 3. The program is full. We will keep you application on record for another 90 days.
 
-If the application looks promising, one of our regional partner managers (RPMs) will reach out to schedule a phone interview with you. The interview will be schedule for one hour. We ask that you have both a business and technical leader from your company on the call. Usually one of these roles will also be the your company's sponsor of the partnership, but if not, please have the internal sponsor on the call as well. During the interview, we will ask some deeper questions pertaining to the answers on your application, including:
+If the application looks promising, one of our regional partner managers (RPMs) will reach out to schedule a phone interview with you. The interview will be scheduled for one hour. We ask that you have both a business and technical leader from your company on the call. Usually one of these roles will also be your company's sponsor of the partnership, but if not, please have the internal sponsor on the call as well. During the interview, we will ask some deeper questions pertaining to the answers on your application, including:
 * Business opportunities related to Windows Mixed Reality
 * How you approach envisioning and design
 * Team makeup and location
@@ -162,8 +170,8 @@ Please reference [Why HoloLens](https://www.microsoft.com/en-us/hololens/why-hol
 
 The exit criteria for the readiness step includes:
 1. Deliver to a customer a HoloLens app meets our [app quality criteria](app-quality-criteria.md). There are basically two ways to complete this criteria:
-* Fast-track: show us a finished HoloLens project you completed for a customer
-* Readiness training: we will provide training and mentorship through the process of you completing a HoloLens project for a customer
+   * Fast-track: show us a finished HoloLens project you completed for a customer
+   * Readiness training: we will provide training and mentorship through the process of you completing a HoloLens project for a customer
 2. Complete our sales and marketing readiness training
 3. Complete a business plan with us that includes a view into your MR opportunity pipeline
 
@@ -189,7 +197,7 @@ Our readiness training program is designed to help your company deliver quality 
 * A storyboard check-point review for the POC
 * A mid-term POC check-point review
 * A final POC review and pass/no-pass grade
-* Any variation to this format will be discuss during the [onboarding call](mixed-reality-partner-program.md#phase-2:-onboarding)
+* Any variation to this format will be discuss during the [onboarding call](#phase-2-onboarding)
 
 The final POC must pass our quality bar. If you don’t pass our quality bar, we will provide you details as to why. You will have 30 days to make improvements and try again. If you don't pass the second time, you must enter through the fast-track program.
 
@@ -201,7 +209,7 @@ Once you graduate from the Readiness phase, your journey as a Mixed Reality Part
 * **Execute account plans that drive device sales.** We will be looking at the number units sold through your efforts including POC, pilots, and large deployments. As a part of this, we will want to understand your MR opportunity pipeline. This will help us better understand market trends, product needs, and (in general) where we should be putting our outbound efforts and resources.
 * **Deliver light-up scenarios.** We've only scratched the surface of how MR will benefit businesses and consumers. Compelling demos and applications show people what's possible and spawn new ideas. We value partners that are contributing to the Windows Mixed Reality Store. There are also opportunity to showcase your work at our Microsoft Technology Centers and other high-profile locations and events.
 * **Contribute to the MR community.** Windows Mixed Reality is a growing and active community, and being a part of it means learning from each other. We value partners who contribute to our forums and open source projects. Blog, speaking opportunities, hackathons, and other events are all great ways to get involved.
-* **Establish a deep partnership with us.** We encourage your to get to know us and stay in contact. Let us know about exciting new developments and opportunities. Contribute to our events and summits. Occasionally we may offer early access to information or hardware, so engage and give us feedback. By helping us, we can better help you.
+* **Establish a deep partnership with us.** We encourage you to get to know us and stay in contact. Let us know about exciting new developments and opportunities. Contribute to our events and summits. Occasionally we may offer early access to information or hardware, so engage and give us feedback. By helping us, we can better help you.
 
 All of the above represents elements of a business plan. You should expect your Microsoft team to review during our quarterly business updates. It is important to understand that graduation from the readiness program is not a long-term guarantee of staying in the program.
 
@@ -209,7 +217,8 @@ All of the above represents elements of a business plan. You should expect your 
 
 The Mixed Reality Partner Program includes a rich set of partner incentives that are received (“unlocked”) by partners as they move through the program. The graphic below illustrates just some of the incentives that are unlocked in each phase.
 
-![The incentives of the program for each phase.](images/mrpp-phases-500px.png)
+![The incentives of the program for each phase.](images/mrpp-phases-500px.png)<br>
+*The incentives of the program for each phase*
 
 ### Joint business planning
 
@@ -236,7 +245,10 @@ Most of these insights will be communicated during Quarterly Business Updates, w
 
 **Partner connections**
 
-The Microsoft team will help make connections between partners in the program to optimize their ability to move a customer from POC to deployment. One of the most important business planning topics we cover in the Onboarding phase is the whether a partner will drive a customer engagement from POC to pilot to deployment with or without assistance from another partner. ![Work direct with a customer or outsource development to an MRPP agency partner.](images/d2c-500px.png)
+The Microsoft team will help make connections between partners in the program to optimize their ability to move a customer from POC to deployment. One of the most important business planning topics we cover in the Onboarding phase is whether a partner will drive a customer engagement from POC to pilot to deployment with or without assistance from another partner. 
+
+![Work direct with a customer or outsource development to an MRPP agency partner.](images/d2c-500px.png)<br>
+*Work directly with a customer or outsource development to an MRPP agency partner*
 
 While some partners will have the capabilities to drive a project end to end, we’ve learned through experience that projects are often most successful when the SI partners with a digital agency on the mixed reality creative development work. Likewise, we find that digital agencies are most successful when they partner with an SI to help drive deployment and backend IT integration (security, MDM, etc.).
 
@@ -285,7 +297,9 @@ As part of readiness training, the Microsoft team provides partners sales and ma
 * selling 101
 * Generating demand with digital marketing
 
-Partners that complete the sales and marketing workshop receive access to a marketing and sales bill of materials that contains content and tools to support partner-led sales and marketing. Customer POC
+Partners that complete the sales and marketing workshop receive access to a marketing and sales bill of materials that contains content and tools to support partner-led sales and marketing. 
+
+**Customer POC**
 
 To “graduate” from the Readiness training phase, partners must conduct a successful customer proof of concept. To help partners meet this requirement, the Microsoft team will assist with the following:
 * Help the partner scope potential target accounts
@@ -325,15 +339,16 @@ The Microsoft team is available to provide technical assistance with pre-sales c
 
 ### Sales and marketing enablement
 
-An important aim of the Mixed Reality Partner Program is to help our partners market and sell their solutions and services. When accepted into the program, partners get access to content, tools, and a variety of sales and marketing support services. **Partner-lead sales and marketing** Microsoft provides assistance via market intelligence, content, tools, joint go-to-market execution (including PR and case study support), and a range of incentives; however, partners are expected to lead their own sales and marketing efforts.
+An important aim of the Mixed Reality Partner Program is to help our partners market and sell their solutions and services. When accepted into the program, partners get access to content, tools, and a variety of sales and marketing support services. 
+
+**Partner-led sales and marketing** 
+
+Microsoft provides assistance via market intelligence, content, tools, joint go-to-market execution (including PR and case study support), and a range of incentives; however, partners are expected to lead their own sales and marketing efforts.
 
 There are four key principles of partner-led sales and marketing of mixed reality solutions:
-
-|  Differentiated  |  Performance-based | 
-|  Digital first  |  Intelligent | 
 * **Differentiated.** Partners lead with their own differentiated services/product offering, and they should have or develop advanced marketing skills and a differentiated value proposition.
 * **Performance-based.** As part of business planning, partners agree to specific, measurable performance metrics, and demonstrate measurable return on marketing investment in order to receive additional investment and incentives via the program.
-* **Digital first.**Partners should prioritize digital marketing and sales strategies. They should collaborate with and learn from digital marketing agencies (if needed) to plan and execute cost-effective digital marketing and social selling strategies across all their customer engagement channels.
+* **Digital first.** Partners should prioritize digital marketing and sales strategies. They should collaborate with and learn from digital marketing agencies (if needed) to plan and execute cost-effective digital marketing and social selling strategies across all their customer engagement channels.
 * **Intelligent.** Partners should leverage market data insights, account data, analyst report, Microsoft customer data and guidance to tune sales and marketing strategies, and to execute account-based marketing campaigns.
 
 **Sales and marketing content**
@@ -354,9 +369,13 @@ Partners receive assistance with building case studies after successful customer
 
 Partners receive PR assistance for news-worthy events, customer wins, and large deployments. In addition, partners may be invited to participate in press briefings, speaking engagements, and other opportunities to drive press for their company.
 
-**Web presence** Partners get placement of company logo and short description on HoloLens.com/partners site, the Microsoft Partner Center, and the soon-to-be-published Mixed Reality web site. In addition, company contact info will be included in auto-locator on HoloLens web site
+**Web presence** 
 
-**Microsoft Technology Centers** Program partners are welcome to use Microsoft MTCs (with over 40 locations around the globe) to engage customers, empower employees, optimize operations, and reinvent products and business models. The MTC staff and local Microsoft account teams will help you position your offering to customers, conduct envisioning workshops with your customers, and demo your solutions on Microsoft technologies. Our goal is to move your customer closer to deployment.
+Partners get placement of company logo and short description on HoloLens.com/partners site, the Microsoft Partner Center, and the soon-to-be-published Mixed Reality web site. In addition, company contact info will be included in auto-locator on HoloLens web site.
+
+**Microsoft Technology Centers** 
+
+Program partners are welcome to use Microsoft MTCs (with over 40 locations around the globe) to engage customers, empower employees, optimize operations, and reinvent products and business models. The MTC staff and local Microsoft account teams will help you position your offering to customers, conduct envisioning workshops with your customers, and demo your solutions on Microsoft technologies. Our goal is to move your customer closer to deployment.
 
 ## See also
 * [App quality criteria](app-quality-criteria.md)

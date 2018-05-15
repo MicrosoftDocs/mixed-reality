@@ -1,11 +1,11 @@
 ---
 title: Holographic frame
-description: 
-author: 
+description: Users see the world of mixed reality through the holographic frame.
+author: mavitazk
 ms.author: mavitazk
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, Windows Mixed Reality, holographic frame, field of view
 ---
 
 
@@ -40,7 +40,8 @@ Placing objects in the periphery can encourage users to look to the side and thi
 
 For mixed reality experiences with large objects or many objects, it is crucial to consider how much head and neck movement is necessary to interact with content. Experiences can be divided into three categories in terms of head movement: **Horizontal** (side to side), **vertical** (up and down), or **immersive** (both horizontal and vertical). When possible, limit the majority of interactions to either horizontal or vertical categories, ideally with most experiences taking place in the center of the holographic frame while the user's head is in a neutral position. Avoid interactions that cause the user to constantly move their view to an unnatural head positions (for example, always looking up to access a key menu interaction).
 
-![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2-750px.png)
+![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2-750px.png)<br>
+*Optimal region for content is 0 to 35 degrees below horizon*
 
 Horizontal head movement is more [comfortable](comfort.md) for frequent interactions, while vertical movements should be reserved for uncommon events. For example, an experience involving a long horizontal timeline should limit vertical head movement for interactions (like looking down at a menu).
 
@@ -90,7 +91,8 @@ A store experience from Lowe's invites customers into a full-scale mockup of a k
 
 Physical surfaces act as static landmarks for the user to ground themselves in the experience, as a Lowe's associate guides the user through different product options and finishes. In this way, the associate can verbally direct the user's attention to the 'refrigerator' or 'center of the kitchen' to showcase digital content.
 
-![A Lowe's associate uses a tablet to guide customers through the HoloLens experience.](images/loweskitchen-750px.jpg)
+![A Lowe's associate uses a tablet to guide customers through the HoloLens experience.](images/loweskitchen-750px.jpg)<br>
+*A Lowe's associate uses a tablet to guide customers through the HoloLens experience.*
 
 The user's experience is managed, in part, by a tablet experience controlled by the Lowe's associate. Part of the associate's role in this case would also be to limit excessive head movement, directing their attention smoothly across the points of interest in the kitchen. The tablet experience also provides the Lowe's associate with gaze data in the form of a heatmap view of the kitchen, helping understand where the user is dwelling (for example, on a specific area of cabinetry) to more accurately provide them with remodeling guidance.
 
@@ -100,7 +102,8 @@ For a deeper look at the Lowe's Kitchen experience, see [Microsoft's keynote at 
 
 In the HoloLens game Fragments, you living room is transformed into virtual crime scene showing clues and evidence, as well as a virtual meeting room, where you talk with characters that sit on your chairs and lean on your walls.
 
-![Fragments was designed to take place in a user's home, with characters interacting with real-world objects and surfaces.](images/fragments-750px.jpg)
+![Fragments was designed to take place in a user's home, with characters interacting with real-world objects and surfaces.](images/fragments-750px.jpg)<br>
+*Fragments was designed to take place in a user's home, with characters interacting with real-world objects and surfaces.*
 
 When users initially begin the experience, they are given a short period of adjustment, where very little interaction is required, instead encouraging them to look around. This also helps ensure the room is properly mapped for the game's interactive content.
 
@@ -110,11 +113,13 @@ Throughout the experience, characters become focal points and act as visual dire
 
 In the Destination: Mars experience featured at [NASA's Kennedy Space Center](https://blogs.windows.com/devices/2016/09/19/hololens-experience-destination-mars-now-open-at-kennedy-space-center-visitor-complex/), visitors were invited into an immersive trip to the surface of Mars, guided by virtual representation of legendary astronaut Buzz Aldrin.
 
-![A virtual Buzz Aldrin becomes the focal point for users in Destination: Mars.](images/destinationmars-750px.png)
+![A virtual Buzz Aldrin becomes the focal point for users in Destination: Mars.](images/destinationmars-750px.png)<br>
+*A virtual Buzz Aldrin becomes the focal point for users in Destination: Mars.*
 
 As an immersive experience, these users were encouraged to look around, moving their head in all directions to see the virtual Martian landscape. Although to ensure the comfort of the users, Buzz Aldrin's narration and virtual presence provided a focal point throughout the experience. This virtual recording of Buzz (created by [Microsoft's Mixed Reality Capture Studios](https://www.microsoft.com/en-us/mixed-reality/capture-studios)) stood at real, human size, in the corner of the room allowing users to see him in near-complete view. Buzz's narration directed users to focus on different points in the environment (for example, a set of Martian rocks on the floor or a mountain range in the distance) with specific scene changes or objects introduced by him.
 
-![The virtual narrators will turn to follow a user's movement, creating a powerful focal point throughout the experience.](images/gazereset-750px.png)
+![The virtual narrators will turn to follow a user's movement, creating a powerful focal point throughout the experience.](images/gazereset-750px.png)<br>
+*The virtual narrators will turn to follow a user's movement, creating a powerful focal point throughout the experience.*
 
 The realistic representation of Buzz provided a powerful focal point, complete with subtle techniques to turn Buzz toward the user to feel as though he is there, speaking to you. As the user moves about the experience, Buzz will shift toward you to a threshold before returning to a neutral state if the user moves too far beyond his periphery. If the user looks way from Buzz completely (for example, to look at something elsewhere in the scene) then back to Buzz, the narrator's directional position will once again be focused on the user. Techniques like this provide a powerful sense of immersion and create a focal point within the holographic frame, reducing excessive head movement and promoting [user comfort](comfort.md).
 

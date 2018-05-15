@@ -1,11 +1,11 @@
 ---
 title: Hologram stability
-description: 
-author: 
+description: HoloLens automatically stabilizes holograms, but there are steps developers can take to improve hologram stability further.
+author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: holograms, stability, hololens
 ---
 
 
@@ -31,7 +31,7 @@ When environment issues, inconsistent or low rendering rates, or other app probl
 
 Frame rate is the first pillar of hologram stability. For holograms to appear stable in the world, each image presented to the user must have the holograms drawn in the correct spot. The displays on HoloLens refresh 240 times a second, showing four separate color fields for each newly rendered image, resulting in a user experience of 60 FPS (frames per second). To provide the best experience possible, application developers must maintain 60 FPS, which translates to consistently providing a new image to the operating system every 16 milliseconds.
 
-**60 FPS**\
+**60 FPS**
  To draw holograms to look like they're sitting in the real world, HoloLens needs to render images from the user's position. Since image rendering takes time, HoloLens predicts where a user's head will be when the images are shown in the displays. This prediction algorithm is an approximation. HoloLens has hardware that adjusts the rendered image to account for the discrepancy between the predicted head position and the actual head position. This makes the image the user sees appear as if it was rendered from the correct location, and holograms feel stable. The image updates work best with small changes, and it can't completely fix certain things in the rendered image like motion-parallax.
 
 By rendering at 60 FPS, you are doing three things to help make stable holograms:
@@ -39,12 +39,12 @@ By rendering at 60 FPS, you are doing three things to help make stable holograms
 2. Making it so every image reaching the user's eyes have a consistent amount of latency. If you render at 30fps, the display still displays images at 60 FPS. This means the same image will be displayed twice in a row. The second frame will have 16.6ms more latency than the first frame and will have to correct a more pronounced amount of error. This inconsistency in error magnitude can cause unwanted 60hz judder.
 3. Reducing the appearance of judder, which is characterized by uneven motion and double images. Faster hologram motion and lower render rates are associated with more pronounced judder. Therefore, striving to maintain 60 FPS at all times will help avoid judder for a given moving hologram.
 
-**Frame-rate consistency** \
+**Frame-rate consistency**
  Frame rate consistency is as important as a high frames-per-second. Occasionally dropped frames are inevitable for any content-rich application, and the HoloLens implements some sophisticated algorithms to recover from occasional glitches. However, a constantly fluctuating framerate is a lot more noticeable to a user than running consistently at lower frame rates. For example, an application that renders smoothly for 5 frames (60 FPS for the duration of these 5 frames) and then drops every other frame for the next 10 frames (30 FPS for the duration of these 10 frames) will appear more unstable than an application that consistently renders at 30 FPS.
 
 On a related note, the operating system will throttle applications down to 30 FPS when [mixed reality capture](mixed-reality-capture.md) is running.
 
-**Performance analysis** \
+**Performance analysis**
  There are a variety of tools that can be used to benchmark your application frame rate such as:
 * GPUView
 * Visual Studio Graphics Debugger
@@ -64,12 +64,14 @@ Convergence and accommodation are unique because they are extra-retinal cues rel
 
 Placing content at 2.0m is also advantageous because the two displays are designed to fully overlap at this distance. For images placed off this plane, as they move off the side of the holographic frame they will disappear from one display while still being visible on the other. This binocular rivalry can be disruptive to the depth perception of the hologram.
 
+**Optimal distance for placing holograms from the user**
+
 ![Optimal distance for placing holograms from the user](images/distanceguiderendering-750px.png)
 
-**Clip Planes** \
+**Clip Planes**
  For maximum comfort we recommend clipping render distance at 85cm with fadeout of content starting at 1m. In applications where holograms and users are both stationary holograms can be viewed comfortably as near as 50cm. In those cases, applications should place a clip plane no closer than 30cm and fade out should start at least 10cm away from the clip plane. Whenever content is closer than 85cm it is important to ensure that users do not frequently move closer or farther from holograms or that holograms do not frequently move closer to or farther from the user as these situations are most likely to cause discomfort from the vergence-accommodation conflict. Content should be designed to minimize the need for interaction closer than 85cm from the user, but when content must be rendered closer than 85cm a good rule of thumb for developers is to design scenarios where users and/or holograms do not move in depth more than 25% of the time.
 
-**Best practices** \
+**Best practices**
  When holograms cannot be placed at 2m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25m and 5m. In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).
 
 ## Stabilization plane
@@ -87,7 +89,7 @@ Note that when your Unity app runs on an immersive headset connected to a deskto
 
 
 
-```
+```cs
 // SetFocusPoint informs the system about a specific point in your scene to
 // prioritize for image stabilization. The focus point is set independently
 // for each holographic camera.
@@ -106,7 +108,7 @@ Placement of the focus point largely depends on the hologram is looking at. The 
 
 The single most important thing a developer can do to stabilize holograms is to render at 60 FPS. Dropping below 60 FPS will dramatically reduce hologram stability, regardless of the stabilization plane optimization.
 
-**Best practices** \
+**Best practices**
  There is no universal way to set up the stabilization plane and it is app-specific, so the main recommendation is to experiment and see what works best for your scenarios. However, try to align the stabilization plane with as much content as possible because all the content on this plane is perfectly stabilized.
 
 For example:
@@ -115,7 +117,7 @@ For example:
 * If your scene has content at substantially different depths, favor further objects.
 * Make sure to adjust the stabilization point every frame to coincide with the hologram the user is looking at
 
-**Things to Avoid** \
+**Things to Avoid**
  The stabilization plane is a great tool to achieve stable holograms, but if misused it can result in severe image instability.
 * Don't "fire and forget", since you can end up with the stabilization plane behind the user or attached to an object that is no longer in the user's view. Ensure the stabilization plane normal is set opposite camera-forward (e.g. -camera.forward)
 * Don't rapidly change the stabilization plane back and forth between extremes
@@ -123,9 +125,13 @@ For example:
 * Don't let the stabilization plane cut through the user
 * Don't set the focus point when running on a desktop PC rather than a HoloLens, and instead rely on per-pixel depth-based reprojection.
 
-## Color separation
+## Color separation 
 
-![Example of what the color separation of a head-locked white round cursor could look like as a user rotates their head to the side.](images/colorseparationofroundwhitecursor-300px.png) Due to the nature of HoloLens displays, an artifact called "color-separation" can sometimes be perceived. It manifests as the image separating into individual base colors - red, green and blue. The artifact can be especially visible when displaying white objects, since they have large amounts of red, green and blue. It is most pronounced when a user visually tracks a hologram that is moving across the holographic frame at high speed. Another way the artifact can manifest is warping/deformation of objects. If an object has high contrast and/or pure colors (red, green, blue), color-separation will be perceived as warping of different parts of the object.
+Due to the nature of HoloLens displays, an artifact called "color-separation" can sometimes be perceived. It manifests as the image separating into individual base colors - red, green and blue. The artifact can be especially visible when displaying white objects, since they have large amounts of red, green and blue. It is most pronounced when a user visually tracks a hologram that is moving across the holographic frame at high speed. Another way the artifact can manifest is warping/deformation of objects. If an object has high contrast and/or pure colors (red, green, blue), color-separation will be perceived as warping of different parts of the object.
+
+**Example of what the color separation of a head-locked white round cursor could look like as a user rotates their head to the side:**
+
+![Example of what the color separation of a head-locked white round cursor could look like as a user rotates their head to the side.](images/colorseparationofroundwhitecursor-300px.png)
 
 Though it's difficult to completely avoid color separation, there are several techniques available to mitigate it.
 

@@ -1,11 +1,11 @@
 ---
 title: Tracking loss in Unity
-description: 
-author: 
+description: Handling tracking loss within a Unity app.
+author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Unity, tracking loss, tracking loss image
 ---
 
 
@@ -22,24 +22,24 @@ By default, the update loop of the app as well as all messages and events will s
 
 ## Manual Handling
 
-To manually handle tracking loss, you need to go to Edit > Project Settings > Player > Universal Windows Platform settings tab > Windows Holographic and uncheck "On Tracking Loss Pause and Show Image". After which, you need to handle tracking changes with the APIs specified below.
+To manually handle tracking loss, you need to go to **Edit** > **Project Settings** > **Player** > **Universal Windows Platform settings tab** > **Splash Image** > **Windows Holographic** and uncheck "On Tracking Loss Pause and Show Image". After which, you need to handle tracking changes with the APIs specified below.
 
-**Namespace:** *UnityEngine.VR.WSA*
-
+**Namespace:** *UnityEngine.XR.WSA*<br>
 **Type:** *WorldManager*
-* World Manager exposes an event to detect tracking lost/gained (WorldManager.OnPositionalLocatorStateChanged) and a property to query the current state (WorldManager.state)
+
+* World Manager exposes an event to detect tracking lost/gained (*WorldManager.OnPositionalLocatorStateChanged*) and a property to query the current state (*WorldManager.state*)
 * When the tracking state is not active, the camera will not appear to translate in the virtual world even as the user translates. This means objects will no longer correspond to any physical location and all will appear body locked.
 
-When handling tracking changes on your own you either need to poll for the state property each frame or handle the OnPositionalLocatorStateChanged event.
+When handling tracking changes on your own you either need to poll for the state property each frame or handle the *OnPositionalLocatorStateChanged* event.
 
 ### Polling
 
-The most important state is PositionalLocatorState.Active which means tracking is fully functional. Any other state will result in only rotational deltas to the main camera. For example:
+The most important state is *PositionalLocatorState.Active* which means tracking is fully functional. Any other state will result in only rotational deltas to the main camera. For example:
 
-```
+```cs
 void Update()
 {
-    switch (UnityEngine.VR.WSA.WorldManager.state)
+    switch (UnityEngine.XR.WSA.WorldManager.state)
     {
         case PositionalLocatorState.Active:
             // handle active
@@ -57,12 +57,12 @@ void Update()
 
 ### Handling the OnPositionalLocatorStateChanged event
 
-Alternatively and more conveniently, you can also subscribe to OnPositionalLocatorStateChanged to handle the transitions:
+Alternatively and more conveniently, you can also subscribe to *OnPositionalLocatorStateChanged* to handle the transitions:
 
-```
+```cs
 void Start()
 {
-    UnityEngine.VR.WSA.WorldManager.OnPositionalLocatorStateChanged += WorldManager_OnPositionalLocatorStateChanged;
+    UnityEngine.XR.WSA.WorldManager.OnPositionalLocatorStateChanged += WorldManager_OnPositionalLocatorStateChanged;
 }
 
 private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState oldState, PositionalLocatorState newState)

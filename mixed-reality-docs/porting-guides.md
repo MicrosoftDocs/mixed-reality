@@ -1,11 +1,11 @@
 ---
 title: Porting guides
-description: 
-author: 
+description: A step by step walthrough explaining how to port an existing immersive application to Windows Mixed Reality.
+author: ChimeraScorn
 ms.author: cwhite
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: port, porting, unity, middleware, engine, UWP
 ---
 
 
@@ -17,7 +17,7 @@ Windows 10 includes support for immersive and holographic headsets directly. If 
 ## Porting overview
 
 At a high-level, these are the steps involved in porting existing content:
-1. **Make sure your PC is running the Windows 10 Fall Creators Update (16299).** We no longer recommend receiving preview builds from the Insider Fast ring, as those RS4 builds won't be the most stable for mixed reality development.
+1. **Make sure your PC is running the Windows 10 Fall Creators Update (16299).** We no longer recommend receiving preview builds from the Insider Skip Ahead ring, as those builds won't be the most stable for mixed reality development.
 2. **Upgrade to the latest version of your graphics or game engine.** Game engines will need to support the Windows 10 SDK version 10.0.15063.0 (released in April 2017) or higher.
 3. **Upgrade any middleware, plug-ins or components.** If your app contains any components, it's a good idea to upgrade to the latest version. Newer versions of most common plug-ins have support for UWP.
 4. **Remove dependencies on duplicate SDKs**. Depending on which device your content was targeting, you'll need to remove or conditionally compile out that SDK (e.g. SteamVR) so you can target the Windows APIs instead.
@@ -78,13 +78,14 @@ Note: If your application has any dependencies on device specific services, such
 Step 5 is no longer required. We are leaving it here so that the indexing of steps remains the same.
 
 ### Unity step 6: Get your Windows Mixed Reality hardware set up
-1. Review steps in [Immersive headset setup](immersive-headset-setup.md)
+1. Review steps in [Immersive headset setup](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/before-you-start
+)
 2. Learn about [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 
 ### Unity step 7: Target your application to run on Windows Mixed Reality
 1. First, you must remove or conditionally compile out any other library support specific to a particular VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with other VR SDKs, such as Windows Mixed Reality.
-* For example, if your project references the SteamVR SDK, you will need to update your project to exclude those prefabs and script API calls when exporting for the Windows Store build target.
-* Specific steps for conditionally excluding other VR SDKs is coming soon.
+    * For example, if your project references the SteamVR SDK, you will need to update your project to exclude those prefabs and script API calls when exporting for the Windows Store build target.
+    * Specific steps for conditionally excluding other VR SDKs is coming soon.
 2. In your Unity project, [target the Windows 10 SDK](holograms-100.md#target-windows-10-sdk)
 3. For each scene, [setup the camera](holograms-100.md#chapter-2---setup-the-camera)
 
@@ -94,15 +95,15 @@ You can build Mixed Reality experiences across a wide range of [experience scale
 
 If you're porting a **seated-scale experience**, you must ensure Unity is set to the **Stationary** tracking space type:
 
-```
+```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 ```
 
-This sets Unity's world coordinate system to track the [stationary frame of reference](coordinate-systems.md#spatial-coordinate-systems). In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) will appear in front of the user when the app launches. To recenter the user's seated origin, you can call Unity's [XR.InputTracking.Recenter](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.InputTracking.Recenter.html) method.
+This sets Unity's world coordinate system to track the [stationary frame of reference](coordinate-systems.md#spatial-coordinate-systems). In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) will appear in front of the user when the app launches. To recenter the user's seated origin, you can call Unity's [XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) method.
 
 If you're porting a **standing-scale experience** or **room-scale experience**, you'll be placing content relative to the floor. You reason about the user's floor using the **[spatial stage](coordinate-systems.md#spatial-coordinate-systems)**, which represents the user's defined floor-level origin and optional room boundary, set up during first run. For these experiences, you must ensure Unity is set to the **RoomScale** tracking space type. While RoomScale is the default, you'll want to set it explicitly and ensure you get back true, to catch situations where the user has moved their computer away from the room they calibrated:
 
-```
+```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
 {
     // RoomScale mode was set successfully.  App can now assume that y=0 in Unity world coordinate represents the floor.
@@ -139,8 +140,8 @@ Algorithm is based on a blog by Daniel Smilkov: [Largest rectangle in a polygon]
 Each game or application targeting an existing HMD will have a set of inputs that it handles, types of inputs that it needs for the experience, and specific APIs that it calls to get those inputs. We have invested in trying to make it as simple and straightforward as possible to take advantage of the inputs available in Windows Mixed Reality.
 1. Read through the **[Input porting guide for Unity](input-porting-guide-for-unity.md)** for details of how Windows Mixed Reality exposes input, and how that maps to what your application may do today.
 2. Choose whether you are going to leverage Unity's cross-VR-SDK input API, or the MR-specific input API. The general Input.GetButton/Input.GetAxis APIs are used by Unity VR apps today for [Oculus input](https://docs.unity3d.com/Manual/OculusControllers.html) and [OpenVR input](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for motion controllers, this is the easiest path - you should just need to remap buttons and axes in the Input Manager.
-* You can access motion controller data in Unity using either the general cross-VR-SDK Input.GetButton/Input.GetAxis APIs or the MR-specific UnityEngine.XR.WSA.Input APIs. (previously in the UnityEngine.VR.WSA.Input namespace in Unity 5.6)
-* See the [example in Toolkit](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) that combines gamepad and motion controllers.
+    * You can access motion controller data in Unity using either the general cross-VR-SDK Input.GetButton/Input.GetAxis APIs or the MR-specific UnityEngine.XR.WSA.Input APIs. (previously in the UnityEngine.XR.WSA.Input namespace in Unity 5.6)
+    * See the [example in Toolkit](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) that combines gamepad and motion controllers.
 
 ### Unity step 10: Performance testing and tuning
 

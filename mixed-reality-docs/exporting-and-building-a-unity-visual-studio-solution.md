@@ -1,11 +1,11 @@
 ---
 title: Exporting and building a Unity Visual Studio solution
-description: 
+description: This article outlines exporting your mixed reality project from Unity so you can build and deploy in Visual Studio.
 author: 
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: unity, visual studio, export, build, deploy
 ---
 
 
@@ -16,21 +16,29 @@ If you don't intend on using the system keyboard in your application, our recomm
 
 ## How to export from Unity
 
-![Unity build settings](images/unitybuildsettings-300px.png)
-1.  When you are ready to export your project from Unity, open the **File** menu and select **Build Settings...**
-2.  Click **Add Open Scenes** to add your scene to the build
-3.  In the **Build Settings** dialog, choose the following options to export for HoloLens:
-* **Platform:** *Windows Store* and be sure to select **Switch Platform** for your selection to take effect
-* **SDK:** *Universal 10*
-* **UWP Build Type:** *D3D* or *XAML*
-4.  **Optional**: **Unity C# Projects:** Checked. NOTE: Checking this box allows you to 1.) debug your app in the Visual Studio remote debugger, and 2.) edit scripts in the Unity C# project while using IntelliSense for WinRT APIs.
-5.  From the **Build Settings...** window, open **Player Settings...**
-6.  Select the **Settings for Windows Store** tab
-7.  Expand the **Other Settings** group
-8.  In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality Devices** list and confirm **"Windows Mixed Reality"** is listed as a supported device.
-9.  Return to the **Build Settings** dialog
-10. Select **Build**
-11. In the Windows Explorer dialog that appears, create a new folder to hold Unity's build output. Generally, we name the folder "*App*".
+![Unity build settings](images/unitybuildsettings-300px.png)<br>
+*Unity build settings*
+
+1. When you are ready to export your project from Unity, open the **File** menu and select **Build Settings...**
+2. Click **Add Open Scenes** to add your scene to the build.
+3. In the **Build Settings** dialog, choose the following options to export for HoloLens:
+   * **Platform:** *Universal Windows Platform* and be sure to select **Switch Platform** for your selection to take effect.
+   * **SDK:** *Universal 10*.
+   * **UWP Build Type:** *D3D*.
+4. **Optional**: **Unity C# Projects:** Checked.
+
+>[!NOTE]
+>Checking this box allows you to:
+>* Debug your app in the Visual Studio remote debugger.
+>* Edit scripts in the Unity C# project while using IntelliSense for WinRT APIs.
+
+5. From the **Build Settings...** window, open **Player Settings...**
+6. Select the **Settings for Universal Windows Platform** tab.
+7. Expand the **XR Settings** group.
+8. In the **XR Settings** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality Devices** list and confirm **"Windows Mixed Reality"** is listed as a supported device.
+9. Return to the **Build Settings** dialog.
+10. Select **Build**.
+11. In the Windows Explorer dialog that appears, create a new folder to hold Unity's build output. Generally, we name the folder "App".
 12. Select the newly created folder and click **Select Folder**.
 13. Once Unity has finished building, a Windows Explorer window will open to the project root directory. Navigate into the newly created folder.
 14. Open the generated Visual Studio solution file located inside this folder.

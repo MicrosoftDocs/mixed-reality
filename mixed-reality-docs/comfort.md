@@ -1,11 +1,11 @@
 ---
 title: Comfort
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
+author: heldrt
+ms.author: roheld, phguan, mcrisler
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, design, comfort
 ---
 
 
@@ -18,13 +18,16 @@ During natural viewing, the human visual system relies on multiple sources of in
 
 To view objects clearly, humans must [accommodate](https://en.wikipedia.org/wiki/Accommodation_%28eye%29), or adjust their eyes’ focus, to the distance of the object. At the same time, the two eyes must [converge](https://en.wikipedia.org/wiki/Convergence_(eye)) to the object’s distance to avoid seeing double images. In natural viewing, vergence and accommodation are linked. When you view something near (e.g. a housefly close to your nose) your eyes cross and accommodate to a near point. Conversely, if you view something at infinity, your eyes’ lines of sight become parallel and the your eyes accommodates to infinity. In most head-mounted displays users will always accommodate to the focal distance of the display (to get a sharp image), but converge to the distance of the object of interest (to get a single image). When users accommodate and converge to different distances, the natural link between the two cues must be broken and this can lead to visual discomfort or fatigue.
 
+<br>
+
 >[!VIDEO https://www.youtube.com/embed/-606oZKLa_s]
 
 **Guidance for holographic devices**
 
 HoloLens displays are fixed at an optical distance approximately 2.0m away from the user. Thus, users must always accommodate near 2.0m to maintain a clear image in the device. App developers can guide where users' eyes converge by placing content and holograms at various depths. Discomfort from the vergence-accommodation conflict can be avoided or minimized by keeping content to which users converge to as close to 2.0m as possible (i.e. in a scene with lots of depth, place the areas of interest near 2.0m from the user when possible). When content cannot be placed near 2.0m, discomfort from the vergence-accomodation conflict is greatest when the user’s gaze switches back and forth between different distances. In other words, it is much more comfortable to look at a stationary hologram that stays 50cm away than to look at a hologram 50cm away that moves toward and away from you over time.
 
-![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)
+![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)<br>
+*Optimal distance for placing holograms from the user*
 
 **Best practices**
 
@@ -63,14 +66,14 @@ Fortunately, there are tips for implementing user locomotion that can help avoid
 * Always put the user in control of their movements; unexpected self-motion is particularly problematic
 * Humans are very sensitive to the direction of gravity. Therefore, non-user-initiated vertical motions especially should be avoided.
 * **For holographic devices** - One method to allow the user to move to another location in a large virtual environment is to give the impression they're moving a small object in the scene. This effect can be achieved as follows:
-1. Provide an interface where the user can select a spot in the virtual environment where they want to move.
-2. Upon selection, shrink the scene rendering down to a disk around the desired spot.
-3. While keeping the spot selected, allow the user to move it as though it were a small object. The user can then move the selection close to their feet.
-4. Upon deselection, resume rendering the entire scene.
+   1. Provide an interface where the user can select a spot in the virtual environment where they want to move.
+   2. Upon selection, shrink the scene rendering down to a disk around the desired spot.
+   3. While keeping the spot selected, allow the user to move it as though it were a small object. The user can then move the selection close to their feet.
+   4. Upon deselection, resume rendering the entire scene.
 * **For immersive devices** - The preceding holographic device approach does not work as well in an immersive device because it requires the app to render a large black void or another default environment while moving the “disk.” This treatment disrupts one’s sense of immersion. One trick for user locomotion in an immersive headset is the “blink” approach. This implementation provides the user with control over their motion and gives a brief impression of movement, but makes it so brief that the user is less likely to feel disoriented by the purely virtual self-motion:
-1. Provide an interface where the user can select a spot in the virtual environment where they want to move.
-2. Upon selection, begin a very rapid simulated (100 m/s) motion towards that location while quickly fading out the rendering.
-3. Fade the rendering back in after finishing the translation.
+   1. Provide an interface where the user can select a spot in the virtual environment where they want to move.
+   2. Upon selection, begin a very rapid simulated (100 m/s) motion towards that location while quickly fading out the rendering.
+   3. Fade the rendering back in after finishing the translation.
 
 ## Heads-up displays
 
@@ -85,9 +88,8 @@ To avoid eye and neck strain content should be designed so that excessive eye an
 
 The optimal (resting) gaze angle is considered between 10-20 degrees below horizontal, as the head tends to tilt downward slightly, especially during activities.
 
-![Allowable field of view (FOV) as determined by neck range of motion](images/optimal-field-of-view-2.png)
-
-Allowable field of view (FOV) as determined by neck range of motion
+![Allowable field of view (FOV) as determined by neck range of motion](images/optimal-field-of-view-2-750px.png)<br>
+*Allowable field of view (FOV) as determined by neck range of motion*
 
 ## Arm positions
 

@@ -1,11 +1,11 @@
 ---
 title: Using the Windows namespace with Unity apps for HoloLens
-description: 
-author: 
+description: Explains how to make use of WinRT APIs in your Unity project for HoloLens.
+author: MikeRiches
 ms.author: mriches
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Unity, WinRT, windows mixed reality, API, walkthrough 
 ---
 
 
@@ -18,7 +18,7 @@ This page describes how to make use of WinRT APIs in your Unity project for Holo
 
 WinRT APIs will only be used in Unity project builds that target Windows 8, Windows 8.1, or the Universal Windows Platform; any code that you write in Unity scripts that targets WinRT APIs must be conditionally included for only those builds. This is done using the NETFX_CORE or WINDOWS_UWP preprocessor definitions. This rule applies to using statements, as well as other code.
 
-The following code snippet is from the Unity manual page for [Windows Store Apps: WinRT API in C# scripts](http://docs.unity3d.com/Manual/windowsstore-scripts.html). In this example, an advertising ID is returned, but only on Windows 8.0 or higher target builds:
+The following code snippet is from the Unity manual page for [Universal Windows Platform: WinRT API in C# scripts](http://docs.unity3d.com/Manual/windowsstore-scripts.html). In this example, an advertising ID is returned, but only on Windows 8.0 or higher target builds:
 
 ```
 using UnityEngine;

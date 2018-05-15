@@ -1,11 +1,11 @@
 ---
 title: Unity Play Mode
-description: 
-author: 
-ms.author: alexturn
-ms.date: 2/28/2018
+description: Using Play Mode in the Unity editor to preview your changes on a device without deploying an app.
+author: JonMLyons
+ms.author: jlyons
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Unity, remoting, holographic remoting, holographic remoting player
 ---
 
 
@@ -17,7 +17,7 @@ A fast way to work on your Unity project is to use "Play Mode". This runs your a
 ## Unity Play Mode with Holographic Remoting
 
 With Holographic Remoting, you can experience your app on the HoloLens, while it runs in the Unity editor on your PC. Gaze, gesture, voice, and spatial mapping input is sent from your HoloLens to your PC. Rendered frames are then sent back to your HoloLens. This is a great way to quickly debug your app without building and deploying a full project.
-1. On your HoloLens, go to the **Windows Store** and install the **Holographic Remoting Player** app.
+1. On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/en-us/store/p/holographic-remoting-player/9nblggh4sv40)** app.
 2. On your HoloLens, start the **Holographic Remoting Player** app.
 3. In Unity, go to the **Window** menu and select **Holographic Emulation**.
 4. Set **Emulation Mode** to **Remote to Device**.

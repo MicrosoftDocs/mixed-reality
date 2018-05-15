@@ -1,11 +1,11 @@
 ---
 title: Case study - Using spatial sound in RoboRaid
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: Spatial sound is one of the most exciting features of Microsoft HoloLens, providing a way for users to perceive what's going on around them when objects are out of the line of sight.
+author: mattzmsft
+ms.author: csinex
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens, RoboRaid, spatial sound
 ---
 
 
@@ -32,7 +32,9 @@ Spatial sound can be demanding on the CPU. For a busy experience like RoboRaid i
 
 The dodging mechanic is one of the most important aspects of gameplay in RoboRaid, and also something that we felt was truly unique to the HoloLens experience. As such, we wanted to make successful dodges very rewarding to the player. We got the Doppler "whizz-by" to sound compelling fairly early on in the development. Initially, my plan was to use a loop and manipulate it in real-time using volume, pitch, and filter. The implementation for this was going to be very elaborate, so before committing resources to actually build this we created a cheap prototype using an asset with the Doppler effect baked in just to find out how it felt*. Our talented dev made it so that this whizz-by asset would play back exactly 0.7 seconds before the projectile will have passed by the player’s ear and the results felt really amazing! Needless to say, we ditched the more complex solution and implemented the prototype.
 
-**(If you'd like more information about creating an audio asset with the Doppler effect built in, check out an article by sound designer Charles Deenan called [100 Whooshes in 2 Minutes](http://designingsound.org/2010/02/charles-deenen-special-100-whooshes-in-2-minutes/).) * ![Successfully dodging an enemy's projectile rewards the player with a satisfying whizz-by sound.](images/successful-dodge-roboraid-500px.jpg)
+**(If you'd like more information about creating an audio asset with the Doppler effect built in, check out an article by sound designer Charles Deenan called [100 Whooshes in 2 Minutes](http://designingsound.org/2010/02/charles-deenen-special-100-whooshes-in-2-minutes/).) * 
+<br>
+![Successfully dodging an enemy's projectile rewards the player with a satisfying whizz-by sound.](images/successful-dodge-roboraid-500px.jpg)
 
 ### Ditching ineffective sounds
 
@@ -42,7 +44,9 @@ Originally, we had wanted to play an explosion sound behind the player once they
 
 An interesting issue we ran into, which we felt was unique to the HoloLens experience, was the difficulty of effectively communicating to the players that they have been hit. What makes a mixed reality experience successful is the feeling that the story is happening to you. That means that you have to believe that YOU are fighting an alien robot invasion in your own living room.
 
-Players obviously won't feel anything when they get hit, so we had to find a way to really convince the player that something bad had happed to them. In conventional games you might see an animation that lets you know your character has taken a hit, or the screen might flash red and your character might grunt a little. Since these types of cues don't work in a mixed reality experience, we decided to combine the visual cue with a really exaggerated sound that indicates you've taken damage. I created a big sound, and made it so prominent in the mix that it ducked everything down. Then, to make it stand out even more, we added a short warning sound as if a nuclear sub was sinking. ![When a player gets hit in RoboRaid, they see a visual cue, but also get an exaggerated audio cue that tells them they've taken damage.](images/player-hit-roboraid-500px.jpg)
+Players obviously won't feel anything when they get hit, so we had to find a way to really convince the player that something bad had happed to them. In conventional games you might see an animation that lets you know your character has taken a hit, or the screen might flash red and your character might grunt a little. Since these types of cues don't work in a mixed reality experience, we decided to combine the visual cue with a really exaggerated sound that indicates you've taken damage. I created a big sound, and made it so prominent in the mix that it ducked everything down. Then, to make it stand out even more, we added a short warning sound as if a nuclear sub was sinking. 
+<br>
+![When a player gets hit in RoboRaid, they see a visual cue, but also get an exaggerated audio cue that tells them they've taken damage.](images/player-hit-roboraid-500px.jpg)
 
 ### Getting big sound from small speakers
 
@@ -66,21 +70,25 @@ One trick I discovered to make certain events (such as explosions) sound "bigger
 
 You can try this yourself using the audio assets below:
 
-Scenario 1:
+**Scenario 1**
 1. Download [roboraid_enemy_explo_mono.wav](images/roboraid-enemy-explo-mono.wav) and set to playback through spatial sound and assign it to an event.
 2. Download [roboraid_enemy_explo_stereo.wav](images/roboraid-enemy-explo-stereo.wav) and set to playback in 2D stereo and assign to the same event as above. Because these assets are normalized to Unity, attenuate volume of both assets so that it doesn’t clip.
 3. Play both sounds together. Move your head around to feel how spatial it sounds.
 
-Scenario 2:
+**Scenario 2**
 1. Download [roboraid_enemy_explo_summed.wav](images/roboraid-enemy-explo-summed.wav) and set to playback through spatial sound and assign to an event.
 2. Play this asset by itself then compare it to the event from Scenario 1.
 3. Try different balance of mono and stereo files.
 
 ## About the author
 
-**Charles Sinex** has been making sounds and writing music for various Hololens apps and demos since 2012. Some of them worked and some of them caused people to throw Hololens dev kits across the room while screaming in agony. Days like that make him realize taking student loan to go to a sound design school was really worth it.
+<table style="border-collapse:collapse">
+<tr>
+<td style="border-style: none" width="60px"><img alt="Picture of Charles Sinex" width="60" height="60" src="images/genericusertile.jpg"></td>
+<td style="border-style: none"><b>Charles Sinex</b><br>Audio Engineer @Microsoft</td>
+</tr>
+</table>
 
 ## See Also
 * [Spatial sound](spatial-sound.md)
-* [Case studies](category/case-studies.md)
 * [RoboRaid for Microsoft HoloLens](https://www.microsoft.com/microsoft-hololens/en-us/apps/RoboRaid)

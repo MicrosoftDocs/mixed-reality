@@ -1,11 +1,11 @@
 ---
 title: Holographic Remoting Player
-description: 
-author: 
+description: The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
+author: JonMLyons
 ms.author: jlyons
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, Remoting, Holographic Remoting
 ---
 
 
@@ -47,4 +47,5 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 * We recommend you connect your PC to your network via ethernet to reduce the number of Wireless hops.
 
 ## See Also
+* [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

@@ -1,11 +1,11 @@
 ---
 title: Holograms 230
-description: 
-author: 
-ms.author: neerajw
-ms.date: 2/28/2018
+description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of spatial mapping concepts.
+author: keveleigh
+ms.author: kurtie
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial mapping, surface reconstruction, mesh
 ---
 
 
@@ -29,9 +29,9 @@ keywords:
 
 **Project files**
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) required by the project. Requires Unity 2017.2 or later.
-* If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).
-* If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).
-* If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).
+    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).
+    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).
+    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).
 * Unarchive the files to your desktop or other easy to reach location.
 
 **Notes**
@@ -40,6 +40,7 @@ keywords:
 ## Unity Setup
 
 >[!VIDEO https://www.youtube.com/embed/y2Y4LhK6TEM]
+
 * Start **Unity**.
 * Select **New** to create a new project.
 * Name the project **Planetarium**.
@@ -52,10 +53,10 @@ keywords:
 * Verify that **Windows Holographic** appears in the list of **Virtual Reality SDKs**. If not, select the **+** button at the bottom of the list and choose **Windows Holographic**.
 * Expand **Publishing Settings**.
 * In the **Capabilities** section, check the following settings:
-* InternetClientServer
-* PrivateNetworkClientServer
-* Microphone
-* SpatialPerception
+    * InternetClientServer
+    * PrivateNetworkClientServer
+    * Microphone
+    * SpatialPerception
 * Go to **Edit > Project Settings > Quality**
 * In the **Inspector** panel, under the Windows Store icon, select the black drop-down arrow under the 'Default' row and change the default setting to **Fastest**.
 * Go to **Assets > Import Package > Custom Package**.
@@ -152,7 +153,8 @@ Finally, let's save our room mesh and load it into Unity.
 
 ## Chapter 2 - Visualization
 
->[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4] 
+>[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4]
+
 **Objectives**
 * Learn the basics of shaders.
 * Visualize your surroundings.
@@ -164,9 +166,9 @@ Finally, let's save our room mesh and load it into Unity.
 * Find and select the **BlueLinesOnWalls** material and close the window.
 * In the **Project** panel **Shaders** folder, double-click on **BlueLinesOnWalls** to open the shader in Visual Studio.
 * This is a simple pixel (vertex to fragment) shader, which accomplishes the following tasks:
-1. Converts a vertex's location to world space.
-2. Checks the vertex's normal to determine if a pixel is vertical.
-3. Sets the color of the pixel for rendering.
+    1. Converts a vertex's location to world space.
+    2. Checks the vertex's normal to determine if a pixel is vertical.
+    3. Sets the color of the pixel for rendering.
 
 **Build and Deploy**
 * Return to Unity and press **Play** to enter preview mode.
@@ -174,8 +176,8 @@ Finally, let's save our room mesh and load it into Unity.
 * Switch to the **Scene** tab to adjust your view of the room and see how the entire room mesh appears in Unity.
 * In the **Project** panel, find the **Materials** folder and select the **BlueLinesOnWalls** material.
 * Modify some properties and see how the changes appear in the Unity editor.
-* In the **Inspector** panel, adjust the **LineScale** value to make the lines appear thicker or thinner.
-* In the **Inspector** panel, adjust the **LinesPerMeter** value to change how many lines appear on each wall.
+    * In the **Inspector** panel, adjust the **LineScale** value to make the lines appear thicker or thinner.
+    * In the **Inspector** panel, adjust the **LinesPerMeter** value to change how many lines appear on each wall.
 * Click **Play** again to exit preview mode.
 * Build and deploy to the HoloLens and observe how the shader rendering appears on real surfaces.
 
@@ -183,7 +185,9 @@ Unity does a great job of previewing materials, but it's always a good idea to c
 
 ## Chapter 3 - Processing
 
->[!VIDEO https://www.youtube.com/embed/kaUKiNiDxwY] **Objectives**
+>[!VIDEO https://www.youtube.com/embed/kaUKiNiDxwY]
+
+**Objectives**
 * Learn techniques to process spatial mapping data for use in your application.
 * Analyze spatial mapping data to find planes and remove triangles.
 * Use planes for hologram placement.
@@ -202,16 +206,13 @@ The SpatialProcessing prefab includes components for processing the spatial mapp
 PlaySpaceManager.cs contains application-specific code. We will add functionality to this script to enable the following behavior:
 1. Stop collecting spatial mapping data after we exceed the scanning time limit (10 seconds).
 2. Process the spatial mapping data:
-1. Use SurfaceMeshesToPlanes to create a simpler representation of the world as planes (walls, floors, ceilings, etc).
-2. Use RemoveSurfaceVertices to remove surface triangles that fall within plane boundaries.
+    1. Use SurfaceMeshesToPlanes to create a simpler representation of the world as planes (walls, floors, ceilings, etc).
+    2. Use RemoveSurfaceVertices to remove surface triangles that fall within plane boundaries.
 3. Generate a collection of holograms in the world and place them on wall and floor planes near the user.
 
 Complete the coding exercises marked in PlaySpaceManager.cs, or replace the script with the finished solution from below:
 
-
-
-
-```
+```cs
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows.Speech;
@@ -418,7 +419,8 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 
 ## Chapter 4 - Placement
 
->[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc] 
+>[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc]
+
 **Objectives**
 * Determine if a hologram will fit on a surface.
 * Provide feedback to the user when a hologram can/cannot fit on a surface.
@@ -439,12 +441,9 @@ The **Placeable** script is already attached to the posters and projection box t
 6. Re-orient the hologram to align with the surface type (vertical or horizontal) that it has affinity to.
 7. Smoothly place the hologram on the selected surface to avoid jumping or snapping behavior.
 
-Uncomment all code in the coding exercise below, or use this completed solution:
+Uncomment all code in the coding exercise below, or use this completed solution in **Placeable.cs**:
 
-
-
-
-```
+```cs
 using System.Collections.Generic;
 using UnityEngine;
 using Academy.HoloToolkit.Unity;
@@ -1061,10 +1060,7 @@ Finally, we are going to enable an x-ray vision effect for planets in our solar 
 
 Follow the coding exercise in PlanetOcclusion.cs, or use the following solution:
 
-
-
-
-```
+```cs
 using UnityEngine;
 using Academy.HoloToolkit.Unity;
 

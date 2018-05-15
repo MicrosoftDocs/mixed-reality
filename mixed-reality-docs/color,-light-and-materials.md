@@ -1,11 +1,11 @@
 ---
 title: Color, light and materials
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
+author: mavitazk
+ms.author: pinkb, mavitazk 
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, design, color, light, materials
 ---
 
 
@@ -18,7 +18,7 @@ Below are guidelines specific to rendering assets on both immersive and holograp
 
 ## Rendering on immersive vs. holographic devices
 
-Content rendered in immersive headsets will appear visually different when compared to content rendered in holographic headsets. While immersive headsets generally render content much as you would expect on a 2D screen, holographic headsets like the HoloLens use color-sequential, see-through RGB displays to renders holograms.
+Content rendered in immersive headsets will appear visually different when compared to content rendered in holographic headsets. While immersive headsets generally render content much as you would expect on a 2D screen, holographic headsets like HoloLens use color-sequential, see-through RGB displays to renders holograms.
 
 Always take time to test your holographic experiences in a holographic headset. The appearance of content, even if it is built specifically for holographic devices, will differ as seen on secondary monitors, snapshots, and in spectator view. Remember to walk around experiences with a device, testing the lighting of holograms and observing from all sides (as well as from above and below) how your content is rendered. Be sure to test at a range of brightness settings on the device, as it is unlikely all users will share an assumed default, as well as a diverse set of lighting conditions.
 
@@ -40,8 +40,8 @@ Due to the nature of additive displays, certain colors can appear different on h
 
 Due to the nature of additive displays, dark colors appear transparent. A solid black object will appear no different from the real world. See Alpha channel below. To give the appearance of “black” try a very dark grey RGB value such as 16,16,16.
 
-![Normal vs. wide color gamut](images/640px-widegamut.png)
-Normal vs. wide color gamut
+![Normal vs. wide color gamut](images/640px-widegamut.png)<br>
+*Normal vs. wide color gamut*
 
 ## Technical considerations
 * **Aliasing** - Be considerate of aliasing, jagged or “stair steps” where the edge of a hologram’s geometry meets the real world. Using textures with high detail can aggravate this effect. Textures should be mapped and filtering enabled. Consider fading the edges of holograms or adding a texture that creates a black edge border around objects. Avoid thin geometry where possible.
@@ -54,9 +54,8 @@ Light and color can help make your holograms appear more naturally in a user's e
 * **Vignetting** - A 'vignette' effect to darken materials can help focus the user's attention on the center of the field of view. This effect darkens the hologram's material at some radius from the user's gaze vector. Note that this is also effective when the user's views holograms from an oblique or glancing angle.
 * **Emphasis** - Draw attention to objects or points of interaction by contrasting colors, brightness, and lighting. For a more detailed look at lighting methods in storytelling, see [Pixel Cinematography - A Lighting Approach for Computer Graphics](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).
 
-![Use of color to show emphasis for storytelling elements, shown here in a scene from Fragments.](images/640px-fragments.jpg)
-
-Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](http://www.microsoft.com/en-us/hololens/apps/fragments).
+![Use of color to show emphasis for storytelling elements, shown here in a scene from Fragments.](images/640px-fragments.jpg)<br>
+*Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](http://www.microsoft.com/en-us/hololens/apps/fragments).*
 
 ## See also
 * [Color Separation](hologram-stability.md#color-separation)

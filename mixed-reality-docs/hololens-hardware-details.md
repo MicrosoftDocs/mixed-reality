@@ -1,18 +1,20 @@
 ---
 title: HoloLens hardware details
-description: 
-author: 
+description: An outline of the components that make up Microsoft HoloLens, the world's first fully untethered holographic computer running Windows.
+author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, components, sensors, technology, tech, tear down, teardown, 
 ---
 
 
 
 # HoloLens hardware details
 
-Microsoft HoloLens is the world's first fully untethered holographic computer. HoloLens redefines personal computing through holographic experiences to empower you in new ways. HoloLens blends cutting-edge optics and sensors to deliver 3D holograms pinned to the real world around you. ![Microsoft HoloLens](images/see-through-400px.jpg)
+![Microsoft HoloLens](images/see-through-400px.jpg)
+
+Microsoft HoloLens is the world's first fully untethered holographic computer. HoloLens redefines personal computing through holographic experiences to empower you in new ways. HoloLens blends cutting-edge optics and sensors to deliver 3D holograms pinned to the real world around you.
 
 ## Device Specifications
 
@@ -94,7 +96,7 @@ Microsoft HoloLens is the world's first fully untethered holographic computer. H
 * Learn Gestures
 
 ### What you need to develop
-* Windows 10 PC able to run Visual Studio 2015 and Unity
+* [Windows 10 PC able to run the latest compatible versions of Visual Studio and Unity](install-the-tools.md)
 
 ### Safety Eyewear
 

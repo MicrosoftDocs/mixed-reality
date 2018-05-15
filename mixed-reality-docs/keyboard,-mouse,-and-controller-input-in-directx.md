@@ -1,11 +1,11 @@
 ---
 title: Keyboard, mouse, and controller input in DirectX
-description: 
-author: 
+description: Explains how to create an app for Windows Mixed Reality that uses keyboard, mouse, and game controllers.
+author: MikeRiches
 ms.author: mriches
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, keyboard, mouse, game controller, xbox controller, HoloLens, desktop, walkthrough, sample code
 ---
 
 

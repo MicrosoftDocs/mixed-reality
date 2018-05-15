@@ -1,14 +1,12 @@
 ---
 title: Case study - AfterNow's process - envisioning, prototyping, building
-description: 
-author: 
+description: AfterNow's process - envisioning, prototyping, building
+author: rwinj
 ms.author: randyw
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, AfterNow, envisioning, prototyping, building
 ---
-
-
 
 # Case study - AfterNow's process - envisioning, prototyping, building
 
@@ -64,7 +62,8 @@ The goal of this exercise is to enhance our collective understanding of the prob
 
 Our best practice for this process happens when we take individual notes in How might we (HMW) format. HMW is a technique developed by P&G in the 70s. It's a method of note taking in the form of a question which ultimately results in organized and prioritized notes. We will jot down one idea per sticky note which starts with the phrase, "How might we." For example, how might we communicate the values of [your company] in mixed reality?
 
-![Organize and decide](images/organize-and-decide-640px.png)
+![Organize and decide](images/organize-and-decide-640px.png)<br>
+*Organize and decide*
 
 **Organize HMW notes**
 
@@ -100,7 +99,8 @@ We spend eight minutes creating eight frames. This is where we rapidly sketch a 
 
 We spend 30 minutes sketching storyboards. We take the best variations of ideas from Crazy 8s and create a three-panel storyboard of the idea.
 
-![Sketching storyboards](images/sketching-storyboards-640px.png)
+![Sketching storyboards](images/sketching-storyboards-640px.png)<br>
+*Sketching storyboards*
 
 ## DAY 3 - Decide
 
@@ -138,7 +138,10 @@ Physically act out the user flow which involves all the user parties in the orde
 
 ## About the author
 
-![Tile for Rafai Eddy](images/kurohyo1-60px.png) Rafai Eddy \
- @[AfterNow](https://www.afternow.io/)
+<table style="border-collapse:collapse">
+<tr>
+<td style="border:0" width="60"><img alt="Rafai Eddy, AfterNow" width="60" height="60" src="images/kurohyo1-60px.png"></td>
+<td style="border:0"><b>Rafai Eddy</b><br>AfterNow</td>
+</tr>
+</table>
 
- 

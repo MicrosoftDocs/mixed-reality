@@ -1,18 +1,18 @@
 ---
 title: Coordinate systems
-description: 
-author: 
+description: The spatial coordinate systems used to build seated, standing, room-scale and world-scale mixed reality experiences.
+author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: coordinate system, spatial coordinate system, orientation-only, seated-scale, standing-scale, room-scale, world-scale, 360 degree, seated, standing, room, world, scale, position, orientation, stationary, attached, stage, anchor, spatial anchor, world-locked, world-locking, body-locked, body-locking, bounds, persistence, sharing, tracking loss
 ---
-
-
 
 # Coordinate systems
 
 At their core, mixed reality apps place [holograms](hologram.md) in your world that look and sound like real objects. This involves precisely positioning and orienting those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created. When reasoning about the position and orientation of your holograms, or any other geometry such as the [gaze](gaze.md) ray or [hand positions](gestures.md), Windows provides various real-world coordinate systems in which that geometry can be expressed, known as **spatial coordinate systems**.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/TneGSeqVAXQ]
 
@@ -34,21 +34,21 @@ At their core, mixed reality apps place [holograms](hologram.md) in your world t
 </tr>
 </table>
 
-
-
 ## Mixed reality experience scales
 
 Mixed reality apps can design for a broad range of user experiences, from 360-degree video viewers that just need the headset's orientation, to full world-scale apps and games, which need spatial mapping and spatial anchors:
+<br>
 
 | Experience scale | Requirements | Example experience | 
 |----------|----------|----------|
 |  **Orientation-only** |  **Headset orientation** (gravity-aligned) |  360° video viewer | 
-|  **Seated-scale** |  Above, plus **headset position** relative to zero position |  Elite: Dangerous | 
-|  **Standing-scale** |  Above, plus **stage floor origin** |  Obduction | 
-|  **Room-scale** |  Above, plus **stage bounds polygon** |  Fantastic Contraption | 
-|  **World-scale** |  **Spatial anchors** (and typically **[spatial mapping](spatial-mapping.md)**) |  RoboRaid | 
+|  **Seated-scale** |  Above, plus **headset position** relative to zero position |  Racing game or space simulator | 
+|  **Standing-scale** |  Above, plus **stage floor origin** |  Action game where you duck and dodge in place  | 
+|  **Room-scale** |  Above, plus **stage bounds polygon** |  Puzzle game where you walk around the puzzle | 
+|  **World-scale** |  **Spatial anchors** (and typically [spatial mapping](spatial-mapping.md)) |  Game with enemies coming from your real walls, such as [RoboRaid](https://www.microsoft.com/hololens/apps/roboraid) | 
 
 These experience scales follow a "nesting dolls" model. The key design principle here for Windows Mixed Reality is that a given headset supports apps built for a target experience scale, as well as all lesser scales:
+<br>
 
 | 6DOF tracking | Floor defined | 360° tracking | Bounds defined | Spatial anchors | Max experience | 
 |----------|----------|----------|----------|----------|----------|
@@ -63,7 +63,7 @@ Note that the Stage frame of reference is not yet supported on HoloLens. A room-
 
 ## Spatial coordinate systems
 
-All 3D graphics applications use [Cartesian coordinate systems](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) to reason about the positions and orientations of objects in the virtual worlds they render. Such coordinate systems establish 3 perpendicular axes along which to position objects: an X, Y, and Z axis.
+All 3D graphics applications use [Cartesian coordinate systems](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) to reason about the positions and orientations of objects in the virtual worlds they render. Such coordinate systems establish 3 perpendicular axes along which to position objects: an X, Y, and Z axis.
 
 In [mixed reality](mixed-reality.md), your apps will reason about both virtual and physical coordinate systems. Windows calls a coordinate system that has real meaning in the physical world a **spatial coordinate system**.
 
@@ -83,11 +83,11 @@ Some content must ignore head position updates, staying fixed at a chosen headin
 
 The coordinate system provided by a stationary frame of reference works to keep the positions of objects near the user as stable as possible relative to the world, while respecting changes in the user's head position.
 
-For seated-scale experiences in a game engine such as Unity, a stationary frame of reference is what defines the engine's "world origin". Objects that are placed at a specific world coordinate use the stationary frame of reference to define their position in the real-world using those same coordinates. Content that stays put in the world, even as the user walks around, is known as **world-locked** content.
+For seated-scale experiences in a game engine such as [Unity](https://unity3d.com/), a stationary frame of reference is what defines the engine's "world origin." Objects that are placed at a specific world coordinate use the stationary frame of reference to define their position in the real-world using those same coordinates. Content that stays put in the world, even as the user walks around, is known as **world-locked** content.
 
 An app will typically create one stationary frame of reference on startup and use its coordinate system throughout the app's lifetime. As an app developer in Unity, you can just start placing content relative to the origin, which will be at the user's initial head position and orientation. If the user moves to a new place and wants to continue their seated-scale experience, you can recenter the world origin at that location.
 
-Over time, as the system learns more about the user's environment, it may determine that distances between various points in the real-world are shorter or longer than the system previously believed. If you render holograms in a stationary frame of reference for an app on HoloLens where users wander beyond an area about 5 meters wide, your app may observe drift in the observed location of those holograms. If your experience has users wandering beyond 5 meters, you're building a [world-scale experience](#building-a-world-scale-experience), which will require additional techniques to keep holograms stable, described below.
+Over time, as the system learns more about the user's environment, it may determine that distances between various points in the real-world are shorter or longer than the system previously believed. If you render holograms in a stationary frame of reference for an app on HoloLens where users wander beyond an area about 5 meters wide, your app may observe drift in the observed location of those holograms. If your experience has users wandering beyond 5 meters, you're building a [world-scale experience](#building-a-world-scale-experience), which will require additional techniques to keep holograms stable, as described below.
 
 ### Attached frame of reference
 
@@ -97,13 +97,13 @@ When the headset can't figure out where it is in the world, an attached frame of
 
 ## Building a standing-scale or room-scale experience
 
-To go beyond seated-scale on an immersive headset to build a **standing-scale experience**, you can use the **stage frame of reference**.
+To go beyond seated-scale on an immersive headset and build a **standing-scale experience**, you can use the **stage frame of reference**.
 
 To provide a **room-scale experience**, letting users walk around within the 5-meter boundary they pre-defined, you can check for **stage bounds** as well.
 
 ### Stage frame of reference
 
-When first setting up an immersive headset, the user defines a **stage**, which represents the room in which they will experience mixed reality. The stage minimally defines a **stage origin**, a spatial coordinate system centered at the user's chosen floor position and forward orientation where they intend to use the device. By placing content in this stage coordinate system at the Y=0 floor plane, you can ensure your holograms appear comfortably on the floor when the user is standing, providing users a **standing-scale experience**.
+When first setting up an immersive headset, the user defines a **stage**, which represents the room in which they will experience mixed reality. The stage minimally defines a **stage origin**, a spatial coordinate system centered at the user's chosen floor position and forward orientation where they intend to use the device. By placing content in this stage coordinate system at the Y=0 floor plane, you can ensure your holograms appear comfortably on the floor when the user is standing, providing users with a **standing-scale experience**.
 
 ### Stage bounds
 
@@ -117,22 +117,29 @@ HoloLens allows for true **world-scale experiences** that let users wander beyon
 
 ### Why a single rigid coordinate system cannot be used beyond 5 meters
 
-Today, when writing games, data visualization apps, or virtual reality apps, the typical approach is to establish one absolute world coordinate system that all other coordinates can reliably map back to. In that environment, you can always find a stable transform that defines a relationship between any two objects in that world. If you didn't move those objects their relative transform would always remain the same. This kind of global coordinate system works well when rendering a purely virtual world where you know all of the geometry in advance. Room-scale VR apps today typically establish this kind of absolute room-scale coordinate system with its origin on the floor.
+Today, when writing games, data visualization apps, or virtual reality apps, the typical approach is to establish one absolute world coordinate system that all other coordinates can reliably map back to. In that environment, you can always find a stable transform that defines a relationship between any two objects in that world. If you didn't move those objects, their relative transforms would always remain the same. This kind of global coordinate system works well when rendering a purely virtual world where you know all of the geometry in advance. Room-scale VR apps today typically establish this kind of absolute room-scale coordinate system with its origin on the floor.
 
 In contrast, an untethered mixed reality device such as HoloLens has a dynamic sensor-driven understanding of the world, continuously adjusting its knowledge over time of the user's surroundings as they walk many meters across an entire floor of a building. In a world-scale experience, if you placed all your holograms in a single rigid coordinate system, those holograms would necessarily drift over time, either relative to the world or to each other.
 
-For example, the headset may currently believe two locations in the world to be 4 meters apart, and then later refine that understanding, learning that the locations are in fact 3.9 meters apart. If those holograms had initially been placed 4 meters apart in a single rigid coordinate system, one of them would then always appear 0.1 meters off from the real-world.
+For example, the headset may currently believe two locations in the world to be 4 meters apart, and then later refine that understanding, learning that the locations are in fact 3.9 meters apart. If those holograms had initially been placed 4 meters apart in a single rigid coordinate system, one of them would then always appear 0.1 meters off from the real world.
 
 ### Spatial anchors
 
-Windows Mixed Reality solves this issue by letting you create **[spatial anchors](spatial-anchors.md)** to mark important points in the world where the user has placed holograms. A spatial anchor represents an important point in the world that the system should keep track of over time. As the device learns about the world, these spatial anchors can adjust their position relative to one another as needed to ensure that each anchor stays precisely where it was placed relative to the real-world. By placing a spatial anchor at the location where the user places a hologram and then positioning that hologram relative to its spatial anchor, you can ensure that the hologram maintains optimal stability, even as the user roams across tens of meters.
+Windows Mixed Reality solves the issue described in the previous section by letting you create [spatial anchors](spatial-anchors.md) to mark important points in the world where the user has placed holograms. A spatial anchor represents an important point in the world that the system should keep track of over time.
+
+As the device learns about the world, these spatial anchors can adjust their position relative to one another as needed to ensure that each anchor stays precisely where it was placed relative to the real-world. By placing a spatial anchor at the location where the user places a hologram and then positioning that hologram relative to its spatial anchor, you can ensure that the hologram maintains optimal stability, even as the user roams across tens of meters.
 
 This continuous adjustment of spatial anchors relative to one another is the key difference between coordinate systems from spatial anchors and stationary frames of reference:
+
 * Holograms placed in the stationary frame of reference all retain a rigid relationship to one another. However, as the user walks long distances, that frame's coordinate system may drift relative to the world to ensure that holograms next to the user appear stable.
+
 * Holograms placed in the stage frame of reference also retain a rigid relationship to one another. In contrast to the stationary frame, the stage frame always remains fixed in place relative to its defined physical origin. However, content rendered in the stage's coordinate system beyond its 5-meter boundary will only appear stable while the user is standing within that boundary.
+
 * Holograms placed using one spatial anchor may drift relative to holograms placed using another spatial anchor. This allows Windows to improve its understanding of the position of each spatial anchor, even if, for example, one anchor needs to adjust itself left and another anchor needs to adjust right.
 
-In contrast to a stationary frame of reference, which always optimizes for stability near the user, the stage frame of reference and spatial anchors ensure stability near their origins. This helps those holograms stay precisely in place over time, but it also means that holograms rendered too far away from their coordinate system's origin will experience increasingly severe lever-arm effects. This is because small adjustments to the position and orientation of the stage or anchor are magnified proportional to the distance from that anchor. A good rule of thumb is to ensure that anything you render based on a distant spatial anchor's coordinate system is within about 3 meters of its origin. For a nearby stage origin, rendering distant content is OK, as any increased positional error will affect only small holograms that will not shift much in the user's view.
+In contrast to a stationary frame of reference, which always optimizes for stability near the user, the stage frame of reference and spatial anchors ensure stability near their origins. This helps those holograms stay precisely in place over time, but it also means that holograms rendered too far away from their coordinate system's origin will experience increasingly severe lever-arm effects. This is because small adjustments to the position and orientation of the stage or anchor are magnified proportional to the distance from that anchor. 
+
+A good rule of thumb is to ensure that anything you render based on a distant spatial anchor's coordinate system is within about 3 meters of its origin. For a nearby stage origin, rendering distant content is OK, as any increased positional error will affect only small holograms that will not shift much in the user's view.
 
 ### Spatial anchor persistence
 

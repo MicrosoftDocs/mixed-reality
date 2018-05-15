@@ -1,11 +1,11 @@
 ---
 title: Voice input in Unity
-description: 
-author: 
+description: Unity exposes three ways to add Voice input to your Windows Mixed Reality application.
+author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Voice input, KeywordRecognizer, GrammarRecognizer, microphone, dictation, voice
 ---
 
 
@@ -16,7 +16,8 @@ Unity exposes three ways to add [Voice input](voice-input.md) to your Unity appl
 
 With the KeywordRecognizer (one of two types of PhraseRecognizers), your app can be given an array of string commands to listen for. With the GrammarRecognizer (the other type of PhraseRecognizer), your app can be given an SRGS file defining a specific grammar to listen for. With the DictationRecognizer, your app can listen for any word and provide the user with a note or other display of their speech.
 
-**NOTE:** Only dictation or phrase recognition can be handled at once. That means if a GrammarRecognizer or KeywordRecognizer is active, a DictationRecognizer can not be active and vice versa.
+>[!NOTE]
+>Only dictation or phrase recognition can be handled at once. That means if a GrammarRecognizer or KeywordRecognizer is active, a DictationRecognizer can not be active and vice versa.
 
 ## Enabling the capability for Voice
 
@@ -33,9 +34,10 @@ To enable your app to listen for specific phrases spoken by the user then take s
 
 ### KeywordRecognizer
 
-**Namespace:** *UnityEngine.Windows.Speech*
+**Namespace:** *UnityEngine.Windows.Speech*<br>
+**Types:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
-**Types:** *KeywordRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus* We'll need a few using statements to save some keystrokes:
+We'll need a few using statements to save some keystrokes:
 
 ```
 using UnityEngine.Windows.Speech;
@@ -94,8 +96,7 @@ keywordRecognizer.Start();
 
 ### GrammarRecognizer
 
-**Namespace:** *UnityEngine.Windows.Speech*
-
+**Namespace:** *UnityEngine.Windows.Speech*<br>
 **Types**: *GrammarRecognizer*, *PhraseRecognizedEventArgs*, *SpeechError*, *SpeechSystemStatus*
 
 The GrammarRecognizer is used if you're specifying your recognition grammar using SRGS. This can be useful if your app has more than just a few keywords, if you want to recognize more complex phrases, or if you want to easily turn on and off sets of commands. See: [Create Grammars Using SRGS XML](https://msdn.microsoft.com/en-us/library/hh378349(v=office.14).aspx) for file format information.
@@ -137,8 +138,7 @@ grammarRecognizer.Start();
 
 ## Dictation
 
-**Namespace:** *UnityEngine.Windows.Speech*
-
+**Namespace:** *UnityEngine.Windows.Speech*<br>
 **Types**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
 Use the DictationRecognizer to convert the user's speech to text. The DictationRecognizer exposes [dictation](voice-input.md#dictation) functionality and supports registering and listening for hypothesis and phrase completed events, so you can give feedback to your user both while they speak and afterwards. Start() and Stop() methods respectively enable and disable dictation recognition. Once done with the recognizer, it should be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.
@@ -173,13 +173,13 @@ There are four dictation events that can be subscribed to and handled to impleme
 
 This event is fired after the user pauses, typically at the end of a sentence. The full recognized string is returned here.
 
-First, subscribe to the DictationHypothesis event:
+First, subscribe to the DictationResult event:
 
 ```
 dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
 ```
 
-Then handle the DictationHypothesis callback:
+Then handle the DictationResult callback:
 
 ```
 private void DictationRecognizer_DictationResult(string text, ConfidenceLevel confidence)
@@ -265,8 +265,8 @@ dictationRecognizer.Dispose();
 * Start() and Stop() methods respectively enable and disable dictation recognition.
 * Once done with the recognizer, it must be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.
 * Timeouts occur after a set period of time. You can check for these timeouts in the DictationComplete event. There are two timeouts to be aware of:
-1. If the recognizer starts and doesn't hear any audio for the first five seconds, it will timeout.
-2. If the recognizer has given a result but then hears silence for twenty seconds, it will timeout.
+   1. If the recognizer starts and doesn't hear any audio for the first five seconds, it will timeout.
+   2. If the recognizer has given a result but then hears silence for twenty seconds, it will timeout.
 
 ## Using both Phrase Recognition and Dictation
 
@@ -286,6 +286,6 @@ You could also just start a KeywordRecognizer, which will restart the PhraseReco
 
 ## Using the microphone helper
 
-The mixed reality toolkit on GitHub contains a microphone helper class to hint at developers if there is a usable microphone on the system. One use for it is where one would want to check if there is microphone on system before showing any speech interaction hints in the application.
+The Mixed Reality Toolkit on GitHub contains a microphone helper class to hint at developers if there is a usable microphone on the system. One use for it is where one would want to check if there is microphone on system before showing any speech interaction hints in the application.
 
-The microphone helper can be found in the [Dev_Working_Branch](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/Dev_Working_Branch/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). The GitHub repo also contains a [small sample](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/Dev_Working_Branch/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) demonstrating how to use the helper in Unity script.
+The microphone helper script can be found in the [Input/Scripts/Utilities folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). The GitHub repo also contains a [small sample](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) demonstrating how to use the helper.

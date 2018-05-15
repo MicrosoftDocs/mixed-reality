@@ -1,18 +1,18 @@
 ---
 title: Case study - Creating a galaxy in mixed reality
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: Before Microsoft HoloLens shipped, we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device. More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called "Galaxy Explorer."
+author: KarimLUCCIN
+ms.author: kaluccin, azibits
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Galaxy Explorer, HoloLens, Windows Mixed Reality, share your idea, case study
 ---
 
 
 
 # Case study - Creating a galaxy in mixed reality
 
-Before Microsoft HoloLens shipped, [we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device](share-your-idea.md). More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called "Galaxy Explorer."
+Before Microsoft HoloLens shipped, we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device. More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called [Galaxy Explorer](galaxy-explorer.md).
 
 Andy Zibits, the art lead on the project, and Karim Luccin, the team's graphics engineer, talk about the collaborative effort between art and engineering that led to the creation of an accurate, interactive representation of the Milky Way galaxy in Galaxy Explorer.
 
@@ -20,11 +20,11 @@ Andy Zibits, the art lead on the project, and Karim Luccin, the team's graphics 
 
 [Our team](galaxy-explorer.md#meet-the-team) - made up of two designers, three developers, four artists, a producer, and one tester — had six weeks to build a fully functional app which would allow people to learn about and explore the vastness and beauty of our Milky Way Galaxy.
 
-We wanted to take full advantage of the ability for the HoloLens to render 3D objects directly in your living space, so we decided we wanted to create a realistic looking galaxy where people would be able to zoom in close and see individual stars, each on their own trajectories.
+We wanted to take full advantage of the ability of HoloLens to render 3D objects directly in your living space, so we decided we wanted to create a realistic looking galaxy where people would be able to zoom in close and see individual stars, each on their own trajectories.
 
 In the first week of development, we came up with a few goals for our representation of the Milky Way Galaxy: It needed to have depth, movement, and feel volumetric—full of stars that would help create the shape of the galaxy.
 
-The problem with creating an animated galaxy that had billions of stars was that the sheer number of single elements that need updating would be too big per frame for the HoloLens to animate using the CPU. Our solution involved a complex mix of art and science.
+The problem with creating an animated galaxy that had billions of stars was that the sheer number of single elements that need updating would be too big per frame for HoloLens to animate using the CPU. Our solution involved a complex mix of art and science.
 
 ## Behind the scenes
 
@@ -34,7 +34,7 @@ To allow people to explore individual stars, our first step was to figure out ho
 
 Current CPUs are great for processing serial tasks and up to a few parallel tasks at once (depending on how many cores they have), but GPUs are much more effective at processing thousands of operations in parallel. However, because they don’t usually share the same memory as the CPU, exchanging data between CPU<>GPU can quickly become a bottleneck. Our solution was to make a galaxy on the GPU, and it had to live completely on the GPU.
 
-We started stress tests with thousands of point particles in various patterns. This allowed us to get the galaxy on the HoloLens to see what worked and what didn’t.
+We started stress tests with thousands of point particles in various patterns. This allowed us to get the galaxy on HoloLens to see what worked and what didn’t.
 
 ### Creating the position of the stars
 
@@ -69,9 +69,14 @@ We started with raw circular patterns with thousands of particles. This gave us 
 
 ![We attempted various patterns and particle systems that rotated, like these.](images/galaxy-patterns-500px.png)
 
+We attempted various patterns and particle systems that rotated, like these.
+
 Our team did some research about the way galaxies function and we made a custom particle system specifically for the galaxy so that we could move the particles on ellipses based on "[density wave theory](https://en.wikipedia.org/wiki/Density_wave_theory)," which theorizes that the arms of a galaxy are areas of higher density but in constant flux, like a traffic jam. It appears stable and solid, but the stars are actually moving in and out of the arms as they move along their respective ellipses. In our system, the particles never exist on the CPU—we generate the cards and orient them all on the GPU, so the whole system is simply initial state + time. It progressed like this:
 
 ![Progression of particle system with GPU rendering](images/spiral-galaxy-arms-500px.jpg)
+
+Progression of particle system with GPU rendering
+
 
 Once enough ellipses are added and are set to rotate, the galaxies began to form “arms” where the movement of stars converge. The spacing of the stars along each elliptical path was given some randomness, and each star got a bit of positional randomness added. This created a much more natural looking distribution of star movement and arm shape. Finally, we added the ability to drive color based on distance from center.
 
@@ -80,6 +85,9 @@ Once enough ellipses are added and are set to rotate, the galaxies began to form
 To animate the general star motion, we needed to add a constant angle for each frame and to get stars moving along their ellipses at a constant radial velocity. This is the primary reason for using **curveOffset**. This isn’t technically correct as stars will move faster along the long sides of the ellipses, but the general motion felt good.
 
 ![Stars move faster on the long arc, slower on the edges.](images/ellipse-movement.jpg)
+
+Stars move faster on the long arc, slower on the edges.
+
 
 With that, each star is fully described by (**curveOffset**, **ellipseSize**, **elevation**, **Age**) where **Age** is an accumulation of the total time that has passed since the scene was loaded.
 
@@ -105,9 +113,16 @@ This allowed us to generate tens of thousands of stars once at the start of the 
 
 ![Here’s what it looks like when drawing white quads.](images/drawing-white-quads-300px.jpg)
 
+Here’s what it looks like when drawing white quads.
+
+
+
 To make each quad face the camera, we used a geometry shader to transform each star position to a 2D rectangle on the screen that will contain our star texture.
 
 ![Diamonds instead of quads.](images/drawing-white-quads-300px.jpg)
+
+Diamonds instead of quads.
+
 
 Because we wanted to limit the overdraw (number of times a pixel will be processed) as much as possible, we rotated our quads so that they would have less overlap.
 
@@ -118,6 +133,10 @@ There are many ways to get a volumetric feeling with particles—from ray marchi
 On our second attempt, we tried having as many particles as possible. The best visuals were achieved when we additively drew particles and blurred them before adding them to the scene. The typical problems with that approach were related to how many particles we could draw at a single time and how much screen area they covered while still maintaining 60fps. Blurring the resulting image to get this cloud feeling was usually a very costly operation.
 
 ![Without texture, this is what the clouds would look like with 2% opacity.](images/clouds-without-texture-300px.jpg)
+
+Without texture, this is what the clouds would look like with 2% opacity.
+
+
 
 Being additive and having a lot of them means that we would have several quads on top of each other, repeatedly shading the same pixel. In the center of the galaxy, the same pixel has hundreds of quads on top of each other and this had a huge cost when being done full screen.
 
@@ -137,9 +156,16 @@ Instead of rendering to a full screen and losing those precious milliseconds we 
 
 ![x3 upscale back to full resolution.](images/galaxy-resolutions-300px.png)
 
+x3 upscale back to full resolution.
+
+
+
 This allowed us to get the cloud part with only a fraction of the original cost. Instead of adding clouds on the full resolution, we only paint 1/64th of the pixels and just stretch the texture back to full resolution.
 
 ![Left, with an upscale from 1/8th to full resolution; and right, with 3 upscale using power of 2.](images/stars-upscaled-300px.jpg)
+
+Left, with an upscale from 1/8th to full resolution; and right, with 3 upscale using power of 2.
+
 
 Note that trying to go from 1/64th of the size to the full size in one go would look completely different, as the graphic card would still use 4 pixels in our setup to shade a bigger area and artifacts start to appear.
 
@@ -151,6 +177,9 @@ Once we were on the right track with the shape, we added a layer of clouds, swap
 
 ![Our final Milky Way Galaxy in 3D.](images/final-galaxy-500px.jpg)
 
+Our final Milky Way Galaxy in 3D.
+
+
 ### More to explore
 
 We've open-sourced the code for the Galaxy Explorer app and made it available on [GitHub](https://github.com/Microsoft/GalaxyExplorer) for developers to build on.
@@ -161,13 +190,16 @@ Interested in finding out more about the development process for Galaxy Explorer
 
 <table style="border:0">
 <tr>
-<td style="border:0; width:230px"> <img alt="Picture of Karim Luccin at his desk" width="200" height="200" src="images/karim-thumb.jpg" /></td><td style="border:0; width:300px"> <b>Karim Luccin</b> is a Software Engineer and fancy visuals enthusiast. He was the Graphics Engineer for Galaxy Explorer.</td><td style="border:0; width:230px"> <img alt="Photo of art lead Andy Zibits" width="200" height="200" src="images/andy-avatar.png" /></td><td style="border:0; width:300px"> <b>Andy Zibits</b> is an Art Lead and space enthusiast who managed the 3D modeling team for Galaxy Explorer and fought for even more particles.</td>
+<td style="border:0" width="60px"> <img alt="Picture of Karim Luccin at his desk" width="60" height="60" src="images/karim-thumb.jpg" /></td>
+<td style="border:0"><b>Karim Luccin</b> is a Software Engineer and fancy visuals enthusiast. He was the Graphics Engineer for Galaxy Explorer.</td>
+</tr>
+<tr>
+<td style="border:0" width="60px"> <img alt="Photo of art lead Andy Zibits" width="60" height="60" src="images/andy-avatar.png" /></td>
+<td style="border:0"><b>Andy Zibits</b> is an Art Lead and space enthusiast who managed the 3D modeling team for Galaxy Explorer and fought for even more particles.</td>
 </tr>
 </table>
 
 
-
 ## See also
-* [Case studies](category/case-studies.md)
 * [Galaxy Explorer on GitHub](https://github.com/Microsoft/GalaxyExplorer)
 * [Galaxy Explorer project updates on YouTube](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)

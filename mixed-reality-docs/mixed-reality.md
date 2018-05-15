@@ -1,22 +1,24 @@
 ---
-title: Mixed reality
-description: 
-author: 
-ms.author: mazeller
-ms.date: 2/28/2018
+title: What is mixed reality?
+description: This article defines mixed reality and demonstrates where simple AR and VR devices, as well as Windows Mixed Reality devices like Microsoft HoloLens and Windows Mixed Reality immersive headsets, sit along the mixed reality spectrum.
+author: BrandonBray
+ms.author: branbray
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: mixed reality, holographic, ar, vr, mr, xr, augmented reality, virtual reality, explanation
 ---
 
 
 
-# Mixed reality
+# What is mixed reality?
 
 Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations. It is made possible by advancements in computer vision, graphical processing power, display technology, and input systems. The term *mixed reality* was originally introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](http://etclab.mie.utoronto.ca/people/paul_dir/IEICE94/ieice.html)." Their paper introduced the concept of the *virtuality continuum* and focused on how the categorization of taxonomy applied to displays. Since then, the application of mixed reality goes beyond displays but also includes environmental input, spatial sound, and location.
 
 ## Environmental input and perception
 
-![Venn diagram showing interactions between computers, humans and environments](images/mixed-reality-venn-diagram-300px.png) Over the past several decades, the relationship between human input and computer input has been well explored. It even has a widely studied discipline known as *human computer interaction* or HCI. Human input happens through a variety of means including keyboards, mice, touch, ink, voice, and even Kinect skeletal tracking.
+![Venn diagram showing interactions between computers, humans and environments](images/mixed-reality-venn-diagram-300px.png)<br> 
+
+Over the past several decades, the relationship between human input and computer input has been well explored. It even has a widely studied discipline known as *human computer interaction* or HCI. Human input happens through a variety of means including keyboards, mice, touch, ink, voice, and even Kinect skeletal tracking.
 
 Advancements in sensors and processing are giving rise to a new area of computer input from environments. The interaction between computers and environments is effectively environmental understanding, or *perception*. Hence the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world (e.g. [head tracking](coordinate-systems.md)), surfaces and boundaries (e.g. [spatial mapping](spatial-mapping.md) and [spatial understanding](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)), ambient lighting, environmental sound, object recognition, and location.
 
@@ -25,6 +27,8 @@ Now, the combination of all three – computer processing, human input, and envi
 ## The mixed reality spectrum
 
 Since mixed reality is the blending of the physical world and digital world, these two realities define the polar ends of a spectrum known as the virtuality continuum. For simplicity, we refer to this as the *mixed reality spectrum*. On the left-hand side we have physical reality in which we, humans, exist. Then on the right-hand side we have the corresponding digital reality.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/_xpI0JosYUk]
 
@@ -54,8 +58,6 @@ There are two main types of devices that deliver Windows Mixed Reality experienc
 <td> Movement</td><td> Full six-degrees-of-freedom movement, both rotation and translation.</td><td> Full six-degrees-of-freedom movement, both rotation and translation.</td>
 </tr>
 </table>
-
-
 
 Note, whether a device is connected to or tethered to a separate PC (via USB cable or Wi-Fi) or self-contained (untethered) does not reflect whether a device is holographic or immersive. Certainly, features that improve mobility lead to better experiences and both holographic and immersive devices could be tethered or untethered.
 

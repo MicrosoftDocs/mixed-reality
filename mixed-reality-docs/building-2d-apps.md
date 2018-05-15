@@ -1,18 +1,18 @@
 ---
-title: Building 2D apps
-description: 
-author: 
+title: Updating 2D UWP apps for mixed reality
+description: This article outlines updating your existing 2D Universal Windows Platform app to run on HoloLens and Windows Mixed Reality immersive headsets.
+author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: 2D app, UWP, flat app, HoloLens, immersive headset, app model, back button, app bar, dpi, resolution, scale
 ---
 
 
 
-# Building 2D apps
+# Updating 2D UWP apps for mixed reality
 
-Windows Mixed Reality enables a user to see holograms as if they are right around you, in your physical or digital world. At its core, both HoloLens and the Desktop PCs you attach headset accessories to are Windows 10 devices; this means that you're able to run almost all of the Universal Windows Platform (UWP) apps in the Store as 2D apps.
+Windows Mixed Reality enables a user to see holograms as if they are right around you, in your physical or digital world. At its core, both HoloLens and the Desktop PCs you attach immersive headset accessories to are Windows 10 devices; this means that you're able to run almost all of the Universal Windows Platform (UWP) apps in the Store as 2D apps.
 
 ## Creating a 2D UWP app for mixed reality
 
@@ -27,6 +27,7 @@ To get started building a 2D UWP app, check out the [Create your first app](http
 ### Bringing an existing 2D Store app to UWP
 
 If you already have a 2D Windows app in the Store, you must first ensure it is targeting the Windows 10 Universal Windows Platform (UWP). Here are all the potential starting points you may have with your Store app today:
+<br>
 
 |  Starting Point  |  AppX Manifest Platform Target  |  How to make this Universal? | 
 |----------|----------|----------|
@@ -37,34 +38,32 @@ If you already have a 2D Windows app in the Store, you must first ensure it is t
 
 If you have a 2D Unity app today built as a Win32 app (the "PC, Mac & Linux Standalone" build target), you can target mixed reality by switching Unity to the "Universal Windows Platform" build target instead.
 
-We'll talk about ways that you can restrict your app specifically to the HoloLens device using the Windows.Holographic device family [below](#publish-and-maintain-your-universal-app-on-hololens).
+We'll talk about ways that you can restrict your app specifically to HoloLens using the Windows.Holographic device family [below](#publish-and-maintain-your-universal-app).
 
-### Run your 2D app in a desktop mixed reality headset
+### Run your 2D app in a Windows Mixed Reality immersive headset
 
 If you've deployed your 2D app to the desktop machine where you are developing and tried it out on your monitor, you're already ready to try it out in an immersive desktop headset!
 
 Just go to the Start menu within the mixed reality headset and launch the app from there. The desktop shell and the holographic shell both share the same set of UWP apps, and so the app should already be present once you've deployed from Visual Studio.
 
-## Targeting both desktop headsets and HoloLens
+## Targeting both immersive headsets and HoloLens
 
 Congratulations! Your app is now using the Windows 10 Universal Windows Platform (UWP).
 
-Your app is now capable of running on today's Windows devices like Desktop, Mobile, Xbox, and HoloLens as well as future Windows devices. However, to actually target all of those devices, you will need to ensure your app is targeting the Windows.Universal device family.
+Your app is now capable of running on today's Windows devices like Desktop, Mobile, Xbox, Windows Mixed Reality immersive headsets, and HoloLens, as well as future Windows devices. However, to actually target all of those devices, you will need to ensure your app is targeting the Windows.Universal device family.
 
 ### Change your device family to Windows.Universal
 
 Now let's jump into your AppX manifest to ensure your Windows 10 UWP app can run on HoloLens:
 * Open your app's solution file with **Visual Studio** and navigate to the app package manifest
-* Right click the **Package.appxmanifest** file in your Solution and go to **View Code**
-
-![package.appxmanifest in Solution Explorer](images/openappxmanifest-500px.png)
+* Right click the **Package.appxmanifest** file in your Solution and go to **View Code**<br>
+  ![package.appxmanifest in Solution Explorer](images/openappxmanifest-500px.png)<br>
 * Ensure your Target Platform is Windows.Universal in the dependencies section
-
-```
-<Dependencies>
-  <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />
-</Dependencies>
-```
+  ```
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />
+  </Dependencies>
+  ```
 * Save!
 
 If you do not use Visual Studio for your development environment, you can open **AppXManifest.xml** in the text editor of your choice to ensure you're targeting the **Windows.Universal** *TargetDeviceFamily*.
@@ -75,15 +74,15 @@ Now that your UWP app targets "Windows.Universal", let's build your app and run 
 * Make sure you have [installed the HoloLens Emulator](install-the-tools.md).
 * In Visual Studio, select the **x86** build configuration for your app
 
-![x86 build configuration in Visual Studio](images/x86setting.png)
+  ![x86 build configuration in Visual Studio](images/x86setting.png)<br>
 * Select **HoloLens Emulator** in the deployment target drop-down menu
 
-![HoloLens Emulator in deployment target list](images/deployemulator-500px.png)
+  ![HoloLens Emulator in deployment target list](images/deployemulator-500px.png)<br>
 * Select **Debug > Start Debugging** to deploy your app and start debugging.
 * The emulator will start and run your app.
 * With a keyboard, mouse, and/or an Xbox controller, place your app in the world to launch it.
 
-![HoloLens Emulator loaded with a UWP sample](images/hololensemulatorwithuwpsample-800px.png)
+  ![HoloLens Emulator loaded with a UWP sample](images/hololensemulatorwithuwpsample-800px.png)<br>
 
 ### Next steps
 
@@ -91,18 +90,7 @@ At this point, one of two things can happen:
 1. Your app will show its splash and start running after it is placed in the Emulator! Awesome!
 2. Or after you see a loading animation for a 2D hologram, loading will stop and you will just see your app at its splash screen. This means that something went wrong and it will take more investigation to understand how to bring your app to life in Mixed Reality.
 
-## How to debug issues specific to HoloLens
-
-HoloLens Development Edition is a new device target of the Windows 10 operating system, so there are [Universal Windows Platform APIs that are still undergoing testing and development](current-limitations-for-apps-using-apis-from-the-shell.md#universal-apis-not-supported). We've experienced our own challenges bringing Microsoft UWP apps to HoloLens.
-
-Here are some high level areas that we've found to be a problem:
-* Querying for File System paths not supported on startup.
-* Using legacy authentication methods outside of Web Authentication Broker or Web Account Manager.
-* Making deep device hardware queries on startup (i.e. games).
-* Using Calendar, People, Contact APIs on startup.
-* Using large 3rd party libraries or services that may not be fully vetted on HoloLens.
-
-To get to the bottom of what's causing your UWP app not to start on HoloLens, you'll have to debug.
+To get to the bottom of what may be causing your UWP app not to start on HoloLens, you'll have to debug.
 
 ### Running your UWP app in the debugger
 
@@ -111,40 +99,59 @@ These steps will walk you through debugging your UWP app using the Visual Studio
 * Select **Debug > Start Debugging** to deploy your app and start debugging.
 * Place the app in the world with your mouse, keyboard, or Xbox controller.
 * Visual Studio should now break somewhere in your app code.
-* If your app doesn't immediately crash or break into the debugger because of an unhandled error, then go through a test pass of the core features of your app to make sure everything is running and functional. You may see errors like pictured below (internal exceptions that are being handled). To ensure you don't miss internal errors that impact the experience of your app, run through your automated tests and unit tests to make sure everything behaves as expected.
+  - If your app doesn't immediately crash or break into the debugger because of an unhandled error, then go through a test pass of the core features of your app to make sure everything is running and functional. You may see errors like pictured below (internal exceptions that are being handled). To ensure you don't miss internal errors that impact the experience of your app, run through your automated tests and unit tests to make sure everything behaves as expected.
 
 ![HoloLens Emulator loaded with a UWP sample showing a system exception](images/hololensemulatorwithuwpsampleexception-800px.png)
 
-### Understanding the failure
-
-As mentioned above, there are known issues with APIs under testing and development for the HoloLens Development Edition. If you find that your app uses one of the APIs in the namespaces [listed as having potential problems](current-limitations-for-apps-using-apis-from-the-shell.md#universal-apis-not-supported), use the Windows Feedback tool to send feedback to Microsoft.
-
-**How to open the Windows Feedback tool**
-1. [Bloom](gestures.md#bloom) to see the **Start menu**
-2. Launch and place the **Windows Feedback** app.
-3. Select **Developer Platform** and send us the details of your problem.
-
-We are continually fixing platform bugs in the APIs of UWP. For APIs that are failing by design - because they are not supported on HoloLens - here are the patterns that you can expect in your app and design around:
-
-**Error codes**
-* Should not return a special failure HRESULT just because the API is partially-functional. Instead, APIs should signal failure via the design of the API itself by using empty collections, boolean return values, explicit status codes, etc. Note that if the API already returns HRESULTs due to programming errors (eg, passing invalid arguments) then it will continue to return those failures as appropriate.
-
-**Collections**
-* Should not return a null IVector[View], IMap[View], or Array from a property getter or method return. Instead, they will return a valid object that has zero items in it. If the type of the map or vector is mutable (ie, not a View) then allow the app to make changes even if they are not used anywhere.
-* In some rare cases, APIs expose a read / write collection property that allows the app to provide a value of their own. In these cases, if the API already returns null in the fully-functional case, it should continue to return null in the partially-functional case. Note however that this is an API Design anti-pattern and should not generally be followed by most UWP APIs.
-
-**Asynchronous functions**
-* Should not return a null IAsyncAction or IAsyncOperation from an Async method. Instead, they will return a valid object that is already in the completed state and has the appropriate result (empty collection, status code, etc.).
-
-**Events**
-* Will not fail or ignore event registrations. Instead, API should accept the event registration / un-registration but simply never raise the event. The API must hold on to any registered event handlers (rather than silently ignoring them) since an app might inadvertently rely on the registration for lifetime management.
-
 ## Update your UI
 
-Now that your UWP app is running on Desktop headsets and/or HoloLens as a 2D hologram, next we'll make sure it looks beautiful. Here are some things to consider:
-* Windows Mixed Reality will run all 2D apps at a fixed resolution and DPI that equates to 853x480 effective pixels. Consider if your design needs refinement at this scale and think through our [2D UI guidance](updating-your-existing-universal-app-for-hololens.md) to improve your experience on HoloLens.
-* Windows Mixed Reality [does not support](app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app.
-* Windows Mixed Reality on HoloLens [does not support](current-limitations-for-apps-using-apis-from-the-shell.md) the Share contract, 2D Printing, full screen mode, casting, and other features that may be in your app.
+Now that your UWP app is running on immersive headsets and/or HoloLens as a 2D hologram, next we'll make sure it looks beautiful. Here are some things to consider:
+* Windows Mixed Reality will run all 2D apps at a fixed resolution and DPI that equates to 853x480 effective pixels. Consider if your design needs refinement at this scale and review the design guidance below to improve your experience on HoloLens and immersive headsets.
+* Windows Mixed Reality [does not support](app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app or explore [3D app launchers](3d-app-launcher-design-guidance.md).
+
+### 2D app view resolution and scale factor
+
+![From responsive design](images/scale-500px.png)
+
+Windows 10 moves all visual design from real screen pixels to **effective pixels**. That means, developers design their UI following the Windows 10 Human Interface Guidelines for effective pixels, and Windows scaling ensures those effective pixels are the right size for usability across devices, resolutions, DPI, etc. See this [great read on MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) to learn more as well as this [BUILD presentation](http://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
+
+Even with the unique ability to place apps in your world at a range of distances, TV-like viewing distances are recommended to produce the best readability and interaction with gaze/gesture. Because of that, a virtual slate in the Mixed Reality Home will display your flat UWP view at:
+
+**1280x720, 150%DPI** (853x480 effective pixels)
+
+This resolution has several advantages:
+* This effective pixel layout will have about the same information density as a tablet or small desktop.
+* It matches the fixed DPI and effective pixels for UWP apps running on Xbox One, enabling seamless experiences across devices.
+* This size looks good when scaled across our range of operating distances for apps in the world.
+
+### 2D app view interface design best practices
+
+**Do:**
+* Follow the [Windows 10 Human Interface Guidelines (HIG)](https://dev.windows.com/en-us/design) for styles, font sizes and button sizes. HoloLens will do the work to ensure your app will have compatible app patterns, readable text sizes, and appropriate hit target sizing.
+* Ensure your UI follows best practices for [responsive design](https://msdn.microsoft.com/en-us/library/windows/apps/dn958435.aspx) to look best at HoloLen's unique resolution and DPI.
+* Use the "light" color theme recommendations from Windows.
+
+**Don't:**
+* Change your UI too drastically when in mixed reality, to ensure users have a familiar experience in and out of the headset.
+
+### Understand the app model
+
+The [app model](app-model.md) for mixed reality is designed to use the Mixed Reality Home, where many apps live together. Think of this as the mixed reality equivalent of the desktop, where you run many 2D apps at once. This has implications on app life cycle, Tiles, and other key features of your app.
+
+### App bar and back button
+
+2D views are decorated with a app bar above their content. The app bar has two points of app-specific personalization:
+
+**Title:** displays the *displayname* of the Tile associated with the app instance
+
+**Back Button:** raises the *[BackRequested](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* event when pressed. Back Button visibility is controlled by *[SystemNavigationManager.AppViewBackButtonVisibility](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
+
+![App bar UI in 2D app view](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
+*App bar UI in 2D app view*
+
+### Test your 2D app's design
+
+It is important to test your app to make sure the text is readable, the buttons are targetable, and the overall app looks correct. You can [test](testing-your-app-on-hololens.md) on a desktop headset, a HoloLens, an emulator, or a touch device with resolution set to 1280x720 @150%.
 
 ## New input possibilities
 
@@ -163,14 +170,13 @@ Here are the high level concepts/scenarios you should understand for input when 
 
 ## Publish and Maintain your Universal app
 
-Once your app is up and running, package your app to [submit it to the Universal Windows Store](submitting-an-app-to-the-microsoft-store.md).
+Once your app is up and running, package your app to [submit it to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md).
 
 ## See also
 * [App model](app-model.md)
-* [Updating your existing universal app for HoloLens](updating-your-existing-universal-app-for-hololens.md)
 * [Gaze](gaze.md)
 * [Gesture](gestures.md)
 * [Motion controllers](motion-controllers.md)
 * [Voice](voice-input.md)
-* [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
+* [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)

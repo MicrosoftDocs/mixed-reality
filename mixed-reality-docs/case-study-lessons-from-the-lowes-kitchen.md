@@ -1,11 +1,11 @@
 ---
 title: Case study - Lessons from the Lowe's kitchen
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: The HoloLens team wants to share some of the best practices that were derived from the Lowe's HoloLens project.
+author: BrandonBray
+ms.author: kevincol
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, Lowe's, HoloLens, kitchen, case study
 ---
 
 
@@ -13,7 +13,7 @@ keywords:
 # Case study - Lessons from the Lowe's kitchen
 
 The HoloLens team wants to share some of the best practices that were derived from the Lowe's HoloLens project. Below is a video of the Lowe's HoloLens projected demonstrated at Satya's 2016 Ignite keynote.
-
+<br>
 >[!VIDEO https://www.youtube.com/embed/gC_4JxF0e_k]
 
 ## Lowe's HoloLens Best Practices
@@ -30,7 +30,7 @@ The two videos cover best practices that were derived from the Lowe's HoloLens P
 **Maximize performance for a mobile device** HoloLens is an untethered device with all the processing taking place in the device. This requires a mobile platform and requires a mindset similar to creating mobile applications. Microsoft recommends that your HoloLens application maintain 60FPS to provide a delicious experience for your users. Having low FPS can result in unstable holograms.
 
 Some of the most important things to look at when developing on HoloLens is asset optimization/decimation, using custom shaders (available for free in the [HoloLens Toolkit](https://github.com/Microsoft/HoloToolkit-Unity)). Another important consideration is to measure the frame rate from the very beginning of your project. Depending on the project, the order of displaying your assets can also be a big contributor
-
+<br>
 >[!VIDEO https://www.youtube.com/embed/o0QIPwgiP9A]
 
 ## Video 2
@@ -42,5 +42,5 @@ Some of the most important things to look at when developing on HoloLens is asse
 **Shared holographic experiences** Couples are the primary way that the Lowe's experience is consumed. One person can change the countertop and the other person will see the changes. We called this "shared experiences".
 
 **Interacting with customers** Lowe's designers are not using a HoloLens, but they need to see what the customers are seeing. We show how to capture what the customer is seeing on a UWP application.
-
+<br>
 >[!VIDEO https://www.youtube.com/embed/LceMdyKZ4PI]

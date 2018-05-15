@@ -1,11 +1,11 @@
 ---
 title: Holograms 100
-description: 
-author: 
-ms.author: neerajw
-ms.date: 2/28/2018
+description: Learn how to create your first basic mixed reality hello world application.
+author: keveleigh
+ms.author: kurtie
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial
 ---
 
 
@@ -71,7 +71,11 @@ In this chapter, we will set some Unity project settings that help us target the
 
 ### Unity performance and quality settings
 
-![Unity quality settings for HoloLens](images/qualitysettings.png) Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
+**Unity quality settings for HoloLens**
+
+![Unity quality settings for HoloLens](images/qualitysettings.png) 
+
+Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
 1. Select **Edit > Project Settings > Quality**
 2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and Fastest row is green.
 
@@ -79,12 +83,24 @@ In this chapter, we will set some Unity project settings that help us target the
 
 ### Target Windows 10 SDK
 
-![Target Windows Holographic SDK](images/xrsettings.png) We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK. ![Verify .NET Configuration](images/configoptions-375px.png)
-1. Select **Edit > Project Settings > Player**
-2. In the **Inspector** panel click on the **Windows Store** tab
+**Target Windows Holographic SDK**
+
+![Target Windows Holographic SDK](images/xrsettings.png) 
+
+We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK.
+1. Go to **Edit > Project Settings > Player**.
+2. In the **Inspector Panel** for Player Settings, select the **Windows Store** icon.
 3. Expand the **XR Settings** group.
-4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality SDKs** list and confirm **"Windows Mixed Reality"** is listed as a supported SDK.
-5. In the **Other Settings** Configuration section, make sure that **Scripting Backend** is set to **.NET**
+4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality SDKs** list.
+5. Verify that **Windows Mixed Reality** appears in the list. If not, select the **+** button at the bottom of the list and choose **Windows Mixed Reality**.
+
+**Verify .NET Configuration**
+
+![Verify .NET Configuration](images/configoptions-375px.png)
+
+1. Go to **Edit > Project Settings > Player** (you may still have this up from the previous step).
+2. In the **Inspector Panel** for Player Settings, select the **Windows Store** icon.
+3. In the **Other Settings** Configuration section, make sure that **Scripting Backend** is set to **.NET**
 
 Awesome job on getting all the project settings applied. Next, let us add a hologram!
 
@@ -159,7 +175,7 @@ The instructions differ for deploying to a device versus the emulator. Follow th
 2. Enter the IP address of your mixed reality device and change **Authentication Mode** to Universal (Unencrypted Protocol) for HoloLens and **Windows** for other devices.
 3. Click **Debug > Start without debugging**.
 
-**For HoloLens**, If this is the first time deploying to your device, you will need to pair [Using Visual Studio](using-visual-studio.md).
+**For HoloLens**, If this is the first time deploying to your device, you will need to pair [using Visual Studio](using-visual-studio.md).
 
 ### Deploy to mixed reality device over USB
 

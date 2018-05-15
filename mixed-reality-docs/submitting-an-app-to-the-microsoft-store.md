@@ -1,20 +1,20 @@
 ---
 title: Submitting an app to the Microsoft Store
-description: 
-author: 
+description: This article offers tips on submitting your mixed reality apps to the Microsoft Store, including how to package and test your app and tips to pass certification and aid in discoverability of your app in the Store.  
+author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising
 ---
 
 
 
 # Submitting an app to the Microsoft Store
 
-Both [HoloLens](hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens or PC (or both), you'll submit your app to the Microsoft Store through the [Windows Dev Center dashboard](https://developer.microsoft.com/overview).
+Both [HoloLens](hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens or PC (or both), you'll submit your app to the Microsoft Store through the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview).
 
-If you don't already have a Windows Dev Center account, you can [sign up today](https://dev.windows.com/en-us/programs/join).
+If you don't already have a Windows Dev Center account, you can [sign up today](https://developer.microsoft.com/en-us/store/register).
 
 ## Packaging a mixed reality app
 
@@ -22,37 +22,36 @@ If you don't already have a Windows Dev Center account, you can [sign up today](
 
 There are several image assets required by the appx building tools to build your application into an appx package to submit to the Store. You can learn more about [guidelines for tile and icon assets](https://msdn.microsoft.com/en-us/library/windows/apps/mt412102.aspx) on MSDN.
 
-|  **Required Asset**  |  **Recommended Scale**  |  Image Format  |  **Where is this displayed?** | 
-|----------|----------|----------|----------|
-|  Square 71x71 Logo |  Any  |  PNG  |  N/A | 
-|  Square 150x150 Logo |  150x150 (100% scale) \
- 225x225 (150% scale)  |  PNG |  Start pins and All Apps (if 310x310 isn't provided), Store Search Suggestions \
- Store Listing Page, Store Browse, Store Search | 
+| Required Asset | Recommended Scale | Image Format | Where is this displayed? | 
+|----------|----------|----------|------------------|
+| Square 71x71 Logo | Any |  PNG | N/A | 
+| Square 150x150 Logo | 150x150 (100% scale) or 225x225 (150% scale) | PNG | Start pins and All Apps (if 310x310 isn't provided), Store Search Suggestions, Store Listing Page, Store Browse, Store Search | 
 |  Wide 310x150 Logo |  Any  |  PNG  |  N/A | 
 |  Store Logo |  75x75 (150% scale)  |  PNG  |  Dev Center, Report App, Write a Review, My Library | 
 |  Splash Screen |  930x450 (150% scale)  |  PNG  |  2D app launcher (slate) | 
 
 There are also some recommended assets which HoloLens can take advantage of.
 
-|  **Recommended Assets**  |  **Recommended Scale**  |  **Where is this displayed?** | 
+| Recommended Assets | Recommended Scale | Where is this displayed? | 
 |----------|----------|----------|
 |  Square 310x310 Logo |  310x310 (150% scale) |  Start pins and All Apps | 
 
 ### Live Tile requirements
 
-The Start Menu in the HoloLens will use the largest included square tile image.
+The Start menu on HoloLens will use the largest included square tile image.
 
-You may see that some apps published by Microsoft have a 3D launcher for their application. Developers can add a 3D launcher for their app using following the directions [here](implementing-3d-app-launchers.md).
+You may see that some apps published by Microsoft have a 3D launcher for their application. Developers can add a 3D launcher for their app using [these instructions](implementing-3d-app-launchers.md).
 
 ### Specifying target and minimum version of Windows
 
 If your mixed reality app includes features that are specific to a certain version of Windows, it's important to specify the target and minimum platform versions that your Universal Windows application will support.
 
-**This is especially true for apps targeting [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md), which require the Windows 10 Fall Creators Update (10.0; Build 16299) to function properly.**
+**This is especially true for apps targeting [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md), which require at least the Windows 10 Fall Creators Update (10.0; Build 16299) to function properly.**
 
 You will be prompted to set target and minimum version of Windows when you create a new Universal Windows Project in Visual Studio. You can also change this setting for an existing project in the "Project" menu, then "<Your app name's> Properties" at the bottom of the drop-down menu.
 
-![Set minimum and target platform versions in Visual Studio 2017](images/visual-studio-min-version-500px.png)
+![Set minimum and target platform versions in Visual Studio 2017](images/visual-studio-min-version-500px.png)<br>
+Set minimum and target platform versions in Visual Studio
 
 ### Specifying target device families
 
@@ -66,7 +65,10 @@ To set this field in Visual Studio, right click on the Package.appxmanifest and 
 </Dependencies>
 ```
 
-If your app is created for **HoloLens**, then you can ensure that it is only installed on HoloLens by specifying a target device family of "Windows.Holographic". **Note:** [HoloLens is still on Windows 10 version 10240](release-notes.md), so if you set a highe MinVersion, no HoloLens user will be able to install your app.
+If your app is created for **HoloLens**, then you can ensure that it is only installed on HoloLens by specifying a target device family of "Windows.Holographic". 
+
+>[!NOTE]
+>HoloLens is still on [Windows 10 version 10240](release-notes.md), so if you set a higher MinVersion, no HoloLens user will be able to install your app.
 
 ```
 <Dependencies>
@@ -117,7 +119,10 @@ The general guidance is that the highest version number package that is applicab
 If there is a Windows.Universal package and a Windows.Holographic package and the Windows.Universal package has a higher version number, a HoloLens user will download the higher version number Windows.Universal package instead of the Windows.Holographic package. There are several solutions to this problem:
 1. Ensure your platform specific packages such as Windows.Holographic always have a higher version number than your platform agnostic packages such as Windows.Universal
 2. Do not package apps as Windows.Universal if you also have platform specific packages - instead package the Windows.Universal package for the specific platforms you want it available on
-* *Note that you can declare a single package to be applicable to multiple target device families*
+
+>[!NOTE]
+> You can declare a single package to be applicable to multiple target device families
+
 3. Create a single Windows.Universal package that works across all platforms. Support for this isn't great right now so the above solutions are recommended.
 
 ## Testing your app
@@ -148,18 +153,17 @@ However, there are four key areas in the submission process where you'll want to
 
 On the **[Properties](https://docs.microsoft.com/en-us/windows/uwp/publish/enter-app-properties)** page of the app submission process, you'll find several options related to mixed reality in the **[Product declarations](https://docs.microsoft.com/en-us/windows/uwp/publish/app-declarations)** section.
 
-![Mixed reality product declarations](images/product-declarations-900px.png)
+![Mixed reality product declarations](images/product-declarations-900px.png)<br>
+Mixed reality product declarations
 
 First, you'll want to identify the device types for which your app offers a mixed reality experience. This ensures that your app is included in Windows Mixed Reality collections in the Store, and that it's surfaced to users browsing the Store after connecting an immersive headset (or when browsing the Store on HoloLens).
 
-\
- Next to "This experience is designed for Windows Mixed Reality on:"
+Next to "This experience is designed for Windows Mixed Reality on:"
 * Check the **PC** box only if your app offers a VR experience when an immersive headset is connected to the user's PC. You should check this box whether your app is designed exclusively to run on an immersive headset or if it is a standard PC game/app that offers a mixed reality mode and/or bonus content when a headset is connected.
 * Check the **HoloLens** box only if your app offers a holographic experience when it's run on HoloLens.
 * Check **both** boxes if your app offers a mixed reality experience on both device types, like the [Mixed Reality Academy "island" app](mixed-reality-250.md) from Build 2017.
 
-\
- Next, if you selected "PC" above, you'll want to set the "mixed reality setup" (activity level). This only applies to mixed reality experiences that run on PCs connected to immersive headsets, as mixed reality apps on HoloLens are world-scale and the user doesn't define a boundary during setup.
+If you selected "PC" above, you'll want to set the "mixed reality setup" (activity level). This only applies to mixed reality experiences that run on PCs connected to immersive headsets, as mixed reality apps on HoloLens are world-scale and the user doesn't define a boundary during setup.
 * Choose **Seated + standing** if your app is designed with the intention that the user stays in one position (an example would be a game where you're seated in a cockpit of an aircraft).
 * Choose **All experiences** if your app is designed with the intention that the user walks around within the boundary he or she defined during setup (an example might be a game where you side-step and duck to dodge attacks).
 
@@ -167,7 +171,8 @@ First, you'll want to identify the device types for which your app offers a mixe
 
 On the **[Properties](https://docs.microsoft.com/en-us/windows/uwp/publish/enter-app-properties)** page of the app submission process, you'll find several options related to mixed reality in the **[System requirements](https://docs.microsoft.com/en-us/windows/uwp/publish/enter-app-properties#system-requirements)** section.
 
-![System requirements](images/system-reqs-800px.png)
+![System requirements](images/system-reqs-800px.png)<br>
+System requirements
 
 In this section, you'll identify minimum (required) hardware and recommended (optional) hardware for your mixed reality app.
 
@@ -175,7 +180,11 @@ In this section, you'll identify minimum (required) hardware and recommended (op
 
 Use the checkboxes to tell potential customers if your app supports **microphone** (for [voice input](voice-input.md)), **[Xbox controller or gamepad](hardware-accessories.md#bluetooth-gamepads)**, and/or **[Windows Mixed Reality motion controllers](motion-controllers.md)**. This information will be surfaced on your app's product detail page in the Store and will help your app get included in the appropriate app/game collections (for example, a collection may exist for all games that support motion controllers).
 
-Be thoughtful about selecting checkboxes for "minimum hardware" or "recommended hardware" for input types. For example, if your game requires motion controllers, but accepts voice input via microphone, select the "minimum hardware" checkbox next to "Windows Mixed Reality motion controllers," but the "recommended hardware" checkbox next to "Microphone." If your game can be played with either an Xbox controller/gamepad or motion controllers, you might select the "minimum hardware" checkbox next to "Xbox controller or gamepad" and select the "recommended hardware" checkbox next to "Windows Mixed Reality motion controllers" as motion controllers will likely offer a step up in experience from the gamepad.
+Be thoughtful about selecting checkboxes for "minimum hardware" or "recommended hardware" for input types. 
+
+For example: 
+* If your game requires motion controllers, but accepts voice input via microphone, select the "minimum hardware" checkbox next to "Windows Mixed Reality motion controllers," but the "recommended hardware" checkbox next to "Microphone." 
+* If your game can be played with either an Xbox controller/gamepad or motion controllers, you might select the "minimum hardware" checkbox next to "Xbox controller or gamepad" and select the "recommended hardware" checkbox next to "Windows Mixed Reality motion controllers" as motion controllers will likely offer a step-up in experience from the gamepad.
 
 **Windows Mixed Reality immersive headset:**
 
@@ -199,21 +208,26 @@ This only applies if your mixed reality app uses an immersive headset connected 
 
 If you've [packaged your app correctly](https://docs.microsoft.com/en-us/windows/uwp/publish/app-package-requirements) in Visual Studio, uploading it on the Packages page of the app submission process should produce a table identifying which device families your app will be available to.
 
-![Device family availability table](images/device-family-table-900px.png)
+![Device family availability table](images/device-family-table-900px.png)<br>
+Device family availability table
 
 If your mixed reality app works on immersive headsets, then at least "Windows 10 Desktop" should be selected in the table. If your mixed reality app works on HoloLens, then at least "Windows 10 Holographic" should be selected. If your app runs on both Windows Mixed Reality headset types, like the [Mixed Reality Academy "island" app](mixed-reality-250.md), both "Windows 10 Desktop" and "Windows 10 Holographic" should be selected.
 
-**Note:** many developers run into errors when uploading their app's package related to mismatches between the package manifest and your app/publisher account information in Dev Center. These errors can often be avoided by signing into Visual Studio with the same account associated with your Windows developer account (the one you use to sign into Windows Dev Center). If you use the same account, you'll be able to associate your app with its identity in the Microsoft Store before you package it.
+>[!TIP]
+>Many developers run into errors when uploading their app's package related to mismatches between the package manifest and your app/publisher account information in Dev Center. These errors can often be avoided by signing into Visual Studio with the same account associated with your Windows developer account (the one you use to sign into Windows Dev Center). If you use the same account, you'll be able to associate your app with its identity in the Microsoft Store before you package it.
 
-![Associate your app with the Microsoft Store](images/associate-your-app-700px.png)
+![Associate your app with the Microsoft Store](images/associate-your-app-700px.png)<br>
+Associate your app with the Microsoft Store in Visual Studio
 
 ### Store listing page
 
 On the [Store listing](https://docs.microsoft.com/en-us/windows/uwp/publish/create-app-store-listings) page of the app submission process, there are several places you can add useful information about your mixed reality app.
 
-**Important:** to ensure your app is correctly categorized by the Store and made discoverable to Windows Mixed Reality customers, you should add **"Windows Mixed Reality"** as one of your "Search terms" for the app (you can find search terms by expanding the "Shared fields" section).
+>[!IMPORTANT]
+>To ensure your app is correctly categorized by the Store and made discoverable to Windows Mixed Reality customers, you should add **"Windows Mixed Reality"** as one of your "Search terms" for the app (you can find search terms by expanding the "Shared fields" section).
 
-![Add Windows Mixed Reality to search terms](images/search-terms-800px.png)
+![Add Windows Mixed Reality to search terms](images/search-terms-800px.png)<br>
+Add "Windows Mixed Reality" to search terms
 
 ## Offering a free trial for your game or app
 

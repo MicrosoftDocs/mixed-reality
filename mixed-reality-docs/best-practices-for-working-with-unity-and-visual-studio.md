@@ -1,18 +1,18 @@
 ---
 title: Best practices for working with Unity and Visual Studio
-description: 
-author: 
+description: Tips and tricks to streamline the workflow of creating a mixed reality application with Unity and Visual Studio.
+author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: deploy, unity, visual studio, HoloLens, immersive headset
 ---
 
 
 
 # Best practices for working with Unity and Visual Studio
 
-A developer creating a holographic application with Unity will need to switch between Unity and Visual Studio to build the application package that is deployed to HoloLens. By default two instances of Visual Studio are required (one to modify Unity scripts and one to deploy to the device and debug). The following procedure allows development using single Visual Studio instance, reduces the frequency of exporting Unity projects, and improves the debugging experience.
+A developer creating a mixed reality application with Unity will need to switch between Unity and Visual Studio to build the application package that is deployed to HoloLens and/or an immersive headset. By default two instances of Visual Studio are required (one to modify Unity scripts and one to deploy to the device and debug). The following procedure allows development using single Visual Studio instance, reduces the frequency of exporting Unity projects, and improves the debugging experience.
 
 ## Improving iteration time
 

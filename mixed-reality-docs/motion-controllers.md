@@ -1,13 +1,12 @@
 ---
 title: Motion controllers
-description: 
-author: 
+description: Details on the Mixed Reality motion controllers.
+author: wguyman
 ms.author: wguyman
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: 6dof controllers, motion controllers
 ---
-
 
 
 # Motion controllers
@@ -15,6 +14,7 @@ keywords:
 Motion controllers are [hardware accessories](hardware-accessories.md) that allow users to take action in mixed reality. An advantage of motion controllers over [gestures](gestures.md) is that the controllers have a precise position in space, allowing for fine grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.
 
 ![Windows Mixed Reality motion controllers](images/winmr-ck-1080x1080-350px.jpg)
+
 
 ## Device support
 
@@ -26,15 +26,14 @@ Motion controllers are [hardware accessories](hardware-accessories.md) that allo
 </tr>
 </table>
 
-
-
 ## Hardware details
 
 >[!VIDEO https://www.youtube.com/embed/1nlcdDNOdm8]
 
 Windows Mixed Reality motion controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. These motion controllers will offer the same ease of setup and portability as Windows Mixed Reality immersive headsets. Our device partners plan to market and sell these controllers on retail shelves this holiday.
 
-![Get to know your controller](images/controllerimage-750px.png)
+![Get to know your controller](images/controllerimage-750px.png)<br>
+*Get to know your controller*
 
 **Features:**
 * Optical tracking
@@ -60,35 +59,39 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 
 Motion controllers can be bonded with host PC using Windows settings like any other Bluetooth device.
 
-1.    Insert 2 AA batteries into the back of the controller. Leave the battery cover off for now.
+1. Insert 2 AA batteries into the back of the controller. Leave the battery cover off for now.
+2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
+3. Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
+4. Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
+5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
+6. Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
+7. Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
 
-2.    If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
+   ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)<br>
+   *Select "Motion controller" to pair; if there are multiple instances, select one from the bottom of the list*
+   
+8. You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category** as **Connected**. At this point, you may get a firmware update – see [next section](motion-controllers.md#updating-controller-firmware).
+9. Reattach battery cover.
+10. Repeat steps 1-9 for the second controller.
 
-3.    Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
+After successfully pairing both controllers, your settings should look like this under **“Mouse, keyboard, & pen” category** 
 
-4.    Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
-
-5.    Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
-
-6.    Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
-
-7.    Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected. ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png) 8.    You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category”** as **Connected**. At this point, you may get a firmware update – see next section (“Updating controller firmware”).
-
-9.    Reattach battery cover.
-
-10.    Repeat steps 1-9 for the second controller.
-
-After successfully pairing both controllers, your settings should look like this under “**“Mouse, keyboard, & pen” category** ![Motion controllers connected](images/450px-motion-controller-connected-300px.png)
+   ![Motion controllers connected](images/450px-motion-controller-connected-300px.png)<br>
+   *Motion controllers connected*
 
 If the controllers are turned off after pairing, their status will show up as Paired. If controllers stay permanently under “Other devices” category pairing may have been only partially completed and need to be performed again to get controller functional.
 
 ### Updating controller firmware
+
 * If an immersive headset is connected to your PC, and new controller firmware is available, the firmware will be pushed to your motion controllers automatically the next time they're turned on. Controller firmware updates are indicated by a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes.
-* After the firmware update completes, the controllers will reboot and reconnect.
-1. Both controllers should be connected now. ![Controllers connected](images/cyk-connected-300px.jpg)
+* After the firmware update completes, the controllers will reboot and reconnect. Both controllers should be connected now. 
+    
+    ![Controllers connected](images/cyk-connected-300px.jpg)<br>
+    *Controllers connected in Bluetooth settings*
+
 * Verify your controllers work properly:
-1. Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
-2. Move your controllers and verify tracking, test buttons, and verify [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
+    1. Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
+    2. Move your controllers and verify tracking, test buttons, and verify [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
 
 ## Gazing and pointing
 
@@ -134,8 +137,9 @@ Like the headsets, the Windows Mixed Reality motion controller requires no setup
 
 If the user moves the controllers out of the headset's field of view, in most cases Windows will continue to infer controller positions and provide them to the app. When the controller has lost visual tracking for long enough, the controller's positions will drop to approximate-accuracy positions.
 
-At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing. \
+At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing.
 
+&nbsp;
 
 >[!VIDEO https://www.youtube.com/embed/rkDpRllbLII]
 
@@ -181,37 +185,39 @@ Both [hand gestures](gestures.md) and motion controllers can be tracked over tim
 
 ## Rendering the motion controller model
 
-**3D controller models**\
+**3D controller models**
  Windows makes available to apps a renderable model of each motion controller currently active in the system. By having your app dynamically load and articulate these system-provided controller models at runtime, you can ensure your app is forward-compatible to any future controller designs.
 
 These renderable models should all be rendered at the **grip pose** of the controller, as the origin of the model is aligned with this point in the physical world. If you are rendering controller models, you may then wish to raycast into your scene from the **pointer pose**, which represents the ray along which users will naturally expect to point, given that controller's physical design.
 
 For more information about how to load controller models dynamically in Unity, see the [Rendering the motion controller model in Unity](gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) section.
 
-**2D controller line art**\
+**2D controller line art**
  While we recommend attaching in-app controller tips and commands to the in-app controller models themselves, some developers may want to use 2D line art representations of the motion controllers in flat "tutorial" or "how-to" UI. For those developers, we've made .png motion controller line art files available in both black and white below (right-click to save).
 
-![Preview of motion controllers line art](images/motioncontrollers-black-preview-300px.png)\
- [Full-resolution motion controllers line art in '''white'''](images/motioncontrollers-white.png)\
+![Preview of motion controllers line art](images/motioncontrollers-black-preview-300px.png)
+
+ [Full-resolution motion controllers line art in '''white'''](images/motioncontrollers-white.png)
+ 
  [Full-resolution motion controllers line art in '''black'''](images/motioncontrollers-black.png)
 
 ## FAQ
 
-### How I can connect my controller to other PC?
+### Can I pair motion controllers to multiple PCs?
 
-*A: Currently controller support pairing with single PC at the time. Follow instructions on [motion controller setup](motion-controllers.md#setup) to pair your controllers. Before pairing remember to remove existing paired controllers from Bluetooth & other devices so that Windows will discover the controllers.*
+Motion controllers support pairing with a single PC. Follow instructions on [motion controller setup](motion-controllers.md#setup) to pair your controllers.
 
 ### How do I update motion controller firmware?
 
-*A: Motion controller firmware is part of HMD driver and will be updated automatically on connection if required. Firmware update takes typically 1-2 minutes depending on Bluetooth radio and link quality.* *Firmeware update can occasionally can take longer up to 10 minutes, this may indicate poor Bluetooth connectivity or radio interference. Please check Bluetooth best practices below. After firmware update controller reboots and re-connects to host PC and LEDs go bright for tracking. In case firmware update is interrupted (controller powered off or battery runs out) it will be tried again on next power on.*
+Motion controller firmware is part of the headset driver and will be updated automatically on connection if required. Firmware updates typically take 1-2 minutes depending on Bluetooth radio and link quality. In rare cases, controller firmware updates may take up to 10 minutes, which can indicate poor Bluetooth connectivity or radio interference. Please see [Bluetooth best practices in the Enthusiast Guide](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) to troubleshoot connectivity issues. After a firmware update, controllers will reboots and reconnect to the host PC (you may notice the LEDs go bright for tracking). If a firmware update is interrupted (for example, the controllers lose power), it will be attempted again the next time the controllers are powered on.
 
 ### How I can check battery level?
 
-*A: Battery level is on reverse side of the virtual model, there is no physical battery level indicator. After powering on controller wait few seconds to let reading stabilize.*
+In the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md), you can turn your controller over to see its battery level on the reverse side of the virtual model. There is no physical battery level indicator.
 
 ### Can you use these controllers without a headset? Just for the joystick/trigger/etc input?
 
-*A: Not for Universal Windows Applications*
+Not for Universal Windows Applications.
 
 ## Troubleshooting
 

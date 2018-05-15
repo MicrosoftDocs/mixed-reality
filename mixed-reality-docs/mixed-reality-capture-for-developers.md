@@ -1,11 +1,11 @@
 ---
 title: Mixed reality capture for developers
-description: 
-author: 
+description: Best practices for mixed reality capture for developers.
+author: wguyman
 ms.author: wguyman
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: mrc, photo, video, capture, camera
 ---
 
 
@@ -42,13 +42,25 @@ The most important step is to make sure your app is clearing to transparent blac
 
 Here are some of the artifacts you might see in MRC if your app is not clearing to transparent black:
 
-**Example Failures**: Black edges around the content
+**Example Failures**: Black edges around the content (failing to clear to transparent black)
 
-|  ![Failing to clear to transparent black: black edge artifacts around holograms](images/chessboardblackedges-300px.jpg)  |  |  ![Failing to clear to transparent black: black edge artifacts around holograms](images/fieldblackedges-300px.jpg) | 
+<table>
+<tr>
+<td>
+<img src="images/chessboardblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
+</td>
+<td>
+<img src="images/fieldblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
+</td>
+</tr>
+</table>
 
-**Example Failures**: The entire background scene of the hologram appears black ![Setting a background alpha value of 1 results in a black background](images/clearopaqueblack-300px.png)
 
-**Expected Result**: Holograms appear properly blended with the real-world
+**Example Failures**: The entire background scene of the hologram appears black. Setting a background alpha value of 1 results in a black background
+
+![Setting a background alpha value of 1 results in a black background](images/clearopaqueblack-300px.png)
+
+**Expected Result**: Holograms appear properly blended with the real-world (expected result if clearing to transparent black)
 
 ![Expected result if clearing to transparent black](images/cleartransparentblack-300px.png)
 
@@ -78,6 +90,8 @@ The mixed reality capture page of the [Windows Device Portal](using-the-windows-
 
 While the user can always trigger a photo or video using the system MRC capture service, an application may want to build a custom camera app but include holograms in the camera stream just like MRC. This allows the application to kick off captures on behalf of the user, build custom recording UI, or customize MRC settings to name a few examples.
 
+**HoloStudio adds a custom MRC camera using MRC effects**
+
 ![HoloStudio adds a custom MRC camera using MRC effects](images/cameraiconholostudio-300px.jpg)
 
 Unity Applications should see [Locatable_camera_in_Unity](locatable-camera-in-unity.md) for the property to enable holograms.
@@ -94,22 +108,39 @@ MRC Video Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureVideoEf
 
 |  Property Name  |  Type  |  Default Value  |  Description | 
 |----------|----------|----------|----------|
-|  StreamType  |  UINT32 ([MediaStreamType](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.capture.mediastreamtype.aspx))  |  1 (VideoRecord)  |  Describe which capture stream this effect is used for. \
- Audio is not available. | 
+|  StreamType  |  UINT32 ([MediaStreamType](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.capture.mediastreamtype.aspx))  |  1 (VideoRecord)  |  Describe which capture stream this effect is used for. Audio is not available. | 
 |  HologramCompositionEnabled  |  boolean  |  TRUE  |  Flag to enable or disable holograms in video capture. | 
 |  RecordingIndicatorEnabled  |  boolean  |  TRUE  |  Flag to enable or disable recording indicator on screen during hologram capturing. | 
 |  VideoStabilizationEnabled  |  boolean  |  FALSE  |  Flag to enable or disable video stabilization powered by the HoloLens tracker. | 
-|  VideoStabilizationBufferLength  |  UINT32  |  0  |  Set how many historical frames are used for video stabilization. \
- 0 is 0-latency and nearly "free" from a power and performance perspective. 15 is recommended for highest quality (at the cost of 15 frames of latency and memory). | 
+|  VideoStabilizationBufferLength  |  UINT32  |  0  |  Set how many historical frames are used for video stabilization. 0 is 0-latency and nearly "free" from a power and performance perspective. 15 is recommended for highest quality (at the cost of 15 frames of latency and memory). | 
 |  GlobalOpacityCoefficient  |  float  |  0.9  |  Set global opacity coefficient of hologram in range from 0.0 (fully transparent) to 1.0 (fully opaque). | 
 
 MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEffect**)
 
 |  Property Name  |  Type  |  Default Value  |  Description | 
 |----------|----------|----------|----------|
-|  MixerMode  |  UINT32  |  2  |  0 : Mic audio only \
- 1 : System audio only \
- 2 : Mic and System audio | 
+|  MixerMode  |  UINT32  |  2  |  0 : Mic audio only 1 : System audio only 2 : Mic and System audio |
+
+<table>
+<tr>
+<th>Property Name</th>
+<th>Type</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>MixerMode</td>
+<td>UINT32</td>
+<td>2</td>
+<td>
+<ul>
+<li>0 : Mic audio only</li>
+<li>1 : System audio only</li>
+<li>2 : Mic and System audio</li>
+</ul>
+</td>
+</tr>
+</table>
 
 ## Simultaneous MRC Limitations
 

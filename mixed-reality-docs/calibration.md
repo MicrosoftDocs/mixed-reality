@@ -1,11 +1,11 @@
 ---
 title: Calibration
-description: 
+description: Calibrating your IPD (interpupillary distance) can improve the quality of your visuals. Both HoloLens and Windows Mixed Reality immersive headsets offer ways to customize IPD.
 author: 
 ms.author: jakebo
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: calibration, comfort, visuals, quality, ipd
 ---
 
 
@@ -19,12 +19,13 @@ Calibrating your IPD (interpupillary distance) can improve the quality of your v
 ### During setup
 
 ![IPD finger-alignment screen at second step](images/ipd-finger-alignment-300px.jpg)
+*IPD finger-alignment screen at second step*
 
 On HoloLens, you'll be prompted to calibrate your visuals during setup. This allows the device to adjust hologram display according to the user's [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). With an incorrect IPD, holograms may appear unstable or at an incorrect distance.
 
 After Cortana introduces herself, the first setup step is calibration. It's recommended that you complete the calibration step during this setup phase, but it can be skipped by waiting until Cortana prompts you to say "Skip" to move on.
 
-Users are asked to align their finger with a series of six targets per eye. Through this process, the HoloLens sets the correct IPD for the user. If the calibration needs to be updated or adjusted for a new user, it can be run outside of setup using the Calibration app.
+Users are asked to align their finger with a series of six targets per eye. Through this process, HoloLens sets the correct IPD for the user. If the calibration needs to be updated or adjusted for a new user, it can be run outside of setup using the Calibration app.
 
 ### Calibration app
 
@@ -54,3 +55,6 @@ To change IPD within your headset, open the Settings app and navigate to **Mixed
 You can also adjust this setting by going to **Settings** > **Mixed reality** > **Headset display** on your PC.
 
 If your headset does not support IPD customization, this setting will be disabled.
+
+## See also
+* [Environment considerations for HoloLens](environment-considerations-for-hololens.md)

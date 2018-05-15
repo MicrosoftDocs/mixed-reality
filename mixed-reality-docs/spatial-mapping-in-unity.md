@@ -1,18 +1,16 @@
 ---
 title: Spatial mapping in Unity
-description: 
-author: 
+description: Rendering and colliding with the real-world geometry around you in Unity.
+author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component
 ---
 
 
 
 # Spatial mapping in Unity
-
-**Namespace:** *UnityEngine.VR.WSA.SurfaceObserver*
 
 This topic describes how to use [spatial mapping](spatial-mapping.md) in your Unity project, retrieving triangle meshes that represent the surfaces in the world around a HoloLens device, for placement, occlusion, room analysis and more.
 
@@ -60,7 +58,7 @@ You may add both components to your app if you'd like to both visualize and inte
 
 To use these two components in your Unity app:
 1. Select a GameObject at the center of the area in which you'd like to detect spatial surface meshes.
-2. In the Inspector window, **Add Component** > **AR** > **Spatial Mapping Collider** or **Spatial Mapping Renderer**.
+2. In the Inspector window, **Add Component** > **XR** > **Spatial Mapping Collider** or **Spatial Mapping Renderer**.
 
 You can find more details on how to use these components at the [Unity documentation site](https://docs.unity3d.com/Manual/windowsholographic-sm-component.html).
 
@@ -74,8 +72,7 @@ These components make it drag-and-drop easy to get started with Spatial Mapping.
 
 If you need more control than you get from the Spatial Mapping Renderer and Spatial Mapping Collider components, you can use the low-level Spatial Mapping script APIs.
 
-**Namespace:** *UnityEngine.VR.WSA*
-
+**Namespace:** *UnityEngine.XR.WSA*<br>
 **Types**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *SurfaceId*
 
 The following is an outline of the suggested flow for an application that uses the spatial mapping APIs.
@@ -84,7 +81,7 @@ The following is an outline of the suggested flow for an application that uses t
 
 Instantiate one SurfaceObserver object for each application-defined region of space that you need spatial mapping data for.
 
-```
+```cs
 SurfaceObserver surfaceObserver;
 
  void Start () {
@@ -94,7 +91,7 @@ SurfaceObserver surfaceObserver;
 
 Specify the region of space that each SurfaceObserver object will provide data for by calling either SetVolumeAsSphere, SetVolumeAsAxisAlignedBox, SetVolumeAsOrientedBox, or SetVolumeAsFrustum. You can redefine the region of space in the future by simply calling one of these methods again.
 
-```
+```cs
 void Start () {
     ...
      surfaceObserver.SetVolumeAsAxisAlignedBox(Vector3.zero, new Vector3(3, 3, 3));
@@ -103,7 +100,7 @@ void Start () {
 
 When you call SurfaceObserver.Update(), you must provide a handler for each spatial surface in the SurfaceObserver's region of space that the spatial mapping system has new information for. The handler receives, for one spatial surface:
 
-```
+```cs
 private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
  {
     //see Handling Surface Changes
@@ -116,8 +113,9 @@ There are several main cases to handle. Added & Updated which can use the same c
 * In the Added & Updated cases in the example, we add or get the GameObject representing this mesh from the dictionary, create a SurfaceData struct with the necessary components, then call RequestMeshDataAsync to populate the GameObject with the mesh data and position in the scene.
 * In the Removed case, we remove the GameObject representing this mesh from the dictionary and destroy it.
 
-```
-System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects = new System.Collections.Generic.Dictionary<SurfaceId, GameObject>();
+```cs
+System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects = 
+    new System.Collections.Generic.Dictionary<SurfaceId, GameObject>();
 
    private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
    {
@@ -171,7 +169,7 @@ The OnDataReady handler receives a SurfaceData object. The WorldAnchor, MeshFilt
 
 SurfaceObserver.Update() should be called on a delay, not every frame.
 
-```
+```cs
 void Start () {
     ...
      StartCoroutine(UpdateLoop());
@@ -208,7 +206,7 @@ There are three primary interfaces exposed by the module: topology for simple su
 
 After the room has been scanned and finalized, labels are internally generated for surfaces like the floor, ceiling, and walls. The “PlayspaceRaycast” function takes a ray and returns if the ray collides with a known surface and if so, information about that surface in the form of a “RaycastResult”.
 
-```
+```cpp
 struct RaycastResult
 {
     enum SurfaceTypes
@@ -238,7 +236,8 @@ Internally, the raycast is computed against the computed 8cm cubed voxel represe
 
 In the Unity sample, the cursor casts a ray each frame. First, against Unity’s colliders. Second, against the understanding module’s world representation. And finally, again UI elements. In this application, UI gets priority, next the understanding result, and lastly, Unity’s colliders. The SurfaceType is reported as text next to the cursor.
 
-![Surface type is labeled next to the cursor](images/su-raycastresults-300px.jpg)
+![Surface type is labeled next to the cursor](images/su-raycastresults-300px.jpg)<br>
+*Surface type is labeled next to the cursor*
 
 ### Topology Queries
 
@@ -246,7 +245,7 @@ Within the DLL, the topology manager handles labeling of the environment. As men
 
 A subset of the queries exposed by the Topology manager are exposed out through the dll. The exposed topology queries are as follows.
 
-```
+```cpp
 QueryTopology_FindPositionsOnWalls
 QueryTopology_FindLargePositionsOnWalls
 QueryTopology_FindLargestWall
@@ -257,7 +256,7 @@ QueryTopology_FindPositionsSittable
 
 Each of the queries has a set of parameters, specific to the query type. In the following example, the user specifies the minimum height & width of the desired volume, minimum placement height above the floor, and the minimum amount of clearance in front of the volume. All measurements are in meters.
 
-```
+```cpp
 EXTERN_C __declspec(dllexport) int QueryTopology_FindPositionsOnWalls(
     _In_ float minHeightOfWallSpace,
     _In_ float minWidthOfWallSpace,
@@ -271,7 +270,7 @@ Each of these queries takes a pre-allocated array of “TopologyResult” struct
 
 The “TopologyResult” contains the center position of the returned volume, the facing direction (i.e. normal), and the dimensions of the found space.
 
-```
+```cpp
 struct TopologyResult 
 { 
     DirectX::XMFLOAT3 position; 
@@ -291,7 +290,7 @@ Note that the shape analysis works on horizontal surfaces only. A couch, for exa
 
 An example query defined in the Unity sample (ShapeDefinition.cs), for “sittable” objects is as follows.
 
-```
+```cs
 shapeComponents = new List<ShapeComponent>()
 {
     new ShapeComponent(
@@ -310,7 +309,7 @@ Each shape query is defined by a set of shape components, each with a set of com
 
 In contrast, the couch shape has two shape components and four shape constraints. Note that components are identified by their index in the user’s component list (0 and 1 in this example).
 
-```
+```cs
 shapeConstraints = new List<ShapeConstraint>()
 {
     ShapeConstraint.Create_RectanglesSameLength(0, 1, 0.6f),
@@ -322,13 +321,14 @@ shapeConstraints = new List<ShapeConstraint>()
 
 Wrapper functions are provided in the Unity module for easy creation of custom shape definitions. The full list of component and shape constraints can be found in “SpatialUnderstandingDll.cs” within the “ShapeComponentConstraint” and the “ShapeConstraint” structures.
 
-![Rectangle shape is found on this surface](images/su-shapequery-300px.jpg)
+![Rectangle shape is found on this surface](images/su-shapequery-300px.jpg)<br>
+*Rectangle shape is found on this surface*
 
 ### Object Placement Solver
 
 The object placement solver can be used to identify ideal locations in the physical room to place your objects. The solver will find the best fit location given the object rules and constraints. In addition, object queries persist until the object is removed with “Solver_RemoveObject” or “Solver_RemoveAllObjects” calls, allowing constrained multi-object placement. Objects placement queries consist of three parts: placement type with parameters, a list of rules, and a list of constraints. To run a query, use the following API.
 
-```
+```cpp
 public static int Solver_PlaceObject(
             [In] string objectName,
             [In] IntPtr placementDefinition,        // ObjectPlacementDefinition
@@ -341,7 +341,7 @@ public static int Solver_PlaceObject(
 
 This function takes an object name, placement definition, and a list of rules and constraints. The C# wrappers provides construction helper functions to make rule and constraint construction easy. The placement definition contains the query type – that is, one of the following.
 
-```
+```cpp
 public enum PlacementType
             {
                 Place_OnFloor,
@@ -358,7 +358,7 @@ public enum PlacementType
 
 Each of the placement types has a set of parameters unique to the type. The “ObjectPlacementDefinition” structure contains a set of static helper functions for creating these definitions. For example, to find a place to put an object on the floor, you can use the following function. public static ObjectPlacementDefinition Create_OnFloor(Vector3 halfDims) In addition to the placement type, you can provide a set of rules and constraints. Rules cannot be violated. Possible placement locations that satisfy the type and rules are then optimized against the set of constraints in order to select the optimal placement location. Each of the rules and constraints can be created by the provided static creation functions. An example rule and constraint construction function is provided below.
 
-```
+```cs
 public static ObjectPlacementRule Create_AwayFromPosition(
     Vector3 position, float minDistance)
 public static ObjectPlacementConstraint Create_NearPoint(
@@ -367,7 +367,7 @@ public static ObjectPlacementConstraint Create_NearPoint(
 
 The below object placement query is looking for a place to put a half meter cube on the edge of a surface, away from other previously place objects and near the center of the room.
 
-```
+```cs
 List<ObjectPlacementRule> rules = 
     new List<ObjectPlacementRule>() {
         ObjectPlacementRule.Create_AwayFromOtherObjects(1.0f),
@@ -392,7 +392,8 @@ Solver_PlaceObject(
 
 If successful, a “ObjectPlacementResult” structure containing the placement position, dimensions and orientation is returned. In addition, the placement is added to the dll’s internal list of placed objects. Subsequent placement queries will take this object into account. The “LevelSolver.cs” file in the Unity sample contains more example queries.
 
-![Results of object placement](images/su-objectplacement-1000px.jpg) Figure 3: The blue boxes how the result from three place on floor queries with away from camera position rules
+![Results of object placement](images/su-objectplacement-1000px.jpg)<br>
+*Figure 3: The blue boxes how the result from three place on floor queries with away from camera position rules*
 
 When solving for placement location of multiple objects required for a level or application scenario, first solve indispensable and large objects in order to maximizing the probability that a space can be found. Placement order is important. If object placements cannot be found, try less constrained configurations. Having a set of fallback configurations is critical to supporting functionality across many room configurations.
 
@@ -402,24 +403,46 @@ While the spatial mapping solution provided by the HoloLens is designed to be ge
 
 ```
 Fixed size playspace – The user specifies the maximum playspace size in the init call.
-One-time scan process – The process requires a discrete scanning phase where the user walks around, defining the playspace. Query functions will not function until after the scan has been finalized.
+
+One-time scan process – 
+    The process requires a discrete scanning phase where the user walks around,
+    defining the playspace. 
+    Query functions will not function until after the scan has been finalized.
 ```
 
 User driven playspace “painting” – During the scanning phase, the user moves and looks around the plays pace, effectively painting the areas which should be included. The generated mesh is important to provide user feedback during this phase. Indoors home or office setup – The query functions are designed around flat surfaces and walls at right angles. This is a soft limitation. However, during the scanning phase, a primary axis analysis is completed to optimize the mesh tessellation along major and minor axis. The included SpatialUnderstanding.cs file manages the scanning phase process. It calls the following functions.
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
+
 GeneratePlayspace_InitScan – Indicates that the scan phase should begin.
-GeneratePlayspace_UpdateScan_DynamicScan – Called each frame to update the scanning process. The camera position and orientation is passed in and is used for the playspace painting process, described above. 
-GeneratePlayspace_RequestFinish – Called to finalize the playspace. This will use the areas “painted” during the scan phase to define and lock the playspace. The application can query statistics during the scanning phase as well as query the custom mesh for providing user feedback. 
-Import_UnderstandingMesh – During scanning, the “SpatialUnderstandingCustomMesh” behavior provided by the module and placed on the understanding prefab will periodically query the custom mesh generated by the process. In addition, this is done once more after scanning has been finalized.
+
+GeneratePlayspace_UpdateScan_DynamicScan – 
+    Called each frame to update the scanning process. The camera position and 
+    orientation is passed in and is used for the playspace painting process, 
+    described above.
+
+GeneratePlayspace_RequestFinish – 
+    Called to finalize the playspace. This will use the areas “painted” during 
+    the scan phase to define and lock the playspace. The application can query 
+    statistics during the scanning phase as well as query the custom mesh for 
+    providing user feedback.
+
+Import_UnderstandingMesh – 
+    During scanning, the “SpatialUnderstandingCustomMesh” behavior provided by 
+    the module and placed on the understanding prefab will periodically query the 
+    custom mesh generated by the process. In addition, this is done once more 
+    after scanning has been finalized.
 ```
 
 The scanning flow, driven by the “SpatialUnderstanding” behavior calls InitScan, then UpdateScan each frame. When the statistics query reports reasonable coverage, the user is allowed to airtap to call RequestFinish to indicate the end of the scanning phase. UpdateScan continues to be called until it’s return value indicates that the dll has completed processing.
 
 ### Understanding Mesh
 
-The understanding dll internally stores the playspace as a grid of 8cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume. ![Generated mesh produced from the voxel volume](images/su-custommesh.jpg)
+The understanding dll internally stores the playspace as a grid of 8cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume. 
+
+![Generated mesh produced from the voxel volume](images/su-custommesh.jpg)<br>
+*Generated mesh produced from the voxel volume*
 
 ## Troubleshooting
 * Ensure you have set the [SpatialPerception](#setting-the-spatialperception-capability) capability

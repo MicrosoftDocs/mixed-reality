@@ -1,18 +1,20 @@
 ---
 title: Creating a holographic DirectX project
-description: 
-author: 
+description: Explains how to create a new holographic app based on the Windows Mixed Reality app template.
+author: MikeRiches
 ms.author: mriches
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, holographic app, new app, UWP app, template app, holograms, new project, walkthrough, download, sample code
 ---
 
 
 
 # Creating a holographic DirectX project
 
-A holographic app is a [Universal Windows Platform app](https://msdn.microsoft.com/en-us/library/windows/apps/dn894631.aspx) - just like apps that run on the desktop, phone, and/or tablet. The DirectX 11 holographic app template is much like the DirectX 11 UWP app template; it includes a program loop (or "game loop"), a **DeviceResources** class to manage the Direct3D device and context, and a simplified content renderer class. It also has an [IFrameworkView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx), just like any other UWP app.
+A holographic app can be a [Universal Windows Platform app](https://msdn.microsoft.com/en-us/library/windows/apps/dn894631.aspx) or a Win32 app.
+
+The DirectX 11 holographic UWP app template is much like the DirectX 11 UWP app template; it includes a program loop (or "game loop"), a **DeviceResources** class to manage the Direct3D device and context, and a simplified content renderer class. It also has an [IFrameworkView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx), just like any other UWP app.
 
 The mixed reality app, however, has some additional capabilities that aren't present in a typical D3D11 UWP app. The Windows Holographic app template is able to:
 * Handle Direct3D device resources associated with holographic cameras.
@@ -28,16 +30,20 @@ Now you can create your DirectX 11 Windows Mixed Reality App! Note, to remove th
 
 ## Creating the project
 
+>[!NOTE]
+>The rest of the instructions in this article describe how to create a UWP holographic project using C++/CX. C++/WinRT sample code for both UWP and Win32 projects is coming soon. To create a Win32 holographic project, skip to the [Creating a Win32 project](#creating-a-win32-project) section.
+
 Once the tools are installed you can then create a holographic DirectX project. To create a new project:
 1. Start **Visual Studio**.
 2. From the **File** menu, point to **New** and select **Project** from the context menu. The **New Project** dialog opens.
-3. Expand **Templates** and expand either the **Visual C#** or **Visual C++** language node.
-4. Navigate to the **Windows > Universal > Holographic** node and select **Holographic DirectX 11 App (Universal Windows)**.
+3. Expand **Installed** on the left and expand either the **Visual C#** or **Visual C++** language node.
+4. Navigate to the **Windows Universal > Holographic** node and select **Holographic DirectX 11 App (Universal Windows)**.
 5. Fill in the **Name** and **Location** text boxes, and click or tap **OK**. The holographic app project is created.
 
-![Screenshot of the holographic app project template in Visual Studio](images/holographic-directx-app-cpp-new-project.png)
+![Screenshot of the holographic app project template in Visual Studio](images/holographic-directx-app-cpp-new-project.png)<br>
+*Holographic app project template in Visual Studio*
 
-Review [Using Visual Studio](using-visual-studio.md) for information on how to build and deploy the sample to your HoloLens, PC with immersive device attached, or an emulator.
+Review [Using Visual Studio to deploy and debug](using-visual-studio.md) for information on how to build and deploy the sample to your HoloLens, PC with immersive device attached, or an emulator.
 
 The project template shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gestures.md#air-tap), or press a button on the controller, to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
 
@@ -48,9 +54,9 @@ Note that if your holographic C# project did not start from the Windows Holograp
 Your holographic app starts in the **main** function in AppView.cpp. The **main** function creates the app's [IFrameworkView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) and starts the [CoreApplication](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.coreapplication.aspx) with it.
 
 
+From **AppView.cpp**
 
-
-```
+```cpp
 // The main function is only used to initialize our IFrameworkView class.
 // Under most circumstances, you should not need to modify this function.
 [Platform::MTAThread]
@@ -96,10 +102,24 @@ Your mixed reality app updates in a game loop, which by default is implemented i
 
 The **Render** method in `Main.cpp` takes the [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) and renders the current frame to each holographic camera, according to the current app and spatial positioning state.
 
+## Creating a Win32 project
+
+>[!NOTE]
+>A full Win32 holographic project template is coming soon.
+
+To create a Win32 instead of UWP holographic project, you can adapt the standard Win32 desktop project template by following these steps:
+1. Start **Visual Studio**.
+2. From the **File** menu, point to **New** and select **Project** from the context menu. The **New Project** dialog opens.
+3. Expand **Installed** on the left and expand the **Visual C++** language node.
+4. Navigate to the **Windows Desktop** node and select **Windows Desktop Application**.
+5. Fill in the **Name** and **Location** text boxes, and click or tap **OK**. The Win32 app project is created.
+
+You can now adapt this Win32 desktop application to make its primary HWND holographic instead.  To do so, follow the Win32 instructions on the [Getting a HolographicSpace](getting-a-holographicspace.md) page to get a HolographicSpace for your main HWND.  After that, you'll use the HolographicSpace in the same way in your Win32 project as you would in a UWP project.
+
 ## See also
 * [Getting a HolographicSpace](getting-a-holographicspace.md)
 * [HolographicSpace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx)
 * [Rendering in DirectX](rendering-in-directx.md)
-* [Using Visual Studio](using-visual-studio.md)
+* [Using Visual Studio to deploy and debug](using-visual-studio.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)

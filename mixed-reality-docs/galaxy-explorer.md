@@ -1,11 +1,11 @@
 ---
 title: Galaxy Explorer
-description: 
-author: 
+description: Follow along with us as we build the mixed reality app Galaxy Explorer, the winner of the Share Your Idea campaign.
+author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: galaxy explorer, case study, project, sample
 ---
 
 
@@ -15,11 +15,28 @@ keywords:
 **You shared your ideas. We’re sharing the code.**
 
 The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code. If you have a device, Galaxy Explorer Project is also available for download from the Windows Store for Microsoft HoloLens.
-* [Get the code](https://github.com/Microsoft/GalaxyExplorer)
+>[!TIP]
+>[Get the code](https://github.com/Microsoft/GalaxyExplorer) on GitHub
 
 Our HoloLens [development team](galaxy-explorer.md#meet-the-team) of designers, artists, and developers built Galaxy Explorer and invited all of you to be part of this journey with them. After six weeks of core development and two weeks of refinement, this app is now ready for you! You can also follow along our whole journey through the video series below.
 
+<br>
+
 >[!VIDEO https://www.youtube.com/embed/HsnH2Q7HxOA]
+
+## Share your idea
+
+The Galaxy Explorer journey begins with the "Share your idea" campaign.
+
+<br>
+
+>[!VIDEO https://www.youtube.com/embed/ZxGdW_ASrRc]
+
+The Microsoft HoloLens community is bursting with spectacular ideas for how holographic computing will transform our world. We believe the most incredible HoloLens apps will come out of ideas you imagine together.
+
+You shared over 5000 amazing ideas throughout those few weeks! Our development team reviewed the most successful and viable ideas and offered to build one of the top three ideas.
+
+After a 24-hour Twitter poll, Galaxy Explorer was the winning idea! Our HoloLens development team of designers, artists, and developers built Galaxy Explorer and invited all of you to be part of this journey with them. You can follow the development process in the videos below.
 
 ## Ep 1: Trust the Process
 
@@ -63,17 +80,14 @@ In Episode 6, the team finishes the last week of development, prepares for two w
 
 In Episode 7, the team completes the project and shares their code.
 
-## Follow Along Blog
-* [Week Two Update: Prototyping](https://microsoftstudios.com/hololens/2016/02/03/week-2-update-prototyping)
-* [Prototype Update](https://microsoftstudios.com/hololens/2016/02/09/prototype-update)
-* [Interaction Prototype](https://microsoftstudios.com/hololens/2016/02/18/interaction-prototype)
-* [Working low-fi to high-fi](https://microsoftstudios.com/hololens/2016/02/05/working-low-fi-to-high-fi)
-* [Art process of creating a galaxy](https://microsoftstudios.com/hololens/2016/02/24/art-process-creating-a-galaxy)
-* [Tech process of creating a galaxy](https://microsoftstudios.com/hololens/2016/03/10/tech-process-creating-a-galaxy)
+## Case study
+
+You can find even more insights and lessons from developing Galaxy Explorer by reading the ["Creating a galaxy in mixed reality" case study](case-study-creating-a-galaxy-in-mixed-reality.md).
 
 ## Meet the team
 
-![Galaxy Explorer development team](images/syiteampic.jpg)
+![Galaxy Explorer development team](images/syiteampic.jpg)<br>
+*Galaxy Explorer development team*
 
 We learned the building the right team is one of the most important investments we could make. We decided to organize similarly to a game studio for those of you familiar with that development model. We chose to have eleven core team members to control scope, since we had a fixed timeframe (create something cool before Build on March 30).
 
@@ -87,4 +101,6 @@ We’ll had one full-time tester – Lena – who tested our builds every day, s
 
 We are all a part of a larger studio here at Microsoft (think team in non-game development). There were a bunch of other people involved as well – we called on the talents of our art director, audio engineer and studio leadership frequently throughout the project, but those folks were shared resources with other projects our broader team has.
 
-So, that's the team! Read and watch on to see what we made :)
+## See also
+* [Case study - Creating a galaxy in mixed reality](case-study-creating-a-galaxy-in-mixed-reality.md)
+* [Galaxy Explorer GitHub repo](https://github.com/Microsoft/GalaxyExplorer)

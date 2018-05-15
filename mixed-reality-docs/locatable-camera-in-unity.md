@@ -1,11 +1,11 @@
 ---
 title: Locatable camera in Unity
-description: 
-author: 
+description: HoloLens locatable camera usage in Unity.
+author: wguyman
 ms.author: wguyman
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: photo, video, hololens, camera, unity, locatable
 ---
 
 
@@ -19,29 +19,28 @@ The "WebCam" capability must be declared for an app to use the [camera](locatabl
 2. Click on the "Windows Store" tab
 3. In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities
 
-Only a single operation can occur with the camera at a time. To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.VR.WSA.WebCam.Mode.
+Only a single operation can occur with the camera at a time. To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.XR.WSA.WebCam.Mode.
 
 ## Photo Capture
 
-**Namespace:** *UnityEngine.VR.WSA.WebCam*
-
+**Namespace:** *UnityEngine.XR.WSA.WebCam*<br>
 **Type:** *PhotoCapture*
 
-The PhotoCapture type allows you to take still photographs with the Photo Video Camera. The general pattern for using PhotoCapture to take a photo is as follows:
-1. Create a PhotoCapture object
-2. Create a CameraParameters object with the settings we want
-3. Start Photo Mode via StartPhotoModeAsync
+The *PhotoCapture* type allows you to take still photographs with the Photo Video Camera. The general pattern for using *PhotoCapture* to take a photo is as follows:
+1. Create a *PhotoCapture* object
+2. Create a *CameraParameters* object with the settings we want
+3. Start Photo Mode via *StartPhotoModeAsync*
 4. Take the desired photo
-* (optional) Interact with that picture
+    * (optional) Interact with that picture
 5. Stop Photo Mode and clean up resources
 
 ### Common Set Up for PhotoCapture
 
 For all three uses, we start with the same first 3 steps above
 
-We start by creating a PhotoCapture object
+We start by creating a *PhotoCapture* object
 
-```
+```cs
 PhotoCapture photoCaptureObject = null;
    void Start()
    {
@@ -51,7 +50,7 @@ PhotoCapture photoCaptureObject = null;
 
 Next we store our object, set our parameters, and start Photo Mode
 
-```
+```cs
 void OnPhotoCaptureCreated(PhotoCapture captureObject)
    {
        photoCaptureObject = captureObject;
@@ -70,7 +69,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
 
 In the end, we will also use the same clean up code presented here
 
-```
+```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
    {
        photoCaptureObject.Dispose();
@@ -86,7 +85,7 @@ The simplest operation is to capture a photo directly to a file. The photo can b
 
 If we successfully started photo mode, we now will take a photo and store it on disk
 
-```
+```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    {
        if (result.success)
@@ -105,7 +104,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
 
 After capturing the photo to disk, we will exit photo mode and then clean up our objects
 
-```
+```cs
 void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
    {
        if (result.success)
@@ -126,9 +125,9 @@ When capturing data to a Texture2D, the process is extremely similar to capturin
 
 We will follow the set up process above.
 
-In OnPhotoModeStarted, we will capture a frame to memory.
+In *OnPhotoModeStarted*, we will capture a frame to memory.
 
-```
+```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    {
        if (result.success)
@@ -144,7 +143,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
 
 We will then apply our result to a texture and use the common clean up code above.
 
-```
+```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
    {
        if (result.success)
@@ -163,11 +162,11 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ### Capture a Photo and Interact with the Raw bytes
 
-To interact with the raw bytes of an in memory frame, we will follow the same set up steps as above and OnPhotoModeStarted as in capturing a photo to a Texture2D. The difference is in OnCapturedPhotoToMemory where we can get the raw bytes and interact with them.
+To interact with the raw bytes of an in memory frame, we will follow the same set up steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D. The difference is in *OnCapturedPhotoToMemory* where we can get the raw bytes and interact with them.
 
-In this example, we will create a List<Color> which could be further processed or applied to a texture via SetPixels()
+In this example, we will create a *List<Color>* which could be further processed or applied to a texture via *SetPixels()*
 
-```
+```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
    {
        if (result.success)
@@ -200,21 +199,20 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ## Video Capture
 
-**Namespace:** *UnityEngine.VR.WSA.WebCam*
-
+**Namespace:** *UnityEngine.XR.WSA.WebCam*<br>
 **Type:** *VideoCapture*
 
-VideoCapture functions very similarly to PhotoCapture. The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file. The steps to use VideoCapture are as follows:
-1. Create a VideoCapture object
-2. Create a CameraParameters object with the settings we want
-3. Start Video Mode via StartVideoModeAsync
+*VideoCapture* functions very similarly to *PhotoCapture*. The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file. The steps to use *VideoCapture* are as follows:
+1. Create a *VideoCapture* object
+2. Create a *CameraParameters* object with the settings we want
+3. Start Video Mode via *StartVideoModeAsync*
 4. Start recording video
 5. Stop recording video
 6. Stop Video Mode and clean up resources
 
-We start by creating our VideoCapture object VideoCapture m_VideoCapture = null;
+We start by creating our *VideoCapture* object *VideoCapture m_VideoCapture = null;*
 
-```
+```cs
 void Start ()
    {
        VideoCapture.CreateAsync(false, OnVideoCaptureCreated);
@@ -223,7 +221,7 @@ void Start ()
 
 We then will set up the parameters we will want for the recording and start.
 
-```
+```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
    {
        if (videoCapture != null)
@@ -253,7 +251,7 @@ void OnVideoCaptureCreated (VideoCapture videoCapture)
 
 Once started, we will begin the recording
 
-```
+```cs
 void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
    {
        if (result.success)
@@ -268,7 +266,7 @@ void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
 
 After recording has started, you could update your UI or behaviors to enable stopping. Here we just log
 
-```
+```cs
 void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    {
        Debug.Log("Started Recording Video!");
@@ -278,7 +276,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 At a later point, we will want to stop the recording. This could happen from a timer or user input, for instance.
 
-```
+```cs
 // The user has indicated to stop recording
    void StopRecordingVideo()
    {
@@ -288,7 +286,7 @@ At a later point, we will want to stop the recording. This could happen from a t
 
 Once the recording has stopped, we will stop video mode and clean up our resources.
 
-```
+```cs
 void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
    {
        Debug.Log("Stopped Recording Video!");
@@ -304,7 +302,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## Troubleshooting
 * No resolutions are available
-* Ensure the **WebCam** capability is specified in your project.
+    * Ensure the **WebCam** capability is specified in your project.
 
 ## See Also
 * [Locatable camera](locatable-camera.md)

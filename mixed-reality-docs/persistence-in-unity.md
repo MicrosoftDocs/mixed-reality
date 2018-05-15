@@ -1,19 +1,19 @@
 ---
 title: Persistence in Unity
-description: 
-author: 
-ms.author: jlyons
-ms.date: 2/28/2018
+description: Persistence lets your users pin individual holograms or a workspace wherever they want it, and then find it later where they expect over many uses of your app.
+author: thetuvix
+ms.author: alexturn
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: HoloLens, persistence, Unity
 ---
 
 
 
 # Persistence in Unity
 
-**Namespace:** *UnityEngine.WSA.VR.Persistence*\
- **Class:** *WorldAnchorStore*
+**Namespace:** *UnityEngine.XR.WSA.Persistence*<br>
+**Class:** *WorldAnchorStore*
 
 The WorldAnchorStore is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. This lets your users pin individual holograms or a workspace wherever they want it, and then find it later where they expect over many uses of your app.
 

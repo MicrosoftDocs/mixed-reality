@@ -1,11 +1,11 @@
 ---
 title: Shared experiences in mixed reality
-description: 
-author: 
+description: Holographic apps may share spatial anchors from one HoloLens to another, enabling users to render a hologram at the same place in the real world across multiple devices.
+author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: shared experience, mixed reality, hologram, spatial anchor
 ---
 
 
@@ -24,7 +24,9 @@ Through internal prototypes and explorations from our HoloLens partner agencies,
 
 A presentation might be led by a single virtual user, while multiple users can collaborate, or a teacher might provide guidance to virtual students working with virtual materials — the complexity of the experiences increases based on the level of agency a user has or can have in a scenario.
 
-![Man and women with holograph on table](images/man-and-women-with-holograph-on-table-500px.png) There are many ways to share, but we’ve found that most of them fall into three categories:
+![Man and women with holograph on table](images/man-and-women-with-holograph-on-table-500px.png)
+
+There are many ways to share, but we’ve found that most of them fall into three categories:
 * **Presentation**: When the same content is being shown to several users. For example: A professor is giving out a lecture to several students using the same holographic material being presented to everyone. The professor however could have his/her own hints and notes that may not be visible to others.
 * **Collaboration**: When people are working together to achieve some common goals. For example: The professor gave out a project to learn about performing a heart surgery. Students pair up and create a shared skills lab experience which allows medical students to collaborate on the heart model and learn.
 * **Guidance**: When one person is helping someone to solve a problem in a more one-one style interaction. For example: The professor giving guidance to a student when he/she is performing the heart surgery skills lab in the shared experience.
@@ -99,7 +101,7 @@ For example, consider one of Skype’s scenarios from the HoloLens launch: a use
 
 ![Fixing a light switch with assistance via Skype for HoloLens](images/fix-a-broken-switch-with-hololens-640px.jpg)
 
-*An expert provides **1:1** guidance from his **2D**, desktop computer to a user of a **3D, mixed-reality** device. The **guidance** is **synchronous** and the physical environments are **dissimilar**.*
+<i>An expert provides <b>1:1</b> guidance from his <b>2D</b>, desktop computer to a user of a <b>3D, mixed-reality</b> device. The <b>guidance</b> is <b>synchronous</b> and the physical environments are <b>dissimilar</b>.</i>
 
 An experience like this is a step-change from our current experience — applying the paradigm of video and voice to a new medium. But as we look to the future, we must better define the opportunity of our scenarios and build experiences that reflect the strength of mixed reality.
 
@@ -107,7 +109,7 @@ Consider the [OnSight collaboration tool](https://www.youtube.com/watch?v=ZOWQp0
 
 ![Collaborating between colleagues separated remotely to plan work for the Mars Rover](images/onsight-nasa-jpl.gif)
 
-*A scientist explores an environment using a **3D, mixed-reality** device with a **small** group of **remote** colleagues using **3D and 2D** devices. The **collaboration** is **synchronous** (but can be revisited asynchronously) and the physical environments are (virtually) **similar**.*
+<i>A scientist explores an environment using a <b>3D, mixed-reality</b> device with a <b>small</b> group of <b>remote</b> colleagues using <b>3D and 2D</b> devices. The <b>collaboration</b> is <b>synchronous</b> (but can be revisited asynchronously) and the physical environments are (virtually) <b>similar</b>.</i>
 
 Experiences like OnSight present new opportunities to collaborate. From physically pointing out elements in the virtual environment to standing next to a colleague and sharing their perspective as they explain their findings. OnSight uses the lens of immersion and presence to rethink sharing experiences in mixed reality.
 

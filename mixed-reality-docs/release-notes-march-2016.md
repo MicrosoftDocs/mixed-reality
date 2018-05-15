@@ -1,11 +1,11 @@
 ---
 title: Release notes - March 2016
-description: 
-author: 
+description: HoloLens release notes for the launch of HoloLens and Windows Holographic.
+author: mattzmsft
 ms.author: mazeller
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: release notes, HoloLens, os, platform, features, build, launch
 ---
 
 

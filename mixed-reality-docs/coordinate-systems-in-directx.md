@@ -1,11 +1,11 @@
 ---
 title: Coordinate systems in DirectX
-description: 
-author: 
+description: Explains how to use Windows Mixed Reality spatial locators, reference frames, spatial anchors, and coordinate systems, how to use the SpatialStage, how to handle tracking loss, how to save and load anchors, and how to do image stabilization.
+author: MikeRiches
 ms.author: mriches
-ms.date: 2/28/2018
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, spatial locator, spatial reference frame, spatial coordinate system, spatial stage, sample code, image stabilization, spatial anchor, spatial anchor store, tracking loss, walkthrough
 ---
 
 
@@ -25,13 +25,14 @@ Methods that return spatial information, represented as points, rays, or volumes
 A SpatialCoordinateSystem has a dynamic relationship with other coordinate systems, including those that represent the device's position. At any point in time, the device may be able to locate some coordinate systems and not others. For most coordinate systems, your app must be ready to handle periods of time during which they cannot be located.
 
 Your application should not create SpatialCoordinateSystems directly - rather they should be consumed via the Perception APIs. There are three primary sources of coordinate systems in the Perception APIs, each of which map to a concept described on the [Coordinate systems](coordinate-systems.md) page:
-* To get a stationary frame of reference, create a [SpatialStationaryFrameOfReference](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialstationaryframeofreference.aspx) or obtain one from the current [SpatialStage](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialstage.aspx).
+* To get a stationary frame of reference, create a [SpatialStationaryFrameOfReference](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) or obtain one from the current [SpatialStage](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialstageframeofreference).
 * To get a spatial anchor, create a [SpatialAnchor](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchor.aspx).
 * To get an attached frame of reference, create a [SpatialLocatorAttachedFrameOfReference](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatiallocatorattachedframeofreference.aspx).
 
 All of the coordinate systems returned by these objects are right-handed, with +y up, +x to the right and +z backwards. You can remember which direction the positive z-axis points by pointing the fingers of either your left or right hand in the positive x direction and curling them into the positive y direction. The direction your thumb points, either toward or away from you, is the direction that the positive z-axis points for that coordinate system. The following illustration shows these two coordinate systems.
 
-![Left-hand and right-hand coordinate systems](images/left-hand-right-hand.gif)
+![Left-hand and right-hand coordinate systems](images/left-hand-right-hand.gif)<br>
+*Left-hand and right-hand coordinate systems*
 
 To bootstrap into a SpatialCoordinateSystem based on the position of a HoloLens, use the [SpatialLocator](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) class to create either an attached or stationary frame of reference, as described in the sections below.
 
@@ -41,6 +42,7 @@ The coordinate system for opaque Windows Mixed Reality immersive headsets is acc
 
 First, we get the spatial stage and subscribe for updates to it: 
 
+Code for **Spatial stage initialization**
 
 ```
 SpatialStageManager::SpatialStageManager(
@@ -60,7 +62,7 @@ SpatialStageManager::SpatialStageManager(
 In the OnCurrentChanged method, your app should inspect the spatial stage and update the player experience accordingly. In this example, we provide a visualization of the stage boundary, as well as the start position specified by the user and the stage's range of view and range of movement properties. We also fall back to our own stationary coordinate system, when a stage cannot be provided.
 
 
-
+Code for **Spatial stage update**
 
 ```
 void SpatialStageManager::OnCurrentChanged(Object^ /*o*/)
@@ -167,7 +169,7 @@ void SpatialStageManager::OnCurrentChanged(Object^ /*o*/)
 The set of vertices that define the stage boundary are provided in clockwise order. The Windows Mixed Reality shell draws a fence at the boundary when the user approaches it; you may wish to triangularize the walkable area for your own purposes. The following algorithm can be used to triangularize the stage.
 
 
-
+Code for **Spatial stage triangularization**
 
 ```
 std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<float3> const& vertices)
@@ -401,7 +403,8 @@ SampleSpatialAnchorHelper::SampleSpatialAnchorHelper(SpatialAnchorStore^ anchorS
    }
 ```
 
-**NOTE:** Don't forget to hook up the suspend/resume events to save and load the anchor store.
+>[!NOTE]
+>Don't forget to hook up the suspend/resume events to save and load the anchor store.
 
 ```
 void HolographicSpatialAnchorStoreSampleMain::SaveAppState()
@@ -476,9 +479,13 @@ You need your own in-memory database of SpatialAnchors; some way to associate St
    Windows::Foundation::Collections::IMap<Platform::String^, Windows::Perception::Spatial::SpatialAnchor^>^ m_anchorMap;
 ```
 
-**NOTE:** An anchor that is restored might not be locatable right away. For example, it might be an anchor in a separate room or in a different building altogether. Anchors retrieved from the AnchorStore should be tested for locatability before using them.
+>[!NOTE]
+>An anchor that is restored might not be locatable right away. For example, it might be an anchor in a separate room or in a different building altogether. Anchors retrieved from the AnchorStore should be tested for locatability before using them.
 
-Also note that in this example code, we retrieve all anchors from the AnchorStore. This is not a requirement; your app could just as well pick and choose a certain subset of anchors by using String key values that are meaningful to your implementation.
+<br>
+
+>[!NOTE]
+>In this example code, we retrieve all anchors from the AnchorStore. This is not a requirement; your app could just as well pick and choose a certain subset of anchors by using String key values that are meaningful to your implementation.
 
 ```
 // LoadFromAnchorStore: Loads all anchors from the app's anchor store into memory.
@@ -567,14 +574,14 @@ These sections talk about what we changed in the Windows Holographic app templat
 
 First, we changed the template to store a SpatialLocatorAttachedFrameOfReference instead of a SpatialStationaryFrameOfReference:
 
-From *HolographicTagAlongSampleMain.h*:
+From **HolographicTagAlongSampleMain.h**:
 
 ```
 // A reference frame attached to the holographic camera.
    Windows::Perception::Spatial::SpatialLocatorAttachedFrameOfReference^   m_referenceFrame;
 ```
 
-From *HolographicTagAlongSampleMain.cpp*:
+From **HolographicTagAlongSampleMain.cpp**:
 
 ```
 // In this example, we create a reference frame attached to the device.
@@ -603,7 +610,7 @@ This SpatialPointerPose has the information needed to position the hologram acco
 
 For reasons of user comfort, we use linear interpolation ("lerp") to smooth the change in position such that it occurs over a period of time. This is more comfortable for the user than locking the hologram to their gaze. Lerping the tag-along hologram's position also allows us to stabilize the hologram by dampening the movement; if we did not do this dampening, the user would see the hologram jitter because of what are normally considered to be imperceptible movements of the user's head.
 
-From *StationaryQuadRenderer::PositionHologram*:
+From **StationaryQuadRenderer::PositionHologram**:
 
 ```
 const float& dtime = static_cast<float>(timer.GetElapsedSeconds());
@@ -627,9 +634,10 @@ const float& dtime = static_cast<float>(timer.GetElapsedSeconds());
    }
 ```
 
-**NOTE:** In the case of a debugging panel, you might choose to reposition the hologram off to the side a little so that it does not obstruct your view. Here's an example of how you might do that.
+>[!NOTE]
+>In the case of a debugging panel, you might choose to reposition the hologram off to the side a little so that it does not obstruct your view. Here's an example of how you might do that.
 
-For *StationaryQuadRenderer::PositionHologram*:
+For **StationaryQuadRenderer::PositionHologram**:
 
 ```
 // If you're making a debug view, you might not want the tag-along to be directly in the
@@ -646,7 +654,7 @@ For *StationaryQuadRenderer::PositionHologram*:
 
 It is not enough to simply position the hologram, which in this case is a quad; we must also rotate the object to face the user. Note that this rotation occurs in world space, because this type of billboarding allows the hologram to remain a part of the user's environment. View-space billboarding is not as comfortable because the hologram becomes locked to the display orientation; in that case, you would also have to interpolate between the left and right view matrices in order to acquire a view-space billboard transform that does not disrupt stereo rendering. Here, we rotate on the X and Z axes to face the user.
 
-From *StationaryQuadRenderer::Update*:
+From **StationaryQuadRenderer::Update**:
 
 ```
 // Seconds elapsed since previous frame.
@@ -690,14 +698,14 @@ From *StationaryQuadRenderer::Update*:
 ```
 
 ### Set the focus point for image stabilization
-> [!NOTE]
-> For desktop immersive headsets, setting a stabilization plane is usually counter-productive, as it offers less visual quality than providing your app's depth buffer to the system to enable per-pixel depth-based reprojection. Unless running on a HoloLens, you should generally avoid setting the stabilization plane.
+> [!WARNING]
+> For Windows Mixed Reality immersive headsets, setting a stabilization plane is usually counter-productive, as it offers less visual quality than providing your app's depth buffer to the system to enable per-pixel depth-based reprojection. Unless running on a HoloLens, you should generally avoid setting the stabilization plane.
 
 On HoloLens, we should also set a manual focus point for [image stabilization](hologram-stability.md#stabilization-plane). For best results with tag-along holograms, we need to use the velocity of the hologram. This is computed as follows.
 
 Note that on immersive desktop headsets, you should instead use the [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFrame) API to enable per-pixel depth-based reprojection, as discussed in [Rendering in DirectX](rendering-in-directx.md#set-the-focus-point-for-image-stabilization). That will result in the best visual quality.
 
-From *StationaryQuadRenderer::Update*:
+From **StationaryQuadRenderer::Update**:
 
 ```
 // Determine velocity.
@@ -707,7 +715,7 @@ From *StationaryQuadRenderer::Update*:
    m_velocity = deltaX / dTime; // meters per second
 ```
 
-From *HolographicTagAlongSampleMain::Update*:
+From **HolographicTagAlongSampleMain::Update**:
 
 ```
 // SetFocusPoint informs the system about a specific point in your scene to
@@ -729,7 +737,7 @@ From *HolographicTagAlongSampleMain::Update*:
 
 For this example, we also choose to render the hologram in the coordinate system of the SpatialLocatorAttachedReferenceFrame, which is where we positioned the hologram. (If we had decided to render using another coordinate system, we would need to acquire a transform from the device-attached reference frame's coordinate system to that coordinate system.)
 
-From *HolographicTagAlongSampleMain::Render*:
+From **HolographicTagAlongSampleMain::Render**:
 
 ```
 // The view and projection matrices for each holographic camera will change
@@ -744,13 +752,14 @@ From *HolographicTagAlongSampleMain::Render*:
 
 That's it! The hologram will now "chase" a position that is 2 meters in front of the user's gaze direction.
 
-**NOTE:** This example also loads additional content - see StationaryQuadRenderer.cpp.
+>[!NOTE]
+>This example also loads additional content - see StationaryQuadRenderer.cpp.
 
 ## Handling tracking loss
 
 When the device cannot locate itself in the world, the app experiences "tracking loss". Windows Mixed Reality apps should be able to handle such disruptions to the positional tracking system. These disruptions can be observed, and responses created, by using the LocatabilityChanged event on the default SpatialLocator.
 
-From *AppMain::SetHolographicSpace:*
+From **AppMain::SetHolographicSpace:**
 
 ```
 // Be able to respond to changes in the positional tracking state.
@@ -765,7 +774,7 @@ When your app receives a LocatabilityChanged event, it can change behavior as ne
 
 The Windows Holographic app template comes with a LocatabilityChanged handler already created for you. By default, it displays a warning in the debug console when positional tracking is unavailable. You can add code to this handler to provide a response as needed from your app.
 
-From *AppMain.cpp:*
+From **AppMain.cpp:**
 
 ```
 void HolographicApp1Main::OnLocatabilityChanged(SpatialLocator^ sender, Object^ args)

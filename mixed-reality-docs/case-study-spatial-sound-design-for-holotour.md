@@ -1,11 +1,11 @@
 ---
 title: Case study - Spatial sound design for HoloTour
-description: 
-author: 
-ms.author: randyw
-ms.date: 2/28/2018
+description: To create a truly immersive 3D virtual tour for Microsoft HoloLens, the panoramic videos and holographic scenery are only part of the formula.
+author:  JSyltebo
+ms.author: jsylte
+ms.date: 03/21/2018
 ms.topic: article
-keywords: 
+keywords: Windows Mixed Reality, HoloLens, HoloTour, spatial sound, case study
 ---
 
 
@@ -28,7 +28,10 @@ We created HoloTour experiences of two different locations: Rome and Machu Picch
 
 ### Capturing the audio
 
-![This setup captured sound in four directions from the precise location of our camera, giving us enough information to re-create a 3D aural panorama using spatial sound, which we could later synchronize to the 360-degree video.](images/camera-rig-microphones-300px.png) In our [case study about capturing the visual content for HoloTour](case-study-capturing-and-creating-content-for-holotour.md), we talked about the custom design of our camera rig. It consisted of 14 GoPro cameras contained in a 3D-printed housing, designed to the specific dimensions of the tripod. To capture audio from this rig, we added a quad-microphone array beneath the cameras, which fed into a compact 4-channel recording unit that sat at the base of the tripod. We chose microphones that not only performed well, but which had a very small footprint, so as to not occlude the view of the camera.
+In our [case study about capturing the visual content for HoloTour](case-study-capturing-and-creating-content-for-holotour.md), we talked about the custom design of our camera rig. It consisted of 14 GoPro cameras contained in a 3D-printed housing, designed to the specific dimensions of the tripod. To capture audio from this rig, we added a quad-microphone array beneath the cameras, which fed into a compact 4-channel recording unit that sat at the base of the tripod. We chose microphones that not only performed well, but which had a very small footprint, so as to not occlude the view of the camera.
+
+![Custom camera and microphone rig](images/camera-rig-microphones-300px.png)<br>
+*Custom camera and microphone rig*
 
 This setup captured sound in four directions from the precise location of our camera, giving us enough information to re-create a 3D aural panorama using spatial sound, which we could later synchronize to the 360-degree video.
 
@@ -52,7 +55,7 @@ A different approach involved playing a looping stereo ambience in conjunction w
 
 ## Tips and tricks
 
-When you're putting together audio for a scene, there are some additional methods you can use to further highlight directionality and immersion, making full use of the spatial sound capabilities of the HoloLens. We've provided a list of some below—listen for them the next time you try HoloTour.
+When you're putting together audio for a scene, there are some additional methods you can use to further highlight directionality and immersion, making full use of the spatial sound capabilities of HoloLens. We've provided a list of some below—listen for them the next time you try HoloTour.
 * **Look Targets**: These are sounds that trigger only when you are looking at a specific object or area of the holographic frame. For example, looking in the direction of the street-side café in Rome's Piazza Navona will subtly trigger the sounds of a busy restaurant.
 * **Local Vision**: The journey though HoloTour contains certain beats where your tour guide, aided by holograms, will explore a topic in-depth. For instance, as the façade of the Pantheon dissolves to reveal the oculus, reverberating audio placed as a 3D emitter from the inside of the Pantheon encourages the user to explore the interior model.
 * **Enhanced directionality**: Within many scenes, we placed sounds in various ways to add to the directionality. In the Pantheon scene, for example, the sound of the fountain was placed as a separate emitter close enough to the user so that they could get a sense of ‘sonic parallax’ as they walked around the play space. In Peru's Salinas de Maras scene, the individual perspective of some of the little streams were placed as separate emitters to build a more immersive ambient environment, surrounding the user with the authentic sounds of that location.
@@ -61,13 +64,12 @@ When you're putting together audio for a scene, there are some additional method
 
 ## About the author
 
-<table style="border:0">
+<table style="border-collapse:collapse">
 <tr>
-<td style="border:0"> <img alt="Jason Syltebo" width="227" height="224" src="images/syltebo.png" /></td><td style="border:0"> <b>Jason Syltebo</b> is an Audio Designer who made sure you could experience the soundscape of every destination you visit, even when you go back in time.</td>
+<td style="border-style: none" width="60px"><img alt="Picture of Jason Syltebo" width="60" height="60" src="images/syltebo.png"></td>
+<td style="border-style: none"><b>Jason Syltebo</b><br>Audio Designer @Microsoft</td>
 </tr>
 </table>
-
-
 
 ## See also
 * [Spatial sound](spatial-sound.md)
@@ -75,6 +77,5 @@ When you're putting together audio for a scene, there are some additional method
 * [Spatial sound in Unity](spatial-sound-in-unity.md)
 * [Holograms 220](holograms-220.md)
 * [Video: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
-* [Case studies](category/case-studies.md)
 
  
