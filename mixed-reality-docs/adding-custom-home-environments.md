@@ -38,12 +38,12 @@ We've created a sample environment that shows off some of the creative possibili
 >[!NOTE]
 >When attempting to run a .exe file downloaded from the web (like this one), you may encounter a "Windows protected your PC" pop-up. To run the .exe from this pop-up, select **More info** and then **Run anyway**.
 
-2. Open **File Explorer** and navigate to the environments folder by pasting the following in the address bar: `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState`.
-3. Copy the sample environment that you downloaded into this folder.
-4. Restart **Mixed Reality Portal**. This will refresh the list of environments in the Places picker.
-5. Put on your headset. Once you're in the home, open the **Start menu** using the Windows button your controller.
-6. Select the **Places** icon above the list of pinned apps to choose a home environment.
-7. You will find the Fantasy Island environment that you downloaded in your list of places. Select **Fantasy Island** to enter your new custom home environment!
+3. Open **File Explorer** and navigate to the environments folder by pasting the following in the address bar: `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState`.
+4. Copy the sample environment that you downloaded into this folder.
+5. Restart **Mixed Reality Portal**. This will refresh the list of environments in the Places picker.
+6. Put on your headset. Once you're in the home, open the **Start menu** using the Windows button your controller.
+7. Select the **Places** icon above the list of pinned apps to choose a home environment.
+8. You will find the Fantasy Island environment that you downloaded in your list of places. Select **Fantasy Island** to enter your new custom home environment!
 
 ## Creating your own custom environment
 
