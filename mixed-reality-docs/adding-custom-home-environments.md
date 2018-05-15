@@ -29,8 +29,10 @@ When using a custom environment you'll notice that teleporting, interacting with
 
 We've created a sample environment that shows off some of the creative possibilities of custom home environments. Follow these steps to try it out:
 1. [Download our sample Fantasy Island environment](http://download.microsoft.com/download/B/2/5/B25C1AEF-40CD-4B03-A596-4BCA3D33035A/Fantasy_Island.exe) (link points to self extracting executable).
+
    ![Fantasy Island sample environment](images/FantasyLand.jpg)<br>
    *Fantasy Island sample environment*<br>
+
 2. Open **File Explorer** and navigate to the environments folder by pasting the following in the address bar: `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState`.
 3. Copy the sample environment that you downloaded into this folder.
 4. Restart **Mixed Reality Portal**. This will refresh the list of environments in the **Places** picker.
