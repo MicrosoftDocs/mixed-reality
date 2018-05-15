@@ -34,7 +34,7 @@ We've created a sample environment that shows off some of the creative possibili
 3. Copy the sample environment that you downloaded into this folder.
 4. Restart **Mixed Reality Portal**. This will refresh the list of environments in the **Places** picker.
 5. Put on your headset. Once you're in the home, open the Start menu using the Windows button your controller.
-6. Select the **Home** icon to go to the places picker
+6. Select the **Home** icon above the list of pinned apps to go to the places picker
 7. You will find the "Fantasy Island" environment that you downloaded in your list of places. **Select** it to enter your new custom Mixed Reality home!
 
 ## Creating your own custom environment
