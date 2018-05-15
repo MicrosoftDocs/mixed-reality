@@ -143,7 +143,7 @@ The **Cursor State Data** works like this:
 To use Navigation gestures in our app, we are going to edit **GestureAction.cs** to rotate objects when the Navigation gesture occurs. Additionally, we'll add feedback to the cursor to display when Navigation is available.
 
 1. In the **Hierarchy** panel, expand **CursorWithFeedback**.
-2. In the **Holograms\Support\Cursor** folder, find the **ScrollFeedback** asset.
+2. In the **Holograms** folder, find the **ScrollFeedback** asset.
 3. Drag and drop the **ScrollFeedback** prefab onto the **CursorWithFeedback** GameObject in the **Hierarchy**.
 4. Click on **CursorWithFeedback**.
 5. In the **Inspector** panel, click the **Add Component** button.
@@ -285,7 +285,7 @@ You'll notice that the other navigation events are already filled in with some i
 1. In the **Hierarchy** panel, select the **CursorWithFeedback** object.
 2. In the **Inspector** panel, click the **Add Component** button.
 3. In the menu, type in the search box **Hand Guidance**. Select the search result.
-4. In the **Project** panel **Holograms\Support\Cursor** folder, find the **HandGuidanceFeedback** asset.
+4. In the **Project** panel **Holograms** folder, find the **HandGuidanceFeedback** asset.
 5. Drag and drop the **HandGuidanceFeedback** asset onto the **Hand Guidance Indicator** property in the **Inspector** panel.
 
 ### Build and Deploy
@@ -327,11 +327,11 @@ We'll now add the speech commands required to control the interaction state of t
 5. Type the Keyword as **Rotate Astronaut**. Feel free to add a Key Shortcut if desired.
 6. The corresponding handler code can be found in **GestureAction.cs**, in the **ISpeechHandler.OnSpeechKeywordRecognized** handler.
 
-![How to set-up the Speech Input Handler for chapter 4](images/holograms211-speechhandler.png)
+![How to set-up the Speech Input Source for chapter 4](images/holograms211-speech.png)
 
 Next, we'll setup the manipulation feedback on the cursor.
 
-1. In the **Project** panel **HoloToolkit\Input\Prefabs** folder, find the **PathingFeedback** asset.
+1. In the **Project** panel **Holograms** folder, find the **PathingFeedback** asset.
 2. Drag and drop the **PathingFeedback** prefab onto the **CursorWithFeedback** object in the **Hierarchy**.
 3. In the **Hierarchy** panel, click on **CursorWithFeedback**.
 4. Drag and drop the **PathingFeedback** object from the **Hierarchy** onto the **Pathing Detected Game Object** property in the **Cursor Feedback** component in the **Inspector**.
@@ -492,7 +492,7 @@ We'll do this by adding two more keywords to the Speech Input Source from the pr
 13. Click the **+** under Response, and drag the **AstronautManager** from the **Hierarchy** into the **None (Object)** field.
 14. Now, click the **No Function** dropdown, select **AstronautManager**, then **ResetModelCommand**.
 
-![How to set-up the Speech Input Handler for chapter 5](images/holograms211-speech.png)
+![How to set-up the Speech Input Source and Handler for chapter 5](images/holograms211-speechhandler.png)
 
 ### Build and Deploy
 
