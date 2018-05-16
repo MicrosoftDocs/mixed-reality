@@ -1,7 +1,7 @@
 ---
 title: Azure Lab Mixed Reality - Language Understanding Intelligence Service (LUIS)
 description: Azure Lab teaching how to implement an Azure LUIS service with a mixed reality Unity3D Application.
-author: elliotmoule, StefanoDeflorio, drneil
+author: v-arood
 ms.author:
 ms.date: 
 keywords: azure, language understanding intelligence service, luis, mixed reality, unity3d
@@ -13,7 +13,7 @@ In this Lab, you will learn how to integrate Language Understanding into a mixed
 
 ![Lab outcome](images/AzureLabs-Lab3-000.png)
 
-**Language Understanding (LUIS)** is a Microsoft Azure service, which provides applications with the ability to make meaning out of user input, such as through extracting what a person might want, in their own words. This is achieved through machine learning, which understands and learns the input information, and then can reply with detailed, relevant, information. For more information, visit the [Azure Language Understanding (LUIS) page](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/https:/azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/).
+**Language Understanding (LUIS)** is a Microsoft Azure service, which provides applications with the ability to make meaning out of user input, such as through extracting what a person might want, in their own words. This is achieved through machine learning, which understands and learns the input information, and then can reply with detailed, relevant, information. For more information, visit the [Azure Language Understanding (LUIS) page](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/).
 
 Having completed this lab, you will have a mixed reality immersive headset application which will be able to do the following:
 
@@ -27,7 +27,17 @@ In your application, it is up to you as to how you will integrate the results wi
 
 This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
-Be prepared to Train LUIS several times, which is covered in **Step 12**. You will get better results the more times LUIS has been trained. 
+Be prepared to Train LUIS several times, which is covered in **Chapter 12**. You will get better results the more times LUIS has been trained. 
+
+## Device support
+
+<table>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>Language Understanding (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
 
 ## Prerequisites
 
@@ -62,7 +72,7 @@ For more information, please follow this [LINK](https://azure.microsoft.com/en-a
 
     ![Setting up immersive headset](images/AzureLabs-Lab3-00.png)
 
-## Step 1 – Setup Azure Portal: Create the LUIS Service
+## Chapter 1 – Setup Azure Portal: Create the LUIS Service
 
 To use the **Language Understanding** service in Azure, you will need to configure an instance of the service to be made available to your application.
 
@@ -116,12 +126,12 @@ To use the **Language Understanding** service in Azure, you will need to configu
 11.	Take a copy of one of the displayed keys, as you will need this later in your project. 
 12.	In the **Service** page, click on ***Language Understanding Portal*** to be redirected to the webpage which you will use to create your new Service, within the LUIS App. 
 
-## Step 2 – The Language Understanding Portal
+## Chapter 2 – The Language Understanding Portal
 
 In this section you will learn how to make a LUIS App on the LUIS Portal. 
 
 > [!IMPORTANT]
-> Please be aware, that setting up the *Entities*, *Intents*, and *Utterances* within this step is only the first step in building your LUIS service: you will also need to retrain the service, several times, so to make it more accurate. Retraining your service is covered in the **last step** of this lab, so ensure that you complete it.
+> Please be aware, that setting up the *Entities*, *Intents*, and *Utterances* within this chapter is only the first step in building your LUIS service: you will also need to retrain the service, several times, so to make it more accurate. Retraining your service is covered in the **last Chapter** of this lab, so ensure that you complete it.
 
 1.	Upon reaching the **Language Understanding Portal**, you may need to login, if you are not already, with the same credentials as your Azure portal. 
 
@@ -292,7 +302,7 @@ The result should be like the one in the image below:
 > [!IMPORTANT] 
 > Underneath **Endpoint**, take a copy of the endpoint corresponding to the Key you have inserted, you will soon use it in your code.
  
-## Step 3 – Set up the Unity Project
+## Chapter 3 – Set up the Unity Project
 
 The following is a typical set up for developing with the mixed reality, and as such, is a good template for other projects.
 
@@ -359,10 +369,10 @@ The following is a typical set up for developing with the mixed reality, and as 
 9.	Close the Build Settings window.
 10.	Save your Scene and Project (**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
 
-## Step 4 – Setup the Scene
+## Chapter 4 – Setup the Scene
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%203%20-%20LUIS%20MR%20Integration/Azure-MR-Lab-3.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Step 5**. 
+> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%203%20-%20LUIS%20MR%20Integration/Azure-MR-Lab-3.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**. 
 
 1.	Right-click in an empty area of the **Hierarchy Panel**, under **3D Object**, add a **Plane**.
 
@@ -447,9 +457,9 @@ The following is a typical set up for developing with the mixed reality, and as 
     ![The scene view.](images/AzureLabs-Lab3-39.png)
     
  
-## Step 5 – Create the MicrophoneManager Class
+## Chapter 5 – Create the MicrophoneManager Class
 
-The first Script you are going to create is the ***MicrophoneManager*** class. Following this, you will create the ***LuisManager***, the ***Behaviours*** class, and lastly the ***Gaze*** class (feel free to create all these now, though it will be covered as you reach each step).
+The first Script you are going to create is the ***MicrophoneManager*** class. Following this, you will create the ***LuisManager***, the ***Behaviours*** class, and lastly the ***Gaze*** class (feel free to create all these now, though it will be covered as you reach each Chapter).
 
 The ***MicrophoneManager*** class is responsible for:
 
@@ -550,9 +560,9 @@ To create this class:
 9.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 
 > [!NOTE]
-> At this point you will notice an error appearing in the **Unity Editor Console Panel**. This is because the code references the ***LuisManager*** class which you will create in the next step.
+> At this point you will notice an error appearing in the **Unity Editor Console Panel**. This is because the code references the ***LuisManager*** class which you will create in the next Chapter.
 
-## Step 6 – Create the ***LUISManager*** class – Call to Azure LUIS app
+## Chapter 6 – Create the ***LUISManager*** class – Call to Azure LUIS app
 
 It is time for you to create the ***LuisManager*** class. 
 
@@ -752,9 +762,9 @@ To create this class:
 12.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 
 > [!NOTE]
-> At this point you will notice several errors appearing in the **Unity Editor Console Panel**. This is because the code references the ***Behaviours*** class which you will create in the next step.
+> At this point you will notice several errors appearing in the **Unity Editor Console Panel**. This is because the code references the ***Behaviours*** class which you will create in the next Chapter.
 
-## Step 7 – Create the ***Behaviours*** Class
+## Chapter 7 – Create the ***Behaviours*** Class
 
 The ***Behaviours*** class will trigger the actions using the Entities provided by the **LuisManager** class.
 
@@ -890,7 +900,7 @@ To create this class:
 
 8.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 
-## Step 8 – Create the ***Gaze*** Class
+## Chapter 8 – Create the ***Gaze*** Class
 
 The last class that you will need to complete this app is the ***Gaze*** class. This class updates the reference to the **GameObject** currently in the user’s visual focus.
 
@@ -955,7 +965,7 @@ To create this Class:
  
 5.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 
-## Step 9 – Completing Scene Setup
+## Chapter 9 – Completing Scene Setup
 
 1.	To complete the setup of the scene, drag each script that you have created from the Scripts Folder to the **Main Camera** object in the **Hierarchy Panel**.
 2.	Select the **Main Camera** and look at the **Inspector Panel**, you should be able to see each script that you have attached, and you will notice that there are parameters on each script that are yet to be set.
@@ -975,7 +985,7 @@ To create this Class:
 
     ![Showing the Camera Reference Targets, now set.](images/AzureLabs-Lab3-42.png)
  
-## Step 10 – Test in MR
+## Chapter 10 – Test in MR
 
 Test that the Scene setup is properly implemented.
 
@@ -1002,7 +1012,7 @@ change it to white
 > [!NOTE]
 > If you see an error in the Unity console about the default audio device changing, the scene may not function as expected. This is due to the way the mixed reality portal deals with built-in microphones for headsets that have them. If you see this error, simply stop the scene and start it again and things should work as expected.
 
-## Step 11 – Build the UWP Solution and Sideload on Local Machine
+## Chapter 11 – Build the UWP Solution and Sideload on Local Machine
 
 Once you have ensured that the application is working in the Unity Editor, you are ready to Build and Deploy.
 
@@ -1027,7 +1037,7 @@ To Build:
 
 To Deploy on Local Machine:
 
-1.	In **Visual Studio**, open the solution file that has been created in the previous step.
+1.	In **Visual Studio**, open the solution file that has been created in the previous Chapter.
 2.	In the **Solution Platform**, select ***x86***, ***Local Machine***.
 3.	In the **Solution Configuration** select ***Debug***.
 
@@ -1041,10 +1051,10 @@ To Deploy on Local Machine:
 5.	Your App should now appear in the list of installed apps, ready to be launched!
 6.	Once launched, the App will prompt you to authorize access to the _Microphone_. Use the **Motion Controllers**, or **Voice Input**, or the **Keyboard** to press the ***YES*** button. 
 
-## Step 12 – Improving your app understanding
+## Chapter 12 – Improving your app understanding
 
 >[!IMPORTANT] 
-> **This is one of the most important steps, as it will help improve the accuracy of your LUIS service: ensure you complete this.**
+> **This chapter is incredibly important, and may need to be interated upon several times, as it will help improve the accuracy of your LUIS service: ensure you complete this.**
 
 To improve the level of understanding provided by LUIS you need to capture new utterances and use them to re-train your LUIS App.
 

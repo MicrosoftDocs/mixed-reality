@@ -1,7 +1,7 @@
 ---
 title: Azure Lab Mixed Reality - Computer Vision API
 description: Azure Lab teaching how to implement Azure Computer Vision API within a mixed reality Unity3D Application.
-author: elliotmoule, StefanoDeflorio, drneil
+author: v-arood
 ms.author:
 ms.date: 
 keywords: azure, computer vision, mixed reality, unity3d
@@ -25,6 +25,16 @@ Having completed this lab, you will have a mixed reality HoloLens application, w
 In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality Application.
 
 This Lab is a self-contained tutorial, which doesn’t directly involve any other mixed reality Labs.
+
+## Device support
+
+<table>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td> Computer Vision API Version 2.0</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
 
 ## Prerequisites
 For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
@@ -58,7 +68,7 @@ For help on Calibration, please follow this [LINK](https://developer.microsoft.c
 
 For help on Sensor Tuning, please follow this [LINK](https://developer.microsoft.com/en-us/windows/mixed-reality/sensor_tuning).
 
-## Step 1 – The Azure Portal: Create the Computer Vision API Service
+## Chapter 1 – The Azure Portal: Create the Computer Vision API Service
 
 To use the Computer Vision API service in Azure, you will need to configure an instance of the service to be made available to your application.
 
@@ -118,7 +128,7 @@ To use the Computer Vision API service in Azure, you will need to configure an i
 > [!TIP]
 > You can check what the various endpoints are [HERE](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa). 
 
-## Step 2 – Set up the Unity Project
+## Chapter 2 – Set up the Unity Project
 
 The following is a typical set up for developing with mixed reality, and as such, is a good template for other projects.
 
@@ -191,10 +201,10 @@ The following is a typical set up for developing with mixed reality, and as such
 9.	Close the Build Settings window.
 10.	Save your Scene and Project (**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
 
-## Step 3 – Camera Setup
+## Chapter 3 – Camera Setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%202%20-%20Computer%20Vision%20API/Azure-MR-Lab-2.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Step 5**.
+> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%202%20-%20Computer%20Vision%20API/Azure-MR-Lab-2.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**.
 
 1.	In the **Hierarchy Panel**, select the ***Main Camera***. 
 2.	Once selected, you will be able to see all the components of the **Main Camera** in the **Inspector Panel**.
@@ -223,7 +233,7 @@ To create the Cursor:
 
         ![Update the Transform Position and Scale.](images/AzureLabs-Lab2-20.png)
   
-## Step 4 – Setup the Label System
+## Chapter 4 – Setup the Label System
 
 Once you have captured an image with the HoloLens’ camera, that image will be sent to your **Azure Computer Vision API** Service instance for analysis. 
 
@@ -259,7 +269,7 @@ The following steps will show how to setup the **Label** object.
 
     ![Final structure of the hierarchy panel.](images/AzureLabs-Lab2-23.png)
 
-## Step 5 – Create the ***ResultsLabel*** class
+## Chapter 5 – Create the ***ResultsLabel*** class
 
 The first script you need to create is the ***ResultsLabel*** class, which is responsible for the following: 
 - Creating the Labels in the appropriate world space, relative to the position of the Camera.
@@ -345,7 +355,7 @@ You will notice that from the script you just dragged into the Camera, there are
 
     ![Set the reference targets within Unity.](images/AzureLabs-Lab2-25.png)
 
-## Step 6 – Create the ***ImageCapture*** class
+## Chapter 6 – Create the ***ImageCapture*** class
 
 The next class you are going to create is the ***ImageCapture*** class. 
 This class is responsible for:
@@ -492,9 +502,9 @@ This method then calls the **ExecuteImageCaptureAndAnalysis** method to begin th
 ```
  
 > [!WARNING] 
-> At this point you will notice an error appearing in the **Unity Editor Console Panel**. This is because the code references the ***VisionManager*** class which you will create in the next step.
+> At this point you will notice an error appearing in the **Unity Editor Console Panel**. This is because the code references the ***VisionManager*** class which you will create in the next Chapter.
 
-## Step 7 – Call to Azure and Image Analysis
+## Chapter 7 – Call to Azure and Image Analysis
 
 The last script you need to create is the ***VisionManager*** class. 
 
@@ -558,7 +568,7 @@ To create this class:
 ```
 
 > [!WARNING] 
-> Make sure you insert your **Auth Key** into the **authorizationKey** variable. You will have noted your **Auth Key** at the beginning of this Lab, **Step 1**.
+> Make sure you insert your **Auth Key** into the **authorizationKey** variable. You will have noted your **Auth Key** at the beginning of this Lab, **Chapter 1**.
 
 > [!WARNING] 
 > The **visionAnalysisEndpoint** variable might differ from the one specified in this example. The **west-us** strictly refers to Service instances created for the West US region. Update this with your [endpoint URL](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa); here are some examples of what that might look like:
@@ -655,18 +665,18 @@ To create this class:
 9.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 10.	Back in the Unity Editor, click and drag the ***VisionManager*** and ***ImageCapture*** classes from the **Scripts** folder to the **Main Camera** object in the **Hierarchy Panel**. 
 
-## Step 8 – Before Building
+## Chapter 8 – Before Building
 
 To perform a thorough test of your application you will need to sideload it onto your HoloLens.
 Before you do, ensure that:
 
--	All the settings mentioned in the **Step 2** are set correctly. 
+-	All the settings mentioned in the **Chapter 2** are set correctly. 
 -	All the scripts are attached to the **Main Camera** object. 
 -	All the fields in the **Main Camera Inspector Panel** are assigned properly.
 -	Make sure you insert your **Auth Key** into the **authorizationKey** variable.
 -   Ensure that you have also checked your endpoint in your ***VisionManager*** script, and that it aligns to *your* region (this document uses *west-us* by default).
 
-## Step 9 – Build the UWP Solution and Sideload the Application
+## Chapter 9 – Build the UWP Solution and Sideload the Application
 Everything needed for the Unity section of this project has now been completed, so it is time to build it from Unity.
 
 1.	Navigate to **Build Settings** - ***File > Build Settings…***
@@ -679,7 +689,7 @@ Everything needed for the Unity section of this project has now been completed, 
 5.	Unity will begin building your project to the ***App*** folder. 
 6.	Once Unity has finished building (it might take some time), it will open a **File Explorer** window at the location of your build (check your task bar, as it may not always appear above your windows, but will notify you of the addition of a new window).
 
-## Step 10 – Deploy to HoloLens
+## Chapter 10 – Deploy to HoloLens
 
 To deploy on HoloLens:
 

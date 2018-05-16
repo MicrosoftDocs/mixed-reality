@@ -1,7 +1,7 @@
 ---
 title: Azure Lab Mixed Reality - Cloud Storage and Functions
 description: Azure Lab teaching how to implement Azure Storage and Azure Functions within a mixed reality Unity3D Application.
-author: elliotmoule, StefanoDeflorio, drneil
+author: v-arood
 ms.author:
 ms.date: 
 keywords: azure, azure functions, azure storage, mixed reality, unity3d
@@ -41,6 +41,18 @@ In your application, it is up to you as to how you will integrate the results wi
 
 This Lab is a self-contained tutorial, which doesn’t directly involve any other mixed reality Labs.
 
+## Device support
+
+<table>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td> Azure Functions</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr><tr>
+<td> Azure Storage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
 ## Prerequisites
 
 For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
@@ -67,7 +79,7 @@ The following hardware and software is required:
 
 To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
 
-## Step 1 - Azure Storage Account Setup
+## Chapter 1 - Azure Storage Account Setup
 
 To use the **Azure Storage Service**, you will need to create and
 configure a **Storage Account** in the Azure portal.
@@ -151,7 +163,7 @@ configure a **Storage Account** in the Azure portal.
 
     ![copy connection string](images/AzureLabs-Lab5-07.png)
 
-## Step 2 - Setting up an Azure Function
+## Chapter 2 - Setting up an Azure Function
 
 You will now write an **Azure** **Function** in the Azure Service.
 
@@ -275,7 +287,7 @@ public class CustomObject
 
     ![get function endpoint](images/AzureLabs-Lab5-16-5.png)
 
-## Step 3 - Setting up the Unity Project
+## Chapter 3 - Setting up the Unity Project
 
 The following is a typical set up for developing with Mixed Reality, and
 as such, is a good template for other projects.
@@ -385,10 +397,10 @@ Set up and test your Mixed Reality Immersive Headset.
 11. Save your Scene and Project (**FILE \> SAVE SCENE / FILE \> SAVE
     PROJECT**).
 
-## Step 4 - Setup Main Camera
+## Chapter 4 - Setup Main Camera
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* components of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%205%20-%20Azure%20Functions%20and%20Storage/Azure-MR-Lab-5.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html). This will also contain the DLLs from the next step. After import, continue from **Step 7**. 
+> If you wish to skip the *Unity Set up* components of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%205%20-%20Azure%20Functions%20and%20Storage/Azure-MR-Lab-5.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html). This will also contain the DLLs from the next Chapter. After import, continue from **Chapter 7**. 
 
 1.  In the **Hierarchy** Panel, you will find an object called **Main
     Camera**, this object represents your "head" point of view once you
@@ -423,7 +435,7 @@ Set up and test your Mixed Reality Immersive Headset.
 
     ![set camera transform](images/AzureLabs-Lab5-30.png)
 
-## Step 5 - Setting up the Unity Scene
+## Chapter 5 - Setting up the Unity Scene
 
 1.  Right-click in an empty area of the **Hierarchy** Panel, under **3D
     Object**, add a ***Plane***.
@@ -529,7 +541,7 @@ Set up and test your Mixed Reality Immersive Headset.
     ![text mesh in scene view](images/AzureLabs-Lab5-44.png)
 
 
-## Step 6 - Import Azure Storage for Unity
+## Chapter 6 - Import Azure Storage for Unity
 
 You will be using Azure Storage for Unity (which itself leverages the .Net SDK for Azure). You can read more about Azure Storage for Unity [HERE](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity).
 
@@ -576,7 +588,7 @@ exported from Unity.
 > [!NOTE]
 > We are marking this plugin "Don't process", because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it is not processed.
 
-## Step 7 - Create the ***AzureServices*** class
+## Chapter 7 - Create the ***AzureServices*** class
 
 The first class you are going to create is the **AzureServices** class.
 
@@ -710,7 +722,7 @@ public async void CallAzureFunctionForNextShape()
 ```
 
 > [!IMPORTANT]
-> We will fill in the code for ***CallAzureFunctionForNextShape*** in a future step.
+> We will fill in the code for ***CallAzureFunctionForNextShape*** in a future Chapter.
 
 9.  Delete the **Update()** method since this class will not use it.
 
@@ -722,7 +734,7 @@ public async void CallAzureFunctionForNextShape()
 
     ![assign azure status text reference target](images/AzureLabs-Lab5-52.png)
 
-## Step 8 - Create the ***ShapeFactory*** class
+## Chapter 8 - Create the ***ShapeFactory*** class
 
 The next script to create, is the ***ShapeFactory*** class. The role of this class is to create a new shape, when requested, and keep a history of the shapes created in a *Shape History List*. Every time a shape is created, the *Shape History list* is updated in the ***AzureService*** class, and then stored in your **Azure Storage**. When the application starts, if a stored file is found in your **Azure Storage**, the *Shape History list* is retrieved and replayed, with the **3D Text** object providing whether the generated shape is from storage, or new.
 
@@ -836,7 +848,7 @@ internal void CreateShape(int shape, bool storageSpace)
 
     ![set shape factory reference target](images/AzureLabs-Lab5-53.png)
 
-## Step 9 - Create the ***Gaze*** class
+## Chapter 9 - Create the ***Gaze*** class
 
 The last script you need to create is the **Gaze** class.
 
@@ -1107,7 +1119,7 @@ private void ResetFocusedObject()
 
 11.  Click and drag the ***Gaze*** class from the Scripts folder to the Main Camera object in the Hierarchy Panel.
 
-## Step 10 - Completing the *AzureServices* Class
+## Chapter 10 - Completing the *AzureServices* Class
 
 With the other scripts in place, it is not possible to *complete* the ***AzureServices*** class. This will be achieved through:
 
@@ -1271,7 +1283,7 @@ private async Task ReplicateListFromAzureAsync()
 
 7.  Save your changes in Visual Studio before returning to Unity.
 
-## Step 11 - Build the UWP Solution
+## Chapter 11 - Build the UWP Solution
 
 To begin the Build process:
 
@@ -1291,11 +1303,11 @@ To begin the Build process:
     your task bar, as it may not always appear above your windows, but
     will notify you of the addition of a new window).
 
-## Step 12 - Deploying your Application
+## Chapter 12 - Deploying your Application
 
 To deploy your application:
 
-1.  Navigate to the ***App*** folder which was created in the last step.
+1.  Navigate to the ***App*** folder which was created in the last Chapter.
     You will see a file with your apps name, with the '.sln' extension:
     open this file using **Visual Studio**.
 
