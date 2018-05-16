@@ -106,7 +106,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 * In Visual Studio, use the top toolbar to change the Configuration to **Release**.
 * Change the Platform to **x86**.
 * Click on the drop-down arrow to the right of 'Local Machine', and select **Remote Machine**.
-* Enter [your device's IP address](connecting-to-wi-fi-on-hololens.md#identifying-the-hololens-ip-address-on-the-wi-fi-network) in the Address field and change Authentication Mode to **Universal (Unencrypted Protocol)**.
+* Enter [your device's IP address](connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in the Address field and change Authentication Mode to **Universal (Unencrypted Protocol)**.
 * Click **Debug -> Start Without debugging** or press **Ctrl + F5**.
 * Watch the **Output** panel in Visual Studio for build and deploy status.
 * Once your app has deployed, walk around the room. You will see the surrounding surfaces covered by black and white wireframe meshes.

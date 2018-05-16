@@ -74,7 +74,7 @@ We will now build the project in Unity and configure the solution in Visual Stud
 Unity begin compiling scripts and creating a Visual Studio solution. When complete, a File Explorer window will appear.
 * At the top of the Visual Studio window, change the target to **Release** and **x86**.
 * Click the small downward facing arrow next to **Local Machine** and select **Remote Machine**.
-* Enter the [IP address of your HoloLens](connecting-to-wi-fi-on-hololens.md#identifying-the-hololens-ip-address-on-the-wi-fi-network) in the **Address** box and leave **Authentication Mode** set to **Universal (Unencrypted Protocol)**.
+* Enter the [IP address of your HoloLens](connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in the **Address** box and leave **Authentication Mode** set to **Universal (Unencrypted Protocol)**.
 
 ## Chapter 2 - Spatial Sound and Interaction
 
