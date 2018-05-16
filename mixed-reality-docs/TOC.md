@@ -75,15 +75,15 @@
 #### [App bar and bounding box](app-bar-and-bounding-box.md)
 ### Designing for the mixed reality home
 #### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
-#### [Asset creation process](asset-creation-process.md)
 #### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 #### [Add custom home environments](add-custom-home-environments.md)
 ### Sample apps
 #### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 #### [Lunar Module](Lunar-Module.md)
 #### [Galaxy Explorer](Galaxy-Explorer.md)
-### Design tools
+### Design tools and resources
 #### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
+#### [Asset creation process](asset-creation-process.md)
 
 ## [Development](development.md)
 ### [Development overview](development-overview.md)
