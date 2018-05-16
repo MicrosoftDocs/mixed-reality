@@ -227,6 +227,158 @@ The Mixed Reality Academy is a set of step-by-step tutorials:
                               </div>
                               </a>
                             </li> 
+                                 <li>
+                                   <a href="replace-this.md" title="MR and Azure 301" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 301: Language translation</h3>
+                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>
+                                 <li>
+                                   <a href="replace-this.md" title="MR and Azure 302" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 302: Computer vision</h3>
+                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>
+                                 <li>
+                                   <a href="replace-this.md" title="MR and Azure 303" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 303: Natural language understanding</h3>
+                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>
+                                 <li>
+                                   <a href="replace-this.md" title="MR and Azure 304" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 304: Face recognition</h3>
+                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>
+                                 <li>
+                                   <a href="replace-this.md" title="MR and Azure 305" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 305: Functions and storage</h3>
+                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>
+                                 <li>
+                                   <a href="replace-this.md" title="MR and Azure 306" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 306: Streaming video</h3>
+                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>
+                                 <li>
+                                   <a href="replace-this.md" title="MR and Azure 307" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 307: Machine learning</h3>
+                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>
+                                 <li>
+                                   <a href="replace-this.md" title="MR and Azure 308" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 308: Shared experience</h3>
+                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>
 </ul>
 
 ## Microsoft Reactor
