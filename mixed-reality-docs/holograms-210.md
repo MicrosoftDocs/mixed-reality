@@ -22,6 +22,9 @@ We have a friendly astronaut here to help you learn gaze concepts. In [Holograms
 * We'll show you how to draw the user's attention to your holograms with a directional indicator.
 * We'll teach you techniques to take your holograms with the user as she moves around in your world.
 
+>[!IMPORTANT]
+>The videos embedded in each of the chapters below were recorded using an older version of Unity and the Mixed Reality Toolkit. While the step-by-step instructions are accurate and current, you may see scripts and visuals in the corresponding videos that are out-of-date. The videos remain included for posterity and because the concepts covered still apply.
+
 ## Getting Started
 
 ### Prerequisites
