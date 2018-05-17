@@ -201,8 +201,8 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                               </div>
                                           </div>
                                           <div class="cardText">
-                                              <h3>MR Sharing 240: Sharing holograms</h3>
-                                              <p>Our //Build 2016 project! Set up a complete project sharing coordinate systems between HoloLens devices to create a shared experience, allowing us to take part in a shared holographic world.</p>
+                                              <h3>MR Sharing 240: Multiple HoloLens devices</h3>
+                                              <p>Our //Build 2016 project! Set up a complete project with coordinate systems shared between HoloLens devices, allowing users to take part in a shared holographic world.</p>
                                           </div>
                                       </div>
                                   </div>
