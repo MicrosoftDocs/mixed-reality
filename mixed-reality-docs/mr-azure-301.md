@@ -1,15 +1,15 @@
 ---
-title: Azure Lab Mixed Reality - Translator Text API
+title: MR and Azure 301: Language translation
 description: Azure Lab teaching how to implement Azure Translator Text API within a mixed reality Unity3D Application.
-author: v-arood
-ms.author:
-ms.date: 
-keywords: azure, translator text, mixed reality, unity3d
+author: drneil
+ms.author: v-arood
+ms.date: 05/18/2018
+keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, hololens, immersive, vr
 ---
 
-# Lab 1. Translation Capabilities with Immersive Headsets
+# MR and Azure 301: Language translation
  
-In this Lab, you will learn how to add translation capabilities to a **mixed reality application** using Azure Cognitive Services, with the Translator Text API.
+In this course, you will learn how to add translation capabilities to a mixed reality application using Azure Cognitive Services, with the Translator Text API.
 
 ![Final product](images/AzureLabs-Lab1-00.png)
 
@@ -31,9 +31,9 @@ This Lab is a self-contained tutorial, which does not directly involve any other
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Microsoft Translator</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 301: Language translation</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
