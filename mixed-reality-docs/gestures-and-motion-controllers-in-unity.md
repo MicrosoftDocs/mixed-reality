@@ -507,7 +507,7 @@ You can find an example of how we recommend to implement throwing [here](https:/
 
 Throwing will continue to improve with future Windows updates, and you can expect to find more information on it here.
 
-# Mixed Reality Toolkit for Input
+## Input in Mixed Reality Toolkit
 There are two example scenes about InputManager and MotionController in Unity. Through these scenes, you can learn how to use MRTK's InputManager and access data handle events from the motion controller buttons.
 
 - [HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity)
