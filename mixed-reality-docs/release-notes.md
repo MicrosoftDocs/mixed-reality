@@ -31,7 +31,7 @@ To update to the latest release for each device, open the **Settings** app, go t
 
 The Windows 10 April 2018 Update includes many improvements for using Windows Mixed Reality immersive (VR) headsets with your desktop PC, such as: 
 
-* **New environment for the mixed reality home** - You can now choose between the Cliff House and the new Skyloft environment by selecting **Places** on the Start menu. We've also added an experimental feature that will let you use original environments you've created (more info coming soon).
+* **New environment for the mixed reality home** - You can now choose between the Cliff House and the new Skyloft environment by selecting **Places** on the Start menu. We've also added [an experimental feature](add-custom-home-environments.md) that will let you use custom environments you've created.
 * **Quick access to mixed reality capture** - You can now take mixed reality photos using a motion controller. Hold the Windows button and then tap the trigger. This works across environments and apps, but will not capture content protected with DRM.
 * **New options for launching and resizing content** - Apps are now automatically placed in front of you when you launch them from the Start menu. You can also now resize 2D apps by dragging the edges and corners of the window.
 * **Easily jump to content with "teleport" voice command** - You can now quickly teleport to be in front of content in the Windows Mixed Reality home by gazing at content and saying "teleport."
