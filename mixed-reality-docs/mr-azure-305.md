@@ -1,19 +1,18 @@
 ---
-title: Azure Lab Mixed Reality - Cloud Storage and Functions
+title: MR and Azure 305 - Functions and storage
 description: Azure Lab teaching how to implement Azure Storage and Azure Functions within a mixed reality Unity3D Application.
-author: v-arood
-ms.author:
-ms.date: 
-keywords: azure, azure functions, azure storage, mixed reality, unity3d
+author: drneil
+ms.author: v-arood
+ms.date: 05/18/2018
+keywords: azure, mixed reality, academy, unity, tutorial, api, functions, storage, hololens, immersive, vr
 ---
 
-# **Lab 5. Azure Cloud Storage and Azure Functions**
+# MR and Azure 305: Functions and storage
 
 ![final product -start](images/AzureLabs-Lab5-00.png)
 
-In this Lab, you will learn how to create and use **Azure Functions**
-and store data with an **Azure Storage** resource, within a Mixed
-Reality (MR) Application.
+In this course, you will learn how to create and use Azure Functions and store data with an Azure Storage resource, within a mixed
+reality application.
 
 **Azure Functions** is a Microsoft service, which allows developers to
 run small pieces of code, 'functions', in Azure. This provides a way
@@ -45,11 +44,9 @@ This Lab is a self-contained tutorial, which doesn’t directly involve any othe
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Azure Functions</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr><tr>
-<td> Azure Storage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR and Azure 305: Functions and storage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
