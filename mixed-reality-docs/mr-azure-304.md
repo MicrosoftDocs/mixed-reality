@@ -1,19 +1,17 @@
 ---
-title: Azure Lab Mixed Reality - Face Recognition
+title: MR and Azure 304 - Face recognition
 description: Azure Lab teaching how to implement Azure Face Recognition within a mixed reality Unity3D Application.
-author: v-arood
-ms.author:
-ms.date: 
-keywords: azure, face recognition, mixed reality, unity3d
+author: drneil
+ms.author: v-arood
+ms.date: 05/18/2018
+keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition, hololens, immersive, vr
 ---
 
-# Lab 4. Face Recognition capabilities with HoloLens
+# MR and Azure 304: Face recognition
 
 ![outcome of completing this lab](images/AzureLabs-Lab4-00.png)
 
-In this Lab you will learn how to add Face Identification capabilities
-to a **Mixed Reality Application** (MR), using Azure Cognitive Services, with the
-**Microsoft Face API**.
+In this course you will learn how to add face recognition capabilities to a mixed reality application, using Azure Cognitive Services, with the Microsoft Face API.
 
 **Azure Face API** is a Microsoft service, which provides developers with the most advanced face algorithms, all in the cloud. The **Face API** has two main functions: face detection with attributes, and face recognition. This allows developers to simply set a set of groups for faces, and then, send query images to the service later, to determine to whom a face belongs. For more information, visit the [Azure Face Recognition page](https://azure.microsoft.com/en-us/services/cognitive-services/face/).
 
@@ -34,9 +32,9 @@ This Lab is a self-contained tutorial, which does not directly involve any other
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Face API</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 304: Face recognition</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
