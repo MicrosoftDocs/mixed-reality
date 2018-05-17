@@ -1,7 +1,7 @@
 ---
 title: Azure Lab Mixed Reality - Media Services
 description: Azure Lab teaching how to implement Azure Media Services within a mixed reality Unity3D Application.
-author: elliotmoule, StefanoDeflorio, drneil
+author: v-arood
 ms.author:
 ms.date: 
 keywords: azure, media services, mixed reality, unity3d
@@ -28,6 +28,16 @@ Having completed this lab, you will have a mixed reality immersive headset appli
 In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
 
 This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
+
+## Device support
+
+<table>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td> Azure Media Services</td><td style="text-align: center;"> X</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
 
 ## **Prerequisites**
 For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
@@ -65,7 +75,7 @@ The following hardware and software is required:
 > If you need support setting up the Immersive Headset, please click
 [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
 
-## Step 1 - Azure Storage Account Setup
+## Chapter 1 - Azure Storage Account Setup
 
 To use the **Azure Storage Service**, you will need to create and configure
 a **Storage Account** in the Azure portal.
@@ -124,9 +134,9 @@ a **Storage Account** in the Azure portal.
     ![Azure Storage Account Setup](images/AzureLabs-Lab6-05.png)
 
 8.  At this point you do not need to follow the resource, simply move to
-    the next step.
+    the next Chapter.
 
-## Step 2 - The Azure Portal: Creating the Media Service
+## Chapter 2 - The Azure Portal: Creating the Media Service
 
 To use the Azure Media Service, you will need to configure an
 instance of the service to be made available to your application (wherein the account holder needs to be an Admin).
@@ -158,7 +168,7 @@ instance of the service to be made available to your application (wherein the ac
 
     4.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
 
-    5.  For the **Storage Account** section, click the ***Please select...*** section, then click the **Storage Account** you createdin the last step.
+    5.  For the **Storage Account** section, click the ***Please select...*** section, then click the **Storage Account** you createdin the last Chapter.
 
     6.  You will also need to confirm that you have understood the Terms and
     Conditions applied to this Service.
@@ -313,9 +323,9 @@ instance of the service to be made available to your application (wherein the ac
     second video. Ensure you copy the second **Endpoint** also. Use the
     following link to download a [second video](https://vimeo.com/214402865).
 
-27. Once both videos have been published, you are ready to move to the next step.
+27. Once both videos have been published, you are ready to move to the next Chapter.
 
-## Step 3 - Setting up the Unity Project
+## Chapter 3 - Setting up the Unity Project
 
 The following is a typical set up for developing with the Mixed Reality, and as such, is a good template for other projects.
 
@@ -390,10 +400,10 @@ The following is a typical set up for developing with the Mixed Reality, and as 
 
 
 
-## Step 4 - Importing the InsideOutSphere Unity Package
+## Chapter 4 - Importing the InsideOutSphere Unity Package
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%206%20-%20Azure%20Media%20Services/Azure-MR-Lab-6.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Step 5**. You will still need to create a Unity Project.
+> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%206%20-%20Azure%20Media%20Services/Azure-MR-Lab-6.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**. You will still need to create a Unity Project.
 
 For this lab you will need to download a Unity Asset Package called [**InsideOutSphere.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%206%20-%20Azure%20Media%20Services/InsideOutSphere.unitypackage).
 
@@ -495,7 +505,7 @@ How-to import the **unitypackage**:
     ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-42.png)
 
 
-## Step 5 - Create the VideoController class
+## Chapter 5 - Create the VideoController class
 
 The ***VideoController*** class hosts the two video endpoints that will
 be used to stream the content from the Azure Media Service.
@@ -703,7 +713,7 @@ using UnityEngine.Video;
     ![Create the VideoController class](images/AzureLabs-Lab6-47.png)
     ![Create the VideoController class](images/AzureLabs-Lab6-48.png)
 
-## Step 6 - Create the ***Gaze*** class
+## Chapter 6 - Create the ***Gaze*** class
 
 This class is responsible for creating a **Raycast** that will be
 projected forward from the **Main Camera**, to detect which object the
@@ -827,9 +837,9 @@ using UnityEngine;
 9.  Click and drag the ***Gaze*** class from the Scripts folder to the
     Main Camera object in the **Hierarchy** Panel.
 
-## Step 7 - Setup the two Unity Scenes
+## Chapter 7 - Setup the two Unity Scenes
 
-The purpose of this step is to setup the two scenes, each hosting a
+The purpose of this Chapter is to setup the two scenes, each hosting a
 video to stream. You will duplicate the scene you have already created,
 so that you do not need to set it up again, though you will then edit
 the new scene, so that the *GazeButton* object is in a different
@@ -839,7 +849,7 @@ between scenes.
 1.  Do this by going to ***File > Save Scene as...**.* A save window
     will appear. Click the ***New folder*** button.
 
-    ![Step 7 - Setup the two Unity Scenes](images/AzureLabs-Lab6-49.png)
+    ![Chapter 7 - Setup the two Unity Scenes](images/AzureLabs-Lab6-49.png)
 
 2.  Name the folder ***Scenes***.
 
@@ -865,7 +875,7 @@ between scenes.
     the **Build Settings** window open, drag your scenes to the **Scenes
     in Build** section.
 
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-50.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-50.png)
 
 > [!TIP] 
 > You can select both of your scenes from your **Scenes** folder through holding the **Ctrl** button, and then left-clicking each scene, and finally drag both across.
@@ -893,18 +903,18 @@ between scenes.
 
 10. With the **GazeButton** child still selected, look at the **Inspector** and at the **Mesh Filter**. Click the little target next to the **Mesh** reference field:
 
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-51.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-51.png)
 
 11. A **Select Mesh** popup window will appear. Double click the
     ***Cube*** mesh from the list of **Assets**.
 
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-52.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-52.png)
 
 12. The **Mesh Filter** will update, and now be a **Cube**. Now, click
     the ***Gear*** icon next to **Sphere Collider** and click ***Remove
     Component***, to delete the collider from this object.
 
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-53.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-53.png)
 
 13. With the **GazeButton** still selected, click the ***Add
     Component*** button at the bottom of the **Inspector**. In the
@@ -912,7 +922,7 @@ between scenes.
     -- click that, to add a **Box Collider** to your **GazeButton**
     object.
 
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-54.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-54.png)
 
 14. The **GazeButton** is now partially updated, to look different,
     however, you will now create a new **Material**, so that it looks
@@ -924,8 +934,8 @@ between scenes.
     ***D*** on the keyboard, or left-click the **Material**, then from
     the ***Edit*** file menu option, select ***Duplicate***).
 
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-55.png)
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-56.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-55.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-56.png)
 
 16. Select the new ***ButtonMaterial*** Material (here named
     ***ButtonMaterial 1***), and within the **Inspector**, click the
@@ -933,25 +943,25 @@ between scenes.
     another color (choose whichever you like), then close the popup. The
     Material will be its own instance, and different to the original.
 
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-57.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-57.png)
 
 17. Drag the new **Material** onto the **GazeButton** child, to now
     completely update its look, so that it is easily distinguishable
     from the first scenes button.
 
-    ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-58.png)
+    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-58.png)
 
 18. At this point you can test the project in the Editor before building
     the UWP project.
 
     -  Press the ***Play*** button in the **Editor** and wear your headset.
 
-        ![Step 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-59.png)
+        ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-59.png)
 
 19. Look at the two **GazeButton** objects to switch between the first
     and second video.
 
-## Step 8 - Build the UWP Solution
+## Chapter 8 - Build the UWP Solution
 
 Once you have ensured that the editor has no errors, you are ready to
 Build.
@@ -974,13 +984,13 @@ To Build:
 6.  Click your new folder and then click ***Select Folder***, so to
     choose that folder, to begin the build at that location.
 
-    ![Step 8 -- Build the UWP Solution](images/AzureLabs-Lab6-60.png)
-    ![Step 8 -- Build the UWP Solution](images/AzureLabs-Lab6-61.png)
+    ![Chapter 8 -- Build the UWP Solution](images/AzureLabs-Lab6-60.png)
+    ![Chapter 8 -- Build the UWP Solution](images/AzureLabs-Lab6-61.png)
 
 7.  Once Unity has finished building (it might take some time), it will
     open a **File Explorer** window at the location of your build.
 
-## Step 9 - Deploy on Local Machine
+## Chapter 9 - Deploy on Local Machine
 
 Once the build has been completed, a **File Explorer** window will
 appear at the location of your build. Open the Folder you named and
@@ -999,7 +1009,7 @@ To deploy to Local Machine:
 
 3.  In the **Solution Configuration** select ***Debug***.
 
-    ![Step 9 -- Deploy on Local Machine](images/AzureLabs-Lab6-62.png)
+    ![Chapter 9 -- Deploy on Local Machine](images/AzureLabs-Lab6-62.png)
 
 4.  You will now need to restore any packages to your solution.
     Right-click on your **Solution**, and click **Restore NuGet Packages
@@ -1015,7 +1025,7 @@ To deploy to Local Machine:
 6.  Your App should now appear in the list of installed apps, ready to
     be launched.
 
-    ![Step 9 -- Deploy on Local Machine](images/AzureLabs-Lab6-63.png)
+    ![Chapter 9 -- Deploy on Local Machine](images/AzureLabs-Lab6-63.png)
 
 When you run the Mixed Reality application, you will you be within the
 **InsideOutSphere** model which you used within your app. This sphere

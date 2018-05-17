@@ -1,7 +1,7 @@
 ---
 title: Azure Lab Mixed Reality - Face Recognition
 description: Azure Lab teaching how to implement Azure Face Recognition within a mixed reality Unity3D Application.
-author: elliotmoule, StefanoDeflorio, drneil
+author: v-arood
 ms.author:
 ms.date: 
 keywords: azure, face recognition, mixed reality, unity3d
@@ -29,6 +29,16 @@ This will teach you how to get the results from the Face API Service into your U
 In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
 
 This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
+
+## Device support
+
+<table>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td> Face API</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
 
 ## Prerequisites
 
@@ -63,7 +73,7 @@ For help on Calibration, please follow this [LINK](https://developer.microsoft.c
 
 For help on Sensor Tuning, please follow this [LINK](https://developer.microsoft.com/en-us/windows/mixed-reality/sensor_tuning).
 
-## Step 1 - The Azure Portal
+## Chapter 1 - The Azure Portal
 
 To use the **Face API** service in Azure, you will need to configure an
 instance of the service to be made available to your application.
@@ -142,7 +152,7 @@ instance of the service to be made available to your application.
 > [!NOTE] 
 > Take note of either one of the keys and safeguard it, as you will need it later.
 
-## Step 2 - Using the 'Person Maker' UWP application
+## Chapter 2 - Using the 'Person Maker' UWP application
 
 Make sure to download the prebuilt UWP Application called [**Person Maker**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/PersonMaker.zip). This app is not the end product for this Lab, just a tool to help you create your Azure entries, which the later
 project will rely upon.
@@ -159,7 +169,7 @@ This application uses the **Microsoft.ProjectFaceAnalysis.Face** libraries, whic
 For more information about this library click on the following [LINK](https://blogs.microsoft.com/ai/microsofts-project-FaceAnalysis-helps-developers-build-more-intelligent-apps/).
 
 > [!NOTE] 
-> These are just steps, instructions for how to do these things is further down the document. The **Person Maker** app will allow you to:
+> These are just the steps required, instructions for how to do these things is further down the document. The **Person Maker** app will allow you to:
 >
 > * Create a **Person Group**, which is a group composed of several people which you want to associate with it. With your Azure account you can host multiple Person Groups.
 >
@@ -179,7 +189,7 @@ with the image file size being no larger 4 MB, and no less than 1 KB.
 > [!NOTE]
 > If you are following this tutorial, do not use your own face for training, as when you put the HoloLens on, you cannot look at yourself. Use the face of a colleague or fellow student.
 
-Steps:
+Running Person Maker:
 
 1.  Open the **PersonMaker** folder and double click on the
     **PersonMaker solution** to open it with **Visual Studio 2017**.
@@ -245,7 +255,7 @@ Steps:
 
 Once the process has completed, you are ready to move into Unity.
 
-## Step 3 - Set up the Unity Project
+## Chapter 3 - Set up the Unity Project
 
 The following is a typical set up for developing with mixed reality, and as such, is a good template for other projects.
 
@@ -313,10 +323,10 @@ The following is a typical set up for developing with mixed reality, and as such
 9.	Close the Build Settings window.
 10.	Save your Scene and Project (**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
 
-## Step 4 - Camera Setup
+## Chapter 4 - Camera Setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/Azure-MR-Lab-4.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html). Be aware that this package also includes the import of the ***Newtonsoft DLL***, covered in **Step 5**. With this imported, you can continue from **Step 6**.
+> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/Azure-MR-Lab-4.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html). Be aware that this package also includes the import of the ***Newtonsoft DLL***, covered in **Chapter 5**. With this imported, you can continue from **Chapter 6**.
 
 1.  In the **Hierarchy** Panel, select the ***Main Camera***.
 
@@ -338,10 +348,10 @@ The following is a typical set up for developing with mixed reality, and as such
         ![set up camera components](images/AzureLabs-Lab4-19.png) 
 
 
-## Step 5 – Import the ***Newtonsoft.Json*** library
+## Chapter 5 – Import the ***Newtonsoft.Json*** library
 
 > [!IMPORTANT]
-> If you imported the .unitypackage in the last step, you can skip this step.
+> If you imported the .unitypackage in the last Chapter, you can skip this Chapter.
 
 To help you deserialise and serialise objects received and sent to the Bot Service you need to dowload the ***Newtonsoft.Json*** library. You will find a compatible version already organised with the correct Unity folder structure in a Unity package file [HERE](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/newtonsoftDLL.unitypackage). 
 
@@ -359,7 +369,7 @@ To import the library:
 
 
 
-## Step 6 - Create the ***FaceAnalysis*** class
+## Chapter 6 - Create the ***FaceAnalysis*** class
 
 The purpose of the FaceAnalysis class is to host the methods necessary to communicate with your Azure Face Recognition Service. 
 
@@ -670,7 +680,7 @@ public class IdentifiedPerson_RootObject
 ![Place FaceAnalysis onto the Main Camera](images/AzureLabs-Lab4-23.png)
 
 
-## Step 7 - Create the ***ImageCapture*** class
+## Chapter 7 - Create the ***ImageCapture*** class
 
 The purpose of the ImageCapture class is to host the methods necessary to communicate with your Azure Face Recognition Service to analyse the image you will capture, identifying faces in it and determining if it belongs to a known person. If a known person is found, this class will display its name as UI text in the scene.
 
@@ -813,13 +823,13 @@ using UnityEngine.XR.WSA.WebCam;
 
 9. Remember to **Save** the changes before going back to the Unity Editor.
 
-## Step 8 - Building the Solution
+## Chapter 8 - Building the Solution
 
 To perform a thorough test of your application you will need to sideload it onto your HoloLens.
 
 Before you do, ensure that:
 
--	All the settings mentioned in the Step 3 are set correctly. 
+-	All the settings mentioned in the Chapter 3 are set correctly. 
 -	The script **FaceAnalysis** is attached to the Main Camera object. 
 -	Both the **Auth Key** and **Group Id** have been set within the **FaceAnalysis** script.
 
@@ -842,7 +852,7 @@ To begin the Build process:
 7.	Open your App folder, and then open the new Project Solution (as seen above, MR_FaceRecognition.sln).
 
 
-## Step 9 - Deploying your Application
+## Chapter 9 - Deploying your Application
 
 To deploy on HoloLens:
 
@@ -866,7 +876,7 @@ To deploy on HoloLens:
 > To deploy to immersive headset, set the **Solution Platform** to *Local Machine*, and set the **Configuration** to *Debug*, with *x86* as the **Platform**. Then deploy to the local machine, using the **Build menu**, selecting *Deploy Solution*. 
 
 
-## Step 10 - Using the Application
+## Chapter 10 - Using the Application
 
 1.  Wearing the HoloLens, launch the app.
 2.  Look at the person that you have registered with the Face Api. Make sure that:

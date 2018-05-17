@@ -1,7 +1,7 @@
 ---
 title: Azure Lab Mixed Reality - Notification Hubs
 description: Azure Lab teaching how to implement Azure Notification Hubs, Azure Functions, Azure Storage and Tables, within a mixed reality Unity3D Application.
-author: elliotmoule, StefanoDeflorio, drneil
+author: v-arood
 ms.author:
 ms.date: 
 keywords: azure, notification hubs, azure storage, azure functions, azure tables, mixed reality, unity3d
@@ -48,6 +48,20 @@ In your application, it is up to you as to how you will integrate the results wi
 
 This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
+## Device support
+
+<table>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td> Azure Notification Hubs</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr><tr>
+<td> Azure Functions</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr><tr>
+<td> Azure Storage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
 ## Prerequisites
 
 For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
@@ -66,7 +80,7 @@ The following hardware and software is required:
 - A PC compatible with Windows mixed reality
 - A subscription to **Azure Notification Hubs**.
 - Internet Access for Azure, and to access Notification Hubs.
-- You must be the **owner** of your Microsoft Developer Portal and your Application Registration Portal, otherwise you will not have permission to access the app in **Step 2**.
+- You must be the **owner** of your Microsoft Developer Portal and your Application Registration Portal, otherwise you will not have permission to access the app in **Chapter 2**.
 
 > [!NOTE] 
 > It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens. 
@@ -75,7 +89,7 @@ The following hardware and software is required:
 
 - To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
 
-## Step 1 - Create an Application on the Microsoft Developer Portal
+## Chapter 1 - Create an Application on the Microsoft Developer Portal
 
 To use the **Azure Notification Hubs** Service, you will need to create
 an Application on the Microsoft Developer Portal, as your application
@@ -98,9 +112,9 @@ notifications.
 
     ![reverse a name](images/AzureLabs-Lab8-02.png)
 
-4.  With the app now created, you are ready to move to the next step.
+4.  With the app now created, you are ready to move to the next Chapter.
 
-## Step 2 - Retrieve your new Apps Credentials
+## Chapter 2 - Retrieve your new Apps Credentials
 
 Log into the Application Registration Portal, where your new app will be
 listed, and retrieve the credentials which will be used to setup the
@@ -112,7 +126,7 @@ listed, and retrieve the credentials which will be used to setup the
 
 > [!WARNING] 
 > You will need to use your Microsoft Account to Login.  
-> This **must** be the Microsoft Account which you used in the previous step, with the Windows Store Developer portal.
+> This **must** be the Microsoft Account which you used in the previous Chapter, with the Windows Store Developer portal.
 
 2.  You will find your app under the **My applications** section. Once
     you have found it, click on it and you will be taken to a new page
@@ -123,11 +137,11 @@ listed, and retrieve the credentials which will be used to setup the
 3.  Scroll down the registration page to find your **Application
     Secrets** section and the **Package SID** for your app. Copy both
     for use with setting up the **Azure Notification Hubs Service** in
-    the next step.
+    the next Chapter.
 
     ![application secrets](images/AzureLabs-Lab8-05.png)
 
-## Step 3 - Setup Azure Portal: Create Notification Hubs Service
+## Chapter 3 - Setup Azure Portal: Create Notification Hubs Service
 
 With your apps credentials retrieved, you will need to go to the Azure Portal,
 where you will create an Azure Notification Hubs Service.
@@ -204,7 +218,7 @@ resource***, in newer portals.
 
     ![copy down security details](images/AzureLabs-Lab8-12.png)
 
-## Step 4 - Setup Azure Portal: Create Table Service
+## Chapter 4 - Setup Azure Portal: Create Table Service
 
 After creating your Notification Hubs Service instance, navigate back to
 your Azure Portal, where you will create an Azure Tables Service by
@@ -281,7 +295,7 @@ resource***, in newer portals.
 
     ![open Tables](images/AzureLabs-Lab8-19.png)
 
-11. A new page will be shown, wherein you need to enter a ***Table name***. This is the name you will use to refer to the data in your application in later steps. Insert an appropriate name and click ***OK***.
+11. A new page will be shown, wherein you need to enter a ***Table name***. This is the name you will use to refer to the data in your application in later Chapters. Insert an appropriate name and click ***OK***.
 
     ![create new table](images/AzureLabs-Lab8-20.png)    
 
@@ -290,7 +304,7 @@ resource***, in newer portals.
     ![new table created](images/AzureLabs-Lab8-21.png)
     
 
-## Step 5 - Completing the Azure Table in Visual Studio
+## Chapter 5 - Completing the Azure Table in Visual Studio
 
 Now that your **Table service** storage account has been setup, it is
 time to add data to it, which will be used to store and retrieve
@@ -320,7 +334,7 @@ Studio**.
 5.  Once expanded, your newly created **Storage account** should be
     available. Click the arrow to the left of your storage, and then
     once that is expanded, find **Tables** and click the arrow next to
-    that, to reveal the **Table** you created in the last step. Double
+    that, to reveal the **Table** you created in the last Chapter. Double
     click your ***Table***.
 
     ![open scene objects table](images/AzureLabs-Lab8-24.png)
@@ -369,9 +383,9 @@ Studio**.
 
     ![table complete](images/AzureLabs-Lab8-30.png)
 
-15. You have completed this step. Make sure to save.
+15. You have completed this Chapter. Make sure to save.
 
-## Step 6 - Create an Azure Function App
+## Chapter 6 - Create an Azure Function App
 
 Create an Azure Function App, which will be called by the Desktop
 application to update the **Table** service and send a notification
@@ -718,7 +732,7 @@ public class UnityGameObject : TableEntity
 31.  The **Outputs** page should now match the below, but with ***your*** information instead. Make sure to press **Save**.
 
 > [!WARNING]
-> *Do not edit the Notification Hub name directly* (should all be done using the **Advanced Editor**, provided you followed the previous steps correctly.
+> *Do not edit the Notification Hub name directly* (this should all be done using the **Advanced Editor**, provided you followed the previous steps correctly.
 
 ![outputs complete](images/AzureLabs-Lab8-50.png)
 
@@ -754,7 +768,7 @@ public class UnityGameObject : TableEntity
 > [!WARNING]
 > If the above test fails, you will need to double check that you have followed the above steps exactly, particularly the settings within the ***integrate panel***. 
 
-## Step 7 - Set up Desktop Unity Project
+## Chapter 7 - Set up Desktop Unity Project
 
 > [!IMPORTANT]
 > The Desktop application which you are now creating, **will not** work in the Unity Editor. It needs to be run outside of the Editor, following the Building of the application, using Visual Studio (or the deployed application). 
@@ -852,9 +866,9 @@ Set up and test your mixed reality immersive headset.
     Project***.
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component for this project (Desktop App), and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%208%20-%20Notification%20Hubs/Azure-MR-Lab-8-Desktop.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Step 9**.  You will still need to add the script components.
+> If you wish to skip the *Unity Set up* component for this project (Desktop App), and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%208%20-%20Notification%20Hubs/Azure-MR-Lab-8-Desktop.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 9**.  You will still need to add the script components.
 
-## Step 8 - Importing the DLLs in Unity
+## Chapter 8 - Importing the DLLs in Unity
 
 You will be using Azure Storage for Unity (which itself leverages the .Net SDK for Azure). You can read more about Azure Storage for Unity [HERE](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity).
 
@@ -901,7 +915,7 @@ exported from Unity.
 > [!NOTE] 
 > We are marking this plugin "Don't process", because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it is not processed.
 
-## Step 9 - Create the TableToScene class in the Desktop Unity Project
+## Chapter 9 - Create the TableToScene class in the Desktop Unity Project
 
 You now need to create the scripts containing the code to run this
 application.
@@ -1110,7 +1124,7 @@ Azure Storage Service, in the Azure Portal (See Image below).
 
     ![add script to main camera](images/AzureLabs-Lab8-71.png)
 
-## Step 10 - Create the CloudScene class in the Desktop Unity Project
+## Chapter 10 - Create the CloudScene class in the Desktop Unity Project
 
 The second script you need to create is **CloudScene**, which is
 responsible for:
@@ -1298,7 +1312,7 @@ using UnityEngine.Networking;
 
         > ![drag cloud script onto main camera](images/AzureLabs-Lab8-75.png)
 
-## Step 11 - Build the Desktop Project to UWP
+## Chapter 11 - Build the Desktop Project to UWP
 
 Everything needed for the Unity section of this project has now been
 completed.
@@ -1323,9 +1337,9 @@ completed.
 
 4.  Following build, **File Explorer** will appear showing you the
     location of your new project. No need to open it, though, as you
-    need to create the other Unity project first, in the next few steps.
+    need to create the other Unity project first, in the next few Chapters.
 
-## Step 12 - Set up Mixed Reality Unity Project
+## Chapter 12 - Set up Mixed Reality Unity Project
 
 The following is a typical set up for developing with the mixed reality,
 and as such, is a good template for other projects.
@@ -1424,9 +1438,9 @@ and as such, is a good template for other projects.
     Project***.
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component for this project (mixed reality App), and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%208%20-%20Notification%20Hubs/Azure-MR-Lab-8-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Step 14**. You will still need to add the script components.
+> If you wish to skip the *Unity Set up* component for this project (mixed reality App), and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%208%20-%20Notification%20Hubs/Azure-MR-Lab-8-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 14**. You will still need to add the script components.
 
-### **Step 13 - Importing the DLLs in the Mixed Reality Unity Project**
+### **Chapter 13 - Importing the DLLs in the Mixed Reality Unity Project**
 
 You will be using Azure Storage for Unity library (which uses the .Net
 SDK for Azure). You can read more about Azure Storage for Unity
@@ -1439,7 +1453,7 @@ To import the SDK into your own project, make sure you have downloaded
 the latest [.unitypackage](https://aka.ms/azstorage-unitysdk). Then, do
 the following:
 
-1.  Add the .unitypackage you downloaded in the first step to Unity by
+1.  Add the .unitypackage you downloaded from the above, to Unity by
     using the ***Assets > Import Package > Custom Package*** menu
     option.
 
@@ -1484,16 +1498,15 @@ the following:
 > [!NOTE] 
 > You are marking this plugin "Don't process" because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it isn't processed.
 
-## Step 14 - Creating the ***TableToScene*** class in the Mixed Reality Unity Project
+## Chapter 14 - Creating the ***TableToScene*** class in the Mixed Reality Unity Project
 
-The ***TableToScene*** class is identical to the one explained in **Step
-9**. Create the same class in the mixed reality Unity Project following
-the same procedure explained in **Step 9**.
+The ***TableToScene*** class is identical to the one explained in **Chapter 9**. Create the same class in the mixed reality Unity Project following
+the same procedure explained in **Chapter 9**.
 
-Once you have completed this step, both of your ***Unity Projects***
+Once you have completed this Chapter, both of your ***Unity Projects***
 will have this class set up on the Main Camera.
 
-## Step 15 - Creating the ***NotificationReceiver*** class in the Mixed Reality Unity Project
+## Chapter 15 - Creating the ***NotificationReceiver*** class in the Mixed Reality Unity Project
 
 The second script you need to create is ***NotificationReceiver***,
 which is responsible for:
@@ -1702,9 +1715,9 @@ using Windows.Networking.PushNotifications;
 > - Clear Flags: Solid Color
 > - Background: Black
 
-## Step 16 - Build the Mixed Reality Project to UWP
+## Chapter 16 - Build the Mixed Reality Project to UWP
 
-This step is identical to build process for the previous project
+This Chapter is identical to build process for the previous project
 
 Everything needed for the Unity section of this project has now been
 completed, so it is time to build it from Unity.
@@ -1733,10 +1746,10 @@ completed, so it is time to build it from Unity.
 5.  Following the build, a **File Explorer** window will open at the
     location of your new project.
 
-## Step 17 - Add NuGet Packages to the *UnityMRNotifHub* Solution
+## Chapter 17 - Add NuGet Packages to the *UnityMRNotifHub* Solution
 
 > [!WARNING] 
-> Please remember that, once you add the following NuGet Packages (and uncomment the code in the next Step), the Code, when reopened within the Unity Project,
+> Please remember that, once you add the following NuGet Packages (and uncomment the code in the next Chapter), the Code, when reopened within the Unity Project,
 will present errors. If you wish to go back and continue editing in the Unity Editor, you will need comment that errosome code, and then uncomment again later, once 
 you are back in Visual Studio. 
 
@@ -1778,7 +1791,7 @@ To import the NuGet package:
     commented code you entered in the **NotificationReciever** class and
     remove the comments..
 
-## Step 18 - Edit *UnityMRNotifHub* Application, ***NotificationReciever*** Class
+## Chapter 18 - Edit *UnityMRNotifHub* Application, ***NotificationReciever*** Class
 
 Following having added the **NuGet Packages**, you will need to *uncomment* some of the code within the ***NotificationReciever*** class.
 
@@ -1846,9 +1859,9 @@ using Microsoft.WindowsAzure.Messaging;
     }
 ```
 
-With these uncommented, ensure that you save, and then proceed to the next step.
+With these uncommented, ensure that you save, and then proceed to the next Chapter.
 
-## Step 19 - Associate the *Mixed Reality* project to the Store App
+## Chapter 19 - Associate the *Mixed Reality* project to the Store App
 
 You now need to associate the **mixed reality** project to the Store App
 you created in at the start of the lab.
@@ -1881,9 +1894,9 @@ you created in at the start of the lab.
 7.  Your App is now **Associated** with the Store App. This is necessary
     for enabling Notifications.
 
-## Step 20 - Deploy *UnityMRNotifHub* and *UnityDesktopNotifHub* Applications
+## Chapter 20 - Deploy *UnityMRNotifHub* and *UnityDesktopNotifHub* Applications
 
-This step may be easier with two people, as the result will include both
+This Chapter may be easier with two people, as the result will include both
 apps running, one running on your computer Desktop, and the other within
 your immersive headset.
 

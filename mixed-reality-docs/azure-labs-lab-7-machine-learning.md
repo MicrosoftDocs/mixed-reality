@@ -1,7 +1,7 @@
 ---
 title: Azure Lab Mixed Reality - Machine Learning
 description: Azure Lab teaching how to implement Machine Learning Studio within a mixed reality Unity3D Application.
-author: elliotmoule, StefanoDeflorio, drneil
+author: v-arood
 ms.author:
 ms.date: 
 keywords: azure, machine learning, mixed reality, unity3d
@@ -25,6 +25,18 @@ Having completed this lab, you will have a mixed reality immersive headset appli
 In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
 
 This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
+
+## Device support
+
+<table>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td> Azure Machine Learning Studio</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr><tr>
+<td> Azure Storage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
 
 ## Prerequisites
 
@@ -51,7 +63,7 @@ The following hardware and software is required:
 
 To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time). 
 
-## Step 1 - Azure Storage Account Setup
+## Chapter 1 - Azure Storage Account Setup
 
 To use the Azure Translator API, you will need to configure an instance of the service to be made available to your application.
 1.	Log in to the  [Azure Portal](https://portal.azure.com).
@@ -103,7 +115,7 @@ To use the Azure Translator API, you will need to configure an instance of the s
 
     ![Azure Storage Account Setup](images/AzureLabs-Lab7-4.png)
 
-## Step 2 - The Azure Machine Learning Studio
+## Chapter 2 - The Azure Machine Learning Studio
 
 To use the **Azure Machine Learning**, you will need to configure an instance of the Machine Learning service to be made available to your application.
 
@@ -133,10 +145,10 @@ To use the **Azure Machine Learning**, you will need to configure an instance of
         creating a new Resource Group). The location would ideally be in the
         region where the application would run. Some Azure assets are only
         available in certain regions. You should use the same resource group
-        that you used for creating the Azure Storage in the previous step.
+        that you used for creating the Azure Storage in the previous Chapter.
 
     5.  For the **Storage account** section, click **Use existing**, then
-        click the dropdown menu, and from there, click the **Storage Account** you created in the last step.
+        click the dropdown menu, and from there, click the **Storage Account** you created in the last Chapter.
 
     6.  Select the appropriate **Workspace pricing tier** for you, from the
         dropdown menu.
@@ -180,7 +192,7 @@ To use the **Azure Machine Learning**, you will need to configure an instance of
 
     ![The Azure Machine Learning Studio](images/AzureLabs-Lab7-10.png)
 
-## Step 3 - The Machine Learning Studio: Dataset setup
+## Chapter 3 - The Machine Learning Studio: Dataset setup
 
 One of the ways Machine Learning algorithms work is by analyzing
 existing data and then attempting to predict future results based on the
@@ -229,7 +241,7 @@ This sample table contains 9998 entries.
     5.  Press the tick in the bottom right of the upload window, and your
         **Dataset** will be uploaded.
 
-## Step 4 - The Machine Learning Studio: The Experiment
+## Chapter 4 - The Machine Learning Studio: The Experiment
 
 Before you can build your machine learning system, you will need to
 build an experiment, to validate your theory about your data. With the
@@ -409,9 +421,9 @@ top menu.
 The **Consumption** Info page will display the information you will need
 to call the web service from your code. Take a copy of the **Primary
 Key** and the **Request-Response** URL. You will need these in the next
-step.
+Chapter.
 
-## Step 5 - Setting up the Unity Project
+## Chapter 5 - Setting up the Unity Project
 
 Set up and test your Mixed Reality Immersive Headset.
 
@@ -489,7 +501,7 @@ Set up and test your Mixed Reality Immersive Headset.
 7.	Close the Build Settings window.
 8.	Save your Project (**FILE > SAVE PROJECT**).
 
-## Step 6 - Importing the MLProducts Unity Package
+## Chapter 6 - Importing the MLProducts Unity Package
 
 For this Lab, you will need to download a Unity Asset Package called
 [**Azure-MR-Lab-7.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%207%20-%20Machine%20Learning/Azure-MR-Lab-7.unitypackage). This package comes complete with a scene, with all objects in that prebuilt, so you can focus on getting it all working. The ***ShelfKeeper*** script is provided, though only holds the public variables, for the purpose of scene setup structure. You will need to do all other sections.
@@ -523,7 +535,7 @@ To import this package:
 
     ![Importing the MLProducts Unity Package](images/AzureLabs-Lab7-44.png)
 
-## Step 7 - Checking the DLLs in Unity
+## Chapter 7 - Checking the DLLs in Unity
 
 To leverage the use of JSON libraries (used for serializing and deserializing), a Newtonsoft DLL has been implemented with the package you brought in. The library should have the correct configuration, though it is worth checking (particularly if you are having issues with code not working). 
 
@@ -533,7 +545,7 @@ To do so:
 
     ![Importing the DLLs in Unity](images/AzureLabs-Lab7-48.png)
 
-## Step 8 - Create the ***ShelfKeeper*** class
+## Chapter 8 - Create the ***ShelfKeeper*** class
 
 The ***ShelfKeeper*** class hosts methods that control the UI and
 products spawned in the scene.
@@ -621,7 +633,7 @@ public class ShelfKeeper : MonoBehaviour
 > 
 >     ![Create the ShelfKeeper class](images/AzureLabs-Lab7-52.png)
 
-## Step 9 - Create the ***ProductPrediction*** class
+## Chapter 9 - Create the ***ProductPrediction*** class
 
 The next class you are going to create is the ***ProductPrediction*** class.
 
@@ -931,7 +943,7 @@ using System.Collections;
 15. Save your scene and project ***File*** > ***Save Scene* / *File*** >
     ***Save Project***.
 
-## Step 10 - Build the UWP Solution
+## Chapter 10 - Build the UWP Solution
 
 It is now time to build your project as a UWP solution, so that it can run as a standalone application.
 
@@ -966,7 +978,7 @@ To Build:
 
 9.  Once Unity has finished building (it might take some time), it will open a **File Explorer** window at the location of your build (check your task bar, as it may not always appear above your windows, but will notify you of the addition of a new window).
 
-## Step 11 - Deploy your Application
+## Chapter 11 - Deploy your Application
 
 To deploy your application:
 
