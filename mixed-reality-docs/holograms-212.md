@@ -29,6 +29,9 @@ In [Holograms 101](holograms-101.md), we used the KeywordRecognizer to build two
 
 In this course, we'll revisit Model Explorer, which we built in [Holograms 210](holograms-210.md) and [Holograms 211](holograms-211.md).
 
+>[!IMPORTANT]
+>The videos embedded in each of the chapters below were recorded using an older version of Unity and the Mixed Reality Toolkit. While the step-by-step instructions are accurate and current, you may see scripts and visuals in the corresponding videos that are out-of-date. The videos remain included for posterity and because the concepts covered still apply.
+
 ## Getting Started
 
 ### Prerequisites
