@@ -1,16 +1,16 @@
 ---
-title: Azure Lab Mixed Reality - Computer Vision API
+title: MR and Azure 302 - Computer vision
 description: Azure Lab teaching how to implement Azure Computer Vision API within a mixed reality Unity3D Application.
-author: v-arood
-ms.author:
-ms.date: 
-keywords: azure, computer vision, mixed reality, unity3d
+author: drneil
+ms.author: v-arood
+ms.date: 05/18/2018
+keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, hololens, immersive, vr
 ---
 
 
-# Lab 2. Computer Vision API capabilities with HoloLens
+# MR and Azure 302: Computer vision
 
-In this Lab, you will learn how to add Computer Vision API capabilities to a **mixed reality Application** using Azure Cognitive Services, with the Microsoft Computer Vision API.
+In this course, you will learn how to add Computer Vision API capabilities to a mixed reality application using Azure Cognitive Services, with the Microsoft Computer Vision API.
 
 ![lab outcome](images/AzureLabs-Lab2-000.png)
 
@@ -30,9 +30,9 @@ This Lab is a self-contained tutorial, which doesn’t directly involve any othe
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Computer Vision API Version 2.0</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 302: Computer vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
