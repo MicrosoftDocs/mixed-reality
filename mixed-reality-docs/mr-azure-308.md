@@ -1,18 +1,17 @@
 ---
-title: Azure Lab Mixed Reality - Notification Hubs
+title: MR and Azure 308 - Cross-device notifications
 description: Azure Lab teaching how to implement Azure Notification Hubs, Azure Functions, Azure Storage and Tables, within a mixed reality Unity3D Application.
-author: v-arood
-ms.author:
-ms.date: 
-keywords: azure, notification hubs, azure storage, azure functions, azure tables, mixed reality, unity3d
+author: drneil
+ms.author: v-arood
+ms.date: 05/18/2018
+keywords: azure, mixed reality, academy, unity, tutorial, api, notification, functions, tables, notification hubs, hololens, immersive, vr
 ---
 
-# Lab 8. Send and Receive Notifications with Immersive Headsets
+# MR and Azure 308: Cross-device notifications
 
 ![final product -start](images/AzureLabs-Lab8-00.png)
 
-In this Lab, you will learn how to add ***Notification Hubs*** capabilities to a
-mixed reality Application using **Azure Notification Hubs**, **Azure Tables**, and **Azure Functions**.
+In this course, you will learn how to add Notification Hubs capabilities to a mixed reality application using Azure Notification Hubs, Azure Tables, and Azure Functions.
 
 **Azure Notification Hubs** is a Microsoft service, which allows developers 
 to send targeted and personalized push notifications to any platform, all powered within the cloud. 
@@ -52,13 +51,9 @@ This Lab is a self-contained tutorial, which does not directly involve any other
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Azure Notification Hubs</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr><tr>
-<td> Azure Functions</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr><tr>
-<td> Azure Storage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 308: Cross-device notifications</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
