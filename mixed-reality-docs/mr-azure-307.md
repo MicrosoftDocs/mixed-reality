@@ -1,18 +1,17 @@
 ---
-title: Azure Lab Mixed Reality - Machine Learning
+title: MR and Azure 307 - Machine learning
 description: Azure Lab teaching how to implement Machine Learning Studio within a mixed reality Unity3D Application.
-author: v-arood
-ms.author:
-ms.date: 
-keywords: azure, machine learning, mixed reality, unity3d
+author: drneil
+ms.author: v-arood
+ms.date: 05/18/2018
+keywords: azure, mixed reality, academy, unity, tutorial, api, machine learning, ml, machine learning studio, hololens, immersive, vr
 ---
 
-# Lab 7. Machine Learning Studio with Immersive Headsets
+# MR and Azure 307: Machine learning
 
 ![final product -start](images/AzureLabs-Lab7-0.png)
 
-In this Lab, you will learn how to add Machine Learning (ML)
-capabilities to a Mixed Reality Application using **Azure Machine Learning Studio**.
+In this course, you will learn how to add Machine Learning (ML) capabilities to a mixed reality application using Azure Machine Learning Studio.
 
 **Azure Machine Learning Studio** is a Microsoft service, which provides developers with a large number of machine learning algorithms, which can help with data input, output, preparation, and visualization. From these components, it is then possible to develop a predictive analytics experiment, iterate on it, and use it to train your model. Following training, you can make your model operational within the Azure cloud, so that it can then score new data. For more information, visit the [Azure Machine Learning Studio page](https://azure.microsoft.com/en-au/services/machine-learning-studio/).
 
@@ -30,11 +29,9 @@ This Lab is a self-contained tutorial, which does not directly involve any other
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Azure Machine Learning Studio</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr><tr>
-<td> Azure Storage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 307: Machine learning</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
