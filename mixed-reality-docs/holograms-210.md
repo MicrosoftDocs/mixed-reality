@@ -147,6 +147,8 @@ If deploying to an immersive headset:
 
 ## Chapter 2 - Cursor and target feedback
 
+[!VIDEO https://www.youtube.com/embed/S24u0V_T7ZI]
+
 ### Objectives
 
 * Cursor visual design and behavior.
@@ -213,6 +215,8 @@ void IFocusable.OnFocusExit()
 
 ## Chapter 3 - Targeting Techniques
 
+[!VIDEO https://www.youtube.com/embed/TFnuLva4VJ0]
+
 ### Objectives
 
 * Make it easier to target holograms.
@@ -271,6 +275,8 @@ We will be using the **Billboard.cs** file to keep a GameObject oriented such th
 7. Delete the script from the **AstroMan** for now.
 
 ## Chapter 6 - Tag-Along
+
+[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
 
 ### Objectives
 
