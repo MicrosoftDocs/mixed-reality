@@ -34,7 +34,7 @@ This Lab is a self-contained tutorial, which does not directly involve any other
 <tr>
 <th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 306: Streaming video</td><td style="text-align: center;"> X</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 306: Streaming video</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
