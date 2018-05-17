@@ -1,18 +1,17 @@
 ---
-title: Azure Lab Mixed Reality - Media Services
+title: MR and Azure 306 - Streaming video
 description: Azure Lab teaching how to implement Azure Media Services within a mixed reality Unity3D Application.
-author: v-arood
-ms.author:
-ms.date: 
-keywords: azure, media services, mixed reality, unity3d
+author: drneil
+ms.author: v-arood
+ms.date: 05/18/2018
+keywords: azure, mixed reality, academy, unity, tutorial, api, media services, streaming video, 360, immersive, vr
 ---
-# **Lab 6. Media Service with Immersive Headsets**
+# MR and Azure 306: Streaming video
 
 ![final product -start](images/AzureLabs-Lab6-00.png)
 ![final product -start](images/AzureLabs-Lab6-01.png)
 
-In this Lab you will learn how connect your **Azure Media Services** 
-to a Mixed Reality Application. 
+In this course you will learn how connect your Azure Media Services to a Windows Mixed Reality VR experience to allow streaming 360 degree video playback on immersive headsets. 
 
 **Azure Media Services** are a collection of services that gives 
 you broadcast-quality video streaming services to reach larger
@@ -33,9 +32,9 @@ This Lab is a self-contained tutorial, which does not directly involve any other
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Azure Media Services</td><td style="text-align: center;"> X</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 306: Streaming video</td><td style="text-align: center;"> X</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
