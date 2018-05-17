@@ -13,7 +13,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 The Mixed Reality Academy is a set of step-by-step tutorials with corresponding project files: 
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
-* Most courses cover concepts applicable to both Hololens and immersive (VR) headsets. 
+* Most courses cover concepts applicable to both HoloLens and immersive (VR) headsets. 
 * Each tutorial is organized by chapter, and most include video demonstrations of the key concepts. 
 * A Windows 10 PC with the correct [tools installed](install-the-tools.md) is a common prerequiste to complete each tutorial.
 
