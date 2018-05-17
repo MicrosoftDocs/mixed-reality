@@ -1,15 +1,15 @@
 ---
-title: Azure Lab Mixed Reality - Language Understanding Intelligence Service (LUIS)
+title: MR and Azure 303 - Natural language understanding (LUIS)
 description: Azure Lab teaching how to implement an Azure LUIS service with a mixed reality Unity3D Application.
-author: v-arood
-ms.author:
-ms.date: 
-keywords: azure, language understanding intelligence service, luis, mixed reality, unity3d
+author: drneil
+ms.author: v-arood
+ms.date: 05/18/2018
+keywords: azure, mixed reality, academy, unity, tutorial, api, language understanding intelligence service, luis, hololens, immersive, vr
 ---
 
-# Lab 3. LUIS integration with Immersive Headsets
+# MR and Azure 303: Natural language understanding (LUIS)
 
-In this Lab, you will learn how to integrate Language Understanding into a mixed reality application using **Azure Cognitive Services**, with the **Language Understanding API**.
+In this course, you will learn how to integrate Language Understanding into a mixed reality application using Azure Cognitive Services, with the Language Understanding API.
 
 ![Lab outcome](images/AzureLabs-Lab3-000.png)
 
@@ -33,9 +33,9 @@ Be prepared to Train LUIS several times, which is covered in **Chapter 12**. You
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td>Language Understanding (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR and Azure 303: Natural language understanding (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
