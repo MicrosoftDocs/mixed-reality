@@ -4,7 +4,7 @@ description: Azure Lab teaching how to implement Azure Computer Vision API withi
 author: drneil
 ms.author: v-arood
 ms.date: 05/18/2018
-keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, hololens, immersive, vr
+keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr
 ---
 
 
