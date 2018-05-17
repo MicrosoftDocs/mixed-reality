@@ -229,7 +229,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li> 
                                  <li>
-                                   <a href="replace-this.md" title="MR and Azure 301" data-linktype="absolute-path">
+                                   <a href="mr-azure-301.md" title="MR and Azure 301" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -248,7 +248,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li>
                                  <li>
-                                   <a href="replace-this.md" title="MR and Azure 302" data-linktype="absolute-path">
+                                   <a href="mr-azure-302.md" title="MR and Azure 302" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -267,7 +267,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li>
                                  <li>
-                                   <a href="replace-this.md" title="MR and Azure 303" data-linktype="absolute-path">
+                                   <a href="mr-azure-303.md" title="MR and Azure 303" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -286,7 +286,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li>
                                  <li>
-                                   <a href="replace-this.md" title="MR and Azure 304" data-linktype="absolute-path">
+                                   <a href="mr-azure-304.md" title="MR and Azure 304" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -305,7 +305,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li>
                                  <li>
-                                   <a href="replace-this.md" title="MR and Azure 305" data-linktype="absolute-path">
+                                   <a href="mr-azure-305.md" title="MR and Azure 305" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -324,7 +324,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li>
                                  <li>
-                                   <a href="replace-this.md" title="MR and Azure 306" data-linktype="absolute-path">
+                                   <a href="mr-azure-306.md" title="MR and Azure 306" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -343,7 +343,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li>
                                  <li>
-                                   <a href="replace-this.md" title="MR and Azure 307" data-linktype="absolute-path">
+                                   <a href="mr-azure-307.md" title="MR and Azure 307" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -362,7 +362,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li>
                                  <li>
-                                   <a href="replace-this.md" title="MR and Azure 308" data-linktype="absolute-path">
+                                   <a href="mr-azure-308.md" title="MR and Azure 308" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
