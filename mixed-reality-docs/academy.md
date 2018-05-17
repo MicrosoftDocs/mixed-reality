@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Academy
+title: Academy - code, tutorials, and lessons
 description: The Mixed Reality Academy provides code samples and tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
@@ -9,11 +9,12 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---
 
-# Academy: Code, tutorials and lessons
+# Academy: code, tutorials, and lessons
 
-The Mixed Reality Academy is a set of step-by-step tutorials: 
-* The tutorials are divided by 100 and 200 level topics. Most of them apply to both Hololens and immersive devices. 
-* Each tutorial is organized by chapter and includes video demonstrations of the key concepts. 
+The Mixed Reality Academy is a set of step-by-step tutorials with corresponding project files: 
+* The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
+* Most courses cover concepts applicable to both Hololens and immersive (VR) headsets. 
+* Each tutorial is organized by chapter, and most include video demonstrations of the key concepts. 
 * A Windows 10 PC with the correct [tools installed](install-the-tools.md) is a common prerequiste to complete each tutorial.
 
 <br>
