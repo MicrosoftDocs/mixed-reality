@@ -90,6 +90,11 @@ using UnityEngine;
        }
    }
 ```
+### Spatial Sound in Mixed Reality Toolkit
+- [HoloToolkit-Examples/SpatialSound/Scenes/UAudioManagerTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/SpatialSound/Scenes/UAudioManagerTest.unity)
+- [HoloToolkit-Examples/SpatialSound/Scenes/AudioOcclusionTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/SpatialSound/Scenes/AudioOcclusionTest.unity)
+
+If you don't want to use the excellent Audio tools in the MixedRealityToolkit, here is how you would change HRTF Parameters. You can copy/paste this
 
 ## See also
 * [Spatial sound](spatial-sound.md)
