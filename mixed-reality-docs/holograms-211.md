@@ -90,7 +90,7 @@ If deploying to an immersive headset:
 
 ## Chapter 1 - Hand detected feedback
 
-[!VIDEO https://www.youtube.com/embed/D1FcIyuFTZQ]
+>[!VIDEO https://www.youtube.com/embed/D1FcIyuFTZQ]
 
 ### Objectives
 
@@ -137,7 +137,7 @@ The **Cursor State Data** works like this:
 
 ## Chapter 2 - Navigation
 
-[!VIDEO https://www.youtube.com/embed/sm-kxtKksSo]
+>[!VIDEO https://www.youtube.com/embed/sm-kxtKksSo]
 
 ### Objectives
 
@@ -280,7 +280,7 @@ You'll notice that the other navigation events are already filled in with some i
 
 ## Chapter 3 - Hand Guidance
 
-[!VIDEO https://www.youtube.com/embed/ULzlVw4e14I]
+>[!VIDEO https://www.youtube.com/embed/ULzlVw4e14I]
 
 ### Objectives
 
@@ -305,7 +305,7 @@ You'll notice that the other navigation events are already filled in with some i
 
 ## Chapter 4 - Manipulation
 
-[!VIDEO https://www.youtube.com/embed/f3m8MvU60-I]
+>[!VIDEO https://www.youtube.com/embed/f3m8MvU60-I]
 
 ### Objectives
 
@@ -472,7 +472,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ## Chapter 5 - Model expansion
 
-[!VIDEO https://www.youtube.com/embed/dA11P4P0VO8]
+>[!VIDEO https://www.youtube.com/embed/dA11P4P0VO8]
 
 ### Objectives
 

@@ -147,7 +147,7 @@ If deploying to an immersive headset:
 
 ## Chapter 2 - Cursor and target feedback
 
-[!VIDEO https://www.youtube.com/embed/S24u0V_T7ZI]
+>[!VIDEO https://www.youtube.com/embed/S24u0V_T7ZI]
 
 ### Objectives
 
@@ -215,7 +215,7 @@ void IFocusable.OnFocusExit()
 
 ## Chapter 3 - Targeting Techniques
 
-[!VIDEO https://www.youtube.com/embed/TFnuLva4VJ0]
+>[!VIDEO https://www.youtube.com/embed/TFnuLva4VJ0]
 
 ### Objectives
 
@@ -276,7 +276,7 @@ We will be using the **Billboard.cs** file to keep a GameObject oriented such th
 
 ## Chapter 6 - Tag-Along
 
-[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
+>[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
 
 ### Objectives
 

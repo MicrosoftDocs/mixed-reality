@@ -97,7 +97,7 @@ If deploying to an immersive headset:
 
 ## Chapter 1 - Awareness
 
-[!VIDEO https://www.youtube.com/embed/fDwijJWuEc0]
+>[!VIDEO https://www.youtube.com/embed/fDwijJWuEc0]
 
 ### Objectives
 
