@@ -36,7 +36,6 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 ### Project files
 
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-211-Gesture.zip) required by the project. Requires Unity 2017.2 or later.
-  * If you still need older Unity support or would like to access the previous version of this Academy course, please see the [Holograms 211 archive](holograms-211-archive.md).
 * Un-archive the files to your desktop or other easy to reach location.
 
 ### Errata and Notes
@@ -85,9 +84,13 @@ If deploying to an immersive headset:
 2. Make sure the deployment target is set to **Local Machine**.
 3. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**.
 4. When the app has deployed, dismiss the **Fitbox** by pulling the trigger on a motion controller.
-* **Note,** you might notice some red errors in the Visual Studio Errors panel. It is safe to ignore them. Switch to the Output panel to view actual build progress. Errors in the Output panel will require you to make a fix (most often they are caused by a mistake in a script).
+
+>[!NOTE]
+>You might notice some red errors in the Visual Studio Errors panel. It is safe to ignore them. Switch to the Output panel to view actual build progress. Errors in the Output panel will require you to make a fix (most often they are caused by a mistake in a script).
 
 ## Chapter 1 - Hand detected feedback
+
+[!VIDEO https://www.youtube.com/embed/D1FcIyuFTZQ]
 
 ### Objectives
 
@@ -133,6 +136,8 @@ The **Cursor State Data** works like this:
 * If you're on an immersive headset, you'll have to connect and disconnect your controller. This feedback becomes less interesting on an immersive device, as a connected controller will always be "available".
 
 ## Chapter 2 - Navigation
+
+[!VIDEO https://www.youtube.com/embed/sm-kxtKksSo]
 
 ### Objectives
 
@@ -275,6 +280,8 @@ You'll notice that the other navigation events are already filled in with some i
 
 ## Chapter 3 - Hand Guidance
 
+[!VIDEO https://www.youtube.com/embed/ULzlVw4e14I]
+
 ### Objectives
 
 * Use **hand guidance score** to help predict when hand tracking will be lost.
@@ -297,6 +304,8 @@ You'll notice that the other navigation events are already filled in with some i
 * As your hand nears the edge of the gesture frame, an arrow should appear next to the cursor to warn you that hand tracking will be lost. The arrow indicates which direction to move your hand in order to prevent tracking from being lost.
 
 ## Chapter 4 - Manipulation
+
+[!VIDEO https://www.youtube.com/embed/f3m8MvU60-I]
 
 ### Objectives
 
@@ -462,6 +471,8 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * Say 'Rotate Astronaut' to return to the rotatable state.
 
 ## Chapter 5 - Model expansion
+
+[!VIDEO https://www.youtube.com/embed/dA11P4P0VO8]
 
 ### Objectives
 
