@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 301: Language translation
+title: MR and Azure 301 - Language translation
 description: Azure Lab teaching how to implement Azure Translator Text API within a mixed reality Unity3D Application.
 author: drneil
 ms.author: v-arood
