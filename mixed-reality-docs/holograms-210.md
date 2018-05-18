@@ -10,11 +10,11 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 # MR Input 210: Gaze
 
-[Gaze](gaze.md) is the first form of input and reveals the user's intent and awareness. Holograms 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Mixed Reality. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
+[Gaze](gaze.md) is the first form of input and reveals the user's intent and awareness. MR Input 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Mixed Reality. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
 
 >[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]
 
-We have a friendly astronaut here to help you learn gaze concepts. In [Holograms 101](holograms-101.md), we had a simple cursor that just followed your gaze. Today we're moving a step beyond the simple cursor:
+We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics 101](holograms-101.md), we had a simple cursor that just followed your gaze. Today we're moving a step beyond the simple cursor:
 
 * We're making the cursor and our holograms gaze-aware: both will change based on where the user is looking - or where the user is *not* looking. This makes them context-aware.
 * We will add feedback to our cursor and holograms to give the user more context on what is being targeted. This feedback can be audio and visual.
