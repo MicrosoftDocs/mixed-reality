@@ -1,5 +1,5 @@
 ---
-title: MR Input 212: Voice
+title: MR Input 212 - Voice
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of voice concepts.
 author: keveleigh
 ms.author: kurtie
