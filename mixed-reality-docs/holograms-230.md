@@ -1,5 +1,5 @@
 ---
-title: Holograms 230
+title: MR Spatial 230 - Spatial mapping
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of spatial mapping concepts.
 author: keveleigh
 ms.author: kurtie
@@ -10,7 +10,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 
 
-# Holograms 230
+# MR Spatial 230: Spatial mapping
 
 [Spatial mapping](spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment. In Holograms 230 (Project Planetarium) we'll learn how to:
 * Scan the environment and transfer data from the HoloLens to your development machine.
@@ -21,23 +21,38 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 >[!VIDEO https://www.youtube.com/embed/NSNYRkUX6Mw]
 
-**Prerequisites**
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Spatial 230: Spatial mapping</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+</tr>
+</table>
+
+## Before you start
+
+### Prerequisites
+
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
 * You should have completed [Holograms 101](holograms-101.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
-**Project files**
+### Project files
+
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) required by the project. Requires Unity 2017.2 or later.
     * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).
     * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).
     * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).
 * Unarchive the files to your desktop or other easy to reach location.
 
-**Notes**
+### Notes
+
 * "Enable Just My Code" in Visual Studio needs to be disabled (*unchecked*) under Tools > Options > Debugging in order to hit breakpoints in your code.
 
-## Unity Setup
+## Unity setup
 
 >[!VIDEO https://www.youtube.com/embed/y2Y4LhK6TEM]
 
