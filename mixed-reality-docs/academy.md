@@ -163,7 +163,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                               </div>
                                           </div>
                                           <div class="cardText">
-                                              <h3>MR Spatial: Spatial sound</h3>
+                                              <h3>MR Spatial 220: Spatial sound</h3>
                                               <p>Spatial sound breathes life into holograms and gives them presence. In this course, you will learn to use spatial sound to ground holograms in the surrounding world, give feedback during interactions, and use audio to find your holograms.</p>
                                           </div>
                                       </div>
