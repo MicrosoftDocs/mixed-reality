@@ -1,5 +1,5 @@
 ---
-title: Holograms 211
+title: MR Input 211 - Gesture
 description: Follow this coding walkthrough using Unity, Visual Studio, and HoloLens to learn the details of gesture concepts.
 author: keveleigh
 ms.author: kurtie
@@ -8,32 +8,42 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, gesture
 ---
 
-# Holograms 211
+# MR Input 211: Gesture
 
 [Gestures](gestures.md) turn user intention into action. With gestures, users can interact with holograms. In this course, we'll learn how to track the user's hands, respond to user input, and give feedback to the user based on hand state and location.
 
 >[!VIDEO https://www.youtube.com/embed/c9zlpfFeEtc]
 
-In [Holograms 101](holograms-101.md), we used a simple air-tap gesture to interact with our holograms. Now, we'll move beyond the air-tap gesture and explore new concepts to:
+In [MR Basics 101](holograms-101.md), we used a simple air-tap gesture to interact with our holograms. Now, we'll move beyond the air-tap gesture and explore new concepts to:
 
 * Detect when the user's hand is being tracked and provide feedback to the user.
 * Use a navigation gesture to rotate our holograms.
 * Provide feedback when the user's hand is about to go out of view.
 * Use manipulation events to allow users to move holograms with their hands.
 
-In this course, we'll revisit the Unity project **Model Explorer**, which we built in [Holograms 210](holograms-210.md). Our astronaut friend is back to assist us in our exploration of these new gesture concepts.
+In this course, we'll revisit the Unity project **Model Explorer**, which we built in [MR Input 210](holograms-210.md). Our astronaut friend is back to assist us in our exploration of these new gesture concepts.
 
 >[!IMPORTANT]
 >The videos embedded in each of the chapters below were recorded using an older version of Unity and the Mixed Reality Toolkit. While the step-by-step instructions are accurate and current, you may see scripts and visuals in the corresponding videos that are out-of-date. The videos remain included for posterity and because the concepts covered still apply.
 
-## Getting Started
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Input 211: Gesture</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
+## Before you start
 
 ### Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [Holograms 101](holograms-101.md).
-* You should have completed [Holograms 210](holograms-210.md).
+* You should have completed [MR Basics 101](holograms-101.md).
+* You should have completed [MR Input 210](holograms-210.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
