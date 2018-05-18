@@ -670,3 +670,11 @@ You learned:
 * How to build and deploy an app using Visual Studio.
 
 You are now ready to start creating your own holographic experience!
+
+## See also
+* [MR Basics 101E](holograms-101e.md)
+* [Gaze](gaze.md)
+* [Gestures](gestures.md)
+* [Voice input](voice-input.md)
+* [Spatial sound](spatial-sound.md)
+* [Spatial mapping](spatial-mapping.md)
