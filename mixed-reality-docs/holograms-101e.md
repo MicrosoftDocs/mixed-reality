@@ -1,5 +1,5 @@
 ---
-title: Holograms 101E
+title: MR Basics 101E - Complete project with emulator
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens Emulator to learn the basics of a holographic application.
 author: keveleigh
 ms.author: kurtie
@@ -10,16 +10,30 @@ keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tut
 
 
 
-# Holograms 101E
+# MR Basics 101E: Complete project with emulator
 
  >[!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
 
 This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
 
-**Prerequisites**
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Basics 101E: Complete project with emulator</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+</tr>
+</table>
+
+## Before you start
+
+### Prerequisites
+
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 
-**Project files**
+### Project files
+
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) required by the project. Requires Unity 2017.2 or later.
     * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
     * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
@@ -32,12 +46,14 @@ This tutorial will walk you through a complete project, built in Unity, that dem
 
 In this chapter, we'll setup our first Unity project and step through the build and deploy process.
 
-**Objectives**
+### Objectives
+
 * Set up Unity for holographic development.
 * Make a hologram.
 * See a hologram that you made.
 
-**Instructions**
+### Instructions
+
 * Start Unity.
 * Select **Open**.
 * Enter location as the **Origami** folder you previously unarchived.
@@ -94,10 +110,12 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze.md).
 
-**Objectives**
+### Objectives
+
 * Visualize your gaze using a world-locked cursor.
 
-**Instructions**
+### Instructions
+
 * Go back to your Unity project, and close the Build Settings window if it's still open.
 * Select the **Holograms** folder in the **Project panel**.
 * Drag the **Cursor** object into the **Hierarchy panel** at the root level.
@@ -168,10 +186,11 @@ public class WorldCursor : MonoBehaviour
 
 In this chapter, we'll add support for [gestures](gestures.md). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
 
-**Objectives**
+### Objectives
+
 * Control your holograms with the Select gesture.
 
-**Instructions**
+### Instructions
 
 We'll start by creating a script than can detect the Select gesture.
 * In the **Scripts** folder, create a script named **GazeGestureManager**.
@@ -277,11 +296,13 @@ public class SphereCommands : MonoBehaviour
 
 In this chapter, we'll add support for two [voice commands](voice-input.md): "Reset world" to returns the dropped spheres to their original location, and "Drop sphere" to make the sphere fall.
 
-**Objectives**
+### Objectives
+
 * Add voice commands that always listen in the background.
 * Create a hologram that reacts to a voice command.
 
-**Instructions**
+### Instructions
+
 * In the **Scripts** folder, create a script named **SpeechManager**.
 * Drag the **SpeechManager** script onto the **OrigamiCollection** object in the Hierarchy
 * Open the **SpeechManager** script in Visual Studio.
@@ -398,10 +419,12 @@ public class SphereCommands : MonoBehaviour
 
 In this chapter, we'll add music to the app, and then trigger sound effects on certain actions. We'll be using [spatial sound](spatial-sound.md) to give sounds a specific location in 3D space.
 
-**Objectives**
+### Objectives
+
 * Hear holograms in your world.
 
-**Instructions**
+### Instructions
+
 * In the Unity select from the top menu **Edit > Project Settings > Audio**
 * Find the **Spatializer Plugin** setting and select **MS HRTF Spatializer**.
 * From the **Holograms** folder, drag the **Ambience** object onto the **OrigamiCollection** object in the Hierarchy Panel.
@@ -505,11 +528,13 @@ public class SphereSounds : MonoBehaviour
 
 Now we are going to use [spatial mapping](spatial-mapping.md) to place the game board on a real object in the real world.
 
-**Objectives**
+### Objectives
+
 * Bring your real world into the virtual world.
 * Place your holograms where they matter most to you.
 
-**Instructions**
+### Instructions
+
 * Click on the **Holograms** folder in the Project panel.
 * Drag the **Spatial Mapping** asset into the root of the **Hierarchy**.
 * Click on the **Spatial Mapping** object in the Hierarchy.
@@ -597,7 +622,7 @@ You learned:
 You are now ready to start creating your own holographic apps!
 
 ## See also
-* [Holograms 101](holograms-101.md)
+* [MR Basics 101](holograms-101.md)
 * [Gaze](gaze.md)
 * [Gestures](gestures.md)
 * [Voice input](voice-input.md)
