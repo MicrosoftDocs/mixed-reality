@@ -41,7 +41,7 @@ We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [Holograms 101](holograms-101.md).
+* You should have completed [MR Basics 101](holograms-101.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
 ### Project files

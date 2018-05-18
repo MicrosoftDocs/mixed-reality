@@ -75,7 +75,7 @@ When you're putting together audio for a scene, there are some additional method
 * [Spatial sound](spatial-sound.md)
 * [Spatial sound design](spatial-sound-design.md)
 * [Spatial sound in Unity](spatial-sound-in-unity.md)
-* [Holograms 220](holograms-220.md)
+* [MR Spatial 220](holograms-220.md)
 * [Video: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
 
  

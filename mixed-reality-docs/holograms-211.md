@@ -121,7 +121,7 @@ The **InteractionInputSource.cs** script performs these steps:
 2. Sets the HandDetected state.
 3. Unsubscribes from the InteractionSourceDetected and InteractionSourceLost events.
 
-Next, we'll upgrade our cursor from Holograms 210 into one that shows feedback depending on the user's actions.
+Next, we'll upgrade our cursor from [MR Input 210](holograms-210.md) into one that shows feedback depending on the user's actions.
 
 1. In the **Hierarchy** panel, select the **Cursor** object and delete it.
 2. In the **Project** panel, search for **CursorWithFeedback** and drag it into the **Hierarchy** panel.
@@ -529,7 +529,7 @@ We'll do this by adding two more keywords to the Speech Input Source from the pr
 
 ## The End
 
-Congratulations! You have now completed **Holograms 211 - Gesture**.
+Congratulations! You have now completed **MR Input 211: Gesture**.
 
 * You know how to detect and respond to hand tracking, navigation and manipulation events.
 * You understand the difference between Navigation and Manipulation gestures.

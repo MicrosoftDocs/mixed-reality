@@ -35,7 +35,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [Holograms 101](holograms-101.md).
+* You should have completed [MR Basics 101](holograms-101.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
@@ -444,6 +444,6 @@ The underworld will be hidden and the previously hidden holograms will reappear.
 
 ## The End
 
-Congratulations! You have now completed **Holograms 220 - Spatial Sound**.
+Congratulations! You have now completed **MR Spatial 220: Spatial sound**.
 
 Listen to the world and bring your experiences to life with sound!

@@ -12,11 +12,11 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 # MR Spatial 230: Spatial mapping
 
-[Spatial mapping](spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment. In Holograms 230 (Project Planetarium) we'll learn how to:
+[Spatial mapping](spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment. In MR Spatial 230 (Project Planetarium) we'll learn how to:
 * Scan the environment and transfer data from the HoloLens to your development machine.
 * Explore shaders and learn how to use them for visualizing your space.
 * Break down the room mesh into simple planes using mesh processing.
-* Go beyond the placement techniques we learned in [Holograms 101](holograms-101.md), and provide feedback about where a hologram can be placed in the environment.
+* Go beyond the placement techniques we learned in [MR Basics 101](holograms-101.md), and provide feedback about where a hologram can be placed in the environment.
 * Explore occlusion effects, so when your hologram is behind a real-world object, you can still see it with x-ray vision!
 
 >[!VIDEO https://www.youtube.com/embed/NSNYRkUX6Mw]
@@ -37,7 +37,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [Holograms 101](holograms-101.md).
+* You should have completed [MR Basics 101](holograms-101.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
@@ -1176,7 +1176,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 ## The End
 
-Congratulations! You have now completed **Holograms 230 - Spatial Mapping**.
+Congratulations! You have now completed **MR Spatial 230: Spatial mapping**.
 * You know how to scan your environment and load spatial mapping data to Unity.
 * You understand the basics of shaders and how materials can be used to re-visualize the world.
 * You learned of new processing techniques for finding planes and removing triangles from a mesh.

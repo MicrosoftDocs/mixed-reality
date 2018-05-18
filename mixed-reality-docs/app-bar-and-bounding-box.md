@@ -46,4 +46,4 @@ The spherical affordances on the edges of the bounding box are rotation indicato
 * [Interactable object](interactable-object.md)
 * [Text in Unity](text-in-unity.md)
 * [Object collection](object-collection.md)
-* [Progress](progress.md)
+* [Displaying progress](progress.md)

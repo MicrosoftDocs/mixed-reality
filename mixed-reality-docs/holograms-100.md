@@ -207,5 +207,5 @@ Now that your app is deployed, try moving all around the cube and observe that i
 ## See also
 * [Unity development overview](unity-development-overview.md)
 * [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
-* [Holograms 101](holograms-101.md)
-* [Holograms 101E](holograms-101e.md)
+* [MR Basics 101](holograms-101.md)
+* [MR Basics 101E](holograms-101e.md)

@@ -79,7 +79,7 @@
 #### [Text in Unity](text-in-unity.md)
 #### [Interactable object](interactable-object.md)
 #### [Object collection](object-collection.md)
-#### [Progress](progress.md)
+#### [Displaying progress](progress.md)
 #### [App bar and bounding box](app-bar-and-bounding-box.md)
 ### Designing for the mixed reality home
 #### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)

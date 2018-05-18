@@ -175,7 +175,7 @@ In this chapter, you'll learn about designing voice commands. When creating voic
 * Give feedback to the user that the application is listening to their voice.
 
 >[!NOTE]
->The **Microphone** capability must be declared for an app to record from the microphone. This is done for you already in Holograms 212, but keep this in mind for your own projects.
+>The **Microphone** capability must be declared for an app to record from the microphone. This is done for you already in MR Input 212, but keep this in mind for your own projects.
 >
 >1. In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player"
 >2. Click on the "Universal Windows Platform" tab
@@ -231,7 +231,7 @@ In this chapter, we'll use the Dictation Recognizer to create a message for the 
 * Only one type of recognizer (Keyword or Dictation) can run at a time.
 
 >[!NOTE]
->The **Microphone** capability must be declared for an app to record from the microphone. This is done for you already in Holograms 212, but keep this in mind for your own projects.
+>The **Microphone** capability must be declared for an app to record from the microphone. This is done for you already in MR Input 212, but keep this in mind for your own projects.
 >
 >1. In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player"
 >2. Click on the "Universal Windows Platform" tab
@@ -458,7 +458,7 @@ namespace Academy
 * Use the Grammar Recognizer to recognize the user's speech according to an SRGS, or Speech Recognition Grammar Specification, file.
 
 >[!NOTE]
->The **Microphone** capability must be declared for an app to record from the microphone. This is done for you already in Holograms 212, but keep this in mind for your own projects.
+>The **Microphone** capability must be declared for an app to record from the microphone. This is done for you already in MR Input 212, but keep this in mind for your own projects.
 >
 >1. In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player"
 >2. Click on the "Universal Windows Platform" tab
@@ -487,7 +487,7 @@ namespace Academy
 
 ## The End
 
-Congratulations! You have now completed **Holograms 212 - Voice**.
+Congratulations! You have now completed **MR Input 212: Voice**.
 
 * You know the Dos and Don'ts of voice commands.
 * You saw how tooltips were employed to make users aware of voice commands.

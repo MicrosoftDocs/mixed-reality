@@ -672,7 +672,7 @@ You learned:
 You are now ready to start creating your own holographic experience!
 
 ## See also
-* [MR Basics 101E](holograms-101e.md)
+* [MR Basics 101E: Complete project with emulator](holograms-101e.md)
 * [Gaze](gaze.md)
 * [Gestures](gestures.md)
 * [Voice input](voice-input.md)

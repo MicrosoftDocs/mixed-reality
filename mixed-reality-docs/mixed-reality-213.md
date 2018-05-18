@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality 213
+title: MR Input 213
 description: Follow this coding walkthrough using Unity, Visual Studio and immersive headsets to learn the details of motion controllers.
 author: keveleigh
 ms.author: kurtie
@@ -14,7 +14,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive
 
 Motion controllers in the mixed reality world add another level of interactivity. With [motion controllers](motion-controllers.md), we can directly interact with objects in a more natural way, similar to our physical interactions in real life, increasing immersion and delight in your app experience.
 
-In Mixed Reality 213, we will explore the motion controller's input events by creating a simple spatial painting experience. With this app, users can paint in three-dimensional space with various types of brushes and colors.
+In MR Input 213, we will explore the motion controller's input events by creating a simple spatial painting experience. With this app, users can paint in three-dimensional space with various types of brushes and colors.
 
 **Topics covered in this tutorial**
 

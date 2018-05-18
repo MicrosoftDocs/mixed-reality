@@ -457,7 +457,7 @@ There are three example scenes about Spatial mapping in Unity.
 
 
 ## See also
-* [Holograms 230](holograms-230.md)
+* [MR Spatial 230: Spatial mapping](holograms-230.md)
 * [Coordinate systems](coordinate-systems.md)
 * [Coordinate systems in Unity](coordinate-systems-in-unity.md)
 * [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)

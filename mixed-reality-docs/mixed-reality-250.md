@@ -338,4 +338,4 @@ Back in LevelControl.cs look at SetGoalIndex. Here we are setting the value of a
 Building on the previous chapter, we will start the session as before. This time as the users in the immersive headset get to the "door" on their path, a tooltip will appear that only the HoloLens users can see. The HoloLens users are responsible for communicating this clue to the users in the immersive headset. The rocket will launch to space once each avatar has stepped on its corresponding brown pad inside the volcano. The scene will reset after 60 seconds so you can do it again.
 
 ## See also
-* [Mixed Reality 213](mixed-reality-213.md)
+* [MR Input 213: Motion controllers](mixed-reality-213.md)

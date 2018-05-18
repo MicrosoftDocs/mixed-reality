@@ -622,7 +622,7 @@ You learned:
 You are now ready to start creating your own holographic apps!
 
 ## See also
-* [MR Basics 101](holograms-101.md)
+* [MR Basics 101: Complete project with device](holograms-101.md)
 * [Gaze](gaze.md)
 * [Gestures](gestures.md)
 * [Voice input](voice-input.md)

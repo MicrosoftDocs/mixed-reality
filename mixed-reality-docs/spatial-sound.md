@@ -54,7 +54,7 @@ It is also important to note that while blending standard stereo sounds with spa
 Windows' spatial sound engine only supports a 48k sample rate for playback. Most middleware, such as Unity, will automatically convert sound files into the supported format, but when using Windows Audio APIs directly please match the format of the content to the format supported by the effect.
 
 ## See also
-* [Holograms 220](holograms-220.md)
+* [MR Spatial 220](holograms-220.md)
 * [Spatial sound in Unity](spatial-sound-in-unity.md)
 * [Spatial sound in DirectX](spatial-sound-in-directx.md)
 * [Spatial sound design](spatial-sound-design.md)

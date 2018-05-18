@@ -126,7 +126,7 @@ In addition to this documentation available on the Windows Dev Center, Unity ins
     * Accessible from the Unity Editor through **Help > Manual**
 
 ## See also
-* [Holograms 100](holograms-100.md)
+* [MR Basics 100: Getting started with Unity](holograms-100.md)
 * [Recommended settings for Unity](recommended-settings-for-unity.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 * [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)

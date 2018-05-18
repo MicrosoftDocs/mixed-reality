@@ -161,7 +161,7 @@ First, you'll want to identify the device types for which your app offers a mixe
 Next to "This experience is designed for Windows Mixed Reality on:"
 * Check the **PC** box only if your app offers a VR experience when an immersive headset is connected to the user's PC. You should check this box whether your app is designed exclusively to run on an immersive headset or if it is a standard PC game/app that offers a mixed reality mode and/or bonus content when a headset is connected.
 * Check the **HoloLens** box only if your app offers a holographic experience when it's run on HoloLens.
-* Check **both** boxes if your app offers a mixed reality experience on both device types, like the [Mixed Reality Academy "island" app](mixed-reality-250.md) from Build 2017.
+* Check **both** boxes if your app offers a mixed reality experience on both device types, like the [Mixed Reality Academy "Project Island" app](mixed-reality-250.md) from Build 2017.
 
 If you selected "PC" above, you'll want to set the "mixed reality setup" (activity level). This only applies to mixed reality experiences that run on PCs connected to immersive headsets, as mixed reality apps on HoloLens are world-scale and the user doesn't define a boundary during setup.
 * Choose **Seated + standing** if your app is designed with the intention that the user stays in one position (an example would be a game where you're seated in a cockpit of an aircraft).
@@ -211,7 +211,7 @@ If you've [packaged your app correctly](https://docs.microsoft.com/en-us/windows
 ![Device family availability table](images/device-family-table-900px.png)<br>
 Device family availability table
 
-If your mixed reality app works on immersive headsets, then at least "Windows 10 Desktop" should be selected in the table. If your mixed reality app works on HoloLens, then at least "Windows 10 Holographic" should be selected. If your app runs on both Windows Mixed Reality headset types, like the [Mixed Reality Academy "island" app](mixed-reality-250.md), both "Windows 10 Desktop" and "Windows 10 Holographic" should be selected.
+If your mixed reality app works on immersive headsets, then at least "Windows 10 Desktop" should be selected in the table. If your mixed reality app works on HoloLens, then at least "Windows 10 Holographic" should be selected. If your app runs on both Windows Mixed Reality headset types, like the [Mixed Reality Academy "Project Island" app](mixed-reality-250.md), both "Windows 10 Desktop" and "Windows 10 Holographic" should be selected.
 
 >[!TIP]
 >Many developers run into errors when uploading their app's package related to mismatches between the package manifest and your app/publisher account information in Dev Center. These errors can often be avoided by signing into Visual Studio with the same account associated with your Windows developer account (the one you use to sign into Windows Dev Center). If you use the same account, you'll be able to associate your app with its identity in the Microsoft Store before you package it.
