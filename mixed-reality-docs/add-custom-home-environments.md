@@ -9,7 +9,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, C
 # Add custom home environments
 
 >[!NOTE]
->This is an experimental feature. Give it a try and have fun with it, but don't be surprised if everything doesn't quite work as expected. We're evaluating the viability of this feature and interest in using it, so please tell us about your experience (and any bugs you've found) in the **developer forums.**
+>This is an experimental feature. Give it a try and have fun with it, but don't be surprised if everything doesn't quite work as expected. We're evaluating the viability of this feature and interest in using it, so please tell us about your experience (and any bugs you've found) in the [developer forums](https://forums.hololens.com/categories/custom-home-environments).
 
 Starting with the [Windows 10 April 2018 update](#release-notes.md), we've enabled an experimental feature that lets you add custom environments to the Places picker (on the Start menu) to use as the [Windows Mixed Reality home](#navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality has two default environments, Cliff House and Skyloft, that you can choose as your home. Creating custom environments allows you to expand that list with your own creations. We are making this available in an early state to evaluate interest from creators and developers, see what kinds of worlds you create, and understand how you work with different authoring tools.
 
@@ -96,7 +96,7 @@ Once you have your final .glb environment you're ready to test it out in the hea
 
 ## Feedback
 
-While we're evaluating this experimental feature, we're interested in learning how you're using custom environments. Please share any and all feedback for creating and using these environments in the Windows Feedback Hub. The Windows Feedback Hub is preinstalled on Windows, simply search "Feedback Hub" with the Windows search bar and open the first result. When submitting feedback include "Custom Environments" in the title so that we can quickly find your suggestions. **MATT UPDATE THIS**
+While we're evaluating this experimental feature, we're interested in learning how you're using custom environments, any bugs you may encounter, and how you like the feature. Please share any and all feedback for creating and using custom home environments in the [developer forums](https://forums.hololens.com/categories/custom-home-environments).
 
 ## Troubleshooting and tips
 
