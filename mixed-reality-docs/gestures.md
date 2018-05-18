@@ -103,7 +103,7 @@ There are three things that you should consider:
 ## See also
 * [Gaze targeting](gaze-targeting.md)
 * [Voice design](voice-design.md)
-* [Holograms 211](holograms-211.md)
+* [MR Input 211: Gesture](holograms-211.md)
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
 * [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
 * [Motion controllers](motion-controllers.md)

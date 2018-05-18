@@ -71,8 +71,8 @@ Regardless of the type of app you're building, these tools will facilitate your 
 
 ## See also
 * [Install the tools](install-the-tools.md)
-* [Holographic Academy tutorials](academy.md)
+* [Mixed Reality Academy tutorials](academy.md)
 * [Open source projects](open-source-projects.md)
-* [Holograms 100](holograms-100.md)
+* [MR Basics 100: Getting started with Unity](holograms-100.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)

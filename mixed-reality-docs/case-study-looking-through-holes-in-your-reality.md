@@ -30,9 +30,9 @@ This trick is a combination of two effects. First, holographic content is pinned
 
 Secondly, that holographic content is visually limited to a very specific space, so you can only see through the hole in your reality. That occlusion is necessary to require looking through a logical hole, window, or doorway, which sells the trick. Without something blocking most of the view, a crack in space to a secret Jurassic dimension might just look like a poorly placed dinosaur.
 
-![This is not an actual screenshot, but an illustration of how the secret underworld from the Holographic Academy looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)](images/origamiholecomposited-640px.png)
+![This is not an actual screenshot, but an illustration of how the secret underworld from MR Basics 101 looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)](images/origamiholecomposited-640px.png)
 
-This is not an actual screenshot, but an illustration of how the secret underworld from the Holographic Academy looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)
+This is not an actual screenshot, but an illustration of how the secret underworld from the [MR Basics 101](holograms-101.md) looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)
 
 ### World-locking holographic content
 
@@ -78,9 +78,9 @@ ColorMask 0
 
 Implementing an invisible occlusion material like that will let your app draw a box that looks correct in the display and in mixed-reality screenshots. For bonus points, you can try to improve the performance of that box even further by doing clever things to draw even fewer invisible pixels, but that can really get into the weeds and usually won't be necessary.
 
-![Here is the secret underworld from the Holographic Academy tutorial as Unity draws it, except for the outer parts of the occluding box. Note that the pivot for the underworld is at the center of the box, which helps keep the hole as stable as possible relative to your actual floor.](images/underworld-occluded-640px.png)
+![Here is the secret underworld from MR Basics 101 as Unity draws it, except for the outer parts of the occluding box. Note that the pivot for the underworld is at the center of the box, which helps keep the hole as stable as possible relative to your actual floor.](images/underworld-occluded-640px.png)
 
-Here is the secret underworld from the Holographic Academy tutorial as Unity draws it, except for the outer parts of the occluding box. Note that the pivot for the underworld is at the center of the box, which helps keep the hole as stable as possible relative to your actual floor.
+Here is the secret underworld from [MR Basics 101](holograms-101.md) as Unity draws it, except for the outer parts of the occluding box. Note that the pivot for the underworld is at the center of the box, which helps keep the hole as stable as possible relative to your actual floor.
 
 ## Do it yourself
 
@@ -90,7 +90,7 @@ Have a HoloLens and want to try out the effect for yourself? The easiest thing y
 
 Viewing this model in your Unity editor will show a large black box around the flowerpot. On HoloLens, the box disappears, giving way to a magic window effect.
 
-If you want to build an app that uses this technique, check out the [Holograms 101 tutorial](holograms-101.md) in the [Holographic Academy](academy.md). Chapter 7 ends with an explosion in your floor that reveals a hidden underworld (as pictured above). Who said tutorials had to be boring?
+If you want to build an app that uses this technique, check out the [MR Basics 101 tutorial](holograms-101.md) in the [Mixed Reality Academy](academy.md). Chapter 7 ends with an explosion in your floor that reveals a hidden underworld (as pictured above). Who said tutorials had to be boring?
 
 Here are some ideas of where you can take this idea next:
 * Think of ways to make the content inside the virtual hole interactive. Letting your users have some impact beyond their walls can really improve the sense of wonder that this trick can provide.
@@ -106,7 +106,7 @@ Here are some ideas of where you can take this idea next:
 </table>
 
 ## See also
-* [Holograms 101](holograms-101.md)
+* [MR Basics 101: Complete project with device](holograms-101.md)
 * [Coordinate systems](coordinate-systems.md)
 * [Spatial anchors](spatial-anchors.md)
 * [Spatial mapping](spatial-mapping.md)

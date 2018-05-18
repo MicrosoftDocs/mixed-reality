@@ -54,6 +54,6 @@ Most apps should use a [cursor](cursors.md) (or other auditory/visual indication
 Once the user has targeted a hologram or real-world object using their gaze, their next step is to take action on that object. The primary ways for a user to take action are through [gestures](gestures.md), [motion controllers](motion-controllers.md) and [voice](voice-input.md).
 
 ## See also
-* [Holograms 210](holograms-210.md)
+* [MR Input 210: Gaze](holograms-210.md)
 * [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
 * [Gaze in Unity](gaze-in-unity.md)

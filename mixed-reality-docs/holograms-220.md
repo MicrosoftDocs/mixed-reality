@@ -1,5 +1,5 @@
 ---
-title: Holograms 220
+title: MR Spatial 220 - Spatial sound
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of spatial sound concepts.
 author: keveleigh
 ms.author: kurtie
@@ -10,7 +10,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 
 
-# Holograms 220
+# MR Spatial 220: Spatial sound
 
 [Spatial sound](spatial-sound.md) breathes life into holograms and gives them presence in our world. Holograms are composed of both light and sound, and if you happen to lose sight of your holograms, spatial sound can help you find them. Spatial sound is not like the typical sound that you would hear on the radio, it is sound that is positioned in 3D space. With spatial sound, you can make holograms sound like they're behind you, next to you, or even on your head! In this course, you will:
 * Configure your development environment to use Microsoft Spatial Sound.
@@ -19,20 +19,35 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 * Understand sound design and mixing best practices.
 * Use sound to enhance special effects and bring the user into the Mixed Reality world.
 
-**Prerequisites**
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Spatial 220: Spatial sound</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
+## Before you start
+
+### Prerequisites
+
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [Holograms 101](holograms-101.md).
+* You should have completed [MR Basics 101](holograms-101.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
-**Project files**
+### Project files
+
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-220-SpatialSound.zip) required by the project. Requires Unity 2017.2 or later.
     * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-220.zip). This release may no longer be up-to-date.
     * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-220.zip). This release may no longer be up-to-date.
     * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-220.zip). This release may no longer be up-to-date.
 * Unarchive the files to your desktop or other easy to reach location.
 
-**Errata and Notes**
+### Errata and Notes
+
 * "Enable Just My Code" needs to be disabled (*unchecked*) in Visual Studio under Tools->Options->Debugging in order to hit breakpoints in your code.
 
 ## Chapter 1 - Unity Setup
@@ -74,7 +89,7 @@ We will now build the project in Unity and configure the solution in Visual Stud
 Unity begin compiling scripts and creating a Visual Studio solution. When complete, a File Explorer window will appear.
 * At the top of the Visual Studio window, change the target to **Release** and **x86**.
 * Click the small downward facing arrow next to **Local Machine** and select **Remote Machine**.
-* Enter the [IP address of your HoloLens](connecting-to-wi-fi-on-hololens.md#identifying-the-hololens-ip-address-on-the-wi-fi-network) in the **Address** box and leave **Authentication Mode** set to **Universal (Unencrypted Protocol)**.
+* Enter the [IP address of your HoloLens](connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in the **Address** box and leave **Authentication Mode** set to **Universal (Unencrypted Protocol)**.
 
 ## Chapter 2 - Spatial Sound and Interaction
 
@@ -429,6 +444,6 @@ The underworld will be hidden and the previously hidden holograms will reappear.
 
 ## The End
 
-Congratulations! You have now completed **Holograms 220 - Spatial Sound**.
+Congratulations! You have now completed **MR Spatial 220: Spatial sound**.
 
 Listen to the world and bring your experiences to life with sound!

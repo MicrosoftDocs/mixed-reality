@@ -157,7 +157,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                             <a href="object-collection.md">Object collection</a>
                         </p>
                         <p>
-                            <a href="progress.md">Progress</a>
+                            <a href="progress.md">Displaying progress</a>
                         </p>
                         <p>
                             <a href="app-bar-and-bounding-box.md">App bar and bounding box</a>

@@ -5,7 +5,7 @@ author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Sharing, Anchor, WorldAnchor, Mixed Reality 250, WorldAnchorTransferBatch, SpatialPerception
+keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch, SpatialPerception
 ---
 
 

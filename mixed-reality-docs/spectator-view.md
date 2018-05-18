@@ -245,8 +245,9 @@ If starting from a new Unity project, you will need to do some setup first:
    * When the camera is moved, holograms in Unity should be where they are in the real world relative to your camera color feed.
 
 ## See also
+
 * [Mixed reality capture](mixed-reality-capture.md)
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
-* [Holograms 240](holograms-240.md)
+* [MR Sharing 240](holograms-240.md)
 * [Spectator view code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)

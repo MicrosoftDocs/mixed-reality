@@ -294,7 +294,7 @@ As part of readiness training, the Microsoft team provides partners sales and ma
 * Positioning and messaging
 * How to work with the Microsoft field marketing team
 * Account-based marketing strategies that work
-* selling 101
+* Selling 101
 * Generating demand with digital marketing
 
 Partners that complete the sales and marketing workshop receive access to a marketing and sales bill of materials that contains content and tools to support partner-led sales and marketing. 
