@@ -1,5 +1,5 @@
 ---
-title: Holograms 210
+title: MR Input 210 - Gaze
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of gaze concepts.
 author: keveleigh
 ms.author: kurtie
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, gaze
 ---
 
-# Holograms 210
+# MR Input 210: Gaze
 
 [Gaze](gaze.md) is the first form of input and reveals the user's intent and awareness. Holograms 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Mixed Reality. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
 
@@ -25,7 +25,17 @@ We have a friendly astronaut here to help you learn gaze concepts. In [Holograms
 >[!IMPORTANT]
 >The videos embedded in each of the chapters below were recorded using an older version of Unity and the Mixed Reality Toolkit. While the step-by-step instructions are accurate and current, you may see scripts and visuals in the corresponding videos that are out-of-date. The videos remain included for posterity and because the concepts covered still apply.
 
-## Getting Started
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Input 210: Gaze</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
+## Before you start
 
 ### Prerequisites
 
