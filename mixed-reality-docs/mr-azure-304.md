@@ -9,13 +9,13 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition,
 
 # MR and Azure 304: Face recognition
 
-![outcome of completing this lab](images/AzureLabs-Lab4-00.png)
+![outcome of completing this course](images/AzureLabs-Lab4-00.png)
 
 In this course you will learn how to add face recognition capabilities to a mixed reality application, using Azure Cognitive Services, with the Microsoft Face API.
 
 **Azure Face API** is a Microsoft service, which provides developers with the most advanced face algorithms, all in the cloud. The **Face API** has two main functions: face detection with attributes, and face recognition. This allows developers to simply set a set of groups for faces, and then, send query images to the service later, to determine to whom a face belongs. For more information, visit the [Azure Face Recognition page](https://azure.microsoft.com/en-us/services/cognitive-services/face/).
 
-Having completed this lab, you will have a mixed reality HoloLens application, which will be able to do the following:
+Having completed this course, you will have a mixed reality HoloLens application, which will be able to do the following:
 
 1. Use a **Tap Gesture** to initiate the capture of an image using the on-board HoloLens camera. 
 2. Send the captured image to the **Azure Face API** service.
@@ -24,9 +24,9 @@ Having completed this lab, you will have a mixed reality HoloLens application, w
 
 This will teach you how to get the results from the Face API Service into your Unity3D application.
 
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
-This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
+This course is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
 ## Device support
 
@@ -58,7 +58,7 @@ The following hardware and software is required:
 -	Internet Access for Azure, and for Face API retrieval. 
 
 > [!NOTE] 
-> It is also possible to develop this lab for immersive headsets. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with immersive headsets.  
+> It is also possible to develop this course for immersive headsets. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with immersive headsets.  
 > Please also be aware, that you will need a **camera** available for use with capture (either internal within your computer or external USB) as current immersive headsets do not have cameras.
 
 ### Before you start
@@ -152,7 +152,7 @@ instance of the service to be made available to your application.
 
 ## Chapter 2 - Using the 'Person Maker' UWP application
 
-Make sure to download the prebuilt UWP Application called [**Person Maker**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/PersonMaker.zip). This app is not the end product for this Lab, just a tool to help you create your Azure entries, which the later
+Make sure to download the prebuilt UWP Application called [**Person Maker**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/PersonMaker.zip). This app is not the end product for this course, just a tool to help you create your Azure entries, which the later
 project will rely upon.
 
 **Person Maker** allows you to create Azure entries, which are associated with people, and groups of people. The application will place all the needed information in a format which can then later be used by the FaceAPI, in order to recognize the faces of people whom you have added. 
@@ -324,7 +324,7 @@ The following is a typical set up for developing with mixed reality, and as such
 ## Chapter 4 - Camera Setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/Azure-MR-Lab-4.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html). Be aware that this package also includes the import of the ***Newtonsoft DLL***, covered in **Chapter 5**. With this imported, you can continue from **Chapter 6**.
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/Azure-MR-Lab-4.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html). Be aware that this package also includes the import of the ***Newtonsoft DLL***, covered in **Chapter 5**. With this imported, you can continue from **Chapter 6**.
 
 1.  In the **Hierarchy** Panel, select the ***Main Camera***.
 
@@ -897,4 +897,4 @@ The **Azure Face API** is also able to provide back all kinds of attribute infor
 
 ## Your Azure Face API Application
 
-![outcome of completing this lab](images/AzureLabs-Lab4-00.png)
+![outcome of completing this course](images/AzureLabs-Lab4-00.png)

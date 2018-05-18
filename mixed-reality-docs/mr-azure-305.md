@@ -27,7 +27,7 @@ secure, durable, scalable, and redundant. This means Microsoft will
 handle all maintenance, and critical problems for you. For more
 information, visit the [Azure Storage page](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction).
 
-Having completed this lab, you will have a Mixed Reality Immersive
+Having completed this course, you will have a Mixed Reality Immersive
 Headset application which will be able to do the following:
 
 1.  Allow the user to gaze around a scene.
@@ -36,9 +36,9 @@ Headset application which will be able to do the following:
 4.  As each object is spawned, the application will store the object type in an **Azure File**, located in **Azure Storage**.
 5.  Upon loading a second time, the **Azure File** data will be retrieved, and used to replay the spawning actions from the previous instance of the application.
 
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality Application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality Application.
 
-This Lab is a self-contained tutorial, which doesn’t directly involve any other mixed reality Labs.
+This course is a self-contained tutorial, which doesn’t directly involve any other mixed reality Labs.
 
 ## Device support
 
@@ -70,7 +70,7 @@ The following hardware and software is required:
 -   Internet Access for creation of Azure resources, and for data retrieval.
 
 > [!NOTE] 
-> It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.
+> It is also possible to develop this course for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.
 
 ### Before you start
 
@@ -278,7 +278,7 @@ public class CustomObject
 
 15. Click on ***Get function URL*** and take note of the **endpoint**
     displayed. You will need to insert it into the **AzureServices**
-    class that you will create later in this Lab.
+    class that you will create later in this course.
 
     ![get function endpoint](images/AzureLabs-Lab5-16.png)
 
@@ -292,7 +292,7 @@ as such, is a good template for other projects.
 Set up and test your Mixed Reality Immersive Headset.
 
 > [!NOTE]
-> You will **not** require Motion Controllers for this Lab. If you need support setting up the Immersive Headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+> You will **not** require Motion Controllers for this course. If you need support setting up the Immersive Headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 1.  Open **Unity** and click **New**.
 
@@ -397,7 +397,7 @@ Set up and test your Mixed Reality Immersive Headset.
 ## Chapter 4 - Setup Main Camera
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* components of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%205%20-%20Azure%20Functions%20and%20Storage/Azure-MR-Lab-5.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html). This will also contain the DLLs from the next Chapter. After import, continue from **Chapter 7**. 
+> If you wish to skip the *Unity Set up* components of this course, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%205%20-%20Azure%20Functions%20and%20Storage/Azure-MR-Lab-5.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html). This will also contain the DLLs from the next Chapter. After import, continue from **Chapter 7**. 
 
 1.  In the **Hierarchy** Panel, you will find an object called **Main
     Camera**, this object represents your "head" point of view once you
@@ -548,7 +548,7 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
 1.  Add the **.unitypackage** to Unity by using the ***Assets \> Import Package \> Custom Package*** menu option.
 
-2.  In the **Import Unity Package** box that pops up, you can select everything under ***Plugin* \> *Storage***.  Uncheck everything else, as it is not needed for this lab.
+2.  In the **Import Unity Package** box that pops up, you can select everything under ***Plugin* \> *Storage***.  Uncheck everything else, as it is not needed for this course.
 
     ![import to package](images/AzureLabs-Lab5-45.png)
 

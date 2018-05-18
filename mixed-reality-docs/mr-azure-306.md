@@ -18,15 +18,15 @@ you broadcast-quality video streaming services to reach larger
 audiences on today’s most popular mobile devices.
 For more information, visit the [Azure Media Services page](https://azure.microsoft.com/en-us/services/media-services).
 
-Having completed this lab, you will have a mixed reality immersive headset application, which will be able to do the following:
+Having completed this course, you will have a mixed reality immersive headset application, which will be able to do the following:
 
 1. Retrieve a 360 degree video from an **Azure Storage**, through the **Azure Media Service**.
 2. Display the retrieved 360 degree video within a Unity scene.
 3. Navigate between two scenes, with two different videos.
 
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
-This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
+This course is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
 ## Device support
 
@@ -69,7 +69,7 @@ The following hardware and software is required:
 2.  Set up and test your Mixed Reality Immersive Headset.
 
 > [!NOTE]
-> You will **not** require Motion Controllers for this Lab. 
+> You will **not** require Motion Controllers for this course. 
 >
 > If you need support setting up the Immersive Headset, please click
 [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
@@ -402,9 +402,9 @@ The following is a typical set up for developing with the Mixed Reality, and as 
 ## Chapter 4 - Importing the InsideOutSphere Unity Package
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%206%20-%20Azure%20Media%20Services/Azure-MR-Lab-6.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**. You will still need to create a Unity Project.
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%206%20-%20Azure%20Media%20Services/Azure-MR-Lab-6.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**. You will still need to create a Unity Project.
 
-For this lab you will need to download a Unity Asset Package called [**InsideOutSphere.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%206%20-%20Azure%20Media%20Services/InsideOutSphere.unitypackage).
+For this course you will need to download a Unity Asset Package called [**InsideOutSphere.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%206%20-%20Azure%20Media%20Services/InsideOutSphere.unitypackage).
 
 How-to import the **unitypackage**:
 
@@ -432,7 +432,7 @@ How-to import the **unitypackage**:
 
     3.  The **Prefabs** folder contains the **InsideOutSphere** prefab which contains both the **InsideOutSphere** *model* and the *GazeButton*.
 
-    4.  **No code is included**, you will write the code by following this Lab.
+    4.  **No code is included**, you will write the code by following this course.
 
 
 4.  Within the **Hierarchy**, select the ***Main Camera*** object, and

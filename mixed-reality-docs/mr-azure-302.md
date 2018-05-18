@@ -16,15 +16,15 @@ In this course, you will learn how to add Computer Vision API capabilities to a 
 
 The Microsoft Computer Vision is a set of APIs designed to provide developers with image processing and analysis (with return information), using advanced algorithms, all from the cloud. Developers upload an image or image URL, and the Microsoft Computer Vision API algorithms analyze the visual content, based upon inputs chosen the user, which then can return information, including, identifying the type and quality of an image, detect human faces (returning their coordinates), and tagging, or categorizing images. For more information, visit the [Microsoft Computer Vision API page](https://azure.microsoft.com/en-gb/services/cognitive-services/computer-vision/).
 
-Having completed this lab, you will have a mixed reality HoloLens application, which will be able to do the following:
+Having completed this course, you will have a mixed reality HoloLens application, which will be able to do the following:
 
 1.	Using the Tap gesture, the camera of the HoloLens will capture an image.
 2.	The image will be sent to the Azure Computer Vision API Service. 
 3.	The objects recognized will be listed in a simple UI group positioned in the Unity Scene.
 
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality Application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality Application.
 
-This Lab is a self-contained tutorial, which doesn’t directly involve any other mixed reality Labs.
+This course is a self-contained tutorial, which doesn’t directly involve any other mixed reality Labs.
 
 ## Device support
 
@@ -55,7 +55,7 @@ The following hardware and software is required:
 -	Internet Access for Azure, and for Computer Vision API retrieval. For more information, please follow this [LINK](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/).
 
 > [!NOTE] 
-> It is also possible to develop this lab for immersive headsets. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with immersive headsets.  
+> It is also possible to develop this course for immersive headsets. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with immersive headsets.  
 > Please also be aware, that you will need a **camera** available for use with capture (either internal within your computer or external USB) as current immersive headsets do not have cameras.
 
 ### Before you start
@@ -204,7 +204,7 @@ The following is a typical set up for developing with mixed reality, and as such
 ## Chapter 3 – Camera Setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%202%20-%20Computer%20Vision%20API/Azure-MR-Lab-2.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**.
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%202%20-%20Computer%20Vision%20API/Azure-MR-Lab-2.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**.
 
 1.	In the **Hierarchy Panel**, select the ***Main Camera***. 
 2.	Once selected, you will be able to see all the components of the **Main Camera** in the **Inspector Panel**.
@@ -568,7 +568,7 @@ To create this class:
 ```
 
 > [!WARNING] 
-> Make sure you insert your **Auth Key** into the **authorizationKey** variable. You will have noted your **Auth Key** at the beginning of this Lab, **Chapter 1**.
+> Make sure you insert your **Auth Key** into the **authorizationKey** variable. You will have noted your **Auth Key** at the beginning of this course, **Chapter 1**.
 
 > [!WARNING] 
 > The **visionAnalysisEndpoint** variable might differ from the one specified in this example. The **west-us** strictly refers to Service instances created for the West US region. Update this with your [endpoint URL](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa); here are some examples of what that might look like:

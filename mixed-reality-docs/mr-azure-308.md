@@ -29,7 +29,7 @@ to store structured non-SQL data in the cloud, making it easily accessible anywh
 The service boasts a schemaless design, allowing for the evolution of tables as 
 needed, and thus is very flexible. For more information, visit the **Azure Tables** [page](https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-overview)
 
-Having completed this lab, you will have a mixed reality immersive headset application, and a Desktop PC application, which will be able to do the following:
+Having completed this course, you will have a mixed reality immersive headset application, and a Desktop PC application, which will be able to do the following:
 
 1.  The Desktop PC app will allow the user to move an object in 2D space (X and Y), 
 using the mouse.
@@ -43,9 +43,9 @@ information, the mixed reality app will apply the received information
 to its own scene.
 
 
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
-This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
+This course is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
 ## Device support
 
@@ -78,7 +78,7 @@ The following hardware and software is required:
 - You must be the **owner** of your Microsoft Developer Portal and your Application Registration Portal, otherwise you will not have permission to access the app in **Chapter 2**.
 
 > [!NOTE] 
-> It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens. 
+> It is also possible to develop this course for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens. 
 
 ### Before you start
 
@@ -774,7 +774,7 @@ as such, is a good template for other projects.
 Set up and test your mixed reality immersive headset.
 
 > [!NOTE] 
-> You will **not** require Motion Controllers for this Lab. If you need support setting up the immersive headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+> You will **not** require Motion Controllers for this course. If you need support setting up the immersive headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 1.  Open **Unity** and click ***New***.
 
@@ -873,7 +873,7 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
 1.  Add the **.unitypackage** to Unity by using the ***Assets \> Import Package \> Custom Package*** menu option.
 
-2.  In the **Import Unity Package** box that pops up, you can select everything under ***Plugin* \> *Storage***.  Uncheck everything else, as it is not needed for this lab.
+2.  In the **Import Unity Package** box that pops up, you can select everything under ***Plugin* \> *Storage***.  Uncheck everything else, as it is not needed for this course.
 
     ![import to package](images/AzureLabs-Lab8-61.png)
 

@@ -15,15 +15,15 @@ In this course, you will learn how to add Machine Learning (ML) capabilities to 
 
 **Azure Machine Learning Studio** is a Microsoft service, which provides developers with a large number of machine learning algorithms, which can help with data input, output, preparation, and visualization. From these components, it is then possible to develop a predictive analytics experiment, iterate on it, and use it to train your model. Following training, you can make your model operational within the Azure cloud, so that it can then score new data. For more information, visit the [Azure Machine Learning Studio page](https://azure.microsoft.com/en-au/services/machine-learning-studio/).
 
-Having completed this lab, you will have a mixed reality immersive headset application, and will have learned how do the following:
+Having completed this course, you will have a mixed reality immersive headset application, and will have learned how do the following:
 
 1.  Provide a table of sales data to the **Azure Machine Learning Studio** portal, and        design an algorithm to predict future sales of popular items.
 2.  Create a **Unity Project**, which can receive and interpret prediction data from the ML service.
 3.  Display the predication data visually within the **Unity Project**, through providing the most popular sales items, on a shelf.
 
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
-This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
+This course is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
 ## Device support
 
@@ -54,7 +54,7 @@ The following hardware and software is required:
 -   Internet Access for Azure, and for ML data retrieval.
 
 > [!NOTE] 
-> It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.
+> It is also possible to develop this course for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.
 
 ### Before you start
 
@@ -196,7 +196,7 @@ existing data and then attempting to predict future results based on the
 existing data set. This generally means that the more existing data you
 have, the better the algorithm will be at predicting future results.
 
-A Sample table is provided to you, for this lab, called
+A Sample table is provided to you, for this course, called
 **ProductsTableCSV**. You can find this file in the same folder as this
 lab document.
 
@@ -425,7 +425,7 @@ Chapter.
 Set up and test your Mixed Reality Immersive Headset.
 
 > [!NOTE]
->  You will **not** require Motion Controllers for this Lab. If you need support setting up the Immersive Headset, please click
+>  You will **not** require Motion Controllers for this course. If you need support setting up the Immersive Headset, please click
 [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 1.  Open **Unity** and create a new Unity Project called
@@ -500,7 +500,7 @@ Set up and test your Mixed Reality Immersive Headset.
 
 ## Chapter 6 - Importing the MLProducts Unity Package
 
-For this Lab, you will need to download a Unity Asset Package called
+For this course, you will need to download a Unity Asset Package called
 [**Azure-MR-Lab-7.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%207%20-%20Machine%20Learning/Azure-MR-Lab-7.unitypackage). This package comes complete with a scene, with all objects in that prebuilt, so you can focus on getting it all working. The ***ShelfKeeper*** script is provided, though only holds the public variables, for the purpose of scene setup structure. You will need to do all other sections.
 
 To import this package:
@@ -522,7 +522,7 @@ To import this package:
 4.  Once it has finished importing, you will notice that some new
     folders have appeared in your Unity **Project Panel**. Those are the
     3D models and the respective materials that are part of
-    the pre-made scene you will work on. You will write the majority of the code in this Lab.
+    the pre-made scene you will work on. You will write the majority of the code in this course.
 
     ![Importing the MLProducts Unity Package](images/AzureLabs-Lab7-41.png)
 

@@ -15,7 +15,7 @@ In this course, you will learn how to integrate Language Understanding into a mi
 
 **Language Understanding (LUIS)** is a Microsoft Azure service, which provides applications with the ability to make meaning out of user input, such as through extracting what a person might want, in their own words. This is achieved through machine learning, which understands and learns the input information, and then can reply with detailed, relevant, information. For more information, visit the [Azure Language Understanding (LUIS) page](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/).
 
-Having completed this lab, you will have a mixed reality immersive headset application which will be able to do the following:
+Having completed this course, you will have a mixed reality immersive headset application which will be able to do the following:
 
 1.	Capture user input speech, using the Microphone attached to the immersive headset. 
 2.	Send the captured dictation the **Azure Language Understanding Intelligent Service** (***LUIS***). 
@@ -23,9 +23,9 @@ Having completed this lab, you will have a mixed reality immersive headset appli
 
 Development will include the creation of an app where the user will be able to use voice and/or gaze to change the size and the color of the objects in the scene. The use of motion controllers will not be covered.
 
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
-This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
+This course is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
 Be prepared to Train LUIS several times, which is covered in **Chapter 12**. You will get better results the more times LUIS has been trained. 
 
@@ -56,12 +56,12 @@ The following hardware and software is required:
 -	A built-in microphone included in the headset, or earphones with a built-in microphone connected to the headset
 -	Visual Studio 2017.15.4 or higher
 -	A PC compatible with Windows Mixed Reality 
--	A subscription to **Azure Language Understanding API**, with the **Auth Key** (covered in this lab)
+-	A subscription to **Azure Language Understanding API**, with the **Auth Key** (covered in this course)
 -	Internet Access for Azure, and for LUIS retrieval.
 For more information, please follow this [LINK](https://azure.microsoft.com/en-au/services/cognitive-services/language-understanding-intelligent-service/).
 
 > [!NOTE] 
-> It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.
+> It is also possible to develop this course for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.
 
 ### Before you start
 
@@ -96,7 +96,7 @@ To use the **Language Understanding** service in Azure, you will need to configu
 
     1. Insert your desired **Name** for this service instance.
     2. Select a **Subscription**.
-    3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a **LUIS Service**, a free tier (named F0) should be available to you. The free allocation should be more than sufficient for this lab.
+    3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a **LUIS Service**, a free tier (named F0) should be available to you. The free allocation should be more than sufficient for this course.
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
     
         > If you wish to read more about Azure Resource Groups, please follow this [LINK](
@@ -131,7 +131,7 @@ To use the **Language Understanding** service in Azure, you will need to configu
 In this section you will learn how to make a LUIS App on the LUIS Portal. 
 
 > [!IMPORTANT]
-> Please be aware, that setting up the *Entities*, *Intents*, and *Utterances* within this chapter is only the first step in building your LUIS service: you will also need to retrain the service, several times, so to make it more accurate. Retraining your service is covered in the **last Chapter** of this lab, so ensure that you complete it.
+> Please be aware, that setting up the *Entities*, *Intents*, and *Utterances* within this chapter is only the first step in building your LUIS service: you will also need to retrain the service, several times, so to make it more accurate. Retraining your service is covered in the **last Chapter** of this course, so ensure that you complete it.
 
 1.	Upon reaching the **Language Understanding Portal**, you may need to login, if you are not already, with the same credentials as your Azure portal. 
 
@@ -158,9 +158,9 @@ In this section you will learn how to make a LUIS App on the LUIS Portal.
     -	***Entity***, is a component of the query that describes information relevant to the **INTENT**.
     -	***Utterances***, are examples of queries provided by the developer, that LUIS will use to train itself.
 
-If these concepts are not perfectly clear, do not worry, as this Lab will clarify them further in this chapter.
+If these concepts are not perfectly clear, do not worry, as this course will clarify them further in this chapter.
 
-You will begin by creating the **Entities** needed to build this Lab.
+You will begin by creating the **Entities** needed to build this course.
 
 9.	On the left side of the page, click on ***Entities***, then click on ***Create new entity***.
 
@@ -191,7 +191,7 @@ At this point you can begin creating **Intents**.
 13.	Call the new **Intent** ***ChangeObjectColor***.
 
 > [!IMPORTANT]
-> This ***Intent*** name is used within the code later in this lab, so for best results, use this name exactly as provided.
+> This ***Intent*** name is used within the code later in this course, so for best results, use this name exactly as provided.
 
 Once you confirm the name you will be directed to the Intents Page.
 
@@ -372,7 +372,7 @@ The following is a typical set up for developing with the mixed reality, and as 
 ## Chapter 4 – Setup the Scene
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%203%20-%20LUIS%20MR%20Integration/Azure-MR-Lab-3.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**. 
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%203%20-%20LUIS%20MR%20Integration/Azure-MR-Lab-3.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**. 
 
 1.	Right-click in an empty area of the **Hierarchy Panel**, under **3D Object**, add a **Plane**.
 

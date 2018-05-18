@@ -8,24 +8,22 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, 
 ---
 
 # MR and Azure 301: Language translation
- 
+
 In this course, you will learn how to add translation capabilities to a mixed reality application using Azure Cognitive Services, with the Translator Text API.
 
 ![Final product](images/AzureLabs-Lab1-00.png)
 
-The Translator Text API is a translation service which works in near real-time. The service is cloud-based, and using a REST API call, an app can make use of the neural machine translation technology, so to translate text to another language. For more information, visit the [Azure Translator Text API page](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/).
+The Translator Text API is a translation service which works in near real-time. The service is cloud-based, and, using a REST API call, an app can make use of the neural machine translation technology to translate text to another language. For more information, visit the [Azure Translator Text API page](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/).
 
-Having completed this lab, you will have a mixed reality immersive headset application, which will be able to do the following:
+Upon completion of this course, you will have a mixed reality application which will be able to do the following:
 
-1.	The user will speak through the microphone attached to the immersive headset
-2.	The app will capture the Dictation and send it to the Azure Translator Text API. 
-3.	The translation result will be displayed in a simple UI group in the Unity Scene. 
+1.	The user will speak into a microphone connected to an immersive (VR) headset (or the built-in microphone of HoloLens).
+2.	The app will capture the dictation and send it to the Azure Translator Text API.
+3.	The translation result will be displayed in a simple UI group in the Unity Scene.
 
-This will teach you how to get the results from the Translator Service into your Unity application.
+This course will teach you how to get the results from the translator service into a Unity-based sample application. It will be up to you to apply these concepts to a custom application you might be building.
 
-In your application, it is up to you as to how you will integrate the results with your design. This Lab is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this Lab to enhance your mixed reality application.
 
-This Lab is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
 ## Device support
 
@@ -37,48 +35,45 @@ This Lab is a self-contained tutorial, which does not directly involve any other
 </tr>
 </table>
 
+> [!NOTE]
+> While this course primarily focuses on Windows Mixed Reality immersive (VR) headsets, you can also apply what you learn in this course to Microsoft HoloLens. As you follow along with the course, you will see notes on any changes you might need to employ to support HoloLens. When using HoloLens, you may notice some echo during voice capture.
+
 ## Prerequisites
-For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
 
-> [!NOTE] 
-> This tutorial is designed for developers who have basic experience with Unity and C#.
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
+> [!NOTE]
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
 
-The following hardware and software is required:
+We recommend the following hardware and software for this course:
 
-  - Windows 10 Fall Creators Update or later.
-  - Developer Mode enabled
-  - Windows 10 SDK (latest version)
-  - [Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
-  - An immersive headset
-  - A set of earphones with a built-in microphone (for the immersive headset)
-  - Visual Studio 2017.15.4 or higher
-  - A PC compatible with Windows mixed reality 
-  - Internet Access for Azure, and for Translation retrieval. For more information, please follow this [LINK](https://azure.microsoft.com/en-au/services/cognitive-services/translator-text-api/).
+- A [PC compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md)
+- A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
+- Internet access for Azure and translation retrieval.
 
-> [!NOTE] 
-> It is also possible to develop this lab for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens.  
-> Please also be aware, that you may notice some echo when using the HoloLens mic and built-in speakers, during voice capture. 
+## Before you start
 
-### Before you start
-1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	The code in this tutorial will allow you to record from the Default Microphone Device on your machine. Make sure the Default Microphone Device is set as the one you wish to use to capture your voice.
-3.	If your headset has a built-in microphone, make sure the option “When I wear my headset, switch to headset mic” is turned on in the mixed reality Portal settings.
+- To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
+- The code in this tutorial will allow you to record from the default microphone device connected to your PC. Make sure the default microphone device is set to the device you plan to use to capture your voice.
+- To allow your PC to enable dictation, go to **Settings > Privacy > Speech, inking & typing** and select the button **Turn On speech services and typing suggestions**.
+- If you're using a microphone and headphones connected to (or built-in to) your headset, make sure the option “When I wear my headset, switch to headset mic” is turned on in **Settings > Mixed reality > Audio and speech**.
 
-    ![mixed reality settings](images/AzureLabs-Lab1-00-5.png)
+   ![Mixed reality settings](images/AzureLabs-Lab1-00-5.png)
 
-    ![Default Microphone Settings](images/AzureLabs-Lab1-01.png)
-
-4.	To allow your machine to enable Dictation, go to Windows Settings > Speech, Inking & Typing, and press on the button Turn On speech services and typing suggestions.
+   ![Microphone setting](images/AzureLabs-Lab1-01.png)
 
 ## Chapter 1 – The Azure Portal
+
 To use the Azure Translator API, you will need to configure an instance of the service to be made available to your application.
 1.	Log in to the  [Azure Portal](https://portal.azure.com).
 
 > [!NOTE]
 > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
-2.	Once you are logged in, click on ***New*** in the top left corner, and search for ***Translator Text API***, and click ***Enter***.
+2.	Once you are logged in, click on **New** in the top left corner and search for "Translator Text API." Select **Enter**.
 
     ![New Resource](images/AzureLabs-Lab1-02.png)
 
@@ -93,10 +88,9 @@ To use the Azure Translator API, you will need to configure an instance of the s
     1. Insert your desired **Name** for this service instance.
     2. Select an appropriate **Subscription**.
     3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a **Translator Text Service**, a free tier (named F0) should be available to you.
-    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
+    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group).
     
-        > If you wish to read more about Azure Resource Groups, please follow this [LINK](
-    https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+       > Learn more about [Azure Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
 
     5. Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
     6. You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
@@ -121,14 +115,15 @@ To use the Azure Translator API, you will need to configure an instance of the s
 10.	From the ***Quick start*** page of your ***Translator Text*** service, navigate to the first step, ***Grab your keys***, and click ***Keys*** (you can also achieve this by clicking the blue hyperlink Keys, located in the services navigation menu, denoted by the key icon). This will reveal your service ***Keys***.
 11.	Take a copy of one of the displayed keys, as you will need this later in your project. 
 
-## **Chapter 2 – Set up the Unity Project**
+## Chapter 2 – Set up the Unity project
 
-Set up and test your mixed reality immersive headset. 
+Set up and test your mixed reality immersive headset.
 
 > [!NOTE]
-> You will ***not*** require Motion Controllers for this Lab. If you need support setting up the immersive headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+> You will not need motion controllers for this course. If you need support setting up an immersive headset, please [follow these steps](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
 
-The following is a typical set up for developing with mixed reality, and as such, is a good template for other projects.
+The following is a typical set up for developing with mixed reality and, as such, is a good template for other projects:
+
 1.	Open **Unity** and click **New**. 
 
     ![Start new Unity project.](images/AzureLabs-Lab1-08.png)
@@ -147,7 +142,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
 5.	Go to ***File > Build Settings*** and make sure that:
     1. **Target Device** is set to **Any Device**. 
-        > For the Microsoft HoloLens, set **Target Device** to *HoloLens*.
+        > For Microsoft HoloLens, set **Target Device** to *HoloLens*.
     2. **Build Type** is set to **D3D**
     3. **SDK** is set to **Latest installed**
     4. **Visual Studio Version** is set to **Latest installed**
@@ -194,10 +189,10 @@ The following is a typical set up for developing with mixed reality, and as such
 9.	Close the Build Settings window.
 10.	Save your Scene and Project (**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
 
-## **Chapter 3 – Main Camera Setup**
+## Chapter 3 – Main Camera setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this lab, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%201%20-%20Translator%20Text%20API/Azure-MR-Lab-1.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**. You will still need to create a Unity Project.
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%201%20-%20Translator%20Text%20API/Azure-MR-Lab-1.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 5**. You will still need to create a Unity Project.
 
 1.	In the **Hierarchy Panel**, you will find an object called **Main Camera**, this object represents your “head” point of view once you are “inside” your application.
 2.	With the Unity Dashboard in front of you, select the **Main Camera GameObject**. You will notice that the **Inspector Panel** (generally found to the right, within the Dashboard) will show the various components of that **GameObject**, with **Transform** at the top, followed by **Camera**, and some other components. You will need to reset the Transform of the Main Camera, so it is positioned correctly.
@@ -218,13 +213,14 @@ The following is a typical set up for developing with mixed reality, and as such
 
     ![Add an Audio Source component.](images/AzureLabs-Lab1-21.png)
 
-> [!NOTE] 
-> For the Microsoft HoloLens, you will need to also change the following, which are part of the **Camera** component, which is on your **Main Camera**:
+> [!NOTE]
+> For Microsoft HoloLens, you will need to also change the following, which are part of the **Camera** component on your **Main Camera**:
 > - **Clear Flags:** Solid Color.
 > - **Background** ‘Black, Alpha 0’ – Hex color: #00000000.
 
-## **Chapter 4 – Setup Debug Canvas**
-To show the input and output of the translation, a basic UI needs to be created. For this Lab, you will create a Canvas UI object, with several ‘Text’ objects to show the data. 
+## Chapter 4 – Setup Debug Canvas
+
+To show the input and output of the translation, a basic UI needs to be created. For this course, you will create a Canvas UI object, with several ‘Text’ objects to show the data. 
 1.	Right-click in an empty area of the **Hierarchy Panel**, under **UI**, add a ***Canvas***.
 
     ![Add new Canvas UI object.](images/AzureLabs-Lab1-22.png)
@@ -268,9 +264,8 @@ To show the input and output of the translation, a basic UI needs to be created.
 
         ![Bold Font.](images/AzureLabs-Lab1-25.png)
  
-7.	For each **UI Text object** created in **Chapter 5**, create a new ***child*** **UI Text object**. These children will display the output of the application. 
-    
-    > Create ***child*** objects through right-clicking your intended parent (e.g. ***MicrophoneStatusLabel***) and then select ***UI*** and then select ***Text***.
+7.	For each **UI Text object** created in **Chapter 5**, create a new ***child*** **UI Text object**. These children will display the output of the application.
+   > Create ***child*** objects through right-clicking your intended parent (e.g. ***MicrophoneStatusLabel***) and then select ***UI*** and then select ***Text***.
 8.	For each of these children, select it and use the below tables to set the parameters in the Inspector Panel.
 
     1. For the **Rect Transform** component:
@@ -312,7 +307,8 @@ To show the input and output of the translation, a basic UI needs to be created.
 
         ![Have the scene and game views in the same structure.](images/AzureLabs-Lab1-30.png)
 
-## **Chapter 5 – Create the Results class**
+## Chapter 5 – Create the Results class
+
 The first script you need to create is the ***Results*** class, which is responsible for providing a way to see the results of translation. The Class stores and displays the following: 
 
 - The response result from Azure.
@@ -335,93 +331,93 @@ To create this class:
 3.	Double click on the new ***Results*** script to open it with **Visual Studio**.
 4.	Insert the following namespaces:
 
-```csharp
-    using System.Collections;
-    using System.Collections.Generic;
-    using UnityEngine;
-    using UnityEngine.UI;
-```
+   ```csharp
+       using System.Collections;
+       using System.Collections.Generic;
+       using UnityEngine;
+       using UnityEngine.UI;
+   ```
 
 5.	Inside the Class insert the following variables:
 
-```csharp
-    public static Results instance;
-
-    [HideInInspector] 
-    public string azureResponseCode;
-
-    [HideInInspector] 
-    public string translationResult;
-
-    [HideInInspector] 
-    public string dictationResult;
-
-    [HideInInspector] 
-    public string micStatus;
-
-    public Text microphoneStatusText;
-
-    public Text azureResponseText;
-
-    public Text dictationText;
-
-    public Text translationResultText;
-
-```
+   ```csharp
+       public static Results instance;
+   
+       [HideInInspector] 
+       public string azureResponseCode;
+   
+       [HideInInspector] 
+       public string translationResult;
+   
+       [HideInInspector] 
+       public string dictationResult;
+   
+       [HideInInspector] 
+       public string micStatus;
+   
+       public Text microphoneStatusText;
+   
+       public Text azureResponseText;
+   
+       public Text dictationText;
+   
+       public Text translationResultText;
+   ```
 
 6.	Then add the **Awake()** method, which will be called when the class initializes. 
 
-```csharp
-    private void Awake() 
-    { 
-        // Set this class to behave similar to singleton 
-        instance = this;           
-    } 
-```
+   ```csharp
+       private void Awake() 
+       { 
+           // Set this class to behave similar to singleton 
+           instance = this;           
+       } 
+   ```
 
 7.	Finally, add the methods which are responsible for outputting the various results information to the UI. 
 
-```csharp
-    /// <summary>
-    /// Stores the Azure response value in the static instance of Result class.
-    /// </summary>
-    public void SetAzureResponse(string result)
-    {
-        azureResponseCode = result;
-        azureResponseText.text = azureResponseCode;
-    }
-
-    /// <summary>
-    /// Stores the translated result from dictation in the static instance of Result class. 
-    /// </summary>
-    public void SetDictationResult(string result)
-    {
-        dictationResult = result;
-        dictationText.text = dictationResult;
-    }
-
-    /// <summary>
-    /// Stores the translated result from Azure Service in the static instance of Result class. 
-    /// </summary>
-    public void SetTranslatedResult(string result)
-    {
-        translationResult = result;
-        translationResultText.text = translationResult;
-    }
-
-    /// <summary>
-    /// Stores the status of the Microphone in the static instance of Result class. 
-    /// </summary>
-    public void SetMicrophoneStatus(string result)
-    {
-        micStatus = result;
-        microphoneStatusText.text = micStatus;
-    }
-```
+   ```csharp
+       /// <summary>
+       /// Stores the Azure response value in the static instance of Result class.
+       /// </summary>
+       public void SetAzureResponse(string result)
+       {
+           azureResponseCode = result;
+           azureResponseText.text = azureResponseCode;
+       }
+   
+       /// <summary>
+       /// Stores the translated result from dictation in the static instance of Result class. 
+       /// </summary>
+       public void SetDictationResult(string result)
+       {
+           dictationResult = result;
+           dictationText.text = dictationResult;
+       }
+   
+       /// <summary>
+       /// Stores the translated result from Azure Service in the static instance of Result class. 
+       /// </summary>
+       public void SetTranslatedResult(string result)
+       {
+           translationResult = result;
+           translationResultText.text = translationResult;
+       }
+   
+       /// <summary>
+       /// Stores the status of the Microphone in the static instance of Result class. 
+       /// </summary>
+       public void SetMicrophoneStatus(string result)
+       {
+           micStatus = result;
+           microphoneStatusText.text = micStatus;
+       }
+   ```
 
 8.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 
-## **Chapter 6 – Create the *MicrophoneManager* class**
+## Chapter 6 – Create the *MicrophoneManager* class
+
 The second class you are going to create is the ***MicrophoneManager***.
 
 This class is responsible for:
@@ -437,123 +433,123 @@ To create this class:
 3.	Double click on the new script to open it with Visual Studio.
 4.	Update the namespaces to be the same as the following, at the top of the ***MicrophoneManager*** class:
 
-```csharp
-    using System.Collections; 
-    using System.Collections.Generic; 
-    using UnityEngine; 
-    using UnityEngine.Windows.Speech;
-```
- 
+   ```csharp
+       using System.Collections; 
+       using System.Collections.Generic; 
+       using UnityEngine; 
+       using UnityEngine.Windows.Speech;
+   ```
+
 5.	Then, add the following variables inside the **MicrophoneManager** class:
 
-```csharp
-    // Help to access instance of this object 
-    public static MicrophoneManager instance; 
-
-    // Recording frequency of mic 
-    private int frequency = 44100; 
-
-    // AudioSource component, provides access to mic 
-    private AudioSource audioSource; 
-
-    // Flag indicating mic detection 
-    private bool microphoneDetected; 
-
-    // Flag indicating audio capture status 
-    private bool isCapturingAudio;  
-
-    // Component converting speech to text 
-    private DictationRecognizer dictationRecognizer; 
-```
+   ```csharp
+       // Help to access instance of this object 
+       public static MicrophoneManager instance; 
+   
+       // Recording frequency of mic 
+       private int frequency = 44100; 
+   
+       // AudioSource component, provides access to mic 
+       private AudioSource audioSource; 
+   
+       // Flag indicating mic detection 
+       private bool microphoneDetected; 
+   
+       // Flag indicating audio capture status 
+       private bool isCapturingAudio;  
+   
+       // Component converting speech to text 
+       private DictationRecognizer dictationRecognizer; 
+   ```
 
 6.	Code for the **Awake()** and **Start()** methods now needs to be added. These will be called when the class initializes:
 
-```csharp
-    private void Awake() 
-    { 
-        // Set this class to behave similar to singleton 
-        instance = this; 
-    } 
- 
-    void Start() 
-    { 
-        //Use Unity Microphone class to detect devices and setup Audiosource 
-        if(Microphone.devices.Length > 0) 
-        { 
-            Results.instance.SetMicrophoneStatus("Initialising..."); 
-            audioSource = GetComponent<AudioSource>(); 
-            microphoneDetected = true; 
-        } 
-        else 
-        { 
-            Results.instance.SetMicrophoneStatus("No Microphone detected"); 
-        } 
-    } 
-```
- 
+   ```csharp
+       private void Awake() 
+       { 
+           // Set this class to behave similar to singleton 
+           instance = this; 
+       } 
+    
+       void Start() 
+       { 
+           //Use Unity Microphone class to detect devices and setup Audiosource 
+           if(Microphone.devices.Length > 0) 
+           { 
+               Results.instance.SetMicrophoneStatus("Initialising..."); 
+               audioSource = GetComponent<AudioSource>(); 
+               microphoneDetected = true; 
+           } 
+           else 
+           { 
+               Results.instance.SetMicrophoneStatus("No Microphone detected"); 
+           } 
+       } 
+   ```
+
 7.	You can *delete* the **Update()** method since this class will not use it.
 8.	Now you need the methods that the App uses to start and stop the voice capture, and pass it to the **Translator** class, that you will build soon. Copy the following code and paste it beneath the **Start()** method.
 
 > [!NOTE]
 > Though this application will not make use of it, the **StopCapturingAudio()** method has also been provided here, should you want to implement the ability to stop capturing audio in your application.
 
-```csharp
-    /// <summary> 
-    /// Start microphone capture. Debugging message is delivered to the Results class. 
-    /// </summary> 
-    public void StartCapturingAudio() 
-    { 
-        if(microphoneDetected) 
-        { 
-            // Start microphone capture 
-            isCapturingAudio = true;              
-            
-            // Start dictation 
-            dictationRecognizer = new DictationRecognizer(); 
-            dictationRecognizer.DictationResult += DictationRecognizer_DictationResult; 
-            dictationRecognizer.Start(); 
+   ```csharp
+       /// <summary> 
+       /// Start microphone capture. Debugging message is delivered to the Results class. 
+       /// </summary> 
+       public void StartCapturingAudio() 
+       { 
+           if(microphoneDetected) 
+           { 
+               // Start microphone capture 
+               isCapturingAudio = true;              
+               
+               // Start dictation 
+               dictationRecognizer = new DictationRecognizer(); 
+               dictationRecognizer.DictationResult += DictationRecognizer_DictationResult; 
+               dictationRecognizer.Start(); 
+    
+               // Update UI with mic status 
+               Results.instance.SetMicrophoneStatus("Capturing..."); 
+           }      
+       } 
  
-            // Update UI with mic status 
-            Results.instance.SetMicrophoneStatus("Capturing..."); 
-        }      
-    } 
- 
-    /// <summary> 
-    /// Stop microphone capture. Debugging message is delivered to the Results class. 
-    /// </summary> 
-    public void StopCapturingAudio() 
-    { 
-        Results.instance.SetMicrophoneStatus("Mic sleeping"); 
-        isCapturingAudio = false; 
-        Microphone.End(null); 
-        dictationRecognizer.DictationResult -= DictationRecognizer_DictationResult; 
-        dictationRecognizer.Dispose(); 
-    }
-```
- 
+       /// <summary> 
+       /// Stop microphone capture. Debugging message is delivered to the Results class. 
+       /// </summary> 
+       public void StopCapturingAudio() 
+       { 
+           Results.instance.SetMicrophoneStatus("Mic sleeping"); 
+           isCapturingAudio = false; 
+           Microphone.End(null); 
+           dictationRecognizer.DictationResult -= DictationRecognizer_DictationResult; 
+           dictationRecognizer.Dispose(); 
+       }
+   ```
+
 9.	You now need to add a Dictation Handler that will be invoked when the voice stops. This method will then pass the dictated text to the ***Translator*** class.
 
-```csharp
-    /// <summary>
-    /// This handler is called every time the Dictation detects a pause in the speech. 
-    /// Debugging message is delivered to the Results class.
-    /// </summary>
-    private void DictationRecognizer_DictationResult(string text, ConfidenceLevel confidence)
-    {
-        // Update UI with dictation captured
-        Results.instance.SetDictationResult(text);
+   ```csharp
+       /// <summary>
+       /// This handler is called every time the Dictation detects a pause in the speech. 
+      /// Debugging message is delivered to the Results class.
+       /// </summary>
+       private void DictationRecognizer_DictationResult(string text, ConfidenceLevel confidence)
+       {
+           // Update UI with dictation captured
+           Results.instance.SetDictationResult(text);
+   
+           // Start the coroutine that process the dictation through Azure 
+           StartCoroutine(Translator.instance.TranslateWithUnityNetworking(text));   
+       }
+   ```
 
-        // Start the coroutine that process the dictation through Azure 
-        StartCoroutine(Translator.instance.TranslateWithUnityNetworking(text));   
-    }
-```
- 
 10.	Be sure to save your changes in Visual Studio before returning to Unity.
 
 > [!WARNING]  
 > At this point you will notice an error appearing in the **Unity Editor Console** Panel (“The name ‘Translator’ does not exist...”). This is because the code references the **Translator** class, which you will create in the next chapter.
 
-## **Chapter 7 – Call to Azure and Translation**
+## Chapter 7 – Call to Azure and translator service
 
 The last script you need to create is the **Translator** class. 
 
@@ -569,47 +565,46 @@ To create this Class:
 3.	Double click on the new ***Translator*** script to open it **with Visual Studio**.
 4.	Add the following namespaces to the top of the file:
 
-```csharp
-    using System; 
-    using System.Collections; 
-    using System.Collections.Generic; 
-    using System.IO; 
-    using System.Net; 
-    using System.Net.Security; 
-    using System.Runtime.Serialization; 
-    using System.Xml; 
-    using UnityEngine; 
-    using UnityEngine.Networking;
-```
+   ```csharp
+       using System; 
+       using System.Collections; 
+       using System.Collections.Generic; 
+       using System.IO; 
+       using System.Net; 
+       using System.Net.Security; 
+       using System.Runtime.Serialization; 
+       using System.Xml; 
+       using UnityEngine; 
+       using UnityEngine.Networking;
+   ```
 
 5.	Then add the following variables inside the ***Translator*** class:
 
-```csharp
-    public static Translator instance; 
-    private string translationTokenEndpoint = "https://api.cognitive.microsoft.com/sts/v1.0/issueToken"; 
-    private string translationTextEndpoint = "https://api.microsofttranslator.com/v2/http.svc/Translate?"; 
-    private const string ocpApimSubscriptionKeyHeader = "Ocp-Apim-Subscription-Key"; 
- 
-    //Substitute the value of authorizationKey with your own Key 
-    private const string authorizationKey = "-InsertYourAuthKeyHere-"; 
-    private string authorizationToken; 
- 
-    // languages set below are: 
-    // English 
-    // French 
-    // Italian 
-    // Japanese 
-    // Korean 
-    public enum Languages { en, fr, it, ja, ko }; 
-    public Languages from = Languages.en; 
-    public Languages to = Languages.it; 
-``` 
+   ```csharp
+       public static Translator instance; 
+       private string translationTokenEndpoint = "https://api.cognitive.microsoft.com/sts/v1.0/issueToken"; 
+       private string translationTextEndpoint = "https://api.microsofttranslator.com/v2/http.svc/Translate?"; 
+       private const string ocpApimSubscriptionKeyHeader = "Ocp-Apim-Subscription-Key"; 
+    
+       //Substitute the value of authorizationKey with your own Key 
+       private const string authorizationKey = "-InsertYourAuthKeyHere-"; 
+       private string authorizationToken; 
+    
+       // languages set below are: 
+       // English 
+       // French 
+       // Italian 
+       // Japanese 
+       // Korean 
+       public enum Languages { en, fr, it, ja, ko }; 
+       public Languages from = Languages.en; 
+       public Languages to = Languages.it; 
+   ```
 
 > [!NOTE]
-> -	The languages inserted into the languages **enum** are just examples. Feel free to add more if you wish, the API supports over 60 of them (including Klingon)!
-You can find all the languages available by following this [LINK](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/languages). 
-    >     - There is a more interactive page, where you can check available languages, [HERE](https://www.microsoft.com/en-us/translator/languages.aspx), though be aware the page only appears to work when the site language is set to '**en-us**' (and the Microsoft site will likely redirect to your native language).
-> -	The **authorizationKey** value must be the **Key** you received when you subscribed to the **Azure Translator Text API** in the Azure Portal (see **Chapter 1** in this guide).
+> -	The languages inserted into the languages **enum** are just examples. Feel free to add more if you wish; the [API supports over 60 languages](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/languages) (including Klingon)!
+> - There is a [more interactive page covering available languages](https://www.microsoft.com/en-us/translator/languages.aspx), though be aware the page only appears to work when the site language is set to 'en-us' (and the Microsoft site will likely redirect to your native language). You can change site language at the bottom of the page or by altering the URL.
+> -	The **authorizationKey** value must be the **Key** you received when you subscribed to the **Azure Translator Text API** in the Azure Portal (see [Chapter 1](#chapter-1--the-azure-portal) in this guide).
 
 6.	Code for the **Awake()** and **Start()** methods now needs to be added. 
 7.	In this case, the code will make a call to **Azure** using the authorization Key, to get a **Token**.
@@ -617,132 +612,127 @@ You can find all the languages available by following this [LINK](https://docs.m
 > [!NOTE]
 > The token will expire after 10 minutes. Depending on the scenario for your app, you might have to make the same coroutine call multiple times.
 
-```csharp
-    private void Awake() 
-    { 
-        // Set this class to behave similar to singleton  
-        instance = this; 
-    } 
- 
-    // Use this for initialization  
-    void Start() 
-    { 
-        // When the application starts, request an auth token 
-        StartCoroutine("GetTokenCoroutine", authorizationKey); 
-    }
-```
- 
+   ```csharp
+       private void Awake() 
+       { 
+           // Set this class to behave similar to singleton  
+           instance = this; 
+       } 
+    
+       // Use this for initialization  
+       void Start() 
+       { 
+           // When the application starts, request an auth token 
+           StartCoroutine("GetTokenCoroutine", authorizationKey); 
+       }
+   ```
+
 8.	The coroutine to obtain the Token is the following:
 
-```csharp
-    /// <summary> 
-    /// Request a Token from Azure Translation Service by providing the access key. 
-    /// Debugging result is delivered to the Results class. 
-    /// </summary> 
-    private IEnumerator GetTokenCoroutine(string key) 
-    { 
-        if (string.IsNullOrEmpty(key)) 
-        { 
-            throw new InvalidOperationException("Authorization key not set."); 
-        } 
+   ```csharp
+       /// <summary> 
+       /// Request a Token from Azure Translation Service by providing the access key. 
+       /// Debugging result is delivered to the Results class. 
+       /// </summary> 
+       private IEnumerator GetTokenCoroutine(string key) 
+       { 
+           if (string.IsNullOrEmpty(key)) 
+           { 
+               throw new InvalidOperationException("Authorization key not set."); 
+           } 
+   
+           WWWForm webForm = new WWWForm();
+              
+           using (UnityWebRequest unityWebRequest = UnityWebRequest.Post(translationTokenEndpoint, webForm)) 
+           { 
+               unityWebRequest.SetRequestHeader("Ocp-Apim-Subscription-Key", key);                   
+               
+               // The download handler is responsible for bringing back the token after the request 
+               unityWebRequest.downloadHandler = new DownloadHandlerBuffer(); 
+              
+               yield return unityWebRequest.SendWebRequest(); 
+    
+               authorizationToken = unityWebRequest.downloadHandler.text; 
+    
+               if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError) 
+               { 
+                   Results.instance.azureResponseText.text = unityWebRequest.error; 
+               } 
+               
+               long responseCode = unityWebRequest.responseCode; 
+               
+               // Update the UI with the response code 
+               Results.instance.SetAzureResponse(responseCode.ToString()); 
+           } 
+    
+           // After receiving the token, begin capturing Audio with the MicrophoneManager Class 
+           MicrophoneManager.instance.StartCapturingAudio(); 
+    
+           StopCoroutine("GetTokenCoroutine"); 
+    
+           yield return null; 
+       }
+   ```
 
-        WWWForm webForm = new WWWForm();
-           
-        using (UnityWebRequest unityWebRequest = UnityWebRequest.Post(translationTokenEndpoint, webForm)) 
-        { 
-            unityWebRequest.SetRequestHeader("Ocp-Apim-Subscription-Key", key);                   
-            
-            // The download handler is responsible for bringing back the token after the request 
-            unityWebRequest.downloadHandler = new DownloadHandlerBuffer(); 
-           
-            yield return unityWebRequest.SendWebRequest(); 
- 
-            authorizationToken = unityWebRequest.downloadHandler.text; 
- 
-            if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError) 
-            { 
-                Results.instance.azureResponseText.text = unityWebRequest.error; 
-            } 
-            
-            long responseCode = unityWebRequest.responseCode; 
-            
-            // Update the UI with the response code 
-            Results.instance.SetAzureResponse(responseCode.ToString()); 
-        } 
- 
-        // After receiving the token, begin capturing Audio with the MicrophoneManager Class 
-        MicrophoneManager.instance.StartCapturingAudio(); 
- 
-        StopCoroutine("GetTokenCoroutine"); 
- 
-        yield return null; 
-    }
-```
- 
-9.	Next, add the coroutine (with a “support” stream method right below it) to obtain the translation of the text received by the ***MicrophoneManager*** class. 
+9.	Next, add the coroutine (with a “support” stream method right below it) to obtain the translation of the text received by the ***MicrophoneManager*** class. This code creates a query string to send to the ***Azure Translator Text API***, and then uses the internal Unity UnityWebRequest class to make a ‘Get’ call to the endpoint with the query string. The result is then used to set the translation in your Results object. The code below shows the implementation:
 
-    This code creates a query string to send to the ***Azure Translator Text API***, and then uses the internal Unity UnityWebRequest class to make a ‘Get’ call to the endpoint with the query string.
-The result is then used to set the translation in your Results object.
+   ```csharp
+       /// <summary> 
+       /// Request a translation from Azure Translation Service by providing a string.  
+       /// Debugging result is delivered to the Results class. 
+       /// </summary> 
+       public IEnumerator TranslateWithUnityNetworking(string text) 
+       { 
+           WWWForm webForm = new WWWForm(); 
+           string result; 
+           string queryString; 
+     
+           // This query string will contain the parameters for the translation 
+           queryString = string.Concat("text=", Uri.EscapeDataString(text), "&from=", from, "&to=",to);        
+     
+           using (UnityWebRequest unityWebRequest = 
+           UnityWebRequest.Get(translationTextEndpoint + queryString))        
+           { 
+               unityWebRequest.downloadHandler = new DownloadHandlerBuffer(); 
+               unityWebRequest.SetRequestHeader("Authorization", "Bearer " + authorizationToken); 
+               unityWebRequest.SetRequestHeader("Accept", "application/xml"); 
+               yield return unityWebRequest.SendWebRequest(); 
+    
+               string deliveredString = unityWebRequest.downloadHandler.text; 
+    
+               // The response will be in Json format 
+               // Therefore we need to deserialise it 
+               DataContractSerializer serializer; 
+               serializer = new DataContractSerializer(typeof(string)); 
+               using (Stream stream = GenerateStreamFromString(deliveredString)) 
+               { 
+                   // Set the UI with the translation 
+                   Results.instance.SetTranslatedResult((string)serializer.ReadObject(stream));    
+               }
+               
+               if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError) 
+               { 
+                   Debug.Log(unityWebRequest.error); 
+               }
+               
+               StopCoroutine("TranslateWithUnityNetworking");              
+           } 
+       } 
+    
+       public static Stream GenerateStreamFromString(string incomingString) 
+       { 
+           MemoryStream stream = new MemoryStream(); 
+           StreamWriter writer = new StreamWriter(stream); 
+           writer.Write(incomingString); 
+           writer.Flush(); 
+           stream.Position = 0; 
+           return stream; 
+       }
+   ```
 
-10.	The code below shows the implementation:
+10.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
 
-```csharp
-    /// <summary> 
-    /// Request a translation from Azure Translation Service by providing a string.  
-    /// Debugging result is delivered to the Results class. 
-    /// </summary> 
-    public IEnumerator TranslateWithUnityNetworking(string text) 
-    { 
-        WWWForm webForm = new WWWForm(); 
-        string result; 
-        string queryString; 
-  
-        // This query string will contain the parameters for the translation 
-        queryString = string.Concat("text=", Uri.EscapeDataString(text), "&from=", from, "&to=",to);        
-  
-        using (UnityWebRequest unityWebRequest = 
-        UnityWebRequest.Get(translationTextEndpoint + queryString))        
-        { 
-            unityWebRequest.downloadHandler = new DownloadHandlerBuffer(); 
-            unityWebRequest.SetRequestHeader("Authorization", "Bearer " + authorizationToken); 
-            unityWebRequest.SetRequestHeader("Accept", "application/xml"); 
-            yield return unityWebRequest.SendWebRequest(); 
- 
-            string deliveredString = unityWebRequest.downloadHandler.text; 
- 
-            // The response will be in Json format 
-            // Therefore we need to deserialise it 
-            DataContractSerializer serializer; 
-            serializer = new DataContractSerializer(typeof(string)); 
-            using (Stream stream = GenerateStreamFromString(deliveredString)) 
-            { 
-                // Set the UI with the translation 
-                Results.instance.SetTranslatedResult((string)serializer.ReadObject(stream));    
-            }
-            
-            if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError) 
-            { 
-                Debug.Log(unityWebRequest.error); 
-            }
-            
-            StopCoroutine("TranslateWithUnityNetworking");              
-        } 
-    } 
- 
-    public static Stream GenerateStreamFromString(string incomingString) 
-    { 
-        MemoryStream stream = new MemoryStream(); 
-        StreamWriter writer = new StreamWriter(stream); 
-        writer.Write(incomingString); 
-        writer.Flush(); 
-        stream.Position = 0; 
-        return stream; 
-    }
-```
-
-11.	Be sure to save your changes in **Visual Studio** before returning to **Unity**.
-
-## **Chapter 8 – Configure the Unity Scene**
+## Chapter 8 – Configure the Unity Scene
 
 1.	Back in the Unity Editor, click and drag the ***Results*** class *from* the **Scripts** folder to the **Main Camera** object in the **Hierarchy Panel**.
 2.	Click on the **Main Camera** and look at the **Inspector Panel**. You will notice that within the newly added *Script* component, there are four fields with empty values. These are the output references to the properties in the code. 
@@ -752,21 +742,21 @@ The result is then used to set the translation in your Results object.
   
 4.	Next, click and drag the ***Translator*** class from the **Scripts** folder to the **Main Camera** object in the **Hierarchy Panel**. 
 5.	Then, click and drag the ***MicrophoneManager*** class from the **Scripts** folder to the **Main Camera** object in the **Hierarchy Panel**. 
-6.	Lastly, click on the **Main Camera** and look at the **Inspector Panel**.
-You will notice that in the script you dragged on, there are two drop down boxes that will allow you to set the languages.
+6.	Lastly, click on the **Main Camera** and look at the **Inspector Panel**. You will notice that in the script you dragged on, there are two drop down boxes that will allow you to set the languages.
  
     ![Ensure the intended translation languages are input.](images/AzureLabs-Lab1-35.png)
 
-## **Chapter 9 – Test in MR**
+## Chapter 9 – Test in mixed reality
+
 At this point you need to test that the Scene has been properly implemented.
 
 Ensure that:
 
--	All the settings mentioned in **Chapter 1** are set correctly. 
--	The ***Results***, ***Translator***, and ***MicrophoneManager***, scripts are attached to the **Main Camera** object. 
--	You have placed your **Azure Translator Text API** service ***Key*** within the **authorizationKey** variable within the ***Translator*** Script.  
--	All the fields in the **Main Camera Inspector Panel** are assigned properly.
-- Your microphone is working when running your scene (if not, check that your attached microphone is the *default* device, and that you have set it up correctly within [Windows](https://support.microsoft.com/en-au/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)).
+- All the settings mentioned in **Chapter 1** are set correctly. 
+- The ***Results***, ***Translator***, and ***MicrophoneManager***, scripts are attached to the **Main Camera** object. 
+- You have placed your **Azure Translator Text API** service ***Key*** within the **authorizationKey** variable within the ***Translator*** Script.  
+- All the fields in the **Main Camera Inspector Panel** are assigned properly.
+- Your microphone is working when running your scene (if not, check that your attached microphone is the *default* device, and that you have [set it up correctly within Windows](https://support.microsoft.com/en-au/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)).
 
 You can test the immersive headset by pressing the ***Play*** button in the **Unity Editor**.
 The App should be functioning through the attached immersive headset.
@@ -774,7 +764,7 @@ The App should be functioning through the attached immersive headset.
 > [!WARNING]  
 > If you see an error in the Unity console about the default audio device changing, the scene may not function as expected. This is due to the way the mixed reality portal deals with built-in microphones for headsets that have them. If you see this error, simply stop the scene and start it again and things should work as expected.
 
-## **Chapter 10 – Build the UWP Solution and Sideload on Local Machine**
+## Chapter 10 – Build the UWP solution and sideload on local machine
 
 Everything needed for the Unity section of this project has now been completed, so it is time to build it from Unity.
 
@@ -788,7 +778,7 @@ Everything needed for the Unity section of this project has now been completed, 
 5.	Unity will begin building your project to the **App** folder. 
 6.	Once Unity has finished building (it might take some time), it will open a **File Explorer** window at the location of your build (check your task bar, as it may not always appear above your windows, but will notify you of the addition of a new window).
 
-## Chapter 11 – Deploy your Application
+## Chapter 11 – Deploy your application
 
 To deploy your application:
 
@@ -808,16 +798,18 @@ To deploy your application:
 6.	Once launched, the App will prompt you to authorize access to the Microphone. Make sure to click the ***YES*** button.
 7.	You are now ready to start translating!
 
-## Exercise
+## Your finished Translation Text API application
 
-**Exercise 1**
-
-Can you add text to speech functionality to the app, so that the returned text, is spoken?
-
-**Exercise 2**
-
-Make it possible to change translation 'from' and 'to', within the app itself, so the app does not need to be rebuilt, every time you want to change languages.
-
-## Your Translation Text API Application
+Congratulations, you built a mixed reality app that leverages the Azure Translation Text API to convert speech to translated text.
 
 ![Final product.](images/AzureLabs-Lab1-00.png)
+
+## Bonus exercises
+
+### Exercise 1
+
+Can you add text-to-speech functionality to the app, so that the returned text is spoken?
+
+### Exercise 2
+
+Make it possible for the user to change the source and output languages ('from' and 'to') within the app itself, so the app does not need to be rebuilt every time you want to change languages.
