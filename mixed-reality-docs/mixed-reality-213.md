@@ -1,6 +1,6 @@
 ---
 title: MR Input 213
-description: Follow this coding walkthrough using Unity, Visual Studio and immersive headsets to learn the details of motion controllers.
+description: Follow this coding tutorial using Unity, Visual Studio and immersive headsets to learn the details of motion controllers.
 author: keveleigh
 ms.author: kurtie
 ms.date: 03/21/2018

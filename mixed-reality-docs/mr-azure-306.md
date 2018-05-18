@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 306 - Streaming video
-description: Azure Lab teaching how to implement Azure Media Services within a mixed reality Unity3D Application.
+description: Complete this course to learn how to implement Azure Media Services within a mixed reality application.
 author: drneil
 ms.author: v-arood
 ms.date: 05/18/2018
@@ -26,8 +26,6 @@ Having completed this course, you will have a mixed reality immersive headset ap
 
 In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
-This course is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
-
 ## Device support
 
 <table>
@@ -38,31 +36,24 @@ This course is a self-contained tutorial, which does not directly involve any ot
 </tr>
 </table>
 
-## **Prerequisites**
-For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
+## Prerequisites
 
-> [!NOTE] 
-> This tutorial is designed for developers who have basic experience with Unity and C#.
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified with all things mentioned within this document. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
+> [!NOTE]
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
 
-The following hardware and software is required:
+We recommend the following hardware and software for this course:
 
-- Windows 10 Fall Creators Update or later.
-- **Developer Mode enabled** 
-- Windows 10 SDK (latest version) 
-- [Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
-- An Immersive Headset
-- Visual Studio 2017.15.4 or higher
-- A PC compatible with Windows Mixed Reality
-- Two 360 Videos in mp4 format. 
-  > - You can find some Royalty-free videos by following this [LINK](https://www.mettle.com/360vr-master-series-free-360-downloads-page).
-- A subscription to an **Azure Account**, for creating Azure
-  resources.
-- Internet Access for creation of Azure resources, and for data
-  retrieval.
-- The Azure account which is used, **must have admin privileges**, to access the Azure Media Service.
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md)
+- A subscription to an Azure account for creating Azure resources (the Azure account must have administrator privileges to access Azure Media Service)
+- Internet access for Azure setup and data retrieval
+- Two 360-degree videos in mp4 format (you can find some royalty-free videos [at this download page](https://www.mettle.com/360vr-master-series-free-360-downloads-page))
 
-### Before you start
+## Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
 

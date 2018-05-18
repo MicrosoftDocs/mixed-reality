@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 301 - Language translation
-description: Azure Lab teaching how to implement Azure Translator Text API within a mixed reality Unity3D Application.
+description: Complete this course to learn how to implement the Azure Translator Text API within a mixed reality application.
 author: drneil
 ms.author: v-arood
 ms.date: 05/18/2018
@@ -23,8 +23,6 @@ Upon completion of this course, you will have a mixed reality application which 
 
 This course will teach you how to get the results from the translator service into a Unity-based sample application. It will be up to you to apply these concepts to a custom application you might be building.
 
-
-
 ## Device support
 
 <table>
@@ -45,14 +43,14 @@ This course will teach you how to get the results from the translator service in
 
 We recommend the following hardware and software for this course:
 
-- A [PC compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
 - [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
 - [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
 - [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
 - [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md)
+- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
-- Internet access for Azure and translation retrieval.
+- Internet access for Azure setup and translation retrieval
 
 ## Before you start
 

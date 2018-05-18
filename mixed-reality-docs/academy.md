@@ -240,7 +240,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 301: Language translation</h3>
-                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                              <p>Using the Azure Translator Text API, your mixed reality app can translate speech to text in another language. Learn how in this course!</p>
                                           </div>
                                       </div>
                                   </div>
@@ -259,7 +259,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 302: Computer vision</h3>
-                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                              <p>This course will teach you how to use Azure Computer Vision APIs in a mixed reality app for image processing and analysis.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -278,7 +278,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 303: Natural language understanding</h3>
-                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                              <p>This course will teach you how to use the Azure Language Understanding (LUIS) service to add natural language understanding into your mixed reality app.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -297,7 +297,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 304: Face recognition</h3>
-                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                              <p>Learn how to use the Azure Face API to perform face detection and recognition in your mixed reality app.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -316,7 +316,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 305: Functions and storage</h3>
-                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                              <p>In this course you will learn how to create and use Azure Functions, and store data within Azure Storage, within a mixed reality app.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -335,7 +335,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 306: Streaming video</h3>
-                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                              <p>Learn how to use Azure Media Services to stream 360-degree video within a Windows Mixed Reality immersive (VR) experience.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -354,7 +354,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 307: Machine learning</h3>
-                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                              <p>Leverage Azure Machine Learning Studio within your mixed reality app to deploy a large number of machine learning (ML) algorithms.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -373,7 +373,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 308: Cross-device notifications</h3>
-                                              <p>I need to write a description for this course. It should probably be about this long. Or actually, come to think of it, it should probably be this long.</p>
+                                              <p>In this course, you'll learn how to use several Azure services to deliver push notifications and scene changes from a PC app to a mixed reality app.</p>
                                           </div>
                                       </div>
                                   </div>

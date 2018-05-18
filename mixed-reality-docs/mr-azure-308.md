@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 308 - Cross-device notifications
-description: Azure Lab teaching how to implement Azure Notification Hubs, Azure Functions, Azure Storage and Tables, within a mixed reality Unity3D Application.
+description: Complete this course to learn how to implement Azure Notification Hubs, Azure Functions, and Azure Storage and Tables within a mixed reality application.
 author: drneil
 ms.author: v-arood
 ms.date: 05/18/2018
@@ -31,17 +31,16 @@ needed, and thus is very flexible. For more information, visit the **Azure Table
 
 Having completed this course, you will have a mixed reality immersive headset application, and a Desktop PC application, which will be able to do the following:
 
-1.  The Desktop PC app will allow the user to move an object in 2D space (X and Y), 
+1. The Desktop PC app will allow the user to move an object in 2D space (X and Y), 
 using the mouse.
-2.  The movement of objects within the PC app will be sent to the cloud using JSON, 
+2. The movement of objects within the PC app will be sent to the cloud using JSON, 
 which will be in the form of a string, containing an object ID, type, and transform
 information (X and Y coordinates). 
-3.  The mixed reality app, which has an identical scene to the desktop app, 
+3. The mixed reality app, which has an identical scene to the desktop app,
 will receive notifications regarding object movement, from the Notification Hubs service (which has just been updated by the Desktop PC app). 
 4. Upon receiving a notification, which will contain the object ID, type, and transform
 information, the mixed reality app will apply the received information
 to its own scene.
-
 
 In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
@@ -57,32 +56,31 @@ This course is a self-contained tutorial, which does not directly involve any ot
 </tr>
 </table>
 
+> [!NOTE]
+> While this course primarily focuses on Windows Mixed Reality immersive (VR) headsets, you can also apply what you learn in this course to Microsoft HoloLens. As you follow along with the course, you will see notes on any changes you might need to employ to support HoloLens. When using HoloLens, you may notice some echo during voice capture.
+
 ## Prerequisites
 
-For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
+## Prerequisites
 
-> [!NOTE] 
-> This tutorial is designed for developers who have basic experience with Unity and C#.
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
+> [!NOTE]
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
 
-The following hardware and software is required:
+We recommend the following hardware and software for this course:
 
-- Windows 10 Fall Creators Update, **Developer Mode enabled** 
-- Windows 10 SDK (latest version)     
-- [Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
-- An immersive headset
-- Visual Studio 2017.15.4 or higher
-- A PC compatible with Windows mixed reality
-- A subscription to **Azure Notification Hubs**.
-- Internet Access for Azure, and to access Notification Hubs.
-- You must be the **owner** of your Microsoft Developer Portal and your Application Registration Portal, otherwise you will not have permission to access the app in **Chapter 2**.
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
+- A subscription to Azure Notification Hubs
+- Internet access for Azure setup and to access Notification Hubs
 
-> [!NOTE] 
-> It is also possible to develop this course for the Microsoft HoloLens. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with the Microsoft HoloLens. 
-
-### Before you start
+## Before you start
 
 - To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
+- You must be the owner of your Microsoft Developer Portal and your Application Registration Portal, otherwise you will not have permission to access the app in **Chapter 2**.
 
 ## Chapter 1 - Create an Application on the Microsoft Developer Portal
 

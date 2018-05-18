@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 304 - Face recognition
-description: Azure Lab teaching how to implement Azure Face Recognition within a mixed reality Unity3D Application.
+description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: drneil
 ms.author: v-arood
 ms.date: 05/18/2018
@@ -22,11 +22,9 @@ Having completed this course, you will have a mixed reality HoloLens application
 3. Receive the results of the **Face API** algorithm.
 4. Use a simple User Interface, to display the name of matched people.
 
-This will teach you how to get the results from the Face API Service into your Unity3D application.
+This will teach you how to get the results from the Face API Service into your Unity-based mixed reality application.
 
 In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
-
-This course is a self-contained tutorial, which does not directly involve any other Mixed Reality Labs.
 
 ## Device support
 
@@ -38,30 +36,27 @@ This course is a self-contained tutorial, which does not directly involve any ot
 </tr>
 </table>
 
+> [!NOTE]
+> While this course primarily focuses on HoloLens, you can also apply what you learn in this course to Windows Mixed Reality immersive (VR) headsets. Because immersive (VR) headsets do not have accessible cameras, you will need an external camera connected to your PC. As you follow along with the course, you will see notes on any changes you might need to employ to support immersive (VR) headsets.
+
 ## Prerequisites
 
-For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens and immersive headsets, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article. 
+> [!NOTE]
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
 
-> [!NOTE] 
-> This tutorial is designed for developers who have basic experience with Unity and C#.
-Please also be aware that the prerequisites, and written instructions, within this document represent what has been tested and verified at the time of writing. You are free to use the latest tools, as mentioned within the *Install the tools* article, though it should not be assumed that the documents information will continue to be valid, should you use a different version of any of the below prerequisites.
+We recommend the following hardware and software for this course:
 
-The following hardware and software is required:
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
+- A camera connected to your PC (for immersive headset development)
+- A subscription to Azure Face API Service, with the Auth Key
+- Internet access for Azure setup and Face API retrieval
 
--	Windows 10 Fall Creators Update, Developer Mode enabled
--	Windows 10 SDK (latest version)
-- [Unity 2017.4.1f1](https://unity3d.com/unity/qa/lts-releases?version=2017.4)
--	A HoloLens, Developer Mode enabled
--	Visual Studio 2017.15.4 or higher
--	A PC compatible with Windows Mixed Reality 
--	A subscription to **Azure Face API Service**, with the Auth Key
--	Internet Access for Azure, and for Face API retrieval. 
-
-> [!NOTE] 
-> It is also possible to develop this course for immersive headsets. Follow the document as is, and throughout you will be provided with information for any specific section which might need to be different, so to work with immersive headsets.  
-> Please also be aware, that you will need a **camera** available for use with capture (either internal within your computer or external USB) as current immersive headsets do not have cameras.
-
-### Before you start
+## Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
 2.	Set up and test your HoloLens. If you need support setting up your HoloLens, please click [HERE](https://docs.microsoft.com/en-us/hololens/hololens-setup). 
