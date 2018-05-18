@@ -1,5 +1,5 @@
 ---
-title: Holograms 212
+title: MR Input 212: Voice
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of voice concepts.
 author: keveleigh
 ms.author: kurtie
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, voice
 ---
 
-# Holograms 212
+# MR Input 212: Voice
 
 [Voice input](voice-input.md) gives us another way to interact with our holograms. Voice commands work in a very natural and easy way. Design your voice commands so that they are:
 
@@ -19,7 +19,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 >[!VIDEO https://www.youtube.com/embed/BYpYsVFYjdw]
 
-In [Holograms 101](holograms-101.md), we used the KeywordRecognizer to build two simple voice commands. In Holograms 212, we'll dive deeper and learn how to:
+In [MR Basics 101](holograms-101.md), we used the KeywordRecognizer to build two simple voice commands. In MR Input 212, we'll dive deeper and learn how to:
 
 * Design voice commands that are optimized for the HoloLens speech engine.
 * Make the user aware of what voice commands are available.
@@ -27,20 +27,31 @@ In [Holograms 101](holograms-101.md), we used the KeywordRecognizer to build two
 * Understand what the user is saying, using a Dictation Recognizer.
 * Use a Grammar Recognizer to listen for commands based on an SRGS, or Speech Recognition Grammar Specification, file.
 
-In this course, we'll revisit Model Explorer, which we built in [Holograms 210](holograms-210.md) and [Holograms 211](holograms-211.md).
+In this course, we'll revisit Model Explorer, which we built in [MR Input 210](holograms-210.md) and [MR Input 211](holograms-211.md).
 
 >[!IMPORTANT]
 >The videos embedded in each of the chapters below were recorded using an older version of Unity and the Mixed Reality Toolkit. While the step-by-step instructions are accurate and current, you may see scripts and visuals in the corresponding videos that are out-of-date. The videos remain included for posterity and because the concepts covered still apply.
 
-## Getting Started
+
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Input 212: Voice</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
+## Before you start
 
 ### Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [Holograms 101](holograms-101.md).
-* You should have completed [Holograms 210](holograms-210.md).
-* You should have completed [Holograms 211](holograms-211.md).
+* You should have completed [MR Basics 101](holograms-101.md).
+* You should have completed [MR Input 210](holograms-210.md).
+* You should have completed [MR Input 211](holograms-211.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
