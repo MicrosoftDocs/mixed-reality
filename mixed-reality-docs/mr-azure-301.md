@@ -261,28 +261,27 @@ To show the input and output of the translation, a basic UI needs to be created.
     3. Also, make the Font Style **Bold**. This will make the text easier to read.
 
         ![Bold Font.](images/AzureLabs-Lab1-25.png)
- 
-7.	For each **UI Text object** created in **Chapter 5**, create a new ***child*** **UI Text object**. These children will display the output of the application.
-   > Create ***child*** objects through right-clicking your intended parent (e.g. ***MicrophoneStatusLabel***) and then select ***UI*** and then select ***Text***.
+
+7.	For each **UI Text object** created in **Chapter 5**, create a new ***child*** **UI Text object**. These children will display the output of the application. Create ***child*** objects through right-clicking your intended parent (e.g. ***MicrophoneStatusLabel***) and then select ***UI*** and then select ***Text***.
 8.	For each of these children, select it and use the below tables to set the parameters in the Inspector Panel.
 
     1. For the **Rect Transform** component:
 
-    | Name                  | Transform - *Position* | Width      | Height    |
-    |:---------------------:|:----------------------:|:----------:|:---------:|
-    | MicrophoneStatusText  | X 0 Y -30 Z 0          | 300        | 30        |
-    | AzureResponseText     | X 0 Y -30 Z 0          | 300        | 30        |
-    | DictationText         | X 0 Y -30 Z 0          | 300        | 30        |
-    | TranslationResultText | X 0 Y -30 Z 0          | 300        | 30        |
+        | Name                  | Transform - *Position* | Width      | Height    |
+        |:---------------------:|:----------------------:|:----------:|:---------:|
+        | MicrophoneStatusText  | X 0 Y -30 Z 0          | 300        | 30        |
+        | AzureResponseText     | X 0 Y -30 Z 0          | 300        | 30        |
+        | DictationText         | X 0 Y -30 Z 0          | 300        | 30        |
+        | TranslationResultText | X 0 Y -30 Z 0          | 300        | 30        |
 
     2. For the **Text (Script)** component:
 
-    | Name                  | Text          | Font Size    |
-    |:---------------------:|:-------------:|:------------:|
-    | MicrophoneStatusText  |      ??       | 20           |
-    | AzureResponseText     |      ??       | 20           |
-    | DictationText         |      ??       | 20           |
-    | TranslationResultText |      ??       | 20           |
+        | Name                  | Text          | Font Size    |
+        |:---------------------:|:-------------:|:------------:|
+        | MicrophoneStatusText  |      ??       | 20           |
+        | AzureResponseText     |      ??       | 20           |
+        | DictationText         |      ??       | 20           |
+        | TranslationResultText |      ??       | 20           |
 
 9. Next, select the 'centre' alignment option for each text component:
 
@@ -329,16 +328,16 @@ To create this class:
 3.	Double click on the new ***Results*** script to open it with **Visual Studio**.
 4.	Insert the following namespaces:
 
-   ```csharp
-       using System.Collections;
-       using System.Collections.Generic;
-       using UnityEngine;
-       using UnityEngine.UI;
-   ```
+    ```cs
+        using System.Collections;
+        using System.Collections.Generic;
+        using UnityEngine;
+        using UnityEngine.UI;
+    ```
 
 5.	Inside the Class insert the following variables:
 
-   ```csharp
+   ```cs
        public static Results instance;
    
        [HideInInspector] 
