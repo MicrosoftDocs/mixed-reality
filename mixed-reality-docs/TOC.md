@@ -210,7 +210,6 @@
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 
 ## Mixed reality release notes
-### [HoloLens RS4 Preview](hololens-rs4-preview.md)
 ### [Current release notes](release-notes.md)
 ### [Release notes - October 2017](release-notes-october-2017.md)
 ### [Release notes - August 2016](release-notes-august-2016.md)
