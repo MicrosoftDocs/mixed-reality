@@ -22,7 +22,7 @@ To update to the latest release on HoloLens, you'll need to [manually install th
 >Installing the Windows 10 April 2018 Update for HoloLens with WDRT will delete existing data, like personal files and settings, from your HoloLens. If you’d like to maintain your HoloLens data while updating, please wait for the update to be delivered via Windows Update in the coming weeks.
 
 **Latest release for Desktop:** Windows 10 April 2018 Update (**10.0.17134.1**)<br>
-**Latest release for HoloLens:** Windows 10 April 2018 Update (**10.0.17134.81**)<br>
+**Latest release for HoloLens:** Windows 10 April 2018 Update (**10.0.17134.80**)<br>
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/O-84oWjSbr0]
