@@ -176,7 +176,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
 
 ## Known issues
 
-We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [Give us feedback](give-us-feedback.md).
+We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](give-us-feedback.md).
 
 ### For developers: updating HoloLens apps for devices running Windows 10 April 2018 Update
 
