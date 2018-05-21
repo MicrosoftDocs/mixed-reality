@@ -143,7 +143,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
   </tr>
   </tr>
   <tr>
-    <td>Configurable setup (OOBE)</td><td>Hide calibration, gesture/gaze training, and Wi-Fi configuration screens during setup.</td><td><a href=" https://docs.microsoft.com/en-us/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
+    <td>Configurable setup (OOBE)</td><td>Hide calibration, gesture/gaze training, and Wi-Fi configuration screens during setup.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
   <td>Windows Configuration Designer (WCD)</td><td>Create and edit provisioning packages to configure HoloLens via updated WCD app. New simple HoloLens wizard for edition update, configurable OOBE, region/time zone, bulk Azure AD token, network, and developer CSP. Advanced editor filtered to HoloLens supported options, including new Assigned Access and Account Management CSPs.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
