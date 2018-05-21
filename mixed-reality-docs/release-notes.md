@@ -19,7 +19,7 @@ To update to the latest release on PC for Windows Mixed Reality immersive (VR) h
 To update to the latest release on HoloLens, you'll need to [manually install the software using the Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/en-us/help/12643/hololens-update-hololens).
 
 >[!IMPORTANT]
->Installing the Windows 10 April 2018 Update for HoloLens with WDRT will delete existing data, like personal files and settings, from your HoloLens. If you’d like to maintain your HoloLens data while updating, please wait for the update to be delivered via Windows Update in the coming weeks.
+>Installing the Windows 10 April 2018 Update for HoloLens using WDRT will delete existing data, like personal files and settings, from your HoloLens. If you’d like to maintain your HoloLens data while updating, please wait for the update to be delivered via Windows Update in the coming weeks.
 
 **Latest release for Desktop:** Windows 10 April 2018 Update (**10.0.17134.1**)<br>
 **Latest release for HoloLens:** Windows 10 April 2018 Update (**10.0.17134.80**)<br>
@@ -178,7 +178,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
 
 We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [Give us feedback](give-us-feedback.md).
 
-### For developers: Updating HoloLens apps for devices running Windows 10 April 2018 Update
+### For developers: updating HoloLens apps for devices running Windows 10 April 2018 Update
 
 Along with a great list of [new features](#new-features-for-hololens), the Windows 10 April 2018 Update (RS4) for HoloLens enforces some code behaviors that previous versions did not:
 * **Permission requests to use sensitive resources (camera, microphone, etc.)** - RS4 on HoloLens will enforce permission requests for apps intending to access sensitive resources, such as the camera or microphone. RS1 on HoloLens did not force these prompts, so, if your app assumes immediate access to these resources, it may crash in RS4 (even if the user grants permission to the requested resource). Please read the relevant [UWP app capability declarations article](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) for more information.
