@@ -119,13 +119,13 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
     <th>Feature</th><th>Details</th><th>Instructions</th>
   </tr>
   <tr>
-    <td>Use multiple AAD user accounts on a single device</td><td>Share a HoloLens with multiple AAD users, each with their own user settings and user data on device.</td><td><b>Initial setup:</b> During setup, you must sign in with an AAD account using the option "My work or school owns it". After setup, ensure that the "Windows Holographic for Business" edition update has been applied (<b>Settings >  System > About</b>), and that "Other People" appears in <b>Settings > Accounts</b>.<br><br><b>Adding a user:</b><ol><li>Trigger sign in by pressing the power button once to go to standby, and again to return to the lock screen <b>or</b> by selecting the user tile on the upper right of the Start menu to sign out the current user.</li><li>In <b>Other user</b> to the right of the current user, enter email address and password as prompted.</li></ol><b>Subsequent sign-ins</b><ol><li>Trigger sign in by pressing the power button once to go to standby, and again to return to the lock screen <b>or</b> by selecting the user tile on the upper right of the Start menu to sign out the current user.</li><li>If you are the current user on the center panel, or previous user on the left panel, you can sign in with your password/PIN</li><li>If you do not appear on the left or center panel, you can sign in using <b>Other user</b> on the right panel by entering your email address and password as prompted.</li></ol><b>To see other user accounts on the device:</b> Go to <b>Settings > Accounts > Other users</b>.<br><br><b>To remove a user from the device:</b> Go to <b>Settings > Accounts > Other users</b> and select <b>Remove</b> to remove the undesired user.<br><br><b>Note:</b> Each subsequent user will need to perform calibration in order to set their correct IPD while signed in.</td>
+    <td>Use multiple AAD user accounts on a single device</td><td>Share a HoloLens with multiple AAD users, each with their own user settings and user data on device.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-multiple-users">IT Pro Center: Share HoloLens with multiple people</a></td>
   </tr>
   <tr>
     <td>Change Wi-Fi network on sign-in</td><td>Change Wi-Fi network before sign-in to enable another user to sign in with his or her AAD user account for the first time, allowing users to share devices at various locations and job sites.</td><td>On the sign-in screen, you can use the network icon below the password field to connect to a network. This is helpful when this is your first time signing into a device.</td>
   </tr>
   <tr>
-    <td>Unified enrollment</td><td>It's now easy for a HoloLens user who set up the device with a personal Microsoft account to add a work account (AAD) and join the device to their MDM server.</td><td>If you originally signed in with a Microsoft account, you can now add a work account (AAD) via <b> Settings > Accounts > Access Work or School > Connect</b></td>
+    <td>Unified enrollment</td><td>It's now easy for a HoloLens user who set up the device with a personal Microsoft account to add a work account (AAD) and join the device to their MDM server.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-enroll-mdm#enroll-through-settings-app">IT Pro Center: Enroll HoloLens in MDM</a></td>
   </tr>
   <tr>
     <td>Mail Sync without MDM enrollment</td><td>Support for Exchange Active Sync (EAS) mail sync without requiring MDM enrollment.</td><td>You can now sync email without enrolling in MDM. You can set up the device with a Microsoft Account, download and install the Mail app, and add a work email account directly.</td>
@@ -139,26 +139,26 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
     <th>Feature</th><th>Details</th><th>Instructions</th>
   </tr>
   <tr>
-    <td>New OS name when Commercial Suite features enabled: "Windows Holographic for Business"</td><td>Clear edition naming to reduce confusion on edition upgrade license application.</td><td>You can see what edition of Windows Holographic is running in <b>Settings > System > About</b>. "Windows Holographic for Business" will appear if an edition update has been applied to enable Commercial Suite features.</td>
+    <td>New OS name when Commercial Suite features enabled: "Windows Holographic for Business"</td><td>Clear edition naming to reduce confusion on edition upgrade license application.</td><td>You can see which edition of Windows Holographic is on your device in <b>Settings > System > About</b>. "Windows Holographic for Business" will appear if an edition update has been applied to enable Commercial Suite features. Learn how to <a href="https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise>unlock Windows Holographic for Business features</a>.</td>
   </tr>
   </tr>
   <tr>
-    <td>Configurable setup (OOBE)</td><td>Hide calibration, gesture/gaze training, and Wi-Fi configuration screens during setup.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+    <td>Configurable setup (OOBE)</td><td>Hide calibration, gesture/gaze training, and Wi-Fi configuration screens during setup.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
-  <td>Windows Configuration Designer (WCD)</td><td>Create and edit provisioning packages to configure HoloLens via updated WCD app. New simple HoloLens wizard for edition update, configurable OOBE, region/time zone, bulk AAD token, network, and developer CSP. Advanced editor filtered to HoloLens supported options, including new Assigned Access and Account Management CSPs.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+  <td>Windows Configuration Designer (WCD)</td><td>Create and edit provisioning packages to configure HoloLens via updated WCD app. New simple HoloLens wizard for edition update, configurable OOBE, region/time zone, bulk AAD token, network, and developer CSP. Advanced editor filtered to HoloLens supported options, including new Assigned Access and Account Management CSPs.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
-    <td>Bulk AAD token support</td><td>Pre-register device to AAD directory tenant for quicker user setup flow.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+    <td>Bulk AAD token support</td><td>Pre-register device to AAD directory tenant for quicker user setup flow.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
-  <td>Developer CSP</td><td>Deploy profile to set up HoloLens in <b>Developer mode</b>. Useful for both development and demo devices.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+  <td>Developer CSP</td><td>Deploy profile to set up HoloLens in <b>Developer mode</b>. Useful for both development and demo devices.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
-  <td>Assigned access</td><td>Windows assigned access for first-line workers or demos. Single or multi-app lockdown. No need to developer unlock.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+  <td>Assigned access</td><td>Windows assigned access for first-line workers or demos. Single or multi-app lockdown. No need to developer unlock.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-kiosk">IT Pro Center: Set up HoloLens in kiosk mode</a></td>
   </tr>
   <tr>
-  <td>Assigned access with guest</td><td>Windows assigned access with password-less guest account for demos. Single or multi-app lockdown. No need to developer unlock.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+  <td>Assigned access with guest</td><td>Windows assigned access with password-less guest account for demos. Single or multi-app lockdown. No need to developer unlock.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-kiosk">IT Pro Center: Set up HoloLens in kiosk mode</a></td>
   </tr>
   <tr>
   <td>Account management</td><td>Share a HoloLens device and remove user data after sign-out or inactivity/storage thresholds for temporary usage. Supports AAD accounts.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
