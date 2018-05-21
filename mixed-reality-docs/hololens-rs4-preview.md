@@ -9,6 +9,6 @@ keywords: HoloLens, preview, insider, os, rs4, new features
 
 # HoloLens RS4 Preview
 
-Good news: The Windows 10 April 2018 Update for HoloLens is now available for all HoloLens customers (and no longer in preview). On behalf of the whole team, thank you for being a part of the HoloLens RS4 Preview program and for the feedback you shared. You've helped us deliver what we think is a great step forward for HoloLens with a ton of new features.
+Good news: The **Windows 10 April 2018 Update for HoloLens is now available for all HoloLens customers** (and no longer in preview). On behalf of the whole team, thank you for being a part of the HoloLens RS4 Preview program and for the feedback you shared. You've helped us deliver what we think is a great step forward for HoloLens with a ton of new features.
 
 Please see the [current release notes](release-notes.md) for installation instructions and the most up-to-date list of new features.
