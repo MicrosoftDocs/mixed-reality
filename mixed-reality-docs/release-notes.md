@@ -139,7 +139,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
     <th>Feature</th><th>Details</th><th>Instructions</th>
   </tr>
   <tr>
-    <td>New "Windows Holographic for Business" OS name</td><td>Clear edition naming to reduce confusion on edition upgrade license application when Commercial Suite features are enabled on HoloLens.</td><td>You can see which edition of Windows Holographic is on your device in <b>Settings > System > About</b>. "Windows Holographic for Business" will appear if an edition update has been applied to enable Commercial Suite features. Learn how to .</td>
+    <td>New "Windows Holographic for Business" OS name</td><td>Clear edition naming to reduce confusion on edition upgrade license application when Commercial Suite features are enabled on HoloLens.</td><td>You can see which edition of Windows Holographic is on your device in <b>Settings > System > About</b>. "Windows Holographic for Business" will appear if an edition update has been applied to enable Commercial Suite features. Learn how to <a href="https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise">unlock Windows Holographic for Business features</a>.</td>
   </tr>
   </tr>
   <tr>
