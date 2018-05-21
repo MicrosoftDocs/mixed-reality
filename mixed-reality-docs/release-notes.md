@@ -119,13 +119,13 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
     <th>Feature</th><th>Details</th><th>Instructions</th>
   </tr>
   <tr>
-    <td>Use multiple AAD user accounts on a single device</td><td>Share a HoloLens with multiple AAD users, each with their own user settings and user data on device.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-multiple-users">IT Pro Center: Share HoloLens with multiple people</a></td>
+    <td>Use multiple Azure Active Directory user accounts on a single device</td><td>Share a HoloLens with multiple Azure AD users, each with their own user settings and user data on device.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-multiple-users">IT Pro Center: Share HoloLens with multiple people</a></td>
   </tr>
   <tr>
-    <td>Change Wi-Fi network on sign-in</td><td>Change Wi-Fi network before sign-in to enable another user to sign in with his or her AAD user account for the first time, allowing users to share devices at various locations and job sites.</td><td>On the sign-in screen, you can use the network icon below the password field to connect to a network. This is helpful when this is your first time signing into a device.</td>
+    <td>Change Wi-Fi network on sign-in</td><td>Change Wi-Fi network before sign-in to enable another user to sign in with his or her Azure AD user account for the first time, allowing users to share devices at various locations and job sites.</td><td>On the sign-in screen, you can use the network icon below the password field to connect to a network. This is helpful when this is your first time signing into a device.</td>
   </tr>
   <tr>
-    <td>Unified enrollment</td><td>It's now easy for a HoloLens user who set up the device with a personal Microsoft account to add a work account (AAD) and join the device to their MDM server.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-enroll-mdm#enroll-through-settings-app">IT Pro Center: Enroll HoloLens in MDM</a></td>
+    <td>Unified enrollment</td><td>It's now easy for a HoloLens user who set up the device with a personal Microsoft account to add a work account (Azure AD) and join the device to their MDM server.</td><td>Simply sign in with an Azure AD account, and enrollment happens automatically.</td>
   </tr>
   <tr>
     <td>Mail Sync without MDM enrollment</td><td>Support for Exchange Active Sync (EAS) mail sync without requiring MDM enrollment.</td><td>You can now sync email without enrolling in MDM. You can set up the device with a Microsoft Account, download and install the Mail app, and add a work email account directly.</td>
@@ -143,13 +143,13 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
   </tr>
   </tr>
   <tr>
-    <td>Configurable setup (OOBE)</td><td>Hide calibration, gesture/gaze training, and Wi-Fi configuration screens during setup.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
+    <td>Configurable setup (OOBE)</td><td>Hide calibration, gesture/gaze training, and Wi-Fi configuration screens during setup.</td><td><a href=" https://docs.microsoft.com/en-us/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
-  <td>Windows Configuration Designer (WCD)</td><td>Create and edit provisioning packages to configure HoloLens via updated WCD app. New simple HoloLens wizard for edition update, configurable OOBE, region/time zone, bulk AAD token, network, and developer CSP. Advanced editor filtered to HoloLens supported options, including new Assigned Access and Account Management CSPs.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
+  <td>Windows Configuration Designer (WCD)</td><td>Create and edit provisioning packages to configure HoloLens via updated WCD app. New simple HoloLens wizard for edition update, configurable OOBE, region/time zone, bulk Azure AD token, network, and developer CSP. Advanced editor filtered to HoloLens supported options, including new Assigned Access and Account Management CSPs.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
-    <td>Bulk AAD token support</td><td>Pre-register device to AAD directory tenant for quicker user setup flow.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
+    <td>Bulk Azure AD token support</td><td>Pre-register device to Azure AD directory tenant for quicker user setup flow.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
   <td>Developer CSP</td><td>Deploy profile to set up HoloLens in <b>Developer mode</b>. Useful for both development and demo devices.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
@@ -161,10 +161,10 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
   <td>Assigned access with guest</td><td>Windows assigned access with password-less guest account for demos. Single or multi-app lockdown. No need to developer unlock.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-kiosk">IT Pro Center: Set up HoloLens in kiosk mode</a></td>
   </tr>
   <tr>
-  <td>Account management</td><td>Share a HoloLens device and remove user data after sign-out or inactivity/storage thresholds for temporary usage. Supports AAD accounts.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
+  <td>Account management</td><td>Share a HoloLens device and remove user data after sign-out or inactivity/storage thresholds for temporary usage. Supports Azure AD accounts.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
   </tr>
   <tr>
-    <td>Set up (OOBE) diagnostics</td><td>Get diagnostic logs from HoloLens so you can troubleshoot AAD sign-in failures (before Feedback Hub is available to the user whose sign-in failed).</td><td>Diagnostic logs are now available in some cases if you have problems adding your work account during initial device setup. When available, select <b>Collect info</b>. You can connect your HoloLens to a desktop PC and copy the diagnostic files to use for troubleshooting the issue.</td>
+    <td>Set up (OOBE) diagnostics</td><td>Get diagnostic logs from HoloLens so you can troubleshoot Azure AD sign-in failures (before Feedback Hub is available to the user whose sign-in failed).</td><td>Diagnostic logs are now available in some cases if you have problems adding your work account during initial device setup. When available, select <b>Collect info</b>. You can connect your HoloLens to a desktop PC and copy the diagnostic files to use for troubleshooting the issue.</td>
   </tr>
   <tr>
     <td>Local account indefinite password expiry</td><td>Remove disruption of device reset when local account password expires.</td><td>When provisioning a local account, you no longer need to change the password every 42 days in <b>Settings</b>, as the account password no longer expires.</td>
