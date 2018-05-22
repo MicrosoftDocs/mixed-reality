@@ -3,7 +3,7 @@ title: Release notes
 description: HoloLens and Windows Mixed Reality release notes for the Windows 10 April 2018 Update (also known as RS4).
 author: mattzmsft
 ms.author: mazeller
-ms.date: 05/04/2018
+ms.date: 05/21/2018
 ms.topic: article
 keywords: release notes, version, windows 10, build, rs4, os
 ---
