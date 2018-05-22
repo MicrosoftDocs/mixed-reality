@@ -108,7 +108,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
 </td>
   </tr>
   <tr>
-      <td>Research mode</td><td>Allows developers to access key HoloLens sensors when building academic and industrial applications to test new ideas in the fields of computer vision and robotics:<ul><li>The four <b>environment tracking cameras</b> used by the system for spatial map building and head-tracking.</li><li>Two versions of the <b>depth mapping camera data</b> - one for high-frequency (30 fps) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1 fps) far-depth sensing, currently used by spatial mapping.</li><li>Two versions of an <b>IR-reflectivity stream</b>, used to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.</li></ul></td><td><a href="research-mode.md">Research mode documentation</a><br><a href="https://github.com/Microsoft/HoloLensForCV">Research mode sample apps</a></td>
+      <td>Research mode</td><td>Allows developers to access key HoloLens sensors when building academic and industrial applications to test new ideas in the fields of computer vision and robotics, including:<ul><li>The four environment tracking cameras</li><li>Two versions of the depth mapping camera data</li><li>Two versions of an IR-reflectivity stream</li></ul></td><td><a href="research-mode.md">Research mode documentation</a><br><a href="https://github.com/Microsoft/HoloLensForCV">Research mode sample apps</a></td>
   </tr>
 </table>
 
@@ -141,27 +141,23 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
   <tr>
     <td>New "Windows Holographic for Business" OS name</td><td>Clear edition naming to reduce confusion on edition upgrade license application when Commercial Suite features are enabled on HoloLens.</td><td>You can see which edition of Windows Holographic is on your device in <b>Settings > System > About</b>. "Windows Holographic for Business" will appear if an edition update has been applied to enable Commercial Suite features. Learn how to <a href="https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise">unlock Windows Holographic for Business features</a>.</td>
   </tr>
+  <tr>
+  <td>Windows Configuration Designer (WCD)</td><td>Create and edit provisioning packages to configure HoloLens via updated WCD app. Simple HoloLens wizard for edition update, configurable OOBE, region/time zone, bulk Azure AD token, network, and developer CSP. Advanced editor filtered to HoloLens supported options, including Assigned Access and Account Management CSPs.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
     <td>Configurable setup (OOBE)</td><td>Hide calibration, gesture/gaze training, and Wi-Fi configuration screens during setup.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
-  <td>Windows Configuration Designer (WCD)</td><td>Create and edit provisioning packages to configure HoloLens via updated WCD app. Simple HoloLens wizard for edition update, configurable OOBE, region/time zone, bulk Azure AD token, network, and developer CSP. Advanced editor filtered to HoloLens supported options, including Assigned Access and Account Management CSPs.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
-  </tr>
-  <tr>
     <td>Bulk Azure AD token support</td><td>Pre-register device to Azure AD directory tenant for quicker user setup flow.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
-  <td>Developer CSP</td><td>Deploy profile to set up HoloLens in <b>Developer mode</b>. Useful for both development and demo devices.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
+  <td>DeveloperSetup CSP</td><td>Deploy profile to set up HoloLens in Developer mode. Useful for both development and demo devices.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
+  </tr>
+  <tr>
+  <td>AccountManagement CSP</td><td>Share a HoloLens device and remove user data after sign-out or inactivity/storage thresholds for temporary usage. Supports Azure AD accounts.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-provisioning">IT Pro Center: Configure HoloLens using a provisioning package</a></td>
   </tr>
   <tr>
   <td>Assigned access</td><td>Windows assigned access for first-line workers or demos. Single or multi-app lockdown. No need to developer unlock.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-kiosk">IT Pro Center: Set up HoloLens in kiosk mode</a></td>
-  </tr>
-  <tr>
-  <td>Assigned access with guest</td><td>Windows assigned access with password-less guest account for demos. Single or multi-app lockdown. No need to developer unlock.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-kiosk">IT Pro Center: Set up HoloLens in kiosk mode</a></td>
-  </tr>
-  <tr>
-  <td>Account management</td><td>Share a HoloLens device and remove user data after sign-out or inactivity/storage thresholds for temporary usage. Supports Azure AD accounts.</td><td>The necessary tools for this feature will be made available with the official public release of RS4 for HoloLens.</td>
   </tr>
   <tr>
     <td>Set up (OOBE) diagnostics</td><td>Get diagnostic logs from HoloLens so you can troubleshoot Azure AD sign-in failures (before Feedback Hub is available to the user whose sign-in failed).</td><td>Diagnostic logs are now available in some cases if you have problems adding your work account during initial device setup. When available, select <b>Collect info</b>. You can connect your HoloLens to a desktop PC and copy the diagnostic files to use for troubleshooting the issue.</td>
