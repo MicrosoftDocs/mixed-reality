@@ -64,7 +64,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 </ul>
 <p><b>'N' versions of Windows</b>: immersive (VR) headsets are not supported on 'N' versions of Windows.</td>
 </tr><tr>
-<td> <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a></td><td><p> <b>Install Visual Studio 2017 with the Windows 10 Fall Creators Update SDK</b></p><ul>
+<td> <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a></td><td><p> <b>Install Visual Studio 2017 with the Windows 10 April 2018 Update SDK</b></p><ul>
 <li>Select the <b>Universal Windows Platform development</b> workload</li>
 </ul><p><img alt="Select Universal Windows Platform development" width="400" height="223" src="images/vsmrsetup-uwpselected-400px.png" /></p><ul>
 <li>If developing with Unity, select the <b>Game Development with Unity</b> workload<ul>
@@ -80,7 +80,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 <li>2017.4 is the <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> LTS (Long Term Support) stream </a>, and it is the best version to start new projects in, and to migrate forward to in order to pick up the latest stability fixes.  The specific builds currently available, the support policy, issues fixed, outstanding known issues, and release notes can all be viewed <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> here. </a></li> <li>When installing, make sure to select the Windows Store .NET Scripting Backend (you may install the docs as well). </li>
 </ul></td>
 </tr><tr>
-<td> <i>For DirectX development:</i> <a href="https://go.microsoft.com/fwlink/?linkid=852626">Holographic Templates</a> (build 10.0.14393.1358)</td><td> If you are doing DirectX development, you can install this package, which includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the HoloLens emulator.</td>
+<td> <i>For DirectX development:</i> <a href="https://go.microsoft.com/fwlink/?linkid=874531">Holographic templates</a> (build 10.0.17134.80)</td><td> If you are doing DirectX development, you can install this package, which includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the HoloLens emulator.</td>
 </tr><tr>
 <td> <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#graphics-drivers">Update graphics drivers</a></td><td><p> <b>Check Windows Update for new driver updates</b></p><ul>
 <li>You may also want to check your video card manufacturer&#39;s website for the most up-to-date graphics drivers.</li>
