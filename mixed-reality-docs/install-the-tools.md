@@ -29,7 +29,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 
 <table>
 <tr>
-<th> Download and Install</th><th> Notes</th>
+<th width="100"> Download and Install</th><th> Notes</th>
 </tr><tr>
 <td> <a href="http://dev.windows.com/downloads">Visual Studio 2017</a></td><td><ul>
 <li>Select the <b>Universal Windows Platform development</b> workload</li><li>Select the <b>Game Development with Unity</b> workload<ul>
