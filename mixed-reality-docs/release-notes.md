@@ -160,13 +160,13 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
   <td>Assigned access</td><td>Windows assigned access for first-line workers or demos. Single or multi-app lockdown. No need to developer unlock.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-kiosk">IT Pro Center: Set up HoloLens in kiosk mode</a></td>
   </tr>
   <tr>
-    <td>Set up (OOBE) diagnostics</td><td>Get diagnostic logs from HoloLens so you can troubleshoot Azure AD sign-in failures (before Feedback Hub is available to the user whose sign-in failed).</td><td>Diagnostic logs are now available in some cases if you have problems adding your work account during initial device setup. When available, select <b>Collect info</b>. You can connect your HoloLens to a desktop PC and copy the diagnostic files to use for troubleshooting the issue.</td>
+    <td>Set up (OOBE) diagnostics</td><td>Get diagnostic logs from HoloLens so you can troubleshoot Azure AD sign-in failures (before Feedback Hub is available to the user whose sign-in failed).</td><td>When setup or sign-in fails, choose the new <b>Collect info</b> option to get diagnostic logs for troubleshooting.</td>
   </tr>
   <tr>
     <td>Local account indefinite password expiry</td><td>Remove disruption of device reset when local account password expires.</td><td>When provisioning a local account, you no longer need to change the password every 42 days in <b>Settings</b>, as the account password no longer expires.</td>
   </tr>
   <tr>
-    <td>MDM sync status and details</td><td>Standard Windows functionality to understand MDM sync status and details from within HoloLens.</td><td>To check mobile device management (MDM) sync state for your account, you can go to <b>Settings > Accounts > Access Work or School</b>, and select <b>Info</b> for the work account of interest. You will see the <b>Device Sync Status</b> section, with an option to trigger an MDM sync using the <b>Sync</b> button. You can also see areas managed by MDM (Policies, Apps, etc.) and other MDM sync information, including the ability to <b>Create</b> and <b>Export</b> an Advanced Diagnostics Report for MDM (you can connect your HoloLens to a PC to copy over the report).</td>
+    <td>MDM sync status and details</td><td>Standard Windows functionality to understand MDM sync status and details from within HoloLens.</td><td>You can check the MDM sync status for a device in <b>Settings > Accounts > Access Work or School > Info</b>. In the <b>Device sync status<b> section, you can start a sync, see areas managed by MDM, and create and export an advanced diagnostics report.</td>
   </tr>
 </table>
 
