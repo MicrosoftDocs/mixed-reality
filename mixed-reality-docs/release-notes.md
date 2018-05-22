@@ -237,7 +237,7 @@ We've identified a performance regression when using Surface Book 2 on the initi
 
 ## Provide feedback and report issues
 
-Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](give-us-feedback.md#feedback-for-hololens) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
+Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](give-us-feedback.md) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
 
 >[!NOTE]
 >Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
