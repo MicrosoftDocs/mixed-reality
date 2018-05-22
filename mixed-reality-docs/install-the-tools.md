@@ -37,10 +37,8 @@ We recommend installing the Unity game engine as an easy way to get started crea
 </ul></li>
 </ul><p>All editions of Visual Studio 2017 are supported (including Community). While Visual Studio 2015 Update 3 is still supported, we recommend Visual Studio 2017 for the best experience.</p></td>
 </tr><tr>
-<td> HoloLens Emulator and Holographic Templates<p>
- <a href="https://go.microsoft.com/fwlink/?linkid=874531">Build 10.0.17134.80 (Windows 10 April 2018 Update)</a><p>
- or<p>
- <a href="https://go.microsoft.com/fwlink/?linkid=852626">Build 10.0.14393.1358</a></td><td><p> The emulator allows you to run apps on Windows Holographic in a virtual machine without a physical HoloLens. It includes a virtual HoloLens image that runs the latest version of the Windows Holographic OS. You can install multiple builds of the emulator side-by-side. This package also includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the emulator.</p><p><b>Your system must support Hyper-V</b> for the Emulator installation to succeed. Please reference the <a href="#hololens-emulator">system requirements</a> section below for details.</p></td>
+<td> HoloLens emulator and holographic templates:<ul><li>
+ <a href="https://go.microsoft.com/fwlink/?linkid=874531">For Windows 10 April 2018 Update</a></li><li><a href="https://go.microsoft.com/fwlink/?linkid=852626">For previous build (August 2016)</a></li></ul></td><td><p> The emulator allows you to run Windows Holographic apps in a virtual machine without a physical HoloLens. It includes a virtual HoloLens image that runs the latest version of the Windows Holographic OS. You can install multiple builds of the emulator side-by-side. This package also includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the emulator.</p><p><b>Your system must support Hyper-V</b> for the Emulator installation to succeed. Please reference the <a href="#hololens-emulator">system requirements</a> section below for details.</p></td>
 </tr><tr>
 <td> <a href="https://store.unity.com/download">Unity 2017.4</a></td><td><b>Last known release</b>: 2017.4.1f1 issued April 6th, 2018<p> The Unity engine is an easy way to <a href="unity-development-overview.md">get started building a holographic app</a>.&#160;</p><ul>
 <li>2017.4 is the <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> LTS (Long Term Support) stream </a>, and it is the best version to start new projects in, and to migrate forward to in order to pick up the latest stability fixes.  The specific builds currently available, the support policy, issues fixed, outstanding known issues, and release notes can all be viewed <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> here. </a></li> <li>When installing, make sure to select the Windows Store .NET Scripting Backend (you may install the docs as well). </li>
@@ -62,7 +60,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 <p><b>Enterprise and corporate managed PCs</b></p><ul>
 <li>If your PC is tightly managed by an IT organization, you may need to contact them in order to update</li><li>More information on Creators Update for Enterprise is in this <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1803/">blog entry</a></li>
 </ul>
-<p><b>'N' versions of Windows</b>: immersive (VR) headsets are not supported on 'N' versions of Windows.</td>
+<p><b>'N' versions of Windows</b>: immersive (VR) headsets are not supported on 'N' versions of Windows</td>
 </tr><tr>
 <td> <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a></td><td><p> <b>Install Visual Studio 2017 with the Windows 10 April 2018 Update SDK</b></p><ul>
 <li>Select the <b>Universal Windows Platform development</b> workload</li>
