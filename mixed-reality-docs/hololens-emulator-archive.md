@@ -24,3 +24,5 @@ HoloLens emulator builds install side-by-side. We generally recommend using the 
 
 ## See also
 * [Install the tools](install-the-tools.md)
+* [Using the HoloLens emulator](using-the-hololens-emulator.md)
+* [Advanced HoloLens emulator and Mixed reality simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
