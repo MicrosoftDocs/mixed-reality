@@ -58,15 +58,11 @@ We recommend installing the Unity game engine as an easy way to get started crea
 <tr>
 <th> Download and Install</th><th> Notes</th>
 </tr><tr>
-<td> <a href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10 Fall Creators Update</a></td><td><p> <b>Wait for the Windows 10 Fall Creators Update, coming October 17, 2017</b></p><ul>
-<li>As of October 9, 2017 we recommend new Windows Mixed reality developers wait for the public release of the Windows 10 Fall Creators Update</li><li><b>Important note:</b> If you were previously receiving Windows 10 Fall Creators Update Insider Preview builds from the Fast ring (per our recommendation thus far), you should <b>switch to receive &quot;just fixes, apps, and drivers&quot; from the Release Preview ring.</b> See <a href="https://forums.hololens.com/discussion/8837/important-mixed-reality-devs-change-your-insider-settings-today-oct-9">this forum post</a> for more info.</li>
-</ul><p><b>Enable Developer mode</b></p><ul>
-<li>Go to Settings &gt; Update &amp; security &gt; For developers</li>
-</ul><p><b>Enterprise and corporate managed PCs</b></p><ul>
-<li>If your PC is tightly managed by an IT organization, you will need to contact them in order to update</li><li>More information on Creators Update for Enterprise is in this <a href="https://blogs.technet.microsoft.com/windowsitpro/2017/04/05/whats-new-for-it-pros-in-the-windows-10-creators-update/">blog entry</a></li>
-</ul><p><b>N versions of Windows</b></p><ul>
-<li>Immersive headsets are not supported on N versions of Windows</li>
-</ul></td>
+<td> <a href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10 April 2018 Update</a></td><td><b>Install the Windows 10 April 2018 Update</b><ul><li>Install this update via Windows Update or by creating installation media (using the link in the left column)</li><li>Learn more about <a href="release-notes.md">new Windows Mixed Reality features in this update</a></li></ul><p><b>Enable Developer mode</b>: go to <b>Settings > Update & Security > For developers</b>
+<p><b>Enterprise and corporate managed PCs</b></p><ul>
+<li>If your PC is tightly managed by an IT organization, you may need to contact them in order to update</li><li>More information on Creators Update for Enterprise is in this <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1803/">blog entry</a></li>
+</ul>
+<p><b>'N' versions of Windows</b>: immersive (VR) headsets are not supported on 'N' versions of Windows.</td>
 </tr><tr>
 <td> <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a></td><td><p> <b>Install Visual Studio 2017 with the Windows 10 Fall Creators Update SDK</b></p><ul>
 <li>Select the <b>Universal Windows Platform development</b> workload</li>
@@ -78,7 +74,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 <li>If using IL2CPP in Unity, select the <b>Desktop development with C++</b> workload</li>
 </ul><p><img alt="Select Desktop development with C++" width="400" height="223" src="images/vsmrsetup-cppselected-400px.png" /></p><p>All editions of Visual Studio 2017 are supported (including Community).</p></td>
 </tr><tr>
-<td> <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk">Windows 10 Fall Creators Update SDK</a></td><td> <b>Install the Windows 10 Fall Creators Update SDK</b> The Windows 10 Fall Creators Update SDK is included in the latest version of <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a>. You can also download and install the .EXE or .ISO for the SDK using the link in the column to the left.</td>
+<td> <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk">Windows 10 April 2018 Update SDK</a></td><td> <b>Install the Windows 10 April 2018 Update SDK</b> The Windows 10 April 2018 Update SDK is included in the latest version of <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a>. You can also download and install the .EXE or .ISO for the SDK using the link in the column to the left.</td>
 </tr><tr>
 <td> <a href="https://store.unity.com/download">Unity 2017.4</a></td><td><b>Last known release</b>: 2017.4.1f1 issued April 6th, 2018<p> The Unity engine is an easy way to <a href="unity-development-overview.md">get started building a mixed reality app</a>.&#160;</p><ul>
 <li>2017.4 is the <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> LTS (Long Term Support) stream </a>, and it is the best version to start new projects in, and to migrate forward to in order to pick up the latest stability fixes.  The specific builds currently available, the support policy, issues fixed, outstanding known issues, and release notes can all be viewed <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> here. </a></li> <li>When installing, make sure to select the Windows Store .NET Scripting Backend (you may install the docs as well). </li>
