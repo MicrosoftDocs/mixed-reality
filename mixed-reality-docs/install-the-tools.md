@@ -29,7 +29,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 
 <table>
 <tr>
-<th width="200"> Download and Install</th><th> Notes</th>
+<th width="150"> Download and Install</th><th> Notes</th>
 </tr><tr>
 <td> <a href="http://dev.windows.com/downloads">Visual Studio 2017</a></td><td><ul>
 <li>Select the <b>Universal Windows Platform development</b> workload</li><li>Select the <b>Game Development with Unity</b> workload<ul>
@@ -37,8 +37,9 @@ We recommend installing the Unity game engine as an easy way to get started crea
 </ul></li>
 </ul><p>All editions of Visual Studio 2017 are supported (including Community). While Visual Studio 2015 Update 3 is still supported, we recommend Visual Studio 2017 for the best experience.</p></td>
 </tr><tr>
-<td> HoloLens emulator and holographic templates:<ul><li>
- <a href="https://go.microsoft.com/fwlink/?linkid=874531">For Windows 10 April 2018 Update</a></li><li><a href="https://go.microsoft.com/fwlink/?linkid=852626">For previous build (August 2016)</a></li></ul></td><td><p> The emulator allows you to run Windows Holographic apps in a virtual machine without a physical HoloLens. It includes a virtual HoloLens image that runs the latest version of the Windows Holographic OS. You can install multiple builds of the emulator side-by-side. This package also includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the emulator.</p><p><b>Your system must support Hyper-V</b> for the Emulator installation to succeed. Please reference the <a href="#hololens-emulator">system requirements</a> section below for details.</p></td>
+<td> HoloLens emulator and holographic templates:<br>
+ <a href="https://go.microsoft.com/fwlink/?linkid=874531">For Windows 10 April 2018 Update</a> or <br>
+ <a href="https://go.microsoft.com/fwlink/?linkid=852626">For previous build (August 2016)</a></td><td>The emulator allows you to run Windows Holographic apps in a virtual machine without a physical HoloLens. It includes a virtual HoloLens image that runs the latest version of the Windows Holographic OS. You can install multiple builds of the emulator side-by-side. This package also includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the emulator.</p><p><b>Your system must support Hyper-V</b> for the Emulator installation to succeed. Please reference the <a href="#hololens-emulator">system requirements</a> section below for details.</td>
 </tr><tr>
 <td> <a href="https://store.unity.com/download">Unity 2017.4</a></td><td><b>Last known release</b>: 2017.4.1f1 issued April 6th, 2018<p> The Unity engine is an easy way to <a href="unity-development-overview.md">get started building a holographic app</a>.&#160;</p><ul>
 <li>2017.4 is the <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> LTS (Long Term Support) stream </a>, and it is the best version to start new projects in, and to migrate forward to in order to pick up the latest stability fixes.  The specific builds currently available, the support policy, issues fixed, outstanding known issues, and release notes can all be viewed <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> here. </a></li> <li>When installing, make sure to select the Windows Store .NET Scripting Backend (you may install the docs as well). </li>
@@ -80,9 +81,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 </tr><tr>
 <td> <i>For DirectX development:</i> <a href="https://go.microsoft.com/fwlink/?linkid=874531">Holographic templates</a> (build 10.0.17134.80)</td><td> If you are doing DirectX development, you can install this package, which includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the HoloLens emulator.</td>
 </tr><tr>
-<td> <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#graphics-drivers">Update graphics drivers</a></td><td><p> <b>Check Windows Update for new driver updates</b></p><ul>
-<li>You may also want to check your video card manufacturer&#39;s website for the most up-to-date graphics drivers.</li>
-</ul></td>
+<td> <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#graphics-drivers">Update graphics drivers</a></td><td><b>Check Windows Update for new driver updates</b><p>You may also want to check your video card manufacturer's website for the most up-to-date graphics drivers</td>
 </tr>
 </table>
 
