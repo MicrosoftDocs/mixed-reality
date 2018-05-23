@@ -28,15 +28,15 @@ When using a custom environment you'll notice that teleporting, interacting with
 ## Trying a sample environment
 
 We've created a sample environment that shows off some of the creative possibilities of custom home environments. Follow these steps to try it out:
-1. [Download our sample Fantasy Island environment](http://download.microsoft.com/download/B/2/5/B25C1AEF-40CD-4B03-A596-4BCA3D33035A/Fantasy_Island.exe) (link points to self-extracting executable).
+1. [Download our sample Fantasy Island environment](https://download.microsoft.com/download/B/2/5/B25C1AEF-40CD-4B03-A596-4BCA3D33035A/Fantasy_Island.exe) (link points to self-extracting executable).
 
-   ![Fantasy Island sample environment](images/FantasyLand.jpg)<br>
-   *Fantasy Island sample environment*<br>
+    ![Fantasy Island sample environment](images/FantasyLand.jpg)<br>
+    *Fantasy Island sample environment*<br>
 
 2. Run the **Fantasy_Island.exe** file you just downloaded.
 
->[!NOTE]
->When attempting to run a .exe file downloaded from the web (like this one), you may encounter a "Windows protected your PC" pop-up. To run the .exe from this pop-up, select **More info** and then **Run anyway**.
+    > [!NOTE]
+    > When attempting to run a .exe file downloaded from the web (like this one), you may encounter a "Windows protected your PC" pop-up. To run Fantasy_Island.exe from this pop-up, select **More info** and then **Run anyway**. This security setting is meant to protect you from downloading files you may not want to trust, so please only choose this option when you trust the source of the file.
 
 3. Open **File Explorer** and navigate to the environments folder by pasting the following in the address bar: `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState`.
 4. Copy the sample environment that you downloaded into this folder.
