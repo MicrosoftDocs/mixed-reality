@@ -28,7 +28,7 @@ When using a custom environment you'll notice that teleporting, interacting with
 ## Trying a sample environment
 
 We've created a sample environment that shows off some of the creative possibilities of custom home environments. Follow these steps to try it out:
-1. [Download our sample Fantasy Island environment](http://download.microsoft.com/download/B/2/5/B25C1AEF-40CD-4B03-A596-4BCA3D33035A/Fantasy_Island.exe) (link points to self-extracting executable).
+1. [Download our sample Fantasy Island environment](https://download.microsoft.com/download/B/2/5/B25C1AEF-40CD-4B03-A596-4BCA3D33035A/Fantasy_Island.exe) (link points to self-extracting executable).
 
    ![Fantasy Island sample environment](images/FantasyLand.jpg)<br>
    *Fantasy Island sample environment*<br>
