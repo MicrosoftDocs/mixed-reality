@@ -5,7 +5,7 @@
   - name: Windows
     tocHref: /windows/
     topicHref: /windows/
-     items:
-      - name: Mixed Reality
-        tocHref: /windows/mixed-reality
-        topicHref: "/windows/mixed-reality/index"  
+    items:
+     - name: Mixed Reality
+       tocHref: /windows/mixed-reality
+       topicHref: "/windows/mixed-reality/index"  
