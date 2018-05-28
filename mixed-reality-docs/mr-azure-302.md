@@ -202,7 +202,7 @@ The following is a typical set up for developing with mixed reality, and as such
 ## Chapter 3 – Main Camera setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%202%20-%20Computer%20Vision%20API/Azure-MR-Lab-2.unitypackage), import it into your project as a [Custom Package](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 5](#chapter-5--create-the-resultslabel-class).
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302%20-%20Computer%20vision/Azure-MR-302.unitypackage), import it into your project as a [Custom Package](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 5](#chapter-5--create-the-resultslabel-class).
 
 1.	In the *Hierarchy Panel*, select the **Main Camera**. 
 2.	Once selected, you will be able to see all the components of the **Main Camera** in the *Inspector Panel*.
