@@ -50,7 +50,7 @@ Based on these scaling factors, we have created [two prefabs - UI Text and 3D Te
 
 ## Shader with occlusion support
 
-Unity's default font material does not support occlusion. Because of this, you will see the text behind the objects by default. We have included a simple [shader that supports the occlusion](https://github.com/Microsoft/HoloToolkit-Unity/tree/master/Assets/HoloToolkit/UI/Shaders). The image below shows the text with default font material (left) and the text with proper occlusion (right).
+Unity's default font material does not support occlusion. Because of this, you will see the text behind the objects by default. We have included a simple [shader that supports the occlusion](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/UX/Shaders). The image below shows the text with default font material (left) and the text with proper occlusion (right).
 
 ![Shader with occlusion support](images/hug-text-07-1000px.png)<br>
 *Shader with occlusion support*
