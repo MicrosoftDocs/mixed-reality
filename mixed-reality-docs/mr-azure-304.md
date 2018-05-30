@@ -129,7 +129,7 @@ To use the *Face API* service in Azure, you will need to configure an instance o
 
 ## Chapter 2 - Using the 'Person Maker' UWP application
 
-Make sure to download the prebuilt UWP Application called [Person Maker](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/PersonMaker.zip). This app is not the end product for this course, just a tool to help you create your Azure entries, which the later project will rely upon.
+Make sure to download the prebuilt UWP Application called [Person Maker](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/PersonMaker.zip). This app is not the end product for this course, just a tool to help you create your Azure entries, which the later project will rely upon.
 
 **Person Maker** allows you to create Azure entries, which are associated with people, and groups of people. The application will place all the needed information in a format which can then later be used by the FaceAPI, in order to recognize the faces of people whom you have added. 
 
@@ -285,7 +285,7 @@ The following is a typical set up for developing with mixed reality, and as such
 ## Chapter 4 - Main Camera setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/Azure-MR-Lab-4.unitypackage), and import it into your project as a [Custom Package](https://docs.unity3d.com/Manual/AssetPackages.html). Be aware that this package also includes the import of the *Newtonsoft DLL*, covered in [Chapter 5](#chapter-5--import-the-newtonsoft.json-library). With this imported, you can continue from [Chapter 6](#chapter-6-create-the-faceanalysis-class).
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/Azure-MR-304.unitypackage), and import it into your project as a [Custom Package](https://docs.unity3d.com/Manual/AssetPackages.html). Be aware that this package also includes the import of the *Newtonsoft DLL*, covered in [Chapter 5](#chapter-5--import-the-newtonsoft.json-library). With this imported, you can continue from [Chapter 6](#chapter-6-create-the-faceanalysis-class).
 
 1.  In the *Hierarchy* Panel, select the **Main Camera**.
 
@@ -308,7 +308,7 @@ The following is a typical set up for developing with mixed reality, and as such
 > [!IMPORTANT]
 > If you imported the '.unitypackage' in the [last Chapter](#chapter-4--main-camera-setup), you can skip this Chapter.
 
-To help you deserialise and serialise objects received and sent to the Bot Service you need to dowload the *Newtonsoft.Json* library. You will find a compatible version already organised with the correct Unity folder structure in this [Unity package file](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%204%20-%20Face%20Recognition/newtonsoftDLL.unitypackage). 
+To help you deserialise and serialise objects received and sent to the Bot Service you need to dowload the *Newtonsoft.Json* library. You will find a compatible version already organised with the correct Unity folder structure in this [Unity package file](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/newtonsoftDLL.unitypackage). 
 
 To import the library:
 
