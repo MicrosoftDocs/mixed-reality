@@ -161,7 +161,10 @@ To use the *Azure Machine Learning*, you will need to configure an instance of t
 
 One of the ways Machine Learning algorithms work is by analyzing existing data and then attempting to predict future results based on the existing data set. This generally means that the more existing data you have, the better the algorithm will be at predicting future results.
 
-A Sample table is provided to you, for this course, called **ProductsTableCSV**. You can find this file in the same folder as this lab document.
+A sample table is provided to you, for this course, called [ProductsTableCSV and can be downloaded here](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20307%20-%20Machine%20learning/MR%20and%20Azure%20307%20-%20Machine%20learning.zip).
+
+> [!IMPORTANT]
+> The above .zip file contains both the **ProductsTableCSV** and the **.unitypackage**, which you will need in [Chapter 6](#chapter-6---importing-the-mlproducts-unity-package). This package is also provided within that Chapter, though separate to the csv file.
 
 This sample data set contains a record of the best-selling objects at every hour of each day of the year 2017.
         
@@ -377,7 +380,7 @@ Set up and test your Mixed Reality Immersive Headset.
 
 ## Chapter 6 - Importing the MLProducts Unity Package
 
-For this course, you will need to download a Unity Asset Package called [**Azure-MR-Lab-7.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%207%20-%20Machine%20Learning/Azure-MR-Lab-7.unitypackage). This package comes complete with a scene, with all objects in that prebuilt, so you can focus on getting it all working. The **ShelfKeeper** script is provided, though only holds the public variables, for the purpose of scene setup structure. You will need to do all other sections.
+For this course, you will need to download a Unity Asset Package called [**Azure-MR-Lab-7.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20307%20-%20Machine%20learning/307-Scene-Setup.unitypackage). This package comes complete with a scene, with all objects in that prebuilt, so you can focus on getting it all working. The **ShelfKeeper** script is provided, though only holds the public variables, for the purpose of scene setup structure. You will need to do all other sections. 
 
 To import this package:
 
