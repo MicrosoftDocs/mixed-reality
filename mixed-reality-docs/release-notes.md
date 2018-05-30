@@ -160,6 +160,9 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
   <td>Assigned access</td><td>Windows assigned access for first-line workers or demos. Single or multi-app lockdown. No need to developer unlock.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-kiosk">IT Pro Center: Set up HoloLens in kiosk mode</a></td>
   </tr>
   <tr>
+  <td>Guest access for kiosk devices</td><td>Windows assigned access with password-less guest account for demos. Single or multi-app lockdown. No need to developer unlock.</td><td><a href="https://docs.microsoft.com/en-us/hololens/hololens-kiosk#guest">IT Pro Center: Set up HoloLens in kiosk mode</a></td>
+  </tr>
+  <tr>
     <td>Set up (OOBE) diagnostics</td><td>Get diagnostic logs from HoloLens so you can troubleshoot Azure AD sign-in failures (before Feedback Hub is available to the user whose sign-in failed).</td><td>When setup or sign-in fails, choose the new <b>Collect info</b> option to get diagnostic logs for troubleshooting.</td>
   </tr>
   <tr>

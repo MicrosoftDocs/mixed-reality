@@ -62,7 +62,7 @@ We recommend the following hardware and software for this course:
 ## Before you start
 
 - To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-- You must be the owner of your Microsoft Developer Portal and your Application Registration Portal, otherwise you will not have permission to access the app in **Chapter 2**.
+- You must be the owner of your Microsoft Developer Portal and your Application Registration Portal, otherwise you will not have permission to access the app in [Chapter 2](#chapter-2---retrieve-your-new-apps-credentials).
 
 ## Chapter 1 - Create an application on the Microsoft Developer Portal
 
@@ -92,7 +92,7 @@ Log into the Application Registration Portal, where your new app will be listed,
 
 > [!WARNING] 
 > You will need to use your Microsoft Account to Login.  
-> This **must** be the Microsoft Account which you used in the previous Chapter, with the Windows Store Developer portal.
+> This **must** be the Microsoft Account which you used in the previous [Chapter](#chapter-1---create-an-application-on-the-microsoft-developer-portal), with the Windows Store Developer portal.
 
 2.  You will find your app under the **My applications** section. Once you have found it, click on it and you will be taken to a new page which has the app name plus **Registration**.
 
@@ -655,6 +655,7 @@ Set up and test your mixed reality immersive headset.
 5.  While still in **File > Build Settings**, make sure that:
 
     1.  **Target Device** is set to **Any Device**
+
         > This Application will be for your desktop, so must be **Any Device**
 
     2.  **Build Type** is set to **D3D**
@@ -708,7 +709,7 @@ Set up and test your mixed reality immersive headset.
 10. Save your Scene and Project **File > Save Scene* / *File > Save Project**.
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component for this project (Desktop App), and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%208%20-%20Notification%20Hubs/Azure-MR-Lab-8-Desktop.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 9**.  You will still need to add the script components.
+> If you wish to skip the *Unity Set up* component for this project (Desktop App), and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-Desktop.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 9](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project).  You will still need to add the script components.
 
 ## Chapter 8 - Importing the DLLs in Unity
 
@@ -756,7 +757,7 @@ To import the SDK into your own project, make sure you have downloaded the lates
 > [!NOTE] 
 > We are marking this plugin "Don't process", because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it is not processed.
 
-## Chapter 9 - Create the TableToScene class in the Desktop Unity Project
+## Chapter 9 - Create the TableToScene class in the Desktop Unity project
 
 You now need to create the scripts containing the code to run this application.
 
@@ -1228,7 +1229,7 @@ The following is a typical set up for developing with the mixed reality, and as 
 10. Save your Scene and Project **File* *Save Scene*/ *File* *Save Project**.
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component for this project (mixed reality App), and continue straight into code, feel free to download this [.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/Lab%208%20-%20Notification%20Hubs/Azure-MR-Lab-8-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from **Chapter 14**. You will still need to add the script components.
+> If you wish to skip the *Unity Set up* component for this project (mixed reality App), and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 14](#chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project). You will still need to add the script components.
 
 ### Chapter 13 - Importing the DLLs in the Mixed Reality Unity Project
 
@@ -1275,9 +1276,9 @@ To import the SDK into your own project, make sure you have downloaded the lates
 > [!NOTE] 
 > You are marking this plugin "Don't process" because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it isn't processed.
 
-## Chapter 14 - Creating the TableToScene class in the Mixed Reality Unity Project
+## Chapter 14 - Creating the TableToScene class in the mixed reality Unity project
 
-The **TableToScene** class is identical to the one explained in **Chapter 9**. Create the same class in the mixed reality Unity Project following the same procedure explained in **Chapter 9**.
+The **TableToScene** class is identical to the one explained in [Chapter 9](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project). Create the same class in the mixed reality Unity Project following the same procedure explained in [Chapter 9](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project).
 
 Once you have completed this Chapter, both of your **Unity Projects** will have this class set up on the Main Camera.
 
@@ -1501,7 +1502,7 @@ This Chapter is identical to build process for the previous project. Everything 
 ## Chapter 17 - Add NuGet packages to the UnityMRNotifHub Solution
 
 > [!WARNING] 
-> Please remember that, once you add the following NuGet Packages (and uncomment the code in the next Chapter), the Code, when reopened within the Unity Project, will present errors. If you wish to go back and continue editing in the Unity Editor, you will need comment that errosome code, and then uncomment again later, once you are back in Visual Studio. 
+> Please remember that, once you add the following NuGet Packages (and uncomment the code in the next [Chapter](#chapter-18---edit-unitymrnotifhub-application,-notificationreciever-class)), the Code, when reopened within the Unity Project, will present errors. If you wish to go back and continue editing in the Unity Editor, you will need comment that errosome code, and then uncomment again later, once you are back in Visual Studio. 
 
 Once the mixed reality build has been completed, navigate to the mixed reality project, which you built, and double click on the solution (.sln) file within that folder, to open your solution with Visual Studio 2017.
 You will now need to add the **WindowsAzure.Messaging.managed** NuGet package; this is a library that is used to receive Notifications from the Notification Hub.
@@ -1528,7 +1529,7 @@ To import the NuGet package:
 
 
 
-## Chapter 18 - Edit *UnityMRNotifHub* application, NotificationReciever class
+## Chapter 18 - Edit UnityMRNotifHub application, NotificationReciever class
 
 Following having added the **NuGet Packages**, you will need to *uncomment* some of the code within the **NotificationReciever** class.
 
@@ -1624,7 +1625,7 @@ You now need to associate the **mixed reality** project to the Store App you cre
 
 7.  Your App is now **Associated** with the Store App. This is necessary for enabling Notifications.
 
-## Chapter 20 - Deploy *UnityMRNotifHub* and *UnityDesktopNotifHub* applications
+## Chapter 20 - Deploy UnityMRNotifHub and UnityDesktopNotifHub applications
 
 This Chapter may be easier with two people, as the result will include both apps running, one running on your computer Desktop, and the other within your immersive headset.
 
