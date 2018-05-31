@@ -492,6 +492,9 @@ To create this class:
     
     2.  The second into the *video2endpoint* variable.
 
+    > [!WARNING]
+    > There is a known issue with using *https* within Unity, with version 2017.4.1f1. If the videos provide an error on play, try using 'http' instead.
+
 8.  Next, the **Start()** method needs to be edited. This method will be triggered every time the user switches scene (consequently switching the video) by looking at the Gaze Button.
 
     ```csharp
@@ -499,7 +502,7 @@ To create this class:
         void Start()
         {
             Application.runInBackground = true;
-            StartCoroutine("PlayVideo");
+            StartCoroutine(PlayVideo());
         }
     ```
 
@@ -522,27 +525,27 @@ To create this class:
             // Set the video to loop. 
             videoPlayer.isLooping = true;
 
-            //set the VideoPlayer component to play the video from the texture 
+            // Set the VideoPlayer component to play the video from the texture 
             videoPlayer.renderMode = VideoRenderMode.RenderTexture;
 
             videoPlayer.targetTexture = videoStreamRenderTexture;
 
-            //Add AudioSource 
+            // Add AudioSource 
             audioSource = gameObject.AddComponent<AudioSource>();
 
-            //Disable Audio play on Awake 
+            // Pause Audio play on Awake 
             audioSource.playOnAwake = true;
             audioSource.Pause();
 
-            //Set Audio Output to AudioSource 
+            // Set Audio Output to AudioSource 
             videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
             videoPlayer.source = VideoSource.Url;
 
-            //Assign the Audio from Video to AudioSource to be played 
+            // Assign the Audio from Video to AudioSource to be played 
             videoPlayer.EnableAudioTrack(0, true);
             videoPlayer.SetTargetAudioSource(0, audioSource);
 
-            //assign the video Url depending on the current scene 
+            // Assign the video Url depending on the current scene 
             switch (SceneManager.GetActiveScene().name)
             {
                 case "VideoScene1":
@@ -582,12 +585,12 @@ To create this class:
 
 10. The last method you need for this class is the **ChangeScene()** method, which will be used to swap between scenes.
 
-```csharp
-    public void ChangeScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name == "VideoScene1" ? "VideoScene2" : "VideoScene1");
-    }
-```
+    ```csharp
+        public void ChangeScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name == "VideoScene1" ? "VideoScene2" : "VideoScene1");
+        }
+    ```
 
 > [!TIP] 
 > The **ChangeScene()** method uses a handy C\# feature called the *Conditional Operator*. This allows for conditions to be checked, and then values returned based on the outcome of the check, all within a single statement. Follow this [link to learn more about Conditional Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator).

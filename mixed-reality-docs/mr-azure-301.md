@@ -63,20 +63,23 @@ We recommend the following hardware and software for this course:
 
    ![Microphone setting](images/AzureLabs-Lab1-01.png)
 
+> [!WARNING]
+> Be aware that if you are developing for an immmersive headset for this lab, you may experience audio output device issues. This is due to an issue with Unity, which is fixed in later versions of Unity (Unity 2018.2). The issue prevents Unity from changing the default audio output device at run time. As a work around, ensure you have completed the above steps, and close and re-open the Editor, when this issue presents itself.
+
 ## Chapter 1 – The Azure Portal
 
 To use the Azure Translator API, you will need to configure an instance of the service to be made available to your application.
 1.	Log in to the  [Azure Portal](https://portal.azure.com).
 
-> [!NOTE]
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE]
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 2.	Once you are logged in, click on **New** in the top left corner and search for "Translator Text API." Select **Enter**.
 
     ![New Resource](images/AzureLabs-Lab1-02.png)
 
-> [!NOTE]
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE]
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
 3.	The new page will provide a description of the *Translator Text API* service. At the bottom left of this page, select the **Create** button, to create an association with this service.
 
@@ -221,10 +224,10 @@ The following is a typical set up for developing with mixed reality and, as such
 
     ![Add an Audio Source component.](images/AzureLabs-Lab1-21.png)
 
-> [!NOTE]
-> For Microsoft HoloLens, you will need to also change the following, which are part of the **Camera** component on your **Main Camera**:
-> - **Clear Flags:** Solid Color.
-> - **Background** ‘Black, Alpha 0’ – Hex color: #00000000.
+    > [!NOTE]
+    > For Microsoft HoloLens, you will need to also change the following, which are part of the **Camera** component on your **Main Camera**:
+    > - **Clear Flags:** Solid Color.
+    > - **Background** ‘Black, Alpha 0’ – Hex color: #00000000.
 
 ## Chapter 4 – Setup Debug Canvas
 
@@ -533,8 +536,8 @@ To create this class:
         }
     ```
 
-> [!TIP]
-> Though this application will not make use of it, the *StopCapturingAudio()* method has also been provided here, should you want to implement the ability to stop capturing audio in your application.
+    > [!TIP]
+    > Though this application will not make use of it, the *StopCapturingAudio()* method has also been provided here, should you want to implement the ability to stop capturing audio in your application.
 
 9.	You now need to add a Dictation Handler that will be invoked when the voice stops. This method will then pass the dictated text to the *Translator* class.
 
@@ -610,10 +613,10 @@ To create this Class:
         public Languages to = Languages.it; 
     ```
 
-> [!NOTE]
-> -	The languages inserted into the languages **enum** are just examples. Feel free to add more if you wish; the [API supports over 60 languages](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/languages) (including Klingon)!
-> - There is a [more interactive page covering available languages](https://www.microsoft.com/en-us/translator/languages.aspx), though be aware the page only appears to work when the site language is set to 'en-us' (and the Microsoft site will likely redirect to your native language). You can change site language at the bottom of the page or by altering the URL.
-> -	The **authorizationKey** value, in the above code snippet, must be the **Key**  you received when you subscribed to the *Azure Translator Text API*. This was covered in [Chapter 1](#chapter-1--the-azure-portal).
+    > [!NOTE]
+    > -	The languages inserted into the languages **enum** are just examples. Feel free to add more if you wish; the [API supports over 60 languages](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/languages) (including Klingon)!
+    > - There is a [more interactive page covering available languages](https://www.microsoft.com/en-us/translator/languages.aspx), though be aware the page only appears to work when the site language is set to 'en-us' (and the Microsoft site will likely redirect to your native language). You can change site language at the bottom of the page or by altering the URL.
+    > -	The **authorizationKey** value, in the above code snippet, must be the **Key**  you received when you subscribed to the *Azure Translator Text API*. This was covered in [Chapter 1](#chapter-1--the-azure-portal).
 
 6.	Code for the *Awake()* and *Start()* methods now needs to be added. 
 7.	In this case, the code will make a call to *Azure* using the authorization Key, to get a *Token*.
@@ -633,8 +636,8 @@ To create this Class:
         }
     ```
 
-> [!NOTE]
-> The token will expire after 10 minutes. Depending on the scenario for your app, you might have to make the same coroutine call multiple times.
+    > [!NOTE]
+    > The token will expire after 10 minutes. Depending on the scenario for your app, you might have to make the same coroutine call multiple times.
 
 8.	The coroutine to obtain the Token is the following:
 
@@ -682,6 +685,9 @@ To create this Class:
             yield return null; 
         }
     ```
+
+    > [!WARNING]
+    > If you edit the name of the IEnumerator method **GetTokenCoroutine()**, you need to update the *StartCoroutine* and *StopCoroutine* call string values in the above code. [As per Unity documentation](https://docs.unity3d.com/ScriptReference/MonoBehaviour.StartCoroutine.html), to Stop a specific *Coroutine*, you need to use the string value method.
 
 9.	Next, add the coroutine (with a “support” stream method right below it) to obtain the translation of the text received by the *MicrophoneManager* class. This code creates a query string to send to the *Azure Translator Text API*, and then uses the internal Unity UnityWebRequest class to make a ‘Get’ call to the endpoint with the query string. The result is then used to set the translation in your Results object. The code below shows the implementation:
 
