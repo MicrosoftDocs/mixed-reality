@@ -65,11 +65,11 @@ We recommend installing the Unity game engine as an easy way to get started crea
 </tr><tr>
 <td> <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a></td><td><p> <b>Install Visual Studio 2017 with the Windows 10 April 2018 Update SDK</b></p><ul>
 <li>Select the <b>Universal Windows Platform development</b> workload</li>
-</ul><p><img alt="Select Universal Windows Platform development" width="400" height="223" src="images/vsmrsetup-uwpselected-400px.png" /></p><ul>
+</ul><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Select Universal Windows Platform development" width="400" height="223" src="images/vsmrsetup-uwpselected-400px.png" /></p><ul>
 <li>If developing with Unity, select the <b>Game Development with Unity</b> workload<ul>
-<li>You may deselect the Unity Editor optional component since you&#39;ll be installing a newer version of Unity.</li>
+<li>You may deselect the Unity Editor optional component since you'll be installing a newer version of Unity.</li>
 </ul></li>
-</ul><p><img alt="Select Unity Game Development, but exclude the Unity Player" width="400" height="223" src="images/vsmrsetup-selectunitynoplayer-400px.png" /></p><ul>
+</ul><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Select Unity Game Development, but exclude the Unity Player" width="400" height="223" src="images/vsmrsetup-selectunitynoplayer-400px.png" /></p><ul>
 <li>If using IL2CPP in Unity, select the <b>Desktop development with C++</b> workload</li>
 </ul><p><img alt="Select Desktop development with C++" width="400" height="223" src="images/vsmrsetup-cppselected-400px.png" /></p><p>All editions of Visual Studio 2017 are supported (including Community).</p></td>
 </tr><tr>
