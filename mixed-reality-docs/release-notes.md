@@ -19,7 +19,7 @@ To update to the latest release on PC for Windows Mixed Reality immersive (VR) h
 To update to the latest release on HoloLens, you'll need to [manually install the software using the Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/en-us/help/12643/hololens-update-hololens).
 
 >[!IMPORTANT]
->Installing the Windows 10 April 2018 Update for HoloLens using WDRT will delete existing data, like personal files and settings, from your HoloLens. If you’d like to maintain your HoloLens data while updating, please wait for the update to be delivered via Windows Update at the end of June.
+>Installing the Windows 10 April 2018 Update for HoloLens using WDRT will delete existing data, like personal files and settings, from your HoloLens. If you’d like to maintain your HoloLens data while updating, please wait for the automatic update, which will start rolling out to customers via Windows Update on June 26.
 
 **Latest release for Desktop:** Windows 10 April 2018 Update (**10.0.17134.1**)<br>
 **Latest release for HoloLens:** Windows 10 April 2018 Update (**10.0.17134.80**)<br>
