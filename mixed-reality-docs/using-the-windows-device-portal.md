@@ -224,7 +224,7 @@ Use the file explorer to browse, upload, and download files. You can work with f
 >[!NOTE]
 >Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](commercial-features.md).
 
-Please check the [Setup HoloLens in kiosk mode](https://docs.microsoft.com/en-us/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
+Please check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/en-us/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
 
 ### Logging
 
