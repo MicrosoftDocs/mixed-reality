@@ -31,3 +31,5 @@ Instructions for accessing WebVR content in your immersive headset can be found 
 * [Handling Lost Context in WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
 * [Pointerlock](http://www.w3.org/TR/pointerlock/)
 * [glTF](https://www.khronos.org/gltf)
+* [Using Babylon.js to enable WebVR](https://docs.microsoft.com/en-us/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game)
+
