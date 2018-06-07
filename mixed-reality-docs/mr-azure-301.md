@@ -673,9 +673,9 @@ To create this Class:
         public IEnumerator TranslateWithUnityNetworking(string text)
         {
             // This query string will contain the parameters for the translation 
-            var queryString = string.Concat("text=", Uri.EscapeDataString(text), "&from=", from, "&to=", to);
+            string queryString = string.Concat("text=", Uri.EscapeDataString(text), "&from=", from, "&to=", to);
 
-            using (var unityWebRequest = UnityWebRequest.Get(translationTextEndpoint + queryString))
+            using (UnityWebRequest unityWebRequest = UnityWebRequest.Get(translationTextEndpoint + queryString))
             {
                 unityWebRequest.SetRequestHeader("Authorization", "Bearer " + authorizationToken);
                 unityWebRequest.SetRequestHeader("Accept", "application/xml");
@@ -688,7 +688,7 @@ To create this Class:
                 }
 
                 // Parse out the response text from the returned Xml
-                var result = XElement.Parse(unityWebRequest.downloadHandler.text).Value;
+                string result = XElement.Parse(unityWebRequest.downloadHandler.text).Value;
                 Results.instance.SetTranslatedResult(result);
             }
         }
