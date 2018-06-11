@@ -530,3 +530,4 @@ Return data
 
 ## See also
 * [Using the Windows Device Portal](using-the-windows-device-portal.md)
+* [Device Portal core API reference (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
