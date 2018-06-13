@@ -238,8 +238,9 @@ Animations cannot be longer than 20 minutes and cannot contain more than 36,000 
 |Morph Target Vertices|8192|
 
 ## glTF Implementation notes
+Windows MR does not support flipping geometry using negative scales. Geometry with negative scales will likely result in visual artifacts.
 
-The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader **requires** accessors:
+The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader prior to the April 1803 update **requires** accessors:
 * Must have min and max values.
 * Type SCALAR must be componentType UNSIGNED_SHORT (5123) or UNSIGNED_INT (5125).
 * Type VEC2 and VEC3 must be componentType FLOAT (5126).
@@ -260,6 +261,8 @@ The following material properties are ignored from core spec:
 * occlusionStrength
 
 Windows MR does not support primitive mode lines and points. 
+
+Only a single UV vertex attribute is supported
 
 ## Additional resources
 * [glTF Exporters and Converters](https://github.com/KhronosGroup/glTF#converters-and-exporters)
