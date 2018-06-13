@@ -259,6 +259,8 @@ The following material properties are ignored from core spec:
 * occlusionTexture: Must instead use Microsoft optimized texture packing defined below
 * occlusionStrength
 
+Windows MR does not support primitive mode lines and points. 
+
 ## Additional resources
 * [glTF Exporters and Converters](https://github.com/KhronosGroup/glTF#converters-and-exporters)
 * [glTF Toolkit](https://github.com/Microsoft/glTF-Toolkit)
