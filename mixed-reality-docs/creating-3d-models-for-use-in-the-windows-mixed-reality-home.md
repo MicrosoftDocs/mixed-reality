@@ -262,7 +262,7 @@ The following material properties are ignored from core spec:
 
 Windows MR does not support primitive mode lines and points. 
 
-Only a single UV vertex attribute is supported
+Only a single UV vertex attribute is supported.
 
 ## Additional resources
 * [glTF Exporters and Converters](https://github.com/KhronosGroup/glTF#converters-and-exporters)
