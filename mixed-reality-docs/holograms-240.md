@@ -8,13 +8,12 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, sharing, networking, academy, tutorial
 ---
 
-
-
 # MR Sharing 240: Multiple HoloLens devices
 
 Holograms are given presence in our world by remaining in place as we move about in space. HoloLens keeps holograms in place by using various [coordinate systems](coordinate-systems.md) to keep track of the location and orientation of objects. When we share these coordinate systems between devices, we can create a shared experience that allows us to take part in a shared holographic world.
 
 In this tutorial, we will:
+
 * Setup a network for a shared experience.
 * Share holograms across HoloLens devices.
 * Discover other people in our shared holographic world.
@@ -40,10 +39,13 @@ In this tutorial, we will:
 ### Project files
 
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-240-SharedHolograms.zip) required by the project. Requires Unity 2017.2 or later.
-    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).
-    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).
-    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).
-* Unarchive the files to your desktop or other easy to reach location. Keep the folder name as **SharedHolograms**.
+  * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).
+  * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).
+  * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).
+* Un-archive the files to your desktop or other easy to reach location. Keep the folder name as **SharedHolograms**.
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms).
 
 ## Chapter 1 - Holo World
 

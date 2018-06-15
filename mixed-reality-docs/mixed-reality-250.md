@@ -8,13 +8,12 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, sharing, xbox controller, networking, cross-device
 ---
 
-
-
 # MR Sharing 250: HoloLens and immersive headsets
 
 With the flexibility of Universal Windows Platform (UWP), it is easy to create an application that spans multiple devices. With this flexibility, we can create experiences that leverage the strengths of each device. This tutorial will cover a basic shared experience that runs on both HoloLens and Windows Mixed Reality immersive headsets. This content was originally delivered at the Microsoft Build 2017 conference in Seattle, WA.
 
 **In this tutorial, we will:**
+
 * Setup a network using UNET.
 * Share holograms across mixed reality devices.
 * Establish a different view of the application depending on which mixed reality device is being used.
@@ -43,6 +42,9 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 
 * Download the [files](https://github.com/Microsoft/MixedReality250/archive/master.zip) required by the project. Extract the files to an easy to remember location.
 * This project requires the [most recent version of Unity with Mixed Reality support](install-the-tools.md#immersive-headset-development).
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/MixedReality250).
 
 ## Chapter 1 - Holo World
 

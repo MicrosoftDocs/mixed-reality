@@ -8,15 +8,13 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, academy, tutorial
 ---
 
-
-
 # MR Input 213: Motion controllers
 
 Motion controllers in the mixed reality world add another level of interactivity. With [motion controllers](motion-controllers.md), we can directly interact with objects in a more natural way, similar to our physical interactions in real life, increasing immersion and delight in your app experience.
 
 In MR Input 213, we will explore the motion controller's input events by creating a simple spatial painting experience. With this app, users can paint in three-dimensional space with various types of brushes and colors.
 
-**Topics covered in this tutorial**
+## Topics covered in this tutorial
 
 |![MixedReality213 Topic1](images/mr213-topic1.png)|![MixedReality213 Topic2](images/mr213-topic2.png)|![MixedReality213 Topic3](images/mr213-topic3.png)|
 | :--- | :--- | :--- |
@@ -38,11 +36,15 @@ In MR Input 213, we will explore the motion controller's input events by creatin
 ### Prerequisites
 
 See the installation checklist for immersive headsets on [this page](install-the-tools.md).
+
 * This tutorial requires [Unity 2017.2.1p2](https://beta.unity3d.com/download/1dc514532f08/UnityDownloadAssistant-2017.2.1p2.exe)
 
 ### Project files
 
 * [Download the files](https://github.com/Microsoft/MixedReality213/archive/master.zip) required by the project and extract the files to the Desktop.
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/MixedReality213).
 
 ## Unity setup
 

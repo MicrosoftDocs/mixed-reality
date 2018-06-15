@@ -8,11 +8,10 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial mapping, surface reconstruction, mesh
 ---
 
-
-
 # MR Spatial 230: Spatial mapping
 
 [Spatial mapping](spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment. In MR Spatial 230 (Project Planetarium) we'll learn how to:
+
 * Scan the environment and transfer data from the HoloLens to your development machine.
 * Explore shaders and learn how to use them for visualizing your space.
 * Break down the room mesh into simple planes using mesh processing.
@@ -43,10 +42,13 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 ### Project files
 
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) required by the project. Requires Unity 2017.2 or later.
-    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).
-    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).
-    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).
-* Unarchive the files to your desktop or other easy to reach location.
+  * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).
+  * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).
+  * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).
+* Un-archive the files to your desktop or other easy to reach location.
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping).
 
 ### Notes
 

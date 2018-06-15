@@ -49,6 +49,9 @@ We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-210-Gaze.zip) required by the project. Requires Unity 2017.2 or later.
 * Un-archive the files to your desktop or other easy to reach location.
 
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze).
+
 ### Errata and Notes
 
 * In Visual Studio, "Just My Code" needs to be disabled (unchecked) under Tools->Options->Debugging in order to hit breakpoints in your code.
