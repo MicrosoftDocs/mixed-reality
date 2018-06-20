@@ -1,5 +1,5 @@
 ---
-title: Holograms 101
+title: MR Basics 101 - Complete project with device
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the basics of Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
@@ -8,9 +8,7 @@ ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial
 ---
 
-
-
-# Holograms 101
+# MR Basics 101: Complete project with device
 
 >[!VIDEO https://www.youtube.com/embed/XKIIEC5BMWg]
 
@@ -18,16 +16,33 @@ This tutorial will walk you through a complete project, built in Unity, that dem
 
 The tutorial will take approximately 1 hour to complete.
 
-**Prerequisites**
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Basics 101: Complete project with device</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+</tr>
+</table>
+
+## Before you start
+
+### Prerequisites
+
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
-**Project files**
+### Project files
+
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-101.zip) required by the project. Requires Unity 2017.2 or later.
-    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
-    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
-    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).
-* Unarchive the files to your desktop or other easy to reach location. Keep the folder name as **Origami**.
+  * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-101.zip).
+  * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-101.zip).
+  * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-101.zip).
+* Un-archive the files to your desktop or other easy to reach location. Keep the folder name as **Origami**.
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101).
 
 ## Chapter 1 - "Holo" world
 
@@ -35,33 +50,37 @@ The tutorial will take approximately 1 hour to complete.
 
 In this chapter, we'll setup our first Unity project and step through the build and deploy process.
 
-**Objectives**
+### Objectives
+
 * Set up Unity for holographic development.
 * Make a hologram.
 * See a hologram that you made.
 
-**Instructions**
+### Instructions
+
 * Start Unity.
 * Select **Open**.
-* Enter location as the **Origami** folder you previously unarchived.
+* Enter location as the **Origami** folder you previously un-archived.
 * Select **Origami** and click **Select Folder**.
 * Since the **Origami** project does not contain a scene, save the empty default scene to a new file using: **File** / **Save Scene As**.
 * Name the new scene **Origami** and press the **Save** button.
 
-**Setup the main virtual camera**
+#### Setup the main virtual camera
+
 * In the **Hierarchy Panel**, select **Main Camera**.
 * In the **Inspector** set its transform position to **0,0,0**.
 * Find the **Clear Flags** property, and change the dropdown from **Skybox** to **Solid color**.
 * Click on the **Background** field to open a color picker.
 * Set **R, G, B, and A** to **0**.
 
-**Setup the scene**
+#### Setup the scene
+
 * In the **Hierarchy Panel**, click on **Create** and **Create Empty**.
 * Right-click the new **GameObject** and select Rename. Rename the GameObject to **OrigamiCollection**.
 * From the **Holograms** folder in the Project Panel (expand Assets and select Holograms or double click the Holograms folder in the Project Panel):
-    * Drag **Stage** into the Hierarchy to be a child of **OrigamiCollection**.
-    * Drag **Sphere1** into the Hierarchy to be a child of **OrigamiCollection**.
-    * Drag **Sphere2** into the Hierarchy to be a child of **OrigamiCollection**.
+  * Drag **Stage** into the Hierarchy to be a child of **OrigamiCollection**.
+  * Drag **Sphere1** into the Hierarchy to be a child of **OrigamiCollection**.
+  * Drag **Sphere2** into the Hierarchy to be a child of **OrigamiCollection**.
 * Right-click the **Directional Light** object in the **Hierarchy Panel** and select **Delete**.
 * From the **Holograms** folder, drag **Lights** into the root of the **Hierarchy Panel**.
 * In the **Hierarchy**, select the **OrigamiCollection**.
@@ -70,7 +89,8 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * You should see the Origami objects in the preview window.
 * Press **Play** a second time to stop preview mode.
 
-**Export the project from Unity to Visual Studio**
+#### Export the project from Unity to Visual Studio
+
 * In Unity select **File > Build Settings**.
 * Select **Universal Windows Platform** in the **Platform** list and click **Switch Platform**.
 * Set **SDK** to **Universal 10** and **Build Type** to **D3D**.
@@ -85,10 +105,10 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * Open (double click) **Origami.sln**.
 * Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.
 * Click on the arrow next to the Device button, and select **Remote Machine** to deploy over Wi-Fi.
-    * Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
-    * If the HoloLens is attached over USB, you may instead select **Device** to deploy over USB.
-    * Leave the **Authentication Mode** set to **Universal**.
-    * Click **Select**
+  * Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
+  * If the HoloLens is attached over USB, you may instead select **Device** to deploy over USB.
+  * Leave the **Authentication Mode** set to **Universal**.
+  * Click **Select**
 * Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
 * The Origami project will now build, deploy to your HoloLens, and then run.
 * Put on your HoloLens and look around to see your new holograms.
@@ -99,10 +119,12 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze.md).
 
-**Objectives**
+### Objectives
+
 * Visualize your gaze using a world-locked cursor.
 
-**Instructions**
+### Instructions
+
 * Go back to your Unity project, and close the Build Settings window if it's still open.
 * Select the **Holograms** folder in the **Project panel**.
 * Drag the **Cursor** object into the **Hierarchy panel** at the root level.
@@ -173,12 +195,14 @@ public class WorldCursor : MonoBehaviour
 
 In this chapter, we'll add support for [gestures](gestures.md). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
 
-**Objectives**
+### Objectives
+
 * Control your holograms with the Select gesture.
 
-**Instructions**
+### Instructions
 
 We'll start by creating a script then can detect the Select gesture.
+
 * In the **Scripts** folder, create a script named **GazeGestureManager**.
 * Drag the **GazeGestureManager** script onto the **OrigamiCollection** object in the Hierarchy.
 * Open the **GazeGestureManager** script in Visual Studio and add the following code:
@@ -282,11 +306,13 @@ public class SphereCommands : MonoBehaviour
 
 In this chapter, we'll add support for two [voice commands](voice-input.md): "Reset world" to return the dropped spheres to their original location, and "Drop sphere" to make the sphere fall.
 
-**Objectives**
+### Objectives
+
 * Add voice commands that always listen in the background.
 * Create a hologram that reacts to a voice command.
 
-**Instructions**
+### Instructions
+
 * In the **Scripts** folder, create a script named **SpeechManager**.
 * Drag the **SpeechManager** script onto the **OrigamiCollection** object in the Hierarchy
 * Open the **SpeechManager** script in Visual Studio.
@@ -403,21 +429,23 @@ public class SphereCommands : MonoBehaviour
 
 In this chapter, we'll add music to the app, and then trigger sound effects on certain actions. We'll be using [spatial sound](spatial-sound.md) to give sounds a specific location in 3D space.
 
-**Objectives**
+### Objectives
+
 * Hear holograms in your world.
 
-**Instructions**
+### Instructions
+
 * In Unity select from the top menu **Edit > Project Settings > Audio**
 * In the Inspector Panel on the right side, find the **Spatializer Plugin** setting and select **MS HRTF Spatializer**.
 * From the **Holograms** folder in the Project panel, drag the **Ambience** object onto the **OrigamiCollection** object in the Hierarchy Panel.
 * Select **OrigamiCollection** and find the **Audio Source** component in the Inspector panel. Change these properties:
-    * Check the **Spatialize** property.
-    * Check the **Play On Awake**.
-    * Change **Spatial Blend** to **3D** by dragging the slider all the way to the right. The value should change from 0 to 1 when you move the slider.
-    * Check the **Loop** property.
-    * Expand **3D Sound Settings**, and enter **0.1** for **Doppler Level**.
-    * Set **Volume Rolloff** to **Logarithmic Rolloff**.
-    * Set **Max Distance** to **20**.
+  * Check the **Spatialize** property.
+  * Check the **Play On Awake**.
+  * Change **Spatial Blend** to **3D** by dragging the slider all the way to the right. The value should change from 0 to 1 when you move the slider.
+  * Check the **Loop** property.
+  * Expand **3D Sound Settings**, and enter **0.1** for **Doppler Level**.
+  * Set **Volume Rolloff** to **Logarithmic Rolloff**.
+  * Set **Max Distance** to **20**.
 * In the **Scripts** folder, create a script named **SphereSounds**.
 * Drag and drop **SphereSounds** to the **Sphere1** and **Sphere2** objects in the Hierarchy.
 * Open **SphereSounds** in Visual Studio, update the following code and **Save All**.
@@ -510,22 +538,25 @@ public class SphereSounds : MonoBehaviour
 
 Now we are going to use [spatial mapping](spatial-mapping.md) to place the game board on a real object in the real world.
 
-**Objectives**
+### Objectives
+
 * Bring your real world into the virtual world.
 * Place your holograms where they matter most to you.
 
-**Instructions**
+### Instructions
+
 * In Unity, click on the **Holograms** folder in the Project panel.
 * Drag the **Spatial Mapping** asset into the root of the **Hierarchy**.
 * Click on the **Spatial Mapping** object in the Hierarchy.
 * In the **Inspector panel**, change the following properties:
-    * Check the **Draw Visual Meshes** box.
-    * Locate **Draw Material** and click the circle on the right. Type "**wireframe**" into the search field at the top. Click on the result and then close the window. When you do this, the value for Draw Material should get set to Wireframe.
+  * Check the **Draw Visual Meshes** box.
+  * Locate **Draw Material** and click the circle on the right. Type "**wireframe**" into the search field at the top. Click on the result and then close the window. When you do this, the value for Draw Material should get set to Wireframe.
 * Export, build and deploy the app to your HoloLens.
 * When the app runs, a wireframe mesh will overlay your real world.
 * Watch how a rolling sphere will fall off the stage, and onto the floor!
 
 Now we'll show you how to move the OrigamiCollection to a new location:
+
 * In the **Scripts** folder, create a script named **TapToPlaceParent**.
 * In the **Hierarchy**, expand the **OrigamiCollection** and select the **Stage** object.
 * Drag the **TapToPlaceParent** script onto the Stage object.
@@ -592,14 +623,16 @@ public class TapToPlaceParent : MonoBehaviour
 
 ## Chapter 7 - Holographic fun
 
-**Objectives**
+### Objectives
+
 * Reveal the entrance to a holographic underworld.
 
-**Instructions**
+### Instructions
 
 Now we'll show you how to uncover the holographic underworld:
+
 * From the **Holograms** folder in the Project Panel:
-    * Drag **Underworld** into the Hierarchy to be a child of **OrigamiCollection**.
+  * Drag **Underworld** into the Hierarchy to be a child of **OrigamiCollection**.
 * In the **Scripts** folder, create a script named **HitTarget**.
 * In the **Hierarchy**, expand the **OrigamiCollection**.
 * Expand the **Stage** object and select the **Target** object (blue fan).
@@ -630,8 +663,8 @@ public class HitTarget : MonoBehaviour
 
 * In Unity, select the **Target** object.
 * Two public properties are now visible on the **Hit Target** component and need to reference objects in our scene:
-    * Drag **Underworld** from the **Hierarchy** panel to the **Underworld** property on the **Hit Target** component.
-    * Drag **Stage** from the **Hierarchy** panel to the **Object to Hide** property on the **Hit Target** component.
+  * Drag **Underworld** from the **Hierarchy** panel to the **Underworld** property on the **Hit Target** component.
+  * Drag **Stage** from the **Hierarchy** panel to the **Object to Hide** property on the **Hit Target** component.
 * Export, build and deploy the app.
 * Place the Origami Collection on the floor, and then use the Select gesture to make a sphere drop.
 * When the sphere hits the target (blue fan), an explosion will occur. The collection will be hidden and a hole to the underworld will appear.
@@ -641,8 +674,18 @@ public class HitTarget : MonoBehaviour
 And that's the end of this tutorial!
 
 You learned:
+
 * How to create a holographic app in Unity.
 * How to make use of gaze, gesture, voice, sound, and spatial mapping.
 * How to build and deploy an app using Visual Studio.
 
 You are now ready to start creating your own holographic experience!
+
+## See also
+
+* [MR Basics 101E: Complete project with emulator](holograms-101e.md)
+* [Gaze](gaze.md)
+* [Gestures](gestures.md)
+* [Voice input](voice-input.md)
+* [Spatial sound](spatial-sound.md)
+* [Spatial mapping](spatial-mapping.md)

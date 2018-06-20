@@ -3,7 +3,7 @@ title: Install the tools
 description: Start here to prepare for mixed reality development. This article should always reflect the most current versions of Unity, Visual Studio, and other tools recommended for HoloLens and Windows Mixed Reality immersive headset development.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 03/21/2018
+ms.date: 05/21/2018
 ms.topic: article
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
 ---
@@ -29,7 +29,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 
 <table>
 <tr>
-<th> Download and Install</th><th> Notes</th>
+<th width="150"> Download and Install</th><th> Notes</th>
 </tr><tr>
 <td> <a href="http://dev.windows.com/downloads">Visual Studio 2017</a></td><td><ul>
 <li>Select the <b>Universal Windows Platform development</b> workload</li><li>Select the <b>Game Development with Unity</b> workload<ul>
@@ -37,7 +37,9 @@ We recommend installing the Unity game engine as an easy way to get started crea
 </ul></li>
 </ul><p>All editions of Visual Studio 2017 are supported (including Community). While Visual Studio 2015 Update 3 is still supported, we recommend Visual Studio 2017 for the best experience.</p></td>
 </tr><tr>
-<td> <a href="https://go.microsoft.com/fwlink/?linkid=852626">HoloLens Emulator and Holographic Templates</a> (build 10.0.14393.1358)</td><td><p> The emulator allows you to run apps on Windows Holographic in a virtual machine without a physical HoloLens. It includes a virtual HoloLens image that runs the latest version of the Windows Holographic OS. If you have already installed a previous build of the emulator, this build will install side-by-side. This package also includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the emulator.</p><p><b>Your system must support Hyper-V</b> for the Emulator installation to succeed. Please reference the System Requirements section below for the details.</p></td>
+<td> HoloLens emulator and holographic templates:<br><br>
+ <a href="https://go.microsoft.com/fwlink/?linkid=874531">Windows 10 April 2018 Update</a><br><br>
+ <a href="https://go.microsoft.com/fwlink/?linkid=852626">Previous build (10.0.14393.1358)</a></td><td>The emulator allows you to run Windows Holographic apps in a virtual machine without a physical HoloLens. It includes a virtual HoloLens image that runs the latest version of the Windows Holographic OS. You can install multiple builds of the emulator side-by-side. This package also includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the emulator.</p><p><b>Your system must support Hyper-V</b> for the Emulator installation to succeed. Please reference the <a href="#hololens-emulator">system requirements</a> section below for details.</td>
 </tr><tr>
 <td> <a href="https://store.unity.com/download">Unity 2017.4</a></td><td><b>Last known release</b>: 2017.4.1f1 issued April 6th, 2018<p> The Unity engine is an easy way to <a href="unity-development-overview.md">get started building a holographic app</a>.&#160;</p><ul>
 <li>2017.4 is the <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> LTS (Long Term Support) stream </a>, and it is the best version to start new projects in, and to migrate forward to in order to pick up the latest stability fixes.  The specific builds currently available, the support policy, issues fixed, outstanding known issues, and release notes can all be viewed <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> here. </a></li> <li>When installing, make sure to select the Windows Store .NET Scripting Backend (you may install the docs as well). </li>
@@ -55,37 +57,31 @@ We recommend installing the Unity game engine as an easy way to get started crea
 <tr>
 <th> Download and Install</th><th> Notes</th>
 </tr><tr>
-<td> <a href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10 Fall Creators Update</a></td><td><p> <b>Wait for the Windows 10 Fall Creators Update, coming October 17, 2017</b></p><ul>
-<li>As of October 9, 2017 we recommend new Windows Mixed reality developers wait for the public release of the Windows 10 Fall Creators Update</li><li><b>Important note:</b> If you were previously receiving Windows 10 Fall Creators Update Insider Preview builds from the Fast ring (per our recommendation thus far), you should <b>switch to receive &quot;just fixes, apps, and drivers&quot; from the Release Preview ring.</b> See <a href="https://forums.hololens.com/discussion/8837/important-mixed-reality-devs-change-your-insider-settings-today-oct-9">this forum post</a> for more info.</li>
-</ul><p><b>Enable Developer mode</b></p><ul>
-<li>Go to Settings &gt; Update &amp; security &gt; For developers</li>
-</ul><p><b>Enterprise and corporate managed PCs</b></p><ul>
-<li>If your PC is tightly managed by an IT organization, you will need to contact them in order to update</li><li>More information on Creators Update for Enterprise is in this <a href="https://blogs.technet.microsoft.com/windowsitpro/2017/04/05/whats-new-for-it-pros-in-the-windows-10-creators-update/">blog entry</a></li>
-</ul><p><b>N versions of Windows</b></p><ul>
-<li>Immersive headsets are not supported on N versions of Windows</li>
-</ul></td>
+<td> <a href="https://www.microsoft.com/en-us/software-download/windows10">Windows 10 April 2018 Update</a></td><td><b>Install the Windows 10 April 2018 Update</b><ul><li>Install this update via Windows Update or by creating installation media (using the link in the left column)</li><li>Learn more about <a href="release-notes.md">new Windows Mixed Reality features in this update</a></li></ul><p><b>Enable Developer mode</b>: go to <b>Settings > Update & Security > For developers</b>
+<p><b>Enterprise and corporate managed PCs</b></p><ul>
+<li>If your PC is tightly managed by an IT organization, you may need to contact them in order to update</li><li>More information on Creators Update for Enterprise is in this <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1803/">blog entry</a></li>
+</ul>
+<p><b>'N' versions of Windows</b>: immersive (VR) headsets are not supported on 'N' versions of Windows</td>
 </tr><tr>
-<td> <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a></td><td><p> <b>Install Visual Studio 2017 with the Windows 10 Fall Creators Update SDK</b></p><ul>
+<td> <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a></td><td><p> <b>Install Visual Studio 2017 with the Windows 10 April 2018 Update SDK</b></p><ul>
 <li>Select the <b>Universal Windows Platform development</b> workload</li>
-</ul><p><img alt="Select Universal Windows Platform development" width="400" height="223" src="images/vsmrsetup-uwpselected-400px.png" /></p><ul>
+</ul><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Select Universal Windows Platform development" width="400" height="223" src="images/VSMRSetup-UWPSelected.PNG" /></p><ul>
 <li>If developing with Unity, select the <b>Game Development with Unity</b> workload<ul>
-<li>You may deselect the Unity Editor optional component since you&#39;ll be installing a newer version of Unity.</li>
+<li>You may deselect the Unity Editor optional component since you'll be installing a newer version of Unity.</li>
 </ul></li>
-</ul><p><img alt="Select Unity Game Development, but exclude the Unity Player" width="400" height="223" src="images/vsmrsetup-selectunitynoplayer-400px.png" /></p><ul>
+</ul><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Select Unity Game Development, but exclude the Unity Player" width="400" height="223" src="images/VSMRSetup-SelectUnityNoPlayer.PNG" /></p><ul>
 <li>If using IL2CPP in Unity, select the <b>Desktop development with C++</b> workload</li>
-</ul><p><img alt="Select Desktop development with C++" width="400" height="223" src="images/vsmrsetup-cppselected-400px.png" /></p><p>All editions of Visual Studio 2017 are supported (including Community).</p></td>
+</ul><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Select Desktop development with C++" width="400" height="223" src="images/VSMRSetup-CPPSelected.PNG" /></p><p>All editions of Visual Studio 2017 are supported (including Community).</p></td>
 </tr><tr>
-<td> <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk">Windows 10 Fall Creators Update SDK</a></td><td> <b>Install the Windows 10 Fall Creators Update SDK</b> The Windows 10 Fall Creators Update SDK is included in the latest version of <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a>. You can also download and install the .EXE or .ISO for the SDK using the link in the column to the left.</td>
+<td> <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk">Windows 10 April 2018 Update SDK</a></td><td> <b>Install the Windows 10 April 2018 Update SDK</b> The Windows 10 April 2018 Update SDK is included in the latest version of <a href="https://developer.microsoft.com/en-us/windows/downloads">Visual Studio 2017</a>. You can also download and install the .EXE or .ISO for the SDK using the link in the column to the left.</td>
 </tr><tr>
 <td> <a href="https://store.unity.com/download">Unity 2017.4</a></td><td><b>Last known release</b>: 2017.4.1f1 issued April 6th, 2018<p> The Unity engine is an easy way to <a href="unity-development-overview.md">get started building a mixed reality app</a>.&#160;</p><ul>
 <li>2017.4 is the <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> LTS (Long Term Support) stream </a>, and it is the best version to start new projects in, and to migrate forward to in order to pick up the latest stability fixes.  The specific builds currently available, the support policy, issues fixed, outstanding known issues, and release notes can all be viewed <a href="https://unity3d.com/unity/qa/lts-releases?version=2017.4"> here. </a></li> <li>When installing, make sure to select the Windows Store .NET Scripting Backend (you may install the docs as well). </li>
 </ul></td>
 </tr><tr>
-<td> <i>For DirectX development:</i> <a href="https://go.microsoft.com/fwlink/?linkid=852626">Holographic Templates</a> (build 10.0.14393.1358)</td><td> If you are doing DirectX development, you can install this package, which includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the HoloLens emulator.</td>
+<td> <i>For DirectX development:</i> <a href="https://go.microsoft.com/fwlink/?linkid=874531">Holographic templates</a> (Windows 10 April 2018 Update)</td><td> If you are doing DirectX development, you can install this package, which includes holographic DirectX project templates for Visual Studio. If desired, you can select to install only the templates without the HoloLens emulator.</td>
 </tr><tr>
-<td> <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#graphics-drivers">Update graphics drivers</a></td><td><p> <b>Check Windows Update for new driver updates</b></p><ul>
-<li>You may also want to check your video card manufacturer&#39;s website for the most up-to-date graphics drivers.</li>
-</ul></td>
+<td> <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#graphics-drivers">Update graphics drivers</a></td><td><b>Check Windows Update for new driver updates</b><p>You may also want to check your video card manufacturer's website for the most up-to-date graphics drivers</td>
 </tr>
 </table>
 

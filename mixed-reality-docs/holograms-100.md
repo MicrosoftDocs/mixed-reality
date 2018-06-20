@@ -1,20 +1,31 @@
 ---
-title: Holograms 100
-description: Learn how to create your first basic mixed reality hello world application.
+title: MR Basics 100 - Getting started with Unity
+description: Learn how to create your first basic mixed reality "hello world" application.
 author: keveleigh
 ms.author: kurtie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial
+keywords: mixed reality, Windows Mixed Reality, HoloLens, immersive, vr, mr, get started, hologram, academy, tutorial
 ---
 
 
 
-# Holograms 100
+# MR Basics 100: Getting started with Unity
 
 This tutorial will walk you through creating a basic mixed reality app built with Unity.
 
-**Prerequisites**
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Basics 100: Getting started with Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
+## Prerequisites
+
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 
 ## Chapter 1 - Create a New Project
@@ -24,6 +35,7 @@ This tutorial will walk you through creating a basic mixed reality app built wit
 To build an app with Unity, you first need to create a project. This project is organized into a few folders, the most important of which is your Assets folder. This is the folder that holds all assets you import from digital content creation tools such as Maya, Max Cinema 4D or Photoshop, all code you create with Visual Studio or your favorite code editor, and any number of content files that Unity creates as you compose scenes, animations and other Unity asset types in the editor.
 
 To build and deploy UWP apps, Unity can export the project as a Visual Studio solution that will contain all necessary asset and code files.
+
 1. Start Unity
 2. Select **New**
 3. Enter a project name (e.g. "MixedRealityIntroduction")
@@ -93,6 +105,9 @@ We need to let Unity know that the app we are trying to export should create an 
 3. Expand the **XR Settings** group.
 4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality SDKs** list.
 5. Verify that **Windows Mixed Reality** appears in the list. If not, select the **+** button at the bottom of the list and choose **Windows Mixed Reality**.
+
+>[!NOTE]
+>If you do not see the **Windows Store** icon, double check to make sure you selected the Windows Store .NET Scripting Backend prior to installation. If not, you may need to reinstall Unity with the correct Windows installation.
 
 **Verify .NET Configuration**
 
@@ -195,5 +210,5 @@ Now that your app is deployed, try moving all around the cube and observe that i
 ## See also
 * [Unity development overview](unity-development-overview.md)
 * [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
-* [Holograms 101](holograms-101.md)
-* [Holograms 101E](holograms-101e.md)
+* [MR Basics 101](holograms-101.md)
+* [MR Basics 101E](holograms-101e.md)

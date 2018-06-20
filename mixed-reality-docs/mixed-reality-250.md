@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality 250
+title: MR Sharing 250 - HoloLens and immersive headsets
 description: Follow this coding walkthrough using Unity, Visual Studio, HoloLens, and Windows Mixed Reality headsets to learn the details of sharing holograms between mixed reality devices.
 author: keveleigh
 ms.author: kurtie
@@ -8,27 +8,43 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, sharing, xbox controller, networking, cross-device
 ---
 
-
-
-# Mixed Reality 250
+# MR Sharing 250: HoloLens and immersive headsets
 
 With the flexibility of Universal Windows Platform (UWP), it is easy to create an application that spans multiple devices. With this flexibility, we can create experiences that leverage the strengths of each device. This tutorial will cover a basic shared experience that runs on both HoloLens and Windows Mixed Reality immersive headsets. This content was originally delivered at the Microsoft Build 2017 conference in Seattle, WA.
 
 **In this tutorial, we will:**
+
 * Setup a network using UNET.
 * Share holograms across mixed reality devices.
 * Establish a different view of the application depending on which mixed reality device is being used.
 * Create a shared experience where HoloLens users guide immersive headsets users through some simple puzzles.
 
-**Prerequisites**
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Sharing 250: HoloLens and immersive headsets</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
+## Before you start
+
+### Prerequisites
+
 * A Windows 10 PC with the [necessary development tools](install-the-tools.md) and [configured to support a Windows Mixed Reality immersive headset](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 * An Xbox controller that works with your PC.
 * At least one HoloLens device and one immersive headset.
 * A network which allows UDP Broadcast for discovery.
 
-**Project Files**
+### Project files
+
 * Download the [files](https://github.com/Microsoft/MixedReality250/archive/master.zip) required by the project. Extract the files to an easy to remember location.
 * This project requires the [most recent version of Unity with Mixed Reality support](install-the-tools.md#immersive-headset-development).
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/MixedReality250).
 
 ## Chapter 1 - Holo World
 
@@ -324,4 +340,4 @@ Back in LevelControl.cs look at SetGoalIndex. Here we are setting the value of a
 Building on the previous chapter, we will start the session as before. This time as the users in the immersive headset get to the "door" on their path, a tooltip will appear that only the HoloLens users can see. The HoloLens users are responsible for communicating this clue to the users in the immersive headset. The rocket will launch to space once each avatar has stepped on its corresponding brown pad inside the volcano. The scene will reset after 60 seconds so you can do it again.
 
 ## See also
-* [Mixed Reality 213](mixed-reality-213.md)
+* [MR Input 213: Motion controllers](mixed-reality-213.md)

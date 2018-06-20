@@ -108,4 +108,4 @@ For the Windows Mixed Reality Developer Edition release 2017, the audio endpoint
 ## See also
 * [Voice input in DirectX](voice-input-in-directx.md)
 * [Voice input in Unity](voice-input-in-unity.md)
-* [Holograms 212](holograms-212.md)
+* [MR Input 212: Voice](holograms-212.md)

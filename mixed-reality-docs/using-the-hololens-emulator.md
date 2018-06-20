@@ -87,5 +87,6 @@ The Account tab allows you to configure the emulator to sign-in with a Microsoft
 
 ## See also
 * [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
+* [HoloLens emulator software history](hololens-emulator-archive.md)
 * [Spatial mapping in Unity](spatial-mapping-in-unity.md)
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)

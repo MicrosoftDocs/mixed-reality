@@ -448,8 +448,16 @@ The understanding dll internally stores the playspace as a grid of 8cm sized vox
 * Ensure you have set the [SpatialPerception](#setting-the-spatialperception-capability) capability
 * When tracking is lost, the next OnSurfaceChanged event will remove all meshes.
 
+## Spatial Mapping in Mixed Reality Toolkit
+There are three example scenes about Spatial mapping in Unity. 
+
+- [HoloToolkit-Examples/SpatialMapping/Scenes/SpatialMappingExample.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/may18_dev/Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialMappingExample.unity)
+- [HoloToolkit-Examples/SpatialMapping/Scenes/SpatialProcessing.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/may18_dev/Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialProcessing.unity)
+- [HoloToolkit-Examples/SpatialUnderstanding/Scenes/SpatialUnderstandingExample.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/may18_dev/Assets/HoloToolkit-Examples/SpatialUnderstanding/Scenes/SpatialUnderstandingExample.unity)
+
+
 ## See also
-* [Holograms 230](holograms-230.md)
+* [MR Spatial 230: Spatial mapping](holograms-230.md)
 * [Coordinate systems](coordinate-systems.md)
 * [Coordinate systems in Unity](coordinate-systems-in-unity.md)
 * [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)

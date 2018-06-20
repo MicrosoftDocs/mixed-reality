@@ -56,7 +56,7 @@ These are examples using primitives and imported 3D meshes as Interactable objec
 
 A toolbar is a widely used pattern in mixed reality experiences. It is a simple collection of buttons with additional behaviors such as [Billboarding and tag-along](billboarding-and-tag-along.md). This example uses a Billboarding and tag-along script from the MixedRealityToolkit. You can control detailed behaviors including distance, moving speed and threshold values.
 
-**Traditional button
+### Traditional button
 
 ![Traditional button](images/640px-interactibleobject-traditionalbutton.jpg)
 
@@ -72,7 +72,10 @@ This example shows a traditional 2D style button. Each input state has a slightl
 
 With HoloLens, you can leverage physical space. Imagine a holographic push button on a physical wall. Or how about a coffee cup on a real table? Using 3D models imported from modeling software, we can create an Interactable object that resembles real life object. Since it's a digital object, we can add magical interactions to it.
 
+## Interactable object in Unity
+You can find the [examples of Interactable object in Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md)
+
+
 ## See also
-* [Scripts and prefabs for Interactable object in the Mixed Reality Toolkit on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Examples/UX)
 * [Object collection](object-collection.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)

@@ -1,5 +1,5 @@
 ---
-title: Holograms 230
+title: MR Spatial 230 - Spatial mapping
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of spatial mapping concepts.
 author: keveleigh
 ms.author: kurtie
@@ -8,36 +8,53 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial mapping, surface reconstruction, mesh
 ---
 
+# MR Spatial 230: Spatial mapping
 
+[Spatial mapping](spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment. In MR Spatial 230 (Project Planetarium) we'll learn how to:
 
-# Holograms 230
-
-[Spatial mapping](spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment. In Holograms 230 (Project Planetarium) we'll learn how to:
 * Scan the environment and transfer data from the HoloLens to your development machine.
 * Explore shaders and learn how to use them for visualizing your space.
 * Break down the room mesh into simple planes using mesh processing.
-* Go beyond the placement techniques we learned in [Holograms 101](holograms-101.md), and provide feedback about where a hologram can be placed in the environment.
+* Go beyond the placement techniques we learned in [MR Basics 101](holograms-101.md), and provide feedback about where a hologram can be placed in the environment.
 * Explore occlusion effects, so when your hologram is behind a real-world object, you can still see it with x-ray vision!
 
 >[!VIDEO https://www.youtube.com/embed/NSNYRkUX6Mw]
 
-**Prerequisites**
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Spatial 230: Spatial mapping</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+</tr>
+</table>
+
+## Before you start
+
+### Prerequisites
+
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [Holograms 101](holograms-101.md).
+* You should have completed [MR Basics 101](holograms-101.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
-**Project files**
-* Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) required by the project. Requires Unity 2017.2 or later.
-    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).
-    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).
-    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).
-* Unarchive the files to your desktop or other easy to reach location.
+### Project files
 
-**Notes**
+* Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) required by the project. Requires Unity 2017.2 or later.
+  * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).
+  * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).
+  * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).
+* Un-archive the files to your desktop or other easy to reach location.
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping).
+
+### Notes
+
 * "Enable Just My Code" in Visual Studio needs to be disabled (*unchecked*) under Tools > Options > Debugging in order to hit breakpoints in your code.
 
-## Unity Setup
+## Unity setup
 
 >[!VIDEO https://www.youtube.com/embed/y2Y4LhK6TEM]
 
@@ -106,7 +123,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 * In Visual Studio, use the top toolbar to change the Configuration to **Release**.
 * Change the Platform to **x86**.
 * Click on the drop-down arrow to the right of 'Local Machine', and select **Remote Machine**.
-* Enter [your device's IP address](connecting-to-wi-fi-on-hololens.md#identifying-the-hololens-ip-address-on-the-wi-fi-network) in the Address field and change Authentication Mode to **Universal (Unencrypted Protocol)**.
+* Enter [your device's IP address](connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in the Address field and change Authentication Mode to **Universal (Unencrypted Protocol)**.
 * Click **Debug -> Start Without debugging** or press **Ctrl + F5**.
 * Watch the **Output** panel in Visual Studio for build and deploy status.
 * Once your app has deployed, walk around the room. You will see the surrounding surfaces covered by black and white wireframe meshes.
@@ -1161,7 +1178,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 ## The End
 
-Congratulations! You have now completed **Holograms 230 - Spatial Mapping**.
+Congratulations! You have now completed **MR Spatial 230: Spatial mapping**.
 * You know how to scan your environment and load spatial mapping data to Unity.
 * You understand the basics of shaders and how materials can be used to re-visualize the world.
 * You learned of new processing techniques for finding planes and removing triangles from a mesh.

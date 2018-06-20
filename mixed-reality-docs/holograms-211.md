@@ -1,5 +1,5 @@
 ---
-title: Holograms 211
+title: MR Input 211 - Gesture
 description: Follow this coding walkthrough using Unity, Visual Studio, and HoloLens to learn the details of gesture concepts.
 author: keveleigh
 ms.author: kurtie
@@ -8,36 +8,51 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, gesture
 ---
 
-# Holograms 211
+# MR Input 211: Gesture
 
 [Gestures](gestures.md) turn user intention into action. With gestures, users can interact with holograms. In this course, we'll learn how to track the user's hands, respond to user input, and give feedback to the user based on hand state and location.
 
 >[!VIDEO https://www.youtube.com/embed/c9zlpfFeEtc]
 
-In [Holograms 101](holograms-101.md), we used a simple air-tap gesture to interact with our holograms. Now, we'll move beyond the air-tap gesture and explore new concepts to:
+In [MR Basics 101](holograms-101.md), we used a simple air-tap gesture to interact with our holograms. Now, we'll move beyond the air-tap gesture and explore new concepts to:
 
 * Detect when the user's hand is being tracked and provide feedback to the user.
 * Use a navigation gesture to rotate our holograms.
 * Provide feedback when the user's hand is about to go out of view.
 * Use manipulation events to allow users to move holograms with their hands.
 
-In this course, we'll revisit the Unity project **Model Explorer**, which we built in [Holograms 210](holograms-210.md). Our astronaut friend is back to assist us in our exploration of these new gesture concepts.
+In this course, we'll revisit the Unity project **Model Explorer**, which we built in [MR Input 210](holograms-210.md). Our astronaut friend is back to assist us in our exploration of these new gesture concepts.
 
-## Getting Started
+>[!IMPORTANT]
+>The videos embedded in each of the chapters below were recorded using an older version of Unity and the Mixed Reality Toolkit. While the step-by-step instructions are accurate and current, you may see scripts and visuals in the corresponding videos that are out-of-date. The videos remain included for posterity and because the concepts covered still apply.
+
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Input 211: Gesture</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
+## Before you start
 
 ### Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [Holograms 101](holograms-101.md).
-* You should have completed [Holograms 210](holograms-210.md).
+* You should have completed [MR Basics 101](holograms-101.md).
+* You should have completed [MR Input 210](holograms-210.md).
 * A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-211-Gesture.zip) required by the project. Requires Unity 2017.2 or later.
-  * If you still need older Unity support or would like to access the previous version of this Academy course, please see the [Holograms 211 archive](holograms-211-archive.md).
 * Un-archive the files to your desktop or other easy to reach location.
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-211-Gesture).
 
 ### Errata and Notes
 
@@ -85,9 +100,13 @@ If deploying to an immersive headset:
 2. Make sure the deployment target is set to **Local Machine**.
 3. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**.
 4. When the app has deployed, dismiss the **Fitbox** by pulling the trigger on a motion controller.
-* **Note,** you might notice some red errors in the Visual Studio Errors panel. It is safe to ignore them. Switch to the Output panel to view actual build progress. Errors in the Output panel will require you to make a fix (most often they are caused by a mistake in a script).
+
+>[!NOTE]
+>You might notice some red errors in the Visual Studio Errors panel. It is safe to ignore them. Switch to the Output panel to view actual build progress. Errors in the Output panel will require you to make a fix (most often they are caused by a mistake in a script).
 
 ## Chapter 1 - Hand detected feedback
+
+>[!VIDEO https://www.youtube.com/embed/D1FcIyuFTZQ]
 
 ### Objectives
 
@@ -105,7 +124,7 @@ The **InteractionInputSource.cs** script performs these steps:
 2. Sets the HandDetected state.
 3. Unsubscribes from the InteractionSourceDetected and InteractionSourceLost events.
 
-Next, we'll upgrade our cursor from Holograms 210 into one that shows feedback depending on the user's actions.
+Next, we'll upgrade our cursor from [MR Input 210](holograms-210.md) into one that shows feedback depending on the user's actions.
 
 1. In the **Hierarchy** panel, select the **Cursor** object and delete it.
 2. In the **Project** panel, search for **CursorWithFeedback** and drag it into the **Hierarchy** panel.
@@ -133,6 +152,8 @@ The **Cursor State Data** works like this:
 * If you're on an immersive headset, you'll have to connect and disconnect your controller. This feedback becomes less interesting on an immersive device, as a connected controller will always be "available".
 
 ## Chapter 2 - Navigation
+
+>[!VIDEO https://www.youtube.com/embed/sm-kxtKksSo]
 
 ### Objectives
 
@@ -275,6 +296,8 @@ You'll notice that the other navigation events are already filled in with some i
 
 ## Chapter 3 - Hand Guidance
 
+>[!VIDEO https://www.youtube.com/embed/ULzlVw4e14I]
+
 ### Objectives
 
 * Use **hand guidance score** to help predict when hand tracking will be lost.
@@ -297,6 +320,8 @@ You'll notice that the other navigation events are already filled in with some i
 * As your hand nears the edge of the gesture frame, an arrow should appear next to the cursor to warn you that hand tracking will be lost. The arrow indicates which direction to move your hand in order to prevent tracking from being lost.
 
 ## Chapter 4 - Manipulation
+
+>[!VIDEO https://www.youtube.com/embed/f3m8MvU60-I]
 
 ### Objectives
 
@@ -463,6 +488,8 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ## Chapter 5 - Model expansion
 
+>[!VIDEO https://www.youtube.com/embed/dA11P4P0VO8]
+
 ### Objectives
 
 * Expand the Astronaut model into multiple, smaller pieces that the user can interact with.
@@ -505,7 +532,7 @@ We'll do this by adding two more keywords to the Speech Input Source from the pr
 
 ## The End
 
-Congratulations! You have now completed **Holograms 211 - Gesture**.
+Congratulations! You have now completed **MR Input 211: Gesture**.
 
 * You know how to detect and respond to hand tracking, navigation and manipulation events.
 * You understand the difference between Navigation and Manipulation gestures.

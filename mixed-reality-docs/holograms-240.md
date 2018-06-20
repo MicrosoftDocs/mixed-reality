@@ -1,5 +1,5 @@
 ---
-title: Holograms 240
+title: MR Sharing 240 - Multiple HoloLens devices
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of sharing holograms.
 author: keveleigh
 ms.author: kurtie
@@ -8,28 +8,44 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, sharing, networking, academy, tutorial
 ---
 
-
-
-# Holograms 240
+# MR Sharing 240: Multiple HoloLens devices
 
 Holograms are given presence in our world by remaining in place as we move about in space. HoloLens keeps holograms in place by using various [coordinate systems](coordinate-systems.md) to keep track of the location and orientation of objects. When we share these coordinate systems between devices, we can create a shared experience that allows us to take part in a shared holographic world.
 
 In this tutorial, we will:
+
 * Setup a network for a shared experience.
 * Share holograms across HoloLens devices.
 * Discover other people in our shared holographic world.
 * Create a shared interactive experience where you can target other players - and launch projectiles at them!
 
-**Prerequisites**
+## Device support
+
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Sharing 240: Multiple HoloLens devices</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+</tr>
+</table>
+
+## Before you start
+
+### Prerequisites
+
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md) with Internet access.
 * At least two HoloLens devices [configured for development](using-visual-studio.md#enabling-developer-mode).
 
-**Project files**
+### Project files
+
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-240-SharedHolograms.zip) required by the project. Requires Unity 2017.2 or later.
-    * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).
-    * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).
-    * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).
-* Unarchive the files to your desktop or other easy to reach location. Keep the folder name as **SharedHolograms**.
+  * If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).
+  * If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).
+  * If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).
+* Un-archive the files to your desktop or other easy to reach location. Keep the folder name as **SharedHolograms**.
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms).
 
 ## Chapter 1 - Holo World
 
@@ -37,11 +53,13 @@ In this tutorial, we will:
 
 In this chapter, we'll setup our first Unity project and step through the build and deploy process.
 
-**Objectives**
+### Objectives
+
 * Setup Unity to develop holographic apps.
 * See your hologram!
 
-**Instructions**
+### Instructions
+
 * Start Unity.
 * Select **Open**.
 * Enter location as the **SharedHolograms** folder you previously unarchived.
@@ -89,11 +107,12 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 In this chapter, we'll interact with our holograms. First, we'll add a cursor to visualize our [Gaze](gaze.md). Then, we'll add [Gestures](gestures.md) and use our hand to place our holograms in space.
 
-**Objectives**
+### Objectives
+
 * Use gaze input to control a cursor.
 * Use gesture input to interact with holograms.
 
-**Instructions**
+### Instructions
 
 **Gaze**
 * In the **Hierarchy panel** select the **HologramCollection** object.
@@ -123,20 +142,21 @@ In this chapter, we'll interact with our holograms. First, we'll add a cursor to
 
 It's fun to see and interact with holograms, but let's go further. We'll set up our first shared experience - a hologram everyone can see together.
 
-**Objectives**
+### Objectives
+
 * Setup a network for a shared experience.
 * Establish a common reference point.
 * Share coordinate systems across devices.
 * Everyone sees the same hologram!
 
-**Note**
+>[!NOTE]
+>The **InternetClientServer** and **PrivateNetworkClientServer** capabilities must be declared for an app to connect to the sharing server. This is done for you already in Holograms 240, but keep this in mind for your own projects.
+>1. In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player"
+>2. Click on the "Windows Store" tab
+>3. In the "Publishing Settings > Capabilities" section, check the **InternetClientServer** capability and the **PrivateNetworkClientServer** capability
 
-The **InternetClientServer** and **PrivateNetworkClientServer** capabilities must be declared for an app to connect to the sharing server. This is done for you already in Holograms 240, but keep this in mind for your own projects.
-1. In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player"
-2. Click on the "Windows Store" tab
-3. In the "Publishing Settings > Capabilities" section, check the **InternetClientServer** capability and the **PrivateNetworkClientServer** capability
+### Instructions
 
-**Instructions**
 * In the **Project panel** navigate to the **HoloToolkit-Sharing-240\Prefabs\Sharing** folder.
 * Drag and drop the **Sharing** prefab into the **Hierarchy panel**.
 
@@ -277,12 +297,14 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 Everyone can now see the same hologram! Now let's see everyone else connected to our shared holographic world. In this chapter, we'll grab the head location and rotation of all other HoloLens devices in the same sharing session.
 
-**Objectives**
+### Objectives
+
 * Discover each other in our shared experience.
 * Choose and share a player avatar.
 * Attach the player avatar next to everyone's heads.
 
-**Instructions**
+### Instructions
+
 * In the **Project panel** navigate to the **Holograms** folder.
 * Drag and drop the **PlayerAvatarStore** into the **Hierarchy**.
 * In the **Project panel** navigate to the **Scripts** folder.
@@ -575,10 +597,12 @@ public class AppStateManager : Singleton<AppStateManager>
 
 In this chapter, we'll make the anchor able to be placed on real-world surfaces. We'll use shared coordinates to place that anchor in the middle point between everyone connected to the shared experience.
 
-**Objectives**
+### Objectives
+
 * Place holograms on the spatial map based on players’ head position.
 
-**Instructions**
+### Instructions
+
 * In the **Project panel** navigate to the **Holograms** folder.
 * Drag and drop the **CustomSpatialMapping** prefab onto the **Hierarchy**.
 * In the **Project panel** navigate to the **Scripts** folder.
@@ -950,11 +974,13 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 In this chapter we'll add holograms that bounce off real-world surfaces. Watch your space fill up with projects launched by both you and your friends!
 
-**Objectives**
+### Objectives
+
 * Launch projectiles that bounce off real-world surfaces.
 * Share the projectiles so other players can see them.
 
-**Instructions**
+### Instructions
+
 * In the **Hierarchy** select the **HologramCollection** object.
 * In the **Inspector** click **Add Component**.
 * In the search box, type **Projectile Launcher**. Select the search result.
@@ -970,10 +996,12 @@ In this chapter we'll add holograms that bounce off real-world surfaces. Watch y
 
 In this chapter, we'll uncover a portal that can only be discovered with collaboration.
 
-**Objectives**
+### Objectives
+
 * Work together to launch enough projectiles at the anchor to uncover a secret portal!
 
-**Instructions**
+### Instructions
+
 * In the **Project panel** navigate to the **Holograms** folder.
 * Drag and drop the **Underworld** asset as a **child of HologramCollection**.
 * With **HologramCollection** selected, click the **Add Component** button in the **Inspector**.

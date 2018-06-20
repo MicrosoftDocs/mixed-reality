@@ -1,6 +1,6 @@
 ---
-title: Mixed Reality 213
-description: Follow this coding walkthrough using Unity, Visual Studio and immersive headsets to learn the details of motion controllers.
+title: MR Input 213
+description: Follow this coding tutorial using Unity, Visual Studio and immersive headsets to learn the details of motion controllers.
 author: keveleigh
 ms.author: kurtie
 ms.date: 03/21/2018
@@ -8,40 +8,56 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, academy, tutorial
 ---
 
-
-
-# Mixed Reality 213
+# MR Input 213: Motion controllers
 
 Motion controllers in the mixed reality world add another level of interactivity. With [motion controllers](motion-controllers.md), we can directly interact with objects in a more natural way, similar to our physical interactions in real life, increasing immersion and delight in your app experience.
 
-In Mixed Reality 213, we will explore the motion controller's input events by creating a simple spatial painting experience. With this app, users can paint in three-dimensional space with various types of brushes and colors.
+In MR Input 213, we will explore the motion controller's input events by creating a simple spatial painting experience. With this app, users can paint in three-dimensional space with various types of brushes and colors.
 
-**Topics covered in this tutorial**
+## Topics covered in this tutorial
 
 |![MixedReality213 Topic1](images/mr213-topic1.png)|![MixedReality213 Topic2](images/mr213-topic2.png)|![MixedReality213 Topic3](images/mr213-topic3.png)|
 | :--- | :--- | :--- |
 |**Controller visualization**|**Controller input events**|**Custom controller and UI**|
 |Learn how to render motion controller models in Unity's game mode and runtime.|Understand different types of button events and their applications.|Learn how to overlay UI elements on top of the controller or fully customize it.|
 
+## Device support
 
-**Prerequisites**
+<table>
+<tr>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td>MR Input 213: Motion controllers</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
+</tr>
+</table>
+
+## Before you start
+
+### Prerequisites
 
 See the installation checklist for immersive headsets on [this page](install-the-tools.md).
+
 * This tutorial requires [Unity 2017.2.1p2](https://beta.unity3d.com/download/1dc514532f08/UnityDownloadAssistant-2017.2.1p2.exe)
 
-**Project Files**
+### Project files
+
 * [Download the files](https://github.com/Microsoft/MixedReality213/archive/master.zip) required by the project and extract the files to the Desktop.
+
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/MixedReality213).
 
 ## Unity setup
 
 >[!VIDEO https://www.youtube.com/embed/cBAOALaHys4]
 
-**Objectives**
+### Objectives
+
 * Optimize Unity for Windows Mixed Reality development
 * Setup Mixed Reality Camera
 * Setup environment
 
-**Instructions**
+### Instructions
+
 * Start Unity.
 * Select **Open**.
 * Navigate to your Desktop and find the **MixedReality213-master** folder you previously unarchived.
@@ -64,7 +80,7 @@ See the installation checklist for immersive headsets on [this page](install-the
 ![MR213_XRSettings](images/mr213-xrsettings-500px.png)
 * Close **Build Settings** window.
 
-**Project structure**
+### Project structure
 
 This tutorial uses **[Mixed Reality Toolkit - Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)**. You can find the releases on [this page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases).
 
@@ -110,7 +126,8 @@ This tutorial uses **[Mixed Reality Toolkit - Unity](https://github.com/Microsof
 
 >[!VIDEO https://www.youtube.com/embed/Kw0bf5NqyRg]
 
-**Objectives**
+### Objectives
+
 * Learn how to render motion controller models in Unity's game mode and at runtime.
 
 Windows Mixed Reality provides an animated controller model for controller visualization. There are several approaches you can take for controller visualization in your app:
@@ -120,7 +137,8 @@ Windows Mixed Reality provides an animated controller model for controller visua
 
 In this chapter, we will learn about the examples of these controller customizations.
 
-**Instructions**
+### Instructions
+
 * In the **Project** panel, type **MotionControllers** in the search box . You can also find it under Assets/HoloToolkit/Input/Prefabs/.
 * Drag the **MotionControllers** prefab into the **Hierarchy** panel.
 * Click on the **MotionControllers** prefab in the **Hierarchy** panel.
@@ -165,13 +183,15 @@ You will be able to see the scene with motion controllers in your headset. You c
 
 >[!VIDEO https://www.youtube.com/embed/e-mLlwmTzJo]
 
-**Objectives**
+### Objectives
+
 * Learn about the elements of the motion controllers
 * Learn how to attach objects to specific parts of the controllers
 
 In this chapter, you will learn how to add user interface elements to the controller which the user can easily access and manipulate at anytime. You will also learn how to add a simple color picker UI using the touchpad input.
 
-**Instructions**
+### Instructions
+
 * In the **Project** panel, search **MotionControllerInfo** script.
 * From the search result, double click **MotionControllerInfo** script to see the code in Visual Studio.
 
@@ -293,11 +313,13 @@ private IEnumerator Start() {
 
 >[!VIDEO https://www.youtube.com/embed/SUyw0kxZPFw]
 
-**Objectives**
+### Objectives
+
 * Learn how to get touchpad input data events
 * Learn how to use touchpad axis position information for your app experience
 
-**Instructions**
+### Instructions
+
 * In the **Hierarchy** panel, click **ColorPickerWheel**
 * In the **Inspector** panel, under **Animatior**, double click **ColorPickerWheelController**
 * You will be able to see **Animator** tab opened
@@ -386,12 +408,14 @@ In **Update()**, **selectorPosition** is used to cast a ray at the color wheel's
 
 >[!VIDEO https://www.youtube.com/embed/8gBFqA_DZ_U]
 
-**Objectives**
+### Objectives
+
 * Learn how to override the controller model with a custom 3D model.
 
 ![MR213_BrushToolOverride](images/mr213-brushtooloverride-500px.jpg)
 
-**Instructions**
+### Instructions
+
 * Click **MotionControllers** in the **Hierarchy** panel.
 * Click the circle on the right side of the **Alternate Right Controller** field.
 * Type in **'BrushController**' and select the prefab from the result. You can find it under Assets/AppPrefabs/**BrushController**.
@@ -412,10 +436,12 @@ You will find the **Tip** component in **BrushController**. We will use its tran
 
 >[!VIDEO https://www.youtube.com/embed/QTrYaMHIs7w]
 
-**Objectives**
+### Objectives
+
 * Learn how to use the Select button event to start and stop a line drawing
 
-**Instructions**
+### Instructions
+
 * Search **BrushController** prefab in the **Project** panel.
 * In the **Inspector** panel, double click **BrushController** Script to see the code in Visual Studio
 
@@ -501,11 +527,13 @@ private void OnEnable()
 
 >[!VIDEO https://www.youtube.com/embed/z4IxyzFHP0U]
 
-**Objectives**
+### Objectives
+
 * Learn how to use Select and Grasp button input events
 * Learn how to instantiate objects
 
-**Instructions**
+### Instructions
+
 * In the **Project** panel, type **ObjectSpawner** in the search box. You can also find it under Assets/AppPrefabs/
 * Drag the **ObjectSpawner** prefab into the **Hierarchy** panel.
 * Click **ObjectSpawner** in the **Hierarchy** panel.
@@ -601,7 +629,8 @@ Now the app is built and installed in Mixed Reality Portal. You can launch it ag
 
 In this chapter, you will learn how to replace the default motion controller model with a custom brush tool collection. For your reference, you can find the completed scene **MixedReality213Advanced** under **Scenes** folder.
 
-**Instructions**
+### Instructions
+
 * In the **Project** panel, type **BrushSelector** in the search box . You can also find it under Assets/AppPrefabs/
 * Drag the **BrushSelector** prefab into the **Hierarchy** panel.
 * For organization, create an empty GameObject called **Brushes**
@@ -738,7 +767,8 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 If you want to allow the user to move around the scene with teleportation using thumbstick, use **MixedRealityCameraParent** instead of **MixedRealityCamera**. You also need to add **InputManager** and **DefaultCusor**. Since **MixedRealityCameraParent** already includes **MotionControllers** and **Boundary** as child components, you should remove existing **MotionControllers** and **Environment** prefab.
 
-**Instructions**
+### Instructions
+
 * In the **Hierarchy** panel, delete **MixedRealityCamera**, **Environment** and **MotionControllers**
 * From the **Project panel**, search and drag the following prefabs into the **Hierarchy** panel:
     * Assets/AppPrefabs/Input/Prefabs/**MixedRealityCameraParent**
@@ -763,13 +793,15 @@ And that's the end of this tutorial! You learned:
 You are now ready to start creating your own immersive experience with motion controllers!
 
 ## Completed scenes
+
 * In Unity's **Project** panel click on the **Scenes** folder.
 * You will find two Unity sceens **MixedReality213** and **MixedReality213Advanced**.
     * **MixedReality213**: Completed scene with single brush
     * **MixedReality213Advanced**: Completed scene with multiple brush with select button's press amount example
 
 ## See also
-* [Mixed Reality 213 project](https://github.com/Microsoft/MixedReality213)
+
+* [MR Input 213 project files](https://github.com/Microsoft/MixedReality213)
 * [Mixed Reality Toolkit - Motion Controller Test scene](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Examples/Input/Scenes)
 * [Mixed Reality Toolkit - Grab Mechanics](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics)
-* [Motion controller development guideline](motion-controllers.md)
+* [Motion controller development guidelines](motion-controllers.md)
