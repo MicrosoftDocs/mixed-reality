@@ -362,7 +362,7 @@ Build great experiences from samples designed and created by our team.
       </a>	
     </li>	
         <li>
-	<a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md" title="Universal Windows Platform (UWP) app design" data-linktype="absolute-path">
+	<a href="https://developer.microsoft.com/en-us/windows/apps/design" title="Universal Windows Platform (UWP) app design" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
