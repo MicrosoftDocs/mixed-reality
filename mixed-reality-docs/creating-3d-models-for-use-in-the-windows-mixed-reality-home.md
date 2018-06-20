@@ -240,7 +240,7 @@ Animations cannot be longer than 20 minutes and cannot contain more than 36,000 
 ## glTF Implementation notes
 Windows MR does not support flipping geometry using negative scales. Geometry with negative scales will likely result in visual artifacts.
 
-The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader prior to the [April 2018 update](https://support.microsoft.com/en-us/help/4028685/windows-10-get-the-update) **requires** accessors:
+The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader prior to the [Windows 10 April 2018 update](release-notes.md) **requires** accessors:
 * Must have min and max values.
 * Type SCALAR must be componentType UNSIGNED_SHORT (5123) or UNSIGNED_INT (5125).
 * Type VEC2 and VEC3 must be componentType FLOAT (5126).
