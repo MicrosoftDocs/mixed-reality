@@ -64,39 +64,52 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 * Start Unity.
 * Select **Open**.
 * Navigate to your Desktop and find the folder you previously un-archived.
-* Click on the **Starting** folder and then press the **Select Folder** button.
+* Click on the **Starting\Decibel** folder and then press the **Select Folder** button.
 * Wait for the project to load in Unity.
 * In the **Project** panel, open **Scenes\Decibel.unity**.
-* In the **Hierarchy** panel, expand **HolographicCollection** and select **P0LY**.
+* In the **Hierarchy** panel, expand **HologramCollection** and select **P0LY**.
 * In the Inspector, expand **AudioSource** and notice that there is no **Spatialize** check box.
 
 By default, Unity does not load a spatializer plugin. The following steps will enable Spatial Sound in the project.
 
 * In Unity's top menu, go to **Edit > Project Settings > Audio**.
 * Find the **Spatializer Plugin** dropdown, and select **MS HRTF Spatializer**.
-* In the **Hierarchy** panel, select **HolographicCollection > P0LY**.
+* In the **Hierarchy** panel, select **HologramCollection > P0LY**.
 * In the **Inspector** panel, find the **Audio Source** component.
 * Check the **Spatialize** checkbox.
 * Drag the **Spatial Blend** slider all the way to **3D**, or enter **1** in the edit box.
 
 We will now build the project in Unity and configure the solution in Visual Studio.
 
-* In Unity's top menu, go to **File > Build Settings**.
-* If **Scenes/Decibel** is not in the **Scenes in Build** list, click **Add Open Scenes**.
-* In the **Platform** list, select **Windows Store** and click **Switch Platform**.
-* Set **SDK** to **Universal 10**.
-* Set **Build Type** to **D3D**.
-* Check **Unity C# Projects** to enable IntelliSense.
-* Click **Build**
-* In the dialog that appears, click **New Folder** and name it **App**.
-* Single click the **App** folder.
-* Click **Select Folder**.
+1. In Unity, select **File > Build Settings**.
+2. Click **Add Open Scenes** to add the scene.
+3. Select **Universal Windows Platform** in the **Platform** list and click **Switch Platform**.
+4. If you're specifically developing for HoloLens, set **Target device** to **HoloLens**. Otherwise, leave it on **Any device**.
+5. Ensure **Build Type** is set to **D3D** and **SDK** is set to **Latest installed** (which should be SDK 16299 or newer).
+6. Click **Build**.
+7. Create a **New Folder** named "App".
+8. Single click the **App** folder.
+9. Press **Select Folder**.
 
-Unity will begin compiling scripts and creating a Visual Studio solution. When complete, a File Explorer window will appear.
+When Unity is done, a File Explorer window will appear.
 
-* At the top of the Visual Studio window, change the target to **Release** and **x86**.
-* Click the small downward facing arrow next to **Local Machine** and select **Remote Machine**.
-* Enter the [IP address of your HoloLens](connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in the **Address** box and leave **Authentication Mode** set to **Universal (Unencrypted Protocol)**.
+1. Open the **App** folder.
+2. Open the **Decibel Visual Studio Solution**.
+
+If deploying to HoloLens:
+
+1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
+2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
+3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
+5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
+
+If deploying to an immersive headset:
+
+1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x64**.
+2. Make sure the deployment target is set to **Local Machine**.
+3. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**.
+4. When the app has deployed, dismiss the **Fitbox** by pulling the trigger on a motion controller.
 
 ## Chapter 2 - Spatial Sound and Interaction
 
@@ -119,7 +132,7 @@ The appropriate location for the sound is going to depend on the hologram. For e
 
 The following instructions will attach a spatialized sound to a hologram.
 
-* In the **Hierarchy** panel, expand **HolographicCollection** and select **P0LY**.
+* In the **Hierarchy** panel, expand **HologramCollection** and select **P0LY**.
 * In the **Inspector** panel, in the **AudioSource**, click the circle next to **AudioClip** and select **PolyHover** from the pop-up.
 * Click the circle next to **Output** and select **SoundEffects** from the pop-up.
 
@@ -175,11 +188,10 @@ Gesture Sound Handler performs the following tasks:
 
 #### Build and Deploy
 
-* In Unity select **File > Build Settings**.
-* Ensure that the selected folder is **App**.
-* Click **Build**.
-* When Unity is done, a File Explorer window will appear.
-* Switch to Visual Studio.
+1. In Unity, select **File > Build Settings**.
+2. Click **Build**.
+3. Single click the **App** folder.
+4. Press **Select Folder**.
 
 Check that the Toolbar says "Release", "x86" and "Remote Device". If not, this is the coding instance of Visual Studio. You may need to re-open the solution from the App folder.
 
