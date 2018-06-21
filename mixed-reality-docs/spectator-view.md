@@ -1,7 +1,7 @@
 SpectatorView
 =============
 
-![Marker](Images/SpecViewHero.jpg)
+![Marker](images/SpecViewPhoneHero.jpg)
 
 What is SpectatorView for?
 ------------
@@ -54,19 +54,19 @@ After generating the OpenCV binaries
 Project Setup
 -------------
 - Prepare your scene, ensuring all visable gameobjects, within your scene, are contained under a world root gameobject.
-![World Root](Images/SpecViewPhoneWorldRoot.png)
+![World Root](images/SpecViewPhoneWorldRoot.PNG)
 - Add the SpectatorView prefab (Assets/SpectatorView/Prefabs/SpectatorView.prefab) into your scene.
 - Add the SpectatorViewNetworking prefab (Assets/SpectatorView/Prefabs/SpectatorViewNetworking.prefab) into your scene.
-- Select the SpectatorViewNetworking gameobject and on the SpectatorViewNetworingManager component, there's a few things you can link up. If left untouched this component will search for necessary scripts at runtime.
+- Select the SpectatorViewNetworking gameobject and on the SpectatorViewNetworkingManager component, there's a few things you can link up. If left untouched this component will search for necessary scripts at runtime.
     - Marker Detection Hololens -> SpectatorView/Hololens/MarkerDetection
     - Marker Generation 3D -> SpectatorView/IPhone/SyncMarker/3DMarker
-    ![SpectatorView Network Discovery](Images/SpecViewPhoneNetworkDiscovery.png)
+    ![SpectatorView Network Discovery](images/SpecViewPhoneNetworkDiscovery.PNG)
 
 Building for the Different Platforms (HoloLens or iPhone)
 ------------------------------------
 - When building for iOS ensure to remove the GLTF component of MRTK as this is not yet compatibile with this platform. 
 - At the top level of the SpectatorView prefab there is a component called 'Platform Switcher'.
-![Platform Switcher](Images/SpecViewPhonePlatformSwitcher.png)
+![Platform Switcher](images/SpecViewPhonePlatformSwitcher.PNG)
 - Select the platform you want to build for.
 - If selecting 'Hololens' you should see all gameobjects beneath the iPhone gameobject in the SpectatorView prefab become inactive and all the gameobjects under 'Hololens' become active.
 - This can take a little while as depending on the platform you choose the HoloToolkit is being added or removed from the project.
@@ -80,8 +80,7 @@ Running your Application
 - The process of starting the application on the iPhone should trigger the Hololens camera to turn on and begin taking pictures.
 - As soon as iPhone app starts, it will look for surfaces like floors or tables.
 - When surfaces are found you should see a marker similar to this one:
-
-    ![Marker](Images/SpecViewPhoneMarker.png)
+![Marker](images/SpecViewPhoneMarker.PNG)
 - Show this marker to the Hololens.
 - Once the marker has been detected by the Hololens it should disappear and both devices should be connected and spatially syncronized. 
 
@@ -105,35 +104,36 @@ Example Scene
 
 Troubleshooting
 ---------------
-- The Unity Editor won't connect to a session hosted by a HoloLens device
-    - This could be the windows firewall.
-    - Goto Windows Firwall options.
-    - Allow an app or feature through Windows Firewall.
-    - For all instances of Unity Editor in the list tick, Domain, Private and Public.
-    - Then go back to Windows Firewall options.
-    - Click Advanced settings.
-    - Click Inbound Rules.
-    - All instances of Unity Editor should have a green tick.
-    - For any instances of Unity Editor that don't have a green tick:
-        - Double click it.
-        - In the action dialog select Allow the connection.
-        - Click OK.
+**The Unity Editor won't connect to a session hosted by a HoloLens device**
+- This could be the windows firewall.
+- Goto Windows Firwall options.
+- Allow an app or feature through Windows Firewall.
+- For all instances of Unity Editor in the list tick, Domain, Private and Public.
+- Then go back to Windows Firewall options.
+- Click Advanced settings.
+- Click Inbound Rules.
+- All instances of Unity Editor should have a green tick.
+- For any instances of Unity Editor that don't have a green tick:
+    - Double click it.
+    - In the action dialog select Allow the connection.
+    - Click OK.
     - Restart the Unity Editor.
 
-- At runtime the iPhone screen says "Locating Floor..." but does not display an AR marker.
-    - The iPhone is looking for a horizontal surface so try pointing the iPhone camera towards the floor or a table. This will help ARKit find surfaces necessary to spatially sync with HoloLens.
+**At runtime the iPhone screen says "Locating Floor..." but does not display an AR marker.**
+- The iPhone is looking for a horizontal surface so try pointing the iPhone camera towards the floor or a table. This will help ARKit find surfaces necessary to spatially sync with HoloLens.
 
-- HoloLens camera does not turn on automatically when iPhone tries to join.
-    - Make sure both HoloLens and iPhone are running on the same Wi-Fi network.
+**HoloLens camera does not turn on automatically when iPhone tries to join.**
+- Make sure both HoloLens and iPhone are running on the same Wi-Fi network.
 
-- When launching an SpectatorView application on a mobile device, other hololens running other SpectatorView apps turn on their camera
-    - Goto the NewDeviceDiscovery component and change the both the Broadcast Key and Broadcast port to two unique values.  Goto SpectatorViewDiscovery and change the Broadcast Key and Broadcast port to another set of unique numbers.
+**When launching an SpectatorView application on a mobile device, other hololens running other SpectatorView apps turn on their camera**
+- Goto the NewDeviceDiscovery component and change the both the Broadcast Key and Broadcast port to two unique values.
+- Go to SpectatorViewDiscovery and change the Broadcast Key and Broadcast port to another set of unique numbers.
 
-- The HoloLens won't connect with the mac Unity Editor
-    - This is a known issue which could be linked to the Unity version.  Building to the iPhone should still work and connect as normal.
+**The HoloLens won't connect with the mac Unity Editor.**
+- This is a known issue which could be linked to the Unity version. Building to the iPhone should still work and connect as normal.
 
-- The HoloLens camera turns on but is not able to scan the marker.
-    - Ensure that you build all versions of the application using the same Unity Editor instance (do not close Unity between builds).  This is due to an unknown issue with Unity.
+**The HoloLens camera turns on but is not able to scan the marker.**
+- Ensure that you build all versions of the application using the same Unity Editor instance (do not close Unity between builds). This is due to an unknown issue with Unity.
 
 
 
