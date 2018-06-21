@@ -1,13 +1,22 @@
-SpectatorView
-=============
+---
+title: Spectator view (Preview)
+description: Visualize holograms from the perspective of an AR enabled phone.
+author: Daniel Escudero
+ms.author: danielescudero
+ms.date: 06/22/2018
+ms.topic: article
+keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit
+---
+
+# SpectatorView (Preview)
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
-What is SpectatorView for?
-------------
+## What is SpectatorView for?
 - Filming HD Holograms: Using SpectatorView we can film holograms at screen resolution, meaning full HD, apply antialiasing and even shadows.
 - Streaming Live: Stream live HD holographic experiences to an AppleTV directly from your iPhone, completely lag-free!
 - Inviting Guests: Let non-HoloLens users experience holograms directly from their phones or tablets.
+
 
 Current Features
 ------------
@@ -19,14 +28,16 @@ Current Features
 - Recording of Video + Holograms + Ambient sound + Hologram Sounds.
 - Share sheet so you can Save the Video, email it, or share it with other supporting apps.
 
+
 Licenses
 --------
 - OpenCV - (3-clause BSD License) https://opencv.org/license.html
 - Unity ARKit - (MIT License) https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/src/3691df77caca2095d632c5e72ff4ffa68ced111f/LICENSES/MIT_LICENSE?at=default&fileviewer=file-view-default
 
+
 Requirements
 ------------
-- SpectatorView plugin and required OpenCV binaries, which can be found at https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin. Details on how to build the SpectatorView Native Plugin can be found below. From the generatd binaries you will need:
+- SpectatorView plugin and required OpenCV binaries, which can be found at https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin. Details on how to build the SpectatorView Native Plugin can be found below. From the generated binaries you will need:
     - opencv_aruco341.dll
     - opencv_calib3d341.dll
     - opencv_core341.dll
@@ -35,7 +46,6 @@ Requirements
     - opencv_imgproc341.dll
     - zlib1.dll
     - SpectatorViewPlugin.dll
-- UnityARKitPlugin. This can be downloaded from the asset store here: https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-arkit-plugin-92515
 - SpectatorView uses UNET for its network discovery and spatial syncronizing.  This means all interactivity during the application needs to be synced between the devices.
 - Unity 2017.2.1p2 or later
 - Hardware
@@ -45,13 +55,15 @@ Requirements
     - Mac with xcode 9.2 onwards
 - Apple developer account, free or paid ( https://developer.apple.com/ )
 - Microsoft Visual Studio 2017
+- **Optional: **- UnityARKitPlugin. The required components of this plugin are already included in the MixedRealityToolkit-Unity project. The entire ARKit plugin can be downloaded from the asset store here: https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-arkit-plugin-92515
 
-Building the SpectatorView Native Plugin
+
+**1 -** Building the SpectatorView Native Plugin
 ----------------------------------------
-- See: https://github.com/Microsoft/MixedRealityToolkit/blob/master/SpectatorViewPlugin/README.md
-After generating the OpenCV binaries
+- To generate the required files, follow these steps: https://github.com/Microsoft/MixedRealityToolkit/blob/master/SpectatorViewPlugin/README.md
 
-Project Setup
+
+**2 -** Project Setup
 -------------
 - Prepare your scene, ensuring all visable gameobjects, within your scene, are contained under a world root gameobject.
 ![World Root](images/SpecViewPhoneWorldRoot.PNG)
@@ -62,45 +74,51 @@ Project Setup
     - Marker Generation 3D -> SpectatorView/IPhone/SyncMarker/3DMarker
     ![SpectatorView Network Discovery](images/SpecViewPhoneNetworkDiscovery.PNG)
 
-Building for the Different Platforms (HoloLens or iPhone)
+
+**3 -** Networking your Application 
+---------------------------
+- SpectatorView uses UNET for its networking and manages all host-client connections for you.
+- Any app specific data has to be synced and implemented by you, using e.g. SyncVars, NetworkTransform, NetworkBehaviour.
+- For more information and tutorials on Unity Networking please visit https://unity3d.com/learn/tutorials/s/multiplayer-networking
+
+
+**4 -** Building for the Different Platforms (HoloLens or iPhone)
 ------------------------------------
 - When building for iOS ensure to remove the GLTF component of MRTK as this is not yet compatibile with this platform. 
 - At the top level of the SpectatorView prefab there is a component called 'Platform Switcher'.
-![Platform Switcher](images/SpecViewPhonePlatformSwitcher.PNG)
+![Platform Switcher](images/SpecViewPhoneSwitcher.PNG)
 - Select the platform you want to build for.
 - If selecting 'Hololens' you should see all gameobjects beneath the iPhone gameobject in the SpectatorView prefab become inactive and all the gameobjects under 'Hololens' become active.
 - This can take a little while as depending on the platform you choose the HoloToolkit is being added or removed from the project.
 - Ensure you build all versions of the application using the same Unity editor instance (do not close Unity between builds), this is due to an unresolved issue with Unity.
 
-Running your Application
+
+**5 -** Running your Application
 ------------------------
 - Once you have a built and deployed a version of you application on the iPhone and on the HoloLens you should be able to connect them.
 - Ensure that both devices are on the same WIFI network.
 - Start the application on the both devices, in no specific order.
 - The process of starting the application on the iPhone should trigger the Hololens camera to turn on and begin taking pictures.
 - As soon as iPhone app starts, it will look for surfaces like floors or tables.
-- When surfaces are found you should see a marker similar to this one:
+- When surfaces are found you should see a marker similar to the one below.
 ![Marker](images/SpecViewPhoneMarker.PNG)
 - Show this marker to the Hololens.
 - Once the marker has been detected by the Hololens it should disappear and both devices should be connected and spatially syncronized. 
 
-Video Capture
+
+**6 -** Recording Videos of Holograms
 -------------
-- To capture and save a video from the iPhone, tap and hold the screen for 1 second.  This should open the recording menu.
-- Tap the red record button, this should start a countdown before begining to record the screen.
-- To finish recording tap and hold the screen for another 1 second and tap the stop button.
-- Click the preview button (blue button), to watch the recorded video.
+- To capture and save a video from the iPhone, tap and hold the screen for 1 second. This will open the recording menu.
+- Tap the red record button, this will start a countdown before begining to record the screen.
+- To finish recording tap and hold the screen for another 1 second, then tap the stop button.
+- Once the recorded video loads, a Preview button (blue button) will appear, tap to watch the recorded video.
 - Open the sharesheet and click save to camera roll.
 
-Networking your Application 
----------------------------
-- SpectatorView uses UNET for its networking and manages all host-client connections for you.
-- Any app specific data has to be synced and implemented by you, using e.g. SyncVars, NetworkTransform, NetworkBehaviour.
-- For more information and tutorials on Unity Networking please visit https://unity3d.com/learn/tutorials/s/multiplayer-networking
 
 Example Scene
 -------------
 - An example scene can be found in HoloToolkit-Examples\SpectatorView\Scenes\SpectatorViewExample.unity
+
 
 Troubleshooting
 ---------------
@@ -137,7 +155,6 @@ Troubleshooting
 
 
 
-
 ---
 title: Spectator view
 description: Visualize holograms from the perspective of an external camera.
@@ -150,7 +167,7 @@ keywords: Spectator View, BlackMagic, Black Magic, Elgato, OpenCV, Compositor, C
 
 
 
-# Spectator view
+# Spectator view (Legacy)
 
 **Spectator view setup**
 
