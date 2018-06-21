@@ -1,3 +1,143 @@
+SpectatorView
+=============
+
+![Marker](Images/SpecViewHero.jpg)
+
+What is SpectatorView for?
+------------
+- Filming HD Holograms: Using SpectatorView we can film holograms at screen resolution, meaning full HD, apply antialiasing and even shadows.
+- Streaming Live: Stream live HD holographic experiences to an AppleTV directly from your iPhone, completely lag-free!
+- Inviting Guests: Let non-HoloLens users experience holograms directly from their phones or tablets.
+
+Current Features
+------------
+- Network auto-discovery for adding phones to the session.
+- Automatic session handling, so users are added to the correct session.
+- Spatial synchronization of Holograms, so everyone sees holograms in the exact same place.
+- iOS support (ARKit enabled devices).
+- Multiple iOS guests
+- Recording of Video + Holograms + Ambient sound + Hologram Sounds.
+- Share sheet so you can Save the Video, email it, or share it with other supporting apps.
+
+Licenses
+--------
+- OpenCV - (3-clause BSD License) https://opencv.org/license.html
+- Unity ARKit - (MIT License) https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/src/3691df77caca2095d632c5e72ff4ffa68ced111f/LICENSES/MIT_LICENSE?at=default&fileviewer=file-view-default
+
+Requirements
+------------
+- SpectatorView plugin and required OpenCV binaries, which can be found at https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin. Details on how to build the SpectatorView Native Plugin can be found below. From the generatd binaries you will need:
+    - opencv_aruco341.dll
+    - opencv_calib3d341.dll
+    - opencv_core341.dll
+    - opencv_features2d341.dll
+    - opencv_flann341.dll
+    - opencv_imgproc341.dll
+    - zlib1.dll
+    - SpectatorViewPlugin.dll
+- UnityARKitPlugin. This can be downloaded from the asset store here: https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-arkit-plugin-92515
+- SpectatorView uses UNET for its network discovery and spatial syncronizing.  This means all interactivity during the application needs to be synced between the devices.
+- Unity 2017.2.1p2 or later
+- Hardware
+    - A HoloLens
+    - Windows PC running Windows 10
+    - ARKit compatible device (iPhone 6s onwards / iPad Pro 2016 onwards / iPad 2017 onwards) - running iOS 11 or above
+    - Mac with xcode 9.2 onwards
+- Apple developer account, free or paid ( https://developer.apple.com/ )
+- Microsoft Visual Studio 2017
+
+Building the SpectatorView Native Plugin
+----------------------------------------
+- See: https://github.com/Microsoft/MixedRealityToolkit/blob/master/SpectatorViewPlugin/README.md
+After generating the OpenCV binaries
+
+Project Setup
+-------------
+- Prepare your scene, ensuring all visable gameobjects, within your scene, are contained under a world root gameobject.
+![World Root](Images/SpecViewPhoneWorldRoot.png)
+- Add the SpectatorView prefab (Assets/SpectatorView/Prefabs/SpectatorView.prefab) into your scene.
+- Add the SpectatorViewNetworking prefab (Assets/SpectatorView/Prefabs/SpectatorViewNetworking.prefab) into your scene.
+- Select the SpectatorViewNetworking gameobject and on the SpectatorViewNetworingManager component, there's a few things you can link up. If left untouched this component will search for necessary scripts at runtime.
+    - Marker Detection Hololens -> SpectatorView/Hololens/MarkerDetection
+    - Marker Generation 3D -> SpectatorView/IPhone/SyncMarker/3DMarker
+    ![SpectatorView Network Discovery](Images/SpecViewPhoneNetworkDiscovery.png)
+
+Building for the Different Platforms (HoloLens or iPhone)
+------------------------------------
+- When building for iOS ensure to remove the GLTF component of MRTK as this is not yet compatibile with this platform. 
+- At the top level of the SpectatorView prefab there is a component called 'Platform Switcher'.
+![Platform Switcher](Images/SpecViewPhonePlatformSwitcher.png)
+- Select the platform you want to build for.
+- If selecting 'Hololens' you should see all gameobjects beneath the iPhone gameobject in the SpectatorView prefab become inactive and all the gameobjects under 'Hololens' become active.
+- This can take a little while as depending on the platform you choose the HoloToolkit is being added or removed from the project.
+- Ensure you build all versions of the application using the same Unity editor instance (do not close Unity between builds), this is due to an unresolved issue with Unity.
+
+Running your Application
+------------------------
+- Once you have a built and deployed a version of you application on the iPhone and on the HoloLens you should be able to connect them.
+- Ensure that both devices are on the same WIFI network.
+- Start the application on the both devices, in no specific order.
+- The process of starting the application on the iPhone should trigger the Hololens camera to turn on and begin taking pictures.
+- As soon as iPhone app starts, it will look for surfaces like floors or tables.
+- When surfaces are found you should see a marker similar to this one:
+
+    ![Marker](Images/SpecViewPhoneMarker.png)
+- Show this marker to the Hololens.
+- Once the marker has been detected by the Hololens it should disappear and both devices should be connected and spatially syncronized. 
+
+Video Capture
+-------------
+- To capture and save a video from the iPhone, tap and hold the screen for 1 second.  This should open the recording menu.
+- Tap the red record button, this should start a countdown before begining to record the screen.
+- To finish recording tap and hold the screen for another 1 second and tap the stop button.
+- Click the preview button (blue button), to watch the recorded video.
+- Open the sharesheet and click save to camera roll.
+
+Networking your Application 
+---------------------------
+- SpectatorView uses UNET for its networking and manages all host-client connections for you.
+- Any app specific data has to be synced and implemented by you, using e.g. SyncVars, NetworkTransform, NetworkBehaviour.
+- For more information and tutorials on Unity Networking please visit https://unity3d.com/learn/tutorials/s/multiplayer-networking
+
+Example Scene
+-------------
+- An example scene can be found in HoloToolkit-Examples\SpectatorView\Scenes\SpectatorViewExample.unity
+
+Troubleshooting
+---------------
+- The Unity Editor won't connect to a session hosted by a HoloLens device
+    - This could be the windows firewall.
+    - Goto Windows Firwall options.
+    - Allow an app or feature through Windows Firewall.
+    - For all instances of Unity Editor in the list tick, Domain, Private and Public.
+    - Then go back to Windows Firewall options.
+    - Click Advanced settings.
+    - Click Inbound Rules.
+    - All instances of Unity Editor should have a green tick.
+    - For any instances of Unity Editor that don't have a green tick:
+        - Double click it.
+        - In the action dialog select Allow the connection.
+        - Click OK.
+    - Restart the Unity Editor.
+
+- At runtime the iPhone screen says "Locating Floor..." but does not display an AR marker.
+    - The iPhone is looking for a horizontal surface so try pointing the iPhone camera towards the floor or a table. This will help ARKit find surfaces necessary to spatially sync with HoloLens.
+
+- HoloLens camera does not turn on automatically when iPhone tries to join.
+    - Make sure both HoloLens and iPhone are running on the same Wi-Fi network.
+
+- When launching an SpectatorView application on a mobile device, other hololens running other SpectatorView apps turn on their camera
+    - Goto the NewDeviceDiscovery component and change the both the Broadcast Key and Broadcast port to two unique values.  Goto SpectatorViewDiscovery and change the Broadcast Key and Broadcast port to another set of unique numbers.
+
+- The HoloLens won't connect with the mac Unity Editor
+    - This is a known issue which could be linked to the Unity version.  Building to the iPhone should still work and connect as normal.
+
+- The HoloLens camera turns on but is not able to scan the marker.
+    - Ensure that you build all versions of the application using the same Unity Editor instance (do not close Unity between builds).  This is due to an unknown issue with Unity.
+
+
+
+
 ---
 title: Spectator view
 description: Visualize holograms from the perspective of an external camera.
@@ -18,7 +158,7 @@ keywords: Spectator View, BlackMagic, Black Magic, Elgato, OpenCV, Compositor, C
 ![Spectator view setup](images/spectatorview-300px.png)
 
 
-When wearing a mixed reality headset, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator view allows others to see on a 2D screen what a HoloLens user sees in their world. Using spectator view involves these four components:
+When wearing a mixed reality headset, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator view allows others to see on a 2D screen what a HoloLens user sees in their world. Using spectator view involves these four components:
 1. An app built specifically to enable spectator view, which is based on [shared experiences in mixed reality](shared-experiences-in-mixed-reality.md).
 2. A user wearing HoloLens using the app.
 3. A spectator view camera rig providing a third-person perspective video.
@@ -61,11 +201,11 @@ Videos are the best story telling mechanism for sharing a holographic app experi
 ![Spectator view professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)
 
 
-Spectator view has been an essential piece of how Microsoft HoloLens has presented experiences to audiences since the very beginning when the product was announced in January 2015. The professional setup used had high demands and an expensive price tag to go with it. For example, the camera uses a genlock signal to ensure precise timing that coordinates with the HoloLens tracking system. In this setup, moving the spectator view camera was possible while keeping holograms stable to match the experience of someone who is seeing the experience directly in HoloLens.
+Spectator view has been an essential piece of how Microsoft HoloLens has presented experiences to audiences since the very beginning when the product was announced in January 2015. The professional setup used had high demands and an expensive price tag to go with it. For example, the camera uses a genlock signal to ensure precise timing that coordinates with the HoloLens tracking system. In this setup, moving the spectator view camera was possible while keeping holograms stable to match the experience of someone who is seeing the experience directly in HoloLens.
 
-The open-source version of spectator view trades off the ability to move the camera rig in order to dramatically lower the cost of the overall setup. This project uses an external camera rigidly mounted to a HoloLens to take high-definition pictures and video of your holographic Unity project. **During live demonstrations, the camera should remain in a fixed position.** Movement of the camera can lead to hologram jitter or drift. This is because the timing of the video frame and the rendering of holograms on the PC may not be precisely synchronized. Therefore, keeping the camera steady or limiting movement will produce a result close to what the person wearing a HoloLens can see.
+The open-source version of spectator view trades off the ability to move the camera rig in order to dramatically lower the cost of the overall setup. This project uses an external camera rigidly mounted to a HoloLens to take high-definition pictures and video of your holographic Unity project. **During live demonstrations, the camera should remain in a fixed position.** Movement of the camera can lead to hologram jitter or drift. This is because the timing of the video frame and the rendering of holograms on the PC may not be precisely synchronized. Therefore, keeping the camera steady or limiting movement will produce a result close to what the person wearing a HoloLens can see.
 
-To make your app ready for spectator view, you'll need to build a [shared experience](holograms-240.md) app and ensure the app can run on both HoloLens as well as desktop in the Unity editor. The desktop version of the app will have additional components built in that composite the video feed with the rendered holograms.
+To make your app ready for spectator view, you'll need to build a [shared experience](holograms-240.md) app and ensure the app can run on both HoloLens as well as desktop in the Unity editor. The desktop version of the app will have additional components built in that composite the video feed with the rendered holograms.
 
 ## Hardware shopping list
 
@@ -79,7 +219,7 @@ Below is a recommended list of hardware, but you can experiment with other compa
 
 |  Hardware component  |  Recommendation | 
 | --- | --- |
-|  A PC configuration that works for holographic development with the HoloLens emulator.  |  | 
+|  A PC configuration that works for holographic development with the HoloLens emulator.  |  | 
 |  Camera with HDMI out or photo capture SDK. | For photo and video capture, we have tested the [Canon EOS 5D Mark III](https://www.amazon.com/Canon-Frame-Full-HD-Digital-Camera/dp/B007FGYZFI/ref=sr_1_3?s=photo&ie=UTF8&qid=1480537693&sr=1-3&keywords=Canon+5D+Mark+III) camera. For live demonstrations, we have tested the [Blackmagic Design Production Camera 4K](https://www.amazon.com/Blackmagic-Design-Production-Camera-Mount/dp/B00CWLSHYG/ref=sr_1_1?s=photo&ie=UTF8&qid=1480537790&sr=1-1&keywords=blackmagic+design+production+camera+4k). Note, any camera with HDMI out (e.g. GoPro) should work. Many of our videos use the [Canon EF 14mm f/2.8L II USM Ultra-Wide Angle Fixed Lens](https://www.amazon.com/Canon-Ultra-Wide-Angle-Digital-Cameras/dp/B000V5P94Q), but you should choose a camera lens that meets your needs. | 
 |  Capture card for your PC to get color frames from your camera to calibrate your rig and preview your composite scene. |  We have tested the [Blackmagic Design Intensity Pro 4K capture card](https://www.amazon.com/dp/B00U3QNP7Q). | 
 |  Cables |  [HDMI to Mini HDMI](https://www.amazon.com/AmazonBasics-High-Speed-Mini-HDMI-HDMI-Cable/dp/B014I8UHXE?ie=UTF8&psc=1&redirect=true&ref_=oh_aui_detailpage_o03_s00) for attaching your camera to your capture card. Ensure you purchase an HDMI form factor that fits your camera. (GoPro, for instance, outputs over [Micro HDMI](https://www.amazon.com/dp/B014I8U33I/ref=twister_B0198TA40O?_encoding=UTF8&psc=1).) \
