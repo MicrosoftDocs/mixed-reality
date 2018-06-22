@@ -1,8 +1,8 @@
 ---
 title: SpectatorView (Preview)
 description: Visualize holograms from the perspective of an AR enabled phone.
-author: Daniel Escudero
-ms.author: danielescudero
+author: danielescudero
+ms.author: dan escudero
 ms.date: 06/22/2018
 ms.topic: article
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit
