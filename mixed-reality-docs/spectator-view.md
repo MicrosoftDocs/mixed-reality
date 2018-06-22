@@ -1,5 +1,5 @@
 ---
-title: Spectator view (Preview)
+title: SpectatorView (Preview)
 description: Visualize holograms from the perspective of an AR enabled phone.
 author: Daniel Escudero
 ms.author: danielescudero
