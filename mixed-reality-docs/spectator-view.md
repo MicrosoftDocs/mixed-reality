@@ -67,6 +67,7 @@ Requirements
 **2 -** Project Setup
 -------------
 - Prepare your scene, ensuring all visable gameobjects, within your scene, are contained under a world root gameobject.
+
 ![World Root](images/SpecViewPhoneWorldRoot2.PNG)
 - Add the SpectatorView prefab (Assets/SpectatorView/Prefabs/SpectatorView.prefab) into your scene.
 - Add the SpectatorViewNetworking prefab (Assets/SpectatorView/Prefabs/SpectatorViewNetworking.prefab) into your scene.
@@ -88,6 +89,7 @@ Requirements
 ------------------------------------
 - When building for iOS ensure to remove the GLTF component of MRTK as this is not yet compatibile with this platform. 
 - At the top level of the SpectatorView prefab there is a component called 'Platform Switcher'.
+
 ![Platform Switcher](images/SpecViewPhoneSwitcher.PNG)
 - Select the platform you want to build for.
 - If selecting 'Hololens' you should see all gameobjects beneath the iPhone gameobject in the SpectatorView prefab become inactive and all the gameobjects under 'Hololens' become active.
@@ -103,8 +105,8 @@ Requirements
 - The process of starting the application on the iPhone should trigger the Hololens camera to turn on and begin taking pictures.
 - As soon as iPhone app starts, it will look for surfaces like floors or tables.
 - When surfaces are found you should see a marker similar to the one below.
-   
-   ![Marker](images/SpecViewPhoneMarker.PNG)
+
+![Marker](images/SpecViewPhoneMarker.PNG)
 - Show this marker to the Hololens.
 - Once the marker has been detected by the Hololens it should disappear and both devices should be connected and spatially syncronized. 
 
