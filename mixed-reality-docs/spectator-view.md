@@ -67,7 +67,7 @@ Requirements
 **2 -** Project Setup
 -------------
 - Prepare your scene, ensuring all visable gameobjects, within your scene, are contained under a world root gameobject.
-![World Root](images/SpecViewPhoneWorldRoot.PNG)
+![World Root](images/SpecViewPhoneWorldRoot2.PNG)
 - Add the SpectatorView prefab (Assets/SpectatorView/Prefabs/SpectatorView.prefab) into your scene.
 - Add the SpectatorViewNetworking prefab (Assets/SpectatorView/Prefabs/SpectatorViewNetworking.prefab) into your scene.
 - Select the SpectatorViewNetworking gameobject and on the SpectatorViewNetworkingManager component, there's a few things you can link up. If left untouched this component will search for necessary scripts at runtime.
@@ -102,7 +102,8 @@ Requirements
 - The process of starting the application on the iPhone should trigger the Hololens camera to turn on and begin taking pictures.
 - As soon as iPhone app starts, it will look for surfaces like floors or tables.
 - When surfaces are found you should see a marker similar to the one below.
-![Marker](images/SpecViewPhoneMarker.PNG)
+   
+   ![Marker](images/SpecViewPhoneMarker.PNG)
 - Show this marker to the Hololens.
 - Once the marker has been detected by the Hololens it should disappear and both devices should be connected and spatially syncronized. 
 
