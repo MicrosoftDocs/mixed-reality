@@ -177,11 +177,23 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
 
 We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](give-us-feedback.md).
 
+## HoloLens
+
+### After update
+
+You may notice the following after updating from RS1 to RS4 on your HoloLens
+* **Pins reset** - The 3x3 apps pinned to your Start menu will be reset to the defaults after update. 
+* **Apps and placed holograms reset** - Apps placed in your world be removed after the update and will need to be re-placed throughout your space. 
+* **Feedback Hub may not launch immediately** - Immediately after update, it will take a few minutes before you are able to launch some inbox apps such as Feedback Hub, while they update themselves. 
+* **Corporate Wi-Fi certificates need to be re-synced** - We're investigating an issue that requires the HoloLens to be connected to a different network in order for corporate certificates to be re-synced to the device before it is able to reconnect to corporate networks using certificates. 
+
 ### For developers: updating HoloLens apps for devices running Windows 10 April 2018 Update
 
 Along with a great list of [new features](#new-features-for-hololens), the Windows 10 April 2018 Update (RS4) for HoloLens enforces some code behaviors that previous versions did not:
 * **Permission requests to use sensitive resources (camera, microphone, etc.)** - RS4 on HoloLens will enforce permission requests for apps intending to access sensitive resources, such as the camera or microphone. RS1 on HoloLens did not force these prompts, so, if your app assumes immediate access to these resources, it may crash in RS4 (even if the user grants permission to the requested resource). Please read the relevant [UWP app capability declarations article](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) for more information.
 * **Calls to apps outside your own** - RS4 on HoloLens will enforce proper use of the [*Windows.System.Launcher* class](https://docs.microsoft.com/en-us/uwp/api/Windows.System.Launcher) to launch another app from your own. For example, we've seen issues with apps calling *Windows.System.Launcher.LaunchUriForResultsAsync* from a non-ASTA (UI) thread. This would succeed in RS1 on HoloLens, but RS4 requires the call to be executed on the UI thread.
+
+## Windows Mixed Reality on Desktop
 
 ### Visual quality
 
