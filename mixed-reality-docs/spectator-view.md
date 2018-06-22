@@ -73,7 +73,8 @@ Requirements
 - Select the SpectatorViewNetworking gameobject and on the SpectatorViewNetworkingManager component, there's a few things you can link up. If left untouched this component will search for necessary scripts at runtime.
     - Marker Detection Hololens -> SpectatorView/Hololens/MarkerDetection
     - Marker Generation 3D -> SpectatorView/IPhone/SyncMarker/3DMarker
-    ![SpectatorView Network Discovery](images/SpecViewPhoneNetworkDiscovery.PNG)
+
+![SpectatorView Network Discovery](images/SpecViewPhoneNetworkDiscovery.PNG)
 
 
 **3 -** Networking your Application 
