@@ -17,6 +17,7 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit
 - Streaming Live: Stream live HD holographic experiences to an AppleTV directly from your iPhone, completely lag-free!
 - Inviting Guests: Let non-HoloLens users experience holograms directly from their phones or tablets.
 
+![Marker](images/SpecViewPhoneDemo.jpg)
 
 Current Features
 ------------
