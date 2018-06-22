@@ -5,7 +5,7 @@ author: Daniel Escudero
 ms.author: danielescudero
 ms.date: 06/22/2018
 ms.topic: article
-keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit
+keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit
 ---
 
 # SpectatorView (Preview)
@@ -160,15 +160,6 @@ Troubleshooting
 
 
 
----
-title: Spectator view
-description: Visualize holograms from the perspective of an external camera.
-author: fieldsJacksonG
-ms.author: jacksonf
-ms.date: 03/21/2018
-ms.topic: article
-keywords: Spectator View, BlackMagic, Black Magic, Elgato, OpenCV, Compositor, Calibration, Camera, DSLR, Capture Card
----
 
 
 
