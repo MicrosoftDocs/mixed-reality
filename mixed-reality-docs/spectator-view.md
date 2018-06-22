@@ -28,7 +28,7 @@ Current Features
 - Multiple iOS guests
 - Recording of Video + Holograms + Ambient sound + Hologram Sounds.
 - Share sheet so you can Save the Video, email it, or share it with other supporting apps.
-> **NOTE** > The SpectatorView Preview code cannot be used with the SpectatorView Legacy version code. We recommend to implement it in new projects where video recording of holograms is required.
+> **NOTE:** The SpectatorView Preview code cannot be used with the SpectatorView Legacy version code. We recommend to implement it in new projects where video recording of holograms is required.
 
 Licenses
 --------
