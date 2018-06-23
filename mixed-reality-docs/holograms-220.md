@@ -102,14 +102,12 @@ If deploying to HoloLens:
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
 4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
-5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
 
 If deploying to an immersive headset:
 
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x64**.
 2. Make sure the deployment target is set to **Local Machine**.
 3. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**.
-4. When the app has deployed, dismiss the **Fitbox** by pulling the trigger on a motion controller.
 
 ## Chapter 2 - Spatial Sound and Interaction
 
@@ -193,13 +191,10 @@ Gesture Sound Handler performs the following tasks:
 3. Single click the **App** folder.
 4. Press **Select Folder**.
 
-Check that the Toolbar says "Release", "x86" and "Remote Device". If not, this is the coding instance of Visual Studio. You may need to re-open the solution from the App folder.
+Check that the Toolbar says "Release", "x86" or "x64", and "Remote Device". If not, this is the coding instance of Visual Studio. You may need to re-open the solution from the App folder.
 
 * If prompted, reload the project files.
-* Double-click on **Decibel.sln** to load it in Visual Studio.
-* Using the top toolbar, change the target to **Release** and **X86**.
-* Click **Debug -> Start Without debugging** or press **Ctrl + F5**.
-* **Note,** you might notice some red errors in the Visual Studio Errors panel. It is safe to ignore them. Errors in the Output panel will require you to make a fix (most often they are caused by a mistake in a script).
+* As before, deploy from Visual Studio.
 
 After the application is deployed:
 
@@ -229,10 +224,16 @@ For example, setting a cup on a table should make a quieter sound than dropping 
 
 * In the **Hierarchy** panel, expand **HologramCollection**.
 * Expand **EnergyHub**, select **Base**.
-* In the **Inspector** panel, click **Add Component** and add **Tap To Place**.
-* In **Tap To Place**, click the circle next to **Placement Material** and select **Wireframe** from the pop-up.
-* Set **Placement Sound** to **Place**.
-* Set **Pickup Sound** to **Pickup**.
+* In the **Inspector** panel, click **Add Component** and add **Tap To Place With Sound and Action**.
+* In **Tap To Place With Sound and Action**:
+  * Check **Place Parent On Tap**.
+  * Set **Placement Sound** to **Place**.
+  * Set **Pickup Sound** to **Pickup**.
+  * Press the + in the bottom right under both **On Pickup Action** and **On Placement Action**. Drag EnergyHub from the scene into the **None (Object)** fields.
+    * Under **On Pickup Action**, click on **No Function** -> **EnergyHubBase** -> **ResetAnimation**.
+    * Under **On Placement Action**, click on **No Function** -> **EnergyHubBase** -> **OnSelect**.
+
+![Tap To Place With Sound And Action](images/holograms220-taptoplace.png)
 
 ### Part 2 - Sound Occlusion
 
@@ -439,7 +440,7 @@ An **AudioSource** component will be added to **VoiceSource**.
 * Drag the **Spatial Blend** slider all the way to **3D**, or enter **1** in the edit box.
 * Expand **3D Sound Settings**.
 * Set **Doppler Level** to **0**.
-* In **'User Voice Effect**, set **Parent Object** to the **Underworld** from the scene.
+* In **User Voice Effect**, set **Parent Object** to the **Underworld** from the scene.
 * Set **Max Distance** to **1**.
 
 Setting **Max Distance** tells **User Voice Effect** how close the user must be to the parent object before the effect is enabled.
