@@ -163,9 +163,9 @@ Troubleshooting
 
 
 
-# Spectator view (Legacy)
+# SpectatorView Pro
 
-**Spectator view setup**
+**SpectatorView Pro setup**
 
 
 ![Spectator view setup](images/spectatorview-300px.png)
@@ -177,21 +177,21 @@ When wearing a mixed reality headset, we often forget that a person who does not
 3. A spectator view camera rig providing a third-person perspective video.
 4. A desktop PC running the shared experience app and compositing the holograms into a spectator view video.
 
-![Spectator view setup](images/hololensspectatorview-500px.jpg) 
+![SpectatorView Pro setup](images/hololensspectatorview-500px.jpg) 
 
 ## Use cases
 
 >[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]
 
-**Spectator view photo capture scenario example**
+**SpectatorView Pro photo capture scenario example**
 
 
-![Spectator view photo capture scenario example](images/fall-350px.jpg)
+![SpectatorView Pro photo capture scenario example](images/fall-350px.jpg)
 
-**Spectator view video capture scenario example**
+**SpectatorView Pro video capture scenario example**
 
 
-![Spectator view video capture scenario example](images/spectatorviewvideo.gif) 
+![SpectatorView Pro video capture scenario example](images/spectatorviewvideo.gif) 
 
 
 There are three key scenarios that work well with this technology:
@@ -208,10 +208,10 @@ Videos are the best story telling mechanism for sharing a holographic app experi
 
 [Mixed reality capture](mixed-reality-capture.md) (MRC) provides a video composite of what the HoloLens user is seeing from a first person point-of-view. Spectator view produces a video from a third-person perspective, allowing the video observer to see the environment with holograms and the user wearing a HoloLens device. Because you have a choice of camera, spectator views can also produce higher resolution and better quality images than the built-in HoloLens camera used for MRC images. For this reason, spectator view is better suited for app images in the Windows Store, marketing videos, or for projecting a live view for an audience.
 
-**Spectator view professional camera used in Microsoft keynote presentations**
+**SpectatorView Pro professional camera used in Microsoft keynote presentations**
 
 
-![Spectator view professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)
+![SpectatorView Pro professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)
 
 
 Spectator view has been an essential piece of how Microsoft HoloLens has presented experiences to audiences since the very beginning when the product was announced in January 2015. The professional setup used had high demands and an expensive price tag to go with it. For example, the camera uses a genlock signal to ensure precise timing that coordinates with the HoloLens tracking system. In this setup, moving the spectator view camera was possible while keeping holograms stable to match the experience of someone who is seeing the experience directly in HoloLens.
@@ -222,10 +222,10 @@ To make your app ready for spectator view, you'll need to build a [shared experi
 
 ## Hardware shopping list
 
-**Spectator View Rig**
+**SpectatorView Pro Rig**
 
 
-![Spectator View Rig](images/spectatorviewrig-350px.jpg)
+![SpectatorView Pro Rig](images/spectatorviewrig-350px.jpg)
 
 
 Below is a recommended list of hardware, but you can experiment with other compatible units too. 
@@ -260,7 +260,7 @@ Below is a recommended list of hardware, but you can experiment with other compa
  Supported version can be found in the OSS project.
 7. Visual Studio 2015 with latest updates.
 
-## Building your own spectator view camera
+## Building your own SpectatorView Pro camera
 
 **NOTICE & DISCLAIMER:** When making modifications to your HoloLens hardware (including, but not limited to, setting up your HoloLens for "spectator view") basic safety precautions should always be observed. Read all instructions and manuals before making any modifications. It is your responsibility to follow all instructions and use tools as directed. You may have purchased or licensed your HoloLens with a limited warranty or no warranty. Please read your applicable [HoloLens License Agreement or Terms of Use and Sale](http://microsoft.com/microsoft-hololens/en-us/order-now) to understand your warranty options.
 
@@ -268,10 +268,10 @@ Below is a recommended list of hardware, but you can experiment with other compa
 
 ### Rig Assembly
 
-**Assembled spectator view rig with HoloLens and DSLR camera**
+**Assembled SpectatorView Pro rig with HoloLens and DSLR camera**
 
 
-![Assembled spectator view rig with HoloLens and DSLR camera.](images/assembly.gif)
+![Assembled SpectatorView Pro rig with HoloLens and DSLR camera.](images/assembly.gif)
 
 
 * Use a T7 screwdriver to remove the headband from the HoloLens. Once the screws are loose, poke them out with a paperclip from the other side.
@@ -321,10 +321,10 @@ After setting up your spectator view rig, you must calibrate in order to get the
 * Run the Calibration solution.
 * Move the checkerboard pattern around the view like this:!
 
-**Calibrating the spectator view rig**
+**Calibrating the SpectatorView Pro rig**
 
 
-[Calibrating the spectator view rig](images/calibration.gif)
+[Calibrating the SpectatorView Pro rig](images/calibration.gif)
 
 
 * A picture will automatically be taken when a checkerboard is in view. Look for the white light on the HoloLens' visor before advancing to the next pose.
