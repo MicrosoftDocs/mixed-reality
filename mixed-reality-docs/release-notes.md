@@ -183,7 +183,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 
 You may notice the following issues after updating from RS1 to RS4 on your HoloLens:
 * **Pins reset** - The 3x3 apps pinned to your Start menu will be reset to the defaults after update. 
-* **Apps and placed holograms reset** - Apps placed in your world be removed after the update and will need to be re-placed throughout your space. 
+* **Apps and placed holograms reset** - Apps placed in your world will be removed after the update and will need to be re-placed throughout your space. 
 * **Feedback Hub may not launch immediately** - Immediately after update, it will take a few minutes before you are able to launch some inbox apps such as Feedback Hub, while they update themselves. 
 * **Corporate Wi-Fi certificates need to be re-synced** - We're investigating an issue that requires the HoloLens to be connected to a different network in order for corporate certificates to be re-synced to the device before it is able to reconnect to corporate networks using certificates. 
 
