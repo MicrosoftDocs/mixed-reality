@@ -186,6 +186,7 @@ You may notice the following issues after updating from RS1 to RS4 on your HoloL
 * **Apps and placed holograms reset** - Apps placed in your world will be removed after the update and will need to be re-placed throughout your space. 
 * **Feedback Hub may not launch immediately** - Immediately after update, it will take a few minutes before you are able to launch some inbox apps such as Feedback Hub, while they update themselves. 
 * **Corporate Wi-Fi certificates need to be re-synced** - We're investigating an issue that requires the HoloLens to be connected to a different network in order for corporate certificates to be re-synced to the device before it is able to reconnect to corporate networks using certificates. 
+* **H.265 HEVC Video Playback does not work** - Applications that attempt to play back H.265 videos will receive an error message. The workaround is to [access the Windows Device Portal](using-the-windows-device-portal.md), select **Apps** on the left navigation bar, and **remove** the HEVC application. Then, install the latest [HEVC Video Extension](https://www.microsoft.com/en-us/p/hevc-video-extensions/9nmzlz57r3t7) from the Microsoft Store. We are investigating the issue. 
 
 #### For developers: updating HoloLens apps for devices running Windows 10 April 2018 Update
 
