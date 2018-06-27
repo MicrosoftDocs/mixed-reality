@@ -1,5 +1,5 @@
 ---
-title: SpectatorView (Preview)
+title: SpectatorView (Preview and Pro)
 description: Visualize holograms from the perspective of an AR enabled phone.
 author: danielescudero
 ms.author: dan escudero
@@ -8,16 +8,40 @@ ms.topic: article
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit
 ---
 
-# SpectatorView (Preview)
+# SpectatorView
 
 ![Marker](images/SpecViewPhoneHero.jpg)
+
+When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can. SpectatorView allows others to see on a 2D screen what a HoloLens user sees in their world.
+SpectatorView (Preview) is an HD, fast and affordable approach to recording holograms, while SpectatorView Pro is intended for Professional Video Recording of holograms.
+
+The following table shows both options with their capabilities, so you can use the option that best fits your video recording needs.
+
+|                                      | SpectatorView (Preview) |              SpectatorView Pro              |
+|--------------------------------------|:-----------------------:|:-------------------------------------------:|
+| HD   Quality                         |         Full HD         |        Professional   Quality Filming       |
+| Camera Movement                      |            ✔            |                                             |
+| Third Person View                    |            ✔            |                      ✔                      |
+| Can be streamed to screens           |            ✔            |                      ✔                      |
+| Portable                             |            ✔            |                                             |
+| Wireless                             |            ✔            |                                             |
+| Additional hardware required         |     iPhone (or iPad)    | HoloLens + Rig + Tripod + DSLR + PC + Unity |
+| Hardware assembly time               |           None          |                     Slow                    |
+| Cross-platform                       |           iOS           |                                             |
+| Viewer can interact                  |            ✔            |                                             |
+| Networking required (Unet scripting) |            ✔            |                      ✔                      |
+| Investment                           |           Low           |                     High                    |
+| Runtime setup duration               |         Instant         |                     Slow                    |
+
+# SpectatorView (Preview)
+
+![Marker](images/SpecViewPhoneDemo.jpg)
 
 ## What is SpectatorView for?
 - Filming HD Holograms: Using SpectatorView we can film holograms at screen resolution, meaning full HD, apply antialiasing and even shadows.
 - Streaming Live: Stream live HD holographic experiences to an AppleTV directly from your iPhone, completely lag-free!
 - Inviting Guests: Let non-HoloLens users experience holograms directly from their phones or tablets.
 
-![Marker](images/SpecViewPhoneDemo.jpg)
 
 Current Features
 ------------
@@ -171,7 +195,7 @@ Troubleshooting
 ![Spectator view setup](images/spectatorview-300px.png)
 
 
-When wearing a mixed reality headset, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator view allows others to see on a 2D screen what a HoloLens user sees in their world. Using spectator view involves these four components:
+Using SpectatorView Pro involves these four components:
 1. An app built specifically to enable spectator view, which is based on [shared experiences in mixed reality](shared-experiences-in-mixed-reality.md).
 2. A user wearing HoloLens using the app.
 3. A spectator view camera rig providing a third-person perspective video.
