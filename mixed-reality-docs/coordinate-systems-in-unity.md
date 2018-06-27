@@ -115,7 +115,7 @@ DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
 ### Moving a World Anchored GameObject
 
 GameObject's cannot be moved while a World Anchor is on it. If you need to move the GameObject this frame, you need to:
-1. DestroyImmedaite the World Anchor component
+1. DestroyImmediate the World Anchor component
 2. Move the GameObject
 3. Add a new World Anchor component to the GameObject.
 
