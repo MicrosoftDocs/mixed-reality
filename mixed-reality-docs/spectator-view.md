@@ -25,7 +25,7 @@ The following table shows both options with their capabilities, so you can use t
 | Can be streamed to screens           |            ✔            |                      ✔                      |
 | Portable                             |            ✔            |                                             |
 | Wireless                             |            ✔            |                                             |
-| Additional hardware required         |     iPhone (or iPad)    | HoloLens + Rig + Tripod + DSLR + PC + Unity |
+| Additional required hardware         |     iPhone (or iPad)    | HoloLens + Rig + Tripod + DSLR + PC + Unity |
 | Hardware assembly time               |           None          |                     Slow                    |
 | Cross-platform                       |           iOS           |                                             |
 | Viewer can interact                  |            ✔            |                                             |
@@ -37,9 +37,9 @@ The following table shows both options with their capabilities, so you can use t
 
 ![Marker](images/SpecViewPhoneDemo.jpg)
 
-## What is SpectatorView for?
-- Filming HD Holograms: Using SpectatorView we can film holograms at screen resolution, meaning full HD, apply antialiasing and even shadows.
-- Streaming Live: Stream live HD holographic experiences to an AppleTV directly from your iPhone, completely lag-free!
+## What is SpectatorView (Preview) for?
+- Filming HD Holograms: Using SpectatorView (Preview) we can film holograms using an iPhone, meaning full HD, apply antialiasing to holograms and even shadows. It is a cheap and fast way to capture video of holograms.
+- Streaming Live: Stream live HD holographic experiences to an AppleTV directly from your iPhone or iPad, completely lag-free!
 - Inviting Guests: Let non-HoloLens users experience holograms directly from their phones or tablets.
 
 
@@ -53,6 +53,7 @@ Current Features
 - Recording of Video + Holograms + Ambient sound + Hologram Sounds.
 - Share sheet so you can Save the Video, email it, or share it with other supporting apps.
 > **NOTE:** The SpectatorView Preview code cannot be used with the SpectatorView Legacy version code. We recommend to implement it in new projects where video recording of holograms is required.
+
 
 Licenses
 --------
