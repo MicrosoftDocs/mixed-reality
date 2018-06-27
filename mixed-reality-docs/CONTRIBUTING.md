@@ -104,7 +104,12 @@ You’ll need to upload your images to the images folder in the repo, and then r
 
 ## Previewing your work
 
-While editing in the browser, you can click the **Preview** tab near the top of the page to preview your work before committing. Once your contributions have been merged into the 'master' branch, you can see what the documentation will look like when it goes public at https://review.docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools?branch=master (find your article using the table of contents in the left column.
+While editing in the browser, you can click the **Preview** tab near the top of the page to preview your work before committing. 
+
+>[!NOTE]
+>Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
+
+Once your contributions have been merged into the 'master' branch, you can see what the documentation will look like when it goes public at https://review.docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools?branch=master (find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
