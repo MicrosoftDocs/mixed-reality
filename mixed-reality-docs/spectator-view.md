@@ -15,22 +15,21 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can. SpectatorView allows others to see on a 2D screen what a HoloLens user sees in their world.
 SpectatorView (Preview) is an HD, fast and affordable approach to recording holograms, while SpectatorView Pro is intended for Professional Video Recording of holograms.
 
-The following table shows both options with their capabilities, so you can use the option that best fits your video recording needs.
+The following table shows both options with their capabilities. Choose the option that best fits your video recording needs:
 
 |                                      | SpectatorView (Preview) |              SpectatorView Pro              |
 |--------------------------------------|:-----------------------:|:-------------------------------------------:|
 | HD   Quality                         |         Full HD         |        Professional   Quality Filming       |
-| Camera Movement                      |            ✔            |                                             |
-| Third Person View                    |            ✔            |                      ✔                      |
+| Camera movement                      |            ✔            |                                             |
+| Third person view                    |            ✔            |                      ✔                      |
 | Can be streamed to screens           |            ✔            |                      ✔                      |
 | Portable                             |            ✔            |                                             |
 | Wireless                             |            ✔            |                                             |
 | Additional required hardware         |     iPhone (or iPad)    | HoloLens + Rig + Tripod + DSLR + PC + Unity |
-| Hardware assembly time               |           None          |                     Slow                    |
+| Hardware investment                  |           Low           |                     High                    |
 | Cross-platform                       |           iOS           |                                             |
 | Viewer can interact                  |            ✔            |                                             |
 | Networking required (Unet scripting) |            ✔            |                      ✔                      |
-| Investment                           |           Low           |                     High                    |
 | Runtime setup duration               |         Instant         |                     Slow                    |
 
 # SpectatorView (Preview)
