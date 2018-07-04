@@ -3,7 +3,7 @@ title: MR and Azure 302 - Computer vision
 description: Complete this course to learn how to implement Azure Computer Vision within a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr
 ---
 
@@ -29,7 +29,7 @@ In your application, it is up to you as to how you will integrate the results wi
 <tr>
 <th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 302b: Custom vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 302: Computer vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
