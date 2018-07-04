@@ -13,7 +13,7 @@ In this course, you will learn how to add translation capabilities to a mixed re
 
 ![Final product](images/AzureLabs-Lab1-00.png)
 
-The Translator Text API is a translation service which works in near real-time. The service is cloud-based, and, using a REST API call, an app can make use of the neural machine translation technology to translate text to another language. For more information, visit the [Azure Translator Text API page](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/).
+The Translator Text API is a translation Service which works in near real-time. The Service is cloud-based, and, using a REST API call, an app can make use of the neural machine translation technology to translate text to another language. For more information, visit the [Azure Translator Text API page](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/).
 
 Upon completion of this course, you will have a mixed reality application which will be able to do the following:
 
@@ -21,7 +21,7 @@ Upon completion of this course, you will have a mixed reality application which 
 2.	The app will capture the dictation and send it to the Azure Translator Text API.
 3.	The translation result will be displayed in a simple UI group in the Unity Scene.
 
-This course will teach you how to get the results from the translator service into a Unity-based sample application. It will be up to you to apply these concepts to a custom application you might be building.
+This course will teach you how to get the results from the Translator Service into a Unity-based sample application. It will be up to you to apply these concepts to a custom application you might be building.
 
 ## Device support
 
@@ -64,11 +64,12 @@ We recommend the following hardware and software for this course:
    ![Microphone setting](images/AzureLabs-Lab1-01.png)
 
 > [!WARNING]
-> Be aware that if you are developing for an immmersive headset for this lab, you may experience audio output device issues. This is due to an issue with Unity, which is fixed in later versions of Unity (Unity 2018.2). The issue prevents Unity from changing the default audio output device at run time. As a work around, ensure you have completed the above steps, and close and re-open the Editor, when this issue presents itself.
+> Be aware that if you are developing for an immersive headset for this lab, you may experience audio output device issues. This is due to an issue with Unity, which is fixed in later versions of Unity (Unity 2018.2). The issue prevents Unity from changing the default audio output device at run time. As a work around, ensure you have completed the above steps, and close and re-open the Editor, when this issue presents itself.
 
 ## Chapter 1 – The Azure Portal
 
-To use the Azure Translator API, you will need to configure an instance of the service to be made available to your application.
+To use the Azure Translator API, you will need to configure an instance of the Service to be made available to your application.
+
 1.	Log in to the  [Azure Portal](https://portal.azure.com).
 
     > [!NOTE]
@@ -81,16 +82,16 @@ To use the Azure Translator API, you will need to configure an instance of the s
     > [!NOTE]
     > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
-3.	The new page will provide a description of the *Translator Text API* service. At the bottom left of this page, select the **Create** button, to create an association with this service.
+3.	The new page will provide a description of the *Translator Text API* Service. At the bottom left of this page, select the **Create** button, to create an association with this Service.
 
-    ![Create Translator Text API service](images/AzureLabs-Lab1-03.png)
+    ![Create Translator Text API Service](images/AzureLabs-Lab1-03.png)
 
 4.	Once you have clicked on **Create**:
 
-    1. Insert your desired **Name** for this service instance.
+    1. Insert your desired **Name** for this Service instance.
     2. Select an appropriate **Subscription**.
     3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a *Translator Text Service*, a free tier (named F0) should be available to you.
-    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group).
+    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these labs) under a common resource group).
 
         > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
 
@@ -100,21 +101,21 @@ To use the Azure Translator API, you will need to configure an instance of the s
 
         ![Select Create button.](images/AzureLabs-Lab1-04.png)
 
-5.	Once you have clicked on **Create**, you will have to wait for the service to be created, this might take a minute.
+5.	Once you have clicked on **Create**, you will have to wait for the Service to be created, this might take a minute.
 6.	A notification will appear in the portal once the Service instance is created. 
 
-    ![Azure service creation notification](images/AzureLabs-Lab1-05.png)
+    ![Azure Service creation notification](images/AzureLabs-Lab1-05.png)
 
 7.	Click on the notification to explore your new Service instance. 
 
     ![Go to resource popup.](images/AzureLabs-Lab1-06.png)
 
-8.	Click the **Go to resource** button in the notification to explore your new Service instance. You will be taken to your new Translator Text API service instance. 
+8.	Click the **Go to resource** button in the notification to explore your new Service instance. You will be taken to your new Translator Text API Service instance. 
 
-    ![Translator Text API service page](images/AzureLabs-Lab1-07.png)
+    ![Translator Text API Service page](images/AzureLabs-Lab1-07.png)
 
-9.	Within this tutorial, your application will need to make calls to your service, which is done through using your service’s Subscription Key. 
-10.	From the *Quick start* page of your *Translator Text* service, navigate to the first step, *Grab your keys*, and click **Keys** (you can also achieve this by clicking the blue hyperlink Keys, located in the services navigation menu, denoted by the key icon). This will reveal your service *Keys*.
+9.	Within this tutorial, your application will need to make calls to your Service, which is done through using your Service’s Subscription Key. 
+10.	From the *Quick start* page of your *Translator Text* Service, navigate to the first step, *Grab your keys*, and click **Keys** (you can also achieve this by clicking the blue hyperlink Keys, located in the Services navigation menu, denoted by the key icon). This will reveal your Service *Keys*.
 11.	Take a copy of one of the displayed keys, as you will need this later in your project. 
 
 ## Chapter 2 – Set up the Unity project
@@ -195,7 +196,7 @@ The following is a typical set up for developing with mixed reality and, as such
 
         ![Update the X R Settings.](images/AzureLabs-Lab1-18.png)
 
-8.	Back in **Build Settings** *Unity C#* Projects is no longer greyed out; tick the checkbox next to this. 
+8.	Back in **Build Settings**, *Unity C# Projects* is no longer greyed out; tick the checkbox next to this. 
 9.	Close the Build Settings window.
 10.	Save your Scene and Project (**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
 
@@ -769,7 +770,7 @@ Ensure that:
 
 - All the settings mentioned in [Chapter 1](#chapter-1--the-azure-portal) are set correctly. 
 - The *Results*, *Translator*, and *MicrophoneManager*, scripts are attached to the **Main Camera** object. 
-- You have placed your *Azure Translator Text API* service **Key** within the **authorizationKey** variable within the *Translator* Script.  
+- You have placed your *Azure Translator Text API* Service **Key** within the **authorizationKey** variable within the *Translator* Script.  
 - All the fields in the *Main Camera Inspector Panel* are assigned properly.
 - Your microphone is working when running your scene (if not, check that your attached microphone is the *default* device, and that you have [set it up correctly within Windows](https://support.microsoft.com/en-au/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)).
 

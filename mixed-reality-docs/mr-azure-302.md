@@ -21,7 +21,7 @@ Having completed this course, you will have a mixed reality HoloLens application
 2.	The image will be sent to the Azure Computer Vision API Service. 
 3.	The objects recognized will be listed in a simple UI group positioned in the Unity Scene.
 
-In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality Application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
 ## Device support
 
@@ -29,7 +29,7 @@ In your application, it is up to you as to how you will integrate the results wi
 <tr>
 <th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 302: Computer vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 302b: Custom vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
@@ -162,7 +162,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
             ![Create new scripts folder](images/AzureLabs-Lab2-12.png)
 
-        3. Open your newly created **Scenes** folder, and then in the *File name*: text field, type **MR_ComputerVisionScene**, then press **Save**.
+        3. Open your newly created **Scenes** folder, and then in the *File name*: text field, type **MR_ComputerVisionScene**, then click **Save**.
 
             ![Give new scene a name.](images/AzureLabs-Lab2-13.png)
 
