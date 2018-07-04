@@ -224,14 +224,7 @@ Use the file explorer to browse, upload, and download files. You can work with f
 >[!NOTE]
 >Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](commercial-features.md).
 
-![Kiosk Mode page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-kiosk-mode-page-1000px.png)<br>
-*Kiosk Mode page in Windows Device Portal on Microsoft HoloLens*
-
-Enables kiosk mode, which limits the user's ability to launch new apps or change the running app. When kiosk mode is enabled, the Bloom gesture and Cortana are disabled, and placed apps aren't shown in the user's surroundings.
-
-Check **Enable Kiosk Mode** to put the HoloLens into kiosk mode. Select the app to run at startup from the **Startup app** dropdown. Click or tap **Save** to commit the settings.
-
-Note that the app will run at startup even if kiosk mode is not enabled. Select **None** to have no app run at startup.
+Please check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/en-us/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
 
 ### Logging
 

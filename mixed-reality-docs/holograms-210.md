@@ -49,6 +49,9 @@ We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-210-Gaze.zip) required by the project. Requires Unity 2017.2 or later.
 * Un-archive the files to your desktop or other easy to reach location.
 
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze).
+
 ### Errata and Notes
 
 * In Visual Studio, "Just My Code" needs to be disabled (unchecked) under Tools->Options->Debugging in order to hit breakpoints in your code.
@@ -127,20 +130,19 @@ Finally, we'll update our quality settings to achieve a fast performance on Holo
 
 ### Build the project
 
-1. In Unity select **File > Build Settings**.
+1. In Unity, select **File > Build Settings**.
 2. Click **Add Open Scenes** to add the scene.
 3. Select **Universal Windows Platform** in the **Platform** list and click **Switch Platform**.
 4. If you're specifically developing for HoloLens, set **Target device** to **HoloLens**. Otherwise, leave it on **Any device**.
 5. Ensure **Build Type** is set to **D3D** and **SDK** is set to **Latest installed** (which should be SDK 16299 or newer).
-6. Check **Unity C# Projects**.
-7. Click **Build**.
-8. Create a **New Folder** named "App".
-9. Single click the **App folder**.
-10. Press **Select Folder**.
+6. Click **Build**.
+7. Create a **New Folder** named "App".
+8. Single click the **App** folder.
+9. Press **Select Folder**.
 
 When Unity is done, a File Explorer window will appear.
 
-1. Open the **App folder**.
+1. Open the **App** folder.
 2. Open the **ModelExplorer Visual Studio Solution**.
 
 If deploying to HoloLens:

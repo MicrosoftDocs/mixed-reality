@@ -59,6 +59,9 @@ In this course, we'll revisit Model Explorer, which we built in [MR Input 210](h
 * Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-212-Voice.zip) required by the project. Requires Unity 2017.2 or later.
 * Un-archive the files to your desktop or other easy to reach location.
 
+>[!NOTE]
+>If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-212-Voice).
+
 ### Errata and Notes
 
 * "Enable Just My Code" needs to be disabled (*unchecked*) in Visual Studio under Tools->Options->Debugging in order to hit breakpoints in your code.
@@ -77,18 +80,18 @@ In this course, we'll revisit Model Explorer, which we built in [MR Input 210](h
 
 ### Building
 
-1. In Unity select **File > Build Settings**.
+1. In Unity, select **File > Build Settings**.
 2. If **Scenes/ModelExplorer** is not listed in **Scenes In Build**, click **Add Open Scenes** to add the scene.
 3. If you're specifically developing for HoloLens, set **Target device** to **HoloLens**. Otherwise, leave it on **Any device**.
 4. Ensure **Build Type** is set to **D3D** and **SDK** is set to **Latest installed** (which should be SDK 16299 or newer).
 5. Click **Build**.
 6. Create a **New Folder** named "App".
-7. Single click the **App Folder**.
+7. Single click the **App** folder.
 8. Press **Select Folder** and Unity will start building the project for Visual Studio.
 
 When Unity is done, a File Explorer window will appear.
 
-1. Open the **App folder**.
+1. Open the **App** folder.
 2. Open the **ModelExplorer Visual Studio Solution**.
 
 If deploying to HoloLens:

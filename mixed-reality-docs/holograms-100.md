@@ -106,6 +106,9 @@ We need to let Unity know that the app we are trying to export should create an 
 4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality SDKs** list.
 5. Verify that **Windows Mixed Reality** appears in the list. If not, select the **+** button at the bottom of the list and choose **Windows Mixed Reality**.
 
+>[!NOTE]
+>If you do not see the **Windows Store** icon, double check to make sure you selected the Windows Store .NET Scripting Backend prior to installation. If not, you may need to reinstall Unity with the correct Windows installation.
+
 **Verify .NET Configuration**
 
 ![Verify .NET Configuration](images/configoptions-375px.png)

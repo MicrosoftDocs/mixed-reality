@@ -345,8 +345,6 @@ To create this class:
 4.	Insert the following namespaces:
 
     ```cs
-        using System.Collections;
-        using System.Collections.Generic;
         using UnityEngine;
         using UnityEngine.UI;
     ```
@@ -447,8 +445,6 @@ To create this class:
 4.	Update the namespaces to be the same as the following, at the top of the *MicrophoneManager* class:
 
     ```csharp
-        using System.Collections; 
-        using System.Collections.Generic; 
         using UnityEngine; 
         using UnityEngine.Windows.Speech;
     ```
@@ -458,18 +454,12 @@ To create this class:
     ```csharp
         // Help to access instance of this object 
         public static MicrophoneManager instance; 
-   
-        // Recording frequency of mic 
-        private int frequency = 44100; 
-   
+     
         // AudioSource component, provides access to mic 
         private AudioSource audioSource; 
    
         // Flag indicating mic detection 
         private bool microphoneDetected; 
-   
-        // Flag indicating audio capture status 
-        private bool isCapturingAudio;  
    
         // Component converting speech to text 
         private DictationRecognizer dictationRecognizer; 
@@ -510,10 +500,7 @@ To create this class:
         public void StartCapturingAudio() 
         { 
             if(microphoneDetected) 
-            { 
-                // Start microphone capture 
-                isCapturingAudio = true;              
-               
+            {               
                 // Start dictation 
                 dictationRecognizer = new DictationRecognizer(); 
                 dictationRecognizer.DictationResult += DictationRecognizer_DictationResult; 
@@ -530,7 +517,6 @@ To create this class:
         public void StopCapturingAudio() 
         { 
             Results.instance.SetMicrophoneStatus("Mic sleeping"); 
-            isCapturingAudio = false; 
             Microphone.End(null); 
             dictationRecognizer.DictationResult -= DictationRecognizer_DictationResult; 
             dictationRecognizer.Dispose(); 
@@ -579,15 +565,10 @@ To create this Class:
 4.	Add the following namespaces to the top of the file:
 
     ```csharp
-        using System; 
-        using System.Collections; 
-        using System.Collections.Generic; 
-        using System.IO; 
-        using System.Net; 
-        using System.Net.Security; 
-        using System.Runtime.Serialization; 
-        using System.Xml; 
-        using UnityEngine; 
+        using System;
+        using System.Collections;
+        using System.Xml.Linq;
+        using UnityEngine;
         using UnityEngine.Networking;
     ```
 
@@ -647,43 +628,36 @@ To create this Class:
         /// Request a Token from Azure Translation Service by providing the access key. 
         /// Debugging result is delivered to the Results class. 
         /// </summary> 
-        private IEnumerator GetTokenCoroutine(string key) 
-        { 
-            if (string.IsNullOrEmpty(key)) 
-            { 
-                throw new InvalidOperationException("Authorization key not set."); 
-            } 
-   
-            WWWForm webForm = new WWWForm();
-              
-            using (UnityWebRequest unityWebRequest = UnityWebRequest.Post(translationTokenEndpoint, webForm)) 
-            { 
-                unityWebRequest.SetRequestHeader("Ocp-Apim-Subscription-Key", key);
+        private IEnumerator GetTokenCoroutine(string key)
+        {
+            if (string.IsNullOrEmpty(key))
+            {
+                throw new InvalidOperationException("Authorization key not set.");
+            }
 
-                // The download handler is responsible for bringing back the token after the request 
-                unityWebRequest.downloadHandler = new DownloadHandlerBuffer(); 
-              
-                yield return unityWebRequest.SendWebRequest(); 
-    
-                authorizationToken = unityWebRequest.downloadHandler.text; 
-    
-                if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError) 
-                { 
-                    Results.instance.azureResponseText.text = unityWebRequest.error; 
-                } 
-               
-                long responseCode = unityWebRequest.responseCode; 
-               
+            using (UnityWebRequest unityWebRequest = UnityWebRequest.Post(translationTokenEndpoint, string.Empty))
+            {
+                unityWebRequest.SetRequestHeader("Ocp-Apim-Subscription-Key", key);
+                yield return unityWebRequest.SendWebRequest();
+
+                long responseCode = unityWebRequest.responseCode;
+
                 // Update the UI with the response code 
-                Results.instance.SetAzureResponse(responseCode.ToString()); 
-            } 
-    
+                Results.instance.SetAzureResponse(responseCode.ToString());
+
+                if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError)
+                {
+                    Results.instance.azureResponseText.text = unityWebRequest.error;
+                    yield return null;
+                }
+                else
+                {
+                    authorizationToken = unityWebRequest.downloadHandler.text;
+                }
+            }
+
             // After receiving the token, begin capturing Audio with the MicrophoneManager Class 
-            MicrophoneManager.instance.StartCapturingAudio(); 
-    
-            StopCoroutine("GetTokenCoroutine"); 
-    
-            yield return null; 
+            MicrophoneManager.instance.StartCapturingAudio();
         }
     ```
 
@@ -697,52 +671,27 @@ To create this Class:
         /// Request a translation from Azure Translation Service by providing a string.  
         /// Debugging result is delivered to the Results class. 
         /// </summary> 
-        public IEnumerator TranslateWithUnityNetworking(string text) 
-        { 
-            WWWForm webForm = new WWWForm(); 
-            string result; 
-            string queryString; 
-     
+        public IEnumerator TranslateWithUnityNetworking(string text)
+        {
             // This query string will contain the parameters for the translation 
-            queryString = string.Concat("text=", Uri.EscapeDataString(text), "&from=", from, "&to=",to);        
-     
-            using (UnityWebRequest unityWebRequest = 
-            UnityWebRequest.Get(translationTextEndpoint + queryString))        
-            { 
-                unityWebRequest.downloadHandler = new DownloadHandlerBuffer(); 
-                unityWebRequest.SetRequestHeader("Authorization", "Bearer " + authorizationToken); 
-                unityWebRequest.SetRequestHeader("Accept", "application/xml"); 
-                yield return unityWebRequest.SendWebRequest(); 
-    
-                string deliveredString = unityWebRequest.downloadHandler.text; 
-    
-                // The response will be in Json format 
-                // Therefore we need to deserialise it 
-                DataContractSerializer serializer; 
-                serializer = new DataContractSerializer(typeof(string)); 
-                using (Stream stream = GenerateStreamFromString(deliveredString)) 
-                { 
-                   // Set the UI with the translation 
-                   Results.instance.SetTranslatedResult((string)serializer.ReadObject(stream));    
+            string queryString = string.Concat("text=", Uri.EscapeDataString(text), "&from=", from, "&to=", to);
+
+            using (UnityWebRequest unityWebRequest = UnityWebRequest.Get(translationTextEndpoint + queryString))
+            {
+                unityWebRequest.SetRequestHeader("Authorization", "Bearer " + authorizationToken);
+                unityWebRequest.SetRequestHeader("Accept", "application/xml");
+                yield return unityWebRequest.SendWebRequest();
+
+                if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError)
+                {
+                    Debug.Log(unityWebRequest.error);
+                    yield return null;
                 }
-               
-                if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError) 
-                { 
-                    Debug.Log(unityWebRequest.error); 
-                }
-               
-                StopCoroutine("TranslateWithUnityNetworking");              
-            } 
-        } 
-    
-        public static Stream GenerateStreamFromString(string incomingString) 
-        { 
-            MemoryStream stream = new MemoryStream(); 
-            StreamWriter writer = new StreamWriter(stream); 
-            writer.Write(incomingString); 
-            writer.Flush(); 
-            stream.Position = 0; 
-            return stream; 
+
+                // Parse out the response text from the returned Xml
+                string result = XElement.Parse(unityWebRequest.downloadHandler.text).Value;
+                Results.instance.SetTranslatedResult(result);
+            }
         }
     ```
 
