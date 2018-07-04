@@ -68,15 +68,15 @@ To use the *Computer Vision API* service in Azure, you will need to configure an
 
 1.	First, log in to the [Azure Portal](https://portal.azure.com). 
 
-> [!NOTE]
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE]
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 2.	Once you are logged in, click on **New** in the top left corner, and search for *Computer Vision API*, and click **Enter**.
 
     ![Create a new resource in Azure](images/AzureLabs-Lab2-00.png)
 
-> [!NOTE]
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE]
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
  
 3.	The new page will provide a description of the *Computer Vision API* service. At the bottom left of this page, select the **Create** button, to create an association with this service.
 
@@ -119,8 +119,8 @@ To use the *Computer Vision API* service in Azure, you will need to configure an
 
     ![Your new Computer Vision API service](images/AzureLabs-Lab2-05-5.png)
 
-> [!TIP]
-> You can check what the various endpoints are [HERE](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa). 
+    > [!TIP]
+    > You can check what the various endpoints are [HERE](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa). 
 
 ## Chapter 2 – Set up the Unity project
 
@@ -551,8 +551,8 @@ To create this class:
         }
     ```
 
-> [!NOTE] 
-> The *TagData* and *AnalysedObject* classes need to have the *[System.Serializable]* attribute added before the declaration to be able to be deserialized with the Unity libraries.
+    > [!NOTE] 
+    > The *TagData* and *AnalysedObject* classes need to have the *[System.Serializable]* attribute added before the declaration to be able to be deserialized with the Unity libraries.
 
 6.	In the VisionManager class, you should add the following variables:
 
@@ -569,14 +569,14 @@ To create this class:
         internal string imagePath;
     ```
 
-> [!WARNING] 
-> Make sure you insert your **Auth Key** into the **authorizationKey** variable. You will have noted your **Auth Key** at the beginning of this course, [Chapter 1](#chapter-1--the-azure-portal).
+    > [!WARNING] 
+    > Make sure you insert your **Auth Key** into the **authorizationKey** variable. You will have noted your **Auth Key** at the beginning of this course, [Chapter 1](#chapter-1--the-azure-portal).
 
-> [!WARNING] 
-> The **visionAnalysisEndpoint** variable might differ from the one specified in this example. The **west-us** strictly refers to Service instances created for the West US region. Update this with your [endpoint URL](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa); here are some examples of what that might look like:
-> - West Europe: `https://westeurope.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
-> - Southeast Asia: `https://southeastasia.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
-> - Australia East: `https://australiaeast.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
+    > [!WARNING] 
+    > The **visionAnalysisEndpoint** variable might differ from the one specified in this example. The **west-us** strictly refers to Service instances created for the West US region. Update this with your [endpoint URL](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa); here are some examples of what that might look like:
+    > - West Europe: `https://westeurope.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
+    > - Southeast Asia: `https://southeastasia.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
+    > - Australia East: `https://australiaeast.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
 
 7.	Code for Awake now needs to be added. 
 

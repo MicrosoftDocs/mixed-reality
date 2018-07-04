@@ -3,7 +3,7 @@ title: MR and Azure 301 - Language translation
 description: Complete this course to learn how to implement the Azure Translator Text API within a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, hololens, immersive, vr
 ---
 
@@ -476,7 +476,7 @@ To create this class:
     
         void Start() 
         { 
-            //Use Unity Microphone class to detect devices and setup Audiosource 
+            //Use Unity Microphone class to detect devices and setup AudioSource 
             if(Microphone.devices.Length > 0) 
             { 
                 Results.instance.SetMicrophoneStatus("Initialising..."); 

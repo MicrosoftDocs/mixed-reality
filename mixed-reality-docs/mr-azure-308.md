@@ -3,7 +3,7 @@ title: MR and Azure 308 - Cross-device notifications
 description: Complete this course to learn how to implement Azure Notification Hubs, Azure Functions, and Azure Storage and Tables within a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, notification, functions, tables, notification hubs, hololens, immersive, vr
 ---
 
@@ -90,9 +90,9 @@ Log into the Application Registration Portal, where your new app will be listed,
 
     ![application registration portal](images/AzureLabs-Lab8-03.png)
 
-> [!WARNING] 
-> You will need to use your Microsoft Account to Login.  
-> This **must** be the Microsoft Account which you used in the previous [Chapter](#chapter-1---create-an-application-on-the-microsoft-developer-portal), with the Windows Store Developer portal.
+    > [!WARNING] 
+    > You will need to use your Microsoft Account to Login.  
+    > This **must** be the Microsoft Account which you used in the previous [Chapter](#chapter-1---create-an-application-on-the-microsoft-developer-portal), with the Windows Store Developer portal.
 
 2.  You will find your app under the **My applications** section. Once you have found it, click on it and you will be taken to a new page which has the app name plus **Registration**.
 
@@ -108,15 +108,15 @@ With your apps credentials retrieved, you will need to go to the Azure Portal, w
 
 1.  Log into the [Azure Portal](https://portal.azure.com).
 
-> [!NOTE] 
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE] 
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 2.  Once you are logged in, click on **New** in the top left corner, and search for **Notification Hub**, and click ***Enter***.
 
     ![search for notification hub](images/AzureLabs-Lab8-06.png)
 
-> [!NOTE] 
-> The word ***New*** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE] 
+    > The word ***New*** may have been replaced with **Create a resource**, in newer portals.
 
 3.  The new page will provide a description of the *Notification Hubs* service. At the bottom left of this prompt, select the **Create** button, to create an association with this service.
 
@@ -168,8 +168,8 @@ After creating your Notification Hubs Service instance, navigate back to your Az
 
 2.  Once logged in, click on **New** in the top left corner, and search for **Storage account**, and click **Enter**.
 
-> [!NOTE] 
-> The word ***New*** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE] 
+    > The word ***New*** may have been replaced with **Create a resource**, in newer portals.
 
 3.  Select **Storage account - blob, file, table, queue** from the list.
 
@@ -246,12 +246,12 @@ Now that your **Table service** storage account has been setup, it is time to ad
 
 3.  The **Cloud Explorer** will open as a docked item (be patient, as loading may take time).
 
-> [!NOTE] 
-> If the Subscription you used to create your *Storage Accounts* is not visible, ensure that you have: 
-> - Logged in to the same account as the one you used for the Azure Portal.
-> - Selected your Subscription from the Account Management Page (you may need to apply a filter from your account settings):  
->
->   ![find subscription](images/AzureLabs-Lab8-22-5.png)
+    > [!NOTE] 
+    > If the Subscription you used to create your *Storage Accounts* is not visible, ensure that you have: 
+    > - Logged in to the same account as the one you used for the Azure Portal.
+    > - Selected your Subscription from the Account Management Page (you may need to apply a filter from your account settings):  
+    >
+    >   ![find subscription](images/AzureLabs-Lab8-22-5.png)
 
 4.  Your Azure cloud services will be shown. Find **Storage Accounts** and click the arrow to the left of that to expand your accounts.
 
@@ -279,8 +279,8 @@ Now that your **Table service** storage account has been setup, it is time to ad
 
     ![click ok when done](images/AzureLabs-Lab8-27.png)
 
-> [!WARNING] 
-> Ensure that you have changed the **Type** of the **X**, **Y**, and **Z**, entries to **Double**. 
+    > [!WARNING] 
+    > Ensure that you have changed the **Type** of the **X**, **Y**, and **Z**, entries to **Double**. 
 
 11. You will notice your table now has a row of data. Click the **+** (plus) icon again to add another entity.
 
@@ -336,8 +336,8 @@ First, you need to create a file that will allow your Azure Function to load the
 
     ![search for function app](images/AzureLabs-Lab8-32.png)
 
-> [!NOTE] 
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE] 
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
 5.  The new page will provide a description of the **Function App** service. At the bottom left of this prompt, select the **Create** button, to create an association with this service.
 
@@ -393,8 +393,8 @@ First, you need to create a file that will allow your Azure Function to load the
 
     ![http put link](images/AzureLabs-Lab8-39.png)
 
-> [!IMPORTANT]
-> You may have to scroll further the down the page (and this image may not look exactly the same, if Azure Portal updates have taken place), however, you are looking for an element called *HTTP PUT*.
+    > [!IMPORTANT]
+    > You may have to scroll further the down the page (and this image may not look exactly the same, if Azure Portal updates have taken place), however, you are looking for an element called *HTTP PUT*.
 
 14. The **HTTP PUT** window will appear, where you need to configure the function (see below for image).
 
@@ -454,7 +454,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
         log.Verbose($"Updated object position");
 
-        //Serialise the UnityGameObject
+        //Serialize the UnityGameObject
         string wnsNotificationPayload = JsonConvert.SerializeObject(existingGameObj);
         
         log.Info($"{wnsNotificationPayload}");
@@ -480,8 +480,8 @@ First, you need to create a file that will allow your Azure Function to load the
     }
     ```
 
-> [!NOTE]
-> Using the included libraries, the function receives the name and location of the object which was moved in the Unity scene (as a C# object, called **UnityGameObject**). This object is then used to update the object parameters within the created table. Following this, the function makes a call to your created Notification Hub service, which notifies all subscribed applications.
+    > [!NOTE]
+    > Using the included libraries, the function receives the name and location of the object which was moved in the Unity scene (as a C# object, called **UnityGameObject**). This object is then used to update the object parameters within the created table. Following this, the function makes a call to your created Notification Hub service, which notifies all subscribed applications.
 
 18. With the code in place, click **Save**.
 
@@ -621,8 +621,8 @@ First, you need to create a file that will allow your Azure Function to load the
 
         ![outputs complete](images/AzureLabs-Lab8-50-3.png)
 
-> [!WARNING]
-> If the above test fails, you will need to double check that you have followed the above steps exactly, particularly the settings within the **integrate panel**. 
+    > [!WARNING]
+    > If the above test fails, you will need to double check that you have followed the above steps exactly, particularly the settings within the **integrate panel**. 
 
 ## Chapter 7 - Set up Desktop Unity Project
 
@@ -708,8 +708,8 @@ Set up and test your mixed reality immersive headset.
 
 10. Save your Scene and Project **File > Save Scene* / *File > Save Project**.
 
-> [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component for this project (Desktop App), and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-Desktop.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 9](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project).  You will still need to add the script components.
+    > [!IMPORTANT]
+    > If you wish to skip the *Unity Set up* component for this project (Desktop App), and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-Desktop.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 9](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project).  You will still need to add the script components.
 
 ## Chapter 8 - Importing the DLLs in Unity
 
@@ -741,8 +741,8 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
     ![apply platform dlls](images/AzureLabs-Lab8-63.png)
 
-> [!NOTE] 
-> We are marking these particular plugins to only be used in the Unity Editor. This is because there are different versions of the same plugins in the WSA folder that will be used after the project is exported from Unity.
+    > [!NOTE] 
+    > We are marking these particular plugins to only be used in the Unity Editor. This is because there are different versions of the same plugins in the WSA folder that will be used after the project is exported from Unity.
 
 6.  In the **Storage** plugin folder, select only:
 
@@ -754,8 +754,8 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
     ![apply no processing](images/AzureLabs-Lab8-65.png)
 
-> [!NOTE] 
-> We are marking this plugin "Don't process", because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it is not processed.
+    > [!NOTE] 
+    > We are marking this plugin "Don't process", because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it is not processed.
 
 ## Chapter 9 - Create the TableToScene class in the Desktop Unity project
 
@@ -815,10 +815,11 @@ To create this class:
         /// </summary>    
         private string accountKey = " -- Insert your Azure Storage key -- ";
     ```
-> [!NOTE] 
-> Substitute the **accountName** value with your Azure Storage Service name and **accountKey** value with the key value found in the Azure Storage Service, in the Azure Portal (See Image below). 
-
-![fetch account key](images/AzureLabs-Lab8-70.png)
+    
+    > [!NOTE] 
+    > Substitute the **accountName** value with your Azure Storage Service name and **accountKey** value with the key value found in the Azure Storage Service, in the Azure Portal (See Image below). 
+    >
+    > ![fetch account key](images/AzureLabs-Lab8-70.png)
 
 7.  Now add the **Start()** and **Awake()** methods to initialize the
     class.
@@ -926,7 +927,7 @@ To create this class:
 
     ```csharp
         /// <summary>
-        /// This objects is used to serialise and deserialise the Azure Table Entity
+        /// This objects is used to serialize and deserialize the Azure Table Entity
         /// </summary>
         [System.Serializable]
         public class AzureTableEntity : TableEntity
@@ -1093,7 +1094,7 @@ To create the second script:
 
             azureTableEntity.Z = zPos;
 
-            // Serialise the AzureTableEntity object to be sent to Azure
+            // Serialize the AzureTableEntity object to be sent to Azure
             string jsonObject = JsonConvert.SerializeObject(azureTableEntity);
 
             using (UnityWebRequest www = UnityWebRequest.Post(azureFunctionEndpoint, jsonObject))
@@ -1124,7 +1125,6 @@ To create the second script:
     2. With the **Scripts** folder open, select the **CloudScene** script and drag it onto the **Main Camera**. The result should be as below:
 
         > ![drag cloud script onto main camera](images/AzureLabs-Lab8-75.png)
-
 
 ## Chapter 11 - Build the Desktop Project to UWP
 
@@ -1172,6 +1172,7 @@ The following is a typical set up for developing with the mixed reality, and as 
 5.  Go to **File > Build Settings** and make sure that:
 
     1.  **Target Device** is set to **Any Device**
+
         > For the Microsoft HoloLens, set **Target Device** to *HoloLens*.
 
     2.  **Build Type** is set to **D3D**
@@ -1228,8 +1229,8 @@ The following is a typical set up for developing with the mixed reality, and as 
 
 10. Save your Scene and Project **File* *Save Scene*/ *File* *Save Project**.
 
-> [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component for this project (mixed reality App), and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 14](#chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project). You will still need to add the script components.
+    > [!IMPORTANT]
+    > If you wish to skip the *Unity Set up* component for this project (mixed reality App), and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 14](#chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project). You will still need to add the script components.
 
 ### Chapter 13 - Importing the DLLs in the Mixed Reality Unity Project
 
@@ -1260,8 +1261,8 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
     ![apply platform changes](images/AzureLabs-Lab8-92.png)
 
-> [!NOTE] 
-> You are marking these particular plugins to only be used in the Unity Editor. This is because there are different versions of the same plugins in the WSA folder that will be used after the project is exported from Unity.
+    > [!NOTE] 
+    > You are marking these particular plugins to only be used in the Unity Editor. This is because there are different versions of the same plugins in the WSA folder that will be used after the project is exported from Unity.
 
 6.  In the **Storage** plugin folder, select only:
 
@@ -1273,8 +1274,8 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
     ![dont process](images/AzureLabs-Lab8-94.png)
 
-> [!NOTE] 
-> You are marking this plugin "Don't process" because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it isn't processed.
+    > [!NOTE] 
+    > You are marking this plugin "Don't process" because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it isn't processed.
 
 ## Chapter 14 - Creating the TableToScene class in the mixed reality Unity project
 
@@ -1429,8 +1430,8 @@ To create the **NotificationReceiver** script:
 
 9.  The following handler, **Channel\_PushNotificationReceived()**, will be triggered every time a notification is received. It will deserialize the notification, which will be the Azure Table Entity that has been moved on the Desktop Application, and then move the corresponding GameObject in the MR scene to the same position. 
     
-> [!IMPORTANT]
-> The code is commented out because the code references the Azure Messaging library, which you will add after building the Unity project using the Nuget Package Manager, within Visual Studio. As such, the Unity project will not be able to build, unless it is commented out. Be aware, that should you build your project, and then wish to return to Unity, you will need to **re-comment** that code.
+    > [!IMPORTANT]
+    > The code is commented out because the code references the Azure Messaging library, which you will add after building the Unity project using the Nuget Package Manager, within Visual Studio. As such, the Unity project will not be able to build, unless it is commented out. Be aware, that should you build your project, and then wish to return to Unity, you will need to **re-comment** that code.
 
     ```csharp
         ///// <summary>
@@ -1466,12 +1467,12 @@ To create the **NotificationReceiver** script:
 
 12. With the **Scripts** folder open, select the **NotificationReceiver** script and drag it onto the **Main Camera**. The result should be as below:
 
-    ![drag notificationreceiver script to camera](images/AzureLabs-Lab8-98.png)
+    ![drag notification receiver script to camera](images/AzureLabs-Lab8-98.png)
 
-> [!NOTE]
-> If you are developing this for the Microsoft HoloLens, you will need to update the **Main Camera**'s *Camera* component, so that:
-> - Clear Flags: Solid Color
-> - Background: Black
+    > [!NOTE]
+    > If you are developing this for the Microsoft HoloLens, you will need to update the **Main Camera**'s *Camera* component, so that:
+    > - Clear Flags: Solid Color
+    > - Background: Black
 
 ## Chapter 16 - Build the Mixed Reality Project to UWP
 
@@ -1525,13 +1526,13 @@ To import the NuGet package:
 
 5.  The version initially provided **may not** be compatible with this project. Therefore, click on the dropdown menu next to **Version**, and click **Version 0.1.7.9**, then click **Install**.
 
-6.  You have now finished installing the NuGet package. Find the commented code you entered in the **NotificationReciever** class and remove the comments..
+6.  You have now finished installing the NuGet package. Find the commented code you entered in the **NotificationReceiver** class and remove the comments..
 
 
 
-## Chapter 18 - Edit UnityMRNotifHub application, NotificationReciever class
+## Chapter 18 - Edit UnityMRNotifHub application, NotificationReceiver class
 
-Following having added the **NuGet Packages**, you will need to *uncomment* some of the code within the **NotificationReciever** class.
+Following having added the **NuGet Packages**, you will need to *uncomment* some of the code within the **NotificationReceiver** class.
 
 This includes:
 
@@ -1582,7 +1583,7 @@ This includes:
                 //  Raw content of the Notification
                 string jsonContent = args.RawNotification.Content;
 
-                // Deserialise the Raw content into an AzureTableEntity object
+                // Deserialize the Raw content into an AzureTableEntity object
                 AzureTableEntity ate = JsonConvert.DeserializeObject<AzureTableEntity>(jsonContent);
 
                 // The name of the Game Object to be moved
@@ -1599,7 +1600,7 @@ This includes:
 
 With these uncommented, ensure that you save, and then proceed to the next Chapter.
 
-## Chapter 19 - Associate the *Mixed Reality* project to the Store App
+## Chapter 19 - Associate the mixed reality project to the Store app
 
 You now need to associate the **mixed reality** project to the Store App you created in at the start of the lab.
 
@@ -1679,5 +1680,3 @@ Can you work out how to change the color of the GameObjects and send that notifi
 ### Exercise 2
 
 Can you add movement of the GameObjects to your MR app and see the updated scene in your desktop app?
-
-
