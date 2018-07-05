@@ -114,7 +114,7 @@ Before uploading to your OneDrive folder, please follow the steps below to packa
 
    ![On the bottom of the inspector panel, click the dropdown and assign a new unique name.](images/holosketch-14-assetbundles-1000px.png)
 
-10. Prepare an image which model Prefab. 
+10. Prepare a thumbnail image for the model object. 
    ![Drag an image into the project panel and assign the name used for the object.](images/holosketch-15-assetbundles-1000px.png)
 
 11. Create a folder named ‘Assetbundles’ under the Unity project’s ‘Asset’ folder.
