@@ -3,7 +3,7 @@ title: MR and Azure 304 - Face recognition
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition, hololens, immersive, vr
 ---
 
@@ -71,15 +71,15 @@ To use the *Face API* service in Azure, you will need to configure an instance o
 
 1.	First, log in to the [Azure Portal](https://portal.azure.com). 
 
-> [!NOTE]
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE]
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 2.  Once you are logged in, click on **New** in the top left corner, and search for *Face API*, press **Enter**.
 
     ![search for face api](images/AzureLabs-Lab4-01.png)
 
-> [!NOTE]
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE]
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
 3.  The new page will provide a description of the *Face API* service. At the bottom left of this prompt, select the **Create** button, to create an association with this service.
 
@@ -124,8 +124,8 @@ To use the *Face API* service in Azure, you will need to configure an instance o
 
 10. On the *Service* page select either the blue **Keys** hyperlink (if on the Quick start page), or the **Keys** link in the services navigation menu (to the left, denoted by the 'key' icon), to reveal your keys.
 
-> [!NOTE] 
-> Take note of either one of the keys and safeguard it, as you will need it later.
+    > [!NOTE] 
+    > Take note of either one of the keys and safeguard it, as you will need it later.
 
 ## Chapter 2 - Using the 'Person Maker' UWP application
 
@@ -308,7 +308,7 @@ The following is a typical set up for developing with mixed reality, and as such
 > [!IMPORTANT]
 > If you imported the '.unitypackage' in the [last Chapter](#chapter-4--main-camera-setup), you can skip this Chapter.
 
-To help you deserialise and serialise objects received and sent to the Bot Service you need to dowload the *Newtonsoft.Json* library. You will find a compatible version already organised with the correct Unity folder structure in this [Unity package file](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/newtonsoftDLL.unitypackage). 
+To help you deserialize and serialize objects received and sent to the Bot Service you need to download the *Newtonsoft.Json* library. You will find a compatible version already organized with the correct Unity folder structure in this [Unity package file](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/newtonsoftDLL.unitypackage). 
 
 To import the library:
 
@@ -447,8 +447,8 @@ To create the *FaceAnalysis* class:
         private const string personGroupId = "- Insert your group Id here -";
     ```
 
-> [!NOTE]
-> Replace the **key** and the **personGroupId** with your Service Key and the Id of the group that you created previously.
+    > [!NOTE]
+    > Replace the **key** and the **personGroupId** with your Service Key and the Id of the group that you created previously.
 
 9.	Add the *Awake()* method, which initialises the class, adding the *ImageCapture* class to the Main Camera and calls the Label creation method:
 
@@ -839,7 +839,7 @@ To deploy on HoloLens:
 
 3.  Use the tap gesture to capture the person's picture.
 4.  Wait for the App to send the analysis request and receive a response.
-5.  If the person has been successfully recognised, the person's name name will appear as UI text.
+5.  If the person has been successfully recognized, the person's name name will appear as UI text.
 6.  You can repeat the capture process using the tap gesture every few seconds.
 
 ## Your finished Azure Face API Application
