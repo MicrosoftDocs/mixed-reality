@@ -3,7 +3,7 @@ title: MR and Azure 307 - Machine learning
 description: Complete this course to learn how to implement Azure Machine Learning Studio within a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, machine learning, ml, machine learning studio, hololens, immersive, vr
 ---
 
@@ -62,15 +62,15 @@ To avoid encountering issues building this project, it is strongly suggested tha
 To use the Azure Translator API, you will need to configure an instance of the service to be made available to your application.
 1.	Log in to the  [Azure Portal](https://portal.azure.com).
 
-> [!NOTE]
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE]
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
-2.  Once you are logged in, click on **Storage Accounts** in the leftmenu.
+2.  Once you are logged in, click on **Storage Accounts** in the left menu.
 
     ![Azure Storage Account Setup](images/AzureLabs-Lab7-1.png)
 
-> [!NOTE]
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE]
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
 3.  On the **Storage Accounts** tab, click on **Add**.
 
@@ -85,10 +85,11 @@ To use the Azure Translator API, you will need to configure an instance of the s
     5.  For **Replication** select **Read-access-geo-redundant storage (RA-GRS)**.
     6.  Leave **Secure transfer required** as **Disabled**.
     7.  Select a **Subscription**.
-    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
+    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group).
+
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
     
-        > If you wish to read more about Azure Resource Groups, please follow this [LINK](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
-    9.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
+    5.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
 
 5.  You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
 
@@ -117,8 +118,8 @@ To use the *Azure Machine Learning*, you will need to configure an instance of t
     2.  Select a **Subscription**.
 
     3. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
-    
-        > If you wish to read more about Azure Resource Groups, please follow this [LINK](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
 
     4.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions. You should use the same resource group that you used for creating the Azure Storage in the previous Chapter.
 
@@ -300,8 +301,8 @@ To start creating an experiment:
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-33.png)
 
-> [!NOTE] 
-> If you click Test in this page, you will be able to enter input data and view the output. Enter the **day** and **hour**. Leave the **product** entry blank. Then click the **Confirm** button. The output on the bottom of the page will show the JSON representing the likelihood of each product being the choice.
+    > [!NOTE] 
+    > If you click Test in this page, you will be able to enter input data and view the output. Enter the **day** and **hour**. Leave the **product** entry blank. Then click the **Confirm** button. The output on the bottom of the page will show the JSON representing the likelihood of each product being the choice.
 
 29. A new web page will open up, displaying the instructions and some examples about the Request structure required by the Machine Learning Studio. Copy the **Request URI** displayed in this page, into your notepad.
 
@@ -380,7 +381,7 @@ Set up and test your Mixed Reality Immersive Headset.
 
 ## Chapter 6 - Importing the MLProducts Unity Package
 
-For this course, you will need to download a Unity Asset Package called [**Azure-MR-Lab-7.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20307%20-%20Machine%20learning/307-Scene-Setup.unitypackage). This package comes complete with a scene, with all objects in that prebuilt, so you can focus on getting it all working. The **ShelfKeeper** script is provided, though only holds the public variables, for the purpose of scene setup structure. You will need to do all other sections. 
+For this course, you will need to download a Unity Asset Package called [**Azure-MR-307.unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20307%20-%20Machine%20learning/307-Scene-Setup.unitypackage). This package comes complete with a scene, with all objects in that prebuilt, so you can focus on getting it all working. The **ShelfKeeper** script is provided, though only holds the public variables, for the purpose of scene setup structure. You will need to do all other sections. 
 
 To import this package:
 
@@ -388,7 +389,7 @@ To import this package:
 
     ![Importing the MLProducts Unity Package](images/AzureLabs-Lab7-39.png)
 
-2.  Use the file picker to select the **Azure-MR-Lab-7.unitypackage** package and click **Open**.
+2.  Use the file picker to select the **Azure-MR-307.unitypackage** package and click **Open**.
 
 3.  A list of components for this asset will be displayed to you. Confirm the import by clicking **Import**.
 
@@ -428,7 +429,7 @@ As part of the imported package, you will have been given this class, though it 
     public class ShelfKeeper : MonoBehaviour
     {
         /// <summary>
-        /// Provides this class Singleton-like behaviour
+        /// Provides this class Singleton-like behavior
         /// </summary>
         public static ShelfKeeper instance;
 
@@ -487,15 +488,15 @@ As part of the imported package, you will have been given this class, though it 
 
     ![Create the ShelfKeeper class](images/AzureLabs-Lab7-51.png)
 
-> [!IMPORTANT]
-> If your script does not have the reference targets (i.e. *Date (Text Mesh)*), simply drag the corresponding objects from the **Hierarchy Panel**, into the target fields. See below for explanation, if needed:
-> 
-> 1.  Open the **Spawn Point** array within the **ShelfKeeper** component script by left-clicking it. A sub-section will appear called **Size**, which indicates the size of the array. Type **3** into the textbox next to **Size** and press **Enter**, and three slots will be created beneath.
-> 2. Within the **Hierarchy** expand the **Time Display** object (by left-clicking the arrow beside it). Next click the ***Main Camera*** from within the **Hierarchy**, so that the **Inspector** shows its information.
-> 3. Select the **Main Camera** in the **Hierarchy Panel**. Drag the **Date** and **Time** objects from the **Hierarchy Panel** to the **Date Text** and **Time Text** slots within the **Inspector** of the **Main Camera** in the **ShelfKeeper** component.
-> 4. Drag the **Spawn Points** from the **Hierarchy Panel** (beneath the *Shelf* object) to the **3** **Element** reference targets beneath the **Spawn Point** array, as shown in the image.
-> 
->     ![Create the ShelfKeeper class](images/AzureLabs-Lab7-52.png)
+    > [!IMPORTANT]
+    > If your script does not have the reference targets (i.e. *Date (Text Mesh)*), simply drag the corresponding objects from the **Hierarchy Panel**, into the target fields. See below for explanation, if needed:
+    > 
+    > 1.  Open the **Spawn Point** array within the **ShelfKeeper** component script by left-clicking it. A sub-section will appear called **Size**, which indicates the size of the array. Type **3** into the textbox next to **Size** and press **Enter**, and three slots will be created beneath.
+    > 2. Within the **Hierarchy** expand the **Time Display** object (by left-clicking the arrow beside it). Next click the ***Main Camera*** from within the **Hierarchy**, so that the **Inspector** shows its information.
+    > 3. Select the **Main Camera** in the **Hierarchy Panel**. Drag the **Date** and **Time** objects from the **Hierarchy Panel** to the **Date Text** and **Time Text** slots within the **Inspector** of the **Main Camera** in the **ShelfKeeper** component.
+    > 4. Drag the **Spawn Points** from the **Hierarchy Panel** (beneath the *Shelf* object) to the **3** **Element** reference targets beneath the **Spawn Point** array, as shown in the image.
+    > 
+    >     ![Create the ShelfKeeper class](images/AzureLabs-Lab7-52.png)
 
 ## Chapter 9 - Create the ProductPrediction class
 
@@ -633,12 +634,12 @@ To create this class:
         private List<KeyValuePair<string, double>> keyValueList;
     ```
 
-> [!IMPORTANT]
-> Make sure to insert the **primary key** and **request-response endpoint**, from the Machine Learning Portal, into the variables here. The below images show where you would have taken the key and endpoint from. 
->  
-> ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-53-1.png)
->
-> ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-53-2.png)
+    > [!IMPORTANT]
+    > Make sure to insert the **primary key** and **request-response endpoint**, from the Machine Learning Portal, into the variables here. The below images show where you would have taken the key and endpoint from. 
+    >  
+    > ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-53-1.png)
+    >
+    > ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-53-2.png)
 
 8.  Insert this code within the **Start()** method. The **Start()** method is called when the class initializes:
 
@@ -735,7 +736,7 @@ To create this class:
                 yield return www.SendWebRequest();
                 string response = www.downloadHandler.text;
 
-                // Deserialise the response
+                // Deserialize the response
                 DataContractSerializer serializer;
                 serializer = new DataContractSerializer(typeof(string));
                 DeserialiseJsonResponse(response);
@@ -743,11 +744,11 @@ To create this class:
         }
     ```
 
-12. Add the following method, which is responsible for deserialising the JSON response, and communicating the result of the deserialization to the **ShelfKeeper** class. This result will be the names of the three items predicted to sell the most at current date and time. Insert the code below into the **ProductPrediction** class, below the previous method.
+12. Add the following method, which is responsible for deserializing the JSON response, and communicating the result of the deserialization to the **ShelfKeeper** class. This result will be the names of the three items predicted to sell the most at current date and time. Insert the code below into the **ProductPrediction** class, below the previous method.
 
     ```csharp
         /// <summary>
-        /// Deserialise the response received from the Machine Learning portal
+        /// Deserialize the response received from the Machine Learning portal
         /// </summary>
         public void DeserialiseJsonResponse(string jsonResponse)
         {

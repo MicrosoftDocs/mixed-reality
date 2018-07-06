@@ -32,7 +32,9 @@ When you create a new project in Visual Studio, it creates a simple default tile
 
 ### XML
 
- First, at the top of the app manifest add the uap5 schema and include it as an ignorable namespace:
+First, locate the app package manifest in your current project. By default, the manifest will be named Package.appxmanifest. If you're using Visual Studio, then right-click the manifest in your solution viewer and select **View source** to open the xml for editing. 
+
+At the top of the manifest, add the uap5 schema and include it as an ignorable namespace:
 
 ```xml
 <Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
