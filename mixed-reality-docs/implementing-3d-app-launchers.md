@@ -13,7 +13,7 @@ keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep
 # Implement 3D app launchers
 
 > [!NOTE]
-> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and is supported by HoloLens with the  Windows 10 April 2018 Update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
 The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating an application for Windows Mixed Reality, by default apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place. You can also create a [3D deep link (secondaryTile)](#3d-deep-links-secondarytiles) as a 3D launcher to content within a 2D UWP app.
 
@@ -201,8 +201,48 @@ For more information on the other tiles features and attributes and how they are
 
 3D Assets to be used as launchers for your application should be authored using the [Windows Mixed Reality authoring guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) to ensure compatibility. Assets that fail to meet this authoring specification will not be rendered in the Windows Mixed Reality home.
 
+## 3D App Launchers for Win32 Applications
+
+> [!NOTE]
+> This new feature is currently only available in the latest Windows Insider flights, build 17704 and newer.
+
+Win32 applications will appear in the All Apps list on Windows Mixed Reality immersive headsets if you create a 3D App Launcher for them. To do that, create a [Visual Elements Manifest](https://msdn.microsoft.com/en-us/library/windows/apps/dn393983.aspx) XML file referencing the 3D App Launcher by following these steps:
+
+1. Create a **3D App Launcher asset GLB file** (See [Modeling and exporting](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)).
+2. Create a **[Visual Elements Manifest](https://msdn.microsoft.com/en-us/library/windows/apps/dn393983.aspx)** for your application.
+    1. You can start with the **sample below**.  See the [Visual Elements Manifest](https://msdn.microsoft.com/en-us/library/windows/apps/dn393983.aspx) documentation for more details.
+    2. Update **Square150x150Logo** and **Square70x70Logo** with a PNG for your app.  These will be used for the app’s 2D logo in the Windows Mixed Reality All Apps list.
+        * These will be used for the app’s 2D logo in the Windows Mixed Reality All Apps list and for the Start Menu on desktop.
+        * The file path is relative to the folder containing the Visual Elements Manifest.
+        * You still need to provide a desktop Start Menu icon for your app through the standard mechanisms. This can either be directly in the executable or in the shortcut you create (e.g. via IShellLink::SetIconLocation).
+        * *Optional:* You can use a resources.pri file if you would like for MRT to provide multiple asset sizes for different resolution scales and high contrast themes.
+    3. Update the **MixedRealityModel Path** to point to the GLB for your 3D App Launcher
+    4. Save the file with the same name as your executable file, with an extension of ".VisualElementsManifest.xml" and save it in the same directory. For example, for the executable file "contoso.exe", the accompanying XML file is named "contoso.visualelementsmanifest.xml".
+3. **Add a shortcut** to your application to the desktop Windows Start Menu.
+    * Create it in %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs (machine) or %APPDATA%\Microsoft\Windows\Start Menu\Programs (user)
+    * If an update changes your visual elements manifest or the assets referenced by it, the updater or installer should update the shortcut such that the manifest is reparsed and cached assets are updated.
+4. *Optional:* If your desktop shortcut does not point directly to your application’s EXE (e.g., if it invokes a custom protocol handler like “myapp://”), the Start Menu won’t automatically find the app’s VisualElementsManifest.xml file. To resolve this, the shortcut should specify the file path of the Visual Elements Manifest using System.AppUserModel.VisualElementsManifestHintPath (). This can be set in the shortcut using the same techniques as System.AppUserModel.ID. You are not required to use System.AppUserModel.ID but you may do so if you wish for the shortcut to match the explicit Application User Model ID of the application if one is used.  See [Sample App Launcher Shortcut Creation](sample-app-launcher-shortcut-creation.md) for a C++ sample.
+
+### Sample Visual Elements Manifest
+
+```xml
+<Application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <VisualElements
+    ShowNameOnSquare150x150Logo="on"
+    Square150x150Logo="YOUR_APP_LOGO_150X150.png"
+    Square70x70Logo=" YOUR_APP_LOGO_70X70.png"
+    ForegroundText="light"
+    BackgroundColor="#000000">
+    <MixedRealityModel Path="YOUR_3D_APP_LAUNCHER_ASSET.glb">
+        <SpatialBoundingBox Center="0,0,0" Extents="Auto" />
+    </MixedRealityModel>
+  </VisualElements>
+</Application>
+```
+
 ## See also
 * [Mixed Reality Model Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) containing a 3D app launcher.
 * [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 * [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
+* [Sample App Launcher Shortcut Creation](sample-app-launcher-shortcut-creation.md)
