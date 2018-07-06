@@ -55,12 +55,14 @@ The following table shows both options and their capabilities. Choose the option
 >[!NOTE] 
 >The SpectatorView (Preview) code cannot be used with the SpectatorView Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
 
->[!VIDEO https://youtu.be/tiXA9CW8iAs]
+>[!VIDEO https://www.youtube.com/embed/tiXA9CW8iAs]
 
 ### Licenses
 
 - OpenCV - (3-clause BSD License) https://opencv.org/license.html
 - Unity ARKit - (MIT License) https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/src/3691df77caca2095d632c5e72ff4ffa68ced111f/LICENSES/MIT_LICENSE?at=default&fileviewer=file-view-default
+
+## How to set up SpectatorView (Preview)
 
 ### Requirements
 
@@ -84,15 +86,11 @@ The following table shows both options and their capabilities. Choose the option
 - Microsoft Visual Studio 2017
 - **Optional: **- UnityARKitPlugin. The required components of this plugin are already included in the MixedRealityToolkit-Unity project. The entire ARKit plugin can be downloaded from the asset store here: https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-arkit-plugin-92515
 
-
-### How to set up SpectatorView (Preview)
-
-#### Building the SpectatorView native plugin
+### Building the SpectatorView native plugin
 
 To generate the required files, follow these steps: https://github.com/Microsoft/MixedRealityToolkit/blob/master/SpectatorViewPlugin/README.md
 
-
-#### Project setup
+### Project setup
 
 1. Prepare your scene, ensuring all visable gameobjects within your scene are contained under a world root gameobject.
 
@@ -106,13 +104,13 @@ To generate the required files, follow these steps: https://github.com/Microsoft
 
     ![SpectatorView Network Discovery](images/SpecViewPhoneNetworkDiscovery.PNG)
 
-#### Networking your app
+### Networking your app
 
 - SpectatorView uses UNET for its networking and manages all host-client connections for you.
 - Any app specific data has to be synced and implemented by you, using e.g. SyncVars, NetworkTransform, NetworkBehavior.
 - For more information and tutorials on Unity Networking please visit https://unity3d.com/learn/tutorials/s/multiplayer-networking
 
-#### Building for each platform (HoloLens or iOS)
+### Building for each platform (HoloLens or iOS)
 
 - When building for iOS, ensure you remove the GLTF component of MRTK as this is not yet compatible with this platform.
 - At the top level of the SpectatorView prefab there is a component called 'Platform Switcher'. Select the platform you want to build for.
@@ -123,7 +121,7 @@ To generate the required files, follow these steps: https://github.com/Microsoft
 
 - Ensure you build all versions of the application using the same Unity editor instance (do not close Unity between builds) due to an unresolved issue with Unity.
 
-#### Running your app
+### Running your app
 
 Once you have built and deployed a version of you application on iPhone and on HoloLens, you should be able to connect them.
 
@@ -135,7 +133,7 @@ Once you have built and deployed a version of you application on iPhone and on H
 
 4. Once the marker has been detected by the HoloLens it should disappear and both devices should be connected and spatially synced.
 
-#### Recording video
+### Recording video
 
 1. To capture and save a video from the iPhone, tap and hold the screen for 1 second. This will open the recording menu.
 2. Tap the red record button, this will start a countdown before beginning to record the screen.
@@ -143,11 +141,11 @@ Once you have built and deployed a version of you application on iPhone and on H
 4. Once the recorded video loads, a Preview button (blue button) will appear, tap to watch the recorded video.
 5. Open the Share sheet and select Save to camera roll.
 
-#### Example scene
+### Example scene
 
 An example scene can be found in HoloToolkit-Examples\SpectatorView\Scenes\SpectatorViewExample.unity
 
-#### Troubleshooting
+### Troubleshooting
 
 **The Unity Editor won't connect to a session hosted by a HoloLens device**
 
@@ -190,9 +188,7 @@ An example scene can be found in HoloToolkit-Examples\SpectatorView\Scenes\Spect
 
 **SpectatorView Pro setup**
 
-
 ![Spectator view setup](images/spectatorview-300px.png)
-
 
 Using SpectatorView Pro involves these four components:
 1. An app built specifically to enable spectator view, which is based on [shared experiences in mixed reality](shared-experiences-in-mixed-reality.md).
@@ -241,13 +237,13 @@ The open-source version of spectator view trades off the ability to move the cam
 
 To make your app ready for spectator view, you'll need to build a [shared experience](holograms-240.md) app and ensure the app can run on both HoloLens as well as desktop in the Unity editor. The desktop version of the app will have additional components built in that composite the video feed with the rendered holograms.
 
-### Hardware shopping list
+## How to set up SpectatorView Pro
 
-**SpectatorView Pro Rig**
+### Requirements
 
+#### Hardware shopping list
 
 ![SpectatorView Pro Rig](images/spectatorviewrig-350px.jpg)
-
 
 Below is a recommended list of hardware, but you can experiment with other compatible units too. 
 
@@ -267,7 +263,8 @@ Below is a recommended list of hardware, but you can experiment with other compa
 [T15 Torx](https://www.amazon.com/Stanley-60-011-Standard-Torx-Screwdriver/dp/B000KFXDWW/ref=sr_1_1?ie=UTF8&qid=1479853303&sr=8-1) \
 [T7 Torx](https://www.amazon.com/SE-7542ST-6-Piece-Professional-Screwdriver/dp/B000ST3K3W/ref=sr_1_1?ie=UTF8&qid=1479853479&sr=8-1) | 
 
-### Software components
+#### Software components
+
 1. Software downloaded from the [GitHub project for spectator view](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView).
 2. [Blackmagic Capture Card SDK](https://www.blackmagicdesign.com/support).\
  Search for Desktop Video Developer SDK in "Latest Downloads".
@@ -322,7 +319,7 @@ Below is a recommended list of hardware, but you can experiment with other compa
 * If using the **Canon SDK** and would like to use a flash unit, disable **Silent LV Shoot**.
 * Plug an HDMI cable from the camera to the outer HDMI slot (HDMI-In) on the capture card.
 
-### Calibration
+#### Calibration
 
 After setting up your spectator view rig, you must calibrate in order to get the position and rotation offset of your camera to your HoloLens.
 * Open the Calibration Visual Studio solution under Calibration\Calibration.sln.
@@ -361,7 +358,7 @@ After setting up your spectator view rig, you must calibrate in order to get the
 * If any of the above values do not appear to make sense, recalibrate.
 * Copy this file to the **Assets** directory in your Unity project.
 
-## Compositor
+### Compositor
 
 The compositor is a Unity extension that runs as a window in the Unity editor. To enable this, the Compositor Visual Studio solution first needs to be built.
 * Open the Compositor Visual Studio solution under Compositor\Compositor.sln
@@ -372,7 +369,7 @@ The compositor is a Unity extension that runs as a window in the Unity editor. T
 * Run Compositor\CopyDLL.cmd to copy the DLLs built from this solution to your Unity project. This script will copy the DLLs to the included sample project. Once you have your own project set up, you can run CopyDLL with a command line argument pointing to your project's Assets directory to copy there as well.
 * Launch the sample Unity app.
 
-### Unity App
+### Unity app
 
 The compositor runs as a window in the Unity Editor. The included sample project has everything set up to work with spectator view once the compositor DLLs are copied.
 
