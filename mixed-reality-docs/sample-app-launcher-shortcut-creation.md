@@ -13,7 +13,7 @@ keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep
 > [!NOTE]
 > This new feature is currently only available in the latest Windows Insider flights, build 17704 and newer.
 
-Win32 applications can be added to the All Apps list in Windows Mixed Reality by creating a desktop shortcut.   The sample code below shows how you can create a shortcut in c++, including overriding the path to the Visual Elements Manifest XML file.  The override is only required in cases where your shortcut does not point directly to the EXE associated with the manifest.  See [Implementing 3D App Launchers](implementing-3d-app-launchers) for an overview of the full process, including creating the XML file.
+Win32 applications can be added to the All Apps list in Windows Mixed Reality by creating a desktop shortcut.   The sample code below shows how you can create a shortcut in c++, including overriding the path to the Visual Elements Manifest XML file.  The override is only required in cases where your shortcut does not point directly to the EXE associated with the manifest.  See [Implementing 3D App Launchers](implementing-3d-app-launchers.md) for an overview of the full process, including creating the XML file.
 
 ## Sample .LNK Shortcut Creation - C++
 
