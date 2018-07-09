@@ -83,6 +83,7 @@
 ### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 ### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 ### [Add custom home environments](add-custom-home-environments.md)
+### [Sample App Launcher Shortcut Creation](sample-app-launcher-shortcut-creation.md)
 ## Sample apps
 ### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ### [Lunar Module](Lunar-Module.md)
