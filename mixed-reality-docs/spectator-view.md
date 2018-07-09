@@ -96,8 +96,8 @@ To generate the required files, follow these steps: https://github.com/Microsoft
 
     ![World Root](images/SpecViewPhoneWorldRoot2.PNG)
 
-2. Add the SpectatorView prefab (Assets/SpectatorView/Prefabs/SpectatorView.prefab) into your scene.
-3. Add the SpectatorViewNetworking prefab (Assets/SpectatorView/Prefabs/SpectatorViewNetworking.prefab) into your scene.
+2. Add the SpectatorView prefab ([Assets/HoloToolkit-Preview/SpectatorView/Prefabs/SpectatorView.prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Preview/SpectatorView/Prefabs/SpectatorView.prefab)) into your scene.
+3. Add the SpectatorViewNetworking prefab ([Assets/HoloToolkit-Preview/SpectatorView/Prefabs/SpectatorViewNetworking.prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Preview/SpectatorView/Prefabs/SpectatorViewNetworking.prefab)) into your scene.
 4. Select the SpectatorViewNetworking gameobject and on the SpectatorViewNetworkingManager component, there's a few things you can link up. If left untouched this component will search for necessary scripts at runtime.
     - Marker Detection HoloLens -> SpectatorView/Hololens/MarkerDetection
     - Marker Generation 3D -> SpectatorView/IPhone/SyncMarker/3DMarker
@@ -143,7 +143,7 @@ Once you have built and deployed a version of you application on iPhone and on H
 
 ### Example scene
 
-An example scene can be found in HoloToolkit-Examples\SpectatorView\Scenes\SpectatorViewExample.unity
+An example scene can be found in [HoloToolkit-Examples\SpectatorView\Scenes\SpectatorViewExample.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/SpectatorView/Scenes/SpectatorViewExample.unity)
 
 ### Troubleshooting
 

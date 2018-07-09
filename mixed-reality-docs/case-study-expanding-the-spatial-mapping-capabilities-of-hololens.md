@@ -182,7 +182,8 @@ public static int Solver_PlaceObject(
                 [In] int constraintCount,
                 [In] IntPtr placementConstraints,	// ObjectPlacementConstraint
                 [Out] IntPtr placementResult)
-``` This function takes an object name, placement definition, and a list of rules and constraints. The C# wrappers provide construction helper functions to make rule and constraint construction easy. The placement definition contains the query type — that is, one of the following:
+```
+This function takes an object name, placement definition, and a list of rules and constraints. The C# wrappers provide construction helper functions to make rule and constraint construction easy. The placement definition contains the query type — that is, one of the following:
 
 
 
