@@ -242,9 +242,10 @@ The [Windows Device Portal](using-the-windows-device-portal.md) lets you configu
 
 ## See also
 * Intel
-  * [VR Content Developer Guide](https://software.intel.com/en-us/articles/vr-content-developer-guide)
-  * [How To Plan Optimizations with Unity](https://software.intel.com/en-us/articles/how-to-plan-optimizations-with-unity)
-  * [Render Queue Ordering in Unity](https://www.youtube.com/watch?v=ijK8hI7pGZs)
+  * [VR content developer guide](https://software.intel.com/en-us/articles/vr-content-developer-guide)
+  * [How to plan optimizations with Unity](https://software.intel.com/en-us/articles/how-to-plan-optimizations-with-unity)
+  * [Render queue ordering in Unity](https://www.youtube.com/watch?v=ijK8hI7pGZs)
+  * [Optimizing VR hit game *Space Pirate Trainer*](https://software.intel.com/en-us/articles/optimizing-vr-hit-game-space-pirate-trainer-to-perform-on-intel-integrated-graphics)
 * Unity
   * [Analyzing your game performance using Event Tracing for Windows](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 * [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md)
