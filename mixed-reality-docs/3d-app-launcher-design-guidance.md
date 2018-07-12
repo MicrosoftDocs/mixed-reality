@@ -184,5 +184,7 @@ We recommend using [Substance Painter](https://www.allegorithmic.com/products/su
     * Use one of the PBR material authoring packages to get the right maps generated for our shader
 
 ## See also
-* [Implementing 3D app launchers](implementing-3d-app-launchers.md)
-* [Creating 3D models for use in the Windows Mixed Reality Home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+
+* [Create 3D models for use in the mixed reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [Implement 3D app launchers (UWP apps)](implementing-3d-app-launchers.md)
+* [Implement 3D app launchers (Win32 apps)](implementing-3d-app-launchers-win32.md)
