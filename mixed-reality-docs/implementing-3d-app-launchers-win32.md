@@ -45,7 +45,7 @@ Win32 applications will appear in the "All apps" list on the Windows Mixed Reali
 3. **Add a shortcut** to your application to the desktop Windows Start Menu.
     * Create it in %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs (machine) or %APPDATA%\Microsoft\Windows\Start Menu\Programs (user)
     * If an update changes your visual elements manifest or the assets referenced by it, the updater or installer should update the shortcut such that the manifest is reparsed and cached assets are updated.
-4. *Optional:* If your desktop shortcut does not point directly to your application’s EXE (e.g., if it invokes a custom protocol handler like “myapp://”), the Start Menu won’t automatically find the app’s VisualElementsManifest.xml file. To resolve this, the shortcut should specify the file path of the Visual Elements Manifest using System.AppUserModel.VisualElementsManifestHintPath (). This can be set in the shortcut using the same techniques as System.AppUserModel.ID. You are not required to use System.AppUserModel.ID but you may do so if you wish for the shortcut to match the explicit Application User Model ID of the application if one is used.  See [Sample App Launcher Shortcut Creation](sample-app-launcher-shortcut-creation.md) for a C++ sample.
+4. *Optional:* If your desktop shortcut does not point directly to your application’s EXE (e.g., if it invokes a custom protocol handler like “myapp://”), the Start Menu won’t automatically find the app’s VisualElementsManifest.xml file. To resolve this, the shortcut should specify the file path of the Visual Elements Manifest using System.AppUserModel.VisualElementsManifestHintPath (). This can be set in the shortcut using the same techniques as System.AppUserModel.ID. You are not required to use System.AppUserModel.ID but you may do so if you wish for the shortcut to match the explicit Application User Model ID of the application if one is used.  See the [sample app launcher shortcut creation](#sample-app-launcher-shortcut-creation) section below for a C++ sample.
 
 ## Sample Visual Elements Manifest
 
@@ -64,9 +64,9 @@ Win32 applications will appear in the "All apps" list on the Windows Mixed Reali
 </Application>
 ```
 
-## Sample launcher shortcut creation
+## Sample app launcher shortcut creation
 
-Win32 applications can appear in the "All apps" list on the Windows Mixed Reality Start menu in immersive (VR) headsets by creating a desktop shortcut. The sample code below shows how you can create a shortcut in C++, including overriding the path to the Visual Elements Manifest XML file. The override is only required in cases where your shortcut does not point directly to the EXE associated with the manifest.  See [Implementing 3D app launchers](implementing-3d-app-launchers.md) for an overview of the full process, including creating the XML file.
+Win32 applications can appear in the "All apps" list on the Windows Mixed Reality Start menu in immersive (VR) headsets by creating a desktop shortcut. The sample code below shows how you can create a shortcut in C++, including overriding the path to the Visual Elements Manifest XML file. The override is only required in cases where your shortcut does not point directly to the EXE associated with the manifest.  See [Implementing 3D app launchers (UWP apps)](implementing-3d-app-launchers.md) for an overview of the full process, including creating the XML file.
 
 ### Sample .LNK shortcut creation (C++)
 
