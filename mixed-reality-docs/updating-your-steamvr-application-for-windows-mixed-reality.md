@@ -44,6 +44,10 @@ Beginning with the [Windows 10 April 2018 Update](release-notes.md), haptics are
 
 Windows Mixed Reality motion controllers use a standard haptics motor, as opposed to the linear actuators found in some other SteamVR motion controllers, which can lead to a slightly different-than-expected user experience. So, we recommend testing and tuning your haptics design with Windows Mixed Reality motion controllers. For example, sometimes short haptic pulses (5-10 ms) are less noticeable on Windows Mixed Reality motion controllers. To produce a more noticeable pulse, experiment with sending a longer “click” (40-70ms) to give the motor more time to spin up before being told to power off again.
 
+## Launching SteamVR apps from Windows Mixed Reality Start menu
+
+For VR experiences distributed through Steam, we've [updated the Windows Mixed Reality for SteamVR Beta](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) along with the latest [Windows Insider](https://insider.windows.com) RS5 flights so that SteamVR titles now show up in the Windows Mixed Reality Start menu in the "All apps" list automatically. With these software versions installed, your customers can now launch SteamVR titles directly from within the Windows Mixed Reality home without removing their headsets.
+
 ## Windows Mixed Reality logo
 
 To display Windows Mixed Reality support for your title, go to the "Edit Store Page" link on your App Landing Page, click the "Basic Info" tab, and scroll down to "Virtual Reality." Uncheck the "Hide Windows Mixed Reality" and then publish to the store.
