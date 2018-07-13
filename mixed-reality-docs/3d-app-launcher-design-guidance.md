@@ -30,7 +30,7 @@ There are 3 steps to creating a 3D app launcher:
 
 ### Fantastic yet familiar
 
-The Windows Mixed Reality world your app launcher lives in is part familiar, part fantastical/sci-fi. The best launchers follow the rules of this world. Think of how you can take a familiar, representative object from your app, but bend some of the rules of actual reality. Magic will result.
+The Windows Mixed Reality environment your app launcher lives in is part familiar, part fantastical/sci-fi. The best launchers follow the rules of this world. Think of how you can take a familiar, representative object from your app, but bend some of the rules of actual reality. Magic will result.
 
 ### Intuitive
 
