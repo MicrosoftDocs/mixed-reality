@@ -17,8 +17,6 @@ The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) i
 
 This is only true for immersive Win32 VR experiences distributied outside of Steam. For VR experiences [distributed through Steam](updating-your-steamvr-application-for-windows-mixed-reality.md), we've [updated the Windows Mixed Reality for SteamVR Beta](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) along with the latest Windows Insider RS5 flights so that SteamVR titles show up in the Windows Mixed Reality Start menu in the "All apps" list automatically using a default launcher. In other words, the method described in this article is unnecessary for SteamVR titles and will be overridden by the Windows Mixed Reality for SteamVR Beta functionality.
 
->[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
-
 ## 3D app launcher creation process
 
 There are 3 steps to creating a 3D app launcher:
@@ -145,7 +143,7 @@ int wmain()
 }
 ```
 
-### Sample .URL launcher shortcut 
+#### Sample .URL launcher shortcut 
 
 ```
 [{9F4C2855-9F79-4B39-A8D0-E1D42DE1D5F3}]
