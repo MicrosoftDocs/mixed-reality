@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, design, 3D app launcher, immersive headset, liv
 
 # 3D app launcher design guidance
 
-Windows 10 Fall Creators Update will ship with a mixed reality world. This world starts for the user inside a virtual house on a cliff surrounded by mountains and water. Within the space of this dwelling, a user is free to arrange and organize the 3D objects and apps that they care about any way they want. A **3D app launcher** is a “physical” object in the user’s mixed reality house that they can select to launch an app.
+When you put on a Windows Mixed Reality immersive (VR) headset, you enter the Windows Mixed Reality home, visualized as a house on a cliff surrounded by mountains and water (though you can [choose other environments and even create your own](add-custom-home-environments.md)). Within the space of this home, a user is free to arrange and organize the 3D objects and apps that they care about any way they want. A **3D app launcher** is a “physical” object in the user’s mixed reality house that they can select to launch an app.
 
 ![Example: Floaty Bird 3D app launcher](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
 *Floaty Bird 3D app launcher example (fictional app)*
@@ -22,13 +22,15 @@ Windows 10 Fall Creators Update will ship with a mixed reality world. This world
 There are 3 steps to creating a 3D app launcher:
 1. Designing and concepting (this article)
 2. [Modeling and exporting](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
-3. [Integrating it into your application](implementing-3d-app-launchers.md)
+3. Integrating it into your application:
+    * [UWP apps](implementing-3d-app-launchers.md)
+    * [Win32 apps](implementing-3d-app-launchers-win32.md)
 
 ## Design concepts
 
 ### Fantastic yet familiar
 
-The Windows Mixed Reality world your app launcher lives in is part familiar, part fantastical/sci-fi. The best launchers follow the rules of this world. Think of how you can take a familiar, representative object from your app, but bend some of the rules of actual reality. Magic will result.
+The Windows Mixed Reality environment your app launcher lives in is part familiar, part fantastical/sci-fi. The best launchers follow the rules of this world. Think of how you can take a familiar, representative object from your app, but bend some of the rules of actual reality. Magic will result.
 
 ### Intuitive
 
@@ -182,5 +184,7 @@ We recommend using [Substance Painter](https://www.allegorithmic.com/products/su
     * Use one of the PBR material authoring packages to get the right maps generated for our shader
 
 ## See also
-* [Implementing 3D app launchers](implementing-3d-app-launchers.md)
-* [Creating 3D models for use in the Windows Mixed Reality Home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+
+* [Create 3D models for use in the mixed reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [Implement 3D app launchers (UWP apps)](implementing-3d-app-launchers.md)
+* [Implement 3D app launchers (Win32 apps)](implementing-3d-app-launchers-win32.md)

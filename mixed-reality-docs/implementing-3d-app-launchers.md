@@ -1,21 +1,21 @@
 ---
-title: Implement 3D app launchers
-description: How to create 3D app launchers and logos for Windows Mixed Reality apps and games, both on HoloLens and immersive (VR) headsets. 
+title: Implement 3D app launchers (UWP apps)
+description: How to create 3D app launchers and logos for Windows Mixed Reality UWP apps and games (distributed through the Microsoft Store), both on HoloLens and immersive (VR) headsets. 
 author: thmignon
 ms.author: thmignon
-ms.date: 03/21/2018
+ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep link, secondarytile, secondary tile
+keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep link, secondarytile, secondary tile, UWP
 ---
 
 
 
-# Implement 3D app launchers
+# Implement 3D app launchers (UWP apps)
 
 > [!NOTE]
-> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and is supported by HoloLens with the  Windows 10 April 2018 Update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
-The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating an application for Windows Mixed Reality, by default apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place. You can also create a [3D deep link (secondaryTile)](#3d-deep-links-secondarytiles) as a 3D launcher to content within a 2D UWP app.
+The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating a UWP application for Windows Mixed Reality, by default, apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place. You can also create a [3D deep link (secondaryTile)](#3d-deep-links-secondarytiles) as a 3D launcher to content within a 2D UWP app.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -25,6 +25,8 @@ There are 3 steps to creating a 3D app launcher:
 1. [Designing and concepting](3d-app-launcher-design-guidance.md)
 2. [Modeling and exporting](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. Integrating it into your application (this article)
+
+3D assets to be used as launchers for your application should be authored using the [Windows Mixed Reality authoring guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) to ensure compatibility. Assets that fail to meet this authoring specification will not be rendered in the Windows Mixed Reality home.
 
 ## Configuring the 3D launcher
 
@@ -108,7 +110,7 @@ When working with Unity the project must be built and opened in Visual Studio be
 ## 3D deep links (secondaryTiles)
 
 > [!NOTE]
-> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and will be supported by HoloLens with the upcoming RS4 update (you can test it early by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive (VR) headsets and as part of the April 2018 Update (RS4) for HoloLens. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive (VR) headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
 
 >[!IMPORTANT]
 >3D deep links (secondaryTiles) only work with 2D UWP apps. You can, however, create a [3D app launcher](implementing-3d-app-launchers.md) to launch an exclusive app from the Windows Mixed Reality home.
@@ -197,12 +199,10 @@ Tile notifications do not currently support sending an update with a 3D asset. T
 
 For more information on the other tiles features and attributes and how they are used for 2D tiles refer to the [Tiles for UWP Apps documentation](https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## Creating 3D assets
-
-3D Assets to be used as launchers for your application should be authored using the [Windows Mixed Reality authoring guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) to ensure compatibility. Assets that fail to meet this authoring specification will not be rendered in the Windows Mixed Reality home.
-
 ## See also
-* [Mixed Reality Model Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) containing a 3D app launcher.
+
+* [Mixed reality model sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) containing a 3D app launcher.
 * [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 * [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [Implementing 3D app launchers (Win32 apps)](implementing-3d-app-launchers-win32.md)
 * [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
