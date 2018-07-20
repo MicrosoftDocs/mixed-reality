@@ -267,6 +267,25 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </a>
                             </li>
                                  <li>
+                                   <a href="mr-azure-302b.md" title="MR and Azure 302b" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 302b: Custom vision</h3>
+                                              <p>Add intro sentence.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>                            
+                                 <li>
                                    <a href="mr-azure-303.md" title="MR and Azure 303" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
@@ -380,6 +399,82 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </div>
                               </a>
                             </li>
+                                 <li>
+                                   <a href="mr-azure-309.md" title="MR and Azure 309" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 309: Application insights</h3>
+                                              <p>Add intro sentence.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
+                                 <li>
+                                   <a href="mr-azure-310.md" title="MR and Azure 310" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 310: Object detection</h3>
+                                              <p>Add intro sentence.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
+                                 <li>
+                                   <a href="mr-azure-311.md" title="MR and Azure 311" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 311: Microsoft Graph</h3>
+                                              <p>Add intro sentence.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
+                                 <li>
+                                   <a href="mr-azure-312.md" title="MR and Azure 312" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 312: Bot integration</h3>
+                                              <p>Add intro sentence.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
 </ul>
 
 ## Microsoft Reactor
