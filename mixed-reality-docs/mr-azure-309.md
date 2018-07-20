@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 309 - Application insights
-description: Complete this course to learn how to implement Azure Application Insights within a mixed reality application.
+description: Complete this course to learn how to collect analytics regarding user behaviour within a mixed reality application, using the Azure Application Insights Service.
 author: drneil
 ms.author: v-arood
 ms.date: 07/04/2018
@@ -11,7 +11,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, application insig
 
 ![final product -start](images/AzureLabs-Lab309-00.png)
 
-In this course, you will learn how to add Application Insights capabilities to a mixed reality application using Azure Cognitive Services, with the Azure Application Insights API. You will also learn how to utilize Insights information, within that application.
+In this course, you will learn how to add Application Insights capabilities to a mixed reality application. You will learn how to utilize Azure Application Insights API, to collect analytics regarding user behaviour.
 
 Application Insights is a Microsoft Service, which allows developers to collect analytics from their applications, and manage it from an easy to use portal. The analytics can be anything from performance, to custom information which you would like to collect. For more information, visit the [Application Insights page](https://azure.microsoft.com/services/application-insights/).
 
