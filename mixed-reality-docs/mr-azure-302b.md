@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 302b - Custom vision
-description: Complete this course to learn how to implement the Azure Custom Vision API within a mixed reality application.
+description: Complete this course to learn how to train a machine learning model, and then use the trained model, to recognize similar objects, as provided by the camera capture of the Microsoft HoloLens.
 author: drneil
 ms.author: v-arood
 ms.date: 07/03/2018
@@ -9,7 +9,9 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, custom vision, ho
 
 # MR and Azure 302b: Custom vision
 
-In this course, you will learn how to add object recognition capabilities to a mixed reality application using Azure Cognitive Services, with the Custom Vision Service.
+In this course, you will learn how to recognize custom visual content within a provided image, using Azure Custom Vision capabilities in a mixed reality application.
+
+This Service will allow you to train a machine learning model, using object images. You will then use the trained model, to recognize similar objects, as provided by the camera capture of the Microsoft HoloLens.
 
 ![course outcome](images/AzureLabs-Lab302b-00.png)
 
