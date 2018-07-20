@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 310 - Object detection
-description: Complete this course to learn how to train a machine learning model, and then use the trained model, to recognize similar objects and their position in the real world, as provided by the camera capture of the Microsoft HoloLens.
+description: Complete this course to learn how to train a machine learning model, and then use the trained model to recognize similar objects and their position in the real world from within a mixed reality application.
 author: drneil
 ms.author: v-arood
 ms.date: 07/04/2018
@@ -11,7 +11,7 @@ keywords: azure, custom vision, object detection, mixed reality, academy, unity,
 
 In this course, you will learn how to recognize custom visual content and its spatial position within a provided image, using Azure Custom Vision "Object Detection" capabilities in a mixed reality application.
 
-This Service will allow you to train a machine learning model, using object images. You will then use the trained model, to recognize similar objects and approximate their location in the real world, as provided by the camera capture of the Microsoft HoloLens.
+This service will allow you to train a machine learning model using object images. You will then use the trained model to recognize similar objects and approximate their location in the real world, as provided by the camera capture of Microsoft HoloLens or a camera connect to a PC for immersive (VR) headsets.
 
 ![course outcome](images/AzureLabs-Lab310-00.png)
 
