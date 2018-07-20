@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 313 - IoT Hub Service
-description: Complete this course to learn how to implement Azure IoT Hub Service, on a Virtual Machine running Ubuntu 16.4, and then visualize the message data using the Microsoft HoloLens.
+description: Complete this course to learn how to implement Azure IoT Hub Service on a virtual machine running Ubuntu 16.4, and then visualize the message data using Microsoft HoloLens.
 author: drneil
 ms.author: v-arood
 ms.date: 07/11/2018
@@ -11,9 +11,9 @@ keywords: azure, mixed reality, academy, edge, iot edge, tutorial, api, notifica
 
 ![course outcome](images/AzureLabs-Lab313-00.png)
 
-In this course, you will learn how to implement an **Azure IoT Hub Service**, on a Virtual Machine running the Ubuntu 16.4 Operating System. An **Azure Function App** will then be used to receive messages from your Ubuntu device, and store the result within an **Azure Table Service**. You will then be able to view this data using **Power BI** on the Microsoft HoloLens.
+In this course, you will learn how to implement an **Azure IoT Hub Service** on a virtual machine running the Ubuntu 16.4 operating system. An **Azure Function App** will then be used to receive messages from your Ubuntu VM, and store the result within an **Azure Table Service**. You will then be able to view this data using **Power BI** on Microsoft HoloLens.
 
-The content of this course *is applicable* to IoT Edge devices, though for the purpose of this course, the focus will be on a Virtual Machine environment, so that access to a physical Edge device is not necessary.
+The content of this course *is applicable* to IoT Edge devices, though for the purpose of this course, the focus will be on a virtual machine environment, so that access to a physical Edge device is not necessary.
 
 By completing this course, you will learn to:
 
