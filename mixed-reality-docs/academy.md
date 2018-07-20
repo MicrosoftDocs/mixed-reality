@@ -259,7 +259,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 302: Computer vision</h3>
-                                              <p>This course will teach you how to use Azure Computer Vision APIs in a mixed reality app for image processing and analysis.</p>
+                                              <p>Use Azure Computer Vision APIs in a mixed reality app for image processing and analysis, without training a model.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -278,7 +278,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 302b: Custom vision</h3>
-                                              <p>Add intro sentence.</p>
+                                              <p>Learn how to train a machine learning model, and use the trained model for image processing and analysis.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -411,7 +411,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 309: Application insights</h3>
-                                              <p>Add intro sentence.</p>
+                                              <p>Use the Azure Application Insights service to collect analytics on user behavior within a mixed reality app.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -430,7 +430,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 310: Object detection</h3>
-                                              <p>Add intro sentence.</p>
+                                              <p>Train a machine learning model, and use the trained model to recognize similiar objects and their positions in the physical world.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -449,7 +449,7 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 311: Microsoft Graph</h3>
-                                              <p>Add intro sentence.</p>
+                                              <p>Learn how to connect to Microsoft Graph services from within a mixed reality app.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -468,7 +468,26 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 312: Bot integration</h3>
-                                              <p>Add intro sentence.</p>
+                                              <p>Create and deploy a bot using Microsoft Bot Framework v4, and communicate with it in a mixed reality app.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
+                                 <li>
+                                   <a href="mr-azure-313.md" title="MR and Azure 313" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 313: IoT Hub Service</h3>
+                                              <p>Learn how to implement Azure IoT Hub service on a virtual machine, and visualize the data on HoloLens.</p>
                                           </div>
                                       </div>
                                   </div>
