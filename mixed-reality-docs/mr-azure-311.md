@@ -9,13 +9,13 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, microsoft graph, 
 
 # MR and Azure 311 - Microsoft Graph
 
-In this course, you will learn how to use *Microsoft Graph*, to login into your Microsoft Account using secure authentication, within a mixed reality application. You will then retrieve and display your scheduled meetings in the application interface.
+In this course, you will learn how to use *Microsoft Graph* to log in into your Microsoft account using secure authentication within a mixed reality application. You will then retrieve and display your scheduled meetings in the application interface.
 
 ![](images/AzureLabs-Lab311-00.png)
 
-*Microsoft Graph* is a set of APIs designed to enable access to many of Microsoft's Services. Microsoft describes Microsoft Graph as being a matrix of resources connected by relationships; meaning, it allows an application to access all sorts of connected user data. For more information, visit the [Microsoft Graph page](https://developer.microsoft.com/en-us/graph).
+*Microsoft Graph* is a set of APIs designed to enable access to many of Microsoft's services. Microsoft describes Microsoft Graph as being a matrix of resources connected by relationships, meaning it allows an application to access all sorts of connected user data. For more information, visit the [Microsoft Graph page](https://developer.microsoft.com/en-us/graph).
 
-Development will include the creation of an app where the user will be instructed to gaze at and then tap a sphere, which will prompt the user to log in safely to a Microsoft Account. Once logged in to their account, the user will be able to see a list of meetings scheduled for the day.
+Development will include the creation of an app where the user will be instructed to gaze at and then tap a sphere, which will prompt the user to log in safely to a Microsoft account. Once logged in to their account, the user will be able to see a list of meetings scheduled for the day.
 
 Having completed this course, you will have a mixed reality HoloLens application, which will be able to do the following:
 
