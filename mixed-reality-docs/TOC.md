@@ -46,6 +46,7 @@
 ## [MR and Azure 310: Object detection](mr-azure-310.md)
 ## [MR and Azure 311: Microsoft Graph](mr-azure-311.md)
 ## [MR and Azure 312: Bot integration](mr-azure-312.md)
+## [MR and Azure 313: IoT Hub Service](mr-azure-313.md)
 
 # [Design](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
