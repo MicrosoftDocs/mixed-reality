@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 311 - Microsoft Graph
-description: Complete this course to learn how to implement the Microsoft Graph within a mixed reality application.
+description: Complete this course to learn how to leverage Microsoft Graph, and connect to the data that drives productivity, within a mixed reality application.
 author: drneil
 ms.author: v-arood
 ms.date: 07/04/2018
@@ -9,7 +9,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, microsoft graph, 
 
 # MR and Azure 311 - Microsoft Graph
 
-In this course, you will learn how to retrieve and display your scheduled meetings within a mixed reality application using *Microsoft Graph*.
+In this course, you will learn how to use *Microsoft Graph*, to login into your Microsoft Account using secure authentication, within a mixed reality application. You will then retrieve and display your scheduled meetings in the application interface.
 
 ![](images/AzureLabs-Lab311-00.png)
 
