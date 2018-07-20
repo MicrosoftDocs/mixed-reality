@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 302 - Computer vision
-description: Complete this course to learn how to implement Azure Computer Vision within a mixed reality application.
+description: Complete this course to learn how to recognize visual content within a provided image, using Azure Computer Vision in a mixed reality application.
 author: drneil
 ms.author: v-arood
 ms.date: 07/04/2018
@@ -9,7 +9,9 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, 
 
 # MR and Azure 302: Computer vision
 
-In this course, you will learn how to add Computer Vision API capabilities to a mixed reality application using Azure Cognitive Services, with the Microsoft Computer Vision API.
+In this course, you will learn how to recognize visual content within a provided image, using Azure Computer Vision capabilities in a mixed reality application.
+
+Recognition results will be displayed as descriptive tags. You can use this service without needing to train a machine learning model. If your implementation requires training a machine learning model, see [MR and Azure 302b](mr-azure-302b.md).
 
 ![lab outcome](images/AzureLabs-Lab2-000.png)
 
