@@ -42,7 +42,7 @@ This course will teach you how to setup and use the IoT Hub Service, and then vi
 <tr>
 <th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 313: IoT Hub Service</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+<td> MR and Azure 313: IoT Hub Service</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
@@ -1171,6 +1171,7 @@ With the Table Service and Function App in place, your Ubuntu device messages wi
 
 ![visualize data](images/AzureLabs-Lab313-72.png)
 
+
 ## Chapter 15 - Power BI Setup
 
 To visualize the data from your IOT device you will setup **Power BI** (desktop version), to collect the data from the *Table* Service, which you just created. The *HoloLens* version of Power BI will then use that data to visualize the result.
@@ -1232,6 +1233,9 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
     ![Power BI](images/AzureLabs-Lab313-85.png)
 
     ![Power BI](images/AzureLabs-Lab313-86.png)
+
+> [!WARNING]
+> The following Chapter is HoloLens specific. Power BI is not currently availble as an immersive application, however you can run the desktop version in the Windows Mixed Reality Portal (aka Cliff House), through the Desktop app.
 
 ## Chapter 16 - Display Power BI data on HoloLens
 
