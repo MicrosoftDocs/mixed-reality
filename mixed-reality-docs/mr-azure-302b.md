@@ -370,7 +370,7 @@ To create this class:
         private string predictionEndpoint = "Insert your prediction endpoint here";
 
         /// <summary>
-        /// Bite array of the image to submit for analysis
+        /// Byte array of the image to submit for analysis
         /// </summary>
         [HideInInspector] public byte[] imageBytes;
     ```
@@ -755,7 +755,7 @@ To create this class:
         private string projectId = "- Insert your Project Id here -";
 
         /// <summary>
-        /// Bite array of the image to submit for analysis
+        /// Byte array of the image to submit for analysis
         /// </summary>
         internal byte[] imageBytes;
 

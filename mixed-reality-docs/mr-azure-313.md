@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 313 - IoT Hub Service
-description: Complete this course to learn how to implement Azure IoT Hub Service on a virtual machine running Ubuntu 16.4, and then visualize the message data using Microsoft HoloLens.
+description: Complete this course to learn how to implement Azure IoT Hub Service on a virtual machine running Ubuntu 16.4, and then visualize the message data using Microsoft HoloLens or an immersive (VR) headset.
 author: drneil
 ms.author: v-arood
 ms.date: 07/11/2018
@@ -11,7 +11,7 @@ keywords: azure, mixed reality, academy, edge, iot edge, tutorial, api, notifica
 
 ![course outcome](images/AzureLabs-Lab313-00.png)
 
-In this course, you will learn how to implement an **Azure IoT Hub Service** on a virtual machine running the Ubuntu 16.4 operating system. An **Azure Function App** will then be used to receive messages from your Ubuntu VM, and store the result within an **Azure Table Service**. You will then be able to view this data using **Power BI** on Microsoft HoloLens.
+In this course, you will learn how to implement an **Azure IoT Hub Service** on a virtual machine running the Ubuntu 16.4 operating system. An **Azure Function App** will then be used to receive messages from your Ubuntu VM, and store the result within an **Azure Table Service**. You will then be able to view this data using **Power BI** on Microsoft HoloLens or immersive (VR) headset.
 
 The content of this course *is applicable* to IoT Edge devices, though for the purpose of this course, the focus will be on a virtual machine environment, so that access to a physical Edge device is not necessary.
 
@@ -42,7 +42,7 @@ This course will teach you how to setup and use the IoT Hub Service, and then vi
 <tr>
 <th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 313: IoT Hub Service</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+<td> MR and Azure 313: IoT Hub Service</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
@@ -1171,6 +1171,7 @@ With the Table Service and Function App in place, your Ubuntu device messages wi
 
 ![visualize data](images/AzureLabs-Lab313-72.png)
 
+
 ## Chapter 15 - Power BI Setup
 
 To visualize the data from your IOT device you will setup **Power BI** (desktop version), to collect the data from the *Table* Service, which you just created. The *HoloLens* version of Power BI will then use that data to visualize the result.
@@ -1232,6 +1233,9 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
     ![Power BI](images/AzureLabs-Lab313-85.png)
 
     ![Power BI](images/AzureLabs-Lab313-86.png)
+
+> [!WARNING]
+> The following Chapter is HoloLens specific. Power BI is not currently availble as an immersive application, however you can run the desktop version in the Windows Mixed Reality Portal (aka Cliff House), through the Desktop app.
 
 ## Chapter 16 - Display Power BI data on HoloLens
 
