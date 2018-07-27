@@ -42,9 +42,6 @@ From AppView.cpp:
 ```
 
 ### Virtual keyboard input
-> [!NOTE]
-> Note that virtual keyboard overlay support for immersive desktop headsets requires an upcoming Windows Update, which should be available in November.
-
 For immersive desktop headsets, you can also support virtual keyboards rendered by Windows over your immersive view. To support this, your app can implement **CoreTextEditContext**. This lets Windows understand the state of your own app-rendered text boxes, so the virtual keyboard can correctly contribute to the text there.
 
 For more information on implementing CoreTextEditContext support, see the [CoreTextEditContext sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl).
