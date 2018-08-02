@@ -20,7 +20,10 @@ Additionally, when signing into an enterprise or organizational account on the d
 
 Whenever the device restarts or resumes from standby, the credentials for this account are used to sign-in again. If the option enforcing an explicit sign-in is enabled in Settings, the user will be required to type in their credentials again. Anytime the device restarts after receiving and applying an OS update, an explicit sign-in is required.
 
-## Multi-User support
+## Multi-user support
+
+>[!NOTE]
+>Multi-user support requires the Commercial Suite, as this is a [Windows Holographic for Business](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise) feature.
 
 Starting with the [Windows 10 April 2018 Update](release-notes.md), HoloLens supports multiple users from within the same AAD tenant. To use this you must set up the device initially with an account that belongs to your organization. Subsequently, other users from the same tenant will be able to sign into the device from the sign-in screen or by tapping the user tile on the Start panel to sign out the existing user. 
 
