@@ -17,11 +17,14 @@ Welcome to the world of mixed reality development! If you're new to MR, this gui
 
 But first, you may have some questions about what we mean by "mixed reality" and how it relates to augmented reality (AR) and virtual reality (VR). In short, mixed reality is the blending of the physical world with the digital world, so it's a spectrum that covers everything from augmented reality, where digital content is placed in the real world, to virtual reality, where your real world is almost entirely replaced by the digital. 
 
+![Example of a mixed reality app that supports both HoloLens and immersive (VR) headsets](images/mr-island.png)
+*Mixed reality apps can support both HoloLens and immersive (VR) headsets*
+
 We created Windows Mixed Reality as a single development platform and set of tools that can cover the MR spectrum, and we currently support two device types that cover the same spectrum: [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens), the world's first self-contained holographic headset, and [Windows Mixed Reality immersive headsets and motion controllers](https://www.microsoft.com/en-us/windows/windows-mixed-reality), which connect to a PC for powerful virtual reality experiences. You can check out our What is [mixed reality?]( article for a more thorough answer if you're interested.
 
 ## Choose your development path
 
-The easiest way to develop a mixed reality app is using [Unity](https://unity3d.com), a powerful and popular middleware tool often used for game development. If you want to use a custom engine, you can also [build against DirectX](directx-development-overview.md), but most MR developers use Unity for their games and apps.
+The easiest way to develop a mixed reality app is using [Unity](https://unity3d.com), a powerful and popular middleware tool often used for game development. If you want to use a custom engine, you can also [build against DirectX](directx-development-overview.md), but most MR developers use Unity for their games and apps. With Unity you'll be able to create a mixed reality app that targets HoloLens, immersive (VR) headsets, or both!
 
 ## Prepare your PC and devices for development
 
@@ -31,8 +34,10 @@ Mixed reality toolkit
 
 ## Start your first MR project
 
-Intro to academy
-MR Basics 100 get a cube in MR
+Now that your PC and device(s) are set up, you're ready to create your first mixed reality project in Unity. Follow along with our first MR academy course, [MR Basics 100: Getting started with Unity](holograms-100.md), and by the end you'll have a cube up and running in a mixed reality headset.
+
+![Screenshot of a cube in a mixed reality Unity project](images/mr-cube.PNG)
+*Your first mixed reality project in Unity - hello world!*
 
 ## Learn more and get help
 
@@ -45,6 +50,3 @@ You can also get help from these great community resources:
 * [Mixed reality developer forums](https://forums.hololens.com/) - the official forum for mixed reality developers to ask and answer questions, as well as read MR development news straight from Microsoft.
 * [HoloDevelopers Slack channel](https://holodevelopersslack.azurewebsites.net/) - the most robust and resourceful external mixed reality-specific developer channel; the devs here are knowledgeable and helpful.
 * [Unity forums](https://forum.unity3d.com/) - Unity's official forums.
-
-More academy courses, more documentation, fundamentals, more Unity guidance on their page and ours.
-Get support from the community, Unity forums, our forums, Slack dev channel
