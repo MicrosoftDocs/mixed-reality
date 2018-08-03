@@ -17,7 +17,7 @@ Welcome to the world of mixed reality development! If you're new to MR, this gui
 
 But first, you may have some questions about what we mean by "mixed reality" and how it relates to augmented reality (AR) and virtual reality (VR). In short, mixed reality is the blending of the physical world with the digital world, so it's a spectrum that covers everything from augmented reality, where digital content is placed in the real world, to virtual reality, where your real world is almost entirely replaced by the digital. 
 
-![Example of a mixed reality app that supports both HoloLens and immersive (VR) headsets](images/mr-island.png)
+![Example of a mixed reality app that supports both HoloLens and immersive (VR) headsets](images/mr-island.png)<br>
 *Mixed reality apps can support both HoloLens and immersive (VR) headsets*
 
 We created Windows Mixed Reality as a single development platform and set of tools that can cover the MR spectrum, and we currently support two device types that cover the same spectrum: [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens), the world's first self-contained holographic headset, and [Windows Mixed Reality immersive headsets and motion controllers](https://www.microsoft.com/en-us/windows/windows-mixed-reality), which connect to a PC for powerful virtual reality experiences. You can check out our What is [mixed reality?]( article for a more thorough answer if you're interested.
@@ -36,7 +36,7 @@ Mixed reality toolkit
 
 Now that your PC and device(s) are set up, you're ready to create your first mixed reality project in Unity. Follow along with our first MR academy course, [MR Basics 100: Getting started with Unity](holograms-100.md), and by the end you'll have a cube up and running in a mixed reality headset.
 
-![Screenshot of a cube in a mixed reality Unity project](images/mr-cube.PNG)
+![Screenshot of a cube in a mixed reality Unity project](images/mr-cube.PNG)<br>
 *Your first mixed reality project in Unity - hello world!*
 
 ## Learn more and get help
