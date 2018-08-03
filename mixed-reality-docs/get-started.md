@@ -1,6 +1,6 @@
 ---
 title: Get started
-description: This article outlines the basic building blocks of developing a Windows Mixed Reality app.
+description: This guide outlines the fastest way to get up and running with mixed reality development.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 08/06/2018
@@ -27,6 +27,8 @@ We created Windows Mixed Reality as a single development platform and set of too
 The easiest way to develop a mixed reality app is using [Unity](https://unity3d.com), a powerful and popular middleware tool often used for game development. If you want to use a custom engine, you can also [build against DirectX](directx-development-overview.md), but most MR developers use Unity for their games and apps. With Unity you'll be able to create a mixed reality app that targets HoloLens, immersive (VR) headsets, or both!
 
 ## Prepare your PC and devices for development
+
+Whether you're building a mixed reality app that targets 
 
 Set up your PC
 Install the tools
