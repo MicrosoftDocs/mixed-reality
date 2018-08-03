@@ -28,11 +28,23 @@ The easiest way to develop a mixed reality app is using [Unity](https://unity3d.
 
 ## Prepare your PC and devices for development
 
-Whether you're building a mixed reality app that targets 
+Whether you're building a mixed reality app that targets HoloLens, immersive (VR) headsets, or both, you'll be using a common set of tools and APIs. You'll also want to make sure your PC is powerful enough for the development you'll be doing. 
 
-Set up your PC
-Install the tools
-Mixed reality toolkit
+>[!NOTE]
+>You can find our recommendations on development PC specs, supported versions of each software tool, and relevant settings or configuration notes for each in the [Install the tools](install-the-tools.md) article. Please review that article before installing the tools below.
+
+Tools to install:
+* [Unity](https://store.unity.com/download)
+* [Visual Studio (with Windows 10 SDK)](https://developer.microsoft.com/en-us/windows/downloads)
+* [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/GettingStarted.md)
+
+### A note about the Mixed Reality Toolkit for Unity
+
+![MRTK for Unity](images/mrtkandunity.png)<br>
+
+***YOYO PLEASE FLESH THIS OUT AND TELL EVERYONE WHY MRTK-UNITY IS SO AMAZING AND ALL THE COOL THINGS IT HAS INSIDE :)***
+
+The Mixed Reality Toolkit is a collection of scripts and components intended to accelerate development of applications targeting Microsoft HoloLens and Windows Mixed Reality headsets. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as we all grow.
 
 ## Start your first MR project
 
