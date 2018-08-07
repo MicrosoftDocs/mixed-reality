@@ -38,6 +38,8 @@ Tools to install:
 * [Visual Studio (with Windows 10 SDK)](https://developer.microsoft.com/en-us/windows/downloads)
 * [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/GettingStarted.md)
 
+You'll also want to [put your target device into Developer mode and configure Visual Studio for deploying apps to the target device](using-visual-studio.md).
+
 ### A note about the Mixed Reality Toolkit for Unity
 
 ![MRTK for Unity](images/mrtkandunity.png)<br>
