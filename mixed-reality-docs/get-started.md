@@ -15,7 +15,7 @@ Welcome to the world of mixed reality development! If you're new to MR, this gui
 
 ## Intro to mixed reality
 
-But first, you may have some questions about what we mean by "mixed reality" and how it relates to augmented reality (AR) and virtual reality (VR). In short, mixed reality is the blending of the physical world with the digital world, so it's a spectrum that covers everything from augmented reality, where digital content is placed in the real world, to virtual reality, where your real world is almost entirely replaced by the digital. 
+You may have some questions about what we mean by "mixed reality" and how it relates to augmented reality (AR) and virtual reality (VR). In short, mixed reality is the blending of the physical world with the digital world, so it's a spectrum that covers everything from augmented reality, where digital content is placed in the real world, to virtual reality, where your real world is almost entirely replaced by the digital. 
 
 ![Example of a mixed reality app that supports both HoloLens and immersive (VR) headsets](images/mr-island.png)<br>
 *Mixed reality apps can support both HoloLens and immersive (VR) headsets*
