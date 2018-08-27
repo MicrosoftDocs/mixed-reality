@@ -3,7 +3,7 @@ title: MR and Azure 305 - Functions and storage
 description: Complete this course to learn how to implement Azure Storage and Functions within a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, functions, storage, hololens, immersive, vr
 ---
 
@@ -66,15 +66,15 @@ To use the **Azure Storage Service**, you will need to create and configure a **
 
 1.	Log in to the  [Azure Portal](https://portal.azure.com).
 
-> [!NOTE]
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE]
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 2.  Once you are logged in, click on **New** in the top left corner, and search for *Storage account*, and click **Enter**.
 
     ![azure storage search](images/AzureLabs-Lab5-01.png)
 
-> [!NOTE]
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE]
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
 3.  The new page will provide a description of the *Azure Storage account* service. At the bottom left of this prompt, select the **Create** button, to create an association with this service.
 
@@ -140,8 +140,8 @@ To create an Azure Function:
 
     ![create function app](images/AzureLabs-Lab5-08.png)
 
-> [!NOTE]
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE]
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
 2.  The new page will provide a description of the *Azure Function App* service. At the bottom left of this prompt, select the **Create** button, to create an association with this service.
 
@@ -192,7 +192,7 @@ To create an Azure Function:
 
 10. On the next page, ensure **Webhook + API** is selected, and for *Choose a language,* select **CSharp**, as this will be the language used for this tutorial. Lastly, click the **Create this function** button.
 
-    ![select webhook csharp](images/AzureLabs-Lab5-14.png)
+    ![select web hook csharp](images/AzureLabs-Lab5-14.png)
 
 11. You should be taken to the code page (run.csx), if not though, click on the newly created Function in the Functions list within the panel on the left.
 
@@ -434,16 +434,15 @@ Set up and test your mixed reality immersive headset.
     | 0.1   | 0.1               | 0.1   |
 
 
-> [!NOTE]
-> Do not worry if it appears to be off-centre, as this will be fixed when the below Text Mesh component is updated.
+    > [!NOTE]
+    > Do not worry if it appears to be off-centre, as this will be fixed when the below Text Mesh component is updated.
 
 9.  Change the **Text Mesh** component to match the below:
 
     ![set text mesh component](images/AzureLabs-Lab5-43.png)
 
-
-> [!TIP]
-> The selected color here is Hex color: **000000FF**, though feel free to choose your own, just ensure it is readable.
+    > [!TIP]
+    > The selected color here is Hex color: **000000FF**, though feel free to choose your own, just ensure it is readable.
 
 10. Your Hierarchy Panel structure should now look like this:
 
@@ -464,7 +463,7 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
 1.  Add the **.unitypackage** file to Unity by using the **Assets > Import Package > Custom Package** menu option.
 
-2.  In the **Import Unity Package** box that pops up, you can select everything under **Plugin* > *Storage**.  Uncheck everything else, as it is not needed for this course.
+2.  In the **Import Unity Package** box that pops up, you can select everything under **Plugin* > *Storage**. Uncheck everything else, as it is not needed for this course.
 
     ![import to package](images/AzureLabs-Lab5-45.png)
 
@@ -484,8 +483,8 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
     ![apply platform dlls](images/AzureLabs-Lab5-47.png)
 
-> [!NOTE]
-> We are marking these particular plugins to only be used in the Unity Editor. This is because there are different versions of the same plugins in the WSA folder that will be used after the project is exported from Unity.
+    > [!NOTE]
+    > We are marking these particular plugins to only be used in the Unity Editor. This is because there are different versions of the same plugins in the WSA folder that will be used after the project is exported from Unity.
 
 6.  In the *Storage* plugin folder, select only:
 
@@ -497,8 +496,8 @@ To import the SDK into your own project, make sure you have downloaded the lates
 
     ![apply no processing](images/AzureLabs-Lab5-49.png)
 
-> [!NOTE]
-> We are marking this plugin "Don't process" because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it is not processed.
+    > [!NOTE]
+    > We are marking this plugin "Don't process" because the Unity assembly patcher has difficulty processing this plugin. The plugin will still work even though it is not processed.
 
 ## Chapter 7 - Create the AzureServices class
 
@@ -544,7 +543,7 @@ To create this Class:
 
     ```csharp
         /// <summary>
-        /// Provides Singleton-like behaviour to this class.
+        /// Provides Singleton-like behavior to this class.
         /// </summary>
         public static AzureServices instance;
 
@@ -606,8 +605,8 @@ To create this Class:
         private CloudFileDirectory dir;
     ```
 
-> [!IMPORTANT]
-> Make sure you replace the *endpoint* and *connection string* values with the values from your Azure storage, found in the Azure Portal
+    > [!IMPORTANT]
+    > Make sure you replace the *endpoint* and *connection string* values with the values from your Azure storage, found in the Azure Portal
 
 8.  Code for *Awake()* and *Start()* methods now needs to be added. These methods will be called when the class initializes:
 
@@ -633,8 +632,8 @@ To create this Class:
         }
     ```
 
-> [!IMPORTANT]
-> We will fill in the code for *CallAzureFunctionForNextShape()* in a [future Chapter](#chapter-10---completing-the-AzureServices-class).
+    > [!IMPORTANT]
+    > We will fill in the code for *CallAzureFunctionForNextShape()* in a [future Chapter](#chapter-10---completing-the-AzureServices-class).
 
 9.  Delete the *Update()* method since this class will not use it.
 
@@ -779,7 +778,7 @@ To create this Class:
 
     ```csharp
         /// <summary>
-        /// Provides Singleton-like behaviour to this class.
+        /// Provides Singleton-like behavior to this class.
         /// </summary>
         public static Gaze instance;
 
@@ -845,7 +844,7 @@ To create this Class:
         internal Vector3 Position { get; private set; }
 
         /// <summary>
-        /// This will store the noraml, of the ray from its last hit.
+        /// This will store the normal, of the ray from its last hit.
         /// </summary>
         internal Vector3 Normal { get; private set; }
 
@@ -876,7 +875,7 @@ To create this Class:
         }
 
         /// <summary>
-        /// Start method used upon initialisation.
+        /// Start method used upon initialization.
         /// </summary>
         private void Start()
         {

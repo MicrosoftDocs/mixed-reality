@@ -1,15 +1,17 @@
 ---
 title: MR and Azure 302 - Computer vision
-description: Complete this course to learn how to implement Azure Computer Vision within a mixed reality application.
+description: Complete this course to learn how to recognize visual content within a provided image, using Azure Computer Vision in a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr
 ---
 
 # MR and Azure 302: Computer vision
 
-In this course, you will learn how to add Computer Vision API capabilities to a mixed reality application using Azure Cognitive Services, with the Microsoft Computer Vision API.
+In this course, you will learn how to recognize visual content within a provided image, using Azure Computer Vision capabilities in a mixed reality application.
+
+Recognition results will be displayed as descriptive tags. You can use this service without needing to train a machine learning model. If your implementation requires training a machine learning model, see [MR and Azure 302b](mr-azure-302b.md).
 
 ![lab outcome](images/AzureLabs-Lab2-000.png)
 
@@ -21,7 +23,7 @@ Having completed this course, you will have a mixed reality HoloLens application
 2.	The image will be sent to the Azure Computer Vision API Service. 
 3.	The objects recognized will be listed in a simple UI group positioned in the Unity Scene.
 
-In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity Project. It is your job to use the knowledge you gain from this course to enhance your mixed reality Application.
+In your application, it is up to you as to how you will integrate the results with your design. This course is designed to teach you how to integrate an Azure Service with your Unity project. It is your job to use the knowledge you gain from this course to enhance your mixed reality application.
 
 ## Device support
 
@@ -68,15 +70,15 @@ To use the *Computer Vision API* service in Azure, you will need to configure an
 
 1.	First, log in to the [Azure Portal](https://portal.azure.com). 
 
-> [!NOTE]
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE]
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 2.	Once you are logged in, click on **New** in the top left corner, and search for *Computer Vision API*, and click **Enter**.
 
     ![Create a new resource in Azure](images/AzureLabs-Lab2-00.png)
 
-> [!NOTE]
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE]
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
  
 3.	The new page will provide a description of the *Computer Vision API* service. At the bottom left of this page, select the **Create** button, to create an association with this service.
 
@@ -119,8 +121,8 @@ To use the *Computer Vision API* service in Azure, you will need to configure an
 
     ![Your new Computer Vision API service](images/AzureLabs-Lab2-05-5.png)
 
-> [!TIP]
-> You can check what the various endpoints are [HERE](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa). 
+    > [!TIP]
+    > You can check what the various endpoints are [HERE](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa). 
 
 ## Chapter 2 – Set up the Unity project
 
@@ -162,7 +164,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
             ![Create new scripts folder](images/AzureLabs-Lab2-12.png)
 
-        3. Open your newly created **Scenes** folder, and then in the *File name*: text field, type **MR_ComputerVisionScene**, then press **Save**.
+        3. Open your newly created **Scenes** folder, and then in the *File name*: text field, type **MR_ComputerVisionScene**, then click **Save**.
 
             ![Give new scene a name.](images/AzureLabs-Lab2-13.png)
 
@@ -551,8 +553,8 @@ To create this class:
         }
     ```
 
-> [!NOTE] 
-> The *TagData* and *AnalysedObject* classes need to have the *[System.Serializable]* attribute added before the declaration to be able to be deserialized with the Unity libraries.
+    > [!NOTE] 
+    > The *TagData* and *AnalysedObject* classes need to have the *[System.Serializable]* attribute added before the declaration to be able to be deserialized with the Unity libraries.
 
 6.	In the VisionManager class, you should add the following variables:
 
@@ -569,14 +571,14 @@ To create this class:
         internal string imagePath;
     ```
 
-> [!WARNING] 
-> Make sure you insert your **Auth Key** into the **authorizationKey** variable. You will have noted your **Auth Key** at the beginning of this course, [Chapter 1](#chapter-1--the-azure-portal).
+    > [!WARNING] 
+    > Make sure you insert your **Auth Key** into the **authorizationKey** variable. You will have noted your **Auth Key** at the beginning of this course, [Chapter 1](#chapter-1--the-azure-portal).
 
-> [!WARNING] 
-> The **visionAnalysisEndpoint** variable might differ from the one specified in this example. The **west-us** strictly refers to Service instances created for the West US region. Update this with your [endpoint URL](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa); here are some examples of what that might look like:
-> - West Europe: `https://westeurope.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
-> - Southeast Asia: `https://southeastasia.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
-> - Australia East: `https://australiaeast.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
+    > [!WARNING] 
+    > The **visionAnalysisEndpoint** variable might differ from the one specified in this example. The **west-us** strictly refers to Service instances created for the West US region. Update this with your [endpoint URL](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa); here are some examples of what that might look like:
+    > - West Europe: `https://westeurope.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
+    > - Southeast Asia: `https://southeastasia.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
+    > - Australia East: `https://australiaeast.api.cognitive.microsoft.com/vision/v1.0/analyze?visualFeatures=Tags`
 
 7.	Code for Awake now needs to be added. 
 

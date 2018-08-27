@@ -223,6 +223,9 @@ void IFocusable.OnFocusExit()
 }
 ```
 
+>[!NOTE]
+>We use `EnableKeyword` and `DisableKeyword` above. In order to make use of these in your own app with the Toolkit's Standard shader, you'll need to follow the [Unity guidelines for accessing materials via script](https://docs.unity3d.com/Manual/MaterialsAccessingViaScript.html). In this case, we've already included the [three variants of highlighted material](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze/Completed/ModelExplorer/Assets/Resources/Models/AstroMan/Materials) needed in the Resources folder (look for the three materials with highlight in the name).
+
 ### Build and Deploy
 
 1. As before, build the project and deploy to the HoloLens.
