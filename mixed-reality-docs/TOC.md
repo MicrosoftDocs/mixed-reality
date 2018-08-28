@@ -1,5 +1,4 @@
 # [Windows Mixed Reality](index.md)
-# [Get started](get-started.md)
 # [Install the tools](install-the-tools.md)
 # Fundamentals
 ## [What is mixed reality?](mixed-reality.md)
