@@ -46,3 +46,22 @@ Interested in demoing, sponsoring or volunteering at this event? Fill out this f
 **Join us by signing up [here](https://www.meetup.com/AWENiteSF/events/252620735/).**
 
 ---
+## VRS 2018
+### October 16-17, 2018
+Microsoft will be sponsoring VRS 2018, the annual executive conference produced by Greenlight Insights, the global leader in virtual and augmented reality market intelligence.
+
+**Register  [here](https://www.vrsconference.com/).**
+
+---
+## VRS Summit
+### October 18, 2018
+This Innovation Junto will explore a variety of the hottest topics and themes in technology & innovation. Top 5 Junto 2018 Themes:
+*	Natural Language Processing & Voice Interfaces
+*	Blockchain
+*	Deep Neural Networks
+*	Big Data, the Cloud, and XR
+*	Artificial Intelligence & Computer Vision
+
+**Register  [here](https://vrsconference.com/innovation-junto/).**
+
+---
