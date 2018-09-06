@@ -12,8 +12,8 @@ keywords: event, calendar, academy, schedule, sf, san francisco, reactor
 
 Join the Windows Mixed Reality Team at these upcoming events!
 
-**[San Francisco Reactor](https://developer.microsoft.com/en-us/reactor/#ReactorSF)**
-680 Folsom St.
+**[San Francisco Reactor](https://developer.microsoft.com/en-us/reactor/#ReactorSF)**<br>
+680 Folsom St.<br>
 San Francisco, CA 94107
 
 ---
