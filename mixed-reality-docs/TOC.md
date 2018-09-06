@@ -207,6 +207,7 @@
 ## [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 
 # Resources
+## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
 ## [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ## [Mixed Reality Partner Program](mixed-reality-partner-program.md)
 ## [App quality criteria](app-quality-criteria.md)
