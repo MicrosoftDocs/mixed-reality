@@ -1,5 +1,20 @@
+---
+title: SF Reactor Academy events calendar
+description: Calendar of mixed reality developer events at the Reactor in San Francisco.
+author: danielescudero
+ms.author: daescu
+ms.date: 09/06/2018
+ms.topic: article
+keywords: event, calendar, academy, schedule, sf, san francisco, reactor
+---
+
 # Windows Mixed Reality Events
-Join the Windows Mixed Reality Team at the upcoming events!
+
+Join the Windows Mixed Reality Team at these upcoming events!
+
+**[San Francisco Reactor](https://developer.microsoft.com/en-us/reactor/#ReactorSF)**
+680 Folsom St.
+San Francisco, CA 94107
 
 ---
 ## Mixed Reality & HoloLens Work Group
