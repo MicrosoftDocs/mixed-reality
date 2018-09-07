@@ -504,5 +504,6 @@ We also have a physical Mixed Reality Academy at the Reactor space in San Franci
 
 <h3><a href="https://developer.microsoft.com/en-us/reactor/">The Microsoft Reactor in San Francisco</a></h3>
 <p>
-The Microsoft Reactor in San Francisco, located at 680 Folsom in SOMA, serves as the flagship location for the Mixed Reality Capture Studio and the Mixed Reality Academy. It is a place where developers and creators can begin their journey building mixed reality experiences for Microsoft HoloLens and Windows Mixed Reality headsets. [Check for announcements of upcoming sessions, workshops, and hackathons](sf-academy-events.md).</a>
-</p>
+The Microsoft Reactor in San Francisco, located at 680 Folsom in SOMA, serves as the flagship location for the Mixed Reality Capture Studio and the Mixed Reality Academy. It is a place where developers and creators can begin their journey building mixed reality experiences for Microsoft HoloLens and Windows Mixed Reality headsets.</p>
+
+[Check for announcements of upcoming sessions, workshops, and hackathons](sf-academy-events.md)
