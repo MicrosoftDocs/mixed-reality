@@ -17,7 +17,7 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
 * Each tutorial is organized by chapter, and most include video demonstrations of the key concepts. 
 * A Windows 10 PC with the correct [tools installed](install-the-tools.md) is a common prerequiste to complete each tutorial.
 
-We also have a physical Mixed Reality Academy at the Reactor space in San Francisco. If you're looking for that, [click here](#microsoft-reactor) or scroll ot the bottom of this page.
+We also have an in-person Mixed Reality Academy at the Reactor space in San Francisco. If you're looking for information about the physcial Academy space, or upcoming events, [click here](#microsoft-reactor) or scroll to the bottom of this page.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
