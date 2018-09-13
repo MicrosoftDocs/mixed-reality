@@ -85,6 +85,9 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
   <tr>
     <td>Captive portal network support during setup</td><td>You can now set up your HoloLens on a guest network at hotels, conference centers, retail shops, or businesses that use captive portal.</td><td>During setup, select the network, check connect automatically if desired, and enter the network information as prompted.</td>
   </tr>
+  <tr>
+    <td>Photo and video sync through OneDrive app</td><td>Your photos and videos from HoloLens will now sync via the OneDrive app from the Microsoft Store instead of directly through the Photos app.</td><td>To set this up, download and launch the OneDrive app from the Store. On first run you should be prompted to automatically upload your photos to OneDrive, or you can find the option in the app settings.</td>
+  </tr>
 </table>
 
 ### For developers
