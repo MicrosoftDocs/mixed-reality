@@ -12,7 +12,7 @@ keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality
 
 # Advanced HoloLens Emulator and Mixed Reality Simulator input
 
-Most emulator users will only need to use the basic input controls for the [HoloLens emulator](using-the-hololens-emulator.md#basic-emulator-input) or the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md#basic-simulator-input). The details below are for advancd users who have found a need to simulate more complex types of input.
+Most emulator users will only need to use the basic input controls for the [HoloLens emulator](using-the-hololens-emulator.md#basic-emulator-input) or the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md#basic-simulator-input). The details below are for advanced users who have found a need to simulate more complex types of input.
 
 ## Concepts
 
