@@ -14,7 +14,7 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
 
 Get the tools you need to build apps for Microsoft HoloLens and Windows Mixed Reality immersive headsets. There is no separate SDK for Windows Mixed Reality development; you'll use Visual Studio with the Windows 10 SDK. 
 
-Don't have a mixed reality device? You can install the [HoloLens emulator](using-the-hololens-emulator.md) to build mixed reality apps without a HoloLens. You can also use the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) to test your mixed reality apps for immersive headsets. 
+Don't have a mixed reality device? You can install the HoloLens emulator (see below) to build mixed reality apps without a HoloLens. You can also use the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) to test your mixed reality apps for immersive headsets. 
 
 We recommend installing the Unity game engine as an easy way to get started creating mixed reality apps.
 
