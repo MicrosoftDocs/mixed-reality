@@ -3,7 +3,7 @@ title: MR and Azure 306 - Streaming video
 description: Complete this course to learn how to implement Azure Media Services within a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, media services, streaming video, 360, immersive, vr
 ---
 # MR and Azure 306: Streaming video
@@ -56,8 +56,8 @@ We recommend the following hardware and software for this course:
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
 2.  Set up and test your Mixed Reality Immersive Headset.
 
-> [!NOTE]
-> You will **not** require Motion Controllers for this course. If you need support setting up the Immersive Headset, please click [link on how to set up Windows Mixed Reality](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+    > [!NOTE]
+    > You will **not** require Motion Controllers for this course. If you need support setting up the Immersive Headset, please click [link on how to set up Windows Mixed Reality](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 ## Chapter 1 - The Azure Portal: creating the Azure Storage Account
 
@@ -65,8 +65,8 @@ To use the **Azure Storage Service**, you will need to create and configure a **
 
 1.	Log in to the [Azure Portal](https://portal.azure.com).
 
-> [!NOTE]
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE]
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 2.  Once you are logged in, click on **Storage accounts** in the left menu.
 
@@ -132,7 +132,7 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     4.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
 
-    5.  For the **Storage Account** section, click the **Please select...** section, then click the **Storage Account** you createdin the last Chapter.
+    5.  For the **Storage Account** section, click the **Please select...** section, then click the **Storage Account** you created in the last Chapter.
 
     6.  You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
 
@@ -207,20 +207,20 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     ![The Azure Portal](images/AzureLabs-Lab6-20.png)
 
-> [!IMPORTANT]
-> The time this takes, depends on the file size of your video. This process can take quite some time.
+    > [!IMPORTANT]
+    > The time this takes, depends on the file size of your video. This process can take quite some time.
 
 19. Now that the encoded version of the video has been created, you can publish it to make it accessible. To do so, click the blue link
     **Assets** to go back to the assets page.
 
     ![The Azure Portal](images/AzureLabs-Lab6-21.png)
 
-20. You will see your video along with another, which is of **Asset Type *Mutli-Bitrate MP4***.
+20. You will see your video along with another, which is of **Asset Type *Multi-Bitrate MP4***.
 
     ![The Azure Portal](images/AzureLabs-Lab6-22.png)
 
-> [!NOTE] 
-> You may notice that the new asset, alongside your initial video, is *Unknown*, and has '0' bytes for it's **Size**, just refresh your window for it to update.
+    > [!NOTE] 
+    > You may notice that the new asset, alongside your initial video, is *Unknown*, and has '0' bytes for it's **Size**, just refresh your window for it to update.
 
 21. Click this new asset.
 
@@ -236,8 +236,8 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     2.  The **date** and **time** will be set for you, from your current date, to a time in the future (one hundred years in this case). Leave as is or change it to suit.
 
-> [!NOTE]
-> For more information about Locators, and what you can choose, visit the [Azure Media Services Documentation](https://docs.microsoft.com/en-us/azure/media-services/media-services-concepts).
+    > [!NOTE]
+    > For more information about Locators, and what you can choose, visit the [Azure Media Services Documentation](https://docs.microsoft.com/en-us/azure/media-services/media-services-concepts).
 
 24. At the bottom of that panel, click on the **Add** button.
 
@@ -249,8 +249,8 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     ![The Azure Portal](images/AzureLabs-Lab6-27.png)
 
-> [!NOTE] 
-> You can also press the **Play** button to play your video and test it.
+    > [!NOTE] 
+    > You can also press the **Play** button to play your video and test it.
 
 26. You now need to upload the second video that you will use in this Lab. Follow the steps above, repeating the same process for the second video. Ensure you copy the second **Endpoint** also. Use the following [link to download a second video](https://vimeo.com/214402865).
 
@@ -592,8 +592,8 @@ To create this class:
         }
     ```
 
-> [!TIP] 
-> The **ChangeScene()** method uses a handy C\# feature called the *Conditional Operator*. This allows for conditions to be checked, and then values returned based on the outcome of the check, all within a single statement. Follow this [link to learn more about Conditional Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator).
+    > [!TIP] 
+    > The **ChangeScene()** method uses a handy C\# feature called the *Conditional Operator*. This allows for conditions to be checked, and then values returned based on the outcome of the check, all within a single statement. Follow this [link to learn more about Conditional Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator).
 
 11. Save your changes in Visual Studio before returning to Unity.
 
@@ -736,8 +736,8 @@ The purpose of this Chapter is to setup the two scenes, each hosting a video to 
 
 5.  Back in Unity, open your **Scenes** folder, and left-click your **VideoScene1** file. Use your keyboard, and press **Ctrl + D** you will duplicate that scene
 
-> [!TIP]
-> The **Duplicate** command can also be performed by navigating to **Edit > Duplicate**.
+    > [!TIP]
+    > The **Duplicate** command can also be performed by navigating to **Edit > Duplicate**.
 
 6.  Unity will automatically increment the scene names number, but check it anyway, to ensure it matches the previously inserted code.
 
@@ -747,13 +747,10 @@ The purpose of this Chapter is to setup the two scenes, each hosting a video to 
 
     ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-50.png)
 
-> [!TIP] 
-> You can select both of your scenes from your **Scenes** folder through holding the **Ctrl** button, and then left-clicking each scene, and finally drag both across.
-
-
+    > [!TIP] 
+    > You can select both of your scenes from your **Scenes** folder through holding the **Ctrl** button, and then left-clicking each scene, and finally drag both across.
 
 8.  Close the **Build Settings** window, and double click on **VideoScene2**.
-
 
 9.  With the second scene open, click on the **GazeButton** child object of the **InsideOutSphere**, and set its Transform as follows:
 
@@ -849,8 +846,8 @@ To deploy to Local Machine:
 
 4.  You will now need to restore any packages to your solution. Right-click on your **Solution**, and click **Restore NuGet Packages for Solution...**
 
-> [!NOTE] 
-> This is done because the packages which Unity built need to be targeted to work with your local machines references.
+    > [!NOTE] 
+    > This is done because the packages which Unity built need to be targeted to work with your local machines references.
 
 5.  Go to **Build menu** and click on **Deploy Solution** to sideload the application to your machine. Visual Studio will first build and then deploy your application.
 
@@ -860,7 +857,6 @@ To deploy to Local Machine:
 
 When you run the Mixed Reality application, you will you be within the **InsideOutSphere** model which you used within your app. This sphere will be where the video will be streamed to, providing a 360-degree view, of the incoming video (which was filmed for this kind of perspective). Do not be surprised if the video takes a couple of seconds to load, your app is subject to your available Internet speed, as the video needs to be fetched and then downloaded, so to stream into your app.
 When you are ready, change scenes and open your second video, by gazing at the red sphere! Then feel free to go back, using the blue cube in the second scene!
-
 
 ## Your finished Azure Media Service application
  

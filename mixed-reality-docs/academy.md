@@ -11,11 +11,13 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 # Academy: code, tutorials, and lessons
 
-The Mixed Reality Academy is a set of step-by-step tutorials with corresponding project files: 
+The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files: 
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
 * Most courses cover concepts applicable to both HoloLens and immersive (VR) headsets. 
 * Each tutorial is organized by chapter, and most include video demonstrations of the key concepts. 
 * A Windows 10 PC with the correct [tools installed](install-the-tools.md) is a common prerequiste to complete each tutorial.
+
+We also have an in-person Mixed Reality Academy at the Reactor space in San Francisco. If you're looking for information about the physcial Academy space, or upcoming events, [click here](#microsoft-reactor) or scroll to the bottom of this page.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
@@ -259,13 +261,32 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 302: Computer vision</h3>
-                                              <p>This course will teach you how to use Azure Computer Vision APIs in a mixed reality app for image processing and analysis.</p>
+                                              <p>Use Azure Computer Vision APIs in a mixed reality app for image processing and analysis, without training a model.</p>
                                           </div>
                                       </div>
                                   </div>
                               </div>
                               </a>
                             </li>
+                                 <li>
+                                   <a href="mr-azure-302b.md" title="MR and Azure 302b" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 302b: Custom vision</h3>
+                                              <p>Learn how to train a machine learning model, and use the trained model for image processing and analysis.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>                            
                                  <li>
                                    <a href="mr-azure-303.md" title="MR and Azure 303" data-linktype="absolute-path">
                               <div class="cardSize">
@@ -380,6 +401,101 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
                               </div>
                               </a>
                             </li>
+                                 <li>
+                                   <a href="mr-azure-309.md" title="MR and Azure 309" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 309: Application insights</h3>
+                                              <p>Use the Azure Application Insights service to collect analytics on user behavior within a mixed reality app.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
+                                 <li>
+                                   <a href="mr-azure-310.md" title="MR and Azure 310" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 310: Object detection</h3>
+                                              <p>Train a machine learning model, and use the trained model to recognize similiar objects and their positions in the physical world.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
+                                 <li>
+                                   <a href="mr-azure-311.md" title="MR and Azure 311" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 311: Microsoft Graph</h3>
+                                              <p>Learn how to connect to Microsoft Graph services from within a mixed reality app.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
+                                 <li>
+                                   <a href="mr-azure-312.md" title="MR and Azure 312" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 312: Bot integration</h3>
+                                              <p>Create and deploy a bot using Microsoft Bot Framework v4, and communicate with it in a mixed reality app.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
+                                 <li>
+                                   <a href="mr-azure-313.md" title="MR and Azure 313" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/MR-Azure-AcademyTile.jpg" alt="MR and Azure Academy icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>MR and Azure 313: IoT Hub Service</h3>
+                                              <p>Learn how to implement Azure IoT Hub service on a virtual machine, and visualize the data on HoloLens.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
 </ul>
 
 ## Microsoft Reactor
@@ -388,5 +504,6 @@ The Mixed Reality Academy is a set of step-by-step tutorials with corresponding 
 
 <h3><a href="https://developer.microsoft.com/en-us/reactor/">The Microsoft Reactor in San Francisco</a></h3>
 <p>
-The Microsoft Reactor in San Francisco, located at 680 Folsom in SOMA, serves as the flagship location for the Mixed Reality Capture Studio and the Mixed Reality Academy. It is a place where developers and creators can begin their journey building mixed reality experiences for Microsoft HoloLens and Windows Mixed Reality headsets. <a href="https://developer.microsoft.com/en-us/reactor/">Check for announcements of upcoming sessions, workshops, and hackathons.</a>
-</p>
+The Microsoft Reactor in San Francisco, located at 680 Folsom in SOMA, serves as the flagship location for the Mixed Reality Capture Studio and the Mixed Reality Academy. It is a place where developers and creators can begin their journey building mixed reality experiences for Microsoft HoloLens and Windows Mixed Reality headsets.</p>
+
+[Check for announcements of upcoming sessions, workshops, and hackathons](sf-academy-events.md)

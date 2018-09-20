@@ -85,6 +85,9 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
   <tr>
     <td>Captive portal network support during setup</td><td>You can now set up your HoloLens on a guest network at hotels, conference centers, retail shops, or businesses that use captive portal.</td><td>During setup, select the network, check connect automatically if desired, and enter the network information as prompted.</td>
   </tr>
+  <tr>
+    <td>Photo and video sync through OneDrive app</td><td>Your photos and videos from HoloLens will now sync via the OneDrive app from the Microsoft Store instead of directly through the Photos app.</td><td>To set this up, download and launch the OneDrive app from the Store. On first run you should be prompted to automatically upload your photos to OneDrive, or you can find the option in the app settings.</td>
+  </tr>
 </table>
 
 ### For developers
@@ -101,7 +104,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
 </td>
   </tr>
   <tr>
-    <td>Holographic reprojection modes</td><td>You can now disable positional reprojection on HoloLens to improve the hologram stability of rigidly body-locked content such as 360-degree video.</td><td>In Unity, set <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html">HolographicSettings.ReprojectionMode</a> to <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html>HolographicReprojectionMode.OrientationOnly</a> when all content in view is rigidly body-locked.<br><br>For DirectX apps, set <a href="https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.reprojectionmode"> HolographicCameraRenderingParameters.ReprojectionMode</a> to <a href="https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicreprojectionmode">HolographicReprojectionMode.OrientationOnly</a> when all content in view is rigidly body-locked.</td>
+    <td>Holographic reprojection modes</td><td>You can now disable positional reprojection on HoloLens to improve the hologram stability of rigidly body-locked content such as 360-degree video.</td><td>In Unity, set <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html">HolographicSettings.ReprojectionMode</a> to <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html">HolographicReprojectionMode.OrientationOnly</a> when all content in view is rigidly body-locked.<br><br>For DirectX apps, set <a href="https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.reprojectionmode"> HolographicCameraRenderingParameters.ReprojectionMode</a> to <a href="https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicreprojectionmode">HolographicReprojectionMode.OrientationOnly</a> when all content in view is rigidly body-locked.</td>
   </tr>
   <tr>
     <td>App tailoring APIs</td><td>Windows APIs know more about where your app is running, such as whether the device’s display is transparent (HoloLens) or opaque (immersive headset) and whether a UWP app’s 2D view is showing up in the holographic shell.</td><td>Unity had previously manually exposed <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html">HolographicSettings.IsDisplayOpaque</a> in a way that worked even before this build.<br><br>For DirectX apps, you can now access existing APIs like <a href="https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicdisplay.isopaque">HolographicDisplay.GetDefault().IsOpaque</a> and <a href="https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview.iscurrentviewpresentedonholographicdisplay">HolographicApplicationPreview.IsCurrentViewPresentedOnHolographicDisplay</a> on HoloLens as well.
@@ -177,27 +180,40 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
 
 We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](give-us-feedback.md).
 
-### For developers: updating HoloLens apps for devices running Windows 10 April 2018 Update
+### HoloLens
+
+#### After update
+
+You may notice the following issues after updating from RS1 to RS4 on your HoloLens:
+* **Pins reset** - The 3x3 apps pinned to your Start menu will be reset to the defaults after update. 
+* **Apps and placed holograms reset** - Apps placed in your world will be removed after the update and will need to be re-placed throughout your space. 
+* **Feedback Hub may not launch immediately** - Immediately after update, it will take a few minutes before you are able to launch some inbox apps such as Feedback Hub, while they update themselves. 
+* **Corporate Wi-Fi certificates need to be re-synced** - We're investigating an issue that requires the HoloLens to be connected to a different network in order for corporate certificates to be re-synced to the device before it is able to reconnect to corporate networks using certificates. 
+* **H.265 HEVC Video Playback does not work** - Applications that attempt to play back H.265 videos will receive an error message. The workaround is to [access the Windows Device Portal](using-the-windows-device-portal.md), select **Apps** on the left navigation bar, and **remove** the HEVC application. Then, install the latest [HEVC Video Extension](https://www.microsoft.com/en-us/p/hevc-video-extensions/9nmzlz57r3t7) from the Microsoft Store. We are investigating the issue. 
+
+#### For developers: updating HoloLens apps for devices running Windows 10 April 2018 Update
 
 Along with a great list of [new features](#new-features-for-hololens), the Windows 10 April 2018 Update (RS4) for HoloLens enforces some code behaviors that previous versions did not:
 * **Permission requests to use sensitive resources (camera, microphone, etc.)** - RS4 on HoloLens will enforce permission requests for apps intending to access sensitive resources, such as the camera or microphone. RS1 on HoloLens did not force these prompts, so, if your app assumes immediate access to these resources, it may crash in RS4 (even if the user grants permission to the requested resource). Please read the relevant [UWP app capability declarations article](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations) for more information.
 * **Calls to apps outside your own** - RS4 on HoloLens will enforce proper use of the [*Windows.System.Launcher* class](https://docs.microsoft.com/en-us/uwp/api/Windows.System.Launcher) to launch another app from your own. For example, we've seen issues with apps calling *Windows.System.Launcher.LaunchUriForResultsAsync* from a non-ASTA (UI) thread. This would succeed in RS1 on HoloLens, but RS4 requires the call to be executed on the UI thread.
 
-### Visual quality
+### Windows Mixed Reality on Desktop
+
+#### Visual quality
 
 * If you notice after the Windows 10 April 2018 Update that graphics are more blurry than before, or that the field of view looks smaller on your headset, the automatic performance setting may have been changed in order to maintain a sufficient framerate on a less powerful graphics card (such as Nvidia 1050). You can manually override this (if you choose) by navigating to **Settings > Mixed reality > Headset display > Experience options > Change** and changing "Automatic" to "90 Hz." You can also try changing **Visual quality** (on the same Settings page) to "High."
 
-### Windows Mixed Reality setup
+#### Windows Mixed Reality setup
 
 * When setting up Windows with a headset connected, your PC monitor may go blank. Unplug your headset to enable output to your PC monitor to complete Windows setup.
 * If you do not have headphones connected, you may miss additional tips when you first visit the Windows Mixed Reality home.
 * Other Bluetooth devices can cause interference with motion controllers. If the motion controllers have connection/pairing/tracking issues, make sure the Bluetooth radio (if an external dongle) is plugged in to an unobstructed location and not immediately next to another Bluetooth dongle. Also try powering down other Bluetooth peripherals during Windows Mixed Reality sessions to see if it helps.
 
-### Games and apps from the Microsoft Store
+#### Games and apps from the Microsoft Store
 
 * Some graphically intensive games, like Forza Motorsport 7, may cause performance issues on less capable PCs when played inside Windows Mixed Reality.
 
-### Audio
+#### Audio
 
 * If you have Cortana enabled on your host PC prior to using your Windows Mixed Reality headset, you may lose spatial sound simulation applied to the apps you place around the Windows Mixed Reality home. 
    * The work around is to enable "Windows Sonic for Headphones" on all the audio devices attached to your PC, even your headset-connected audio device:
@@ -208,16 +224,16 @@ Along with a great list of [new features](#new-features-for-hololens), the Windo
 * When another multimedia USB device (such as a web cam) shares the same USB hub (either external or inside your PC) with the Windows Mixed Reality headset, in rare cases the headset's audio jack/headphones may either have a buzzing sound or no audio at all. You can fix this by your headset into a USB port that does not share the same hub as the other device, or disconnect/disable your other USB multimedia device.
 * In very rare cases, the host PC's USB hub cannot provide enough power to the Windows Mixed Reality headset and you may notice a burst of noise from the headphones connected to the headset.
 
-### Holograms
+#### Holograms
 
 * If you've placed a large number of holograms in your Windows Mixed Reality home, some may disappear and reappear as you look around. To avoid this, remove some of the holograms in that area of the Windows Mixed Reality home.
 
-### Motion controllers
+#### Motion controllers
 
 * If input is not being routed to the headset, the motion controller will briefly disappear when being held next to the room boundary. Pressing Win+Y to ensure there's a blue banner across the Desktop monitor will resolve this. 
 * Occasionally, when you click on a web page in Microsoft Edge, the content will zoom instead of click.
 
-### Desktop app in the Windows Mixed Reality home
+#### Desktop app in the Windows Mixed Reality home
 
 * Snipping Tool does not work in Desktop app.
 * Desktop app does not persist setting on re-launch.
@@ -226,12 +242,12 @@ Along with a great list of [new features](#new-features-for-hololens), the Windo
 * Desktop app may auto-launch because an invisible window on Desktop has focus. 
 * Desktop User Account Control prompt will make headset display black until the prompt is completed.
 
-### Windows Mixed Reality for SteamVR
+#### Windows Mixed Reality for SteamVR
 
 * You may need to launch Mixed Reality Portal after updating to ensure the necessary software updates for the Windows 10 April 2018 Update have completed before launching SteamVR. 
 * You must be on a recent version of Windows Mixed Reality for SteamVR to remain compatible with the Windows 10 April 2018 Update. Make sure automatic updates are turned on for Windows Mixed Reality for SteamVR, which is located in the "Software" section of your library in Steam.  
 
-### Other issues
+#### Other issues
 
 >[!IMPORTANT]
 >An early version of the Windows 10 April 2018 Update pushed to Insiders (version 17134.5) was missing a piece of software necessary to run Windows Mixed Reality. We recommend avoiding this version if using Windows Mixed Reality. 

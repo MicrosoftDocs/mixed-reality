@@ -12,6 +12,9 @@ keywords: sensors, calibrate, calibration, tune, settings, how-to
 
 # Sensor tuning
 
+>[!WARNING]
+>This app is no longer available on HoloLens as of the Windows 10 April 2018 Update. The sensors now recalibrate themselves automatically. 
+
 The sensor tuning utility allows HoloLens to update its sensor calibration information. Running this application can improve hologram quality.
 
 1. Open Settings App

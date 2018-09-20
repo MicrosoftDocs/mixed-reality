@@ -3,7 +3,7 @@ title: MR and Azure 303 - Natural language understanding (LUIS)
 description: Complete this course to learn how to implement Azure Language Understanding Intelligence Service (LUIS) within a mixed reality application.
 author: drneil
 ms.author: v-arood
-ms.date: 05/18/2018
+ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, language understanding intelligence service, luis, hololens, immersive, vr
 ---
 
@@ -71,15 +71,15 @@ To use the *Language Understanding* service in Azure, you will need to configure
 
 1.	Log in to the [Azure Portal](https://portal.azure.com).
 
-> [!NOTE]
-> If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
+    > [!NOTE]
+    > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 2.	Once you are logged in, click on **New** in the top left corner, and search for *Azure Language Understanding*, and click **Enter**. 
 
     ![Create LUIS resource](images/AzureLabs-Lab3-01.png)
 
-> [!NOTE]
-> The word **New** may have been replaced with **Create a resource**, in newer portals.
+    > [!NOTE]
+    > The word **New** may have been replaced with **Create a resource**, in newer portals.
  
 3.	The new page to the right will provide a description of the Azure Application Insights service. At the bottom left of this page, select the **Create** button, to create an association with this service.
 
@@ -90,7 +90,7 @@ To use the *Language Understanding* service in Azure, you will need to configure
     1. Insert your desired **Name** for this service instance.
     2. Select a **Subscription**.
     3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a *LUIS Service*, a free tier (named F0) should be available to you. The free allocation should be more than sufficient for this course.
-    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
+    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these courses) under a common resource group). 
 
         > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
 
@@ -183,8 +183,8 @@ At this point you can begin creating *Intents*.
 
 13.	Call the new *Intent* **ChangeObjectColor**.
 
-> [!IMPORTANT]
-> This *Intent* name is used within the code later in this course, so for best results, use this name exactly as provided.
+    > [!IMPORTANT]
+    > This *Intent* name is used within the code later in this course, so for best results, use this name exactly as provided.
 
 Once you confirm the name you will be directed to the Intents Page.
 
@@ -233,52 +233,52 @@ For each Utterance you have created, you must identify which words should be use
 
 18.	Repeat the process above until all the Utterances have the Entities labelled. See the below image if you need help.
 
-> [!TIP]
-> When selecting words to label them as entities:
-> -	For single words just click them.
-> -	For a set of two or more words, click at the beginning and then at the end of the set.
+    > [!TIP]
+    > When selecting words to label them as entities:
+    > -	For single words just click them.
+    > -	For a set of two or more words, click at the beginning and then at the end of the set.
 
-> [!NOTE]
-> You can use the *Tokens View* toggle button to switch between **Entities / Tokens View**!
+    > [!NOTE]
+    > You can use the *Tokens View* toggle button to switch between **Entities / Tokens View**!
 
-The results should be as seen in the images below, showing the **Entities / Tokens View**:
+19. The results should be as seen in the images below, showing the **Entities / Tokens View**:
 
-![Tokens & Entities Views](images/AzureLabs-Lab3-18.png)
+    ![Tokens & Entities Views](images/AzureLabs-Lab3-18.png)
   
-19.	At this point press the **Train** button at the top-right of the page and wait for the small round indicator on it to turn green. This indicates that LUIS has been successfully trained to recognize this Intent.
+20.	At this point press the **Train** button at the top-right of the page and wait for the small round indicator on it to turn green. This indicates that LUIS has been successfully trained to recognize this Intent.
 
     ![Train LUIS](images/AzureLabs-Lab3-19.png)
  
-20.	As an exercise for you, create a new Intent called **ChangeObjectSize**, using the Entities *target*, *upsize*, and *downsize*.
-21.	Following the same process as the previous Intent, insert the following eight (8) Utterances for *Size* change:
+21.	As an exercise for you, create a new Intent called **ChangeObjectSize**, using the Entities *target*, *upsize*, and *downsize*.
+22.	Following the same process as the previous Intent, insert the following eight (8) Utterances for *Size* change:
 
-```
-increase the dimensions of that
+    ```
+    increase the dimensions of that
 
-reduce the size of this
+    reduce the size of this
 
-i want the sphere smaller
+    i want the sphere smaller
 
-make the cylinder bigger
+    make the cylinder bigger
 
-size down the sphere
+    size down the sphere
 
-size up the cube
+    size up the cube
 
-decrease the size of that object
+    decrease the size of that object
 
-increase the size of this object
-```
+    increase the size of this object
+    ```
 
-The result should be like the one in the image below:
+23. The result should be like the one in the image below:
 
-![Setup the ChangeObjectSize Tokens/ Entities](images/AzureLabs-Lab3-20.png) 
+    ![Setup the ChangeObjectSize Tokens/ Entities](images/AzureLabs-Lab3-20.png) 
 
-22.	Once both Intents, **ChangeObjectColor** and **ChangeObjectSize**, have been created and trained, click on the **PUBLISH** button on top of the page.
+24.	Once both Intents, **ChangeObjectColor** and **ChangeObjectSize**, have been created and trained, click on the **PUBLISH** button on top of the page.
 
     ![Publish LUIS service](images/AzureLabs-Lab3-21.png)
 
-23.	On the *Publish* page you will finalize and publish your LUIS App so that it can be accessed by your code.
+25.	On the *Publish* page you will finalize and publish your LUIS App so that it can be accessed by your code.
 
     1. Set the drop down *Publish To* as **Production**.
     2. Set the *Timezone* to your time zone.
@@ -287,14 +287,14 @@ The result should be like the one in the image below:
 
         ![Publish Settings](images/AzureLabs-Lab3-22.png)
 
-24.	In the section *Resources and Keys*:
+26.	In the section *Resources and Keys*:
 
     1.	Select the region you set for service instance in the Azure Portal.
     2.	You will notice a **Starter_Key** element below, ignore it.
     3.	Click on **Add Key** and insert the *Key* that you obtained in the Azure Portal when you created your Service instance. If your Azure and the LUIS portal are logged into the same user, you will be provided drop-down menus for *Tenant name*, *Subscription Name*, and the *Key* you wish to use (will have the same name as you provided previously in the Azure Portal.
 
-> [!IMPORTANT] 
-> Underneath *Endpoint*, take a copy of the endpoint corresponding to the Key you have inserted, you will soon use it in your code.
+    > [!IMPORTANT] 
+    > Underneath *Endpoint*, take a copy of the endpoint corresponding to the Key you have inserted, you will soon use it in your code.
  
 ## Chapter 3 – Set up the Unity project
 
@@ -404,10 +404,10 @@ The following is a typical set up for developing with the mixed reality, and as 
     1.	*Position* is set to **0, 0, 0**.
     2.	*Rotation* is set to **0, 0, 0**.
 
-> [!NOTE] 
-> For the Microsoft HoloLens, you will need to also change the following, which are part of the **Camera** component, which is on your **Main Camera**:
-> - **Clear Flags:** Solid Color.
-> - **Background** ‘Black, Alpha 0’ – Hex color: #00000000.
+    > [!NOTE] 
+    > For the Microsoft HoloLens, you will need to also change the following, which are part of the **Camera** component, which is on your **Main Camera**:
+    > - **Clear Flags:** Solid Color.
+    > - **Background** ‘Black, Alpha 0’ – Hex color: #00000000.
 
 9.	Left click on the **Plane** to select it. In the *Inspector Panel* set the *Transform* component with the following values:
 
@@ -557,13 +557,13 @@ To create this class:
         }
     ```
  
-> [!IMPORTANT]
-> Delete the *Update()* method since this class will not use it.
+    > [!IMPORTANT]
+    > Delete the *Update()* method since this class will not use it.
 
 9.	Be sure to save your changes in *Visual Studio* before returning to *Unity*.
 
-> [!NOTE]
-> At this point you will notice an error appearing in the *Unity Editor Console Panel*. This is because the code references the *LuisManager* class which you will create in the next Chapter.
+    > [!NOTE]
+    > At this point you will notice an error appearing in the *Unity Editor Console Panel*. This is because the code references the *LuisManager* class which you will create in the next Chapter.
 
 ## Chapter 6 – Create the LUISManager class
 
@@ -759,8 +759,8 @@ To create this class:
         }
     ```
  
-> [!IMPORTANT]
-> Delete the *Start()* and *Update()* methods since this class will not use them.
+    > [!IMPORTANT]
+    > Delete the *Start()* and *Update()* methods since this class will not use them.
 
 12.	Be sure to save your changes in *Visual Studio* before returning to *Unity*.
 
@@ -898,8 +898,8 @@ To create this class:
         }
     ```
  
-> [!IMPORTANT]
-> Delete the *Start()* and *Update()* methods since this class will not use them.
+    > [!IMPORTANT]
+    > Delete the *Start()* and *Update()* methods since this class will not use them.
 
 8.	Be sure to save your changes in *Visual Studio* before returning to *Unity*.
 
@@ -1008,20 +1008,20 @@ Ensure that:
 
 2.	Try a few utterances, such as:
 
-```
-make the cylinder red
+    ```
+    make the cylinder red
 
-change the cube to yellow
+    change the cube to yellow
 
-I want the sphere blue
+    I want the sphere blue
 
-make this to green
+    make this to green
 
-change it to white
-```
+    change it to white
+    ```
 
-> [!NOTE]
-> If you see an error in the Unity console about the default audio device changing, the scene may not function as expected. This is due to the way the mixed reality portal deals with built-in microphones for headsets that have them. If you see this error, simply stop the scene and start it again and things should work as expected.
+    > [!NOTE]
+    > If you see an error in the Unity console about the default audio device changing, the scene may not function as expected. This is due to the way the mixed reality portal deals with built-in microphones for headsets that have them. If you see this error, simply stop the scene and start it again and things should work as expected.
 
 ## Chapter 11 – Build and sideload the UWP Solution
 

@@ -274,5 +274,7 @@ Only a single UV vertex attribute is supported.
 * [Microsoft DDS Textures glTF extensions specification](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
 ## See also
-* [Implementing 3D app launchers](implementing-3d-app-launchers.md)
+
+* [Implement 3D app launchers (UWP apps)](implementing-3d-app-launchers.md)
+* [Implement 3D app launchers (Win32 apps)](implementing-3d-app-launchers-win32.md)
 * [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
