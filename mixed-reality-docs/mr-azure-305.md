@@ -342,7 +342,7 @@ Set up and test your mixed reality immersive headset.
     |       | TRANSFORM - SCALE |       |
     | :---: | :---------------: | :---: |
     | **X** | **Y**             | **Z** |
-    | 10    | 1                 | 10    |
+    | 1     | 1                 | 1     |
 
     ![set camera transform](images/AzureLabs-Lab5-30.png)
 
@@ -529,10 +529,8 @@ To create this Class:
 
     ```csharp
         using System;
-        using System.Collections;
         using System.Threading.Tasks;
         using UnityEngine;
-        using UnityEngine.Networking;
         using Microsoft.WindowsAzure.Storage;
         using Microsoft.WindowsAzure.Storage.File;
         using System.IO;
@@ -561,13 +559,13 @@ To create this Class:
         /// Connection String here.
         /// </summary>
 
-        private string azureFunctionEndpoint = "--Insert here you AzureFunction Endpoint--";
+        private readonly string azureFunctionEndpoint = "--Insert here you AzureFunction Endpoint--";
 
         /// <summary>
         /// Holds the Storage Connection String - Insert your Azure Storage
         /// Connection String here.
         /// </summary>
-        private string storageConnectionString = "--Insert here you AzureStorage Connection String--";
+        private readonly string storageConnectionString = "--Insert here you AzureStorage Connection String--";
 
         /// <summary>
         /// Name of the Cloud Share - Hosts directories.
@@ -660,7 +658,6 @@ To create this class:
 4.  Ensure the *ShapeFactory* class includes the following namespaces:
 
     ```csharp
-        using System;
         using System.Collections.Generic;
         using UnityEngine;
     ```
