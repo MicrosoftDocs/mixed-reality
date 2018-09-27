@@ -342,7 +342,7 @@ Set up and test your mixed reality immersive headset.
     |       | TRANSFORM - SCALE |       |
     | :---: | :---------------: | :---: |
     | **X** | **Y**             | **Z** |
-    | 10    | 1                 | 10    |
+    | 1     | 1                 | 1     |
 
     ![set camera transform](images/AzureLabs-Lab5-30.png)
 
