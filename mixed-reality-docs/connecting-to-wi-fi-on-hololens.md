@@ -14,6 +14,8 @@ keywords: HoloLens, wifi, wireless, internet, ip, ip address
 
 HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a Wi-Fi network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network.
 
+![HoloLens Wi-Fi settings](images/wifi-hololens-600px.jpg)
+
 ## Connecting to a Wi-Fi network on HoloLens
 
 1. [Bloom](gestures.md#bloom) to the **Start** menu.
@@ -23,8 +25,6 @@ HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a 
 5. Make sure Wi-Fi is turned on.
 6. Select a Wi-Fi network from the list.
 7. Type in the Wi-Fi network password (if needed).
-
-![Wifi Settings](images/wifi-hololens-600px.jpg)
 
 ## Disabling Wi-Fi on HoloLens
 
@@ -55,6 +55,8 @@ HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a 
 3. The **Settings** app will be auto-placed in front of you.
 4. Select **Network & Internet**.
 5. Scroll down to beneath the list of available Wi-Fi networks and select **Hardware properties**.
+
+    ![Hardware properties in Wi-Fi settings](images/wifi-hololens-hwdetails.jpg)
 
 The IP address will be shown next to **IPv4 address**.
 
