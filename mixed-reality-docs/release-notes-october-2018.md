@@ -32,13 +32,11 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
 
 * **New apps and new ways to launch content in the mixed reality home**
     * If you're using [Windows Mixed Reality for SteamVR](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), your SteamVR titles now show up in the Start menu and app launchers for each can be placed in the mixed reality home.
+        ![SteamVR app launchers](images/steamvr-launchers.png)
     * New *360 Videos* app for discovering a regularly-curated selection of 360-degree videos.
     * New *WebVR Showcase* app for discovering a regularly-curated selection of WebVR experiences.
     * First-time Windows Mixed Reality customers will enter the Cliff House and find it pre-populated with 3D app launchers for some of our favorite immersive apps and games from the Microsoft Store.
     * Microsoft Edge windows now include a *Share* button.
-    
-    ![SteamVR app launchers](images/steamvr-launchers.png)
-
 * **Quick action menu** - needs description.
 * **Support for backpack PCs** - Windows Mixed Reality immersive (VR) headsets work as the display for backpack PCs without requiring a display emulator.
 * **New audio features** - You can now mirror the audio from a Windows Mixed Reality experience to both the audio jack (or headphones) in your headset *and* an audio device connnected to your PC (like external speakers). We've also added a visual indicator for volume level in your headset's display.
