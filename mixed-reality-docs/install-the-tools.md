@@ -57,7 +57,7 @@ We recommend installing the Unity game engine as an easy way to get started crea
 <tr>
 <th> Download and Install</th><th> Notes</th>
 </tr><tr>
-<td> <a href="https://www.microsoft.com/en-us/software-download/windows10">Install Windows 10 April 2018 Update</a></td><td><b>Install the Windows 10 April 2018 Update</b><ul><li>Install this update via Windows Update or by creating installation media (using the link in the left column)</li><li>Learn more about <a href="release-notes.md">new Windows Mixed Reality features in this update</a></li></ul><p><b>Enable Developer mode</b>: go to <b>Settings > Update & Security > For developers</b>
+<td> <a href="https://www.microsoft.com/en-us/software-download/windows10">Install Windows 10 April 2018 Update</a></td><td><b>Install the Windows 10 April 2018 Update</b><ul><li>Install this update via Windows Update or by creating installation media (using the link in the left column)</li><li>Learn more about <a href="release-notes-october-2018.md">new Windows Mixed Reality features in this update</a></li></ul><p><b>Enable Developer mode</b>: go to <b>Settings > Update & Security > For developers</b>
 <p><b>Enterprise and corporate managed PCs</b></p><ul>
 <li>If your PC is tightly managed by an IT organization, you may need to contact them in order to update</li><li>More information on Creators Update for Enterprise is in this <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1803/">blog entry</a></li>
 </ul>

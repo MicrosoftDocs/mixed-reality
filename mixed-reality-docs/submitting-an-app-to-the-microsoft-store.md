@@ -67,9 +67,6 @@ To set this field in Visual Studio, right click on the Package.appxmanifest and 
 
 If your app is created for **HoloLens**, then you can ensure that it is only installed on HoloLens by specifying a target device family of "Windows.Holographic". 
 
->[!NOTE]
->HoloLens is still on [Windows 10 version 10240](release-notes.md), so if you set a higher MinVersion, no HoloLens user will be able to install your app.
-
 ```
 <Dependencies>
    <TargetDeviceFamily Name="Windows.Holographic" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />

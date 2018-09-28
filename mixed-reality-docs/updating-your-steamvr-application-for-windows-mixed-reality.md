@@ -40,7 +40,7 @@ Additionally if there are any points in your experience where you display images
 
 ## Haptics
 
-Beginning with the [Windows 10 April 2018 Update](release-notes.md), haptics are now supported for SteamVR experiences on Windows Mixed Reality. If your SteamVR app or game already includes support for haptics, it should now work (with no additional work) with [Windows Mixed Reality motion controllers](motion-controllers.md).
+Beginning with the [Windows 10 April 2018 Update](release-notes-april-2018.md), haptics are now supported for SteamVR experiences on Windows Mixed Reality. If your SteamVR app or game already includes support for haptics, it should now work (with no additional work) with [Windows Mixed Reality motion controllers](motion-controllers.md).
 
 Windows Mixed Reality motion controllers use a standard haptics motor, as opposed to the linear actuators found in some other SteamVR motion controllers, which can lead to a slightly different-than-expected user experience. So, we recommend testing and tuning your haptics design with Windows Mixed Reality motion controllers. For example, sometimes short haptic pulses (5-10 ms) are less noticeable on Windows Mixed Reality motion controllers. To produce a more noticeable pulse, experiment with sending a longer “click” (40-70ms) to give the motor more time to spin up before being told to power off again.
 
