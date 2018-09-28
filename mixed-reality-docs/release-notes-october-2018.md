@@ -12,26 +12,19 @@ keywords: release notes, version, windows 10, build, rs5, os
 
 # Release notes
 
-The **[Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update)** (also known as RS4) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
+The **[Windows 10 October 2018 Update](https://blogs.windows.com/XXX)** (also known as RS5) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
 
-To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 April 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
+To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 October 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
 
-To update to the latest release on HoloLens, you'll need to [manually install the software using the Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/en-us/help/12643/hololens-update-hololens).
-
->[!IMPORTANT]
->Installing the Windows 10 April 2018 Update for HoloLens using WDRT will delete existing data, like personal files and settings, from your HoloLens. If you’d like to maintain your HoloLens data while updating, please wait for the automatic update, which will start rolling out to customers via Windows Update on June 26.
+The public release of Windows 10 October 2018 Update (RS5) will be coming to HoloLens via Windows Update in the coming weeks, but you can try its new features now by running the [RS5 Insider Preview build](https://docs.microsoft.com/en-us/hololens/hololens-insider).
 
 **Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.XXXXX.X**)<br>
-**Latest release for HoloLens:** Windows 10 October 2018 Update (**10.0.XXXXX.X**)<br>
+**Latest release for HoloLens:** Coming soon (Insider preview available)<br>
 <br>
-
->[!VIDEO https://www.youtube.com/embed/O-84oWjSbr0]
-
-*A message from Alex Kipman and overview of new mixed reality features in the Windows 10 April 2018 Update*
 
 ## New features for Windows Mixed Reality immersive headsets
 
-The Windows 10 April 2018 Update includes many improvements for using Windows Mixed Reality immersive (VR) headsets with your desktop PC, such as: 
+The Windows 10 October 2018 Update includes many improvements for using Windows Mixed Reality immersive (VR) headsets with your desktop PC, such as: 
 
 * **New environments for the mixed reality home** - You can now choose between the Cliff House and the new Skyloft environment by selecting **Places** on the Start menu. We've also added [an experimental feature](add-custom-home-environments.md) that will let you use custom environments you've created.
 * **Quick access to mixed reality capture** - You can now take mixed reality photos using a motion controller. Hold the Windows button and then tap the trigger. This works across environments and apps, but will not capture content protected with DRM.
@@ -43,9 +36,9 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 
 ## New features for HoloLens
 
-The Windows 10 April 2018 Update has arrived for all HoloLens customers! This update is packed with improvements that have been introduced since the last major release of HoloLens software in [August 2016](release-notes-august-2016.md).
+The Windows 10 October 2018 Update will be publicly available for HoloLens soon. Here are some of the new features you'll experience when it arrives. If you'd like to use these features now, you can install the [RS5 Insider Preview build](https://docs.microsoft.com/en-us/hololens/hololens-insider) for HoloLens.
 
-### For all users
+### For everyone
 
 <table>
   <tr>
