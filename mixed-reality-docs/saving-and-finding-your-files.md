@@ -53,5 +53,4 @@ Similar to other mobile devices, connect HoloLens to your desktop PC and open Fi
 ## Clarifications
 
 * HoloLens does not support connecting to external hard drives or SD cards.
-* As of the [Windows 10 April 2018 Update (RS4) for HoloLens](release-notes.md), HoloLens includes File Explorer for saving and managing files on-device.
-* HoloLens does not support switching between file pickers. Only the first file picker installed will be available. **< IS THIS STILL TRUE?**
+* As of the [Windows 10 April 2018 Update (RS4) for HoloLens](release-notes.md), HoloLens includes File Explorer for saving and managing files on-device. The addition of File Explorer also gives you the ability to choose your file picker (for example, saving a file to your device or to OneDrive).
