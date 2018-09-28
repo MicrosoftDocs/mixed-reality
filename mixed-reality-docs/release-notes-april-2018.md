@@ -14,12 +14,7 @@ keywords: release notes, version, windows 10, build, rs4, os
 
 The **[Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update)** (also known as RS4) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
 
-To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 April 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
-
-To update to the latest release on HoloLens, you'll need to [manually install the software using the Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/en-us/help/12643/hololens-update-hololens).
-
->[!IMPORTANT]
->Installing the Windows 10 April 2018 Update for HoloLens using WDRT will delete existing data, like personal files and settings, from your HoloLens. If you’d like to maintain your HoloLens data while updating, please wait for the automatic update, which will start rolling out to customers via Windows Update on June 26.
+To update to the latest release for either device type, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 April 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
 
 **Latest release for Desktop:** Windows 10 April 2018 Update (**10.0.17134.1**)<br>
 **Latest release for HoloLens:** Windows 10 April 2018 Update (**10.0.17134.80**)<br>
@@ -45,7 +40,7 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 
 The Windows 10 April 2018 Update has arrived for all HoloLens customers! This update is packed with improvements that have been introduced since the last major release of HoloLens software in [August 2016](release-notes-august-2016.md).
 
-### For all users
+### For everyone
 
 <table>
   <tr>
