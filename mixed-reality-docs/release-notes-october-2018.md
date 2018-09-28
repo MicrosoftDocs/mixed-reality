@@ -26,13 +26,32 @@ The public release of Windows 10 October 2018 Update (RS5) will be coming to Hol
 
 The Windows 10 October 2018 Update includes many improvements for using Windows Mixed Reality immersive (VR) headsets with your desktop PC, such as: 
 
-* **New environments for the mixed reality home** - You can now choose between the Cliff House and the new Skyloft environment by selecting **Places** on the Start menu. We've also added [an experimental feature](add-custom-home-environments.md) that will let you use custom environments you've created.
-* **Quick access to mixed reality capture** - You can now take mixed reality photos using a motion controller. Hold the Windows button and then tap the trigger. This works across environments and apps, but will not capture content protected with DRM.
-* **New options for launching and resizing content** - Apps are now automatically placed in front of you when you launch them from the Start menu. You can also now resize 2D apps by dragging the edges and corners of the window.
-* **Easily jump to content with "teleport" voice command** - You can now quickly teleport to be in front of content in the Windows Mixed Reality home by gazing at content and saying "teleport."
-* **[Animated 3D app launchers](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#animation-guidelines) and [decorative 3D objects](enable-placement-of-3d-models-in-the-home.md) for the mixed reality home** - You can now add animation to 3D app launchers and allow users to place decorative 3D models from a webpage or 2D app into the Windows Mixed Reality home.
-* **[Improvements to Windows Mixed Reality for SteamVR](updating-your-steamvr-application-for-windows-mixed-reality.md)** - Windows Mixed Reality for SteamVR is out of "early access" with new upgrades, including: haptic feedback when using motion controllers, improved performance and reliability, and improvements to the appearance of motion controllers in SteamVR.
-* **Other improvements** - Automatic performance settings have been updated to provide a more optimized experience (you can [manually override](#visual-quality) this setting). Setup now provides more detailed information about common compatibility issues with USB 3.0 controllers and graphics cards.
+* **Mixed Reality Flashlight** - Open a portal into the real world to find your keyboard, see someone nearby, or take a look at your surroundings without removing your headset! You can turn on Mixed Reality Flashlight on the Start menu, by pressing Windows + Grab on your motion controller, or by saying "Flashlight on/off." Point your controller in the direction of what you want to see, like using a flashlight in the dark.
+
+    ![Mixed Reality Flashlight](images/mr-flashlight.png)
+
+* **New apps and new ways to launch content in the mixed reality home**
+    * If you're using [Windows Mixed Reality for SteamVR](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), your SteamVR titles now show up in the Start menu and app launchers for each can be placed in the mixed reality home.
+    * New *360 Videos* app for discovering new 360-degree videos.
+    * New *WebVR Showcase* app for discovering new WebVR experiences.
+    * First-time Windows Mixed Reality customers will enter the Cliff House and find it pre-populated with 3D app launchers for some of our favorite immersive apps and games from the Microsoft Store.
+    * Microsoft Edge windows now include a *Share* button.
+
+* MR menu stuff:
+* Visual feedback for volume changes
+* Audio mirroring to headset and speakers/headphones
+* New quick action menu
+
+Under the hood:
+* Backpack PC (run with headset as display)
+* Mixed Reality Portal - quicker updates via Microsoft Store (decoupled from Windows releases)
+* Updated sleep behavior
+
+For developers:
+* Hardware DRM support for exclusive apps
+
+Video stuff:
+* Misbah's stuff
 
 ## New features for HoloLens
 
