@@ -36,6 +36,8 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     * New *WebVR Showcase* app for discovering new WebVR experiences.
     * First-time Windows Mixed Reality customers will enter the Cliff House and find it pre-populated with 3D app launchers for some of our favorite immersive apps and games from the Microsoft Store.
     * Microsoft Edge windows now include a *Share* button.
+    
+    ![SteamVR app launchers](images/steamvr-launchers.png)
 
 * MR menu stuff:
 * Visual feedback for volume changes
