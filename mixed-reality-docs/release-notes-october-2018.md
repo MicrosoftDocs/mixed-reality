@@ -32,28 +32,20 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
 
 * **New apps and new ways to launch content in the mixed reality home**
     * If you're using [Windows Mixed Reality for SteamVR](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), your SteamVR titles now show up in the Start menu and app launchers for each can be placed in the mixed reality home.
-    * New *360 Videos* app for discovering new 360-degree videos.
-    * New *WebVR Showcase* app for discovering new WebVR experiences.
+    * New *360 Videos* app for discovering a regularly-curated selection of 360-degree videos.
+    * New *WebVR Showcase* app for discovering a regularly-curated selection of WebVR experiences.
     * First-time Windows Mixed Reality customers will enter the Cliff House and find it pre-populated with 3D app launchers for some of our favorite immersive apps and games from the Microsoft Store.
     * Microsoft Edge windows now include a *Share* button.
     
     ![SteamVR app launchers](images/steamvr-launchers.png)
 
-* MR menu stuff:
-* Visual feedback for volume changes
-* Audio mirroring to headset and speakers/headphones
-* New quick action menu
-
-Under the hood:
-* Backpack PC (run with headset as display)
-* Mixed Reality Portal - quicker updates via Microsoft Store (decoupled from Windows releases)
-* Updated sleep behavior
-
-For developers:
-* Hardware DRM support for exclusive apps
-
-Video stuff:
-* Misbah's stuff
+* **Quick action menu** - needs description.
+* **Support for backpack PCs** - Windows Mixed Reality immersive (VR) headsets work as the display for backpack PCs without requiring a display emulator.
+* **New audio features** - You can now mirror the audio from a Windows Mixed Reality experience to both the audio jack (or headphones) in your headset *and* an audio device connnected to your PC (like external speakers). We've also added a visual indicator for volume level in your headset's display.
+* **Other improvements**
+    * Mixed Reality Portal updates can now be delivered through the Microsoft Store, enabling quicker updates between major Windows releases.
+    * Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
+    * When headsets go to sleep, Windows Mixed Reality apps are suspended instead of terminated (until Mixed Reality Portal is closed).
 
 ## New features for HoloLens
 
