@@ -128,9 +128,10 @@ For the reasons listed [above](#editing-in-the-browser-vs-editing-with-a-desktop
 ### Setup
 
 1. In a web browser:
-    1. Install [Visual Studio Code](https://code.visualstudio.com/).
-    2. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
-    3. In your fork, click **Clone or download** and copy the URL.
+    1. Install [Git for your PC](https://git-scm.com/downloads).
+    2. Install [Visual Studio Code](https://code.visualstudio.com/).
+    3. [Fork MicrosoftDocs/mixed-reality](#creating-a-new-article) if you haven't already.
+    4. In your fork, click **Clone or download** and copy the URL.
 2. Create a local clone of your fork in Visual Studio Code:
     1. From the **View** menu, select **Command Palette**.
     2. Type "Git:Clone."
