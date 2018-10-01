@@ -56,7 +56,9 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
 
 ## New features for HoloLens
 
-The Windows 10 October 2018 Update will be publicly available for HoloLens soon. Here are some of the new features you'll experience when it arrives. If you'd like to use these features now, you can install the [RS5 Insider Preview build](https://docs.microsoft.com/en-us/hololens/hololens-insider) for HoloLens.
+The Windows 10 October 2018 Update will be publicly available for HoloLens soon. Here are some of the new features you'll experience when it arrives. 
+
+If you'd like to use these features now, you can install the [RS5 Insider Preview build](https://docs.microsoft.com/en-us/hololens/hololens-insider) for HoloLens.
 
 ### For everyone
 
@@ -76,8 +78,6 @@ The Windows 10 October 2018 Update will be publicly available for HoloLens soon.
 - Mixed Reality Capture has been improved to exclude hidden mesh from captures, which means videos captures by apps will no longer contain black corners around the content.  
 
 ### For commercial customers
-
-For more information on commercial HoloLens features, please visit the [What's new in Microsoft HoloLens](https://docs.microsoft.com/hololens/hololens-whats-new) article in Windows IT Pro Center.
 
 * **Enable post-setup provisioning** - You can now apply a runtime provisioning package at any time using Settings.
 * **Assigned access with Azure AD groups** - You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration.
