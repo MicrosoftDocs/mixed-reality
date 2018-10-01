@@ -1,4 +1,16 @@
-== Enabling / Disabling the QR Tracking Feature in the driver ==
+---
+title: QR code tracking
+description: In addition to the Windows Mixed Reality home environments we provide, you can experiment with creating and using your own.
+ms.topic: article
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, Custom Environments, places, cliff house, skyloft, user, create
+---
+
+# QR code tracking
+
+Write introductory paragraph describing at a high-level what this feature is, how it works, and which devices it supports.
+
+## Enabling and disabling QR code tracking in the driver
+
 In order to turn '''ON''' QR Tracking, run the following script in cmd and then replug in your headset.
 <syntaxhighlight lang="bash">
 reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F
