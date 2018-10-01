@@ -3,7 +3,7 @@ title: Mixed reality capture for developers
 description: Best practices for mixed reality capture for developers.
 author: wguyman
 ms.author: wguyman
-ms.date: 03/21/2018
+ms.date: 10/02/2018
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
 ---
@@ -12,15 +12,17 @@ keywords: mrc, photo, video, capture, camera
 
 # Mixed reality capture for developers
 
-Since a user could take a [mixed reality capture](mixed-reality-capture.md) (MRC) at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.
+Since a user could take a [mixed reality capture](mixed-reality-capture.md) (MRC) photo or video at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.
+
+Developers can also seamlessly integrate mixed reality capture and insertion into their apps.
 
 ## Why a good mixed reality capture experience is important
 
 Mixed reality captured photos and videos are likely the first exposure a user will have of your app. Whether as holographic screenshots on your Windows Store page or from other users sharing MRCs on social networks. You can use MRC to demo your app, educate users, encourage users to share their mixed world interactions, and for user research and problem solving.
 
-### Enabling mixed reality capture
+### Integrating mixed reality capture into your app
 
-By default, an app does not have to do anything to enable users to take mixed reality captures.
+By default, an app does not have to do anything to enable users to take mixed reality captures. However, developers can use *Holographic [Camera Capture UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)*, to expose a way for users to seamlessly invoke camera or video capture from within an application. For example, you could include a feature to allow a user to capture and insert photo or video content directly within an app like Microsoft Word.
 
 ### Disabling mixed reality capture
 
