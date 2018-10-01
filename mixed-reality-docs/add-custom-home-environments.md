@@ -1,6 +1,9 @@
 ---
 title: Add custom home environments
 description: In addition to the Windows Mixed Reality home environments we provide, you can experiment with creating and using your own.
+author: thmignon
+ms.author: thmignon
+ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, Custom Environments, places, cliff house, skyloft, user, create
 ---
