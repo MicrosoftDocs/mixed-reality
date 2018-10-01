@@ -62,12 +62,12 @@ Follow all of the common steps. When in step #3, select the **Game Development w
 
 ### Unity step 3: Upgrade your middleware to the latest versions
 
-With the update to 2017.2, there is a good chance that you need to update one or more middleware packages that your game or application depends on. Additionally, being on the latest version of all of your middleware will increase your likelihood of success throughout the rest of the porting process. Many middleware packages have recently added support for Universal Windows Platform (UWP), and upgrading to the most recent versions will let you leverage that work.
+With any Unity update, there is a good chance that you need to update one or more middleware packages that your game or application depends on. Additionally, being on the latest version of all of your middleware will increase your likelihood of success throughout the rest of the porting process. Many middleware packages have recently added support for Universal Windows Platform (UWP), and upgrading to the most recent versions will let you leverage that work.
 
 ### Unity step 4: Target your application to run on Universal Windows Platform (UWP)
 
 After installing the tools, you need to get your app running as a Universal Windows app.
-* Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. Please notice that you should stay on Unity 2017.2 for Windows MR.
+* Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. Please notice that you should stay on the latest LTS release (any 20xx.4 release) for Windows MR.
 * For more UWP development resources, take a look at the [Windows 10 game development guide](https://docs.microsoft.com/en-us/windows/uwp/gaming/e2e).
 * Please note that Unity continues to improve IL2CPP support; IL2CPP makes some UWP ports significantly easier. If you are currently targeting the .Net scripting backend, you should consider converting to leverage the IL2CPP backend instead.
 
@@ -122,7 +122,7 @@ Note that the system will automatically render the boundary when the user approa
 
 For more details, see the [Coordinate systems in Unity](coordinate-systems-in-unity.md) page.
 
-Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It is heuristic based so may not find the optimal solution, however, results are generally consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This is not publically available. The code should be directly usable in the final 2017.2 version of Unity that supports Windows Mixed Reality. The code will be ported to the current MRTK in the near future.
+Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It is heuristic based so may not find the optimal solution, however, results are generally consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This is not publically available. The code should be directly usable in 2017.2 and higher versions of Unity. The code will be ported to the current MRTK in the near future.
 
 [zip file of code on GitHub](https://github.com/KevinKennedy/MixedRealityToolkit-Unity/releases/tag/5.6.MRTP20) Important files:
 * Assets/HoloToolkit/Stage/Scripts/StageManager.cs - example of usage
