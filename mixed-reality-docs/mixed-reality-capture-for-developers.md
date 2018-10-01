@@ -20,9 +20,9 @@ Developers can also seamlessly integrate mixed reality capture and insertion int
 
 Mixed reality captured photos and videos are likely the first exposure a user will have of your app. Whether as mixed reality screenshots on your Microsoft Store page or from other users sharing MRCs on social networks. You can use MRC to demo your app, educate users, encourage users to share their mixed world interactions, and for user research and problem solving.
 
-## Integrating mixed reality capture into your app
+## Enabling mixed reality capture
 
-By default, an app does not have to do anything to enable users to take mixed reality captures. However, developers can use *Holographic [Camera Capture UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)*, to expose a way for users to seamlessly invoke camera or video capture from within an application. For example, you could include a feature to allow a user to capture and insert photo or video content directly within an app like Microsoft Word.
+By default, an app does not have to do anything to enable users to take mixed reality captures.
 
 ## Disabling mixed reality capture
 
@@ -89,6 +89,12 @@ The mixed reality capture page of the [Windows Device Portal](using-the-windows-
 * Viewing a MRC live preview from the device
 * Retrieving MRC photos and videos already taken on the device
 
+## Mixed reality capture with built-in MRC camera UI
+
+Developers can use the *[Camera Capture UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* to get a user-captured mixed reality photo or video with just a few lines of code.
+
+This API launches the built-in MRC camera UI, from which the user can take a photo or video, and returns the resulting capture to your app.  If you want to create your own camera UI, or need lower-level access to the capture stream, you can create a custom Mixed Reality Capture recorder.
+
 ## Creating a custom Mixed Reality Capture (MRC) recorder
 
 While the user can always trigger a photo or video using the system MRC capture service, an application may want to build a custom camera app but include holograms in the camera stream just like MRC. This allows the application to kick off captures on behalf of the user, build custom recording UI, or customize MRC settings to name a few examples.
@@ -116,7 +122,9 @@ MRC Video Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureVideoEf
 |  RecordingIndicatorEnabled  |  boolean  |  TRUE  |  Flag to enable or disable recording indicator on screen during hologram capturing. | 
 |  VideoStabilizationEnabled  |  boolean  |  FALSE  |  Flag to enable or disable video stabilization powered by the HoloLens tracker. | 
 |  VideoStabilizationBufferLength  |  UINT32  |  0  |  Set how many historical frames are used for video stabilization. 0 is 0-latency and nearly "free" from a power and performance perspective. 15 is recommended for highest quality (at the cost of 15 frames of latency and memory). | 
-|  GlobalOpacityCoefficient  |  float  |  0.9  |  Set global opacity coefficient of hologram in range from 0.0 (fully transparent) to 1.0 (fully opaque). | 
+|  GlobalOpacityCoefficient  |  float  |  0.9 (HoloLens) 1.0 (Desktop)  |  Set global opacity coefficient of hologram in range from 0.0 (fully transparent) to 1.0 (fully opaque). | 
+|  BlankOnProtectedContent  |  boolean  |  FALSE  |  Flag to enable or disable returning an empty frame if there is a 2d UWP app showing protected content. If this flag is false and a 2d UWP app is showing protected content, the 2d UWP app will be replaced by a protected content texture in both the headset and in the mixed reality capture. |
+|  ShowHiddenMesh  |  boolean  |  FALSE  |  Flag to enable or disable showing the holographic camera's hidden area mesh and neighboring content. |
 
 MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEffect**)
 
@@ -151,11 +159,17 @@ There are certain limitations around multiple apps accessing MRC at the same tim
 
 ### Photo/video camera access
 
-The photo/video camera can only be accessed by a single process at a time. While a process is recording video or taking a photo any other process will fail to acquire the photo/video camera. (this applies to both Mixed Reality Capture and standard photo/video capture)
+The photo/video camera is limited to the number of processes that can access it at the same time. While a process is recording video or taking a photo any other process will fail to acquire the photo/video camera. (this applies to both Mixed Reality Capture and standard photo/video capture)
+
+With the Windows 10 April 2018 Update, this restriction does not apply if the built-in MRC camera UI is used to take a photo or a video after an app has started using the photo/video camera. When this happens, the resolution and framerate of the built-in MRC camera UI might be reduced from its normal values.
+
+With the Windows 10 October 2018 Update, this restriction does not apply to streaming MRC over Miracast.
 
 ### MRC access
 
-An app's custom MRC recorder is mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
+With the Windows 10 April 2018 Update, there is no longer a limitation around multiple apps accessing the MRC stream (however, the access to the photo/video camera still has limitations).
+
+Previous to the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
 
 ## What to expect when MRC is enabled / Known Issues
 
