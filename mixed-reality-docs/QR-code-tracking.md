@@ -1,8 +1,11 @@
 ---
 title: QR code tracking
-description: In addition to the Windows Mixed Reality home environments we provide, you can experiment with creating and using your own.
+description: Matt will write description.
+author: yoyozilla
+ms.author: yoyoz
+ms.date: 10/02/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, Custom Environments, places, cliff house, skyloft, user, create
+keywords: matt will fill these in
 ---
 
 # QR code tracking
