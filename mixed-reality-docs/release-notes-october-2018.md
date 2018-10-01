@@ -18,8 +18,8 @@ To update to the latest release on PC for Windows Mixed Reality immersive (VR) h
 
 The public release of Windows 10 October 2018 Update (RS5) will be coming to HoloLens via Windows Update in the coming weeks, but you can try its new features now by running the [RS5 Insider Preview build](https://docs.microsoft.com/en-us/hololens/hololens-insider).
 
-**Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.XXXXX.X**)<br>
-**Latest release for HoloLens:** Coming soon (Insider preview available)<br>
+**Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.17763.1**)<br>
+**Latest release for HoloLens:** Coming soon ([Insider preview](https://docs.microsoft.com/en-us/hololens/hololens-insider) available)<br>
 <br>
 
 ## New features for Windows Mixed Reality immersive headsets
