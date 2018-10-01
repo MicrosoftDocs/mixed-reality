@@ -54,9 +54,9 @@ The Windows Mixed Reality platform is still under active development, and to be 
 Follow all of the common steps. When in step #3, select the **Game Development with Unity** workload. You may deselect the Unity Editor optional component since you'll be installing a newer version of Unity from the instructions below.
 
 ### Unity step 2: Upgrade to the latest public build of Unity with Windows MR Support
-1. Download the latest public build of Unity (2017.4 or above recommended) with mixed reality support.
+1. Download the latest [recommended public build of Unity](install-the-tools.md) with mixed reality support.
 2. Save a copy of your project before you get started
-3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuide20172.html) available from Unity on porting to 2017.2
+3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuide20172.html) available from Unity on porting.
 4. Follow the [instructions](https://docs.unity3d.com/Manual/APIUpdater.html) on Unity's site for using their automatic API updater
 5. Check and see if there are additional changes that you need to make to get your project running, and work through any remaining errors and warnings. Note: If you have middleware that you depend on, you may need to update that middleware to get going (more details in step 3 below).
 
