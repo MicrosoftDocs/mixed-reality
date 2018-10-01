@@ -39,9 +39,10 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     * New *WebVR Showcase* app for discovering a regularly-curated selection of WebVR experiences.
     * First-time Windows Mixed Reality customers will enter the Cliff House and find it pre-populated with 3D app launchers for some of our favorite immersive apps and games from the Microsoft Store.
     * Microsoft Edge windows now include a *Share* button.
-* **Quick action menu** - From within an exclusive mixed reality app, you can press the Windows button to access a new quick action menu, with easy access to *SteamVR menu*, *photo/video capture*, *flashlight*, and *home*.
-* **Support for backpack PCs** - Windows Mixed Reality immersive (VR) headsets work as the display for backpack PCs without requiring a display emulator.
+* **Quick action menu** - From within an exclusive mixed reality app, you can press the Windows button to access a new quick action menu, with easy access to *SteamVR menu*, *photo/video capture*, *flashlight*, and *home*..
+* **Support for backpack PCs** - Windows Mixed Reality immersive (VR) headsets runs on backpack PCs without requiring a display emulator.
 * **New audio features** - You can now mirror the audio from a Windows Mixed Reality experience to both the audio jack (or headphones) in your headset *and* an audio device connnected to your PC (like external speakers). We've also added a visual indicator for volume level in your headset's display.
+* **QR Tracking API** - This is an experimental API that allows you to get the physical size, location, and the information contained in a QR code. Please note, this API is still in experimental stage, and currently any app using this API will not pass WACK on Windows Store. You can find more information on how to use this API here. 
 * **Other improvements**
     * Mixed Reality Portal updates can now be delivered through the Microsoft Store, enabling quicker updates between major Windows releases.
     * Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
