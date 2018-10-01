@@ -3,7 +3,7 @@ title: Porting guides
 description: A step by step walthrough explaining how to port an existing immersive application to Windows Mixed Reality.
 author: ChimeraScorn
 ms.author: cwhite
-ms.date: 03/21/2018
+ms.date: 10/02/2018
 ms.topic: article
 keywords: port, porting, unity, middleware, engine, UWP
 ---
@@ -67,7 +67,7 @@ With any Unity update, there is a good chance that you need to update one or mor
 ### Unity step 4: Target your application to run on Universal Windows Platform (UWP)
 
 After installing the tools, you need to get your app running as a Universal Windows app.
-* Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. Please notice that you should stay on the latest LTS release (any 20xx.4 release) for Windows MR.
+* Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. Please note that you should stay on the latest LTS release (any 20xx.4 release) for Windows MR.
 * For more UWP development resources, take a look at the [Windows 10 game development guide](https://docs.microsoft.com/en-us/windows/uwp/gaming/e2e).
 * Please note that Unity continues to improve IL2CPP support; IL2CPP makes some UWP ports significantly easier. If you are currently targeting the .Net scripting backend, you should consider converting to leverage the IL2CPP backend instead.
 
