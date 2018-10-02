@@ -64,7 +64,7 @@ Mixed reality captures from Cortana voice commands and Start Menu tools create f
 
 Mixed reality capture photos and videos are saved to the device's "Camera roll" folder. These can be accessed via the [Photos app](see-your-photos.md#photos-app) or File Explorer.
 
-On a PC connected to HoloLens, you can also use [Windows Device Portal](using-the-windows-device-portal.md#mixed-reality-capture) or your PC's File Explorer ([via MTP](release-notes-april-2018.md#for-all-users)).
+On a PC connected to HoloLens, you can also use [Windows Device Portal](using-the-windows-device-portal.md#mixed-reality-capture) or your PC's File Explorer ([via MTP](release-notes-april-2018.md#new-features-for-hololens)).
 
 If you install the [OneDrive app](https://www.microsoft.com/en-us/p/onedrive/9wzdncrfj1p3) it will sync your photos and videos to OneDrive.
 
