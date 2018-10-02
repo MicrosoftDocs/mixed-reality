@@ -14,14 +14,12 @@ QRTracking is implemented in the Oasis driver for windows mixed reality devices.
 ## Enabling and disabling QR code tracking in the driver
 
 In order to turn '''ON''' QR Tracking, run the following script in cmd and then replug in your headset.
-<syntaxhighlight lang="bash">
+
 reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F
-</syntaxhighlight>
 
 In order to turn '''OFF''' QR Tracking, run the following script in cmd and then replug in your headset. This will make any currently found QR codes ''Non-locatable''.
-<syntaxhighlight lang="bash">
+
 reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F
-</syntaxhighlight>'''Baraboo''':
 
 afterwards to restart the device.
 
@@ -52,7 +50,7 @@ To access the new RS5 API Windows::Perception::Spatial::Preview::SpatialGraphInt
 
 The app can be developed even on RS4 machine but the above SDK need to be installed on the dev machine.
 
-== QRTrackingPlugin (Native API) ==
+# QRTrackingPlugin (Native API)
 The plugin wraps the APIs for the QR tracking implemented through the RS5 HMD driver. To use the plugin, you will need to use the following types from the QRCodesTrackerPlugin namespace.
 <syntaxhighlight lang="c#">
  // QRTracker plugin namespace
