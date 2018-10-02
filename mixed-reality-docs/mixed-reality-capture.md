@@ -3,40 +3,40 @@ title: Mixed reality capture
 description: Information on using mixed reality capture.
 author: wguyman
 ms.author: wguyman
-ms.date: 03/21/2018
+ms.date: 10/02/2018
 ms.topic: article
-keywords: mrc, mixed reality capture, photos, video, camera, capture, usage
+keywords: mrc, mixed reality capture, photos, video, camera, capture, usage, stream, livestream
 ---
 
 
 
 # Mixed reality capture
 
-HoloLens gives users the experience of mixing the real world with the digital world. Mixed reality capture (MRC) let you save that experience as either a photograph or a video. This lets you share the experience with others by allowing them to see the holograms as you see them. Such videos and photos are from a first-person point of view. For a third-person point of view, use [spectator view](spectator-view.md).
+HoloLens gives users the experience of mixing the real world with the digital world. Mixed reality capture (MRC) let you capture that experience as either a photograph or a video. This lets you share the experience with others by allowing them to see the holograms as you see them. Such videos and photos are from a first-person point of view. For a third-person point of view, use [spectator view](spectator-view.md).
 
 Use cases for mixed reality capture go beyond sharing videos amongst a social circle. Videos can be used to instruct others on how to use an app. Developers can use videos or stills to improve repro steps and debug app experiences.
 
-## Live Streaming from HoloLens
+## Live streaming from HoloLens
 
-The Windows 10 October 2018 Update adds Miracast support to the HoloLens.  Click the *Connect* button on the bottom of the start menu to bring up a picker for Miracast-enabled devices and adapters.  Choose the device you want to begin streaming.  When done, click the *Disconnect* button on the bottom of the start menu.  *Connect* and *Disconnect* are also available on the quick action menu. 
+The [Windows 10 October 2018 Update](release-notes-october-2018.md) adds Miracast support to HoloLens. Select the **Connect** button at the bottom of the Start menu to bring up a picker for Miracast-enabled devices and adapters. Select the device to which you want to begin streaming. When done, select the **Disconnect** button at the bottom of the Start menu.  **Connect** and **Disconnect** are also available on the quick actions menu. 
 
-The [Windows Device Portal](using-the-windows-device-portal.md) exposes live streaming options for devices that are in Dev Mode.
+The [Windows Device Portal](using-the-windows-device-portal.md) exposes live streaming options for devices that are in Developer mode.
 
 ## Taking mixed reality captures
 
 There are multiple ways to initiate a mixed reality capture:
-1. Cortana can be used at all times regardless of the app currently running. Just say, "Hey Cortana, take a picture" or "Hey Cortana, start recording." To stop a video, say "Hey Cortana, stop recording."
-2. On the Start Menu, select either *Camera* or *Video*. Use [air-tap](gestures.md#air-tap) to open the built-in MRC camera UI.
-3. On HoloLens: [Windows Device Portal](using-the-windows-device-portal.md) has a mixed reality capture page that can be used to take photos, videos, live stream, and view captures.
-4. On HoloLens: Press both the volume up and volume down buttons simultaneously to take a picture, regardless of the app currently running.
-5. On HoloLens: The Windows 10 April 2018 Update adds a video shortcut. If you hold the volume up and volume down buttons for three seconds, it will start recording a video.  To stop a video, tap both volume up and volume down buttons simultaneously.
-6. On immersive headsets: The Windows 10 April 2018 Update adds motion controller shortcuts. On the motion controller you can hold the Windows button and then tap the trigger to take a picture or stop a video.  You can hold the Windows button and then tap the menu button to start recording a video.
-7. The Windows 10 October 2018 Update adds the quick action menu. On the quick action menu, select either *Camera* or *Video* to open the built-in MRC camera UI.
-8. Apps are able to expose their own UI for mixed reality capture using custom or, with the Windows 10 October 2018 Update, built-in MRC camera UI.
+* Cortana can be used at all times regardless of the app currently running. Just say, "Hey Cortana, take a picture" or "Hey Cortana, start recording." To stop a video, say "Hey Cortana, stop recording."
+* On the Start menu, select either **Camera** or **Video**. Use [air-tap](gestures.md#air-tap) to open the built-in MRC camera UI.
+* On the quick actions menu, select either **Camera** or **Video** to open the built-in MRC camera UI.
+* Apps are able to expose their own UI for mixed reality capture using custom or, as of the [Windows 10 October 2018 Update](release-notes-october-2018.md), [built-in MRC camera UI](mixed-reality-capture-for-developers.md).
+* Unique to HoloLens: 
+    * [Windows Device Portal](using-the-windows-device-portal.md) has a mixed reality capture page that can be used to take photos, videos, live stream, and view captures.
+    * Press both the **volume up** and **volume down** buttons simultaneously to take a picture, regardless of the app currently running.
+    * Hold the **volume up** and **volume down** buttons for three seconds to start recording a video. To stop a video, tap both **volume up** and **volume down** buttons simultaneously.
+* Unique to immersive headsets: using a motion controller, hold the **Windows** button and then tap the **trigger** to take a picture or stop a video. You can hold the **Windows** button and then tap the **menu** button to start recording a video.
 
-**Click the camera icon at the bottom of the start menu**
-
-![Click the camera icon at the bottom of the start menu](images/cameraiconinpins-300px.png)
+![Click the camera icon at the bottom of the Start menu](images/cameraiconinpins-300px.png)<br>
+*Click the camera icon at the bottom of the Start menu*
 
 ### Built-in MRC Camera UI
 
