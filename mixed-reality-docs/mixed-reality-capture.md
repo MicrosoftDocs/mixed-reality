@@ -66,7 +66,7 @@ Mixed reality capture photos and videos are saved to the device's "Camera roll" 
 
 On a PC connected to HoloLens, you can also use [Windows Device Portal](using-the-windows-device-portal.md#mixed-reality-capture) or your PC's File Explorer ([via MTP](release-notes-april-2018.md#new-features-for-hololens)).
 
-If you install the [OneDrive app](https://www.microsoft.com/en-us/p/onedrive/9wzdncrfj1p3) it will sync your photos and videos to OneDrive.
+If you install the [OneDrive app](https://www.microsoft.com/en-us/p/onedrive/9wzdncrfj1p3), you can turn on **Camera upload,** and your MRC photos and videos will sync to OneDrive and your other devices using OneDrive.
 
 >[!NOTE]
 >As of the Windows 10 April 2018 Update, the Photos app will no longer upload your photos and videos to OneDrive.
