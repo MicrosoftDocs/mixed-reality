@@ -22,7 +22,7 @@ There are four ways to initiate a mixed reality capture:
 1. Cortana can be used at all times regardless of the app currently running. Just say, "Hey Cortana, take a picture" or "Hey Cortana, start recording." To stop a video, say "Hey Cortana, stop recording."
 2. On the Start Menu, select either *Photo* or *Video*. Use [air-tap](gestures.md#air-tap) to begin the capture. When finished, bloom to exit the MRC mode.
 3. From the [Windows Device Portal](using-the-windows-device-portal.md), a user can initiate a mixed reality capture.
-4. Press both the volume up and volume down buttons simultaneously to take a picture, regardless of the app currently running.
+4. Press both the volume up and volume down buttons simultaneously to take a picture, regardless of the app currently running. You can also long-hold to begin taking a video. 
 
 **Click the camera icon at the bottom of the start menu**
 
@@ -43,7 +43,7 @@ Mixed reality captures from Cortana voice commands and Start Menu tools create f
 
 ## Viewing mixed reality captures
 
-Mixed reality capture photos and videos are saved to the device's Camera Roll folder. These can be accessed via the [Photos app](see-your-photos.md#photos-app) or the [Windows Device Portal](using-the-windows-device-portal.md#mixed-reality-capture). You can use the Photos app to sync your photos and videos to OneDrive.
+Mixed reality capture photos and videos are saved to the device's Camera Roll folder. These can be accessed via the [Photos app](see-your-photos.md#photos-app) or the [Windows Device Portal](using-the-windows-device-portal.md#mixed-reality-capture). You can use the OneDrive app to sync your photos and videos to other devices.
 
 ## See also
 * [Spectator view](spectator-view.md)
