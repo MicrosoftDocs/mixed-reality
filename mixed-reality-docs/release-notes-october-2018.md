@@ -52,7 +52,7 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
 
 * **QR code tracking** - This experimental developer feature allows you to get the physical size, location, and associated information of a QR code. Please note: because of the experimental nature of this API, any app using this API will not pass WACK for submission to the Microsoft Store. 
 * **Hardware DRM for textures in immersive apps** - Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
-* **Integrate mixed reality capture UI into an app** - Developers can integrate mixed reality capture into their apps using the built-in Windows camera UI with just a few lines of code.
+* **Integrate mixed reality capture UI into immersive apps** - Developers can integrate mixed reality capture into their apps using the built-in Windows camera UI with just a few lines of code.
 
 ## New features for HoloLens
 
@@ -74,8 +74,7 @@ If you'd like to use these features now, you can install the [RS5 Insider Previe
 
 ### For developers
 
-- Support for Holographic [Camera Capture UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui), which will let developers expose a way for users to seamlessly invoke camera or video capture from within their applications. For example, users can now capture and insert photo or video content directly within apps like Word.  
-- Mixed Reality Capture has been improved to exclude hidden mesh from captures, which means videos captures by apps will no longer contain black corners around the content.  
+* **Integrate mixed reality capture UI into immersive apps** - Developers can integrate mixed reality capture into their apps using the built-in Windows camera UI with just a few lines of code.
 
 ### For commercial customers
 
