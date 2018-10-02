@@ -43,7 +43,7 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     * Microsoft Edge windows now include a *Share* button.
 * **Quick actions menu** - From within an immersive mixed reality app, you can press the Windows button to access a new quick actions menu, with easy access to *SteamVR menu*, *photo/video capture*, *flashlight*, and *home*.
 * **Support for backpack PCs** - Windows Mixed Reality immersive (VR) headsets run on backpack PCs without requiring a display emulator once setup has been completed.
-* **New audio features** - You can now mirror the audio from a Windows Mixed Reality experience to both the audio jack (or headphones) in your headset *and* an audio device connnected to your PC (like external speakers). We've also added a visual indicator for volume level in your headset's display.
+* **New audio features** - You can now mirror the audio from a Windows Mixed Reality experience to both the audio jack (or headphones) in your headset *and* an audio device connected to your PC (like external speakers). We've also added a visual indicator for volume level in your headset's display.
 * **Other improvements**
     * Mixed Reality Portal updates are now delivered through the Microsoft Store, enabling quicker updates between major Windows releases. Note that this only applies to the desktop app and the Windows Mixed Reality headset experience still updates with the OS. 
     * When headsets go to sleep, Windows Mixed Reality apps are suspended instead of terminated (until Mixed Reality Portal is closed).
@@ -64,7 +64,7 @@ If you'd like to use these features now, you can install the [RS5 Insider Previe
 * **Quick actions menu** - From within an immersive mixed reality app, you can press the Windows button to access a new quick actions menu, with easy access to *Start recording video*, *Take pictures*, *Mixed Reality Home*, *Change volume*, and *Connect*.
 * **Start/stop video capture from the Start or quick actions menu** - If you start video capture from the Start menu or quick actions menu, you’ll be able to stop recording from the same place. (Don’t forget, you can always do this with voice commands too.)
 * **Project to a Miracast-enabled device** - Project your HoloLens content to a nearby Surface device or TV/monitor if using a Miracast-enabled display or adapter.
-* **New notifications** - View and respond to notification toasts on HoloLens, just like you do on a PC.  
+* **New notifications** - View and respond to notifications on HoloLens, just like you do on a PC.  
 * **Useful overlays in immersive mixed reality apps** - You’ll now see overlays such as the keyboard, dialogs, file picker, etc. when using immersive mixed reality apps.
 * **Visual indicator for volume change** - When you use the volume up/down buttons on your HoloLens you’ll see a visual indicator of the volume level in the headset.
 * **New visuals for device boot** - A loading indicator was added during the boot process to provide visual feedback that the system is loading.
