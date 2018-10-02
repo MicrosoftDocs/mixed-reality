@@ -16,86 +16,38 @@ Since a user could take a [mixed reality capture](mixed-reality-capture.md) (MRC
 
 Developers can also seamlessly integrate mixed reality capture and insertion into their apps.
 
-## Why a good mixed reality capture experience is important
+## The importance of quality MRC
 
 Mixed reality captured photos and videos are likely the first exposure a user will have of your app. Whether as mixed reality screenshots on your Microsoft Store page or from other users sharing MRCs on social networks. You can use MRC to demo your app, educate users, encourage users to share their mixed world interactions, and for user research and problem solving.
 
-## Enabling mixed reality capture
+## How MRC impacts your app
+
+### Enabling MRC in your app
 
 By default, an app does not have to do anything to enable users to take mixed reality captures.
 
-## Disabling mixed reality capture
+### Disabling MRC in your app
 
 When a 2D app uses [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://msdn.microsoft.com/en-us/library/windows/desktop/bb509554(v=vs.85).aspx) or [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://msdn.microsoft.com/en-us/library/windows/desktop/bb173076(v=vs.85).aspx) to show protected content with a properly-configured swap chain, the app's visual content will be automatically obscured while mixed reality capture is running.
 
-## Knowing when mixed reality capture is active
+### Knowing when MRC is active
 
 The [AppCapture](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.capture.appcapture.aspx) class can be used by an app to know when system mixed reality capture is running (for either audio or video).
 
 >[!NOTE]
 >AppCapture's [GetForCurrentView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.capture.appcapture.getforcurrentview.aspx) API can return null if mixed reality capture isn't available on the device. It's also important to de-register the CapturingChanged event when your app is suspended, otherwise MRC can get into a blocked state.
 
-## Best Practices to ensure a great MRC experience for your users
+## Integrating MRC functionality from within your app
 
-MRC is expected to work without additional work from developers, but there are a few things to be aware of to provide the best mixed reality capture experience of your app.
+Your mixed reality app can initiate MRC photo or video capture from within the app, and the content captured is made available to your app without being stored to the device's "Camera roll." You can create a custom MRC recorder or take advantage of built-in camera capture UI. 
 
-**MRC uses the hologram’s alpha channel to blend with the [camera](locatable-camera.md) imagery**
-
-The most important step is to make sure your app is clearing to transparent black instead of clearing to opaque black. In Unity, this is done by default with the MixedRealityToolkit but if you are developing in non-Unity, you may need to make a one line change.
-
-Here are some of the artifacts you might see in MRC if your app is not clearing to transparent black:
-
-**Example Failures**: Black edges around the content (failing to clear to transparent black)
-
-<table>
-<tr>
-<td>
-<img src="images/chessboardblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
-</td>
-<td>
-<img src="images/fieldblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
-</td>
-</tr>
-</table>
-
-
-**Example Failures**: The entire background scene of the hologram appears black. Setting a background alpha value of 1 results in a black background
-
-![Setting a background alpha value of 1 results in a black background](images/clearopaqueblack-300px.png)
-
-**Expected Result**: Holograms appear properly blended with the real-world (expected result if clearing to transparent black)
-
-![Expected result if clearing to transparent black](images/cleartransparentblack-300px.png)
-
-**Solution**:
-* Change any content that is showing up as opaque black to have an alpha value of 0.
-* Ensure that the app is clearing to transparent black.
-* Unity defaults to clear to clear automatically with the MixedRealityToolkit, but if it’s a non-Unity app you should modify the color used with ID3D11DeiceContext::ClearRenderTargetView(). You want to ensure you clear to transparent black (0,0,0,0) instead of opaque black (0,0,0,1).
-
-You can now tune the alpha values of your assets if you’d like, but typically don’t need to. Most of the time, MRCs will look good out of the box. MRC assumes pre-multiplied alpha. The alpha values will only affect the MRC capture.
-
-## MRC and the HoloLens Emulator
-
-The HoloLens Emulator does not have a photo/video camera, so the real world is replaced by black. As a result, an MRC taken in the emulator won't expose the rendering issues mentioned above.
-
-**Recommendations**:
-* Take a [mixed reality capture](mixed-reality-capture.md) using Cortana voice commands, while within your app, on a HoloLens to ensure users can take quality MRCs.
-* Use mixed reality captures, from a HoloLens, when making screenshots for your app's Windows Store page.
-
-## Mixed reality capture and the Windows Device Portal
-
-The mixed reality capture page of the [Windows Device Portal](using-the-windows-device-portal.md#mixed-reality-capture) has support for:
-* Taking new MRC photos and videos
-* Viewing a MRC live preview from the device
-* Retrieving MRC photos and videos already taken on the device
-
-## Mixed reality capture with built-in MRC camera UI
+### MRC with built-in camera UI
 
 Developers can use the *[Camera Capture UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* to get a user-captured mixed reality photo or video with just a few lines of code.
 
 This API launches the built-in MRC camera UI, from which the user can take a photo or video, and returns the resulting capture to your app.  If you want to create your own camera UI, or need lower-level access to the capture stream, you can create a custom Mixed Reality Capture recorder.
 
-## Creating a custom Mixed Reality Capture (MRC) recorder
+### Creating a custom MRC recorder
 
 While the user can always trigger a photo or video using the system MRC capture service, an application may want to build a custom camera app but include holograms in the camera stream just like MRC. This allows the application to kick off captures on behalf of the user, build custom recording UI, or customize MRC settings to name a few examples.
 
@@ -153,6 +105,45 @@ MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEf
 </tr>
 </table>
 
+## Best practices
+
+MRC is expected to work without additional work from developers, but there are a few things to be aware of to provide the best mixed reality capture experience of your app.
+
+**MRC uses the hologram’s alpha channel to blend with the [camera](locatable-camera.md) imagery**
+
+The most important step is to make sure your app is clearing to transparent black instead of clearing to opaque black. In Unity, this is done by default with the MixedRealityToolkit but if you are developing in non-Unity, you may need to make a one line change.
+
+Here are some of the artifacts you might see in MRC if your app is not clearing to transparent black:
+
+**Example Failures**: Black edges around the content (failing to clear to transparent black)
+
+<table>
+<tr>
+<td>
+<img src="images/chessboardblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
+</td>
+<td>
+<img src="images/fieldblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
+</td>
+</tr>
+</table>
+
+
+**Example Failures**: The entire background scene of the hologram appears black. Setting a background alpha value of 1 results in a black background
+
+![Setting a background alpha value of 1 results in a black background](images/clearopaqueblack-300px.png)
+
+**Expected Result**: Holograms appear properly blended with the real-world (expected result if clearing to transparent black)
+
+![Expected result if clearing to transparent black](images/cleartransparentblack-300px.png)
+
+**Solution**:
+* Change any content that is showing up as opaque black to have an alpha value of 0.
+* Ensure that the app is clearing to transparent black.
+* Unity defaults to clear to clear automatically with the MixedRealityToolkit, but if it’s a non-Unity app you should modify the color used with ID3D11DeiceContext::ClearRenderTargetView(). You want to ensure you clear to transparent black (0,0,0,0) instead of opaque black (0,0,0,1).
+
+You can now tune the alpha values of your assets if you’d like, but typically don’t need to. Most of the time, MRCs will look good out of the box. MRC assumes pre-multiplied alpha. The alpha values will only affect the MRC capture.
+
 ## Simultaneous MRC limitations
 
 There are certain limitations around multiple apps accessing MRC at the same time.
@@ -171,7 +162,7 @@ With the Windows 10 April 2018 Update, there is no longer a limitation around mu
 
 Previous to the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
 
-## What to expect when MRC is enabled / Known Issues
+## What to expect when MRC is enabled
 
 When MRC is enabled:
 * The system will throttle the application to 30Hz rendering. This creates some headroom for MRC to run so the app doesn’t need to keep a constant budget reserve and also matches the MRC video record framerate of 30fps
