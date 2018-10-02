@@ -5,7 +5,7 @@ author: wguyman
 ms.author: wguyman
 ms.date: 10/02/2018
 ms.topic: article
-keywords: mrc, mixed reality capture, photos, video, camera, capture, usage, stream, livestream
+keywords: mrc, mixed reality capture, photos, video, camera, capture, usage, stream, livestream, demo
 ---
 
 
