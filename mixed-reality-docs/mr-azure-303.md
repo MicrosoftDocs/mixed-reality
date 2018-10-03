@@ -482,8 +482,6 @@ To create this class:
 4.	Add the following namespaces to the top of the file:
 
     ```csharp
-        using System.Collections;
-        using System.Collections.Generic;
         using UnityEngine;
         using UnityEngine.Windows.Speech;
     ```
@@ -492,8 +490,6 @@ To create this class:
 
     ```csharp
         public static MicrophoneManager instance; //help to access instance of this object
-        private int frequency = 44100;      //recording frequency of mic
-        private AudioSource audioSource;        //AudioSource component, provides access to mic
         private DictationRecognizer dictationRecognizer;  //Component converting speech to text
         public TextMesh dictationText; //a UI object used to debug dictation result
     ``` 
@@ -511,17 +507,13 @@ To create this class:
         {
             if (Microphone.devices.Length > 0)
             {
-                // Once the scene starts, begin to capture the audio
-                audioSource = GetComponent<AudioSource>();
-
                 StartCapturingAudio();
-
                 Debug.Log("Mic Detected");
             }
         }
     ```
  
-7.	Now you need the method that the App uses to start the voice capture, and pass it to the *LuisManager* class, that you will build soon. 
+7.	Now you need the method that the App uses to start and stop the voice capture, and pass it to the *LuisManager* class, that you will build soon. 
 
     ```csharp
         /// <summary>
@@ -530,11 +522,28 @@ To create this class:
         /// </summary>
         public void StartCapturingAudio()
         {
-            dictationRecognizer = new DictationRecognizer();
-            dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
-            dictationRecognizer.DictationError += DictationRecognizer_DictationError;
+            if (dictationRecognizer == null)
+            {
+                dictationRecognizer = new DictationRecognizer
+                {
+                    InitialSilenceTimeoutSeconds = 60,
+                    AutoSilenceTimeoutSeconds = 5
+                };
+
+                dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
+                dictationRecognizer.DictationError += DictationRecognizer_DictationError;
+            }
             dictationRecognizer.Start();
             Debug.Log("Capturing Audio...");
+        }
+
+        /// <summary>
+        /// Stop microphone capture
+        /// </summary>
+        public void StopCapturingAudio()
+        {
+            dictationRecognizer.Stop();
+            Debug.Log("Stop Capturing Audio...");
         }
     ```
 
@@ -543,10 +552,13 @@ To create this class:
     ```csharp
         /// <summary>
         /// This handler is called every time the Dictation detects a pause in the speech. 
+        /// This method will stop listening for audio, send a request to the LUIS service 
+        /// and then start listening again.
         /// </summary>
         private void DictationRecognizer_DictationResult(string dictationCaptured, ConfidenceLevel confidence)
         {
-            StartCoroutine(LuisManager.instance.SubmitRequestToLuis(dictationCaptured));
+            StopCapturingAudio();
+            StartCoroutine(LuisManager.instance.SubmitRequestToLuis(dictationCaptured, StartCapturingAudio));
             Debug.Log("Dictation: " + dictationCaptured);
             dictationText.text = dictationCaptured;
         }
@@ -592,7 +604,7 @@ To create this class:
 5.	You will begin by creating three classes **inside** the *LuisManager* class (within the same script file, above the *Start()* method) that will represent the deserialized JSON response from Azure.
 
     ```csharp
-        [System.Serializable] //this class represents the LUIS response
+        [Serializable] //this class represents the LUIS response
         public class AnalysedQuery
         {
             public TopScoringIntentData topScoringIntent;
@@ -602,15 +614,15 @@ To create this class:
 
         // This class contains the Intent LUIS determines 
         // to be the most likely
-        [System.Serializable] 
+        [Serializable]
         public class TopScoringIntentData
-        {        
+        {
             public string intent;
             public float score;
         }
 
         // This class contains data for an Entity
-        [System.Serializable] 
+        [Serializable]
         public class EntityData
         {
             public string entity;
@@ -648,54 +660,38 @@ To create this class:
     ```csharp
         /// <summary>
         /// Call LUIS to submit a dictation result.
+        /// The done Action is called at the completion of the method.
         /// </summary>
-        public IEnumerator SubmitRequestToLuis(string dictationResult)
+        public IEnumerator SubmitRequestToLuis(string dictationResult, Action done)
         {
-            WWWForm webForm = new WWWForm();
-
-            string queryString;
-
-            queryString = string.Concat(Uri.EscapeDataString(dictationResult));
+            string queryString = string.Concat(Uri.EscapeDataString(dictationResult));
 
             using (UnityWebRequest unityWebRequest = UnityWebRequest.Get(luisEndpoint + queryString))
             {
-                unityWebRequest.downloadHandler = new DownloadHandlerBuffer();
-
                 yield return unityWebRequest.SendWebRequest();
 
-                long responseCode = unityWebRequest.responseCode;
-
-                try
+                if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError)
                 {
-                    using (Stream stream = GenerateStreamFromString(unityWebRequest.downloadHandler.text))
+                    Debug.Log(unityWebRequest.error);
+                }
+                else
+                {
+                    try
                     {
-                        StreamReader reader = new StreamReader(stream);
-
-                        AnalysedQuery analysedQuery = new AnalysedQuery();
-
-                        analysedQuery = JsonUtility.FromJson<AnalysedQuery>(unityWebRequest.downloadHandler.text);
+                        AnalysedQuery analysedQuery = JsonUtility.FromJson<AnalysedQuery>(unityWebRequest.downloadHandler.text);
 
                         //analyse the elements of the response 
                         AnalyseResponseElements(analysedQuery);
                     }
-                }
-                catch (Exception exception)
-                {
-                    Debug.Log("Luis Request Exception Message: " + exception.Message);
+                    catch (Exception exception)
+                    {
+                        Debug.Log("Luis Request Exception Message: " + exception.Message);
+                    }
                 }
 
+                done();
                 yield return null;
             }
-        }
-
-        public static Stream GenerateStreamFromString(string receivedString)
-        {
-            MemoryStream stream = new MemoryStream();
-            StreamWriter writer = new StreamWriter(stream);
-            writer.Write(receivedString);
-            writer.Flush();
-            stream.Position = 0;
-            return stream;
         }
     ```
  
@@ -915,15 +911,7 @@ To create this Class:
 4.	Insert the following code for this class:
 
     ```csharp
-        using System;
-        using System.Collections;
-        using System.Collections.Generic;
         using UnityEngine;
-        using UnityEngine.EventSystems;
-        using UnityEngine.Experimental.XR;
-        using UnityEngine.UI;
-        using UnityEngine.XR;
-        using UnityEngine.XR.WSA.Input;
 
         public class Gaze : MonoBehaviour
         {        
