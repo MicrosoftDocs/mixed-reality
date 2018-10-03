@@ -10,7 +10,7 @@ keywords: release notes, version, windows 10, build, rs4, os
 
 
 
-# Release notes
+# Release notes - April 2018
 
 The **[Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update)** (also known as RS4) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
 
