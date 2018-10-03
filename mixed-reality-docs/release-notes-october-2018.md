@@ -50,8 +50,8 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     
 ### For developers
 
-* **Hardware DRM for textures in immersive apps** - Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
-* **Integrate mixed reality capture UI into immersive apps** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
+* **Hardware DRM support for immersive apps** - Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
+* **[Integrate mixed reality capture UI into immersive apps](mixed-reality-capture-for-developers.md#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
 
 ## New features for HoloLens
 
@@ -73,7 +73,7 @@ If you'd like to use these features now, you can install the [RS5 Insider Previe
 
 ### For developers
 
-* **Integrate mixed reality capture UI into immersive apps** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
+* **[Integrate mixed reality capture UI into immersive apps](mixed-reality-capture-for-developers.md#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
 
 ### For commercial customers
 
