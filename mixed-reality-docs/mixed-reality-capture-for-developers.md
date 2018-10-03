@@ -126,10 +126,6 @@ MRC Video Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureVideoEf
 
 MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEffect**)
 
-|  Property Name  |  Type  |  Default Value  |  Description | 
-|----------|----------|----------|----------|
-|  MixerMode  |  UINT32  |  2  |  0 : Mic audio only 1 : System audio only 2 : Mic and System audio |
-
 <table>
 <tr>
 <th>Property Name</th>
