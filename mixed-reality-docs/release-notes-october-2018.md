@@ -10,7 +10,7 @@ keywords: release notes, version, windows 10, build, rs5, os
 
 
 
-# Release notes
+# Release notes - October 2018
 
 The **[Windows 10 October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (also known as RS5) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
 
