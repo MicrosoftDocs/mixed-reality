@@ -12,7 +12,7 @@ keywords: 3D, model, place in home, place, world, modeling, mixed reality home, 
 # Enable placement of 3D models in the mixed reality home
 
 > [!NOTE]
-> This feature was added as part of the [Windows 10 April 2018 Update](release-notes.md). Older versions of Windows are not compatible with this feature.
+> This feature was added as part of the [Windows 10 April 2018 Update](release-notes-april-2018.md). Older versions of Windows are not compatible with this feature.
 
 The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. In some scenarios, 2D apps (like the Holograms app) enable placement of 3D models directly into the mixed reality home as decorations or for further inspection in full 3D. The *add model protocol* allows you to send a 3D model from your website or application directly into the Windows Mixed Reality home, where it will persist like [3D app launchers](3d-app-launcher-design-guidance.md), 2D apps, and holograms. 
 

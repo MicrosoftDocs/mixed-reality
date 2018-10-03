@@ -61,6 +61,7 @@ Use the following workflow to create new articles in the documentation via web b
    author:
    ms.author:
    ms.date:
+   ms.topic: article
    keywords:
    ---
    ```

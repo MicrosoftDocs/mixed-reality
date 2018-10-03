@@ -216,7 +216,8 @@
 ## [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 
 # Mixed reality release notes
-## [Current release notes](release-notes.md)
+## [Current release notes](release-notes-october-2018.md)
+## [Release notes - April 2018](release-notes-april-2018.md)
 ## [Release notes - October 2017](release-notes-october-2017.md)
 ## [Release notes - August 2016](release-notes-august-2016.md)
 ## [Release notes - May 2016](release-notes-may-2016.md)

@@ -25,7 +25,7 @@ Whenever the device restarts or resumes from standby, the credentials for this a
 >[!NOTE]
 >Multi-user support requires the Commercial Suite, as this is a [Windows Holographic for Business](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise) feature.
 
-Starting with the [Windows 10 April 2018 Update](release-notes.md), HoloLens supports multiple users from within the same AAD tenant. To use this you must set up the device initially with an account that belongs to your organization. Subsequently, other users from the same tenant will be able to sign into the device from the sign-in screen or by tapping the user tile on the Start panel to sign out the existing user. 
+Starting with the [Windows 10 April 2018 Update](release-notes-april-2018.md), HoloLens supports multiple users from within the same AAD tenant. To use this you must set up the device initially with an account that belongs to your organization. Subsequently, other users from the same tenant will be able to sign into the device from the sign-in screen or by tapping the user tile on the Start panel to sign out the existing user. 
 
 Apps installed on the device will be available to all other users, but each will have their own app data and preferences. Removing an app will also remove it for all other users though. 
 
