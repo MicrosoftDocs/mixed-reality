@@ -37,6 +37,52 @@ The [AppCapture](https://msdn.microsoft.com/en-us/library/windows/apps/windows.m
 >[!NOTE]
 >AppCapture's [GetForCurrentView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.capture.appcapture.getforcurrentview.aspx) API can return null if mixed reality capture isn't available on the device. It's also important to de-register the CapturingChanged event when your app is suspended, otherwise MRC can get into a blocked state.
 
+### Best practices (HoloLens-specific)
+
+MRC is expected to work without additional work from developers, but there are a few things to be aware of to provide the best mixed reality capture experience of your app.
+
+**MRC uses the hologram’s alpha channel to blend with the [camera](locatable-camera.md) imagery**
+
+The most important step is to make sure your app is clearing to transparent black instead of clearing to opaque black. In Unity, this is done by default with the MixedRealityToolkit but if you are developing in non-Unity, you may need to make a one line change.
+
+Here are some of the artifacts you might see in MRC if your app is not clearing to transparent black:
+
+**Example Failures**: Black edges around the content (failing to clear to transparent black)
+
+<table>
+<tr>
+<td>
+<img src="images/chessboardblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
+</td>
+<td>
+<img src="images/fieldblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
+</td>
+</tr>
+</table>
+
+**Example Failures**: The entire background scene of the hologram appears black. Setting a background alpha value of 1 results in a black background
+
+![Setting a background alpha value of 1 results in a black background](images/clearopaqueblack-300px.png)
+
+**Expected Result**: Holograms appear properly blended with the real-world (expected result if clearing to transparent black)
+
+![Expected result if clearing to transparent black](images/cleartransparentblack-300px.png)
+
+**Solution**:
+* Change any content that is showing up as opaque black to have an alpha value of 0.
+* Ensure that the app is clearing to transparent black.
+* Unity defaults to clear to clear automatically with the MixedRealityToolkit, but if it’s a non-Unity app you should modify the color used with ID3D11DeiceContext::ClearRenderTargetView(). You want to ensure you clear to transparent black (0,0,0,0) instead of opaque black (0,0,0,1).
+
+You can now tune the alpha values of your assets if you’d like, but typically don’t need to. Most of the time, MRCs will look good out of the box. MRC assumes pre-multiplied alpha. The alpha values will only affect the MRC capture.
+
+### What to expect when MRC is enabled (HoloLens-specific)
+
+* The system will throttle the application to 30Hz rendering. This creates some headroom for MRC to run so the app doesn’t need to keep a constant budget reserve and also matches the MRC video record framerate of 30fps
+* Hologram content in the right eye of the device may appear to “sparkle” when recording/streaming MRC: text may become more difficult to read and hologram edges may appear more jaggy
+* MRC photos and videos will respect the application’s [focus point](focus-point-in-unity.md) if the application has enabled it, which will help ensure holograms are accurately positioned. For videos, the Focus Point is smoothed so holograms may appear to slowly drift into place if the Focus Point depth changes significantly. Holograms that are at different depths from the focus point may appear offset from the real world (see example below where Focus Point is set at 2 meters but hologram is positioned at 1 meter).
+
+![Holograms at 2 meters will appear perfectly registered to the world. Holograms at close or far distances may be slightly offset.](images/hologramaccuracydistancemrc-1000px.png)
+
 ## Integrating MRC functionality from within your app
 
 Your mixed reality app can initiate MRC photo or video capture from within the app, and the content captured is made available to your app without being stored to the device's "Camera roll." You can create a custom MRC recorder or take advantage of built-in camera capture UI. 
@@ -105,50 +151,11 @@ MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEf
 </tr>
 </table>
 
-## Best practices
-
-MRC is expected to work without additional work from developers, but there are a few things to be aware of to provide the best mixed reality capture experience of your app.
-
-**MRC uses the hologram’s alpha channel to blend with the [camera](locatable-camera.md) imagery**
-
-The most important step is to make sure your app is clearing to transparent black instead of clearing to opaque black. In Unity, this is done by default with the MixedRealityToolkit but if you are developing in non-Unity, you may need to make a one line change.
-
-Here are some of the artifacts you might see in MRC if your app is not clearing to transparent black:
-
-**Example Failures**: Black edges around the content (failing to clear to transparent black)
-
-<table>
-<tr>
-<td>
-<img src="images/chessboardblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
-</td>
-<td>
-<img src="images/fieldblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
-</td>
-</tr>
-</table>
-
-
-**Example Failures**: The entire background scene of the hologram appears black. Setting a background alpha value of 1 results in a black background
-
-![Setting a background alpha value of 1 results in a black background](images/clearopaqueblack-300px.png)
-
-**Expected Result**: Holograms appear properly blended with the real-world (expected result if clearing to transparent black)
-
-![Expected result if clearing to transparent black](images/cleartransparentblack-300px.png)
-
-**Solution**:
-* Change any content that is showing up as opaque black to have an alpha value of 0.
-* Ensure that the app is clearing to transparent black.
-* Unity defaults to clear to clear automatically with the MixedRealityToolkit, but if it’s a non-Unity app you should modify the color used with ID3D11DeiceContext::ClearRenderTargetView(). You want to ensure you clear to transparent black (0,0,0,0) instead of opaque black (0,0,0,1).
-
-You can now tune the alpha values of your assets if you’d like, but typically don’t need to. Most of the time, MRCs will look good out of the box. MRC assumes pre-multiplied alpha. The alpha values will only affect the MRC capture.
-
-## Simultaneous MRC limitations
+### Simultaneous MRC limitations
 
 There are certain limitations around multiple apps accessing MRC at the same time.
 
-### Photo/video camera access
+#### Photo/video camera access
 
 The photo/video camera is limited to the number of processes that can access it at the same time. While a process is recording video or taking a photo any other process will fail to acquire the photo/video camera. (this applies to both Mixed Reality Capture and standard photo/video capture)
 
@@ -156,20 +163,11 @@ With the Windows 10 April 2018 Update, this restriction does not apply if the bu
 
 With the Windows 10 October 2018 Update, this restriction does not apply to streaming MRC over Miracast.
 
-### MRC access
+#### MRC access
 
 With the Windows 10 April 2018 Update, there is no longer a limitation around multiple apps accessing the MRC stream (however, the access to the photo/video camera still has limitations).
 
 Previous to the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
-
-## What to expect when MRC is enabled
-
-When MRC is enabled:
-* The system will throttle the application to 30Hz rendering. This creates some headroom for MRC to run so the app doesn’t need to keep a constant budget reserve and also matches the MRC video record framerate of 30fps
-* Hologram content in the right eye of the device may appear to “sparkle” when recording/streaming MRC: text may become more difficult to read and hologram edges may appear more jaggy
-* MRC photos and videos will respect the application’s [focus point](focus-point-in-unity.md) if the application has enabled it, which will help ensure holograms are accurately positioned. For videos, the Focus Point is smoothed so holograms may appear to slowly drift into place if the Focus Point depth changes significantly. Holograms that are at different depths from the focus point may appear offset from the real world (see example below where Focus Point is set at 2 meters but hologram is positioned at 1 meter).
-
-![Holograms at 2 meters will appear perfectly registered to the world. Holograms at close or far distances may be slightly offset.](images/hologramaccuracydistancemrc-1000px.png)
 
 ## See also
 * [Mixed reality capture](mixed-reality-capture.md)
