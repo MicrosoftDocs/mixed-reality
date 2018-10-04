@@ -10,7 +10,7 @@ keywords: matt will fill these in
 
 # QR code tracking
 
-QRTracking is implemented in the Oasis driver for windows mixed reality devices. By enabling the QR codes tracker the driver scans for QR codes and are reported to the interested apps. This feature only available in RS5 builds.
+QRTracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker the driver scans for QR codes and are reported to the interested apps. This feature only available in Windows 10 October 2018 Update (RS5) builds.
 
 ## Enabling and disabling QR code tracking in the driver
 
@@ -24,7 +24,7 @@ reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t 
 
 afterwards to restart the device.
 
-The plugin files are build in windows internal builds and will be copied to the MRTK as needed. They are found in the branch specific path RS_ANALOG_RUNTIME\<latestbuild>\amd64fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\
+The plugin files are build in windows internal builds and will be copied to the MRTK as needed. They are found in the branch specific path *need public URL*
 
 # Preparing Unity with the QRTrackingPlugin
 Create a folder plugins in your assets folder
@@ -47,7 +47,7 @@ WSA\
 #  RS5 SDK
 To access the new RS5 API Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode, the windows SDK need to be installed the SDK can be found in the following location in the build
 
-\\winbuilds\release\RS_ANALOG\<latestbuild>\Other\kit_bundles\windowssdk
+*need public link*
 
 The app can be developed even on RS4 machine but the above SDK need to be installed on the dev machine.
 
@@ -163,7 +163,7 @@ The plugin wraps the APIs for the QR tracking implemented through the RS5 HMD dr
 </syntaxhighlight>
 
 See the following file for verbose details: 
- os\src\analog\Input\HeadTracker\Unity\QRTrackerAPI\QRTrackerPlugin.Placeholder\QRCodesTracker.cs
+*need public URL*
 
 #  Using the Plugin in Windows UWP
 C++/CX
