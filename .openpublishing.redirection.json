@@ -5,5 +5,10 @@
 			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/implementing-3d-app-launchers#3d-deep-links-secondarytiles",
 			"redirect_document_id": false
 		}
+		{
+			"source_path": "mixed-reality-docs/release-notes.md",
+			"redirect_url": "mixed-reality-docs/release-notes-october-2018.md",
+			"redirect_document_id": false
+		}
 	]
 }
