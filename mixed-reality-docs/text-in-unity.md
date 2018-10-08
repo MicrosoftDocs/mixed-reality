@@ -43,7 +43,7 @@ When adding a UI or canvas based text element to a scene, the size disparity is 
 
 ## Sharp text rendering quality with proper dimension
 
-Based on these scaling factors, we have created [two prefabs - UI Text and 3D Text Mesh](https://github.com/Microsoft/HoloToolkit-Unity/tree/master/Assets/HoloToolkit/UI/Prefabs). Developers can use these prefabs to get sharp text and consistent font size.
+Based on these scaling factors, we have created [two prefabs - UI Text and 3D Text Mesh](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/UX/Prefabs). Developers can use these prefabs to get sharp text and consistent font size.
 
 ![Sharp text rendering quality with proper dimension](images/hug-text-06-1000px.png)<br>
 *Sharp text rendering quality with proper dimension*

@@ -757,9 +757,9 @@ You will then create the *images* folder, used by the python script to check for
 
 5. If your device is not here, you will need to right-click *Azure IoT Hub Devices*, and then click **Set IoT Hub Connection String**. You will then see that the **Command Palette** (at the top of VS Code), will prompt you to input your *Connection String*. This is the *Connection String* you noted down at the end of [Chapter 3](#chapter-3---the-iot-hub-service). Press the **Enter** key, once you have copied the string in.    
 
-6. Your device should load, and appear. Right-click on the device name, and then click, **Create Deployment for IoT Edge Device**.
+6. Your device should load, and appear. Right-click on the device name, and then click, **Create Deployment for Single Device**.
 
-    ![create deployment](images/AzureLabs-Lab313-33.png)
+    ![create deployment](images/AzureLabs-Lab313-33b.png)
 
 7. You will get a *File Explorer* prompt, where you can navigate to the **config** folder, and then select the **deployment.json** file. With that file selected, click the **Select Edge Deployment Manifest** button.
 

@@ -73,7 +73,7 @@ There are also some unintuitive reasons why allocations may occur even when you'
 * Do not use lambdas, as they cause allocations.
 * Beware of boxing! A common case for that is passing structs to a method that takes an interface as a parameter. Instead, make the method take the concrete type (by ref) so that it can be passed without allocation.
 * Prefer structs to classes whenever you can.
-* Default implementations for value equality and GetHashcode uses reflection, which is not only slow but also performs a lot of allocations.
+* Default implementations for value equality and GetHashcode uses reflection *in some cases*, which is not only slow but also performs a lot of allocations. Make sure to debug to find out which ones are causing allocations.
 * Avoid foreach loops on everything except raw arrays and List<T>. Each call potentially allocates an Enumerator. Prefer regular for loops whenever possible. (See https://jacksondunstan.com/articles/3805 for more info)
 
 **Other garbage collections concerns.** Another key concept to be aware of is that GC time is largely proportional to the number of references in the heap. Thus, it's preferable to store data as structs instead of objects. For example, instead of referring to an object by reference, you might allocate a bunch of those types of objects as a shared array of structs and then refer to them by index. This is not as important for long-lived types (e.g. the ones you allocate at startup and keep around for the duration of the application), since they will rapidly move into the oldest generation and stay there (where you hopefully don't have many collections at all), but worth keeping in mind whenever it's easy to do.
@@ -84,9 +84,7 @@ Consider enabling [Sustained Low Latency](https://msdn.microsoft.com/en-us/libra
 
 ### Startup performance
 
-A big win for startup performance typically comes from using .NET Native. This is required for store submissions, but you should make sure you use that build configuration when measuring. Note that while .NET Native has a big impact on startup performance, it typically doesn't have that much of an impact on runtime performance.
-
-You should also consider starting your app with a smaller scene, then using [SceneManager.LoadSceneAsync](http://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html) to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. Be aware that there may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the [AsyncOperation.allowSceneActivation](http://docs.unity3d.com/ScriptReference/AsyncOperation.html) property to false on the scene being loaded, wait for the scene to load, clear the screen to black, and then set back to true to complete the scene activation.
+You should consider starting your app with a smaller scene, then using [SceneManager.LoadSceneAsync](http://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html) to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. Be aware that there may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the [AsyncOperation.allowSceneActivation](http://docs.unity3d.com/ScriptReference/AsyncOperation.html) property to false on the scene being loaded, wait for the scene to load, clear the screen to black, and then set back to true to complete the scene activation.
 
 Remember that while the startup scene is loading the [holographic splash screen](recommended-settings-for-unity.md#holographic-splash-screen) will be displayed to the user.
 
@@ -96,12 +94,12 @@ Aside from Garbage Collection, you also need to be aware of the general CPU cost
 
 **Basics**
 * If you have a lot of objects in the scene and/or scripts that do heavy processing, avoid having *Update* functions on every object in your scene. Instead, have just a few higher level "manager" objects with *Update* functions that calls into any other objects that need attention. The specifics of using this approach is highly application-dependent, but you can often skip large numbers of objects at once using higher level logic. For example, AI logic code probably doesn't need to update every single frame, so you could instead store them all in an array and have a higher level manager object update only a small number of them per frame.
-* Do NOT use *FixedUpdate* unless absolutely necessary, as *FixedUpdate* can be called multiple times per frame. Use either *Update* or your own update manager instead.
+* Remember that *FixedUpdate* can be called multiple times per frame. If you use it, make sure to set the physics timestep to be equal to the refresh rate of the application each frame, or use either *Update* or your own update manager instead.
 * Avoid any synchronous loading code or other long running operations. On HoloLens it's critical to always update the rendering at 60 frames per second, or you might risk causing comfort issues for the user. For this reason you should make sure that any long running operation is asynchronous.
 * Consider caching often-used components. For example, if you often need to access the Rigid Body of an object, just grab it once and reference it with a private variable rather than looking it up each time.
 * Avoid the *foreach* construct (except for arrays and List<T>). This will sometimes allocate an IEnumerable, and just generally introduce iteration overhead. It's usually much faster to explicitly iterate over a concrete collection type.
 * Avoid deep object hierarchies for moving objects. When moving a transform, all of the parent and child transforms also get recomputed. If content moves in the scene in each frame, this cost will add up.
-* Disable idle animations. Avoid design patterns where an animator sits in a loop setting a value to the same thing. There is considerable overhead for this technique, with no effect on the application. Instead, terminate the animation and restart when appropriate.
+* Disable idle animations by disabling the Animator component (disabling the game object won't have the same effect). Avoid design patterns where an animator sits in a loop setting a value to the same thing. There is considerable overhead for this technique, with no effect on the application.
 
 **Advanced Topics**
 * Optimize for cache coherency. Cache misses are orders of magnitude more expensive than most CPU instructions, so avoiding random jumping through memory can have a *huge* impact on performance. Flat arrays of compact structs that are processed in order is ideal.

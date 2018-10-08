@@ -21,7 +21,7 @@ Your home is also where you’ll use the Start menu to open and place apps and c
 ![Start Menu on Microsoft HoloLens](images/start-500px.png)
 
 The Start menu consists of:
-* System information (network status, battery status, current time, and volume)
+* System information (network status, battery percentage, current time, and volume)
 * Cortana (on immersive headsets, a Start tile; on HoloLens, at the top of Start)
 * Pinned apps
 * The All apps button (plus sign)

@@ -11,7 +11,7 @@ keywords: research mode, cv, rs4, computer vision, research, HoloLens
 # HoloLens Research mode
 
 > [!NOTE]
-> This feature was added as part of the Windows 10 RS4 update for HoloLens, and is not available on earlier releases. You can test it now by installing the [HoloLens RS4 Preview](hololens-rs4-preview.md). Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+> This feature was added as part of the [Windows 10 April 2018 Update](release-notes-april-2018.md) for HoloLens, and is not available on earlier releases.
 
 Research mode is a new capability of HoloLens that provides application access to the key sensors on the device. These include:
 - The four environment tracking cameras used by the system for map building and head tracking.

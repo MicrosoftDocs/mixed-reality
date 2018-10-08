@@ -1,5 +1,4 @@
 # [Windows Mixed Reality](index.md)
-# [Get started](get-started.md)
 # [Install the tools](install-the-tools.md)
 # Fundamentals
 ## [What is mixed reality?](mixed-reality.md)
@@ -208,6 +207,7 @@
 ## [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 
 # Resources
+## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
 ## [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ## [Mixed Reality Partner Program](mixed-reality-partner-program.md)
 ## [App quality criteria](app-quality-criteria.md)
@@ -216,7 +216,8 @@
 ## [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 
 # Mixed reality release notes
-## [Current release notes](release-notes.md)
+## [Current release notes](release-notes-october-2018.md)
+## [Release notes - April 2018](release-notes-april-2018.md)
 ## [Release notes - October 2017](release-notes-october-2017.md)
 ## [Release notes - August 2016](release-notes-august-2016.md)
 ## [Release notes - May 2016](release-notes-may-2016.md)
