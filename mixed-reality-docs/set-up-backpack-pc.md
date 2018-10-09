@@ -19,17 +19,16 @@ You can manually start Mixed Reality Portal from the Desktop with the Backpack P
 
 
 ## Auto Start Windows Mixed Reality on PC Boot 
-If you can configure your PC to auto start WMR when the PC boots, by using the two supported windows features: Auto logon, and designate Startup App.
+If you can configure your PC to auto start WMR when the PC boots, by using the two supported windows features: Automatic Logon, and designate Startup App.
+Start with the Backpack PC connected to an external monitor, keyboard, and mouse for PC configuration.
+Enable Automatic Logon following instructions here: https://support.microsoft.com/en-us/help/324737/how-to-turn-on-automatic-logon-in-windows
+Set Mixed Reality Portal to launch on start, by create a shortcut for Mixed Reality Portal, start file explorer, go to “shell:startup” and drag the shortcut there.
 
+You can also set add a Steam or Windows MR application to startup on PC boot by following the last step with a shortcut of the application. 
 
-### Sub-section
+We recommend that you test the startup flow once with the external monitor connected to take care of all the Admin prompt. 
 
-Placeholder sub-section text
-
-### Sub-section
-
-Placeholder sub-section text
-
-## Feature section
-
-Use this if you want or delete.
+## Known issues
+If you have configured the PC to start MR on boot, and you see nothing in the HMD after 1 min, please connect the backpack PC to an external monitor, you may have messages on the desktop that needs to be taken care off.
+UAC Prompt (Like Admin dialog) will cause the HMD display to black out for security purposes, you will need to connect the backpack PC to an external monitor to take care of the dilaog on desktop. 
+Device setup and boundary setup requires an external monitor to be connected and desktop interaction. Please setup the HMD and complete OOBE experience with an external monitor attached. 
