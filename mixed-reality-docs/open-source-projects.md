@@ -19,7 +19,7 @@ keywords: template, code, sample, snippet, script, component, open source, proje
 
 The Mixed Reality Toolkit is a collection of scripts and components intended to accelerate development of applications targeting Microsoft HoloLens and Windows Mixed Reality headsets. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as we all grow. 
 
-### [Mixed Reality Toolkit - Unity](https://github.com/microsoft/HoloToolkit-Unity)
+### [Mixed Reality Toolkit - Unity (MRTK)](https://github.com/microsoft/HoloToolkit-Unity)
 
 Mixed Reality Toolkit - Unity uses code from the base Mixed Reality Toolkit and makes it easier to consume in Unity. 
 
@@ -33,17 +33,12 @@ A client library that wraps the Windows Device Portal REST APIs.
 
 ![MRDL logo](images/MRDL_Logo_Rev.png)
 
-### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs)
+### [Mixed Reality Design Labs (MRDL)](https://github.com/Microsoft/MRDesignLabs_Unity)
 
-This repo is where Microsoft's Windows Mixed Reality Design team publishes examples and explorations. The goal is to inspire creators and help them to build Mixed Reality experiences. We share sample app projects here that demonstrate how to use various types of common controls and patterns in Mixed Reality.
+The Mixed Reality Design Labs (MRDL) is a collection of well-documented, open-source samples, based on the foundation of [Mixed Reality Toolkit - Unity (MRTK)](https://github.com/microsoft/HoloToolkit-Unity). The goal is to inspire creators and help them build compelling, efficient Mixed Reality experiences.
 
-### [Mixed Reality Design Labs - Unity](https://github.com/Microsoft/MRDesignLabs_Unity)
+MRTK offers building-block components, and MRDL leverages them to offer more complete experiences and samples. As the name suggests, these samples are experimental/’works-in-progress’, driven by experience design, which provide creators with concrete examples of best practices for app experiences, UX, and MRTK implementation. By ‘experimental’, we mean MRDL is not officially supported/maintained by Microsoft (e.g. updated to latest versions of Unity), whereas MRTK is officially supported/maintained.
 
-This repo is where Microsoft's Windows Mixed Reality Design team publishes sample apps and experiments.
-
-### [Mixed Reality Design Labs - Unity Tools](https://github.com/Microsoft/MRDesignLabs_Unity_Tools)
-
-This repo is where Microsoft's Windows Mixed Reality Design team publishes the Unity tools we use in examples and explorations. This set of tools have been separated into this repo for easy inclusion in your project or repo.
 
 ## Sample apps
 
