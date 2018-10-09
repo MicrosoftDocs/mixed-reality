@@ -24,32 +24,12 @@ reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t 
 
 afterwards to restart the device.
 
-The plugin files are build in windows internal builds and will be copied to the MRTK as needed. They are found in the branch specific path *need public URL*
-
-# Preparing Unity with the QRTrackingPlugin
+# Preparing your Unity project with the QRTrackingPlugin
 Create a folder plugins in your assets folder
+You can find all the required Plugins here: 
 
-Plugins\
+https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Plugins
 
-QRCodesTrackerPlugin.Placeholder.dll
-QRCodesTrackerPlugin.Placeholder.pdb
-
-WSA\
- x64\
-  QRCodesTrackerPlugin.dll
-  QRCodesTrackerPlugin.pdb
-
- x86\
-  QRCodesTrackerPlugin.dll
-  QRCodesTrackerPlugin.pdb
-  QRCodesTrackerPlugin.winmd
-
-#  RS5 SDK
-To access the new RS5 API Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode, the windows SDK need to be installed the SDK can be found in the following location in the build
-
-*need public link*
-
-The app can be developed even on RS4 machine but the above SDK need to be installed on the dev machine.
 
 # QRTrackingPlugin (Native API)
 The plugin wraps the APIs for the QR tracking implemented through the RS5 HMD driver. To use the plugin, you will need to use the following types from the QRCodesTrackerPlugin namespace.
@@ -274,6 +254,9 @@ void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 
 
 #  Sample App
+You can find an example on how to use the QR Tracking API on the Mixed Reality Toolkit GitHub site.
+https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview
+
 All necessary assets to develope QR tracking apps are in the QR tracking folder. There are two scenes first one is a sample to just show details of the qr codes as they are detected.
 
 #  Troubleshooting and FAQ
