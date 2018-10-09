@@ -12,6 +12,9 @@ keywords: release notes, version, windows 10, build, rs5, os
 
 # Release notes - October 2018
 
+>[!NOTE]
+>We have paused the rollout of the Windows 10 October 2018 Update for all users (this does not affect Insider builds for HoloLens). See this [support article](https://support.microsoft.com/en-us/help/4464619/windows-10-update-history) for more information.
+
 The **[Windows 10 October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (also known as RS5) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
 
 To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 October 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
