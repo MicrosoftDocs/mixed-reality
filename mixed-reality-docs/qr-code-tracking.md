@@ -10,29 +10,32 @@ keywords: matt will fill these in
 
 # QR code tracking
 
-QRTracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker the driver scans for QR codes and are reported to the interested apps. This feature only available in Windows 10 October 2018 Update (RS5) builds.
+QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker, the driver scans for QR codes and they are reported to interested apps. This feature only available as of the [Windows 10 October 2018 Update (RS5)](release-notes-october-2018.md).
 
 ## Enabling and disabling QR code tracking in the driver
 
-In order to turn '''ON''' QR Tracking, run the following script in cmd and then replug in your headset.
+In order to **turn on QR code tracking** for your immersive (VR) headset, run the following script in the Command Prompt and then replug in your headset.
 
-reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F
+`reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F`
 
-In order to turn '''OFF''' QR Tracking, run the following script in cmd and then replug in your headset. This will make any currently found QR codes ''Non-locatable''.
+In order to **turn off QR code tracking** for your immersive (VR) headset, run the following script in the Command Prompt and then replug in your headset. This will make any discovered QR codes "Non-locatable."
 
-reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F
+`reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F`
 
 afterwards to restart the device.
 
-# Preparing your Unity project with the QRTrackingPlugin
+## Preparing your Unity project with the QRTrackingPlugin
+
 Create a folder plugins in your assets folder
 You can find all the required Plugins here: 
 
 https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Plugins
 
 
-# QRTrackingPlugin (Native API)
-The plugin wraps the APIs for the QR tracking implemented through the RS5 HMD driver. To use the plugin, you will need to use the following types from the QRCodesTrackerPlugin namespace.
+## QRTrackingPlugin (Native API)
+
+The plugin wraps the APIs for QR code tracking implemented through the Windows 10 October 2018 Update headset driver. To use the plugin, you will need to use the following types from the QRCodesTrackerPlugin namespace.
+
 <syntaxhighlight lang="c#">
  // QRTracker plugin namespace
  namespace QRCodesTrackerPlugin
@@ -145,7 +148,8 @@ The plugin wraps the APIs for the QR tracking implemented through the RS5 HMD dr
 See the following file for verbose details: 
 *need public URL*
 
-#  Using the Plugin in Windows UWP
+## Using the Plugin in Windows UWP
+
 C++/CX
 
 <syntaxhighlight lang="cpp">
@@ -196,7 +200,8 @@ void MyClass::OnRemovedQRCode(QRCodesTrackerPlugin::QRCodeRemovedEventArgs ^args
 }
 </syntaxhighlight>
 
-#  Getting a coordinatesystem
+##  Getting a coordinatesystem
+
 We define a right-hand coordinate system aligned with the QR code at the top left of the top left fast detection square. The coordinate system is shown below. The Z-axis is pointing into the paper (not shown) ( When in unity the z-axis is out of the paper and left handed). A SpatialCoordinateSystem is defined that is aligned as shown. This coordinate system can be obtained from the platform using the new '''RS5''' API Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode.
 
 [[File:qr-coordinatesystem.png.png|400px]]
@@ -253,20 +258,21 @@ void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 </syntaxhighlight>
 
 
-#  Sample App
+## Sample app
 You can find an example on how to use the QR Tracking API on the Mixed Reality Toolkit GitHub site.
 https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview
 
 All necessary assets to develope QR tracking apps are in the QR tracking folder. There are two scenes first one is a sample to just show details of the qr codes as they are detected.
 
-#  Troubleshooting and FAQ
-* In general, if it doesn't work
-* Do you have an RS5 build? 
+## Troubleshooting and FAQ
+
+**General troubleshooting**
+* Is your PC running the Windows 10 October 2018 Update?
 * Have you set the reg key? Restarted the device afterwards?
 * Is the QR code version a supported version? We don't support the really high density versions like version 40. 
 * Are you close enough to the QR code?
 
-* How close do I need to be to the QR code to detect it?
+**How close do I need to be to the QR code to detect it?**
 This obviously depends on the size of the QR code, and also what version it is. 
 For a version 1 QR code varying from 5cm sides to 25 cm sides, the minimum detection distance ranges from 0.25 metres to 0.5 metres. The furthest these can be detected from goes from about 0.5m for the smallest code to 2 metres for the bigger. 
 
@@ -274,7 +280,7 @@ For a version 1 QR code varying from 5cm sides to 25 cm sides, the minimum detec
 * QR codes with logos was not reading?
 * QR codes with logos have not been tested and supported, currently we could do these at some time in future. I got your QR codes I can do some testing.
 
-I want to know how to clear the codes from my app? It seems once you find a code, they are persisted.
+**I want to know how to clear the codes from my app? It seems once you find a code, they are persisted.**
 * QR codes are only persisted in the boot session. Once you reboot (or restart the driver) they will be gone and detected as new objects next time. They are unique and persisted within the driver session.
 * How does that work at the underlying platform ?? where are they persisted? They are only persisted in memory (asic/soc). 
 * How do I clear them. during testing it is most useful to clear them? You can ignore the QR codes older than a timestamp if you want. Currently the API does not have a way to clear them as multiple apps might be interested in them. At app level you can ignore the QR codes not updated recently and a logic can be added to ignore the ones not updated since time t say. It is all app specific and apps an do any thing.
