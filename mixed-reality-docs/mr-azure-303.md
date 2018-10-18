@@ -74,14 +74,14 @@ To use the *Language Understanding* service in Azure, you will need to configure
     > [!NOTE]
     > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
-2.	Once you are logged in, click on **New** in the top left corner, and search for *Azure Language Understanding*, and click **Enter**. 
+2.	Once you are logged in, click on **New** in the top left corner, and search for *Language Understanding*, and click **Enter**. 
 
     ![Create LUIS resource](images/AzureLabs-Lab3-01.png)
 
     > [!NOTE]
     > The word **New** may have been replaced with **Create a resource**, in newer portals.
  
-3.	The new page to the right will provide a description of the Azure Application Insights service. At the bottom left of this page, select the **Create** button, to create an association with this service.
+3.	The new page to the right will provide a description of the Language Understanding service. At the bottom left of this page, select the **Create** button, to create an instance of this service.
 
     ![LUIS service creation - legal notice](images/AzureLabs-Lab3-02.png)
  
