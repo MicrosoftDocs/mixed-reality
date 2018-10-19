@@ -10,26 +10,41 @@ keywords: matt will fill these in
 
 # QR code tracking
 
-QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker, the driver scans for QR codes and they are reported to interested apps. This feature only available as of the [Windows 10 October 2018 Update (RS5)](release-notes-october-2018.md).
+QR code tracking is implemented in the Windows Mixed Reality driver for Immersive (VR) headsets. By enabling the QR code tracker, the driver scans for QR codes and they are reported to interested apps. This feature only available as of the [Windows 10 October 2018 Update (RS5)](release-notes-october-2018.md).
 
 ## Enabling and disabling QR code tracking in the driver
 
-In order to **turn on QR code tracking** for your immersive (VR) headset, run the following script in the Command Prompt and then replug in your headset.
+In order to **turn on QR code tracking** for your immersive (VR) headset:
+1. Close Mixed Reality Portal 
+2. Unplug the HMD
+3. Run the following script in the Command Prompt 
 
 `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F`
 
-In order to **turn off QR code tracking** for your immersive (VR) headset, run the following script in the Command Prompt and then replug in your headset. This will make any discovered QR codes "Non-locatable."
+4. Replug in your headset.
+
+
+In order to **turn off QR code tracking** for your immersive (VR) headset:
+1. Close Mixed Reality Portal 
+2. Unplug the HMD
+3.Run the following script in the Command Prompt and then replug in your headset. This will make any discovered QR codes "Non-locatable."
 
 `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F`
 
-afterwards to restart the device.
+4. Replug in your headset.
 
-## Preparing your Unity project with the QRTrackingPlugin
 
-Create a folder plugins in your assets folder
-You can find all the required Plugins here: 
+## Sample app in MRTK (Mixed Reality Toolkit)
 
-https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Plugins
+You can find an example on how to use the QR Tracking API on the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview)
+
+All necessary assets to develope QR tracking apps are in the QR tracking folder. There are two scenes first one is a sample to just show details of the qr codes as they are detected.
+
+## Preparing your Unity project with the QRTrackingPlugin withour MRTK 
+You can also use the QR Tracking API in Unity without taking a dependency on MRTK. In order to use the API, you will need to prepare your project with the following instruction: 
+1. Create a new folder in the assets folder of your unity project with the name: "Plugins".
+2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created. 
+
 
 
 ## QRTrackingPlugin (Native API)
@@ -258,19 +273,13 @@ void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 </syntaxhighlight>
 
 
-## Sample app
-You can find an example on how to use the QR Tracking API on the Mixed Reality Toolkit GitHub site.
-https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview
-
-All necessary assets to develope QR tracking apps are in the QR tracking folder. There are two scenes first one is a sample to just show details of the qr codes as they are detected.
-
 ## Troubleshooting and FAQ
 
 **General troubleshooting**
 * Is your PC running the Windows 10 October 2018 Update?
 * Have you set the reg key? Restarted the device afterwards?
-* Is the QR code version a supported version? We don't support the really high density versions like version 40. 
-* Are you close enough to the QR code?
+* Is the QR code version a supported version? Current API supports up to QR Code Version 20. We recommend using version 5 for general usage. 
+* Are you close enough to the QR code? The closer the camera is to the QR code, the higher the version the API can support.  
 
 **How close do I need to be to the QR code to detect it?**
 This obviously depends on the size of the QR code, and also what version it is. 
