@@ -34,8 +34,6 @@ We recommend installing the Unity game engine as the easiest way to get started 
 | [Unity long term support (LTS) version](https://unity3d.com/unity/qa/lts-releases) | The Unity game engine is the easiest way to create mixed reality experiences, with built-in support for Windows Mixed Reality features. | We recommend the Unity LTS stream as the best version with which to start new projects, and migrate forward to, in order to pick up the latest stability fixes. It is also the version the current Mixed Reality Toolkit (MRTK) supports. <br> <br> Some developers may want to use a different version of Unity for specific reasons (like using a preview version of MRTK). For those cases, Unity supports side-by-side installs of different versions. |
 | [Mixed Reality Toolkit (MRTK) for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/README.md) | The MRTK is a collection of scripts and components intended to accelerate development of applications targeting Microsoft HoloLens and Windows Mixed Reality immersive (VR) headsets. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as we all grow. | Visit the MRTK GitHub repo (link in the left column) to learn more. |
 
-
-
 ## Mixed Reality Toolkit
 
 The Mixed Reality Toolkit is a collection of scripts and components intended to accelerate development of applications targeting Microsoft HoloLens and Windows Mixed Reality headsets. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as we all grow.
@@ -45,11 +43,13 @@ The Mixed Reality Toolkit is a collection of scripts and components intended to 
 
 ## Setting up your PC for mixed reality development
 
-The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. Visual Studio also has [system requirements](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs).
+The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. 
 
 ### For HoloLens development
 
-Insert something
+When setting up your development PC for HoloLens development, please make sure it meets the system requirements for both [Unity](https://unity3d.com/unity/system-requirements) and [Visual Studio](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). If you plan to use the HoloLens emulator, you'll want to make sure your PC meets the [HoloLens emulator system requirements](using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
+
+If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, please use the system recommendations and requirements in the section below.
 
 ### For immersive (VR) headset development
 
