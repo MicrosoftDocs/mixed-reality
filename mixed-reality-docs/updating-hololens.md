@@ -31,4 +31,4 @@ You can verify the system version number by opening the **Settings** app and sel
 
 By joining the Windows Insider Program from your HoloLens, you'll get access to preview builds of HoloLens software updates before they're available to the general public.
 
-For information on how to participate in the Windows Insider Program on HoloLens, please refer to the [Insider preview for Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-insider)article in our IT Pro docs.
+For information on how to participate in the Windows Insider Program on HoloLens, please refer to the [Insider preview for Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-insider) article in our IT Pro docs.
