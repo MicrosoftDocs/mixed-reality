@@ -18,7 +18,7 @@ Your HoloLens will automatically download and install system updates whenever it
 
 To perform a manual update:
 * Open the **Settings** app.
-* Navigate to **Update & Security** > **Device Update**.
+* Navigate to **Update & Security** > **Windows Update**.
 * Select the **Check for updates** button.
 
 If an update is available, it will start downloading the new version. Once the download is complete, select the **Restart Now** button to trigger the installation. If your device is below 40% and not plugged in, restarting will not start installing the update.
