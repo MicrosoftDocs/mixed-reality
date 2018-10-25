@@ -25,7 +25,9 @@ You can find older builds of the HoloLens emulator on the [HoloLens emulator arc
 ### HoloLens emulator system requirements
 
 The HoloLens emulator is based on Hyper-V and uses RemoteFx for hardware accelerated graphics. To use the emulator, make sure your PC meets these hardware requirements:
-* 64-bit Windows 10 Pro, Enterprise, or Education (**Note: the Home edition does not support Hyper-V or the HoloLens emulator**)
+* 64-bit Windows 10 Pro, Enterprise, or Education 
+    >[!NOTE]
+    >Windows 10 Home edition does not support Hyper-V or the HoloLens emulator
 * 64-bit CPU
 * CPU with 4 cores (or multiple CPUs with a total of 4 cores)
 * 8 GB of RAM or more
@@ -52,7 +54,8 @@ You may also see an error installing the emulator on a non-PRO/Enterprise/Educat
 ## Deploying apps to the HoloLens emulator
 
 1. Load your app solution in Visual Studio 2015.
-* Note: When using Unity, build your project from Unity and then load the built solution into Visual Studio as usual.
+    >[!NOTE]
+    >When using Unity, build your project from Unity and then load the built solution into Visual Studio as usual.
 2. Ensure the Platform is set to **x86**.
 3. Select the **HoloLens Emulator** as the target device for debugging.
 4. Go to **Debug > Start Debugging** or press **F5** to launch the emulator and deploy your app for debugging.
