@@ -117,16 +117,19 @@ You can also use voice commands to get around your home. For example, point at a
 ## Store, Settings, and system apps
 
 Windows Mixed Reality has a number of built-in apps, such as:
-* **Windows Store** to get apps and games
-* **Windows Feedback** to submit feedback about the system and system apps
+* **Microsoft Store** to get apps and games
+* **Feedback Hub** to submit feedback about the system and system apps
 * **Settings** to configure system settings ([including networking](connecting-to-wi-fi-on-hololens.md) and system updates)
 * **Microsoft Edge** to browse websites
 * **Photos** to view and share photos and videos
 * **Calibration** (HoloLens only) for adjusting the HoloLens experience to the current user
 * **Learn Gestures** (HoloLens) or **Learn Mixed Reality** (immersive headsets) to learn about using your device
-* **Holograms** to decorate your world with mixed reality content
+* **3D Viewer** to decorate your world with mixed reality content
 * **Mixed Reality Portal** (desktop) for setting up and managing your immersive headset and streaming a live preview of your view in the headset for others to see.
+* **Movies and TV** for viewing 360 videos and the latest movies and tv shows
+* **Cortana** for all of your virtual assistant needs
 * **Desktop** (immersive headsets) for viewing your desktop monitor while in an immersive headset
+* **File Explorer** Access files and folders located on your device
 
 ## See also
 * [App views](app-views.md)

@@ -1,9 +1,9 @@
 ---
 title: Using the HoloLens emulator
-description: The HoloLens emulator allows you to test holographic apps on your PC without a physical HoloLens.
+description: The HoloLens emulator allows you to test mixed reality apps on your PC without a physical HoloLens.
 author: JonMLyons
 ms.author: jlyons
-ms.date: 03/21/2018
+ms.date: 10/18/2018
 ms.topic: article
 keywords: HoloLens, emulator
 ---
@@ -12,14 +12,50 @@ keywords: HoloLens, emulator
 
 # Using the HoloLens emulator
 
-The HoloLens emulator allows you to test holographic apps on your PC without a physical HoloLens and comes with the [HoloLens development toolset](install-the-tools.md). The emulator uses a Hyper-V virtual machine. The human and environmental inputs that would usually be read by the sensors on the HoloLens are instead simulated using your keyboard, mouse, or Xbox controller. Apps don't need to be modified to run on the emulator and don't know that they aren't running on a real HoloLens.
-* [Get the HoloLens emulator!](install-the-tools.md)
+The HoloLens emulator allows you to test holographic apps on your PC without a physical HoloLens and comes with the HoloLens development toolset. The emulator uses a Hyper-V virtual machine. The human and environmental inputs that would usually be read by the sensors on the HoloLens are instead simulated using your keyboard, mouse, or Xbox controller. Apps don't need to be modified to run on the emulator and don't know that they aren't running on a real HoloLens.
 
-If you're looking to develop Mixed Reality apps or games for Desktop PCs, check out the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md), which lets you simulate desktop headsets instead.
+If you're looking to develop Windows Mixed Reality immersive (VR) headset apps or games for desktop PCs, check out the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md), which lets you simulate desktop headsets instead.
+
+## Installing the HoloLens emulator
+
+[Click here to download the latest build of the HoloLens emulator](https://go.microsoft.com/fwlink/?linkid=874531)
+
+You can find older builds of the HoloLens emulator on the [HoloLens emulator archive](hololens-emulator-archive.md) page.
+
+### HoloLens emulator system requirements
+
+The HoloLens emulator is based on Hyper-V and uses RemoteFx for hardware accelerated graphics. To use the emulator, make sure your PC meets these hardware requirements:
+* 64-bit Windows 10 Pro, Enterprise, or Education 
+    >[!NOTE]
+    >Windows 10 Home edition does not support Hyper-V or the HoloLens emulator
+* 64-bit CPU
+* CPU with 4 cores (or multiple CPUs with a total of 4 cores)
+* 8 GB of RAM or more
+* In the BIOS, the following features must be [supported and enabled](http://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx):
+   * Hardware-assisted virtualization
+   * Second Level Address Translation (SLAT)
+   * Hardware-based Data Execution Prevention (DEP)
+* GPU requirements (the emulator might work with an unsupported GPU, but will be significantly slower)
+   * DirectX 11.0 or later
+   * WDDM 1.2 driver or later
+
+If your system meets the above requirements, **please ensure that the "Hyper-V" feature has been enabled on your system** through Control Panel -> Programs -> Programs and Features -> Turn Windows Features on or off -> ensure that "Hyper-V" is selected for the Emulator installation to be successful.
+
+### Installation troubleshooting
+
+You may see an error while installing the emulator that you need *"Visual Studio 2015 Update 1 and UWP tools version 1.2"*. There are three possible causes of this error:
+* You do not have a recent enough version of Visual Studio (Visual Studio 2017 or Visual Studio 2015 Update 1 or later). To correct this, install the latest release of Visual Studio.
+* You have a recent enough version of Visual Studio, but you do not have the Universal Windows Platform (UWP) tools installed. This is an optional feature for Visual Studio.
+
+You may also see an error installing the emulator on a non-PRO/Enterprise/Education SKU of Windows or if you do not have Hyper-V feature enabled.
+* Please read the [system requirements](#hololens-emulator-system-requirements) section above for a complete set of requirements.
+* Please also ensure that Hyper-V feature has been enabled on your system.
 
 ## Deploying apps to the HoloLens emulator
+
 1. Load your app solution in Visual Studio 2015.
-* Note: When using Unity, build your project from Unity and then load the built solution into Visual Studio as usual.
+    >[!NOTE]
+    >When using Unity, build your project from Unity and then load the built solution into Visual Studio as usual.
 2. Ensure the Platform is set to **x86**.
 3. Select the **HoloLens Emulator** as the target device for debugging.
 4. Go to **Debug > Start Debugging** or press **F5** to launch the emulator and deploy your app for debugging.
