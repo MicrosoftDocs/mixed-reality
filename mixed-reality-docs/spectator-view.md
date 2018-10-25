@@ -1,5 +1,5 @@
 ---
-title: SpectatorView (Preview and Pro)
+title: Spectator View (Preview and Pro)
 description: Visualize holograms from an external device as a means of demonstrating a mixed reality experience on an external display or recording video of a mixed reality experience.
 author: danielescudero
 ms.author: daescu
@@ -8,16 +8,16 @@ ms.topic: article
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit, demo, record
 ---
 
-# SpectatorView for HoloLens
+# Spectator View for HoloLens
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
-When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can. SpectatorView allows others to see on a 2D screen what a HoloLens user sees in their world.
-SpectatorView (Preview) is fast and affordable approach to recording holograms in HD, while SpectatorView Pro is intended for professional quality recording of holograms.
+When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator View allows others to see on a 2D screen what a HoloLens user sees in their world.
+Spectator View (Preview) is fast and affordable approach to recording holograms in HD, while Spectator View Pro is intended for professional quality recording of holograms.
 
 The following table shows both options and their capabilities. Choose the option that best fits your video recording needs:
 
-|                                      | SpectatorView (Preview) |              SpectatorView Pro              |
+|                                      | Spectator View (Preview) |              Spectator View Pro              |
 |--------------------------------------|:-----------------------:|:-------------------------------------------:|
 | HD quality                         |         Full HD         |        Professional quality filming (as determined by DSLR)      |
 | Easy camera movement                      |            ✔            |                                             |
@@ -32,13 +32,13 @@ The following table shows both options and their capabilities. Choose the option
 | Networking required (UNET scripting) |            ✔            |                      ✔                      |
 | Runtime setup duration               |         Instant         |                     Slow                    |
 
-## SpectatorView (Preview)
+## Spectator View (Preview)
 
 ![Marker](images/SpecViewPhoneDemo.jpg)
 
 ### Use cases
 
-- Filming holograms in HD: Using SpectatorView (Preview), you can record a mixed reality experience using an iPhone. Record in full HD and apply anti-aliasing to holograms and even shadows. It is a cost-effective and quick way to capture video of holograms.
+- Filming holograms in HD: Using Spectator View (Preview), you can record a mixed reality experience using an iPhone. Record in full HD and apply anti-aliasing to holograms and even shadows. It is a cost-effective and quick way to capture video of holograms.
 - Live demos: Stream live mixed reality experiences to an Apple TV directly from your iPhone or iPad, lag-free!
 - Share the experience with guests: Let non-HoloLens users experience holograms directly from their phones or tablets.
 
@@ -53,20 +53,20 @@ The following table shows both options and their capabilities. Choose the option
 - Share sheet so you can save video, email it, or share with other supporting apps.
 
 >[!NOTE] 
->The SpectatorView (Preview) code cannot be used with the SpectatorView Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
+>The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
 
->[!VIDEO https://www.youtube.com/embed/tiXA9CW8iAs]
+>[!VIDEO https://www.youtube.com/watch?v=3fXlPw_FGLg]
 
 ### Licenses
 
 - OpenCV - (3-clause BSD License) https://opencv.org/license.html
 - Unity ARKit - (MIT License) https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/src/3691df77caca2095d632c5e72ff4ffa68ced111f/LICENSES/MIT_LICENSE?at=default&fileviewer=file-view-default
 
-## How to set up SpectatorView (Preview)
+## How to set up Spectator View (Preview)
 
 ### Requirements
 
-- SpectatorView plugin and required OpenCV binaries, which can be found at https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin. Details on how to build the SpectatorView Native Plugin can be found below. From the generated binaries you will need:
+- Spectator View plugin and required OpenCV binaries, which can be found at https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin. Details on how to build the Spectator View Native Plugin can be found below. From the generated binaries you will need:
     - opencv_aruco341.dll
     - opencv_calib3d341.dll
     - opencv_core341.dll
@@ -75,7 +75,7 @@ The following table shows both options and their capabilities. Choose the option
     - opencv_imgproc341.dll
     - zlib1.dll
     - SpectatorViewPlugin.dll
-- SpectatorView uses Unity Networking (UNET) for its network discovery and spatial syncing. This means all interactivity during the application needs to be synced between the devices.
+- Spectator View uses Unity Networking (UNET) for its network discovery and spatial syncing. This means all interactivity during the application needs to be synced between the devices.
 - Unity 2017.2.1p2 or later
 - Hardware
     - A HoloLens
@@ -86,7 +86,7 @@ The following table shows both options and their capabilities. Choose the option
 - Microsoft Visual Studio 2017
 - **Optional: **- UnityARKitPlugin. The required components of this plugin are already included in the MixedRealityToolkit-Unity project. The entire ARKit plugin can be downloaded from the asset store here: https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-arkit-plugin-92515
 
-### Building the SpectatorView native plugin
+### Building the Spectator View native plugin
 
 To generate the required files, follow these steps: https://github.com/Microsoft/MixedRealityToolkit/blob/master/SpectatorViewPlugin/README.md
 
@@ -106,7 +106,7 @@ To generate the required files, follow these steps: https://github.com/Microsoft
 
 ### Networking your app
 
-- SpectatorView uses UNET for its networking and manages all host-client connections for you.
+- Spectator View uses UNET for its networking and manages all host-client connections for you.
 - Any app specific data has to be synced and implemented by you, using e.g. SyncVars, NetworkTransform, NetworkBehavior.
 - For more information and tutorials on Unity Networking please visit https://unity3d.com/learn/tutorials/s/multiplayer-networking
 
@@ -171,7 +171,7 @@ An example scene can be found in [HoloToolkit-Examples\SpectatorView\Scenes\Spec
 
 - Make sure both HoloLens and iPhone are running on the same Wi-Fi network.
 
-**When launching an SpectatorView application on a mobile device, other hololens running other SpectatorView apps turn on their camera**
+**When launching an Spectator View application on a mobile device, other hololens running other Spectator View apps turn on their camera**
 
 - Goto the NewDeviceDiscovery component and change the both the Broadcast Key and Broadcast port to two unique values.
 - Go to SpectatorViewDiscovery and change the Broadcast Key and Broadcast port to another set of unique numbers.
@@ -184,33 +184,33 @@ An example scene can be found in [HoloToolkit-Examples\SpectatorView\Scenes\Spec
 
 - Ensure that you build all versions of the application using the same Unity Editor instance (do not close Unity between builds). This is due to an unknown issue with Unity.
 
-## SpectatorView Pro
+## Spectator View Pro
 
-**SpectatorView Pro setup**
+**Spectator View Pro setup**
 
 ![Spectator view setup](images/spectatorview-300px.png)
 
-Using SpectatorView Pro involves these four components:
+Using Spectator View Pro involves these four components:
 1. An app built specifically to enable spectator view, which is based on [shared experiences in mixed reality](shared-experiences-in-mixed-reality.md).
 2. A user wearing HoloLens using the app.
 3. A spectator view camera rig providing a third-person perspective video.
 4. A desktop PC running the shared experience app and compositing the holograms into a spectator view video.
 
-![SpectatorView Pro setup](images/hololensspectatorview-500px.jpg) 
+![Spectator View Pro setup](images/hololensspectatorview-500px.jpg) 
 
 ### Use cases
 
 >[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]
 
-**SpectatorView Pro photo capture scenario example**
+**Spectator View Pro photo capture scenario example**
 
 
-![SpectatorView Pro photo capture scenario example](images/fall-350px.jpg)
+![Spectator View Pro photo capture scenario example](images/fall-350px.jpg)
 
-**SpectatorView Pro video capture scenario example**
+**Spectator View Pro video capture scenario example**
 
 
-![SpectatorView Pro video capture scenario example](images/spectatorviewvideo.gif) 
+![Spectator View Pro video capture scenario example](images/spectatorviewvideo.gif) 
 
 
 There are three key scenarios that work well with this technology:
@@ -225,10 +225,10 @@ Videos are the best story telling mechanism for sharing a holographic app experi
 
 [Mixed reality capture](mixed-reality-capture.md) (MRC) provides a video composite of what the HoloLens user is seeing from a first person point-of-view. Spectator view produces a video from a third-person perspective, allowing the video observer to see the environment with holograms and the user wearing a HoloLens device. Because you have a choice of camera, spectator views can also produce higher resolution and better quality images than the built-in HoloLens camera used for MRC images. For this reason, spectator view is better suited for app images in the Windows Store, marketing videos, or for projecting a live view for an audience.
 
-**SpectatorView Pro professional camera used in Microsoft keynote presentations**
+**Spectator View Pro professional camera used in Microsoft keynote presentations**
 
 
-![SpectatorView Pro professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)
+![Spectator View Pro professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)
 
 
 Spectator view has been an essential piece of how Microsoft HoloLens has presented experiences to audiences since the very beginning when the product was announced in January 2015. The professional setup used had high demands and an expensive price tag to go with it. For example, the camera uses a genlock signal to ensure precise timing that coordinates with the HoloLens tracking system. In this setup, moving the spectator view camera was possible while keeping holograms stable to match the experience of someone who is seeing the experience directly in HoloLens.
@@ -237,13 +237,13 @@ The open-source version of spectator view trades off the ability to move the cam
 
 To make your app ready for spectator view, you'll need to build a [shared experience](holograms-240.md) app and ensure the app can run on both HoloLens as well as desktop in the Unity editor. The desktop version of the app will have additional components built in that composite the video feed with the rendered holograms.
 
-## How to set up SpectatorView Pro
+## How to set up Spectator View Pro
 
 ### Requirements
 
 #### Hardware shopping list
 
-![SpectatorView Pro Rig](images/spectatorviewrig-350px.jpg)
+![Spectator View Pro Rig](images/spectatorviewrig-350px.jpg)
 
 Below is a recommended list of hardware, but you can experiment with other compatible units too. 
 
@@ -278,7 +278,7 @@ Below is a recommended list of hardware, but you can experiment with other compa
  Supported version can be found in the OSS project.
 7. Visual Studio 2015 with latest updates.
 
-### Building your own SpectatorView Pro camera
+### Building your own Spectator View Pro camera
 
 **NOTICE & DISCLAIMER:** When making modifications to your HoloLens hardware (including, but not limited to, setting up your HoloLens for "spectator view") basic safety precautions should always be observed. Read all instructions and manuals before making any modifications. It is your responsibility to follow all instructions and use tools as directed. You may have purchased or licensed your HoloLens with a limited warranty or no warranty. Please read your applicable [HoloLens License Agreement or Terms of Use and Sale](http://microsoft.com/microsoft-hololens/en-us/order-now) to understand your warranty options.
 
@@ -286,10 +286,10 @@ Below is a recommended list of hardware, but you can experiment with other compa
 
 #### Rig Assembly
 
-**Assembled SpectatorView Pro rig with HoloLens and DSLR camera**
+**Assembled Spectator View Pro rig with HoloLens and DSLR camera**
 
 
-![Assembled SpectatorView Pro rig with HoloLens and DSLR camera.](images/assembly.gif)
+![Assembled Spectator View Pro rig with HoloLens and DSLR camera.](images/assembly.gif)
 
 
 * Use a T7 screwdriver to remove the headband from the HoloLens. Once the screws are loose, poke them out with a paperclip from the other side.
@@ -339,10 +339,10 @@ After setting up your spectator view rig, you must calibrate in order to get the
 * Run the Calibration solution.
 * Move the checkerboard pattern around the view like this:!
 
-**Calibrating the SpectatorView Pro rig**
+**Calibrating the Spectator View Pro rig**
 
 
-[Calibrating the SpectatorView Pro rig](images/calibration.gif)
+[Calibrating the Spectator View Pro rig](images/calibration.gif)
 
 
 * A picture will automatically be taken when a checkerboard is in view. Look for the white light on the HoloLens' visor before advancing to the next pose.
@@ -421,5 +421,5 @@ If starting from a new Unity project, you will need to do some setup first:
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 * [MR Sharing 240](holograms-240.md)
-* [SpectatorView (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
-* [SpectatorView Pro code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)
+* [Spectator View (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
+* [Spectator View Pro code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)
