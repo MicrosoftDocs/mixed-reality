@@ -27,7 +27,7 @@ At a high-level, these are the steps involved in porting existing content:
 
 ### Common step 1: Make sure you have the right development hardware
 
-The [install the tools](install-the-tools.md#immersive-headset-development) page lists the recommended development hardware.
+The [install the tools](install-the-tools.md#for-immersive-vr-headset-development) page lists the recommended development hardware.
 
 ### Common step 2: Upgrade to the latest flight of Windows 10
 

@@ -41,7 +41,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 ### Project files
 
 * Download the [files](https://github.com/Microsoft/MixedReality250/archive/master.zip) required by the project. Extract the files to an easy to remember location.
-* This project requires the [most recent version of Unity with Mixed Reality support](install-the-tools.md#immersive-headset-development).
+* This project requires the [most recent version of Unity with Mixed Reality support](install-the-tools.md#for-immersive-vr-headset-development).
 
 >[!NOTE]
 >If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/MixedReality250).
