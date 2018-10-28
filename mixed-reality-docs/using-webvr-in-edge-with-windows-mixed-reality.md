@@ -25,9 +25,9 @@ Instructions for accessing WebVR content in your immersive headset can be found 
 ## See Also
 * [WebVR information](http://webvr.info)
 * [WebVR specification](https://w3c.github.io/webvr/)
-* [WebVR API](https://msdn.microsoft.com/en-us/library/mt806281(v=vs.85).aspx)
-* [WebGL API](https://msdn.microsoft.com/en-us/library/bg182648(v=vs.85).aspx)
-* [Gamepad API](https://msdn.microsoft.com/en-us/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
+* [WebVR API](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx)
+* [WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
+* [Gamepad API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 * [Handling Lost Context in WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
 * [Pointerlock](http://www.w3.org/TR/pointerlock/)
 * [glTF](https://www.khronos.org/gltf)

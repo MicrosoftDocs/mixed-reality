@@ -28,11 +28,11 @@ There are 3 steps to creating a 3D app launcher:
 
 ## Configuring the 3D launcher
 
-Win32 applications will appear in the "All apps" list on the Windows Mixed Reality Start menu if you create a 3D app launcher for them. To do that, create a [Visual Elements Manifest](https://msdn.microsoft.com/en-us/library/windows/apps/dn393983.aspx) XML file referencing the 3D App Launcher by following these steps:
+Win32 applications will appear in the "All apps" list on the Windows Mixed Reality Start menu if you create a 3D app launcher for them. To do that, create a [Visual Elements Manifest](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) XML file referencing the 3D App Launcher by following these steps:
 
 1. Create a **3D App Launcher asset GLB file** (See [Modeling and exporting](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)).
-2. Create a **[Visual Elements Manifest](https://msdn.microsoft.com/en-us/library/windows/apps/dn393983.aspx)** for your application.
-    1. You can start with the [sample below](#sample-visual-elements-manifest).  See the full [Visual Elements Manifest](https://msdn.microsoft.com/en-us/library/windows/apps/dn393983.aspx) documentation for more details.
+2. Create a **[Visual Elements Manifest](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx)** for your application.
+    1. You can start with the [sample below](#sample-visual-elements-manifest).  See the full [Visual Elements Manifest](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) documentation for more details.
     2. Update **Square150x150Logo** and **Square70x70Logo** with a PNG/JPG/GIF for your app.
         * These will be used for the app’s 2D logo in the Windows Mixed Reality All Apps list and for the Start Menu on desktop.
         * The file path is relative to the folder containing the Visual Elements Manifest.

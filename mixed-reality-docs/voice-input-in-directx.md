@@ -58,7 +58,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-The list of commands is loaded into the list of constraints for the speech recognizer. This is done by using a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.
+The list of commands is loaded into the list of constraints for the speech recognizer. This is done by using a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -77,7 +77,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-Subscribe to the [ResultGenerated](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) event on the speech recognizer's [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx). This event notifies your app when one of your commands has been recognized.
+Subscribe to the [ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) event on the speech recognizer's [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx). This event notifies your app when one of your commands has been recognized.
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -86,7 +86,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Your **OnResultGenerated** event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance. If the confidence is greater than the threshold you have defined, your app should note that the event happened. Save the event data so that you can make use of it in a subsequent update loop.
+Your **OnResultGenerated** event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance. If the confidence is greater than the threshold you have defined, your app should note that the event happened. Save the event data so that you can make use of it in a subsequent update loop.
 
 From *HolographicVoiceInputSampleMain.cpp*:
 
@@ -246,7 +246,7 @@ catch (Exception^ exception)
    });
 ```
 
-**NOTE:** There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) available for optimizing speech recognition.
+**NOTE:** There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) available for optimizing speech recognition.
 * If you want to optimize for dictation, use the Dictation scenario:
 
 ```
@@ -421,6 +421,6 @@ catch (Exception^ exception)
 ```
 
 ## See also
-* [Speech app design](https://msdn.microsoft.com/en-us/library/dn596121.aspx)
+* [Speech app design](https://msdn.microsoft.com/library/dn596121.aspx)
 * [Spatial sound in DirectX](spatial-sound-in-directx.md)
 * [SpeechRecognitionAndSynthesis sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

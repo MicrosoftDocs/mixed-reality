@@ -375,7 +375,7 @@ Now you can move on to setting up your device **running Ubuntu OS**. Follow the 
     >1. Restart VS Code, and/ or your computer.
     >2. It might be necessary to switch the **VS Code Terminal** to the one you have been using to install Python, i.e. **Powershell** (especially in case the Python environment was already installed on your machine). With the Terminal open, you will find the drop down menu on the right side of the Terminal.
      ![Create your container](images/AzureLabs-Lab313-24b.png) 
-    >3. Make sure the **Python** installation path is added as **Environment Variable** on your machine. Cookiecutter should be part of the same location path. Please follow this [link for more information on Environment Variables](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682653(v=vs.85).aspx), 
+    >3. Make sure the **Python** installation path is added as **Environment Variable** on your machine. Cookiecutter should be part of the same location path. Please follow this [link for more information on Environment Variables](https://msdn.microsoft.com/library/windows/desktop/ms682653(v=vs.85).aspx), 
 
 7. Once **Cookiecutter** has finished installing, you should restart your machine, so that **Cookiecutter** is recognized as a command, within your System's environment.
 

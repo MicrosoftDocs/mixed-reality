@@ -86,6 +86,6 @@ Commercial features like Microsoft Store for Business, kiosk mode, and enterpris
 ## See also
 * [IT Pro Guide for HoloLens](https://technet.microsoft.com/en-us/itpro/hololens/index)
 * [Kiosk mode](using-the-windows-device-portal.md#kiosk-mode)
-* [Supported CSPs in Windows Holographic for enterprise](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920025(v=vs.85).aspx#HoloLens)
+* [Supported CSPs in Windows Holographic for enterprise](https://msdn.microsoft.com/library/windows/hardware/dn920025(v=vs.85).aspx#HoloLens)
 * [Microsoft Store For Business and line of business applications](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
 * [Working with line-of-business apps](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps)

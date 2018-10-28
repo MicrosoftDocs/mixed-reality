@@ -20,7 +20,7 @@ If you don't already have a Windows Dev Center account, you can [sign up today](
 
 ### Prepare image assets included in the appx
 
-There are several image assets required by the appx building tools to build your application into an appx package to submit to the Store. You can learn more about [guidelines for tile and icon assets](https://msdn.microsoft.com/en-us/library/windows/apps/mt412102.aspx) on MSDN.
+There are several image assets required by the appx building tools to build your application into an appx package to submit to the Store. You can learn more about [guidelines for tile and icon assets](https://msdn.microsoft.com/library/windows/apps/mt412102.aspx) on MSDN.
 
 | Required Asset | Recommended Scale | Image Format | Where is this displayed? | 
 |----------|----------|----------|------------------|
@@ -55,7 +55,7 @@ Set minimum and target platform versions in Visual Studio
 
 ### Specifying target device families
 
-Windows Mixed Reality applications (for both [HoloLens](hololens-hardware-details.md) and [immersive headsets](immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a [target device family](https://msdn.microsoft.com/en-us/library/windows/apps/dn986903.aspx) of "Windows.Universal" is capable of running on HoloLens or Windows 10 PCs with immersive headsets. That being said, if you do not specify a target device family in your app manifest you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, and then [double-check that the correct device families are selected when you upload your app package in Dev Center to submit to the Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality applications (for both [HoloLens](hololens-hardware-details.md) and [immersive headsets](immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a [target device family](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) of "Windows.Universal" is capable of running on HoloLens or Windows 10 PCs with immersive headsets. That being said, if you do not specify a target device family in your app manifest you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, and then [double-check that the correct device families are selected when you upload your app package in Dev Center to submit to the Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 To set this field in Visual Studio, right click on the Package.appxmanifest and select "View Code" then find the TargetDeviceFamily Name field. By default, it might look like the following:
 
@@ -105,11 +105,11 @@ If you override the default package.appxmanifest file by creating a custom .xml 
 
 ### Creating an upload package
 
-Follow guidelines at [Packaging Universal Windows apps for Windows 10](https://msdn.microsoft.com/en-us/library/hh454036.aspx#Anchor_2).
+Follow guidelines at [Packaging Universal Windows apps for Windows 10](https://msdn.microsoft.com/library/hh454036.aspx#Anchor_2).
 
 The final step of creating an upload package is validating the package using the [Windows App Certification Kit](#windows-app-certification-kit).
 
-If you'll be adding a package specifically for HoloLens to an existing product that is available on other Windows 10 device families, you will also want to learn about [how version numbers may impact which packages are delivered to specific customers](https://msdn.microsoft.com/en-us/library/windows/apps/mt188602.aspx), and [how packages are distributed to different operating systems](https://msdn.microsoft.com/en-us/library/windows/apps/mt188601.aspx).
+If you'll be adding a package specifically for HoloLens to an existing product that is available on other Windows 10 device families, you will also want to learn about [how version numbers may impact which packages are delivered to specific customers](https://msdn.microsoft.com/library/windows/apps/mt188602.aspx), and [how packages are distributed to different operating systems](https://msdn.microsoft.com/library/windows/apps/mt188601.aspx).
 
 The general guidance is that the highest version number package that is applicable to a device will be the one distributed by the Store.
 
@@ -126,7 +126,7 @@ If there is a Windows.Universal package and a Windows.Holographic package and th
 
 ### Windows App Certification Kit
 
-When you create app packages to submit to the Windows Dev Center through Visual Studio, the Create App Packages wizard will prompt you to run the Windows App Certification Kit against the packages that get created. In order to have a smooth submission process to the Store, it's best to verify that the [Windows App Certification Kit tests](https://msdn.microsoft.com/en-us/library/windows/apps/jj657973.aspx) pass against your app on your local machine before submitting them to the Store. Running the Windows App Certification Kit on a remote HoloLens is not currently supported.
+When you create app packages to submit to the Windows Dev Center through Visual Studio, the Create App Packages wizard will prompt you to run the Windows App Certification Kit against the packages that get created. In order to have a smooth submission process to the Store, it's best to verify that the [Windows App Certification Kit tests](https://msdn.microsoft.com/library/windows/apps/jj657973.aspx) pass against your app on your local machine before submitting them to the Store. Running the Windows App Certification Kit on a remote HoloLens is not currently supported.
 
 ### Run on all targeted device families
 

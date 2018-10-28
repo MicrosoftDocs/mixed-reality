@@ -31,10 +31,10 @@ If you already have a 2D Windows app in the Store, you must first ensure it is t
 
 |  Starting Point  |  AppX Manifest Platform Target  |  How to make this Universal? | 
 |----------|----------|----------|
-|  Windows Phone (Silverlight)  |  Silverlight App Manifest |  [Migrate to WinRT](https://msdn.microsoft.com/en-us/library/windows/apps/dn642486(v=vs.105).aspx) | 
-|  Windows Phone 8.1 Universal  |  8.1 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/en-us/library/mt148501.aspx) | 
-|  Windows Store 8  |  8 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/en-us/library/mt148501.aspx) | 
-|  Windows Store 8.1 Universal  |  8.1 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/en-us/library/mt148501.aspx) | 
+|  Windows Phone (Silverlight)  |  Silverlight App Manifest |  [Migrate to WinRT](https://msdn.microsoft.com/library/windows/apps/dn642486(v=vs.105).aspx) | 
+|  Windows Phone 8.1 Universal  |  8.1 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/library/mt148501.aspx) | 
+|  Windows Store 8  |  8 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/library/mt148501.aspx) | 
+|  Windows Store 8.1 Universal  |  8.1 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/library/mt148501.aspx) | 
 
 If you have a 2D Unity app today built as a Win32 app (the "PC, Mac & Linux Standalone" build target), you can target mixed reality by switching Unity to the "Universal Windows Platform" build target instead.
 
@@ -128,7 +128,7 @@ This resolution has several advantages:
 
 **Do:**
 * Follow the [Windows 10 Human Interface Guidelines (HIG)](https://dev.windows.com/en-us/design) for styles, font sizes and button sizes. HoloLens will do the work to ensure your app will have compatible app patterns, readable text sizes, and appropriate hit target sizing.
-* Ensure your UI follows best practices for [responsive design](https://msdn.microsoft.com/en-us/library/windows/apps/dn958435.aspx) to look best at HoloLen's unique resolution and DPI.
+* Ensure your UI follows best practices for [responsive design](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) to look best at HoloLen's unique resolution and DPI.
 * Use the "light" color theme recommendations from Windows.
 
 **Don't:**
@@ -144,7 +144,7 @@ The [app model](app-model.md) for mixed reality is designed to use the Mixed Rea
 
 **Title:** displays the *displayname* of the Tile associated with the app instance
 
-**Back Button:** raises the *[BackRequested](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* event when pressed. Back Button visibility is controlled by *[SystemNavigationManager.AppViewBackButtonVisibility](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
+**Back Button:** raises the *[BackRequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* event when pressed. Back Button visibility is controlled by *[SystemNavigationManager.AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
 
 ![App bar UI in 2D app view](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *App bar UI in 2D app view*
@@ -159,7 +159,7 @@ HoloLens uses advanced depth sensors to see the world and see users. This enable
 
 With Desktop headsets, users can use motion controllers to point at apps and take action. They can also use a gamepad, targeting objects with their gaze.
 
-Windows takes care of all of this complexity for UWP apps, translating your [gaze](gaze.md), gestures, voice and motion controller input to [pointer events](https://msdn.microsoft.com/en-us/library/windows/apps/mt404610#pointer_events) that abstract away the input mechanism. For example, a user may have done an air-tap with their hand or pulled the Select trigger on a motion controller, but 2D applications don't need to know where the input came from - they just see a 2D touch press, as if on a touchscreen.
+Windows takes care of all of this complexity for UWP apps, translating your [gaze](gaze.md), gestures, voice and motion controller input to [pointer events](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) that abstract away the input mechanism. For example, a user may have done an air-tap with their hand or pulled the Select trigger on a motion controller, but 2D applications don't need to know where the input came from - they just see a 2D touch press, as if on a touchscreen.
 
 Here are the high level concepts/scenarios you should understand for input when bringing your UWP app to HoloLens:
 * [Gaze](gaze.md) turns into hover events, which can unexpectedly trigger menus, flyouts or other user interface elements to pop up just by gazing around your app.
