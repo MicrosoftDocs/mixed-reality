@@ -106,7 +106,7 @@ Please contact your local Microsoft account manager to purchase the Microsoft Ho
 </tr><tr>
 <td>Automatic system updates as they arrive</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/en-us/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Long term servicing branch</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
