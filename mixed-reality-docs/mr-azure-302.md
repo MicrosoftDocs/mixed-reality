@@ -15,7 +15,7 @@ Recognition results will be displayed as descriptive tags. You can use this serv
 
 ![lab outcome](images/AzureLabs-Lab2-000.png)
 
-The Microsoft Computer Vision is a set of APIs designed to provide developers with image processing and analysis (with return information), using advanced algorithms, all from the cloud. Developers upload an image or image URL, and the Microsoft Computer Vision API algorithms analyze the visual content, based upon inputs chosen the user, which then can return information, including, identifying the type and quality of an image, detect human faces (returning their coordinates), and tagging, or categorizing images. For more information, visit the [Azure Computer Vision API page](https://azure.microsoft.com/en-gb/services/cognitive-services/computer-vision/).
+The Microsoft Computer Vision is a set of APIs designed to provide developers with image processing and analysis (with return information), using advanced algorithms, all from the cloud. Developers upload an image or image URL, and the Microsoft Computer Vision API algorithms analyze the visual content, based upon inputs chosen the user, which then can return information, including, identifying the type and quality of an image, detect human faces (returning their coordinates), and tagging, or categorizing images. For more information, visit the [Azure Computer Vision API page](https://azure.microsoft.com/services/cognitive-services/computer-vision/).
 
 Having completed this course, you will have a mixed reality HoloLens application, which will be able to do the following:
 

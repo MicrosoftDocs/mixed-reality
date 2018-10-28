@@ -69,7 +69,7 @@ For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tunin
 
 To use the *Custom Vision Service* in Azure, you will need to configure an instance of the Service to be made available to your application.
 
-1.  First, [navigate to the *Custom Vision Service* main page](https://azure.microsoft.com/en-gb/services/cognitive-services/custom-vision-service/).
+1.  First, [navigate to the *Custom Vision Service* main page](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/).
 
 2.  Click on the **Get Started** button.
 
