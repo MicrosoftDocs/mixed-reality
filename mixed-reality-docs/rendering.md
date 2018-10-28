@@ -34,7 +34,7 @@ Note that to accurately predict when a new frame will reach the displays, the sy
 
 When rendering a frame, the system will specify the back-buffer viewport in which your application should draw. This viewport will often be smaller than the full size of the frame buffer. Regardless of the viewport size, once the frame has been rendered by the application, the system will upscale the image to fill the entirety of the displays.
 
-For applications that find themselves unable to render at the required refresh rate, [reducing the viewport size](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicCamera#Windows_Graphics_Holographic_HolographicCamera_ViewportScaleFactor) can be used as a mechanism to reduce rendering cost at the cost of increased pixel aliasing.
+For applications that find themselves unable to render at the required refresh rate, [reducing the viewport size](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicCamera#Windows_Graphics_Holographic_HolographicCamera_ViewportScaleFactor) can be used as a mechanism to reduce rendering cost at the cost of increased pixel aliasing.
 
 The rendering frustum, resolution, and framerate in which your app is asked to render may also change from frame to frame and may differ across the left and right eye. For example, when [mixed reality capture](mixed-reality-capture.md) (MRC) is active, one eye may be rendered with a larger FOV or resolution.
 

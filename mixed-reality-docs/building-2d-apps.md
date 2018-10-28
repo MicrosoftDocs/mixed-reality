@@ -22,7 +22,7 @@ The first step to bringing a 2D app to mixed reality headsets is to get your app
 
 To build a new 2D app for mixed reality, you simply build a standard 2D Universal Windows Platform (UWP) app. No other app changes are required for that app to then run as a slate in mixed reality.
 
-To get started building a 2D UWP app, check out the [Create your first app](https://docs.microsoft.com/en-us/windows/uwp/get-started/your-first-app) article.
+To get started building a 2D UWP app, check out the [Create your first app](https://docs.microsoft.com/windows/uwp/get-started/your-first-app) article.
 
 ### Bringing an existing 2D Store app to UWP
 

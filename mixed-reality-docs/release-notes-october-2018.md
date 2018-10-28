@@ -19,10 +19,10 @@ The **[Windows 10 October 2018 Update](https://blogs.windows.com/windowsexperien
 
 To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 October 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
 
-The public release of Windows 10 October 2018 Update (RS5) will be coming to HoloLens via Windows Update in the coming weeks, but you can try its new features now by running the [RS5 Insider Preview build](https://docs.microsoft.com/en-us/hololens/hololens-insider).
+The public release of Windows 10 October 2018 Update (RS5) will be coming to HoloLens via Windows Update in the coming weeks, but you can try its new features now by running the [RS5 Insider Preview build](https://docs.microsoft.com/hololens/hololens-insider).
 
 **Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.17763.1**)<br>
-**Latest release for HoloLens:** Coming soon ([Insider preview](https://docs.microsoft.com/en-us/hololens/hololens-insider) available now)<br>
+**Latest release for HoloLens:** Coming soon ([Insider preview](https://docs.microsoft.com/hololens/hololens-insider) available now)<br>
 <br>
 
 ## New features for Windows Mixed Reality immersive headsets
@@ -36,7 +36,7 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     ![Mixed Reality Flashlight](images/mr-flashlight.png)
 
 * **New apps and ways to launch content in the mixed reality home**
-    * If you're using [Windows Mixed Reality for SteamVR](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), your SteamVR titles now show up in the Start menu and app launchers for each can be placed in the mixed reality home.
+    * If you're using [Windows Mixed Reality for SteamVR](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), your SteamVR titles now show up in the Start menu and app launchers for each can be placed in the mixed reality home.
     
         ![SteamVR app launchers](images/steamvr-launchers.png)
         
@@ -54,13 +54,13 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
 ### For developers
 
 * **Hardware DRM support for immersive apps** - Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
-* **[Integrate mixed reality capture UI into immersive apps](mixed-reality-capture-for-developers.md#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
+* **[Integrate mixed reality capture UI into immersive apps](mixed-reality-capture-for-developers.md#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
 
 ## New features for HoloLens
 
 The Windows 10 October 2018 Update will be publicly available for HoloLens soon. Here are some of the new features you'll experience when it arrives. 
 
-If you'd like to use these features now, you can install the [RS5 Insider Preview build](https://docs.microsoft.com/en-us/hololens/hololens-insider) for HoloLens.
+If you'd like to use these features now, you can install the [RS5 Insider Preview build](https://docs.microsoft.com/hololens/hololens-insider) for HoloLens.
 
 ### For everyone
 
@@ -76,7 +76,7 @@ If you'd like to use these features now, you can install the [RS5 Insider Previe
 
 ### For developers
 
-* **[Integrate mixed reality capture UI into immersive apps](mixed-reality-capture-for-developers.md#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
+* **[Integrate mixed reality capture UI into immersive apps](mixed-reality-capture-for-developers.md#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
 
 ### For commercial customers
 
@@ -107,7 +107,7 @@ Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](give-us-feed
 * [Release notes - March 2016](release-notes-march-2016.md)
 
 ## See also
-* [Immersive headset support (external link)](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [Immersive headset support (external link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens support (external link)](https://support.microsoft.com/en-us/products/hololens)
 * [Install the tools](install-the-tools.md)
 * [Give us feedback](give-us-feedback.md)

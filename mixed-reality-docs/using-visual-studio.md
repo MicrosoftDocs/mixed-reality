@@ -116,4 +116,4 @@ You can use Visual Studio to debug a Universal Windows app that's installed with
 * [Install the tools](install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Deploying and debugging Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt613243.aspx)
-* [Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development)
+* [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)

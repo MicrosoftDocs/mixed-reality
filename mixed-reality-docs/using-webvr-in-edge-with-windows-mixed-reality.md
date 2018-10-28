@@ -20,7 +20,7 @@ The WebVR API provides HMD pose data to the page which can be used to render a s
 
 ## Viewing WebVR content in Windows Mixed Reality immersive headsets
 
-Instructions for accessing WebVR content in your immersive headset can be found in the [Enthusiast's Guide](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/webvr).
+Instructions for accessing WebVR content in your immersive headset can be found in the [Enthusiast's Guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr).
 
 ## See Also
 * [WebVR information](http://webvr.info)
@@ -31,5 +31,5 @@ Instructions for accessing WebVR content in your immersive headset can be found 
 * [Handling Lost Context in WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
 * [Pointerlock](http://www.w3.org/TR/pointerlock/)
 * [glTF](https://www.khronos.org/gltf)
-* [Using Babylon.js to enable WebVR](https://docs.microsoft.com/en-us/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game)
+* [Using Babylon.js to enable WebVR](https://docs.microsoft.com/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game)
 

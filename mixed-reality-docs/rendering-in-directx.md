@@ -728,7 +728,7 @@ Windows 10 Creators Update PCs may be configured with **both** discrete and inte
 
 By default, most sample code demonstrates creating a DirectX device using the default hardware adapter, which on a hybrid system may not be the same as the one used for the headset.
 
-To work around any issues this may cause, use the [Holographic​Adapter​Id](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicadapterid) from either [HolographicSpace](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicSpace)->PrimaryAdapterId property or [HolographicDisplay](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicdisplay)->AdapterId. This adapterId can then be used to enumerate the DXGIAdapters
+To work around any issues this may cause, use the [Holographic​Adapter​Id](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicadapterid) from either [HolographicSpace](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicSpace)->PrimaryAdapterId property or [HolographicDisplay](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay)->AdapterId. This adapterId can then be used to enumerate the DXGIAdapters
 
 
 Code for **GetAdapterFromId Helper Function**

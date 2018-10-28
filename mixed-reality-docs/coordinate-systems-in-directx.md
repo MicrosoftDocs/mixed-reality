@@ -25,7 +25,7 @@ Methods that return spatial information, represented as points, rays, or volumes
 A SpatialCoordinateSystem has a dynamic relationship with other coordinate systems, including those that represent the device's position. At any point in time, the device may be able to locate some coordinate systems and not others. For most coordinate systems, your app must be ready to handle periods of time during which they cannot be located.
 
 Your application should not create SpatialCoordinateSystems directly - rather they should be consumed via the Perception APIs. There are three primary sources of coordinate systems in the Perception APIs, each of which map to a concept described on the [Coordinate systems](coordinate-systems.md) page:
-* To get a stationary frame of reference, create a [SpatialStationaryFrameOfReference](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) or obtain one from the current [SpatialStage](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialstageframeofreference).
+* To get a stationary frame of reference, create a [SpatialStationaryFrameOfReference](https://docs.microsoft.com/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) or obtain one from the current [SpatialStage](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference).
 * To get a spatial anchor, create a [SpatialAnchor](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchor.aspx).
 * To get an attached frame of reference, create a [SpatialLocatorAttachedFrameOfReference](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatiallocatorattachedframeofreference.aspx).
 
@@ -703,7 +703,7 @@ From **StationaryQuadRenderer::Update**:
 
 On HoloLens, we should also set a manual focus point for [image stabilization](hologram-stability.md#stabilization-plane). For best results with tag-along holograms, we need to use the velocity of the hologram. This is computed as follows.
 
-Note that on immersive desktop headsets, you should instead use the [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFrame) API to enable per-pixel depth-based reprojection, as discussed in [Rendering in DirectX](rendering-in-directx.md#set-the-focus-point-for-image-stabilization). That will result in the best visual quality.
+Note that on immersive desktop headsets, you should instead use the [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicFrame) API to enable per-pixel depth-based reprojection, as discussed in [Rendering in DirectX](rendering-in-directx.md#set-the-focus-point-for-image-stabilization). That will result in the best visual quality.
 
 From **StationaryQuadRenderer::Update**:
 

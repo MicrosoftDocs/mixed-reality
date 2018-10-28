@@ -547,7 +547,7 @@ Step-by-step tutorials, with more detailed customization examples, are available
 - [MR Input 211: Gesture](holograms-211.md)
 - [MR Input 213: Motion controllers](mixed-reality-213.md)
 
-[![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/en-us/windows/mixed-reality/mixed-reality-213)<br>
+[![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
 *MR Input 213 - Motion controller*
 
 ## See also

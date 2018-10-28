@@ -58,7 +58,7 @@ We recommend the following hardware and software for this course:
 ## Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/en-us/hololens/hololens-setup). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens App (sometimes it can help to perform those tasks for each user). 
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
@@ -95,7 +95,7 @@ To use the *Face API* service in Azure, you will need to configure an instance o
 
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     5. The UWP app, **Person Maker**, which you use later, requires the use of 'West US' for location.
 
@@ -136,7 +136,7 @@ Make sure to download the prebuilt UWP Application called [Person Maker](https:/
 > [IMPORTANT]
 > **Person Maker** uses some basic throttling, to help ensure that you do not exceed the number of service calls per minute for the **free subscription tier**. The green text at the top will change to red and update as 'ACTIVE' when throttling is happening; if this is the case, simply wait for the application (it will wait until it can next continue accessing the face service, updating as 'IN-ACTIVE' when you can use it again).
 
-This application uses the *Microsoft.ProjectOxford.Face* libraries, which will allow you to make full use of the Face API. This library is available for free as a NuGet Package. For more information about this, and similar, APIs [make sure to visit the API reference article](https://docs.microsoft.com/en-us/azure/cognitive-services/face/apireference).
+This application uses the *Microsoft.ProjectOxford.Face* libraries, which will allow you to make full use of the Face API. This library is available for free as a NuGet Package. For more information about this, and similar, APIs [make sure to visit the API reference article](https://docs.microsoft.com/azure/cognitive-services/face/apireference).
 
 > [!NOTE] 
 > These are just the steps required, instructions for how to do these things is further down the document. The **Person Maker** app will allow you to:
