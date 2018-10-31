@@ -1,7 +1,7 @@
 ---
-title: App views
-description: The two kinds of views in Windows Mixed Reality apps are immersive views and 2D views.
-author: thetuvix
+Title: App views
+Description: The two kinds of views in Windows Mixed Reality apps are immersive views and 2D views.
+Author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
@@ -39,7 +39,6 @@ One key use of 2D views is to show a text entry form that can make use of the sy
 Note that on a desktop PC, an app can have 2D views on both the desktop monitor and in an attached headset. For example, you can browse Edge on your desktop monitor using its main 2D view to find a 360-degree video. When you play that video, Edge will launch a secondary immersive view inside the headset to display the immersive video content.
 
 ## See also
-
 * [App model](app-model.md)
 * [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
 * [Getting a HolographicSpace](getting-a-holographicspace.md)
