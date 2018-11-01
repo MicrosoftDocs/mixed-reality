@@ -48,10 +48,10 @@ Be prepared to Train LUIS several times, which is covered in [Chapter 12](#chapt
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
-- [Unity 2017.4](install-the-tools.md#installation-checklist)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md)
+- [The latest Windows 10 SDK](install-the-tools.md)
+- [Unity 2017.4](install-the-tools.md)
+- [Visual Studio 2017](install-the-tools.md)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
 - Internet access for Azure setup and LUIS retrieval
