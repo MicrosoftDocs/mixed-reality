@@ -20,7 +20,7 @@ Existing Vuforia apps that were built for phones and tablets can easily be confi
 
 ## Get the tools
 
-[Install the recommended versions](install-the-tools.md) of Visual Studio and Unity and then configure Unity to use Visual Studio and the preferred IDE and compiler. You will also need to install [Visual Studios tools for Unity](https://msdn.microsoft.com/en-us/library/dn940025.aspx).
+[Install the recommended versions](install-the-tools.md) of Visual Studio and Unity and then configure Unity to use Visual Studio and the preferred IDE and compiler. You will also need to install [Visual Studios tools for Unity](https://msdn.microsoft.com/library/dn940025.aspx).
 
 When installing Unity, be sure to install the Windows Store platform, and also the .NET Scripting Backend. Windows Store components can also be installed afterwards from the Build Settings dialog when the Windows Store platform is selected.
 

@@ -61,4 +61,4 @@ Light and color can help make your holograms appear more naturally in a user's e
 * [Color Separation](hologram-stability.md#color-separation)
 * [Holograms](hologram.md)
 * [Microsoft Design Language - color](https://www.microsoft.com/en-us/design/color)
-* [Universal Windows Platform - color](https://docs.microsoft.com/en-us/windows/uwp/style/color)
+* [Universal Windows Platform - color](https://docs.microsoft.com/windows/uwp/style/color)

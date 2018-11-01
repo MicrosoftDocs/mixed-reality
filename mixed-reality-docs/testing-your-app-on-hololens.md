@@ -102,7 +102,7 @@ Some app developers might want to automate testing of their apps. Beyond simple 
 
 ## Windows App Certification Kit
 
-To give your app the best chance of being [published on the Windows Store](submitting-an-app-to-the-microsoft-store.md), validate and test it locally before you submit it for certification. If your app targets the Windows.Holographic device family, the [Windows App Certification Kit](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt186449.aspx) will only run local static analysis tests on your PC. No tests will be run on your HoloLens.
+To give your app the best chance of being [published on the Windows Store](submitting-an-app-to-the-microsoft-store.md), validate and test it locally before you submit it for certification. If your app targets the Windows.Holographic device family, the [Windows App Certification Kit](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) will only run local static analysis tests on your PC. No tests will be run on your HoloLens.
 
 ## See also
 * [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)

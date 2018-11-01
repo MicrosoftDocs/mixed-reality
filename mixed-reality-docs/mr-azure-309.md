@@ -89,7 +89,7 @@ To use *Application Insights*, you will need to create and configure an *Applica
 
     4.  Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     5.  Select a **Location**.
 

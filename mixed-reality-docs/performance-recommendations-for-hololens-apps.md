@@ -81,9 +81,9 @@ This section provides broad recommendations for application, especially visual c
 * To easily distinguish a vertex bottleneck from a pixel bottleneck, use the ViewportScaleFactor to reduce your output resolution. If you see a performance gain, you have a pixel bottleneck, if you do not see a gain, you likely have a vertex shader bottleneck.
 * To distinguish a vertex shader bottleneck from a CPU bottleneck, create a minimal vertex shader that still performs all the positional calculations but simply emits a white color. If you see a performance gain, you have a vertex shader bottle neck, if performance remains the same, your problem is likely on the CPU and probably related to having too many DirectX calls.
 * Shader switching between holograms can be expensive, consider sorting your draw calls such that you submit all objects with the same shader in sequence.
-* Use full floats for vertex position calculations but use [min16float](https://msdn.microsoft.com/en-us/library/windows/desktop/hh968108(v=vs.85).aspx) for all other calculations. Check the shader assembly to ensure that it is using 16-bit. It is easy to make simple mistakes that force 32-bit mode. HLSL compiler will give you a warning if it up-converts to 32-bit.
-* Leverage "low level" HLSL intrinsic instructions to maximize ALU throughput. [HLSL intrinsic reference](https://msdn.microsoft.com/en-us/library/windows/desktop/ff471376(v=vs.85).aspx).
-* Combine separate MULTIPLY and ADD instructions into a single [MAD](https://msdn.microsoft.com/en-us/library/windows/desktop/ff471418(v=vs.85).aspx) instruction when possible.
+* Use full floats for vertex position calculations but use [min16float](https://msdn.microsoft.com/library/windows/desktop/hh968108(v=vs.85).aspx) for all other calculations. Check the shader assembly to ensure that it is using 16-bit. It is easy to make simple mistakes that force 32-bit mode. HLSL compiler will give you a warning if it up-converts to 32-bit.
+* Leverage "low level" HLSL intrinsic instructions to maximize ALU throughput. [HLSL intrinsic reference](https://msdn.microsoft.com/library/windows/desktop/ff471376(v=vs.85).aspx).
+* Combine separate MULTIPLY and ADD instructions into a single [MAD](https://msdn.microsoft.com/library/windows/desktop/ff471418(v=vs.85).aspx) instruction when possible.
 
 **Vertex Shader**
 * Only perform vertex specific calculations in the vertex shader. Move other computations into the constant buffer or additional vertex attributes.

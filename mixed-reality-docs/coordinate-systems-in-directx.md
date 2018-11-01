@@ -18,23 +18,23 @@ Today's seated VR or single-room VR devices establish one primary coordinate sys
 
 ## Spatial coordinate systems in Windows
 
-The core type used to reason about real-world coordinate systems in Windows is the [SpatialCoordinateSystem](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx). An instance of this type represents an arbitrary coordinate system and provides a method to get a transformation matrix that you can use to transform between two coordinate systems without understanding the details of each.
+The core type used to reason about real-world coordinate systems in Windows is the [SpatialCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx). An instance of this type represents an arbitrary coordinate system and provides a method to get a transformation matrix that you can use to transform between two coordinate systems without understanding the details of each.
 
 Methods that return spatial information, represented as points, rays, or volumes in the user's surroundings, will accept a SpatialCoordinateSystem parameter to let you decide the coordinate system in which it's most useful for those coordinates to be returned. The units for these coordinates will always be in meters.
 
 A SpatialCoordinateSystem has a dynamic relationship with other coordinate systems, including those that represent the device's position. At any point in time, the device may be able to locate some coordinate systems and not others. For most coordinate systems, your app must be ready to handle periods of time during which they cannot be located.
 
 Your application should not create SpatialCoordinateSystems directly - rather they should be consumed via the Perception APIs. There are three primary sources of coordinate systems in the Perception APIs, each of which map to a concept described on the [Coordinate systems](coordinate-systems.md) page:
-* To get a stationary frame of reference, create a [SpatialStationaryFrameOfReference](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) or obtain one from the current [SpatialStage](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialstageframeofreference).
-* To get a spatial anchor, create a [SpatialAnchor](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchor.aspx).
-* To get an attached frame of reference, create a [SpatialLocatorAttachedFrameOfReference](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatiallocatorattachedframeofreference.aspx).
+* To get a stationary frame of reference, create a [SpatialStationaryFrameOfReference](https://docs.microsoft.com/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) or obtain one from the current [SpatialStage](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference).
+* To get a spatial anchor, create a [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx).
+* To get an attached frame of reference, create a [SpatialLocatorAttachedFrameOfReference](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocatorattachedframeofreference.aspx).
 
 All of the coordinate systems returned by these objects are right-handed, with +y up, +x to the right and +z backwards. You can remember which direction the positive z-axis points by pointing the fingers of either your left or right hand in the positive x direction and curling them into the positive y direction. The direction your thumb points, either toward or away from you, is the direction that the positive z-axis points for that coordinate system. The following illustration shows these two coordinate systems.
 
 ![Left-hand and right-hand coordinate systems](images/left-hand-right-hand.gif)<br>
 *Left-hand and right-hand coordinate systems*
 
-To bootstrap into a SpatialCoordinateSystem based on the position of a HoloLens, use the [SpatialLocator](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) class to create either an attached or stationary frame of reference, as described in the sections below.
+To bootstrap into a SpatialCoordinateSystem based on the position of a HoloLens, use the [SpatialLocator](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) class to create either an attached or stationary frame of reference, as described in the sections below.
 
 ## Place holograms in the world using a spatial stage
 
@@ -274,9 +274,9 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 ## Place holograms in the world using a stationary frame of reference
 
-The [SpatialStationaryFrameOfReference](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialstationaryframeofreference.aspx) class represents a frame of reference that [remains stationary](coordinate-systems.md#stationary-frame-of-reference) relative to the user's surroundings as the user moves around. This frame of reference prioritizes keeping coordinates stable near the device. One key use of a SpatialStationaryFrameOfReference is to act as the underlying world coordinate system within a rendering engine when rendering holograms.
+The [SpatialStationaryFrameOfReference](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialstationaryframeofreference.aspx) class represents a frame of reference that [remains stationary](coordinate-systems.md#stationary-frame-of-reference) relative to the user's surroundings as the user moves around. This frame of reference prioritizes keeping coordinates stable near the device. One key use of a SpatialStationaryFrameOfReference is to act as the underlying world coordinate system within a rendering engine when rendering holograms.
 
-To get a SpatialStationaryFrameOfReference, use the [SpatialLocator](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) class and call [CreateStationaryFrameOfReferenceAtCurrentLocation](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatiallocator.createstationaryframeofreferenceatcurrentlocation.aspx).
+To get a SpatialStationaryFrameOfReference, use the [SpatialLocator](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) class and call [CreateStationaryFrameOfReferenceAtCurrentLocation](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.createstationaryframeofreferenceatcurrentlocation.aspx).
 
 From the Windows Holographic app template code:
 
@@ -299,11 +299,11 @@ Once defined, the coordinate system of a SpatialAnchor adjusts continually to re
 
 The effects of the adjustments that keep the anchor in place are magnified as distance from the anchor increases. Therefore, you should avoid rendering content relative to an anchor that is more than about 3 meters from that anchor's origin.
 
-You can persist a SpatialAnchor using the [SpatialAnchorStore](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) class and then get it back in a future app session.
+You can persist a SpatialAnchor using the [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) class and then get it back in a future app session.
 
-The [CoordinateSystem](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchor.coordinatesystem.aspx) property gets a coordinate system that lets you place content relative to the anchor, with easing applied when the device adjusts the anchor's precise location.
+The [CoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.coordinatesystem.aspx) property gets a coordinate system that lets you place content relative to the anchor, with easing applied when the device adjusts the anchor's precise location.
 
-Use the [RawCoordinateSystem](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystem.aspx) property and the corresponding [RawCoordinateSystemAdjusted](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted.aspx) event to manage these adjustments yourself.
+Use the [RawCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystem.aspx) property and the corresponding [RawCoordinateSystemAdjusted](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted.aspx) event to manage these adjustments yourself.
 
 ### Create SpatialAnchors for holographic content
 
@@ -356,7 +356,7 @@ Let's see how to write a SampleSpatialAnchorHelper class that helps handle this 
 * Loading anchors from the system's SpatialAnchorStore, which is kept separate from the local in-memory collection.
 * Saving the local in-memory collection of anchors to the SpatialAnchorStore when the app chooses to do so.
 
-Here's how to save [SpatialAnchor](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) objects in the [SpatialAnchorStore](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx).
+Here's how to save [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) objects in the [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx).
 
 When the class starts up, we request the SpatialAnchorStore asynchronously. This involves system I/O as the API loads the anchor store, and this API is made asynchronous so that the I/O is non-blocking.
 
@@ -513,7 +513,7 @@ You need your own in-memory database of SpatialAnchors; some way to associate St
 
 ### Clear the anchor store, when needed
 
-Sometimes, you need to clear app state and write new data. Here's how you do that with the [SpatialAnchorStore](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx).
+Sometimes, you need to clear app state and write new data. Here's how you do that with the [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx).
 
 Using our helper class, it's almost unnecessary to wrap the Clear function. We choose to do so in our sample implementation, because our helper class is given the responsibility of owning the SpatialAnchorStore instance.
 
@@ -535,7 +535,7 @@ Using our helper class, it's almost unnecessary to wrap the Clear function. We c
 
 ### Example: Relating anchor coordinate systems to stationary reference frame coordinate systems
 
-Let's say that you have an anchor, and you want to relate something in your anchor's coordinate system to the SpatialStationaryReferenceFrame that you’re already using for most of your other content. You can use [TryGetTransformTo](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) to obtain a transform from the anchor’s coordinate system to that of the stationary reference frame:
+Let's say that you have an anchor, and you want to relate something in your anchor's coordinate system to the SpatialStationaryReferenceFrame that you’re already using for most of your other content. You can use [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) to obtain a transform from the anchor’s coordinate system to that of the stationary reference frame:
 
 ```
 // In this code snippet, someAnchor is a SpatialAnchor^ that has been initialized and is valid in the current environment.
@@ -703,7 +703,7 @@ From **StationaryQuadRenderer::Update**:
 
 On HoloLens, we should also set a manual focus point for [image stabilization](hologram-stability.md#stabilization-plane). For best results with tag-along holograms, we need to use the velocity of the hologram. This is computed as follows.
 
-Note that on immersive desktop headsets, you should instead use the [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFrame) API to enable per-pixel depth-based reprojection, as discussed in [Rendering in DirectX](rendering-in-directx.md#set-the-focus-point-for-image-stabilization). That will result in the best visual quality.
+Note that on immersive desktop headsets, you should instead use the [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicFrame) API to enable per-pixel depth-based reprojection, as discussed in [Rendering in DirectX](rendering-in-directx.md#set-the-focus-point-for-image-stabilization). That will result in the best visual quality.
 
 From **StationaryQuadRenderer::Update**:
 

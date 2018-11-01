@@ -30,9 +30,9 @@ The Services you will use include:
 
 - **Azure Container Registry** is a Microsoft Azure Service which allows developers to store container images, for various types of containers. For more information, visit the [**Azure Container Registry Service** page](https://azure.microsoft.com/en-au/services/container-registry/).
 
-- **Azure Function App** is a Microsoft Azure Service, which allows developers to run small pieces of code, 'functions', in Azure. This provides a way to delegate work to the cloud, rather than your local application, which can have many benefits. **Azure Functions** supports several development languages, including C\#, F\#, Node.js, Java, and PHP. For more information, visit the [**Azure Functions** page](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview).
+- **Azure Function App** is a Microsoft Azure Service, which allows developers to run small pieces of code, 'functions', in Azure. This provides a way to delegate work to the cloud, rather than your local application, which can have many benefits. **Azure Functions** supports several development languages, including C\#, F\#, Node.js, Java, and PHP. For more information, visit the [**Azure Functions** page](https://docs.microsoft.com/azure/azure-functions/functions-overview).
 
-- **Azure Storage: Tables** is a Microsoft Azure Service, which allows developers to store structured, non-SQL, data in the cloud, making it easily accessible anywhere. The Service boasts a schema-less design, allowing for the evolution of tables as needed, and thus is very flexible. For more information, visit the [**Azure Tables** page](https://docs.microsoft.com/en-us/azure/cosmos-db/table-storage-overview)
+- **Azure Storage: Tables** is a Microsoft Azure Service, which allows developers to store structured, non-SQL, data in the cloud, making it easily accessible anywhere. The Service boasts a schema-less design, allowing for the evolution of tables as needed, and thus is very flexible. For more information, visit the [**Azure Tables** page](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
 
 This course will teach you how to setup and use the IoT Hub Service, and then visualize a response provided by a device. It will be up to you to apply these concepts to a custom IoT Hub Service setup, which you might be building.
 
@@ -48,7 +48,7 @@ This course will teach you how to setup and use the IoT Hub Service, and then vi
 
 ## Prerequisites
 
-For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens, visit the [Install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article.
+For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens, visit the [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) article.
 
 > [!NOTE]
 > This tutorial is designed for developers who have basic experience with Python. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (July 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than that listed below.
@@ -66,13 +66,13 @@ The following hardware and software is required:
 - Internet Access for Azure, and for IoT Hub Service. For more information, please follow this [link to IoT Hub Service page](https://azure.microsoft.com/en-au/services/iot-hub/)
 - A machine learning model. If you do not have your own ready to use model, [you can use the model provided with this course](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20313%20-%20IoT%20Hub%20Service/Custom%20Vision%20Model.zip).
 - **Hyper-V** software enabled on your Windows 10 development machine.
-- A Virtual Machine running Ubuntu (16.4 or 18.4), running on your development machine or alternatively you can use a separate computer running Linux (Ubuntu 16.4 or 18.4). You can find more information on how to create a VM on Windows using Hyper-V in the ["Before you Start" chapter](#before-you-start).(https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).  
+- A Virtual Machine running Ubuntu (16.4 or 18.4), running on your development machine or alternatively you can use a separate computer running Linux (Ubuntu 16.4 or 18.4). You can find more information on how to create a VM on Windows using Hyper-V in the ["Before you Start" chapter](#before-you-start).(https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).  
 
 
 
 ### Before you start
 
-1. Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/en-us/hololens/hololens-setup).
+1. Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup).
 2. It is a good idea to perform **Calibration** and **Sensor Tuning** when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user).
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
@@ -81,8 +81,8 @@ For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tunin
 
 3. Set up your **Ubuntu Virtual Machine** using **Hyper-V**. The following resources will help you with the process.
     1.  First, follow this link to [download the Ubuntu 16.04.4 LTS (Xenial Xerus) ISO](http://au.releases.ubuntu.com/16.04/). Select the **64-bit PC (AMD64) desktop image**.
-    2.  Make sure **Hyper-V** is enabled on your Windows 10 machine. You can follow this link for guidance on [installing and enabling Hyper-V on Windows 10](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
-    3.  Start Hyper-V and create a new Ubuntu VM. You can follow this link for a [step by step guide on how to create a VM with Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). When requested to **"Install an operating system from a bootable image file"**, select the **Ubuntu ISO** you have download earlier.
+    2.  Make sure **Hyper-V** is enabled on your Windows 10 machine. You can follow this link for guidance on [installing and enabling Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
+    3.  Start Hyper-V and create a new Ubuntu VM. You can follow this link for a [step by step guide on how to create a VM with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). When requested to **"Install an operating system from a bootable image file"**, select the **Ubuntu ISO** you have download earlier.
 
     > [!NOTE]
     > Using **Hyper-V Quick Create** is not suggested.  
@@ -177,7 +177,7 @@ Now you will begin the creation and setup of your **IoT Hub Service**.
 
     1. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
 
     2. Select an appropriate **Location** (Use the same location across all the Services you create in this course).
@@ -375,7 +375,7 @@ Now you can move on to setting up your device **running Ubuntu OS**. Follow the 
     >1. Restart VS Code, and/ or your computer.
     >2. It might be necessary to switch the **VS Code Terminal** to the one you have been using to install Python, i.e. **Powershell** (especially in case the Python environment was already installed on your machine). With the Terminal open, you will find the drop down menu on the right side of the Terminal.
      ![Create your container](images/AzureLabs-Lab313-24b.png) 
-    >3. Make sure the **Python** installation path is added as **Environment Variable** on your machine. Cookiecutter should be part of the same location path. Please follow this [link for more information on Environment Variables](https://msdn.microsoft.com/en-us/library/windows/desktop/ms682653(v=vs.85).aspx), 
+    >3. Make sure the **Python** installation path is added as **Environment Variable** on your machine. Cookiecutter should be part of the same location path. Please follow this [link for more information on Environment Variables](https://msdn.microsoft.com/library/windows/desktop/ms682653(v=vs.85).aspx), 
 
 7. Once **Cookiecutter** has finished installing, you should restart your machine, so that **Cookiecutter** is recognized as a command, within your System's environment.
 
@@ -863,7 +863,7 @@ Navigate back to your Azure Portal, where you will create an Azure Tables Servic
 
     9. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision, and manage, billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     10. Leave **Virtual networks** as **Disabled**, if this is an option for you.
 
@@ -1005,7 +1005,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision, and manage, billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     5. For **OS**, click Windows, as that is the intended platform.
 

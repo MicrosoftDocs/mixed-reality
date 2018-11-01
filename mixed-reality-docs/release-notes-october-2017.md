@@ -12,7 +12,7 @@ keywords: release notes, version, windows 10, build, rs3, os
 
 # Release notes - October 2017
 
-Welcome to Windows Mixed Reality! The release of the **[Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** introduces support for new [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md) and [motion controllers](motion-controllers.md), enabling you to explore new worlds, play VR games, and experience immersive entertainment when connected to a [Windows Mixed Reality capable PC](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+Welcome to Windows Mixed Reality! The release of the **[Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** introduces support for new [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md) and [motion controllers](motion-controllers.md), enabling you to explore new worlds, play VR games, and experience immersive entertainment when connected to a [Windows Mixed Reality capable PC](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
 The release of Windows Mixed Reality headsets and motion controllers is the culmination of a massive team effort and a major step forward for the [Windows Mixed Reality platform](mixed-reality.md), which includes [Microsoft HoloLens](hololens-hardware-details.md). While HoloLens isn't receiving an update with the release of the Windows 10 Fall Creators Update, know that work on HoloLens hasn't stopped; we'll have a lot of learnings and insight to apply from our recent work across Windows Mixed Reality as a whole. In fact, Windows Mixed Reality immersive headsets and motion controllers represent a great entry point to development for HoloLens too, as the same APIs, tools, and concepts apply to both.
 
@@ -28,11 +28,11 @@ To update to the latest release for each device, open the **Settings** app, go t
 The Windows 10 Fall Creators Update officially introduces support for Windows Mixed Reality headsets and motion controllers, as well as making Windows 10 the world's first spatial operating system. Here are the highlights:
 * **[Variety of headsets](https://blogs.windows.com/windowsexperience/2017/10/03/how-to-pre-order-your-windows-mixed-reality-headset/)** - Windows Mixed Reality is enabling partners to offer a variety of headsets which start at $399 USD bundled with motion controllers.
 * **[Motion controllers](motion-controllers.md)** - Windows Mixed Reality motion controllers wirelessly pair with your PC via Bluetooth and feature six degrees-of-freedom tracking, plenty of input methods, and IMUs.
-* **[Easy setup and portability](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)** - Set up and get started in under 10 minutes. Immersive headsets use inside-out tracking to track your movement, and your motion controllers, with six degrees-of-freedom. No external cameras or lighthouse markers required!
-* **[Support for a wider range of PCs](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)** - Windows Mixed Reality will allow more people to experience desktop VR than ever before, with support for select integrated graphics cards and PCs starting at $499 USD.
+* **[Easy setup and portability](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)** - Set up and get started in under 10 minutes. Immersive headsets use inside-out tracking to track your movement, and your motion controllers, with six degrees-of-freedom. No external cameras or lighthouse markers required!
+* **[Support for a wider range of PCs](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)** - Windows Mixed Reality will allow more people to experience desktop VR than ever before, with support for select integrated graphics cards and PCs starting at $499 USD.
 * **[Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)** - The world's first spatial operating system provides a familiar home environment for multi-tasking with 2D apps, launching VR games and apps, and placing decorative holograms.
 * **[Amazing VR games and apps in the Microsoft Store](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/)** - From immersive entertainment like Hulu VR and 360 video to epic games like SUPERHOT VR and Arizona Sunshine, the Microsoft Store has a range of content to experience in Windows Mixed Reality.
-* **[SteamVR Early Access](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)** - The Windows 10 Fall Creators Update enables support for SteamVR titles to be played with Windows Mixed Reality headsets and controllers, making the largest catalog of VR titles available to Windows Mixed Reality users.
+* **[SteamVR Early Access](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)** - The Windows 10 Fall Creators Update enables support for SteamVR titles to be played with Windows Mixed Reality headsets and controllers, making the largest catalog of VR titles available to Windows Mixed Reality users.
 
 ## Known issues
 
@@ -92,7 +92,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 * [Release notes - March 2016](release-notes-march-2016.md)
 
 ## See also
-* [Immersive headset support (external link)](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [Immersive headset support (external link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens known issues](hololens-known-issues.md)
 * [Install the tools](install-the-tools.md)
 * [Give us feedback](give-us-feedback.md)

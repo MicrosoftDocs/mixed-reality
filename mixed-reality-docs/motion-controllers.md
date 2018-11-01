@@ -53,14 +53,14 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 
 **Check for Windows, Unity, and driver updates**
 * Visit [Install the tools](install-the-tools.md) for the preferred versions of Windows, Unity, etc. for mixed reality development.
-* Make sure you have the most up-to-date [headset and motion controller drivers](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software).
+* Make sure you have the most up-to-date [headset and motion controller drivers](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software).
 
 ### Pairing controllers
 
 Motion controllers can be bonded with host PC using Windows settings like any other Bluetooth device.
 
 1. Insert 2 AA batteries into the back of the controller. Leave the battery cover off for now.
-2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
+2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
 3. Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
 4. Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
 5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
@@ -91,7 +91,7 @@ If the controllers are turned off after pairing, their status will show up as Pa
 
 * Verify your controllers work properly:
     1. Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
-    2. Move your controllers and verify tracking, test buttons, and verify [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
+    2. Move your controllers and verify tracking, test buttons, and verify [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
 
 ## Gazing and pointing
 
@@ -209,7 +209,7 @@ Motion controllers support pairing with a single PC. Follow instructions on [mot
 
 ### How do I update motion controller firmware?
 
-Motion controller firmware is part of the headset driver and will be updated automatically on connection if required. Firmware updates typically take 1-2 minutes depending on Bluetooth radio and link quality. In rare cases, controller firmware updates may take up to 10 minutes, which can indicate poor Bluetooth connectivity or radio interference. Please see [Bluetooth best practices in the Enthusiast Guide](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) to troubleshoot connectivity issues. After a firmware update, controllers will reboots and reconnect to the host PC (you may notice the LEDs go bright for tracking). If a firmware update is interrupted (for example, the controllers lose power), it will be attempted again the next time the controllers are powered on.
+Motion controller firmware is part of the headset driver and will be updated automatically on connection if required. Firmware updates typically take 1-2 minutes depending on Bluetooth radio and link quality. In rare cases, controller firmware updates may take up to 10 minutes, which can indicate poor Bluetooth connectivity or radio interference. Please see [Bluetooth best practices in the Enthusiast Guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) to troubleshoot connectivity issues. After a firmware update, controllers will reboots and reconnect to the host PC (you may notice the LEDs go bright for tracking). If a firmware update is interrupted (for example, the controllers lose power), it will be attempted again the next time the controllers are powered on.
 
 ### How I can check battery level?
 
@@ -221,7 +221,7 @@ Not for Universal Windows Applications.
 
 ## Troubleshooting
 
-See [motion controller troubleshooting](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) in the Enthusiast Guide.
+See [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) in the Enthusiast Guide.
 
 ## Filing motion controller feedback/bugs
 
@@ -232,6 +232,6 @@ See [motion controller troubleshooting](https://docs.microsoft.com/en-us/windows
 * [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
 * [Gestures](gestures.md)
 * [MR Input 213: Motion controllers](mixed-reality-213.md)
-* [Enthusiast's Guide: Your Windows Mixed Reality home](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [Enthusiast's Guide: Using games & apps in Windows Mixed Reality](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [How inside-out tracking works](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [Enthusiast's Guide: Your Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [Enthusiast's Guide: Using games & apps in Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [How inside-out tracking works](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)

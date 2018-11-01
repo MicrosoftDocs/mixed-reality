@@ -54,7 +54,7 @@ We recommend the following hardware and software for this course:
 ### Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/en-us/hololens/hololens-setup). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user). 
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
@@ -264,7 +264,7 @@ Now that you have built the code for your bot, you have to publish it to an inst
     2. Select a **Subscription**.
     3. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, [please follow this link](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal)
+        > If you wish to read more about Azure Resource Groups, [please follow this link](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)
 
     4. Determine the Location for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
     5. Select the **Pricing Tier** appropriate for you, if this is the first time creating a *Web App Bot* Service, a free tier (named F0) should be available to you

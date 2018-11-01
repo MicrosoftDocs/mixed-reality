@@ -73,7 +73,7 @@ using UnityEngine;
        public enum ROOMSIZE { Small, Medium, Large, None };
        public ROOMSIZE room = ROOMSIZE.Small;  // Small is regarded as the "most average"
        // defaults and docs from MSDN
-       // https://msdn.microsoft.com/en-us/library/windows/desktop/mt186602(v=vs.85).aspx
+       // https://msdn.microsoft.com/library/windows/desktop/mt186602(v=vs.85).aspx
        AudioSource audiosource;
        void Awake()
        {
