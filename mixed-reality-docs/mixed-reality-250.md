@@ -41,7 +41,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 ### Project files
 
 * Download the [files](https://github.com/Microsoft/MixedReality250/archive/master.zip) required by the project. Extract the files to an easy to remember location.
-* This project requires the [most recent version of Unity with Mixed Reality support](install-the-tools.md#immersive-headset-development).
+* This project requires the [a recommended version of Unity with Windows Mixed Reality support](install-the-tools.md).
 
 >[!NOTE]
 >If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/MixedReality250).
@@ -263,7 +263,7 @@ MixedRealityTeleport has two jobs. First, it handles rotation using the bumpers.
 
 When we rotate we do a fade out and fade in using a simple script called 'fade control'. We do this to prevent the user from seeing an unnatural movement which could lead to discomfort. The fade in and out effect is fairly simple. We have a black quad hanging in front of the **main camera**. When fading out we transition the alpha value from 0 to 1. This gradually causes the black pixels of the quad to render and obscure anything behind them. When fading back in we transition the alpha value back to zero.
 
-When we calculate the rotation, note that we are rotating our **dolly** but calculating the rotation around the **main camera**. This is important as the futher the **main camera** is away from 0,0,0, the less accurate a rotation around the dolly would become from the point of view of the user. In fact, if you do not rotate around the camera position, the user will move on an arc around the **dolly** rather than rotating.
+When we calculate the rotation, note that we are rotating our **dolly** but calculating the rotation around the **main camera**. This is important as the farther the **main camera** is away from 0,0,0, the less accurate a rotation around the dolly would become from the point of view of the user. In fact, if you do not rotate around the camera position, the user will move on an arc around the **dolly** rather than rotating.
 
 The second job for MixedRealityTeleport is to handle moving the **dolly**. This is done in SetWorldPosition. SetWorldPosition takes the desired world position, the position where the user wants to percieve that they inhabit. We need to put our **dolly** at that position minus the local position of the **main camera**, as that offset will be added each frame.
 
