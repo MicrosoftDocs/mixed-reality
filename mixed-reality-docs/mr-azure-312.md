@@ -574,7 +574,7 @@ To create this class:
         internal string InteractibleTag = "BotTag";
 
         /// <summary>
-        /// Lenght of the gaze
+        /// Length of the gaze
         /// </summary>
         internal float GazeMaxDistance = 300;
 
