@@ -839,7 +839,7 @@ To deploy on HoloLens:
 
 3.  Use the tap gesture to capture the person's picture.
 4.  Wait for the App to send the analysis request and receive a response.
-5.  If the person has been successfully recognized, the person's name name will appear as UI text.
+5.  If the person has been successfully recognized, the person's name will appear as UI text.
 6.  You can repeat the capture process using the tap gesture every few seconds.
 
 ## Your finished Azure Face API Application
