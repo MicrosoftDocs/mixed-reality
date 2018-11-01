@@ -27,7 +27,7 @@ At a high-level, these are the steps involved in porting existing content:
 
 ### Common step 1: Make sure you have the right development hardware
 
-The [install the tools](install-the-tools.md#immersive-headset-development) page lists the recommended development hardware.
+The [install the tools](install-the-tools.md#for-immersive-vr-headset-development) page lists the recommended development hardware.
 
 ### Common step 2: Upgrade to the latest flight of Windows 10
 
@@ -38,7 +38,7 @@ The Windows Mixed Reality platform is still under active development, and to be 
 4. Switch to the [Windows Insider Fast flights](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) through Settings --> Update & Security Section
 
 ### Common step 3: Upgrade to the most recent build of Visual Studio
-* Please see [Install the tools](install-the-tools.md#installation-checklist-for-immersive-headsets) page under Visual Studio 2017
+* Please see [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2017
 
 ### Common step 4: Be Ready for The Store
 * Use [Windows App Certification Kit](https://developer.microsoft.com/en-us/windows/develop/app-certification-kit) (aka WACK) early and often!

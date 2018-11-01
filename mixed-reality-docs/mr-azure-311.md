@@ -42,10 +42,10 @@ In your application, it is up to you as to how you will integrate the results wi
 We recommend the following hardware and software for this course:
 
 - A development PC
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
+- [Unity 2017.4](install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist)
 - A [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - Internet access for Azure setup and Microsoft Graph data retrieval
 - A valid **Microsoft Account** (either personal or work/school)
