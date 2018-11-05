@@ -212,7 +212,7 @@ void MyClass::OnRemovedQRCode(QRCodesTrackerPlugin::QRCodeRemovedEventArgs ^args
 
 We define a right-hand coordinate system aligned with the QR code at the top left of the top left fast detection square. The coordinate system is shown below. The Z-axis is pointing into the paper (not shown) ( When in unity the z-axis is out of the paper and left handed). A SpatialCoordinateSystem is defined that is aligned as shown. This coordinate system can be obtained from the platform using the new '''RS5''' API Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode.
 
-[insert image description here](images/Qr-coordinatesystem.png) 
+![QR code coordinate system](images/Qr-coordinatesystem.png) 
 
 
 From QRCode^ Code object the following code shows how to create a rectangle and put it in QR coordinate system
