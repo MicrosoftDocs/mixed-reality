@@ -10,7 +10,7 @@ keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, q
 
 # QR code tracking
 
-QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker in the headset driver, the headset scans for QR codes and they are reported to interested apps. This feature only available as of the [Windows 10 October 2018 Update (RS5)](release-notes-october-2018.md).
+QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker in the headset driver, the headset scans for QR codes and they are reported to interested apps. This feature is only available as of the [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md).
 
 ## Enabling and disabling QR code tracking in the driver
 
@@ -208,14 +208,15 @@ void MyClass::OnRemovedQRCode(QRCodesTrackerPlugin::QRCodeRemovedEventArgs ^args
 }
 ```
 
-##  Getting a coordinatesystem
+## Getting a coordinate system
 
-We define a right-hand coordinate system aligned with the QR code at the top left of the top left fast detection square. The coordinate system is shown below. The Z-axis is pointing into the paper (not shown) ( When in unity the z-axis is out of the paper and left handed). A SpatialCoordinateSystem is defined that is aligned as shown. This coordinate system can be obtained from the platform using the new '''RS5''' API Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode.
+We define a right-hand coordinate system aligned with the QR code at the top left corner of the fast detection square in the top left. The coordinate system is shown below. The Z-axis is pointing into the paper (not shown), but in Unity the z-axis is out of the paper and left-handed.
+
+A SpatialCoordinateSystem is defined that is aligned as shown. This coordinate system can be obtained from the platform using the API *Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode*.
 
 ![QR code coordinate system](images/Qr-coordinatesystem.png) 
 
-
-From QRCode^ Code object the following code shows how to create a rectangle and put it in QR coordinate system
+From QRCode^ Code object, the following code shows how to create a rectangle and put it in QR coordinate system:
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -232,19 +233,19 @@ std::vector<float3> SpatialStageManager::CreateRectangle(float width, float heig
 }
 ```
 
-You can use the physical size to create the QR rectangle
+You can use the physical size to create the QR rectangle:
 
 ```cpp
 std::vector<float3> qrVertices = CreateRectangle(Code->PhysicalSizeMeters, Code->PhysicalSizeMeters); 
 ```
 
-Use the platform API (available only from RS5)
-The coordinate system can be used to draw the QR code or attaching holograms to the location.
+The coordinate system can be used to draw the QR code or attach holograms to the location:
 
 ```cpp
 Windows::Perception::Spatial::SpatialCoordinateSystem^ qrCoordinateSystem = Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode(Code->Id);
 ```
-All together, your QRCodesTrackerPlugin::QRCodeAddedHandler may look something like this:
+
+Altogether, your *QRCodesTrackerPlugin::QRCodeAddedHandler* may look something like this:
 
 ```cpp
 void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
