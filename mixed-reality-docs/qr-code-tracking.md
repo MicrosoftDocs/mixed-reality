@@ -158,7 +158,7 @@ The QRTracking plugin wraps the APIs for QR code tracking. To use the plugin, yo
 
 ## Using the Plugin in Windows UWP in VS (without Unity)
 
-To use the QRTrackingPlugin in VS, you will need toadd reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
+To use the QRTrackingPlugin in Visual Studio, you will need to add reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
 
 ```cpp
 // MyClass.h
