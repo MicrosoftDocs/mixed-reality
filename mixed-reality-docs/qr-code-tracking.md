@@ -18,7 +18,7 @@ In order to **turn on QR code tracking** for your immersive (VR) headset:
 
 1. Close the Mixed Reality Portal app on your PC.
 2. Unplug the headset from your PC.
-3. Run the following script in the Command Prompt:
+3. Run the following script in the Command Prompt:<br>
     `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F`
 4. Reconnect your headset to your PC.
 
@@ -26,7 +26,7 @@ In order to **turn off QR code tracking** for your immersive (VR) headset:
 
 1. Close the Mixed Reality Portal app on your PC.
 2. Unplug the headset from your PC.
-3. Run the following script in the Command Prompt:
+3. Run the following script in the Command Prompt:<br>
     `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F`
 4. Reconnect your headset to your PC. This will make any discovered QR codes "non-locatable."
 
@@ -159,8 +159,6 @@ The QRTracking plugin wraps the APIs for QR code tracking. To use the plugin, yo
 ## Using the Plugin in Windows UWP in VS (without Unity)
 
 To use the QRTrackingPlugin in VS, you will need toadd reference of the QRTrackingPlugin to the .winmd. You can find the required files for supported platforms [here] (https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA)
-
-C++/CX
 
 ```cpp
 // MyClass.h
