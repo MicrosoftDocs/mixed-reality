@@ -269,17 +269,21 @@ void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 ## Troubleshooting and FAQ
 
 **General troubleshooting**
+
 * Is your PC running the Windows 10 October 2018 Update?
 * Have you set the reg key? Restarted the device afterwards?
 * Is the QR code version a supported version? Current API supports up to QR Code Version 20. We recommend using version 5 for general usage. 
 * Are you close enough to the QR code? The closer the camera is to the QR code, the higher the QR code version the API can support.  
 
 **How close do I need to be to the QR code to detect it?**
+
 This will depend on the size of the QR code, and also what version it is. For a version 1 QR code varying from 5 cm sides to 25 cm sides, the minimum detection distance ranges from 0.25 meters to 0.5 meters. The farthest away these can be detected from goes from about 0.5 meters for the smaller QR code targets to 2 meters for the bigger. For QR codes bigger than that, you can estimate; the detection distance for size increases linearly. Our tracker does not work with QR codes with sides smaller than 5 cm.
 
 **Do QR codes with logos work?**
+
 QR codes with logos have not been tested and are currently unsupported.
 
 **How do I clear QR codes from my app so they don't persist?**
+
 * QR codes are only persisted in the boot session. Once you reboot (or restart the driver), they will be gone and detected as new objects next time.
 * QR code history is saved at the system level in the driver session, but you can configure your app to ignore QR codes older than a specific timestamp if you want. Currently the API does support clearing QR code history, as multiple apps might be interested in the data.
