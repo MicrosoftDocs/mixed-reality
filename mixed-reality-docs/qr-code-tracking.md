@@ -45,7 +45,7 @@ You can also use the QR Tracking API in Unity without taking a dependency on MRT
 
 ## Using the QRTrackingPlugin in Unity
 
-The QRTracking plugin wraps the APIs for QR code tracking. To use the plugin, you will need to use the following types from the QRCodesTrackerPlugin namespace.
+The QRTracking plugin wraps the APIs for QR code tracking. To use the plugin, you will need to use the following types from the *QRCodesTrackerPlugin* namespace.
 
 ```cs
  // QRTracker plugin namespace
@@ -158,7 +158,7 @@ The QRTracking plugin wraps the APIs for QR code tracking. To use the plugin, yo
 
 ## Using the Plugin in Windows UWP in VS (without Unity)
 
-To use the QRTrackingPlugin in VS, you will need toadd reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA)
+To use the QRTrackingPlugin in VS, you will need toadd reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
 
 ```cpp
 // MyClass.h
