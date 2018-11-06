@@ -17,8 +17,8 @@ This service will allow you to train a machine learning model using object image
 
 **Azure Custom Vision, Object Detection** is a Microsoft Service which allows developers to build custom image classifiers. These classifiers can then be used with new images to detect objects within that new image, by providing **Box Boundaries** within the image itself. The Service provides a simple, easy to use, online portal to streamline this process. For more information, visit the following links:
 
-* [Azure Custom Vision page](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home)
-* [Limits and Quotas](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/limits-and-quotas)
+* [Azure Custom Vision page](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
+* [Limits and Quotas](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 Upon completion of this course, you will have a mixed reality application which will be able to do the following:
 
@@ -47,23 +47,23 @@ This course will teach you how to get the results from the Azure Custom Vision S
 ## Prerequisites
 
 > [!NOTE]
-> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (July 2018). You are free to use the latest software, as listed within the [install the tools](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than what is listed below.
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (July 2018). You are free to use the latest software, as listed within the [install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than what is listed below.
 
 We recommend the following hardware and software for this course:
 
 - A development PC
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [The latest Windows 10 SDK](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Unity 2017.4 LTS](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Visual Studio 2017](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- A [Microsoft HoloLens](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-hardware-details) with Developer mode enabled
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [The latest Windows 10 SDK](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Unity 2017.4 LTS](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Visual Studio 2017](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- A [Microsoft HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details) with Developer mode enabled
 - Internet access for Azure setup and Custom Vision Service retrieval
 -  A series of at least fifteen (15) images are required) for each object that you would like the Custom Vision to recognize. If you wish, you can use the images already provided with this course, [a series of cups](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip)).
 
 ## Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/en-us/hololens/hololens-setup). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens App (sometimes it can help to perform those tasks for each user). 
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
@@ -74,7 +74,7 @@ For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tunin
 
 To use the **Azure Custom Vision Service**, you will need to configure an instance of it to be made available to your application.
 
-1.  Navigate [to the **Custom Vision Service** main page](https://azure.microsoft.com/en-gb/services/cognitive-services/custom-vision-service/).
+1.  Navigate [to the **Custom Vision Service** main page](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/).
 
 2.  Click on **Getting Started**.
 
@@ -105,7 +105,7 @@ To use the **Azure Custom Vision Service**, you will need to configure an instan
         ![](images/AzureLabs-Lab310-05.png)
 
         > [!NOTE]
-        > If you wish to [read more about Azure Resource Groups, navigate to the associated Docs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal)
+        > If you wish to [read more about Azure Resource Groups, navigate to the associated Docs](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)
 
     4.  Set the **Project Types** as **Object Detection (preview)**.
 

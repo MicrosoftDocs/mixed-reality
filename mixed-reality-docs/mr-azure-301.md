@@ -44,10 +44,10 @@ This course will teach you how to get the results from the Translator Service in
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
+- [Unity 2017.4](install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
 - Internet access for Azure setup and translation retrieval
@@ -93,7 +93,7 @@ To use the Azure Translator API, you will need to configure an instance of the S
     3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a *Translator Text Service*, a free tier (named F0) should be available to you.
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these labs) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     5. Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
     6. You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
@@ -596,7 +596,7 @@ To create this Class:
     ```
 
     > [!NOTE]
-    > -	The languages inserted into the languages **enum** are just examples. Feel free to add more if you wish; the [API supports over 60 languages](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/languages) (including Klingon)!
+    > -	The languages inserted into the languages **enum** are just examples. Feel free to add more if you wish; the [API supports over 60 languages](https://docs.microsoft.com/azure/cognitive-services/translator/languages) (including Klingon)!
     > - There is a [more interactive page covering available languages](https://www.microsoft.com/en-us/translator/languages.aspx), though be aware the page only appears to work when the site language is set to 'en-us' (and the Microsoft site will likely redirect to your native language). You can change site language at the bottom of the page or by altering the URL.
     > -	The **authorizationKey** value, in the above code snippet, must be the **Key**  you received when you subscribed to the *Azure Translator Text API*. This was covered in [Chapter 1](#chapter-1--the-azure-portal).
 

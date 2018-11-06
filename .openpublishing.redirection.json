@@ -2,12 +2,12 @@
 	"redirections": [
 		{
 			"source_path": "mixed-reality-docs/implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md",
-			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/implementing-3d-app-launchers#3d-deep-links-secondarytiles",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/implementing-3d-app-launchers#3d-deep-links-secondarytiles",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/release-notes.md",
-			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/release-notes-october-2018",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018",
 			"redirect_document_id": false
 		}
 	]

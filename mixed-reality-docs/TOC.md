@@ -176,6 +176,7 @@
 ### [Device portal API reference](device-portal-api-reference.md)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
 ## Other
+### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 ### [Locatable camera](locatable-camera.md)
 ### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)

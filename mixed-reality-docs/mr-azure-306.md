@@ -43,10 +43,10 @@ In your application, it is up to you as to how you will integrate the results wi
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
+- [Unity 2017.4](install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md)
 - Internet access for Azure setup and data retrieval
 - Two 360-degree videos in mp4 format (you can find some royalty-free videos [at this download page](https://www.mettle.com/360vr-master-series-free-360-downloads-page))
@@ -128,7 +128,7 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     3. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
     
-    > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage Azure Resource Groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+    > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage Azure Resource Groups](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     4.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
 
@@ -237,7 +237,7 @@ To use the Azure Media Service, you will need to configure an instance of the se
     2.  The **date** and **time** will be set for you, from your current date, to a time in the future (one hundred years in this case). Leave as is or change it to suit.
 
     > [!NOTE]
-    > For more information about Locators, and what you can choose, visit the [Azure Media Services Documentation](https://docs.microsoft.com/en-us/azure/media-services/media-services-concepts).
+    > For more information about Locators, and what you can choose, visit the [Azure Media Services Documentation](https://docs.microsoft.com/azure/media-services/media-services-concepts).
 
 24. At the bottom of that panel, click on the **Add** button.
 
@@ -593,7 +593,7 @@ To create this class:
     ```
 
     > [!TIP] 
-    > The **ChangeScene()** method uses a handy C\# feature called the *Conditional Operator*. This allows for conditions to be checked, and then values returned based on the outcome of the check, all within a single statement. Follow this [link to learn more about Conditional Operator](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/conditional-operator).
+    > The **ChangeScene()** method uses a handy C\# feature called the *Conditional Operator*. This allows for conditions to be checked, and then values returned based on the outcome of the check, all within a single statement. Follow this [link to learn more about Conditional Operator](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
 
 11. Save your changes in Visual Studio before returning to Unity.
 

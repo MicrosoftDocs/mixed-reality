@@ -17,7 +17,7 @@ Windows Mixed Reality is built on DirectX to produce rich, 3D graphical experien
 ## Update for the current frame
 
 To update the application state for holograms, once per frame the app will:
-* Get a [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) from the display management system.
+* Get a [HolographicFrame](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) from the display management system.
 * Update the scene with the current prediction of where the camera view will be when render is completed. Note, there can be more than one camera for the holographic scene.
 
 To render to holographic camera views, once per frame the app will:
@@ -25,7 +25,7 @@ To render to holographic camera views, once per frame the app will:
 
 ### Create a new holographic frame and get its prediction
 
-The [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) has information that the app needs in order to update and render the current frame. The app begins each new frame by calling the **CreateNextFrame** method. When this method is called, predictions are made using the latest sensor data available, and encapsulated in **CurrentPrediction** object.
+The [HolographicFrame](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) has information that the app needs in order to update and render the current frame. The app begins each new frame by calling the **CreateNextFrame** method. When this method is called, predictions are made using the latest sensor data available, and encapsulated in **CurrentPrediction** object.
 
 A new frame object must be used for each rendered frame as it is only valid for an instant in time. The **CurrentPrediction** property contains information such as the camera position. The information is extrapolated to the exact moment in time when the frame is expected to be visible to the user.
 
@@ -148,7 +148,7 @@ What about view and projection transforms? For best results, we want to wait unt
 
 To keep holograms where a developer or a user puts them in the world, Windows Mixed Reality includes features for [image stabilization](hologram-stability.md). Image stabilization uses reduced-latency rendering to ensure the best holographic experiences for users; a focus point may be specified to enhance image stabilization even further, or a depth buffer may be provided to compute optimized image stabilization in real time.
 
-For best results, your app should provide a depth buffer using the [CommitDirect3D11DepthBuffer](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) API. Windows Mixed Reality can then use geometry information from the depth buffer to optimize image stabilization in real time. In the following sample code, we modify the Render method from the Windows Mixed Reality app template to commit the depth buffer. Note that this also required adding an accessor to the CameraResources class, so that we could acquire the depth buffer texture resource for handoff to the API.
+For best results, your app should provide a depth buffer using the [CommitDirect3D11DepthBuffer](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) API. Windows Mixed Reality can then use geometry information from the depth buffer to optimize image stabilization in real time. In the following sample code, we modify the Render method from the Windows Mixed Reality app template to commit the depth buffer. Note that this also required adding an accessor to the CameraResources class, so that we could acquire the depth buffer texture resource for handoff to the API.
 
 
 Code for **CommitDirect3D11DepthBuffer example**
@@ -667,7 +667,7 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 
 ### Enable the holographic frame to present the swap chain
 
-With Windows Mixed Reality, the system controls the swap chain. The system then manages presenting frames to each holographic camera to ensure a high quality user experience. It also provides a viewport update each frame, for each camera, to optimize aspects of the system such as image stabilization or Mixed Reality Capture. So, a holographic app using DirectX doesn't call **Present** on a DXGI swap chain. Instead, you use the [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) class to present all swapchains for a frame once you're done drawing it.
+With Windows Mixed Reality, the system controls the swap chain. The system then manages presenting frames to each holographic camera to ensure a high quality user experience. It also provides a viewport update each frame, for each camera, to optimize aspects of the system such as image stabilization or Mixed Reality Capture. So, a holographic app using DirectX doesn't call **Present** on a DXGI swap chain. Instead, you use the [HolographicFrame](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) class to present all swapchains for a frame once you're done drawing it.
 
 
 From **DeviceResources::Present**
@@ -677,7 +677,7 @@ HolographicFramePresentResult presentResult = frame->PresentUsingCurrentPredicti
 HolographicFramePrediction^ prediction = frame->CurrentPrediction;
 ```
 
-By default, this API waits for the frame to finish before it returns. Holographic apps should wait for the previous frame to finish before starting work on a new frame, because this reduces latency and allows for better results from holographic frame predictions. This isn't a hard rule, and if you have frames that take longer than one screen refresh to render you can disable this wait by passing the HolographicFramePresentWaitBehavior parameter to [PresentUsingCurrentPrediction](https://msdn.microsoft.com/en-us/library/windows/apps/mt592836.aspx). In this case, you would likely use an asynchronous rendering thread in order to maintain a continuous load on the GPU. Note that the refresh rate of the HoloLens device is 60hz, where one frame has a duration of approximately 16 ms. Immersive headset devices can range from 60hz to 90hz; when refreshing the display at 90 hz, each frame will have a duration of approximately 11 ms.
+By default, this API waits for the frame to finish before it returns. Holographic apps should wait for the previous frame to finish before starting work on a new frame, because this reduces latency and allows for better results from holographic frame predictions. This isn't a hard rule, and if you have frames that take longer than one screen refresh to render you can disable this wait by passing the HolographicFramePresentWaitBehavior parameter to [PresentUsingCurrentPrediction](https://msdn.microsoft.com/library/windows/apps/mt592836.aspx). In this case, you would likely use an asynchronous rendering thread in order to maintain a continuous load on the GPU. Note that the refresh rate of the HoloLens device is 60hz, where one frame has a duration of approximately 16 ms. Immersive headset devices can range from 60hz to 90hz; when refreshing the display at 90 hz, each frame will have a duration of approximately 11 ms.
 
 In the template, we also discard the render target views for each camera after the frame is presented.
 
@@ -698,7 +698,7 @@ UseHolographicCameraResources<void>([this, prediction](std::map<UINT32, std::uni
 
 ### Handle DeviceLost scenarios in cooperation with the HolographicFrame
 
-DirectX 11 apps would typically want to check the HRESULT returned by the DXGI swap chain's **Present** function to find out if there was a **DeviceLost** error. The [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) class handles this for you. Inspect the [HolographicFramePresentResult](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframepresentresult.aspx) it returns to find out if you need to release and recreate the Direct3D device and device-based resources.
+DirectX 11 apps would typically want to check the HRESULT returned by the DXGI swap chain's **Present** function to find out if there was a **DeviceLost** error. The [HolographicFrame](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) class handles this for you. Inspect the [HolographicFramePresentResult](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicframepresentresult.aspx) it returns to find out if you need to release and recreate the Direct3D device and device-based resources.
 
 ```
 // The PresentUsingCurrentPrediction API will detect when the graphics device
@@ -711,7 +711,7 @@ if (presentResult == HolographicFramePresentResult::DeviceRemoved)
 }
 ```
 
-Note that if the Direct3D device was lost, and you did recreate it, you have to tell the [HolographicSpace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx) to start using the new device. The swap chain will be recreated for this device.
+Note that if the Direct3D device was lost, and you did recreate it, you have to tell the [HolographicSpace](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx) to start using the new device. The swap chain will be recreated for this device.
 
 
 From **DeviceResources::InitializeUsingHolographicSpace**
@@ -728,7 +728,7 @@ Windows 10 Creators Update PCs may be configured with **both** discrete and inte
 
 By default, most sample code demonstrates creating a DirectX device using the default hardware adapter, which on a hybrid system may not be the same as the one used for the headset.
 
-To work around any issues this may cause, use the [Holographic​Adapter​Id](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicadapterid) from either [HolographicSpace](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicSpace)->PrimaryAdapterId property or [HolographicDisplay](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicdisplay)->AdapterId. This adapterId can then be used to enumerate the DXGIAdapters
+To work around any issues this may cause, use the [Holographic​Adapter​Id](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicadapterid) from either [HolographicSpace](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicSpace)->PrimaryAdapterId property or [HolographicDisplay](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay)->AdapterId. This adapterId can then be used to enumerate the DXGIAdapters
 
 
 Code for **GetAdapterFromId Helper Function**
@@ -797,7 +797,7 @@ HRESULT hr = D3D11CreateDevice(
 
 **Hybrid graphics and Media Foundation** Using Media Foundation on hybrid systems may cause issues where video will not render or video texture is corrupt. This can occur because Media Foundation is defaulting to a system behavior as mentioned above. In some scenarios, creating a separate ID3D11Device is required to support multi-threading and the correct creation flags are set.
 
-When initializing the ID3D11Device, D3D11_CREATE_DEVICE_VIDEO_SUPPORT flag must be defined as part of the D3D11_CREATE_DEVICE_FLAG. Once the device and context is created, call [SetMultithreadProtected](https://msdn.microsoft.com/en-us/library/windows/desktop/bb173820(v=vs.85).aspx) to enable multithreading. To associate the device with the [IMFDXGIDeviceManager](https://msdn.microsoft.com/en-us/library/windows/desktop/hh447906(v=vs.85).aspx), use the [IMFDXGIDeviceManager::ResetDevice](https://msdn.microsoft.com/en-us/library/windows/desktop/hh447911(v=vs.85).aspx) function.
+When initializing the ID3D11Device, D3D11_CREATE_DEVICE_VIDEO_SUPPORT flag must be defined as part of the D3D11_CREATE_DEVICE_FLAG. Once the device and context is created, call [SetMultithreadProtected](https://msdn.microsoft.com/library/windows/desktop/bb173820(v=vs.85).aspx) to enable multithreading. To associate the device with the [IMFDXGIDeviceManager](https://msdn.microsoft.com/library/windows/desktop/hh447906(v=vs.85).aspx), use the [IMFDXGIDeviceManager::ResetDevice](https://msdn.microsoft.com/library/windows/desktop/hh447911(v=vs.85).aspx) function.
 
 
 Code to **associate a ID3D11Device with IMFDXGIDeviceManager**
@@ -836,4 +836,4 @@ if (FAILED(hr))
 ## See also
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
-* [D3D11_FEATURE_DATA_D3D11_OPTIONS3 structure](https://msdn.microsoft.com/en-us/library/windows/desktop/dn933226.aspx)
+* [D3D11_FEATURE_DATA_D3D11_OPTIONS3 structure](https://msdn.microsoft.com/library/windows/desktop/dn933226.aspx)

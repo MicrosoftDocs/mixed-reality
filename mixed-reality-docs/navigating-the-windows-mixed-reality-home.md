@@ -37,7 +37,7 @@ To run the app, you’ll need to then place it in your home:
 1. Use your [gaze](gaze.md) or controller to position the app where you want it. It will automatically adjust (in size and position) to conform to the space where you place it.
 2. Place the app using air-tap (HoloLens) or the Select button (immersive headsets). To cancel and bring back the Start menu, use the bloom gesture or the Windows button.
 
-[2D apps](building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
+[2D apps](building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
 
 Apps can also be launched via an app-to-app API or via Cortana.
 

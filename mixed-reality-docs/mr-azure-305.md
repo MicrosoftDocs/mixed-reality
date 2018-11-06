@@ -13,9 +13,9 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, functions, storag
 
 In this course, you will learn how to create and use Azure Functions and store data with an Azure Storage resource, within a mixed reality application.
 
-*Azure Functions* is a Microsoft service, which allows developers to run small pieces of code, 'functions', in Azure. This provides a way to delegate work to the cloud, rather than your local application, which can have many benefits. *Azure Functions* supports several development languages, including C\#, F\#, Node.js, Java, and PHP. For more information, visit the [Azure Functions article](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview).
+*Azure Functions* is a Microsoft service, which allows developers to run small pieces of code, 'functions', in Azure. This provides a way to delegate work to the cloud, rather than your local application, which can have many benefits. *Azure Functions* supports several development languages, including C\#, F\#, Node.js, Java, and PHP. For more information, visit the [Azure Functions article](https://docs.microsoft.com/azure/azure-functions/functions-overview).
 
-*Azure Storage* is a Microsoft cloud service, which allows developers to store data, with the insurance that it will be highly available, secure, durable, scalable, and redundant. This means Microsoft will handle all maintenance, and critical problems for you. For more information, visit the [Azure Storage article](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction).
+*Azure Storage* is a Microsoft cloud service, which allows developers to store data, with the insurance that it will be highly available, secure, durable, scalable, and redundant. This means Microsoft will handle all maintenance, and critical problems for you. For more information, visit the [Azure Storage article](https://docs.microsoft.com/azure/storage/common/storage-introduction).
 
 Having completed this course, you will have a mixed reality immersive headset application which will be able to do the following:
 
@@ -48,10 +48,10 @@ In your application, it is up to you as to how you will integrate the results wi
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
+- [Unity 2017.4](install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - A subscription to an Azure account for creating Azure resources
 - Internet access for Azure setup and data retrieval
@@ -101,7 +101,7 @@ To use the **Azure Storage Service**, you will need to create and configure a **
 
     9. Choose a *Resource Group* or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     10. You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
 
@@ -156,7 +156,7 @@ To create an Azure Function:
 
     3. Choose a *Resource Group* or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     4.  For this exercise, select *Windows* as the chosen **OS**.
 
@@ -455,7 +455,7 @@ Set up and test your mixed reality immersive headset.
 
 ## Chapter 6 - Import Azure Storage for Unity
 
-You will be using Azure Storage for Unity (which itself leverages the .Net SDK for Azure). You can read more about this at the [Azure Storage for Unity article](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity).
+You will be using Azure Storage for Unity (which itself leverages the .Net SDK for Azure). You can read more about this at the [Azure Storage for Unity article](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
 
 There is currently a known issue in Unity which requires plugins to be reconfigured after import. These steps (4 - 7 in this section) will no longer be required after the bug has been resolved.
 

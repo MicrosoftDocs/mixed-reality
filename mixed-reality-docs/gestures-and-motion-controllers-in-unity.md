@@ -188,7 +188,7 @@ Note that the relationship between this grip pose and the pointer pose (where th
 
 To get at more detailed information about Windows Mixed Reality hand input (for HoloLens) and motion controllers, you can choose to use the Windows-specific spatial input APIs under the *UnityEngine.XR.WSA.Input* namespace. This lets you access additional information, such as position accuracy or the source kind, letting you tell hands and controllers apart.
 
-### Polling for the the state of hands and motion controllers
+### Polling for the state of hands and motion controllers
 
 You can poll for this frame's state for each interaction source (hand or motion controller) using the *GetCurrentReading* method.
 
@@ -547,7 +547,7 @@ Step-by-step tutorials, with more detailed customization examples, are available
 - [MR Input 211: Gesture](holograms-211.md)
 - [MR Input 213: Motion controllers](mixed-reality-213.md)
 
-[![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/en-us/windows/mixed-reality/mixed-reality-213)<br>
+[![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
 *MR Input 213 - Motion controller*
 
 ## See also

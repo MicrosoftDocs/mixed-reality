@@ -179,22 +179,22 @@ keywords: Windows Mixed Reality, develop, development, HoloLens, unity, directx
                     <div class="cardText">
                         <h3>Windows API reference</h3>
                         <p>
-                            <a href="https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic">Windows.Graphics.Holographic</a>
+                            <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic">Windows.Graphics.Holographic</a>
                         </p>
                         <p>
-                            <a href="https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial">Windows.Perception</a>
+                            <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial">Windows.Perception</a>
                         </p>
                         <p>
-                            <a href="https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial">Windows.Perception.Spatial</a>
+                            <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial">Windows.Perception.Spatial</a>
                         </p>
                          <p>
-                            <a href="https://docs.microsoft.com/en-us/uwp/api/Windows.Perception.Spatial.Surfaces">Windows.Perception.Spatial.Surfaces</a>
+                            <a href="https://docs.microsoft.com/uwp/api/Windows.Perception.Spatial.Surfaces">Windows.Perception.Spatial.Surfaces</a>
                         </p>
                           <p>
-                            <a href="https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial">Windows.UI.Input.Spatial</a>
+                            <a href="https://docs.microsoft.com/uwp/api/windows.ui.input.spatial">Windows.UI.Input.Spatial</a>
                         </p>
                            <p>
-                            <a href="https://docs.microsoft.com/en-us/uwp/api/windows.applicationmodel.preview.holographic">Windows.ApplicationModel.Preview.Holographic</a>
+                            <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic">Windows.ApplicationModel.Preview.Holographic</a>
                         </p>
                     </div>
                 </div>

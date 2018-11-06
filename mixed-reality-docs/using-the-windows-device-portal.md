@@ -16,13 +16,13 @@ keywords: Windows Device Portal, HoloLens
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Gestures</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
+<td> Windows Device Portal</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
 </table>
 
 The Windows Device Portal for HoloLens lets you configure and manage your device remotely over Wi-Fi or USB. The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. The Device Portal includes many tools that will help you manage your HoloLens and debug and optimize your apps.
 
-This documentation is specifically about the Windows Device Portal for HoloLens. To use the Windows Device portal for desktop (including for Windows Mixed Reality), see [Windows Device Portal overview](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal)
+This documentation is specifically about the Windows Device Portal for HoloLens. To use the Windows Device portal for desktop (including for Windows Mixed Reality), see [Windows Device Portal overview](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)
 
 ## Setting up HoloLens to use Windows Device Portal
 
@@ -161,13 +161,13 @@ Note that HoloLens apps will not be able to capture an MRC photo or video while 
 ![Performance Tracing page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-performance-tracing-page-1000px.png)<br>
 *Performance Tracing page in Windows Device Portal on Microsoft HoloLens*
 
-Capture [Windows Performance Recorder](https://msdn.microsoft.com/en-us/library/windows/hardware/hh448205.aspx) (WPR) traces from your HoloLens.
+Capture [Windows Performance Recorder](https://msdn.microsoft.com/library/windows/hardware/hh448205.aspx) (WPR) traces from your HoloLens.
 * **Available profiles**: Select the WPR profile from the dropdown, and click or tap **Start** to start tracing.
 * **Custom profiles**: Click or tap **Browse** to choose a WPR profile from your PC. Click or tap **Upload and start** to start tracing.
 
 To stop the trace click on the stop link. Stay on this page until the trace file has completed downloading.
 
-Captured ETL files can be opened for analysis in [Windows Performance Analyzer](https://msdn.microsoft.com/en-us/library/windows/hardware/hh448170.aspx).
+Captured ETL files can be opened for analysis in [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx).
 
 ### Processes
 
@@ -210,7 +210,7 @@ Manages the apps that are installed on the HoloLens.
 ![App Crash Dumps page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-dev-apps-crash-dumps-page-1000px.png)<br>
 *App Crash Dumps page in Windows Device Portal on Microsoft HoloLens*
 
-This page allows you to collect crash dumps for your side-loaded apps. Check the **Crash Dumps Enabled** checkbox for each app for which you want to collect crash dumps. Return to this page to collect crash dumps. Dump files can be [opened in Visual Studio for debugging](https://msdn.microsoft.com/en-us/library/d5zhxt22.aspx).
+This page allows you to collect crash dumps for your side-loaded apps. Check the **Crash Dumps Enabled** checkbox for each app for which you want to collect crash dumps. Return to this page to collect crash dumps. Dump files can be [opened in Visual Studio for debugging](https://msdn.microsoft.com/library/d5zhxt22.aspx).
 
 ### File Explorer
 
@@ -224,7 +224,7 @@ Use the file explorer to browse, upload, and download files. You can work with f
 >[!NOTE]
 >Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](commercial-features.md).
 
-Please check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/en-us/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
+Please check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
 
 ### Logging
 

@@ -87,7 +87,7 @@ The following resources will help you learn how to edit documentation using the 
 
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](http://www.tablesgenerator.com/markdown_tables).
 
-The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code](#using-visual-studio-code) to edit the documentation.
+The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code](#using-visual-studio-code) to edit the documentation.
 
 ### Adding images
 
@@ -173,7 +173,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 The following Visual Studio Code extensions are very useful when editing documentation:
 
-- [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) - Use **Alt+M** to bring up a menu of docs authoring options like:
+- [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) - Use **Alt+M** to bring up a menu of docs authoring options like:
    - Search and reference images you've uploaded.
    - Add formatting like lists, tables, and docs-specific call-outs like `>[!NOTE]`.
    - Search and reference internal links and bookmarks (links to specific sections within a page).

@@ -44,17 +44,17 @@ In your application, it is up to you as to how you will integrate the results wi
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
+- [Unity 2017.4](install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - Internet access for Azure, and for Azure Bot retrieval. For more information, [please follow this link](https://dev.botframework.com/).
 
 ### Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/en-us/hololens/hololens-setup). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user). 
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
@@ -264,7 +264,7 @@ Now that you have built the code for your bot, you have to publish it to an inst
     2. Select a **Subscription**.
     3. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, [please follow this link](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal)
+        > If you wish to read more about Azure Resource Groups, [please follow this link](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)
 
     4. Determine the Location for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
     5. Select the **Pricing Tier** appropriate for you, if this is the first time creating a *Web App Bot* Service, a free tier (named F0) should be available to you
@@ -574,7 +574,7 @@ To create this class:
         internal string InteractibleTag = "BotTag";
 
         /// <summary>
-        /// Lenght of the gaze
+        /// Length of the gaze
         /// </summary>
         internal float GazeMaxDistance = 300;
 

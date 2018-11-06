@@ -23,7 +23,7 @@ Whenever the device restarts or resumes from standby, the credentials for this a
 ## Multi-user support
 
 >[!NOTE]
->Multi-user support requires the Commercial Suite, as this is a [Windows Holographic for Business](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise) feature.
+>Multi-user support requires the Commercial Suite, as this is a [Windows Holographic for Business](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise) feature.
 
 Starting with the [Windows 10 April 2018 Update](release-notes-april-2018.md), HoloLens supports multiple users from within the same AAD tenant. To use this you must set up the device initially with an account that belongs to your organization. Subsequently, other users from the same tenant will be able to sign into the device from the sign-in screen or by tapping the user tile on the Start panel to sign out the existing user. 
 
@@ -37,17 +37,17 @@ Within a single device account, users can link additional web account credential
 
 ## Using single sign-on within an app
 
-As an app developer, you can take advantage of having a connected identity on HoloLens with the [Windows Account Manager APIs](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/windows.security.authentication.web.core.aspx), just as you would on other Windows devices. Some code samples for these APIs are available [here](http://go.microsoft.com/fwlink/p/?LinkId=620621).
+As an app developer, you can take advantage of having a connected identity on HoloLens with the [Windows Account Manager APIs](https://msdn.microsoft.com/library/windows/apps/xaml/windows.security.authentication.web.core.aspx), just as you would on other Windows devices. Some code samples for these APIs are available [here](http://go.microsoft.com/fwlink/p/?LinkId=620621).
 
 Any account interrupts that may occur such as requesting user consent for account information, two-factor authentication etc. must be handled when the app requests an authentication token.
 
-If your app requires a specific account type that hasn't been linked previously, your app can ask the system to prompt the user to add one. This will trigger the account settings pane to be launched as a modal child of your app. For 2D apps, this window will render directly over the center of your app and for Unity apps, this will briefly take the user out of your holographic app so that this child window can be rendered. Customizing the commands and actions on this pane is described [here](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.applicationsettings.webaccountcommand.aspx).
+If your app requires a specific account type that hasn't been linked previously, your app can ask the system to prompt the user to add one. This will trigger the account settings pane to be launched as a modal child of your app. For 2D apps, this window will render directly over the center of your app and for Unity apps, this will briefly take the user out of your holographic app so that this child window can be rendered. Customizing the commands and actions on this pane is described [here](https://msdn.microsoft.com/library/windows/apps/windows.ui.applicationsettings.webaccountcommand.aspx).
 
 ## Enterprise and other authentication
 
-If your app makes use of other types of authentication, such as NTLM, Basic, or Kerberos, you can use [Windows Credential UI](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.credentials.ui.aspx) to collect, process, and store the user's credentials. The user experience for collecting these credentials is very similar to other cloud driven account interrupts and will appear as a child app on top of your 2D app or briefly suspend a Unity app to show the UI.
+If your app makes use of other types of authentication, such as NTLM, Basic, or Kerberos, you can use [Windows Credential UI](https://msdn.microsoft.com/library/windows/apps/windows.security.credentials.ui.aspx) to collect, process, and store the user's credentials. The user experience for collecting these credentials is very similar to other cloud driven account interrupts and will appear as a child app on top of your 2D app or briefly suspend a Unity app to show the UI.
 
 ## Deprecated APIs
 
-One difference for developing on HoloLens from Desktop is that [OnlineIDAuthenticator](https://msdn.microsoft.com/en-us/library/windows/apps/windows.security.authentication.onlineid.onlineidauthenticator.aspx) API is not fully supported. Although it will return a token if the primary account is in good-standing, interrupts such as those described above will not display any UI for the user, and will fail to correctly authenticate the account.
+One difference for developing on HoloLens from Desktop is that [OnlineIDAuthenticator](https://msdn.microsoft.com/library/windows/apps/windows.security.authentication.onlineid.onlineidauthenticator.aspx) API is not fully supported. Although it will return a token if the primary account is in good-standing, interrupts such as those described above will not display any UI for the user, and will fail to correctly authenticate the account.
 

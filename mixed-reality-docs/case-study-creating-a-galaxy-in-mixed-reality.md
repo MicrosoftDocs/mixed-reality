@@ -144,7 +144,7 @@ Doing full screen clouds and trying to blur them would have been a bad idea, so 
 
 ### A bit of context first
 
-When using textures in a game the texture size will rarely match the area we want to use it in, but we can use different kind of texture filtering to get the graphic card to interpolate the color we want from the pixels of the texture ([Texture Filtering](https://msdn.microsoft.com/en-us/library/dn642451.aspx)). The filtering that interests us is [bilinear filtering](https://msdn.microsoft.com/en-us/library/windows/desktop/bb172357.aspx) which will compute the value of any pixel using the 4 nearest neighbors.
+When using textures in a game the texture size will rarely match the area we want to use it in, but we can use different kind of texture filtering to get the graphic card to interpolate the color we want from the pixels of the texture ([Texture Filtering](https://msdn.microsoft.com/library/dn642451.aspx)). The filtering that interests us is [bilinear filtering](https://msdn.microsoft.com/library/windows/desktop/bb172357.aspx) which will compute the value of any pixel using the 4 nearest neighbors.
 
 ![Original before filtering](images/texture-1.png)
 

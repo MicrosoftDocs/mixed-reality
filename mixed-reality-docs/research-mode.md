@@ -53,7 +53,7 @@ Once your device has rebooted, applications that have been loaded through Device
 
 ## Using sensor data in your apps
 
-Applications can access sensor stream data by opening [Media Foundation](https://msdn.microsoft.com/en-us/library/windows/desktop/ms694197) streams in exactly the same way they access the photo/video camera stream. 
+Applications can access sensor stream data by opening [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) streams in exactly the same way they access the photo/video camera stream. 
 
 All APIs that work for HoloLens development are also available when in Research mode. In particular, the application can know precisely where HoloLens is in 6DoF space at each sensor frame capture time.
 
@@ -65,6 +65,6 @@ See the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in th
 
 ## See also
 
-* [Microsoft Media Foundation](https://msdn.microsoft.com/en-us/library/windows/desktop/ms694197)
+* [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
 * [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV)
 * [Using the Windows Device Portal](using-the-windows-device-portal.md)

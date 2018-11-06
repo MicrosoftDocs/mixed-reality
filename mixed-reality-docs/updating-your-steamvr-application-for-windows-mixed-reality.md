@@ -54,15 +54,15 @@ To display Windows Mixed Reality support for your title, go to the "Edit Store P
 
 ## Bugs and feedback
 
-Your feedback is invaluable when it comes to improving the Windows Mixed Reality SteamVR experience. Please submit all feedback and bugs through the [Windows Feedback Hub](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/filing-feedback). Here are some [tips on how to make your SteamVR feedback as helpful as possible](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr).
+Your feedback is invaluable when it comes to improving the Windows Mixed Reality SteamVR experience. Please submit all feedback and bugs through the [Windows Feedback Hub](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback). Here are some [tips on how to make your SteamVR feedback as helpful as possible](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr).
 
 If you have questions or comments to share, you can also reach us on our [Steam forum](http://steamcommunity.com/app/719950/discussions/).
 
 ## FAQs and troubleshooting
 
-If you're running into general issues setting up or playing your experience, [check out the latest troubleshooting steps](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr).
+If you're running into general issues setting up or playing your experience, [check out the latest troubleshooting steps](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr).
 
 ## See also
 * [Install the tools](install-the-tools.md)
-* [Headset and motion controller driver history](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
-* [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Headset and motion controller driver history](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
+* [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

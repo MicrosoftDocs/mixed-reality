@@ -15,7 +15,7 @@ This service will allow you to train a machine learning model using object image
 
 ![course outcome](images/AzureLabs-Lab302b-00.png)
 
-Azure Custom Vision is a Microsoft Cognitive Service which allows developers to build custom image classifiers. These classifiers can then be used with new images to recognize, or classify, objects within that new image. The Service provides a simple, easy to use, online portal to streamline the process. For more information, visit the [Azure Custom Vision Service page](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home).
+Azure Custom Vision is a Microsoft Cognitive Service which allows developers to build custom image classifiers. These classifiers can then be used with new images to recognize, or classify, objects within that new image. The Service provides a simple, easy to use, online portal to streamline the process. For more information, visit the [Azure Custom Vision Service page](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
 
 Upon completion of this course, you will have a mixed reality application which will be able to work in two modes:
 
@@ -46,10 +46,10 @@ This course will teach you how to get the results from the Custom Vision Service
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
+- [Unity 2017.4](install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - A camera connected to your PC (for immersive headset development)
 - Internet access for Azure setup and Custom Vision API retrieval
@@ -58,7 +58,7 @@ We recommend the following hardware and software for this course:
 ## Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/en-us/hololens/hololens-setup). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user). 
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
@@ -69,7 +69,7 @@ For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tunin
 
 To use the *Custom Vision Service* in Azure, you will need to configure an instance of the Service to be made available to your application.
 
-1.  First, [navigate to the *Custom Vision Service* main page](https://azure.microsoft.com/en-gb/services/cognitive-services/custom-vision-service/).
+1.  First, [navigate to the *Custom Vision Service* main page](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/).
 
 2.  Click on the **Get Started** button.
 
@@ -104,7 +104,7 @@ To use the *Custom Vision Service* in Azure, you will need to configure an insta
 
         ![](images/AzureLabs-Lab302b-05.png)
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
 7.  Once you are finished, click on **Create project**, you will be redirected to the Custom Vision Service, project page.
 

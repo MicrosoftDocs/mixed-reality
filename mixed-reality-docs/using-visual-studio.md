@@ -83,7 +83,7 @@ To un-pair your HoloLens from all computers it was paired with, launch the **Set
 
 ## Graphics Debugger
 
-The Visual Studio Graphics Diagnostics tools are very helpful when writing and optimizing a Holographic app. See [Visual Studio Graphics Diagnostics on MSDN](https://msdn.microsoft.com/en-us/library/hh315751.aspx) for full details.
+The Visual Studio Graphics Diagnostics tools are very helpful when writing and optimizing a Holographic app. See [Visual Studio Graphics Diagnostics on MSDN](https://msdn.microsoft.com/library/hh315751.aspx) for full details.
 
 **To Start the Graphics Debugger**
 1. Follow the instructions above to target a device or emulator
@@ -92,7 +92,7 @@ The Visual Studio Graphics Diagnostics tools are very helpful when writing and o
 
 ## Profiling
 
-The Visual Studio profiling tools allow you to analyze your app's performance and resource use. This includes tools to optimize CPU, memory, graphics, and network use. See [Run diagnostic tools without debugging on MSDN](https://msdn.microsoft.com/en-us/library/dn957936.aspx) for full details.
+The Visual Studio profiling tools allow you to analyze your app's performance and resource use. This includes tools to optimize CPU, memory, graphics, and network use. See [Run diagnostic tools without debugging on MSDN](https://msdn.microsoft.com/library/dn957936.aspx) for full details.
 
 **To Start the Profiling Tools with HoloLens**
 1. Follow the instructions above to target a device or emulator
@@ -115,5 +115,5 @@ You can use Visual Studio to debug a Universal Windows app that's installed with
 ## See also
 * [Install the tools](install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
-* [Deploying and debugging Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt613243.aspx)
-* [Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development)
+* [Deploying and debugging Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
+* [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
