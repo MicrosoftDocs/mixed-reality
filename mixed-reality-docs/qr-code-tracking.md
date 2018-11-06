@@ -1,6 +1,6 @@
 ---
 title: QR code tracking
-description: Learn how to turn on QR code recognition and tracking features for your Windows Mixed Reality immersive (VR) headset.
+description: Learn how to turn on QR code tracking for your Windows Mixed Reality immersive (VR) headset and implement the feature in your VR apps.
 author: yoyozilla
 ms.author: yoyoz
 ms.date: 11/06/2018
