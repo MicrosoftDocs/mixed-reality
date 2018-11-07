@@ -241,3 +241,5 @@
 ## [See your photos](see-your-photos.md)
 ## [Sensor tuning](sensor-tuning.md)
 ## [Updating HoloLens](updating-hololens.md)
+
+# [Contributing to this documentation](CONTRIBUTING.md)
