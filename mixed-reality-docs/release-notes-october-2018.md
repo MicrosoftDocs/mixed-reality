@@ -18,7 +18,6 @@ To update to the latest release on HoloLens or PC (for Windows Mixed Reality imm
 
 **Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.17763.1**)<br>
 **Latest release for HoloLens:** Windows 10 October 2018 Update (**10.0.17763.134**)<br>
-<br>
 
 ## New features for Windows Mixed Reality immersive headsets
 
