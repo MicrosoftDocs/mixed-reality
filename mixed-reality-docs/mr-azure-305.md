@@ -747,7 +747,7 @@ To create this class:
 
 8.  Back in the Unity Editor, click and drag the *ShapeFactory* class from the **Scripts** folder to the **Main Camera** object in the *Hierarchy Panel*.
 
-9. With the Main Camera selected you will notice the *ShapeFactory* script component is missing the *Spawn Point* reference. To fix it, drag the **ShapeSpawnPoint** object from the *Hierachy Panel* to the **Spawn Point** reference target.
+9. With the Main Camera selected you will notice the *ShapeFactory* script component is missing the *Spawn Point* reference. To fix it, drag the **ShapeSpawnPoint** object from the *Hierarchy Panel* to the **Spawn Point** reference target.
 
     ![set shape factory reference target](images/AzureLabs-Lab5-53.png)
 
