@@ -1070,7 +1070,7 @@ To create the second script:
                 gameObjHasMoved = false;
 
                 // Call the Azure Function that will update the appropriate Entity in the Azure Table
-                // and send a Notification to all subrscribed Apps
+                // and send a Notification to all subscribed Apps
                 Debug.Log("Calling Azure Function");
 
                 StartCoroutine(UpdateCloudScene(gameObjHeld.name, gameObjHeld.position.x, gameObjHeld.position.y, gameObjHeld.position.z));
