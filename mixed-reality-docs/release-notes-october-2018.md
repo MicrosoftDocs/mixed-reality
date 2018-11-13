@@ -16,7 +16,7 @@ The **[Windows 10 October 2018 Update](https://blogs.windows.com/windowsexperien
 
 To update to the latest release on HoloLens or PC (for Windows Mixed Reality immersive (VR) headsets), open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 October 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
 
-**Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.17763.1**)<br>
+**Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.17763.107**)<br>
 **Latest release for HoloLens:** Windows 10 October 2018 Update (**10.0.17763.134**)<br>
 
 ## New features for Windows Mixed Reality immersive headsets
