@@ -294,7 +294,7 @@ void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 
 **How close do I need to be to the QR code to detect it?**
 
-This will depend on the size of the QR code, and also what version it is. For a version 1 QR code varying from 5 cm sides to 25 cm sides, the minimum detection distance ranges from 0.25 meters to 0.5 meters. The farthest away these can be detected from goes from about 0.5 meters for the smaller QR code targets to 2 meters for the bigger. For QR codes bigger than that, you can estimate; the detection distance for size increases linearly. Our tracker does not work with QR codes with sides smaller than 5 cm.
+This will depend on the size of the QR code, and also what version it is. For a version 1 QR code varying from 5 cm sides to 25 cm sides, the minimum detection distance ranges from 0.15 meters to 0.5 meters. The farthest away these can be detected from goes from about 0.3 meters for the smaller QR code targets to 1.4 meters for the bigger. For QR codes bigger than that, you can estimate; the detection distance for size increases linearly. Our tracker does not work with QR codes with sides smaller than 5 cm.
 
 **Do QR codes with logos work?**
 
