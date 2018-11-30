@@ -91,7 +91,7 @@ We've worked hard to deliver a great Windows Mixed Reality experience, but we're
 ### HoloLens
  
 #### After update
-You may notice the following issues when using RS5 on your HoloLens:
+You may notice the following issues when using the Windows 10 October 2018 Update on your HoloLens:
 * **Apps can end up in sign-in loop when launched from a notification** – Some apps requiring sign-in can end-up in an endless sign-in loop when launched from a notification. As an example, this can happen after installing the Microsoft Company Portal app from the Microsoft Store and launching it from the installation complete notification.
 * **App sign-in page can complete with a blank page** – In some cases when a sign-in prompt shows over your application, on completion the sign-in page does not close and instead shows a blank (black) page. You can either close the blank page or move it to uncover the application underneath. As an example, this can happen on sign-in during MDM enrollment from the Settings app. 
 
