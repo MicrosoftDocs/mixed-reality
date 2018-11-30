@@ -84,6 +84,17 @@ The Windows 10 October 2018 Update is publicly available for all HoloLens custom
 
 You can now use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, text-to-speech (TTS), and voice commands.
 
+## Known issues
+
+We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](https://docs.microsoft.com/en-us/windows/mixed-reality/give-us-feedback).
+
+### HoloLens
+ 
+#### After update
+You may notice the following issues when using RS5 on your HoloLens:
+* **Apps can end up in sign-in loop when launched from a notification** – Some apps requiring sign-in can end-up in an endless sign-in loop when launched from a notification. As an example, this can happen after installing the Microsoft Company Portal app from the Microsoft Store and launching it from the installation complete notification.
+* **App sign-in page can complete with a blank page** – In some cases when a sign-in prompt shows over your application, on completion the sign-in page does not close and instead shows a blank (black) page. You can either close the blank page or move it to uncover the application underneath. As an example, this can happen on sign-in during MDM enrollment from the Settings app. 
+
 ## Provide feedback and report issues
 
 Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](give-us-feedback.md) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
