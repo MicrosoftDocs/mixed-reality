@@ -47,7 +47,7 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     
 ### For developers
 
-* **[QR code tracking](qr-code-tracking.md)** - Enable QR code tracking in your mixed reality app, allowing Windows Mixed Reality immerssive (VR) headsets to scan for QR codes and report them back to interested apps.
+* **[QR code tracking](qr-code-tracking.md)** - Enable QR code tracking in your mixed reality app, allowing Windows Mixed Reality immersive (VR) headsets to scan for QR codes and report them back to interested apps.
 * **Hardware DRM support for immersive apps** - Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
 * **[Integrate mixed reality capture UI into immersive apps](mixed-reality-capture-for-developers.md#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
 
