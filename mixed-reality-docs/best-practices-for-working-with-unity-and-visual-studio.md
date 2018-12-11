@@ -43,7 +43,9 @@ Download [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.micros
 
 ## Expose C# class variables for easy tuning
 
-Make C# class variables public to expose them in the editor UI. This makes it possible to easily tweak variables while playing in-editor. This is especially useful for tuning interaction mechanic properties.
+There are two ways to expose class variables. The recommended way to do so is to add the [SerializeField] attribute to your private variables. This allows them to be accessed from the editor but not programatically exposed.  The other option is to make C# class variables public to expose them in the editor UI. 
+
+Both approaches make it possible to easily tweak variables while playing in-editor. This is especially useful for tuning interaction mechanic properties.
 
 ## Regenerate UWP Visual Studio solutions after Windows SDK or Unity upgrade
 
