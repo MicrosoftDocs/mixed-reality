@@ -1,7 +1,7 @@
 ---
 title: HoloLens Demo Guide
 description: How to fit and clean HoloLens in demo situations
-author: Jesse McCulloch
+author: JesseMcCulloch
 ms.author: jemccull
 ms.date: 12/27/2018
 ms.topic: article
