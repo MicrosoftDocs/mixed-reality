@@ -7,6 +7,7 @@
 ### [HoloLens hardware details](hololens-hardware-details.md)
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Hardware accessories](hardware-accessories.md)
+### [HoloLens Demo Fit and Cleaning Guide](hololens-demo-guide.md)
 ## Core building blocks
 ### [Gaze](gaze.md)
 ### [Gestures](gestures.md)
