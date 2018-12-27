@@ -23,7 +23,7 @@ keywords: HoloLens, user
 ![Step Four](images/FitGuideStep4.png)
 
 5. The headband should sit at the top of the forehead, just below your hairline, with the speakers above the ears. By looking at them from the front, you should be able to tell that the lenses are centered over their eyes.
-![Step Five](images/FitGuideStep5.png)
+![Step Five](images/FitGuideSetep5.png)
 
 <H1>Cleaning the HoloLens between demos</H1>
 
