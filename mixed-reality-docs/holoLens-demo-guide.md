@@ -11,19 +11,19 @@ keywords: HoloLens, user
 <H1>Fitting a HoloLens device for demo </H1>
 
 1. Rotate the headband up to about 20-30 degrees.
-![Step One](images/FitGuideStep1.png)
+<br>![Step One](images/FitGuideStep1.png)
 
 2. Push the headband back. Do not pull it back, or manipulate the band behind the hinge, as this can break the band over time.
-![Step Two](images/FitGuideStep2.png)
+<br>![Step Two](images/FitGuideStep2.png)
 
 3. Turn the adjustment wheel to extend the headband all the way out. Show the user where the band should rest on the forehead, and show them the adjustment wheel.
-![Step Three](images/FitGuideStep3.png)
+<br>![Step Three](images/FitGuideStep3.png)
 
 4. Hold the headband for the user, and have them grab the arms of the device and place in on their head. Make sure the band rests in the correct spot, and let them tighten the adjustment wheel. Slide the visor back.
-![Step Four](images/FitGuideStep4.png)
+<br>![Step Four](images/FitGuideStep4.png)
 
 5. The headband should sit at the top of the forehead, just below your hairline, with the speakers above the ears. By looking at them from the front, you should be able to tell that the lenses are centered over their eyes.
-![Step Five](images/FitGuideStep5.png)
+<br>![Step Five](images/FitGuideStep5.png)
 
 <H1>Cleaning the HoloLens between demos</H1>
 
