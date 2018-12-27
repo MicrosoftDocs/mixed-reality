@@ -1,3 +1,13 @@
+---
+title: HoloLens Demo Guide
+description: How to fit and clean HoloLens in demo situations
+author: Jesse McCulloch
+ms.author: jemccull
+ms.date: 12/27/2018
+ms.topic: article
+keywords: HoloLens, user
+---
+
 <H1>Fitting a HoloLens device for demo </H1>
 
 1. Rotate the headband up to about 20-30 degrees. ![Step One](/images/FitGuideStep1.png)
