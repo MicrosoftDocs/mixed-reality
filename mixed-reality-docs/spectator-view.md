@@ -237,7 +237,7 @@ The open-source version of spectator view trades off the ability to move the cam
 
 To make your app ready for spectator view, you'll need to build a [shared experience](holograms-240.md) app and ensure the app can run on both HoloLens as well as desktop in the Unity editor. The desktop version of the app will have additional components built in that composite the video feed with the rendered holograms.
 
-## How to set up Spectator View Pro
+## How to set up Spectator View Pro 
 
 ### Requirements
 
