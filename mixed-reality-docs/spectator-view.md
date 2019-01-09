@@ -52,8 +52,7 @@ The following table shows both options and their capabilities. Choose the option
 - Recording of video + holograms + ambient sound + hologram sound.
 - Share sheet so you can save video, email it, or share with other supporting apps.
 
-[!NOTE] 
-The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
+>The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
 
 Spectator View (Preview) video
 [![Spectator View Preview Video](https://img.youtube.com/vi/3fXlPw_FGLg/0.jpg)](https://www.youtube.com/watch?v=3fXlPw_FGLg)
