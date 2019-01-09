@@ -55,6 +55,7 @@ The following table shows both options and their capabilities. Choose the option
 >The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
 
 Spectator View (Preview) video
+
 [![Spectator View Preview Video](https://img.youtube.com/vi/3fXlPw_FGLg/0.jpg)](https://www.youtube.com/watch?v=3fXlPw_FGLg)
 
 ### Licenses
