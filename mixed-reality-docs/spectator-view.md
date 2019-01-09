@@ -56,7 +56,7 @@ The following table shows both options and their capabilities. Choose the option
 
 Spectator View (Preview) video
 
-[![Spectator View Preview Video](https://img.youtube.com/vi/3fXlPw_FGLg/0.jpg)](https://www.youtube.com/watch?v=3fXlPw_FGLg)
+<a href="https://www.youtube.com/watch?v=3fXlPw_FGLg" target="_blank"><img src="https://img.youtube.com/vi/3fXlPw_FGLg/0.jpg"></a>
 </BR>_Click image to play video_
 
 ### Licenses
