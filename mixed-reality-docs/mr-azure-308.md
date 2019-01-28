@@ -4,6 +4,7 @@ description: Complete this course to learn how to implement Azure Notification H
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, notification, functions, tables, notification hubs, hololens, immersive, vr
 ---
 

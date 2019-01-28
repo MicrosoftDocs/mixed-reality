@@ -4,6 +4,7 @@ description: Complete this course to learn how to recognize visual content withi
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr
 ---
 

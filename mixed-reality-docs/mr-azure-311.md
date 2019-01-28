@@ -4,6 +4,7 @@ description: Complete this course to learn how to leverage Microsoft Graph, and 
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, microsoft graph, hololens, immersive, vr
 ---
 

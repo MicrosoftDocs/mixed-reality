@@ -4,6 +4,7 @@ description: Complete this course to learn how to implement Azure Storage and Fu
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, functions, storage, hololens, immersive, vr
 ---
 

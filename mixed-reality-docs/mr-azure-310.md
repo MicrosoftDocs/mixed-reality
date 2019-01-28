@@ -4,6 +4,7 @@ description: Complete this course to learn how to train a machine learning model
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, custom vision, object detection, mixed reality, academy, unity, tutorial, api, hololens
 ---
 
