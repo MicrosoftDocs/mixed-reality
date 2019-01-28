@@ -2,7 +2,7 @@
 title: MR and Azure 301 - Language translation
 description: Complete this course to learn how to implement the Azure Translator Text API within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, hololens, immersive, vr
 ---

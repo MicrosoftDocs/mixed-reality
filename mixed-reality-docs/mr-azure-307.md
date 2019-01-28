@@ -2,7 +2,7 @@
 title: MR and Azure 307 - Machine learning
 description: Complete this course to learn how to implement Azure Machine Learning Studio within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, machine learning, ml, machine learning studio, hololens, immersive, vr
 ---

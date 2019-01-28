@@ -2,7 +2,7 @@
 title: MR and Azure 306 - Streaming video
 description: Complete this course to learn how to implement Azure Media Services within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, media services, streaming video, 360, immersive, vr
 ---

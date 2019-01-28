@@ -2,7 +2,7 @@
 title: MR and Azure 308 - Cross-device notifications
 description: Complete this course to learn how to implement Azure Notification Hubs, Azure Functions, and Azure Storage and Tables within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
 keywords: azure, mixed reality, academy, unity, tutorial, api, notification, functions, tables, notification hubs, hololens, immersive, vr
 ---

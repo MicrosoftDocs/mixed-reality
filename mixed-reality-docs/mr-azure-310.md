@@ -2,7 +2,7 @@
 title: MR and Azure 310 - Object detection
 description: Complete this course to learn how to train a machine learning model, and then use the trained model to recognize similar objects and their position in the real world from within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
 keywords: azure, custom vision, object detection, mixed reality, academy, unity, tutorial, api, hololens
 ---
