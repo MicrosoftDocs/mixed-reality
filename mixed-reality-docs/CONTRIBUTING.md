@@ -1,3 +1,12 @@
+---
+title: Contributing instructions
+description: How to contribute to the Windows Mixed Reality documentation. 
+author: mattwojo
+ms.author: mattwoj
+ms.date: 03/21/2018
+ms.topic: article
+---
+
 # Contributing to Windows Mixed Reality developer documentation
 
 Welcome to the [public repo for Windows Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.** 

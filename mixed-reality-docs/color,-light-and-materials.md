@@ -2,7 +2,7 @@
 title: Color, light and materials
 description: Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
 author: mavitazk
-ms.author: pinkb, mavitazk 
+ms.author: pinkb 
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, color, light, materials

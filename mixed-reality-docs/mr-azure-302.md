@@ -2,8 +2,9 @@
 title: MR and Azure 302 - Computer vision
 description: Complete this course to learn how to recognize visual content within a provided image, using Azure Computer Vision in a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr
 ---
 
