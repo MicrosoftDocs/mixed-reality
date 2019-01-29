@@ -37,7 +37,7 @@ The scenes show how to use Vuforia Image Targets to recognize an image and augme
 Developing a Vuforia Engine app for HoloLens is fundamentally the same as developing Vuforia Engine apps for other devices. You can then apply the build settings and configurations described in the section below. That’s all that’s needed to enable Vuforia Engine to work with the HoloLens spatial mapping and positional tracking systems.
 
 ## Build and Run the Vuforia Engine Sample for HoloLens
-1.	Download the [Vuforia Engine Sample for HoloLens] (https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) from the Unity Asset Store
+1.	Download the [Vuforia Engine Sample for HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) from the Unity Asset Store
 2.	Apply the [recommended Unity engine options for power and performance](https://docs.microsoft.com/en-us/windows/mixed-reality/performance-recommendations-for-unity)
 3.	Add the sample scenes to Scenes in Build.
 4.	Set your platform build target for “Universal Windows Platform” in File > Build Settings.
