@@ -42,6 +42,12 @@ In order to **turn off QR code tracking** for your immersive (VR) headset:
     `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F`
 4. Reconnect your headset to your PC. This will make any discovered QR codes "non-locatable."
 
+## Printing codes
+
+First and foremost, the [spec for QR codes](https://www.qrcode.com/en/howto/code.html) says "The QR Code symbol area requires a margin or "quiet zone" around it to be used. The margin is a clear area around a symbol where nothing is printed. QR Code requires a four-module wide margin at all sides of a symbol." This needs to have a width, on every side, of four times the size of a module - a single black square in the code. The spec page contains advice on how to print QR codes and figure out the area required to make a certain sized QR code.
+
+Currently QR code detection quality is susceptible to varying illumination and backdrop. To combat this, note your illumination and print the appropriate code. In a scene with particularly bright lighting, print a code that is black on a gray background. Under a low-light scene, black on white works. Likewise, if the backdrop to the code is particularly dark, try a black on gray code if your detection rate is low. Otherwise, if the backdrop is lighter, a regular code should work fine.
+
 ## QRTracking API
 
 The QRTracking plugin exposes the APIs for QR code tracking. To use the plugin, you will need to use the following types from the *QRCodesTrackerPlugin* namespace.
