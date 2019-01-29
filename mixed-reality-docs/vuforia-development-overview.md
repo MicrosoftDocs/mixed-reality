@@ -82,7 +82,7 @@ Vuforia uses the ARCamera prefab as its scene camera in a Unity project. You’l
 
 **Enabling Extended Tracking on a Target**
 
-Vuforia will automatically transform the pose of a target that uses extended tracking into the HoloLens spatial coordinate system. This allows HoloLens to take over tracking, and to integrate any content augmenting the target into the spatial map of the target’s surroundings. This process occurs between the Vuforia SDK and mixed reality APIs in Unity, and does not require any programming by the developer - it's handled automatically.
+Vuforia will automatically transform the pose of a target that uses extended tracking into the HoloLens spatial coordinate system. This allows HoloLens to take over tracking, and to integrate any content augmenting the target into the spatial map of the target’s surroundings. This process occurs between the Vuforia SDK and mixed reality APIs in Unity, and does not require any programming by the developer - it's handled automatically..
 
 **Here is what occurs...**
 1. Vuforia’s target Tracker recognizes the target
