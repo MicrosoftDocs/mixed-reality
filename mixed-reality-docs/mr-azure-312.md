@@ -2,8 +2,9 @@
 title: MR and Azure 312 - Bot integration
 description: Complete this course to learn how to create and deploy a bot, using Microsoft Bot Framework v4, and communicate with it in a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr, microsoft bot framework v4, web app bot, bot framework, microsoft bot
 ---
 
