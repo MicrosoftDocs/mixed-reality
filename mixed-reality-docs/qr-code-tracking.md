@@ -176,7 +176,7 @@ You can also use the QR Tracking API in Unity without taking a dependency on MRT
 
 1. Create a new folder in the assets folder of your unity project with the name: "Plugins".
 2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created.
-3. You can use the QR tracking scrips in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/scripts) or write your own.
+3. You can use the QR tracking scripts in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Scripts) or write your own.
 
 ## Implementing QR code tracking in DirectX
 
