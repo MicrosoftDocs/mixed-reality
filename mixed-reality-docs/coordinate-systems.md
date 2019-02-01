@@ -109,7 +109,7 @@ When first setting up an immersive headset, the user defines a **stage**, which 
 
 The user may also optionally define **stage bounds**, an area within the room that they've cleared of furniture where they intend to move around in mixed reality. If so, the app can build a **room-scale experience**, using these bounds to ensure that holograms are always placed where the user can reach them.
 
-Because the stage frame of reference provides a single fixed coordinate system within which to place floor-relative content, it is the easiest path for porting standing-scale and room-scale applications developed for virtual reality headsets. However, as with those VR platforms, a single coordinate system can only stabilize content in about a 5 meter (15 foot) diameter, before lever-arm effects cause content far from the center to shift noticeably as the system adjusts. To go beyond 5 meters, spatial anchors are needed.
+Because the stage frame of reference provides a single fixed coordinate system within which to place floor-relative content, it is the easiest path for porting standing-scale and room-scale applications developed for virtual reality headsets. However, as with those VR platforms, a single coordinate system can only stabilize content in about a 5 meter (16 foot) diameter, before lever-arm effects cause content far from the center to shift noticeably as the system adjusts. To go beyond 5 meters, spatial anchors are needed.
 
 ## Building a world-scale experience
 
