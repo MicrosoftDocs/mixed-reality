@@ -18,7 +18,7 @@ San Francisco, CA 94107
 
 
 ---
-## Non-Gaming VR meetup <span style="color:blue">some *blue* text</span>
+## Non-Gaming VR meetup
 ### February 12, 2019
 Join us at our next Non-Gaming XR meetup for presentations, discussion, demos, and networking centered around exploring how immersive technologies are being applied to the construction, architecture and engineering industries.
 During the presentations, we'll learn from leading companies as they share best enterprise use cases and share how VR/AR above other technologies are providing the best solutions for the growing needs of the AEC market.
