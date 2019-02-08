@@ -16,96 +16,94 @@ Join the Windows Mixed Reality Team at these upcoming events!
 680 Folsom St.<br>
 San Francisco, CA 94107
 
----
-## Mixed Reality: Augmenting Our World
-### September 20, 2018 5:00PM - 8:30PM
-Microsoft’s very own Yoyo Zhang, Program Manager, Windows Mixed Reality, will be presenting at this event. Join us for an exciting evening of talks, a panel discussion, and a HoloLens demonstration as we explore the new possibilities of an augmented world. Hope to see you there! 
-
-**For the full agenda, list of speakers and registration click [here](https://siliconvalleyforum.com/event/mixed-reality-augmenting-our-world/).**
 
 ---
-## Mixed Reality: Mixed Reality Workgroup
-### September 24, 2018
-The Mixed Reality Workgroup is an opportunity for MR developers (AR, VR, XR, MR, whatever!) to come together, share ideas, and get work done in a friendly and supportive environment!
+## Non-Gaming VR meetup
+### February 12, 2019
+Join us at our next Non-Gaming XR meetup for presentations, discussion, demos, and networking centered around exploring how immersive technologies are being applied to the construction, architecture and engineering industries.
+During the presentations, we'll learn from leading companies as they share best enterprise use cases and share how VR/AR above other technologies are providing the best solutions for the growing needs of the AEC market.
 
-**Register [here](https://www.meetup.com/hololens-mr/events/254791796/).**
-
----
-## IGNITE
-### September 24-28, 2018
-Get the latest insights and skills from technology leaders and practitioners shaping the future of cloud, data, business intelligence, teamwork, and productivity. Immerse yourself with the latest tools, tech, and experiences that matter, and hear the latest updates and ideas directly from the experts.
-
-**This event has sold out, however make sure to join us for the keynote, more information is available [here](https://www.microsoft.com/en-us/ignite).**
+**More information and registration [here](https://www.meetup.com/Non-Gaming-VR/)**
 
 
 ---
-## AWE: Projection Mapping
-### October 9, 2018 6:30PM - 9:00PM
-This month AWE Nite SF explores the world of projection mapping. 
-Beer and pizza will be served during networking.
+## Mixed Reality Workgroup
+### February 13, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code!
+So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there! :)
 
-Interested in demoing, sponsoring or volunteering at this event? Fill out this form https://augmentedworldexpo.com/awe-nite-meetups/
+**More information and registration [here](https://www.meetup.com/hololens-mr/events/258336442/)**
 
-**Register for this event [here](https://www.meetup.com/AWENiteSF/events/252620735/).**
-
----
-## VRS 2018
-### October 16-17, 2018
-Microsoft will be sponsoring VRS 2018, the annual executive conference produced by Greenlight Insights, the global leader in virtual and augmented reality market intelligence.
-
-**Register for this event [here](https://www.vrsconference.com/).**
 
 ---
-## Microsoft HoloLens & Windows Mixed Reality Meet-Up 
-### October 15, 2018
-Let's keep on talking about HoloLens and Mixed Reality. This time it's about what it takes to make HoloLens apps, and an amazing new feature coming to HoloLens!.
+## XREdu Hackathon
+### February 23, 2019
+The XRedu Challenge is teaming with Mullibit hacks! Buils solutions to some of the most common problems faced in education using AR, VR or MR technologies to compete as a part of XRedu Challenge! We’ll provide you with the mentors, speakers and tutorials.
 
-**Register for this event [here](https://www.meetup.com/hololens-mr/events/254664405/).**
+**More information and registration [here](http://millibithacks.com/)**
 
----
-## VRS Summit
-### October 18, 2018
-This Innovation Junto will explore a variety of the hottest topics and themes in technology & innovation. Top 5 Junto 2018 Themes:
-*	Natural Language Processing & Voice Interfaces
-*	Blockchain
-*	Deep Neural Networks
-*	Big Data, the Cloud, and XR
-*	Artificial Intelligence & Computer Vision
-
-**Register for this event [here](https://vrsconference.com/innovation-junto/).**
 
 ---
-## Unite LA
-### October 23-25, 2018
-Come and check out the Microsoft booth at Unite LA – Unity’s premium developer event. Get up-to-date with the latest developments in the content-creation engine used by a community of millions. And see the beautiful and amazing things other creators are doing with 2D, 3D, and VR/AR games and experiences in Unity. Thousands of creators just like you, across multiple industries including games, film, auto and AEC, come together at Unite Los Angeles. It’s not to be missed!
+## Mixed Reality Workgroup
+### February 25, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code!
+So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there! :)
 
-**Register for this event [here](https://unite.unity.com/2018/los-angeles).**
+**More information and registration [here](https://www.meetup.com/hololens-mr/events/258336442/)**
 
----
-## Windows Mixed Reality Hackathon with Springer Nature 
-### November 7-9, 2018
-Explore the potential to visualize Springer Nature publications in new ways, using Augmented Reality with Microsoft HoloLens 
-- Help to shape the external awareness of Springer Nature: from traditional publisher to becoming a tech company with key focus on Open Research and Open Access publishing 
-- Serve as innovation hub for colleagues and industry partners to generate new technology  
-- Build strong relationships with top research institutes and corporations in the Bay Area 
-- Provide Springer Nature with first-hand feedback from users of our content and data and help to identify pain points and room for improvement  
-- Allow trial & error with swift prototypes and proofs of concept
-
-**Register for this event [here](https://www.eventbrite.com/e/springer-nature-hackathon-data-visualization-mixed-reality-in-research-publishing-tickets-50399147206).**
 
 ---
-# Past Events
-[AWE Nite SF – Augmented Reality & Sports](https://www.meetup.com/AWENiteSF/events/252620689/) - September 11, 2018
+## HoloLens & Mixed Reality Meetup
+### March 6, 2019
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
 
-[Mixed Reality & HoloLens Work Group](https://www.meetup.com/hololens-mr/events/254051135/) - September 10, 2018
+**More information and registration [here](https://www.meetup.com/hololens-mr/events/)**
 
-[WebXR Hackathon Challenge](https://www.eventbrite.com/e/webxr-weekend-challenge-tickets-46100317290) - June 29 - July 1, 2018
 
-[Non-Gaming meet-up (Medical)](https://www.eventbrite.com/e/ngvr-13-medical-xr-the-future-of-healthcare-using-immersive-technology-tickets-46958021707) - July 16, 2018
+---
+## Mixed Reality Workgroup
+### March 11, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code!
+So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there! :)
 
-[AWE meet-up](https://www.meetup.com/AWENiteSF/events/251691130/) - July 17, 2018
+**More information and registration [here](https://www.meetup.com/hololens-mr/events/258336442/)**
 
-[Women in Data -Soft Skills in Data Science meet-up](https://www.meetup.com/San-Francisco-Women-in-Data/events/251211158/) - July 18, 2018
 
-[XRedu Hackathon](https://www.eventbrite.com/e/xr-edu-challenge-tickets-46309791834) - July 27-29, 2018
+---
+## AWE Nite SF
+### March 12, 2019
+More information coming soon
 
+
+---
+## Mixed Reality Workgroup
+### March 25, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code!
+So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there! :)
+
+**More information and registration [here](https://www.meetup.com/hololens-mr/events/258336442/)**
+
+
+---
+## VR Arcade Conference
+### April 4-5, 2019
+The 4th Annual VR Arcade Conference is an intimate, hyper-focused business conference designed to connect the full stack of businesses that power the VR Arcades and Theme Parks Ecosystem to share learnings, find packages to start your own VR Arcade Business, present your products and services, and form strategic partnerships. Held in joint with SAM-i eSports Conference at the Microsoft Reactor.
+
+**More information and registration [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.virtualworldarcade.com%2Fvr-arcade-conference-2019.html%2F&data=02%7C01%7Cdaescu%40microsoft.com%7C589b679e909b4ef9868608d68d5445b9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636851790424206771&sdata=IyRQ8J4i4TQ6U75JxS6VVgR8JjLw39mgXm02CMQ5kiA%3D&reserved=0)**
+
+
+---
+## Mixed Reality Workgroup
+### April 8, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code!
+So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there! :)
+
+**More information and registration [here](https://www.meetup.com/hololens-mr/events/258336442/)**
+
+
+---
+## HoloLens & Mixed Reality Meetup
+### April 11, 2019
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+
+**More information and registration [here](https://www.meetup.com/hololens-mr/events/)**
