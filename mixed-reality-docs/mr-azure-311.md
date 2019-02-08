@@ -2,8 +2,9 @@
 title: MR and Azure 311 - Microsoft Graph
 description: Complete this course to learn how to leverage Microsoft Graph, and connect to the data that drives productivity, within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, microsoft graph, hololens, immersive, vr
 ---
 
@@ -42,10 +43,10 @@ In your application, it is up to you as to how you will integrate the results wi
 We recommend the following hardware and software for this course:
 
 - A development PC
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
+- [Unity 2017.4](install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist)
 - A [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - Internet access for Azure setup and Microsoft Graph data retrieval
 - A valid **Microsoft Account** (either personal or work/school)
@@ -54,7 +55,7 @@ We recommend the following hardware and software for this course:
 ### Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/en-us/hololens/hololens-setup). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens App (sometimes it can help to perform those tasks for each user). 
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
@@ -185,7 +186,7 @@ The following is a typical set up for developing with mixed reality, and as such
 > [!IMPORTANT]
 > If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [Azure-MR-311.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20311%20-%20Microsoft%20Graph/Azure-MR-311.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 5](#chapter-5---create-meetingsui-class).
 
-To use *Microsoft Graph* within Unity you need to make use of two DLLs, **Newtonsoft** and **Microsoft.Identity.Client**. It is possible to use the Microsoft Graph SDK, however, it will require the addition of a NuGet package after you build the Unity project (meaning editing the project post-build). It is considered simpler to import the required DLLs directly into Unity.
+To use *Microsoft Graph* within Unity you need to make use of the  **Microsoft.Identity.Client** DLL. It is possible to use the Microsoft Graph SDK, however, it will require the addition of a NuGet package after you build the Unity project (meaning editing the project post-build). It is considered simpler to import the required DLLs directly into Unity.
 
 > [!NOTE]
 > There is currently a known issue in Unity which requires plugins to be reconfigured after import. These steps (4 - 7 in this section) will no longer be required after the bug has been resolved.
@@ -225,7 +226,7 @@ To import the package:
 
         ![](images/AzureLabs-Lab311-23.png)
 
-7.  Click **Apply**, and then perform the same checks for the files located in the folder named **Newtonsoft**.
+7.  Click **Apply**.
 
 ## Chapter 4 - Camera Setup
 
@@ -380,8 +381,7 @@ To create this class:
     using Microsoft.Identity.Client;
     using System;
     using System.Threading.Tasks;
-    using Newtonsoft.Json;
-
+    
     #if !UNITY_EDITOR && UNITY_WSA
     using System.Net.Http;
     using System.Net.Http.Headers;
@@ -417,7 +417,21 @@ To create this class:
     [Serializable]
     public class StartTime
     {
-        public DateTime dateTime { get; set; }
+        public string dateTime;
+
+        private DateTime? _startDateTime;
+        public DateTime StartDateTime
+        {
+            get
+            {
+                if (_startDateTime != null)
+                    return _startDateTime.Value;
+                DateTime dt;
+                DateTime.TryParse(dateTime, out dt);
+                _startDateTime = dt;
+                return _startDateTime.Value;
+            }
+        }
     }
 
     [Serializable]
@@ -498,14 +512,14 @@ To create this class:
             // in case the user Logged In with this app on this device previously
             try
             {
-                _authResult = await app.AcquireTokenSilentAsync(scopes, user).ConfigureAwait(false);
+                _authResult = await app.AcquireTokenSilentAsync(scopes, user);
             }
             catch (MsalUiRequiredException)
             {
                 // Pre-stored token not found, prompt the user to log-in 
                 try
                 {
-                    _authResult = await app.AcquireTokenAsync(scopes).ConfigureAwait(false);
+                    _authResult = await app.AcquireTokenAsync(scopes);
                 }
                 catch (MsalException msalex)
                 {
@@ -513,6 +527,9 @@ To create this class:
                     return _authResult;
                 }
             }
+            
+            MeetingsUI.Instance.WelcomeUser(_authResult.User.Name);
+
     #if !UNITY_EDITOR && UNITY_WSA
             ApplicationData.Current.LocalSettings.Values["UserId"] = 
             _authResult.User.Identifier;
@@ -567,16 +584,16 @@ To create this class:
             try
             {
                 // Parse the JSON response.
-                rootObject = JsonConvert.DeserializeObject<Rootobject>(jsonResponse);
+                rootObject = JsonUtility.FromJson<Rootobject>(jsonResponse);
 
                 // Sort the meeting list by starting time.
-                rootObject.value.Sort((x, y) => DateTime.Compare(x.start.dateTime, y.start.dateTime));
+                rootObject.value.Sort((x, y) => DateTime.Compare(x.start.StartDateTime, y.start.StartDateTime));
 
                 // Populate the UI with the meetings.
                 for (int i = 0; i < rootObject.value.Count; i++)
                 {
                     MeetingsUI.Instance.AddMeeting(rootObject.value[i].subject,
-                                                rootObject.value[i].start.dateTime.ToLocalTime(),
+                                                rootObject.value[i].start.StartDateTime.ToLocalTime(),
                                                 rootObject.value[i].location.displayName);
                 }
             }

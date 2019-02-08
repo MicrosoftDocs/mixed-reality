@@ -1,6 +1,9 @@
 ---
 title: Add custom home environments
 description: In addition to the Windows Mixed Reality home environments we provide, you can experiment with creating and using your own.
+author: thmignon
+ms.author: thmignon
+ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, Custom Environments, places, cliff house, skyloft, user, create
 ---
@@ -11,7 +14,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, C
 >[!NOTE]
 >This is an experimental feature. Give it a try and have fun with it, but don't be surprised if everything doesn't quite work as expected. We're evaluating the viability of this feature and interest in using it, so please tell us about your experience (and any bugs you've found) in the [developer forums](https://forums.hololens.com/categories/custom-home-environments).
 
-Starting with the [Windows 10 April 2018 update](#release-notes.md), we've enabled an experimental feature that lets you add custom environments to the Places picker (on the Start menu) to use as the [Windows Mixed Reality home](#navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality has two default environments, Cliff House and Skyloft, that you can choose as your home. Creating custom environments allows you to expand that list with your own creations. We are making this available in an early state to evaluate interest from creators and developers, see what kinds of worlds you create, and understand how you work with different authoring tools.
+Starting with the [Windows 10 April 2018 update](#release-notes-april-2018.md), we've enabled an experimental feature that lets you add custom environments to the Places picker (on the Start menu) to use as the [Windows Mixed Reality home](#navigating-the-windows-mixed-reality-home.md). Windows Mixed Reality has two default environments, Cliff House and Skyloft, that you can choose as your home. Creating custom environments allows you to expand that list with your own creations. We are making this available in an early state to evaluate interest from creators and developers, see what kinds of worlds you create, and understand how you work with different authoring tools.
 
 When using a custom environment you'll notice that teleporting, interacting with apps, and placing holograms works just like it does in the Cliff House and Skyloft. You can browse the web in a fantasy landscape or fill a futuristic city with holograms - the possibilities are endless!
 

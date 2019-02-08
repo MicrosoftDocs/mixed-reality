@@ -136,20 +136,23 @@ Creating a cube in your Unity project is just like creating any other object in 
 
 Now that we have created our cube, it is time to do a quick check in device. You can do this directly from within the Unity editor.
 
+### Initial setup
+1. On your development PC, in Unity, open **File > Build Settings** window.
+2. Change **Platform** to **Universal Windows Platform** and click **Switch Platfrom**
+
 ### For HoloLens use Unity Remoting
 1. On your HoloLens, install and run the [Holographic Remoting Player](holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
-2. On your development PC, in Unity, open **File > Build Settings** window.
-3. Change **Platform** to **Universal Windows Platform** and click **Switch Platform**.
-4. Open **Window > Holographic Emulation**.
-5. Change **Emulation Mode** from **None** to **Remote to Device**.
-6. In **Remote Machine**, enter the IP address of your HoloLens noted earlier.
-7. Click **Connect**.
-8. Ensure the **Connection Status** changes to green **Connected**.
-9. Now you can now click **Play** in the Unity editor.
+2. Open **Window > XR > Holographic Emulation**.
+3. Change **Emulation Mode** from **None** to **Remote to Device**.
+4. In **Remote Machine**, enter the IP address of your HoloLens noted earlier.
+5. Click **Connect**.
+6. Ensure the **Connection Status** changes to green **Connected**.
+7. Now you can now click **Play** in the Unity editor.
 
 You will now be able to see the cube in device and in the editor. You can pause, inspect objects, and debug just like you are running an app in the editor, because that’s essentially what’s happening, but with video, audio, and device input transmitted back and forth across the network between the host machine and the device.
 
 ### For other mixed reality supported headsets
+
 1. Connect the headset to your development PC using the USB cable and the HDMI or display port cable.
 2. Launch the **Mixed Reality Portal** and ensure you have completed the first run experience.
 3. From Unity, you can now press the Play button.

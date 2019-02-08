@@ -12,9 +12,9 @@ keywords: Windows Mixed Reality, holographic app, new app, UWP app, template app
 
 # Creating a holographic DirectX project
 
-A holographic app can be a [Universal Windows Platform app](https://msdn.microsoft.com/en-us/library/windows/apps/dn894631.aspx) or a Win32 app.
+A holographic app can be a [Universal Windows Platform app](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) or a Win32 app.
 
-The DirectX 11 holographic UWP app template is much like the DirectX 11 UWP app template; it includes a program loop (or "game loop"), a **DeviceResources** class to manage the Direct3D device and context, and a simplified content renderer class. It also has an [IFrameworkView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx), just like any other UWP app.
+The DirectX 11 holographic UWP app template is much like the DirectX 11 UWP app template; it includes a program loop (or "game loop"), a **DeviceResources** class to manage the Direct3D device and context, and a simplified content renderer class. It also has an [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx), just like any other UWP app.
 
 The mixed reality app, however, has some additional capabilities that aren't present in a typical D3D11 UWP app. The Windows Holographic app template is able to:
 * Handle Direct3D device resources associated with holographic cameras.
@@ -51,7 +51,7 @@ Note that if your holographic C# project did not start from the Windows Holograp
 
 ## Holographic app entry point
 
-Your holographic app starts in the **main** function in AppView.cpp. The **main** function creates the app's [IFrameworkView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) and starts the [CoreApplication](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.coreapplication.aspx) with it.
+Your holographic app starts in the **main** function in AppView.cpp. The **main** function creates the app's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) and starts the [CoreApplication](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.coreapplication.aspx) with it.
 
 
 From **AppView.cpp**
@@ -77,7 +77,7 @@ The project's **Content** folder contains classes for rendering holograms in the
 |  Method  |  Explanation | 
 |----------|----------|
 |  `CreateDeviceDependentResources` |  Loads shaders and creates the cube mesh. | 
-|  `PositionHologram` |  Places the hologram at the location specified by the provided [SpatialPointerPose](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.input.spatial.spatialpointerpose.aspx). | 
+|  `PositionHologram` |  Places the hologram at the location specified by the provided [SpatialPointerPose](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialpointerpose.aspx). | 
 |  `Update` |  Rotates the cube, and sets the model matrix. | 
 |  `Render` |  Renders a frame using the vertex and pixel shaders. | 
 
@@ -94,13 +94,13 @@ The shaders are compiled when the project is built, and they're loaded in the **
 
 ## Interact with your holograms
 
-User input is processed in the **SpatialInputHandler** class, which gets a [SpatialInteractionManager](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.aspx) instance and subscribes to the [SourcePressed](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed.aspx) event. This enables detecting the air-tap gesture and other spatial input events.
+User input is processed in the **SpatialInputHandler** class, which gets a [SpatialInteractionManager](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.aspx) instance and subscribes to the [SourcePressed](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed.aspx) event. This enables detecting the air-tap gesture and other spatial input events.
 
 ## Update holographic content
 
-Your mixed reality app updates in a game loop, which by default is implemented in the **Update** method in `Main.cpp`. The **Update** method updates scene objects, like the spinning cube, and returns a [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) object that is used to get up-to-date view and projection matrices and to present the swap chain.
+Your mixed reality app updates in a game loop, which by default is implemented in the **Update** method in `Main.cpp`. The **Update** method updates scene objects, like the spinning cube, and returns a [HolographicFrame](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) object that is used to get up-to-date view and projection matrices and to present the swap chain.
 
-The **Render** method in `Main.cpp` takes the [HolographicFrame](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) and renders the current frame to each holographic camera, according to the current app and spatial positioning state.
+The **Render** method in `Main.cpp` takes the [HolographicFrame](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicframe.aspx) and renders the current frame to each holographic camera, according to the current app and spatial positioning state.
 
 ## Creating a Win32 project
 
@@ -118,7 +118,7 @@ You can now adapt this Win32 desktop application to make its primary HWND hologr
 
 ## See also
 * [Getting a HolographicSpace](getting-a-holographicspace.md)
-* [HolographicSpace](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx)
+* [HolographicSpace](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx)
 * [Rendering in DirectX](rendering-in-directx.md)
 * [Using Visual Studio to deploy and debug](using-visual-studio.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)

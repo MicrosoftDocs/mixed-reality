@@ -3,7 +3,7 @@ layout: LandingPage
 title: Windows Mixed Reality
 description: Learn to build mixed reality experiences for HoloLens and immersive headsets.
 author: mattzmsft 
-ms.author: randyw, mazeller
+ms.author: vanesa
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, index, landing page, design, development, academy, fundamentals, case studies, resources, HoloLens how-to, Open source projects
@@ -114,7 +114,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                     </div>
                             </li>
                             <li>
-                                  <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/" title="Enthusiast's Guide" data-linktype="absolute-path">
+                                  <a href="https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/" title="Enthusiast's Guide" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -135,4 +135,4 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
 </ul>
 
 >[!IMPORTANT]
->All Windows Mixed Reality development materials are provided on this site for your reference only. Your app, its usage, and its effect on end users is your sole responsibility as the app developer, including ensuring that your app does not cause discomfort, injury or any other harm to an end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your app to ensure that your app is safe and you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/en-us/legal/windows/agreements/app-developer-agreement). 
+>All Windows Mixed Reality development materials are provided on this site for your reference only. Your app, its usage, and its effect on end users is your sole responsibility as the app developer, including ensuring that your app does not cause discomfort, injury or any other harm to an end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your app to ensure that your app is safe and you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 

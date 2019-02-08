@@ -2,7 +2,7 @@
 title: Color, light and materials
 description: Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
 author: mavitazk
-ms.author: pinkb, mavitazk 
+ms.author: pinkb 
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, color, light, materials
@@ -61,4 +61,4 @@ Light and color can help make your holograms appear more naturally in a user's e
 * [Color Separation](hologram-stability.md#color-separation)
 * [Holograms](hologram.md)
 * [Microsoft Design Language - color](https://www.microsoft.com/en-us/design/color)
-* [Universal Windows Platform - color](https://docs.microsoft.com/en-us/windows/uwp/style/color)
+* [Universal Windows Platform - color](https://docs.microsoft.com/windows/uwp/style/color)

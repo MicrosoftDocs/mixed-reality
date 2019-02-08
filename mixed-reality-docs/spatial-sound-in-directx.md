@@ -12,7 +12,7 @@ keywords: Windows mixed reality, spatial sound, apps, XAudio2, low level, xAPO, 
 
 # Spatial sound in DirectX
 
-Add spatial sound to your Windows Mixed Reality apps based on DirectX by using the [XAudio2](https://msdn.microsoft.com/en-us/library/windows/desktop/hh405049.aspx) and [xAPO](https://msdn.microsoft.com/en-us/library/windows/desktop/ee415735.aspx) audio libraries.
+Add spatial sound to your Windows Mixed Reality apps based on DirectX by using the [XAudio2](https://msdn.microsoft.com/library/windows/desktop/hh405049.aspx) and [xAPO](https://msdn.microsoft.com/library/windows/desktop/ee415735.aspx) audio libraries.
 
 This topic uses sample code from the HolographicHRTFAudioSample.
 
@@ -26,17 +26,17 @@ Include these header files in pch.h to access the audio APIs:
 * hrtfapoapi.h
 
 To set up spatial sound:
-1. Call [CreateHrtfApo](https://msdn.microsoft.com/en-us/library/windows/desktop/mt186596.aspx) to initialize a new APO for HRTF audio.
-2. Assign the [HRTF parameters](https://msdn.microsoft.com/en-us/library/windows/desktop/mt186608.aspx) and [HRTF environment](https://msdn.microsoft.com/en-us/library/windows/desktop/mt186604.aspx) to define the acoustic characteristics of the spatial sound APO.
+1. Call [CreateHrtfApo](https://msdn.microsoft.com/library/windows/desktop/mt186596.aspx) to initialize a new APO for HRTF audio.
+2. Assign the [HRTF parameters](https://msdn.microsoft.com/library/windows/desktop/mt186608.aspx) and [HRTF environment](https://msdn.microsoft.com/library/windows/desktop/mt186604.aspx) to define the acoustic characteristics of the spatial sound APO.
 3. Set up the XAudio2 engine for HRTF processing.
-4. Create an [IXAudio2SourceVoice](https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.aspx) object and call [Start](https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.start.aspx).
+4. Create an [IXAudio2SourceVoice](https://msdn.microsoft.com/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.aspx) object and call [Start](https://msdn.microsoft.com/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.start.aspx).
 
 ## Implementing HRTF and spatial sound in your DirectX app
 
 You can achieve a variety of effects by configuring the HRTF APO with different parameters and environments. Use the following code to explore the possibilities. Download the Universal Windows Platform code sample from here: [Spatial sound sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpatialSound)
 
 Helper types are available in these files:
-* [AudioFileReader.cpp](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpatialSound/cpp/AudioFileReader.cpp): Loads audio files by using Media Foundation and the [IMFSourceReader interface](https://msdn.microsoft.com/en-us/library/windows/desktop/dd374655.aspx).
+* [AudioFileReader.cpp](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpatialSound/cpp/AudioFileReader.cpp): Loads audio files by using Media Foundation and the [IMFSourceReader interface](https://msdn.microsoft.com/library/windows/desktop/dd374655.aspx).
 * [XAudio2Helpers.h](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpatialSound/cpp/XAudio2Helpers.h): Implements the **SetupXAudio2** function to initialize XAudio2 for HRTF processing.
 
 ### Add spatial sound for an omnidirectional source
@@ -107,7 +107,7 @@ HRESULT OmnidirectionalSound::Initialize( LPCWSTR filename )
 }
 ```
 
-After the APO is configured for HRTF, you call [Start](https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.start.aspx) on the source voice to play the audio. In our sample app, we choose to put it on a loop so that you can continue to hear the sound coming from the cube.
+After the APO is configured for HRTF, you call [Start](https://msdn.microsoft.com/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.start.aspx) on the source voice to play the audio. In our sample app, we choose to put it on a loop so that you can continue to hear the sound coming from the cube.
 
 From *HolographicHrtfAudioSampleMain::SetHolographicSpace()*:
 
@@ -225,7 +225,7 @@ That's it! Continue reading to learn more about what you can do with HRTF audio 
 
 Some holograms in the user's surroundings emit sound mostly in one direction. This sound pattern is named *cardioid* because it looks like a cartoon heart. The following code shows how to initialize an APO to emit directional sound. For the complete code listing, see [CardioidSound.cpp](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpatialSound/cpp/CardioidSound.cpp) .
 
-After the APO is configured for HRTF, call [Start](https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.start.aspx) on the source voice to play the audio.
+After the APO is configured for HRTF, call [Start](https://msdn.microsoft.com/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.start.aspx) on the source voice to play the audio.
 
 ```
 // Initializes an APO that emits directional sound.
@@ -299,7 +299,7 @@ HRESULT CardioidSound::ConfigureApo( float scaling, float order )
 
 ### Implement custom decay
 
-You can override the rate at which a spatial sound falls off with distance and/or at what distance it cuts off completely. To implement custom decay behavior on a spatial sound, populate an [HrtfDistanceDecay struct](https://msdn.microsoft.com/en-us/library/windows/desktop/mt186602.aspx) and assign it to the **distanceDecay** field in an [HrtfApoInit struct](https://msdn.microsoft.com/en-us/library/windows/desktop/mt186597.aspx) before passing it to the [CreateHrtfApo](https://msdn.microsoft.com/en-us/library/windows/desktop/mt186596.aspx) function.
+You can override the rate at which a spatial sound falls off with distance and/or at what distance it cuts off completely. To implement custom decay behavior on a spatial sound, populate an [HrtfDistanceDecay struct](https://msdn.microsoft.com/library/windows/desktop/mt186602.aspx) and assign it to the **distanceDecay** field in an [HrtfApoInit struct](https://msdn.microsoft.com/library/windows/desktop/mt186597.aspx) before passing it to the [CreateHrtfApo](https://msdn.microsoft.com/library/windows/desktop/mt186596.aspx) function.
 
 Add the following code to the **Initialize** method shown previously to specify custom decay behavior. For the complete code listing, see [CustomDecay.cpp](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpatialSound/cpp/CustomDecay.cpp).
 

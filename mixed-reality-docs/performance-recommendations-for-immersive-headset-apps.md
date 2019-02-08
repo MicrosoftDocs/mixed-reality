@@ -14,9 +14,9 @@ keywords: Performance, Speed, Perf, Slow, Fast, Immersive, Unity, Render, Render
 
 ## Hardware targets
 
-**Windows Mixed Reality Ultra PCs** will consist of [desktops and laptops with discrete graphics (plus additional requirements)](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) and will support experiences at 90Hz.
+**Windows Mixed Reality Ultra PCs** will consist of [desktops and laptops with discrete graphics (plus additional requirements)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) and will support experiences at 90Hz.
 
-**Windows Mixed Reality PCs** will consist of [desktops and laptops with integrated graphics (plus additional requirements)](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) and will support experiences at 60Hz. To more easily distinguish the two PC targets, we'll refer to these PCs as "core" (differentiated from "ultra") through the rest of this article.
+**Windows Mixed Reality PCs** will consist of [desktops and laptops with integrated graphics (plus additional requirements)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) and will support experiences at 60Hz. To more easily distinguish the two PC targets, we'll refer to these PCs as "core" (differentiated from "ultra") through the rest of this article.
 
 If you target just Windows Mixed Reality Ultra PCs for your experience, it will have more power at its disposal, but you'll also be limiting your audience. Conversely, if you target Windows Mixed Reality "core" PCs for your experience, you'll have a much larger audience, but won't be offering unique performance value to customers with higher-end Windows Mixed Reality Ultra PCs. Thus, a hybrid approach for your VR experience may be the best of both worlds.
 
@@ -26,9 +26,9 @@ We recommend testing your app on the lowest-end hardware in each category you in
 
 ### Framerate targets
 
-The target framerate for your VR experience on Windows Mixed Reality immersive headsets will be either 60Hz or 90Hz depending on which [Windows Mixed Reality compatible PCs](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) you wish to support.
+The target framerate for your VR experience on Windows Mixed Reality immersive headsets will be either 60Hz or 90Hz depending on which [Windows Mixed Reality compatible PCs](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) you wish to support.
 
-For the PC you're currently using, you can determine its target framerate by checking the [holographic frame duration](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFrame#Duration), or, in Unity, checking the device’s [refresh rate](https://docs.unity3d.com/ScriptReference/XR.XRDevice-refreshRate.html).
+For the PC you're currently using, you can determine its target framerate by checking the [holographic frame duration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicFrame#Duration), or, in Unity, checking the device’s [refresh rate](https://docs.unity3d.com/ScriptReference/XR.XRDevice-refreshRate.html).
 
 ## Optimizing performance for Unity apps
 
@@ -214,7 +214,7 @@ Viewport scaling (dynamic resolution scaling) is the practice of rendering your 
 
 ### Visual Studio
 
-[Visual Studio Graphics Diagnostics](https://docs.microsoft.com/en-us/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics) can debug immersive applications running on Windows Mixed Reality. Please note that GPU Usage is not supported for Window Mixed Reality.
+[Visual Studio Graphics Diagnostics](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics) can debug immersive applications running on Windows Mixed Reality. Please note that GPU Usage is not supported for Window Mixed Reality.
 
 ### Windows Performance Analyzer
 
@@ -230,7 +230,7 @@ The [Unity Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) i
 
 ### Windows Device Portal
 
-The [Windows Device Portal](using-the-windows-device-portal.md) lets you configure and manage your device remotely over a network or USB connection. It also provides [advanced diagnostic tools](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal) to help you troubleshoot and view the real time performance of your Windows device.
+The [Windows Device Portal](using-the-windows-device-portal.md) lets you configure and manage your device remotely over a network or USB connection. It also provides [advanced diagnostic tools](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal) to help you troubleshoot and view the real time performance of your Windows device.
 
 ### Intel® Graphics Performance Analyzers (Intel® GPA)
 

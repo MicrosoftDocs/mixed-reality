@@ -7,6 +7,7 @@
 ### [HoloLens hardware details](hololens-hardware-details.md)
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Hardware accessories](hardware-accessories.md)
+### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
 ## Core building blocks
 ### [Gaze](gaze.md)
 ### [Gestures](gestures.md)
@@ -176,6 +177,7 @@
 ### [Device portal API reference](device-portal-api-reference.md)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
 ## Other
+### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 ### [Locatable camera](locatable-camera.md)
 ### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
@@ -216,7 +218,8 @@
 ## [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 
 # Mixed reality release notes
-## [Current release notes](release-notes.md)
+## [Current release notes](release-notes-october-2018.md)
+## [Release notes - April 2018](release-notes-april-2018.md)
 ## [Release notes - October 2017](release-notes-october-2017.md)
 ## [Release notes - August 2016](release-notes-august-2016.md)
 ## [Release notes - May 2016](release-notes-may-2016.md)
@@ -239,3 +242,5 @@
 ## [See your photos](see-your-photos.md)
 ## [Sensor tuning](sensor-tuning.md)
 ## [Updating HoloLens](updating-hololens.md)
+
+# [Contributing to this documentation](CONTRIBUTING.md)

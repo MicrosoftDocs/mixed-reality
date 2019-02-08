@@ -16,6 +16,12 @@ keywords: HoloLens, components, sensors, technology, tech, tear down, teardown,
 
 Microsoft HoloLens is the world's first fully untethered holographic computer. HoloLens redefines personal computing through holographic experiences to empower you in new ways. HoloLens blends cutting-edge optics and sensors to deliver 3D holograms pinned to the real world around you.
 
+## How to get Microsoft HoloLens
+
+Microsoft HoloLens is available to purchase as a both a Development Edition and a Commercial Suite configuration (which includes a warranty and enterprise features for added security and device management). If you're in North America, you can also rent HoloLens through a partner.
+
+[Click here for more details on purchasing or renting Microsoft HoloLens](https://www.microsoft.com/en-us/hololens/buy).
+
 ## Device Specifications
 
 ### Optics

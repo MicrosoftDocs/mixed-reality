@@ -71,7 +71,7 @@ The Microsoft HoloLens Commercial Suite includes features that make it easier fo
 </tr><tr>
 <td>Automatic system updates as they arrive</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/en-us/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Long term servicing branch</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
@@ -81,11 +81,11 @@ The Microsoft HoloLens Commercial Suite includes features that make it easier fo
 
 ## Enabling commercial features
 
-Commercial features like Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access are setup by an organization's IT admin. The [Windows IT Center for HoloLens](https://technet.microsoft.com/en-us/itpro/hololens/index) provides step by step instructions for device enrollment and installing apps from Microsoft Store for Business.
+Commercial features like Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access are setup by an organization's IT admin. The [Windows IT Center for HoloLens](https://technet.microsoft.com/itpro/hololens/index) provides step by step instructions for device enrollment and installing apps from Microsoft Store for Business.
 
 ## See also
-* [IT Pro Guide for HoloLens](https://technet.microsoft.com/en-us/itpro/hololens/index)
+* [IT Pro Guide for HoloLens](https://technet.microsoft.com/itpro/hololens/index)
 * [Kiosk mode](using-the-windows-device-portal.md#kiosk-mode)
-* [Supported CSPs in Windows Holographic for enterprise](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920025(v=vs.85).aspx#HoloLens)
+* [Supported CSPs in Windows Holographic for enterprise](https://msdn.microsoft.com/library/windows/hardware/dn920025(v=vs.85).aspx#HoloLens)
 * [Microsoft Store For Business and line of business applications](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
 * [Working with line-of-business apps](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps)
