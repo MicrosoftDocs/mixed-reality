@@ -1,7 +1,7 @@
 ---
 title: Advanced Performance Recommendations
 description: Advanced topics and details on optimizing performance for Windows Mixed Reality Apps
-author: trferrel
+author: Troy-Ferrell
 ms.author: trferrel
 ms.date: 2/6/2019
 ms.topic: article
