@@ -18,8 +18,8 @@ This article dives into topics that may help optimize performance of your Mixed 
 | [Windows Mixed Reality Ultra PCs](immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality PCs](immersive-headset-hardware-details.md) | 60 FPS |
 
-> [!NOTE]
-> If your application is not meeting frame rate as outlined below, before reviewing details on this page, ensure you have set-up your development environment for best performance wins.
+>[!NOTE]
+>If your application is not meeting frame rate as outlined below, before reviewing details on this page, ensure you have set-up your development environment for best performance wins.
 >
 > - [Critical Concepts to Ensure Optimal User Experience](ensure-optimal-user-experience.md)
 > - [Unity development overview](unity-development-overview.md)
