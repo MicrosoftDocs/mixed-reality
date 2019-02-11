@@ -1,7 +1,7 @@
 ---
 title: Ensure optimal user experience
 description: Key principles to apply for optimal user experience in mixed reality apps.
-author: trferrel
+author: Troy-Ferrell
 ms.author: trferrel
 ms.date: 10/11/2018
 ms.topic: article
