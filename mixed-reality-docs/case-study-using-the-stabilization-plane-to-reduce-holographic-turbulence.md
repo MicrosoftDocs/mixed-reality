@@ -64,7 +64,7 @@ Fragments and Young Conker also design around you straying too far from the holo
 
 If you have a HoloLens and would like to play around with the concepts I've discussed, you can download a test scene and try out the exercises below. It uses Unity’s built-in gizmo API and it should help you visualize where your plane is being set. This code was also used to capture the screenshots in this case study.
 1. Sync the latest version of [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity).
-2. Open the [HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) scene.
+2. Open the [HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) scene.
 3. Build and configure the generated project.
 4. Run on your device.
 
