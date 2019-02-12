@@ -66,7 +66,7 @@ What you see in screenshots and video:
 
 In English: What you see through HoloLens is a simple combination of darkened reality (like through sunglasses) and whatever holograms the app wants to show. But when you take a screenshot, the camera's image is blended with the app's holograms according to the per-pixel transparency value.
 
-One way to get around this is to change the "black box" material to only write to the depth buffer, and sort with all the other opaque materials. For an example of this, check out the [WindowOcclusion.shader file in the MixedRealityToolkit on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Utilities/Shaders/WindowOcclusion.shader). The relevant lines are copied here:
+One way to get around this is to change the "black box" material to only write to the depth buffer, and sort with all the other opaque materials. For an example of this, check out the [WindowOcclusion.shader file in the MixedRealityToolkit on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Common/Shaders/WindowOcclusion.shader). The relevant lines are copied here:
 
 ```
 "RenderType" = "Opaque"

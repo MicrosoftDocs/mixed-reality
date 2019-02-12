@@ -66,7 +66,7 @@ You can find more details on how to use these components at the [Unity documenta
 
 These components make it drag-and-drop easy to get started with Spatial Mapping.  When you want to go further, there are two main paths to explore:
 * To do your own lower-level mesh processing, see the section below about the low-level Spatial Mapping script API.
-* To do higher-level mesh analysis, see the section below about the SpatialUnderstanding library in [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/SpatialUnderstanding).
+* To do higher-level mesh analysis, see the section below about the SpatialUnderstanding library in [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding).
 
 ## Using the low-level Unity Spatial Mapping API
 
