@@ -23,7 +23,7 @@ QR code tracking is implemented in the Windows Mixed Reality driver for immersiv
 </table>
 
 ## Enabling and disabling QR code tracking for your headset
-
+Note: This section is only valid for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md). From 19h1 builds onwards you will not have to do this.
 Whether you're developing a mixed reality app that will leverage QR code tracking, or you're a customer of one of these apps, you'll need to manually turn on QR code tracking in your headset's driver.
 
 In order to **turn on QR code tracking** for your immersive (VR) headset:
@@ -177,6 +177,7 @@ You can also use the QR Tracking API in Unity without taking a dependency on MRT
 1. Create a new folder in the assets folder of your unity project with the name: "Plugins".
 2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created.
 3. You can use the QR tracking scripts in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Scripts) or write your own.
+Note: These plugins are only for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md) builds. The plugins will be updated with the next windows release. The current plugins were experimental and will not work for future version of the windows. New plugins will be published which can be used from next windows release and they will not be backwards compatable and will not work with RS5).
 
 ## Implementing QR code tracking in DirectX
 
@@ -310,3 +311,6 @@ QR codes with logos have not been tested and are currently unsupported.
 
 * QR codes are only persisted in the boot session. Once you reboot (or restart the driver), they will be gone and detected as new objects next time.
 * QR code history is saved at the system level in the driver session, but you can configure your app to ignore QR codes older than a specific timestamp if you want. Currently the API does support clearing QR code history, as multiple apps might be interested in the data.
+
+**The plugins for RS5 and future versions are not compatable**
+RS5 version of the plugin only works for RS5 and will not work for future versions. The expermental plugin will be replaced with the real plugin and should be the one that we can use in future versions of the windows.
