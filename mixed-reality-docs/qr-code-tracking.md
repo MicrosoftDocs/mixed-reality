@@ -165,7 +165,7 @@ The QRTracking plugin exposes the APIs for QR code tracking. To use the plugin, 
 
 ### Sample Unity scenes in MRTK (Mixed Reality Toolkit)
 
-You can find an example for how to use the QR Tracking API in the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker).
+You can find an example for how to use the QR Tracking API in the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker).
 
 MRTK has implemented the needed scripts to simpilify the QR tracking usage. All necessary assets to develop QR tracking apps are in the "QRTracker" folder. There are two scenes: the first is a sample to simply show details of the QR codes as they are detected, and the second demonstrates how to use the coordinate system attached to the QR code to display holograms.
 There is a prefab "QRScanner" which added all the necessary scrips to the scenes to use QRCodes. The script QRCodeManager is a singileton class that implements the QRCode API you can add it to you scene. The scripts "AttachToQRCode" is used to attach holograms to the QR Code coodridnate systems, this script can be added to any of your holograms. The "SpatialGraphCoordinateSystem" shows how to use the QRCode coordinate system. These scripts can be used as is in your project scenes or you can write your own directly using the plugin as described above.
@@ -175,13 +175,13 @@ There is a prefab "QRScanner" which added all the necessary scrips to the scenes
 You can also use the QR Tracking API in Unity without taking a dependency on MRTK. In order to use the API, you will need to prepare your project with the following instruction:
 
 1. Create a new folder in the assets folder of your unity project with the name: "Plugins".
-2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created.
-3. You can use the QR tracking scripts in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Scripts) or write your own.
+2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created.
+3. You can use the QR tracking scripts in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Scripts) or write your own.
 Note: These plugins are only for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md) builds. The plugins will be updated with the next windows release. The current plugins were experimental and will not work for future version of the windows. New plugins will be published which can be used from next windows release and they will not be backwards compatable and will not work with RS5).
 
 ## Implementing QR code tracking in DirectX
 
-To use the QRTrackingPlugin in Visual Studio, you will need to add reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
+To use the QRTrackingPlugin in Visual Studio, you will need to add reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
 
 ```cpp
 // MyClass.h
