@@ -135,7 +135,7 @@ After a *GameObject* is locked via the *LockObject* call, it will have a *WorldA
 
 ## Example: MixedRealityToolkit Sharing
 
-You can use the [Sharing](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/Sharing) prefab from the MixedRealityToolkit-Unity repository on GitHub to implement shared experiences in your applications.
+You can use the [Sharing](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Sharing) prefab from the MixedRealityToolkit-Unity repository on GitHub to implement shared experiences in your applications.
 
 ## See also
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

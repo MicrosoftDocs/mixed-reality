@@ -351,7 +351,7 @@ An easy approximation to compare shaders in performance is to identify the avera
 
 ##### Unity Standard shader alternatives
 
-Instead of using a physically based rendering (PBR) or other high-quality shader, look at utilizing a more performant and cheaper shader. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides a [standard shader](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Common/Shaders/Standard.shader) that has been optimized for mixed reality projects.
+Instead of using a physically based rendering (PBR) or other high-quality shader, look at utilizing a more performant and cheaper shader. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides a [standard shader](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Common/Shaders/Standard.shader) that has been optimized for mixed reality projects.
 
 Unity also provides an unlit, vertex lit, diffuse, and other simplified shader options that are significantly faster compared to the Unity Standard shader. See [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) for more detailed information.
 
