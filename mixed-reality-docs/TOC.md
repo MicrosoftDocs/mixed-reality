@@ -211,6 +211,7 @@
 # Resources
 ## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
 ## [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
+## [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
 ## [Mixed Reality Partner Program](mixed-reality-partner-program.md)
 ## [App quality criteria](app-quality-criteria.md)
 ## [Spectator view](spectator-view.md)
