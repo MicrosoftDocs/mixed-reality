@@ -1,34 +1,33 @@
 ---
 title: Shared experiences in Unity
 description: Share the same holograms between multiple users in a Unity application.
-author: fieldsJacksonG
-ms.author: jacksonf
-ms.date: 03/21/2018
+author: thetuvix
+ms.author: alexturn
+ms.date: 02/24/2019
 ms.topic: article
-keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch, SpatialPerception
+keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch, SpatialPerception, Azure, Azure Spatial Anchors, ASA
 ---
 
 
 
 # Shared experiences in Unity
 
-A shared experience is one where multiple users, each with their own HoloLens, collectively view and interact with the same hologram which is positioned at a fixed point in space. This is accomplished through anchor sharing. To use anchor sharing in your app, the *spatialPerception* capability needs to be set in your AppxManifest.
+A shared experience is one where multiple users, each with their own HoloLens, iOS or Android device, collectively view and interact with the same hologram which is positioned at a fixed point in space. This is accomplished through spatial anchor sharing.
 
-## Anchor Sharing
+## Azure Spatial Anchors
 
-**Namespace:** *UnityEngine.XR.WSA.Sharing*<br>
-**Type**: *WorldAnchorTransferBatch*
+You can use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) to create durable cloud-backed spatial anchors, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
 
-To share a [WorldAnchor](coordinate-systems-in-unity.md), one must establish the anchor to be shared. The user of one HoloLens scans their environment and either manually or programmatically chooses a point in space to be the Anchor for the shared experience. The data that represents this point can then be serialized and transmitted to the other devices that are sharing in the experience. Each device then de-serializes the anchor data and attempts to locate that point in space. In order for Anchor Sharing to work, each device must have scanned in enough of the environment such that the point represented by the anchor can be identified.
+You can also use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
 
-### Setting the SpatialPerception capability
+To get started building shared experiences in Unity, try out the 5-minute [Azure Spatial Anchors Unity quickstarts](https://docs.microsoft.com/azure/spatial-anchors/unity-overview).
 
-In order for an app to import or export anchor data, the *SpatialPerception* capability must be enabled.
+Once you're up and running with Azure Spatial Anchors, you can then [create and locate anchors in Unity](https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity).
 
-How to enable the *SpatialPerception* capability:
-1. In the Unity Editor, open the **"Player Settings"** pane (Edit > Project Settings > Player)
-2. Click on the **"Windows Store"** tab
-3. Expand **"Publishing Settings"** and check the **"SpatialPerception"** capability in the **"Capabilities"** list
+## Local anchor transfers
+
+
+In situations where you cannot use Azure Spatial Anchors, [local anchor transfers](local-anchor-transfers-in-unity.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.  Note that this approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.
 
 >[!NOTE]
 >If you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](shared-spatial-anchors-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
@@ -137,5 +136,8 @@ After a *GameObject* is locked via the *LockObject* call, it will have a *WorldA
 
 You can use the [Sharing](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Sharing) prefab from the MixedRealityToolkit-Unity repository on GitHub to implement shared experiences in your applications.
 
+
 ## See also
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/spatial-anchors/)

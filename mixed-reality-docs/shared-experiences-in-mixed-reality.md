@@ -2,17 +2,17 @@
 title: Shared experiences in mixed reality
 description: Holographic apps may share spatial anchors from one HoloLens to another, enabling users to render a hologram at the same place in the real world across multiple devices.
 author: thetuvix
-ms.author: alexturn
-ms.date: 03/21/2018
+ms.author: grbury
+ms.date: 02/10/2019
 ms.topic: article
-keywords: shared experience, mixed reality, hologram, spatial anchor
+keywords: shared experience, mixed reality, hologram, spatial anchor, multi-user, multi
 ---
 
 
 
 # Shared experiences in mixed reality
 
-Holograms don't need to stay private to just one user. Holographic apps may share [spatial anchors](coordinate-systems.md) from one HoloLens to another, enabling users to render a hologram at the same place in the real world across multiple devices.
+Holograms don't need to stay private to just one user. Holographic apps may share [spatial anchors](coordinate-systems.md) from one HoloLens, iOS or Android device to another, enabling users to render a hologram at the same place in the real world across multiple devices.
 
 ## Six questions to define shared scenarios
 
@@ -117,15 +117,25 @@ Intuitive collaboration is the bedrock of conversation and working together and 
 
 ## Get started sharing experiences
 
-The key to shared experiences is multiple users seeing the same holograms in the world on their own device. One of the most common methods to do this is to use spatial anchors in your app. One way to achieve shared anchors would be:
+Depending on your application and scenario, there will be various requirements to achieve your desired experience. Some of these include
+* Match-making: Ability to create sessions, advertise session, and discover and invite specific people, both locally and remotely to join your session.
+* Anchor sharing: Ability to align coordinates across multiple devices in a common local space, so holograms appear in the same place for all people.
+* Networking: Ability to have positions, interactions, and movements of people and holograms synchronized in real-time across all participants.
+* State storage: Ability to store hologram characteristics and locations in space for mid-session join, recall at a later time, and robustness against network issues.
+
+
+The key to shared experiences is multiple users seeing the same holograms in the world on their own device, frequently done by sharing anchors to align coordinates across devices.
+To share anchors, use the [Azure Spatial Anchors service](https://docs.microsoft.com/azure/spatial-anchors):
 * First the user places the hologram.
 * App creates a [spatial anchor](coordinate-systems.md) to pin that hologram precisely in the world.
-* App can then export this anchor and supporting tracking information to another HoloLens using a networking solution.
-* That shared anchor can now be imported by another HoloLens along with the supporting tracking data that lets that HoloLens locate the shared anchor in their world space.
+* The anchors can be shared to HoloLens, iOS and Android devices via the [Azure Spatial Anchors service](https://docs.microsoft.com/azure/spatial-anchors). 
 
 With a shared spatial anchor, the app on each device now has a common coordinate system in which they can place content. Now the app can ensure to position and orient the hologram at the same location.
+On HoloLens devices, you can also share anchors offline from one device to another.  Use the links below to decide what's best for your application.
+
 
 ## See also
+* [Azure Spatial Anchors service](https://docs.microsoft.com/azure/spatial-anchors)
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
 * [Shared experiences in Unity](shared-experiences-in-unity.md)
 * [Spectator view](spectator-view.md)

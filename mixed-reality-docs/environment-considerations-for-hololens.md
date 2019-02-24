@@ -1,9 +1,9 @@
 ---
 title: Environment considerations for HoloLens
 description: Get the best possible experience using HoloLens when you optimize the device for your eyes and environment.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 03/21/2018
+author: thetuvix
+ms.author: msamples
+ms.date: 02/24/2019
 ms.topic: article
 keywords: holographic frame, field of view, fov, calibration, spaces, environment, how-to
 ---
@@ -35,16 +35,20 @@ When you enter a new space (or load an existing one), you’ll see a mesh graphi
 
 ### Managing your spaces
 
-HoloLens remembers the spaces you’ve used it in by associating them with what Wi-Fi networks are available in that location. A space will get its name from the Wi-Fi network that HoloLens is connected to in that location, but being connected to a Wi-Fi network or not, does not affect they way HoloLens remembers the space you are in.
+The map sections and different spaces have been collapsed into a single database, stored locally on the HoloLens device.  The map database is stored securely, with access only available to the internal system, and never to a user of the device, even when plugged into a PC and/or using the file explorer app.  When bitlocker is enabled, the stored map data is also encrypted.
+Multiple map components exist when holograms are placed in different locations without a connective path between the locations/holograms.  Holograms anchored within the same map section are considered to be “nearby” in the current space
+There is a developer API to export a small subset of the “current space” (a portion the map component that is currently recognized) to enable shared hologram scenarios.  There is currently no mechanism to download the entire database of all spaces that have been mapped.
 
-When you are in a new location and HoloLens does not recognize the Wi-Fi networks around you, it will create a new space, which will have a default name since you are not connected yet, so once you connect to the Wi-Fi network, the space name will change to be the same as the Wi-Fi network. Note that this is not the case where you first set up your HoloLens and connect to Wi-Fi, by the time you are done with the initial set up, a space will already be created with the name of the Wi-Fi network you connected to.
+#### WiFi
+Connected vs. Not – As long as WiFi is enabled, map data will be correlated with a WiFi fingerprint, even when not connected to an actual WiFi network/router.  This is because the MAC address and signal strength (i.e. WiFi fingerprint) of a router is available without connecting to it.  Network identification (i.e. SSID, MAC address) is not sent to Microsoft, and all WiFi references are kept local on the HoloLens.
 
-When you go to a location that HoloLens recognizes, the space for that location will be automatically loaded and any holograms that were already placed in that space will appear as well.
+Enabled vs. Disabled – HoloLens will sense and remember spaces even when WiFi is disabled, by securely storing the sensor data when holograms are placed.  Without the WiFi info, the space and holograms may be slightly slower to recognize at a later time, as the HoloLens needs to compare active scans to ALL hologram anchors and map sections stored on the device in order to “relocalize” to the right portion of the map.
 
-You can see and manage your spaces by going to Settings > System > Spaces. There, you can remove a space you no longer need or load the space you want. There are important points to have in mind when using HoloLens and managing spaces:
-* HoloLens assigns a numerical value to each space that represents how confident it is that the space corresponds to a given physical location based on the Wi-Fi networks that are available and their signal strengths, this process is called Wi-Fi fingerprinting, and is constantly running as the user walks around the space, so the more the user covers, the higher the confidence value will be, and the higher the chances are that the correct space will be loaded the next time HoloLens is turned on.
-* When HoloLens is turned on in a location where there are no Wi-Fi networks available, their signal strength are just too low, or Wi-Fi is disabled in Settings > Network & Internet, HoloLens will be in Limited Mode and will remain there, a new space will not be created, but you can load an existing space from Settings > System > Spaces. The user can get out of this state by turning Wi-Fi on if it was disabled or moving to an area where there are Wi-Fi networks with good signal, and then restart.
-* When HoloLens can't tell which space you are in because there are two or more spaces that have similar Wi-Fi fingerprinting (the confidence value for those spaces is similar), it will show a dialog so you can select which space you want to load (top 2 choices, ranked by confidence in decreasing order) and an option to go to Settings to select another space.
+#### Environment Management
+There are 2 settings which enable users to “clean up” holograms and cause HoloLens to “forget a space”.  They exist in “Holograms and environments” in the settings app, with the second setting also appearing under “Privacy” in the settings app.
+1.	Delete nearby holograms – By selecting this setting, HoloLens will erase all anchored holograms and all stored map data for the “current space” where the device is located.  A new map section would be created and stored in the database for that location once Holograms are again placed in that same space.
+2.	Delete all holograms – By selecting this setting, HoloLens will erase ALL map data and anchored holograms in the entire databases of spaces.  No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
+
 
 ## Hologram quality
 

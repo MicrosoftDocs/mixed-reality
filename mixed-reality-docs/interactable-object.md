@@ -2,10 +2,10 @@
 title: Interactable object
 description: A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore.
 author: cre8ivepark
-ms.author: dongpark
-ms.date: 03/21/2018
+ms.author: jennyk
+ms.date: 02/24/2019
 ms.topic: article
-keywords: Windows Mixed Reality, Controls, interaction, ui, ux
+keywords: Mixed Reality, Controls, interaction, ui, ux
 ---
 
 
@@ -34,8 +34,8 @@ In mixed reality, since the holographic objects are mixed with the real-world en
 
 For any objects that user can interact with, we recommended to have different visual feedback for these three input states:
 * **Observation**: Default idle state of the object.
-* **Targeted**: When the object is targeted with gaze cursor or motion controller's pointer.
-* **Pressed**: When the object is pressed with air-tap gesture or motion controller's select button.
+* **Targeted**: When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
+* **Pressed**: When the object is pressed with air-tap gesture, finger press or motion controller's select button.
 
 ![Holographic button](images/640px-interactibleobject-holographicbutton-650px.jpg)<br>
 *Observation state, targeted state, and pressed state*

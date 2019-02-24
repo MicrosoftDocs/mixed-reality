@@ -1,11 +1,11 @@
 ---
 title: Interaction fundamentals
-description: As we've built experiences across HoloLens and immersive headsets, we've started writing down some things we found useful to share. 
+description: As we've built experiences across HoloLens (1st gen), HoloLens 2 and immersive headsets, we've started writing down some things we found useful to share. 
 author: rwinj
-ms.author: randyw
-ms.date: 03/21/2018
+ms.author: jennyk
+ms.date: 02/24/2019
 ms.topic: article
-keywords: Windows Mixed Reality, interaction, design
+keywords: Mixed Reality, interaction, design
 ---
 
 
@@ -21,25 +21,29 @@ Here's an outline of the available Interaction design articles and which device 
 
 <table>
 <tr>
-<th style="text-align: left;">Input</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th style="text-align: left;">Input</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens 2</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> <a href="gaze-targeting.md">Gaze targeting</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="gaze-targeting.md">Articulated hand</a></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td><td style="text-align: center;"></td>
 </tr><tr>
-<td> <a href="gestures.md">Gestures</a></td><td style="text-align: center;">✔️</td><td></td>
+<td> <a href="gaze-targeting.md">Eye targeting</a></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td><td style="text-align: center;"></td>
 </tr><tr>
-<td> <a href="voice-design.md">Voice design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="gaze-targeting.md">Gaze targeting</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td> Gamepad</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="gestures.md">Gestures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
 </tr><tr>
-<td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td style="text-align: center;">✔️</td>
+<td> <a href="voice-design.md">Voice design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Perception and spatial features</th>
+<td> Gamepad</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td> <a href="spatial-sound-design.md">Spatial sound design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td> <a href="spatial-mapping-design.md">Spatial mapping design</a></td><td style="text-align: center;">✔️</td><td></td>
+<th colspan="4" style="text-align: left;"> Perception and spatial features</th>
 </tr><tr>
-<td> <a href="hologram.md">Holograms</a></td><td style="text-align: center;">✔️</td><td></td>
+<td> <a href="spatial-sound-design.md">Spatial sound design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+</tr><tr>
+<td> <a href="spatial-mapping-design.md">Spatial mapping design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
+</tr><tr>
+<td> <a href="hologram.md">Holograms</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
 </tr>
 </table>
 
