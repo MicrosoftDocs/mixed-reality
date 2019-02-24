@@ -195,7 +195,7 @@ These are the core building blocks for mixed reality development:
 </tr><tr>
 <td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th> Perception and spatial features</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th> Perception and spatial features</th><th style="width:110px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:110px">HoloLens 2</th><th style="width:110px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> <a href="coordinate-systems.md">World coordinates</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
