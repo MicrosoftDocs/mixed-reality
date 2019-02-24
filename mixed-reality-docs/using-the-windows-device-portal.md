@@ -3,7 +3,7 @@ title: Using the Windows Device Portal
 description: The Windows Device Portal for HoloLens lets you configure and manage your device remotely over Wi-Fi or USB. The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. The Device Portal includes many tools that will help you manage your HoloLens and debug and optimize your apps.
 author: JonMLyons
 ms.author: jlyons
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
 ---
