@@ -187,7 +187,9 @@ These are the core building blocks for mixed reality development:
 </tr><tr>
 <td> <a href="gaze.md">Eye gaze</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
 </tr><tr>
-<td> Hands / <a href="gestures.md">Gestures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
+ <td> <a href="gestures.md">Articulated hands</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
+</tr><tr>
+<td> <a href="gestures.md">Gestures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
 </tr><tr>
 <td> <a href="voice-input.md">Voice</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
