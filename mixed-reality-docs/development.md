@@ -181,7 +181,7 @@ These are the core building blocks for mixed reality development:
 
 <table>
 <tr>
-<th style="width:350px">Input</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th style="width:175px">Input</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> <a href="gaze.md">Head gaze</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -197,7 +197,7 @@ These are the core building blocks for mixed reality development:
 </tr><tr>
 <td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th style="width:350px">Perception and spatial features</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th style="width:175px">Perception and spatial features</th><th style="width:150px"><a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> <a href="coordinate-systems.md">World coordinates</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
