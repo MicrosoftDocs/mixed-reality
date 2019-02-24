@@ -20,17 +20,17 @@ At their core, mixed reality apps place [holograms](hologram.md) in your world t
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> <a href="coordinate-systems.md#stationary-frame-of-reference">Stationary frame of reference</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> <a href="coordinate-systems.md#stationary-frame-of-reference">Stationary frame of reference</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
-<td> <a href="coordinate-systems.md#attached-frame-of-reference">Attached frame of reference</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> <a href="coordinate-systems.md#attached-frame-of-reference">Attached frame of reference</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
-<td> <a href="coordinate-systems.md#stage-frame-of-reference">Stage frame of reference</a></td><td style="text-align: center;"> Not supported yet</td><td style="text-align: center;"> ✔️</td>
+<td> <a href="coordinate-systems.md#stage-frame-of-reference">Stage frame of reference</a></td><td style="text-align: center;"> Not supported yet</td><td style="text-align: center;"> Not supported yet</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
-<td> <a href="coordinate-systems.md#spatial-anchors">Spatial anchors</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> <a href="coordinate-systems.md#spatial-anchors">Spatial anchors</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
-<td> <a href="spatial-mapping.md">Spatial mapping</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
+<td> <a href="spatial-mapping.md">Spatial mapping</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
 </table>
 
