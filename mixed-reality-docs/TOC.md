@@ -123,7 +123,7 @@
 
 # [Develop](development.md)
 ## Mixed Reality Cloud Services
-### <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank"> Azure Spatial Anchors</a>
+### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 ## Unity
