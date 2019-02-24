@@ -140,4 +140,4 @@ You can use the [Sharing](https://github.com/Microsoft/MixedRealityToolkit-Unity
 ## See also
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 * [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/spatial-anchors/)
+* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors)

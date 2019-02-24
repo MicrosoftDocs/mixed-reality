@@ -3,7 +3,7 @@ title: Persistence in Unity
 description: Persistence lets your users pin individual holograms or a workspace wherever they want it, and then find it later where they expect over many uses of your app.
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, persistence, Unity
 ---
@@ -107,4 +107,4 @@ Once you're up and running with Azure Spatial Anchors, you can then [create and 
 ## See Also
 * [Spatial anchor persistence](coordinate-systems.md#spatial-anchor-persistence)
 * [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/spatial-anchors/)
+* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors)

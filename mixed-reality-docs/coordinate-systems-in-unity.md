@@ -171,4 +171,4 @@ Once you're up and running with Azure Spatial Anchors, you can then [create and 
 * [Persistence in Unity](persistence-in-unity.md)
 * [Shared experiences in Unity](shared-experiences-in-unity.md)
 * [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/spatial-anchors/)
+* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors)

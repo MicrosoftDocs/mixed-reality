@@ -3,7 +3,7 @@ title: SF Reactor Academy events calendar
 description: Calendar of mixed reality developer events at the Reactor in San Francisco.
 author: danielescudero
 ms.author: daescu
-ms.date: 09/06/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: event, calendar, academy, schedule, sf, san francisco, reactor
 ---
