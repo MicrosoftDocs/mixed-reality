@@ -53,7 +53,7 @@ These are the core building blocks for mixed reality development:
 
 
 The basic interaction model for [HoloLens](hololens-hardware-details.md) is [gaze](gaze.md), [gesture](gestures.md), and [voice](voice-input.md), sometimes referred to as *GGV*. [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md) also use gaze and voice, but swap [motion controllers](motion-controllers.md) for gestures.
-[HoloLens 2](hololens2-hardware-details.md) will introduce full hand tracking to extend gestures and directly touch or grab holograms, as well as eye tracking to extend gaze to include both head and eye gaze.
+
 
 All Windows-based mixed reality devices benefit from the input ecosystem available to Windows, including mouse, keyboard, gamepads, and more. With HoloLens, [hardware accessories](hardware-accessories.md) are connected via Bluetooth. With immersive headsets, accessories connect to the host PC via Bluetooth, USB, and other supported protocols.
 
