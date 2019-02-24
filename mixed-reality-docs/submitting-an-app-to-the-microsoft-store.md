@@ -12,9 +12,9 @@ keywords: app, uwp, submit, submission, filters, metadata, system requirements, 
 
 # Submitting an app to the Microsoft Store
 
-Both [HoloLens](hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens or PC (or both), you'll submit your app to the Microsoft Store through the [Windows Dev Center dashboard](https://developer.microsoft.com/en-us/dashboard/windows/overview).
+Both [HoloLens](hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens or PC (or both), you'll submit your app to the Microsoft Store through [Partner Center](https://partner.microsoft.com/dashboard).
 
-If you don't already have a Windows Dev Center account, you can [sign up today](https://developer.microsoft.com/en-us/store/register).
+If you don't already have a Partner Center developer account, you can [sign up today](https://developer.microsoft.com/en-us/store/register).
 
 ## Packaging a mixed reality app
 
@@ -27,7 +27,7 @@ There are several image assets required by the appx building tools to build your
 | Square 71x71 Logo | Any |  PNG | N/A | 
 | Square 150x150 Logo | 150x150 (100% scale) or 225x225 (150% scale) | PNG | Start pins and All Apps (if 310x310 isn't provided), Store Search Suggestions, Store Listing Page, Store Browse, Store Search | 
 |  Wide 310x150 Logo |  Any  |  PNG  |  N/A | 
-|  Store Logo |  75x75 (150% scale)  |  PNG  |  Dev Center, Report App, Write a Review, My Library | 
+|  Store Logo |  75x75 (150% scale)  |  PNG  |  Partner Center, Report App, Write a Review, My Library | 
 |  Splash Screen |  930x450 (150% scale)  |  PNG  |  2D app launcher (slate) | 
 
 There are also some recommended assets which HoloLens can take advantage of.
@@ -55,7 +55,7 @@ Set minimum and target platform versions in Visual Studio
 
 ### Specifying target device families
 
-Windows Mixed Reality applications (for both [HoloLens](hololens-hardware-details.md) and [immersive headsets](immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a [target device family](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) of "Windows.Universal" is capable of running on HoloLens or Windows 10 PCs with immersive headsets. That being said, if you do not specify a target device family in your app manifest you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, and then [double-check that the correct device families are selected when you upload your app package in Dev Center to submit to the Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality applications (for both [HoloLens](hololens-hardware-details.md) and [immersive headsets](immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a [target device family](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) of "Windows.Universal" is capable of running on HoloLens or Windows 10 PCs with immersive headsets. That being said, if you do not specify a target device family in your app manifest you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, and then [double-check that the correct device families are selected when you upload your app package in Partner Center to submit to the Store.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 To set this field in Visual Studio, right click on the Package.appxmanifest and select "View Code" then find the TargetDeviceFamily Name field. By default, it might look like the following:
 
@@ -126,7 +126,7 @@ If there is a Windows.Universal package and a Windows.Holographic package and th
 
 ### Windows App Certification Kit
 
-When you create app packages to submit to the Windows Dev Center through Visual Studio, the Create App Packages wizard will prompt you to run the Windows App Certification Kit against the packages that get created. In order to have a smooth submission process to the Store, it's best to verify that the [Windows App Certification Kit tests](https://msdn.microsoft.com/library/windows/apps/jj657973.aspx) pass against your app on your local machine before submitting them to the Store. Running the Windows App Certification Kit on a remote HoloLens is not currently supported.
+When you create app packages to submit to Partner Center through Visual Studio, the Create App Packages wizard will prompt you to run the Windows App Certification Kit against the packages that get created. In order to have a smooth submission process to the Store, it's best to verify that the [Windows App Certification Kit tests](https://msdn.microsoft.com/library/windows/apps/jj657973.aspx) pass against your app on your local machine before submitting them to the Store. Running the Windows App Certification Kit on a remote HoloLens is not currently supported.
 
 ### Run on all targeted device families
 
@@ -211,7 +211,7 @@ Device family availability table
 If your mixed reality app works on immersive headsets, then at least "Windows 10 Desktop" should be selected in the table. If your mixed reality app works on HoloLens, then at least "Windows 10 Holographic" should be selected. If your app runs on both Windows Mixed Reality headset types, like the [Mixed Reality Academy "Project Island" app](mixed-reality-250.md), both "Windows 10 Desktop" and "Windows 10 Holographic" should be selected.
 
 >[!TIP]
->Many developers run into errors when uploading their app's package related to mismatches between the package manifest and your app/publisher account information in Dev Center. These errors can often be avoided by signing into Visual Studio with the same account associated with your Windows developer account (the one you use to sign into Windows Dev Center). If you use the same account, you'll be able to associate your app with its identity in the Microsoft Store before you package it.
+>Many developers run into errors when uploading their app's package related to mismatches between the package manifest and your app/publisher account information in Partner Center. These errors can often be avoided by signing into Visual Studio with the same account associated with your Windows developer account (the one you use to sign into Partner Center). If you use the same account, you'll be able to associate your app with its identity in the Microsoft Store before you package it.
 
 ![Associate your app with the Microsoft Store](images/associate-your-app-700px.png)<br>
 Associate your app with the Microsoft Store in Visual Studio

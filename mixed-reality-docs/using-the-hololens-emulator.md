@@ -21,7 +21,9 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset apps o
 
 ## Installing the HoloLens emulator
 
+
 [Click here to download the HoloLens (1st gen) emulator](https://go.microsoft.com/fwlink/?linkid=874531)
+
 
 You can find older builds of the HoloLens emulator on the [HoloLens emulator archive](hololens-emulator-archive.md) page.
 

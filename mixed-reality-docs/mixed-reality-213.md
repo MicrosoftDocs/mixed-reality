@@ -805,6 +805,6 @@ You are now ready to start creating your own immersive experience with motion co
 ## See also
 
 * [MR Input 213 project files](https://github.com/Microsoft/MixedReality213)
-* [Mixed Reality Toolkit - Motion Controller Test scene](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Examples/Input/Scenes)
-* [Mixed Reality Toolkit - Grab Mechanics](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics)
+* [Mixed Reality Toolkit - Motion Controller Test scene](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/Input/Scenes)
+* [Mixed Reality Toolkit - Grab Mechanics](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/MotionControllers-GrabMechanics)
 * [Motion controller development guidelines](motion-controllers.md)

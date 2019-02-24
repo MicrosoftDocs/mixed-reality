@@ -12,6 +12,7 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
+
 # Current Refactor
 
 > [!NOTE]
@@ -64,10 +65,12 @@ The following table shows both options and their capabilities. Choose the option
 - Recording of video + holograms + ambient sound + hologram sound.
 - Share sheet so you can save video, email it, or share with other supporting apps.
 
+
 >[!NOTE] 
 >The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
 
 >[!VIDEO https://www.youtube.com/watch?v=3fXlPw_FGLg]
+=
 
 ### Licenses
 
@@ -79,12 +82,14 @@ The following table shows both options and their capabilities. Choose the option
 ### Requirements
 
 - Spectator View plugin and required OpenCV binaries, which can be found at https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin. Details on how to build the Spectator View Native Plugin can be found below. From the generated binaries you will need:
+
     - opencv_aruco343.dll
     - opencv_calib3d343.dll
     - opencv_core343.dll
     - opencv_features2d343.dll
     - opencv_flann343.dll
     - opencv_imgproc343.dll
+
     - zlib1.dll
     - SpectatorViewPlugin.dll
 - Spectator View uses Unity Networking (UNET) for its network discovery and spatial syncing. This means all interactivity during the application needs to be synced between the devices.
@@ -431,6 +436,8 @@ If starting from a new Unity project, you will need to do some setup first:
 * [Mixed reality capture](mixed-reality-capture.md) 
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+
 * [Spectator View (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/SpectatorView)
 * [Spectator View (Preview) native code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
+
 * [Spectator View Pro code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)

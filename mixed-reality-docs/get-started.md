@@ -36,7 +36,7 @@ Whether you're building a mixed reality app that targets HoloLens, immersive (VR
 Tools to install:
 * [Unity](https://store.unity.com/download)
 * [Visual Studio (with Windows 10 SDK)](https://developer.microsoft.com/en-us/windows/downloads)
-* [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/GettingStarted.md)
+* [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/GettingStarted.md)
 
 You'll also want to [put your target device into Developer mode and configure Visual Studio for deploying apps to the target device](using-visual-studio.md).
 
