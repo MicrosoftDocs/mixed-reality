@@ -181,7 +181,7 @@ These are the core building blocks for mixed reality development:
 
 <table>
 <tr>
-<th>Input</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Input</th><th style="width:110px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:110px">HoloLens 2</a></th><th style="width:110px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> <a href="gaze.md">Head gaze</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
