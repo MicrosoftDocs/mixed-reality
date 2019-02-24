@@ -2,10 +2,10 @@
 title: Gaze targeting
 description: All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality.
 author: cre8ivepark
-ms.author: dongpark
-ms.date: 03/21/2018
+ms.author: jennyk
+ms.date: 02/24/2019
 ms.topic: article
-keywords: Windows Mixed Reality, Gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
 ---
 
 
@@ -20,11 +20,14 @@ To enable a user to work with an experience successfully, the system's calculate
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Gaze targeting</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> Gaze targeting</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️ </td>
 </tr>
 </table>
+
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
 
 ## Target sizing and feedback
 

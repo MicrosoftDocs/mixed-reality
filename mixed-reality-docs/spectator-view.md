@@ -1,9 +1,9 @@
 ---
 title: Spectator View (Preview and Pro)
 description: Visualize holograms from an external device as a means of demonstrating a mixed reality experience on an external display or recording video of a mixed reality experience.
-author: danielescudero
-ms.author: daescu
-ms.date: 06/22/2018
+author: Chris Barth
+ms.author: chriba
+ms.date: 02/11/2018
 ms.topic: article
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit, demo, record
 ---
@@ -11,6 +11,19 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 # Spectator View for HoloLens
 
 ![Marker](images/SpecViewPhoneHero.jpg)
+
+
+# Current Refactor
+
+> [!NOTE]
+>Spectator View for HoloLens is being actively refactored. This work is intended to consolidate the Preview and Pro codebases and extend support to HoloLens 2. 
+
+To view the current state of the Spectator View refactor see 'feature/spectatorView' branches in both the MixedRealityToolkit and MixedRealityToolkit-Unity repos:
+
+https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/feature/spectatorView/Assets/MixedRealityToolkit.Extensions/SpectatorView
+https://github.com/Microsoft/MixedRealityToolkit/tree/feature/spectatorView/SpectatorViewPlugin
+
+# Overview
 
 When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator View allows others to see on a 2D screen what a HoloLens user sees in their world.
 Spectator View (Preview) is fast and affordable approach to recording holograms in HD, while Spectator View Pro is intended for professional quality recording of holograms.
@@ -52,12 +65,12 @@ The following table shows both options and their capabilities. Choose the option
 - Recording of video + holograms + ambient sound + hologram sound.
 - Share sheet so you can save video, email it, or share with other supporting apps.
 
+
+>[!NOTE] 
 >The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
 
-Spectator View (Preview) video
-
-<a href="https://www.youtube.com/watch?v=3fXlPw_FGLg" target="_blank"><img src="https://img.youtube.com/vi/3fXlPw_FGLg/0.jpg"></a>
-</BR>_Click image to play video_
+>[!VIDEO https://www.youtube.com/watch?v=3fXlPw_FGLg]
+=
 
 ### Licenses
 
@@ -69,12 +82,14 @@ Spectator View (Preview) video
 ### Requirements
 
 - Spectator View plugin and required OpenCV binaries, which can be found at https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin. Details on how to build the Spectator View Native Plugin can be found below. From the generated binaries you will need:
-    - opencv_aruco341.dll
-    - opencv_calib3d341.dll
-    - opencv_core341.dll
-    - opencv_features2d341.dll
-    - opencv_flann341.dll
-    - opencv_imgproc341.dll
+
+    - opencv_aruco343.dll
+    - opencv_calib3d343.dll
+    - opencv_core343.dll
+    - opencv_features2d343.dll
+    - opencv_flann343.dll
+    - opencv_imgproc343.dll
+
     - zlib1.dll
     - SpectatorViewPlugin.dll
 - Spectator View uses Unity Networking (UNET) for its network discovery and spatial syncing. This means all interactivity during the application needs to be synced between the devices.
@@ -86,7 +101,6 @@ Spectator View (Preview) video
     - Mac with xcode 9.2 onwards
 - Apple developer account, free or paid (https://developer.apple.com/)
 - Microsoft Visual Studio 2017
-- **Optional: **- UnityARKitPlugin. The required components of this plugin are already included in the MixedRealityToolkit-Unity project. The entire ARKit plugin can be downloaded from the asset store here: https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-arkit-plugin-92515
 
 ### Building the Spectator View native plugin
 
@@ -110,7 +124,7 @@ To generate the required files, follow these steps: https://github.com/Microsoft
 
 - Spectator View uses UNET for its networking and manages all host-client connections for you.
 - Any app specific data has to be synced and implemented by you, using e.g. SyncVars, NetworkTransform, NetworkBehavior.
-- For more information and tutorials on Unity Networking please visit https://unity3d.com/learn/tutorials/s/multiplayer-networking
+- For more information on Unity Networking please visit https://docs.unity3d.com/Manual/UNet.html (Note: UNet has been deprecated; the current refactor of the Spectator View codebase will address this issue)
 
 ### Building for each platform (HoloLens or iOS)
 
@@ -419,9 +433,11 @@ If starting from a new Unity project, you will need to do some setup first:
 
 ## See also
 
-* [Mixed reality capture](mixed-reality-capture.md)
+* [Mixed reality capture](mixed-reality-capture.md) 
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
-* [MR Sharing 240](holograms-240.md)
-* [Spectator View (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
+
+* [Spectator View (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/SpectatorView)
+* [Spectator View (Preview) native code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
+
 * [Spectator View Pro code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)

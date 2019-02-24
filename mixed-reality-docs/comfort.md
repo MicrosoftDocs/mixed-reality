@@ -1,43 +1,76 @@
 ---
 title: Comfort
 description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
-author: heldrt
-ms.author: roheld
-ms.date: 03/21/2018
+
+author: heldrt, erickjpaul
+ms.author: erpau
+ms.date: 02/13/2019
 ms.topic: article
-keywords: Windows Mixed Reality, design, comfort
+keywords: Mixed Reality, design, comfort
 ---
 
 
 
 # Comfort
 
-During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects. Some cues are monocular, including [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)), familiar size, occlusion, depth-of-field blur, and [accommodation](https://en.wikipedia.org/wiki/Accommodation_(eye)). Other cues are binocular, such as [vergence](https://en.wikipedia.org/wiki/Vergence) (essentially the relative rotations of the eyes required to look at an object) and [binocular disparity](https://en.wikipedia.org/wiki/Stereopsis) (the pattern of differences between the projections of the scene on the back of the two eyes). To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world. From a physical perspective, it is also important to design content that does not require fatiguing motions of the neck or arms. In this article, we’ll go over key considerations to keep in mind to achieve these goals.
+During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative positions of objects. Some cues rely only on a single eye (monocular cues), including [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)), [familiar size](https://en.wikipedia.org/wiki/Size#Perception_of_size), occlusion, [depth-of-field blur](https://en.wikipedia.org/wiki/Depth_of_field), and [accommodation](https://en.wikipedia.org/wiki/Accommodation_(eye)). Other cues rely on both eyes (binocular cues), and include [vergence](https://en.wikipedia.org/wiki/Vergence) (essentially the relative rotations of the eyes required to look at an object) and [binocular disparity](https://en.wikipedia.org/wiki/Stereopsis) (the pattern of differences between the projections of the scene on the back of the two eyes). To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world. From a physical perspective, it is also important to design content that does not require fatiguing motions of the neck or arms. In this article, we’ll go over key considerations to keep in mind to achieve these goals.
 
 ## Vergence-accommodation conflict
 
-To view objects clearly, humans must [accommodate](https://en.wikipedia.org/wiki/Accommodation_%28eye%29), or adjust their eyes’ focus, to the distance of the object. At the same time, the two eyes must [converge](https://en.wikipedia.org/wiki/Convergence_(eye)) to the object’s distance to avoid seeing double images. In natural viewing, vergence and accommodation are linked. When you view something near (e.g. a housefly close to your nose) your eyes cross and accommodate to a near point. Conversely, if you view something at infinity, your eyes’ lines of sight become parallel and the your eyes accommodates to infinity. In most head-mounted displays users will always accommodate to the focal distance of the display (to get a sharp image), but converge to the distance of the object of interest (to get a single image). When users accommodate and converge to different distances, the natural link between the two cues must be broken and this can lead to visual discomfort or fatigue.
+To view objects clearly, humans must [accommodate](https://en.wikipedia.org/wiki/Accommodation_%28eye%29), or adjust their eyes’ focus, to the distance of the object. At the same time, the rotation of both eyes must [converge](https://en.wikipedia.org/wiki/Convergence_(eye)) to the object’s distance to avoid seeing double images. In natural viewing, vergence and accommodation are linked. When you view something near (e.g. a housefly close to your nose) your eyes cross and accommodate to a near point. Conversely, if you view something at optical infinity (roughly starting at 6m or farther for normal vision), your eyes’ lines of sight become parallel and your eyes’ lenses accommodate to infinity. 
+
+In most head-mounted displays users will always accommodate to the focal distance of the display (to get a sharp image), but converge to the distance of the object of interest (to get a single image). When users accommodate and converge to different distances, the natural link between the two cues must be broken and this can lead to visual discomfort or fatigue.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/-606oZKLa_s]
 
-**Guidance for holographic devices**
+###Guidance for holographic devices
 
-HoloLens displays are fixed at an optical distance approximately 2.0m away from the user. Thus, users must always accommodate near 2.0m to maintain a clear image in the device. App developers can guide where users' eyes converge by placing content and holograms at various depths. Discomfort from the vergence-accommodation conflict can be avoided or minimized by keeping content to which users converge to as close to 2.0m as possible (i.e. in a scene with lots of depth, place the areas of interest near 2.0m from the user when possible). When content cannot be placed near 2.0m, discomfort from the vergence-accomodation conflict is greatest when the user’s gaze switches back and forth between different distances. In other words, it is much more comfortable to look at a stationary hologram that stays 50cm away than to look at a hologram 50cm away that moves toward and away from you over time.
+HoloLens displays are fixed at an optical distance approximately 2.0m away from the user. Thus, users must always accommodate near 2.0m to maintain a clear image in the device. App developers can guide where users' eyes converge by placing content and holograms at various depths. Discomfort from the vergence-accommodation conflict can be avoided or minimized by keeping content to which users converge as close to 2.0m as possible (i.e. in a scene with lots of depth, place the areas of interest near 2.0m from the user when possible). When content cannot be placed near 2.0m, discomfort from the vergence-accommodation conflict is greatest when the user’s gaze switches back and forth between different distances. In other words, it is much more comfortable to look at a stationary hologram that stays 50cm away than to look at a hologram 50cm away that moves toward and away from you over time.
 
 ![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)<br>
 *Optimal distance for placing holograms from the user*
 
-**Best practices**
+####Best practices for HoloLens (1st gen) and HoloLens 2
 
-For maximum comfort, **the optimal zone for hologram placement is between 1.25m and 5m**. In every case, designers should attempt to structure content scenes to encourage users to interact 1m or farther away from the content (e.g. adjust [content size and default placement parameters](gaze-targeting.md)). When possible, we recommend starting to fade out content at 40cm and placing a rendering clipping plane at 30cm to avoid any nearer objects.
+For maximum comfort, **the optimal zone for hologram placement is between 1.25m and 5m**. In every case, designers should attempt to structure content scenes to encourage users to interact 1m or farther away from the content (e.g. adjust [content size and default placement parameters](gaze-targeting.md)). 
 
-In applications where content must be placed closer than 1m, extra care should be taken to ensure user comfort. For instance, as stated above, objects that move in depth are more likely than stationary objects to produce discomfort due to the vergence-accommodation conflict. Additionally, the odds of discomfort due to the conflict increase exponentially with decreasing viewing distance. We recommend creating a “depth budget” for apps based on the amount of time a user is expected to view content that is near (<1m) and/or moving in depth. An example is to avoid placing the user in those situations more than 25% of the time. If the depth budget is exceeded, we recommend careful user testing to ensure it remains a comfortable experience.
+Although content may occasionally need to be displayed closer than 1m, we recommend against ever presenting holograms closer than 40cm. Thus, we recommend starting to **fade out content at 40cm and placing a rendering clipping plane at 30cm** to avoid any nearer objects.
 
-**Guidance for immersive devices**
+Objects that move in depth are more likely than stationary objects to produce discomfort due to the vergence-accommodation conflict. Similarly, requiring users to rapidly switch between near-focus and far-focus (e.g., because of a pop-up hologram requiring direct interaction) can cause visual discomfort and fatigue. Therefore, **extra care should be taken to minimize how often users are: viewing content that is moving in depth; or rapidly switching focus between near and far holograms**. 
 
-For immersive devices, the guidance for HoloLens still applies, but the specific values for the Zone of Comfort are shifted depending on the focal distance to the display. In general, the focal distances to these displays are between 1.25m-2.5m. When in doubt, avoid rendering objects of interest too near to users and instead try to keep most content 1m or farther away.
+When designing content for direct (near) interaction in HoloLens 2, or **in any applications where content must be placed closer than 1m, extra care should be taken to ensure user comfort**. The odds of discomfort due to the vergence-accommodation conflict increase exponentially with decreasing viewing distance. **We recommend creating a “depth budget” for apps based on the amount of time a user is expected to view content that is near (< 1m) and moving in depth**. An example is to avoid placing the user in those situations more than 25% of the time. If the depth budget is exceeded, we recommend careful user testing to ensure it remains a comfortable experience.
+
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
+###Guidance for immersive devices
+
+For immersive devices, the guidance and best practices for HoloLens still applies, but the specific values for the Zone of Comfort are shifted depending on the focal distance to the display. In general, the focal distances to these displays are between 1.25m-2.5m. When in doubt, avoid rendering objects of interest too near to users and instead try to keep most content 1m or farther away.
+
+## Interpupillary distance and vertical offset
+
+When viewing digital content on head mounted displays (HMD), the position of a viewer’s eyes relative to the display position of digital content is critical. Specifically, both interpupillary distance ([IPD](https://en.wikipedia.org/wiki/Pupillary_distance)) and vertical offset (VO) are important for comfortable viewing of digital content in HMDs. 
+
+IPD refers to the distance between the pupils, or centers, of an individual’s eyes. VO refers to the potential vertical offset of digital content shown to each eye relative to the horizontal axis of the viewer's eyes (notably, this is NOT the same as horizontal offset, or binocular disparity). Mis-matching either or both of these factors to an individual user can worsen the effects of discomfort caused by vergence-accommodation conflict, but it can even cause discomfort when V-A conflict is minimized (e.g., for content displayed at the 2.0m focal distance of the HoloLens). 
+
+###Guidance for holographic devices
+
+####HoloLens (1st gen)
+
+For HoloLens (1st gen), IPD is estimated and set during device [calibration](calibration.md). For new users to an already set up device, calibration must be run or IPD must be set manually. VO depends wholly on device fit. Specifically, to minimize VO, the device needs to be resting on a user’s head such that the displays are level with the axis of his/her eyes. 
+
+####HoloLens 2
+
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
+###Guidance for immersive devices
+
+Windows Mixed Reality immersive HMDs have no automatic calibration for IPD or VO. IPD can be set manually in software (under Mixed Reality Portal settings, see [calibration](calibration.md)), or some HMDs have a mechanical slider that allows the user to adjust the spacing of the lenses to a comfortable position (i.e., that roughly matches their IPD). 
+
+
 
 ## Rendering rates
 
@@ -56,7 +89,7 @@ To draw holograms to look like [they're stable in the real or virtual world](hol
 There are a variety of tools that can be used to benchmark your application frame rate such as:
 * GPUView
 * Visual Studio Graphics Debugger
-* Profilers built into 3D engines such as Unity
+* Profilers built into 3D engines such as the Frame Debugger in Unity
 
 ## Self-motion and user locomotion
 
@@ -65,12 +98,18 @@ The only limitation is the size of your physical space; if you want to allow use
 Fortunately, there are tips for implementing user locomotion that can help avoid the issue:
 * Always put the user in control of their movements; unexpected self-motion is particularly problematic
 * Humans are very sensitive to the direction of gravity. Therefore, non-user-initiated vertical motions especially should be avoided.
-* **For holographic devices** - One method to allow the user to move to another location in a large virtual environment is to give the impression they're moving a small object in the scene. This effect can be achieved as follows:
+
+###Guidance for holographic devices
+
+One method to allow the user to move to another location in a large virtual environment is to give the impression they're moving a small object in the scene. This effect can be achieved as follows:
    1. Provide an interface where the user can select a spot in the virtual environment where they want to move.
    2. Upon selection, shrink the scene rendering down to a disk around the desired spot.
    3. While keeping the spot selected, allow the user to move it as though it were a small object. The user can then move the selection close to their feet.
    4. Upon deselection, resume rendering the entire scene.
-* **For immersive devices** - The preceding holographic device approach does not work as well in an immersive device because it requires the app to render a large black void or another default environment while moving the “disk.” This treatment disrupts one’s sense of immersion. One trick for user locomotion in an immersive headset is the “blink” approach. This implementation provides the user with control over their motion and gives a brief impression of movement, but makes it so brief that the user is less likely to feel disoriented by the purely virtual self-motion:
+
+###Guidance for immersive devices
+
+The preceding holographic device approach does not work as well in an immersive device because it requires the app to render a large black void or another default environment while moving the “disk.” This treatment disrupts one’s sense of immersion. One trick for user locomotion in an immersive headset is the “blink” approach. This implementation provides the user with control over their motion and gives a brief impression of movement, but makes it so brief that the user is less likely to feel disoriented by the purely virtual self-motion:
    1. Provide an interface where the user can select a spot in the virtual environment where they want to move.
    2. Upon selection, begin a very rapid simulated (100 m/s) motion towards that location while quickly fading out the rendering.
    3. Fade the rendering back in after finishing the translation.
@@ -78,6 +117,30 @@ Fortunately, there are tips for implementing user locomotion that can help avoid
 ## Heads-up displays
 
 In first-person-shooter videogames, heads-up displays (HUDs) persistently present information such as player health, mini-maps, and inventories directly on the screen. HUDs work well to keep the player informed without intruding on the gameplay experience. In mixed reality experiences, HUDs have the potential to cause significant discomfort and must be adapted to the more immersive context. Specifically, HUDs that are rigidly locked to the user’s head orientation are likely to produce discomfort. If an app requires a HUD, we recommend *body* locking rather than head locking. This treatment can be implemented as a set of displays that immediately translate with the user, but do not rotate with the user’s head until a threshold of rotation is reached. Once that rotation is achieved, the HUD may reorient to present the information within the user’s field of view. Implementing 1:1 HUD rotation and translation relative to the user’s head motions should always be avoided.
+
+## Text Legibility
+
+Optimal text legibility can help reduce eye strain and maintain user comfort, especially in applications or scenarios that require users to read while in an HMD. Text legibility depends on a variety of factors including various display properties (for example, pixel density, brightness, contrast), lens properties (for example, chromatic aberration), and text/font properties (for example, the specific font characteristics like thickness, serifs, etc., color of font, color of background).  
+
+In general, we recommend testing specific applications for legibility and making font sizes as large as is feasible for a comfortable experience. Below we offer general guidance as a starting point for development. Note that all font sizes are reported in degrees of [visual angle](https://en.wikipedia.org/wiki/Visual_angle) rather than specific physical sizes, which provides guidance for any distance within the zone of optimal hologram placement because it accounts for both the size of the text and the distance it appears to the viewer. 
+
+###Guidance for holographic devices
+
+For holographic devices, rendering black/dark text on a white/light background provides the most consistent contrast ratio because the background will occlude interference from the real-world behind the rendering. Rendering white/light text on a black/dark background allows more of real-world environment to show through, which may interfere with text legibility. 
+
+####HoloLens (1st gen)
+The minimum legible vertical font size is approximately 0.35° and a comfortable vertical font size is at least approximately 0.5° for reading content presented at a distance of 2m to the user. 
+
+####HoloLens 2
+
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
+###Guidance for immersive devices
+
+Immersive devices generally have higher contrast ratios due to the complete occlusion of the outside environment, but have lower effective pixel density in part because of the magnification of the lenses in front of the displays. 
+
+For Windows Mixed Reality immersive HMDs, the minimum legible vertical font size is approximately 0.7-0.9° and a comfortable vertical font size is approximately 1.0° for reading content presented at a distance of 2m to the user.
 
 ## Gaze direction
 
@@ -99,3 +162,5 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 * [Gaze](gaze.md)
 * [Hologram stability](hologram-stability.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
+* [Holographic Frame](holographic-frame.md)
+* [Calibration](calibration.md)

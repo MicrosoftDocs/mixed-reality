@@ -12,6 +12,10 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 
 # Add holographic remoting
 
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
+
 ## Add holographic remoting to your desktop or UWP app
 
 This page describes how to add Holographic Remoting to a desktop or UWP app.

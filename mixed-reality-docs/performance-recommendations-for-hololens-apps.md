@@ -1,11 +1,11 @@
 ---
 title: Performance recommendations for HoloLens apps
 description: This article covers tips to optimize performance for HoloLens apps.
-author: gschneid
-ms.author: gschneid
-ms.date: 03/21/2018
+author: chbecker-ms
+ms.author: chbecker
+ms.date: 02/11/2019
 ms.topic: article
-keywords: performance, optimization, target, HoloLens
+keywords: performance, optimization, target, HoloLens, HoloLens 2
 ---
 
 
@@ -57,6 +57,9 @@ This section provides broad recommendations for application, especially visual c
 * Race to sleep on CPU/GPU by aligning tasks with the Present intervals.
 * Use 16bit depth buffers.
 * Turn off physics if your project doesn't use it.
+* Avoid allocations if the scene has not grown in size.
+*	If your app uses system overlays such as the keyboard, keep utilization as low as possible to allow both your app and the system to remain at 60 FPS. Ideally, reduce your application’s logic stepping and rendering to a bare minimum during this time.
+* For HoloLens 2, aim for a CPU utilization of less than 55% and a GPU utilization of less than 45% for your process. This is a good balance for general apps, but you may trade between CPU and GPU performance as long as the total system power is within limits.
 
 **Geometry**
 * Perform frustum culling against the combined left and right eye frustum.
@@ -81,7 +84,7 @@ This section provides broad recommendations for application, especially visual c
 * To easily distinguish a vertex bottleneck from a pixel bottleneck, use the ViewportScaleFactor to reduce your output resolution. If you see a performance gain, you have a pixel bottleneck, if you do not see a gain, you likely have a vertex shader bottleneck.
 * To distinguish a vertex shader bottleneck from a CPU bottleneck, create a minimal vertex shader that still performs all the positional calculations but simply emits a white color. If you see a performance gain, you have a vertex shader bottle neck, if performance remains the same, your problem is likely on the CPU and probably related to having too many DirectX calls.
 * Shader switching between holograms can be expensive, consider sorting your draw calls such that you submit all objects with the same shader in sequence.
-* Use full floats for vertex position calculations but use [min16float](https://msdn.microsoft.com/library/windows/desktop/hh968108(v=vs.85).aspx) for all other calculations. Check the shader assembly to ensure that it is using 16-bit. It is easy to make simple mistakes that force 32-bit mode. HLSL compiler will give you a warning if it up-converts to 32-bit.
+* Use full floats for vertex position calculations. On HoloLens 2, use full floats for texture UV to avoid artificats. But use [min16float](https://msdn.microsoft.com/library/windows/desktop/hh968108(v=vs.85).aspx) for all other calculations. Check the shader assembly to ensure that it is using 16-bit. It is easy to make simple mistakes that force 32-bit mode. HLSL compiler will give you a warning if it up-converts to 32-bit.
 * Leverage "low level" HLSL intrinsic instructions to maximize ALU throughput. [HLSL intrinsic reference](https://msdn.microsoft.com/library/windows/desktop/ff471376(v=vs.85).aspx).
 * Combine separate MULTIPLY and ADD instructions into a single [MAD](https://msdn.microsoft.com/library/windows/desktop/ff471418(v=vs.85).aspx) instruction when possible.
 
@@ -94,7 +97,7 @@ This section provides broad recommendations for application, especially visual c
 * Limit to approximately 48 Pixel Shader arithmetic operations based on compiler output.
 * Shader cost is often directly proportional to the screen space an object takes up. E.g. one wouldn't want to put a 30 instruction shader on SR, which could take up the full screen.
 * Move work from Pixel Shader to Vertex Shader when possible. E.g. move lighting into Vertex Shader and interpolate.
-* Limit to 1 texture sample.
+*	Limit to as few texture samples as possible, ideally no more than 2.  Make use of texture packing to reduce the number of samples required, such as packing normals into the R and G channel and roughness into the B channel of the same texture. BC7 is provides excellent quality for this use case even if some of the channels are uncorrelated.
 * Static branching can be helpful. Check compiler output that it is being picked up.
 * Dynamic branching can be useful if you can reject a large number of complex pixels. E.g. shading objects where most pixels are transparent.
 
