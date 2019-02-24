@@ -114,7 +114,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                     </div>
                             </li>
                             <li>
-                                  <a href="https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/" title="Enthusiast's Guide" data-linktype="absolute-path">
+                                  <a href="https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/" target="_blank" title="Enthusiast's Guide" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
