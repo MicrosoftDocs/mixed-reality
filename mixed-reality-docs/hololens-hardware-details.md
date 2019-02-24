@@ -10,7 +10,7 @@ keywords: HoloLens, components, sensors, technology, tech, tear down, teardown,
 
 
 
-# HoloLens hardware details
+# HoloLens (1st gen) hardware details
 
 ![Microsoft HoloLens](images/see-through-400px.jpg)
 
