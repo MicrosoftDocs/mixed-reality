@@ -5,7 +5,7 @@ author: MikeRiches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows mixed reality, spatial mapping, environment, interation, directx, winrt, api, sample code, UWP, SDK, walkthrough
+keywords: Windows mixed reality, spatial mapping, environment, interaction, directx, winrt, api, sample code, UWP, SDK, walkthrough
 ---
 
 
@@ -58,7 +58,7 @@ Now, we walk through how to add surface mapping capability to your DirectX app. 
 
 Your app must be able to use the spatial mapping capability. This is necessary because the spatial mesh is a representation of the user's environment, which may be considered private data. Declare this capability in the package.appxmanifest file for your app. Here's an example:
 
-```
+```xml
 <Capabilities>
   <uap2:Capability Name="spatialPerception" />
 </Capabilities>
@@ -66,7 +66,7 @@ Your app must be able to use the spatial mapping capability. This is necessary b
 
 The capability comes from the **uap2** namespace. To get access to this namespace in your manifest, include it as an *xlmns* attribute in the &lt;Package> element. Here's an example:
 
-```
+```xml
 <Package
     xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
     xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
@@ -84,7 +84,7 @@ To check the current device for spatial mapping support, first make sure the UWP
 
 The SpatialSurfaceObserver::IsSupported() API is available starting in SDK version 15063. If necessary, retarget your project to platform version 15063 before using this API.
 
-```
+```cpp
 if (m_surfaceObserver == nullptr)
    {
        using namespace Windows::Foundation::Metadata;
@@ -110,7 +110,7 @@ Note that when the UWP contract is less than level 4, the app should proceed as 
 
 Your app needs to request permission to access spatial mapping data before trying to create any surface observers. Here's an example based upon our Surface Mapping code sample, with more details provided later on this page:
 
-```
+```cpp
 auto initSurfaceObserverTask = create_task(SpatialSurfaceObserver::RequestAccessAsync());
 initSurfaceObserverTask.then([this, coordinateSystem](Windows::Perception::Spatial::SpatialPerceptionAccessStatus status)
 {
@@ -131,7 +131,7 @@ The **Windows::Perception::Spatial::Surfaces** namespace includes the [SpatialSu
 
 From **AppMain.h**:
 
-```
+```cpp
 // Obtains surface mapping data from the device in real time.
 Windows::Perception::Spatial::Surfaces::SpatialSurfaceObserver^     m_surfaceObserver;
 Windows::Perception::Spatial::Surfaces::SpatialSurfaceMeshOptions^  m_surfaceMeshOptions;
@@ -139,7 +139,7 @@ Windows::Perception::Spatial::Surfaces::SpatialSurfaceMeshOptions^  m_surfaceMes
 
 As noted in the previous section, you must request access to spatial mapping data before your app can use it. This access is granted automatically on the HoloLens.
 
-```
+```cpp
 // The surface mapping API reads information about the user's environment. The user must
 // grant permission to the app to use this capability of the Windows Mixed Reality device.
 auto initSurfaceObserverTask = create_task(SpatialSurfaceObserver::RequestAccessAsync());
@@ -153,7 +153,7 @@ initSurfaceObserverTask.then([this, coordinateSystem](Windows::Perception::Spati
 
 Next, you need to configure the surface observer to observe a specific bounding volume. Here, we observe a box that is 20x20x5 meters, centered at the origin of the coordinate system.
 
-```
+```cpp
 // The surface observer can now be configured as needed.
 
         // In this example, we specify one area to be observed using an axis-aligned
@@ -173,7 +173,7 @@ Note that you can set multiple bounding volumes instead.
 
 *This is pseudocode:*
 
-```
+```cpp
 m_surfaceObserver->SetBoundingVolumes(/* iterable collection of bounding volumes*/);
 ```
 
@@ -181,7 +181,7 @@ It is also possible to use other bounding shapes - such as a view frustum, or a 
 
 *This is pseudocode:*
 
-```
+```cpp
 m_surfaceObserver->SetBoundingVolume(
             SpatialBoundingVolume::FromFrustum(/*SpatialCoordinateSystem*/, /*SpatialBoundingFrustum*/)
             );
@@ -193,7 +193,7 @@ If your app needs to do anything differently when surface mapping data is not av
 
 If the surface observer was successfully created, we can proceed to initialize our surface mesh collection. Here, we use the pull model API to get the current set of observed surfaces right away:
 
-```
+```cpp
 auto mapContainingSurfaceCollection = m_surfaceObserver->GetObservedSurfaces();
         for (auto& pair : mapContainingSurfaceCollection)
         {
@@ -208,7 +208,7 @@ There is also a push model available to get surface mesh data. You are free to d
 
 In our code sample, we chose to demonstrate the use of both models for pedagogical purposes. Here, we subscribe to an event to receive up-to-date surface mesh data whenever the system recognizes a change.
 
-```
+```cpp
 m_surfaceObserver->ObservedSurfacesChanged += ref new TypedEventHandler<SpatialSurfaceObserver^, Platform::Object^>(
             bind(&HolographicDesktopAppMain::OnSurfacesChanged, this, _1, _2)
             );
@@ -220,13 +220,13 @@ Our code sample is also configured to respond to these events. Let's walk throug
 
 The surface mesh data is provided in a read-only map that stores [SpatialSurfaceInfo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx) objects using [Platform::Guids](https://msdn.microsoft.com/library/windows/desktop/aa373931.aspx) as key values.
 
-```
+```cpp
 IMapView<Guid, SpatialSurfaceInfo^>^ const& surfaceCollection = sender->GetObservedSurfaces();
 ```
 
 To process this data, we look first for key values that aren't in our collection. Details on how the data is stored in our sample app will be presented later in this topic.
 
-```
+```cpp
 // Process surface adds and updates.
 for (const auto& pair : surfaceCollection)
 {
@@ -250,13 +250,13 @@ We also have to remove surface meshes that are in our surface mesh collection, b
 
 From our event handler in AppMain.cpp:
 
-```
+```cpp
 m_meshCollection->PruneMeshCollection(surfaceCollection);
 ```
 
 The implementation of mesh pruning in RealtimeSurfaceMeshRenderer.cpp:
 
-```
+```cpp
 void RealtimeSurfaceMeshRenderer::PruneMeshCollection(IMapView<Guid, SpatialSurfaceInfo^>^ const& surfaceCollection)
 {
     std::lock_guard<std::mutex> guard(m_meshCollectionLock);
@@ -289,7 +289,7 @@ The code sample starts the process when it receives surface mesh updates from th
 
 From RealtimeSurfaceMeshRenderer.cpp:
 
-```
+```cpp
 void RealtimeSurfaceMeshRenderer::AddOrUpdateSurface(Guid id, SpatialSurfaceInfo^ newSurface)
 {
     auto options = ref new SpatialSurfaceMeshOptions();
@@ -311,7 +311,7 @@ Our sample code is designed so that a data class, **SurfaceMesh**, handles mesh 
 
 From SurfaceMesh.cpp:
 
-```
+```cpp
 void SurfaceMesh::UpdateSurface(SpatialSurfaceMesh^ surfaceMesh)
 {
     m_surfaceMesh = surfaceMesh;
@@ -321,7 +321,7 @@ void SurfaceMesh::UpdateSurface(SpatialSurfaceMesh^ surfaceMesh)
 
 Next time the mesh is asked to draw itself, it will check the flag first. If an update is needed, the vertex and index buffers will be updated on the GPU.
 
-```
+```cpp
 void SurfaceMesh::CreateDeviceDependentResources(ID3D11Device* device)
 {
     m_indexCount = m_surfaceMesh->TriangleIndices->ElementCount;
@@ -334,7 +334,7 @@ void SurfaceMesh::CreateDeviceDependentResources(ID3D11Device* device)
 
 First, we acquire the raw data buffers:
 
-```
+```cpp
 Windows::Storage::Streams::IBuffer^ positions = m_surfaceMesh->VertexPositions->Data;
     Windows::Storage::Streams::IBuffer^ normals   = m_surfaceMesh->VertexNormals->Data;
     Windows::Storage::Streams::IBuffer^ indices   = m_surfaceMesh->TriangleIndices->Data;
@@ -342,7 +342,7 @@ Windows::Storage::Streams::IBuffer^ positions = m_surfaceMesh->VertexPositions->
 
 Then, we create Direct3D device buffers with the mesh data provided by the HoloLens:
 
-```
+```cpp
 CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositions.GetAddressOf());
     CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, normals,   m_vertexNormals.GetAddressOf());
     CreateDirectXBuffer(device, D3D11_BIND_INDEX_BUFFER,  indices,   m_triangleIndices.GetAddressOf());
@@ -367,7 +367,7 @@ CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositio
 
 Our SurfaceMesh class has a specialized update function. Each [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) has its own transform, and our sample uses the current coordinate system for our **SpatialStationaryReferenceFrame** to acquire the transform. Then it updates the model constant buffer on the GPU.
 
-```
+```cpp
 void SurfaceMesh::UpdateTransform(
     ID3D11DeviceContext* context,
     SpatialCoordinateSystem^ baseCoordinateSystem
@@ -426,7 +426,7 @@ When it's time to render surface meshes, we do some prep work before rendering t
 
 From **RealtimeSurfaceMeshRenderer::Render**:
 
-```
+```cpp
 auto context = m_deviceResources->GetD3DDeviceContext();
 
 context->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
@@ -470,7 +470,7 @@ else
 
 Once this is done, we loop on our meshes and tell each one to draw itself. **NOTE:** This sample code is not optimized to use any sort of frustum culling, but you should include this feature in your app.
 
-```
+```cpp
 std::lock_guard<std::mutex> guard(m_meshCollectionLock);
 
 auto device = m_deviceResources->GetD3DDevice();
@@ -489,7 +489,7 @@ The individual meshes are responsible for setting up the vertex and index buffer
 
 From **SurfaceMesh::Draw**:
 
-```
+```cpp
 // The vertices are provided in {vertex, normal} format
 
 const auto& vertexStride = m_surfaceMesh->VertexPositions->Stride;
@@ -555,13 +555,13 @@ Start by clearing the render target view for the current virtual camera.
 
 From AppMain.cpp:
 
-```
+```cpp
 context->ClearRenderTargetView(pCameraResources->GetBackBufferRenderTargetView(), DirectX::Colors::Transparent);
 ```
 
 This is a "pre-rendering" pass. Here, we create an occlusion buffer by asking the mesh renderer to render only depth. In this configuration, we don't attach a render target view, and the mesh renderer sets the pixel shader stage to **nullptr** so that the GPU doesn't bother to draw pixels. The geometry will be rasterized to the depth buffer, and the graphics pipeline will stop there.
 
-```
+```cpp
 // Pre-pass rendering: Create occlusion buffer from Surface Mapping data.
 context->ClearDepthStencilView(pCameraResources->GetSurfaceDepthStencilView(), D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 
@@ -578,7 +578,7 @@ We can draw holograms with an extra depth test against the Surface Mapping occlu
 
 From AppMain.cpp:
 
-```
+```cpp
 // Hologram rendering pass: Draw holographic content.
 context->ClearDepthStencilView(pCameraResources->GetHologramDepthStencilView(), D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 
@@ -599,7 +599,7 @@ m_xrayCubeRenderer->Render(
 
 Based on code from SpecialEffectPixelShader.hlsl:
 
-```
+```cpp
 // Draw boundaries
 min16int surfaceSum = GatherDepthLess(envDepthTex, uniSamp, input.pos.xy, pixelDepth, input.idx.x);
 
@@ -631,7 +631,7 @@ We can also just draw the surface meshes to the stereo display buffers. We chose
 
 Here, our code sample tells the mesh renderer to draw the collection. This time we don't specify a depth-only pass, so it will attach a pixel shader and complete the rendering pipeline using the targets that we specified for the current virtual camera.
 
-```
+```cpp
 // SR mesh rendering pass: Draw SR mesh over the world.
 context->ClearDepthStencilView(pCameraResources->GetSurfaceOcclusionDepthStencilView(), D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 

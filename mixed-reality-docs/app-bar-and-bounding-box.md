@@ -42,7 +42,7 @@ The cube-like corners of the bounding box follow a widely understood pattern for
 The spherical affordances on the edges of the bounding box are rotation indicators. This gives the user more fine adjustment over their placed holograms. Not only can they adjust and scale, but now rotate as well.
 
 ## See also
-* [Scripts and prefabs for App bar and bounding box on Mixed Reality Design Labs GitHub](https://github.com/Microsoft/MRDesignLabs_Unity/tree/master/DesignLabs_Unity_Examples)
+* [Scripts and prefabs for App bar and bounding box on Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md)
 * [Interactable object](interactable-object.md)
 * [Text in Unity](text-in-unity.md)
 * [Object collection](object-collection.md)

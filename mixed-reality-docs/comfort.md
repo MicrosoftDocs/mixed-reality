@@ -1,6 +1,7 @@
 ---
 title: Comfort
 description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
+
 author: heldrt, erickjpaul
 ms.author: erpau
 ms.date: 02/13/2019

@@ -12,18 +12,12 @@ keywords: release notes, version, windows 10, build, rs5, os
 
 # Release notes - October 2018
 
->[!NOTE]
->We have paused the rollout of the Windows 10 October 2018 Update for all users (this does not affect Insider builds for HoloLens). See this [support article](https://support.microsoft.com/en-us/help/4464619/windows-10-update-history) for more information.
-
 The **[Windows 10 October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (also known as RS5) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
 
-To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 October 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
+To update to the latest release on HoloLens or PC (for Windows Mixed Reality immersive (VR) headsets), open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 October 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
 
-The public release of Windows 10 October 2018 Update (RS5) will be coming to HoloLens via Windows Update in the coming weeks, but you can try its new features now by running the [RS5 Insider Preview build](https://docs.microsoft.com/hololens/hololens-insider).
-
-**Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.17763.1**)<br>
-**Latest release for HoloLens:** Coming soon ([Insider preview](https://docs.microsoft.com/hololens/hololens-insider) available now)<br>
-<br>
+**Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.17763.107**)<br>
+**Latest release for HoloLens:** Windows 10 October 2018 Update (**10.0.17763.134**)<br>
 
 ## New features for Windows Mixed Reality immersive headsets
 
@@ -53,14 +47,13 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     
 ### For developers
 
+* **[QR code tracking](qr-code-tracking.md)** - Enable QR code tracking in your mixed reality app, allowing Windows Mixed Reality immersive (VR) headsets to scan for QR codes and report them back to interested apps.
 * **Hardware DRM support for immersive apps** - Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
 * **[Integrate mixed reality capture UI into immersive apps](mixed-reality-capture-for-developers.md#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
 
 ## New features for HoloLens
 
-The Windows 10 October 2018 Update will be publicly available for HoloLens soon. Here are some of the new features you'll experience when it arrives. 
-
-If you'd like to use these features now, you can install the [RS5 Insider Preview build](https://docs.microsoft.com/hololens/hololens-insider) for HoloLens.
+The Windows 10 October 2018 Update is publicly available for all HoloLens customers, and includes a number of improvements, such as:
 
 ### For everyone
 
@@ -89,7 +82,18 @@ If you'd like to use these features now, you can install the [RS5 Insider Previe
 
 ### For international customers
 
-You can now use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.
+You can now use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, text-to-speech (TTS), and voice commands.
+
+## Known issues
+
+We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](https://docs.microsoft.com/en-us/windows/mixed-reality/give-us-feedback).
+
+### HoloLens
+ 
+#### After update
+You may notice the following issues when using the Windows 10 October 2018 Update on your HoloLens:
+* **Apps can end up in sign-in loop when launched from a notification** – Some apps requiring sign-in can end-up in an endless sign-in loop when launched from a notification. As an example, this can happen after installing the Microsoft Company Portal app from the Microsoft Store and launching it from the installation complete notification.
+* **App sign-in page can complete with a blank page** – In some cases when a sign-in prompt shows over your application, on completion the sign-in page does not close and instead shows a blank (black) page. You can either close the blank page or move it to uncover the application underneath. As an example, this can happen on sign-in during MDM enrollment from the Settings app. 
 
 ## Provide feedback and report issues
 

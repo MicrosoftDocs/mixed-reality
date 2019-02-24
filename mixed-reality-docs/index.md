@@ -2,7 +2,9 @@
 layout: LandingPage
 title: Mixed Reality
 description: Learn to build mixed reality experiences for HoloLens and immersive headsets.
+
 author: rwinj
+
 ms.author: vanesa
 ms.date: 03/21/2018
 ms.topic: article
@@ -116,8 +118,10 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                     </div>
                                     </a>
                             </li>
+
                              <li>
                               <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank" title="Vision Services" data-linktype="absolute-path">
+
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
