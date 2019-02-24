@@ -107,4 +107,4 @@ Once you're up and running with Azure Spatial Anchors, you can then [create and 
 ## See Also
 * [Spatial anchor persistence](coordinate-systems.md#spatial-anchor-persistence)
 * [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/spatial-anchors/)
+* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors)
