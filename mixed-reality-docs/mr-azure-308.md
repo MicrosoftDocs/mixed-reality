@@ -2,10 +2,14 @@
 title: MR and Azure 308 - Cross-device notifications
 description: Complete this course to learn how to implement Azure Notification Hubs, Azure Functions, and Azure Storage and Tables within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, notification, functions, tables, notification hubs, hololens, immersive, vr
 ---
+
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
 
 # MR and Azure 308: Cross-device notifications
 
@@ -1070,7 +1074,7 @@ To create the second script:
                 gameObjHasMoved = false;
 
                 // Call the Azure Function that will update the appropriate Entity in the Azure Table
-                // and send a Notification to all subrscribed Apps
+                // and send a Notification to all subscribed Apps
                 Debug.Log("Calling Azure Function");
 
                 StartCoroutine(UpdateCloudScene(gameObjHeld.name, gameObjHeld.position.x, gameObjHeld.position.y, gameObjHeld.position.z));

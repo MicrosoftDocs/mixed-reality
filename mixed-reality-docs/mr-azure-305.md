@@ -2,10 +2,14 @@
 title: MR and Azure 305 - Functions and storage
 description: Complete this course to learn how to implement Azure Storage and Functions within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, functions, storage, hololens, immersive, vr
 ---
+
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
 
 # MR and Azure 305: Functions and storage
 
@@ -747,7 +751,7 @@ To create this class:
 
 8.  Back in the Unity Editor, click and drag the *ShapeFactory* class from the **Scripts** folder to the **Main Camera** object in the *Hierarchy Panel*.
 
-9. With the Main Camera selected you will notice the *ShapeFactory* script component is missing the *Spawn Point* reference. To fix it, drag the **ShapeSpawnPoint** object from the *Hierachy Panel* to the **Spawn Point** reference target.
+9. With the Main Camera selected you will notice the *ShapeFactory* script component is missing the *Spawn Point* reference. To fix it, drag the **ShapeSpawnPoint** object from the *Hierarchy Panel* to the **Spawn Point** reference target.
 
     ![set shape factory reference target](images/AzureLabs-Lab5-53.png)
 

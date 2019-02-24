@@ -3,7 +3,7 @@ title: Gaze, gestures, and motion controllers in DirectX
 description: Combining input coming from gaze, gestures, and motion controllers, you can enable a user to place a hologram in your app.
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: gaze, gestures, motion controllers, directx, input, holograms
 ---
@@ -12,11 +12,11 @@ keywords: gaze, gestures, motion controllers, directx, input, holograms
 
 # Gaze, gestures, and motion controllers in DirectX
 
-If you're going to build directly on top of the platform, you will have to handle input coming from the user - such as where the user is looking via [gaze](gaze.md) and what the user has selected with [gestures](gestures.md) or [motion controllers](motion-controllers.md). Combining these forms of input, you can enable a user to place a [hologram](hologram.md) in your app. The [holographic app template](creating-a-holographic-directx-project.md) has an easy to use example.
+If you're going to build directly on top of the platform, you will have to handle input coming from the user - such as where the user is looking via [head gaze](gaze.md) and what the user has selected with [gestures](gestures.md) or [motion controllers](motion-controllers.md). Combining these forms of input, you can enable a user to place a [hologram](hologram.md) in your app. The [holographic app template](creating-a-holographic-directx-project.md) has an easy to use example.
 
 ## Gaze input
 
-To access the user's [gaze](gaze.md), you use the [SpatialPointerPose](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialpointerpose.aspx) type. The holographic app template includes basic code for understanding gaze. This code provides a vector pointing forward from between the user's eyes, taking into account the device's position and orientation in a given [coordinate system](coordinate-systems-in-directx.md).
+To access the user's [head gaze](gaze.md), you use the [SpatialPointerPose](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialpointerpose.aspx) type. The holographic app template includes basic code for understanding gaze. This code provides a vector pointing forward from between the user's eyes, taking into account the device's position and orientation in a given [coordinate system](coordinate-systems-in-directx.md).
 
 
 
@@ -62,6 +62,9 @@ if (pointerState != nullptr)
 ```
 
 Note that the data is tied to a pointer state of some kind. We get this from a spatial input event. The event data object includes a coordinate system, so that you can always relate the gaze direction at the time of the event to whatever spatial coordinate system you need. In fact, you must do so in order to get the pointer pose.
+
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
 
 ## Gesture and motion controller input
 
@@ -162,22 +165,22 @@ This is the event handler code. If the input source is experiencing a Grasp, the
 
 ```cpp
 void SpatialInputHandler::OnSourceUpdated(SpatialInteractionManager^ sender, SpatialInteractionSourceEventArgs^ args)
-   {
-       if (args->State->Source->IsGraspSupported)
-       {
-           if (args->State->IsGrasped)
-           {
-               m_sourceState = args->State;
-           }
-       }
-       else
-       {
-           if (args->State->IsSelectPressed)
-           {
-               m_sourceState = args->State;
-           }
-       }
-   }
+{
+    if (args->State->Source->IsGraspSupported)
+    {
+        if (args->State->IsGrasped)
+        {
+            m_sourceState = args->State;
+        }
+    }
+    else
+    {
+        if (args->State->IsSelectPressed)
+        {
+            m_sourceState = args->State;
+        }
+    }
+}
 ```
 
 Make sure to unregister the event handler in the destructor. From SpatialInputHandler.cpp:
@@ -190,7 +193,7 @@ m_interactionManager->SourceUpdated -= m_sourcePressedEventToken;
 Recompile, and then redeploy. Your template project should now be able to recognize Grasp interactions to reposition the spinning cube.
 
 The SpatialInteractionSource API supports controllers with a wide range of capabilities. In the example shown above, we check to see if Grasp is supported before trying to use it. The SpatialInteractionSource supports the following optional features beyond the common **Select** press:
-* **Menu button:** Check support by inspecting the IsMenuSupported property. When supported, check the SpatialInteractionSourceState::IsMenuPressed property to find out if the menu button is pressed.
+* **Menu button:** Check support by inspecting the IsMenuSupported property. When supported, check the [SpatialInteractionSourceState::IsMenuPressed](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionsourcestate.aspx) property to find out if the menu button is pressed.
 * **Grasp button:** Check support by inspecting the IsGraspSupported property. When supported, check the [SpatialInteractionSourceState::IsGrasped](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionsourcestate.aspx) property to find out if grasp is activated.
 
 For controllers, the SpatialInteractionSource has a Controller property with additional capabilities.
@@ -222,15 +225,15 @@ To better represent these controllers, there are two kinds of poses you can inve
 
 ### Composite gestures: SpatialGestureRecognizer
 
-A [SpatialGestureRecognizer](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialgesturerecognizer.aspx) interprets user interactions from hands, motion controllers, and the "Select" voice command to surface spatial gesture events, which users target using their gaze.
+A [SpatialGestureRecognizer](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialgesturerecognizer.aspx) interprets user interactions from hands, motion controllers, and the "Select" voice command to surface spatial gesture events, which users target using their head gaze.
 
 Spatial gestures are a key form of input for Windows Mixed Reality apps. By routing interactions from the SpatialInteractionManager to a hologram's SpatialGestureRecognizer, apps can detect Tap, Hold, Manipulation, and Navigation events uniformly across hands, voice, and spatial input devices, without having to handle presses and releases manually.
 
 SpatialGestureRecognizer performs only the minimal disambiguation between the set of gestures that you request. For example, if you request just Tap, the user may hold their finger down as long as they like and a Tap will still occur. If you request both Tap and Hold, after about a second of holding down their finger, the gesture will promote to a Hold and a Tap will no longer occur.
 
-To use SpatialGestureRecognizer, handle the SpatialInteractionManager's [InteractionDetected](https://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialInteractionManager.InteractionDetected) event and grab the SpatialPointerPose exposed there. Use the user's gaze ray from this pose to intersect with the holograms and surface meshes in the user's surroundings, in order to determine what the user is intending to interact with. Then, route the SpatialInteraction in the event arguments to the target hologram's SpatialGestureRecognizer, using its [CaptureInteraction](http://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureRecognizer.CaptureInteraction) method. This starts interpreting that interaction according to the [SpatialGestureSettings](https://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureSettings) set on that recognizer at creation time - or by [TrySetGestureSettings](http://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureRecognizer.TrySetGestureSettings).
+To use SpatialGestureRecognizer, handle the SpatialInteractionManager's [InteractionDetected](https://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialInteractionManager.InteractionDetected) event and grab the SpatialPointerPose exposed there. Use the user's head gaze ray from this pose to intersect with the holograms and surface meshes in the user's surroundings, in order to determine what the user is intending to interact with. Then, route the SpatialInteraction in the event arguments to the target hologram's SpatialGestureRecognizer, using its [CaptureInteraction](http://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureRecognizer.CaptureInteraction) method. This starts interpreting that interaction according to the [SpatialGestureSettings](https://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureSettings) set on that recognizer at creation time - or by [TrySetGestureSettings](http://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureRecognizer.TrySetGestureSettings).
 
-On HoloLens, interactions and gestures should generally derive their targeting from the user's gaze, rather than trying to render or interact at the hand's location directly. Once an interaction has started, relative motions of the hand may be used to control the gesture, as with the Manipulation or Navigation gesture.
+On HoloLens, interactions and gestures should generally derive their targeting from the user's head gaze, rather than trying to render or interact at the hand's location directly. Once an interaction has started, relative motions of the hand may be used to control the gesture, as with the Manipulation or Navigation gesture.
 
 ## See also
 * [Gaze](gaze.md)

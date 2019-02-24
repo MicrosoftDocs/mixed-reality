@@ -3,7 +3,7 @@ title: Testing your app on HoloLens
 description: Guidance and suggestions for testing your HoloLens app
 author: JonMLyons
 ms.author: jlyons
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, testing
 ---
@@ -48,6 +48,9 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 [Gestures](gestures.md) are how you interact with holograms, like a mouse click. Most of the time the mouse and touch behaviors are the same, but it's important to understand and validate when they differ.
 
 **Validate when your app has a different behavior with mouse and touch.** This will identify inconsistencies and help with design decisions to make the experience more natural for users. For example, triggering an action based on hover.
+
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
 
 ### Custom Voice Commands
 
