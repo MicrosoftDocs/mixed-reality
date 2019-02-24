@@ -398,9 +398,9 @@ Imagining your mix as an inverted funnel, with the least important (and generall
 
 Voice overs are an interesting scenario. Based on the experience you are creating you may wish to have a stereo (not localized) sound or to spatialize your voice overs. Two Microsoft published experiences illustrate excellent examples of each scenario.
 
-[HoloTour](http://www.microsoft.com/en-us/store/p/holotour/9nblggh5pj87) uses a stereo voice over. When the narrator is describing the location being viewed, the sound is consistent and does not vary based on the user's position. This enables the narrator to describe the scene without taking away from the spatialized sounds of the environment.
+[HoloTour](http://www.microsoft.com/store/p/holotour/9nblggh5pj87) uses a stereo voice over. When the narrator is describing the location being viewed, the sound is consistent and does not vary based on the user's position. This enables the narrator to describe the scene without taking away from the spatialized sounds of the environment.
 
-[Fragments](https://www.microsoft.com/en-us/store/p/fragments/9nblggh5ggm8) utilizes a spatialized voice over in the form of a detective. The detective's voice is used to help bring the user's attention to an important clue as if an actual human was in the room. This enables an even greater sense of immersion into the experience of solving the mystery.
+[Fragments](https://www.microsoft.com/store/p/fragments/9nblggh5ggm8) utilizes a spatialized voice over in the form of a detective. The detective's voice is used to help bring the user's attention to an important clue as if an actual human was in the room. This enables an even greater sense of immersion into the experience of solving the mystery.
 
 ### Part 3 -Performance
 

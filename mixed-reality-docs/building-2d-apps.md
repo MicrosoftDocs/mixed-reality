@@ -127,7 +127,7 @@ This resolution has several advantages:
 ### 2D app view interface design best practices
 
 **Do:**
-* Follow the [Windows 10 Human Interface Guidelines (HIG)](https://dev.windows.com/en-us/design) for styles, font sizes and button sizes. HoloLens will do the work to ensure your app will have compatible app patterns, readable text sizes, and appropriate hit target sizing.
+* Follow the [Windows 10 Human Interface Guidelines (HIG)](https://dev.windows.com/design) for styles, font sizes and button sizes. HoloLens will do the work to ensure your app will have compatible app patterns, readable text sizes, and appropriate hit target sizing.
 * Ensure your UI follows best practices for [responsive design](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) to look best at HoloLen's unique resolution and DPI.
 * Use the "light" color theme recommendations from Windows.
 

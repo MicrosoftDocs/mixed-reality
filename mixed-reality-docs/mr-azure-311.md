@@ -17,7 +17,7 @@ In this course, you will learn how to use *Microsoft Graph* to log in into your 
 
 ![](images/AzureLabs-Lab311-00.png)
 
-*Microsoft Graph* is a set of APIs designed to enable access to many of Microsoft's services. Microsoft describes Microsoft Graph as being a matrix of resources connected by relationships, meaning it allows an application to access all sorts of connected user data. For more information, visit the [Microsoft Graph page](https://developer.microsoft.com/en-us/graph).
+*Microsoft Graph* is a set of APIs designed to enable access to many of Microsoft's services. Microsoft describes Microsoft Graph as being a matrix of resources connected by relationships, meaning it allows an application to access all sorts of connected user data. For more information, visit the [Microsoft Graph page](https://developer.microsoft.com/graph).
 
 Development will include the creation of an app where the user will be instructed to gaze at and then tap a sphere, which will prompt the user to log in safely to a Microsoft account. Once logged in to their account, the user will be able to see a list of meetings scheduled for the day.
 

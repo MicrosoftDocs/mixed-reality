@@ -50,13 +50,13 @@ You can expect 2 weeks or more of regular use on a full charge (i.e., 2-3 hours 
 
 ## Bluetooth keyboards
 
-English language Qwerty Bluetooth keyboards can be paired and used anywhere you can use the holographic keyboard. Getting a quality keyboard makes a difference, so we recommend the [Microsoft Universal Foldable Keyboard](https://www.microsoft.com/accessories/en-us/products/keyboards/universal-foldable-keyboard/gu5-00001) or the [Microsoft Designer Bluetooth Desktop](https://www.microsoft.com/accessories/en-us/products/keyboards/designer-bluetooth-desktop/7n9-00001).
+English language Qwerty Bluetooth keyboards can be paired and used anywhere you can use the holographic keyboard. Getting a quality keyboard makes a difference, so we recommend the [Microsoft Universal Foldable Keyboard](https://www.microsoft.com/accessories/products/keyboards/universal-foldable-keyboard/gu5-00001) or the [Microsoft Designer Bluetooth Desktop](https://www.microsoft.com/accessories/products/keyboards/designer-bluetooth-desktop/7n9-00001).
 
 ## Bluetooth gamepads
 
 You can use a controller with apps and games that specifically enable gamepad support. Gamepads cannot be used to control the HoloLens user interface.
 
-Xbox Wireless Controllers that come with the Xbox One S or sold as accessories for the Xbox One S feature Bluetooth connectivity that enable them to be used with HoloLens and immersive headsets. The Xbox Wireless Controller [must be updated](http://support.xbox.com/en-US/xbox-one/accessories/update-controller-for-stereo-headset-adapter) before it can be used with HoloLens.
+Xbox Wireless Controllers that come with the Xbox One S or sold as accessories for the Xbox One S feature Bluetooth connectivity that enable them to be used with HoloLens and immersive headsets. The Xbox Wireless Controller [must be updated](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) before it can be used with HoloLens.
 
 Other brands of Bluetooth gamepads may work with Windows Mixed Reality devices, but support will vary by application.
 

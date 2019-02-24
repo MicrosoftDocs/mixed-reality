@@ -38,7 +38,7 @@ I understood this conceptually, but in the beginning I made the mistake of simpl
 
 ### Fragments: An example of great Diegetic UI
 
-[Fragments](https://www.microsoft.com/microsoft-hololens/en-us/apps/Fragments/), a first-person crime thriller developed by [Asobo Studio](http://www.asobostudio.com/) for HoloLens demonstrates a great Diegetic UI. In this game, the user becomes a main character, a detective who tries to solve a mystery. The pivotal clues to solve this mystery get sprinkled in the user’s physical room and are often times embedded inside a fictional object rather than existing on their own. This diegetic UI tends to be less discoverable than body-locked UI, so the Asobo team cleverly used many cues including virtual characters’ gaze direction, sound, light, and guides (e.g., arrow pointing the location of the clue) to grab user’s attention.
+[Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8), a first-person crime thriller developed by [Asobo Studio](http://www.asobostudio.com/) for HoloLens demonstrates a great Diegetic UI. In this game, the user becomes a main character, a detective who tries to solve a mystery. The pivotal clues to solve this mystery get sprinkled in the user’s physical room and are often times embedded inside a fictional object rather than existing on their own. This diegetic UI tends to be less discoverable than body-locked UI, so the Asobo team cleverly used many cues including virtual characters’ gaze direction, sound, light, and guides (e.g., arrow pointing the location of the clue) to grab user’s attention.
 
 ![Fragments - Diegetic UI examples](images/fragments-game-example-1.jpg)<br>
 *Fragments - Diegetic UI examples*

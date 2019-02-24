@@ -82,7 +82,7 @@ Validate core app functionality when switching between apps, especially if you'v
 
 ## Telemetry
 
-Use telemetry and analytics to guide you. Integrating analytics into your app will help you get insights about your app from your Beta testers and end-users. This data can be used to help optimize your app before submission to the Store and for future updates. There are many analytics options out there. If you're not sure where to start, check out [App Insights](https://www.visualstudio.com/en-us/products/application-insights-vs.aspx).
+Use telemetry and analytics to guide you. Integrating analytics into your app will help you get insights about your app from your Beta testers and end-users. This data can be used to help optimize your app before submission to the Store and for future updates. There are many analytics options out there. If you're not sure where to start, check out [App Insights](https://www.visualstudio.com/products/application-insights-vs.aspx).
 
 Questions to consider:
 1. How are users using the space?

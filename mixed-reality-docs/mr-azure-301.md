@@ -17,7 +17,7 @@ In this course, you will learn how to add translation capabilities to a mixed re
 
 ![Final product](images/AzureLabs-Lab1-00.png)
 
-The Translator Text API is a translation Service which works in near real-time. The Service is cloud-based, and, using a REST API call, an app can make use of the neural machine translation technology to translate text to another language. For more information, visit the [Azure Translator Text API page](https://azure.microsoft.com/en-us/services/cognitive-services/translator-text-api/).
+The Translator Text API is a translation Service which works in near real-time. The Service is cloud-based, and, using a REST API call, an app can make use of the neural machine translation technology to translate text to another language. For more information, visit the [Azure Translator Text API page](https://azure.microsoft.com/services/cognitive-services/translator-text-api/).
 
 Upon completion of this course, you will have a mixed reality application which will be able to do the following:
 
@@ -47,7 +47,7 @@ This course will teach you how to get the results from the Translator Service in
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
 - [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
 - [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
 - [Unity 2017.4](install-the-tools.md#installation-checklist)
@@ -601,7 +601,7 @@ To create this Class:
 
     > [!NOTE]
     > -	The languages inserted into the languages **enum** are just examples. Feel free to add more if you wish; the [API supports over 60 languages](https://docs.microsoft.com/azure/cognitive-services/translator/languages) (including Klingon)!
-    > - There is a [more interactive page covering available languages](https://www.microsoft.com/en-us/translator/languages.aspx), though be aware the page only appears to work when the site language is set to 'en-us' (and the Microsoft site will likely redirect to your native language). You can change site language at the bottom of the page or by altering the URL.
+    > - There is a [more interactive page covering available languages](https://www.microsoft.com/translator/business/languages/), though be aware the page only appears to work when the site language is set to 'en-us' (and the Microsoft site will likely redirect to your native language). You can change site language at the bottom of the page or by altering the URL.
     > -	The **authorizationKey** value, in the above code snippet, must be the **Key**  you received when you subscribed to the *Azure Translator Text API*. This was covered in [Chapter 1](#chapter-1--the-azure-portal).
 
 6.	Code for the *Awake()* and *Start()* methods now needs to be added. 
