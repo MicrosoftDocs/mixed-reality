@@ -157,7 +157,7 @@ Over the course of the next few months, we are excited to share more mixed reali
 </tr> 
 <tr>
 <td><b>Porting Guides</b> <br>1. HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) to MRTK Version 2
-<br>2. HoloLens (1st gen) to HoloLens 2 (X86 to ARM, interaction and design recommendations)
+<br>2. HoloLens (1st gen) to HoloLens 2 (x86 to ARM, interaction and design recommendations)
 </td></td><td>March - May 2019</td>
 </tr>
 <tr>
