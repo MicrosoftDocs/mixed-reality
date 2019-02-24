@@ -49,7 +49,7 @@ This course is a self-contained tutorial, which does not directly involve any ot
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
 - [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
 - [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
 - [Unity 2017.4](install-the-tools.md#installation-checklist)

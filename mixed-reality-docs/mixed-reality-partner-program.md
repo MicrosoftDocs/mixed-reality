@@ -166,7 +166,7 @@ The calls will be led by a Microsoft Regional Partner Manager (RPM). A template 
 
 The purpose of the Readiness phase is to demonstrate your company's ability to create and deliver compelling mixed reality experiences. To this end, we will ask you to complete a HoloLens app for a customer in one of our [target industries](mixed-reality-partner-program.md#target-industries-and-scenarios). The application must demonstrate a mastery of creating compelling user experiences coupled with high quality assets. Further the application must flex the unique features of HoloLens and demonstrate end value to your customer.
 
-Please reference [Why HoloLens](https://www.microsoft.com/en-us/hololens/why-hololens) for more information on the unique features and value of HoloLens. Your team must be composed of both developers and designers that have a strong understanding of 3D development and performance tuning.
+Please reference [Why HoloLens](https://www.microsoft.com/hololens) for more information on the unique features and value of HoloLens. Your team must be composed of both developers and designers that have a strong understanding of 3D development and performance tuning.
 
 The exit criteria for the readiness step includes:
 1. Deliver to a customer a HoloLens app meets our [app quality criteria](app-quality-criteria.md). There are basically two ways to complete this criteria:
@@ -186,7 +186,7 @@ If you don’t pass our quality bar, we will provide you details as to why. You 
 
 **Fast-track alternative for System Integrators**
 
-System Integrators can partner with one of our [recommended digital agencies](https://www.microsoft.com/en-us/hololens/commercial-build#agency-buckets) rather than building the project directly. Since the agency is already qualified, we can assume the HoloLens experience will meet our standards. You will need to continue to work with a recommended digital agency for future projects. This requirement will be removed once your company is able to demonstrate a proficiency in building HoloLens experiences based on our [app quality criteria](app-quality-criteria.md).
+System Integrators can partner with one of our [recommended digital agencies](https://www.microsoft.com/hololens/commercial-build#agency-buckets) rather than building the project directly. Since the agency is already qualified, we can assume the HoloLens experience will meet our standards. You will need to continue to work with a recommended digital agency for future projects. This requirement will be removed once your company is able to demonstrate a proficiency in building HoloLens experiences based on our [app quality criteria](app-quality-criteria.md).
 
 **Readiness training**
 
@@ -382,4 +382,4 @@ Program partners are welcome to use Microsoft MTCs (with over 40 locations aroun
 * [Development resources](development.md)
 * [Design resources](design.md)
 * [Mixed Reality Academy](academy.md)
-* [Microsoft Technology Centers](https://www.microsoft.com/en-us/mtc/default.aspx)
+* [Microsoft Technology Centers](https://www.microsoft.com/mtc)

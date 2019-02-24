@@ -55,7 +55,7 @@ In your application, it is up to you as to how you will integrate the results wi
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
 - [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
 - [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
 - [Unity 2017.4](install-the-tools.md#installation-checklist)
@@ -72,7 +72,7 @@ We recommend the following hardware and software for this course:
 
 To use the **Azure Notification Hubs** Service, you will need to create an Application on the Microsoft Developer Portal, as your application will need to be registered, so that it can send and receive notifications.
 
-1.  Log in to the [Microsoft Developer Portal](https://developer.microsoft.com/en-us/dashboard).
+1.  Log in to the [Microsoft Developer Portal](https://developer.microsoft.com/dashboard).
 
     > You will need to log in to your Microsoft Account.
 

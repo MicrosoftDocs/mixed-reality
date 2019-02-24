@@ -12,7 +12,7 @@ keywords: getting started, basics, HoloLens, HoloLens 2, immersive headset, unit
 
 # Development overview
 
-Mixed reality apps can be developed using a variety of developer technollogies.  HoloLens runs apps that are built with the [Universal Windows Platform](https://dev.windows.com/en-us/getstarted).  Immersive headsets runs Universal Windows Platform apps as well as Win32 applications.
+Mixed reality apps can be developed using a variety of developer technollogies.  HoloLens runs apps that are built with the [Universal Windows Platform](https://dev.windows.com/getstarted).  Immersive headsets runs Universal Windows Platform apps as well as Win32 applications.
 Familiarity with middleware tools, like Unity, you can start building mixed reality experiences today.  Leverage the open source [Mixed Reality Toolkit](install-the-tools.md) to get started quickly.
 [Mixed reality services](https://azure.microsoft.com/topic/mixed-reality), such as [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), have SDKs that can integrate into various cross-platfrom developer technologies as well.
 

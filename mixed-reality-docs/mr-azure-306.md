@@ -18,7 +18,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, media services, s
 
 In this course you will learn how connect your Azure Media Services to a Windows Mixed Reality VR experience to allow streaming 360 degree video playback on immersive headsets. 
 
-**Azure Media Services** are a collection of services that gives you broadcast-quality video streaming services to reach larger audiences on today’s most popular mobile devices. For more information, visit the [Azure Media Services page](https://azure.microsoft.com/en-us/services/media-services).
+**Azure Media Services** are a collection of services that gives you broadcast-quality video streaming services to reach larger audiences on today’s most popular mobile devices. For more information, visit the [Azure Media Services page](https://azure.microsoft.com/services/media-services).
 
 Having completed this course, you will have a mixed reality immersive headset application, which will be able to do the following:
 
@@ -47,7 +47,7 @@ In your application, it is up to you as to how you will integrate the results wi
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
 - [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
 - [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
 - [Unity 2017.4](install-the-tools.md#installation-checklist)

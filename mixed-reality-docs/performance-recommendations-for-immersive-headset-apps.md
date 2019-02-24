@@ -234,18 +234,18 @@ The [Windows Device Portal](using-the-windows-device-portal.md) lets you configu
 
 ### Intel® Graphics Performance Analyzers (Intel® GPA)
 
-[Intel® Graphics Performance Analyzers (Intel® GPA)](https://software.intel.com/gpa) added support for Windows Mixed Reality on [December 21st 2017](https://software.intel.com/en-us/articles/intel-gpa-release-notes). The [Getting Started for Windows* Host](https://software.intel.com/en-us/gpa_getting_started_win#Analyzing_Microsoft_Windows_Mixed_Reality_Applications_on_Windows_Host) documentation has more details.
+[Intel® Graphics Performance Analyzers (Intel® GPA)](https://software.intel.com/gpa) added support for Windows Mixed Reality on [December 21st 2017](https://software.intel.com/articles/intel-gpa-release-notes). The [Getting Started for Windows* Host](https://software.intel.com/gpa_getting_started_win#Analyzing_Microsoft_Windows_Mixed_Reality_Applications_on_Windows_Host) documentation has more details.
 
 ### Intel® Power Gadget
 
-[Intel® Power Gadget](https://software.intel.com/en-us/articles/intel-power-gadget-20) is a software-based power usage monitoring tool enabled for Intel® Core™ processors (from 2nd Generation up to 6th Generation Intel® Core™ processors), Intel® Atom™ processors not supported. It includes an application, driver, and libraries to monitor and estimate real-time processor package power information in watts using the energy counters in the processor.
+[Intel® Power Gadget](https://software.intel.com/articles/intel-power-gadget-20) is a software-based power usage monitoring tool enabled for Intel® Core™ processors (from 2nd Generation up to 6th Generation Intel® Core™ processors), Intel® Atom™ processors not supported. It includes an application, driver, and libraries to monitor and estimate real-time processor package power information in watts using the energy counters in the processor.
 
 ## See also
 * Intel
-  * [VR content developer guide](https://software.intel.com/en-us/articles/vr-content-developer-guide)
-  * [How to plan optimizations with Unity](https://software.intel.com/en-us/articles/how-to-plan-optimizations-with-unity)
+  * [VR content developer guide](https://software.intel.com/articles/vr-content-developer-guide)
+  * [How to plan optimizations with Unity](https://software.intel.com/articles/how-to-plan-optimizations-with-unity)
   * [Render queue ordering in Unity](https://www.youtube.com/watch?v=ijK8hI7pGZs)
-  * [Optimizing VR hit game *Space Pirate Trainer*](https://software.intel.com/en-us/articles/optimizing-vr-hit-game-space-pirate-trainer-to-perform-on-intel-integrated-graphics)
+  * [Optimizing VR hit game *Space Pirate Trainer*](https://software.intel.com/articles/optimizing-vr-hit-game-space-pirate-trainer-to-perform-on-intel-integrated-graphics)
 * Unity
   * [Analyzing your game performance using Event Tracing for Windows](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 * [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md)

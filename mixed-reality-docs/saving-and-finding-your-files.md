@@ -44,7 +44,7 @@ HoloLens supports a number of [known folders](app-model.md#known-folders) that a
 
 ## Files in a service
 
-To save a file to (or access files from) a service, the app associated with the service has to be installed. In order to save files to and access files from OneDrive, you will need to install the [OneDrive app](https://www.microsoft.com/en-us/store/apps/onedrive/9wzdncrfj1p3).
+To save a file to (or access files from) a service, the app associated with the service has to be installed. In order to save files to and access files from OneDrive, you will need to install the [OneDrive app](https://www.microsoft.com/store/apps/onedrive/9wzdncrfj1p3).
 
 ## MTP (Media Transfer Protocol)
 

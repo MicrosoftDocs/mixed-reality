@@ -125,9 +125,9 @@ HoloLens is constantly scanning and reasoning the current environment via multip
 To learn more about how anchor's work and best practices when using them, please read [Spatial anchors](spatial-anchors.md).
 
 >[!NOTE]
-> Spatial Anchors and World Anchors are one in the same. Unity describes an Anchor as a [WorldAnchor](https://docs.unity3d.com/2017.4/Documentation/ScriptReference/XR.WSA.WorldAnchor.html) component while the exact concept is known as a [Spatial Anchor](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialanchor) in the Windows Mixed Reality API. 
+> Spatial Anchors and World Anchors are one in the same. Unity describes an Anchor as a [WorldAnchor](https://docs.unity3d.com/2017.4/Documentation/ScriptReference/XR.WSA.WorldAnchor.html) component while the exact concept is known as a [Spatial Anchor](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor) in the Windows Mixed Reality API. 
 > 
-> If writing a holographic app in DirectX, [read this guidance](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors) on using the [Spatial Anchor](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialanchor) class.
+> If writing a holographic app in DirectX, [read this guidance](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors) on using the [Spatial Anchor](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor) class.
 
 ### Device sensors calibration
 

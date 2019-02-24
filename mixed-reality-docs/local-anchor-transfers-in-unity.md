@@ -136,6 +136,3 @@ private void OnImportComplete(SerializationCompletionReason completionReason, Wo
 
 After a *GameObject* is locked via the *LockObject* call, it will have a *WorldAnchor* which will keep it in the same physical position in the world, but it may be at a different location in the Unity coordinate space than other users.
 
-## Example: MixedRealityToolkit Sharing
-
-You can use the [Sharing](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/Sharing) prefab from the MixedRealityToolkit-Unity repository on GitHub to implement local anchor transfers in your applications.

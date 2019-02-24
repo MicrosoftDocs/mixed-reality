@@ -166,7 +166,7 @@ Move, Rotate, Scale, Save, and Load Scene are available from the Tool Belt Menu.
 <tr>
 <td style="border-style: none" width="60px"><img alt="HoloSketch app icon" width="60" height="60" src="images/holosketch-app-icon.png">
 </td>
-<td style="border-style: none"><a href="https://www.microsoft.com/en-us/store/p/holosketch/9p3br4t5m4tv">Download and install the HoloSketch app for free from the Microsoft Store</a>
+<td style="border-style: none"><a href="https://www.microsoft.com/store/p/holosketch/9p3br4t5m4tv">Download and install the HoloSketch app for free from the Microsoft Store</a>
 </td>
 </tr>
 </table>

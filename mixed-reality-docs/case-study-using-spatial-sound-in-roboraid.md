@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, HoloLens, RoboRaid, spatial sound
 
 # Case study - Using spatial sound in RoboRaid
 
-Charles Sinex, audio lead on the Microsoft HoloLens Experience Team, talks about the unique challenges he encountered when creating audio for [RoboRaid](https://www.microsoft.com/microsoft-hololens/en-us/apps/RoboRaid), a mixed reality first-person shooter.
+Charles Sinex, audio lead on the Microsoft HoloLens Experience Team, talks about the unique challenges he encountered when creating audio for [RoboRaid](https://www.microsoft.com/en-us/p/roboraid/9nblggh5fv3j), a mixed reality first-person shooter.
 
 ## The tech
 
@@ -91,4 +91,4 @@ You can try this yourself using the audio assets below:
 
 ## See Also
 * [Spatial sound](spatial-sound.md)
-* [RoboRaid for Microsoft HoloLens](https://www.microsoft.com/microsoft-hololens/en-us/apps/RoboRaid)
+* [RoboRaid for Microsoft HoloLens](https://www.microsoft.com/en-us/p/roboraid/9nblggh5fv3j)

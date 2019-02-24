@@ -3,7 +3,7 @@ title: Spectator View (Preview and Pro)
 description: Visualize holograms from an external device as a means of demonstrating a mixed reality experience on an external display or recording video of a mixed reality experience.
 author: Chris Barth
 ms.author: chriba
-ms.date: 02/11/2018
+ms.date: 02/11/2019
 ms.topic: article
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit, demo, record
 ---
@@ -21,6 +21,9 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 To view the current state of the Spectator View refactor see 'feature/spectatorView' branches in both the MixedRealityToolkit and MixedRealityToolkit-Unity repos:
 
 https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/feature/spectatorView/Assets/MixedRealityToolkit.Extensions/SpectatorView
+
+and
+
 https://github.com/Microsoft/MixedRealityToolkit/tree/feature/spectatorView/SpectatorViewPlugin
 
 # Overview
@@ -70,18 +73,17 @@ The following table shows both options and their capabilities. Choose the option
 >The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
 
 >[!VIDEO https://www.youtube.com/watch?v=3fXlPw_FGLg]
-=
 
 ### Licenses
 
-- OpenCV - (3-clause BSD License) https://opencv.org/license.html
-- Unity ARKit - (MIT License) https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/src/3691df77caca2095d632c5e72ff4ffa68ced111f/LICENSES/MIT_LICENSE?at=default&fileviewer=file-view-default
+- [OpenCV - (3-clause BSD License)](https://opencv.org/license.html)
+- [Unity ARKit - (MIT License)](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin/src/3691df77caca2095d632c5e72ff4ffa68ced111f/LICENSES/MIT_LICENSE?at=default&fileviewer=file-view-default)
 
 ## How to set up Spectator View (Preview)
 
 ### Requirements
 
-- Spectator View plugin and required OpenCV binaries, which can be found at https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin. Details on how to build the Spectator View Native Plugin can be found below. From the generated binaries you will need:
+- [Spectator View plugin and required OpenCV binaries](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin) - Details on how to build the Spectator View Native Plugin can be found below. From the generated binaries you will need:
 
     - opencv_aruco343.dll
     - opencv_calib3d343.dll
@@ -99,7 +101,7 @@ The following table shows both options and their capabilities. Choose the option
     - Windows PC running Windows 10
     - ARKit compatible device (iPhone 6s onwards / iPad Pro 2016 onwards / iPad 2017 onwards) - running iOS 11 or above
     - Mac with xcode 9.2 onwards
-- Apple developer account, free or paid (https://developer.apple.com/)
+- Apple developer account, free or [paid](https://developer.apple.com/)
 - Microsoft Visual Studio 2017
 
 ### Building the Spectator View native plugin
@@ -124,7 +126,7 @@ To generate the required files, follow these steps: https://github.com/Microsoft
 
 - Spectator View uses UNET for its networking and manages all host-client connections for you.
 - Any app specific data has to be synced and implemented by you, using e.g. SyncVars, NetworkTransform, NetworkBehavior.
-- For more information on Unity Networking please visit https://docs.unity3d.com/Manual/UNet.html (Note: UNet has been deprecated; the current refactor of the Spectator View codebase will address this issue)
+- For more information on Unity Networking please visit [Multiplayer and Networking](https://docs.unity3d.com/Manual/UNet.html). (Note: UNet has been deprecated; the current refactor of the Spectator View codebase will address this issue)
 
 ### Building for each platform (HoloLens or iOS)
 
@@ -296,7 +298,7 @@ Below is a recommended list of hardware, but you can experiment with other compa
 
 ### Building your own Spectator View Pro camera
 
-**NOTICE & DISCLAIMER:** When making modifications to your HoloLens hardware (including, but not limited to, setting up your HoloLens for "spectator view") basic safety precautions should always be observed. Read all instructions and manuals before making any modifications. It is your responsibility to follow all instructions and use tools as directed. You may have purchased or licensed your HoloLens with a limited warranty or no warranty. Please read your applicable [HoloLens License Agreement or Terms of Use and Sale](http://microsoft.com/microsoft-hololens/en-us/order-now) to understand your warranty options.
+**NOTICE & DISCLAIMER:** When making modifications to your HoloLens hardware (including, but not limited to, setting up your HoloLens for "spectator view") basic safety precautions should always be observed. Read all instructions and manuals before making any modifications. It is your responsibility to follow all instructions and use tools as directed. You may have purchased or licensed your HoloLens with a limited warranty or no warranty. Please read your applicable [HoloLens License Agreement or Terms of Use and Sale](https://www.microsoft.com/hololens/support/warranty) to understand your warranty options.
 
 >[!VIDEO https://www.youtube.com/embed/aKX8UMejtWc]
 

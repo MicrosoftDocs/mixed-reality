@@ -8,9 +8,6 @@ ms.topic: article
 keywords: camera, hololens, color camera, front facing
 ---
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes). 
-
 Camera details and supported modes have been updated in [Device camera information](#device-camera-information) below.
 
 # Locatable camera
@@ -181,8 +178,8 @@ To recognize a visual pattern, and then place that object in the applications wo
 Some important image processing links:
 * [OpenCV](http://opencv.org/)
 * [QR Tags](https://en.wikipedia.org/wiki/QR_code)
-* [FaceSDK](http://research.microsoft.com/en-us/projects/facesdk/)
-* [Microsoft Translator](https://www.microsoft.com/en-us/translator/products.aspx)
+* [FaceSDK](http://research.microsoft.com/projects/facesdk/)
+* [Microsoft Translator](https://www.microsoft.com/translator/business)
 
 Keeping an interactive application frame-rate is critical, especially when dealing with long-running image recognition algorithms. For this reason we commonly use the following pattern:
 1. Main Thread: manages the camera object

@@ -80,10 +80,10 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                             <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
                         </p>
                         <p>
-                            <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/" target="_blank">Speech Services</a>
+                            <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/" target="_blank">Speech Services</a>
                         </p>
                         <p>
-                            <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/" target="_blank">Vision Services</a>
+                            <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank">Vision Services</a>
                         </p>
                     </div>
                 </div>
@@ -169,7 +169,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
 
 ## Overview
 
-Mixed reality apps are built with the [Universal Windows Platform](https://dev.windows.com/en-us/getstarted). All mixed reality apps are Universal Windows apps, and all Universal Windows apps can be made to run on Windows Mixed Reality devices. With Windows 10 and familiarity with middleware tools like Unity, you can start building mixed reality experiences today.<br>
+Mixed reality apps are built with the [Universal Windows Platform](https://dev.windows.com/getstarted). All mixed reality apps are Universal Windows apps, and all Universal Windows apps can be made to run on Windows Mixed Reality devices. With Windows 10 and familiarity with middleware tools like Unity, you can start building mixed reality experiences today.<br>
 
 >[!VIDEO https://www.youtube.com/embed/A784OdX8xzI]
 
@@ -181,7 +181,7 @@ These are the core building blocks for mixed reality development:
 
 <table>
 <tr>
-<th style="width:350px">Input</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th style="width:175px">Input</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> <a href="gaze.md">Head gaze</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -197,7 +197,7 @@ These are the core building blocks for mixed reality development:
 </tr><tr>
 <td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th style="width:350px">Perception and spatial features</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th style="width:175px">Perception and spatial features</th><th style="width:150px"><a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> <a href="coordinate-systems.md">World coordinates</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>

@@ -20,7 +20,7 @@ Microsoft HoloLens is the world's first fully untethered holographic computer. H
 
 Microsoft HoloLens is available to purchase as a both a Development Edition and a Commercial Suite configuration (which includes a warranty and enterprise features for added security and device management). If you're in North America, you can also rent HoloLens through a partner.
 
-[Click here for more details on purchasing or renting Microsoft HoloLens](https://www.microsoft.com/en-us/hololens/buy).
+[Click here for more details on purchasing or renting Microsoft HoloLens](https://www.microsoft.com/hololens/buy).
 
 ## Device Specifications
 
