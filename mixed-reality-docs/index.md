@@ -118,7 +118,6 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                     </div>
                                     </a>
                             </li>
-
                              <li>
                               <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank" title="Vision Services" data-linktype="absolute-path">
 
