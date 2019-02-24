@@ -5,7 +5,7 @@
 
 ## Hardware
 ### HoloLens
-#### <a href="https://www.microsoft.com/hololens/hardware" target="_blank">HoloLens 2 hardware details</a>
+#### [HoloLens 2 hardware details](https://www.microsoft.com/hololens/hardware)
 #### [HoloLens (1st gen) hardware details](hololens-hardware-details.md)
 #### [Accounts on HoloLens](accounts-on-hololens.md)
 #### [Calibration](calibration.md)
@@ -26,7 +26,7 @@
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
 ### Immersive headsets
 #### [Immersive headset hardware details](immersive-headset-hardware-details.md)
-#### <a href="https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide" target="_blank">Enthusiast guide</a>
+#### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Hardware accessories](hardware-accessories.md)
 ### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
 ## Core building blocks
@@ -123,7 +123,9 @@
 
 # [Develop](development.md)
 ## Mixed Reality Cloud Services
-### <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank"> Azure Spatial Anchors</a>
+
+### [Azure SPatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+
 ### [Holographic Remoting Player](holographic-remoting-player.md)
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 ## Unity

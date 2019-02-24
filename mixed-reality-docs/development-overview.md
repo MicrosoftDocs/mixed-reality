@@ -12,10 +12,9 @@ keywords: getting started, basics, HoloLens, HoloLens 2, immersive headset, unit
 
 # Development overview
 
-TO REVIEW AND EDIT:
 Mixed reality apps can be developed using a variety of developer technollogies.  HoloLens runs apps that are built with the [Universal Windows Platform](https://dev.windows.com/en-us/getstarted).  Immersive headsets runs Universal Windows Platform apps as well as Win32 applications.
 Familiarity with middleware tools, like Unity, you can start building mixed reality experiences today.  Leverage the open source [Mixed Reality Toolkit](install-the-tools.md) to get started quickly.
-[Mixed reality services](https://azure.microsoft.com/overview/mixed-reality), such as [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), have SDKs that can integrate into various cross-platfrom developer technologies as well.
+[Mixed reality services](https://azure.microsoft.com/topic/mixed-reality), such as [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), have SDKs that can integrate into various cross-platfrom developer technologies as well.
 
 >[!VIDEO https://www.youtube.com/embed/A784OdX8xzI]
 
@@ -54,7 +53,7 @@ These are the core building blocks for mixed reality development:
 
 
 The basic interaction model for [HoloLens](hololens-hardware-details.md) is [gaze](gaze.md), [gesture](gestures.md), and [voice](voice-input.md), sometimes referred to as *GGV*. [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md) also use gaze and voice, but swap [motion controllers](motion-controllers.md) for gestures.
-[HoloLens 2](hololens2-hardware-details.md) will introduce full hand tracking to extend gestures and directly touch or grab holograms, as well as eye tracking to extend gaze to include both head and eye gaze.
+
 
 All Windows-based mixed reality devices benefit from the input ecosystem available to Windows, including mouse, keyboard, gamepads, and more. With HoloLens, [hardware accessories](hardware-accessories.md) are connected via Bluetooth. With immersive headsets, accessories connect to the host PC via Bluetooth, USB, and other supported protocols.
 
