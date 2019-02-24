@@ -13,7 +13,7 @@ keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
 If you have an existing HoloLens app built in Unity, here is your best bet - start with current HoloLens (1st gen),  latest Visual Studio, Unity 2018.3.x, and MRTK version 2 Beta.
 MRTK version 2 is the new toolkit on top of Unity supporting both HoloLens (1st gen) and HoloLens 2, and where all of the new HoloLens 2 capabilities will be added, such as hand interactions and eye tracking.
 
-For more information on specific API differences between HTK/MRTK and MRTK version 2, see the porting guide on the <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/wiki/Moving-your-Project-from-HoloToolkit-2017-to-MixedRealityToolkit-version 2" target="_blank">MRTK Version 2 wiki</a>.
+For more information on specific API differences between HTK/MRTK and MRTK version 2, see the porting guide on the <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/wiki/Moving-your-project-from-HoloToolkit-2017-to-MixedRealityToolkit-v2" target="_blank">MRTK Version 2 wiki</a>.
 
 
 ## Pre-work to do without a HoloLens 2 device
