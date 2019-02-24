@@ -122,10 +122,8 @@
 ### [Asset creation process](asset-creation-process.md)
 
 # [Develop](development.md)
-## Mixed Reality Cloud Services
-
-### [Azure SPatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-
+## Mixed reality cloud services
+### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 ## Unity
@@ -155,7 +153,7 @@
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
-### [Unreal for HoloLens 2 - coming soon!](index.md#news-and-notes)
+### Unreal for HoloLens 2 - coming soon!
 ## DirectX
 ### [DirectX development overview](directx-development-overview.md)
 ### Getting started
