@@ -8,9 +8,6 @@ ms.topic: article
 keywords: camera, hololens, color camera, front facing
 ---
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes). 
-
 Camera details and supported modes have been updated in [Device camera information](#device-camera-information) below.
 
 # Locatable camera
