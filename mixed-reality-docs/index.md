@@ -19,7 +19,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                                  <a href="design.md" title="Design landing" data-linktype="absolute-path">
+                            <a href="design.md" title="Design landing" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -118,10 +118,8 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                     </div>
                                     </a>
                             </li>
-
                              <li>
                               <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank" title="Vision Services" data-linktype="absolute-path">
-
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -155,7 +153,7 @@ Over the course of the next few months, we are excited to share more mixed reali
 
 <table>
 <tr>
-<th style="width: 600px; text-align:left;"><b>Content</b></th><th style="width: 125px; text-align:left;">Delivery</th>
+<th style="width: 400px; text-align:left;"><b>Content</b></th><th style="width: 125px; text-align:left;">Delivery</th>
 </tr> 
 <tr>
 <td><b>Porting Guides</b> <br>1. HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) to MRTK Version 2
