@@ -149,7 +149,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
 
 <h3>February 2019</h3>
 
-Over the course of the next few months, we are excited to share more mixed reality goodness with you! We’re looking forward to hearing your feedback and would like to invite you to [join the conversation](https://holodevelopersslack.azurewebsites.net/) around topics you’d like to see from us, people you would like to hear from, tutorials or how-to’s that you would need… You can also reach out to us via [Twitter](https://twitter.com/mixedrealitymr?lang=en), and [join our developer program](https://aka.ms/iwantmr) for direct updates on new docs, tools, events and more. 
+Over the course of the next few months, we are excited to share more mixed reality goodness with you! We’re looking forward to hearing your feedback and would like to invite you to [join the conversation](https://holodevelopersslack.azurewebsites.net/) around topics you’d like to see from us, people you would like to hear from, tutorials or how-to’s that you would need… You can also reach out to us via [Twitter](https://twitter.com/MxdRealityDev), and [join our developer program](https://aka.ms/iwantmr) for direct updates on new docs, tools, events and more. 
 
 <table>
 <tr>
