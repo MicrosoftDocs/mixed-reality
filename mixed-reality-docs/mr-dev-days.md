@@ -11,22 +11,22 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
 # Mixed Reality Dev Days
 
-##The vision:  
+## The vision:  
 With all the amazing announcements that we just made in the mixed reality and cloud space, we want to invite our developers to come work alongside us, meet the Microsoft developers and program managers who brought these devices and services to life, and learn about the developer road map we have planned.  We would love to get your input, learn more about you, your customers and work, and how we can better work alongside you.  As we move into this third wave of computing, one based on open principles, it's important to us that you feel Microsoft is a trusted partner who values your feedback.  We want to make an opportunity at dev days to start building that relationship with you.
 
-##When: 
+## When: 
 May 2nd and 3rd, 2019
 </br>
-##Where: 
+## Where: 
 Microsoft's Redmond Campus
 </br>
-##Cost: 
+## Cost: 
 There will be a ticket cost, still working on what the final price will be. Stay tuned for updates.
 </br>
-##How to request an invite:  
+## How to request an invite:  
 Currently we are asking everyone to sign up for our developer program.  When we have the invite process in place, we will send an email to all members of the dev program to request an invite.
 </br>
-##How we are deciding to invite:  
+## How we are deciding to invite:  
 Once you request an invite, we will send you a form to fill out.  We want to make sure we have a diverse attendance list, both in the traditional use of the term diverse, but also in our developer audience.  We want to make sure that we have developers from our large customers and partner, large studios, small studios, and individual developers.  Tell us what cool things you have made, or the ideas for the cool things you would like to make.  Tell us where you are active.  What communities you are a member of.  Help us get to know you and your ambitions.
 
 
