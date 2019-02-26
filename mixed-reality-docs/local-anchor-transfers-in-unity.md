@@ -27,7 +27,7 @@ How to enable the *SpatialPerception* capability:
 3. Expand **"Publishing Settings"** and check the **"SpatialPerception"** capability in the **"Capabilities"** list
 
 >[!NOTE]
->If you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](shared-spatial-anchors-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+>If you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 ### Anchor Transfer
 
