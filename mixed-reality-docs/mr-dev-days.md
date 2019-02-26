@@ -27,7 +27,7 @@ There will be a ticket cost, we are still working on what the final price will b
 Currently we are asking everyone to sign up for our [developer program](https://aka.ms/IWantMR).  When we have the invite process in place, we will send an email to all members of the dev program to request an invite.
 </br>
 ## How we are deciding who to invite:  
-Once you request an invite, we will send you a form to fill out.  We want to make sure we have a diverse attendance list, both in the traditional use of the term diverse, but also in our developer audience.  We want to make sure that we have developers from our large customers and partner, large studios, small studios, and individual developers.  Tell us what cool things you have made, or the ideas for the cool things you would like to make.  Tell us where you are active.  What communities you are a member of.  Help us get to know you and your ambitions.
+Once you request an invite, we will send you a form to fill out.  We want to make sure we have a diverse attendance list, both in the traditional use of the term diverse, but also in our developer audience.  We want to make sure that we have developers from our large customers and partners, large studios, small studios, and individual developers.  Tell us what cool things you have made, or the ideas for the cool things you would like to make.  Tell us where you are active.  What communities you are a member of.  Help us get to know you and your ambitions.
 
 
 
