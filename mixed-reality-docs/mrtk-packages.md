@@ -98,7 +98,7 @@ The Windows Voice package provides support for keyword recognition and dictation
 
 ### System Services
 
-Core platform services are provided in system service packages. These packages contain the Mixed Reality Toolkit's default implementations of the ssstem service interfaces, defined in the [core](#core-package) package.
+Core platform services are provided in system service packages. These packages contain the Mixed Reality Toolkit's default implementations of the system service interfaces, defined in the [core](#core-package) package.
 
 The MRTK foundation includes the following system services:
 
