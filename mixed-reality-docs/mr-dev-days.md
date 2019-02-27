@@ -22,6 +22,9 @@ Dev Days is designed for you—your ideas, your feedback. We would love to get y
 ## When: 
 May 2nd and 3rd, 2019
 </br>
+## Which one should I attend? Microsoft Build or MR Dev Days?
+If you are an Mixed Reality developer looking to get training on our developer platform, tools, services and devices, we would encourage you to join us at the Dev Days. While some elements may be repeated at Build, content there will be mostly catering to our commercial partners, business decision makers and CxO’s.
+</br>
 ## Where: 
 Microsoft's Redmond Campus, exact location details to come
 </br>
