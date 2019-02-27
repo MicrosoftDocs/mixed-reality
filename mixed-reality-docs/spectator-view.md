@@ -1,7 +1,7 @@
 ---
-title: Spectator View (Preview and Pro)
+title: Spectator View 
 description: Visualize holograms from an external device as a means of demonstrating a mixed reality experience on an external display or recording video of a mixed reality experience.
-author: Chris Barth
+author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
@@ -72,7 +72,8 @@ The following table shows both options and their capabilities. Choose the option
 >[!NOTE] 
 >The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
 
->[!VIDEO https://www.youtube.com/watch?v=3fXlPw_FGLg]
+>[!VIDEO https://www.youtube.com/embed/3fXlPw_FGLg]
+
 
 ### Licenses
 
