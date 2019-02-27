@@ -12,7 +12,7 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 # Mixed Reality Dev Days
 
 ## The vision:  
-With the [announcements](https://blogs.microsoft.com/blog/2019/02/24/microsoft-at-mwc-barcelona-introducing-microsoft-hololens-2/) Microsoft recently made in the mixed reality and cloud space, we want to invite you—an amazing, unprecedented community of mixed reality developers—to come work alongside us, meet Microsoft developers and program managers who brought these devices and services to life, and learn about our roadmap. </br>
+With the [announcements](https://blogs.microsoft.com/blog/2019/02/24/microsoft-at-mwc-barcelona-introducing-microsoft-hololens-2/) Microsoft recently made in the mixed reality and cloud space, we want to invite you—an amazing, unprecedented community of mixed reality developers—to come work alongside us, meet Microsoft developers and program managers who brought these devices and services to life, and learn about our developer roadmap. </br>
 At Mixed Reality Dev Days, you’ll build the skills, network, and ideas you need to take your mixed reality applications to the next level. Mixed Reality Dev Days will offer a chance to: 
 * Code alongside our engineering teams.
 * Learn and test the latest in our portfolio: HoloLens 2, new Azure mixed reality services, Azure Kinect Developer Kit, and more! 
