@@ -112,7 +112,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
   * If the HoloLens is attached over USB, you may instead select **Device** to deploy over USB.
   * Leave the **Authentication Mode** set to **Universal**.
   * Click **Select**
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device---hololens-1st-gen).
 * The Origami project will now build, deploy to your HoloLens, and then run.
 * Put on your HoloLens and look around to see your new holograms.
 
