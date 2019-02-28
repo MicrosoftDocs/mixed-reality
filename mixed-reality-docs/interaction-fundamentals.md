@@ -37,7 +37,7 @@ Here's an outline of the available Interaction design articles and which device 
 </tr><tr>
 <td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th colspan="4" style="text-align: left;">Perception and spatial features</th>
+<th style="text-align: left;">Perception and spatial features</th><th style="width:150px; text-align: center;"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px; text-align: center;">HoloLens 2</th><th style="width:150px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> <a href="spatial-sound-design.md">Spatial sound design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
