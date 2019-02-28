@@ -219,29 +219,32 @@ Using Spectator View Pro involves these four components:
 
 ### Use cases
 
->[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]<br>
+>[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]
+
+
 *Spectator view can be used for sharing your holographic creations, whether they're a still image, a video clip, or a live demonstration.*
-<br>
+
 
 There are three key scenarios that work well with this technology:
 
-1. **Photo capture**<br>
+**1. Photo capture**<br>
 Using this technology, you can capture high resolution images of your holograms. These images can be used to showcase content at marketing events, send to your potential clients, or even submit your application to the Windows Store. You get to decide which photo camera you would like to use to capture these images, as such you may prefer a quality DSLR camera.
 
-<br>
-![Spectator View Pro photo capture example](images/fall-350px.jpg)<br>
-*Photo capture example - making it appear the floor is made of lava.*
-<br>
 
-2. **Video capture**<br>
+![Spectator View Pro photo capture example](images/fall-350px.jpg)
+
+*Photo capture example - making it appear the floor is made of lava.*
+
+
+**2. Video capture**<br>
 Videos are the best story telling mechanism for sharing a holographic app experience with many people. Spectator view lets you choose the camera, lens, and framing that best suits how you want to showcase your app. It puts you in control of the video quality based on the video hardware you have available.
 
-<br>
-![Spectator View Pro video capture example](images/spectatorviewvideo.gif)<br>
-*Video capture example - simulating mixed reality collaboration.*
-<br>
+![Spectator View Pro video capture example](images/spectatorviewvideo.gif)
 
-3. **Live demonstrations**<br>
+*Video capture example - simulating mixed reality collaboration.*
+
+
+**3. Live demonstrations**<br>
 Spectator view is a preferred approach for live demonstrations as the camera position remains steady or controlled. Because you can use a high-quality video camera, you can also produce high-quality images meant for a big screen. This is also appropriate for streaming live demos on a screen, possibly to eager participants waiting in line for their turn.
 
 ### Comparing video capture techniques
