@@ -239,7 +239,7 @@ Using this technology, you can capture high resolution images of your holograms.
 Videos are the best story telling mechanism for sharing a holographic app experience with many people. Spectator view lets you choose the camera, lens, and framing that best suits how you want to showcase your app. It puts you in control of the video quality based on the video hardware you have available.
 
 ![Spectator View Pro video capture example](images/spectatorviewvideo.gif)<br>
-*Video capture example - simulating mixed reality collaboration.*
+*Video capture example - recording a mixed reality collaboration experience.*
 
 
 **3. Live demonstrations**<br>
