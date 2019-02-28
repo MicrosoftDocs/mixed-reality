@@ -435,9 +435,9 @@ If starting from a new Unity project, you will need to do some setup first:
 
 ## See also
 
-[Mixed reality capture](mixed-reality-capture.md) 
-[Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
-[Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
-[Spectator View (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/SpectatorView)
-[Spectator View (Preview) native code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
-[Spectator View Pro code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)
+* [Mixed reality capture](mixed-reality-capture.md) 
+* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+* [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+* [Spectator View (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/SpectatorView)
+* [Spectator View (Preview) native code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
+* [Spectator View Pro code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)
