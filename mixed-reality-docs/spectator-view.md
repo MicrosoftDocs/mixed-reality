@@ -249,10 +249,8 @@ Spectator view is a preferred approach for live demonstrations as the camera pos
 
 [Mixed reality capture](mixed-reality-capture.md) (MRC) provides a video composite of what the HoloLens user is seeing from a first person point-of-view. Spectator view produces a video from a third-person perspective, allowing the video observer to see the environment with holograms and the user wearing a HoloLens device. Because you have a choice of camera, spectator views can also produce higher resolution and better quality images than the built-in HoloLens camera used for MRC images. For this reason, spectator view is better suited for app images in the Windows Store, marketing videos, or for projecting a live view for an audience.
 
-**Spectator View Pro professional camera used in Microsoft keynote presentations**
-
-
-![Spectator View Pro professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)
+![Spectator View Pro professional camera used in Microsoft keynote presentations](images/spectator-view-professional-red-camera-300px.jpg)<br>
+*Spectator View Pro professional camera used in Microsoft keynote presentations*
 
 
 Spectator view has been an essential piece of how Microsoft HoloLens has presented experiences to audiences since the very beginning when the product was announced in January 2015. The professional setup used had high demands and an expensive price tag to go with it. For example, the camera uses a genlock signal to ensure precise timing that coordinates with the HoloLens tracking system. In this setup, moving the spectator view camera was possible while keeping holograms stable to match the experience of someone who is seeing the experience directly in HoloLens.
@@ -306,14 +304,14 @@ Below is a recommended list of hardware, but you can experiment with other compa
 
 **NOTICE & DISCLAIMER:** When making modifications to your HoloLens hardware (including, but not limited to, setting up your HoloLens for "spectator view") basic safety precautions should always be observed. Read all instructions and manuals before making any modifications. It is your responsibility to follow all instructions and use tools as directed. You may have purchased or licensed your HoloLens with a limited warranty or no warranty. Please read your applicable [HoloLens License Agreement or Terms of Use and Sale](https://www.microsoft.com/hololens/support/warranty) to understand your warranty options.
 
+<br>
+
 >[!VIDEO https://www.youtube.com/embed/aKX8UMejtWc]
 
 #### Rig Assembly
 
-**Assembled Spectator View Pro rig with HoloLens and DSLR camera**
-
-
-![Assembled Spectator View Pro rig with HoloLens and DSLR camera.](images/assembly.gif)
+![Assembled Spectator View Pro rig with HoloLens and DSLR camera.](images/assembly.gif)<br>
+*Assembled Spectator View Pro rig with HoloLens and DSLR camera*
 
 
 * Use a T7 screwdriver to remove the headband from the HoloLens. Once the screws are loose, poke them out with a paperclip from the other side.
@@ -350,10 +348,8 @@ After setting up your spectator view rig, you must calibrate in order to get the
 * In this solution, you will find the file dependencies.props which creates macros for the inc locations of the 3rd party sources.
 * Update this file with the location you installed OpenCV 3.1, the Blackmagic SDK, and the Canon SDK (if applicable)
 
-**Dependency locations snapshot in Visual Studio**
-
-
-![Dependency locations snapshot in Visual Studio](images/dependencies-600px.png)
+![Dependency locations snapshot in Visual Studio](images/dependencies-600px.png)<br>
+*Dependency locations snapshot in Visual Studio*
 
 
 * Print out the calibration pattern Calibration\CalibrationPatterns\2_66_grid_FULL.png on a flat, rigid surface.
@@ -363,10 +359,8 @@ After setting up your spectator view rig, you must calibrate in order to get the
 * Run the Calibration solution.
 * Move the checkerboard pattern around the view like this:!
 
-**Calibrating the Spectator View Pro rig**
-
-
-[Calibrating the Spectator View Pro rig](images/calibration.gif)
+![Calibrating the Spectator View Pro rig](images/calibration.gif)<br>
+*Calibrating the Spectator View Pro rig*
 
 
 * A picture will automatically be taken when a checkerboard is in view. Look for the white light on the HoloLens' visor before advancing to the next pose.
@@ -441,11 +435,9 @@ If starting from a new Unity project, you will need to do some setup first:
 
 ## See also
 
-* [Mixed reality capture](mixed-reality-capture.md) 
-* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
-* [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
-
-* [Spectator View (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/SpectatorView)
-* [Spectator View (Preview) native code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
-
-* [Spectator View Pro code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)
+[Mixed reality capture](mixed-reality-capture.md) 
+[Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+[Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+[Spectator View (Preview) code on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/SpectatorView)
+[Spectator View (Preview) native code on GitHub](https://github.com/Microsoft/MixedRealityToolkit/tree/master/SpectatorViewPlugin)
+[Spectator View Pro code on GitHub](https://github.com/Microsoft/HoloLensCompanionKit/tree/master/SpectatorView)
