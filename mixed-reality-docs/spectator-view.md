@@ -13,7 +13,7 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 ![Marker](images/SpecViewPhoneHero.jpg)
 
 
-# Current Refactor
+## Current Refactor
 
 > [!NOTE]
 >Spectator View for HoloLens is being actively refactored. This work is intended to consolidate the Preview and Pro codebases and extend support to HoloLens 2. 
@@ -26,7 +26,7 @@ and
 
 https://github.com/Microsoft/MixedRealityToolkit/tree/feature/spectatorView/SpectatorViewPlugin
 
-# Overview
+## Overview
 
 When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator View allows others to see on a 2D screen what a HoloLens user sees in their world.
 Spectator View (Preview) is fast and affordable approach to recording holograms in HD, while Spectator View Pro is intended for professional quality recording of holograms.
@@ -71,6 +71,8 @@ The following table shows both options and their capabilities. Choose the option
 
 >[!NOTE] 
 >The Spectator View (Preview) code cannot be used with the Spectator View Pro version code. We recommend to implement it in new projects where video recording of holograms is required.
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/3fXlPw_FGLg]
 
@@ -205,8 +207,6 @@ An example scene can be found in [HoloToolkit-Examples\SpectatorView\Scenes\Spec
 
 ## Spectator View Pro
 
-**Spectator View Pro setup**
-
 ![Spectator view setup](images/spectatorview-300px.png)
 
 Using Spectator View Pro involves these four components:
@@ -219,26 +219,30 @@ Using Spectator View Pro involves these four components:
 
 ### Use cases
 
->[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]
-
-**Spectator View Pro photo capture scenario example**
-
-
-![Spectator View Pro photo capture scenario example](images/fall-350px.jpg)
-
-**Spectator View Pro video capture scenario example**
-
-
-![Spectator View Pro video capture scenario example](images/spectatorviewvideo.gif) 
-
+>[!VIDEO https://www.youtube.com/embed/DgIHjxoPy_c]<br>
+*Spectator view can be used for sharing your holographic creations, whether they're a still image, a video clip, or a live demonstration.*
+<br>
 
 There are three key scenarios that work well with this technology:
-1. **Photo capture**
+
+1. **Photo capture**<br>
 Using this technology, you can capture high resolution images of your holograms. These images can be used to showcase content at marketing events, send to your potential clients, or even submit your application to the Windows Store. You get to decide which photo camera you would like to use to capture these images, as such you may prefer a quality DSLR camera.
-2. **Live demonstrations**
-Spectator view is a preferred approach for live demonstrations as the camera position remains steady or controlled. Because you can use a high-quality video camera, you can also produce high-quality images meant for a big screen. This is also appropriate for streaming live demos on a screen, possibly to eager participants waiting in line for their turn.
-3. **Video capture**
+
+<br>
+![Spectator View Pro photo capture example](images/fall-350px.jpg)<br>
+*Photo capture example - making it appear the floor is made of lava.*
+<br>
+
+2. **Video capture**<br>
 Videos are the best story telling mechanism for sharing a holographic app experience with many people. Spectator view lets you choose the camera, lens, and framing that best suits how you want to showcase your app. It puts you in control of the video quality based on the video hardware you have available.
+
+<br>
+![Spectator View Pro video capture example](images/spectatorviewvideo.gif)<br>
+*Video capture example - simulating mixed reality collaboration.*
+<br>
+
+3. **Live demonstrations**<br>
+Spectator view is a preferred approach for live demonstrations as the camera position remains steady or controlled. Because you can use a high-quality video camera, you can also produce high-quality images meant for a big screen. This is also appropriate for streaming live demos on a screen, possibly to eager participants waiting in line for their turn.
 
 ### Comparing video capture techniques
 
