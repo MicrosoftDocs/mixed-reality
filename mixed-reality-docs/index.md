@@ -1,14 +1,12 @@
 ---
 layout: LandingPage
-title: Mixed Reality
+title: Mixed Reality documentation
 description: Learn to build mixed reality experiences for HoloLens and immersive headsets.
-
-author: rwinj
-
+author: varnauld 
 ms.author: vanesa
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
-keywords: Mixed Reality, index, landing page, design, development, academy, fundamentals, case studies, resources, HoloLens how-to, Open source projects
+keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---
 
 # Mixed Reality documentation
