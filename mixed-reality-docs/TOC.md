@@ -265,6 +265,7 @@
 ## [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 
 # Programs and events
+## [Mixed Reality Dev Days](mr-dev-days.md)
 ## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
 ## [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ## [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)

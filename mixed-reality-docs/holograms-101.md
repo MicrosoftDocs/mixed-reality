@@ -11,7 +11,11 @@ keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tut
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
 
+<br>
+
 # MR Basics 101: Complete project with device
+
+<br>
 
 >[!VIDEO https://www.youtube.com/embed/XKIIEC5BMWg]
 
@@ -112,7 +116,9 @@ In this chapter, we'll setup our first Unity project and step through the build 
   * If the HoloLens is attached over USB, you may instead select **Device** to deploy over USB.
   * Leave the **Authentication Mode** set to **Universal**.
   * Click **Select**
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
+
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens-(1st-gen)).
+
 * The Origami project will now build, deploy to your HoloLens, and then run.
 * Put on your HoloLens and look around to see your new holograms.
 
