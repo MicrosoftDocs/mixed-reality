@@ -127,10 +127,10 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                     <div class="cardText">
                         <h3>Porting guides</h3>
                         <p>
-                            <a href="mrtk-porting-guide.md">Updating to the latest Mixed Reality Toolkit (MRTK)</a>
+                            <a href="mrtk-porting-guide.md">Updating to the latest Mixed<br>Reality Toolkit (MRTK)</a>
                         </p>
                         <p>
-                            HoloLens (1st gen) to HoloLens 2 - coming soon!
+                            HoloLens (1st gen) to HoloLens 2<br>- coming soon!
                         </p>
                         <p>
                             <a href="porting-guides.md">Immersive headset apps</a>
