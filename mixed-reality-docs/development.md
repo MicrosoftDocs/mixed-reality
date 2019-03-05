@@ -121,7 +121,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/Controls_Icon_120x130.png" alt="Porting guides icon">
+                            <img src="images/PortingGuides-icon_120x130.png" alt="Porting guides icon">
                         </div>
                     </div>
                     <div class="cardText">
