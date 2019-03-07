@@ -20,10 +20,20 @@ Here's an outline of the available Interaction design articles and which device 
 <br>
 
 <table>
+
+<th>
 <tr>
-<th style="width:175px">Input</th><th style="width:125px; text-align: center;"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:125px; text-align: center;">HoloLens 2</th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td> <a href="gestures.md">Articulated hands</a></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td><td style="text-align: center;"></td>
+
+<td style="width:150px;"><strong>Input</strong></td>
+<td style="width:150px; text-align: center;"><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+<td style="width:150px; text-align: center;"><strong>HoloLens 2</strong></td>
+<td style="width:150px; text-align: center;"><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+</tr>
+</th>
+ 
+<tr>
+<td> <a href="gestures.md">Articulated hands</a></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td><td></td>
+
 </tr><tr>
 <td> <a href="gaze-targeting.md">Eye targeting</a></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td><td style="text-align: center;"></td>
 </tr><tr>
@@ -34,17 +44,28 @@ Here's an outline of the available Interaction design articles and which device 
 <td> <a href="voice-design.md">Voice design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td> Gamepad</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr><tr>
+</tr>
+<tr>
 <td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<th style="width:175px">Perception and spatial features</th><th style="width:125px; text-align: center;"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:125px; text-align: center;">HoloLens 2</th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
+
+</tr>
+<th>
+<tr>
+<td style="width:150px;"><strong>Perception and spatial features</strong></td>
+<td style="width:150px; text-align: center;"><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+<td style="width:150px; text-align: center;"><strong>HoloLens 2</strong></td>
+<td style="width:150px; text-align: center;"><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+</tr>
+</th>
+<tr>
+
 <td> <a href="spatial-sound-design.md">Spatial sound design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td> <a href="spatial-mapping-design.md">Spatial mapping design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
 </tr><tr>
 <td> <a href="hologram.md">Holograms</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
 </tr>
+
 </table>
 
 ## The user is the camera

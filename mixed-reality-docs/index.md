@@ -55,13 +55,13 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                </a>
                             </li>
                              <li>
-                              <a href="implementing-3d-app-launchers.md" title="Distribute landing" data-linktype="absolute-path">
+                              <a href="implementing-3d-app-launchers.md" title="Distribute" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/GetStartedIcon.png" alt="Distribute icon">
+                                                        <img src="images/DistributeIcon.png" alt="Distribute icon">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
