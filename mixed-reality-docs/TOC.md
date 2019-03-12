@@ -269,7 +269,7 @@
 ## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
 ## [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ## [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
-## [Mixed Reality Partner Program](mixed-reality-partner-program.md)
+## [Mixed Reality Partner Program](https://www.microsoft.com/en-us/hololens/partner-program)
 
 
 # [Contributing to this documentation](CONTRIBUTING.md)
