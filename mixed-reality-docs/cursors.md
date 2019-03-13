@@ -18,7 +18,8 @@ A cursor, or indicator of your current targeting vector, provides continuous fee
 
 The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.
 
-# HoloLens (1st gen)
+## HoloLens (1st gen)
+
 Targeting of content on HoloLens (1st gen) is done primarily with the [gaze](gaze.md) vector (a ray controlled by the position and rotation of the head). This provides a form of direct input for the user that needs little teaching. However, users have difficulty using an unmarked center of gaze for precise targeting so a cursor ensures users know the point they are currently targeting. 
 
 
