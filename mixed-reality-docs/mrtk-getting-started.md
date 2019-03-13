@@ -1,7 +1,7 @@
 ---
 title: Getting started with MRTK version 2
 description: For new developers who are interested in leveraging MRTK
-author: author: grbury
+author: grbury
 ms.author: grbury
 ms.date: 02/22/19
 ms.topic: article
