@@ -59,7 +59,7 @@ This time let's talk about displays! Learn more about the hardware, how it works
 
 
 ---
-## **[Mixed Reality Dev Days](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
+## **[Mixed Reality Dev Days, Seattle](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
 ### May 2-3, 2019
 At Mixed Reality Dev Days, you’ll build the skills, network, and ideas you need to take your mixed reality applications to the next level.
 
