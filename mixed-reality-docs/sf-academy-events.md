@@ -60,7 +60,7 @@ This is a great opportunity for you to check out HoloLens v2!
 
 
 ---
-## The Realities Show (Mixed Reality Livestream from San Francisco Reactor)
+## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
 ### April 26, 2019
 This time let's talk about displays! Learn more about the hardware, how it works, field of view, additive display design and considerations: Colors v/s Additive, minimizing the edge and what's outside the FOV.
 
@@ -68,7 +68,7 @@ This time let's talk about displays! Learn more about the hardware, how it works
 
 
 ---
-## The Realities Show (Mixed Reality Livestream from San Francisco Reactor)
+## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
 ### May 6, 2019
 Spatial Computing: We’ll be talking about SR Mesh, Semantic Labelling, Cloud Superpowers: Shared Anchor Service, Eden, Spatial Reconstruction and Object Recognition.
 
@@ -92,7 +92,7 @@ Let's get together to talk and learn about HoloLens and Mixed Reality. There's a
 
 
 ---
-## The Realities Show (Mixed Reality Livestream from San Francisco Reactor)
+## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
 ### May 28, 2019
 Spatial Computing: We’ll be talking about SR Mesh, Semantic Labelling, Cloud Superpowers: Shared Anchor Service, Eden, Spatial Reconstruction and Object Recognition.
 
@@ -124,7 +124,7 @@ Let's get together to talk and learn about HoloLens and Mixed Reality. There's a
 
 
 ---
-## The Realities Show (Mixed Reality Livestream from San Francisco Reactor)
+## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
 ### June 14, 2019
 MixedRealityToolkit: Overview, roadmap and what does MRTK give developers and designers? Lets dive into Unity and see those MRTK tools.
 
