@@ -17,7 +17,6 @@ Join the Microsoft Mixed Reality Team at these upcoming events!
 San Francisco, CA 94107
 
 
-
 ---
 ## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
 ### April 2, 2019
@@ -65,6 +64,14 @@ This is a great opportunity for you to check out HoloLens v2!
 This time let's talk about displays! Learn more about the hardware, how it works, field of view, additive display design and considerations: Colors v/s Additive, minimizing the edge and what's outside the FOV.
 
 **[Watch it here](http://aka.ms/trs)**
+
+
+---
+## **[Mixed Reality Dev Days](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
+### May 2-3, 2019
+At Mixed Reality Dev Days, you’ll build the skills, network, and ideas you need to take your mixed reality applications to the next level.
+
+**[More information here](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
 
 
 ---
