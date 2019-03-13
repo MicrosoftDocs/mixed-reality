@@ -1,9 +1,9 @@
 ---
 title: Mixed reality capture for developers
 description: Best practices for mixed reality capture for developers.
-author: wguyman
-ms.author: wguyman
-ms.date: 10/02/2018
+author: mattzmsft
+ms.author: mazeller
+ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
 ---
@@ -12,9 +12,16 @@ keywords: mrc, photo, video, capture, camera
 
 # Mixed reality capture for developers
 
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes). 
+
+See [Enabling MRC in your app](#enabling-mrc-in-your-app) below for guidance on a new MRC capability for HoloLens 2.
+
 Since a user could take a [mixed reality capture](mixed-reality-capture.md) (MRC) photo or video at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.
 
 Developers can also seamlessly integrate mixed reality capture and insertion into their apps.
+
+MRC on HoloLens (first-generation) supports videos and photos up to 720p, while MRC on HoloLens 2 supports videos up to 1080p and photos up to 4K resolution.
 
 ## The importance of quality MRC
 
@@ -24,7 +31,11 @@ Mixed reality captured photos and videos are likely the first exposure a user wi
 
 ### Enabling MRC in your app
 
-By default, an app does not have to do anything to enable users to take mixed reality captures.
+By default, an app does not have to do anything to enable users to take mixed reality captures. However, because the design of HoloLens 2 increases the distance between the photo/video (PV) camera and the display, we'll be introducing a new option to produce a 3rd camera render aligned to the PV camera of **HoloLens 2**. 
+
+Opting-in to 3rd camera render on HoloLens 2 offers the following improvements over the default MRC experience:
+* Hologram alignment to both your physical environment and hands (for near interactions) should be accurate at all distances, instead of having an offset at distances other than the [focus point](focus-point-in-unity.md) as you might see in the default MRC.
+* The right eye in the headset won't be compromised, as it won't be used to render the holograms for the MRC output.
 
 ### Disabling MRC in your app
 
@@ -75,10 +86,12 @@ Here are some of the artifacts you might see in MRC if your app is not clearing 
 
 You can now tune the alpha values of your assets if you’d like, but typically don’t need to. Most of the time, MRCs will look good out of the box. MRC assumes pre-multiplied alpha. The alpha values will only affect the MRC capture.
 
-### What to expect when MRC is enabled (HoloLens-specific)
+### What to expect when MRC is enabled on HoloLens
+
+The following apply to both HoloLens (first-generation) and HoloLens 2, unless otherwise noted:
 
 * The system will throttle the application to 30Hz rendering. This creates some headroom for MRC to run so the app doesn’t need to keep a constant budget reserve and also matches the MRC video record framerate of 30fps
-* Hologram content in the right eye of the device may appear to “sparkle” when recording/streaming MRC: text may become more difficult to read and hologram edges may appear more jaggy
+* Hologram content in the right eye of the device may appear to “sparkle” when recording/streaming MRC: text may become more difficult to read and hologram edges may appear more jaggy (opting-in to 3rd camera render on **HoloLens 2** avoids this compromise)
 * MRC photos and videos will respect the application’s [focus point](focus-point-in-unity.md) if the application has enabled it, which will help ensure holograms are accurately positioned. For videos, the Focus Point is smoothed so holograms may appear to slowly drift into place if the Focus Point depth changes significantly. Holograms that are at different depths from the focus point may appear offset from the real world (see example below where Focus Point is set at 2 meters but hologram is positioned at 1 meter).
 
 ![Holograms at 2 meters will appear perfectly registered to the world. Holograms at close or far distances may be slightly offset.](images/hologramaccuracydistancemrc-1000px.png)

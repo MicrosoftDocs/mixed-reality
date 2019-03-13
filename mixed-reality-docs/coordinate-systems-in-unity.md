@@ -3,7 +3,7 @@ title: Coordinate systems in Unity
 description: Learn how to build seated, standing, room-scale and world-scale mixed reality experiences in Unity.
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: coordinate system, spatial coordinate system, orientation-only, seated-scale, standing-scale, room-scale, world-scale, 360 degree, seated, standing, room, world, scale, position, orientation, Unity, anchor, spatial anchor, world anchor, world-locked, world-locking, body-locked, body-locking, tracking loss, locatability, bounds, recenter
 ---
@@ -144,7 +144,7 @@ Then handle the event:
 ```cs
 private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
 {
-       // This simply activates/deactivates this object and all children when tracking changes
+    // This simply activates/deactivates this object and all children when tracking changes
     self.gameObject.SetActiveRecursively(located);
 }
 ```
@@ -155,9 +155,20 @@ Sometimes anchors are located immediately. In this case, this isLocated property
 Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 ```
 
+## Sharing anchors across devices
+
+You can use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
+
+To get started building shared experiences in Unity, try out the 5-minute [Azure Spatial Anchors Unity quickstarts](https://docs.microsoft.com/azure/spatial-anchors/unity-overview).
+
+Once you're up and running with Azure Spatial Anchors, you can then [create and locate anchors in Unity](https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity).
+
 ## See Also
-* [Experience scales](coordinate-systems.md)
-* [Spatial stage](coordinate-systems.md#spatial-coordinate-systems)
+* [Experience scales](coordinate-systems.md#mixed-reality-experience-scales)
+* [Spatial stage](coordinate-systems.md#stage-frame-of-reference)
+* [Tracking loss in Unity](tracking-loss-in-unity.md)
 * [Spatial anchors](spatial-anchors.md)
 * [Persistence in Unity](persistence-in-unity.md)
-* [Tracking loss in Unity](tracking-loss-in-unity.md)
+* [Shared experiences in Unity](shared-experiences-in-unity.md)
+* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors)

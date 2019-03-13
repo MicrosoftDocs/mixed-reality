@@ -72,16 +72,6 @@ Often, it is best to think what type of experience an app or game developer want
 * **In the middle (fully mixed reality).** These experiences perfectly blend the real world and the digital world. Viewers who have seen the movie [Jumanji](https://en.wikipedia.org/wiki/Jumanji) can reconcile how the physical structure of the house where the story took place was blended with a jungle environment.
 * **Towards the right (near digital reality).** Users experience a completely digital environment and are oblivious to what occurs in the physical environment around them.
 
-![Where experiences lay on the mixed reality spectrum](images/mixed-reality-spectrum-experience-placement-550px.png)
-
-Here's how different experiences take advantage of their position on the mixed reality spectrum:
-* **Skype on Microsoft HoloLens.** This experience allows collaboration through drawing in someone's physical environment. As an experience, it is currently further left on the spectrum because the physical environment remains the location of activity.
-* **Fragments** and **RoboRaid.** Both of these take advantage of the layout of the user's physical environment, walls, floors, furniture to place digital content in the world. The experience moves further to the right on the spectrum, but the user always believes they are in their physical world.
-* **HoloTour on Microsoft HoloLens.** HoloTour is designed with an immersive experience in mind. Users are meant to walk around tourist locations. On HoloLens, HoloTour pushes the limits of the device's immersive capabilities.
-* **HoloTour on immersive devices.** Meanwhile when HoloTour runs on an immersive device, it showcases the environmental input by allowing users to walk around the tourist location. The boundaries that help users avoid walking into walls represent further capabilities that pull the experience towards the middle.
-* **360° videos.** Since environmental input like translational movement does not affect the video playback experience, these experiences fall to the far right towards digital reality, effectively fitting into the narrow part of the spectrum that is virtual reality.
-
-Skype for HoloLens, Fragments and RoboRaid are best experienced with HoloLens. Likewise, 360° video is best experienced on immersive devices. HoloTour showcases the best of what both types of devices can do today when trying to push towards the center experience of mixed reality.
 
 ## See also
 * [API Reference: Windows.Perception](https://docs.microsoft.com/uwp/api/Windows.Perception)

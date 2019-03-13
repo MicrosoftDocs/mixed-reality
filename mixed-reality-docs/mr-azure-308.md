@@ -8,6 +8,11 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, notification, functions, tables, notification hubs, hololens, immersive, vr
 ---
 
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+
+<br>
+
 # MR and Azure 308: Cross-device notifications
 
 ![final product -start](images/AzureLabs-Lab8-00.png)
@@ -52,7 +57,7 @@ In your application, it is up to you as to how you will integrate the results wi
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
 - [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
 - [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
 - [Unity 2017.4](install-the-tools.md#installation-checklist)
@@ -69,7 +74,7 @@ We recommend the following hardware and software for this course:
 
 To use the **Azure Notification Hubs** Service, you will need to create an Application on the Microsoft Developer Portal, as your application will need to be registered, so that it can send and receive notifications.
 
-1.  Log in to the [Microsoft Developer Portal](https://developer.microsoft.com/en-us/dashboard).
+1.  Log in to the [Microsoft Developer Portal](https://developer.microsoft.com/dashboard).
 
     > You will need to log in to your Microsoft Account.
 

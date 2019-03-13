@@ -13,7 +13,7 @@ keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep
 # Implement 3D app launchers (UWP apps)
 
 > [!NOTE]
-> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and is supported by HoloLens with the  Windows 10 April 2018 Update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and is supported by HoloLens with the  Windows 10 April 2018 Update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating a UWP application for Windows Mixed Reality, by default, apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place. You can also create a [3D deep link (secondaryTile)](#3d-deep-links-secondarytiles) as a 3D launcher to content within a 2D UWP app.
 
@@ -110,7 +110,7 @@ When working with Unity the project must be built and opened in Visual Studio be
 ## 3D deep links (secondaryTiles)
 
 > [!NOTE]
-> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive (VR) headsets and as part of the April 2018 Update (RS4) for HoloLens. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive (VR) headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+> This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive (VR) headsets and as part of the April 2018 Update (RS4) for HoloLens. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive (VR) headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 >[!IMPORTANT]
 >3D deep links (secondaryTiles) only work with 2D UWP apps. You can, however, create a [3D app launcher](implementing-3d-app-launchers.md) to launch an exclusive app from the Windows Mixed Reality home.

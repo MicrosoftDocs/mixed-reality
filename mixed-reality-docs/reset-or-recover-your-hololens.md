@@ -69,7 +69,7 @@ If, after performing the above options, your device is **still** frozen, unrespo
 
 To fully recover your HoloLens:
 1. Disconnect all phones and Windows devices from your PC
-2. Install and launch the [Windows Device Recovery Tool](https://support.microsoft.com/en-us/help/12379/windows-10-mobile-device-recovery-tool-faq) (WDRT) on your PC
+2. Install and launch the [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) (WDRT) on your PC
 3. Connect your HoloLens to your PC using the micro-USB cable it came with
    * Note that not all USB cables are created equal. Even if you’ve been using another cable successfully, this flow will expose new states where the cable may not perform as well. The one your HoloLens came with is the best and most well tested option
 4. If the tool automatically detects your device it will display a HoloLens tile. Click it and follow the instructions to complete the process

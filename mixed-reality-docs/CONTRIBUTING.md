@@ -96,8 +96,7 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
-- [Unique Markdig differences](https://review.docs.microsoft.com/en-us/new-hope/engineering/tools/markdig/markdig-migration-information?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/en-us/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
+- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
 ### Adding tables
 
@@ -107,9 +106,7 @@ The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/
 
 ### Adding images
 
-You’ll need to upload your images to the "mixed-reality-docs/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively. 
-
-[If you're a Microsoft employee, you can find solid guidance on formatting images here.](https://review.docs.microsoft.com/en-us/help/style/style-how-to-visuals-static-art-types?branch=master)
+You’ll need to upload your images to the "mixed-reality-docs/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
 
 >[!IMPORTANT]
 >You can only upload images to your forked repo before merging. So, if you plan on adding images to an article, you'll need to [use Visual Studio Code](#using-visual-studio-code) to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
@@ -128,7 +125,7 @@ While editing in GitHub via a web browser, you can click the **Preview** tab nea
 >[!NOTE]
 >Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Microsoft employees: once your contributions have been merged into the 'master' branch, you can see what the documentation will look like before it goes public at https://review.docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools?branch=master (find your article using the table of contents in the left column).
+Microsoft employees: once your contributions have been merged into the 'master' branch, you can see what the documentation will look like before it goes public at https://review.docs.microsoft.com/windows/mixed-reality?branch=master (find your article using the table of contents in the left column).
 
 ## Editing in the browser vs. editing with a desktop client
 

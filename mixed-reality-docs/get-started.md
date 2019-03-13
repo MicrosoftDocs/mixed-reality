@@ -20,7 +20,7 @@ You may have some questions about what we mean by "mixed reality" and how it rel
 ![Example of a mixed reality app that supports both HoloLens and immersive (VR) headsets](images/mr-island.png)<br>
 *Mixed reality apps can support both HoloLens and immersive (VR) headsets*
 
-We created Windows Mixed Reality as a single development platform and set of tools that can cover the MR spectrum, and we currently support two device types that cover the same spectrum: [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens), the world's first self-contained holographic headset, and [Windows Mixed Reality immersive headsets and motion controllers](https://www.microsoft.com/en-us/windows/windows-mixed-reality), which connect to a PC for powerful virtual reality experiences. You can check out our What is [mixed reality?]( article for a more thorough answer if you're interested.
+We created Windows Mixed Reality as a single development platform and set of tools that can cover the MR spectrum, and we currently support two device types that cover the same spectrum: [Microsoft HoloLens](https://www.microsoft.com/hololens), the world's first self-contained holographic headset, and [Windows Mixed Reality immersive headsets and motion controllers](https://www.microsoft.com/windows/windows-mixed-reality), which connect to a PC for powerful virtual reality experiences. You can check out our What is [mixed reality?]( article for a more thorough answer if you're interested.
 
 ## Choose your development path
 
@@ -35,8 +35,8 @@ Whether you're building a mixed reality app that targets HoloLens, immersive (VR
 
 Tools to install:
 * [Unity](https://store.unity.com/download)
-* [Visual Studio (with Windows 10 SDK)](https://developer.microsoft.com/en-us/windows/downloads)
-* [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/GettingStarted.md)
+* [Visual Studio (with Windows 10 SDK)](https://developer.microsoft.com/windows/downloads)
+* [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/GettingStarted.md)
 
 You'll also want to [put your target device into Developer mode and configure Visual Studio for deploying apps to the target device](using-visual-studio.md).
 

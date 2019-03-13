@@ -16,7 +16,7 @@ Welcome to Windows Mixed Reality! The release of the **[Windows 10 Fall Creators
 
 The release of Windows Mixed Reality headsets and motion controllers is the culmination of a massive team effort and a major step forward for the [Windows Mixed Reality platform](mixed-reality.md), which includes [Microsoft HoloLens](hololens-hardware-details.md). While HoloLens isn't receiving an update with the release of the Windows 10 Fall Creators Update, know that work on HoloLens hasn't stopped; we'll have a lot of learnings and insight to apply from our recent work across Windows Mixed Reality as a whole. In fact, Windows Mixed Reality immersive headsets and motion controllers represent a great entry point to development for HoloLens too, as the same APIs, tools, and concepts apply to both.
 
-To update to the latest release for each device, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 Fall Creators Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
+To update to the latest release for each device, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 Fall Creators Update using the [Windows media creation tool](https://www.microsoft.com/software-download/windows10).
 
  **Latest release for Desktop:** Windows 10 Desktop October 2017 (**10.0.16299.15**, Windows 10 Fall Creators Update)<br>
  **Latest release for HoloLens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)

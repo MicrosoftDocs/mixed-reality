@@ -8,13 +8,18 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, language understanding intelligence service, luis, hololens, immersive, vr
 ---
 
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+
+<br>
+
 # MR and Azure 303: Natural language understanding (LUIS)
 
 In this course, you will learn how to integrate Language Understanding into a mixed reality application using Azure Cognitive Services, with the Language Understanding API.
 
 ![Lab outcome](images/AzureLabs-Lab3-000.png)
 
-*Language Understanding (LUIS)* is a Microsoft Azure service, which provides applications with the ability to make meaning out of user input, such as through extracting what a person might want, in their own words. This is achieved through machine learning, which understands and learns the input information, and then can reply with detailed, relevant, information. For more information, visit the [Azure Language Understanding (LUIS) page](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/).
+*Language Understanding (LUIS)* is a Microsoft Azure service, which provides applications with the ability to make meaning out of user input, such as through extracting what a person might want, in their own words. This is achieved through machine learning, which understands and learns the input information, and then can reply with detailed, relevant, information. For more information, visit the [Azure Language Understanding (LUIS) page](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/).
 
 Having completed this course, you will have a mixed reality immersive headset application which will be able to do the following:
 
@@ -48,7 +53,7 @@ Be prepared to Train LUIS several times, which is covered in [Chapter 12](#chapt
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
 - [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md)
 - [The latest Windows 10 SDK](install-the-tools.md)
 - [Unity 2017.4](install-the-tools.md)

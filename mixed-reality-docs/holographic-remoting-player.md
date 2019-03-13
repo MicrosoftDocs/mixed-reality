@@ -16,6 +16,9 @@ The Holographic Remoting Player is a companion app that connects to PC apps and 
 
 The Holographic Remoting Player can only be used with PC apps that are specifically designed to support Holographic Remoting.
 
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
 ## Connecting to the Holographic Remoting Player
 
 Follow your app's instructions to connect to the Holographic Remoting Player. You will need to enter the IP address of your HoloLens device, which you can see on the Remoting Player's main screen as follows:

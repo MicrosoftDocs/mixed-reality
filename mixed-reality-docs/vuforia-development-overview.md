@@ -20,7 +20,7 @@ Existing Vuforia Engine apps that were built for phones and tablets can easily b
 
 ## Get the tools
 
-[Install the recommended versions](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools) of Visual Studio and Unity and then configure Unity to use Visual Studio and the preferred IDE and compiler. 
+[Install the recommended versions](install-the-tools.md) of Visual Studio and Unity and then configure Unity to use Visual Studio and the preferred IDE and compiler. 
 
 When installing Unity, be sure to install either the “Windows Store .NET Scripting Backend” or the “Windows Store IL2CPP Scripting Backend”. Also, be sure to select “Vuforia Augmented Reality Support” to enable Vuforia Engine within Unity.
 
@@ -38,7 +38,7 @@ Developing a Vuforia Engine app for HoloLens is fundamentally the same as develo
 
 ## Build and Run the Vuforia Engine Sample for HoloLens
 1.	Download the [Vuforia Engine Sample for HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) from the Unity Asset Store
-2.	Apply the [recommended Unity engine options for power and performance](https://docs.microsoft.com/en-us/windows/mixed-reality/performance-recommendations-for-unity)
+2.	Apply the [recommended Unity engine options for power and performance](performance-recommendations-for-unity.md)
 3.	Add the sample scenes to Scenes in Build.
 4.	Set your platform build target for “Universal Windows Platform” in File > Build Settings.
 5.	Select the following platform build configuration settings: 
