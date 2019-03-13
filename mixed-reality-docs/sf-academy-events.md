@@ -51,14 +51,6 @@ Let's get together to talk and learn about HoloLens and Mixed Reality. There's a
 
 
 ---
-## **[HoloLens 2 Demo night at the San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2Fevents%2F&data=02%7C01%7Cdaescu%40microsoft.com%7C669fe1a5737b45e399d108d69057ef69%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636855104695762978&sdata=3ctvJKFXuqOa6PwhfV5TgYdF3PFpoza5hqghmFkgE7o%3D&reserved=0)**
-### April 23, 2019
-This is a great opportunity for you to check out HoloLens v2!
-
-**Sign up to the meetup [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961074327&sdata=08%2FHAyYghOFJC63HQAeb0bJU4Wv8JPH%2BSCD%2FgIhkMog%3D&reserved=0)**
-
-
----
 ## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
 ### April 26, 2019
 This time let's talk about displays! Learn more about the hardware, how it works, field of view, additive display design and considerations: Colors v/s Additive, minimizing the edge and what's outside the FOV.
