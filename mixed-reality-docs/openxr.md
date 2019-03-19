@@ -26,7 +26,7 @@ To get started with the Mixed Reality OpenXR Developer Preview:
 
 1. Be sure you are running at least the Windows 10 October 2018 Update.  If you're on an earlier version of Windows 10, you can upgrade to the October 2018 Update using the [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).
 1. Set up a Windows Mixed Reality headset or follow the instructions to [enable the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md).
-1. If you're running a [Windows 10 Insider Preview build](https://insider.windows.com/) of the next version of Windows, you can try out the [Mixed Reality OpenXR Developer Preview app](https://www.microsoft.com/store/productId/9n5cvvl23qbt).  This app makes it easy to stay up to date with the OpenXR runtime and set it as the active runtime, and will soon let you explore other debug information as well.
+1. If you're running a [Windows 10 Insider Preview build](https://insider.windows.com/) of the next version of Windows, you can use the [Mixed Reality OpenXR Developer Preview app](https://www.microsoft.com/store/productId/9n5cvvl23qbt) to install the Mixed Reality OpenXR Developer Preview.  This app makes it easy to install the OpenXR runtime, keep it up to date, set it as the active runtime, and will soon let you explore other debug information as well.
 
 ![Mixed Reality OpenXR Developer Preview app](images/mixed-reality-openxr-developer-preview.png)
 
