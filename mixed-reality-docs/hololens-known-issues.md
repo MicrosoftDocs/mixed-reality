@@ -14,6 +14,18 @@ keywords: troubleshoot, known issue, help
 
 This is the current list of known issues for HoloLens affecting developers. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 
+## Issues launching the Microsoft Store and Apps on HoloLens
+
+You may experience issues when trying to launch the Microsoft Store and Apps on HoloLens.  We’ve been investigating with the highest urgency and have determined that an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) that doesn’t correctly update for all apps consuming the prior version of the framework.  The flow for framework update is as follows: -
+
+1.	The new framework package is downloaded from the store and installed
+2.	All apps using the older framework are ‘updated’ to use the newer version
+
+If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe the current impacted apps to be the Microsoft Store App and Apps on HoloLens.
+
+Unfortunately, at this point we do not have any known work arounds but rest assured that we’re working around the clock to address this issue and we’ll reach out with updates as we work towards a remedy.
+
+
 ## Connecting to WiFi
 
 During OOBE & Settings, there is a credential timeout of 2 mins. The username/password needs to be entered within 2 mins otherwise the username field will be automatically cleared.
