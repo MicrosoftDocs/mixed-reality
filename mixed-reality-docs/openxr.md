@@ -56,7 +56,7 @@ Here are some troubleshooting tips for the Mixed Reality OpenXR Developer Previe
 
 ### OpenXR app not starting Windows Mixed Reality
 
-If your OpenXR app is not starting Windows Mixed Reality when you run it, the Mixed Reality OpenXR Developer Preview may not be set as the current runtime.  Be sure to run the Mixed Reality OpenXR Developer Preview app and follow the instructions to make the runtime active.
+If your OpenXR app is not starting Windows Mixed Reality when you run it, the Mixed Reality OpenXR Developer Preview may not be set as the active runtime.  Be sure to run the Mixed Reality OpenXR Developer Preview app and follow the instructions to make the runtime active.
 
 ### Mixed Reality OpenXR Developer Preview app cannot be installed 
 
