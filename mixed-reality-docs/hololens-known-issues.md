@@ -28,8 +28,9 @@ Some users have reported that launching other apps such as Feedback Hub or Photo
 Unfortunately, we have not yet developed a workaround, once an app is in this state. If you need urgent access to any affected app and ensure you do not get into this state again, you can:
 
 **WARNING: If you reset your device, all your persona data, apps, and settings will be erased. Resetting will only install the latest installed version of Windows Holographic and you will have to redo all the initialization steps (calibrate, connect to WiFi, create a user account, download apps, etc…).**
-1. [reset your device](https://support.microsoft.com/en-us/help/13452/hololens-restart-reset-or-recover-hololens) 
-2. disable automatic store updates, by opening the Microsoft Store, going to “Settings” and turning “Update apps automatically” to off. 3. On commercial devices, automatic app updates can be managed via the  [ApplicationManagement/AllowAppStoreAutoUpdate policy](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) 
+1. [Reset your device](https://support.microsoft.com/en-us/help/13452/hololens-restart-reset-or-recover-hololens) 
+2. Disable automatic store updates, by opening the Microsoft Store, going to “Settings” and turning “Update apps automatically” to off. 
+3. On commercial devices, automatic app updates can be managed via the  [ApplicationManagement/AllowAppStoreAutoUpdate policy](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) 
 
 We understand this is an extremely painful step and apologize for the inconvenience.
 
