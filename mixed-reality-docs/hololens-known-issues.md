@@ -16,7 +16,7 @@ This is the current list of known issues for HoloLens affecting developers. Chec
 
 ## Issues launching the Microsoft Store and Apps on HoloLens
 
-[Last Update: 3/20 @ 10 PM] You may experience issues when trying to launch the Microsoft Store and Apps on HoloLens.  We’ve been investigating with the highest urgency and have determined that an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) that doesn’t correctly update for all apps consuming the prior version of the framework.  The flow for framework update is as follows: -
+[Last Update: 3/20 @ 11 PM - Next Update expected by 3/21 @ 11 AM] You may experience issues when trying to launch the Microsoft Store and Apps on HoloLens.  We’ve been investigating with the highest urgency and have determined that an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) that doesn’t correctly update for all apps consuming the prior version of the framework.  The flow for framework update is as follows: -
 
 1.	The new framework package is downloaded from the store and installed
 2.	All apps using the older framework are ‘updated’ to use the newer version
