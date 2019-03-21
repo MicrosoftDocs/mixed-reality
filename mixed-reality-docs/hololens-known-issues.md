@@ -23,7 +23,7 @@ This is the current list of known issues for HoloLens affecting developers. Chec
 
 If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe the current impacted apps to be the Microsoft Store App and Apps on HoloLens.
 
-At this point the only known mitigation is as follows:
+Some users have reported that launching other apps such as Feedback Hub or Photos resolves the issue for them - however, this does not work 100% of the time. At this point the only known mitigation is as follows:
 
 1.	Open the Settings app and go to “Recovery”
 2.	Select “Reset this device” -  Please note, this step will require devices to reapply a commercial license and considered the equivalent of a “clean flash”
