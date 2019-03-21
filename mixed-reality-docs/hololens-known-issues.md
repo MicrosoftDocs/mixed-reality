@@ -16,21 +16,27 @@ This is the current list of known issues for HoloLens affecting developers. Chec
 
 ## Issues launching the Microsoft Store and Apps on HoloLens
 
-You may experience issues when trying to launch the Microsoft Store and Apps on HoloLens.  We’ve been investigating with the highest urgency and have determined that an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) that doesn’t correctly update for all apps consuming the prior version of the framework.  The flow for framework update is as follows: -
+[Last Update: 3/20 @ 11 PM - Next Update expected by 3/21 @ 11 AM] You may experience issues when trying to launch the Microsoft Store and Apps on HoloLens.  We’ve been investigating with the highest urgency and have determined that an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) that doesn’t correctly update for all apps consuming the prior version of the framework.  The flow for framework update is as follows: -
 
 1.	The new framework package is downloaded from the store and installed
 2.	All apps using the older framework are ‘updated’ to use the newer version
 
-If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe the current impacted apps to be the Microsoft Store App and Apps on HoloLens.
+If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
 
-At this point the only known mitigation is as follows:
+Some users have reported that launching other apps such as Feedback Hub or Photos resolves the issue for them - however, this does not work 100% of the time.
 
-* Reset the device via the Settings app.
-* After the update, immediately launch the Settings app and get updates. 
-* This interactive update avoids the issues from the background scan by bundling all updates in one collection.
+Unfortunately, we have not yet developed a workaround, once an app is in this state. 
 
-Rest assured, we’re continuing working around the clock to address this issue and we’ll reach out with updates as we work towards a remedy.
+We continue to work towards a remedy, and believe mitigations are forthcoming in the next few days – we will update this page every 12 hours with any new information.
 
+If you need urgent access to any affected app and ensure you do not get into this state again, you can:
+
+**WARNING: If you reset your device, all your persona data, apps, and settings will be erased. Resetting will only install the latest installed version of Windows Holographic and you will have to redo all the initialization steps (calibrate, connect to WiFi, create a user account, download apps, etc…).**
+1. [Reset your device](https://support.microsoft.com/en-us/help/13452/hololens-restart-reset-or-recover-hololens) 
+2. Disable automatic store updates, by opening the Microsoft Store, going to “Settings” and turning “Update apps automatically” to off. 
+3. On commercial devices, automatic app updates can be managed via the  [ApplicationManagement/AllowAppStoreAutoUpdate policy](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) 
+
+We understand this is an extremely painful step and apologize for the inconvenience.
 
 ## Connecting to WiFi
 
