@@ -23,7 +23,13 @@ You may experience issues when trying to launch the Microsoft Store and Apps on 
 
 If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe the current impacted apps to be the Microsoft Store App and Apps on HoloLens.
 
-Unfortunately, at this point we do not have any known work arounds but rest assured that we’re working around the clock to address this issue and we’ll reach out with updates as we work towards a remedy.
+At this point the only known mitigation is as follows:
+
+* Reset the device via the Settings app.
+* After the update, immediately launch the Settings app and get updates. 
+* This interactive update avoids the issues from the background scan by bundling all updates in one collection.
+
+Rest assured, we’re continuing working around the clock to address this issue and we’ll reach out with updates as we work towards a remedy.
 
 
 ## Connecting to WiFi
