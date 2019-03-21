@@ -21,11 +21,15 @@ This is the current list of known issues for HoloLens affecting developers. Chec
 1.	The new framework package is downloaded from the store and installed
 2.	All apps using the older framework are ‘updated’ to use the newer version
 
-If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe the current impacted any app on Hololens could be affected by this issue.
+If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
 
 Some users have reported that launching other apps such as Feedback Hub or Photos resolves the issue for them - however, this does not work 100% of the time.
 
-Unfortunately, we have not yet developed a workaround, once an app is in this state. If you need urgent access to any affected app and ensure you do not get into this state again, you can:
+Unfortunately, we have not yet developed a workaround, once an app is in this state. 
+
+We continue to work towards a remedy, and believe mitigations are forthcoming in the next few days – we will update this page every 12 hours with any new information.
+
+If you need urgent access to any affected app and ensure you do not get into this state again, you can:
 
 **WARNING: If you reset your device, all your persona data, apps, and settings will be erased. Resetting will only install the latest installed version of Windows Holographic and you will have to redo all the initialization steps (calibrate, connect to WiFi, create a user account, download apps, etc…).**
 1. [Reset your device](https://support.microsoft.com/en-us/help/13452/hololens-restart-reset-or-recover-hololens) 
@@ -33,8 +37,6 @@ Unfortunately, we have not yet developed a workaround, once an app is in this st
 3. On commercial devices, automatic app updates can be managed via the  [ApplicationManagement/AllowAppStoreAutoUpdate policy](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) 
 
 We understand this is an extremely painful step and apologize for the inconvenience.
-
-We continue to work towards a remedy, and believe mitigations are forthcoming in the next few days – we will update this page every 12 hours with any new information.
 
 ## Connecting to WiFi
 
