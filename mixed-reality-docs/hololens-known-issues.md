@@ -27,8 +27,8 @@ At this point the only known mitigation is as follows:
 
 1.	Open the Settings app and go to “Recovery”
 2.	Select “Reset this device” -  Please note, this step will require devices to reapply a commercial license and considered the equivalent of a “clean flash”
-3.	After the device has been updated, open the Microsoft Store, go “settings” and set “Update apps automatically” to off. 
-4.	On commercial devices, automatic app updates can be managed via the ApplicationManagement/AllowAppStoreAutoUpdate policy
+3.	After the device has been updated, open the Microsoft Store, go to “settings” and set “Update apps automatically” to off. 
+4.	On commercial devices, automatic app updates can be managed via the [ApplicationManagement/AllowAppStoreAutoUpdate policy](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
 
 We are working around the clock to address this issue and believe we will have additional mitigations in the coming days. We’ll reach out with updates as we work towards a remedy.
 
