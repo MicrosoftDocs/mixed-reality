@@ -26,7 +26,7 @@ You may experience issues when trying to launch the Microsoft Store and apps on 
 
 If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
 
-Some users have reported that launching other apps such as Feedback Hub or Photos resolves the issue for them - however, this does not work 100% of the time.
+Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer or Photos resolves the issue for them - however, this does not work 100% of the time.
 
 Unfortunately, we have not yet developed a supported workaround, once an app is in this state. 
 
