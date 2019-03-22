@@ -17,9 +17,9 @@ This is the current list of known issues for HoloLens affecting developers. Chec
 ## Issues launching the Microsoft Store and apps on HoloLens
 
 >[!IMPORTANT]
->Last Update: 3/20 @ 11 PM - Next Update expected by 3/21 @ 11 AM 
+>Last Update: 3/21 @ 5:30 PM - Next Update expected by 3/21 @ 11 AM 
 
-You may experience issues when trying to launch the Microsoft Store and apps on HoloLens.  We’ve been investigating with the highest urgency and have determined that an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) that doesn’t correctly update for all apps consuming the prior version of the framework.  The flow for framework update is as follows: -
+You may experience issues when trying to launch the Microsoft Store and apps on HoloLens. We've determined that the issue occurs when background app updates deploy a newer version of framework packages in specific sequences while one or more of their dependent apps are still running. In this case,  an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) caused the apps that are running to not correctly update for all running apps consuming the prior version of the framework.  The flow for framework update is as follows: -
 
 1.	The new framework package is downloaded from the store and installed
 2.	All apps using the older framework are ‘updated’ to use the newer version
@@ -28,7 +28,7 @@ If step 2 is interrupted before completion then any apps for which the newer fra
 
 Some users have reported that launching other apps such as Feedback Hub or Photos resolves the issue for them - however, this does not work 100% of the time.
 
-Unfortunately, we have not yet developed a workaround, once an app is in this state. 
+Unfortunately, we have not yet developed a supported workaround, once an app is in this state. 
 
 We continue to work towards a remedy, and believe mitigations are forthcoming in the next few days – we will update this page every 12 hours with any new information.
 
