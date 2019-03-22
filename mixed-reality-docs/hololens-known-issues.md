@@ -35,6 +35,7 @@ We have found a supported mitigation, that does not involve resetting devices:
 3)	You then want to get into the Windows Device Portal.  My recommendation is to do this over USB and you would do that by typing http://127.0.0.1:10080 into your browser.  
 4)	Once you have the Windows Device Portal up we need you to “side load” the two files that you downloaded.  To do that you need to go down the left side bar until you get to the “Apps” section and click on “Apps”.
 5)	You will then see a screen that is similar to the below.  You want to go to the section that says “Install App” and browse to where you unzipped those two APPX files.  You can only do one at a time, so after you select the first one, then click on “Go” under the Deploy section.  Then do this for the second APPX file. 
+  ![Windows Device Portal to Install Side-Loaded app](images/20190322-DevicePortal.png)<br>
 6)  At this point we believe your applications should start working again and that you can also get to the Store.
 7)  In some cases, it is necessary to load an additional step of launching the 3D Viewer app before affected apps would launch. 
 
