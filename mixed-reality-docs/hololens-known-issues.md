@@ -17,7 +17,7 @@ This is the current list of known issues for HoloLens affecting developers. Chec
 ## Issues launching the Microsoft Store and apps on HoloLens
 
 >[!IMPORTANT]
->Last Update: 3/21 @ 9:30 PM - Next Update tomorrow. 
+>Last Update: 3/22 @ 12 PM - Next Update tomorrow. 
 
 You may experience issues when trying to launch the Microsoft Store and apps on HoloLens. We've determined that the issue occurs when background app updates deploy a newer version of framework packages in specific sequences while one or more of their dependent apps are still running. In this case,  an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) caused the apps that are running to not correctly update for all running apps consuming the prior version of the framework.  The flow for framework update is as follows: -
 
@@ -28,19 +28,17 @@ If step 2 is interrupted before completion then any apps for which the newer fra
 
 Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer or Photos resolves the issue for them - however, this does not work 100% of the time.
 
-Unfortunately, we have not yet developed a supported workaround, once an app is in this state. 
+We have found a supported mitigation, that does not involve resetting devices:
 
-We continue to work towards a remedy, and believe mitigations are forthcoming in the next few days – we will update this page every 12 hours with any new information.
+1)	Please download this zip file from here <ADD link to download setting>.  Unzipping will produce two files.  Microsoft.NET.Native.Runtime.1.7.appx and Microsoft.NET.Native.Framework.1.7.appx
+2)	Please verify that your device is dev unlocked.  If you haven’t done that before the instructions to do that are [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fwindows%2Fmixed-reality%2Fusing-the-windows-device-portal&data=02%7C01%7Cjalynch%40microsoft.com%7C3622a462ebd04870fccb08d6ae94cad6%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636888351416725140&sdata=ZB6Zdx9GV95PcU6FAVgWaP3eQNMsyIc%2FbNDEby3Sb8A%3D&reserved=0).
+3)	You then want to get into the Windows Device Portal.  My recommendation is to do this over USB and you would do that by typing http://127.0.0.1:10080 into your browser.  
+4)	Once you have the Windows Device Portal up we need you to “side load” the two files that you downloaded.  To do that you need to go down the left side bar until you get to the “Apps” section and click on “Apps”.
+5)	You will then see a screen that is similar to the below.  You want to go to the section that says “Install App” and browse to where you unzipped those two APPX files.  You can only do one at a time, so after you select the first one, then click on “Go” under the Deploy section.  Then do this for the second APPX file. 
+6)  At this point we believe your applications should start working again and that you can also get to the Store.
+7)  In some cases, it is necessary to load an additional step of launching the 3D Viewer app before affected apps would launch. 
 
-If you need urgent access to any affected app and ensure you do not get into this state again, you can:
-
-1. [Reset your device](https://support.microsoft.com/en-us/help/13452/hololens-restart-reset-or-recover-hololens)
-    >[!WARNING]
-    >If you reset your device, all your persona data, apps, and settings will be erased. This action resets the last installed version of Windows Holographic, therefore you will have to go through device setup again (calibrate, connect to WiFi, create a user account, download apps, etc.).
-2. Disable automatic store updates, by opening the Microsoft Store, going to “Settings” and turning “Update apps automatically” to off. 
-3. On commercial devices, automatic app updates can be managed via the  [ApplicationManagement/AllowAppStoreAutoUpdate policy](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) 
-
-We understand this is an extremely painful step and apologize for the inconvenience.
+We appreciate your patience as we work to get this resolved.
 
 ## Connecting to WiFi
 
