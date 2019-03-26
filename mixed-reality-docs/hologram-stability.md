@@ -150,6 +150,6 @@ Though it's difficult to completely avoid color separation, there are several te
 As before, rendering at 60 FPS and setting the stabilization plane are the most important techniques for hologram stability. If facing noticeable color separation, first make sure the frame rate meets expectations.
 
 ## See also
-* [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Color, light and materials](color,-light-and-materials.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
