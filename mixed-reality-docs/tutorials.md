@@ -11,7 +11,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 # Tutorials and Sample Apps
 
-Currently all of our tutorials and sample apps are Unity based.  As we develop content for other engines and platforms, you will find them under the relevant heading in this section.
+Currently all of our tutorials and sample apps are Unity based.  As we develop content for other engines and platforms, you will find them under the relevant heading in the Table of Contents.
 
 ## MR Learning Modules
 
@@ -252,12 +252,8 @@ We also have an in-person Mixed Reality Academy at the Reactor space in San Fran
 
 These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project.  These tutorials are all based on either HoloLens (1st Gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
 
-  <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-  
-  
-  
-                                 <li>
+    <li>
                                    <a href="mr-azure-301.md" title="MR and Azure 301" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
