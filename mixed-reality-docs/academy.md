@@ -18,6 +18,11 @@ Currently all of our tutorials and sample apps are Unity based.  As we develop c
 The MR Learning Modules are designed to help developers learn both techniques and best practices for developing mixed reality applications.  The initial modules are for HoloLens 2 and implement the Mixed Reality Toolkit 2.0 (MRTK 2.0).
 * The base module is intended to show developers how to set up their project with MRTK, as well as implement UI, Spatial Mapping, and both basic and advanced interactions
 
+## Open Source Sample Apps
+
+The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects.
+
+## Mixed Reality Academy Tutorials
 
 The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files: 
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
@@ -241,6 +246,16 @@ We also have an in-person Mixed Reality Academy at the Reactor space in San Fran
                               </div>
                               </a>
                             </li> 
+  </ul>
+  
+  ## Mixed Reality and Azure Services tutorials
+  
+  These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project.  These tutorials are all based on either HoloLens (1st Gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
+  
+  <ul>
+  
+  
+  
                                  <li>
                                    <a href="mr-azure-301.md" title="MR and Azure 301" data-linktype="absolute-path">
                               <div class="cardSize">
