@@ -177,6 +177,15 @@
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## [Tutorials and sample apps](academy.md)
 ### Unity
+#### MR Learning Modules
+##### HoloLens 2
+###### Base Module
+####### Introduction
+####### Section 1
+####### Section 2
+####### Section 3
+####### Section 4
+####### Section 5
 #### Open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
