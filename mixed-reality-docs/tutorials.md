@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Tutorials and Sample Apps
-description: The Mixed Reality Academy provides code samples and tutorials on mixed reality development.
+description: Provides code samples and tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
 ms.date: 03/21/2018
@@ -248,7 +248,7 @@ We also have an in-person Mixed Reality Academy at the Reactor space in San Fran
                             </li> 
 </ul>
 <br>
-  
+<br>  
 ## Mixed Reality and Azure Services tutorials
   
 These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project.  These tutorials are all based on either HoloLens (1st Gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
