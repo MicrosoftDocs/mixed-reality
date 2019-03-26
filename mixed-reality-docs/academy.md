@@ -248,11 +248,13 @@ We also have an in-person Mixed Reality Academy at the Reactor space in San Fran
                             </li> 
   </ul>
   <br>
-  ## Mixed Reality and Azure Services tutorials
   
-  These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project.  These tutorials are all based on either HoloLens (1st Gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
+## Mixed Reality and Azure Services tutorials
+  
+These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project.  These tutorials are all based on either HoloLens (1st Gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
+
   <br>
-  <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
+<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
   
   
   
