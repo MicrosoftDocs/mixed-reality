@@ -13,6 +13,12 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 Currently all of our tutorials and sample apps are Unity based.  As we develop content for other engines and platforms, you will find them under the relevant heading in this section.
 
+## MR Learning Modules
+
+The MR Learning Modules are designed to help developers learn both techniques and best practices for developing mixed reality applications.  The initial modules are for HoloLens 2 and implement the Mixed Reality Toolkit 2.0 (MRTK 2.0).
+* The base module is intended to show developers how to set up their project with MRTK, as well as implement UI, Spatial Mapping, and both basic and advanced interactions
+
+
 The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files: 
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
 * Most courses cover concepts applicable to both HoloLens and immersive (VR) headsets. 
