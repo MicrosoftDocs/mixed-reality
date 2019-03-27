@@ -180,7 +180,7 @@
 #### MR Learning Modules
 ##### HoloLens 2
 ###### Base Module
-####### Introduction
+####### [Overview & Objectives](mrlearning-base.md)
 ####### Section 1
 ####### Section 2
 ####### Section 3
