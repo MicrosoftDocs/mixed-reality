@@ -24,7 +24,7 @@ In the previous lesson, we learned some of the capabilities the MRTK had to offe
 
 1. Select Mixed-Reality Toolkit (MRTK) from the “BaseScene” hierarchy. From there, you should see the “Mixed Reality Toolkit Script.” It should also say “active profile” underneath. Double click on it to open it.
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step1im)
+![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im)
 
 [!Note]
 By default, all of the profiles are not editable. These are default profiles that you can copy and customize. There are several layers of customization and profiles, so in order to change a profile you’ll need to copy and customize several profiles. Before any of this, however, we need to disable the visibility of the spatial mapping mesh.
