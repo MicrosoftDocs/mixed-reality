@@ -10,15 +10,17 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # MR Learning Base Module Project Initialization and First Application
 
-## Chapter 1 - Create a new project
+In this first lesson, we will learn some of the capabilities the Mixed Reality Tool Kit has to offer, start your first application for the HoloLens 2, and deploy it to the device.
 
-### Objectives
+## Objectives
 
 * Optimize Unity for HoloLens development.
 * Import assets and setup the scene.
 * Visualization of the spatial mesh, hand meshes, and the framerate counter.
 
-### Instructions
+## Instructions
+
+### Create new Unity project
 
 1. Start Unity.
 2. Select **New**.
