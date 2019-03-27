@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module Intro
+title: MR Learning Base Module Advanced Input
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,4 +8,4 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module Overview & Objectives
+# MR Learning Base Module Advanced Input
