@@ -181,11 +181,11 @@
 ##### HoloLens 2
 ###### Base Module
 ####### [Overview & Objectives](mrlearning-base.md)
-####### Section 1
-####### Section 2
-####### Section 3
-####### Section 4
-####### Section 5
+####### [Section 1](mrlearning-base-ch1)
+####### [Section 2](mrlearning-base-ch2)
+####### [Section 3](mrlearning-base-ch3)
+####### [Section 4](mrlearning-base-ch4)
+####### [Section 5](mrlearning-base-ch5)
 #### Open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
