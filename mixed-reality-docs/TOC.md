@@ -175,17 +175,16 @@
 #### [Add holographic remoting](add-holographic-remoting.md)
 ## WebVR
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
-## [Tutorials and sample apps](academy.md)
+## [Tutorials and sample apps](tutorials.md)
 ### Unity
 #### MR Learning Modules
 ##### HoloLens 2
-###### Base Module
-####### [Overview & Objectives](mrlearning-base.md)
-####### [Section 1](mrlearning-base-ch1)
-####### [Section 2](mrlearning-base-ch2)
-####### [Section 3](mrlearning-base-ch3)
-####### [Section 4](mrlearning-base-ch4)
-####### [Section 5](mrlearning-base-ch5)
+###### [Base Module - Overview & Objectives](mrlearning-base.md)
+####### [Project initialization and first application](mrlearning-base-ch1.md)
+####### [User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration](mrlearning-base-ch2.md)
+####### [Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)
+####### [3D Object Interaction](mrlearning-base-ch4.md)
+####### Advanced Input](mrlearning-base-ch5.md)
 #### Open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
