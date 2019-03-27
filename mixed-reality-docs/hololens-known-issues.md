@@ -26,10 +26,15 @@ You may experience issues when trying to launch the Microsoft Store and apps on 
 
 If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
 
-
 Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer or Photos resolves the issue for them - however, this does not work 100% of the time.
 
-As a result of this bug, we decided to pause the release of HoloLens OS version 17763.379 until we were able to root cause the issue. We have root caused that this issue was not caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. We have a fix and we are attempting to ship an updated version of the operating system as soon as possible. 
+As a result of this bug, we decided to pause the release of HoloLens OS version 17763.379 until we were able to root cause the issue. We have root caused that this issue was not caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. We have a fix and have released an updated version of the OS to a subset of devices. To see if your device can take the update please:
+1. Go to the “Settings” app and open “Update & Security”
+2. Click “Check for Updates”
+3. If update to 17763.380 is available, please update to this build to receive the fix for the App Hang bug
+4. Upon updating to this version of the OS, the Apps should work as expected
+For our customers, who either have not gotten the update yet or would prefer to stay on their current version of the HoloLens OS, we have also released a new version of the Microsoft Store App today. You should now be able to load the Store App. From the Store, please uninstall and re-install any apps that were affected by this bug and they should work upon reinstall. 
+We will release this update to the full set of customers later in the week. 
 
 In the interim, we have found a supported mitigation, that does not involve resetting devices:
 
