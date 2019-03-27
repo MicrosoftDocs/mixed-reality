@@ -29,7 +29,10 @@ In the previous lesson, we learned some of the capabilities the MRTK had to offe
 >[!Note]
 >By default, all of the profiles are not editable. These are default profiles that you can copy and customize. There are several layers of customization and profiles, so in order to change a profile you’ll need to copy and customize several profiles. Before any of this, however, we need to disable the visibility of the spatial mapping mesh.
 
-1. Select **New**.
+2. Copy the profile to enable yourself the ability to customize a version of the profile. In order to do that, you must click on the “Copy & Customize” button (as seen above). This creates a copy of the main MRTK profile. Nothing should be disabled anymore, allowing you to customize several things.
+
+![MR213_BuildSettings](images/mrlearning-base-ch2-1step2im.png)
+
 1. Enter a project name (e.g. "MixedRealityBase").
 1. Enter a location to save your project.
 1. Make sure the project is set to **3D**.
