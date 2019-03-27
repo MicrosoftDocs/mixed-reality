@@ -26,8 +26,8 @@ In the previous lesson, we learned some of the capabilities the MRTK had to offe
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.png)
 
-[!Note]
-By default, all of the profiles are not editable. These are default profiles that you can copy and customize. There are several layers of customization and profiles, so in order to change a profile you’ll need to copy and customize several profiles. Before any of this, however, we need to disable the visibility of the spatial mapping mesh.
+>[!Note]
+>By default, all of the profiles are not editable. These are default profiles that you can copy and customize. There are several layers of customization and profiles, so in order to change a profile you’ll need to copy and customize several profiles. Before any of this, however, we need to disable the visibility of the spatial mapping mesh.
 
 1. Select **New**.
 1. Enter a project name (e.g. "MixedRealityBase").
