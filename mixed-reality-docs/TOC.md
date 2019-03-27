@@ -175,7 +175,7 @@
 #### [Add holographic remoting](add-holographic-remoting.md)
 ## WebVR
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
-## [Tutorials and sample apps](academy.md)
+## [Tutorials and sample apps](tutorials.md)
 ### Unity
 #### MR Learning Modules
 ##### HoloLens 2
