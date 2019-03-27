@@ -30,11 +30,13 @@ Some users have reported that closing hung apps and launching other apps such as
 
 As a result of this bug, we decided to pause the release of HoloLens OS version 17763.379 until we were able to root cause the issue. We have root caused that this issue was not caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. 
 
-We are pleased to announce that we have identified a fix for both the OS as well as the Microsoft Store application to help mitigate the issue.  Starting today, we are going to begin a phased rollout of a fix to the OS.  To see if your device can take the update please:
-1)           Go to the “Settings” app and open “Update & Security”
-2)           Click “Check for Updates”
-3)           If update to 17763.380 is available, please update to this build to receive the fix for the App Hang bug
-4)           Upon updating to this version of the OS, the Apps should work as expected.
+We are pleased to announce that we have identified a fix and starting today, we are going to begin a phased rollout of a fix to the OS.  
+To see if your device can take the update please:
+
+1.  Go to the “Settings” app and open “Update & Security”
+2.  Click “Check for Updates”
+3.  If update to 17763.380 is available, please update to this build to receive the fix for the App Hang bug
+4.  Upon updating to this version of the OS, the Apps should work as expected.
 
 Additionally, as we do with every HoloLens OS release, we have posted the FFU image to the Microsoft Download Center at https://aka.ms/hololensdownload/10.0.17763.380. 
 
