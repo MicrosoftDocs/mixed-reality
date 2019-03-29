@@ -44,7 +44,8 @@ If you do not have access to the update or would not like to take it, we have re
 
 1) Open the Store and confirm that it loads.
 2) Use the Bloom Gesture to open the menu.
-3) Tap and hold the icon of the broken app and select uninstall.
+3) Attempt to open previously broken apps
+3) If it still cannot be launched, tap and hold the icon of the broken app and select uninstall.
 4) Resinstall these apps from the store.
 
 If your device is still unable to load apps, you can sideload a version of the .NET Native Framework and Runtime through the download center by doing:
