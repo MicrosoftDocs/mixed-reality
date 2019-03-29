@@ -43,8 +43,8 @@ Additionally, as we do with every HoloLens OS release, we have posted the FFU im
 If you do not have access to the update or would not like to take it, we have released a new version of the Microsoft Store UWP app as of 3/29. Once you have the updated version of the Store:
 
 1) Open the Store and confirm that it loads.
-2) Open  "Settings" -> "Apps"
-3) Uninstall the apps that have hung.
+2) Use the Bloom Gesture to open the menu.
+3) Tap and hold the icon of the broken app and select uninstall.
 4) Resinstall these apps from the store.
 
 If your device is still unable to load apps, you can sideload a version of the .NET Native Framework and Runtime through the download center by doing:
