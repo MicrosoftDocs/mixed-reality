@@ -10,7 +10,7 @@ keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
 
 # Performance recommendations for Unity
 
-This article builds on the discussion outlined in [performance recommendations for mixed reality](performance-recommendations-for-mixed-reality.md) but focuses on learnings specific to the Unity engine environment.
+This article builds on the discussion outlined in [performance recommendations for mixed reality](understanding-performance-for-mixed-reality.md) but focuses on learnings specific to the Unity engine environment.
 
 It is also highly advisable that developers review the [recommended environment settings for Unity article](Recommended-settings-for-unity.md). This article has content with some of the most important scene configurations in regards to building performant Mixed Reality apps. Some of these recommended settings are highlighted below as well.
 
