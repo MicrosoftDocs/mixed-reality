@@ -10,7 +10,7 @@ keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
 
 # Performance recommendations for Unity
 
-This article builds on the discussion outlined in [performance recommendations for mixed reality](performance-recommendations-for-mixed-reality.md) but focuses on learnings specific to the Unity engine environment.
+This article builds on the discussion outlined in [performance recommendations for mixed reality](understanding-performance-for-mixed-reality.md) but focuses on learnings specific to the Unity engine environment.
 
 It is also highly advisable that developers review the [recommended environment settings for Unity article](Recommended-settings-for-unity.md). This article has content with some of the most important scene configurations in regards to building performant Mixed Reality apps. Some of these recommended settings are highlighted below as well.
 
@@ -27,16 +27,7 @@ Unity provides great documentation for:
 >
 > ![Unity CPU vs GPU](images/unity-profiler-cpu-gpu.png)
 
-## How to improve your application
-
-**Table of Contents:**
-* [CPU](#CPU-Performance-Recommendations)
-* [CPU to GPU](#CPU-to-GPU-Performance-Recommendations)
-* [GPU](#GPU-Performance-Recommendations)
-* [Memory](#Memory-Recommendations)
-* [Startup Performance](#Startup-performance)
-
-### CPU performance recommendations
+## CPU performance recommendations
 
 The content below covers more in-depth performance practices, especially targeted for Unity & C# development.
 
@@ -182,7 +173,7 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
 
     If your application is using complex algorithms such as inverse kinematics, path finding, etc, look to find a simpler approach or adjust relevant settings for their performance
 
-### CPU-to-GPU performance recommendations
+## CPU-to-GPU performance recommendations
 
 Generally, CPU-to-GPU performance comes down to the **draw calls** submitted to the graphics card. To improve performance, draw calls need to be strategically **a) reduced** or **b) restructured** for optimal results. Since draw calls themselves are resource-intensive, reducing them will reduce overall work required. Further, state changes between draw calls requires costly validation and translation steps in the graphics driver and thus, restructuring of your application's draw calls to limit state changes(i.e different materials, etc) can boost performance.
 
@@ -227,7 +218,7 @@ Further, it is generally preferable to combine meshes into one GameObject where 
 >[!NOTE]
 > Modifying properties of Renderer.material at runtime will create a copy of the Material and thus potentially break batching. Use Renderer.sharedMaterial to modify shared material properties across GameObjects.
 
-### GPU performance recommendations
+## GPU performance recommendations
 
 Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games)
 
@@ -265,7 +256,7 @@ Instead of using a physically based rendering (PBR) or other high-quality shader
 
 Unity also provides an unlit, vertex lit, diffuse, and other simplified shader options that are significantly faster compared to the Unity Standard shader. See [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) for more detailed information.
 
-### Memory recommendations
+## Memory recommendations
 
 Excessive memory allocation & deallocation operations can have adverse effects on your holographic application resulting in inconsistent performance, frozen frames, and other detrimental behavior. It is especially important to understand memory considerations when developing in Unity since memory management is controlled by the garbage collector.
 
@@ -289,7 +280,7 @@ Object pooling is a popular technique to reduce the cost of continuous allocatio
 
 - [Object Pooling Tutorial in Unity](https://unity3d.com/learn/tutorials/topics/scripting/object-pooling) 
 
-### Startup performance
+## Startup performance
 
 You should consider starting your app with a smaller scene, then using *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. Be aware that there may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the AsyncOperation.allowSceneActivation property to false on the scene being loaded, wait for the scene to load, clear the screen to black, and then set back to true to complete the scene activation.
 
