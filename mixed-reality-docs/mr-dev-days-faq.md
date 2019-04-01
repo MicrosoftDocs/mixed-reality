@@ -11,8 +11,6 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
 # Mixed Reality Dev Days FAQ
 
-## BEFORE APPLYING
-
 * **Who should apply? Is there criteria?**
     
     We’re passionate about welcoming a diverse developer community to Mixed Reality Dev Days. We’re also ensuring this event brings together developers from our large customers and partners, large studios, small studios, and individual developers.
@@ -43,32 +41,6 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
     [Microsoft Build](https://www.microsoft.com/en-us/build) brings developers and experts from product teams across the company together. A wide range of technologies and application patterns are covered. This event does not replace Build, and if that’s your jam, we encourage you to do that, too! 
 
-* **Is this event ADA accessible?**
-
-    More info coming soon!
-
-## OFFICIAL ATTENDEES
-
-* **How do I book travel?**
-
-    More info coming soon!
-
-* **Where should I stay?**
-
-    More info coming soon!
-
-* **Will I get to try HoloLens 2?**
-
-    Yes, we will offer time with HoloLens 2 throughout both days, as well as at our networking reception. We expect lines and encourage you to check out the mixed reality sessions happening nearby.  
-
-* **Can I preorder HoloLens 2 at Dev Days?**
-
-    Preorder pricing and options for HoloLens 2 can be found at www.hololens.com.
-
-* **Can I preorder Azure Kinect DK at Dev Days?**
-
-    Preorder pricing and options for Azure Kinect DK can be found at www.azure.com/kinect
-
 * **How much does the event cost?**
 
     This event is free to attend.
@@ -79,11 +51,7 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
 * **What should I expect?**
 
-    At Mixed Reality Dev Days, you’ll have a chance to code alongside our developers, demo the latest in our portfolio, and learn about the science behind our tech, plus best practices and hard lessons we’ve learned over the years.
-
-    Sessions include technical, strategic and visionary topics. Here’s what’s on the schedule so far:
-
-    [SCHEDULE] - Coming soon!
+    Mixed Reality Dev Days has a heavy developer focus (around 75%) supplemented by business development and strategic insights (around 25%).  You’ll have a chance to code alongside our developers, demo the latest in our portfolio, and learn about the science behind our tech, plus best practices and lessons we learned over the years.
 
 * **Where can I learn more?**
 
@@ -92,7 +60,3 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 * **Who should I contact to learn more?**
 
     For more information please email DevEvent@microsoft.com
-
-* **Can I share this?**
-
-    Yes! We’d love for you to share why you’re excited and what you’re building and learning during the event with #MRDevDays (unless we specify confidential content 😉, but we’ll be sure to note this upfront).
