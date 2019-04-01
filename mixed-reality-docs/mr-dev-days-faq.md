@@ -27,10 +27,6 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
     We have received high interest in this event and have a maximum capacity for the event. For this reason, we’re asking that all developers interested complete this [application](https://aka.ms/MRDevDayApplication) so that we learn more about what you’re working on and why you’re interested.
 
-* **I am in MRPP (Mixed Reality Partner Program). Can I send my team?**
-
-    We’re glad you are interested in Mixed Reality Dev Days! Due to high interest and limited space, we encourage you to select one team member to apply, namely one of your mixed reality engineers, developers or designers. If there’s room for more of your team to attend, we will be sure to let you know. If you have any questions, please email [Nancy Li](mailto:nancli@microsoft.com).
-
 * **I was told I should attend.  How do I apply?**
 
     Please complete this [application](https://aka.ms/MRDevDayApplication) by noon Pacific Time (PST), April 5, 2019.
@@ -52,6 +48,10 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 * **What should I expect?**
 
     Mixed Reality Dev Days has a heavy developer focus (around 75%) supplemented by business development and strategic insights (around 25%).  You’ll have a chance to code alongside our developers, demo the latest in our portfolio, and learn about the science behind our tech, plus best practices and lessons we learned over the years.
+
+* **Do I need to bring my own developer machine?**
+
+    Yes, each participant should bring their own developer PCs installed with the software, tools and IDEs you’re using for your environment.
 
 * **Where can I learn more?**
 
