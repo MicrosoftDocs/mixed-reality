@@ -14,6 +14,7 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 Now through noon PST on April 5, 2019, you can [apply to the first-ever **Mixed Reality Dev Days**](https://aka.ms/MRDevDayApplication)
 
 With the [announcements](https://blogs.microsoft.com/blog/2019/02/24/microsoft-at-mwc-barcelona-introducing-microsoft-hololens-2/) Microsoft recently made in the mixed reality and cloud space, we’re thrilled to open applications for **Mixed Reality Dev Days**, a chance to build the skills, network, and ideas you need to take your mixed reality applications to the next level. Mixed Reality Dev Days will offer attendees a chance to code alongside our engineering teams, learn and test the latest in our portfolio, and connect with a community of developers like you who are leading a new era of mixed reality applications.  </br>
+
 We’ll also hold sessions led by our teams to dive deeper on what’s new and share tips for getting started. </br>
 
 Session topics* include:
@@ -37,10 +38,12 @@ Attendees will also have a chance to get hands-on with our technology at an even
 
 * **This is an application stating interest in the event.**  This does not guarantee attendance.
 
-* **We will begin reviewing applications on April 1, 2019 and <u>will let all applicants know acceptance or not starting on April 5th via email.</u>**
+* **We will be continiously reviewing applications and <u>will let all applicants know acceptance or not starting on April 5th via email.</u>**
 
 * **We do not have hard-and-fast rules about what will get someone into the event.**  Our aim is to have a wide range of mixed reality developers and designers as our audience, and any info you can provide below will help us to make sure that happens.
 
 * **This event is free to attend.** Attendees will be responsible for travel expenses (airfare and transportation, hotel, meals).
 
-Thanks for your interest! We can’t wait. If you’d like to learn more or have any questions, you can find our [FAQ here](mr-dev-days-faq.md). You can also contact our [Mixed Reality Developer Relations team](mailto:DevEvent@microsoft.com) with questions.
+Thanks for your interest! We can’t wait. 
+
+If you’d like to learn more or have any questions, you can find our [FAQ here](mr-dev-days-faq.md). You can also contact our [Mixed Reality Developer Relations team](mailto:DevEvent@microsoft.com) with questions.
