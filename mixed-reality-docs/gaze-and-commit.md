@@ -50,6 +50,7 @@ Eye gaze and commit is available on HoloLens v2, but is not the primary input mo
    - Visual affordances
    - Button design
    - Etc...
+   - Test
 
 ## Gaze and dwell (Jenny?)
  - Describe when this might be a viable alternative to gaze and commit
