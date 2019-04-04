@@ -14,7 +14,7 @@ Direct manipulation is an input model that involves touching holograms directly 
 A key ingredient that makes direct manipulation easy to learn is that it is affordance-based. There are no symbolic gestures to teach users. All interactions should be built around a visual element that can be touched or grabbed.
 
 ## Device support
-Direct manipulation is a primary input model on HoloLens 2, utilizing the new articulated hand tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended a primary means of interaction outside of object manipulation.  The direct manipluation is not available on HoloLens v1.
+Direct manipulation is a primary input model on HoloLens 2, utilizing the new articulated hand tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended a primary means of interaction outside of object manipulation.  Direct manipluation is not available on HoloLens v1.
 
 ## Button design guidelines (Tony)
 - Visual affordances (fingertip cursor, hover feedback, bounding boxes that light up, etc)
