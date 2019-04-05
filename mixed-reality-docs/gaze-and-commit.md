@@ -147,17 +147,12 @@ Do not force users to perform specific eye movements (gaze gestures) to trigger 
 We distinguish two types of imprecisions which are noticeable to users: Offset and Jitter. The easiest way to address offsets is to provide sufficiently large targets to interact with (> 2° in visual angle – as reference: your thumbnail is about 2° in visual angle when you stretch out your arm (1)). This leads to the following guidance:
     - Do not force users to select tiny targets: Research has shown that if targets are sufficiently large (and the system is designed well), users describe the interaction as effortless and magical. If targets become too small, users describe the experience as fatiguing and frustrating.
 
-
-
-
----
-<TODO>
+### Todo
   - Talk about design considerations for 
     - Visual feedback
     - Button design
     - Dwell design
     - ...
----
   
 ## Gaze and dwell (Jenny?)
  - Describe when this might be a viable alternative to gaze and commit
