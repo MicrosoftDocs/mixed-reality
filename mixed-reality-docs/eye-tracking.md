@@ -25,6 +25,17 @@ For eye tracking to work accurately, each user is required to go through an Eye 
 
 > More information coming soon!
 
+## Eye Tracking API
+The _Eye Tracking API_ will be accessible through: `Windows.Perception.People.EyesPose` and will include the following:
+
+| Variable | Data Type |  Description |
+|---|---|---|
+| LastUpdateTimestamp | `DateTimeOffset` | Returns last timestamp when the ET signal was updated. | 
+| Gaze | `Windows.Perception.Spatial.SpatialRay?` | Ray representing the gaze based on a combination of left and right eye. |  
+| Gaze.Origin  | `System.Numerics.Vector3`  | Single eye gaze origin. |  
+| Gaze.Direction  | `System.Numerics.Vector3`  | Single eye gaze direction. | 
+| IsCalibrationValid  | `bool`  | Indicates whether the user is calibrated. |  
+
 
 ## Use cases
 Eye tracking enables applications and the Shell to track where the user is looking in real time. This will enable a whole new level of context and human understanding within the Holographic experience. This section describes the types of new interactions that become possible with eye tracking.
