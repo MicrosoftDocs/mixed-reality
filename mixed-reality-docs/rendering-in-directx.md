@@ -347,7 +347,7 @@ Loop on the set of camera poses in the prediction, and render to each camera in 
 
 **Set up your rendering pass**
 
-Windows Mixed Reality uses stereoscopic rendering to enhance the illusion of depth and to render stereoscopically, so both the left and the right display are active. With stereoscopic rendering there is an offset between the two displays, which the brain can reconcile as actual depth. This section covers stereoscopic rendering using [instancing](performance-recommendations-for-hololens-apps.md), using code from the Windows Holographic app template.
+Windows Mixed Reality uses stereoscopic rendering to enhance the illusion of depth and to render stereoscopically, so both the left and the right display are active. With stereoscopic rendering there is an offset between the two displays, which the brain can reconcile as actual depth. This section covers stereoscopic rendering using instancing, using code from the Windows Holographic app template.
 
 Each camera has its own render target (back buffer), and view and projection matrices, into the holographic space. Your app will need to create any other camera-based resources - such as the depth buffer - on a per-camera basis. In the Windows Holographic app template, we provide a helper class to bundle these resources together in DX::CameraResources. Start by setting up the render target views:
 

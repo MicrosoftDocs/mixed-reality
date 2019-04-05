@@ -150,10 +150,11 @@ Each game or application targeting an existing HMD will have a set of inputs tha
 
 Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you are targeting, there is a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you are likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](performance-recommendations-for-immersive-headset-apps.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There is an extensive discussion of performance available at [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md).
+Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There is an extensive discussion of performance available at [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](performance-recommendations-for-unity.md).
 
 ## See also
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
-* [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
 * [Add Xbox Live support to Unity for UWP](https://docs.microsoft.com/windows/uwp/xbox-live/get-started-with-partner/partner-add-xbox-live-to-unity-uwp)

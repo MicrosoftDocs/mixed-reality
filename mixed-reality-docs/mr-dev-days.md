@@ -9,30 +9,41 @@ ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
 
-# Mixed Reality Dev Days
+# Mixed Reality Dev Days - Applications Now Open!
 
-## The vision:  
-With the [announcements](https://blogs.microsoft.com/blog/2019/02/24/microsoft-at-mwc-barcelona-introducing-microsoft-hololens-2/) Microsoft recently made in the mixed reality and cloud space, we want to invite you—an amazing, unprecedented community of mixed reality developers—to come work alongside us, meet Microsoft developers and program managers who brought these devices and services to life, and learn about our developer roadmap. </br>
-At Mixed Reality Dev Days, you’ll build the skills, network, and ideas you need to take your mixed reality applications to the next level. Mixed Reality Dev Days will offer a chance to: 
-* Code alongside our engineering teams.
-* Learn and test the latest in our portfolio: HoloLens 2, new Azure mixed reality services, Azure Kinect Developer Kit, and more! 
-* Connect with developers like you who are leading a new era of mixed reality applications. </br>
-Dev Days is designed for you—your ideas, your feedback. We would love to get your input, learn more about you, your customers and work, and how we can better work alongside you. As we move into this third wave of computing, one based on open principles, Microsoft is a trusted partner who values your feedback. Dev Days is one of the first of many opportunities to build that relationship with you.
+Now through noon PST on April 5, 2019, you can [apply to the first-ever **Mixed Reality Dev Days**](https://aka.ms/MRDevDayApplication)
 
-## When: 
-May 2nd and 3rd, 2019
-</br>
-## Which one should I attend? Microsoft Build or MR Dev Days?
-If you are an Mixed Reality developer looking to get training on our developer platform, tools, services and devices, we would encourage you to join us at the Dev Days. While some elements may be repeated at Build, developer content there will be mostly showcasing our commercial partners and solutions they have built.
-</br>
-## Where: 
-Microsoft's Redmond Campus, exact location details to come
-</br>
-## Cost: 
-There will be a ticket cost; we are still working on what the final price will be. Stay tuned for updates. 
-</br>
-## How to request an invite:  
-Currently we are asking everyone to sign up for our [developer program](https://aka.ms/IWantMR). When we have the invite process in place, we will send an email to all members of the dev program to request an invite. Once you request an invite, we will send you a form to complete – it’s a chance for you to share a little more about you and your mixed reality work: what cool projects you’ve made, what you’d like to make, where you’re active, and what communities you’re a part of.
-</br>
-## Who should request an invite?  
-Short answer: you! We’re passionate about welcoming a diverse developer community to Mixed Reality Dev Days. We’re also ensuring this event brings together developers from our large customers and partners, large studios, small studios, and individual developers.
+With the [announcements](https://blogs.microsoft.com/blog/2019/02/24/microsoft-at-mwc-barcelona-introducing-microsoft-hololens-2/) Microsoft recently made in the mixed reality and cloud space, we’re thrilled to open applications for **Mixed Reality Dev Days**, a chance to build the skills, network, and ideas you need to take your mixed reality applications to the next level. Mixed Reality Dev Days will offer attendees a chance to code alongside our engineering teams, learn and test the latest in our portfolio, and connect with a community of developers like you who are leading a new era of mixed reality applications.  </br>
+
+We’ll also hold sessions led by our teams to dive deeper on what’s new and share tips for getting started. </br>
+
+Session topics* include:
+* [**HoloLens 2**]()
+* [**Azure Kinect DK**]()
+* **New mixed reality services** like [**Azure Spatial Anchors**]()
+* **Azure essentials**, from computer vision, to IoT, to migration…and more!
+* **Developer tools** from partners and our own portfolio, like Altspace SDK and Mixed Reality Capture Studio tools
+* **Business insights** including target markets, industry momentum and our Mixed Reality Partner Program
+* **The science behind the tech**, like eye tracking and depth sensors </br>
+
+*Sessions and topics subject to change. </br>
+
+Attendees will also have a chance to get hands-on with our technology at an evening reception to close out Day 1.
+
+## [**APPLY HERE**](https://aka.ms/MRDevDayApplication)
+
+# IMPORTANT NOTES
+
+* **Applications will be open until noon on April 5, 2019.**  If we do not fill all the spots from this first wave of applicants, we may open it back up for a second wave.
+
+* **This is an application stating interest in the event.**  This does not guarantee attendance.
+
+* **We will be continiously reviewing applications and <u>will let all applicants know acceptance or not starting on April 5th via email.</u>**
+
+* **We do not have hard-and-fast rules about what will get someone into the event.**  Our aim is to have a wide range of mixed reality developers and designers as our audience, and any info you can provide below will help us to make sure that happens.
+
+* **This event is free to attend.** Attendees will be responsible for travel expenses (airfare and transportation, hotel, meals).
+
+Thanks for your interest! We can’t wait. 
+
+If you’d like to learn more or have any questions, you can find our [FAQ here](mr-dev-days-faq.md). You can also contact our [Mixed Reality Developer Relations team](mailto:DevEvent@microsoft.com) with questions.
