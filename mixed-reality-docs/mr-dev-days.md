@@ -9,9 +9,9 @@ ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
 
-# Mixed Reality Dev Days - Applications Now Open!
+# Mixed Reality Dev Days
 
-Now through noon PST on April 5, 2019, you can [apply to the first-ever **Mixed Reality Dev Days**](https://aka.ms/MRDevDayApplication)
+Applications are currently closed and under review. Thanks for your interest!
 
 With the [announcements](https://blogs.microsoft.com/blog/2019/02/24/microsoft-at-mwc-barcelona-introducing-microsoft-hololens-2/) Microsoft recently made in the mixed reality and cloud space, we’re thrilled to open applications for **Mixed Reality Dev Days**, a chance to build the skills, network, and ideas you need to take your mixed reality applications to the next level. Mixed Reality Dev Days will offer attendees a chance to code alongside our engineering teams, learn and test the latest in our portfolio, and connect with a community of developers like you who are leading a new era of mixed reality applications.  </br>
 
@@ -30,7 +30,7 @@ Session topics* include:
 
 Attendees will also have a chance to get hands-on with our technology at an evening reception to close out Day 1.
 
-## [**APPLY HERE**](https://aka.ms/MRDevDayApplication)
+
 
 # IMPORTANT NOTES
 
