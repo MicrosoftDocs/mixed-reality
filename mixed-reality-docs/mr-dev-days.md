@@ -29,7 +29,7 @@ Session topics* include:
 *Sessions and topics subject to change. </br>
 
 Attendees will also have a chance to get hands-on with our technology at an evening reception to close out Day 1.
-
+</br>
 
 
 # IMPORTANT NOTES
@@ -47,3 +47,28 @@ Attendees will also have a chance to get hands-on with our technology at an even
 Thanks for your interest! We can’t wait. 
 
 If you’d like to learn more or have any questions, you can find our [FAQ here](mr-dev-days-faq.md). You can also contact our [Mixed Reality Developer Relations team](mailto:DevEvent@microsoft.com) with questions.
+
+</br>
+
+# Hotel Suggestions
+
+* **Seattle Marriott Redmond**
+  7401 164th Avenue NE
+  Redmond, WA 98052
+  _Average Rate: $219/night_
+* **Residence Inn Marriott Redmond**
+  7575 164th Ave. N.E.
+  Redmond, WA 98052
+  _Average Rate: $219_
+* **Hyatt House Seattle Redmond**
+  15785 Bear Creek Pkwy Ne
+  Redmond, WA 98052
+  _Average Rate: $239_
+* **Hyatt Regency Bellevue**
+  900 Bellevue Way NE
+  Bellevue, WA 98004
+  _Average Rate: $289/night_
+* **Courtyard Seattle Kirkland**
+  11215 NE 124th St
+  Kirkland, WA 98004
+  _Average Rate: $219_
