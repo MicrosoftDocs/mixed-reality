@@ -52,23 +52,23 @@ If you’d like to learn more or have any questions, you can find our [FAQ here]
 
 # Hotel Suggestions
 
-* **Seattle Marriott Redmond**
-  7401 164th Avenue NE
-  Redmond, WA 98052
+* **Seattle Marriott Redmond**</br>
+  7401 164th Avenue NE</br>
+  Redmond, WA 98052</br>
   _Average Rate: $219/night_
-* **Residence Inn Marriott Redmond**
-  7575 164th Ave. N.E.
-  Redmond, WA 98052
+* **Residence Inn Marriott Redmond**</br>
+  7575 164th Ave. N.E.</br>
+  Redmond, WA 98052</br>
   _Average Rate: $219_
-* **Hyatt House Seattle Redmond**
-  15785 Bear Creek Pkwy Ne
-  Redmond, WA 98052
+* **Hyatt House Seattle Redmond**</br>
+  15785 Bear Creek Pkwy Ne</br>
+  Redmond, WA 98052</br>
   _Average Rate: $239_
-* **Hyatt Regency Bellevue**
-  900 Bellevue Way NE
-  Bellevue, WA 98004
+* **Hyatt Regency Bellevue**</br>
+  900 Bellevue Way NE</br>
+  Bellevue, WA 98004</br>
   _Average Rate: $289/night_
-* **Courtyard Seattle Kirkland**
-  11215 NE 124th St
-  Kirkland, WA 98004
+* **Courtyard Seattle Kirkland**</br>
+  11215 NE 124th St</br>
+  Kirkland, WA 98004</br>
   _Average Rate: $219_
