@@ -30,7 +30,7 @@ Here's an outline of the available Interaction design articles and which device 
 </th>
  
 <tr>
-<td> <a href="TBD-fill-in-file-name.md">Direct manipulation (near interaction)</a></td><td style="text-align: center;">❌ Not supported</td><td style="text-align: center;">✔️ Recommended (first)</td><td>✖️ Alternate option</td>
+<td> <a href="direct-manipulation.md">Direct manipulation (near interaction)</a></td><td style="text-align: center;">❌ Not supported</td><td style="text-align: center;">✔️ Recommended (first)</td><td>✖️ Alternate option</td>
 </tr><tr>
 <td> <a href="TBD-fill-in-file-name.md">Pointing and commit (far interaction)</a></td><td style="text-align: center;">❌ Not supported</td><td style="text-align: center;">✔️ Recommended (second)</td><td>✔️ Recommended</td>
 </tr><tr>
