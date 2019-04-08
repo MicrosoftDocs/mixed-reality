@@ -32,6 +32,9 @@ Direct manipulation is a primary input model on HoloLens 2, utilizing the new ar
 - Sizing considerations
 - Smoothing the object's movement
 
+## Object manipulation considerations for motion controllers (Tony)
+Explain what's unique to motion controllers regarding object manipulation. What do devs need to know. 
+
 ## 2D slate design guidelines (Tony)
 - Goal is to behave like a touchscreen
   - Touch buttons with fingertip
