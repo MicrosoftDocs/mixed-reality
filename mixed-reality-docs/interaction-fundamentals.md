@@ -20,11 +20,9 @@ Here's an outline of the available Interaction design articles and which device 
 <br>
 
 <table>
-
 <th>
 <tr>
-
-<td style="width:150px;"><strong>Input</strong></td>
+<td style="width:150px;"><strong>Input models</strong></td>
 <td style="width:150px; text-align: center;"><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
 <td style="width:150px; text-align: center;"><strong>HoloLens 2</strong></td>
 <td style="width:150px; text-align: center;"><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
@@ -32,40 +30,14 @@ Here's an outline of the available Interaction design articles and which device 
 </th>
  
 <tr>
-<td> <a href="gestures.md">Articulated hands</a></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td><td></td>
-
+<td> <a href="TBD-fill-in-file-name.md">Direct manipulation (near interaction)</a></td><td style="text-align: center;">:x: Not supported</td><td style="text-align: center;">✔️ Recommended (first)     </td><td>:heavy_plus_sign: Alternate option</td>
 </tr><tr>
-<td> <a href="gaze-targeting.md">Eye targeting</a></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td><td style="text-align: center;"></td>
+<td> <a href="TBD-fill-in-file-name.md">Pointing and commit (far interaction)</a></td><td style="text-align: center;">:x: Not supported</td><td style="text-align: center;">✔️ Recommended (second)</td><td>✔️ Recommended</td>
 </tr><tr>
-<td> <a href="gaze-targeting.md">Gaze targeting</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="TBD-fill-in-file-name.md">Gaze and commit</a></td><td style="text-align: center;">✔️ Recommended</td><td style="text-align: center;">✔️ Recommended (third)</td><td>:heavy_plus_sign: Alternate option</td>
 </tr><tr>
-<td> <a href="gestures.md">Gestures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
-</tr><tr>
-<td> <a href="voice-design.md">Voice design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<td> Gamepad</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr>
-<tr>
-<td> <a href="motion-controllers.md">Motion controllers</a></td><td></td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td>
-
-</tr>
-<th>
-<tr>
-<td style="width:150px;"><strong>Perception and spatial features</strong></td>
-<td style="width:150px; text-align: center;"><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-<td style="width:150px; text-align: center;"><strong>HoloLens 2</strong></td>
-<td style="width:150px; text-align: center;"><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
-</tr>
-</th>
-<tr>
-
-<td> <a href="spatial-sound-design.md">Spatial sound design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
-</tr><tr>
-<td> <a href="spatial-mapping-design.md">Spatial mapping design</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
-</tr><tr>
-<td> <a href="hologram.md">Holograms</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td></td>
-</tr>
-
+<td> <a href="voice-design.md">Voice</a></td><td style="text-align: center;">✔️ Recommended</td><td style="text-align: center;">✔️ Recommended</td><td>✔️ Recommended</td>
+ </tr>
 </table>
 
 ## The user is the camera
