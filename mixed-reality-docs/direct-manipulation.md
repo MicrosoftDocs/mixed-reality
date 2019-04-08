@@ -30,15 +30,6 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
 </tr>
 </table>
 
-<table style="width: 100%;">
-<th style="width: 55%;">Feature</th><th style="width: 15%;"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width: 15%;">HoloLens 2</th><th> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
- 
-<tr>
-<td>Direct manipulation (near interaction)</td><td>❌ Not supported</td><td>✔️ Recommended (first)</td><td>➕ An alternate option but <a href="TBD-fill-in-file-name.md">Pointing and commit (far interaction)</a> is recommended</td>
-</tr>
-</table>
-
-
 Direct manipulation is a primary input model on HoloLens 2, utilizing the new articulated hand tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended a primary means of interaction outside of object manipulation.  Direct manipluation is not available on HoloLens v1.
 
 ## Button design guidelines (Tony)
