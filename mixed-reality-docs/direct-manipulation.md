@@ -23,7 +23,7 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
 <td style="width:225px; text-align: center;"><strong>HoloLens 2</strong></td>
 <td style="width:25px; text-align: center;"><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
-</th>
+/th>
  
 <tr>
 <td>Direct manipulation (near interaction)</td><td style="text-align: center;">❌ Not supported</td><td style="text-align: center;">✔️ Recommended</td><td>➕ An alternate option but <a href="TBD-fill-in-file-name.md">Pointing and commit (far interaction)</a> is recommended</td>
@@ -64,9 +64,23 @@ Explain what's unique to motion controllers regarding object manipulation. What 
 ## Visual comfort guidelines (Tony / Thom)
  - What distance is comfortable for near manipulation
 
-## Optimizing with eye tracking (Sophie)
- - Discuss how direct manipulation can be improved when ET is avaialble
- - Possible examples:
-    - Alowing "close" grabs
-    - Multiple object disambiguation
-    - Targetting when throwing things
+## Optimizing with eye tracking
+Direct manipulation can feel magical if it works as intended, but can also quickly become frustrating if you can’t move your hand anywhere anymore without unintentionally triggering a hologram.
+Eye tracking can potentially help in better identifying what the user’s intent is. 
+
+1.	**When**: 
+Reduce falsely triggering a manipulation response. Eye tracking allows for better understanding what a user is currently engaged with. 
+For example, imagine you are reading through a holographic (instructional) text when reaching over to grab you real-world work tool.
+By doing so, you accidently move your hand across some interactive holographic buttons that you hadn't even noticed before (maybe it even was outside of the user's Field-of-View).
+Long story short: If the user hasn't looked at a hologram for a while, yet a touch or grasp event has been detected for it, it is likely that the user wasn't actually intending to interact with that hologram. 
+
+2.	**Which one**: 
+Aside from addressing false positive activations, another example includes better identifying which holograms to grab or poke as the precise intersection point may not be clear from your perspective especially if several holograms are positioned close to each other. 
+While eye tracking on HoloLens 2 has a certain limitation on how accurately it can determine you eye gaze, this can still be very helpful for near interactions due to depth disparity when interacting with hand input. 
+This means that it is sometimes difficult to determine whether your hand is behind or in front of a hologram to precisely grab a manipulation widget for example.
+
+3.	**Where to**: 
+Use information about what a user is looking at with quick throwing gestures. 
+Grab a hologram and roughly toss it toward your intended destination. 
+While this may sometimes work just fine, quickly performing hand gestures may result in highly inaccurate destinations.
+This is where eye tracking could help out to lean the hand throwing vector back to your intended position.
