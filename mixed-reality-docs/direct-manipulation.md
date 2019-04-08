@@ -26,7 +26,7 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
 </th>
  
 <tr>
-<td>Direct manipulation (near interaction)</td><td style="text-align: center;">❌ Not supported</td><td style="text-align: center;">✔️ Recommended (first)</td><td>➕ An alternate option but <a href="TBD-fill-in-file-name.md">Pointing and commit (far interaction)</a> is recommended</td>
+<td>Direct manipulation (near interaction)</td><td style="text-align: center;">❌ Not supported</td><td style="text-align: center;">✔️ Recommended</td><td>➕ An alternate option but <a href="TBD-fill-in-file-name.md">Pointing and commit (far interaction)</a> is recommended</td>
 </tr>
 </table>
 
