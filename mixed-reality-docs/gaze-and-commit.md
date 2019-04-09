@@ -42,121 +42,66 @@ Eye gaze and commit is available on HoloLens v2, but is not the primary input mo
   - Improving targeting behaviors
   - Cursor visuals and behavior
 
-## Eye Gaze Design Guidelines (Sophie)
-Building an interaction that takes advantage of fast moving eye targeting can be challenging. 
-In this section, we summarize the key advantages and challenges to take into account when designing your app. 
+## Eye gaze design guidelines
+With HoloLens 2, we have the great opportunity to make _gaze & commit_ faster and more comfortable by using eye gaze instead of head gaze. 
+However, eye gaze behaves very differently to head gaze in certain ways and hence comes with a number of unique challenges.
+In [Eye Gaze Design Guidelines](eye-tracking.md#eye-gaze-design-guidelines), we summarize general advantages and challenges to take into account when using eye tracking as an input medium in your holographic app. 
+In this section, we focus on the specific design considerations for _eye gaze & commit_.
+First, our eyes move incredibly fast and thus are great at quickly targeting across the view.
+This makes eye gaze ideal for quick _gaze & commit_ actions especially when combined with fast commits such as an air-tap or button press. 
 
-### Benefits of Eye Gaze Input
+- **Do not show a cursor**: 
+While it is nearly impossible to interact without a cursor when using head gaze, the cursor becomes quickly distracting and annoying when using eye gaze.
+Instead of relying on a cursor to inform the user whether eye tracking is working and has correctly detected the currently looked at target, use subtle visual highlights (more details below).
 
-- **High speed pointing.** 
-The eye muscle is the fastest reacting muscle in our body. 
+- **Strive for subtle blended hover feedback**: 
+What seems great visual feedback for head gaze can result in terrible, overwhelming experiences using eye gaze.
+Remember that your eyes are enormously fast, quickly darting across points in your field-of-view. 
+Quick sudden highlight changes (on/off) may result in flickery feedback when looking around. 
+So, when providing hover feedback, we recommend using a smoothly blended-in highlight (and blended-out when looking away). 
+This means that at first you would barely notice the feedback when looking at a target.
+Over the course of 500-1000 ms the highlight would increase in intensity.
+While novice users could keep looking at the target to ensure that the system has correctly determined the focused target, expert users could quickly _gaze & commit_ without waiting until the feedback is at its full intensity. 
+In addition, we also recommend using a blend-out when fading out the hover feedback. 
+Research has shown that quick motion and contrast changes are very noticeable in your peripheral vision (so, the area of your visual field where you are _not_ looking). 
+The fade-out doesn't have to be as slow as the blend-in. 
+This is only critical when you have high contrast or color changes for your highlight.
+If the hover feedback was pretty subtle to begin with, you probably won't notice a difference.
 
-- **Low effort.** 
-Barely any physical movements are necessary. 
-
-- **Implicitness.** 
-Often described by users as "mind reading", information about a user's eye movements lets the system know which target the user plans to engage with. 
-
-- **Alternative input channel.** 
-Eye gaze can provide a powerful supporting input for hand and voice input building on years of experience from users based on their hand-eye coordination.
-
-- **Visual attention.** 
-Another important benefit is the possibility to infer what a user's is paying attention to. 
-This can help in various application areas ranging from more effectively evaluating different designs to aiding in smarter User Interfaces and enhanced social cues for remote communication.
-
-In a nutshell, using eye gaze as an input potentially offers a fast and effortless contextual signal - This is particularly powerful in combination with other inputs such as *voice* and *manual* input to confirm the user's intent.
-
-
-### Challenges of Eye Gaze Input
-With lots of power, comes lots of responsibility: 
-While eye gaze can be used to create magical user experiences feeling like a superhero, it is also important to know what it is not good at to account for this appropriately. 
-In the following, we discuss some *challenges* to take into account and how to address them when working with eye gaze input: 
-
-- **Your eye gaze is "always on"** 
-The moment you open your eye lids, your eyes start fixating things in your environment. 
-Reacting to every look you make and potentially accidentally issuing actions because you looked at something for too long would result in a terrible experience!
-This is why we recommend combining eye gaze with a *voice command*, *hand gesture*, *button click* or extended dwell to trigger the selection of a target.
-This solution also allows for a mode in which the user can freely look around without the overwhelming feeling of involuntarily triggering something. 
-This issue should also be taken into account when designing visual and auditory feedback when merely looking at a target.
-Do not overwhelm the user with immediate pop-out effects or hover sounds. 
-Subtlety is key! 
-We will discuss some best practices for this further below when talking about design recommendations.
-
-- **Observation vs. Control** 
-Imagine you want to precisely align a photograph at your wall. 
-You look at its borders and its surroundings to see if it aligns well. 
-Now imagine how you would do that when at the same time you want to use your eye gaze as an input to move the picture. 
-Difficult, isn't it? 
-This describes the double role of eye gaze when it is required both for input and control. 
-
-- **Leave before Click:** 
-For quick target selections, research has shown that a user's eye gaze may move on before concluding a manual click (e.g., an airtap). 
-Hence, special attention must be paid to synchronizing the fast eye gaze signal with slower control input (e.g., voice, hands, controller).
-
-- **Small targets:**
-Do you know the feeling when you try to read text that is just a bit too small to comfortably read? 
-This straining feeling on your eyes that cause you to feel tired and worn out because you try to readjust your eyes to focus better?
-This is a feeling you may invoke in your users when forcing them to select too small targets in your app using eye targeting.
-For your design, to create a pleasant and comfortable experience for your users, we recommend that targets should be at least 2° in visual angle, preferably larger.
-
-- **Ragged Eye Gaze Movements** 
-Our eyes perform rapid movements from fixation to fixation. 
-If you look at scan paths of recorded eye movements, you can see that they look ragged. 
-Your eyes move quickly and in spontaneous jumps in comparison to *head gaze* or *hand motions*.  
-
-- **Tracking Reliability:**
-Eye tracking accuracy may degrade a little in changing light as your eye adjust to the new conditions.
-While this should not necessarily affect your app design, as the accuracy should be within the above mentioned limitation of 2°. 
-It may mean that the user has to run another calibration. 
+- **Look out for synchronizing gaze and commit signals**:
+The synchronization of input signals may be less of a challenge for simple _gaze & commit_, so, don't worry! 
+It is something to look out for in case you want to use more complicated _commit_ actions though that may involve long voice commands or complicated hand gestures. 
+Imagine you look at target and utter a long voice command. 
+Taken into account the time that you needed to speak and the time that the system needed to detect what you said, your eye gaze as usually long moved on to some new target in the scene.
+Hence, either make your users aware that they may need to keep looking at a target until the command has been recognized or handle the input in a way to determine the onset of the command and what the user had been looking at back then.
 
 
-### Design Recommendations
-In the following, we list specific design recommendations based on the described advantages and challenges for eye gaze input:
-
-1. **Eye Gaze != Head gaze:**
-    - **Consider whether fast yet ragged eye movements fit your input task:** 
-While our fast and ragged eye movements are great to quickly select targets across our Field of View, it is less applicable for tasks that require smooth input trajectories (e.g., for drawing or encircling annotations). 
-In this case, hand or head pointing should be preferred.
   
-    - **Avoid attaching something directly to the user’s eye gaze (e.g., a slider or cursor).**
-In case of a cursor, this may result in the “fleeing cursor” effect due to slight offsets in the projected eye gaze signal. 
-In case of a slider, it conflicts with the double role of controlling the slider with your eyes while also wanting to check whether the object is at the correct location. 
-In a nutshell, users may quickly feel overwhelmed and distracted, especially if the signal is imprecise for that user. 
-  
-2. **Combine eye gaze with other inputs:** 
-The integration of Eye Tracking with other inputs, such as hand gestures, voice commands or button presses, serves several advantages:
-    - **Allow for free observation:** 
-    Given that the main role of our eyes is to observe our environment, it is important to allow users to look around without triggering any (visual, auditory, ...) feedback or actions. 
-    Combining ET with another input control allows for smoothly transitioning between ET observation and input control modes.
-  
-    - **Powerful context provider:** 
-Using information about where the user is looking at while uttering a voice command or performing a hand gesture allows for effortlessly channeling the input across the field-of-view. Examples include: “Put that there” to quickly and fluently select and position a hologram across the scene by simply looking at a target and destination. 
+## Gaze and dwell
+There are lots of different ways to confirm a _commit_ such as combining gaze with _voice_ or _hand gestures_.
+There are several user scenarios though, in which users' hands may either be busy or cannot be tracked (e.g., factory workers with oversized heavy duty gloves). 
+Voice input may also not be available due to user preferences, social context or loud environments.
+As a fallback solution another option to perform a _commit_ is simply to keep staring at a UI element which we refer to as _dwell_.
+A _dwell_ can be performed with either head or eye gaze. 
+The idea is simple and can be broken down in the following phases: 
+1. User starts gazing at a holographic button
 
-    - **Need for synchronizing multimodal inputs (“leave before click” issue):** 
-    Combining rapid eye movements with more complex additional inputs (e.g., long voice commands or hand gestures) bears the risk of moving on with your eye gaze before finishing the additional input command. 
-    Hence, if you create your own input controls (e.g., custom hand gestures), make sure to log the onset of this input or approximate duration to correlate it with what a user had fixated on in the past.
-    
-3. **Subtle feedback for ET input:**
-It is useful to provide feedback if a target is looked at (to indicate that the system is working as intended) but should be kept subtle. 
-This may include slowly blending in/out visual highlights or perform other subtle target behaviors, such as slow motions (e.g., slightly increasing the target) to indicate that the system correctly detected that the user is looking at a target, however, without unnecessarily interrupting the user’s current workflow. 
+2. After a brief onset delay (e.g., 150 ms) some visual feedback animation is started. The onset delay is used to avoid overwhelming the user by immediately popping up feedback all the time.
+    - For _eye gaze_, we recommend the following for the design of the visual dwell feedback:
+      - **Blend it**: Smoothly blend in the feedback from barely visible at first to fully opaque. This makes the feedback less distracting and overwhleming and nicely aligns with the confidence that the system has that the user really wants to engage with this button.
+      - **Pull it in**: Create a visual feedback than decreases in size and moves towards the center of the target, pulling in the user's visual attention. 
 
-4. **Avoid enforcing unnatural eye movements as input:** 
-Do not force users to perform specific eye movements (gaze gestures) to trigger actions in your app.
+3. After a pre-defined dwell duration (e.g., 800 ms), the dwell completes and an associated event is triggered.
+    - Provide some finalizing auditory or visual feedback to really bring home that the item got selected now.
 
-5. **Account for imprecisions:** 
-We distinguish two types of imprecisions which are noticeable to users: Offset and Jitter. The easiest way to address offsets is to provide sufficiently large targets to interact with (> 2° in visual angle – as reference: your thumbnail is about 2° in visual angle when you stretch out your arm (1)). This leads to the following guidance:
-    - Do not force users to select tiny targets: Research has shown that if targets are sufficiently large (and the system is designed well), users describe the interaction as effortless and magical. If targets become too small, users describe the experience as fatiguing and frustrating.
+![Dwell states](images/eyes_dwellstate_recommendation.png)
 
-### Todo
-  - Talk about design considerations for 
-    - Visual feedback
-    - Button design
-    - Dwell design
-    - ...
-  
-## Gaze and dwell (Jenny?)
- - Describe when this might be a viable alternative to gaze and commit
-- Design guidelines
+
+> More info to come! (Jenny?)
+<!-- 
+- Describe when this might be a viable alternative to gaze and commit
+- Design guidelines 
+-->
 
 ## Composite gestures (Jenny?)
 - Move from "composite gestures" section here: https://docs.microsoft.com/en-us/windows/mixed-reality/gestures#composite-gestures
