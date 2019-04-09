@@ -144,7 +144,9 @@ We distinguish two types of imprecisions which are noticeable to users: Offset a
 
 
 ## Use cases
-Eye tracking enables applications and the Shell to track where the user is looking in real time. This will enable a whole new level of context and human understanding within the Holographic experience. This section describes the types of new interactions that become possible with eye tracking.
+Eye tracking enables applications to track where the user is looking in real time. 
+This will enable a whole new level of context and human understanding within your holographic experience. 
+This section describes the types of new interactions that become possible with eye tracking.
 
 ### User intent	    
 -	Context for other inputs such as voice, hands and controllers
