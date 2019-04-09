@@ -16,21 +16,6 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
 ## Device support
 
 <table>
-<th>
-<tr>
-<td style="width:150px;"><strong>Input model</strong></td>
-<td style="width:150px; text-align: center;"><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-<td style="width:225px; text-align: center;"><strong>HoloLens 2</strong></td>
-<td style="width:25px; text-align: center;"><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
-</tr>
-</th>
- 
-<tr>
-<td>Direct manipulation (near interaction)</td><td style="text-align: center;">❌ Not supported</td><td style="text-align: center;">✔️ Recommended</td><td>➕ An alternate option but <a href="TBD-fill-in-file-name.md">Pointing and commit (far interaction)</a> is recommended</td>
-</tr>
-</table>
-
-<table>
     <colgroup>
     <col width="40%" />
     <col width="20%" />
@@ -38,10 +23,10 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
     <col width="20%" />
     </colgroup>
     <tr>
-        <td>Input model</td>
-        <td><a href="hololens-hardware-details.md">HoloLens (1st gen)</a></td>
+        <td><strong>Input model</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td>HoloLens 2</td>
-        <td><a href="immersive-headset-hardware-details.md">Immersive headsets</a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Direct manipulation (near interaction)</td>
