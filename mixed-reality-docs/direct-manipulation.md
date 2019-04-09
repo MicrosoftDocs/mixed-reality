@@ -25,7 +25,7 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
     <tr>
         <td><strong>Input model</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td>HoloLens 2</td>
+        <td><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
