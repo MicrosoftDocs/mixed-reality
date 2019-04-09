@@ -72,9 +72,8 @@ If the hover feedback was pretty subtle to begin with, you probably won't notice
 The synchronization of input signals may be less of a challenge for simple _gaze & commit_, so, don't worry! 
 It is something to look out for in case you want to use more complicated _commit_ actions though that may involve long voice commands or complicated hand gestures. 
 Imagine you look at target and utter a long voice command. 
-Taken into account the time that you needed to speak and the time that the system needed to detect what you said, your eye gaze as usually long moved on to some new target in the scene.
+Taken into account the time that you needed to speak and the time that the system needed to detect what you said, your eye gaze has usually long moved on to some new target in the scene.
 Hence, either make your users aware that they may need to keep looking at a target until the command has been recognized or handle the input in a way to determine the onset of the command and what the user had been looking at back then.
-
 
   
 ## Gaze and dwell
