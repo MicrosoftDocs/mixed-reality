@@ -32,7 +32,7 @@ Attendees will also have a chance to get hands-on with our technology at an even
 </br>
 
 
-# IMPORTANT NOTES
+## IMPORTANT NOTES
 
 * **Applications will be open until noon on April 5, 2019.**  If we do not fill all the spots from this first wave of applicants, we may open it back up for a second wave.
 
@@ -50,7 +50,7 @@ If you’d like to learn more or have any questions, you can find our [FAQ here]
 
 </br>
 
-# Hotel Suggestions
+## Hotel Suggestions
 
 * **Seattle Marriott Redmond**</br>
   7401 164th Avenue NE</br>

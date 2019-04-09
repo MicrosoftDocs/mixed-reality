@@ -267,6 +267,7 @@
 # Programs and events
 ## [Mixed Reality Dev Days](mr-dev-days.md)
 ### [Mixed Reality Dev Days FAQ](mr-dev-days-faq.md)
+## [The Realities Show](realities-show.md)
 ## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
 ## [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ## [ECCV 2018 HoloLens as a tool for computer vision research](eccv-2018.md)
