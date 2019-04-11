@@ -31,7 +31,7 @@ Point and Commit is an input model enables users to target, select and manipulat
         <td>✔️ Recommended</td>
     </tr>
 </table>
-Point and Commit has been one of the primary input models on HoloLens 2, utilizing the new articulated hand tracking system. This input model is also the primary input model on immersive headsets through the use of motion controllers. Point and Commit is the input model that we suggest to replace the Head Gaze and Commit on HoloLens 1. 
+Point and Commit has been one of the primary input models on HoloLens 2, utilizing the new articulated hand tracking system. This input model is also the primary input model on immersive headsets through the use of motion controllers. Point and Commit is the input model that we suggest to replace the Head Gaze and Commit on HoloLens (1st gen). 
 
 ## Hand Rays
 On HoloLens 2, we invent a hand ray shooting out from the center of a palm. A donut shape cursor is attached at the end of the ray. The ray is treated as a direct extension of a hand, and the cursor implies the intersection with a hitted object. The object that the cursor lands will receive further commands and actions from the hand. The very fundamental command is using thumb and index finger to perform Air Tap gesture to commit. By hand ray targeting (point) and air tapping (commit), users can press a button or a hyperlink on a web content in a distance. The visual design of the hand ray should also react to point and commit states. For example, in the pointing state, the ray is dash lined, and the cursor is a donut shape, while, in the committing state, the ray turns into a solid line, and the cursor shrinks to a dot.
