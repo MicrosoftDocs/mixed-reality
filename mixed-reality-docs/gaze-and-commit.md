@@ -55,7 +55,7 @@ Users may also perform a "select" action using any of the following methods:
 ## Device support
 Head gaze and commit is available on all mixed reality headsets. Is the primary input model on HoloLens v1. Other headsets typically include a hand-based pointing mechanism, such as motion controllers or articulated hand tracking. On these devices, applications should prefer [point-and-commit](point-and-commit.md) for far interactions when possible.
 
-Eye gaze and commit is available on HoloLens v2, but is not the primary input model. Jump to the "Eye gaze design guidelines" section for a discussion about when this might make sense for your application.
+Eye gaze and commit is available on HoloLens 2, but is not the primary input model. Jump to the "Eye gaze design guidelines" section for a discussion about when this might make sense for your application.
 
 ## Head gaze design guidelines (Jenny?)
 - Move content from here: https://docs.microsoft.com/en-us/windows/mixed-reality/gaze-targeting
