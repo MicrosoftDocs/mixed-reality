@@ -35,6 +35,18 @@ Based on our research and work with customers to date, we've discovered three pr
     </tr> 
 </table>
 
+Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. 
+
+We recommend following the guidance in the Creative Process section (LINK) to understand your customer and scenario and then selecting one interaction model for your experience. 
+
+However, there are cases where more than one interaction model are required.  For that case, we recommend following the guidance in the article Transitioning Interaction Models, below.
+
+Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have. Even so, to encourage a customer-focused approach to design, we recommend going through the process of selecting your interaction model outlined in the next article, Interaction for Your Customer.
+
+If your experience does require multiple interaction models, we've found that many end users may encounter difficulty transitioning from one model to another -- especially end users who are new to MR.  To help guide designers and developers through choices that can be difficult in MR, we've also included guidance on using multiple interaction models in the Transitioning Interaction Models article below. 
+
+Areas of special attention will be called out with the following:
+
 ## Input Techniques
 To design and develop multimodally, it is important to understand the capabilities of each input.
 <table>
