@@ -17,9 +17,9 @@ Moreover, interaction across MSMR products is naturally aligned across device ty
 
 We've structures our guidance to reflect this philosophy: that the most instinctual interaction models are multimodal, and that interaction is consistent across device types and whether users are using controllers or not.
 
-Still, to design and develop multimodally, it is important to understand the capabilities of each input.
-
 ## Interaction Models
+When designing for MR, we urge developers and creators to focus on outcomes that address key customer needs, whether that means improving a customer's flow, reducing pinch points they may encounter, or creating a compelling experience for an audience.  A critical part of that process is gathering, understanding, and incorporating feedback from end users, customers, and developers into our design process.
+
 Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences.  Think of these interaction models as the user's mental model for completing their flows. 
 
 <table>
@@ -35,7 +35,8 @@ Based on our research and work with customers to date, we've discovered three pr
     </tr> 
 </table>
 
-## Input Models
+## Input Techniques
+To design and develop multimodally, it is important to understand the capabilities of each input.
 <table>
     <colgroup>
     <col width="25%" />
