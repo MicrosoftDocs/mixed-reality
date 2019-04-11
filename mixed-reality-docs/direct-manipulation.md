@@ -38,11 +38,10 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
 
 Direct manipulation is a primary input model on HoloLens 2, utilizing the new articulated hand tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended a primary means of interaction outside of object manipulation.  Direct manipluation is not available on HoloLens v1.
 
-## Button design guidelines (Tony)
-- Visual affordances (fingertip cursor, hover feedback, bounding boxes that light up, etc)
-- Behavior (button movement, on press vs on release, whether to allow cancel, etc)
-- Sizing considerations
-- Which fingertips to support, and when
+## Collidable Fingertip
+-On HoloLens 2, user's real hands are recognized and interpreted as left and right Hand Skeletal Models. To realize the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips cause lots of unexpected and unpredictable collisions with holograms. Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1 finger press, 1 finger tap, 2 finger press and 5 finger press.
+
+Instead of using random generic shape, we suggest to use a Sphere Collider and to visually render it to provide better cues for near targeting. The sphere's diameter should match the thickness of the index finger to increase touch accuracy. It will be easy to retrieve the number of finger thickness by calling the Hand API. 
 
 ## Object manipulation design guidelines (Tony)
 - Discuss the two primary techniques, and when to use either:
