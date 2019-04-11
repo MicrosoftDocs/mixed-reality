@@ -34,7 +34,7 @@ Here's an outline of the available Interaction design articles and which device 
 </tr><tr>
 <td> <a href="point-and-commit.md">Pointing and commit (far interaction)</a></td><td style="text-align: center;">❌ Not supported</td><td style="text-align: center;">✔️ Recommended (second)</td><td>✔️ Recommended</td>
 </tr><tr>
-<td> <a href="TBD-fill-in-file-name.md">Gaze and commit</a></td><td style="text-align: center;">✔️ Recommended</td><td style="text-align: center;">✔️ Recommended (third)</td><td>➕ Alternate option</td>
+<td> <a href="gaze-and-commit.md">Gaze and commit</a></td><td style="text-align: center;">✔️ Recommended</td><td style="text-align: center;">✔️ Recommended (third)</td><td>➕ Alternate option</td>
 </tr><tr>
 <td> <a href="voice-design.md">Voice</a></td><td style="text-align: center;">✔️ Recommended</td><td style="text-align: center;">✔️ Recommended</td><td>✔️ Recommended</td>
  </tr>
