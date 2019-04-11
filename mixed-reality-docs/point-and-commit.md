@@ -46,11 +46,12 @@ A 2D Slate is a holographic container hosting 2D app contents, such as web brows
 ![](images/2D-Slate-Interaction-Far-720px.jpg)<br>
 
 ## 3D Object Manipulation
-In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model for far interaction, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed. For Affordance Based Manipulation, users use hand ray to target and reveal the bounding box and manipulation affordances. Users can grab the bounding box to move the whole object, the edge affordances to rotate and the coner affordances to scale uniformly. For non-affordnace based manipulation, users can point with hand rays to reveal the bounding box then grab it. If the bounding box is targeted and grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is targeted and grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands. 
+In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model for far interaction, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed. For Affordance Based Manipulation, users use hand ray to target and reveal the bounding box and manipulation affordances. Users can grab the bounding box to move the whole object, the edge affordances to rotate and the coner affordances to scale uniformly. For non-affordnace based manipulation, users can point with hand rays to reveal the bounding box then grab it. If the bounding box is targeted and grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is targeted and grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands.
+![](images/3D-Object-Manipultaion-Far-720px.jpg)<br>
 
 ## Instinctual Gesturers
+![](images/Instinctual-Gestures-Far-720px.jpg)<br>
 
-
-## Symetric Design between Hands and 6 DoF Controller 
-
+## Symmetric Design between Hands and 6 DoF Controller 
+![](images/Symmetric-Design-For-Rays-720px.jpg)<br>
 
