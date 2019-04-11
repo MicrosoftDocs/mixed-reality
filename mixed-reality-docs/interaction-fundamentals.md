@@ -16,7 +16,7 @@ As we've built experiences across HoloLens and immersive headsets, we've started
 
 ## Device support
 
-Here's an outline of the available Interaction design articles and which device type or types they apply to.
+Here's an outline of the available input models and which device type or types they apply to.
 <br>
 
 <table>
