@@ -60,9 +60,11 @@ We've included articles on each interaction model below, as well as as well as s
         <td><strong>Fit</strong></td>
         <td><strong></strong></td>
         <td><strong></strong></td>
+        <td><strong></strong></td>
     </tr>
     <tr>
         <td><strong>Scenario</strong></td>
+        <td><strong></strong></td>
         <td><strong></strong></td>
         <td><strong></strong></td>
     </tr>
