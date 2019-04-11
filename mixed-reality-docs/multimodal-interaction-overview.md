@@ -32,7 +32,7 @@ Based on our research and work with customers to date, we've discovered three pr
         <td><strong>Hands and Tools</strong></td>
         <td><strong>Hands-Free</strong></td>
         <td><strong>Gaze and Commit</strong></td>
-    </tr>
-    
+    </tr> 
 </table>
+
 ## Input Models
