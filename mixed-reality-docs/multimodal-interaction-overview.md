@@ -41,6 +41,34 @@ We recommend following the guidance in the Creative Process section (LINK) to un
 
 However, there are cases where more than one interaction model are required.  For that case, we recommend following the guidance in the article Transitioning Interaction Models, below.
 
+We've included articles on each interaction model below, as well as as well as sample code and sample components in our MRTK, which are linked in the article. 
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>IM</strong></td>
+        <td><strong>Hands and Tools</strong></td>
+        <td><strong>Hands-Free</strong></td>
+        <td><strong>Gaze and Commit</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Fit</strong></td>
+        <td><strong></strong></td>
+        <td><strong></strong></td>
+    </tr>
+    <tr>
+        <td><strong>Scenario</strong></td>
+        <td><strong></strong></td>
+        <td><strong></strong></td>
+    </tr>
+</table>
+
+
 Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have. Even so, to encourage a customer-focused approach to design, we recommend going through the process of selecting your interaction model outlined in the next article, Interaction for Your Customer.
 
 If your experience does require multiple interaction models, we've found that many end users may encounter difficulty transitioning from one model to another -- especially end users who are new to MR.  To help guide designers and developers through choices that can be difficult in MR, we've also included guidance on using multiple interaction models in the Transitioning Interaction Models article below. 
