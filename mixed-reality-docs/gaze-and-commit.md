@@ -130,5 +130,8 @@ The idea is simple and can be broken down in the following phases:
 - Note that these are available on HoloLens (1st gen) and HoloLens 2
 
 ## See also
+* [Direct manipulation](direct-manipulation.md)
+* [Point and commit](point-and-commit.md)
+* [Interaction fundamentals](interaction-fundamentals.md)
 
 
