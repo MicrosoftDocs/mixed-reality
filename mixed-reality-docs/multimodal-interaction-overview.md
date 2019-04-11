@@ -52,9 +52,11 @@ Based on our research and work with customers to date, we've discovered three pr
     <tr>
         <td><strong>6 DOF Controllers</strong></td>
         <td><strong>3 DOF Controllers</strong></td>
-        <td><strong>World Understanding</strong></td>
+        <td><strong>Clicker</strong></td>
     </tr>
     <tr>
-        <td><strong>World Understanding</strong></td>
+        <td><strong>Spatial Mapping</strong></td>
+        <td><strong>Spatial Anchor</strong></td>
+        <td><strong>Object Tracking</strong></td>
     </tr>
 </table>
