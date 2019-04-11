@@ -14,10 +14,10 @@ Gaze and commit is an input model that involves targeting an object with your ga
 
 <table>
     <colgroup>
-    <col width="40%" />
-    <col width="20%" />
-    <col width="20%" />
-    <col width="20%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
     </colgroup>
     <tr>
         <td><strong>Input model</strong></td>
