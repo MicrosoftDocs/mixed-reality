@@ -22,4 +22,17 @@ Still, to design and develop multimodally, it is important to understand the cap
 ## Interaction Models
 Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences.  Think of these interaction models as the user's mental model for completing their flows. 
 
+<table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong>Hands and Tools</strong></td>
+        <td><strong>Hands-Free</strong></td>
+        <td><strong>Gaze and Commit</strong></td>
+    </tr>
+    
+</table>
 ## Input Models
