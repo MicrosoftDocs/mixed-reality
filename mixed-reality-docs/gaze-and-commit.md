@@ -39,7 +39,7 @@ The most common form of gaze is called head gaze. Mixed reality headsets use the
 In addition to head gaze, some mixed reality headsets include eye tracking systems that produce an eye gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered seperately in this article.
 
 ## Commit
-After targeting an object or UI element with head or eye gaze, the user can select or "click" it using a secondary input. This is known as the commit step of the gaze-and-commit model. On HoloLens v1, Air tap is the most common method selecting things.
+After targeting an object or UI element with head or eye gaze, the user can select or "click" it using a secondary input. This is known as the commit step of the gaze-and-commit model. On HoloLens (1st gen), Air tap is the most common method selecting things.
 
 Air tap is a tapping gesture with the hand held upright. To perform an Air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release.
 
@@ -127,4 +127,8 @@ The idea is simple and can be broken down in the following phases:
 
 ## Composite gestures (Jenny?)
 - Move from "composite gestures" section here: https://docs.microsoft.com/en-us/windows/mixed-reality/gestures#composite-gestures
-- Note that these are available on HoloLens v1 and v2
+- Note that these are available on HoloLens (1st gen) and HoloLens 2
+
+## See also
+
+
