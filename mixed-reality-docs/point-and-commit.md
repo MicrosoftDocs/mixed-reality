@@ -11,6 +11,26 @@ keywords: Mixed Reality, interaction, design
 Point and Commit is an input model enables users to target, select and manipulate 2D contents and 3D objects in a distance. This far interaction technique is a navel interactive experience that human being didn't really have during their daily interaction with the real world. For example, in a super hero movie, Magneto is capable of reaching out and manipulate a far object via hands at a distance, which human can't do it in reality. In both Microsoft HoloLens (AR) and Microsoft Mixed Reality (VR), we equip users this magical power breaking the physical constraint of real world not only to have delightful experience with holographic contents but to make the interaction more effective and efficient.
 
 ## Device Support
+<table>
+    <colgroup>
+    <col width="40%" />
+    <col width="20%" />
+    <col width="20%" />
+    <col width="20%" />
+    </colgroup>
+    <tr>
+        <td><strong>Input model</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Direct manipulation (near interaction)</td>
+        <td>❌ Not supported</td>
+        <td>✔️ Recommended</td>
+        <td>➕ An alternate option but <a href="TBD-fill-in-file-name.md">Pointing and commit (far interaction)</a> is recommended</td>
+    </tr>
+</table>
 Point and Commit has been one of the primary input models on HoloLens 2, utilizing the new articulated hand tracking system. This input model is also the primary input model on immersive headsets through the use of motion controllers. Point and Commit is the input model that we suggest to replace the Head Gaze and Commit on HoloLens 1. 
 
 ## Hand Rays
