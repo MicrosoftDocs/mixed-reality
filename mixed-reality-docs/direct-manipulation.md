@@ -32,7 +32,7 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
         <td>Direct manipulation (near interaction)</td>
         <td>❌ Not supported</td>
         <td>✔️ Recommended</td>
-        <td>➕ An alternate option but <a href="point-and-commit.md">Pointing and commit (far interaction)</a> is recommended</td>
+        <td>➕ An alternate option but <a href="point-and-commit.md">Point and commit (far interaction)</a> is recommended</td>
     </tr>
 </table>
 
