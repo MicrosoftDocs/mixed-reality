@@ -55,3 +55,8 @@ In direct manipulation, there are two ways for users to manipulate 3D object, Af
 ## Symmetric Design between Hands and 6 DoF Controller 
 ![](images/Symmetric-Design-For-Rays-720px.jpg)<br>
 
+
+## See also
+* [Gaze and commit](gaze-and-commit.md)
+* [Direct manipulation](direct-manipulation.md)
+* [Interaction fundamentals](interaction-fundamentals.md)
