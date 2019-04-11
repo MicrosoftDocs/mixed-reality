@@ -92,3 +92,9 @@ Use information about what a user is looking at with quick throwing gestures.
 Grab a hologram and roughly toss it toward your intended destination. 
 While this may sometimes work just fine, quickly performing hand gestures may result in highly inaccurate destinations.
 This is where eye tracking could help out to lean the hand throwing vector back to your intended position.
+
+## See also
+* [Gaze and commit](gaze-and-commit.md)
+* [Point and commit](point-and-commit.md)
+* [Interaction fundamentals](interaction-fundamentals.md)
+
