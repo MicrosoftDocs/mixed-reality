@@ -48,8 +48,13 @@ Based on our research and work with customers to date, we've discovered three pr
         <td><strong>Head Gaze</strong></td>
         <td><strong>Eye Tracking</strong></td>
         <td><strong>Voice and Natural Language</strong></td>
+    </tr>
+    <tr>
         <td><strong>6 DOF Controllers</strong></td>
         <td><strong>3 DOF Controllers</strong></td>
         <td><strong>World Understanding</strong></td>
-    </tr> 
+    </tr>
+    <tr>
+        <td><strong>World Understanding</strong></td>
+    </tr>
 </table>
