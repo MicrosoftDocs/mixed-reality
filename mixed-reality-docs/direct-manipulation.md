@@ -17,10 +17,10 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
 
 <table>
     <colgroup>
-    <col width="40%" />
-    <col width="20%" />
-    <col width="20%" />
-    <col width="20%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
     </colgroup>
     <tr>
         <td><strong>Input model</strong></td>
