@@ -10,6 +10,29 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
 # Gaze and commit
 Gaze and commit is an input model that involves targeting an object with your gaze, and then acting on it with a secondary input such as a hand gesture.  It is considered a "far" input model, meaning it is best used for interacting with content that is beyond arms reach.
 
+## Device support
+
+<table>
+    <colgroup>
+    <col width="40%" />
+    <col width="20%" />
+    <col width="20%" />
+    <col width="20%" />
+    </colgroup>
+    <tr>
+        <td><strong>Input model</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Gaze and commit</td>
+        <td>✔️ Recommended</td>
+        <td>✔️ Recommended (third choice - <a href="interaction-fundamentals.md">See the other options</a>)</td>
+        <td>➕ Alternate option</td>
+    </tr>
+</table>
+
 ## Gaze
 The most common form of gaze is called head gaze. Mixed reality headsets use the position and orientation of the user's head to determine their head gaze vector. You can think of this as a laser that points straight ahead from directly between the user's eyes. This is a fairly coarse approximation of where the user is looking. Your application can intersect this ray with virtual or real-world objects and draw a cursor at that location to let the user know what they are currently targetting.
 
