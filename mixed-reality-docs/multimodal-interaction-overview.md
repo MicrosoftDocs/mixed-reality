@@ -76,7 +76,7 @@ Detailed information for using all available inputs seamlessly together in each 
 
 Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have. 
 
-Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, Choosing Interaction for Your Customer (<----- this should be a link)
+Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, [Choosing Interaction for Your Customer](choosing-interaction-for-your-customer)
 
 This article outlines some of the tips and tricks we've learned to keep users confident in different scenarios. 
 
