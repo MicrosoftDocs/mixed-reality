@@ -46,7 +46,9 @@ Instead of using random generic shape, we suggest to use a [Sphere Collider](com
 ![](images/Collidable-Fingertip-720px.jpg)<br>
 
 ## Fingertip Cursor
-In addition to rendering a collidable sphere on the index fingertip, we invent an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. When an index finger moves toward a hologram, the cursor is always parallel to the surface of the hologram and gradually shrinks its size accordingly. As soon as the finger touch the surface, the cursor shrinks into a dot. With this mechanism, users can achieve high precision near targeting tasks, such as triggering a hyperlink on a web content or pressing a button.
+In addition to rendering a collidable sphere on the index fingertip, we invent an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. 
+* When an index finger moves toward a hologram, the cursor is always parallel to the surface of the hologram and gradually shrinks its size accordingly. 
+* As soon as the finger touch the surface, the cursor shrinks into a dot. With this mechanism, users can achieve high precision near targeting tasks, such as triggering a hyperlink on a web content or pressing a button.
 
 ![](images/Fingertip-Cursor-720px.jpg)<br>
 
