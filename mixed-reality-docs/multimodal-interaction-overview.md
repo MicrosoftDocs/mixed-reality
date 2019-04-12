@@ -36,7 +36,7 @@ Think of these interaction models as the user's mental model for completing thei
 </table>
 
 Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. Check out the chart below for some examples of scenarios and benefits of each interaction model.  
-
+<br>
 <table>
     <colgroup>
     <col width="10%" />
@@ -52,21 +52,21 @@ Each of these interaction models is convenient, powerful, and usable in its own 
     </tr>
     <tr>
         <td>Example Scenarios</td>
-        <td>* 3D Spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
-        <td>* Contextual experiences where a user's hands are occupied<br>e.g. on the-job learning, maintenance</td>
-        <td>* Click-through experiences<br> e.g. 3d presentations, demos</td>
+        <td>3D Spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
+        <td>Contextual experiences where a user's hands are occupied<br>e.g. on the-job learning, maintenance</td>
+        <td>Click-through experiences<br> e.g. 3d presentations, demos</td>
     </tr>
     <tr>
         <td>Fit</td>
-        <td>* Great for new users<br>* Low learning curve<br>* Grounded in easy visual affordances<br>* Consistent UX across hand tracking and 6dof controllers<br>* Great when coupled with voice, ET, or head gaze</td>
-        <td>* Some learning required<br>* If hands are unavailable<br>* pairs well with voice and natural language</td>
-        <td>* Requires training on HMDs but not on Mobile<br>* Best for accessible controllers<br>* Best for HL1</td>
+        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6dof controllers<br>Great when coupled with voice, ET, or head gaze</td>
+        <td>Some learning required<br>If hands are unavailable<br>pairs well with voice and natural language</td>
+        <td>Requires training on HMDs but not on Mobile<br>Best for accessible controllers<br>Best for HoloLens 1</td>
     </tr>
     <tr>
         <td>HW</td>
-        <td>HoloLens 2 Windows Immersive w/ 6DOF Controllers</td>
-        <td>HL2<br>HL1<br> Windows Immersive</td>
-        <td>HL2<br> HL1<br> Windows Immersive<br> Mobile AR</td>
+        <td>HoloLens 2<br> Windows Immersive w/ 6DOF Controllers</td>
+        <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive</td>
+        <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive<br> Mobile AR</td>
     </tr>
 </table>
 
