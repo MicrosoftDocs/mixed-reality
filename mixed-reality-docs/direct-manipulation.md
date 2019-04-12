@@ -79,7 +79,7 @@ For interacting with the slate contact:<br>
 * They can use an index finger to scroll a slate content up and down. 
 * Using two index fingers can zoom in and out the slate content. 
 
-<br><br>For manipulating the 2D slate itself:<br>
+<br>For manipulating the 2D slate itself:<br>
 * Users can approach their hands toward corners and edges to reveal the closest manipulation affordances. 
 * By grabbing the manipulation affordances, users can perform uniform scaling through the corner affordnaces and reflow via the edge affordances. 
 * Grabbing the holobar at the top of the 2D slate can users move the whole slate.
