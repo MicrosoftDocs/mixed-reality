@@ -28,7 +28,7 @@ Point and Commit is an input model enables users to target, select and manipulat
         <td>Point and commit (far interaction)</td>
         <td>❌ Not supported</td>
         <td>✔️ Recommended (second choice - <a href="interaction-fundamentals.md">See the other options</a>)</td>
-        <td>✔️ Recommended</td>
+        <td>❌ Not supported</td>
     </tr>
 </table>
 Point and Commit has been one of the primary input models on HoloLens 2, utilizing the new articulated hand tracking system. This input model is also the primary input model on immersive headsets through the use of motion controllers. Point and Commit is the input model that we suggest to replace the Head Gaze and Commit on HoloLens (1st gen). 
