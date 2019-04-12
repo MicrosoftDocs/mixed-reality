@@ -86,8 +86,7 @@ This article outlines some of the tips and tricks we've learned to keep users co
     </colgroup>
     <tr>
         <td><strong>IM</strong></td>
-        <td><strong>PRO TIP check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. </strong></td>
-        
+        <td><strong>PRO TIP check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. </strong></td>  
     </tr>
  </table>
 
@@ -99,7 +98,17 @@ If your experience does require multiple interaction models, we've found that ma
 To help guide designers and developers through choices that can be difficult in MR, we've also included guidance on using multiple interaction models in the Transitioning Interaction Models article below. 
 
 Areas of special attention - like Transitioning interaction Models - will be called out with the following:
-
+<table>
+    <colgroup>
+    <col width="10%" />
+    <col width="90%" />
+    </colgroup>
+    <tr>
+        <td><strong>IM</strong></td>
+        <td><strong>Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article Transitioning Interaction Models [link]</strong></td>  
+    </tr>
+ </table>
+ 
 ## Next Section: Visual Design Language
 Click the link below or follow the page navigation to continue to the next section on Visual Design Language.
 
