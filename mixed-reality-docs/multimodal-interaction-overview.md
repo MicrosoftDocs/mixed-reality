@@ -91,7 +91,7 @@ This article outlines some of the tips and tricks we've learned to keep users co
  </table>
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> PRO TIP check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. [coming soon].
 
 
 ## Transition Interaction Models
