@@ -35,86 +35,6 @@ Think of these interaction models as the user's mental model for completing thei
     </tr> 
 </table>
 
-<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
-    <li>
-	<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit - Unity" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/MRTKandUnity.png" alt="Mixed Reality Toolkit - Unity">
-                        </div>
-                    </div>                    
-			<div class="cardText">
-                        <h3>Mixed Reality Toolkit - Unity</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>	
-    </li>
-    <li>
-	<a href="https://github.com/Microsoft/MixedRealityToolkit" title="Mixed Reality Toolkit" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/MRTK.png" alt="Mixed Reality Toolkit">
-                        </div>
-                    </div>                    
-			<div class="cardText">
-                        <h3>Mixed Reality Toolkit</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>	
-    </li>	
-        <li>
-	<a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md" title="HoloSketch" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/HoloSketch.png" alt="HoloSketch">
-                        </div>
-                    </div>                    
-			<div class="cardText">
-                        <h3>HoloSketch</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>	
-    </li>	
-            <li>
-	<a href="https://www.simplygon.com" title="Simplygon" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/Simplygon.png" alt="Simplygon">
-                        </div>
-                    </div>                    
-			<div class="cardText">
-                        <h3>Simplygon</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>	
-    </li>
-</ul>
-
-
 Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. Check out the chart below for some examples of scenarios and benefits of each interaction model.  
 
 <table>
@@ -145,7 +65,7 @@ Each of these interaction models is convenient, powerful, and usable in its own 
     <tr>
         <td>HW</td>
         <td>HoloLens 2 Windows Immersive w/ 6DOF Controllers</td>
-        <td>HL2, HL1, Windows Immersive</td>
+        <td>HL2<br>HL1<br> Windows Immersive</td>
         <td>HL2, HL1, Windows Immersive, Mobile AR</td>
     </tr>
 </table>
