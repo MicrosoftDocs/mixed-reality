@@ -21,7 +21,7 @@ We've structures our guidance to reflect this philosophy: that the most instinct
 Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences.  
 
 Think of these interaction models as the user's mental model for completing their flows. 
-
+<br>
 <table>
     <colgroup>
     <col width="33%" />
@@ -34,7 +34,7 @@ Think of these interaction models as the user's mental model for completing thei
         <td><strong>Gaze and Commit</strong></td>
     </tr> 
 </table>
-
+<br>
 Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. Check out the chart below for some examples of scenarios and benefits of each interaction model.  
 <br>
 <table>
@@ -69,19 +69,19 @@ Each of these interaction models is convenient, powerful, and usable in its own 
         <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive<br> Mobile AR</td>
     </tr>
 </table>
-
+<br>
 Detailed information for using all available inputs seamlessly together in each interaction model is on the pages that follow, as well as illustrations and links to sample content from our Unity MRTK.
 
 ## Choosing an Interaction Model for Your Customer
 
 Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have. 
 
-Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, [Choosing Interaction for Your Customer](choosing-interaction-for-your-customer.md)
+Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, [Choosing Interaction for Your Customer](coming-soon.md)
 
 This article outlines some of the tips and tricks we've learned to keep users confident in different scenarios. 
 
 > [!Note]
-> Check out the [Customer-Focused Creative Process]() section for suggestions on identifying your customer and creating a great Mixed Reality concept. [coming soon].
+> Check out the [Customer-Focused Creative Process](coming-soon.md) section for suggestions on identifying your customer and creating a great Mixed Reality concept.
 
 
 ## Transition Interaction Models
@@ -91,20 +91,9 @@ If your experience does require multiple interaction models, we've found that ma
 
 To help guide designers and developers through choices that can be difficult in MR, we've also included guidance on using multiple interaction models in the Transitioning Interaction Models article below. 
 
-Areas of special attention - like Transitioning interaction Models - will be called out with the following:
-<table>
-    <colgroup>
-    <col width="10%" />
-    <col width="90%" />
-    </colgroup>
-    <tr>
-        <td><strong>IM</strong></td>
-        <td><strong>Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article Transitioning Interaction Models [link]</strong></td>  
-    </tr>
- </table>
- 
- > [!Note]
-> Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article [Transitioning Interaction Models](transition-interaction-models.md).
+Areas of special attention - like Transitioning interaction Models - will be called out with the following: 
+> [!Note]
+> Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article [Transitioning Interaction Models](coming-soon.md).
  
 ## Next Section: Visual Design Language
 Click the link below or follow the page navigation to continue to the next section on Visual Design Language.
