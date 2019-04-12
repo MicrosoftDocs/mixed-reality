@@ -76,12 +76,12 @@ Detailed information for using all available inputs seamlessly together in each 
 
 Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have. 
 
-Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, [Choosing Interaction for Your Customer](choosing-interaction-for-your-customer)
+Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, [Choosing Interaction for Your Customer](choosing-interaction-for-your-customer.md)
 
 This article outlines some of the tips and tricks we've learned to keep users confident in different scenarios. 
 
 > [!Note]
-> check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. [coming soon].
+> Check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. [coming soon].
 
 
 ## Transition Interaction Models
@@ -102,6 +102,9 @@ Areas of special attention - like Transitioning interaction Models - will be cal
         <td><strong>Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article Transitioning Interaction Models [link]</strong></td>  
     </tr>
  </table>
+ 
+ > [!Note]
+> Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article [Transitioning Interaction Models](transition-interaction-models.md).
  
 ## Next Section: Visual Design Language
 Click the link below or follow the page navigation to continue to the next section on Visual Design Language.
