@@ -78,6 +78,7 @@ For interacting with the slate contact:<br>
 * With the assistance of fingertip cursor and proximity shader, users perceive good sense of "touching" with their index fingers to press a hyperlink or a button. 
 * They can use an index finger to scroll a slate content up and down. 
 * Using two index fingers can zoom in and out the slate content. 
+
 <br><br>For manipulating the 2D slate itself:<br>
 * Users can approach their hands toward corners and edges to reveal the closest manipulation affordances. 
 * By grabbing the manipulation affordances, users can perform uniform scaling through the corner affordnaces and reflow via the edge affordances. 
