@@ -39,16 +39,17 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
 Direct manipulation is a primary input model on HoloLens 2, utilizing the new articulated hand tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended a primary means of interaction outside of object manipulation.  Direct manipluation is not available on HoloLens v1.
 
 ## Collidable Fingertip
-On HoloLens 2, user's real hands are recognized and interpreted as left and right [Hand Skeletal Models](coming-soon.md). To realize the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips cause lots of unexpected and unpredictable collisions with holograms. Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1 finger press, 1 finger tap, 2 finger press and 5 finger press.
+On HoloLens 2, user's real hands are recognized and interpreted as left and right [Hand Skeletal Models](coming-soon.md). To implement the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips cause lots of unexpected and unpredictable collisions with holograms. Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1 finger press, 1 finger tap, 2 finger press and 5 finger press.
 
-Instead of using random generic shape, we suggest to use a [Sphere Collider](coming-soon.md) and to visually render it to provide better cues for near targeting. The sphere's diameter should match the thickness of the index finger to increase touch accuracy. It will be easy to retrieve the number of finger thickness by calling the [Hand API](coming-soon.md).
+Instead of using random generic shape, we suggest to use a [Sphere Collider](coming-soon.md) and to visually render it to provide better cues for near targeting. The sphere's diameter should match the thickness of the index finger to increase touch accuracy. It will be easy to retrieve the variable of finger thickness by calling the [Hand API](coming-soon.md).
 
 ![](images/Collidable-Fingertip-720px.jpg)<br>
 
 ## Fingertip Cursor
-In addition to rendering a collidable sphere on the index fingertip, we invent an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. 
+In addition to rendering a collidable sphere on the index fingertip, we invent an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. The reactions are: 
 * When an index finger moves toward a hologram, the cursor is always parallel to the surface of the hologram and gradually shrinks its size accordingly. 
-* As soon as the finger touch the surface, the cursor shrinks into a dot. With this mechanism, users can achieve high precision near targeting tasks, such as triggering a hyperlink on a web content or pressing a button.
+* As soon as the finger touch the surface, the cursor shrinks into a dot. 
+With this mechanism, users can achieve high precision near targeting tasks, such as triggering a hyperlink on a web content or pressing a button.
 
 ![](images/Fingertip-Cursor-720px.jpg)<br>
 
