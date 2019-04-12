@@ -55,9 +55,9 @@ In addition to rendering a collidable sphere on the index fingertip, we invent a
 ![](images/Fingertip-Cursor-720px.jpg)<br>
 
 ## Bounding Box with Proximity Shader
-The hologram itself also requires to provide both visual and audio feedbacks to compensate the lack of tactile feedback. For that, we generate the concept of [Bounding Box with Proximity Shader](coming-soon.md). A bounding box is a minimun volumetric area that encloses a 3D object. The bounding box has a interactive rendering mechanism called [Proximity Shader](coming-soon.md). The idea is:
+The hologram itself also requires to provide both visual and audio feedbacks to compensate the lack of tactile feedback. For that, we generate the concept of [Bounding Box with Proximity Shader](coming-soon.md). A bounding box is a minimun volumetric area that encloses a 3D object. The bounding box has a interactive rendering mechanism called [Proximity Shader](coming-soon.md). The proximity shader functions as below:
 
-* when the index finger is within a range, a fingertip spotlight is cast on the surface of bounding box. 
+* When the index finger is within a range, a fingertip spotlight is cast on the surface of bounding box. 
 * When the fingertip gets closer to the surface, the spotlight condenses accordingly. 
 * As soon as the fingertip touch the surface, the whole bounding box changes the color or generate visual effect to reflect the touch state. 
 * Meanwhile, a sound effect can be activated to enhance the visual touch feedback.
@@ -66,14 +66,21 @@ The hologram itself also requires to provide both visual and audio feedbacks to 
 
 ## Pressable Button
 With a collidable fingertip or fingertip cursor, users are now ready to interact with the very fundamental holographic UI component, [Pressable Button](coming-soon.md). A pressable button is a holographic button tailored for direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to solve tactile feedback related issues. 
-* The first one is bounding box with proximity shader, which has already been addressed in the foregoing paragraph. It serves to provide better sense of proximity for users to approach and make contact with a button. 
-* The second one is depression, which creates sense of press, after a fingertip contacts the button. The key is that the button tightly moves with the fingertip along the depth axis. The button can be triggered as soon as reaching a designated depth (on press) or leaving the depth (on release) after passing through it. 
-* The sound effect should be added to enhance feedback. 
+* The first mechanism is bounding box with proximity shader, which has already been addressed in the foregoing paragraph. It serves to provide better sense of proximity for users to approach and make contact with a button. 
+* The second one is depression, which creates sense of press, after a fingertip contacts the button. The mechanism is that the button tightly moves with the fingertip along the depth axis. The button can be triggered as soon as reaching a designated depth (on press) or leaving the depth (on release) after passing through it. 
+* The sound effect should be added to enhance feedback, when the button is triggered. 
 
 ![](images/Pressable-Button-720px.jpg)<br>
 
 ## 2D Slate Interaction
-A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for interacting with a 2D slate is to leverage the mental model of interacting with a physical touch screen. With the assistance of fingertip cursor and proximity shader, users perceive good sense of "touching" with their index fingers to press a hyperlink or a button. They can use an index finger to scroll a slate content up and down. Using two index fingers can zoom in and out the slate content. To resize the 2D slate, users can approach their hands toward corners and edges to reveal the closest manipulation affordances. By grabbing the manipulation affordances, users can perform uniform scaling through the corner affordnaces and reflow via the edge affordances. Grabbing the holobar at the top of the 2D slate can users move the whole slate.
+A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for interacting with a 2D slate is to leverage the mental model of interacting with a physical touch screen. For interacting with the slate contact: 
+* With the assistance of fingertip cursor and proximity shader, users perceive good sense of "touching" with their index fingers to press a hyperlink or a button. 
+* They can use an index finger to scroll a slate content up and down. 
+* Using two index fingers can zoom in and out the slate content. 
+For manipulating the 2D slate itself:
+* Users can approach their hands toward corners and edges to reveal the closest manipulation affordances. 
+* By grabbing the manipulation affordances, users can perform uniform scaling through the corner affordnaces and reflow via the edge affordances. 
+* Grabbing the holobar at the top of the 2D slate can users move the whole slate.
 
 ![](images/2D-Slate-Interaction-720px.jpg)<br>
 
