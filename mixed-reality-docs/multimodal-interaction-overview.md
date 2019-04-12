@@ -48,7 +48,7 @@ Each of these interaction models is convenient, powerful, and usable in its own 
         <td><strong>IM</strong></td>
         <td><strong>Hands and Tools</strong></td>
         <td><strong>Hands-Free</strong></td>
-        <td><strong>[Gaze and Commit](gaze-and-commit)</strong></td>
+        <td><strong><a href="gaze-and-commit.md">Gaze and Commit</a></strong></td>
     </tr>
     <tr>
         <td>Example Scenarios</td>
