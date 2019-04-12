@@ -48,7 +48,7 @@ Each of these interaction models is convenient, powerful, and usable in its own 
         <td><strong>IM</strong></td>
         <td><strong>Hands and Tools</strong></td>
         <td><strong>Hands-Free</strong></td>
-        <td><strong>Gaze and Commit</strong></td>
+        <td><strong>[Gaze and Commit](gaze-and-commit)</strong></td>
     </tr>
     <tr>
         <td>Example Scenarios</td>
@@ -91,10 +91,9 @@ If your experience does require multiple interaction models, we've found that ma
 
 To help guide designers and developers through choices that can be difficult in MR, we've also included guidance on using multiple interaction models in the Transitioning Interaction Models article below. 
 
-Areas of special attention - like Transitioning interaction Models - will be called out with the following: 
 > [!Note]
 > Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article [Transitioning Interaction Models](coming-soon.md).
  
 ## Next Section: Visual Design Language
-Click the link below or follow the page navigation to continue to the next section on Visual Design Language.
+Click the link below or follow the page navigation to continue to the next section on [Visual Design Language](coming-soon.md).
 
