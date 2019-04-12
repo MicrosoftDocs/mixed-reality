@@ -80,7 +80,7 @@ Even so, to encourage a customer-focused approach to design, we recommend a look
 
 This article outlines some of the tips and tricks we've learned to keep users confident in different scenarios. 
 
-> [!PRO TIP]
+> [!Note]
 > check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. [coming soon].
 
 
