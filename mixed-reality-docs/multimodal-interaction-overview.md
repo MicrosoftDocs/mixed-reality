@@ -29,9 +29,9 @@ Think of these interaction models as the user's mental model for completing thei
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><strong>Hands and Tools</strong></td>
-        <td><strong>Hands-Free</strong></td>
-        <td><strong>Gaze and Commit</strong></td>
+        <td><strong><a href="hands-and-tools.md">Hands and Tools</a></strong></td>
+        <td><strong><a href="hands-free.md">Hands-Free</a></strong></td>
+        <td><strong><a href="gaze-and-commit.md">Gaze and Commit</a></strong></td>
     </tr> 
 </table>
 <br>
@@ -48,7 +48,7 @@ Each of these interaction models is convenient, powerful, and usable in its own 
         <td><strong>IM</strong></td>
         <td><strong>Hands and Tools</strong></td>
         <td><strong>Hands-Free</strong></td>
-        <td><strong><a href="gaze-and-commit.md">Gaze and Commit</a></strong></td>
+        <td><strong>Gaze and Commit</strong></td>
     </tr>
     <tr>
         <td>Example Scenarios</td>
