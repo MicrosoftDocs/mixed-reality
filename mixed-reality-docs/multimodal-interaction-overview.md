@@ -36,7 +36,7 @@ Think of these interaction models as the user's mental model for completing thei
 </table>
 <br>
 Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. Check out the chart below for some examples of scenarios and benefits of each interaction model.  
-<br>
+<br><br>
 <table>
     <colgroup>
     <col width="10%" />
