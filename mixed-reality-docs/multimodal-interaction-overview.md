@@ -21,7 +21,7 @@ We've structures our guidance to reflect this philosophy: that the most instinct
 Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences.  
 
 Think of these interaction models as the user's mental model for completing their flows. 
-<br>
+<br><br>
 <table>
     <colgroup>
     <col width="33%" />
