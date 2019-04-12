@@ -90,6 +90,10 @@ This article outlines some of the tips and tricks we've learned to keep users co
     </tr>
  </table>
 
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
+
 ## Transition Interaction Models
 There are also cases where customer or use cases require that your experience work with more than one interaction model – for example, if the core interaction model is Hands and Tools, but a special Hands-Free mode is required for field technicians.  
 
