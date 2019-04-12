@@ -27,7 +27,7 @@ Point and Commit is an input model enables users to target, select and manipulat
      <tr>
         <td>Point and commit (far interaction)</td>
         <td>❌ Not supported</td>
-        <td>✔️ Recommended (second choice - <a href="interaction-fundamentals.md">See the other options</a>)</td>
+        <td>✔️ Recommended</td>
         <td>❌ Not supported</td>
     </tr>
 </table>
