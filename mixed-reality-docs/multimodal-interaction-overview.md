@@ -79,19 +79,9 @@ Most likely, developers and creators also already have some ideas in mind of the
 Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, Choosing Interaction for Your Customer (<----- this should be a link)
 
 This article outlines some of the tips and tricks we've learned to keep users confident in different scenarios. 
-<table>
-    <colgroup>
-    <col width="10%" />
-    <col width="90%" />
-    </colgroup>
-    <tr>
-        <td><strong>IM</strong></td>
-        <td><strong>PRO TIP check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. </strong></td>  
-    </tr>
- </table>
 
-> [!NOTE]
-> PRO TIP check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. [coming soon].
+> [!PRO TIP]
+> check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. [coming soon].
 
 
 ## Transition Interaction Models
