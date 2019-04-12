@@ -73,11 +73,12 @@ With a collidable fingertip or fingertip cursor, users are now ready to interact
 ![](images/Pressable-Button-720px.jpg)<br>
 
 ## 2D Slate Interaction
-A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for interacting with a 2D slate is to leverage the mental model of interacting with a physical touch screen. For interacting with the slate contact: 
+A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for interacting with a 2D slate is to leverage the mental model of interacting with a physical touch screen.<br> 
+For interacting with the slate contact:<br> 
 * With the assistance of fingertip cursor and proximity shader, users perceive good sense of "touching" with their index fingers to press a hyperlink or a button. 
 * They can use an index finger to scroll a slate content up and down. 
-* Using two index fingers can zoom in and out the slate content. 
-For manipulating the 2D slate itself:
+* Using two index fingers can zoom in and out the slate content. <br>
+For manipulating the 2D slate itself:<br>
 * Users can approach their hands toward corners and edges to reveal the closest manipulation affordances. 
 * By grabbing the manipulation affordances, users can perform uniform scaling through the corner affordnaces and reflow via the edge affordances. 
 * Grabbing the holobar at the top of the 2D slate can users move the whole slate.
