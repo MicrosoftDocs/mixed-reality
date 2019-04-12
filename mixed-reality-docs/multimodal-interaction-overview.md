@@ -51,18 +51,25 @@ Each of these interaction models is convenient, powerful, and usable in its own 
         <td><strong>Gaze and Commit</strong></td>
     </tr>
     <tr>
-        <td><strong>Fit</strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
+        <td>Example Scenarios</td>
+        <td>3D Spatial experiences, e.g. spatial layout and design, content manipulation, or simulation</td>
+        <td>Contextual experiences where a user's hands are occupied, e.g. on the-job learning, maintenance</td>
+        <td>Click-through experiences, e.g. 3d presentations, demos</td>
     </tr>
     <tr>
-        <td><strong>Scenario</strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
-        <td><strong></strong></td>
+        <td>Fit</td>
+        <td>Great for new users; Low learning curve; Grounded in easy visual affordances; Consistent UX across hand tracking and 6dof controllers; Great when coupled with voice, ET, or head gaze.</td>
+        <td>Some learning required; If hands are unavailable; pairs well with voice and natural language</td>
+        <td>Requires training on HMDs but not on Mobile; Best for accessible controllers; Best for HL1</td>
+    </tr>
+    <tr>
+        <td>HW</td>
+        <td>HoloLens 2 Windows Immersive w/ 6DOF Controllers</td>
+        <td>HL2, HL1, Windows Immersive</td>
+        <td>HL2, HL1, Windows Immersive, Mobile AR</td>
     </tr>
 </table>
+
 Detailed information for using all available inputs seamlessly together in each interaction model is on the pages that follow, as well as illustrations and links to sample content from our Unity MRTK.
 
 ## Choosing an Interaction Model for Your Customer
@@ -72,6 +79,17 @@ Most likely, developers and creators also already have some ideas in mind of the
 Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, Choosing Interaction for Your Customer (<----- this should be a link)
 
 This article outlines some of the tips and tricks we've learned to keep users confident in different scenarios. 
+<table>
+    <colgroup>
+    <col width="10%" />
+    <col width="90%" />
+    </colgroup>
+    <tr>
+        <td><strong>IM</strong></td>
+        <td><strong>PRO TIP check out the Customer-Focused Creative Process section for suggestions on identifying your customer and creating a great Mixed Reality concept. </strong></td>
+        
+    </tr>
+ </table>
 
 ## Transition Interaction Models
 There are also cases where customer or use cases require that your experience work with more than one interaction model – for example, if the core interaction model is Hands and Tools, but a special Hands-Free mode is required for field technicians.  
