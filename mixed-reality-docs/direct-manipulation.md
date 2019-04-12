@@ -48,13 +48,18 @@ Instead of using random generic shape, we suggest to use a [Sphere Collider](com
 ## Fingertip Cursor
 In addition to rendering a collidable sphere on the index fingertip, we invent an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. The reactions are: 
 * When an index finger moves toward a hologram, the cursor is always parallel to the surface of the hologram and gradually shrinks its size accordingly. 
-* As soon as the finger touch the surface, the cursor shrinks into a dot. 
+* As soon as the finger touch the surface, the cursor shrinks into a dot. <br> 
 With this mechanism, users can achieve high precision near targeting tasks, such as triggering a hyperlink on a web content or pressing a button.
 
 ![](images/Fingertip-Cursor-720px.jpg)<br>
 
 ## Bounding Box with Proximity Shader
-The hologram itself also requires to provide both visual and audio feedbacks to compensate the lack of tactile feedback. For that, we generate the concept of [Bounding Box with Proximity Shader](coming-soon.md). A bounding box is a minimun volumetric area that encloses a 3D object. The bounding box has a interactive rendering mechanism called [Proximity Shader](coming-soon.md). The idea is when the index finger is within a range, a fingertip spotlight is cast on the surface of bounding box. When the fingertip gets closer to the surface, the spotlight condenses accordingly. As soon as the fingertip touch the surface, the whole bounding box changes the color or generate visual effect to reflect the touch state. Meanwhile, a sound effect can be activated to enhance the visual touch feedback.
+The hologram itself also requires to provide both visual and audio feedbacks to compensate the lack of tactile feedback. For that, we generate the concept of [Bounding Box with Proximity Shader](coming-soon.md). A bounding box is a minimun volumetric area that encloses a 3D object. The bounding box has a interactive rendering mechanism called [Proximity Shader](coming-soon.md). The idea is:
+
+* when the index finger is within a range, a fingertip spotlight is cast on the surface of bounding box. 
+* When the fingertip gets closer to the surface, the spotlight condenses accordingly. 
+* As soon as the fingertip touch the surface, the whole bounding box changes the color or generate visual effect to reflect the touch state. 
+* Meanwhile, a sound effect can be activated to enhance the visual touch feedback.
 
 ![](images/Bounding-Box-With-Proximity-Shader-720px.jpg)<br>
 
