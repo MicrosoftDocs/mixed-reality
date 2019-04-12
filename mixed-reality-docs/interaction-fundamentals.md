@@ -64,9 +64,9 @@ Each of these interaction models is convenient, powerful, and usable in its own 
     </tr>
     <tr>
         <td>HW</td>
-        <td>HoloLens 2<br> Windows Immersive w/ 6DOF Controllers</td>
-        <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive</td>
-        <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive<br> Mobile AR</td>
+        <td>HoloLens 2<br>Windows Immersive Headsets</td>
+        <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive Headsets</td>
+        <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive Headsets<br> Mobile AR</td>
     </tr>
 </table>
 <br>
