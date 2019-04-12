@@ -58,15 +58,15 @@ Each of these interaction models is convenient, powerful, and usable in its own 
     </tr>
     <tr>
         <td>Fit</td>
-        <td>Great for new users; Low learning curve; Grounded in easy visual affordances; Consistent UX across hand tracking and 6dof controllers; Great when coupled with voice, ET, or head gaze.</td>
-        <td>Some learning required; If hands are unavailable; pairs well with voice and natural language</td>
-        <td>Requires training on HMDs but not on Mobile; Best for accessible controllers; Best for HL1</td>
+        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6dof controllers<br>Great when coupled with voice, ET, or head gaze</td>
+        <td>Some learning required<br>If hands are unavailable<br>pairs well with voice and natural language</td>
+        <td>Requires training on HMDs but not on Mobile<br> Best for accessible controllers<br> Best for HL1</td>
     </tr>
     <tr>
         <td>HW</td>
         <td>HoloLens 2 Windows Immersive w/ 6DOF Controllers</td>
         <td>HL2<br>HL1<br> Windows Immersive</td>
-        <td>HL2, HL1, Windows Immersive, Mobile AR</td>
+        <td>HL2<br> HL1<br> Windows Immersive<br> Mobile AR</td>
     </tr>
 </table>
 
