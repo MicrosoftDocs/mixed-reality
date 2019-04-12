@@ -11,9 +11,9 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
 # Introducing Instinctual Interactions
 The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality platform, from hardware to software. 
 
-These instinctual interactions bring all major input technologies, including inside out tracking, spatial mapping, hand tracking, eye tracking, and natural language together into seamless multimodal interaction models.  Based on our research, designing and developing multimodally, instead of based on specific inputs, is critical to instinctive experiences. 
+These instinctual interactions utilize all available input technologies, including inside out tracking, hand tracking, eye tracking, and natural language, in seamless multimodal interaction models.  Based on our research, designing and developing multimodally, and not based on single inputs, is critical to creating instinctive experiences. 
 
-Moreover, interaction across MSMR products is naturally aligned across device types.  For example, far interaction with 6DOF controllers on Windows Immersive headsets is compatible with far interaction using your hands on HL2.  Not only is this convenient for developers and designers, but it feels natural to end users. 
+The Instinctual Interaction models also naturally align across device types.  For example, far interaction on a Windows Immersive headset with a 6DOF controlller and far interaction on a HoloLens 2 use the same affordances, patterns, and behaviors.  Not only is this convenient for developers and designers, but it feels natural to end users. 
 
 We've structures our guidance to reflect this philosophy: that the most instinctual interaction models are multimodal, and that interaction is consistent across device types and whether users are using controllers or not.
 
