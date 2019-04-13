@@ -310,13 +310,13 @@ Use the [RawCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/wi
 
 You can persist a SpatialAnchor locally using the [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) class and then get it back in a future app session on the same HoloLens device.
 
-By using [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview), you can create a durable cloud anchor from a local SpatialAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
+By using <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>, you can create a durable cloud anchor from a local SpatialAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
 
-You can also use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
+You can also use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
 
-To get started building shared experiences in your HoloLens app, try out the 5-minute [Azure Spatial Anchors HoloLens quickstart](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens).
+To get started building shared experiences in your HoloLens app, try out the 5-minute <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure Spatial Anchors HoloLens quickstart</a>.
 
-Once you're up and running with Azure Spatial Anchors, you can then [create and locate anchors on HoloLens](https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt).  Walkthroughs are available for [Android and iOS](https://docs.microsoft.com/azure/spatial-anchors/create-locate-anchors-overview) as well, enabling you to share the same anchors on all devices.
+Once you're up and running with Azure Spatial Anchors, you can then <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">create and locate anchors on HoloLens</a>.  Walkthroughs are available for <a href="https://docs.microsoft.com/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android and iOS</a> as well, enabling you to share the same anchors on all devices.
 
 ### Create SpatialAnchors for holographic content
 
@@ -794,6 +794,6 @@ The [spatial mapping](spatial-mapping-in-directx.md) APIs make use of coordinate
 ## See also
 * [Coordinate systems](coordinate-systems.md)
 * [Spatial anchors](spatial-anchors.md)
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
