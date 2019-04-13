@@ -94,7 +94,7 @@ A developer can **[enable depth buffer sharing in Unity](camera-in-unity.md#shar
 Otherwise, for HoloLens, **[set the focus point in Unity](focus-point-in-unity.md)** manually using the
 *[UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame()](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.SetFocusPointForFrame.html)* API in Unity.
 
-If you are writing an application with DirectX, read [Rendering in DirectX](rendering-in-directx.md#set-the-focus-point-for-image-stabilization) for guidance on sharing the depth buffer or setting the focus point.
+If you are writing an application with DirectX, read [Rendering in DirectX](rendering-in-directx.md##render-to-each-camera) for guidance on sharing the depth buffer.
 
 >[!NOTE]
 > The [Windows Device Portal](using-the-windows-device-portal.md) can be used to debug and validate that the stabilization plane is being set correctly on Hololens.

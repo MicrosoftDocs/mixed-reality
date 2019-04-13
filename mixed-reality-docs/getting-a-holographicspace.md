@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, spatial input, re
 
 # Getting a HolographicSpace
 
-The <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> class is your portal into the holographic world. It controls full-screen rendering, provides camera data, and provides access to spatial reasoning APIs. You will create one for your UWP app's <a href="https://docs.microsoft.com/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> or your Win32 app's HWND.
+The <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> class is your portal into the holographic world. It controls immersive rendering, provides camera data, and provides access to spatial reasoning APIs. You will create one for your UWP app's <a href="https://docs.microsoft.com/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> or your Win32 app's HWND.
 
 ## Set up the holographic space
 
@@ -86,7 +86,7 @@ void App::CreateWindowAndHolographicSpace(HINSTANCE hInstance, int nCmdShow)
 ```
 
 Now that you've obtained a HolographicSpace for either your UWP CoreWindow or Win32 HWND, you'll use that HolographicSpace to handle holographic cameras, create coordinate systems and do holographic rendering. The current holographic space is used in multiple places in the DirectX template:
-* The **DeviceResources** class needs to get some information from the HolographicSpace object in order to create the Direct3D device. This is the DXGI adapter ID associated with the holographic display. The <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> class uses your app's Direct3D 11 device to create and manage device-based resources, like swap chains for holographic cameras. If you're interested in seeing what this function does under the hood, you'll find it in DeviceResources.cpp.
+* The **DeviceResources** class needs to get some information from the HolographicSpace object in order to create the Direct3D device. This is the DXGI adapter ID associated with the holographic display. The <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> class uses your app's Direct3D 11 device to create and manage device-based resources, such as the back buffers for each holographic camera. If you're interested in seeing what this function does under the hood, you'll find it in DeviceResources.cpp.
 * The function **DeviceResources::InitializeUsingHolographicSpace** demonstrates how to obtain the adapter by looking up the LUID – and how to choose a default adapter when no preferred adapter is specified.
 * The app's main class uses the holographic space from **AppView::SetWindow** or **App::CreateWindowAndHolographicSpace** for updates and rendering.
 
@@ -128,7 +128,7 @@ Right now, we're focused on AppMain and the setup that it does to enable your ap
 
 ## Create a frame of reference for your holographic content
 
-Your app's content must be positioned in a [spatial coordinate system](coordinate-systems-in-directx.md) in order to be rendered. The system provides two primary frames of reference which you can use to establish a coordinate system for your holograms.
+Your app's content must be positioned in a [spatial coordinate system](coordinate-systems-in-directx.md) to be rendered in the HolographicSpace. The system provides two primary frames of reference which you can use to establish a coordinate system for your holograms.
 
 There are two kinds of reference frames in Windows Holographic: reference frames attached to the device, and reference frames that remain stationary as the device moves through the user's environment. The holographic app template uses a stationary reference frame by default; this is one of the simplest ways to render world-locked holograms.
 

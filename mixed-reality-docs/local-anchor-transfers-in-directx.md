@@ -17,6 +17,9 @@ In situations where you cannot use [Azure Spatial Anchors](https://docs.microsof
 >[!NOTE]
 >Local anchor transfers provide less robust anchor recall than [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors), and iOS and Android devices are not supported by this approach.
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Transferring spatial anchors
 
 You can transfer spatial anchors between Windows Mixed Reality devices by using the [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). This API lets you bundle up an anchor with all the supporting sensor data needed to find that exact place in the world, and then import that bundle on another device. Once the app on the second device has imported that anchor, each app can render holograms using that shared spatial anchor's coordinate system, which will then appear in the same place in the real world.

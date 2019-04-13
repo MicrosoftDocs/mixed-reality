@@ -16,29 +16,32 @@ keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coord
 
 Today's seated VR or single-room VR devices establish one primary coordinate system to represent their tracked space. Windows Mixed Reality devices such as HoloLens are designed to be used throughout large undefined environments, with the device discovering and learning about its surroundings as the user walks around. This allows the device to adapt to continually-improving knowledge about the user's rooms, but results in coordinate systems that will change their relationship to one another through the lifetime of the app. Windows Mixed Reality supports a wide spectrum of devices, ranging from seated immersive headsets through world-attached reference frames.
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Spatial coordinate systems in Windows
 
-The core type used to reason about real-world coordinate systems in Windows is the [SpatialCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx). An instance of this type represents an arbitrary coordinate system and provides a method to get a transformation matrix that you can use to transform between two coordinate systems without understanding the details of each.
+The core type used to reason about real-world coordinate systems in Windows is the <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. An instance of this type represents an arbitrary coordinate system and provides a method to get a transformation matrix that you can use to transform between two coordinate systems without understanding the details of each.
 
 Methods that return spatial information, represented as points, rays, or volumes in the user's surroundings, will accept a SpatialCoordinateSystem parameter to let you decide the coordinate system in which it's most useful for those coordinates to be returned. The units for these coordinates will always be in meters.
 
 A SpatialCoordinateSystem has a dynamic relationship with other coordinate systems, including those that represent the device's position. At any point in time, the device may be able to locate some coordinate systems and not others. For most coordinate systems, your app must be ready to handle periods of time during which they cannot be located.
 
 Your application should not create SpatialCoordinateSystems directly - rather they should be consumed via the Perception APIs. There are three primary sources of coordinate systems in the Perception APIs, each of which map to a concept described on the [Coordinate systems](coordinate-systems.md) page:
-* To get a stationary frame of reference, create a [SpatialStationaryFrameOfReference](https://docs.microsoft.com/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) or obtain one from the current [SpatialStage](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference).
-* To get a spatial anchor, create a [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx).
-* To get an attached frame of reference, create a [SpatialLocatorAttachedFrameOfReference](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocatorattachedframeofreference.aspx).
+* To get a stationary frame of reference, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">SpatialStationaryFrameOfReference</a> or obtain one from the current <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">SpatialStageFrameOfReference</a>.
+* To get a spatial anchor, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a>.
+* To get an attached frame of reference, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">SpatialLocatorAttachedFrameOfReference</a>.
 
 All of the coordinate systems returned by these objects are right-handed, with +y up, +x to the right and +z backwards. You can remember which direction the positive z-axis points by pointing the fingers of either your left or right hand in the positive x direction and curling them into the positive y direction. The direction your thumb points, either toward or away from you, is the direction that the positive z-axis points for that coordinate system. The following illustration shows these two coordinate systems.
 
 ![Left-hand and right-hand coordinate systems](images/left-hand-right-hand.gif)<br>
 *Left-hand and right-hand coordinate systems*
 
-To bootstrap into a SpatialCoordinateSystem based on the position of a HoloLens, use the [SpatialLocator](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) class to create either an attached or stationary frame of reference, as described in the sections below.
+To bootstrap into a SpatialCoordinateSystem based on the position of a HoloLens, use the <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> class to create either an attached or stationary frame of reference, as described in the sections below.
 
 ## Place holograms in the world using a spatial stage
 
-The coordinate system for opaque Windows Mixed Reality immersive headsets is accessed using the SpatialStageFrameOfReference::Current property. This API provides a coordinate system, information about whether the player is seated or mobile, the boundary of a safe area for walking around if the player is mobile, and an indication of whether or not the headset is directional. There is also an event handler for updates to the spatial stage.
+The coordinate system for opaque Windows Mixed Reality immersive headsets is accessed using the static <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference::Current</a> property. This API provides a coordinate system, information about whether the player is seated or mobile, the boundary of a safe area for walking around if the player is mobile, and an indication of whether or not the headset is directional. There is also an event handler for updates to the spatial stage.
 
 First, we get the spatial stage and subscribe for updates to it: 
 
@@ -705,42 +708,6 @@ From **StationaryQuadRenderer::Update**:
    // Here, we provide the model transform for the sample hologram. The model transform
    // matrix is transposed to prepare it for the shader.
    XMStoreFloat4x4(&m_modelConstantBufferData.model, XMMatrixTranspose(rotationMatrix * modelTranslation));
-```
-
-### Set the focus point for image stabilization
-> [!WARNING]
-> For Windows Mixed Reality immersive headsets, setting a stabilization plane is usually counter-productive, as it offers less visual quality than providing your app's depth buffer to the system to enable per-pixel depth-based reprojection. Unless running on a HoloLens, you should generally avoid setting the stabilization plane.
-
-On HoloLens, we should also set a manual focus point for [image stabilization](hologram-stability.md#stabilization-plane). For best results with tag-along holograms, we need to use the velocity of the hologram. This is computed as follows.
-
-Note that on immersive desktop headsets, you should instead use the [CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicFrame) API to enable per-pixel depth-based reprojection, as discussed in [Rendering in DirectX](rendering-in-directx.md#set-the-focus-point-for-image-stabilization). That will result in the best visual quality.
-
-From **StationaryQuadRenderer::Update**:
-
-```
-   // Determine velocity.
-   // Even though the motion is spherical, the velocity is still linear
-   // for image stabilization.
-   auto& deltaX = m_position - m_lastPosition; // meters
-   m_velocity = deltaX / dTime; // meters per second
-```
-
-From **HolographicTagAlongSampleMain::Update**:
-
-```
-   // SetFocusPoint informs the system about a specific point in your scene to
-   // prioritize for image stabilization. The focus point is set independently
-   // for each holographic camera.
-   // In this example, we set position, normal, and velocity for a tag-along quad.
-   float3& focusPointPosition = m_stationaryQuadRenderer->GetPosition();
-   float3  focusPointNormal   = -normalize(focusPointPosition);
-   float3& focusPointVelocity = m_stationaryQuadRenderer->GetVelocity();
-   renderingParameters->SetFocusPoint(
-       currentCoordinateSystem,
-       focusPointPosition,
-       focusPointNormal,
-       focusPointVelocity
-       );
 ```
 
 ### Render the attached hologram

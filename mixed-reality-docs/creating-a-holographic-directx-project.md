@@ -43,7 +43,7 @@ Once the tools are installed you can then create a holographic DirectX UWP proje
 ![Screenshot of the holographic app project template in Visual Studio](images/holographic-directx-app-cpp-new-project.png)<br>
 *Holographic app project template in Visual Studio*
 
-The template generates a project using <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gestures.md#air-tap), or press a button on the controller, to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
+The template generates a project using <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gestures.md#air-tap) or press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
 
 Alternatively, you can create a new project using the **Visual C#** holographic project template, which is based on SharpDX.  If your holographic C# project did not start from the Windows Holographic app template, you will need to copy the ms.fxcompile.targets file from a Windows Mixed Reality C# template project and import it in your .csproj file in order to compile HLSL files that you add to your project.
 
@@ -73,7 +73,7 @@ From that point on, the AppView class handles interaction with Windows basic inp
 
 The easiest way to get started building a Win32 holographic project is to adapt the <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/BasicHologram" target="_blank">*BasicHologram* Win32 sample</a>.
 
-This Win32 sample uses <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can press a button on the controller, to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
+This Win32 sample uses <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
 
 ### Win32 app entry point
 
