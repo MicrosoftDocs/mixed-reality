@@ -107,4 +107,4 @@ Once you're up and running with Azure Spatial Anchors, you can then <a href="htt
 ## See Also
 * [Spatial anchor persistence](coordinate-systems.md#spatial-anchor-persistence)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors)
+* <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>

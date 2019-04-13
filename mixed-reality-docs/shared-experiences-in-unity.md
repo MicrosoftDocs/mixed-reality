@@ -31,4 +31,4 @@ In situations where you cannot use Azure Spatial Anchors, [local anchor transfer
 ## See also
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors)
+* <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>

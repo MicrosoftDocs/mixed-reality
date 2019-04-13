@@ -31,4 +31,4 @@ In situations where you cannot use Azure Spatial Anchors, [local anchor transfer
 ## See also
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Azure Spatial Anchors SDK for HoloLens](https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/)
+* <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">Azure Spatial Anchors SDK for HoloLens</a>
