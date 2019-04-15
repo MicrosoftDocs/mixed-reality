@@ -1,3 +1,3 @@
-# Hands and Tools
-* [Direct Manipulation (Near)](direct-manipulation.md)
-* [Point and Commit (Far)](point-and-commit.md)
+# Hands and tools
+* [Direct manipulation (near)](direct-manipulation.md)
+* [Point and commit (far)](point-and-commit.md)
