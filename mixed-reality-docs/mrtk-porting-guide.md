@@ -10,6 +10,39 @@ keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
 
 # Getting your existing app ready for HoloLens 2
 
+This guide is specifically tailored to help developers who have an existing Unity app for HoloLens 1 to port their application for the new HoloLens 2 device. 
+
+There are four key steps for migrating a Unity app to Hololens 2. 
+
+1) Migrate project to latest version of Unity
+2) Update scene/project settings in Unity
+3) Compile dependencies/plugins for ARM processor
+4) Update to Mixed Reality Toolkit version 2
+
+It is **highly recommended** that, before beginning the porting process, developers utilize source control to save a snapshot of the original state of their app. Additionally, it is recommended to *save* state at various points during the process. It can also be very helpful to have another Unity instance of the original app to allow for side-by-side comparison during the port process. 
+
+**** ADD NOTE FOR Latest tools & visual studio etc**
+
+## Migrate project to latest version of Unity
+
+The first step to porting your Unity application will be to open it in the latest version of Unity. Currently, there are two options to choose from: Unity 2018.3.x or Unity 2019.1.x beta. There are mulltiple trade-offs between these two versions but the primary difference of significance is the ability to compile for ARM64 in Unity 2019+. 
+
+Developers should assess any plugin dependencies currently existing in their project and whether or not these DLLs can be built for ARM64. If a strong dependency plugin cannot be built for ARM64, then one will have to utilize Unity 2018.3.x LTS. Porting to ARM64 is generally desired, if possible, as there are many performance improvements seen on device as compared to ARM32.
+
+Table for Unity 2018.3.x vs Unity 2019+
+ARM 32 vs ARM 64
+Stable LTS build vs Beta release by Unity
+.NET deprecated vs .NET scripting back-end removed
+UNET deprecated vs UNET removed 
+
+## Update scene/project settings in Unity
+
+## Compile dependencies/plugins for ARM processor
+
+## Update to MRTK version 2
+
+
+
 If you have an existing HoloLens app built in Unity, here is your best bet - start with current HoloLens (1st gen),  latest Visual Studio, Unity 2018.3.x, and MRTK version 2.
 MRTK version 2 is the new toolkit on top of Unity supporting both HoloLens (1st gen) and HoloLens 2, and where all of the new HoloLens 2 capabilities have been added, such as hand interactions and eye tracking.
 
