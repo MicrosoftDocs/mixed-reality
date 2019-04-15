@@ -23,7 +23,7 @@ However, to fully optimize visual quality and [hologram stability](hologram-stab
 
 ## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2. 
 
-Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and everything will be configured correctly. 
+Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically.
 
 You can also manually configure the project without MRTK with the guide in the section below. 
 
