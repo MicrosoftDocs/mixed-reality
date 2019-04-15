@@ -9,7 +9,7 @@ keywords: Unity, mixed reality, development, getting started, new project
 ---
 
 
-#Configure a New Unity Project for Windows Mixed Reality 
+# Configure a New Unity Project for Windows Mixed Reality 
 
 (skip if you have already imported MRTK v2 into your Unity Project)
 
