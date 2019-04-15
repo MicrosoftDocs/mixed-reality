@@ -11,6 +11,8 @@ keywords: Unity, mixed reality, development, getting started, new project
 
 #Configure a New Unity Project for Windows Mixed Reality 
 
+(skip if you have already imported MRTK v2 into your Unity Project)
+
 If you'd like to created a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality, broken down into two categories: per-project and per-scene.
 
 ## Per-project settings
