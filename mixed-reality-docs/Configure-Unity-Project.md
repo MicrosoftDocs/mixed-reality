@@ -9,11 +9,11 @@ keywords: Unity, mixed reality, development, getting started, new project
 ---
 
 
-Configure a New Unity Project for Windows Mixed Reality 
+#Configure a New Unity Project for Windows Mixed Reality 
 
 If you'd like to created a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality, broken down into two categories: per-project and per-scene.
 
-### Per-project settings
+## Per-project settings
 
 To target Windows Mixed Reality, you first need to set your Unity project to export as a Universal Windows Platform app:
 1. Select **File > Build Settings...**
@@ -49,11 +49,11 @@ HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want 
 1. Select **Edit > Project Settings > Quality**
 2. Select the **dropdown** under the **Windows Store** logo and select **Fastest**. You'll know the setting is applied correctly when the box in the Windows Store column and **Fastest** row is green.
 
-### Per-scene settings
+## Per-scene settings
 
 **Unity camera settings**
 
-![Unity camera settings](images/unitycamerasettings.png)<br>
+![Unity camera settings](images/Unitycamerasettings.png)<br>
 *Unity camera settings*
 
 Once you enable the "Virtual Reality Supported" checkbox, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](rendering.md). There is no need to replace it with a custom camera to do this.
