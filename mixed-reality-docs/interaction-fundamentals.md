@@ -94,6 +94,18 @@ To help guide designers and developers through choices that can be difficult in 
 > [!Note]
 > Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article [Transitioning interaction models](coming-soon.md).
  
-## Next cection: visual design language
+## Next section: visual design language
 Click the link below or follow the page navigation to continue to the next section on [Visual design language](coming-soon.md).
+
+## See also
+* [Gaze and commit](gaze-and-commit.md)
+* [Direct manipulation](direct-manipulation.md)
+* [Point and commit](point-and-commit.md)
+* [Gaze targeting](gaze-targeting.md)
+* [Gestures](gestures.md)
+* [Voice design](voice-design.md)
+* [Motion controllers](motion-controllers.md)
+* [Spatial sound design](spatial-sound-design.md)
+* [Spatial mapping design](spatial-mapping-design.md)
+* [Comfort](comfort.md)
 
