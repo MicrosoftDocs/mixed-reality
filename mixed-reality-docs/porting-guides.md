@@ -3,7 +3,7 @@ title: Porting guides
 description: A step by step walthrough explaining how to port an existing immersive application to Windows Mixed Reality.
 author: ChimeraScorn
 ms.author: cwhite
-ms.date: 03/21/2018
+ms.date: 10/02/2018
 ms.topic: article
 keywords: port, porting, unity, middleware, engine, UWP
 ---
@@ -12,7 +12,10 @@ keywords: port, porting, unity, middleware, engine, UWP
 
 # Porting guides
 
-Windows 10 includes support for immersive and holographic headsets directly. If you have built content for another device such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception) only work in the Universal Windows Platform (UWP) app model. So if your app is not already built for UWP, porting to UWP will be part of the porting experience.
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
+Windows 10 includes support for immersive and holographic headsets directly. If you have built content for another device such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) only work in the Universal Windows Platform (UWP) app model. So if your app is not already built for UWP, porting to UWP will be part of the porting experience.
 
 ## Porting overview
 
@@ -27,22 +30,22 @@ At a high-level, these are the steps involved in porting existing content:
 
 ### Common step 1: Make sure you have the right development hardware
 
-The [install the tools](install-the-tools.md#immersive-headset-development) page lists the recommended development hardware.
+The [install the tools](install-the-tools.md#for-immersive-vr-headset-development) page lists the recommended development hardware.
 
 ### Common step 2: Upgrade to the latest flight of Windows 10
 
 The Windows Mixed Reality platform is still under active development, and to be most effective, we recommend being on the "Windows Insider Fast" flight. In order to have access to windows flights, you will need to [join the Windows Insider Program](https://insider.windows.com/).
 1. Install the [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10)
 2. [Join](https://insider.windows.com/) the Windows Insider Program.
-3. Enable [Developer Mode](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development)
+3. Enable [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
 4. Switch to the [Windows Insider Fast flights](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) through Settings --> Update & Security Section
 
 ### Common step 3: Upgrade to the most recent build of Visual Studio
-* Please see [Install the tools](install-the-tools.md#installation-checklist-for-immersive-headsets) page under Visual Studio 2017
+* Please see [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2017
 
 ### Common step 4: Be Ready for The Store
-* Use [Windows App Certification Kit](https://developer.microsoft.com/en-us/windows/develop/app-certification-kit) (aka WACK) early and often!
-* Use [Portability Analyzer](https://docs.microsoft.com/en-us/dotnet/standard/portability-analyzer) ([Download](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer))
+* Use [Windows App Certification Kit](https://developer.microsoft.com/windows/develop/app-certification-kit) (aka WACK) early and often!
+* Use [Portability Analyzer](https://docs.microsoft.com/dotnet/standard/portability-analyzer) ([Download](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer))
 
 ### Common step 5: Choose the correct Adapter
 * In systems like notebooks with two GPUs, [target the correct adapter](rendering-in-directx.md#hybrid-graphics-pcs-and-mixed-reality-applications). This applies to Unity apps, in addition to native DirectX apps, where a ID3D11Device is created, either explicitly or implicitly (Media Foundation), for its functionality.
@@ -53,22 +56,22 @@ The Windows Mixed Reality platform is still under active development, and to be 
 
 Follow all of the common steps. When in step #3, select the **Game Development with Unity** workload. You may deselect the Unity Editor optional component since you'll be installing a newer version of Unity from the instructions below.
 
-### Unity step 2: Upgrade to the latest 2017.2 public build of Unity with Windows MR Support
-1. Download the latest public build of 2017.2 with mixed reality support. At the time of this authoring, that is listed [here](https://forum.unity.com/threads/custom-build-2017-2-rc-mrtp-windows-mixed-reality-technical-preview.498253/).
+### Unity step 2: Upgrade to the latest public build of Unity with Windows MR Support
+1. Download the latest [recommended public build of Unity](install-the-tools.md) with mixed reality support.
 2. Save a copy of your project before you get started
-3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuide20172.html) available from Unity on porting to 2017.2
+3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuides.html) available from Unity on porting.
 4. Follow the [instructions](https://docs.unity3d.com/Manual/APIUpdater.html) on Unity's site for using their automatic API updater
 5. Check and see if there are additional changes that you need to make to get your project running, and work through any remaining errors and warnings. Note: If you have middleware that you depend on, you may need to update that middleware to get going (more details in step 3 below).
 
 ### Unity step 3: Upgrade your middleware to the latest versions
 
-With the update to 2017.2, there is a good chance that you need to update one or more middleware packages that your game or application depends on. Additionally, being on the latest version of all of your middleware will increase your likelihood of success throughout the rest of the porting process. Many middleware packages have recently added support for Universal Windows Platform (UWP), and upgrading to the most recent versions will let you leverage that work.
+With any Unity update, there is a good chance that you need to update one or more middleware packages that your game or application depends on. Additionally, being on the latest version of all of your middleware will increase your likelihood of success throughout the rest of the porting process. Many middleware packages have recently added support for Universal Windows Platform (UWP), and upgrading to the most recent versions will let you leverage that work.
 
 ### Unity step 4: Target your application to run on Universal Windows Platform (UWP)
 
 After installing the tools, you need to get your app running as a Universal Windows app.
-* Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. Please notice that you should stay on Unity 2017.2 for Windows MR.
-* For more UWP development resources, take a look at the [Windows 10 game development guide](https://docs.microsoft.com/en-us/windows/uwp/gaming/e2e).
+* Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. Please note that you should stay on the latest LTS release (any 20xx.4 release) for Windows MR.
+* For more UWP development resources, take a look at the [Windows 10 game development guide](https://docs.microsoft.com/windows/uwp/gaming/e2e).
 * Please note that Unity continues to improve IL2CPP support; IL2CPP makes some UWP ports significantly easier. If you are currently targeting the .Net scripting backend, you should consider converting to leverage the IL2CPP backend instead.
 
 Note: If your application has any dependencies on device specific services, such as match making from Steam, you will need to disable them at this step. At a later time, you can hook up to the equivalent services that Windows provides.
@@ -78,7 +81,7 @@ Note: If your application has any dependencies on device specific services, such
 Step 5 is no longer required. We are leaving it here so that the indexing of steps remains the same.
 
 ### Unity step 6: Get your Windows Mixed Reality hardware set up
-1. Review steps in [Immersive headset setup](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/before-you-start
+1. Review steps in [Immersive headset setup](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
 )
 2. Learn about [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 
@@ -122,7 +125,7 @@ Note that the system will automatically render the boundary when the user approa
 
 For more details, see the [Coordinate systems in Unity](coordinate-systems-in-unity.md) page.
 
-Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It is heuristic based so may not find the optimal solution, however, results are generally consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This is not publically available. The code should be directly usable in the final 2017.2 version of Unity that supports Windows Mixed Reality. The code will be ported to the current MRTK in the near future.
+Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It is heuristic based so may not find the optimal solution, however, results are generally consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This is not publically available. The code should be directly usable in 2017.2 and higher versions of Unity. The code will be ported to the current MRTK in the near future.
 
 [zip file of code on GitHub](https://github.com/KevinKennedy/MixedRealityToolkit-Unity/releases/tag/5.6.MRTP20) Important files:
 * Assets/HoloToolkit/Stage/Scripts/StageManager.cs - example of usage
@@ -145,12 +148,13 @@ Each game or application targeting an existing HMD will have a set of inputs tha
 
 ### Unity step 10: Performance testing and tuning
 
-Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you are targeting, there is a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you are likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you are targeting, there is a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you are likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/profiling/index) include performance profilers, and both [Microsoft](performance-recommendations-for-immersive-headset-apps.md) and [Intel](https://software.intel.com/en-us/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There is an extensive discussion of performance available at [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md).
+Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There is an extensive discussion of performance available at [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](performance-recommendations-for-unity.md).
 
 ## See also
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
-* [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
-* [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
+* [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
 * [Add Xbox Live support to Unity for UWP](https://docs.microsoft.com/windows/uwp/xbox-live/get-started-with-partner/partner-add-xbox-live-to-unity-uwp)

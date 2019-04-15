@@ -3,7 +3,7 @@ title: Voice input
 description: Voice input is a core input for HoloLens and Windows Mixed Reality immersive headsets. Voice can be used for commands, dictation, Cortana, and more.
 author: Hak0n
 ms.author: hakons
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: ggv, voice, cortana, speech, input
 ---
@@ -14,7 +14,7 @@ keywords: ggv, voice, cortana, speech, input
 
 Voice is one of the three key forms of input on HoloLens. It allows you to directly command a hologram without having to use [gestures](gestures.md). You simply [gaze](gaze.md) at a hologram and speak your command. Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces because it lets users cut through nested menus with one command.
 
-Voice input is powered by the [same engine](https://msdn.microsoft.com/en-us/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps.
+Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps.
 
 <br>
 
@@ -24,15 +24,18 @@ Voice input is powered by the [same engine](https://msdn.microsoft.com/en-us/lib
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Voice input</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with microphone)</td>
+<td> Voice input</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with microphone)</td>
 </tr>
 </table>
 
 ## The "select" command
 
 Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gestures.md#air-tap) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
+
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
 
 ![Say "select" to use the voice command for selection](images/kma-voice-select-00170-800px.png)<br>
 *Say "select" to use the voice command for selection*
@@ -92,7 +95,7 @@ Any time the holographic keyboard is active, you can switch to dictation mode in
 
 ## Communication
 
-For applications that want to take advantage of the customized audio input processing options provided by HoloLens, it is important to understand the various [audio stream categories](https://msdn.microsoft.com/en-us/library/windows/desktop/hh404178(v=vs.85).aspx) your app can consume. Windows 10 supports several different stream categories and HoloLens makes use of three of these to enable custom processing to optimize the microphone audio quality tailored for speech, communication and other which can be used for ambient environment audio capture (i.e. "camcorder") scenarios.
+For applications that want to take advantage of the customized audio input processing options provided by HoloLens, it is important to understand the various [audio stream categories](https://msdn.microsoft.com/library/windows/desktop/hh404178(v=vs.85).aspx) your app can consume. Windows 10 supports several different stream categories and HoloLens makes use of three of these to enable custom processing to optimize the microphone audio quality tailored for speech, communication and other which can be used for ambient environment audio capture (i.e. "camcorder") scenarios.
 * The AudioCategory_Communications stream category is customized for call quality and narration scenarios and provides the client with a 16kHz 24bit mono audio stream of the user's voice
 * The AudioCategory_Speech stream category is customized for the HoloLens (Windows) speech engine and provides it with a 16kHz 24bit mono stream of the user's voice. This category can be used by 3rd party speech engines if needed.
 * The AudioCategory_Other stream category is customized for ambient environment audio recording and provides the client with a 48kHz 24 bit stereo audio stream.

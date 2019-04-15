@@ -3,9 +3,9 @@ title: Coordinate systems
 description: The spatial coordinate systems used to build seated, standing, room-scale and world-scale mixed reality experiences.
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
-keywords: coordinate system, spatial coordinate system, orientation-only, seated-scale, standing-scale, room-scale, world-scale, 360 degree, seated, standing, room, world, scale, position, orientation, stationary, attached, stage, anchor, spatial anchor, world-locked, world-locking, body-locked, body-locking, bounds, persistence, sharing, tracking loss
+keywords: coordinate system, spatial coordinate system, orientation-only, seated-scale, standing-scale, room-scale, world-scale, 360 degree, seated, standing, room, world, scale, position, orientation, stationary, attached, stage, anchor, spatial anchor, world-locked, world-locking, body-locked, body-locking, bounds, persistence, sharing, tracking loss, cloud spatial anchor
 ---
 
 # Coordinate systems
@@ -20,17 +20,17 @@ At their core, mixed reality apps place [holograms](hologram.md) in your world t
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> <a href="coordinate-systems.md#stationary-frame-of-reference">Stationary frame of reference</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> <a href="coordinate-systems.md#stationary-frame-of-reference">Stationary frame of reference</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
-<td> <a href="coordinate-systems.md#attached-frame-of-reference">Attached frame of reference</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> <a href="coordinate-systems.md#attached-frame-of-reference">Attached frame of reference</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
-<td> <a href="coordinate-systems.md#stage-frame-of-reference">Stage frame of reference</a></td><td style="text-align: center;"> Not supported yet</td><td style="text-align: center;"> ✔️</td>
+<td> <a href="coordinate-systems.md#stage-frame-of-reference">Stage frame of reference</a></td><td style="text-align: center;"> Not supported yet</td><td style="text-align: center;"> Not supported yet</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
-<td> <a href="coordinate-systems.md#spatial-anchors">Spatial anchors</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> <a href="coordinate-systems.md#spatial-anchors">Spatial anchors</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr><tr>
-<td> <a href="spatial-mapping.md">Spatial mapping</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
+<td> <a href="spatial-mapping.md">Spatial mapping</a></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
 </table>
 
@@ -45,7 +45,7 @@ Mixed reality apps can design for a broad range of user experiences, from 360-de
 |  **Seated-scale** |  Above, plus **headset position** relative to zero position |  Racing game or space simulator | 
 |  **Standing-scale** |  Above, plus **stage floor origin** |  Action game where you duck and dodge in place  | 
 |  **Room-scale** |  Above, plus **stage bounds polygon** |  Puzzle game where you walk around the puzzle | 
-|  **World-scale** |  **Spatial anchors** (and typically [spatial mapping](spatial-mapping.md)) |  Game with enemies coming from your real walls, such as [RoboRaid](https://www.microsoft.com/hololens/apps/roboraid) | 
+|  **World-scale** |  **Spatial anchors** (and typically [spatial mapping](spatial-mapping.md)) |  Game with enemies coming from your real walls, such as [RoboRaid](https://www.microsoft.com/p/roboraid/9nblggh5fv3j) | 
 
 These experience scales follow a "nesting dolls" model. The key design principle here for Windows Mixed Reality is that a given headset supports apps built for a target experience scale, as well as all lesser scales:
 <br>
@@ -109,7 +109,7 @@ When first setting up an immersive headset, the user defines a **stage**, which 
 
 The user may also optionally define **stage bounds**, an area within the room that they've cleared of furniture where they intend to move around in mixed reality. If so, the app can build a **room-scale experience**, using these bounds to ensure that holograms are always placed where the user can reach them.
 
-Because the stage frame of reference provides a single fixed coordinate system within which to place floor-relative content, it is the easiest path for porting standing-scale and room-scale applications developed for virtual reality headsets. However, as with those VR platforms, a single coordinate system can only stabilize content in about a 5 meter (15 foot) diameter, before lever-arm effects cause content far from the center to shift noticeably as the system adjusts. To go beyond 5 meters, spatial anchors are needed.
+Because the stage frame of reference provides a single fixed coordinate system within which to place floor-relative content, it is the easiest path for porting standing-scale and room-scale applications developed for virtual reality headsets. However, as with those VR platforms, a single coordinate system can only stabilize content in about a 5 meter (16 foot) diameter, before lever-arm effects cause content far from the center to shift noticeably as the system adjusts. To go beyond 5 meters, spatial anchors are needed.
 
 ## Building a world-scale experience
 
@@ -149,9 +149,13 @@ You can save to disk the spatial anchors your app creates, and then load them ba
 
 By persisting anchors to the store, your users can place individual holograms or place a workspace around which an app will place its various holograms, and then find those holograms later where they expect them, over many uses of your app.
 
+You can also use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
+
 ### Spatial anchor sharing
 
-Your app can also share spatial anchors with other devices. By transferring a spatial anchor along with its supporting understanding of the environment and sensor data around it from one HoloLens to another, both devices can then reason about the same location. By having each device render a hologram using that shared spatial anchor, both users will see the hologram appear at the same place in the real world.
+Your app can also share a spatial anchor in real-time with other devices, allowing for real-time shared experiences.
+
+By using <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>, your app can share a spatial anchor across multiple HoloLens, iOS and Android devices. By having each device render a hologram using the same spatial anchor, all users will see the hologram appear at the same place in the real world.
 
 ## Avoid head-locked content
 
@@ -189,4 +193,5 @@ Sometimes, a home or other space may have two identical areas. For example, two 
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
 * [Spatial anchors](spatial-anchors.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Case study - Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)

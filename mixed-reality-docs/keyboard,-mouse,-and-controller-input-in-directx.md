@@ -16,6 +16,9 @@ Keyboards, mice, and game controllers can all be useful forms of input for Windo
 
 To use keyboard input on HoloLens, pair a Bluetooth keyboard to your device or use virtual input via the Windows Device Portal. To use keyboard input while wearing a Windows Mixed Reality immersive headset, assign input focus to mixed reality by putting on the device or using the Windows Key + Y keyboard combination. Keep in mind that apps intended for HoloLens must provide functionality without these devices attached.
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Subscribe for CoreWindow input events
 
 ### Keyboard input
@@ -50,7 +53,7 @@ For more information on implementing CoreTextEditContext support, see the [CoreT
 
 You can also use mouse input, again via the UWP CoreWindow input event handlers. Here's how to modify the Windows Holographic app template to support mouse clicks in the same way as pressed gestures. After making this modification, a mouse click while wearing an immersive headset device will reposition the cube.
 
-Note that UWP apps can also get raw XY data for the mouse by using the [MouseDevice](https://docs.microsoft.com/en-us/uwp/api/Windows.Devices.Input.MouseDevice) API.
+Note that UWP apps can also get raw XY data for the mouse by using the [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API.
 
 Start by declaring a new OnPointerPressed handler in AppView.h:
 

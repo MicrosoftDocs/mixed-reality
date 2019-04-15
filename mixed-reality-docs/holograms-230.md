@@ -8,6 +8,11 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial mapping, surface reconstruction, mesh
 ---
 
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+
+<br>
+
 # MR Spatial 230: Spatial mapping
 
 [Spatial mapping](spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment. In MR Spatial 230 (Project Planetarium) we'll learn how to:

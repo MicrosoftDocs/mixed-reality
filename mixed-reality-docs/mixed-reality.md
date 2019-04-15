@@ -20,7 +20,7 @@ Mixed reality is the result of blending the physical world with the digital worl
 
 Over the past several decades, the relationship between human input and computer input has been well explored. It even has a widely studied discipline known as *human computer interaction* or HCI. Human input happens through a variety of means including keyboards, mice, touch, ink, voice, and even Kinect skeletal tracking.
 
-Advancements in sensors and processing are giving rise to a new area of computer input from environments. The interaction between computers and environments is effectively environmental understanding, or *perception*. Hence the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world (e.g. [head tracking](coordinate-systems.md)), surfaces and boundaries (e.g. [spatial mapping](spatial-mapping.md) and [spatial understanding](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)), ambient lighting, environmental sound, object recognition, and location.
+Advancements in sensors and processing are giving rise to a new area of computer input from environments. The interaction between computers and environments is effectively environmental understanding, or *perception*. Hence the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world (e.g. [head tracking](coordinate-systems.md)), surfaces and boundaries (e.g. [spatial mapping](spatial-mapping.md) and [spatial understanding](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)), ambient lighting, environmental sound, object recognition, and location.
 
 Now, the combination of all three – computer processing, human input, and environmental input – sets the opportunity to create true mixed reality experiences. Movement through the physical world can translate to movement in the digital world. Boundaries in the physical world can influence application experiences, such as game play, in the digital world. Without environmental input, experiences cannot blend between the physical and digital realities.
 
@@ -72,18 +72,8 @@ Often, it is best to think what type of experience an app or game developer want
 * **In the middle (fully mixed reality).** These experiences perfectly blend the real world and the digital world. Viewers who have seen the movie [Jumanji](https://en.wikipedia.org/wiki/Jumanji) can reconcile how the physical structure of the house where the story took place was blended with a jungle environment.
 * **Towards the right (near digital reality).** Users experience a completely digital environment and are oblivious to what occurs in the physical environment around them.
 
-![Where experiences lay on the mixed reality spectrum](images/mixed-reality-spectrum-experience-placement-550px.png)
-
-Here's how different experiences take advantage of their position on the mixed reality spectrum:
-* **Skype on Microsoft HoloLens.** This experience allows collaboration through drawing in someone's physical environment. As an experience, it is currently further left on the spectrum because the physical environment remains the location of activity.
-* **Fragments** and **RoboRaid.** Both of these take advantage of the layout of the user's physical environment, walls, floors, furniture to place digital content in the world. The experience moves further to the right on the spectrum, but the user always believes they are in their physical world.
-* **HoloTour on Microsoft HoloLens.** HoloTour is designed with an immersive experience in mind. Users are meant to walk around tourist locations. On HoloLens, HoloTour pushes the limits of the device's immersive capabilities.
-* **HoloTour on immersive devices.** Meanwhile when HoloTour runs on an immersive device, it showcases the environmental input by allowing users to walk around the tourist location. The boundaries that help users avoid walking into walls represent further capabilities that pull the experience towards the middle.
-* **360° videos.** Since environmental input like translational movement does not affect the video playback experience, these experiences fall to the far right towards digital reality, effectively fitting into the narrow part of the spectrum that is virtual reality.
-
-Skype for HoloLens, Fragments and RoboRaid are best experienced with HoloLens. Likewise, 360° video is best experienced on immersive devices. HoloTour showcases the best of what both types of devices can do today when trying to push towards the center experience of mixed reality.
 
 ## See also
-* [API Reference: Windows.Perception](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception)
-* [API Reference: Windows.Perception.Spatial](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception.Spatial)
-* [API Reference: Windows.Perception.Spatial.Surfaces](https://docs.microsoft.com/en-us/uwp/api/Windows.Perception.Spatial.Surfaces)
+* [API Reference: Windows.Perception](https://docs.microsoft.com/uwp/api/Windows.Perception)
+* [API Reference: Windows.Perception.Spatial](https://docs.microsoft.com/uwp/api/Windows.Perception.Spatial)
+* [API Reference: Windows.Perception.Spatial.Surfaces](https://docs.microsoft.com/uwp/api/Windows.Perception.Spatial.Surfaces)

@@ -3,29 +3,47 @@ title: Locatable camera
 description: General information about the HoloLens front facing camera.
 author: wguyman
 ms.author: wguyman
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: camera, hololens, color camera, front facing
 ---
 
-
-
 # Locatable camera
 
-HoloLens includes a world-facing camera mounted on the front of the device which enables apps to see what the user sees. Developers have access to and control of the camera just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.capture.mediacapture.aspx) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has also wrapped these windows APIs](locatable-camera-in-unity.md) to abstract simple usage of the camera on HoloLens for tasks such as taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
+HoloLens includes a world-facing camera mounted on the front of the device which enables apps to see what the user sees. Developers have access to and control of the camera just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has also wrapped these windows APIs](locatable-camera-in-unity.md) to abstract simple usage of the camera on HoloLens for tasks such as taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
 
-## Device Camera Information
-* Fixed focus with auto white balance and auto exposure and full image processing pipe
-* A white Privacy LED facing the world will illuminate whenever the camera is active
+## Device camera information
+
+### HoloLens (first-generation)
+
+* Fixed focus photo/video (PV) camera, with auto white balance, auto exposure, and full image processing pipe
+* White Privacy LED facing the world will illuminate whenever the camera is active
 * The camera supports the following modes (all modes are 16:9 aspect ratio) at 30, 24, 20, 15, and 5 fps:
 
-|  Video  |  Preview  |  Still  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
-|----------|----------|----------|----------|----------|
-|  1280x720 |  1280x720 |  1280x720 |  45deg  |  (default mode) | 
-|  N/A |  N/A |  2048x1152 |  67deg |  Highest resolution still image | 
-|  1408x792 |  1408x792 |  1408x792 |  48deg |  Overscan (padding) resolution for video stabilization | 
-|  1344x756 |  1344x756 |  1344x756 |  67deg |  Large FOV video mode with overscan | 
-|  896x504 |  896x504 |  896x504 |  48deg |  Low power / Low resolution mode for image processing tasks | 
+  |  Video  |  Preview  |  Still  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
+  |----------|----------|----------|----------|----------|
+  |  1280x720 |  1280x720 |  1280x720 |  45deg  |  (default mode with video stabilization) | 
+  |  N/A |  N/A |  2048x1152 |  67deg |  Highest resolution still image | 
+  |  1408x792 |  1408x792 |  1408x792 |  48deg |  Overscan (padding) resolution before video stabilization | 
+  |  1344x756 |  1344x756 |  1344x756 |  67deg |  Large FOV video mode with overscan | 
+  |  896x504 |  896x504 |  896x504 |  48deg |  Low power / Low resolution mode for image processing tasks | 
+
+### HoloLens 2
+
+* Auto-focus photo/video (PV) camera, with auto white balance, auto exposure, and full image processing pipe
+* White Privacy LED facing the world will illuminate whenever the camera is active
+* The camera supports the following modes (all video modes are 16:9 aspect ratio):
+
+  >[!NOTE]
+  >These modes are subject to change prior to HoloLens 2 general availability.
+
+  |  Video  |  Preview  |  Still  |  Frame rates  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
+  |----------|----------|----------|----------|----------|----------|
+  |  1920x1080 |  1920x1080 |  N/A |  30, 15 fps  |  54deg  |  (default mode with video stabilization) | 
+  |  N/A |  N/A |  3904X2196 |  N/A  |  64deg |  Highest resolution still image | 
+  |  2272x1278 |  2272x1278 |  N/A |  30, 15 fps  |  64deg |  Overscan (padding) resolution before video stabilization | 
+  |  1952x1100 |  1952x1100 |  1952x1100  |  30, 15 fps  |  64deg |  High-quality streaming | 
+  |  1280x720 |  1280x720 |  N/A |  30, 15, 5 fps  |  64deg |  Low power/resolution mode for streaming and image processing tasks | 
 
 ## Locating the Device Camera in the World
 
@@ -33,19 +51,19 @@ When HoloLens takes photos and videos, the captured frames include the location 
 
 "Camera" elsewhere in HoloLens documentation may refer to the "virtual game camera" (the frustum the app renders to). Unless denoted otherwise, "camera" on this page refers to the real-world RGB color camera.
 
-The details on this page cover [Media Foundation Attributes](https://msdn.microsoft.com/en-us/library/windows/desktop/mt740395(v=vs.85).aspx), however there are also APIs to pull camera intrinsics using [WinRT APIs](https://msdn.microsoft.com/library/windows/apps/windows.media.devices.core.cameraintrinsics).  
+The details on this page cover [Media Foundation Attributes](https://msdn.microsoft.com/library/windows/desktop/mt740395(v=vs.85).aspx), however there are also APIs to pull camera intrinsics using [WinRT APIs](https://msdn.microsoft.com/library/windows/apps/windows.media.devices.core.cameraintrinsics).  
 
 ### Images with Coordinate Systems
 
 Each image frame (whether photo or video) includes a coordinate system, as well as two important transforms. The "view" transform maps from the provided coordinate system to the camera, and the "projection" maps from the camera to pixels in the image. Together, these transforms define for each pixel a ray in 3D space representing the path taken by the photons that produced the pixel. These rays can be related to other content in the app by obtaining the transform from the frame's coordinate system to some other coordinate system (e.g. from a [stationary frame of reference](coordinate-systems.md#stationary-frame-of-reference)). To summarize, each image frame provides the following:
 * Pixel Data (in RGB/NV12/JPEG/etc. format)
-* 3 pieces of metadata (stored as [IMFAttributes](https://msdn.microsoft.com/en-us/library/windows/desktop/ms704598(v=vs.85).aspx)) that make each frame "locatable":
+* 3 pieces of metadata (stored as [IMFAttributes](https://msdn.microsoft.com/library/windows/desktop/ms704598(v=vs.85).aspx)) that make each frame "locatable":
 
 |  Attribute name  |  Type  |  GUID  |  Description | 
 |----------|----------|----------|----------|
-|  MFSampleExtension_Spatial_CameraCoordinateSystem  |  IUnknown ([SpatialCoordinateSystem](https://msdn.microsoft.com/en-us/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx))  |  {9D13C82F-2199-4E67-91CD-D1A4181F2534}  |  Stores the [coordinate system](coordinate-systems-in-directx.md) of the captured frame | 
-|  MFSampleExtension_Spatial_CameraViewTransform  |  Blob ([Matrix4x4](https://msdn.microsoft.com/en-us/library/windows/apps/windows.foundation.numerics.matrix4x4.aspx))  |  {4E251FA4-830F-4770-859A-4B8D99AA809B}  |  Stores the camera's extrinsic transform in the coordinate system | 
-|  MFSampleExtension_Spatial_CameraProjectionTransform  |  Blob ([Matrix4x4](https://msdn.microsoft.com/en-us/library/windows/apps/windows.foundation.numerics.matrix4x4.aspx))  |  {47F9FCB5-2A02-4F26-A477-792FDF95886A}  |  Stores the camera's projection transform | 
+|  MFSampleExtension_Spatial_CameraCoordinateSystem  |  IUnknown ([SpatialCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx))  |  {9D13C82F-2199-4E67-91CD-D1A4181F2534}  |  Stores the [coordinate system](coordinate-systems-in-directx.md) of the captured frame | 
+|  MFSampleExtension_Spatial_CameraViewTransform  |  Blob ([Matrix4x4](https://msdn.microsoft.com/library/windows/apps/windows.foundation.numerics.matrix4x4.aspx))  |  {4E251FA4-830F-4770-859A-4B8D99AA809B}  |  Stores the camera's extrinsic transform in the coordinate system | 
+|  MFSampleExtension_Spatial_CameraProjectionTransform  |  Blob ([Matrix4x4](https://msdn.microsoft.com/library/windows/apps/windows.foundation.numerics.matrix4x4.aspx))  |  {47F9FCB5-2A02-4F26-A477-792FDF95886A}  |  Stores the camera's projection transform | 
 
 The projection transform represents the intrinsic properties (focal length, center of projection, skew) of the lens mapped onto an image plane that extends from -1 to +1 in both the X and Y axis.
 
@@ -158,8 +176,8 @@ To recognize a visual pattern, and then place that object in the applications wo
 Some important image processing links:
 * [OpenCV](http://opencv.org/)
 * [QR Tags](https://en.wikipedia.org/wiki/QR_code)
-* [FaceSDK](http://research.microsoft.com/en-us/projects/facesdk/)
-* [Microsoft Translator](https://www.microsoft.com/en-us/translator/products.aspx)
+* [FaceSDK](http://research.microsoft.com/projects/facesdk/)
+* [Microsoft Translator](https://www.microsoft.com/translator/business)
 
 Keeping an interactive application frame-rate is critical, especially when dealing with long-running image recognition algorithms. For this reason we commonly use the following pattern:
 1. Main Thread: manages the camera object
@@ -257,4 +275,4 @@ Examples:
 * [Locatable camera in Unity](locatable-camera-in-unity.md)
 * [Mixed reality capture](mixed-reality-capture.md)
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
-* [Media capture introduction](https://msdn.microsoft.com/en-us/library/windows/apps/mt243896.aspx)
+* [Media capture introduction](https://msdn.microsoft.com/library/windows/apps/mt243896.aspx)

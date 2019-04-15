@@ -3,99 +3,122 @@ title: SF Reactor Academy events calendar
 description: Calendar of mixed reality developer events at the Reactor in San Francisco.
 author: danielescudero
 ms.author: daescu
-ms.date: 09/06/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: event, calendar, academy, schedule, sf, san francisco, reactor
 ---
 
-# Windows Mixed Reality Events
+# Microsoft Mixed Reality Events
 
-Join the Windows Mixed Reality Team at these upcoming events!
+Join the Microsoft Mixed Reality Team at these upcoming events!
 
-**[San Francisco Reactor](https://developer.microsoft.com/en-us/reactor/#ReactorSF)**<br>
+**[San Francisco Reactor](https://developer.microsoft.com/reactor/#ReactorSF)**<br>
 680 Folsom St.<br>
 San Francisco, CA 94107
 
----
-## IGNITE
-### September 24-28, 2018
-Get the latest insights and skills from technology leaders and practitioners shaping the future of cloud, data, business intelligence, teamwork, and productivity. Immerse yourself with the latest tools, tech, and experiences that matter, and hear the latest updates and ideas directly from the experts.
-
-**This event has sold out, however make sure to join us for the keynote, more information is available [here](https://www.microsoft.com/en-us/ignite).**
 
 
 ---
-## AWE: Projection Mapping
-### October 9, 2018 6:30PM - 9:00PM
-This month AWE Nite SF explores the world of projection mapping. 
-Beer and pizza will be served during networking.
+## **[Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)** 
+### April 8, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
 
-Interested in demoing, sponsoring or volunteering at this event? Fill out this form https://augmentedworldexpo.com/awe-nite-meetups/
+**Sign up to the meetup [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)**
 
-**Register for this event [here](https://www.meetup.com/AWENiteSF/events/252620735/).**
 
 ---
-## VRS 2018
-### October 16-17, 2018
-Microsoft will be sponsoring VRS 2018, the annual executive conference produced by Greenlight Insights, the global leader in virtual and augmented reality market intelligence.
+## **[HoloLens and Mixed Reality Meetup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961074327&sdata=08%2FHAyYghOFJC63HQAeb0bJU4Wv8JPH%2BSCD%2FgIhkMog%3D&reserved=0)**
+### April 11, 2019
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
 
-**Register for this event [here](https://www.vrsconference.com/).**
+**Sign up to the meetup [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961074327&sdata=08%2FHAyYghOFJC63HQAeb0bJU4Wv8JPH%2BSCD%2FgIhkMog%3D&reserved=0)**
 
----
-## Microsoft HoloLens & Windows Mixed Reality Meet-Up 
-### October 15, 2018
-Let's keep on talking about HoloLens and Mixed Reality. This time it's about what it takes to make HoloLens apps, and an amazing new feature coming to HoloLens!.
-
-**Register for this event [here](https://www.meetup.com/hololens-mr/events/254664405/).**
 
 ---
-## VRS Summit
-### October 18, 2018
-This Innovation Junto will explore a variety of the hottest topics and themes in technology & innovation. Top 5 Junto 2018 Themes:
-*	Natural Language Processing & Voice Interfaces
-*	Blockchain
-*	Deep Neural Networks
-*	Big Data, the Cloud, and XR
-*	Artificial Intelligence & Computer Vision
+## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
+### April 23, 2019
+The Realities Show is a 30 minutes video livestream about HoloLens 2, Mixed Reality Services and MR technologies. In each episode we'll dive into features, capabilities, the tech behind it, how to develop for the different devices, recommend best practices and of course answer questions from our audience.
 
-**Register for this event [here](https://vrsconference.com/innovation-junto/).**
+This episode is  all about Human Understanding. Near interactions, far interactions, Eye-tracking and voice.
+
+**[Watch the live and past episodes here.](http://aka.ms/trs)**
+
 
 ---
-## Unite LA
-### October 23-25, 2018
-Come and check out the Microsoft booth at Unite LA – Unity’s premium developer event. Get up-to-date with the latest developments in the content-creation engine used by a community of millions. And see the beautiful and amazing things other creators are doing with 2D, 3D, and VR/AR games and experiences in Unity. Thousands of creators just like you, across multiple industries including games, film, auto and AEC, come together at Unite Los Angeles. It’s not to be missed!
+## **[Mixed Reality Dev Days, Seattle](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
+### May 2-3, 2019
+At Mixed Reality Dev Days, you’ll build the skills, network, and ideas you need to take your mixed reality applications to the next level.
 
-**Register for this event [here](https://unite.unity.com/2018/los-angeles).**
+**[More information here](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
 
----
-## Windows Mixed Reality Hackathon with Springer Nature 
-### November 7-9, 2018
-Explore the potential to visualize Springer Nature publications in new ways, using Augmented Reality with Microsoft HoloLens 
-- Help to shape the external awareness of Springer Nature: from traditional publisher to becoming a tech company with key focus on Open Research and Open Access publishing 
-- Serve as innovation hub for colleagues and industry partners to generate new technology  
-- Build strong relationships with top research institutes and corporations in the Bay Area 
-- Provide Springer Nature with first-hand feedback from users of our content and data and help to identify pain points and room for improvement  
-- Allow trial & error with swift prototypes and proofs of concept
-
-**Register for this event [here](https://www.eventbrite.com/e/springer-nature-hackathon-data-visualization-mixed-reality-in-research-publishing-tickets-50399147206).**
 
 ---
-# Past Events
-[Mixed Reality: Mixed Reality Workgroup](https://www.meetup.com/hololens-mr/events/254791796/) - September 24, 2018
+## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
+### May 6, 2019
+The Realities Show is a 30 minutes video livestream about HoloLens 2, Mixed Reality Services and MR technologies. In each episode we'll dive into features, capabilities, the tech behind it, how to develop for the different devices, recommend best practices and of course answer questions from our audience.
 
-[Mixed Reality: Augmenting Our World](https://siliconvalleyforum.com/event/mixed-reality-augmenting-our-world/) - September 20, 2018
+**More information coming soon. [Watch previous episodes here.](http://aka.ms/trs)**
 
-[AWE Nite SF – Augmented Reality & Sports](https://www.meetup.com/AWENiteSF/events/252620689/) - September 11, 2018
 
-[Mixed Reality & HoloLens Work Group](https://www.meetup.com/hololens-mr/events/254051135/) - September 10, 2018
+---
+## **[Microsoft //Build, Seattle](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fbuild&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961104348&sdata=hozCZlUHbpPxuYJaK5i802K6beJ5flmN0gEK7C1%2BIHw%3D&reserved=0)**
+### May 6-10, 2019
+Join us in Seattle for Microsoft’s premier event for developers. Come and experience the latest developer tools and technologies. Imagine new ways to create software by getting industry insights into the future of software development. Connect with your community to understand new development trends and innovative ways to code.
 
-[WebXR Hackathon Challenge](https://www.eventbrite.com/e/webxr-weekend-challenge-tickets-46100317290) - June 29 - July 1, 2018
+**Register for Microsoft //Build 2019 [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fbuild&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961104348&sdata=hozCZlUHbpPxuYJaK5i802K6beJ5flmN0gEK7C1%2BIHw%3D&reserved=0)**
 
-[Non-Gaming meet-up (Medical)](https://www.eventbrite.com/e/ngvr-13-medical-xr-the-future-of-healthcare-using-immersive-technology-tickets-46958021707) - July 16, 2018
 
-[AWE meet-up](https://www.meetup.com/AWENiteSF/events/251691130/) - July 17, 2018
+---
+## **[HoloLens and Mixed Reality Meetup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961074327&sdata=08%2FHAyYghOFJC63HQAeb0bJU4Wv8JPH%2BSCD%2FgIhkMog%3D&reserved=0)**
+### May 15, 2019
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
 
-[Women in Data -Soft Skills in Data Science meet-up](https://www.meetup.com/San-Francisco-Women-in-Data/events/251211158/) - July 18, 2018
+**Sign up to the meetup [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961074327&sdata=08%2FHAyYghOFJC63HQAeb0bJU4Wv8JPH%2BSCD%2FgIhkMog%3D&reserved=0)**
 
-[XRedu Hackathon](https://www.eventbrite.com/e/xr-edu-challenge-tickets-46309791834) - July 27-29, 2018
 
+---
+## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
+### May 28, 2019
+The Realities Show is a 30 minutes video livestream about HoloLens 2, Mixed Reality Services and MR technologies. In each episode we'll dive into features, capabilities, the tech behind it, how to develop for the different devices, recommend best practices and of course answer questions from our audience.
+
+**More information coming soon. [Watch previous episodes here.](http://aka.ms/trs)**
+
+
+---
+## **[Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)**
+### May 28, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
+
+**Sign up to the meetup [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)**
+
+
+---
+## **[Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)** 
+### June 10, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
+
+**Sign up to the meetup [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)**
+
+
+---
+## **[HoloLens and Mixed Reality Meetup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961074327&sdata=08%2FHAyYghOFJC63HQAeb0bJU4Wv8JPH%2BSCD%2FgIhkMog%3D&reserved=0)**
+### June 12, 2019
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+
+**Sign up to the meetup [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961074327&sdata=08%2FHAyYghOFJC63HQAeb0bJU4Wv8JPH%2BSCD%2FgIhkMog%3D&reserved=0)**
+
+
+---
+## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
+### June 14, 2019
+The Realities Show is a 30 minutes video livestream about HoloLens 2, Mixed Reality Services and MR technologies. In each episode we'll dive into features, capabilities, the tech behind it, how to develop for the different devices, recommend best practices and of course answer questions from our audience.
+
+**More information coming soon. [Watch previous episodes here.](http://aka.ms/trs)**
+
+
+---
+## **[Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)**
+### June 24, 2019
+As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
+
+**Sign up to the meetup [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)**

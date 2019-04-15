@@ -15,17 +15,17 @@ keywords: Windows Mixed Reality, Simulator, Testing
 The Windows Mixed Reality simulator allows you to test mixed reality apps on your PC without a Windows Mixed Reality immersive headset. It is available beginning with the Windows 10 Creators Update. The simulator is similar to the [HoloLens emulator](using-the-hololens-emulator.md), though the simulator does not use a virtual machine. Apps running in the simulator run in your Windows 10 desktop user session, just like they would if you were using an immersive headset. The human and environmental input that would usually be read by the sensors on an immersive headset are instead simulated using your keyboard, mouse, or Xbox controller. Apps don't need to be modified to run in the simulator, and don't know that they aren't running on an immersive headset.
 
 ## Enabling the Windows Mixed Reality simulator
-1. **Install the latest Windows Insider Preview Build** - 64-bit version is required. See [here](install-the-tools.md#installation-checklist-for-immersive-headsets) for more details.
-2. **Enable Developer mode** from Settings -> Update and Security -> For developers
-3. Launch the **Mixed Reality Portal** from the desktop
-4. If this is your first time launching the portal, you'll need to go through the setup experience
-  a. Click **Get started**
-  b. Click **I agree** to accept the agreement
-  c. Click **Set up for simulation (for developers)** to proceed through setup without a physical device
-  d. Click **Set up** to confirm your choice
-5. Click the **For developers** button on the left side of the Mixed Reality Portal
-6. Turn the Simulation toggle switch to **On**
-  a. This requires admin permissions and you must accept the User Account Control dialog that appears
+
+1. **Enable Developer mode** from Settings -> Update and Security -> For developers
+2. Launch the **Mixed Reality Portal** from the desktop
+3. If this is your first time launching the portal, you'll need to go through the setup experience
+   1. Click **Get started**
+   2. Click **I agree** to accept the agreement
+   3. Click **Set up for simulation (for developers)** to proceed through setup without a physical device
+   4. Click **Set up** to confirm your choice
+4. Click the **For developers** button on the left side of the Mixed Reality Portal
+5. Turn the Simulation toggle switch to **On**
+   * This requires admin permissions and you must accept the User Account Control dialog that appears
 
 You should now be running with simulation!
 
@@ -54,6 +54,7 @@ The Mixed Reality simulator can simulate up to two hand-held tracked motion cont
 * Touchpad
 
 ## See also
+* [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Advanced Mixed Reality Simulator Input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
 * [Spatial mapping in Unity](spatial-mapping-in-unity.md)
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)

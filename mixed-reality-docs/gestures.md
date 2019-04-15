@@ -2,10 +2,10 @@
 title: Gestures
 description: Hand gestures allow users to take action in mixed reality. 
 author: rwinj
-ms.author: randyw
-ms.date: 03/21/2018
+ms.author: cmeekhof
+ms.date: 02/24/2019
 ms.topic: article
-keywords: Windows Mixed Reality, Gestures, interaction, design
+keywords: Mixed Reality, Gestures, interaction, design
 ---
 
 
@@ -22,15 +22,21 @@ Hand gestures allow users take action in mixed reality. Interaction is built on 
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Gestures</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
+<td> Gestures</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+</tr>
+<tr>
+<td> Articulated hands</td><td></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
 ## Gaze-and-commit
 
-To take actions, hand gestures use [Gaze](gaze.md) as the targeting mechanism. The combination of **Gaze** and the **Air tap** gesture results in a **gaze-and-commit** interaction. An alternative to gaze-and-commit is **point-and-commit**, enabled by [motion controllers](motion-controllers.md). Apps that run on HoloLens only need to support gaze-and-commit since HoloLens does not support motion controllers. Apps that run on both HoloLens and immersive headsets should support both gaze-driven and pointing-driven interactions, to give users choice in what input device they use.
+To take actions, hand gestures use [head gaze](gaze.md) as the targeting mechanism. The combination of **Gaze** and the **Air tap** gesture results in a **gaze-and-commit** interaction. An alternative to gaze-and-commit is **point-and-commit**, enabled by [motion controllers](motion-controllers.md). Apps that run on HoloLens only need to support gaze-and-commit since HoloLens does not support motion controllers. Apps that run on both HoloLens and immersive headsets should support both gaze-driven and pointing-driven interactions, to give users choice in what input device they use.
 
 ## The two core gestures of HoloLens
 

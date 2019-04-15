@@ -2,7 +2,7 @@
 title: Case study - Using spatial sound in RoboRaid
 description: Spatial sound is one of the most exciting features of Microsoft HoloLens, providing a way for users to perceive what's going on around them when objects are out of the line of sight.
 author: mattzmsft
-ms.author: csinex
+ms.author: hakons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, RoboRaid, spatial sound
@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, HoloLens, RoboRaid, spatial sound
 
 # Case study - Using spatial sound in RoboRaid
 
-Charles Sinex, audio lead on the Microsoft HoloLens Experience Team, talks about the unique challenges he encountered when creating audio for [RoboRaid](https://www.microsoft.com/microsoft-hololens/en-us/apps/RoboRaid), a mixed reality first-person shooter.
+Charles Sinex, audio lead on the Microsoft HoloLens Experience Team, talks about the unique challenges he encountered when creating audio for [RoboRaid](https://www.microsoft.com/en-us/p/roboraid/9nblggh5fv3j), a mixed reality first-person shooter.
 
 ## The tech
 
@@ -91,4 +91,4 @@ You can try this yourself using the audio assets below:
 
 ## See Also
 * [Spatial sound](spatial-sound.md)
-* [RoboRaid for Microsoft HoloLens](https://www.microsoft.com/microsoft-hololens/en-us/apps/RoboRaid)
+* [RoboRaid for Microsoft HoloLens](https://www.microsoft.com/en-us/p/roboraid/9nblggh5fv3j)
