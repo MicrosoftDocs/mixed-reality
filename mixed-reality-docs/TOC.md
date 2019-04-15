@@ -128,9 +128,10 @@
 ### [Holographic Remoting Player](holographic-remoting-player.md)
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 ## Unity
-### [Unity development overview](unity-development-overview.md)
+#### [Unity development overview](unity-development-overview.md)
 ### Getting started
-#### [Mixed Reality Toolkit](mrtk-getting-started.md)
+#### [Accelerate development with Mixed Reality Toolkit v2](mrtk-getting-started.md)
+#### [Configure Unity Project for Windows Mixed Reality]
 #### [Recommended settings for Unity](recommended-settings-for-unity.md)
 #### [Unity Play Mode](unity-play-mode.md)
 #### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
@@ -141,6 +142,7 @@
 #### [Persistence in Unity](persistence-in-unity.md)
 #### [Gaze in Unity](gaze-in-unity.md)
 #### [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
+#### [Hand and Eye Tracking in Unity](hand-eye-in-unit.md)
 #### [Voice input in Unity](voice-input-in-unity.md)
 #### [Spatial mapping in Unity](spatial-mapping-in-unity.md)
 #### [Spatial sound in Unity](spatial-sound-in-unity.md)
@@ -153,6 +155,7 @@
 ### Advanced topics
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
+### Legacy Documents (Unity 2017.4/HTK/MRTK v1)
 ## Unreal
 ### Unreal for HoloLens 2 - coming soon!
 ## DirectX
