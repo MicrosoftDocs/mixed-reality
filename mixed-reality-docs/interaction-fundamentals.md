@@ -13,7 +13,7 @@ The philosophy of simple, instinctual interactions is woven throughout the Micro
 
 These instinctual interactions utilize all available input technologies, including inside out tracking, hand tracking, eye tracking, and natural language, in seamless multimodal interaction models.  Based on our research, designing and developing multimodally, and not based on single inputs, is critical to creating instinctive experiences. 
 
-The Instinctual Interaction models also naturally align across device types.  For example, far interaction on a Windows Immersive headset with a 6 DoF controlller and far interaction on a HoloLens 2 use the same affordances, patterns, and behaviors.  Not only is this convenient for developers and designers, but it feels natural to end users. 
+The Instinctual Interaction models also naturally align across device types.  For example, far interaction on an immersive headset with a 6 DoF controlller and far interaction on a HoloLens 2 use the same affordances, patterns, and behaviors.  Not only is this convenient for developers and designers, but it feels natural to end users. 
 
 We've structures our guidance to reflect this philosophy: that the most instinctual interaction models are multimodal, and that interaction is consistent across device types and whether users are using controllers or not.
 
