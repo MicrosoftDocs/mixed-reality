@@ -128,7 +128,7 @@
 ### [Holographic Remoting Player](holographic-remoting-player.md)
 ### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 ## Unity
-#### [Unity development overview](unity-development-overview.md)
+### [Unity development overview](unity-development-overview.md)
 ### Getting started
 #### [Accelerate development with Mixed Reality Toolkit v2](mrtk-getting-started.md)
 #### [Configure Unity Project for Windows Mixed Reality](Configure-Unity-Project.md)
