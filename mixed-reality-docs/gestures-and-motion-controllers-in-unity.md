@@ -28,7 +28,7 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 
 <table>
 <tr>
-<th rowspan="2">Input </th><th colspan="2"><a href="gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">Common Unity APIs</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2"><a href="gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xr.wsa.input">Windows MR-specific Input API</a><br />(XR.WSA.Input)</th>
+<th rowspan="2">Input </th><th colspan="2"><a href="gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">Common Unity APIs</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2"><a href="gestures-and-motion-controllers-in-unity.md#">Windows MR-specific Input API</a><br />(XR.WSA.Input)</th>
 </tr><tr>
 <th> Left hand </th><th> Right hand</th>
 </tr><tr>
