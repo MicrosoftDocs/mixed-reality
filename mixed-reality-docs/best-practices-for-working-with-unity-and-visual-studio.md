@@ -30,7 +30,7 @@ Further, consider installing the [*UnityScriptAnalyzer* Visual Studio extension]
 
 ## Visual Studio Tools for Unity
 
-Download [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+Download [Visual Studio Tools for Unity](https://docs.microsoft.com/en-us/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
 
 **Benefits of Visual Studio Tools for Unity**
 * Debug Unity in-editor play mode from Visual Studio by putting breakpoints, evaluating variables and complex expressions.
@@ -51,3 +51,8 @@ UWP Visual Studio solutions checked in to source control can get out-of-date aft
 ## Use text-format assets for easy comparison of content changes
 
 Storing assets in text format makes it easier to review content change diffs in Visual Studio. You can enable this in "Edit > Project Settings > Editor" by changing **Asset Serialization** mode to **Force Text**. However, merging text asset file changes is error-prone and not recommended, so consider enabling exclusive binary checkouts in your source control system.
+
+## See also
+- [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+- [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
+- [*UnityScriptAnalyzer* Visual Studio extension](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)
