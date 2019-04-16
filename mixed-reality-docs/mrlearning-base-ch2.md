@@ -25,7 +25,7 @@ In this section we will learn how to customize and configure the default Mixed R
 
 1. Select Mixed-Reality Toolkit (MRTK) from the “BaseScene” hierarchy. In the inspector panel, look for the “Mixed Reality Toolkit Script” and select the “active profile” as shown in the figure below. Double click to open it.
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.png)
+![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.PNG)
 
 >Note:
 >By default, the MRTK profiles are not editable. These are default profile templates from which you can copy and customize. There are several layers of customization and profiles, so it is standard practice to copy and customize several profiles when configuring one or more settings.
