@@ -31,22 +31,17 @@ Session topics* include:
 Attendees will also have a chance to get hands-on with our technology at an evening reception to close out Day 1.
 </br>
 
+## Details
 
-## IMPORTANT NOTES
+*	**Date: May 2-3, 2019**
+* **Location:**
+Microsoft Building 92
+5010 NE 36th St 
+Redmond, WA 98052
+* **Evening Networking Reception:**
+Thursday evening, 6-8pm
+* **Cost: This event is free to attend. You are responsible for travel expenses.**
 
-* **Applications will be open until noon on April 5, 2019.**  If we do not fill all the spots from this first wave of applicants, we may open it back up for a second wave.
-
-* **This is an application stating interest in the event.**  This does not guarantee attendance.
-
-* **We will be continiously reviewing applications and <u>will let all applicants know acceptance or not starting on April 5th via email.</u>**
-
-* **We do not have hard-and-fast rules about what will get someone into the event.**  Our aim is to have a wide range of mixed reality developers and designers as our audience, and any info you can provide below will help us to make sure that happens.
-
-* **This event is free to attend.** Attendees will be responsible for travel expenses (airfare and transportation, hotel, meals).
-
-Thanks for your interest! We can’t wait. 
-
-If you’d like to learn more or have any questions, you can find our [FAQ here](mr-dev-days-faq.md). You can also contact our [Mixed Reality Developer Relations team](mailto:DevEvent@microsoft.com) with questions.
 
 </br>
 
