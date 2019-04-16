@@ -10,24 +10,24 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # MR Learning Base Module User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
 
-In the previous lesson, we learned some of the capabilities the MRTK had to offer, with starting your first application for the HoloLens 2. In this next lesson we’ll learn how to create and organize buttons along with UI text panels and use default interaction (touch) to interact with each button. We will also include some minor code that will allow you to customize your buttons, (like change the size, sound and color). To give more customizability, we will show how to modify these profiles by turning off the visualization of the spatial mesh. 
+In the previous lesson, we learned some of the capabilities the MRTK had to offer, with starting your first application for the HoloLens 2. In this next lesson we’ll learn how to create and organize buttons along with UI text panels and use default interaction (touch) to interact with each button. We will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects. We will introduce basic concepts on how to modify MRTK profiles, starting with turning off the visualization of the spatial mesh. 
 
 ## Objectives
 
-* O
-* I
-* V
+* Customize and configure Mixed Reality Toolkit profiles
+* Interacting with holograms using UI elements and buttons
+* Basic hand-tracking input and interactions
 
 ## Instructions
 
 ### How to Configure the Mixed-Reality Toolkit Profiles
 
-1. Select Mixed-Reality Toolkit (MRTK) from the “BaseScene” hierarchy. From there, you should see the “Mixed Reality Toolkit Script.” It should also say “active profile” underneath. Double click on it to open it.
+1. Select Mixed-Reality Toolkit (MRTK) from the “BaseScene” hierarchy. In the inspector panel, look for the “Mixed Reality Toolkit Script” and select the “active profile” as shown in the figure below. Double click to open it.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.png)
 
->[!Note]
->By default, all of the profiles are not editable. These are default profiles that you can copy and customize. There are several layers of customization and profiles, so in order to change a profile you’ll need to copy and customize several profiles. Before any of this, however, we need to disable the visibility of the spatial mapping mesh.
+>Note:
+>By default, the MRTK profiles are not editable. These are default profile templates from which you can copy and customize. There are several layers of customization and profiles, so it is standard practice to copy and customize several profiles when configuring one or more settings.
 
 2. Copy the profile to enable yourself the ability to customize a version of the profile. In order to do that, you must click on the “Copy & Customize” button (as seen above). This creates a copy of the main MRTK profile. Nothing should be disabled anymore, allowing you to customize several things.
 
