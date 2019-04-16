@@ -11,24 +11,15 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
 # Mixed Reality Dev Days
 
-Applications are currently closed and under review. Thanks for your interest!
+Applications are currently closed. Thanks for your interest!
 
 With the [announcements](https://blogs.microsoft.com/blog/2019/02/24/microsoft-at-mwc-barcelona-introducing-microsoft-hololens-2/) Microsoft recently made in the mixed reality and cloud space, we’re thrilled to open applications for **Mixed Reality Dev Days**, a chance to build the skills, network, and ideas you need to take your mixed reality applications to the next level. Mixed Reality Dev Days will offer attendees a chance to code alongside our engineering teams, learn and test the latest in our portfolio, and connect with a community of developers like you who are leading a new era of mixed reality applications.  </br>
 
-We’ll also hold sessions led by our teams to dive deeper on what’s new and share tips for getting started. </br>
+We’ll also hold [sessions](mr-dev-days-sessions.md) led by our teams to dive deeper on what’s new and share tips for getting started. </br>
 
-Session topics* include:
-* [**HoloLens 2**]()
-* [**Azure Kinect DK**]()
-* **New mixed reality services** like [**Azure Spatial Anchors**]()
-* **Azure essentials**, from computer vision, to IoT, to migration…and more!
-* **Developer tools** from partners and our own portfolio, like Altspace SDK and Mixed Reality Capture Studio tools
-* **Business insights** including target markets, industry momentum and our Mixed Reality Partner Program
-* **The science behind the tech**, like eye tracking and depth sensors </br>
+Our tentative list of sessions can be found [here](mr-dev-days-sessions.md).
 
-*Sessions and topics subject to change. </br>
-
-Attendees will also have a chance to get hands-on with our technology at an evening reception to close out Day 1.
+Attendees will also have a chance to get hands-on with our technology both in our hands-on labs and our demo stations.
 </br>
 
 ## Details
