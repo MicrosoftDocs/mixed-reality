@@ -125,3 +125,24 @@ Now whenever we pan those cubes those events will be sent to the cubes. However,
 Step 13: Add an the “move with pan” script to all of the cubes. To do this, press and hold control/command and select each object. Then, in the inspector panel, click “add component” and search for “move with pan.” Click the script and it will be added to each cube. 
 Now the 3D objects will move with your pan! If you remove the mesh render on your quad, you should now have an invisible quad where you can pan through a list of 3D objects.
 
+### Chapter 3 – Eye Tracking
+
+In this chapter, we will explore how to enable eye tracking in our demo. We will slowly spin our 3D menu items when they are being gazed upon with eye gaze. We will also trigger a fun effect when the gazed-upon item is selected.
+ 
+Step 1. Ensure the Mixed Reality Toolkit profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the “Setting up the MRTK profiles required for Eye Tracking” section as outlined in the Mixed Reality Toolkit Documentation (https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (component attached to camera) and enabling simulation of eye tracking in the Unity editor. Note that future version of the MRTK may include eye tracking by default.
+
+Step 2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we will need to add the EyeTrackingTarget component on each object that we wish to interact with using eye gaze. Tip: select multiple items in the hierarchy to bulk-add the EyeTrackingTarget component.
+ 
+
+Step 3. Next we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series’ repository and is not included by default with the Mixed Reality Toolkit. For each 3D menu item, add the EyeTrackingTutorialDemo script by searching for the component in the “Add Component” menu.
+ 
+Step 4. Spin the object while looking at the target. We would like to configure our 3D object to spin while we are looking at it. To do this, insert a new field in the “While Looking At Target” section of the EyeTrackingTarget component, as shown in the image below. 
+ 
+In newly created field, add the current Game Object to the empty field, and select EyeTrackingTutorialDemo > RotateTarget() as shown in the image below. Now the 3D object is configured to spin when it is being gazed upon with eye tracking. 
+ 
+Step 5. Add in ability to “blip target” that is being gazed at upon select (air-tap, or saying “select”). Similar to Step 4, we want to trigger EyeTrackingTutorialDemo > BlipTarget() by assigning it to the Game Object’s “Select()” field of the EyeTrackingTarget component, as shown in the figure below. With this now configured, you will notice a slight blip in the game object whenever you trigger a select action, such as air-tap or the voice command “select.” 
+ 
+Step 6. Ensure eye tracking capabilities are properly configured before building to HoloLens 2. As of this writing, Unity does not yet have the ability to set the gaze input (for eye tracking) capability. Setting this capability is required for eye tracking to work on the HoloLens 2. Follow these instructions on the mixed reality toolkit documentation to enable the gaze input capability: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#testing-your-unity-app-on-a-hololens-2 
+
+
+Congratulations! You’ve successfully added basic eye tracking capabilities to the application. These actions are only the beginning of a world of possibilities with eye tracking. This chapter also concludes lesson 5, where we learned about advanced input functionality such as voice commands, panning gestures, and eye tracking. 
