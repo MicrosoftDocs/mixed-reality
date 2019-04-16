@@ -9,7 +9,7 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
 ---
 
 # Direct manipulation
-Direct manipulation is an input model that involves touching holograms directly with your hands.  The goal with direct manipulation is that objects behave just as they do in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen.  Because of this, direct manipulation is easy for users to learn, and it's fun too.  It is considered a "near" input model, meaning it is best used for interacting with content that is within arms reach.
+Direct manipulation is an input model that involves touching holograms directly with your hands. The goal with direct manipulation is that objects behave just as they do in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen.  Because of this, direct manipulation is easy for users to learn, and it's fun too.  It is considered a "near" input model, meaning it is best used for interacting with content that is within arms reach.
 
 A key ingredient that makes direct manipulation easy to learn is that it is affordance-based. There are no symbolic gestures to teach users. All interactions should be built around a visual element that can be touched or grabbed.
 
@@ -46,7 +46,7 @@ Instead of using random generic shape, we suggest to use a [Sphere Collider](com
 ![](images/Collidable-Fingertip-720px.jpg)<br>
 
 ## Fingertip Cursor
-In addition to rendering a collidable sphere on the index fingertip, we invent an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. The reactions are: 
+In addition to rendering a collidable sphere on the index fingertip, we invent an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. The interactive feedbacks are: 
 * When an index finger moves toward a hologram, the cursor is always parallel to the surface of the hologram and gradually shrinks its size accordingly. 
 * As soon as the finger touch the surface, the cursor shrinks into a dot.
 
@@ -65,7 +65,7 @@ The hologram itself also requires to provide both visual and audio feedbacks to 
 ![](images/Bounding-Box-With-Proximity-Shader-720px.jpg)<br>
 
 ## Pressable Button
-With a collidable fingertip or fingertip cursor, users are now ready to interact with the very fundamental holographic UI component, [Pressable Button](coming-soon.md). A pressable button is a holographic button tailored for direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to solve tactile feedback related issues. 
+With a collidable fingertip or fingertip cursor, users are now ready to interact with the very fundamental holographic UI component, [Pressable Button](coming-soon.md). A pressable button is a holographic button tailored for direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback related issues. 
 * The first mechanism is bounding box with proximity shader, which has already been addressed in the foregoing paragraph. It serves to provide better sense of proximity for users to approach and make contact with a button. 
 * The second one is depression, which creates sense of press, after a fingertip contacts the button. The mechanism is that the button tightly moves with the fingertip along the depth axis. The button can be triggered as soon as reaching a designated depth (on press) or leaving the depth (on release) after passing through it. 
 * The sound effect should be added to enhance feedback, when the button is triggered. 
