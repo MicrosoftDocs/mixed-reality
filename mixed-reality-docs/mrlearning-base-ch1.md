@@ -82,4 +82,5 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 
 ## Congratulations
 
-You now have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mesh cover all surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking. These are just a few of the foundational pieces included out of the box with the Mixed Reality Toolkit. In the lessons to come, we’ll start adding more content and interactivity to your scene, so you can fully explore the capabilities of the HoloLens 2 and the Mixed Reality Toolkit.
+You now have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mesh cover all surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance. These are just a few of the foundational pieces included out of the box with the Mixed Reality Toolkit. In the lessons to come, we’ll start adding more content and interactivity to your scene, so you can fully explore the capabilities of the HoloLens 2 and the Mixed Reality Toolkit.
+>Note: We'll cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md) 
