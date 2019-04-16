@@ -25,3 +25,13 @@ Holograms come to life in the HoloLens 2 when they intuitively follow the user a
 
 ![Solvers](images/lesson3_chapter1_step1im.PNG)
 
+>Note: In this lesson we will only go over implementation of the “Orbital” solver and the “RadialView” solver. To learn more about the full range of solvers available in the MRTK, please visit: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html
+
+### Use a Solver to Follow the User
+The goal of this chapter is to enhance the button collection we previously created such that it follows the user’s gaze direction. In previous version of the MRTK and HoloToolkit, this was referred to as a “taglong” functionality.
+
+1. Select the Button Collection parent object from the previous lesson.
+
+![Lesson3 Chapter2 Step1im](images/Lesson3_chapter2_step1im.PNG)
+
+2. In the inspector panel, click the “add component” button and search for “orbital.” The orbital component should appear. Select it to add the orbital component to the Button Collection game object.
