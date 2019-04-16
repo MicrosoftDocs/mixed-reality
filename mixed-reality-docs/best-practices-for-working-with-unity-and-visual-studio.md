@@ -5,10 +5,8 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: deploy, unity, visual studio, HoloLens, immersive headset
+keywords: deploy, unity, visual studio, HoloLens, HoloLens 2, immersive headset
 ---
-
-
 
 # Best practices for working with Unity and Visual Studio
 
@@ -16,20 +14,19 @@ A developer creating a mixed reality application with Unity will need to switch 
 
 ## Improving iteration time
 
-A common workflow problem when working with Unity and Visual Studio is having multiple windows of Visual Studio open and the need to constantly switch between Visual Studio and Unity to iterate.
-1. **Unity** - for modifying the scene and exporting a Visual Studio solution
-2. **Visual Studio (1)** - for modifying scripts
-3. **Visual Studio (2)** - for building and deploying the Unity exported Visual Studio solution to the device
+Support for .NET scripting back-end in Unity is being deprecated in Unity 2018 and removed in Unity 2019+. Thus, it is advised to switch to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). However, this may incur longer build times from Unity to Visual Studio. To improve for faster iteration, one should set up their environment for best compilation results.
 
-Luckily, there's a way to streamline to a single instance of Visual Studio and cut down on frequent exports from Unity.
+1) Leverage incremental building by building your project to the same directory every time, re-using the pre-built files there
+2) Disable anti-malware software scans for your project & build folders
+   - Open **Virus & threat protection** under your Windows 10 settings app
+   - Select **Manage Settings** under **Virus & threat protection settings**
+   - Select **Add or remove exclusions** under the **Exclusions** section
+   - Click **Add an exclusion** and select the folder contain your Unity project code and build outputs
+3) Utilize an SSD for building
 
-When [exporting your project from Unity](exporting-and-building-a-unity-visual-studio-solution.md), check the **Unity C# Projects** checkbox in the "File > Build Settings" menu. Now, the project you export from Unity includes all of your project's C# scripts and has several benefits:
-* Use the same instance of Visual Studio for writing scripts and building/deploying your project
-* Export from Unity only when the scene is changed in the Unity Editor; changing the contents of scripts can be done in Visual Studio without re-exporting.
+Please read [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) for more info. Also please read [Debugging on IL2CPP Scripting Back-end](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html).
 
-With **Unity C# Projects** enabled, only one instance of each program need be opened:
-1. **Unity** - for modifying the scene and exporting a Visual Studio solution
-2. **Visual Studio** - for modifying scripts then building and deploying the Unity exported Visual Studio solution to the device
+Further, consider installing the [*UnityScriptAnalyzer* Visual Studio extension](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer). This tool analyzes your Unity C# scripts for code that may be able to be written in a more optimized manner.
 
 ## Visual Studio Tools for Unity
 
