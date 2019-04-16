@@ -24,10 +24,15 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 
 1. Start Unity.
 2. Select **New**.
+![Lesson1 Chapter1 Step2](images/Lesson1Chapter1Step2.JPG)
 3. Enter a project name (e.g. "MixedRealityBase").
+![Lesson1 Chapter1 Step3](images/Lesson1Chapter1Step3.JPG)
 4. Enter a location to save your project.
+![Lesson1 Chapter1 Step4](images/Lesson1Chapter1Step4.JPG)
 5. Make sure the project is set to **3D**.
+![Lesson1 Chapter1 Step5](images/Lesson1Chapter1Step5.JPG)
 6. Click **Create Project**.
+![Lesson1 Chapter1 Step6](images/Lesson1Chapter1Step6.JPG)
 
 ### Import the Mixed Reality Toolkit
 
