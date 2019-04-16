@@ -20,7 +20,8 @@ In the previous lesson, we learned some of the capabilities the MRTK had to offe
 
 ## Instructions
 
-### How to Configure the Mixed-Reality Toolkit Profiles
+### How to Configure the Mixed-Reality Toolkit Profiles (Change Spatial Awareness Display Option)
+In this section we will learn how to customize and configure the default Mixed Reality Toolkit profiles by adjusting the display option of the spatial awareness mesh. You may follow these same principles for adjusting any settings or values in the MRTK profiles.
 
 1. Select Mixed-Reality Toolkit (MRTK) from the “BaseScene” hierarchy. In the inspector panel, look for the “Mixed Reality Toolkit Script” and select the “active profile” as shown in the figure below. Double click to open it.
 
@@ -35,16 +36,16 @@ In the previous lesson, we learned some of the capabilities the MRTK had to offe
 
 3. Disable the visibility of the spatial awareness mesh. To do this, you’ll want to look down to “Additional Service Providers.” When you open the “default mixed reality registered serviced providers profile” (marked by red arrow) it will appear uneditable, much like the other profile. So in order to fix that, click the button to the right of the profile (marked by green arrow) to replace the default profile with a copy.
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step2im.png)
+![MR213_BuildSettings](images/mrlearning-base-ch2-1step3im.png)
 
 4. Create a custom copy of the Default Mixed Reality Spatial Mesh Observer. 
 Click the down arrow next to “Windows Mixed Reality Spatial Mesh Observer” to see a list of options. In there, you will see the “Default Mixed Reality Spatial Mesh Observer” which, the same as before, is uneditable. So, just like the previous step, we must replace the default with a  copy of it so we can edit it. Click the button to the right (marked by green arrow) to create a copy.
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step2im.png)
+![MR213_BuildSettings](images/mrlearning-base-ch2-1step4im.png)
 
 5. Now, we just adjust the settings for the display option to say “occlusion.” What this does is make the spatial mesh invisible, but it will still make it so that you can’t see anything behind the spatial mesh either.
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step2im.png)
+![MR213_BuildSettings](images/mrlearning-base-ch2-1step5im.png)
 
 >[!Note]
 >Note: the spatial mapping mesh is still there, and you can still interact with it, but you won’t be able to see it directly. Also, any holograms behind the spatial mapping mesh (i.e. a hologram behind your visible wall) will not be visible because of the occlusion setting.
