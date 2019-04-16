@@ -2,7 +2,7 @@
 title: Gestures and motion controllers in Unity
 description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
 author: thetuvix
-ms.author: alexturn
+ms.author: yoyoz
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestures, motion controllers, unity, gaze, input
@@ -12,7 +12,7 @@ keywords: gestures, motion controllers, unity, gaze, input
 
 # Gestures and motion controllers in Unity
 
-There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](gestures.md) and [motion controllers](motion-controllers.md). You access the data for both sources of spatial input through the same APIs in Unity.
+There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](gestures.md) and [motion controllers](motion-controllers.md) in HoloLens and Immersive HMD. You access the data for both sources of spatial input through the same APIs in Unity.
 
 Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common *Input.GetButton/Input.GetAxis* APIs that work across multiple Unity XR SDKs, and an *InteractionManager/GestureRecognizer* API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
 
@@ -28,7 +28,7 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 
 <table>
 <tr>
-<th rowspan="2">Input </th><th colspan="2"><a href="gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">Common Unity APIs</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2"><a href="gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xr.wsa.input">Windows MR-specific Input API</a><br />(XR.WSA.Input)</th>
+<th rowspan="2">Input </th><th colspan="2"><a href="gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">Common Unity APIs</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2"><a href="gestures-and-motion-controllers-in-unity.md#">Windows MR-specific Input API</a><br />(XR.WSA.Input)</th>
 </tr><tr>
 <th> Left hand </th><th> Right hand</th>
 </tr><tr>
@@ -507,38 +507,12 @@ You can find an example of how we recommend to implement throwing [here](https:/
 
 Throwing will continue to improve with future Windows updates, and you can expect to find more information on it here.
 
-## Accelerate development with Mixed Reality Toolkit
+## Gesture and Motion Controllers in MRTK v2
 
-There are two example scenes about InputManager and MotionController in Unity. Through these scenes, you can learn how to use MRTK's InputManager and access data handle events from the motion controller buttons.
+You can access gesture and motion controller from the input Manager. 
+* [Gesture in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
+* [Motion Controller in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
 
-- [HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/InputManagerTest.unity)
-- [HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/MotionControllerTest.unity)
-- [Technical details README File](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input)
-
-![Input example scenes in MRTK](images/MRTK_ExampleScene_Input.png)<br>
-*Input example scenes in MRTK*
-
-### Automatic scene setup
-
-When you import [MRTK release Unity packages](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases) or clone the project from the [GitHub repository](https://github.com/Microsoft/MixedRealityToolkit-Unity), you are going to find a new menu 'Mixed Reality Toolkit' in Unity. Under 'Configure' menu, you will see the menu 'Apply Mixed Reality Scene Settings'. When you click it, it removes the default camera and adds foundational components - [InputManager](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Prefabs/InputManager.prefab), [MixedRealityCameraParent](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Prefabs/MixedRealityCameraParent.prefab), and [DefaultCursor](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Prefabs/Cursor/DefaultCursor.prefab).
-
-![MRTK Menu for scene setup](images/MRTK_Input_Menu.png)<br>
-*MRTK Menu for scene setup*
-
-![Automatic scene setup in MRTK](images/MRTK_HowTo_Input1.png)<br>
-*Automatic scene setup in MRTK*
-
-### MixedRealityCamera prefab
-
-You can also manually add these from the project panel. You can find these components as prefabs. When you search **MixedRealityCamera**, you will be able to see two different camera prefabs. The difference is, **MixedRealityCamera** is the camera only prefab whereas, **MixedRealityCameraParent** includes additional components for the immersive headsets such as Teleportation, Motion Controller and, Boundary.
-
-![Camera prefabs in MRTK](images/MRTK_HowTo_Input2.png)<br>
-*Camera prefabs in MRTK*
-
-**MixedRealtyCamera** supports both HoloLens and immersive headset. It detects the device type and optimizes the properties such as clear flags and Skybox. Below you can find some of the useful properties you can customize such as custom Cursor, Motion Controller models, and Floor.
-
-![Properties for the Motion controller, Cursor and Floor](images/MRTK_HowTo_Input3.png)<br>
-*Properties for the Motion controller, Cursor and Floor*
 
 ## Follow along with tutorials
 
@@ -554,6 +528,5 @@ Step-by-step tutorials, with more detailed customization examples, are available
 
 * [Gestures](gestures.md)
 * [Motion controllers](motion-controllers.md)
-* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
-* [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
-* [InteractionInputSource.cs in MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/InputSources/InteractionInputSource.cs)
+
+
