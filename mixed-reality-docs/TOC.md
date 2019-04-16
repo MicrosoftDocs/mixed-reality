@@ -237,8 +237,7 @@
 ### [Holographic rendering](rendering.md)
 ### [Volume rendering](volume-rendering.md)
 ### [Hologram stability](hologram-stability.md)
-### [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md)
-### [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
+### [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 ### [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 ## Testing your app
 ### [Using Visual Studio to deploy and debug](using-visual-studio.md)

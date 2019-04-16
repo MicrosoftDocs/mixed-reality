@@ -16,7 +16,7 @@ Testing HoloLens applications are very similar to testing Windows applications. 
 
 ## Performance
 
-Holographic apps need to run smoothly in a diverse set of environments. They also need to maintain performance and user comfort at all times. Performance is so important to the user's experience with a Holographic app that we have an entire topic devoted to it. Please make sure you read and follow the [performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md).
+Holographic apps need to run smoothly in a diverse set of environments. They also need to maintain performance and user comfort at all times. Performance is so important to the user's experience with a Holographic app that we have an entire topic devoted to it. Please make sure you read and follow the [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 
 ## Testing 3D in 3D
 1. **Test your app in as many different spaces as possible.** Try in big rooms, small rooms, bathrooms, kitchens, bedrooms, offices, etc. Also take into consideration rooms with non standard features such as non vertical walls, curved walls, non-horizontal ceilings. Does it work well when transitioning between rooms, floors, going through hallways or stairs?
