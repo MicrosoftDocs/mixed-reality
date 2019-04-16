@@ -52,13 +52,13 @@ Each of these interaction models is convenient, powerful, and usable in its own 
     </tr>
     <tr>
         <td>Example scenarios</td>
-        <td>3D Spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
+        <td>3D spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
         <td>Contextual experiences where a user's hands are occupied<br>e.g. on the-job learning, maintenance</td>
         <td>Click-through experiences<br> e.g. 3D presentations, demos</td>
     </tr>
     <tr>
         <td>Fit</td>
-        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6 DoF controllers<br>Great when coupled with voice, ET, or head gaze</td>
+        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6 DoF controllers<br>Great when coupled with voice, eye tracking, or head gaze</td>
         <td>Some learning required<br>If hands are unavailable<br>pairs well with voice and natural language</td>
         <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens (1st gen)</td>
     </tr>
