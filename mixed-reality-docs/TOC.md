@@ -269,6 +269,7 @@
 
 # Programs and events
 ## [Mixed Reality Dev Days](mr-dev-days.md)
+### [Mixed Reality Dev Days Sessions](mr-dev-days-sessions.md)
 ### [Mixed Reality Dev Days FAQ](mr-dev-days-faq.md)
 ## [The Realities Show](realities-show.md)
 ## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
