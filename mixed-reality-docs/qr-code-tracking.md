@@ -12,6 +12,9 @@ keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, q
 
 QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker in the headset driver, the headset scans for QR codes and they are reported to interested apps. This feature is only available as of the [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md).
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Device support
 
 <table>

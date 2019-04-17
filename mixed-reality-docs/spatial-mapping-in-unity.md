@@ -60,13 +60,13 @@ To use these two components in your Unity app:
 1. Select a GameObject at the center of the area in which you'd like to detect spatial surface meshes.
 2. In the Inspector window, **Add Component** > **XR** > **Spatial Mapping Collider** or **Spatial Mapping Renderer**.
 
-You can find more details on how to use these components at the [Unity documentation site](https://docs.unity3d.com/Manual/windowsholographic-sm-component.html).
+You can find more details on how to use these components at the <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity documentation site</a>.
 
 ### Going beyond the built-in spatial mapping components
 
 These components make it drag-and-drop easy to get started with Spatial Mapping.  When you want to go further, there are two main paths to explore:
 * To do your own lower-level mesh processing, see the section below about the low-level Spatial Mapping script API.
-* To do higher-level mesh analysis, see the section below about the SpatialUnderstanding library in [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding).
+* To do higher-level mesh analysis, see the section below about the SpatialUnderstanding library in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
 ## Using the low-level Unity Spatial Mapping API
 
@@ -188,7 +188,7 @@ void Start () {
 
 ## Higher-level mesh analysis: SpatialUnderstanding
 
-The [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) is a collection of helpful utility code for holographic development built upon the holographic Unity APIs.
+The <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a> is a collection of helpful utility code for holographic development built upon the holographic Unity APIs.
 
 ### Spatial Understanding
 
@@ -449,18 +449,13 @@ The understanding dll internally stores the playspace as a grid of 8cm sized vox
 * When tracking is lost, the next OnSurfaceChanged event will remove all meshes.
 
 ## Spatial Mapping in Mixed Reality Toolkit
-There are three example scenes about Spatial mapping in Unity. 
-
-- [HoloToolkit-Examples/SpatialMapping/Scenes/SpatialMappingExample.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/may18_dev/Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialMappingExample.unity)
-- [HoloToolkit-Examples/SpatialMapping/Scenes/SpatialProcessing.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/may18_dev/Assets/HoloToolkit-Examples/SpatialMapping/Scenes/SpatialProcessing.unity)
-- [HoloToolkit-Examples/SpatialUnderstanding/Scenes/SpatialUnderstandingExample.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/may18_dev/Assets/HoloToolkit-Examples/SpatialUnderstanding/Scenes/SpatialUnderstandingExample.unity)
-
+For more information on using Spatial Mapping with Mixed Reality Toolkit v2, see the <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">Spatial Awareness section</a> of the MRTK docs.
 
 ## See also
 * [MR Spatial 230: Spatial mapping](holograms-230.md)
 * [Coordinate systems](coordinate-systems.md)
 * [Coordinate systems in Unity](coordinate-systems-in-unity.md)
-* [MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-* [UnityEngine.MeshFilter](http://docs.unity3d.com/ScriptReference/MeshFilter.html)
-* [UnityEngine.MeshCollider](http://docs.unity3d.com/ScriptReference/MeshCollider.html)
-* [UnityEngine.Bounds](http://docs.unity3d.com/ScriptReference/Bounds.html)
+* <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>
+* <a href="http://docs.unity3d.com/ScriptReference/MeshFilter.html" target="_blank">UnityEngine.MeshFilter</a>
+* <a href="http://docs.unity3d.com/ScriptReference/MeshCollider.html" target="_blank">UnityEngine.MeshCollider</a>
+* <a href="http://docs.unity3d.com/ScriptReference/Bounds.html" target="_blank">UnityEngine.Bounds</a>

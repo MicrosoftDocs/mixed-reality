@@ -26,12 +26,12 @@ The framework below gives a general outline for best practices and understanding
 
 If your app has an underperforming framerate, the first step is to analyze and understand where your application is computationally intensive. There are two primary processors responsible for the work to render your scene: the CPU and the GPU. Each of these two components handle different operations and stages of your Mixed Reality app. There are three key places where bottlenecks may occur. 
 
-1. **App Thread - CPU**
-    * This thread is responsible for your app logic. This includes processing input, animations, physics, and other app logic/state
-2. **Render Thread - CPU to GPU**
-    * This thread is responsible for submitting your draw calls to the GPU. When your app wants to render an object such as a cube or model, this thread sends a request to the GPU, which has an architecture optimized for rendering, to perform these operations.
-3. **GPU**
-    * This processor most commonly handles the graphics pipeline of your application to transform 3D data (models, textures, etc) into pixels and ultimately produce a 2D image to submit to your device's screen.
+1. **App Thread - CPU** -
+    This thread is responsible for your app logic. This includes processing input, animations, physics, and other app logic/state
+2. **Render Thread - CPU to GPU** - 
+    This thread is responsible for submitting your draw calls to the GPU. When your app wants to render an object such as a cube or model, this thread sends a request to the GPU, which has an architecture optimized for rendering, to perform these operations.
+3. **GPU** - 
+    This processor most commonly handles the graphics pipeline of your application to transform 3D data (models, textures, etc) into pixels and ultimately produce a 2D image to submit to your device's screen.
 
 ![Lifetime of a Frame](images/lifetime-of-a-frame.png)
 

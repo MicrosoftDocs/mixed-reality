@@ -1,4 +1,5 @@
 # [Install the tools](install-the-tools.md)
+# [Get your app ready for HL2](mrtk-porting-guide.md)
 # [Discover](index.md)
 ## [What is mixed reality?](mixed-reality.md)
 ## [What is a hologram?](hologram.md)
@@ -129,7 +130,8 @@
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
-#### [Mixed Reality Toolkit](mrtk-getting-started.md)
+#### [Accelerate development with Mixed Reality Toolkit v2](mrtk-getting-started.md)
+#### [Configure Unity Project for Windows Mixed Reality](Configure-Unity-Project.md)
 #### [Recommended settings for Unity](recommended-settings-for-unity.md)
 #### [Unity Play Mode](unity-play-mode.md)
 #### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
@@ -140,6 +142,7 @@
 #### [Persistence in Unity](persistence-in-unity.md)
 #### [Gaze in Unity](gaze-in-unity.md)
 #### [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
+#### [Hand and Eye Tracking in Unity](hand-eye-in-unit.md)
 #### [Voice input in Unity](voice-input-in-unity.md)
 #### [Spatial mapping in Unity](spatial-mapping-in-unity.md)
 #### [Spatial sound in Unity](spatial-sound-in-unity.md)
@@ -152,6 +155,7 @@
 ### Advanced topics
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
+### Legacy Documents (Unity 2017.4/HTK/MRTK v1)
 ## Unreal
 ### Unreal for HoloLens 2 - coming soon!
 ## DirectX
@@ -265,6 +269,7 @@
 
 # Programs and events
 ## [Mixed Reality Dev Days](mr-dev-days.md)
+### [Mixed Reality Dev Days Sessions](mr-dev-days-sessions.md)
 ### [Mixed Reality Dev Days FAQ](mr-dev-days-faq.md)
 ## [The Realities Show](realities-show.md)
 ## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
