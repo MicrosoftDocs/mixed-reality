@@ -101,7 +101,64 @@ The event is now set so that when the button is pressed, the cube will change co
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step8im.PNG)
 
+Now when the button is pressed, it should change to a new color (e.g., cyan) and when the button is released it should change back to the default color you specified (e.g., light gray.) Press the “play” button on the top of the screen to try it out in the editor or deploy to your HoloLens 2 to test!
+
+### Creating a panel of buttons using MRTK’s Grid Object Collection
+
+In this section, we’ll learn how to automatically align multiple buttons into a neat user interface using the MRTK’s GridObjectCollection tool.
+
+1. Duplicate the button from the previous section until you have 5 buttons. There are several ways to do this:
+- Right click on the button and click “copy,” then go down to below the button and right click again and click “paste.” 
+- Right click on the button and click “duplicate.” 
+- Use the keyboard command by clicking on the cube and pressing “ctrl D” on your keyboard.
+
+Repeat this until you have 5 total buttons (see 5 red arrows in image below).
+
+![Mrlearning Base Ch2 3Step1im](images/mrlearning-base-ch2-3step1im.PNG)
+
+2. Group the buttons under an empty parent game object. In order to have the buttons in grid collection, we need to group our buttons under a common parent object. Right click in the hiearachy and click “create empty.” This creates a new empty game object for you to put all the buttons in. It will show up as “gameObject.” Right click and rename it to “ButtonColletion.”
+
+![Mrlearning Base Ch2 3Step2im](images/mrlearning-base-ch2-3step2im.PNG)
+
+3. Move all the buttons into the new collection. Do this by selecting all five of the button objects in your heirarch and drag them all under “ButtonCollection” game object, as shown in the image below.
+
+![Mrlearning Base Ch2 3Step3imb](images/mrlearning-base-ch2-3step3imb.PNG)
+
+4. Add MRTK’s “grid object collection” component to the button collection.	To do this, select the “ButtonCollection” parent object and in the inspector panel, click the “Add Component” button. Then search for “grid object collection” in the search bar and select it when it appears in the list.
+
+![Mrlearning Base Ch2 3Step4im](images/mrlearning-base-ch2-3step4im.PNG)
+
+The Grid Object Collection component allows us to organize buttons or any set of objects in a neat row, column, or grid. This is one of the building blocks provided by the MRTK that provides you with a quick and simple way to create beautiful user interfaces.
+
+5. Configure the grid object collection. To ensure all the buttons face the user, select “orient type” and then select “face parent forward” (as shown in the image.) Next, change the cell size to set the space between your buttons. Use 0.12 units by 0.12 units for the Cell Width and Cell Height, as shown in the image below. Then click “Update Collection” and the scene should look like the picture below.
+
+![Mrlearning Base Ch2 3Step5im](images/mrlearning-base-ch2-3step5im.PNG)
+
+>Note: Depending on the orientation of the child objects or parent object, you will likely need to adjust the orientation setting differently in future projects. The Cell Width and the Cell Height fields may also need to be defined differently, depending on the size of the objects in your collection.
+
+### Adding Text into Your Scene
+
+In this section, we’ll cover how to add and edit text to your mixed reality experiences. If you haven’t already, please ensure you have TextMeshPro enabled in Unity by following the instructions [here](https://docs.unity3d.com/Packages/com.unity.textmeshpro@2.0/manual/index.html#installation).
+
+1. Select the “ButtonCollection” parent object and right click the collection. Expand "3D object" in the dropdown menu, then select "TextMeshPro - Text". You should see a TextMeshPro object under the button collection, as shown in the image below.
+
+![Lesson2 Chapter4 Step1a](images/Lesson2_Chapter4_Step1a.JPG)
+![Lesson2 Chapter4 Step1b](images/Lesson2_Chapter4_Step1b.JPG)
+
+2. In the TextMeshPro component’s Text field (located in the inspector panel, as shown below), type in “Button Collection Text.” The text will appear in the scene, but it will be hidden behind the buttons and/or the wrong size.
+
+![Lesson2 Chapter4 Step2](images/Lesson2_Chapter4_Step2.JPG)
+
+3. To improve the text size and placement for readability, adjust the “font size” field in the TextMeshPro component to change the size of the font. You will also need to adjust the “Rect Transform” position and scale as shown in the image below. See the images below for values used for our text configuration, and feel free to use these values as a starting point from which to further improve the size and placement of your text field.
+
+![Lesson2 Chapter4 Step3](images/Lesson2_Chapter4_Step3.JPG)
+![Lesson2 Chapter4 Step4](images/Lesson2_Chapter4_Step4.JPG)
+
+5. To modify the text values on the button objects, click the arrow next to any button to expand it and navigate to the “SeeItSayItLabel” object, then navigate to “TextMeshPro,” where you can edit the text to your buttons as described in the steps above.
+
+![Lesson2 Chapter4 Step5](images/Lesson2_Chapter4_Step5.JPG)
+
 ### Congratulations
-Now when the button is pressed, it should change to a new color (e.g., cyan) and when the button is released it should change back to the default color you specified (e.g., light gray.) Press the “play” button on the top of the screen to try it out in the editor or deploy to your HoloLens 2 to test! In this lesson, you learned how to copy, customize, and configure an MRTK profile setting (i.e., spatial awareness mesh visibility.) You also learned how to interact with a button to trigger events using tracked hands on the HoloLens 2.
+In this lesson, you learned how to copy, customize, and configure an MRTK profile setting (i.e., spatial awareness mesh visibility.) You also learned how to interact with a button to trigger events using tracked hands on the HoloLens 2. Finally, you learned how to create a simple UI interface using Unity's Text Mesh Pro the MRTK's Grid Object Collection component.
 
 
