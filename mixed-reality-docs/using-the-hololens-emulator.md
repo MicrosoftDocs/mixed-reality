@@ -18,9 +18,11 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset apps o
 
 
 ## Installing the HoloLens emulator
+Download the HoloLens emulator and holographic project templates.
 
-Download the [HoloLens 2 emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2087187).
-Download the [HoloLens (1st gen) emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
+Versions: 
+* [HoloLens 2 emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2087187).
+* [HoloLens (1st gen) emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find older builds of the HoloLens emulator on the [HoloLens emulator archive](hololens-emulator-archive.md) page.
 
@@ -58,7 +60,7 @@ You may also see an error installing the emulator on a non-PRO/Enterprise/Educat
 1. Load your app solution in Visual Studio 2015.
     >[!NOTE]
     >When using Unity, build your project from Unity and then load the built solution into Visual Studio as usual.
-2. Ensure the Platform is set to **x86**.
+2. For the HoloLens (1st Gen) emulator ensure the Platform is set to **x86**. For the HoloLens 2 emulator ensure the Platform is set to **x86** or **x64**.
 3. Select the **HoloLens Emulator** as the target device for debugging.
 4. Go to **Debug > Start Debugging** or press **F5** to launch the emulator and deploy your app for debugging.
 
@@ -73,7 +75,11 @@ Controlling the emulator is very similar to many common 3D video games. There ar
 * **Bloom gesture** - Press the Windows key or F2 key on your keyboard, or press the B button on an Xbox controller.
 * **Hand movement for scrolling** - Hold the Alt key, hold the right mouse button, and drag the mouse up / down, or in an Xbox controller hold the right trigger and A button down and move the right stick up and down.
 
-## Anatomy of the HoloLens emulator
+## Anatomy of the HoloLens 2 emulator 
+> [!NOTE]
+> coming soon...
+
+## Anatomy of the HoloLens (1st Gen) emulator
 
 ### Main window
 
