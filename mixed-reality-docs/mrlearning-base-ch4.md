@@ -10,113 +10,108 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # MR Learning Base Module 3D Object Interaction
 
-For this lesson, we will go through basic 3D content and user experience. We will learn how to organize 3D objects as part of a collection and enable the bounding box on each 3D objects for basic manipulation.
+In this lesson, we will go through basic 3D content and user experience. We will learn how to organize 3D objects as part of a collection, learn about bounding boxes for basic manipulation, learn about near and far interaction, and learn about touch and grab gestures with hand tracking. 
+
+## Objectives
+
+* Learn how to organize 3D content using MRTK's Grid Object Collection
+* Implement bounding boxes and basic manipulation
+* Explore near and far interaction
+* Learn about additional hand tracking gestures such as grab and touch
+
+## Instructions
+
+### Organizing 3D Objects in a Collection
+
+1. Right click on your hierarchy and select, “create empty.” This creates an empty game object. Rename it to “3DObjectCollection.” This is where we will put all of our 3D Objects. Make sure the collection’s positioning is set at x = 0, y = 0, and z = 0.
+
+![Lesson4 Chapter1 Step1im](images/Lesson4_Chapter1_step1im.PNG)
+
+2. Import BaseModule Assets Using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that will be used throughout this tutorial. The BaseModule unity package can be found here: 
+
+3. The coffee cup prefab can be recognized by a blue cube next to it. Do not select the coffee cup with the blue cube and small white paper (that denotes the original 3D model and not the prefab.) 
+
+![Lesson4 Chapter1 Noteaim](images/Lesson4_chapter1_noteaim.PNG)
+
+>Note: The coffee cup prefab can be recognized by an icon of a blue cube next to it. Do not select the coffee cup with the icon of a blue cube and small white paper (that denotes the original 3D model and not the prefab.) 
+
+4. Drag the coffee cup prefab of your choice into the "3DObjectCollection" game object from step 1. The coffee cup is now a child of the collection.
+
+![Lesson4 Chapter1 Step4ima](images/Lesson4_chapter1_step4ima.PNG)
+
+5. Next, we'll add more 3D objects into our scene. Below is a list of objects we are going to add in this example. As you add the objects you may find that they appear in your scene in various sizes. Adjust the scale of each 3D model under the transform setting in the inspector panel. Recommended adjustments for this example are listed with the objects below. 
+Search these words in the search box in your project panel and drag the 3D object prefab into the "3DObjectCollection" object similar to the previous step:
+- Search for “module.” Add TheModule. Set the scale to x= = 0.03, y = 0.03, z = 0.03. 
+- Search for “Octa.” Add Octa. Set the scale to x = 0.13. y = 0.13, z =0.13.
+- Search for “earth.” Add EarthCore. Set the scale to x = 50.0 y = 50.0, z = 50.0.
+- Search for “Cheese.” Add Cheese. Set the scale to x = 0.05, y = 0.05, z = 0.05.
+- Search for “platonic.” Add Model_Platonic. Set the scale to x = 0.13, y = 0.13, z = 0.13.
+
+![Lesson4 Chapter1 Step5im](images/Lesson4_Chapter1_step5im.PNG)
+
+6. Add 3 cubes into your scene. Right click the “3DObjectCollection” object, select “3D Object”, then select “Cube.” Set the scale to x = 0.14, y = 0.14, and z = 0.14. Repeat this step 2 additional times to create a total of 3 cubes. Alternatively, you may duplicate the cube twice for a total of 3 cubes. 
+
+![Lesson4 Chapter1 Step6im](images/Lesson4_Chapter1_step6im.PNG)
+
+7. Organize your collection of objects to form a grid using the procedure described in [Lesson 2](mrlearning-base-ch2.md) using the MRTK’s Grid Object Collection. Refer to the image below to see an example of configuring the objects in a 3x3 grid.
+
+![Lesson4 Chapter1 Notebim](images/Lesson4_chapter1_notebim.PNG)
+
+>Note: You may notice that some of the objects are off-center, such as the objects in the image above. This is because prefabs or objects may have child objects that are not aligned. Feel free to make any necessary adjustments to object positions or child object positions to achieve a well-aligned grid.
 
 
+### Manipulating 3D Objects
+1. Add the ability to manipulate to a cube. To add the ability to manipulate 3D objects you must do the following:
+-	Select the 3D object you want to manipulate in your hierarchy (in this example, one of your cubes).
+-	Click “add component.” 
+-	Search for “manipulation.”
+-	Select “manipulation handler.”
+-   Repeat for all 3D objects under the “3DObjectCollection” object but not the “3DObjectCollection” itself.
 
-
-
-
-
-
-
-
-
-### Chapter 1 – Adding 3D Objects
-
-Step 1: Add an empty parent object. Right click on your hierarchy and select, “create empty.” This creates an empty game object. Rename it to “3DObjectCollection.” This is where we will put all of our 3d Objects.
-Note: Make sure the collection’s positioning is set at x = , y = 0, and z = 0. 
-
-Step 2: Import the MRTK examples. If you’re not sure how to do this, refer back to lesson 1 to see how to do this. Click on the link below to go there:
-[link here]
-
-Step 3: Add the first 3D object. For this example, we are adding the coffee cup. To find the coffee cup, in the search bar in your projects tab, type in “coffee.” Look for the coffee cup prefab.
-Note: The coffee cup prefab can be recognized by a blue cube next to it. Do not select the coffee cup with the blue cube and white paper, because that is the original model. This goes for all 3D objects. You will also see several coffee cup prefabs. If you click on them, you can see a preview of them in the preview window under the inspection panel. Choose whichever you like best.
-
-
-
-
-
-
-
-Step 4: drag the coffee cup prefab of your choice into the 3DObjectCollection from step 1. Now you see that the coffee cup is now a child of the collection.
+![Lesson4 Chapter2 Step1im](images/Lesson4_chapter2_step1im.PNG)
  
-Step 5: Add other 3D objects into your scene. 
-In this step we will add several more 3D objects. Below is a list of objects we are going to add in this example. As you add the objects you might notice that they appear in your scene in various sizes. To fix this, adjust the sizes under the transform setting in the inspector panel. The proper adjustments for this example are listed with the objects below. 
-Search these words in the search box in your project panel and drag the 3D object prefab into the 3DObjectCollection just like the previous step, but with these objects:
-•	Search for “module.” Add TheModule. Set the scale to x= = 0.03, y = 0.03, z = 0.03. 
-•	Search for “Octa.” Add Octa. Set the scale to x = 0.13. y = 0.13, z =0.13.
-•	Search for “earth.” Add EarthCore. Set the scale to x = 50.0 y = 50.0, z = 50.0.
-•	Search for “Cheese.” Add Cheese. Set the scale to x = 0.05, y = 0.05, z = 0.05.
-•	Search for “platonic.” Add Model_Platonic. Set the scale to x = 0.13, y = 0.13, z = 0.13.
-Here is an example to help.
+>The manipulation handler is a component that will allow you to adjust settings for how objects behave when being manipulated. This includes rotation, scaling, moving, and constraining movement on certain axes. 
 
 
 
+2. Restrict one cube so that it can only be scaled. Select one cube in the “3DObjectCollection” object. In the inspector panel, next to “two handed manipulation type,” click the drop-down menu and select “scale.” This makes it so that the user can only change the cube’s size.
 
-
-
-
-
-
-
-Note: Make sure the positioning for all objects is x = 0, y = 0, and z = 0.
-Step 6: Add 3 cubes into your scene. Right click the 3DObjectCollection, select 3D object, then click cube. Set the scale to x = 0.14, y = 0.14, and z = 0.15. Repeat this step 2 times. Or, you can select the cube and press “control/command D” 2 times to copy the cube. 
-Step 7: Organize your collection of objects to form a grid. Forming a grid was what we discussed in lesson 2, so if you are unsure on how to do this, see lesson 2 and click the link below.
-[link here]
-
-
-
-
-
-For this example, we are going to organize the objects to have 3 rows, have them face parent forward, make the layout horizontal, and change the surface type to sphere. Feel free to adjust your grid in a way that looks good to you. Click “update collection” when finished.
+![Lesson4 Chapter2 Step2im](images/Lesson4_Chapter2_step2im.PNG)
  
-Note: You may notice that some of the objects are off-center. This is because of the way some of the prefabs are put in to your parent object (in this case, 3DObjectCollection). Make sure you adjust the prefabs as needed (either by clicking on the object in your scene and dragging it in to place or by changing the positioning in the inspector panel).
+3. Change the color of each cube so that we can differentiate between them. 
+-	Go to the project panel and scroll down until you see “MixedRealityToolkit.SDK” then select it.
+-	Select the “Standard Assets” folder.
+-	Click on the “materials” folder.
+-	Drag a different material onto each of your cubes. 
 
-
-### Chapter 2 – Manipulating 3D Objects
-Step 1: Add the ability to manipulate to a cube. To add the ability to manipulate 3D objects you must do the following:
-1.	Select the 3D object you want to manipulate in your hierarchy (in this example, one of your cubes).
-2.	Click “add component.” 
-3.	Search for “manipulation.”
-4.	Select “manipulation handler.”
- 
-The manipulation handler is a component that will allow you to customize manipulation on your object. With this you have a wide variety of manipulation settings that allow you to change the features of your object. This includes rotation, scaling, moving, and constraining movement on certain axes. 
-Tip: instead of adding the manipulation handler to each object individually, you can select all the objects in your 3DObjectCollection by holding control/command and select add component and then add the manipulation handler (just like step 1). Now all of your objects have the manipulation handler.
-Note: By default, the manipulation handler is set up to be able to move the object with one or two hands from far away and your able to move it rotate it and scale it. 
-Step 2: Restrict the cube so that it can only be scaled. To do this next to “two handed manipulation type,” click the menu to the right and select “scale.” This makes it so that the user can only change the cube’s size.
- 
-Step 3 change the color of each cube so that we can differentiate from them. 
-•	Go to the project panel and scroll down until you see “MixedRealityToolkit.SDK” then select it.
-•	Select the “Standard Assets” folder.
-•	Click on the “materials” folder.
-•	Select 3 materials for each of your cubes. 
-	Note: You can choose any color you want for these cubes. For our example, we are going to use “glowingcyan,” “glowingorange”, and green. Feel free to experiment with different colors. To add the color to the cube, click the cube you want to change the color of, then drag the material to the inspector panel. 
+>Note: You can choose any color for your cubes. For our example, we are going to use “glowingcyan,” “glowingorange”, and "green." Feel free to experiment with different colors. To add the color to the cube, click the cube you want to change the color of, then drag the material to the inspector panel. 
    
+![Lesson4 Chapter2 Step3im](images/Lesson4_Chapter2_step3im.PNG)
 
-
-Step 4: Select the third cube and make it so that its movement is constrained to the fix distance from the head. To do this, on the right of “constraint on movement,” click on the dropdown menu and select “fix distance from the head.” This makes it so that the user can only move the cube within their field of vision. 
+4. Select another cube in the “3DObjectCollection” object and make it so that its movement is constrained to the fix distance from the head. To do this, on the right of “constraint on movement,” click on the dropdown menu and select “fix distance from the head.” This makes it so that the user can only move the cube within their field of vision. 
  
-Goal of the next few steps: Make it so that the user can grab and interact with an object.
-We are going to do this with the cheese object.
-Step 5: Select the cheese object and in the inspector panel, click “add component.” 
-Step 6: Search in the search box “near interaction grabbable” and select the script.
- This allows users to reach out and actually grab the objects. 
-Step 7: Add this script to the Octa object and the Platonic object as well (repeat step 5 and 6 but with these two objects).
-This will allow the user to interact with those objects up close and far away. 
-Step 8: Remove far manipulation from the Octa object. To do this, select the Octa in the hierarchy, and uncheck the “allow far manipulation” checkbox (marked by a green circle). This makes it so that users can only interact with the octa using the gaze-ray (HoloLens) or the tracked hands (HoloLens2).
+![Lesson4 Chapter2 Step4im](images/Lesson4_chapter2_step4im.PNG)
 
-Note: For the full documentation of the manipulation handler component and each of the setting please refer to the link below:
-[link here]
+Goal of the next few steps: We will enable grab and interaction with our 3D objects. We will apply different manipulation settings 
 
+5. Select the cheese object and in the inspector panel, click “add component.” 
 
-
-
-
-
-Step 9: Add the near interaction grabbable component to the earth core, the lunar module and the coffee cup.
-Step 10: For the lunar module, in this example, change the behavior so that it rotates about the object center for both near and far interaction.
+6. Search in the search box for “Near Interaction Grabbable” and select the script. This component allows users to reach out and grab the objects with tracked hands. Objects will also be allowed to be manipulated from a distance, unless the "Allow Far Manipulation" checkbox is unchecked (denoted by green circle in image below.)
  
+![Lesson4 Chapter2 Step6im](images/Lesson4_Chapter2_step6im.PNG)
+
+7. Add “Near Interaction Grabbable” to the Octa object and the Platonic object  by repeating step 5 and 6 on those objects.
+
+8. Remove the ability of far manipulation from the Octa object. To do this, select the Octa in the hierarchy, and uncheck the “allow far manipulation” checkbox (marked by a green circle). This makes it so that users can only interact with the octa directly using tracked hands.
+
+>Note: For the full documentation of the manipulation handler component and it's associated settings, please refer to the [MRTK Documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html).
+
+9. Add the near interaction grabbable component to the earth core, the lunar module and the coffee cup.
+
+10. For the lunar module, in this example, change the behavior so that it rotates about the object center for both near and far interaction.
+ 
+
+
 Step 11: For the earth core, in this example, change the release behavior to “nothing.” This makes it so that once the earth core is released from the users’ grasp, it doesn’t move. 
 
 Note: This setting is extremely useful when wanting to create a ball that you can throw. Keeping the velocity and the angular velocity makes it so that once the ball is released it will continue to move at the velocity it was released at.
