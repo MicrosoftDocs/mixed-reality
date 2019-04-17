@@ -16,12 +16,10 @@ The HoloLens emulator allows you to test holographic apps on your PC without a p
 
 If you're looking to develop Windows Mixed Reality immersive (VR) headset apps or games for desktop PCs, check out the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md), which lets you simulate desktop headsets instead.
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
 
 ## Installing the HoloLens emulator
 
-Download the [HoloLens (2st gen) emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2087187).
+Download the [HoloLens 2 emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2087187).
 Download the [HoloLens (1st gen) emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find older builds of the HoloLens emulator on the [HoloLens emulator archive](hololens-emulator-archive.md) page.
