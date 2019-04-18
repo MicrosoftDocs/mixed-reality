@@ -123,6 +123,28 @@ This article outlines some of the tips and tricks we've learned to keep users co
 > Check out the [Customer-focused creative process](coming-soon.md) section for suggestions on identifying your customer and creating a great Mixed Reality concept.
 
 
+## Why optimize? 
+	•  It can be very distracting to optimize for all at once
+		○ Example: cursors! See it, say it tooltips! Rays!
+	• As users build intuition for the modalities, we recommend guiderails to build understanding and confidence
+
+## What does optimization mean?
+	• Affordances for each mode can be very different
+		○ What is possible 
+			* Ex: hover state grabbable areas and ghost hands for hands [needs graphic]
+			* Ex: contextual help and guided experiences for voice [needs graphic]
+			* Ex: Cursor for point + commit [needs graphic]
+		○ what is working
+			* Ex: Hand mesh [needs graphic]
+			* Ex: Hypothesis for voice [needs graphic]
+			* Ex: Dwell progress indicator [needs graphic]
+		○ What you can do next
+			* Ex: Arrow affordances for hands [needs graphic]
+			* Ex: Prompts for voice [needs graphic]
+
+	• Teaching transitions is as important as teaching the actual mechanics. This allows the user to have complete control and allowing her to adjust depending on the situation. 
+
+
 ## Transition interaction models
 There are also cases where customer or use cases require that your experience work with more than one interaction model – for example, if the core interaction model is Hands and tools, but a special Hands-free mode is required for field technicians.  
 
@@ -147,4 +169,5 @@ Click the link below or follow the page navigation to continue to the next secti
 * [Spatial sound design](spatial-sound-design.md)
 * [Spatial mapping design](spatial-mapping-design.md)
 * [Comfort](comfort.md)
+
 
