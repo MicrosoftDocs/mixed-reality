@@ -70,6 +70,57 @@ Each of these interaction models is convenient, powerful, and usable in its own 
     </tr>
 </table>
 <br>
+
+<table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong><a href="hands-and-tools.md">Hands and tools</a></strong></td>
+        <td><strong><a href="hands-free.md">Hands-free</a></strong></td>
+        <td><strong><a href="gaze-and-commit.md">Gaze and commit</a></strong></td>
+    </tr> 
+</table>
+<br>
+
+**Should we flip this table like this?**
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Model</strong></td>
+        <td><strong>Example scenarios</strong></td>
+        <td><strong>Fit</strong></td>
+        <td><strong>Hardware</strong></td>
+    </tr>
+    <tr>
+        <td><a href="hands-and-tools.md">Hands and tools</a></td>
+        <td>3D spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
+        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6 DoF controllers<br>Great when coupled with voice, eye tracking, or head gaze</td>
+        <td>HoloLens 2<br>Immersive headsets</td>
+    </tr>
+    <tr>
+        <td><a href="hands-free.md">Hands-free</a></td>
+        <td>Contextual experiences where a user's hands are occupied
+e.g. on the-job learning, maintenance</td>
+        <td>Some learning required<br>If hands are unavailable<br>pairs well with voice and natural language</td>
+        <td>HoloLens 2<br>HoloLens (1st gen)<br> Immersive headsets</td>
+    </tr>
+    <tr>
+        <td><a href="gaze-and-commit.md">Gaze and commit</a></td>
+        <td>Click-through experiences e.g. 3D presentations, demos</td>
+        <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens (1st gen)</td>
+        <td>HoloLens 2<br>HoloLens (1st gen)<br> Immersive headsets<br> Mobile AR</td>
+    </tr>
+</table>
+<br>
 Detailed information for using all available inputs seamlessly together in each interaction model is on the pages that follow, as well as illustrations and links to sample content from our Unity MRTK.
 
 ## Choosing an interaction model for your customer
