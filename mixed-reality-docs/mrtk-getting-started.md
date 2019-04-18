@@ -9,13 +9,15 @@ keywords: Windows Mixed Reality, test, MRTK version 2, MRTK, tools, SDK, HoloLen
 ---
 
 # Getting started with MRTK v2
+See the [MRTK Getting Started Guide on github](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) for information on getting started with MRTK V2.
 
+## What is MRTK?
 The MRTK is an amazing open source toolkit that has been around since the HoloLens was first released, and would not be where it is today without the hard work of our developer community who have contributed to it. Over the past 3 years, we have listened to the feedback of our developer community, and built MRTK v2 to take the biggest concerns into account.  
 
 The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications.  MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as we all grow. 
 
 
-See the <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/README.html" target="_blank">MRTK v2</a> to get started and learn more.
+See the <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/README.html" target="_blank">MRTK v2 README on github</a> to learn more.
 
 ## Minimum Requirement for MRTK v2
 * Unity 2018.3.x
