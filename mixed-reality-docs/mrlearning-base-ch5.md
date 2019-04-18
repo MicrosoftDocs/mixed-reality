@@ -17,45 +17,81 @@ In this lesson, we will be going over a few advanced inputs such as voice comman
 We will be adding 2 voice commands in this chapter. First, the ability to toggle the diagnostics. Second, the ability to play a sound with voice command. Before we get started it’s important to know where voice commands are stored. In the MRTK game object, look at the input system settings. Just as we learned in Lessons 1 and 2, we need to make copies of the MRTK profiles in order to edit them. We will need to make copies as needed.
 Step 1: In the Base Scene hierarchy select MixedRealityToolkit. In the inspector panel, scroll down to the input system settings. Double click to open up the input system profile.
  
+
+
 In the input system profile, you will see a variety of settings. For voice commands, go down to where it says, “Speech Command Settings.” 
+
+![Lesson5 Chapter1 Step2im](images/Lesson5_Chapter1_step2im.PNG)
+
 Step 2: Double click on the speech command profile. From there, you’ll notice a lot of settings you can adjust. For a full description on all the settings refer the MRTK documentation in the link below.
 [link here]
-Note: By default, the general behavior is auto-start. That can be changed to manual-start if desired, but for this example we are going to keep it on auto-start. Also, you can set the recognition confidence level from low, to medium or high. For this example, we are leaving it at the default level of medium. In addition, the MRTK comes with several voice commands (such as menu, toggle diagnostics, and toggle profiler). We will be using the keyword “toggle diagnostics” in order to turn on and off the diagnostics framerate counter. We will also add a new voice command.
- 
+
+
+
+>Note: By default, the general behavior is auto-start. That can be changed to manual-start if desired, but for this example we are going to keep it on auto-start. Also, you can set the recognition confidence level from low, to medium or high. For this example, we are leaving it at the default level of medium. In addition, the MRTK comes with several voice commands (such as menu, toggle diagnostics, and toggle profiler). We will be using the keyword “toggle diagnostics” in order to turn on and off the diagnostics framerate counter. We will also add a new voice command.
+ ![Lesson5 Chapter1 Noteim](images/Lesson5_chapter1_noteim.PNG)
+
+
 Step 3: Add a new voice command. To add a new voice command, click on the “+ add a new speech command” button and you will see a new line that appears down below the already existing voice commands. Type in the voice command you want to use. In this example we are going to use the command “play music.”
-Tip: You can also set a keycode for speech commands. For example, if you wanted to test your program through the application on the computer you can assign a key to the speech command to test if it works. You can also assign the voice command to trigger when pressing a button. 
+>Tip: You can also set a keycode for speech commands. For example, if you wanted to test your program through the application on the computer you can assign a key to the speech command to test if it works. You can also assign the voice command to trigger when pressing a button. 
 
 
 In your scene you need to add in the ability to respond to voice commands. It can be assigned to any existing object or a new empty object. In this example, we are going to assign it to the very last button from the button collection in lesson 2. In order to respond to a voice command, you need to add in the speech handler component.
+
+
+
 Step 4: Add the ability to respond to voice commands. Select the last button in the button collection in the base scene hierarchy. In the inspector panel, go down and click “add component.” Type in “speech input handler.” Select it.
- 
+![Lesson5 Chapter1 Step4im](images/Lesson5_chapter1_step4im.PNG)
+
+
 By default, you will see 2 checkboxes, one is the “is focus required” checkbox. What this means is as long as you are pointing to it with a gaze ray, (eye-gaze, head-gaze, controller-gaze, or hand-gaze) the voice command will work. Uncheck this checkbox to make it so that the user does not have to look at the object to use the voice command.
  
 Step 5: Add the ability to respond to a voice command. To do this, click the “+” button that’s in the speech input handler and select the keyword you would like to respond to.
 Note: These keywords are populated based on the profile you edited in the previous step.
+
+![Lesson5 Chapter1 Step5im](images/Lesson5_chapter1_step5im.PNG)
+
 Step 6: Next to “Keyword” you will see a dropdown menu. In this case we are going to select “Toggle Diagnostics.” This will make it so that whenever the user says the phrase, “toggle diagnostics” it will perform an action.
  
+![Lesson5 Chapter1 Step6im](images/Lesson5_chapter1_step6im.PNG)
+
 Step 7: Add the “diagnostics demo control script” to toggle the framerate counter diagnostic on and off. To do this, press the “add component” button and search for “diagnostics demo control script” then add it from the menu. 
 Note: this script is only included with these modules and is not included with the original MRTK.
  
+![Lesson5 Chapter1 Step7im](images/Lesson5_chapter1_step7im.PNG)
+
 Step 8: Add a new response in the Speech Input Handler. To do this click the “+” button underneath where it says “response ()” (marked by green arrow in the picture above).
+
+
+
 Step 9: Since we are programming the last button in the button collection, drag the last button from the base scene hierarchy to the new response you just created in step 8.
- 
+ ![Lesson5 Chapter1 Step9im](images/Lesson5_chapter1_step9im.PNG)
 Step 10: Now select the “no function” dropdown list, select diagnostic demo controls, then “on toggle diagnostics ().”
 This function toggles your diagnostics on and off.
- 
+ ![Lesson5 Chapter1 Step10im](images/Lesson5_chapter1_step10im.PNG)
 Now your diagnostics profile should respond to your voice command. Note that before building to your device you need to enable mic settings. To do that click on file, go to build settings, from there, player settings, and ensure the microphone capability is set.
  
 Next, we are adding the ability to play an audio file from voice command. To do this, select the octa object. Now if you recall from lesson 4, we added the ability to play an audio clip from touching the octa. Now we will add the voice command ability to the octa as well.
 Step 11: Select the octa object in the base scene hierarchy.
+
+
+
 Step 12: Repeat steps 4 and 5 but with the octa object instead. 
+
+
+
 Step 13: Instead of adding the “Toggle Diagnostics” voice command from step 6, add the “play music” voice command.
- 
+ ![Lesson5 Chapter1 Step13im](images/Lesson5_chapter1_step13im.PNG)
 Step 14: Just like before with steps 8 and 9, add a new response, and drag the octa to the empty slot on response.
+
+
+
 Step 15: Again, just like before, select the dropdown menu that says “no function” but instead of going for the diagnostics, select “Audio Source,” then from there click on “PlayOneShot (AudioClip).”
  
+![Lesson5 Chapter1 Step15im](images/Lesson5_chapter1_step15im.PNG)
+
 Step 16: For the audio clip, for this example we are going to use the same audio clip from lesson 4. Go into your project panel, search for “MRTK_Gem” audio clip and drag it into the audio source slot.
- 
+ ![Lesson5 Chapter1 Step16im](images/Lesson5_chapter1_step16im.PNG)
 Now your application should be able to respond to the voice commands “toggle diagnostics” and “play music” no problem!
 
 
@@ -74,9 +110,12 @@ Step 1: Create a quad. In your base scene hierarchy, right click, select “3D are
 
 Step 2: Place the quad in your scene that makes the most sense. For our example, we set the x = 0, the y = 0 and the z = 1.5 away from the camera. 
 Note: If the quad blocks anything from the previous lessons be sure to move it in a way that doesn’t block any of the other objects.
+
+![Lesson5 Chapter2 Step2im](images/Lesson5_chapter2_step2im.PNG)
+
 Step 3: Apply a material to the quad. This material will be the material we will be scrolling through with the pan gesture. 
 
-
+![Lesson5 Chapter2 Step3im](images/Lesson5_chapter2_step3im.PNG)
 
 
 
@@ -87,20 +126,23 @@ Step 4: In your projects panel, type in the search box “pan content.” Drag that 
 Note: Pan content is not included in the MRTK, but it is an asset in this module. If you imported this module it should be included. Also, when you add the pan content, it may look stretched. You can fix this by adjusting the values x, y and z values of the size of the quad until you are satisfied with the way it looks.
 To use the pan gesture, you will need a collider on your object. You may see the quad already has a mesh collider. However, the mesh collider is not ideal, because it is extremely thin, and you need to be very exact with your touch when you go to touch it. To make it more forgiving, we suggest replacing the mesh collider with a box collider, which is much thicker and easier to touch.
 Step 5: Right click the mesh collider that’s on the quad (in the inspector panel) then remove it by clicking “remove component.” 
-
+![Lesson5 Chapter2 Step5im](images/Lesson5_chapter2_step5im.PNG)
  
 Step 6: Now add the box collider by clicking “add component” and searching “box collider.” The default added box collider is still a little thin, so click the “edit collider” button to edit it. When it’s pressed in, you can adjust the size using the x, y and z values or the elements in the scene editor. For our example, we want to extend the box collider a little behind the quad. In the scene editor, drag the box collider from the back, outwards (see the image below). What this will do is allow the user to not only use their finger, but their entire hand to scroll. 
- 
+ ![Lesson5 Chapter2 Step6im](images/Lesson5_chapter2_step6im.PNG)
 Step 7: Add in the interactivity. Since we want to interact with the quad directly, we want to use the “near interaction touchable” component (we also used this in Lesson 4 for playing music from the octa). So click “add component” and search for “near interaction touchable” and select it. 
  
 
 Step 8: Add the ability to recognize the pan gesture. Click “add component” and type “hand interaction pan.” It has a setting that asks which type of touch you want for it to use. You have a choice between hand ray (allowing you to pan from a distance) and index finger. For this example, leave it at index finger. Remember that we extended the box collider so that the index finger can be more accurate. This is why!
- 
+ ![Lesson5 Chapter2 Step7 8Im](images/Lesson5_chapter2_step7-8im.PNG)
+
+![Lesson5 Chapter2 Step8im](images/Lesson5_chapter2_step8im.PNG)
+
 Step 9: In the hand interaction pan you’ll see some settings you can mess with. The “lock horizontal” and “lock vertical” checkboxes will lock the movements to which they correspond. The wrap texture settings will make it so that when you’re moving the picture around the text will follow. For this example, we are going to check that box. There is also “velocity active” which, if unchecked, the pan gesture will not work. Check this box as well. Now you should have a pan-enabled quad.
 Panning textures is useful, but we also want to ad the panning gesture to 3D objects as well. To do this, we are going to create several child objects under the quad we created. 
 Step 10: Right click the quad object, select 3D object then click “cube.” Scale the cube so that it’s roughly x = 0.1, y = 0.1 and z = 0.1. Copy that cube 3 times (by right clicking the cube and pressing duplicate, or by pressing control/command D). Space them out evenly. Your scene should look similar to the picture below.
 
-
+![Lesson5 Chapter2 Step10im](images/Lesson5_chapter2_step10im.PNG)
 
 
 
@@ -111,7 +153,7 @@ Step 10: Right click the quad object, select 3D object then click “cube.” Scale 
 Step 11: Select the quad again, and under the hand interaction pan script, we want to set the pan actions to each of the cubes. Under “pan event receivers” we want to specify the number of objects that are receiving the event. Since there are 4 cubes, type “4” and press enter. 4 different elements should appear.
  
 
-
+![Lesson5 Chapter2 Step11im](images/Lesson5_chapter2_step11im.PNG)
 
 
 
@@ -119,7 +161,7 @@ Step 11: Select the quad again, and under the hand interaction pan script, we wa
 
 
 Step 12: Drag each of the cubes in to each of the empty element slots.
- 
+ ![Lesson5 Chapter2 Step12im](images/Lesson5_chapter2_step12im.PNG)
 Now whenever we pan those cubes those events will be sent to the cubes. However, there is no event set for the cubes to receive. 
 
 Step 13: Add an the “move with pan” script to all of the cubes. To do this, press and hold control/command and select each object. Then, in the inspector panel, click “add component” and search for “move with pan.” Click the script and it will be added to each cube. 
@@ -132,17 +174,23 @@ In this chapter, we will explore how to enable eye tracking in our demo. We will
 Step 1. Ensure the Mixed Reality Toolkit profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the “Setting up the MRTK profiles required for Eye Tracking” section as outlined in the Mixed Reality Toolkit Documentation (https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (component attached to camera) and enabling simulation of eye tracking in the Unity editor. Note that future version of the MRTK may include eye tracking by default.
 
 Step 2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we will need to add the EyeTrackingTarget component on each object that we wish to interact with using eye gaze. Tip: select multiple items in the hierarchy to bulk-add the EyeTrackingTarget component.
- 
+ ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
 
 Step 3. Next we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series’ repository and is not included by default with the Mixed Reality Toolkit. For each 3D menu item, add the EyeTrackingTutorialDemo script by searching for the component in the “Add Component” menu.
- 
+ ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
 Step 4. Spin the object while looking at the target. We would like to configure our 3D object to spin while we are looking at it. To do this, insert a new field in the “While Looking At Target” section of the EyeTrackingTarget component, as shown in the image below. 
  
+![Lesson5 Chapter3 Step4a](images/Lesson5Chapter3Step4a.JPG)
+![Lesson5 Chapter3 Step4b](images/Lesson5Chapter3Step4b.JPG)
+
+
+
 In newly created field, add the current Game Object to the empty field, and select EyeTrackingTutorialDemo > RotateTarget() as shown in the image below. Now the 3D object is configured to spin when it is being gazed upon with eye tracking. 
  
 Step 5. Add in ability to “blip target” that is being gazed at upon select (air-tap, or saying “select”). Similar to Step 4, we want to trigger EyeTrackingTutorialDemo > BlipTarget() by assigning it to the Game Object’s “Select()” field of the EyeTrackingTarget component, as shown in the figure below. With this now configured, you will notice a slight blip in the game object whenever you trigger a select action, such as air-tap or the voice command “select.” 
- 
+ ![Lesson5 Chapter3 Step5](images/Lesson5Chapter3Step5.JPG)
 Step 6. Ensure eye tracking capabilities are properly configured before building to HoloLens 2. As of this writing, Unity does not yet have the ability to set the gaze input (for eye tracking) capability. Setting this capability is required for eye tracking to work on the HoloLens 2. Follow these instructions on the mixed reality toolkit documentation to enable the gaze input capability: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#testing-your-unity-app-on-a-hololens-2 
 
 
-Congratulations! You’ve successfully added basic eye tracking capabilities to the application. These actions are only the beginning of a world of possibilities with eye tracking. This chapter also concludes lesson 5, where we learned about advanced input functionality such as voice commands, panning gestures, and eye tracking. 
+### Congratulations! 
+You’ve successfully added basic eye tracking capabilities to the application. These actions are only the beginning of a world of possibilities with eye tracking. This chapter also concludes lesson 5, where we learned about advanced input functionality such as voice commands, panning gestures, and eye tracking. 
