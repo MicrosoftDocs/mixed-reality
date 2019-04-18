@@ -71,21 +71,9 @@ Each of these interaction models is convenient, powerful, and usable in its own 
 </table>
 <br>
 
-<table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <tr>
-        <td><strong><a href="hands-and-tools.md">Hands and tools</a></strong></td>
-        <td><strong><a href="hands-free.md">Hands-free</a></strong></td>
-        <td><strong><a href="gaze-and-commit.md">Gaze and commit</a></strong></td>
-    </tr> 
-</table>
-<br>
 
-**Should we flip this table like this?**
+
+**Should we flip this table like this?**<br>
 
 <table>
     <colgroup>
