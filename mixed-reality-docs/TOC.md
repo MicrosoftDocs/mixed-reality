@@ -83,8 +83,28 @@
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
 ### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
-## Interaction design
-### [Interaction fundamentals](Interaction-fundamentals.md)
+## Customer-focused creative process
+## MR design system and tools
+### [Interaction models](Interaction-fundamentals.md)
+#### [Hands and motion controllers](hands-and-tools.md)
+##### [Direct manipulation](direct-manipulation.md)
+##### [Point and commit](point-and-commit.md)
+##### [Motion controllers](Motion-controllers.md)
+#### [Hands-free](hands-free.md)
+##### [Gaze only](Gaze-targeting.md)
+##### [Gaze and voice](Voice-design.md)
+#### [Gaze and commit](gaze-and-commit.md)
+### [Supplemental interactions]
+#### [Eye gaze](eye-tracking.md)
+#### Motion controller
+#### Natural language
+### Visual design language
+### Application UX
+#### System UX
+#### App design guidance
+#### Hand menus
+#### Creating custom gestures
+
 ### [Comfort](Comfort.md)
 ### [Gaze targeting](Gaze-targeting.md)
 ### [Gestures](Gestures.md)
