@@ -26,15 +26,13 @@ In this lesson, we will explore several advanced input options for the HoloLens 
 
 In this section, we will be implementing two voice commands. First, the ability to toggle the frame rate diagnostics panel by saying "toggle diagnostics." Second, the ability to play a sound with a voice command. We will first explore the MRTK profiles and settings responsible for configuring voice commands. 
 
-1. In the Base Scene hierarchy select "MixedRealityToolkit." In the inspector panel, scroll down to the input system settings. Double click to open up the input system profile.
-
-> Note: Remember to make custom copies of any default profiles that need editing, as we learned in [Lesson 1](mrlearning-base-ch1.md) 
+1. In the Base Scene hierarchy select "MixedRealityToolkit." In the inspector panel, scroll down to the input system settings. Double click to open up the input system profile. Clone the input system profile to make it editable, as we learned in [Lesson 1](mrlearning-base-ch1.md) 
 
 In the input system profile, you will see a variety of settings. For voice commands, go down to where it says, “Speech Command Settings.” 
 
 ![Lesson5 Chapter1 Step2im](images/Lesson5_Chapter1_step2im.PNG)
 
-2. Double click on the speech command profile, where you’ll notice a range of settings. For a full description on these settings, refer the [MRTK speech documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html>). 
+2. Clone the speech commands profile to make it editable, as we learned in [Lesson 1](mrlearning-base-ch1.md). Double click on the speech command profile, where you’ll notice a range of settings. For a full description on these settings, refer the [MRTK speech documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html>). 
 
 >Note: By default, the general behavior is auto-start. That can be changed to manual-start if desired, but for this example we are going to keep it on auto-start. The MRTK comes with several default voice commands (such as menu, toggle diagnostics, and toggle profiler). We will be using the keyword “toggle diagnostics” in order to turn on and off the diagnostics framerate counter. We will also add a new voice command in the steps below.
 >
@@ -42,16 +40,14 @@ In the input system profile, you will see a variety of settings. For voice comma
 
 3. Add a new voice command. To add a new voice command, click on the “+ add a new speech command” button and you will see a new line that appears down below the list of existing voice commands. Type in the voice command you want to use. In this example we are going to use the command “play music.”
 
->Tip: You can also set a keycode for speech commands. This allows for voice commands to trigger upon press of a keyboard key. 
-
-
-​	In your scene you need to add in the ability to respond to voice commands. In order to respond to a voice command, you need to add in the speech handler component. It can be assigned to any existing object or a new empty object.
+>Tip: You can also set a keycode for speech commands. This allows for voice commands to trigger upon press of a keyboard key. 	
 
 4. Add the ability to respond to voice commands. Select any object in the base scene hierarchy that does not have any other input scripts attached to it (e.g., no manipulation handler.) In the inspector panel, click “add component.” Type in “speech input handler.” Select it.
    ![Lesson5 Chapter1 Step4im](images/Lesson5_chapter1_step4im.PNG)
 
+   
 
-   By default, you will see 2 checkboxes, one is the “is focus required” checkbox. What this means is as long as you are pointing to the object with a gaze ray, (eye-gaze, head-gaze, controller-gaze, or hand-gaze) the voice command will be triggered. Uncheck this checkbox to make it so that the user does not have to look at the object to use the voice command.
+By default, you will see 2 checkboxes, one is the “is focus required” checkbox. What this means is as long as you are pointing to the object with a gaze ray, (eye-gaze, head-gaze, controller-gaze, or hand-gaze) the voice command will be triggered. Uncheck this checkbox to make it so that the user does not have to look at the object to use the voice command.
 
 5. Add the ability to respond to a voice command. To do this, click the “+” button that’s in the speech input handler and select the keyword you would like to respond to.
 
@@ -59,11 +55,11 @@ In the input system profile, you will see a variety of settings. For voice comma
 
 ![Lesson5 Chapter1 Step5im](images/Lesson5_chapter1_step5im.PNG)
 
-6. Next to “Keyword” you will see a dropdown menu. Select “Toggle Diagnostics.” This will make it so that whenever the user says the phrase, “toggle diagnostics” it will trigger an action.
+6. Next to “Keyword” you will see a dropdown menu. Select “Toggle Diagnostics.” This will make it so that whenever the user says the phrase, “toggle diagnostics” it will trigger an action. TODO: add note that you may need to expand "element 0" by pressing the arrow next to it.
 
 ![Lesson5 Chapter1 Step6im](images/Lesson5_chapter1_step6im.PNG)
 
-7. Add the “diagnostics demo control script” to toggle the framerate counter diagnostic on and off. To do this, press the “add component” button and search for “diagnostics demo control script” then add it from the menu. This script can be added to any object, but for simplicity, we will add it to the same object as the speech input handler.
+7. Add the “diagnostics demo control script” to toggle the framerate counter diagnostic on and off. To do this, press the “add component” button and search for “diagnostics demo control script” then add it from the menu. This script can be added to any object, but for simplicity, we will add it to the same object as the speech input handler. TODO: split screenshot into two screenshots, one for step 7 and another for step 8.
 
    > Note: this script is only included with these modules and is not included with the original MRTK.
 
@@ -76,26 +72,30 @@ In the input system profile, you will see a variety of settings. For voice comma
 9. Drag the object that has the Diagnostics Demo Controls script to the new response you just created in step 8.
     ![Lesson5 Chapter1 Step9im](images/Lesson5_chapter1_step9im.PNG)
 
-   10. Now select the “no function” dropdown list, select diagnostic demo controls, then “on toggle diagnostics ().” This function toggles your diagnostics on and off.
-        ![Lesson5 Chapter1 Step10im](images/Lesson5_chapter1_step10im.PNG)
+10. Now select the “no function” dropdown list, select diagnostic demo controls, then “on toggle diagnostics ().” This function toggles your diagnostics on and off. TODO: this number 10 appears as the letter j on docs website - see what might be happening. May have just fixed it by indenting.
+     ![Lesson5 Chapter1 Step10im](images/Lesson5_chapter1_step10im.PNG)
 
-       > Note that before building to your device you need to enable mic settings. To do that click on file, go to build settings, from there, player settings, and ensure the microphone capability is set.
+    > Note that before building to your device you need to enable mic settings. To do that click on file, go to build settings, from there, player settings, and ensure the microphone capability is set.
 
 Next, we are adding the ability to play an audio file from voice command using the "octa" object. Recall from [lesson 4](mrlearning-base-ch4.md), we added the ability to play an audio clip from touching the octa object. We will leverage this same audio source for our music voice command.
 
 11. Select the octa object in the base scene hierarchy.
 
-12. Repeat steps 4 and 5, but with the octa object. 
+12. Repeat steps 4 and 5, but with the octa object. TODO: expand on what needs to be done, but then refer back to steps 4 and 5, so that users have an idea of what to do.
 
 13. Instead of adding the “Toggle Diagnostics” voice command from step 6, add the “play music” voice command, as shown in the image below.
+    
      ![Lesson5 Chapter1 Step13im](images/Lesson5_chapter1_step13im.PNG)
+    
+    
+    
 14. As with steps 8 and 9, add a new response, and drag the octa to the empty slot on response.
 
 15. Select the dropdown menu that says “no function," select “Audio Source,” then select “PlayOneShot (AudioClip).”
 
 ![Lesson5 Chapter1 Step15im](images/Lesson5_chapter1_step15im.PNG)
 
-16. For the audio clip, for this example we are going to use the same audio clip from [lesson 4](mrlearning-base-ch4.md). Go into your project panel, search for “MRTK_Gem” audio clip and drag it into the audio source slot, as shown in the image below. Now your application should be able to respond to the voice commands “toggle diagnostics” to toggle the frame rate counter panel and “play music” to play the MRTK_Gem song.
+16. For the audio clip, for this example we are going to use the same audio clip from [Lesson 4](mrlearning-base-ch4.md). Go into your project panel, search for “MRTK_Gem” audio clip and drag it into the audio source slot, as shown in the image below. Now your application should be able to respond to the voice commands “toggle diagnostics” to toggle the frame rate counter panel and “play music” to play the MRTK_Gem song.
      ![Lesson5 Chapter1 Step16im](images/Lesson5_chapter1_step16im.PNG)
 
 
@@ -111,7 +111,7 @@ In this chapter, we will learn how to use the pan gesture. It’s useful for scr
 
    > Note: If the quad blocks (is infront of) any content from the previous lessons, be sure to move it such that it doesn’t block any of the other objects.
 
-3. Apply a material to the quad. This material will be the material we will be scrolling through with the pan gesture. If you are not sure which material to use, proceed to step 4, otherwise feel free to skip to step 5.
+3. Apply a material to the quad. This material will be the material we will be scrolling through with the pan gesture. 
 
 ![Lesson5 Chapter2 Step3im](images/Lesson5_chapter2_step3im.PNG)
 
@@ -134,6 +134,8 @@ To use the pan gesture, you will need a collider on your object. You may see the
     ![Lesson5 Chapter2 Step7 8Im](images/Lesson5_chapter2_step7-8im.PNG)
 
 ![Lesson5 Chapter2 Step8im](images/Lesson5_chapter2_step8im.PNG)
+
+TODO: make sure checkmarks are in the two boxes above.
 
 9. In the hand interaction pan script, the “lock horizontal” and “lock vertical” checkboxes will lock the movements, respectively. The wrap texture settings will make the texture (texture mapping) follow the user's pan movements. For this example, we are going to check that box. There is also “velocity active” which, if unchecked, the pan gesture will not work. Check this box as well. Now you should have a pan-enabled quad.
 
@@ -160,9 +162,8 @@ To use the pan gesture, you will need a collider on your object. You may see the
 
 12. Drag each of the cubes in to each of the empty element slots.
      ![Lesson5 Chapter2 Step12im](images/Lesson5_chapter2_step12im.PNG)
-    Now whenever we pan those cubes those events will be sent to the cubes. However, there is no event set for the cubes to receive. 
-
-13. Add an the “move with pan” script to all of the cubes. To do this, press and hold control/command and select each object. Then, in the inspector panel, click “add component” and search for “move with pan.” Click the script and it will be added to each cube. Now the 3D objects will move with your pan gesture! If you remove the mesh render on your quad, you should now have an invisible quad where you can pan through a list of 3D objects.
+    
+13. Add the “move with pan” script to all of the cubes. To do this, press and hold control/command and select each object. Then, in the inspector panel, click “add component” and search for “move with pan.” Click the script and it will be added to each cube. Now the 3D objects will move with your pan gesture! If you remove the mesh render on your quad, you should now have an invisible quad where you can pan through a list of 3D objects.
 
 ### Eye Tracking
 
@@ -170,11 +171,14 @@ In this chapter, we will explore how to enable eye tracking in our demo. We will
 
 1. Ensure the Mixed Reality Toolkit profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the “Setting up the MRTK profiles required for Eye Tracking” section as outlined in the Mixed Reality Toolkit Documentation (https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (component attached to camera) and enabling simulation of eye tracking in the Unity editor. Note that future version of the MRTK may include eye tracking by default.
 
+    Todo: provide the user with some brief instructions for eye tracking so they don't have to go to the MRTK link.
+
 2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we will need to add the EyeTrackingTarget component on each object that we wish to interact with using eye gaze. Tip: select multiple items in the hierarchy to bulk-add the EyeTrackingTarget component.
     ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
 
-3. Next we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series’ repository and is not included by default with the Mixed Reality Toolkit. For each 3D menu item, add the EyeTrackingTutorialDemo script by searching for the component in the “Add Component” menu.
-    ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
+3. Next we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series’ repository and is not included by default with the Mixed Reality Toolkit. For... TODO: rename 3D menu item.... each 3D menu item, add the EyeTrackingTutorialDemo script by searching for the component in the “Add Component” menu. TODO: make sure it's the same objects as specified in #2. 
+   ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
+
    4. Spin the object while looking at the target. We would like to configure our 3D object to spin while we are looking at it. To do this, insert a new field in the “While Looking At Target” section of the EyeTrackingTarget component, as shown in the image below. 
 
 ![Lesson5 Chapter3 Step4a](images/Lesson5Chapter3Step4a.JPG)
