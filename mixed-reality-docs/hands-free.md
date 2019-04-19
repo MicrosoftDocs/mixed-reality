@@ -22,7 +22,8 @@ For more details on the implementation of handsfree, try the links below.
 	* Assistant
 * Gaze + commit
 	* Eye gaze + "select" or blink
-	* Head gaze + "select" or dwell 
+	* Head gaze + "select" 
+* Head Gaze + dwell
 
 
 ## Design challenges for creating a handsfree interface 
