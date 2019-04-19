@@ -10,20 +10,24 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # Lunar Module Assembly Sample Experience
 
+In this lesson, we will combine multiple concepts learned from previous lessons to create a unique sample experience. We will create a lunar module assembly application whereby a user will need to use tracked hands to pick up lunar module parts and attempt to assemble a lunar module. We will use pressable buttons to toggle placement hints, to reset our experience, and to launch our lunar module into space! In future tutorials, we will continue to build upon this experience, including powerful multi-user use-cases that leverages Azure Spatial Anchors for spatial alignment.
+
 ## Objectives
 
-- Combined multiple concepts from previous lessons to create a unique experience
-- Use tracked hands to pan textures and 3D objects
-- Leverage the HoloLens 2's eye tracking capabilities to select objects
+- Combine multiple concepts from previous lessons to create a unique experience
+- Learn how to toggle objects
+- Trigger complex events using pressable buttons
+- Use rigidbody physics and forces
+- Explore the use of tool tips
 
 ## Instructions
 
-### Chapter 1 – Configuring the Lunar Module
+### Configuring the Lunar Module
 
-In this chapter we will be assembling an in-game rocket to send the lunar module to virtual space.
+In this chapter, we will be introduced to the various components needed to create our sample experience.
 
-Step 1: Add the Lunar Module to your Base Scene. To do this, in your assets search for “rocket launcher tutorial.” You will see 2 rocket launchers; one being the tutorial and one being complete. Drag the “RocketLauncher_Tutorial” to your Base Scene. Feel free to change the positioning.
-Note: The RocketLauncher_Complete is the completed launcher, so if you would like to see the completed version for reference or just to use, feel free to use it. For this example, we must use the RocketLauncher_Tutorial.  
+1. Add the Lunar Module to your Base Scene. To do this, in your project tab, search for “rocket launcher tutorial.” You will see 2 rocket launcher prefabs; one with the name "tutorial" and another with the name "complete." Drag the “RocketLauncher_Tutorial” to your Base Scene. Feel free to change the positioning.
+   Note: The RocketLauncher_Complete is the completed launcher, so if you would like to see the completed version for reference or just to use, feel free to use it. For this example, we must use the RocketLauncher_Tutorial.  
 
 Now, if you expand the RocketLauncher_Tutorial you will notice a bunch of other objects connected to it. Go down to Lunar Module and expand that as well. You will see that the Lunar Module’s in game child objects all have a shader called “x-ray.” What this does is make the Lunar Module slightly translucent to make it easier for the user to place the objects properly in the module. 
 
