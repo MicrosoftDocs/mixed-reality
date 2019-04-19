@@ -134,4 +134,10 @@ The idea is simple and can be broken down in the following phases:
 * [Point and commit](point-and-commit.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
 
+## Test
+
+![](images/Collidable-Fingertip-720px.jpg)<br>
+
+
+
 
