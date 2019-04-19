@@ -28,7 +28,7 @@ In this section, we will be implementing two voice commands. First, the ability 
 
 1. In the Base Scene hierarchy select "MixedRealityToolkit." In the inspector panel, scroll down to the input system settings. Double click to open up the input system profile.
 
-> Note: Remember to make custom copies of any default profiles that need editing, as we learned in [Lesson 1](mrlearning-base-ch1) 
+> Note: Remember to make custom copies of any default profiles that need editing, as we learned in [Lesson 1](mrlearning-base-ch1.md) 
 
 In the input system profile, you will see a variety of settings. For voice commands, go down to where it says, “Speech Command Settings.” 
 
