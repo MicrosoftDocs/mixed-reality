@@ -129,20 +129,49 @@ This article outlines some of the tips and tricks we've learned to keep users co
 * As users build intuition for the modalities, we recommend guiderails to build understanding and confidence
 
 ## What does optimization mean?
-* Affordances for each mode can be very different
-	* What is possible 
-		* Ex: hover state grabbable areas and ghost hands for hands [needs graphic]
-		* Ex: contextual help and guided experiences for voice [needs graphic]
-		* Ex: Cursor for point + commit [needs graphic]
-	* What is working	
-		* Ex: Hand mesh [needs graphic]
-		* Ex: Hypothesis for voice [needs graphic]
-		* Ex: Dwell progress indicator [needs graphic]
-	* What you can do next
-		* Ex: Arrow affordances for hands [needs graphic]
-		* Ex: Prompts for voice [needs graphic]
 
-* Teaching transitions is as important as teaching the actual mechanics. This allows the user to have complete control and allowing her to adjust depending on the situation. 
+The way the user interacts with your application will be very different depending on the mode they are on. Affordances provide the guiderails they need to get started as well as the assurance that the system is responding to them (think about the first time people started using a mouse, something that was unfamiliar at the time). Without thoughtful affordances, users could quickly become overwhelmed.
+<br>
+Here are some examples of how affordances and behaviors would be optimized for each mode, keeping in mind crucial user questions like: "how do I know if it's working?", "what can I do?", "What did I just do?"
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Model</strong></td>
+        <td><strong>Is it working?</strong></td>
+        <td><strong>What can I do?</strong></td>
+        <td><strong>What did I do?</strong></td>
+    </tr>
+    <tr>
+        <td><a href="hands-and-tools.md">Hands and tools</a></td>
+        <td>Hand mesh<br>Hand and controller rays</td>
+        <td>Grabbable handles and a bounding box appear when your hands or rays are nearby</td>
+        <td>Audible clicks and tones upon grab and release</td>
+    </tr>
+    <tr>
+        <td>Gaze and commit</a></td>
+        <td>Gaze cursor has a ready and hover state</a></td>
+        <td>Gaze cursor has a ready and hover state</a></td>
+        <td>Visible and audible response to the action</a></td>
+    </tr>	
+    <tr>
+        <td>Gaze and dwell</a></td>
+        <td>Gaze cursor has a ready and hover state</a></td>
+        <td>Progress indicator as the user dwells on an interactible</a></td>
+        <td>Visible and audible response to the action</a></td>
+    </tr>
+    <tr>
+        <td>Voice commanding</a></td>
+        <td>'Listening' indicator<br>Captions to show you what we heard</a></td>
+        <td>Voice prompts<br>Hints<br>"What can I say?"</a></td>
+        <td>Visible and audible response to the action<br>Disambiguation when necessary</a></td>
+    </tr>
+</table>
 
 
 ## Transition interaction models
