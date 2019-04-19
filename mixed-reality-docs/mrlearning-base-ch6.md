@@ -10,15 +10,23 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # Lunar Module Assembly Sample Experience
 
+## Objectives
+
+- Combined multiple concepts from previous lessons to create a unique experience
+- Use tracked hands to pan textures and 3D objects
+- Leverage the HoloLens 2's eye tracking capabilities to select objects
+
+## Instructions
+
 ### Chapter 1 – Configuring the Lunar Module
 
 In this chapter we will be assembling an in-game rocket to send the lunar module to virtual space.
 
 Step 1: Add the Lunar Module to your Base Scene. To do this, in your assets search for “rocket launcher tutorial.” You will see 2 rocket launchers; one being the tutorial and one being complete. Drag the “RocketLauncher_Tutorial” to your Base Scene. Feel free to change the positioning.
 Note: The RocketLauncher_Complete is the completed launcher, so if you would like to see the completed version for reference or just to use, feel free to use it. For this example, we must use the RocketLauncher_Tutorial.  
- 
+
 Now, if you expand the RocketLauncher_Tutorial you will notice a bunch of other objects connected to it. Go down to Lunar Module and expand that as well. You will see that the Lunar Module’s in game child objects all have a shader called “x-ray.” What this does is make the Lunar Module slightly translucent to make it easier for the user to place the objects properly in the module. 
- 
+
 ![Lesson6 Chapter1 Step1im](images/Lesson6_Chapter1_step1im.PNG)
 
 
@@ -30,7 +38,7 @@ There are five parts to the lunar module that the user is going to interact with
 3.	The Energy Cell
 4.	The Docking Portal 
 5.	The External sensor
- 
+
 ![Lesson6 Chapter1 Notebim](images/Lesson6_Chapter1_notebim.PNG)
 
 Note: The titles that you see in your base scene hierarchy do not correspond to the names of the objects in the scene.
@@ -64,11 +72,11 @@ Drag the following objects from the lunar module in your base scene:
 Now the” toggle placement hints” is configured. This will allow us to turn the hints on and off.
 
 Step 5: Add the launch lunar module script. Click the add component button, search for launch lunar module and select it. This script will be responsible for launching the lunar module. When we press a button, it will add a force to the lunar module and will cause the module to launch upwards. 
- 
+
 Note: if you are indoors, the lunar module will crash against your ceiling. But if you are outdoors, it will fly in to space indefinitely. 
 
 ![Lesson6 Chapter1 Step5im](images/Lesson6_Chapter1_step5im.PNG)
- 
+
 Step 6: Adjust the thrust so that the lunar module will fly up gracefully. The number we discovered that was best for this was 0.01. Leave the Rb blank. Rb stands for ridged body, so since the ridged body already has a script of its own, leaving this section blank will allow the script to pull the information from the main ridged body script. 
 
 ![Lesson6 Chapter1 Step6im](images/Lesson6_Chapter1_step6im.PNG)
@@ -77,7 +85,7 @@ Step 6: Adjust the thrust so that the lunar module will fly up gracefully. The n
 The Lunar Module parts parent object is the collection of the objects that the user will interact with. This includes Backpack, GasTank, TopLeftBody, Nose, and LeftTwirler, or the fuel tank, the energy cell, the rover enclosure, the external center and the docking portal as labeled in the scene. 
 Notice that each of these objects has the manipulation handler, as discussed in lesson 4. With the manipulation handler, users are able to grab and manipulate the object. Also note that the setting “two handed manipulation type” is set to “move and rotate.” This only permits the user to move the object around and not change its size. Since these objects are going to be added to the lunar module, we don’t want to allow the user the ability to change their sizes. 
 In addition, far manipulation is unchecked. The goal is to make this application as realistic as possible, so in order to do that, the objects can only be grabbed from up close. 
- 
+
 ![Lesson6 Chapter2im](images/Lesson6_Chapter2im.PNG)
 
 Now the part assembly demo script is the scrip that allows the objects to be placed on to the lunar module by the user. The Object To Place is the object that is selected (in this case, the backpack/fuel tank) with the object that it can connect to (in this case, the transform.” The Near and Far distance settings are what set the requirements for the object’s positioning in order to attach to the lunar module. In other words, the Near Distance sets the location where the object needs to be to attach to the lunar module. In this case, the backpack/fuel tank would need to be 0.1 units away from the lunar module to snap into place. The Far Distance sets the location where the object needs to be to detach from the lunar module. In this case, the user’s hand must grab the backpack/fuel tank and pull it 0.2 units away from the lunar module to remove it and hold it in their hand.

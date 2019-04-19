@@ -185,6 +185,11 @@
 ####### [Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)
 ####### [3D Object Interaction](mrlearning-base-ch4.md)
 ####### [Advanced Input](mrlearning-base-ch5.md)
+
+####### [Demo App](mrlearning-base-ch6.md)
+
+#### 
+
 #### Open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
