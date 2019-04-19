@@ -124,25 +124,25 @@ This article outlines some of the tips and tricks we've learned to keep users co
 
 
 ## Why optimize? 
-	•  It can be very distracting to optimize for all at once
-		○ Example: cursors! See it, say it tooltips! Rays!
-	• As users build intuition for the modalities, we recommend guiderails to build understanding and confidence
+* It can be very distracting to optimize for all at once
+	* Example: cursors! See it, say it tooltips! Rays!
+* As users build intuition for the modalities, we recommend guiderails to build understanding and confidence
 
 ## What does optimization mean?
-	• Affordances for each mode can be very different
-		○ What is possible 
-			* Ex: hover state grabbable areas and ghost hands for hands [needs graphic]
-			* Ex: contextual help and guided experiences for voice [needs graphic]
-			* Ex: Cursor for point + commit [needs graphic]
-		○ what is working
-			* Ex: Hand mesh [needs graphic]
-			* Ex: Hypothesis for voice [needs graphic]
-			* Ex: Dwell progress indicator [needs graphic]
-		○ What you can do next
-			* Ex: Arrow affordances for hands [needs graphic]
-			* Ex: Prompts for voice [needs graphic]
+* Affordances for each mode can be very different
+	* What is possible 
+		* Ex: hover state grabbable areas and ghost hands for hands [needs graphic]
+		* Ex: contextual help and guided experiences for voice [needs graphic]
+		* Ex: Cursor for point + commit [needs graphic]
+	* What is working	
+		* Ex: Hand mesh [needs graphic]
+		* Ex: Hypothesis for voice [needs graphic]
+		* Ex: Dwell progress indicator [needs graphic]
+	* What you can do next
+		* Ex: Arrow affordances for hands [needs graphic]
+		* Ex: Prompts for voice [needs graphic]
 
-	• Teaching transitions is as important as teaching the actual mechanics. This allows the user to have complete control and allowing her to adjust depending on the situation. 
+* Teaching transitions is as important as teaching the actual mechanics. This allows the user to have complete control and allowing her to adjust depending on the situation. 
 
 
 ## Transition interaction models
