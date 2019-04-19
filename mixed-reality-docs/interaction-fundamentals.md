@@ -131,7 +131,7 @@ This article outlines some of the tips and tricks we've learned to keep users co
 ## What does optimization mean?
 
 The way the user interacts with your application will be very different depending on the mode they are on. Affordances provide the guiderails they need to get started as well as the assurance that the system is responding to them (think about the first time people started using a mouse, something that was unfamiliar at the time). Without thoughtful affordances, users could quickly become overwhelmed.
-<br>
+
 Here are some examples of how affordances and behaviors would be optimized for each mode, keeping in mind crucial user questions like: "how do I know if it's working?", "what can I do?", "What did I just do?"
 
 <table>
