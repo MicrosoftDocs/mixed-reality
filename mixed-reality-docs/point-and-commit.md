@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Mixed Reality, interaction, design
 ---
 # Point and commit
-Point and commit is an input model enables users to target, select and manipulate 2D contents and 3D objects in a distance. This far interaction technique is a navel interactive experience that human being didn't really have during their daily interaction with the real world. For example, in a super hero movie, Magneto is capable of reaching out and manipulating a far object via hands in a distance, but human can't do it in reality. In both Microsoft HoloLens (AR) and Microsoft Mixed Reality (VR), we equip users this magical power, breaking the physical constraint of real world not only to have delightful experience with holographic contents but to make the interaction more effective and efficient.
+Point and commit is an input model enables users to target, select and manipulate 2D contents and 3D objects in a distance. This "Far" interaction technique is a navel interactive experience that human being didn't really have during their daily interaction with the real world. For example, in a super hero movie, Magneto is capable of reaching out and manipulating a far object via hands in a distance, but human can't do it in reality. In both Microsoft HoloLens (AR) and Microsoft Mixed Reality (VR), we equip users this magical power, breaking the physical constraint of real world not only to have delightful experience with holographic contents but to make the interaction more effective and efficient.
 
 ## Device support
 <table>
