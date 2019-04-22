@@ -75,12 +75,13 @@ In direct manipulation, there are two ways for users to manipulate 3D object, Af
 ### Affordance Based Manipulation
 Users use hand rays to point and reveal the bounding box and manipulation affordances. Users can apply the manipulation gesture on the bounding box to move the whole object, on the edge affordances to rotate and on the coner affordances to scale uniformly.
 
-[Image of far manipulating 3D Object] <br>
+![](images/3D-Object-Manipulation-Far-720px.jpg) <br>
+
 
 ### Non-affordance Based Manipulation
 Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale and rotate it according to relative motions of two hands.<br>
 
-![](images/3D-Object-Manipulation-Far-720px.jpg)
+[Image of far manipulating 3D Object] <br>
 
 ## Instinctual gesturers
 The concept of instinctual gestures for point and commit is in sync with that for direct manipulation. What gestures users suppose to perform on a 3D object are guided by the design of UI affordances. A small control point would motivate users to pinch with thumb and index finger, while a large object makes users to grab with 5 finger.
