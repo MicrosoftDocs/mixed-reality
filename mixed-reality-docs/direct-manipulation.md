@@ -93,13 +93,15 @@ For interacting with the slate contact:<br>
 ## 3D Object Manipulation
 In HoloLens 2, users are enabled to use their hands to direct manipulate 3D hologramphic objects by applying a bounding box to each 3D object. The bounding box provides better depth perception through its proximity shader. With the bounding box, there are two design approaches for 3D object manipulation:      
 ### Affordance Based Manipulation:
-It is a way for users to manipulate the 3D object through bounding box and the manipulation affordances around it. As soon as a user's hand is close to a 3D object, the bounding box and the nearest affordance are revealed. Users can grab the bounding box to move the whole object, the edge affordances to rotate and the coner affordances to scale uniformly.
-### Non-affordance Based Manipulation:
-In this mechanisom, no affordance is attached to the bounding box. Users can only reveal the bounding box, then directly interact with it. If the bounding box is grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands. 
-
-For manipulation requires precision, we recommend afforance based manipulation, providing high level of granularity. For flexible manipulation, non-affordance manipulation will be a good choice, offering users instant and playful experiences.
+It is a way for users to manipulate the 3D object through bounding box and the manipulation affordances around it. As soon as a user's hand is close to a 3D object, the bounding box and the nearest affordance are revealed. Users can grab the bounding box to move the whole object, the edge affordances to rotate and the coner affordances to scale uniformly.<br>
 
 ![](images/3D-Object-Manipulation-720px.jpg)<br>
+
+### Non-affordance Based Manipulation:
+In this mechanisom, no affordance is attached to the bounding box. Users can only reveal the bounding box, then directly interact with it. If the bounding box is grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands.<br> 
+[Image]<br>
+For manipulation requires precision, we recommend afforance based manipulation, providing high level of granularity. For flexible manipulation, non-affordance manipulation will be a good choice, offering users instant and playful experiences.
+
 
 ## Instinctual Gestures
 Unlike HoloLens (1st gen), teaching users a couple predefined gestures, such as Bloom and Air Tap, in HoloLens 2, we don't ask users to memorize any symbolic gesture. All gestures that users need for interacting with holograms and contents are instinctual. The way to achieve instinctual gesture is to guide users to perform gestures through the design of UI affordances. For example, if we encourage users to grab an object or a control point with two finger pinch, the object or the control point should be small. If we would like users to perform five finger grab, the object or the control point should be relatively big. Similar to buttons, a tiny button would limit users to press it with a single finger, while a huge button would encourage users to press it with their palms.
