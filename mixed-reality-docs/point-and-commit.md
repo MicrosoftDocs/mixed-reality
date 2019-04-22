@@ -75,19 +75,20 @@ In direct manipulation, there are two ways for users to manipulate 3D object, Af
 ### Affordance Based Manipulation
 Users use hand rays to point and reveal the bounding box and manipulation affordances. Users can apply the manipulation gesture on the bounding box to move the whole object, on the edge affordances to rotate and on the coner affordances to scale uniformly.
 
-[Image of far manipulating 2D slate] <br>
+[Image of far manipulating 3D Object] <br>
 
 ### Non-affordance Based Manipulation
-Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale and rotate it according to relative motions of two hands.
+Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale and rotate it according to relative motions of two hands.<br>
+
 ![](images/3D-Object-Manipulation-Far-720px.jpg)
 
 ## Instinctual gesturers
-The concept of instinctual gestures for point and commit is in sync with that for direct manipulation. What gestures users suppose to perform on a 3D object are guided by the design of UI affordance. A small control point would motivate users to pinch with 2 thumb and index finger, while a large object makes users to manipulate with 5 finger gab.
+The concept of instinctual gestures for point and commit is in sync with that for direct manipulation. What gestures users suppose to perform on a 3D object are guided by the design of UI affordances. A small control point would motivate users to pinch with thumb and index finger, while a large object makes users to grab with 5 finger.
 
 ![](images/Instinctual-Gestures-Far-720px.jpg)<br>
 
 ## Symmetric design between hands and 6 DoF controller 
-The Point and Commit concept is firstly created and defined for the Mixed Reality Portal, where users wear an immersive headset and interact with the 3d object via motion controllers. The motion controllers shoot out rays for pointing and manipulating far objects. There are buttons on the controllers for further committing different functionalities. We leverage the interaction model of rays and apply them on both hands to achieve the goal of symmetric design. With this design, users who are familiar with MRP won't need to learn another interaction model for far pointing and manipulation while first time using HoloLen 2, and vice versa.    
+The concept of point and commit model for far interaction is firstly created and defined for the Mixed Reality Portal, where users wear an immersive headset and interact with the 3d object via motion controllers. The motion controllers shoot out rays for pointing and manipulating far objects. There are buttons on the controllers for further committing different functionalities. We leverage the interaction model of rays and attach them on both hands. With this symmetric design, users who are familiar with MRP won't need to learn another interaction model for far pointing and manipulation while first time using HoloLen 2, and vice versa.    
 
 ![](images/Symmetric-Design-For-Rays-720px.jpg)<br>
 
