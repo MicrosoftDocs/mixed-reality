@@ -36,23 +36,27 @@ Point and commit has been one of the primary input models on HoloLens 2, utilizi
 
 ## Hand rays
 On HoloLens 2, we create a hand ray shooting out from the center of a palm. The ray is treated as an extension of a hand. A donut shape cursor is attached at the end of the ray and implies the location where the ray intersects with a hitted object. The object that the cursor lands will receive gestural commands from the hand. 
-### Air Tap
-The very basic gestural command is using thumb and index finger to perform [Air Tap](coming-soon.md) gesture. By using hand ray to targeting (point) and air tapping (commit), users can activate a button or a hyperlink on a web content in a distance. The visual design of the hand ray should also react to point and commit states: <br><br>
+
+The very basic gestural command is using thumb and index finger to perform [Air Tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content in a distance. The visual design of the hand ray should also react to point and commit states: <br><br>
 * In the pointing state, the ray is dash lined, and the cursor is a donut shape.
 * in the committing state, the ray turns into a solid line, and the cursor shrinks to a dot.
 ![](images/Hand-Rays-720px.jpg)<br>
 
 ## Transition between near and far
-Instead of using specific gesture, such as [Pointing with Index Finger](coming-soon.md) to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more manipulative gestures, such as pinch and grab gestures. With this design, HoloLens 2 support exactly the same set of hand gestures for both near and far interaction. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br><br>
+Instead of using specific gesture, such as [Pointing with Index Finger](coming-soon.md) to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more gestures of manipulation. With this design, HoloLens 2 support exactly the same set of hand gestures for both near and far interaction. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br><br>
 * when an object is within arm reached distance (roughly 50 cm), the rays are turned off automatically encouraging for near interaction. 
 * When the object is farther than 50 cm, the rays are turned on.<br>
 This mechanism makes the transition smooth and seamless.<br>
 ![](images/Transition-Between-Near-And-Far-720px.jpg)<br>
 
 ## 2D slate interaction
-A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for far interacting with a 2D slate is to use hand rays to target and air tap to commit. After targeting with a hand ray, users can air tap to activate a hyperlink or a button. They can use one hand to "air tap and drag" to scroll a slate content up and down. The relative motion of using two hands to "air tap and drag" can zoom in and out the slate content. Targeting the hand ray at the corners and edges reveals the closest manipulation affordance. <br><br>
+For interacting with the slate contact:<br><br>
 
-By "grab and drag" the manipulation affordances, users can perform uniform scaling through the corner affordances and can reflow the slate via the edge affordances. By "grab and drag" the holobar at the top of the 2D slate, users can move the whole slate.
+A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for far interacting with a 2D slate is to use hand rays to point and air tap to commit. After targeting with a hand ray, users can air tap to activate a hyperlink or a button. They can use one hand to perform [Navigation](coming-soon.md) gesture to scroll a slate content up and down. The relative motion of using two hands to peform navigation gesture can zoom in and out the slate content.<br><br> 
+
+For manipulating the 2D slate itself:<br><br>
+
+Point the hand ray at the corners and edges reveals the closest manipulation affordance. By "grab and drag" the manipulation affordances, users can perform uniform scaling through the corner affordances and can reflow the slate via the edge affordances. By "grab and drag" the holobar at the top of the 2D slate, users can move the whole slate.
 ![](images/2D-Slate-Interaction-Far-720px.jpg)<br>
 
 ## 3D object manipulation
