@@ -52,14 +52,14 @@ For more details on the implementation of hands-free, try the links below.
 * Ex. Voice interactions are better with captions that have to be turned on 
 
 		
-## Usability Checklist
+## Usability checklist
 
 **Are there UI and voice equivalents for gestures?**
 * Replacement for system gesture, resizing, placing, swipes, taps, etc.
 
 **Does the user have confident control of UI presence, placement, verbosity at all times?**
 * Getting UI out of the way
-* Addressing UI that is out of FOV
+* Addressing UI that is out of field of view (FOV)
 * How much I see, where, when
 
 **Does the user understand ...**
