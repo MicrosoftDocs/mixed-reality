@@ -37,7 +37,7 @@ Point and commit has been one of the primary input models on HoloLens 2, utilizi
 ## Hand rays
 On HoloLens 2, we create a hand ray shooting out from the center of a palm. The ray is treated as an extension of the hand. A donut shape cursor is attached at the end of the ray to imply the location where the ray intersects with a hitted object. The object that the cursor lands will receive gestural commands from the hand. 
 
-The very basic gestural command is triggered by using thumb and index finger to perform [Air Tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink, navigate the web content and manipulate 3D objects in a distance. The visual design of the hand ray should also react to point and commit states: <br>
+The very basic gestural command is triggered by using thumb and index finger to perform [Air Tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content. With more [Composite Gestures](coming-soon.md), users are capable of navigating the web content and manipulating 3D objects in a distance. The visual design of the hand ray should also react to point and commit states: <br>
 * In the pointing state, the ray is dash lined, and the cursor is a donut shape.
 * in the committing state, the ray turns into a solid line, and the cursor shrinks to a dot.<br><br>
 ![](images/Hand-Rays-720px.jpg)<br>
