@@ -98,8 +98,8 @@ It is a way for users to manipulate the 3D object through bounding box and the m
 ![](images/3D-Object-Manipulation-720px.jpg)<br>
 
 ### Non-affordance Based Manipulation:
-In this mechanisom, no affordance is attached to the bounding box. Users can only reveal the bounding box, then directly interact with it. If the bounding box is grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands.<br> 
-[Image of Non-affordance Based Manipulation]<br>
+In this mechanisom, no affordance is attached to the bounding box. Users can only reveal the bounding box, then directly interact with it. If the bounding box is grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands.<br><br> 
+[Image of Non-affordance Based Manipulation]<br><br>
 For manipulation requires precision, we recommend afforance based manipulation, providing high level of granularity. For flexible manipulation, non-affordance manipulation will be a good choice, offering users instant and playful experiences.
 
 
