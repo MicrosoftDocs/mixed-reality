@@ -37,7 +37,7 @@ Point and commit has been one of the primary input models on HoloLens 2, utilizi
 ## Hand rays
 On HoloLens 2, we create a hand ray shooting out from the center of a palm. The ray is treated as an extension of a hand. A donut shape cursor is attached at the end of the ray and implies the location where the ray intersects with a hitted object. The object that the cursor lands will receive gestural commands from the hand. 
 
-The very basic gestural command is using thumb and index finger to perform [Air Tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content in a distance. The visual design of the hand ray should also react to point and commit states: <br><br>
+The very basic gestural command is using thumb and index finger to perform [Air Tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content in a distance. The visual design of the hand ray should also react to point and commit states: <br>
 * In the pointing state, the ray is dash lined, and the cursor is a donut shape.
 * in the committing state, the ray turns into a solid line, and the cursor shrinks to a dot.<br><br>
 ![](images/Hand-Rays-720px.jpg)<br>
@@ -46,7 +46,7 @@ The very basic gestural command is using thumb and index finger to perform [Air 
 Instead of using specific gesture, such as [Pointing with Index Finger](coming-soon.md) to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more gestures of manipulation. With this design, HoloLens 2 support exactly the same set of hand gestures for both near and far interaction. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br><br>
 * when an object is within arm reached distance (roughly 50 cm), the rays are turned off automatically encouraging for near interaction. 
 * When the object is farther than 50 cm, the rays are turned on.<br>
-This mechanism makes the transition smooth and seamless.<br><br>
+This mechanism makes the transition smooth and seamless.<br>
 ![](images/Transition-Between-Near-And-Far-720px.jpg)<br>
 
 ## 2D slate interaction
@@ -58,20 +58,20 @@ For interacting with the slate contact:<br>
 * Users can use one hand to perform [Navigation](coming-soon.md) gesture to scroll a slate content up and down. 
 * Users can use two hands to peform navigation gesture to zoom in and out the slate content.<br><br>
 
-![](images/2D-Slate-Interaction-Far-720px.jpg)<br><br>
+![](images/2D-Slate-Interaction-Far-720px.jpg)<br>
 
-For manipulating the 2D slate itself:<br><br>
+For manipulating the 2D slate itself:<br>
 
 * Users point the hand ray at the corners and edges to reveal the closest manipulation affordance. 
 * By applying manipulation gesture on the manipulation affordance, users can perform uniform scaling through the corner affordances and can reflow the slate via the edge affordances. 
-* By applying manipulation gesture on the holobar at the top of the 2D slate, users can move the whole slate.<br><br>
+* By applying manipulation gesture on the holobar at the top of the 2D slate, users can move the whole slate.<br>
 
-[Image of far manipulating 2D slate] <br><br>
+[Image of far manipulating 2D slate] <br>
 
 ## 3D object manipulation
-In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model for far interaction, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed.<br><br> 
+In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model for far interaction, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed.<br>
 
-For Affordance Based Manipulation, users use hand ray to target and reveal the bounding box and manipulation affordances. Users can grab the bounding box to move the whole object, the edge affordances to rotate and the coner affordances to scale uniformly.<br><br> 
+For Affordance Based Manipulation, users use hand ray to target and reveal the bounding box and manipulation affordances. Users can grab the bounding box to move the whole object, the edge affordances to rotate and the coner affordances to scale uniformly.<br> 
 
 For non-affordnace based manipulation, users can point with hand rays to reveal the bounding box then grab it. If the bounding box is targeted and grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is targeted and grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands.<br>
 ![](images/3D-Object-Manipultaion-Far-720px.jpg)<br>
