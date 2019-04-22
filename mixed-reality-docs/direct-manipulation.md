@@ -48,16 +48,16 @@ Instead of using random generic shape, we suggest to use a [Sphere Collider](com
 [Image of Sphere Collider]<br>
 
 ### Fingertip Cursor
-In addition to rendering a collidable sphere on the index fingertip, we create an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. The cursor behaivors are: 
+In addition to rendering a collidable sphere on the index fingertip, we create an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience interactively. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size as below:
 * When an index finger moves toward a hologram, the cursor is always parallel to the surface of the hologram and gradually shrinks its size accordingly. 
-* As soon as the finger touch the surface, the cursor shrinks into a dot.
+* As soon as the finger touch the surface, the cursor shrinks into a dot and emits a touch event.
 
-<br> With this mechanism, users can achieve high precision near targeting tasks, such as triggering a hyperlink on a web content or pressing a button. <br>
+<br> With the interactive feedback, users can achieve high precision near targeting tasks, such as triggering a hyperlink on a web content or pressing a button. <br>
 
 ![](images/Fingertip-Cursor-720px.jpg)<br>
 
 ## Bounding Box with Proximity Shader
-The hologram itself also requires to provide both visual and audio feedbacks to compensate the lack of tactile feedback. For that, we generate the concept of [Bounding Box with Proximity Shader](coming-soon.md). A bounding box is a minimun volumetric area that encloses a 3D object. The bounding box has a interactive rendering mechanism called [Proximity Shader](coming-soon.md). The proximity shader functions as below:
+The hologram itself also requires to provide both visual and audio feedbacks to compensate the lack of tactile feedback. For that, we generate the concept of [Bounding Box with Proximity Shader](coming-soon.md). A bounding box is a minimun volumetric area that encloses a 3D object. The bounding box has an interactive rendering mechanism called [Proximity Shader](coming-soon.md). The proximity shader behaves as below:
 
 * When the index finger is within a range, a fingertip spotlight is cast on the surface of bounding box. 
 * When the fingertip gets closer to the surface, the spotlight condenses accordingly. 
@@ -67,26 +67,27 @@ The hologram itself also requires to provide both visual and audio feedbacks to 
 ![](images/Bounding-Box-With-Proximity-Shader-720px.jpg)<br>
 
 ## Pressable Button
-With a collidable fingertip or fingertip cursor, users are now ready to interact with the very fundamental holographic UI component, [Pressable Button](coming-soon.md). A pressable button is a holographic button tailored for direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback related issues. 
+With a collidable fingertip, users are now ready to interact with the very fundamental holographic UI component, [Pressable Button](coming-soon.md). A pressable button is a holographic button tailored for direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback related issues. 
 * The first mechanism is bounding box with proximity shader, which has already been addressed in the foregoing paragraph. It serves to provide better sense of proximity for users to approach and make contact with a button. 
-* The second one is depression, which creates sense of press, after a fingertip contacts the button. The mechanism is that the button tightly moves with the fingertip along the depth axis. The button can be triggered as soon as reaching a designated depth (on press) or leaving the depth (on release) after passing through it. 
+* The second one is depression. It creates sense of press, after a fingertip contacts the button. The mechanism is that the button tightly moves with the fingertip along the depth axis. The button can be triggered as soon as reaching a designated depth (on press) or leaving the depth (on release) after passing through it. 
 * The sound effect should be added to enhance feedback, when the button is triggered. 
 
 ![](images/Pressable-Button-720px.jpg)<br>
 
 ## 2D Slate Interaction
-A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for interacting with a 2D slate is to leverage the mental model of interacting with a physical touch screen.<br> <br>
+A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for interacting with a 2D slate via direct manipulation is to leverage the mental model of interacting with a physical touch screen.<br> <br>
 For interacting with the slate contact:<br> 
-* With the assistance of fingertip cursor and proximity shader, users perceive good sense of "touching" with their index fingers to press a hyperlink or a button. 
-* They can use an index finger to scroll a slate content up and down. 
-* Using two index fingers can zoom in and out the slate content. 
+* Users use an index finger to press a hyperlink or a button. 
+* Users use an index finger to scroll a slate content up and down. 
+* Users use two index fingers to zoom in and out the slate content according to relative motion of fingers. 
+![](images/2D-Slate-Interaction-720px.jpg)<br>
 
 <br>For manipulating the 2D slate itself:<br>
 * Users can approach their hands toward corners and edges to reveal the closest manipulation affordances. 
 * By grabbing the manipulation affordances, users can perform uniform scaling through the corner affordnaces and reflow via the edge affordances. 
 * Grabbing the holobar at the top of the 2D slate can users move the whole slate.
+[Image of Slate Manipulation]
 
-![](images/2D-Slate-Interaction-720px.jpg)<br>
 
 ## 3D Object Manipulation
 There are two ways for users to manipulate 3D object. 
