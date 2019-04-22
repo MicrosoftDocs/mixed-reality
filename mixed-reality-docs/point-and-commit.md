@@ -57,7 +57,7 @@ For interacting with the slate contact:<br>
 
 * Users can point at a hyperlink or a button then air tap to activate it. 
 * Users can use one hand to perform [Navigation](coming-soon.md) gesture to scroll a slate content up and down. 
-* Users can use two hands to peform navigation gesture to zoom in and out the slate content.<br><br>
+* Users can use two hands to peform navigation gestures to zoom in and out the slate content.<br><br>
 
 ![](images/2D-Slate-Interaction-Far-720px.jpg)<br>
 
@@ -70,19 +70,23 @@ For manipulating the 2D slate itself:<br>
 [Image of far manipulating 2D slate] <br>
 
 ## 3D object manipulation
-In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model for far interaction, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed.<br>
+In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed.<br>
 
-For Affordance Based Manipulation, users use hand ray to target and reveal the bounding box and manipulation affordances. Users can grab the bounding box to move the whole object, the edge affordances to rotate and the coner affordances to scale uniformly.<br> 
+### Affordance Based Manipulation
+Users use hand rays to point and reveal the bounding box and manipulation affordances. Users can apply the manipulation gesture on the bounding box to move the whole object, on the edge affordances to rotate and on the coner affordances to scale uniformly.<br> 
 
-For non-affordnace based manipulation, users can point with hand rays to reveal the bounding box then grab it. If the bounding box is targeted and grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is targeted and grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands.<br>
+### Non-affordance Based Manipulation
+Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale and rotate it according to relative motions of two hands.<br>
 ![](images/3D-Object-Manipultaion-Far-720px.jpg)<br>
 
 ## Instinctual gesturers
-Coming soon!
+The concept of instinctual gestures for point and commit is in sync with that for direct manipulation. What gestures users suppose to perform on a 3D object are guided by the design of UI affordance. A small control point would motivate users to pinch with 2 thumb and index finger, while a large object makes users to manipulate with 5 finger gab.
+
 ![](images/Instinctual-Gestures-Far-720px.jpg)<br>
 
 ## Symmetric design between hands and 6 DoF controller 
-Coming soon!
+The Point and Commit concept is firstly created and defined for the Mixed Reality Portal, where users wear an immersive headset and interact with the 3d object via motion controllers. The motion controllers shoot out rays for pointing and manipulating far objects. There are buttons on the controllers for further committing different functionalities. We leverage the interaction model of rays and apply them on both hands to achieve the goal of symmetric design. With this design, users who are familiar with MRP won't need to learn another interaction model for far pointing and manipulation while first time using HoloLen 2, and vice versa.    
+
 ![](images/Symmetric-Design-For-Rays-720px.jpg)<br>
 
 
