@@ -18,7 +18,7 @@ The Instinctual Interaction models also naturally align across device types.  Fo
 We've structured our guidance to reflect this philosophy: The most instinctual interaction models are multimodal, and the interaction is consistent across device types and whether users are using controllers or not.
 
 ## Multimodal interaction models
-Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences. Think of these interaction models as the user's mental model for completing their flows. 
+Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences. Think of these interaction models as the user's mental model for completing their flows. Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. Check out the chart below for some examples of scenarios and benefits of each interaction model.  
 <br><br>
 
 <table>
