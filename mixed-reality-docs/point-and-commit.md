@@ -50,9 +50,9 @@ This mechanism makes the transition smooth and seamless.<br><br>
 ![](images/Transition-Between-Near-And-Far-720px.jpg)<br>
 
 ## 2D slate interaction
-A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for far interacting with a 2D slate is to use hand rays to point and air tap to commit.<br><br>
+A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for far interacting with a 2D slate is to use hand rays to point and air tap to commit.<br>
 
-For interacting with the slate contact:<br><br>
+For interacting with the slate contact:<br>
 
 * Users can point at a hyperlink or a button then air tap to activate it. 
 * Users can use one hand to perform [Navigation](coming-soon.md) gesture to scroll a slate content up and down. 
