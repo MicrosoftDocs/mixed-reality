@@ -31,7 +31,7 @@ Simulation starts by creating an IPerceptionSimulationManager object. From that 
 
 ## Creating an IPerceptionSimulation Manager Object
 
-To control simulation, you'll issue updates to objects retrieved from an IPerceptionSimulationManager object. The first step is to get that object and connect it to your target device or emulator. You can get the IP address of your emulator by clicking on the Device Portal button in the [toolbar](using-the-hololens-emulator.md#anatomy-of-the-hololens-emulator)
+To control simulation, you'll issue updates to objects retrieved from an IPerceptionSimulationManager object. The first step is to get that object and connect it to your target device or emulator. You can get the IP address of your emulator by clicking on the Device Portal button in the [toolbar](using-the-hololens-emulator.md)
 
 ![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.
 

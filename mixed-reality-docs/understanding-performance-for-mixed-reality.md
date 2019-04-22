@@ -22,16 +22,16 @@ For review, the performant framerate values for each target platform are listed 
 
 The framework below gives a general outline for best practices and understandings towards hitting target frame rates. To dive further into details, consider reading the [performance recommendations for Unity article](performance-recommendations-for-unity.md). In particular, this related article will discuss how to measure framerate in your Unity Windows Mixed Reality app as well as steps to take in the Unity environment to improve performance.
 
-# Understanding performance bottlenecks
+## Understanding performance bottlenecks
 
 If your app has an underperforming framerate, the first step is to analyze and understand where your application is computationally intensive. There are two primary processors responsible for the work to render your scene: the CPU and the GPU. Each of these two components handle different operations and stages of your Mixed Reality app. There are three key places where bottlenecks may occur. 
 
-1. **App Thread - CPU**
-    * This thread is responsible for your app logic. This includes processing input, animations, physics, and other app logic/state
-2. **Render Thread - CPU to GPU**
-    * This thread is responsible for submitting your draw calls to the GPU. When your app wants to render an object such as a cube or model, this thread sends a request to the GPU, which has an architecture optimized for rendering, to perform these operations.
-3. **GPU**
-    * This processor most commonly handles the graphics pipeline of your application to transform 3D data (models, textures, etc) into pixels and ultimately produce a 2D image to submit to your device's screen.
+1. **App Thread - CPU** -
+    This thread is responsible for your app logic. This includes processing input, animations, physics, and other app logic/state
+2. **Render Thread - CPU to GPU** - 
+    This thread is responsible for submitting your draw calls to the GPU. When your app wants to render an object such as a cube or model, this thread sends a request to the GPU, which has an architecture optimized for rendering, to perform these operations.
+3. **GPU** - 
+    This processor most commonly handles the graphics pipeline of your application to transform 3D data (models, textures, etc) into pixels and ultimately produce a 2D image to submit to your device's screen.
 
 ![Lifetime of a Frame](images/lifetime-of-a-frame.png)
 
@@ -123,7 +123,7 @@ Typically shaders perform many transformations and lighting calculations. Althou
 #### Remove GPU stages
 Post-processing effects can be very expensive and generally inhibit the fill rate of your application. This also includes anti-aliasing techniques such as MSAA. On HoloLens, it is recommended to avoid these techniques entirely. Furthermore, additional shader stages such as geometry, hull, and compute shaders should be avoided when possible.
 
-### Memory recommendations
+## Memory recommendations
 Excessive memory allocation & deallocation operations can have adverse effects on your holographic application resulting in inconsistent performance, frozen frames, and other detrimental behavior. It is especially important to understand memory considerations when developing in Unity since memory management is controlled by the garbage collector.
 
 #### Object pooling
@@ -131,5 +131,5 @@ Excessive memory allocation & deallocation operations can have adverse effects o
 Object pooling is a popular technique to reduce the cost of continuous allocations & deallocations of objects. This is done by allocating a large pool of identical objects and re-using inactive, available instances from this pool instead of constantly spawning and destroying objects over time. Object pools are great for re-useable components that have variable lifetime during an app.
 
 ## See also
-- [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
-- [Recommended Settings for Unity](recommended-settings-for-unity.md)
+- [Performance recommendations for Unity](performance-recommendations-for-unity.md)
+- [Recommended settings for Unity](recommended-settings-for-unity.md)

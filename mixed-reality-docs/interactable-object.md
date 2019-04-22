@@ -16,17 +16,9 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 
 ![Interactible object hero image](images/640px-interactibleobject-hero-640px.jpg)
 
-## What is a button?
 
-In the two-dimensional world, a button control is commonly used to trigger an event or action. Typically, it's presented as a rectangular shape with different visuals for each interaction state such as idle, hover and pressed. To reinforce this affordance, buttons sometimes include additional visual cues such as shadow or bevel - this was typical in the early days of UI design. Buttons have gradually become flat and more abstract with modern design trends.
+In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, we have created a series of Unity scripts and prefabs that will help you create Interactable objects. You can use these to create any type of object that the user can interact with, using these standard interaction states: observation, targeted and pressed. You can easily customize the visual design with your own assets. Detailed animations can be customized by either creating and assigning corresponding animation clips for the interaction states in the Unity's animation controller or using offset and scale. 
 
-![The evolution of button design in the two-dimensional world.](images/evolutionofbuttons.png)<br>
-*The evolution of button design in the two-dimensional world*
-
-In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md)**, we have created a series of Unity scripts and prefabs that will help you create Interactable objects. You can use these to create any type of object that the user can interact with, using these standard interaction states: observation, targeted and pressed. You can easily customize the visual design with your own assets. Detailed animations can be customized by either creating and assigning corresponding animation clips for the interaction states in the Unity's animation controller or using offset and scale. You can find various examples in the **[InteractableObjectExample scene](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Scenes/InteractableObjectExample.unity)**.
-
-![Coffee cup](images/640px-interactibleobject-coffeecup.jpg)<br>
-*Any type of object can now be a button*
 
 ## Visual feedback for the different input interaction states
 
@@ -41,6 +33,13 @@ For any objects that user can interact with, we recommended to have different vi
 *Observation state, targeted state, and pressed state*
 
 In Windows Mixed Reality, you can find the examples of visualizing different input states on Start menu and App Bar buttons. You can use techniques such as highlighting or scaling to provide visual feedback to the user’s input states.
+
+In HoloLens 2, since it supports fully articulated hand tracking input, we can provide additional affordances based on the proximity to the hands. The [Button in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) shows this example.
+
+![Pressable button](images/640px-interactibleobject-pressablebutton-650px.jpg)<br>
+
+
+
 
 ## Interactable object samples
 
@@ -72,10 +71,11 @@ This example shows a traditional 2D style button. Each input state has a slightl
 
 With HoloLens, you can leverage physical space. Imagine a holographic push button on a physical wall. Or how about a coffee cup on a real table? Using 3D models imported from modeling software, we can create an Interactable object that resembles real life object. Since it's a digital object, we can add magical interactions to it.
 
-## Interactable object in Unity
-You can find the [examples of Interactable object in Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md)
+## Interactable object in Mixed Reality Toolkit
+You can find the [examples of Interactable object in Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 
 
 ## See also
+* [Pressable Button on Mixed Reality Toolkit-Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
 * [Object collection](object-collection.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)

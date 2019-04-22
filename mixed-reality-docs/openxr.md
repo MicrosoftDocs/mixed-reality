@@ -36,11 +36,7 @@ To get started with the Mixed Reality OpenXR Developer Preview:
 To get going with the Mixed Reality OpenXR Developer Preview on the Windows 10 October 2018 Update (the current version of Windows), you'll need to follow a few more steps:
 
 1. Follow the steps above to install the Mixed Reality OpenXR Developer Preview.
-1. To set the Mixed Reality OpenXR Developer Preview as your system's active OpenXR runtime, download the [Mixed Reality OpenXR Developer Preview Compatibility Pack](https://aka.ms/openxr-compat) and extract it to a stable location.
-1. From an administrator command prompt, run the following command, replacing `<fully-qualified path to MixedRealityRuntime.json>` with the full path to the MixedRealityRuntime.json file you extracted:
-   ```
-   reg add "HKLM\Software\Khronos\OpenXR\0" /v ActiveRuntime /t REG_SZ /d "<fully-qualified path to MixedRealityRuntime.json>" /reg:64
-   ```
+1. To set the Mixed Reality OpenXR Developer Preview as your system's active OpenXR runtime, install the [Mixed Reality OpenXR Developer Preview Compatibility Pack](https://aka.ms/openxr-compat).
 
 ## Building a test OpenXR app
 
@@ -48,11 +44,11 @@ The [hello_xr](https://github.com/KhronosGroup/OpenXR-SDK/tree/master/src/tests/
 
 ## Feedback
 
-To give feedback on the [OpenXR Provisional 0.90 specification](https://www.khronos.org/registry/OpenXR/specs/0.90/html/xrspec.html), please visit the [Khronos OpenXR Forums](https://community.khronos.org/c/openxr), [Slack Channel](https://khr.io/slack) and [Issue Tracker](https://github.com/KhronosGroup/OpenXR-Docs).
+To give feedback on the [OpenXR Provisional 0.90 specification](https://www.khronos.org/registry/OpenXR/specs/0.90/html/xrspec.html), please visit the [Khronos OpenXR Forums](https://community.khronos.org/c/openxr), [Slack #openxr channel](https://khr.io/slack) and the [spec issue tracker](https://github.com/KhronosGroup/OpenXR-Docs/issues).
 
 ## Troubleshooting
 
-Here are some troubleshooting tips for the Mixed Reality OpenXR Developer Preview.  If you're hitting any other problems, please visit the [Khronos OpenXR Forums](https://community.khronos.org/c/openxr) or [Slack Channel](https://khr.io/slack).
+Here are some troubleshooting tips for the Mixed Reality OpenXR Developer Preview.  If you're hitting any other problems, please visit the [Khronos OpenXR Forums](https://community.khronos.org/c/openxr) or [Slack #openxr channel](https://khr.io/slack).
 
 ### OpenXR app not starting Windows Mixed Reality
 

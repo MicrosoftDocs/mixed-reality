@@ -12,10 +12,10 @@ keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch
 
 # Local anchor transfers in Unity
 
-In situations where you cannot use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors), local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.
+In situations where you cannot use <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.
 
 >[!NOTE]
->Local anchor transfers provide less robust anchor recall than [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors), and iOS and Android devices are not supported by this approach.
+>Local anchor transfers provide less robust anchor recall than <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, and iOS and Android devices are not supported by this approach.
 
 ### Setting the SpatialPerception capability
 
