@@ -18,62 +18,8 @@ The Instinctual Interaction models also naturally align across device types.  Fo
 We've structured our guidance to reflect this philosophy: The most instinctual interaction models are multimodal, and the interaction is consistent across device types and whether users are using controllers or not.
 
 ## Multimodal interaction models
-Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences.  
-
-Think of these interaction models as the user's mental model for completing their flows. 
+Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences. Think of these interaction models as the user's mental model for completing their flows. 
 <br><br>
-<table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <tr>
-        <td><strong><a href="hands-and-tools.md">Hands and tools</a></strong></td>
-        <td><strong><a href="hands-free.md">Hands-free</a></strong></td>
-        <td><strong><a href="gaze-and-commit.md">Gaze and commit</a></strong></td>
-    </tr> 
-</table>
-<br>
-Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. Check out the chart below for some examples of scenarios and benefits of each interaction model.  
-<br><br>
-<table>
-    <colgroup>
-    <col width="10%" />
-    <col width="30%" />
-    <col width="30%" />
-    <col width="30%" />
-    </colgroup>
-    <tr>
-        <td><strong>Model</strong></td>
-        <td><strong>Hands and tools</strong></td>
-        <td><strong>Hands-free</strong></td>
-        <td><strong>Gaze and commit</strong></td>
-    </tr>
-    <tr>
-        <td>Example scenarios</td>
-        <td>3D spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
-        <td>Contextual experiences where a user's hands are occupied<br>e.g. on the-job learning, maintenance</td>
-        <td>Click-through experiences<br> e.g. 3D presentations, demos</td>
-    </tr>
-    <tr>
-        <td>Fit</td>
-        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6 DoF controllers<br>Great when coupled with voice, eye tracking, or head gaze</td>
-        <td>Some learning required<br>If hands are unavailable<br>pairs well with voice and natural language</td>
-        <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens (1st gen)</td>
-    </tr>
-    <tr>
-        <td>Hardware</td>
-        <td>HoloLens 2<br>Immersive headsets</td>
-        <td>HoloLens 2<br>HoloLens (1st gen)<br> Immersive headsets</td>
-        <td>HoloLens 2<br>HoloLens (1st gen)<br> Immersive headsets<br> Mobile AR</td>
-    </tr>
-</table>
-<br>
-
-
-
-**Should we flip this table like this?**<br>
 
 <table>
     <colgroup>
@@ -133,6 +79,7 @@ This article outlines some of the tips and tricks we've learned to keep users co
 The way the user interacts with your application will be very different depending on the mode they are on. Affordances provide the guidelines they need to get started as well as the assurance that the system is responding to them (think about the first time people started using a mouse, something that was unfamiliar at the time). Without thoughtful affordances, users could quickly become overwhelmed.
 
 Here are some examples of how affordances and behaviors would be optimized for each mode, keeping in mind crucial user questions like: "How do I know if it's working?", "What can I do?", "What did I just do?"
+<br><br>
 
 <table>
     <colgroup>
