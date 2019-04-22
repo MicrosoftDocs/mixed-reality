@@ -8,33 +8,50 @@ ms.topic: article
 keywords: Eye Tracking, Mixed Reality, Input, Eye Gaze
 ---
 # Eye Tracking on HoloLens 2
-
-> More information coming soon!
-
-HoloLens 2 enables detecting what a user is looking at. Eye tracking enables applications to track where the user is looking in real time.  This is the main capability developers can leverage to enable a whole new level of context and human understanding within the Holographic experience. The eye tracking algorithm provides the following to applications through our API: 
-
-1.	Timestamp, 
-2.	Eye gaze origin (only one combined for left and right eye), 
-3.	Eye gaze direction (again this is combined for left and right eye), 
-4.	Boolean whether the gaze is valid. 
-
-For eye tracking to work accurately, each user is required to go through an Eye Tracking user calibration. 
+HoloLens 2 enables detecting what a user is looking at. 
+Eye tracking enables applications to track where the user is looking in real time.  
+This is the capability developers can leverage to enable a whole new level of context and human understanding within the Holographic experience. 
 
 
-## Eye Tracking Calibration
+## Use cases
+Eye tracking enables applications to track where the user is looking in real time. 
+This will enable a whole new level of context and human understanding within your holographic experience. 
+This section describes the types of new interactions that become possible with eye tracking.
 
-> More information coming soon!
+### User intent	    
+-	Context for other inputs such as voice, hands and controllers
+-	Fast and low-effort target selections
+-	Engagement with embodied virtual agents and interactive holograms	
+
+### Attention tracking	 
+-	Remote eye gaze visualization
+-	User research studies 
+-	Training simulations
+-	Performance monitoring
+-	Design evaluations, advertisement and marketing research
+-	Medical and educational research / applications	
+
+### Implicit actions	 
+-	Automatic scroll and pan
+-	Smart notifications
+-	Attentive holograms that react when being looked at	
+
+### Expressiveness	 
+-	Live avatar eye animation
+-	Gaze direction and blinks	
+
+### Gaming 	 
+-	Additional targeting vector
+-	Superpowers! 	
+
+### Text entry 	 
+-	Smarter and low-effort text entry (especially useful when speech or hands are inconvenient to use)	
+
 
 ## Eye Tracking API
-The _Eye Tracking API_ will be accessible through: `Windows.Perception.People.EyesPose` and will include the following:
-
-| Variable | Data Type |  Description |
-|---|---|---|
-| LastUpdateTimestamp | `DateTimeOffset` | Returns last timestamp when the ET signal was updated. | 
-| Gaze | `Windows.Perception.Spatial.SpatialRay?` | Ray representing the gaze based on a combination of left and right eye. |  
-| Gaze.Origin  | `System.Numerics.Vector3`  | Single eye gaze origin. |  
-| Gaze.Direction  | `System.Numerics.Vector3`  | Single eye gaze direction. | 
-| IsCalibrationValid  | `bool`  | Indicates whether the user is calibrated. |  
+The [Eye Tracking API](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) is accessible through: `Windows.Perception.People.EyesPose`. 
+It provides a single eye gaze ray (gaze origin and direction). 
+For eye tracking to work accurately, each user is required to go through an eye tracking user calibration. 
 
 
 ## Eye Gaze Design Guidelines
@@ -42,7 +59,6 @@ Building an interaction that takes advantage of fast moving eye targeting can be
 In this section, we summarize the key advantages and challenges to take into account when designing your app. 
 
 ### Benefits of Eye Gaze Input
-
 - **High speed pointing.** 
 The eye muscle is the fastest reacting muscle in our body. 
 
@@ -141,40 +157,5 @@ Do not force users to perform specific eye movements (gaze gestures) to trigger 
 5. **Account for imprecisions:** 
 We distinguish two types of imprecisions which are noticeable to users: Offset and Jitter. The easiest way to address offsets is to provide sufficiently large targets to interact with (> 2° in visual angle – as reference: your thumbnail is about 2° in visual angle when you stretch out your arm (1)). This leads to the following guidance:
     - Do not force users to select tiny targets: Research has shown that if targets are sufficiently large (and the system is designed well), users describe the interaction as effortless and magical. If targets become too small, users describe the experience as fatiguing and frustrating.
-
-
-## Use cases
-Eye tracking enables applications to track where the user is looking in real time. 
-This will enable a whole new level of context and human understanding within your holographic experience. 
-This section describes the types of new interactions that become possible with eye tracking.
-
-### User intent	    
--	Context for other inputs such as voice, hands and controllers
--	Fast and low-effort target selections
--	Engagement with embodied virtual agents and interactive holograms	
-
-### Attention tracking	 
--	Remote eye gaze visualization
--	User research studies 
--	Training simulations
--	Performance monitoring
--	Design evaluations, advertisement and marketing research
--	Medical and educational research / applications	
-
-### Implicit actions	 
--	Automatic scroll and pan
--	Smart notifications
--	Attentive holograms that react when being looked at	
-
-### Expressiveness	 
--	Live avatar eye animation
--	Gaze direction and blinks	
-
-### Gaming 	 
--	Additional targeting vector
--	Superpowers! 	
-
-### Text entry 	 
--	Smarter and low-effort text entry (especially useful when speech or hands are inconvenient to use)	
 
 ---
