@@ -78,9 +78,9 @@ Users use hand rays to point and reveal the bounding box and manipulation afford
 [Image of far manipulating 2D slate] <br>
 
 ### Non-affordance Based Manipulation
-Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale and rotate it according to relative motions of two hands.<br>
+Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale and rotate it according to relative motions of two hands.
 
-![](images/3D-Object-Manipultaion-Far-720px.jpg) <br>
+![](images/3D-Object-Manipultaion-Far-720px.jpg)
 
 ## Instinctual gesturers
 The concept of instinctual gestures for point and commit is in sync with that for direct manipulation. What gestures users suppose to perform on a 3D object are guided by the design of UI affordance. A small control point would motivate users to pinch with 2 thumb and index finger, while a large object makes users to manipulate with 5 finger gab.
