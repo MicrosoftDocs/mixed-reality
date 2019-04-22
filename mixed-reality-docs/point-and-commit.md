@@ -73,7 +73,7 @@ For manipulating the 2D slate itself:<br>
 In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed.<br>
 
 ### Affordance Based Manipulation
-Users use hand rays to point and reveal the bounding box and manipulation affordances. Users can apply the manipulation gesture on the bounding box to move the whole object, on the edge affordances to rotate and on the coner affordances to scale uniformly.
+Users use hand rays to point and reveal the bounding box and manipulation affordances. Users can apply the manipulation gesture on the bounding box to move the whole object, on the edge affordances to rotate and on the coner affordances to scale uniformly. <br>
 
 ![](images/3D-Object-Manipulation-Far-720px.jpg) <br>
 
