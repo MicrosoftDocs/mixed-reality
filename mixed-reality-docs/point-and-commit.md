@@ -50,14 +50,23 @@ This mechanism makes the transition smooth and seamless.<br><br>
 ![](images/Transition-Between-Near-And-Far-720px.jpg)<br>
 
 ## 2D slate interaction
+A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for far interacting with a 2D slate is to use hand rays to point and air tap to commit.<br><br>
+
 For interacting with the slate contact:<br><br>
 
-A 2D Slate is a holographic container hosting 2D app contents, such as web browser. The design concept for far interacting with a 2D slate is to use hand rays to point and air tap to commit. After targeting with a hand ray, users can air tap to activate a hyperlink or a button. They can use one hand to perform [Navigation](coming-soon.md) gesture to scroll a slate content up and down. The relative motion of using two hands to peform navigation gesture can zoom in and out the slate content.<br><br> 
+* Users can point at a hyperlink or a button then air tap to activate it. 
+* Users can use one hand to perform [Navigation](coming-soon.md) gesture to scroll a slate content up and down. 
+* Users can use two hands to peform navigation gesture to zoom in and out the slate content.<br><br>
+
+![](images/2D-Slate-Interaction-Far-720px.jpg)<br><br>
 
 For manipulating the 2D slate itself:<br><br>
 
-Point the hand ray at the corners and edges reveals the closest manipulation affordance. By "grab and drag" the manipulation affordances, users can perform uniform scaling through the corner affordances and can reflow the slate via the edge affordances. By "grab and drag" the holobar at the top of the 2D slate, users can move the whole slate.
-![](images/2D-Slate-Interaction-Far-720px.jpg)<br>
+* Users point the hand ray at the corners and edges to reveal the closest manipulation affordance. 
+* By applying manipulation gesture on the manipulation affordance, users can perform uniform scaling through the corner affordances and can reflow the slate via the edge affordances. 
+* By applying manipulation gesture on the holobar at the top of the 2D slate, users can move the whole slate.<br><br>
+
+[Image of far manipulating 2D slate] <br><br>
 
 ## 3D object manipulation
 In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model for far interaction, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed.<br><br> 
