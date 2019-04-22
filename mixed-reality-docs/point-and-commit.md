@@ -79,6 +79,7 @@ Users use hand rays to point and reveal the bounding box and manipulation afford
 
 ### Non-affordance Based Manipulation
 Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale and rotate it according to relative motions of two hands.<br>
+
 ![](images/3D-Object-Manipultaion-Far-720px.jpg) <br>
 
 ## Instinctual gesturers
