@@ -40,6 +40,7 @@ Direct manipulation is a primary input model on HoloLens 2, utilizing the new ar
 
 ## Collidable Fingertip
 On HoloLens 2, user's real hands are recognized and interpreted as left and right [Hand Skeletal Models](coming-soon.md). To implement the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips cause lots of unexpected and unpredictable collisions with holograms. Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1 finger press, 1 finger tap, 2 finger press and 5 finger press.
+
 ![](images/Collidable-Fingertip-720px.jpg)<br>
 
 ### Sphere Collider
@@ -111,18 +112,18 @@ Unlike HoloLens (1st gen), teaching users a couple predefined gestures, such as 
 Direct manipulation can feel magical if it works as intended, but can also quickly become frustrating if you can’t move your hand anywhere anymore without unintentionally triggering a hologram.
 Eye tracking can potentially help in better identifying what the user’s intent is. 
 
-1.	**When**: 
+* **When**: 
 Reduce falsely triggering a manipulation response. Eye tracking allows for better understanding what a user is currently engaged with. 
 For example, imagine you are reading through a holographic (instructional) text when reaching over to grab you real-world work tool.
 By doing so, you accidently move your hand across some interactive holographic buttons that you hadn't even noticed before (maybe it even was outside of the user's Field-of-View).
 Long story short: If the user hasn't looked at a hologram for a while, yet a touch or grasp event has been detected for it, it is likely that the user wasn't actually intending to interact with that hologram. 
 
-2.	**Which one**: 
+* **Which one**: 
 Aside from addressing false positive activations, another example includes better identifying which holograms to grab or poke as the precise intersection point may not be clear from your perspective especially if several holograms are positioned close to each other. 
 While eye tracking on HoloLens 2 has a certain limitation on how accurately it can determine you eye gaze, this can still be very helpful for near interactions due to depth disparity when interacting with hand input. 
 This means that it is sometimes difficult to determine whether your hand is behind or in front of a hologram to precisely grab a manipulation widget for example.
 
-3.	**Where to**: 
+ * **Where to**: 
 Use information about what a user is looking at with quick throwing gestures. 
 Grab a hologram and roughly toss it toward your intended destination. 
 While this may sometimes work just fine, quickly performing hand gestures may result in highly inaccurate destinations.
