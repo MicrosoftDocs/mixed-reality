@@ -43,7 +43,7 @@ The very basic gestural command is triggered by using thumb and index finger to 
 ![](images/Hand-Rays-720px.jpg)<br>
 
 ## Transition between near and far
-Instead of using specific gestures, such as [Pointing with Index Finger](coming-soon.md) to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more gestural manipulations. So, HoloLens 2 supports exactly the same set of hand gestures for both near and far interaction. No additional learning is needed. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br>
+Instead of using specific gestures, such as [Pointing with Index Finger](coming-soon.md) to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more gestural manipulations. Therefore, HoloLens 2 supports exactly the same set of hand gestures for both near and far interaction. No additional learning is needed when users transit from near to far interactions, and vice versa. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br>
 * when an object is within arm reached distance (roughly 50 cm), the rays are turned off automatically encouraging for near interaction. 
 * When the object is farther than 50 cm, the rays are turned on.
 
