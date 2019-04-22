@@ -1,3 +1,14 @@
+---
+title: Optimizing your app for Handsfree
+description: Optimizing your app for Handsfree
+author: shengkait
+ms.author: shengkait
+ms.date: 04/20/2019
+ms.topic: article
+keywords: Mixed Reality, handsfree, gaze, gaze targeting, interaction, design
+---
+
+
 # Optimizing your app for Handsfree
 
 
@@ -56,3 +67,8 @@ For more details on the implementation of handsfree, try the links below.
 * ... What they can do in this mode?
 * ... What is the current state?
 * ... How they can transition out?
+
+## See also
+* [Gaze and commit](gaze-and-commit.md)
+* [Direct manipulation](direct-manipulation.md)
+* [Point and commit](point-and-commit.md)
