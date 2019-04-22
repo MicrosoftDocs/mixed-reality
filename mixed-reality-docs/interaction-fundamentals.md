@@ -1,21 +1,21 @@
 ---
 title: Multimodal interaction overview
-description: Overview of the multimodel interaction
+description: Overview of the multimodal interaction
 author: shengkait
 ms.author: shengkait
 ms.date: 04/11/2019
 ms.topic: article
-keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, gaze, gaze targeting, interaction, design
 ---
 
 # Introducing instinctual interactions
 The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality platform, from hardware to software. 
 
-These instinctual interactions utilize all available input technologies, including inside out tracking, hand tracking, eye tracking, and natural language, in seamless multimodal interaction models.  Based on our research, designing and developing multimodally, and not based on single inputs, is critical to creating instinctive experiences. 
+These instinctual interactions utilize all available input technologies, including inside out tracking, hand tracking, eye tracking, and natural language, in seamless multimodal interaction models.  Based on our research, designing and developing multimodally, and not based on single inputs, is critical for creating instinctive experiences. 
 
-The Instinctual Interaction models also naturally align across device types.  For example, far interaction on an immersive headset with a 6 DoF controlller and far interaction on a HoloLens 2 use the same affordances, patterns, and behaviors.  Not only is this convenient for developers and designers, but it feels natural to end users. 
+The Instinctual Interaction models also naturally align across device types.  For example, far interaction on an immersive headset with a 6 DoF controller and far interaction on a HoloLens 2 use the same affordances, patterns, and behaviors.  Not only is this convenient for developers and designers, but it feels natural to end users. 
 
-We've structures our guidance to reflect this philosophy: that the most instinctual interaction models are multimodal, and that interaction is consistent across device types and whether users are using controllers or not.
+We've structured our guidance to reflect this philosophy: The most instinctual interaction models are multimodal, and the interaction is consistent across device types and whether users are using controllers or not.
 
 ## Multimodal interaction models
 Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences.  
@@ -126,13 +126,13 @@ This article outlines some of the tips and tricks we've learned to keep users co
 ## Why optimize? 
 * It can be very distracting to optimize for all at once
 	* Example: cursors! See it, say it tooltips! Rays!
-* As users build intuition for the modalities, we recommend guiderails to build understanding and confidence
+* As users build intuition for the modalities, we recommend guidelines to build understanding and confidence
 
 ## What does optimization mean?
 
-The way the user interacts with your application will be very different depending on the mode they are on. Affordances provide the guiderails they need to get started as well as the assurance that the system is responding to them (think about the first time people started using a mouse, something that was unfamiliar at the time). Without thoughtful affordances, users could quickly become overwhelmed.
+The way the user interacts with your application will be very different depending on the mode they are on. Affordances provide the guidelines they need to get started as well as the assurance that the system is responding to them (think about the first time people started using a mouse, something that was unfamiliar at the time). Without thoughtful affordances, users could quickly become overwhelmed.
 
-Here are some examples of how affordances and behaviors would be optimized for each mode, keeping in mind crucial user questions like: "how do I know if it's working?", "what can I do?", "What did I just do?"
+Here are some examples of how affordances and behaviors would be optimized for each mode, keeping in mind crucial user questions like: "How do I know if it's working?", "What can I do?", "What did I just do?"
 
 <table>
     <colgroup>
@@ -162,7 +162,7 @@ Here are some examples of how affordances and behaviors would be optimized for e
     <tr>
         <td>Gaze and dwell</a></td>
         <td>Gaze cursor has a ready and hover state</a></td>
-        <td>Progress indicator as the user dwells on an interactible</a></td>
+        <td>Progress indicator as the user dwells on an interactable</a></td>
         <td>Visible and audible response to the action</a></td>
     </tr>
     <tr>
@@ -175,11 +175,11 @@ Here are some examples of how affordances and behaviors would be optimized for e
 
 
 ## Transition interaction models
-There are also cases where customer or use cases require that your experience work with more than one interaction model – for example, if the core interaction model is Hands and tools, but a special Hands-free mode is required for field technicians.  
+There are also use cases which require that your experience works with more than one interaction model – for example, your core interaction model may be _hands and tools_, but you also need to support a special _hands-free mode_ for field technicians.  
 
-If your experience does require multiple interaction models, we've found that many end users may encounter difficulty transitioning from one model to another -- especially end users who are new to mixed reality. 
+If your experience does require multiple interaction models, we've found that many end users may find it difficult to transition from one model to another -- especially end users who are new to mixed reality. 
 
-To help guide designers and developers through choices that can be difficult in mixed reality, we've also included guidance on using multiple interaction models in the Transitioning interaction models article below. 
+To help guide designers and developers through choices that can be difficult in mixed reality, we've also included guidance on using multiple interaction models in the [Transitioning interaction models](coming-soon.md) article. 
 
 > [!Note]
 > Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article [Transitioning interaction models](coming-soon.md).
@@ -198,5 +198,3 @@ Click the link below or follow the page navigation to continue to the next secti
 * [Spatial sound design](spatial-sound-design.md)
 * [Spatial mapping design](spatial-mapping-design.md)
 * [Comfort](comfort.md)
-
-
