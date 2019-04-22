@@ -1,15 +1,15 @@
 ---
-title: Optimizing your app for Handsfree
-description: Optimizing your app for Handsfree
+title: Optimizing your app for hands-free
+description: Optimizing your app for hands-free
 author: shengkait
 ms.author: shengkait
 ms.date: 04/20/2019
 ms.topic: article
-keywords: Mixed Reality, handsfree, gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design
 ---
 
 
-# Optimizing your app for Handsfree
+# Optimizing your app for hands-free
 
 
 
@@ -25,9 +25,9 @@ Some specific scenarios might be:
 * Carrying something
 
 
-## Handsfree modes
+## Hands-free modes
 
-For more details on the implementation of handsfree, try the links below. 
+For more details on the implementation of hands-free, try the links below. 
 * Speech commanding
 	* Commanding 
 	* Assistant
@@ -37,16 +37,16 @@ For more details on the implementation of handsfree, try the links below.
 * Head Gaze + dwell
 
 
-## Design challenges for creating a handsfree interface 
+## Design challenges for creating a hands-free interface 
 
-**Manipulation: handsfree substitutions for manipulation are often neglected.** 
+**Manipulation: hands-free substitutions for manipulation are often neglected.** 
 * Controlling UI elements so they are optimally placed and sized is often a situation-by-situation decision from the user and hard to do without hands.
 
 **Awareness: Mechanics are not as 'natural' as hands, so they have to be taught**
 * Ex. How would I know how to use voice commanding, then transitioning to pointer or dwell?
 * Ex. How do I know how to turn on voice commanding? 
 
-**Refactoring UI: Affordances are less 'natural' and have to be optimized for handsfree**
+**Refactoring UI: Affordances are less 'natural' and have to be optimized for hands-free**
 * Ex. Dwell affordances are not built-in to typical 2D patterns; 
 * Ex. Voice targeting is better with object highlighting
 * Ex. Voice interactions are better with captions that have to be turned on 
