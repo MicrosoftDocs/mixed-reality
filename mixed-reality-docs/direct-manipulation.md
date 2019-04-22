@@ -45,7 +45,7 @@ On HoloLens 2, user's real hands are recognized and interpreted as left and righ
 ### Sphere Collider
 Instead of using random generic shape, we suggest to use a [Sphere Collider](coming-soon.md) and to visually render it to provide better cues for near targeting. The sphere's diameter should match the thickness of the index finger to increase touch accuracy. It will be easy to retrieve the variable of finger thickness by calling the [Hand API](coming-soon.md).
 
-![](images/Collidable-Fingertip-720px.jpg)<br>
+[Image of Sphere Collider]<br>
 
 ### Fingertip Cursor
 In addition to rendering a collidable sphere on the index fingertip, we create an advance solution, [Fingertip Cursor](coming-soon.md), to achieve better near targeting experience. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size. The interactive feedback are: 
