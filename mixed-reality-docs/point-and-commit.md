@@ -39,7 +39,7 @@ On HoloLens 2, we create a hand ray shooting out from the center of a palm. The 
 
 The very basic gestural command is using thumb and index finger to perform [Air Tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content in a distance. The visual design of the hand ray should also react to point and commit states: <br><br>
 * In the pointing state, the ray is dash lined, and the cursor is a donut shape.
-* in the committing state, the ray turns into a solid line, and the cursor shrinks to a dot.<br>
+* in the committing state, the ray turns into a solid line, and the cursor shrinks to a dot.<br><br>
 ![](images/Hand-Rays-720px.jpg)<br>
 
 ## Transition between near and far
