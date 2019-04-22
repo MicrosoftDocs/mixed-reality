@@ -8,10 +8,7 @@ ms.topic: article
 keywords: Eye Tracking, Mixed Reality, Input, Eye Gaze
 ---
 # Eye Tracking on HoloLens 2
-HoloLens 2 enables detecting what a user is looking at. 
-Eye tracking enables applications to track where the user is looking in real time.  
-This is the capability developers can leverage to enable a whole new level of context and human understanding within the Holographic experience. 
-
+HoloLens 2 enables detecting what a user is looking at. Eye tracking enables applications to track where the user is looking in real time. This is the capability developers can leverage to enable a whole new level of context and human understanding within the Holographic experience. 
 
 ## Use cases
 Eye tracking enables applications to track where the user is looking in real time. 
