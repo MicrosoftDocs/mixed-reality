@@ -168,3 +168,10 @@ We distinguish two types of imprecisions which are noticeable to users: Offset a
     - Do not force users to select tiny targets: Research has shown that if targets are sufficiently large (and the system is designed well), users describe the interaction as effortless and magical. If targets become too small, users describe the experience as fatiguing and frustrating.
 
 ---
+## See also
+* [Gaze and commit](gaze-and-commit.md)
+* [Head gaze targeting](gaze-targeting.md)
+* [Gestures](gestures.md)
+* [Voice design](voice-design.md)
+* [Motion controllers](motion-controllers.md)
+* [Comfort](comfort.md)
