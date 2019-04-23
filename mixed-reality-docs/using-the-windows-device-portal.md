@@ -33,7 +33,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 5. Select the **For developers** menu item.
 6. Enable **Developer Mode**.
 7. [Scroll down](gestures.md#composite-gestures) and enable **Device Portal**.
-8. If you are setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, click **Pair** to [generate a pairing PIN](using-visual-studio.md#pairing-your-device-hololens). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
+8. If you are setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, click **Pair** to [generate a pairing PIN](using-visual-studio.md). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
 
    ![Enabling developer mode in the Settings app for Windows Holographic](images/deviceportalsettings.png)
 
@@ -53,7 +53,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 ## Connecting to an emulator
 
-You can also use the Device Portal with your emulator. To connect to the Device Portal, use the [toolbar](using-the-hololens-emulator.md#anatomy-of-the-hololens-emulator). Click on this icon:
+You can also use the Device Portal with your emulator. To connect to the Device Portal, use the [toolbar](using-the-hololens-emulator.md). Click on this icon:
 ![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.
 
 ## Creating a Username and Password

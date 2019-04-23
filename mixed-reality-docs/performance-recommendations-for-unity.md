@@ -67,7 +67,8 @@ public class ExampleClass : MonoBehaviour
 }
 ```
 
->[!NOTE] Avoid GetComponent(string) <br/>
+>[!NOTE] 
+> Avoid GetComponent(string) <br/>
 > When using *[GetComponent()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)*, there are a handful of different overloads. It is important to always use the Type based implementations and never the string-based searching overload. Searching by string in your scene is significantly more costly than searching by Type. <br/>
 > (Good) Component GetComponent(Type type) <br/>
 > (Good) T GetComponent\<T>() <br/>
