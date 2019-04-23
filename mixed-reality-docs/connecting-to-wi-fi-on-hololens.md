@@ -37,7 +37,7 @@ HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a 
 5. Select the Wi-Fi slider switch to move it to the "Off" position. This will turn off the RF components of the Wi-Fi radio and disable all Wi-Fi functionality on HoloLens. 
 
     >[!WARNING]
-    >HoloLens will not be able to automatically load your [spaces](environment-considerations-for-hololens.md#spaces) when the Wi-Fi radio is disabled.
+    >HoloLens will not be able to automatically load your [spaces](environment-considerations-for-hololens.md#WiFi fingerprint considerations) when the Wi-Fi radio is disabled.
     
 6. Move the slider switch to the "On" position to turn on the Wi-Fi radio and restore Wi-Fi functionality on Microsoft HoloLens. The selected Wi-Fi radio state ("On" of "Off") will persist across reboots.
 
