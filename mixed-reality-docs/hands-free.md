@@ -1,8 +1,8 @@
 ---
 title: Optimizing your app for hands-free
 description: Optimizing your app for hands-free
-author: shengkait
-ms.author: shengkait
+author: liamar
+ms.author: liamar
 ms.date: 04/20/2019
 ms.topic: article
 keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design
@@ -49,9 +49,9 @@ Does the user understand ...
 	* ... What is the current state?
 	* ... How they can transition out?
 	
-**Is the UI optimized for hands-free?**
-	* Ex. Dwell affordances are not built-in to typical 2D patterns; 
-	* Ex. Voice targeting is better with object highlighting; 
+**Is the UI optimized for hands-free?**    
+	* Ex. Dwell affordances are not built-in to typical 2D patterns
+	* Ex. Voice targeting is better with object highlighting
 	* Ex. Voice interactions are better with captions that have to be turned on
 
 
