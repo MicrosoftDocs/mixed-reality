@@ -27,8 +27,7 @@ The category of implicit actions closely relates to user intent.
 The idea is that holograms or user interface elements react in a somewhat instinctual way that may not even feel like you are interacting with the system at all, but rather that the system and the user are in sync.
 For example, one immensely successful example is **eye-gaze-based auto scroll**. The idea is as simple: The user reads a text and can just keep on reading. The text gradually moves up to keep users in their reading flow. A key aspect is that the scrolling speed adapts to the reading speed of the user.
 Another example is **eye-supported zoom and pan** for which the user can feel like diving exactly toward what he or she is focusing at. Triggering the zoom and controlling the zoom speed can be controlled via voice or hand input which is important about providing the feeling of control and avoid overwhelming the user (we will talk about these design guidelines in more detail below). Once zoomed in, the user can then smoothly follow, for example, the course of a street to explore his or her neighborhood just simply by using their eye gaze.
-
-Samples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) sample.
+Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) sample.
 
 Additional use cases for _implicit actions_ may include:
 - **Smart notifications:** Ever get annoyed by notifications popping up right where you were focusing? Taking into account where a user is currently paying attention to, you can make it better! Show notifications offset from where the user is currently looking to limit distractions and automatically dismiss them once finished reading. 
@@ -39,20 +38,20 @@ Information about where users look at is an immensely powerful tool to assess us
 The [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) provides basic examples for logging and loading eye tracking data and for how to visualize them.
 
 Other applications in this area may include: 
--	Remote eye gaze visualization: Visualize what remote collaborators are looking at to, for example, ensure whether instructions are correctly understood and followed.
--	User research studies: Attention tracking can be used to explore the way novice vs. experts users visually analyze content or their hand-eye-coordination for complex tasks (e.g., for analysis of medical data or while operating machinery).
--	Training simulations and Performance monitoring: Practice and optimize the execution of tasks by identifying bottlenecks more effectively in the execution flow.
--	Design evaluations, advertisement and marketing research: Eye tracking is a common tool for market research to evaluate website and product designs.
+-	**Remote eye gaze visualization:** Visualize what remote collaborators are looking at to, for example, ensure whether instructions are correctly understood and followed.
+-	**User research studies:** Attention tracking can be used to explore the way novice vs. experts users visually analyze content or their hand-eye-coordination for complex tasks (e.g., for analysis of medical data or while operating machinery).
+-	**Training simulations and Performance monitoring:** Practice and optimize the execution of tasks by identifying bottlenecks more effectively in the execution flow.
+-	**Design evaluations, advertisement and marketing research:** Eye tracking is a common tool for market research to evaluate website and product designs.
 
 ### Additional use cases
 #### Gaming 	 
-Ever wanted to have superpowers? Here's your chance! Levitate holograms by fixating on them. Shoot laser beams from your eyes when touching your temple. Turn enemies into stone or freeze them! Have an x-ray vision. Your imagination is the limit!	
+Ever wanted to have superpowers? Here's your chance! Levitate holograms by staring at them. Shoot laser beams from your eyes. Turn enemies into stone or freeze them! Use your x-ray vision to explore buildings. Your imagination is the limit!	
 
 #### Expressive avatars
-Eye tracking aids in more expressive 3D avatar representations by animating the avatar's eyes live to indicate what the user is currently looking at. It also adds more expressiveness by adding winks and blinks. 
+Eye tracking aids in more expressive 3D avatars by using live eye tracking date to animate the avatar's eyes to indicate what the user is currently looking at. It also adds more expressiveness by adding winks and blinks. 
 
 #### Text entry 	 
-Eye tracking allows for an interesting alternative for low-effort text entry especially when speech or hands are inconvenient to use. 
+Eye tracking can be used as an interesting alternative for low-effort text entry especially when speech or hands are inconvenient to use. 
 
 
 ## Eye Tracking API and Visual Angle
