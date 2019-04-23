@@ -8,41 +8,54 @@ ms.topic: article
 keywords: Eye Tracking, Mixed Reality, Input, Eye Gaze
 ---
 # Eye Tracking on HoloLens 2
-HoloLens 2 enables detecting what a user is looking at. Eye tracking enables applications to track where the user is looking in real time. This is the capability developers can leverage to enable a whole new level of context and human understanding within the Holographic experience. 
+HoloLens 2 allows for a whole new level of context and human understanding within the Holographic experience providing developers with the incredible capability of using information about waht users are looking at in their applications. This page provides an overview of how developers can benefit from eye tracking for various use cases and what to look out for when designing eye-gaze-based user interfaces.
 
 ## Use cases
 Eye tracking enables applications to track where the user is looking in real time. 
-This will enable a whole new level of context and human understanding within your holographic experience. 
-This section describes the types of new interactions that become possible with eye tracking.
+In particular, HoloLens 2 provides a single eye gaze ray to developers (see [Eye Tracking API](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) for more information). 
+This section describes some of the potential use cases and novel interactions that become possible with eye tracking in mixed reality.
+
+The [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) provides several interesting examples for using eye tracking in your apps:
+- **Eye-Supported Target Selection:** Quickly and effortlessly select targets across your viewport.
+
+- **Eye-Supported Navigation:** Quickly and effortlessly select targets across your viewport.
+
+- **Eye-Supported Positioning:** 
+Quickly and effortlessly select targets across your viewport.
 
 ### User intent	    
--	Context for other inputs such as voice, hands and controllers
+	Context for other inputs such as voice, hands and controllers
 -	Fast and low-effort target selections
 -	Engagement with embodied virtual agents and interactive holograms	
 
 ### Attention tracking	 
--	Remote eye gaze visualization
--	User research studies 
--	Training simulations
--	Performance monitoring
--	Design evaluations, advertisement and marketing research
--	Medical and educational research / applications	
+Information about where users look at is an immensely powerful tool to assess usability of a design and to identify problems in efficient work streams. In this tutorial, we discuss different eye tracking visualizations and how they fit different needs. We provide basic examples for logging and loading Eye Tracking data and examples for how to visualize them.
+
+Other applications in this area may include: 
+-	Remote eye gaze visualization: Visualize what remote collaborators are looking at to, for example, better indicate whether instructions are correctly understood and followed.
+-	User research studies: It may also be used to explore the way novice vs. experts users visually analyze content and act in certain behaviors (e.g., for analysis of medical data or while operating complex machinery).
+-	Training simulations and Performance monitoring: Practice and optimize the execution of tasks by identifying the execution flow.
+-	Design evaluations, advertisement and marketing research: Eye tracking is a common tool for market research to evaluate website and product designs.
 
 ### Implicit actions	 
 -	Automatic scroll and pan
 -	Smart notifications
 -	Attentive holograms that react when being looked at	
 
-### Expressiveness	 
--	Live avatar eye animation
--	Gaze direction and blinks	
+For an example, see [Mixed Reality Toolkit - Eye-supported Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html).
 
-### Gaming 	 
--	Additional targeting vector
--	Superpowers! 	
 
-### Text entry 	 
--	Smarter and low-effort text entry (especially useful when speech or hands are inconvenient to use)	
+
+### Additional use cases
+#### Gaming 	 
+Ever wanted to have superpowers? Here's your chance! Levitate holograms by fixating on them. Shoot laser beams from your eyes when touching your temple. Turn enemies into stone or freeze them! Have an x-ray vision. Your imagination is the limit!	
+
+#### Expressive avatars
+Eye tracking aids in more expressive 3D avatar representations by animating the avatar's eyes live to indicate what the user is currently looking at. It also adds more expressiveness by adding winks and blinks. 
+
+#### Text entry 	 
+Eye tracking allows for an interesting alternative for low-effort text entry especially when speech or hands are inconvenient to use. 
+
 
 
 ## Eye Tracking API
