@@ -44,29 +44,30 @@ Other applications in this area may include:
 -	**Design evaluations, advertisement and marketing research:** Eye tracking is a common tool for market research to evaluate website and product designs.
 
 ### Additional use cases
-#### Gaming 	 
-Ever wanted to have superpowers? Here's your chance! Levitate holograms by staring at them. Shoot laser beams from your eyes. Turn enemies into stone or freeze them! Use your x-ray vision to explore buildings. Your imagination is the limit!	
+- **Gaming:** Ever wanted to have superpowers? Here's your chance! Levitate holograms by staring at them. Shoot laser beams from your eyes. Turn enemies into stone or freeze them! Use your x-ray vision to explore buildings. Your imagination is the limit!	
 
-#### Expressive avatars
-Eye tracking aids in more expressive 3D avatars by using live eye tracking date to animate the avatar's eyes to indicate what the user is currently looking at. It also adds more expressiveness by adding winks and blinks. 
+- **Expressive avatars:** Eye tracking aids in more expressive 3D avatars by using live eye tracking date to animate the avatar's eyes to indicate what the user is currently looking at. It also adds more expressiveness by adding winks and blinks. 
 
-#### Text entry 	 
-Eye tracking can be used as an interesting alternative for low-effort text entry especially when speech or hands are inconvenient to use. 
+- **Text entry:** Eye tracking can be used as an interesting alternative for low-effort text entry especially when speech or hands are inconvenient to use. 
 
 
-## Eye Tracking API and Visual Angle
+## Eye tracking API
 Before going into detail about the specific design guidelines for eye-gaze interaction, we want to briefly point to the capabilities that the HoloLens 2 Eye Tracker is providing. The [Eye Tracking API](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) is accessible through: `Windows.Perception.People.EyesPose`. 
 It provides a single eye gaze ray (gaze origin and direction) to developers.
 The eye tracker provides data at about _30 FPS_.
-The predicted eye gaze lies within ca. 1.5 degrees in visual angle around the actual looked at target. As slight imprecisions are expected, you should plan for some margin around this lower bound value. We will discuss this more below. 
+The predicted eye gaze lies within ca. 1.0 - 1.5 degrees in visual angle around the actual looked at target. 
+As slight imprecisions are expected, you should plan for some margin around this lower bound value. We will discuss this more below. 
 For eye tracking to work accurately, each user is required to go through an eye tracking user calibration. 
 
+![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
+*Optimal target size at 2 meter distance*
 
-## Eye Gaze Design Guidelines
+
+## Eye gaze design guidelines
 Building an interaction that takes advantage of fast moving eye targeting can be challenging. 
 In this section, we summarize the key advantages and challenges to take into account when designing your app. 
 
-### Benefits of Eye Gaze Input
+### Benefits of eye gaze input
 - **High speed pointing.** 
 The eye muscle is the fastest reacting muscle in our body. 
 
@@ -86,7 +87,7 @@ This can help in various application areas ranging from more effectively evaluat
 In a nutshell, using eye gaze as an input potentially offers a fast and effortless contextual signal - This is particularly powerful in combination with other inputs such as *voice* and *manual* input to confirm the user's intent.
 
 
-### Challenges of Eye Gaze Input
+### Challenges of eye gaze as an input
 With lots of power, comes lots of responsibility: 
 While eye gaze can be used to create magical user experiences feeling like a superhero, it is also important to know what it is not good at to account for this appropriately. 
 In the following, we discuss some *challenges* to take into account and how to address them when working with eye gaze input: 
@@ -101,14 +102,14 @@ Do not overwhelm the user with immediate pop-out effects or hover sounds.
 Subtlety is key! 
 We will discuss some best practices for this further below when talking about design recommendations.
 
-- **Observation vs. Control** 
+- **Observation vs. control** 
 Imagine you want to precisely align a photograph at your wall. 
 You look at its borders and its surroundings to see if it aligns well. 
 Now imagine how you would do that when at the same time you want to use your eye gaze as an input to move the picture. 
 Difficult, isn't it? 
 This describes the double role of eye gaze when it is required both for input and control. 
 
-- **Leave before Click:** 
+- **Leave before click:** 
 For quick target selections, research has shown that a user's eye gaze may move on before concluding a manual click (e.g., an airtap). 
 Hence, special attention must be paid to synchronizing the fast eye gaze signal with slower control input (e.g., voice, hands, controller).
 
@@ -118,21 +119,21 @@ This straining feeling on your eyes that cause you to feel tired and worn out be
 This is a feeling you may invoke in your users when forcing them to select too small targets in your app using eye targeting.
 For your design, to create a pleasant and comfortable experience for your users, we recommend that targets should be at least 2° in visual angle, preferably larger.
 
-- **Ragged Eye Gaze Movements** 
+- **Ragged eye gaze movements** 
 Our eyes perform rapid movements from fixation to fixation. 
 If you look at scan paths of recorded eye movements, you can see that they look ragged. 
 Your eyes move quickly and in spontaneous jumps in comparison to *head gaze* or *hand motions*.  
 
-- **Tracking Reliability:**
+- **Tracking reliability:**
 Eye tracking accuracy may degrade a little in changing light as your eye adjust to the new conditions.
 While this should not necessarily affect your app design, as the accuracy should be within the above mentioned limitation of 2°. 
 It may mean that the user has to run another calibration. 
 
 
-### Design Recommendations
+### Design recommendations
 In the following, we list specific design recommendations based on the described advantages and challenges for eye gaze input:
 
-1. **Eye Gaze != Head gaze:**
+1. **Eye gaze != Head gaze:**
     - **Consider whether fast yet ragged eye movements fit your input task:** 
 While our fast and ragged eye movements are great to quickly select targets across our Field of View, it is less applicable for tasks that require smooth input trajectories (e.g., for drawing or encircling annotations). 
 In this case, hand or head pointing should be preferred.
@@ -152,10 +153,10 @@ The integration of Eye Tracking with other inputs, such as hand gestures, voice 
 Using information about where the user is looking at while uttering a voice command or performing a hand gesture allows for effortlessly channeling the input across the field-of-view. Examples include: “Put that there” to quickly and fluently select and position a hologram across the scene by simply looking at a target and destination. 
 
     - **Need for synchronizing multimodal inputs (“leave before click” issue):** 
-    Combining rapid eye movements with more complex additional inputs (e.g., long voice commands or hand gestures) bears the risk of moving on with your eye gaze before finishing the additional input command. 
-    Hence, if you create your own input controls (e.g., custom hand gestures), make sure to log the onset of this input or approximate duration to correlate it with what a user had fixated on in the past.
+Combining rapid eye movements with more complex additional inputs (e.g., long voice commands or hand gestures) bears the risk of moving on with your eye gaze before finishing the additional input command. 
+Hence, if you create your own input controls (e.g., custom hand gestures), make sure to log the onset of this input or approximate duration to correlate it with what a user had fixated on in the past.
     
-3. **Subtle feedback for ET input:**
+3. **Subtle feedback for eye tracking input:**
 It is useful to provide feedback if a target is looked at (to indicate that the system is working as intended) but should be kept subtle. 
 This may include slowly blending in/out visual highlights or perform other subtle target behaviors, such as slow motions (e.g., slightly increasing the target) to indicate that the system correctly detected that the user is looking at a target, however, without unnecessarily interrupting the user’s current workflow. 
 
