@@ -8,7 +8,7 @@ ms.topic: article
 keywords: holographic frame, field of view, fov, calibration, spaces, environment, how-to
 ---
 
-
+ 
 
 # Environment considerations for HoloLens
 
