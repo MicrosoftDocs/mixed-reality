@@ -50,9 +50,9 @@ Does the user understand ...
 	* ... How they can transition out?
 	
 **Is the UI optimized for hands-free?**
-* Ex. Dwell affordances are not built-in to typical 2D patterns; [needs a graphic] 
-* Ex. Voice targeting is better with object highlighting [needs a graphic]
-* Ex. Voice interactions are better with captions that have to be turned on [needs a graphic]
+	* Ex. Dwell affordances are not built-in to typical 2D patterns; 
+	* Ex. Voice targeting is better with object highlighting; 
+	* Ex. Voice interactions are better with captions that have to be turned on
 
 
 ## See also
