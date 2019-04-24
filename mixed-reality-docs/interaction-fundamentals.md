@@ -86,17 +86,16 @@ Most likely, developers and creators also already have some ideas in mind of the
 > [!Note]
 > For additional guidance on identifying your customer and understanding their needs, please see the [Customer-Focused Creative Process](coming-soon.md) section and then return to this section to continue design.
 
+To encourage a customer-focused approach to design, we recommend following the guidance below to select the interaction model that's optimized for your customer.
 
-## Why optimize? 
-* It can be very distracting to optimize for all at once
-	* Example: cursors! See it, say it tooltips! Rays!
-* As users build intuition for the modalities, we recommend guidelines to build understanding and confidence
+Why follow this guidance?
 
-## What does optimization mean?
+* Our interaction models are tested for objective and subjective criteria such as physical and cognitive effort, intuitiveness, and learnability. 
+* Because interaction differs, visual and audio affordances and object behavior may also differ between the interaction models.  
+* Combining parts of multiple interaction models together creates the risk of competing affordances, such as simultaneous hand rays and a gaze cursor, which overwhelm and confuse users.
 
-The way the user interacts with your application will be very different depending on the mode they are on. Affordances provide the guidelines they need to get started as well as the assurance that the system is responding to them (think about the first time people started using a mouse, something that was unfamiliar at the time). Without thoughtful affordances, users could quickly become overwhelmed.
+Here are some examples of how affordances and behaviors are optimized for each interaction model.  We often see new users as similar questions, such as "how do I know the system is working, how do I know what I can do, and how do I know if it understood what I just did?"
 
-Here are some examples of how affordances and behaviors would be optimized for each mode, keeping in mind crucial user questions like: "How do I know if it's working?", "What can I do?", "What did I just do?"
 <br><br>
 
 <table>
@@ -137,6 +136,32 @@ Here are some examples of how affordances and behaviors would be optimized for e
         <td>Visible and audible response to the action<br>Disambiguation when necessary</a></td>
     </tr>
 </table>
+
+Below are the questions that we've found help teams select an interaction model:
+ 
+1.	Q:  Do my users want to touch holograms and perform precision holographic manipulations?
+A:  If so, check out the Hands and Tools interaction model for precision targeting and manipulation with hands or motion controllers.
+ 
+2.	Q:  Do my users need to keep their hands free, for real-world tasks?
+A:  If so, take a look at the Hands-Free interaction model, which provides a great hands-free experience through gaze- and voice-based interactions.
+ 
+3.	Q:  Do my users have time to learn interactions for my mixed reality application, or do they need the interactions with the lowest learning curve possible?
+A:  We recommend the Hands and Tools model for the lowest learning curve and most intuitive interactions, as long as users are able to use their hands for interaction.
+ 
+4.	Q:  Do my users use motion controllers for pointing and manipulation ?
+A:  The Hands and Tools model includes all guidance for a great experience with motion controllers.
+ 
+5.	Q:  Do my users use an accessibility controller or a common Bluetooth controller, such as a clicker?
+A:  We recommend the Gaze and Commit model for all non-tracked controllers.  It's designed to allow a user to traverse an entire experience with a simple "target and commit" mechanic. 
+ 
+6.	Q: Do my users only progress through an experience by "clicking through" (for example in a 3d slideshow-like environment), as opposed to navigating dense layouts of UI controls?
+A:  If users do not need to control a lot of UI, Gaze and Commit offers a learnable option where users do not have to worry about targeting. 
+ 
+7.	Q:  Do my users use both HoloLens 1 and HoloLens 2/ Windows Immersive (VR headsets)
+A:  Since Gaze and Commit is the interaction model for HoloLens Gen 1, we recommend that creators who support HoloLens Gen 1 use Gaze and Commit for any features or modes that users may experience on a HoloLens Gen 1 headset.  Please also see the next section on [LINK] Transitioning Interaction Models for details on making a great experience for multiple HoloLens generations.
+ 
+7.	Q: What about for users who are generally mobile (covering a large space or moving between spaces), versus users who tend to work in a single space?  
+A:  Any of the interaction models will work for these users.  Please see the [LINK] App Design Guidance section for more information on our recommended tag-along behaviors for UI that follows users as they move.
 
 
 ## Transition interaction models
