@@ -22,8 +22,13 @@ Lastly, while we recognize that there are thousands of effective, engaging, and 
 
 We hope this guidance is helpful and we welcome your feedback on how to improve in the future.  Please contact [LINK] with any thoughts and suggestions. 
 
-## Multimodal interaction models
-Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences. Think of these interaction models as the user's mental model for completing their flows. Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. Check out the chart below for some examples of scenarios and benefits of each interaction model.  
+## Three multimodal interaction models
+Based on our research and work with customers to date, we've discovered that three primary interaction models suit the majority of Mixed Reality experiences.
+
+In many ways, the interaction model  is the user's mental model for completing their flows.  Each of these interaction models is optimized for a set of customer needs, and each is convenient, powerful, and usable in its own right. 
+
+The chart below is a simplified overview.  Detailed information for using each interaction model is linked in the pages below with images and code samples.  
+
 <br>
 
 <table>
