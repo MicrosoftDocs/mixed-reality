@@ -13,6 +13,7 @@ keywords: HoloLens, user
 
 <H1>Fitting a HoloLens (1st gen) device for demo </H1>
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]
 
 |     |     |
 |:---:|:---:|
