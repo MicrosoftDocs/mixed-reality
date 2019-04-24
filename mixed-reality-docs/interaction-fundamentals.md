@@ -66,7 +66,7 @@ e.g. on the-job learning, maintenance</td>
 </table>
 <br>
 The best way to ensure there are no gaps or holes in the interaction for your experience is to follow the guidance for a single model from beginning to end.
-
+<br>
 To speed design and development, we've included detailed information and links to images and code samples within our coverage of each model.
 
 But first, the sections below walk through the steps of selecting and implementing one of these interaction models.  
