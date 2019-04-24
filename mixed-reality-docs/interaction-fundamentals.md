@@ -65,7 +65,19 @@ e.g. on the-job learning, maintenance</td>
     </tr>
 </table>
 <br>
-Detailed information for using all available inputs seamlessly together in each interaction model is on the pages that follow, as well as illustrations and links to sample content from our Unity MRTK.
+The best way to ensure there are no gaps or holes in the interaction for your experience is to follow the guidance for a single model from beginning to end.
+
+To speed design and development, we've included detailed information and links to images and code samples within our coverage of each model.
+
+But first, the sections below walk through the steps of selecting and implementing one of these interaction models.  
+ 
+By the end of this page, you will understand our guidance on:
+ 
+* Choosing an interaction model for your customer
+* Using the interaction model guidance
+* Transitioning between interaction models
+* Design Next steps
+
 
 ## Choosing an interaction model for your customer
 
