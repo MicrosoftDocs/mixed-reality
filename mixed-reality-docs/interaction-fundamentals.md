@@ -65,7 +65,7 @@ e.g. on the-job learning, maintenance</td>
     </tr>
 </table>
 <br>
-The best way to ensure there are no gaps or holes in the interaction for your experience is to follow the guidance for a single model from beginning to end.<br>
+The best way to ensure there are no gaps or holes in the interaction for your experience is to follow the guidance for a single model from beginning to end.
 
 To speed design and development, we've included detailed information and links to images and code samples within our coverage of each model.
 
