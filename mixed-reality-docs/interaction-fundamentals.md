@@ -9,13 +9,18 @@ keywords: Mixed Reality, gaze, gaze targeting, interaction, design
 ---
 
 # Introducing instinctual interactions
-The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality platform, from hardware to software. 
+The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality platform.  We've taken three steps to ensure that application designers and developers can provide easy and intuitive interactions for their customers. 
 
-These instinctual interactions utilize all available input technologies, including inside out tracking, hand tracking, eye tracking, and natural language, in seamless multimodal interaction models.  Based on our research, designing and developing multimodally, and not based on single inputs, is critical for creating instinctive experiences. 
+First, we've made sure our amazing sensors and input technology, including hand tracking, eye tracking, and natural language, combine into seamless multimodal interaction models.  Based on our research, designing and developing multimodally -- and not based on single inputs -- is the key to creating instinctual experiences.
 
-The Instinctual Interaction models also naturally align across device types.  For example, far interaction on an immersive headset with a 6 DoF controller and far interaction on a HoloLens 2 use the same affordances, patterns, and behaviors.  Not only is this convenient for developers and designers, but it feels natural to end users. 
+Secondly, we recognize that many developers target multiple devices, whether that means HL2 and HL1 or HoloLens and VR.  So we've designed our interaction models to work across devices (even if the input technology varies on each device).  For example, far interaction on a Windows Immersive headset with a 6DOF controller and far interaction on a HoloLens 2 both use the identical affordances and patterns, making it easy for cross-device applications. Not only is this convenient for developers and designers, but it feels natural to end users. 
 
-We've structured our guidance to reflect this philosophy: The most instinctual interaction models are multimodal, and the interaction is consistent across device types and whether users are using controllers or not.
+Lastly, while we recognize that there are thousands of effective, engaging, and magical interactions possible in MR, we have found that intentionally employing a single interaction model end to end in an application is the best way to ensure users are successful and have a great experience.  To that end, we've included three things in this interaction guidance:
+* We've structured this guidance around the three primary interaction models and the components and patterns required for each
+* We've included supplemental guidance on other benefits that our platform provides
+* We've included guidance to help select the appropriate interaction model for your scenario
+
+We hope this guidance is helpful and we welcome your feedback on how to improve in the future.  Please contact [LINK] with any thoughts and suggestions. 
 
 ## Multimodal interaction models
 Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences. Think of these interaction models as the user's mental model for completing their flows. Each of these interaction models is convenient, powerful, and usable in its own right, and each is optimized for a set of customer needs. Check out the chart below for some examples of scenarios and benefits of each interaction model.  
