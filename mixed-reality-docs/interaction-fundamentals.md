@@ -165,14 +165,12 @@ A:  Any of the interaction models will work for these users.  Please see the [LI
 
 
 ## Transition interaction models
-There are also use cases which require that your experience works with more than one interaction model – for example, your core interaction model may be _hands and tools_, but you also need to support a special _hands-free mode_ for field technicians.  
+There are also cases where your use cases may require that utilizing more than one interaction model.  For example, your app's "creation flow" utilizes the Hands and Tools interaction model, but you want to employ a Hands-Free mode for field technicians.  
 
-If your experience does require multiple interaction models, we've found that many end users may find it difficult to transition from one model to another -- especially end users who are new to mixed reality. 
-
-To help guide designers and developers through choices that can be difficult in mixed reality, we've also included guidance on using multiple interaction models in the [Transitioning interaction models](coming-soon.md) article. 
+If your experience does require multiple interaction models, we've found that many end users may encounter difficulty transitioning from one model to another -- especially end users who are new to MR.
 
 > [!Note]
-> Utilizing multiple interaction models in a single application can create difficulties for end users.  Please check out our guidance in the article [Transitioning interaction models](coming-soon.md).
+> To help guide designers and developers through choices that can be difficult in MR, we've also included guidance on using multiple interaction models in the [Transitioning interaction models](coming-soon.md) article below.
  
 ## Next section: visual design language
 Click the link below or follow the page navigation to continue to the next section on [Visual design language](coming-soon.md).
