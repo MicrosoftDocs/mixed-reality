@@ -78,7 +78,6 @@ By the end of this page, you will understand our guidance on:
 * Transitioning between interaction models
 * Design Next steps
 
-
 ## Choosing an interaction model for your customer
 
 Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have.
