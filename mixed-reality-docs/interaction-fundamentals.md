@@ -81,14 +81,10 @@ By the end of this page, you will understand our guidance on:
 
 ## Choosing an interaction model for your customer
 
-Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have. 
-
-Even so, to encourage a customer-focused approach to design, we recommend a look at the guidance outlined in the next article, [Choosing interaction for your customer](coming-soon.md)
-
-This article outlines some of the tips and tricks we've learned to keep users confident in different scenarios. 
+Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have.
 
 > [!Note]
-> Check out the [Customer-focused creative process](coming-soon.md) section for suggestions on identifying your customer and creating a great Mixed Reality concept.
+> For additional guidance on identifying your customer and understanding their needs, please see the [Customer-Focused Creative Process](coming-soon.md) section and then return to this section to continue design.
 
 
 ## Why optimize? 
