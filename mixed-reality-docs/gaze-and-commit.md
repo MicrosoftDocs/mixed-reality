@@ -70,8 +70,16 @@ To find more details and a comprenhesive list of available commands and how to i
 https://review.docs.microsoft.com/en-us/windows/mixed-reality/voice-design?branch=caseym
 
 ### Gaze and HoloLens Clicker
+The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens 1 Development Edition. The HoloLens Clicker allows a user to click with minimal hand motion and commit as a secondary input. The HoloLens clicker connects to the HoloLens 1 or 2 using Bluetooth Low Energy (BTLE).
+
+![](images/hololens-clicker-500px.jpg)<br>
+HoloLens Clicker
+
+More information and instructions to pair the device can be found here:
 (hardware-accessories.md#hololens-clicker)
 https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
+
+
 
 
 ### Gaze and Xbox One Controller
