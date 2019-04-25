@@ -34,7 +34,7 @@ Head-Gaze and commit is an input model that involves targeting an object with th
 </table>
 
 ## Head-Gaze
-The most common form of gaze is called head-gaze. Mixed reality headsets use the position and orientation of the user's head to determine their head direction vector. You can think of this as a laser that points straight ahead from directly between the user's eyes. This is a fairly coarse approximation of where the user is looking. Your application can intersect this ray with virtual or real-world objects and draw a cursor at that location to let the user know what they are currently targeting.
+Mixed reality headsets use the position and orientation of the user's head to determine their head direction vector. You can think of this as a laser that points straight ahead from directly between the user's eyes. This is a fairly coarse approximation of where the user is looking. Your application can intersect this ray with virtual or real-world objects and draw a cursor at that location to let the user know what they are currently targeting.
 
 In addition to head gaze, some mixed reality headsets include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered separately in this article:
 https://review.docs.microsoft.com/en-us/windows/mixed-reality/eye-tracking?branch=caseym
