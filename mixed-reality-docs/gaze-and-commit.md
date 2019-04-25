@@ -83,7 +83,7 @@ https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessori
 ### Gaze and Xbox Wireless Controller
 The Xbox Wireless Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Wireless Controller.
 
-![](images/RE1YbDy.jp2)<br>
+![](images/xboxcontroller.jpg)<br>
 Xbox Wireless Controller
 
 More information and instructions to pair the device can be found here:
