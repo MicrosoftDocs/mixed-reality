@@ -47,8 +47,6 @@ After targeting an object or UI element, the user can interact or "click" on it 
 - Press the single button on a [HoloLens Clicker]
 - Press the 'A' button on an Xbox Gamepad
 - Press the 'A' button on an Xbox Adaptive Controller
-- Dwell timer activation on objects that support the supplemental interaction method
-
 
 ### Gaze and Air Tap gesture
 Air tap is a tapping gesture with the hand held upright. To perform an Air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release. On HoloLens 1, Air tap is the most common secondary input.
@@ -98,12 +96,9 @@ https://www.windowscentral.com/how-use-xbox-one-controller-windows-mixed-reality
 
 
 ### Gaze and Xbox Adaptive Controller
-The Xbox Adaptive Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Adaptive Controller.
-
-![](images/xbox-adaptive-controller.jpg)<br>
-Xbox Adaptive Controller
-
 Designed primarily to meet the needs of gamers with limited mobility, the Xbox Adaptive Controller is a unified hub for devices that helps make Mixed Reality more accessible.
+
+The Xbox Adaptive Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Adaptive Controller.
 
 ![](images/xbox-adaptive-controller-ports.jpg)<br>
 Xbox Adaptive Controller Ports
@@ -112,7 +107,6 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 
 ![](images/xbox-adaptive-controller-devices.jpg)<br>
 Xbox Adaptive Controller Devices
-
 
 More information and instructions to pair the device can be found here:
 
@@ -124,40 +118,6 @@ https://www.youtube.com/embed/1KqKPORjatsone/controllers/connect-external-device
 https://support.xbox.com/en-US/xbox-one/controllers/adaptive-controller-faq
 
 https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller
-
-
-  
-### Gaze and dwell
-https://review.docs.microsoft.com/en-us/windows/mixed-reality/gaze-targeting?branch=caseym
-
-
-
-
-There are lots of different ways to confirm a _commit_ such as combining gaze with _voice_ or _hand gestures_.
-There are several user scenarios though, in which users' hands may either be busy or cannot be tracked (e.g., factory workers with oversized heavy duty gloves). 
-Voice input may also not be available due to user preferences, social context or loud environments.
-As a fallback solution another option to perform a _commit_ is simply to keep staring at a UI element which we refer to as _dwell_.
-A _dwell_ can be performed with either head or eye gaze. 
-The idea is simple and can be broken down in the following phases: 
-1. User starts gazing at a holographic button
-
-2. After a brief onset delay (e.g., 150 ms) some visual feedback animation is started. The onset delay is used to avoid overwhelming the user by immediately popping up feedback all the time.
-    - For _eye gaze_, we recommend the following for the design of the visual dwell feedback:
-      - **Blend it**: Smoothly blend in the feedback from barely visible at first to fully opaque. This makes the feedback less distracting and overwhleming and nicely aligns with the confidence that the system has that the user really wants to engage with this button.
-      - **Pull it in**: Create a visual feedback than decreases in size and moves towards the center of the target, pulling in the user's visual attention. 
-
-3. After a pre-defined dwell duration (e.g., 800 ms), the dwell completes and an associated event is triggered.
-    - Provide some finalizing auditory or visual feedback to really bring home that the item got selected now.
-
-![Dwell states](images/eyes_dwellstate_recommendation.png)
-
-
-
-
-
-
-
-
 
 
 # Device support
@@ -266,6 +226,9 @@ There are three things that you should consider:
 * [Direct manipulation](direct-manipulation.md)
 * [Point and commit](point-and-commit.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
+* [Gaze and Dwell](gaze.md)
+* [Gaze and Voice](voice.md)
+
 
 
 
