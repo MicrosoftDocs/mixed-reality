@@ -36,7 +36,7 @@ Head-Gaze and commit is an input model that involves targeting an object with th
 ## Head-Gaze
 Mixed reality headsets use the position and orientation of the user's head to determine their head direction vector. You can think of this as a laser that points straight ahead from directly between the user's eyes. This is a fairly coarse approximation of where the user is looking. Your application can intersect this ray with virtual or real-world objects and draw a cursor at that location to let the user know what they are currently targeting.
 
-In addition to head gaze, some mixed reality headsets linke the HoloLens 2 include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered separately in this article:
+In addition to head gaze, some mixed reality headsets linke the HoloLens 2 include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered separately here:
 https://review.docs.microsoft.com/en-us/windows/mixed-reality/eye-tracking?branch=caseym
 
 ## Commit
@@ -58,6 +58,15 @@ Air tap is a tapping gesture with the hand held upright. To perform an Air tap, 
 Air tap is also available on HoloLens 2, and it has been relaxed from the original version. Nearly all types of pinches are now supported, as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture.  This new Air tap replaces the old one through the same API, so existing applications will get the new behavior automatically after recompiling for HoloLens 2.
 
 ### Gaze and "Select" voice command
+Voice commanding is one of the primary interaction methods on Mixed Reality. It provides a very powerful "Hands Free" mechanism to control the system. There are diferent types of voice interaction models:
+
+- The generic command "Select" that allows to perform a "click" actuation or commit as a secondary input.
+- Object commands like "Close" or "Make it bigger" that allow to perform and commit to an action as a secondary input.
+- Global commnads like "Go to start" that don't require a target.
+- Conversation user interfaces or entities like Cortana that have an AI Natural Language capability.
+- Custom commnads
+
+To find more details and a comprenhesive list of available commands and how to implement them visit:
 https://review.docs.microsoft.com/en-us/windows/mixed-reality/voice-design?branch=caseym
 
 ### Gaze and HoloLens Clicker
