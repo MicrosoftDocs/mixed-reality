@@ -100,13 +100,13 @@ Designed primarily to meet the needs of gamers with limited mobility, the Xbox A
 
 The Xbox Adaptive Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Adaptive Controller.
 
-![](images/xbox-adaptive-controller-ports.jpg)<br>
-Xbox Adaptive Controller Ports
+![](images/xbox-adaptive-controller-devices.jpg)<br>
+Xbox Adaptive Controller
 
 Connect external devices such as switches, buttons, mounts, and joysticks to create a custom controllers experience that is uniquely yours. Button, thumbstick and trigger inputs are controlled with assistive devices connected through 3.5mm jacks and USB ports.
 
-![](images/xbox-adaptive-controller-devices.jpg)<br>
-Xbox Adaptive Controller Devices
+![](images/xbox-adaptive-controller-ports.jpg)<br>
+Xbox Adaptive Controller ports
 
 More information and instructions to pair the device can be found here:
 
