@@ -113,6 +113,7 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 ![](images/images/xbox-adaptive-controller-devices.jpg)<br>
 Xbox Adaptive Controller Devices
 
+
 More information and instructions to pair the device can be found here:
 
 https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
