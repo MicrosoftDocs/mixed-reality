@@ -266,20 +266,6 @@ There are three things that you should consider:
 * [Point and commit](point-and-commit.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
 
-## Test
-
-![](images/Collidable-Fingertip-720px.jpg)<br>
-
-
-  
-  
-
-## Eye gaze design guidelines
-
-- **Do not show a cursor**: 
-
-
-
 
 
 
