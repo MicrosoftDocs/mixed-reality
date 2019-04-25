@@ -1,6 +1,6 @@
 # Hands and tools
 ## Scenarios
-If you choose to adopt this interaction model after reading the <a href="mixed-reality-docs/interaction-fundamentals.md">design guidelines</a>, it means that you are developing an application requiring users to use two hands to interact with the holographic world. You application is going to achieve the goal of removing the boundry between virtual and physical.
+If you choose to adopt this interaction model after reading the <a href="mixed-reality-docs/interaction-fundamentals.md">design guidelines</a>, it means that you are developing an application requiring users to use two hands to interact with the holographic world. Your application is going to achieve the goal of removing the boundry between virtual and physical.
 
 Some specific scenarios might be:
 * Providing information workers 2D vitual screens and UIs to display and control contents
@@ -11,10 +11,10 @@ Some specific scenarios might be:
 
 ## Hands and motion controllers modalities
 ### Direct manipulation
-This is a modality leveraging the power of hands, with which users are capable of touching and manipulating the holograms directly. By leaverage daily life experiences, users are able to use the same way of manipulating real world obejcts to interact with virtual ones. With proper visual affordances, users are guided to perform the required actions so that the learning curve is reduced.   
+This is a modality leveraging the power of hands, with which users are capable of touching and manipulating the holograms directly. By leaverage daily life experiences, users are able to use the same way of manipulating real world obejcts to interact with virtual ones. By providing proper visual affordances, users are guided to perform the required actions so that the learning curve is reduced.   
 
 ### Point and commit
-This modality provides super power for users to interact with holograms in a distance. It 
+This modality provides users super power to interact with holograms in a distance. It remove physical spatial limitations 
 
 ### Motion controllers
 ## Trainsition between near, far and motion controllers
