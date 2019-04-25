@@ -29,7 +29,7 @@ Motion refers to controlling and changing the position and orientation of someth
 
 [Gesture](gestures.md) and motion controller input are mapped closely to how they physical devices:
 * **Action**: This simulates the action of pressing the forefinger to the thumb or pulling the action button on a controller. For example, the Action input can be used to simulate the air-tap gesture, to scroll through content, and to press-and-hold.
-* **[Bloom](gestures.md#bloom) or Home**: The HoloLens bloom gesture or a controller's Home button is used to return to the shell and to perform system actions.
+* **[Bloom](gestures.md#bloom)/System gesture or Home**: The HoloLens bloom/system gesture or a controller's Home button is used to return to the shell and to perform system actions.
 
 Hands have a rich reprresentation in HoloLens 2.  In addition to being tracked/not tracked, and usable for driving gestures, hands now have an articulated skeleton model fit to them and exposed to the developer.  This introduces 20 tracked points on each hand.  
 * **Joint**: One of twenty tracked positions for a given tracked hand. This will have a point is 3d space associated with it.
@@ -57,7 +57,7 @@ The following table shows how each type of input maps to the keyboard, mouse, an
 |  Y |  Page up / page down |  |  DPad up / down | 
 |  Z |  W / S |  |  Left thumbstick up / down | 
 |  Action |  Enter or space |  Right button |  A button or either trigger | 
-|  Bloom |  F2 or Windows key |  |  B button | 
+|  Bloom/System |  F2 or Windows key |  |  B button | 
 |  Controller grip button |  G  |  |  | 
 |  Controller menu button |  M  |  |  | 
 |  Controller touchpad touch |  U  |  |  | 
@@ -77,7 +77,7 @@ Note: The controller buttons can be targetted to one hand/controller or the othe
 
 ## Targeting 
 
-Some of the above input concepts stand on their own.  Action, Bloom, Reset, and Tracking are complete concepts, do not need, and are not affected by, any additional modifiers for targeting.  However, the remaining concepts can be applied to one of multiple targets. We have introduced ways for you to specify which intended target your command should be applied to.  In all cases, it is possible to specify through the UI or through keyboard presses, which object to targtet.  In some cases, it is also possible to specify with the xbox controller directly. 
+Some of the above input concepts stand on their own.  Action, Bloom/System, Reset, and Tracking are complete concepts, do not need, and are not affected by, any additional modifiers for targeting.  However, the remaining concepts can be applied to one of multiple targets. We have introduced ways for you to specify which intended target your command should be applied to.  In all cases, it is possible to specify through the UI or through keyboard presses, which object to targtet.  In some cases, it is also possible to specify with the xbox controller directly. 
 
 The following table describe the options for targeting, and the way to activate each of them.
 
@@ -118,7 +118,7 @@ The following set of controls is suggested for day-to-day use:
 |  Hand/Controller Y |  Alt + drag mouse up / down |  Shoulder + right thumbstick up / down | 
 |  Hand/Controller Z |  Alt + W / S |  Shoulder + left thumbstick up / down | 
 |  Action |  Right mouse button |  Trigger | 
-|  Bloom / Home |  F2 or Windows key |  B button | 
+|  Bloom / System / Home |  F2 or Windows key |  B button | 
 |  Reset |  Escape |  Start button | 
 |  Tracking |  T |  X button | 
 |  Scrolling |  Alt + right mouse button + drag mouse up / down |  Shoulder + trigger + right thumbstick up / down | 
