@@ -56,52 +56,9 @@ Users may also perform a "select" action using any of the following methods:
 - Press the single button on a Microsoft Dial (https://docs.microsoft.com/en-us/windows/uwp/design/input/windows-wheel-interactions)
 - Dwell timer activation on objects that support the supplemental interaction method (link to supplemental interactions)
 
-## Device support
-Head gaze and commit is available on all mixed reality headsets. Is the primary input model on HoloLens v1. Other headsets typically include a hand-based pointing mechanism, such as motion controllers or articulated hand tracking. On these devices, applications should prefer [point-and-commit](point-and-commit.md) for far interactions when possible.
 
-Eye gaze and commit is available on HoloLens 2, but is not the primary input model. Jump to the "Eye gaze design guidelines" section for a discussion about when this might make sense for your application.
-
-## Head gaze design guidelines
-- Move content from here: https://docs.microsoft.com/en-us/windows/mixed-reality/gaze-targeting
-- Be sure to include:
-  - Target size and feedback
-  - Target placement
-  - Improving targeting behaviors
-  - Cursor visuals and behavior
-
-## Eye gaze design guidelines
-With HoloLens 2, we have the great opportunity to make _gaze & commit_ faster and more comfortable by using eye gaze instead of head gaze. 
-However, eye gaze behaves very differently to head gaze in certain ways and hence comes with a number of unique challenges.
-In [Eye Gaze Design Guidelines](eye-tracking.md#eye-gaze-design-guidelines), we summarize general advantages and challenges to take into account when using eye tracking as an input medium in your holographic app. 
-In this section, we focus on the specific design considerations for _eye gaze & commit_.
-First, our eyes move incredibly fast and thus are great at quickly targeting across the view.
-This makes eye gaze ideal for quick _gaze & commit_ actions especially when combined with fast commits such as an air-tap or button press. 
-
-- **Do not show a cursor**: 
-While it is nearly impossible to interact without a cursor when using head gaze, the cursor becomes quickly distracting and annoying when using eye gaze.
-Instead of relying on a cursor to inform the user whether eye tracking is working and has correctly detected the currently looked at target, use subtle visual highlights (more details below).
-
-- **Strive for subtle blended hover feedback**: 
-What seems great visual feedback for head gaze can result in terrible, overwhelming experiences using eye gaze.
-Remember that your eyes are enormously fast, quickly darting across points in your field-of-view. 
-Quick sudden highlight changes (on/off) may result in flickery feedback when looking around. 
-So, when providing hover feedback, we recommend using a smoothly blended-in highlight (and blended-out when looking away). 
-This means that at first you would barely notice the feedback when looking at a target.
-Over the course of 500-1000 ms the highlight would increase in intensity.
-While novice users could keep looking at the target to ensure that the system has correctly determined the focused target, expert users could quickly _gaze & commit_ without waiting until the feedback is at its full intensity. 
-In addition, we also recommend using a blend-out when fading out the hover feedback. 
-Research has shown that quick motion and contrast changes are very noticeable in your peripheral vision (so, the area of your visual field where you are _not_ looking). 
-The fade-out doesn't have to be as slow as the blend-in. 
-This is only critical when you have high contrast or color changes for your highlight.
-If the hover feedback was pretty subtle to begin with, you probably won't notice a difference.
-
-- **Look out for synchronizing gaze and commit signals**:
-The synchronization of input signals may be less of a challenge for simple _gaze & commit_, so, don't worry! 
-It is something to look out for in case you want to use more complicated _commit_ actions though that may involve long voice commands or complicated hand gestures. 
-Imagine you look at target and utter a long voice command. 
-Taken into account the time that you needed to speak and the time that the system needed to detect what you said, your eye gaze has usually long moved on to some new target in the scene.
-Hence, either make your users aware that they may need to keep looking at a target until the command has been recognized or handle the input in a way to determine the onset of the command and what the user had been looking at back then.
-
+  
+  
   
 ## Gaze and dwell
 There are lots of different ways to confirm a _commit_ such as combining gaze with _voice_ or _hand gestures_.
@@ -123,15 +80,137 @@ The idea is simple and can be broken down in the following phases:
 ![Dwell states](images/eyes_dwellstate_recommendation.png)
 
 
-> More info to come!
-<!-- 
-- Describe when this might be a viable alternative to gaze and commit
-- Design guidelines 
--->
 
-## Composite gestures
+
+
+
+
+
+
+
+## Device support
+Head gaze and commit is available on all mixed reality headsets. Is the primary input model on HoloLens v1. Other headsets typically include a hand-based pointing mechanism, such as motion controllers or articulated hand tracking. On these devices, applications should prefer [point-and-commit](point-and-commit.md) for far interactions when possible.
+
+Eye gaze and commit is available on HoloLens 2, but is not the primary input model. Jump to the "Eye gaze design guidelines" section for a discussion about when this might make sense for your application.
+
+## Head gaze design guidelines
+- Move content from here: https://docs.microsoft.com/en-us/windows/mixed-reality/gaze-targeting
+- Be sure to include:
+  - Target size and feedback
+  - Target placement
+  - Improving targeting behaviors
+  - Cursor visuals and behavior
+
+
+## Gaze targeting
+
+All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality. In Windows Mixed Reality, this is generally done using the user's gaze.
+To enable a user to work with an experience successfully, the system's calculated understanding of a user's intent, and the user's actual intent, must align as closely as possible. To the degree that the system interprets the user's intended actions correctly, satisfaction increases and performance improves.
+
+
+## Target sizing and feedback
+
+The gaze vector has been shown repeatedly to be usable for fine targeting, but often works best for gross targeting (acquiring somewhat larger targets). Minimum target sizes of 1 to 1.5 degrees should allow successful user actions in most scenarios, though targets of 3 degrees often allow for greater speed. Note that the size that the user targets is effectively a 2D area even for 3D elements--whichever projection is facing them should be the targetable area. Providing some salient cue that an element is "active" (that the user is targeting it) is extremely helpful - this can include treatments like visible "hover" effects, audio highlights or clicks, or clear alignment of a cursor with an element.
+
+![](images/Collidable-Fingertip-720px.jpg)<br>
+Optimal target size at 2 meter distance
+
+
+![](images/Collidable-Fingertip-720px.jpg)<br>
+An example of highlighting a gaze targeted object
+
+
+## Target placement
+
+Users will often fail to find UI elements that are positioned very high or very low in their field of view, focusing most of their attention on areas around their main focus (usually roughly eye level). Placing most targets in some reasonable band around eye level can help. Given the tendency for users to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), grouping UI elements together to the degree that they're related conceptually can leverage attention-chaining behaviors from item to item as a user moves their gaze through an area. When designing UI, keep in mind the potential large variation in field of view between HoloLens and immersive headsets.
+
+![](images/Collidable-Fingertip-720px.jpg)<br>
+An example of grouped UI elements for easier gaze targeting in Galaxy Explorer
+
+## Improving targeting behaviors
+
+If user intent to target something can be determined (or approximated closely), it can be very helpful to accept "near miss" attempts at interaction as though they were targeted correctly. There are a handful of successful methods that can be incorporated in mixed reality experiences:
+
+## Gaze stabilization ("gravity wells")
+
+This should be turned on most/all of the time. This technique removes the natural head/neck jitters that users may have. Also movement due to looking/speaking behaviors.
+
+## Closest link algorithms
+
+These work best in areas with sparse interactive content. If there is a high probability that you can determine what a user was attempting to interact with, you can supplement their targeting abilities by simply assuming some level of intent.
+
+## Backdating/postdating actions
+
+This mechanism is useful in tasks requiring speed. When a user is moving through a series of targeting/activation maneuvers at speed, it can be useful to assume some intent and allow missed steps to act upon targets which the user had in focus slightly before or slightly after the tap (50ms before/after was effective in early testing).
+
+## Smoothing
+
+This mechanism is useful for pathing movements, reducing the slight jitter/wobble due to natural head movement characteristics. When smoothing over pathing motions, smooth by size/distance of movements rather than over time
+
+## Magnetism
+
+This mechanism can be thought of as a more general version of "Closest link" algorithms - drawing a cursor toward a target, or simply increasing hitboxes (whether visibly or not) as users approach likely targets, using some knowledge of the interactive layout to better approach user intent. This can be particularly powerful for small targets.
+
+## Focus stickiness
+
+When determining which nearby interactive elements to give focus to, provide a bias to the element that is currently focused. This will help reduce erratic focus switching behaviours when floating at a midpoint between two elements with natural noise.
+
+
+### Composite gestures
 - Move from "composite gestures" section here: https://docs.microsoft.com/en-us/windows/mixed-reality/gestures#composite-gestures
 - Note that these are available on HoloLens (1st gen) and HoloLens 2
+
+Apps can recognize more than just individual taps. By combining tap, hold and release with the movement of the hand, more complex composite gestures can be performed. These composite or high-level gestures build on the low-level spatial input data (from Air tap and Bloom) that developers have access to.
+
+
+## Composite gesture ## How to apply
+
+Air tap
+
+The Air tap gesture (as well as the other gestures below) reacts only to a specific tap. To detect other taps, such as Menu or Grasp, your app must directly use the lower-level interactions described in two key component gestures section above.
+
+Tap and hold
+
+Hold is simply maintaining the downward finger position of the air tap. The combination of air tap and hold allows for a variety of more complex "click and drag" interactions when combined with arm movement such as picking up an object instead of activating it or "mousedown" secondary interactions such as showing a context menu.
+Caution should be used when designing for this gesture however, as users can be prone to relaxing their hand postures during the course of any extended gesture.
+
+Manipulation
+
+Manipulation gestures can be used to move, resize or rotate a hologram when you want the hologram to react 1:1 to the user's hand movements. One use for such 1:1 movements is to let the user draw or paint in the world.
+The initial targeting for a manipulation gesture should be done by gaze or pointing. Once the tap and hold starts, any manipulation of the object is then handled by hand movements, freeing the user to look around while they manipulate.
+
+Navigation
+
+Navigation gestures operate like a virtual joystick, and can be used to navigate UI widgets, such as radial menus. You tap and hold to start the gesture and then move your hand within a normalized 3D cube, centered around the initial press. You can move your hand along the X, Y or Z axis from a value of -1 to 1, with 0 being the starting point.
+Navigation can be used to build velocity-based continuous scrolling or zooming gestures, similar to scrolling a 2D UI by clicking the middle mouse button and then moving the mouse up and down.
+
+Navigation with rails refers to the ability of recognizing movements in certain axis until certain threshold is reached on that axis. This is only useful, when movement in more than one axis is enabled in an application by the developer, e.g. if an application is configured to recognize navigation gestures across X, Y axis but also specified X axis with rails. In this case system will recognize hand movements across X axis as long as they remain within an imaginary rails (guide) on X axis, if hand movement also occurs Y axis.
+
+Within 2D apps, users can use vertical navigation gestures to scroll, zoom, or drag inside the app. This injects virtual finger touches to the app to simulate touch gestures of the same type. Users can select which of these actions take place by toggling between the tools on the bar above the app, either by selecting the button or saying '<Scroll/Drag/Zoom> Tool'.
+
+## Gesture recognizers
+
+One benefit of using gesture recognition is that you can configure a gesture recognizer just for the gestures the currently targeted hologram can accept. The platform will do only the disambiguation necessary to distinguish those particular supported gestures. That way, a hologram that just supports air tap can accept any length of time between press and release, while a hologram that supports both tap and hold can promote the tap to a hold after the hold time threshold.
+
+## Hand recognition
+
+HoloLens recognizes hand gestures by tracking the position of either or both hands that are visible to the device. HoloLens sees hands when they are in either the ready state (back of the hand facing you with index finger up) or the pressed state (back of the hand facing you with the index finger down). When hands are in other poses, the HoloLens will ignore them.
+For each hand that HoloLens detects, you can access its position (without orientation) and its pressed state. As the hand nears the edge of the gesture frame, you're also provided with a direction vector, which you can show to the user so they know how to move their hand to get it back where HoloLens can see it.
+
+## Gesture frame
+
+For gestures on HoloLens, the hand must be within a “gesture frame”, in a range that the gesture-sensing cameras can see appropriately (very roughly from nose to waist, and between the shoulders). Users need to be trained on this area of recognition both for success of action and for their own comfort (many users will initially assume that the gesture frame must be within their view through HoloLens, and hold their arms up uncomfortably in order to interact). When using the HoloLens Clicker, your hands do not need to be within the gesture frame.
+
+In the case of continuous gestures in particular, there is some risk of users moving their hands outside of the gesture frame while in mid-gesture (while moving some holographic object, for example), and losing their intended outcome.
+
+There are three things that you should consider:
+
+- User education on the gesture frame's existence and approximate boundaries (this is taught during HoloLens setup).
+
+- Notifying users when their gestures are nearing/breaking the gesture frame boundaries within an application, to the degree that a lost gesture will lead to undesired outcomes. Research has shown the key qualities of such a notification system, and the HoloLens shell provides a good example of this type of notification (visual, on the central cursor, indicating the direction in which boundary crossing is taking place).
+
+- Consequences of breaking the gesture frame boundaries should be minimized. In general, this means that the outcome of a gesture should be stopped at the boundary, but not reversed. For example, if a user is moving some holographic object across a room, movement should stop when the gesture frame is breached, but not be returned to the starting point. The user may experience some frustration then, but may more quickly understand the boundaries, and not have to restart their full intended actions each time.
+
 
 ## See also
 * [Direct manipulation](direct-manipulation.md)
@@ -141,6 +220,16 @@ The idea is simple and can be broken down in the following phases:
 ## Test
 
 ![](images/Collidable-Fingertip-720px.jpg)<br>
+
+
+  
+  
+
+## Eye gaze design guidelines
+
+- **Do not show a cursor**: 
+
+
 
 
 
