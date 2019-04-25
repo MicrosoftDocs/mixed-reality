@@ -11,7 +11,11 @@ Some specific scenarios might be:
 
 ## Hands and motion controllers modalities
 ### Direct manipulation
+This is a modality leveraging the power of hands, with which users are capable of touching and manipulating the holograms directly. By leaverage daily life experiences, users are able to use the same way of manipulating real world obejcts to interact with virtual ones. With proper visual affordances, users are guided to perform the required actions so that the learning curve is reduced.   
+
 ### Point and commit
+This modality provides super power for users to interact with holograms in a distance. It 
+
 ### Motion controllers
 ## Trainsition between near, far and motion controllers
 * [Direct manipulation (near)](direct-manipulation.md)
