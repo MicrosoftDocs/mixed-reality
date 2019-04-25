@@ -127,7 +127,7 @@ Here are some examples of how affordances and behaviors are optimized for each i
         <td>Hands-Free (Gaze and dwell)</a></td>
         <td>I see a cursor in the center of my field of view.</td>
         <td>I see a progress indicator when I dwell on an interactable object.</td>
-        <td>I see/ hear visual and audible confirmations when I take action</td>
+        <td>I see/ hear visual and audible confirmations when I take action.</td>
     </tr>
     <tr>
         <td>Hands-Free (Voice commanding)</td>
