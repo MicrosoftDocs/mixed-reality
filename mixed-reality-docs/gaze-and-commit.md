@@ -224,7 +224,7 @@ There are three things that you should consider:
 * [Direct manipulation](direct-manipulation.md)
 * [Point and commit](point-and-commit.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
-* [Gaze and Dwell](gaze.md)
+* [Gaze and Dwell](gaze-targeting.md)
 * [Gaze and Voice](voice-design.md)
 
 
