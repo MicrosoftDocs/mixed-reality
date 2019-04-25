@@ -11,10 +11,10 @@ Some specific scenarios might be:
 
 ## Hands and motion controllers modalities
 ### Direct manipulation
-This is a modality leveraging the power of hands, with which users are capable of touching and manipulating the holograms directly. By leaveraging daily life experiences, users are able to use the same way of manipulating real world obejcts to interact with virtual ones. By providing proper visual affordances, users are guided to perform the required actions, so that the learning curve will be reduced.   
+This is a modality leveraging the power of hands, with which users are capable of touching and manipulating the holograms directly. By leaveraging daily life experiences and providing proper visual affordances, users are able to use the same way of manipulating real world obejcts to interact with virtual ones.   
 
 ### Point and commit
-This modality provides users super power to interact with holograms in a distance. It enables users to make the best use of physical settings, placing holographic 2D and 3D contents anywhere and accessing them from any distances. The way to control and manipulate 2D and 3D contents will be highly in sync with that of direct manipulation. If users know how to do direct manipulation, not much additional learning is needed for point and commit.       
+This modality provides users super power to interact with holograms in a distance. It enables users to make the best use of physical settings. Users can place holograms anywhere and can still access them from any distances. The mental models and gestures for controlling and manipulating 2D and 3D holograms are highly in sync with those of direct manipulation.       
 
 ### Motion controllers
 Currently, motion controllers is 
