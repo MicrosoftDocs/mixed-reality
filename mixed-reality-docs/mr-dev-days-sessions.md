@@ -35,7 +35,7 @@ The following is a list of *SOME* of the currently scheduled sessions.  **_This 
 | Hololens V1 to V2 Porting Guide: What we've learned from early ISV porting | Kevin Collins | |
 | Developing for Windows Mixed Reailty VR | Dan Newell / May Ji | |
 | Increasing Immersion with the MR Lighting Tools | Nick Klingensmith | To-date, most 3D graphics have been rendered on opaque displays. Now, not only are we putting holograms into the real world, but we're also doing it on additive displays! How do we render holograms that look good in this environment, and how do we make them look like they belong? The Mixed Reality Lighting Tools are a collection of easy Unity based solutions, from replicating your environment's lighting, to casting believable additive shadows. Come find out how easy it is to make your Mixed Reality application more immersive! |
-| Practical Porting experience sharing for Galaxy Explorer | John O'Brien | |
+| Practical Porting Experience Sharing | Heather Raikes, Forrest Trepte, Todd Williams | |
 | Delivering solutions with Dynamics 365 MR Biz Apps | Ester Barbuto | |
 | Azure IOT & Azure Sphere Overview | Olivia Burgess/Tony Shakib | |
 | Target markets and business opportuinty for Hololens 2 | Matt Fleckenstein | |
