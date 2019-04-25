@@ -105,12 +105,12 @@ Xbox Adaptive Controller
 
 Designed primarily to meet the needs of gamers with limited mobility, the Xbox Adaptive Controller is a unified hub for devices that helps make Mixed Reality more accessible.
 
-![](images/images/xbox-adaptive-controller-ports.jpg)<br>
+![](images/xbox-adaptive-controller-ports.jpg)<br>
 Xbox Adaptive Controller Ports
 
 Connect external devices such as switches, buttons, mounts, and joysticks to create a custom controllers experience that is uniquely yours. Button, thumbstick and trigger inputs are controlled with assistive devices connected through 3.5mm jacks and USB ports.
 
-![](images/images/xbox-adaptive-controller-devices.jpg)<br>
+![](images/xbox-adaptive-controller-devices.jpg)<br>
 Xbox Adaptive Controller Devices
 
 
