@@ -82,7 +82,15 @@ https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessori
 
 
 
-### Gaze and Xbox One Controller
+### Gaze and Xbox Wireless Controller
+The Xbox Wireless Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Wireless Controller.
+
+![](images/RE1YbDy.jp2)<br>
+Xbox Wireless Controller
+
+More information and instructions to pair the device can be found here:
+https://support.xbox.com/en-US/xbox-one/accessories/customize-standard-controller-with-accessories-app
+
 https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
 https://support.xbox.com/en-US/xbox-on-windows/accessories/connect-xbox-one-controller-to-pc
 
@@ -90,14 +98,32 @@ https://www.windowscentral.com/how-use-xbox-one-controller-windows-mixed-reality
 
 
 ### Gaze and Xbox Adaptive Controller
+The Xbox Adaptive Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Adaptive Controller.
+
+![](images/b22f4d7d-fcd9-4523-92df-591cf26e2a38.jp2)<br>
+Xbox Adaptive Controller
+
+Designed primarily to meet the needs of gamers with limited mobility, the Xbox Adaptive Controller is a unified hub for devices that helps make Mixed Reality more accessible.
+
+![](images/a98790a1-f1be-4000-8c60-5fdd9b48e90f.jp2)<br>
+Xbox Adaptive Controller Ports
+
+Connect external devices such as switches, buttons, mounts, and joysticks to create a custom controllers experience that is uniquely yours. Button, thumbstick and trigger inputs are controlled with assistive devices connected through 3.5mm jacks and USB ports.
+
+![](images/8b1ec6b4-dda3-440f-9b3f-c478c44e44fc.jp2)<br>
+Xbox Adaptive Controller Devices
+
+More information and instructions to pair the device can be found here:
+
 https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
 https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller
-
-https://support.xbox.com/en-US/xbox-
 
 https://www.youtube.com/embed/1KqKPORjatsone/controllers/connect-external-devices-to-adaptive-controller
 
 https://support.xbox.com/en-US/xbox-one/controllers/adaptive-controller-faq
+
+https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller
+
 
   
 ### Gaze and dwell
