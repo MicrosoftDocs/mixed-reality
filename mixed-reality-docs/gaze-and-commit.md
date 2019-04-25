@@ -225,7 +225,7 @@ There are three things that you should consider:
 * [Point and commit](point-and-commit.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
 * [Gaze and Dwell](gaze.md)
-* [Gaze and Voice](voice.md)
+* [Gaze and Voice](voice-design.md)
 
 
 
