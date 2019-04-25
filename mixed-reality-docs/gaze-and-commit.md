@@ -42,7 +42,7 @@ In addition to head gaze, some mixed reality headsets include eye tracking syste
 After targeting an object or UI element, the user can interact or "click" on it using a secondary input. This is known as the commit step of the model. The following commit methods are supported:
 
 - Air Tap gesture
-- Speak the voice command "Select" or one of the targeted voice commands (link)
+- Speak the voice command "Select" or one of the targeted voice commands
 - Press the single button on a [HoloLens Clicker]
 - Press the 'A' button on an Xbox Gamepad
 - Press the 'A' button on an Xbox Adaptive Controller
