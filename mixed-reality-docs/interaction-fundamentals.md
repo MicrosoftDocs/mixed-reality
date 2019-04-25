@@ -48,20 +48,20 @@ The chart below is a simplified overview.  Detailed information for using each i
         <td><a href="hands-and-tools.md">Hands and tools</a></td>
         <td>3D spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
         <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6 DoF controllers<br>Great when coupled with voice, eye tracking, or head gaze</td>
-        <td>HoloLens 2<br>Immersive headsets</td>
+        <td>HoloLens 2<br>Windows Immersive w/ 6DOF Controllers</td>
     </tr>
     <tr>
         <td><a href="hands-free.md">Hands-free</a></td>
         <td>Contextual experiences where a user's hands are occupied
 e.g. on the-job learning, maintenance</td>
         <td>Some learning required<br>If hands are unavailable<br>pairs well with voice and natural language</td>
-        <td>HoloLens 2<br>HoloLens (1st gen)<br> Immersive headsets</td>
+        <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive</td>
     </tr>
     <tr>
         <td><a href="gaze-and-commit.md">Gaze and commit</a></td>
         <td>Click-through experiences e.g. 3D presentations, demos</td>
-        <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens (1st gen)</td>
-        <td>HoloLens 2<br>HoloLens (1st gen)<br> Immersive headsets<br> Mobile AR</td>
+        <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens 1</td>
+        <td>HoloLens 2<br>HoloLens (1st gen)<br> Windows Immersive<br> Mobile AR</td>
     </tr>
 </table>
 <br>
@@ -107,33 +107,33 @@ Here are some examples of how affordances and behaviors are optimized for each i
     </colgroup>
     <tr>
         <td><strong>Model</strong></td>
-        <td><strong>Is it working?</strong></td>
-        <td><strong>What can I do?</strong></td>
-        <td><strong>What did I do?</strong></td>
+        <td><strong>How do I know it's working?</strong></td>
+        <td><strong>How do I know what can I do?</strong></td>
+        <td><strong>How do I know what What I just did?</strong></td>
     </tr>
     <tr>
         <td><a href="hands-and-tools.md">Hands and tools</a></td>
-        <td>Hand mesh<br>Hand and controller rays</td>
-        <td>Grabbable handles and a bounding box appear when your hands or rays are nearby</td>
-        <td>Audible clicks and tones upon grab and release</td>
+        <td>I see a hand mesh, I see a fingertip affordance or hand/ controller rays.</td>
+        <td>I see grabbable handles or a bounding box appear when my hand is near.</td>
+        <td>I hear audible tones and see animations on grab and release.</td>
     </tr>
     <tr>
         <td>Gaze and commit</a></td>
-        <td>Gaze cursor has a ready and hover state</a></td>
-        <td>Gaze cursor has a ready and hover state</a></td>
-        <td>Visible and audible response to the action</a></td>
+        <td>I see a cursor in the center of my field of view.</td>
+        <td>The gaze cursor changes state when over certain objects.</td>
+        <td>I see/ hear visual and audible confirmations when I take action.</td>
     </tr>	
     <tr>
-        <td>Gaze and dwell</a></td>
-        <td>Gaze cursor has a ready and hover state</a></td>
-        <td>Progress indicator as the user dwells on an interactable</a></td>
-        <td>Visible and audible response to the action</a></td>
+        <td>Hands-Free (Gaze and dwell)</a></td>
+        <td>I see a cursor in the center of my field of view.</td>
+        <td>I see a progress indicator when I dwell on an interactable object.</td>
+        <td>I see/ hear visual and audible confirmations when I take action</td>
     </tr>
     <tr>
-        <td>Voice commanding</a></td>
-        <td>'Listening' indicator<br>Captions to show you what we heard</a></td>
-        <td>Voice prompts<br>Hints<br>"What can I say?"</a></td>
-        <td>Visible and audible response to the action<br>Disambiguation when necessary</a></td>
+        <td>Hands-Free (Voice commanding)</td>
+        <td>I see a listening indicator and captions that show what the system heard.</td>
+        <td>I get voice prompts and hints.  When I say "what can I say?" I see feedback.</td>
+        <td>I see/ hear visual and audible confirmations when I give a command, or get disambiguation UX when needed.</a></td>
     </tr>
 </table>
 
@@ -160,7 +160,7 @@ A:  If users do not need to control a lot of UI, Gaze and Commit offers a learna
 7.	Q:  Do my users use both HoloLens 1 and HoloLens 2/ Windows Immersive (VR headsets)
 A:  Since Gaze and Commit is the interaction model for HoloLens Gen 1, we recommend that creators who support HoloLens Gen 1 use Gaze and Commit for any features or modes that users may experience on a HoloLens Gen 1 headset.  Please also see the next section on [LINK] Transitioning Interaction Models for details on making a great experience for multiple HoloLens generations.
  
-7.	Q: What about for users who are generally mobile (covering a large space or moving between spaces), versus users who tend to work in a single space?  
+8.	Q: What about for users who are generally mobile (covering a large space or moving between spaces), versus users who tend to work in a single space?  
 A:  Any of the interaction models will work for these users.  Please see the [LINK] App Design Guidance section for more information on our recommended tag-along behaviors for UI that follows users as they move.
 
 
