@@ -39,28 +39,55 @@ The most common form of gaze is called head-gaze. Mixed reality headsets use the
 In addition to head gaze, some mixed reality headsets include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered separately in this article.
 
 ## Commit
-After targeting an object or UI element, the user can interact or "click" on it using a secondary input. This is known as the commit step of the model. On HoloLens 1, Air tap is the most common secondary input.
+After targeting an object or UI element, the user can interact or "click" on it using a secondary input. This is known as the commit step of the model. The following commit methods are supported:
 
-Air tap is a tapping gesture with the hand held upright. To perform an Air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release.
+- Air Tap gesture
+- Speak the voice command "Select" or one of the targeted voice commands (link)
+- Press the single button on a [HoloLens Clicker]
+- Press the 'A' button on an Xbox Gamepad
+- Press the 'A' button on an Xbox Adaptive Controller
+- Dwell timer activation on objects that support the supplemental interaction method (link to supplemental interactions)
+
+
+### Gaze and Air Tap gesture
+Air tap is a tapping gesture with the hand held upright. To perform an Air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release. On HoloLens 1, Air tap is the most common secondary input.
 
 ![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
 
 Air tap is also available on HoloLens 2, and it has been relaxed from the original version. Nearly all types of pinches are now supported, as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture.  This new Air tap replaces the old one through the same API, so existing applications will get the new behavior automatically after recompiling for HoloLens 2.
 
-Users may also perform a "select" action using any of the following methods:
-- Speak the voice command "Select" or one of the targeted voice commands (link)
-- Press the single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker)
-- Press the 'A' button on an Xbox Gamepad
-- Press the 'A' button on an Xbox Adaptive Controller
-- Press Enter on a Bluetooth Keyboard
-- Press the single button on a Microsoft Dial (https://docs.microsoft.com/en-us/windows/uwp/design/input/windows-wheel-interactions)
-- Dwell timer activation on objects that support the supplemental interaction method (link to supplemental interactions)
+### Gaze and "Select" voice command
+https://review.docs.microsoft.com/en-us/windows/mixed-reality/voice-design?branch=caseym
+
+### Gaze and HoloLens Clicker
+(hardware-accessories.md#hololens-clicker)
+https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
 
 
+### Gaze and Xbox One Controller
+https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
+https://support.xbox.com/en-US/xbox-on-windows/accessories/connect-xbox-one-controller-to-pc
+
+https://www.windowscentral.com/how-use-xbox-one-controller-windows-mixed-reality
+
+
+### Gaze and Xbox Adaptive Controller
+https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
+https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller
+
+https://support.xbox.com/en-US/xbox-
+
+https://www.youtube.com/embed/1KqKPORjatsone/controllers/connect-external-devices-to-adaptive-controller
+
+https://support.xbox.com/en-US/xbox-one/controllers/adaptive-controller-faq
+
   
-  
-  
-## Gaze and dwell
+### Gaze and dwell
+https://review.docs.microsoft.com/en-us/windows/mixed-reality/gaze-targeting?branch=caseym
+
+
+
+
 There are lots of different ways to confirm a _commit_ such as combining gaze with _voice_ or _hand gestures_.
 There are several user scenarios though, in which users' hands may either be busy or cannot be tracked (e.g., factory workers with oversized heavy duty gloves). 
 Voice input may also not be available due to user preferences, social context or loud environments.
@@ -93,13 +120,9 @@ Head gaze and commit is available on all mixed reality headsets. Is the primary 
 
 Eye gaze and commit is available on HoloLens 2, but is not the primary input model. Jump to the "Eye gaze design guidelines" section for a discussion about when this might make sense for your application.
 
-## Head gaze design guidelines
+# Head gaze design guidelines
 - Move content from here: https://docs.microsoft.com/en-us/windows/mixed-reality/gaze-targeting
-- Be sure to include:
-  - Target size and feedback
-  - Target placement
-  - Improving targeting behaviors
-  - Cursor visuals and behavior
+
 
 
 ## Gaze targeting
@@ -131,55 +154,49 @@ An example of grouped UI elements for easier gaze targeting in Galaxy Explorer
 
 If user intent to target something can be determined (or approximated closely), it can be very helpful to accept "near miss" attempts at interaction as though they were targeted correctly. There are a handful of successful methods that can be incorporated in mixed reality experiences:
 
-## Gaze stabilization ("gravity wells")
-
+### Gaze stabilization ("gravity wells")
 This should be turned on most/all of the time. This technique removes the natural head/neck jitters that users may have. Also movement due to looking/speaking behaviors.
 
-## Closest link algorithms
-
+### Closest link algorithms
 These work best in areas with sparse interactive content. If there is a high probability that you can determine what a user was attempting to interact with, you can supplement their targeting abilities by simply assuming some level of intent.
 
-## Backdating/postdating actions
-
+### Backdating/postdating actions
 This mechanism is useful in tasks requiring speed. When a user is moving through a series of targeting/activation maneuvers at speed, it can be useful to assume some intent and allow missed steps to act upon targets which the user had in focus slightly before or slightly after the tap (50ms before/after was effective in early testing).
 
-## Smoothing
-
+### Smoothing
 This mechanism is useful for pathing movements, reducing the slight jitter/wobble due to natural head movement characteristics. When smoothing over pathing motions, smooth by size/distance of movements rather than over time
 
-## Magnetism
-
+### Magnetism
 This mechanism can be thought of as a more general version of "Closest link" algorithms - drawing a cursor toward a target, or simply increasing hitboxes (whether visibly or not) as users approach likely targets, using some knowledge of the interactive layout to better approach user intent. This can be particularly powerful for small targets.
 
-## Focus stickiness
-
+### Focus stickiness
 When determining which nearby interactive elements to give focus to, provide a bias to the element that is currently focused. This will help reduce erratic focus switching behaviours when floating at a midpoint between two elements with natural noise.
 
 
-### Composite gestures
+# Composite gestures
 - Move from "composite gestures" section here: https://docs.microsoft.com/en-us/windows/mixed-reality/gestures#composite-gestures
 - Note that these are available on HoloLens (1st gen) and HoloLens 2
 
 Apps can recognize more than just individual taps. By combining tap, hold and release with the movement of the hand, more complex composite gestures can be performed. These composite or high-level gestures build on the low-level spatial input data (from Air tap and Bloom) that developers have access to.
 
 
-## Composite gesture ## How to apply
+## Composite gestures
 
-Air tap
+### Air tap
 
 The Air tap gesture (as well as the other gestures below) reacts only to a specific tap. To detect other taps, such as Menu or Grasp, your app must directly use the lower-level interactions described in two key component gestures section above.
 
-Tap and hold
+### Tap and hold
 
 Hold is simply maintaining the downward finger position of the air tap. The combination of air tap and hold allows for a variety of more complex "click and drag" interactions when combined with arm movement such as picking up an object instead of activating it or "mousedown" secondary interactions such as showing a context menu.
 Caution should be used when designing for this gesture however, as users can be prone to relaxing their hand postures during the course of any extended gesture.
 
-Manipulation
+### Manipulation
 
 Manipulation gestures can be used to move, resize or rotate a hologram when you want the hologram to react 1:1 to the user's hand movements. One use for such 1:1 movements is to let the user draw or paint in the world.
 The initial targeting for a manipulation gesture should be done by gaze or pointing. Once the tap and hold starts, any manipulation of the object is then handled by hand movements, freeing the user to look around while they manipulate.
 
-Navigation
+### Navigation
 
 Navigation gestures operate like a virtual joystick, and can be used to navigate UI widgets, such as radial menus. You tap and hold to start the gesture and then move your hand within a normalized 3D cube, centered around the initial press. You can move your hand along the X, Y or Z axis from a value of -1 to 1, with 0 being the starting point.
 Navigation can be used to build velocity-based continuous scrolling or zooming gestures, similar to scrolling a 2D UI by clicking the middle mouse button and then moving the mouse up and down.
