@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
 
 # Getting your existing app ready for HoloLens 2
 
-This guide is specifically tailored to help developers who have an existing Unity app for HoloLens 1 to port their application for the new HoloLens 2 device. There are four key steps to porting a HoloLens 1 Unity app to HoloLens 2. The sections below will detail information for each stage. 
+This guide is specifically tailored to help developers who have an existing Unity app for HoloLens (1st gen) to port their application for the new HoloLens 2 device. There are four key steps to porting a HoloLens (1st gen) Unity app to HoloLens 2. The sections below will detail information for each stage. 
 
 | Step 1 | Step 2 | Step 3 | Step 4 |
 |----------|-------------------|-------------------|-------------------|
