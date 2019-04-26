@@ -15,7 +15,7 @@ keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design
 
 ## Scenarios
 
-As outlined in the <a href="mixed-reality-docs/interaction-fundamentals.md">design guidelines</a>, once you have identified the users and their goals, ask yourself what environmental or situational challenges they might face as they work to accomplish their tasks. For example, many users need to use their hands to accomplish their real-world goals and will have difficulty interacting with a hands-and-controllers based interface. 
+As outlined in the [interaction model overview](interaction-fundamentals.md), once you have identified the users and their goals, ask yourself what environmental or situational challenges they might face as they work to accomplish their tasks. For example, many users need to use their hands to accomplish their real-world goals and will have difficulty interacting with a hands-and-controllers based interface. 
 
 Some specific scenarios might be: 
 * Being guided through a task, while hands are busy
