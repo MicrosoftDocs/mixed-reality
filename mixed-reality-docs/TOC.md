@@ -93,7 +93,7 @@
 #### [Hands-free](hands-free.md)
 ##### [Gaze only](Gaze-targeting.md)
 ##### [Gaze and voice](Voice-design.md)
-#### [Gaze and commit](gaze-and-commit.md)
+#### [Head-gaze and commit](gaze-and-commit.md)
 ### [Supplemental interactions]
 #### [Eye gaze](eye-tracking.md)
 #### Motion controller
