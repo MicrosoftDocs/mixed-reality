@@ -12,7 +12,7 @@ keywords: hands, motion controllers, directx, input, holograms
 
 In Windows Mixed Reality, both hand and [motion controller](motion-controllers.md) input is handled through the spatial input APIs, found in the [Windows.UI.Input.Spatial](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial) namespace. This enables you to easily handle common actions like **Select** presses the same way across both hands and motion controllers.
 
-## Getting started
+## The manager, sources, and states
 
 To access spatial input in Windows Mixed Reality, start with the SpatialInteractionManager interface.  You can access this interface by calling  [SpatialInteractionManager::GetForCurrentView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getforcurrentview), typically sometime during app startup.
 
