@@ -16,8 +16,8 @@ This is a modality leveraging the power of hands, with which users are capable o
 ### [Point and commit](point-and-commit.md)
 This modality provides users super power to interact with holograms in a distance. It enables users to make the best use of setting of surrounding. Users can place holograms anywhere and can still access them from any distances. The mental models and gestures for controlling and manipulating 2D and 3D holograms are highly in sync with those of direct manipulation.
 
-![](images/Hands-and-Controllers-720px.jpg)<br>
-
 ### [Motion controllers](motion-controllers.md)
 Currently, motion controllers is 
+
+![](images/Hands-and-controllers-720px.jpg)<br>
 
