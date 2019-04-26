@@ -13,7 +13,7 @@ The philosophy of simple, instinctual interactions is woven throughout the Micro
 
 First, we've made sure our amazing sensors and input technology, including hand tracking, eye tracking, and natural language, combine into seamless multimodal interaction models.  Based on our research, designing and developing multimodally -- and not based on single inputs -- is the key to creating instinctual experiences.
 
-Secondly, we recognize that many developers target multiple devices, whether that means HL2 and HL1 or HoloLens and VR.  So we've designed our interaction models to work across devices (even if the input technology varies on each device).  For example, far interaction on a Windows Immersive headset with a 6DOF controller and far interaction on a HoloLens 2 both use the identical affordances and patterns, making it easy for cross-device applications. Not only is this convenient for developers and designers, but it feels natural to end users. 
+Secondly, we recognize that many developers target multiple devices, whether that means HoloLens 2 and HoloLens (1st gen) or HoloLens and VR.  So we've designed our interaction models to work across devices (even if the input technology varies on each device).  For example, far interaction on a Windows Immersive headset with a 6DOF controller and far interaction on a HoloLens 2 both use the identical affordances and patterns, making it easy for cross-device applications. Not only is this convenient for developers and designers, but it feels natural to end users. 
 
 Lastly, while we recognize that there are thousands of effective, engaging, and magical interactions possible in MR, we have found that intentionally employing a single interaction model end to end in an application is the best way to ensure users are successful and have a great experience.  To that end, we've included three things in this interaction guidance:
 * We've structured this guidance around the three primary interaction models and the components and patterns required for each
@@ -55,12 +55,12 @@ The chart below is a simplified overview.  Detailed information for using each i
         <td>Contextual experiences where a user's hands are occupied
 e.g. on the-job learning, maintenance</td>
         <td>Some learning required<br>If hands are unavailable<br>pairs well with voice and natural language</td>
-        <td>HoloLens 2<br>HoloLens 1<br> Windows Immersive</td>
+        <td>HoloLens 2<br>HoloLens (1st gen)<br> Windows Immersive</td>
     </tr>
     <tr>
         <td><a href="gaze-and-commit.md">Gaze and commit</a></td>
         <td>Click-through experiences e.g. 3D presentations, demos</td>
-        <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens 1</td>
+        <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens (1st gen)</td>
         <td>HoloLens 2<br>HoloLens (1st gen)<br> Windows Immersive<br> Mobile AR</td>
     </tr>
 </table>
@@ -118,19 +118,19 @@ Here are some examples of how affordances and behaviors are optimized for each i
         <td>I hear audible tones and see animations on grab and release.</td>
     </tr>
     <tr>
-        <td>Gaze and commit</a></td>
+        <td><a href="gaze-and-commit.md">Gaze and commit</a></td>
         <td>I see a cursor in the center of my field of view.</td>
         <td>The gaze cursor changes state when over certain objects.</td>
         <td>I see/ hear visual and audible confirmations when I take action.</td>
     </tr>	
     <tr>
-        <td>Hands-Free (Gaze and dwell)</a></td>
+        <td><a href="hands-free.md">Hands-Free (Gaze and dwell)</a></td>
         <td>I see a cursor in the center of my field of view.</td>
         <td>I see a progress indicator when I dwell on an interactable object.</td>
         <td>I see/ hear visual and audible confirmations when I take action.</td>
     </tr>
     <tr>
-        <td>Hands-Free (Voice commanding)</td>
+        <td><a href="hands-free.md">Hands-Free (Voice commanding)</a></td>
         <td>I see a listening indicator and captions that show what the system heard.</td>
         <td>I get voice prompts and hints.  When I say "what can I say?" I see feedback.</td>
         <td>I see/ hear visual and audible confirmations when I give a command, or get disambiguation UX when needed.</a></td>
