@@ -1,3 +1,13 @@
+---
+title: Hands and motion controllers
+description: Overview of hands and motion controllers interaction
+author: shengkait
+ms.author: shengkait
+ms.date: 04/26/2019
+ms.topic: article
+keywords: Mixed Reality, hands, motion controlles, interaction, design
+---
+
 # Hands and motion controllers
 ## Scenarios
 If you choose to adopt this interaction model after reading the <a href="mixed-reality-docs/interaction-fundamentals.md">design guidelines</a>, it means that you are developing an application requiring users to use two hands to interact with the holographic world. Your application is going to achieve the goal of removing the boundry between virtual and physical.
@@ -21,3 +31,8 @@ Motion controllers are tools that extend the users' physical capabilities by pro
 
 ![](images/Hands-and-controllers-720px.jpg)<br>
 
+## See also
+* [Gaze and commit](gaze-and-commit.md)
+* [Hands-free](hands-free.md)
+* [Point and commit](point-and-commit.md)
+* [Gaze targeting](gaze-targeting.md)
