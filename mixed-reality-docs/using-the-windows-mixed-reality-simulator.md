@@ -25,7 +25,7 @@ The Windows Mixed Reality simulator allows you to test mixed reality apps on you
    4. Click **Set up** to confirm your choice
 4. Click the **For developers** button on the left side of the Mixed Reality Portal
 5. Turn the Simulation toggle switch to **On**
-   * This requires admin permissions and you must accept the User Account Control dialog that appears
+   * Enabling simulation installs and enables the left simulated 6-DOF controller by default.  Prior to the Windows 10 May 2019 update, installing a simulated 6-DOF controller requires administrator permissions.  You must accept the User Account Control dialog if one appears.
 
 You should now be running with simulation!
 
