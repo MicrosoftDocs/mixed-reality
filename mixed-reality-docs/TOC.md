@@ -85,25 +85,17 @@
 ### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
 ## Customer-focused creative process
 ## MR design system and tools
-### [Interaction models](Interaction-fundamentals.md)
+### [Instinctual interactions](Interaction-fundamentals.md)
 #### [Hands and motion controllers](hands-and-tools.md)
 ##### [Direct manipulation](direct-manipulation.md)
 ##### [Point and commit](point-and-commit.md)
 ##### [Motion controllers](Motion-controllers.md)
 #### [Hands-free](hands-free.md)
-##### [Gaze only](Gaze-targeting.md)
+##### [Gaze and dwell](Gaze-and-dwell.md)
 ##### [Gaze and voice](Voice-design.md)
 #### [Head-gaze and commit](gaze-and-commit.md)
 ### [Supplemental interactions]
 #### [Eye gaze](eye-tracking.md)
-#### Motion controller
-#### Natural language
-### Visual design language
-### Application UX
-#### System UX
-#### App design guidance
-#### Hand menus
-#### Creating custom gestures
 
 ### [Comfort](Comfort.md)
 ### [Gaze targeting](Gaze-targeting.md)
