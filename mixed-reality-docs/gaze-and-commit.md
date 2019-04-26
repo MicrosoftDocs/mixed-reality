@@ -26,7 +26,7 @@ Head-gaze and commit is an input model that involves targeting an object with th
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
-        <td>Gaze and commit</td>
+        <td>Head-gaze and commit</td>
         <td>✔️ Recommended</td>
         <td>✔️ Recommended (third choice - <a href="interaction-fundamentals.md">See the other options</a>)</td>
         <td>➕ Alternate option</td>
@@ -223,8 +223,8 @@ There are three things that you should consider:
 * [Direct manipulation](direct-manipulation.md)
 * [Point and commit](point-and-commit.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
-* [Gaze and Dwell](gaze-targeting.md)
-* [Gaze and Voice](voice-design.md)
+* [Gaze and dwell](gaze-targeting.md)
+* [Gaze and voice](voice-design.md)
 
 
 
