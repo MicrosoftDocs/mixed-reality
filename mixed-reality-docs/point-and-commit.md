@@ -37,13 +37,13 @@ Point and commit has been one of the primary input models on HoloLens 2, utilizi
 ## Hand rays
 On HoloLens 2, we create a hand ray shooting out from the center of a palm. The ray is treated as an extension of the hand. A donut shape cursor is attached at the end of the ray to imply the location where the ray intersects with a hitted object. The object that the cursor lands will receive gestural commands from the hand. 
 
-The very basic gestural command is triggered by using thumb and index finger to perform [Air Tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content. With more [Composite Gestures](coming-soon.md), users are capable of navigating the web content and manipulating 3D objects in a distance. The visual design of the hand ray should also react to point and commit states: <br>
+The very basic gestural command is triggered by using thumb and index finger to perform [Air tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content. With more [Composite gestures](coming-soon.md), users are capable of navigating the web content and manipulating 3D objects in a distance. The visual design of the hand ray should also react to point and commit states: <br>
 * In the pointing state, the ray is dash lined, and the cursor is a donut shape.
 * in the committing state, the ray turns into a solid line, and the cursor shrinks to a dot.<br><br>
 ![](images/Hand-Rays-720px.jpg)<br>
 
 ## Transition between near and far
-Instead of using specific gestures, such as [Pointing with Index Finger](coming-soon.md) to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more gestural manipulations. Therefore, HoloLens 2 supports exactly the same set of hand gestures for both near and far interaction. No additional learning is needed when users transit from near to far interactions, and vice versa. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br>
+Instead of using specific gestures, such as [Pointing with index finger](coming-soon.md) to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more gestural manipulations. Therefore, HoloLens 2 supports exactly the same set of hand gestures for both near and far interaction. No additional learning is needed when users transit from near to far interactions, and vice versa. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br>
 * when an object is within arm reached distance (roughly 50 cm), the rays are turned off automatically encouraging for near interaction. 
 * When the object is farther than 50 cm, the rays are turned on.
 
