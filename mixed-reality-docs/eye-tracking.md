@@ -1,13 +1,13 @@
 ---
-title: Eye Tracking
-description: Eye Tracking
+title: Eye tracking
+description: Eye tracking
 author: sostel
 ms.author: sostel
 ms.date: 04/05/2019
 ms.topic: article
 keywords: Eye Tracking, Mixed Reality, Input, Eye Gaze
 ---
-# Eye Tracking on HoloLens 2
+# Eye tracking on HoloLens 2
 HoloLens 2 allows for a whole new level of context and human understanding within the Holographic experience by providing developers with the incredible ability of using information about what users are looking at. This page gives an overview of how developers can benefit from eye tracking for various use cases and what to look out for when designing eye-gaze-based user interfaces. 
 
 ## Use cases
@@ -17,7 +17,7 @@ Before getting started, in the following we will mention the [Mixed Reality Tool
 ### User intent	   
 Information about where a user looks at provides a powerful **context for other inputs**, such as voice, hands and controllers.
 This can be used for various tasks.
-For example, this may range from quickly and effortlessly **targeting** across the scene by simply looking at a hologram and saying "select" (also see [Gaze & Commit](gaze-and-commit.md)) or by saying "put this...", then looking over to where you want to place the hologram and say "...there". 
+For example, this may range from quickly and effortlessly **targeting** across the scene by simply looking at a hologram and saying "select" (also see [Head-gaze and commit](gaze-and-commit.md)) or by saying "put this...", then looking over to where you want to place the hologram and say "...there". 
 Examples for this can be found in [Mixed Reality Toolkit - Eye-supported Target Selection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) and [Mixed Reality Toolkit - Eye-supported Target Positioning](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
 
 An additional example for user intent may include using information about what users look at to enhance the engagement with embodied virtual agents and interactive holograms. For example, virtual agents may adapt available options and their behavior based on currently viewed content. 
