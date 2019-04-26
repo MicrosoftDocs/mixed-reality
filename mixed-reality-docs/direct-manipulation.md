@@ -108,7 +108,7 @@ For manipulation requires precision, we recommend afforance based manipulation, 
 Unlike HoloLens (1st gen), teaching users a couple predefined gestures, such as Bloom and Air Tap, in HoloLens 2, we don't ask users to memorize any symbolic gesture. All gestures that users need for interacting with holograms and contents are instinctual. The way to achieve instinctual gesture is to guide users to perform gestures through the design of UI affordances. For example, if we encourage users to grab an object or a control point with two finger pinch, the object or the control point should be small. If we would like users to perform five finger grab, the object or the control point should be relatively big. Similar to buttons, a tiny button would limit users to press it with a single finger, while a huge button would encourage users to press it with their palms.
 ![](images/Instinctual-Gestures-720px.jpg)<br>
 
-## Symmetric design between hands and 6 DoF controller
+## Symmetric design between hands and 6 DoF controllers
 You may have noticed that there are now interaction parallels we can draw between hands in AR and motion controllers in VR. Both inputs can be used to trigger direct manipulations in their respective environments. In HoloLens 2, grabbing and dragging with hands at a close distance works much in the same way as the grab button does on the motion controllers in WMR. This provides your users with interaction familiarity between the two platforms and may prove useful should you ever decide to port your app from one to the other.
 
 ## Optimizing with eye tracking
