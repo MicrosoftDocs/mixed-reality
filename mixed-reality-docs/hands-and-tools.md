@@ -17,7 +17,7 @@ This is a modality leveraging the power of hands, with which users are capable o
 This modality provides users super power to interact with holograms in a distance. It enables users to make the best use of setting of surrounding. Users can place holograms anywhere and can still access them from any distances. The mental models and gestures for controlling and manipulating 2D and 3D holograms are highly in sync with those of direct manipulation.
 
 ### [Motion controllers](motion-controllers.md)
-Currently, motion controllers is 
+Motion controllers are tools that extend the users' physical capabilities by providing precise interactions across a large range of distances while using one or both hands. These hardware accessories provide shortcuts to many commonly-used interactions and gives surefooted, tactile feedback for a variety of actions. Currently, motion controllers are only available for WMR scenarios. 
 
 ![](images/Hands-and-controllers-720px.jpg)<br>
 
