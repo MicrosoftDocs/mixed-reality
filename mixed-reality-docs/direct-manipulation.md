@@ -29,7 +29,7 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
-        <td>Direct manipulation (near interaction)</td>
+        <td>Direct manipulation (Near hand interaction)</td>
         <td>❌ Not supported</td>
         <td>✔️ Recommended</td>
         <td>➕ An alternate option but <a href="point-and-commit.md">Point and commit (far interaction)</a> is recommended</td>
