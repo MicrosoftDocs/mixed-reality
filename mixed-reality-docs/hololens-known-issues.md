@@ -3,7 +3,7 @@ title: HoloLens known issues
 description: This is the list of known issues that may affect HoloLens developers.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 03/21/2018
+ms.date: 04/1/2019
 ms.topic: article
 keywords: troubleshoot, known issue, help
 ---
@@ -17,7 +17,7 @@ This is the current list of known issues for HoloLens affecting developers. Chec
 ## Issues launching the Microsoft Store and apps on HoloLens
 
 >[!IMPORTANT]
->Last Update: 3/26 @ 5 PM - Next Update tomorrow. 
+>Last Update: 4/2 @ 10 AM - Issue resolved. 
 
 You may experience issues when trying to launch the Microsoft Store and apps on HoloLens. We've determined that the issue occurs when background app updates deploy a newer version of framework packages in specific sequences while one or more of their dependent apps are still running. In this case,  an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) caused the apps that are running to not correctly update for all running apps consuming the prior version of the framework.  The flow for framework update is as follows: -
 
@@ -26,12 +26,28 @@ You may experience issues when trying to launch the Microsoft Store and apps on 
 
 If step 2 is interrupted before completion then any apps for which the newer framework wasn’t registered will fail to launch from the start menu.  We believe any app on HoloLens could be affected by this issue.
 
-
 Some users have reported that closing hung apps and launching other apps such as Feedback Hub, 3D Viewer or Photos resolves the issue for them - however, this does not work 100% of the time.
 
-As a result of this bug, we decided to pause the release of HoloLens OS version 17763.379 until we were able to root cause the issue. We have root caused that this issue was not caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. We have a fix and we are attempting to ship an updated version of the operating system as soon as possible. 
+We have root caused that this issue was not caused the update itself, but a bug in the OS that resulted in the .NET Native framework update being handled incorrectly. We are pleased to announce that we have identified a fix and have released an update (OS version 17763.380) containing the fix. 
 
-In the interim, we have found a supported mitigation, that does not involve resetting devices:
+To see if your device can take the update please:
+
+1.  Go to the “Settings” app and open “Update & Security”
+2.  Click “Check for Updates”
+3.  If update to 17763.380 is available, please update to this build to receive the fix for the App Hang bug
+4.  Upon updating to this version of the OS, the Apps should work as expected.
+
+Additionally, as we do with every HoloLens OS release, we have posted the FFU image to the Microsoft Download Center at https://aka.ms/hololensdownload/10.0.17763.380. 
+
+If you would not like to take the update, we have released a new version of the Microsoft Store UWP app as of 3/29. Once you have the updated version of the Store:
+
+1) Open the Store and confirm that it loads.
+2) Use the Bloom Gesture to open the menu.
+3) Attempt to open previously broken apps
+3) If it still cannot be launched, tap and hold the icon of the broken app and select uninstall.
+4) Resinstall these apps from the store.
+
+If your device is still unable to load apps, you can sideload a version of the .NET Native Framework and Runtime through the download center by doing:
 
 1)	Please download [this zip file](http://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) from the Microsoft Download Center.  Unzipping will produce two files.  Microsoft.NET.Native.Runtime.1.7.appx and Microsoft.NET.Native.Framework.1.7.appx
 2)	Please verify that your device is dev unlocked.  If you haven’t done that before the instructions to do that are [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fwindows%2Fmixed-reality%2Fusing-the-windows-device-portal&data=02%7C01%7Cjalynch%40microsoft.com%7C3622a462ebd04870fccb08d6ae94cad6%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636888351416725140&sdata=ZB6Zdx9GV95PcU6FAVgWaP3eQNMsyIc%2FbNDEby3Sb8A%3D&reserved=0).
@@ -42,7 +58,7 @@ In the interim, we have found a supported mitigation, that does not involve rese
 6)  At this point we believe your applications should start working again and that you can also get to the Store.
 7)  In some cases, it is necessary run the additional step of launching the 3D Viewer app before affected apps will launch. 
 
-We appreciate your patience as we work to get this resolved.
+We appreciate your patience as we have gone through the process to get this issue resolved, and we look forward to continued working with our community to create successful Mixed Reality experiences.
 
 ## Connecting to WiFi
 

@@ -16,6 +16,9 @@ Add spatial sound to your Windows Mixed Reality apps based on DirectX by using t
 
 This topic uses sample code from the HolographicHRTFAudioSample.
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Overview of Head Relative Spatial Sound
 
 Spatial sound is implemented as an **audio processing object (APO)** that uses a **head related transfer function (HRTF)** filter to *spatialize* an ordinary audio stream.

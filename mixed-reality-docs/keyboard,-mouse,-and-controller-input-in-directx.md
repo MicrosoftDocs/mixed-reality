@@ -16,6 +16,9 @@ Keyboards, mice, and game controllers can all be useful forms of input for Windo
 
 To use keyboard input on HoloLens, pair a Bluetooth keyboard to your device or use virtual input via the Windows Device Portal. To use keyboard input while wearing a Windows Mixed Reality immersive headset, assign input focus to mixed reality by putting on the device or using the Windows Key + Y keyboard combination. Keep in mind that apps intended for HoloLens must provide functionality without these devices attached.
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Subscribe for CoreWindow input events
 
 ### Keyboard input
