@@ -1,15 +1,16 @@
 ---
 title: Multimodal interaction overview
-description: Overview of the multimodel interaction
+description: Overview of the multimodal interaction
 author: shengkait
 ms.author: shengkait
 ms.date: 04/11/2019
 ms.topic: article
-keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hololens
 ---
 
 # Introducing instinctual interactions
-The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality platform, from hardware to software. 
+
+The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality (MMR) platform, from hardware to software.
 
 These instinctual interactions utilize all available input technologies, including inside out tracking, hand tracking, eye tracking, and natural language, in seamless multimodal interaction models.  Based on our research, designing and developing multimodally, and not based on single inputs, is critical to creating instinctive experiences. 
 
