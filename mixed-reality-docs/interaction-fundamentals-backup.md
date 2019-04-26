@@ -97,6 +97,7 @@ Just like the Windows PC experience starts with the desktop, Windows Mixed Reali
 Your home is also where you’ll use the Start menu to open and place apps and content. You can fill your home with mixed reality content and multitask by using multiple apps at the same time. The things you place in your home stay there, even if you restart your device.
 
 ## See also
+
 * [Gaze targeting](gaze-targeting.md)
 * [Gestures](gestures.md)
 * [Voice design](voice-design.md)
