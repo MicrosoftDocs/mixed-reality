@@ -5,10 +5,10 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, gaze, gaze targeting, interaction, design
 ---
-# Head-Gaze and commit
-Head-Gaze and commit is an input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input such as the hand gesture Air Tap or the voice command “Select”. It is considered a "far" input model with indirect manipulation, meaning it is best used for interacting with content that is beyond arms reach.
+# Head-gaze and commit
+Head-gaze and commit is an input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input such as the hand gesture Air Tap or the voice command “Select”. It is considered a "far" input model with indirect manipulation, meaning it is best used for interacting with content that is beyond arms reach.
 
 ## Device support
 
@@ -33,11 +33,10 @@ Head-Gaze and commit is an input model that involves targeting an object with th
     </tr>
 </table>
 
-## Head-Gaze
+## Head-gaze
 Mixed reality headsets use the position and orientation of the user's head to determine their head direction vector. You can think of this as a laser that points straight ahead from directly between the user's eyes. This is a fairly coarse approximation of where the user is looking. Your application can intersect this ray with virtual or real-world objects and draw a cursor at that location to let the user know what they are currently targeting.
 
-In addition to head gaze, some mixed reality headsets like the HoloLens 2 include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered separately here:
-https://review.docs.microsoft.com/en-us/windows/mixed-reality/eye-tracking?branch=caseym
+In addition to head gaze, some mixed reality headsets like the HoloLens 2 include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered separately in the [eye tracking article](eye-tracking.md).
 
 ## Commit
 After targeting an object or UI element, the user can interact or "click" on it using a secondary input. This is known as the commit step of the model. The following commit methods are supported:
@@ -48,7 +47,7 @@ After targeting an object or UI element, the user can interact or "click" on it 
 - Press the 'A' button on an Xbox Gamepad
 - Press the 'A' button on an Xbox Adaptive Controller
 
-### Gaze and Air Tap gesture
+### Gaze and air tap gesture
 Air tap is a tapping gesture with the hand held upright. To perform an Air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release. On HoloLens 1, Air tap is the most common secondary input.
 
 ![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
