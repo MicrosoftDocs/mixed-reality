@@ -172,8 +172,6 @@ If your experience does require multiple interaction models, we've found that ma
 > [!Note]
 > To help guide designers and developers through choices that can be difficult in MR, we've also included guidance on using multiple interaction models in the [Transitioning interaction models](coming-soon.md) article below.
  
-## Next section: visual design language
-Click the link below or follow the page navigation to continue to the next section on [Visual design language](coming-soon.md).
 
 ## See also
 * [Gaze and commit](gaze-and-commit.md)
