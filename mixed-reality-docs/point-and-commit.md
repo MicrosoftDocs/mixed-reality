@@ -25,7 +25,7 @@ Point and commit is an input model enables users to target, select and manipulat
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
-        <td>Point and commit (far interaction)</td>
+        <td>Point and commit (far hand interaction)</td>
         <td>❌ Not supported</td>
         <td>✔️ Recommended</td>
         <td>✔️ Recommended</td>
