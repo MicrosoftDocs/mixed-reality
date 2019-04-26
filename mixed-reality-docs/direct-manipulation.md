@@ -88,7 +88,7 @@ For interacting with the slate contact:<br>
 * By grabbing the manipulation affordances, users can perform uniform scaling through the corner affordnaces and reflow via the edge affordances. 
 * Grabbing the holobar at the top of the 2D slate can users move the whole slate.<br><br>
 
-[Image of slate manipulation]
+![Image of slate manipulation](images/Manipulate-2d-slate-720px.jpg)
 
 
 ## 3D object manipulation
