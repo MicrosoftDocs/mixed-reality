@@ -5,19 +5,16 @@ author: rwinj
 ms.author: jennyk
 ms.date: 02/24/2019
 ms.topic: article
-keywords: Mixed Reality, interaction, design
+keywords: Mixed Reality, interaction, design, holo, hololens
 ---
-
-
 
 # Interaction fundamentals
 
-As we've built experiences across HoloLens and immersive headsets, we've started writing down some things we found useful to share. Think of these as the fundamental building blocks for mixed reality interaction design.
+As we've built experiences across HoloLens and immersive headsets, we've started writing about the features, and fundamentals important to your interaction with the device. Think of these as the fundamental building blocks for mixed reality interaction design.
 
 ## Device support
 
 Here's an outline of the available input models and which device type or types they apply to.
-<br>
 
 <table>
 <th>
@@ -46,13 +43,15 @@ Here's an outline of the available input models and which device type or types t
 
 Always think about design for your user's point of view as they move about their real and virtual worlds.
 
-**Some questions to ask**
+### FAQs
+
 * Is the user sitting, reclining, standing, or walking while using your experience?
 * How does your content adjust to different positions?
 * Can the user adjust it?
 * Will the user be comfortable using your app?
 
-**Best practices**
+### Best practices
+
 * The user is the camera and they control the movement. Let them drive.
 * If you need to virtually transport the user, be sensitive to issues around vestibular discomfort.
 * Use shorter animations
@@ -60,14 +59,15 @@ Always think about design for your user's point of view as they move about their
 * Slow down timing
 * Allow user to see the world in the background
 
-**What to avoid**
+### What to avoid
+
 * Don't shake the camera or purposely lock it to 3DOF (only orientation, no translation), it can make users feel uncomfortable.
 * No abrupt movement. If you need to bring content to or from the user, move it slowly and smoothly toward them for maximum comfort. Users will react to large menus coming at them.
 * Don't accelerate or turn the user's camera. Users are sensitive to acceleration (both angular and translational).
 
-## Leverage the user's perspective
+## Leverage user perspective
 
-Users see the world of mixed reality through displays on immersive and holographic devices. On the HoloLens, this display is called the [holographic frame](holographic-frame.md).
+Users see the world of mixed reality through displays on immersive and holographic devices. On the HoloLens 2, this display is called the [holographic frame](holographic-frame.md).
 
 In 2D development, frequently accessed content and settings may be placed in the corners of a screen to make them easily accessible. However, in holographic apps, content in the corners of the user's view may be uncomfortable to access. In this case, the center of the holographic frame is the prime location for content.
 
