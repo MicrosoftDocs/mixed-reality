@@ -70,7 +70,7 @@ In direct manipulation, there are two ways for users to manipulate 3D object, Af
 
 ## Instinctual gestures
 
-Coming soon!
+Coming soon!  
 ![](images/Instinctual-Gestures-Far-720px.jpg)
 
 ## Symmetric design between hands and 6 DoF controller 
