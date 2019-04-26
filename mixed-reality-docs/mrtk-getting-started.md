@@ -21,6 +21,11 @@ The MRTK v2 with Unity is an open source cross-platform development kit for mixe
 
 See the [MRTK documentation portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) to learn more.
 
+## Feature Areas
+| ![](images/MRTK_Icon_InputSystem.png) Input System<br/>&nbsp;  | ![](images/MRTK_Icon_HandTracking.png) Hand Tracking (HoloLens 2) | ![](images/MRTK_Icon_EyeTracking.png) Eye Tracking (HoloLens 2) | ![](images/MRTK_Icon_VoiceCommand.png) Voice Commanding | ![](images/MRTK_Icon_GazeSelect.png) Gaze + Select (HoloLens) | ![](images/MRTK_Icon_Teleportation.png) Teleportation<br/>&nbsp; |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| ![](images/MRTK_Icon_UIControls.png) UI Controls<br/>&nbsp; | ![](images/MRTK_Icon_Solver.png) Solver and Interactions | ![](images/MRTK_Icon_ControllerVisualization.png) Controller Visualization | ![](images/MRTK_Icon_SpatialUnderstanding.png) Spatial Understanding | ![](images/MRTK_Icon_Diagnostics.png) Diagnostic Tool<br/>&nbsp; | ![](images/MRTK_Icon_StandardShader.png) MRTK Standard Shader |
+
 ## Minimum Requirement for MRTK v2
 * Unity 2018.3.x
 * Microsoft Visual Studio 2017 or later
