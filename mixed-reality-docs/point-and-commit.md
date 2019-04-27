@@ -37,13 +37,13 @@ Point and commit has been one of the primary input models on HoloLens 2, utilizi
 ## Hand rays
 On HoloLens 2, we create a hand ray shooting out from the center of a palm. The ray is treated as an extension of the hand. A donut shape cursor is attached at the end of the ray to imply the location where the ray intersects with a hitted object. The object that the cursor lands will receive gestural commands from the hand. 
 
-The very basic gestural command is triggered by using thumb and index finger to perform [air tap](coming-soon.md) gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content. With more [composite gestures](coming-soon.md), users are capable of navigating the web content and manipulating 3D objects in a distance. The visual design of the hand ray should also react to point and commit states: <br>
+The very basic gestural command is triggered by using thumb and index finger to perform air tap gesture. By using hand ray to point and air tap to commit, users can activate a button or a hyperlink on a web content. With more composite gestures, users are capable of navigating the web content and manipulating 3D objects in a distance. The visual design of the hand ray should also react to point and commit states: <br>
 * In the pointing state, the ray is dash lined, and the cursor is a donut shape.
 * in the committing state, the ray turns into a solid line, and the cursor shrinks to a dot.<br><br>
 ![](images/Hand-Rays-720px.jpg)<br>
 
 ## Transition between near and far
-Instead of using specific gestures, such as [pointing with index finger](coming-soon.md) to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more gestural manipulations. Therefore, HoloLens 2 supports exactly the same set of hand gestures for both near and far interaction. No additional learning is needed when users transit from near to far interactions, and vice versa. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br>
+Instead of using specific gestures, such as pointing with index finger to direct the ray, we design the ray coming out from the center of the palm, releasing and reserving the five fingers for more gestural manipulations. Therefore, HoloLens 2 supports exactly the same set of hand gestures for both near and far interaction. No additional learning is needed when users transit from near to far interactions, and vice versa. Users can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based: <br>
 * when an object is within arm reached distance (roughly 50 cm), the rays are turned off automatically encouraging for near interaction. 
 * When the object is farther than 50 cm, the rays are turned on.
 
@@ -56,7 +56,7 @@ A 2D slate is a holographic container hosting 2D app contents, such as web brows
 For interacting with the slate contant:<br>
 
 * Users can point at a hyperlink or a button, then air tap to activate it. 
-* Users can use one hand to perform a [navigation](coming-soon.md) gesture to scroll a slate content up and down. 
+* Users can use one hand to perform a navigation gesture to scroll a slate content up and down. 
 * Users can use two hands to perform navigation gestures to zoom in and out the slate content.<br><br>
 
 ![](images/2D-Slate-Interaction-Far-720px.jpg)<br>
@@ -64,10 +64,10 @@ For interacting with the slate contant:<br>
 For manipulating the 2D slate itself:<br>
 
 * Users point the hand ray at the corners or edges to reveal the closest manipulation affordance. 
-* By applying a [manipulation](coming-soon.md) gesture on the affordance, users can perform uniform scaling through the corner affordance and can reflow the slate via the edge affordance. 
+* By applying a manipulation gesture on the affordance, users can perform uniform scaling through the corner affordance and can reflow the slate via the edge affordance. 
 * By applying a manipulation gesture on the holobar at the top of the 2D slate, users can move the whole slate.<br>
 
-[Image of far manipulating 2D slate] <br>
+<br>
 
 ## 3D object manipulation
 In direct manipulation, there are two ways for users to manipulate 3D object, Affordance Based Manipulation and Non-affordnace Based Manipulation. In point and commit model, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed.<br>
@@ -81,7 +81,7 @@ Users use hand rays to point and reveal the bounding box and manipulation afford
 ### Non-affordance based manipulation
 Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale and rotate it according to relative motions of two hands.<br>
 
-[Image of far manipulating 3D Object] <br>
+<br>
 
 ## Instinctual gesturers
 The concept of instinctual gestures for point and commit is in sync with that for direct manipulation. What gestures users suppose to perform on a 3D object are guided by the design of UI affordances. A small control point would motivate users to pinch with thumb and index finger, while a large object makes users to grab with 5 finger.
