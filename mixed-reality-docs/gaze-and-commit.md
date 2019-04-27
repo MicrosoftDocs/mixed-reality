@@ -43,7 +43,7 @@ After targeting an object or UI element, the user can interact or "click" on it 
 
 - Air Tap gesture
 - Speak the voice command "Select" or one of the targeted voice commands
-- Press the single button on a [HoloLens Clicker]
+- Press the single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker)
 - Press the 'A' button on an Xbox Gamepad
 - Press the 'A' button on an Xbox Adaptive Controller
 
@@ -63,8 +63,8 @@ Voice commanding is one of the primary interaction methods on Mixed Reality. It 
 - Conversation user interfaces or entities like Cortana that have an AI Natural Language capability.
 - Custom commnads
 
-To find more details and a comprenhesive list of available commands and how to implement them visit:
-https://review.docs.microsoft.com/en-us/windows/mixed-reality/voice-design?branch=caseym
+To find more details and a comprenhesive list of available commands and how to use, check out our [voice design](voice-design.md) guidance.
+
 
 ### Gaze and HoloLens Clicker
 The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens 1 Development Edition. The HoloLens Clicker allows a user to click with minimal hand motion and commit as a secondary input. The HoloLens clicker connects to the HoloLens 1 or 2 using Bluetooth Low Energy (BTLE).
@@ -72,9 +72,7 @@ The HoloLens Clicker is the first peripheral device built specifically for HoloL
 ![](images/hololens-clicker-500px.jpg)<br>
 HoloLens Clicker
 
-More information and instructions to pair the device can be found here:
-(hardware-accessories.md#hololens-clicker)
-https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
+More information and instructions to pair the device can be found [here](hardware-accessories.md#pairing-bluetooth-accessories)
 
 
 
@@ -85,13 +83,7 @@ The Xbox Wireless Controller allows to perform a "click" actuation as a secondar
 ![](images/xboxcontroller.jpg)<br>
 Xbox Wireless Controller
 
-More information and instructions to pair the device can be found here:
-https://support.xbox.com/en-US/xbox-one/accessories/customize-standard-controller-with-accessories-app
-
-https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
-https://support.xbox.com/en-US/xbox-on-windows/accessories/connect-xbox-one-controller-to-pc
-
-https://www.windowscentral.com/how-use-xbox-one-controller-windows-mixed-reality
+[Pairing an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
 
 
 ### Gaze and Xbox Adaptive Controller
@@ -107,16 +99,9 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 ![](images/xbox-adaptive-controller-ports.jpg)<br>
 Xbox Adaptive Controller ports
 
-More information and instructions to pair the device can be found here:
+[Instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)
 
-https://review.docs.microsoft.com/en-us/windows/mixed-reality/hardware-accessories?branch=caseym#pairing-bluetooth-accessories
-https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller
-
-https://www.youtube.com/embed/1KqKPORjatsone/controllers/connect-external-devices-to-adaptive-controller
-
-https://support.xbox.com/en-US/xbox-one/controllers/adaptive-controller-faq
-
-https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller
+<a href=https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
 
 # Device support
@@ -125,9 +110,8 @@ Head gaze and commit is available on all mixed reality headsets. Is the primary 
 Eye gaze and commit is available on HoloLens 2, but is not the primary input model. Jump to the "Eye gaze design guidelines" section for a discussion about when this might make sense for your application.
 
 # Head gaze design guidelines
-- Move content from here: https://docs.microsoft.com/en-us/windows/mixed-reality/gaze-targeting
-
-
+> [!NOTE]
+> More guidance specific to gaze design [coming soon](index.md#news-and-notes).
 
 ## Gaze targeting
 All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality. In Windows Mixed Reality, this is generally done using the user's gaze.
@@ -171,10 +155,7 @@ This mechanism can be thought of as a more general version of "Closest link" alg
 When determining which nearby interactive elements to give focus to, provide a bias to the element that is currently focused. This will help reduce erratic focus switching behaviours when floating at a midpoint between two elements with natural noise.
 
 
-# Composite gestures
-- Move from "composite gestures" section here: https://docs.microsoft.com/en-us/windows/mixed-reality/gestures#composite-gestures
-- Note that these are available on HoloLens (1st gen) and HoloLens 2
-
+## Composite gestures
 Apps can recognize more than just individual taps. By combining tap, hold and release with the movement of the hand, more complex composite gestures can be performed. These composite or high-level gestures build on the low-level spatial input data (from Air tap and Bloom) that developers have access to.
 
 ### Air tap
@@ -196,6 +177,8 @@ Navigation with rails refers to the ability of recognizing movements in certain 
 
 Within 2D apps, users can use vertical navigation gestures to scroll, zoom, or drag inside the app. This injects virtual finger touches to the app to simulate touch gestures of the same type. Users can select which of these actions take place by toggling between the tools on the bar above the app, either by selecting the button or saying '<Scroll/Drag/Zoom> Tool'.
 
+[More info on composite gestures](gestures.md#composite-gestures)
+
 ## Gesture recognizers
 
 One benefit of using gesture recognition is that you can configure a gesture recognizer just for the gestures the currently targeted hologram can accept. The platform will do only the disambiguation necessary to distinguish those particular supported gestures. That way, a hologram that just supports air tap can accept any length of time between press and release, while a hologram that supports both tap and hold can promote the tap to a hold after the hold time threshold.
@@ -205,7 +188,6 @@ HoloLens recognizes hand gestures by tracking the position of either or both han
 For each hand that HoloLens detects, you can access its position (without orientation) and its pressed state. As the hand nears the edge of the gesture frame, you're also provided with a direction vector, which you can show to the user so they know how to move their hand to get it back where HoloLens can see it.
 
 ## Gesture frame
-
 For gestures on HoloLens, the hand must be within a “gesture frame”, in a range that the gesture-sensing cameras can see appropriately (very roughly from nose to waist, and between the shoulders). Users need to be trained on this area of recognition both for success of action and for their own comfort (many users will initially assume that the gesture frame must be within their view through HoloLens, and hold their arms up uncomfortably in order to interact). When using the HoloLens Clicker, your hands do not need to be within the gesture frame.
 
 In the case of continuous gestures in particular, there is some risk of users moving their hands outside of the gesture frame while in mid-gesture (while moving some holographic object, for example), and losing their intended outcome.
