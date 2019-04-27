@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
 
 # Getting your existing app ready for HoloLens 2
 
-This guide is specifically tailored to help developers who have an existing Unity app for HoloLens 1 to port their application for the new HoloLens 2 device. There are four key steps to porting a HoloLens 1 Unity app to HoloLens 2. The sections below will detail information for each stage. 
+This guide is specifically tailored to help developers who have an existing Unity app for HoloLens (1st gen) to port their application for the new HoloLens 2 device. There are four key steps to porting a HoloLens (1st gen) Unity app to HoloLens 2. The sections below will detail information for each stage. 
 
 | Step 1 | Step 2 | Step 3 | Step 4 |
 |----------|-------------------|-------------------|-------------------|
@@ -26,11 +26,12 @@ It is **highly recommended** that, before beginning the porting process, develop
 
 ## Migrate project to latest version of Unity
 
-The first step to porting your Unity application will be to open it in the latest version of Unity. Currently, there are two options to choose from: Unity 2018.3.x or Unity 2019.1.x beta. There are multiple trade-offs between these two versions but the primary difference of significance is the ability to compile for ARM64 in Unity 2019+. 
+If using the MRTK v2, then Unity 2018 LTS will be the best long-term support path with no breaking changes in Unity or in MRTK.  The recommended Unity build, per the above "install the tools" is Unity 2018.3, which will become the LTS release for Unity 2018.  Further, the MRTK v2 will always guarantee support for Unity 2018 LTS but not necessarily guarantee support for every iteration of Unity 2019.x. 
 
-Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project and whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, then one will have to utilize Unity 2018 LTS. Porting to ARM64 is generally desired, if possible, as there are many performance improvements seen on device as compared to ARM32.
+To help clarify additional differences between Unity 2018.3.x or Unity 2019.1.x, below outlines the trade-offs between these two versions, with the primary difference of significance being the ability to compile for ARM64 in Unity 2019. 
 
-Further, the Mixed Reality Toolkit V2 will always guarantee support for Unity 2018 LTS but not necessarily guarantee support for every iteration of Unity 2019.x+. 
+Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project and whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, then one will have to utilize Unity 2018 LTS.
+
 
 | Unity 2018.3.x | Unity 2019.1+ |
 |----------|-------------------|
