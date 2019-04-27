@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, design, interaction, voice
 
 # Gaze and voice
 
-Gaze, gesture and voice (GGV) are the primary means of interaction on HoloLens. [Gaze](gaze.md) used with a [cursor](cursors.md) is the mechanism for a user to target the content they are ready to interact with. [Gesture](gestures.md) or [voice](voice-input.md) are the intention mechanisms. Gaze can be used with either gesture or voice to complete an interaction.
+Gaze, gesture and voice (GGV) are the primary means of interaction on HoloLens (1st gen). [Gaze](gaze.md) used with a [cursor](cursors.md) is the mechanism for a user to target the content they are ready to interact with. [Gesture](gestures.md) or [voice](voice-input.md) are the intention mechanisms. Gaze can be used with either gesture or voice to complete an interaction.
 
 On immersive headsets, the primary means of interaction are gaze-and-commit and point-and-commit (with a [motion controller](motion-controllers.md)). If the user has a headset with voice capabilities, voice can be used in combination with gaze or point to complete an action.
 
