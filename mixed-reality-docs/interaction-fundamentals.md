@@ -20,7 +20,6 @@ Lastly, while we recognize that there are thousands of effective, engaging, and 
 * We've included supplemental guidance on other benefits that our platform provides
 * We've included guidance to help select the appropriate interaction model for your scenario
 
-We hope this guidance is helpful and we welcome your feedback on how to improve in the future.  Please contact [LINK] with any thoughts and suggestions. 
 
 ## Three multimodal interaction models
 Based on our research and work with customers to date, we've discovered that three primary interaction models suit the majority of Mixed Reality experiences.
@@ -81,11 +80,7 @@ But first, the sections below walk through the steps of selecting and implementi
 
 ## Choosing an interaction model for your customer
 
-Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have.
-
-> [!Note]
-> For additional guidance on identifying your customer and understanding their needs, please see the [Customer-Focused Creative Process](coming-soon.md) section and then return to this section to continue design.
-
+Most likely, developers and creators already have some ideas in mind of the kinds of interaction experience they want for their users.
 To encourage a customer-focused approach to design, we recommend following the guidance below to select the interaction model that's optimized for your customer.
 
 ### Why follow this guidance?
@@ -161,7 +156,10 @@ A:  If users do not need to control a lot of UI, Gaze and commit offers a learna
 A:  Since Gaze and commit is the interaction model for HoloLens (1st gen), we recommend that creators who support HoloLens (1st gen) use Gaze and commit for any features or modes that users may experience on a HoloLens (1st gen) headset.  Please see the next section below on *Transitioning interaction models* for details on making a great experience for multiple HoloLens generations.
  
 8.	Q: What about for users who are generally mobile (covering a large space or moving between spaces), versus users who tend to work in a single space?  
-A:  Any of the interaction models will work for these users.  Please see the [LINK] App Design Guidance section for more information on our recommended tag-along behaviors for UI that follows users as they move.
+A:  Any of the interaction models will work for these users.  
+
+> [!NOTE]
+> More guidance specific to app design [coming soon](index.md#news-and-notes).
 
 
 ## Transition interaction models
@@ -170,7 +168,7 @@ There are also cases where your use cases may require that utilizing more than o
 If your experience does require multiple interaction models, we've found that many end users may encounter difficulty transitioning from one model to another -- especially end users who are new to MR.
 
 > [!Note]
-> To help guide designers and developers through choices that can be difficult in MR, we've also included guidance on using multiple interaction models in the [Transitioning interaction models](coming-soon.md) article below.
+> To help guide designers and developers through choices that can be difficult in MR, we're working on more guidance for using multiple interaction models.
  
 
 ## See also
