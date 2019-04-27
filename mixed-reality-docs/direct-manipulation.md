@@ -39,17 +39,17 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
 Direct manipulation is a primary input model on HoloLens 2, utilizing the new articulated hand tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended a primary means of interaction outside of object manipulation.  Direct manipluation is not available on HoloLens v1.
 
 ## Collidable fingertip
-On HoloLens 2, user's real hands are recognized and interpreted as left and right [Hand skeletal models](coming-soon.md). To implement the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips cause lots of unexpected and unpredictable collisions with holograms. Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1 finger press, 1 finger tap, 2 finger press and 5 finger press.
+On HoloLens 2, user's real hands are recognized and interpreted as left and right hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips cause lots of unexpected and unpredictable collisions with holograms. Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1 finger press, 1 finger tap, 2 finger press and 5 finger press.
 
 ![Collidable fingertip image](images/Collidable-Fingertip-720px.jpg)<br>
 
 ### Sphere collider
-Instead of using random generic shape, we suggest to use a [Sphere collider](coming-soon.md) and to visually render it to provide better cues for near targeting. The sphere's diameter should match the thickness of the index finger to increase touch accuracy. It will be easy to retrieve the variable of finger thickness by calling the [Hand API](coming-soon.md).
+Instead of using random generic shape, we suggest to use a sphere collider and to visually render it to provide better cues for near targeting. The sphere's diameter should match the thickness of the index finger to increase touch accuracy. It will be easy to retrieve the variable of finger thickness by calling the hand API.
 
-[Image of Sphere collider]<br>
+<br>
 
 ### Fingertip cursor
-In addition to rendering a collidable sphere on the index fingertip, we create an advance solution, [Fingertip cursor](coming-soon.md), to achieve better near targeting experience interactively. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size as below:
+In addition to rendering a collidable sphere on the index fingertip, we create an advance solution, fingertip cursor, to achieve better near targeting experience interactively. It is a donut shape cursor attached on the index fingertip. According to proximity, it dynamically reacts to a target in term of orientation and size as below:
 * When an index finger moves toward a hologram, the cursor is always parallel to the surface of the hologram and gradually shrinks its size accordingly. 
 * As soon as the finger touch the surface, the cursor shrinks into a dot and emits a touch event.
 
@@ -58,7 +58,7 @@ In addition to rendering a collidable sphere on the index fingertip, we create a
 ![Fingertip cursor image](images/Fingertip-Cursor-720px.jpg)<br>
 
 ## Bounding box with proximity shader
-The hologram itself also requires to provide both visual and audio feedbacks to compensate the lack of tactile feedback. For that, we generate the concept of [Bounding box with proximity shader](coming-soon.md). A bounding box is a minimun volumetric area that encloses a 3D object. The bounding box has an interactive rendering mechanism called [Proximity shader](coming-soon.md). The proximity shader behaves as below:
+The hologram itself also requires to provide both visual and audio feedbacks to compensate the lack of tactile feedback. For that, we generate the concept of bounding box with proximity shader. A bounding box is a minimun volumetric area that encloses a 3D object. The bounding box has an interactive rendering mechanism called proximity shader. The proximity shader behaves as below:
 
 * When the index finger is within a range, a fingertip spotlight is cast on the surface of bounding box. 
 * When the fingertip gets closer to the surface, the spotlight condenses accordingly. 
@@ -68,7 +68,7 @@ The hologram itself also requires to provide both visual and audio feedbacks to 
 ![Bounding box with proximity shader image](images/Bounding-Box-With-Proximity-Shader-720px.jpg)<br>
 
 ## Pressable button
-With a collidable fingertip, users are now ready to interact with the very fundamental holographic UI component, [Pressable button](coming-soon.md). A pressable button is a holographic button tailored for direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback related issues. 
+With a collidable fingertip, users are now ready to interact with the very fundamental holographic UI component, pressable button. A pressable button is a holographic button tailored for direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback related issues. 
 * The first mechanism is bounding box with proximity shader, which has already been addressed in the foregoing paragraph. It serves to provide better sense of proximity for users to approach and make contact with a button. 
 * The second one is depression. It creates sense of press, after a fingertip contacts the button. The mechanism is that the button tightly moves with the fingertip along the depth axis. The button can be triggered as soon as reaching a designated depth (on press) or leaving the depth (on release) after passing through it. 
 * The sound effect should be added to enhance feedback, when the button is triggered. 
@@ -100,7 +100,8 @@ It is a way for users to manipulate the 3D object through bounding box and the m
 
 ### Non-affordance based manipulation:
 In this mechanisom, no affordance is attached to the bounding box. Users can only reveal the bounding box, then directly interact with it. If the bounding box is grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is grabbed with two hands, users can translate, scale and rotate it according to relative motions of two hands.<br><br> 
-[Image of Non-affordance Based Manipulation]<br><br>
+
+<br><br>
 For manipulation requires precision, we recommend afforance based manipulation, providing high level of granularity. For flexible manipulation, non-affordance manipulation will be a good choice, offering users instant and playful experiences.
 
 
