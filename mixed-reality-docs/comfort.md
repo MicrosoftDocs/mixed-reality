@@ -69,11 +69,9 @@ For HoloLens (1st gen), IPD is estimated and set during device [calibration](cal
 
 Windows Mixed Reality immersive HMDs have no automatic calibration for IPD or VO. IPD can be set manually in software (under Mixed Reality Portal settings, see [calibration](calibration.md)), or some HMDs have a mechanical slider that allows the user to adjust the spacing of the lenses to a comfortable position (i.e., that roughly matches their IPD). 
 
-
-
 ## Rendering rates
 
-Mixed reality apps are unique because users can move freely in the world and interact with virtual content like as though they were real objects. To maintain this impression, it is critical to render holograms so they appear stable in the world and animate smoothly. Rendering at a [minimum of 60 frames per second (FPS)](performance-recommendations-for-hololens-apps.md) helps achieve this goal. There are some Mixed Reality devices that support rendering at framerates higher than 60 FPS and for these devices it is strongly recommended to render at the higher framerates to provide an optimal user experience.
+Mixed reality apps are unique because users can move freely in the world and interact with virtual content like as though they were real objects. To maintain this impression, it is critical to render holograms so they appear stable in the world and animate smoothly. Rendering at a [minimum of 60 frames per second (FPS)](understanding-performance-for-mixed-reality.md) helps achieve this goal. There are some Mixed Reality devices that support rendering at framerates higher than 60 FPS and for these devices it is strongly recommended to render at the higher framerates to provide an optimal user experience.
 
 **Diving deeper**
 

@@ -157,11 +157,11 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## Sharing anchors across devices
 
-You can use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
+You can use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
 
-To get started building shared experiences in Unity, try out the 5-minute [Azure Spatial Anchors Unity quickstarts](https://docs.microsoft.com/azure/spatial-anchors/unity-overview).
+To get started building shared experiences in Unity, try out the 5-minute <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity quickstarts</a>.
 
-Once you're up and running with Azure Spatial Anchors, you can then [create and locate anchors in Unity](https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity).
+Once you're up and running with Azure Spatial Anchors, you can then <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.
 
 ## See Also
 * [Experience scales](coordinate-systems.md#mixed-reality-experience-scales)
@@ -170,5 +170,5 @@ Once you're up and running with Azure Spatial Anchors, you can then [create and 
 * [Spatial anchors](spatial-anchors.md)
 * [Persistence in Unity](persistence-in-unity.md)
 * [Shared experiences in Unity](shared-experiences-in-unity.md)
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-* [Azure Spatial Anchors SDK for Unity](https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors)
+* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>

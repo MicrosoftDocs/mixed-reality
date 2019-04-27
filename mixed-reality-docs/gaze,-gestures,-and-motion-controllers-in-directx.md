@@ -14,6 +14,9 @@ keywords: gaze, gestures, motion controllers, directx, input, holograms
 
 If you're going to build directly on top of the platform, you will have to handle input coming from the user - such as where the user is looking via [head gaze](gaze.md) and what the user has selected with [gestures](gestures.md) or [motion controllers](motion-controllers.md). Combining these forms of input, you can enable a user to place a [hologram](hologram.md) in your app. The [holographic app template](creating-a-holographic-directx-project.md) has an easy to use example.
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Gaze input
 
 To access the user's [head gaze](gaze.md), you use the [SpatialPointerPose](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialpointerpose.aspx) type. The holographic app template includes basic code for understanding gaze. This code provides a vector pointing forward from between the user's eyes, taking into account the device's position and orientation in a given [coordinate system](coordinate-systems-in-directx.md).

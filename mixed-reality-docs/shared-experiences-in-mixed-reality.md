@@ -125,17 +125,17 @@ Depending on your application and scenario, there will be various requirements t
 
 
 The key to shared experiences is multiple users seeing the same holograms in the world on their own device, frequently done by sharing anchors to align coordinates across devices.
-To share anchors, use the [Azure Spatial Anchors service](https://docs.microsoft.com/azure/spatial-anchors):
+To share anchors, use the <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>:
 * First the user places the hologram.
 * App creates a [spatial anchor](coordinate-systems.md) to pin that hologram precisely in the world.
-* The anchors can be shared to HoloLens, iOS and Android devices via the [Azure Spatial Anchors service](https://docs.microsoft.com/azure/spatial-anchors). 
+* The anchors can be shared to HoloLens, iOS and Android devices via the <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>. 
 
 With a shared spatial anchor, the app on each device now has a common coordinate system in which they can place content. Now the app can ensure to position and orient the hologram at the same location.
 On HoloLens devices, you can also share anchors offline from one device to another.  Use the links below to decide what's best for your application.
 
 
 ## See also
-* [Azure Spatial Anchors service](https://docs.microsoft.com/azure/spatial-anchors)
+* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
 * [Shared experiences in Unity](shared-experiences-in-unity.md)
 * [Spectator view](spectator-view.md)

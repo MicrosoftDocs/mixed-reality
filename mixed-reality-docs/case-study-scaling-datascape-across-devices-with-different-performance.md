@@ -313,6 +313,7 @@ Design for worst case scenarios, and maybe consider using adaptive rendering for
 
 
 ## See also
-* [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
 
  

@@ -76,7 +76,6 @@ The Windows 10 October 2018 Update is publicly available for all HoloLens custom
 * **Enable post-setup provisioning** - You can now apply a runtime provisioning package at any time using Settings.
 * **Assigned access with Azure AD groups** - You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration.
 * **PIN sign-in on profile switch from sign-in screen** - PIN sign-in is now available for "Other User" at the sign-in screen. 
-* **Sign in with Web Credential Provider using password** - You can now select the Globe icon to launch web sign-in with your password. 
 * **Read device hardware info through MDM** - IT administrators can see and track HoloLens by device serial number in their MDM console.
 * **Set HoloLens device name through MDM (rename)** - IT administrators can see and rename HoloLens devices in their MDM console.
 
