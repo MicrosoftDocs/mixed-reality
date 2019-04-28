@@ -55,11 +55,11 @@ By default, you will see 2 checkboxes, one is the “is focus required” checkb
 
 ![Lesson5 Chapter1 Step5im](images/Lesson5_chapter1_step5im.PNG)
 
-6. Next to “Keyword” you will see a dropdown menu. Select “Toggle Diagnostics.” This will make it so that whenever the user says the phrase, “toggle diagnostics” it will trigger an action. TODO: add note that you may need to expand "element 0" by pressing the arrow next to it.
+6. Next to “Keyword” you will see a dropdown menu. Select “Toggle Diagnostics.” This will make it so that whenever the user says the phrase, “toggle diagnostics” it will trigger an action. Note that you may need to expand "element 0" by pressing the arrow next to it.
 
 ![Lesson5 Chapter1 Step6im](images/Lesson5_chapter1_step6im.PNG)
 
-7. Add the “diagnostics demo control script” to toggle the framerate counter diagnostic on and off. To do this, press the “add component” button and search for “diagnostics demo control script” then add it from the menu. This script can be added to any object, but for simplicity, we will add it to the same object as the speech input handler. TODO: split screenshot into two screenshots, one for step 7 and another for step 8.
+7. Add the “diagnostics demo control script” to toggle the framerate counter diagnostic on and off. To do this, press the “add component” button and search for “diagnostics demo control script” then add it from the menu. This script can be added to any object, but for simplicity, we will add it to the same object as the speech input handler. 
 
    > Note: this script is only included with these modules and is not included with the original MRTK.
 
@@ -67,21 +67,20 @@ By default, you will see 2 checkboxes, one is the “is focus required” checkb
 
 8. Add a new response in the Speech Input Handler. To do this click the “+” button underneath where it says “response ()” (marked by green arrow in the picture above).
 
-
+![Lesson5 Chapter1 Step7im](images/Lesson5_chapter1_step8.PNG)
 
 9. Drag the object that has the Diagnostics Demo Controls script to the new response you just created in step 8.
     ![Lesson5 Chapter1 Step9im](images/Lesson5_chapter1_step9im.PNG)
 
-10. Now select the “no function” dropdown list, select diagnostic demo controls, then “on toggle diagnostics ().” This function toggles your diagnostics on and off. TODO: this number 10 appears as the letter j on docs website - see what might be happening. May have just fixed it by indenting.
-     ![Lesson5 Chapter1 Step10im](images/Lesson5_chapter1_step10im.PNG)
-
-    > Note that before building to your device you need to enable mic settings. To do that click on file, go to build settings, from there, player settings, and ensure the microphone capability is set.
+10. Now select the “no function” dropdown list, select diagnostic demo controls, then “on toggle diagnostics ().” This function toggles your diagnostics on and off.  ![Lesson5 Chapter1 Step10im](images/Lesson5_chapter1_step10im.PNG)
+    
+> Note that before building to your device you need to enable mic settings. To do that click on file, go to build settings, from there, player settings, and ensure the microphone capability is set.
 
 Next, we are adding the ability to play an audio file from voice command using the "octa" object. Recall from [lesson 4](mrlearning-base-ch4.md), we added the ability to play an audio clip from touching the octa object. We will leverage this same audio source for our music voice command.
 
 11. Select the octa object in the base scene hierarchy.
 
-12. Repeat steps 4 and 5, but with the octa object. TODO: expand on what needs to be done, but then refer back to steps 4 and 5, so that users have an idea of what to do.
+12. Add another speech input handler (repeat steps 4 and 5), but with the octa object. 
 
 13. Instead of adding the “Toggle Diagnostics” voice command from step 6, add the “play music” voice command, as shown in the image below.
     
@@ -135,8 +134,6 @@ To use the pan gesture, you will need a collider on your object. You may see the
 
 ![Lesson5 Chapter2 Step8im](images/Lesson5_chapter2_step8im.PNG)
 
-TODO: make sure checkmarks are in the two boxes above.
-
 9. In the hand interaction pan script, the “lock horizontal” and “lock vertical” checkboxes will lock the movements, respectively. The wrap texture settings will make the texture (texture mapping) follow the user's pan movements. For this example, we are going to check that box. There is also “velocity active” which, if unchecked, the pan gesture will not work. Check this box as well. Now you should have a pan-enabled quad.
 
    
@@ -169,14 +166,19 @@ TODO: make sure checkmarks are in the two boxes above.
 
 In this chapter, we will explore how to enable eye tracking in our demo. We will slowly spin our 3D menu items when they are being gazed upon with eye gaze. We will also trigger a fun effect when the gazed-upon item is selected.
 
-1. Ensure the Mixed Reality Toolkit profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the “Setting up the MRTK profiles required for Eye Tracking” section as outlined in the Mixed Reality Toolkit Documentation (https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (component attached to camera) and enabling simulation of eye tracking in the Unity editor. Note that future version of the MRTK may include eye tracking by default.
+1. Ensure the Mixed Reality Toolkit profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the “Setting up the MRTK profiles required for Eye Tracking” section as outlined in the [Mixed Reality Toolkit Documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (component attached to camera) and enabling simulation of eye tracking in the Unity editor. Note that future version of the MRTK may include eye tracking by default.
 
-    Todo: provide the user with some brief instructions for eye tracking so they don't have to go to the MRTK link.
+    The link above provides brief instructions for:
 
-2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we will need to add the EyeTrackingTarget component on each object that we wish to interact with using eye gaze. Tip: select multiple items in the hierarchy to bulk-add the EyeTrackingTarget component.
+    - Creating the Eye Gaze Data Provider for use in the MRTK Profile
+    - Enabling eye tracking in the Gaze Provider
+    - Set up for simulating eye tracking in the editor
+    - Editing the Visual Studio solution's capabilities to allow eye tracking in the built application
+
+2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we will need to add the EyeTrackingTarget component on each object that we wish to interact with using eye gaze. Add this component to each of the nine 3D objects that are part of the grid collection. Tip: select multiple items in the hierarchy to bulk-add the EyeTrackingTarget component.
     ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
 
-3. Next we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series’ repository and is not included by default with the Mixed Reality Toolkit. For... TODO: rename 3D menu item.... each 3D menu item, add the EyeTrackingTutorialDemo script by searching for the component in the “Add Component” menu. TODO: make sure it's the same objects as specified in #2. 
+3. Next we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series’ repository and is not included by default with the Mixed Reality Toolkit. For each 3D object in the grid collection, add the EyeTrackingTutorialDemo script by searching for the component in the “Add Component” menu.
    ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
 
    4. Spin the object while looking at the target. We would like to configure our 3D object to spin while we are looking at it. To do this, insert a new field in the “While Looking At Target” section of the EyeTrackingTarget component, as shown in the image below. 

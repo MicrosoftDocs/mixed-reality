@@ -65,7 +65,7 @@ In this section, we will configure the cube game object previously created to fo
 
 ![Lesson3 Chapter3 Step4im](images/Lesson3_chapter3_step4im.PNG)
 
-5. Set the maximum and minimum distances to 0 so that the cube will not have any distance between it and the user’s wrist. Once set, the cube will be perfectly aligned with the wrist. You may also adjust the "Reference Direction" field to adjust the behavior of how the cube is oriented (e.g., if you would like to allow the object to rotate with the user's wrist.) TODO: rephrase to show  how to follow wrist specifically.
+5. Set the maximum and minimum distances to 0 so that the cube will not have any distance between it and the user’s wrist. Once set, the cube will be perfectly aligned with the wrist. You may also adjust the "Reference Direction" field to adjust the behavior of how the cube is oriented (e.g., if you would like to allow the object to rotate with the user's wrist, set the reference direction to "Orient with Tracked Object")
 
 ![Lesson3 Chapter3 Step5im](images/Lesson3_chapter3_step5im.PNG)
 
