@@ -188,7 +188,7 @@
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## [Tutorials and sample apps](tutorials.md)
 ### Unity
-#### MR Learning Modules
+#### [MR Learning Modules](mr-learning-overview.md)
 ##### HoloLens 2
 ###### [Base Module - Overview & Objectives](mrlearning-base.md)
 ####### [Project initialization and first application](mrlearning-base-ch1.md)
