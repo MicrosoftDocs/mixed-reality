@@ -28,29 +28,28 @@ In this lesson, we will go through basic 3D content and user experience. We will
 
 ![Lesson4 Chapter1 Step1im](images/Lesson4_Chapter1_step1im.PNG)
 
-2. Import BaseModule Assets Using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that will be used throughout this tutorial. The BaseModule unity package can be found here: 
+2. Import BaseModule Assets Using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that will be used throughout this tutorial. The BaseModule unity package can be found here: <https://github.com/Microsoft/MixedRealityLearning/releases/tag/V1.1>
 
 3. The coffee cup prefab can be recognized by a blue cube next to it. Do not select the coffee cup with the blue cube and small white paper (that denotes the original 3D model and not the prefab.) 
 
 ![Lesson4 Chapter1 Noteaim](images/Lesson4_chapter1_noteaim.PNG)
-
->Note: The coffee cup prefab can be recognized by an icon of a blue cube next to it. Do not select the coffee cup with the icon of a blue cube and small white paper (that denotes the original 3D model and not the prefab.) 
 
 4. Drag the coffee cup prefab of your choice into the "3DObjectCollection" game object from step 1. The coffee cup is now a child of the collection.
 
 ![Lesson4 Chapter1 Step4ima](images/Lesson4_chapter1_step4ima.PNG)
 
 5. Next, we'll add more 3D objects into our scene. Below is a list of objects we are going to add in this example. As you add the objects you may find that they appear in your scene in various sizes. Adjust the scale of each 3D model under the transform setting in the inspector panel. Recommended adjustments for this example are listed with the objects below. 
-Search these words in the search box in your project panel and drag the 3D object prefab into the "3DObjectCollection" object similar to the previous step:
-- Search for “module.” Add TheModule. Set the scale to x= = 0.03, y = 0.03, z = 0.03. 
-- Search for “Octa.” Add Octa. Set the scale to x = 0.13. y = 0.13, z =0.13.
-- Search for “earth.” Add EarthCore. Set the scale to x = 50.0 y = 50.0, z = 50.0.
-- Search for “Cheese.” Add Cheese. Set the scale to x = 0.05, y = 0.05, z = 0.05.
-- Search for “platonic.” Add Model_Platonic. Set the scale to x = 0.13, y = 0.13, z = 0.13.
+Search these words in the search box in your project panel and drag the 3D object prefab into the "3DObjectCollection" object similar to the previous step. You will find these collection of prefabs in Assets>BaseModuleAssets>Base Module Prefabs
+- Search for “TheModule_BaseModuleIncomplete.” Drag into scene. Set the scale to x = 0.03, y = 0.03, z = 0.03. 
+- Search for “Octa_BaseModuleIncomplete.” Drag into scene. Set the scale to x = 0.13. y = 0.13, z =0.13.
+- Search for “EarthCore_BaseModuleIncomplete.” Drag into scene. Set the scale to x = 50.0 y = 50.0, z = 50.0.
+- Search for “Cheese_BaseModuleIncomplete.” Drag into scene. Set the scale to x = 0.05, y = 0.05, z = 0.05.
+- Search for “Model_Platonic_BaseModuleIncomplete.” Drag into scene. Set the scale to x = 0.13, y = 0.13, z = 0.13.
+- Search for "CoffeeCup_BaseModuleIncomplete." Drag into scene.
 
 ![Lesson4 Chapter1 Step5im](images/Lesson4_Chapter1_step5im.PNG)
 
-6. Add 3 cubes into your scene. Right click the “3DObjectCollection” object, select “3D Object”, then select “Cube.” Set the scale to x = 0.14, y = 0.14, and z = 0.14. Repeat this step 2 additional times to create a total of 3 cubes. Alternatively, you may duplicate the cube twice for a total of 3 cubes. 
+6. Add 3 cubes into your scene. Right click the “3DObjectCollection” object, select “3D Object”, then select “Cube.” Set the scale to x = 0.14, y = 0.14, and z = 0.14. Repeat this step 2 additional times to create a total of 3 cubes. Alternatively, you may duplicate the cube twice for a total of 3 cubes. You may also choose to use the three prepared cube prefabs from Assets>BaseModuleAssets>Base Module Prefabs and select GreenCube_BaseModuleIncomplete, BlueCube_BaseModuleIncomplete and OrangeCube_BaseModuleIncomplete.
 
 ![Lesson4 Chapter1 Step6im](images/Lesson4_Chapter1_step6im.PNG)
 
@@ -62,7 +61,7 @@ Search these words in the search box in your project panel and drag the 3D objec
 
 
 ### Manipulating 3D Objects
-1. Add the ability to manipulate to a cube. To add the ability to manipulate 3D objects you must do the following:
+1. Add the ability to manipulate a cube. To add the ability to manipulate 3D objects you must do the following:
 -	Select the 3D object you want to manipulate in your hierarchy (in this example, one of your cubes).
 -	Click “add component.” 
 -	Search for “manipulation.”
@@ -74,8 +73,6 @@ Search these words in the search box in your project panel and drag the 3D objec
 
 >The manipulation handler is a component that will allow you to adjust settings for how objects behave when being manipulated. This includes rotation, scaling, moving, and constraining movement on certain axes. 
 
-
-
 2. Restrict one cube so that it can only be scaled. Select one cube in the “3DObjectCollection” object. In the inspector panel, next to “two handed manipulation type,” click the drop-down menu and select “scale.” This makes it so that the user can only change the cube’s size.
 
 ![Lesson4 Chapter2 Step2im](images/Lesson4_Chapter2_step2im.PNG)
@@ -86,7 +83,7 @@ Search these words in the search box in your project panel and drag the 3D objec
 -	Click on the “materials” folder.
 -	Drag a different material onto each of your cubes. 
 
->Note: You can choose any color for your cubes. For our example, we are going to use “glowingcyan,” “glowingorange”, and "green." Feel free to experiment with different colors. To add the color to the cube, click the cube you want to change the color of, then drag the material to the inspector panel. 
+>Note: You can choose any color for your cubes. For our example, we are going to use “glowingcyan,” “glowingorange”, and "green." Feel free to experiment with different colors. To add the color to the cube, click the cube you want to change the color of, then drag the material to the mesh renderer's material field in the cube's inspector panel. 
 
 ![Lesson4 Chapter2 Step3im](images/Lesson4_Chapter2_step3im.PNG)
 
@@ -102,13 +99,13 @@ Goal of the next few steps: We will enable grab and interaction with our 3D obje
 
 ![Lesson4 Chapter2 Step6im](images/Lesson4_Chapter2_step6im.PNG)
 
-7. Add “Near Interaction Grabbable” to the Octa object and the Platonic object  by repeating step 5 and 6 on those objects.
+7. Add “Near Interaction Grabbable” to the Octa object, Platonic object, earth core, lunar module, and coffee cup  by repeating step 5 and 6 on those objects.
 
 8. Remove the ability of far manipulation from the Octa object. To do this, select the Octa in the hierarchy, and uncheck the “allow far manipulation” checkbox (marked by a green circle). This makes it so that users can only interact with the octa directly using tracked hands.
 
 >Note: For the full documentation of the manipulation handler component and it's associated settings, please refer to the [MRTK Documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html).
 
-9. Add the near interaction grabbable component to the earth core, the lunar module and the coffee cup by repeating step 5 and 6 on those objects.
+9. Ensure that the "Near Interaction Grabbable" component has been added to the earth core, the lunar module and the coffee cup (see step 7).
 
 10. For the lunar module, change the Manipulation Handler settings so that it rotates about the object's center for both near and far interaction, as shown in the image below.
 
@@ -122,9 +119,10 @@ Goal of the next few steps: We will enable grab and interaction with our 3D obje
 
 ### Adding Bounding Boxes
 Bounding boxes make it easier and more intuitive to manipulate objects with one hand for both direct manipulation (near interaction) and ray-based manipulation (far interaction.) Bounding boxes offer "handles" that can be grabbed for scaling and rotating objects along specific axes.
->Note: Before you can add a bounding box to an object you first need to have a collider on the object (e.g., a box collider.)
+>Note: Before you can add a bounding box to an object you first need to have a collider on the object (e.g., a box collider.) As we did previously in this lesson. Colliders can be added by selecting the object, and in the object's inspector panel selecting Add Component>Box Collider.
+>
 
-1. Add a box collider to the earth core object, if one does not already exist. In the case of the earth core, we will need to add the box collider to the "node_id30" object underneath the earth core, as shown in the image below. select node_id30 and in the object's inspector tab, click “add component” and search for “box collider.” 
+1. Add a box collider to the earth core object, if one does not already exist (box collider and setup not required if using the prefab provided in the Base Module Assets folder, per the instructions given.) In the case of the earth core, we will need to add the box collider to the "node_id30" object underneath the earth core, as shown in the image below. select node_id30 and in the object's inspector tab, click “add component” and search for “box collider.” 
 
 ![Lesson4 Chapter3 Step1im](images/Lesson4_Chapter3_step1im.PNG)
 
@@ -158,18 +156,18 @@ Bounding boxes make it easier and more intuitive to manipulate objects with one 
 
 ![Lesson4 Chapter3 Step8im](images/Lesson4_Chapter3_step8im.PNG)
 
-9. To return to the default bounding box visualization, in the inspector panel of the bounding box's object, select the rotation handle prefab and press the delete key, you will now see a bounding box visualization similar to the image below.
+9. To return to the default bounding box visualization, in the inspector panel of the bounding box's object, select the rotation handle prefab and press the delete key, you will now see a bounding box visualization similar to the image below. Note: the bounding box visualizations only appears when in play mode.
 
 ![Lesson4 Chapter3 Step9im](images/Lesson4_chapter3_step9im.PNG)
 
 ### Adding Touch Effects
 In this example, we are going to play a sound effect when you touch an object with your hand.
 
-1. Add an audio source component to your game object. Select the "octa" object in your scene hierarchy. In the inspector panel, click the "add component" button, search for and audio source. We’ll use this audio source to play a sound effect in a later step. 
+1. Add an audio source component to your game object. Select the "octa" object in your scene hierarchy. In the inspector panel, click the "add component" button, search for and select "audio source." We’ll use this audio source to play a sound effect in a later step. 
 
 >Note: Ensure that the "Octa" object has a box collider on it.
 
-2. Add the “near interaction touchable” component. Click the "Add Component" button in the inspector panel and search for “near interaction touchable.” Select it to add the component.
+2. Add the “near interaction touchable” component. Click the "Add Component" button in the inspector panel and search for “near interaction touchable.” Select it to add the component. NOTE: fix screenshot to highlight that we're adding the component, and not just highlighting box collider.
 
 >Note: Previously we added the “near interaction grabbable.” The difference between this and “near interaction touchable” is that the "grabbable" interaction is intended for an object to be grabbed and interacted with. The "touchable" component is intended for the object to be touched. Both components can be used together for a combination of interactions.
 
@@ -186,7 +184,7 @@ In this example, we are going to play a sound effect when you touch an object wi
 
 4. Click the “+” button on the “on touch started” option, as shown in the image below. Drag the octa object into the empty field. 
 
-5. Select "AudioSource.PlayOneShot" from the dropdown list (the dropdown list above the green box in the image below.) We will add an audio clip to this field using the concepts below:
+5. In the drop-down that says "no function" (above green rectangle in the image below), select AudioSource> PlayOneShot. We will add an audio clip to this field using the concepts below:
 
    - The MRTK does provide a small list of audio clips. Feel free to explore these in your project panel. You will find them under the “MixedRealityToolkit.SDK” folder and then the “standard assets” folder. There you will see an “audio” folder where all the audio clips are.
    - For this example, we are going to use the "MRTK_Gem" audio clip. 
@@ -198,3 +196,6 @@ In this example, we are going to play a sound effect when you touch an object wi
 
 ### Congratulations 
 In this lesson, you learned how to organize 3D objects in a grid collection and how to manipulate 3D objects  (scaling, rotating, and moving) using near interaction (directly grabbing with tracked hands) and far interaction (using gaze rays or hand rays.) You also learned how to put bounding boxes around 3D objects and learned how to use and customize the gizmos on the bounding boxes. Finally, you learned how to trigger events when touching an object.
+
+[Next Lesson: Advanced Input](mrlearning-base-ch5.md)
+

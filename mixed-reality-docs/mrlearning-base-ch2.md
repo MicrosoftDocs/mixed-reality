@@ -27,16 +27,19 @@ In this section we will learn how to customize and configure the default Mixed R
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.PNG)
 
->Note:
->By default, the MRTK profiles are not editable. These are default profile templates from which you can copy and customize. There are several layers of customization and profiles, so it is standard practice to copy and customize several profiles when configuring one or more settings.
+>Note: By default, the MRTK profiles are not editable. These are default profile templates from which you can copy and customize. There are several layers of customization and profiles, so it is standard practice to copy and customize several profiles when configuring one or more settings.
+>
+>To discover more about MRTK profiles and their architecture, please visit the [MRTK documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/SpatialAwareness/SpatialAwarenessSystemArchitecture.html>).
 
 2. Create a copy of the default profile to customize it. To copy a default profile, click the “Copy & Customize” button (see image). This creates a copy of the MRTK profile. With your own copy of the MRTK profile, you now have the ability customize any settings in this profile. You will also need to repeat the copy/customize step for any additional profiles nested under this profile, as described in the subsequent steps.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step2im.PNG)
 
-3. Disable the visibility of the spatial awareness mesh. To do this, find “Additional Service Providers” as shown in the image. When you open the “default mixed reality registered serviced providers profile” (marked by red arrow) it will appear greyed (not editable.) Click the button to the right of the profile (marked by green arrow) to replace the default profile with a customizable copy.
+3. Disable the visibility of the spatial awareness mesh. To do this, find “Spatial Awareness System Settings” as shown in the image. Click the "clone" button to the right of the the “Spatial Awareness System Profile” to replace the default profile with a customizable copy. If a pop-up window appears, feel free to press the "Clone" button, as shown in the second image below.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step3im.PNG)
+
+![MR213_BuildSettings](images/mrlearning-base-ch2-1step3bim.jpg)
 
 4. Create a custom copy of the Default Mixed Reality Spatial Mesh Observer. Click the down arrow next to “Windows Mixed Reality Spatial Mesh Observer” to see additional options. In these options, you will see the “Default Mixed Reality Spatial Mesh Observer” which appears greyed (not editable.) We must replace this default profile with a customizable copy of it so we can edit it. Click the button to the right (marked by green arrow) to create a copy.
 
@@ -55,17 +58,17 @@ In this section, we will learn how to use hand tracking to press an interactable
 
 1. Select “Assets” from the projects folder.
 
-2. Type in the search bar, “holographicbutton.”
+2. Type in the search bar, “pressablebutton.”
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step1im.PNG)
 
-3. Drag the prefab (represented by a blue box) named "HolographicButton" into your hierarchy.
+3. Drag the prefab (represented by a blue box) named "PressableButton" into your hierarchy. 
+
+   > Note: If you get a message about “importing TMP Essentials” please import it at this time. If TMP Essentials was not already part of your project, you may need to repeat this step after importing TMP Essentials, otherwise button text may not appear.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step3im.PNG)
 
->Note: If you get a message about “importing TMP Essentials” please import it at this time. If TMP Essentials was not already part of your project, you may need to repeat this step after importing TMP Essentials, otherwise button text may not appear.
-
-4. Double click the “HolographicButton” game object (which should now be in your BaseScene hierarchy) to view it in your scene, as shown in the image below. 
+4. Double click the “PressableButton” game object (which should now be in your BaseScene hierarchy) to view it in your scene, as shown in the image below (your button graphics may appear different than the image below). 
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step4im.PNG)
 
@@ -73,23 +76,25 @@ In this section, we will learn how to use hand tracking to press an interactable
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step5im.PNG)
 
-> Note: These instructions are based on an earlier version of the MRTK and will be updated to reflect new button/event systems in the current version of the MRTK.
+6. Add a cube to the scene. Right click on the hierarchy area, select 3D object, then click on “cube.” Now, a cube should be in your display. It will appear very large, so adjust the coordinates (while “cube” is still selected in the hierarchy area) to decrease the size. In this case, we are using the scale x = 0.1, y = 0.1 and z = 0.1. Be sure to position the cube in your scene to place it near the pressable button, but not overlapping with the button. In the image below, the cube’s position is x = 0, y = 0.2, and z = 1. 
 
-6. Add a cube to the scene. Right click on the hierarchy area, select 3D object, then click on “cube.” Now, a cube should be in your display. It will appear very large, so adjust the coordinates (while “cube” is still selected in the hierarchy area) to decrease the size. In this case, we are using the dimensions x = 0.1, y = 0.1 and z = 0.1. Be sure to position the cube in your scene to place it near the pressable button, but not overlapping with the button. In the image below, the cube’s position is x = 0, y = 0.2, and z = 0. 
-
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step6ima.PNG)
+   > Note: In general, 1 unit in Unity is roughly equivalent to 1 meter in the physical world. There are exceptions to this, for example when objects are children of scaled objects.
+   
+   ![MR213_BuildSettings](images/mrlearning-base-ch2-1step6ima.PNG)
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step6imb.PNG)
 
-7. In this step we will set up the cube to change color when our button is pressed. Select the holographic button in the “BaseScene” menu. Select the holographic button in the “BaseScene” menu. In the inspector panel, under the “Select Event Type” box, click the “+” button. Drag the “cube” from the “BaseScene” menu into the “Runtime Only” box, as shown in the image below
- 
+7. In this step we will set up the cube to change color when our button is pressed. Select the holographic button in the “BaseScene” menu. In the inspector panel, under the “Select Event Type” box, click the “+” button. Drag the “cube” from the “BaseScene” menu into the “Runtime Only” box, as shown in the image below
+
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step7ima.PNG)
 
 Click the dropdown list that says “No Function.” Select “MeshRenderer” then select “Material material.” This will allow us to change the material when the button is pressed. 
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imb.PNG)
 
-Go to the project panel and search for the material you wish to change it to. We are going to use the material “MRTK_Standard_Cyan” for this example, found by typing in “cyan” in the project tab’s search bar (The MRTK includes many materials and colors to choose from.) Drag the material to the box underneath “MeshRenderer.material.”
+Go to the project panel and search for the material you wish to change it to. We are going to use the material “MRTK_Standard_Cyan” for this example, found by typing in “cyan” in the project tab’s search bar (The MRTK includes many materials and colors to choose from.) Drag the material to the box underneath “MeshRenderer.material.” The MRTK materials can be found in Assets>MixedRealityToolkit.SDK>StandardAssets>Materials.
+
+![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imbb.PNG)
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step7imc.PNG)
 
@@ -101,7 +106,7 @@ The event is now set so that when the button is pressed, the cube will change co
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step8im.PNG)
 
-Now when the button is pressed, it should change to a new color (e.g., cyan) and when the button is released it should change back to the default color you specified (e.g., light gray.) Press the “play” button on the top of the screen to try it out in the editor or deploy to your HoloLens 2 to test!
+Now when the button is pressed, it should change to a new color (e.g., cyan) and when the button is released it should change back to the default color you specified (e.g., light gray.) Press the “play” button on the top of the screen to try it out in the editor or deploy to your HoloLens 2 to test! To learn more about in-editor simulation, including hand simulation read the [MRTK's simulation documentation page](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html>). 
 
 ### Creating a panel of buttons using MRTK’s Grid Object Collection
 
@@ -120,17 +125,18 @@ Repeat this until you have 5 total buttons (see 5 red arrows in image below).
 
 ![Mrlearning Base Ch2 3Step2im](images/mrlearning-base-ch2-3step2im.PNG)
 
-3. Move all the buttons into the new collection. Do this by selecting all five of the button objects in your heirarch and drag them all under “ButtonCollection” game object, as shown in the image below.
+3. Move all the buttons into the new collection. Do this by selecting all five of the button objects in your heirarch and drag them all under “ButtonCollection” game object, as shown in the image below. Tip: select multiple items by holding the ctrl key while selecting items.
 
 ![Mrlearning Base Ch2 3Step3imb](images/mrlearning-base-ch2-3step3imb.PNG)
 
-4. Add MRTK’s “grid object collection” component to the button collection.	To do this, select the “ButtonCollection” parent object and in the inspector panel, click the “Add Component” button. Then search for “grid object collection” in the search bar and select it when it appears in the list.
+4. Add MRTK’s “Grid Object Collection” component to the button collection.	To do this, select the “ButtonCollection” parent object and in the inspector panel, click the “Add Component” button. Then search for “Grid Object Collection” in the search bar and select it when it appears in the list.
 
 ![Mrlearning Base Ch2 3Step4im](images/mrlearning-base-ch2-3step4im.PNG)
 
 The Grid Object Collection component allows us to organize buttons or any set of objects in a neat row, column, or grid. This is one of the building blocks provided by the MRTK that provides you with a quick and simple way to create beautiful user interfaces.
 
-5. Configure the grid object collection. To ensure all the buttons face the user, select “orient type” and then select “face parent forward” (as shown in the image.) Next, change the cell size to set the space between your buttons. Use 0.12 units by 0.12 units for the Cell Width and Cell Height, as shown in the image below. Then click “Update Collection” and the scene should look like the picture below.
+5. Configure the grid object collection. To ensure all the buttons face the user, select “orient type” and then select “face parent forward” (as shown in the image.) Next, change the cell size to set the space between your buttons. Start with 0.12 units by 0.12 units for the Cell Width and Cell Height, as shown in the image below. You may need to adjust these values, depending on object/button assets chosen. Make sure "Rows" is set to 1. Then click “Update Collection” and the scene should look like the picture below. 
+
 
 ![Mrlearning Base Ch2 3Step5im](images/mrlearning-base-ch2-3step5im.PNG)
 
@@ -161,4 +167,5 @@ In this section, we’ll cover how to add and edit text to your mixed reality ex
 ### Congratulations
 In this lesson, you learned how to copy, customize, and configure an MRTK profile setting (i.e., spatial awareness mesh visibility.) You also learned how to interact with a button to trigger events using tracked hands on the HoloLens 2. Finally, you learned how to create a simple UI interface using Unity's Text Mesh Pro the MRTK's Grid Object Collection component.
 
+[Next Lesson: Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)
 
