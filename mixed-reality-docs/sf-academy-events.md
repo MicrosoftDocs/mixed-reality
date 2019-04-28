@@ -19,16 +19,6 @@ San Francisco, CA 94107
 
 
 ---
-## **[The Realities Show (Livestream from San Francisco Reactor)](http://aka.ms/trs)**
-### Coming Soon
-The Realities Show is a 30 minutes video livestream about HoloLens 2, Mixed Reality Services and MR technologies. In each episode we'll dive into features, capabilities, the tech behind it, how to develop for the different devices, recommend best practices and of course answer questions from our audience.
-
-This episode is  all about Human Understanding. Near interactions, far interactions, Eye-tracking and voice.
-
-**[Watch the live and past episodes here.](http://aka.ms/trs)**
-
-
----
 ## **[Mixed Reality Dev Days, Seattle](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
 ### May 2-3, 2019
 At Mixed Reality Dev Days, you’ll build the skills, network, and ideas you need to take your mixed reality applications to the next level.

@@ -61,19 +61,19 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                     <div class="cardText">
                         <h3>Interaction design</h3>
                         <p>
+                            <a href="comfort.md">Comfort</a>
+                        </p>
+			<p>
                             <a href="interaction-fundamentals.md">Interaction fundamentals</a>
                         </p>
                         <p>
-                            <a href="comfort.md">Comfort</a>
+                            <a href="hands-and-tools.md">Hands and controllers</a>
                         </p>
                         <p>
-                            <a href="gaze-targeting.md">Gaze targeting</a>
-                        </p>
-                        <p>
-                            <a href="gestures.md">Gestures</a>
+                            <a href="hands-free.md">Hands-free</a>
                         </p>
                          <p>
-                            <a href="voice-design.md">Voice design</a>
+                            <a href="gaze-and-commit.md">Head gaze and commit</a>
                         </p>
                     </div>
                 </div>
