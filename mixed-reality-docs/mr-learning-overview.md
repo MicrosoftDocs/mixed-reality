@@ -18,4 +18,4 @@ The MR Learning Modules are an updated approach to teaching developers how to cr
 * The tutorials are great for learning how to implement one thing, but not for building an application
 * There is not really any UI guidance available
 
-With that feedback in hand, we set out to design a set of tutorials that would not only address the above items, but
+With that feedback in hand, we set out to design a set of tutorials that would not only address the above items, but also will give all developers a useful baseline code template to begin from.
