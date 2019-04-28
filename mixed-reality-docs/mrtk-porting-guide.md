@@ -1,7 +1,7 @@
 ---
 title: Getting your app ready for HoloLens 2
 description: Targeted at developers who have an existing app on HoloLens (1st gen) and/or older MRTK, and looking to port to MRTK version 2 and HoloLens 2.
-author: author:grbury
+author: grbury
 ms.author: grbury
 ms.date: 04/12/19
 ms.topic: article
