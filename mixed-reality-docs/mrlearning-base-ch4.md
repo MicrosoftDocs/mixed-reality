@@ -26,11 +26,11 @@ In this lesson, we will go through basic 3D content and user experience. We will
 
 1. Right click on your hierarchy and select, “create empty.” This creates an empty game object. Rename it to “3DObjectCollection.” This is where we will put all of our 3D Objects. Make sure the collection’s positioning is set at x = 0, y = 0, and z = 0.
 
-TODO: replace screenshot with version where "effects" is not highlighted, but "create empty" is
-
 ![Lesson4 Chapter1 Step1im](images/Lesson4_Chapter1_step1im.PNG)
 
-2. Import BaseModule Assets Using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that will be used throughout this tutorial. The BaseModule unity package can be found here: 
+2. Import BaseModule Assets Using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that will be used throughout this tutorial. The BaseModule unity package can be found here: <https://github.com/mr0ng/MixedRealityLearning/releases/tag/V1.1>
+
+   TODO: Check this link whether it works or not.
 
 3. The coffee cup prefab can be recognized by a blue cube next to it. Do not select the coffee cup with the blue cube and small white paper (that denotes the original 3D model and not the prefab.) 
 
@@ -214,3 +214,6 @@ In this example, we are going to play a sound effect when you touch an object wi
 
 ### Congratulations 
 In this lesson, you learned how to organize 3D objects in a grid collection and how to manipulate 3D objects  (scaling, rotating, and moving) using near interaction (directly grabbing with tracked hands) and far interaction (using gaze rays or hand rays.) You also learned how to put bounding boxes around 3D objects and learned how to use and customize the gizmos on the bounding boxes. Finally, you learned how to trigger events when touching an object.
+
+[Go to next lesson](mrlearning-base-ch5)
+

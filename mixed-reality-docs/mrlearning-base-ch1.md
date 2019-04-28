@@ -37,11 +37,19 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 ### Import the Mixed Reality Toolkit
 
 1. Download the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC1/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC1.unitypackage) unity package and save it to a folder on your PC.
+
 2. Import the Mixed Reality Toolkit package by clicking on Assets>Import>Custom Package. Find the Mixed Reality Toolkit package downloaded in Step 1 and open it to begin the importing process.
-![Lesson1 Chapter2 Step2a](images/Lesson1Chapter2Step2a.JPG)
-![Lesson1 Chapter2 Step2b](images/Lesson1Chapter2Step2b.JPG)
+    ![Lesson1 Chapter2 Step2a](images/Lesson1Chapter2Step2a.JPG)
+    ![Lesson1 Chapter2 Step2b](images/Lesson1Chapter2Step2b.JPG)
+
 3. In the next pop-up window, click “Import” to begin importing the Mixed Reality Toolkit. Ensure all items are checked, as shown in the image.
-![Lesson1 Chapter2 Step3](images/Lesson1Chapter2Step3.JPG)
+    ![Lesson1 Chapter2 Step3](images/Lesson1Chapter2Step3.JPG)
+
+4. TODO: Add note about pop up.
+
+  ![Lesson1 Chapter2 Step3](images/Lesson1Chapter2Step3b.JPG)
+
+  
 
 ### Configure the Mixed Reality Toolkit
 
@@ -65,19 +73,23 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 ### Build your application to your device
 
 1. If you closed the Build Settings window from the previous sections, open the build settings window again by going to File>Build Settings.
-  ![Lesson1 Chapter5 Step1](images/Lesson1Chapter5Step1.JPG)
+    ![Lesson1 Chapter5 Step1](images/Lesson1Chapter5Step1.JPG)
 
 2. Ensure the scene you want to try is in the “Scenes in Build” list by clicking on the “Add Open Scenes” button.
 
 3. Press the Build button to begin the build process.
-  ![Lesson1 Chapter5 Step3](images/Lesson1Chapter5Step3.JPG)
+    ![Lesson1 Chapter5 Step3](images/Lesson1Chapter5Step3.JPG)
 
 4. Create and name a new folder for your application. In the image below, a folder with the name “App” was created to contain the application. Click “Select Folder” to begin building to the newly created folder.
-  ![Lesson1 Chapter5 Step4](images/Lesson1Chapter5Step4.JPG)
+    ![Lesson1 Chapter5 Step4](images/Lesson1Chapter5Step4.JPG)
 
   > TODO: tell people they can close the build window now.
   >
   > TODO NOTE: you might have to build again if the build fails, or may need to press play before building. Make note that users should see progress bar, it will take a while. Look for build errors in console for build failed / build succeeded.
+  >
+  > TODO: Error: CS0246 = The tyoe or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)
+  >
+  > Solve: Install Windows 10 SDK (10.0.18362.0) and set '' Minimum platform version to 10.0.18362.0.
   >
   > 
 
@@ -85,7 +97,7 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 
   > TODO note: make sure to open the newly created folder, there will be an identically named solution file outside that, but that's not the right one.
 
-  ![Lesson1 Chapter5 Step5](images/Lesson1Chapter5Step5.JPG)
+  TODO: I![Lesson1 Chapter5 Step5](images/Lesson1Chapter5Step5.JPG)
 
   > TODO note: Grab screenshot from Graham. if Visual Studio asks to install any missing components, please do.
 
@@ -96,13 +108,15 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 7. Before building to your device, ensure that the device is in Developer Mode and that it is paired with visual Studio. Please follow [these instructions](https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
 
 8. Configure Visual Studio for building to your HoloLens 2 by selecting the “Release” configuration and the “ARM” architecture.
-  ![Lesson1 Chapter5 Step8](images/Lesson1Chapter5Step8.JPG)
+    ![Lesson1 Chapter5 Step8](images/Lesson1Chapter5Step8.JPG)
 
 9. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting “Start without Debugging” will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application.
-  ![Lesson1 Chapter5 Step9](images/Lesson1Chapter5Step9.JPG)
+    ![Lesson1 Chapter5 Step9](images/Lesson1Chapter5Step9.JPG)
 
 ## Congratulations
 
 You now have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mesh cover all surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance. These are just a few of the foundational pieces included out of the box with the Mixed Reality Toolkit. In the lessons to come, we’ll start adding more content and interactivity to your scene, so you can fully explore the capabilities of the HoloLens 2 and the Mixed Reality Toolkit.
 
 >Note: We'll cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md) 
+
+[Go to next lesson](mrlearning-base-ch2.md)

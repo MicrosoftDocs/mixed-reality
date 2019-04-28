@@ -40,6 +40,10 @@ In this section we will learn how to customize and configure the default Mixed R
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step3im.PNG)
 
+TODO: Add more information regarding the below image.
+
+![MR213_BuildSettings](images/mrlearning-base-ch2-1step3bim.jpg)
+
 TODO: MRTK now names this extension service providers, new screenshot and text needed.
 
 TODO: This whole part will need to be re-written as stuff is in new places
@@ -63,11 +67,11 @@ In this section, we will learn how to use hand tracking to press an interactable
 
 1. Select “Assets” from the projects folder.
 
-2. Type in the search bar, “holographicbutton.”
+2. Type in the search bar, “pressablebutton.”
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step1im.PNG)
 
-3. Drag the prefab (represented by a blue box) named "HolographicButton" into your hierarchy.
+3. Drag the prefab (represented by a blue box) named "PressableButton" into your hierarchy.
 
 > TODO note - tell users to zoom out so they can read the buttons
 
@@ -77,7 +81,7 @@ In this section, we will learn how to use hand tracking to press an interactable
 
 > TODO - update tutorial with pressable button - update screenshots accordingly.
 
-4. Double click the “HolographicButton” game object (which should now be in your BaseScene hierarchy) to view it in your scene, as shown in the image below. 
+4. Double click the “PressableButton” game object (which should now be in your BaseScene hierarchy) to view it in your scene, as shown in the image below. 
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step4im.PNG)
 
@@ -95,7 +99,7 @@ In this section, we will learn how to use hand tracking to press an interactable
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step6imb.PNG)
 
-7. In this step we will set up the cube to change color when our button is pressed. Select the holographic button in the “BaseScene” menu. Select the holographic button in the “BaseScene” menu. In the inspector panel, under the “Select Event Type” box, click the “+” button. Drag the “cube” from the “BaseScene” menu into the “Runtime Only” box, as shown in the image below
+7. In this step we will set up the cube to change color when our button is pressed. Select the holographic button in the “BaseScene” menu. In the inspector panel, under the “Select Event Type” box, click the “+” button. Drag the “cube” from the “BaseScene” menu into the “Runtime Only” box, as shown in the image below
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step7ima.PNG)
 
@@ -104,6 +108,8 @@ Click the dropdown list that says “No Function.” Select “MeshRenderer” t
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imb.PNG)
 
 Go to the project panel and search for the material you wish to change it to. We are going to use the material “MRTK_Standard_Cyan” for this example, found by typing in “cyan” in the project tab’s search bar (The MRTK includes many materials and colors to choose from.) Drag the material to the box underneath “MeshRenderer.material.”
+
+![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imbb.PNG)
 
 > Todo: tell users where the MRTK materials folder is.
 
@@ -187,4 +193,5 @@ In this lesson, you learned how to copy, customize, and configure an MRTK profil
 
 > Todo - continue to next lesson link on all lessons
 
+[Go to next lesson](melearning-base-ch3)
 

@@ -72,3 +72,5 @@ In this section, we will configure the cube game object previously created to fo
 ### Congratulations
 Congratulations! In this lesson, you learned how to use the MRTK’s solvers to have a UI intuitively follow the user. You also learned how to attach a solver to a game object (i.e., cube) to follow the user’s tracked hands. To learn more about these and other solvers included with the MRTK, feel free to visit the [MRTK solvers documentation page](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html).
 
+[Go to next lesson](mrlearning-base-ch4)
+

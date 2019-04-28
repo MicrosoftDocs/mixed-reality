@@ -46,8 +46,8 @@ There are five parts to the lunar module that the user is going to interact with
 ![Lesson6 Chapter1 Notebim](images/Lesson6_Chapter1_notebim.PNG)
 
 Note: The titles that you see in your base scene hierarchy do not correspond to the names of the objects in the scene.
-The first thing we want to do is configure the lunar module by adding some functionality to it. By default, you should see a transform, a ridged body and a box collider in the inspector panel with the lunar module selected.
-A ridged body gives the object some physics to make it interactable. This will allow us to add a force to it so that it can move on its own. In our case, so that it can be launched in to space.
+The first thing we want to do is configure the lunar module by adding some functionality to it. By default, you should see a transform, a rigid body and a box collider in the inspector panel with the lunar module selected.
+A rigid body gives the object some physics to make it interactable. This will allow us to add a force to it so that it can move on its own. In our case, so that it can be launched in to space.
 
 
 
@@ -81,7 +81,7 @@ Note: if you are indoors, the lunar module will crash against your ceiling. But 
 
 ![Lesson6 Chapter1 Step5im](images/Lesson6_Chapter1_step5im.PNG)
 
-Step 6: Adjust the thrust so that the lunar module will fly up gracefully. The number we discovered that was best for this was 0.01. Leave the Rb blank. Rb stands for ridged body, so since the ridged body already has a script of its own, leaving this section blank will allow the script to pull the information from the main ridged body script. 
+Step 6: Adjust the thrust so that the lunar module will fly up gracefully. The number we discovered that was best for this was 0.01. Leave the Rb blank. Rb stands for rigid body, so since the ridged body already has a script of its own, leaving this section blank will allow the script to pull the information from the main ridged body script. 
 
 ![Lesson6 Chapter1 Step6im](images/Lesson6_Chapter1_step6im.PNG)
 
@@ -126,7 +126,6 @@ Step 1: Select the launch button (in the base scene it’s named “LaunchRoundButto
 Step 2: Just like the previous 2 chapters, select the dropdown menu that says, “no function.” Hover over “LaunchLunarModule” and select “StopThruster ().” This will control how much thrust the user wants to give to the Lunar Module. 
  ![Lesson6 Chapter5 Step2im](images/Lesson6_Chapter5_step2im.PNG)
 Step 3: Under Button Pressed, add the Lunar Module like step 1 (click, hold, and drag) to the empty slot. 
-
 
 Step 4: Like step 2, click the dropdown menu that says, “no function” and hover over “LaunchLunarModule” and select “StartThruster ().” 
  ![Lesson6 Chapter5 Step4im](images/Lesson6_Chapter5_step4im.PNG)

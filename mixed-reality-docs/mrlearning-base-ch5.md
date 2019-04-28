@@ -38,7 +38,7 @@ In the input system profile, you will see a variety of settings. For voice comma
 >
 > ![Lesson5 Chapter1 Noteim](images/Lesson5_chapter1_noteim.PNG)
 
-3. Add a new voice command. To add a new voice command, click on the “+ add a new speech command” button and you will see a new line that appears down below the list of existing voice commands. Type in the voice command you want to use. In this example we are going to use the command “play music.”
+3. Add a new voice command. To add a new voice command, click on the “+ add a new speech command” button and you will see a new line that appears down below the list of existing voice commands. Type in the voice command you want to use. In this ex musicample we are going to use the command “play music.”
 
 >Tip: You can also set a keycode for speech commands. This allows for voice commands to trigger upon press of a keyboard key. 	
 
@@ -195,3 +195,6 @@ In newly created field, add the current Game Object to the empty field, and sele
 
 ### Congratulations! 
 You’ve successfully added basic eye tracking capabilities to the application. These actions are only the beginning of a world of possibilities with eye tracking. This chapter also concludes lesson 5, where we learned about advanced input functionality such as voice commands, panning gestures, and eye tracking. 
+
+[Go to next lesson](mrlearning-base-ch6)
+
