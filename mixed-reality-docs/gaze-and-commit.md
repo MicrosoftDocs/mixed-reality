@@ -111,7 +111,7 @@ Eye gaze and commit is available on HoloLens 2, but is not the primary input mod
 
 # Head gaze design guidelines
 > [!NOTE]
-> More guidance specific to gaze design [coming soon](index.md#news-and-notes).
+> More guidance specific to gaze design [coming soon](index.md).
 
 ## Gaze targeting
 All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality. In Windows Mixed Reality, this is generally done using the user's gaze.
