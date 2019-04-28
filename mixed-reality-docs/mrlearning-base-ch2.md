@@ -193,5 +193,5 @@ In this lesson, you learned how to copy, customize, and configure an MRTK profil
 
 > Todo - continue to next lesson link on all lessons
 
-[Go to next lesson](melearning-base-ch3)
+[Go to next lesson](mrlearning-base-ch3.md)
 
