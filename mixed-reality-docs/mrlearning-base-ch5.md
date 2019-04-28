@@ -196,5 +196,5 @@ In newly created field, add the current Game Object to the empty field, and sele
 ### Congratulations! 
 You’ve successfully added basic eye tracking capabilities to the application. These actions are only the beginning of a world of possibilities with eye tracking. This chapter also concludes lesson 5, where we learned about advanced input functionality such as voice commands, panning gestures, and eye tracking. 
 
-[Go to next lesson](mrlearning-base-ch6.md)
+[Next Lesson: Lunar Module Assembly Sample Experience](mrlearning-base-ch6.md)
 

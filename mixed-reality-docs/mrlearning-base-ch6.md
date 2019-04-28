@@ -1,6 +1,6 @@
 ---
-title: MR Learning Base Module Advanced Input
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Lunar Module Assembly Sample Experience
+description: In this lesson, we will combine multiple concepts learned from previous lessons to create a unique sample experience.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019

@@ -119,4 +119,4 @@ You now have now deployed your first HoloLens 2 application. As you walk around,
 
 >Note: We'll cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md) 
 
-[Go to next lesson](mrlearning-base-ch2.md)
+[Next Lesson: User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration](mrlearning-base-ch2.md)
