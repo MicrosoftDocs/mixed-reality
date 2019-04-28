@@ -48,7 +48,7 @@ To enable a user to work with an experience successfully, the system's calculate
 </table>
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> More guidance specific to HoloLens 2 [coming soon](index.md).
 
 ## Target sizing and feedback
 
