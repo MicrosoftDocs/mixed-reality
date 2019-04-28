@@ -25,7 +25,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ### Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
-* Minimum Windows 10 version of xxxxx.xxxx
+* Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability.
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
