@@ -25,13 +25,13 @@ Welcome to the second module of the HoloLens 2 Tutorial! Before getting started,
 ### Downloading and Importing Assets
 Before beginning, you must download and import the following assets:
 
-[mixed reality toolkit](link to base module chater 1)
+[Azure Spatial Anchors](https://github.com/azure/azure-spatial-anchors-samples/releases)
 
 [MR Base Module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
 
-[Azure Spatial Anchors](https://github.com/azure/azure-spatial-anchors-samples/releases)
+[mixed reality toolkit](link to base module chater 1)
 
-[MRTK documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/SpatialAwareness/SpatialAwarenessSystemArchitecture.html>)
+> Note: see step 5 for specific instructions on how to import the Azure Spatial Anchors, step 6 for specific instructions on the MR Base Module Asset Pack, and steps 3-4 for specific instructions on the mixed reality toolkit.
 
 1. create a new scene in your project. Right click your scene folder, click "create," then scene. Name the new scene "ASALearningModule."
 
@@ -52,9 +52,44 @@ Before beginning, you must download and import the following assets:
 
 Now the scene is configured for mixed reality. Make sure you save your scene (do this with either control/command+S, or click on file, then click on save). 
 
+5. Import the [Azure Spatial Anchors](https://github.com/azure/azure-spatial-anchors-samples/releases). In order to use spatial anchors, you must import this asset. So, click on the link above and right click on "AzureSpatialAnchors.unitypackage." Click on "save target as" and save it to your computer. 
 
+   ![module2chapter1step5aim](images/module2chapter1step5aim.PNG)
 
-### Hand Tracking Gestures and Interactable buttons
+   Then, after it's saved, go back into unity, click "assets," go down to "import package," then click "custom package..." Your computer files will open up. Once they do, find where you saved the Azure Spatial Anchors package and select it. Then click "open."
+
+   ![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
+
+   Now there will be a popup giving a list of tools and settings, asking you what to import. Select ***all*** of the options available, then click "import."
+
+   ![module2chapter1step5cim](images/module2chapter1step5cim.PNG)
+
+   > note: it will take a few minutes to import, so please be patient. 
+
+   6. Import [MR Base Module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1) next. Much like step 5, click the link above, then right click "BaseModuleAssetsV1 1.unitypackage" and click "save target as" and save it to your computer. 
+
+   ![module2chapter1step6aim](images/module2chapter1step6aim.PNG)
+
+   > Tip: Save all these assets in the same folder so that they are easier to find and have access to. It will keep everything nice and organized!
+
+   Just like step 5, go back in to unity, click "assets," hover over "import package" then click "custom package..." Your computer files should appear again, so go to where you stored the Base Module Asset Pack and select it. Then click "open."
+
+   ![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
+
+   > Note: there may be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
+
+   7. In the "project" tab, underneath the "assets" folder, click on "ASAModuleAssets." Once selected you will see 2 prefabs, "ButtonParent" and "ParentAnchor."
+
+      ![module2chapter1step5bim](images/module2chapter1step7im.PNG)
+
+      8. Drag both of the prefabs into the scene. 
+
+         ![module2chapter1step8im](images/module2chapter1step8im.PNG)
+
+         Double click on the parent anchor to select it. You may need to adjust your view to see the entire scene, so adjust your scene as needed.
+
+### Hand Tracking Gestures and Intractable buttons
+
 In this section, we will learn how to use hand tracking to press an interactable button.
 
 1. Select “Assets” from the projects folder.
