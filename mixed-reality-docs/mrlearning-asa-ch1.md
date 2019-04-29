@@ -33,27 +33,26 @@ Before beginning, you must download and import the following assets:
 
 [MRTK documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/SpatialAwareness/SpatialAwarenessSystemArchitecture.html>)
 
-1. create a new scene in your project. Right click your scene folder, click "create," then scene. Name the new scene "ASA Module."
+1. create a new scene in your project. Right click your scene folder, click "create," then scene. Name the new scene "ASALearningModule."
 
-   ![Module2Chapter1step1im](images/Module2chapter1step1im.PNG)
+![Module2Chapter1step1im](images/Module2chapter1step1im.PNG)
 
-3. Disable the visibility of the spatial awareness mesh. To do this, find “Spatial Awareness System Settings” as shown in the image. Click the "clone" button to the right of the the “Spatial Awareness System Profile” to replace the default profile with a customizable copy. If a pop-up window appears, feel free to press the "Clone" button, as shown in the second image below.
+2. Double click "ASALearningModule" to see some pre-defined items appear along with the new scene. 
+3. Configure the scene for mixed reality development. 
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step3im.PNG)
+![Module2chapter1step3im](images/Module2chapter1step3im.PNG)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step3bim.jpg)
+> Note: You will see a pop-up that says, "you must choose a file for the Mixed Reality Toolkit." Clicking "ok" will bring you to step 4.
 
-4. Create a custom copy of the Default Mixed Reality Spatial Mesh Observer. Click the down arrow next to “Windows Mixed Reality Spatial Mesh Observer” to see additional options. In these options, you will see the “Default Mixed Reality Spatial Mesh Observer” which appears greyed (not editable.) We must replace this default profile with a customizable copy of it so we can edit it. Click the button to the right (marked by green arrow) to create a copy.
+4. When choosing a file for the Mixed Reality Toolkit, select, "DefaultMixedRealityToolkitConfigurationProfile."
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step4im.PNG)
+   > Note: If you have your own configuration profile feel free to use that instead.
 
-5. Next, we adjust the settings for the display option to say “occlusion.” This makes the spatial mesh invisible, but still hide game objects behind the spatial mesh (this is known as occlusion.)
+![module2chapter1step4im](images/module2chapter1step4im.PNG)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step5im.PNG)
+Now the scene is configured for mixed reality. Make sure you save your scene (do this with either control/command+S, or click on file, then click on save). 
 
->Note: the spatial mapping mesh is still there, and you can still interact with it, but you won’t be able to see it directly. Also, any holograms behind the spatial mapping mesh (i.e. a hologram behind your visible wall) will not be visible because of the occlusion setting.
 
-Congratulations! You just learned how to modify a setting in the MRTK profile. As you can see, in order to modify MRTK settings you need to create copies of the default profiles so that you can edit them. You will always have the default profiles (which are not editable) to go back to if you wanted to create a profile with new settings, or refer back to the default profiles. There are numerous settings that you can adjust. For full reference to MRTK profile settings, refer to the MRTK documentation here: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html
 
 ### Hand Tracking Gestures and Interactable buttons
 In this section, we will learn how to use hand tracking to press an interactable button.
