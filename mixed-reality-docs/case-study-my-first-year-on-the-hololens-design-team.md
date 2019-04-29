@@ -103,7 +103,7 @@ When I worked in 2D, I mostly sketched just the content. However, in mixed reali
 **“No matter how closely I sketched out the scene in 3D, the actual experience in headset was almost never the same as the sketch. That’s why it’s important to test out the scene in the target headsets.”
 — Hae Jin Lee**
 
-For HoloLens prototyping, I tried out all the tutorials at [Mixed Reality Academy](academy.md) to start. Then I began to play with [HoloToolkit.Unity](https://github.com/Microsoft/HoloToolkit-Unity/) that Microsoft provides to developers to accelerate development of holographic applications. When I got stuck with something, I posted my question to [HoloLens Question & Answer Forum](https://forums.hololens.com/categories/questions-and-answers/).
+For HoloLens prototyping, I tried out all the tutorials at [Mixed Reality tutorials](tutorials.md) to start. Then I began to play with [HoloToolkit.Unity](https://github.com/Microsoft/HoloToolkit-Unity/) that Microsoft provides to developers to accelerate development of holographic applications. When I got stuck with something, I posted my question to [HoloLens Question & Answer Forum](https://forums.hololens.com/categories/questions-and-answers/).
 
 After acquiring basic understanding of HoloLens prototyping, I wanted to empower other non-coders to prototype on their own. So I made a video tutorial that teaches how to develop a simple projectile using HoloLens. I briefly explain the basic concepts, so even if you have zero experience in HoloLens development, you should be able to follow along.
 
