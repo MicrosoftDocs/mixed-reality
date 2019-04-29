@@ -412,3 +412,5 @@ void tga_write(const char *filename, uint32_t width, uint32_t height, uint8_t *d
     fclose(fp);
 }
 ```
+
+## Next Lab - [Accessing the IMU](UsingIMU.md)

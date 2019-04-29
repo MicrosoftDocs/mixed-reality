@@ -18,7 +18,7 @@ Need to read depth data from the device? It's easy!
 
 ## Configuring the Device
 
-After [opening an interface]() to the Kinect for Azure device, you'll need to configure the camera for capturing depth data. There's only one item you really need to know about when configuring depth, and that's the `depth_mode`!
+After [opening an interface]() to the Azure Kinect DK device, you'll need to configure the camera for capturing depth data. There's only one item you really need to know about when configuring depth, and that's the `depth_mode`!
 
 ```C
 k4a_device_configuration_t config = K4A_DEVICE_CONFIG_INIT_DISABLE_ALL;
@@ -171,3 +171,5 @@ void tga_write(const char *filename, uint32_t width, uint32_t height, uint8_t *d
     fclose(fp);
 }
 ```
+
+## Next Lab - [Reading RGB Data](ReadColor.md)

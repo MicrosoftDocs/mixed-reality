@@ -1,6 +1,6 @@
 # Accessing the IMU
 
-Kinect for Azure contains an Intertial Measurement Unit (IMU)! This can be useful for helping to determine motion and orientation of the device during capture. Especially if you device isn't stationary!
+Azure Kinect DK contains an Inertial Measurement Unit (IMU)! This can be useful for helping to determine motion and orientation of the device during capture. Especially if you device isn't stationary!
 
 **Contents:**  
 [Configuration and Setup](#Configuration-and-Setup)  

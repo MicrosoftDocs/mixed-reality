@@ -1,6 +1,6 @@
 # Setting Up
 
-Getting started with the Kinect for Azure (k4a) API? Look no further! This document will get you up and running with access to the device!
+Getting started with the Azure Kinect DK API? Look no further! This document will get you up and running with access to the device!
 
 **Contents**  
 [Headers](#Headers)  
@@ -27,7 +27,7 @@ There's only one header that you'll need, and that's k4a.h! Make sure your compi
 
 ![](img/Serial.png)
 
-Multiple Kinect for Azure devices can be connected to your computer! We'll first start by finding out how many, or if any are connected at all using the [`k4a_device_get_installed_count`](https://review.docs.microsoft.com/en-us/azurekinect/api/k4a-device-get-installed-count) function. This function should work right away, without any additional setup!
+Multiple Azure Kinect DK devices can be connected to your computer! We'll first start by finding out how many, or if any are connected at all using the [`k4a_device_get_installed_count`](https://review.docs.microsoft.com/en-us/azurekinect/api/k4a-device-get-installed-count) function. This function should work right away, without any additional setup!
 
 ```C
 uint32_t count = k4a_device_get_installed_count();
@@ -159,3 +159,5 @@ int main()
 }
 }
 ```
+
+## Next Lab - [Reading Depth Data](ReadDepth.md)
