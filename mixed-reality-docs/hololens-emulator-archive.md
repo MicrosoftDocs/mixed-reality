@@ -17,7 +17,7 @@ HoloLens Emulator (1st Gen) and HoloLens 2 Emulator builds install side-by-side.
 
 |  Build |  Release Date |  Notes | 
 |----------|----------|----------|
-|  [HoloLens 2 Emulator build 10.0.18362.1005](https://go.microsoft.com/fwlink/?linkid=2065980) | April 16, 2019 | Latest HoloLens 2 build. |
+|  [HoloLens 2 Emulator build 10.0.18362.1005](https://go.microsoft.com/fwlink/?linkid=2087187) | April 16, 2019 | Latest HoloLens 2 build. |
 
 
 # HoloLens Emulator (1st Gen) archive
