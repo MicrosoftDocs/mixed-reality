@@ -1,5 +1,5 @@
 ---
-title: Lunar Module Assembly Sample Experience
+title: MR Learning Base Module - Lunar Module Assembly Sample Experience
 description: In this lesson, we will combine multiple concepts learned from previous lessons to create a unique sample experience.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# Lunar Module Assembly Sample Experience
+# MR Learning Base Module - Lunar Module Assembly Sample Experience
 
 In this lesson, we will combine multiple concepts learned from previous lessons to create a unique sample experience. We will create a lunar module assembly application whereby a user will need to use tracked hands to pick up lunar module parts and attempt to assemble a lunar module. We will use pressable buttons to toggle placement hints, to reset our experience, and to launch our lunar module into space! In future tutorials, we will continue to build upon this experience, including powerful multi-user use-cases that leverages Azure Spatial Anchors for spatial alignment.
 
