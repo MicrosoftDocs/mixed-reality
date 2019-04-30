@@ -1,244 +1,218 @@
 ---
-title: Gaze, gestures, and motion controllers in DirectX
-description: Combining input coming from gaze, gestures, and motion controllers, you can enable a user to place a hologram in your app.
-author: thetuvix
-ms.author: alexturn
-ms.date: 02/24/2019
+title: Hands and motion controllers in DirectX
+description: Needs description
+author: caseymeekhof
+ms.author: cmeekhof
+ms.date: 04/23/2019
 ms.topic: article
-keywords: gaze, gestures, motion controllers, directx, input, holograms
+keywords: hands, motion controllers, directx, input, holograms
 ---
 
+# Hands and motion controllers in DirectX
 
+In Windows Mixed Reality, both hand and [motion controller](motion-controllers.md) input is handled through the spatial input APIs, found in the [Windows.UI.Input.Spatial](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial) namespace. This enables you to easily handle common actions like **Select** presses the same way across both hands and motion controllers.
 
-# Gaze, gestures, and motion controllers in DirectX
+## Getting started
 
-If you're going to build directly on top of the platform, you will have to handle input coming from the user - such as where the user is looking via [head gaze](gaze.md) and what the user has selected with [gestures](gestures.md) or [motion controllers](motion-controllers.md). Combining these forms of input, you can enable a user to place a [hologram](hologram.md) in your app. The [holographic app template](creating-a-holographic-directx-project.md) has an easy to use example.
-
->[!NOTE]
->The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
-
-## Gaze input
-
-To access the user's [head gaze](gaze.md), you use the [SpatialPointerPose](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialpointerpose.aspx) type. The holographic app template includes basic code for understanding gaze. This code provides a vector pointing forward from between the user's eyes, taking into account the device's position and orientation in a given [coordinate system](coordinate-systems-in-directx.md).
-
-
-
+To access spatial input in Windows Mixed Reality, start with the SpatialInteractionManager interface.  You can access this interface by calling  [SpatialInteractionManager::GetForCurrentView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getforcurrentview), typically sometime during app startup.
 
 ```cpp
-void SpinningCubeRenderer::PositionHologram(SpatialPointerPose^ pointerPose)
-{
-    if (pointerPose != nullptr)
-    {
-        // Get the gaze direction relative to the given coordinate system.
-        const float3 headPosition    = pointerPose->Head->Position;
-        const float3 headDirection   = pointerPose->Head->ForwardDirection;
-    
-        // The hologram is positioned two meters along the user's gaze direction.
-        static const float distanceFromUser = 2.0f; // meters
-        const float3 gazeAtTwoMeters        = headPosition + (distanceFromUser * headDirection);
-    
-        // This will be used as the translation component of the hologram's
-        // model transform.
-        SetPosition(gazeAtTwoMeters);
-    }
-}
+using Windows::UI::Input::Spatial;
+
+SpatialInteractionManager^ interactionManager = SpatialInteractionManager::GetForCurrentView();
 ```
 
-You may find yourself asking: "But where does the coordinate system come from?"
-
-Let's answer that question. In our AppMain's **Update** function, we processed a spatial input event by acquiring it relative to the coordinate system for our StationaryFrameOfReference. Recall that the StationaryFrameOfReference was created when we set up the [HolographicSpace](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx), and the coordinate system was acquired at the start of [Update](rendering-in-directx.md).
-
-
-
-
-```cpp
-// Check for new input state since the last frame.
-SpatialInteractionSourceState^ pointerState = m_spatialInputHandler->CheckForInput();
-if (pointerState != nullptr)
-{
-    // When a Pressed gesture is detected, the sample hologram will be repositioned
-    // two meters in front of the user.
-    m_spinningCubeRenderer->PositionHologram(
-        pointerState->TryGetPointerPose(currentCoordinateSystem)
-        );
-}
-```
-
-Note that the data is tied to a pointer state of some kind. We get this from a spatial input event. The event data object includes a coordinate system, so that you can always relate the gaze direction at the time of the event to whatever spatial coordinate system you need. In fact, you must do so in order to get the pointer pose.
-
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
-
-## Gesture and motion controller input
-
-In Windows Mixed Reality, both hand [gestures](gestures.md) and [motion controllers](motion-controllers.md) are handled through the same spatial input APIs, found in the [Windows.UI.Input.Spatial](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial) namespace. This enables you to easily handle common actions like **Select** presses the same way across both hands and motion controllers.
-
-There are two levels of API you can target when handling gestures or motion controllers in mixed reality:
-* [Interactions](gestures.md#the-two-core-gestures-of-hololens) ([SourcePressed](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed.aspx), [SourceReleased](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.sourcereleased.aspx) and [SourceUpdated](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.sourceupdated.aspx)), accessed using a [SpatialInteractionManager](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.aspx)
-* [Composite gestures](gestures.md#composite-gestures) ([Tapped](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialgesturerecognizer.tapped.aspx), Hold, Manipulation, Navigation), accessed using a [SpatialGestureRecognizer](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialgesturerecognizer.aspx)
-
-### Select/Menu/Grasp/Touchpad/Thumbstick interactions: SpatialInteractionManager
-
-To detect low-level presses, releases and updates across hands and input devices in Windows Mixed Reality, you start from a [SpatialInteractionManager](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionmanager.aspx). The SpatialInteractionManager has an event that informs the app when a hand or motion controller has detected input.
-
-There are three key kinds of SpatialInteractionSource, each represented by a different SpatialInteractionSourceKind value:
-* **Hand** represents a user's detected hand. Hand sources are available only on HoloLens.
+The SpatialInteractionManager's job is to provide access to [SpatialInteractionSources](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsource), which represent a source of input.  There are three kinds of SpatialInteractionSources available in the system.
+* **Hand** represents a user's detected hand. Hand sources offer different features based on the device, ranging from basic gestures on HoloLens to fully articulated hand tracking on HoloLens 2. 
 * **Controller** represents a paired motion controller. Motion controllers can offer a variety of capabilities, for example: Select triggers, Menu buttons, Grasp buttons, touchpads and thumbsticks.
-* **Voice** represents the user's voice speaking system-detected keywords. This will inject a Select press and release whenever the user says "Select".
+* **Voice** represents the user's voice speaking system-detected keywords. For example, this source will inject a Select press and release whenever the user says "Select".
 
-To detect presses across any of these interaction sources, you can handle the SourcePressed event on SpatialInteractionManager in SpatialInputHandler.cpp:
+Per-frame data for a source is represented by the  [SpatialInteractionSourceState](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) interface. There are two different ways to access this data, depending on whether you want to use an event-driven or polling-based model in your application.
 
+### Event-driven input
+The SpatialInteractionManager provies a number of events that your app can listen for.  A few examples include   [SourcePressed](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed), [SourceReleased](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcereleased) and [SourceUpdated](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourceupdated).
+
+For example, the following code hooks up an event handler called MyApp::OnSourcePressed to the SourcePressed event.  This allows your app to detect presses on any type of interaction source.
 
 ```cpp
-m_interactionManager = SpatialInteractionManager::GetForCurrentView();
+using Windows::UI::Input::Spatial;
+
+SpatialInteractionManager^ interactionManager = SpatialInteractionManager::GetForCurrentView();
     
-// Bind a handler to the SourcePressed event.
-m_sourcePressedEventToken =
-    m_interactionManager->SourcePressed +=
-        ref new TypedEventHandler<SpatialInteractionManager^, SpatialInteractionSourceEventArgs^>(
-            bind(&SpatialInputHandler::OnSourcePressed, this, _1, _2)
-            );
+interactionManager->SourcePressed +=
+    ref new TypedEventHandler<SpatialInteractionManager^, SpatialInteractionSourceEventArgs^>(
+        std::bind(&MyApp::OnSourcePressed, this, std::placeholders::_1, std::placeholders::_2));
 ```
 
-This pressed event is sent to your app asynchronously. Your app or game engine may want to perform some processing right away or you may want to queue up the event data in your input processing routine.
-
-The template includes a helper class to get you started. This template forgoes any processing for simplicity of design. The helper class keeps track of whether one or more **Pressed** events occurred since the last **Update** call. From SpatialInputHandler.cpp:
-
-
-
+This pressed event is sent to your app asynchronously, along with the corresponding SpatialInteractionSourceState at the time the press happened. Your app or game engine may want to perform some processing right away or you may want to queue up the event data in your input processing routine. Here is an event handler function for the SourcePressed event, which shows how to access the source state data and check whether the select button is down.
 
 ```cpp
-void SpatialInputHandler::OnSourcePressed(SpatialInteractionManager^ sender, SpatialInteractionSourceEventArgs^ args)
+using Windows::UI::Input::Spatial;
+
+void MyApp::OnSourcePressed(SpatialInteractionManager^ sender, SpatialInteractionSourceEventArgs^ args)
 {
-    m_sourceState = args->State;
-    
-    //
-    // TODO: In your app or game engine, rewrite this method to queue
-    //       input events in your input class or event handler.
-    //
-}
-```
-
-If so, it returns the [SpatialInteractionSourceState](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionsourcestate.aspx) for the most recent input event during the next Update. From SpatialInputHandler.cpp:
-
-
-
-
-```cpp
-// Checks if the user performed an input gesture since the last call to this method.
-// Allows the main update loop to check for asynchronous changes to the user
-// input state.
-SpatialInteractionSourceState^ SpatialInputHandler::CheckForInput()
-{
-    SpatialInteractionSourceState^ sourceState = m_sourceState;
-    m_sourceState = nullptr;
-    return sourceState;
-}
-```
-
-Note that the code above will treat all presses the same way, whether the user is performing a primary **Select** press or a secondary **Menu** or **Grasp** press. The **Select** press is a primary form of interaction supported across hands, motion controllers and voice, triggered either by a hand performing an air-tap, a motion controller with its primary trigger/button pressed, or the user's voice saying "Select". Select presses represent the user's intention to activate the hologram they are targeting.
-
-To reason about which kind of press is occurring, we will modify the SpatialInteractionManager::SourceUpdated event handler. Our code will detect Grasp presses (where available) and use them to reposition the cube. If Grasp is not available, we will use Select presses instead.
-
-Add the following private member declarations to SpatialInputHandler.h: 
-
-
-```cpp
-void OnSourceUpdated(
-       Windows::UI::Input::Spatial::SpatialInteractionManager^ sender,
-       Windows::UI::Input::Spatial::SpatialInteractionSourceEventArgs^ args);
-   Windows::Foundation::EventRegistrationToken m_sourceUpdatedEventToken;
-```
-
-Open SpatialInputHandler.cpp. Add the following event registration to the constructor: 
-
-
-```cpp
-m_sourceUpdatedEventToken =
-       m_interactionManager->SourceUpdated +=
-       ref new TypedEventHandler<SpatialInteractionManager^, SpatialInteractionSourceEventArgs^>(
-           bind(&SpatialInputHandler::OnSourceUpdated, this, _1, _2)
-           );
-```
-
-This is the event handler code. If the input source is experiencing a Grasp, the pointer pose will be stored for the next update loop. Otherwise, it will check for a Select press instead. From SpatialInputHandler.cpp:
-
-
-
-
-```cpp
-void SpatialInputHandler::OnSourceUpdated(SpatialInteractionManager^ sender, SpatialInteractionSourceEventArgs^ args)
-{
-    if (args->State->Source->IsGraspSupported)
+    SpatialInteractionSourceState^ sourceState = args->State;
+    if (sourceState->IsSelectPressed)
     {
-        if (args->State->IsGrasped)
-        {
-            m_sourceState = args->State;
-        }
-    }
-    else
-    {
-        if (args->State->IsSelectPressed)
-        {
-            m_sourceState = args->State;
-        }
+        // Select button is down, update app state
     }
 }
 ```
 
-Make sure to unregister the event handler in the destructor. From SpatialInputHandler.cpp:
+The above code only checks for the 'Select' press, which corresponds to the primary action on the device. For example, doing an AirTap on HoloLens or pulling the trigger on a motion controller.  'Select' presses represent the user's intention to activate the hologram they are targeting.  The SourcePressed event event will fire for a number of different buttons and gestures, and you can inspect other properties on the SpatialInteractionSource to test for those cases.
 
+### Polling-based input
+You can also use SpatialInteractionManager to poll for the current state of input every frame.  To do this, simply call GetDetectedSourcesAtTimestamp each frame.  This function returns an array containing one SpatialInteractionSourceState for every active SpatialInteractionSource. This means one for each active motion controller, one for each tracked hand, and one for speech if a "select" command was recently uttered. You can then inspect the properties on each SpatialInteractionSourceState, similar to the event-driven example, to drive input into your application.  Here is an example of how to check for the 'select' action using the polling method.
 
 ```cpp
-m_interactionManager->SourceUpdated -= m_sourcePressedEventToken;
+using Windows::UI::Input::Spatial;
+
+SpatialInteractionManager^ interactionManager = SpatialInteractionManager::GetForCurrentView();
+
+auto sourceStates = spatialInteractionManager->GetDetectedSourcesAtTimestamp(prediction->Timestamp);
+
+for(auto& sourceState : sourceStates)
+{
+    if (sourceState->IsSelectPressed)
+    {
+        // Select button is down, update app state
+    }
+}
 ```
 
-Recompile, and then redeploy. Your template project should now be able to recognize Grasp interactions to reposition the spinning cube.
+Each SpatialInteractionSource has an ID, which you can use to identify new sources and correlate existing sources from frame to frame.  Hands are assigned a new ID every time they leave and enter the FOV, but controller IDs remain static for the duration of the session.  You can use the events on SpatialInteractionManager such as [SourceDetected](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcedetected) and [SourceLost](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcelost), to react when hands enter or leave the device's view, or when motion controllers are turned on/off or are paired/unpaired.
 
-The SpatialInteractionSource API supports controllers with a wide range of capabilities. In the example shown above, we check to see if Grasp is supported before trying to use it. The SpatialInteractionSource supports the following optional features beyond the common **Select** press:
-* **Menu button:** Check support by inspecting the IsMenuSupported property. When supported, check the [SpatialInteractionSourceState::IsMenuPressed](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionsourcestate.aspx) property to find out if the menu button is pressed.
-* **Grasp button:** Check support by inspecting the IsGraspSupported property. When supported, check the [SpatialInteractionSourceState::IsGrasped](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialinteractionsourcestate.aspx) property to find out if grasp is activated.
+Note that GetDetectedSourcesAtTimestamp has a timestamp parameter.  This enables you to get historical data and correlate with other sources of input.  For typical usage, you can just pass in the predicted timestamp provided by the Holographic frame.  This enables the system to forward-predict input state such as hand position to closely align with the rendered frame output, minimizing percieved latency.
 
+## Cross-device input properties
+The SpatialInteractionSource API supports controllers and hand tracking systems with a wide range of capabilities. A number of these capabilities are common between device types. For example, hand tracking and motion controllers both provide a 'select' action and a 3D position. Wherever possible, the API maps these common capabilities to the same properties on the SpatialInteractionSource.  This enables applications to more easily support a wide range of input types. The following table describes the properties that are supported, and how they compare across input types.
+
+| Property | Description | HoloLens Gestures | Motion Controllers | Articulated Hands|
+|--- |--- |--- |--- |--- |
+| [SpatialInteractionSource::**Handedness**](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Right or left hand / controller. | Not Supported | Supported | Supported |
+| [SpatialInteractionSourceState::**IsSelectPressed**](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | Current state of the primary button. | Air Tap | Trigger | Relaxed Air Tap (upright pinch) |
+[SpatialInteractionSourceState::**IsGrasped**](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | Current state of the grab button. | Not Supported | Grab button | Pinch or Closed Hand |
+| [SpatialInteractionSourceState::**IsMenuPressed**](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | Current state of the menu button.    | Not Supported | Menu Button | Not Supported |
+| [SpatialInteractionSourceLocation::**Position**](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | XYZ location of the hand or grip position on the controller. Obtained through SpatialInteractionSourceState::Properties::TryGetLocation. | Palm location | Grip pose position | Palm location |
+| [SpatialInteractionSourceLocation::**Orientation**](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | Quaternion representing the orientation of the hand or grip pose on the controller.  Obtained through SpatialInteractionSourceState::Properties::TryGetLocation. | Not Supported | Grip pose orientation | Palm orientation |
+| [SpatialPointerInteractionSourcePose::**Position**](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Origin of the pointing ray.  Obtained through SpatialInteractionSourceState::TryGetInteractionSourcePose. | Not Supported | Supported | Supported |
+| [SpatialPointerInteractionSourcePose::**ForwardDirection**](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Direction of the pointing ray.  Obtained through SpatialInteractionSourceState::TryGetInteractionSourcePose. | Not Supported | Supported | Supported |
+
+Some of the above properties are not available on all devices, and the API provides a means to test for this. For example, you can inspect the [SpatialInteractionSource::IsGraspSupported](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) property to determine whether the source provides a grasp action.
+
+### Grip pose vs. pointing pose
+
+Windows Mixed Reality supports motion controllers in a variety of form factors.  It also supports articulated hand tracking systems.  All of these systems have different relationships between the hand position and the natural "forward" direction that apps should use for pointing or rendreing objects in the user's hand.  To support all of this, there are two types of 3D poses provided for hand tracking and motion controllers.  The first is grip pose, which represents the user's hand position.  The second is pointing pose, which represents a pointing ray originating from the user's hand or controller. So, if you want to render **the user's hand** or **an object held in the user's hand**, such as a sword or gun, use the grip pose. If you want to raycast from the controller or hand, for example when the user is **pointing at UI** , use the pointing pose.
+
+You can access the **grip pose** through [SpatialInteractionSourceState::Properties::TryGetLocation(...)](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_).  It is defined as follows:
+* The **grip position**: The palm centroid when holding the controller naturally, adjusted left or right to center the position within the grip.
+* The **grip orientation's Right axis**: When you completely open your hand to form a flat 5-finger pose, the ray that is normal to your palm (forward from left palm, backward from right palm)
+* The **grip orientation's Forward axis**: When you close your hand partially (as if holding the controller), the ray that points "forward" through the tube formed by your non-thumb fingers.
+* The **grip orientation's Up axis**: The Up axis implied by the Right and Forward definitions.
+
+You can access the **pointer pose** through [SpatialInteractionSourceState.Properties.TryGetLocation(...).SourcePointerPose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose) or [SpatialInteractionSourceState.TryGetPointerPose(...).TryGetInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_).
+
+## Controller-specific input properties
 For controllers, the SpatialInteractionSource has a Controller property with additional capabilities.
 * **HasThumbstick:** If true, the controller has a thumbstick. Inspect the [ControllerProperties](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractioncontrollerproperties) property of the SpatialInteractionSourceState to acquire the thumbstick x and y values (ThumbstickX and ThumbstickY), as well as its pressed state (IsThumbstickPressed).
 * **HasTouchpad:** If true, the controller has a touchpad. Inspect the ControllerProperties property of the SpatialInteractionSourceState to acquire the touchpad x and y values (TouchpadX and TouchpadY), and to know if the user is touching the pad (IsTouchpadTouched) and if they are pressing the touchpad down (IsTouchpadPressed).
 * **SimpleHapticsController:** The SimpleHapticsController API for the controller allows you to inspect the haptics capabilities of the controller, and it also allows you to control haptic feedback.
 
-Note that the range for touchpad and thumbstick from -1 to 1 for both axes (from bottom to top, and from left to right). The range for the analog trigger, which is accessed using the SpatialInteractionSourceState::SelectPressedValue property, has a range of 0 to 1. A value of 1 correlates with IsSelectPressed being equal to true; any other value correlates with IsSelectPressed being equal to false.
+Note that the range for touchpad and thumbstick is -1 to 1 for both axes (from bottom to top, and from left to right). The range for the analog trigger, which is accessed using the SpatialInteractionSourceState::SelectPressedValue property, has a range of 0 to 1. A value of 1 correlates with IsSelectPressed being equal to true; any other value correlates with IsSelectPressed being equal to false.
 
-Note that for both a hand and a controller, using SpatialInteractionSourceState::Properties::TryGetLocation will provide the user's hand position - this is distinct from the pointer pose representing the controller's pointing ray. If you want to draw something at the hand location, use TryGetLocation. If you want to raycast from the tip of the controller, get the pointing ray from TryGetInteractionSourcePose on the SpatialPointerPose.
+## Articulated hand tracking
+The Windows Mixed Reality API provides full support for articulated hand tracking, for example on HoloLens 2. Articulated hand tracking can be used to implement direct manipulation and point-and-commit input models in your applications. It can also be used to author fully custom interactions.
 
-You can also use the other events on SpatialInteractionManager, such as SourceDetected and SourceLost, to react when hands enter or leave the device's view or when they move in or out of the ready position (index finger raised with palm forward), or when motion controllers are turned on/off or are paired/unpaired.
+### Hand skeleton
+Articulated hand tracking provides a 25 joint skeleton that enables many different types of interactions.  The skeleton provides 5 joints for the index/middle/ring/little fingers, 4 joints for the thumb, and 1 wrist joint.  The wrist joint serves as the base of the hierarchy. The following picture illustrates the layout of the skeleton.
 
-### Grip pose vs. pointing pose
+![Hand Skeleton](images/hand-skeleton.png)
 
-Windows Mixed Reality supports motion controllers in a variety of form factors, with each controller's design differing in its relationship between the user's hand position and the natural "forward" direction that apps should use for pointing when rendering the controller.
+In most cases, each joint is named based on the bone that it represents.  Since there are two bones at every joint, we use a convention of naming each joint based on the child bone at that location.  The child bone is defined as the bone further from the wrist.  For example, the "Index Proximal" joint contains the beginning position of the index proximal bone, and the orientation of that bone.  It does not contain the ending position of the bone.  If you need that, you'd get it from the next joint in the hierarchy, the "Index Intermediate" joint.
 
-To better represent these controllers, there are two kinds of poses you can investigate for each interaction source:
-* The **grip pose**, representing the location of either the palm of a hand detected by a HoloLens, or the palm holding a motion controller.
-    * On immersive headsets, this pose is best used to render **the user's hand** or **an object held in the user's hand**, such as a sword or gun.
-    * The **grip position**: The palm centroid when holding the controller naturally, adjusted left or right to center the position within the grip.
-    * The **grip orientation's Right axis**: When you completely open your hand to form a flat 5-finger pose, the ray that is normal to your palm (forward from left palm, backward from right palm)
-    * The **grip orientation's Forward axis**: When you close your hand partially (as if holding the controller), the ray that points "forward" through the tube formed by your non-thumb fingers.
-    * The **grip orientation's Up axis**: The Up axis implied by the Right and Forward definitions.
-    * You can access the grip pose through [SpatialInteractionSourceState.Properties.TryGetLocation(...)](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_).
-* The **pointer pose**, representing the tip of the controller pointing forward.
-    * This pose is best used to raycast when **pointing at UI** when you are rendering the controller model itself.
-    * You can access the pointer pose through [SpatialInteractionSourceState.Properties.TryGetLocation(...).SourcePointerPose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose) or [SpatialInteractionSourceState.TryGetPointerPose(...).TryGetInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_).
+In addition to the 25 hierarchical joints, the system provides a palm joint.  The palm is not typically considered part of the skeletal structure.  It is provided only as a convenient way to get the hand's overall position and orientation.
 
-### Composite gestures: SpatialGestureRecognizer
+The following information is provided for each joint:
+| Name | Description |
+|--- | ---|
+|Position | 3D position of the joint, available in any requested coordinate system.|
+|Orientation | 3D orientation of the bone, available in any requested coordinate system.|
+|Radius | Distance to surface of the skin at the joint position. Useful for tuning direct interactions or visualizations that rely on finger width.|
+|Accuracy | Provides a hint on how confident the system feels about this joint's information.|
 
-A [SpatialGestureRecognizer](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialgesturerecognizer.aspx) interprets user interactions from hands, motion controllers, and the "Select" voice command to surface spatial gesture events, which users target using their head gaze.
+You can access the hand skeleton data through a function on the SpatialInteractionSourceState.  The function is called [TryGetHandPose](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygethandpose#Windows_UI_Input_Spatial_SpatialInteractionSourceState_TryGetHandPose), and it returns an object called [HandPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose).  If the source does not support articulated hands, then this function will return null.  Once you have a HandPose, you can get current joint data by calling [TryGetJoint](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose.trygetjoint#Windows_Perception_People_HandPose_TryGetJoint_Windows_Perception_Spatial_SpatialCoordinateSystem_Windows_Perception_People_HandJointKind_Windows_Perception_People_JointPose__), with the name of the joint you are interested in.  The data is returned as a [JointPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.jointpose) structure.  The following code gets the position of the index finger tip:
 
-Spatial gestures are a key form of input for Windows Mixed Reality apps. By routing interactions from the SpatialInteractionManager to a hologram's SpatialGestureRecognizer, apps can detect Tap, Hold, Manipulation, and Navigation events uniformly across hands, voice, and spatial input devices, without having to handle presses and releases manually.
+```cpp
+using namespace Windows::Perception::People;
+using namespace Windows::Foundation::Numerics;
+	
+auto handPose = currentState->TryGetHandPose();
+if (handPose)
+{
+    JointPose joint;
+    if(handPose->TryGetJoint(desiredCoordinateSystem, HandJointKind::IndexTip, &joint))
+    {
+        float3 indexTipPosition = joint.Position;
+        
+        // Do something with the index tip position
+
+    }
+}
+```
+
+### Hand mesh
+
+The articulated hand tracking API allows for a fully deformable triangle hand mesh.  This mesh can deform in real time along with the hand skeleton, and is useful for visualization as well as advanced physics techniques.  To access the hand mesh, you need to first create a [HandMeshObserver](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver) object by calling [TryCreateHandMeshObserverAsync](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync) on the SpatialInteractionSource.  This only needs to be done once per source, typically the first time you see it.  That means you'll call this function to create a HandMeshObserver object whenever a hand enters the FOV.  Note that this is an async function, so you'll have to deal with a bit of concurrency here.  Once available, you can ask the HandMeshObserver object for the triangle index buffer by calling [GetTriangleIndices](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver.gettriangleindices#Windows_Perception_People_HandMeshObserver_GetTriangleIndices_System_UInt16___).  Indices don't change frame over frame, so you can get those once and cache them for the lifetime of the source.  Indices are provided in clockwise winding order.  The following code creates the mesh observer and extracts the index buffer once the mesh observer is available.  This example starts from a variable called currentState, which is an instance of SpatialInteractionSourceState representing a tracked hand.
+
+```cpp
+using namespace Windows::Perception::People;
+
+auto source = currentState->Source;
+auto createHandMeshObserverTask = concurrency::create_task(source->TryCreateHandMeshObserverAsync());
+createHandMeshObserverTask.then([this](HandMeshObserver^ handMeshObserver)
+{
+  if(handMeshObserver != nullptr)
+  {
+    unsigned int indexCount = handMeshObserver->TriangleIndexCount;
+    auto indices = ref new Platform::Array<unsigned short>(indexCount);
+    handMeshObserver->GetTriangleIndices(indices);
+
+    // Save the indices, and the handMeshObserver pointer, for later use
+
+}
+});
+```
+
+Once you have a HandMeshObserver object, you should hold onto it for the duration that its corresponding SpatialInteractionSource is active.  Then each frame, you can ask it for the latest vertex buffer that represents the hand by calling [GetVertexStateForPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver.getvertexstateforpose) and passing in the same HandPose instance that was used earlier to get the hand skeleton.  Each vertex in the buffer has a position and a normal.  Here's an example of how to get the current set of vertices for a hand mesh.
+
+```cpp
+using namespace Windows::Perception::People;
+	
+auto vertices = ref new Platform::Array<HandMeshVertex>(handMeshObserver->VertexCount);
+auto handMeshVertexState = handMeshObserver->GetVertexStateForPose(handPose);
+handMeshVertexState->GetVertices(vertices);
+	
+auto meshTransform = handMeshVertexState->CoordinateSystem->TryGetTransformTo(desiredCoordinateSystem);
+if (meshTransform != nullptr)
+{
+    // Do something with the vertices and mesh transform, along with the indices that you saved earlier
+}
+```
+
+In contrast to skeleton joints, the hand mesh API does not allow you to specify a coordinate system for the vertices.  Instead, the [HandMeshVertexState](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshvertexstate) specifies the coordinate system that the vertices are provided in.  You can then get a mesh transform by calling TryGetTransformTo and specifying your desired coordinate system.  You'll need to use this mesh transform whenever you work with the vertices.  This approach reduces CPU overhead, especially if you are only using the mesh for rendering purposes.
+
+## Gaze and Commit composite gestures
+For applications using the gaze-and-commit input model, particularly on HoloLens (first gen), the MixedReality API provides an optional 
+ [SpatialGestureRecognizer](https://msdn.microsoft.com/library/windows/apps/windows.ui.input.spatial.spatialgesturerecognizer.aspx) that can be used to to enable composite gestures built on top of the 'select' event.  By routing interactions from the SpatialInteractionManager to a hologram's SpatialGestureRecognizer, apps can detect Tap, Hold, Manipulation, and Navigation events uniformly across hands, voice, and spatial input devices, without having to handle presses and releases manually.
 
 SpatialGestureRecognizer performs only the minimal disambiguation between the set of gestures that you request. For example, if you request just Tap, the user may hold their finger down as long as they like and a Tap will still occur. If you request both Tap and Hold, after about a second of holding down their finger, the gesture will promote to a Hold and a Tap will no longer occur.
 
 To use SpatialGestureRecognizer, handle the SpatialInteractionManager's [InteractionDetected](https://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialInteractionManager.InteractionDetected) event and grab the SpatialPointerPose exposed there. Use the user's head gaze ray from this pose to intersect with the holograms and surface meshes in the user's surroundings, in order to determine what the user is intending to interact with. Then, route the SpatialInteraction in the event arguments to the target hologram's SpatialGestureRecognizer, using its [CaptureInteraction](http://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureRecognizer.CaptureInteraction) method. This starts interpreting that interaction according to the [SpatialGestureSettings](https://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureSettings) set on that recognizer at creation time - or by [TrySetGestureSettings](http://msdn.microsoft.com/library/windows/apps/xaml/Windows.UI.Input.Spatial.SpatialGestureRecognizer.TrySetGestureSettings).
 
-On HoloLens, interactions and gestures should generally derive their targeting from the user's head gaze, rather than trying to render or interact at the hand's location directly. Once an interaction has started, relative motions of the hand may be used to control the gesture, as with the Manipulation or Navigation gesture.
+On HoloLens (first gen), interactions and gestures should generally derive their targeting from the user's head gaze, rather than trying to render or interact at the hand's location directly. Once an interaction has started, relative motions of the hand may be used to control the gesture, as with the Manipulation or Navigation gesture.
 
 ## See also
-* [Gaze](gaze.md)
-* [Gestures](gestures.md)
+* [Direct manipulation input model](direct-manipulation.md)
+* [Point-and-commit input model](point-and-commit.md)
+* [Gaze and commit input model](gaze-and-commit.md)
 * [Motion controllers](motion-controllers.md)
