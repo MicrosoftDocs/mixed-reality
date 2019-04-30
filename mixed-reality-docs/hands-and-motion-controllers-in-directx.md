@@ -1,6 +1,6 @@
 ---
 title: Hands and motion controllers in DirectX
-description: Needs description
+description: Developer guide for using hand tracking and motion controllers in native DirectX apps.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/23/2019
