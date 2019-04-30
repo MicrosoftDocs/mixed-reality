@@ -133,12 +133,13 @@ In most cases, each joint is named based on the bone that it represents.  Since 
 In addition to the 25 hierarchical joints, the system provides a palm joint.  The palm is not typically considered part of the skeletal structure.  It is provided only as a convenient way to get the hand's overall position and orientation.
 
 The following information is provided for each joint:
+
 | Name | Description |
 |--- |--- |
-|Position | 3D position of the joint, available in any requested coordinate system.|
-|Orientation | 3D orientation of the bone, available in any requested coordinate system.|
-|Radius | Distance to surface of the skin at the joint position. Useful for tuning direct interactions or visualizations that rely on finger width.|
-|Accuracy | Provides a hint on how confident the system feels about this joint's information.|
+|Position | 3D position of the joint, available in any requested coordinate system. |
+|Orientation | 3D orientation of the bone, available in any requested coordinate system. |
+|Radius | Distance to surface of the skin at the joint position. Useful for tuning direct interactions or visualizations that rely on finger width. |
+|Accuracy | Provides a hint on how confident the system feels about this joint's information. |
 
 You can access the hand skeleton data through a function on the SpatialInteractionSourceState.  The function is called [TryGetHandPose](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygethandpose#Windows_UI_Input_Spatial_SpatialInteractionSourceState_TryGetHandPose), and it returns an object called [HandPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose).  If the source does not support articulated hands, then this function will return null.  Once you have a HandPose, you can get current joint data by calling [TryGetJoint](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose.trygetjoint#Windows_Perception_People_HandPose_TryGetJoint_Windows_Perception_Spatial_SpatialCoordinateSystem_Windows_Perception_People_HandJointKind_Windows_Perception_People_JointPose__), with the name of the joint you are interested in.  The data is returned as a [JointPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.jointpose) structure.  The following code gets the position of the index finger tip:
 
