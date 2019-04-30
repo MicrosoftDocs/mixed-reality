@@ -45,6 +45,8 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 4. In the same inspector panel, check that the “Spatial Perception” checkbox in the capabilities section is enabled, under Publishing Settings. Spatial Perception will allow us to visualize the spatial mapping mesh on a mixed reality device such as the HoloLens 2. Publishing settings are found in the Inspector panel, above "XR Settings" and under "Other Settings."
 ![Lesson1 Chapter4 Step4](images/Lesson1Chapter4Step4.JPG)
 
+> NOTE: While not used in this section, some other common capabilities you may want to enable include Microphone (for voice commands) and InternetClient (for connecting to services requiring a network connection)
+
 ### Import the Mixed Reality Toolkit
 
 1. Download the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC1/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC1.unitypackage) unity package and save it to a folder on your PC.
@@ -56,8 +58,6 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 3. In the next pop-up window, click “Import” to begin importing the Mixed Reality Toolkit. Ensure all items are checked, as shown in the image. If you see a pop-up dialog box asking to apply Mixed Reality Toolkit default settings, click "Apply."
     ![Lesson1 Chapter2 Step3](images/Lesson1Chapter2Step3.JPG)
     ![Lesson1 Chapter2 Step3](images/Lesson1Chapter2Step3b.JPG)
-
-> NOTE: While not used in this section, some other common capabilities you may want to enable include Microphone (for voice commands) and InternetClient (for connecting to services requiring a network connection)
 
 ### Configure the Mixed Reality Toolkit
 
