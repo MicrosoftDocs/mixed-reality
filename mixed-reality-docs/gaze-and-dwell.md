@@ -1,7 +1,14 @@
+---
+title: Gaze and dwell
+description: Overview of the gaze and dwell input model
+author:  liamartinez
+ms.author: liamar
+ms.date: 03/31/2019
+ms.topic: article
+keywords: Mixed Reality, gaze, dwell, interaction, design
+---
 
-# Gaze and Dwell
-
-## Introduction
+# Gaze and dwell
 
 When hands are occupied with tools and parts, gestures can be tedious or impossible.  Voice commands, like gesture, can be situationally unreliable, for example under excessively loud conditions.  Additionally, using voice to control computers isn't a mainstream interaction yet, but it certainly is gaining steam!  Gaze dwell offers the most familiar and easy-to-master mechanism for working heads-up hands-free on HoloLens.  Additionally, gaze dwell is 100% reliable independent of noise interference nor silence constraints in the operating environment.
 
@@ -9,7 +16,7 @@ When hands are occupied with tools and parts, gestures can be tedious or impossi
 
 Provide a mechanism for full hands-free interactions, without using Voice.
 
-## Design Principles
+## Design principles
 
 1. Gaze is not a weapon
 	
@@ -23,7 +30,7 @@ Provide a mechanism for full hands-free interactions, without using Voice.
 
     The yo-yo effect (also known as "Night at the Roxbury") is an uncomfortable pattern that can emerge from certain  placement of content and gaze-based controls. For example, a list nav with the fill button at the bottom induces a loop of - look down to dwell, look up at results, look down to dwell, etc. This resulting pattern is uncomfortable and should be avoided by placing navigation controls in a centralized location that requires less back-and-forth. Placement of dwell buttons relative to their effects becomes important for comfort.
 
-## UI Patterns
+## UI patterns
 
 ### High frequency buttons
 	
@@ -87,7 +94,7 @@ Provide a mechanism for full hands-free interactions, without using Voice.
   * In our case, the words are short enough that a delay provides enough comfort before filling
 
 
-## UX Guidelines and Best Practices
+## UX Guidelines and best practices
 
 ### Target sizes
 
@@ -100,7 +107,7 @@ Provide a mechanism for full hands-free interactions, without using Voice.
   * Duration of dwell visual 1.2sec
   * Curve on animation?
 
-### Visual Feedback
+### Visual feedback
 
   * Radial fill from gaze cursor start location
   * Always radial fill from center of button. A consistent response is less confusing than all different directions on different buttons. 
@@ -113,3 +120,10 @@ Provide a mechanism for full hands-free interactions, without using Voice.
  * Text bar highlights with spotlight reveal on gaze anywhere on text
  * Gaze fill target appears always on left, but only for the list item which is highlighted
  * Try to avoid having all dwell targets on at all times due to repetitive look of stacked circles
+ 
+ ## See also
+* [Direct manipulation](direct-manipulation.md)
+* [Point and commit](point-and-commit.md)
+* [Interaction fundamentals](interaction-fundamentals.md)
+* [Head-gaze and commit](gaze-and-commit.md)
+* [Gaze and voice](voice-design.md)

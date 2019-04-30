@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module 3D Object Interaction
+title: MR Learning Base Module - 3D Object Interaction
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module 3D Object Interaction
+# MR Learning Base Module - 3D Object Interaction
 
 In this lesson, we will go through basic 3D content and user experience. We will learn how to organize 3D objects as part of a collection, learn about bounding boxes for basic manipulation, learn about near and far interaction, and learn about touch and grab gestures with hand tracking. 
 

@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module Project Initialization and First Application
+title: MR Learning Base Module - Project Initialization and First Application
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module Project Initialization and First Application
+# MR Learning Base Module - Project Initialization and First Application
 
 In this first lesson, we will learn some of the capabilities the Mixed Reality Toolkit has to offer, start your first application for the HoloLens 2, and deploy it to the device.
 

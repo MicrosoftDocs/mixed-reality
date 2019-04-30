@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
+title: MR Learning Base Module - User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
+# MR Learning Base Module - User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
 
 In the previous lesson, we learned some of the capabilities the MRTK had to offer, with starting your first application for the HoloLens 2. In this next lesson we’ll learn how to create and organize buttons along with UI text panels and use default interaction (touch) to interact with each button. We will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects. We will introduce basic concepts on how to modify MRTK profiles, starting with turning off the visualization of the spatial mesh. 
 
