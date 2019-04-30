@@ -57,6 +57,8 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
     ![Lesson1 Chapter2 Step3](images/Lesson1Chapter2Step3.JPG)
     ![Lesson1 Chapter2 Step3](images/Lesson1Chapter2Step3b.JPG)
 
+> NOTE: While not used in this section, some other common capabilities you may want to enable include Microphone (for voice commands) and InternetClient (for connecting to services requiring a network connection)
+
 ### Configure the Mixed Reality Toolkit
 
 1. Configure the Mixed Toolkit by selecting from the menu bar Mixed Reality Toolkit > Configure. If you don't see this menu item after importing the mixed reality toolkit, please restart Unity.
@@ -64,8 +66,6 @@ In this first lesson, we will learn some of the capabilities the Mixed Reality T
 2. Your scene will now have several new items and modifications in it from the Mixed Reality Toolkit. Save your scene under a different name by clicking on File>Save As and give your scene a name, e.g., BaseScene. Keep your scene organized by saving it to the “Scenes” folder in your project’s Assets folder.
 ![Lesson1 Chapter3 Step2a](images/Lesson1Chapter3Step2a.JPG)
 ![Lesson1 Chapter3 Step2b](images/Lesson1Chapter3Step2b.JPG)
-
-> NOTE: While not used in this section, some other common capabilities you may want to enable include Microphone (for voice commands) and InternetClient (for connecting to services requiring a network connection)
 
 ### Build your application to your device
 
