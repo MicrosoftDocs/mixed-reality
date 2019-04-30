@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module Dynamic Content Placement and Solvers
+title: MR Learning Base Module - Dynamic Content Placement and Solvers
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module Dynamic Content Placement and Solvers
+# MR Learning Base Module - Dynamic Content Placement and Solvers
 
 Holograms come to life in the HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In Lesson 3, we will explore ways to dynamically place holograms using the MRTK’s available placement tools, known as "solvers." They are known as "solvers" for the way they solve complex spatial placement algorithms. In the MRTK, solvers are a system of scripts and behaviors that we use to be able to allow UI elements to follow you, the user or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive. 
 
