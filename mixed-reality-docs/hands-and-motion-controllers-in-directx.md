@@ -134,7 +134,7 @@ In addition to the 25 hierarchical joints, the system provides a palm joint.  Th
 
 The following information is provided for each joint:
 | Name | Description |
-|--- | ---|
+|--- |--- |
 |Position | 3D position of the joint, available in any requested coordinate system.|
 |Orientation | 3D orientation of the bone, available in any requested coordinate system.|
 |Radius | Distance to surface of the skin at the joint position. Useful for tuning direct interactions or visualizations that rely on finger width.|
