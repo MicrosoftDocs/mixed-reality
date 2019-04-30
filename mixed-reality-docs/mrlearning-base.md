@@ -14,7 +14,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st Gen)</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens 2</a></th>
+<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st Gen)</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th><th style="width:150px"> <a href="https://www.microsoft.com/en-us/hololens/hardware">HoloLens 2</a></th>
 </tr><tr>
 <td></td><td style="text-align: center;"> </td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
