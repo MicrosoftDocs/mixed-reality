@@ -3,7 +3,7 @@ title: Advanced HoloLens Emulator and Mixed Reality Simulator input
 description: Detailed instructions for using the keyboard, mouse, and Xbox controller to simulate input for the HoloLens Emulator and Windows Mixed Reality simulator.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 04/25/2019
+ms.date: 04/26/2019
 ms.topic: article
 keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality
 ---
@@ -31,9 +31,9 @@ Motion refers to controlling and changing the position and orientation of someth
 * **Action**: This simulates the action of pressing the forefinger to the thumb or pulling the action button on a controller. For example, the Action input can be used to simulate the air-tap gesture, to scroll through content, and to press-and-hold.
 * **[Bloom](gestures.md#bloom)/System gesture or Home**: The HoloLens bloom/system gesture or a controller's Home button is used to return to the shell and to perform system actions.
 
-Hands have a rich reprresentation in HoloLens 2.  In addition to being tracked/not tracked, and usable for driving gestures, hands now have an articulated skeleton model fit to them and exposed to the developer.  This introduces 20 tracked points on each hand.  
+Hands have a rich reprresentation in HoloLens 2.  In addition to being tracked/not tracked, and usable for driving gestures, hands now have an articulated skeleton model fit to them and exposed to the developer.  This introduces 26 tracked points on each hand.  
 * **Joint**: One of twenty tracked positions for a given tracked hand. This will have a point is 3d space associated with it.
-* **Pose**: A complete collection of all of the Joints in a tracked hand. At this time, this is a collection of 20 Joints. 
+* **Pose**: A complete collection of all of the Joints in a tracked hand. At this time, this is a collection of 26 Joints. 
 
 At this time, we do not expose direct control of each joint position individually through the emulator user interface, though you may set them through the simulation API. Rather, we have a set of useful representative poses that the emulator allows you to toggle between.
 
@@ -114,9 +114,12 @@ The following set of controls is suggested for day-to-day use:
 |  Head Yaw |  H + drag mouse left / right |  H (on Keyboard) + right thumbstick left / right | 
 |  Head Pitch |  Drag mouse up / down |  Right thumbstick up / down | 
 |  Head Roll |  Q / E |  DPad left / right | 
-|  Hand/Controller X |  Alt + drag mouse left / right |  Shoulder + right thumbstick left / right | 
-|  Hand/Controller Y |  Alt + drag mouse up / down |  Shoulder + right thumbstick up / down | 
-|  Hand/Controller Z |  Alt + W / S |  Shoulder + left thumbstick up / down | 
+|  Hand/Controller X |  Alt + A / D |  Shoulder + left thumbstick left / right | 
+|  Hand/Controller Y |  Alt + Page up / page down |  Shoulder + DPad up / down | 
+|  Hand/Controller Z |  Alt + W / S |  Shoulder + Left thumbstick up / down | 
+|  Hand/Controller Yaw |  Alt + drag mouse left / right |  Shoulder + right thumbstick left / right | 
+|  Hand/Controller Pitch |  Alt + drag mouse up / down |  Shoulder + right thumbstick up / down | 
+|  Hand/Controller Roll |  Alt + Q / E |  Shoulder + DPad left / right | 
 |  Action |  Right mouse button |  Trigger | 
 |  Bloom / System / Home |  F2 or Windows key |  B button | 
 |  Reset |  Escape |  Start button | 
