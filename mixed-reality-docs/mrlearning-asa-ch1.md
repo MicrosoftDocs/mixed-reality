@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# Azure Spatial Anchors on HoloLens 2
+# Getting Started with Azure Spatial Anchors on HoloLens 2
 
 Welcome to the second module of the HoloLens 2 Tutorial! Before getting started, be sure that all of the [prerequisites](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-hololens) are completed. If you have not completed the first, [base module](link) yet, we highly recommend that you complete that first. If you are starting from a new unity project, follow the new project creation steps in the [base module](link). 
 
@@ -142,8 +142,18 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
     - Step 3 explanation
     - etc..
 
+### Anchoring an experience
+
+In the previous sections you've learned the fundamentals of how Azure Spatial Anchors. We've used a cube to represent and visualize the parent game object with the attached anchor. In this section, we'll learn how to anchor an entire experience by placing it as a child of the ParentAnchor object. For this example, we will use the Lunar Module Assembly demo app that was created during [Base Module Lesson 6](mrlearning-base-ch6.md).
+
+1. Search for the Lunar Module Assembly Complete prefab and drag it into your heirarchy as a child of the AnchorParent gameobject, as shown in the image below.
+
+2. Let's position the module assembly experience in such a way that the cube is still exposed, as shown in the image below. In the application, users may reposition the entire experience by moving the cube. 
+
+   > Note: There are a variety of user experience flows for repositioning experiences, including the use of a button to toggle a bounding box that surrounds the experience, use of a repositioning object (such as the cube used in this step), the use of position and rotation gizmos, and more.
+
 ## Congratulations
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+In this lesson, you learned the fundamentals of Azure Spatial Anchors. This lesson provided you with several buttons allowing you to explore the various steps required to start and stop an Azure session, and create, upload, and download azure anchors on a single device. In the next lesson, we'll learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted. During the series, you will also learn how to transfer anchor IDs between multiple devices to achieve spatial alignment, and eventually learn about multi-user shared sessions (forthcoming as part of sharing module.)
 
 [Next Lesson: ASA Lesson 2](mrlearning-base-ch3.md)
 
