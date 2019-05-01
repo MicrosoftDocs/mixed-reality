@@ -213,6 +213,7 @@ To use SpatialGestureRecognizer, handle the SpatialInteractionManager's [Interac
 On HoloLens (first gen), interactions and gestures should generally derive their targeting from the user's head gaze, rather than trying to render or interact at the hand's location directly. Once an interaction has started, relative motions of the hand may be used to control the gesture, as with the Manipulation or Navigation gesture.
 
 ## See also
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Direct manipulation input model](direct-manipulation.md)
 * [Point-and-commit input model](point-and-commit.md)
 * [Gaze and commit input model](gaze-and-commit.md)
