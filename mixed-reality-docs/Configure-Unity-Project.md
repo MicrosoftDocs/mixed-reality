@@ -49,7 +49,7 @@ Your app can now do basic holographic rendering and spatial input. To go further
 
 HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want the quality settings tuned for fastest performance to ensure we maintain full framerate:
 1. Select **Edit > Project Settings > Quality**
-2. Select the **dropdown** under the **Windows Store** logo and select **Fastest**. You'll know the setting is applied correctly when the box in the Windows Store column and **Fastest** row is green.
+2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green.
 
 ## Per-scene settings
 
