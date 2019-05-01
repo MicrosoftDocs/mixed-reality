@@ -119,13 +119,13 @@ Here are some examples of how affordances and behaviors are optimized for each i
         <td>I see/ hear visual and audible confirmations when I take action.</td>
     </tr>	
     <tr>
-        <td><a href="hands-free.md">Hands-Free (Gaze and dwell)</a></td>
+        <td><a href="hands-free.md">Hands-free (Gaze and dwell)</a></td>
         <td>I see a cursor in the center of my field of view.</td>
         <td>I see a progress indicator when I dwell on an interactable object.</td>
         <td>I see/ hear visual and audible confirmations when I take action.</td>
     </tr>
     <tr>
-        <td><a href="hands-free.md">Hands-Free (Voice commanding)</a></td>
+        <td><a href="hands-free.md">Hands-free (Voice commanding)</a></td>
         <td>I see a listening indicator and captions that show what the system heard.</td>
         <td>I get voice prompts and hints.  When I say "what can I say?" I see feedback.</td>
         <td>I see/ hear visual and audible confirmations when I give a command, or get disambiguation UX when needed.</a></td>
