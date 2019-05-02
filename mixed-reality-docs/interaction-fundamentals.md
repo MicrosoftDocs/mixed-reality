@@ -33,7 +33,7 @@ Each of these interaction models is convenient, powerful, and usable in its own 
 |--------- | --------------| ------------| ---------|
 **Example Scenarios** | 3D spatial experiences, e.g. spatial layout and design, content manipulation, or simulation | Contextual experiences where a user's hands are occupied, e.g. on the-job learning, maintenance| Click-through experiences, e.g. 3D presentations, demos
 **Fit** | Great for new users, coupled wit voice, eye tracking or head gaze. Low learning curve. Consistent UX across hand tracking and 6 DoF controllers. | Some learning required. If hands are unavailable pairs well with voice and natural language | Requires training on HMDs but not on mobile. Best for accessible controllers Best for HoloLens (1st gen) |
-**Hardware** | HoloLens 2 Immersive headsets | HoloLens 2 HoloLens (1st gen) Immersive headsets | HoloLens 2 Immersive headsets | HoloLens 2<br>HoloLens (1st gen) Immersive headsets Mobile AR |
+**Hardware** | HoloLens 2 Immersive headsets | HoloLens 2 HoloLens (1st gen) Immersive headsets | HoloLens 2 Immersive headsets | HoloLens 2 HoloLens (1st gen) Immersive headsets Mobile AR |
 
 Detailed information for using all available inputs seamlessly together in each interaction model is on the pages that follow, as well as illustrations and links to sample content from our Unity MRTK.
 
