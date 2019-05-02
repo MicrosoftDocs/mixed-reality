@@ -104,7 +104,7 @@ Here are some examples of how affordances and behaviors are optimized for each i
         <td><strong>Model</strong></td>
         <td><strong>How do I know it's working?</strong></td>
         <td><strong>How do I know what can I do?</strong></td>
-        <td><strong>How do I know what What I just did?</strong></td>
+        <td><strong>How do I know what I just did?</strong></td>
     </tr>
     <tr>
         <td><a href="hands-and-tools.md">Hands and tools</a></td>
