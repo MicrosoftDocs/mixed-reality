@@ -1,5 +1,5 @@
 ---
-title: Interaction Multimodal  overview
+title: Interaction Multimodal overview
 description: Overview of the multimodal interaction
 author: shengkait
 ms.author: shengkait
