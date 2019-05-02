@@ -31,7 +31,7 @@ HoloLens displays are fixed at an optical distance approximately 2.0m away from 
 ![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)<br>
 *Optimal distance for placing holograms from the user*
 
-#### Best practices for HoloLens (1st gen) and HoloLens 2
+### Best practices for HoloLens (1st gen) and HoloLens 2
 
 For maximum comfort, **the optimal zone for hologram placement is between 1.25m and 5m**. In every case, designers should attempt to structure content scenes to encourage users to interact 1m or farther away from the content (e.g. adjust [content size and default placement parameters](gaze-targeting.md)). 
 
@@ -39,7 +39,7 @@ Although content may occasionally need to be displayed closer than 1m, we recomm
 
 Objects that move in depth are more likely than stationary objects to produce discomfort due to the vergence-accommodation conflict. Similarly, requiring users to rapidly switch between near-focus and far-focus (e.g., because of a pop-up hologram requiring direct interaction) can cause visual discomfort and fatigue. Therefore, **extra care should be taken to minimize how often users are: viewing content that is moving in depth; or rapidly switching focus between near and far holograms**. 
 
-##### Additional considerations for HoloLens 2 and near interaction distances
+### Additional considerations for HoloLens 2 and near interaction distances
 
 When designing content for direct (near) interaction in HoloLens 2, or **in any applications where content must be placed closer than 1m, extra care should be taken to ensure user comfort**. The odds of discomfort due to the vergence-accommodation conflict increase exponentially with decreasing viewing distance. Additionally, users may experience increased bluriness when viewing content at near interaction distances, so we recommend testing content rendered both within the zone of optimal hologram placement as well as closer (less than 1.0m down to the clipping plane) to ensure it remains clear and comfortable to view. 
 
