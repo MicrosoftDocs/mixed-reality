@@ -170,5 +170,5 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 * [Gaze](gaze.md)
 * [Hologram stability](hologram-stability.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
-* [Holographic Frame](holographic-frame.md)
+* [Holographic frame](holographic-frame.md)
 * [Calibration](calibration.md)
