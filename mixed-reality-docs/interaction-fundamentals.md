@@ -57,7 +57,7 @@ e.g. on the-job learning, maintenance</td>
         <td>HoloLens 2<br>HoloLens (1st gen)<br> Windows Immersive</td>
     </tr>
     <tr>
-        <td><a href="gaze-and-commit.md">Gaze and commit</a></td>
+        <td><a href="gaze-and-commit.md">Head-gaze and commit</a></td>
         <td>Click-through experiences e.g. 3D presentations, demos</td>
         <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens (1st gen)</td>
         <td>HoloLens 2<br>HoloLens (1st gen)<br> Windows Immersive<br> Mobile AR</td>
@@ -113,7 +113,7 @@ Here are some examples of how affordances and behaviors are optimized for each i
         <td>I hear audible tones and see animations on grab and release.</td>
     </tr>
     <tr>
-        <td><a href="gaze-and-commit.md">Gaze and commit</a></td>
+        <td><a href="gaze-and-commit.md">Head-gaze and commit</a></td>
         <td>I see a cursor in the center of my field of view.</td>
         <td>The gaze cursor changes state when over certain objects.</td>
         <td>I see/ hear visual and audible confirmations when I take action.</td>
@@ -147,13 +147,13 @@ A:  We recommend the Hands and Tools model for the lowest learning curve and mos
 A:  The Hands and Tools model includes all guidance for a great experience with motion controllers.
  
 5.	Q:  Do my users use an accessibility controller or a common Bluetooth controller, such as a clicker?
-A:  We recommend the Gaze and commit model for all non-tracked controllers.  It's designed to allow a user to traverse an entire experience with a simple "target and commit" mechanic. 
+A:  We recommend the Head-gaze and commit model for all non-tracked controllers.  It's designed to allow a user to traverse an entire experience with a simple "target and commit" mechanic. 
  
 6.	Q: Do my users only progress through an experience by "clicking through" (for example in a 3d slideshow-like environment), as opposed to navigating dense layouts of UI controls?
-A:  If users do not need to control a lot of UI, Gaze and commit offers a learnable option where users do not have to worry about targeting. 
+A:  If users do not need to control a lot of UI, Head-gaze and commit offers a learnable option where users do not have to worry about targeting. 
  
 7.	Q:  Do my users use both HoloLens (1st gen) and HoloLens 2/ Windows Immersive (VR headsets)
-A:  Since Gaze and commit is the interaction model for HoloLens (1st gen), we recommend that creators who support HoloLens (1st gen) use Gaze and commit for any features or modes that users may experience on a HoloLens (1st gen) headset.  Please see the next section below on *Transitioning interaction models* for details on making a great experience for multiple HoloLens generations.
+A:  Since Head-gaze and commit is the interaction model for HoloLens (1st gen), we recommend that creators who support HoloLens (1st gen) use Head-gaze and commit for any features or modes that users may experience on a HoloLens (1st gen) headset.  Please see the next section below on *Transitioning interaction models* for details on making a great experience for multiple HoloLens generations.
  
 8.	Q: What about for users who are generally mobile (covering a large space or moving between spaces), versus users who tend to work in a single space?  
 A:  Any of the interaction models will work for these users.  
@@ -172,7 +172,7 @@ If your experience does require multiple interaction models, we've found that ma
  
 
 ## See also
-* [Gaze and commit](gaze-and-commit.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Direct manipulation](direct-manipulation.md)
 * [Point and commit](point-and-commit.md)
 * [Gaze targeting](gaze-targeting.md)
