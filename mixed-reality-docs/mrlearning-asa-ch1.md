@@ -14,9 +14,9 @@ Welcome to the second module of the HoloLens 2 Tutorial! Before getting started,
 
 ## Objectives
 
-* Download and import 3 different asset packets ([mixed reality toolkit](link to base module chater 1), [MR Base Module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1), and [Azure Spatial Anchors](https://github.com/azure/azure-spatial-anchors-samples/releases)) 
+* Learn the fundamentals of developing with Azure Spatial Anchors with the HoloLens 2
 
-* 
+* Create, Upload, and Download Spatial Anchors
 
   
 
@@ -29,9 +29,11 @@ Before beginning, you must download and import the following assets:
 
 [MR Base Module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
 
-[mixed reality toolkit](link to base module chater 1)
+[ASA Module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
 
-> Note: see step 5 for specific instructions on how to import the Azure Spatial Anchors, step 6 for specific instructions on the MR Base Module Asset Pack, and steps 3-4 for specific instructions on the mixed reality toolkit.
+[Mixed Reality Toolkit](link to base module chater 1)
+
+> Note: see step 5 for specific instructions on how to import the Azure Spatial Anchors, step 6 for specific instructions on the MR Base Module Asset Pack, and steps 3-4 for specific instructions on the Mixed Reality Toolkit.
 
 1. create a new scene in your project. Right click your scene folder, click "create," then scene. Name the new scene "ASALearningModule."
 
@@ -78,11 +80,13 @@ Now the scene is configured for mixed reality. Make sure you save your scene (do
 
    > Note: there may be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
 
+7. Import the ASA Module Pack using the same approach as importing the previous packages.
+
 ### Configuring your scene
 
 In this section, we will be adding prefabs and scripts into the scene to create a series of buttons that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
 
-   7. In the "project" tab, underneath the "assets" folder, click on "ASAModuleAssets." Once selected you will see 2 prefabs, "ButtonParent" and "ParentAnchor."
+8. In the "project" tab, underneath the "assets" folder, click on "ASAModuleAssets." Once selected you will see 2 prefabs, "ButtonParent" and "ParentAnchor."
 
 ![module2chapter1step5bim](images/module2chapter1step7im.PNG)
 
@@ -92,17 +96,16 @@ In this section, we will be adding prefabs and scripts into the scene to create 
    
          Double click on the parent anchor to select it. You may need to adjust your view to see the entire scene, so adjust your scene as needed.
          
-         3. Configure ParentAnchor. Currently, the game object named "ParentAnchor" is just a colored cube, for demonstration purposes. Eventually, we will hide the cube and place our content as a child of the ParentAnchor. Add the AzureDemo.cs script and the ASAModuleScript.cs script to the ParentAnchor object. TODO: elaborate on instructions.
+         3. Familiarize yourself with the ParentAnchor prefab. Currently, the game object named "ParentAnchor" is a colored cube, for demonstration purposes. Eventually, we will hide the cube and place our content as a child of the ParentAnchor. This prefab includes the AzureSpatialAnchorsDemoWrapper.cs script (included with the ASA SDK) and the ASAModuleScript.cs script (included as part of this module) to the ParentAnchor object. 
          
-         4. Configure Buttons. Under the ParentAnchor prefab, you will notice several labeled buttons. These buttons are created from the MRTK's PressableButton prefabs. Learn more about how to create Pressable Buttons from the Base Module here (TODO: we need to find and insert link to appropriate section). For each button, add an event that will be triggered when the user presses or selects the button according to the list below: TODO: Show detailed steps once, and then ask to repeat for other buttons.
+         4. Configure Buttons. Under the ParentAnchor prefab, you will notice several labeled buttons. These buttons are created from the MRTK's PressableButton prefabs. Learn more about how to create Pressable Buttons from the [Base Module](mrlearning-base-ch2.md). For each button, add an event that will be triggered when the user presses or selects the button according to the list below. 
          
-            - For the Button named "Start Azure Session" Assign the StartAzureSession() method.
-         
-            - For the Button named...
-         
-            - For the Button named...
-         
-            - For the Button named...
+         - For the Button named "StartAzureSession", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the StartAzureSession() method from the ParentAnchor Object's ASAModuleScript component.
+         - For the Button named "StopAzureSession", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the StopAzureSession() method from the ParentAnchor Object's ASAModuleScript component.
+         - For the Button named "CreateAnchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the CreateAzureAnchor() method from the ParentAnchor Object's ASAModuleScript component.
+         - For the Button named "Start Looking For Anchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the FindAzureAnchor() method from the ParentAnchor Object's ASAModuleScript component.
+         - For the Button named "DeleteAzureAnchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the DeleteAzureAnchor() method from the ParentAnchor Object's ASAModuleScript component.
+         - For the Button named "Delete Local Anchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the RemoveLocalAnchor() method from the ParentAnchor Object's ASAModuleScript component.
          
 ### Build and Demonstrate Base Application
 
@@ -136,11 +139,18 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
     ![Lesson1 Chapter5 Step8](images/Lesson1Chapter5Step8.JPG)
 9. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting “Start without Debugging” will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You may also select Build>Deploy Solution to deploy to your device without having the application automatically start.
     ![Lesson1 Chapter5 Step9](images/Lesson1Chapter5Step9.JPG)
-10. When the application is running on your device, please follow the on-screen instructions. Below you will find an explanation for each of the ten steps specified
-    - Start Azure Session. Think of this step as logging into your Azure Session. TODO: provide additional information.
-    - Step 2 explanation
-    - Step 3 explanation
-    - etc..
+10. When the application is running on your device, please follow the on-screen instructions. Please press the scene buttons corresponding to the steps below.
+    - Start the Azure spatial anchors session.
+    - Move the cube to a different location.
+    - Save the Azure spatial anchors at the location of the cube.
+    - Stop the Azure spatial anchors session.
+    5. Remove the local anchor on the cube to allow the user to move the cube.
+    - Move the cube somewhere else.
+    - Start Azure spatial anchors session.
+    8. Find Azure spatial anchors.
+    (now cube should go back to the original place you put it when you created the anchor).
+    - Delete Azure spatial anchor.
+    10. Stop Azure session.
 
 ### Anchoring an experience
 
