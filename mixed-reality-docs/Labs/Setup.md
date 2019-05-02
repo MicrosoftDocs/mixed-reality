@@ -2,6 +2,8 @@
 
 Getting started with the Azure Kinect DK API? Look no further! This document will get you up and running with access to the device!
 
+First, download and install the [Azure Kinect DK API](https://github.com/Microsoft/Azure-Kinect-Sensor-SDK) from Github.
+
 **Contents**  
 [Headers](#Headers)  
 [Finding a Kinect Device](#Finding-a-Kinect-Device)  
