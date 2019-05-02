@@ -3,7 +3,7 @@ title: Comfort
 description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
 author: erickjpaul
 ms.author: erpau
-ms.date: 02/13/2019
+ms.date: 04/5/2019
 ms.topic: article
 keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
 ---
@@ -31,7 +31,7 @@ HoloLens displays are fixed at an optical distance approximately 2.0m away from 
 ![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)<br>
 *Optimal distance for placing holograms from the user*
 
-#### Best practices for HoloLens (1st gen) and HoloLens 2
+### Best practices for HoloLens (1st gen) and HoloLens 2
 
 For maximum comfort, **the optimal zone for hologram placement is between 1.25m and 5m**. In every case, designers should attempt to structure content scenes to encourage users to interact 1m or farther away from the content (e.g. adjust [content size and default placement parameters](gaze-targeting.md)). 
 
@@ -39,7 +39,7 @@ Although content may occasionally need to be displayed closer than 1m, we recomm
 
 Objects that move in depth are more likely than stationary objects to produce discomfort due to the vergence-accommodation conflict. Similarly, requiring users to rapidly switch between near-focus and far-focus (e.g., because of a pop-up hologram requiring direct interaction) can cause visual discomfort and fatigue. Therefore, **extra care should be taken to minimize how often users are: viewing content that is moving in depth; or rapidly switching focus between near and far holograms**. 
 
-##### Additional considerations for HoloLens 2 and near interaction distances
+### Additional considerations for HoloLens 2 and near interaction distances
 
 When designing content for direct (near) interaction in HoloLens 2, or **in any applications where content must be placed closer than 1m, extra care should be taken to ensure user comfort**. The odds of discomfort due to the vergence-accommodation conflict increase exponentially with decreasing viewing distance. Additionally, users may experience increased bluriness when viewing content at near interaction distances, so we recommend testing content rendered both within the zone of optimal hologram placement as well as closer (less than 1.0m down to the clipping plane) to ensure it remains clear and comfortable to view. 
 
@@ -118,7 +118,7 @@ The preceding holographic device approach does not work as well in an immersive 
 
 In first-person-shooter videogames, heads-up displays (HUDs) persistently present information such as player health, mini-maps, and inventories directly on the screen. HUDs work well to keep the player informed without intruding on the gameplay experience. In mixed reality experiences, HUDs have the potential to cause significant discomfort and must be adapted to the more immersive context. Specifically, HUDs that are rigidly locked to the user’s head orientation are likely to produce discomfort. If an app requires a HUD, we recommend *body* locking rather than head locking. This treatment can be implemented as a set of displays that immediately translate with the user, but do not rotate with the user’s head until a threshold of rotation is reached. Once that rotation is achieved, the HUD may reorient to present the information within the user’s field of view. Implementing 1:1 HUD rotation and translation relative to the user’s head motions should always be avoided.
 
-## Text Legibility
+## Text legibility
 
 Optimal text legibility can help reduce eye strain and maintain user comfort, especially in applications or scenarios that require users to read while in an HMD. Text legibility depends on a variety of factors including various display properties (for example, pixel density, brightness, contrast), lens properties (for example, chromatic aberration), and text/font properties (for example, the specific font characteristics like weight, spacing, serifs, etc., color of font, color of background).  
 
@@ -170,5 +170,5 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 * [Gaze](gaze.md)
 * [Hologram stability](hologram-stability.md)
 * [Interaction fundamentals](interaction-fundamentals.md)
-* [Holographic Frame](holographic-frame.md)
+* [Holographic frame](holographic-frame.md)
 * [Calibration](calibration.md)
