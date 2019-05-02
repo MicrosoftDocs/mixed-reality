@@ -3,7 +3,7 @@ title: Comfort
 description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
 author: erickjpaul
 ms.author: erpau
-ms.date: 02/13/2019
+ms.date: 04/5/2019
 ms.topic: article
 keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
 ---
@@ -118,7 +118,7 @@ The preceding holographic device approach does not work as well in an immersive 
 
 In first-person-shooter videogames, heads-up displays (HUDs) persistently present information such as player health, mini-maps, and inventories directly on the screen. HUDs work well to keep the player informed without intruding on the gameplay experience. In mixed reality experiences, HUDs have the potential to cause significant discomfort and must be adapted to the more immersive context. Specifically, HUDs that are rigidly locked to the user’s head orientation are likely to produce discomfort. If an app requires a HUD, we recommend *body* locking rather than head locking. This treatment can be implemented as a set of displays that immediately translate with the user, but do not rotate with the user’s head until a threshold of rotation is reached. Once that rotation is achieved, the HUD may reorient to present the information within the user’s field of view. Implementing 1:1 HUD rotation and translation relative to the user’s head motions should always be avoided.
 
-## Text Legibility
+## Text legibility
 
 Optimal text legibility can help reduce eye strain and maintain user comfort, especially in applications or scenarios that require users to read while in an HMD. Text legibility depends on a variety of factors including various display properties (for example, pixel density, brightness, contrast), lens properties (for example, chromatic aberration), and text/font properties (for example, the specific font characteristics like weight, spacing, serifs, etc., color of font, color of background).  
 
