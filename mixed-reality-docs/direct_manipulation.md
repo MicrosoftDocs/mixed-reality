@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
 ---
 
-# Direct Mmanipulation
+# Direct Manipulation
 
 The HoloLens 2 has a direct manipulation input model that lets you touch holograms dircly with your hands. The goal with direct manipulation is for objects to behave just as they do in the real world. You can activate buttons by simply pressing them, and even and pick up, grab, and move objects. In these scenarios, 2D content behaves like a virtual touchscreen.
 
