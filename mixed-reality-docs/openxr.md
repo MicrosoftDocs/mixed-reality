@@ -49,9 +49,9 @@ To get going with the Mixed Reality OpenXR Developer Preview on a desktop PC wit
 
 ## Building a sample OpenXR app
 
-The [BasicXrApp](https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/initial_checkin_vs_sample/samples/BasicXrApp) project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.
+The [BasicXrApp](https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp) project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
 
-While the Win32 and UWP project files are separate due to differences in packaging and deployment, the code inside each project is 100% the same!
+Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is 100% the same!
 
 ## Feedback
 
