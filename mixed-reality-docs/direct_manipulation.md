@@ -132,7 +132,7 @@ For example, imagine you are reading through a holographic (instructional) text 
 
   While eye tracking on HoloLens 2 has a certain limitation on how accurately it can determine you eye gaze, this can still be very helpful for near interactions due to depth disparity when interacting with hand input.  This means that it is sometimes difficult to determine whether your hand is behind or in front of a hologram to precisely grab a manipulation widget for example.
 
- * **Where to**: Use information about what a user is looking at with quick- throwing gestures. Grab a hologram and roughly toss it toward your intended destination.  
+* **Where to**: Use information about what a user is looking at with quick- throwing gestures. Grab a hologram and roughly toss it toward your intended destination.  
 
     While this may sometimes works just fine, quickly performing hand gestures may result in highly inaccurate destinations. This is where eye tracking could help out to lean the hand throwing vector back to your intended position.
 
