@@ -66,7 +66,7 @@ With a collidable fingertip, users are now ready to interact with the very funda
 * The second one is depression. It creates sense of press, after a fingertip contacts the button. The mechanism is that the button tightly moves with the fingertip along the depth axis. The button can be triggered when it reaches a designated depth (on press) or leaves the depth (on release) after passing through it.
 * The sound effect should be added to enhance feedback, when the button is triggered.
 
-![Pressable button image](images/Pressable-Button-720px.jpg)<br>
+![Pressable button image](images/Pressable-Button-720px.jpg)
 
 ## 2D slate interaction
 
@@ -106,7 +106,7 @@ Specific manipulation requires precision, we recommend you use **affordance-base
 
 ## Instinctual gestures
 
-Unlike HoloLens (1st gen), we taught users a couple predefined gestures,such as Bloom and Air Tap. For HoloLens 2, we don't ask users to memorize any symbolic gestures. All required user gestures, users need to interact with holograms and contents, are instinctual. The way to achieve instinctual gesture is to guide users to perform gestures through the design of UI affordances. 
+Unlike HoloLens (1st gen), we taught users a couple predefined gestures,such as Bloom and Air Tap. For HoloLens 2, we don't ask users to memorize any symbolic gestures. All required user gestures, users need to interact with holograms and contents, are instinctual. The way to achieve instinctual gesture is to guide users to perform gestures through the design of UI affordances.
 
 For example, if we encourage you to grab an object or a control point with two finger pinch, the object or the control point should be small. If we want you to perform five finger grab, the object or the control point should be relatively big. Similar to buttons, a tiny button would limit users to press it with a single finger, while a huge button would encourage users to press it with their palms.
 
