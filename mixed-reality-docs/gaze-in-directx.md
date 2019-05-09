@@ -18,7 +18,7 @@ In Windows Mixed Reality, gaze input is used to determine what the user is looki
 
 Both head and eye gaze rays are accessible through the  [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API. Simply call [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to recieve a new SpatialPointerPose object at the specified timestamp and [coordinate system](coordinate-systems-in-directx.md). This SpatialPointerPose contains a head gaze origin and direction. It also contains an eye gaze origin and direction if eye tracking is available.
 
-## Accessing the head gaze
+## Using head gaze
 
 To access the head gaze, start by calling  [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to recieve a new SpatialPointerPose object. You need to pass the following parameters.
  - A [SpatialCoordinateSystem](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialcoordinatesystem) that represents the desired coordinate system for the head gaze. This is represented by the *coordinateSystem* variable in the following code. For more information, visit our [coordinate systems](coordinate-systems-in-directx.md) developer guide.
@@ -27,28 +27,64 @@ To access the head gaze, start by calling  [SpatialPointerPose::TryGetAtTimestam
  Once you have a valid SpatialPointerPose, the head position and forward direction, are easily available as properties.  The following code snippet shows how to access these.
 
  ```cpp
-using Windows::UI::Input::Spatial;
-using Windows::Foundation::Numerics;
+using winrt::Windows::UI::Input::Spatial;
+using winrt::Windows::Foundation::Numerics;
 
-SpatialPointerPose^ pointerPose = SpatialPointerPose::TryGetAtTimestamp(coordinateSystem, prediction->Timestamp);
+SpatialPointerPose pointerPose = SpatialPointerPose::TryGetAtTimestamp(m_referenceFrame.CoordinateSystem(), prediction.Timestamp());
 if (pointerPose)
 {
-	float3 headPosition = pointerPose->Head->Position;
-	float3 headForwardDirection = pointerPose->Head->ForwardDirection;
+	float3 headPosition = pointerPose.Head().Position();
+	float3 headForwardDirection = pointerPose.Head().ForwardDirection();
 
 	// Do something with the head gaze
 }
 ```
 
-## Accessing the eye gaze
+## Using eye gaze
 
-Accessing the eye gaze is very similar to the head gaze, but requires a bit of extra initialization work to enable.
+The eye gaze API is very similar to head gaze.  It uses the same  [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API, which provides a ray origin and direction that you can raycast against your scene.  The only difference is you need to explicitly enable eye tracking before using it.
 
 ### Enabling eye tracking
 
-In order to use eye tracking, you must first enable it by requesting access.
+In order to use eye tracking, you must first enable it by requesting access. There are two parts to this.
 
-### Accessing the eye gaze
+#### 1) Declare the *Gaze Input* capability
+
+Double click the appxmanifest file in *Solution Explorer*.  Then navigate to the *Capabilities* section and check the *Gaze Input* capability. 
+
+![Gaze input capability](images/gaze-input-capability.png)
+
+This adds the following lines to the *Package* section in the  appxmanifest file:
+```xml
+  <Capabilities>
+    <DeviceCapability Name="gazeInput" />
+  </Capabilities>
+```
+
+### 2) Request access to gaze input
+At some point when your app is starting up, call [EyesPose::RequestAccessAsync](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) to request access to eye tracking. The call will return [GazeInputAccessStatus::Allowed](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.gazeinputaccessstatus) once access has been granted. Note that this is an asynchronous call, so you will have to manage it appropriately. The following example spins up a detached std::thread to wait for the result, which it stores to a member variable called *m_isEyeTrackingEnabled*.
+
+```cpp
+using namespace winrt::winrt::Windows::Perception::People;
+using namespace winrt::Windows::UI::Input;
+
+std::thread requestAccessThread([this]()
+{
+	auto status = EyesPose::RequestAccessAsync().get();
+
+	if (status == GazeInputAccessStatus::Allowed)
+		m_isEyeTrackingEnabled = true;
+	else
+		m_isEyeTrackingEnabled = false;
+});
+
+requestAccessThread.detach();
+
+```
+
+Alternatively, you could handle this async behavior with the new [co_await](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/concurrency) functionality supported by C++/WinRT.
+
+### Accessing the eye gaze ray
 
 The following code shows how to access the latest eye gaze.  Note that the first part of this, getting the [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose), is exactly the same between head gaze and eye gaze.  Feel free to only call [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) once if your app uses both head gaze and eye gaze.
 
