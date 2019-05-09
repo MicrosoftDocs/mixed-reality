@@ -139,7 +139,7 @@ The following information is provided for each joint:
 |Radius | Distance to surface of the skin at the joint position. Useful for tuning direct interactions or visualizations that rely on finger width. |
 |Accuracy | Provides a hint on how confident the system feels about this joint's information. |
 
-You can access the hand skeleton data through a function on the SpatialInteractionSourceState.  The function is called [TryGetHandPose](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygethandpose#Windows_UI_Input_Spatial_SpatialInteractionSourceState_TryGetHandPose), and it returns an object called [HandPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose).  If the source does not support articulated hands, then this function will return null.  Once you have a HandPose, you can get current joint data by calling [TryGetJoint](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose.trygetjoint#Windows_Perception_People_HandPose_TryGetJoint_Windows_Perception_Spatial_SpatialCoordinateSystem_Windows_Perception_People_HandJointKind_Windows_Perception_People_JointPose__), with the name of the joint you are interested in.  The data is returned as a [JointPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.jointpose) structure.  The following code gets the position of the index finger tip:
+You can access the hand skeleton data through a function on the SpatialInteractionSourceState.  The function is called [TryGetHandPose](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygethandpose#Windows_UI_Input_Spatial_SpatialInteractionSourceState_TryGetHandPose), and it returns an object called [HandPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose).  If the source does not support articulated hands, then this function will return null.  Once you have a HandPose, you can get current joint data by calling [TryGetJoint](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose.trygetjoint#Windows_Perception_People_HandPose_TryGetJoint_Windows_Perception_Spatial_SpatialCoordinateSystem_Windows_Perception_People_HandJointKind_Windows_Perception_People_JointPose__), with the name of the joint you are interested in.  The data is returned as a [JointPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.jointpose) structure.  The following code gets the position of the index finger tip. The varaible *currentState* represents an instance of [SpatialInteractionSourceState](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate).
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -160,25 +160,28 @@ if (handPose)
 
 ### Hand mesh
 
-The articulated hand tracking API allows for a fully deformable triangle hand mesh.  This mesh can deform in real time along with the hand skeleton, and is useful for visualization as well as advanced physics techniques.  To access the hand mesh, you need to first create a [HandMeshObserver](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver) object by calling [TryCreateHandMeshObserverAsync](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync) on the SpatialInteractionSource.  This only needs to be done once per source, typically the first time you see it.  That means you'll call this function to create a HandMeshObserver object whenever a hand enters the FOV.  Note that this is an async function, so you'll have to deal with a bit of concurrency here.  Once available, you can ask the HandMeshObserver object for the triangle index buffer by calling [GetTriangleIndices](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver.gettriangleindices#Windows_Perception_People_HandMeshObserver_GetTriangleIndices_System_UInt16___).  Indices don't change frame over frame, so you can get those once and cache them for the lifetime of the source.  Indices are provided in clockwise winding order.  The following code creates the mesh observer and extracts the index buffer once the mesh observer is available.  This example starts from a variable called currentState, which is an instance of SpatialInteractionSourceState representing a tracked hand.
+The articulated hand tracking API allows for a fully deformable triangle hand mesh.  This mesh can deform in real time along with the hand skeleton, and is useful for visualization as well as advanced physics techniques.  To access the hand mesh, you need to first create a [HandMeshObserver](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver) object by calling [TryCreateHandMeshObserverAsync](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync) on the SpatialInteractionSource.  This only needs to be done once per source, typically the first time you see it.  That means you'll call this function to create a HandMeshObserver object whenever a hand enters the FOV.  Note that this is an async function, so you'll have to deal with a bit of concurrency here.  Once available, you can ask the HandMeshObserver object for the triangle index buffer by calling [GetTriangleIndices](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver.gettriangleindices#Windows_Perception_People_HandMeshObserver_GetTriangleIndices_System_UInt16___).  Indices don't change frame over frame, so you can get those once and cache them for the lifetime of the source.  Indices are provided in clockwise winding order.
+
+The following code spins up a detached std::thread to create the mesh observer and extracts the index buffer once the mesh observer is available.  It starts from a variable called *currentState*, which is an instance of [SpatialInteractionSourceState](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate). representing a tracked hand.
 
 ```cpp
 using namespace Windows::Perception::People;
 
-auto source = currentState->Source;
-auto createHandMeshObserverTask = concurrency::create_task(source->TryCreateHandMeshObserverAsync());
-createHandMeshObserverTask.then([this](HandMeshObserver^ handMeshObserver)
+std::thread createObserverThread([this, currentState]()
 {
-  if(handMeshObserver != nullptr)
-  {
-    unsigned int indexCount = handMeshObserver->TriangleIndexCount;
-    auto indices = ref new Platform::Array<unsigned short>(indexCount);
-    handMeshObserver->GetTriangleIndices(indices);
+    winrt::Windows::Perception::People::HandMeshObserver newHandMeshObserver = currentState.Source().TryCreateHandMeshObserverAsync().get();
+    if (newHandMeshObserver)
+    {
+        unsigned int indexCount = handMeshObserver->TriangleIndexCount;
+        auto indices = ref new Platform::Array<unsigned short>(indexCount);
+        handMeshObserver->GetTriangleIndices(indices);
 
-    // Save the indices, and the handMeshObserver pointer, for later use
-}
+        // Save the indices and handMeshObserver for later use - and use a mutex to synchronize access if needed!
+     }
 });
+createObserverThread.detach();
 ```
+Starting a detached thread is just one option for handling async calls.  Alternatively, you could use the new [co_await](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/concurrency) functionality supported by C++/WinRT.
 
 Once you have a HandMeshObserver object, you should hold onto it for the duration that its corresponding SpatialInteractionSource is active.  Then each frame, you can ask it for the latest vertex buffer that represents the hand by calling [GetVertexStateForPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver.getvertexstateforpose) and passing in the same HandPose instance that was used earlier to get the hand skeleton.  Each vertex in the buffer has a position and a normal.  Here's an example of how to get the current set of vertices for a hand mesh.
 
