@@ -14,7 +14,7 @@ When hands are occupied with tools and parts, gestures can be tedious or impossi
 
 ## Goals
 
-Provide a mechanism for full hands-free interactions, without using Voice.
+Provide a mechanism for full hands-free interactions, without using voice.
 
 ## Design principles
 
@@ -38,7 +38,7 @@ Provide a mechanism for full hands-free interactions, without using Voice.
   * Very short delay pre-fill (flyover flicker buffer)
   * Larger buttons are easier to hit with gaze
   * Nice to keep these at eye height so no strain to interact
-  * Dwell region can be larger than inactive icon to make it easier to use (BACK)
+  * Dwell region can be larger than inactive icon to make it easier to use (Back)
 
 ### Low frequency buttons
 	
@@ -94,7 +94,7 @@ Provide a mechanism for full hands-free interactions, without using Voice.
   * In our case, the words are short enough that a delay provides enough comfort before filling
 
 
-## UX Guidelines and best practices
+## UX guidelines and best practices
 
 ### Target sizes
 
@@ -111,10 +111,10 @@ Provide a mechanism for full hands-free interactions, without using Voice.
 
   * Radial fill from gaze cursor start location
   * Always radial fill from center of button. A consistent response is less confusing than all different directions on different buttons. 
-    * This rule can be broken though for directional interactions (e.g., nav up/down/left/right, etc.). For example, Guides makes an exception on NEXT/BACK being left right fills.
+    * This rule can be broken though for directional interactions (e.g., nav up/down/left/right, etc.). For example, Guides makes an exception on Next/Back being left right fills.
     * Consider inverting radial fill from outside (if toggling off). THe inverse feeling of pushing a button is a nice visual pattern to maintain. 
 
-### Progressive Disclosure
+### Progressive disclosure
 
  * Progressive disclosure means that the dwell target is revealed on highlight (e.g., in a list control)
  * Text bar highlights with spotlight reveal on gaze anywhere on text

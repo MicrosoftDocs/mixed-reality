@@ -103,7 +103,7 @@ Here are some examples of how affordances and behaviors are optimized for each i
     <tr>
         <td><strong>Model</strong></td>
         <td><strong>How do I know it's working?</strong></td>
-        <td><strong>How do I know what can I do?</strong></td>
+        <td><strong>How do I know what I can do?</strong></td>
         <td><strong>How do I know what I just did?</strong></td>
     </tr>
     <tr>
