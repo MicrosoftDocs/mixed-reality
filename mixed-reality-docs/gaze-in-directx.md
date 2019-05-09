@@ -27,8 +27,8 @@ To access the head gaze, start by calling  [SpatialPointerPose::TryGetAtTimestam
  Once you have a valid SpatialPointerPose, the head position and forward direction, are easily available as properties.  The following code snippet shows how to access these.
 
  ```cpp
-using winrt::Windows::UI::Input::Spatial;
-using winrt::Windows::Foundation::Numerics;
+using namespace winrt::Windows::UI::Input::Spatial;
+using namespace winrt::Windows::Foundation::Numerics;
 
 SpatialPointerPose pointerPose = SpatialPointerPose::TryGetAtTimestamp(coordinateSystem, prediction.Timestamp());
 if (pointerPose)
@@ -91,8 +91,8 @@ Once you have recieved access to ET, you are free to get the latest eye gaze ray
 The following code shows how to access the eye gaze ray.
 
 ```cpp
-using winrt::Windows::UI::Input::Spatial;
-using winrt::Windows::Foundation::Numerics;
+using namespace winrt::Windows::UI::Input::Spatial;
+using namespace winrt::Windows::Foundation::Numerics;
 
 SpatialPointerPose pointerPose = SpatialPointerPose::TryGetAtTimestamp(coordinateSystem, prediction.Timestamp());
 if (pointerPose)

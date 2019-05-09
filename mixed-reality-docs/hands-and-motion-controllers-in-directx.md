@@ -17,9 +17,9 @@ In Windows Mixed Reality, both hand and [motion controller](motion-controllers.m
 To access spatial input in Windows Mixed Reality, start with the SpatialInteractionManager interface.  You can access this interface by calling  [SpatialInteractionManager::GetForCurrentView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getforcurrentview), typically sometime during app startup.
 
 ```cpp
-using Windows::UI::Input::Spatial;
+using namespace winrt::Windows::UI::Input::Spatial;
 
-SpatialInteractionManager^ interactionManager = SpatialInteractionManager::GetForCurrentView();
+SpatialInteractionManager interactionManager = SpatialInteractionManager::GetForCurrentView();
 ```
 
 The SpatialInteractionManager's job is to provide access to [SpatialInteractionSources](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsource), which represent a source of input.  There are three kinds of SpatialInteractionSources available in the system.
@@ -35,48 +35,46 @@ The SpatialInteractionManager provies a number of events that your app can liste
 For example, the following code hooks up an event handler called MyApp::OnSourcePressed to the SourcePressed event.  This allows your app to detect presses on any type of interaction source.
 
 ```cpp
-using Windows::UI::Input::Spatial;
+using namespace winrt::Windows::UI::Input::Spatial;
 
-SpatialInteractionManager^ interactionManager = SpatialInteractionManager::GetForCurrentView();
-    
-interactionManager->SourcePressed +=
-    ref new TypedEventHandler<SpatialInteractionManager^, SpatialInteractionSourceEventArgs^>(
-        std::bind(&MyApp::OnSourcePressed, this, std::placeholders::_1, std::placeholders::_2));
+auto interactionManager = SpatialInteractionManager::GetForCurrentView();
+interactionManager.SourcePressed({ this, &MyApp::OnSourcePressed });
+
 ```
 
-This pressed event is sent to your app asynchronously, along with the corresponding SpatialInteractionSourceState at the time the press happened. Your app or game engine may want to perform some processing right away or you may want to queue up the event data in your input processing routine. Here is an event handler function for the SourcePressed event, which shows how to access the source state data and check whether the select button is down.
+This pressed event is sent to your app asynchronously, along with the corresponding SpatialInteractionSourceState at the time the press happened. Your app or game engine may want to perform some processing right away or you may want to queue up the event data in your input processing routine. Here is an event handler function for the SourcePressed event, which shows how to check whether the select button was pressed.
 
 ```cpp
-using Windows::UI::Input::Spatial;
+using namespace winrt::Windows::UI::Input::Spatial;
 
-void MyApp::OnSourcePressed(SpatialInteractionManager^ sender, SpatialInteractionSourceEventArgs^ args)
+void MyApp::OnSourcePressed(SpatialInteractionManager const& sender, SpatialInteractionSourceEventArgs const& args)
 {
-    SpatialInteractionSourceState^ sourceState = args->State;
-    if (sourceState->IsSelectPressed)
-    {
-        // Select button is down, update app state
-    }
+	if (args.PressKind() == SpatialInteractionPressKind::Select)
+	{
+		// Select button was pressed, update app state
+	}
 }
 ```
 
 The above code only checks for the 'Select' press, which corresponds to the primary action on the device. For example, doing an AirTap on HoloLens or pulling the trigger on a motion controller.  'Select' presses represent the user's intention to activate the hologram they are targeting.  The SourcePressed event event will fire for a number of different buttons and gestures, and you can inspect other properties on the SpatialInteractionSource to test for those cases.
 
 ### Polling-based input
-You can also use SpatialInteractionManager to poll for the current state of input every frame.  To do this, simply call GetDetectedSourcesAtTimestamp each frame.  This function returns an array containing one SpatialInteractionSourceState for every active SpatialInteractionSource. This means one for each active motion controller, one for each tracked hand, and one for speech if a "select" command was recently uttered. You can then inspect the properties on each SpatialInteractionSourceState, similar to the event-driven example, to drive input into your application.  Here is an example of how to check for the 'select' action using the polling method.
+You can also use SpatialInteractionManager to poll for the current state of input every frame.  To do this, simply call GetDetectedSourcesAtTimestamp each frame.  This function returns an array containing one SpatialInteractionSourceState for every active SpatialInteractionSource. This means one for each active motion controller, one for each tracked hand, and one for speech if a "select" command was recently uttered. You can then inspect the properties on each SpatialInteractionSourceState, similar to the event-driven example, to drive input into your application. 
+
+Here is an example of how to check for the 'select' action using the polling method. Note that the *prediction* variable represents a [HolographicFramePrediction](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) object, which can be obtained from the [HolographicFrame](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicframe).
 
 ```cpp
-using Windows::UI::Input::Spatial;
+using namespace winrt::Windows::UI::Input::Spatial;
 
-SpatialInteractionManager^ interactionManager = SpatialInteractionManager::GetForCurrentView();
+auto interactionManager = SpatialInteractionManager::GetForCurrentView();
+auto sourceStates = m_spatialInteractionManager.GetDetectedSourcesAtTimestamp(prediction.Timestamp());
 
-auto sourceStates = spatialInteractionManager->GetDetectedSourcesAtTimestamp(prediction->Timestamp);
-
-for(auto& sourceState : sourceStates)
+for (auto& sourceState : sourceStates)
 {
-    if (sourceState->IsSelectPressed)
-    {
-        // Select button is down, update app state
-    }
+	if (sourceState.IsSelectPressed())
+	{
+		// Select button is down, update app state
+	}
 }
 ```
 
@@ -144,20 +142,19 @@ The following information is provided for each joint:
 You can access the hand skeleton data through a function on the SpatialInteractionSourceState.  The function is called [TryGetHandPose](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygethandpose#Windows_UI_Input_Spatial_SpatialInteractionSourceState_TryGetHandPose), and it returns an object called [HandPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose).  If the source does not support articulated hands, then this function will return null.  Once you have a HandPose, you can get current joint data by calling [TryGetJoint](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose.trygetjoint#Windows_Perception_People_HandPose_TryGetJoint_Windows_Perception_Spatial_SpatialCoordinateSystem_Windows_Perception_People_HandJointKind_Windows_Perception_People_JointPose__), with the name of the joint you are interested in.  The data is returned as a [JointPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.jointpose) structure.  The following code gets the position of the index finger tip:
 
 ```cpp
-using namespace Windows::Perception::People;
-using namespace Windows::Foundation::Numerics;
-	
-auto handPose = currentState->TryGetHandPose();
+using namespace winrt::Windows::Perception::People;
+using namespace winrt::Windows::Foundation::Numerics;
+
+auto handPose = currentState.TryGetHandPose();
 if (handPose)
 {
-    JointPose joint;
-    if(handPose->TryGetJoint(desiredCoordinateSystem, HandJointKind::IndexTip, &joint))
-    {
-        float3 indexTipPosition = joint.Position;
-        
-        // Do something with the index tip position
+	JointPose joint;
+	if (handPose.TryGetJoint(desiredCoordinateSystem, HandJointKind::IndexTip, joint))
+	{
+		float3 indexTipPosition = joint.Position;
 
-    }
+		// Do something with the index tip position
+	}
 }
 ```
 
@@ -179,7 +176,6 @@ createHandMeshObserverTask.then([this](HandMeshObserver^ handMeshObserver)
     handMeshObserver->GetTriangleIndices(indices);
 
     // Save the indices, and the handMeshObserver pointer, for later use
-
 }
 });
 ```
@@ -187,16 +183,16 @@ createHandMeshObserverTask.then([this](HandMeshObserver^ handMeshObserver)
 Once you have a HandMeshObserver object, you should hold onto it for the duration that its corresponding SpatialInteractionSource is active.  Then each frame, you can ask it for the latest vertex buffer that represents the hand by calling [GetVertexStateForPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handmeshobserver.getvertexstateforpose) and passing in the same HandPose instance that was used earlier to get the hand skeleton.  Each vertex in the buffer has a position and a normal.  Here's an example of how to get the current set of vertices for a hand mesh.
 
 ```cpp
-using namespace Windows::Perception::People;
-	
-auto vertices = ref new Platform::Array<HandMeshVertex>(handMeshObserver->VertexCount);
-auto handMeshVertexState = handMeshObserver->GetVertexStateForPose(handPose);
-handMeshVertexState->GetVertices(vertices);
-	
-auto meshTransform = handMeshVertexState->CoordinateSystem->TryGetTransformTo(desiredCoordinateSystem);
+using namespace winrt::Windows::Perception::People;
+
+std::vector<HandMeshVertex> vertices(handMeshObserver.VertexCount());
+auto vertexState = handMeshObserver.GetVertexStateForPose(handPose);
+vertexState.GetVertices(vertices);
+
+auto meshTransform = vertexState.CoordinateSystem().TryGetTransformTo(desiredCoordinateSystem);
 if (meshTransform != nullptr)
 {
-    // Do something with the vertices and mesh transform, along with the indices that you saved earlier
+	// Do something with the vertices and mesh transform, along with the indices that you saved earlier
 }
 ```
 
