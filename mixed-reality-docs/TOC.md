@@ -192,7 +192,8 @@
 ### Unity
 #### MR Learning Modules
 ##### HoloLens 2
-###### [Base Module - Overview & Objectives](mrlearning-base.md)
+###### Base Module
+####### [Base Module - Overview & Objectives](mrlearning-base.md)
 ####### [Project initialization and first application](mrlearning-base-ch1.md)
 ####### [User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration](mrlearning-base-ch2.md)
 ####### [Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)
