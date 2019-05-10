@@ -192,14 +192,16 @@
 ### Unity
 #### MR Learning Modules
 ##### HoloLens 2
-###### [Base Module - Overview & Objectives](mrlearning-base.md)
+###### Base Module
+####### [Base Module - Overview & Objectives](mrlearning-base.md)
 ####### [Project initialization and first application](mrlearning-base-ch1.md)
 ####### [User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration](mrlearning-base-ch2.md)
 ####### [Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)
 ####### [3D Object Interaction](mrlearning-base-ch4.md)
 ####### [Advanced Input](mrlearning-base-ch5.md)
 ####### [Demo App](mrlearning-base-ch6.md)
-#### HoloLens (1st gen) open source sample apps
+#### HoloLens (1st gen) opnsource sam
+ple apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
 ##### [Galaxy Explorer](galaxy-explorer.md)
