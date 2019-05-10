@@ -18,11 +18,20 @@ With OpenXR, you can build applications that target both holographic devices (li
 
 The OpenXR standard is currently in a provisional phase, with an initial OpenXR 0.90 spec released for feedback.  For more information on OpenXR, including access to the [provisional 0.90 spec](https://www.khronos.org/registry/OpenXR/specs/0.90/html/xrspec.html) and [headers](https://github.com/KhronosGroup/OpenXR-Docs/tree/master/include/openxr), see the [Khronos OpenXR page](https://www.khronos.org/openxr/). 
 
-## Setting up the Mixed Reality OpenXR Developer Preview
+You can try out the provisional OpenXR 0.90 API on a HoloLens 2 or a desktop PC using the Mixed Reality OpenXR Developer Preview.  This early runtime enables applications targeting the OpenXR 0.90 API to target HoloLens 2 or Windows Mixed Reality immersive headsets on the desktop.
 
-You can try out the provisional OpenXR 0.90 API today using the Mixed Reality OpenXR Developer Preview.  This early runtime enables applications targeting the OpenXR 0.90 API to target Windows Mixed Reality immersive headsets on the desktop.  If you don't have access to a headset, you can use the Windows Mixed Reality Simulator instead.
+If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
 
-To get started with the Mixed Reality OpenXR Developer Preview:
+## Setting up the Mixed Reality OpenXR Developer Preview for HoloLens 2
+
+To get started with the Mixed Reality OpenXR Developer Preview on HoloLens 2:
+
+1. Set up a HoloLens 2 or follow the instructions to [install the HoloLens 2 emulator](using-the-hololens-emulator.md).
+1. Launch the Store app from within the device or emulator and ensure all apps are updated.  This will install the Mixed Reality OpenXR Developer Preview for use with apps on that device.  If using the emulator, you'll want to consult the [emulator input instructions](using-the-hololens-emulator.md#basic-emulator-input) to help you use the Store app within the emulator.
+
+## Setting up the Mixed Reality OpenXR Developer Preview for immersive desktop headsets
+
+To get started with the Mixed Reality OpenXR Developer Preview on a desktop PC:
 
 1. Be sure you are running at least the Windows 10 October 2018 Update (1809).  If you're on an earlier version of Windows 10, you can upgrade to the October 2018 Update using the [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).  If you're feeling adventurous, you can install a [Windows 10 Insider Preview build of the May 2019 Update (1903)](https://insider.windows.com).
 1. Set up a Windows Mixed Reality headset or follow the instructions to [enable the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md).
@@ -31,16 +40,18 @@ To get started with the Mixed Reality OpenXR Developer Preview:
 
 ![Mixed Reality OpenXR Developer Preview app](images/mixed-reality-openxr-developer-preview.png)
 
-## Support for Windows 10 October 2018 Update
+### Support for Windows 10 October 2018 Update
 
-To get going with the Mixed Reality OpenXR Developer Preview on the Windows 10 October 2018 Update (1809, the current version of Windows), you'll need to follow a few more steps:
+To get going with the Mixed Reality OpenXR Developer Preview on a desktop PC with the Windows 10 October 2018 Update (1809, the current version of Windows), you'll need to follow a few more steps:
 
 1. Follow the steps above to install the Mixed Reality OpenXR Developer Preview.
 1. To set the Mixed Reality OpenXR Developer Preview as your system's active OpenXR runtime, install the [Mixed Reality OpenXR Developer Preview Compatibility Pack](https://aka.ms/openxr-compat).
 
-## Building a test OpenXR app
+## Building a sample OpenXR app
 
-The [hello_xr](https://github.com/KhronosGroup/OpenXR-SDK/tree/master/src/tests/hello_xr) OpenXR test app demonstrates use of various parts of the API.  You can follow these [build instructions](https://github.com/KhronosGroup/OpenXR-SDK/blob/master/BUILDING.md), which will build both the test app and the OpenXR headers themselves.
+The [BasicXrApp](https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp) project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
+
+Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is 100% the same!
 
 ## Feedback
 
@@ -66,3 +77,4 @@ If the Install button on the Mixed Reality OpenXR Developer Preview app does not
 * [OpenXR Provisional 0.90 specification](https://www.khronos.org/registry/OpenXR/specs/0.90/html/xrspec.html)
 * [OpenXR Provisional 0.90 API reference](https://www.khronos.org/registry/OpenXR/specs/0.90/man/html/)
 * [OpenXR Provisional 0.90 headers](https://github.com/KhronosGroup/OpenXR-Docs/tree/master/include/openxr)
+* [OpenXR Provisional 0.90 quick reference guide](https://www.khronos.org/registry/OpenXR/specs/0.90/refguide/OpenXR-0.90-web.pdf)

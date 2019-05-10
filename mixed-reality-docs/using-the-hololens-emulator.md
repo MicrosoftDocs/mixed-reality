@@ -63,7 +63,7 @@ The emulator may take a minute or more to boot when you first start it. We recom
 
 Controlling the emulator is very similar to many common 3D video games. There are input options available using the keyboard, mouse, or Xbox controller. You control the emulator by directing the actions of a simulated user wearing a HoloLens. Your actions move that simulated user around and apps running in the emulator respond like they would on a real device.
 
-The cursor on HoloLens (1st Gen) follows head movement and rotation.  In the HoloLens 2 Emulator, the cusor follows hand movement and orientation.
+The cursor on HoloLens (1st Gen) follows head movement and rotation.  In the HoloLens 2 Emulator, the cursor follows hand movement and orientation.
 
 * **Walk forward, back, left, and right** - Use the W,A,S, and D keys on your keyboard, or the left stick on an Xbox controller.
 * **Look up, down, left, and right** - Click and drag the mouse, use the arrow keys on your keyboard, or the right stick on an Xbox controller.

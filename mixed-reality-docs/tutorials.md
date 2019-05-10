@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-title: Academy - code, tutorials, and lessons
-description: The Mixed Reality Academy provides code samples and tutorials on mixed reality development.
+title: Tutorials and Sample Apps
+description: Provides code samples and tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
 ms.date: 03/21/2018
@@ -9,7 +9,20 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---
 
-# Academy: code, tutorials, and lessons
+# Tutorials and Sample Apps
+
+Currently all of our tutorials and sample apps are Unity based.  As we develop content for other engines and platforms, you will find them under the relevant heading in the Table of Contents.
+
+## MR Learning Modules
+
+The MR Learning Modules are designed to help developers learn both techniques and best practices for developing mixed reality applications.  The initial modules are for HoloLens 2 and implement the Mixed Reality Toolkit 2.0 (MRTK 2.0).
+* The base module is intended to show developers how to set up their project with MRTK, as well as implement UI, Spatial Mapping, and both basic and advanced interactions
+
+## Open Source Sample Apps
+
+The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects.
+
+## Mixed Reality Academy Tutorials
 
 The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files: 
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
@@ -19,8 +32,6 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
 
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
-
-We also have an in-person Mixed Reality Academy at the Reactor space in San Francisco. If you're looking for information about the physcial Academy space, or upcoming events, [click here](#microsoft-reactor) or scroll to the bottom of this page.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
@@ -233,7 +244,14 @@ We also have an in-person Mixed Reality Academy at the Reactor space in San Fran
                               </div>
                               </a>
                             </li> 
-                                 <li>
+</ul>
+
+## Mixed Reality and Azure Services tutorials
+
+These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project.  These tutorials are all based on either HoloLens (1st Gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
+
+<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
+    <li>
                                    <a href="mr-azure-301.md" title="MR and Azure 301" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
@@ -500,13 +518,3 @@ We also have an in-person Mixed Reality Academy at the Reactor space in San Fran
                               </a>
                             </li> 
 </ul>
-
-## Microsoft Reactor
-
-<img src="images/SanFrancisco-ReactorSpace1.jpg" alt="San Francisco-Reactor Space">
-
-<h3><a href="https://developer.microsoft.com/reactor/">The Microsoft Reactor in San Francisco</a></h3>
-<p>
-The Microsoft Reactor in San Francisco, located at 680 Folsom in SOMA, serves as the flagship location for the Mixed Reality Capture Studio and the Mixed Reality Academy. It is a place where developers and creators can begin their journey building mixed reality experiences for Microsoft HoloLens and Windows Mixed Reality headsets.</p>
-
-[Check for announcements of upcoming sessions, workshops, and hackathons](sf-academy-events.md)

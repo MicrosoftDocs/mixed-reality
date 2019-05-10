@@ -16,11 +16,11 @@ Unity provides a set of default options that are generally the average case for 
 
 ### Low quality settings
 
-It is important to modify the **Unity Quality settings** for your environment to **"fastest"**. This will help ensure your application is running performantly at the appropriate framerate. This is extremely significant for Hololens development. For development on immersive headsets, depending on the specs of the desktop powering the VR experience, one can still achieve framerate without the lowest quality parameters. 
+It is important to modify the **Unity Quality settings** for your environment to **Very Low**. This will help ensure your application is running performantly at the appropriate framerate. This is extremely significant for Hololens development. For development on immersive headsets, depending on the specs of the desktop powering the VR experience, one can still achieve framerate without the lowest quality parameters. 
 
 In Unity 2018 LTS+, the project's quality level can be set by:
 
-Under **Edit** > **Project Settings** > **Quality** > Set the **Default** by clicking on the downward arrow to the **Fastest** quality level
+Under **Edit** > **Project Settings** > **Quality** > Set the **Default** by clicking on the downward arrow to the **Very Low** quality level
 
 ### Lighting settings
 
