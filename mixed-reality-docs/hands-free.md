@@ -93,6 +93,6 @@ Does the user understand ...
 
 
 ## See also
-* [Gaze and commit](gaze-and-commit.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Direct manipulation](direct-manipulation.md)
 * [Point and commit](point-and-commit.md)
