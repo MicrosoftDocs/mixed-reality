@@ -200,8 +200,7 @@
 ####### [3D Object Interaction](mrlearning-base-ch4.md)
 ####### [Advanced Input](mrlearning-base-ch5.md)
 ####### [Demo App](mrlearning-base-ch6.md)
-#### HoloLens (1st gen) opnsource sam
-ple apps
+#### HoloLens (1st gen) opnsource sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
 ##### [Galaxy Explorer](galaxy-explorer.md)
