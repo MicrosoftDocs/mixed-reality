@@ -95,6 +95,6 @@ The concept of point and commit model for far interaction is firstly created and
 
 
 ## See also
-* [Gaze and commit](gaze-and-commit.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Direct manipulation](direct-manipulation.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
