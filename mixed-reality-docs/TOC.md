@@ -48,11 +48,13 @@
 ### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
 ### [Building HoloSketch, a spatial layout and UX sketching app for HoloLens](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Capturing and creating content for HoloTour](case-study-capturing-and-creating-content-for-holotour.md)
-### [Creating a galaxy in mixed reality](case-study-creating-a-galaxy-in-mixed-reality.md)
 ### [Creating an immersive experience in Fragments](case-study-creating-an-immersive-experience-in-fragments.md)
 ### [Creating impossible perspectives for HoloTour](case-study-creating-impossible-perspectives-for-holotour.md)
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [Expanding the spatial mapping capabilities of HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+### Galaxy Explorer
+#### [Creating a galaxy in mixed reality for Hololens (1st gen)](case-study-creating-a-galaxy-in-mixed-reality.md)
+#### [Updating Galaxy Explorer for HoloLens 2](galaxy-explorer-update.md)
 ### [HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 ### [Lessons from the Lowe's kitchen](case-study-lessons-from-the-lowes-kitchen.md)
 ### [Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)
@@ -190,7 +192,8 @@
 ### Unity
 #### MR Learning Modules
 ##### HoloLens 2
-###### [Base Module - Overview & Objectives](mrlearning-base.md)
+###### Base Module
+####### [Base Module - Overview & Objectives](mrlearning-base.md)
 ####### [Project initialization and first application](mrlearning-base-ch1.md)
 ####### [User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration](mrlearning-base-ch2.md)
 ####### [Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)

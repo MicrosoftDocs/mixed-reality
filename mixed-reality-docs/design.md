@@ -55,16 +55,16 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/Interaction_Icon_120x130.png" alt="Interaction design icon">
+                            <img src="images/Interaction_Icon_120x130.png" alt="MR design system and tools icon">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Interaction design</h3>
+                        <h3>MR design system and tools</h3>
                         <p>
                             <a href="comfort.md">Comfort</a>
                         </p>
 			<p>
-                            <a href="interaction-fundamentals.md">Interaction fundamentals</a>
+                            <a href="interaction-fundamentals.md">Instinctual interactions</a>
                         </p>
                         <p>
                             <a href="hands-and-tools.md">Hands and controllers</a>
@@ -73,7 +73,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                             <a href="hands-free.md">Hands-free</a>
                         </p>
                          <p>
-                            <a href="gaze-and-commit.md">Head gaze and commit</a>
+                            <a href="gaze-and-commit.md">Head-gaze and commit</a>
                         </p>
                     </div>
                 </div>

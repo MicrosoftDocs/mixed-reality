@@ -13,7 +13,7 @@ The philosophy of simple, instinctual interactions is woven throughout the Micro
 
 First, we've made sure our amazing sensors and input technology, including hand tracking, eye tracking, and natural language, combine into seamless multimodal interaction models.  Based on our research, designing and developing multimodally -- and not based on single inputs -- is the key to creating instinctual experiences.
 
-Secondly, we recognize that many developers target multiple devices, whether that means HoloLens 2 and HoloLens (1st gen) or HoloLens and VR.  So we've designed our interaction models to work across devices (even if the input technology varies on each device).  For example, far interaction on a Windows Immersive headset with a 6DOF controller and far interaction on a HoloLens 2 both use the identical affordances and patterns, making it easy for cross-device applications. Not only is this convenient for developers and designers, but it feels natural to end users. 
+Secondly, we recognize that many developers target multiple devices, whether that means HoloLens 2 and HoloLens (1st gen) or HoloLens and VR.  So we've designed our interaction models to work across devices (even if the input technology varies on each device).  For example, far interaction on a Windows Immersive headset with a 6DoF controller and far interaction on a HoloLens 2 both use the identical affordances and patterns, making it easy for cross-device applications. Not only is this convenient for developers and designers, but it feels natural to end users. 
 
 Lastly, while we recognize that there are thousands of effective, engaging, and magical interactions possible in MR, we have found that intentionally employing a single interaction model end to end in an application is the best way to ensure users are successful and have a great experience.  To that end, we've included three things in this interaction guidance:
 * We've structured this guidance around the three primary interaction models and the components and patterns required for each
@@ -46,8 +46,8 @@ The chart below is a simplified overview.  Detailed information for using each i
     <tr>
         <td><a href="hands-and-tools.md">Hands and tools</a></td>
         <td>3D spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
-        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6 DoF controllers<br>Great when coupled with voice, eye tracking, or head gaze</td>
-        <td>HoloLens 2<br>Windows Immersive w/ 6DOF Controllers</td>
+        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6DoF controllers<br>Great when coupled with voice, eye tracking, or head gaze</td>
+        <td>HoloLens 2<br>Windows Immersive w/ 6DoF Controllers</td>
     </tr>
     <tr>
         <td><a href="hands-free.md">Hands-free</a></td>
@@ -103,7 +103,7 @@ Here are some examples of how affordances and behaviors are optimized for each i
     <tr>
         <td><strong>Model</strong></td>
         <td><strong>How do I know it's working?</strong></td>
-        <td><strong>How do I know what can I do?</strong></td>
+        <td><strong>How do I know what I can do?</strong></td>
         <td><strong>How do I know what I just did?</strong></td>
     </tr>
     <tr>
