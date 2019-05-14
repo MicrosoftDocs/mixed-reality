@@ -86,7 +86,7 @@ auto viewTransformContainer = cameraPose.TryGetViewTransform(coordinateSystem);
 
 ### Process gaze and gesture input
 
-[Gaze](gaze.md) and [gesture](gestures.md) input are not time-based and thus do not have to update in the **StepTimer** function. However [this input](gaze,-gestures,-and-motion-controllers-in-directx.md) is something that the app needs to look at each frame.
+[Gaze](gaze-in-directx.md) and [hand](hands-and-motion-controllers-in-directx.md) input are not time-based and thus do not have to update in the **StepTimer** function. However this input is something that the app needs to look at each frame.
 
 ### Process time-based updates
 
