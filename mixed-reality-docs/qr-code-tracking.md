@@ -304,9 +304,9 @@ void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 
 ### Quiet zones around QR Codes
 
-The [spec for QR codes](https://www.qrcode.com/en/howto/code.html) says "The QR Code symbol area requires a margin or "quiet zone" around it to be used. The margin is a clear area around a symbol where nothing is printed. QR Code requires a four-module wide margin at all sides of a symbol." 
+To be read correctly, QR codes require a margin around all sides of the code. This margin must not contain and printed content and should be four modules (a single black square in the code) wide. 
 
-This needs to have a width, on every side, of four times the size of a module - a single black square in the code. The spec page contains advice on how to print QR codes and figure out the area required to make a certain sized QR code.
+The [QR spec](https://www.qrcode.com/en/howto/code.html) contains more information about quiet zones.
 
 ### Lighting and backdrop
 QR code detection quality is susceptible to varying illumination and backdrop. 
