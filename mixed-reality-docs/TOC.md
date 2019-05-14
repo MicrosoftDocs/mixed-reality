@@ -175,7 +175,7 @@
 #### [Rendering in DirectX](rendering-in-directx.md)
 ### Core building blocks
 #### [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
-#### [Gaze in DirectX](gaze-in-directx.md)
+#### [Head and eye gaze in DirectX](gaze-in-directx.md)
 #### [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 #### [Voice input in DirectX](voice-input-in-directx.md)
 #### [Spatial sound in DirectX](spatial-sound-in-directx.md)

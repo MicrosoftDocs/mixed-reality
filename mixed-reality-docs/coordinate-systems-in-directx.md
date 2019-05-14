@@ -795,6 +795,6 @@ The [spatial mapping](spatial-mapping-in-directx.md) APIs make use of coordinate
 * [Coordinate systems](coordinate-systems.md)
 * [Spatial anchors](spatial-anchors.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Gaze in DirectX](gaze-in-directx.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)

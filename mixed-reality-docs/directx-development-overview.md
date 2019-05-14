@@ -37,7 +37,7 @@ The following topics discuss the base requirements of adding Windows Mixed Reali
 ## Adding mixed reality capabilities and inputs
 
 To enable the best possible experience for users of your immersive apps, you'll want to support the following key building blocks:
-* [Gaze in DirectX](gaze-in-directx.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](voice-input-in-directx.md)
 * [Spatial sound in DirectX](spatial-sound-in-directx.md)
