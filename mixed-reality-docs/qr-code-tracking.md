@@ -1,11 +1,11 @@
 ---
 title: QR code tracking
-description: Learn how to turn on QR code tracking for your Windows Mixed Reality immersive (VR) headset and implement the feature in your VR apps.
-author: yoyozilla
-ms.author: yoyoz
-ms.date: 11/06/2018
+description: Learn how to turn on QR code tracking for your Windows Mixed Reality headset and implement the feature in your apps.
+author: dorreneb
+ms.author: dobrown
+ms.date: 05/15/2019
 ms.topic: article
-keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code
+keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2
 ---
 
 # QR Code Tracking
