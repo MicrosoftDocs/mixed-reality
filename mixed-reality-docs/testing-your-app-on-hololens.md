@@ -3,7 +3,7 @@ title: Testing your app on HoloLens
 description: Guidance and suggestions for testing your HoloLens app
 author: JonMLyons
 ms.author: jlyons
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, testing
 ---
@@ -16,7 +16,7 @@ Testing HoloLens applications are very similar to testing Windows applications. 
 
 ## Performance
 
-Holographic apps need to run smoothly in a diverse set of environments. They also need to maintain performance and user comfort at all times. Performance is so important to the user's experience with a Holographic app that we have an entire topic devoted to it. Please make sure you read and follow the [performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md).
+Holographic apps need to run smoothly in a diverse set of environments. They also need to maintain performance and user comfort at all times. Performance is so important to the user's experience with a Holographic app that we have an entire topic devoted to it. Please make sure you read and follow the [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 
 ## Testing 3D in 3D
 1. **Test your app in as many different spaces as possible.** Try in big rooms, small rooms, bathrooms, kitchens, bedrooms, offices, etc. Also take into consideration rooms with non standard features such as non vertical walls, curved walls, non-horizontal ceilings. Does it work well when transitioning between rooms, floors, going through hallways or stairs?
@@ -49,6 +49,9 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 
 **Validate when your app has a different behavior with mouse and touch.** This will identify inconsistencies and help with design decisions to make the experience more natural for users. For example, triggering an action based on hover.
 
+> [!NOTE]
+> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
 ### Custom Voice Commands
 
 [Voice input](voice-input.md) is a natural form of interaction. The user experience can be magical or confusing depending on your choice of commands and how you expose them. As a rule, you should not use system voice commands such as "Select" or "Hey Cortana" as custom commands. Here are a few points to consider:
@@ -79,7 +82,7 @@ Validate core app functionality when switching between apps, especially if you'v
 
 ## Telemetry
 
-Use telemetry and analytics to guide you. Integrating analytics into your app will help you get insights about your app from your Beta testers and end-users. This data can be used to help optimize your app before submission to the Store and for future updates. There are many analytics options out there. If you're not sure where to start, check out [App Insights](https://www.visualstudio.com/en-us/products/application-insights-vs.aspx).
+Use telemetry and analytics to guide you. Integrating analytics into your app will help you get insights about your app from your Beta testers and end-users. This data can be used to help optimize your app before submission to the Store and for future updates. There are many analytics options out there. If you're not sure where to start, check out [App Insights](https://www.visualstudio.com/products/application-insights-vs.aspx).
 
 Questions to consider:
 1. How are users using the space?

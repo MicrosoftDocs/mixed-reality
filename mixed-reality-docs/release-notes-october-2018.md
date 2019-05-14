@@ -14,7 +14,7 @@ keywords: release notes, version, windows 10, build, rs5, os
 
 The **[Windows 10 October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (also known as RS5) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
 
-To update to the latest release on HoloLens or PC (for Windows Mixed Reality immersive (VR) headsets), open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 October 2018 Update using the [Windows media creation tool](https://www.microsoft.com/en-us/software-download/windows10).
+To update to the latest release on HoloLens or PC (for Windows Mixed Reality immersive (VR) headsets), open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 October 2018 Update using the [Windows media creation tool](https://www.microsoft.com/software-download/windows10).
 
 **Latest release for Desktop:** Windows 10 October 2018 Update (**10.0.17763.107**)<br>
 **Latest release for HoloLens:** Windows 10 October 2018 Update (**10.0.17763.134**)<br>
@@ -76,7 +76,6 @@ The Windows 10 October 2018 Update is publicly available for all HoloLens custom
 * **Enable post-setup provisioning** - You can now apply a runtime provisioning package at any time using Settings.
 * **Assigned access with Azure AD groups** - You can now use Azure AD groups for configuration of Windows assigned access to set up single or multi-app kiosk configuration.
 * **PIN sign-in on profile switch from sign-in screen** - PIN sign-in is now available for "Other User" at the sign-in screen. 
-* **Sign in with Web Credential Provider using password** - You can now select the Globe icon to launch web sign-in with your password. 
 * **Read device hardware info through MDM** - IT administrators can see and track HoloLens by device serial number in their MDM console.
 * **Set HoloLens device name through MDM (rename)** - IT administrators can see and rename HoloLens devices in their MDM console.
 
@@ -86,7 +85,7 @@ You can now use HoloLens with localized user interface for Simplified Chinese or
 
 ## Known issues
 
-We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](https://docs.microsoft.com/en-us/windows/mixed-reality/give-us-feedback).
+We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback).
 
 ### HoloLens
  
@@ -112,7 +111,7 @@ Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](give-us-feed
 
 ## See also
 * [Immersive headset support (external link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-* [HoloLens support (external link)](https://support.microsoft.com/en-us/products/hololens)
+* [HoloLens support (external link)](https://support.microsoft.com/products/hololens)
 * [Install the tools](install-the-tools.md)
 * [Give us feedback](give-us-feedback.md)
 

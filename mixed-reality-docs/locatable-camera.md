@@ -3,29 +3,47 @@ title: Locatable camera
 description: General information about the HoloLens front facing camera.
 author: wguyman
 ms.author: wguyman
-ms.date: 03/21/2018
+ms.date: 02/24/2019
 ms.topic: article
 keywords: camera, hololens, color camera, front facing
 ---
-
-
 
 # Locatable camera
 
 HoloLens includes a world-facing camera mounted on the front of the device which enables apps to see what the user sees. Developers have access to and control of the camera just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has also wrapped these windows APIs](locatable-camera-in-unity.md) to abstract simple usage of the camera on HoloLens for tasks such as taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
 
-## Device Camera Information
-* Fixed focus with auto white balance and auto exposure and full image processing pipe
-* A white Privacy LED facing the world will illuminate whenever the camera is active
+## Device camera information
+
+### HoloLens (first-generation)
+
+* Fixed focus photo/video (PV) camera, with auto white balance, auto exposure, and full image processing pipe
+* White Privacy LED facing the world will illuminate whenever the camera is active
 * The camera supports the following modes (all modes are 16:9 aspect ratio) at 30, 24, 20, 15, and 5 fps:
 
-|  Video  |  Preview  |  Still  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
-|----------|----------|----------|----------|----------|
-|  1280x720 |  1280x720 |  1280x720 |  45deg  |  (default mode) | 
-|  N/A |  N/A |  2048x1152 |  67deg |  Highest resolution still image | 
-|  1408x792 |  1408x792 |  1408x792 |  48deg |  Overscan (padding) resolution for video stabilization | 
-|  1344x756 |  1344x756 |  1344x756 |  67deg |  Large FOV video mode with overscan | 
-|  896x504 |  896x504 |  896x504 |  48deg |  Low power / Low resolution mode for image processing tasks | 
+  |  Video  |  Preview  |  Still  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
+  |----------|----------|----------|----------|----------|
+  |  1280x720 |  1280x720 |  1280x720 |  45deg  |  (default mode with video stabilization) | 
+  |  N/A |  N/A |  2048x1152 |  67deg |  Highest resolution still image | 
+  |  1408x792 |  1408x792 |  1408x792 |  48deg |  Overscan (padding) resolution before video stabilization | 
+  |  1344x756 |  1344x756 |  1344x756 |  67deg |  Large FOV video mode with overscan | 
+  |  896x504 |  896x504 |  896x504 |  48deg |  Low power / Low resolution mode for image processing tasks | 
+
+### HoloLens 2
+
+* Auto-focus photo/video (PV) camera, with auto white balance, auto exposure, and full image processing pipe
+* White Privacy LED facing the world will illuminate whenever the camera is active
+* The camera supports the following modes (all video modes are 16:9 aspect ratio):
+
+  >[!NOTE]
+  >These modes are subject to change prior to HoloLens 2 general availability.
+
+  |  Video  |  Preview  |  Still  |  Frame rates  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
+  |----------|----------|----------|----------|----------|----------|
+  |  1920x1080 |  1920x1080 |  N/A |  30, 15 fps  |  54deg  |  (default mode with video stabilization) | 
+  |  N/A |  N/A |  3904X2196 |  N/A  |  64deg |  Highest resolution still image | 
+  |  2272x1278 |  2272x1278 |  N/A |  30, 15 fps  |  64deg |  Overscan (padding) resolution before video stabilization | 
+  |  1952x1100 |  1952x1100 |  1952x1100  |  30, 15 fps  |  64deg |  High-quality streaming | 
+  |  1280x720 |  1280x720 |  N/A |  30, 15, 5 fps  |  64deg |  Low power/resolution mode for streaming and image processing tasks | 
 
 ## Locating the Device Camera in the World
 
@@ -158,8 +176,8 @@ To recognize a visual pattern, and then place that object in the applications wo
 Some important image processing links:
 * [OpenCV](http://opencv.org/)
 * [QR Tags](https://en.wikipedia.org/wiki/QR_code)
-* [FaceSDK](http://research.microsoft.com/en-us/projects/facesdk/)
-* [Microsoft Translator](https://www.microsoft.com/en-us/translator/products.aspx)
+* [FaceSDK](http://research.microsoft.com/projects/facesdk/)
+* [Microsoft Translator](https://www.microsoft.com/translator/business)
 
 Keeping an interactive application frame-rate is critical, especially when dealing with long-running image recognition algorithms. For this reason we commonly use the following pattern:
 1. Main Thread: manages the camera object

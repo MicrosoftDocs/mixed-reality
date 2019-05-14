@@ -14,7 +14,7 @@ keywords: app, uwp, submit, submission, filters, metadata, system requirements, 
 
 Both [HoloLens](hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens or PC (or both), you'll submit your app to the Microsoft Store through [Partner Center](https://partner.microsoft.com/dashboard).
 
-If you don't already have a Partner Center developer account, you can [sign up today](https://developer.microsoft.com/en-us/store/register).
+If you don't already have a Partner Center developer account, you can [sign up today](https://developer.microsoft.com/store/register).
 
 ## Packaging a mixed reality app
 
@@ -193,9 +193,9 @@ If your app runs on the desktop like a traditional PC app, but offers a VR exper
 
 **PC specifications:**
 
-If you want your app to reach as many Windows Mixed Reality immersive headset users as possible, you'll want to [target](performance-recommendations-for-immersive-headset-apps.md) the PC specifications for [Windows Mixed Reality PCs with integrated graphics](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+If you want your app to reach as many Windows Mixed Reality immersive headset users as possible, you'll want to [target](understanding-performance-for-mixed-reality.md) the PC specifications for [Windows Mixed Reality PCs with integrated graphics](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-Whether your mixed reality app targets the minimum Windows Mixed Reality PC requirements, or requires a specific PC configuration (like the dedicated GPU of a [Windows Mixed Reality Ultra PC](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)), you should indicate that with the relevant PC specifications in the "minimum hardware" column.
+Whether your mixed reality app targets the minimum Windows Mixed Reality PC requirements, or requires a specific PC configuration (like the dedicated GPU of a [Windows Mixed Reality Ultra PC](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), you should indicate that with the relevant PC specifications in the "minimum hardware" column.
 
 If your mixed reality app is designed to perform better, or offer higher-resolution graphics, on a particular PC configuration or graphics card, you should indicate that with the relevant PC specifications in the "recommended hardware" column.
 
@@ -234,6 +234,7 @@ Many consumers will have limited to no experience with virtual reality before bu
 * [Mixed reality](mixed-reality.md)
 * [Development overview](development-overview.md)
 * [App views](app-views.md)
-* [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
 * [Testing your app on HoloLens](testing-your-app-on-hololens.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

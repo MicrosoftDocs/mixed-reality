@@ -1,9 +1,9 @@
 ---
 title: Advanced HoloLens Emulator and Mixed Reality Simulator input
-description: Detailed instructions for using the keyboard, mouse, and X-Box controller to simulate input for the HoloLens emulator and Windows Mixed Reality simulator.
-author: JonMLyons
-ms.author: jlyons
-ms.date: 05/21/2018
+description: Detailed instructions for using the keyboard, mouse, and Xbox controller to simulate input for the HoloLens Emulator and Windows Mixed Reality simulator.
+author: pbarnettms
+ms.author: pbarnett
+ms.date: 04/26/2019
 ms.topic: article
 keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality
 ---
@@ -12,13 +12,14 @@ keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality
 
 # Advanced HoloLens Emulator and Mixed Reality Simulator input
 
-Most emulator users will only need to use the basic input controls for the [HoloLens emulator](using-the-hololens-emulator.md#basic-emulator-input) or the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md#basic-simulator-input). The details below are for advanced users who have found a need to simulate more complex types of input.
+Most emulator users will only need to use the basic input controls for the [HoloLens Emulator](using-the-hololens-emulator.md#basic-emulator-input) or the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md#basic-simulator-input). The details below are for advanced users who have found a need to simulate more complex types of input.
+
 
 ## Concepts
 
-To get started controlling the virtual input to the HoloLens emulator and Windows Mixed Reality simulator, you should first understand a few concepts.
+To get started controlling the virtual input to the HoloLens Emulator and Windows Mixed Reality simulator, you should first understand a few concepts.
 
-Motion is controlled with both rotation and translation (movement) along three axes.
+Motion refers to controlling and changing the position and orientation of something in the scene. For a targeted controllable object, motion is controlled with both rotation and translation (movement) along three axes.
 * **Yaw**: Turn left or right.
 * **Pitch**: Turn up or down.
 * **Roll**: Roll side-to-side.
@@ -28,12 +29,18 @@ Motion is controlled with both rotation and translation (movement) along three a
 
 [Gesture](gestures.md) and motion controller input are mapped closely to how they physical devices:
 * **Action**: This simulates the action of pressing the forefinger to the thumb or pulling the action button on a controller. For example, the Action input can be used to simulate the air-tap gesture, to scroll through content, and to press-and-hold.
-* **[Bloom](gestures.md#bloom) or Home**: The HoloLens bloom gesture or a controller's Home button is used to return to the shell and to perform system actions.
+* **[Bloom](gestures.md#bloom)/System gesture or Home**: The HoloLens bloom/system gesture or a controller's Home button is used to return to the shell and to perform system actions.
+
+Hands have a rich reprresentation in HoloLens 2.  In addition to being tracked/not tracked, and usable for driving gestures, hands now have an articulated skeleton model fit to them and exposed to the developer.  This introduces 26 tracked points on each hand.  
+* **Joint**: One of twenty tracked positions for a given tracked hand. This will have a point is 3d space associated with it.
+* **Pose**: A complete collection of all of the Joints in a tracked hand. At this time, this is a collection of 26 Joints. 
+
+At this time, we do not expose direct control of each joint position individually through the emulator user interface, though you may set them through the simulation API. Rather, we have a set of useful representative poses that the emulator allows you to toggle between.
 
 You can also control the state of simulated sensor input:
-* **Reset**: This will return all simulated sensors to their default values.
+* **Reset**: This will return all simulated sensors to their default values.  Starting with the HoloLens 2 Emulator, a reset can be scoped to one or both hands by engaging the desired hand(s) using the appropriate modifier key(s) or button(s) (Left and/or Right Alt, or the left and/or right bumper on the gamepad).
 * **Tracking**: Cycles through the positional tracking modes. This includes:
-   * **Default**: The OS chooses the best tracking mode based upon the requests made of the system.
+  * **Default**: The OS chooses the best tracking mode based upon the requests made of the system.
    * **Orientation**: Forces Orientation-only tracking, regardless of the requests made of the system.
    * **Positional**: Forces Positional tracking, regardless of the requests made of the system.
 
@@ -50,39 +57,53 @@ The following table shows how each type of input maps to the keyboard, mouse, an
 |  Y |  Page up / page down |  |  DPad up / down | 
 |  Z |  W / S |  |  Left thumbstick up / down | 
 |  Action |  Enter or space |  Right button |  A button or either trigger | 
-|  Bloom |  F2 or Windows key (Windows key only works with the HoloLens emulator) |  |  B button | 
-|  Controller grip button |  G (Windows Mixed Reality simulator-only) |  |  | 
-|  Controller menu button |  M (Windows Mixed Reality simulator-only) |  |  | 
-|  Controller touchpad touch |  U (Windows Mixed Reality simulator-only) |  |  | 
-|  Controller touchpad press |  P (Windows Mixed Reality simulator-only) |  |  | 
+|  Bloom/System |  F2 or Windows key |  |  B button | 
+|  Controller grip button |  G  |  |  | 
+|  Controller menu button |  M  |  |  | 
+|  Controller touchpad touch |  U  |  |  | 
+|  Controller touchpad press |  P  |  |  | 
+|  Controller thumbstick press |  K  |  |  | 
+|  Left controller tracking state |  F9 |  |  | 
+|  Right controller tracking state |  F10 |  |  | 
+|  Hand 'Close' Pose | 7 |  |  |
+|  Hand 'Open' Pose (default) | 8 |  |  |
+|  Hand 'Point' Pose | 9 |  |  |
+|  Hand 'Pinch' Pose | 0 |  |  |
 |  Reset |  Escape key |  |  Start button | 
 |  Tracking |  T or F3 |  |  X button | 
 
-## Input control modes
 
-The emulator can be controlled in multiple modes, which impact how the controls are interpreted. The input modes are:
-* **Default mode**: The default mode combines the most common operations for ease of use. This is the most commonly used mode.
-* **Hands or controller mode**: The HoloLens emulator simulates gesture input with hands, while the Windows Mixed Reality simulator simulates tracked controllers. To enter this mode, press and hold an alt key on the keyboard: use left alt for the left hand/controller, and/or use right alt for the right hand/controller. You can also press and hold a shoulder button on the Xbox controller to enter this mode: press the left shoulder for the left hand/controller, and/or press the right shoulder for the right hand/controller.
-   * Hands are typically not visible to the HoloLens emulator - they are made visible briefly when performing gestures such as [air-tap](gestures.md#air-tap) and bloom using the default input mode. This is a difference from tracked controllers in the Mixed Reality simulator. The corresponding Hand is also made visible when you enter hands mode, or when you click "Turn On" in the **Simulation** tab, which is located in the **Additional Tools** pane. * **Head mode**: The head mode applies controls, where appropriate, exclusively to the head. To enter head mode, press and hold the H key on the keyboard.
+Note: The controller buttons can be targetted to one hand/controller or the other using the hand targeting modifiers.
 
-The following table shows how each input mode maps each type of input:
+## Targeting 
 
-|  |  Default |  Hand/controller (Hold alt / shoulder) |  Head (Hold H) | 
+Some of the above input concepts stand on their own.  Action, Bloom/System, Reset, and Tracking are complete concepts, do not need, and are not affected by, any additional modifiers for targeting.  However, the remaining concepts can be applied to one of multiple targets. We have introduced ways for you to specify which intended target your command should be applied to.  In all cases, it is possible to specify through the UI or through keyboard presses, which object to targtet.  In some cases, it is also possible to specify with the xbox controller directly. 
+
+The following table describe the options for targeting, and the way to activate each of them.
+
+| Object | Keyboard Modifier | Controller Modifier | Emulator UI Modifier |
 |----------|----------|----------|----------|
-|  Yaw |  Turn body left / right |  Move hand left / right |  Turn head left / right | 
-|  Pitch |  Turn head up / down |  Move hand up / down |  Turn head Up / down | 
-|  Roll |  Roll head left / right |  |  Roll head left / right | 
-|  X |  Slide body left / right |  Move hand/controller left / right |  Turn head left / right | 
-|  Y |  Move body up / down |  Move hand/controller up / down |  Turn head up / down | 
-|  Z |  Move body forward / backward |  Move hand/controller forward / backward |  Turn head up / down | 
-|  Action |  Perform action |  Perform action |  | 
-|  Bloom / Home |  Perform bloom gesture or Home button press |  Perform bloom gesture or Home button press |  | 
-|  Reset |  Reset to defaults |  Reset to defaults |  Reset to defaults | 
-|  Tracking |  Cycle tracking |  Cycle tracking |  Cycle tracking | 
+| Body | (default) | (default) | (default) |
+| Head | Hold H | (Not available) | (Not available) |
+| Left Hand/Controller | Hold Left Alt button | Hold Left Shoulder Button | Left Hand pushpin | 
+| Right Hand/Controller | Hold Right Alt Button | Hold Right Shoulder Button | Right Hand pushpin |
+| Eyes | Hold Y | (Not available) | Eyes Pushpin |
+  
+The following table shows how each target modifier maps each of the core movement input concepts
 
+|  | Default (Body) |  Hand/controller (Hold Alt, hold gamepad shoulder button, or toggle UI pushpin) |  Head (Hold H)  |  Eyes (Hold Y or toggle UI pushpin) |
+|----------|----------|----------|----------|
+|  Yaw |  Turn body left / right |  Move hand left / right |  Turn head left / right | Eye gaze looks left/right |
+|  Pitch |  Turn head up / down |  Move hand up / down |  Turn head Up / down | Eye gaze looks up/down | 
+|  Roll |  Roll head left / right |  |  Roll head left / right | (No action) |
+|  X |  Slide body left / right |  Move hand/controller left / right |  Turn head left / right | (No Action) |
+|  Y |  Move body up / down |  Move hand/controller up / down |  Turn head up / down | (No Action) |
+|  Z |  Move body forward / backward |  Move hand/controller forward / backward |  Turn head up / down | (No Action) |
+ 
+ 
 ## Controlling an app
 
-This article has described the complete set of input types and input modes that are available in the HoloLens emulator and Windows Mixed Reality simulator. The following set of controls is suggested for day-to-day use:
+The following set of controls is suggested for day-to-day use:
 
 |  Operation |  Keyboard and mouse |  Controller | 
 |----------|----------|----------|
@@ -93,14 +114,32 @@ This article has described the complete set of input types and input modes that 
 |  Head Yaw |  H + drag mouse left / right |  H (on Keyboard) + right thumbstick left / right | 
 |  Head Pitch |  Drag mouse up / down |  Right thumbstick up / down | 
 |  Head Roll |  Q / E |  DPad left / right | 
-|  Hand X |  Alt + drag mouse left / right |  Shoulder + right thumbstick left / right | 
-|  Hand Y |  Alt + drag mouse up / down |  Shoulder + right thumbstick up / down | 
-|  Hand Z |  Alt + W / S |  Shoulder + left thumbstick up / down | 
+|  Hand/Controller X |  Alt + A / D |  Shoulder + left thumbstick left / right | 
+|  Hand/Controller Y |  Alt + Page up / page down |  Shoulder + DPad up / down | 
+|  Hand/Controller Z |  Alt + W / S |  Shoulder + Left thumbstick up / down | 
+|  Hand/Controller Yaw |  Alt + drag mouse left / right |  Shoulder + right thumbstick left / right | 
+|  Hand/Controller Pitch |  Alt + drag mouse up / down |  Shoulder + right thumbstick up / down | 
+|  Hand/Controller Roll |  Alt + Q / E |  Shoulder + DPad left / right | 
 |  Action |  Right mouse button |  Trigger | 
-|  Bloom / Home |  F2 or Windows key (Windows key is only for the HoloLens emulator) |  B button | 
+|  Bloom / System / Home |  F2 or Windows key |  B button | 
 |  Reset |  Escape |  Start button | 
 |  Tracking |  T |  X button | 
 |  Scrolling |  Alt + right mouse button + drag mouse up / down |  Shoulder + trigger + right thumbstick up / down | 
+|  Move/rotate faster | Left or right Shift key | Press and hold the right thumbstick |
+|  Move/rotate slow | Left or right Ctrl key | Press and hold the left thumbstick |
+
+## Perception Simulation Control Panel keyboard shortcuts
+
+The following keyboard shortcuts are available for accessing the Perception Simulation Control panel and enabling or disabling PC input devices for use with simulation.
+
+| Operation | Shortcut | Description/Notes |
+|-----------|----------|-------------|
+| Toggle 'Use keyboard for simulation' | F4 | When turned off, keyboard input goes to the HoloLens or Windows Mixed Reality application. |
+| Toggle 'Use mouse for simulation' | F5 | When turned off, mouse input goes to the Mixed Reality environment (Windows Mixed Reality only) |
+| Toggle 'Use gamepad for simulation' | F6 | When turned off, gamepad input is ignored by simulation |
+| Show or hide the control panel | F7 | |
+| Set keyboard focus to the control panel | F8 | If the panel is not currently visible it will be shown first. |
+| Dock or undock the panel to/from the emulator or Mixed Reality Portal window | F9 | If the window is closed when undocked, it is docked and hidden. |
 
 ## See also
 * [Install the tools](install-the-tools.md)

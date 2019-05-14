@@ -31,7 +31,7 @@ One common method is to utilize the distance of objects as they are presented to
 
 Another method is to use holograms to modify the user's real space, replacing the existing walls or ceilings with environments or appending ‘holes’ or ‘windows’, allowing over-sized objects to seemingly 'break-through' the physical space. For example, a large tree might not fit in most users’ living rooms, but by putting a virtual sky on their ceiling, the physical space expands into the virtual. This allows the user to walk around the base of the virtual tree, and gather a sense of scale of how it would appear in real life, then look up to see it extend far beyond the physical space of the room.
 
-[Minecraft](https://minecraft.net/en-us/) developed a concept experience using a similar technique. By adding a virtual window to a physical surface in a room, the existing objects in the room are placed in the context of a vastly larger environment, beyond the physical scale limitations of the room.
+[Minecraft](https://minecraft.net/) developed a concept experience using a similar technique. By adding a virtual window to a physical surface in a room, the existing objects in the room are placed in the context of a vastly larger environment, beyond the physical scale limitations of the room.
 
 ![Minecraft concept experience for HoloLens](images/800px-minecraftwindow-640px.jpg)<br>
 *Minecraft concept experience for HoloLens*

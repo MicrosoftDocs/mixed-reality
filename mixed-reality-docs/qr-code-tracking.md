@@ -12,6 +12,9 @@ keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, q
 
 QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker in the headset driver, the headset scans for QR codes and they are reported to interested apps. This feature is only available as of the [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md).
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Device support
 
 <table>
@@ -23,7 +26,7 @@ QR code tracking is implemented in the Windows Mixed Reality driver for immersiv
 </table>
 
 ## Enabling and disabling QR code tracking for your headset
-
+Note: This section is only valid for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md). From 19h1 builds onwards you will not have to do this.
 Whether you're developing a mixed reality app that will leverage QR code tracking, or you're a customer of one of these apps, you'll need to manually turn on QR code tracking in your headset's driver.
 
 In order to **turn on QR code tracking** for your immersive (VR) headset:
@@ -41,6 +44,12 @@ In order to **turn off QR code tracking** for your immersive (VR) headset:
 3. Run the following script in the Command Prompt:<br>
     `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F`
 4. Reconnect your headset to your PC. This will make any discovered QR codes "non-locatable."
+
+## Printing codes
+
+First and foremost, the [spec for QR codes](https://www.qrcode.com/en/howto/code.html) says "The QR Code symbol area requires a margin or "quiet zone" around it to be used. The margin is a clear area around a symbol where nothing is printed. QR Code requires a four-module wide margin at all sides of a symbol." This needs to have a width, on every side, of four times the size of a module - a single black square in the code. The spec page contains advice on how to print QR codes and figure out the area required to make a certain sized QR code.
+
+Currently QR code detection quality is susceptible to varying illumination and backdrop. To combat this, note your illumination and print the appropriate code. In a scene with particularly bright lighting, print a code that is black on a gray background. Under a low-light scene, black on white works. Likewise, if the backdrop to the code is particularly dark, try a black on gray code if your detection rate is low. Otherwise, if the backdrop is lighter, a regular code should work fine.
 
 ## QRTracking API
 
@@ -159,7 +168,7 @@ The QRTracking plugin exposes the APIs for QR code tracking. To use the plugin, 
 
 ### Sample Unity scenes in MRTK (Mixed Reality Toolkit)
 
-You can find an example for how to use the QR Tracking API in the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker).
+You can find an example for how to use the QR Tracking API in the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker).
 
 MRTK has implemented the needed scripts to simpilify the QR tracking usage. All necessary assets to develop QR tracking apps are in the "QRTracker" folder. There are two scenes: the first is a sample to simply show details of the QR codes as they are detected, and the second demonstrates how to use the coordinate system attached to the QR code to display holograms.
 There is a prefab "QRScanner" which added all the necessary scrips to the scenes to use QRCodes. The script QRCodeManager is a singileton class that implements the QRCode API you can add it to you scene. The scripts "AttachToQRCode" is used to attach holograms to the QR Code coodridnate systems, this script can be added to any of your holograms. The "SpatialGraphCoordinateSystem" shows how to use the QRCode coordinate system. These scripts can be used as is in your project scenes or you can write your own directly using the plugin as described above.
@@ -169,12 +178,13 @@ There is a prefab "QRScanner" which added all the necessary scrips to the scenes
 You can also use the QR Tracking API in Unity without taking a dependency on MRTK. In order to use the API, you will need to prepare your project with the following instruction:
 
 1. Create a new folder in the assets folder of your unity project with the name: "Plugins".
-2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created.
-3. You can use the QR tracking scrips in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development/Assets/HoloToolkit-Preview/QRTracker/scripts) or write your own.
+2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created.
+3. You can use the QR tracking scripts in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Scripts) or write your own.
+Note: These plugins are only for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md) builds. The plugins will be updated with the next windows release. The current plugins were experimental and will not work for future version of the windows. New plugins will be published which can be used from next windows release and they will not be backwards compatable and will not work with RS5).
 
 ## Implementing QR code tracking in DirectX
 
-To use the QRTrackingPlugin in Visual Studio, you will need to add reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
+To use the QRTrackingPlugin in Visual Studio, you will need to add reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
 
 ```cpp
 // MyClass.h
@@ -304,3 +314,6 @@ QR codes with logos have not been tested and are currently unsupported.
 
 * QR codes are only persisted in the boot session. Once you reboot (or restart the driver), they will be gone and detected as new objects next time.
 * QR code history is saved at the system level in the driver session, but you can configure your app to ignore QR codes older than a specific timestamp if you want. Currently the API does support clearing QR code history, as multiple apps might be interested in the data.
+
+**The plugins for RS5 and future versions are not compatable**
+RS5 version of the plugin only works for RS5 and will not work for future versions. The expermental plugin will be replaced with the real plugin and should be the one that we can use in future versions of the windows.

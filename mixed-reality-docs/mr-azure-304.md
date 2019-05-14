@@ -2,10 +2,16 @@
 title: MR and Azure 304 - Face recognition
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition, hololens, immersive, vr
 ---
+
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+
+<br> 
 
 # MR and Azure 304: Face recognition
 
@@ -13,7 +19,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition,
 
 In this course you will learn how to add face recognition capabilities to a mixed reality application, using Azure Cognitive Services, with the Microsoft Face API.
 
-*Azure Face API* is a Microsoft service, which provides developers with the most advanced face algorithms, all in the cloud. The *Face API* has two main functions: face detection with attributes, and face recognition. This allows developers to simply set a set of groups for faces, and then, send query images to the service later, to determine to whom a face belongs. For more information, visit the [Azure Face Recognition page](https://azure.microsoft.com/en-us/services/cognitive-services/face/).
+*Azure Face API* is a Microsoft service, which provides developers with the most advanced face algorithms, all in the cloud. The *Face API* has two main functions: face detection with attributes, and face recognition. This allows developers to simply set a set of groups for faces, and then, send query images to the service later, to determine to whom a face belongs. For more information, visit the [Azure Face Recognition page](https://azure.microsoft.com/services/cognitive-services/face/).
 
 Having completed this course, you will have a mixed reality HoloLens application, which will be able to do the following:
 
@@ -46,7 +52,7 @@ In your application, it is up to you as to how you will integrate the results wi
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
 - [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md)
 - [The latest Windows 10 SDK](install-the-tools.md)
 - [Unity 2017.4](install-the-tools.md)

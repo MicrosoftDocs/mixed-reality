@@ -8,7 +8,10 @@ ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, immersive, vr, mr, get started, hologram, academy, tutorial
 ---
 
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
 
+<br>
 
 # MR Basics 100: Getting started with Unity
 
@@ -89,7 +92,7 @@ In this chapter, we will set some Unity project settings that help us target the
 
 Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
 1. Select **Edit > Project Settings > Quality**
-2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and Fastest row is green.
+2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green.
 
 **For mixed reality applications targeted to occluded displays**, you can leave the quality settings to its default values.
 
@@ -136,20 +139,23 @@ Creating a cube in your Unity project is just like creating any other object in 
 
 Now that we have created our cube, it is time to do a quick check in device. You can do this directly from within the Unity editor.
 
+### Initial setup
+1. On your development PC, in Unity, open **File > Build Settings** window.
+2. Change **Platform** to **Universal Windows Platform** and click **Switch Platfrom**
+
 ### For HoloLens use Unity Remoting
 1. On your HoloLens, install and run the [Holographic Remoting Player](holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
-2. On your development PC, in Unity, open **File > Build Settings** window.
-3. Change **Platform** to **Universal Windows Platform** and click **Switch Platform**.
-4. Open **Window > XR > Holographic Emulation**.
-5. Change **Emulation Mode** from **None** to **Remote to Device**.
-6. In **Remote Machine**, enter the IP address of your HoloLens noted earlier.
-7. Click **Connect**.
-8. Ensure the **Connection Status** changes to green **Connected**.
-9. Now you can now click **Play** in the Unity editor.
+2. Open **Window > XR > Holographic Emulation**.
+3. Change **Emulation Mode** from **None** to **Remote to Device**.
+4. In **Remote Machine**, enter the IP address of your HoloLens noted earlier.
+5. Click **Connect**.
+6. Ensure the **Connection Status** changes to green **Connected**.
+7. Now you can now click **Play** in the Unity editor.
 
 You will now be able to see the cube in device and in the editor. You can pause, inspect objects, and debug just like you are running an app in the editor, because that’s essentially what’s happening, but with video, audio, and device input transmitted back and forth across the network between the host machine and the device.
 
 ### For other mixed reality supported headsets
+
 1. Connect the headset to your development PC using the USB cable and the HDMI or display port cable.
 2. Launch the **Mixed Reality Portal** and ensure you have completed the first run experience.
 3. From Unity, you can now press the Play button.

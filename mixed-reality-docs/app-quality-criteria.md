@@ -55,16 +55,15 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 #### Documentation
 
-* [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md)
-* [Performance recommendations for Windows MR headset apps](performance-recommendations-for-immersive-headset-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Hologram stability and framerate](hologram-stability.md#frame-rate)
 * [Asset performance budget](asset-creation-process.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 
 #### Tools and tutorials
 
-* [MRToolkit, FPS counter display](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/Utilities/README.md)
-* [MRToolkit, Shaders](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/Utilities/Shaders)
+* [MRToolkit, FPS counter display](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
+* [MRToolkit, Shaders](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
 
 #### External references
 
@@ -116,7 +115,8 @@ While wearing the device and viewing the experience:
 
 * [Hologram stability and framerate](hologram-stability.md#frame-rate)
 * [Case study, Using the stabilization plane](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-* [Performance recommendation for HoloLens apps](performance-recommendations-for-hololens-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 * [Spatial anchors](spatial-anchors.md)
 * [Handling tracking errors](coordinate-systems.md#handling-tracking-errors)
 * [Stationary frame of reference](coordinate-systems.md#stationary-frame-of-reference)
@@ -171,7 +171,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 #### Tools and tutorials
 
 * [MR Spatial 230: Spatial mapping](holograms-230.md)
-* [MR Toolkit, Spatial Mapping Libraries](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/SpatialMapping/README.md)
+* [MR Toolkit, Spatial Mapping Libraries](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialMapping/README.md)
 * [MR Companion Kit, Poster Calibration Sample](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample)
 * [MR Companion Kit, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
 
@@ -306,7 +306,7 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
 #### Tools and tutorials
 
 * [MR Spatial 220: Spatial sound](holograms-220.md)
-* [MRToolkit, Spatial Audio](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit/SpatialSound/README.md)
+* [MRToolkit, Spatial Audio](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
 ## Focus on holographic frame (FOV) boundaries
 
@@ -519,7 +519,7 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 
 #### Tools and tutorials
 
-* [Mixed Reality Toolkit - UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Examples/UX)
+* [Mixed Reality Toolkit - UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
 
 ## Room scanning
 
@@ -564,7 +564,7 @@ Apps that require spatial mapping data rely on the device to automatically colle
 
 #### Tools and tutorials
 
-* [Mixed Reality Toolkit - UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit-Examples/UX)
+* [Mixed Reality Toolkit - UX](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
 
 ## Directional indicators
 

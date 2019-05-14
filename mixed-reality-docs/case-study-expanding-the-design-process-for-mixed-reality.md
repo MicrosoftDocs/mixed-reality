@@ -112,4 +112,4 @@ Simple, cheap art supplies are key to providing team members with the tools nece
 
 ## See also
 * [Case study - My first year on the HoloLens design team](case-study-my-first-year-on-the-hololens-design-team.md)
-* [Case study - AfterNow's process - envisioning, prototyping, building](https://developer.microsoft.com/en-us/windows/mixed-reality/case_study_-_afternow's_process_-_envisioning,_prototyping,_building)
+* [Case study - AfterNow's process - envisioning, prototyping, building](https://developer.microsoft.com/windows/mixed-reality/case_study_-_afternow's_process_-_envisioning,_prototyping,_building)

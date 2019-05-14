@@ -52,7 +52,7 @@ The size of room that is being simulated by Spatial Sound. The approximate sizes
 
 ### Example
 
-The MixedRealityToolkit for Unity provides a static class that makes setting the Spatial Sound settings easy. This class can be found in the [MixedRealityToolkit\SpatialSound folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/master/Assets/HoloToolkit/SpatialSound) and can be called from any script in your project. It is recommended that you set these parameters on each Audio Source component in your project. The following example shows selecting the medium room size for an attached Audio Source.
+The MixedRealityToolkit for Unity provides a static class that makes setting the Spatial Sound settings easy. This class can be found in the [MixedRealityToolkit\SpatialSound folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialSound) and can be called from any script in your project. It is recommended that you set these parameters on each Audio Source component in your project. The following example shows selecting the medium room size for an attached Audio Source.
 
 ```cs
 AudioSource audioSource = gameObject.GetComponent<AudioSource>()
@@ -91,11 +91,11 @@ using UnityEngine;
    }
 ```
 ### Spatial Sound in Mixed Reality Toolkit
-- [HoloToolkit-Examples/SpatialSound/Scenes/UAudioManagerTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/SpatialSound/Scenes/UAudioManagerTest.unity)
+- [HoloToolkit-Examples/SpatialSound/Scenes/UAudioManagerTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/SpatialSound/Scenes/UAudioManagerTest.unity)
 
 The following examples from the Mixed Reality Toolkit are general audio effect examples that demonstrate ways to make your experiences more immersive by using sound.
-- [HoloToolkit-Examples/SpatialSound/Scenes/AudioLoFiTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/SpatialSound/Scenes/AudioLoFiTest.unity)
-- [HoloToolkit-Examples/SpatialSound/Scenes/AudioOcclusionTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/master/Assets/HoloToolkit-Examples/SpatialSound/Scenes/AudioOcclusionTest.unity)
+- [HoloToolkit-Examples/SpatialSound/Scenes/AudioLoFiTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/SpatialSound/Scenes/AudioLoFiTest.unity)
+- [HoloToolkit-Examples/SpatialSound/Scenes/AudioOcclusionTest.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/SpatialSound/Scenes/AudioOcclusionTest.unity)
 
 ## See also
 * [Spatial sound](spatial-sound.md)

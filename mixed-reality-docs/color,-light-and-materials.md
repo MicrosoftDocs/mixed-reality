@@ -2,7 +2,7 @@
 title: Color, light and materials
 description: Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
 author: mavitazk
-ms.author: pinkb, mavitazk 
+ms.author: pinkb 
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, color, light, materials
@@ -55,10 +55,10 @@ Light and color can help make your holograms appear more naturally in a user's e
 * **Emphasis** - Draw attention to objects or points of interaction by contrasting colors, brightness, and lighting. For a more detailed look at lighting methods in storytelling, see [Pixel Cinematography - A Lighting Approach for Computer Graphics](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).
 
 ![Use of color to show emphasis for storytelling elements, shown here in a scene from Fragments.](images/640px-fragments.jpg)<br>
-*Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](http://www.microsoft.com/en-us/hololens/apps/fragments).*
+*Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8).*
 
 ## See also
 * [Color Separation](hologram-stability.md#color-separation)
 * [Holograms](hologram.md)
-* [Microsoft Design Language - color](https://www.microsoft.com/en-us/design/color)
+* [Microsoft Design Language - color](https://www.microsoft.com/design/color)
 * [Universal Windows Platform - color](https://docs.microsoft.com/windows/uwp/style/color)
