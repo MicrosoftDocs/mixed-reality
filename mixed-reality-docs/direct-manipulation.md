@@ -134,7 +134,7 @@ While this may sometimes work just fine, quickly performing hand gestures may re
 This is where eye tracking could help out to lean the hand throwing vector back to your intended position.
 
 ## See also
-* [Gaze and commit](gaze-and-commit.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Point and commit](point-and-commit.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 
