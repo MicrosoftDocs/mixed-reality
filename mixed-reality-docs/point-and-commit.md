@@ -13,7 +13,7 @@ Point and commit is an input model that enables users to target, select, and man
 
 ## Device support
 
-Input model | [HoloLens (1st gen)](https://review.docs.microsoft.com/en-us/windows/mixed-reality/hololens-hardware-details?branch=master) | HoloLens2 | [Immersive headsets](https://review.docs.microsoft.com/en-us/windows/mixed-reality/immersive-headset-hardware-details?branch=master) |
+Input model | [HoloLens (1st gen)](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-hardware-details) | HoloLens 2 | [Immersive headsets](https://docs.microsoft.com/en-us/windows/mixed-reality/immersive-headset-hardware-details) |
 | ---------| -----| ----- | ---------|
 Point and commit (far interaction) | ❌ Not supported | ✔️ Recommended | ✔️ Recommended
 
@@ -59,13 +59,9 @@ In direct manipulation, there are two ways for users to manipulate 3D object: Af
 
 ## Instinctual gestures
 
-Coming soon!  
-
 ![](images/Instinctual-Gestures-Far-720px.jpg)
 
 ## Symmetric design between hands and 6 DoF controller
-
-Coming soon!
 
 ![](images/Symmetric-Design-For-Rays-720px.jpg)
 
