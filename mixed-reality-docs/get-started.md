@@ -59,7 +59,7 @@ Now that your PC and device(s) are set up, you're ready to create your first mix
 
 Now that you've successfully created your first MR project, you're probably hungry for more! Here are some resources that should help:
 * [Mixed reality developer documentation](mixed-reality.md) - you're already here, but there's so much more to check out, including technical documentation, design guidance, sample projects, and case studies.
-* [Mixed reality academy](academy.md) - follow along with tutorials covering everything from setting up projects, to implementing core MR building blocks, to integrating Azure cloud services into your MR app.
+* [Mixed reality tutorials](tutorials.md) - follow along with tutorials covering everything from setting up projects, to implementing core MR building blocks, to integrating Azure cloud services into your MR app.
 * [Learn Unity](https://unity3d.com/learn) - Unity's website offers tutorials, projects, and live training sessions for creators at every stage of learning.
 
 You can also get help from these great community resources:

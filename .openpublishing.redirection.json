@@ -9,6 +9,11 @@
 			"source_path": "mixed-reality-docs/release-notes.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/gaze,-gestures,-and-motion-controllers-in-directx.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/gaze-in-directx",
+			"redirect_document_id": false
 		}
 	]
 }

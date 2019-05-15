@@ -14,6 +14,9 @@ keywords: walkthrough, voice command, phrase, recognition, speech, directx, plat
 
 This topic explains how to implement [voice commands](voice-input.md), and small phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Use a SpeechRecognizer for continuous recognition of voice commands
 
 In this section, we describe how to use continuous speech recognition to enable voice commands in your app. This walkthrough uses code from the [HolographicVoiceInput](http://go.microsoft.com/fwlink/p/?LinkId=844964) Sample. When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.

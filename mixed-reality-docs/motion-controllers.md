@@ -229,7 +229,7 @@ See [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed
 
 ## See also
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
-* [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Gestures](gestures.md)
 * [MR Input 213: Motion controllers](mixed-reality-213.md)
 * [Enthusiast's Guide: Your Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)

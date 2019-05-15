@@ -14,13 +14,24 @@ Unity provides a set of default options that are generally the average case for 
 
 ## Performant environment set-up
 
-### Low quality setting
+### Low quality settings
 
-It is important to modify the **Unity Quality settings** for your environment to **"fastest"**. This will help ensure your application is running performantly at the appropriate framerate. This is extremely significant for Hololens development. For development on immersive headsets, depending on the specs of the desktop powering the VR experience, one can still achieve framerate without the lowest quality parameters. 
+It is important to modify the **Unity Quality settings** for your environment to **Very Low**. This will help ensure your application is running performantly at the appropriate framerate. This is extremely significant for Hololens development. For development on immersive headsets, depending on the specs of the desktop powering the VR experience, one can still achieve framerate without the lowest quality parameters. 
 
 In Unity 2018 LTS+, the project's quality level can be set by:
 
-Under **Edit** > **Project Settings** > **Quality** > Set the **Default** by clicking on the downward arrow to the **Fastest** quality level
+Under **Edit** > **Project Settings** > **Quality** > Set the **Default** by clicking on the downward arrow to the **Very Low** quality level
+
+### Lighting settings
+
+Similar to Quality scene settings, it is important to set optimal Lighting settings for your Mixed Reality application. In Unity, the Lighting setting that will usually have the greatest  performance impact on your scene is **Realtime Global Illumination**. This can be turned off by going under **Window** > **Rendering** > **Lighting Settings** > **Realtime Global Illumination**. 
+
+There is another lighting setting, **Baked Global Illumination**. This setting can provide performant and visually striking results on immersive headsets but is generally not applicable for HoloLens development. **Baked Global Illumniation** is only calculated for static GameObjects which are generally not found in HoloLens scenes due to the nature of an unknown and changing environment.
+
+Please read [Global Illumination from Unity](https://docs.unity3d.com/Manual/GIIntro.html) for more information. 
+
+>[!NOTE]
+> **Realtime Global Illumination** is set **per-scene** and thus developers must save this property for every Unity scene in their project. 
 
 ### Single pass instancing rendering path
 

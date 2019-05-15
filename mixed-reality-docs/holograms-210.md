@@ -98,7 +98,7 @@ Finally, we'll update our quality settings to achieve a fast performance on Holo
 
 1. Go to **Edit > Project Settings > Quality**.
 2. Click on downward pointing arrow in the **Default** row under the Windows Store icon.
-3. Select **Fastest** for **Windows Store Apps**.
+3. Select **Very Low** for **Windows Store Apps**.
 
 ### Import project assets
 
