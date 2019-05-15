@@ -49,8 +49,7 @@ Below are some practices that will aid in smooth speech recognition.
 
 Saying "select" at any time will activate whatever the gaze cursor is pointing at. 
 
->!Note
->In HoloLens 2, the gaze cursor needs to first be invoked by saying the word "select". Say, "select" again to activate. To hide the gaze cursor, simply use your hands -- airtap or touch an object. 
+>Note: In HoloLens 2, the gaze cursor needs to first be invoked by saying the word "select". Say, "select" again to activate. To hide the gaze cursor, simply use your hands -- airtap or touch an object. 
 
 ### See it, say it
 
