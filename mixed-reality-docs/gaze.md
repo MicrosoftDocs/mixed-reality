@@ -59,5 +59,5 @@ Once the user has targeted a hologram or real-world object using their gaze, the
 
 ## See also
 * [MR Input 210: Gaze](holograms-210.md)
-* [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Gaze in Unity](gaze-in-unity.md)
