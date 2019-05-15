@@ -1,6 +1,6 @@
 ---
-title: Gaze and dwell
-description: Overview of the gaze and dwell input model
+title: Head-Gaze and Dwell
+description: Overview of the head-gaze and dwell input model
 author:  liamartinez
 ms.author: liamar
 ms.date: 05/13/2019
@@ -8,9 +8,13 @@ ms.topic: article
 keywords: Mixed Reality, gaze, dwell, interaction, design
 ---
 
-# Gaze and dwell
+# Head-Gaze and Dwell
 
-When hands are occupied with tools and parts, gestures can be tedious or impossible. Voice commands, like gestures, can be unreliable in certain contexts, for example under excessively loud conditions. Additionally, using voice to control computers isn't universally common, but it certainly is gaining steam! Gaze and dwell offers the most familiar and easy-to-master mechanism for working heads-up and hands-free on HoloLens. Additionally, gaze and dwell is 100% reliable independent of noise interference nor silence constraints in the operating environment.
+When hands are occupied with tools and parts, gestures can be tedious or impossible. Voice commands, like gestures, can be unreliable in certain contexts, for example under excessively loud conditions. Additionally, using voice to control computers isn't universally common, but it certainly is gaining steam! Head-Gaze and dwell offers the most familiar and easy-to-master mechanism for working heads-up and hands-free on HoloLens. Additionally, head-gaze and dwell is 100% reliable independent of noise interference nor silence constraints in the operating environment.
+
+## Scenarios
+
+Head-Gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or availible due to environmental or social constraints. A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine. Their hands are busy with tools or supporting their body as they lean into the engine compartment. The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult. Head-gaze and dwell allows the person in the HoloLens to confidently navigate their reference material without interupting their workflow. 
 
 ## Goals
 
@@ -20,7 +24,7 @@ Provide a mechanism for fully hands-free interactions, without using Voice.
 
 1. Avoid "Gaze as a weapon"
 
-    Gaze and dwell requires visual feedback to be intuitive, but too much feedback can induce anxiety. The feedback should help a user know what they're targeting, but not auto-select it against their intent. Reading text, icons, and labels requires extra consideration to provide a person room to absorb the information before selecting.
+    Head-Gaze and dwell requires visual feedback to be intuitive, but too much feedback can induce anxiety. The feedback should help a user know what they're targeting, but not auto-select it against their intent. Reading text, icons, and labels requires extra consideration to provide a person room to absorb the information before selecting.
 	
 2. Seek Goldilocks speed
 	
@@ -28,12 +32,12 @@ Provide a mechanism for fully hands-free interactions, without using Voice.
 	
 3. Say no-no to yo-yo effect
 
-    The yo-yo effect is an uncomfortable pattern of head movement that can emerge when the placement of content and gaze and dwell controls forces people to constantly look up and down repeatedly. For example, a list nav with the gaze and dwell button at the bottom induces a loop of - look down to dwell, look up at results, look down to dwell, etc. This resulting pattern is uncomfortable and should be avoided by placing navigation controls in a centralized location that requires less back-and-forth. Placement of dwell buttons relative to their effects becomes important for comfort.
+    The yo-yo effect is an uncomfortable pattern of head movement that can emerge when the placement of content and head-gaze and dwell controls forces people to constantly look up and down repeatedly. For example, a list nav with the head-gaze and dwell button at the bottom induces a loop of - look down to dwell, look up at results, look down to dwell, etc. This resulting pattern is uncomfortable and should be avoided by placing navigation controls in a centralized location that requires less back-and-forth. Placement of dwell buttons relative to their effects becomes important for comfort.
 
 ## UX Guidelines and best practices
 
 ### Target sizes
-  To be easily accessible, gaze and dwell targets need to be large enough to comforatably target, and hold one's head stabily on the target for the prescribed time. We reccomend a minimum target size of 2 degrees to achieve the most comfortable experience. 
+  To be easily accessible, head-gaze and dwell targets need to be large enough to comforatably target, and hold one's head stabily on the target for the prescribed time. We reccomend a minimum target size of 2 degrees to achieve the most comfortable experience. 
 
 ### Visual feedback
 
@@ -61,32 +65,32 @@ Use a short delay before starting visual feedback to avoid flickering when someo
 High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.
 
 * High frequency buttons should...
-  * be larger buttons, easier to hit with gaze
+  * be larger buttons, easier to hit with head-gaze
   * stay near eye height to avoid ergonomic straining.
 
 ### Low frequency buttons
 Low frequency buttons are buttons that are not interacted with as regularly throughout the application. A good example might be a button to access the settings menu, or a button to clear all work.
 
-* Try to keep these buttons out of the way of frequent gaze paths to avoid accidental activation. 
+* Try to keep these buttons out of the way of frequent head-gaze paths to avoid accidental activation. 
 
 ### Confirmations
 ![Microsoft Dynamics 365 Guides Confirmation Dialog](images/GuidesConfirmation.png "Microsoft Dynamics 365 Guides Confirmation Dialog")
 
-When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button. For gaze and dwell UIs there are some patterns and considerations for confirmation dialogs:
+When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button. For head-gaze and dwell UIs there are some patterns and considerations for confirmation dialogs:
 
   * Show selection highlight on main button.
   * Reveal dwell target at same time as selection highlight.
-  * For the secondary button, reveal the dwell target on gaze.
+  * For the secondary button, reveal the dwell target on head-gaze.
 		
 ### Toggle buttons
 Toggle buttons require some nuanced logic to work properly. When a person dwells on a toggle button and actives it, they need to exit the button and then return to restart the dwell logic. It is important that togglable buttons have a clear active versus inactive state. 
 
 ### List views
 ![Microsoft Dynamics 365 Guides Confirmation Dialog](images/GuidesListView.png "Microsoft Dynamics 365 Guides Confirmation Dialog")
-List views present a particular challenge for gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets. 
+List views present a particular challenge for head-gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets. 
 
 Some tips for designing list views:
-* have the entire row highlight when gazed but doesn’t begin dwell unless gaze is on the specific dwell target.
+* have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
 * only show the dwell target when the row is highlighted to cut down on visual noise.
 * be clear and consistent with the position of dwell targets.
 * don't show all dwell targets at once to avoid repetitive UI
