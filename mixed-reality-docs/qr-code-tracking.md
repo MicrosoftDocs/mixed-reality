@@ -164,30 +164,12 @@ The QRTracking plugin exposes the APIs for QR code tracking.
 
 ## Using QR Code Tracking with the MRTK
 
-MRTK has [a wrapper and samples to simplify QR code tracking](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker), including:
-
-- A prefab QRScanner which adds the necessary scrips to a scene to use QR codes.
-- A script (QRCodeManager) that implements the QRCode API.
-- The script AttachToQRCode, which is used to attach holograms to the QR Code coordinate systems.
-
-You can find an example of how to use these tools with Unity in the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker). This example consists of two scenes:
-
-- A sample to simply show details of the QR codes as they are detected.
-- A second scene using the coordinate system attached to the QR code to display holograms.
-
-Further details can be found in the MRTK readme. 
-
 ## Implementing QR code tracking in Unity
 
-You can also use the QR Tracking API in Unity without taking a dependency on MRTK. To do so, you must:
+You can use the QR Tracking API in Unity without taking a dependency on MRTK. To do so, you must:
 
 1. Create a new folder in the assets folder of your unity project with the name *Plugins*.
 2. Copy all the required files from this folder into the local "Plugins" folder you just created.
-
-You can then use the QR tracking scripts in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Scripts) for tracking, or you can write your own.
-
->[!NOTE]
-> These plugins are only for [Windows 10 Version 1809](release-notes-october-2018.md) builds and are not compatible with Hololens 2.
 
 ## Implementing QR code tracking in DirectX
 
@@ -329,4 +311,4 @@ QR codes with logos have not been tested and are currently unsupported.
 ### Managing QR code data
 WMR devices save QR codes in the boot session. Once you reboot the device or restart the driver, they are gone and will be re-detected as new objects next time. QR code history is saved at the system level in the driver session. It is recommended to configure your app to ignore QR codes older than a specific timestamp.
 
-Currently, the API does support clearing QR code history, as multiple apps might be interested in the data.
+Currently, the API does not support clearing QR code history.
