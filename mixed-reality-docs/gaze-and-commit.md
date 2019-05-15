@@ -47,14 +47,14 @@ After targeting an object or UI element, the user can interact or "click" on it 
 - Press the 'A' button on an Xbox Gamepad
 - Press the 'A' button on an Xbox Adaptive Controller
 
-### Gaze and air tap gesture
+### Head-gaze and air tap gesture
 Air tap is a tapping gesture with the hand held upright. To perform an Air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release. On HoloLens 1, Air tap is the most common secondary input.
 
 ![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
 
 Air tap is also available on HoloLens 2, and it has been relaxed from the original version. Nearly all types of pinches are now supported, as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture.  This new Air tap replaces the old one through the same API, so existing applications will get the new behavior automatically after recompiling for HoloLens 2.
 
-### Gaze and "Select" voice command
+### Head-gaze and "Select" voice command
 Voice commanding is one of the primary interaction methods on Mixed Reality. It provides a very powerful "Hands Free" mechanism to control the system. There are diferent types of voice interaction models:
 
 - The generic command "Select" that allows to perform a "click" actuation or commit as a secondary input.
@@ -66,7 +66,7 @@ Voice commanding is one of the primary interaction methods on Mixed Reality. It 
 To find more details and a comprenhesive list of available commands and how to use, check out our [voice design](voice-design.md) guidance.
 
 
-### Gaze and HoloLens Clicker
+### Head-gaze and HoloLens Clicker
 The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens 1 Development Edition. The HoloLens Clicker allows a user to click with minimal hand motion and commit as a secondary input. The HoloLens clicker connects to the HoloLens 1 or 2 using Bluetooth Low Energy (BTLE).
 
 ![](images/hololens-clicker-500px.jpg)<br>
@@ -77,7 +77,7 @@ More information and instructions to pair the device can be found [here](hardwar
 
 
 
-### Gaze and Xbox Wireless Controller
+### Head-gaze and Xbox Wireless Controller
 The Xbox Wireless Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Wireless Controller.
 
 ![](images/xboxcontroller.jpg)<br>
@@ -86,7 +86,7 @@ Xbox Wireless Controller
 [Pairing an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
 
 
-### Gaze and Xbox Adaptive Controller
+### Head-gaze and Xbox Adaptive Controller
 Designed primarily to meet the needs of gamers with limited mobility, the Xbox Adaptive Controller is a unified hub for devices that helps make Mixed Reality more accessible.
 
 The Xbox Adaptive Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Adaptive Controller.
@@ -104,11 +104,11 @@ Xbox Adaptive Controller ports
 <a href=https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
 
-# Head gaze design guidelines
+# Head-gaze design guidelines
 > [!NOTE]
 > More guidance specific to gaze design [coming soon](index.md).
 
-## Gaze targeting
+## Head-gaze targeting
 All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality. In Windows Mixed Reality, this is generally done using the user's gaze.
 To enable a user to work with an experience successfully, the system's calculated understanding of a user's intent, and the user's actual intent, must align as closely as possible. To the degree that the system interprets the user's intended actions correctly, satisfaction increases and performance improves.
 
@@ -131,7 +131,7 @@ Users will often fail to find UI elements that are positioned very high or very 
 ## Improving targeting behaviors
 If user intent to target something can be determined (or approximated closely), it can be very helpful to accept "near miss" attempts at interaction as though they were targeted correctly. There are a handful of successful methods that can be incorporated in mixed reality experiences:
 
-### Gaze stabilization ("gravity wells")
+### Head-gaze stabilization ("gravity wells")
 This should be turned on most/all of the time. This technique removes the natural head/neck jitters that users may have. Also movement due to looking/speaking behaviors.
 
 ### Closest link algorithms
