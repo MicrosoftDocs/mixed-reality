@@ -1,5 +1,5 @@
 ---
-title: Gaze and dwell
+title: Head-gaze and dwell
 description: Overview of the gaze and dwell input model
 author:  liamartinez
 ms.author: liamar
@@ -8,9 +8,32 @@ ms.topic: article
 keywords: Mixed Reality, gaze, dwell, interaction, design
 ---
 
-# Gaze and dwell
+# Head-gaze and dwell
 
 When hands are occupied with tools and parts, gestures can be tedious or impossible.  Voice commands, like gesture, can be situationally unreliable, for example under excessively loud conditions.  Additionally, using voice to control computers isn't a mainstream interaction yet, but it certainly is gaining steam!  Gaze dwell offers the most familiar and easy-to-master mechanism for working heads-up hands-free on HoloLens.  Additionally, gaze dwell is 100% reliable independent of noise interference nor silence constraints in the operating environment.
+
+## Device support
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Input model</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Head-gaze and dwell</td>
+        <td>✔️ Recommended</td>
+        <td>✔️ Recommended</td>
+        <td>✔️ Recommended</td>
+    </tr>
+</table>
 
 ## Goals
 
