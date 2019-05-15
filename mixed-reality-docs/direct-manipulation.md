@@ -1,5 +1,5 @@
 ---
-title: Direct manipulation
+title: Direct manipulation with hands
 description: Overview of the direct manipulation input model
 author: caseymeekhof
 ms.author: cmeekhof
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
 ---
 
-# Direct manipulation
+# Direct manipulation with hands
 Direct manipulation is an input model that involves touching holograms directly with your hands. The goal with direct manipulation is that objects behave just as they do in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen.  Because of this, direct manipulation is easy for users to learn, and it's fun too.  It is considered a "near" input model, meaning it is best used for interacting with content that is within arms reach.
 
 A key ingredient that makes direct manipulation easy to learn is that it is affordance-based. There are no symbolic gestures to teach users. All interactions should be built around a visual element that can be touched or grabbed.
@@ -29,14 +29,14 @@ A key ingredient that makes direct manipulation easy to learn is that it is affo
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
-        <td>Direct manipulation (Near hand interaction)</td>
+        <td>Direct manipulation with hands</td>
         <td>❌ Not supported</td>
         <td>✔️ Recommended</td>
         <td>➕ An alternate option but <a href="point-and-commit.md">Point and commit (far interaction)</a> is recommended</td>
     </tr>
 </table>
 
-Direct manipulation is a primary input model on HoloLens 2, utilizing the new articulated hand tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended a primary means of interaction outside of object manipulation.  Direct manipluation is not available on HoloLens v1.
+Direct manipulation with hands is a primary input model on HoloLens 2, utilizing the new articulated hand tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended a primary means of interaction outside of object manipulation.  Direct manipluation with hands is not available on HoloLens v1.
 
 ## Collidable fingertip
 On HoloLens 2, user's real hands are recognized and interpreted as left and right hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips cause lots of unexpected and unpredictable collisions with holograms. Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1 finger press, 1 finger tap, 2 finger press and 5 finger press.
