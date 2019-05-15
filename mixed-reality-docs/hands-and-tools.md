@@ -32,8 +32,8 @@ Motion controllers are tools that extend the users' physical capabilities by pro
 ![](images/Hands-and-controllers-720px.jpg)<br>
 
 ## See also
-* [Gaze and commit](gaze-and-commit.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Direct manipulation (Near hand interaction)](direct-manipulation.md)
 * [Point and commit (Far hand interaction)](point-and-commit.md)
 * [Hands-free](hands-free.md)
-* [Gaze targeting](gaze-targeting.md)
+* [Gaze and dwell](gaze-targeting.md)
