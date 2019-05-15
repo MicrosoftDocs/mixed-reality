@@ -21,7 +21,7 @@ When using voice commands, gaze is typically used as the targeting mechaninism, 
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td>Gaze and voice</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with headset attached)</td>
+<td></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with headset attached)</td>
 </tr>
 </table>
 
