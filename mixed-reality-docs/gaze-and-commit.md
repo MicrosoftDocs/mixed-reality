@@ -1,6 +1,6 @@
 ---
-title: Gaze and commit
-description: Overview of the gaze and commit input model
+title: Head-gaze and commit
+description: Overview of the head-gaze and commit input model
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
@@ -103,11 +103,6 @@ Xbox Adaptive Controller ports
 
 <a href=https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
-
-# Device support
-Head gaze and commit is available on all mixed reality headsets. Is the primary input model on HoloLens v1. Other headsets typically include a hand-based pointing mechanism, such as motion controllers or articulated hand tracking. On these devices, applications should prefer [point-and-commit](point-and-commit.md) for far interactions when possible.
-
-Eye gaze and commit is available on HoloLens 2, but is not the primary input model. Jump to the "Eye gaze design guidelines" section for a discussion about when this might make sense for your application.
 
 # Head gaze design guidelines
 > [!NOTE]

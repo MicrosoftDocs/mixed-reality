@@ -16,6 +16,29 @@ When hands are occupied with tools and parts, gestures can be tedious or impossi
 
 Head-Gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or availible due to environmental or social constraints. A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine. Their hands are busy with tools or supporting their body as they lean into the engine compartment. The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult. Head-gaze and dwell allows the person in the HoloLens to confidently navigate their reference material without interupting their workflow. 
 
+## Device support
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Input model</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Head-gaze and dwell</td>
+        <td>✔️ Recommended</td>
+        <td>✔️ Recommended</td>
+        <td>✔️ Recommended</td>
+    </tr>
+</table>
+
 ## Goals
 
 Provide a mechanism for fully hands-free interactions, without using Voice.

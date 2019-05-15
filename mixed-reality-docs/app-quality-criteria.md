@@ -463,7 +463,8 @@ Input interaction clarity is critical to an app's usability and includes input c
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
 * [Voice input in Unity](voice-input-in-unity.md)
 * [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
-* [Gaze, gesture, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
+* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](voice-input-in-directx.md)
 
 #### Tools and tutorials

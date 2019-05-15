@@ -111,5 +111,5 @@ There are three things that you should consider:
 * [Voice design](voice-design.md)
 * [MR Input 211: Gesture](holograms-211.md)
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
-* [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Motion controllers](motion-controllers.md)
