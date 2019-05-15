@@ -19,23 +19,6 @@ San Francisco, CA 94107
 
 
 ---
-## **[Mixed Reality Dev Days, Seattle](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
-### May 2-3, 2019
-At Mixed Reality Dev Days, you’ll build the skills, network, and ideas you need to take your mixed reality applications to the next level.
-
-**[More information here](https://docs.microsoft.com/en-us/windows/mixed-reality/mr-dev-days)**
-
-
-
----
-## **[Microsoft //Build, Seattle](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fbuild&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961104348&sdata=hozCZlUHbpPxuYJaK5i802K6beJ5flmN0gEK7C1%2BIHw%3D&reserved=0)**
-### May 6-10, 2019
-Join us in Seattle for Microsoft’s premier event for developers. Come and experience the latest developer tools and technologies. Imagine new ways to create software by getting industry insights into the future of software development. Connect with your community to understand new development trends and innovative ways to code.
-
-**Register for Microsoft //Build 2019 [here](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fbuild&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961104348&sdata=hozCZlUHbpPxuYJaK5i802K6beJ5flmN0gEK7C1%2BIHw%3D&reserved=0)**
-
-
----
 ## **[HoloLens and Mixed Reality Meetup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961074327&sdata=08%2FHAyYghOFJC63HQAeb0bJU4Wv8JPH%2BSCD%2FgIhkMog%3D&reserved=0)**
 ### May 15, 2019
 Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
