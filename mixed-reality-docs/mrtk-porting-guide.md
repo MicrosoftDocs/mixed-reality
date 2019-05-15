@@ -5,6 +5,7 @@ author: grbury
 ms.author: grbury
 ms.date: 04/12/19
 ms.topic: article
+ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
 ---
 
