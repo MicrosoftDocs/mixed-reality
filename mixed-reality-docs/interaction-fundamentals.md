@@ -5,82 +5,44 @@ author: shengkait
 ms.author: shengkait
 ms.date: 04/11/2019
 ms.topic: article
-keywords: Mixed Reality, gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hololens, MMR, multimodal 
 ---
 
 # Introducing instinctual interactions
-The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality platform.  We've taken three steps to ensure that application designers and developers can provide easy and intuitive interactions for their customers. 
 
-First, we've made sure our amazing sensors and input technology, including hand tracking, eye tracking, and natural language, combine into seamless multimodal interaction models.  Based on our research, designing and developing multimodally -- and not based on single inputs -- is the key to creating instinctual experiences.
+The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality (MMR) platform, from hardware to software.
 
-Secondly, we recognize that many developers target multiple devices, whether that means HoloLens 2 and HoloLens (1st gen) or HoloLens and VR.  So we've designed our interaction models to work across devices (even if the input technology varies on each device).  For example, far interaction on a Windows Immersive headset with a 6DoF controller and far interaction on a HoloLens 2 both use the identical affordances and patterns, making it easy for cross-device applications. Not only is this convenient for developers and designers, but it feels natural to end users. 
+These instinctual interactions utilize all available input technologies, including inside-out tracking, hand tracking, eye tracking, and natural language, in seamless multimodal interaction models. Based on our research, designing and developing multimodals, and not based on single inputs, is critical when creating instinctive experiences.
+
+The Instinctual Interaction models also naturally align across device types.  For example, far interaction on an immersive headset with a 6 degrees of freedom (DoF) controller and far interaction on a HoloLens 2 use the same affordances, patterns, and behaviors.  Not only is this convenient for developers and designers, but it feels natural to end users.
+
 
 Lastly, while we recognize that there are thousands of effective, engaging, and magical interactions possible in MR, we have found that intentionally employing a single interaction model end to end in an application is the best way to ensure users are successful and have a great experience.  To that end, we've included three things in this interaction guidance:
 * We've structured this guidance around the three primary interaction models and the components and patterns required for each
 * We've included supplemental guidance on other benefits that our platform provides
 * We've included guidance to help select the appropriate interaction model for your scenario
 
+## Multimodal interaction models
 
-## Three multimodal interaction models
-Based on our research and work with customers to date, we've discovered that three primary interaction models suit the majority of Mixed Reality experiences.
+Based on our research and work with customers to date, we've discovered three primary interaction models that suit the majority of Mixed Reality experiences.  
 
-In many ways, the interaction model  is the user's mental model for completing their flows.  Each of these interaction models is optimized for a set of customer needs, and each is convenient, powerful, and usable in its own right. 
+Think of these interaction models as the user's mental model for completing their flows.
 
-The chart below is a simplified overview.  Detailed information for using each interaction model is linked in the pages below with images and code samples.  
+Each of these interaction models is convenient, powerful, and usable in its own right, and all are optimized for a set of customer needs. View the chart below, for scenarios, examples, and benefits of each interaction model.  
 
-<br>
+**Model** | **[Hands and Tools](https://docs.microsoft.com/en-us/windows/mixed-reality/hands-and-tools)** | **[Hands free](https://docs.microsoft.com/en-us/windows/mixed-reality/hands-free)** | **[Gaze and Commit](https://docs.microsoft.com/en-us/windows/mixed-reality/gaze-and-commit?)**
+|--------- | --------------| ------------| ---------|
+**Example Scenarios** | 3D spatial experiences, e.g. spatial layout and design, content manipulation, or simulation | Contextual experiences where a user's hands are occupied, e.g. on the-job learning, maintenance| Click-through experiences, e.g. 3D presentations, demos
+**Fit** | Great for new users, coupled wit voice, eye tracking or head gaze. Low learning curve. Consistent UX across hand tracking and 6 DoF controllers. | Some learning required. If hands are unavailable pairs well with voice and natural language | Requires training on HMDs but not on mobile. Best for accessible controllers Best for HoloLens (1st gen) |
+**Hardware** | HoloLens 2 Immersive headsets | HoloLens 2 HoloLens (1st gen) Immersive headsets | HoloLens 2 Immersive headsets | HoloLens 2 HoloLens (1st gen) Immersive headsets Mobile AR |
 
-<table>
-    <colgroup>
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    </colgroup>
-    <tr>
-        <td><strong>Model</strong></td>
-        <td><strong>Example scenarios</strong></td>
-        <td><strong>Fit</strong></td>
-        <td><strong>Hardware</strong></td>
-    </tr>
-    <tr>
-        <td><a href="hands-and-tools.md">Hands and tools</a></td>
-        <td>3D spatial experiences<br>e.g. spatial layout and design, content manipulation, or simulation</td>
-        <td>Great for new users<br>Low learning curve<br>Grounded in easy visual affordances<br>Consistent UX across hand tracking and 6DoF controllers<br>Great when coupled with voice, eye tracking, or head gaze</td>
-        <td>HoloLens 2<br>Windows Immersive w/ Motion Controllers</td>
-    </tr>
-    <tr>
-        <td><a href="hands-free.md">Hands-free</a></td>
-        <td>Contextual experiences where a user's hands are occupied
-e.g. on the-job learning, maintenance</td>
-        <td>Some learning required<br>If hands are unavailable<br>pairs well with voice and natural language</td>
-        <td>HoloLens 2<br>HoloLens (1st gen)<br> Windows Immersive</td>
-    </tr>
-    <tr>
-        <td><a href="gaze-and-commit.md">Head-gaze and commit</a></td>
-        <td>Click-through experiences e.g. 3D presentations, demos</td>
-        <td>Requires training on HMDs but not on mobile<br>Best for accessible controllers<br>Best for HoloLens (1st gen)</td>
-        <td>HoloLens 2<br>HoloLens (1st gen)<br> Windows Immersive<br> Mobile AR</td>
-    </tr>
-</table>
-<br>
+Detailed information for using all available inputs seamlessly together in each interaction model is on the pages that follow, as well as illustrations and links to sample content from our Unity MRTK.
 
-The best way to ensure there are no gaps or holes in the interaction for your experience is to follow the guidance for a single model from beginning to end. 
 
-To speed design and development, we've included detailed information and links to images and code samples within our coverage of each model.
+## Choose an interaction model for your customer
 
-But first, the sections below walk through the steps of selecting and implementing one of these interaction models.  
- 
-### By the end of this page, you will understand our guidance on:
- 
-* Choosing an interaction model for your customer
-* Using the interaction model guidance
-* Transitioning between interaction models
-* Design next steps
 
-## Choosing an interaction model for your customer
-
-Most likely, developers and creators already have some ideas in mind of the kinds of interaction experience they want for their users.
+Most likely, developers and creators also already have some ideas in mind of the kinds of interaction experience they want their users to have.
 To encourage a customer-focused approach to design, we recommend following the guidance below to select the interaction model that's optimized for your customer.
 
 ### Why follow this guidance?

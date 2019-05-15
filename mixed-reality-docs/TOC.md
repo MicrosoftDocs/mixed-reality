@@ -184,6 +184,7 @@
 ### Advanced topics
 #### [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)
 #### [Add holographic remoting](add-holographic-remoting.md)
+### [OpenXR](openxr.md)
 ## WebVR
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## [Tutorials and sample apps](tutorials.md)

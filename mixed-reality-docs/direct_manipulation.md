@@ -1,5 +1,5 @@
 ---
-title: Direct manipulation with hands
+title: Direct manipulation
 description: Overview of the direct manipulation input model
 author: caseymeekhof
 ms.author: cmeekhof
@@ -8,8 +8,7 @@ ms.topic: article
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
 ---
 
-# Direct manipulation with hands
-Direct manipulation is an input model that involves touching holograms directly with your hands. The goal with direct manipulation is that objects behave just as they do in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen.  Because of this, direct manipulation is easy for users to learn, and it's fun too.  It is considered a "near" input model, meaning it is best used for interacting with content that is within arms reach.
+# Direct Manipulation
 
 The HoloLens 2 has a direct manipulation input model that lets you touch holograms dircly with your hands. The goal with direct manipulation is for objects to behave just as they do in the real world. You can activate buttons by simply pressing them, and even and pick up, grab, and move objects. In these scenarios, 2D content behaves like a virtual touchscreen.
 
@@ -19,13 +18,11 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 
 ## Device support
 
-
 | Input Model | [HoloLens (1st Gen)](https://review.docs.microsoft.com/en-us/windows/mixed-reality/hololens-hardware-details?branch=master) | HoloLens 2 |[Immersive Headsets](https://review.docs.microsoft.com/en-us/windows/mixed-reality/immersive-headset-hardware-details?branch=master)|
 |:-------- | :-------| :--------| :------------|
 | Direct manipulation | ❌ Not supported | ✔️ Recommended | ➕ An alternative [point and commit](https://review.docs.microsoft.com/en-us/windows/mixed-reality/point-and-commit?branch=master) is recommended.
 
-Direct manipulation is a primary input model on HoloLens 2, and utilizes the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation.  Direct manipluation is not available on HoloLens (1st gen).
-
+Direct manipulation is a primary input model on HoloLens 2, and utilizes the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation.  Direct manipluation is not available on HoloLens v1.
 
 ## Collidable fingertip
 
@@ -109,7 +106,7 @@ Specific manipulation requires precision, we recommend you use **affordance-base
 
 ## Instinctual gestures
 
-With HoloLens (1st gen), we taught users a couple predefined gestures,such as Bloom and Air Tap. For HoloLens 2, we don't ask users to memorize any symbolic gestures. All required user gestures, users need to interact with holograms and contents, are instinctual. The way to achieve instinctual gesture is to guide users to perform gestures through the design of UI affordances.
+Unlike HoloLens (1st gen), we taught users a couple predefined gestures,such as Bloom and Air Tap. For HoloLens 2, we don't ask users to memorize any symbolic gestures. All required user gestures, users need to interact with holograms and contents, are instinctual. The way to achieve instinctual gesture is to guide users to perform gestures through the design of UI affordances.
 
 For example, if we encourage you to grab an object or a control point with two finger pinch, the object or the control point should be small. If we want you to perform five finger grab, the object or the control point should be relatively big. Similar to buttons, a tiny button would limit users to press it with a single finger, while a huge button would encourage users to press it with their palms.
 
@@ -127,7 +124,7 @@ Eye tracking can potentially help in better identifying what the user’s intent
 * **When**: Reduce falsely triggering a manipulation response. Eye tracking allows for better understanding what a user is currently engaged with.
 For example, imagine you are reading through a holographic (instructional) text when reaching over to grab you real-world work tool.
 
-By doing so, you accidentally move your hand across some interactive holographic buttons that you hadn't even noticed before (maybe it even was outside of the user's Field-of-View (FOV)).
+  By doing so, you accidentally move your hand across some interactive holographic buttons that you hadn't even noticed before (maybe it even was outside of the user's Field-of-View (FOV)).
 
   Long story short: If the user hasn't looked at a hologram for a while, yet a touch or grasp event has been detected for it, it is likely that the user wasn't actually intending to interact with that hologram.
 
@@ -141,7 +138,6 @@ By doing so, you accidentally move your hand across some interactive holographic
 
 ## See also
 
-* [Head-gaze and commit](gaze-and-commit.md)
+* [Gaze and commit](gaze-and-commit.md)
 * [Point and commit](point-and-commit.md)
-* [Instinctual interactions](interaction-fundamentals.md)
-
+* [Interaction fundamentals](interaction-fundamentals.md)
