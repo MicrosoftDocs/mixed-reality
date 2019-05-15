@@ -5,6 +5,7 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Mixed Reality, interaction, design, hololens, hands, far, point and commit 
 ---
 
