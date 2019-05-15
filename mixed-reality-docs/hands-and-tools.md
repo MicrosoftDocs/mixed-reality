@@ -20,11 +20,11 @@ Some specific scenarios might be:
 * Creating location based services and games using the real world as background
 
 ## Hands and motion controllers modalities
-### [Direct manipulation (Near hand interaction)](direct-manipulation.md)
+### [Direct manipulation with hands](direct-manipulation.md)
 This is a modality leveraging the power of hands, with which users are capable of touching and manipulating the holograms directly. By leaveraging daily life experiences and providing proper visual affordances, users are able to use the same way of manipulating real world obejcts to interact with virtual ones.   
 
-### [Point and commit (Far hand interaction)](point-and-commit.md)
-This modality provides users super power to interact with holograms in a distance. It enables users to make the best use of setting of surrounding. Users can place holograms anywhere and can still access them from any distances. The mental models and gestures for controlling and manipulating 2D and 3D holograms are highly in sync with those of direct manipulation.
+### [Point and commit with hands](point-and-commit.md)
+This modality empowers users to interact with holograms in a distance. It enables users to make the best use of surroundings. Users can place holograms anywhere and can still access them from any distances. The mental models and gestures for controlling and manipulating 2D and 3D holograms are highly in sync with those of direct manipulation.
 
 ### [Motion controllers](motion-controllers.md)
 Motion controllers are tools that extend the users' physical capabilities by providing precise interactions across a large range of distances while using one or both hands. These hardware accessories provide shortcuts to many commonly-used interactions and gives surefooted, tactile feedback for a variety of actions. Currently, motion controllers are only available for WMR scenarios. 
