@@ -7,8 +7,10 @@ ms.date: 05/16/2019
 ms.topic: article
 keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
 ---
-
 # Mixed Reality Spatial Data Packager Documentation
+
+>[!NOTE]
+> This tool is offered as-is and is currently unsupported. It should not be relied upon to work in future Windows or Windows Mixed Reality HMD releases.
 
 ## Download
  Download [MixedRealitySpatialDataPackager here](http://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
