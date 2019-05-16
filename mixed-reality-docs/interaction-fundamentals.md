@@ -5,6 +5,7 @@ author: shengkait
 ms.author: shengkait
 ms.date: 04/11/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hololens, MMR, multimodal 
 ---
 
