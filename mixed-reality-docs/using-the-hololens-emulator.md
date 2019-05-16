@@ -5,6 +5,7 @@ author: pbarnettms
 ms.author: pbarnett
 ms.date: 04/25/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: HoloLens, emulator
 ---
 

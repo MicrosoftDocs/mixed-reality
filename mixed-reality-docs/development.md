@@ -6,6 +6,7 @@ author: grbury
 ms.author: grbury
 ms.date: 02/12/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, directx
 ---
 

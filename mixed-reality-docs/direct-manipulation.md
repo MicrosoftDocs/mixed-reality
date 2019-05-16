@@ -5,6 +5,7 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/02/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
 ---
 

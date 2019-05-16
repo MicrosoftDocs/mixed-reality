@@ -6,6 +6,7 @@ author: varnauld
 ms.author: vanesa
 ms.date: 02/24/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---
 
