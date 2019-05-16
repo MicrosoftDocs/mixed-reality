@@ -6,6 +6,7 @@ author: rwinj
 ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
+ms.localizationpriority: high
 keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns, controls, sample apps, Mixed Reality Toolkit, MRTK
 ---
 
