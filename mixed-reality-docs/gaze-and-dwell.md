@@ -1,5 +1,5 @@
 ---
-title: Head-Gaze and Dwell
+title: Head-gaze and Dwell
 description: Overview of the head-gaze and dwell input model
 author:  liamartinez
 ms.author: liamar
@@ -9,13 +9,13 @@ ms.localizationpriority: high
 keywords: Mixed Reality, gaze, dwell, interaction, design
 ---
 
-# Head-Gaze and Dwell
+# Head-gaze and Dwell
 
-When hands are occupied with tools and parts, gestures can be tedious or impossible. Voice commands, like gestures, can be unreliable in certain contexts, for example under excessively loud conditions. Additionally, using voice to control computers isn't universally common, but it certainly is gaining steam! Head-Gaze and dwell offers the most familiar and easy-to-master mechanism for working heads-up and hands-free on HoloLens. Additionally, head-gaze and dwell is 100% reliable independent of noise interference nor silence constraints in the operating environment.
+When hands are occupied with tools and parts, gestures can be tedious or impossible. Voice commands, like gestures, can be unreliable in certain contexts, for example under excessively loud conditions. Additionally, using voice to control computers isn't universally common, but it certainly is gaining steam! Head-gaze and dwell offers the most familiar and easy-to-master mechanism for working heads-up and hands-free on HoloLens. Additionally, head-gaze and dwell is 100% reliable independent of noise interference nor silence constraints in the operating environment.
 
 ## Scenarios
 
-Head-Gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or availible due to environmental or social constraints. A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine. Their hands are busy with tools or supporting their body as they lean into the engine compartment. The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult. Head-gaze and dwell allows the person in the HoloLens to confidently navigate their reference material without interupting their workflow. 
+Head-gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or availible due to environmental or social constraints. A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine. Their hands are busy with tools or supporting their body as they lean into the engine compartment. The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult. Head-gaze and dwell allows the person in the HoloLens to confidently navigate their reference material without interupting their workflow. 
 
 ## Device support
 
@@ -48,7 +48,7 @@ Provide a mechanism for fully hands-free interactions, without using Voice.
 
 1. Avoid "Gaze as a weapon"
 
-    Head-Gaze and dwell requires visual feedback to be intuitive, but too much feedback can induce anxiety. The feedback should help a user know what they're targeting, but not auto-select it against their intent. Reading text, icons, and labels requires extra consideration to provide a person room to absorb the information before selecting.
+    Head-gaze and dwell requires visual feedback to be intuitive, but too much feedback can induce anxiety. The feedback should help a user know what they're targeting, but not auto-select it against their intent. Reading text, icons, and labels requires extra consideration to provide a person room to absorb the information before selecting.
 	
 2. Seek Goldilocks speed
 	
@@ -88,9 +88,9 @@ Use a short delay before starting visual feedback to avoid flickering when someo
 ![Microsoft Dynamics 365 Guides Next Button](images/GuideNextButton.png "Microsoft Dynamics 365 Guides Next Button")
 High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.
 
-* High frequency buttons should...
-  * be larger buttons, easier to hit with head-gaze
-  * stay near eye height to avoid ergonomic straining.
+High frequency buttons should...
+* be larger buttons, easier to hit with head-gaze
+* stay near eye height to avoid ergonomic straining.
 
 ### Low frequency buttons
 Low frequency buttons are buttons that are not interacted with as regularly throughout the application. A good example might be a button to access the settings menu, or a button to clear all work.

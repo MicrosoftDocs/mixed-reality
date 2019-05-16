@@ -12,7 +12,7 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, 
 # Direct manipulation with hands
 Direct manipulation is an input model that involves touching holograms directly with your hands. The goal with direct manipulation is that objects behave just as they do in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen.  Because of this, direct manipulation is easy for users to learn, and it's fun too.  It is considered a "near" input model, meaning it is best used for interacting with content that is within arms reach.
 
-The HoloLens 2 has a direct manipulation input model that lets you touch holograms dircly with your hands. The goal with direct manipulation is for objects to behave just as they do in the real world. You can activate buttons by simply pressing them, and even and pick up, grab, and move objects. In these scenarios, 2D content behaves like a virtual touchscreen.
+The HoloLens 2 has a direct manipulation input model that lets you touch holograms directly with your hands. The goal with direct manipulation is for objects to behave just as they do in the real world. You can activate buttons by simply pressing them, and even and pick up, grab, and move objects. In these scenarios, 2D content behaves like a virtual touchscreen.
 
 Direct manipulation is easy for users to learn, and it's fun too. It is considered a "hands near" input model, meaning it's best used for interacting with content that is within an arm's reach.
 
