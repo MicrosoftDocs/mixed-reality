@@ -10,6 +10,9 @@ keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPacka
 
 # Mixed Reality Spatial Data Packager Documentation
 
+## Download
+ Download [MixedRealitySpatialDataPackager here](http://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
+
 ## Quickstart
 
 The Mixed Reality Spatial Data Packager tool copies the spatial data of a target app from one PC to another through a two step export and import process. The tool must be run with administrator privileges and deletes the existing spatial data on import. Export leaves the existing spatial data intact.
@@ -17,7 +20,7 @@ The Mixed Reality Spatial Data Packager tool copies the spatial data of a target
 Key requirements and limitations:
 
 1. Tool must be run with administrator privileges 
-2. May have to restart PC if Mixed Reality Portal is unstable after running the tool
+2. You may have to restart PC if Mixed Reality Portal is unstable after running the tool
 3. Tool will not run when encountering spatial data version mismatches or incompatibilities
 4. Tool will erase existing spatial data on import
 5. If import process fails previous data cannot be restored unless it has been backed up by exporting previously
@@ -29,7 +32,7 @@ Key requirements and limitations:
 1. Clear existing maps from the Control Panel (Settings -> Mixed Reality -> Environment -> Clear environment data)
 2. Ensure sufficient lighting for good tracking and if running locked map mode try to maintain the same lighting
 3. When possible keep the lighting dynamic range low by avoiding areas of high illumination next to dark, shadowed areas
-4. Minimize blank, textureless surfaces e.g. place posters on white walls
+4. Minimize blank, textureless surfaces e.g. place a range of different posters on white walls
 5. Map the space without dynamic objects in the scene such as moving people
 6. Lock the map on import (available via Insider Preview)
 7. Unlock the map and rescan the enviornment when tracking quality degrades and/or there are changes in the environment (lighting or changes in object layout)
