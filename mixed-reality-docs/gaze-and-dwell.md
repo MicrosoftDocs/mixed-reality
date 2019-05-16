@@ -88,7 +88,7 @@ Use a short delay before starting visual feedback to avoid flickering when someo
 ![Microsoft Dynamics 365 Guides Next Button](images/GuideNextButton.png "Microsoft Dynamics 365 Guides Next Button")
 High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.
 
-* High frequency buttons should...
+High frequency buttons should...
 * be larger buttons, easier to hit with head-gaze
 * stay near eye height to avoid ergonomic straining.
 
