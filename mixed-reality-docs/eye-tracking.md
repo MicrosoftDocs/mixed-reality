@@ -5,6 +5,7 @@ author: sostel
 ms.author: sostel
 ms.date: 04/05/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Eye Tracking, Mixed Reality, Input, Eye Gaze
 ---
 # Eye tracking on HoloLens 2
