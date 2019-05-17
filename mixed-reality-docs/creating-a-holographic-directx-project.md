@@ -30,7 +30,9 @@ Now you're ready to create your DirectX 11 Windows Mixed Reality app! Note, to r
 
 ## Creating a UWP project
 
-Once the tools are installed you can then create a holographic DirectX UWP project. To create a new project:
+Once the [tools are installed](install-the-tools.md) you can then create a holographic DirectX UWP project.
+
+To create a new project:
 1. Start **Visual Studio**.
 2. From the **File** menu, point to **New** and select **Project** from the context menu. The **New Project** dialog opens.
 3. Expand **Installed** on the left and expand the **Visual C++** language node.
@@ -40,7 +42,7 @@ Once the tools are installed you can then create a holographic DirectX UWP proje
    >[!IMPORTANT]
    >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install the latest HoloLens Emulator](using-the-hololens-emulator.md).
 5. Fill in the **Name** and **Location** text boxes, and click or tap **OK**. The holographic app project is created.
-6. For development targeting only HoloLens 2, ensure that the **Target version** and **Minimum version** are set to **Windows 10, version 1903**.  If you are also targeting HoloLens (1st gen) or desktop Windows Mixed Reality headsets, you can set **Minimum version** to **Windows 10, version 1809** instead, although this will require some <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">version adapative checks</a> in your code when using new features of HoloLens 2.
+6. For development targeting only HoloLens 2, ensure that the **Target version** and **Minimum version** are set to **Windows 10, version 1903**.  If you are also targeting HoloLens (1st gen) or desktop Windows Mixed Reality headsets, you can set **Minimum version** to **Windows 10, version 1809** instead, although this will require some <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">version adaptive checks</a> in your code when using new features of HoloLens 2.
    ![Screenshot of setting Windows 10, version 1903 as the target and minimum versions](images/new-uwp-project.png)<br>
    *Setting **Windows 10, version 1903** as the target and minimum versions*
    >[!IMPORTANT]
