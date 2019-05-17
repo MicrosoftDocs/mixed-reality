@@ -160,6 +160,7 @@
 #### [Keyboard input in Unity](keyboard-input-in-unity.md)
 ### Advanced topics
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
+#### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ### Legacy Documents (Unity 2017.4/HTK/MRTK v1)
 ## Unreal
