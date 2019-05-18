@@ -61,7 +61,7 @@ On HoloLens 2, you'll be prompted to calibrate your visuals during device setup.
 Hololens 2 device can be shared between people, without a need for each person to go through device setup. Hololens 2 will prompt the user to calibrate visuals when the device is put on the head, if the user is new to the device. If the user has already calibrated visuals on the device, display will be seamlessly adjusted for quality and comfortable viewing experience when the user puts the device on the head.  
 
 ### Launching the Calibration app from Settings
-1. Use System Gesture to get to Start Menu.
+1. Use Start Gesture to get to Start Menu.
 2. Select **+** to view all apps if **Settings** isn't pinned to Start.
 3. Launch **Settings**.
 4. Navigate to **System** > **Utilities** and select **Open Calibration**.
