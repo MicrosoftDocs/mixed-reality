@@ -171,6 +171,9 @@ You can use the QR Tracking API in Unity without taking a dependency on MRTK. To
 1. Create a new folder in the assets folder of your unity project with the name *Plugins*.
 2. Copy all the required files from this folder into the local "Plugins" folder you just created.
 
+You can find an example of QR tracking in Unity [on Github here](
+https://github.com/chgatla-microsoft/QRTracking/tree/master/AppPackages/SampleQRCodes_1.0.23.0_Master_Test).
+
 ## Implementing QR code tracking in DirectX
 
 To use the QRTrackingPlugin in Visual Studio, you must add a reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
@@ -298,9 +301,11 @@ In a scene with particularly bright lighting, print a code that is black on a gr
 If the backdrop to the code is particularly dark, try a black on gray code if your detection rate is low. If the backdrop is relatively light, a regular code should work fine.
 
 ### Distance from the QR code
-Devices can scan QR codes from a variety of distances. This distance depends on the version and size of the code. 
+The tracking cameras can only detect a certain level of detail. For really small codes - < 10cm along the sides - you must be fairly close. 
 
-For a version 1 QR code varying from 5 to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. The farthest away these are detectable from goes from about 0.3 meters for the smaller QR code targets to 1.4 meters for the bigger. The detection distance for size increases linearly. 
+For a version 1 QR code varying from 10 to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
+
+The detection distance for size increases linearly. 
 
 ### Size of QR codes
 WMR does not work with QR codes with sides smaller than 5 cm each.
