@@ -136,12 +136,13 @@ If your experience does require multiple interaction models, we've found that ma
 
 ## See also
 * [Head-gaze and commit](gaze-and-commit.md)
-* [Direct manipulation](direct-manipulation.md)
-* [Point and commit](point-and-commit.md)
-* [Gaze targeting](gaze-targeting.md)
+* [Head-gaze and dwell](gaze-and-dwell.md)
+* [Direct manipulation with hands](direct-manipulation.md)
+* [Point and commit with hands](point-and-commit.md)
 * [Gestures](gestures.md)
-* [Voice design](voice-design.md)
+* [Voice commanding](voice-design.md)
 * [Motion controllers](motion-controllers.md)
 * [Spatial sound design](spatial-sound-design.md)
 * [Spatial mapping design](spatial-mapping-design.md)
 * [Comfort](comfort.md)
+
