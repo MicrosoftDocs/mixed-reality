@@ -12,10 +12,6 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, 
 # Direct manipulation with hands
 Direct manipulation is an input model that involves touching holograms directly with your hands. The goal with direct manipulation is that objects behave just as they do in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen.  Because of this, direct manipulation is easy for users to learn, and it's fun too.  It is considered a "near" input model, meaning it is best used for interacting with content that is within arms reach.
 
-The HoloLens 2 has a direct manipulation input model that lets you touch holograms directly with your hands. The goal with direct manipulation is for objects to behave just as they do in the real world. You can activate buttons by simply pressing them, and even and pick up, grab, and move objects. In these scenarios, 2D content behaves like a virtual touchscreen.
-
-Direct manipulation is easy for users to learn, and it's fun too. It is considered a "hands near" input model, meaning it's best used for interacting with content that is within an arm's reach.
-
 Direct manipulation is affordance-based, meaning it's user friendly. There are no symbolic gestures to teach users. All interactions are built around a visual element that you can touch or grab.
 
 ## Device support
@@ -30,7 +26,7 @@ Direct manipulation is a primary input model on HoloLens 2, and utilizes the new
 
 ## Collidable fingertip
 
-On HoloLens 2, user's real hands are recognized and interpreted as left and right hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips caused unexpected and unpredictable collisions with holograms. 
+On HoloLens 2, the user's real hands are recognized and interpreted as left and right hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, 5 colliders could be attached to 5 fingertips of each hand skeletal model. However, practically, due to the lack of tactile feedback, 10 collidable fingertips caused unexpected and unpredictable collisions with holograms. 
 
 Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1-finger press, 1-finger tap, 2-finger press and 5-finger press, as shown in the image below.
 
@@ -143,6 +139,6 @@ By doing so, you accidentally move your hand across some interactive holographic
 ## See also
 
 * [Head-gaze and commit](gaze-and-commit.md)
-* [Point and commit](point-and-commit.md)
+* [Point and commit with hands](point-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 
