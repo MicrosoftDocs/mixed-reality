@@ -12,9 +12,9 @@ keywords: getting started, basics, HoloLens, HoloLens 2, immersive headset, unit
 
 # Development overview
 
-Mixed reality apps can be developed using a variety of developer technologies.  HoloLens runs apps that are built with the [Universal Windows Platform](https://dev.windows.com/getstarted).  Immersive headsets runs Universal Windows Platform apps as well as Win32 applications.
-Familiarity with middleware tools, like Unity, you can start building mixed reality experiences today.  Leverage the open source [Mixed Reality Toolkit](install-the-tools.md) to get started quickly.
-[Mixed reality services](https://azure.microsoft.com/topic/mixed-reality), such as [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), have SDKs that can integrate into various cross-platfrom developer technologies as well.
+Mixed reality apps can be developed using a variety of developer technologies.  HoloLens runs apps that are built with the [Universal Windows Platform](https://dev.windows.com/getstarted).  Immersive headsets run Universal Windows Platform apps as well as Win32 applications.
+By getting familiar with middleware tools like Unity, you can start building mixed reality experiences today.  Leverage the open source [Mixed Reality Toolkit](install-the-tools.md) to get started quickly.
+<a href="https://azure.microsoft.com/topic/mixed-reality" target="_blank">Mixed reality services</a>, such as <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, have SDKs that can integrate into various cross-platform developer technologies as well.
 
 >[!VIDEO https://www.youtube.com/embed/A784OdX8xzI]
 
@@ -59,7 +59,7 @@ All Windows-based mixed reality devices benefit from the input ecosystem availab
 
 The environmental understanding features like [coordinates](coordinate-systems.md), [spatial sound](spatial-sound.md), and [spatial mapping](spatial-mapping.md) provide the necessary capabilities for mixing reality. Spatial mapping is unique to HoloLens, and enables holograms to interact with both the user and the physical world around them. Coordinate systems allow the user's movement to affect movement in the digital world.
 
-Holograms are made of light and sound, which rely on [rendering](rendering.md). Understanding the experience of placement and persistence, as demonstrated in the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) (sometimes called the "shell") is a great way ground yourself in the user experience.
+[Holograms](hologram.md) are made of light and sound, which rely on [holographic rendering](rendering.md). Understanding the experience of placement and persistence, as demonstrated in the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) (sometimes called the "shell") is a great way ground yourself in the user experience.
 
 ## Tools for developing for mixed reality
 
@@ -76,8 +76,8 @@ Regardless of the type of app you're building, these tools will facilitate your 
 
 ## See also
 * [Install the tools](install-the-tools.md)
-* [Mixed Reality services](https://azure.microsoft.com/overview/mixed-reality)
-* [Mixed Reality tutorials](academy.md)
+* <a href="https://azure.microsoft.com/topic/mixed-reality" target="_blank">Mixed reality services</a>
+* [Mixed Reality tutorials](tutorials.md)
 * [Open source projects](open-source-projects.md)
 * [MR Basics 100: Getting started with Unity](holograms-100.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

@@ -1,22 +1,20 @@
 ---
-title: Voice design
+title: Voice commanding
 description: Gaze, gesture and voice (GGV) are the primary means of interaction on HoloLens. This article provides thoughtful guidance on voice design.
-author: rwinj
-ms.author: randyw
-ms.date: 03/21/2018
+author: shentan
+ms.author: shentan
+ms.date: 04/21/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Windows Mixed Reality, design, interaction, voice
 ---
 
 
 
-# Voice design
+# Voice commanding
 
-Gaze, gesture and voice (GGV) are the primary means of interaction on HoloLens. [Gaze](gaze.md) used with a [cursor](cursors.md) is the mechanism for a user to target the content they are ready to interact with. [Gesture](gestures.md) or [voice](voice-input.md) are the intention mechanisms. Gaze can be used with either gesture or voice to complete an interaction.
+When using voice commands, gaze is typically used as the targeting mechaninism, whether as a pointer ("select") or to direct your command to an application ("see it, say it"). Of course, some voice commands don't require a target at all, like "go to start" or "Hey, Cortana."
 
-On immersive headsets, the primary means of interaction are gaze-and-commit and point-and-commit (with a [motion controller](motion-controllers.md)). If the user has a headset with voice capabilities, voice can be used in combination with gaze or point to complete an action.
-
-While designing apps, you should consider how you can make these interactions work together well.
 
 ## Device support
 
@@ -24,7 +22,7 @@ While designing apps, you should consider how you can make these interactions wo
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> Voice</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with headset attached)</td>
+<td></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with headset attached)</td>
 </tr>
 </table>
 
@@ -48,13 +46,16 @@ Below are some practices that will aid in smooth speech recognition.
    * "Hey Cortana"
    * "Select"
 
-### What users can say
+### "Select"
 
-As a user targets any button through gaze or pointing, they can say the word **"Select"** to activate that button. "Select" is one of the low power keywords that is always listened for. Going further, a user can also use "button grammar" across the system or in apps. For example, while looking at an app, a user can say the command "Remove" (which is in the app bar) to remove the app from the world.
+Saying "select" at any time will activate whatever the gaze cursor is pointing at. 
+
+>Note: In HoloLens 2, the gaze cursor needs to first be invoked by saying the word "select". Say, "select" again to activate. To hide the gaze cursor, simply use your hands -- airtap or touch an object. 
 
 ### See it, say it
 
 Windows Mixed Reality has employed a "see it, say it" voice model where **labels on buttons are identical to the associated voice commands**. Because there isn’t any dissonance between the label and the voice command, users can better understand what to say to control the system. To reinforce this, while dwelling on a button, a **"voice dwell tip"** appears to communicate which buttons are voice enabled.
+
 
 ![See it say it example 1](images/voice-seeitsayit1-640px.jpg)
 
@@ -74,7 +75,7 @@ Voice input is a natural way to communicate our intents. Voice is especially goo
 
 ### Voice's weaknesses
 
-Voice also has some weaknesses. Fine-grained control is one of them. (for example a user might say "louder," but can’t say how much. "A little" is hard to quantify. Moving or scaling things with voice is also difficult (voice does not offer the granularity of control). Voice can also be imperfect. Sometimes a voice system incorrectly hears a command or fails to hear a command. Recovering from such an errors is a challenge in any interface. Lastly, voice may not be socially acceptable in public places. There are some things that users can’t or shouldn’t say. These cliffs allow speech to be used for what it is best at.
+Voice also has some weaknesses. Fine-grained control is one of them. (for example a user might say "louder," but can’t say how much. "A little" is hard to quantify. Moving or scaling things with voice is also difficult (voice does not offer the granularity of control). Voice can also be imperfect. Sometimes a voice system incorrectly hears a command or fails to hear a command. Recovering from such errors is a challenge in any interface. Lastly, voice may not be socially acceptable in public places. There are some things that users can’t or shouldn’t say. These cliffs allow speech to be used for what it is best at.
 
 ### Voice feedback states
 

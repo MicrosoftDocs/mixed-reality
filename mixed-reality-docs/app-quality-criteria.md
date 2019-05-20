@@ -55,8 +55,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 #### Documentation
 
-* [Performance recommendations for HoloLens apps](performance-recommendations-for-hololens-apps.md)
-* [Performance recommendations for Windows MR headset apps](performance-recommendations-for-immersive-headset-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Hologram stability and framerate](hologram-stability.md#frame-rate)
 * [Asset performance budget](asset-creation-process.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)
@@ -116,7 +115,8 @@ While wearing the device and viewing the experience:
 
 * [Hologram stability and framerate](hologram-stability.md#frame-rate)
 * [Case study, Using the stabilization plane](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-* [Performance recommendation for HoloLens apps](performance-recommendations-for-hololens-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 * [Spatial anchors](spatial-anchors.md)
 * [Handling tracking errors](coordinate-systems.md#handling-tracking-errors)
 * [Stationary frame of reference](coordinate-systems.md#stationary-frame-of-reference)
@@ -463,7 +463,8 @@ Input interaction clarity is critical to an app's usability and includes input c
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
 * [Voice input in Unity](voice-input-in-unity.md)
 * [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
-* [Gaze, gesture, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
+* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](voice-input-in-directx.md)
 
 #### Tools and tutorials
