@@ -300,13 +300,19 @@ In a scene with particularly bright lighting, print a code that is black on a gr
 
 If the backdrop to the code is particularly dark, try a black on gray code if your detection rate is low. If the backdrop is relatively light, a regular code should work fine.
 
-### Distance and angular position from the QR code
-The tracking cameras can only detect a certain level of detail. For really small codes - < 10cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. The detection distance for size increases linearly. 
-
-QR detection works with a range of angles += 45deg. This is to ensure we have proper resolution to detect the code.
-
 ### Size of QR codes
 WMR does not work with QR codes with sides smaller than 5 cm each.
+
+For QR codes between 5 and 10 cm length sides, you must be fairly close to detect the code. It will also take longer to detect codes at this size. 
+
+The exact time to detect codes depends not only on the size of the QR codes, but how far you are away from the code. Moving closer to the code will help offset issues with size.
+
+### Distance and angular position from the QR code
+The tracking cameras can only detect a certain level of detail. For really small codes - < 10cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
+
+The detection distance for size increases linearly. 
+
+QR detection works with a range of angles += 45deg. This is to ensure we have proper resolution to detect the code.
 
 ### QR codes with logos
 QR codes with logos have not been tested and are currently unsupported.
