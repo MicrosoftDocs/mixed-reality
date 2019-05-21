@@ -1,5 +1,5 @@
 ---
-title: Head-gaze and Dwell
+title: Head-gaze and dwell
 description: Overview of the head-gaze and dwell input model
 author:  liamartinez
 ms.author: liamar
@@ -70,11 +70,11 @@ When using a radial fill to represent the dwell timer, start from the center of 
   * This rule can be broken though for directional interactions (e.g., nav up/down/left/right, etc.). For example, Microsoft Dynamics 365 Guides makes an exception on NEXT/BACK being left right fills.
   * Consider inverting radial fill from outside, for scenarios like toggling a button off. The inverse feeling of pushing a button is a nice visual pattern to maintain. 
 
-### Progressive Disclosure
+### Progressive disclosure
 
 Progressive disclosure means only showing as much detail as is relevant at each stage of an interaction. For dwell, that means the dwell target is revealed on highlight (e.g., in a list control).
 
- ### Oversized Targets
+ ### Oversized targets
 Dwell region can be larger than inactive icon to make it easier to use, like the Back button in Microsoft Dynamics 365 Guides.
 
 ### Prevent flickering with delayed feedback
@@ -121,8 +121,8 @@ Some tips for designing list views:
 * re-use the same pattern as often as possible to establish UX familiarity
  
  ## See also
-* [Direct manipulation](direct-manipulation.md)
-* [Point and commit](point-and-commit.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Direct manipulation with hands](direct-manipulation.md)
+* [Point and commit with hands](point-and-commit.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 * [Head-gaze and commit](gaze-and-commit.md)
-* [Gaze and voice](voice-design.md)
+* [Voice commanding](voice-design.md)

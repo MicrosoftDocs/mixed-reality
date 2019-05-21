@@ -34,5 +34,5 @@ Just like truly head-locked content, tag-along objects can prove overwhelming or
 
 ## See also
 * [Cursors](cursors.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 * [Comfort](comfort.md)

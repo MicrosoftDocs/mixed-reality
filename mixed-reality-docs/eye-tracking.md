@@ -168,7 +168,7 @@ Do not force users to perform specific eye movements (gaze gestures) to trigger 
 We distinguish two types of imprecisions which are noticeable to users: Offset and Jitter. The easiest way to address offsets is to provide sufficiently large targets to interact with (> 2° in visual angle – as reference: your thumbnail is about 2° in visual angle when you stretch out your arm (1)). This leads to the following guidance:
     - Do not force users to select tiny targets: Research has shown that if targets are sufficiently large (and the system is designed well), users describe the interaction as effortless and magical. If targets become too small, users describe the experience as fatiguing and frustrating.
     
-# Eye gaze design guidelines (Placeholder)
+# Eye gaze design guidelines
 
 With HoloLens 2, we have the great opportunity to make gaze & commit faster and more comfortable by using eye gaze instead of head gaze. However, eye gaze behaves very differently to head gaze in certain ways and hence comes with a number of unique challenges. In Eye Gaze Design Guidelines, we summarize general advantages and challenges to take into account when using eye tracking as an input medium in your holographic app. In this section, we focus on the specific design considerations for eye gaze & commit. First, our eyes move incredibly fast and thus are great at quickly targeting across the view. This makes eye gaze ideal for quick gaze & commit actions especially when combined with fast commits such as an air-tap or button press.
 
@@ -179,9 +179,8 @@ Strive for subtle blended hover feedback: What seems great visual feedback for h
 Look out for synchronizing gaze and commit signals: The synchronization of input signals may be less of a challenge for simple gaze & commit, so, don't worry! It is something to look out for in case you want to use more complicated commit actions though that may involve long voice commands or complicated hand gestures. Imagine you look at target and utter a long voice command. Taken into account the time that you needed to speak and the time that the system needed to detect what you said, your eye gaze has usually long moved on to some new target in the scene. Hence, either make your users aware that they may need to keep looking at a target until the command has been recognized or handle the input in a way to determine the onset of the command and what the user had been looking at back then.
 
 ## See also
-* [Gaze and commit](gaze-and-commit.md)
-* [Head gaze targeting](gaze-targeting.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Gestures](gestures.md)
-* [Voice design](voice-design.md)
+* [Voice commanding](voice-design.md)
 * [Motion controllers](motion-controllers.md)
 * [Comfort](comfort.md)

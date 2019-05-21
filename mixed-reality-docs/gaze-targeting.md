@@ -97,5 +97,5 @@ When determining which nearby interactive elements to give focus to, provide a b
 
 ## See also
 * [Gestures](gestures.md)
-* [Voice design](voice-design.md)
+* [Voice commanding](voice-design.md)
 * [Cursors](cursors.md)

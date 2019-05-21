@@ -138,6 +138,6 @@ For example, imagine you are reading through a holographic (instructional) text 
 
 ## See also
 
-* [Gaze and commit](gaze-and-commit.md)
-* [Point and commit](point-and-commit.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Head-gaze and commit](gaze-and-commit.md)
+* [Point and commit with hands](point-and-commit.md)
+* [Instinctual interactions](interaction-fundamentals.md)
