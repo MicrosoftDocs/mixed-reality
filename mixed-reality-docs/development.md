@@ -153,7 +153,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                     <div class="cardText">
                         <h3>Development fundamentals</h3>
                         <p>
-                            <a href="Interaction-fundamentals.md">Interactions</a>
+                            <a href="Interaction-fundamentals.md">Instinctual interactions</a>
                         </p>
                         <p>
                             <a href="rendering.md">Holographic rendering</a>

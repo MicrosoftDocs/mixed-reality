@@ -70,6 +70,6 @@ Users need to be able to easily access UI controls even if they've been blocked,
 </table>
 
 ## See also
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 
  

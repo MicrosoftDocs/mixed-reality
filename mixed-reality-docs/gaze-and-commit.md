@@ -64,7 +64,7 @@ Voice commanding is one of the primary interaction methods on Mixed Reality. It 
 - Conversation user interfaces or entities like Cortana that have an AI Natural Language capability.
 - Custom commnads
 
-To find more details and a comprenhesive list of available commands and how to use, check out our [voice design](voice-design.md) guidance.
+To find more details and a comprenhesive list of available commands and how to use, check out our [voice commanding](voice-design.md) guidance.
 
 
 ### Head-gaze and HoloLens Clicker
@@ -198,11 +198,11 @@ There are three things that you should consider:
 
 
 ## See also
-* [Direct manipulation](direct-manipulation.md)
-* [Point and commit](point-and-commit.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
-* [Gaze and dwell](gaze-targeting.md)
-* [Gaze and voice](voice-design.md)
+* [Direct manipulation with hands](direct-manipulation.md)
+* [Point and commit with hands](point-and-commit.md)
+* [Instinctual interactions](interaction-fundamentals.md)
+* [Head-gaze and dwell](gaze-and-dwell.md)
+* [Voice commanding](voice-design.md)
 
 
 

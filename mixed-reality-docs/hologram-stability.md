@@ -152,4 +152,4 @@ As before, rendering at 60 FPS and setting the stabilization plane are the most 
 ## See also
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Color, light and materials](color,-light-and-materials.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
