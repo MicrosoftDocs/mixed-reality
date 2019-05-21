@@ -10,11 +10,12 @@ keywords: calibration, comfort, visuals, quality, ipd
 
 
 
-# Calibration
-
-Calibrating your IPD (interpupillary distance) can improve the quality of your visuals. Both HoloLens and Windows Mixed Reality immersive headsets offer ways to customize IPD.
+# Improve visual quality and comfort
+HoloLens, HoloLens 2 and Windows Mixed Reality immersive headsets offer different ways to improve quality of visual experience. 
 
 ## HoloLens
+
+Calibrating your IPD (interpupillary distance) can improve the quality of your visuals.
 
 ### During setup
 
@@ -51,8 +52,19 @@ Calibration can be performed any time through the Calibration app. The Calibrati
 
 ## HoloLens 2
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+### Calibration 
+
+On HoloLens 2, you'll be prompted to calibrate your visuals during device setup. Users are asked to look at the set of fixation targets. This allows the device to adjust hologram rendering for the user to ensure accurately positioned holograms, more comfortable 3D viewing experience and improved display quality. All adjustments happen on the fly without a need for manual tuning. 
+
+### Calibration when sharing a device 
+
+Hololens 2 device can be shared between people, without a need for each person to go through device setup. Hololens 2 will prompt the user to calibrate visuals when the device is put on the head, if the user is new to the device. If the user has already calibrated visuals on the device, display will be seamlessly adjusted for quality and comfortable viewing experience when the user puts the device on the head.  
+
+### Launching the Calibration app from Settings
+1. Use Start Gesture to get to Start Menu.
+2. Select **+** to view all apps if **Settings** isn't pinned to Start.
+3. Launch **Settings**.
+4. Navigate to **System** > **Utilities** and select **Open Calibration**.
 
 ## Immersive headsets
 
