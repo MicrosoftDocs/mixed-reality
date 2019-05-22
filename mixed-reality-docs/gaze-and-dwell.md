@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Mixed Reality, gaze, dwell, interaction, design
 ---
 
-# Head-gaze and Dwell
+# Head-gaze and dwell
 
 When hands are occupied with tools and parts, gestures can be tedious or impossible. Voice commands, like gestures, can be unreliable in certain contexts, for example under excessively loud conditions. Additionally, using voice to control computers isn't universally common, but it certainly is gaining steam! Head-gaze and dwell offers the most familiar and easy-to-master mechanism for working heads-up and hands-free on HoloLens. Additionally, head-gaze and dwell is 100% reliable independent of noise interference nor silence constraints in the operating environment.
 
