@@ -100,4 +100,4 @@ When Voice is applied properly, the user understands **what they can say and get
 
 ## See also
 * [Gestures](gestures.md)
-* [Gaze targeting](gaze-targeting.md)
+* [Head-gaze and dwell](gaze-and-dwell.md)
