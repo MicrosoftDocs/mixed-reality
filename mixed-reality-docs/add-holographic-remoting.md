@@ -12,8 +12,12 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 
 # Add holographic remoting
 
+## HoloLens 2
+
 > [!NOTE]
 > More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+
+HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2.  This will require a new version of the Holographic Remoting NuGet package that is not publicly available yet.  If an application using the HoloLens NuGet package attempts to connect to the Holographic Remoting Player on HoloLens 2, the connection will fail.  Watch this page for updates once the HoloLens 2 NuGet package is available.
 
 ## Add holographic remoting to your desktop or UWP app
 
