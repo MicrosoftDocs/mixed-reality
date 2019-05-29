@@ -168,7 +168,7 @@ Do not force users to perform specific eye movements (gaze gestures) to trigger 
 We distinguish two types of imprecisions which are noticeable to users: Offset and Jitter. The easiest way to address offsets is to provide sufficiently large targets to interact with (> 2° in visual angle – as reference: your thumbnail is about 2° in visual angle when you stretch out your arm (1)). This leads to the following guidance:
     - Do not force users to select tiny targets: Research has shown that if targets are sufficiently large (and the system is designed well), users describe the interaction as effortless and magical. If targets become too small, users describe the experience as fatiguing and frustrating.
     
-# Eye gaze design guidelines
+## Eye gaze design guidelines
 
 With HoloLens 2, we have the great opportunity to make gaze & commit faster and more comfortable by using eye gaze instead of head gaze. However, eye gaze behaves very differently to head gaze in certain ways and hence comes with a number of unique challenges. In Eye Gaze Design Guidelines, we summarize general advantages and challenges to take into account when using eye tracking as an input medium in your holographic app. In this section, we focus on the specific design considerations for eye gaze & commit. First, our eyes move incredibly fast and thus are great at quickly targeting across the view. This makes eye gaze ideal for quick gaze & commit actions especially when combined with fast commits such as an air-tap or button press.
 
