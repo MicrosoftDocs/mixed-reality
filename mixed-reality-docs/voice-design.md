@@ -22,7 +22,7 @@ When using voice commands, gaze is typically used as the targeting mechaninism, 
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with headset attached)</td>
+<td>Voice commanding</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with headset attached)</td>
 </tr>
 </table>
 
@@ -84,7 +84,7 @@ When Voice is applied properly, the user understands **what they can say and get
 ![Voice feedback states for cursor](images/voicefeedbackstates.png)<br>
 *Voice feedback states for cursor*
 
-## Top things users should know about "speech" on Windows Mixed Reality
+## Top things users should know about "speech" in mixed reality
 * Say **"Select"** while targeting a button (you can use this anywhere to click a button).
 * You can say the **label name of an app bar button** in some apps to take an action. For example, while looking at an app, a user can say the command "Remove" to remove the app from the world (this saves time from having to click it with your hand).
 * You can initiate Cortana listening by saying **"Hey Cortana."** You can ask her questions ("Hey Cortana, how tall is the Eiffel tower"), tell her to open an app ("Hey Cortana, open Netflix"), or tell her to bring up the Start Menu ("Hey Cortana, take me home") and more.
@@ -100,4 +100,4 @@ When Voice is applied properly, the user understands **what they can say and get
 
 ## See also
 * [Gestures](gestures.md)
-* [Gaze targeting](gaze-targeting.md)
+* [Head-gaze and dwell](gaze-and-dwell.md)

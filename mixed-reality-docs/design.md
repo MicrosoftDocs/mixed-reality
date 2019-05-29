@@ -68,7 +68,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                             <a href="interaction-fundamentals.md">Instinctual interactions</a>
                         </p>
                         <p>
-                            <a href="hands-and-tools.md">Hands and controllers</a>
+                            <a href="hands-and-tools.md">Hands and motion controllers</a>
                         </p>
                         <p>
                             <a href="hands-free.md">Hands-free</a>

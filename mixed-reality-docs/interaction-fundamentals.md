@@ -31,11 +31,11 @@ Think of these interaction models as the user's mental model for completing thei
 
 Each of these interaction models is convenient, powerful, and usable in its own right, and all are optimized for a set of customer needs. View the chart below, for scenarios, examples, and benefits of each interaction model.  
 
-**Model** | **[Hands and Tools](https://docs.microsoft.com/en-us/windows/mixed-reality/hands-and-tools)** | **[Hands free](https://docs.microsoft.com/en-us/windows/mixed-reality/hands-free)** | **[Gaze and Commit](https://docs.microsoft.com/en-us/windows/mixed-reality/gaze-and-commit?)**
+**Model** | **[Hands and motion controllers](hands-and-tools.md)** | **[Hands free](hands-free.md)** | **[Head-gaze and commit](gaze-and-commit.md)**
 |--------- | --------------| ------------| ---------|
 **Example Scenarios** | 3D spatial experiences, e.g. spatial layout and design, content manipulation, or simulation | Contextual experiences where a user's hands are occupied, e.g. on the-job learning, maintenance| Click-through experiences, e.g. 3D presentations, demos
-**Fit** | Great for new users, coupled wit voice, eye tracking or head gaze. Low learning curve. Consistent UX across hand tracking and 6 DoF controllers. | Some learning required. If hands are unavailable pairs well with voice and natural language | Requires training on HMDs but not on mobile. Best for accessible controllers Best for HoloLens (1st gen) |
-**Hardware** | HoloLens 2 Immersive headsets | HoloLens 2 HoloLens (1st gen) Immersive headsets | HoloLens 2 Immersive headsets | HoloLens 2 HoloLens (1st gen) Immersive headsets Mobile AR |
+**Fit** | Great for new users, coupled wit voice, eye tracking or head gaze. Low learning curve. Consistent UX across hand tracking and 6 DoF controllers. | Some learning required. If hands are unavailable pairs well with voice and natural language | Requires training on HMDs but not on mobile. Best for accessible controllers. Best for HoloLens (1st gen). |
+**Hardware** | HoloLens 2 <br>Immersive headsets | HoloLens 2 <br>HoloLens (1st gen) <br>Immersive headsets | HoloLens 2 <br>Immersive headsets | HoloLens 2 <br>HoloLens (1st gen) <br>Immersive headsets <br>Mobile AR |
 
 Detailed information for using all available inputs seamlessly together in each interaction model is on the pages that follow, as well as illustrations and links to sample content from our Unity MRTK.
 
@@ -70,7 +70,7 @@ Here are some examples of how affordances and behaviors are optimized for each i
         <td><strong>How do I know what I just did?</strong></td>
     </tr>
     <tr>
-        <td><a href="hands-and-tools.md">Hands and tools</a></td>
+        <td><a href="hands-and-tools.md">Hands and motion controllers</a></td>
         <td>I see a hand mesh, I see a fingertip affordance or hand/ controller rays.</td>
         <td>I see grabbable handles or a bounding box appear when my hand is near.</td>
         <td>I hear audible tones and see animations on grab and release.</td>
