@@ -1,6 +1,6 @@
 ---
 title: Gaze
-description: Gaze is the first form of input and is a primary form of targeting within Mixed Reality. 
+description: Gaze is the first form of input and is a primary form of targeting within mixed reality. 
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
@@ -12,12 +12,12 @@ keywords: Mixed Reality, Gaze, Interaction, design
 
 # Gaze
 
-**Gaze** is the first form of input and is a primary form of targeting within Mixed Reality. 
+**Gaze** is the first form of input and is a primary form of targeting within mixed reality. 
 Gaze tells you where the user is looking in the world and lets you determine their intent. 
 In the real world, you'll typically look at an object that you intend to interact with. 
 This is the same with gaze.
 
-Mixed Reality headsets use the position and orientation of your user's head to determine their head gaze vector. 
+Mixed reality headsets use the position and orientation of your user's head to determine their head gaze vector. 
 You can think of this vector as a laser pointer straight ahead from directly between the user's eyes. 
 As the user looks around the room, your application can intersect this ray, both with its own holograms and with the [spatial mapping](spatial-mapping.md) mesh to determine what virtual or real-world object your user may be looking at.
 
