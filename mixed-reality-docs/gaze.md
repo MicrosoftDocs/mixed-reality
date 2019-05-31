@@ -48,7 +48,7 @@ With immersive headsets, you can target using either head gaze or pointing-capab
 
 ## Uses of gaze
 
-As a Mixed Reality developer, you can do a lot with head or eye gaze:
+As a mixed reality developer, you can do a lot with head or eye gaze:
 * Your app can intersect gaze with the holograms in your scene to determine where the user's attention is.
 * Your app can target gestures and controller presses based on the user's gaze, letting the user select, activate, grab, scroll, or otherwise interact with their holograms.
 * Your app can let the user place holograms on real-world surfaces, by intersecting their gaze ray with the spatial mapping mesh.
