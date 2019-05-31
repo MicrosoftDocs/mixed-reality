@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: Mixed Reality, Gaze, Interaction, design
+keywords: Mixed reality, gaze, interaction, design
 ---
 
 
