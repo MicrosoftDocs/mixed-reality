@@ -9,18 +9,18 @@ keywords: gaze, unity, hologram, mixed reality
 ---
 
 
+# Head gaze in Unity
 
-# Gaze in Unity
+[Gaze](gaze.md) is a primary way for users to target the [holograms](hologram.md) your app creates in [Mixed Reality](mixed-reality.md).
 
-[Gaze](gaze.md) is a primary way for users to target the [holograms](hologram.md) your app creates in [mixed reality](mixed-reality.md).
 
-## Implementing Gaze
+## Implementing head gaze
 
 Conceptually, [gaze](gaze.md) is implemented by projecting a ray from the user's head where the headset is, in the forward direction they are facing and determining what that ray collides with. In Unity, the user's head position and direction are exposed through the Unity Main [Camera](camera-in-unity.md), specifically [UnityEngine.Camera.main](http://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.forward](http://docs.unity3d.com/ScriptReference/Transform-forward.html) and [UnityEngine.Camera.main](http://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.position](http://docs.unity3d.com/ScriptReference/Transform-position.html).
 
 Calling [Physics.RayCast](http://docs.unity3d.com/ScriptReference/Physics.Raycast.html) results in a [RaycastHit](http://docs.unity3d.com/ScriptReference/RaycastHit.html) structure which contains information about the collision including the 3D point where collision occurred and the other GameObject the gaze ray collided with.
 
-### Example: Implement Gaze
+### Example: Implement head gaze
 
 ```cs
 void Update()
@@ -53,6 +53,6 @@ You can access gaze from the [input Manager](https://microsoft.github.io/MixedRe
 
 ## See also
 * [Camera](camera-in-unity.md)
-* [Gaze](gaze.md)
+* [Gaze input](gaze.md)
 * [Cursors](cursors.md)
 * [Gaze targeting](gaze-targeting.md)
