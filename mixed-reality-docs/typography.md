@@ -14,7 +14,7 @@ keywords: Windows Mixed Reality, design, style, font, typography, ui, ux
 
 Text is an important element for delivering information in your app experience. Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
 
-![Typography example in HoloLens](images/640px-typography-hero2.jpg)<br>
+![Typography example in HoloLens](images/typography-cover.png)<br>
 *Typography example in HoloLens*
 
 When we talk about type in 3D, we tend to think extruded, volumetric 3D text. Except for some logotype designs and a few other limited applications, extruded text tends to degrade the readability of the text. Even though we are designing experiences for 3D, we use 2D for the type because it is more legible and easier to read.
@@ -56,7 +56,7 @@ We recommend using white text on a dark or colored back plate.
 <br>
 
 
-![Black text examples](images/640px-typography-textcolors.jpg)
+![Black text examples](images/typography-whiteonblack.png)
 
 To use dark text, you should use a bright back plate to make it readable. In additive color systems, black is displayed as transparent. This means you will not be able to see the black text without a colored back plate.
 
@@ -65,7 +65,7 @@ To use dark text, you should use a bright back plate to make it readable. In add
 
 ![Black text examples](images/640px-typography-blackonwhite.jpg)
 
-You can find examples of black text in UWP apps such as the Store or Settings.
+You can find examples of black text in the system apps such as the Store or Settings.
 
 ## Recommended font size
 
@@ -75,7 +75,16 @@ Two meters is the optimal distance for displaying text.
 
 Since mixed reality involves three-dimensional depth, it is not always easy to communicate the size of the font. For the user's comfort, two meters is the optimal distance for placing holograms. We can use this distance as a basis to find the optimal font size.
 
-As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look quite small at a distance of 2 meters. It depends on the characteristics of each font, but in general, the recommended minimum type size for legibility without stroke vibration is around 30pt. If your app is supposed to be used at a closer distance, smaller type sizes could be used. **The point size is based on the Unity's 3D Text Mesh and UI Text. For the detailed metrics and scaling factors, please refer to [Text in Unity](text-in-unity.md).**
+As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look quite small at a distance of 2 meters. It depends on the characteristics of each font, but in general, the recommended minimum type size for legibility without stroke vibration is around 30pt. Larger font size is necessary when rendering text on a light background. If the content is supposed to be displayed at a closer distance, smaller type sizes could be used. 
+
+**The point size is based on the Unity's 3D Text Mesh and UI Text. For the detailed metrics and scaling factors, please refer to [Text in Unity](text-in-unity.md).**
+
+## Text for the near interaction range in HoloLens 2
+
+For the content displayed in the direct hand interaction range(45cm), minimum recommended font size is 0.4°-0.5° in visual angle. It is equivalent to the height of 0.3-0.4cm and 11pt in Unity Text. However, to secure comfortable legibility, the visual angle of 0.65°-0.8°(~0.6cm height) and 18pt in Unity Text is recommended.
+
+**The point size is based on the Unity's 3D Text Mesh and UI Text. For the detailed metrics and scaling factors, please refer to [Text in Unity](text-in-unity.md).**
+
 
 ## Resources
 * [Segoe fonts](http://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)

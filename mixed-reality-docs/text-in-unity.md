@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, design, Controls, font, typography, ui, ux
 
 # Text in Unity
 
-Text is one of the most important components in holographic apps. To display text in Unity, there are two types of text components you can use — UI Text and 3D Text Mesh. By default they appear blurry and are too big. You need to tweak a few variables to get sharp, high-quality text that has a manageable size in HoloLens. By applying scaling factor to get proper dimensions when using the UI Text and 3D Text Mesh components, you can achieve better rendering quality.
+Text is one of the most important components in holographic apps. To display text in Unity, there are three types of text components you can use — UI Text, 3D Text Mesh, and Text Mesh Pro. By default UI Text and 3D Text Mesh appear blurry and are too big. You need to tweak a few variables to get sharp, high-quality text that has a manageable size in HoloLens. By applying scaling factor to get proper dimensions when using the UI Text and 3D Text Mesh components, you can achieve better rendering quality.
 
 ![How to get sharp and beautiful text](images/hug-text-02-640px.png)<br>
 *Blurry default text in Unity*
@@ -58,6 +58,9 @@ Unity's default font material does not support occlusion. Because of this, you w
 ## Recommended type size
 
 As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look quite small at a distance of 2 meters. It depends on the characteristics of each font, but in general the recommended minimum type size for legibility without stroke vibration is around 30pt, based on the scaling factor introduced above. If your app is supposed to be used at a closer distance, smaller type sizes could be used. For the font selection, Segoe UI (the default font for Windows) works well in most cases. However, avoid using light or semi light fonts for type sizes under 42pt since thin vertical strokes will vibrate and it will degrade the legibility. Modern fonts with enough stroke thickness work well. For example, Helvetica and Arial look gorgeous and are very legible in HoloLens with regular or bold weights.
+
+
+For the content displayed in the direct hand interaction range(45cm), minimum recommended font size is 0.4°-0.5° in visual angle. It is equivalent to the height of 0.3-0.4cm and 11pt in Unity Text. However, to secure comfortable legibility, the visual angle of 0.65°-0.8°(~0.6cm height) and 18pt in Unity Text is recommended.
 
 ![Recommended type size](images/hug-text-08-1000px.png)<br>
 *Type ramp example*
