@@ -46,7 +46,7 @@ When adding a UI or canvas based text element to a scene, the size disparity is 
 
 ## Working with Text Mesh Pro
 
-With Unity's Text Mesh Pro, you can secure the text rendering quality. It supports crisp text outline regardless of the distance using the [SDF(Signed Distance Field)](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) technique. Using the same calculation method that we used above for the 3D Text Mesh and UI Text, we can find proper scaling values to use conventional typographic Point. Since the default 3D Text Mesh Pro font with the size 36 shows the bounding of 2.5 Unity Unit(2.5m), we can use scaling value 0.005 to use the Point size.
+With Unity's Text Mesh Pro, you can secure the text rendering quality. It supports crisp text outline regardless of the distance using the [SDF(Signed Distance Field)](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) technique. Using the same calculation method that we used above for the 3D Text Mesh and UI Text, we can find proper scaling values to use conventional typographic Point. Since the default 3D Text Mesh Pro font with the size 36 shows the bounding of 2.5 Unity Unit(2.5m), we can use scaling value 0.005 to use the Point size. The Text Mesh Pro under UI menu has the default bounding size of 25 Unity Unit(25m). This gives us 0.0005 for the scaling value.
 
 ![Unity 3D Text Mesh with different font sizes](images/Text_In_Unity_Measurements2.png)<br>
 *Scaling values for the Unity 3D Text and UI Text*
