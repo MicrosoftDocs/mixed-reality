@@ -57,17 +57,18 @@ As you can expect, type sizes that we use on a PC or a tablet device (typically 
 
 For the near interaction at 0.45m(45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
 
-The minimum legible font size at 45cm (direct manipulation distance)
-- 0.4°-0.5° = 3.14–3.9mm = 8.9–11.13pt
+The minimum legible font size
+| Interaction range | Viewing angle | Font height | Font size |
+|---------|---------|---------|---------|
+| 45cm (direct manipulation distance) | 0.4°-0.5° | 3.14–3.9mm | 8.9–11.13pt |
+| 2m | 0.35°-0.4° | 12.21–13.97mm | 34.63-39.58pt |
 
-The minimum legible font size at 2m
-- 0.35°-0.4° = 12.21–13.97mm = 34.63-39.58pt
 
-The comfortably legible font size at 45cm (direct manipulation distance)
-- 0.65°-0.8° = 5.1-6.3mm = 14.47-17.8pt
-
-The comfortably legible font size at 2m
-- 0.6°-0.75° at 2.0m = 20.9-26.2mm = 59.4-74.2pt
+The comfortably legible font size
+| Interaction range | Viewing angle | Font height | Font size |
+|---------|---------|---------|---------|
+| 45cm (direct manipulation distance) | 0.65°-0.8° | 5.1-6.3mm | 14.47-17.8pt |
+| 2m | 0.6°-0.75° | 20.9-26.2mm | 59.4-74.2pt |
 
 Segoe UI (the default font for Windows) works well in most cases. However, avoid using light or semi light font families in small size since thin vertical strokes will vibrate and it will degrade the legibility. Modern fonts with enough stroke thickness work well. For example, Helvetica and Arial look gorgeous and are very legible in HoloLens with regular or bold weights.
 
