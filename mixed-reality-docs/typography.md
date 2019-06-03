@@ -30,7 +30,7 @@ Typographic rules in mixed reality are no different from anywhere else. Text in 
 Build contrast and hierarchy by using different type sizes and weights. Defining a type ramp and following it throughout the app experience will provide a great user experience with consistent information hierarchy.
 
 ![Type ramp examples](images/typography-ramp-1000px.jpg)<br>
-*Type ramp examples*
+*Define your type ramp and follow it throughout the app experience*
 
 ### Limit your fonts
 
@@ -50,40 +50,43 @@ In HoloLens, since the holograms are constructed with an additive light system, 
 
 
 ![We recommend using white text on a dark or colored back plate.](images/typography-whiteonblack2-1000px.jpg)
-
-We recommend using white text on a dark or colored back plate.
-
+*Examples of white text on a dark or colored back plate.*
 <br>
-
-
-![Black text examples](images/typography-whiteonblack.png)
 
 To use dark text, you should use a bright back plate to make it readable. In additive color systems, black is displayed as transparent. This means you will not be able to see the black text without a colored back plate.
 
-<br>
+![Black text examples](images/typography-whiteonblack.png)
+<br>*Examples of white on back and black on white text*
 
 
 ![Black text examples](images/640px-typography-blackonwhite.jpg)
-
-You can find examples of black text in the system apps such as the Store or Settings.
+<br>*Examples of black text in the system apps - Store and Settings*
 
 ## Recommended font size
 
 ![Two meters is the optimal distance for displaying text.](images/typography-distance-1000px.jpg)
+*Two meters is the optimal distance for displaying holographic content*
 
-Two meters is the optimal distance for displaying text.
+As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look quite small at a distance of 2 meters. It depends on the characteristics of each font, but in general the recommended minimum viewing angle and the font height for legibility are around 0.35°-0.4°/12.21-13.97mm based on our user research studies. It is about 35-40pt with the scaling factor introduced above. 
 
-Since mixed reality involves three-dimensional depth, it is not always easy to communicate the size of the font. For the user's comfort, two meters is the optimal distance for placing holograms. We can use this distance as a basis to find the optimal font size.
+For the near interaction at 0.45m(45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
 
-As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look quite small at a distance of 2 meters. It depends on the characteristics of each font, but in general, the recommended minimum type size for legibility without stroke vibration is around 30pt. Larger font size is necessary when rendering text on a light background. If the content is supposed to be displayed at a closer distance, smaller type sizes could be used. 
+### The minimum legible font size
+| Interaction range | Viewing angle | Font height | Font size |
+|---------|---------|---------|---------|
+| 45cm (direct manipulation distance) | 0.4°-0.5° | 3.14–3.9mm | 8.9–11.13pt |
+| 2m | 0.35°-0.4° | 12.21–13.97mm | 34.63-39.58pt |
 
-**The point size is based on the Unity's 3D Text Mesh and UI Text. For the detailed metrics and scaling factors, please refer to [Text in Unity](text-in-unity.md).**
 
-## Text for the near interaction range in HoloLens 2
+### The comfortably legible font size
+| Interaction range | Viewing angle | Font height | Font size |
+|---------|---------|---------|---------|
+| 45cm (direct manipulation distance) | 0.65°-0.8° | 5.1-6.3mm | 14.47-17.8pt |
+| 2m | 0.6°-0.75° | 20.9-26.2mm | 59.4-74.2pt |
 
-For the content displayed in the direct hand interaction range(45cm), minimum recommended font size is 0.4°-0.5° in visual angle. It is equivalent to the height of 0.3-0.4cm and 11pt in Unity Text. However, to secure comfortable legibility, the visual angle of 0.65°-0.8°(~0.6cm height) and 18pt in Unity Text is recommended.
+Segoe UI (the default font for Windows) works well in most cases. However, avoid using light or semi light font families in small size since thin vertical strokes will vibrate and it will degrade the legibility. Modern fonts with enough stroke thickness work well. For example, Helvetica and Arial look gorgeous and are very legible in HoloLens with regular or bold weights.
 
-**The point size is based on the Unity's 3D Text Mesh and UI Text. For the detailed metrics and scaling factors, please refer to [Text in Unity](text-in-unity.md).**
+For more detailed information about text size in Unity, please refer to the page [Text in Unity](text-in-unity.md)
 
 
 ## Resources
@@ -91,9 +94,8 @@ For the content displayed in the direct hand interaction range(45cm), minimum re
 * [HoloLens font](http://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)
 
 ![The HoloLens font gives you the symbol glyphs used in Windows Mixed Reality](images/300px-hololensmdl2symbols.jpg)
-
-The HoloLens font gives you the symbol glyphs used in Windows Mixed Reality.
+<br>*The HoloLens font gives you the symbol glyphs used in Windows Mixed Reality.*
 
 ## See also
-* [Text in Unity](http://holodocsfuture/index.php?title=Text_in_Unity&action=edit&redlink=1)
+* [Text in Unity](text-in-unity.md)
 * [Color, light and materials](color,-light-and-materials.md)

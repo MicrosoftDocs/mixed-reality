@@ -25,7 +25,7 @@ Unity assumes all new elements added to a scene are 1 Unity Unit in size, or 100
 *Default Unity 3D Text (Text Mesh) occupies 1 Unity Unit which is 1 meter*
 
 <br>
-Most visual designers use points to define font sizes in the real world. There are about 2835 (2,834.645666399962) points in 1 meter. Based on the point system conversion to 1 meter and Unity's default Text Mesh font size of 13, the simple math of 13 divided by 2835 equals 0.0046 (0.004586111116 to be exact) provides a good standard scale to start with (some may wish to round to 0.005). Scaling the text object or container to these values will not only allow for the 1:1 conversion of font sizes in a design program, but also provides a standard so you can maintain consistency throughout your application or game.
+Most visual designers use points to define font sizes in the real world. There are about 2835 (2,834.645666399962) points in 1 meter. Based on the point system conversion to 1 meter and Unity's default Text Mesh font size of 13, the simple math of 13 divided by 2835 equals 0.0046 (0.004586111116 to be exact) provides a good standard scale to start with (some may wish to round to 0.005). Scaling the text object or container to these values will not only allow for the 1:1 conversion of font sizes in a design program, but also provides a standard so you can maintain consistency throughout your experience.
 
 ![Unity 3D Text Mesh with different font sizes](images/Text_In_Unity_Measurements1.png)<br>
 *Scaling values for the Unity 3D Text and UI Text*
@@ -57,14 +57,14 @@ As you can expect, type sizes that we use on a PC or a tablet device (typically 
 
 For the near interaction at 0.45m(45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
 
-The minimum legible font size
+### The minimum legible font size
 | Interaction range | Viewing angle | Font height | Font size |
 |---------|---------|---------|---------|
 | 45cm (direct manipulation distance) | 0.4°-0.5° | 3.14–3.9mm | 8.9–11.13pt |
 | 2m | 0.35°-0.4° | 12.21–13.97mm | 34.63-39.58pt |
 
 
-The comfortably legible font size
+### The comfortably legible font size
 | Interaction range | Viewing angle | Font height | Font size |
 |---------|---------|---------|---------|
 | 45cm (direct manipulation distance) | 0.65°-0.8° | 5.1-6.3mm | 14.47-17.8pt |
