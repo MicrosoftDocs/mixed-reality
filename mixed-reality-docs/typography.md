@@ -72,14 +72,14 @@ As you can expect, type sizes that we use on a PC or a tablet device (typically 
 For the near interaction at 0.45m(45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
 
 ### The minimum legible font size
-| Distance | Viewing angle | Text height | Font size |
+| Distance | Viewing angle | Text height | Font size** |
 |---------|---------|---------|---------|
 | 45cm (direct manipulation distance) | 0.4°-0.5° | 3.14–3.9mm | 8.9–11.13pt |
 | 2m | 0.35°-0.4° | 12.21–13.97mm | 34.63-39.58pt |
 
 
 ### The comfortably legible font size
-| Distance | Viewing angle | Text height | Font size |
+| Distance | Viewing angle | Text height | Font size** |
 |---------|---------|---------|---------|
 | 45cm (direct manipulation distance) | 0.65°-0.8° | 5.1-6.3mm | 14.47-17.8pt |
 | 2m | 0.6°-0.75° | 20.9-26.2mm | 59.4-74.2pt |
@@ -87,7 +87,7 @@ For the near interaction at 0.45m(45cm), the minimum legible font's viewing angl
 
 Segoe UI (the default font for Windows) works well in most cases. However, avoid using light or semi light font families in small size since thin vertical strokes will vibrate and it will degrade the legibility. Modern fonts with enough stroke thickness work well. For example, Helvetica and Arial look gorgeous and are very legible in HoloLens with regular or bold weights.
 
-For more detailed information about text size in Unity, please refer to the page [Text in Unity](text-in-unity.md)
+**For more detailed information about text size calculation in Unity, please refer to the page [Text in Unity](text-in-unity.md)
 
 ![Viewing Angle](images/Text_In_Unity_ViewingAngle.jpg)
 *Viewing distance, angle, and text height*
