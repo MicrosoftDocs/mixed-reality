@@ -64,30 +64,33 @@ To use dark text, you should use a bright back plate to make it readable. In add
 
 ## Recommended font size
 
-![Two meters is the optimal distance for displaying text.](images/typography-distance-1000px.jpg)
-*Two meters is the optimal distance for displaying holographic content*
+![Near and far interaction range](images/typography-distance-1000px.jpg)
+*Content at near and far interaction range*
 
 As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look quite small at a distance of 2 meters. It depends on the characteristics of each font, but in general the recommended minimum viewing angle and the font height for legibility are around 0.35°-0.4°/12.21-13.97mm based on our user research studies. It is about 35-40pt with the scaling factor introduced above. 
 
 For the near interaction at 0.45m(45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
 
 ### The minimum legible font size
-| Interaction range | Viewing angle | Font height | Font size |
+| Distance | Viewing angle | Text height | Font size |
 |---------|---------|---------|---------|
 | 45cm (direct manipulation distance) | 0.4°-0.5° | 3.14–3.9mm | 8.9–11.13pt |
 | 2m | 0.35°-0.4° | 12.21–13.97mm | 34.63-39.58pt |
 
 
 ### The comfortably legible font size
-| Interaction range | Viewing angle | Font height | Font size |
+| Distance | Viewing angle | Text height | Font size |
 |---------|---------|---------|---------|
 | 45cm (direct manipulation distance) | 0.65°-0.8° | 5.1-6.3mm | 14.47-17.8pt |
 | 2m | 0.6°-0.75° | 20.9-26.2mm | 59.4-74.2pt |
+
 
 Segoe UI (the default font for Windows) works well in most cases. However, avoid using light or semi light font families in small size since thin vertical strokes will vibrate and it will degrade the legibility. Modern fonts with enough stroke thickness work well. For example, Helvetica and Arial look gorgeous and are very legible in HoloLens with regular or bold weights.
 
 For more detailed information about text size in Unity, please refer to the page [Text in Unity](text-in-unity.md)
 
+![Viewing Angle](images/Text_In_Unity_ViewingAngle.jpg)
+*Viewing distance, angle, and text height*
 
 ## Resources
 * [Segoe fonts](http://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)
