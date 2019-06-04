@@ -80,22 +80,21 @@ Segoe UI (the default font for Windows) works well in most cases. However, avoid
 
 ## Sharp text rendering quality with proper dimension
 
-Based on these scaling factors, we have created [two prefabs - UI Text and 3D Text Mesh](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/UX/Prefabs). Developers can use these prefabs to get sharp text and consistent font size.
+Based on these scaling factors, we have created [text prefabs with UI Text and 3D Text Mesh](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/mrtk_development_TextPrefabs/Assets/MixedRealityToolkit.SDK/StandardAssets/Prefabs/Text). Developers can use these prefabs to get sharp text and consistent font size.
 
 ![Sharp text rendering quality with proper dimension](images/hug-text-06-1000px.png)<br>
 *Sharp text rendering quality with proper dimension*
 
 ## Shader with occlusion support
 
-Unity's default font material does not support occlusion. Because of this, you will see the text behind the objects by default. We have included a simple [shader that supports the occlusion](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/UX/Shaders). The image below shows the text with default font material (left) and the text with proper occlusion (right).
+Unity's default font material does not support occlusion. Because of this, you will see the text behind the objects by default. We have included a simple [shader that supports the occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit/StandardAssets/Shaders/Text3DShader.shader). The image below shows the text with default font material (left) and the text with proper occlusion (right).
 
 ![Shader with occlusion support](images/hug-text-07-1000px.png)<br>
 *Shader with occlusion support*
 
 
 ## See also
-* [Text Prefab in the MixedRealityToolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/UX/Prefabs)
-* [Sample text layout prefab and scene](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX/Scenes)
+* [Text Prefab in the MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/mrtk_development_TextPrefabs/Assets/MixedRealityToolkit.SDK/StandardAssets/Prefabs/Text)
 * [Typography](typography.md)
 
  
