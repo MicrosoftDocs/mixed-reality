@@ -64,12 +64,12 @@ To use dark text, you should use a bright back plate to make it readable. In add
 
 ## Recommended font size
 
-![Near and far interaction range](images/typography-distance-1000px.jpg)
-*Content at near and far interaction range*
-
 As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look quite small at a distance of 2 meters. It depends on the characteristics of each font, but in general the recommended minimum viewing angle and the font height for legibility are around 0.35°-0.4°/12.21-13.97mm based on our user research studies. It is about 35-40pt with the scaling factor introduced above. 
 
 For the near interaction at 0.45m(45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
+
+![Near and far interaction range](images/typography-distance-1000px.jpg)
+*Content at near and far interaction range*
 
 ### The minimum legible font size
 | Distance | Viewing angle | Text height | Font size** |
