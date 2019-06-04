@@ -42,7 +42,7 @@ Head-gaze and dwell excels in scenarios where a person's hands are busy with oth
 
 ## Goals
 
-Provide a mechanism for fully hands-free interactions, without using Voice.
+Provide a mechanism for fully hands-free interactions, without using voice.
 
 ## Design principles
 
