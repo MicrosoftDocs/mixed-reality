@@ -14,7 +14,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 2. Select the TableAnchor prefab underneath  the "MixedRealityPlayspace" parent object, and delete it.
 
-![Module3Chapter5tep2im](images\module3chapter5step2im.PNG)
+![Module3Chapter5tep2im](images/module3chapter5step2im.PNG)
 
 3. Just like some of the previous lessons, import a new custom package that you can get [here.](placeholderlink)
 
