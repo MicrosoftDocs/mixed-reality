@@ -77,7 +77,7 @@ Regardless of the type of app you're building, these tools will facilitate your 
 ## See also
 * [Install the tools](install-the-tools.md)
 * <a href="https://azure.microsoft.com/topic/mixed-reality" target="_blank">Mixed reality services</a>
-* [Mixed Reality tutorials](academy.md)
+* [Mixed Reality tutorials](tutorials.md)
 * [Open source projects](open-source-projects.md)
 * [MR Basics 100: Getting started with Unity](holograms-100.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

@@ -1,16 +1,15 @@
 ---
-
-
-title: MR Learning Base Module Advanced Input
+title: MR Learning Base Module - Advanced Input
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module Advanced Input
+# MR Learning Base Module - Advanced Input
 
 In this lesson, we will explore several advanced input options for the HoloLens 2, including the use of voice commands, the panning gesture, and eye tracking. 
 

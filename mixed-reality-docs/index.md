@@ -6,6 +6,7 @@ author: varnauld
 ms.author: vanesa
 ms.date: 02/24/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---
 
@@ -141,7 +142,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
 
 [![HoloLens 2](images/hololens2.jpg)](https://www.microsoft.com/hololens/hardware)
 
-[HoloLens 2](https://www.microsoft.com/hololens/hardware) offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes- all backed by the reliability, security, and scalability of cloud and AI services from Microsoft.
+[HoloLens 2](https://www.microsoft.com/hololens/hardware) offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes- all backed by the reliability, security, and scalability of cloud and AI services from Microsoft. The [HoloLens 2 Development Edition](https://www.microsoft.com/en-us/hololens/developers) helps you jump-start your mixed reality plans with an offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services.
 
 <h2>News and notes</h2>
 
@@ -159,7 +160,7 @@ As promised, we are excited to share more mixed reality goodness with you! We’
 </td></td><td>March - May 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-porting-guide>Getting your existing app ready for HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>HoloToolKit to MRTK APIs</a></td>
 </tr>
 <tr>
-<td>Monthly open source developer modules (Tutorials/Sample apps)</td><td>March - June 2019</td><td> <ul><li>MR learning base module</td>
+<td>Monthly open source developer modules (Tutorials/Sample apps)</td><td>March - June 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1>MR learning base module</a></td>
 </tr>
 <tr>
 <td>Preview new capabilities in MRTK for HoloLens 2</td><td>April 2019</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>MRTK docs</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-getting-started>Getting started with MRTK v2</a></td>

@@ -5,6 +5,7 @@ author: grbury
 ms.author: grbury
 ms.date: 04/12/19
 ms.topic: article
+ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
 ---
 
@@ -38,7 +39,7 @@ Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manu
 | ARM32 build support | ARM32 and ARM64 build support |
 | Stable LTS build release | Beta stability |
 | [.NET Scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) *deprecated* | [.NET Scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) *removed* |
-| UNET Networking *deprecated* | UNET Networking *removed* |
+| UNET Networking *deprecated* | UNET Networking *deprecated* |
 
 ## Update scene/project settings in Unity
 
@@ -48,6 +49,7 @@ It should be re-iterated that the [.NET Scripting back-end](https://docs.unity3d
 
 > [!NOTE]
 > IL2CPP scripting back-end can cause longer build times from Unity to Visual Studio and thus developers should setup their developer machine for [optimizing IL2CPP build times](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).
+> Furthermore, it may be beneficial to setup a [Cache Server](https://docs.unity3d.com/Manual/CacheServer.html), especially for Unity projects with a large amount of assets (excluding script files) or constantly changing scenes/assets. When opening a project, Unity stores qualifying assets into an internal cache format on the developer machine. Items must be re-imported and thus re-processed when modified. This process can be done once and saved in a Cache Server and consequently shared with other developers to save time, instead of every developer processing the re-import of new changes locally.
 
 After addressing any breaking changes after moving to the updated Unity version, developers should build and test their current apps on HoloLens (1st gen). Further, this is a good point to create and save a commit for source control. 
 

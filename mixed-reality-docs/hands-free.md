@@ -1,5 +1,5 @@
 ---
-title: Optimizing your app for hands-free
+title: Hands-free
 description: Optimizing your app for hands-free
 author: liamar
 ms.author: liamar
@@ -9,7 +9,7 @@ keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design
 ---
 
 
-# Optimizing your app for hands-free
+# Hands-free
 
 
 
@@ -27,18 +27,16 @@ Some specific scenarios might be:
 
 ## Hands-free modalities
 
-### Voice commanding
+### [Voice commanding](voice-design.md)
 
 Using your voice to command and control an interface can not only allow the user to operate handsfree, but also skip multiple steps. The usage of this modality can range from allowing the user to simply reading any button's name out loud to activate it, as in See-it-say-it, to conversing with an agent who can accomplish tasks for you.
 
-* [Voice design](voice-design.md)
 
 
-### Head gaze and dwell
+### [Head-gaze and dwell](gaze-and-dwell.md)
 
 In some hands-free situations, using your voice is not ideal or even possible. Loud factory environments, privacy, or social norms can all be constraints. The head gaze + dwell model allows the user to navigate the app by using their head vector to point, while lingering, or dwelling on a button will activate it after a certain amount of time (typically around 1 second or so). 
 
-* [Gaze and dwell](gaze-and-dwell.md)
 
 ## Transitioning in and out of hands-free
 
@@ -93,6 +91,6 @@ Does the user understand ...
 
 
 ## See also
-* [Gaze and commit](gaze-and-commit.md)
-* [Direct manipulation](direct-manipulation.md)
-* [Point and commit](point-and-commit.md)
+* [Head-gaze and commit](gaze-and-commit.md)
+* [Direct manipulation with hands](direct-manipulation.md)
+* [Point and commit with hands](point-and-commit.md)

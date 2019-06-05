@@ -5,10 +5,11 @@ author: sostel
 ms.author: sostel
 ms.date: 04/05/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Eye Tracking, Mixed Reality, Input, Eye Gaze
 ---
 # Eye tracking on HoloLens 2
-HoloLens 2 allows for a whole new level of context and human understanding within the Holographic experience by providing developers with the incredible ability of using information about what users are looking at. This page gives an overview of how developers can benefit from eye tracking for various use cases and what to look out for when designing eye-gaze-based user interfaces. 
+HoloLens 2 allows for a whole new level of context and human understanding within the holographic experience by providing developers with the incredible ability of using information about what users are looking at. This page gives an overview of how developers can benefit from eye tracking for various use cases and what to look out for when designing eye-gaze-based user interfaces. 
 
 ## Use cases
 Eye tracking enables applications to track where the user is looking in real time. This section describes some of the potential use cases and novel interactions that become possible with eye tracking in mixed reality.
@@ -166,21 +167,13 @@ Do not force users to perform specific eye movements (gaze gestures) to trigger 
 5. **Account for imprecisions:** 
 We distinguish two types of imprecisions which are noticeable to users: Offset and Jitter. The easiest way to address offsets is to provide sufficiently large targets to interact with (> 2° in visual angle – as reference: your thumbnail is about 2° in visual angle when you stretch out your arm (1)). This leads to the following guidance:
     - Do not force users to select tiny targets: Research has shown that if targets are sufficiently large (and the system is designed well), users describe the interaction as effortless and magical. If targets become too small, users describe the experience as fatiguing and frustrating.
-    
-# Eye gaze design guidelines (Placeholder)
-
-With HoloLens 2, we have the great opportunity to make gaze & commit faster and more comfortable by using eye gaze instead of head gaze. However, eye gaze behaves very differently to head gaze in certain ways and hence comes with a number of unique challenges. In Eye Gaze Design Guidelines, we summarize general advantages and challenges to take into account when using eye tracking as an input medium in your holographic app. In this section, we focus on the specific design considerations for eye gaze & commit. First, our eyes move incredibly fast and thus are great at quickly targeting across the view. This makes eye gaze ideal for quick gaze & commit actions especially when combined with fast commits such as an air-tap or button press.
-
-Do not show a cursor: While it is nearly impossible to interact without a cursor when using head gaze, the cursor becomes quickly distracting and annoying when using eye gaze. Instead of relying on a cursor to inform the user whether eye tracking is working and has correctly detected the currently looked at target, use subtle visual highlights (more details below).
-
-Strive for subtle blended hover feedback: What seems great visual feedback for head gaze can result in terrible, overwhelming experiences using eye gaze. Remember that your eyes are enormously fast, quickly darting across points in your field-of-view. Quick sudden highlight changes (on/off) may result in flickery feedback when looking around. So, when providing hover feedback, we recommend using a smoothly blended-in highlight (and blended-out when looking away). This means that at first you would barely notice the feedback when looking at a target. Over the course of 500-1000 ms the highlight would increase in intensity. While novice users could keep looking at the target to ensure that the system has correctly determined the focused target, expert users could quickly gaze & commit without waiting until the feedback is at its full intensity. In addition, we also recommend using a blend-out when fading out the hover feedback. Research has shown that quick motion and contrast changes are very noticeable in your peripheral vision (so, the area of your visual field where you are not looking). The fade-out doesn't have to be as slow as the blend-in. This is only critical when you have high contrast or color changes for your highlight. If the hover feedback was pretty subtle to begin with, you probably won't notice a difference.
-
-Look out for synchronizing gaze and commit signals: The synchronization of input signals may be less of a challenge for simple gaze & commit, so, don't worry! It is something to look out for in case you want to use more complicated commit actions though that may involve long voice commands or complicated hand gestures. Imagine you look at target and utter a long voice command. Taken into account the time that you needed to speak and the time that the system needed to detect what you said, your eye gaze has usually long moved on to some new target in the scene. Hence, either make your users aware that they may need to keep looking at a target until the command has been recognized or handle the input in a way to determine the onset of the command and what the user had been looking at back then.
+   
 
 ## See also
-* [Gaze and commit](gaze-and-commit.md)
-* [Head gaze targeting](gaze-targeting.md)
-* [Gestures](gestures.md)
-* [Voice design](voice-design.md)
+* [Head-gaze and commit](gaze-and-commit.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
+* [Eye gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
+* [Hand gestures](gestures.md)
+* [Voice input](voice-design.md)
 * [Motion controllers](motion-controllers.md)
 * [Comfort](comfort.md)

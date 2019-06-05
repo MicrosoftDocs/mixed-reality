@@ -24,6 +24,7 @@
 #### [See your photos](see-your-photos.md)
 #### [Sensor tuning](sensor-tuning.md)
 #### [Updating HoloLens](updating-hololens.md)
+#### [Device Sharing](device-sharing.md)
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
 ### Immersive headsets
 #### [Immersive headset hardware details](immersive-headset-hardware-details.md)
@@ -48,11 +49,13 @@
 ### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
 ### [Building HoloSketch, a spatial layout and UX sketching app for HoloLens](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Capturing and creating content for HoloTour](case-study-capturing-and-creating-content-for-holotour.md)
-### [Creating a galaxy in mixed reality](case-study-creating-a-galaxy-in-mixed-reality.md)
 ### [Creating an immersive experience in Fragments](case-study-creating-an-immersive-experience-in-fragments.md)
 ### [Creating impossible perspectives for HoloTour](case-study-creating-impossible-perspectives-for-holotour.md)
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [Expanding the spatial mapping capabilities of HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+### Galaxy Explorer
+#### [Creating a galaxy in mixed reality for Hololens (1st gen)](case-study-creating-a-galaxy-in-mixed-reality.md)
+#### [Updating Galaxy Explorer for HoloLens 2](galaxy-explorer-update.md)
 ### [HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 ### [Lessons from the Lowe's kitchen](case-study-lessons-from-the-lowes-kitchen.md)
 ### [Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)
@@ -88,20 +91,17 @@
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
 ### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
-## MR design system and tools
-### [Instinctual interactions](Interaction-fundamentals.md)
-#### [Hands and motion controllers](hands-and-tools.md)
-##### [Direct manipulation](direct-manipulation.md)
-##### [Point and commit](point-and-commit.md)
-##### [Motion controllers](Motion-controllers.md)
-#### [Hands-free](hands-free.md)
-##### [Gaze and dwell](Gaze-and-dwell.md)
-##### [Gaze and voice](Voice-design.md)
-#### [Head-gaze and commit](gaze-and-commit.md)
+## [Instinctual interactions](Interaction-fundamentals.md)
+### [Hands and motion controllers](hands-and-tools.md)
+#### [Direct manipulation with hands](direct-manipulation.md)
+#### [Point and commit with hands](point-and-commit.md)
+#### [Motion controllers](Motion-controllers.md)
+### [Hands-free](hands-free.md)
+#### [Voice commanding](Voice-design.md)
+#### [Head-gaze and dwell](Gaze-and-dwell.md)
+### [Head-gaze and commit](gaze-and-commit.md)
 ### Supplemental interactions
-#### [Eye gaze](eye-tracking.md)
-#### [Gaze targeting](Gaze-targeting.md)
-#### [Gestures](Gestures.md)
+#### [Eye-gaze](eye-tracking.md)
 ## Style
 ### [Color, light and materials](color,-light-and-materials.md)
 ### [Spatial sound design](spatial-sound-design.md)
@@ -161,10 +161,11 @@
 #### [Keyboard input in Unity](keyboard-input-in-unity.md)
 ### Advanced topics
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
+#### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ### Legacy Documents (Unity 2017.4/HTK/MRTK v1)
 ## Unreal
-### Unreal for HoloLens 2 - coming soon!
+### [Unreal for HoloLens 2 early access](https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access)
 ## DirectX
 ### [DirectX development overview](directx-development-overview.md)
 ### Getting started
@@ -173,7 +174,8 @@
 #### [Rendering in DirectX](rendering-in-directx.md)
 ### Core building blocks
 #### [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
-#### [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+#### [Head and eye gaze in DirectX](gaze-in-directx.md)
+#### [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 #### [Voice input in DirectX](voice-input-in-directx.md)
 #### [Spatial sound in DirectX](spatial-sound-in-directx.md)
 #### [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
@@ -184,24 +186,22 @@
 ### Advanced topics
 #### [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)
 #### [Add holographic remoting](add-holographic-remoting.md)
+### [OpenXR](openxr.md)
 ## WebVR
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## [Tutorials and sample apps](tutorials.md)
 ### Unity
-#### [MR Learning Modules](mr-learning-overview.md)
+#### MR Learning Modules
 ##### HoloLens 2
-###### [Base Module - Overview & Objectives](mrlearning-base.md)
+###### Base Module
+####### [Base Module - Overview & Objectives](mrlearning-base.md)
 ####### [Project initialization and first application](mrlearning-base-ch1.md)
 ####### [User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration](mrlearning-base-ch2.md)
 ####### [Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)
 ####### [3D Object Interaction](mrlearning-base-ch4.md)
 ####### [Advanced Input](mrlearning-base-ch5.md)
-
 ####### [Demo App](mrlearning-base-ch6.md)
-
-#### 
-
-#### Open source sample apps
+#### HoloLens (1st gen) open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
 ##### [Galaxy Explorer](galaxy-explorer.md)

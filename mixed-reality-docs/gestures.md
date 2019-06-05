@@ -107,9 +107,9 @@ There are three things that you should consider:
 * Consequences of breaking the gesture frame boundaries should be minimized. In general, this means that the outcome of a gesture should be stopped at the boundary, but not reversed. For example, if a user is moving some holographic object across a room, movement should stop when the gesture frame is breached, but **not** be returned to the starting point. The user may experience some frustration then, but may more quickly understand the boundaries, and not have to restart their full intended actions each time.
 
 ## See also
-* [Gaze targeting](gaze-targeting.md)
+* [Head-gaze and dwell](gaze-and-dwell.md)
 * [Voice design](voice-design.md)
 * [MR Input 211: Gesture](holograms-211.md)
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
-* [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Motion controllers](motion-controllers.md)

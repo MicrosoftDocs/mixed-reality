@@ -400,7 +400,7 @@ Holograms should react to the user position in roughly the same ways that "real"
 * [Interaction design](hologram.md)
 * [Color, light, and material](color,-light-and-materials.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 * [Self-motion and user locomotion](comfort.md#self-motion-and-user-locomotion)
 
 #### Tools and tutorials
@@ -448,14 +448,14 @@ Input interaction clarity is critical to an app's usability and includes input c
 
 #### Documentation
 
-* [Windows MR interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 * [Interactable objects](interactable-object.md)
-* [Gaze targeting](gaze-targeting.md)
+* [Head-gaze and dwell](gaze-and-dwell.md)
 * [Cursors](cursors.md)
 * [Comfort and gaze](comfort.md#gaze-direction)
 * [Gestures](gestures.md)
 * [Voice input](voice-input.md)
-* [Voice design](voice-design.md)
+* [Voice commanding](voice-design.md)
 * [Motion controllers](motion-controllers.md)
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
 * [Keyboard input in Unity](keyboard-input-in-unity.md)
@@ -463,7 +463,8 @@ Input interaction clarity is critical to an app's usability and includes input c
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
 * [Voice input in Unity](voice-input-in-unity.md)
 * [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
-* [Gaze, gesture, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
+* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](voice-input-in-directx.md)
 
 #### Tools and tutorials
@@ -515,7 +516,7 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 * [Interactable object](interactable-object.md)
 * [Text in Unity](text-in-unity.md)
 * [App bar and bounding box](app-bar-and-bounding-box.md)
-* [Voice design](voice-design.md)
+* [Voice commanding](voice-design.md)
 
 #### Tools and tutorials
 

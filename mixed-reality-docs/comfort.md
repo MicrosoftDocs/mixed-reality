@@ -3,9 +3,9 @@ title: Comfort
 description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
 author: erickjpaul
 ms.author: erpau
-ms.date: 02/13/2019
+ms.date: 04/5/2019
 ms.topic: article
-keywords: Mixed Reality, design, comfort
+keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
 ---
 
 
@@ -31,7 +31,7 @@ HoloLens displays are fixed at an optical distance approximately 2.0m away from 
 ![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)<br>
 *Optimal distance for placing holograms from the user*
 
-#### Best practices for HoloLens (1st gen) and HoloLens 2
+### Best practices for HoloLens (1st gen) and HoloLens 2
 
 For maximum comfort, **the optimal zone for hologram placement is between 1.25m and 5m**. In every case, designers should attempt to structure content scenes to encourage users to interact 1m or farther away from the content (e.g. adjust [content size and default placement parameters](gaze-targeting.md)). 
 
@@ -39,10 +39,14 @@ Although content may occasionally need to be displayed closer than 1m, we recomm
 
 Objects that move in depth are more likely than stationary objects to produce discomfort due to the vergence-accommodation conflict. Similarly, requiring users to rapidly switch between near-focus and far-focus (e.g., because of a pop-up hologram requiring direct interaction) can cause visual discomfort and fatigue. Therefore, **extra care should be taken to minimize how often users are: viewing content that is moving in depth; or rapidly switching focus between near and far holograms**. 
 
-When designing content for direct (near) interaction in HoloLens 2, or **in any applications where content must be placed closer than 1m, extra care should be taken to ensure user comfort**. The odds of discomfort due to the vergence-accommodation conflict increase exponentially with decreasing viewing distance. **We recommend creating a “depth budget” for apps based on the amount of time a user is expected to view content that is near (< 1m) and moving in depth**. An example is to avoid placing the user in those situations more than 25% of the time. If the depth budget is exceeded, we recommend careful user testing to ensure it remains a comfortable experience.
+### Additional considerations for HoloLens 2 and near interaction distances
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+When designing content for direct (near) interaction in HoloLens 2, or **in any applications where content must be placed closer than 1m, extra care should be taken to ensure user comfort**. The odds of discomfort due to the vergence-accommodation conflict increase exponentially with decreasing viewing distance. Additionally, users may experience increased bluriness when viewing content at near interaction distances, so we recommend testing content rendered both within the zone of optimal hologram placement as well as closer (less than 1.0m down to the clipping plane) to ensure it remains clear and comfortable to view. 
+
+**We recommend creating a “depth budget” for apps based on the amount of time a user is expected to view content that is near (less than 1.0m) and moving in depth**. An example is to avoid placing the user in those situations more than 25% of the time. If the depth budget is exceeded, we recommend careful user testing to ensure it remains a comfortable experience. 
+
+In general, we also recommend careful testing to ensure any interaction requirements (e.g., velocity of movement, reachability, etc.) at near interaction distances remain comfortable for users. 
+
 
 ### Guidance for immersive devices
 
@@ -62,8 +66,7 @@ For HoloLens (1st gen), IPD is estimated and set during device [calibration](cal
 
 #### HoloLens 2
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+For HoloLens 2, IPD is estimated and set during eye/device [calibration](calibration.md). For new users to an already set up device, calibration must be run to ensure IPD is set correctly. VO is accounted for automatically in HoloLens 2. 
 
 ### Guidance for immersive devices
 
@@ -115,9 +118,9 @@ The preceding holographic device approach does not work as well in an immersive 
 
 In first-person-shooter videogames, heads-up displays (HUDs) persistently present information such as player health, mini-maps, and inventories directly on the screen. HUDs work well to keep the player informed without intruding on the gameplay experience. In mixed reality experiences, HUDs have the potential to cause significant discomfort and must be adapted to the more immersive context. Specifically, HUDs that are rigidly locked to the user’s head orientation are likely to produce discomfort. If an app requires a HUD, we recommend *body* locking rather than head locking. This treatment can be implemented as a set of displays that immediately translate with the user, but do not rotate with the user’s head until a threshold of rotation is reached. Once that rotation is achieved, the HUD may reorient to present the information within the user’s field of view. Implementing 1:1 HUD rotation and translation relative to the user’s head motions should always be avoided.
 
-## Text Legibility
+## Text legibility
 
-Optimal text legibility can help reduce eye strain and maintain user comfort, especially in applications or scenarios that require users to read while in an HMD. Text legibility depends on a variety of factors including various display properties (for example, pixel density, brightness, contrast), lens properties (for example, chromatic aberration), and text/font properties (for example, the specific font characteristics like thickness, serifs, etc., color of font, color of background).  
+Optimal text legibility can help reduce eye strain and maintain user comfort, especially in applications or scenarios that require users to read while in an HMD. Text legibility depends on a variety of factors including various display properties (for example, pixel density, brightness, contrast), lens properties (for example, chromatic aberration), and text/font properties (for example, the specific font characteristics like weight, spacing, serifs, etc., color of font, color of background).  
 
 In general, we recommend testing specific applications for legibility and making font sizes as large as is feasible for a comfortable experience. Below we offer general guidance as a starting point for development. Note that all font sizes are reported in degrees of [visual angle](https://en.wikipedia.org/wiki/Visual_angle) rather than specific physical sizes, which provides guidance for any distance within the zone of optimal hologram placement because it accounts for both the size of the text and the distance it appears to the viewer. 
 
@@ -127,18 +130,25 @@ For holographic devices, rendering black/dark text on a white/light background p
 
 #### HoloLens (1st gen)
 
-The minimum legible vertical font size is approximately 0.35° and a comfortable vertical font size is at least approximately 0.5° for reading content presented at a distance of 2m to the user. 
+The minimum legible font size (measuring from font baseline to ascender) is approximately 0.35° and a comfortable font size is at least approximately 0.5° for reading content presented at a distance of 2m to the user. 
 
 #### HoloLens 2
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+The minimum legible font size (measuring from font baseline to ascender) is at least approximately: 
+   - 0.4°-0.5° at 45cm (direct manipulation distance) 
+   - 0.35°-0.4° at 2.0m
+   
+The comfortably legible font size (measuring from font baseline to ascender) is at least approximately: 
+   - 0.65°-0.8° at 45cm (direct manipulation distance)
+   - 0.6°-0.75° at 2.0m
+
+Note that font sizes need to be slightly larger for text at direct manipulation distances because of the vergence-accommodation conflict described above (users' eyes are accommodating at a distance of 2.0m on the HoloLens display, so content rendered at, e.g., 45cm may appear more blurry to users). 
 
 ### Guidance for immersive devices
 
-Immersive devices generally have higher contrast ratios due to the complete occlusion of the outside environment, but have lower effective pixel density in part because of the magnification of the lenses in front of the displays. 
+Immersive devices generally have higher contrast ratios due to the complete occlusion of the outside environment, but may have lower effective pixel density in part because of the magnification of the lenses in front of the displays. 
 
-For Windows Mixed Reality immersive HMDs, the minimum legible vertical font size is approximately 0.7-0.9° and a comfortable vertical font size is approximately 1.0° for reading content presented at a distance of 2m to the user.
+For Windows Mixed Reality immersive HMDs, the minimum legible vertical font size (measuring from font baseline to ascender) is approximately 0.7-0.9° and a comfortable vertical font size is approximately 1.0° for reading content presented at a distance of 2m to the user.
 
 ## Gaze direction
 
@@ -159,6 +169,6 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 ## See also
 * [Gaze](gaze.md)
 * [Hologram stability](hologram-stability.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
-* [Holographic Frame](holographic-frame.md)
+* [Instinctual interactions](interaction-fundamentals.md)
+* [Holographic frame](holographic-frame.md)
 * [Calibration](calibration.md)
