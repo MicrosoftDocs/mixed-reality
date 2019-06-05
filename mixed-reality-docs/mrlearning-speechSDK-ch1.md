@@ -16,14 +16,14 @@ Objectives:
 
 1. Start Unity and create a new project. Enter the project name “Speech SDK Learning Module.” Choose a location for where to save your project. Then click "create project."
 
-![Module2Chapter3step1im](C:images/module4Chapter1Step1im.PNG)
+![Module2Chapter3step1im](images/module4Chapter1Step1im.PNG)
 
 > note: ensure that the template is set to "3D."
 
 2. Download the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC1/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC1.unitypackage) Unity package and save it to a folder on your PC. Import the package into your Unity project. For more detailed instructions on how to do this, please see [base module lesson 1](link for base lesson). 
 
 
-### ![Module2Chapter3step3im](C:/Users/jerem/OneDrive/Documents/GitHub/mixed-reality/mixed-reality-docs/images/Module2chapter3step3im.png)Import the Speech SDK
+### Import the Speech SDK
 
 1. Download the [Speech SDK](https://aka.ms/csspeech/unitypackage) for Unity asset package.
 2. Import the Speech SDK package by clicking on Assets>Import>Custom Package. Find the Speech SDK package downloaded in Step 1 and open it to begin the importing process.
