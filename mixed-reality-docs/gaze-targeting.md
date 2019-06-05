@@ -9,6 +9,25 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
 ---
 
 
+# Gaze and dwell
+There are lots of different ways to confirm a _commit_ such as combining gaze with _voice_ or _hand gestures_.
+There are several user scenarios though, in which users' hands may either be busy or cannot be tracked (e.g., factory workers with oversized heavy duty gloves). 
+Voice input may also not be available due to user preferences, social context or loud environments.
+As a fallback solution another option to perform a _commit_ is simply to keep staring at a UI element which we refer to as _dwell_.
+A _dwell_ can be performed with either head or eye gaze. 
+The idea is simple and can be broken down in the following phases: 
+1. User starts gazing at a holographic button
+
+2. After a brief onset delay (e.g., 150 ms) some visual feedback animation is started. The onset delay is used to avoid overwhelming the user by immediately popping up feedback all the time.
+    - For _eye gaze_, we recommend the following for the design of the visual dwell feedback:
+      - **Blend it**: Smoothly blend in the feedback from barely visible at first to fully opaque. This makes the feedback less distracting and overwhleming and nicely aligns with the confidence that the system has that the user really wants to engage with this button.
+      - **Pull it in**: Create a visual feedback than decreases in size and moves towards the center of the target, pulling in the user's visual attention. 
+
+3. After a pre-defined dwell duration (e.g., 800 ms), the dwell completes and an associated event is triggered.
+    - Provide some finalizing auditory or visual feedback to really bring home that the item got selected now.
+
+![Dwell states](images/eyes_dwellstate_recommendation.png)
+
 
 # Gaze targeting
 
@@ -29,7 +48,7 @@ To enable a user to work with an experience successfully, the system's calculate
 </table>
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> More guidance specific to HoloLens 2 [coming soon](index.md).
 
 ## Target sizing and feedback
 
@@ -78,5 +97,5 @@ When determining which nearby interactive elements to give focus to, provide a b
 
 ## See also
 * [Gestures](gestures.md)
-* [Voice design](voice-design.md)
+* [Voice commanding](voice-design.md)
 * [Cursors](cursors.md)

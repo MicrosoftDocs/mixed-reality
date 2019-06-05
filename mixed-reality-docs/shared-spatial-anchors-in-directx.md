@@ -16,13 +16,13 @@ A shared experience is one where multiple users, each with their own HoloLens, i
 
 ## Azure Spatial Anchors
 
-You can use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) to create durable cloud-backed spatial anchors, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
+You can use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create durable cloud-backed spatial anchors, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
 
-You can also use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
+You can also use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
 
-To get started building shared experiences in your HoloLens app, try out the 5-minute [Azure Spatial Anchors HoloLens quickstart](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens).
+To get started building shared experiences in your HoloLens app, try out the 5-minute <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure Spatial Anchors HoloLens quickstart</a>.
 
-Once you're up and running with Azure Spatial Anchors, you can then [create and locate anchors on HoloLens](https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt).  Walkthroughs are available for [Android and iOS](https://docs.microsoft.com/azure/spatial-anchors/create-locate-anchors-overview) as well, enabling you to share the same anchors on all devices.
+Once you're up and running with Azure Spatial Anchors, you can then <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">create and locate anchors on HoloLens</a>.  Walkthroughs are available for <a href="https://docs.microsoft.com/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android and iOS</a> as well, enabling you to share the same anchors on all devices.
 
 ## Local anchor transfers
 
@@ -30,5 +30,5 @@ In situations where you cannot use Azure Spatial Anchors, [local anchor transfer
 
 ## See also
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-* [Azure Spatial Anchors SDK for HoloLens](https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/)
+* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">Azure Spatial Anchors SDK for HoloLens</a>

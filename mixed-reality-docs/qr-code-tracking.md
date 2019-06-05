@@ -12,6 +12,9 @@ keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, q
 
 QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker in the headset driver, the headset scans for QR codes and they are reported to interested apps. This feature is only available as of the [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md).
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Device support
 
 <table>
@@ -168,7 +171,7 @@ The QRTracking plugin exposes the APIs for QR code tracking. To use the plugin, 
 You can find an example for how to use the QR Tracking API in the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker).
 
 MRTK has implemented the needed scripts to simpilify the QR tracking usage. All necessary assets to develop QR tracking apps are in the "QRTracker" folder. There are two scenes: the first is a sample to simply show details of the QR codes as they are detected, and the second demonstrates how to use the coordinate system attached to the QR code to display holograms.
-There is a prefab "QRScanner" which added all the necessary scrips to the scenes to use QRCodes. The script QRCodeManager is a singileton class that implements the QRCode API you can add it to you scene. The scripts "AttachToQRCode" is used to attach holograms to the QR Code coodridnate systems, this script can be added to any of your holograms. The "SpatialGraphCoordinateSystem" shows how to use the QRCode coordinate system. These scripts can be used as is in your project scenes or you can write your own directly using the plugin as described above.
+There is a prefab "QRScanner" which added all the necessary scripts to the scenes to use QRCodes. The script QRCodeManager is a singleton class that implements the QRCode API. This needs to be added to your scene. The script "AttachToQRCode" is used to attach holograms to the QR Code coordinate systems, this script can be added to any of your holograms. The "SpatialGraphCoordinateSystem" shows how to use the QRCode coordinate system. These scripts can be used as-is in your project scenes or you can write your own directly using the plugin as described above.
 
 ### Implementing QR code tracking in Unity without MRTK
 

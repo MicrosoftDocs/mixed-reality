@@ -5,6 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: coordinate system, spatial coordinate system, world-scale, world, scale, position, orientation, anchor, spatial anchor, world-locked, world-locking, persistence, sharing
 ---
 
@@ -16,8 +17,8 @@ A spatial anchor represents an important point in the world that the system shou
 
 You can also persist and share spatial anchors across app sessions and across devices:
 * By saving local spatial anchors to disk and loading them back later, your app can reason about the same location in the real world across multiple app sessions on a single HoloLens device.
-* By using [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) to create a cloud anchor, your app can share a spatial anchor across multiple HoloLens, iOS and Android devices. By having each device render a hologram using the same spatial anchor, all users will see the hologram appear at the same place in the real world.  This allows for real-time shared experiences.
-* You can also use [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
+* By using <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create a cloud anchor, your app can share a spatial anchor across multiple HoloLens, iOS and Android devices. By having each device render a hologram using the same spatial anchor, all users will see the hologram appear at the same place in the real world.  This allows for real-time shared experiences.
+* You can also use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
 
 For standing-scale or room-scale experiences for tethered desktop headsets that will stay within a 5-meter diameter, you can usually just use the [stage frame of reference](coordinate-systems.md#stage-frame-of-reference) instead of spatial anchors, providing you a single coordinate system in which to render all content. However, if your app intends to let users wander beyond 5 meters on HoloLens, perhaps operating throughout an entire floor of a building, you'll need spatial anchors to keep content stable.
 
@@ -72,7 +73,7 @@ For cloud spatial anchors, your storage can scale as your scenario requires.  Yo
 ## See also
 * [Coordinate systems](coordinate-systems.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Persistence in Unity](persistence-in-unity.md)
 * [Spatial anchors in DirectX](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [Case study - Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)

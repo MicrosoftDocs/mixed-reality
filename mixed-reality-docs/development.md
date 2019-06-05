@@ -6,6 +6,7 @@ author: grbury
 ms.author: grbury
 ms.date: 02/12/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, directx
 ---
 
@@ -33,7 +34,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                             <a href="install-the-tools.md">Install the tools</a>
                         </p>
                         <p>
-                            <a href="holograms-100.md">Tutorials and sample apps</a>
+                            <a href="mrlearning-base-ch1.md">MR learning: HoloLens 2 and MRTK v2</a>
                         </p>
                     </div>
                 </div>
@@ -127,10 +128,10 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                     <div class="cardText">
                         <h3>Porting guides</h3>
                         <p>
-                            <a href="mrtk-porting-guide.md">Updating to the latest Mixed<br>Reality Toolkit (MRTK)</a>
+                            <a href="mrtk-porting-guide.md">Updating apps to HoloLens 2<br>from HoloLens (1st gen)</a>
                         </p>
                         <p>
-                            HoloLens (1st gen) to HoloLens 2<br>- coming soon!
+                            <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html">Mixed Reality Toolkit (MRTK)<br>API porting guide</a>
                         </p>
                         <p>
                             <a href="porting-guides.md">Immersive headset apps</a>
@@ -152,7 +153,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                     <div class="cardText">
                         <h3>Development fundamentals</h3>
                         <p>
-                            <a href="Interaction-fundamentals.md">Interactions</a>
+                            <a href="Interaction-fundamentals.md">Instinctual interactions</a>
                         </p>
                         <p>
                             <a href="rendering.md">Holographic rendering</a>

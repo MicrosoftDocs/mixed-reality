@@ -12,9 +12,12 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 
 # Add holographic remoting
 
+## HoloLens 2
+
 > [!NOTE]
 > More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
 
+HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2.  This will require a new version of the Holographic Remoting NuGet package that is not publicly available yet.  If an application using the HoloLens NuGet package attempts to connect to the Holographic Remoting Player on HoloLens 2, the connection will fail.  Watch this page for updates once the HoloLens 2 NuGet package is available.
 
 ## Add holographic remoting to your desktop or UWP app
 
@@ -23,6 +26,9 @@ This page describes how to add Holographic Remoting to a desktop or UWP app.
 Holographic remoting allows your app to target a HoloLens with holographic content hosted on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources and making it possible to integrate remote [immersive views](app-views.md) into existing desktop PC software. A remoting host app receives an input data stream from a HoloLens, renders content in a virtual immersive view, and streams content frames back to HoloLens. The connection is made using standard Wi-Fi. To use remoting, you will use a NuGet package to add holographic remoting to your desktop or UWP app, and write code to handle the connection and to render in an immersive view. Helper libraries are included in the code sample that simplify the task of handling the device connection.
 
 A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real-time.
+
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
 
 ### Get the remoting NuGet packages
 
