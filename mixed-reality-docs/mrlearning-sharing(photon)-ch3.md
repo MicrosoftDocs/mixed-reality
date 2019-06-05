@@ -12,6 +12,8 @@ keywords: mixed reality, unity, tutorial, hololens
 
 1. Like step 12 from the previous lesson, in the "prefabs" folder in the project panel, the next step is to drag and drop the "NetworkLobby" prefab in to the hierarchy. 
 
+   TO DO: It will be good if we mention the lesson number like Lesson 2.
+
 ![Module3Chapter3step1im](images/module3chapter3step1im.PNG)
 
 2. When you open up the parent prefab, "NetworkLobby," you should see a child prefab, "NetworkRoom." With it selected, go into the inspector panel and click "Add Component." Search for "PhotonView" and add the component.

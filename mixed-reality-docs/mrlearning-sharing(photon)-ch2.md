@@ -10,7 +10,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # **Setting Up the Unity Project** 
 
-1. Download the new asset needed to set up Photon in Unity by clicking [here.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC1-Refresh/Microsoft.MixedReality.Toolkit.Unity.Examples-v2.0.0-RC1-Refresh.unitypackage)
+1. Download the new asset needed to set up the Photon in Unity by clicking [here.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC1-Refresh/Microsoft.MixedReality.Toolkit.Unity.Examples-v2.0.0-RC1-Refresh.unitypackage)
 2. In Unity, click on the assets menu and select "Import Package," then click on "Custom Package."
 
 ![Module3Chapter2step2im](images/module3chapter2step2im.PNG)
@@ -19,7 +19,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 ![Module3Chapter2step3im](images/module3chapter2step3im.PNG)
 
-> note: The downloaded package will be in your local download directory folder. The image above does not portray where you will find the package.
+> note: The downloaded package will be in your local folder where you have saved the file. The image above does not portray where you will find the package.
 
 4. Create a new scene (this can be done using control/command+N or by clicking "file" and selecting "new scene."). Save the scene as "HLSharedProjectMain."
 
@@ -62,8 +62,9 @@ keywords: mixed reality, unity, tutorial, hololens
    
          *** Might need a screenshot here***
    
-   11. Just like step 2, the next step would be to import another custom package called "Lesson2" which can be downloaded [here.] (no link for this download yet) Import that package.
-
+   11. Just like step 2, the next step would be to import another custom package called "Lesson2" which can be downloaded [here.] *
+    **(no link for this download yet)*** Import that package.
+   
    ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
    
    12. Now, in the project panel, go to the "prefabs" folder, since in next few steps you will be implementing a few prefabs into the scene. In the "prefabs" folder, click and drag the prefab, "DebugWindow" into the hierarchy. Once finished, save the project (click file, then save, or control+S)
