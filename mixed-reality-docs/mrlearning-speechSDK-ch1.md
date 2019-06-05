@@ -28,7 +28,7 @@ Objectives:
 ![Module4Chapter1step4im](C:images/module4Chapter1Step4im.png)
 
 5. Download the [Lunarcom](https://github.com/levilais/Speech-SDK-Module/raw/master/Speech SDK Module/Lunarcom.unitypackage) asset package. Now do the same thing as in step 3, but with the Lunarcom asset package instead of the Speech SDK package. 
-6. In the next pop-up window, click “Import” to begin importing the Lunarcom. Just like before, ensure all items are checked, just like the image shown in step 4.
+6. In the next pop-up window, click “Import” to begin importing the "Lunarcom". Just like before, ensure all items are checked, just like the image shown in step 4.
 
 7. Configure the Mixed Reality Toolkit (MRTK). To do this, click on the "Mixed Reality Toolkit" panel in the top of your window, and then select "Add to Scene and Configure."
 
@@ -40,7 +40,7 @@ Objectives:
 
 ![Module4Chapter1step9im](C:images/module4Chapter1Step9im.png)
 
-9. With the “MixedRealityToolkit" object selected in your hierarchy, click "copy and customize"in the inspector panel.
+9. With the “MixedRealityToolkit" object selected in your hierarchy, click "copy and customize" in the inspector panel.
 
 10. Also in the inspector panel, disable the diagnostics system by unchecking the box to the right of "enable diagnostics system."
 
@@ -50,7 +50,7 @@ Objectives:
 
 ![Module4Chapter1step11im](C:images/module4Chapter1Step11im.png)
 
-12. Select the "Lunarcom_Base" object in your hierarchy and ensure that the position is set to x=0, y=0, and z=0, as well as the rotation set to x=0, y=0 and z=0. Set the scale to read x=0.008, y=0.008, and z=0.01.
+12. Select the "Lunarcom_Base" object in your hierarchy and ensure that the position is set to x=0, y=0, and z=0, as well as the rotation set to x=0, y=0, and z=0. Set the scale to read x=0.008, y=0.008, and z=0.01.
 
 ![Module4Chapter1step12im](C:images/module4Chapter1Step12im.PNG)
 
@@ -64,10 +64,10 @@ Objectives:
 
 ![Module4Chapter1step15im](C:images/module4Chapter1Step15im.png)
 
-16. In your hierarchy, expand the click the "Lunarcom_Base" object by clicking the arrow to the left of it, then do the same for its child object, "Terminal."
+16. In your hierarchy, expand the "Lunarcom_Base" object by clicking the arrow to the left of it, then do the same for its child object, "Terminal."
 
 17. While "Lunarcom_Base" is selected, click and drag “Lunarcom Text” from the hierarchy to the "Output Text" slot in the "LunarcomController" component in the inspector panel.
-18. Now do the same thing with the "Terminal" object into the "terminal" slot, and the "Connection Light" object to the "Connection Light Controller" slot.
+18. Now do the same thing with the "Terminal" object into the "terminal" slot and the "Connection Light" object to the "Connection Light Controller" slot.
 
 ![Module4Chapter1step18im](C:images/module4Chapter1Step18im.png)
 
@@ -85,11 +85,9 @@ Objectives:
 
 22. In the "wake word" slot, type in "Activate Terminal." Also, in the "dismiss word" slot, type in "Dismiss Terminal."
 
-
-
 ## Congratulations
 
-You've officially set up vocal recognition in your application! Now, run the application to ensure all functions are working properly. Start with saying the wake word you typed in in step 22. Then, press the microphone button and begin speaking. Press the microphone button a second time to stop the recognition. Once everything checks out, you're good to move on to Lesson 2!
+You've officially set up vocal recognition in your application! Now, run the application to ensure all functions are working properly. Start with saying the wake word you typed in step 22. Then, press the microphone button and begin speaking. Press the microphone button a second time to stop the recognition. Once everything checks out, you're good to move on to Lesson 2!
 
 [Next Lesson: Speech SDK Lesson 2](placeholderlink)
 
