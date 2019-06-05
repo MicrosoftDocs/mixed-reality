@@ -27,7 +27,7 @@ Objectives:
 
 ![Module4Chapter1step4im](images/module4chapter1step4im.PNG)
 
-5. Download the [Lunarcom](https://github.com/levilais/Speech-SDK-Module/raw/master/Speech SDK Module/Lunarcom.unitypackage) asset package. Now do the same thing as in step 3, but with the Lunarcom asset package instead of the Speech SDK package. 
+5. Download the [Lunarcom](https://github.com/levilais/Speech-SDK-Module/raw/master/Speech%20SDK%20Module/Lunarcom.unitypackage) asset package. Now do the same thing as in step 3, but with the Lunarcom asset package instead of the Speech SDK package. 
 6. In the next pop-up window, click “Import” to begin importing the Lunarcom. Just like before, ensure all items are checked, just like the image shown in step 4.
 
 7. Configure the Mixed Reality Toolkit (MRTK). To do this, click on the "Mixed Reality Toolkit" panel in the top of your window, and then select "Add to Scene and Configure."
