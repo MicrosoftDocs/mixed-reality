@@ -23,9 +23,60 @@ See the [MRTK documentation portal](https://microsoft.github.io/MixedRealityTool
 
 ## Feature Areas
 
-| <img src="images/MRTK_Icon_InputSystem.png" alt="Input system" title="Input System" width="105"> Input System | <img src="images/MRTK_Icon_HandTracking.png" alt="Hand Tracking (HoloLens 2)" title="Hand Tracking (HoloLens 2)" width="105"> Hand Tracking (HoloLens 2) | <img src="images/MRTK_Icon_EyeTracking.png" alt="Eye Tracking (HoloLens 2)" title="Eye Tracking (HoloLens 2)" width="105"><br> Eye Tracking (HoloLens 2) | <img src="images/MRTK_Icon_VoiceCommand.png" alt="Voice Commanding" title="Voice Commanding" width="105"> Voice Commanding | <img src="images/MRTK_Icon_GazeSelect.png" alt="Gaze + Select (HoloLens (1st gen))" title="Gaze + Select (HoloLens (1st gen))" width="105"><br>Gaze + Select (HoloLens (1st gen)) | <img src="images/MRTK_Icon_Teleportation.png" alt="Teleportation" title="Teleportation" width="105"> Teleportation |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| <img src="images/MRTK_Icon_UIControls.png" alt="UI Controls" title="UI Controls" width="105"> UI Controls | <img src="images/MRTK_Icon_Solver.png" alt="Solver and Interactions" title="Solver and Interactions" width="105"> Solver and Interactions | <img src="images/MRTK_Icon_ControllerVisualization.png" alt="Controller Visualization" title="Controller Visualization" width="105"> Controller Visualization | <img src="images/MRTK_Icon_SpatialUnderstanding.png" alt="Spatial Understanding" title="Spatial Understanding" width="105"> Spatial Understanding | <img src="images/MRTK_Icon_Diagnostics.png" alt="Diagnostic Tool" title="Diagnostic Tool" width="105"> Diagnostic Tool | <img src="images/MRTK_Icon_StandardShader.png" alt="MRTK Standard Shader" title="MRTK Standard Shader" width="105"> MRTK Standard Shader |
+:::row:::
+    :::column:::
+    <img src="images/MRTK_Icon_InputSystem.png" alt="Input system" title="Input System" width="105"> 
+    Input System 
+    :::column-end:::
+    :::column:::
+    <img src="images/MRTK_Icon_HandTracking.png" alt="Hand Tracking (HoloLens 2)" title="Hand Tracking (HoloLens 2)" width="105"> 
+    Hand Tracking (HoloLens 2)
+    :::column-end:::
+    :::column:::
+    <img src="images/MRTK_Icon_EyeTracking.png" alt="Eye Tracking (HoloLens 2)" title="Eye Tracking (HoloLens 2)" width="105">
+    Eye Tracking (HoloLens 2)
+    :::column-end:::
+        :::column:::
+    <img src="images/MRTK_Icon_VoiceCommand.png" alt="Voice Commanding" title="Voice Commanding" width="105"> 
+    Voice Commanding
+    :::column-end:::
+        :::column:::
+    <img src="images/MRTK_Icon_GazeSelect.png" alt="Gaze + Select (HoloLens (1st gen))" title="Gaze + Select (HoloLens (1st gen))" width="105">
+    Gaze + Select (HoloLens (1st gen))
+    :::column-end:::
+        :::column:::
+    <img src="images/MRTK_Icon_Teleportation.png" alt="Teleportation" title="Teleportation" width="105"> 
+    Teleportation
+    :::column-end:::
+:::row-end:::
+
+
+:::row:::
+    :::column:::
+    <img src="images/MRTK_Icon_UIControls.png" alt="UI Controls" title="UI Controls" width="105"> 
+    UI Controls
+    :::column-end:::
+    :::column:::
+    <img src="images/MRTK_Icon_Solver.png" alt="Solver and Interactions" title="Solver and Interactions" width="105"> 
+    Solver and Interactions
+    :::column-end:::
+    :::column:::
+    <img src="images/MRTK_Icon_ControllerVisualization.png" alt="Controller Visualization" title="Controller Visualization" width="105"> 
+    Controller Visualization
+    :::column-end:::
+        :::column:::
+    <img src="images/MRTK_Icon_SpatialUnderstanding.png" alt="Spatial Understanding" title="Spatial Understanding" width="105"> 
+    Spatial Understanding
+    :::column-end:::
+        :::column:::
+    <img src="images/MRTK_Icon_Diagnostics.png" alt="Diagnostic Tool" title="Diagnostic Tool" width="105"> 
+    Diagnostic Tool
+    :::column-end:::
+        :::column:::
+    <img src="images/MRTK_Icon_StandardShader.png" alt="MRTK Standard Shader" title="MRTK Standard Shader" width="105"> 
+    MRTK Standard Shader
+    :::column-end:::
+:::row-end:::
 
 ## UI and Interaction Building blocks
 
