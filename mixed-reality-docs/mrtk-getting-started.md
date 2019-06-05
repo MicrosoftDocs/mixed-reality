@@ -21,7 +21,7 @@ The MRTK v2 with Unity is an open source cross-platform development kit for mixe
 
 See the [MRTK documentation portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) to learn more.
 
-## Feature Areas
+## Feature areas
 
 :::row:::
     :::column:::
@@ -82,15 +82,113 @@ See the [MRTK documentation portal](https://microsoft.github.io/MixedRealityTool
 
 |  <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html"><img src="images/MRTK_Button_Main.png" alt="Button" title="Button" width="250"><br>Button <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html"><img src="images/MRTK_BoundingBox_Main.png" alt="Bounding Box" title="Bounding Box" width="250"><br>Bounding Box <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html"><img src="images/MRTK_Manipulation_Main.png" alt="Manipulation Handler" title="Manipulation Handler" width="250"><br>Manipulation Handler <a/> |
 |:--- | :--- | :--- |
-| A button control which supports various input methods including HoloLens 2's articulated hand | Standard UI for manipulating objects in 3D space | Script for manipulating objects with one or two hands |
-|  <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Slate.html"><img src="images/MRTK_Slate_Main.png" alt="Slate" title="Slate" width="250"><br>Slate <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_SystemKeyboard.html"><img src="images/MRTK_SystemKeyboard_Main.png" alt="System Keyboard" title="System Keyboard" width="250"><br>System Keyboard <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html"><img src="images/InteractableExamples.png" alt="Interactable" title="Interactable" width="250"><br>Interactable <a/> |
-| 2D style plane which supports scrolling with articulated hand input | Example script of using the system keyboard in Unity  | A script for making objects interactable with visual states and theme support |
-|  <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html"><img src="images/MRTK_Solver_Main.png" alt="Solver" title="Solver" width="250"><br>Solver <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html"><img src="images/MRTK_ObjectCollection_Main.png" alt="Object Collection" title="Object Collection" width="250"><br>Object Collection <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Tooltip.html"><img src="images/MRTK_Tooltip_Main.png" alt="Tooltip" title="Tooltip" width="250"><br>Tooltip <a/> |
-| Various object positioning behaviors such as tag-along, body-lock, constant view size and surface magnetism | Script for lay out an array of objects in a three-dimensional shape | Annotation UI with flexible anchor/pivot system which can be used for labeling motion controllers and object. |
-|  <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_AppBar.html"><img src="images/MRTK_AppBar_Main.png" alt="App Bar" title="App Bar" width="250"><br>App Bar <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Pointers.html"><img src="images/MRTK_Pointer_Main.png" alt="Pointers" title="Pointers" width="250"><br>Pointers <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_FingertipVisualization.html"><img src="images/MRTK_FingertipVisualization_Main.png" alt="Fingertip Visualization" title="Fingertip Visualization" width="250"><br>Fingertip Visualization <a/> | 
-| UI for Bounding Box's manual activation | Learn about various types of pointers | Visual affordance on the fingertip which improves the confidence for the direct interaction | 
-|  <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html"><img src="images/mrtk_et_targetselect.png" alt="Eye Tracking: Target Selection" title="Eye Tracking: Target Selection" width="250"><br>Eye Tracking: Target Selection <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html"><img src="images/mrtk_et_navigation.png" alt="Eye Tracking: Navigation" title="Eye Tracking: Navigation" width="250"><br>Eye Tracking: Navigation <a/> | <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html"><img src="images/mrtk_et_heatmaps.png" alt="Eye Tracking: Heat Map" title="Eye Tracking: Heat Map" width="250"><br>Eye Tracking: Heat Map <a/> |
-| Combine eyes, voice and hand input to quickly and effortlessly select holograms across your scene | Learn how to auto scroll text or fluently zoom into focused content based on what you are looking at| Examples for logging, loading and visualizing what users have been looking at in your app |
+    
+
+:::row:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html"><img src="images/MRTK_Button_Main.png" alt="Button" title="Button" width="250">
+    **Button**
+    A button control which supports various input methods including HoloLens 2's articulated hand
+    <a/>
+    :::column-end:::
+    :::column:::
+<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html"><img src="images/MRTK_BoundingBox_Main.png" alt="Bounding Box" title="Bounding Box" width="250">
+    **Bounding Box**
+    Standard UI for manipulating objects in 3D space
+    <a/>
+    :::column-end:::
+    :::column:::
+<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html"><img src="images/MRTK_Manipulation_Main.png" alt="Manipulation Handler" title="Manipulation Handler" width="250">
+    **Manipulation Handler** 
+    Script for manipulating objects with one or two hands
+    <a/>
+    :::column-end:::
+:::row-end:::    
+    
+:::row:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Slate.html"><img src="images/MRTK_Slate_Main.png" alt="Slate" title="Slate" width="250">
+    **Slate** 
+    2D style plane which supports scrolling with articulated hand input
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_SystemKeyboard.html"><img src="images/MRTK_SystemKeyboard_Main.png" alt="System Keyboard" title="System Keyboard" width="250">
+    **System Keyboard**
+    Example script of using the system keyboard in Unity
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html"><img src="images/InteractableExamples.png" alt="Interactable" title="Interactable" width="250">
+     **Interactable** 
+     A script for making objects interactable with visual states and theme support
+    <a/>
+    :::column-end:::
+:::row-end:::       
+
+:::row:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html"><img src="images/MRTK_Solver_Main.png" alt="Solver" title="Solver" width="250">
+    **Solver** 
+    Various object positioning behaviors such as tag-along, body-lock, constant view size and surface magnetism
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html"><img src="images/MRTK_ObjectCollection_Main.png" alt="Object Collection" title="Object Collection" width="250">
+    **Object Collection**
+    Script for lay out an array of objects in a three-dimensional shape 
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Tooltip.html"><img src="images/MRTK_Tooltip_Main.png" alt="Tooltip" title="Tooltip" width="250">  
+    **Tooltip**
+    Annotation UI with flexible anchor/pivot system which can be used for labeling motion controllers and object
+    <a/>
+    :::column-end:::
+:::row-end:::   
+        
+:::row:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_AppBar.html"><img src="images/MRTK_AppBar_Main.png" alt="App Bar" title="App Bar" width="250">
+    **App Bar**
+    UI for Bounding Box's manual activation
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Pointers.html"><img src="images/MRTK_Pointer_Main.png" alt="Pointers" title="Pointers" width="250">
+    **Pointers**
+    Learn about various types of pointers
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_FingertipVisualization.html"><img src="images/MRTK_FingertipVisualization_Main.png" alt="Fingertip Visualization" title="Fingertip Visualization" width="250">
+     **Fingertip Visualization**
+     Visual affordance on the fingertip which improves the confidence for the direct interaction
+    <a/>
+    :::column-end:::
+:::row-end:::   
+        
+:::row:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html"><img src="images/mrtk_et_targetselect.png" alt="Eye Tracking: Target Selection" title="Eye Tracking: Target Selection" width="250">
+    **Eye Tracking: Target Selection**
+    Combine eyes, voice and hand input to quickly and effortlessly select holograms across your scene
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html"><img src="images/mrtk_et_navigation.png" alt="Eye Tracking: Navigation" title="Eye Tracking: Navigation" width="250">
+    **Eye Tracking: Navigation**
+    Learn how to auto scroll text or fluently zoom into focused content based on what you are looking at
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html"><img src="images/mrtk_et_heatmaps.png" alt="Eye Tracking: Heat Map" title="Eye Tracking: Heat Map" width="250">
+    **Eye Tracking: Heat Map**
+    Examples for logging, loading and visualizing what users have been looking at in your app
+    <a/>
+    :::column-end:::
+:::row-end:::           
+
 
 ## Minimum Requirement for MRTK v2
 * Unity 2018.3.x
