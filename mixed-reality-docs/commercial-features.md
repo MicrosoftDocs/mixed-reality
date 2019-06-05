@@ -1,20 +1,20 @@
 ---
 title: Commercial features
-description: The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices.
-author: xerxesb85
-ms.author: xerxesb
-ms.date: 03/21/2018
+description: The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices.  HoloLens 2 are equipt with commercial features by default.
+author: scooley
+ms.author: scooley
+ms.date: 05/23/2019
 ms.topic: article
 keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
 ---
 
-
-
 # Commercial features
 
-The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices. Commercial features are included in the Windows operating system, but they are enabled by a license. In nearly all cases, the license is enabled by Microsoft Device Management when HoloLens enrolls in an organization. Contact your local Microsoft account manager to purchase the Microsoft HoloLens Commercial Suite.
+The Microsoft HoloLens Commercial Suite includes features that make it easier for businesses to manage HoloLens devices.
 
-&nbsp;
+HoloLens came with two licensing options, the developer license and a commercial license.  Upgrade from the developer liense to a commercial license to unlock HoloLens's commercial capabilitis.  Contact your local Microsoft account manager to purchase the Microsoft HoloLens Commercial Suite.
+
+**New in HoloLens 2** - HoloLens 2 all come with commercial features available on every device.
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
@@ -27,7 +27,7 @@ The Microsoft HoloLens Commercial Suite includes features that make it easier fo
 * **Mobile Device Management (MDM) for HoloLens.** Your IT department can manage multiple HoloLens devices simultaneously using solutions like Microsoft Intune. You will be able to manage settings, select apps to install and set security configurations tailored to your organization's need.
 
   ![Mobile Device Management on HoloLens provides enterprise grade device management across multiple devices.](images/201608-enterprisemanagement-400px.png)
-  
+   
 * **Windows Update for Business.** Controlled operating system updates to devices and support for long term servicing branch.
 * **Data security.** BitLocker data encryption is enabled on HoloLens to provide the same level of security protection as any other Windows device.
 * **Work access.** Anyone in your organization can remotely connect to the corporate network through virtual private network on a HoloLens. HoloLens can also access Wi-Fi networks that require credentials.
@@ -81,7 +81,7 @@ The Microsoft HoloLens Commercial Suite includes features that make it easier fo
 
 ## Enabling commercial features
 
-Commercial features like Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access are setup by an organization's IT admin. The [Windows IT Center for HoloLens](https://technet.microsoft.com/itpro/hololens/index) provides step by step instructions for device enrollment and installing apps from Microsoft Store for Business.
+Commercial features like Microsoft Store for Business, kiosk mode, and enterprise Wi-Fi access are setup by an organization's IT admin. The [Windows IT Center for HoloLens](https://docs.microsoft.com/hololens) provides step by step instructions for device enrollment and installing apps from Microsoft Store for Business.
 
 ## See also
 * [IT Pro Guide for HoloLens](https://technet.microsoft.com/itpro/hololens/index)
