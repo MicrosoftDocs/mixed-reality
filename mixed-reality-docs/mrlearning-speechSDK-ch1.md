@@ -85,6 +85,8 @@ Objectives:
 
 22. In the "wake word" slot, type in "Activate Terminal." Also, in the "dismiss word" slot, type in "Dismiss Terminal."
 
+![Module4Chapter1step18im](C:images/module4Chapter1Step22im.PNG)
+
 
 
 ## Congratulations
