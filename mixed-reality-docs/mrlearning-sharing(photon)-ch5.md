@@ -18,23 +18,23 @@ keywords: mixed reality, unity, tutorial, hololens
 
 3. Just like some of the previous lessons, import a new custom package that you can get [here.](placeholderlink)
 
-![Module3Chapter5step3im](images/Module3chapter5step3im.PNG)
+![Module3Chapter5step3im](images/module3chapter5step3im.PNG)
 
 4. Once it's imported, grab the newly updated table anchor (from the unity package imported in the previous step) from the "prefabs" folder in the project panel and drop it into the parent object "MixedRealityPlayspace."
 
-![Module3hapter5step4im](images/Module3chapter5step4im.PNG)
+![Module3hapter5step4im](images/module3chapter5step4im.PNG)
 
 5. Expand the "MixedRealityPlayspace" parent object, then the "TableAnchor" object, and expand the "buttons" object as well. 
 
-![Module3hapter5step5im](images/Module3chapter5step5im.PNG)
+![Module3hapter5step5im](images/module3chapter5step5im.PNG)
 
 6. Now in the hierarchy, select the "ShareAzureAnchorButton" and move your attention to the inspector panel. Scroll down to the dropdown menu shown in the image below, and select "AnchorModuleScript" and click on "ShareAnchorNetework()."
 
-![Module3hapter5step6im](images/Module3chapter5step6im.PNG)
+![Module3hapter5step6im](images/module3chapter5step6im.PNG)
 
 7. Much like step 6, select the "GetAzureAnchorButton" and move your attention back to the inspector panel. Scroll down to the dropdown menu shown in the image below, and select "AnchorModuleScript" and click on "GetSharedAnchorNetwork()." Then save.
 
-![Module3hapter5step7im](images/Module3chapter5step7im.PNG)
+![Module3hapter5step7im](images/module3chapter5step7im.PNG)
 
 
 
