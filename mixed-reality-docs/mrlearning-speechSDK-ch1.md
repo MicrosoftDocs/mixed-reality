@@ -16,7 +16,7 @@ Objectives:
 
 1. Start Unity and create a new project. Enter the project name “Speech SDK Learning Module.” Choose a location for where to save your project. Then click "create project."
 
-![Module2Chapter3step1im](images/module4Chapter1Step1im.PNG)
+![Module2Chapter3step1im](images/module4chapter1step1im.PNG)
 
 > note: ensure that the template is set to "3D."
 
