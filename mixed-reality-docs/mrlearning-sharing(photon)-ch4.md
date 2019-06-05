@@ -16,7 +16,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 ![Module3Chapter4tep2im](images\module3chapter4step2im.PNG)
 
-3. Import a new custom package (like steps __ and __ from the previous lessons) and import the [LunarModule.unitypackage](linkforModule1 lesson with the lunar module) and the [NetworkLobbyReplacement.unitypackage.](linkforNetworklobbyreplacement package here)
+3. Import a new custom package (like step 2 from the previous lesson 2) and import the [LunarModule.unitypackage](linkforModule1 lesson with the lunar module) and the [NetworkLobbyReplacement.unitypackage.](linkforNetworklobbyreplacement package here)
 
 ![Module3Chapter4step3im](images/module3chapter4step3im.PNG)
 

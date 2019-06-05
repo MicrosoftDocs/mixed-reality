@@ -26,7 +26,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 ![Module3Chapter3step4im](images/module3chapter3step4im.PNG)
 
-5. Scale the sphere down to x=0.06, y=o.o6, ad z=0.06.
+5. Scale the sphere down to x=0.06, y=0.06, ad z=0.06.
 
 ![Module3hapter3step5im](images/module3chapter3step5im.PNG)
 
