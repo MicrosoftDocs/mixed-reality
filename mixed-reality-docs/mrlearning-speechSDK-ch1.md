@@ -21,7 +21,7 @@ Objectives:
 
 3. Download the [Speech SDK](https://aka.ms/csspeech/unitypackage) for Unity asset package. Import the Speech SDK package by clicking on "assets," selecting "import package," then selecting "custom package." Find the Speech SDK package downloaded earlier and open it to begin the importing process.
 
-![Module4Chapter1step3im](images/module4Chapter1Step3im.png)
+![Module4Chapter1step3im](images/module4chapter1step3im.PNG)
 
 4. In the next pop-up window, click “Import” to begin importing the Speech SDK package. Ensure all items are checked, as shown in the image below.
 
