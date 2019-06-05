@@ -163,6 +163,27 @@ See the [MRTK documentation portal](https://microsoft.github.io/MixedRealityTool
     <a/>
     :::column-end:::
 :::row-end:::   
+
+:::row:::
+    :::column:::
+    <a href="https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_Sliders.md"><img src="images/MRTK_UX_Slider_Main.jpg" alt="Slider" title="Slider" width="250"><br>
+    **Slider**<br>
+    Slider UI for adjusting values supporting direct hand tracking interaction
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md"><img src="images/MRTK_StandardShader.jpg" alt="MRTK Standard Shader" title="MRTK Standard Shader" width="250"><br>
+    **MRTK Standard Shader**<br>
+    MRTK's Standard shader supports various Fluent design elements with performance
+    <a/>
+    :::column-end:::
+    :::column:::
+    <a href="https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_HandJointChaser.md"><img src="images/MRTK_HandJointChaser_Main.jpg" alt="Hand Joint Chaser" title="Hand Joint Chaser" width="250"><br>
+     **Hand Joint Chaser**<br>
+     Demonstrates how to use Solver to attach objects to the hand joints
+    <a/>
+    :::column-end:::
+:::row-end:::   
         
 :::row:::
     :::column:::
