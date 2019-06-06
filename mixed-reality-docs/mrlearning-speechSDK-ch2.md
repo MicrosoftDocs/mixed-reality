@@ -2,23 +2,23 @@
 
 In Lesson 2, we will add an Offline mode that will allow us to perform local speech-to-text translation when we are unable to connect to the Azure service and we will *simulate* a disconnected state.
 
-### Add the LunarcomOfflineRecognizer component to the Lunarcom
+1. Select the "Lunarcom_Base" object in the hierarchy and click “Add Component” in the inspector panel. Search for and select the "Lunarcom Offline Recognition."
 
-1. Select the Lunarcom_Base object in the hierarchy
-2. Click “Add Component” in the inspector
-3. Search for and select “LunarcomOfflineRecognizer”
-4. Click the dropdown in the “LunarcomOfflineRecognizer” and select “Enabled”
+![Module4Chapter2step1im](images/module4chapter2step1im.PNG)
 
-### Run and test the application
 
-1. Press the Play button in the Unity Editor
-2. *Notice: Because we’re offline, the Wake Word functionality has been disabled*
-3. Click the Microphone button to start recognition
-4. Begin speaking
-5. Press the Microphone button to stop recognition![img](https://lh4.googleusercontent.com/Ya4sIm54FA3FJ7kKUBh9D9-wmQumcDVPG9saumRJEpW9OHuAqNl9gUp6wfuk2DxHZlIYFdlulCIt1n2OjSnXYi6ZIw6uPu7_nCPzIVJw1knLxEZ5IYZ8eKYkeMmNJzcgxkyhOJg3)
-6. Press the Play button to stop the app
+
+2. Click the dropdown in the “LunarcomOfflineRecognizer” and select “Enabled.” This will program the project to act like the user doesn't have connection. 
+
+![Module4Chapter2step1im](images/module4chapter2step2im.PNG)
+
+3. Now, press play on the Unity Editor and test it. Press the microphone in the bottom left hand corner in the scene and begin speaking. 
+
+> note: because we’re offline, the Wake Word functionality has been disabled. So, you will have to physically click the microphone every time you wish to have your speech recognized while offline. 
 
 ## Congratulations
+
+The offline mode has been enabled! Now when you're away from any form of internet, you can still work on your project with Speech-SDK! 
 
 [Next Lesson: SpeechSDK Lesson 3](link placeholder)
 
