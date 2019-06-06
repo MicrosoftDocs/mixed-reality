@@ -19,69 +19,55 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 
 ## Important properties of the interactable object
 
-### Visual feedback
+### Visual cue
 
-In mixed reality, since the holographic objects are mixed with the real-world environment, it could be difficult to understand which objects are interactable. For any interactable objects in your experience, it is important to provide differentiated visual feedback for each input state. This helps the user understand which part of your experience is interactable and makes the user confident with consistent interaction method.
+Visual cues are sensory cues received by the eye in the form of light and processed by the visual system during visual perception. Since the visual system is dominant in many species, especially humans, visual cues are a large source of information in how the world is perceived.
 
-For any objects that user can interact with, we recommended to have different visual feedback for these three input states:
-* **Observation**: Default idle state of the object.
-* **Targeted**: When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
+In mixed reality, since the holographic objects are mixed with the real-world environment, it could be difficult to understand which objects are interactable. For any interactable objects in your experience, it is important to provide differentiated visual cue for each input state. This helps the user understand which part of your experience is interactable and makes the user confident with consistent interaction method.
+
+#### Far interactions
+
+For any objects that user can interact with gaze, hand ray, and motion controller's ray, we recommend to have different visual cue for these three input states:
+* **Default (Observation)**: Default idle state of the object.
+* **Targeted (Hover)**: When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
 * **Pressed**: When the object is pressed with air-tap gesture, finger press or motion controller's select button.
 
+You can use techniques such as highlighting or scaling to provide visual cue to the user’s input states. In Windows Mixed Reality, you can find the examples of visualizing different input states on Start menu and App Bar buttons. 
+
+![Holographic button](images/640px-interactibleobject-states.png)<br>
+*Example of visualizing observation state, targeted state, and pressed state*
+
 ![Holographic button](images/MRTK_InteractableState.png)<br>
-*Observation state, targeted state, and pressed state*
+*Observation state, targeted state, and pressed state on holographic button*
 
-In Windows Mixed Reality, you can find the examples of visualizing different input states on Start menu and App Bar buttons. You can use techniques such as highlighting or scaling to provide visual feedback to the user’s input states.
+#### Near(direct) interactions
 
-HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. We can provide additional visual feedback for the direct interactions based on the proximity to the hands. The [Button in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) shows this example.
+HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception sometimes it can be hard to tell how far away your hand is from an object, or whether you are touching. Providing a large number of visual cues to communicate the state of your system and in particular of your hands in relation to holograms.
 
-![Pressable button](images/MRTK_UX_Button.jpg)<br>
+Use visual feedback to communicate the following:
+* **Default (Observation)**: Default idle state of the object.
+* **Hover**: When hand is near a hologram, change visuals to communicate that hand is targeting hologram. 
+* **Distance and point of interaction** - As hand approaches hologram, design feedback to communicate the projected point of interaction, as well as how far from the object the finger is
+* **Contact Begin**: Change visuals (light, color) to communicate that touch has occured
+* **Grasped**: Change visuals (light, color) when the object is grasped.
+* **Contact End**: Change visuals (light, color) when touch has ended.
+
+![Pressable button](images/640px-interactibleobject-states-near.jpg)<br>
+*Example of visualizing near interaction states*
+
+The [Button in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) shows the example of visualizing different input interaction states.
 
 ![Pressable button](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
-
+*Example of pressable button in HoloLens 2*
 
 
 In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, we have created a series of Unity scripts and prefabs that will help you create Interactable objects. You can use these to create any type of object that the user can interact with, using these standard interaction states: observation, targeted and pressed. You can easily customize the visual design with your own assets. Detailed animations can be customized by either creating and assigning corresponding animation clips for the interaction states in the Unity's animation controller or using offset and scale. 
 
-### Audio feedback
-
-
+### Audio cue
 
 ### Speech command
 
 ### Input modality
-
-
-
-## Interactable object samples
-
-### Mesh button
-
-![Mesh button](images/640px-interactibleobject-meshbutton.jpg)
-
-These are examples using primitives and imported 3D meshes as Interactable objects. You can easily assign different scale, offset and color values to respond to each input interaction state.
-
-### Toolbar
-
-![Toolbar](images/640px-interactibleobject-toolbar.jpg)
-
-A toolbar is a widely used pattern in mixed reality experiences. It is a simple collection of buttons with additional behaviors such as [Billboarding and tag-along](billboarding-and-tag-along.md). This example uses a Billboarding and tag-along script from the MixedRealityToolkit. You can control detailed behaviors including distance, moving speed and threshold values.
-
-### Traditional button
-
-![Traditional button](images/640px-interactibleobject-traditionalbutton.jpg)
-
-This example shows a traditional 2D style button. Each input state has a slightly different depth and animation property.
-
-### Other examples
-
-![Push button](images/640px-interactibleobject-pushbutton.jpg)<br>
-*Push button*
-<br>
-![Real Life object](images/640px-interactibleobject-reallifeobject.jpg)<br>
-*Real life object*
-
-With HoloLens, you can leverage physical space. Imagine a holographic push button on a physical wall. Or how about a coffee cup on a real table? Using 3D models imported from modeling software, we can create an Interactable object that resembles real life object. Since it's a digital object, we can add magical interactions to it.
 
 ## Interactable object in Mixed Reality Toolkit
 You can find the [examples of Interactable object in Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
