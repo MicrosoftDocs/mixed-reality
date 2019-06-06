@@ -27,11 +27,21 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -80,11 +90,21 @@ Stable holograms will increase the usability and believability of your app, and 
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>❌</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -132,11 +152,21 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>❌</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -186,11 +216,21 @@ App developers control where users' eyes converge by placing content and hologra
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>❌</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -233,11 +273,21 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -266,11 +316,21 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -315,11 +375,21 @@ Well-designed user experiences can create and maintain useful context of the vir
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>❌</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -361,11 +431,21 @@ Holograms should react to the user position in roughly the same ways that "real"
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -414,11 +494,21 @@ Input interaction clarity is critical to an app's usability and includes input c
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -484,11 +574,21 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -529,11 +629,21 @@ Apps that require spatial mapping data rely on the device to automatically colle
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>❌</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -574,11 +684,21 @@ In a mixed reality app, content may be outside the field of view or occluded by 
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
@@ -607,11 +727,21 @@ A progress control provides feedback to the user that a long-running operation i
 ### Device impact
 
 <table>
-<tr>
-<th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td></td>
+    </tr>
+     <tr>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td></td>
+    </tr>
 </table>
 
 ### Quality criteria
