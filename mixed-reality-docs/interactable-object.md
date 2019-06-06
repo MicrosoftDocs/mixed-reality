@@ -17,10 +17,9 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 ![Interactible object hero image](images/640px-interactibleobject-hero-640px.jpg)
 
 
-In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, we have created a series of Unity scripts and prefabs that will help you create Interactable objects. You can use these to create any type of object that the user can interact with, using these standard interaction states: observation, targeted and pressed. You can easily customize the visual design with your own assets. Detailed animations can be customized by either creating and assigning corresponding animation clips for the interaction states in the Unity's animation controller or using offset and scale. 
+## Important properties of the interactable object
 
-
-## Visual feedback for the different input interaction states
+### Visual feedback
 
 In mixed reality, since the holographic objects are mixed with the real-world environment, it could be difficult to understand which objects are interactable. For any interactable objects in your experience, it is important to provide differentiated visual feedback for each input state. This helps the user understand which part of your experience is interactable and makes the user confident with consistent interaction method.
 
@@ -29,15 +28,28 @@ For any objects that user can interact with, we recommended to have different vi
 * **Targeted**: When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
 * **Pressed**: When the object is pressed with air-tap gesture, finger press or motion controller's select button.
 
-![Holographic button](images/640px-interactibleobject-holographicbutton-650px.jpg)<br>
+![Holographic button](images/MRTK_InteractableState.png)<br>
 *Observation state, targeted state, and pressed state*
 
 In Windows Mixed Reality, you can find the examples of visualizing different input states on Start menu and App Bar buttons. You can use techniques such as highlighting or scaling to provide visual feedback to the user’s input states.
 
-In HoloLens 2, since it supports fully articulated hand tracking input, we can provide additional affordances based on the proximity to the hands. The [Button in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) shows this example.
+HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. We can provide additional visual feedback for the direct interactions based on the proximity to the hands. The [Button in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) shows this example.
 
-![Pressable button](images/640px-interactibleobject-pressablebutton-650px.jpg)<br>
+![Pressable button](images/MRTK_UX_Button.jpg)<br>
 
+![Pressable button](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
+
+
+
+In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, we have created a series of Unity scripts and prefabs that will help you create Interactable objects. You can use these to create any type of object that the user can interact with, using these standard interaction states: observation, targeted and pressed. You can easily customize the visual design with your own assets. Detailed animations can be customized by either creating and assigning corresponding animation clips for the interaction states in the Unity's animation controller or using offset and scale. 
+
+### Audio feedback
+
+
+
+### Speech command
+
+### Input modality
 
 
 
