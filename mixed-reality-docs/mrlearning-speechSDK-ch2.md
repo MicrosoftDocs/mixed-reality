@@ -1,6 +1,6 @@
 ## Lesson 2
 
-In chapter 2, we will add an Offline mode that will allow us to perform local speech-to-text translation when we are unable to connect to the Azure service and we will *simulate* a disconnected state.
+In Lesson 2, we will add an Offline mode that will allow us to perform local speech-to-text translation when we are unable to connect to the Azure service and we will *simulate* a disconnected state.
 
 ### Add the LunarcomOfflineRecognizer component to the Lunarcom
 
