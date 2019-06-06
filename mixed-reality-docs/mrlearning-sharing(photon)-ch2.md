@@ -80,5 +80,5 @@ keywords: mixed reality, unity, tutorial, hololens
 
 Your Unity Project should be set up completely for Photon! Soon you will be able to share your work with other users.
 
-[Next Lesson: Sharing(Photon) Lesson 3](placeholderlink)
+[Next Lesson: Sharing(Photon) Lesson 3](mrlearning-sharing(photon)-ch3.md)
 
