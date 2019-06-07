@@ -24,7 +24,7 @@ The handles in the corners of the bounding box follow a widely understood patter
 
 
 ![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)<br>
-*Visual feedback on hand proximity*
+*Visual feedback based on the proximity*
 
 The vertical rectangular affordances on the edges of the bounding box are rotation indicators. This gives the user more fine adjustment over their placed holograms. Not only can they adjust and scale, but now rotate as well.
 

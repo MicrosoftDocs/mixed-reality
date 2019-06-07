@@ -65,6 +65,9 @@ In HoloLens 2, there is an additional visual cue which improves the user's confi
 ![Fingertip ring visualization](images/640px-interactibleobject-pressablebutton-650px3.jpg)<br>
 *Fingertip ring visualization in HoloLens 2*
 
+![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)<br>
+*Example of visual feedback based on the proximity - Bounding Box*
+
 
 ### Audio cue
 For the direct hand interactions, proper audio feedback can dramatically improve the user experience. Use audio feedback to communicate the following:
