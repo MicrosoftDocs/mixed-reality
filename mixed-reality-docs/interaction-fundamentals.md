@@ -11,7 +11,7 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hololens, MM
 
 # Introducing instinctual interactions
 
-The philosophy of simple, instinctual interactions is interwoven throughout the Microsoft Mixed Reality (MMR) platform.  We've taken three steps to ensure that application designers and developers can provide their customers with easy and intuitive interactions. 
+The philosophy of simple, instinctual interactions is interwoven throughout the Mixed Reality platform.  We've taken three steps to ensure that application designers and developers can provide their customers with easy and intuitive interactions. 
 
 First, we've made sure our sensors and input technologies (which includes hand and eye tracking along with natural language input) combine into seamless, multimodal interaction models.  Based on our research, designing and developing within a multimodal framework, and not based on single inputs, is the key to creating instinctual experiences.
 
