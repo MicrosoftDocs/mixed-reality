@@ -14,7 +14,7 @@ keywords: Windows Mixed Reality, design, controls, ui, ux
 
 A progress control provides feedback to the user that a long-running operation is underway. It can mean that the user cannot interact with the app when the progress indicator is visible, and can also indicate how long the wait time might be, depending on the indicator used.
 
-![Progress ring example in HoloLens](images/640px-progress-hero.jpg)<br>
+![Progress ring example in HoloLens](images/HoloLens2_Loader.gif)<br>
 *Progress ring example in HoloLens*
 
 ## Types of progress
@@ -44,7 +44,8 @@ You can add to your app's personality and brand identity by customizing the Prog
 * It's always good to provide status information about what is happening to the user. The Progress prefab provides various visual styles including the Windows standard ring-type progress for providing status. You can also use a custom mesh with an animation if you want the style of your progress to align to your app’s brand.
 
 ## See also
-* [Scripts and prefabs for Progress on Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ProgressExample.md)
+* [Progress scripts and prefabs on Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Loader)
+* [Bounding Box](app-bar-and-bounding-box.md)
 * [Interactable object](interactable-object.md)
 * [Object collection](object-collection.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
