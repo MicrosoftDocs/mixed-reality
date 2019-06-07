@@ -12,11 +12,13 @@ keywords: mixed reality, unity, tutorial, hololens
 
 1. Like step 12 from the previous lesson, in the "prefabs" folder in the project panel, the next step is to drag and drop the "NetworkLobby" prefab in to the hierarchy. 
 
+   TO DO: It will be good if we mention the lesson number like Lesson 2.
+
 ![Module3Chapter3step1im](images/module3chapter3step1im.PNG)
 
 2. When you open up the parent prefab, "NetworkLobby," you should see a child prefab, "NetworkRoom." With it selected, go into the inspector panel and click "Add Component." Search for "PhotonView" and add the component.
 
-![Module3Chapter3tep2im](images\module3chapter3step2im.PNG)
+![Module3Chapter3tep2im](images/module3chapter3step2im.PNG)
 
 3. Create a new empty game object in the hierarchy (right click in the hierarchy and select "empty"). Ensure the positioning is set to x =0, y=0, z=0 and name the object, "PhotonUser."
 
@@ -26,7 +28,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 ![Module3Chapter3step4im](images/module3chapter3step4im.PNG)
 
-5. Scale the sphere down to x=0.06, y=o.o6, ad z=0.06.
+5. Scale the sphere down to x=0.06, y=0.06, ad z=0.06.
 
 ![Module3hapter3step5im](images/module3chapter3step5im.PNG)
 
@@ -45,5 +47,5 @@ keywords: mixed reality, unity, tutorial, hololens
 
 Once all the steps above are complete, and the build process is complete, when you press the play button and connect your HoloLens 2, you should see a sphere moving around as you move your head! This will be shown for any user that joins your Unity project!
 
-[Next Lesson: Sharing(Photon) Lesson 4](placeholderlink)
+[Next Lesson: Sharing(Photon) Lesson 4](mrlearning-sharing(photon)-ch4.md)
 

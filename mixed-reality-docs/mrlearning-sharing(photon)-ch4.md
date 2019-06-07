@@ -14,9 +14,9 @@ keywords: mixed reality, unity, tutorial, hololens
 
 2. Delete the "NetworkLobby" object (by selecting it and pressing delete). Also, go into the "prefabs" folder from lesson 2 and delete the "NetworkLobby" prefab from there as well.
 
-![Module3Chapter4tep2im](images\module3chapter4step2im.PNG)
+![Module3Chapter4tep2im](images/module3chapter4step2im.PNG)
 
-3. Import a new custom package (like steps __ and __ from the previous lessons) and import the [LunarModule.unitypackage](linkforModule1 lesson with the lunar module) and the [NetworkLobbyReplacement.unitypackage.](linkforNetworklobbyreplacement package here)
+3. Import a new custom package (like step 2 from the lesson 2) and import the [LunarModule.unitypackage](linkforModule1 lesson with the lunar module) and the [NetworkLobbyReplacement.unitypackage.](linkforNetworklobbyreplacement package here)
 
 ![Module3Chapter4step3im](images/module3chapter4step3im.PNG)
 
@@ -39,7 +39,10 @@ keywords: mixed reality, unity, tutorial, hololens
 >
 > ![Module3Chapter4step6im](images/module3chapter4noteim.PNG)
 
-8. Now in the project panel, in the "prefabs" folder, drag the "table" prefab into the "TableAnchor" child object you just created.![Module3Chapter4step8im](images/module3chapter4step8im.PNG)
+8. Now in the project panel, in the "prefabs" folder, drag the "table" prefab into the "TableAnchor" child object you just created.
+
+   ![Module3Chapter4step8im](images/module3chapter4step8im.PNG)
+
 9. Select "NetworkRoom," a child object under "NetworkLobby" in the hierachy, and click "add component" in the inspector panel and search for "PhotonView" and add the script to the "*NetworkRoom*" object.
 
 ![Module3Chapter4step9im](images/module3chapter4step9im.PNG)
@@ -71,5 +74,5 @@ keywords: mixed reality, unity, tutorial, hololens
 
 Once this is complete, all users that join your Unity Project can move the Lunar Module around. When one user moves the object, another can see the object move around! 
 
-[Next Lesson: Sharing(Photon) Lesson 5](placeholderlink)
+[Next Lesson: Sharing(Photon) Lesson 5](mrlearning-sharing(photon)-ch5.md)
 

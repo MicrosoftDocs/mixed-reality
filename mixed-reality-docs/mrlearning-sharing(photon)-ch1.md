@@ -22,7 +22,7 @@ Objectives:
 
 ### Setting Up Photon
 
-1. Set up a [Photon](dashboard.photonengine.com/en-US/Account/SignUp) account. Doing this will consist of imputing your email and going through some verification steps.
+1. Set up a [Photon](https://dashboard.photonengine.com/en-US/Account/SignUp) account. Doing this will consist of inputing your email and going through some verification steps.
    
 
 ![Module3Chapter1step1im](images/module3chapter1step1im.PNG)
@@ -97,5 +97,5 @@ Objectives:
 
 You have successfully imported Photon into Unity. Your next step is to set up the project to make it sharable, and then allow connections with other users so that multiple users can see your work. 
 
-[Next Lesson: Sharing(Photon) Lesson 2](placeholderlink)
+[Next Lesson: Sharing(Photon) Lesson 2](mrlearning-sharing(photon)-ch2.md)
 
