@@ -49,11 +49,9 @@ There are five parts to the lunar module that the user is going to interact with
 Step 2: Add an audio source to the lunar module. Make sure the lunar module is selected in your base scene hierarchy and click "Add Component." Search for "Audio Source" and add it to the object. Leave it blank for now. We will use this to play the launching sound later.
  ![Lesson6 Chapter1 Step2im](images/Lesson6_Chapter1_step2im.PNG)
 Step 3: Add the script "toggle placement hints." Click "Add Component" and search for "Toggle Placement Hints." This is a custom script that allows you to turn on and off the translucent hints (objects with the x-ray material) mentioned earlier. 
-![Lesson6 Chapter1 Step3im](images/Lesson6_Chapter1_step3im.PNG)
+ ![Lesson6 Chapter1 Step3im](images/Lesson6_Chapter1_step3im.PNG)
 Step 4: Since we have 5 objects, type in "5" for the game object array size. Then you should see 5 new elements appear. 
-
-![Lesson6 Chapter1 Step4bim](images/Lesson6_Chapter1_step4bim.PNG)
-
+ ![Lesson6 Chapter1 Step4bim](images/Lesson6_Chapter1_step4bim.PNG)
 Drag each of the translucent objects into the boxes that say "None (Game Object)." 
 Drag the following objects from the lunar module in your base scene: 
 
