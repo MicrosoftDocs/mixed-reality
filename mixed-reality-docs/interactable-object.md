@@ -60,20 +60,38 @@ The [Button in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity
 ![Pressable button](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
 *Example of pressable button in HoloLens 2*
 
+In HoloLens 2, there is an additional visual cue which improves the user's confidence on the depth perception. The ring on the fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot on press state.
 
-In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, we have created a series of Unity scripts and prefabs that will help you create Interactable objects. You can use these to create any type of object that the user can interact with, using these standard interaction states: observation, targeted and pressed. You can easily customize the visual design with your own assets. Detailed animations can be customized by either creating and assigning corresponding animation clips for the interaction states in the Unity's animation controller or using offset and scale. 
+![Pressable button](images/640px-interactibleobject-pressablebutton-650px3.jpg)<br>
+*Fingertip ring visualization in HoloLens 2*
+
 
 ### Audio cue
-
-### Speech command
+Use audio feedback to communicate the following:
+* **Contact begin** - Play sound when touch begins
+* **Contact end** - Play sound on touch end
+* **Grab begin** - Play sound when grab starts
+* **Grab end** - Play sound on grab end
 
 ### Input modality
+For any interactable objects, it is important to support alternative interaction options. In default, it is recommended to support all available input types on the device. 
+* **Hand ray (far)**
+* **Direct hand (near)**
+* **Voice command**
 
-## Interactable object in Mixed Reality Toolkit
-You can find the [examples of Interactable object in Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
+## Creating interactable object with Mixed Reality Toolkit (MRTK)
+
+In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can find the series of Unity scripts and prefabs that will help you create interactable objects. You can use these to make objects respond to various types of input interaction states.
+
+* **[Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)**
+* **[Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)**
+
+MixedRealityToolkit's Standard shader provides various options such as **proximity light** that helps you create visual and audio cues.
+* **[MRTK Standard Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)**
 
 
 ## See also
-* [Pressable Button on Mixed Reality Toolkit-Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
-* [Object collection](object-collection.md)
-* [Billboarding and tag-along](billboarding-and-tag-along.md)
+
+* **[Bounding Box](app-bar-and-bounding-box.md)**
+* **[Object collection](object-collection.md)**
+* **[Billboarding and tag-along](billboarding-and-tag-along.md)**
