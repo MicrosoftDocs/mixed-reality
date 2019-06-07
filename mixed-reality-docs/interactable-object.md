@@ -12,9 +12,9 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 # Interactable object
 
-A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore. Anything can be an **Interactable object** that triggers an event. An interactable object can be represented as anything from a coffee cup on the table to a balloon floating in the air. We still do make use of traditional buttons in certain situation such as in dialog UI. The visual representation of the button depends on the context.
+A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore. Anything can be an **interactable object** that triggers an event. An interactable object can be represented as anything from a coffee cup on the table to a balloon floating in the air. We still do make use of traditional buttons in certain situation such as in dialog UI. The visual representation of the button depends on the context.
 
-![Interactible object hero image](images/640px-interactibleobject-hero-640px.jpg)
+![Interactible objects](images/640px-interactibleobject-hero-640px.jpg)
 
 
 ## Important properties of the interactable object
@@ -34,15 +34,15 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
 
 You can use techniques such as highlighting or scaling to provide visual cue to the user’s input states. In Windows Mixed Reality, you can find the examples of visualizing different input states on Start menu and App Bar buttons. 
 
-![Holographic button](images/640px-interactibleobject-states.png)<br>
+![Example of visualizing observation state, targeted state, and pressed state](images/640px-interactibleobject-states.png)<br>
 *Example of visualizing observation state, targeted state, and pressed state*
 
-![Holographic button](images/MRTK_InteractableState.png)<br>
+![Observation state, targeted state, and pressed state on holographic button](images/MRTK_InteractableState.png)<br>
 *Observation state, targeted state, and pressed state on holographic button*
 
 #### Near(direct) interactions
 
-HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception sometimes it can be hard to tell how far away your hand is from an object, or whether you are touching. Providing a large number of visual cues to communicate the state of your system and in particular of your hands in relation to holograms.
+HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception sometimes it can be hard to tell how far away your hand is from an object, or whether you are touching. It is important to provide enough visual cues to communicate the state of the object and in particular of your hands in relation to holograms.
 
 Use visual feedback to communicate the following:
 * **Default (Observation)**: Default idle state of the object.
@@ -52,17 +52,17 @@ Use visual feedback to communicate the following:
 * **Grasped**: Change visuals (light, color) when the object is grasped.
 * **Contact End**: Change visuals (light, color) when touch has ended.
 
-![Pressable button](images/640px-interactibleobject-states-near.jpg)<br>
+![Example of visualizing near interaction states](images/640px-interactibleobject-states-near.jpg)<br>
 *Example of visualizing near interaction states*
 
 The [Button in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) shows the example of visualizing different input interaction states.
 
-![Pressable button](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
+![Example of pressable button in HoloLens 2](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
 *Example of pressable button in HoloLens 2*
 
 In HoloLens 2, there is an additional visual cue which improves the user's confidence on the depth perception. The ring on the fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot on press state.
 
-![Pressable button](images/640px-interactibleobject-pressablebutton-650px3.jpg)<br>
+![Fingertip ring visualization](images/640px-interactibleobject-pressablebutton-650px3.jpg)<br>
 *Fingertip ring visualization in HoloLens 2*
 
 
