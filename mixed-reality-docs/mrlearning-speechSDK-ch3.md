@@ -1,12 +1,12 @@
 ## Lesson 3
 
-In chapter 3, we will add an the Azure Cognitive Services Speech Translation feature to our project and test translating into 3 different languages. 
+In chapter 3, we will add on the Azure Cognitive Services Speech Translation feature to our project and test translating into 3 different languages. 
 
 1. Select the Lunarcom_Base object in the hierarchy and click “Add Component” in the inspector panel. Search for and select “LunarcomTranslationRecognizer.”
 
 ![Module4Chapter3step1im](images/module4chapter3step1im.PNG)
 
-> note: ensure the offline mode simulator is turned back off before testing the Speech-SDK translator. In order to translate, you must be connected to the internet. 
+> note: Ensure the offline mode simulator is turned back off before testing the Speech-SDK translator. In order to translate, you must be connected to the internet. 
 
 2. Click the dropdown in the “LunarcomTranslationRecognizer” and select the language you would like to translate to.
 
@@ -18,7 +18,7 @@ In chapter 3, we will add an the Azure Cognitive Services Speech Translation fea
 >
 > ![Module4Chapter3noteim](images/module4chapter3noteim.PNG)
 
-Below is an example of what your scene could look like:
+Below is an example of what your scene should look like:
 
 ![Module4Chapter3exampleim](images/module4chapter3exampleim.PNG)
 
