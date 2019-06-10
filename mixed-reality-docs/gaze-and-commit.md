@@ -70,8 +70,8 @@ To find more details and a comprenhesive list of available commands and how to u
 ### Head-gaze and HoloLens Clicker
 The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens 1 Development Edition. The HoloLens Clicker allows a user to click with minimal hand motion and commit as a secondary input. The HoloLens clicker connects to the HoloLens 1 or 2 using Bluetooth Low Energy (BTLE).
 
-![](images/hololens-clicker-500px.jpg)<br>
-HoloLens Clicker
+![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
+*HoloLens Clicker*
 
 More information and instructions to pair the device can be found [here](hardware-accessories.md#pairing-bluetooth-accessories)
 
@@ -81,8 +81,8 @@ More information and instructions to pair the device can be found [here](hardwar
 ### Head-gaze and Xbox Wireless Controller
 The Xbox Wireless Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Wireless Controller.
 
-![](images/xboxcontroller.jpg)<br>
-Xbox Wireless Controller
+![Xbox Wireless Controller](images/xboxcontroller.jpg)<br>
+*Xbox Wireless Controller*
 
 [Pairing an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
 
@@ -92,20 +92,20 @@ Designed primarily to meet the needs of gamers with limited mobility, the Xbox A
 
 The Xbox Adaptive Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Adaptive Controller.
 
-![](images/xbox-adaptive-controller-devices.jpg)<br>
-Xbox Adaptive Controller
+![Xbox Adaptive Controller](images/xbox-adaptive-controller-devices.jpg)<br>
+*Xbox Adaptive Controller*
 
 Connect external devices such as switches, buttons, mounts, and joysticks to create a custom controllers experience that is uniquely yours. Button, thumbstick and trigger inputs are controlled with assistive devices connected through 3.5mm jacks and USB ports.
 
-![](images/xbox-adaptive-controller-ports.jpg)<br>
-Xbox Adaptive Controller ports
+![Xbox Adaptive Controller ports](images/xbox-adaptive-controller-ports.jpg)<br>
+*Xbox Adaptive Controller ports*
 
 [Instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)
 
 <a href=https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
 
-# Head-gaze design guidelines
+## Design guidelines
 > [!NOTE]
 > More guidance specific to gaze design [coming soon](index.md).
 
