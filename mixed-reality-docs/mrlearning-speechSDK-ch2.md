@@ -16,6 +16,10 @@ In Lesson 2, we will add an Offline mode that will allow us to perform local spe
 
 > note: because we’re offline, the Wake Word functionality has been disabled. So, you will have to physically click the microphone every time you wish to have your speech recognized while offline. 
 
+Below is an example of what your scene could look like:
+
+![Module4Chapter2exampleim](images/module4chapter2exampleim.PNG)
+
 ## Congratulations
 
 The offline mode has been enabled! Now when you're away from any form of internet, you can still work on your project with Speech-SDK! 
