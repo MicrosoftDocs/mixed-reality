@@ -3,7 +3,7 @@ title: Typography
 description: Text is an important element for delivering information in your app experience.
 author: cre8ivepark
 ms.author: dongpark
-ms.date: 03/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, style, font, typography, ui, ux
 ---
