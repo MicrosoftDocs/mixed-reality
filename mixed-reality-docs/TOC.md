@@ -119,7 +119,7 @@
 ### [Interactable object](interactable-object.md)
 ### [Object collection](object-collection.md)
 ### [Displaying progress](progress.md)
-### [App bar and bounding box](app-bar-and-bounding-box.md)
+### [Bounding box and App bar](app-bar-and-bounding-box.md)
 ## Designing for the mixed reality home
 ### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 ### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
