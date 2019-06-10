@@ -17,7 +17,7 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 ## Device support
 
 
-| Input Model | [HoloLens (1st gen)](hololens-hardware-details.md) | HoloLens 2 |[Immersive headsets](immersive-headset-hardware-details.md)|
+| Input model | [HoloLens (1st gen)](hololens-hardware-details.md) | HoloLens 2 |[Immersive headsets](immersive-headset-hardware-details.md)|
 |:-------- | :-------| :--------| :------------|
 | Direct manipulation with hands | ❌ Not supported | ✔️ Recommended | ➕ An alternative, [point and commit with hands](point-and-commit.md) is recommended.
 

@@ -13,11 +13,24 @@ keywords: mixed reality, unity, tutorial, hololens
 ## Device support
 
 <table>
-<tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st Gen)</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th><th style="width:150px"> <a href="https://www.microsoft.com/en-us/hololens/hardware">HoloLens 2</a></th>
-</tr><tr>
-<td></td><td style="text-align: center;"> </td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Course</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="https://www.microsoft.com/en-us/hololens/hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 ## Before you start
