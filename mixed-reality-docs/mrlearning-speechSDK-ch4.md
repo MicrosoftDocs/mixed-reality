@@ -2,51 +2,67 @@
 
 In chapter 4, we will explore the Speech service’s Intent feature.  We will set up our Azure LUIS Portal, setup our Intent/Entities/Utterances, publish our Intent Resource, connect our Unity app to our Intent Resource, and make our first Intent API call.
 
-### Before you begin
+1. Allow your machine to enable Dictation, to do this, go to Windows Settings, select "privacy," then "speech," and finally "inking & typing" and turn on speech services and typing suggestions.
 
-To allow your machine to enable Dictation, go to **Windows Settings > Privacy > Speech, Inking & Typing** and **Turn On speech services and typing suggestions**.
+![Module4Chapter4step1aim](images/module4chapter4step1aim.PNG)
 
-### Setup Azure portal
+![Module4Chapter4step1bim](images/module4chapter4step1bim.PNG)
 
-1. Log in to the [Azure Portal](https://portal.azure.com/).
-2. Once you are logged in, click on Create a resource.
-3. Search for *Language Understanding*, and click Enter.
-4. Select the Create button, to create an instance of this service.
-5. Name your project “Speech_SDK_Learning_Module”
-6. Select “Pay As You Go”
-7. Select your Region.  In this tutorial we will select (US) West US
-8. Choose F0 pricing tier
-9. Click **Create** to create the Resource
-10. *Note: you have clicked on Create, you will have to wait for the service to be created, this might take a minute.*
-11. A notification will appear in the portal once the Resource is created. Click on this notification and **select Go to resource**.
-12. From the *Quick Start* page, of your *LUIS API* service, navigate to the first step, *Grab your keys*, and click Keys (you can also achieve this by clicking the blue hyperlink Keys, located in the services navigation menu, denoted by the key icon). This will reveal your service *Keys*. Save a copy of one of the keys so we can use it later in our app.
-13. Back in the *Quick Start* page under Section 2, click on **Language Understanding Portal** to be redirected to the webpage which you will use to create your new Service, within the LUIS App.
+![Module4Chapter4step1cim](images/module4chapter4step1cim.PNG)
 
-### Create your Language Understanding resource
+> note: for information on how to do this on a Mac/Macbook, click [here](linkgoeshere).
 
-1. Upon reaching the *Language Understanding Portal*, you may need to login, if you are not already, with the same credentials as your Azure portal.
-2. If this is your first time using LUIS, you will need to scroll down to the bottom of the welcome page, to find and click on the Create LUIS app button.
-3. Once logged in, click My Apps (if you are not in that section currently). You can then click on Create new app.
-4. Name our app “*Speech SDK Learning Module*”
-5. If your app is supposed to understand a language different from English, you should change the *Culture* to the appropriate language.
-6. Add “*Speech SDK Learning Module*” to the Description field, as well.
-7. Click “Done”
+2. Log in to the [Azure Portal](https://portal.azure.com/). Once you are logged in, click on Create a resource, and search for "Language Understanding," and click enter.
 
-### Create your Intent
+![Module4Chapter4step2im](images/module4chapter4step2im.PNG)
 
-1. Click “Build” in the top right
-2. Under App Assets on the left, select “Intents”
-3. Click “Create New Intent” and name it “PressButton” 
-4. *Note that it is important to use the names of Intents and Entities used in this tutorial because the Lunarcom app will be referencing them by name.  For other projects, naming conventions can be whatever you choose.*
-5. *Another Note: you should now have 2 Intents - “PressButton” and “None”.*
+3. Select the Create button, to create an instance of this service. Name your project “Speech_SDK_Learning_Module” and select “Pay As You Go.”
 
-### Create your Entities
+![Module4Chapter4step3aim](images/module4chapter4step3aim.png)
 
-1. Under App Assets on the left, select “Entities”
-2. Click “Create New Entity” and name it “Action” and keep the Entity Type as “Simple”
-3. Click “Create New Entity” again and name it “Target” and keep the Entity Type as “Simple”
+![Module4Chapter4step3bim](images/module4chapter4step3bim.PNG)
 
-### Create your Utterances
+4. Select your Region.  For the purpose of this tutorial, select "(US) West US." Then choose "F0" for the pricing tier. Now click "create" (located in the bottom left corner) to create the resource.
+
+   >  note: once you have clicked on "create," you will have to wait for the service to be created, this might take a minute.
+
+5. A notification will appear in the portal once the Resource is created. Click on this notification and select "Go to resource."
+
+![Module4Chapter4step5im](images/module4chapter4stepim.PNG)
+
+6. From the "Quick Start" page of your "LUIS API" service, navigate to the first step, grab your "keys," and click "keys" (you can also achieve this by clicking the blue hyperlink "keys," shown in the image below). This will reveal your service, "Keys." Save a copy of one of the keys so you can use it later in the app.
+
+![Module4Chapter4step6im](images/module4chapter4step6im.PNG)
+
+7. Back in the "Quick Start" page under Section 2, click on "Language Understanding Portal" (shown in the image above) to be redirected to the webpage which you will use to create your new service, within the LUIS application.
+
+> note: Upon reaching the "Language Understanding Portal," you may need to login, if you are not already, with the same credentials as your Azure portal. If this is your first time using LUIS, you will need to scroll down to the bottom of the welcome page, to find and click on the "Create LUIS" app button.
+
+8. Once logged in, click My Apps (if you are not in that section currently). You can then click on Create new app. Name the new app “Speech SDK Learning Module.” Add “Speech SDK Learning Module" to the description field, as well. Then click "done."
+
+![Module4Chapter4step8aim](images/module4chapter4step8aim.PNG)
+
+![Module4Chapter4step8bim](images/module4chapter4step8bim.PNG)
+
+> note: If your app is supposed to understand a language different from English, you should change the "Culture" to the appropriate language.
+
+9. Click “Build” located in the top right.
+
+10. Under App Assets on the left, select “Intents” then click “Create New Intent” and name it “PressButton.” 
+
+![Module4Chapter4step10im](images/module4chapter4step10im.PNG)
+
+> note: it is important to use the names of Intents and Entities used in this tutorial because the Lunarcom app will be referencing them by name.  For other projects, naming conventions can be whatever you choose. 
+>
+> note: you should now have 2 Intents - “PressButton” and “None."
+
+11. Under App Assets on the left, select “Entities” and click “Create New Entity” and name it “Action” and keep the Entity Type as “Simple.”
+
+![Module4Chapter4step11im](images/module4chapter4step11im.PNG)
+
+12. Click “Create New Entity” again and name it “Target” and keep the Entity Type as “Simple” as well.
+
+![Module4Chapter4step12im](images/module4chapter4step12im.PNG)
 
 1. Under App Assets on the left, select **Intents**
 2. Click on your **PressButton** Intent
