@@ -615,7 +615,7 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 
 * [Interactable object](interactable-object.md)
 * [Text in Unity](text-in-unity.md)
-* [App bar and bounding box](app-bar-and-bounding-box.md)
+* [Bounding box and App bar](app-bar-and-bounding-box.md)
 * [Voice commanding](voice-design.md)
 
 #### Tools and tutorials
