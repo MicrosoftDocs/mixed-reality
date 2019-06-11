@@ -161,7 +161,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                             <a href="progress.md">Displaying progress</a>
                         </p>
                         <p>
-                            <a href="app-bar-and-bounding-box.md">App bar and bounding box</a>
+                            <a href="app-bar-and-bounding-box.md">Bounding box and App bar</a>
                         </p>
                     </div>
                 </div>
