@@ -146,6 +146,5 @@ The default spawn location is located at 0,0,0 in the environment. Its not curre
 When you create your custom environment, it will be using an acoustics rendering simulation that does not match the physical space you have created. Sound may come from the wrong directions and may sound muffled. 
 
 ## See also
-* [Navigating the Windows Mixed Reality Home](#navigating-the-windows-mixed-reality-home.md)
 * [Windows Mixed Reality Asset Converter (on GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
 
