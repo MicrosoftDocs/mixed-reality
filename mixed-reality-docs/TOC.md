@@ -79,7 +79,7 @@
 ### [Release notes - March 2016](release-notes-march-2016.md)
 
 # Design
-## [Design for Mixed Reality](design.md)
+## [Design for mixed reality](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
 ## Get started with design
 ### [What is mixed reality?](mixed-reality.md)
