@@ -1,9 +1,9 @@
 # [Install the tools](install-the-tools.md)
 # [Get your app ready for HL2](mrtk-porting-guide.md)
-# [Discover](index.md)
+# Discover
+## [Mixed Reality documentation](index.md)
 ## [What is mixed reality?](mixed-reality.md)
 ## [What is a hologram?](hologram.md)
-
 ## Hardware
 ### HoloLens
 #### [HoloLens 2 hardware details](https://www.microsoft.com/hololens/hardware)
@@ -78,7 +78,8 @@
 ### [Release notes - May 2016](release-notes-may-2016.md)
 ### [Release notes - March 2016](release-notes-march-2016.md)
 
-# [Design](design.md)
+# Design
+## [Design for mixed reality](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
 ## Get started with design
 ### [What is mixed reality?](mixed-reality.md)
@@ -129,7 +130,8 @@
 ### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Asset creation process](asset-creation-process.md)
 
-# [Develop](development.md)
+# Develop
+## [Development launchpad](development.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
