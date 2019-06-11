@@ -87,6 +87,9 @@ For more information on specific API differences between HTK/MRTK and MRTK versi
     - This will protect against future MRTK ingestions and updates
 - Review & explore sample scenes provided in MRTK (especially *HandInteractionExamples.scene*)
 - Rebuild canvas-based UI with quads, colliders and TextMeshPro text instead
+- Set DepthLSR from SetFocusPlane - Ideally utilize 16-bit depth-buffer for better performance
+- Set Single Pass Instanced Rendering Path
+- Setup MRTK v2 profiles after port - Turn off teleport & boundry services (generally only needed for VR)
 
 ### Testing your application
 
