@@ -16,10 +16,27 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 
 ## Device support
 
+<table>
+<colgroup>
+    <col width="33%" />
+    <col width="22%" />
+    <col width="22%" />
+    <col width="22%" />
+</colgroup>
+<tr>
+     <td><strong>Input model</strong></td>
+     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><strong>HoloLens 2</strong></td>
+     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+</tr>
+<tr>
+     <td>Direct manipulation with hands</td>
+     <td>❌ Not supported</td>
+     <td>✔️ Recommended</td>
+     <td>➕ An alternative, [point and commit with hands](point-and-commit.md) is recommended.</td>
+</tr>
+</table>
 
-| Input model | [HoloLens (1st gen)](hololens-hardware-details.md) | HoloLens 2 |[Immersive headsets](immersive-headset-hardware-details.md)|
-|:-------- | :-------| :--------| :------------|
-| Direct manipulation with hands | ❌ Not supported | ✔️ Recommended | ➕ An alternative, [point and commit with hands](point-and-commit.md) is recommended.
 
 Direct manipulation is a primary input model on HoloLens 2, and utilizes the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation. Direct manipluation is not available on HoloLens (1st Gen).
 

@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Mixed Reality, gaze, gaze targeting, interaction, design
 ---
 # Head-gaze and commit
-Head-gaze and commit is an input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input such as the hand gesture Air Tap or the voice command “Select”. It is considered a "far" input model with indirect manipulation, meaning it is best used for interacting with content that is beyond arms reach.
+Head-gaze and commit is an input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input such as the hand gesture air tap or the voice command “Select”. It is considered a "far" input model with indirect manipulation, meaning it is best used for interacting with content that is beyond arms reach.
 
 ## Device support
 
@@ -42,18 +42,18 @@ In addition to head gaze, some mixed reality headsets like the HoloLens 2 includ
 ## Commit
 After targeting an object or UI element, the user can interact or "click" on it using a secondary input. This is known as the commit step of the model. The following commit methods are supported:
 
-- Air Tap gesture
+- Air tap gesture
 - Speak the voice command "Select" or one of the targeted voice commands
 - Press the single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker)
 - Press the 'A' button on an Xbox Gamepad
 - Press the 'A' button on an Xbox Adaptive Controller
 
 ### Head-gaze and air tap gesture
-Air tap is a tapping gesture with the hand held upright. To perform an Air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release. On HoloLens 1, Air tap is the most common secondary input.
+Air tap is a tapping gesture with the hand held upright. To perform an air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release. On HoloLens (1st gen), air tap is the most common secondary input.
 
 ![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
 
-Air tap is also available on HoloLens 2, and it has been relaxed from the original version. Nearly all types of pinches are now supported, as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture.  This new Air tap replaces the old one through the same API, so existing applications will get the new behavior automatically after recompiling for HoloLens 2.
+Air tap is also available on HoloLens 2, and it has been relaxed from the original version. Nearly all types of pinches are now supported, as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture.  This new air tap replaces the old one through the same API, so existing applications will get the new behavior automatically after recompiling for HoloLens 2.
 
 ### Head-gaze and "Select" voice command
 Voice commanding is one of the primary interaction methods on Mixed Reality. It provides a very powerful "Hands Free" mechanism to control the system. There are diferent types of voice interaction models:
@@ -68,7 +68,7 @@ To find more details and a comprenhesive list of available commands and how to u
 
 
 ### Head-gaze and HoloLens Clicker
-The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens 1 Development Edition. The HoloLens Clicker allows a user to click with minimal hand motion and commit as a secondary input. The HoloLens clicker connects to the HoloLens 1 or 2 using Bluetooth Low Energy (BTLE).
+The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens (1st gen) Development Edition. The HoloLens Clicker allows a user to click with minimal hand motion and commit as a secondary input. The HoloLens Clicker connects to the HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
 
 ![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
 *HoloLens Clicker*
@@ -152,10 +152,10 @@ When determining which nearby interactive elements to give focus to, provide a b
 
 
 ## Composite gestures
-Apps can recognize more than just individual taps. By combining tap, hold and release with the movement of the hand, more complex composite gestures can be performed. These composite or high-level gestures build on the low-level spatial input data (from Air tap and Bloom) that developers have access to.
+Apps can recognize more than just individual taps. By combining tap, hold and release with the movement of the hand, more complex composite gestures can be performed. These composite or high-level gestures build on the low-level spatial input data (from air tap and bloom) that developers have access to.
 
 ### Air tap
-The Air tap gesture (as well as the other gestures below) reacts only to a specific tap. To detect other taps, such as Menu or Grasp, your app must directly use the lower-level interactions described in two key component gestures section above.
+The air tap gesture (as well as the other gestures below) reacts only to a specific tap. To detect other taps, such as Menu or Grasp, your app must directly use the lower-level interactions described in two key component gestures section above.
 
 ### Tap and hold
 Hold is simply maintaining the downward finger position of the air tap. The combination of air tap and hold allows for a variety of more complex "click and drag" interactions when combined with arm movement such as picking up an object instead of activating it or "mousedown" secondary interactions such as showing a context menu.
