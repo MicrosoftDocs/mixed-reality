@@ -14,9 +14,27 @@ Point and commit with hands is an input model that enables users to target, sele
 
 ## Device support
 
-Input model | [HoloLens (1st gen)](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-hardware-details) | HoloLens 2 | [Immersive headsets](https://docs.microsoft.com/en-us/windows/mixed-reality/immersive-headset-hardware-details) |
-| ---------| -----| ----- | ---------|
-Point and commit with hands | ❌ Not supported | ✔️ Recommended | ✔️ Recommended
+<table>
+<colgroup>
+    <col width="33%" />
+    <col width="22%" />
+    <col width="22%" />
+    <col width="22%" />
+</colgroup>
+<tr>
+     <td><strong>Input model</strong></td>
+     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><strong>HoloLens 2</strong></td>
+     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+</tr>
+<tr>
+     <td>Point and commit with hands</td>
+     <td>❌ Not supported</td>
+     <td>✔️ Recommended</td>
+     <td>✔️ Recommended</td>
+</tr>
+</table>
+
 
 Point and commit, also known as hands far, is one of the new features that utilizes the new articulated hand-tracking system. This input model is also the primary input model on immersive headsets through the use of motion controllers.
 
