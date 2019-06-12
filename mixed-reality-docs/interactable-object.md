@@ -95,6 +95,6 @@ MixedRealityToolkit's Standard shader provides various options such as **proximi
 
 ## See also
 
-* **[Bounding Box](app-bar-and-bounding-box.md)**
+* **[Bounding box](app-bar-and-bounding-box.md)**
 * **[Object collection](object-collection.md)**
 * **[Billboarding and tag-along](billboarding-and-tag-along.md)**
