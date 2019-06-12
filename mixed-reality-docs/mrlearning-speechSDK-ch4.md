@@ -1,6 +1,6 @@
 ## Lesson 4
 
-In chapter 4, we will explore the Speech service’s Intent feature.  We will set up our Azure LUIS Portal, setup our Intent/Entities/Utterances, publish our Intent Resource, connect our Unity app to our Intent Resource, and make our first Intent API call.
+In chapter 4, we will explore the Speech services Intent feature. We will set up our Azure LUIS Portal, setup our Intent/Entities/Utterances, publish our Intent Resource, connect our Unity app to our Intent Resource, and make our first Intent API call.
 
 1. Allow your machine to enable Dictation, to do this, go to Windows Settings, select "privacy," then "speech," and finally "inking & typing" and turn on speech services and typing suggestions.
 
@@ -32,7 +32,7 @@ In chapter 4, we will explore the Speech service’s Intent feature.  We will se
 
 ![Module4Chapter4step6im](images/module4chapter4step6im.PNG)
 
-7. Back in the "Quick Start" page under Section 2, click on "Language Understanding Portal" (shown in the image above) to be redirected to the webpage which you will use to create your new service, within the LUIS application.
+7. Back in the "Quick Start" page under Section 2b, click on "Language Understanding Portal" (shown in the image above) to be redirected to the webpage which you will use to create your new service, within the LUIS application.
 
 > note: Upon reaching the "Language Understanding Portal," you may need to login, if you are not already, with the same credentials as your Azure portal. If this is your first time using LUIS, you will need to scroll down to the bottom of the welcome page, to find and click on the "Create LUIS" app button.
 
@@ -106,7 +106,7 @@ In chapter 4, we will explore the Speech service’s Intent feature.  We will se
 
 ![Module4Chapter4step22im](images/module4chapter4step22im.PNG)
 
-> note: ensure to copy and save the Endpoint url associated with the Resource we just assigned so that it is easily accessible for the next section.
+> note: ensure to copy and save the Endpoint URL associated with the resource we just assigned so that it is easily accessible for the next section.
 >
 > note: for the Tenant name, put your corporation or profile that you created for this application.
 
@@ -114,21 +114,21 @@ In chapter 4, we will explore the Speech service’s Intent feature.  We will se
 
 ![Module4Chapter4step23im](images/module4chapter4step23im.PNG)
 
-24. In the Luis Endpoint field of the "LunarcomIntentRecognizer" in the inspector panel, enter the Endpoint url that you saved in step 22. 
+24. In the Luis Endpoint field of the "LunarcomIntentRecognizer" in the inspector panel, enter the Endpoint URL that you saved in step 22. 
 
 ![Module4Chapter4step24im](images/module4chapter4step24im.PNG)
 
->  note: in the "LunarcomOfflineRecognizer" component in the inspector panel, make sure that “disable” is selected for "SimulateOfflineMode" otherwise, testing the program will not work. 
+>  note: In the "LunarcomOfflineRecognizer" component in the inspector panel, make sure that “disable” is selected for "SimulateOfflineMode" otherwise, testing the program will not work. 
 
 25. Press the Play button in the Unity Editor and click the rocket button to start intent recognition. Utter the phrase “select the launch rocket button.”
 
->  note: the app recognized the desired function and deactivated the rocket button.
+>  note: The app recognized the desired function and activated the rocket button.
 >
 > ![Module4Chapter4step24im](images/module4chapter4note2im.PNG)
 
 ## Congratulations
 
-You officially learned how to add speech commands from the speechSDK program! Now your program can recognize speech commands of all kinds of variants. Test it out and have a little fun with it!
+You officially learned how to add speech commands from the speech SDK program! Now your program can recognize speech commands of all kinds of variants. Test it out and have a little fun with it!
 
 [Next Lesson: Speech SDK Lesson 5](placeholderlink)
 
