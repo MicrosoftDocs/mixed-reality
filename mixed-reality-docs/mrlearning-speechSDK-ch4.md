@@ -28,8 +28,6 @@ In chapter 4, we will explore the Speech service’s Intent feature.  We will se
 
 5. A notification will appear in the portal once the Resource is created. Click on this notification and select "Go to resource."
 
-![Module4Chapter4step5im](images/module4chapter4stepim.PNG)
-
 6. From the "Quick Start" page of your "LUIS API" service, navigate to the first step, grab your "keys," and click "keys" (you can also achieve this by clicking the blue hyperlink "keys," shown in the image below). This will reveal your service, "Keys." Save a copy of one of the keys so you can use it later in the app.
 
 ![Module4Chapter4step6im](images/module4chapter4step6im.PNG)
@@ -64,51 +62,73 @@ In chapter 4, we will explore the Speech service’s Intent feature.  We will se
 
 ![Module4Chapter4step12im](images/module4chapter4step12im.PNG)
 
-1. Under App Assets on the left, select **Intents**
-2. Click on your **PressButton** Intent
-3. Click on the **View options** dropdown on the right and select **Show entity values**
-4. Click on the “Enter an example…” textbox and enter the following 10 Utterances![img](https://lh4.googleusercontent.com/avdLMOXaDZSVAb7cEoLkvety7CdLOvYbrMO6Ru30JxLsYgLhDBumoWdHLBWLaEit0kyRJm7sq48zgLfJXGfdDmVL-isnLy16HmaIV1mLl_BdEXg3Qeu1lPckWt9gS1ILehld5cPp)
-5. Click on the **View options** dropdown on the right and select **Show entity names**
-6. Ensure that each of the 10 Utterances have the following Entity labels in the following places by 1) clicking on words that are mislabeled and, in the popup, selecting **Remove label** and 2) clicking on words that should be labeled and, in the popup, selecting the appropriate label.![img](https://lh3.googleusercontent.com/6tiFwohT_UgPvUPLmtt_wFrhaPDU7k32nx7_JmvUGdocsxdrSsKpOYvHJ-KHtsn-azl3V33efGX-_Af89_Dyj1m1wOFDB2slBUjk2sS5hbQdewzPwxQ5asfBQptfD5mn6hdt1_Bu)
+13. Under App Assets on the left, select "Intents" then click on your "PressButton" Intent that you created in step 10.
 
-### Publish model
+![Module4Chapter4step13im](images/module4chapter4step13im.PNG)
 
-1. Click **Train** in the top right
-2. Once it has finished processing, click **Test** in the top right
-3. Enter in “select the launch button”
-4. *Note that we did not add “select” as an Action in any of our Utterances - but if you click on “Inspect”, the model recognized “select” as an Action entity.*
-5. Click **Publish** in the top right
-6. Ensure the dropdown says “Production” and click **Publish** on the popup
-7. Once published, a green bar should appear at the top of the page.  Click on the green bar to be taken to **Manage**
-8. Click on **Keys and Endpoints** under “Application Settings” to the left
-9. Set the drop down *Publish To* as Production.
-10. Set the *Timezone* to your time zone.
-11. Check the box Include all predicted intent scores.
-12. Click on **Assign resource**
-13. Select tenant from the dropdown
-14. Select “Pay-as-you-go” in the Subscription Name dropdown
-15. Under LUIS resource name, choose the Resource that we created above
-16. Click on **Assign resource** on the popup
-17. Copy and save the Endpoint url associated with the Resource we just assigned so that it is easily accessible for the next section.
+14. Click on the "View options" dropdown on the right and select "show entity values." 
 
-### Add the LunarcomIntentRecognizer component to the Lunarcom
+    ![Module4Chapter4step14aim](images/module4chapter4step14aim.PNG)Click on the “Enter an example…” textbox. Then, enter the following utterances: 
 
-1. Open our app in Unity
-2. Select the Lunarcom_Base object in the hierarchy
-3. Click “Add Component” in the inspector
-4. Search for and select “LunarcomIntentRecognizer”
-5. In the Luis Endpoint field of the LunarcomIntentRecognizer in the Inspector, enter the Endpoint url that we saved in the previous section
+![Module4Chapter4step14bim](images/module4chapter4step14bim.PNG)
 
-### Run and test the application
+15. Click on the "View options" dropdown on the right and select "Show entity names."
 
-1. In the LunarcomOfflineRecognizer component in the Inspector, make sure that “Disable” is selected for SimulateOfflineMode.
-2. Press the Play button in the Unity Editor
-3. Click the Rocket button to start intent recognition
-4. Utter the phrase “select the launch rocket button”
-5. *Note: note that the app recognized the desired function and deactivated the rocket button.**![img](https://lh3.googleusercontent.com/l2y9tMzpQmBgnUip8ksgA3foK4qyN-upCnVHPFkL8wYW3DdKiQ5FOLDadJMIZtaLc8RGnTV0JFYxIDAR35UYmgQ2izc18VR9sb1mSCQUsX2IDumEZJyI39yvt-oH4c8SV7NtfQ8D)*
-6. Press the Play button to stop the app
+![Module4Chapter4step15im](images/module4chapter4step15im.PNG)
+
+16. Ensure that each of the 10 Utterances have the following Entity labels in the following places by 1.) clicking on words that are mislabeled and, in the popup, selecting "remove label" and 2.) clicking on words that should be labeled and, in the popup, selecting the appropriate label.
+
+![Module4Chapter4step16im](images/module4chapter4step16im.PNG)
+
+17. Now, to publish the model, click "Train" in the top right. Then, once it has finished processing, click "Test" in the top right.
+
+![Module4Chapter4step17im](images/module4chapter4step17im.PNG)
+
+18. Enter in “select the launch button” in  the textbox.
+
+> note: we did not add “select” as an action in any of our Utterances - but if you click on “Inspect,” the model recognized “select” as an action entity.
+>
+> ![Module4Chapter4noteim](images/module4chapter4noteim.PNG)
+
+19. Now, click "publish" in the top right. Ensure the dropdown says “Production” and click "publish" on the popup as well. 
+
+![Module4Chapter4step19im](images/module4chapter4step19im.PNG)
+
+20. Once published, a green bar should appear at the top of the page.  Click on the green bar to be taken to the "Manage" page. 
+
+![Module4Chapter4step20im](images/module4chapter4step20im.PNG)
+
+21. Click on "Keys and Endpoints" under “Application Settings” to the left. Then, set the drop down "Publish To" as "Production." Set the time-zone to match yours, and check the box to include all predicted intent scores. Lastly, Click on "Assign resource."
+
+![Module4Chapter4step21im](images/module4chapter4step21im.PNG)
+
+22. Select tenant from the first dropdown, and select “Pay-as-you-go” in the Subscription Name dropdown. Under LUIS resource name, choose the resource that we created above in steps 1-5. Then, click on "Assign resource." 
+
+![Module4Chapter4step22im](images/module4chapter4step22im.PNG)
+
+> note: ensure to copy and save the Endpoint url associated with the Resource we just assigned so that it is easily accessible for the next section.
+>
+> note: for the Tenant name, put your corporation or profile that you created for this application.
+
+23. Now, open the new app in Unity and select the Lunarcom_Base object in the hierarchy. Click “Add Component” in the inspector panel and search for and select “LunarcomIntentRecognizer.”
+
+![Module4Chapter4step23im](images/module4chapter4step23im.PNG)
+
+24. In the Luis Endpoint field of the "LunarcomIntentRecognizer" in the inspector panel, enter the Endpoint url that you saved in step 22. 
+
+![Module4Chapter4step24im](images/module4chapter4step24im.PNG)
+
+>  note: in the "LunarcomOfflineRecognizer" component in the inspector panel, make sure that “disable” is selected for "SimulateOfflineMode" otherwise, testing the program will not work. 
+
+25. Press the Play button in the Unity Editor and click the rocket button to start intent recognition. Utter the phrase “select the launch rocket button.”
+
+>  note: the app recognized the desired function and deactivated the rocket button.
+>
+> ![Module4Chapter4step24im](images/module4chapter4note2im.PNG)
 
 ## Congratulations
 
-[Next Lesson: ASA Lesson 4](mrlearning-base-ch4.md)
+You officially learned how to add speech commands from the speechSDK program! Now your program can recognize speech commands of all kinds of variants. Test it out and have a little fun with it!
+
+[Next Lesson: Speech SDK Lesson 5](placeholderlink)
 
