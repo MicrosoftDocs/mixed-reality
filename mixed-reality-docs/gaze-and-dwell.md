@@ -85,8 +85,8 @@ Use a short delay before starting visual feedback to avoid flickering when someo
 ## UI patterns
 
 ### High frequency buttons
-![Microsoft Dynamics 365 Guides Next Button](images/GuideNextButton.png "Microsoft Dynamics 365 Guides Next Button")
-High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.
+![Microsoft Dynamics 365 Guides Next Button](images/GuideNextButton.png "Microsoft Dynamics 365 Guides Next Button")<br>
+*High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.*
 
 High frequency buttons should...
 * be larger buttons, easier to hit with head-gaze
@@ -110,8 +110,8 @@ When an action has significant impact, like charging money, deleting work, or st
 Toggle buttons require some nuanced logic to work properly. When a person dwells on a toggle button and actives it, they need to exit the button and then return to restart the dwell logic. It is important that togglable buttons have a clear active versus inactive state. 
 
 ### List views
-![Microsoft Dynamics 365 Guides Confirmation Dialog](images/GuidesListView.png "Microsoft Dynamics 365 Guides Confirmation Dialog")
-List views present a particular challenge for head-gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets. 
+![Microsoft Dynamics 365 Guides Confirmation Dialog](images/GuidesListView.png "Microsoft Dynamics 365 Guides Confirmation Dialog")<br>
+*List views present a particular challenge for head-gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets.*
 
 Some tips for designing list views:
 * have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
