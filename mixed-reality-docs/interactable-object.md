@@ -94,7 +94,7 @@ Below are the recommendations for minimum sizes of interactable content
 When creating buttons for direct interaction, we recommend a larger minimum size of 3.2 x 3.2 cm to ensure that there is enough space to contain an icon and potentially some text**
 
 | Distance | Minimum size |
-|---------|---------|---------|
+|---------|---------|
 | 45cm  | 3.2 x 3.2 cm |
 
 ### Target size for hand ray or gaze interaction
