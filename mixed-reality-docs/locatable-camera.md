@@ -1,11 +1,11 @@
 ---
 title: Locatable camera
-description: General information about the HoloLens front facing camera.
+description: General information about the HoloLens front-facing camera, how it works, and the profiles and resolutions available to developers.
 author: wguyman
 ms.author: wguyman
-ms.date: 02/24/2019
+ms.date: 06/12/2019
 ms.topic: article
-keywords: camera, hololens, color camera, front facing
+keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer vision, fiducial, markers, qr code, qr, photo, video
 ---
 
 # Locatable camera
@@ -16,7 +16,7 @@ HoloLens includes a world-facing camera mounted on the front of the device which
 
 ### HoloLens (first-generation)
 
-* Fixed focus photo/video (PV) camera, with auto white balance, auto exposure, and full image processing pipe
+* Fixed focus photo/video (PV) camera with auto white balance, auto exposure, and full image processing pipeline.
 * White Privacy LED facing the world will illuminate whenever the camera is active
 * The camera supports the following modes (all modes are 16:9 aspect ratio) at 30, 24, 20, 15, and 5 fps:
 
@@ -30,20 +30,32 @@ HoloLens includes a world-facing camera mounted on the front of the device which
 
 ### HoloLens 2
 
-* Auto-focus photo/video (PV) camera, with auto white balance, auto exposure, and full image processing pipe
-* White Privacy LED facing the world will illuminate whenever the camera is active
-* The camera supports the following modes (all video modes are 16:9 aspect ratio):
+* Auto-focus photo/video (PV) camera with auto white balance, auto exposure, and full image processing pipeline.
+* White Privacy LED facing the world will illuminate whenever the camera is active.
+* HoloLens 2 supports different camera profiles. Learn how to [discover and select camera capabilities](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/camera-profiles).
+* The camera supports the following profiles and resolutions (all video modes are 16:9 aspect ratio):
+  
+  | Profile                                         | Video     | Preview   | Still     | Frame rates | Horizontal Field of View (H-FOV) | Suggested usage                             |
+  |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
+  | Legacy,0  BalancedVideoAndPhoto,100             | 2272x1278 | 2272x1278 |           | 15,30       | 64.69                            | High quality video recording                |
+  | Legacy,0  BalancedVideoAndPhoto,100             |           |           | 3904x2196 |             | 64.69                            | High quality photo capture                  |
+  | BalancedVideoAndPhoto,120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15,30       | 64.69                            | Long duration scenarios                     |
+  | BalancedVideoAndPhoto,120                       | 1504x846  | 1504x846  |           | 15,30       | 64.69                            | Long duration scenarios                     |
+  | VideoConferencing,100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15,30,60    | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100                           | 1504x846  | 1504x846  |           | 5,15,30,60  | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1920x1080 | 1920x1080 | 1920x1080 | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1280x720  | 1280x720  | 1280x720  | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1128x635  |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 960x540   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 760x428   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 640x360   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 500x282   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 424x240   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
 
-  >[!NOTE]
-  >These modes are subject to change prior to HoloLens 2 general availability.
-
-  |  Video  |  Preview  |  Still  |  Frame rates  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
-  |----------|----------|----------|----------|----------|----------|
-  |  1920x1080 |  1920x1080 |  N/A |  30, 15 fps  |  54deg  |  (default mode with video stabilization) | 
-  |  N/A |  N/A |  3904X2196 |  N/A  |  64deg |  Highest resolution still image | 
-  |  2272x1278 |  2272x1278 |  N/A |  30, 15 fps  |  64deg |  Overscan (padding) resolution before video stabilization | 
-  |  1952x1100 |  1952x1100 |  1952x1100  |  30, 15 fps  |  64deg |  High-quality streaming | 
-  |  1280x720 |  1280x720 |  N/A |  30, 15, 5 fps  |  64deg |  Low power/resolution mode for streaming and image processing tasks | 
+>[!NOTE]
+>Customers can leverage [mixed reality capture](mixed-reality-capture.md) to take videos or photos of your app, which include holograms and video stabilization.
+>
+>As a developer, there are considerations you should take into account when creating your app if you want it to look as good as possible when a customer captures content. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](mixed-reality-capture-for-developers.md).
 
 ## Locating the Device Camera in the World
 
