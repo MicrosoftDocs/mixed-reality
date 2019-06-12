@@ -58,7 +58,7 @@ Instead of using specific gestures, such as "pointing with index finger", to dir
 *  When the object is farther than 50 cm, the rays are turned on. The transition should be smooth and seamless.
 
 ![The same set of hand gestures are used for both near and far interaction](images/Transition-Between-Near-And-Far-720px.jpg)<br>
-*The same set of hand gestures are used for both near and far interaction."
+*The same set of hand gestures are used for both near and far interaction.*
 
 ## 2D slate interaction
 
