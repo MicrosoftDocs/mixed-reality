@@ -91,7 +91,8 @@ Below are the recommendations for minimum sizes of interactable content
 |---------|---------|---------|
 | 45cm  | no smaller than 2° | 1.6 x 1.6 cm |
 
-![Target size for direct hand interaction](images/TargetSizingFar.jpg)<br>
+![Target size for direct hand interaction](images/TargetSizingNear.jpg)<br>
+*Target size for direct hand interaction*
 
 When creating buttons for direct interaction, we recommend a larger minimum size of 3.2 x 3.2 cm to ensure that there is enough space to contain an icon and potentially some text**
 
@@ -100,6 +101,7 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 | 45cm  | 3.2 x 3.2 cm |
 
 ![Target size for the buttons](images/TargetSizingButtons.png)<br>
+*Target size for the buttons*
 
 
 ### Target size for hand ray or gaze interaction
@@ -107,7 +109,8 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 |---------|---------|---------|
 | 2m  | no smaller than 1° | 3.5 x 3.5 cm |
 
-![Target size for hand ray or gaze interaction](images/TargetSizingNear.jpg)<br>
+![Target size for hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
+*Target size for hand ray or gaze interaction*
 
 ## Creating interactable object with Mixed Reality Toolkit (MRTK)
 
