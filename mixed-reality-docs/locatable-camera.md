@@ -53,7 +53,8 @@ HoloLens includes a world-facing camera mounted on the front of the device which
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 424x240   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
 
 >[!NOTE]
->Customers can leverage [mixed reality capture](mixed-reality-capture.md) to take videos or photos of your app, which include holograms and video stabilization. 
+>Customers can leverage [mixed reality capture](mixed-reality-capture.md) to take videos or photos of your app, which include holograms and video stabilization.
+>
 >As a developer, there are considerations you should take into account when creating your app if you want it to look as good as possible when a customer captures content. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](mixed-reality-capture-for-developers.md).
 
 ## Locating the Device Camera in the World
