@@ -16,7 +16,7 @@ Follow these steps to attach a managed debugger to your Unity IL2CPP UWP build. 
 
     ![UWP Publishing Settings Capabilities](images/il2cpp-debugging-capabilities.png)
 
-1. Unity UWP build settings:
+1. Configure the Unity UWP build settings:
     - Development Build
     - Script Debugging
     - Wait for Managed Debugger (optional)
