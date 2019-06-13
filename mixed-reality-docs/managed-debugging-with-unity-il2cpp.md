@@ -28,6 +28,10 @@ Follow these steps to attach a managed debugger to your Unity IL2CPP UWP build. 
 1. Start the app on your device. Make sure your device is connected to the same network as your PC.
 1. Make sure the device **is not** connected to your PC via USB.
 1. Go to the Visual Studio solution that's created when you double click a script in Unity, where you can view and edit your C# scripts.
-1. Debug -> Attach Unity Debugger. Look for your device in the list.
+1. Debug -> Attach Unity Debugger.
 
     ![Attach Unity Debugger](images/il2cpp-debugging-attach.png)
+
+1. Look for your device in the list.
+
+    ![Device List](images/il2cpp-debugging-machines.png)
