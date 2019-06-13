@@ -12,7 +12,7 @@ keywords: unity, visual studio, debugging, il2cpp
 
 Follow these steps to attach a managed debugger to your Unity IL2CPP UWP build. This guide was originally developed for HoloLens and HoloLens 2.
 
-1. Make sure **InternetClientServer** and **PrivateNetworkClientServer** are checked in Unity under the UWP Publishing Settings Capabilities.
+1. Ensure that **InternetClientServer** and **PrivateNetworkClientServer** are checked in Unity under the UWP Publishing Settings Capabilities.
 
     ![UWP Publishing Settings Capabilities](images/il2cpp-debugging-capabilities.png)
 
