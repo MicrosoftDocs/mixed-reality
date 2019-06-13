@@ -24,7 +24,7 @@ Follow these steps to attach a managed debugger to your Unity IL2CPP UWP build. 
     ![UWP Build Settings](images/il2cpp-debugging-build.png)
 
 1. Build in Unity.
-1. Build and deploy (Debug or Release, not Master) from the Visual Studio solution to your device. Optionally, verify **Internet (Client & Server)** and **Private Networks (Client & Server)** in the capabilities list in Package.appxmanifest in the solution.
+1. Build and deploy from the Visual Studio solution to your device. You should build with the **Debug** or **Release** configurations. The **Master** configuration disables the Unity profiler and can prevent optimal debugging. Optionally, verify **Internet (Client & Server)** and **Private Networks (Client & Server)** in the capabilities list in Package.appxmanifest in the solution.
 1. Start the app on your device. Make sure your device is connected to the same network as your PC.
 1. Make sure the device **is not** connected to your PC via USB.
 1. Go to the Visual Studio solution that's created when you double click a script in Unity, where you can view and edit your C# scripts.
