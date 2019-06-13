@@ -92,5 +92,5 @@ Objectives:
 
 You've set up voice recognition in your application, powered by Azure! Run the application to ensure all functions are working properly. Start with saying the wake word you typed in step 22, "Activate Terminal." Then, select the microphone button to start voice recognition and begin speaking. You will see your words transcribed in the terminal as you speak. Press the microphone button a second time to stop voice recognition. Say "Dismiss Terminal" to hide the Lunarcom terminal. In the next lesson, we'll learn how to dynamically switch to using device-powered voice recognition, for situations where Azure's speech SDK isn't available due to the HoloLens 2 being offline.
 
-[Next Lesson: Speech SDK Lesson 2](placeholderlink)
+[Next Lesson: Speech SDK Lesson 2](mrlearning-speechSDK-ch2.md)
 
