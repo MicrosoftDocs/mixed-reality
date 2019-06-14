@@ -158,16 +158,23 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
     
     ![module2chapter1step10eim](images/module2chapter1step10eim.PNG)
     
-    - Start the Azure spatial anchors session.
-    - Move the cube to a different location.
-    - Save the Azure spatial anchors at the location of the cube.
-    - Stop the Azure spatial anchors session.
+    1. Start the Azure spatial anchors session.
+    
+    2. Move the cube to a different location.
+    
+    3. Save the Azure spatial anchors at the location of the cube.
+    
+    4. Stop the Azure spatial anchors session.
+    
     5. Remove the local anchor on the cube to allow the user to move the cube.
-    - Move the cube somewhere else.
-    - Start Azure spatial anchors session.
+    6. Move the cube somewhere else.
+    
+    7. Start Azure spatial anchors session.
+    
     8. Find Azure spatial anchors.
     (now cube should go back to the original place you put it when you created the anchor).
-    - Delete Azure spatial anchor.
+    9. Delete Azure spatial anchor.
+    
     10. Stop Azure session.
 
 ### Anchoring an experience

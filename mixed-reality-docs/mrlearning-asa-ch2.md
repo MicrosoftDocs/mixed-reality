@@ -68,12 +68,12 @@ In this section, we'll learn how to share the Azure Anchor ID between multiple d
 
 3. Follow the instructions from [Lesson 1](mrlearning-base-ch1.md). to build the updated application to your device. After pressing the "Create Azure Anchor" button, as you did in the previous lesson, you may now share the Azure Anchor ID to other devices by pressing the Share To Other Device button.
 
-   > Note: Select the parent anchor and scroll down to the parent anchor script. Ensure that your "public sharing pin" is uique, so that when you share it, you know it is yours that you are sharing. There could be thousands of users sharing their Azure Anchors, so doing this will allow you to ensure you are sharing the correct Azure Anchors.
+   > Note: Select the parent anchor and scroll down to the parent anchor script. Ensure that your "public sharing pin" is unique, so that when you share it, you know it is yours that you are sharing. There could be thousands of users sharing their Azure Anchors, so doing this will allow you to ensure you are sharing the correct Azure Anchors.
 
 4. If you have another HoloLens 2 device, start the application and then start the Azure Session. Press the "Get Shared Anchor ID" button, and then press the "Locate Azure Anchor" button to locate the anchor associated with the ID we saved to the disk. The entire scene should now snap into position, at the where it was placed on the other HoloLens 2 device! If you only have one HoloLens 2, you may still test functionality by restarting the application, starting the Azure Session, and then Press the "Get Shared Anchor ID" button button, and then press the "Locate Azure Anchor" button to locate the anchor associated with the ID we saved to the disk. The entire scene should now snap into position, at the location you saved the anchor previously!
 
 ## Congratulations
 In this Lesson you learned how to persist Azure Spatial Anchors between app sessions and app restarts by saving the Azure Spatial Anchor ID to the local disk of the HoloLens 2. You also learned how to share Azure Spatial Anchors between multiple devices for a basic multi-user, static hologram shared experience!
 
-[Next Lesson: ASA Lesson 2](mrlearning-base-ch3.md)
+[Next Lesson: ASA Lesson 3](mrlearning-base-ch3.md)
 
