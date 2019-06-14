@@ -145,6 +145,7 @@
 #### [Unity Play Mode](unity-play-mode.md)
 #### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
 #### [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
+#### [Managed debugging with Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
 ### Core building blocks
 #### [Camera in Unity](camera-in-unity.md)
 #### [Coordinate systems in Unity](coordinate-systems-in-unity.md)
