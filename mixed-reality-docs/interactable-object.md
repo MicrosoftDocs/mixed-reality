@@ -3,7 +3,7 @@ title: Interactable object
 description: A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore.
 author: cre8ivepark
 ms.author: jennyk
-ms.date: 02/24/2019
+ms.date: 06/06/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux
 ---
