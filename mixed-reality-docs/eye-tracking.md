@@ -86,6 +86,7 @@ For eye tracking to work accurately, each user is required to go through an eye 
 ![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
 *Optimal target size at a 2-meter distance*
 <br>
+<br>
 The [Eye Tracking API](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) is accessible through: `Windows.Perception.People.EyesPose'. 
 
 ## Eye-gaze design guidelines
@@ -156,7 +157,7 @@ While this should not necessarily affect your application design, as the accurac
 ## Design recommendations
 The following is a list of specific design recommendations based on the described advantages and challenges for eye-gaze input:
 
-1. **Eye-gaze != Head gaze:**
+1. **Eye-gaze != Head-gaze:**
     - **Consider whether fast yet ragged eye movements fit your input task:** 
 While our fast and ragged eye movements are great at quickly selecting targets across our field of view (FoV), it is less applicable for tasks that require smooth input trajectories (e.g., drawing or encircling annotations). 
 In this case, hand or head pointing should be preferred.
