@@ -1,5 +1,5 @@
 ---
-title: MR Learning ASA Module Azure Spatial Anchor on HoloLens 2
+title: MR Learning ASA module Azure Spatial Anchor on HoloLens 2
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -27,22 +27,22 @@ Before beginning, you must download and import the following assets:
 
 [Azure Spatial Anchors](https://github.com/azure/azure-spatial-anchors-samples/releases)
 
-[MR Base Module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
+[MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
 
-[ASA Module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
+[ASA module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
 
 [Mixed Reality Toolkit](link to base module chater 1)
 
-> Note: see step 5 for specific instructions on how to import the Azure Spatial Anchors, step 6 for specific instructions on the MR Base Module Asset Pack, and steps 3-4 for specific instructions on the Mixed Reality Toolkit.
+> Note: see step 5 for specific instructions on how to import the Azure Spatial Anchors, step 6 for specific instructions on the MR Base module Asset Pack, and steps 3-4 for specific instructions on the Mixed Reality Toolkit.
 
-1. create a new scene in your project. Right click your scene folder, click "create," then scene. Name the new scene "ASALearningModule."
+1. create a new scene in your project. Right click your scene folder, click "create," then scene. Name the new scene "ASALearningmodule."
 
-![Module2Chapter1step1im](images/Module2chapter1step1im.PNG)
+![module2Chapter1step1im](images/module2chapter1step1im.PNG)
 
-2. Double click "ASALearningModule" to see some pre-defined items appear along with the new scene. 
+2. Double click "ASALearningmodule" to see some pre-defined items appear along with the new scene. 
 3. Configure the scene for mixed reality development. 
 
-![Module2chapter1step3im](images/Module2chapter1step3im.PNG)
+![module2chapter1step3im](images/module2chapter1step3im.PNG)
 
 > Note: You will see a pop-up that says, "you must choose a file for the Mixed Reality Toolkit." Clicking "ok" will bring you to step 4.
 
@@ -68,25 +68,25 @@ Now the scene is configured for mixed reality. Make sure you save your scene (do
 
    > note: it will take a few minutes to import, so please be patient. 
 
-   6. Import [MR Base Module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1) next. Much like step 5, click the link above, then right click "BaseModuleAssetsV1 1.unitypackage" and click "save target as" and save it to your computer. 
+   6. Import [MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1) next. Much like step 5, click the link above, then right click "BasemoduleAssetsV1 1.unitypackage" and click "save target as" and save it to your computer. 
 
    ![module2chapter1step6aim](images/module2chapter1step6aim.PNG)
 
    > Tip: Save all these assets in the same folder so that they are easier to find and have access to. It will keep everything nice and organized!
 
-   Just like step 5, go back in to unity, click "assets," hover over "import package" then click "custom package..." Your computer files should appear again, so go to where you stored the Base Module Asset Pack and select it. Then click "open."
+   Just like step 5, go back in to unity, click "assets," hover over "import package" then click "custom package..." Your computer files should appear again, so go to where you stored the Base module Asset Pack and select it. Then click "open."
 
    ![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
 
    > Note: there may be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
 
-7. Import the ASA Module Pack using the same approach as importing the previous packages.
+7. Import the ASA module Pack using the same approach as importing the previous packages.
 
 ### Configuring your scene
 
 In this section, we will be adding prefabs and scripts into the scene to create a series of buttons that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
 
-7. In the "project" tab, underneath the "assets" folder, click on "ASAModuleAssets." Once selected you will see 2 prefabs, "ButtonParent" and "ParentAnchor."
+7. In the "project" tab, underneath the "assets" folder, click on "ASAmoduleAssets." Once selected you will see 2 prefabs, "ButtonParent" and "ParentAnchor."
 
 ![module2chapter1step5bim](images/module2chapter1step7im.PNG)
 
@@ -96,11 +96,11 @@ In this section, we will be adding prefabs and scripts into the scene to create 
 
 9. Double click on the parent anchor to select it. You may need to adjust your view to see the entire scene, so adjust your scene as needed.
 
-​	Familiarize yourself with the ParentAnchor prefab. Currently, the game object named "ParentAnchor" is a colored cube, for demonstration purposes. Eventually, we will hide the cube and place our content as a child of the ParentAnchor. This prefab includes the AzureSpatialAnchorsDemoWrapper.cs script (included with the ASA SDK) and the ASAModuleScript.cs script (included as part of this module) to the ParentAnchor object. 
+​	Familiarize yourself with the ParentAnchor prefab. Currently, the game object named "ParentAnchor" is a colored cube, for demonstration purposes. Eventually, we will hide the cube and place our content as a child of the ParentAnchor. This prefab includes the AzureSpatialAnchorsDemoWrapper.cs script (included with the ASA SDK) and the ASAmoduleScript.cs script (included as part of this module) to the ParentAnchor object. 
 
-10. Configure Buttons. Under the ParentAnchor prefab, you will notice several labeled buttons. These buttons are created from the MRTK's PressableButton prefabs. Learn more about how to create Pressable Buttons from the [Base Module](mrlearning-base-ch2.md). For each button, add an event that will be triggered when the user presses or selects the button according to the list below. 
+10. Configure Buttons. Under the ParentAnchor prefab, you will notice several labeled buttons. These buttons are created from the MRTK's PressableButton prefabs. Learn more about how to create Pressable Buttons from the [Base module](mrlearning-base-ch2.md). For each button, add an event that will be triggered when the user presses or selects the button according to the list below. 
 
-- For the Button named "StartAzureSession", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the StartAzureSession() method from the ParentAnchor Object's ASAModuleScript component.
+- For the Button named "StartAzureSession", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the StartAzureSession() method from the ParentAnchor Object's ASAmoduleScript component.
 
   ![module2chapter1step10aim](images/module2chapter1step10aim.PNG)
 
@@ -108,15 +108,15 @@ In this section, we will be adding prefabs and scripts into the scene to create 
 
   ![module2chapter1step10cim](images/module2chapter1step10fim.PNG)
 
-- For the Button named "StopAzureSession", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the StopAzureSession() method from the ParentAnchor Object's ASAModuleScript component.
+- For the Button named "StopAzureSession", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the StopAzureSession() method from the ParentAnchor Object's ASAmoduleScript component.
 
-- For the Button named "CreateAnchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the CreateAzureAnchor() method from the ParentAnchor Object's ASAModuleScript component.
+- For the Button named "CreateAnchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the CreateAzureAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
 
-- For the Button named "Start Looking For Anchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the FindAzureAnchor() method from the ParentAnchor Object's ASAModuleScript component.
+- For the Button named "Start Looking For Anchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the FindAzureAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
 
-- For the Button named "DeleteAzureAnchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the DeleteAzureAnchor() method from the ParentAnchor Object's ASAModuleScript component.
+- For the Button named "DeleteAzureAnchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the DeleteAzureAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
 
-- For the Button named "Delete Local Anchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the RemoveLocalAnchor() method from the ParentAnchor Object's ASAModuleScript component.
+- For the Button named "Delete Local Anchor", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the RemoveLocalAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
 
 ### Build and Demonstrate Base Application
 
@@ -179,9 +179,9 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 
 ### Anchoring an experience
 
-In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We've used a cube to represent and visualize the parent game object with the attached anchor. In this section, you wiill learn how to anchor an entire experience by placing it as a child of the ParentAnchor object. For this example, we will use the Lunar Module Assembly demo app that was created during [Base Module Lesson 6](mrlearning-base-ch6.md).
+In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We've used a cube to represent and visualize the parent game object with the attached anchor. In this section, you wiill learn how to anchor an entire experience by placing it as a child of the ParentAnchor object. For this example, we will use the Lunar module Assembly demo app that was created during [Base module Lesson 6](mrlearning-base-ch6.md).
 
-1. Search for the Lunar Module Assembly Complete prefab and drag it into your heirarchy as a child of the AnchorParent gameobject, as shown in the image below.
+1. Search for the Lunar module Assembly Complete prefab and drag it into your heirarchy as a child of the AnchorParent gameobject, as shown in the image below.
 
    ![module2chapter1step11](images/module2chapter1step11im.PNG)
 
