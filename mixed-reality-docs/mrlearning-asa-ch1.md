@@ -123,15 +123,15 @@ In this section, we will be adding prefabs and scripts into the scene to create 
 Now that your scene is configured to demonstrate the basics of Azure Spatial Anchors, we will build and demonstrate the basic behavior of Azure Spatial Anchors. 
 
 1. If you closed the Build Settings window from the previous sections, open the build settings window again by going to File>Build Settings.
-    ![Lesson1 Chapter5 Step1](images/Lesson1Chapter5Step1.JPG)
+    ![Lesson1 Chapter5 Step1](images/lesson1Chapter5Step1.JPG)
 
 2. Ensure the scene you want to try is in the “Scenes in Build” list by clicking on the “Add Open Scenes” button.
 
 3. Press the Build button to begin the build process.
-    ![Lesson1 Chapter5 Step3](images/Lesson1Chapter5Step3.JPG)
+    ![Lesson1 Chapter5 Step3](images/lesson1Chapter5Step3.JPG)
 
 4. Create and name a new folder for your application. In the image below, a folder with the name “App” was created to contain the application. Click “Select Folder” to begin building to the newly created folder. After the build has completed, you may close the "Build Settings" window in Unity. 
-    ![Lesson1 Chapter5 Step4](images/Lesson1Chapter5Step4.JPG)
+    ![Lesson1 Chapter5 Step4](images/lesson1Chapter5Step4.JPG)
 
   > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The tyoe or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)", then you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk>) 
   >
@@ -140,7 +140,7 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 
   > Note: Be sure to open the newly created folder (i.e., the "App" folder, if following the naming conventions from the previous steps), as there will be a similarly named .sln file outside of that folder that is not to be confused with the .sln file inside the build folder. 
 
-![Lesson1 Chapter5 Step5](images/Lesson1Chapter5Step5.JPG)
+![Lesson1 Chapter5 Step5](images/lesson1Chapter5Step5.JPG)
 
   > Note: If visual studio asks to install new components, please take a moment to ensure that all prerequisite components are installed as specific in [the "Install the Tools" page](install-the-tools.md) 
 
@@ -149,10 +149,10 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 7. Before building to your device, ensure that the device is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a pin. Please follow [these instructions](https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
 
 8. Configure Visual Studio for building to your HoloLens 2 by selecting the “Release” configuration and the “ARM” architecture.
-    ![Lesson1 Chapter5 Step8](images/Lesson1Chapter5Step8.JPG)
+    ![Lesson1 Chapter5 Step8](images/lesson1Chapter5Step8.JPG)
     
 9. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting “Start without Debugging” will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You may also select Build>Deploy Solution to deploy to your device without having the application automatically start.
-    ![Lesson1 Chapter5 Step9](images/Lesson1Chapter5Step9.JPG)
+    ![Lesson1 Chapter5 Step9](images/lesson1Chapter5Step9.JPG)
     
 10. When the application is running on your device, please follow the on-screen instructions. Please press the scene buttons corresponding to the steps below.
     
