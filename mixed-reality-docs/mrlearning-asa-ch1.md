@@ -60,7 +60,7 @@ Now the scene is configured for mixed reality. Make sure you save your scene (do
 
    Then, after it's saved, go back into unity, click "assets," go down to "import package," then click "custom package..." Your computer files will open up. Once they do, find where you saved the Azure Spatial Anchors package and select it. Then click "open."
 
-   ![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
+   ![Module2chapter1step5bim](images/module2chapter1step5bim.PNG)
 
    Now there will be a popup giving a list of tools and settings, asking you what to import. Select ***all*** of the options available, then click "import."
 
@@ -68,7 +68,7 @@ Now the scene is configured for mixed reality. Make sure you save your scene (do
 
    > note: it will take a few minutes to import, so please be patient. 
 
-   6. Import [MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1) next. Much like step 5, click the link above, then right click "BasemoduleAssetsV1 1.unitypackage" and click "save target as" and save it to your computer. 
+   6. Import [MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1) next. Much like step 5, click the link above, then right click "BasemoduleAssetsV1 1.unitypackage" and click "save target as" and save it to your computer.
 
    ![module2chapter1step6aim](images/module2chapter1step6aim.PNG)
 
