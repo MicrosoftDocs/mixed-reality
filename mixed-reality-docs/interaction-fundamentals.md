@@ -136,16 +136,16 @@ Here are some examples of how affordances and behaviors are optimized for each i
 ### Below are the questions that we've found help teams select an interaction model:
  
 1.	Q:  Do my users want to touch holograms and perform precision holographic manipulations?<br><br>
-A:  If so, check out the Hands and Tools interaction model for precision targeting and manipulation with hands or motion controllers.
+A:  If so, check out the Hands and motion controllers interaction model for precision targeting and manipulation with hands or motion controllers.
  
 2.	Q:  Do my users need to keep their hands free for real-world tasks?<br><br>
 A:  If so, take a look at the Hands-Free interaction model, which provides a great hands-free experience through gaze and voice-based interactions.
  
 3.	Q:  Do my users have time to learn interactions for my MR application or do they need the interactions with the lowest learning curve possible?<br><br>
-A:  We recommend the Hands and Tools model for the lowest learning curve and most intuitive interactions, as long as users are able to use their hands for interaction.
+A:  We recommend the Hands and motion controllers model for the lowest learning curve and most intuitive interactions, as long as users are able to use their hands for interaction.
  
 4.	Q:  Do my users use motion controllers for pointing and manipulation?<br><br>
-A:  The Hands and Tools model includes all guidance for a great experience with motion controllers.
+A:  The Hands and motion controllers model includes all guidance for a great experience with motion controllers.
  
 5.	Q:  Do my users use an accessibility controller or a common Bluetooth controller, such as a clicker?<br><br>
 A:  We recommend the Head-Gaze and Commit model for all non-tracked controllers. It's designed to allow a user to traverse an entire experience with a simple "target and commit" mechanism. 
@@ -153,7 +153,7 @@ A:  We recommend the Head-Gaze and Commit model for all non-tracked controllers.
 6.	Q: Do my users only progress through an experience by "clicking through" (for example in a 3D slideshow-like environment), as opposed to navigating dense layouts of UI controls?<br><br>
 A:  If users do not need to control a lot of UI, Head-Gaze and Commit offers a learnable option where users do not have to worry about targeting. 
  
-7.	Q:  Do my users use both HoloLens (1st Gen) and HoloLens 2/ Windows Immersive (VR headsets)<br><br>
+7.	Q:  Do my users use both HoloLens (1st gen) and HoloLens 2/ Windows Immersive (VR headsets)<br><br>
 A:  Since Head-Gaze and Commit is the interaction model for HoloLens (1st gen), we recommend that creators who support HoloLens (1st gen) use Head-Gaze and Commit for any features or modes that users will experience on a HoloLens (1st gen) headset. Please see the next section below on *Transitioning interaction models* for details on making a great experience for multiple HoloLens generations.
  
 8.	Q: What about users who are generally mobile, covering a large space or moving between spaces, versus users who tend to work in a single space?<br><br>
