@@ -90,5 +90,5 @@ Once the user has targeted a hologram or real-world object using their gaze, the
 * [MR Input 210: Head gaze](holograms-210.md)
 * [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Head gaze in Unity](gaze-in-unity.md)
-* [Eye tracking on HoloLens 2](eye-tracking.md)
+* [Eye-gaze on HoloLens 2](eye-tracking.md)
 * [Eye gaze in Unity using Mixed Reality Toolkit](https://aka.ms/mrtk-eyes)
