@@ -8,23 +8,23 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# (Title)
+# Displaying Azure Spatial Anchor Feedback
 
-In this lesson, 
+In this lesson, you'll learn about how to provide users with feedback about anchor discovery, events, and status when using Azure Spatial Anchors.
 
 Objectives:
 
-* Learn how to _____________________________________________
+* Learn how to set up a UI panel that displays important information about the current ASA session
 
-* Learn how to _________________________________________________
+* Understand and explore feedback elements that the ASA SDK makes available to users
 
   
 
 ## Instructions
 
-### (title)
+### Set Up ASA Feedback UI Panel
 
-1. In this lesson, we are not using the "SaveAnchorToDisk" and "ShareAnchor" buttons so select both buttons and uncheck the checkbox in the inspector panel (as shown below) to hide these buttons for the time being.
+1. In this lesson, we are not using the "SaveAnchorToDisk" and "ShareAnchor" buttons so select both buttons and uncheck the checkbox in the inspector panel (as shown below) to hide these buttons.
    
 
 ![Module2Chapter3step1im](images/module2chapter3step1im.PNG)
@@ -35,12 +35,12 @@ Objectives:
 
    ![Module2Chapter3step2im](images/module2chapter3step2im.PNG)
 
-   3. Adjust the scale and the positioning of the text so that it matches with the instructions in your scene. Also, ensure the alignment for all of the text is centered. Then delete the sample text from the text editor. Use the image below to help. 
+   3. Adjust the scale and the positioning of the text so that it matches with the instructions in your scene. Also, ensure the alignment for all of the text is centered. Then delete the sample text from the text editor, as shown in in the image below.
 
 
 ![Module2Chapter3step3im](images/module2chapter3step3im.PNG)
 
-4. Change the name of the textmeshpro object to "feedbackPanel."
+4. Change the name of the TextMeshPro object to "FeedbackPanel."
    
    ![Module2Chapter3step4im](images/module2chapter3step4im.PNG)
    
@@ -78,6 +78,6 @@ Now, click [here](https://onedrive.live.com/?authkey=%21ABXEC8PvyQu8Qd8&id=5B733
 
 ## Congratulations
 
-
+In this lesson we learned how to create a UI panel to display the current status of the Azure Spatial Anchor experience for providing user with real-time feedback.
 
 
