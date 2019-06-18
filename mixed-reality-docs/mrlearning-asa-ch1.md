@@ -33,16 +33,16 @@ Before beginning, you must download and import the following assets:
 
 [Mixed Reality Toolkit](link to base module chater 1)
 
-> Note: see step 5 for specific instructions on how to import the Azure Spatial Anchors, step 6 for specific instructions on the MR Base module Asset Pack, and steps 3-4 for specific instructions on the Mixed Reality Toolkit.
+> Note: see Step 5 for specific instructions on how to import the Azure Spatial Anchors, step 6 for specific instructions on the MR Base module Asset Pack, and Steps 3-4 for specific instructions on the Mixed Reality Toolkit.
 
 1. create a new scene in your project. Right click your scene folder, click "create," then scene. Name the new scene "ASALearningmodule."
 
-![module2chapter1step1im](images/module2chapter1step1im.PNG)
+![module2Chapter1Step1im](images/Module2Chapter1Step1im.PNG)
 
 2. Double click "ASALearningmodule" to see some pre-defined items appear along with the new scene. 
 3. Configure the scene for mixed reality development. 
 
-![module2chapter1step3im](images/module2chapter1step3im.PNG)
+![module2Chapter1Step3im](images/Module2Chapter1Step3im.PNG)
 
 > Note: You will see a pop-up that says, "you must choose a file for the Mixed Reality Toolkit." Clicking "ok" will bring you to step 4.
 
@@ -50,35 +50,35 @@ Before beginning, you must download and import the following assets:
 
    > Note: If you have your own configuration profile feel free to use that instead.
 
-![module2chapter1step4im](images/module2chapter1step4im.PNG)
+![module2Chapter1Step4im](images/module2Chapter1Step4im.PNG)
 
 Now the scene is configured for mixed reality. Make sure you save your scene (do this with either control/command+S, or click on file, then click on save). 
 
 5. Import the [Azure Spatial Anchors](https://github.com/azure/azure-spatial-anchors-samples/releases). In order to use spatial anchors, you must import this asset. So, click on the link above and right click on "AzureSpatialAnchors.unitypackage." Click on "save target as" and save it to your computer. 
 
-   ![module2chapter1step5aim](images/module2chapter1step5aim.PNG)
+   ![module2Chapter1Step5aim](images/module2Chapter1Step5aim.PNG)
 
    Then, after it's saved, go back into unity, click "assets," go down to "import package," then click "custom package..." Your computer files will open up. Once they do, find where you saved the Azure Spatial Anchors package and select it. Then click "open."
 
-   ![Module2chapter1step5bim](images/module2chapter1step5bim.PNG)
+   ![Module2Chapter1Step5bim](images/module2Chapter1Step5bim.PNG)
 
    Now there will be a popup giving a list of tools and settings, asking you what to import. Select ***all*** of the options available, then click "import."
 
-   ![module2chapter1step5cim](images/module2chapter1step5cim.PNG)
+   ![module2Chapter1Step5cim](images/module2Chapter1Step5cim.PNG)
 
    > note: it will take a few minutes to import, so please be patient. 
 
-   6. Import [MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1) next. Much like step 5, click the link above, then right click "BasemoduleAssetsV1 1.unitypackage" and click "save target as" and save it to your computer.
+   6. Import [MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1) next. Much like Step 5, click the link above, then right click "BasemoduleAssetsV1 1.unitypackage" and click "save target as" and save it to your computer.
 
-   ![module2chapter1step6aim](images/module2chapter1step6aim.PNG)
+   ![module2Chapter1Step6aim](images/module2Chapter1Step6aim.PNG)
 
    > Tip: Save all these assets in the same folder so that they are easier to find and have access to. It will keep everything nice and organized!
 
    Just like step 5, go back in to unity, click "assets," hover over "import package" then click "custom package..." Your computer files should appear again, so go to where you stored the Base module Asset Pack and select it. Then click "open."
 
-   ![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
+   ![module2Chapter1Step5bim](images/module2Chapter1Step5bim.PNG)
 
-   > Note: there may be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
+   > Note: there may be more assets needed later in this module. Follow these Steps to import any assets mentioned from this point on. 
 
 7. Import the ASA module Pack using the same approach as importing the previous packages.
 
@@ -88,11 +88,11 @@ In this section, we will be adding prefabs and scripts into the scene to create 
 
 7. In the "project" tab, underneath the "assets" folder, click on "ASAmoduleAssets." Once selected you will see 2 prefabs, "ButtonParent" and "ParentAnchor."
 
-![module2chapter1step5bim](images/module2chapter1step7im.PNG)
+![module2Chapter1Step5bim](images/module2Chapter1Step7im.PNG)
 
 8. Drag both of the prefabs into the scene. 
 
-![module2chapter1step8im](images/module2chapter1step8im.PNG)
+![module2Chapter1Step8im](images/module2Chapter1Step8im.PNG)
 
 9. Double click on the parent anchor to select it. You may need to adjust your view to see the entire scene, so adjust your scene as needed.
 
@@ -102,11 +102,11 @@ In this section, we will be adding prefabs and scripts into the scene to create 
 
 - For the Button named "StartAzureSession", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the StartAzureSession() method from the ParentAnchor Object's ASAmoduleScript component.
 
-  ![module2chapter1step10aim](images/module2chapter1step10aim.PNG)
+  ![module2Chapter1Step10aim](images/module2Chapter1Step10aim.PNG)
 
-  ![module2chapter1step10bim](images/module2chapter1step10bim.PNG)
+  ![module2Chapter1Step10bim](images/module2Chapter1Step10bim.PNG)
 
-  ![module2chapter1step10cim](images/module2chapter1step10fim.PNG)
+  ![module2Chapter1Step10cim](images/module2Chapter1Step10fim.PNG)
 
 - For the Button named "StopAzureSession", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the StopAzureSession() method from the ParentAnchor Object's ASAmoduleScript component.
 
@@ -123,15 +123,15 @@ In this section, we will be adding prefabs and scripts into the scene to create 
 Now that your scene is configured to demonstrate the basics of Azure Spatial Anchors, we will build and demonstrate the basic behavior of Azure Spatial Anchors. 
 
 1. If you closed the Build Settings window from the previous sections, open the build settings window again by going to File>Build Settings.
-    ![lesson1chapter5step1](images/lesson1chapter5step1.JPG)
+    ![Lesson1Chapter5Step1](images/Lesson1Chapter5Step1.JPG)
 
 2. Ensure the scene you want to try is in the “Scenes in Build” list by clicking on the “Add Open Scenes” button.
 
 3. Press the Build button to begin the build process.
-    ![lesson1chapter5step3](images/lesson1chapter5step3.JPG)
+    ![Lesson1Chapter5Step3](images/Lesson1Chapter5Step3.JPG)
 
 4. Create and name a new folder for your application. In the image below, a folder with the name “App” was created to contain the application. Click “Select Folder” to begin building to the newly created folder. After the build has completed, you may close the "Build Settings" window in Unity. 
-    ![lesson1chapter5step4](images/lesson1chapter5step4.JPG)
+    ![Lesson1Chapter5Step4](images/Lesson1Chapter5Step4.JPG)
 
   > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The tyoe or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)", then you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk>) 
   >
@@ -140,23 +140,23 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 
   > Note: Be sure to open the newly created folder (i.e., the "App" folder, if following the naming conventions from the previous steps), as there will be a similarly named .sln file outside of that folder that is not to be confused with the .sln file inside the build folder. 
 
-![lesson1chapter5step5](images/lesson1chapter5step5.JPG)
+![Lesson1Chapter5Step5](images/Lesson1Chapter5Step5.JPG)
 
   > Note: If visual studio asks to install new components, please take a moment to ensure that all prerequisite components are installed as specific in [the "Install the Tools" page](install-the-tools.md) 
 
-6. Plug your HoloLens 2 into your PC with the USB cable. While these lesson instructions assume you will be deploying a testing with a HoloLens 2 device, you may also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps>)
+6. Plug your HoloLens 2 into your PC with the USB cable. While these Lesson instructions assume you will be deploying a testing with a HoloLens 2 device, you may also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps>)
 
 7. Before building to your device, ensure that the device is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a pin. Please follow [these instructions](https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
 
 8. Configure Visual Studio for building to your HoloLens 2 by selecting the “Release” configuration and the “ARM” architecture.
-    ![lesson1chapter5step8](images/lesson1chapter5step8.JPG)
+    ![Lesson1Chapter5Step8](images/Lesson1Chapter5Step8.JPG)
     
-9. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting “Start without Debugging” will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You may also select Build>Deploy Solution to deploy to your device without having the application automatically start.
-    ![lesson1chapter5step9](images/lesson1chapter5step9.JPG)
+9. The final Step is to build to your device by selecting Debug>Start without Debugging. Selecting “Start without Debugging” will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You may also select Build>Deploy Solution to deploy to your device without having the application automatically start.
+    ![Lesson1Chapter5Step9](images/Lesson1Chapter5Step9.JPG)
     
-10. When the application is running on your device, please follow the on-screen instructions. Please press the scene buttons corresponding to the steps below.
+10. When the application is running on your device, please follow the on-screen instructions. Please press the scene buttons corresponding to the Steps below.
     
-    ![module2chapter1step10eim](images/module2chapter1step10eim.PNG)
+    ![module2Chapter1Step10eim](images/module2Chapter1Step10eim.PNG)
     
     1. Start the Azure spatial anchors session.
     
@@ -179,20 +179,20 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 
 ### Anchoring an experience
 
-In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We've used a cube to represent and visualize the parent game object with the attached anchor. In this section, you wiill learn how to anchor an entire experience by placing it as a child of the ParentAnchor object. For this example, we will use the Lunar module Assembly demo app that was created during [Base module lesson 6](mrlearning-base-ch6.md).
+In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We've used a cube to represent and visualize the parent game object with the attached anchor. In this section, you wiill learn how to anchor an entire experience by placing it as a child of the ParentAnchor object. For this example, we will use the Lunar module Assembly demo app that was created during [Base module Lesson 6](mrlearning-base-ch6.md).
 
 1. Search for the Lunar module Assembly Complete prefab and drag it into your heirarchy as a child of the AnchorParent gameobject, as shown in the image below.
 
-   ![module2chapter1step11](images/module2chapter1step11im.PNG)
+   ![module2Chapter1Step11](images/module2Chapter1Step11im.PNG)
 
 2. Position the module assembly experience in such a way that the cube is still exposed, as shown in the image below. In the application, users may reposition the entire experience by moving the cube. 
 
-   ![module2chapter1step12im](images/module2chapter1step12im.PNG)
+   ![module2Chapter1Step12im](images/module2Chapter1Step12im.PNG)
 
-   > Note: There are a variety of user experience flows for repositioning experiences, including the use of a button to toggle a bounding box that surrounds the experience, use of a repositioning object (such as the cube used in this step), the use of position and rotation gizmos, and more.
+   > Note: There are a variety of user experience flows for repositioning experiences, including the use of a button to toggle a bounding box that surrounds the experience, use of a repositioning object (such as the cube used in this Step), the use of position and rotation gizmos, and more.
 
 ## Congratulations
-In this lesson, you learned the fundamentals of Azure Spatial Anchors. This lesson provided you with several buttons allowing you to explore the various steps required to start and stop an Azure session, and create, upload, and download azure anchors on a single device. In the next lesson, we'll learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted. During the series, you will also learn how to transfer anchor IDs between multiple devices to achieve spatial alignment, and eventually learn about multi-user shared sessions (forthcoming as part of sharing module.)
+In this Lesson, you learned the fundamentals of Azure Spatial Anchors. This Lesson provided you with several buttons allowing you to explore the various Steps required to start and stop an Azure session, and create, upload, and download azure anchors on a single device. In the next Lesson, we'll learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted. During the series, you will also learn how to transfer anchor IDs between multiple devices to achieve spatial alignment, and eventually learn about multi-user shared sessions (forthcoming as part of sharing module.)
 
-[Next lesson: ASA lesson 2](mrlearning-base-ch3.md)
+[Next Lesson: ASA Lesson 2](mrlearning-base-ch3.md)
 
