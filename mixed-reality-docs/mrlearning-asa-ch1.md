@@ -123,15 +123,15 @@ In this section, we will be adding prefabs and scripts into the scene to create 
 Now that your scene is configured to demonstrate the basics of Azure Spatial Anchors, we will build and demonstrate the basic behavior of Azure Spatial Anchors. 
 
 1. If you closed the Build Settings window from the previous sections, open the build settings window again by going to File>Build Settings.
-    ![Lesson1Chapter5step1](images/Lesson1Chapter5step1.JPG)
+    ![Lesson1Chapter5Step1](images/Lesson1Chapter5Step1.JPG)
 
 2. Ensure the scene you want to try is in the “Scenes in Build” list by clicking on the “Add Open Scenes” button.
 
 3. Press the Build button to begin the build process.
-    ![Lesson1Chapter5step3](images/Lesson1Chapter5step3.JPG)
+    ![Lesson1Chapter5Step3](images/Lesson1Chapter5Step3.JPG)
 
 4. Create and name a new folder for your application. In the image below, a folder with the name “App” was created to contain the application. Click “Select Folder” to begin building to the newly created folder. After the build has completed, you may close the "Build Settings" window in Unity. 
-    ![Lesson1Chapter5step4](images/Lesson1Chapter5step4.JPG)
+    ![Lesson1Chapter5Step4](images/Lesson1Chapter5Step4.JPG)
 
   > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The tyoe or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)", then you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk>) 
   >
