@@ -10,7 +10,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # Getting Started with Azure Spatial Anchors on HoloLens 2
 
-Welcome to the second module of the HoloLens 2 Tutorial! Before getting started, be sure that all of the [prerequisites](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-hololens) are completed. If you have not completed the first, [base module](link) yet, we highly recommend that you complete that first. If you are starting from a new unity project, follow the new project creation steps in the [base module](link). 
+Welcome to the second module of the HoloLens 2 Tutorial! Before getting started, be sure that all of the [prerequisites](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-hololens) are completed. If you have not completed the first, [base module](mrlearning-base.md) yet, we highly recommend that you complete that first. If you are starting from a new unity project, follow the new project creation steps in the [base module](mrlearning-base.md). 
 
 ## Objectives
 
@@ -29,9 +29,9 @@ Before beginning, you must download and import the following assets:
 
 [MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
 
-[ASA module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
+[ASA module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/ASA_B2)
 
-[Mixed Reality Toolkit](link to base module chater 1)
+[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)
 
 > Note: see step 5 for specific instructions on how to import the Azure Spatial Anchors, step 6 for specific instructions on the MR Base module Asset Pack, and steps 3-4 for specific instructions on the Mixed Reality Toolkit.
 
