@@ -3,7 +3,7 @@ title: Interactable object
 description: A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore.
 author: cre8ivepark
 ms.author: jennyk
-ms.date: 02/24/2019
+ms.date: 06/06/2019
 ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux
 ---
@@ -81,20 +81,51 @@ For any interactable objects, it is important to support alternative interaction
 
 <img src="images/640px-interactibleobject-voicecommand.jpg" alt="Tooltip for the voice command" title="Tooltip for the voice command" width="350"><br/>*Tooltip for the voice command*
 
+## Sizing
+In order to ensure that all interactable objects can easily be touched by users we suggest ensuring the interactable meets a minimum size (often measured in degrees visual angle) based on the distance it is placed from the user. Degrees visual angle is based on the distance between the user and the object and stays constant, while the physical size of the target may change as the distance from the user changes. To determine the necessary physical size of an object based on the distance from a sure and the degree visual angle try using a calculator such as :http://elvers.us/perception/visualAngle/
+
+Below are the recommendations for minimum sizes of interactable content
+
+### Target size for direct hand interaction
+| Distance | Viewing angle | Size |
+|---------|---------|---------|
+| 45cm  | no smaller than 2° | 1.6 x 1.6 cm |
+
+![Target size for direct hand interaction](images/TargetSizingNear.jpg)<br>
+*Target size for direct hand interaction*
+
+When creating buttons for direct interaction, we recommend a larger minimum size of 3.2 x 3.2 cm to ensure that there is enough space to contain an icon and potentially some text**
+
+| Distance | Minimum size |
+|---------|---------|
+| 45cm  | 3.2 x 3.2 cm |
+
+![Target size for the buttons](images/TargetSizingButtons.png)<br>
+*Target size for the buttons*
+
+
+### Target size for hand ray or gaze interaction
+| Distance | Viewing angle | Size |
+|---------|---------|---------|
+| 2m  | no smaller than 1° | 3.5 x 3.5 cm |
+
+![Target size for hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
+*Target size for hand ray or gaze interaction*
+
 ## Creating interactable object with Mixed Reality Toolkit (MRTK)
 
 In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can find the series of Unity scripts and prefabs that will help you create interactable objects. You can use these to make objects respond to various types of input interaction states.
 
-* **[Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)**
-* **[Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)**
-* **[Hand Interaction Examples Scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)**
+* [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
+* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Hand Interaction Examples Scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit's Standard shader provides various options such as **proximity light** that helps you create visual and audio cues.
-* **[MRTK Standard Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)**
+* [MRTK Standard Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
 
 
 ## See also
 
-* **[Bounding Box](app-bar-and-bounding-box.md)**
-* **[Object collection](object-collection.md)**
-* **[Billboarding and tag-along](billboarding-and-tag-along.md)**
+* [Bounding box](app-bar-and-bounding-box.md)
+* [Object collection](object-collection.md)
+* [Billboarding and tag-along](billboarding-and-tag-along.md)

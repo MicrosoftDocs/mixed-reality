@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module Intro
+title: MR Learning Base Module Introduction
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull

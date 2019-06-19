@@ -48,7 +48,7 @@ This basic gestural command is triggered by using the thumb and index finger to 
 * In the *commit* state, the ray turns into a solid line and the cursor shrinks to a dot.
 
 ![Pointing and commit states for hand rays](images/Hand-Rays-720px.jpg)<br>
-*Pointing and commit states for hand rays*
+*Pointing (left) and commit (right) states for hand rays*
 
 ## Transition between near and far
 
