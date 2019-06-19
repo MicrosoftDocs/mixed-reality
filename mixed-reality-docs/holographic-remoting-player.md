@@ -49,5 +49,5 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 * We recommend you connect your PC to your network via ethernet to reduce the number of Wireless hops.
 
 ## See Also
-* [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
+* [Holographic remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)
