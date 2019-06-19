@@ -66,7 +66,7 @@ In HoloLens 2, there is an additional visual cue which improves the user's confi
 *Fingertip ring visualization in HoloLens 2*
 
 ![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)<br>
-*Example of visual feedback based on the proximity - Bounding Box*
+*Example of visual feedback based on the proximity - Bounding box*
 
 
 ### Audio cue
@@ -82,9 +82,9 @@ For any interactable objects, it is important to support alternative interaction
 <img src="images/640px-interactibleobject-voicecommand.jpg" alt="Tooltip for the voice command" title="Tooltip for the voice command" width="350"><br/>*Tooltip for the voice command*
 
 ## Sizing
-In order to ensure that all interactable objects can easily be touched by users we suggest ensuring the interactable meets a minimum size (often measured in degrees visual angle) based on the distance it is placed from the user. Degrees visual angle is based on the distance between the user and the object and stays constant, while the physical size of the target may change as the distance from the user changes. To determine the necessary physical size of an object based on the distance from a sure and the degree visual angle try using a calculator such as :http://elvers.us/perception/visualAngle/
+To ensure that all interactable objects can easily be touched by users, we recommend that you make sure the interactable meets a minimum size (the visual angle often measured in degrees of visual arc) based on the distance it is placed from the user. Visual angle is based on the distance between the user's eyes and the object and stays constant, while the physical size of the target may change as the distance from the user changes. To determine the necessary physical size of an object based on the distance from the user, try using a visual angle calculator such as [this one](http://elvers.us/perception/visualAngle/).
 
-Below are the recommendations for minimum sizes of interactable content
+Below are the recommendations for minimum sizes of interactable content.
 
 ### Target size for direct hand interaction
 | Distance | Viewing angle | Size |
@@ -118,7 +118,7 @@ In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolki
 
 * [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 * [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
-* [Hand Interaction Examples Scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
+* [Hand interaction examples scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit's Standard shader provides various options such as **proximity light** that helps you create visual and audio cues.
 * [MRTK Standard Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
