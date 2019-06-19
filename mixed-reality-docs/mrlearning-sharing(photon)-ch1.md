@@ -86,13 +86,13 @@ Objectives:
 
     ![Module3Chapter1step10im](images/module3chapter1step10im.PNG)
     
-    11. Download and import this asset by
+    11. Download and import this asset by pressing the "Download" and "Import" buttons.
     
     ![Module3Chapter1step11im](images/module3chapter1step11im.PNG)
 
 ## Congratulations
 
-You have successfully imported Photon into Unity. Your next step is to set up the project to make it sharable, and then allow connections with other users so that multiple users can see your work. 
+You have successfully created a Photon account, set up a local Photon server, and imported PUN into Unity. Your next step is to set up the project and then allow connections with other users so that multiple users can see your work. 
 
 [Next Lesson: Sharing(Photon) Lesson 2](mrlearning-sharing(photon)-ch2.md)
 
