@@ -24,7 +24,7 @@ Objectives:
 
 ### Setting Up Photon
 
-1. Set up a [Photon](dashboard.photonengine.com/en-US/Account/SignUp) account. Doing this will consist of imputing your email and going through some verification steps.
+1. Set up a [Photon](https://dashboard.photonengine.com/en-US/Account/SignUp) account. Doing this will consist of imputing your email and going through some verification steps.
    
 
 ![Module2Chapter4step1im](images/Module2chapter4step1im.png)
