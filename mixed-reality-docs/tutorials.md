@@ -248,7 +248,7 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
 
 ## Mixed Reality and Azure Services tutorials
 
-These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project.  These tutorials are all based on either HoloLens (1st Gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
+These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project.  These tutorials are all based on either HoloLens (1st gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
     <li>
