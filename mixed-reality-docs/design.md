@@ -161,7 +161,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                             <a href="progress.md">Displaying progress</a>
                         </p>
                         <p>
-                            <a href="app-bar-and-bounding-box.md">App bar and bounding box</a>
+                            <a href="app-bar-and-bounding-box.md">Bounding box and App bar</a>
                         </p>
                     </div>
                 </div>
@@ -243,7 +243,7 @@ Build great experiences from samples designed and created by our team.
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
     <li>
-	<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit - Unity" data-linktype="absolute-path">
+	<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/README.html#ui-and-interaction-building-blocks" title="Mixed Reality Toolkit - Unity" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -279,26 +279,7 @@ Build great experiences from samples designed and created by our team.
             </div>
         </div>
       </a>	
-    </li>	
-        <li>
-	<a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md" title="HoloSketch" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/HoloSketch.png" alt="HoloSketch">
-                        </div>
-                    </div>                    
-			<div class="cardText">
-                        <h3>HoloSketch</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>	
-    </li>	
+    </li>		
             <li>
 	<a href="https://www.simplygon.com" title="Simplygon" data-linktype="absolute-path">
         <div class="cardSize">

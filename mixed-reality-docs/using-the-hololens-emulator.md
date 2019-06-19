@@ -22,14 +22,14 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset apps o
 Download the HoloLens Emulator and holographic project templates.
 
 Versions: 
-* [HoloLens 2 Emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2087187).
-* [HoloLens Emulator (1st Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
+* [HoloLens 2 Emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2095316).
+* [HoloLens Emulator (1st gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
 
 ### HoloLens Emulator system requirements
 
-The HoloLens Emulator uses Hyper-V with RemoteFx (1st Gen Emulator) or GPU-PV (HoloLens 2 Emulator) for hardware accelerated graphics. To use the emulator, make sure your PC meets these hardware requirements:
+The HoloLens Emulator uses Hyper-V with RemoteFx (1st gen Emulator) or GPU-PV (HoloLens 2 Emulator) for hardware accelerated graphics. To use the emulator, make sure your PC meets these hardware requirements:
 * 64-bit Windows 10 Pro, Enterprise, or Education 
     >[!NOTE]
     >Windows 10 Home edition does not support Hyper-V or the HoloLens Emulator.  
@@ -43,7 +43,7 @@ The HoloLens Emulator uses Hyper-V with RemoteFx (1st Gen Emulator) or GPU-PV (H
    * Hardware-based Data Execution Prevention (DEP)
 * GPU requirements
    * DirectX 11.0 or later
-   * WDDM 1.2 graphics driver or later (1st Gen)
+   * WDDM 1.2 graphics driver or later (1st gen)
    * WDDM 2.5 graphics driver (HoloLens 2 Emulator)
    * The emulator might work with an unsupported GPU, but will be significantly slower
 
@@ -54,7 +54,7 @@ If your system meets the above requirements, **please ensure that the "Hyper-V" 
 1. Load your app solution in Visual Studio.
     >[!NOTE]
     >When using Unity, build your project from Unity and then load the built solution into Visual Studio as usual.
-2. For the HoloLens Emulator (1st Gen), ensure the Platform is set to **x86**. For the HoloLens 2 Emulator ensure the Platform is set to **x86** or **x64**.
+2. For the HoloLens Emulator (1st gen), ensure the Platform is set to **x86**. For the HoloLens 2 Emulator ensure the Platform is set to **x86** or **x64**.
 3. Select the desired **HoloLens Emulator** version as the target device for debugging.
 4. Go to **Debug > Start Debugging** or press **F5** to launch the emulator and deploy your app for debugging.
 
@@ -64,7 +64,7 @@ The emulator may take a minute or more to boot when you first start it. We recom
 
 Controlling the emulator is very similar to many common 3D video games. There are input options available using the keyboard, mouse, or Xbox controller. You control the emulator by directing the actions of a simulated user wearing a HoloLens. Your actions move that simulated user around and apps running in the emulator respond like they would on a real device.
 
-The cursor on HoloLens (1st Gen) follows head movement and rotation.  In the HoloLens 2 Emulator, the cursor follows hand movement and orientation.
+The cursor on HoloLens (1st gen) follows head movement and rotation.  In the HoloLens 2 Emulator, the cursor follows hand movement and orientation.
 
 * **Walk forward, back, left, and right** - Use the W,A,S, and D keys on your keyboard, or the left stick on an Xbox controller.
 * **Look up, down, left, and right** - Click and drag the mouse, use the arrow keys on your keyboard, or the right stick on an Xbox controller.
@@ -123,7 +123,7 @@ The Optional Settings tab will display a control to enable or disable hardware a
 The Diagnostics tab shows the emulator's IP address in the form of a link to Windows Device Portal along with the status of the virtual GPU.
 
 
-## Anatomy of the HoloLens (1st Gen) emulator
+## Anatomy of the HoloLens (1st gen) emulator
 
 ### Main window
 
@@ -173,7 +173,7 @@ Simulated rooms are useful for testing your app in multiple environments. Severa
 * **GreatRoom.xef** - A large open space great room with living room, dining table, and kitchen.
 * **LivingRoom.xef** - A living room with a fireplace, sofa, armchairs, and a coffee table with a vase.
 
-You can also record your own rooms to use in the emulator using the Simulation page of the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens (1st Gen).
+You can also record your own rooms to use in the emulator using the Simulation page of the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens (1st gen).
 
 In the emulator, you will only see holograms that you render and you will not see the simulated room behind the holograms. This is in contrast to the real HoloLens where you see both blended together. If you want to see the simulated room in the HoloLens Emulator, you will need to update your app to render the spatial mapping mesh in the scene.
 
@@ -188,7 +188,7 @@ You may also see an error installing the emulator on a non-Pro/Enterprise/Educat
 * Please also ensure that Hyper-V feature has been enabled on your system.
 
 If your installation completes successfully, but you do not see the HoloLens Emulator as an option for deployment and debugging, please check the following:
-* Your Visual Studio project configuration is set to x86 (HoloLens 1st Gen) or x86 or x64 (HoloLens 2 Emulator).
+* Your Visual Studio project configuration is set to x86 (HoloLens 1st gen) or x86 or x64 (HoloLens 2 Emulator).
 * If using Visual Studio 2019, the Platform Toolset in your project configuration is set to v142.
 
 If your installation completes successfully, but Visual Studio displays an error attempting to launch the HoloLens Emulator, please try the following:

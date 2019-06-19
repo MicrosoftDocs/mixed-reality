@@ -3,7 +3,7 @@ title: HoloLens known issues
 description: This is the list of known issues that may affect HoloLens developers.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 04/1/2019
+ms.date: 06/14/2019
 ms.topic: article
 keywords: troubleshoot, known issue, help
 ---
@@ -14,9 +14,26 @@ keywords: troubleshoot, known issue, help
 
 This is the current list of known issues for HoloLens affecting developers. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 
+## Unable to connect and deploy to HoloLens through Visual Studio
+
+>[!NOTE]
+>Last Update: 6/14 @ 6PM - Issue under investigation.
+
+The HoloLens and Visual Studio teams are investigating an issue that may prevent users from deploying to HoloLens device through Visual Studio.
+ 
+During deployment stage, users report the following error message, despite HoloLens device and developer machine having *developer mode* enabled:
+
+*DEP0100: Please ensure that target device has developer mode enabled. Could not obtain a developer license on <device IP> due to error 80004005.*
+ 
+**Workaround**: 
+ 
+Users report that resetting the device resolves the issue but we cannot guarantee that this will work in all cases. You can find instructions to reset your device [here](https://support.microsoft.com/en-us/help/13452/hololens-restart-reset-or-recover-hololens).
+ 
+We will provide an update as soon as the issue is root caused. 
+
 ## Issues launching the Microsoft Store and apps on HoloLens
 
->[!IMPORTANT]
+>[!NOTE]
 >Last Update: 4/2 @ 10 AM - Issue resolved. 
 
 You may experience issues when trying to launch the Microsoft Store and apps on HoloLens. We've determined that the issue occurs when background app updates deploy a newer version of framework packages in specific sequences while one or more of their dependent apps are still running. In this case,  an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) caused the apps that are running to not correctly update for all running apps consuming the prior version of the framework.  The flow for framework update is as follows: -
