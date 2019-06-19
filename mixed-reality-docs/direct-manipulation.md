@@ -33,7 +33,8 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
      <td>Direct manipulation with hands</td>
      <td>❌ Not supported</td>
      <td>✔️ Recommended</td>
-     <td>➕ An alternative, [point and commit with hands](point-and-commit.md) is recommended.</td>
+     <td>➕ An alternative, <a href="point-and-commit.md">point and commit with hands</a> is recommended.</td>
+    
 </tr>
 </table>
 
