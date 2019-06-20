@@ -75,5 +75,9 @@ In this section, we'll learn how to share the Azure Anchor ID between multiple d
 ## Congratulations
 In this Lesson you learned how to persist Azure Spatial Anchors between app sessions and app restarts by saving the Azure Spatial Anchor ID to the local disk of the HoloLens 2. You also learned how to share Azure Spatial Anchors between multiple devices for a basic multi-user, static hologram shared experience!
 
+We will learn how to implement Azure Spatial Anchors as part of a fully interactive local shared experience during the final lesson of the Sharing Module. A local sharing experience may include functionality such as synchronized 3D object position, rotation, and scale, identifiers for each user, and shared application states. Azure Spatial Anchors enhances these shared scenarios by providing each participant with a common anchor which allows all users to see virtual objects in the same physical location. This is true across a range of device platforms, including HoloLens, Android, and iOS devices. To learn how to develop a shared experience, please complete all lessons in the Sharing module.
+
+In the next Lesson, we will learn how to provide users with real-time feedback. This feedback will include information about Anchor creation, the quality of environment understanding, and the state of the Azure session. Without feedback, users may not know whether an anchor has successfully been upload to Azure, whether the quality of the environment is sufficient for anchor creation, or the current state.
+
 [Next Lesson: ASA Lesson 3](mrlearning-asa-ch3.md)
 
