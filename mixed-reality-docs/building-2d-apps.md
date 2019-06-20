@@ -177,6 +177,6 @@ Once your app is up and running, package your app to [submit it to the Microsoft
 * [Gaze](gaze.md)
 * [Gesture](gestures.md)
 * [Motion controllers](motion-controllers.md)
-* [Voice input](voice-input.md)
+* [Voice](voice-input.md)
 * [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
