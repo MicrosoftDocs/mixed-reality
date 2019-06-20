@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Mixed Reality, gaze, gaze targeting, interaction, design
 ---
 # Head-gaze and commit
-Head-gaze and commit is an input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input such as the hand gesture air tap or the voice command “Select”. It is considered a "far" input model with indirect manipulation, meaning it is best used for interacting with content that is beyond arms reach.
+Head-gaze and commit is an input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input such as the hand gesture Air Tap or the voice command “Select”. It is considered a "far" input model with indirect manipulation, meaning it is best used for interacting with content that is beyond arms reach.
 
 ## Device support
 
@@ -37,23 +37,23 @@ Head-gaze and commit is an input model that involves targeting an object with th
 ## Head-gaze
 Mixed reality headsets use the position and orientation of the user's head to determine their head direction vector. You can think of this as a laser that points straight ahead from directly between the user's eyes. This is a fairly coarse approximation of where the user is looking. Your application can intersect this ray with virtual or real-world objects and draw a cursor at that location to let the user know what they are currently targeting.
 
-In addition to head gaze, some mixed reality headsets like the HoloLens 2 include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered separately in the [eye-gaze article](eye-tracking.md).
+In addition to head gaze, some mixed reality headsets like the HoloLens 2 include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze, but this comes with a very different set of design constraints, which will be covered separately in the [eye tracking article](eye-tracking.md).
 
 ## Commit
 After targeting an object or UI element, the user can interact or "click" on it using a secondary input. This is known as the commit step of the model. The following commit methods are supported:
 
-- Air tap gesture
+- Air Tap gesture
 - Speak the voice command "Select" or one of the targeted voice commands
 - Press the single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker)
 - Press the 'A' button on an Xbox Gamepad
 - Press the 'A' button on an Xbox Adaptive Controller
 
 ### Head-gaze and air tap gesture
-Air tap is a tapping gesture with the hand held upright. To perform an air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release. On HoloLens (1st gen), air tap is the most common secondary input.
+Air tap is a tapping gesture with the hand held upright. To perform an Air tap, raise your index finger to the ready position, then pinch with your thumb and raise your index finger back up to release. On HoloLens 1, Air tap is the most common secondary input.
 
 ![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
 
-Air tap is also available on HoloLens 2, and it has been relaxed from the original version. Nearly all types of pinches are now supported, as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture.  This new air tap replaces the old one through the same API, so existing applications will get the new behavior automatically after recompiling for HoloLens 2.
+Air tap is also available on HoloLens 2, and it has been relaxed from the original version. Nearly all types of pinches are now supported, as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture.  This new Air tap replaces the old one through the same API, so existing applications will get the new behavior automatically after recompiling for HoloLens 2.
 
 ### Head-gaze and "Select" voice command
 Voice commanding is one of the primary interaction methods on Mixed Reality. It provides a very powerful "Hands Free" mechanism to control the system. There are diferent types of voice interaction models:
@@ -68,10 +68,10 @@ To find more details and a comprenhesive list of available commands and how to u
 
 
 ### Head-gaze and HoloLens Clicker
-The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens (1st gen) Development Edition. The HoloLens Clicker allows a user to click with minimal hand motion and commit as a secondary input. The HoloLens Clicker connects to the HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
+The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens 1 Development Edition. The HoloLens Clicker allows a user to click with minimal hand motion and commit as a secondary input. The HoloLens clicker connects to the HoloLens 1 or 2 using Bluetooth Low Energy (BTLE).
 
-![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
-*HoloLens Clicker*
+![](images/hololens-clicker-500px.jpg)<br>
+HoloLens Clicker
 
 More information and instructions to pair the device can be found [here](hardware-accessories.md#pairing-bluetooth-accessories)
 
@@ -81,8 +81,8 @@ More information and instructions to pair the device can be found [here](hardwar
 ### Head-gaze and Xbox Wireless Controller
 The Xbox Wireless Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Wireless Controller.
 
-![Xbox Wireless Controller](images/xboxcontroller.jpg)<br>
-*Xbox Wireless Controller*
+![](images/xboxcontroller.jpg)<br>
+Xbox Wireless Controller
 
 [Pairing an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
 
@@ -92,20 +92,20 @@ Designed primarily to meet the needs of gamers with limited mobility, the Xbox A
 
 The Xbox Adaptive Controller allows to perform a "click" actuation as a secondary input by using the A button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories App to configure your Xbox Adaptive Controller.
 
-![Xbox Adaptive Controller](images/xbox-adaptive-controller-devices.jpg)<br>
-*Xbox Adaptive Controller*
+![](images/xbox-adaptive-controller-devices.jpg)<br>
+Xbox Adaptive Controller
 
 Connect external devices such as switches, buttons, mounts, and joysticks to create a custom controllers experience that is uniquely yours. Button, thumbstick and trigger inputs are controlled with assistive devices connected through 3.5mm jacks and USB ports.
 
-![Xbox Adaptive Controller ports](images/xbox-adaptive-controller-ports.jpg)<br>
-*Xbox Adaptive Controller ports*
+![](images/xbox-adaptive-controller-ports.jpg)<br>
+Xbox Adaptive Controller ports
 
 [Instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)
 
 <a href=https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
 
-## Design guidelines
+# Head-gaze design guidelines
 > [!NOTE]
 > More guidance specific to gaze design [coming soon](index.md).
 
@@ -152,10 +152,10 @@ When determining which nearby interactive elements to give focus to, provide a b
 
 
 ## Composite gestures
-Apps can recognize more than just individual taps. By combining tap, hold and release with the movement of the hand, more complex composite gestures can be performed. These composite or high-level gestures build on the low-level spatial input data (from air tap and bloom) that developers have access to.
+Apps can recognize more than just individual taps. By combining tap, hold and release with the movement of the hand, more complex composite gestures can be performed. These composite or high-level gestures build on the low-level spatial input data (from Air tap and Bloom) that developers have access to.
 
 ### Air tap
-The air tap gesture (as well as the other gestures below) reacts only to a specific tap. To detect other taps, such as Menu or Grasp, your app must directly use the lower-level interactions described in two key component gestures section above.
+The Air tap gesture (as well as the other gestures below) reacts only to a specific tap. To detect other taps, such as Menu or Grasp, your app must directly use the lower-level interactions described in two key component gestures section above.
 
 ### Tap and hold
 Hold is simply maintaining the downward finger position of the air tap. The combination of air tap and hold allows for a variety of more complex "click and drag" interactions when combined with arm movement such as picking up an object instead of activating it or "mousedown" secondary interactions such as showing a context menu.
