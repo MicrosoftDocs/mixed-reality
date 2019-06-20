@@ -8,7 +8,18 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# **Part 5 (unsure about name)** 
+# Azure Spatial Anchors and Shared Experiences
+
+In this lesson, we will learn how to integrate Azure Spatial Anchors (ASA) into our shared experience. ASA allows multiple co-located devices to have a common understanding if their physical environment in order to anchor virtual experiences such that all participants see objects in the same physical place.
+
+Before proceeding with this lesson, we will need to complete the ASA Learning Module, which will cover ASA basics, Azure account and resource creation, and other fundamental buildings blocks that are required before we can integrate ASA into our shared experience.
+
+Objectives:
+
+- Integrate ASA into a shared experience for multi-device alignment
+- Learn the fundamentals of how ASA works in the context of a local shared experience
+
+### Instructions
 
 1. Save the project from the previous lesson (control+S) and name it "HLSharedProjectMainPart5.unity" so that it's easier to find when you need it again.
 
@@ -41,5 +52,5 @@ keywords: mixed reality, unity, tutorial, hololens
 
 ## Congratulations
 
-All of the sharing abilities are set up! Now, you can invite co-workers or friends to your Unity Project and have all users interact with everything you build in the project! Enjoy!
+In this Lesson you learned how to integrate Azure's powerful new Spatial Anchors to align co-located devices in a shared experience! This lesson also concludes the Sharing Module. We learned how to set up a new Photon account, integrate Photon and PUN into a new Unity application, configuring avatars and shared objects, and finally aligning multiple participants using ASA. 
 

@@ -8,9 +8,19 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# **Shared Objects** 
+# Synchronizing the Movements of Shared Objects
 
-1. Save the project from the previous lesson (control+S) and name it "HLSharedProjectMainPart4.unity" so that it's easier to find when you need it again.
+In this lesson, we will learn how to share the movements of objects so that all participants of a shared session can collaborate together and view each others' interactions. This lesson builds upon the Lunar Launcher that was built as part of the [Base Module Tutorials](mrlearning-base.md).
+
+Objectives:
+
+- Import the completed Lunar Launcher as the 3D model to be shared
+- Configure your project to share the movements of the 3D model.
+- Learn how to build a basic multi-user collaborative application
+
+### Instructions
+
+1. Save the scene from the previous lesson (control+S). You may name it "HLSharedProjectMainPart4.unity" so that it's easier to find when you need it again.
 
 2. Delete the "NetworkLobby" object (by selecting it and pressing delete). Also, go into the "prefabs" folder from lesson 2 and delete the "NetworkLobby" prefab from there as well.
 
@@ -47,22 +57,6 @@ keywords: mixed reality, unity, tutorial, hololens
 
 ![Module3Chapter4step9im](images/module3chapter4step9im.PNG)
 
-> note: sometimes users will get an error saying "Assets\MixedRealityToolkit.Examples\Demos\\StandardShader\\Scripts\\Editor\\MaterialMatrixEditor.cs(14,41): error CS0118: 'Editor' is a namespace but is used like a type." If you have recieved this error, follow the next step. If you have not, go to step 11.
-
-10. Double click on the error message to go to visual studio. You will see a lot of overwhelming coding scripts, all you have to do is type in the following in the places marked in the images below:
-
-![Module3Chapter4step9im](images/module3chapter4step10aim.PNG)
-
-> click on the boxed text in the image above.
-
-![Module3Chapter4step9im](images/module3chapter4step10bim.PNG)
-
-> Select the boxed option in the image above.
-
-![Module3Chapter4step9im](images/module3chapter4step10cim.PNG)
-
-> Add the 2 sections of text boxed in the image above.
-
 11. Finally, in the "DebugWindow" object, change the width to 80 and the height to 10.
 
 ![Module3Chapter4step9im](images/module3chapter4step11im.PNG)
@@ -72,7 +66,11 @@ keywords: mixed reality, unity, tutorial, hololens
 
 ## Congratulations
 
-Once this is complete, all users that join your Unity Project can move the Lunar Module around. When one user moves the object, another can see the object move around! 
+Once this is complete, all users that join your Unity project can move the Lunar Launcher around. All movements are synchronized so that each user can see each others' interactions. These concepts serve as the foundational building blocks for full-featured shared collaboration experiences. 
+
+Although all users are connected as part of a shared experience and can see the relative movements of objects, the application is still unable to accurately align avatars and objects so that local users see each other and objects in the same place within the physical world. In order to anchor a local shared experiences, every device requires a common understanding of the physical environment. In this module, we will achieve this using [Azure Spatial Anchors](<https://azure.microsoft.com/en-us/services/spatial-anchors/>) (ASA), which will be implemented in the next lesson.
+
+Before proceeding to the next lesson, we will need to complete the ASA Learning Module, which will cover ASA basics, Azure account and resource creation, and other fundamental buildings blocks required before we can integrate this into our shared experience.
 
 [Next Lesson: Sharing(Photon) Lesson 5](mrlearning-sharing(photon)-ch5.md)
 
