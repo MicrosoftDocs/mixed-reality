@@ -94,7 +94,7 @@ Unity's default font material does not support occlusion. Because of this, you w
 
 
 ## See also
-* [Text Prefab in the MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Prefabs/Text)
+* [Text Prefab in the MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Prefabs/Text)
 * [Typography](typography.md)
 
  
