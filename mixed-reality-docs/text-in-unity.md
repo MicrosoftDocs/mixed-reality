@@ -80,7 +80,7 @@ Segoe UI (the default font for Windows) works well in most cases. However, avoid
 
 ## Sharp text rendering quality with proper dimension
 
-Based on these scaling factors, we have created [text prefabs with UI Text and 3D Text Mesh](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/StandardAssets/Prefabs/Text). Developers can use these prefabs to get sharp text and consistent font size.
+Based on these scaling factors, we have created [text prefabs with UI Text and 3D Text Mesh](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Prefabs/Text). Developers can use these prefabs to get sharp text and consistent font size.
 
 ![Sharp text rendering quality with proper dimension](images/hug-text-06-1000px.png)<br>
 *Sharp text rendering quality with proper dimension*
