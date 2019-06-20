@@ -173,5 +173,5 @@ Objectives:
 
 ## Congratulations
 
-[Next Lesson: ASA Lesson 4](mrlearning-base-ch4.md)
+
 
