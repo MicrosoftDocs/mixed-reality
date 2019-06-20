@@ -22,6 +22,8 @@ Objectives:
 
 3. Download and import the Azure [Speech SDK](https://aka.ms/csspeech/unitypackage) for Unity asset package. Import the Speech SDK package by clicking on "assets," selecting "import package," then selecting "custom package." Find the Speech SDK package downloaded earlier and open it to begin the importing process. 
 
+   ![Module4Chapter1step3ima](images/module4chapter1step3ima.PNG)
+
 ![Module4Chapter1step3im](images/module4chapter1step3im.PNG)
 
 4. In the next pop-up window, click “Import” to begin importing the Speech SDK package. Ensure all items are checked, as shown in the image below.
@@ -29,11 +31,15 @@ Objectives:
 ![Module4Chapter1step4im](images/module4chapter1step4im.PNG)
 
 
-5. Download the [Lunarcom](https://github.com/levilais/Speech-SDK-Module/raw/master/Speech SDK Module/Lunarcom.unitypackage) asset package. The Lunarcom asset package is a collection of assets and scripts developed for this lesson series to showcase a practical use of Azure's Speech SDK. It is a voice-command terminal that will ultimately interface with the lunar module assembly experience developed in the [Base Module Tutorial.](mrlearning-base-ch6.md)
+5. Download the [Lunarcom](https://github.com/levilais/Speech-SDK-Module/raw/master/Speech%20SDK%20Module/Lunarcom.unitypackage) asset package. The Lunarcom asset package is a collection of assets and scripts developed for this lesson series to showcase a practical use of Azure's Speech SDK. It is a voice-command terminal that will ultimately interface with the lunar module assembly experience developed in the [Base Module Tutorial.](mrlearning-base-ch6.md)
 6. Import the Lunarcom asset package into your Unity project by following similar steps you took to import the Mixed Reality Toolkit and Speech SDK.
 7. Configure the Mixed Reality Toolkit (MRTK). To do this, click on the "Mixed Reality Toolkit" panel in the top of your window, and then select "Add to Scene and Configure."
 
 ![Module4Chapter1step7im](images/module4chapter1step7im.PNG)
+
+![module4Chapter1step9ima](images/module4chapter1step9ima.PNG)
+
+![module4Chapter1step9imb](images/module4chapter1step9imb.PNG)
 
 8. Your scene will now have several new items in it from the MRTK. Save your scene under a different name by clicking on "file," then "save as" and name your scene “SpeechScene”. 
 
@@ -45,7 +51,7 @@ Objectives:
 
 10. Also in the inspector panel (with the “MixedRealityToolkit" object selected in your hierarchy), disable the diagnostics system by unchecking the box to the right of "Enable Diagnostics System."
 
-![Module4Chapter1step10im](images/module4chapter1step10im.PNG)
+![Module4Chapter1step9imd](images/module4chapter1step9imd.PNG)
 
 11. In the project panel, expand the "Lunarcom" folder and drag the "Lunarcom_Base" prefab into your hierarchy.
 
@@ -87,6 +93,33 @@ Objectives:
 22. In the "Wake Word" slot, type in "Activate Terminal." Also, in the "Dismiss Word" slot, type in "Dismiss Terminal."
 
 ![Module4Chapter1step18im](images/module4chapter1step22im.PNG)
+
+### Build your application to your device
+
+1. If you closed the Build Settings window from the previous sections, open the build settings window again by going to File>Build Settings.
+   ![Lesson1 Chapter5 Step1](C:/GitHub/mixed-reality/mixed-reality-docs/images/Lesson1Chapter5Step1.JPG)
+2. Ensure the scene you want to try is in the “Scenes in Build” list by clicking on the “Add Open Scenes” button.
+3. Press the Build button to begin the build process.
+   ![Lesson1 Chapter5 Step3](C:/GitHub/mixed-reality/mixed-reality-docs/images/Lesson1Chapter5Step3.JPG)
+4. Create and name a new folder for your application. In the image below, a folder with the name “App” was created to contain the application. Click “Select Folder” to begin building to the newly created folder. After the build has completed, you may close the "Build Settings" window in Unity. 
+   ![Lesson1 Chapter5 Step4](C:/GitHub/mixed-reality/mixed-reality-docs/images/Lesson1Chapter5Step4.JPG)
+
+> NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)", then you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk>)
+
+5. After the build is completed, open the newly created folder containing your newly built application files. Double click on the “MixedRealityBase.sln” solution (or the corresponding name, if you used an alternative name for your project) to open the solution file in Visual Studio.
+
+> Note: Be sure to open the newly created folder (i.e., the "App" folder, if following the naming conventions from the previous steps), as there will be a similarly named .sln file outside of that folder that is not to be confused with the .sln file inside the build folder. 
+
+![Lesson1 Chapter5 Step5](C:/GitHub/mixed-reality/mixed-reality-docs/images/Lesson1Chapter5Step5.JPG)
+
+> Note: If Visual Studio asks you to install new components, please take a moment to ensure that all prerequisite components are installed as specified in [the "Install the Tools" page](install-the-tools.md)
+
+6. Plug your HoloLens 2 into your PC with the USB cable. While these lesson instructions assume you will be deploying a testing with a HoloLens 2 device, you may also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps>)
+7. Before building to your device, ensure that the device is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a pin. Please follow [these instructions](https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
+8. Configure Visual Studio for building to your HoloLens 2 by selecting the “Release” configuration and the “ARM” architecture.
+   ![Lesson1 Chapter5 Step8](C:/GitHub/mixed-reality/mixed-reality-docs/images/Lesson1Chapter5Step8.JPG)
+9. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting “Start without Debugging” will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You may also select Build>Deploy Solution to deploy to your device without having the application automatically start.
+   ![Lesson1 Chapter5 Step9](C:/GitHub/mixed-reality/mixed-reality-docs/images/Lesson1Chapter5Step9.JPG)
 
 ## Congratulations
 
