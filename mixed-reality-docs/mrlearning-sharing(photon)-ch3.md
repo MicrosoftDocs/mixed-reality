@@ -1,6 +1,6 @@
 ---
-title: MR Learning ASA Module Azure Spatial Anchor on HoloLens 2
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: MR Learning Sharing Module for HoloLens 2
+description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
