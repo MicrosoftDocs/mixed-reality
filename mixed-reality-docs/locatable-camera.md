@@ -116,7 +116,7 @@ Keeping an interactive application frame-rate is critical, especially when deali
 
 Some image marker systems only provide a single pixel location (others provide the full transform in which case this section will not be needed), which equates to a ray of possible locations. To get to a single 3d location we can then leverage multiple rays and find the final result by their approximate intersection. To do this you'll need to:
 1. Get a loop going collecting multiple camera images
-2. Find the [associated feature points](#pixel-to-application-specified-coordinate-system), and their world rays
+2. Find the associated feature points, and their world rays
 3. When you have a dictionary of features, each with multiple world rays, you can use the following code to solve for the intersection of those rays:
 
 ```
