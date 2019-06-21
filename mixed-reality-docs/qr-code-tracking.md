@@ -17,17 +17,16 @@ Specific Windows Mixed Reality devices can use QR codes to track in an environme
 
 ## Device Compatibility for QR Code Tracking
 
-### Hololens V1 Devices
-Hololens V1 cannot natively track QR codes.
+### HoloLens (1st gen)
+HoloLens (1st gen) cannot natively track QR codes.
 
-### Hololens V2 Devices
-Hololens V2 devices can track QR codes by default. 
+### HoloLens 2
+HoloLens 2 can track QR codes by default. 
 
 Apps that use this feature must request the webcam capability to read QR codes in a space.
 
-### VR Devices
-
-VR devices running Windows 10 version 1809 can track QR codes if the `HKLM\SOFTWARE\Microsoft\HoloLensSensors` registry key is enabled.
+### Windows Mixed Reality (VR) Headsets
+Windows Mixed Reality (VR) headsets running Windows 10 version 1809 can track QR codes if the `HKLM\SOFTWARE\Microsoft\HoloLensSensors` registry key is enabled.
 
 #### To turn on QR tracking:
 
