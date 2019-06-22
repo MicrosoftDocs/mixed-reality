@@ -39,7 +39,7 @@ Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manu
 | ARM32 build support | ARM32 and ARM64 build support |
 | Stable LTS build release | Beta stability |
 | [.NET Scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) *deprecated* | [.NET Scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) *removed* |
-| UNET Networking *deprecated* | UNET Networking *deprecated* |
+| UNET Networking *deprecated* | UNET Networking *removed* |
 
 ## Update scene/project settings in Unity
 

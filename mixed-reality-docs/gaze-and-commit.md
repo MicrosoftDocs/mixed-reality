@@ -11,6 +11,7 @@ keywords: Mixed Reality, gaze, gaze targeting, interaction, design
 # Head-gaze and commit
 Head-gaze and commit is an input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input, such as the hand gesture air tap or the voice command Select. It is considered a far input model with indirect manipulation, meaning it is best used for interacting with content that is beyond arms reach.
 
+
 ## Device support
 
 <table>
@@ -55,6 +56,7 @@ Air tap is a tapping gesture with the hand held upright. To perform an air tap, 
 
 Air tap is also available on HoloLens 2. It has been relaxed from the original version. Nearly all types of pinches are now supported as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture. This new air tap replaces the old one through the same API, so existing applications will have the new behavior automatically after recompiling for HoloLens 2.
 
+
 ### Head-gaze and "Select" voice command
 Voice commanding is one of the primary interaction methods in mixed reality. It provides a very powerful hands fee mechanism to control the system. There are diferent types of voice interaction models:
 
@@ -68,10 +70,11 @@ To find more details as well as a comprenhesive list of available commands and h
 
 
 ### Head-gaze and HoloLens Clicker
+
 The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st Gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st Gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
 
-![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
-*HoloLens Clicker*
+![](images/hololens-clicker-500px.jpg)<br>
+HoloLens Clicker
 
 More information and instructions to pair the device can be found [here](hardware-accessories.md#pairing-bluetooth-accessories)
 
@@ -81,8 +84,8 @@ More information and instructions to pair the device can be found [here](hardwar
 ### Head-gaze and Xbox Wireless Controller
 The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories application to configure your Xbox Wireless Controller.
 
-![Xbox Wireless Controller](images/xboxcontroller.jpg)<br>
-*Xbox Wireless Controller*
+![](images/xboxcontroller.jpg)<br>
+Xbox Wireless Controller
 
 [Pairing an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
 
@@ -92,20 +95,20 @@ Designed primarily to meet the needs of gamers with limited mobility, the Xbox A
 
 The Xbox Adaptive Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accesories application to configure your Xbox Adaptive Controller.
 
-![Xbox Adaptive Controller](images/xbox-adaptive-controller-devices.jpg)<br>
-*Xbox Adaptive Controller*
+![](images/xbox-adaptive-controller-devices.jpg)<br>
+Xbox Adaptive Controller
 
 Connect external devices such as switches, buttons, mounts, and joysticks to create a custom controller experience that is uniquely yours. Button, thumbstick, and trigger inputs are controlled with assistive devices connected through 3.5mm jacks and USB ports.
 
-![Xbox Adaptive Controller ports](images/xbox-adaptive-controller-ports.jpg)<br>
-*Xbox Adaptive Controller ports*
+![](images/xbox-adaptive-controller-ports.jpg)<br>
+Xbox Adaptive Controller ports
 
 [Instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)
 
 <a href=https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
 
-## Design guidelines
+# Head-gaze design guidelines
 > [!NOTE]
 > More guidance specific to gaze design [coming soon](index.md).
 

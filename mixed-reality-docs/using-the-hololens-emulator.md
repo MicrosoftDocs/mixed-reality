@@ -22,12 +22,14 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 Download the HoloLens Emulator and holographic project templates.
 
 Versions: 
+
 * [HoloLens 2 Emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2095316).
 * [HoloLens Emulator (1st Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
 
 ### HoloLens Emulator system requirements
+
 
 The HoloLens Emulator uses Hyper-V with RemoteFx (1st Gen Emulator) or GPU-PV (HoloLens 2 Emulator) for hardware accelerated graphics. To use the emulator, make sure your PC meets the following hardware requirements:
 * 64-bit Windows 10 Pro, Enterprise, or Education 
@@ -43,7 +45,7 @@ The HoloLens Emulator uses Hyper-V with RemoteFx (1st Gen Emulator) or GPU-PV (H
    * Hardware-based Data Execution Prevention (DEP)
 * GPU requirements
    * DirectX 11.0 or later
-   * WDDM 1.2 graphics driver or later (1st gen)
+   * WDDM 1.2 graphics driver or later (1st Gen)
    * WDDM 2.5 graphics driver (HoloLens 2 Emulator)
    * The emulator might work with an unsupported GPU, but will be significantly slower
 
@@ -63,6 +65,7 @@ The emulator may take a minute or more to boot when you first start it. We recom
 ## Basic emulator input
 
 Controlling the emulator is very similar to many common 3D video games. In nput options are available for using the keyboard, mouse, or Xbox controller. You control the emulator by directing the actions of a simulated user by wearing a HoloLens. Your actions move the simulated user around the environment. Applications running in the emulator respond like they would on a real device.
+
 
 The cursor on HoloLens (1st Gen) follows head movement and rotation. In the HoloLens 2 Emulator, the cursor follows hand movement and orientation.
 

@@ -92,5 +92,5 @@ Does the user understand ...
 
 ## See also
 * [Head-gaze and commit](gaze-and-commit.md)
-* [Direct manipulation with hands](direct-manipulation.md)
-* [Point and commit with hands](point-and-commit.md)
+* [Direct manipulation](direct-manipulation.md)
+* [Point and commit](point-and-commit.md)
