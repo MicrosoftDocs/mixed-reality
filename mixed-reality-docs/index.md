@@ -48,7 +48,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                           </div>
                                           <div class="cardText">
                                               <h3>Develop</h3>
-                                              <p>Get development guides, learn the technology and understand the science.</p>
+                                              <p>Get development guides, learn the technology, and understand the science.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -67,7 +67,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Distribute</h3>
-                                                  <p>Get your app ready for others and consider creating a 3D launcher.</p>
+                                                  <p>Get your application ready for others and consider creating a 3D launcher.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,7 +91,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Azure Spatial Anchors</h3>
-                                                  <p>Spatial Anchors is a cross-platform developer service that allows you to create Mixed Reality experiences using objects that persist their location across devices over time.</p>
+                                                  <p>Spatial Anchors is a cross-platform developer service that lets you create mixed reality experiences using objects that persist their location across devices over time.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -110,7 +110,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Speech Services</h3>
-                                                  <p>Discover and integrate Azure powered speech capabilities like speech to text, speaker recognition or speech translation into your application.</p>
+                                                  <p>Discover and integrate Azure powered speech capabilities like speech to text, speaker recognition, or speech translation into your application.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,7 +129,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Vision Services</h3>
-                                                  <p>Identify and analyze your image or video content using Vision Services like computer vision, face detection, emotion recognition or video indexer.</p>
+                                                  <p>Identify and analyze your image or video content using Vision Services like computer vision, face detection, emotion recognition, or video indexer.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -142,7 +142,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
 
 [![HoloLens 2](images/hololens2.jpg)](https://www.microsoft.com/hololens/hardware)
 
-[HoloLens 2](https://www.microsoft.com/hololens/hardware) offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes- all backed by the reliability, security, and scalability of cloud and AI services from Microsoft. The [HoloLens 2 Development Edition](https://www.microsoft.com/en-us/hololens/developers) helps you jump-start your mixed reality plans with an offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services.
+[HoloLens 2](https://www.microsoft.com/hololens/hardware) offers the most comfortable and immersive mixed reality experience available with industry-leading solutions that deliver value in minutes. All backed by the reliability, security, and scalability of cloud and AI services from Microsoft. The [HoloLens 2 Development Edition](https://www.microsoft.com/en-us/hololens/developers) helps you jump-start your mixed reality plans with an offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services.
 
 <h2>News and notes</h2>
 
@@ -157,7 +157,7 @@ As promised, we are excited to share more mixed reality goodness with you! We’
 <tr>
 <td><b>Porting Guides</b> <br>1. HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) to MRTK Version 2
 <br>2. HoloLens (1st gen) to HoloLens 2 (x86 to ARM, interaction and design recommendations)
-</td></td><td>March - May 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-porting-guide>Getting your existing app ready for HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>HoloToolKit to MRTK APIs</a></td>
+</td></td><td>March - May 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-porting-guide>Getting your existing application ready for HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>HoloToolKit to MRTK APIs</a></td>
 </tr>
 <tr>
 <td>Monthly open source developer modules (Tutorials/Sample apps)</td><td>March - June 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1>MR learning base module</a></td>
@@ -178,4 +178,4 @@ As promised, we are excited to share more mixed reality goodness with you! We’
 
 
 >[!IMPORTANT]
->All Mixed Reality development materials are provided on this site for your reference only. Your app, its usage, and its effect on end users is your sole responsibility as the app developer, including ensuring that your app does not cause discomfort, injury or any other harm to an end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your app to ensure that your app is safe and you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
+>All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the applicatioin developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
