@@ -30,18 +30,23 @@ Now you're ready to create your DirectX 11 Windows Mixed Reality app! Note, to r
 
 ## Creating a UWP project
 
-Once the tools are installed you can then create a holographic DirectX UWP project. To create a new project:
+Once the [tools are installed](install-the-tools.md) you can then create a holographic DirectX UWP project.
+
+To create a new project:
 1. Start **Visual Studio**.
 2. From the **File** menu, point to **New** and select **Project** from the context menu. The **New Project** dialog opens.
 3. Expand **Installed** on the left and expand the **Visual C++** language node.
 4. Navigate to the **Windows Universal > Holographic** node and select **Holographic DirectX 11 App (Universal Windows) (C++/WinRT)**.
+   ![Screenshot of the Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio](images/holographic-directx-app-cpp-new-project.png)<br>
+   *Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio*
    >[!IMPORTANT]
    >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install the latest HoloLens Emulator](using-the-hololens-emulator.md).
 5. Fill in the **Name** and **Location** text boxes, and click or tap **OK**. The holographic app project is created.
-6. For development targeting only HoloLens 2, ensure that the **Target version** and **Minimum version** are set to **Windows 10, version 1903**.  If you are also targeting HoloLens (1st gen) or desktop Windows Mixed Reality headsets, you can set **Minimum version** to **Windows 10, version 1809** instead, although this will require some <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">version adapative checks</a> in your code when using new features of HoloLens 2.
-
-![Screenshot of the holographic app project template in Visual Studio](images/holographic-directx-app-cpp-new-project.png)<br>
-*Holographic app project template in Visual Studio*
+6. For development targeting only HoloLens 2, ensure that the **Target version** and **Minimum version** are set to **Windows 10, version 1903**.  If you are also targeting HoloLens (1st gen) or desktop Windows Mixed Reality headsets, you can set **Minimum version** to **Windows 10, version 1809** instead, although this will require some <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">version adaptive checks</a> in your code when using new features of HoloLens 2.
+   ![Screenshot of setting Windows 10, version 1903 as the target and minimum versions](images/new-uwp-project.png)<br>
+   *Setting **Windows 10, version 1903** as the target and minimum versions*
+   >[!IMPORTANT]
+   >If you do not see **Windows 10, version 1903** as an option, you do not have the latest Windows 10 SDK installed.  To get this option to appear, <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk" target="_blank">install version 10.0.18362.0 or later of the Windows 10 SDK</a>.
 
 The template generates a project using <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gestures.md#air-tap) or press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
 

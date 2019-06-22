@@ -25,11 +25,11 @@ The rest of this article includes a detailed overview of these requirements as w
 
 ## Detailed guidance
 
-## Exporting models
+### Exporting models
 
 The Windows Mixed Reality home expects 3D assets to be delivered using the .glb file format with embedded images and binary data. Glb is the binary version of the glTF format which is a royalty free open standard for 3D asset delivery maintained by the Khronos group. As glTF evolves as an industry standard for interoperable 3D content so will Microsoft’s support for the format across Windows apps and experiences. If you haven't created a glTF asset before you can find a [list of supported exporters and converters](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) on the glTF working group github page.  
 
-## Modeling guidelines
+### Modeling guidelines
 
 Windows expects assets to be generated using the following modeling guidelines to ensure compatibility with the Mixed Reality home experience. When modeling in your program of your choice keep in mind the following recommendations and limitations:
 1. The Up axis should be set to “Y”.
@@ -53,7 +53,7 @@ The Windows Mixed Reality home does not support models with more than 10,000 tri
 |  LOD 1 |  5,000  |  10,000 | 
 |  LOD 2 |  2,500  |  10,000 | 
 
-### Node Counts and Submesh limits
+### Node counts and submesh limits
 The Windows Mixed Reality home does not support models with more than 64 nodes or 32 submeshes per LOD. Nodes are a concept in the [glTF specification](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) that define the objects in the scene. Submeshes are defined in the array of [primitives](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) on the mesh in the object. 
 
 |  Feature |  Description  |  Max Supported | Documentation |
@@ -61,7 +61,7 @@ The Windows Mixed Reality home does not support models with more than 64 nodes o
 |  Nodes |  Objects in the glTF Scene |  64 per LOD | [Here](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy)|
 |  Submeshes |  Sum of primitives on all meshes |  32 per LOD | [Here](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes)|
 
-## Material Guidelines
+## Material guidelines
 
 Textures should be prepared using a PBR metal roughness workflow. Begin by creating a full set of textures including Albedo, Normal, Occlusion, Metallic, and Roughness. Windows Mixed Reality supports textures with resolutions up to 4096x4096 but its recommended that you author at 512x512. Additionally textures should be authored at resolutions in multiples of 4 as this is a requirement for the compression format applied to textures in the exporting steps outlined below. Finally, when gerating mip maps or a texture the lowest mip must be a maximum of 4x4.
 <br>

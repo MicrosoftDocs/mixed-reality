@@ -5,6 +5,7 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
@@ -42,7 +43,7 @@ The goal of this chapter is to enhance the button collection we previously creat
 
 3. In order to configure the button collection to follow the user, we need to implement the following adjustments (please also refer to the image below):
 - In the Orbital script, set the "orientation type" drop-down list to "Yaw Only." This makes it so that only one axis of the object rotates as it follows the user.
-- Set the local offset to 0 on all axes. Set the World Offset to x = 0, y = -0.1 and z = 0.6. This locks movement of the object such that when the user changes height, the object will remain at a fixed height in the physical environment, while still allowing it to follow the user as the user moves about the environment. These values may be adjusted to achieve a wade range of behaviors.
+- Set the local offset to 0 on all axes. Set the World Offset to x = 0, y = -0.1 and z = 0.6. This locks movement of the object such that when the user changes height, the object will remain at a fixed height in the physical environment, while still allowing it to follow the user as the user moves about the environment. These values may be adjusted to achieve a wide range of behaviors.
 - For a follow behavior whereby the buttons only follow the user’s view after the user turns his or her head sufficiently far, you could select the "Use Angle Stepping for world offset" checkbox (Note: This title may be truncated on some screens, as it is in the image below.) For example, to have the object follow the user only every 90 degrees, set the number of steps equal to 4 (marked by a green arrow in the example to the left). 
 
 ![Lesson3 Chapter2 Step3im](images/Lesson3_chapter2_step3im.PNG)

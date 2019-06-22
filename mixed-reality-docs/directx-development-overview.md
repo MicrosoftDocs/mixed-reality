@@ -22,7 +22,7 @@ The differences between DirectX development for [2D views and immersive views](a
 
 To begin developing immersive apps:
 * For **UWP apps**, [create a new UWP project using the templates in Visual Studio](creating-a-holographic-directx-project.md). Based on your language, **Visual C++** or **Visual C#**, you will find the UWP templates under **Windows Universal** > **Holographic**.
-* For **Win32 apps**, [start from the *BasicHologram* Win32 sample](creating-a-holographic-directx-project#creating-a-win32-project).
+* For **Win32 apps**, [start from the *BasicHologram* Win32 sample](creating-a-holographic-directx-project.md#creating-a-win32-project).
 
 This is a great way to get the code you need to add holographic rendering support to an existing app or engine. Code and concepts are presented in the template in a way that's familiar to any developer of real-time interactive software.
 
@@ -37,7 +37,8 @@ The following topics discuss the base requirements of adding Windows Mixed Reali
 ## Adding mixed reality capabilities and inputs
 
 To enable the best possible experience for users of your immersive apps, you'll want to support the following key building blocks:
-* [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
+* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](voice-input-in-directx.md)
 * [Spatial sound in DirectX](spatial-sound-in-directx.md)
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)

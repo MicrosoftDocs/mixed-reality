@@ -92,7 +92,7 @@ In this chapter, we will set some Unity project settings that help us target the
 
 Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
 1. Select **Edit > Project Settings > Quality**
-2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and Fastest row is green.
+2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green.
 
 **For mixed reality applications targeted to occluded displays**, you can leave the quality settings to its default values.
 
