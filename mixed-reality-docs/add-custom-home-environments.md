@@ -21,21 +21,11 @@ When using a custom environment you'll notice that teleporting, interacting with
 ## Device support
 
 <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <tr>
-        <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
-    </tr>
-     <tr>
-        <td>Custom home environments</td>
-        <td>❌</td>
-        <td>✔️</td>
-    </tr>
+<tr>
+<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+</tr><tr>
+<td> Custom home environments</td><td style="text-align: center;"></td><td style="text-align: center;"> ✔️</td>
+</tr>
 </table>
 
 ## Trying a sample environment
@@ -146,5 +136,6 @@ The default spawn location is located at 0,0,0 in the environment. Its not curre
 When you create your custom environment, it will be using an acoustics rendering simulation that does not match the physical space you have created. Sound may come from the wrong directions and may sound muffled. 
 
 ## See also
+* [Navigating the Windows Mixed Reality Home](#navigating-the-windows-mixed-reality-home.md)
 * [Windows Mixed Reality Asset Converter (on GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
 

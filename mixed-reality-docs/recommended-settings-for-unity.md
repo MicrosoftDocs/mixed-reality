@@ -60,12 +60,6 @@ To enable this feature in your Unity Project
 
 Further, it is recommended to select **16-bit depth** under the **Depth Format** setting in this panel, especially for Hololens Development. Selecting 16-bit compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed.
 
-In order for the Windows Mixed Reality platform to optimize hologram stability, it relies on the depth buffer to be accurate and match any rendered holograms on screen. Thus, with depth buffer sharing on, it is important when rendering color, also render depth. In Unity, most Opaque or TransparentCutout materials will render depth by default but transparent and text objects will generally not render depth although this is shader dependent, etc. 
-
-If using the Mixed Reality Toolkit Standard shader, to render depth for transparent objects:
-1) Select the tranparent material that is using the MRTK Standard shader and open the Inspector editor window
-2) Set **Rendering Mode** to **Custom** then set **Mode** to **Transparent** and finally set **Depth Write** to **On**
-
 >[!NOTE]
 > Developers should beware of Z-fighting when changing these values along with the camera's near/far plane settings. Z-Fighting occurs when two gameobjects try to render to the same pixel and due to limitations in fidelity of the depth buffer (i.e z depth), Unity cannot discern which object is in front of the other. Developers will note a flickering between two game objects as they *fight* for the same z-depth value. This can be solved by switching to 24-bit depth format as there will be a larger range of values for each object to calculate upon for their z-depth from the camera.
 >
@@ -84,9 +78,6 @@ Unity has deprecated support for the .NET scripting backend and thus recommend d
 3) Utilize an SSD for building
 
 Please read [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) for more info.
-
-> [!NOTE]
-> Furthermore, it may be beneficial to setup a [Cache Server](https://docs.unity3d.com/Manual/CacheServer.html), especially for Unity projects with a large amount of assets (excluding script files) or constantly changing scenes/assets. When opening a project, Unity stores qualifying assets into an internal cache format on the developer machine. Items must be re-imported and thus re-processed when modified. This process can be done once and saved in a Cache Server and consequently shared with other developers to save time, instead of every developer processing the re-import of new changes locally.
 
 ## Publishing properties
 
