@@ -10,7 +10,7 @@ keywords: HoloLens, components, sensors, technology, tech, tear down, teardown,
 
 
 
-# HoloLens (1st gen) hardware details
+# HoloLens (1st Gen) hardware details
 
 ![Microsoft HoloLens](images/see-through-400px.jpg)
 
@@ -18,7 +18,7 @@ Microsoft HoloLens is the world's first fully untethered holographic computer. H
 
 ## How to get Microsoft HoloLens
 
-Microsoft HoloLens is available to purchase as a both a Development Edition and a Commercial Suite configuration (which includes a warranty and enterprise features for added security and device management). If you're in North America, you can also rent HoloLens through a partner.
+Microsoft HoloLens is available to purchase as a both a Development Edition and a Commercial Suite configuration that includes a warranty and enterprise features for added security and device management. If you're in North America, you can also rent HoloLens through a partner.
 
 [Click here for more details on purchasing or renting Microsoft HoloLens](https://www.microsoft.com/hololens/buy).
 
@@ -71,15 +71,15 @@ Microsoft HoloLens is available to purchase as a both a Development Edition and 
 ### Processors
 
 ![The motherboard for Microsoft HoloLens](images/motherboard-400px.jpg)
-* Intel 32 bit architecture with TPM 2.0 support
+* Intel 32-bit architecture with TPM 2.0 support
 * Custom-built Microsoft Holographic Processing Unit (HPU 1.0)
 
 ### Weight
-* 579g
+* 579 g
 
 ### Memory
-* 64GB Flash
-* 2GB RAM
+* 64 GB Flash
+* 2 GB RAM
 
 ### What's in the box
 * HoloLens Development Edition
