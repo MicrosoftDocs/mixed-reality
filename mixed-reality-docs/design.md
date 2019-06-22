@@ -14,7 +14,9 @@ keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns
 
 ![Design for mixed reality](images/Bicycle-Leschi10.gif)
 
+
 This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices, such as HoloLens and immersive devices, such as Acer and HP Windows Mixed Reality headsets. So, consider this work as a set of topics for how to design for Windows head-mounted displays.
+
 
 ## Article categories
 
