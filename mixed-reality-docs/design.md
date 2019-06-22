@@ -14,7 +14,9 @@ keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns
 
 ![Design for mixed reality](images/Bicycle-Leschi10.gif)
 
-This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets). So, consider this work as a set of topics for how to design for Windows head-mounted displays.
+
+This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices, such as HoloLens and immersive devices, such as Acer and HP Windows Mixed Reality headsets. So, consider this work as a set of topics for how to design for Windows head-mounted displays.
+
 
 ## Article categories
 
@@ -189,7 +191,7 @@ Build great experiences from samples designed and created by our team.
                         </div>
                         <div class="cardText">
                             <h3>Periodic Table of the Elements</h3>
-                            <p>Learn how to lay out an array of objects in 3D space with various surface types using an Object collection.</p>
+                            <p>Learn how to lay out an array of objects in 3D space with various surface types using an object collection.</p>
                         </div>
                     </div>
                 </div>
@@ -208,7 +210,7 @@ Build great experiences from samples designed and created by our team.
                         </div>
                         <div class="cardText">
                             <h3>Lunar Module</h3>
-                            <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.</p>
+                            <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller. input.</p>
                         </div>
                     </div>
                 </div>
@@ -227,7 +229,7 @@ Build great experiences from samples designed and created by our team.
                         </div>
                         <div class="cardText">
                             <h3>Galaxy Explorer</h3>
-                            <p>The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code.</p>
+                            <p>The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an application, watched a team build it, and can now get the source code.</p>
                         </div>
                     </div>
                 </div>
@@ -344,7 +346,7 @@ Build great experiences from samples designed and created by our team.
       </a>	
     </li>	
         <li>
-	<a href="https://developer.microsoft.com/windows/apps/design" title="Universal Windows Platform (UWP) app design" data-linktype="absolute-path">
+	<a href="https://developer.microsoft.com/windows/apps/design" title="Universal Windows Platform (UWP) application design" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -354,7 +356,7 @@ Build great experiences from samples designed and created by our team.
                         </div>
                     </div>                    
 			<div class="cardText">
-                        <h3>Universal Windows Platform (UWP) app design</h3>
+                        <h3>Universal Windows Platform (UWP) application design</h3>
                         <p> </p>
                     </div>
                 </div>
