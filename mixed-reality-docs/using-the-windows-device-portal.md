@@ -69,7 +69,7 @@ The first time you connect to the Device Portal on your HoloLens, you will need 
 5. Enter a password and confirm it. The password must be at least seven characters in length. It doesn't need to be an MSA or domain password.
 6. Click **Pair** to connect to Windows Device Portal on the HoloLens.
 
-If you wish to change this username or password at any time, you can repeat this process by visiting the device security page by either clicking the **Security** link along the top right, or navigating to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicesecurity.htm.
+If you wish to change this username or password at any time, you can repeat this process by visiting the device security page by  navigating to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm.
 
 ## Security certificate
 
@@ -78,7 +78,7 @@ If you are see a "certificate error" in your browser, you can fix it by creating
 Each HoloLens generates a unique self-signed certificate for its SSL connection. By default, this certificate is not trusted by your PC's web browser and you may get a "certificate error". By downloading this certificate from your HoloLens (over USB or a Wi-Fi network you trust) and trusting it on your PC, you can securely connect to your device.
 1. **Make sure you are on a secure network (USB or a Wi-Fi network you trust).**
 2. Download this device's certificate from the "Security" page on the Device Portal.
-   * Either click the **Security** link from the top right list of icons or navigate to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicesecurity.htm
+   * Navigate to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm
 3. Install the certificate in the "Trusted Root Certification Authorities" store on your PC.
    * From the Windows menu, type: Manage Computer Certificates and start the applet.
    * Expand the **Trusted Root Certification Authority** folder.
