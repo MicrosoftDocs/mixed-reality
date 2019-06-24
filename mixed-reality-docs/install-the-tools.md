@@ -38,7 +38,6 @@ We recommend installing the Unity game engine as the easiest way to get started 
 | ![MRTK logo](images/MRTKIcon.jpg)<br><br><a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">**Mixed Reality Toolkit (MRTK v2) for Unity**</a> | MRTK v2 for Unity is an open source cross-platform development kit for mixed reality applications.<br><br> MRTK v2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform. The project is aimed at reducing the barriers to entry in creating mixed reality applications and contributing back to the community as things evolve. | Learn more about MRTK v2 by visiting the project's <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/wiki" target="_blank">GitHub wiki</a>. |
 
 
-
 ## Mixed Reality Toolkit
 
 The Mixed Reality Toolkit provides components and features that are intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality headsets and OpenVR platform. The project is aimed at reducing barriers to entry to create mixed reality applications and contribute back to the community as thing evolve.

@@ -16,8 +16,7 @@ The Holographic Remoting Player is a companion app that connects to PC apps and 
 
 The Holographic Remoting Player can only be used with PC apps that are specifically designed to support Holographic Remoting.
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+The Holographic Remoting Player is available for both HoloLens and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remtoing with HoloLens 2.  Please contact your app provider if you have questions about which versions are supported.
 
 ## Connecting to the Holographic Remoting Player
 
@@ -45,10 +44,10 @@ To measure the quality of your connection, say **"enable diagnostics"** while on
 While on the main screen, you can say **"disable diagnostics"** to turn off diagnostics.
 
 ## PC System Requirements
-* Your PC **must** be running the Windows 10 Anniversary Update.
+* Your PC **must** be running the Windows 10 Anniversary Update or newer.
 * We recommend a GeForce GTX 970 or AMD Radeon R9 290 or better graphics card.
 * We recommend you connect your PC to your network via ethernet to reduce the number of Wireless hops.
 
 ## See Also
-* [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
+* [Holographic remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

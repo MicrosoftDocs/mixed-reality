@@ -1,9 +1,9 @@
 # [Install the tools](install-the-tools.md)
 # [Get your app ready for HL2](mrtk-porting-guide.md)
-# [Discover](index.md)
+# Discover
+## [Mixed Reality documentation](index.md)
 ## [What is mixed reality?](mixed-reality.md)
 ## [What is a hologram?](hologram.md)
-
 ## Hardware
 ### HoloLens
 #### [HoloLens 2 hardware details](https://www.microsoft.com/hololens/hardware)
@@ -78,7 +78,8 @@
 ### [Release notes - May 2016](release-notes-may-2016.md)
 ### [Release notes - March 2016](release-notes-march-2016.md)
 
-# [Design](design.md)
+# Design
+## [Design for mixed reality](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
 ## Get started with design
 ### [What is mixed reality?](mixed-reality.md)
@@ -119,7 +120,7 @@
 ### [Interactable object](interactable-object.md)
 ### [Object collection](object-collection.md)
 ### [Displaying progress](progress.md)
-### [App bar and bounding box](app-bar-and-bounding-box.md)
+### [Bounding box and App bar](app-bar-and-bounding-box.md)
 ## Designing for the mixed reality home
 ### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 ### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
@@ -129,11 +130,12 @@
 ### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Asset creation process](asset-creation-process.md)
 
-# [Develop](development.md)
+# Develop
+## [Development launchpad](development.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 ### [Holographic Remoting Player](holographic-remoting-player.md)
-### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
+### [Holographic remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -143,6 +145,7 @@
 #### [Unity Play Mode](unity-play-mode.md)
 #### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
 #### [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
+#### [Managed debugging with Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
 ### Core building blocks
 #### [Camera in Unity](camera-in-unity.md)
 #### [Coordinate systems in Unity](coordinate-systems-in-unity.md)
@@ -165,7 +168,7 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ### Legacy Documents (Unity 2017.4/HTK/MRTK v1)
 ## Unreal
-### Unreal for HoloLens 2 - coming soon!
+### [Unreal for HoloLens 2 early access](https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access)
 ## DirectX
 ### [DirectX development overview](directx-development-overview.md)
 ### Getting started
