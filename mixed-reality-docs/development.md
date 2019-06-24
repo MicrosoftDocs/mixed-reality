@@ -56,7 +56,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                             <a href="https://www.microsoft.com/hololens/hardware" target="_blank">HoloLens 2</a>
                         </p>
                         <p>
-                            <a href="hololens-hardware-details.md">HoloLens (1st gen)</a>
+                            <a href="hololens-hardware-details.md">HoloLens (1st Gen)</a>
                         </p>
                         <p>
                             <a href="immersive-headset-hardware-details.md">Immersive headsets</a>
@@ -128,7 +128,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                     <div class="cardText">
                         <h3>Porting guides</h3>
                         <p>
-                            <a href="mrtk-porting-guide.md">Updating apps to HoloLens 2<br>from HoloLens (1st gen)</a>
+                            <a href="mrtk-porting-guide.md">Updating apps to HoloLens 2<br>from HoloLens (1st Gen)</a>
                         </p>
                         <p>
                             <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html">Mixed Reality Toolkit (MRTK)<br>API porting guide</a>
