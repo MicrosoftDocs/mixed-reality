@@ -19,11 +19,24 @@ When using voice commands, gaze is typically used as the targeting mechaninism, 
 ## Device support
 
 <table>
-<tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td></td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️ (with headset attached)</td>
-</tr>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Voice commanding</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️ (with headset attached)</td>
+    </tr>
 </table>
 
 
@@ -84,7 +97,7 @@ When Voice is applied properly, the user understands **what they can say and get
 ![Voice feedback states for cursor](images/voicefeedbackstates.png)<br>
 *Voice feedback states for cursor*
 
-## Top things users should know about "speech" on Windows Mixed Reality
+## Top things users should know about "speech" in mixed reality
 * Say **"Select"** while targeting a button (you can use this anywhere to click a button).
 * You can say the **label name of an app bar button** in some apps to take an action. For example, while looking at an app, a user can say the command "Remove" to remove the app from the world (this saves time from having to click it with your hand).
 * You can initiate Cortana listening by saying **"Hey Cortana."** You can ask her questions ("Hey Cortana, how tall is the Eiffel tower"), tell her to open an app ("Hey Cortana, open Netflix"), or tell her to bring up the Start Menu ("Hey Cortana, take me home") and more.

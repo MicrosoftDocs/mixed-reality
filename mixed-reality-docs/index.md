@@ -146,7 +146,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
 
 <h2>News and notes</h2>
 
-<h3>April 2019</h3>
+<h3>June 2019</h3>
 
 As promised, we are excited to share more mixed reality goodness with you! We’re looking forward to hearing your feedback and would like to invite you to [join the conversation](https://holodevelopersslack.azurewebsites.net/) around topics you’d like to see from us, people you would like to hear from, tutorials or how-to’s that you would need… You can also reach out to us via [Twitter](https://twitter.com/MxdRealityDev), and [join our developer program](https://aka.ms/iwantmr) for direct updates on new docs, tools, events and more. Stay tuned, there's more to come!
 
@@ -166,10 +166,10 @@ As promised, we are excited to share more mixed reality goodness with you! We’
 <td>Preview new capabilities in MRTK for HoloLens 2</td><td>April 2019</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>MRTK docs</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-getting-started>Getting started with MRTK v2</a></td>
 </tr>
 <tr>
-<td>Design and development guidance for HoloLens 2</td><td>April 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools>Install the tools</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator>HoloLens 2 emulator</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/interaction-fundamentals>Instinctual interactions design guidance</a>
+<td>Design and development guidance for HoloLens 2</td><td>April 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools>Install the tools</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator>HoloLens 2 emulator</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/interaction-fundamentals>Instinctual interactions design guidance</a></td>
 </tr>
 <tr>
-  <td>More information on Unreal</td><td>May 2019</td><td></td>
+  <td>More information on Unreal</td><td>May 2019</td><td> <ul><li><a href=https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access>Unreal Engine 4 early access</a></td>
 </tr>
 </table>
 
