@@ -38,7 +38,7 @@ Using your voice to command and control an interface can not only allow the user
 In some hands-free situations, using your voice is not ideal or even possible. Loud factory environments, privacy, or social norms can all be constraints. The head gaze + dwell model allows the user to navigate the app by using their head vector to point, while lingering, or dwelling on a button will activate it after a certain amount of time, tpically around 1 second or so. 
 
 
-## Transitioning in and out of hands-freey
+## Transitioning in and out of hands-free
 
 For these scenarios, freeing your hands from interacting with holograms for commanding and navigation can range from being an absolute requirement to operating the application, end-to-end, to an added convenience that the user can transition in and out of at any time. 
 
@@ -50,7 +50,7 @@ If your target user needs to be able to switch from hands to hands-free at their
 For instance, if the user is on the factory floor, watching a video reference on her Hololens, and decides to pick up a wrench to start working, she most likely would start working in handsfree without having to put down the wrench to press a button. She should be able to invoke a voice session with a voice command, dwell on an already-visible UI to begin dwell, or say the word "select".
 
 The user should have the ability to: 
-* Switch to handsfree while handsfree
+* Switch to hands-free while hands-free
 * Switch to hands with your hands
 * Switch to the controller using a controller 
 
