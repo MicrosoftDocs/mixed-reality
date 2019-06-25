@@ -22,10 +22,11 @@ Our Mixed Reality studio team is made up of designers, 3D artists, UX specialist
 
 We are excited to create Galaxy Explorer for HoloLens 2, and to update the HoloLens (1st gen), VR and desktop versions. 
 
---- PICTURE ---
+![The Galaxy Explorer team](images/ge-update-team-image.png)
 
-From left to right: fix order depending on the actual photo, unless we decide to just use the hamsters
-Dirk Songuer (Studio Head), Laura Garrett (Delivery & Production Lead), Yasushi Zonno (Creative Lead), David Janer (UX), Martin Wettig (3D Designer), Angie Teickner (3D Artist), Amit Rojtblat (Technical Artist), Ben Turner (Sr. Developer), Eline Ledent (Developer). Not featured: Tim Gerken (Tech Lead)
+On top from left to right: Artemis Tsouflidou (Developer), Angie Teickner (Visual Designer), David Janer (UX Designer), Laura Garrett (Delivery & Production Lead), Yasushi Zonno (Creative Lead), Eline Ledent (Developer), Ben Turner (Sr. Developer).
+Bottom from left to right: Amit Rojtblat (Technical Artist), Martin Wettig (3D Artist), Dirk Songuer (Studio Head).
+Not featured: Tim Gerken (Tech Lead), Oscar Salandin (Visual Designer).
 
 ## Additional information
 
