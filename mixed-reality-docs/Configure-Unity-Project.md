@@ -17,7 +17,7 @@ If you'd like to created a new Unity project without importing Mixed Reality Too
 
 ## Per-project settings
 
-To target Windows Mixed Reality, you first need to set your Unity project to export as a Universal Windows Platform app:
+To target Windows Mixed Reality, you first need to set your Unity project to export as a Universal Windows Platform app: 
 1. Select **File > Build Settings...**
 2. Select **Universal Windows Platform** in the Platform list and click **Switch Platform**
 3. Set **SDK** to **Universal 10**
