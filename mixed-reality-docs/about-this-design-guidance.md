@@ -30,7 +30,7 @@ Here’s a quick overview of how this design guidance is organized. You’ll fin
 * **[Get started with design](mixed-reality.md)** - Read our high-level thoughts, and understand the principles we follow.
 * **[Instinctual interactions](interaction-fundamentals.md)** - Learn about input, commanding, navigation, and other interaction basics for designing your apps.
 * **[Style](typography.md)** - Make your application delightful by using color, typography, and motion.
-* **[App patterns](types-of-mixed-reality-apps.md)** - Learn how app;ications can span scenarios across immersive and real world environments.
+* **[App patterns](types-of-mixed-reality-apps.md)** - Learn how applications can span scenarios across immersive and real world environments.
 * **[Controls](interactable-object.md)** - Use controls and patterns as building blocks to create your own application experience.
 * **[Sample apps](design.md#sample-apps)** - Build great experiences from samples designed and created by our team.
 * **[Design tools and resources](design.md#design-tools)** - Jump-start your project with design templates and tools.
