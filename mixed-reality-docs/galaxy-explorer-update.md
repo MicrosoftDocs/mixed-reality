@@ -59,7 +59,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### Implementing force grab into the application
 
-When we tried the force grab on planets, we realized that we had to change the scale of the solar system. It turned out that an accurate, medium-sized representation of the solar system is too difficult for users to understand and navigate - they did not know where to look. However an accurate, small-sized-representation made some planets too small and selecting planets was difficult. As a result, the size of the planets and the spacing between solar objects was designed to feel comfortable within a medium-sized room while being relatively accurate.
+When we tried the force grab on planets, we realized that we had to change the scale of the solar system. It turned out that an accurate, medium-sized representation of the solar system is difficult for users to understand and navigate - they did not know where to look. However an accurate, small-sized-representation made some planets too small to be easily selected. As a result, the size of the planets and the spacing between solar objects was designed to feel comfortable within a medium-sized room while maintaining relative accuracy.
 
 During the later stages of our development sprint, we were lucky enough to have fellow MSFT Mixed Reality experts in-house, so we got to work getting their input as expert testers and doing quick iterations on the force grab interaction.
 
@@ -94,7 +94,7 @@ These three improvements allowed users to make accurate selections, calling plan
 
 ## Meet the team 
 
-Our Mixed Reality studio team is made up of designers, 3D artists, UX specialists, developers, a program manager and a studio head. We hail from all over the world: Germany, Canada, Israel, the United States, Belgium, the United Kingdom and Japan. We are a multidisciplinary team that comes from a diverse background: gaming - both traditional and indie, digital marketing, health care and science.
+Our Mixed Reality studio team is made up of designers, 3D artists, UX specialists, developers, a program manager and a studio head. We hail from all over the world: Belgium, Canada, Germany, Israel, Japan, the United Kingdom and the United States. We are a multidisciplinary team that comes from a diverse background: gaming - both traditional and indie, digital marketing, health care and science.
 
 We are excited to create Galaxy Explorer for HoloLens 2, and to update the HoloLens (1st gen), VR and desktop versions. 
 
