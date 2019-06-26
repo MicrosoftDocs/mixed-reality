@@ -16,6 +16,82 @@ We're excited to kick off with a preview of the new Galaxy Explorer logo! While 
 
 The design and typography of the logo will set the tone for the overall look and feel of UI elements throughout the experience. 
 
+## Thinking about interactions
+
+As a creative studio, we were ecstatic about the privilege to port Galaxy Explorer to HoloLens 2. We knew from the start that we wanted the experience to be a celebration of the new device and to demonstrate that Mixed Reality empowerment is limited only to the imagination.
+
+HoloLens 2 allows users to touch, grasp, and move holograms in ways that feel natural – they respond a lot like real objects. Fully articulated hand models are amazing, because it lets users do what feels natural. For example, everybody picks up a cup slightly differently – and instead of enforcing one particular way to do it, HoloLens 2 lets you do it your way.
+
+>[!VIDEO https://www.youtube.com/embed/wogJv5v9x-s]
+
+This is a big change from the Air Tap-based interfaces on first generation HoloLens devices. Instead of interacting with holograms from a distance, users can now get "up close and personal". When porting existing experiences over to HoloLens 2 or planning new ones, it is important to make yourself familiar with the direct manipulation of holograms.
+
+### Direct manipulation vs. the vast distances in space
+
+It is a magical experience to be able to reach out, grab a planet and hold it in your hand. The challenge with this approach is the size of the solar system – it's huge! The user would need to walk around their room to get close to each planet to be able to interact with it.
+
+To allow users to interact with objects that are farther away, MRTK offers hand rays that shoot out from the center of the user's palm, acting as an extension of the hand. A donut-shaped cursor is attached to the end of the ray to indicate where the ray intersects with a target object. The object that the cursor lands on can then receive gestural commands from the hand. 
+
+>[!VIDEO https://www.youtube.com/embed/Qol5OFNfN14]
+
+In the original version of Galaxy Explorer, the user would target a planet with the gaze cursor and then air tap to call it closer. The easiest way to port the experience to HoloLens 2 is to take this behavior and use hand rays to select planets. While this was functional, it left us wanting more.
+
+### Back to the drawing board
+
+We came together to ideate what could be built on top of the existing interactions. The thinking was: Although HoloLens 2 allows users to interact with holograms in natural, realistic ways, holograms are by definition not real. So as long as an interaction is plausible for the user, it doesn't matter if that interaction would be possible with a real object or not – we can make it possible.
+
+One concept that we explored was based on telekinesis – the power to manipulate objects with one's mind. Often seen in super hero movies, a person would reach out with their mind and call an object into their open hand. We played around with the idea some more and came up with a quick sketch of how the concept could work.
+
+![Concept for the force grab interaction](images/ge-update-interactions-concept-force-grab.png)
+
+The user would point the hand ray at a planet, which would provide target feedback. As the user then extends their open hand, the planet would be pulled towards the user by a magical force until it is close enough to grab it. Hence our name for the interaction: force grab. As the user would push away the planet with their open hand, it would return again to its orbit.
+
+### Force grab prototyping
+
+We then created multiple prototypes to test the concept: How does the interaction feel overall? Should the called object stop in front of the user or stick to their hands until placed? Should the called object change size or scale while being called?
+
+Here is Amit Rojtblat (Technical Artist) presenting one of the prototypes to Yasushi Zonno (Creative Lead).
+
+--- VIDEO OF AMIT PLAYING AND EXPLAINING THE PROTOTYPE ---
+https://microsoft.sharepoint.com/:v:/t/GalaxyExplorer/EeRKDbFpyApPkYqRLtlNqRIBNwFMQoGDigLvW8Did3I8-Q?e=AdBCWh
+--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---
+
+### Implementing force grab into the application
+
+When we tried the force grab on planets, we realized that we had to change the scale of the solar system. It turned out that an accurate, medium-sized representation of the solar system is too difficult for users to understand and navigate - they did not know where to look. However an accurate, small-sized-representation made some planets too small and selecting planets was difficult. As a result, the size of the planets and the spacing between solar objects was designed to feel comfortable within a medium-sized room while being relatively accurate.
+
+During the later stages of our development sprint, we were lucky enough to have fellow MSFT Mixed Reality experts in-house, so we got to work getting their input as expert testers and doing quick iterations on the force grab interaction.
+
+
+--- PICTURE OF A MENTOR TESTING ---
+
+
+From left to right: ---- -- -- -TBD
+
+
+### Adding affordances
+
+As we experimented on HoloLens 2, we found that even though the new interactions are natural and intuitive, holograms remain the same: with no weight or tactile sensations. Since holograms don't provide natural feedback that humans are used to receiving when they interact with objects, we needed to create them.
+
+We thought about the visual and audio feedback that users would be provided for the various stages of their interactions, and since the force grab mechanism is central to interacting with Galaxy Explorer, we did many iterations. The aim was to find the right balance of audio and visual feedback for each stage of the interaction: focusing on the intended object, calling it to the user, and then releasing it. What we learned is that significantly more audio and visual feedback was required to reinforce the interaction than we were used to for HoloLens (1st gen).
+
+--- PICTURE OF PLANET AFFORDANCES ---
+
+### Adding the lasso
+ 
+Once we had the basic force grab mechanism with audio and visual affordances, we looked at how to make selecting planets more user friendly. There were two main things to address: Because the solar system is a 3D moving interface, there is added complexity for users to learn how to target objects consistently. This was compounded by the fact that the hand ray is very fast at selecting an object, making planets move towards the user incredibly quickly.
+
+We approached this with a three-pronged solution. The first was fairly intuitive: slow down the selection process so that planets approach the user at a more natural pace. Once the speed was adjusted, we had to revisit the audio and visual affordances, adding additional audio feedback as the planet tracked towards the user.
+
+The second part of the solution was to make the visualization of the entire force grab interaction extremely tangible. We visualized a line that moves towards the targeted object, connects with it, and then brings the object back to the user - like a lasso. 
+
+--- PICTURE OF PLANET LASSO VISUAL ---
+
+Finally, we optimized the scale of the solar system so that the planets were large enough for the user's gaze and hand ray to target them. 
+
+These three improvements allowed users to make accurate selections, calling planets to them in an intuitive way. Overall, the effect of the final force grab is a more immersive and interactive experience in the solar system.
+
+
 ## Meet the team 
 
 Our Mixed Reality studio team is made up of designers, 3D artists, UX specialists, developers, a program manager and a studio head. We hail from all over the world: Germany, Canada, Israel, the United States, Belgium, the United Kingdom and Japan. We are a multidisciplinary team that comes from a diverse background: gaming - both traditional and indie, digital marketing, health care and science.
