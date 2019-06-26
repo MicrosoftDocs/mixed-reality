@@ -52,9 +52,10 @@ We then created multiple prototypes to test the concept: How does the interactio
 
 Here is Amit Rojtblat (Technical Artist) presenting one of the prototypes to Yasushi Zonno (Creative Lead).
 
---- VIDEO OF AMIT PLAYING AND EXPLAINING THE PROTOTYPE ---
-https://microsoft.sharepoint.com/:v:/t/GalaxyExplorer/EeRKDbFpyApPkYqRLtlNqRIBNwFMQoGDigLvW8Did3I8-Q?e=AdBCWh
---- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---
+
+__*--- VIDEO OF AMIT PLAYING AND EXPLAINING THE PROTOTYPE ---*__
+
+__*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### Implementing force grab into the application
 
@@ -69,28 +70,27 @@ During the later stages of our development sprint, we were lucky enough to have 
 From left to right: ---- -- -- -TBD
 
 
-### Adding affordances
+### Adding affordances for targeting
 
 As we experimented on HoloLens 2, we found that even though the new interactions are natural and intuitive, holograms remain the same: with no weight or tactile sensations. Since holograms don't provide natural feedback that humans are used to receiving when they interact with objects, we needed to create them.
 
 We thought about the visual and audio feedback that users would be provided for the various stages of their interactions, and since the force grab mechanism is central to interacting with Galaxy Explorer, we did many iterations. The aim was to find the right balance of audio and visual feedback for each stage of the interaction: focusing on the intended object, calling it to the user, and then releasing it. What we learned is that significantly more audio and visual feedback was required to reinforce the interaction than we were used to for HoloLens (1st gen).
 
---- PICTURE OF PLANET AFFORDANCES ---
+![Visual affordances on planets](images/ge-update-planet-affordances.png)
 
-### Adding the lasso
+### Adding affordances for force grab
  
 Once we had the basic force grab mechanism with audio and visual affordances, we looked at how to make selecting planets more user friendly. There were two main things to address: Because the solar system is a 3D moving interface, there is added complexity for users to learn how to target objects consistently. This was compounded by the fact that the hand ray is very fast at selecting an object, making planets move towards the user incredibly quickly.
 
 We approached this with a three-pronged solution. The first was fairly intuitive: slow down the selection process so that planets approach the user at a more natural pace. Once the speed was adjusted, we had to revisit the audio and visual affordances, adding additional audio feedback as the planet tracked towards the user.
 
-The second part of the solution was to make the visualization of the entire force grab interaction extremely tangible. We visualized a line that moves towards the targeted object, connects with it, and then brings the object back to the user - like a lasso. 
+The second part of the solution was to make the visualization of the entire force grab interaction extremely tangible. We visualized a thick line that moves towards the targeted object once the hand ray connects with it, and then brings the object back to the user - like a lasso. 
 
---- PICTURE OF PLANET LASSO VISUAL ---
+![Visual "lasso" affordances for the force grab](images/ge-update-lasso-affordances.png)
 
 Finally, we optimized the scale of the solar system so that the planets were large enough for the user's gaze and hand ray to target them. 
 
 These three improvements allowed users to make accurate selections, calling planets to them in an intuitive way. Overall, the effect of the final force grab is a more immersive and interactive experience in the solar system.
-
 
 ## Meet the team 
 
