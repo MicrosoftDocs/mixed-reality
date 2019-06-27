@@ -109,7 +109,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
                             <a href="directx-development-overview.md">Custom engine (DirectX)</a>
                         </p>
                         <p>
-                            Unreal - coming soon!
+                            <a href="https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access">Unreal</a>
                         </p>                
                     </div>
                 </div>
