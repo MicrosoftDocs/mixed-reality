@@ -163,10 +163,10 @@ A:  Any of the interaction models will work for these users.
 > More guidance specific to app design [coming soon](index.md#news-and-notes).
 
 
-## Transition interaction models
-There are also use cases that might require  utilizing more than one interaction model. For example, your application's creation flow utilizes the Hands and motion controllers interaction model, but you want to employ a hands-free mode for field technicians.  
+## Transitioning interaction models
+There are also use cases that might require utilizing more than one interaction model. For example, your application's creation flow utilizes the Hands and motion controllers interaction model, but you want to employ a hands-free mode for field technicians.  
 
-If your experience does require multiple interaction models, keep in mind that many end users mith encounter difficulty when transitioning from one model to another--especially for users who are new to mixed reality.
+If your experience does require multiple interaction models, keep in mind that many end users might encounter difficulty when transitioning from one model to another--especially for users who are new to mixed reality.
 
 > [!Note]
 > We're constantly working on more guidance that will be available to developers and designers, informing them about the how, when, and why for using multiple MR interaction models.
