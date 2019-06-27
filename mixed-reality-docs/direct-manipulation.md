@@ -151,7 +151,7 @@ By doing so, you accidentally move your hand across some interactive holographic
 
 * **Where to**: Use information about what a user is looking at with quick-throwing gestures. Grab a hologram and roughly toss it toward your intended destination.  
 
-    While this may sometimes works work, quickly performing hand gestures may result in highly inaccurate destinations. This is where eye tracking could help out to lean the hand throwing vector back to your intended position.
+    While this sometimes works, quickly performing hand gestures may result in highly inaccurate destinations. In this scenario including eye tracking could improve the accuracy of the gesture.
 
 ## See also
 
