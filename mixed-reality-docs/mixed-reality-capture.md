@@ -59,8 +59,17 @@ Mixed reality captures from Cortana voice commands and Start Menu tools create f
 
 |  Type  |  Format  |  Extension  |  Resolution  |  Audio | 
 |----------|----------|----------|----------|----------|
-|  Photo  |  [JPEG](https://en.wikipedia.org/wiki/JPEG)  |  .jpg  |  3904x2196px (HoloLens 2) 1408x792px (HoloLens) 1920x1080px (Immersive headsets) |  N/A | 
-|  Video  |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4)  |  .mp4  |  1920x1080px at 30fps (HoloLens 2) 1408x792px at 24fps (HoloLens) 1632x918px at 30fps (Immersive headsets) |  48kHz Stereo | 
+|  Photo  |  [JPEG](https://en.wikipedia.org/wiki/JPEG)  |  .jpg  |  3904x2196px (HoloLens 2)<br> 1408x792px (HoloLens)<br> 1920x1080px (Immersive headsets) |  N/A | 
+|  Video  |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4)  |  .mp4  |  1920x1080px at 30fps (HoloLens 2)<br> 1408x792px at 24fps (HoloLens)<br> 1632x918px at 30fps (Immersive headsets) |  48kHz Stereo | 
+
+>[!NOTE]
+>The resolution of photos and videos can be smaller if the photo/video camera is already in use by another application, while live streaming, or when system resources are low.
+
+### Video stabilization
+
+By default:
+* Zero-latency video stabilization is applied when live streaming over Miracast.
+* Long-latency video stabilization is applied to videos captured using the built-in MRC camera UI, Cortana voice commands, and Windows Device Portal.
 
 ## Viewing mixed reality captures
 
