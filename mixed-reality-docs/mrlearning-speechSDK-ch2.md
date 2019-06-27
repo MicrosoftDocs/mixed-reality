@@ -1,3 +1,14 @@
+---
+title: MR Learning SpeechSDK Module - Speech Recognition and Transcription
+description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
+author: jessemcculloch
+ms.author: jemccull
+ms.date: 06/27/2019
+ms.topic: article
+ms.localizationpriority: high
+keywords: mixed reality, unity, tutorial, hololens
+---
+
 ## Adding an Offline mode for local speech-to-text translation
 
 In this lesson, we'll add an Offline mode that lets you perform local speech-to-text translation when we are unable to connect to the Azure service. We will also *simulate* a disconnected state.
@@ -6,9 +17,7 @@ In this lesson, we'll add an Offline mode that lets you perform local speech-to-
 
 ![Module4Chapter2step1im](images/module4chapter2step1im.PNG)
 
-
-
-2. Click the drop-down in the LunarcomOfflineRecognizer, and select Enabled. This programs the project to act like the user doesn't have a  connection. 
+2. Click the drop-down in the LunarcomOfflineRecognizer, and select Enabled. This programs the project to act like the user doesn't have a connection. 
 
 ![Module4Chapter2step1im](images/module4chapter2step2im.PNG)
 
@@ -24,5 +33,6 @@ Below is an example of what your scene could look like.
 
 The offline mode has been enabled. Now, when you're offline, you can still work on your project with the speech-SDK! 
 
-[Next Lesson: SpeechSDK Lesson 3](link placeholder)
+
+[Next Lesson: SpeechSDK Lesson 3](mrlearning-speechSDK-ch3.md)
 
