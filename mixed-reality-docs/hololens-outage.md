@@ -14,9 +14,12 @@ ms.sitesec: library
 
 # Hololens Outage Notification Page
 
-## Service status
+<details>
+<summary>Service status</summary>
 
 ![Yes](images/checkmark.png) Services are operating normally
+
+</details>
 
 ![Normal](images/checkmark.png) Normal
 
@@ -27,7 +30,12 @@ Store app|Yes|Yes
 Apps|Yes|Yes
 MDM|Yes|Yes
 
-## Notes
+<details>
+<summary>Notes</summary>
+
+(Notes go here)
+
+</details>
 
 ## Related topics
 
