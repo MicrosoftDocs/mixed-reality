@@ -17,7 +17,7 @@ Windows Mixed Reality applications use the [holographic rendering](rendering.md)
 
 
 Windows Mixed Reality supports [two kinds of apps](app-views.md):
-* **Mixed reality appslications** (UWP or Win32) that use the [HolographicSpace API](getting-a-holographicspace.md) to render an [immersive view](app-views.md) to the user that fills the headset display.
+* **Mixed reality applications** (UWP or Win32) that use the [HolographicSpace API](getting-a-holographicspace.md) to render an [immersive view](app-views.md) to the user that fills the headset display.
 * **2D apps** (UWP) that use DirectX, XAML, or other frameworks to render [2D views](app-views.md#2d-views) on slates in the Windows Mixed Reality home.
 
 
