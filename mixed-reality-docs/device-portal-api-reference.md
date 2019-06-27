@@ -275,17 +275,6 @@ Stop the current recording. Recording will be returned as a file.
 
 ## Mixed Reality Capture
 
-**/api/holographic/mrc/file (DELETE)**
-
-Deletes a mixed reality recording from the device.
-
-Parameters
-* filename : Name, hex64 encoded, of the file to delete
-
-**/api/holographic/mrc/settings (GET)**
-
-Gets the default mixed reality capture settings
-
 **/api/holographic/mrc/file (GET)**
 
 Downloads a mixed reality file from the device. Use op=stream query parameter for streaming.
@@ -294,24 +283,43 @@ Parameters
 * filename : Name, hex64 encoded, of the video file to get
 * op : stream
 
+**/api/holographic/mrc/file (DELETE)**
+
+Deletes a mixed reality recording from the device.
+
+Parameters
+* filename : Name, hex64 encoded, of the file to delete
+
+**/api/holographic/mrc/files (GET)**
+
+Returns the list of mixed reality files stored on the device
+
+**/api/holographic/mrc/photo (POST)**
+
+Takes a mixed reality photo and creates a file on the device
+
+Parameters
+* holo : capture holograms: true or false
+* pv : capture PV camera: true or false
+
+**/api/holographic/mrc/settings (GET)**
+
+Gets the default mixed reality capture settings
+
+**/api/holographic/mrc/settings (POST)**
+
+Sets the default mixed reality capture settings
+
+**/api/holographic/mrc/status (GET)**
+
+Gets the status of the mixed reality recorded (running, stopped)
+
 **/api/holographic/mrc/thumbnail (GET)**
 
 Gets the thumbnail image for the specified file.
 
 Parameters
 * filename: Name, hex64 encoded, of the file for which the thumbnail is being requested
-
-**/api/holographic/mrc/status (GET)**
-
-Gets the status of the mixed reality recorded (running, stopped)
-
-**/api/holographic/mrc/files (GET)**
-
-Returns the list of mixed reality files stored on the device
-
-**/api/holographic/mrc/settings (POST)**
-
-Sets the default mixed reality capture settings
 
 **/api/holographic/mrc/video/control/start (POST)**
 
@@ -326,14 +334,6 @@ Parameters
 **/api/holographic/mrc/video/control/stop (POST)**
 
 Stops the current mixed reality recording
-
-**/api/holographic/mrc/photo (POST)**
-
-Takes a mixed reality photo and creates a file on the device
-
-Parameters
-* holo : capture holograms: true or false
-* pv : capture PV camera: true or false
 
 Mixed Reality Streaming
 
