@@ -14,6 +14,8 @@ ms.sitesec: library
 
 # Hololens Outage Notification Page
 
+## Service status
+
 <details>
 <summary>Service status</summary>
 
