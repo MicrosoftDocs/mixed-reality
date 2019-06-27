@@ -56,7 +56,7 @@ Air tap is a tapping gesture with the hand held upright. To perform an air tap, 
 Air tap is also available on HoloLens 2. It has been relaxed from the original version. Nearly all types of pinches are now supported as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture. This new air tap replaces the old one through the same API, so existing applications will have the new behavior automatically after recompiling for HoloLens 2.
 
 ### Head-gaze and "Select" voice command
-Voice commanding is one of the primary interaction methods in mixed reality. It provides a very powerful hands fee mechanism to control the system. There are diferent types of voice interaction models:
+Voice commanding is one of the primary interaction methods in mixed reality. It provides a very powerful hands-free mechanism to control the system. There are diferent types of voice interaction models:
 
 - The generic command Select that performs a click actuation or commit as a secondary input.
 - Object commands like Close or Make it bigger performs and commits to an action as a secondary input.
