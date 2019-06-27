@@ -18,7 +18,7 @@ Use cases for mixed reality capture go beyond sharing videos amongst a social ci
 
 ## Live streaming from HoloLens
 
-The [Windows 10 October 2018 Update](release-notes-october-2018.md) adds Miracast support to HoloLens. Select the **Connect** button at the bottom of the Start menu to bring up a picker for Miracast-enabled devices and adapters. Select the device to which you want to begin streaming. When done, select the **Disconnect** button at the bottom of the Start menu.  **Connect** and **Disconnect** are also available on the quick actions menu. 
+The [Windows 10 October 2018 Update](release-notes-october-2018.md) adds Miracast support to HoloLens. Select the **Connect** button at the bottom of the Start menu to bring up a picker for Miracast-enabled devices and adapters. Select the device to which you want to begin streaming. When done, select the **Disconnect** button at the bottom of the Start menu.  **Connect** and **Disconnect** are also available on the quick actions menu.
 
 The [Windows Device Portal](using-the-windows-device-portal.md) and [Microsoft HoloLens companion app](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) expose live streaming options for devices that are in Developer mode.
 
@@ -60,7 +60,7 @@ Mixed reality captures from Cortana voice commands and Start Menu tools create f
 |  Type  |  Format  |  Extension  |  Resolution  |  Audio | 
 |----------|----------|----------|----------|----------|
 |  Photo  |  [JPEG](https://en.wikipedia.org/wiki/JPEG)  |  .jpg  |  3904x2196px (HoloLens 2)<br> 1408x792px (HoloLens)<br> 1920x1080px (Immersive headsets) |  N/A | 
-|  Video  |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4)  |  .mp4  |  1920x1080px at 30fps (HoloLens 2)<br> 1408x792px at 24fps (HoloLens)<br> 1632x918px at 30fps (Immersive headsets) |  48kHz Stereo | 
+|  Video  |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4)  |  .mp4  |  1920x1080px at 30fps (HoloLens 2)<br> 1216x684px at 24fps (HoloLens)<br> 1632x918px at 30fps (Immersive headsets) |  48kHz Stereo | 
 
 >[!NOTE]
 >The resolution of photos and videos can be smaller if the photo/video camera is already in use by another application, while live streaming, or when system resources are low.
