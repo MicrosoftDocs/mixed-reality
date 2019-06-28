@@ -69,7 +69,7 @@ During the later stages of our development sprint, we were lucky enough to have 
 
 ![Concept for the force grab interaction](images/ge-update-user-testing.png)
 
-In picture: Jenny Kam, Senior Design Lead
+In picture: Jenny Kam, Senior Design Lead, testing a work-in-progress of Galaxy Explorer.
 
 ### Adding affordances for targeting
 
