@@ -67,7 +67,7 @@ When we tried the force grab on planets, we realized that we had to change the s
 
 During the later stages of our development sprint, we were lucky enough to have fellow MSFT Mixed Reality experts in-house, so we got to work getting their input as expert testers and doing quick iterations on the force grab interaction.
 
-![Concept for the force grab interaction](images/ge-update-user-testing.png)
+![Jenny Kam testing a preview build of Galaxy Explorer](images/ge-update-user-testing.png)
 
 In picture: Jenny Kam, Senior Design Lead, testing a work-in-progress of Galaxy Explorer.
 
@@ -92,6 +92,83 @@ The second part of the solution was to make the visualization of the entire forc
 Finally, we optimized the scale of the solar system so that the planets were large enough for the user's gaze and hand ray to target them. 
 
 These three improvements allowed users to make accurate selections, calling planets to them in an intuitive way. Overall, the effect of the final force grab is a more immersive and interactive experience in the solar system.
+
+## Spotlight on Jupiter
+
+Creating the solar bodies of the Milky Way was a humbling experience. In particular, the unique characteristics of Jupiter make it a sight to behold. It is the largest and most colorful of the gas giants, and contains more mass than all other planets combined. Its sheer size and mesmerizing bands of turbulence and cloud dynamics are prefect for special artistic attention.
+
+### Geometry and meshes
+
+As a gas giant, Jupiter's outer shells consists of gaseous layers. The combination of its fast rotational speed, inner heat exchange, and Coriolis forces creates colorful layers and streams that form into swirling cloud belts and vortices. Capturing this intricate beauty was key in creating our solar system.
+
+It was immediately clear that using visualizing techniques like fluid simulations and animated textures with precomputed streams were out of question. The computing power required to simulate this in combination with everything else happening simultaneously would have had significant detrimental impacts on performance. 
+
+![Overview of Jupiter object](images/ge-update-jupiter-shells-complete.jpg)
+
+The next approach was a 'smoke-and-mirror' solution, consisting of overlaying transparent texture layers, each of which addressed a specific aspect of the atmospheric movement, compiled on a composition of rotating meshes.
+
+In the image below, you can see the inner shell on the left. This matt layer provided a background to the composition to guard against any small gaps between the multiple layers that comprised the clouds. Due to the layer's slow rotation, it also served as a visual buffer between the faster moving bands to help build visual unity throughout the layers.
+
+After setting this anchor to the model, the moving cloud layers were then projected on the middle and right meshes seen below.
+
+![Overview of Jupiter object with separated shells](images/ge-update-jupiter-shells-separated.jpg)
+
+### Texturing
+
+The existing texture was separated into a three-part texture atlas: The upper third hosts a motionless layer of clouds with gaps to provide a parallax effect, the middle section contains the fast moving outer streams, and the lower third contains a slowly rotating inner base layer.
+
+The characteristic Great Red Spot was also separated into its various moving parts and then inserted into an otherwise invisible area of the texture. These components can be seen as the red-toned speckles in the middle section of the image below.
+
+Because each band has a specific direction and speed, the texture was applied to each mesh individually. The meshes then had a common center and pivot point, to be able to concentrically animate the whole surface.
+
+![Overview of Jupiter textures](images/ge-update-jupiter-planet-cloud-texture.png)
+
+### Rotation and texture behavior
+
+Now that the visual composition of Jupiter was set, we needed to ensure that the rotation and orbit speeds were properly calculated and applied accordingly. It takes roughly 9 hours for Jupiter to complete a full rotation. This is a matter of definition due to its Differential Rotation. Therefore the equatorial stream has been set as a 'master stream', taking 3600 frames for a full rotation. Every other layer needed to have a rotational speed as a factor of 3600 in order to match its initial position, allowing e.g. 600, 900, 1200, 1800 etc.
+
+![Jupiter shell textures](images/ge-update-shell-texture.jpg)
+
+
+### The Great Red Spot
+
+The individually rotating streams provided a good visual impression, but lacked in detail when observed at close range.
+
+The most eye-catching part was Jupiter's Great Red Spot, so we created a set of meshes and textures specifically to showcase it.
+ 
+We used a similar mechanism as with Jupiter's bands: a set of rotating parts was composed on top of each other, while also being grouped under its 'master layer' to ensure they remain in position no matter how fast the rest moves.
+
+When the meshes were set up and in place, different layers of the stormy vortex were applied and each disc was then animated individually, the center pieces moving fastest, with the rest progressively slowing down as it moving outwards.
+
+![Jupiter Great Red Spot mesh](images/ge-update-great-red-spot-mesh.jpg)
+
+The composition also had the same pivot as every other mesh, while also keeping its tilt from its original y-axis (!) to allow freedom in animating the rotation. 3600 frames is the base rate, with each layer having a factor of this as a period of rotation.
+
+![Jupiter Great Red Spot texture](images/ge-update-red-spot-mesh-texture.jpg)
+
+### Getting it right in Unity
+
+There are a couple of key things to keep in mind when implementing this in Unity.
+
+Unity is easily confused when dealing with large sets of transparent layers. The solution was to duplicate the texture material for each mesh and apply ascending Render Queue values progressively from the inner to the outer by 5 to each material.
+
+The result was the inner shell had a Render Queue value of 3000 (default), the static red-toned outer later had a value of 3005, the fast white outer clouds had 3010. The Great Red Spot (progressing from inner to outer layer), finished with a value of 3025 in this model.
+
+![Jupiter final object](images/ge-update-jupiter-final.jpg)
+
+### Final touches
+
+The textured Jupiter layers were set up at first, which proved to be insufficient for implementation.
+
+The original Planet Standard shader (and all of its variations) receive their lighting information via a script, the SunLightReceiver, which is not supported by the MRTK Standard shader.
+
+Simply swapping the shaders wasn't a solution because the Planet Standard shader doesn't support texture maps with transparencies. We edited this shader in order to make the Jupiter build work as intended.
+
+Finally the Alpha Blends needed to be set up by setting the Source Blend to 10 as well as the Destination Blend to 5.
+
+![Jupiter Unity properties](images/ge-update-jupiter-unity-render-queue.jpg)
+
+You can see the final rendering of Jupiter in Galaxy Explorer!
 
 ## Meet the team 
 
