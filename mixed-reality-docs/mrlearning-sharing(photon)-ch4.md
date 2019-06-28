@@ -8,6 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
+
 # Synchronizing shared object movements
 
 In this lesson, we learn how to share the movements of objects so that all participants of a shared session can collaborate together and view each others' interactions. This lesson builds upon the Lunar Launcher that was built as part of the [Base Module Tutorials](mrlearning-base.md).
@@ -19,6 +20,7 @@ Objectives:
 - Learn how to build a basic multi-user collaborative application
 
 ### Instructions
+
 
 1. Save the scene from the previous lesson (Control+S). You can name it HLSharedProjectMainPart4.unity so that it's easier to find when you need it.
 
@@ -67,6 +69,7 @@ Note:  Make sure that both the Main Camera and SharedPlayground positions are se
 
 
 ## Congratulations
+
 
 Once this is complete, all users that join your Unity project can move the lunar launcher around. All movements are synchronized so that each user can see each others' interactions. These concepts serve as the foundational building blocks for full-featured, shared collaboration experiences. 
 
