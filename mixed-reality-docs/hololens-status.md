@@ -1,6 +1,6 @@
 ---
-title: Hololens Status
-description: Shows the status of Hololens online status. 
+title: HoloLens Status
+description: Shows the status of HoloLens online status. 
 author: todmccoy
 ms.author: v-todmc
 ms.reviewer: 
@@ -12,7 +12,7 @@ localization_priority: Medium
 ms.sitesec: library
 ---
 
-# Hololens Status
+# HoloLens Status
 
 ## Service status
 
