@@ -1,5 +1,5 @@
 ---
-title: Hololens Outage Notification
+title: Hololens Status
 description: Shows the status of Hololens online status. 
 author: todmccoy
 ms.author: v-todmc
@@ -12,18 +12,12 @@ localization_priority: Medium
 ms.sitesec: library
 ---
 
-# Hololens Outage Notification Page
+# Hololens Status
 
 ## Service status
 
-<details>
-<summary>Service status</summary>
-
 ![Yes](images/checkmark.png) Services are operating normally
 
-</details>
-
-![Normal](images/checkmark.png) Normal
 
 Area|HoloLens (1st gen)|HoloLens 2:
 ---|---|---
@@ -32,12 +26,11 @@ Store app|Yes|Yes
 Apps|Yes|Yes
 MDM|Yes|Yes
 
-<details>
-<summary>Notes</summary>
+## Notes
 
 (Notes go here)
 
-</details>
+
 
 ## Related topics
 
