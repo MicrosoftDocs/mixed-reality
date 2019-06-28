@@ -52,10 +52,14 @@ We then created multiple prototypes to test the concept: How does the interactio
 
 Here is Amit Rojtblat (Technical Artist) presenting one of the prototypes to Yasushi Zonno (Creative Lead).
 
+------------------------------------------------------------------
 
 __*--- VIDEO OF AMIT PLAYING AND EXPLAINING THE PROTOTYPE ---*__
 
 __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
+
+------------------------------------------------------------------
+
 
 ### Implementing force grab into the application
 
@@ -63,12 +67,9 @@ When we tried the force grab on planets, we realized that we had to change the s
 
 During the later stages of our development sprint, we were lucky enough to have fellow MSFT Mixed Reality experts in-house, so we got to work getting their input as expert testers and doing quick iterations on the force grab interaction.
 
+![Concept for the force grab interaction](images/ge-update-user-testing.png)
 
---- PICTURE OF A MENTOR TESTING ---
-
-
-From left to right: ---- -- -- -TBD
-
+In picture: Jenny Kam, Senior Design Lead
 
 ### Adding affordances for targeting
 
@@ -100,9 +101,9 @@ We are excited to create Galaxy Explorer for HoloLens 2, and to update the HoloL
 
 ![The Galaxy Explorer team](images/ge-update-team-image.png)
 
-On top from left to right: Artemis Tsouflidou (Developer), Angie Teickner (Visual Designer), David Janer (UX Designer), Laura Garrett (Delivery & Production Lead), Yasushi Zonno (Creative Lead), Eline Ledent (Developer), Ben Turner (Sr. Developer).
-Bottom from left to right: Amit Rojtblat (Technical Artist), Martin Wettig (3D Artist), Dirk Songuer (Studio Head).
-Not featured: Tim Gerken (Tech Lead), Oscar Salandin (Visual Designer).
+On top from left to right: Artemis Tsouflidou (Developer), Angie Teickner (Visual Designer), David Janer (UX Designer), Laura Garrett (Delivery & Production Lead), Yasushi Zonno (Creative Lead), Eline Ledent (Developer) and Ben Turner (Sr. Developer).
+Bottom from left to right: Amit Rojtblat (Technical Artist), Martin Wettig (3D Artist) and Dirk Songuer (Studio Head).
+Not featured: Tim Gerken (Tech Lead) and Oscar Salandin (Visual Designer).
 
 ## Additional information
 
