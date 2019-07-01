@@ -24,22 +24,25 @@ Objectives:
 
 1. In this lesson, we are not using the "SaveAnchorToDisk" and "ShareAnchor" buttons so select both buttons and uncheck the checkbox in the inspector panel (as shown below) to hide these buttons.
    
+
 ![module2chapter3step1im](images/module2chapter3step1im.PNG)
 
 2. Next, create the instruction panel. Start by right clicking the "instructions" button, hover over "3D Object" and select "textmeshpro-text."
 
 ![module2chapter3step2im](images/module2chapter3step2im.PNG)
 
-   3. Adjust the scale and the positioning of the text so that it matches with the instructions in your scene. Also, ensure the alignment for all of the text is centered. Then delete the sample text from the text editor, as shown in in the image below.
+3. Adjust the scale and the positioning of the text so that it matches with the instructions in your scene. Also, ensure the alignment for all of the text is centered. Then delete the sample text from the text editor, as shown in in the image below.
 
 ![module2chapter3step3im](images/module2chapter3step3im.PNG)
 
 4. Change the name of the TextMeshPro object to "FeedbackPanel."
    
+
 ![module2chapter3step4im](images/module2chapter3step4im.PNG)
-   
+
 5. In the project panel, select "assets" and right click, then select "show in explorer."
    
+
 ![module2chapter3step4im](images/module2chapter3step5im.PNG)
 
 Now, click [here](https://onedrive.live.com/?authkey=%21ABXEC8PvyQu8Qd8&id=5B7335C4342BCB0E%21395636&cid=5B7335C4342BCB0E) to download the files needed in the next few steps.

@@ -1,4 +1,4 @@
-**Getting Unity Ready for Development** 
+### Getting Unity Ready for Development
 
 In this lesson, we will learn how to prepare and configure Unity for app development, including importing the Mixed Reality Toolkit, configuring build settings, and preparing our scene.
 

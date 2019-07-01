@@ -27,21 +27,22 @@ In this lesson, we will learn how to persist our Azure Spatial Anchors across mu
 ![module2chapter2step1im](images/module2chapter2step1im.PNG)
 
 2. Configure Each button according to the instructions below
-   - For the Button named "SaveToDisk", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the SaveAzureAnchorIDToDisk() method from the ParentAnchor Object's ASAmoduleScript component.
+
+	- For the Button named "SaveToDisk", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the SaveAzureAnchorIDToDisk() method from the ParentAnchor Object's ASAmoduleScript component.
    
 > Note: some of the buttons may appear overlapping the other buttons in the scene. Feel free to adjust the button's positioning.
-   
+
 ![module2chapter2step2aim](images/module2chapter2step2aim.PNG)
 
 ![module2chapter2step2aim](images/module2chapter2step2bim.PNG)
 
 ![module2chapter2step2aim](images/module2chapter2step2cim.PNG)
 
-   - For the Button named "GetFromDisk", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the LoadAzureAnchorIDsFromDisk() method from the ParentAnchor Object's ASAmoduleScript component.
+	- For the Button named "GetFromDisk", create a new event under the "Button Pressed" event trigger as well as the "On Click" event trigger. Drag the ParentAnchor object into the empty field, and assign the LoadAzureAnchorIDsFromDisk() method from the ParentAnchor Object's ASAmoduleScript component.
 
-3. Follow the instructions from Lesson 1 to build the updated application to your device. After pressing the "Create Azure Anchor" button, as you did in the previous lesson, you may now save the Azure Anchor ID to disk by pressing the save to disk button.
+	- Follow the instructions from Lesson 1 to build the updated application to your device. After pressing the "Create Azure Anchor" button, as you did in the previous lesson, you may now save the Azure Anchor ID to disk by pressing the save to disk button.
 
-4. Restart the application, start the Azure Session, Press the "Load Anchor ID" button, and then press the "Locate Azure Anchor" button to locate the anchor associated with the ID we saved to the disk. The entire scene should now snap into position, at the location you saved the anchor previously!
+	- Restart the application, start the Azure Session, Press the "Load Anchor ID" button, and then press the "Locate Azure Anchor" button to locate the anchor associated with the ID we saved to the disk. The entire scene should now snap into position, at the location you saved the anchor previously!
 
 ### Share Azure Anchors between multiple devices
 

@@ -37,6 +37,7 @@ Objectives:
 5. Just like in step 3 we need to remove the "//" to activate the code at lines 25, 26, and 106.
 
 ![module3chapter4updatestep5a](images/module3chapter4updatestep5a.png)
+
 ![module3chapter4updatestep5b](images/module3chapter4updatestep5b.png)
 
 6. In the Hierarchy view, select the NetworkRoom object.
@@ -53,7 +54,7 @@ Note: If you click on one of the prefab objects and release, the inspector will 
 
 ![Module3hapter4step5im](images/module3chapter4step5im.PNG)
 
-note:  Make sure that both the Main Camera and SharedPlayground positions are set to 0,0,0.
+>note:  Make sure that both the Main Camera and SharedPlayground positions are set to 0,0,0.
 
 9. Create a new game object set as a child object to the "SharedPlayground" parent object (to create a new object, right click on the parent object, and select "create  empty"). 
 
