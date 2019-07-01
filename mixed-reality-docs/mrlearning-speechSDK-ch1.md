@@ -68,44 +68,62 @@ In this tutorial you will create a Mixed Reality application that explores the u
 
 ![Module4Chapter1step9imd](images/module4chapter1step9imd.PNG)
 
-11. In the Project panel, expand the Lunarcom folder and drag the Lunarcom_Base prefab into your hierarchy.
+11. To enable voice commands, select the newly created MRTK profile to customize. In this tutorial, we are using the input speech commands for speech recognition and transcription. Lets clone the input profile to make changes to speech settings.
+
+ ![Module4Chapter1step11imb](images/module4chapter1step11imb.PNG)
+
+
+![Module4Chapter1step11imd](images/module4chapter1step11imd.PNG)
+
+12. Once the input profile is cloned, go to speech commands and clone the speech commands.
+
+ ![Module4Chapter1step12imb](images/module4chapter1step12imb.PNG)
+
+ ![Module4Chapter1step12imc](images/module4chapter1step12imc.PNG)
+
+13. Now under speech commands, go to "General Settings" and set "Start Behavior" to "Manual Start"
+
+ ![Module4Chapter1step13imb](images/module4chapter1step13imb.PNG)
+
+14. In the Project panel, expand the Lunarcom folder and drag the Lunarcom_Base prefab into your hierarchy.
 
 ![Module4Chapter1step11im](images/module4chapter1step11im.PNG)
 
-12. Select the Lunarcom_Base object in your hierarchy, and ensure that the position is set to x=0, y=0, and z=0, as well as the rotation set to x=0, y=0, and z=0. Set the scale to read x=0.008, y=0.008, and z=0.01.
+15. Select the Lunarcom_Base object in your hierarchy, and ensure that the position is set to x=0, y=0, and z=0, as well as the rotation set to x=0, y=0, and z=0. Set the scale to read x=0.008, y=0.008, and z=0.01.
 
 ![Module4Chapter1step12im](images/module4chapter1step12im.PNG)
 
-13. Click Add Component, and search for and select LunarcomController. This script is included in the Lunarcom asset pack that you imported in Step 6.
+16. Click Add Component, and search for and select LunarcomController. This script is included in the Lunarcom asset pack that you imported in Step 6.
 
 ![Module4Chapter1step13im](images/module4chapter1step13im.PNG)
 
-14. To connect our applicaiton to Azure Cognitive Services, you must enter a subscription key (also known as an API Key), for the Speech Service. Follow the instructions at [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/get-started) to obtain a free subscription key. Once you obtain the subscription key, enter it into the Speech Service API Key field of the LunarcomController component in the Inspector panel as shown in the image below.
+17. To connect our applicaiton to Azure Cognitive Services, you must enter a subscription key (also known as an API Key), for the Speech Service. Follow the instructions at [here](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/get-started) to obtain a free subscription key. Once you obtain the subscription key, enter it into the Speech Service API Key field of the LunarcomController component in the Inspector panel as shown in the image below.
 
-15. Enter the Region that you chose when you signed up for the subscription key into the Speech Service Region field of the LunarcomController component in the Inspector panel. For example, for the region "West US" type in "westus"
+18. Enter the Region that you chose when you signed up for the subscription key into the Speech Service Region field of the LunarcomController component in the Inspector panel. For example, for the region "West US" type in "westus"
 
 ![Module4Chapter1step15im](images/module4chapter1step15im.PNG)
 
-16. In your hierarchy, expand the Lunarcom_Base object by clicking the arrow to the left of it. Then do the same for its child object, "Terminal, as shown in the image below.
+19. In your hierarchy, expand the Lunarcom_Base object by clicking the arrow to the left of it. Then do the same for its child object, "Terminal, as shown in the image below.
 
-17. While Lunarcom_Base is selected, click and drag Lunarcom Text from the hierarchy to the Output Text slot in the LunarcomController component in the Inspector panel as shown in the image below.
-18. Do the same thing with the Terminal object into the Terminal slot and the Connection Light object to the Connection Light Controller slot.
+20. While Lunarcom_Base is selected, click and drag Lunarcom Text from the hierarchy to the Output Text slot in the LunarcomController component in the Inspector panel as shown in the image below.
+
+21. Do the same thing with the Terminal object into the Terminal slot and the Connection Light object to the Connection Light Controller slot.
 
 ![Module4Chapter1step18im](images/module4chapter1step18im.PNG)
 
-19. Click the arrow next to the Lunarcom Buttons section of the LunarcomController script in the Inspector panel, and change the size to 3. Press Enter or Return. This causes three new Element fields to appear.
+22. Click the arrow next to the Lunarcom Buttons section of the LunarcomController script in the Inspector panel, and change the size to 3. Press Enter or Return. This causes three new Element fields to appear.
 
 ![Module4Chapter1step19im](images/module4chapter1step19im.PNG)
 
-20. Expand the Lunarcom Buttons by clicking the arrow next to it in your hierarchy, and using the same process as above, drag the Mic, Satellite, and Rocket gameobjects to the Element 0, 1, and 2 references, respectively, in the LunarcomController component in the Inspector panel. 
+23. Expand the Lunarcom Buttons by clicking the arrow next to it in your hierarchy, and using the same process as above, drag the Mic, Satellite, and Rocket gameobjects to the Element 0, 1, and 2 references, respectively, in the LunarcomController component in the Inspector panel. 
 
 ![Module4Chapter1step18im](images/module4chapter1step20im.PNG)
 
-21. Select the Lunarcom_Base" object in your hierarchy. Click Add Component in the inspector panel, and search for and select LunarcomWakeWordRecognizer.
+24. Select the Lunarcom_Base" object in your hierarchy. Click Add Component in the inspector panel, and search for and select LunarcomWakeWordRecognizer.
 
 ![Module4Chapter1step18im](images/module4chapter1step21im.PNG)
 
-22. In the Wake Word slot, type in Activate Terminal. In the Dismiss Word slot, type Dismiss Terminal.
+25. In the Wake Word slot, type in Activate Terminal. In the Dismiss Word slot, type Dismiss Terminal.
 
 ![Module4Chapter1step18im](images/module4chapter1step22im.PNG)
 
