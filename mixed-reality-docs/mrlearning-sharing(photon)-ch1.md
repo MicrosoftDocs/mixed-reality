@@ -26,10 +26,7 @@ Objectives:
 
 1. Set up a [Photon](https://dashboard.photonengine.com/en-US/Account/SignUp) account. Navigate to the Photon Sign-up page by clicking on [this link](https://dashboard.photonengine.com/en-US/Account/SignUp). Follow the instructions on the sign-up page to create the account. 
    
-
 ![Module3Chapter1step1im](images/module3chapter1step1im.PNG)
-
-
 
 ![Module3Chapter1step6im](images/module3chapter1step6im.PNG)
 
@@ -60,7 +57,7 @@ Objectives:
 
 9. After successfully adding the AppID, navigate to "Photon"->"PhotonUnityNetworking" -> "Resources" ->  "PhotonServerSettings" in Assets. Select "Use Name Server" option and set the fixed region to "us" or your photon service region.
 
-   ![module3chapter1step13im](images/module3chapter1step13im.PNG)
+![module3chapter1step13im](images/module3chapter1step13im.PNG)
 
 ## Congratulations
 

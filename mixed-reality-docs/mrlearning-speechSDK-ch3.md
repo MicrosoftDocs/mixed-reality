@@ -16,7 +16,6 @@ In this lesson, we'll on the Azure Cognitive Services Speech Translation compone
 1. Select the Lunarcom_Base object in the hierarchy, and click Add Component in the inspector panel. Search for and select LunarcomTranslationRecognizer.
 
 ![Module4Chapter3step1im](images/module4chapter3step1im.PNG)
- 
 
 > Note: Ensure the offline mode simulator is disabled before testing the Speech-SDK translator. In order to translate, you must be connected to the internet. See image below on where to find this setting. 
 >

@@ -22,21 +22,32 @@ Objectives:
 
 1. Save the scene from the previous lesson (control+S). You may name it "HLSharedProjectMainPart4.unity" so that it's easier to find when you need it again.
 
-2. In the Project window, in the Assets > Scripts folder, double click on GenericNetSync to open it in Visual Studio or which ever code editor you are using.  ![](images/module3chapter4updatestep2.png)
+2. In the Project window, in the Assets > Scripts folder, double click on GenericNetSync to open it in Visual Studio or which ever code editor you are using. 
 
-3. On lines 34 and 38, remove the "//" to activate the code for the Table that we will use in this lesson.  Then Save the file. ![](images/module3chapter4updatestep3.png)
+![module3chapter4updatestep2](images/module3chapter4updatestep2.png)
 
-4. In the project window, double click on the PhotonRoom.cs file in the Assets > Scripts folder to again open it in Visual Studio. ![](images/module3chapter4updatestep4.png)
+3. On lines 34 and 38, remove the "//" to activate the code for the Table that we will use in this lesson.  Then Save the file. 
 
-5. Just like in step 3 we need to remove the "//" to activate the code at lines 25, 26, and 106.![](images/module3chapter4updatestep5a.png) ![](images/module3chapter4updatestep5b.png)
+![module3chapter4updatestep3](images/module3chapter4updatestep3.png)
 
-6. In the Hierarchy view, select the NetworkRoom object.![](images/module3chapter4updatestep6.png)
+4. In the project window, double click on the PhotonRoom.cs file in the Assets > Scripts folder to again open it in Visual Studio. 
 
-7. In the project view, navigate to Assets > Resources > Prefabs. First, drag and drop the Table prefab to the "Tableprefab" slot on the PhotonRoom class. Next drag and drop the LunarModule prefab to the "Module Prefab" slot on the PhotonRoom class. ![](images/module3chapter4updatestep7.png)
+![module3chapter4updatestep4](images/module3chapter4updatestep4.png)
 
-   Note: If you click on one of the prefab objects and release, the inspector will switch to that object. Click, drag, drop and release each object to its appropriate slot.
+5. Just like in step 3 we need to remove the "//" to activate the code at lines 25, 26, and 106.
 
+![module3chapter4updatestep5a](images/module3chapter4updatestep5a.png)
+![module3chapter4updatestep5b](images/module3chapter4updatestep5b.png)
 
+6. In the Hierarchy view, select the NetworkRoom object.
+
+![module3chapter4updatestep6](images/module3chapter4updatestep6.png)
+
+7. In the project view, navigate to Assets > Resources > Prefabs. First, drag and drop the Table prefab to the "Tableprefab" slot on the PhotonRoom class. Next drag and drop the LunarModule prefab to the "Module Prefab" slot on the PhotonRoom class. 
+
+![module3chapter4updatestep7](images/module3chapter4updatestep7.png)
+
+Note: If you click on one of the prefab objects and release, the inspector will switch to that object. Click, drag, drop and release each object to its appropriate slot.
 
 8. Now, click the arrow to the left of "MixedRealityPlayspace" and move the child game object, "MainCamera" down into the "SharedPlayground" prefab. Then, delete the prefab "MixedRealityPlayspace" (to delete, select the prefab and tap "delete" on your keyboard).
 
@@ -58,14 +69,9 @@ note:  Make sure that both the Main Camera and SharedPlayground positions are se
 
 ![Module3Chapter4step8im](images/module3chapter4step8im.PNG)
 
-
-
 12. Finally, in the "DebugWindow" object, change the width to 80 and the height to 10.
 
 ![Module3Chapter4step9im](images/module3chapter4step11im.PNG)
-
-
-
 
 ## Congratulations
 

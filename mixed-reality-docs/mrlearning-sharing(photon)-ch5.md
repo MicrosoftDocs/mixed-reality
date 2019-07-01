@@ -27,10 +27,9 @@ Objectives:
 
 ![Module3Chapter5tep2im](images/module3chapter5step2im.PNG)
 
+3. In the Project view go to Assets > Resources > Prefabs and drag the TableAnchor prefab on top of the SharedPlayground object to make it a child.
 
-
-3.  In the Project view go to Assets > Resources > Prefabs and drag the TableAnchor prefab on top of the SharedPlayground object to make it a child.
-4. ​	Expand the "MixedRealityPlayspace" parent object, then the "TableAnchor" object, and expand the "buttons" object as well. 
+4. Expand the "MixedRealityPlayspace" parent object, then the "TableAnchor" object, and expand the "buttons" object as well. 
 
 ![Module3hapter5step5im](images/module3chapter5step5im.PNG)
 
@@ -41,9 +40,6 @@ Objectives:
 5. Much like step 4, select the "GetAzureAnchorButton" and move your attention back to the inspector panel. Scroll down to the dropdown menu shown in the image below, and select "AnchorModuleScript" and click on "GetSharedAnchorNetwork()." Then save.
 
 ![Module3hapter5step7im](images/module3chapter5step7im.PNG)
-
-
-
 
 ## Congratulations
 
