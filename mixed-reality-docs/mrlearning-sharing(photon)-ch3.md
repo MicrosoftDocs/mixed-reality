@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# **Connecting multiple users** 
+# Connecting multiple users
 
 In this lesson, we learn how to connect multiple users as part of a live shared experience. By the end of this lesson, you'll be able to open the application on multiple devices, and see avatar, represented by a sphere, representations of each person that joins. 
 
