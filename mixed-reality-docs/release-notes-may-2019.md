@@ -1,23 +1,22 @@
 ---
 title: Release notes - May 2019
-description: HoloLens and Windows Mixed Reality release notes for the Windows 10 May 2019 Update (also known as 19H1).
+description: Windows Mixed Reality release notes for the Windows 10 May 2019 Update (also known as 19H1).
 author: mattzmsft
 ms.author: mazeller
 ms.date: 05/02/2019
 ms.topic: article
-keywords: release notes, version, windows 10, build, 19h1, os
+keywords: release notes, version, windows 10, build, 19h1, os, may 2019
 ---
 
 
 
 # Release notes - May 2019
 
-The **[Windows 10 October 2018 Update](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (also known as 19H1) includes new features for both HoloLens and Windows Mixed Reality immersive headsets connected to PCs. 
+The **Windows 10 May 2019 Update** (also known as 19H1) includes new features Windows Mixed Reality immersive headsets connected to PCs. 
 
-To update to the latest release on HoloLens or PC (for Windows Mixed Reality immersive (VR) headsets), open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 May 2019 Update using the [Windows media creation tool](https://www.microsoft.com/software-download/windows10).
+To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 May 2019 Update using the [Windows media creation tool](https://www.microsoft.com/software-download/windows10).
 
 **Latest release for Desktop:** Windows 10 May 2019 Update (**10.0.18362.116**)<br>
-**Latest release for HoloLens:** ## (**##**)<br>
 
 ## New features for Windows Mixed Reality immersive headsets
 
@@ -35,17 +34,12 @@ To launch a Win32 application in Windows Mixed Reality, bring up the Pins Panel 
 
 ![Win32 Pin_Panel](images/mr-win32-slates-pinspanel.png)
 
-
 #### Please help us improve!
-We continually look to improve compatibility.  If you find your favorite classic Win32 application not behaving correctly while in Windows Mixed Reality, please submit feedback via our [Feedback Hub|https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub].
-
-
-
-## New features for HoloLens
+We continually look to improve compatibility.  If you find your favorite classic Win32 application not behaving correctly while in Windows Mixed Reality, please submit feedback via our [Feedback Hub](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
 ## Provide feedback and report issues
 
-Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](give-us-feedback.md) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
+Please use the [Feedback Hub app on your Windows 10 PC](give-us-feedback.md) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
 
 >[!NOTE]
 >Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
