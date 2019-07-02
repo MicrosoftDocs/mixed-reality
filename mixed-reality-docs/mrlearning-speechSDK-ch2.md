@@ -9,9 +9,9 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-## Adding an Offline mode for local speech-to-text translation
+## 2.	Adding an offline mode for local speech-to-text translation
 
-In this lesson, we'll add an Offline mode that lets you perform local speech-to-text translation when we are unable to connect to the Azure service. We will also *simulate* a disconnected state.
+In this tutorial, we'll add an offline mode that lets you perform local speech-to-text translation when we are unable to connect to the Azure service. We will also *simulate* a disconnected state.
 
 1. Select the Lunarcom_Base object in the hierarchy, and click Add Component in the Inspector panel. Search for and select the Lunarcom Offline Recognition.
 
@@ -34,5 +34,5 @@ Below is an example of what your scene could look like.
 The offline mode has been enabled. Now, when you're offline, you can still work on your project with the speech-SDK! 
 
 
-[Next Lesson: SpeechSDK Lesson 3](mrlearning-speechSDK-ch3.md)
+[Next Tutorial: 3.	Adding the Azure Cognition Services speech translation component](mrlearning-speechSDK-ch3.md)
 

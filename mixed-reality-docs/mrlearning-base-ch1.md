@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module - Project Initialization and First Application
+# 2. Initializing your project and first application
 
 In this first lesson, you'll learn about some of the capabilities the Mixed Reality Toolkit (MRTK) has to offer, start your first application for the HoloLens 2, and deploy it to the device.
 
@@ -62,12 +62,12 @@ In this first lesson, you'll learn about some of the capabilities the Mixed Real
 
 ### Configure the Mixed Reality Toolkit
 
-1. Configure the Mixed Reality Toolkit by selecting Mixed Reality Toolkit > Configure from the menu bar. If you don't see this menu item after importing the mixed reality toolkit, please restart Unity.
+1. Configure the MRTK by selecting Mixed Reality Toolkit > Configure from the menu bar. If you don't see this menu item after importing the mixed reality toolkit, please restart Unity.
   ![Lesson1 Chapter3 Step1](images/Lesson1Chapter3Step1.JPG)
 
   > Note: You may see a pop-up dialog box asking to select a profile for the Mixed Reality Toolkit. If so, select Ok, and choose the profile named "DefaultMixedRealityToolkitConfigurationProfile."
 
-2. Your scene will have several new items and modifications in it from the Mixed Reality Toolkit. Save your scene under a different name by clicking File>Save As, and give your scene a name, such as BaseScene. Keep your scene organized by saving it to the Scenes folder in your project’s Assets folder.
+2. Your scene will have several new items and modifications in it from the MRTK. Save your scene under a different name by clicking File>Save As, and give your scene a name, such as BaseScene. Keep your scene organized by saving it to the Scenes folder in your project’s Assets folder.
   ![Lesson1 Chapter3 Step2a](images/Lesson1Chapter3Step2a.JPG)
   ![Lesson1 Chapter3 Step2b](images/Lesson1Chapter3Step2b.JPG)
 

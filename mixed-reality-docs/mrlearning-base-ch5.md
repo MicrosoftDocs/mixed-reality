@@ -9,9 +9,9 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module - Advanced Input
+# 6.Exploring advanced input options
 
-In this lesson, we explore several advanced input options for the HoloLens 2, including the use of voice commands, panning gesture, and eye tracking. 
+In this tutorial, we explore several advanced input options for the HoloLens 2, including the use of voice commands, panning gesture, and eye tracking. 
 
 ## Objectives
 
@@ -23,11 +23,11 @@ In this lesson, we explore several advanced input options for the HoloLens 2, in
 
 ### Enabling Voice Commands
 
-In this section, we will implement two voice commands. First, we'll introduce the ability to toggle the frame rate diagnostics panel by saying "toggle diagnostics." Second, we'll look at the ability to play a sound with a voice command. To begin, we'll explore the MRTK profiles and settings responsible for configuring voice commands. 
+In this section, we will implement two voice commands. First, we'll introduce the ability to toggle the frame rate diagnostics panel by saying "toggle diagnostics". Second, we'll look at the ability to play a sound with a voice command. To begin, we'll explore the MRTK profiles and settings responsible for configuring voice commands. 
 
-1. In the Base Scene hierarchy, select MixedRealityToolkit. In the Inspector panel, scroll down to                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Input System settings. Double click to open up the input system profile. Clone the input system profile to make it editable as we learned in [Lesson 1](mrlearning-base-ch1.md) 
+1. In the Base Scene hierarchy, select MixedRealityToolkit. In the Inspector panel, scroll down to                                                                                                                                                                              Input System settings. Double click to open up the input system profile. Clone the input system profile to make it editable as we learned in [Lesson 1](mrlearning-base-ch1.md) 
 
-In the input system profile, there are a variety of settings. For voice commands, select says, Speech Command Settings. 
+In the input system profile, there are a variety of settings. For voice commands, select Speech Command Settings. 
 
 ![Lesson5 Chapter1 Step2im](images/Lesson5_Chapter1_step2im.PNG)
 
@@ -37,7 +37,7 @@ In the input system profile, there are a variety of settings. For voice commands
 >
 > ![Lesson5 Chapter1 Noteim](images/Lesson5_chapter1_noteim.PNG)
 
-3. Add a new voice command. To add a new voice command, click on the + Add a New Speech Command button, and you will see a new line that appears down below the list of existing voice commands. Type in the voice command you want to use. In this example we are going to use the command “play music.”
+3. Add a new voice command. To add a new voice command, click on the + Add a New Speech Command button. You"ll see a new line that appears down below the list of existing voice commands. Type in the voice command you want to use. In this example we are going to use the command “play music".
 
 >Tip: You can also set a keycode for speech commands. This allows for voice commands to trigger events upon the press of a keyboard key. 	
 
@@ -54,17 +54,17 @@ By default, you will see two checkboxes. One is the Is Focus Required checkbox. 
 
 ![Lesson5 Chapter1 Step5im](images/Lesson5_chapter1_step5im.PNG)
 
-6. Next to Keyword, you'll see a dropdown menu. Select Toggle Diagnostics so that whenever the user says the phrase, “toggle diagnostics”, it will trigger an action. Note that you might need to expand Element 0 by pressing the arrow next to it.
+6. Next to Keyword, you'll see a dropdown menu. Select Toggle Diagnostics so that whenever the user says the phrase, “toggle diagnostics”, it triggers an action. Note that you might need to expand Element 0 by pressing the arrow next to it.
 
 ![Lesson5 Chapter1 Step6im](images/Lesson5_chapter1_step6im.PNG)
 
-7. Add the “diagnostics demo control script” to toggle the framerate counter diagnostic on and off. To do this, press the Add Component button, and search for Diagnostics Demo Controls script, and add it from the menu. This script can be added to any object. But for simplicity, we will add it to the same object as the speech input handler. 
+7. Add the Diagnostics Demo Control script to toggle the framerate counter diagnostic on and off. To do this, press Add Component, and search for Diagnostics Demo Controls script, and add it from the menu. This script can be added to any object. But for simplicity, we will add it to the same object as the speech input handler. 
 
    > Note: This script is only included with these modules, and is not included with the original MRTK.
 
 ![Lesson5 Chapter1 Step7im](images/Lesson5_chapter1_step7im.PNG)
 
-8. Add a new response in the Speech Input Handler. To do this click the + button underneath where it says “response ()” (marked by green arrow in the picture above).
+8. Add a new response in the speech input handler. To do this click the + button underneath where it says response () (marked by green arrow in the picture above).
 
 ![Lesson5 Chapter1 Step7im](images/Lesson5_chapter1_step8.PNG)
 
@@ -133,7 +133,7 @@ To use the pan gesture, you will need a collider on your object. You may see the
 
 ![Lesson5 Chapter2 Step8im](images/Lesson5_chapter2_step8im.PNG)
 
-9. In the hand interaction pan script, the Lock Horizontal and Lock Vertical checkboxes locks movements, respectively. The Wrap Texture settings makes the texture (texture mapping) follow the user's pan movements. For this example, we will check that box. There is also Velocity Active, which, if unchecked, the pan gesture will not work. Check this box as well. Now you will have a pan-enabled quad.
+9. In the Hand interaction Pan script, the Lock Horizontal and Lock Vertical checkboxes locks movements, respectively. The Wrap Texture settings makes the texture (texture mapping) follow the user's pan movements. For this example, you'll check that box. There is also Velocity Active, which, if unchecked, the pan gesture will not work. Check this box as well. Now you will have a pan-enabled quad.
 
    
 
@@ -165,7 +165,7 @@ To use the pan gesture, you will need a collider on your object. You may see the
 
 In this section, we will explore how to enable eye tracking in our demo. We will slowly spin our 3D menu items when they are being gazed upon with your eye gaze. We will also trigger a fun effect when the gazed-upon item is selected.
 
-1. Ensure the Mixed Reality Toolkit profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the “Setting up the MRTK profiles required for Eye Tracking” section as outlined in the [Mixed Reality Toolkit Documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (the component attached to camera), and enabling the simulation of eye tracking in the Unity editor. Note that future versions of the MRTK might include eye tracking by default.
+1. Ensure the MRTK profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the "Setting up the MRTK profiles required for Eye Tracking” section as outlined in the [Mixed Reality Toolkit Documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (the component attached to camera), and enabling the simulation of eye tracking in the Unity editor. Note that future versions of the MRTK might include eye tracking by default.
 
     The link above provides brief instructions for:
 
