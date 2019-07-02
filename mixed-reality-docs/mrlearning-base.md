@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module Overview & Objectives
+# 1. Overview and objectives
 
 ## Device support
 
