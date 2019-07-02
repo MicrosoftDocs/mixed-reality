@@ -9,9 +9,9 @@ keywords: mixed reality, unity, tutorial, hololens
 ---
 
 
-# Synchronizing shared object movements
+# 4. Sharing object movements with multiple users
 
-In this lesson, we learn how to share the movements of objects so that all participants of a shared session can collaborate together and view each others' interactions. This lesson builds upon the Lunar Launcher that was built as part of the [Base Module Tutorials](mrlearning-base.md).
+In this Tutorial, we learn how to share the movements of objects so that all participants of a shared session can collaborate together and view each others' interactions. This lesson builds upon the Lunar Launcher that was built as part of the [Base Module Tutorials](mrlearning-base.md).
 
 Objectives:
 
@@ -22,7 +22,7 @@ Objectives:
 ### Instructions
 
 
-1. Save the scene from the previous lesson (Control+S). You can name it HLSharedProjectMainPart4.unity so that it's easier to find when you need it.
+1. Save the scene from the previous lesson (Control+S). You can name it, HLSharedProjectMainPart4.unity, so that it's easier to find when you need it.
 
 2. From the Project window, in the Assets->Scripts folder, double click on GenericNetSync to open it in Visual Studio or which ever code editor you are using.  ![](images/module3chapter4updatestep2.png)
 
