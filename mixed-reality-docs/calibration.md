@@ -1,24 +1,26 @@
 ---
 title: Calibration
 description: Calibrating your IPD (interpupillary distance) can improve the quality of your visuals. Both HoloLens and Windows Mixed Reality immersive headsets offer ways to customize IPD.
-author: 
-ms.author: jakebo
-ms.date: 03/21/2018
+author:  xerxesb85
+ms.author: xerxesb
+ms.date: 02/24/2019
 ms.topic: article
 keywords: calibration, comfort, visuals, quality, ipd
 ---
 
 
 
-# Calibration
-
-Calibrating your IPD (interpupillary distance) can improve the quality of your visuals. Both HoloLens and Windows Mixed Reality immersive headsets offer ways to customize IPD.
+# Improve visual quality and comfort
+HoloLens, HoloLens 2 and Windows Mixed Reality immersive headsets offer different ways to improve quality of visual experience. 
 
 ## HoloLens
 
+Calibrating your IPD (interpupillary distance) can improve the quality of your visuals.
+
 ### During setup
 
-![IPD finger-alignment screen at second step](images/ipd-finger-alignment-300px.jpg)
+![IPD finger-alignment screen at second step](images/ipd-finger-alignment-300px.jpg)<br>
+
 *IPD finger-alignment screen at second step*
 
 On HoloLens, you'll be prompted to calibrate your visuals during setup. This allows the device to adjust hologram display according to the user's [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). With an incorrect IPD, holograms may appear unstable or at an incorrect distance.
@@ -47,6 +49,22 @@ Calibration can be performed any time through the Calibration app. The Calibrati
 4. Navigate to **System** > **Utilities** and select **Open Calibration**.
 
 ![Launching the calibration app from the settings app](images/calibration-settings-500px.jpg)
+
+## HoloLens 2
+
+### Calibration 
+
+On HoloLens 2, you'll be prompted to calibrate your visuals during device setup. Users are asked to look at the set of fixation targets. This allows the device to adjust hologram rendering for the user to ensure accurately positioned holograms, more comfortable 3D viewing experience and improved display quality. All adjustments happen on the fly without a need for manual tuning. 
+
+### Calibration when sharing a device 
+
+Hololens 2 device can be shared between people, without a need for each person to go through device setup. Hololens 2 will prompt the user to calibrate visuals when the device is put on the head, if the user is new to the device. If the user has already calibrated visuals on the device, display will be seamlessly adjusted for quality and comfortable viewing experience when the user puts the device on the head.  
+
+### Launching the Calibration app from Settings
+1. Use Start Gesture to get to Start Menu.
+2. Select **+** to view all apps if **Settings** isn't pinned to Start.
+3. Launch **Settings**.
+4. Navigate to **System** > **Utilities** and select **Open Calibration**.
 
 ## Immersive headsets
 

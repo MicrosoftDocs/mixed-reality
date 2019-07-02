@@ -2,10 +2,16 @@
 title: MR and Azure 307 - Machine learning
 description: Complete this course to learn how to implement Azure Machine Learning Studio within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, machine learning, ml, machine learning studio, hololens, immersive, vr
 ---
+
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+
+<br>
 
 # MR and Azure 307: Machine learning
 
@@ -45,11 +51,11 @@ This course is a self-contained tutorial, which does not directly involve any ot
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
+- [Unity 2017.4](install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](install-the-tools.md#installation-checklist)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - Internet access for Azure setup and ML data retrieval
 
@@ -87,7 +93,7 @@ To use the Azure Translator API, you will need to configure an instance of the s
     7.  Select a **Subscription**.
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
     
     5.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
 
@@ -119,7 +125,7 @@ To use the *Azure Machine Learning*, you will need to configure an instance of t
 
     3. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     4.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions. You should use the same resource group that you used for creating the Azure Storage in the previous Chapter.
 
@@ -209,23 +215,23 @@ To start creating an experiment:
 
 2.  A new page will be displayed with a blank Experiment:
 
-3.  From the panel on the left expand **Saved Datasets* > *My Datasets** and drag the  **ProductsTableCSV** on to the **Experiment Canvas**.
+3.  From the panel on the left expand **Saved Datasets* > *My Datasets** and drag the  **ProductsTableCSV** on to the **Experiment Canvas**.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-16.png)
 
-4.  In the panel on the left, expand **Data Transformation** > **Sample and Split**. Then drag the **Split Data** item in to the **Experiment Canvas**. The Split Data item will split the data set into two parts. One part you will use for training the machine learning algorithm. The second part will be used to evaluate the accuracy of the algorithm generated.
+4.  In the panel on the left, expand **Data Transformation** > **Sample and Split**. Then drag the **Split Data** item in to the **Experiment Canvas**. The Split Data item will split the data set into two parts. One part you will use for training the machine learning algorithm. The second part will be used to evaluate the accuracy of the algorithm generated.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-17.png)
 
-5.  In the right panel (while the Split Data item on the canvas is selected), edit the **Fraction of rows in the first output dataset** to **0.7**. This will split the data into two parts, the first part will be 70% of the data, and the second part will be the remaining 30%. To ensure that the data is split randomly, make sure the **Randomized split** checkbox remains checked.
+5.  In the right panel (while the Split Data item on the canvas is selected), edit the **Fraction of rows in the first output dataset** to **0.7**. This will split the data into two parts, the first part will be 70% of the data, and the second part will be the remaining 30%. To ensure that the data is split randomly, make sure the **Randomized split** checkbox remains checked.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-18.png)
 
-6.  Drag a connection from the base of the **ProductsTableCSV** item on the canvas to the top of the Split Data item. This will connect the items and send the **ProductsTableCSV** dataset output (the data) to the Split Data input.  
+6.  Drag a connection from the base of the **ProductsTableCSV** item on the canvas to the top of the Split Data item. This will connect the items and send the **ProductsTableCSV** dataset output (the data) to the Split Data input.  
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-19.png)
 
-7.  In the **Experiments** panel on the left side, expand **Machine Learning* > *Train**. Drag the **Train Model** item out in to the Experiment canvas. Your canvas should look the same as the below.
+7.  In the **Experiments** panel on the left side, expand **Machine Learning* > *Train**. Drag the **Train Model** item out in to the Experiment canvas. Your canvas should look the same as the below.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-20.png)
 
@@ -233,31 +239,31 @@ To start creating an experiment:
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-21.png)
 
-9.  Select the **Train Model** item on the canvas, and in the **Properties** panel (on the right-hand side of your browser window) click the **Launch column selector** button.
+9.  Select the **Train Model** item on the canvas, and in the **Properties** panel (on the right-hand side of your browser window) click the **Launch column selector** button.
 
 10. In the text box type **product** and then press **Enter**, *product* will be set as a column to train predictions. Following this, click on the **tick** in the bottom-right corner to close the selection dialog.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-22.png)
 
-11. You are going to train a **Multiclass Logistic Regression** algorithm to predict the most sold **product** based on the hour of the day and the date. It is beyond the scope of this document to explain the details of the different algorithms provided by the Azure Machine Learning studio, though, you can find out more from the [Machine Learning Algorithm Cheat Sheet](https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-cheat-sheet)
+11. You are going to train a **Multiclass Logistic Regression** algorithm to predict the most sold **product** based on the hour of the day and the date. It is beyond the scope of this document to explain the details of the different algorithms provided by the Azure Machine Learning studio, though, you can find out more from the [Machine Learning Algorithm Cheat Sheet](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
 
-12. From the experiment items panel on the left, expand ***Machine Learning* > *Initialize Model* > *Classification***, and drag the **Multiclass Logistic Regression** item on to the experiment canvas.
+12. From the experiment items panel on the left, expand ***Machine Learning* > *Initialize Model* > *Classification***, and drag the **Multiclass Logistic Regression** item on to the experiment canvas.
 
 13. Connect the output, from the bottom of the **Multiclass Logistic Regression**, to the top-left input of the **Train Model** item.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-23.png)
 
-14. In list of experiment items in the panel on the left, expand **Machine Learning* > *Score**, and drag the **Score Model** item on to the canvas.
+14. In list of experiment items in the panel on the left, expand **Machine Learning* > *Score**, and drag the **Score Model** item on to the canvas.
 
-15. Connect the output, from the bottom of the **Train Model**, to the top-left input of the **Score Model**.
+15. Connect the output, from the bottom of the **Train Model**, to the top-left input of the **Score Model**.
 
-16. Connect the bottom-right output from **Split Data**, to the top-right input of the **Score Model* item*.
+16. Connect the bottom-right output from **Split Data**, to the top-right input of the **Score Model* item*.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-24.png)
 
-17. In the list of **Experiment** items in the panel on the left, expand ***Machine Learning* > *Evaluate***, and drag the **Evaluate Model** item onto the canvas.
+17. In the list of **Experiment** items in the panel on the left, expand ***Machine Learning* > *Evaluate***, and drag the **Evaluate Model** item onto the canvas.
 
-18. Connect the output from the **Score Model** to the top-left input of the **Evaluate Model**.
+18. Connect the output from the **Score Model** to the top-left input of the **Evaluate Model**.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-25.png)
 
@@ -267,11 +273,11 @@ To start creating an experiment:
 
 20. You can see the **status** of the experiment in the top-right of the canvas. Wait a few moments for the experiment to finish.
 
-    > If you have a big (real world) dataset it is likely that the experiment could take hours to run.
+    > If you have a big (real world) dataset it is likely that the experiment could take hours to run.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-27.png)
 
-21. Right click on the **Evaluate Model** item in the canvas and from the context menu hover the mouse over **Evaluation Results**, then select **Visualize**.
+21. Right click on the **Evaluate Model** item in the canvas and from the context menu hover the mouse over **Evaluation Results**, then select **Visualize**.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-28.png)
 
@@ -281,17 +287,17 @@ To start creating an experiment:
 
 23. Close the **Results**.
 
-24. To use your newly trained Machine Learning model you need to expose it as a **Web Service**. To do this, click on the **Set Up Web Service** menu item in the menu at the bottom of the page, and click on **Predictive Web Service**.
+24. To use your newly trained Machine Learning model you need to expose it as a **Web Service**. To do this, click on the **Set Up Web Service** menu item in the menu at the bottom of the page, and click on **Predictive Web Service**.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-30.png)
 
 25. A new tab will be created, and the train model merged to create the new web service. 
 
-26. In the menu at the bottom of the page click **Save**, then click **Run**. You will see the status updated in the top-right corner of the experiment canvas.
+26. In the menu at the bottom of the page click **Save**, then click **Run**. You will see the status updated in the top-right corner of the experiment canvas.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-31.png)
 
-27. Once it has finished running, a **Deploy Web Service** button will appear at the bottom of the page. You are ready to deploy the web service. Click **Deploy Web Service** (Classic) in the menu at the bottom of the page.
+27. Once it has finished running, a **Deploy Web Service** button will appear at the bottom of the page. You are ready to deploy the web service. Click **Deploy Web Service** (Classic) in the menu at the bottom of the page.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-32.png)
 
@@ -302,7 +308,7 @@ To start creating an experiment:
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-33.png)
 
     > [!NOTE] 
-    > If you click Test in this page, you will be able to enter input data and view the output. Enter the **day** and **hour**. Leave the **product** entry blank. Then click the **Confirm** button. The output on the bottom of the page will show the JSON representing the likelihood of each product being the choice.
+    > If you click Test in this page, you will be able to enter input data and view the output. Enter the **day** and **hour**. Leave the **product** entry blank. Then click the **Confirm** button. The output on the bottom of the page will show the JSON representing the likelihood of each product being the choice.
 
 29. A new web page will open up, displaying the instructions and some examples about the Request structure required by the Machine Learning Studio. Copy the **Request URI** displayed in this page, into your notepad.
 

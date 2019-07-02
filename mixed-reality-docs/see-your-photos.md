@@ -1,96 +1,38 @@
 ---
-title: See your photos
+title: See your photos on HoloLens
 description: How to view photos, videos, and slideshows on HoloLens, and place them in your physical environment.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 03/21/2018
+ms.date: 10/02/2018
 ms.topic: article
 keywords: photo, video, mrc, mixed reality capture, how-to, OneDrive, HoloLens, pin, place, slideshow
 ---
 
 
 
-# See your photos
+# See your photos on HoloLens
 
-When you take [mixed reality photos and videos](mixed-reality-capture.md) on your HoloLens, they are saved to the Camera Roll folder. The built in Photos app can be used to view, manage, share, and upload photos and videos to OneDrive.
+When you take [mixed reality photos and videos](mixed-reality-capture.md) on HoloLens, they are saved to the "Camera roll" folder. The built-in Photos app can be used to view, manage, and share photos and videos. You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store to sync photos to other devices. 
 
 ## Photos app
 
-The Photos app is one of the default apps on the Start menu.
+The Photos app is one of the default apps on the Start menu, and comes built-in with HoloLens. You can learn more about using the Photos app to view content and place it in your physical environment [on the HoloLens support site](https://support.microsoft.com/help/12648). 
 
-![Start Menu on HoloLens](images/20160205-152936-hololens-200px.jpg)<br>
-Photos app on the Start menu
+## OneDrive app
 
-### To see your photos and videos
-1. [Bloom](gestures.md#bloom) to open the Start Menu
-2. Gaze at the Photos ![Photos app tile](images/icon3.png) icon and [air-tap](gestures.md#air-tap).
-3. Use gaze to position the Photos app, then air-tap or say “Place.”
+With [OneDrive](https://onedrive.live.com/) you can access, manage, and share your photos and videos with any device and with any user. To access the photos and videos captured on HoloLens, first download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens. Then open the OneDrive app and select **Settings > Camera upload**, and turn on **Camera upload**.
 
-### Navigating within the Photos app
+## USB 
 
-There are three modes within the photos app: collection, one-up, and slideshow.
-
-**Collection mode**
-
-There are five options on the left navigation bar:
-1. Collection shows all of the photos and videos within your combined Camera Roll.
-2. Photos filters the view to only photos.
-3. Videos filters the view to only videos.
-4. Sync will force a manual synchronization with OneDrive.
-5. Settings opens a flyout for customization.
-
-Clicking on an individual photo/video will switch to one-up view.
-
-**One-up mode**
-
-In one-up mode you are able to:
-* Play videos
-* Share photos and videos
-* Delete photos and videos
-* Pin photos and videos to decorate your world
-* Start a slideshow
-
-You can press the collection button to return the collection mode.
-
-**Slideshow**
-
-In slideshow mode your photos and videos will automatically cycle in reverse chronological order.
-
-### Sources supported
-
-The Photos app shows you all of the photos and videos stored in:
-* The device's Camera Roll folder
-* OneDrive's Camera Roll special folder (if OneDrive is enabled)
-
-**OneDrive for Business**
-
-OneDrive for Business is not currently supported. The Photos app will prompt you for a Microsoft account to connect with the consumer OneDrive service.
-
-**OneDrive synchronization**
-
-OneDrive sync is enabled by default. To disable:
-1. In the Photos app, go to collection mode
-2. Gaze at the Settings button in the navigation pane and air-tap.
-3. Gaze at the Back up & sync slider and air-tap to set it to 'Off'.
-
-OneDrive synchronization only runs when OneDrive is enabled and while Photos is the active app. It does the following:
-* Photos and videos within the device's Camera Roll folder will be automatically uploaded to OneDrive.
-* To help preserve space on your HoloLens, OneDrive-backed files, older than two weeks, are automatically removed from the device's Camera Roll.
-
-Any photos and videos uploaded will be available on all of your other OneDrive enabled devices. You’ll also see the photos and videos your other devices have added to OneDrive's Camera Roll special folder.
-
-### To pin your photos and videos in the mixed world
-1. From the Photos App, select a photo or video from your collection to enter One-up mode.
-2. Gaze at the Pin button and air-tap.
-3. Use gaze to position the photo or video, then air-tap or say “Place.”
-
-![Pin a photo or video in your Mixed World](images/pin-photos-app-300px.png)<br>
-Pin a photo or video in your physical environment
-
-## OneDrive
-
-With [OneDrive](https://onedrive.live.com/) you can access, manage, and share your photos and videos with any device and with any user. To access the photos and videos captured on HoloLens, first use the Photos app to upload your changes up to OneDrive.
+If your HoloLens is running the [Windows 10 April 2018 update](release-notes-april-2018.md) or later, you can connect your HoloLens to a Windows 10 PC over USB to browse photos and videos on the device using MTP (media transfer protocol). You'll need to make sure the device is unlocked to browse files if you have a PIN or password set up on your device. 
 
 ## Windows Device Portal
 
 If you have enabled the [Windows Device Portal](using-the-windows-device-portal.md#mixed-reality-capture), you can use it to browse, retrieve, and manage the photos and videos stored on your device.
+
+## See also
+
+* [Photos on HoloLens support article (external link](https://support.microsoft.com/help/12648)
+* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+* [Mixed reality capture](mixed-reality-capture.md)
+* [Windows Device Portal](using-the-windows-device-portal.md)

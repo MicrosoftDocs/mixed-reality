@@ -10,7 +10,7 @@ keywords: HoloLens, HoloStudio, Windows Mixed Reality
 
 # Case study - 3 HoloStudio UI and interaction design learnings
 
-[HoloStudio](https://www.microsoft.com/microsoft-hololens/en-us/apps/holostudio) was one of the first Microsoft apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through a lot of user testing, prototyping, and trial and error.
+[HoloStudio](https://www.youtube.com/watch?v=BRIJG0x_We8) was one of the first Microsoft apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through a lot of user testing, prototyping, and trial and error.
 
 We know that not everyone has the resources at their disposal to do this type of research, so we had our Sr. Holographic Designer, Marcus Ghaly, share three things we learned during the development of HoloStudio about UI and interaction design for HoloLens apps.
 
@@ -70,6 +70,6 @@ Users need to be able to easily access UI controls even if they've been blocked,
 </table>
 
 ## See also
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 
  

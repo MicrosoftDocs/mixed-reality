@@ -46,7 +46,7 @@ The promise of mixed reality, especially in the real world with holographic expe
 * **Voice**, in terms of speech and conversation, is enabling users to communicate with computers through more natural means — answering bots through text or issuing commands to conversational hardware.
 * **AI** is powering experiences that distill insights from increasingly complex datasets. While AI is an enormous topic, recent progress has provided the groundwork for devices that rely on computer vision, more natural digital assistants, and recommending actions to users.
 
-Mixed reality provides a medium to combine these technologies into a single user experience. Voice becomes a powerful, natural method for input when wearing a holographic headset. AI acts as a critical cipher to contextualize the enormous amounts of information connecting the physical and digital worlds. This is why Sataya Nadella refers to HoloLens as ‘the ultimate computer’, it’s a culminating device device for three core technologies. A platform to empower humans to more easily interact with the growing complexity of devices and services.
+Mixed reality provides a medium to combine these technologies into a single user experience. Voice becomes a powerful, natural method for input when wearing a holographic headset. AI acts as a critical cipher to contextualize the enormous amounts of information connecting the physical and digital worlds. This is why Sataya Nadella refers to HoloLens as ‘the ultimate computer’, it’s a culminating device for three core technologies. A platform to empower humans to more easily interact with the growing complexity of devices and services.
 
 ### Less interface in your face
 

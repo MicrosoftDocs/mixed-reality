@@ -71,7 +71,7 @@ Gaze can also be used to track user attention through an experience and see whic
 
 ## Performance
 
-Proper use of the holographic frame is fundamental to the [performance quality](performance-recommendations-for-hololens-apps.md) experiences. A common technical (and usability) challenge is overloading the user's frame with digital content, causing rendering performance to degrade. Consider instead using the full space around the user to arrange digital content, using the techniques described above, to lessen the burden of rendering and ensure an optimal display quality.
+Proper use of the holographic frame is fundamental to the [performance quality](understanding-performance-for-mixed-reality.md) experiences. A common technical (and usability) challenge is overloading the user's frame with digital content, causing rendering performance to degrade. Consider instead using the full space around the user to arrange digital content, using the techniques described above, to lessen the burden of rendering and ensure an optimal display quality.
 
 Digital content within the holographic frame of the HoloLens can also be paired with the [stabilization plane](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) for optimal performance and [hologram stability](hologram-stability.md).
 
@@ -116,7 +116,7 @@ In the Destination: Mars experience featured at [NASA's Kennedy Space Center](ht
 ![A virtual Buzz Aldrin becomes the focal point for users in Destination: Mars.](images/destinationmars-750px.png)<br>
 *A virtual Buzz Aldrin becomes the focal point for users in Destination: Mars.*
 
-As an immersive experience, these users were encouraged to look around, moving their head in all directions to see the virtual Martian landscape. Although to ensure the comfort of the users, Buzz Aldrin's narration and virtual presence provided a focal point throughout the experience. This virtual recording of Buzz (created by [Microsoft's Mixed Reality Capture Studios](https://www.microsoft.com/en-us/mixed-reality/capture-studios)) stood at real, human size, in the corner of the room allowing users to see him in near-complete view. Buzz's narration directed users to focus on different points in the environment (for example, a set of Martian rocks on the floor or a mountain range in the distance) with specific scene changes or objects introduced by him.
+As an immersive experience, these users were encouraged to look around, moving their head in all directions to see the virtual Martian landscape. Although to ensure the comfort of the users, Buzz Aldrin's narration and virtual presence provided a focal point throughout the experience. This virtual recording of Buzz (created by [Microsoft's Mixed Reality Capture Studios](https://www.microsoft.com/mixed-reality/capture-studios)) stood at real, human size, in the corner of the room allowing users to see him in near-complete view. Buzz's narration directed users to focus on different points in the environment (for example, a set of Martian rocks on the floor or a mountain range in the distance) with specific scene changes or objects introduced by him.
 
 ![The virtual narrators will turn to follow a user's movement, creating a powerful focal point throughout the experience.](images/gazereset-750px.png)<br>
 *The virtual narrators will turn to follow a user's movement, creating a powerful focal point throughout the experience.*
@@ -124,8 +124,8 @@ As an immersive experience, these users were encouraged to look around, moving t
 The realistic representation of Buzz provided a powerful focal point, complete with subtle techniques to turn Buzz toward the user to feel as though he is there, speaking to you. As the user moves about the experience, Buzz will shift toward you to a threshold before returning to a neutral state if the user moves too far beyond his periphery. If the user looks way from Buzz completely (for example, to look at something elsewhere in the scene) then back to Buzz, the narrator's directional position will once again be focused on the user. Techniques like this provide a powerful sense of immersion and create a focal point within the holographic frame, reducing excessive head movement and promoting [user comfort](comfort.md).
 
 ## See also
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 * [Comfort](comfort.md)
 * [Scale](scale.md)
-* [Gaze targeting](gaze-targeting.md)
+* [Head-gaze and dwell](gaze-and-dwell.md)
 * [Hologram stability](hologram-stability.md)

@@ -6,6 +6,7 @@ author: rwinj
 ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
+ms.localizationpriority: high
 keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns, controls, sample apps, Mixed Reality Toolkit, MRTK
 ---
 
@@ -13,7 +14,9 @@ keywords: Windows Mixed Reality, design, Interaction, Style, Color, app patterns
 
 ![Design for mixed reality](images/Bicycle-Leschi10.gif)
 
-This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets). So, consider this work as a set of topics for ‘how to design for Windows head-mounted displays’.
+
+This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices, such as HoloLens and immersive devices, such as Acer and HP Windows Mixed Reality headsets. So, consider this work as a set of topics for how to design for Windows head-mounted displays.
+
 
 ## Article categories
 
@@ -55,25 +58,25 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="images/Interaction_Icon_120x130.png" alt="Interaction design icon">
+                            <img src="images/Interaction_Icon_120x130.png" alt="MR design system and tools icon">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Interaction design</h3>
-                        <p>
-                            <a href="interaction-fundamentals.md">Interaction fundamentals</a>
-                        </p>
+                        <h3>MR design system and tools</h3>
                         <p>
                             <a href="comfort.md">Comfort</a>
                         </p>
-                        <p>
-                            <a href="gaze-targeting.md">Gaze targeting</a>
+			<p>
+                            <a href="interaction-fundamentals.md">Instinctual interactions</a>
                         </p>
                         <p>
-                            <a href="gestures.md">Gestures</a>
+                            <a href="hands-and-tools.md">Hands and motion controllers</a>
+                        </p>
+                        <p>
+                            <a href="hands-free.md">Hands-free</a>
                         </p>
                          <p>
-                            <a href="voice-design.md">Voice design</a>
+                            <a href="gaze-and-commit.md">Head-gaze and commit</a>
                         </p>
                     </div>
                 </div>
@@ -160,7 +163,7 @@ This guidance is authored by Microsoft designers, developers, program managers, 
                             <a href="progress.md">Displaying progress</a>
                         </p>
                         <p>
-                            <a href="app-bar-and-bounding-box.md">App bar and bounding box</a>
+                            <a href="app-bar-and-bounding-box.md">Bounding box and App bar</a>
                         </p>
                     </div>
                 </div>
@@ -188,7 +191,7 @@ Build great experiences from samples designed and created by our team.
                         </div>
                         <div class="cardText">
                             <h3>Periodic Table of the Elements</h3>
-                            <p>Learn how to lay out an array of objects in 3D space with various surface types using an Object collection.</p>
+                            <p>Learn how to lay out an array of objects in 3D space with various surface types using an object collection.</p>
                         </div>
                     </div>
                 </div>
@@ -207,7 +210,7 @@ Build great experiences from samples designed and created by our team.
                         </div>
                         <div class="cardText">
                             <h3>Lunar Module</h3>
-                            <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller input.</p>
+                            <p>Learn how to extend HoloLens base gestures with two-handed tracking and Xbox controller. input.</p>
                         </div>
                     </div>
                 </div>
@@ -226,7 +229,7 @@ Build great experiences from samples designed and created by our team.
                         </div>
                         <div class="cardText">
                             <h3>Galaxy Explorer</h3>
-                            <p>The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code.</p>
+                            <p>The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an application, watched a team build it, and can now get the source code.</p>
                         </div>
                     </div>
                 </div>
@@ -242,7 +245,7 @@ Build great experiences from samples designed and created by our team.
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
     <li>
-	<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit - Unity" data-linktype="absolute-path">
+	<a href="https://microsoft.github.io/MixedRealityToolkit-Unity/README.html#ui-and-interaction-building-blocks" title="Mixed Reality Toolkit - Unity" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -278,26 +281,7 @@ Build great experiences from samples designed and created by our team.
             </div>
         </div>
       </a>	
-    </li>	
-        <li>
-	<a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md" title="HoloSketch" data-linktype="absolute-path">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="images/HoloSketch.png" alt="HoloSketch">
-                        </div>
-                    </div>                    
-			<div class="cardText">
-                        <h3>HoloSketch</h3>
-                        <p> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </a>	
-    </li>	
+    </li>		
             <li>
 	<a href="https://www.simplygon.com" title="Simplygon" data-linktype="absolute-path">
         <div class="cardSize">
@@ -343,7 +327,7 @@ Build great experiences from samples designed and created by our team.
       </a>	
     </li>
     <li>
-	<a href="https://www.microsoft.com/en-us/design/inclusive" title="Inclusive design at Microsoft" data-linktype="absolute-path">
+	<a href="https://www.microsoft.com/design/inclusive" title="Inclusive design at Microsoft" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -362,7 +346,7 @@ Build great experiences from samples designed and created by our team.
       </a>	
     </li>	
         <li>
-	<a href="https://developer.microsoft.com/en-us/windows/apps/design" title="Universal Windows Platform (UWP) app design" data-linktype="absolute-path">
+	<a href="https://developer.microsoft.com/windows/apps/design" title="Universal Windows Platform (UWP) application design" data-linktype="absolute-path">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -372,7 +356,7 @@ Build great experiences from samples designed and created by our team.
                         </div>
                     </div>                    
 			<div class="cardText">
-                        <h3>Universal Windows Platform (UWP) app design</h3>
+                        <h3>Universal Windows Platform (UWP) application design</h3>
                         <p> </p>
                     </div>
                 </div>

@@ -2,10 +2,16 @@
 title: MR and Azure 304 - Face recognition
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition, hololens, immersive, vr
 ---
+
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+
+<br> 
 
 # MR and Azure 304: Face recognition
 
@@ -13,7 +19,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition,
 
 In this course you will learn how to add face recognition capabilities to a mixed reality application, using Azure Cognitive Services, with the Microsoft Face API.
 
-*Azure Face API* is a Microsoft service, which provides developers with the most advanced face algorithms, all in the cloud. The *Face API* has two main functions: face detection with attributes, and face recognition. This allows developers to simply set a set of groups for faces, and then, send query images to the service later, to determine to whom a face belongs. For more information, visit the [Azure Face Recognition page](https://azure.microsoft.com/en-us/services/cognitive-services/face/).
+*Azure Face API* is a Microsoft service, which provides developers with the most advanced face algorithms, all in the cloud. The *Face API* has two main functions: face detection with attributes, and face recognition. This allows developers to simply set a set of groups for faces, and then, send query images to the service later, to determine to whom a face belongs. For more information, visit the [Azure Face Recognition page](https://azure.microsoft.com/services/cognitive-services/face/).
 
 Having completed this course, you will have a mixed reality HoloLens application, which will be able to do the following:
 
@@ -46,11 +52,11 @@ In your application, it is up to you as to how you will integrate the results wi
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md)
+- [The latest Windows 10 SDK](install-the-tools.md)
+- [Unity 2017.4](install-the-tools.md)
+- [Visual Studio 2017](install-the-tools.md)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - A camera connected to your PC (for immersive headset development)
 - Internet access for Azure setup and Face API retrieval
@@ -58,7 +64,7 @@ We recommend the following hardware and software for this course:
 ## Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/en-us/hololens/hololens-setup). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens App (sometimes it can help to perform those tasks for each user). 
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
@@ -95,7 +101,7 @@ To use the *Face API* service in Azure, you will need to configure an instance o
 
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     5. The UWP app, **Person Maker**, which you use later, requires the use of 'West US' for location.
 
@@ -136,7 +142,7 @@ Make sure to download the prebuilt UWP Application called [Person Maker](https:/
 > [IMPORTANT]
 > **Person Maker** uses some basic throttling, to help ensure that you do not exceed the number of service calls per minute for the **free subscription tier**. The green text at the top will change to red and update as 'ACTIVE' when throttling is happening; if this is the case, simply wait for the application (it will wait until it can next continue accessing the face service, updating as 'IN-ACTIVE' when you can use it again).
 
-This application uses the *Microsoft.ProjectOxford.Face* libraries, which will allow you to make full use of the Face API. This library is available for free as a NuGet Package. For more information about this, and similar, APIs [make sure to visit the API reference article](https://docs.microsoft.com/en-us/azure/cognitive-services/face/apireference).
+This application uses the *Microsoft.ProjectOxford.Face* libraries, which will allow you to make full use of the Face API. This library is available for free as a NuGet Package. For more information about this, and similar, APIs [make sure to visit the API reference article](https://docs.microsoft.com/azure/cognitive-services/face/apireference).
 
 > [!NOTE] 
 > These are just the steps required, instructions for how to do these things is further down the document. The **Person Maker** app will allow you to:
@@ -839,7 +845,7 @@ To deploy on HoloLens:
 
 3.  Use the tap gesture to capture the person's picture.
 4.  Wait for the App to send the analysis request and receive a response.
-5.  If the person has been successfully recognized, the person's name name will appear as UI text.
+5.  If the person has been successfully recognized, the person's name will appear as UI text.
 6.  You can repeat the capture process using the tap gesture every few seconds.
 
 ## Your finished Azure Face API Application

@@ -42,7 +42,7 @@ If you are working with a Windows Mixed Reality headset connected to your PC, yo
 3. Select **For developers**
 4. Enable **Developer Mode**, read the disclaimer for the setting you chose, then click Yes to accept the change.
 
-## Deploying an app over Wi-Fi (HoloLens)
+## Deploying an app over Wi-Fi - HoloLens (1st gen)
 1. Select an **x86** build configuration for your app 
 ![x86 build configuration in Visual Studio](images/x86setting.png)
 2. Select **Remote Machine** in the deployment target drop-down menu ![Remote machine deployment target in Visual Studio](images/remotemachinesetting.png)
@@ -54,27 +54,27 @@ If you are working with a Windows Mixed Reality headset connected to your PC, yo
 
 If your HoloLens IP address changes, you can change the IP address of the target machine by going to **Project > Properties > Configuration Properties > Debugging**
 
-## Deploying an app over USB (HoloLens)
+## Deploying an app over USB - HoloLens (1st gen)
 1. Select an **x86** build configuration for your app
 ![x86 build configuration in Visual Studio](images/x86setting.png)
 2. Select **Device** in the deployment target drop-down menu![Device deployment in Visual Studio](images/buildsettingsusbdeploy.png)
 3. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploynodebugging.png)
 4. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
-## Deploying an app to your Local PC (immersive headset)
+## Deploying an app to your Local PC - immersive headset
 
 Follow these instructions when using a Windows Mixed Reality immersive headset that connects to your PC or the [Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md). In these cases, simply deploy and run your app on the local PC.
 1. Select an **x86** or **x64** build configuration for your app
 2. Select **Local Machine** in the deployment target drop-down menu
 3. Select **Debug > Start debugging** to deploy your app and start debugging
 
-## Pairing your device (HoloLens)
+## Pairing your device - HoloLens (1st gen)
 
 The first time you deploy an app from Visual Studio to your HoloLens, you will be prompted for a PIN. On the HoloLens, generate a PIN by launching the Settings app, go to **Update > For Developers** and tap on **Pair**. A PIN will be displayed on your HoloLens; type this PIN in Visual Studio. After pairing is complete, tap **Done** on your HoloLens to dismiss the dialog. This PC is now paired with the HoloLens and you will be able to deploy apps automatically. Repeat these steps for every subsequent PC that is used to deploy apps to your HoloLens.
 
 To un-pair your HoloLens from all computers it was paired with, launch the **Settings** app, go to **Update > For Developers** and tap on **Clear**.
 
-## Deploying an app to the HoloLens Emulator
+## Deploying an app to the HoloLens (1st gen) Emulator
 1. Make sure you have **[installed the HoloLens Emulator](install-the-tools.md)**.
 2. Select an **x86** build configuration for your app.
 ![x86 build configuration in Visual Studio](images/x86setting.png)
@@ -83,7 +83,7 @@ To un-pair your HoloLens from all computers it was paired with, launch the **Set
 
 ## Graphics Debugger
 
-The Visual Studio Graphics Diagnostics tools are very helpful when writing and optimizing a Holographic app. See [Visual Studio Graphics Diagnostics on MSDN](https://msdn.microsoft.com/en-us/library/hh315751.aspx) for full details.
+The Visual Studio Graphics Diagnostics tools are very helpful when writing and optimizing a Holographic app. See [Visual Studio Graphics Diagnostics on MSDN](https://msdn.microsoft.com/library/hh315751.aspx) for full details.
 
 **To Start the Graphics Debugger**
 1. Follow the instructions above to target a device or emulator
@@ -92,7 +92,7 @@ The Visual Studio Graphics Diagnostics tools are very helpful when writing and o
 
 ## Profiling
 
-The Visual Studio profiling tools allow you to analyze your app's performance and resource use. This includes tools to optimize CPU, memory, graphics, and network use. See [Run diagnostic tools without debugging on MSDN](https://msdn.microsoft.com/en-us/library/dn957936.aspx) for full details.
+The Visual Studio profiling tools allow you to analyze your app's performance and resource use. This includes tools to optimize CPU, memory, graphics, and network use. See [Run diagnostic tools without debugging on MSDN](https://msdn.microsoft.com/library/dn957936.aspx) for full details.
 
 **To Start the Profiling Tools with HoloLens**
 1. Follow the instructions above to target a device or emulator
@@ -115,5 +115,5 @@ You can use Visual Studio to debug a Universal Windows app that's installed with
 ## See also
 * [Install the tools](install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
-* [Deploying and debugging Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/mt613243.aspx)
-* [Enable your device for development](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development)
+* [Deploying and debugging Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
+* [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)

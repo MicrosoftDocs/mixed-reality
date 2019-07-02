@@ -2,7 +2,7 @@
 title: Case study - Scaling Datascape across devices with different performance
 description: This case study offers insight on how Microsoft developers optimized the Datascape app to deliver a compelling experience across devices with a range of performance capabilities.
 author: danandersson
-ms.author: roferres, daander
+ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: immersive headset, performance optimization, VR, case study
@@ -313,6 +313,7 @@ Design for worst case scenarios, and maybe consider using adaptive rendering for
 
 
 ## See also
-* [Performance recommendations for immersive headset apps](performance-recommendations-for-immersive-headset-apps.md)
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
 
  

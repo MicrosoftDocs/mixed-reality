@@ -8,6 +8,11 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, sharing, xbox controller, networking, cross-device
 ---
 
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+
+<br>
+
 # MR Sharing 250: HoloLens and immersive headsets
 
 With the flexibility of Universal Windows Platform (UWP), it is easy to create an application that spans multiple devices. With this flexibility, we can create experiences that leverage the strengths of each device. This tutorial will cover a basic shared experience that runs on both HoloLens and Windows Mixed Reality immersive headsets. This content was originally delivered at the Microsoft Build 2017 conference in Seattle, WA.
@@ -41,7 +46,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 ### Project files
 
 * Download the [files](https://github.com/Microsoft/MixedReality250/archive/master.zip) required by the project. Extract the files to an easy to remember location.
-* This project requires the [most recent version of Unity with Mixed Reality support](install-the-tools.md#immersive-headset-development).
+* This project requires the [a recommended version of Unity with Windows Mixed Reality support](install-the-tools.md).
 
 >[!NOTE]
 >If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/MixedReality250).
@@ -263,7 +268,7 @@ MixedRealityTeleport has two jobs. First, it handles rotation using the bumpers.
 
 When we rotate we do a fade out and fade in using a simple script called 'fade control'. We do this to prevent the user from seeing an unnatural movement which could lead to discomfort. The fade in and out effect is fairly simple. We have a black quad hanging in front of the **main camera**. When fading out we transition the alpha value from 0 to 1. This gradually causes the black pixels of the quad to render and obscure anything behind them. When fading back in we transition the alpha value back to zero.
 
-When we calculate the rotation, note that we are rotating our **dolly** but calculating the rotation around the **main camera**. This is important as the futher the **main camera** is away from 0,0,0, the less accurate a rotation around the dolly would become from the point of view of the user. In fact, if you do not rotate around the camera position, the user will move on an arc around the **dolly** rather than rotating.
+When we calculate the rotation, note that we are rotating our **dolly** but calculating the rotation around the **main camera**. This is important as the farther the **main camera** is away from 0,0,0, the less accurate a rotation around the dolly would become from the point of view of the user. In fact, if you do not rotate around the camera position, the user will move on an arc around the **dolly** rather than rotating.
 
 The second job for MixedRealityTeleport is to handle moving the **dolly**. This is done in SetWorldPosition. SetWorldPosition takes the desired world position, the position where the user wants to percieve that they inhabit. We need to put our **dolly** at that position minus the local position of the **main camera**, as that offset will be added each frame.
 

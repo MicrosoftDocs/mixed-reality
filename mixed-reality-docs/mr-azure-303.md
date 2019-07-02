@@ -2,10 +2,16 @@
 title: MR and Azure 303 - Natural language understanding (LUIS)
 description: Complete this course to learn how to implement Azure Language Understanding Intelligence Service (LUIS) within a mixed reality application.
 author: drneil
-ms.author: v-arood
+ms.author: jemccull
 ms.date: 07/04/2018
+ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, language understanding intelligence service, luis, hololens, immersive, vr
 ---
+
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+
+<br>
 
 # MR and Azure 303: Natural language understanding (LUIS)
 
@@ -13,7 +19,7 @@ In this course, you will learn how to integrate Language Understanding into a mi
 
 ![Lab outcome](images/AzureLabs-Lab3-000.png)
 
-*Language Understanding (LUIS)* is a Microsoft Azure service, which provides applications with the ability to make meaning out of user input, such as through extracting what a person might want, in their own words. This is achieved through machine learning, which understands and learns the input information, and then can reply with detailed, relevant, information. For more information, visit the [Azure Language Understanding (LUIS) page](https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding-intelligent-service/).
+*Language Understanding (LUIS)* is a Microsoft Azure service, which provides applications with the ability to make meaning out of user input, such as through extracting what a person might want, in their own words. This is achieved through machine learning, which understands and learns the input information, and then can reply with detailed, relevant, information. For more information, visit the [Azure Language Understanding (LUIS) page](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/).
 
 Having completed this course, you will have a mixed reality immersive headset application which will be able to do the following:
 
@@ -47,11 +53,11 @@ Be prepared to Train LUIS several times, which is covered in [Chapter 12](#chapt
 
 We recommend the following hardware and software for this course:
 
-- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Unity 2017.4](install-the-tools.md#installation-checklist-for-immersive-headsets)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist-for-immersive-headsets)
+- A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md)
+- [The latest Windows 10 SDK](install-the-tools.md)
+- [Unity 2017.4](install-the-tools.md)
+- [Visual Studio 2017](install-the-tools.md)
 - A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
 - Internet access for Azure setup and LUIS retrieval
@@ -74,14 +80,14 @@ To use the *Language Understanding* service in Azure, you will need to configure
     > [!NOTE]
     > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
-2.	Once you are logged in, click on **New** in the top left corner, and search for *Azure Language Understanding*, and click **Enter**. 
+2.	Once you are logged in, click on **New** in the top left corner, and search for *Language Understanding*, and click **Enter**. 
 
     ![Create LUIS resource](images/AzureLabs-Lab3-01.png)
 
     > [!NOTE]
     > The word **New** may have been replaced with **Create a resource**, in newer portals.
  
-3.	The new page to the right will provide a description of the Azure Application Insights service. At the bottom left of this page, select the **Create** button, to create an association with this service.
+3.	The new page to the right will provide a description of the Language Understanding service. At the bottom left of this page, select the **Create** button, to create an instance of this service.
 
     ![LUIS service creation - legal notice](images/AzureLabs-Lab3-02.png)
  
@@ -92,7 +98,7 @@ To use the *Language Understanding* service in Azure, you will need to configure
     3. Select the **Pricing Tier** appropriate for you, if this is the first time creating a *LUIS Service*, a free tier (named F0) should be available to you. The free allocation should be more than sufficient for this course.
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these courses) under a common resource group). 
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
     5. Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
     6. You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
@@ -482,8 +488,6 @@ To create this class:
 4.	Add the following namespaces to the top of the file:
 
     ```csharp
-        using System.Collections;
-        using System.Collections.Generic;
         using UnityEngine;
         using UnityEngine.Windows.Speech;
     ```
@@ -492,8 +496,6 @@ To create this class:
 
     ```csharp
         public static MicrophoneManager instance; //help to access instance of this object
-        private int frequency = 44100;      //recording frequency of mic
-        private AudioSource audioSource;        //AudioSource component, provides access to mic
         private DictationRecognizer dictationRecognizer;  //Component converting speech to text
         public TextMesh dictationText; //a UI object used to debug dictation result
     ``` 
@@ -511,17 +513,13 @@ To create this class:
         {
             if (Microphone.devices.Length > 0)
             {
-                // Once the scene starts, begin to capture the audio
-                audioSource = GetComponent<AudioSource>();
-
                 StartCapturingAudio();
-
                 Debug.Log("Mic Detected");
             }
         }
     ```
  
-7.	Now you need the method that the App uses to start the voice capture, and pass it to the *LuisManager* class, that you will build soon. 
+7.	Now you need the method that the App uses to start and stop the voice capture, and pass it to the *LuisManager* class, that you will build soon. 
 
     ```csharp
         /// <summary>
@@ -530,11 +528,28 @@ To create this class:
         /// </summary>
         public void StartCapturingAudio()
         {
-            dictationRecognizer = new DictationRecognizer();
-            dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
-            dictationRecognizer.DictationError += DictationRecognizer_DictationError;
+            if (dictationRecognizer == null)
+            {
+                dictationRecognizer = new DictationRecognizer
+                {
+                    InitialSilenceTimeoutSeconds = 60,
+                    AutoSilenceTimeoutSeconds = 5
+                };
+
+                dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
+                dictationRecognizer.DictationError += DictationRecognizer_DictationError;
+            }
             dictationRecognizer.Start();
             Debug.Log("Capturing Audio...");
+        }
+
+        /// <summary>
+        /// Stop microphone capture
+        /// </summary>
+        public void StopCapturingAudio()
+        {
+            dictationRecognizer.Stop();
+            Debug.Log("Stop Capturing Audio...");
         }
     ```
 
@@ -543,10 +558,13 @@ To create this class:
     ```csharp
         /// <summary>
         /// This handler is called every time the Dictation detects a pause in the speech. 
+        /// This method will stop listening for audio, send a request to the LUIS service 
+        /// and then start listening again.
         /// </summary>
         private void DictationRecognizer_DictationResult(string dictationCaptured, ConfidenceLevel confidence)
         {
-            StartCoroutine(LuisManager.instance.SubmitRequestToLuis(dictationCaptured));
+            StopCapturingAudio();
+            StartCoroutine(LuisManager.instance.SubmitRequestToLuis(dictationCaptured, StartCapturingAudio));
             Debug.Log("Dictation: " + dictationCaptured);
             dictationText.text = dictationCaptured;
         }
@@ -592,7 +610,7 @@ To create this class:
 5.	You will begin by creating three classes **inside** the *LuisManager* class (within the same script file, above the *Start()* method) that will represent the deserialized JSON response from Azure.
 
     ```csharp
-        [System.Serializable] //this class represents the LUIS response
+        [Serializable] //this class represents the LUIS response
         public class AnalysedQuery
         {
             public TopScoringIntentData topScoringIntent;
@@ -602,15 +620,15 @@ To create this class:
 
         // This class contains the Intent LUIS determines 
         // to be the most likely
-        [System.Serializable] 
+        [Serializable]
         public class TopScoringIntentData
-        {        
+        {
             public string intent;
             public float score;
         }
 
         // This class contains data for an Entity
-        [System.Serializable] 
+        [Serializable]
         public class EntityData
         {
             public string entity;
@@ -648,54 +666,38 @@ To create this class:
     ```csharp
         /// <summary>
         /// Call LUIS to submit a dictation result.
+        /// The done Action is called at the completion of the method.
         /// </summary>
-        public IEnumerator SubmitRequestToLuis(string dictationResult)
+        public IEnumerator SubmitRequestToLuis(string dictationResult, Action done)
         {
-            WWWForm webForm = new WWWForm();
-
-            string queryString;
-
-            queryString = string.Concat(Uri.EscapeDataString(dictationResult));
+            string queryString = string.Concat(Uri.EscapeDataString(dictationResult));
 
             using (UnityWebRequest unityWebRequest = UnityWebRequest.Get(luisEndpoint + queryString))
             {
-                unityWebRequest.downloadHandler = new DownloadHandlerBuffer();
-
                 yield return unityWebRequest.SendWebRequest();
 
-                long responseCode = unityWebRequest.responseCode;
-
-                try
+                if (unityWebRequest.isNetworkError || unityWebRequest.isHttpError)
                 {
-                    using (Stream stream = GenerateStreamFromString(unityWebRequest.downloadHandler.text))
+                    Debug.Log(unityWebRequest.error);
+                }
+                else
+                {
+                    try
                     {
-                        StreamReader reader = new StreamReader(stream);
-
-                        AnalysedQuery analysedQuery = new AnalysedQuery();
-
-                        analysedQuery = JsonUtility.FromJson<AnalysedQuery>(unityWebRequest.downloadHandler.text);
+                        AnalysedQuery analysedQuery = JsonUtility.FromJson<AnalysedQuery>(unityWebRequest.downloadHandler.text);
 
                         //analyse the elements of the response 
                         AnalyseResponseElements(analysedQuery);
                     }
-                }
-                catch (Exception exception)
-                {
-                    Debug.Log("Luis Request Exception Message: " + exception.Message);
+                    catch (Exception exception)
+                    {
+                        Debug.Log("Luis Request Exception Message: " + exception.Message);
+                    }
                 }
 
+                done();
                 yield return null;
             }
-        }
-
-        public static Stream GenerateStreamFromString(string receivedString)
-        {
-            MemoryStream stream = new MemoryStream();
-            StreamWriter writer = new StreamWriter(stream);
-            writer.Write(receivedString);
-            writer.Flush();
-            stream.Position = 0;
-            return stream;
         }
     ```
  
@@ -915,15 +917,7 @@ To create this Class:
 4.	Insert the following code for this class:
 
     ```csharp
-        using System;
-        using System.Collections;
-        using System.Collections.Generic;
         using UnityEngine;
-        using UnityEngine.EventSystems;
-        using UnityEngine.Experimental.XR;
-        using UnityEngine.UI;
-        using UnityEngine.XR;
-        using UnityEngine.XR.WSA.Input;
 
         public class Gaze : MonoBehaviour
         {        

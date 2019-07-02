@@ -1,6 +1,19 @@
+---
+title: Contributing instructions
+description: How to contribute to the Windows Mixed Reality documentation. 
+author: mattwojo
+ms.author: mattwoj
+ms.date: 03/21/2018
+ms.topic: article
+---
+
 # Contributing to Windows Mixed Reality developer documentation
 
-Welcome to the [public repo for Windows Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.** Windows Mixed Reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown (with Markdig features). This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution!
+Welcome to the [public repo for Windows Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.** 
+
+Windows Mixed Reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown (with Markdig features). Essentially, the content you edit in this repo gets turned into formatted and stylized pages that show up at https://docs.microsoft.com/windows/mixed-reality. 
+
+This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution!
 
 ## Before you start
 
@@ -18,14 +31,14 @@ When setting up your GitHub account, we also recommend these security precaution
    - We recommend you upload a profile picture, as a thumbnail will be shown on docs pages to which you contribute.
 - If you plan to use a command line workflow, consider setting up [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest) so that you don't have to enter your password each time you make a contribution.
 
-Taking these steps is important as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
+Taking these steps is important, as the publishing system is tied to GitHub and you'll be listed as either author or contributor to each article using your GitHub alias.
 
 ## Editing an existing article
 
-Use the following workflow to make updates to the documentation via web browser:
+Use the following workflow to make updates to *an existing article* via GitHub in a web browser:
 
-1. Navigate to the article you wish to edit.
-2. Click the edit button (pencil icon) in the top right. This will automatically fork a disposable branch off master.
+1. Navigate to the article you wish to edit in the "mixed-reality-docs" folder.
+2. Select the edit button (pencil icon) in the top right. This will automatically fork a disposable branch off the 'master' branch.
 
    ![Edit an article.](images/editpage.png)
 3. Edit the content of the article (see ["Markdown basics"](#markdown-basics) below for guidance).
@@ -35,23 +48,26 @@ Use the following workflow to make updates to the documentation via web browser:
    * author: If you are the primary owner of the page, add your GitHub alias here.
    * ms.author: If you are the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
    * ms.date: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
-   * keywords: Keywords aid in SEO. Add keywords, separated by a comma and a space, that are specific to your article (but no punctuation after the last keyword in your list); you don't need to add global keywords that apply to all articles as those are managed elsewhere. 
-5. When finished with your page edits, scroll down and click the **Propose file change** button.
-6. On the next page, click **Create pull request** to merge your automatically-created branch into master.
-7. After the pull request is completed, the site admin will delete your branch (this is easiest, so you don't have to keep it in sync with master).
-8. Repeat the steps above for the next article you want to edit.
+   * keywords: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article (but no punctuation after the last keyword in your list); you don't need to add global keywords that apply to all articles, as those are managed elsewhere. 
+5. When you've completed your article edits, scroll down and click the **Propose file change** button.
+6. On the next page, click **Create pull request** to merge your automatically-created branch into 'master.'
+7. Repeat the steps above for the next article you want to edit.
 
 ## Creating a new article
 
-Use the following workflow to create new articles in the documentation via web browser:
+Use the following workflow to *create new articles* in the documentation repo via GitHub in a web browser:
 
 1. Create a fork off the MicrosoftDocs/mixed-reality 'master' branch (using the **Fork** button in the top right).
 
    ![Fork the master branch.](images/forkbranch.png)
-2. In the **mixed-reality-docs** folder, click the **Create new file** button in the top right.
+2. In the "mixed-reality-docs" folder, click the **Create new file** button in the top right.
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
    ![Name your new page.](images/newpagetitle.PNG)
+   
+   >[!IMPORTANT]
+   >Make sure you create the new article from within the "mixed-reality-docs" folder. You can confirm this by checking for "/mixed-reality-docs/" in the new file name line.
+
 4. At the top of your new page, add the following metadata block:
 
    ```md
@@ -80,37 +96,36 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
-- [Unique Markdig differences](https://review.docs.microsoft.com/en-us/new-hope/engineering/tools/markdig/markdig-migration-information?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/en-us/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
+- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
 ### Adding tables
 
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](http://www.tablesgenerator.com/markdown_tables).
 
-The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code](#using-visual-studio-code) to edit the documentation.
+The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
 ### Adding images
 
-You’ll need to upload your images to the images folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively. [You can find solid guidance here.](https://review.docs.microsoft.com/en-us/help/style/style-how-to-visuals-static-art-types?branch=master)
+You’ll need to upload your images to the "mixed-reality-docs/images" folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively.
 
 >[!IMPORTANT]
->You can only upload images to your forked repo. So, if you plan on adding images to an article, you'll need to [use Visual Studio Code](#using-visual-studio-code) or make sure you've done the following in a web browser:
+>You can only upload images to your forked repo before merging. So, if you plan on adding images to an article, you'll need to [use Visual Studio Code](#using-visual-studio-code) to add the images to your fork's "images" folder first or make sure you've done the following in a web browser:
 >
 >1. Forked the MicrosoftDocs/mixed-reality repo.
 >2. Edited the article in your fork.
->3. Uploaded the images you're referencing in your article to the "images" folder in your fork.
+>3. Uploaded the images you're referencing in your article to the "mixed-reality-docs/images" folder in your fork.
 >4. Created a **pull request** to merge your fork into the MicrosoftDocs/mixed-reality 'master' branch.
 >
 >To learn how to set up your own forked repo, follow the instructions for [creating a new article](#creating-a-new-article).
 
 ## Previewing your work
 
-While editing in the browser, you can click the **Preview** tab near the top of the page to preview your work before committing. 
+While editing in GitHub via a web browser, you can click the **Preview** tab near the top of the page to preview your work before committing. 
 
 >[!NOTE]
 >Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Once your contributions have been merged into the 'master' branch, you can see what the documentation will look like when it goes public at https://review.docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools?branch=master (find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'master' branch, you can see what the documentation will look like before it goes public at https://review.docs.microsoft.com/windows/mixed-reality?branch=master (find your article using the table of contents in the left column).
 
 ## Editing in the browser vs. editing with a desktop client
 
@@ -127,6 +142,8 @@ If you'd rather not deal with these issues, you may prefer to use a desktop clie
 For the reasons listed [above](#editing-in-the-browser-vs-editing-with-a-desktop-client), you may prefer using a desktop client to edit documentation instead of a web browser. We recommend using [Visual Studio Code](https://code.visualstudio.com/).
 
 ### Setup
+
+Follow these steps to configure Visual Studio Code to work with this repo:
 
 1. In a web browser:
     1. Install [Git for your PC](https://git-scm.com/downloads).
@@ -173,7 +190,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 The following Visual Studio Code extensions are very useful when editing documentation:
 
-- [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) - Use **Alt+M** to bring up a menu of docs authoring options like:
+- [Docs Markdown Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - Use **Alt+M** to bring up a menu of docs authoring options like:
    - Search and reference images you've uploaded.
    - Add formatting like lists, tables, and docs-specific call-outs like `>[!NOTE]`.
    - Search and reference internal links and bookmarks (links to specific sections within a page).

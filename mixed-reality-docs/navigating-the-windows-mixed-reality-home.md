@@ -21,7 +21,7 @@ Your home is also where you’ll use the Start menu to open and place apps and c
 ![Start Menu on Microsoft HoloLens](images/start-500px.png)
 
 The Start menu consists of:
-* System information (network status, battery status, current time, and volume)
+* System information (network status, battery percentage, current time, and volume)
 * Cortana (on immersive headsets, a Start tile; on HoloLens, at the top of Start)
 * Pinned apps
 * The All apps button (plus sign)
@@ -37,7 +37,7 @@ To run the app, you’ll need to then place it in your home:
 1. Use your [gaze](gaze.md) or controller to position the app where you want it. It will automatically adjust (in size and position) to conform to the space where you place it.
 2. Place the app using air-tap (HoloLens) or the Select button (immersive headsets). To cancel and bring back the Start menu, use the bloom gesture or the Windows button.
 
-[2D apps](building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](https://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
+[2D apps](building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
 
 Apps can also be launched via an app-to-app API or via Cortana.
 
@@ -110,23 +110,26 @@ Within the Windows Mixed Reality home:
 
 ## Cortana
 
-[Cortana](voice-input.md#hey-cortana) is your personal assistant in Windows Mixed Reality, just like on PC and phone. HoloLens has a built-in microphone, but immersive headsets may require additional hardware. Use Cortana to open apps, restart your device, look things up online, and more. Developers may also choose to [integrate Cortana](https://dev.windows.com/en-us/cortana) into their experiences.
+[Cortana](voice-input.md#hey-cortana) is your personal assistant in Windows Mixed Reality, just like on PC and phone. HoloLens has a built-in microphone, but immersive headsets may require additional hardware. Use Cortana to open apps, restart your device, look things up online, and more. Developers may also choose to [integrate Cortana](https://dev.windows.com/cortana) into their experiences.
 
 You can also use voice commands to get around your home. For example, point at a button (using [gaze](gaze.md) or a controller, depending on the device) and say “Select.” Other voice commands include “Go home,” “Bigger,” “Smaller,” “Close,” and “Face me.”
 
 ## Store, Settings, and system apps
 
 Windows Mixed Reality has a number of built-in apps, such as:
-* **Windows Store** to get apps and games
-* **Windows Feedback** to submit feedback about the system and system apps
+* **Microsoft Store** to get apps and games
+* **Feedback Hub** to submit feedback about the system and system apps
 * **Settings** to configure system settings ([including networking](connecting-to-wi-fi-on-hololens.md) and system updates)
 * **Microsoft Edge** to browse websites
 * **Photos** to view and share photos and videos
 * **Calibration** (HoloLens only) for adjusting the HoloLens experience to the current user
 * **Learn Gestures** (HoloLens) or **Learn Mixed Reality** (immersive headsets) to learn about using your device
-* **Holograms** to decorate your world with mixed reality content
+* **3D Viewer** to decorate your world with mixed reality content
 * **Mixed Reality Portal** (desktop) for setting up and managing your immersive headset and streaming a live preview of your view in the headset for others to see.
+* **Movies and TV** for viewing 360 videos and the latest movies and tv shows
+* **Cortana** for all of your virtual assistant needs
 * **Desktop** (immersive headsets) for viewing your desktop monitor while in an immersive headset
+* **File Explorer** Access files and folders located on your device
 
 ## See also
 * [App views](app-views.md)

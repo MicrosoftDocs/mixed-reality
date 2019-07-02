@@ -173,32 +173,32 @@ App contracts and extension points allow you to register your app to take advant
 
 |  Contract or Extension  |  Supported? | 
 |----------|----------|
-| [Account Picture Provider (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#account_picture_provider) | Unsupported | 
-| [Alarm](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#alarm) | Unsupported | 
-| [App service](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#app_service) | Supported but not fully functional | 
-| [Appointments provider](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#appointmnets_provider) | Unsupported | 
-| [AutoPlay (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#autoplay) | Unsupported | 
-| [Background tasks (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#background_tasts) | Partially Supported (not all triggers work) | 
-| [Update task (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#update_task) | Supported | 
-| [Cached file updater contract](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#cached_file_updater) | Supported | 
-| [Camera settings (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#camera_settings) | Unsupported | 
-| [Dial protocol](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#dial_protocol) | Unsupported | 
-| [File activation (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#file_activation) | Supported | 
-| [File Open Picker contract](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#file_open_picker_contract) | Supported | 
-| [File Save Picker contract](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#file_save_picker_contract) | Supported | 
-| [Lock screen call](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#lock_screen_call) | Unsupported | 
-| [Media playback](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#media_playback) | Unsupported | 
-| [Play To contract](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#playto_contract) | Unsupported | 
-| [Preinstalled config task](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#preinstalled_config_task) | Unsupported | 
-| [Print 3D Workflow](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#print_3d_workflow) | Supported | 
-| [Print task settings (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#print_task_settings) | Unsupported | 
-| [URI activation (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#protocol_activation) | Supported | 
-| [Restricted launch](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#restricted_launch) | Unsupported | 
-| [Search contract](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#search_contract) | Unsupported | 
-| [Settings contract](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#settings_contract) | Unsupported | 
-| [Share contract](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#share_contract) | Unsupported | 
-| [SSL/certificates (extension)](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#ssl_certificates) | Supported | 
-| [Web account provider](https://msdn.microsoft.com/en-us/library/windows/desktop/hh464906.aspx#web_account_provider) | Supported | 
+| [Account Picture Provider (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#account_picture_provider) | Unsupported | 
+| [Alarm](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#alarm) | Unsupported | 
+| [App service](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#app_service) | Supported but not fully functional | 
+| [Appointments provider](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#appointmnets_provider) | Unsupported | 
+| [AutoPlay (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#autoplay) | Unsupported | 
+| [Background tasks (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#background_tasts) | Partially Supported (not all triggers work) | 
+| [Update task (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#update_task) | Supported | 
+| [Cached file updater contract](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#cached_file_updater) | Supported | 
+| [Camera settings (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#camera_settings) | Unsupported | 
+| [Dial protocol](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#dial_protocol) | Unsupported | 
+| [File activation (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_activation) | Supported | 
+| [File Open Picker contract](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_open_picker_contract) | Supported | 
+| [File Save Picker contract](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_save_picker_contract) | Supported | 
+| [Lock screen call](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#lock_screen_call) | Unsupported | 
+| [Media playback](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#media_playback) | Unsupported | 
+| [Play To contract](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#playto_contract) | Unsupported | 
+| [Preinstalled config task](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#preinstalled_config_task) | Unsupported | 
+| [Print 3D Workflow](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#print_3d_workflow) | Supported | 
+| [Print task settings (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#print_task_settings) | Unsupported | 
+| [URI activation (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#protocol_activation) | Supported | 
+| [Restricted launch](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#restricted_launch) | Unsupported | 
+| [Search contract](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#search_contract) | Unsupported | 
+| [Settings contract](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#settings_contract) | Unsupported | 
+| [Share contract](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#share_contract) | Unsupported | 
+| [SSL/certificates (extension)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#ssl_certificates) | Supported | 
+| [Web account provider](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#web_account_provider) | Supported | 
 
 ## App file storage
 

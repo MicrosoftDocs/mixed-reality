@@ -1,95 +1,71 @@
 ---
 title: QR code tracking
-description: Matt will write description.
+description: Learn how to turn on QR code tracking for your Windows Mixed Reality immersive (VR) headset and implement the feature in your VR apps.
 author: yoyozilla
 ms.author: yoyoz
-ms.date: 10/02/2018
+ms.date: 11/06/2018
 ms.topic: article
-keywords: matt will fill these in
+keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code
 ---
 
 # QR code tracking
 
-Write introductory paragraph describing at a high-level what this feature is, how it works, and which devices it supports.
+QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker in the headset driver, the headset scans for QR codes and they are reported to interested apps. This feature is only available as of the [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md).
 
-## Enabling and disabling QR code tracking in the driver
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
 
-In order to turn '''ON''' QR Tracking, run the following script in cmd and then replug in your headset.
-<syntaxhighlight lang="bash">
-reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F
-</syntaxhighlight>
+## Device support
 
-In order to turn '''OFF''' QR Tracking, run the following script in cmd and then replug in your headset. This will make any currently found QR codes ''Non-locatable''.
-<syntaxhighlight lang="bash">
-reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F
-</syntaxhighlight>'''Baraboo''':
+<table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>QR code tracking</td>
+        <td>❌</td>
+        <td>✔️</td>
+    </tr>
+</table>
 
-For this to work on Baraboo, you need the undocked version of the driver, which currently is in an unreleased branch, RS_ANALOG_RUNTIME_UNDOCK. Note that this branch is not the most stable, and if your build doesn't work, try going back a few days and getting an older one. 
+## Enabling and disabling QR code tracking for your headset
+Note: This section is only valid for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md). From 19h1 builds onwards you will not have to do this.
+Whether you're developing a mixed reality app that will leverage QR code tracking, or you're a customer of one of these apps, you'll need to manually turn on QR code tracking in your headset's driver.
 
-Plug in your device and connect with TShell, and set the reg key as above but with '''regd''' instead of '''reg'''. Run <syntaxhighlight lang="bash">
-restartd
-</syntaxhighlight>
+In order to **turn on QR code tracking** for your immersive (VR) headset:
 
-afterwards to restart the device.
+1. Close the Mixed Reality Portal app on your PC.
+2. Unplug the headset from your PC.
+3. Run the following script in the Command Prompt:<br>
+    `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F`
+4. Reconnect your headset to your PC.
 
-Update: From builds later than 09/06/2018 you will no longer need to set the reg key the velocity feature is turned on for this branch by default.
-== Where ==
-All the required files and documentation can be found in the build (after 180627)
+In order to **turn off QR code tracking** for your immersive (VR) headset:
 
- \\winbuilds\release\RS_ANALOG_RUNTIME\<latestbuild>\amd64fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\
+1. Close the Mixed Reality Portal app on your PC.
+2. Unplug the headset from your PC.
+3. Run the following script in the Command Prompt:<br>
+    `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F`
+4. Reconnect your headset to your PC. This will make any discovered QR codes "non-locatable."
 
-The following files need to be copied into your Unity Assets folder: 
+## Printing codes
 
- \\winbuilds\release\RS_ANALOG_RUNTIME\<latestbuild>\amd64fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.dll
- \\winbuilds\release\RS_ANALOG_RUNTIME\<latestbuild>\amd64fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.pdb
- \\winbuilds\release\RS_ANALOG_RUNTIME\<latestbuild>\amd64fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.Placeholder.dll
- \\winbuilds\release\RS_ANALOG_RUNTIME\<latestbuild>\amd64fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.Placeholder.pdb
- \\winbuilds\release\RS_ANALOG_RUNTIME\<latestbuild>\amd64fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.winmd
-'''Baraboo:'''
+First and foremost, the [spec for QR codes](https://www.qrcode.com/en/howto/code.html) says "The QR Code symbol area requires a margin or "quiet zone" around it to be used. The margin is a clear area around a symbol where nothing is printed. QR Code requires a four-module wide margin at all sides of a symbol." This needs to have a width, on every side, of four times the size of a module - a single black square in the code. The spec page contains advice on how to print QR codes and figure out the area required to make a certain sized QR code.
 
-For Baraboo, the above applies EXCEPT:
-* 
-* You need to change the architecture to x86
-* You need the following binaries, ensuring they are tagged for x86 WSAPlayer only (the above x64 binaries will need to be marked x64 WSAPlayer only except for the placeholder, which needs to be marked for the Editor).
- \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\x86fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.dll
- \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\x86fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.pdb
- \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\x86fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.winmd
+Currently QR code detection quality is susceptible to varying illumination and backdrop. To combat this, note your illumination and print the appropriate code. In a scene with particularly bright lighting, print a code that is black on a gray background. Under a low-light scene, black on white works. Likewise, if the backdrop to the code is particularly dark, try a black on gray code if your detection rate is low. Otherwise, if the backdrop is lighter, a regular code should work fine.
 
-== Preparing Unity with the QRTrackingPlugin ==
-Create a folder plugins in your assets folder
+## QRTracking API
 
-Plugins\
+The QRTracking plugin exposes the APIs for QR code tracking. To use the plugin, you will need to use the following types from the *QRCodesTrackerPlugin* namespace.
 
-QRCodesTrackerPlugin.Placeholder.dll           : get from  \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\x86fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.Placeholder.dll
-
-QRCodesTrackerPlugin.Placeholder.pdb         : get from  \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\x86fre\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.Placeholder.pdb
-
-WSA\
-
-x64\
-
-QRCodesTrackerPlugin.dll     : get from  \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\'''amd64fre'''\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.dll
-
-QRCodesTrackerPlugin.pdb     : get from  \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\'''amd64fre'''\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.pdb
-
-x86\
-
-QRCodesTrackerPlugin.dll     : get from  \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\'''x86fre'''\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.dll
-
-QRCodesTrackerPlugin.pdb     : get from  \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\'''x86fre'''\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.pdb
-
-QRCodesTrackerPlugin.winmd :   get from  \\winbuilds\release\'''RS_ANALOG_RUNTIME'''\<latestbuild>\'''x86fre'''\bin\Analog\bin\Input\HeadTracker\QRTrackerAPI\QRCodesTrackerPlugin.winmd
-
-== RS5 SDK ==
-To access the new RS5 API Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode, the windows SDK need to be installed the SDK can be found in the following location in the build
-
-\\winbuilds\release\RS_ANALOG\<latestbuild>\Other\kit_bundles\windowssdk
-
-The app can be developed even on RS4 machine but the above SDK need to be installed on the dev machine. make sure your device has that particular SDK this usually might take couple of days for child branches. you can safely install few days older sdk on the dev machine.
-
-== QRTrackingPlugin (Native API) ==
-The plugin wraps the APIs for the QR tracking implemented through the RS5 HMD driver. To use the plugin, you will need to use the following types from the QRCodesTrackerPlugin namespace.
-<syntaxhighlight lang="c#">
+```cs
  // QRTracker plugin namespace
  namespace QRCodesTrackerPlugin
  {
@@ -196,15 +172,31 @@ The plugin wraps the APIs for the QR tracking implemented through the RS5 HMD dr
         public event QRCodeUpdatedHandler Updated = delegate { };
     };
 }
-</syntaxhighlight>
+```
 
-See the following file for verbose details: 
- os\src\analog\Input\HeadTracker\Unity\QRTrackerAPI\QRTrackerPlugin.Placeholder\QRCodesTracker.cs
+## Implementing QR code tracking in Unity
 
-== Using the Plugin in Windows UWP ==
-C++/CX
+### Sample Unity scenes in MRTK (Mixed Reality Toolkit)
 
-<syntaxhighlight lang="cpp">
+You can find an example for how to use the QR Tracking API in the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker).
+
+MRTK has implemented the needed scripts to simpilify the QR tracking usage. All necessary assets to develop QR tracking apps are in the "QRTracker" folder. There are two scenes: the first is a sample to simply show details of the QR codes as they are detected, and the second demonstrates how to use the coordinate system attached to the QR code to display holograms.
+There is a prefab "QRScanner" which added all the necessary scripts to the scenes to use QRCodes. The script QRCodeManager is a singleton class that implements the QRCode API. This needs to be added to your scene. The script "AttachToQRCode" is used to attach holograms to the QR Code coordinate systems, this script can be added to any of your holograms. The "SpatialGraphCoordinateSystem" shows how to use the QRCode coordinate system. These scripts can be used as-is in your project scenes or you can write your own directly using the plugin as described above.
+
+### Implementing QR code tracking in Unity without MRTK
+
+You can also use the QR Tracking API in Unity without taking a dependency on MRTK. In order to use the API, you will need to prepare your project with the following instruction:
+
+1. Create a new folder in the assets folder of your unity project with the name: "Plugins".
+2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created.
+3. You can use the QR tracking scripts in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Scripts) or write your own.
+Note: These plugins are only for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md) builds. The plugins will be updated with the next windows release. The current plugins were experimental and will not work for future version of the windows. New plugins will be published which can be used from next windows release and they will not be backwards compatable and will not work with RS5).
+
+## Implementing QR code tracking in DirectX
+
+To use the QRTrackingPlugin in Visual Studio, you will need to add reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
+
+```cpp
 // MyClass.h
 public ref class MyClass
 {
@@ -216,9 +208,9 @@ public ref class MyClass
       void OnRemovedQRCode(QRCodesTrackerPlugin::QRCodeRemovedEventArgs ^args);
     ..
 };
-</syntaxhighlight>
+```
 
-<syntaxhighlight lang="cpp">
+```cpp
 // MyClass.cpp
 MyClass::MyClass()
 {
@@ -250,16 +242,19 @@ void MyClass::OnRemovedQRCode(QRCodesTrackerPlugin::QRCodeRemovedEventArgs ^args
 {
     // use args->Code remove from own list.
 }
-</syntaxhighlight>
+```
 
-== Getting a coordinatesystem ==
-We define a right-hand coordinate system aligned with the QR code at the top left of the top left fast detection square. The coordinate system is shown below. The Z-axis is pointing into the paper (not shown) ( When in unity the z-axis is out of the paper and left handed). A SpatialCoordinateSystem is defined that is aligned as shown. This coordinate system can be obtained from the platform using the new '''RS5''' API Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode.
+## Getting a coordinate system
 
-[[File:qr-coordinatesystem.png.png|400px]]
+We define a right-hand coordinate system aligned with the QR code at the top left corner of the fast detection square in the top left. The coordinate system is shown below. The Z-axis is pointing into the paper (not shown), but in Unity the z-axis is out of the paper and left-handed.
 
+A SpatialCoordinateSystem is defined that is aligned as shown. This coordinate system can be obtained from the platform using the API *Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode*.
 
-From QRCode^ Code object the following code shows how to create a rectangle and put it in QR coordinate system
-<syntaxhighlight lang="cpp">
+![QR code coordinate system](images/Qr-coordinatesystem.png) 
+
+From QRCode^ Code object, the following code shows how to create a rectangle and put it in QR coordinate system:
+
+```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
 std::vector<float3> SpatialStageManager::CreateRectangle(float width, float height)
 {
@@ -272,23 +267,23 @@ std::vector<float3> SpatialStageManager::CreateRectangle(float width, float heig
 
     return vertices;
 }
-</syntaxhighlight>
+```
 
-You can use the physical size to create the QR rectangle
-<syntaxhighlight lang="cpp">
+You can use the physical size to create the QR rectangle:
+
+```cpp
 std::vector<float3> qrVertices = CreateRectangle(Code->PhysicalSizeMeters, Code->PhysicalSizeMeters); 
-</syntaxhighlight>
+```
 
-Use the platform API (available only from RS5)
-The coordinate system can be used to draw the QR code or attaching holograms to the location.
+The coordinate system can be used to draw the QR code or attach holograms to the location:
 
-<syntaxhighlight lang="cpp">
+```cpp
 Windows::Perception::Spatial::SpatialCoordinateSystem^ qrCoordinateSystem = Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode(Code->Id);
-</syntaxhighlight>
+```
 
+Altogether, your *QRCodesTrackerPlugin::QRCodeAddedHandler* may look something like this:
 
-All together, your QRCodesTrackerPlugin::QRCodeAddedHandler may look something like this:
-<syntaxhighlight lang="cpp">
+```cpp
 void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 {
     std::vector<float3> qrVertices = CreateRectangle(args->Code->PhysicalSizeMeters, args->Code->PhysicalSizeMeters);
@@ -306,50 +301,29 @@ void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 
     m_sceneController->AddSceneObject(m_qrShape);
 }
-</syntaxhighlight>
+```
 
-The TriangulatePoints function, m_sceneController, and SceneObject are all based off of this [https://github.com/Microsoft/Windows-universal-samples/blob/c2aeaa588d9b134466bbd2cc387c8ff4018f151e/Samples/HolographicSpatialStage/cpp/SpatialStageManager.cpp sample project].
+## Troubleshooting and FAQ
 
-== Sample App ==
-We developed a sample test app that just displays a holographic square over the QR code, along with the data associated with it - GUID, physical size, timestamp, and decoded data. It is located at file://\\AnalogFS\Private\Scratch\CHGATLA\QRTracking\QRUnitySample_1.1.11.0_Test\QRUnitySample_1.1.11.0_x86_x64.appxbundle
+**General troubleshooting**
 
-To install for Oasis, navigate to that folder and run the powershell script. 
-
-To install for Baraboo, connect to your device with TShell and run 
-
-<syntaxhighlight lang="cpp">
-Install-AppDevice "\\analogfs\private\Scratch\CHGATLA\QRTracking\QRUnitySample_1.1.11.0_Test\QRUnitySample_1.1.11.0_x86_x64.appxbundle"
-</syntaxhighlight>
-
-== Troubleshooting and FAQ ==
-'''If it doesn't work on your Oasis device:'''
-* Do you have an RS5 build? 
-'''If it doesn't work on your Baraboo device:''' 
-* Are you running the right branch? Baraboos must be running RS_ANALOG_RUNTIME_UNDOCK to use the QR Tracking API
-
-'''In general, if it doesn't work:'''
+* Is your PC running the Windows 10 October 2018 Update?
 * Have you set the reg key? Restarted the device afterwards?
-* Is the version a supported version? We don't support the really high density versions like version 40. 
-* Are you close enough to the QR code?
-'''How close do I need to be to the QR code to detect it?'''
+* Is the QR code version a supported version? Current API supports up to QR Code Version 20. We recommend using version 5 for general usage. 
+* Are you close enough to the QR code? The closer the camera is to the QR code, the higher the QR code version the API can support.  
 
-This obviously depends on the size of the QR code, and also what version it is. 
-* On Baraboo, for a version 1 QR code varying from 5cm sides to 25 cm sides, the minimum detection distance ranges from 0.25 metres to 0.5 metres. The furthest these can be detected from goes from about 0.5m for the smallest code to 2 metres for the bigger. 
-* On Oasis, these distances for the sizes are approximately halved.
-* For any codes bigger, extrapolate - the detection distance for size increases linearly. For any code smaller, detection simply will not occur - 4-5cm is the smallest we can detect.
-'''QR codes with logos was not reading?'''
-* QR codes with logos have not been tested and supported, currently we could do these at some time in future. I got your QR codes I can do some testing.
-QR codes encoded in 
+**How close do I need to be to the QR code to detect it?**
 
-'''I want to know how to clear the codes from my app? It seems once you find a code, they are persisted.'''   
-* QR codes are only persisted in the boot session. Once you reboot (or restart the driver) they will be gone and detected as new objects next time. They are unique and persisted within the driver session.
-# '''How does that work at the underlying platform ?? where are they persisted?'''  They are only persisted in memory (asic/soc). 
-# '''How do I clear them.. during testing it is most useful to clear them?''' You can ignore the QR codes older than a timestamp if you want. Currently the API does not have a way to clear them as multiple apps might be interested in them. At app level you can ignore the QR codes not updated recently and a logic can be added to ignore the ones not updated since time t say. It is all app specific and apps an do any thing.
-# '''Are these saved at the ‘space’ level or app level?  It seems to me it is beyond app?''' Saved at a system level in driver session. ( or boot session on hololens).
+This will depend on the size of the QR code, and also what version it is. For a version 1 QR code varying from 5 cm sides to 25 cm sides, the minimum detection distance ranges from 0.15 meters to 0.5 meters. The farthest away these can be detected from goes from about 0.3 meters for the smaller QR code targets to 1.4 meters for the bigger. For QR codes bigger than that, you can estimate; the detection distance for size increases linearly. Our tracker does not work with QR codes with sides smaller than 5 cm.
 
-'''From a plugin standpoint, what should I do. My plugin right now is configured for x64.   Is the DLL OK to just reconfigure in Unity as x86?''' 
-* Look at the preparing unity section above.
-'''Is the rs_analog_runtime_undock  is the only branch that works for QR tracking API in Baraboo?'''  
-* Yes, for now it is still in rs_analog_runtime_undock branch. Soon this will RI and we will have it available in other branches, until then only this branch works.
-'''Do I need the registry entry in Hololens? If so, how do I add it?  [not familiar w/ editing registry in HoloLens]''' 
-* Since 09/08/2018 you will no longer need the reg key on '''HoloLens''' and should be able to use it directly in '''AOC''' or '''AOCT''' builds of the branch '''rs_analog_runtime_undock'''.
+**Do QR codes with logos work?**
+
+QR codes with logos have not been tested and are currently unsupported.
+
+**How do I clear QR codes from my app so they don't persist?**
+
+* QR codes are only persisted in the boot session. Once you reboot (or restart the driver), they will be gone and detected as new objects next time.
+* QR code history is saved at the system level in the driver session, but you can configure your app to ignore QR codes older than a specific timestamp if you want. Currently the API does support clearing QR code history, as multiple apps might be interested in the data.
+
+**The plugins for RS5 and future versions are not compatable**
+RS5 version of the plugin only works for RS5 and will not work for future versions. The expermental plugin will be replaced with the real plugin and should be the one that we can use in future versions of the windows.

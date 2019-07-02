@@ -14,6 +14,9 @@ keywords: walkthrough, voice command, phrase, recognition, speech, directx, plat
 
 This topic explains how to implement [voice commands](voice-input.md), and small phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
 
+>[!NOTE]
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
 ## Use a SpeechRecognizer for continuous recognition of voice commands
 
 In this section, we describe how to use continuous speech recognition to enable voice commands in your app. This walkthrough uses code from the [HolographicVoiceInput](http://go.microsoft.com/fwlink/p/?LinkId=844964) Sample. When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.
@@ -58,7 +61,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-The list of commands is loaded into the list of constraints for the speech recognizer. This is done by using a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.
+The list of commands is loaded into the list of constraints for the speech recognizer. This is done by using a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -77,7 +80,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-Subscribe to the [ResultGenerated](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) event on the speech recognizer's [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx). This event notifies your app when one of your commands has been recognized.
+Subscribe to the [ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) event on the speech recognizer's [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx). This event notifies your app when one of your commands has been recognized.
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -86,7 +89,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Your **OnResultGenerated** event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance. If the confidence is greater than the threshold you have defined, your app should note that the event happened. Save the event data so that you can make use of it in a subsequent update loop.
+Your **OnResultGenerated** event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance. If the confidence is greater than the threshold you have defined, your app should note that the event happened. Save the event data so that you can make use of it in a subsequent update loop.
 
 From *HolographicVoiceInputSampleMain.cpp*:
 
@@ -246,7 +249,7 @@ catch (Exception^ exception)
    });
 ```
 
-**NOTE:** There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/en-us/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) available for optimizing speech recognition.
+**NOTE:** There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) available for optimizing speech recognition.
 * If you want to optimize for dictation, use the Dictation scenario:
 
 ```
@@ -421,6 +424,6 @@ catch (Exception^ exception)
 ```
 
 ## See also
-* [Speech app design](https://msdn.microsoft.com/en-us/library/dn596121.aspx)
+* [Speech app design](https://msdn.microsoft.com/library/dn596121.aspx)
 * [Spatial sound in DirectX](spatial-sound-in-directx.md)
 * [SpeechRecognitionAndSynthesis sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

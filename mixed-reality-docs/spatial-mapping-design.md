@@ -17,11 +17,21 @@ Effective use of spatial mapping within HoloLens requires careful consideration 
 ## Device support
 
 <table>
-<tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td> Spatial mapping</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
-</tr>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Spatial mapping design</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 ## Why is spatial mapping important?
@@ -118,7 +128,7 @@ To help design the right scanning experience, consider which of the following po
    * An application may require a scan of all of the surfaces in the current room, including those behind the user.
    * For example, a game may put the user in the role of Gulliver, under siege from hundreds of tiny Lilliputians approaching from all directions.
    * In such cases, the application will need to determine how many of the surfaces in the current room have already been scanned, and direct the user's gaze to fill in significant gaps.
-   * The key to this process is providing visual feedback that makes it clear to the user which surfaces have not yet been scanned. The application could for example use [distance-based fog](https://msdn.microsoft.com/en-us/library/windows/desktop/bb173401%28v=vs.85%29.aspx) to visually highlight regions that are not covered by spatial mapping surfaces.
+   * The key to this process is providing visual feedback that makes it clear to the user which surfaces have not yet been scanned. The application could for example use [distance-based fog](https://msdn.microsoft.com/library/windows/desktop/bb173401%28v=vs.85%29.aspx) to visually highlight regions that are not covered by spatial mapping surfaces.
 
 * **Take an initial snapshot of the environment**
    * An application may wish to ignore all changes in the environment after taking an initial 'snapshot'.
