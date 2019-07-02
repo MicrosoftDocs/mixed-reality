@@ -8,15 +8,15 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# Getting started with Azure Spatial Anchors on HoloLens 2
+# 1. Getting started with Azure Spatial Anchors
 
-Welcome to the second module of the HoloLens 2 Tutorial. Before getting started, be sure that all of the [prerequisites](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-hololens) are completed. If you have not completed the first, [Base module](mrlearning-base.md) yet, it's recommended that you complete that module first. If you are starting from a new Unity project, follow the new project creation steps in the [Base module](mrlearning-base.md). 
+Welcome to the second module of the HoloLens 2 tutorials. Before getting started, be sure that all of the [prerequisites](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-hololens) are completed. If you have not completed the first, [Base module](mrlearning-base.md) yet, it's recommended that you complete that module first. If you are starting from a new Unity project, follow the new project creation steps in the [Base module](mrlearning-base.md). 
 
 ## Objectives
 
-* Learn the fundamentals of developing with Azure Spatial Anchors with the HoloLens 2
+* Learn the fundamentals of developing with Azure Spatial Anchors with HoloLens 2
 
-* Create, Upload, and Download Spatial Anchors
+* Create, upload, and download spatial anchors
 
   
 
@@ -35,7 +35,7 @@ Before beginning, download and import the following assets:
 
 > Note: See Step 5 for specific instructions on how to import Azure Spatial Anchors, Step 6 for specific instructions on the MR Base module Asset Pack, and steps 3 through 4 for specific instructions on the Mixed Reality Toolkit (MRKT).
 
-1. Create a new scene in your project. Right click your Scene folder, click "Create," then Scene. Name the new scene ASALearningmodule.
+1. Create a new scene in your project. Right click your Scene folder, click Create, then Scene. Name the new scene ASALearningmodule.
 
 ![module2chapter1step1im](images/module2chapter1step1im.PNG)
 
@@ -44,7 +44,7 @@ Before beginning, download and import the following assets:
 
 ![module2chapter1step3im](images/module2chapter1step3im.PNG)
 
-> Note: You will see a pop-up that says, "You must choose a file for the Mixed Reality Toolkit." Clicking Ok brings you to Step 4.
+> Note: You will see a pop-up that says, You must choose a file for the Mixed Reality Toolkit. Clicking Ok brings you to Step 4.
 
 4. When choosing a file for the MRTK, select, DefaultMixedRealityToolkitConfigurationProfile.
 
@@ -148,7 +148,7 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 
 7. Before building to your device, ensure that the device is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a pin. Follow [these instructions](https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
 
-8. Configure Visual Studio for building to your HoloLens 2 by selecting the Release configuration and the “RM” architecture.
+8. Configure Visual Studio for building to your HoloLens 2 by selecting the Release configuration as well as the RM architecture.
     ![Lesson1Chapter5Step8](images/Lesson1Chapter5Step8.JPG)
    
 9. The final Step is to build to your device by selecting Debug>Start without Debugging. Selecting Start without Debugging causes the application to immediately start on your device upon a successful build ithout Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You might also select Build>Deploy Solution to deploy to your device without having the application automatically start.
@@ -172,9 +172,9 @@ When the application is running on your device, follow the on-screen instruction
     
     7. Start Azure spatial anchors session.
     
-    8. Find Azure Spatial aachors. 
+    8. Find Azure Spatial Anchors. 
     
-    e You should go back to the original place you put it when you created the anchor).
+    e You should go back to the original place you put it when you created the anchor.
     9. Delete Azure spatial anchor.
     
     10. Stop Azure session.
@@ -194,7 +194,7 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
    > Note: There are a variety of user experience flows for repositioning experiences, including the use of a button to toggle a bounding box that surrounds the experience, use of a repositioning object (such as the cube used in this step), the use of position and rotation gizmos, and more.
 
 ## Congratulations
-In this lesson, you learned the fundamentals of Azure Spatial Anchors. This esson provided you with several buttons that let you  explore the various steps required to start and stop an Azure session, and create, upload, and download azure anchors on a single device. In the next lesson, we'll learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted. During the series, you will also learn how to transfer anchor IDs between multiple devices to achieve spatial alignment, and learn about multi-user shared sessions (forthcoming as part of sharing module.)
+In this tutorial, you learned the fundamentals of Azure Spatial Anchors. This esson provided you with several buttons that let you  explore the various steps required to start and stop an Azure session, and create, upload, and download azure anchors on a single device. In the next lesson, we'll learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted. During the series, you will also learn how to transfer anchor IDs between multiple devices to achieve spatial alignment, and learn about multi-user shared sessions, forthcoming as part of Sharing tutorial.
 
 [Next Lesson: ASA Lesson 2](mrlearning-asa-ch2.md)
 
