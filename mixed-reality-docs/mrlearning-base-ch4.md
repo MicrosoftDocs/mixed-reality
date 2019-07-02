@@ -9,9 +9,9 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module - 3D Object Interaction
+# 5. Interacting with 3D objects
 
-In this lesson, we will go through basic 3D content and user experience. We will learn about: 
+In this tutorial, we learn about basic 3D content and user experience. We will learn about: 
 * Organizing 3D objects as part of a collection.
 * Bounding boxes for basic manipulation.
 * Near and far interaction.
@@ -19,7 +19,7 @@ In this lesson, we will go through basic 3D content and user experience. We will
 
 ## Objectives
 
-* Learn how to organize 3D content using MRTK's Grid Object Collection
+* Learn how to organize 3D content with MRTK's grid object collection
 * Implement bounding boxes
 * Configure 3D objects for basic manipulation--move, rotate, and scale
 * Explore near and far interaction
@@ -33,7 +33,7 @@ In this lesson, we will go through basic 3D content and user experience. We will
 
 ![Lesson4 Chapter1 Step1im](images/Lesson4_Chapter1_step1im.PNG)
 
-2. Import BaseModule Assets Using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that are used throughout this tutorial. The BaseModule Unity package can be found here: <https://github.com/Microsoft/MixedRealityLearning/releases/tag/V1.1>
+2. Import BaseModule assets using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that are used throughout this tutorial. The BaseModule Unity package can be found here: <https://github.com/Microsoft/MixedRealityLearning/releases/tag/V1.1>
 
 3. The coffee cup prefab can be recognized by a blue cube next to it. Do not select the coffee cup with the blue cube and small white paper because this denotes the original 3D model and not the prefab.) 
 
@@ -99,9 +99,9 @@ Search these words in the search box in your project panel and drag the 3D objec
 
 Goal of the next few steps: We will enable grab and interaction with our 3D objects, and apply different manipulation settings.
 
-5. Select the Cheese object, and click Add Component from Inspector panel. 
+5. Select the Cheese object, and click Add Component from the Inspector panel. 
 
-6. Search in the search box for Near Interaction Grabbable, and select the script. This component allows users to reach out and grab the objects with tracked hands. Objects can also be allowed to be manipulated from a distance, unless the Allow Far Manipulation checkbox is unchecked denoted by green circle in image below.
+6. Search in the search box for Near Interaction Grabbable, and select the script. This component lets users reach out and grab the objects with tracked hands. Objects can also be manipulated from a distance, unless the Allow Far Manipulation checkbox is unchecked denoted by green circle in image below.
 
 ![Lesson4 Chapter2 Step6im](images/Lesson4_Chapter2_step6im.PNG)
 
@@ -128,13 +128,13 @@ Bounding boxes make it easier and more intuitive to manipulate objects with one 
 >Note: Before you can add a bounding box to an object, you first need to have a collider on the object (e.g., a box collider), as we did previously in this lesson. Colliders can be added by selecting the object, and in the object's inspector panel selecting Add Component>Box Collider.
 >
 
-1. Add a box collider to the Earth Core object if one does not already exist. Box Collider and setup are not required if using the prefab provided in the Base Module Assets folder per the instructions given.) In the case of the earth core, we will need to add the box collider to the, node_id30, object underneath the earth core, as shown in the image below. Select node_id30 from the object's Inspector tab, click Add Component, and search for box collider. 
+1. Add a box collider to the Earth Core object if one does not already exist. The box collider and setup are not required if using the prefab provided in the Base Module Assets folder per the instructions given. In the case of the earth core, we add the box collider to the, node_id30, object underneath the earth core, as shown in the image below. Select node_id30 from the object's Inspector tab, click Add Component, and search for box collider. 
 
 ![Lesson4 Chapter3 Step1im](images/Lesson4_Chapter3_step1im.PNG)
 
 ![Lesson4 Chapter3 Step2im](images/Lesson4_chapter3_step2im.PNG)
 
-> Note: Make sure that you visualize the box collider so that it’s not too big or too small. It should be roughly the same size as the object it’s surrounding (in this example, the earth core). Adjust the box collider as needed by selecting the Edit Collider option in the box collider. You can either changing the x, y, and z values or drag the bounding box handlers in the Editor Scene window. 
+> Note: Make sure that you size the box collider so that it’s not too big or too small. It should be roughly the same size as the object it’s surrounding (in this example, the earth core). Adjust the box collider as needed by selecting the Edit Collider option in the box collider. You can either changing the x, y, and z values or drag the bounding box handlers in the Editor Scene window. 
 
 ![Lesson4 Chapter3 Noteim](images/Lesson4_Chapter3_noteim.PNG)
 
@@ -166,42 +166,44 @@ Bounding boxes make it easier and more intuitive to manipulate objects with one 
 
 ![Lesson4 Chapter3 Step9im](images/Lesson4_chapter3_step9im.PNG)
 
-### Adding Touch Effects
+### Adding touch effects
 In this example, we are going to play a sound effect when you touch an object with your hand.
 
 1. Add an audio source component to your game object. Select the Octa object in your scene hierarchy. In the inspector panel, click the Add Component button, search for and select audio source. We’ll use this audio source to play a sound effect in a later step. 
 
 >Note: Ensure that the Octa object has a box collider on it.
 
-2. Add the Near Interaction Touchable” component. Click the Add Component button in the Inspector panel, and search for near interaction touchable. Select it to add the component. NOTE: Fix screenshot to highlight that we're adding the component, and not just highlighting the box collider.
+2. Add the Near Interaction Touchable component. Click the Add Component button in the Inspector panel, and search for near interaction touchable. Select it to add the component. 
+
+NOTE: Fix screenshot to highlight that we're adding the component, and not just highlighting the box collider.
 
 >Note: Previously, we added near interaction grabbable. The difference between this and near interaction touchable is that the grabbable interaction is intended for an object to be grabbed and interacted with. The touchable component is intended for the object to be touched. Both components can be used together for a combination of interactions.
 
 ![Lesson4 Chapter4 Step1 2Im](images/Lesson4_chapter4_step1-2im.PNG)
 
-3. Add in the Hand Interaction Touch script. Note that this script is included with the Unity scene you imported as part of this demo , and it is not included in the oriTinal MRTK. Just like the previous step, click Add Component, and search for hand interaction touch to add it. 
+3. Add in the Hand Interaction Touch script. Note that this script is included with the Unity scene you imported as part of this demo, and it is not included in the oriTinal MRTK. Just like the previous step, click Add Component, and search for hand interaction touch to add it. 
    Notice that you have three options with the script: 
 
-   - On touch completed. This will trigger when you touch and release the object. 
-   - On touch started. This will trigger when the object is touched. 
+   - On touch completed. This triggers when you touch and release the object. 
+   - On touch started. This triggers when the object is touched. 
    - On touch updated. This will periodically trigger while your hand is touching the object. 
 
    For this example, we will be working with the On Touch Started setting.
 
 4. Click the + button on the On Touch Started option as shown in the image below. Drag the Octa object into the empty field. 
 
-5. In the drop-down that says No Function (above green rectangle in the image below), select AudioSource>PlayOneShot. We will add an audio clip to this field using the concepts below:
+5. In the drop-down that says No Function (above green rectangle in the image below), select AudioSource->PlayOneShot. We will add an audio clip to this field using the concepts below:
 
-   - The MRTK does provide a small list of audio clips. Feel free to explore these in your project panel. You will find them under the MixedRealityToolkit.SDK folder and then the Sstandard Assets folder. There you will see an Audio folder where all the audio clips are.
+   - The MRTK does provide a small list of audio clips. Feel free to explore these in your project panel. You will find them under the MixedRealityToolkit.SDK folder and then the Standard Assets folder. There you will see an Audio folder where all the audio clips are.
    - For this example, we are going to use the MRTK_Gem audio clip. 
    - To add an audio clip, simply drag the clip you want from the project panel into the AudioSource.PlayOneShot (marked by green box in the example above) in the inspector panel.
 
-   Now when the user reaches out and touches the Octa object, the audio track“MRTK_Gem will play. The Hand Interaction Touch script will also adjust the color of the object when touched. 
+   Now when the user reaches out and touches the Octa object, the audio track MRTK_Gem will play. The Hand Interaction Touch script will also adjust the color of the object when touched. 
 
 ![Lesson4 Chapter4 Step3 5 Noteim](images/Lesson4_chapter4_step3-5-noteim.PNG)
 
 ### Congratulations 
-In this lesson, you learned how to organize 3D objects in a grid collection and how to manipulate 3D objects  (scaling, rotating, and moving) using near interaction (directly grabbing with tracked hands) and far interaction (using gaze rays or hand rays.) You also learned how to put bounding boxes around 3D objects, and learned how to use and customize the gizmos on the bounding boxes. Finally, you learned how to trigger events when touching an object.
+In this tutorial, you learned how to organize 3D objects in a grid collection and how to manipulate 3D objects  (scaling, rotating, and moving) using near interaction (directly grabbing with tracked hands) and far interaction (using gaze rays or hand rays.) You also learned how to put bounding boxes around 3D objects, and learned how to use and customize the gizmos on the bounding boxes. Finally, you learned how to trigger events when touching an object.
 
 [Next Lesson: Advanced Input](mrlearning-base-ch5.md)
 
