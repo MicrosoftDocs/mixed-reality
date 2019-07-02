@@ -9,9 +9,9 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module - User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
+# 3. Creating user interface and configure Mixed Reality Toolkit 
 
-In the previous lesson, you learned some of the capabilities the Mixed Reality Toolkit (MRTK) has to offer by starting your first application for the HoloLens 2. In this next lesson you'll learn how to create and organize buttons along with UI text panels, and use default interaction (touch) to interact with each button. You will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects. This module will introduce basic concepts about modifying MRTK profiles, starting with turning off the spatial mesh visualization. 
+In the previous lesson, you learned about some of the capabilities the Mixed Reality Toolkit (MRTK) has to offer by starting your first application for the HoloLens 2. In this next lesson you'll learn how to create and organize buttons along with UI text panels, and use default interaction (touch) to interact with each button. You will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects. This module will introduce basic concepts about modifying MRTK profiles, starting with turning off the spatial mesh visualization. 
 
 ## Objectives
 
@@ -22,17 +22,17 @@ In the previous lesson, you learned some of the capabilities the Mixed Reality T
 ## Instructions
 
 ### How to Configure the Mixed-Reality Toolkit Profiles (Change Spatial Awareness Display Option)
-In this section, you'll learn how to customize and configure the default Mixed Reality Toolkit profiles by adjusting the display option of the spatial awareness mesh. You may follow these same principles for adjusting any settings or values in the MRTK profiles.
+In this section, you'll learn how to customize and configure the default MRTK profiles by adjusting the display option of the spatial awareness mesh. You may follow these same principles for adjusting any settings or values in the MRTK profiles.
 
 1. Select Mixed-Reality Toolkit (MRTK) from the BaseScene hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and select the ctive profile as shown in the figure below. Double click to open it.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.PNG)
 
->Note: By default, the Mixed Reality Toolkit profiles are not editable. These are default profile templates that you can copy and customize. There are several layers of customization and profiles. So, it is standard practice to copy and customize several profiles when configuring one or more settings.
+>Note: By default, the MRTK profiles are not editable. These are default profile templates that you can copy and customize. There are several layers of customization and profiles. So, it is standard practice to copy and customize several profiles when configuring one or more settings.
 >
 >To discover more about MRTK profiles and their architecture, visit the [MRTK documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/SpatialAwareness/SpatialAwarenessSystemArchitecture.html>).
 
-2. Create a copy of the default profile to customize it. To copy a default profile, click the “Copy & Customize” button (see image). This creates a copy of the MRTK profile. With your own copy of the MRTK profile, you now have the ability customize any settings in this profile. You will also need to repeat the copy and customize step for any additional profiles nested under this profile as described in the subsequent steps.
+2. Create a copy of the default profile to customize it. To copy a default profile, click Copy & Customize (see image). This creates a copy of the MRTK profile. With your own copy of the MRTK profile, you now have the ability customize any settings in this profile. You will also need to repeat the copy and customize step for any additional profiles nested under this profile as described in the subsequent steps.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step2im.PNG)
 
