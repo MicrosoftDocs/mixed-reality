@@ -24,7 +24,7 @@ In the previous lesson, you learned about some of the capabilities the Mixed Rea
 ### How to Configure the Mixed-Reality Toolkit Profiles (Change Spatial Awareness Display Option)
 In this section, you'll learn how to customize and configure the default MRTK profiles by adjusting the display option of the spatial awareness mesh. You may follow these same principles for adjusting any settings or values in the MRTK profiles.
 
-1. Select Mixed-Reality Toolkit (MRTK) from the BaseScene hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and select the ctive profile as shown in the figure below. Double click to open it.
+1. Select Mixed-Reality Toolkit (MRTK) from the BaseScene hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and select the active profile as shown in the figure below. Double click to open it.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.PNG)
 
@@ -52,7 +52,7 @@ In this section, you'll learn how to customize and configure the default MRTK pr
 
 >Note: While the spatial mapping mesh is not visible, it is still present and you can interact with it. Any holograms behind the spatial mapping mesh, such as a hologram behind your visible wall, will not be visible because of the occlusion setting.
 
-Congratulations! You just learned how to modify a setting in the MRTK profile. As you can see, in order to modify MRTK settings you need to create copies of the default profiles so that you can edit them. You will always have the default profiles, which are not editable, to go back to if you wantedto create a profile with new settings or you can refer back to the default profiles. There are numerous settings that you can adjust. For full reference to MRTK profile settings, refer to the MRTK documentation here: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html
+Congratulations! You just learned how to modify a setting in the MRTK profile. As you can see, in order to modify MRTK settings you need to create copies of the default profiles so that you can edit them. You will always have the default profiles, which are not editable, to go back to if you wanted to create a profile with new settings or you can refer back to the default profiles. There are numerous settings that you can adjust. For full reference to MRTK profile settings, refer to the MRTK documentation here: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html
 
 ### Hand Tracking Gestures and Interactable buttons
 In this section, you will learn how to use hand tracking to press a pressable button.
@@ -94,8 +94,6 @@ Click the dropdown list that says No Function. Select MeshRenderer, then select 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imb.PNG)
 
 Go to the Project panel and search for the material you wish to change it to. You are going to use the material, MRTK_Standard_Cyan, for this example, found by typing in “cyan” in the Project tab’s search bar. (The MRTK includes many materials and colors to choose from.) Drag the material to the box underneath MeshRenderer.material. The MRTK materials can be found in Assets>MixedRealityToolkit.SDK>StandardAssets>Materials.
-
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imbb.PNG)
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step7imc.PNG)
 
@@ -152,16 +150,16 @@ In this section, you will learn how to add and edit text to your mixed reality e
 ![Lesson2 Chapter4 Step1a](images/Lesson2_Chapter4_Step1a.JPG)
 ![Lesson2 Chapter4 Step1b](images/Lesson2_Chapter4_Step1b.JPG)
 
-2. In the TextMeshPro component’s text field in the Inspector panel as shown below. Type in Button Collection Text. The text appears in the scene, but will be hidden behind the buttons and/or the wrong size.
-
-![Lesson2 Chapter4 Step2](images/Lesson2_Chapter4_Step2.JPG)
-
-3. To improve the text size and placement for readability, adjust the Font Size field in the TextMeshPro component to change the size of the font. You will also need to adjust the Rect Transform position and scale as shown in the image below. See the images below for values used for our text configuration. Feel free to use these values as a starting point to further improve the size and placement of your text field.
+2. To improve the text size and placement for readability, adjust the Font Size field in the TextMeshPro component to change the size of the font. You will also need to adjust the Rect Transform position and scale as shown in the image below. See the images below for values used for our text configuration. Feel free to use these values as a starting point to further improve the size and placement of your text field.
 
 ![Lesson2 Chapter4 Step3](images/Lesson2_Chapter4_Step3.JPG)
+
+3. In the TextMeshPro component’s text field in the Inspector panel as shown below. Type in Button Collection Text. The text appears in the scene, but will be hidden behind the buttons and/or the wrong size.
+
+![Lesson2 Chapter4 Step2](images/Lesson2_Chapter4_Step2.JPG)
 ![Lesson2 Chapter4 Step4](images/Lesson2_Chapter4_Step4.JPG)
 
-5. To modify the text values on the button objects, click the arrow next to any button to expand it and navigate to the SeeItSayItLabel object. Navigate to TextMeshPro where you can edit the text to your buttons as described in the steps above.
+4. To modify the text values on the button objects, click the arrow next to any button to expand it and navigate to the SeeItSayItLabel object. Navigate to TextMeshPro where you can edit the text to your buttons as described in the steps above.
 
 ![Lesson2 Chapter4 Step5](images/Lesson2_Chapter4_Step5.JPG)
 
