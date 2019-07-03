@@ -9,9 +9,9 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-## Adding the Azure Cognitive Services speech translation component
+# 3.	Adding the Azure Cognition Services speech translation component
 
-In this lesson, we'll on the Azure Cognitive Services Speech Translation component to our project, and test translating into three different languages. 
+In this tutorial, we learn aabout the Azure Cognitive Services Speech Translation component in our project as well as translate into three different languages. 
 
 1. Select the Lunarcom_Base object in the hierarchy, and click Add Component in the inspector panel. Search for and select LunarcomTranslationRecognizer.
 
@@ -39,5 +39,5 @@ Below is an example of what your scene should look like:
 
 Now  your project can translate the words you speak into several different languages. Feel free to play around with the languages, and test the accuracy of the translation. 
 
-[Next Lesson: Speech SDK Lesson 4](mrlearning-speechSDK-ch4.md)
+[Next tutorial: 4.	Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
 

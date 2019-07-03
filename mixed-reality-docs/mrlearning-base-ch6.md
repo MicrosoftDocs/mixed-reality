@@ -9,9 +9,9 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module - Lunar Module Assembly Sample Experience
+# 7. Creating a Lunar Module sample application
 
-In this lesson, we combine multiple concepts learned from previous lessons to create a unique sample experience. We will create a lunar module assembly application whereby a user needs to use tracked hands to pick up lunar module parts, and attempt to assemble a lunar module. We use pressable buttons to toggle placement hints, to reset our experience, and to launch our lunar module into space! In future tutorials, we will continue to build upon this experience, which includes powerful multi-user use cases that leverage Azure Spatial Anchors for spatial alignment.
+In this tutorial, we combine multiple concepts presented in the previous lessons to create a unique sample experience. We will create a lunar module assembly application whereby a user needs to use tracked hands to pick up lunar module parts, and attempt to assemble a lunar module. We use pressable buttons to toggle placement hints, to reset our experience, and to launch our lunar module into space! In future tutorials, we will continue to build upon this experience, which includes powerful multi-user use cases that leverage Azure Spatial Anchors for spatial alignment.
 
 ## Objectives
 
@@ -27,8 +27,8 @@ In this lesson, we combine multiple concepts learned from previous lessons to cr
 
 In this section, we introduce the various components needed to create our sample experience.
 
-1. Add the lunar module assembly prefab to your base scene. To do this, from the Project tab, search for "Rocket Launcher_Tutorial." 
-find the prefab in Assets>BaseModuleAssets>Prefabs. You'll also see two rocket launcher prefabs; one with the name "tutorial" and the other with the name "complete." Drag the Rocket Launcher_Tutorial prefab to your base scene, and position as you wish.
+1. Add the Lunar Module Assembly prefab to your base scene. To do this, from the Project tab, search for Rocket Launcher_Tutorial. 
+find the prefab in Assets->BaseModuleAssets->Prefabs. You'll also see two rocket launcher prefabs; one with the name "tutorial" and the other with the name "complete". Drag the Rocket Launcher_Tutorial prefab to your base scene, and position as you wish.
    Note: The Rocket Launcher_Complete prefab is the completed launcher, provided for reference. 
 
 ![Lesson6 Chapter1 Step1im](images/Lesson6_Chapter1_step1im.PNG)
@@ -48,7 +48,7 @@ There are five parts to the lunar module that the user will interact with as sho
 
 > Note: The Game object names that you see in your base scene hierarchy do not correspond to the names of the objects in the scene.
 
-Step 2: Add an audio source to the lunar module. Make sure the lunar module is selected in your base scene hierarchy and click "Add Component." Search for "Audio Source" and add it to the object. Leave it blank for now. We will use this to play the launching sound later.
+Step 2: Add an audio source to the lunar module. Make sure the lunar module is selected in your base scene hierarchy, and click Add Component. Search for Audio Source, and add it to the object. Leave it blank for now. We will use this to play the launching sound later.
 
  ![Lesson6 Chapter1 Step2im](images/Lesson6_Chapter1_step2im.PNG)
 Step 3: Add the script, Toggle Placement Hints. Click Add Component, and search for Toggle Placement Hints. This is a custom script that lets you turn on and off the translucent hints (objects with the x-ray material) mentioned earlier. 
@@ -83,8 +83,8 @@ Step 6: Adjust the thrust so that the lunar module will fly up gracefully. Try a
 
 ![Lesson6 Chapter1 Step6im](images/Lesson6_Chapter1_step6im.PNG)
 
-### Lunar Module Parts Overview
-The Lunar Module parts parent object is the collection of the objects that the user interacts with. The Game object names, with scene labeled names in paretheses, are provided in the list below:
+### Lunar Module Parts overview
+The Lunar Module Parts parent object is the collection of the objects that the user interacts with. The Game object names, with scene labeled names in paretheses, are provided in the list below:
 
 - Backpack (Fuel Tank)
 - GasTank (Energy Cell)
@@ -107,7 +107,7 @@ The Tool Tip Object is the tool tip label in the scene. When the objects are sna
 
 The Audio Source is automatically grabbed. 
 
-### Placement Hints Buttons
+### Placement Hints buttons
 In [Lesson 2](mrlearning-base-ch2.md), you learned how to place and configure buttons to do things like change the color of an item or make it play a sound when it is pushed. We will continue to use those principles as we configure our buttons for toggling placement hints. 
 
 The goal is to configure our button so that every time the user presses the Placement hint button, it toggles the visibility of the translucent placement hints. 
@@ -117,7 +117,7 @@ Step 1: Move the lunar module to the empty Runtime Only slot in the inspector pa
 Step 2: Now click the No Function dropdown list. Go down to TogglePlacementHints, and under that menu select ToggleGameObjects (). ToggleGameObjects() toggles the placement hints on and off so that they are visible or invisible each time the button is pressed.
  ![Lesson6 Chapter3 Step2im](images/Lesson6_Chapter3_step2im.PNG)
 
-### Configuring the Reset Button
+### Configuring the Reset button
 
 There will be situations where the user makes a mistake, or accidently throws the object away, or just wants to reset the experience. The Reset button adds the ability to restart the experience. 
 
@@ -132,7 +132,7 @@ Step 3: Select the No Function dropdown menu, and hover over LaunchLunarModule, 
 
 > Note: Notice that by default, the GameObject.BroadcastMessage is configured to ResetPlacement. This broadcasts a message called, ResetPlacement for every child object of the RocketLauncher_Tutorial. Any object that has a method for ResetPlacement() responds to that message by resetting it's position. 
 
-### Launching the Lunar Module
+### Launching the lunar module
 This section explaings how to configure the Launch button. This permits the user to press the button and launch the lunar module into space.
 
 Step 1: Select the Launch button. In the base scene it’s called, LaunchRoundButton. Drag the lunar module to the empty slot under Touch End in the Inspector panel.

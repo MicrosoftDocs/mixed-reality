@@ -45,7 +45,7 @@ You can add to your app's personality and brand identity by customizing the Prog
 
 ## See also
 * [Progress scripts and prefabs on Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Loader)
-* [Bounding Box](app-bar-and-bounding-box.md)
+* [Bounding box](app-bar-and-bounding-box.md)
 * [Interactable object](interactable-object.md)
 * [Object collection](object-collection.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)

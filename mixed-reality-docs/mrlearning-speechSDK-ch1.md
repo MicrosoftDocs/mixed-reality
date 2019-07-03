@@ -9,9 +9,9 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# Speech SDK Learning Module - Speech Recognition and Transcription
+# 1. Integrating and using speech recognition and transcription
 
-In this tutorial you will create a Mixed Reality application that explores the use of Azure Cognitive Services Speech SDK with the HoloLens 2. When finished with this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Speech SDK’s Intent feature to understand voice commands using artificial intelligence.
+This tutorial creates a Mixed Reality application that explores the use of Azure Cognitive Services Speech SDK with the HoloLens 2. When finished with this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Speech SDK’s Intent feature to understand voice commands using artificial intelligence.
 
 ## Objectives
 
