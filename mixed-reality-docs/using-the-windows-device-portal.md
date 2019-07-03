@@ -142,13 +142,13 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
 ![Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-mixed-reality-capture-page-1000px.png)<br>
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
-Use the [Mixed Reality Capture](mixed-reality-capture.md) page to save media streams from the HoloLens.
+Use the Mixed Reality Capture page to save media streams from the HoloLens.
 * **Settings**: Control the media streams that are captured by checking the following settings:
   * **Holograms**: Captures the holographic content in the video stream. Holograms are rendered in mono, not stereo.
   * **PV camera**: Captures the video stream from the photo/video camera.
   * **Mic Audio**: Captures audio from the microphone array.
   * **App Audio**: Captures audio from the currently running app.
-  * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if supported by the running app (HoloLens 2 only).
+  * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if [supported by the running app](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (HoloLens 2 only).
   * **Live preview quality**: Select the screen resolution, frame rate, and streaming rate for the live preview.
 * Click or tap the **Live preview** button to show the capture stream. **Stop live preview** stops the capture stream.
 * Click or tap **Record** to start recording the mixed-reality stream, using the specified settings. **Stop recording** ends the recording and saves it.
@@ -156,9 +156,15 @@ Use the [Mixed Reality Capture](mixed-reality-capture.md) page to save media str
 * **Videos and photos**: Shows a list of video and photo captures taken on the device.
 
 > [!NOTE]
-> There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#Simultaneous-MRC-limitations) that can prevent a HoloLens app from accessing the photo/video camera while Windows Device Portal is actively using the camera.
-> HoloLens (1st gen) supports taking a photo or capturing a video while a HoloLens app is actively using the camera.
-> HoloLens 2 additionally supports live preview while a HoloLens app is actively using the camera.
+> There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#Simultaneous-MRC-limitations):
+> * If an app tries to access the photo/video camera while Windows Device Portal is recording a video, the video recording will stop.
+>   * HoloLens 2 will not stop recording video if the app acesses the photo/video camera with SharedReadOnly mode.
+> * If an app is actively using the photo/video camera, Windows Device Portal is able to take a photo or record a video.
+> * Live streaming:
+>   * HoloLens (1st gen) prevents an app from accessing the photo/video camera while live streaming from Windows Device Portal.
+>   * HoloLens (1st gen) will fail to live stream if an app is actively using the photo/video camera.
+>   * HoloLens 2 automatically stops live streaming when an app tries to access the photo/video camera in ExclusiveControl mode.
+>   * HoloLens 2 is able to start a live stream while an app is actively using the PV camera.
 
 ### Performance Tracing
 
