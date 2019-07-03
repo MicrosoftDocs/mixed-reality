@@ -12,7 +12,8 @@ keywords: mrc, photo, video, capture, camera
 
 # Mixed reality capture for developers
 
-See [Render from the PV camera](#render-from-the-pv-camera-opt-in) below for guidance on a new MRC capability for HoloLens 2.
+> [NOTE!]
+> See [Render from the PV camera](#render-from-the-pv-camera-opt-in) below for guidance on a new MRC capability for HoloLens 2.
 
 Since a user could take a [mixed reality capture](mixed-reality-capture.md) (MRC) photo or video at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.
 
@@ -31,23 +32,32 @@ Mixed reality captured photos and videos are likely the first exposure a user wi
 By default, an app does not have to do anything to enable users to take mixed reality captures.
 
 ### Enabling improved alignment for MRC in your app
+
 By default, mixed reality capture combines the right eye's holographic output with the photo/video (PV) camera. These two sources are combined using the focus point set by the currently running immersive app.
 
 This means that holograms outside the focus plane won't align as well (due to the physical distance between the PV camera and the right display).
 
 #### Set the focus point
+
 Immersive apps (on HoloLens) should set the [focus point](focus-point-in-unity.md) of where they want their stabilization plane to be. This ensures the best alignment in both the headset and in mixed reality capture.
 
 If a focus point is not set, the stabilization plane will default to two meters.
 
 #### Render from the PV camera (opt-in)
+
 HoloLens 2 adds the ability for an immersive app to **render from the PV camera** while mixed reality capture is running. To ensure the app supports the additional render correctly, the app has to opt-in to this functionality.
 
 Render from the PV camera offers the following improvements over the default MRC experience:
 * Hologram alignment to both your physical environment and hands (for near interactions) should be accurate at all distances, instead of having an offset at distances other than the focus point as you might see in the default MRC.
 * The right eye in the headset won't be compromised, as it won't be used to render the holograms for the MRC output.
 
-##### Enabling the HolographicViewConfiguration
+There are three steps to enable rendering from the PV camera:
+1. Enable the PhotoVideoCamera HolographicViewConfiguration
+2. Handle the additional HolographicCamera render
+3. Verify your shaders and code render correctly from this additional HolographicCamera
+
+##### Enable the PhotoVideoCamera HolographicViewConfiguration
+
 To opt-in, an app simply enables the PhotoVideoCamera's [HolographicViewConfiguration](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
@@ -58,12 +68,8 @@ if (view != null)
 }
 ```
 
-This opt-in works for both DirectX and Unity immersive apps.
+##### Handle the additional HolographicCamera render in DirectX
 
->[!NOTE]
->An app developer should ensure that their shaders and code render correctly from this additional camera.
-
-##### Handling the additional render in DirectX
 When the app has opt-in to render from the PV camera and mixed reality capture starts:
 1. HolographicSpace's CameraAdded event will fire. This event can be deferred if the app cannot handle the camera at this time.
 2. Once the event has completed (and there are no outstanding deferrals) the HolographicCamera will appear in the next HolographicFrame's AddedCameras list.
@@ -72,25 +78,34 @@ When mixed reality capture stops (or if the app disables the view configuration 
 
 A [ViewConfiguration](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) property has been added to HolographicCamera to help identify the configuration a camera belongs to.
 
-##### Handling the additional render in Unity
+##### Handle the additional HolographicCamera render in Unity
 
 >[!NOTE]
-> Unity support to render from the PV camera is under development and can't be used, yet.
+> Unity support to render from the PV camera is under development and can't be used, yet. This documentation will be updated when a build of Unity with support for rendering from the PV camera is available.
+
+##### Verify shaders and code support additional cameras
+
+Run a mixed reality capture and check for unusual alignment, missing content, or performance issues. Update shaders and code as appropriate.
+
+If there are certain scenes that cannot support rendering to an additional camera, you can disable the PhotoVideoCamera's HolographicViewConfiguration during them.
 
 ### Disabling MRC in your app
 
 #### 2D app
+
 2D apps can choose to have their visual content obscured when mixed reality capture is running by:
 * Present with the [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/dxgi-present) flag
 * Create the app's swap chain with the [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://docs.microsoft.com/en-us/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) flag
 * With the Windows 10 May 2019 Update, setting ApplicationView's [IsScreenCaptureEnabled](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
 
 #### Immersive app
+
 Immersive apps can choose to have their visual content excluded from mixed reality capture by:
 * Setting HolographicCameraRenderingParameter's [IsContentProtectionEnabled](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) to disable mixed reality capture for its associated frame
 * Setting HolographicCamera's [IsHardwareContentProtectionEnabled](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) to disable mixed reality capture for its associated holographic camera
 
 #### Password Keyboard
+
 With the Windows 10 May 2019 Update, visual content is automatically excluded from mixed reality capture when a password or pin keyboard is visible.
 
 ### Knowing when MRC is active
