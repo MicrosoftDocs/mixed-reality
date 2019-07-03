@@ -58,7 +58,7 @@ There are three steps to enable rendering from the PV camera:
 
 ##### Enable the PhotoVideoCamera HolographicViewConfiguration
 
-To opt-in, an app simply enables the PhotoVideoCamera's [HolographicViewConfiguration](https://docs.microsoft.com/en-us/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
+To opt-in, an app simply enables the PhotoVideoCamera's [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
 var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfiguration.PhotoVideoCamera);
@@ -76,7 +76,7 @@ When the app has opt-in to render from the PV camera and mixed reality capture s
 
 When mixed reality capture stops (or if the app disables the view configuration while mixed reality capture is running): the HolographicCamera will appear in the next HolographicFrame's RemovedCameras list and the HolographicSpace's CameraRemoved event will fire.
 
-A [ViewConfiguration](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) property has been added to HolographicCamera to help identify the configuration a camera belongs to.
+A [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) property has been added to HolographicCamera to help identify the configuration a camera belongs to.
 
 ##### Handle the additional HolographicCamera render in Unity
 
@@ -94,15 +94,15 @@ If there are certain scenes that cannot support rendering to an additional camer
 #### 2D app
 
 2D apps can choose to have their visual content obscured when mixed reality capture is running by:
-* Present with the [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/dxgi-present) flag
-* Create the app's swap chain with the [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://docs.microsoft.com/en-us/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) flag
-* With the Windows 10 May 2019 Update, setting ApplicationView's [IsScreenCaptureEnabled](https://docs.microsoft.com/en-us/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
+* Present with the [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-present) flag
+* Create the app's swap chain with the [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://docs.microsoft.com/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) flag
+* With the Windows 10 May 2019 Update, setting ApplicationView's [IsScreenCaptureEnabled](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
 
 #### Immersive app
 
 Immersive apps can choose to have their visual content excluded from mixed reality capture by:
-* Setting HolographicCameraRenderingParameter's [IsContentProtectionEnabled](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) to disable mixed reality capture for its associated frame
-* Setting HolographicCamera's [IsHardwareContentProtectionEnabled](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) to disable mixed reality capture for its associated holographic camera
+* Setting HolographicCameraRenderingParameter's [IsContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) to disable mixed reality capture for its associated frame
+* Setting HolographicCamera's [IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) to disable mixed reality capture for its associated holographic camera
 
 #### Password Keyboard
 
@@ -110,10 +110,10 @@ With the Windows 10 May 2019 Update, visual content is automatically excluded fr
 
 ### Knowing when MRC is active
 
-The [AppCapture](https://docs.microsoft.com/en-us/uwp/api/Windows.Media.Capture.AppCapture) class can be used by an app to know when system mixed reality capture is running (for either audio or video).
+The [AppCapture](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.AppCapture) class can be used by an app to know when system mixed reality capture is running (for either audio or video).
 
 >[!NOTE]
->AppCapture's [GetForCurrentView](https://docs.microsoft.com/en-us/uwp/api/windows.media.capture.appcapture.getforcurrentview) API can return null if mixed reality capture isn't available on the device. It's also important to de-register the CapturingChanged event when your app is suspended, otherwise MRC can get into a blocked state.
+>AppCapture's [GetForCurrentView](https://docs.microsoft.com/uwp/api/windows.media.capture.appcapture.getforcurrentview) API can return null if mixed reality capture isn't available on the device. It's also important to de-register the CapturingChanged event when your app is suspended, otherwise MRC can get into a blocked state.
 
 ### Best practices (HoloLens-specific)
 
@@ -183,11 +183,11 @@ While the user can always trigger a photo or video using the system MRC capture 
 
 Unity Applications should see [Locatable_camera_in_Unity](locatable-camera-in-unity.md) for the property to enable holograms.
 
-Other applications can do this by using the [Windows Media Capture APIs](https://docs.microsoft.com/en-us/uwp/api/Windows.Media.Capture.MediaCapture) to control the Camera and add an MRC Video and Audio effect to include virtual holograms and application audio in stills and videos.
+Other applications can do this by using the [Windows Media Capture APIs](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaCapture) to control the Camera and add an MRC Video and Audio effect to include virtual holograms and application audio in stills and videos.
 
 Applications have two options to add the effect:
-* The older API: [Windows.Media.Capture.MediaCapture.AddEffectAsync()](https://docs.microsoft.com/en-us/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* The new Microsoft recommended API (returns an object, making it possible to manipulate dynamic properties): [Windows.Media.Capture.MediaCapture.AddVideoEffectAsync()](https://docs.microsoft.com/en-us/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync) / [Windows.Media.Capture.MediaCapture.AddAudioEffectAsync()](https://docs.microsoft.com/en-us/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) which require the app create its own implementation of [IVideoEffectDefinition](https://docs.microsoft.com/en-us/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) and [IAudioEffectDefinition](https://docs.microsoft.com/en-us/uwp/api/windows.media.effects.iaudioeffectdefinition). Please see the MRC effect sample for sample usage.
+* The older API: [Windows.Media.Capture.MediaCapture.AddEffectAsync()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
+* The new Microsoft recommended API (returns an object, making it possible to manipulate dynamic properties): [Windows.Media.Capture.MediaCapture.AddVideoEffectAsync()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync) / [Windows.Media.Capture.MediaCapture.AddAudioEffectAsync()](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) which require the app create its own implementation of [IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) and [IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition). Please see the MRC effect sample for sample usage.
 
 >[!NOTE]
 > The Windows.Media.MixedRealityCapture namespace will not be recognized by Visual Studio, but the strings are still valid.
@@ -196,7 +196,7 @@ MRC Video Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureVideoEf
 
 |  Property Name  |  Type  |  Default Value  |  Description | 
 |----------|----------|----------|----------|
-|  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/en-us/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Describe which capture stream this effect is used for. Audio is not available. | 
+|  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Describe which capture stream this effect is used for. Audio is not available. | 
 |  HologramCompositionEnabled  |  boolean  |  TRUE  |  Flag to enable or disable holograms in video capture. | 
 |  RecordingIndicatorEnabled  |  boolean  |  TRUE  |  Flag to enable or disable recording indicator on screen during hologram capturing. | 
 |  VideoStabilizationEnabled  |  boolean  |  FALSE  |  Flag to enable or disable video stabilization powered by the HoloLens tracker. | 
@@ -238,7 +238,7 @@ There are certain limitations around multiple apps accessing MRC at the same tim
 
 The photo/video camera is limited to the number of processes that can access it at the same time. While a process is recording video or taking a photo any other process will fail to acquire the photo/video camera. (this applies to both Mixed Reality Capture and standard photo/video capture)
 
-With HoloLens 2, an app can use MediaCaptureInitializationSettings's [SharingMode](https://docs.microsoft.com/en-us/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) property to indicate that they want to run SharedReadOnly if they don't need exclusive control over the photo/video camera. Doing so means the resolution and framerate of the capture will be limited to what other apps have configured the camera to provide.
+With HoloLens 2, an app can use MediaCaptureInitializationSettings's [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) property to indicate that they want to run SharedReadOnly if they don't need exclusive control over the photo/video camera. Doing so means the resolution and framerate of the capture will be limited to what other apps have configured the camera to provide.
 
 ##### Built-in MRC photo/video camera access
 
