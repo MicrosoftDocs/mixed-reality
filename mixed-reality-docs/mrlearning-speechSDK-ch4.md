@@ -28,7 +28,6 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
 ![Module4Chapter4step1cim](images/module4chapter4step1cim.PNG)
 
-> Note: For information on how to do this on a Mac/Macbook, click [here](linkgoeshere).
 
 2. Log in to the [Azure Portal](https://portal.azure.com/). Once you are logged in, click on Create a resource, and search for "Language Understanding," and click enter.
 
