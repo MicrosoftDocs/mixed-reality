@@ -14,18 +14,17 @@ ms.sitesec: library
 
 # HoloLens Status
 
-![Yes](images/checkmark.png "Yes") **All services are active**
+✔️ **All services are active**
 
 Area|HoloLens (1st gen)|HoloLens 2:
 ---|:---:|:---:
-Azure services|![Yes](images/checkmark.png "Yes")|![Yes](images/checkmark.png "Yes")
-Store app|![Yes](images/checkmark.png "Yes")|![Yes](images/checkmark.png "Yes")
-Apps|![Yes](images/checkmark.png "Yes")|![Yes](images/checkmark.png "Yes")
-MDM|![Yes](images/checkmark.png "Yes")|![Yes](images/checkmark.png "Yes")
+Azure services|✔️|✔️
+Store app|✔️|✔️
+Apps|✔️|✔️
+MDM|✔️|✔️
 
 **Key**<br/>
-![Yes](images/checkmark.png "Yes") Good 
-![No](images/crossmark.png "No") Critical
+✔️ Good, ⓘ Information, ⚠ Warning, ❌ Critical, 
 
 ## Notes
 
