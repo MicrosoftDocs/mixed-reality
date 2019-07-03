@@ -11,7 +11,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 4. Placing dynamic content and using solvers
 
-Holograms come to life in the HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK’s available placement tools, known as solvers for the way they solve complex spatial placement algorithms. In the MRTK, solvers are a system of scripts and behaviors that are used to be able to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive. 
+Holograms come to life in the HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK’s available placement tools, known as solvers for the way they solve complex spatial placement scenarios. In the MRTK, solvers are a system of scripts and behaviors that are used to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive. 
 
 ## Objectives
 
@@ -26,16 +26,16 @@ Holograms come to life in the HoloLens 2 when they intuitively follow the user a
 
 ![Solvers](images/lesson3_chapter1_step1im.PNG)
 
->Note: In this lesson we will only go over implementation of the Orbital solver and the RadialView solver. To learn more about the full range of solvers available in the MRTK, please visit: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html
+>Note: In this lesson we will only go over the implementation of the Orbital solver and the RadialView solver. To learn more about the full range of solvers available in the MRTK, please visit: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html
 
 ### Use a Solver to Follow the User
-The goal of this chapter is to enhance the button collection that was previously created so that it follows the user’s gaze direction. In previous version of the MRTK and HoloToolkit, this was referred to as a taglong functionality.
+The goal of this chapter is to enhance the button collection that was previously created so that it follows the user’s gaze direction. In previous version of the MRTK and HoloToolkit, this was referred to as a tagalong functionality.
 
 1. Select the Button Collection parent object from the previous lesson.
 
 ![Lesson3 Chapter2 Step1im](images/Lesson3_chapter2_step1im.PNG)
 
-2. In the Inspector panel, click the Add Component" button and search for "orbital." The orbital component should appear. Select it to add the orbital component to the Button Collection game object.
+2. In the Inspector panel, click the "Add Component" button and search for "orbital". The orbital component should appear. Select it to add the orbital component to the Button Collection game object.
 
 ![Lesson3 Chapter2 Step2im](images/Lesson3_Chapter2_step2im.PNG)
 
