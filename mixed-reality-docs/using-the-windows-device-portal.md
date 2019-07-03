@@ -156,7 +156,7 @@ Use the Mixed Reality Capture page to save media streams from the HoloLens.
 * **Videos and photos**: Shows a list of video and photo captures taken on the device.
 
 > [!NOTE]
-> There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#Simultaneous-MRC-limitations):
+> There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#simultaneous-mrc-limitations):
 > * If an app tries to access the photo/video camera while Windows Device Portal is recording a video, the video recording will stop.
 >   * HoloLens 2 will not stop recording video if the app acesses the photo/video camera with SharedReadOnly mode.
 > * If an app is actively using the photo/video camera, Windows Device Portal is able to take a photo or record a video.
