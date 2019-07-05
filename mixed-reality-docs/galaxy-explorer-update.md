@@ -3,7 +3,7 @@ title: The Making of Galaxy Explorer for HoloLens 2
 description: Welcome to the journey of how we are updating Galaxy Explorer for HoloLens 2. Just like the original Galaxy Explorer, our team will be open sourcing the project on GitHub to ensure that the community has full access.
 author: l-garrett
 ms.author: grbury
-ms.date: 03/21/2018
+ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy explorer, case study, project, sample
 ---
