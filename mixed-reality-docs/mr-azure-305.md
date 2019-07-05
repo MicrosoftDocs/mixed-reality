@@ -250,15 +250,15 @@ Set up and test your mixed reality immersive headset.
 
     ![give new unity project a name](images/AzureLabs-Lab5-18.png)
 
-3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit* > *Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
+3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit** > **Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
     ![set visual studio as script editor](images/AzureLabs-Lab5-19.png)
 
-4.  Next, go to **File > Build Settings** and switch the platform to **Universal Windows Platform**, by clicking on the **Switch Platform** button.
+4.  Next, go to **File** > **Build Settings** and switch the platform to **Universal Windows Platform**, by clicking on the **Switch Platform** button.
 
     ![switch platform to uwp](images/AzureLabs-Lab5-20.png)
 
-5.	Go to **File > Build Settings** and make sure that:
+5.	Go to **File** > **Build Settings** and make sure that:
 
     1. **Target Device** is set to **Any Device**.
 
@@ -318,7 +318,7 @@ Set up and test your mixed reality immersive headset.
 
 10.  Close the Build Settings window.
 
-11. Save your Scene and Project (**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
+11. Save your Scene and Project (**FILE** > **SAVE SCENE / FILE** > **SAVE PROJECT**).
 
 ## Chapter 4 - Setup Main Camera
 
@@ -421,7 +421,7 @@ Set up and test your mixed reality immersive headset.
 
 6.  Next you will create a **3D Text** object to provide feedback on the status of the Azure service.
 
-    Right click on the **GazeButton** in the Hierarchy Panel again and add a **3D Object > 3D Text** object as a *child*.
+    Right click on the **GazeButton** in the Hierarchy Panel again and add a **3D Object** > **3D Text** object as a *child*.
 
     ![create new 3D text object](images/AzureLabs-Lab5-42.png)
 
@@ -467,9 +467,9 @@ There is currently a known issue in Unity which requires plugins to be reconfigu
 
 To import the SDK into your own project, make sure you have downloaded the latest ['.unitypackage' from GitHub](https://aka.ms/azstorage-unitysdk). Then, do the following:
 
-1.  Add the **.unitypackage** file to Unity by using the **Assets > Import Package > Custom Package** menu option.
+1.  Add the **.unitypackage** file to Unity by using the **Assets** > **Import Package** > **Custom Package** menu option.
 
-2.  In the **Import Unity Package** box that pops up, you can select everything under **Plugin* > *Storage**. Uncheck everything else, as it is not needed for this course.
+2.  In the **Import Unity Package** box that pops up, you can select everything under **Plugin** > **Storage**. Uncheck everything else, as it is not needed for this course.
 
     ![import to package](images/AzureLabs-Lab5-45.png)
 
@@ -519,7 +519,7 @@ The *AzureServices* class will be responsible for:
 
 To create this Class:
 
-1.  Right-click in the *Asset* Folder, located in the Project Panel, **Create > Folder**. Name the folder **Scripts**.
+1.  Right-click in the *Asset* Folder, located in the Project Panel, **Create** > **Folder**. Name the folder **Scripts**.
 
     ![create new folder](images/AzureLabs-Lab5-50.png)
 
@@ -527,7 +527,7 @@ To create this Class:
 
 2.  Double click on the folder just created, to open it.
 
-3.  Right-click inside the folder, **Create > C# Script**. Call the script *AzureServices*.
+3.  Right-click inside the folder, **Create** > **C# Script**. Call the script *AzureServices*.
 
 4.  Double click on the new *AzureServices* class to open it with *Visual Studio*.
 
@@ -657,7 +657,7 @@ To create this class:
 
 1.  Go to the **Scripts** folder you created previously.
 
-2.  Right-click inside the folder, **Create > C# Script**. Call the script *ShapeFactory*.
+2.  Right-click inside the folder, **Create** > **C# Script**. Call the script *ShapeFactory*.
 
 3.  Double click on the new *ShapeFactory* script to open it with *Visual Studio*.
 
@@ -767,7 +767,7 @@ To create this Class:
 
 1.  Go to the **Scripts** folder you created previously.
 
-2.  Right-click in the Project Panel, **Create > C# Script**. Call the script *Gaze*.
+2.  Right-click in the Project Panel, **Create** > **C# Script**. Call the script *Gaze*.
 
 3.  Double click on the new *Gaze* script to open it with *Visual Studio.*
 
@@ -1197,7 +1197,7 @@ With the other scripts in place, it is now possible to *complete* the *AzureServ
 
 To begin the Build process:
 
-1.  Go to **File > Build Settings**.
+1.  Go to **File** > **Build Settings**.
 
     ![build the app](images/AzureLabs-Lab5-54.png)
 
@@ -1218,8 +1218,8 @@ To deploy your application:
 3.  In the **Solution Configuration** select **Debug**.
 
     > For the Microsoft HoloLens, you may find it easier to set this to *Remote Machine*, so that you are not tethered to your computer. Though, you will need to also do the following:
-    > - Know the **IP Address** of your HoloLens, which can be found within the *Settings > Network & Internet > Wi-Fi > Advanced Options*; the IPv4 is the address you should use. 
-    > - Ensure **Developer Mode** is **On**; found in *Settings > Update & Security > For developers*.
+    > - Know the **IP Address** of your HoloLens, which can be found within the **Settings** > **Network & Internet** > **Wi-Fi** > **Advanced Options**; the IPv4 is the address you should use. 
+    > - Ensure **Developer Mode** is **On**; found in **Settings** > **Update & Security** > **For developers**.
 
     ![deploy solution](images/AzureLabs-Lab5-55.png)
 

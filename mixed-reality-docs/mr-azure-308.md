@@ -246,7 +246,7 @@ Now that your **Table service** storage account has been setup, it is time to ad
 
 1.  Open **Visual Studio**.
 
-2.  From the menu, click **View > Cloud Explorer**.
+2.  From the menu, click **View** > **Cloud Explorer**.
 
     ![open cloud explorer](images/AzureLabs-Lab8-22.png)
 
@@ -650,15 +650,15 @@ Set up and test your mixed reality immersive headset.
 
     ![create project](images/AzureLabs-Lab8-53.png)
 
-3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit > Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
+3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit** > **Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
     ![set external VS tools](images/AzureLabs-Lab8-54.png)
 
-4.  Next, go to **File > Build Settings** and select **Universal Windows Platform**, then click on the **Switch Platform** button to apply your selection.
+4.  Next, go to **File** > **Build Settings** and select **Universal Windows Platform**, then click on the **Switch Platform** button to apply your selection.
 
     ![switch platforms](images/AzureLabs-Lab8-55.png)
 
-5.  While still in **File > Build Settings**, make sure that:
+5.  While still in **File** > **Build Settings**, make sure that:
 
     1.  **Target Device** is set to **Any Device**
 
@@ -712,7 +712,7 @@ Set up and test your mixed reality immersive headset.
 
 9.  Close the **Build Settings** window.
 
-10. Save your Scene and Project **File > Save Scene* / *File > Save Project**.
+10. Save your Scene and Project **File** > **Save Scene / File** > **Save Project**.
 
     > [!IMPORTANT]
     > If you wish to skip the *Unity Set up* component for this project (Desktop App), and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-Desktop.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 9](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project).  You will still need to add the script components.
@@ -779,7 +779,7 @@ The second script you need to create is **CloudScene**, which is responsible for
 
 To create this class:
 
-1.  Right-click in the **Asset** Folder located in the Project Panel, **Create > Folder**. Name the folder **Scripts**.
+1.  Right-click in the **Asset** Folder located in the Project Panel, **Create** > **Folder**. Name the folder **Scripts**.
 
     ![create scripts folder](images/AzureLabs-Lab8-66.png)
 
@@ -787,7 +787,7 @@ To create this class:
 
 2.  Double click on the folder just created, to open it.
 
-3.  Right-click inside the **Scripts** folder, click **Create** **C\# Script**. Name the script **TableToScene**.
+3.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **TableToScene**.
 
     ![new c# script](images/AzureLabs-Lab8-68.png)
     ![TableToScene rename](images/AzureLabs-Lab8-69.png)
@@ -1136,7 +1136,7 @@ To create the second script:
 
 Everything needed for the Unity section of this project has now been completed.
 
-1.  Navigate to **Build Settings** (**File > Build Settings**).
+1.  Navigate to **Build Settings** (**File** > **Build Settings**).
 
 2.  From the **Build Settings** window, click **Build**.
 
@@ -1167,15 +1167,15 @@ The following is a typical set up for developing with the mixed reality, and as 
 
     ![name UnityMRNotifHub](images/AzureLabs-Lab8-80.png)
 
-3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit > Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
+3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit** > **Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
     ![set external editor to VS](images/AzureLabs-Lab8-81.png)
 
-4.  Next, go to **File > Build Settings** and switch the platform to **Universal Windows Platform**, by clicking on the **Switch Platform** button.
+4.  Next, go to **File** > **Build Settings** and switch the platform to **Universal Windows Platform**, by clicking on the **Switch Platform** button.
 
     ![switch platforms to UWP](images/AzureLabs-Lab8-82.png)
 
-5.  Go to **File > Build Settings** and make sure that:
+5.  Go to **File** > **Build Settings** and make sure that:
 
     1.  **Target Device** is set to **Any Device**
 
@@ -1229,11 +1229,11 @@ The following is a typical set up for developing with the mixed reality, and as 
 
             ![tick internet client](images/AzureLabs-Lab8-89.png)
 
-8.  Back in **Build Settings** *Unity C\# Projects* is no longer greyed out: tick the checkbox next to this.
+8.  Back in **Build Settings**, **Unity C# Projects** is no longer greyed out: tick the checkbox next to this.
 
 9.  With these changes done, close the Build Settings window.
 
-10. Save your Scene and Project **File* *Save Scene*/ *File* *Save Project**.
+10. Save your Scene and Project **File** > **Save Scene / File** > **Save Project**.
 
     > [!IMPORTANT]
     > If you wish to skip the *Unity Set up* component for this project (mixed reality App), and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-MR.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 14](#chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project). You will still need to add the script components.
@@ -1245,9 +1245,9 @@ There is currently a known issue in Unity which requires plugins to be reconfigu
 
 To import the SDK into your own project, make sure you have downloaded the latest [.unitypackage](https://aka.ms/azstorage-unitysdk). Then, do the following:
 
-1.  Add the .unitypackage you downloaded from the above, to Unity by using the **Assets > Import Package > Custom Package** menu option.
+1.  Add the .unitypackage you downloaded from the above, to Unity by using the **Assets** > **Import Package** > **Custom Package** menu option.
 
-2.  In the **Import Unity Package** box that pops up, you can select everything under **Plugin > Storage**.
+2.  In the **Import Unity Package** box that pops up, you can select everything under **Plugin** > **Storage**.
 
     ![import package](images/AzureLabs-Lab8-90.png)
 
@@ -1484,7 +1484,7 @@ To create the **NotificationReceiver** script:
 
 This Chapter is identical to build process for the previous project. Everything needed for the Unity section of this project has now been completed, so it is time to build it from Unity.
 
-1.  Navigate to **Build Settings** ( **File > Build Settings...** ).
+1.  Navigate to **Build Settings** ( **File** > **Build Settings** ).
 
 2.  From the **Build Settings** menu, ensure **Unity C# Projects*** is ticked (which will allow you to edit the scripts in this project, after build).
 

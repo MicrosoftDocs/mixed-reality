@@ -220,11 +220,11 @@ The following is a typical set up for developing with the mixed reality, and as 
 
         ![Set up the Unity Project](images/AzureLabs-Lab309-21.png)
 
-9.  Back in **Build Settings**, **Unity C\# Projects** is no longer greyed out; tick the checkbox next to this.
+9.  Back in **Build Settings**, **Unity C# Projects** is no longer greyed out; tick the checkbox next to this.
 
 10.  Close the Build Settings window.
 
-11.  Save your Scene and Project (**FILE > SAVE SCENE / FILE > SAVE PROJECT**).
+11.  Save your Scene and Project (**FILE** > **SAVE SCENE / FILE** > **SAVE PROJECT**).
 
 
 ## Chapter 3 - Import the Unity package
@@ -270,7 +270,7 @@ To import Application Insights into your own project, make sure you have [downlo
 
 In this Chapter you will set up the camera and the controls to allow the user to see and move in the scene.
 
-1.  Right-click in an empty area in the Hierarchy Panel, then on **Create > Empty**.
+1.  Right-click in an empty area in the Hierarchy Panel, then on **Create** > **Empty**.
 
     ![Set up the camera and the User controls](images/AzureLabs-Lab309-26.png)
 
@@ -372,11 +372,11 @@ The first script you need to create is **ApplicationInsightsTracker**, which is 
 
 To create this class:
 
-1.  Right-click in the *Project Panel*, then **Create > Folder**. Name the folder **Scripts**.
+1.  Right-click in the *Project Panel*, then **Create** > **Folder**. Name the folder **Scripts**.
 
     ![Create the ApplicationInsightsTracker class](images/AzureLabs-Lab309-46.png)  ![Create the ApplicationInsightsTracker class](images/AzureLabs-Lab309-47.png)
 
-2.  With the **Scripts** folder created, double-click it, to open. Then, within that folder, right-click, **Create > C\# Script**. Name the script **ApplicationInsightsTracker**.
+2.  With the **Scripts** folder created, double-click it, to open. Then, within that folder, right-click, **Create** > **C# Script**. Name the script **ApplicationInsightsTracker**.
 
 3.  Double-click on the new **ApplicationInsightsTracker** script to open it with **Visual Studio**.
 
@@ -500,7 +500,7 @@ The next script to create is the **Gaze** script. This script is responsible for
 
 1.  Double-click on the **Scripts** folder, to open it.
 
-2.  Right-click inside the **Scripts** folder, click **Create** > **C\# Script**. Name the script **Gaze**.
+2.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **Gaze**.
 
 3.  Double-click on the script to open it with Visual Studio.
 
@@ -694,7 +694,7 @@ To create the script:
 
 1.  Double-click on the **Scripts** folder, to open it.
 
-2.  Right-click inside the **Scripts** folder, click **Create** **C\# > Script**. Name the script **ObjectTrigger**.
+2.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **ObjectTrigger**.
 
 3.  Double-click on the script to open it with Visual Studio. Replace the existing code with the following:
 
@@ -766,7 +766,7 @@ To create the script:
 
 1.  Double-click on the **Scripts** folder, to open it.
 
-2.  Right-click inside the **Scripts** folder, click **Create** **C\# > Script**. Name the script **DataFromAnalytics**.
+2.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **DataFromAnalytics**.
 
 3.  Double-click on the script to open it with Visual Studio.
 
@@ -995,7 +995,7 @@ To create the script:
 
 1.  Double-click on the **Scripts** folder, to open it.
 
-2.  Right-click inside the **Scripts** folder, click **Create** > **C\# Script**. Name the script **Movement**.
+2.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **Movement**.
 
 3.  Double-click on the script to open it with *Visual Studio*.
 
@@ -1200,7 +1200,7 @@ In this Chapter you need to place the **Movement** script onto the **Camera Pare
 
 Everything needed for the Unity section of this project has now been completed, so it is time to build it from Unity.
 
-1.  Navigate to **Build Settings**, **(File > Build Settings...)**.
+1.  Navigate to **Build Settings**, (**File** > **Build Settings**).
 
 2.  From the **Build Settings** window, click **Build**.
 
