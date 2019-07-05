@@ -15,6 +15,7 @@ ms.sitesec: library
 # HoloLens Status
 
 ✔️ **All services are active**
+
 **Key** ✔️ Good, ⓘ Information, ⚠ Warning, ❌ Critical 
 
 Area|HoloLens (1st gen)|HoloLens 2
