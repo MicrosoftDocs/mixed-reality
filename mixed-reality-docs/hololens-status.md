@@ -15,24 +15,18 @@ ms.sitesec: library
 # HoloLens Status
 
 ✔️ **All services are active**
+**Key** ✔️ Good, ⓘ Information, ⚠ Warning, ❌ Critical 
 
-Area|HoloLens (1st gen)|HoloLens 2:
+Area|HoloLens (1st gen)|HoloLens 2
 ---|:---:|:---:
-Azure services|✔️|✔️
-Store app|✔️|✔️
-Apps|✔️|✔️
-MDM|✔️|✔️
-
-**Key**<br/>
-✔️ Good, ⓘ Information, ⚠ Warning, ❌ Critical, 
-
-## Notes
-
-(Notes go here)
+[Azure services](https://status.azure.com/en-us/status)|✔️|✔️
+[Store app](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens)|✔️|✔️
+[Apps](https://www.microsoft.com/en-us/hololens/apps)|✔️|✔️
+[MDM](https://docs.microsoft.com/en-us/hololens/hololens-enroll-mdm)|✔️|✔️
 
 
 
-## Related topics
+## Notes and related topics
 
 [Frequently asked questions about using Skype for HoloLens](https://support.skype.com/en/faq/FA34641/frequently-asked-questions-about-using-skype-for-hololens)
 
