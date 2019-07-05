@@ -637,7 +637,7 @@ To create this Class:
     ```
 
     > [!IMPORTANT]
-    > We will fill in the code for *CallAzureFunctionForNextShape()* in a [future Chapter](#chapter-10---completing-the-AzureServices-class).
+    > We will fill in the code for *CallAzureFunctionForNextShape()* in a [future Chapter](#chapter-10---completing-the-azureservices-class).
 
 9.  Delete the *Update()* method since this class will not use it.
 

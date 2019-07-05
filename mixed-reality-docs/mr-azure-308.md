@@ -1509,7 +1509,7 @@ This Chapter is identical to build process for the previous project. Everything 
 ## Chapter 17 - Add NuGet packages to the UnityMRNotifHub Solution
 
 > [!WARNING] 
-> Please remember that, once you add the following NuGet Packages (and uncomment the code in the next [Chapter](#chapter-18---edit-unitymrnotifhub-application,-notificationreciever-class)), the Code, when reopened within the Unity Project, will present errors. If you wish to go back and continue editing in the Unity Editor, you will need comment that errosome code, and then uncomment again later, once you are back in Visual Studio. 
+> Please remember that, once you add the following NuGet Packages (and uncomment the code in the next [Chapter](#chapter-18---edit-unitymrnotifhub-application-notificationreciever-class)), the Code, when reopened within the Unity Project, will present errors. If you wish to go back and continue editing in the Unity Editor, you will need comment that errosome code, and then uncomment again later, once you are back in Visual Studio. 
 
 Once the mixed reality build has been completed, navigate to the mixed reality project, which you built, and double click on the solution (.sln) file within that folder, to open your solution with Visual Studio 2017.
 You will now need to add the **WindowsAzure.Messaging.managed** NuGet package; this is a library that is used to receive Notifications from the Notification Hub.
