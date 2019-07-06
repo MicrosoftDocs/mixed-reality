@@ -215,7 +215,7 @@ To start creating an experiment:
 
 2.  A new page will be displayed with a blank Experiment:
 
-3.  From the panel on the left expand **Saved Datasets* > *My Datasets** and drag the  **ProductsTableCSV** on to the **Experiment Canvas**.
+3.  From the panel on the left expand **Saved Datasets** > **My Datasets** and drag the  **ProductsTableCSV** on to the **Experiment Canvas**.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-16.png)
 
@@ -231,7 +231,7 @@ To start creating an experiment:
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-19.png)
 
-7.  In the **Experiments** panel on the left side, expand **Machine Learning* > *Train**. Drag the **Train Model** item out in to the Experiment canvas. Your canvas should look the same as the below.
+7.  In the **Experiments** panel on the left side, expand **Machine Learning** > **Train**. Drag the **Train Model** item out in to the Experiment canvas. Your canvas should look the same as the below.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-20.png)
 
@@ -247,21 +247,21 @@ To start creating an experiment:
 
 11. You are going to train a **Multiclass Logistic Regression** algorithm to predict the most sold **product** based on the hour of the day and the date. It is beyond the scope of this document to explain the details of the different algorithms provided by the Azure Machine Learning studio, though, you can find out more from the [Machine Learning Algorithm Cheat Sheet](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
 
-12. From the experiment items panel on the left, expand ***Machine Learning* > *Initialize Model* > *Classification***, and drag the **Multiclass Logistic Regression** item on to the experiment canvas.
+12. From the experiment items panel on the left, expand **Machine Learning** > **Initialize Model** > **Classification**, and drag the **Multiclass Logistic Regression** item on to the experiment canvas.
 
 13. Connect the output, from the bottom of the **Multiclass Logistic Regression**, to the top-left input of the **Train Model** item.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-23.png)
 
-14. In list of experiment items in the panel on the left, expand **Machine Learning* > *Score**, and drag the **Score Model** item on to the canvas.
+14. In list of experiment items in the panel on the left, expand **Machine Learning** > **Score**, and drag the **Score Model** item on to the canvas.
 
 15. Connect the output, from the bottom of the **Train Model**, to the top-left input of the **Score Model**.
 
-16. Connect the bottom-right output from **Split Data**, to the top-right input of the **Score Model* item*.
+16. Connect the bottom-right output from **Split Data**, to the top-right input of the **Score Model** item.
 
     ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-24.png)
 
-17. In the list of **Experiment** items in the panel on the left, expand ***Machine Learning* > *Evaluate***, and drag the **Evaluate Model** item onto the canvas.
+17. In the list of **Experiment** items in the panel on the left, expand **Machine Learning** > **Evaluate**, and drag the **Evaluate Model** item onto the canvas.
 
 18. Connect the output from the **Score Model** to the top-left input of the **Evaluate Model**.
 
@@ -329,9 +329,9 @@ Set up and test your Mixed Reality Immersive Headset.
 
 1.  Open **Unity** and create a new Unity Project called **MR\_MachineLearning.** Make sure the project type is set to **3D**.
 
-2.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to ***Edit* > *Preferences*** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
+2.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit** > **Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
-3.  Next, go to ***File* > *Build Settings*** and switch the platform to **Universal Windows Platform**, by clicking on the ***Switch Platform*** button.
+3.  Next, go to **File** > **Build Settings** and switch the platform to **Universal Windows Platform**, by clicking on the ***Switch Platform*** button.
 
 4.  Also make sure that:
 
@@ -522,7 +522,7 @@ To create this class:
 
 1.  Go to the **Scripts** folder, in the **Project Panel**.
 
-2.  Right-click inside the folder, **Create** > **C\# Script**. Call the script **ProductPrediction**.
+2.  Right-click inside the folder, **Create** > **C# Script**. Call the script **ProductPrediction**.
 
 3.  Double click on the new **ProductPrediction** script to open it with **Visual Studio 2017**.
 
@@ -806,7 +806,7 @@ To create this class:
 
 14. Drag the **ProductPrediction** class script from the **Script** folder, onto the **Main Camera** object.
 
-15. Save your scene and project **File** > ***Save Scene* / *File*** > **Save Project**.
+15. Save your scene and project **File** > **Save Scene/File** > **Save Project**.
 
 ## Chapter 10 - Build the UWP Solution
 
@@ -814,11 +814,11 @@ It is now time to build your project as a UWP solution, so that it can run as a 
 
 To Build:
 
-1.  Save the current scene by clicking on **File** **Save Scenes**.
+1.  Save the current scene by clicking on **File** > **Save Scenes**.
 
-2.  Go to **File** **Build Settings**
+2.  Go to **File** > **Build Settings**
 
-3.  Check the box called **Unity C\# Projects** (this is important because it will allow you to edit the classes after build is completed).
+3.  Check the box called **Unity C# Projects** (this is important because it will allow you to edit the classes after build is completed).
 
 4.  Click on **Add Open Scenes**,
 
