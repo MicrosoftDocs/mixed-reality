@@ -207,6 +207,7 @@
 ##### Azure Spatial Anchor tutorials
 ###### [1. Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
 ###### [2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
+###### [3. Displaying Azure Spatial Anchor Feedback](mrlearning-asa-ch3.md)
 ##### Azure Speech Services tutorials
 ###### [1. Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
 ###### [2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)
