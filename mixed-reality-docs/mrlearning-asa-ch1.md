@@ -25,7 +25,7 @@ Before beginning, download and import the following assets:
 
 [Azure Spatial Anchors](https://github.com/azure/azure-spatial-anchors-samples/releases)
 
-[MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
+[MR Base module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2)
 
 [ASA module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2)
 
