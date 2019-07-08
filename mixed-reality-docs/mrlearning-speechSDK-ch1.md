@@ -41,7 +41,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 ![Module4Chapter1step4im](images/module4chapter1step4im.PNG)
 
-5. S-Download the Speech SDK Module asset pack, also known as the [Lunarcom](https://github.com/microsoft/MixedRealityLearning/releases/download/Speech_1/SpeechSDKAssets.unitypackage) asset package by clicking on [this link](https://github.com/microsoft/MixedRealityLearning/releases/download/Speech_1/SpeechSDKAssets.unitypackage). The Lunarcom asset package is a collection of assets and scripts developed for this lesson series to showcase a practical use of Azure's Speech SDK. It is a voice-command terminal that will ultimately interface with the lunar module assembly experience developed in the [Base Module Tutorial.](mrlearning-base-ch6.md)
+5. Download the Speech SDK Module asset pack, also know as Lunarcom package by clicking on [this link](https://github.com/microsoft/MixedRealityLearning/releases/tag/Speech_2). The Lunarcom asset package is a collection of assets and scripts developed for this lesson series to showcase a practical use of Azure's Speech SDK. It is a voice-command terminal that will ultimately interface with the lunar module assembly experience developed in the [Base Module Tutorial.](mrlearning-base-ch6.md)
 
 6. Import the Lunarcom asset package into your Unity project by following similar steps you took to import the Mixed Reality Toolkit and Speech SDK.
 7. Configure the Mixed Reality Toolkit (MRTK). To do this, click on the Mixed Reality Toolkit panel in the top of your window, and then select Add to Scene and Configure.

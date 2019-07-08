@@ -27,7 +27,7 @@ Before beginning, download and import the following assets:
 
 [MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1)
 
-[ASA module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/ASA_B2)
+[ASA module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2)
 
 [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)
 
@@ -77,8 +77,8 @@ Just like Step 5, go back in to Unity, click Assets, and hover over Import Packa
 ![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
 
 > Note: There might be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
-   
-7. Import the ASA module ack using the same approach as importing the previous packages.
+
+7. Import the [ASA module pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2) using the same approach as importing the previous packages.
 
 ### Configuring your scene
 
@@ -151,11 +151,11 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
    
 9. The final Step is to build to your device by selecting Debug>Start without Debugging. Selecting Start without Debugging causes the application to immediately start on your device upon a successful build ithout Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You might also select Build>Deploy Solution to deploy to your device without having the application automatically start.
 ![Lesson1Chapter5Step9](images/Lesson1Chapter5Step9.JPG)
-    
-
+   
 10. Follow the instructions. 
 When the application is running on your device, follow the on-screen instructions. Press the Scene buttons corresponding to the Steps below.
     
+
 ![module2chapter1step10eim](images/module2chapter1step10eim.PNG)
     
     1. Start the spatial anchors session.
