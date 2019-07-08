@@ -19,7 +19,7 @@ ms.sitesec: library
 **Key** ✔️ Good, ⓘ Information, ⚠ Warning, ❌ Critical 
 
 Area|HoloLens (1st gen)|HoloLens 2
----|:---:|:---:
+----|:----:|:----:
 [Azure services](https://status.azure.com/en-us/status)|✔️|✔️
 [Store app](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens)|✔️|✔️
 [Apps](https://www.microsoft.com/en-us/hololens/apps)|✔️|✔️
