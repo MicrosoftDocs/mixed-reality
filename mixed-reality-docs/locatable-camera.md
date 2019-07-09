@@ -38,7 +38,7 @@ HoloLens includes a world-facing camera mounted on the front of the device which
   | Profile                                         | Video     | Preview   | Still     | Frame rates | Horizontal Field of View (H-FOV) | Suggested usage                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
   | Legacy,0  BalancedVideoAndPhoto,100             | 2272x1278 | 2272x1278 |           | 15,30       | 64.69                            | High quality video recording                |
-  | Legacy,0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15,30       | 64.69                            | High quality video recording                |
+  | Legacy,0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15,30       | 64.69                            | Preview stream for high quality photo capture |
   | Legacy,0  BalancedVideoAndPhoto,100             |           |           | 3904x2196 |             | 64.69                            | High quality photo capture                  |
   | BalancedVideoAndPhoto,120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15,30       | 64.69                            | Long duration scenarios                     |
   | BalancedVideoAndPhoto,120                       | 1504x846  | 1504x846  |           | 15,30       | 64.69                            | Long duration scenarios                     |
@@ -46,7 +46,7 @@ HoloLens includes a world-facing camera mounted on the front of the device which
   | Videoconferencing,100                           | 1504x846  | 1504x846  |           | 5,15,30,60  | 64.69                            | Video conferencing, long duration scenarios |
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1920x1080 | 1920x1080 | 1920x1080 | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1280x720  | 1280x720  | 1280x720  | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1128x635  |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1128x636  |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 960x540   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 760x428   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 640x360   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
