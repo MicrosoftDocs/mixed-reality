@@ -25,7 +25,7 @@ The newer releases of Visual Studio deploy a new version of a component, but fil
  
 **Workaround**: 
 
-Our team is currently working on a fix. In the meantime, tou can find workaround steps below can help unblock deployment and debugging:  
+Our team is currently working on a fix. In the meantime, you can use the following steps to work around the issue and help unblock deployment and debugging:  
 1. Open Visual Studio
 2. File -> New -> Project
 3. Visual C# -> Windows Desktop -> Console App (.NET Framework)
