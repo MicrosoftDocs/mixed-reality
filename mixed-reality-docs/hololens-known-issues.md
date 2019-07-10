@@ -60,7 +60,8 @@ Our team is currently working on a fix. In the meantime, you can use the followi
     {
     Credentials = new NetworkCredential("DevToolsUser", string.Empty),
     IPAddress = IPAddress.Parse(args[0])
-    }); client.RemoteDevice.DeleteFile(@"C:\Data\Users\DefaultAccount\AppData\Local\DevelopmentFiles\VSRemoteTools\x86\CoreCLR\mscorlib.ni.dll");
+    });
+    client.RemoteDevice.DeleteFile(@"C:\Data\Users\DefaultAccount\AppData\Local\DevelopmentFiles\VSRemoteTools\x86\CoreCLR\mscorlib.ni.dll");
     ```
 12. Build -> Build Solution
  
