@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# 3.	Adding the Azure Cognition Services speech translation component
+# 3.	Adding the Azure Cognitive Services speech translation component
 
 In this tutorial, we learn aabout the Azure Cognitive Services Speech Translation component in our project as well as translate into three different languages. 
 
