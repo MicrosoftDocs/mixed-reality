@@ -41,7 +41,7 @@ Our team is currently working on a fix. In the meantime, you can use the followi
  
 6. Right-click on the project in Solution Explorer and choose Add -> Existing Item.
  
-7. Browse to C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 and change the filter to "All Files (*.*)"
+7. Browse to C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 and change the filter to "All Files (\*.\*)"
  
 8. Select both SirepClient.dll and SshClient.dll and click "Add".
  
@@ -58,8 +58,8 @@ Our team is currently working on a fix. In the meantime, you can use the followi
     RemoteDeployClient client = RemoteDeployClient.CreateRemoteDeployClient();
     client.Connect(new ConnectionOptions()
     {
-    Credentials = new NetworkCredential("DevToolsUser", string.Empty),
-    IPAddress = IPAddress.Parse(args[0])
+        Credentials = new NetworkCredential("DevToolsUser", string.Empty),
+        IPAddress = IPAddress.Parse(args[0])
     });
     client.RemoteDevice.DeleteFile(@"C:\Data\Users\DefaultAccount\AppData\Local\DevelopmentFiles\VSRemoteTools\x86\CoreCLR\mscorlib.ni.dll");
     ```
