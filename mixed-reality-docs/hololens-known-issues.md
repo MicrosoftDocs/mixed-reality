@@ -3,7 +3,7 @@ title: HoloLens known issues
 description: This is the list of known issues that may affect HoloLens developers.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 06/14/2019
+ms.date: 07/10/2019
 ms.topic: article
 keywords: troubleshoot, known issue, help
 ---
