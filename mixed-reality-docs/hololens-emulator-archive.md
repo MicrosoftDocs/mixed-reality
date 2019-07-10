@@ -17,7 +17,8 @@ HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side.
 
 |  Build |  Release Date |  Notes | 
 |----------|----------|----------|
-|  [HoloLens 2 Emulator build 10.0.18362.1019](https://go.microsoft.com/fwlink/?linkid=2095316) | June 11, 2019 | Latest HoloLens 2 build.  No longer needs to be run as Administrator.  Start menu shortcut added. |
+|  [HoloLens 2 Emulator build 10.0.18362.1021](https://go.microsoft.com/fwlink/?linkid=2098508) | July 8, 2019 | Latest HoloLens 2 build.  Addresses a signing issue with DiskStream.dll |
+|  [HoloLens 2 Emulator build 10.0.18362.1019](https://go.microsoft.com/fwlink/?linkid=2095316) | June 11, 2019 | No longer needs to be run as Administrator.  Start menu shortcut added. |
 |  [HoloLens 2 Emulator build 10.0.18362.1005](https://go.microsoft.com/fwlink/?linkid=2087187) | April 16, 2019 |  |
 
 

@@ -22,7 +22,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 Download the HoloLens Emulator and holographic project templates.
 
 Versions: 
-* [HoloLens 2 Emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2095316).
+* [HoloLens 2 Emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2098508).
 * [HoloLens Emulator (1st Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.

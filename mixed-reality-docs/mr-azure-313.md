@@ -366,7 +366,7 @@ Now you can move on to setting up your device **running Ubuntu OS**. Follow the 
 
 4. Once the extensions are installed, close and re-open VS Code.
 
-5. With VS Code open once more, navigate to **View > Integrated terminal**.
+5. With VS Code open once more, navigate to **View** > **Integrated terminal**.
 
 6. You will now install **Cookiecutter**. In the terminal run the following bash command:
 
@@ -387,7 +387,7 @@ Now you can move on to setting up your device **running Ubuntu OS**. Follow the 
 
 At this point, you need to create the container, with the module, to be pushed into the *Container Registry*. Once you have pushed your container, you will use the *IoT Hub Edge* Service to deploy it to your device, which is running the *IoT Edge runtime*.
 
-1. From VS Code, click **View > Command palette**.
+1. From VS Code, click **View** > **Command palette**.
 
 2. In the palette, search and run **Azure IoT Edge: New Iot Edge Solution**.
 
@@ -741,7 +741,7 @@ You will then create the *images* folder, used by the python script to check for
 
 ## Chapter 9 - Package the solution as a container
 
-1.  You are now ready to "package" your files as a container and push it to your **Azure Container Registry**. Within VS Code, open the *Integrated Terminal* (**View > Integrated Terminal / CTRL + `**), and use the following line to login to **Docker** (substitute the values of the command with the credentials of your **Azure Container Registry (ACR)**):
+1.  You are now ready to "package" your files as a container and push it to your **Azure Container Registry**. Within VS Code, open the *Integrated Terminal* (**View** > **Integrated Terminal** or **Ctrl**+**\`**), and use the following line to login to **Docker** (substitute the values of the command with the credentials of your **Azure Container Registry (ACR)**):
 
     ```bash
         docker login -u <ACR username> -p <ACR password> <ACR login server>
@@ -913,7 +913,7 @@ Now that your **Table Service** storage account has been setup, it is time to ad
 
 1. Open **Visual Studio** (**not** Visual Studio Code).
 
-2. From the menu, click **View > Cloud Explorer**.
+2. From the menu, click **View** > **Cloud Explorer**.
 
     ![open cloud explorer](images/AzureLabs-Lab313-45.png)
 
