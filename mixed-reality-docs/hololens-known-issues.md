@@ -31,12 +31,13 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 3. Visual C# -> Windows Desktop -> Console App (.NET Framework)
 4. Give the project a name (e.g. HoloLensDeploymentFix) and make sure the Framework is set to at least .NET Framework 4.5 then click OK.
 5. Right-click on the References node in Solution Explorer and add the following references (click to the 'Browse' section and click the 'Browse...' button):
-```
-C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
-C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
-C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
-```
-(If you don't have 10.0.18362.0 installed, use the most recent version that you have.)
+    ```
+    C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
+    C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
+    C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
+    ```
+    >[!NOTE]
+    >If you don't have 10.0.18362.0 installed, use the most recent version that you have.
  
 6. Right-click on the project in Solution Explorer and choose Add -> Existing Item.
  
@@ -47,20 +48,20 @@ C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
 9. Locate and select both files in Solution Explorer (they should be at the bottom of the list of files) and change "Copy to Output Directory" in the Properties window to "Copy always"
  
 10. At the top of the file, add the following to the existing list of 'using' statements: 
-```
-using Microsoft.Tools.Deploy;
-using System.Net;
-```
+    ```
+    using Microsoft.Tools.Deploy;
+    using System.Net;
+    ```
  
 11. Inside of “static void Main(...)”, add the following code:
-```
-RemoteDeployClient client = RemoteDeployClient.CreateRemoteDeployClient();
-client.Connect(new ConnectionOptions()
-{
-Credentials = new NetworkCredential("DevToolsUser", string.Empty),
-IPAddress = IPAddress.Parse(args[0])
-}); client.RemoteDevice.DeleteFile(@"C:\Data\Users\DefaultAccount\AppData\Local\DevelopmentFiles\VSRemoteTools\x86\CoreCLR\mscorlib.ni.dll");
-```
+    ```
+    RemoteDeployClient client = RemoteDeployClient.CreateRemoteDeployClient();
+    client.Connect(new ConnectionOptions()
+    {
+    Credentials = new NetworkCredential("DevToolsUser", string.Empty),
+    IPAddress = IPAddress.Parse(args[0])
+    }); client.RemoteDevice.DeleteFile(@"C:\Data\Users\DefaultAccount\AppData\Local\DevelopmentFiles\VSRemoteTools\x86\CoreCLR\mscorlib.ni.dll");
+    ```
 12. Build -> Build Solution
  
 13. Open a command prompt to the folder that contains the compiled .exe (e.g. C:\MyProjects\HoloLensDeploymentFix\bin\Debug)
