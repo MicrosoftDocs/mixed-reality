@@ -34,5 +34,5 @@ Below is an example of what your scene could look like.
 The offline mode has been enabled. Now, when you're offline, you can still work on your project with the speech-SDK! 
 
 
-[Next Tutorial: 3.	Adding the Azure Cognition Services speech translation component](mrlearning-speechSDK-ch3.md)
+[Next Tutorial: 3.	Adding the Azure Cognitive Services speech translation component](mrlearning-speechSDK-ch3.md)
 
