@@ -3,7 +3,7 @@ title: Release notes - May 2019
 description: Windows Mixed Reality release notes for the Windows 10 May 2019 Update (also known as 19H1).
 author: mattzmsft
 ms.author: mazeller
-ms.date: 05/02/2019
+ms.date: 07/11/2019
 ms.topic: article
 keywords: release notes, version, windows 10, build, 19h1, os, may 2019
 ---
@@ -12,7 +12,7 @@ keywords: release notes, version, windows 10, build, 19h1, os, may 2019
 
 # Release notes - May 2019
 
-The **Windows 10 May 2019 Update** (also known as 19H1) includes new features for Windows Mixed Reality headsets, such as the ability to launch Win32 applications. HoloLens (1st gen) is in Long Term Servicing (LTS), with servicing updates to be released monthly.  
+The **Windows 10 May 2019 Update** (also known as 19H1) includes new features for Windows Mixed Reality (VR) headsets, such as the ability to launch Win32 applications in the mixed reality home. HoloLens (1st gen) is in Long Term Servicing (LTS), with servicing updates to be released monthly.
 
 To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the Windows 10 May 2019 Update using the [Windows media creation tool](https://www.microsoft.com/software-download/windows10).
 
@@ -39,7 +39,7 @@ We continually look to improve compatibility.  If you find your favorite classic
 
 ## HoloLens (1st gen) Long Term Servicing
 
-HoloLens (1st gen) is entering Long Term Servicing (LTS) state. Future updates will focus on issue and security fixes, while maintaining feature parity with the HoloLens October 2018 release (also known as RS5). 
+HoloLens (1st gen) is entering Long Term Servicing (LTS) state. Future updates will focus on issue and security fixes, while maintaining feature parity with the [Windows 10 October 2018 release](release-notes-october-2018.md) for HoloLens (also known as RS5). 
 
 ## Provide feedback and report issues
 
