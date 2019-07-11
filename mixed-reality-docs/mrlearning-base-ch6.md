@@ -28,7 +28,7 @@ In this tutorial, we combine multiple concepts presented in the previous lessons
 In this section, we introduce the various components needed to create our sample experience.
 
 1. Add the Lunar Module Assembly prefab to your base scene. To do this, from the Project tab, search for Rocket Launcher_Tutorial. 
-find the prefab in Assets->BaseModuleAssets->Prefabs. You'll also see two rocket launcher prefabs; one with the name "tutorial" and the other with the name "complete". Drag the Rocket Launcher_Tutorial prefab to your base scene, and position as you wish.
+Find the prefab in Assets->BaseModuleAssets->Prefabs. You'll also see two rocket launcher prefabs; one with the name "tutorial" and the other with the name "complete". Drag the Rocket Launcher_Tutorial prefab to your base scene, and position as you wish.
    Note: The Rocket Launcher_Complete prefab is the completed launcher, provided for reference. 
 
 ![Lesson6 Chapter1 Step1im](images/Lesson6_Chapter1_step1im.PNG)
@@ -50,10 +50,10 @@ There are five parts to the lunar module that the user will interact with as sho
 
 Step 2: Add an audio source to the lunar module. Make sure the lunar module is selected in your base scene hierarchy, and click Add Component. Search for Audio Source, and add it to the object. Leave it blank for now. We will use this to play the launching sound later.
 
- ![Lesson6 Chapter1 Step2im](images/Lesson6_Chapter1_step2im.PNG)
-Step 3: Add the script, Toggle Placement Hints. Click Add Component, and search for Toggle Placement Hints. This is a custom script that lets you turn on and off the translucent hints (objects with the x-ray material) mentioned earlier. 
-![Lesson6 Chapter1 Step3im](images/Lesson6_Chapter1_step3im.PNG)
-Step 4: Since we have five objects, type in "5" for the game object array size. You'll then see five new elements appear. 
+ ![Lesson6 Chapter1 Step2im](images/Lesson6_Chapter1_step2im.PNG)  
+Step 3: Add the script, Toggle Placement Hints. Click Add Component, and search for Toggle Placement Hints. This is a custom script that lets you turn on and off the translucent hints (objects with the x-ray material) mentioned earlier.  
+![Lesson6 Chapter1 Step3im](images/Lesson6_Chapter1_step3im.PNG)  
+Step 4: Since we have five objects, type in "5" for the game object array size. You'll then see five new elements appear.  
 
 
 ![Lesson6 Chapter1 Step4bim](images/Lesson6_Chapter1_step4bim.PNG)
@@ -114,7 +114,7 @@ The goal is to configure our button so that every time the user presses the Plac
 
 Step 1: Move the lunar module to the empty Runtime Only slot in the inspector panel while the Placement Hints object is selected in your base scene hierarchy. 
  ![Lesson6 Chapter3 Step1im](images/Lesson6_Chapter3_step1im.PNG)
-Step 2: Now click the No Function dropdown list. Go down to TogglePlacementHints, and under that menu select ToggleGameObjects (). ToggleGameObjects() toggles the placement hints on and off so that they are visible or invisible each time the button is pressed.
+Step 2: Now click the No Function dropdown list. Go down to TogglePlacementHints, and under that menu select ToggleGameObjects (). ToggleGameObjects() toggles the placement hints on and off so that they are visible or invisible each time the button is pressed.  
  ![Lesson6 Chapter3 Step2im](images/Lesson6_Chapter3_step2im.PNG)
 
 ### Configuring the Reset button
@@ -138,11 +138,11 @@ This section explaings how to configure the Launch button. This permits the user
 Step 1: Select the Launch button. In the base scene it’s called, LaunchRoundButton. Drag the lunar module to the empty slot under Touch End in the Inspector panel.
  ![Lesson6 Chapter5 Step1im](images/Lesson6_Chapter5_step1im.PNG)
 Step 2: Select the No Function dropdown menu, and hover over LaunchLunarModule, and select StopThruster (). This controls how much thrust the user wants to give to the lunar module. 
- ![Lesson6 Chapter5 Step2im](images/Lesson6_Chapter5_step2im.PNG)
+ ![Lesson6 Chapter5 Step2im](images/Lesson6_Chapter5_step2im.PNG)  
 Step 3: Under ButtonPressed(), add the lunar module (click, hold, and drag) to the empty slot. 
 
 Step 4: Click the No function dropdown menu, and hover over LaunchLunarModule, and select StartThruster (). 
- ![Lesson6 Chapter5 Step4im](images/Lesson6_Chapter5_step4im.PNG)
+ ![Lesson6 Chapter5 Step4im](images/Lesson6_Chapter5_step4im.PNG)  
 Step 5: Add music to the lunar module so that music plays when the rocket takes off. To do this, drag the lunar module to the next empty slot under Button Pressed().
 
 Step 6: Select the No Function dropdown menu, hover over AudioSource, and select PlayOneShot (AudioClip). Feel free to explore the variety of sounds included with the MRTK. For this example, we'll use "MRTK_Gem."
