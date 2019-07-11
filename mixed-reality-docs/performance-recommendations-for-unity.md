@@ -221,24 +221,22 @@ Further, it is generally preferable to combine meshes into one GameObject where 
 
 ## GPU performance recommendations
 
-Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games)
+Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games) 
 
-#### Reduce poly count
+### Optimize depth buffer sharing
+
+It is generally recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it is recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduces the bandwidth (and thus power) associated with depth buffer traffic. This can be a big power win, but is only applicable for experiences with a small depth range as [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) is more likely to occur with 16-bit than 24-bit. To avoid these artifacts, modify the near/far clip planes of the [Unity camera](https://docs.unity3d.com/Manual/class-Camera.html) to account for the lower precision. For HoloLens-based applications, a far clip plane of 50m instead of the Unity default 1000m can generally eliminate any z-fighting.
+
+### Reduce poly count
 
 Polygon count is usually reduced by either
 1) Removing objects from a scene
 2) Asset decimation which reduces the number of polygons for a given mesh
 3) Implementing a [Level of Detail (LOD) System](https://docs.unity3d.com/Manual/LevelOfDetail.html) into your application which renders far away objects with lower-polygon version of the same geometry
 
-#### Limit overdraw
+### Understanding shaders in Unity
 
-In Unity, one can display overdraw for their scene, by toggling the [**draw mode menu**](https://docs.unity3d.com/Manual/ViewModes.html) in the top left corner of the **Scene view** and selecting **Overdraw**.
-
-Generally, overdraw can be mitigated by culling objects ahead of time before they are sent to the GPU. Unity provides details on implementing [Occlusion Culling](https://docs.unity3d.com/Manual/OcclusionCulling.html) for their engine.
-
-#### Understanding shaders in Unity
-
-An easy approximation to compare shaders in performance is to identify the average number of operations each executes at runtime. This can be done fairly easily in Unity.
+An easy approximation to compare shaders in performance is to identify the average number of operations each executes at runtime. This can be done easily in Unity.
 
 1) Select your shader asset or select a material, then in top right corner of the inspector window, select the gear icon and then **"Select Shader"**
 
@@ -251,11 +249,29 @@ An easy approximation to compare shaders in performance is to identify the avera
 
     ![Unity Standard Shader Operations](images/unity-standard-shader-compilation.png)
 
-##### Unity Standard shader alternatives
+#### Optmize pixel shaders
 
-Instead of using a physically based rendering (PBR) or other high-quality shader, look at utilizing a more performant and cheaper shader. [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides a [standard shader](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit/StandardAssets/Shaders/MixedRealityStandard.shader) that has been optimized for mixed reality projects.
+Looking at the compiled statistic results using the method above, the [fragment shader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) will generally execute more operations than the [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders) on average. The fragment shader, also known as the pixel shader, is executed per pixel on the screen output while the vertex shader is only executed per-vertex of all meshes being drawn to the screen. 
+
+Thus, not only do fragment shaders have more instructions than vertex shaders because of all the lighting calculations, fragment shaders are almost always executed on a larger dataset. For example, if the screen output is a 2k by 2k image, then the fragment shader can get executed 2,000*2,000 = 4,000,000 times. If rendering two eyes, this number doubles since there are two screens. If a mixed reality application has multiple passes, full-screen post-processing effects, or rendering multiple meshes to the same pixel, this number will increase dramatically. 
+
+Therefore, reducing the number of operations in the fragment shader can generally give far greater performance gains over optimizations in the vertex shader.
+
+#### Unity Standard shader alternatives
+
+Instead of using a physically based rendering (PBR) or other high-quality shader, look at utilizing a more performant and cheaper shader. The [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides the [MRTK standard shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) that has been optimized for mixed reality projects.
 
 Unity also provides an unlit, vertex lit, diffuse, and other simplified shader options that are significantly faster compared to the Unity Standard shader. See [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) for more detailed information.
+
+#### Shader preloading
+
+Use *Shader preloading* and other tricks to optimize [shader load time](http://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html). In particular, shader preloading means you won't see any hitches due to runtime shader compilation.
+
+### Limit overdraw
+
+In Unity, one can display overdraw for their scene, by toggling the [**draw mode menu**](https://docs.unity3d.com/Manual/ViewModes.html) in the top left corner of the **Scene view** and selecting **Overdraw**.
+
+Generally, overdraw can be mitigated by culling objects ahead of time before they are sent to the GPU. Unity provides details on implementing [Occlusion Culling](https://docs.unity3d.com/Manual/OcclusionCulling.html) for their engine.
 
 ## Memory recommendations
 
