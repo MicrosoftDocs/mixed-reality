@@ -16,7 +16,7 @@ In this tutorial, we explore several advanced input options for the HoloLens 2, 
 ## Objectives
 
 - Trigger events using voice commands and keywords
-- Use tracked hands to Pan textures and 3D objects with tracked hands
+- Use tracked hands to pan textures and 3D objects with tracked hands
 - Leverage HoloLens 2 eye tracking capabilities to select objects
 
 ## Instructions
@@ -37,11 +37,12 @@ In the input system profile, there are a variety of settings. For voice commands
 >
 > ![Lesson5 Chapter1 Noteim](images/Lesson5_chapter1_noteim.PNG)
 
-3. Add a new voice command. To add a new voice command, click on the + Add a New Speech Command button. You"ll see a new line that appears down below the list of existing voice commands. Type in the voice command you want to use. In this example we are going to use the command “play music".
+3. Add a new voice command. To add a new voice command, click on the + Add a New Speech Command button. You'll see a new line that appears down below the list of existing voice commands. Type in the voice command you want to use. In this example we are going to use the command “play music".
 
 >Tip: You can also set a keycode for speech commands. This allows for voice commands to trigger events upon the press of a keyboard key. 	
 
-4. Add the ability to respond to voice commands. Select any object in the Base Scene hierarchy that does not have any other input scripts attached to it (e.g., no manipulation handler.) In the Inspector panel, click Add Component. Type in “speech input handler.” Select it.
+4. Add the ability to respond to voice commands. Select any object in the Base Scene hierarchy that does not have any other input scripts attached to it (e.g. no manipulation handler). In the Inspector panel, click Add Component. Type in “speech input handler” Select it.
+
    ![Lesson5 Chapter1 Step4im](images/Lesson5_chapter1_step4im.PNG)
 
    
@@ -71,9 +72,9 @@ By default, you will see two checkboxes. One is the Is Focus Required checkbox. 
 9. Drag the object that has the Diagnostics Demo Controls script to the new response you just created in Step 8.
     ![Lesson5 Chapter1 Step9im](images/Lesson5_chapter1_step9im.PNG)
 
-10. Now select the No Function” dropdown list, and select Diagnostic Demo Controls, then On Toggle Diagnostics ().” This function toggles your diagnostics on and off.  ![Lesson5 Chapter1 Step10im](images/Lesson5_chapter1_step10im.PNG)
+10. Now select the "No Function" dropdown list, and select Diagnostic Demo Control. Then select the "On Toggle Diagnostics ()" function which toggles your diagnostics on and off.  ![Lesson5 Chapter1 Step10im](images/Lesson5_chapter1_step10im.PNG)
     
-> Note that before building to your device you need to enable mic settings. To do this, click File, and go to Build Settings, Player Pettings, and ensure that the microphone capability is set.
+> Note that before building to your device you need to enable mic settings. To do this, click File, and go to Build Settings, Player Settings, and ensure that the microphone capability is set.
 
 Next, we will add the ability to play an audio file from voice command using the Octa object. Recall from [lesson 4](mrlearning-base-ch4.md) that we added the ability to play an audio clip from touching the Octa object. We will leverage this same audio source for our music voice command.
 
@@ -81,7 +82,7 @@ Next, we will add the ability to play an audio file from voice command using the
 
 12. Add another speech input handler (repeat Steps 4 and 5), but with the octa object. 
 
-13. Instead of adding the Toggle DiagnosticS voice command from step 6, add the Play Music voice command as shown in the image below.
+13. Instead of adding the Toggle Diagnostics voice command from step 6, add the Play Music voice command as shown in the image below.
     
      ![Lesson5 Chapter1 Step13im](images/Lesson5_chapter1_step13im.PNG)
     
@@ -101,19 +102,19 @@ Next, we will add the ability to play an audio file from voice command using the
 
 In this section, we will learn how to use the pan gesture. This is useful for scrolling by using your finger or hand to scroll through content. You can also use the pan gesture to rotate objects, to cycle through a collection of 3D objects, or even to scroll a 2D UI. We will also learn how to use the pan gesture to warp a texture, and how to move a collection of 3D objects.
 
-1. Create a quad. In your Base Scene hierarchy, right click, Aelect “3D Object, and select Quad.
+1. Create a quad. In your Base Scene hierarchy, right click, select "3D Object", and select Quad.
 
 ![Lesson5 Chapter2 Step2im](images/Lesson5_chapter2_step2im.PNG)
 
 2. Reposition the quad as appropriate. For our example, we set the x = 0, the y = 0 and the z = 1.5 away from the camera for a comfortable position from HoloLens 2.
 
-   > Note: If the quad blocks or is infront of any content from the previous lessons, be sure to move it so that it doesn’t block any of the other objects.
+   > Note: If the quad blocks or is in front of any content from the previous lessons, be sure to move it so that it doesn’t block any of the other objects.
 
 3. Apply a material to the quad. This material will be the material we will be scrolling through with the pan gesture. 
 
 ![Lesson5 Chapter2 Step3im](images/Lesson5_chapter2_step3im.PNG)
 
-4. In your Projects panel, type in the search box “pan content.” Drag that material on to the quad in your scene. 
+4. In your Projects panel, type in the search box “pan content”. Drag that material on to the quad in your scene. 
 
 > Note: The Pan Content material is not included in the MRTK, but an asset in this module's asset package as imported in previous lessons. 
 
@@ -121,14 +122,13 @@ In this section, we will learn how to use the pan gesture. This is useful for sc
 
 To use the pan gesture, you will need a collider on your object. You may see the quad already has a mesh collider. However, the mesh collider is not ideal, because it is extremely thin and difficult to select. We suggest replacing the mesh collider with a box collider.
 
-5. Right click the mesh collider that’s on the quad from the Inspector panel. Then remove it by clicking Rremove component. 
-   ![Lesson5 Chapter2 Step5im](images/Lesson5_chapter2_step5im.PNG)
-
-6. Now add the box collider by clicking Add Component, and searching “box collider.” The default added box collider is still too thin, so click the Edit Collider button to edit. When it’s pressed in, you can adjust the size using the x, y and z values or the elements in the scene editor. For our example, we want to extend the box collider a little behind the quad. In the scene editor, drag the box collider from the back, outwards (see the image below). This lets the user not only use their finger, but their entire hand to scroll. 
+5. Right click the mesh collider that’s on the quad from the Inspector panel. Then remove it by clicking Remove Component.
+    ![Lesson5 Chapter2 Step5im](images/Lesson5_chapter2_step5im.PNG)
+6. Now add the box collider by clicking Add Component, and searching “box collider” The default added box collider is still too thin, so click the Edit Collider button to edit. When it’s pressed in, you can adjust the size using the x, y and z values or the elements in the scene editor. For our example, we want to extend the box collider a little behind the quad. In the scene editor, drag the box collider from the back, outwards (see the image below). This lets the user not only use their finger, but their entire hand to scroll. 
     ![Lesson5 Chapter2 Step6im](images/Lesson5_chapter2_step6im.PNG)
 7. Make it interactive. Since we want to interact with the quad directly, we want to use the Near Interaction Touchable component that we used this in Lesson 4 for playing music from the Octa object. Click Add Component, and search for “near interaction touchable” and select it as shown in the images below. 
 
-8. Add the ability to recognize the pan gesture. Click Add Component, and type “hand interaction pan.” You will have a choice between hand ray (allowing you to pan from a distance) and index finger. For this example, leave it at index finger. 
+8. Add the ability to recognize the pan gesture. Click Add Component, and type “hand interaction pan” You will have a choice between hand ray (allowing you to pan from a distance) and index finger. For this example, leave it at index finger. 
     ![Lesson5 Chapter2 Step7 8Im](images/Lesson5_chapter2_step7-8im.PNG)
 
 ![Lesson5 Chapter2 Step8im](images/Lesson5_chapter2_step8im.PNG)
@@ -165,7 +165,7 @@ To use the pan gesture, you will need a collider on your object. You may see the
 
 In this section, we will explore how to enable eye tracking in our demo. We will slowly spin our 3D menu items when they are being gazed upon with your eye gaze. We will also trigger a fun effect when the gazed-upon item is selected.
 
-1. Ensure the MRTK profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the "Setting up the MRTK profiles required for Eye Tracking” section as outlined in the [Mixed Reality Toolkit Documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (the component attached to camera), and enabling the simulation of eye tracking in the Unity editor. Note that future versions of the MRTK might include eye tracking by default.
+1. Ensure the MRTK profiles are properly configured. As of this writing, the mixed reality toolkit profile configuration does not include eye tracking capabilities by default. To add eye tracking capabilities, follow the instructions in the "Setting up the MRTK profiles required for Eye Tracking" section as outlined in the [Mixed Reality Toolkit Documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-the-mrtk-profiles-required-for-eye-tracking  ). Ensure that eye tracking is properly configured by following any remaining steps in the documentation link above, including enabling eye tracking in GazeProvider (the component attached to camera), and enabling the simulation of eye tracking in the Unity editor. Note that future versions of the MRTK might include eye tracking by default.
 
     The link above provides brief instructions for:
 
@@ -174,13 +174,13 @@ In this section, we will explore how to enable eye tracking in our demo. We will
     - Setting up an eye tracking simulation in the editor
     - Editing the Visual Studio solution's capabilities to allow eye tracking in the built application
 
-2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we'l need to add the EyeTrackingTarget component on each object that we want to interact with by using eye gaze. Add this component to each of the nine 3D objects that are part of the grid collection. Tip: Select multiple items in the hierarchy to bulk-add the EyeTrackingTarget component.
+2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we'll need to add the EyeTrackingTarget component on each object that we want to interact with by using eye gaze. Add this component to each of the nine 3D objects that are part of the grid collection. Tip: Select multiple items in the hierarchy to bulk-add the EyeTrackingTarget component.
     ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
 
 3. Next we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series repository. It is not included by default with the Mixed Reality Toolkit. For each 3D object in the grid collection, add the EyeTrackingTutorialDemo script by searching for the component in the Add Component menu.
    ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
 
-   4. Spin the object while looking at the target. We want to configure our 3D object to spin while we are looking at it. To do this, insert a new field in the While Looking At Target section of the EyeTrackingTarget component as shown in the image below. 
+4. Spin the object while looking at the target. We want to configure our 3D object to spin while we are looking at it. To do this, insert a new field in the While Looking At Target() section of the EyeTrackingTarget component as shown in the image below. 
 
 ![Lesson5 Chapter3 Step4a](images/Lesson5Chapter3Step4a.JPG)
 ![Lesson5 Chapter3 Step4b](images/Lesson5Chapter3Step4b.JPG)
@@ -189,7 +189,7 @@ In this section, we will explore how to enable eye tracking in our demo. We will
 
 In newly created field, add the current Game Object to the empty field, and select EyeTrackingTutorialDemo>RotateTarget() as shown in the image below. Now the 3D object is configured to spin when it is being gazed upon with eye tracking. 
 
-5. Add in the ability to “blip target” that is being gazed at upon select by air-tap or saying “select”. Similar to Step 4, we want to trigger EyeTrackingTutorialDemo>BlipTarget() by assigning it to the game object’s Select() field of the EyeTrackingTarget component as shown in the figure below. With this now configured, you will notice a slight blip in the game object whenever you trigger a select action, such as air-tap or the voice command “select.” 
+5. Add in the ability to “blip target” that is being gazed at upon select by air-tap or saying “select”. Similar to Step 4, we want to trigger EyeTrackingTutorialDemo>BlipTarget() by assigning it to the game object’s Select() field of the EyeTrackingTarget component as shown in the figure below. With this now configured, you will notice a slight blip in the game object whenever you trigger a select action, such as air-tap or the voice command “select”. 
     ![Lesson5 Chapter3 Step5](images/Lesson5Chapter3Step5.JPG)
 6. Ensure eye tracking capabilities are properly configured before building to HoloLens 2. As of this writing, Unity does not yet have the ability to set the gaze input for eye tracking capabilities. Setting this capability is required for eye tracking to work in HoloLens 2. Follow these instructions on the mixed reality toolkit documentation to enable the gaze input capability: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#testing-your-unity-app-on-a-hololens-2 
 
