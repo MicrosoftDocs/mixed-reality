@@ -27,9 +27,9 @@ Before beginning, download and import the following assets:
 
 [MR Base module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2)
 
-[ASA module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2)
+[ASA module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/ASA_1.1)
 
-[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)
+[Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/)
 
 > Note: See Step 5 for specific instructions on how to import Azure Spatial Anchors, Step 6 for specific instructions on the MR Base module Asset Pack, and steps 3 through 4 for specific instructions on the Mixed Reality Toolkit (MRKT).
 
@@ -66,7 +66,7 @@ A pop-up appears, providingg a list of tools and settings, and asking you what t
 
 > Note: Be patient, it will take a few minutes to import. 
 
-6. Import [MR Base module Asset Pack](https://github.com/microsoft/mixedrealitylearning/releases/tag/v1.1) next. Much like Step 5, click the link above. Then right click BasemoduleAssetsV1 1.unitypackag, and click Save Target As, and save it to your computer.
+6. Import [MR Base module Asset Pack]https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2) next. Much like Step 5, click the link above. Then right click BasemoduleAssetsV1 1.unitypackag, and click Save Target As, and save it to your computer.
 
 ![module2chapter1step6aim](images/module2chapter1step6aim.PNG)
 
@@ -78,7 +78,7 @@ Just like Step 5, go back in to Unity, click Assets, and hover over Import Packa
 
 > Note: There might be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
 
-7. Import the [ASA module pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2) using the same approach as importing the previous packages.
+7. Import the [ASA module pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/ASA_1.1) using the same approach as importing the previous packages.
 
 ### Configuring your scene
 
