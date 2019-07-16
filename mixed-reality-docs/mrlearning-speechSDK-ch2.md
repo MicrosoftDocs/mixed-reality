@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-## 2.	Adding an offline mode for local speech-to-text translation
+# 2.	Adding an offline mode for local speech-to-text translation
 
 In this tutorial, we'll add an offline mode that lets you perform local speech-to-text translation when we are unable to connect to the Azure service. We will also *simulate* a disconnected state.
 
@@ -23,7 +23,8 @@ In this tutorial, we'll add an offline mode that lets you perform local speech-t
 
 3. Now, press play in Unity Editor, and test it. Press the microphone in the bottom left hand corner in the scene, and begin speaking. 
 
-> Note: because we’re offline, wake word functionality has been disabled. You'll have to physically click the microphone every time you wish to have your speech recognized when offline. 
+> [!NOTE]
+> Because we’re offline, wake word functionality has been disabled. You'll have to physically click the microphone every time you wish to have your speech recognized when offline. 
 
 Below is an example of what your scene could look like.
 
@@ -34,5 +35,5 @@ Below is an example of what your scene could look like.
 The offline mode has been enabled. Now, when you're offline, you can still work on your project with the speech-SDK! 
 
 
-[Next Tutorial: 3.	Adding the Azure Cognition Services speech translation component](mrlearning-speechSDK-ch3.md)
+[Next Tutorial: 3.	Adding the Azure Cognitive Services speech translation component](mrlearning-speechSDK-ch3.md)
 
