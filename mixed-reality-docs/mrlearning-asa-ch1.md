@@ -78,7 +78,11 @@ Just like Step 5, go back in to Unity, click Assets, and hover over Import Packa
 
 > Note: There might be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
 
+<<<<<<< Updated upstream
 7. Import the [ASA module pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/ASA_1.1) using the same approach as importing the previous packages.
+=======
+7. Import the ASA module ack using the same approach as importing the previous packages.
+>>>>>>> Stashed changes
 
 ### Configuring your scene
 
@@ -154,7 +158,10 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
    
 10. Follow the instructions. 
 When the application is running on your device, follow the on-screen instructions. Press the Scene buttons corresponding to the Steps below.
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
 
 ![module2chapter1step10eim](images/module2chapter1step10eim.PNG)
     
@@ -167,13 +174,14 @@ When the application is running on your device, follow the on-screen instruction
     4. Stop the Azure spatial anchors session.
     
     5. Remove the local anchor on the cube to allow the user to move the cube.
+    
     6. Move the cube somewhere else.
     
     7. Start Azure spatial anchors session.
     
     8. Find Azure Spatial Anchors. 
+    You should go back to the original place you put it when you created the anchor.
     
-    e You should go back to the original place you put it when you created the anchor.
     9. Delete Azure spatial anchor.
     
     10. Stop Azure session.
