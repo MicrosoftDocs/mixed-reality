@@ -96,7 +96,7 @@ In this section, we will add prefabs and scripts into the scene to create a seri
 
 Familiarize yourself with the ParentAnchor prefab. Currently, the game object named, ParentAnchor, is a colored cube for demonstration purposes. Eventually, we',ll hide the cube and place our content as a child of the ParentAnchor. This prefab includes the AzureSpatialAnchorsDemoWrapper.cs script (included with the ASA SDK), and the ASAmoduleScript.cs script, included as part of this module to the ParentAnchor object. 
 
-11. Configure buttons. Under the ParentAnchor prefab, notice several labeled buttons. These buttons are created from the MRTK's PressableButton prefabs. Learn more about how to create Pressable Buttons from the [Base module](mrlearning-base-ch2.md). For each button, add an event that will be triggered when the user presses or selects the button according to the list below. 
+11. Configure buttons. Under the ButtonParent prefab, notice several labeled buttons. These buttons are created from the MRTK's PressableButton prefabs. Learn more about how to create Pressable Buttons from the [Base module](mrlearning-base-ch2.md). For each button, add an event that will be triggered when the user presses or selects the button according to the list below. 
 
 - For the Button named, StartAzureSession, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the StartAzureSession() method from the ParentAnchor object's ASAmoduleScript component.
 

@@ -26,6 +26,7 @@ Objectives:
 
 1. Set up a [Photon](https://dashboard.photonengine.com/en-US/Account/SignUp) account. Navigate to the Photon Sign-up page by clicking on [this link](https://dashboard.photonengine.com/en-US/Account/SignUp). Follow the instructions on the sign-up page to create the account. 
    
+
 ![Module3Chapter1step1im](images/module3chapter1step1im.PNG)
 
 ![Module3Chapter1step6im](images/module3chapter1step6im.PNG)
@@ -38,13 +39,13 @@ Objectives:
 
 ![Module3Chapter1step7bim](images/module3chapter1step7bim.PNG)
 
-4. Once that is done, return to your applications page and you should see something similar to the picture below. Click on the application ID and copy it. Paste is somewhere you can easily access.  
+4. Once that is done, return to your applications page and you should see something similar to the picture below. Click on the application ID and copy it. Paste it somewhere you can easily access.  
 
 ![Module3Chapter1step8im](images/module3chapter1step8im.PNG)
 
 5. Create a new unity project and name it HLSharingProject. For instructions on how to create a new Unity project, please refer to [the Base Module's "Create Unity Project" section](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1#create-new-unity-project). 
 
-6. Once the project loads, click on the Assets Store tab, as shown in the image below. Then, in the search box highlighted in the image below, type in PUN, and select the Photon PUN 2 - FRE" asset from the search results. 
+6. Once the project loads, click on the Assets Store tab, as shown in the image below. Then, in the search box highlighted in the image below, type in PUN, and select the Photon PUN 2 - FREE" asset from the search results. 
 
 ![Module3Chapter1step10im](images/module3chapter1step10im.PNG)
 
@@ -55,7 +56,7 @@ Objectives:
 8. Once Photon has completed the importing process, the Pun Wizard appears. Take the application ID (which should be in your clipboard) from step 4, and paste it into the AppID box, and press the Setup Project button. 
 ![module3chapter1step12im](images/module3chapter1step12im.PNG)
 
-9. After successfully adding the AppID, navigate to Photon->PhotonUnityNetworking ->Resources->PhotonServerSettings in Assets. Select the Use Name Server option, and set the fixed region to US or yourPphoton service region.
+9. After successfully adding the AppID, navigate to Photon->PhotonUnityNetworking ->Resources->PhotonServerSettings in Assets. Select the Use Name Server option, and set the fixed region to US or your photon service region.
 
 ![module3chapter1step13im](images/module3chapter1step13im.PNG)
 

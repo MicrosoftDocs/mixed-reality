@@ -1,11 +1,11 @@
 ### Getting Unity ready for development 
 
 
-In this tutorial, we learn how to prepare and configure Unity for applicaiton development, including importing the Mixed Reality Toolkit, configuring build settings, and preparing our scene.
+In this tutorial, we learn how to prepare and configure Unity for application development, including importing the Mixed Reality Toolkit, configuring build settings, and preparing our scene.
 
 Objectives:
 
-- Configure Unity for applicaiton development
+- Configure Unity for application development
 
 - Import the Mixed Reality Toolkit
 
@@ -25,7 +25,7 @@ Objectives:
 
 > Note: The downloaded package is in your local folder where you have saved the file. The image above does not portray where you will find the package.
 
-4. Create a new scene. Tthis can be done by clicking File, and selecting New Scene"). Save the scene as HLSharedProjectMain.
+4. Create a new scene. This can be done by clicking File, and selecting New Scene"). Save the scene as HLSharedProjectMain.
 
 > Note: you may receive a pop-up that looks similar to the image below. For now, click No.
 >
@@ -43,7 +43,7 @@ Objectives:
 
 ![Module3Chapter2step6imc](images/module3chapter2step6imc.PNG)
 
-7. Scroll down and uncheck Enable Siagnostics system if you want to hide the diagnostics window. We recommend keeping the diagnostics window enabled during applicaiton development to monitor performance, and disabling it during production or application demonstrations. 
+7. Scroll down and uncheck Enable Diagnostics system if you want to hide the diagnostics window. We recommend keeping the diagnostics window enabled during application development to monitor performance, and disabling it during production or application demonstrations. 
 
 ![Module3Chapter2step7ima](images/module3chapter2step7ima.PNG)
 
@@ -59,11 +59,11 @@ Objectives:
 
 ![Module3Chapter2step9imb](images/module3chapter2step9imb.PNG)
 
-11. Import the custom package called SharingAssetCollection which can be downloaded [here.](https://github.com/microsoft/MixedRealityLearning/releases/download/Sharing_2/SharingAssetCollection.unitypackage)
+11. Import the custom package called SharingAssetCollection which can be downloaded [here.](https://github.com/microsoft/MixedRealityLearning/releases/tag/development)
 
 ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
 
-12. In the Project panel, go to the Prefabs folder. In next few steps you implement a few prefabs into the scene. In the Prefabs folder, click and drag the prefab, DebugWindow into the hierarchy. Once finished, save the project by clckin File, then Save or press Control+S.
+12. In the Project panel, go to the Prefabs folder. In next few steps you implement a few prefabs into the scene. In the Prefabs folder, click and drag the prefab, Debug Window into the hierarchy. Once finished, save the project by clicking File, then Save or press Control+S.
 
 ![Module3Chapter2step12im](images/module3chapter2step12im.PNG)
 

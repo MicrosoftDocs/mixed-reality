@@ -16,8 +16,8 @@ Before proceeding with this lesson, we'll need to complete the ASA learning modu
 
 Objectives:
 
-- Integrate ASA into a shared experience for multi-device alignment
-- Learn the fundamentals of how ASA works in the context of a local shared experience
+- Integrate ASA into a shared experience for multi-device alignment.
+- Learn the fundamentals of how ASA works in the context of a local shared experience.
 
 ### Instructions
 
@@ -27,7 +27,7 @@ Objectives:
 
 ![Module3Chapter5tep2im](images/module3chapter5step2im.PNG)
 
-3.  In the Project view go to Assets->Resources->Prefabs, and drag the TableAnchor prefab on top of the SharedPlayground object to make it a child.
+3.  In the Project view, go to Assets->Resources->Prefabs, and drag the TableAnchor prefab on top of the SharedPlayground object to make it a child.
 4.  Expand the MixedRealityPlayspace parent object, TableAnchor object, and expand the Buttons object as well. 
 
 ![Module3hapter5step5im](images/module3chapter5step5im.PNG)

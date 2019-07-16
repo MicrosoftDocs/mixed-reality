@@ -52,19 +52,6 @@ Objectives:
 
    Note: If you click on one of the prefab objects and release, the inspector will switch to that object. Click, drag, drop, and release each object to its appropriate slot.
 
-![module3chapter4updatestep5b](images/module3chapter4updatestep5b.png)
-
-6. In the Hierarchy view, select the NetworkRoom object.
-
-![module3chapter4updatestep6](images/module3chapter4updatestep6.png)
-
-7. In the project view, navigate to Assets > Resources > Prefabs. First, drag and drop the Table prefab to the "Tableprefab" slot on the PhotonRoom class. Next drag and drop the LunarModule prefab to the "Module Prefab" slot on the PhotonRoom class. 
-
-![module3chapter4updatestep7](images/module3chapter4updatestep7.png)
-
-Note: If you click on one of the prefab objects and release, the inspector will switch to that object. Click, drag, drop and release each object to its appropriate slot.
-
-
 8. Click the arrow to the left of MixedRealityPlayspace, and move the child game object, MainCamera down into the SharedPlayground prefab. Next, delete the prefab, MixedRealityPlayspace, to delete, select the prefab, and tap "delete" on your keyboard).
 ![Module3hapter4step5im](images/module3chapter4step5im.PNG)
 
@@ -85,14 +72,14 @@ Note: If you click on one of the prefab objects and release, the inspector will 
 
 ![Module3Chapter4step8im](images/module3chapter4step8im.PNG)
 
-12. Finally, in the DebugWindow object, change the width to 80 and the height to 10.
+12. Finally, in the DebugWindow object, change the width to 50 and the height to 20.
 
 ![Module3Chapter4step9im](images/module3chapter4step11im.PNG)
 
 ## Congratulations
 
 
-Once this is complete, all users that join your Unity project can move the lunar launcher around. All movements are synchronized so that each user can see each others' interactions. These concepts serve as the foundational building blocks for full-featured, shared collaboration experiences. 
+Once this is complete, all users that join your Unity project can move the lunar launcher around. All movements are synchronized so that each user can see each others' interactions. These concepts serve as the fundamental building blocks for full-featured, shared collaboration experiences. 
 
 Although all users are connected as part of a shared experience, and can see the relative movements of objects, the application is still unable to accurately align avatars and objects so that local users see each other and objects in the same place within the physical world. In order to anchor a local shared experiences, every device requires a common understanding of the physical environment. In this module, we'll achieve this by using [Azure Spatial Anchors](<https://azure.microsoft.com/en-us/services/spatial-anchors/>) (ASA) that will be implemented in the next lesson.
 
