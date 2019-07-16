@@ -40,6 +40,12 @@ Objectives:
 
 ![Module3hapter5step7im](images/module3chapter5step7im.PNG)
 
+6. To test the sharing module, click on the "Start Azure ASA Session" button which will start the azure spatial anchors session and then create the azure anchor by clicking the "Create Azure Anchor" button and wait for sometime for the azure anchor to get created. Once the azure anchor is created then click on the "Share Azure Anchor" button to share the created azure anchor from the HoloLens.
+
+7. To recieve the shared azure anchor in another HoloLens, click on the "Start Azure ASA Session" to start and get in to the current ASA session and click on "Get Azure Anchor" button to get the shared azure anchor from the other HoloLens.
+
+   > Note: All details of the corresponding actions on the individual buttons will be displayed in the debug window.
+
 ## Congratulations
 
 In this Lesson you learned how to integrate Azure's powerful new Spatial Anchors to align co-located devices in a shared experience! This lesson also concludes the Sharing Module. We learned how to set up a new Photon account, integrate Photon and PUN into a new Unity application, configuring avatars and shared objects, and finally aligning multiple participants using ASA. 
