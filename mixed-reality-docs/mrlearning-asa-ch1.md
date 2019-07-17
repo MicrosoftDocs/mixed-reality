@@ -78,11 +78,7 @@ Just like Step 5, go back in to Unity, click Assets, and hover over Import Packa
 
 > Note: There might be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
 
-<<<<<<< Updated upstream
 7. Import the [ASA module pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/ASA_1.1) using the same approach as importing the previous packages.
-=======
-7. Import the ASA module ack using the same approach as importing the previous packages.
->>>>>>> Stashed changes
 
 ### Configuring your scene
 
