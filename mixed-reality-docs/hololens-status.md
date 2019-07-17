@@ -1,6 +1,6 @@
 ---
-title: Hololens Outage Notification
-description: Shows the status of Hololens online status. 
+title: HoloLens Status
+description: Shows the status of HoloLens online status. 
 author: todmccoy
 ms.author: v-todmc
 ms.reviewer: 
@@ -12,34 +12,22 @@ localization_priority: Medium
 ms.sitesec: library
 ---
 
-# Hololens Outage Notification Page
+# HoloLens Status
 
-## Service status
+✔️ **All services are active**
 
-<details>
-<summary>Service status</summary>
+**Key** ✔️ Good, ⓘ Information, ⚠ Warning, ❌ Critical 
 
-![Yes](images/checkmark.png) Services are operating normally
+Area|HoloLens (1st gen)|HoloLens 2
+----|:----:|:----:
+[Azure services](https://status.azure.com/en-us/status)|✔️|✔️
+[Store app](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens)|✔️|✔️
+[Apps](https://www.microsoft.com/en-us/hololens/apps)|✔️|✔️
+[MDM](https://docs.microsoft.com/en-us/hololens/hololens-enroll-mdm)|✔️|✔️
 
-</details>
 
-![Normal](images/checkmark.png) Normal
 
-Area|HoloLens (1st gen)|HoloLens 2:
----|---|---
-Azure services|Yes|Yes
-Store app|Yes|Yes
-Apps|Yes|Yes
-MDM|Yes|Yes
-
-<details>
-<summary>Notes</summary>
-
-(Notes go here)
-
-</details>
-
-## Related topics
+## Notes and related topics
 
 [Frequently asked questions about using Skype for HoloLens](https://support.skype.com/en/faq/FA34641/frequently-asked-questions-about-using-skype-for-hololens)
 

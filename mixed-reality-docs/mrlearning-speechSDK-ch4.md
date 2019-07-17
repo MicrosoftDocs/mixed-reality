@@ -28,7 +28,6 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
 ![Module4Chapter4step1cim](images/module4chapter4step1cim.PNG)
 
-> Note: For information on how to do this on a Mac/Macbook, click [here](linkgoeshere).
 
 2. Log in to the [Azure Portal](https://portal.azure.com/). Once you are logged in, click on Create a resource, and search for "Language Understanding," and click enter.
 
@@ -42,7 +41,7 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
 4. Select your Region.  For the purpose of this tutorial, select "(US) West US." Then choose "F0" for the pricing tier. Now click "create" (located in the bottom left corner) to create the resource.
 
-   >  Note: once you have clicked on "create," you will have to wait for the service to be created, this might take a minute.
+>  Note: once you have clicked on "create," you will have to wait for the service to be created, this might take a minute.
 
 5. A notification will appear in the portal once the Resource is created. Click on this notification and select "Go to resource."
 
@@ -86,7 +85,7 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
 14. Click on the "View options" dropdown on the right and select "show entity values." 
 
-    ![Module4Chapter4step14aim](images/module4chapter4step14aim.PNG)Click on the “Enter an example…” textbox. Then, enter the following utterances: 
+![Module4Chapter4step14aim](images/module4chapter4step14aim.PNG)Click on the “Enter an example…” textbox. Then, enter the following utterances: 
 
 ![Module4Chapter4step14bim](images/module4chapter4step14bim.PNG)
 

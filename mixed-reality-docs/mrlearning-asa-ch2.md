@@ -18,27 +18,26 @@ In this tutorial, we will learn how to save our Azure Spatial Anchors across mul
 
 * Learn how to share Azure Spatial Anchor information between users in a multi-device scenario
 
-  
-
 ## Instructions
 
 ### Persist Azure Anchors Between App Sessions - Save Anchor ID to Disk
 
 1. Search for and add the SaveAnchorToDisk prefab to your scene. These include two buttons, one button for saving any available Azure Anchor IDs to the HoloLens 2 disk, and another for retrieving any IDs from the disk.
 
-   ![module2chapter2step1im](images/module2chapter2step1im.PNG)
+![module2chapter2step1im](images/module2chapter2step1im.PNG)
 
 2. Configure Each button according to the instructions below
+
    - For the Button named SaveToDisk, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the SaveAzureAnchorIDToDisk() method from the ParentAnchor Object's ASAmoduleScript component.
    
      > Note: some of the buttons may appear overlapping the other buttons in the scene. Feel free to adjust the button's positioning.
-   
 
-  ![module2chapter2step2aim](images/module2chapter2step2aim.PNG)
+![module2chapter2step2aim](images/module2chapter2step2aim.PNG)
 
 ![module2chapter2step2aim](images/module2chapter2step2bim.PNG)
 
 ![module2chapter2step2aim](images/module2chapter2step2cim.PNG)
+
 
    - For the Button named GetFromDisk, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the LoadAzureAnchorIDsFromDisk() method from the ParentAnchor Object's ASAmoduleScript component.
 
@@ -52,17 +51,15 @@ In this section, we'll learn how to share the Azure Anchor ID between multiple d
 
 1. Add the ShareAnchor prefab into your hierarchy. This prefab adds two new buttons to your scene; one for uploading anchor ID information and another for downloading anchor ID information. 
 
-   ![module2chapter2step5im](images/module2chapter2step5im.PNG)
+![module2chapter2step5im](images/module2chapter2step5im.PNG)
 
 2. Configure Each button according to the instructions below
 
    - For the Button named, SendSharedAnchor, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the ShareAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
 
-     ![module2chapter2step6aim](images/module2chapter2step6aim.PNG)
+![module2chapter2step6aim](images/module2chapter2step6aim.PNG)
 
-     ![module2chapter2step6bim](images/module2chapter2step6bim.PNG)
-
-     
+![module2chapter2step6bim](images/module2chapter2step6bim.PNG)
 
    - For the Button named, GetSharedAnchor, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the GetSharedAzureAnchor() method from the ParentAnchor object's ASAmoduleScript component.
 
