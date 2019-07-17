@@ -16,8 +16,8 @@ Before proceeding with this lesson, we'll need to complete the ASA learning modu
 
 Objectives:
 
-- Integrate ASA into a shared experience for multi-device alignment
-- Learn the fundamentals of how ASA works in the context of a local shared experience
+- Integrate ASA into a shared experience for multi-device alignment.
+- Learn the fundamentals of how ASA works in the context of a local shared experience.
 
 ### Instructions
 
@@ -27,10 +27,8 @@ Objectives:
 
 ![Module3Chapter5tep2im](images/module3chapter5step2im.PNG)
 
-
-
-3.  In the Project view go to Assets->Resources->Prefabs, and drag the TableAnchor prefab on top of the SharedPlayground object to make it a child.
-4. ​	Expand the MixedRealityPlayspace parent object, TableAnchor object, and expand the Buttons object as well. 
+3.  In the Project view, go to Assets->Resources->Prefabs, and drag the TableAnchor prefab on top of the SharedPlayground object to make it a child.
+4.  Expand the MixedRealityPlayspace parent object, TableAnchor object, and expand the Buttons object as well. 
 
 ![Module3hapter5step5im](images/module3chapter5step5im.PNG)
 
@@ -42,8 +40,11 @@ Objectives:
 
 ![Module3hapter5step7im](images/module3chapter5step7im.PNG)
 
+6. To test the sharing module, click on the "Start Azure ASA Session" button which will start the azure spatial anchors session and then create the azure anchor by clicking the "Create Azure Anchor" button and wait for sometime for the azure anchor to get created. Once the azure anchor is created then click on the "Share Azure Anchor" button to share the created azure anchor from the HoloLens.
 
+7. To recieve the shared azure anchor in another HoloLens, click on the "Start Azure ASA Session" to start and get in to the current ASA session and click on "Get Azure Anchor" button to get the shared azure anchor from the other HoloLens.
 
+   > Note: All details of the corresponding actions on the individual buttons will be displayed in the debug window.
 
 ## Congratulations
 

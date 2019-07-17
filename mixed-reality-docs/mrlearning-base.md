@@ -41,3 +41,5 @@ keywords: mixed reality, unity, tutorial, hololens
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability.
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode).
+
+[Next Lesson: Initializing your project and first application](mrlearning-base-ch1.md)
