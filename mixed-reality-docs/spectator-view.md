@@ -15,7 +15,7 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 ## Overview
 
 When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator View allows others to see on a 2D screen what a HoloLens user sees in their world.
-Spectator View offers a fast and affordable approach to recording holograms in HD with mobile devices. It also offers a professional quality recording of holograms with DSLR cameras.
+Spectator View offers a fast and affordable approach to recording holograms in HD with mobile devices. It also offers a professional quality recording of holograms with video cameras.
 
 ## Key Resources
 
@@ -23,7 +23,7 @@ Spectator View offers a fast and affordable approach to recording holograms in H
 * [**Architecture**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Architecture.md)
 * [**Samples**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 * [**Mobile Setup Instructions**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md)
-* [**DSLR Setup Instructions**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.DSLR.md)
+* [**Video Camera Setup Instructions**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.VideoCamera.md)
 
 ## Use Cases
 * You can record a mixed reality experience using an iPhone or Android device. Record in full HD and apply anti-aliasing to holograms and even shadows. It is a cost-effective and quick way to capture video of holograms.
@@ -43,15 +43,15 @@ Share sheet so you can save video, email it, or share with other supporting apps
 
 The following table shows different Spectator View functionality and their capabilities. Choose the option that best fits your video recording needs:
 
-|                                      | Mobile                  |                    DSLR Camera              |
+|                                      | Mobile                  |                    Video Camera              |
 |--------------------------------------|:-----------------------:|:-------------------------------------------:|
-| HD quality                           |         Full HD         |        Professional quality filming (as determined by DSLR)      |
+| HD quality                           |         Full HD         |        Professional quality filming (as determined by video camera)      |
 | Easy camera movement                 |            ✔            |                      ✔                      |
 | Third-person view                    |            ✔            |                      ✔                      |
 | Can be streamed to screens           |            ✔            |                      ✔                      |
 | Portable                             |            ✔            |                                             |
 | Wireless                             |            ✔            |                                             |
-| Additional required hardware         |     Android phone, iPhone    | HoloLens + Rig + Tripod + DSLR + PC + Unity |
+| Additional required hardware         |     Android phone, iPhone    | HoloLens + Rig + Tripod + Video Camera + PC + Unity |
 | Hardware investment                  |           Low            |                     High                    |
 | Cross-platform                       |           Android, iOS   |                                             |
 | Synchronized content                 |            ✔            |                      ✔                      |
