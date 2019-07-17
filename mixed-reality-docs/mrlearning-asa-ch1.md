@@ -154,10 +154,6 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
    
 10. Follow the instructions. 
 When the application is running on your device, follow the on-screen instructions. Press the Scene buttons corresponding to the Steps below.
-<<<<<<< Updated upstream
-    
-=======
->>>>>>> Stashed changes
 
 ![module2chapter1step10eim](images/module2chapter1step10eim.PNG)
     
