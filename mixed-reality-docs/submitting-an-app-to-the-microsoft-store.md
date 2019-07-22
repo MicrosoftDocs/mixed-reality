@@ -50,7 +50,7 @@ If your mixed reality app includes features that are specific to a certain versi
 
 You will be prompted to set target and minimum version of Windows when you create a new Universal Windows Project in Visual Studio. You can also change this setting for an existing project in the "Project" menu, then "<Your app name's> Properties" at the bottom of the drop-down menu.
 
-![Set minimum and target platform versions in Visual Studio 2017](images/visual-studio-min-version-500px.png)<br>
+![Set minimum and target platform versions in Visual Studio 2019](images/visual-studio-min-version-500px.png)<br>
 Set minimum and target platform versions in Visual Studio
 
 ### Specifying target device families
