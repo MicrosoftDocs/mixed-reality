@@ -78,11 +78,5 @@ While MRTK is a great entry point to Scene Understanding, the range of scenarios
 
 ### See Also
 
-* [Scene Understanding in MRTK](http://aka.ms/MRTK)
 * [Scene Understanding SDK](scene-understanding-SDK.md)
-* [Scene Understanding API reference](..\DocProject\help\index.html)
-* [Scene Understanding Reference Sample For Unity *TODO*](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SceneUnderstanding)
-* [Scene Understanding Mesh Sample In DirectX *TODO*](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SceneUnderstandingMeshDX)
-* [Scene Understanding Flat App, Floor Plan Generator Sample *TODO*](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SceneUnderstandingFloorPlanGenerator)
-* [Scene Understanding Placement Sample For Unity](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SceneUnderstandingPlacement)
 * [Spatial mapping](spatial-mapping.md)
