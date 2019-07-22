@@ -5,7 +5,6 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-ms.localizationpriority: high
 keywords: Mixed Reality, gaze, gaze targeting, interaction, design
 ---
 # Head-gaze and commit

@@ -5,7 +5,6 @@ author: shentan
 ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
-ms.localizationpriority: high
 keywords: Windows Mixed Reality, design, interaction, voice
 ---
 
