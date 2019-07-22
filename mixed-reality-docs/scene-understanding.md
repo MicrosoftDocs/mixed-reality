@@ -38,17 +38,17 @@ Many of the core scenarios for environment aware applications (Placement, Occlus
 
 ### Placement
 
-Scene Understanding provides new constructs specifically designed to simplify placement scenarios. A Scene can compute primtives called Quads which describe flat surfaces on which holograms can be placed. Quads have specifically been designed around placement and desribe a 2D surface, and provide an API for placement on that surface. Previously, when using the triangle mesh to perform placment, one had to scan all areas of the quad and perform hole filling/post-processing to identify good locations for object plaement. This is not always necessary with Quads, as the Scene Understanding runtime is capable of inferring which areas of the quad that were not scanned, and invalidate areas of the quad that are not part of the surface.
+Scene Understanding provides new constructs specifically designed to simplify placement scenarios. A Scene can compute primtives called SceneQuads which describe flat surfaces on which holograms can be placed. SceneQuads have specifically been designed around placement and desribe a 2D surface, and provide an API for placement on that surface. Previously, when using the triangle mesh to perform placment, one had to scan all areas of the quad and perform hole filling/post-processing to identify good locations for object plaement. This is not always necessary with Quads, as the Scene Understanding runtime is capable of inferring which areas of the quad that were not scanned, and invalidate areas of the quad that are not part of the surface.
 
-![Non-inferred Quads](images/SUQuads.png) 
-Quads with inference disabled, capturing placement areas for scanned regions.
+![SceneQuads](images/SUQuads.png) 
+SceneQuads with inference disabled, capturing placement areas for scanned regions.
 
-![Inferred Quads](images/SUWatertight.png) 
+![Inferred SceneQuads](images/SUWatertight.png) 
 Quads with inference enabled, placement is no longer limited to scanned areas.
 
-If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of Quads for placement is be preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene Understanding SDK reference](scene-understanding-SDK.md)
+If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is be preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene Understanding SDK reference](scene-understanding-SDK.md)
 
-**Note** For legacy code that depends on the surface mesh, the SceneProcessor is capable of generating the spatial mapping output along Quads, ensuring that any legacy requirements for placement can be maintained. If scene understanding mesh data does not satisfy your application's latency requirements, we recommend you continue to use the spatial mapping APIs documented here: [Spatial Mapping Placement](spatial-mapping.md#Placement)
+**Note** For legacy code that depends on the surface mesh, a Scene can be computed that contains spatial mapping output along with SceneQuads, ensuring that any legacy requirements for placement can be maintained. If scene understanding mesh data does not satisfy your application's latency requirements, we recommend you continue to use the spatial mapping APIs documented here: [Spatial Mapping Placement](spatial-mapping.md#Placement)
 
 ### Occlusion
 
@@ -62,7 +62,7 @@ Scene Understanding generates watertight meshes that decompose space with semant
 
 ### Navigation
 
-Planar meshes decomposed by semantic class are ideal constructs for navigation and path planning, easing many of the issues described in the [Spatial Mapping Navigation](spatial-mapping.md#Navigation) overview. The mesh objects computed in the Scene are already de-composed by surface type ensuring that nav-mesh generation is limited to surfaces that can be walked on. Due to the simplicity of the floor structure, dynamic nav-mesh generation in 3d engines such as Unity are attainable depending on real-time requirements.
+Planar meshes decomposed by semantic class are ideal constructs for navigation and path planning, easing many of the issues described in the [Spatial Mapping Navigation](spatial-mapping.md#Navigation) overview. The SceneMesh objects computed in the Scene are already de-composed by surface type ensuring that nav-mesh generation is limited to surfaces that can be walked on. Due to the simplicity of the floor structure, dynamic nav-mesh generation in 3d engines such as Unity are attainable depending on real-time requirements.
 
 Generating accurate nav-meshes currently still requires post-processing, namely applications must still project occluders on to the floor to ensure that navigation does not pass through clutter/tables etc... The most accurate way to accomplish this is to project the world mesh data which is provided if the Scene is computed with the EnableWorldMesh flag.
 
