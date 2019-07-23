@@ -33,26 +33,8 @@ To work with Scene Understanding it may be valuable to know and understand how t
 Below we present an example of a structure in both it's flat and logical form.
 
 <table>
-<tr><th>Physical Layout</th> <th>Logical Layout</th></tr>
+<tr><th>Logical Layout</th><th>Physical Layout</th></tr>
 <tr>
-
-<td>
-<ul>
-  <li>SceneObject_1</li>
-  <li>SceneObject_2</li>
-  <li>Quad_1</li>
-  <li>Quad_2</li>
-  <li>Quad_3</li>
-  <li>Mesh_1</li>
-  <li>Mesh_2</li>
-  <li>Transform_1</li>
-  <li>Transform_2</li>
-  <li>Transform_3</li>
-  <li>Transform_4</li>
-  <li>SpatialComponent_1</li>
-</ul>
-</td>
-
 <td>
 <ul>
   <li>SceneObject_1
@@ -90,11 +72,26 @@ Below we present an example of a structure in both it's flat and logical form.
   </li>
 </ul>
 </td>
-
+<td>
+<ul>
+  <li>SceneObject_1</li>
+  <li>SceneObject_2</li>
+  <li>Quad_1</li>
+  <li>Quad_2</li>
+  <li>Quad_3</li>
+  <li>Mesh_1</li>
+  <li>Mesh_2</li>
+  <li>Transform_1</li>
+  <li>Transform_2</li>
+  <li>Transform_3</li>
+  <li>Transform_4</li>
+  <li>SpatialComponent_1</li>
+</ul>
+</td>
 </tr>
 </table>
 
-This illustration highlights the difference between the physical and logical layout of the Scene. On the left we see that the scene is comprised of 12 distinct components, but on the right we see a hierarchical layout of the data that corresponds to two objects. Applications can walk the Scene Object hierarchy by first finding all Scene Objects, and then drilling down to child components, their transforms etc...
+This illustration highlights the difference between the physical and logical layout of the Scene. On the the right we see the hierarchical layout of the data that your application sees when enumerating the scene. On the left we see that the scene is actually comprised of 12 distinct components that are accessible individually if necessary. When processing a new scene, we expect applications to walk this hierarchy logically, however when tracking between scene updates, some applications may only be interested in targeting specific components that are shared between two scenes.
 
 ### High Level Overview
 
