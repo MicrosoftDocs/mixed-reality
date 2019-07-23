@@ -19,7 +19,7 @@ Whether you want to use DirectX or Unity to develop your mixed reality app, you 
 
 ## Prerequisites
 1. See [Install the Tools](install-the-tools.md) for installation instructions.
-2. Create a new Universal Windows app project in Visual Studio 2015 Update 1 or Visual Studio 2017. C#, C++, and JavaScript projects are all supported. (Or follow the instructions to [create an build an app in Unity](holograms-100.md).)
+2. Create a new Universal Windows app project in Visual Studio 2015 Update 1, Visual Studio 2017, or Visual Studio 2019. C#, C++, and JavaScript projects are all supported. (Or follow the instructions to [create an build an app in Unity](holograms-100.md).)
 
 ## Enabling Developer Mode
 

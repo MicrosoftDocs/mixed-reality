@@ -5,7 +5,6 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 05/02/2019
 ms.topic: article
-ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 

@@ -21,7 +21,7 @@ This guide is tailored to help developers who have an existing Unity application
 It is **highly recommended** that, before beginning the porting process, developers use source control to save a snapshot of the original state of their application. Additionally, it is recommended to *save* checkpoint states at various points during the process. It can also be very helpful to have another Unity instance of the original applicaiton to allow for side-by-side comparison during the porting process. 
 
 > [!NOTE]
-> Before porting, ensure you have the latest tools installed for Windows Mixed Reality development. For most existing HoloLens developers, this primarily involves updating to the latest version of Visual Studio 2017, and installing the appropriate Windows SDK. The content that follows dives further into different Unity versions and the Mixed Reality Toolkit (MRTK) Version 2.
+> Before porting, ensure you have the latest tools installed for Windows Mixed Reality development. For most existing HoloLens developers, this primarily involves updating to the latest version of Visual Studio 2019, and installing the appropriate Windows SDK. The content that follows dives further into different Unity versions and the Mixed Reality Toolkit (MRTK) Version 2.
 >
 > For more information, please see [Install the tools](install-the-tools.md).
 
@@ -118,7 +118,7 @@ Every application and scenario is different, and we’ll continue to refine and 
 
 ## Additional caveats and learnings about moving applications from x86 to ARM
 
-- Straight-forward Unity applications are simple because you can build an ARM application bundle or deploy directly to the device for the bundle to run. Some Unity native plugins can present certain development challenges. Because of this, you must upgrade all Unity native plugins to Visual Studio 2017, and then rebuilt for ARM with Unity 2019, ARM64.
+- Straight-forward Unity applications are simple because you can build an ARM application bundle or deploy directly to the device for the bundle to run. Some Unity native plugins can present certain development challenges. Because of this, you must upgrade all Unity native plugins to Visual Studio 2019, and then rebuilt for ARM with Unity 2019, ARM64.
 
 - One application used the Unity AudioKinetic Wwise plugin, and that version of Unity did not have a UWP ARM plugin, which caused a considerable effort to re-work sound capabilities into the applicaion in question to run on ARM. Ensure that all required plugins for you development plans are installed and available in Unity.
 

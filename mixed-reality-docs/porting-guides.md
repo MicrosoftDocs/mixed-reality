@@ -41,7 +41,7 @@ The Windows Mixed Reality platform is still under active development, and to be 
 4. Switch to the [Windows Insider Fast flights](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) through Settings --> Update & Security Section
 
 ### Common step 3: Upgrade to the most recent build of Visual Studio
-* Please see [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2017
+* Please see [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2019
 
 ### Common step 4: Be Ready for The Store
 * Use [Windows App Certification Kit](https://developer.microsoft.com/windows/develop/app-certification-kit) (aka WACK) early and often!
