@@ -97,9 +97,11 @@ This illustration highlights the difference between the physical and logical lay
 
 The following section provides a high level overview of the constructs in Scene Understanding. Reading this section you should have an understanding of how scenes are represented, and what the various components do/are used for. The next section will provide concrete code examples and additional details that are glossed over in this overview.
 
-#### Components
+#### SceneComponents
 
-Now that you have an understanding of the logical layout of scenes in the SceneProcessor it is important to understand Components and how they are used to compose hierarchy. Components represent any generic subset of a scene, and they have a single global property in that they have a unique Id. Ids are used for the logical composition of scene hierarchy as well as object persistence (the act of updating one scene relative to another.) If you are enumerating a scene, Ids are largely transparent to you, however if you are updating a scene relative to another one, you wil use Ids to "re-find" existing objects and determine which properties have changed.
+Now that you have an understanding of the logical layout of scenes it is important to understand SceneComponents and how they are used to compose hierarchy. SceneComponents are the most granular decompositions in SceneUnderstanding representing a single core thing, e.g. a mesh or a quad or a bounding box. SceneComponents are things that can update independently and can be referenced by other SceneComponents, hence they have a single global property a unique Id, that allow for this type of tracking/referencing mechanism. Ids are used for the logical composition of scene hierarchy as well as object persistence (the act of updating one scene relative to another.) 
+
+If you are treating every newly computed scene as being distinct, and simply enumerating all data within it then Ids are largely transparent to you. However if you are planning to track components over several updates you wil use the Ids to index and find SceneComponents between Scene objects.
 
 #### SceneObjects
 
