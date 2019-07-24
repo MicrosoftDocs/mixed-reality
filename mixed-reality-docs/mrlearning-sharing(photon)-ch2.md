@@ -1,4 +1,4 @@
-### Getting Unity ready for development 
+# 2. Getting Unity ready for development 
 
 
 In this tutorial, we learn how to prepare and configure Unity for application development, including importing the Mixed Reality Toolkit, configuring build settings, and preparing our scene.
@@ -76,5 +76,5 @@ Objectives:
 
 Your Unity Project is now ready for Photon. In the coming tutorials, we'll build upon this scene and our Unity project towards a full shared experience.
 
-[Next tutorial: Connecting multiple users](mrlearning-sharing(photon)-ch3.md)
+[Next tutorial: 3. Connecting multiple users](mrlearning-sharing(photon)-ch3.md)
 
