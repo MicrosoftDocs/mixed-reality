@@ -12,6 +12,8 @@ keywords: mixed reality, unity, tutorial, hololens
 
 In this tutorial, we'll add an offline mode that lets you perform local speech-to-text translation when we are unable to connect to the Azure service. We will also *simulate* a disconnected state.
 
+## Instructions
+
 1. Select the Lunarcom_Base object in the hierarchy, and click Add Component in the Inspector panel. Search for and select the Lunarcom Offline Recognition.
 
 ![Module4Chapter2step1im](images/module4chapter2step1im.PNG)
