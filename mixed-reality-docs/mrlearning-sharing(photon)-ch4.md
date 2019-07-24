@@ -46,7 +46,7 @@ Objectives:
 
 ![module3chapter4updatestep6](images/module3chapter4updatestep6.png)
 
-7. In the Project view, navigate to Assets->Resources->Prefabs. First, drag and drop the Table prefab to the Tableprefab slot on the PhotonRoom class. Next drag and drop the LunarModule prefab to the Module Prefab slot on the PhotonRoom class.
+7. In the Project view, navigate to Assets->Resources->Prefabs. First, drag and drop the Table prefab to the Tableprefab slot on the PhotonRoom class. Next drag and drop the RocketLauncherCompleteVariantprefab to the Module Prefab slot on the PhotonRoom class.
 
 ![module3chapter4updatestep7](images/module3chapter4updatestep7.png)
 
@@ -63,10 +63,6 @@ Objectives:
 10. With the new object selected in your hierarchy, change the name of the object to TableAnchor in the Inspector panel. Also, click Add Component, and search for the TableAnchor component. Select it and add it to the object. 
 
 ![Module3Chapter4step6im](images/module3chapter4step7im.PNG)
-
-> Note: Set the positioning to x=1, y=-0.55, and z=2. Also, set the rotation to y=90. 
->
-> ![Module3Chapter4step6im](images/module3chapter4noteim.PNG)
 
 11. Now from the Project panel in the Prefabs folder, drag the Table prefab into the "TableAnchor" child object you just created.
 
