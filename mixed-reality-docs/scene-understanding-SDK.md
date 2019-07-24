@@ -245,47 +245,29 @@ foreach (var mesh in firstFloor.Meshes)
 
 Notice that it is the SceneObject that has the transform that is relative to the Scene origin. This is because the SceneObject represents an instance of a "thing" and is locatable in space, the quads and meshes represent geometry that is transformed relative to their parent. It is possible for seperate SceneObjects to reference the same SceneMesh/SceneQuad SceneComponewnts, and it is also possible that a SceneObject has more than one SceneMesh/SceneQuad.
 
-### SpatialComponent
+### Dealing with Transforms
 
-Scene Understanding has made a deliberate attempt to simplify 3D transforms and spatial anchors. Each Scene is therefore confined to a single coordinate system much like most common 3D environmental representations. Naturally the Mixed Reality team crearted Anchors to solve for numerical instability and tracking error, and they can still be used, though it would be up to the developer to break up the scene and attatch objects to specific anchors manually. However, we believe that for many scenarios the advantages of having a singe coordinate system greatly outweight the percieved degredation in quality. 
-
-**Note** The Scene Understanding team is working on technologies to automatically adjust/align the scene rigidly as the user moves through the space. The goal of this effort is to keep developers in a single rigid coordinate system. As long as scenarios do not require full precision far away from the user's current location this model should be both robust and attractive from the application standpoint due to its simplicity. You should expect to see various samples that explore the various options/solutions to the single coordinate/larger space problem.
+Scene Understanding has made a deliberate attempt to align with traditional 3D scene representations when dealing with transforms. Each Scene is therefore confined to a single coordinate system much like most common 3D environmental representations. If your application is dealing with Scenes that stretch the limit of what a single origin provides it can anchor SceneObjects to SpatialAnchors, or generate several scenes and merge them together, but for simplicity we assume that watertight scenes exist in their own origin that's localized by one NodeId defined by Scene::OriginSpatialGraphNodeId.
 
 The following unity code, for example, shows how to use windows perception and Unity APIs to align coordinate systems together:
 
-**** TODO: UPDATE THIS ****
 
 ```cs
-    public System.Numerics.Matrix4x4? GetSceneObjectToUnityTransform(
-        SceneUnderstanding.SpatialCoordinateSystem sceneObjectSpatialCoordinateSystem, 
-        SceneUnderstanding.Transform sceneObjectToSpatialCoordinateSystemTransform)
+    public static System.Numerics.Matrix4x4? GetSceneToUnityTransform(Guid nodeId)
     {
-        // The output
-        System.Numerics.Matrix4x4? sceneObjectToUnityTransform;
-
-        // The coordinate ID referenced by the SpatialComponent
-        Guid spatialCoordinateGuid = sceneObjectSpatialCoordinateSystem.SpatialCoordinateGuid;
-
-        // Get the spatial coordinate from the Windows.Perception API
-        SpatialCoordinateSystem spatialCoordinateSystem = Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(spatialCoordinateGuid);
-
-        // Get the unity spatial coordinate system
+        System.Numerics.Matrix4x4? sceneToUnityTransform; 
+       
+        SpatialCoordinateSystem sceneSpatialCoordinateSystem = Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(nodeId);
         SpatialCoordinateSystem unitySpatialCoordinateSystem = (SpatialCoordinateSystem)System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(UnityEngine.XR.WSA.WorldManager.GetNativeISpatialCoordinateSystemPtr());
 
-        // Then, we need to get the transform between the two coordinate systems.
-        System.Numerics.Matrix4x4? scsToUnity = spatialCoordinateSystem.TryGetTransformTo(cachedUnitySpatialCoordinateSystem);
+        sceneToUnityTransform = sceneSpatialCoordinateSystem.TryGetTransformTo(unitySpatialCoordinateSystem);
 
-        // If transform between the two coordinate systems is null, we are pretty much done.
-        if (scsToUnity == null)
+        if (sceneToUnityTransform != null)
         {
-            return null;
+            sceneToUnityTransform = TransformUtils.ConvertRightHandedMatrix4x4ToLeftHanded(sceneToUnityTransform.Value);
         }
-
-        // This is the sceneObjectToUnity transform. 
-        sceneObjectToUnityTransform = sceneObjectToSpatialCoordinateSystemTransform.TransformationMatrix * scsToUnity.Value;
-        sceneObjectToUnityTransform = TransformUtils.ConvertRightHandedMatrix4x4ToLeftHanded(sceneObjectToUnityTransform.Value);
-
-        return sceneObjectToUnityTransform;
+        
+        return sceneToUnityTransform;
     }
 
     // Converts from Right handed to left handed coordinates
@@ -301,40 +283,21 @@ The following unity code, for example, shows how to use windows perception and U
 
         return transformationMatrix;
     }
-
-    // A utility that sets the unity transform given a SceneUnderstanding transform
-    public static void SetUnityTransformFromMatrix4x4(System.Numerics.Matrix4x4 transformationMatrix, Transform unityTransform)
-    {
-        Vector3 t;
-        Quaternion r;
-        Vector3 s;
-
-        System.Numerics.Matrix4x4.Decompose(transformationMatrix, out s, out r, out t);
-
-        // NOTE: Scale is ignored.
-        unityTransform.SetPositionAndRotation(new Vector3(t.X, t.Y, t.Z), Quaternion(r.X, r.Y, r.Z, r.W));
-    }
 ```
 
-And the following uses these utilities to transform a unity game object to the correct location.
+And the following code calls this function:
 
 ```cs
-    System.Numerics.Matrix4x4? sceneObjectToUnity = TransformUtils.GetSceneObjectToUnityTransform(quad.SpatialCoordinateSystem, quad.Transform, runOnPC);
+System.Numerics.Matrix4x4? sceneToUnityTransform = TransformUtils.GetSceneToUnityTransform(scene.OriginSpatialGraphNodeId);
 
-    if (sceneObjectToUnity == null)
-    {
-        continue;
-    }
+// Set the root transform
+Vector3 t;
+Quaternion r;
+Vector3 s;
 
-    GameObject quadGO = new GameObject();
-    quadGO.transform.parent = parentGO.transform;
-    quadGO.name = "Quad";
-
-    // Set the transform.
-    TransformUtils.SetUnityTransformFromMatrix4x4(sceneObjectToUnity.Value, quadGO.transform);
+System.Numerics.Matrix4x4.Decompose(sceneToUnityTransform, out s, out r, out t);
+SceneRoot.Transform.SetPositionAndRotation(t, r);
 ```
-
-**Note: These code snippets come from the Scene Understanding Unity Sample which is a great starting point for learning about how to move between SceneUnderstanding and Unity constructs.** 
 
 ### Quad
 
