@@ -105,15 +105,15 @@ If you are treating every newly computed scene as being distinct, and simply enu
 
 #### SceneObjects
 
-A SceneObject represents an instance of a "thing" e.g. a wall or a floor expressed by their Kind property. Beyond this simple definition SceneObjects are nothing more than compositions of other components that represent the whole. When working with a new scene, most applications will begin by enumerating all SceneObjects. Wether you are trying to represent everything in the environment, or you are trying to find a specific object, you will most likley begin by grabbing all SceneObjects and performing operations on them.
+A SceneObject is a SceneComponent that represents an instance of a "thing" e.g. a wall, a floor, a ceiling, etc... expressed by their Kind property. SceneObjects are geometric, and therefore have functions and properties that represen their location in space, however they don't contain any geometric or logical structure. Instead, SceneObjects reference other SceneComponents, specifically SceneQuads and SceneMeshes which provide the varied representations that are supported by the system. When a new scene is computed, your application will most likley enumerate the Scene's SceneObjects in order to process what it's interested in.
 
-SceneObjects can have any one of the following SceneObjectKind's:
+SceneObjects can have any one of the following:
 
 <table>
 <tr>
 <th>SceneObjectKind</th> <th>Description</th>
 </tr>
-<tr><td>Background</td><td>The SceneObject is known to be <b>not</b> one of the other recognized kinds of scene object. This class should not be confused with Unknown where Background is known not to be wall/floor/ceiling etc... while uknown is not yet categorized.</b></td></tr>
+<tr><td>Background</td><td>The SceneObject is known to be <b>not</b> one of the other recognized kinds of scene object. This class should not be confused with Unknown where Background is known not to be wall/floor/ceiling etc... while unknown is not yet categorized.</b></td></tr>
 <tr><td>Wall</td><td>A physical wall. Walls are assumed to be immovable environmental structures.</td></tr>
 <tr><td>Floor</td><td>Floors are any surfaces on which one can walk. Note stairs are not floors as stairs are steppable surfaces. Also note, that floors assume any walkable surface and therefore there is no explicit assumption of a singular floor. Multi-level structures, ramps etc... should all classify as floor.</td></tr>
 <tr><td>Ceiling</td><td>The upper surface of a room.</td></tr>
@@ -123,13 +123,9 @@ SceneObjects can have any one of the following SceneObjectKind's:
 </tr>
 </table>
 
-#### SpatialComponent
+#### SceneMesh
 
-Any component that represents 3d geometry that could be rendered relative to the scene Origin will derive from the SpatialComponent class. SpatialComponents define a local transform from the scene orign.
-
-#### Mesh
-
-Meshes represent arbitrary geometric objects by approximating them using a list of triangles. They are used to represent a variety of SceneObject types, for example both the watertight mesh as well as surface reconstruction use mesh components to represent their geometries. The index and vertex data provided with each mesh uses the same familiar layout as the [vertex and index buffers](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) that are used for rendering triangle meshes in all modern rendering APIs. Note that in Scene Understanding, meshes use 32-bit indices and may need to be broken up into chunks for certain rendering engines.
+A SceneMeshe is a SceneComponent that approximates the geometry of arbitrary geometric objects through the use of a triangle list. SceneMeshes are used in several different contexts, they can represent components of the watertight cell structure or as the WorldMesh which represents the unbounded Surface Reconstruction associated with the Scene. The index and vertex data provided with each mesh uses the same familiar layout as the [vertex and index buffers](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) that are used for rendering triangle meshes in all modern rendering APIs. Note that in Scene Understanding, meshes use 32-bit indices and may need to be broken up into chunks for certain rendering engines.
 
 #### Quad
 
