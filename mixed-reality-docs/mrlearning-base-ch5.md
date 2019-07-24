@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# 6.Exploring advanced input options
+# 6. Exploring advanced input options
 
 In this tutorial, we explore several advanced input options for the HoloLens 2, including the use of voice commands, panning gesture, and eye tracking. 
 
@@ -193,8 +193,9 @@ In newly created field, add the current Game Object to the empty field, and sele
 6. Ensure eye tracking capabilities are properly configured before building to HoloLens 2. As of this writing, Unity does not yet have the ability to set the gaze input for eye tracking capabilities. Setting this capability is required for eye tracking to work in HoloLens 2. Follow these instructions on the mixed reality toolkit documentation to enable the gaze input capability: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#testing-your-unity-app-on-a-hololens-2 
 
 
-### Congratulations! 
+## Congratulations
+
 You’ve successfully added basic eye tracking capabilities to your application. These actions are only the beginning of a world of possibilities with eye tracking. This chapter also concludes Lesson 5, where we learned about advanced input functionality, such as voice commands, panning gestures, and eye tracking. 
 
-[Next Lesson: Lunar Module Assembly Sample Experience](mrlearning-base-ch6.md)
+[Next Lesson: 7. Creating a Lunar Module sample application](mrlearning-base-ch6.md)
 
