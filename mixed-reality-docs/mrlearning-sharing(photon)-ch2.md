@@ -11,7 +11,7 @@ Objectives:
 
 - Prepare your project scene
 
-### Instructions
+## Instructions
 
 1. Download and save the Mixed Reality Toolkit unity package by clicking [here.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC2.1/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC2.1.unitypackage)
 
