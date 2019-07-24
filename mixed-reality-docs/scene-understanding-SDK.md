@@ -127,23 +127,37 @@ SceneObjects can have any one of the following:
 
 A SceneMeshe is a SceneComponent that approximates the geometry of arbitrary geometric objects through the use of a triangle list. SceneMeshes are used in several different contexts, they can represent components of the watertight cell structure or as the WorldMesh which represents the unbounded Surface Reconstruction associated with the Scene. The index and vertex data provided with each mesh uses the same familiar layout as the [vertex and index buffers](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) that are used for rendering triangle meshes in all modern rendering APIs. Note that in Scene Understanding, meshes use 32-bit indices and may need to be broken up into chunks for certain rendering engines.
 
-#### Quad
+#### SceneQuad
 
-Quads are SceneUnderstanding's construct to represent 2d surfaces that occupy the 3d world. Quads can be used similarly to ARKit ARPlaneAnchor or ARCore Planes but they offer more high level functionality as 2d canvases to be used by flat apps, or augmented UX. 2D specific APIs are provided for quads that make placement and layout simple to use, and developing (with the exception of rendering) with quads should feel more akin to working with 2d canvases than 3d meshes.
+A SceneQuad is a SceneComponent that represents 2d surfaces that occupy the 3d world. SceneQuads can be used similarly to ARKit ARPlaneAnchor or ARCore Planes but they offer more high level functionality as 2d canvases to be used by flat apps, or augmented UX. 2D specific APIs are provided for quads that make placement and layout simple to use, and developing (with the exception of rendering) with quads should feel more akin to working with 2d canvases than 3d meshes.
 
 ### Scene Understanding SDK Details And Reference
 
 #### SDK
 
-To access complete documentation for the latest version of the Scene Understanding SDK, please visit the official SDK documentation which can be found [here](..\DocProject\help\index.html)
+The following section will help get you familiar with the basics of SceneUnderstanding. This section should provide you with the basics, at which point you should have enough context to browse through the sample applications to see how SceneUnderstanding is used holistically.
 
 #### Initialization
 
-The following code sample demonstrates computing a Scene within a 10 meter radius of the device.
+The first step to working with SceneUnderstanding is for your application to gain reference to a Scene object. This can be done in one of two ways, a Scene can either be Computed by the driver, or an existing Scene that was computed in the past can be de-serialized. The later is particularly useful for working with SceneUnderstanding during development, where applications and experiences can be prototyped quickly without a mixed reality device.
+
+Scenes are computed using a SceneObserver. Before creating a Scene your application should query your device to ensure that it supports SceneUnderstanding, as well as to request user access for information that SceneUnderstanding needs.
+
+```cs
+if (SceneObserver.IsSupported())
+{
+    // Handle the error
+}
+
+// This call should grant the access we need.
+Task.Run(() => SceneObserver.RequestAccessAsync()).Wait();
+```
+
+If RequestAccessAsync() is not called, computing a new Scene will fail. Next we will compute a new scene that's rooted around the Mixed Reality headset and has a 10 meter radius.
 
 ```cs
 // Create Query settings for the scene update
-SceneUnderstanding.QuerySettings querySettings;
+SceneUnderstanding.SceneQuerySettings querySettings;
 
 querySettings.EnableSceneObjectQuads = true;                // Requests that the scene updates quads.
 querySettings.EnableSceneObjectMeshes = true;               // Requests that the scene updates watertight mesh data.
@@ -153,21 +167,21 @@ querySettings.EnableWorldMesh = true;                       // Requests a static
 querySettings.RequestedMeshLOD = MeshLOD.Fine;              // Requests the finest LOD of the static spatial mapping mesh.
 
 // Initialize a new Scene
-Scene myScene = Scene.Compute(querySettings, 10.0f);
+Scene myScene = SceneObserver.Compute(querySettings, 10.0f);
 ```
 
 #### Initialization from Data (aka. the PC Path)
 
-Scenes may be computed and serialized instead of being returned directly. This has proven to be very useful for development as it allows developers to work in and test Scene Understanding without the need for a device. Serializing a scene still require it to be computed, but instead of generating a scene object a binary blob is returned that can be deserialized at any time. 
+While Scenes can be computed for direct consumption, they can also be computed in serialized form for later use. This has proven to be very useful for development as it allows developers to work in and test Scene Understanding without the need for a device. The act of serializing a scene is nearly identical to computing it, the data is simply returned back to your application instead of being deserialized locally by the SDK. You may then deserialize it yourself or save it for future use.
 
 ```cs
 // Create Query settings for the scene update
 SceneUnderstanding.QuerySettings querySettings;
 
-// Initialize a new Scene
-byte newSceneBlob = Scene.ComputeSerialized(querySettings, 10.0f);
+// Compute a scene but serialized as a byte array
+byte[] newSceneBlob = Scene.ComputeSerialized(querySettings, 10.0f);
 
-// We want to use it right away and save it to disk
+// If we want to use it immediatley we can de-serialize the scene ourselves
 Scene mySceneDeSerialized = Scene.Deserialize(newSceneBlob);
 
 // Save newSceneBlob for later
@@ -175,7 +189,7 @@ Scene mySceneDeSerialized = Scene.Deserialize(newSceneBlob);
 
 #### SceneObject Enumeration
 
-Now that we have a scene, your application will be looking at and interacting with SceneObjects. This is done by accessing the **SceneObjects** property:
+Now that your application has a scene, your application will be looking at and interacting with SceneObjects. This is done by accessing the **SceneObjects** property:
 
 ```cs
 SceneObject firstFloor = nullptr;
@@ -192,14 +206,11 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 #### Component update and re-finding components
 
-There is another function that retrives components in the Scene called ***FindComponent***. This function is useful when updating tracking objects and finding them in subesquent scenes. We will now compute a new scene, try and track all the objects given the previous scene and see if we can find the floor again.
+There is another function that retrives components in the Scene called ***FindComponent***. This function is useful when updating tracking objects and finding them in subesquent scenes. The following code will compute a new scene relative to a previous scene and then find the floor in the new scene.
 
 ```cs
-// Compute a new scene
-Scene myNextScene = Scene.Compute(querySettings, 10.0f);
-
-// Update it given the previous state, this will ensure we re-use Ids when possible
-myNextScene.UpdateFromPrevious(myScene);
+// Compute a new scene, but tell the system that we want to compute relative to the previous scene
+Scene myNextScene = SceneObserver.Compute(querySettings, 10.0f, myScene);
 
 // Use the Id for the floor we found last time, and find it again
 firstFloor = (SceneObject)myNextScene.FindComponent(firstFloor.Id)
@@ -212,19 +223,27 @@ if (firstFloor != nullptr)
 
 ### Accessing Meshes and Quads from Scene Objects
 
-As mentioned before, SceneObjects are just compositions of components. The real data is in the quads/meshes that they are comprised of. This data is accessed with the ***Quads*** and ***Meshes*** properties. The following code will enumerate all quads and meshes of our floor object.
+Once SceneObjects have been found your application will most likley want to access the data that is contained n the quads/meshes that it is comprised of. This data is accessed with the ***Quads*** and ***Meshes*** properties. The following code will enumerate all quads and meshes of our floor object.
 
 ```cs
+
+// Get the matrix for the SceneObject
+Matrix4x4 floorTransform = firstFloor.LocationAsMatrix();
+
+// Enumerate quads
 foreach (var quad in firstFloor.Quads)
 {
     // Process quads
 }
 
+// Enumerate meshes
 foreach (var mesh in firstFloor.Meshes)
 {
     // Process meshes
 }
 ```
+
+Notice that it is the SceneObject that has the transform that is relative to the Scene origin. This is because the SceneObject represents an instance of a "thing" and is locatable in space, the quads and meshes represent geometry that is transformed relative to their parent. It is possible for seperate SceneObjects to reference the same SceneMesh/SceneQuad SceneComponewnts, and it is also possible that a SceneObject has more than one SceneMesh/SceneQuad.
 
 ### SpatialComponent
 
