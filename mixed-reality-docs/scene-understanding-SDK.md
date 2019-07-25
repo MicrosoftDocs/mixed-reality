@@ -142,10 +142,10 @@ If RequestAccessAsync() is not called, computing a new Scene will fail. Next we 
 // Create Query settings for the scene update
 SceneQuerySettings querySettings;
 
-querySettings.EnableSceneObjectQuads = true;                // Requests that the scene updates quads.
-querySettings.EnableSceneObjectMeshes = true;               // Requests that the scene updates watertight mesh data.
-querySettings.EnableOnlyObservedSceneObjects = false;       // Do not explicitly turn off quad inference.
-querySettings.EnableWorldMesh = true;                       // Requests a static version of the spatial mapping mesh.
+querySettings.EnableSceneObjectQuads = true;                                       // Requests that the scene updates quads.
+querySettings.EnableSceneObjectMeshes = true;                                      // Requests that the scene updates watertight mesh data.
+querySettings.EnableOnlyObservedSceneObjects = false;                              // Do not explicitly turn off quad inference.
+querySettings.EnableWorldMesh = true;                                              // Requests a static version of the spatial mapping mesh.
 querySettings.RequestedMeshLevelOfDetail = SceneMeshLevelOfDetail.Fine;            // Requests the finest LOD of the static spatial mapping mesh.
 
 // Initialize a new Scene
