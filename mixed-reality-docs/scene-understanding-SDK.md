@@ -37,6 +37,8 @@ Below we present an example of a structure in both it's flat and logical form.
 <tr>
 <td>
 <ul>
+  Scene
+  <ul>
   <li>SceneObject_1
     <ul>
       <li>Mesh_1</li>
@@ -48,13 +50,13 @@ Below we present an example of a structure in both it's flat and logical form.
     <ul>
       <li>Quad_1</li>
       <li>Quad_3</li>
-    </ul>
+      </li></ul>
   </li>
   <li>SceneObject_3
     <ul>
       <li>Mesh_3</li>
     </ul>
-  </li>
+  </ul>
 </ul>
 </td>
 <td>
