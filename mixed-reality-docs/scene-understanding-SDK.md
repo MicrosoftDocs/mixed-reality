@@ -182,6 +182,7 @@ foreach (var sceneObject in myScene.SceneObjects)
     if (sceneObject.Kind == SceneObjectKind.Floor)
     {
         firstFloor = sceneObject;
+        break;
     }
 }
 ```
