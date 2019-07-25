@@ -304,8 +304,8 @@ foreach (var sceneObject in myScene.SceneObjects)
         if (quads.Count > 0)
         {
             // Find a good location for a 1mx1m object  
-            Vector2 location;
-            if (quads[0].FindCentermostPlacement(new Vector2(1.0f, 1.0f), out location))
+            System.Numerics.Vector2 location;
+            if (quads[0].FindCentermostPlacement(new System.Numerics.Vector2(1.0f, 1.0f), out location))
             {
                 // We found one, anchor something to the transform
                 // Step 1: Create a new node QuadTransformNode as a child of Root, and set the transform from quad[0].Transform
