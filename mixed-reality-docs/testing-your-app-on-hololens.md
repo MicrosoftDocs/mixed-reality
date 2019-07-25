@@ -29,7 +29,7 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 8. **Test your app from different distances**. Can UI elements be read and interacted with from far away? Does your app react to users getting too close to your holograms?
 9. **Test your app against common app bar interactions**. All app tiles and 2D universal apps have a [app bar](navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) that allows you to control how the app is positioned in the Mixed World. Make sure clicking Remove terminates your app process gracefully and that the Back button is supported within the context of your 2D universal app. Try scaling and moving your app in [Adjust mode](navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) both while it is active, and while it is a suspended app tile.
 
-### Environmental Test Matrix
+### Environmental test matrix
 
 ![Environment Test Matrix for HoloLens app development](images/environment-matrix-600px.png)
 
@@ -41,7 +41,7 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 
 ## Input
 
-### Gaze and Gestures
+### Gaze and gestures
 
 [Gaze](gaze.md) is a basic form of input on HoloLens that enable users to aim at holograms and the environment. You can visually see where your gaze is targeting based on the cursor position. It's common to associate the gaze cursor with a mouse cursor.
 
@@ -52,7 +52,7 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 > [!NOTE]
 > More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
 
-### Custom Voice Commands
+### Custom voice commands
 
 [Voice input](voice-input.md) is a natural form of interaction. The user experience can be magical or confusing depending on your choice of commands and how you expose them. As a rule, you should not use system voice commands such as "Select" or "Hey Cortana" as custom commands. Here are a few points to consider:
 1. **Avoid using commands that sound similar.** This can potentially trigger the incorrect command.
@@ -64,19 +64,23 @@ Users can interact with your App through [peripherals](hardware-accessories.md).
 1. **Validate custom interactions.** Things like custom keyboard shortcuts for your app.
 2. **Validate switching input types.** Attempting to use multiple input methods to complete a task, such as voice, gesture, mouse, and keyboard all in the same scenario.
 
-## System Integration
+## System integration
 
 ### Battery
 
-Test your application without a power source connected to understand how quickly it drains the battery. One can easily understand the battery state by looking at Power LED readings. ![LED states that indicate battery power](images/batterypowerledindication-500px.png)
+Test your application without a power source connected to understand how quickly it drains the battery. One can easily understand the battery state by looking at Power LED readings. 
 
-### Power State Transitions
+![LED states that indicate battery power](images/batterypowerledindication-500px.png)<br>
+
+*LED states that indicate battery power*
+
+### Power state transitions
 
 Validate key scenarios work as expected when transitioning between power states. For example, does the application remain at its original position? Does it correctly persist its state? Does it continue to function as expected?
 1. **Stand-by / Resume.** To enter standby, one can press and release the power button immediately. The device also will enter standby automatically after 3 minutes of inactivity. To resume from standby, one can press and release the power button immediately. The device will also resume if you connect or disconnect it from a power source.
 2. **Shutdown / Restart.** To shutdown, press and hold the power button continuously for 6 seconds. To restart, press the power button.
 
-### Multi-App Scenarios
+### Multi-app scenarios
 
 Validate core app functionality when switching between apps, especially if you've implemented a background task. Copy/Paste and Cortana integration are also worth checking where applicable.
 
@@ -92,7 +96,7 @@ Questions to consider:
 5. What are the most common usage paths the users are trying?
 6. Are users hitting unexpected states and/or errors?
 
-## Emulator and Simulated Input
+## Emulator and simulated input
 
 The [HoloLens emulator](using-the-hololens-emulator.md) is a great way to efficiently test your Holographic app with a variety of simulated user characteristics and spaces. Here are some suggestions for effectively using the emulator to test your app:
 1. **Use the emulator's virtual rooms to expand your testing.** The emulator comes with a set of virtual rooms that you can use to test your app in even more environments.
