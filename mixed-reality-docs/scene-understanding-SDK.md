@@ -334,7 +334,7 @@ The following code provides an example of generating a triangle list from the me
 
 ```cs
 uint[] indices = new uint[mesh.TriangleIndexCount];
-System.Numerics.Vector3[] positions = new System.Numerics.Vector3[mesh.VertexCount];
+float[] positions = new float[mesh.VertexCount * 3];
 
 mesh.GetTriangleIndices(indices);
 mesh.GetVertexPositions(positions);
