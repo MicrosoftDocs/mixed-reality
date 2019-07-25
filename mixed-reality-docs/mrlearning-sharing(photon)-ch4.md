@@ -19,7 +19,7 @@ Objectives:
 - Configure your project to share the movements of the 3D model.
 - Learn how to build a basic multi-user collaborative application
 
-### Instructions
+## Instructions
 
 
 1. Save the scene from the previous lesson (Control+S). You can name it, HLSharedProjectMainPart4.unity, so that it's easier to find when you need it.
@@ -81,5 +81,5 @@ Although all users are connected as part of a shared experience, and can see the
 
 Before proceeding to the next lesson, we'll need to complete the ASA Learning Module that covers ASA basics, Azure account and resource creation, and other fundamental buildings blocks required before we can integrate this into our shared experience.
 
-[Next Lesson: Sharing(Photon) Lesson 5](mrlearning-sharing(photon)-ch5.md)
+[Next Lesson: 5. Integration Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
 
