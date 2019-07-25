@@ -39,35 +39,20 @@ Below we present an example of a structure in both it's flat and logical form.
 <ul>
   <li>SceneObject_1
     <ul>
-      <li>
-      Mesh_1
-        <ul>Transform_1</ul>
-        <ul>SpatialComponent_1</ul>
-      </li>
-      <li>
-      Quad_1
-        <ul>Transform_2</ul>
-        <ul>SpatialComponent_1</ul>
-      </li>
-      <li>
-      Quad_2
-        <ul>Transform_3</ul>
-        <ul>SpatialComponent_1</ul>
-      </li>
+      <li>Mesh_1</li>
+      <li>Quad_1</li>
+      <li>Quad_2</li>
     </ul>
   </li>
   <li>SceneObject_2
     <ul>
-      <li>
-      Quad_1
-        <ul>Transform_3</ul>
-        <ul>SpatialComponent_1</ul>
-      </li>
-      <li>
-      Quad_3
-        <ul>Transform_4</ul>
-        <ul>SpatialComponent_1</ul>
-      </li>
+      <li>Quad_1</li>
+      <li>Quad_3</li>
+    </ul>
+  </li>
+  <li>SceneObject_3
+    <ul>
+      <li>Mesh_3</li>
     </ul>
   </li>
 </ul>
@@ -76,16 +61,12 @@ Below we present an example of a structure in both it's flat and logical form.
 <ul>
   <li>SceneObject_1</li>
   <li>SceneObject_2</li>
+  <li>SceneObject_3</li>
   <li>Quad_1</li>
   <li>Quad_2</li>
   <li>Quad_3</li>
   <li>Mesh_1</li>
   <li>Mesh_2</li>
-  <li>Transform_1</li>
-  <li>Transform_2</li>
-  <li>Transform_3</li>
-  <li>Transform_4</li>
-  <li>SpatialComponent_1</li>
 </ul>
 </td>
 </tr>
