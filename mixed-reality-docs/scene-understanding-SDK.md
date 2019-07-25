@@ -211,7 +211,7 @@ Once SceneObjects have been found your application will most likley want to acce
 ```cs
 
 // Get the matrix for the SceneObject
-Matrix4x4 floorTransform = firstFloor.LocationAsMatrix();
+System.Numerics.Matrix4x4 floorTransform = firstFloor.LocationAsMatrix();
 
 // Enumerate quads
 foreach (var quad in firstFloor.Quads)
