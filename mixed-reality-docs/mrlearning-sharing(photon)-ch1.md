@@ -12,7 +12,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 In this tutorial, we learn how to get ready for creating a shared experience by importing Photon Unity Networking (PUN) into your Unity project. Photon is one of several networking options available to Mixed Reality developers to create shared experiences. We we will learn how to create a Photon account, import Photon, and create an optional local server
 
-Objectives:
+## Objectives
 
 * Learn how to create a Photon account
 
