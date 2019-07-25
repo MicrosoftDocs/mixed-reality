@@ -12,6 +12,8 @@ keywords: mixed reality, unity, tutorial, hololens
 
 In this tutorial, we learn aabout the Azure Cognitive Services Speech Translation component in our project as well as translate into three different languages. 
 
+## Instructions
+
 1. Select the Lunarcom_Base object in the hierarchy, and click Add Component in the inspector panel. Search for and select LunarcomTranslationRecognizer.
 
 ![Module4Chapter3step1im](images/module4chapter3step1im.PNG)

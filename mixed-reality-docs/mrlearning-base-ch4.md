@@ -199,8 +199,8 @@ In this example, we are going to play a sound effect when you touch an object wi
 
 ![Lesson4 Chapter4 Step3 5 Noteim](images/Lesson4_chapter4_step3-5-noteim.PNG)
 
-### Congratulations 
+## Congratulations 
 In this tutorial, you learned how to organize 3D objects in a grid collection and how to manipulate 3D objects  (scaling, rotating, and moving) using near interaction (directly grabbing with tracked hands) and far interaction (using gaze rays or hand rays). You also learned how to put bounding boxes around 3D objects, and learned how to use and customize the gizmos on the bounding boxes. Finally, you learned how to trigger events when touching an object.
 
-[Next Lesson: Advanced Input](mrlearning-base-ch5.md)
+[Next Lesson: 6. Exploring advanced input options](mrlearning-base-ch5.md)
 
