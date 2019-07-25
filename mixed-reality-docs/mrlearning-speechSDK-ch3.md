@@ -1,20 +1,34 @@
-## Lesson 3
+---
+title: MR Learning SpeechSDK Module - Speech Recognition and Transcription
+description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
+author: jessemcculloch
+ms.author: jemccull
+ms.date: 02/26/2019
+ms.topic: article
+keywords: mixed reality, unity, tutorial, hololens
+---
 
-In chapter 3, we will add on the Azure Cognitive Services Speech Translation feature to our project and test translating into 3 different languages. 
+# 3.	Adding the Azure Cognitive Services speech translation component
 
-1. Select the Lunarcom_Base object in the hierarchy and click “Add Component” in the inspector panel. Search for and select “LunarcomTranslationRecognizer.”
+In this tutorial, we learn aabout the Azure Cognitive Services Speech Translation component in our project as well as translate into three different languages. 
+
+## Instructions
+
+1. Select the Lunarcom_Base object in the hierarchy, and click Add Component in the inspector panel. Search for and select LunarcomTranslationRecognizer.
 
 ![Module4Chapter3step1im](images/module4chapter3step1im.PNG)
 
-> note: Ensure the offline mode simulator is turned back off before testing the Speech-SDK translator. In order to translate, you must be connected to the internet. 
+> Note: Ensure the offline mode simulator is disabled before testing the Speech-SDK translator. In order to translate, you must be connected to the internet. See image below on where to find this setting. 
+>
+> ![Module4Chapter3noteim](images/module4chapter3noteim.PNG)
 
-2. Click the dropdown in the “LunarcomTranslationRecognizer” and select the language you would like to translate to.
+2. Click the drop-down in the LunarcomTranslationRecognizer, and select the language you would like to translate to.
 
 ![Module4Chapter3step2im](images/module4chapter3step2im.PNG)
 
-3. Now, run the application and test the translator by clicking the Satellite button and begin speaking. Press the Satellite button again to stop the recognition. 
+3. Now, run the application and test the translator by clicking the Satellite button, and begin speaking. Press the Satellite button again to stop the recognition. Below is an example of what your scene should look like. Feel free to change the language under the "Target Language" dropdown (see image above) to explore translation into other languages.
 
-> note: Again, before testing, ensure the offline simulator is disabled, as shown in the image below:
+> Note: Before testing, ensure that the offline simulator is disabled, as shown in the image below.
 >
 > ![Module4Chapter3noteim](images/module4chapter3noteim.PNG)
 
@@ -24,7 +38,7 @@ Below is an example of what your scene should look like:
 
 ## Congratulations
 
-Now  your project can translate your words that you speak into several different languages! Feel free to play around with the languages and test the accuracy. 
+Now  your project can translate the words you speak into several different languages. Feel free to play around with the languages, and test the accuracy of the translation. 
 
-[Next Lesson: Speech SDK Lesson 4](placeholderlink)
+[Next tutorial: 4.	Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
 

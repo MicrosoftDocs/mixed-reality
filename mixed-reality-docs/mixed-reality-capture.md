@@ -18,9 +18,11 @@ Use cases for mixed reality capture go beyond sharing videos amongst a social ci
 
 ## Live streaming from HoloLens
 
-The [Windows 10 October 2018 Update](release-notes-october-2018.md) adds Miracast support to HoloLens. Select the **Connect** button at the bottom of the Start menu to bring up a picker for Miracast-enabled devices and adapters. Select the device to which you want to begin streaming. When done, select the **Disconnect** button at the bottom of the Start menu.  **Connect** and **Disconnect** are also available on the quick actions menu. 
+The [Windows 10 October 2018 Update](release-notes-october-2018.md) adds Miracast support to HoloLens. Select the **Connect** button at the bottom of the Start menu to bring up a picker for Miracast-enabled devices and adapters. Select the device to which you want to begin streaming. When done, select the **Disconnect** button at the bottom of the Start menu.  **Connect** and **Disconnect** are also available on the quick actions menu.
 
-The [Windows Device Portal](using-the-windows-device-portal.md) exposes live streaming options for devices that are in Developer mode.
+The [Windows Device Portal](using-the-windows-device-portal.md) and [Microsoft HoloLens companion app](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) expose live streaming options for devices that are in Developer mode.
+
+[Dynamics 365 Remote Assist](https://dynamics.microsoft.com/en-us/mixed-reality/remote-assist) supports live streaming from HoloLens to employees in remote locations.
 
 ## Taking mixed reality captures
 
@@ -45,7 +47,7 @@ There are multiple ways to initiate a mixed reality capture:
 
 ### Limitations of mixed reality capture
 
-On HoloLens, the system will throttle the render rate to 30Hz. This creates some headroom for MRC to run so the app doesn’t need to keep a constant budget reserve, and also matches the MRC video record framerate of 30fps.
+On HoloLens, the system will throttle the render rate to 30Hz. This creates some headroom for MRC to run so the app doesn’t need to keep a constant budget reserve, and also matches the MRC video record framerate of (up to) 30fps.
 
 Videos have a maximum length of five minutes.
 
@@ -57,8 +59,17 @@ Mixed reality captures from Cortana voice commands and Start Menu tools create f
 
 |  Type  |  Format  |  Extension  |  Resolution  |  Audio | 
 |----------|----------|----------|----------|----------|
-|  Photo  |  [JPEG](https://en.wikipedia.org/wiki/JPEG)  |  .jpg  |  1408x792px (HoloLens) 1920x1080px (Immersive headsets) |  N/A | 
-|  Video  |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4)  |  .mp4  |  1408x792px (HoloLens) 1632x918px (Immersive headsets) |  48kHz Stereo | 
+|  Photo  |  [JPEG](https://en.wikipedia.org/wiki/JPEG)  |  .jpg  |  3904x2196px (HoloLens 2)<br> 1408x792px (HoloLens)<br> 1920x1080px (Immersive headsets) |  N/A | 
+|  Video  |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4)  |  .mp4  |  1920x1080px at 30fps (HoloLens 2)<br> 1216x684px at 24fps (HoloLens)<br> 1632x918px at 30fps (Immersive headsets) |  48kHz Stereo | 
+
+>[!NOTE]
+>The resolution of photos and videos can be smaller if the photo/video camera is already in use by another application, while live streaming, or when system resources are low.
+
+### Video stabilization
+
+By default:
+* Zero-latency video stabilization is applied when live streaming over Miracast.
+* Long-latency video stabilization is applied to videos captured using the built-in MRC camera UI, Cortana voice commands, and Windows Device Portal.
 
 ## Viewing mixed reality captures
 

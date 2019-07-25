@@ -5,13 +5,12 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module - User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
+# 3. Creating user interface and configure Mixed Reality Toolkit 
 
-In the previous lesson, you learned some of the capabilities the Mixed Reality Toolkit (MRTK) has to offer by starting your first application for the HoloLens 2. In this next lesson you'll learn how to create and organize buttons along with UI text panels, and use default interaction (touch) to interact with each button. You will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects. This module will introduce basic concepts about modifying MRTK profiles, starting with turning off the spatial mesh visualization. 
+In the previous lesson, you learned about some of the capabilities the Mixed Reality Toolkit (MRTK) has to offer by starting your first application for the HoloLens 2. In this next lesson you'll learn how to create and organize buttons along with UI text panels, and use default interaction (touch) to interact with each button. You will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects. This module will introduce basic concepts about modifying MRTK profiles, starting with turning off the spatial mesh visualization. 
 
 ## Objectives
 
@@ -22,17 +21,17 @@ In the previous lesson, you learned some of the capabilities the Mixed Reality T
 ## Instructions
 
 ### How to Configure the Mixed-Reality Toolkit Profiles (Change Spatial Awareness Display Option)
-In this section, you'll learn how to customize and configure the default Mixed Reality Toolkit profiles by adjusting the display option of the spatial awareness mesh. You may follow these same principles for adjusting any settings or values in the MRTK profiles.
+In this section, you'll learn how to customize and configure the default MRTK profiles by adjusting the display option of the spatial awareness mesh. You may follow these same principles for adjusting any settings or values in the MRTK profiles.
 
-1. Select Mixed-Reality Toolkit (MRTK) from the BaseScene hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and select the ctive profile as shown in the figure below. Double click to open it.
+1. Select Mixed-Reality Toolkit (MRTK) from the BaseScene hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and select the active profile as shown in the figure below. Double click to open it.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.PNG)
 
->Note: By default, the Mixed Reality Toolkit profiles are not editable. These are default profile templates that you can copy and customize. There are several layers of customization and profiles. So, it is standard practice to copy and customize several profiles when configuring one or more settings.
+>Note: By default, the MRTK profiles are not editable. These are default profile templates that you can copy and customize. There are several layers of customization and profiles. So, it is standard practice to copy and customize several profiles when configuring one or more settings.
 >
 >To discover more about MRTK profiles and their architecture, visit the [MRTK documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/SpatialAwareness/SpatialAwarenessSystemArchitecture.html>).
 
-2. Create a copy of the default profile to customize it. To copy a default profile, click the “Copy & Customize” button (see image). This creates a copy of the MRTK profile. With your own copy of the MRTK profile, you now have the ability customize any settings in this profile. You will also need to repeat the copy and customize step for any additional profiles nested under this profile as described in the subsequent steps.
+2. Create a copy of the default profile to customize it. To copy a default profile, click Copy & Customize (see image). This creates a copy of the MRTK profile. With your own copy of the MRTK profile, you now have the ability customize any settings in this profile. You will also need to repeat the copy and customize step for any additional profiles nested under this profile as described in the subsequent steps.
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step2im.PNG)
 
@@ -52,7 +51,7 @@ In this section, you'll learn how to customize and configure the default Mixed R
 
 >Note: While the spatial mapping mesh is not visible, it is still present and you can interact with it. Any holograms behind the spatial mapping mesh, such as a hologram behind your visible wall, will not be visible because of the occlusion setting.
 
-Congratulations! You just learned how to modify a setting in the MRTK profile. As you can see, in order to modify MRTK settings you need to create copies of the default profiles so that you can edit them. You will always have the default profiles, which are not editable, to go back to if you wantedto create a profile with new settings or you can refer back to the default profiles. There are numerous settings that you can adjust. For full reference to MRTK profile settings, refer to the MRTK documentation here: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html
+Congratulations! You just learned how to modify a setting in the MRTK profile. As you can see, in order to modify MRTK settings you need to create copies of the default profiles so that you can edit them. You will always have the default profiles, which are not editable, to go back to if you wanted to create a profile with new settings or you can refer back to the default profiles. There are numerous settings that you can adjust. For full reference to MRTK profile settings, refer to the MRTK documentation here: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html
 
 ### Hand Tracking Gestures and Interactable buttons
 In this section, you will learn how to use hand tracking to press a pressable button.
@@ -94,8 +93,6 @@ Click the dropdown list that says No Function. Select MeshRenderer, then select 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imb.PNG)
 
 Go to the Project panel and search for the material you wish to change it to. You are going to use the material, MRTK_Standard_Cyan, for this example, found by typing in “cyan” in the Project tab’s search bar. (The MRTK includes many materials and colors to choose from.) Drag the material to the box underneath MeshRenderer.material. The MRTK materials can be found in Assets>MixedRealityToolkit.SDK>StandardAssets>Materials.
-
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imbb.PNG)
 
 ![MR213_BuildSettings](images/mrlearning-base-ch2-1step7imc.PNG)
 
@@ -152,21 +149,21 @@ In this section, you will learn how to add and edit text to your mixed reality e
 ![Lesson2 Chapter4 Step1a](images/Lesson2_Chapter4_Step1a.JPG)
 ![Lesson2 Chapter4 Step1b](images/Lesson2_Chapter4_Step1b.JPG)
 
-2. In the TextMeshPro component’s text field in the Inspector panel as shown below. Type in Button Collection Text. The text appears in the scene, but will be hidden behind the buttons and/or the wrong size.
-
-![Lesson2 Chapter4 Step2](images/Lesson2_Chapter4_Step2.JPG)
-
-3. To improve the text size and placement for readability, adjust the Font Size field in the TextMeshPro component to change the size of the font. You will also need to adjust the Rect Transform position and scale as shown in the image below. See the images below for values used for our text configuration. Feel free to use these values as a starting point to further improve the size and placement of your text field.
+2. To improve the text size and placement for readability, adjust the Font Size field in the TextMeshPro component to change the size of the font. You will also need to adjust the Rect Transform position and scale as shown in the image below. See the images below for values used for our text configuration. Feel free to use these values as a starting point to further improve the size and placement of your text field.
 
 ![Lesson2 Chapter4 Step3](images/Lesson2_Chapter4_Step3.JPG)
+
+3. In the TextMeshPro component’s text field in the Inspector panel as shown below. Type in Button Collection Text. The text appears in the scene, but will be hidden behind the buttons and/or the wrong size.
+
+![Lesson2 Chapter4 Step2](images/Lesson2_Chapter4_Step2.JPG)
 ![Lesson2 Chapter4 Step4](images/Lesson2_Chapter4_Step4.JPG)
 
-5. To modify the text values on the button objects, click the arrow next to any button to expand it and navigate to the SeeItSayItLabel object. Navigate to TextMeshPro where you can edit the text to your buttons as described in the steps above.
+4. To modify the text values on the button objects, click the arrow next to any button to expand it and navigate to the SeeItSayItLabel object. Navigate to TextMeshPro where you can edit the text to your buttons as described in the steps above.
 
 ![Lesson2 Chapter4 Step5](images/Lesson2_Chapter4_Step5.JPG)
 
-### Congratulations
+## Congratulations
 In this lesson, you learned how to copy, customize, and configure an MRTK profile setting (i.e., spatial awareness mesh visibility.) You also learned how to interact with a button to trigger events using tracked hands on the HoloLens 2. Finally, you learned how to create a simple UI interface using Unity's Text Mesh Pro the MRTK's Grid Object Collection component.
 
-[Next Lesson: Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)
+[Next Lesson: 4. Placing dynamic content and using solvers](mrlearning-base-ch3.md)
 

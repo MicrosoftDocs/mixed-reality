@@ -5,11 +5,10 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module - Project Initialization and First Application
+# 2. Initializing your project and first application
 
 In this first lesson, you'll learn about some of the capabilities the Mixed Reality Toolkit (MRTK) has to offer, start your first application for the HoloLens 2, and deploy it to the device.
 
@@ -41,7 +40,7 @@ In this first lesson, you'll learn about some of the capabilities the Mixed Real
 ![Lesson1 Chapter4 Step1](images/Lesson1Chapter4Step1.JPG)
 2. Switch to Universal Windows Platform by selecting Universal Windows Platform. Click the Switch Platform button to switch platforms. Applications running on HoloLens 2 are required to be Universal Windows Platform (UWP) compatible.
 ![Lesson1 Chapter4 Step2](images/Lesson1Chapter4Step2.JPG)
-3. Enable virtual reality by clicking on Player Settings in the Build Window, and enable the Virtual Reality Supported checkbox under XR Settings from the inspector panel, as shown in the image below. Note that you might need to drag the Build Settings window out of the way in order to see the inspector panel. The Virtual Reality Supported checkbox also applies to Mixed Reality and Augemented Reality headsets because it refers to the enabling of stereoscopic vision (rendering different images for each eye.)
+3. Enable virtual reality by clicking on Player Settings in the Build Window, and enable the Virtual Reality Supported checkbox under XR Settings from the inspector panel, as shown in the image below. Note that you might need to drag the Build Settings window out of the way in order to see the inspector panel. The Virtual Reality Supported checkbox also applies to Mixed Reality and Augmented Reality headsets because it refers to the enabling of stereoscopic vision (rendering different images for each eye.)
 ![Lesson1 Chapter4 Step3](images/Lesson1Chapter4Step3.JPG)
 4. From the same inspector panel, ensure that the Spatial Perception checkbox in the capabilities section is enabled under Publishing Settings. Spatial Perception allows us to visualize the spatial mapping mesh on a mixed reality device, such as HoloLens 2. Publishing Settings are found in the inspector panel, above XR Settings and under Other Settings.
 ![Lesson1 Chapter4 Step4](images/Lesson1Chapter4Step4.JPG)
@@ -62,12 +61,12 @@ In this first lesson, you'll learn about some of the capabilities the Mixed Real
 
 ### Configure the Mixed Reality Toolkit
 
-1. Configure the Mixed Reality Toolkit by selecting Mixed Reality Toolkit > Configure from the menu bar. If you don't see this menu item after importing the mixed reality toolkit, please restart Unity.
+1. Configure the MRTK by selecting Mixed Reality Toolkit > Configure from the menu bar. If you don't see this menu item after importing the mixed reality toolkit, please restart Unity.
   ![Lesson1 Chapter3 Step1](images/Lesson1Chapter3Step1.JPG)
 
   > Note: You may see a pop-up dialog box asking to select a profile for the Mixed Reality Toolkit. If so, select Ok, and choose the profile named "DefaultMixedRealityToolkitConfigurationProfile."
 
-2. Your scene will have several new items and modifications in it from the Mixed Reality Toolkit. Save your scene under a different name by clicking File>Save As, and give your scene a name, such as BaseScene. Keep your scene organized by saving it to the Scenes folder in your project’s Assets folder.
+2. Your scene will have several new items and modifications in it from the MRTK. Save your scene under a different name by clicking File>Save As, and give your scene a name, such as BaseScene. Keep your scene organized by saving it to the Scenes folder in your project’s Assets folder.
   ![Lesson1 Chapter3 Step2a](images/Lesson1Chapter3Step2a.JPG)
   ![Lesson1 Chapter3 Step2b](images/Lesson1Chapter3Step2b.JPG)
 
@@ -111,4 +110,4 @@ You have now deployed your first HoloLens 2 application. As you walk around, you
 
 >Note: You will cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md)
 
-[Next Lesson: User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration](mrlearning-base-ch2.md)
+[Next Lesson: 3. Creating user interface and configure Mixed Reality Toolkit ](mrlearning-base-ch2.md)

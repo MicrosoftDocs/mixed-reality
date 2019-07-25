@@ -35,7 +35,7 @@ Using your voice to command and control an interface can not only allow the user
 
 ### [Head-gaze and dwell](gaze-and-dwell.md)
 
-In some hands-free situations, using your voice is not ideal or even possible. Loud factory environments, privacy, or social norms can all be constraints. The head gaze + dwell model allows the user to navigate the app by using their head vector to point, while lingering, or dwelling on a button will activate it after a certain amount of time, tpically around 1 second or so. 
+In some hands-free situations, using your voice is not ideal or even possible. Loud factory environments, privacy, or social norms can all be constraints. The head gaze + dwell model allows the user to navigate the app by using their head vector to point, while lingering, or dwelling on a button will activate it after a certain amount of time, typically around 1 second or so. 
 
 
 ## Transitioning in and out of hands-free

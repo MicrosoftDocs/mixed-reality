@@ -24,7 +24,7 @@ The mixed reality app, however, has some additional capabilities that aren't pre
 
 ## How do I get started?
 
-First [install the tools](install-the-tools.md), following the instructions on downloading Visual Studio 2017 and the Microsoft HoloLens emulator. The holographic app templates are included in the same installer as the Microsoft HoloLens emulator. Also ensure that the option to install the templates is selected before installing.
+First [install the tools](install-the-tools.md), following the instructions on downloading Visual Studio 2019 and the Microsoft HoloLens emulator. The holographic app templates are included in the same installer as the Microsoft HoloLens emulator. Also ensure that the option to install the templates is selected before installing.
 
 Now you're ready to create your DirectX 11 Windows Mixed Reality app! Note, to remove the sample content, comment out the **DRAW_SAMPLE_CONTENT** preprocessor directive in *pch.h*.
 

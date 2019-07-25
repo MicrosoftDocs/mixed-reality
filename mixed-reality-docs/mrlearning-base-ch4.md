@@ -5,13 +5,12 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 05/02/2019
 ms.topic: article
-ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module - 3D Object Interaction
+# 5. Interacting with 3D objects
 
-In this lesson, we will go through basic 3D content and user experience. We will learn about: 
+In this tutorial, we learn about basic 3D content and user experience. We will learn about: 
 * Organizing 3D objects as part of a collection.
 * Bounding boxes for basic manipulation.
 * Near and far interaction.
@@ -19,7 +18,7 @@ In this lesson, we will go through basic 3D content and user experience. We will
 
 ## Objectives
 
-* Learn how to organize 3D content using MRTK's Grid Object Collection
+* Learn how to organize 3D content with MRTK's grid object collection
 * Implement bounding boxes
 * Configure 3D objects for basic manipulation--move, rotate, and scale
 * Explore near and far interaction
@@ -33,7 +32,7 @@ In this lesson, we will go through basic 3D content and user experience. We will
 
 ![Lesson4 Chapter1 Step1im](images/Lesson4_Chapter1_step1im.PNG)
 
-2. Import BaseModule Assets Using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that are used throughout this tutorial. The BaseModule Unity package can be found here: <https://github.com/Microsoft/MixedRealityLearning/releases/tag/V1.1>
+2. Import BaseModule assets using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). The BaseModule assets include 3D modules and other useful scripts that are used throughout this tutorial. The BaseModule Unity package can be found here: <https://github.com/Microsoft/MixedRealityLearning/releases/tag/V1.1>
 
 3. The coffee cup prefab can be recognized by a blue cube next to it. Do not select the coffee cup with the blue cube and small white paper because this denotes the original 3D model and not the prefab.) 
 
@@ -51,7 +50,6 @@ Search these words in the search box in your project panel and drag the 3D objec
 - Search for EarthCore_BaseModuleIncomplete. Drag into scene. Set the scale to x = 50.0 y = 50.0, z = 50.0.
 - Search for Cheese_BaseModuleIncomplete. Drag into scene. Set the scale to x = 0.05, y = 0.05, z = 0.05.
 - Search for Model_Platonic_BaseModuleIncomplete. Drag into scene. Set the scale to x = 0.13, y = 0.13, z = 0.13.
-- Search for CoffeeCup_BaseModuleIncomplete. Drag into scene.
 
 ![Lesson4 Chapter1 Step5im](images/Lesson4_Chapter1_step5im.PNG)
 
@@ -73,13 +71,13 @@ Search these words in the search box in your project panel and drag the 3D objec
 -	Search for manipulation.
 -	Select Manipulation Handler.
 -   Repeat for all 3D objects under the 3DObjectCollection object but not the 3DObjectCollection itself.
--   Ensure all 3D objects have a collider or box collider (Add Component>Box Cllider).
+-   Ensure all 3D objects have a collider or box collider (Add Component>Box Collider).
 
 ![Lesson4 Chapter2 Step1im](images/Lesson4_chapter2_step1im.PNG)
 
 >The manipulation handler is a component that lets you adjust settings for how objects behave when  manipulated. This includes rotation, scaling, moving, and constraining movement on a specific axis. 
 
-2. Restrict one cube so that it can only be scaled. Select one cube in the 3DObjectCollection object. In the Inspector panel, next to Two Handed Manipulation Type, click the drop-down menu and select Sscale. This makes it so that the user can only change the cube’s size.
+2. Restrict one cube so that it can only be scaled. Select one cube in the 3DObjectCollection object. In the Inspector panel, next to Two Handed Manipulation Type, click the drop-down menu and select Scale. This makes it so that the user can only change the cube’s size.
 
 ![Lesson4 Chapter2 Step2im](images/Lesson4_Chapter2_step2im.PNG)
 
@@ -93,15 +91,15 @@ Search these words in the search box in your project panel and drag the 3D objec
 
 ![Lesson4 Chapter2 Step3im](images/Lesson4_Chapter2_step3im.PNG)
 
-4. Select another cube in the 3DObjectCollection object and make it so that its movement is constrained to the fixed distance from the head. To do this, on the right of Constraint on Movement, click on the drop-down menu and select Fix Distance from the Head. This makes it so that the user can only move the cube within their field of vision. 
+4. Select another cube in the 3DObjectCollection object and make it so that its movement is constrained to a fixed distance from the head. To do this, to the right of Constraint on Movement label, click on the drop-down menu and select Fix Distance from the Head. This makes it so that the user can only move the cube within their field of vision. 
 
 ![Lesson4 Chapter2 Step4im](images/Lesson4_chapter2_step4im.PNG)
 
-Goal of the next few steps: We will enable grab and interaction with our 3D objects, and apply different manipulation settings.
+The goal of the next few steps is to enable grabbing and interacting with our 3D objects and applying different manipulation settings.
 
-5. Select the Cheese object, and click Add Component from Inspector panel. 
+5. Select the Cheese object, and click Add Component from the Inspector panel. 
 
-6. Search in the search box for Near Interaction Grabbable, and select the script. This component allows users to reach out and grab the objects with tracked hands. Objects can also be allowed to be manipulated from a distance, unless the Allow Far Manipulation checkbox is unchecked denoted by green circle in image below.
+6. Search in the search box for Near Interaction Grabbable, and select the script. This component enables users reach out and grab objects with tracked hands. Objects can also be manipulated from a distance, unless the Allow Far Manipulation checkbox is unchecked as denoted by green circle in image below.
 
 ![Lesson4 Chapter2 Step6im](images/Lesson4_Chapter2_step6im.PNG)
 
@@ -117,7 +115,7 @@ Goal of the next few steps: We will enable grab and interaction with our 3D obje
 
 ![Lesson4 Chapter2 Step10im](images/Lesson4_chapter2_step10im.PNG)
 
-11: For the earth core, change the release behavior to nothing. This makes it so that once the earth core is released from the users’ grasp, it doesn’t continue to move. 
+11: For the earth core, change the release behavior to nothing. This makes it so that once the earth core is released from the user's grasp, it doesn’t continue to move. 
 
 ![Lesson4 Chapter2 Step11im](images/Lesson4_Chapter2_step11im.PNG)
 
@@ -128,13 +126,13 @@ Bounding boxes make it easier and more intuitive to manipulate objects with one 
 >Note: Before you can add a bounding box to an object, you first need to have a collider on the object (e.g., a box collider), as we did previously in this lesson. Colliders can be added by selecting the object, and in the object's inspector panel selecting Add Component>Box Collider.
 >
 
-1. Add a box collider to the Earth Core object if one does not already exist. Box Collider and setup are not required if using the prefab provided in the Base Module Assets folder per the instructions given.) In the case of the earth core, we will need to add the box collider to the, node_id30, object underneath the earth core, as shown in the image below. Select node_id30 from the object's Inspector tab, click Add Component, and search for box collider. 
+1. Add a box collider to the Earth Core object if one does not already exist. The box collider and setup are not required if using the prefab provided in the Base Module Assets folder per the instructions given. In the case of the earth core, we added the box collider to the, node_id30, object underneath the earth core, as shown in the image below. Select node_id30 from the object's Inspector tab, click Add Component, and search for box collider. 
 
 ![Lesson4 Chapter3 Step1im](images/Lesson4_Chapter3_step1im.PNG)
 
 ![Lesson4 Chapter3 Step2im](images/Lesson4_chapter3_step2im.PNG)
 
-> Note: Make sure that you visualize the box collider so that it’s not too big or too small. It should be roughly the same size as the object it’s surrounding (in this example, the earth core). Adjust the box collider as needed by selecting the Edit Collider option in the box collider. You can either changing the x, y, and z values or drag the bounding box handlers in the Editor Scene window. 
+> Note: Make sure that you size the box collider so that it’s not too big or too small. It should be roughly the same size as the object it’s surrounding (in this example, the earth core). Adjust the box collider as needed by selecting the Edit Collider option in the box collider. You can either changing the x, y, and z values or drag the bounding box handlers in the Editor Scene window. 
 
 ![Lesson4 Chapter3 Noteim](images/Lesson4_Chapter3_noteim.PNG)
 
@@ -144,21 +142,21 @@ Bounding boxes make it easier and more intuitive to manipulate objects with one 
 
    
 
-   *In the next few steps, we will also change how the bounding box looks by adjusting the default box material, the material while it’s being grabbed as well as the visualization of handles (corner and side handles). The MRTK contains several options to customize the bounding box.*
+   *In the next few steps, we will also change how the bounding box looks by adjusting the default box material, the material while it’s being grabbed as well as the visualization of the corner and side handles. The MRTK contains several options to customize the bounding box.*
 
 4. In the Project panel, search for boundingbox, and you’ll see a list of materials denoted by a blue sphere in the search results as shown in the image below. 
 
 5. Drag the boundingbox material into the box material slot on the bounding box component. Also grab the boundingboxgrabbed material, and put that in the box grabbed material slot on the bounding box component.
 
-6. Drag the MRTK_BoundingBox_ScaleWidget material into the scale handle prefab slot on the bounding box component. 
+6. Drag the MRTK_BoundingBox_ScaleWidget prefab into the scale handle prefab slot on the bounding box component. 
 
-7. Drag the MRTK_BoundingBox_RotateWidget material into the rotation handle slot on the bonding box component.
+7. Drag the MRTK_BoundingBox_RotateWidget prefab into the rotation handle slot on the bonding box component.
 
 ![Lesson4 Chapter3 Step4 7Im](images/Lesson4_chapter3_step4-7im.PNG)
 
 8. Make sure the bounding box is targeting the right object. In the bounding box component, there is the target object and bounds override scripts. Make sure to drag the object that has the bounding box around it to both of these slots. In this example, drag the node_id30 object to both these slots as shown in the image below.
 
-> When you start or play the application, your object will be surrounded by a blue frame. You’re welcome to drag the corners of that frame to resize the object. If we want the scaling handles and the rotation handles to be larger and more visible, we recommend using the default bounding box settings (avoiding Steps 4 -through 7.) 
+> When you start or play the application, your object will be surrounded by a blue frame. You’re welcome to drag the corners of that frame to resize the object. If you want the scaling handles and the rotation handles to be larger and more visible, it is recommend using the default bounding box settings (avoiding Steps 4 -through 7.) 
 
 ![Lesson4 Chapter3 Step8im](images/Lesson4_Chapter3_step8im.PNG)
 
@@ -166,42 +164,43 @@ Bounding boxes make it easier and more intuitive to manipulate objects with one 
 
 ![Lesson4 Chapter3 Step9im](images/Lesson4_chapter3_step9im.PNG)
 
-### Adding Touch Effects
+### Adding touch effects
 In this example, we are going to play a sound effect when you touch an object with your hand.
 
 1. Add an audio source component to your game object. Select the Octa object in your scene hierarchy. In the inspector panel, click the Add Component button, search for and select audio source. We’ll use this audio source to play a sound effect in a later step. 
 
 >Note: Ensure that the Octa object has a box collider on it.
 
-2. Add the Near Interaction Touchable” component. Click the Add Component button in the Inspector panel, and search for near interaction touchable. Select it to add the component. NOTE: Fix screenshot to highlight that we're adding the component, and not just highlighting the box collider.
+2. Add the Near Interaction Touchable component. Click the Add Component button in the Inspector panel, and search for near interaction touchable. Select it to add the component. 
 
 >Note: Previously, we added near interaction grabbable. The difference between this and near interaction touchable is that the grabbable interaction is intended for an object to be grabbed and interacted with. The touchable component is intended for the object to be touched. Both components can be used together for a combination of interactions.
 
 ![Lesson4 Chapter4 Step1 2Im](images/Lesson4_chapter4_step1-2im.PNG)
 
-3. Add in the Hand Interaction Touch script. Note that this script is included with the Unity scene you imported as part of this demo , and it is not included in the oriTinal MRTK. Just like the previous step, click Add Component, and search for hand interaction touch to add it. 
-   Notice that you have three options with the script: 
+3. Add in the Hand Interaction Touch script. Note that this script is included with the Unity scene you imported as part of this demo, and it is not included in the original MRTK. Just like the previous step, click Add Component, and search for hand interaction touch to add it.
 
-   - On touch completed. This will trigger when you touch and release the object. 
-   - On touch started. This will trigger when the object is touched. 
-   - On touch updated. This will periodically trigger while your hand is touching the object. 
+>Notice that you have three options with the script: 
 
-   For this example, we will be working with the On Touch Started setting.
+>   - On Touch Completed: Triggers when you touch and release the object
+>   - On Touch Started: Triggers when the object is touched
+>   - On Touch Updated: Triggers periodically while your hand is touching the object
+
+>   For this example, we will be working with the On Touch Started setting.
 
 4. Click the + button on the On Touch Started option as shown in the image below. Drag the Octa object into the empty field. 
 
-5. In the drop-down that says No Function (above green rectangle in the image below), select AudioSource>PlayOneShot. We will add an audio clip to this field using the concepts below:
+5. In the drop-down that says No Function (above green rectangle in the image below), select AudioSource->PlayOneShot. We will add an audio clip to this field using the concepts below:
 
-   - The MRTK does provide a small list of audio clips. Feel free to explore these in your project panel. You will find them under the MixedRealityToolkit.SDK folder and then the Sstandard Assets folder. There you will see an Audio folder where all the audio clips are.
+   - The MRTK does provide a small list of audio clips. Feel free to explore these in your project panel. You will find them under the MixedRealityToolkit.SDK folder and then the Standard Assets folder. There you will see an Audio folder where all the audio clips are.
    - For this example, we are going to use the MRTK_Gem audio clip. 
    - To add an audio clip, simply drag the clip you want from the project panel into the AudioSource.PlayOneShot (marked by green box in the example above) in the inspector panel.
 
-   Now when the user reaches out and touches the Octa object, the audio track“MRTK_Gem will play. The Hand Interaction Touch script will also adjust the color of the object when touched. 
+   Now when the user reaches out and touches the Octa object, the audio track MRTK_Gem will play. The Hand Interaction Touch script will also adjust the color of the object when touched. 
 
 ![Lesson4 Chapter4 Step3 5 Noteim](images/Lesson4_chapter4_step3-5-noteim.PNG)
 
-### Congratulations 
-In this lesson, you learned how to organize 3D objects in a grid collection and how to manipulate 3D objects  (scaling, rotating, and moving) using near interaction (directly grabbing with tracked hands) and far interaction (using gaze rays or hand rays.) You also learned how to put bounding boxes around 3D objects, and learned how to use and customize the gizmos on the bounding boxes. Finally, you learned how to trigger events when touching an object.
+## Congratulations 
+In this tutorial, you learned how to organize 3D objects in a grid collection and how to manipulate 3D objects  (scaling, rotating, and moving) using near interaction (directly grabbing with tracked hands) and far interaction (using gaze rays or hand rays). You also learned how to put bounding boxes around 3D objects, and learned how to use and customize the gizmos on the bounding boxes. Finally, you learned how to trigger events when touching an object.
 
-[Next Lesson: Advanced Input](mrlearning-base-ch5.md)
+[Next Lesson: 6. Exploring advanced input options](mrlearning-base-ch5.md)
 

@@ -1,7 +1,24 @@
-## Lesson 4
+---
+title: MR Learning SpeechSDK Module - Speech Recognition and Transcription
+description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
+author: jessemcculloch
+ms.author: jemccull
+ms.date: 02/26/2019
+ms.topic: article
+keywords: mixed reality, unity, tutorial, hololens
+---
 
-In chapter 4, we will explore the Speech services Intent feature. We will set up our Azure LUIS Portal, setup our Intent/Entities/Utterances, publish our Intent Resource, connect our Unity app to our Intent Resource, and make our first Intent API call.
+# 4. Setting up intent and natural language understanding
 
+In this lesson, we will explore the Azure Speech Service's Intent feature. The Intent feature allows us to equip our application with AI-powered voice commands, where users can say non-specific voice commands, and still have their intent understood by the system. During this lesson, we will set up our Azure LUIS Portal, setup our Intent/Entities/Utterances, publish our Intent Resource, connect our Unity app to our Intent Resource, and make our first Intent API call.
+
+## Objectives
+
+- Learn how to set up intent and natural language understanding in our application
+- Learn how to set up Azure's LUIS Portal
+- Learn how to set up intent, entities, and utterances on Azure
+
+## Instructions
 1. Allow your machine to enable Dictation, to do this, go to Windows Settings, select "privacy," then "speech," and finally "inking & typing" and turn on speech services and typing suggestions.
 
 ![Module4Chapter4step1aim](images/module4chapter4step1aim.PNG)
@@ -10,7 +27,6 @@ In chapter 4, we will explore the Speech services Intent feature. We will set up
 
 ![Module4Chapter4step1cim](images/module4chapter4step1cim.PNG)
 
-> note: for information on how to do this on a Mac/Macbook, click [here](linkgoeshere).
 
 2. Log in to the [Azure Portal](https://portal.azure.com/). Once you are logged in, click on Create a resource, and search for "Language Understanding," and click enter.
 
@@ -24,7 +40,7 @@ In chapter 4, we will explore the Speech services Intent feature. We will set up
 
 4. Select your Region.  For the purpose of this tutorial, select "(US) West US." Then choose "F0" for the pricing tier. Now click "create" (located in the bottom left corner) to create the resource.
 
-   >  note: once you have clicked on "create," you will have to wait for the service to be created, this might take a minute.
+>  Note: once you have clicked on "create," you will have to wait for the service to be created, this might take a minute.
 
 5. A notification will appear in the portal once the Resource is created. Click on this notification and select "Go to resource."
 
@@ -34,7 +50,7 @@ In chapter 4, we will explore the Speech services Intent feature. We will set up
 
 7. Back in the "Quick Start" page under Section 2b, click on "Language Understanding Portal" (shown in the image above) to be redirected to the webpage which you will use to create your new service, within the LUIS application.
 
-> note: Upon reaching the "Language Understanding Portal," you may need to login, if you are not already, with the same credentials as your Azure portal. If this is your first time using LUIS, you will need to scroll down to the bottom of the welcome page, to find and click on the "Create LUIS" app button.
+> Note: Upon reaching the "Language Understanding Portal," you may need to login, if you are not already, with the same credentials as your Azure portal. If this is your first time using LUIS, you will need to scroll down to the bottom of the welcome page, to find and click on the "Create LUIS" app button.
 
 8. Once logged in, click My Apps (if you are not in that section currently). You can then click on Create new app. Name the new app “Speech SDK Learning Module.” Add “Speech SDK Learning Module" to the description field, as well. Then click "done."
 
@@ -50,9 +66,9 @@ In chapter 4, we will explore the Speech services Intent feature. We will set up
 
 ![Module4Chapter4step10im](images/module4chapter4step10im.PNG)
 
-> note: it is important to use the names of Intents and Entities used in this tutorial because the Lunarcom app will be referencing them by name.  For other projects, naming conventions can be whatever you choose. 
+> Note: It is important to use the names of Intents and Entities used in this tutorial because the Lunarcom app will be referencing them by name. 
 >
-> note: you should now have 2 Intents - “PressButton” and “None."
+> Note: you should now have 2 Intents - “PressButton” and “None."
 
 11. Under App Assets on the left, select “Entities” and click “Create New Entity” and name it “Action” and keep the Entity Type as “Simple.”
 
@@ -68,7 +84,7 @@ In chapter 4, we will explore the Speech services Intent feature. We will set up
 
 14. Click on the "View options" dropdown on the right and select "show entity values." 
 
-    ![Module4Chapter4step14aim](images/module4chapter4step14aim.PNG)Click on the “Enter an example…” textbox. Then, enter the following utterances: 
+![Module4Chapter4step14aim](images/module4chapter4step14aim.PNG)Click on the “Enter an example…” textbox. Then, enter the following utterances: 
 
 ![Module4Chapter4step14bim](images/module4chapter4step14bim.PNG)
 
@@ -106,9 +122,9 @@ In chapter 4, we will explore the Speech services Intent feature. We will set up
 
 ![Module4Chapter4step22im](images/module4chapter4step22im.PNG)
 
-> note: ensure to copy and save the Endpoint URL associated with the resource we just assigned so that it is easily accessible for the next section.
+> Note: Ensure to copy and save the Endpoint URL associated with the resource we just assigned so that it is easily accessible for the next section.
 >
-> note: for the Tenant name, put your corporation or profile that you created for this application.
+> Note: For the Tenant name, put your corporation or profile that you created for this application.
 
 23. Now, open the new app in Unity and select the Lunarcom_Base object in the hierarchy. Click “Add Component” in the inspector panel and search for and select “LunarcomIntentRecognizer.”
 
@@ -118,17 +134,15 @@ In chapter 4, we will explore the Speech services Intent feature. We will set up
 
 ![Module4Chapter4step24im](images/module4chapter4step24im.PNG)
 
->  note: In the "LunarcomOfflineRecognizer" component in the inspector panel, make sure that “disable” is selected for "SimulateOfflineMode" otherwise, testing the program will not work. 
+>  Note: In the "LunarcomOfflineRecognizer" component in the inspector panel, make sure that “disable” is selected for "SimulateOfflineMode" otherwise, testing the program will not work. 
 
 25. Press the Play button in the Unity Editor and click the rocket button to start intent recognition. Utter the phrase “select the launch rocket button.”
 
->  note: The app recognized the desired function and activated the rocket button.
+>  Note: The app recognized the desired function and activated the rocket button.
 >
 > ![Module4Chapter4step24im](images/module4chapter4note2im.PNG)
 
 ## Congratulations
 
-You officially learned how to add speech commands from the speech SDK program! Now your program can recognize speech commands of all kinds of variants. Test it out and have a little fun with it!
-
-[Next Lesson: Speech SDK Lesson 5](placeholderlink)
+In this lesson, we learned how to add AI-powered speech commands! Now your program can recognize users' intent even if they do not utter precise voice commands.
 
