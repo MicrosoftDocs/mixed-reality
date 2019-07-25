@@ -195,5 +195,5 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
 ## Congratulations
 In this tutorial, you learned the fundamentals of Azure Spatial Anchors. This esson provided you with several buttons that let you  explore the various steps required to start and stop an Azure session, and create, upload, and download azure anchors on a single device. In the next lesson, we'll learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted. During the series, you will also learn how to transfer anchor IDs between multiple devices to achieve spatial alignment, and learn about multi-user shared sessions, forthcoming as part of Sharing tutorial.
 
-[Next Lesson: ASA Lesson 2](mrlearning-asa-ch2.md)
+[Next Lesson: 2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
 
