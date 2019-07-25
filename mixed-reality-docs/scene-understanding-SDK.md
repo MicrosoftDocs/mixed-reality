@@ -164,7 +164,7 @@ SceneUnderstanding.QuerySettings querySettings;
 byte[] newSceneBlob = Scene.ComputeSerialized(querySettings, 10.0f);
 
 // If we want to use it immediatley we can de-serialize the scene ourselves
-Scene mySceneDeSerialized = Scene.Deserialize(newSceneBlob);
+Scene mySceneDeSerialized = SceneObserver.Deserialize(newSceneBlob);
 
 // Save newSceneBlob for later
 ```
