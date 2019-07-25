@@ -8,11 +8,11 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# Displaying Azure Spatial Anchor Feedback
+# 3. Displaying Azure Spatial Anchor feedback
 
 In this lesson, you'll learn about how to provide users with feedback about anchor discovery, events, and status when using Azure Spatial Anchors.
 
-Objectives:
+## Objectives
 
 * Learn how to set up a UI panel that displays important information about the current ASA session
 
