@@ -196,7 +196,7 @@ There is another function that retrives components in the Scene called ***FindCo
 Scene myNextScene = SceneObserver.Compute(querySettings, 10.0f, myScene);
 
 // Use the Id for the floor we found last time, and find it again
-firstFloor = (SceneObject)myNextScene.FindComponent(firstFloor.Id)
+firstFloor = (SceneObject)myNextScene.FindComponent(firstFloor.Id);
 
 if (firstFloor != null)
 {
