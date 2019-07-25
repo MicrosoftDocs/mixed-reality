@@ -174,7 +174,7 @@ Scene mySceneDeSerialized = Scene.Deserialize(newSceneBlob);
 Now that your application has a scene, your application will be looking at and interacting with SceneObjects. This is done by accessing the **SceneObjects** property:
 
 ```cs
-SceneObject firstFloor = nullptr;
+SceneObject firstFloor = null;
 
 // Find the first floor object
 foreach (var sceneObject in myScene.SceneObjects)
@@ -197,7 +197,7 @@ Scene myNextScene = SceneObserver.Compute(querySettings, 10.0f, myScene);
 // Use the Id for the floor we found last time, and find it again
 firstFloor = (SceneObject)myNextScene.FindComponent(firstFloor.Id)
 
-if (firstFloor != nullptr)
+if (firstFloor != null)
 {
     // We found it again, we can now update the transforms of all objects we attatched to this floor transform
 }
