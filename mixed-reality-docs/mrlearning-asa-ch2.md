@@ -76,5 +76,5 @@ We learn how to implement Azure Spatial Anchors as part of a fully interactive l
 
 In the next Lesson, we will learn how to provide users with real-time feedback. This feedback will include information about Anchor creation, the quality of environment understanding, and the state of the Azure session. Without feedback, users may not know whether an anchor has successfully been upload to Azure, whether the quality of the environment is sufficient for anchor creation, or the current state.
 
-[Next Lesson: ASA Tutorial 3](mrlearning-asa-ch3.md)
+[Next Lesson: 3. Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md)
 
