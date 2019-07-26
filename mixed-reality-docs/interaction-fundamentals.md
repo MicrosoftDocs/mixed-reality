@@ -110,14 +110,14 @@ Here are some examples of how affordances and behaviors are optimized for each i
     <tr>
         <td><a href="hands-and-tools.md">Hands and motion controllers</a></td>
         <td>I see a hand mesh, I see a fingertip affordance or hand/controller rays.</td>
-        <td>I see grabbable handles or a bounding box appear when my hand is near.</td>
+        <td>I see grabbable handles or a bounding box appears when my hand is near an object.</td>
         <td>I hear audible tones and see animations on grab and release.</td>
     </tr>
     <tr>
         <td><a href="gaze-and-commit.md">Head-gaze and commit</a></td>
         <td>I see a cursor in the center of my field of view.</td>
-        <td>The head-gaze cursor changes state when over certain objects.</td>
-        <td>I see/ hear visual and audible confirmations when I take action.</td>
+        <td>The head-gaze cursor changes state when it's over certain objects.</td>
+        <td>I see/hear visual and audible confirmations when I take action.</td>
     </tr>	
     <tr>
         <td><a href="hands-free.md">Hands-free (Head-gaze and dwell)</a></td>
@@ -128,7 +128,7 @@ Here are some examples of how affordances and behaviors are optimized for each i
     <tr>
         <td><a href="hands-free.md">Hands-free (Voice commanding)</a></td>
         <td>I see a listening indicator and captions that show what the system heard.</td>
-        <td>I get voice prompts and hints. When I say: "what can I say?" I see feedback.</td>
+        <td>I get voice prompts and hints. When I say: "What can I say?" I see feedback.</td>
         <td>I see/ hear visual and audible confirmations when I give a command, or get disambiguation UX when needed.</a></td>
     </tr>
 </table>
