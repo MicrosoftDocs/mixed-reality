@@ -232,4 +232,4 @@ Working with mobile platforms, we constructed it with performance in mind.  This
 * [MRTK getting started guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 * [MRTK documentation home](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Install the tools](install-the-tools.md)
-* [Porting from HTK/MRTK to MRTK version 2](mrtk-porting-guide.md)
+* [Porting from HTK/MRTK to MRTK version 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
