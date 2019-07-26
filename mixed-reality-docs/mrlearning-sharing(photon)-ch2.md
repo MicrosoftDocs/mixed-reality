@@ -3,7 +3,7 @@
 
 In this tutorial, we learn how to prepare and configure Unity for application development, including importing the Mixed Reality Toolkit, configuring build settings, and preparing our scene.
 
-Objectives:
+## Objectives
 
 - Configure Unity for application development
 
