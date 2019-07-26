@@ -15,7 +15,7 @@ Currently all of our tutorials and sample apps are Unity based.  As we develop c
 
 ## HoloLens 2 tutorials
 
-The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications.  The initial modules are for HoloLens 2 and implement the Mixed Reality Toolkit 2.0 (MRTK 2.0).
+The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications.  The tutorials are based on the [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity).
 
 * Getting started tutorials - [1 of 7 Overview and objectives](mrlearning-base.md)
 * Azure Spatial Anchor tutorials - [1 of 3 Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
