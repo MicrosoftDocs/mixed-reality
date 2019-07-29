@@ -50,7 +50,7 @@ To start developing OpenXR applications for HoloLens 2:
 
 To start developing OpenXR applications for immersive Windows Mixed Reality headsets:
 
-1. Be sure you are running the Windows 10 May 2019 Update (1903), which is the minimum requirement for Windows Mixed Reality end users to run OpenXR applications.  If you're on an earlier version of Windows 10, you can upgrade to the May 2019 Update using the [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).  If you're not able to update your PC, it is also possible to develop your OpenXR app using Windows 10 October 2018 Update (1809), although you may experience lower performance or other issues.
+1. Be sure you are running the Windows 10 May 2019 Update (1903), which is the minimum requirement for Windows Mixed Reality end users to run OpenXR applications.  If you're on an earlier version of Windows 10, you can upgrade to the May 2019 Update using the [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).  If you're not able to update your PC, it is also possible to [develop your OpenXR app using Windows 10 October 2018 Update (1809)](openxr.md#support-for-windows-10-october-2018-update), although you may experience lower performance or other issues.
 1. Set up a Windows Mixed Reality headset or follow the instructions to [enable the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md).
 1. Install the [Mixed Reality OpenXR Developer Portal app](https://www.microsoft.com/store/productId/9n5cvvl23qbt).  Installing this app will automatically install the Mixed Reality OpenXR Runtime.  After the OpenXR runtime is installed, the Microsoft Store will keep the runtime up to date.
 1. Run the Mixed Reality OpenXR Developer Portal app from the Start menu and follow the instructions to make the runtime active.
@@ -59,18 +59,6 @@ To start developing OpenXR applications for immersive Windows Mixed Reality head
 
 > [!NOTE]
 > The Mixed Reality OpenXR Runtime will shortly be available to all Windows Mixed Reality end users through the Mixed Reality Portal app.
-
-### Support for Windows 10 October 2018 Update
-
-If you're running the Windows 10 May 2019 Update (1903) and followed the steps above, you should be ready to develop OpenXR applications for Windows Mixed Reality!
-
-If you're not able to [upgrade your development PC to the May 2019 Update](https://www.microsoft.com/en-us/software-download/windows10), you can set up your Windows 10 October 2018 Update (1809) PC for development by following one more step:
-
-1. Follow the steps above to get started with OpenXR on your desktop PC.
-1. To set the Mixed Reality OpenXR Runtime as your system's active OpenXR runtime, install the [Mixed Reality OpenXR Developer Compatibility Pack](https://aka.ms/openxr-compat).
-
-> [!WARNING]
-> Although Windows 10 October 2018 Update (1809) can be used when developing your OpenXR applications, the Windows 10 May 2019 Update (1903) is the minimum requirement for end users to use OpenXR with Windows Mixed Reality.  You may experience lower performance or other issues when running your OpenXR app on the October 2018 Update.  It is strongly recommended that you upgrade your development PC to the Windows 10 May 2019 Update (1903).
 
 ## Building a sample OpenXR app
 
@@ -101,6 +89,16 @@ While some of these extensions may start out as vendor-specific MSFT extensions,
 ## Troubleshooting
 
 Here are some troubleshooting tips for the Mixed Reality OpenXR Runtime.  If you have any other questions about the [OpenXR 1.0 specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html), please visit the [Khronos OpenXR Forums](https://community.khronos.org/c/openxr) or [Slack #openxr channel](https://khr.io/slack).
+
+### Developing on Windows 10 October 2018 Update
+
+If you're not able to [upgrade your development PC to the May 2019 Update](https://www.microsoft.com/en-us/software-download/windows10), you can set up your Windows 10 October 2018 Update (1809) PC for development by following one more step:
+
+1. Follow the steps above to get started with OpenXR on your desktop PC.
+1. To set the Mixed Reality OpenXR Runtime as your system's active OpenXR runtime, install the [Mixed Reality OpenXR Developer Compatibility Pack](https://aka.ms/openxr-compat).
+
+> [!NOTE]
+> Although Windows 10 October 2018 Update (1809) can be used when developing your OpenXR applications, the Windows 10 May 2019 Update (1903) is the minimum requirement for end users to use OpenXR with Windows Mixed Reality.  You may experience lower performance or other issues when running your OpenXR app on the October 2018 Update.  It is strongly recommended that you upgrade your development PC to the Windows 10 May 2019 Update (1903).
 
 ### OpenXR app not starting Windows Mixed Reality
 
