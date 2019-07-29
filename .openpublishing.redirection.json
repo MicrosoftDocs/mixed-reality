@@ -2,7 +2,7 @@
 	"redirections": [
 		{
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
-			"redirect_url": "mixed-reality-docs/updating-hololens.md",
+			"redirect_url": "updating-hololens.md",
 			"redirect_document_id": false
 		},
 		{
