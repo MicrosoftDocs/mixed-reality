@@ -2,7 +2,7 @@
 	"redirections": [
 		{
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
-			"redirect_url": "updating-hololens.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/updating-hololens",
 			"redirect_document_id": false
 		},
 		{
