@@ -33,7 +33,7 @@ The core OpenXR 1.0 API provides the base functionality you'll need to build an 
 * Input and haptics​
 * Graphics API + platform integration​
 
-To learn about the OpenXR API, check out the [OpenXR 1.0 specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) and [OpenXR 1.0 API reference](https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/).  For more information, see the [Khronos OpenXR page](https://www.khronos.org/openxr/).
+To learn about the OpenXR API, check out the [OpenXR 1.0 specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) and [OpenXR 1.0 API reference](https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html).  For more information, see the [Khronos OpenXR page](https://www.khronos.org/openxr/).
 
 To target the full feature set of HoloLens 2, you'll also use cross-vendor and vendor-specific OpenXR extensions that enable additional features beyond the OpenXR 1.0 core, such as articulated hand tracking, eye tracking, spatial mapping and spatial anchors.  See the [Roadmap section](openxr.md#roadmap) section below for more information on the extensions coming later this year.
 
@@ -114,5 +114,5 @@ If the Install button on the Mixed Reality OpenXR Developer Portal app does noth
 
 * [More information on OpenXR](https://www.khronos.org/openxr/)
 * [OpenXR 1.0 specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html)
-* [OpenXR 1.0 API reference](https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/)
+* [OpenXR 1.0 API reference](https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html)
 * [OpenXR 1.0 quick reference guide](https://www.khronos.org/registry/OpenXR/specs/1.0/refguide/OpenXR-1.0-web.pdf)
