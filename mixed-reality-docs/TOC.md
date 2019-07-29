@@ -22,7 +22,6 @@
 #### [Reset or recover your HoloLens](reset-or-recover-your-hololens.md)
 #### [Saving and finding your files](saving-and-finding-your-files.md)
 #### [See your photos](see-your-photos.md)
-#### [Sensor tuning](sensor-tuning.md)
 #### [Updating HoloLens](updating-hololens.md)
 #### [Device Sharing](device-sharing.md)
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
