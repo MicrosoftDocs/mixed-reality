@@ -1,4 +1,5 @@
 ---
+
 title: Scene understanding
 description: Introduction to scene understanding capabilities for HoloLens
 author: szymons
@@ -43,6 +44,7 @@ Scene Understanding provides new constructs specifically designed to simplify pl
 
 <figure><img src="images/SUWatertight.png" alt="Quads with inference enabled, placement is no longer limited to scanned areas." />
 <figcaption>Quads with inference enabled, placement is no longer limited to scanned areas.</figcaption></figure>
+&nbsp;
 &nbsp;
 If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is be preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene Understanding SDK reference](scene-understanding-SDK.md)
 
