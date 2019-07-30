@@ -38,11 +38,11 @@ Many of the core scenarios for environment aware applications (Placement, Occlus
 
 Scene Understanding provides new constructs specifically designed to simplify placement scenarios. A Scene can compute primitives called SceneQuads which describe flat surfaces on which holograms can be placed. SceneQuads have specifically been designed around placement and describe a 2D surface, and provide an API for placement on that surface. Previously, when using the triangle mesh to perform placement, one had to scan all areas of the quad and perform hole filling/post-processing to identify good locations for object placement. This is not always necessary with Quads, as the Scene Understanding runtime is capable of inferring which areas of the quad that were not scanned, and invalidate areas of the quad that are not part of the surface.
 
-![SceneQuads](images/SUQuads.png) 
-SceneQuads with inference disabled, capturing placement areas for scanned regions.
+<figure><img src="images/SUQuads.png" alt="SceneQuads with inference disabled, capturing placement areas for scanned regions." />
+<figcaption>SceneQuads with inference disabled, capturing placement areas for scanned regions.</figcaption></figure>
 
-![Inferred SceneQuads](images/SUWatertight.png) 
-Quads with inference enabled, placement is no longer limited to scanned areas.
+<figure><img src="images/SUWatertight.png" alt="Quads with inference enabled, placement is no longer limited to scanned areas." />
+<figcaption>Quads with inference enabled, placement is no longer limited to scanned areas.</figcaption></figure>
 
 If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is be preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene Understanding SDK reference](scene-understanding-SDK.md)
 
