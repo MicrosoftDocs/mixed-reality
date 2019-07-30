@@ -14,7 +14,7 @@ Scene understanding provides Mixed Reality developers with a structured, high-le
 
 ![Detected labeled planar surfaces](images/SUQuads.png)
 ![Watertight simplified environment mesh](images/SUWatertight.png)
-![Spatial mapping mesh data](images/SUBoundless.jpg)
+![Spatial mapping mesh data](images/SUBoundless.png)
 
 This document is intended to provide a scenario overview and to clarify the relationship that scene understanding and spatial mapping share. For details on how scene understanding works and how to develop for it, please see the scene understanding [SDK overview](scene-understanding-SDK.md) documentation.
 
