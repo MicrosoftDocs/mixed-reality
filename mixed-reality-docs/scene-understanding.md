@@ -12,7 +12,7 @@ keywords: Scene Understanding, Spatial Mapping, Windows Mixed Reality, Unity
 
 Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes such as the highly accurate less structured [spatial mapping](spatial-mapping.md) and new AI driven runtimes. By combining these technologies, Scene Understanding will generate representations of 3d environments that are much more similar to those you may have used in frameworks such as Unity or ARKit/ARCore. Scene understanding starts with a SceneProcessor which is updated by your application and contains Scene data. Today the technology is capable of generating 3 distinct but related object categories: simplified watertight environment meshes that infer the planar room structure without clutter, plane regions for placement that we call Quads, and a snapshot of the [spatial mapping](spatial-mapping.md) mesh that aligns with the Quads/Watertight data that we surface.
 
-![Spatial mapping mesh, labeled planar surfaces, watertight mesh](images/SUScenarios.PNG)
+![Spatial mapping mesh, labeled planar surfaces, watertight mesh](images/SUScenarios.png)
 
 This document is intended to provide a scenario overview and to clarify the relationship that scene understanding and spatial mapping share. For details on how scene understanding works and how to develop for it, please see the scene understanding [SDK overview](scene-understanding-SDK.md) documentation.
 
