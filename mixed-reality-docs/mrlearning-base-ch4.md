@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module - 3D Object Interaction
+title: Getting started tutorials - 5. Interacting with 3D objects
 description:
 author: jessemcculloch
 ms.author: jemccull

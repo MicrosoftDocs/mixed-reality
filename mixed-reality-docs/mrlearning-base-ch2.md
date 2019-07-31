@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module - User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
+title: Getting started tutorials - 3. Creating user interface and configure Mixed Reality Toolkit
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
