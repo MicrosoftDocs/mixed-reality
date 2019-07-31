@@ -23,13 +23,13 @@ Welcome to the second module of the HoloLens 2 tutorials. Before getting started
 ### Downloading and importing assets
 Before beginning, download and import the following assets:
 
-[Azure Spatial Anchors](https://github.com/azure/azure-spatial-anchors-samples/releases)
+[Azure Spatial Anchors v1.1.0](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v1.1.0/AzureSpatialAnchors.unitypackage)
 
-[MR Base module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2)
+[MR Base module Asset Pack v1.2](https://github.com/microsoft/MixedRealityLearning/releases/download/1.2/BaseModuleAssets-1.2.unitypackage)
 
-[ASA module Asset Pack](https://github.com/microsoft/MixedRealityLearning/releases/tag/ASA_1.1)
+[ASA module Asset Pack v1.0](https://github.com/microsoft/MixedRealityLearning/releases/download/v1/ASAModuleAssets_1.unitypackage)
 
-[Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/)
+[Mixed Reality Toolkit 2.0.0RC1](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC1-Refresh/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC1-Refresh.unitypackage)
 
 > Note: See Step 5 for specific instructions on how to import Azure Spatial Anchors, Step 6 for specific instructions on the MR Base module Asset Pack, and steps 3 through 4 for specific instructions on the Mixed Reality Toolkit (MRKT).
 
