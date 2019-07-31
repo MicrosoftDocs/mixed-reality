@@ -218,7 +218,7 @@
 ###### [2. Getting Unity ready for development](mrlearning-sharing(photon)-ch2.md)
 ###### [3. Connecting multiple users](mrlearning-sharing(photon)-ch3.md)
 ###### [4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
-###### [5. Integration Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
+###### [5. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
 #### HoloLens (1st gen) open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)

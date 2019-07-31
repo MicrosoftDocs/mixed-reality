@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module - Dynamic Content Placement and Solvers
+title: Getting started tutorials - 4. Placing dynamic content and using solvers
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull

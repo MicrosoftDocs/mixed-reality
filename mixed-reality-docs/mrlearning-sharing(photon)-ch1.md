@@ -1,5 +1,5 @@
 ---
-title: MR Learning Sharing Module for HoloLens 2
+title: Multi-user capabilities tutorials - 1. Setting up Photon Unity Networking
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull

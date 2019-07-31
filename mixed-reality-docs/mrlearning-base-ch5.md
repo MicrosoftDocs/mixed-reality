@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module - Advanced Input
+title: Getting started tutorials - 6. Exploring advanced input options
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
