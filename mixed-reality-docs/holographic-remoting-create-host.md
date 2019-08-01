@@ -102,7 +102,7 @@ catch(winrt::hresult_error& e)
 >[!IMPORTANT]
 >As with any C++/WinRT API ```Connect``` might throw an winrt::hresult_error which needs to be handled.
 
->[!INFO]
+>[!TIP]
 >To avoid using [C++/WinRT](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/) language projection the file ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` located inside the Holographic Remoting NuGet package can be included. It contains declarations of the underlying COM interfaces. The use of C++/WinRT is recommended though.
 
 Listening for incoming connections on the host app can be done by calling the ```Listen``` method. Both the handshake port and transport port can be specified during this call. The handshake port is used for the initial handshake. The data is then send over the transport port. By default **8265** and **8266** are used.
