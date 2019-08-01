@@ -10,14 +10,18 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 
 
 
-# Add holographic remoting
+# Add Holographic Remoting (HoloLens 1)
+
+>[!IMPORTANT]
+>This document describes the creation of a host application for HoloLens 1. Host application for **HoloLens 1** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 1 are not compatible with HoloLens 2 and vice versa.
 
 ## HoloLens 2
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2. This requires a new version of the Holographic Remoting NuGet package. If an application using the Holographic Remoting NuGet package with a version number smaller than 2.0.0.0 attempts to connect to the Holographic Remoting Player on HoloLens 2, the connection will fail.
 
-HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2.  This will require a new version of the Holographic Remoting NuGet package that is not publicly available yet.  If an application using the HoloLens NuGet package attempts to connect to the Holographic Remoting Player on HoloLens 2, the connection will fail.  Watch this page for updates once the HoloLens 2 NuGet package is available.
+>[!NOTE]
+>Guidance specific to HoloLens 2 can be found [here](holographic-remoting-create-host.md).
+
 
 ## Add holographic remoting to your desktop or UWP app
 
@@ -44,7 +48,7 @@ Follow these steps to get the NuGet package for holographic remoting, and add a 
 
 First, we need an instance of HolographicStreamerHelpers. Add this to the class that will be handling remoting.
 
-```
+```cpp
 #include <HolographicStreamerHelpers.h>
 
    private:
@@ -53,7 +57,7 @@ First, we need an instance of HolographicStreamerHelpers. Add this to the class 
 
 You'll also need to track connection state. If you want to render the preview, you need to have a texture to copy it to. You also need a few things like a connection state lock, some way of storing the IP address of HoloLens, and so on.
 
-```
+```cpp
 private:
        Microsoft::Holographic::HolographicStreamerHelpers^ m_streamerHelpers;
 
@@ -72,7 +76,7 @@ private:
 
 To connect to a HoloLens device, create an instance of HolographicStreamerHelpers and connect to the target IP address. You will need to set the video frame size to match the HoloLens display width and height, because the Holographic Remoting library expects the encoder and decoder resolutions to match exactly.
 
-```
+```cpp
 m_streamerHelpers = ref new HolographicStreamerHelpers();
        m_streamerHelpers->CreateStreamer(m_d3dDevice);
 
@@ -95,7 +99,7 @@ The device connection is asynchronous. Your app needs to provide event handlers 
 
 The OnConnected event can update the UI, start rendering, and so on. In our desktop code sample, we update the window title with a "connected" message.
 
-```
+```cpp
 m_streamerHelpers->OnConnected += ref new ConnectedEvent(
            [this]()
            {
@@ -105,7 +109,7 @@ m_streamerHelpers->OnConnected += ref new ConnectedEvent(
 
 The OnDisconnected event can handle reconnection, UI updates, and so on. In this example, we reconnect if there is a transient failure.
 
-```
+```cpp
 Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_streamerHelpers);
        m_streamerHelpers->OnDisconnected += ref new DisconnectedEvent(
            [this, streamerHelpersWeakRef](_In_ HolographicStreamerConnectionFailureReason failureReason)
@@ -145,7 +149,7 @@ Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_strea
 
 When the remoting component is ready to send a frame, your app is provided an opportunity to make a copy of it in the SendFrameEvent. Here, we copy the frame to a swap chain so that we can display it in a preview window.
 
-```
+```cpp
 m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
            [this](_In_ const ComPtr<ID3D11Texture2D>& spTexture, _In_ FrameMetadata metadata)
            {
@@ -177,13 +181,13 @@ To render content using remoting, you set up a virtual IFrameworkView within you
 
 Instead of creating them yourself, the holographic space and speech components come from your HolographicRemotingHelpers class:
 
-```
+```cpp
 m_appView->Initialize(m_streamerHelpers->HolographicSpace, m_streamerHelpers->RemoteSpeech);
 ```
 
 Instead of using an update loop inside of a Run method, you provide tick updates from the main loop of your desktop or UWP app. This allows your desktop or UWP app to remain in control of message processing.
 
-```
+```cpp
 void DesktopWindow::Tick()
    {
        auto lock = m_deviceLock.Lock();
@@ -195,7 +199,7 @@ void DesktopWindow::Tick()
 
 The holographic app view's Tick() method completes one iteration of the update, draw, present loop.
 
-```
+```cpp
 void AppView::Tick()
    {
        if (m_main)
@@ -219,7 +223,7 @@ The holographic app view update, render, and present loop is exactly the same as
 
 To disconnect - for example, when the user clicks a UI button to disconnect - call Disconnect() on the HolographicStreamerHelpers, and then release the object.
 
-```
+```cpp
 void DesktopWindow::DisconnectFromRemoteDevice()
    {
        // Disconnecting from the remote device can change the connection state.
@@ -243,7 +247,7 @@ The Windows Holographic remoting player is offered in the Windows app store as a
 
 The holographic app view will need a way to provide your app with the Direct3D device, which must be used to initialize the holographic space. Your app should use this Direct3D device to copy and display the preview frame.
 
-```
+```cpp
 internal:
        const std::shared_ptr<DX::DeviceResources>& GetDeviceResources()
        {
