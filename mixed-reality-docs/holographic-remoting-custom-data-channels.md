@@ -18,8 +18,8 @@ Use custom data channels to send custom data over an established remoting connec
 >[!IMPORTANT]
 >Custom data channels require a custom host app and a custom player app, as it allows for communication between the two custom apps.
 
->[!INFO]
->See also the host and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) for a simple ping-pong example. Uncomment ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` inside the SampleHostMain.h / SamplePlayerMain.h files to enable the sample code.
+>[!TIP]
+>A simple ping-pong example can be found in the host and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples). Uncomment ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` inside the SampleHostMain.h / SamplePlayerMain.h files to enable the sample code.
 
 
 # Create a custom data channel
