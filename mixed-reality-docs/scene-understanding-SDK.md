@@ -161,7 +161,7 @@ While Scenes can be computed for direct consumption, they can also be computed i
 SceneUnderstanding.QuerySettings querySettings;
 
 // Compute a scene but serialized as a byte array
-byte[] newSceneBlob = Scene.ComputeSerialized(querySettings, 10.0f);
+byte[] newSceneBlob = SceneObserver.ComputeSerialized(querySettings, 10.0f);
 
 // If we want to use it immediatley we can de-serialize the scene ourselves
 Scene mySceneDeSerialized = Scene.Deserialize(newSceneBlob);
