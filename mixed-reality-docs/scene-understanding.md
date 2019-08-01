@@ -71,10 +71,6 @@ While [Spatial Mapping Visualization](spatial-mapping.md#Visualization) can be u
 
 Additionally, the total number of surfaces returned by Spatial Mapping is limited by the internal spatial cache, while Scene Understanding's version of the Spatial Mapping mesh is able to access spatial mapping data that is not cached. Because of this, Scene Understanding is more suited to capturing mesh representations for larger spaces (for example, larger than a single room) for visualization or further mesh processing. The world mesh returned with EnableWorldMesh will have a consistent level of detail throughout, which may yield a more pleasing visualization if rendered as wireframe.
 
-## Developing with the Scene Understanding Scene Understanding SDK and MRTK
-
-While MRTK is a great entry point to Scene Understanding, the range of scenarios that might make use Scene Understanding are so varied that we expect many developers to build solutions that access Scene Understanding using the Scene Understanding SDK directly. The varied scenarios that Scene Understanding is used for, room measurement, slate/hologram placement, room analysis for application interaction, occlusion rendering, mesh analysis etc... have such varied usage/memory/timing patterns that are best implemented directly. Because we expect many developers to access the SDK, the APIs were designed in a high level and intuitive manner that will hopefully make development with real world environments easier than ever before. We highly recommend for developers to get familiar with the SDK documentation [here](scene-understanding-SDK.md).
-
 ### See Also
 
 * [Scene Understanding SDK](scene-understanding-SDK.md)
