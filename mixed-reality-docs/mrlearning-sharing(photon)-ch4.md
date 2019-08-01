@@ -1,5 +1,5 @@
 ---
-title: MR Learning Sharing Module for HoloLens 2
+title: Multi-user capabilities tutorials - 4. Sharing object movements with multiple users
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull

@@ -1,5 +1,5 @@
 ---
-title: MR Learning SpeechSDK Module - Speech Recognition and Transcription
+title: Azure Speech Services tutorials - 1. Integrating and using speech recognition and transcription
 description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull

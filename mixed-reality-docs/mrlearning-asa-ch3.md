@@ -1,5 +1,5 @@
 ---
-title: MR Learning ASA module Azure Spatial Anchor on HoloLens 2
+title: Azure Spatial Anchors tutorials - 3. Displaying Azure Spatial Anchor feedback
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull

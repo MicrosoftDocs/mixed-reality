@@ -22,7 +22,6 @@
 #### [Reset or recover your HoloLens](reset-or-recover-your-hololens.md)
 #### [Saving and finding your files](saving-and-finding-your-files.md)
 #### [See your photos](see-your-photos.md)
-#### [Sensor tuning](sensor-tuning.md)
 #### [Updating HoloLens](updating-hololens.md)
 #### [Device Sharing](device-sharing.md)
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
@@ -218,7 +217,7 @@
 ###### [2. Getting Unity ready for development](mrlearning-sharing(photon)-ch2.md)
 ###### [3. Connecting multiple users](mrlearning-sharing(photon)-ch3.md)
 ###### [4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
-###### [5. Integration Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
+###### [5. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
 #### HoloLens (1st gen) open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
