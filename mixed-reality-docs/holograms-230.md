@@ -80,7 +80,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
     * Microphone
     * SpatialPerception
 * Go to **Edit > Project Settings > Quality**
-* In the **Inspector** panel, under the Windows Store icon, select the black drop-down arrow under the 'Default' row and change the default setting to **Fastest**.
+* In the **Inspector** panel, under the Windows Store icon, select the black drop-down arrow under the 'Default' row and change the default setting to **Very Low**.
 * Go to **Assets > Import Package > Custom Package**.
 * Navigate to the **...\HolographicAcademy-Holograms-230-SpatialMapping\Starting** folder.
 * Click on **Planetarium.unitypackage**.

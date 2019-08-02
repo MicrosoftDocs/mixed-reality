@@ -619,7 +619,7 @@ We want our example hologram to follow the user's [gaze](gaze.md), similar to ho
 SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordinateSystem, prediction->Timestamp);
 ```
 
-This SpatialPointerPose has the information needed to position the hologram according to the [user's current heading](gaze,-gestures,-and-motion-controllers-in-directx.md).
+This SpatialPointerPose has the information needed to position the hologram according to the [user's current heading](gaze-in-directx.md).
 
 For reasons of user comfort, we use linear interpolation ("lerp") to smooth the change in position such that it occurs over a period of time. This is more comfortable for the user than locking the hologram to their gaze. Lerping the tag-along hologram's position also allows us to stabilize the hologram by dampening the movement; if we did not do this dampening, the user would see the hologram jitter because of what are normally considered to be imperceptible movements of the user's head.
 
@@ -795,5 +795,6 @@ The [spatial mapping](spatial-mapping-in-directx.md) APIs make use of coordinate
 * [Coordinate systems](coordinate-systems.md)
 * [Spatial anchors](spatial-anchors.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+* [Head and eye gaze in DirectX](gaze-in-directx.md)
+* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)

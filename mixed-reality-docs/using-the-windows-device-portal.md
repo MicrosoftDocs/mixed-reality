@@ -69,7 +69,7 @@ The first time you connect to the Device Portal on your HoloLens, you will need 
 5. Enter a password and confirm it. The password must be at least seven characters in length. It doesn't need to be an MSA or domain password.
 6. Click **Pair** to connect to Windows Device Portal on the HoloLens.
 
-If you wish to change this username or password at any time, you can repeat this process by visiting the device security page by either clicking the **Security** link along the top right, or navigating to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicesecurity.htm.
+If you wish to change this username or password at any time, you can repeat this process by visiting the device security page by  navigating to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm.
 
 ## Security certificate
 
@@ -78,7 +78,7 @@ If you are see a "certificate error" in your browser, you can fix it by creating
 Each HoloLens generates a unique self-signed certificate for its SSL connection. By default, this certificate is not trusted by your PC's web browser and you may get a "certificate error". By downloading this certificate from your HoloLens (over USB or a Wi-Fi network you trust) and trusting it on your PC, you can securely connect to your device.
 1. **Make sure you are on a secure network (USB or a Wi-Fi network you trust).**
 2. Download this device's certificate from the "Security" page on the Device Portal.
-   * Either click the **Security** link from the top right list of icons or navigate to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicesecurity.htm
+   * Navigate to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm
 3. Install the certificate in the "Trusted Root Certification Authorities" store on your PC.
    * From the Windows menu, type: Manage Computer Certificates and start the applet.
    * Expand the **Trusted Root Certification Authority** folder.
@@ -142,19 +142,29 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
 ![Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-mixed-reality-capture-page-1000px.png)<br>
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
-Use the [Mixed Reality Capture](mixed-reality-capture.md) page to save media streams from the HoloLens.
+Use the Mixed Reality Capture page to save media streams from the HoloLens.
 * **Settings**: Control the media streams that are captured by checking the following settings:
   * **Holograms**: Captures the holographic content in the video stream. Holograms are rendered in mono, not stereo.
   * **PV camera**: Captures the video stream from the photo/video camera.
   * **Mic Audio**: Captures audio from the microphone array.
   * **App Audio**: Captures audio from the currently running app.
+  * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if [supported by the running app](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (HoloLens 2 only).
   * **Live preview quality**: Select the screen resolution, frame rate, and streaming rate for the live preview.
 * Click or tap the **Live preview** button to show the capture stream. **Stop live preview** stops the capture stream.
 * Click or tap **Record** to start recording the mixed-reality stream, using the specified settings. **Stop recording** ends the recording and saves it.
 * Click or tap **Take photo** to take a still image from the capture stream.
 * **Videos and photos**: Shows a list of video and photo captures taken on the device.
 
-Note that HoloLens apps will not be able to capture an MRC photo or video while you are recording or streaming a live preview from the Device Portal.
+> [!NOTE]
+> There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#simultaneous-mrc-limitations):
+> * If an app tries to access the photo/video camera while Windows Device Portal is recording a video, the video recording will stop.
+>   * HoloLens 2 will not stop recording video if the app acesses the photo/video camera with SharedReadOnly mode.
+> * If an app is actively using the photo/video camera, Windows Device Portal is able to take a photo or record a video.
+> * Live streaming:
+>   * HoloLens (1st gen) prevents an app from accessing the photo/video camera while live streaming from Windows Device Portal.
+>   * HoloLens (1st gen) will fail to live stream if an app is actively using the photo/video camera.
+>   * HoloLens 2 automatically stops live streaming when an app tries to access the photo/video camera in ExclusiveControl mode.
+>   * HoloLens 2 is able to start a live stream while an app is actively using the PV camera.
 
 ### Performance Tracing
 

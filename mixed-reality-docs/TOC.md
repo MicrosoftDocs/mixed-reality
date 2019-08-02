@@ -1,9 +1,9 @@
 # [Install the tools](install-the-tools.md)
 # [Get your app ready for HL2](mrtk-porting-guide.md)
-# [Discover](index.md)
+# Discover
+## [Mixed Reality documentation](index.md)
 ## [What is mixed reality?](mixed-reality.md)
 ## [What is a hologram?](hologram.md)
-
 ## Hardware
 ### HoloLens
 #### [HoloLens 2 hardware details](https://www.microsoft.com/hololens/hardware)
@@ -22,8 +22,8 @@
 #### [Reset or recover your HoloLens](reset-or-recover-your-hololens.md)
 #### [Saving and finding your files](saving-and-finding-your-files.md)
 #### [See your photos](see-your-photos.md)
-#### [Sensor tuning](sensor-tuning.md)
 #### [Updating HoloLens](updating-hololens.md)
+#### [Device Sharing](device-sharing.md)
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
 ### Immersive headsets
 #### [Immersive headset hardware details](immersive-headset-hardware-details.md)
@@ -48,11 +48,13 @@
 ### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
 ### [Building HoloSketch, a spatial layout and UX sketching app for HoloLens](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Capturing and creating content for HoloTour](case-study-capturing-and-creating-content-for-holotour.md)
-### [Creating a galaxy in mixed reality](case-study-creating-a-galaxy-in-mixed-reality.md)
 ### [Creating an immersive experience in Fragments](case-study-creating-an-immersive-experience-in-fragments.md)
 ### [Creating impossible perspectives for HoloTour](case-study-creating-impossible-perspectives-for-holotour.md)
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [Expanding the spatial mapping capabilities of HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+### Galaxy Explorer
+#### [Creating a galaxy in mixed reality for Hololens (1st gen)](case-study-creating-a-galaxy-in-mixed-reality.md)
+#### [Updating Galaxy Explorer for HoloLens 2](galaxy-explorer-update.md)
 ### [HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
 ### [Lessons from the Lowe's kitchen](case-study-lessons-from-the-lowes-kitchen.md)
 ### [Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)
@@ -68,33 +70,39 @@
 
 
 ## Mixed reality release notes
-### [Current release notes](release-notes-october-2018.md)
+### [Current release notes](release-notes-may-2019.md)
+### [Release notes - October 2018](release-notes-october-2018.md)
 ### [Release notes - April 2018](release-notes-april-2018.md)
 ### [Release notes - October 2017](release-notes-october-2017.md)
 ### [Release notes - August 2016](release-notes-august-2016.md)
 ### [Release notes - May 2016](release-notes-may-2016.md)
 ### [Release notes - March 2016](release-notes-march-2016.md)
 
-# [Design](design.md)
+# Design
+## [Design for mixed reality](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
 ## Get started with design
 ### [What is mixed reality?](mixed-reality.md)
 ### [What is a hologram?](hologram.md)
+### [Comfort](Comfort.md)
+### [Holographic frame](Holographic-frame.md)
+### [Spatial mapping design](Spatial-mapping-design.md)
+### [Spatial sound design](Spatial-sound-design.md)
 ### [My first year on the design team](case-study-my-first-year-on-the-hololens-design-team.md)
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
 ### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
-## Interaction design
-### [Interaction fundamentals](Interaction-fundamentals.md)
-### [Comfort](Comfort.md)
-### [Gaze targeting](Gaze-targeting.md)
-### [Gestures](Gestures.md)
-### [Voice design](Voice-design.md)
-### [What is a hologram?](Hologram.md)
-### [Holographic frame](Holographic-frame.md)
-### [Spatial mapping design](Spatial-mapping-design.md)
-### [Spatial sound design](Spatial-sound-design.md)
-### [Motion controllers](Motion-controllers.md)
+## [Instinctual interactions](Interaction-fundamentals.md)
+### [Hands and motion controllers](hands-and-tools.md)
+#### [Direct manipulation with hands](direct-manipulation.md)
+#### [Point and commit with hands](point-and-commit.md)
+#### [Motion controllers](Motion-controllers.md)
+### [Hands-free](hands-free.md)
+#### [Voice commanding](Voice-design.md)
+#### [Head-gaze and dwell](Gaze-and-dwell.md)
+### [Head-gaze and commit](gaze-and-commit.md)
+### Supplemental interactions
+#### [Eye-gaze](eye-tracking.md)
 ## Style
 ### [Color, light and materials](color,-light-and-materials.md)
 ### [Spatial sound design](spatial-sound-design.md)
@@ -112,7 +120,7 @@
 ### [Interactable object](interactable-object.md)
 ### [Object collection](object-collection.md)
 ### [Displaying progress](progress.md)
-### [App bar and bounding box](app-bar-and-bounding-box.md)
+### [Bounding box and App bar](app-bar-and-bounding-box.md)
 ## Designing for the mixed reality home
 ### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 ### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
@@ -122,11 +130,10 @@
 ### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Asset creation process](asset-creation-process.md)
 
-# [Develop](development.md)
+# Develop
+## [Development launchpad](development.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-### [Holographic Remoting Player](holographic-remoting-player.md)
-### [Holographic remoting software license terms](microsoft-holographic-remoting-software-license-terms.md)
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -136,6 +143,7 @@
 #### [Unity Play Mode](unity-play-mode.md)
 #### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
 #### [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
+#### [Managed debugging with Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
 ### Core building blocks
 #### [Camera in Unity](camera-in-unity.md)
 #### [Coordinate systems in Unity](coordinate-systems-in-unity.md)
@@ -154,10 +162,11 @@
 #### [Keyboard input in Unity](keyboard-input-in-unity.md)
 ### Advanced topics
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
+#### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ### Legacy Documents (Unity 2017.4/HTK/MRTK v1)
 ## Unreal
-### Unreal for HoloLens 2 - coming soon!
+### [Unreal for HoloLens 2 early access](https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access)
 ## DirectX
 ### [DirectX development overview](directx-development-overview.md)
 ### Getting started
@@ -166,7 +175,8 @@
 #### [Rendering in DirectX](rendering-in-directx.md)
 ### Core building blocks
 #### [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
-#### [Gaze, gestures, and motion controllers in DirectX](gaze,-gestures,-and-motion-controllers-in-directx.md)
+#### [Head and eye gaze in DirectX](gaze-in-directx.md)
+#### [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 #### [Voice input in DirectX](voice-input-in-directx.md)
 #### [Spatial sound in DirectX](spatial-sound-in-directx.md)
 #### [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
@@ -176,12 +186,36 @@
 #### [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 ### Advanced topics
 #### [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)
-#### [Add holographic remoting](add-holographic-remoting.md)
+### [OpenXR](openxr.md)
 ## WebVR
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
-## [Tutorials and sample apps](academy.md)
+## [Tutorials and sample apps](tutorials.md)
 ### Unity
-#### Open source sample apps
+#### HoloLens 2 tutorials
+##### Getting started tutorials
+###### [1. Overview and objectives](mrlearning-base.md)
+###### [2. Initializing your project and first application](mrlearning-base-ch1.md)
+###### [3. Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md)
+###### [4. Placing dynamic content and using solvers](mrlearning-base-ch3.md)
+###### [5. Interacting with 3D objects](mrlearning-base-ch4.md)
+###### [6. Exploring advanced input options](mrlearning-base-ch5.md)
+###### [7. Creating a Lunar Module sample application](mrlearning-base-ch6.md)
+##### Azure Spatial Anchor tutorials
+###### [1. Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
+###### [2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
+###### [3. Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md)
+##### Azure Speech Services tutorials
+###### [1. Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
+###### [2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)
+###### [3. Adding the Azure Cognition Services speech translation component](mrlearning-speechSDK-ch3.md)
+###### [4. Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
+##### Multi-user capabilities tutorials
+###### [1. Setting up Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
+###### [2. Getting Unity ready for development](mrlearning-sharing(photon)-ch2.md)
+###### [3. Connecting multiple users](mrlearning-sharing(photon)-ch3.md)
+###### [4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
+###### [5. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
+#### HoloLens (1st gen) open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
 ##### [Galaxy Explorer](galaxy-explorer.md)
@@ -252,7 +286,16 @@
 ## Remote and research tools
 ### [Using the Windows Device Portal](using-the-windows-device-portal.md)
 ### [Device portal API reference](device-portal-api-reference.md)
+## Holographic Remoting
 ### [Holographic Remoting Player](holographic-remoting-player.md)
+### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
+### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
+### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
+### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)
+### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
+### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+### Holographic Remoting for HoloLens 1
+#### [Add Holographic Remoting](add-holographic-remoting.md)
 ## Other
 ### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

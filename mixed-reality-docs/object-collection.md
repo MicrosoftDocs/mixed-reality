@@ -12,10 +12,10 @@ keywords: Windows Mixed Reality, controls, design
 
 # Object collection
 
-Object collection is a layout control which helps you lay out an array of objects in a predefined three-dimensional shape. It supports four different surface styles - **plane, cylinder, sphere** and **scatter**. You can adjust the radius and size of the objects and the space between them. Object collection supports any object from Unity - both 2D and 3D. In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md)**, we have created Unity script and [example scene](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Scenes/ObjectCollectionExample.unity) that will help you create an object collection.
+Object collection is a layout control which helps you lay out an array of objects in a predefined three-dimensional shape. It supports various surface styles - **plane, cylinder, sphere** and **radial**. You can adjust the radius and size of the objects and the space between them. Object collection supports any object from Unity - both 2D and 3D. In the **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)**, we have created Unity script and examples that will help you create an object collection.
 
 ![Object collection used in the Periodic Table of the Elements app](images/640px-objectcollection-hero-640px.jpg)<br>
-*Object collection used in the Periodic Table of the Elements sample app*
+*Examples of using object collection*
 
 ## Object collection examples
 
@@ -38,8 +38,9 @@ You can also use 2D images with Object collection. The examples below demonstrat
 ![An example of 2D images with Object collection](images/640px-layout-3dobjects-3.jpg)
 
 ![An example of 2D images with Object collection](images/640px-layout-2dimages.jpg)<br>
-*Examples of 2D images with object collection*
+*Examples of using object collection with 2D images*
 
 ## See also
-* [Scripts and prefabs for Object collection in the Mixed Reality Toolkit on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Examples/UX)
+* [Scripts and prefabs for Object collection in the Mixed Reality Toolkit on GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_ObjectCollection.md)
 * [Interactable object](interactable-object.md)
+* [Bounding Box](app-bar-and-bounding-box.md)

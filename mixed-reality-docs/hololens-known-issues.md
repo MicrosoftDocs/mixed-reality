@@ -3,7 +3,7 @@ title: HoloLens known issues
 description: This is the list of known issues that may affect HoloLens developers.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 04/1/2019
+ms.date: 07/10/2019
 ms.topic: article
 keywords: troubleshoot, known issue, help
 ---
@@ -14,9 +14,68 @@ keywords: troubleshoot, known issue, help
 
 This is the current list of known issues for HoloLens affecting developers. Check here first if you are seeing an odd behavior. This list will be kept updated as new issues are discovered or reported, or as issues are addressed in future HoloLens software updates.
 
+## Unable to connect and deploy to HoloLens through Visual Studio
+
+>[!NOTE]
+>Last Update: 7/8 @ 7:25PM - The team has identified the root cause and is currently working on fix. Workaround available below. 
+
+We were able to identify the root cause of this issue. Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then subsequently used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. 
+
+The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Please ensure that target device has developer mode enabled. Could not obtain a developer license on <ip> due to error 80004005.
+ 
+**Workaround**: 
+
+Our team is currently working on a fix. In the meantime, you can use the following steps to work around the issue and help unblock deployment and debugging:  
+1. Open Visual Studio
+2. File -> New -> Project
+3. Visual C# -> Windows Desktop -> Console App (.NET Framework)
+4. Give the project a name (e.g. HoloLensDeploymentFix) and make sure the Framework is set to at least .NET Framework 4.5 then click OK.
+5. Right-click on the References node in Solution Explorer and add the following references (click to the 'Browse' section and click the 'Browse...' button):
+    ```
+    C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
+    C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
+    C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
+    ```
+    >[!NOTE]
+    >If you don't have 10.0.18362.0 installed, use the most recent version that you have.
+ 
+6. Right-click on the project in Solution Explorer and choose Add -> Existing Item.
+ 
+7. Browse to C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 and change the filter to "All Files (\*.\*)"
+ 
+8. Select both SirepClient.dll and SshClient.dll and click "Add".
+ 
+9. Locate and select both files in Solution Explorer (they should be at the bottom of the list of files) and change "Copy to Output Directory" in the Properties window to "Copy always"
+ 
+10. At the top of the file, add the following to the existing list of 'using' statements: 
+    ```
+    using Microsoft.Tools.Deploy;
+    using System.Net;
+    ```
+ 
+11. Inside of “static void Main(...)”, add the following code:
+    ```
+    RemoteDeployClient client = RemoteDeployClient.CreateRemoteDeployClient();
+    client.Connect(new ConnectionOptions()
+    {
+        Credentials = new NetworkCredential("DevToolsUser", string.Empty),
+        IPAddress = IPAddress.Parse(args[0])
+    });
+    client.RemoteDevice.DeleteFile(@"C:\Data\Users\DefaultAccount\AppData\Local\DevelopmentFiles\VSRemoteTools\x86\CoreCLR\mscorlib.ni.dll");
+    ```
+12. Build -> Build Solution
+ 
+13. Open a command prompt to the folder that contains the compiled .exe (e.g. C:\MyProjects\HoloLensDeploymentFix\bin\Debug)
+ 
+14. Run the executable and provide the device's IP address as a command-line argument.  (If connected via USB, you can use 127.0.0.1, otherwise use the device’s WiFi IP address.)  For example, "HoloLensDeploymentFix 127.0.0.1"
+ 
+15. Once the tool has exited without any messages (this should only take a few seconds), you will now be able to deploy and debug from Visual Studio 2017 or newer.  Continued use of the tool is not necessary.
+
+We will provide further updates as they become available.
+
 ## Issues launching the Microsoft Store and apps on HoloLens
 
->[!IMPORTANT]
+>[!NOTE]
 >Last Update: 4/2 @ 10 AM - Issue resolved. 
 
 You may experience issues when trying to launch the Microsoft Store and apps on HoloLens. We've determined that the issue occurs when background app updates deploy a newer version of framework packages in specific sequences while one or more of their dependent apps are still running. In this case,  an automatic app update delivered a new version of the .NET Native Framework (version 10.0.25531 to 10.0.27413) caused the apps that are running to not correctly update for all running apps consuming the prior version of the framework.  The flow for framework update is as follows: -
