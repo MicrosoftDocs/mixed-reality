@@ -74,4 +74,4 @@ Additionally, the total number of surfaces returned by Spatial Mapping is limite
 ### See Also
 
 * [Scene Understanding SDK](scene-understanding-SDK.md)
-* [Spatial mapping](spatial-mapping.md)
+* [Spatial Mapping](spatial-mapping.md)
