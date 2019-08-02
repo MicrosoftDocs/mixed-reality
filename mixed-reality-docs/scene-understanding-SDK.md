@@ -12,6 +12,14 @@ keywords: Scene Understanding, Spatial Mapping, Windows Mixed Reality, Unity
 
 The goal of Scene Understanding is to transform the un-structured environment sensor data that your Mixed Reality device captures and to convert it into a powerful but abstracted representation that is intuitive and easy to develop for. The SDK acts as the communication layer between your application and the Scene Understanding runtime. It's aimed to mimic existing standard constructs such as 3d scene graphs for 3d representations and 2D rectangles/panels for 2d applications. While the constructs Scene Understanding mimics will map to concrete frameworks you may use, in general SceneUnderstanding is framework agnostic allowing for interop between varied frameworks that interact with it. As Scene Understanding evolves the role of the SDK is to ensure new representations and capabilities continue to be exposed within a unified framework. In this document we will first introduce high level concepts that will help you get familiar with the development environment/usage and then provide more detailed documentation for specific classes and constructs.
 
+## Where do I get the SDK?
+
+The SceneUnderstanding SDK is downloadable via NuGet.
+
+[SceneUnderstanding SDK](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
+
+Before you begin please note that the SDK runs on top of the UWP, and requires Windows SDK version 18362 or higher. 
+
 ### The Scene
 
 Your mixed reality device is constantly integrating information about what it sees in your environment. Scene Understanding funnels all of these data sources and produces one single cohesive abstraction. Scene Understanding generates Scenes which are a composition of [SceneObjects](scene-understanding-SDK.md#SceneObjects) that represent an instance of a single thing, (e.g. a wall/ceiling/floor.) Scene Objects themselves are a composition of [Components](scene-understanding-SDK.md#Components) which represent more granular pieces that make up this SceneObject. Examples of components are quads and meshes, but in the future could represent bounding boxes, collision mehses, metadata etc...
@@ -82,7 +90,7 @@ The following section provides a high-level overview of the constructs in Scene 
 
 #### SceneComponents
 
-Now that you understanding of the logical layout of scenes it is important to understand SceneComponents and how they are used to compose hierarchy. SceneComponents are the most granular decompositions in SceneUnderstanding representing a single core thing, e.g. a mesh or a quad or a bounding box. SceneComponents are things that can update independently and can be referenced by other SceneComponents, hence they have a single global property a unique Id, that allow for this type of tracking/referencing mechanism. Ids are used for the logical composition of scene hierarchy as well as object persistence (the act of updating one scene relative to another.) 
+Now that you understand the logical layout of scenes we can now present the concept of SceneComponents and how they are used to compose hierarchy. SceneComponents are the most granular decompositions in SceneUnderstanding representing a single core thing, e.g. a mesh or a quad or a bounding box. SceneComponents are things that can update independently and can be referenced by other SceneComponents, hence they have a single global property a unique Id, that allow for this type of tracking/referencing mechanism. Ids are used for the logical composition of scene hierarchy as well as object persistence (the act of updating one scene relative to another.) 
 
 If you are treating every newly computed scene as being distinct, and simply enumerating all data within it then Ids are largely transparent to you. However, if you are planning to track components over several updates you will use the Ids to index and find SceneComponents between Scene objects.
 
@@ -122,7 +130,7 @@ The following section will help get you familiar with the basics of SceneUnderst
 
 #### Initialization
 
-The first step to working with SceneUnderstanding is for your application to gain reference to a Scene object. This can be done in one of two ways, a Scene can either be Computed by the driver, or an existing Scene that was computed in the past can be de-serialized. The latter is particularly useful for working with SceneUnderstanding during development, where applications and experiences can be prototyped quickly without a mixed reality device.
+The first step to working with SceneUnderstanding is for your application to gain reference to a Scene object. This can be done in one of two ways, a Scene can either be computed by the driver, or an existing Scene that was computed in the past can be de-serialized. The latter is particularly useful for working with SceneUnderstanding during development, where applications and experiences can be prototyped quickly without a mixed reality device.
 
 Scenes are computed using a SceneObserver. Before creating a Scene, your application should query your device to ensure that it supports SceneUnderstanding, as well as to request user access for information that SceneUnderstanding needs.
 
@@ -284,7 +292,7 @@ SceneRoot.Transform.SetPositionAndRotation(t, r);
 
 ### Quad
 
-Quads were designed to facilitate 2D placement scenarios and should be thought of as extensions to 2D canvas UX elements. Except for 3D transforms from their SpatialComponent base class, the Quad APIs are all in the 2D domain of the quad itself. They offer information such as extent, shape, and provide APIs for placement.
+Quads were designed to facilitate 2D placement scenarios and should be thought of as extensions to 2D canvas UX elements. While Quads are components of SceneObjects and can be rendered in 3D, the Quad APIs themselves assume Quads are 2D structures. They offer information such as extent, shape, and provide APIs for placement.
 
 Quads have rectangular extents, but they represent arbitrarily shaped 2d surfaces. To enable placement on these 2D surfaces that interact with the 3D environment quads offer utilities to make this interaction possible. Currently Scene Understanding provides two such functions, **FindCentermostPlacement** and **GetOcclusionMask**. FindCentermostPlacement is a high level API that locates a position on the quad where an object can be placed and will try to find the best location for your object guaranteeing that the bounding box you provide will reside on the underlying surface.
 
@@ -317,7 +325,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 }
 ```
 
-Steps 1-3 are highly dependent on your particular framework/implementation, but the themes should be similar. In this case the "Quad" is not actually rendered, is just represents a bounded 2D plane in space which is defined by "QuadTransformNode". Your hologram is now being placed relative to the quad, so you make it a child of that transform and translate to put it in the right place. For more detailed information please see our samples on quads which show specific implementations.
+Steps 1-3 are highly dependent on your particular framework/implementation, but the themes should be similar. It is important to note that the Quad is not usually intended to be, is just represents a bounded 2D plane that is localized in space. By having your engine/framework know where the quad is and rooting your objects relative to the quad, your holograms will be located correctly. For more detailed information please see our samples on quads which show specific implementations.
 
 ### Mesh
 
