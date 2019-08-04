@@ -62,6 +62,7 @@ The user would point the hand ray at a planet, which would provide target feedba
 
 We then created multiple prototypes to test the concept: How does the interaction feel overall? Should the called object stop in front of the user or stick to their hands until placed? Should the called object change size or scale while being called?
 
+<!--
 Here is Amit Rojtblat (Technical Artist) presenting one of the prototypes to Yasushi Zonno (Creative Lead).
 
 ------------------------------------------------------------------
@@ -71,7 +72,7 @@ __*--- VIDEO OF AMIT PLAYING AND EXPLAINING THE PROTOTYPE ---*__
 __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ------------------------------------------------------------------
-
+-->
 
 ### Implementing force grab into the application
 
