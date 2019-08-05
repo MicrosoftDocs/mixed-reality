@@ -22,7 +22,6 @@
 #### [Reset or recover your HoloLens](reset-or-recover-your-hololens.md)
 #### [Saving and finding your files](saving-and-finding-your-files.md)
 #### [See your photos](see-your-photos.md)
-#### [Sensor tuning](sensor-tuning.md)
 #### [Updating HoloLens](updating-hololens.md)
 #### [Device Sharing](device-sharing.md)
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
@@ -135,8 +134,6 @@
 ## [Development launchpad](development.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-### [Holographic Remoting Player](holographic-remoting-player.md)
-### [Holographic remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -189,7 +186,6 @@
 #### [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 ### Advanced topics
 #### [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)
-#### [Add holographic remoting](add-holographic-remoting.md)
 ### [OpenXR](openxr.md)
 ## WebVR
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
@@ -290,7 +286,16 @@
 ## Remote and research tools
 ### [Using the Windows Device Portal](using-the-windows-device-portal.md)
 ### [Device portal API reference](device-portal-api-reference.md)
+## Holographic Remoting
 ### [Holographic Remoting Player](holographic-remoting-player.md)
+### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
+### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
+### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
+### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)
+### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
+### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+### Holographic Remoting for HoloLens 1
+#### [Add Holographic Remoting](add-holographic-remoting.md)
 ## Other
 ### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
