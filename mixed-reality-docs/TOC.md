@@ -184,7 +184,6 @@
 #### [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
 ### Other key features
 #### [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
-#### [Locatable camera in DirectX](locatable-camera-in-directx.md)
 #### [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 ### Advanced topics
 #### [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)
