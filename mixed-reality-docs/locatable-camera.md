@@ -79,7 +79,7 @@ To go from the 'CameraIntrinsics' and 'CameraCoordinateSystem' to your applicati
 
 [Locatable camera in Unity](locatable-camera-in-unity.md): CameraToWorldMatrix is automatically provided by PhotoCaptureFrame class(so you don't need to worry about the CameraCoordinateSystem transforms).
 
-[Locatable camera in DirectX](locatable-camera-in-directx.md): Shows the fairly straightforward way to query for the transform between the camera's coordinate system and your own application coordinate system(s).
+[Locatable camera in DirectX](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking): The Holographic Face Tracking sample shows the fairly straightforward way to query for the transform between the camera's coordinate system and your own application coordinate system(s).
 
 ### Distortion Error
 
@@ -165,7 +165,7 @@ Examples:
 * Identify and recognize people in the room (e.g. place holographic contact cards over faces)
 
 ## See also
-* [Locatable camera in DirectX](locatable-camera-in-directx.md)
+* [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Locatable camera in Unity](locatable-camera-in-unity.md)
 * [Mixed reality capture](mixed-reality-capture.md)
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
