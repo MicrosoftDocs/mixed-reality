@@ -5,7 +5,6 @@ author:  liamartinez
 ms.author: liamar
 ms.date: 05/13/2019
 ms.topic: article
-ms.localizationpriority: high
 keywords: Mixed Reality, gaze, dwell, interaction, design
 ---
 

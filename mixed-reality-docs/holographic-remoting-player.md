@@ -3,7 +3,7 @@ title: Holographic Remoting Player
 description: The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
 author: JonMLyons
 ms.author: jlyons
-ms.date: 03/21/2018
+ms.date: 08/01/2019
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
@@ -12,11 +12,14 @@ keywords: HoloLens, Remoting, Holographic Remoting
 
 # Holographic Remoting Player
 
+>[!IMPORTANT]
+>Holographic Remoting for HoloLens 2 is a major version change. [Host applications for **HoloLens 1**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [host applications for **HoloLens 2**](holographic-remoting-create-host.md) must use **2.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa.
+
 The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
 
 The Holographic Remoting Player can only be used with PC apps that are specifically designed to support Holographic Remoting.
 
-The Holographic Remoting Player is available for both HoloLens and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remtoing with HoloLens 2.  Please contact your app provider if you have questions about which versions are supported.
+The Holographic Remoting Player is available for both HoloLens and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remoting with HoloLens 2. Please contact your app provider if you have questions about which versions are supported.
 
 ## Connecting to the Holographic Remoting Player
 
@@ -37,9 +40,31 @@ The quality and performance of your experience will vary based on three factors:
 
 ## Diagnostics
 
-To measure the quality of your connection, say **"enable diagnostics"** while on the main screen of the Holographic Remoting Player. When diagnostics are enabled, the app will show you:
-* **FPS** - The average number of rendered frames the remoting player is receiving and rendering per second. The ideal is 60 FPS.
+To measure the quality of your connection, say **"enable diagnostics"** while on the main screen of the Holographic Remoting Player. When diagnostics are enabled, on **HoloLens 1** the app will show you:
+
+* **FPS** - The average number of rendered frames the Remoting player is receiving and rendering per second. The ideal is 60 FPS.
 * **Latency** - The average amount of time it takes for a frame to go from your PC to the HoloLens. The lower the better. This is largely dependent on your Wi-Fi network.
+
+On **HoloLens 2** the app will show you:
+
+![Holographic Remoting Player Diagnostics](images/holographicremotingplayer-diag.png)
+
+* **Render** - The number of frames the Remoting player rendered during the last second. Note, this is independent from the number of frames which arrived via the network (see **Video frames**). Additionally, the average/maximum render delta time in milliseconds over the last second between rendered frames is displayed.
+
+* **Video frames** - The first number displayed is skipped video frames, the second is reused video frames, and the third is received video frames. All numbers represent the count over the last second.
+    * ```Received frames``` is the number of video frames which arrived over the last second. Under normal conditions this should be 60 but if it's not this is an indicator that either frames are dropped because of network issues or the remote/host side does not produce frames with the expected rate.
+    * ```Reused frames``` is the count of video frames which have been used more than once over the last second. For instance, if video frames arrive late the rendering loop of the player still renders a frame but needs to *reuse* the video frame it already used for the previous frame.
+    * ```Skipped frames``` is the count of video frames which have not been used by the rendering loop of the player. For instance, network jitter can have the effect that video frames arriving are not evenly distribute anymore, say some are late and others arrive in time with the result that they do not have a delta of 16.66 milliseconds anymore when running on 60Hz. Taking this it can occur that more than one frame arrives between two ticks of the render loop of the player. In this case the player *skips* one ore more frames as it's supposed to display always the most recent received video frame.
+
+    >[!NOTE]
+    >When facing network jitter usually skipped and reused frames are about the same. In contrast if you only see skipped frames this is an indicator that the player does not hit it's target frame rate. In this case you should keep an eye on the maximum render delta time when diagnosing issues.
+
+* **Video frames delta** - The minimum/maximum delta between received video frames over the last second. This number usually correlates with skipped/reused frames in case of issues caused by network jitter.
+* **Latency** - The average turnaround in milliseconds over the last second. 
+Turnaround in this context means the time from sending pose/sensor data from the HoloLens to the remote/host side till displaying the video frame for that pose/telemetry data on the HoloLens display.
+* **Video frames discarded** - The number of discarded video frames over the last second and since a connection has been established. The primary cause for discarded video frames is when a video frame does not arrive in order and for that reason needs to be discarded as there is already a newer one. This is similar to *discarded frames* but the cause is at a lower level in the Remoting stack. Discarded video frames are only expected under quite bad network conditions.
+
+
 
 While on the main screen, you can say **"disable diagnostics"** to turn off diagnostics.
 
@@ -49,5 +74,7 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 * We recommend you connect your PC to your network via ethernet to reduce the number of Wireless hops.
 
 ## See Also
-* [Holographic remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [HoloLens 1: Add Holographic Remoting](add-holographic-remoting.md)
+* [HoloLens 2: Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
+* [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

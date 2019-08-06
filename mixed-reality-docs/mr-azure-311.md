@@ -118,15 +118,15 @@ The following is a typical set up for developing with mixed reality, and as such
 
     ![](images/AzureLabs-Lab311-10.png)
 
-3.	With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit > Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
+3.	With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit** > **Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
     ![](images/AzureLabs-Lab311-11.png)
 
-4.  Go to **File > Build Settings** and select **Universal Windows Platform**, then click on the **Switch Platform** button to apply your selection.
+4.  Go to **File** > **Build Settings** and select **Universal Windows Platform**, then click on the **Switch Platform** button to apply your selection.
 
     ![](images/AzureLabs-Lab311-12.png)
 
-5.	While still in **File > Build Settings**, make sure that:
+5.	While still in **File** > **Build Settings**, make sure that:
 
     1. **Target Device** is set to **HoloLens**
     2. **Build Type** is set to **D3D**
@@ -182,7 +182,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
 9.  Close the *Build Settings* window.
 
-10.  Save your scene and project (**FILE > SAVE SCENES / FILE > SAVE PROJECT**).
+10.  Save your scene and project (**FILE** > **SAVE SCENES / FILE** > **SAVE PROJECT**).
 
 ## Chapter 3 - Import Libraries in Unity
 
@@ -200,7 +200,7 @@ If you wish to know more about how to add custom DLLs to your Unity project, [fo
 
 To import the package:
 
-1.  Add the Unity Package to Unity by using the **Assets* > *Import Package* > *Custom Package** menu option. Select the package you just downloaded.
+1.  Add the Unity Package to Unity by using the **Assets** > **Import Package** > **Custom Package** menu option. Select the package you just downloaded.
 
 2.  In the **Import Unity Package** box that pops up, ensure everything under (and including) **Plugins** is selected.
 
@@ -261,12 +261,12 @@ The first script you need to create is **MeetingsUI**, which is responsible for 
 
 To create this class:
 
-1.  Right-click on the **Assets** folder in the *Project Panel*, then select **Create* > *Folder**. Name the folder **Scripts**.
+1.  Right-click on the **Assets** folder in the *Project Panel*, then select **Create** > **Folder**. Name the folder **Scripts**.
 
     ![](images/AzureLabs-Lab311-26.png)
     ![](images/AzureLabs-Lab311-27.png)
 
-2.  Open the **Scripts** folder then, within that folder, right-click, **Create* > *C\# Script**. Name the script **MeetingsUI.**
+2.  Open the **Scripts** folder then, within that folder, right-click, **Create** > **C# Script**. Name the script **MeetingsUI.**
 
     ![](images/AzureLabs-Lab311-28.png)
 

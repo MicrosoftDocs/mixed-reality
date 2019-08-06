@@ -33,12 +33,13 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
      <td>Direct manipulation with hands</td>
      <td>❌ Not supported</td>
      <td>✔️ Recommended</td>
-     <td>➕ An alternative, [point and commit with hands](point-and-commit.md) is recommended.</td>
+     <td>➕ An alternative, <a href="point-and-commit.md">point and commit with hands</a> is recommended.</td>
+    
 </tr>
 </table>
 
 
-Direct manipulation is a primary input model on HoloLens 2, and utilizes the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation. Direct manipluation is not available on HoloLens (1st Gen).
+Direct manipulation is a primary input model on HoloLens 2, and utilizes the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation. Direct manipluation is not available on HoloLens (1st gen).
 
 
 ## Collidable fingertip
@@ -150,7 +151,7 @@ By doing so, you accidentally move your hand across some interactive holographic
 
 * **Where to**: Use information about what a user is looking at with quick-throwing gestures. Grab a hologram and roughly toss it toward your intended destination.  
 
-    While this may sometimes works work, quickly performing hand gestures may result in highly inaccurate destinations. This is where eye tracking could help out to lean the hand throwing vector back to your intended position.
+    While this sometimes works, quickly performing hand gestures may result in highly inaccurate destinations. In this scenario including eye tracking could improve the accuracy of the gesture.
 
 ## See also
 
