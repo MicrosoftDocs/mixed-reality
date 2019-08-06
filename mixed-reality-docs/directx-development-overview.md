@@ -53,6 +53,7 @@ To enable the best possible experience for users of your immersive appslication,
 There are other key features that many immersive applications will want to use that are also exposed to DirectX applicaitons:
 
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
+* [Locatable camera in DirectX](locatable-camera-in-directx.md)
 * [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 
 ## See also
