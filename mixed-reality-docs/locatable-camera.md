@@ -83,7 +83,9 @@ To go from the 'CameraIntrinsics' and 'CameraCoordinateSystem' to your applicati
 
 ### Distortion Error
 
-On HoloLens, the video and still image streams are undistorted in the system's image processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume image frames represent a perfect pinhole camera, however the undistortion function in the image processor may still leave an error of up to 10 pixels on HoloLens (first-generation) when using the CameraIntrinsics in the frame metadata. In many use cases, this error will not matter, but if you are aligning holograms to real world posters/markers, for example, and you notice a <10px offset (roughly 11mm for holograms positioned 2 meters away) this distortion error could be the cause. 
+On HoloLens, the video and still image streams are undistorted in the system's image processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume image frames represent a perfect pinhole camera.
+
+On HoloLens (first-generation) the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error will not matter, but if you are aligning holograms to real world posters/markers, for example, and you notice a <10px offset (roughly 11mm for holograms positioned 2 meters away) this distortion error could be the cause. 
 
 ## Locatable Camera Usage Scenarios
 
