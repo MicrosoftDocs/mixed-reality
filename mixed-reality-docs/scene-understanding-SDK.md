@@ -141,7 +141,7 @@ if (SceneObserver.IsSupported())
 }
 
 // This call should grant the access we need.
-Task.Run(() => SceneObserver.RequestAccessAsync()).Wait();
+await SceneObserver.RequestAccessAsync();
 ```
 
 If RequestAccessAsync() is not called, computing a new Scene will fail. Next we will compute a new scene that's rooted around the Mixed Reality headset and has a 10 meter radius.
