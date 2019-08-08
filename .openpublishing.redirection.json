@@ -2,27 +2,32 @@
 	"redirections": [
 		{
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/updating-hololens",
+			"redirect_url": "updating-hololens",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/implementing-3d-app-launchers#3d-deep-links-secondarytiles",
+			"redirect_url": "implementing-3d-app-launchers.#3d-deep-links-secondarytiles",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/release-notes.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018",
+			"redirect_url": "release-notes-may-2019",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/gaze,-gestures,-and-motion-controllers-in-directx.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/gaze-in-directx",
+			"redirect_url": "gaze-in-directx",
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality/microsoft-holographic-remoting-software-license-terms.md",
+			"source_path": "mixed-reality-docs/microsoft-holographic-remoting-software-license-terms.md",
 			"redirect_url": "https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/locatable-camera-in-directx.md",
+			"redirect_url": "locatable-camera#locating-the-device-camera-in-the-world",
 			"redirect_document_id": false
 		}
 	]
