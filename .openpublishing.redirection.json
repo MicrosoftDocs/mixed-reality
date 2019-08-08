@@ -2,22 +2,22 @@
 	"redirections": [
 		{
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
-			"redirect_url": "mixed-reality-docs/updating-hololens.md",
+			"redirect_url": "mixed-reality/updating-hololens",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md",
-			"redirect_url": "mixed-reality-docs/implementing-3d-app-launchers.md#3d-deep-links-secondarytiles",
+			"redirect_url": "mixed-reality/implementing-3d-app-launchers.#3d-deep-links-secondarytiles",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/release-notes.md",
-			"redirect_url": "mixed-reality-docs/release-notes-may-2019.md",
+			"redirect_url": "mixed-reality/release-notes-may-2019",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/gaze,-gestures,-and-motion-controllers-in-directx.md",
-			"redirect_url": "mixed-reality-docs/gaze-in-directx.md",
+			"redirect_url": "mixed-reality/gaze-in-directx",
 			"redirect_document_id": false
 		},
 		{
@@ -27,7 +27,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/locatable-camera-in-directx.md",
-			"redirect_url": "mixed-reality-docs/locatable-camera.md#locating-the-device-camera-in-the-world.md",
+			"redirect_url": "mixed-reality/locatable-camera#locating-the-device-camera-in-the-world",
 			"redirect_document_id": false
 		}
 	]
