@@ -47,20 +47,26 @@ Application scenarios vary, with some scenarios needing only simple spatializati
     </tr>
 </table>
 
-## Design concepts
+## Developers
+* Augmented reality 
+* Virtual reality
 When adding audio to a mixed reality application, we tend to organize technical choices into graded steps of complexity of spatialization and acoustics. Depending on the application scenario you may want to choose a different tradeoff to achieve design goals and consider computational and design costs.
 * Stereo
 * Spatialization-only
 * Spatialization with acoustics
 
-## Software support
+## Technical info
 Software support is available for four combinations of game engine and audio engine. We also provide an OS API to access hardware offload when writing plugins for other audio engines.
 * Unity game engine + Unity audio engine
 * Unity game engine + Wwise audio engine
 * Unreal game engine + Unreal audio engine
 * Unreal game engine + Wwise audio engine
 * ISAC: For Direct-X applications and custom audio engines
+
 To access spatialization hardware offload on HoloLens2 using other audio engines, ask your audio engine provider about support for the ISAC API.
+
+## Spatialization offload
+HoloLens2 provides spatialization offload to help applications reach target framerates without sacrificing audio immersion. 
 
 ## Technical background: Spatialization and acoustics
 
@@ -79,3 +85,4 @@ The characteristics of sounds also change based on the environment in which they
 * [Spatial sound in Unity](spatial-sound-in-unity.md)
 * [Spatial sound in DirectX](spatial-sound-in-directx.md)
 * [Spatial sound design](spatial-sound-design.md)
+
