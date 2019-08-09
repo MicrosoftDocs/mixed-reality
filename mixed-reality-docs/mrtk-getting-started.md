@@ -208,7 +208,7 @@ See the [MRTK documentation portal](https://microsoft.github.io/MixedRealityTool
 
 
 ## Minimum Requirement for MRTK v2
-* Unity 2018.3.x
+* Unity 2018.4.x
 * Microsoft Visual Studio 2017 or later
 * Windows SDK 18362+ 
 * Windows 10 1803 or later
