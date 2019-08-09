@@ -45,7 +45,7 @@ Scene Understanding provides new constructs specifically designed to simplify pl
 ![Quads with inference enabled, placement is no longer limited to scanned areas.](images/SUWatertight.png)
 ##### [2] "Quads with inference enabled, placement is no longer limited to scanned areas."
 
-If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is be preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene Understanding SDK reference](scene-understanding-SDK.md)
+If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene Understanding SDK reference](scene-understanding-SDK.md)
 
 **Note** For legacy code that depends on the surface mesh, a Scene can be computed that contains spatial mapping output along with SceneQuads, ensuring that any legacy requirements for placement can be maintained. If scene understanding mesh data does not satisfy your application's latency requirements, we recommend you continue to use the spatial mapping APIs documented here: [Spatial Mapping Placement](spatial-mapping.md#placement)
 
