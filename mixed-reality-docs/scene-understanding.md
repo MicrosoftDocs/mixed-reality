@@ -1,6 +1,6 @@
 ---
 
-title: Scene understanding
+title: Scene Understanding
 description: Introduction to scene understanding capabilities for HoloLens
 author: szymons
 ms.author: szymons
@@ -9,13 +9,13 @@ ms.topic: article
 keywords: Scene Understanding, Spatial Mapping, Windows Mixed Reality, Unity
 ---
 
-# Scene understanding
+# Scene Understanding
 
-Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes such as the highly accurate less structured [spatial mapping](spatial-mapping.md) and new AI driven runtimes. By combining these technologies, Scene Understanding generates representations of 3d environments that are much more similar to those you may have used in frameworks such as Unity or ARKit/ARCore. The SceneUnderstanding entrypoint begins with a SceneObserver which is called by your application to compute a new Scene. Today the technology is capable of generating 3 distinct but related object categories: simplified watertight environment meshes that infer the planar room structure without clutter, plane regions for placement that we call Quads, and a snapshot of the [spatial mapping](spatial-mapping.md) mesh that aligns with the Quads/Watertight data that we surface.
+Scene Understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene Understanding does this by combining the power of existing mixed reality runtimes such as the highly accurate less structured [spatial mapping](spatial-mapping.md) and new AI driven runtimes. By combining these technologies, Scene Understanding generates representations of 3d environments that are similar to those you may have used in frameworks such as Unity or ARKit/ARCore. The Scene Understanding entrypoint begins with a Scene Observer which is called by your application to compute a new Scene. Today the technology is capable of generating 3 distinct but related object categories: simplified watertight environment meshes that infer the planar room structure without clutter, plane regions for placement that we call Quads, and a snapshot of the [spatial mapping](spatial-mapping.md) mesh that aligns with the Quads/Watertight data that we surface.
 
 ![Spatial mapping mesh, labeled planar surfaces, watertight mesh](images/SUScenarios.png)
 
-This document is intended to provide a scenario overview and to clarify the relationship that scene understanding and spatial mapping share. For details on how scene understanding works and how to develop for it, please see the scene understanding [SDK overview](scene-understanding-SDK.md) documentation.
+This document is intended to provide a scenario overview and to clarify the relationship that Scene Understanding and Spatial Mapping share. For details on how Scene Understanding works and how to develop for it, please see the Scene Understanding [SDK overview](scene-understanding-SDK.md) documentation.
 
 ## Device support
 
@@ -31,9 +31,9 @@ This document is intended to provide a scenario overview and to clarify the rela
 
 ![Illustrations of common Spatial Mapping usage scenarios: Placement, Occlusion, Physics and Navigation](images/sm-concepts-1000px.png)
 
-Many of the core scenarios for environment aware applications (Placement, Occlusion, Physics etc...) are addressable by both Spatial Mapping and Scene Understanding, this section highlights these differences. A core difference between Scene Understanding and Spatial Mapping is a tradeoff of maximal accuracy and latency to structure and simplicity. If your application requires the lowest-latency possible and requires mesh triangles only you will want to access spatial mapping directly, however if you are performing higher level processing you may consider switching to the Scene Understanding model as it should provide you with a superset of functionality. Also note, that because SceneUnderstanding provides the spatial mapping mesh as part of its representation, you will always have access to the most complete and accurate spatial mapping data possible.
+Many of the core scenarios for environment aware applications (Placement, Occlusion, Physics etc...) are addressable by both Spatial Mapping and Scene Understanding, this section highlights these differences. A core difference between Scene Understanding and Spatial Mapping is a tradeoff of maximal accuracy and latency to structure and simplicity. If your application requires the lowest-latency possible and requires mesh triangles only you will want to access Spatial Mapping directly, however if you are performing higher level processing you may consider switching to the Scene Understanding model as it should provide you with a superset of functionality. Also note, that because Scene Understanding provides the spatial mapping mesh as part of its representation, you will always have access to the most complete and accurate spatial mapping data possible.
 
- The following sections re-visit the core spatial mapping scenarios in the context of the new scene understanding SDK.
+ The following sections re-visit the core spatial mapping scenarios in the context of the new Scene Understanding SDK.
 
 ### Placement
 
