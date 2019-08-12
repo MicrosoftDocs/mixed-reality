@@ -1,5 +1,5 @@
 ---
-title: Audio
+title: Spatial Audio
 description: Applying spatialization and acoustics to audio in a mixed reality application allows you to immerse users and enhance UI effectiveness.
 author: hak0n
 ms.author: hakons
@@ -8,11 +8,11 @@ ms.topic: article
 keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
 ---
 
-# Audio
+# Spatial Audio
 
-Audio is a key component of many applications and can be used to provide UI feedback, call attention to visual elements, evoke an ambience, and provide cues about the environmentand application state. Audio takes on special importance and power in mixed reality applications. New input modalities make audio-based UI feedback essential to user effectiveness, and holograms in your world, especially those that move, beg for audio to ground them. Head tracking makes immersive spatialization possible, and life-size, walk-around holograms increase the emotional impact of realistic acoustics. 
+Spatial audio takes on new life in mixed reality applications with low-latency head tracking. You can use spatial audio in your application to provide UI feedback, call attention to visual elements, evoke an ambience, and provide cues about the environment and application state. 
 
-Application scenarios vary, with some scenarios needing only simple spatialization or stereo audio, while others benefit from realistic multi-room acoustics, and levels in between. We've organized materials to help you determine your needs and set goals for audio design and realism, and we provide tools and guides to reach those goals.
+Spatial audio can be about more than spatialization. Holograms in your world, especially those that move, beg for environment processing to ground them. Life-size, walk-around holograms increase the emotional impact of realistic acoustics. 
 
 <br>
 
@@ -40,49 +40,33 @@ Application scenarios vary, with some scenarios needing only simple spatializati
         <td>✔️ (with headphones)</td>
     </tr>
      <tr>
-        <td>Spatialization offload</td>
+        <td>Spatialization hardware acceleration</td>
         <td>❌</td>
         <td>✔️</td>
         <td>❌</td>
     </tr>
+    <tr>
+        <td>Wave-based acoustics</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
 </table>
 
-## Developers
-* Augmented reality 
-* Virtual reality
-When adding audio to a mixed reality application, we tend to organize technical choices into graded steps of complexity of spatialization and acoustics. Depending on the application scenario you may want to choose a different tradeoff to achieve design goals and consider computational and design costs.
-* Stereo
-* Spatialization-only
-* Spatialization with acoustics
+## Use cases of spatial sound
+Case studies. Write an intro to each case study so that it's clear to the reader whether it addresses their scenario.
 
-## Technical info
-Software support is available for four combinations of game engine and audio engine. We also provide an OS API to access hardware offload when writing plugins for other audio engines.
-* Unity game engine + Unity audio engine
-* Unity game engine + Wwise audio engine
-* Unreal game engine + Unreal audio engine
-* Unreal game engine + Wwise audio engine
-* ISAC: For Direct-X applications and custom audio engines
+## Getting started: Adding spatialization
+Brief intro sentences including mentioning HW offload. Then link to 'intro to spatialization' page for background and orientation. Then link to 'spatialization-integration' page for technical info on software.
 
-To access spatialization hardware offload on HoloLens2 using other audio engines, ask your audio engine provider about support for the ISAC API.
+## Spatialization and acoustics
+What is acoustics? Occlusion, obstruction, reverb, portalling, and source modelling. Project Acoustics is an effective option for cases where the relevant scene geometry is static, such as in many immersive headset applications.
 
-## Spatialization offload
-HoloLens2 provides spatialization offload to help applications reach target framerates without sacrificing audio immersion. 
-
-## Technical background: Spatialization and acoustics
-
-By analyzing how sound reaches both our ears, our brain determines the distance and direction of the object emitting the sound. An HRTF (or Head Related Transfer Function) simulates this interaction by modeling the spectral response that characterizes how an ear receives sound from a point in space. The spatial audio engine uses personalized HRTFs to expand the mixed reality experience, and simulate sounds that are coming from various directions and distances.
-
-<br>
-
->[!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
-
-Left or right audio (azimuth) cues originate from differences in the time sound arrives at each ear. Up and down cues originate from spectral changes produced by the outer ear shape (pinnae). By designating where audio is coming from, the system can simulate the experience of sound arriving at different times to our ears. Note that on HoloLens, while azimuth spatialization is personalized, the simulation of elevation is based on an average set of anthropometrics. Thus, elevation accuracy may be less accurate than azimuth accuracy.
-
-The characteristics of sounds also change based on the environment in which they exist. For instance, shouting in a cave will cause your voice to bounce off the walls, floors, and ceilings, creating an echo effect. The room model setting of spatial sound reproduces these reflections to place sounds in a particular audio environment. You can use this setting to match the user's actual location for simulation of sounds in that space to create a more immersive audio experience.
-
+## More resources
+* [Sample applications] (link to documentation in sample app repo)
+* [Design advice] (spatial-sound-design.md)
 
 ## See also
 * [Spatial sound in Unity](spatial-sound-in-unity.md)
 * [Spatial sound in DirectX](spatial-sound-in-directx.md)
-* [Spatial sound design](spatial-sound-design.md)
 
