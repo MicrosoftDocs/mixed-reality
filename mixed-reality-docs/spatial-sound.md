@@ -45,12 +45,6 @@ Spatial audio can be about more than spatialization. Holograms in your world, es
         <td>✔️</td>
         <td>❌</td>
     </tr>
-    <tr>
-        <td>Wave-based acoustics</td>
-        <td>✔️</td>
-        <td>✔️</td>
-        <td>✔️</td>
-    </tr>
 </table>
 
 ## Use cases of spatial sound
