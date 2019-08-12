@@ -18,10 +18,10 @@ HW offload of spatialization.
 
 ## Supported configurations
 Software support is available for four combinations of game engine and audio engine. We also provide an OS API to access hardware offload when writing plugins for other audio engines.
-* [Unity game engine with Unity audio engine] (spatial-sound-in-unity.md)
-* [Unreal game engine with Unreal audio engine] (spatial-sound-in-unreal.md)
-* [Wwise audio engine with Unity or Unreal] (spatial-sound-in-wwise.md)
-* [Spatial sound in Direct-X applications and custom audio engines] (spatial-sound-in-directx.md)
+* [Unity game engine with Unity audio engine](spatial-sound-in-unity.md)
+* [Unreal game engine with Unreal audio engine](spatial-sound-in-unreal.md)
+* [Wwise audio engine with Unity or Unreal](spatial-sound-in-wwise.md)
+* [Spatial sound in Direct-X applications and custom audio engines](spatial-sound-in-directx.md)
 
 
 ## Next steps

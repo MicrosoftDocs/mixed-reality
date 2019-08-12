@@ -57,8 +57,8 @@ Brief intro sentences including mentioning HW offload. Then link to 'intro to sp
 What is acoustics? Occlusion, obstruction, reverb, portalling, and source modelling. Project Acoustics is an effective option for cases where the relevant scene geometry is static, such as in many immersive headset applications.
 
 ## More resources
-* [Sample applications] (link to documentation in sample app repo)
-* [Design advice] (spatial-sound-design.md)
+* [Sample applications](link to documentation in sample app repo)
+* [Design advice](spatial-sound-design.md)
 
 ## See also
 * [Spatial sound in Unity](spatial-sound-in-unity.md)
