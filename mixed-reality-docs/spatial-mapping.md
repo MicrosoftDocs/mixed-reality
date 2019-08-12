@@ -217,4 +217,5 @@ However, bear in mind that each raycast can have a high computational cost. Thus
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
 * [Spatial mapping in Unity](spatial-mapping-in-unity.md)
 * [Spatial mapping design](spatial-mapping-design.md)
+* [Scene Understanding](scene-understanding.md)
 * [Case study - Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)

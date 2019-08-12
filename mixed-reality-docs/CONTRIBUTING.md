@@ -53,6 +53,28 @@ Use the following workflow to make updates to *an existing article* via GitHub i
 6. On the next page, click **Create pull request** to merge your automatically-created branch into 'master.'
 7. Repeat the steps above for the next article you want to edit.
 
+## Renaming or deleting an existing article
+
+If your change will rename or delete an existing article, be sure to add a redirect. That way, anyone with a link to the existing article will still end up in the right place. Redirects are managed by the .openpublishing.redirection.json file in the root of the repo.
+
+To add a redirect to .openpublishing.redirection.json, add an entry to the `redirections` array:
+
+```json
+{
+    "redirections": [
+        {
+            "source_path": "mixed-reality-docs/old-article.md",
+            "redirect_url": "new-article#section-about-old-topic",
+            "redirect_document_id": false
+        },
+```
+
+- The `source_path` is the relative repository path to the old article that you're removing. Be sure the path starts with `mixed-reality-docs` and ends with `.md`.
+- The `redirect_url` is the relative public URL from the old article to the new article. Be sure that this URL **does not** contain `mixed-reality-docs` or `.md`, as it refers to the public URL and not the repository path. Linking to a section within the new article using `#section` is allowed. You may also use an absolute path to another site here, if necessary.
+- `redirect_document_id` indicates whether you would like to keep the document ID from the previous file. The default is `false`. Use `true` if you want to preserve the `ms.documentid` attribute value from the redirected article. If you preserve the document ID, data, such as page views and rankings, will be transferred to the target article. Do this if the redirect is primarily a rename, and not a pointer to different article that only covers some of the same content.
+
+If you add a redirect, be sure to delete the old file as well.
+
 ## Creating a new article
 
 Use the following workflow to *create new articles* in the documentation repo via GitHub in a web browser:

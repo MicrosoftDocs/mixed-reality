@@ -1,5 +1,5 @@
 ---
-title: MR Learning ASA module Azure Spatial Anchor on HoloLens 2
+title: Azure Spatial Anchors tutorials - 3. Displaying Azure Spatial Anchor feedback
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,11 +8,11 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# Displaying Azure Spatial Anchor Feedback
+# 3. Displaying Azure Spatial Anchor feedback
 
 In this lesson, you'll learn about how to provide users with feedback about anchor discovery, events, and status when using Azure Spatial Anchors.
 
-Objectives:
+## Objectives
 
 * Learn how to set up a UI panel that displays important information about the current ASA session
 

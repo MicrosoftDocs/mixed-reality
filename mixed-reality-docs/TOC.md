@@ -22,7 +22,6 @@
 #### [Reset or recover your HoloLens](reset-or-recover-your-hololens.md)
 #### [Saving and finding your files](saving-and-finding-your-files.md)
 #### [See your photos](see-your-photos.md)
-#### [Sensor tuning](sensor-tuning.md)
 #### [Updating HoloLens](updating-hololens.md)
 #### [Device Sharing](device-sharing.md)
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
@@ -37,6 +36,7 @@
 ### [Motion controllers](motion-controllers.md)
 ### [Voice input](voice-input.md)
 ### [Spatial mapping](spatial-mapping.md)
+### [Scene understanding](scene-understanding.md)
 ### [Spatial sound](spatial-sound.md)
 ### [Coordinate systems](coordinate-systems.md)
 ### [Spatial anchors](spatial-anchors.md)
@@ -135,8 +135,6 @@
 ## [Development launchpad](development.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-### [Holographic Remoting Player](holographic-remoting-player.md)
-### [Holographic remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -185,11 +183,9 @@
 #### [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
 ### Other key features
 #### [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
-#### [Locatable camera in DirectX](locatable-camera-in-directx.md)
 #### [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 ### Advanced topics
 #### [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)
-#### [Add holographic remoting](add-holographic-remoting.md)
 ### [OpenXR](openxr.md)
 ## WebVR
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
@@ -207,7 +203,7 @@
 ##### Azure Spatial Anchor tutorials
 ###### [1. Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
 ###### [2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
-###### [3. Displaying Azure Spatial Anchor Feedback](mrlearning-asa-ch3.md)
+###### [3. Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md)
 ##### Azure Speech Services tutorials
 ###### [1. Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
 ###### [2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)
@@ -218,7 +214,7 @@
 ###### [2. Getting Unity ready for development](mrlearning-sharing(photon)-ch2.md)
 ###### [3. Connecting multiple users](mrlearning-sharing(photon)-ch3.md)
 ###### [4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
-###### [5. Integration Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
+###### [5. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
 #### HoloLens (1st gen) open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
@@ -290,7 +286,16 @@
 ## Remote and research tools
 ### [Using the Windows Device Portal](using-the-windows-device-portal.md)
 ### [Device portal API reference](device-portal-api-reference.md)
+## Holographic Remoting
 ### [Holographic Remoting Player](holographic-remoting-player.md)
+### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
+### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
+### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
+### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)
+### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
+### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+### Holographic Remoting for HoloLens 1
+#### [Add Holographic Remoting](add-holographic-remoting.md)
 ## Other
 ### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

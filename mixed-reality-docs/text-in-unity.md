@@ -17,7 +17,7 @@ Text is one of the most important components in holographic apps. To display tex
 ![How to get sharp and beautiful text](images/hug-text-02-640px.png)<br>
 *Blurry default text in Unity*
 
-## Working with Unity's 3D Text(Text Mesh) and UI Text
+## Working with Unity's 3D Text (Text Mesh) and UI Text
 
 Unity assumes all new elements added to a scene are 1 Unity Unit in size, or 100% transform scale, which translates to about 1 meter on HoloLens. In the case of fonts, the bounding box for a 3D TextMesh comes in by default at about 1 meter in height.
 
@@ -29,6 +29,8 @@ Most visual designers use points to define font sizes in the real world. There a
 
 ![Unity 3D Text Mesh with different font sizes](images/Text_In_Unity_Measurements1.png)<br>
 *Scaling values for the Unity 3D Text and UI Text*
+
+<br>
 
 ![Unity 3D Text Mesh with different font sizes](images/hug-text-05-1000px.png)<br>
 *Unity 3D Text Mesh with optimized values*
@@ -46,7 +48,7 @@ When adding a UI or canvas based text element to a scene, the size disparity is 
 
 ## Working with Text Mesh Pro
 
-With Unity's Text Mesh Pro, you can secure the text rendering quality. It supports crisp text outline regardless of the distance using the [SDF(Signed Distance Field)](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) technique. Using the same calculation method that we used above for the 3D Text Mesh and UI Text, we can find proper scaling values to use conventional typographic Point. Since the default 3D Text Mesh Pro font with the size 36 shows the bounding of 2.5 Unity Unit(2.5m), we can use scaling value 0.005 to use the Point size. The Text Mesh Pro under UI menu has the default bounding size of 25 Unity Unit(25m). This gives us 0.0005 for the scaling value.
+With Unity's Text Mesh Pro, you can secure the text rendering quality. It supports crisp text outlines regardless of the distance using the [Signed Distance Field (SDF)](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) technique. Using the same calculation method that we used above for the 3D Text Mesh and UI Text, we can find the proper scaling values to use with conventional typographic points. Since the default 3D Text Mesh Pro font with the size of 36 has a bounding size of 2.5 Unity units (2.5m), we can use a scaling value of 0.005 to get the point size. The Text Mesh Pro under the UI menu has a default bounding size of 25 Unity units (25m). This gives us 0.0005 for the scaling value.
 
 ![Unity 3D Text Mesh with different font sizes](images/Text_In_Unity_Measurements2.png)<br>
 *Scaling values for the Unity 3D Text and UI Text*
@@ -54,7 +56,7 @@ With Unity's Text Mesh Pro, you can secure the text rendering quality. It suppor
 ## Recommended text size
 As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look quite small at a distance of 2 meters. It depends on the characteristics of each font, but in general the recommended minimum viewing angle and the font height for legibility are around 0.35°-0.4°/12.21-13.97mm based on our user research studies. It is about 35-40pt with the scaling factor introduced above. 
 
-For the near interaction at 0.45m(45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
+For the near interaction at 0.45m (45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
 
 ![Near and far interaction range](images/typography-distance-1000px.jpg)
 *Content at near and far interaction range*

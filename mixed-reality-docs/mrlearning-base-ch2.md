@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module - User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration
+title: Getting started tutorials - 3. Creating user interface and configure Mixed Reality Toolkit
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -162,8 +162,8 @@ In this section, you will learn how to add and edit text to your mixed reality e
 
 ![Lesson2 Chapter4 Step5](images/Lesson2_Chapter4_Step5.JPG)
 
-### Congratulations
+## Congratulations
 In this lesson, you learned how to copy, customize, and configure an MRTK profile setting (i.e., spatial awareness mesh visibility.) You also learned how to interact with a button to trigger events using tracked hands on the HoloLens 2. Finally, you learned how to create a simple UI interface using Unity's Text Mesh Pro the MRTK's Grid Object Collection component.
 
-[Next Lesson: Dynamic Content Placement and Solvers](mrlearning-base-ch3.md)
+[Next Lesson: 4. Placing dynamic content and using solvers](mrlearning-base-ch3.md)
 

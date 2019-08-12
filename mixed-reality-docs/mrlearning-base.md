@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module Introduction
+title: Getting started tutorials - 1. Overview and objectives
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -42,4 +42,4 @@ keywords: mixed reality, unity, tutorial, hololens
 * Some basic C# programming ability.
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode).
 
-[Next Lesson: Initializing your project and first application](mrlearning-base-ch1.md)
+[Next lesson: 2. Initializing your project and first application](mrlearning-base-ch1.md)

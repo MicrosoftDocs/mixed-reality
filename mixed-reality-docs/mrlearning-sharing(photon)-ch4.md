@@ -1,5 +1,5 @@
 ---
-title: MR Learning Sharing Module for HoloLens 2
+title: Multi-user capabilities tutorials - 4. Sharing object movements with multiple users
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -19,7 +19,7 @@ Objectives:
 - Configure your project to share the movements of the 3D model.
 - Learn how to build a basic multi-user collaborative application
 
-### Instructions
+## Instructions
 
 
 1. Save the scene from the previous lesson (Control+S). You can name it, HLSharedProjectMainPart4.unity, so that it's easier to find when you need it.
@@ -46,7 +46,7 @@ Objectives:
 
 ![module3chapter4updatestep6](images/module3chapter4updatestep6.png)
 
-7. In the Project view, navigate to Assets->Resources->Prefabs. First, drag and drop the Table prefab to the Tableprefab slot on the PhotonRoom class. Next drag and drop the LunarModule prefab to the Module Prefab slot on the PhotonRoom class.
+7. In the Project view, navigate to Assets->Resources->Prefabs. First, drag and drop the Table prefab to the Tableprefab slot on the PhotonRoom class. Next drag and drop the RocketLauncherCompleteVariantprefab to the Module Prefab slot on the PhotonRoom class.
 
 ![module3chapter4updatestep7](images/module3chapter4updatestep7.png)
 
@@ -63,10 +63,6 @@ Objectives:
 10. With the new object selected in your hierarchy, change the name of the object to TableAnchor in the Inspector panel. Also, click Add Component, and search for the TableAnchor component. Select it and add it to the object. 
 
 ![Module3Chapter4step6im](images/module3chapter4step7im.PNG)
-
-> Note: Set the positioning to x=1, y=-0.55, and z=2. Also, set the rotation to y=90. 
->
-> ![Module3Chapter4step6im](images/module3chapter4noteim.PNG)
 
 11. Now from the Project panel in the Prefabs folder, drag the Table prefab into the "TableAnchor" child object you just created.
 
@@ -85,5 +81,5 @@ Although all users are connected as part of a shared experience, and can see the
 
 Before proceeding to the next lesson, we'll need to complete the ASA Learning Module that covers ASA basics, Azure account and resource creation, and other fundamental buildings blocks required before we can integrate this into our shared experience.
 
-[Next Lesson: Sharing(Photon) Lesson 5](mrlearning-sharing(photon)-ch5.md)
+[Next Lesson: 5. Integration Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
 

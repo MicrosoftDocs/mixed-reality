@@ -1,5 +1,5 @@
 ---
-title: MR Learning SpeechSDK Module - Speech Recognition and Transcription
+title: Azure Speech Services tutorials - 4. Setting up intent and natural language understanding
 description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# Speech SDK Learning Module - Intent and Natural Language Understanding
+# 4. Setting up intent and natural language understanding
 
 In this lesson, we will explore the Azure Speech Service's Intent feature. The Intent feature allows us to equip our application with AI-powered voice commands, where users can say non-specific voice commands, and still have their intent understood by the system. During this lesson, we will set up our Azure LUIS Portal, setup our Intent/Entities/Utterances, publish our Intent Resource, connect our Unity app to our Intent Resource, and make our first Intent API call.
 

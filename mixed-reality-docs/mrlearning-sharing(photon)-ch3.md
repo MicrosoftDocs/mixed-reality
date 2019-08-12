@@ -1,5 +1,5 @@
 ---
-title: MR Learning Sharing Module for HoloLens 2
+title: Multi-user capabilities tutorials - 3. Connecting multiple users
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# Connecting multiple users
+# 3. Connecting multiple users
 
 In this lesson, we learn how to connect multiple users as part of a live shared experience. By the end of this lesson, you'll be able to open the application on multiple devices, and see avatar, represented by a sphere, representations of each person that joins. 
 
@@ -18,7 +18,7 @@ Objectives:
 - Configure players
 - Learn how to connect multiple users in a shared experience
 
-### Instructions
+## Instructions
 
 1. In the Assets->Resources->Prefabs folder in the Project panel, drag and drop the NetworkLobby prefab in to the hierarchy as shown in the image below.
 
@@ -67,5 +67,5 @@ Objectives:
 
 Once all the steps above are complete, and the build process is also complete, press the play button and connect your HoloLens 2. You should see a sphere moving around as you move your head. This will be shown for any user that joins your Unity project!
 
-[Next Lesson: Sharing(Photon) Lesson 4](mrlearning-sharing(photon)-ch4.md)
+[Next Lesson: 4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
 

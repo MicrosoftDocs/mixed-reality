@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module - Project Initialization and First Application
+title: Getting started tutorials - 2. Initializing your project and first application
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -110,4 +110,4 @@ You have now deployed your first HoloLens 2 application. As you walk around, you
 
 >Note: You will cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md)
 
-[Next Lesson: User Interface, Hand Tracking, and Mixed Reality Toolkit Configuration](mrlearning-base-ch2.md)
+[Next Lesson: 3. Creating user interface and configure Mixed Reality Toolkit ](mrlearning-base-ch2.md)

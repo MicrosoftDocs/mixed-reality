@@ -1,5 +1,5 @@
 ---
-title: MR Learning Sharing Module for HoloLens 2
+title: Multi-user capabilities tutorials - 1. Setting up Photon Unity Networking
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,11 +8,11 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-#  Setting up Photon Unity Networking
+#  1. Setting up Photon Unity Networking
 
 In this tutorial, we learn how to get ready for creating a shared experience by importing Photon Unity Networking (PUN) into your Unity project. Photon is one of several networking options available to Mixed Reality developers to create shared experiences. We we will learn how to create a Photon account, import Photon, and create an optional local server
 
-Objectives:
+## Objectives
 
 * Learn how to create a Photon account
 
@@ -22,7 +22,7 @@ Objectives:
 
   
 
-### Setting up Photon
+## Setting up Photon
 
 1. Set up a [Photon](https://dashboard.photonengine.com/en-US/Account/SignUp) account. Navigate to the Photon Sign-up page by clicking on [this link](https://dashboard.photonengine.com/en-US/Account/SignUp). Follow the instructions on the sign-up page to create the account. 
    
@@ -64,5 +64,5 @@ Objectives:
 
 You have successfully created a Photon account, set up a local Photon server, and imported PUN into Unity. Your next step is to set up the project and then allow connections with other users so that multiple users can see your work. 
 
-[Next tutorial: Getting Unity ready for development](mrlearning-sharing(photon)-ch2.md)
+[Next tutorial: 2. Getting Unity ready for development](mrlearning-sharing(photon)-ch2.md)
 
