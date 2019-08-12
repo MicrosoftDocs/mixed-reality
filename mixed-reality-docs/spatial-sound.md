@@ -50,7 +50,7 @@ Spatial audio can be about more than spatialization. Holograms in your world, es
 ## Use cases of spatial sound
 Case studies. Write an intro to each case study so that it's clear to the reader whether it addresses their scenario.
 * [Sound design for HoloTour](case-study-spatial-sound-design-for-holotour.md)
-* [Sound design for RoboRaid](case-study-spatial-sound-design-for-roboraid.md)
+* [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md)
 
 ## Getting started: Adding spatialization
 [Spatialization](spatial-sound-spatialization.md) is the core technology that gives spatial audio a sense of direction. On some devices, hardware acceleration of spatialization is available.
