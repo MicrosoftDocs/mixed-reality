@@ -115,7 +115,7 @@ Experiences like OnSight present new opportunities to collaborate. From physical
 
 Intuitive collaboration is the bedrock of conversation and working together and understanding how we can apply this intuition to the complexity of mixed reality is crucial. If we can not only recreate sharing experiences in mixed reality but supercharge them, it will be a paradigm shift for the future of work. Designing for shared experiences in mixed reality is new and exciting space — and we’re only at the beginning.
 
-## Get started sharing experiences
+## Get started building shared experiences
 
 Depending on your application and scenario, there will be various requirements to achieve your desired experience. Some of these include
 * Match-making: Ability to create sessions, advertise session, and discover and invite specific people, both locally and remotely to join your session.
@@ -132,6 +132,32 @@ To share anchors, use the <a href="https://docs.microsoft.com/azure/spatial-anch
 
 With a shared spatial anchor, the app on each device now has a common coordinate system in which they can place content. Now the app can ensure to position and orient the hologram at the same location.
 On HoloLens devices, you can also share anchors offline from one device to another.  Use the links below to decide what's best for your application.
+
+
+## Evaluating tech options:
+There are various service and technology options available to help build multi-user mixed reality experiences.  It can be tricky to choose a path, so taking a scenario-focused perspective, some options are detailed below.
+
+## Shared static holograms (no interactions):
+Leverage <a href="https://docs.microsoft.com/azure/spatial-anchors/" target="_blank">Azure Spatial Anchors</a> in your app.  Enabling and sharing spatial anchors across devices allows you to create an application where users see holograms in the same place at the same time.  Additional syncing across devices is needed to enable users to interact with holograms and see movements or state updates of holograms.
+
+## Share 1st person perspective:
+Leverage built-in Miracast support, for local users when you have a supported Miracast receiver, such as a PC or TV – no additional app code is needed.
+
+Leverage <a href="https://github.com/microsoft/mixedreality-webrtc" target="_blank">MixedReality-WebRTC</a> in your app, for remote users or when you have non-Miracast devices that you’d like to share to.  Enabling a WebRTC connection enables 1:1 audio/video streams between users, with a data channel for messaging across devices as well.  The mixed reality implementation optimizes for HoloLens, by providing mixed reality capture video stream of the view of the HoloLens user to others.  If you desire to scale up video streaming to multiple remote clients, an <a href="https://webrtcglossary.com/mcu/" target="_blank">MCU service provider</a> (Multipoint Conferencing Unit) is typically used, such as SignalWire.  A one-click SignalWire deployment to Azure is available via <a href="https://github.com/andywolk/azure-freeswitch-gpu-windows" target="_blank">Freeswitch</a>.  Please note that this is a paid service and SignalWire is not owned/affiliated with Microsoft.
+
+## Presenter-Spectator applications and Demos:
+Leverage <a href="https://github.com/microsoft/MixedReality-SpectatorView" target="_blank">MixedReality-SpectatorView</a> in your app.  Enable other devices (HL, Android, iOS, and video cameras) to see what the HoloLens sees from a different perspective in the same location, and receive updates on interactions of the host HoloLens user interacting with the holograms.  Watch, take pictures*, and record video of what the host does with the holograms in the application from your own spatial perspective with the spectator companion of the same app.
+
+*Note: Pictures are taken via screenshot on iOS/Android devices.
+
+## Multi-user collaborative experience:
+Start with our [multi-user learning tutorial](mrlearning-sharing(photon)-ch1), which leverages <a href="https://docs.microsoft.com/azure/spatial-anchors/" target="_blank">Azure Spatial Anchors</a> for local users and <a href="https://www.photonengine.com/PUN" target="_blank">Photon SDK</a> for syncing the content/state in the scene.  Create locally collaborative applications where each user has his/her own perspective on the holograms in the scene and can each fully interact with the holograms.  Updates are provided across all devices and interaction conflict management is handled by Photon.  Please note that Photon is a non-Microsoft product, so a billing relationship with Photon may be required to productize and scale for higher usage.
+
+## Future work:
+Component capabilities and interfaces will help in providing common consistency and robust support across the various scenarios and underlying technologies.  Until then, choose the best path that aligns to the scenario you are trying to achieve in your application.
+
+Different scenario or desire to use a different tech/service?  
+Provide feedback as GitHub issues in the corresponding repo, at the bottom of this page, or reach out on <a href="https://holodevelopers.slack.com/">HoloDevelopers slack</a>.
 
 
 ## See also
