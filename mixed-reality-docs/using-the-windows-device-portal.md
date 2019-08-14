@@ -49,7 +49,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 1. [Install the tools](install-the-tools.md) to make sure you have Visual Studio Update 1 with the Windows 10 developer tools installed on your PC. This enables USB connectivity.
 2. Connect your HoloLens to your PC with a micro-USB cable.
-3. From a web browser on your PC, go to [](http://127.0.0.1:10080).
+3. From a web browser on your PC, go to [http://127.0.0.1:10080](http://127.0.0.1:10080).
 
 ## Connecting to an emulator
 
