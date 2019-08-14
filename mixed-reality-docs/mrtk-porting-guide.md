@@ -34,7 +34,7 @@ To help clarify additional differences between [Unity 2018 LTS](https://unity3d.
 Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project, and whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, then you will have to use Unity 2018 LTS.
 
 
-| Unity 2018.3.x | Unity 2019.1+ |
+| Unity 2018.4.x | Unity 2019.1+ |
 |----------|-------------------|
 | ARM32 build support | ARM32 and ARM64 build support |
 | Stable LTS build release | Beta stability |
