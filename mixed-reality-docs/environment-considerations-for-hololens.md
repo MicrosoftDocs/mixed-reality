@@ -18,7 +18,7 @@ The holograms you place will stay where you’ve put them, even if you turn off 
 
 ## Setting up an environment
 
-HoloLens devices know how to place stable and accurate holograms by *tracking* users in a space. Without proper tracking, the device does not understand the environment or the user within it - so holograms can appear in the wrong places, not appear in the same spot every time, or not appear at all.
+HoloLens devices know how to place stable and accurate holograms by *tracking* users in a space. Without proper tracking, the device does not understand the environment or the user within it - so holograms can appear in the wrong places, not appear in the same spot every time, or not appear at all. The data used to track users is represented in the *spatial map*. 
 
 Tracking performance is heavily influenced by the environment the user is in, and tuning an environment to induce stable and consistent tracking is an art rather than a science. Many different environmental factors are fused together to enable tracking, but as a Mixed Reality developer, there are several factors you can keep in mind to tune a space for better tracking.
  
@@ -52,10 +52,12 @@ If you have two areas or regions that look the same, the tracker may think they 
 
 To prevent wormholes, try to prevent identical areas in the same space. Identical areas can sometimes include factory stations, windows on a building, server racks, or work stations. Labelling areas or adding unique features to each similar-looking areas can help mitigate wormholes.
  
-### Temporal stability of a space
+### Movement in a space
 If your environment is constantly shifting and changing, the device has no stable features to locate against. 
 
 The more moving objects that are in a space, including people, the easier it is to lose tracking. Moving conveyor belts, items in different states of construction, and lots of people in a space have all been known to cause tracking issues.
+
+The HoloLens can quickly adapt to these changes, but only when that area is clearly visible to the device. Areas that are not seen as frequently may lag behind reality, which can cause errors in the spatial map. For example, a user scans a friend and then turns around while the friend leaves the room. A 'ghost' representation of the friend will persist in the spatial mapping data until the user re-scans the now empty space.
  
 ### Proximity of the user to items in the space
 Similarly to how humans cannot focus well on objects close to the eyes, HoloLens struggles when objects are close to it's cameras. If an object is too close to be seen with both cameras, or if an object is blocking one camera, the device will have far more issues with tracking against the object. 

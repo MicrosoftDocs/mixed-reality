@@ -49,38 +49,7 @@ Errors in spatial mapping data fall into one of three categories:
 * **Hallucinations**: Surfaces exist in the spatial mapping data that do not exist in the real world.
 * **Bias**: Surfaces in the spatial mapping data are imperfectly aligned with real-world surfaces, either pushed in or pulled out.
 
-Several factors can affect the frequency and severity of these errors:
-
-* **User motion**
-   * How the user moves through their environment determines how well the environment will be scanned, so the user may require guidance in order to achieve a good scan.
-   * The camera used for scanning provides data within a 70-degree cone, from a minimum of 0.8 meters to a maximum of 3.1 meters distance from the camera. Real-world surfaces will only be scanned within this field of view. Note that these values are subject to change in future versions.
-   * If the user never gets within 3.1 meters of an object then it will not be scanned.
-   * If the user only views an object from a distance of less than 0.8 meters then it will not be scanned (this avoids scanning the user's hands).
-   * If the user never looks upward (which is fairly normal) then the ceiling will likely not be scanned.
-   * If a user never looks behind furniture or a wall then the objects occluded by them will not be scanned.
-   * Surfaces tend to be scanned at a higher quality when they are viewed head-on rather than at a shallow angle.
-   * If the head-tracking system of the HoloLens fails momentarily (which may happen due to rapid user motion, poor lighting, featureless walls or the cameras becoming covered), this can introduce errors in the spatial mapping data. Any such errors will be corrected over time as the user continues to move around and scan their environment.
-
-* **Surface materials**
-   * The materials found on real-world surfaces vary greatly. These impact the quality of spatial mapping data because they affect how infrared light is reflected.
-   * Dark surfaces may not scan until they come closer to the camera, because they reflect less light.
-   * Some surfaces may be so dark that they reflect too little light to be scanned from any distance, so they will introduce hole errors at the location of the surface and sometimes also behind the surface.
-   * Particularly shiny surfaces may only scan when viewed head-on, and not when viewed from a shallow angle.
-   * Mirrors, because they create illusory reflections of real spaces and surfaces, can cause both hole errors and hallucination errors.
-
-* **Scene motion**
-   * Spatial mapping adapts rapidly to changes in the environment, such as moving people or opening and closing doors.
-   * However, spatial mapping can only adapt to changes in an area when that area is clearly visible to the camera that is used for scanning.
-   * Because of this, it is possible for this adaptation to lag behind reality, which can cause hole or hallucination errors.
-   * As an example, a user scans a friend and then turns around while the friend leaves the room. A 'ghost' representation of the friend (a hallucination error) will persist in the spatial mapping data, until the user turns back around and re-scans the space where the friend was standing.
-
-* **Lighting interference**
-   * Ambient infrared light in the scene may interfere with scanning, for example strong sunlight coming through a window.
-   * Particularly shiny surfaces may interfere with the scanning of nearby surfaces, the light bouncing off them causing bias errors.
-   * Shiny surfaces reflecting light directly back into the camera may interfere with nearby space, either by causing floating mid-air hallucinations or by delaying adaptation to scene motion.
-   * Two HoloLens devices in the same room should not interfere with one another, but the presence of more than five HoloLens devices may cause interference.
-
-It may be possible to avoid or correct for some of these errors. However, you should design your application so that the user is able to achieve their goals even in the presence of errors in the spatial mapping data.
+Several factors, detailed [here](environmental-considerations-for-hololens.md), can affect the frequency and severity of these errors.  However, you should design your application so that the user is able to achieve their goals even in the presence of errors in the spatial mapping data.
 
 ## The environment scanning experience
 
