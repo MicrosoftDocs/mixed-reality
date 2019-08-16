@@ -124,6 +124,8 @@ Optimal text legibility can help reduce eye strain and maintain user comfort, es
 
 In general, we recommend testing specific applications for legibility and making font sizes as large as is feasible for a comfortable experience. Below we offer general guidance as a starting point for development. Note that all font sizes are reported in degrees of [visual angle](https://en.wikipedia.org/wiki/Visual_angle) rather than specific physical sizes, which provides guidance for any distance within the zone of optimal hologram placement because it accounts for both the size of the text and the distance it appears to the viewer. 
 
+See [Typography](typography.md) and [Text in Unity](text-in-unity.md) pages for more detailed guidelines.
+
 ### Guidance for holographic devices
 
 For holographic devices, rendering black/dark text on a white/light background provides the most consistent contrast ratio because the background will occlude interference from the real-world behind the rendering. Rendering white/light text on a black/dark background allows more of real-world environment to show through, which may interfere with text legibility. 
@@ -169,6 +171,6 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 ## See also
 * [Gaze](gaze.md)
 * [Hologram stability](hologram-stability.md)
-* [Interaction fundamentals](interaction-fundamentals.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 * [Holographic frame](holographic-frame.md)
 * [Calibration](calibration.md)

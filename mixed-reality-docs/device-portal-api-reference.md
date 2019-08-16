@@ -275,17 +275,6 @@ Stop the current recording. Recording will be returned as a file.
 
 ## Mixed Reality Capture
 
-**/api/holographic/mrc/file (DELETE)**
-
-Deletes a mixed reality recording from the device.
-
-Parameters
-* filename : Name, hex64 encoded, of the file to delete
-
-**/api/holographic/mrc/settings (GET)**
-
-Gets the default mixed reality capture settings
-
 **/api/holographic/mrc/file (GET)**
 
 Downloads a mixed reality file from the device. Use op=stream query parameter for streaming.
@@ -294,6 +283,38 @@ Parameters
 * filename : Name, hex64 encoded, of the video file to get
 * op : stream
 
+**/api/holographic/mrc/file (DELETE)**
+
+Deletes a mixed reality recording from the device.
+
+Parameters
+* filename : Name, hex64 encoded, of the file to delete
+
+**/api/holographic/mrc/files (GET)**
+
+Returns the list of mixed reality files stored on the device
+
+**/api/holographic/mrc/photo (POST)**
+
+Takes a mixed reality photo and creates a file on the device
+
+Parameters
+* holo : capture holograms: true or false (defaults to false)
+* pv : capture PV camera: true or false (defaults to false)
+* RenderFromCamera : (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)
+
+**/api/holographic/mrc/settings (GET)**
+
+Gets the default mixed reality capture settings
+
+**/api/holographic/mrc/settings (POST)**
+
+Sets the default mixed reality capture settings.  Some of these settings are applied to the system's MRC photo and video capture.
+
+**/api/holographic/mrc/status (GET)**
+
+Gets the status of the mixed reality recorded (running, stopped)
+
 **/api/holographic/mrc/thumbnail (GET)**
 
 Gets the thumbnail image for the specified file.
@@ -301,81 +322,56 @@ Gets the thumbnail image for the specified file.
 Parameters
 * filename: Name, hex64 encoded, of the file for which the thumbnail is being requested
 
-**/api/holographic/mrc/status (GET)**
-
-Gets the status of the mixed reality recorded (running, stopped)
-
-**/api/holographic/mrc/files (GET)**
-
-Returns the list of mixed reality files stored on the device
-
-**/api/holographic/mrc/settings (POST)**
-
-Sets the default mixed reality capture settings
-
 **/api/holographic/mrc/video/control/start (POST)**
 
 Starts a mixed reality recording
 
 Parameters
-* holo : capture holograms: true or false
-* pv : capture PV camera: true or false
-* mic : capture microphone: true or false
-* loopback : capture app audio: true or false
+* holo : capture holograms: true or false (defaults to false)
+* pv : capture PV camera: true or false (defaults to false)
+* mic : capture microphone: true or false (defaults to false)
+* loopback : capture app audio: true or false (defaults to false)
+* RenderFromCamera : (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)
+* vstab : (HoloLens 2 only) enable video stabilization: true or false (defaults to true)
+* vstabbuffer: (HoloLens 2 only) video stabilization buffer latency: 0 to 30 frames (defaults to 15 frames)
 
 **/api/holographic/mrc/video/control/stop (POST)**
 
 Stops the current mixed reality recording
 
-**/api/holographic/mrc/photo (POST)**
+## Mixed Reality Streaming
 
-Takes a mixed reality photo and creates a file on the device
+HoloLens supports live preview of mixed reality via chunked download of a fragmented mp4.
 
-Parameters
+Mixed reality streams share the same set of parameters to control what is captured:
 * holo : capture holograms: true or false
 * pv : capture PV camera: true or false
+* mic : capture microphone: true or false
+* loopback : capture app audio: true or false
 
-Mixed Reality Streaming
+If none of these are specified: holograms, photo/video camera, and app audio will be captured<br>
+If any are specified: the unspecified parameters will default to false
+
+Optional parameters (HoloLens 2 only)
+* RenderFromCamera : render from perspective of photo/video camera: true or false (defaults to true)
+* vstab : enable video stabilization: true or false (defaults to false)
+* vstabbuffer: video stabilization buffer latency: 0 to 30 frames (defaults to 15 frames)
 
 **/api/holographic/stream/live.mp4 (GET)**
 
-Initiates a chunked download of a fragmented mp4
-
-Parameters
-* holo : capture holograms: true or false
-* pv : capture PV camera: true or false
-* mic : capture microphone: true or false
-* loopback : capture app audio: true or false
+A 1280x720p 30fps 5Mbit stream.
 
 **/api/holographic/stream/live_high.mp4 (GET)**
 
-Initiates a chunked download of a fragmented mp4
-
-Parameters
-* holo : capture holograms: true or false
-* pv : capture PV camera: true or false
-* mic : capture microphone: true or false
-* loopback : capture app audio: true or false
-
-**/api/holographic/stream/live_low.mp4 (GET)**
-
-Initiates a chunked download of a fragmented mp4
-
-Parameters
-* holo : capture holograms: true or false
-* pv : capture PV camera: true or false
-* mic : capture microphone: true or false
-* loopback : capture app audio: true or false
+A 1280x720p 30fps 5Mbit stream.
 
 **/api/holographic/stream/live_med.mp4 (GET)**
 
-Initiates a chunked download of a fragmented mp4
+A 854x480p 30fps 2.5Mbit stream.
 
-Parameters
-* holo : capture holograms: true or false
-* pv : capture PV camera: true or false
-* mic : capture microphone: true or false
-* loopback : capture app audio: true or false
+**/api/holographic/stream/live_low.mp4 (GET)**
+
+A 428x240p 15fps 0.6Mbit stream.
 
 ## Networking
 

@@ -63,7 +63,7 @@ Both the developers and artists have to consider the capabilities of the device 
 
 The creation process for assets is the same regardless of whether you're targeting an experience for a [holographic device or an immersive device](mixed-reality.md#the-mixed-reality-spectrum). The primary thing to note is the device capability as mentioned above as well as scale since you can see the real world in mixed reality you will want to maintain the correct scale based on the experience. 
 
-## Authoring Assets
+## Authoring assets
 
 We'll start with the ways to get assets for your project:
 1. Creating Assets (Authoring tools and object capture)

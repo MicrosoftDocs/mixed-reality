@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module Intro
+title: Getting started tutorials - 1. Overview and objectives
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -8,16 +8,29 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# MR Learning Base Module Overview & Objectives
+# 1. Overview and objectives
 
 ## Device support
 
 <table>
-<tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st Gen)</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th><th style="width:150px"> <a href="https://www.microsoft.com/en-us/hololens/hardware">HoloLens 2</a></th>
-</tr><tr>
-<td></td><td style="text-align: center;"> </td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
-</tr>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Course</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="https://www.microsoft.com/en-us/hololens/hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td></td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 ## Before you start
@@ -28,3 +41,5 @@ keywords: mixed reality, unity, tutorial, hololens
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability.
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode).
+
+[Next lesson: 2. Initializing your project and first application](mrlearning-base-ch1.md)
