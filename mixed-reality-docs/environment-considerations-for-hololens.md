@@ -75,11 +75,7 @@ As long as WiFi is enabled, map data will be correlated with a WiFi fingerprint,
 Network identification (i.e. SSID, MAC address) is not sent to Microsoft, and all WiFi references are kept local on the HoloLens.
 
 ## Mapping new spaces
-When you enter a new space (or load an existing one), you’ll see a mesh graphic spreading over the space. This means your device is [mapping your surroundings](spatial-mapping-design.md). 
-
-If you’re having trouble placing holograms, try walking around the space so HoloLens can map it more fully. 
-
-If your HoloLens can’t map your space or is out of calibration, you may enter Limited mode. In Limited mode, you won’t be able to place holograms in your surroundings.
+When you enter a new space (or load an existing one), you’ll see a mesh graphic spreading over the space. This means your device is mapping your surroundings. While a HoloLens will learn a space over time, there are [tips and tricks to map spaces](use-hololens-in-new-spaces.md). 
 
 ## Environment management
 There are two settings which enable users to “clean up” holograms and cause HoloLens to “forget" a space.  They exist in “Holograms and environments” in the settings app, with the second setting also appearing under “Privacy” in the settings app.
@@ -88,20 +84,14 @@ There are two settings which enable users to “clean up” holograms and cause 
 
 2.	Delete all holograms – By selecting this setting, HoloLens will erase ALL map data and anchored holograms in the entire databases of spaces.  No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
 
-### Managing your spaces
-
-The map sections and different spaces have been collapsed into a single database, stored locally on the HoloLens device. The map database is stored securely, with access only available to the internal system, and never to a user of the device, even when plugged into a PC and/or using the file explorer app. When bitlocker is enabled, the stored map data is also encrypted.
-
-Multiple map components exist when holograms are placed in different locations without a connective path between the locations/holograms.  Holograms anchored within the same map section are considered to be “nearby” in the current space.
-
-There is a developer API to export a small subset of the “current space” (a portion the map component that is currently recognized) to enable shared hologram scenarios.  There is currently no mechanism to download the entire database of all spaces that have been mapped.
-
 
 ## Hologram quality
 
 Holograms can be placed throughout your environment—high, low, and all around you—but you’ll see them through a [holographic frame](holographic-frame.md) that sits in front of your eyes. To get the best view, make sure to adjust your device so you can see the entire frame. And don’t hesitate to walk around your environment and explore!
 
 For your [holograms](hologram.md) to look crisp, clear, and stable, your HoloLens needs to be calibrated just for you. When you first set up your HoloLens, you’ll be guided through this process. Later on, if holograms don’t look right or you’re seeing a lot of errors, you can make adjustments.
+
+If you are having trouble mapping spaces, try deleting nearby holograms and remapping the space.
 
 ### Calibration
 
@@ -117,3 +107,4 @@ If someone else is going to be using your HoloLens, they should run the Calibrat
 * [Spatial mapping design](spatial-mapping-design.md)
 * [Holograms](hologram.md)
 * [Calibration](calibration.md)
+* [Use Hololens in new spaces](use-hololens-in-new-spaces.md)

@@ -42,18 +42,9 @@ Visualize surfaces when placing or moving holograms (use a simple projected grid
 
 ## What influences spatial mapping quality?
 
-In order to provide the best user experience, it is important to understand the factors that affect the quality of spatial mapping data gathered by HoloLens.
-
-Errors in spatial mapping data fall into one of three categories:
-* **Holes**: Real-world surfaces are missing from the spatial mapping data.
-* **Hallucinations**: Surfaces exist in the spatial mapping data that do not exist in the real world.
-* **Bias**: Surfaces in the spatial mapping data are imperfectly aligned with real-world surfaces, either pushed in or pulled out.
-
-Several factors, detailed [here](environmental-considerations-for-hololens.md), can affect the frequency and severity of these errors.  However, you should design your application so that the user is able to achieve their goals even in the presence of errors in the spatial mapping data.
+Several factors, detailed [here](environment-considerations-for-hololens.md), can affect the frequency and severity of these errors.  However, you should design your application so that the user is able to achieve their goals even in the presence of errors in the spatial mapping data.
 
 ## The environment scanning experience
-
-HoloLens learns about the surfaces in its environment as the user looks at them. Over time, the HoloLens builds up a scan of all parts of the environment that have been observed. It also updates the scan as changes in the environment are observed. This scan will automatically persist between app launches.
 
 Each application that uses spatial mapping should consider providing a 'scanning experience'; the process through which the application guides the user to scan surfaces that are necessary for the application to function correctly.
 
@@ -70,7 +61,7 @@ To help design the right scanning experience, consider which of the following po
 
 * **No scanning experience**
    * An application may function perfectly without any guided scanning experience; it will learn about surfaces that are observed in the course of natural user movement.
-   * For example an application that lets the user draw on surfaces with holographic spraypaint requires knowledge only of the surfaces currently visible to the user.
+   * For example an application that lets the user draw on surfaces with holographic spray paint requires knowledge only of the surfaces currently visible to the user.
    * The environment may be completely scanned already if it is one in which the user has already spent a lot of time using the HoloLens.
    * Bear in mind however that the camera used by spatial mapping can only see 3.1m in front of the user, so spatial mapping will not know about any more distant surfaces unless the user has observed them from a closer distance in the past.
    * So the user understands which surfaces have been scanned, the application should provide visual feedback to this effect, for example casting virtual shadows onto scanned surfaces may help the user place holograms on those surfaces.
