@@ -116,7 +116,8 @@ If deploying to an immersive headset:
 * Subscribe to hand tracking events.
 * Use cursor feedback to show users when a hand is being tracked.
 
-> Note: On HoloLens 2 , hands detected fires whenever hands are visible (not just when a finger is pointing up).
+>[!NOTE]
+>On HoloLens 2 , hands detected fires whenever hands are visible (not just when a finger is pointing up).
 
 ### Instructions
 
