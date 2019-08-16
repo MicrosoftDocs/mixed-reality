@@ -1,258 +1,570 @@
 ---
 title: QR code tracking
-description: Learn how to turn on QR code tracking for your Windows Mixed Reality immersive (VR) headset and implement the feature in your VR apps.
-author: yoyozilla
-ms.author: yoyoz
-ms.date: 11/06/2018
+description: Learn how to turn on QR code tracking for your Windows Mixed Reality headset and implement the feature in your apps.
+author: dorreneb
+ms.author: dobrown
+ms.date: 05/15/2019
 ms.topic: article
-keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code
+keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2
 ---
 
-# QR code tracking
+# QR Code Tracking
 
-QR code tracking is implemented in the Windows Mixed Reality driver for immersive (VR) headsets. By enabling the QR code tracker in the headset driver, the headset scans for QR codes and they are reported to interested apps. This feature is only available as of the [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md).
+Specific Windows Mixed Reality devices can use QR codes to track in an environment. When enabled, the headset reports instances of QR codes found in an environment to your app.
 
 >[!NOTE]
->The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+>The code snippets in this article currently demonstrate the use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md). The concepts are equivalent for a C++/WinRT project, though you need to translate the code.
 
-## Device support
+## Device Compatibility for QR Code Tracking
 
-<table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <tr>
-        <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
-    </tr>
-     <tr>
-        <td>QR code tracking</td>
-        <td>❌</td>
-        <td>✔️</td>
-    </tr>
-</table>
+### HoloLens (1st gen)
+HoloLens (1st gen) cannot natively track QR codes.
 
-## Enabling and disabling QR code tracking for your headset
-Note: This section is only valid for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md). From 19h1 builds onwards you will not have to do this.
-Whether you're developing a mixed reality app that will leverage QR code tracking, or you're a customer of one of these apps, you'll need to manually turn on QR code tracking in your headset's driver.
+### HoloLens 2
+HoloLens 2 can track QR codes by default. 
 
-In order to **turn on QR code tracking** for your immersive (VR) headset:
+Apps that use this feature must request the webcam capability to read QR codes in a space.
+
+### Windows Mixed Reality (VR) Headsets
+Windows Mixed Reality (VR) headsets running Windows 10 version 1809 can track QR codes if the `HKLM\SOFTWARE\Microsoft\HoloLensSensors` registry key is enabled.
+
+#### To turn on QR tracking:
 
 1. Close the Mixed Reality Portal app on your PC.
 2. Unplug the headset from your PC.
-3. Run the following script in the Command Prompt:<br>
+3. Open Command Prompt as administrator and run the following script: <br>
     `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F`
 4. Reconnect your headset to your PC.
 
-In order to **turn off QR code tracking** for your immersive (VR) headset:
+#### To turn off QR tracking:
 
 1. Close the Mixed Reality Portal app on your PC.
 2. Unplug the headset from your PC.
-3. Run the following script in the Command Prompt:<br>
+3. Open Command Prompt as administrator and run the following script:<br>
     `reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F`
-4. Reconnect your headset to your PC. This will make any discovered QR codes "non-locatable."
 
-## Printing codes
+Completing these steps makes any discovered QR codes non-locatable.
 
-First and foremost, the [spec for QR codes](https://www.qrcode.com/en/howto/code.html) says "The QR Code symbol area requires a margin or "quiet zone" around it to be used. The margin is a clear area around a symbol where nothing is printed. QR Code requires a four-module wide margin at all sides of a symbol." This needs to have a width, on every side, of four times the size of a module - a single black square in the code. The spec page contains advice on how to print QR codes and figure out the area required to make a certain sized QR code.
+>[!NOTE]
+> Note that the version of QR tracking on Windows 10 version 1809 does not work on future versions of Windows, such as the version of Windows running on Hololens 2. If you migrate your app from VR to Hololens 2, you must update your QR tracking DLL.
 
-Currently QR code detection quality is susceptible to varying illumination and backdrop. To combat this, note your illumination and print the appropriate code. In a scene with particularly bright lighting, print a code that is black on a gray background. Under a low-light scene, black on white works. Likewise, if the backdrop to the code is particularly dark, try a black on gray code if your detection rate is low. Otherwise, if the backdrop is lighter, a regular code should work fine.
+## Getting the QR Code APIs
+Please download the NuGet package for the QR APIs [here](https://github.com/dorreneb/mixed-reality/releases).
 
 ## QRTracking API
 
-The QRTracking plugin exposes the APIs for QR code tracking. To use the plugin, you will need to use the following types from the *QRCodesTrackerPlugin* namespace.
+The QRTracking plugin exposes the APIs for QR code tracking.
 
 ```cs
- // QRTracker plugin namespace
- namespace QRCodesTrackerPlugin
- {
-    // Encapsulates information about a labeled QR code element.
-    public class QRCode
-    {        
-        // Unique id that identifies this QR code for this session.
-        public Guid Id { get; private set; }
-           
-        // Version of this QR code.
-        public Int32 Version { get; private set; }
-        
-        // PhysicalSizeMeters of this QR code.
-        public float PhysicalSizeMeters { get; private set; }
-        
-        // QR code Data.
-        public string Code { get; private set; }
-        
-        // QR code DataStream this is the error corrected data stream
-        public Byte[] CodeStream { get; private set; }
-        
-        // QR code last detected QPC ticks.
-        public Int64 LastDetectedQPCTicks { get; private set; }
+namespace Microsoft.MixedReality.QR
+{
+    /// <summary>
+    /// QR Code Version Information.
+    /// </summary>
+    public enum VersionInfo
+    {
+        /// <summary>
+        /// QR Code Version 1.
+        /// </summary>
+        QR1 = 1,
+        /// <summary>
+        /// QR Code Version 2.
+        /// </summary>
+        QR2 = 2,
+        /// <summary>
+        /// QR Code Version 3.
+        /// </summary>
+        QR3 = 3,
+        /// <summary>
+        /// QR Code Version 4.
+        /// </summary>
+        QR4 = 4,
+        /// <summary>
+        /// QR Code Version 5.
+        /// </summary>
+        QR5 = 5,
+        /// <summary>
+        /// QR Code Version 6.
+        /// </summary>
+        QR6 = 6,
+        /// <summary>
+        /// QR Code Version 7.
+        /// </summary>
+        QR7 = 7,
+        /// <summary>
+        /// QR Code Version 8.
+        /// </summary>
+        QR8 = 8,
+        /// <summary>
+        /// QR Code Version 9.
+        /// </summary>
+        QR9 = 9,
+        /// <summary>
+        /// QR Code Version 10.
+        /// </summary>
+        QR10 = 10,
+        /// <summary>
+        /// QR Code Version 11.
+        /// </summary>
+        QR11 = 11,
+        /// <summary>
+        /// QR Code Version 12.
+        /// </summary>
+        QR12 = 12,
+        /// <summary>
+        /// QR Code Version 13.
+        /// </summary>
+        QR13 = 13,
+        /// <summary>
+        /// QR Code Version 14.
+        /// </summary>
+        QR14 = 14,
+        /// <summary>
+        /// QR Code Version 15.
+        /// </summary>
+        QR15 = 15,
+        /// <summary>
+        /// QR Code Version 16.
+        /// </summary>
+        QR16 = 16,
+        /// <summary>
+        /// QR Code Version 17.
+        /// </summary>
+        QR17 = 17,
+        /// <summary>
+        /// QR Code Version 18.
+        /// </summary>
+        QR18 = 18,
+        /// <summary>
+        /// QR Code Version 19.
+        /// </summary>
+        QR19 = 19,
+        /// <summary>
+        /// QR Code Version 20.
+        /// </summary>
+        QR20 = 20,
+        /// <summary>
+        /// QR Code Version 21.
+        /// </summary>
+        QR21 = 21,
+        /// <summary>
+        /// QR Code Version 22.
+        /// </summary>
+        QR22 = 22,
+        /// <summary>
+        /// QR Code Version 23.
+        /// </summary>
+        QR23 = 23,
+        /// <summary>
+        /// QR Code Version 24.
+        /// </summary>
+        QR24 = 24,
+        /// <summary>
+        /// QR Code Version 25.
+        /// </summary>
+        QR25 = 25,
+        /// <summary>
+        /// QR Code Version 26.
+        /// </summary>
+        QR26 = 26,
+        /// <summary>
+        /// QR Code Version 27.
+        /// </summary>
+        QR27 = 27,
+        /// <summary>
+        /// QR Code Version 28.
+        /// </summary>
+        QR28 = 28,
+        /// <summary>
+        /// QR Code Version 29.
+        /// </summary>
+        QR29 = 29,
+        /// <summary>
+        /// QR Code Version 30.
+        /// </summary>
+        QR30 = 30,
+        /// <summary>
+        /// QR Code Version 31.
+        /// </summary>
+        QR31 = 31,
+        /// <summary>
+        /// QR Code Version 32.
+        /// </summary>
+        QR32 = 32,
+        /// <summary>
+        /// QR Code Version 33.
+        /// </summary>
+        QR33 = 33,
+        /// <summary>
+        /// QR Code Version 34.
+        /// </summary>
+        QR34 = 34,
+        /// <summary>
+        /// QR Code Version 35.
+        /// </summary>
+        QR35 = 35,
+        /// <summary>
+        /// QR Code Version 36.
+        /// </summary>
+        QR36 = 36,
+        /// <summary>
+        /// QR Code Version 37.
+        /// </summary>
+        QR37 = 37,
+        /// <summary>
+        /// QR Code Version 38.
+        /// </summary>
+        QR38 = 38,
+        /// <summary>
+        /// QR Code Version 39.
+        /// </summary>
+        QR39 = 39,
+        /// <summary>
+        /// QR Code Version 40.
+        /// </summary>
+        QR40 = 40,
+        /// <summary>
+        /// Micro QR Code Version M1.
+        /// </summary>
+        MicroQRM1 = 41,
+        /// <summary>
+        /// Micro QR Code Version M2.
+        /// </summary>
+        MicroQRM2 = 42,
+        /// <summary>
+        /// Micro QR Code Version M3.
+        /// </summary>
+        MicroQRM3 = 43,
+        /// <summary>
+        /// Micro QR Code Version M4.
+        /// </summary>
+        MicroQRM4 = 44,
     };
-    
-    // The type of a QR Code added event.
+
+    /// <summary>
+    /// Encapsulates information about a labeled spatial anchored element.
+    /// </summary>
+    /// <remarks>
+    /// This type if the 'glue' between spatial anchors (which have no meaning attached to them) and App Holograms.
+    /// SpatialEntity are designed to work as 'spatial labels' in the world. Proximity can be used to discover content attached to SpatialAnchors.
+    /// In addition, SpatialEntities can be shared across devices/users.
+    /// </remarks>
+    public class QRCode
+    {
+        /// <summary>
+        /// Unique id that identifies this QR code for this session.
+        /// </summary>
+        public Guid Id { get; private set; }
+
+        /// <summary>
+        /// Spatial graph node id for this QR code to create a coordinate system.
+        /// </summary>
+        public Guid SpatialGraphNodeId { get; private set; }
+
+        /// <summary>
+        /// Version of this QR code. Version 1 -40 are regular QRCodes and 41-44 are the Micro QRCode 1-4
+        /// </summary>
+        public VersionInfo Version { get; private set; }
+
+        /// <summary>
+        /// Physical width or height of this QR code in Meters.
+        /// </summary>
+        public float PhysicalSideLength { get; private set; }
+
+        /// <summary>
+        /// QR code Data.
+        /// </summary>
+        public String Data { get; private set; }
+
+        /// <summary>
+        /// Size of the RawData of this QR code.
+        /// </summary>
+        public UInt32 RawDataSize { get; private set; }
+
+        /// <summary>
+        /// QR code Get the CodeRawData copy, this is the error corrected raw data bytes.
+        /// Used when the platform is unable to decode the encoding and user can
+        /// decode as needed.
+        /// </summary>
+        public void GetRawData(byte[] buffer) { }
+
+        /// <summary>
+        /// QR code last detected system relative time in 100ns ticks.
+        /// </summary>
+        public System.TimeSpan SystemRelativeLastDetectedTime { get; private set; }
+
+        /// <summary>
+        /// QR code last detected time.
+        /// </summary>
+        public System.DateTimeOffset LastDetectedTime { get; private set; }
+    }
+
+    /// <summary>
+    /// The type of a QR Code added event.
+    /// </summary>
     public class QRCodeAddedEventArgs
-    {   
-        // Gets the QR Code that was added
+    {
+        /// <summary>
+        /// Gets the QR Code that was added
+        /// </summary>
         public QRCode Code { get; private set; }
     };
-    
-    // The type of a QR Code removed event.
+
+    /// <summary>
+    /// The type of a QR Code removed event.
+    /// </summary>
     public class QRCodeRemovedEventArgs
     {
-        // Gets the QR Code that was removed.
+        /// <summary>
+        /// Gets the QR Code that was removed.
+        /// </summary>
         public QRCode Code { get; private set; }
     };
-    
-    // The type of a QR Code updated event.
+
+    /// <summary>
+    /// The type of a QR Code updated event.
+    /// </summary>
     public class QRCodeUpdatedEventArgs
     {
-        // Gets the QR Code that was updated.
+        /// <summary>
+        /// Gets the QR Code that was updated.
+        /// </summary>
         public QRCode Code { get; private set; }
     };
-    
-    // A callback for handling the QR Code added event.
-    public delegate void QRCodeAddedHandler(QRCodeAddedEventArgs args);
-    
-    // A callback for handling the QR Code removed event.
-    public delegate void QRCodeRemovedHandler(QRCodeRemovedEventArgs args);
-    
-    // A callback for handling the QR Code updated event.
-    public delegate void QRCodeUpdatedHandler(QRCodeUpdatedEventArgs args);
-    
-    // Enumerates the possible results of a start of QRTracker.
-    public enum QRTrackerStartResult
-    {
-        // The start has succeeded.
-        Success = 0,
-        
-        //  The currently no device is connected.
-        DeviceNotConnected = 1,
-        
-        // The QRTracking Feature is not supported by the current HMD driver
-        // systems
-        FeatureNotSupported = 2,
-        
-        // The access is denide. Administrator needs to enable QR tracker feature.
-        AccessDenied = 3,
-    };
-    
-    // QRTracker
-    public class QRTracker
-    {
-        // Constructs a new QRTracker.
-        public QRTracker(){}
-        
-        // Gets the QRTracker.
-        public static QRTracker Get()
-        {
-            return new QRTracker();
-        }
-        
-        // Start the QRTracker. Returns QRTrackerStartResult.
-        public QRTrackerStartResult Start()
-        {
-            throw new NotImplementedException();
-        }
-        
-        // Stops tracking QR codes.
-        public void Stop() {}
 
-        // Not Implemented
-        Windows.Foundation.Collections.IVector<QRCode> GetList() { throw new NotImplementedException(); }
-        
-        // Event representing the addition of a QR Code.
-        public event QRCodeAddedHandler Added = delegate { };
-        
-        // Event representing the removal of a QR Code.
-        public event QRCodeRemovedHandler Removed = delegate { };
-        
-        // Event representing the update of a QR Code.
-        public event QRCodeUpdatedHandler Updated = delegate { };
+    /// <summary>
+    /// Enumerates the possible results of a request access.
+    /// </summary>
+    public enum QRCodeWatcherAccessStatus
+    {
+       /// <summary>
+        /// DeniedBySystem.
+        /// </summary>
+        DeniedBySystem = 0,
+        /// <summary>
+        /// NotDeclaredByApp.
+        /// </summary>
+        NotDeclaredByApp = 1,
+        /// <summary>
+        /// DeniedByUser.
+        /// </summary>
+        DeniedByUser = 2,
+        /// <summary>
+        /// UserPromptRequired.
+        /// </summary>
+        UserPromptRequired = 3,
+        /// <summary>
+        /// Allowed.
+        /// </summary>
+        Allowed = 4,
     };
-}
+
+    /// <summary>
+    /// QRTracker
+    /// </summary>
+    public class QRCodeWatcher
+    {
+        /// <summary>
+        /// Is QR Codes feature supported.
+        /// </summary>
+        /// <remarks>
+        /// </remarks>
+        public static bool IsSupported() { return false; }
+
+#if false // Not available in placeholder
+        /// <summary>
+        /// Request the required access permissions to use QR Codes feature.
+        /// </summary>
+        /// <remarks>
+        /// </remarks>
+        public static Windows.Foundation.IAsyncOperation<Microsoft.MixedReality.QR.QRCodeWatcherAccessStatus> RequestAccessAsync()
+        {
+            return null;
+        }
+#endif
+
+        /// <summary>
+        /// Constructs a new QRTracker.
+        /// </summary>
+        public QRCodeWatcher()
+        {
+        }
+
+        /// <summary>
+        /// Starts tracking QR codes
+        /// Start should only be called once the RequestAccessAsync has succeeded.
+        /// Should not be called if the feature is not supported, check the IsSupported to see 
+        ///  if this feature is supported.
+        /// Raises exceptions E_ACCESSDENIED, E_NOT_VALID_STATE, ERROR_NOT_SUPPORTED
+        /// </summary>
+        /// <remarks>
+        /// </remarks>
+        public void Start()
+        {
+        }
+
+        /// <summary>
+        /// Stops tracking QR codes.
+        /// </summary>
+        /// <remarks>
+        /// </remarks>
+        public void Stop()
+        {
+
+        }
+
+        /// <summary>
+        /// Get the list of QR codes detected.
+        /// </summary>
+        /// <remarks>
+        /// </remarks>
+        public System.Collections.Generic.IList<QRCode> GetList() { return new System.Collections.Generic.List<QRCode>(); }
+
+        /// <summary>
+        /// Event representing the addition of a QR Code.
+        /// </summary>
+        public event EventHandler<QRCodeAddedEventArgs> Added = delegate { };
+
+        /// <summary>
+        /// Event representing the removal of a QR Code.
+        /// </summary>
+        public event EventHandler<QRCodeRemovedEventArgs> Removed = delegate { };
+
+
+        /// <summary>
+        /// Event representing the update of a QR Code.
+        /// </summary>
+        public event EventHandler<QRCodeUpdatedEventArgs> Updated = delegate { };
+
+        /// <summary>
+        /// Event representing the Enumeration of QR Codes completed.
+        /// </summary>
+        public event EventHandler<Object> EnumerationCompleted = delegate { };
+
+    };
 ```
 
-## Implementing QR code tracking in Unity
+## Using QR Code Tracking
 
-### Sample Unity scenes in MRTK (Mixed Reality Toolkit)
+### Capabilities for the QR Code API
+You will need the capability `webcam` added to your manifest. Permission can be requested by calling `QRCodeWatcher.RequestAccessAsync()`.
 
-You can find an example for how to use the QR Tracking API in the Mixed Reality Toolkit [GitHub site](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker).
+```
+#if WINDOWS_UWP 
+async QRCodeWatcher.RequestAccessAsync(); 
+#endif 
+```
 
-MRTK has implemented the needed scripts to simpilify the QR tracking usage. All necessary assets to develop QR tracking apps are in the "QRTracker" folder. There are two scenes: the first is a sample to simply show details of the QR codes as they are detected, and the second demonstrates how to use the coordinate system attached to the QR code to display holograms.
-There is a prefab "QRScanner" which added all the necessary scripts to the scenes to use QRCodes. The script QRCodeManager is a singleton class that implements the QRCode API. This needs to be added to your scene. The script "AttachToQRCode" is used to attach holograms to the QR Code coordinate systems, this script can be added to any of your holograms. The "SpatialGraphCoordinateSystem" shows how to use the QRCode coordinate system. These scripts can be used as-is in your project scenes or you can write your own directly using the plugin as described above.
+Permission should be requested before you construct a QRCodeWatcher object. 
 
-### Implementing QR code tracking in Unity without MRTK
+### Implementing QR code tracking in Unity
 
-You can also use the QR Tracking API in Unity without taking a dependency on MRTK. In order to use the API, you will need to prepare your project with the following instruction:
+You can use the QR Tracking API in Unity without taking a dependency on MRTK. To do so, you must:
 
-1. Create a new folder in the assets folder of your unity project with the name: "Plugins".
-2. Copy all the required files from [this folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins) into the local "Plugins" folder you just created.
-3. You can use the QR tracking scripts in the [MRTK scripts folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Scripts) or write your own.
-Note: These plugins are only for [Windows 10 October 2018 Update (also known as RS5)](release-notes-october-2018.md) builds. The plugins will be updated with the next windows release. The current plugins were experimental and will not work for future version of the windows. New plugins will be published which can be used from next windows release and they will not be backwards compatable and will not work with RS5).
+1. Create a new folder in the assets folder of your unity project with the name *Plugins*.
+2. Copy all the required files from this folder into the local "Plugins" folder you just created.
 
-## Implementing QR code tracking in DirectX
+You can find an example of QR tracking in Unity [on Github here](
+https://github.com/chgatla-microsoft/QRTracking/tree/master/AppPackages/SampleQRCodes_1.0.23.0_Master_Test).
 
-To use the QRTrackingPlugin in Visual Studio, you will need to add reference of the QRTrackingPlugin to the .winmd. You can find the [required files for supported platforms here](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit-Preview/QRTracker/Plugins/WSA).
+### Implementing QR code tracking in Windows UWP
 
-```cpp
-// MyClass.h
-public ref class MyClass
-{
+```
+using namespace Microsoft.MixedReality.QR
+
+   public ref class QRListHelper sealed
+    {
+    public:
+        QRListHelper()
+        {
+
+        }
+
+        void setApp(SpatialStageManager* pStage)
+        {
+            m_pStage = pStage;
+        }
+
+        void SetUpQRCodes()
+        {
+            if (QRCodeWatcher::IsSupported())
+            {
+                auto operation = QRCodeWatcher::RequestAccessAsync();
+
+                WeakReference weakThis(this);
+
+                operation->Completed = ref new AsyncOperationCompletedHandler<QRCodeWatcherAccessStatus>(
+                    [weakThis](IAsyncOperation< QRCodeWatcherAccessStatus>^ operaion, AsyncStatus status)
+                {
+                    QRListHelper^ QRListHelper = weakThis.Resolve<QRListHelper>();
+                    if (status == AsyncStatus::Completed)
+                    {
+                        QRListHelper->InitializeQR( operaion->GetResults());
+                    }
+                }
+                );
+            }
+        }
+
     private:
-      QRCodesTrackerPlugin::QRTracker^ m_qrtracker;
-      // Handlers
-      void OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args);
-      void OnUpdatedQRCode(QRCodesTrackerPlugin::QRCodeUpdatedEventArgs ^args);
-      void OnRemovedQRCode(QRCodesTrackerPlugin::QRCodeRemovedEventArgs ^args);
-    ..
-};
-```
+        void OnAddedQRCode(QRCodeWatcher^ , QRCodeAddedEventArgs ^args)
+        {
+            m_pStage->OnAddedQRCode(args);
+        }
+        void OnUpdatedQRCode(QRCodeWatcher^, QRCodeUpdatedEventArgs ^args)
+        {
+            m_pStage->OnUpdatedQRCode(args);
+        }
+        void OnEnumerationComplete(QRCodeWatcher^, Object^)
+        {
+            m_pStage->OnEnumerationComplete();
+        }
 
-```cpp
-// MyClass.cpp
-MyClass::MyClass()
-{
-    // Create the tracker and register the callbacks
-    m_qrtracker = ref new QRCodesTrackerPlugin::QRTracker();
-    m_qrtracker->Added += ref new QRCodesTrackerPlugin::QRCodeAddedHandler(this, &OnAddedQRCode);
-    m_qrtracker->Updated += ref new QRCodesTrackerPlugin::QRCodeUpdatedHandler(this, &OnUpdatedQRCode);
-    m_qrtracker->Removed += ref new QRCodesTrackerPlugin::QRCodeRemovedHandler(this, &QOnRemovedQRCode);
+        SpatialStageManager* m_pStage;
+        Microsoft::MixedReality::QR::QRCodeWatcher^ m_qrWatcher;
 
-    // Start the tracker
-    if (m_qrtracker->Start() != QRCodesTrackerPlugin::QRTrackerStartResult::Success)
-    {
-      // Handle the failure
-      // It can fail for multiple reasons and can be handled properly 
-    }
-}
 
-void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
-{
-    // use args->Code add to own list  
-}
 
-void MyClass::OnUpdatedQRCode(QRCodesTrackerPlugin::QRCodeUpdatedEventArgs ^args)
-{
-    // use args->Code update the existing one with the new one in own list 
-}
+        void InitializeQR(QRCodeWatcherAccessStatus status)
+        {
+            if (status == QRCodeWatcherAccessStatus::Allowed)
+            {
+                m_qrWatcher = ref new QRCodeWatcher();
 
-void MyClass::OnRemovedQRCode(QRCodesTrackerPlugin::QRCodeRemovedEventArgs ^args)
-{
-    // use args->Code remove from own list.
-}
-```
+                m_qrWatcher->Added += ref new TypedEventHandler<QRCodeWatcher^, QRCodeAddedEventArgs^>(this, &QRListHelper::OnAddedQRCode);
+                m_qrWatcher->Updated += ref new TypedEventHandler<QRCodeWatcher^, QRCodeUpdatedEventArgs^>(this, &QRListHelper::OnUpdatedQRCode);
+                m_qrWatcher->EnumerationCompleted += ref new TypedEventHandler<QRCodeWatcher^, Object^>(this, &QRListHelper::OnEnumerationComplete);
+                try
+                {
+                    m_qrWatcher->Start();
+                }
+                catch (...)
+                {
+
+                }
+            }
+            else
+            {
+                // Permission denied by system or user
+                // Handle the failures
+            }
+        }
+    }; 
+```    
+
+### Sample App
+
+There is a sample app that displays a holographic square over QR codes, along with the associated data such as GUID, physical size, timestamp, and decoded data. This app can be located at https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes.
 
 ## Getting a coordinate system
 
-We define a right-hand coordinate system aligned with the QR code at the top left corner of the fast detection square in the top left. The coordinate system is shown below. The Z-axis is pointing into the paper (not shown), but in Unity the z-axis is out of the paper and left-handed.
+We define a right-hand coordinate system aligned with the QR code at the top left corner of the fast detection square in the top left as seen below. The Z-axis is pointing into the paper (not shown), but in Unity, the z-axis is out of the paper and left-handed.
 
-A SpatialCoordinateSystem is defined that is aligned as shown. This coordinate system can be obtained from the platform using the API *Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode*.
+A SpatialCoordinateSystem aligns as shown. This coordinate system can be obtained from the platform using the API `Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode`.
 
 ![QR code coordinate system](images/Qr-coordinatesystem.png) 
 
-From QRCode^ Code object, the following code shows how to create a rectangle and put it in QR coordinate system:
+From QRCode^ Code object, the following code shows how to create a rectangle and put it in the QR coordinate system:
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -303,27 +615,39 @@ void MyClass::OnAddedQRCode(QRCodesTrackerPlugin::QRCodeAddedEventArgs ^args)
 }
 ```
 
-## Troubleshooting and FAQ
+## Considerations when creating tracking QR Codes
 
-**General troubleshooting**
+### Quiet zones around QR Codes
 
-* Is your PC running the Windows 10 October 2018 Update?
-* Have you set the reg key? Restarted the device afterwards?
-* Is the QR code version a supported version? Current API supports up to QR Code Version 20. We recommend using version 5 for general usage. 
-* Are you close enough to the QR code? The closer the camera is to the QR code, the higher the QR code version the API can support.  
+To be read correctly, QR codes require a margin around all sides of the code. This margin must not contain any printed content and should be four modules (a single black square in the code) wide. 
 
-**How close do I need to be to the QR code to detect it?**
+The [QR spec](https://www.qrcode.com/en/howto/code.html) contains more information about quiet zones.
 
-This will depend on the size of the QR code, and also what version it is. For a version 1 QR code varying from 5 cm sides to 25 cm sides, the minimum detection distance ranges from 0.15 meters to 0.5 meters. The farthest away these can be detected from goes from about 0.3 meters for the smaller QR code targets to 1.4 meters for the bigger. For QR codes bigger than that, you can estimate; the detection distance for size increases linearly. Our tracker does not work with QR codes with sides smaller than 5 cm.
+### Lighting and backdrop
+QR code detection quality is susceptible to varying illumination and backdrop. 
 
-**Do QR codes with logos work?**
+In a scene with particularly bright lighting, print a code that is black on a gray background. Otherwise, print a black QR code on a white background.
 
+If the backdrop to the code is particularly dark, try a black on gray code if your detection rate is low. If the backdrop is relatively light, a regular code should work fine.
+
+### Size of QR codes
+WMR does not work with QR codes with sides smaller than 5 cm each.
+
+For QR codes between 5 and 10 cm length sides, you must be fairly close to detect the code. It will also take longer to detect codes at this size. 
+
+The exact time to detect codes depends not only on the size of the QR codes, but how far you are away from the code. Moving closer to the code will help offset issues with size.
+
+### Distance and angular position from the QR code
+The tracking cameras can only detect a certain level of detail. For really small codes - < 10cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
+
+The detection distance for size increases linearly. 
+
+QR detection works with a range of angles += 45deg. This is to ensure we have proper resolution to detect the code.
+
+### QR codes with logos
 QR codes with logos have not been tested and are currently unsupported.
 
-**How do I clear QR codes from my app so they don't persist?**
+### Managing QR code data
+WMR devices save QR codes in the boot session. Once you reboot the device or restart the driver, they are gone and will be re-detected as new objects next time. QR code history is saved at the system level in the driver session. It is recommended to configure your app to ignore QR codes older than a specific timestamp.
 
-* QR codes are only persisted in the boot session. Once you reboot (or restart the driver), they will be gone and detected as new objects next time.
-* QR code history is saved at the system level in the driver session, but you can configure your app to ignore QR codes older than a specific timestamp if you want. Currently the API does support clearing QR code history, as multiple apps might be interested in the data.
-
-**The plugins for RS5 and future versions are not compatable**
-RS5 version of the plugin only works for RS5 and will not work for future versions. The expermental plugin will be replaced with the real plugin and should be the one that we can use in future versions of the windows.
+Currently, the API does not support clearing QR code history.
