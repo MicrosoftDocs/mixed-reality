@@ -261,7 +261,11 @@ The following unity code, for example, shows how to use windows perception and U
         return sceneToUnityTransform;
     }
 
-    // Converts from right-handed to left handed coordinates
+    /// <summary>
+    /// Converts a transformation matrix from right handed (+x is right, +y is up, +z is back) to left handed (+x is right, +y is up, +z is front).
+    /// </summary>
+    /// <param name="transformationMatrix">Right-handed transformation matrix to convert.</param>
+    /// <returns>Converted left-handed matrix.</returns>
     public System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 transformationMatrix)
     {
         transformationMatrix.M13 = -transformationMatrix.M13;
