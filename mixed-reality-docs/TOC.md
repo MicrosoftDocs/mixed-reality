@@ -13,6 +13,7 @@
 #### [Commercial features](commercial-features.md)
 #### [Connecting to Wi-Fi on HoloLens](connecting-to-wi-fi-on-hololens.md)
 #### [Environment considerations for HoloLens](environment-considerations-for-hololens.md)
+#### [Use HoloLens in new spaces](use-hololens-in-new-spaces.md)
 #### [Get apps for HoloLens](get-apps-for-hololens.md)
 #### [Give us feedback](give-us-feedback.md)
 #### [HoloLens known issues](hololens-known-issues.md)
