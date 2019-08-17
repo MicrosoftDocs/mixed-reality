@@ -13,7 +13,6 @@
 #### [Commercial features](commercial-features.md)
 #### [Connecting to Wi-Fi on HoloLens](connecting-to-wi-fi-on-hololens.md)
 #### [Environment considerations for HoloLens](environment-considerations-for-hololens.md)
-#### [Use HoloLens in new spaces](use-hololens-in-new-spaces.md)
 #### [Get apps for HoloLens](get-apps-for-hololens.md)
 #### [Give us feedback](give-us-feedback.md)
 #### [HoloLens known issues](hololens-known-issues.md)
@@ -23,6 +22,7 @@
 #### [Saving and finding your files](saving-and-finding-your-files.md)
 #### [See your photos](see-your-photos.md)
 #### [Updating HoloLens](updating-hololens.md)
+#### [Use HoloLens in new spaces](use-hololens-in-new-spaces.md)
 #### [Device Sharing](device-sharing.md)
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
 ### Immersive headsets
