@@ -22,6 +22,7 @@
 #### [Saving and finding your files](saving-and-finding-your-files.md)
 #### [See your photos](see-your-photos.md)
 #### [Updating HoloLens](updating-hololens.md)
+#### [Use HoloLens in new spaces](use-hololens-in-new-spaces.md)
 #### [Device Sharing](device-sharing.md)
 #### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
 ### Immersive headsets
