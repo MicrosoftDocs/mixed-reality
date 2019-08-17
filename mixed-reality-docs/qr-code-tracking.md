@@ -18,11 +18,12 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> QR code detection</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">See below</td>
+<td> QR code detection</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">See note</td>
 </tr>
 </table>
 
-Support for immersive Windows Mixed Reality headsets on desktop PCs is not currently supported with the NuGet package below.  Stay tuned for further updates on desktop support.
+>[!NOTE]
+>Support for immersive Windows Mixed Reality headsets on desktop PCs is not currently supported with the NuGet package below.  Stay tuned for further updates on desktop support.
 
 ## Getting the QR package
 You can download a NuGet package for QR code detection [here](https://github.com/dorreneb/mixed-reality/releases).
@@ -59,7 +60,7 @@ You can use the QR code detection API in Unity without taking a dependency on MR
 
 There is a sample Unity app that displays a holographic square over QR codes, along with the associated data such as GUID, physical size, timestamp, and decoded data. This app can be located at https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes.
 
-### Detecting QR codes in C++/CX
+### Detecting QR codes in C++
 
 >[!NOTE]
 >The C++ code snippets in this article currently demonstrate the use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md). The concepts are equivalent for a C++/WinRT project, though you need to translate the code.
