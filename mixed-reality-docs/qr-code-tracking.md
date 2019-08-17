@@ -18,17 +18,18 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 <tr>
 <th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> QR code detection</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">See note</td>
+<td> QR code detection</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">See below</td>
 </tr>
 </table>
 
->[!NOTE]
->Support for immersive Windows Mixed Reality headsets on desktop PCs is not currently supported with the NuGet package below.  Stay tuned for further updates on desktop support.
+Support for immersive Windows Mixed Reality headsets on desktop PCs is not currently supported with the NuGet package below.  Stay tuned for further updates on desktop support.
 
-## Getting the QR Code package
-You can download a NuGet package for the QR APIs [here](https://github.com/dorreneb/mixed-reality/releases).
+## Getting the QR package
+You can download a NuGet package for QR code detection [here](https://github.com/dorreneb/mixed-reality/releases).
 
-## Using QR code detection
+Future versions of this package will be available through the public NuGet package repository.
+
+## Detecting QR codes
 
 ### Adding the webcam capability
 You will need to add the capability `webcam` to your manifest to detect QR codes. This capability is required as the data within detected codes in the user's environment may contain sensitive information.
@@ -47,10 +48,9 @@ co_await QRCodeWatcher.RequestAccessAsync();
 
 Permission should be requested before you construct a QRCodeWatcher object.
 
->[!NOTE]
->While QR code detection requires the `webcam` capability, the detection occurs using the device's tracking cameras. This provides a wider detection FOV and better battery life compared to detection with the device's photo/video (PV) camera.
+While QR code detection requires the `webcam` capability, the detection occurs using the device's tracking cameras. This provides a wider detection FOV and better battery life compared to detection with the device's photo/video (PV) camera.
 
-### Using QR code detection in Unity
+### Detecting QR codes in Unity
 
 You can use the QR code detection API in Unity without taking a dependency on MRTK. To do so, you must:
 
@@ -59,13 +59,13 @@ You can use the QR code detection API in Unity without taking a dependency on MR
 
 There is a sample Unity app that displays a holographic square over QR codes, along with the associated data such as GUID, physical size, timestamp, and decoded data. This app can be located at https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes.
 
-### Using QR code detection in C++/CX
+### Detecting QR codes in C++/CX
 
 >[!NOTE]
 >The C++ code snippets in this article currently demonstrate the use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md). The concepts are equivalent for a C++/WinRT project, though you need to translate the code.
 
 ```
-using namespace Microsoft.MixedReality.QR
+using namespace Microsoft.MixedReality.QR;
 
     public ref class QRListHelper sealed
     {
@@ -102,21 +102,21 @@ using namespace Microsoft.MixedReality.QR
         }
 
     private:
-        void OnAddedQRCode(QRCodeWatcher^ , QRCodeAddedEventArgs ^args)
+        void OnAddedQRCode(Object^, QRCodeAddedEventArgs ^args)
         {
             m_pStage->OnAddedQRCode(args);
         }
-        void OnUpdatedQRCode(QRCodeWatcher^, QRCodeUpdatedEventArgs ^args)
+        void OnUpdatedQRCode(Object^, QRCodeUpdatedEventArgs ^args)
         {
             m_pStage->OnUpdatedQRCode(args);
         }
-        void OnEnumerationComplete(QRCodeWatcher^, Object^)
+        void OnEnumerationComplete(Object^, Object^)
         {
             m_pStage->OnEnumerationComplete();
         }
 
         SpatialStageManager* m_pStage;
-        Microsoft::MixedReality::QR::QRCodeWatcher^ m_qrWatcher;
+        QRCodeWatcher^ m_qrWatcher;
 
 
 
@@ -126,9 +126,9 @@ using namespace Microsoft.MixedReality.QR
             {
                 m_qrWatcher = ref new QRCodeWatcher();
 
-                m_qrWatcher->Added += ref new TypedEventHandler<QRCodeWatcher^, QRCodeAddedEventArgs^>(this, &QRListHelper::OnAddedQRCode);
-                m_qrWatcher->Updated += ref new TypedEventHandler<QRCodeWatcher^, QRCodeUpdatedEventArgs^>(this, &QRListHelper::OnUpdatedQRCode);
-                m_qrWatcher->EnumerationCompleted += ref new TypedEventHandler<QRCodeWatcher^, Object^>(this, &QRListHelper::OnEnumerationComplete);
+                m_qrWatcher->Added += ref new EventHandler<Object^, QRCodeAddedEventArgs^>(this, &QRListHelper::OnAddedQRCode);
+                m_qrWatcher->Updated += ref new EventHandler<Object^, QRCodeUpdatedEventArgs^>(this, &QRListHelper::OnUpdatedQRCode);
+                m_qrWatcher->EnumerationCompleted += ref new EventHandler<Object^, Object^>(this, &QRListHelper::OnEnumerationComplete);
                 try
                 {
                     m_qrWatcher->Start();
@@ -151,7 +151,7 @@ using namespace Microsoft.MixedReality.QR
 
 Each detected QR code exposes a [spatial coordinate system](coordinate-systems.md) aligned with the QR code at the top left corner of the fast detection square in the top left as seen below.  When directly using the QR SDK, the Z-axis is pointing into the paper (not shown) - when converted into Unity coordinates, the Z-axis points out of the paper and is left-handed.
 
-A QR code's SpatialCoordinateSystem aligns shown. This coordinate system can be obtained from the platform using the API `Windows::Perception::Spatial::Preview::SpatialGraphInteropPreview::CreateCoordinateSystemForNode` by passing in the code's SpatialGraphNodeId.
+A QR code's SpatialCoordinateSystem aligns shown. This coordinate system can be obtained from the platform by calling <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> and passing in the code's SpatialGraphNodeId.
 
 ![QR code coordinate system](images/Qr-coordinatesystem.png) 
 
@@ -187,7 +187,7 @@ Windows::Perception::Spatial::SpatialCoordinateSystem^ qrCoordinateSystem = Wind
 Altogether, your *QRCodeWatcher::QRCodeAddedHandler* may look something like this:
 
 ```cpp
-void MyClass::OnAddedQRCode(QRCodeWatcher::QRCodeAddedEventArgs ^args)
+void MyClass::OnAddedQRCode(Object ^sender, QRCodeWatcher::QRCodeAddedEventArgs ^args)
 {
     std::vector<float3> qrVertices = CreateRectangle(args->Code->PhysicalSizeMeters, args->Code->PhysicalSizeMeters);
     std::vector<unsigned short> qrCodeIndices = TriangulatePoints(qrVertices);
