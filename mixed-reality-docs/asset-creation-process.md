@@ -1,8 +1,8 @@
 ---
 title: Asset creation process
 description: Guidance on creating assets for mixed reality experiences.
-author: paseb
-ms.author: paseb
+author: shengkait
+ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: asset, creation, process, budget, polygons, textures, shaders, performance
