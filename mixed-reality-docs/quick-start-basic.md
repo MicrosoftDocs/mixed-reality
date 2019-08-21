@@ -12,7 +12,7 @@ keywords: Understanding the basics, Mixed Reality, develop, development, HoloLen
 # Understanding the basics of mixed reality
 
 
-<table>
+<table padding="0px">
 <colgroup>
     <col width="10%" />
     <col width="90%" />
