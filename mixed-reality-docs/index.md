@@ -14,7 +14,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                              <a href="quick-start-basics.md" target="_blank" title="Understanding the basics of mixed reality" data-linktype="absolute-path">
+                              <a href="quick-start-basic.md" target="_blank" title="Understanding the basics of mixed reality" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

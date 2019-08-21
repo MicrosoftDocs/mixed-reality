@@ -21,7 +21,7 @@
 # Discover
 ## [Get started with mixed reality](index.md)
 ## Quick start guides based on experience
-### [Understanding the basics of mixed reality](quick-start-basics.md)
+### [Understanding the basics of mixed reality](quick-start-basic.md)
 ### [Get started designing and creating](quick-start-creating.md)
 ### [Understanding the tools, languages and architecture](quick-start-developer.md)
 ### [Jump in with Unity and MRTK](quick-start-expert.md)
