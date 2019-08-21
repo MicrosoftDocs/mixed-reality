@@ -136,7 +136,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <h2>Learn more about Azure services for mixed reality</h2>
 
-[![Azure services](images/AzureServices.jpg)]azure-services.md)
+[![Azure services](images/AzureServices.jpg)](azure-services.md)
 
 Create mixed reality apps that map, designate, and recall precise points of interest that are accessible across HoloLens, iOS, and Android devices. Enable wayfinding across spaces to help your users collaborate more efficiently.
 
