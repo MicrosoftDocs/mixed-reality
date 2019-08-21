@@ -11,6 +11,8 @@ keywords: Understanding the basics, Mixed Reality, develop, development, HoloLen
 
 # Understanding the basics of mixed reality
 
+![ Azure Spatial Anchors image](images/icon-lightbulb.jpg)
+
 **Quick start guide**
 
 Here is a recommended collection of articles and resources that will help you gain a better understanding of what defines mixed reality, how and where it’s being used, the capabilities of HoloLens and the building blocks used to create mixed reality experiences.
@@ -79,18 +81,22 @@ Here is a recommended collection of articles and resources that will help you ga
 
 :::row:::
     :::column:::
+       ![Try it out](images/icon-hololensuser.jpg)
         **[Try out mixed reality for yourself](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
     :::column-end:::
     :::column:::
+        ![Become a creator](images/icon-design.jpg)
          **[Become a creator](quick-start-creating.md)**<br>
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
+        ![Come to a design or development event](images/icon-calendar.jpg)
          **[Come to a design or development event](sf-academy-events.md)**<br>
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
+        ![Start developing](images/icon-developer.jpg)
          **[Start developing](quick-start-developer.md)**<br>
         Choose a development path based on your skill level, work style. or platform interest.
     :::column-end:::
