@@ -18,13 +18,11 @@ Here is a recommended collection of articles and resources that will help you ga
 
 ## What is mixed reality?
 
-<br>
-
 ---
 
 
 
-![ Azure Spatial Anchors image](images/AzureSpatialAnchors.jpg)
+![ Azure Spatial Anchors image](images/AzureServices.jpg)
 
 
 :::row:::
@@ -50,8 +48,6 @@ Here is a recommended collection of articles and resources that will help you ga
 
 
 ## What would you like to do next?
-
-<br>
 
 ---
 
