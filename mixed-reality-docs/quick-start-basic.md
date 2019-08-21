@@ -14,7 +14,7 @@ keywords: Understanding the basics, Mixed Reality, develop, development, HoloLen
 
 <table style="border-collapse:collapse">
 <tr>
-<td style="border-style: none" width="64px"><img alt="Quick start guide" width="64" height="64" src="images/icon-lightbulb.jpg"></td>
+<td style="border-style: none" width="64px"><img alt="Quick start guide" width="64" height="64" src="images/icon-lightbulb2.jpg"></td>
 <td style="border-style: none"><b>Quick start guide</b><br>Here is a recommended collection of articles and resources that will help you gain a better understanding of what defines mixed reality, how and where it’s being used, the capabilities of HoloLens and the building blocks used to create mixed reality experiences.</td>
 </tr>
 </table>
