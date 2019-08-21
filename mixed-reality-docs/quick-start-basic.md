@@ -16,8 +16,8 @@ keywords: Understanding the basics, Mixed Reality, develop, development, HoloLen
 <colgroup>
     <col width="10%" />
     <col width="90%" />
-<tr padding="0px">
-     <td padding="0px"><img width="100%" height="100%" src="images/icon-lightbulb.jpg" /></td>
+<tr>
+     <td><img src="images/icon-lightbulb.jpg" /></td>
      <td><strong>Quick start guide</strong><br>Here is a recommended collection of articles and resources that will help you gain a better understanding of what defines mixed reality, how and where it’s being used, the capabilities of HoloLens and the building blocks used to create mixed reality experiences.</td>
 </tr>
 </table>
@@ -39,7 +39,7 @@ keywords: Understanding the basics, Mixed Reality, develop, development, HoloLen
         Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations.
     :::column-end:::
     :::column:::
-        ![Mixed reality is a spectrum](images/spectrum.jpg)
+        ![Mixed reality is a spectrum](images/RWtpZ1.jpeg)
     :::column-end:::
 :::row-end:::
 
@@ -47,7 +47,7 @@ keywords: Understanding the basics, Mixed Reality, develop, development, HoloLen
 :::row:::
     :::column:::
         **[What is a hologram?](hologram.md)**<br>
-        HoloLens lets you create holograms, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
+        Holograms are objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
     :::column-end:::
     :::column:::
         ![What is a hologram?](images/Whatisahologram.jpg)
