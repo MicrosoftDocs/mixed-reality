@@ -44,7 +44,33 @@ Here is a recommended collection of articles and resources that will help you ga
     :::column:::
         ![What is a hologram?](images/Whatisahologram.jpg)
     :::column-end:::
-:::row-end:::t
+:::row-end:::
+
+
+## What can you do with mixed reality?
+
+---
+
+:::row:::
+    :::column:::
+        **[Mixed reality is a spectrum](mixed-reality.md)**<br>
+        Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations.
+    :::column-end:::
+    :::column:::
+        ![Mixed reality is a spectrum](images/spectrum.jpg)
+    :::column-end:::
+:::row-end:::
+
+
+:::row:::
+    :::column:::
+        **[What is a hologram?](hologram.md)**<br>
+        HoloLens lets you create holograms, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
+    :::column-end:::
+    :::column:::
+        ![What is a hologram?](images/Whatisahologram.jpg)
+    :::column-end:::
+:::row-end:::
 
 
 ## What would you like to do next?
@@ -53,19 +79,19 @@ Here is a recommended collection of articles and resources that will help you ga
 
 :::row:::
     :::column:::
-        **Try out mixed reality for yourself**
+        **[Try out mixed reality for yourself](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
     :::column-end:::
     :::column:::
-         **Become a creator**
+         **[Become a creator](quick-start-creating.md)**<br>
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
-         **Come to a design or development event**
+         **[Come to a design or development event](sf-academy-events.md)**<br>
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-         **Start developing**
+         **[Start developing](quick-start-developer.md)**<br>
         Choose a development path based on your skill level, work style. or platform interest.
     :::column-end:::
 :::row-end:::
