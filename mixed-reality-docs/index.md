@@ -1,20 +1,78 @@
 ---
 layout: LandingPage
-title: Mixed Reality documentation
+title: Get started with Mixed Reality
 description: Learn to build mixed reality experiences for HoloLens and immersive headsets.
-author: varnauld 
-ms.author: vanesa
-ms.date: 02/24/2019
+author: grbury 
+ms.author: grbury
+ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---
 
-# Mixed Reality documentation
+# Get started with Mixed Reality
 
-Mixed reality blends real-world and virtual content into hybrid environments where physical and digital objects coexist and interact. Learn to build mixed reality experiences for Microsoft HoloLens and Windows Mixed Reality immersive headsets (VR).
+<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
+                            <li>
+                              <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank" title="Understanding the basics of mixed reality" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/QuickStartTile-Basics.jpg" alt="Understanding the basics of mixed reality image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Understanding the basics of mixed reality</h3>
+                                                  <p>I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                            <li>
+                              <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/" target="_blank" title="Understand the tools, languages and architecture" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/QuickStartTile-Developer.jpg" alt="Understand the tools, languages and architecture image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Understand the tools, languages and architecture</h3>
+                                                  <p>I’m an experienced developer but new to the tools, languages and architecture of mixed reality.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                             <li>
+                              <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank" title="Jump in with Unity and MRTK" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/QuickStartTile-Expert.jpg" alt="Jump in with Unity and MRTK image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Jump in with Unity and MRTK</h3>
+                                                  <p>I’m experienced with mixed reality. Show me how to port apps from other platforms, find tutorials and learn about MRTK.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+</ul>
 
-<br>
+<h2>Browse for articles by category</h2>
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
@@ -24,7 +82,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/DesignIcon.png" alt="Design icon">
+                                                        <img src="images/Tile-Design.jpg" alt="Design icon">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,7 +101,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/DevelopIcon.png" alt="Develop icon">
+                                                  <img src="images/Tile-Develop.jpg" alt="Develop icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
@@ -62,7 +120,7 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/DistributeIcon.png" alt="Distribute icon">
+                                                        <img src="images/Tile-Distribute.jpg" alt="Distribute icon">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -76,104 +134,14 @@ Mixed reality blends real-world and virtual content into hybrid environments whe
                             </li>
  </ul>
 
-<h2>Services</h2>
+<h2>Learn more about Azure services for mixed reality</h2>
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                              <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank" title="Azure Spatial Anchors" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/AzureSpatialAnchors.jpg" alt="Azure Spatial Anchors image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Azure Spatial Anchors</h3>
-                                                  <p>Spatial Anchors is a cross-platform developer service that lets you create mixed reality experiences using objects that persist their location across devices over time.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                            <li>
-                              <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/" target="_blank" title="Speech Services" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/speech.jpg" alt="Speech Services image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Speech Services</h3>
-                                                  <p>Discover and integrate Azure powered speech capabilities like speech to text, speaker recognition, or speech translation into your application.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                             <li>
-                              <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank" title="Vision Services" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/vision.jpg" alt="Vision Services image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Vision Services</h3>
-                                                  <p>Identify and analyze your image or video content using Vision Services like computer vision, face detection, emotion recognition, or video indexer.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-</ul>
+[![Azure services](images/AzureServices.jpg)](azure-services.md)
 
-<h2>Introducing HoloLens 2</h2>
+Create mixed reality apps that map, designate, and recall precise points of interest that are accessible across HoloLens, iOS, and Android devices. Enable wayfinding across spaces to help your users collaborate more efficiently.
 
-[![HoloLens 2](images/hololens2.jpg)](https://www.microsoft.com/hololens/hardware)
+[Azure services for mixed reality](azure-services.md)
 
-[HoloLens 2](https://www.microsoft.com/hololens/hardware) offers the most comfortable and immersive mixed reality experience available with industry-leading solutions that deliver value in minutes. All backed by the reliability, security, and scalability of cloud and AI services from Microsoft. The [HoloLens 2 Development Edition](https://www.microsoft.com/en-us/hololens/developers) helps you jump-start your mixed reality plans with an offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services.
-
-<h2>News and notes</h2>
-
-<h3>June 2019</h3>
-
-As promised, we are excited to share more mixed reality goodness with you! We’re looking forward to hearing your feedback and would like to invite you to [join the conversation](https://holodevelopersslack.azurewebsites.net/) around topics you’d like to see from us, people you would like to hear from, tutorials or how-to’s that you would need… You can also reach out to us via [Twitter](https://twitter.com/MxdRealityDev), and [join our developer program](https://aka.ms/iwantmr) for direct updates on new docs, tools, events and more. Stay tuned, there's more to come!
-
-<table>
-<tr>
-<th style="width: 400px; text-align:left;">Content</th><th style="width: 125px; text-align:left;">Delivery</th><th style="width: 125px; text-align:left;">NOW LIVE!</th>
-</tr> 
-<tr>
-<td><b>Porting Guides</b> <br>1. HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) to MRTK Version 2
-<br>2. HoloLens (1st gen) to HoloLens 2 (x86 to ARM, interaction and design recommendations)
-</td></td><td>March - May 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-porting-guide>Getting your existing application ready for HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>HoloToolKit to MRTK APIs</a></td>
-</tr>
-<tr>
-<td>Monthly open source developer modules (Tutorials/Sample apps)</td><td>March - June 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1>MR learning base module</a></td>
-</tr>
-<tr>
-<td>Preview new capabilities in MRTK for HoloLens 2</td><td>April 2019</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>MRTK docs</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-getting-started>Getting started with MRTK v2</a></td>
-</tr>
-<tr>
-<td>Design and development guidance for HoloLens 2</td><td>April 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools>Install the tools</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator>HoloLens 2 emulator</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/interaction-fundamentals>Instinctual interactions design guidance</a></td>
-</tr>
-<tr>
-  <td>More information on Unreal</td><td>May 2019</td><td> <ul><li><a href=https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access>Unreal Engine 4 early access</a></td>
-</tr>
-</table>
-
-<br>
 
 
 
