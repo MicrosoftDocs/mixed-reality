@@ -12,7 +12,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 # Get started with Mixed Reality
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
                               <a href="quick-start-basics.md" target="_blank" title="Understanding the basics of mixed reality" data-linktype="absolute-path">
                                     <div class="cardSize">
@@ -93,7 +93,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 ## Browse for articles by category
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
                             <a href="design.md" title="Discover landing" data-linktype="absolute-path">
                                     <div class="cardSize">
@@ -113,7 +113,6 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </div>
                                </a>
                             </li>
-                            <li>
                             <li>
                             <a href="design.md" title="Design landing" data-linktype="absolute-path">
                                     <div class="cardSize">
