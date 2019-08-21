@@ -24,8 +24,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Understanding the basics of mixed reality</h3>
-                                                  <p>I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.</p>
+                                                    <h3 class="x-hidden-focus">Understanding the basics</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -43,8 +42,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Get started designing and creating</h3>
-                                                  <p>I’m ready to create something. Learn the basic concepts you need to begin designing and prototyping.</p>
+                                                    <h3 class="x-hidden-focus">Get started creating</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -62,8 +60,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Understanding the tools, languages and architecture</h3>
-                                                  <p>I’m an experienced developer but new to the tools, languages and architecture of mixed reality.</p>
+                                                    <h3 class="x-hidden-focus">Understanding the tools</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,7 +79,6 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Jump in with Unity and MRTK</h3>
-                                                  <p>I’m experienced with mixed reality. Show me how to port apps from other platforms, find tutorials and learn about MRTK.</p>
                                                 </div>
                                             </div>
                                         </div>
