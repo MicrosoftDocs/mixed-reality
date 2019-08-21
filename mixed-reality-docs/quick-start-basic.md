@@ -29,22 +29,22 @@ Here is a recommended collection of articles and resources that will help you ga
 
 :::row:::
     :::column:::
-        **Mixed reality is a spectrum**
+        **[Mixed reality is a spectrum](mixed-reality.md)**<br>
         Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations.
     :::column-end:::
     :::column:::
-        ![More recognizable with a character](images/20171016-140557-mixedreality-640px.jpg)
+        ![Mixed reality is a spectrum](images/spectrum.jpg)
     :::column-end:::
 :::row-end:::
 
 
 :::row:::
     :::column:::
-        **What is a hologram?**
+        **[What is a hologram?](hologram.md)**<br>
         HoloLens lets you create holograms, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
     :::column-end:::
     :::column:::
-        ![Volumetric approach better showcases your app](images/20171016-161407-mixedreality-640px.jpg)
+        ![What is a hologram?](images/Whatisahologram.jpg)
     :::column-end:::
 :::row-end:::t
 
