@@ -14,13 +14,13 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                              <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank" title="Understanding the basics of mixed reality" data-linktype="absolute-path">
+                              <a href="quick-start-basics.md" target="_blank" title="Understanding the basics of mixed reality" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/QuickStartTile-Basics.jpg" alt="Understanding the basics of mixed reality image">
+                                                        <img src="images/Tile-Distribute.jpg" alt="Understanding the basics of mixed reality image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -33,17 +33,36 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </a>
                             </li>
                             <li>
-                              <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/" target="_blank" title="Understand the tools, languages and architecture" data-linktype="absolute-path">
+                              <a href="quick-start-creating.md" target="_blank" title="Get started designing and creating" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/QuickStartTile-Developer.jpg" alt="Understand the tools, languages and architecture image">
+                                                        <img src="images/QuickStartTile-Basics.jpg" alt="Get started designing and creating image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Understand the tools, languages and architecture</h3>
+                                                    <h3 class="x-hidden-focus">Get started designing and creating</h3>
+                                                  <p>I’m ready to create something. Learn the basic concepts you need to begin designing and prototyping.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                            <li>
+                              <a href="quick-start-developer.md" target="_blank" title="Understanding the tools, languages and architecture" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/QuickStartTile-Developer.jpg" alt="Understanding the tools, languages and architecture image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Understanding the tools, languages and architecture</h3>
                                                   <p>I’m an experienced developer but new to the tools, languages and architecture of mixed reality.</p>
                                                 </div>
                                             </div>
@@ -52,7 +71,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </a>
                             </li>
                              <li>
-                              <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank" title="Jump in with Unity and MRTK" data-linktype="absolute-path">
+                              <a href="quick-start-expert.md" target="_blank" title="Jump in with Unity and MRTK" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -72,9 +91,29 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                             </li>
 </ul>
 
-<h2>Browse for articles by category</h2>
+## Browse for articles by category
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
+                            <li>
+                            <a href="design.md" title="Discover landing" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/QuickStartTile-Expert.jpg" alt="Discover icon">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Discover</h3>
+                                                    <p>Choose a quick start guide based on your skill level, work style, or interest.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </a>
+                            </li>
+                            <li>
                             <li>
                             <a href="design.md" title="Design landing" data-linktype="absolute-path">
                                     <div class="cardSize">
@@ -134,7 +173,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                             </li>
  </ul>
 
-<h2>Learn more about Azure services for mixed reality</h2>
+## Learn more about Azure services for mixed reality
 
 [![Azure services](images/AzureServices.jpg)](azure-services.md)
 

@@ -9,12 +9,21 @@
 ### [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ### [ECCV 2018 HoloLens as a tool for computer vision research](eccv-2018.md)
 ### [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
+## Mixed reality release notes
+### [Current release notes](release-notes-may-2019.md)
+### [Release notes - October 2018](release-notes-october-2018.md)
+### [Release notes - April 2018](release-notes-april-2018.md)
+### [Release notes - October 2017](release-notes-october-2017.md)
+### [Release notes - August 2016](release-notes-august-2016.md)
+### [Release notes - May 2016](release-notes-may-2016.md)
+### [Release notes - March 2016](release-notes-march-2016.md)
+
 # Discover
 ## [Get started with mixed reality](index.md)
 ## Quick start guides based on experience
 ### [Understanding the basics of mixed reality](quick-start-basics.md)
 ### [Get started designing and creating](quick-start-creating.md)
-### [Understand the tools, language and architecture](quick-start-developer.md)
+### [Understanding the tools, languages and architecture](quick-start-developer.md)
 ### [Jump in with Unity and MRTK](quick-start-expert.md)
 ## Case studies
 ### Galaxy Explorer
@@ -25,19 +34,9 @@
 ### [Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)
 ### [Representing humans in mixed reality](case-study-representing-humans-in-mixed-reality.md)
 ### [Using spatial sound in RoboRaid](case-study-using-spatial-sound-in-roboraid.md)
-### [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 
 
 
-
-## Mixed reality release notes
-### [Current release notes](release-notes-may-2019.md)
-### [Release notes - October 2018](release-notes-october-2018.md)
-### [Release notes - April 2018](release-notes-april-2018.md)
-### [Release notes - October 2017](release-notes-october-2017.md)
-### [Release notes - August 2016](release-notes-august-2016.md)
-### [Release notes - May 2016](release-notes-may-2016.md)
-### [Release notes - March 2016](release-notes-march-2016.md)
 
 # Design
 ## [Design for mixed reality](design.md)
@@ -239,6 +238,7 @@
 ### [Holographic rendering](rendering.md)
 ### [Volume rendering](volume-rendering.md)
 ### [Hologram stability](hologram-stability.md)
+### [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 ### [Understanding performance for mixed reality](understanding-performance-for-mixed-reality.md)
 ### [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 ## Testing your app
