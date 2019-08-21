@@ -95,7 +95,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                            <a href="design.md" title="Discover landing" data-linktype="absolute-path">
+                            <a href="index.md" title="Get started with mixed reality" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
