@@ -1,4 +1,5 @@
 ---
+layout: LandingPage
 title: Azure mixed reality services
 description: Mixed reality developer documentation for Azure services.
 author: grbury
