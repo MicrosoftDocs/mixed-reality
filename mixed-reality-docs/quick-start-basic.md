@@ -87,22 +87,22 @@ keywords: Understanding the basics, Mixed Reality, develop, development, HoloLen
 
 :::row:::
     :::column:::
-       ![Try it out](images/icon-hololensuser.jpg)
+       ![Try it out](images/icon-hololensuser.jpg)<br>
         **[Try out mixed reality for yourself](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
     :::column-end:::
     :::column:::
-        ![Become a creator](images/icon-design.jpg)
+        ![Become a creator](images/icon-design.jpg)<br>
          **[Become a creator](quick-start-creating.md)**<br>
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
-        ![Come to a design or development event](images/icon-calendar.jpg)
+        ![Come to a design or development event](images/icon-calendar.jpg)<br>
          **[Come to a design or development event](sf-academy-events.md)**<br>
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        ![Start developing](images/icon-developer.jpg)
+        ![Start developing](images/icon-developer.jpg)<br>
          **[Start developing](quick-start-developer.md)**<br>
         Choose a development path based on your skill level, work style. or platform interest.
     :::column-end:::
