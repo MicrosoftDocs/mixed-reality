@@ -94,7 +94,7 @@ The JSON file should have the below contents with “true” set for any of the 
  
 **Q: Is there any guidance on configuring the playspace?**
 
-A: Configuring a playspace should be done as you would with a consumer setup experience. The Room Setup process will also let you define your room boundaries. More details on configuring room boundaries can be read [here](enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+A: Configuring a playspace should be done as you would with a consumer setup experience. The Room Setup process will also let you define your room boundaries. More details on configuring room boundaries can be read [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 As discussed in the above document the maximum reasonable single coordinate playspace is around 5mx5m. If you want to have a larger area you can make use of the Spatial Anchors capability in the Windows Holographic API stack. Using this API will require custom engineering in the experiences you are producing.  
 
@@ -109,7 +109,7 @@ Instead, you can setup “seated” mode, which will not display the boundary or
 
 The application developer is responsible to display necessary safeguards so that users don’t collide with physical surroundings.  These could be digital walls within the experience or a customized game boundary visual. 
 
-Guidance on setting up the room boundary with WMR can be found [here](enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+Guidance on setting up the room boundary with WMR can be found [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 **Q: Where is the origin of the playspace?**
 
@@ -119,19 +119,19 @@ A: The origin of the playspace is determined by the Room Setup experience, more 
 
 **Q: I’m deploying a multi-player experience in at my venue. Is that supported on Windows Mixed Reality?**
 
-A: The Mixed Reality Spatial Data Packager tool is a beta feature that allows localizing multiple players in the same space by enabling porting of the spatial data from one PC to another. You can access the tool and learn more about it [here](mixedrealityspatialdatapackager).
+A: The Mixed Reality Spatial Data Packager tool is a beta feature that allows localizing multiple players in the same space by enabling porting of the spatial data from one PC to another. You can access the tool and learn more about it [here](mixedrealityspatialdatapackager.md).
 
 ### TRACKING
 
 Q: How does the tracking technology in the Windows Mixed Reality headsets work?  
 
-Mixed Reality shares the same tracking technology as the HoloLens. To learn more about the inside-out tracking system, check out the documentation [here](enthusiast-guide/tracking-system).
+Mixed Reality shares the same tracking technology as the HoloLens. To learn more about the inside-out tracking system, check out the documentation [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/tracking-system).
 
-For a description of how the higher-level spatial mapping system works you can read our description [here](spatial-mapping-design).
+For a description of how the higher-level spatial mapping system works you can read our description [here](spatial-mapping-design.md).
 
 **Q: Are there any best practices for getting a reliable tracking volume?**
 
-To best configure the environment for tracking success, you can read best practices in this [post](environment-considerations-for-hololens).
+To best configure the environment for tracking success, you can read best practices in this [post](environment-considerations-for-hololens.md).
 
 **Q: Are there any specific nuances with tracking in warehouse-scale spaces or optimizations to consider?**
 
@@ -173,13 +173,13 @@ A: Azure PlayFab is a complete backend platform for live games. You can learn mo
 
 **Q: I use SteamVR to deploy my experiences. Does Windows Mixed Reality work with SteamVR?**
 
-A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about SteamVR with WMR [here](enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about SteamVR with WMR [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
 
 ### Support and community  
 
 Below are a few helpful resources to engage with subject matter experts on our team, get troubleshooting support, and contribute to the broader mixed reality dev community.  
 
-If you run into issues with any publicly released features, please file a bug using Feedback Hub.For guidance, please refer to this [page](enthusiast-guide/filing-feedback).
+If you run into issues with any publicly released features, please file a bug using Feedback Hub.For guidance, please refer to this [page](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/filing-feedback).
 
 For additional troubleshooting help with WMR please get in touch with our customer support team by filing a [support request](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782).
 
