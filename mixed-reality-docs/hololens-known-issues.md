@@ -125,6 +125,9 @@ During OOBE & Settings, there is a credential timeout of 2 mins. The username/pa
 
 We recommend using a Bluetooth keyboard for entering long passwords.
 
+>[!NOTE]
+> If the wrong network is selected during OOBE the device will need to be fully reset. Instructions can be found [here.](https://docs.microsoft.com/en-us/windows/mixed-reality/reset-or-recover-your-hololens#perform-a-full-device-recovery) 
+
 ## Device Update
 * 30 seconds after a new update, the shell may disappear one time. Please perform the **bloom** gesture to resume your session.
 
