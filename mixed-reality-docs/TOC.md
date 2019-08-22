@@ -31,6 +31,7 @@
 #### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Hardware accessories](hardware-accessories.md)
 ### [HoloLens demo fit and cleaning guide](hololens-demo-guide.md)
+### [Location based entertainment with Windows Mixed Reality](location-based-experiences.md)
 ## Core building blocks
 ### [Gaze](gaze.md)
 ### [Gestures](gestures.md)
