@@ -119,7 +119,7 @@ A: The origin of the playspace is determined by the Room Setup experience, more 
 
 **Q: I’m deploying a multi-player experience in at my venue. Is that supported on Windows Mixed Reality?**
 
-A: The Mixed Reality Spatial Data Packager tool is a beta feature that allows localizing multiple players in the same space by enabling porting of the spatial data from one PC to another. You can access the tool and learn more about it [here](mixedrealityspatialdatapackager).
+A: The Mixed Reality Spatial Data Packager tool is a beta feature that allows localizing multiple players in the same space by enabling porting of the spatial data from one PC to another. You can access the tool and learn more about it [here](mixedrealityspatialdatapackager.md).
 
 ### TRACKING
 
