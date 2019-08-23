@@ -11,7 +11,7 @@ keywords: calibration, comfort, visuals, quality, ipd
 
 
 # Improve visual quality and comfort
-HoloLens, HoloLens 2 and Windows Mixed Reality immersive headsets offer different ways to improve quality of visual experience. 
+HoloLens, HoloLens 2 and Windows Mixed Reality immersive headsets offer different ways to improve the quality of the visual experience. 
 
 ## Hololens 2
 
@@ -50,12 +50,12 @@ If you followed all guidelines and calibration is still failing, you can disable
 3. Launch **Settings**.
 4. Navigate to **System** > **Calibration** > **Eye Calibration** and select **Run Eye Calibration**.
 
-### Calibration when sharing a device / session
+### Calibration when sharing a device/session
 
 Hololens 2 can be shared between people, without a need for each person to go through device setup. Hololens 2 will prompt the user to calibrate visuals when the device is put on the head if the user is new to the device. If the user has previously calibrated visuals on the device, the display will be seamlessly adjusted for quality and a comfortable viewing experience when the user puts the device on the head. 
 
 
-## Hololens
+## Hololens (v1)
 
 Calibrating your IPD (interpupillary distance) can improve the quality of your visuals.
 
