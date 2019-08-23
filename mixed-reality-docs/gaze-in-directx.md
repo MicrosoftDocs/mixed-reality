@@ -8,7 +8,7 @@ ms.topic: article
 keywords: gaze, head gaze, head tracking, eye tracking, directx, input, holograms
 ---
 
-# Head and eye gaze input in DirectX
+# Head-gaze and eye-gaze input in DirectX
 
 In Windows Mixed Reality, eye and head gaze input is used to determine what the user is looking at. This can be used to drive primary input models such as [head gaze and commit](gaze-and-commit.md), and also to provide context for types of interactions. There are two types of gaze vectors available through the API: head gaze and eye gaze.  Both are provided as a three dimensional ray with an origin and direction. Applications can then raycast into their scenes, or the real world, and determine what the user is targeting.
 
@@ -40,7 +40,7 @@ if (pointerPose)
 }
 ```
 
-## Using eye gaze
+## Using eye-gaze
 
 The eye gaze API is very similar to head gaze.  It uses the same  [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API, which provides a ray origin and direction that you can raycast against your scene.  The only difference is that you need to explicitly enable eye tracking before using it. For this, you need to do two steps:
 1. Request user permission to use eye tracking in your app.
@@ -109,7 +109,7 @@ This adds the following lines to the *Package* section in the appxmanifest file:
   </Capabilities>
 ```
 
-### Getting the eye gaze ray
+### Getting the eye-gaze ray
 Once you have received access to ET, you are free to grab the eye gaze ray every frame.  Just as with head gaze, get the [SpatialPointerPose](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) by calling [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) with a desired timestamp and coordinate system. The SpatialPointerPose contains an [EyesPose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) object through the [Eyes](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) property. This is non-null only if eye tracking is enabled. From there you can check if the user in the device has an eye tracking calibration by calling [EyesPose::IsCalibrationValid](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Next, use the [Gaze](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) property to get the a [SpatialRay](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialray) contianing the eye gaze position and direction. The Gaze property can sometimes be null, so be sure to check for this. This can happen is if a calibrated user temporarily closes their eyes.
 
 The following code shows how to access the eye gaze ray.
@@ -145,6 +145,7 @@ However, for input that routes through the SpatialInteractionManager, there's an
 ## See also
 * [Head gaze and commit input model](gaze-and-commit.md)
 * [Eye-gaze on HoloLens 2](eye-tracking.md)
+* [Calibration](https://docs.microsoft.com/en-us/windows/mixed-reality/calibration)
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
 * [Voice Input in DirectX](voice-input-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
