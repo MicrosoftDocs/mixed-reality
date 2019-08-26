@@ -20,7 +20,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Understanding the basics</h3>
+                                                    <h3 class="x-hidden-focus"><strong>Understanding the basics</strong></h3>
                                                 </div>
                                             </div>
                                         </div>
