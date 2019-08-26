@@ -85,12 +85,13 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                             </li>
 </ul>
 
+---
+
 # Understanding the basics
 
 I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.
 
 ## What is mixed reality?
-
 ---
 
 ![mixed reality spectrum](images/RWtpZ1.jpeg)]
@@ -109,7 +110,7 @@ HoloLens lets you create holograms, objects made of light and sound that appear 
 
 ---
 
-![What can you do with mixed reality?](images/Asset 11-100.jpg)]
+![What can you do with mixed reality?](images/Asset 11-100.jpg)
 
 ### [A new vision for work](https://dynamics.microsoft.com/en-us/mixed-reality/overview/)
 
@@ -139,7 +140,7 @@ Philips is piloting HoloLens in the domain of image-guided minimally invasive pr
 
 ---
 
-![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)]
+![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
 
 ### [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com/en-us/hololens/hardware)
 
@@ -150,7 +151,7 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 
 ---
 
-![distance guide](images/text_in_unity_viewingangle.jpg)]
+![distance guide](images/text_in_unity_viewingangle.jpg)
 
 ### [What is the user looking at? - (Gaze)](gaze.md)
 Gaze is the first form of input and is a primary form of targeting within mixed reality. Gaze tells you where the user is looking in the world and lets you determine their intent
