@@ -22,7 +22,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Understanding the basics</h3>
-                                                    <img src="images/pointer.png" alt="pointer image">
+                                                    <img src="images/pointer2.png" alt="pointer image">
                                                 </div>
                                             </div>
                                         </div>
