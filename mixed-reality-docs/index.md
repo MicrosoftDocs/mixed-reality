@@ -129,36 +129,6 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
 ## See how industry partners are using mixed reality
 
 
-:::row:::
-    :::column:::
-        [![Bentley's digital construction software that enables viewing complex construction projects](images/Bentley-Synchro.jpg)](https://binged.it/31AR3kP)
-    :::column-end:::
-    :::column:::
-        ### [Bentley's digital construction software that enables viewing complex construction projects](https://binged.it/31AR3kP)<br>
-        Synchro is digital construction software that enables viewing complex construction projects in mixed reality. Their 4D digital construction platform combines traditional Gantt chart CPM scheduling with integrated 4D visualization capabilities in real time.
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [![PTC's Vuforia Studio is an mixed reality authoring solution](images/PTC-Vuforia-Studio.jpg)](https://binged.it/31ARrjh)
-    :::column-end:::
-    :::column:::
-        ### [PTC's Vuforia Studio is an mixed reality authoring solution](https://binged.it/31ARrjh) <br>
-        Vuforia Studio's efficient mixed reality authoring solution promotes workforce productivity and safety by delivering information when and where workers need it most: in the real-world context of their daily work environment. 
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [![Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures](images/PTC-Vuforia-Studio.jpg)](https://binged.it/31B1RiR)
-    :::column-end:::
-    :::column:::
-        ### [Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures](https://binged.it/31B1RiR)<br>
-        Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.
-    :::column-end:::
-:::row-end:::
-
 <table>
 <colgroup>
     <col width="25%" />
@@ -167,20 +137,16 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
      <td><a href=https://binged.it/31AR3kP><img src="images/Bentley-Synchro.jpg" /></a></td>
      <td><h3><a href=https://binged.it/31AR3kP>Bentley's digital construction software that enables viewing complex construction projects</a></h3>Synchro is digital construction software that enables viewing complex construction projects in mixed reality. Their 4D digital construction platform combines traditional Gantt chart CPM scheduling with integrated 4D visualization capabilities in real time.</td>
 </tr>
+<tr>
+     <td><a href=https://binged.it/31ARrjh><img src="images/PTC-Vuforia-Studio.jpg" /></a></td>
+     <td><h3><a href=https://binged.it/31ARrjh>PTC's Vuforia Studio is an mixed reality authoring solution</a></h3>Vuforia Studio's efficient mixed reality authoring solution promotes workforce productivity and safety by delivering information when and where workers need it most: in the real-world context of their daily work environment.</td>
+</tr>
+<tr>
+     <td><a href=https://binged.it/31B1RiR><img src="images/Bentley-Synchro.jpg" /></a></td>
+     <td><h3><a href=https://binged.it/31B1RiR>Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures</a></h3>Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.</td>
+</tr>
 </table>
 
-
-### [Bentley's digital construction software that enables viewing complex construction projects](https://binged.it/31AR3kP)
-
-Synchro is digital construction software that enables viewing complex construction projects in mixed reality. Their 4D digital construction platform combines traditional Gantt chart CPM scheduling with integrated 4D visualization capabilities in real time.
-
-### [PTC's Vuforia Studio is an mixed reality authoring solution](https://binged.it/31ARrjh)
-
-Vuforia Studio's efficient mixed reality authoring solution promotes workforce productivity and safety by delivering information when and where workers need it most: in the real-world context of their daily work environment. 
-
-### [Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures](https://binged.it/31B1RiR)
-
-Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.
 
 <br>
 
