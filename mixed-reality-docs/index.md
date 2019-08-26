@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
-title: Get started with Mixed Reality
-description: Learn to build mixed reality experiences for HoloLens and immersive headsets.
+title: Understanding the basics
+description: I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.
 author: grbury 
 ms.author: grbury
 ms.date: 08/24/2019
@@ -10,17 +10,15 @@ ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---
 
-# Get started with Mixed Reality
-
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                              <a href="quick-start-basic.md" target="_blank" title="Understanding the basics of mixed reality" data-linktype="absolute-path">
+                              <a href="quick-start-basic.md" target="_blank" title="Understanding the basics" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/Tile-Distribute.jpg" alt="Understanding the basics of mixed reality image">
+                                                        <img src="images/Tile-Distribute-selected.jpg" alt="Understanding the basics of mixed reality image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -32,13 +30,13 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </a>
                             </li>
                             <li>
-                              <a href="quick-start-creating.md" target="_blank" title="Get started designing and creating" data-linktype="absolute-path">
+                              <a href="quick-start-creating.md" target="_blank" title="Get started creating" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/QuickStartTile-Basics.jpg" alt="Get started designing and creating image">
+                                                        <img src="images/QuickStartTile-Basics.jpg" alt="Get started creating image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -87,96 +85,118 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                             </li>
 </ul>
 
-## Browse for articles by category
+# Understanding the basics
 
-<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                            <a href="index.md" title="Get started with mixed reality" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/QuickStartTile-Expert.jpg" alt="Discover icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Discover</h3>
-                                                    <p>Choose a quick start guide based on your skill level, work style, or interest.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                            <li>
-                            <a href="design.md" title="Design landing" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/Tile-Design.jpg" alt="Design icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Design</h3>
-                                                    <p>Get design guidance, build user interface and learn interaction and input.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                            <li>
-                             <a href="development.md" title="Development landing" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/Tile-Develop.jpg" alt="Develop icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Develop</h3>
-                                              <p>Get development guides, learn the technology, and understand the science.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                               </a>
-                            </li>
-                             <li>
-                              <a href="implementing-3d-app-launchers.md" title="Distribute" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/Tile-Distribute.jpg" alt="Distribute icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Distribute</h3>
-                                                  <p>Get your application ready for others and consider creating a 3D launcher.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
- </ul>
+I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.
 
-## Learn more about Azure services for mixed reality
+## What is mixed reality?
 
-[![Azure services](images/AzureServices.jpg)](azure-services.md)
+---
 
-Create mixed reality apps that map, designate, and recall precise points of interest that are accessible across HoloLens, iOS, and Android devices. Enable wayfinding across spaces to help your users collaborate more efficiently.
-
-[Azure services for mixed reality](azure-services.md)
+![mixed reality spectrum](images/RWtpZ1.jpeg)]
 
 
+### [Mixed reality is a spectrum](mixed-reality.md)
+
+Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations.
+
+### [What is a hologram?](hologram.md)
+
+HoloLens lets you create holograms, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
+
+
+## What can you do with mixed reality?
+
+---
+
+![What can you do with mixed reality?](images/Asset 11-100.jpg)]
+
+### [A new vision for work](https://dynamics.microsoft.com/en-us/mixed-reality/overview/)
+
+Internally at Microsoft we are creating mixed reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities: Remote Assist, Layout and Guides.
+
+### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
+Tomorrow’s opportunities are uncovered by building products today. The solutions these products provide reveal what’s necessary to advance the future. With mixed reality this is especially true: Meaningful insight comes from getting hands-on with real work — real devices, real customers, real problems.
+
+## See how industry partners are using mixed reality
+
+---
+
+### [Bentley's digital construction software that enables viewing complex construction projects](https://binged.it/31AR3kP)
+
+Synchro is digital construction software that enables viewing complex construction projects in mixed reality. Their 4D digital construction platform combines traditional Gantt chart CPM scheduling with integrated 4D visualization capabilities in real time.
+
+### [PTC's Vuforia Studio is an mixed reality authoring solution](https://binged.it/31ARrjh)
+
+Vuforia Studio's efficient mixed reality authoring solution promotes workforce productivity and safety by delivering information when and where workers need it most: in the real-world context of their daily work environment. 
+
+### [Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures](https://binged.it/31B1RiR)
+
+Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.
+
+
+## What are the capabilities of HoloLens?
+
+---
+
+![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)]
+
+### [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com/en-us/hololens/hardware)
+
+HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+
+
+## What are the core building blocks of an experience?
+
+---
+
+![distance guide](images/text_in_unity_viewingangle.jpg)]
+
+### [What is the user looking at? - (Gaze)](gaze.md)
+Gaze is the first form of input and is a primary form of targeting within mixed reality. Gaze tells you where the user is looking in the world and lets you determine their intent
+
+### [Take action in mixed reality - (Gestures)](gestures.md)
+Hand gestures allow users take action in mixed reality. Interaction is built on gaze to target and gesture or voice to act upon whatever element has been targeted.
+
+### [Keep the user comfortable - (Comfort)](comfort.md)
+To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
+
+### [How the user sees the world - (Holographic frame)](holographic-frame.md)
+Users see the world of mixed reality through a rectangular viewport powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them.
+
+### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
+Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
+
+### [Suggesting the scale of an object - (Scale)](scale.md)
+A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
+
+
+## What would you like to do next?
+
+---
+
+:::row:::
+    :::column:::
+       ![Try it out](images/icon-hololensuser.jpg)<br>
+        **[Try out mixed reality for yourself](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
+        Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
+    :::column-end:::
+    :::column:::
+        ![Become a creator](images/icon-design.jpg)<br>
+         **[Become a creator](quick-start-creating.md)**<br>
+        Learn the basic concepts you need to begin designing and prototyping.
+    :::column-end:::
+    :::column:::
+        ![Come to a design or development event](images/icon-calendar.jpg)<br>
+         **[Come to a design or development event](sf-academy-events.md)**<br>
+        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
+    :::column-end:::
+    :::column:::
+        ![Start developing](images/icon-developer.jpg)<br>
+         **[Start developing](quick-start-developer.md)**<br>
+        Choose a development path based on your skill level, work style. or platform interest.
+    :::column-end:::
+:::row-end:::
 
 
 >[!IMPORTANT]
