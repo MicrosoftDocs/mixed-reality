@@ -94,7 +94,7 @@ I’m brand new to mixed reality. I would like to learn about what it is and und
 ## What is mixed reality?
 ---
 
-![mixed reality spectrum](images/RWtpZ1.jpeg)]
+![mixed reality spectrum](images/RWtpZ1.jpeg)
 
 
 ### [Mixed reality is a spectrum](mixed-reality.md)
@@ -105,9 +105,9 @@ Mixed reality is the result of blending the physical world with the digital worl
 
 HoloLens lets you create holograms, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
 
+<br>
 
 ## What can you do with mixed reality?
-
 ---
 
 ![What can you do with mixed reality?](images/Asset 11-100.jpg)
@@ -118,6 +118,9 @@ Internally at Microsoft we are creating mixed reality applications to empower em
 
 ### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
 Tomorrow’s opportunities are uncovered by building products today. The solutions these products provide reveal what’s necessary to advance the future. With mixed reality this is especially true: Meaningful insight comes from getting hands-on with real work — real devices, real customers, real problems.
+
+
+<br>
 
 ## See how industry partners are using mixed reality
 
@@ -135,6 +138,7 @@ Vuforia Studio's efficient mixed reality authoring solution promotes workforce p
 
 Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.
 
+<br>
 
 ## What are the capabilities of HoloLens?
 
@@ -146,6 +150,7 @@ Philips is piloting HoloLens in the domain of image-guided minimally invasive pr
 
 HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
+<br>
 
 ## What are the core building blocks of an experience?
 
@@ -171,6 +176,8 @@ Spatial mapping makes it possible to place objects on real surfaces. This helps 
 ### [Suggesting the scale of an object - (Scale)](scale.md)
 A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
 
+
+<br>
 
 ## What would you like to do next?
 
