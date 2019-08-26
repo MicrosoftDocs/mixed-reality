@@ -92,7 +92,6 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.
 
 ## What is mixed reality?
----
 
 ![mixed reality spectrum](images/RWtpZ1.jpeg)
 
