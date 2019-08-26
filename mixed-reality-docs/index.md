@@ -164,8 +164,8 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
     <col width="25%" />
     <col width="75%" />
 <tr>
-     <td><img src="images/Bentley-Synchro.jpg" /></td>
-     <td><h3>Bentley's digital construction software that enables viewing complex construction projects</h3><br>Synchro is digital construction software that enables viewing complex construction projects in mixed reality. Their 4D digital construction platform combines traditional Gantt chart CPM scheduling with integrated 4D visualization capabilities in real time.</td>
+     <td><a href=https://binged.it/31AR3kP><img src="images/Bentley-Synchro.jpg" /></a></td>
+     <td><h3><a href=https://binged.it/31AR3kP>Bentley's digital construction software that enables viewing complex construction projects</a></h3>Synchro is digital construction software that enables viewing complex construction projects in mixed reality. Their 4D digital construction platform combines traditional Gantt chart CPM scheduling with integrated 4D visualization capabilities in real time.</td>
 </tr>
 </table>
 
