@@ -108,6 +108,9 @@ HoloLens lets you create holograms, objects made of light and sound that appear 
 
 <br>
 
+
+---
+
 ## What can you do with mixed reality?
 
 ![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
@@ -122,9 +125,10 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
 
 <br>
 
+---
+
 ## See how industry partners are using mixed reality
 
----
 
 ### [Bentley's digital construction software that enables viewing complex construction projects](https://binged.it/31AR3kP)
 
@@ -140,6 +144,10 @@ Philips is piloting HoloLens in the domain of image-guided minimally invasive pr
 
 <br>
 
+
+
+---
+
 ## What are the capabilities of HoloLens?
 
 ![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
@@ -149,6 +157,8 @@ Philips is piloting HoloLens in the domain of image-guided minimally invasive pr
 HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
 <br>
+
+---
 
 ## What are the core building blocks of an experience?
 
@@ -176,9 +186,10 @@ A key to displaying content that looks realistic in holographic form is to mimic
 
 <br>
 
+---
+
 ## What would you like to do next?
 
----
 
 :::row:::
     :::column:::
