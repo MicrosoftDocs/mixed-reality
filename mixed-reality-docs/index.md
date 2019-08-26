@@ -11,7 +11,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 ---
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                              <a href="index.md" target="_blank" title="Understanding the basics" data-linktype="absolute-path">
+                              <a href=" " target="_blank" title="Understanding the basics" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -90,7 +90,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 # Understanding the basics
 
-I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.
+I’m brand new to mixed reality. I would like to learn about what it is and understand its capabilities.
 
 ## What is mixed reality?
 
