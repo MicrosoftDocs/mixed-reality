@@ -19,8 +19,8 @@
 ### [Release notes - March 2016](release-notes-march-2016.md)
 
 # Discover
-## [Get started with mixed reality](index.md)
-## Quick start guides based on experience
+## [Understanding the basics](index.md)
+## QS
 ### [Understanding the basics of mixed reality](quick-start-basic.md)
 ### [Get started designing and creating](quick-start-creating.md)
 ### [Understanding the tools, languages and architecture](quick-start-developer.md)
