@@ -142,7 +142,7 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
      <td><h3><a href=https://binged.it/31ARrjh>PTC's Vuforia Studio is an mixed reality authoring solution</a></h3>Vuforia Studio's efficient mixed reality authoring solution promotes workforce productivity and safety by delivering information when and where workers need it most: in the real-world context of their daily work environment.</td>
 </tr>
 <tr>
-     <td><a href=https://binged.it/31B1RiR><img src="images/Bentley-Synchro.jpg" /></a></td>
+     <td><a href=https://binged.it/31B1RiR><img src="images/Philips-Azurion.jpg" /></a></td>
      <td><h3><a href=https://binged.it/31B1RiR>Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures</a></h3>Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.</td>
 </tr>
 </table>
