@@ -84,8 +84,9 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </a>
                             </li>
 </ul>
-
 ---
+
+<br>
 
 # Understanding the basics
 
@@ -107,9 +108,8 @@ HoloLens lets you create holograms, objects made of light and sound that appear 
 <br>
 
 ## What can you do with mixed reality?
----
 
-![What can you do with mixed reality?](images/Asset 11-100.jpg)
+![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
 
 ### [A new vision for work](https://dynamics.microsoft.com/en-us/mixed-reality/overview/)
 
@@ -141,8 +141,6 @@ Philips is piloting HoloLens in the domain of image-guided minimally invasive pr
 
 ## What are the capabilities of HoloLens?
 
----
-
 ![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
 
 ### [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com/en-us/hololens/hardware)
@@ -153,7 +151,6 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 
 ## What are the core building blocks of an experience?
 
----
 
 ![distance guide](images/text_in_unity_viewingangle.jpg)
 
