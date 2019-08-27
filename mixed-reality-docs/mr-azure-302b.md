@@ -777,7 +777,7 @@ To create this class:
     ```
 
     > [!IMPORTANT]
-    > Ensure that you add your **Service Key** (Training Key) value and **Project Id** value, which you noted down previous; these are the values you [collected from the portal earlier in the course (Chapter 2, step 10 onwards)](##chapter-2---training-your-custom-vision-project).
+    > Ensure that you add your **Service Key** (Training Key) value and **Project Id** value, which you noted down previous; these are the values you [collected from the portal earlier in the course (Chapter 2, step 10 onwards)](#chapter-2---training-your-custom-vision-project).
 
 5.  Add the following **Start()** and **Awake()** methods. Those methods are called on initialization and contain the call to set up the UI:
 
