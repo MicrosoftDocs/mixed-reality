@@ -83,8 +83,8 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">I'm ready to build stuff</h3>
-                                                    <p>Jump in with Unity and MRTK</p>
+                                                    <h3 class="x-hidden-focus">Jump in with Unity and MRTK</h3>
+                                                    <p>Build cross-platfrom MR experiences</p>
                                                 </div>
                                             </div>
                                         </div>
