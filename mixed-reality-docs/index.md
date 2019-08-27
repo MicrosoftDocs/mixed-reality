@@ -9,6 +9,11 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---
+
+# Get started with Mixed Reality
+
+## Choose your track
+
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
                                     <div class="cardSize">
@@ -16,11 +21,12 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/Tile-Distribute-select2.png" alt="Understanding the basics of mixed reality image">
+                                                        <img src="images/Tile-Distribute.jpg" alt="Understanding the basics of mixed reality image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus"><strong>Understanding the basics</strong></h3>
+                                                    <h3 class="x-hidden-focus">I'm new to mixed reality</h3>
+                                                    <p>Understand the basics</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -37,7 +43,8 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Get started creating</h3>
+                                                    <h3 class="x-hidden-focus">I want to create something</h3>
+                                                    <p>Start designing and prototyping</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -55,7 +62,8 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Understanding the tools</h3>
+                                                    <h3 class="x-hidden-focus">I'm a developer</h3>
+                                                    <p>Learn the tools and architecture</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -73,7 +81,8 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Jump in with Unity and MRTK</h3>
+                                                    <h3 class="x-hidden-focus">I'm a pro</h3>
+                                                    <p>Jump in with Unity and MRTK</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -86,7 +95,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <br>
 
-# Understanding the basics
+## Understanding the basics
 
 I’m brand new to mixed reality. I would like to learn about what it is and understand its capabilities.
 
@@ -198,22 +207,22 @@ A key to displaying content that looks realistic in holographic form is to mimic
 :::row:::
     :::column:::
        ![Try it out](images/icon-hololensuser.jpg)<br>
-        ### [Try out mixed reality for yourself](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
+        ### [Try out mixed reality for yourself](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
     :::column-end:::
     :::column:::
         ![Become a creator](images/icon-design.jpg)<br>
-         ### [Become a creator](quick-start-creating.md)<br>
+         ### [Become a creator](quick-start-creating.md)
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
         ![Come to a design or development event](images/icon-calendar.jpg)<br>
-         ### [Come to a design or development event](sf-academy-events.md)<br>
+         ### [Come to a design or development event](sf-academy-events.md)
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
         ![Start developing](images/icon-developer.jpg)<br>
-         ### [Start developing](quick-start-developer.md)<br>
+         ### [Start developing](quick-start-developer.md)
         Choose a development path based on your skill level, work style. or platform interest.
     :::column-end:::
 :::row-end:::
