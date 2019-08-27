@@ -83,7 +83,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">I'm a pro</h3>
+                                                    <h3 class="x-hidden-focus">I'm ready to build stuff</h3>
                                                     <p>Jump in with Unity and MRTK</p>
                                                 </div>
                                             </div>

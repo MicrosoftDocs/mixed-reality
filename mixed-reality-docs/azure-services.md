@@ -13,7 +13,7 @@ keywords: Mixed Reality, develop, development, HoloLens, Azure services, spatial
 # Azure mixed reality services
 Unlock what every human is an expert at—the three-dimensional, physical world around us—with Azure mixed reality services. Help people create, learn, and collaborate more effectively by capturing and surfacing digital information within the context of their work and world. Bring 3D to mobile devices, headsets, and other untethered devices. Using Azure, help ensure that your most sensitive information is protected.
 
-## Azure Spatial Anchors
+## Multi-user, spatially aware applications using Spatial Anchors
 
 ![ Azure Spatial Anchors image](images/AzureSpatialAnchors.jpg)
 
@@ -22,7 +22,7 @@ Build multi-user, spatially aware mixed reality applications using Spatial Ancho
 [Try Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 
 
-## Remote rendering
+## Interactive, high-quality 3D models using Remote Rendering
 
 ![ Remote rendering image](images/RemoteRendering.jpg)
 
