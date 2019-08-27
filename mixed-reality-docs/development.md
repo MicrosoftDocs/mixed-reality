@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Development
+title: Learn the tools and architecture
 description: Mixed reality developer documentation for HoloLens and immersive headsets.
 author: grbury
 ms.author: grbury
@@ -36,17 +36,17 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        ![Unreal](images/Unreal-logo.jpg)
+        ![Unreal](images/Unreal_logo.png)
          ### [Unreal](https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access)
         Use the installation checklist to get the tools you need to build applications for Microsoft HoloLens and Windows Mixed Reality.
     :::column-end:::
     :::column:::
-        ![DirectX](images/DirectX-logo.jpg)
+        ![DirectX](images/DirectX_logo.png)
          ### [DirectX](directx-development-overview.md)
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        ![WebVR](images/WebVR-logo.jpg)
+        ![WebVR](images/WebVR_logo.png)
          ### [WebVR](using-webvr-in-edge-with-windows-mixed-reality.md)
         Choose a development path based on your skill level, work style. or platform interest.
     :::column-end:::
