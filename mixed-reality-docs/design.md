@@ -12,10 +12,10 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 # Start designing and prototyping
 
+
+![building blocks](images/text_in_unity_viewingangle.jpg)
+
 ## What are the core building blocks of an experience?
-
-
-![distance guide](images/text_in_unity_viewingangle.jpg)
 
 ### [What is the user looking at? - (Gaze)](gaze.md)
 Gaze is the first form of input and is a primary form of targeting within mixed reality. Gaze tells you where the user is looking in the world and lets you determine their intent
