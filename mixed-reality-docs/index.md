@@ -175,16 +175,10 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 
 ---
 
-## What are the core building blocks of an experience?
+## What are the core concepts of an experience?
 
 
 ![distance guide](images/text_in_unity_viewingangle.jpg)
-
-### [What is the user looking at? - (Gaze)](gaze.md)
-Gaze is the first form of input and is a primary form of targeting within mixed reality. Gaze tells you where the user is looking in the world and lets you determine their intent
-
-### [Taking action in mixed reality - (Gestures)](gestures.md)
-Hand gestures allow users take action in mixed reality. Interaction is built on gaze to target and gesture or voice to act upon whatever element has been targeted.
 
 ### [Keep the user comfortable - (Comfort)](comfort.md)
 To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
