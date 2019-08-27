@@ -70,7 +70,7 @@ Other applications in this area can include:
 ### Additional use cases
 - **Gaming:** Ever wanted to have superpowers? Here's your chance! You can levitate holograms by staring at them. Shoot laser beams from your eyes. Turn enemies into stone or freeze them. Use your x-ray vision to explore buildings. Your imagination is the limit!	
 
-- **Expressive avatars:** Eye tracking aids in more expressive 3D avatars by using live eye tracking date to animate the avatar's eyes that indicate what the user is looking at. It also adds more expressiveness by adding blinks. 
+- **Expressive avatars:** Eye tracking aids in more expressive 3D avatars by using live eye tracking data to animate the avatar's eyes that indicate what the user is looking at. It also adds more expressiveness by adding blinks. 
 
 - **Text entry:** Eye tracking can be used as an alternative for low-effort text entry, especially when speech or hands are inconvenient to use. 
 
