@@ -42,18 +42,8 @@
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
-## Get started with design
-### [What is mixed reality?](mixed-reality.md)
-### [What is a hologram?](hologram.md)
-### [Comfort](Comfort.md)
-### [Holographic frame](Holographic-frame.md)
-### [Spatial mapping design](Spatial-mapping-design.md)
-### [Spatial sound design](Spatial-sound-design.md)
-### [My first year on the design team](case-study-my-first-year-on-the-hololens-design-team.md)
-### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
-### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
-### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
-## [Instinctual interactions](Interaction-fundamentals.md)
+## Choose an interaction model
+### [Instinctual interactions(Interaction-fundamentals.md)
 ### [Hands and motion controllers](hands-and-tools.md)
 #### [Direct manipulation with hands](direct-manipulation.md)
 #### [Point and commit with hands](point-and-commit.md)
