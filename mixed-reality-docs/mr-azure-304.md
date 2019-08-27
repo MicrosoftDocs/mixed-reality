@@ -291,7 +291,7 @@ The following is a typical set up for developing with mixed reality, and as such
 ## Chapter 4 - Main Camera setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/Azure-MR-304.unitypackage), and import it into your project as a [Custom Package](https://docs.unity3d.com/Manual/AssetPackages.html). Be aware that this package also includes the import of the *Newtonsoft DLL*, covered in [Chapter 5](#chapter-5--import-the-newtonsoft.json-library). With this imported, you can continue from [Chapter 6](#chapter-6-create-the-faceanalysis-class).
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to [download this .unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/Azure-MR-304.unitypackage), and import it into your project as a [Custom Package](https://docs.unity3d.com/Manual/AssetPackages.html). Be aware that this package also includes the import of the *Newtonsoft DLL*, covered in [Chapter 5](#chapter-5--import-the-newtonsoftjson-library). With this imported, you can continue from [Chapter 6](#chapter-6---create-the-faceanalysis-class).
 
 1.  In the *Hierarchy* Panel, select the **Main Camera**.
 
@@ -312,7 +312,7 @@ The following is a typical set up for developing with mixed reality, and as such
 ## Chapter 5 – Import the Newtonsoft.Json library
 
 > [!IMPORTANT]
-> If you imported the '.unitypackage' in the [last Chapter](#chapter-4--main-camera-setup), you can skip this Chapter.
+> If you imported the '.unitypackage' in the [last Chapter](#chapter-4---main-camera-setup), you can skip this Chapter.
 
 To help you deserialize and serialize objects received and sent to the Bot Service you need to download the *Newtonsoft.Json* library. You will find a compatible version already organized with the correct Unity folder structure in this [Unity package file](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20304%20-%20Face%20recognition/newtonsoftDLL.unitypackage). 
 
