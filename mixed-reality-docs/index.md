@@ -183,7 +183,7 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 ### [What is the user looking at? - (Gaze)](gaze.md)
 Gaze is the first form of input and is a primary form of targeting within mixed reality. Gaze tells you where the user is looking in the world and lets you determine their intent
 
-### [Take action in mixed reality - (Gestures)](gestures.md)
+### [Taking action in mixed reality - (Gestures)](gestures.md)
 Hand gestures allow users take action in mixed reality. Interaction is built on gaze to target and gesture or voice to act upon whatever element has been targeted.
 
 ### [Keep the user comfortable - (Comfort)](comfort.md)

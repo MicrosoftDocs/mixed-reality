@@ -1,6 +1,7 @@
 # What's new?
 ## [Latest news](news.md)
 ## [Get your app ready for HL2](mrtk-porting-guide.md)
+## [Learn about Azure Services](azure-services.md)
 ## Programs and events
 ### [Mixed Reality Dev Days](mr-dev-days.md)
 #### [Mixed Reality Dev Days Sessions](mr-dev-days-sessions.md)

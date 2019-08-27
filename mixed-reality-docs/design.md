@@ -20,7 +20,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 ### [What is the user looking at? - (Gaze)](gaze.md)
 Gaze is the first form of input and is a primary form of targeting within mixed reality. Gaze tells you where the user is looking in the world and lets you determine their intent
 
-### [Take action in mixed reality - (Gestures)](gestures.md)
+### [Taking action in mixed reality - (Gestures)](gestures.md)
 Hand gestures allow users take action in mixed reality. Interaction is built on gaze to target and gesture or voice to act upon whatever element has been targeted.
 
 ### [Keep the user comfortable - (Comfort)](comfort.md)
@@ -44,7 +44,7 @@ A key to displaying content that looks realistic in holographic form is to mimic
 ## Interaction design factors to consider
 
 
-![mixed reality spectrum](images/RWtpZ1.jpeg)
+![Interaction design factors](images/MRTK_BoundingBox_Main.png)
 
 
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
@@ -82,7 +82,7 @@ Billboarding is a behavioral concept that can be applied to objects in mixed rea
 *TBD Need help here – What’s the best way to transition in prototyping? Describe the options? Install the tools? What and why?*
 
 
-![Mixed Reality Toolkit logo](images/mrtklogo-1000px.png)
+[![Mixed Reality Toolkit logo](images/mrtklogo-1000px.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 
 ### [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 
@@ -105,7 +105,7 @@ The open source sample apps are applications that have been created by our teams
 :::row:::
     :::column:::
        ![Understand the basics](images/icon-lightbulb.jpg)<br>
-        ### [Understand the basics](index.md)
+        ### [Understand the basics](index.md#understand-the-basics)
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
