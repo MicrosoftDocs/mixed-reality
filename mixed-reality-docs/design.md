@@ -88,9 +88,15 @@ Billboarding is a behavioral concept that can be applied to objects in mixed rea
 
 Get a better understanding of what defines mixed reality and how it’s being used.
 
+
 ### [Sample apps](tutorials.md#open-source-sample-apps)
 
 The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects. 
+
+
+### [Microsoft Maquette](https://www.maquette.ms/)
+
+Microsoft Maquette makes spatial prototyping easy, quick, and immersive.
 
 
 <br>
