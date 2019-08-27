@@ -20,10 +20,8 @@ Spectator View offers a fast and affordable approach to recording holograms in H
 ## Key Resources
 
 * [**Spectator View on GitHub**](https://github.com/microsoft/MixedReality-SpectatorView)
-* [**Architecture**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Architecture.md)
-* [**Samples**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
-* [**Mobile Setup Instructions**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md)
-* [**Video Camera Setup Instructions**](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.VideoCamera.md)
+* [**Spectator View Documentation**](https://microsoft.github.io/MixedReality-SpectatorView/README.html)
+* [**Spectator View Samples**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## Use Cases
 * You can record a mixed reality experience using an iPhone or Android device. Record in full HD and apply anti-aliasing to holograms and even shadows. It is a cost-effective and quick way to capture video of holograms.

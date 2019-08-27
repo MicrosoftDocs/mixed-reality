@@ -244,6 +244,9 @@ Windows Mixed Reality devices detect QR codes at the system level in the driver.
 
 It is recommended to configure your app to ignore QR codes older than a specific timestamp. Currently, the API does not support clearing QR code history.
 
+### QR code placement in a space
+For recommendations on where and how to place QR codes, please refer to [Environment considerations for HoloLens](environment-considerations-for-hololens.md).
+
 ## QR API reference
 
 ```cs
