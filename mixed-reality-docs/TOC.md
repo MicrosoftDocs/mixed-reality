@@ -39,7 +39,7 @@
 
 
 # Design
-## [Design for mixed reality](design.md)
+## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
 ## Get started with design
 ### [What is mixed reality?](mixed-reality.md)
