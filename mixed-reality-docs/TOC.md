@@ -104,7 +104,7 @@
 ### [Asset creation process](asset-creation-process.md)
 
 # Develop
-## [Development launchpad](development.md)
+## [Learn the tools and architecture](development.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 ## Unity
