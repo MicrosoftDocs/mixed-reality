@@ -97,7 +97,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <br>
 
-## Understand the basics
+# Understand the basics
 
 I’m brand new to mixed reality. I would like to learn about what it is and understand its capabilities.
 
