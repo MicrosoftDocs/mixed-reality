@@ -27,7 +27,7 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 ---
 
 
-## What tools are available? 
+## What technology path are you interested in? 
 
 :::row:::
     :::column:::
