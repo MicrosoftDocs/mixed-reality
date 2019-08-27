@@ -16,7 +16,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                            <a href="index.md#understand-the-basics" target="_blank" title="Understand the basics" data-linktype="absolute-path">
+                            <a href="index.md#understand-the-basics" title="Understand the basics" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -35,7 +35,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </a>
                             </li>
                             <li>
-                              <a href="design.md" target="_blank" title="Start designing and prototyping" data-linktype="absolute-path">
+                              <a href="design.md" title="Start designing and prototyping" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -54,7 +54,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </a>
                             </li>
                             <li>
-                              <a href="development.md" target="_blank" title="Understanding the tools, languages and architecture" data-linktype="absolute-path">
+                              <a href="development.md" title="Understanding the tools, languages and architecture" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
