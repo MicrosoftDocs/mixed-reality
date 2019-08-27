@@ -145,7 +145,7 @@ However, for input that routes through the SpatialInteractionManager, there's an
 ## See also
 * [Head gaze and commit input model](gaze-and-commit.md)
 * [Eye-gaze on HoloLens 2](eye-tracking.md)
-* [Calibration](https://docs.microsoft.com/en-us/windows/mixed-reality/calibration)
+* [Calibration](calibration.md)
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
 * [Voice Input in DirectX](voice-input-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
