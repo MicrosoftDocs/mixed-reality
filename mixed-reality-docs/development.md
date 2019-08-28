@@ -13,7 +13,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
 # Learn the tools and architecture
 
 
-![Teams working with materials in the Mixed Reality Academy](images/academyWork1000.png)
+![Teams working with materials in the Mixed Reality Academy](images/Expanding-the-design-process-for-mixed-reality.jpg)
 
 ## [How is mixed reality development different?](case-study-expanding-the-design-process-for-mixed-reality.md)
 
