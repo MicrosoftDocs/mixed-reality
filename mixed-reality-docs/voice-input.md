@@ -84,9 +84,9 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
 
 ## "See It, Say It"
 
-HoloLens has a "see it, say it" model for voice input, where labels on buttons tell users what voice commands they can say as well. For example, when looking at a 2D app in HoloLens 1, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world.
+HoloLens has a "see it, say it" model for voice input, where labels on buttons tell users what voice commands they can say as well. For example, when looking at an app window in HoloLens 1, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world.
 
-![When looking at a 2D app or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)
+![When looking at an app window or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)
 
 When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button in HoloLens 1, you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it. To reveal voice tooltips in HoloLens 2, show the voice cursor by saying "select" or "What can I say" (see below). 
 
@@ -96,7 +96,7 @@ When apps follow this rule, users can easily understand what to say to control t
 
 ## Voice commands for fast Hologram Manipulation
 
-There are also a number of voice commands you can say while gazing at a hologram to quickly perform manipulation tasks. These voice commands work on 2D apps as well as 3D objects you have placed in the world.
+There are also a number of voice commands you can say while gazing at a hologram to quickly perform manipulation tasks. These voice commands work on app windows as well as 3D objects you have placed in the world.
 
 **Hologram Manipulation Commands**
 * Face me
@@ -129,6 +129,10 @@ For applications that want to take advantage of the customized audio input proce
 * The AudioCategory_Other stream category is customized for ambient environment audio recording and provides the client with a 48kHz 24 bit stereo audio stream.
 
 All this audio processing is hardware accelerated which means the features drain a lot less power than if the same processing was done on the HoloLens CPU. Avoid running other audio input processing on the CPU to maximize system battery life and take advantage of the built in, offloaded audio input processing.
+
+## Languages
+
+HoloLens 2 also supports additional languages. Keep in mind that speech commands will always run in the system's display language even if multiple keyboards are installed or if apps attempt to create a speech recognizer in a different language.
 
 ## Troubleshooting
 
