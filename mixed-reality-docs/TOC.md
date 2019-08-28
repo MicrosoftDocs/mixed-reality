@@ -104,8 +104,7 @@
 #### [Voice commanding](Voice-design.md)
 #### [Head-gaze and dwell](Gaze-and-dwell.md)
 ### [Head-gaze and commit](gaze-and-commit.md)
-### Supplemental interactions
-#### [Eye-gaze](eye-tracking.md)
+### [Eye-gaze](eye-tracking.md)
 ## Style
 ### [Color, light and materials](color,-light-and-materials.md)
 ### [Spatial sound design](spatial-sound-design.md)
