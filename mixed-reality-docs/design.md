@@ -112,6 +112,30 @@ The open source sample apps are applications that have been created by our teams
 Microsoft Maquette makes spatial prototyping easy, quick, and immersive.
 
 
+:::row:::
+    :::column:::
+        ![Learn Unity](images/unity_logo.png)
+         ### [Learn Unity](https://learn.unity.com/)
+        Dive into something new. Learn by doing, from start to finish.
+    :::column-end:::
+        :::column:::
+       ![Mixed Reality Toolkit](images/unity_logo.png)
+        ### [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
+        Get a better understanding of what defines mixed reality and how it’s being used.
+    :::column-end:::
+    :::column:::
+        ![Remix3D](images/DirectX_logo.png)
+         ### [Remix3D](https://www.remix3d.com/)
+        Search for and find 3D models. 
+    :::column-end:::
+    :::column:::
+        ![Microsoft Maquette](images/WebVR_logo.png)
+         ### [Microsoft Maquette](https://www.maquette.ms/)
+        Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.
+    :::column-end:::
+:::row-end:::
+
+
 <br>
 
 ---

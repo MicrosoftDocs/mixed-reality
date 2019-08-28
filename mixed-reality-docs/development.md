@@ -17,7 +17,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
 
 ## [How is mixed reality development different?](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design.
+As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design. [Read more](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 
 <br>
