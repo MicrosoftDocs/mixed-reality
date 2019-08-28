@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: yoyoz
 ms.date: 03/21/2018
 ms.topic: article
-keywords: gaze, unity, hologram, mixed reality
+keywords: eye-gaze, head-gaze, unity, hologram, mixed reality
 ---
 
 
@@ -49,7 +49,7 @@ While the example above demonstrates how to do a single raycast in an update loo
 
 Just like on the desktop where you use a mouse pointer to target and interact with content, you should implement a [cursor](cursors.md) that represents the user's head-gaze. This gives the user confidence in what they're about to interact with.
 
-## Head gaze in the Mixed Reality Toolkit v2
+## Head-gaze in the Mixed Reality Toolkit v2
 You can access head-gaze from the [Input Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK v2.
 
 ## See also
