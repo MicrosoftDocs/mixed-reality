@@ -21,11 +21,6 @@
 
 # Discover
 ## [Get started with Mixed Reality](index.md)
-## QS
-### [Understanding the basics of mixed reality](quick-start-basic.md)
-### [Get started designing and creating](quick-start-creating.md)
-### [Understanding the tools, languages and architecture](quick-start-developer.md)
-### [Jump in with Unity and MRTK](quick-start-expert.md)
 ## Case studies
 ### Galaxy Explorer
 #### [Creating a galaxy in mixed reality for Hololens (1st gen)](case-study-creating-a-galaxy-in-mixed-reality.md)

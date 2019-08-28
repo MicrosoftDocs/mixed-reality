@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Understanding the basics
+title: Get started with Mixed Reality
 description: I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.
 author: grbury 
 ms.author: grbury
@@ -211,7 +211,7 @@ A key to displaying content that looks realistic in holographic form is to mimic
     :::column-end:::
     :::column:::
         ![Become a creator](images/icon-design.jpg)<br>
-         ### [Become a creator](quick-start-creating.md)
+         ### [Become a creator](design.md)
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
@@ -221,8 +221,8 @@ A key to displaying content that looks realistic in holographic form is to mimic
     :::column-end:::
     :::column:::
         ![Start developing](images/icon-developer.jpg)<br>
-         ### [Start developing](quick-start-developer.md)
-        Choose a development path based on your skill level, work style. or platform interest.
+         ### [Start developing](development.md)
+        Choose a development path based on your skill level, work style or platform interest.
     :::column-end:::
 :::row-end:::
 
