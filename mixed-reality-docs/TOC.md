@@ -33,7 +33,7 @@
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
 ## Choose an interaction model
-### [Instinctual interactions(Interaction-fundamentals.md)
+### [Instinctual interactions](Interaction-fundamentals.md)
 ### [Hands and motion controllers](hands-and-tools.md)
 #### [Direct manipulation with hands](direct-manipulation.md)
 #### [Point and commit with hands](point-and-commit.md)
