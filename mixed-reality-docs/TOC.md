@@ -257,12 +257,4 @@
 ## [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 ## [In-app purchases](in-app-purchases.md)
 ## [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
-# Programs and events
-## [Mixed Reality Dev Days](mr-dev-days.md)
-### [Mixed Reality Dev Days Sessions](mr-dev-days-sessions.md)
-### [Mixed Reality Dev Days FAQ](mr-dev-days-faq.md)
-## [San Francisco Reactor Academy events calendar](sf-academy-events.md)
-## [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
-## [ECCV 2018 HoloLens as a tool for computer vision research](eccv-2018.md)
-## [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
-# [Contributing to this documentation](CONTRIBUTING.md)
+

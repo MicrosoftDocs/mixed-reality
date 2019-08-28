@@ -110,6 +110,7 @@ I’m brand new to mixed reality. I would like to learn about what it is and und
 
 ### [Mixed reality is a spectrum](mixed-reality.md)
 Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations.
+
 <br>
 
 
@@ -187,14 +188,17 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 
 ### [Keep the user comfortable - (Comfort)](comfort.md)
 To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
+
 <br>
 
 ### [How the user sees the world - (Holographic frame)](holographic-frame.md)
 Users see the world of mixed reality through a rectangular viewport powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them.
+
 <br>
 
 ### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
+
 <br>
 
 ### [Suggesting the scale of an object - (Scale)](scale.md)
