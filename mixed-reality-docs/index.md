@@ -225,7 +225,7 @@ A key to displaying content that looks realistic in holographic form is to mimic
     :::column-end:::
     :::column:::
         ![Come to an event](images/icon-calendar.jpg)<br>
-         ### [Come to a design or development event](sf-academy-events.md)
+         ### [Come to an event](sf-academy-events.md)
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
