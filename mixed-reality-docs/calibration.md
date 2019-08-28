@@ -17,10 +17,26 @@ HoloLens, HoloLens 2 and Windows Mixed Reality immersive headsets offer differen
 
 ### Calibration
 
-Hololens 2 is designed to provide the highest quality visual imagery and comfort for our customers. Eye tracking technology is used to improve the user experience of seeing and interacting with the virtual environment.  
-On HoloLens 2, you'll be prompted to calibrate your visuals during device setup. Users are asked to look at the set of fixation targets. This allows the device to adjust hologram rendering for the user to ensure accurately positioned holograms, comfortable 3D viewing experience and improved display quality. All adjustments happen on the fly without a need for manual tuning. By using the eyes as landmarks, the device is adjusted for every user and visuals are tuned as the headset shifts slightly throughout use. Eye position tracking is used internally by the system and developers don’t need to do anything to leverage this capability. This information is not available to developers. 
-On Hololens 2, performing calibration also ensures accurate eye gaze tracking for every user. Eye tracking enables applications to track where the user is looking in real time. This is the main capability developers can leverage to enable a whole new level of context, human understanding and interactions within the Holographic experience.  
-Calibration is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful. Calibration can always be deleted from the device in **Settings** > **Privacy** > **Eye Tracker**. 
+Hololens 2 is designed to provide the highest quality visual imagery and comfort for our customers. 
+Eye tracking technology is used to improve the user experience of seeing and interacting with the virtual environment.  
+
+On HoloLens 2, you'll be prompted to calibrate your visuals during device setup. 
+Users are asked to look at a set of fixation targets. 
+This allows the device to adjust the rendering of holograms to the user to ensure accurately positioned holograms, a comfortable 3D viewing experience and improved display quality. 
+All adjustments happen on-the-fly without the need for manual tuning. 
+By using the eyes as landmarks, the device is individually adjusted to every user, and visuals are tuned as the headset shifts slightly throughout use. 
+Eye position tracking is used internally by the system and developers don’t need to do anything to leverage this capability. 
+In fact, this information is not available to developers.
+Please refer to the [Eye Tracking APIs](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) to learn more about the type of data the eye tracking system provides to developers.
+
+On Hololens 2, performing the calibration also ensures accurate eye-gaze tracking for every user. 
+Eye tracking enables applications to track where the user is looking in real time. 
+This is the main capability developers can leverage to enable a whole new level of context, human understanding and interactions within the holographic experience.  
+
+The calibration data is stored locally on the device and is not associated with any account information. 
+There is no record of who has used the device without calibration. 
+This means that users will get prompted to calibrate when they use the device for the first time, as well as users who opted out of calibration previously or if the calibration was unsuccessful. 
+The calibration data can always be deleted from the device in **Settings** > **Privacy** > **Eye Tracker**. 
 
 ### Calibration failures
 
