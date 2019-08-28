@@ -100,7 +100,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 :::row:::
     :::column:::
-        <img alt="MRTK Logo" width="70" height="70" src="images/unity_logo.png">
+        <img alt="Unity Logo" width="70" height="70" src="images/unity_logo.png">
          ### [Learn Unity](https://learn.unity.com/)
         Learn how to create interactive experiences with Unity
     :::column-end:::
@@ -115,7 +115,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
         Mixed Reality Design Lab's sample apps shows how to use MRTK's building blocks to create beautiful mixed reality experiences.
     :::column-end:::
     :::column:::
-        <img alt="MRDL Logo" width="70" height="70" src="images/MicrosoftMaquette_logo_glow.png">
+        <img alt="Maquette Logo" width="70" height="70" src="images/MicrosoftMaquette_logo_glow.png">
          ### [Microsoft Maquette](https://www.maquette.ms/)
         Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.
     :::column-end:::
