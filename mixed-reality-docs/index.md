@@ -22,7 +22,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/Tile-Distribute.jpg" alt="Understand the basics of mixed reality image">
+                                                        <img src="images/Tile-New.jpg" alt="Understand the basics of mixed reality image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
