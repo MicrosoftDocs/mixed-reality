@@ -30,22 +30,22 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 :::row:::
     :::column:::
        ![Unity](images/unity_logo.png)
-        ### [Unity](development.md#Unity)
+        ### [Unity](development.md#Unity-1)
         The fastest path to building a mixed reality app is with Unity.
     :::column-end:::
     :::column:::
         ![Unreal](images/Unreal_logo.png)
-         ### [Unreal](development.md#Unreal)
+         ### [Unreal](development.md#Unreal-1)
         Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.
     :::column-end:::
     :::column:::
         ![DirectX](images/DirectX_logo.png)
-         ### [DirectX](development.md#DirectX)
+         ### [DirectX](development.md#DirectX-1)
         Create mixed reality applications by directly coding to the Windows Mixed Reality APIs using DirectX.
     :::column-end:::
     :::column:::
         ![WebVR](images/WebVR_logo.png)
-         ### [WebVR](development.md#WebVR)
+         ### [WebVR](development.md#WebVR-1)
         WebVR is an open specification that makes it possible to experience VR in your browser.
     :::column-end:::
 :::row-end:::
@@ -80,21 +80,7 @@ The HandInteractionExamples.unity example scene contains various types of intera
 ## Unreal
 
 
-### [Unity development overview](unity-development-overview.md)
-
-The fastest path to building a mixed reality app is with Unity. We recommend that you take time to explore the Unity tutorials. If you need assets, Unity has a comprehensive Asset Store. 
-
-### [Microsoft’s Mixed Reality Toolkit (MRTK) for Unity](mrtk-getting-started.md)
-
-The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform.
-
-### [Open source sample apps and step-by-step tutorials](tutorials.md)
-
-The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications. The tutorials are based on the Mixed Reality Toolkit 2.0 (MRTK 2.0).
-
-### [Example Unity scenes in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
-
-The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input
+Coming soon!
 
 <br>
 
@@ -103,21 +89,9 @@ The HandInteractionExamples.unity example scene contains various types of intera
 ## DirectX
 
 
-### [Unity development overview](unity-development-overview.md)
+### [DirectX development overview](directx-development-overview.md)
 
-The fastest path to building a mixed reality app is with Unity. We recommend that you take time to explore the Unity tutorials. If you need assets, Unity has a comprehensive Asset Store. 
-
-### [Microsoft’s Mixed Reality Toolkit (MRTK) for Unity](mrtk-getting-started.md)
-
-The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform.
-
-### [Open source sample apps and step-by-step tutorials](tutorials.md)
-
-The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications. The tutorials are based on the Mixed Reality Toolkit 2.0 (MRTK 2.0).
-
-### [Example Unity scenes in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
-
-The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input
+The fastest path to building a mixed reality app is with DirectX. 
 
 <br>
 
@@ -126,21 +100,11 @@ The HandInteractionExamples.unity example scene contains various types of intera
 ## WebVR
 
 
-### [Unity development overview](unity-development-overview.md)
+### [Babylon development overview](https://doc.babylonjs.com/)
 
-The fastest path to building a mixed reality app is with Unity. We recommend that you take time to explore the Unity tutorials. If you need assets, Unity has a comprehensive Asset Store. 
+The fastest path to building a mixed reality app is with Babylon. We recommend that you take time to explore the Babylon tutorials.
 
-### [Microsoft’s Mixed Reality Toolkit (MRTK) for Unity](mrtk-getting-started.md)
 
-The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform.
-
-### [Open source sample apps and step-by-step tutorials](tutorials.md)
-
-The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications. The tutorials are based on the Mixed Reality Toolkit 2.0 (MRTK 2.0).
-
-### [Example Unity scenes in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
-
-The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input
 
 <br>
 
