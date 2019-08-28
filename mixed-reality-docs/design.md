@@ -101,22 +101,22 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 :::row:::
     :::column:::
         <img alt="Unity Logo" width="70" height="70" src="images/unity_logo.png">
-         ### [Learn Unity](https://learn.unity.com/)
+         <a href="https://learn.unity.com/" target="">Learn Unity</a>
         Learn how to create interactive experiences with Unity
     :::column-end:::
         :::column:::
        <img alt="MRTK Logo" width="70" height="70" src="images/MRTK_Logo_Sq_Text.png">
-        ### [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="">Mixed Reality Toolkit</a>
         With Mixed Reality Toolkit's spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity
     :::column-end:::
     :::column:::
         <img alt="MRDL Logo" width="70" height="70" src="images/MRDL_Logo_Sq_Text.png">
-         ### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)
+         <a href="https://github.com/Microsoft/MRDL_Unity_PeriodicTable" target="">Mixed Reality Design Labs</a>
         Mixed Reality Design Lab's sample apps shows how to use MRTK's building blocks to create beautiful mixed reality experiences.
     :::column-end:::
     :::column:::
         <img alt="Maquette Logo" width="70" height="70" src="images/MicrosoftMaquette_logo_glow.png">
-         ### [Microsoft Maquette](https://www.maquette.ms/)
+         <a href="https://www.maquette.ms/" target="">Microsoft Maquette</a>
         Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.
     :::column-end:::
 :::row-end:::
