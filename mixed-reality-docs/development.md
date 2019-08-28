@@ -166,8 +166,8 @@ The HandInteractionExamples.unity example scene contains various types of intera
         Use the installation checklist to get the tools you need to build applications for Microsoft HoloLens and Windows Mixed Reality.
     :::column-end:::
     :::column:::
-        ![Come to a design or development event](images/icon-calendar.jpg)
-         ### [Come to a design or development event](sf-academy-events.md)
+        ![Come to an event](images/icon-calendar.jpg)
+         ### [Come to an event](sf-academy-events.md)
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
 :::row-end:::

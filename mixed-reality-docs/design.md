@@ -59,22 +59,27 @@ Designing content for mixed reality requires careful consideration of color, lig
 
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design.
+
 <br>
 
 ### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 One of the advantages of developing apps for Windows Mixed Reality is that there is a spectrum of experiences that the platform can support. From fully immersive, virtual environments, to light information layering over a user’s current environment, Windows Mixed Reality provides a robust set of tools to bring any experience to life.
+
 <br>
 
 ### [Choose an interaction model for your customer](interaction-fundamentals.md)
 The philosophy of simple, instinctual interactions is interwoven throughout the Mixed Reality platform. We've taken three steps to ensure that application designers and developers can provide their customers with easy and intuitive interactions.
+
 <br>
 
 ### [Hands and motion controllers](hands-and-tools.md)
 Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
+
 <br>
 
 ### [Voice commanding](voice-design.md)
 When using voice commands, gaze is typically used as the targeting mechaninism, whether as a pointer ("select") or to direct your command to an application ("see it, say it").
+
 <br>
 
 ### [Leveraging the user's eye-gaze](eye-tracking.md)
@@ -95,10 +100,12 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 ### [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 Get a better understanding of what defines mixed reality and how it’s being used.
+
 <br>
 
 ### [Sample apps](tutorials.md#open-source-sample-apps)
 The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects. 
+
 <br>
 
 ### [Microsoft Maquette](https://www.maquette.ms/)
@@ -126,8 +133,8 @@ Microsoft Maquette makes spatial prototyping easy, quick, and immersive.
         Use the installation checklist to get the tools you need to build applications for Microsoft HoloLens and Windows Mixed Reality.
     :::column-end:::
     :::column:::
-        ![Come to a design or development event](images/icon-calendar.jpg)
-         ### [Come to a design or development event](sf-academy-events.md)
+        ![Come to an event](images/icon-calendar.jpg)
+         ### [Come to an event](sf-academy-events.md)
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
