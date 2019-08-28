@@ -91,25 +91,11 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 ---
 
-## Prototyping options
+## Choose a prototyping option  
 
 *TBD Need help here – What’s the best way to transition into prototyping? Describe the options? Install the tools? What and why?*
 
 
-[![Mixed Reality Toolkit logo](images/mrtklogo-1000px.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-
-### [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-Get a better understanding of what defines mixed reality and how it’s being used.
-
-<br>
-
-### [Sample apps](tutorials.md#open-source-sample-apps)
-The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects. 
-
-<br>
-
-### [Microsoft Maquette](https://www.maquette.ms/)
-Microsoft Maquette makes spatial prototyping easy, quick, and immersive.
 
 
 :::row:::
