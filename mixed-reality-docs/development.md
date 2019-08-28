@@ -157,12 +157,12 @@ The HandInteractionExamples.unity example scene contains various types of intera
     :::column-end:::
     :::column:::
         ![Become a creator](images/icon-design.jpg)<br>
-         ### [Become a creator](quick-start-creating.md)
+         ### [Become a creator](design.md)
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
         ![Install the tools](images/icon-design.jpg)
-         ### [Install the tools](quick-start-creating.md)
+         ### [Install the tools](install-the-tools.md)
         Use the installation checklist to get the tools you need to build applications for Microsoft HoloLens and Windows Mixed Reality.
     :::column-end:::
     :::column:::

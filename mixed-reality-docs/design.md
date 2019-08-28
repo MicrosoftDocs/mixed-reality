@@ -19,22 +19,27 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 ### [Keep the user comfortable - (Comfort)](comfort.md)
 To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
+
 <br>
 
 ### [Consider how the user sees the world - (Holographic frame)](holographic-frame.md)
 Users see the world of mixed reality through a rectangular viewport powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them.
+
 <br>
 
 ### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
+
 <br>
 
 ### [Suggesting the scale of an object - (Scale)](scale.md)
 A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
+
 <br>
 
 ### [Clear and readable typography](typography.md)
 Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
+
 <br>
 
 ### [Color, light and materials](color,-light-and-materials.md)
@@ -46,10 +51,10 @@ Designing content for mixed reality requires careful consideration of color, lig
 ---
 
 
-## Interaction design factors to consider
-
 
 ![Interaction design factors](images/MRTK_BoundingBox_Main.png)
+
+## Interaction design factors to consider
 
 
 ### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
@@ -72,7 +77,7 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
 When using voice commands, gaze is typically used as the targeting mechaninism, whether as a pointer ("select") or to direct your command to an application ("see it, say it").
 <br>
 
-### [Eye-gaze](eye-tracking.md)
+### [Leveraging the user's eye-gaze](eye-tracking.md)
 HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at.
 
 
@@ -83,7 +88,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 ## Prototyping options
 
-*TBD Need help here – What’s the best way to transition in prototyping? Describe the options? Install the tools? What and why?*
+*TBD Need help here – What’s the best way to transition into prototyping? Describe the options? Install the tools? What and why?*
 
 
 [![Mixed Reality Toolkit logo](images/mrtklogo-1000px.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)

@@ -84,7 +84,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Jump in with Unity and MRTK</h3>
-                                                    <p>Build cross-platfrom MR experiences</p>
+                                                    <p>Build cross-platform MR experiences</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -101,9 +101,11 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 I’m brand new to mixed reality. I would like to learn about what it is and understand its capabilities.
 
-## What is mixed reality?
+
 
 ![mixed reality spectrum](images/RWtpZ1.jpeg)
+
+## What is mixed reality?
 
 
 ### [Mixed reality is a spectrum](mixed-reality.md)
@@ -119,9 +121,10 @@ HoloLens lets you create holograms, objects made of light and sound that appear 
 
 ---
 
-## What can you do with mixed reality?
 
 ![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
+
+## What can you do with mixed reality?
 
 ### [A new vision for work](https://dynamics.microsoft.com/en-us/mixed-reality/overview/)
 Internally at Microsoft we are creating mixed reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities: Remote Assist, Layout and Guides.
@@ -163,9 +166,10 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
 
 ---
 
-## What are the capabilities of HoloLens?
 
 ![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
+
+## What are the capabilities of HoloLens?
 
 ### [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com/en-us/hololens/hardware)
 
@@ -175,10 +179,11 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 
 ---
 
-## What are the core concepts of an experience?
 
 
 ![distance guide](images/text_in_unity_viewingangle.jpg)
+
+## What are the core concepts of an experience?
 
 ### [Keep the user comfortable - (Comfort)](comfort.md)
 To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
