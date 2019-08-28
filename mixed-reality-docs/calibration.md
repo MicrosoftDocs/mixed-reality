@@ -62,7 +62,7 @@ Please understand that this might result in worse hologram rendering quality and
 
 ### Launching the calibration app from Settings
 1. Go to the Settings page on your HoloLens 2
-    * Use the *"Start Gesture"* to bring up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
+    * Use the *"Start Gesture"* to bring up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu). Alternatively, you can also simply say *"go to start"*.
     * If **Settings** isn't pinned to Start, select **All Apps** to view all apps
     * Launch **Settings**
 2. Navigate to **System** > **Calibration** > **Eye Calibration** and select **Run eye calibration**
