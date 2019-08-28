@@ -1,4 +1,4 @@
-# What's new
+# What's new?
 ## [Latest news](news.md)
 ## [Get your app ready for HL2](mrtk-porting-guide.md)
 ## [Learn about Azure Services](azure-services.md)
@@ -18,7 +18,6 @@
 ### [Release notes - August 2016](release-notes-august-2016.md)
 ### [Release notes - May 2016](release-notes-may-2016.md)
 ### [Release notes - March 2016](release-notes-march-2016.md)
-
 # Discover
 ## [Get started with Mixed Reality](index.md)
 ## Case studies
@@ -30,10 +29,6 @@
 ### [Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)
 ### [Representing humans in mixed reality](case-study-representing-humans-in-mixed-reality.md)
 ### [Using spatial sound in RoboRaid](case-study-using-spatial-sound-in-roboraid.md)
-
-
-
-
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
@@ -83,11 +78,9 @@
 ### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 ### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 ### [Add custom home environments](add-custom-home-environments.md)
-
 ## Design tools and resources
 ### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
 ### [Asset creation process](asset-creation-process.md)
-
 # Develop
 ## [Learn the tools and architecture](development.md)
 ## Mixed reality cloud services
@@ -212,13 +205,11 @@
 ## [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 ### [Spectator view](spectator-view.md)
 ### [QR code tracking](qr-code-tracking.md)
-
 ## Camera and capture
 ### [Locatable camera](locatable-camera.md)
 ### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 ### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
 ### [Spectator view](spectator-view.md)
-
 ## App quality and performance
 ### [App quality criteria](app-quality-criteria.md)
 ### [Holographic rendering](rendering.md)
@@ -260,14 +251,12 @@
 ### [Locatable camera](locatable-camera.md)
 ### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 ### [HoloLens Research mode](research-mode.md)
-
 # Distribute
 ## [Implement 3D app launchers (UWP apps)](implementing-3d-app-launchers.md)
 ## [Implement 3D app launchers (Win32 apps)](implementing-3d-app-launchers-win32.md)
 ## [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 ## [In-app purchases](in-app-purchases.md)
 ## [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
-
 # Programs and events
 ## [Mixed Reality Dev Days](mr-dev-days.md)
 ### [Mixed Reality Dev Days Sessions](mr-dev-days-sessions.md)
@@ -276,6 +265,4 @@
 ## [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ## [ECCV 2018 HoloLens as a tool for computer vision research](eccv-2018.md)
 ## [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
-
-
 # [Contributing to this documentation](CONTRIBUTING.md)
