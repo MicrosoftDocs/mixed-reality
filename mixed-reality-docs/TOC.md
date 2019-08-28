@@ -288,16 +288,16 @@
 ## Remote and research tools
 ### [Using the Windows Device Portal](using-the-windows-device-portal.md)
 ### [Device portal API reference](device-portal-api-reference.md)
-## Holographic Remoting
+## Holographic remoting
 ### [Holographic Remoting Player](holographic-remoting-player.md)
 ### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
 ### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
 ### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
-### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)
-### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
+### [Secure connection with holographic remoting](holographic-remoting-secure-connection.md)
+### [Troubleshooting and limitations](holographic-remoting-troubleshooting.md)
 ### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-### Holographic Remoting for HoloLens 1
-#### [Add Holographic Remoting](add-holographic-remoting.md)
+### Holographic remoting for HoloLens (1st gen)
+#### [Add holographic remoting](add-holographic-remoting.md)
 ## Other
 ### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
