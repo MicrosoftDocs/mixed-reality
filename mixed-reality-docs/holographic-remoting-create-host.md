@@ -13,7 +13,7 @@ keywords: HoloLens, Remoting, Holographic Remoting
 # Writing a Holographic Remoting host app
 
 >[!IMPORTANT]
->This document describes the creation of a host application for HoloLens 2. Host application for **HoloLens 1** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
+>This document describes the creation of a host application for HoloLens 2. Host application for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
 
 By creating a Holographic Remoting host app remote content that is rendered on a remote machine can be streamed to HoloLens 2. This article describes how this can be achieved. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
@@ -41,7 +41,7 @@ The following steps are required to add the NuGet package to a project in Visual
 6. The next dialog that appears is the license agreement. Click on **I Accept** to accept the license agreement.
 
 >[!NOTE]
->Version **1.x.x** of the NuGet package is still available for developers who want to target HoloLens 1. For details see [Add Holographic Remoting (HoloLens 1)](add-holographic-remoting.md).
+>Version **1.x.x** of the NuGet package is still available for developers who want to target HoloLens 1. For details see [Add Holographic Remoting (HoloLens (1st gen))](add-holographic-remoting.md).
 
 ## Create the remote context
 
