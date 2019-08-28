@@ -41,7 +41,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/Tile-Create.png" alt="Start designing and prototyping image">
+                                                        <img src="images/Tile-Create.jpg" alt="Start designing and prototyping image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -60,7 +60,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/Tile-Develop.png" alt="Understanding the tools, languages and architecture image">
+                                                        <img src="images/Tile-Develop.jpg" alt="Understanding the tools, languages and architecture image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -79,7 +79,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/Tile-JumpIn.png" alt="Jump in with Unity and MRTK image">
+                                                        <img src="images/Tile-JumpIn.jpg" alt="Jump in with Unity and MRTK image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
