@@ -93,7 +93,6 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 ## Choose a prototyping option  
 
-*TBD Need help here – What’s the best way to transition into prototyping? Describe the options? Install the tools? What and why?*
 
 
 
