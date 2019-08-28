@@ -39,40 +39,42 @@ This means that users will get prompted to calibrate when they use the device fo
 The calibration data can always be deleted from the device in **Settings** > **Privacy** > **Eye Tracker**. 
 
 ### Calibration failures
-
 Calibration should work for most users, but there are cases in which the user might be unable to calibrate successfully.  
 Some examples of calibration failures are due to:
-- User getting distracted and not following the calibration targets during calibration experience
+- The user got distracted and didn't look at the calibration targets during the calibration experience
 - Dirty or scratched device visor or device visor not positioned properly 
-- Dirty or scratched glasses
 - Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, etc.)
-- More-pronounced makeup, some eyelash extensions
-- Occlusions of eye and/or device visor (hair, some thick eyeglass frames)
+- Dirty or scratched glasses
+- More pronounced makeup, some eyelash extensions
+- Occlusions of eye and/or device visor (hair, some thick eyeglasses frames)
 - Eye physiology, certain eye conditions and/or eye surgery (some narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries, etc.)
 
-If calibration is unsuccessful try one of these fixes: 
+If calibration is unsuccessful, try one of these fixes: 
 - Clean your device visor
 - Clean your glasses
 - Push your device visor all the way in
-- Make sure nothing is obstructing the sensors or your eyes (e.g. hair) 
+- Make sure nothing is obstructing the sensors or your eyes (e.g., hair) 
 - Make sure there is enough light in your room and that you are not under direct sunlight
 - Make sure you are carefully following the targets during calibration
 
-If you followed all guidelines and calibration is still failing, you can disable calibration prompt in **Settings** > **System** > **Calibration**. ‘When a new person uses this Hololens, automatically ask to run eye calibration’ should be tuned off. Please understand that this might result in worse hologram rendering quality and discomfort.
+If you followed all guidelines and the calibration is still failing, you can disable the calibration prompt in **Settings** > **System** > **Calibration**: *"When a new person uses this Hololens, automatically ask to run eye calibration"* should be turned off. 
+Please understand that this might result in worse hologram rendering quality and discomfort.
 
-### Launching the Calibration app from Settings
-1. Use Start Gesture to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu).
-2. Select **All Apps** to view all apps if **Settings** isn't pinned to Start.
-3. Launch **Settings**.
-4. Navigate to **System** > **Calibration** > **Eye Calibration** and select **Run Eye Calibration**.
+### Launching the calibration app from Settings
+1. Go to the Settings page on your HoloLens 2
+    * Use the *"Start Gesture"* to bring up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
+    * If **Settings** isn't pinned to Start, select **All Apps** to view all apps
+    * Launch **Settings**
+2. Navigate to **System** > **Calibration** > **Eye Calibration** and select **Run eye calibration**
+
 
 ### Calibration when sharing a device/session
+Hololens 2 can be shared between people without the need for each person to go through the device setup experience.
+Hololens 2 will prompt the user to calibrate visuals when the device is put on the head if the user is new to the device. 
+If the user has previously calibrated visuals on the device, the display will be seamlessly adjusted for quality and a comfortable viewing experience when the user puts the device on the head. 
 
-Hololens 2 can be shared between people, without a need for each person to go through device setup. Hololens 2 will prompt the user to calibrate visuals when the device is put on the head if the user is new to the device. If the user has previously calibrated visuals on the device, the display will be seamlessly adjusted for quality and a comfortable viewing experience when the user puts the device on the head. 
 
-
-## Hololens (v1)
-
+## HoloLens (v1)
 Calibrating your IPD (interpupillary distance) can improve the quality of your visuals.
 
 ### During setup
