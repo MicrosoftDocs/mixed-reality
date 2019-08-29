@@ -68,7 +68,7 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                                           </div>
                                           <div class="cardText">
                                               <h3>Creating an immersive experience in Fragments</h3>
-                                              <p>GFragments is an interactive crime drama for Microsoft Hololens, where you follow the clues to solve a mystery that takes place in your real-world space.</p>
+                                              <p>Fragments is an interactive crime drama for Microsoft Hololens, where you follow the clues to solve a mystery that takes place in your real-world space.</p>
                                               <i>August 2016<i>
                                           </div>
                                       </div>
@@ -83,7 +83,7 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/Holograms220b.jpg" alt="Expanding the spatial mapping capabilities of HoloLens icon">
+                                                  <img src="images/spatial-mapping-500px.png" alt="Expanding the spatial mapping capabilities of HoloLens icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
@@ -103,7 +103,7 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/takingtheleap.jpg" alt="Lessons from the Lowe's kitchen icon">
+                                                  <img src="images/500px-fix-a-broken-switch-with-hololens.jpg" alt="Lessons from the Lowe's kitchen icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
@@ -172,7 +172,7 @@ Before Microsoft HoloLens shipped, we asked our developer community what kind of
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/final-galaxy-500px.jpg" alt="Creating a galaxy in mixed reality icon">
+                                                  <img src="images/full-galaxy-500px.png" alt="Creating a galaxy in mixed reality icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
@@ -236,13 +236,13 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
                               </a>
                             </li> 
                                 <li>
-                             <a href="holograms-212.md" title="Creating impossible perspectives for HoloTour" data-linktype="absolute-path">
+                             <a href="case-study-creating-impossible-perspectives-for-holotour.md" title="Creating impossible perspectives for HoloTour" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/green-screen-gladiators-holotour-500px.jpg" alt="Creating impossible perspectives for HoloTour icon">
+                                                  <img src="images/rome-colosseum-overlay-500px.png" alt="Creating impossible perspectives for HoloTour icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
@@ -360,7 +360,7 @@ Read our high-level thoughts, and understand the principles we follow.
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/takingtheleap.jpg" alt="My first year on the HoloLens design team icon">
+                                                  <img src="images/MotionController.jpg" alt="My first year on the HoloLens design team icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
