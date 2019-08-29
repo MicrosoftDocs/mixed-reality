@@ -82,7 +82,7 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/spatial-mapping-500px.png" alt="Expanding the spatial mapping capabilities of HoloLens icon">
+                                                  <img src="images/away-from-camera-position-500px.png" alt="Expanding the spatial mapping capabilities of HoloLens icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
