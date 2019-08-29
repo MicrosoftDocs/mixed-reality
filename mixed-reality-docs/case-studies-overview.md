@@ -197,7 +197,7 @@ Before Microsoft HoloLens shipped, we asked our developer community what kind of
                                           </div>
                                           <div class="cardText">
                                               <h3>The Making of Galaxy Explorer for HoloLens 2</h3>
-                                              <p>Welcome to the journey of how we are updating Galaxy Explorer for HoloLens 2. Galaxy Explorer was originally developed as an open source application for HoloLens (1st gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we are updating it for the new and exciting capabilities of HoloLens 2..</p>
+                                              <p>Welcome to the journey of how we are updating Galaxy Explorer for HoloLens 2. Galaxy Explorer was originally developed as an open source application for HoloLens (1st gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we are updating it for the new and exciting capabilities of HoloLens 2.</p>
                                               <i>June 2019<i>
                                           </div>
                                       </div>
