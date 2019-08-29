@@ -2,7 +2,6 @@
 title: Hand Menu
 description: Best practices and recommendations for hand menus
 author: Noe Barragan & Hae Jin Lee
-ms.author: shentan
 ms.date: 08/27/2019
 ms.topic: article
 keywords: hand, menu, button, quick access, layout
@@ -26,11 +25,11 @@ These are 2 recommended placements based on our exploration.
 
 **Ulnar** In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The ulna is a long bone found in the forearm that stretches from the elbow to the smallest finger.
 
-![Ulnar side hand location](images/Ulnar-side-hand-menu.jpg)
+![Ulnar side hand location](images/UlnarSideHandMenu.jpg)
 
 **a. Ulnar inside palm:** This position is very reliable because hands do not overlap to each other which is critical for accurate hand detection and tracking.
 
-![Ulnar side hand location](images/Ulnar-above-hand-menu.jpg)
+![Ulnar side hand location](images/UlnarAboveHandMenu.jpg)
 
 **b. Ulnar above hand:**
 The location is comfortable for users because is not necessary to raise users’ arm too much to interact with hand menu. We recommend to place menus 13cm above palm and align buttons inside Ulnar palm
@@ -66,14 +65,14 @@ Complex menu placement – anything that requires extended interaction times sho
 
 **H. Suboptimal positions:** We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
 
-![Above Arm](images/Above-the-arm.gif)
+![Above Arm](images/AboveArm.gif)
 
 **Above the arm**
 1. Difficult maintain a good hand tracking
 2. Cause fatigue on users due to unnatural position
 3. Due to some positions hand overlap
 
-![Above Fingers](images/Above-Fingers.gif)
+![Above Fingers](images/AboveFingers.gif)
 
 **Above Fingers**
 1. Hand fatigue due to holding hand for long time
@@ -85,14 +84,14 @@ Complex menu placement – anything that requires extended interaction times sho
 1. Hand track issues due to overlapping hands
 2. Hand fatigue holding hands for long time to interact with menus
 
-![Top Fingertip](images/Top-fingertip.gif)
+![Top Fingertip](images/TopFingerTip.gif)
 
 **Top fingertip**
 1. Hand tracking issues
 2. Hand fatigue holding hand above a normal posture
 3. Issues pressing buttons with other fingers by accident due to limited space between fingers
 
-![Back of the Arm](images/Back-of-the-arm.gif)
+![Back of the Arm](images/BackOfTheArm.gif)
 
 **Back of the arm**
 1. Tigger home button by accident
