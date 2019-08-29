@@ -20,15 +20,8 @@
 ### [Release notes - March 2016](release-notes-march-2016.md)
 # Discover
 ## [Get started with Mixed Reality](index.md)
-## Case studies
-### Galaxy Explorer
-#### [Creating a galaxy in mixed reality for Hololens (1st gen)](case-study-creating-a-galaxy-in-mixed-reality.md)
-#### [Updating Galaxy Explorer for HoloLens 2](galaxy-explorer-update.md)
-### [AfterNow's process - envisioning, prototyping, building](case-study-afternows-process-envisioning,-prototyping,-building.md)
-### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
-### [Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)
-### [Representing humans in mixed reality](case-study-representing-humans-in-mixed-reality.md)
-### [Using spatial sound in RoboRaid](case-study-using-spatial-sound-in-roboraid.md)
+## [Case studies overview](case-studies-overvew.md)
+
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
