@@ -116,7 +116,7 @@ Below is an example of RadialView configuration to achieve 'lazy follow' tag-alo
 
 <img alt="MRTK Standard Shader" width="400" src="images/MRTK101/MRTK_SolverRadialView.png">
 
-<img alt="Interactable" width="800" src="images/MRTK101/MRTK_RadialView.gif">
+<img alt="Interactable" width="800" src="images/MRTK101/MRTK_RadialViewSolver.gif">
 
 - [Learn more about Solvers in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)
 
