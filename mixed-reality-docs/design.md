@@ -121,6 +121,85 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 :::row-end:::
 
 
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
+                            <li>
+                            <a href="https://learn.unity.com/" title="Understand the basics" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/unity_logo.png" alt="Unity logo">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Learn Unity</h3>
+                                                    <p>Learn how to create interactive experiences with Unity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                            <li>
+                              <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/MRTK_Logo_Sq_Text.png" alt="Mixed Reality Toolkit image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Mixed Reality Toolkit</h3>
+                                                    <p>SWith Mixed Reality Toolkit's spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                            <li>
+                              <a href="https://github.com/Microsoft/MRDL_Unity_PeriodicTable" title="Mixed Reality Design Labs" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/MRDL_Logo_Sq_Text.png" alt="Mixed Reality Design Labs image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Mixed Reality Design Labs</h3>
+                                                    <p>Mixed Reality Design Lab's sample apps shows how to use MRTK's building blocks to create beautiful mixed reality experiences.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                             <li>
+                              <a href="https://www.maquette.ms/" target="_blank" title="Microsoft Maquette" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/MicrosoftMaquette_logo_glow.png" alt="Microsoft Maquette image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Microsoft Maquette</h3>
+                                                    <p>Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+</ul>
+
 <br>
 
 ---
