@@ -23,29 +23,29 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 <br>
 
 ---
-
+https://github.com/MicrosoftDocs/mixed-reality/blob/master/mixed-reality-docs/development-hidden.md#unity
 
 ## What technology path are you interested in? 
 
 :::row:::
     :::column:::
        ![Unity](images/unity_logo.png)
-        ### [Unity](development.md#Unity-1)
+        ### [Unity](development-hidden.md#unity)
         The fastest path to building a mixed reality app is with Unity.
     :::column-end:::
     :::column:::
         ![Unreal](images/Unreal_logo.png)
-         ### [Unreal](development.md#Unreal-1)
+         ### [Unreal](development-hidden.md#unreal)
         Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.
     :::column-end:::
     :::column:::
         ![DirectX](images/DirectX_logo.png)
-         ### [DirectX](development.md#DirectX-1)
+         ### [DirectX](development-hidden.md#directx)
         Create mixed reality applications by directly coding to the Windows Mixed Reality APIs using DirectX.
     :::column-end:::
     :::column:::
         ![WebVR](images/WebVR_logo.png)
-         ### [WebVR](development.md#WebVR-1)
+         ### [WebVR](development-hidden.md#webvr)
         WebVR is an open specification that makes it possible to experience VR in your browser.
     :::column-end:::
 :::row-end:::
@@ -116,12 +116,12 @@ The fastest path to building a mixed reality app is with Babylon. We recommend t
 :::row:::
     :::column:::
        ![Understand the basics](images/icon-lightbulb.jpg)
-        ### [Understand the basics](index.md#understand-the-basics)
+        ### [Understand the basics](index-hidden.md#understand-the-basics)
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
         ![Become a creator](images/icon-design.jpg)<br>
-         ### [Become a creator](design.md)
+         ### [Become a creator](design-hidden.md)
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
