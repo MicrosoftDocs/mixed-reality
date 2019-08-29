@@ -25,11 +25,11 @@ These are 2 recommended placements based on our exploration.
 
 **Ulnar** In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The ulna is a long bone found in the forearm that stretches from the elbow to the smallest finger.
 
-![Ulnar side hand location](images/UlnarSideHandMenu.jpg)
+![Ulnar side hand location](images/UlnarSideHandMenu.gif)
 
 **a. Ulnar inside palm:** This position is very reliable because hands do not overlap to each other which is critical for accurate hand detection and tracking.
 
-![Ulnar side hand location](images/UlnarAboveHandMenu.jpg)
+![Ulnar side hand location](images/UlnarAboveHandMenu.gif)
 
 **b. Ulnar above hand:**
 The location is comfortable for users because is not necessary to raise users’ arm too much to interact with hand menu. We recommend to place menus 13cm above palm and align buttons inside Ulnar palm
@@ -78,7 +78,7 @@ Complex menu placement – anything that requires extended interaction times sho
 1. Hand fatigue due to holding hand for long time
 2. Hand tracking issues on index and middle finger
 
-![Above Center Palm](images/palmCenter.gif)
+![Above Center Palm](images/handCenter.gif)
 
 **Above-center palm**
 1. Hand track issues due to overlapping hands
