@@ -13,7 +13,6 @@ keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios
 
 Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
 
-<br>
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
@@ -123,7 +122,7 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/fluffy-clouds-700px.jpg" alt="Scaling Datascape across devices with different performance icon">
+                                                  <img src="images/cloud-steps-1-4-700px.jpg" alt="Scaling Datascape across devices with different performance icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
@@ -158,11 +157,12 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                             </li> 
 </ul>
 
+<br>
+
 ## Galaxy Explorer
 
 Before Microsoft HoloLens shipped, we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device. More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called Galaxy Explorer.
 
-<br>
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
@@ -207,12 +207,12 @@ Before Microsoft HoloLens shipped, we asked our developer community what kind of
                             </li>
 </ul>
 
+<br>
 
 ## HoloTour
 
 HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. As the designers, artists, producers, audio designers, and developers working on this project found out, creating a convincingly real 3D rendering of a well-known location takes a unique blend of creative and technological wizardry.
 
-<br>
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                                 <li>
@@ -277,11 +277,12 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
                             </li>
 </ul>
 
+<br>
+
 ## RoboRaid
 
 In this mixed reality first-person shooter, use gaze and gesture to target enemies, and dodge incoming fire using natural movements. Spatial mapping turns each room into a unique game level, while spatial sound lets you use the entire room to play—even the spaces behind you. 
 
-<br>
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
@@ -326,11 +327,13 @@ In this mixed reality first-person shooter, use gaze and gesture to target enemi
                             </li> 
 </ul>
 
+
+<br>
+
 ## Design and human experience
 
 Read our high-level thoughts, and understand the principles we follow.
 
-<br>
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                                 <li>
@@ -340,7 +343,7 @@ Read our high-level thoughts, and understand the principles we follow.
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/wide-out-james-turrell.jpg" alt="Representing humans in mixed reality icon">
+                                                  <img src="images/bang-ai-weiwie.jpg" alt="Representing humans in mixed reality icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
