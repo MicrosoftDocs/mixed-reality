@@ -16,7 +16,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                            <a href="index.md#understand-the-basics" title="Understand the basics" data-linktype="absolute-path">
+                            <a href="index-hidden.md#understand-the-basics" title="Understand the basics" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -35,7 +35,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </a>
                             </li>
                             <li>
-                              <a href="design.md" title="Start designing and prototyping" data-linktype="absolute-path">
+                              <a href="design-hidden.md" title="Start designing and prototyping" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -54,7 +54,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                     </a>
                             </li>
                             <li>
-                              <a href="development.md" title="Understanding the tools, languages and architecture" data-linktype="absolute-path">
+                              <a href="development-hidden.md" title="Understanding the tools, languages and architecture" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -220,7 +220,7 @@ A key to displaying content that looks realistic in holographic form is to mimic
     :::column-end:::
     :::column:::
         ![Become a creator](images/icon-design.jpg)<br>
-         ### [Become a creator](design.md)
+         ### [Become a creator](design-hidden.md)
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
@@ -230,7 +230,7 @@ A key to displaying content that looks realistic in holographic form is to mimic
     :::column-end:::
     :::column:::
         ![Start developing](images/icon-developer.jpg)<br>
-         ### [Start developing](development.md)
+         ### [Start developing](development-hidden.md)
         Choose a development path based on your skill level, work style or platform interest.
     :::column-end:::
 :::row-end:::
