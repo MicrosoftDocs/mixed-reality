@@ -9,7 +9,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios
 ---
 
-# Tutorials and sample apps
+# Case studies
 
 Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
 
