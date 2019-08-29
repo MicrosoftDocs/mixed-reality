@@ -95,46 +95,20 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 
 
-
-
-:::row:::
-    :::column:::
-        <img alt="Unity Logo" width="70" height="70" src="images/unity_logo.png">
-         <a href="https://learn.unity.com/" target="">Learn Unity</a>
-        Learn how to create interactive experiences with Unity
-    :::column-end:::
-        :::column:::
-       <img alt="MRTK Logo" width="70" height="70" src="images/MRTK_Logo_Sq_Text.png">
-        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="">Mixed Reality Toolkit</a>
-        With Mixed Reality Toolkit's spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity
-    :::column-end:::
-    :::column:::
-        <img alt="MRDL Logo" width="70" height="70" src="images/MRDL_Logo_Sq_Text.png">
-         <a href="https://github.com/Microsoft/MRDL_Unity_PeriodicTable" target="">Mixed Reality Design Labs</a>
-        Mixed Reality Design Lab's sample apps shows how to use MRTK's building blocks to create beautiful mixed reality experiences.
-    :::column-end:::
-    :::column:::
-        <img alt="Maquette Logo" width="70" height="70" src="images/MicrosoftMaquette_logo_glow.png">
-         <a href="https://www.maquette.ms/" target="">Microsoft Maquette</a>
-        Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.
-    :::column-end:::
-:::row-end:::
-
-
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                            <a href="https://learn.unity.com/" title="Understand the basics" data-linktype="absolute-path">
+                            <a href="https://learn.unity.com/" title="Learn Unity" target="_blank" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/unity_logo.png" alt="Unity logo">
+                                                        <img src="images/unity-logo-large.jpg" alt="Unity logo">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Learn Unity</h3>
-                                                    <p>Learn how to create interactive experiences with Unity</p>
+                                                    <p>Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -142,7 +116,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                     </a>
                             </li>
                             <li>
-                              <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit" data-linktype="absolute-path">
+                              <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit" target="_blank" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -153,7 +127,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Mixed Reality Toolkit</h3>
-                                                    <p>SWith Mixed Reality Toolkit's spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity</p>
+                                                    <p>With Mixed Reality Toolkit's spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -161,7 +135,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                     </a>
                             </li>
                             <li>
-                              <a href="https://github.com/Microsoft/MRDL_Unity_PeriodicTable" title="Mixed Reality Design Labs" data-linktype="absolute-path">
+                              <a href="https://github.com/Microsoft/MRDL_Unity_PeriodicTable" title="Mixed Reality Design Labs" target="_blank" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -180,7 +154,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                     </a>
                             </li>
                              <li>
-                              <a href="https://www.maquette.ms/" target="_blank" title="Microsoft Maquette" data-linktype="absolute-path">
+                              <a href="https://www.maquette.ms/" target="_blank" title="Microsoft Maquette" target="_blank" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
