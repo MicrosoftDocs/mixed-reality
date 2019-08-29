@@ -41,17 +41,22 @@ To make an object grabbable, assign these two scripts: ManipulationHandler.cs an
 
 <img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 
+<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_GrabMove.gif">
+
 
 ## How to resize an object?
 ManipulationHandler.cs supports two-handed scale/rotation. This works with various input types such as HoloLens 2's articulated hand input, HoloLens 1's gaze + gesture input, and Windows Mixed Reality immersive headset's motion controller input.
 
 - [Learn more about Manipulation Handler in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html)
 
+<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.gif">
 
 ## How to move or rotate an object with precision?
 Assign BoundingBox.cs to an object to use Bounding Box which is the interface for scaling and rotating an object. By default, it shows HoloLens 1 style blue handles and wires. To use HoloLens 2 style proximity-based animated handles, you need to assign prefabs and materials. Please refer to Bounding Box documentation and the BoundingBoxExamples.unity scene for the configuration details.
 
 <img alt="BoundingBox.cs assigned to an object" width="800" src="images/MRTK101/MRTK_BoundingBox.png">
+
+<img alt="BoundingBox.cs assigned to an object" width="800" src="images/MRTK101/MRTK_BoundingBox.gif">
 
 
 - [Learn more about Bounding Box in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
@@ -69,6 +74,9 @@ Assign Interactable.cs to an object. In the inspector, create a new theme. Using
 
 <img alt="PointerHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_Interactable.png">
 
+<img alt="Interactable" width="800" src="images/MRTK101/MRTK_Interactable.gif">
+
+
 Interactable provides various types of themes including the shader theme which allows you to control properties of the shader per interaction state.
 
 - [Learn more about Interactable in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
@@ -81,6 +89,9 @@ Create a new material and select the Shader 'Mixed Reality Toolkit > Standard'. 
 <br/><br/>
 <img alt="MRTK Standard Shader" width="800" src="images/MRTK101/MRTK_Shader1.png">
 
+<img alt="MRTK Standard Shader" width="800" src="images/MRTK101/MRTK_Shader.gif">
+
+
 - [Learn more about MRTK Standard Shader in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
 
 ## How to add audio feedback?
@@ -90,6 +101,8 @@ Add AudioSource to an object. Then, in the scripts that exposes input events(e.g
 
 ## How to use HoloLens 2 style button prefabs?
 MRTK provides various types of HoloLens 2's shell(OS) style buttons. It provides sophisticated visual feedbacks such as proximity light, compressing box, and a ripple effect on the button surface.
+
+<img alt="Interactable" width="800" src="images/MRTK101/MRTK_Button.gif">
 
 Simply drag and drop one of the HoloLens 2 style pressable button prefab into your scene. The prefab uses Interactable.cs which is introduced above. You can use exposed events such as OnClick() in the Interactable to trigger actions.
 
@@ -103,12 +116,17 @@ Below is an example of RadialView configuration to achieve 'lazy follow' tag-alo
 
 <img alt="MRTK Standard Shader" width="400" src="images/MRTK101/MRTK_SolverRadialView.png">
 
+<img alt="Interactable" width="800" src="images/MRTK101/MRTK_RadialView.gif">
+
 - [Learn more about Solvers in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)
 
 ## How to make an object face you?
 Assign Billboard.cs script to an object. It will always face you, regardless of your position. You can specify the pivot axis option.
 
 <img alt="Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.png">
+
+<img alt="Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.gif">
+
 
 Ready to create amazing experiences for mixed reality? Visit the pages below and learn more about MRTK and mixed reality.
 
