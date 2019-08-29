@@ -45,7 +45,7 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
     :::column-end:::
     :::column:::
         ![WebVR](images/WebVR_logo.png)
-         ### [WebVR](development.md#Wwebvr)
+         ### [WebVR](development.md#webvr)
         WebVR is an open specification that makes it possible to experience VR in your browser.
     :::column-end:::
 :::row-end:::
@@ -120,7 +120,7 @@ The fastest path to building a mixed reality app is with Babylon. We recommend t
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        ![Become a creator](images/icon-design.jpg)<br>
+        ![Become a creator](images/icon-design.jpg)
          ### [Become a creator](design.md)
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
