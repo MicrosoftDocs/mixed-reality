@@ -10,14 +10,8 @@
 ### [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
 ### [ECCV 2018 HoloLens as a tool for computer vision research](eccv-2018.md)
 ### [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
-## Mixed reality release notes
-### [Current release notes](release-notes-may-2019.md)
-### [Release notes - October 2018](release-notes-october-2018.md)
-### [Release notes - April 2018](release-notes-april-2018.md)
-### [Release notes - October 2017](release-notes-october-2017.md)
-### [Release notes - August 2016](release-notes-august-2016.md)
-### [Release notes - May 2016](release-notes-may-2016.md)
-### [Release notes - March 2016](release-notes-march-2016.md)
+## [Current mixed reality release notes](release-notes-may-2019.md)
+
 # Discover
 ## [Get started with Mixed Reality](index.md)
 ## [Case studies overview](case-studies-overvew.md)
