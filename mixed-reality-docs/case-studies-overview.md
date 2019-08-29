@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Case studies overview
-description: Provides code samples and tutorials on mixed reality development.
+description: Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
 author: grbury 
 ms.author: grbury
 ms.date: 08/24/2019
