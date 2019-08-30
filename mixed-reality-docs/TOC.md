@@ -14,7 +14,7 @@
 
 # Discover
 ## [Get started with Mixed Reality](index.md)
-## [Case studies overview](case-studies-overview.md)
+## [Case studies gallery](case-studies-overview.md)
 
 # Design
 ## [Start designing and prototyping](design.md)
