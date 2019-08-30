@@ -118,7 +118,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/text_in_unity_viewingangle.jpg" alt="Object collection icon">
+                                                        <img src="images/640px-objectcollection-hero-640px.jpg" alt="Object collection icon">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -136,7 +136,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/640px-progressbar.jpg" alt="Displaying progress icon">
+                                                  <img src="images/hololens2_loader.gif" alt="Displaying progress icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
