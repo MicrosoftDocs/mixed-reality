@@ -14,6 +14,7 @@
 
 # Discover
 ## [Get started with Mixed Reality](index.md)
+## [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Case studies gallery](case-studies-overview.md)
 
 # Design
@@ -21,46 +22,50 @@
 ## [About this design guidance](about-this-design-guidance.md)
 ## Choose an interaction model
 ### [Instinctual interactions](Interaction-fundamentals.md)
-### [Hands and motion controllers](hands-and-tools.md)
+### Hands and motion controllers model
+#### [Hands and motion controllers](hands-and-tools.md)
 #### [Direct manipulation with hands](direct-manipulation.md)
 #### [Point and commit with hands](point-and-commit.md)
 #### [Motion controllers](Motion-controllers.md)
-### [Hands-free](hands-free.md)
+### Hands-free model
+#### [Hands-free](hands-free.md)
 #### [Voice commanding](Voice-design.md)
 #### [Head-gaze and dwell](Gaze-and-dwell.md)
-### [Head-gaze and commit](gaze-and-commit.md)
-### Supplemental interactions
-#### [Eye-gaze](eye-tracking.md)
-## Building blocks 
+### [Head-gaze and commit model](gaze-and-commit.md)
+### [Eye-gaze](eye-tracking.md)
+## Core building blocks 
 ### [Gaze](gaze.md)
 ### [Gestures](gestures.md)
+### [Comfort](comfort.md)
+### [Holographic frame](holographic-frame.md)
 ### [Motion controllers](motion-controllers.md)
 ### [Voice input](voice-input.md)
+### [Spatial mapping design](spatial-mapping-design.md)
 ### [Spatial mapping](spatial-mapping.md)
 ### [Scene understanding](scene-understanding.md)
-### [Spatial sound](spatial-sound.md)
 ### [Coordinate systems](coordinate-systems.md)
 ### [Spatial anchors](spatial-anchors.md)
-## Style
-### [Color, light and materials](color,-light-and-materials.md)
-### [Spatial sound design](spatial-sound-design.md)
-### [Typography](typography.md)
-### [Scale](scale.md)
-### [Case study - Spatial sound design for HoloTour](case-study-spatial-sound-design-for-holotour.md)
-## App patterns
-### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
-### [Room scan visualization](room-scan-visualization.md)
-### [Cursors](cursors.md)
-### [Billboarding and tag-along](billboarding-and-tag-along.md)
-### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
-### [App model](app-model.md)
-### [App views](app-views.md)
-## Controls
-### [Text in Unity](text-in-unity.md)
-### [Interactable object](interactable-object.md)
-### [Object collection](object-collection.md)
-### [Displaying progress](progress.md)
-### [Bounding box and App bar](app-bar-and-bounding-box.md)
+## Learn about UX patterns
+### [UX patterns overiew](app-patterns-landingpage.md)
+### App patterns
+#### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+#### [Room scan visualization](room-scan-visualization.md)
+#### [Cursors](cursors.md)
+#### [Billboarding and tag-along](billboarding-and-tag-along.md)
+#### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
+#### [App model](app-model.md)
+#### [App views](app-views.md)
+### Style
+#### [Color, light and materials](color,-light-and-materials.md)
+#### [Typography](typography.md)
+#### [Scale](scale.md)
+#### [Spatial sound design](spatial-sound-design.md)
+#### [Spatial sound](spatial-sound.md)
+### Controls
+#### [Interactable object](interactable-object.md)
+#### [Object collection](object-collection.md)
+#### [Displaying progress](progress.md)
+#### [Bounding box and App bar](app-bar-and-bounding-box.md)
 ## Designing for the mixed reality home
 ### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 ### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
@@ -78,6 +83,7 @@
 #### [Accelerate development with Mixed Reality Toolkit v2](mrtk-getting-started.md)
 #### [Configure Unity Project for Windows Mixed Reality](Configure-Unity-Project.md)
 #### [Recommended settings for Unity](recommended-settings-for-unity.md)
+#### [Text in Unity](text-in-unity.md)
 #### [Unity Play Mode](unity-play-mode.md)
 #### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
 #### [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
@@ -102,7 +108,7 @@
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
-### Legacy Documents (Unity 2017.4/HTK/MRTK v1)
+### Legacy documents (Unity 2017.4/HTK/MRTK v1)
 ## Unreal
 ### [Unreal for HoloLens 2 early access](https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access)
 ## DirectX
