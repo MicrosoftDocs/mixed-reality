@@ -47,14 +47,6 @@
 ### [Spatial anchors](spatial-anchors.md)
 ## Learn about UX patterns
 ### [UX patterns overiew](app-patterns-landingpage.md)
-### App patterns
-#### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
-#### [Room scan visualization](room-scan-visualization.md)
-#### [Cursors](cursors.md)
-#### [Billboarding and tag-along](billboarding-and-tag-along.md)
-#### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
-#### [App model](app-model.md)
-#### [App views](app-views.md)
 ### Style
 #### [Color, light and materials](color,-light-and-materials.md)
 #### [Typography](typography.md)
@@ -66,6 +58,14 @@
 #### [Object collection](object-collection.md)
 #### [Displaying progress](progress.md)
 #### [Bounding box and App bar](app-bar-and-bounding-box.md)
+### App patterns
+#### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+#### [Room scan visualization](room-scan-visualization.md)
+#### [Cursors](cursors.md)
+#### [Billboarding and tag-along](billboarding-and-tag-along.md)
+#### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
+#### [App model](app-model.md)
+#### [App views](app-views.md)
 ## Designing for the mixed reality home
 ### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 ### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
