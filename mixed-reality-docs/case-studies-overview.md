@@ -197,7 +197,7 @@ Before Microsoft HoloLens shipped, we asked our developer community what kind of
                                           </div>
                                           <div class="cardText">
                                               <h3>The Making of Galaxy Explorer for HoloLens 2</h3>
-                                              <p>Welcome to the journey of how we are updating Galaxy Explorer for HoloLens 2. Galaxy Explorer was originally developed as an open source application for HoloLens (1st gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we are updating it for the new and exciting capabilities of HoloLens 2.</p>
+                                              <p>Welcome to the journey of how we are updating Galaxy Explorer for HoloLens 2. Galaxy Explorer was originally developed as an open source application for HoloLens (1st gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we are updating it for the new capabilities of HoloLens 2.</p>
                                               <i>June 2019<i>
                                           </div>
                                       </div>
@@ -247,7 +247,7 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
                                           </div>
                                           <div class="cardText">
                                               <h3>Creating impossible perspectives for HoloTour</h3>
-                                              <p>We wanted your experiences in HoloTour for Microsoft HoloLens to be unforgettable. In addition to the traditional tourist stops, we planned out some "impossible perspectives".</p>
+                                              <p>We wanted your experiences in HoloTour for HoloLens to be unforgettable. In addition to the traditional tourist stops, we planned out some "impossible perspectives".</p>
                                               <i>August 2016<i>
                                           </div>
                                       </div>
@@ -267,7 +267,7 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Capturing and creating content for HoloTour</h3>
-                                                    <p>HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. As the designers, artists, producers, audio designers, and developers working on this project found out, creating a convincingly real 3D rendering of a well-known location takes a unique blend of creative and technological wizardry.</p>
+                                                    <p>HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. As the designers and developers working on this project found out, creating a convincingly real 3D rendering of a well-known location takes a unique blend of creative and technological wizardry.</p>
                                                     <i>August 2016<i>
                                                 </div>
                                             </div>
