@@ -46,7 +46,7 @@
 ### [Coordinate systems](coordinate-systems.md)
 ### [Spatial anchors](spatial-anchors.md)
 ## Learn about UX patterns
-### [UX patterns overiew](app-patterns-landingpage.md)
+### [UX patterns overview](app-patterns-landingpage.md)
 ### Style
 #### [Color, light and materials](color,-light-and-materials.md)
 #### [Typography](typography.md)
