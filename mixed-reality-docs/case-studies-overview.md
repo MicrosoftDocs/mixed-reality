@@ -115,6 +115,26 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                               </div>
                              </a>
                             </li> 
+                           <li>
+                            <a href="case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md" title="Using the stabilization plane to reduce holographic turbulence" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/holotour-stabilization-plane-500px.jpg" alt="Using the stabilization plane to reduce holographic turbulence icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>Using the stabilization plane to reduce holographic turbulence</h3>
+                                              <p>Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.</p>
+                                              <i>April 2017<i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li> 
                                 <li>
                                    <a href="case-study-scaling-datascape-across-devices-with-different-performance.md" title="Scaling Datascape across devices with different performance" data-linktype="absolute-path">
                               <div class="cardSize">
@@ -135,26 +155,6 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                               </div>
                               </a>
                             </li>  
-                            <li>
-                                   <a href="case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md" title="Using the stabilization plane to reduce holographic turbulence" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/holotour-stabilization-plane-500px.jpg" alt="Using the stabilization plane to reduce holographic turbulence icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Using the stabilization plane to reduce holographic turbulence</h3>
-                                              <p>Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.</p>
-                                              <i>April 2017<i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li> 
 </ul>
 
 <br>
@@ -267,7 +267,7 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Capturing and creating content for HoloTour</h3>
-                                                    <p>HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. As the designers and developers working on this project found out, creating a convincingly real 3D rendering of a well-known location takes a unique blend of creative and technological wizardry.</p>
+                                                    <p>HoloTour provides immersive 3D personal tours of iconic locations around the world. As the team working on this project found out, creating a convincingly real 3D rendering of a well-known location takes a blend of creative and technological wizardry.</p>
                                                     <i>August 2016<i>
                                                 </div>
                                             </div>
