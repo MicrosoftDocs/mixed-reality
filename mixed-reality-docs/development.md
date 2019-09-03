@@ -27,28 +27,6 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 
 ## What technology path are you interested in? 
 
-:::row:::
-    :::column:::
-       ![Unity](images/unity_logo.png)
-        ### [Unity](development.md#unity)
-        The fastest path to building a mixed reality app is with Unity.
-    :::column-end:::
-    :::column:::
-        ![Unreal](images/Unreal_logo.png)
-         ### [Unreal](development.md#unreal)
-        Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.
-    :::column-end:::
-    :::column:::
-        ![DirectX](images/DirectX_logo.png)
-         ### [DirectX](development.md#directx)
-        Create mixed reality applications by directly coding to the Windows Mixed Reality APIs using DirectX.
-    :::column-end:::
-    :::column:::
-        ![WebVR](images/WebVR_logo.png)
-         ### [WebVR](development.md#webvr)
-        WebVR is an open specification that makes it possible to experience VR in your browser.
-    :::column-end:::
-:::row-end:::
 
 <ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
