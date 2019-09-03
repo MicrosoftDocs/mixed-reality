@@ -50,6 +50,84 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
     :::column-end:::
 :::row-end:::
 
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
+                            <li>
+                            <a href="development.md#unity" title="Unity" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/unity_logo.png" alt="Unity logo">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Unity</h3>
+                                                    <p>The fastest path to building a mixed reality app is with Unity.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                            <li>
+                              <a href="development.md#unreal" title="Unreal" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/Unreal_logo.png" alt="Unreal image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Unreal</h3>
+                                                    <p>Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                            <li>
+                              <a href="development.md#directx" title="DirectX" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/DirectX_logo.png" alt="DirectX image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">DirectX</h3>
+                                                    <p>Create mixed reality applications by directly coding to the Windows Mixed Reality APIs using DirectX.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                             <li>
+                              <a href="development.md#webvr" target="_blank" title="WebVR" target="_blank" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/WebVR_logo.png" alt="WebVR image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">WebVR</h3>
+                                                    <p>WebVR is an open specification that makes it possible to experience VR in your browser.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+</ul>
 
 <br>
 

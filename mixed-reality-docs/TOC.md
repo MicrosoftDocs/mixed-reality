@@ -11,6 +11,7 @@
 ### [ECCV 2018 HoloLens as a tool for computer vision research](eccv-2018.md)
 ### [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
 ## [Current mixed reality release notes](release-notes-may-2019.md)
+## [Contributing to this documentation](CONTRIBUTING.md)
 
 # Discover
 ## [Get started with Mixed Reality](index.md)
