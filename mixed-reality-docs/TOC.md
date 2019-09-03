@@ -72,8 +72,12 @@
 ### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 ### [Add custom home environments](add-custom-home-environments.md)
 ## Design tools and resources
-### [HoloSketch](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
+### [Learn Unity](https://learn.unity.com/)
+### [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)
+### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)
+### [Microsoft Maquette](https://www.maquette.ms/" target="_blank")
 ### [Asset creation process](asset-creation-process.md)
+
 # Develop
 ## [Learn the tools and architecture](development.md)
 ## Mixed reality cloud services
