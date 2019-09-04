@@ -78,7 +78,7 @@ Other applications in this area can include:
 
 ## Available eye tracking data
 Before going into detail about the specific design guidelines for eye-gaze interaction, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) provides. 
-Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (60 Hz)_.
+Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (30 Hz)_.
 For more detailed information about how to access eye tracking data, please refer to our developer guides on using [eye-gaze in DirectX](gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
 
 The predicted eye-gaze is approximately within 1.5 degrees in visual angle around the actual target (see the illustration below). 
