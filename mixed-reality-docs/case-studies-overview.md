@@ -102,7 +102,7 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/500px-fix-a-broken-switch-with-hololens.jpg" alt="Lessons from the Lowe's kitchen icon">
+                                                  <img src="images/lowes.jpg" alt="Lessons from the Lowe's kitchen icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
