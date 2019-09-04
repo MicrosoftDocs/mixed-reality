@@ -1,5 +1,5 @@
 ---
-layout: OverviewPage
+layout: LandingPage
 title: Case studies overview
 description: Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
 author: grbury 
