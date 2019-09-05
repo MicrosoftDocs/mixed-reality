@@ -1,4 +1,5 @@
 ---
+layout: LandingPage
 title: Get started with Mixed Reality
 description: I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.
 author: grbury 

@@ -15,8 +15,12 @@
 
 # Discover
 ## [Get started with Mixed Reality](index.md)
-## [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
+## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Case studies gallery](case-studies-overview.md)
+## Immersive headsets
+### [Immersive headset hardware details](immersive-headset-hardware-details.md)
+### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
+### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 
 # Design
 ## [Start designing and prototyping](design.md)
@@ -49,6 +53,7 @@
 ## Learn about UX patterns
 ### [UX patterns overview](app-patterns-landingpage.md)
 ### Style
+#### [Cursors](cursors.md)
 #### [Color, light and materials](color,-light-and-materials.md)
 #### [Typography](typography.md)
 #### [Scale](scale.md)
@@ -62,21 +67,18 @@
 ### App patterns
 #### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 #### [Room scan visualization](room-scan-visualization.md)
-#### [Cursors](cursors.md)
 #### [Billboarding and tag-along](billboarding-and-tag-along.md)
 #### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
 #### [App model](app-model.md)
 #### [App views](app-views.md)
-## Designing for the mixed reality home
-### [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
-### [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
-### [Add custom home environments](add-custom-home-environments.md)
+
 ## Design tools and resources
 ### [Learn Unity](https://learn.unity.com/)
 ### [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 ### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)
 ### [Microsoft Maquette](https://www.maquette.ms)
 ### [Asset creation process](asset-creation-process.md)
+### [Design your own immersive environments](add-custom-home-environments.md)
 
 # Develop
 ## [Learn the tools and architecture](development.md)
@@ -224,12 +226,6 @@
 ### [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
 ### [HoloLens emulator archive](hololens-emulator-archive.md)
 ### [Perception simulation](perception-simulation.md)
-## Finishing your app
-### [Implement 3D app launchers (UWP apps)](implementing-3d-app-launchers.md)
-### [Implement 3D app launchers (Win32 apps)](implementing-3d-app-launchers-win32.md)
-### [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
-### [In-app purchases](in-app-purchases.md)
-### [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 ## Remote and research tools
 ### [Using the Windows Device Portal](using-the-windows-device-portal.md)
 ### [Device portal API reference](device-portal-api-reference.md)
@@ -250,6 +246,8 @@
 ### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 ### [HoloLens Research mode](research-mode.md)
 # Distribute
+## [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
+## [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 ## [Implement 3D app launchers (UWP apps)](implementing-3d-app-launchers.md)
 ## [Implement 3D app launchers (Win32 apps)](implementing-3d-app-launchers-win32.md)
 ## [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)

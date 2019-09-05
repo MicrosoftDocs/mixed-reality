@@ -164,7 +164,26 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                   </div>
                               </div>
                               </a>
-                            </li>      
+                            </li>
+                            <li>
+                            <a href="cursors.md" title="Cursors" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/gazetargeting-highlighting-640px.jpg" alt="Cursors icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>Cursors</h3>
+                                              <p>A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where HoloLens believes their current focus is at that time.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>     
 </ul>
 
 <br>
@@ -209,25 +228,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                         </div>
                                     </div>
                                </a>
-                            </li>
-                            <li>
-                            <a href="cursors.md" title="Cursors" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/gazetargeting-highlighting-640px.jpg" alt="Cursors icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Cursors</h3>
-                                              <p>A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where HoloLens believes their current focus is at that time.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
                             </li>          
                               <li>
                               <a href="billboarding-and-tag-along.md" title="Billboarding and tag-along" data-linktype="absolute-path">
