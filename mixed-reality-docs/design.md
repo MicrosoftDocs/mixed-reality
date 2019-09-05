@@ -57,7 +57,7 @@ Designing content for mixed reality requires careful consideration of color, lig
 ## Interaction design factors to consider
 
 
-### [Expanding the design process for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
+### [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design.
 
 <br>
