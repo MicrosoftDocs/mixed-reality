@@ -68,7 +68,7 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
                                     </a>
                             </li>
                             <li>
-                              <a href="development.md#directx" title="DirectX" data-linktype="absolute-path">
+                              <a href="development.md#native" title="Native" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -78,7 +78,7 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">DirectX</h3>
+                                                    <h3 class="x-hidden-focus">Native</h3>
                                                     <p>Create mixed reality applications by directly coding to the Windows Mixed Reality APIs using DirectX.</p>
                                                 </div>
                                             </div>
