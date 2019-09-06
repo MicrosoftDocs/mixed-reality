@@ -377,17 +377,17 @@ Read our high-level thoughts, and understand the principles we follow.
                               </a>
                             </li> 
                          <li>
-                              <a href="case-study-expanding-the-design-process-for-mixed-reality.md" title="Expanding the design process for mixed reality" data-linktype="absolute-path">
+                              <a href="case-study-expanding-the-design-process-for-mixed-reality.md" title="Expand your design process" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/academyteam1000.png" alt="Expanding the design process for mixed reality icon">
+                                                  <img src="images/academyteam1000.png" alt="Expand your design process icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
-                                              <h3>Expanding the design process for mixed reality</h3>
+                                              <h3>Expand your design process</h3>
                                               <p>Adding techniques to your design process to help your team think spatially and more easily envision mixed reality experiences.</p>
                                               <i>April 2018<i>
                                           </div>
