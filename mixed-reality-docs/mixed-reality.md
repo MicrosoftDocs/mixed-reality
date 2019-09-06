@@ -37,11 +37,17 @@ Most mobile phones on the market today have little to no environmental understan
 * Starting with the physical world, a digital representation of another person--an avatar--shows the location where they were standing when leaving notes. In other words, experiences that represent asynchronous collaboration at different points in time.
 * Starting with a digital world, physical boundaries from the physical world, such as walls and furniture, appear digitally within the experience to help users avoid physical objects.
 
-![The mixed reality spectrum](images/MixedRealitySpectrum.jpg)
+![The mixed reality spectrum](images/MixedRealitySpectrum.jpg)<br>
+
+*The mixed reality specturm*
 
 Most augmented reality and virtual reality offerings available today represent a very small part of this spectrum. They are, however, subsets of the larger mixed reality spectrum. Windows 10 is built with the entire spectrum in mind, and allows blending digital representations of people, places, and things with the real world.
 
-![Device types in the mixed reality spectrum](images/MixedRealitySpectrum-devices.jpg)
+
+
+
+## Devices and experiences
+
 
 There are two main types of devices that deliver Windows Mixed Reality experiences:
 1. **Holographic devices.** These are characterized by the device's ability to place digital content in the real world as if it were really there.
@@ -61,9 +67,11 @@ There are two main types of devices that deliver Windows Mixed Reality experienc
 
 Note, whether a device is connected to or tethered to a separate PC (via USB cable or Wi-Fi) or self-contained (untethered) does not reflect whether a device is holographic or immersive. Certainly, features that improve mobility lead to better experiences, and both holographic and immersive devices could be tethered or untethered.
 
-## Devices and experiences
 
 Technological advancement is what has enabled mixed reality experiences. There are no devices today that can run experiences across the entire spectrum. However, Windows 10 provides a common mixed reality platform for both device manufacturers and developers. Devices today can support a specific range within the mixed reality spectrum. Over time, new devices will expand that range. In the future, holographic devices will become more immersive, and immersive devices will become more holographic.
+
+![Device types in the mixed reality spectrum](images/MixedRealitySpectrum-devices.jpg)<br>
+*Where devices exist on the mixed reality spectrum*
 
 Often, it is best to think what type of experience an application or game developer wants to create. The experiences will typically target a specific point or part on the spectrum. Then, developers should consider the capabilities of devices they want to target. For example, experiences that rely on the physical world will run best on HoloLens.
 * **Towards the left (near physical reality).** Users remain present in their physical environment and are never made to believe they have left that environment.
