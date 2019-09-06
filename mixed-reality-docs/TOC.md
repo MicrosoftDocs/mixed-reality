@@ -141,8 +141,6 @@
 ##### [MR and Azure 311: Microsoft Graph](mr-azure-311.md)
 ##### [MR and Azure 312: Bot integration](mr-azure-312.md)
 ##### [MR and Azure 313: IoT Hub Service](mr-azure-313.md)
-## WebVR
-### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -174,9 +172,10 @@
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
-### Legacy documents (Unity 2017.4/HTK/MRTK v1)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
+## WebVR
+### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## Native
 ### [Native development overview](directx-development-overview.md)
 ### Getting started
