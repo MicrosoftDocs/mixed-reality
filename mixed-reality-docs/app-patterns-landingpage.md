@@ -75,7 +75,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                       <div class="card">
                                           <div class="cardImageOuter">
                                               <div class="cardImage">
-                                                  <img src="images/holograms220b.jpg" alt="Spatial sound icon">
+                                                  <img src="images/SpatialAudio.gif" alt="Spatial sound icon">
                                               </div>
                                           </div>
                                           <div class="cardText">
