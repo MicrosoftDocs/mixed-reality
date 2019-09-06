@@ -32,14 +32,20 @@ Since mixed reality blends both physical and digital worlds, these two realities
 
 >[!VIDEO https://www.youtube.com/embed/_xpI0JosYUk]
 
+<br>
+
 Most mobile phones on the market today have little to no environmental understanding capabilities. Thus the experiences they offer cannot mix between physical and digital realities. The experiences that overlay graphics on video streams of the physical world are *augmented reality*. The experiences that occlude your view to present a digital experience are *virtual reality*. As you can see, the experiences enabled between these two extremes is *mixed reality*:
 * Starting with the physical world, placing a digital object, such as a hologram, as if it was really there.
 * Starting with the physical world, a digital representation of another person--an avatar--shows the location where they were standing when leaving notes. In other words, experiences that represent asynchronous collaboration at different points in time.
 * Starting with a digital world, physical boundaries from the physical world, such as walls and furniture, appear digitally within the experience to help users avoid physical objects.
 
-![The mixed reality spectrum](images/MixedRealitySpectrum.jpg)<br>
 
+<br>
+
+![The mixed reality spectrum](images/MixedRealitySpectrum.jpg)<br>
 *The mixed reality specturm*
+
+<br>
 
 Most augmented reality and virtual reality offerings available today represent a very small part of this spectrum. They are, however, subsets of the larger mixed reality spectrum. Windows 10 is built with the entire spectrum in mind, and allows blending digital representations of people, places, and things with the real world.
 
@@ -70,6 +76,8 @@ Note, whether a device is connected to or tethered to a separate PC (via USB cab
 
 Technological advancement is what has enabled mixed reality experiences. There are no devices today that can run experiences across the entire spectrum. However, Windows 10 provides a common mixed reality platform for both device manufacturers and developers. Devices today can support a specific range within the mixed reality spectrum. Over time, new devices will expand that range. In the future, holographic devices will become more immersive, and immersive devices will become more holographic.
 
+<br>
+
 ![Device types in the mixed reality spectrum](images/MixedRealitySpectrum-devices.jpg)<br>
 *Where devices exist on the mixed reality spectrum*
 
@@ -80,6 +88,9 @@ Often, it is best to think what type of experience an application or game develo
 
 
 ## See also
-* [API Reference: Windows.Perception](https://docs.microsoft.com/uwp/api/Windows.Perception)
-* [API Reference: Windows.Perception.Spatial](https://docs.microsoft.com/uwp/api/Windows.Perception.Spatial)
-* [API Reference: Windows.Perception.Spatial.Surfaces](https://docs.microsoft.com/uwp/api/Windows.Perception.Spatial.Surfaces)
+
+* [What is a hologram?](hologram.md)
+* [Understand the basics of mixed reality](index.md#understand-the-basics)
+* [Start designing and prototyping](design.md)
+* [Learn the tools and architecture](development.md)
+
