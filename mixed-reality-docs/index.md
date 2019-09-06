@@ -101,7 +101,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
         Understand the basics
     :::column-end:::
     :::column:::
-       [![I'm a designer](images/Tile-Create.jpg)](design.md)<br>
+       [![I'm a designer](images/Tile-Create.jpg)](design.md)
         **[I'm a designer]**(design.md)
         Start designing and prototyping
     :::column-end:::
