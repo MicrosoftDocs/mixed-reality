@@ -32,24 +32,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                     </div>
                                </a>
                             </li>
-                               <li>
-                                  <a href="typography.md" title="Typography" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/text_in_unity_viewingangle.jpg" alt="Typography icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Typography</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
                             <li>
                             <a href="scale.md" title="Scale" data-linktype="absolute-path">
                               <div class="cardSize">
@@ -86,6 +68,24 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                               </div>
                               </a>
                             </li>      
+                            <li>
+                                  <a href="typography.md" title="Typography" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/text_in_unity_viewingangle.jpg" alt="Typography icon">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Typography</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </a>
+                            </li>
 </ul>
 
 <br>
