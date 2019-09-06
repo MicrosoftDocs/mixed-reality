@@ -126,8 +126,8 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Mixed Reality Toolkit</h3>
-                                                    <p>With Mixed Reality Toolkit's spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity</p>
+                                                    <h3 class="x-hidden-focus">Mixed Reality Toolkit (MRTK)</h3>
+                                                    <p>With spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -146,7 +146,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Mixed Reality Design Labs</h3>
-                                                    <p>Mixed Reality Design Lab's sample apps shows how to use MRTK's building blocks to create beautiful mixed reality experiences.</p>
+                                                    <p>Mixed Reality Design Lab's sample apps show you how to use MRTK's building blocks to create beautiful mixed reality experiences.</p>
                                                 </div>
                                             </div>
                                         </div>
