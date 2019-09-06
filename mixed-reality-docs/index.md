@@ -147,7 +147,7 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
        [![Bentley](images/Bentley-Synchro1.jpg)](https://binged.it/31AR3kP)
     :::column-end:::
     :::column span="2":::
-        ### [Bentley's digital construction software that enables viewing complex construction projects](https://binged.it/31AR3kP)
+        ### [View complex construction projects with Bentley's digital construction software](https://binged.it/31AR3kP)
         Synchro is digital construction software that enables viewing complex construction projects in mixed reality. Their 4D digital construction platform combines traditional Gantt chart CPM scheduling with integrated 4D visualization capabilities in real time.
     :::column-end:::
 :::row-end:::
@@ -159,7 +159,7 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
        [![PTC's Vuforia Studio](images/PTC-Vuforia-Studio1.jpg)](https://binged.it/31ARrjh)
     :::column-end:::
     :::column span="2":::
-        ### [PTC's Vuforia Studio is an mixed reality authoring solution](https://binged.it/31ARrjh)
+        ### [PTC's Vuforia Studio authoring solution promotes workforce productivity and safety](https://binged.it/31ARrjh)
         Vuforia Studio's efficient mixed reality authoring solution promotes workforce productivity and safety by delivering information when and where workers need it most: in the real-world context of their daily work environment.
     :::column-end:::
 :::row-end:::
@@ -171,7 +171,7 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
        [![Philips-Azurion](images/Philips-Azurion1.jpg)](https://binged.it/31B1RiR)
     :::column-end:::
     :::column span="2":::
-        ### [Bentley's digital construction software that enables viewing complex construction projects](https://binged.it/31B1RiR)
+        ### [Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures](https://binged.it/31B1RiR)
         Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.
     :::column-end:::
 :::row-end:::
