@@ -135,36 +135,29 @@ The HandInteractionExamples.unity example scene contains various types of intera
 
 ## Unreal
 
+### [Unreal development overview](unreal-development-overview.md)
 
-Coming soon!
-
-<br>
-
----
-
-## DirectX
-
-
-### [DirectX development overview](directx-development-overview.md)
-
-The fastest path to building a mixed reality app is with DirectX. 
+The fastest path to building a mixed reality app is with Unreal.
 
 <br>
 
 ---
 
-## WebVR
+## Native
 
 
-### [Babylon development overview](https://doc.babylonjs.com/)
+### [Native development overview](directx-development-overview.md)
 
-The fastest path to building a mixed reality app is with Babylon. We recommend that you take time to explore the Babylon tutorials.
+The fastest path to building a native mixed reality app.
 
+### [DirectX UWP app templates for mixed reality](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
 
+All of the essentials you need to start writing a mixed reality app using DirectX
 
 <br>
 
 ---
+
 
 ## What would you like to do next?
 
