@@ -43,6 +43,8 @@ Since mixed reality blends both physical and digital worlds, these two realities
 
 <br>
 
+### Augmented vs. virtual reality
+
 Most mobile phones on the market today have little to no environmental understanding capabilities. Thus the experiences they offer cannot mix between physical and digital realities. The experiences that overlay graphics on video streams of the physical world are *augmented reality*. The experiences that occlude your view to present a digital experience are *virtual reality*. As you can see, the experiences enabled between these two extremes is *mixed reality*:
 * Starting with the physical world, placing a digital object, such as a hologram, as if it was really there.
 * Starting with the physical world, a digital representation of another person--an avatar--shows the location where they were standing when leaving notes. In other words, experiences that represent asynchronous collaboration at different points in time.
