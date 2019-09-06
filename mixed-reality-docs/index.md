@@ -46,7 +46,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">I'm a designer</h3>
-                                                    <p>Start creating and prototyping</p>
+                                                    <p>Start designing and prototyping</p>
                                                 </div>
                                             </div>
                                         </div>
