@@ -130,24 +130,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                </a>
                             </li>
                             <li>
-                            <a href="progress.md" title="Displaying progress" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/hololens2_loader.gif" alt="Displaying progress icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Displaying progress</h3>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>          
-                              <li>
                               <a href="app-bar-and-bounding-box.md" title="Bounding box and App bar" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
@@ -165,6 +147,24 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                               </div>
                               </a>
                             </li>
+                            <li>
+                            <a href="progress.md" title="Displaying progress" data-linktype="absolute-path">
+                              <div class="cardSize">
+                                  <div class="cardPadding">
+                                      <div class="card">
+                                          <div class="cardImageOuter">
+                                              <div class="cardImage">
+                                                  <img src="images/hololens2_loader.gif" alt="Displaying progress icon">
+                                              </div>
+                                          </div>
+                                          <div class="cardText">
+                                              <h3>Displaying progress</h3>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              </a>
+                            </li>          
                             <li>
                             <a href="cursors.md" title="Cursors" data-linktype="absolute-path">
                               <div class="cardSize">
