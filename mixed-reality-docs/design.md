@@ -103,7 +103,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/unity-logo-large.jpg" alt="Unity logo">
+                                                        <img src="images/unity_logo.png" alt="Unity logo">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -122,7 +122,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/MRTK_Logo_Sq_Text.png" alt="Mixed Reality Toolkit image">
+                                                        <img src="images/MRTK-small_logo.png" alt="Mixed Reality Toolkit image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -141,7 +141,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/MRDL_Logo_Sq_Text.png" alt="Mixed Reality Design Labs image">
+                                                        <img src="images/MRDL_logo.png" alt="Mixed Reality Design Labs image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -160,7 +160,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/MicrosoftMaquette_logo_glow.png" alt="Microsoft Maquette image">
+                                                        <img src="images/Maquette_logo.png" alt="Microsoft Maquette image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
