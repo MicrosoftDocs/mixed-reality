@@ -84,7 +84,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
                                                 </div>
                                                 <div class="cardText">
                                                     <h3 class="x-hidden-focus">Jump in with Unity and MRTK</h3>
-                                                    <p>Optimize Unity for HoloLens development</p>
+                                                    <p>Optimize Unity for MR development</p>
                                                 </div>
                                             </div>
                                         </div>
