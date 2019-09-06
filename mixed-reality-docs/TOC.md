@@ -16,7 +16,7 @@
 # Discover
 ## [Get started with Mixed Reality](index.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-## [Case studies gallery](case-studies-overview.md)
+## [Case study gallery](case-studies-overview.md)
 ## Immersive headsets
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)

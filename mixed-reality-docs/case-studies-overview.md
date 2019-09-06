@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Case studies overview
+title: Case study overview
 description: Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
 author: grbury 
 ms.author: grbury
@@ -9,7 +9,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios
 ---
 
-# Case studies gallery
+# Case study gallery
 
 Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
 
