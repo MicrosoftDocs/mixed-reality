@@ -97,12 +97,12 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 :::row:::
     :::column:::
        [![I'm new to mixed reality](images/Tile-New.jpg)](index.md#understand-the-basics)
-        **[I'm new to mixed reality]**(index.md#understand-the-basics)<br>
+        **[I'm new to mixed reality](index.md#understand-the-basics)**<br>
         Understand the basics
     :::column-end:::
     :::column:::
        [![I'm a designer](images/Tile-Create.jpg)](design.md)
-        **[I'm a designer]**(design.md)
+        **[I'm a designer](design.md)**<br>
         Start designing and prototyping
     :::column-end:::
     :::column:::
