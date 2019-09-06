@@ -97,22 +97,22 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 :::row:::
     :::column:::
        [![I'm new to mixed reality](images/Tile-New.jpg)](index.md#understand-the-basics)
-        ### [I'm new to mixed reality](index.md#understand-the-basics)
+        ## [I'm new to mixed reality](index.md#understand-the-basics)
         Understand the basics
     :::column-end:::
-        :::column:::
+    :::column:::
        [![I'm a designer](images/Tile-Create.jpg)](design.md)
-        ### [I'm a designer](design.md)
+        ## [I'm a designer](design.md)
         Understand the basics
     :::column-end:::
-        :::column:::
+    :::column:::
        [![I'm a developer](images/Tile-Develop.jpg)](development.md)
-        ### [I'm a developer](development.md)
+        ## [I'm a developer](development.md)
         Learn the tools and architecture
     :::column-end:::
-        :::column:::
+    :::column:::
        [![Jump in with Unity and MRTK](images/Tile-New.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-        ### [Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
+        ## [Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
         Optimize Unity for MR development
     :::column-end:::
 :::row-end:::
