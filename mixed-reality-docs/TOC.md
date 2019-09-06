@@ -182,6 +182,7 @@
 #### [Creating a native holographic project](creating-a-holographic-directx-project.md)
 #### [Getting a HolographicSpace](getting-a-holographicspace.md)
 #### [Native rendering](rendering-in-directx.md)
+### [OpenXR](openxr.md)
 ## Platform capabilities and APIs
 ### Core building blocks
 #### [Coordinate systems](coordinate-systems-in-directx.md)
@@ -194,7 +195,6 @@
 #### [Keyboard, mouse, and controller input](keyboard,-mouse,-and-controller-input-in-directx.md)
 #### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
 #### [QR code tracking](qr-code-tracking.md)
-### [OpenXR](openxr.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 #### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 #### [Spectator view](spectator-view.md)
