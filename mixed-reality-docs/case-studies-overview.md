@@ -159,6 +159,8 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
 
 <br>
 
+---
+
 ## Galaxy Explorer
 
 Before Microsoft HoloLens shipped, we asked our developer community what kind of app they'd like to see an experienced internal team build for the new device. More than 5000 ideas were shared, and after a 24-hour Twitter poll, the winner was an idea called Galaxy Explorer.
@@ -208,6 +210,8 @@ Before Microsoft HoloLens shipped, we asked our developer community what kind of
 </ul>
 
 <br>
+
+---
 
 ## HoloTour
 
@@ -279,6 +283,8 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
 
 <br>
 
+---
+
 ## RoboRaid
 
 In this mixed reality first-person shooter, use gaze and gesture to target enemies, and dodge incoming fire using natural movements. Spatial mapping turns each room into a unique game level, while spatial sound lets you use the entire room to play—even the spaces behind you. 
@@ -329,6 +335,8 @@ In this mixed reality first-person shooter, use gaze and gesture to target enemi
 
 
 <br>
+
+---
 
 ## Design and human experience
 
