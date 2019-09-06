@@ -74,7 +74,7 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img src="images/DirectX_logo.png" alt="DirectX image">
+                                                        <img src="images/VisualStudio-small_logo.png" alt="Native image">
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
