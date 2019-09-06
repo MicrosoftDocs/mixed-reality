@@ -177,7 +177,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                           </div>
                                           <div class="cardText">
                                               <h3>Cursors</h3>
-                                              <p>A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where HoloLens believes their current focus is at that time.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -203,7 +202,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Types of mixed reality apps</h3>
-                                                    <p>One of the advantages of developing apps for Windows Mixed Reality is that there is a spectrum of experiences that the platform can support from fully immersive, virtual environments, to light information layering over a user’s current environment.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -222,7 +220,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Room scan visualization</h3>
-                                                    <p>Applications that require spatial mapping data rely on the device to automatically collect this data over time and across sessions as the user explores their environment with the device active.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,7 +238,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                           </div>
                                           <div class="cardText">
                                               <h3>Billboarding and tag-along</h3>
-                                              <p>Billboarding is a behavioral concept that can be applied to objects in mixed reality. Objects with billboarding always orient themselves to face the user.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -260,7 +256,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
                                           </div>
                                           <div class="cardText">
                                               <h3>Updating 2D UWP apps for mixed reality</h3>
-                                              <p>This article outlines updating your existing 2D Universal Windows Platform app to run on HoloLens and Windows Mixed Reality immersive headsets.</p>
                                           </div>
                                       </div>
                                   </div>
