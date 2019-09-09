@@ -23,67 +23,25 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         ### [Scale](scale.md)
     :::column-end:::
     :::column:::
+        ![space](images/spatialaudio-bar.jpg)
        [![Spatial sound](images/SpatialAudio.gif)](spatial-sound.md)
         ### [Spatial sound](spatial-sound.md)
     :::column-end:::
 :::row-end:::
 
+:::row:::
+    :::column:::
+       [![Typography](images/text_in_unity_viewingangle.jpg)](typography.md)
+        ### [Typography](typography.md)
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                                    <a href="color,-light-and-materials.md" title="Color, light and materials" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/640px-fragments.jpg" alt="Color, light and materials icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Color, light and materials</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                            <li>
-                            <a href="scale.md" title="Scale" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/volvo-cars-microsoft-hololens-experience01-640px.jpg" alt="Scale icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Scale</h3>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>          
-                              <li>
-                              <a href="spatial-sound.md" title="Spatial sound" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/SpatialAudio.gif" alt="Spatial sound icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Spatial sound</h3>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>      
+
+<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">      
                             <li>
                                   <a href="typography.md" title="Typography" data-linktype="absolute-path">
                                     <div class="cardSize">
