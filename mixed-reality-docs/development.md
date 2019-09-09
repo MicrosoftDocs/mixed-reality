@@ -40,12 +40,12 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
         Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.	
     :::column-end:::
     :::column:::	
-        [![WebVR](images/WebVR_logo.png)](development.md#webvr)	
+        [![WebVR](images/WebVR_logo.png)](development.md#webvr)<br>
         **[WebVR](development.md#webvr)**<br>
         WebVR is an open specification that makes it possible to experience VR in your browser.	
     :::column-end:::		
     :::column:::	
-        [![Native](images/VisualStudio-small_logo.png)](development.md#native)
+        [![Native](images/VisualStudio-small_logo.png)](development.md#native)<br>
         **[Native](development.md#native)**<br>	
         Create mixed reality apps by directly coding to the Windows Mixed Reality APIs.	
     :::column-end:::	
