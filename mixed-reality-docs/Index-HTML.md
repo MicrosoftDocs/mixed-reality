@@ -14,32 +14,85 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 ## Choose your track
 
+<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
+                            <li>
+                            <a href="index.md#understand-the-basics" title="Understand the basics" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/Tile-New.jpg" alt="Understand the basics of mixed reality image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">I'm new to mixed reality</h3>
+                                                    <p>Understand the basics</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                            <li>
+                              <a href="design.md" title="Start designing and prototyping" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/Tile-Create.jpg" alt="Start designing and prototyping image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">I'm a designer</h3>
+                                                    <p>Start designing and prototyping</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                            <li>
+                              <a href="development.md" title="Understanding the tools, languages and architecture" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/Tile-Develop.jpg" alt="Understanding the tools, languages and architecture image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">I'm a developer</h3>
+                                                    <p>Learn the tools and architecture</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+                             <li>
+                              <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html" target="_blank" title="Jump in with Unity and MRTK" data-linktype="absolute-path">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img src="images/Tile-JumpIn.jpg" alt="Jump in with Unity and MRTK image">
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3 class="x-hidden-focus">Jump in with Unity and MRTK</h3>
+                                                    <p>Optimize Unity for MR development</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </a>
+                            </li>
+</ul>
 
-:::row:::
-    :::column:::
-       [![I'm new to mixed reality](images/Tile-New.jpg)](index.md#understand-the-basics)
-        **[I'm new to mixed reality](index.md#understand-the-basics)**<br>
-        Understand the basics
-    :::column-end:::
-    :::column:::
-       [![I'm a designer](images/Tile-Create.jpg)](design.md)
-        **[I'm a designer](design.md)**<br>
-        Start designing and prototyping
-    :::column-end:::
-    :::column:::
-       [![I'm a developer](images/Tile-Develop.jpg)](development.md)
-        **[I'm a developer](development.md)**<br>
-        Learn the tools and architecture
-    :::column-end:::
-    :::column:::
-       [![Jump in with Unity and MRTK](images/Tile-New.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-        **[Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)**<br>
-        Optimize Unity for MR
-    :::column-end:::
-:::row-end:::
-
-
-<br>
 
 ---
 
@@ -177,32 +230,26 @@ A key to displaying content that looks realistic in holographic form is to mimic
 
 :::row:::
     :::column:::
-       [![Try it out](images/icon-hololensuser.jpg)](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
-        **[Try out mixed reality](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
+       ![Try it out](images/icon-hololensuser.jpg)
+        ### [Try out mixed reality](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
     :::column-end:::
     :::column:::
-        [![Become a creator](images/icon-design.jpg)](design.md)<br>
-        **[Become a creator](design.md)**<br>
+        ![Become a creator](images/icon-design.jpg)
+         ### [Become a creator](design.md)
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
-        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)<br>
-        **[Come to an event](sf-academy-events.md)**<br>
+        ![Come to an event](images/icon-calendar.jpg)
+         ### [Come to an event](sf-academy-events.md)
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        [![Start developing](images/icon-developer.jpg)](development.md)<br>
-        **[Start developing](development.md)**<br>
+        ![Start developing](images/icon-developer.jpg)
+         ### [Start developing](development.md)
         Choose a development path based on your skill level, work style or platform interest.
     :::column-end:::
 :::row-end:::
-
-
-<br>
-
-<br>
-
 
 
 >[!IMPORTANT]

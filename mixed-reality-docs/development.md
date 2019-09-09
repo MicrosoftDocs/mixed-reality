@@ -5,7 +5,7 @@ description: Mixed reality developer documentation for HoloLens and immersive he
 author: grbury
 ms.author: grbury
 ms.date: 08/27/2019
-ms.topic: article
+ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, directx
 ---
@@ -28,84 +28,28 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 ## What technology path are you interested in? 
 
 
-<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                            <a href="development.md#unity" title="Unity" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/unity_logo.png" alt="Unity logo">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Unity</h3>
-                                                    <p>The fastest path to building a mixed reality app is with Unity.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                            <li>
-                              <a href="development.md#unreal" title="Unreal" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/Unreal_logo.png" alt="Unreal image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Unreal</h3>
-                                                    <p>Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                            <li>
-                              <a href="development.md#native" title="Native" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/VisualStudio-small_logo.png" alt="Native image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Native</h3>
-                                                    <p>Create mixed reality applications by directly coding to the Windows Mixed Reality APIs using DirectX.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                             <li>
-                              <a href="development.md#webvr" target="_blank" title="WebVR" target="_blank" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/WebVR_logo.png" alt="WebVR image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">WebVR</h3>
-                                                    <p>WebVR is an open specification that makes it possible to experience VR in your browser.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-</ul>
+:::row:::	
+    :::column:::	
+       [![Unity](images/unity_logo.png)](development.md#unity)
+        ### [Unity](development.md#unity)	
+        The fastest path to building a mixed reality app is with Unity.	
+    :::column-end:::	
+    :::column:::	
+        [![Unreal](images/Unreal_logo.png)](development.md#unreal)
+         ### [Unreal](development.md#unreal)	
+        Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.	
+    :::column-end:::
+    :::column:::	
+        [![WebVR](images/WebVR_logo.png)](development.md#webvr)	
+         ### [WebVR](development.md#webvr)	
+        WebVR is an open specification that makes it possible to experience VR in your browser.	
+    :::column-end:::		
+    :::column:::	
+        [![Native](images/VisualStudio-small_logo.png)](development.md#native)
+         ### [Native](development.md#native)	
+        Create mixed reality applications by directly coding to the Windows Mixed Reality APIs using DirectX.	
+    :::column-end:::	
+:::row-end:::
 
 <br>
 
@@ -136,8 +80,16 @@ The HandInteractionExamples.unity example scene contains various types of intera
 ## Unreal
 
 ### [Unreal development overview](unreal-development-overview.md)
-
 The fastest path to building a mixed reality app is with Unreal.
+
+<br>
+
+---
+
+## WebVR	
+
+### [Babylon development overview](https://doc.babylonjs.com/)	
+The fastest path to building a mixed reality app is with Babylon. We recommend that you take time to explore the Babylon tutorials.
 
 <br>
 
@@ -147,11 +99,9 @@ The fastest path to building a mixed reality app is with Unreal.
 
 
 ### [Native development overview](directx-development-overview.md)
-
 The fastest path to building a native mixed reality app.
 
 ### [DirectX UWP app templates for mixed reality](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
-
 All of the essentials you need to start writing a mixed reality app using DirectX
 
 <br>
@@ -164,22 +114,22 @@ All of the essentials you need to start writing a mixed reality app using Direct
 
 :::row:::
     :::column:::
-       ![Understand the basics](images/icon-lightbulb.jpg)
+       [![Understand the basics](images/icon-lightbulb.jpg)](index.md#understand-the-basics)
         ### [Understand the basics](index.md#understand-the-basics)
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        ![Become a creator](images/icon-design.jpg)
+        [![Become a creator](images/icon-design.jpg)](design.md)
          ### [Become a creator](design.md)
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
-        ![Install the tools](images/icon-design.jpg)
+        [![Install the tools](images/icon-design.jpg)](install-the-tools.md)
          ### [Install the tools](install-the-tools.md)
         Use the installation checklist to get the tools you need to build applications for Microsoft HoloLens and Windows Mixed Reality.
     :::column-end:::
     :::column:::
-        ![Come to an event](images/icon-calendar.jpg)
+        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)
          ### [Come to an event](sf-academy-events.md)
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
