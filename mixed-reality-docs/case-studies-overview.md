@@ -139,7 +139,7 @@ In this mixed reality first-person shooter, use gaze and gesture to target enemi
          <i>February 2016<i>
     :::column-end:::
     :::column:::
-       [![Looking through holes in your reality](images/rome-colosseum-overlay-500px.png)](case-study-looking-through-holes-in-your-reality.md)
+       [![Looking through holes in your reality](images/roboraid-640px.png)](case-study-looking-through-holes-in-your-reality.md)
         **[Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)**<br>
         This case study explains how to implement the "magic window" effect on HoloLens, allowing the user to see behind walls, under the floor, and into virtual openings within their actual environment.<br>
         <i>February 2016<i>
@@ -165,8 +165,8 @@ Read our high-level thoughts, and understand the principles we follow.
          <i>November 2017<i>
     :::column-end:::
     :::column:::
-       [![Creating impossible perspectives for HoloTour](images/MotionController.jpg)](case-study-my-first-year-on-the-hololens-design-team.md)
-        **[Creating impossible perspectives for HoloTour](case-study-my-first-year-on-the-hololens-design-team.md)**<br>
+       [![My first year on the HoloLens design team](images/MotionController.jpg)](case-study-my-first-year-on-the-hololens-design-team.md)
+        **[My first year on the HoloLens design team](case-study-my-first-year-on-the-hololens-design-team.md)**<br>
         My journey from a 2D flatland to the 3D world started when I joined the HoloLens design team in January 2016.<br>
         <i>January 2016<i>
     :::column-end:::
