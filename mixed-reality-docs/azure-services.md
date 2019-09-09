@@ -5,7 +5,7 @@ description: Mixed reality developer documentation for Azure services.
 author: grbury
 ms.author: grbury
 ms.date: 08/21/2019
-ms.topic: article
+ms.topic: overview
 keywords: Mixed Reality, develop, development, HoloLens, Azure services, spatial anchors, speech, vision, remote rendering
 ---
 

@@ -5,7 +5,7 @@ description: This guidance is authored by Microsoft designers, developers, progr
 author: grbury 
 ms.author: grbury
 ms.date: 08/24/2019
-ms.topic: article
+ms.topic: overview
 keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction
 ---
 

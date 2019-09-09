@@ -5,7 +5,7 @@ description: Stories, learnings and experiences the Mixed Reality team has encou
 author: grbury 
 ms.author: grbury
 ms.date: 08/24/2019
-ms.topic: article
+ms.topic: overview
 keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios
 ---
 
