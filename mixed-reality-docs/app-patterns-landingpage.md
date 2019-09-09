@@ -34,6 +34,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Typography](typography.md)**
     :::column-end:::
     :::column:::
+       [![Cursors](images/gazetargeting-highlighting-640px.jpg)](cursors.md)
+        **[Cursors](cursors.md)**
     :::column-end:::
     :::column:::
     :::column-end:::
@@ -64,8 +66,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Displaying progress](progress.md)**
     :::column-end:::
     :::column:::
-        [![Cursors](images/gazetargeting-highlighting-640px.jpg)](cursors.md)
-        **[Cursors](cursors.md)**
     :::column-end:::
     :::column:::
     :::column-end:::

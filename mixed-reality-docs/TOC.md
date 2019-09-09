@@ -54,17 +54,17 @@
 ## Learn about UX patterns
 ### [UX patterns overview](app-patterns-landingpage.md)
 ### Style
-#### [Cursors](cursors.md)
 #### [Color, light and materials](color,-light-and-materials.md)
-#### [Typography](typography.md)
 #### [Scale](scale.md)
-#### [Spatial sound design](spatial-sound-design.md)
 #### [Spatial sound](spatial-sound.md)
+#### [Spatial sound design](spatial-sound-design.md)
+#### [Typography](typography.md)
+#### [Cursors](cursors.md)
 ### Controls
 #### [Interactable object](interactable-object.md)
 #### [Object collection](object-collection.md)
-#### [Displaying progress](progress.md)
 #### [Bounding box and App bar](app-bar-and-bounding-box.md)
+#### [Displaying progress](progress.md)
 ### App patterns
 #### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 #### [Room scan visualization](room-scan-visualization.md)
