@@ -16,23 +16,22 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 :::row:::
     :::column:::
        [![Color, light and materials](images/640px-fragments.jpg)](color,-light-and-materials.md)
-        ### [Color, light and materials](color,-light-and-materials.md)
+        **[Color, light and materials](color,-light-and-materials.md)**
     :::column-end:::
     :::column:::
        [![Scale](images/volvo-cars-microsoft-hololens-experience01-640px.jpg)](scale.md)
-        ### [Scale](scale.md)
+        **[Scale](scale.md)**
     :::column-end:::
     :::column:::
-        ![space](images/spatialaudio-bar.jpg)
        [![Spatial sound](images/SpatialAudio.gif)](spatial-sound.md)
-        ### [Spatial sound](spatial-sound.md)
+        **[Spatial sound](spatial-sound.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
        [![Typography](images/text_in_unity_viewingangle.jpg)](typography.md)
-        ### [Typography](typography.md)
+        **[Typography](typography.md)**
     :::column-end:::
     :::column:::
     :::column-end:::
@@ -40,31 +39,25 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
     :::column-end:::
 :::row-end:::
 
-
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">      
-                            <li>
-                                  <a href="typography.md" title="Typography" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/text_in_unity_viewingangle.jpg" alt="Typography icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Typography</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-</ul>
-
 <br>
 
 ## Controls
+
+:::row:::
+    :::column:::
+       [![Interactable object](images/640px-interactibleobject-hero-640px.jpg)](interactable-object.md)
+        **[Interactable object](interactable-object.md)**
+    :::column-end:::
+    :::column:::
+       [![Object collection](images/640px-objectcollection-hero-640px.jpg)](object-collection.md)
+        **[Object collection](object-collection.md)**
+    :::column-end:::
+    :::column:::
+       [![Bounding box and App bar](images/640px-boundingbox-hero.jpg)](app-bar-and-bounding-box.md)
+        **[Bounding box and App bar](app-bar-and-bounding-box.md)**
+    :::column-end:::
+:::row-end:::
+
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
