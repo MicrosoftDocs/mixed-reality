@@ -70,6 +70,7 @@ HoloLens lets you create holograms, objects made of light and sound that appear 
 
 ---
 
+<br>
 
 ![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
 
@@ -130,6 +131,7 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
 
 ---
 
+<br>
 
 ![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
 
@@ -143,9 +145,9 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 
 ---
 
+<br>
 
-
-![distance guide](images/text_in_unity_viewingangle.jpg)
+![core experiences](images/text_in_unity_viewingangle.jpg)
 
 ## What are the core concepts of an experience?
 

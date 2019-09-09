@@ -50,7 +50,7 @@ Designing content for mixed reality requires careful consideration of color, lig
 
 ---
 
-
+<br>
 
 ![Interaction design factors](images/MRTK_BoundingBox_Main.png)
 
