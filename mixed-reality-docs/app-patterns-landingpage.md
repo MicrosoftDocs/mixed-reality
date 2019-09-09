@@ -92,12 +92,16 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-       [![Updating 2D UWP apps for mixed reality](images/text_in_unity_viewingangle.jpg)](building-2d-apps.md)
+       [![Updating 2D UWP apps for mixed reality](images/teleportation-640px.png)](building-2d-apps.md)
         **[Updating 2D UWP apps for mixed reality](building-2d-apps.md)**
     :::column-end:::
     :::column:::
+        [![App model](images/20160112-055908-hololens-500px.jpg)](app-model.md)
+        **[App model](app-model.md)**
     :::column-end:::
     :::column:::
+        [![App views](images/designoverview.jpg)](app-views.md)
+        **[App views](app-views.md)**
     :::column-end:::
 :::row-end:::
 
