@@ -18,7 +18,7 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
     :::column:::
        [![3 HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
         **[3 HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio was one of the first Microsoft apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through a lot of user testing, prototyping, and trial and error.<br>
+        HoloStudio was one of the first apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through a lot of user testing, prototyping, and trial and error.<br>
          <i>July 2016<i>
     :::column-end:::
     :::column:::
@@ -35,148 +35,41 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
     :::column-end:::
 :::row-end:::
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                                    <a href="case-study-3-holostudio-ui-and-interaction-design-learnings.md" title="3 HoloStudio UI and interaction design learnings" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/thought-bubble-500px.jpg" alt="3 HoloStudio UI and interaction design learnings icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>3 HoloStudio UI and interaction design learnings</h3>
-                                                    <p>HoloStudio was one of the first Microsoft apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through a lot of user testing, prototyping, and trial and error.</p>
-                                                    <i>July 2016<i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                               <li>
-                                  <a href="case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md" title="Building HoloSketch, a spatial layout and UX sketching app for HoloLens" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/holosketch-image-01-640px.png" alt="Building HoloSketch, a spatial layout and UX sketching app for HoloLens icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Building HoloSketch, a spatial layout and UX sketching app for HoloLens</h3>
-                                                    <p>HoloSketch is an on-device spatial layout and UX sketching tool for HoloLens to help build holographic experiences.</p>
-                                                    <i>July 2017<i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                            <li>
-                            <a href="case-study-creating-an-immersive-experience-in-fragments.md" title="Creating an immersive experience in Fragments" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/surfacereconstruction.jpg" alt="Creating an immersive experience in Fragments icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Creating an immersive experience in Fragments</h3>
-                                              <p>Fragments is an interactive crime drama for Microsoft Hololens, where you follow the clues to solve a mystery that takes place in your real-world space.</p>
-                                              <i>August 2016<i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>          
-                              <li>
-                              <a href="case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md" title="Expanding the spatial mapping capabilities of HoloLens" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/away-from-camera-position-500px.png" alt="Expanding the spatial mapping capabilities of HoloLens icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Expanding the spatial mapping capabilities of HoloLens</h3>
-                                              <p>When creating our first apps for Microsoft HoloLens, we were eager to see just how far we could push the boundaries of spatial mapping on the device.</p>
-                                              <i>December 2016<i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>      
-                               <li>
-                               <a href="case-study-lessons-from-the-lowes-kitchen.md" title="Lessons from the Lowe's kitchen" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/lowes.jpg" alt="Lessons from the Lowe's kitchen icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Lessons from the Lowe's kitchen</h3>
-                                              <p>The HoloLens team wants to share some of the best practices that were derived from the Lowe's HoloLens project.</p>
-                                              <i>September 2016<i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                             </a>
-                            </li> 
-                           <li>
-                            <a href="case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md" title="Using the stabilization plane to reduce holographic turbulence" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/holotour-stabilization-plane-500px.jpg" alt="Using the stabilization plane to reduce holographic turbulence icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Using the stabilization plane to reduce holographic turbulence</h3>
-                                              <p>Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.</p>
-                                              <i>April 2017<i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li> 
-                                <li>
-                                   <a href="case-study-scaling-datascape-across-devices-with-different-performance.md" title="Scaling Datascape across devices with different performance" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/cloud-steps-1-4-700px.jpg" alt="Scaling Datascape across devices with different performance icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Scaling Datascape across devices with different performance</h3>
-                                              <p>This case study offers insight on how Microsoft developers optimized the Datascape app to deliver a compelling experience across devices with a range of performance capabilities.</p>
-                                              <i>August 2017<i>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>  
-</ul>
+:::row:::
+    :::column:::
+       [![Expanding the spatial mapping capabilities of HoloLens](images/away-from-camera-position-500px.png)](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+        **[Expanding the spatial mapping capabilities of HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
+        When creating our first apps for Microsoft HoloLens, we were eager to see just how far we could push the boundaries of spatial mapping on the device.<br>
+        <i>December 2016<i>
+    :::column-end:::
+    :::column:::
+       [![Lessons from the Lowe's kitchen](images/lowes.jpg)](case-study-lessons-from-the-lowes-kitchen.md)
+        **[Lessons from the Lowe's kitchen](case-study-lessons-from-the-lowes-kitchen.md)**<br>
+        The HoloLens team wants to share some of the best practices that were derived from the Lowe's HoloLens project.<br>
+        <i>September 2016<i>
+    :::column-end:::
+    :::column:::
+       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
+        **[Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+        Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.<br>
+        <i>April 2017<i>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Scaling Datascape across devices with different performance](images/cloud-steps-1-4-700px.jpg)](case-study-scaling-datascape-across-devices-with-different-performance.md)
+        **[Scaling Datascape across devices with different performance](case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        This case study offers insight on how Microsoft developers optimized the Datascape app to deliver a compelling experience across devices with a range of performance capabilities.<br>
+        <i>August 2017<i>
+    :::column-end:::
+    :::column:::
+       [![Lessons from the Lowe's kitchen](images/lowes.jpg)](case-study-lessons-from-the-lowes-kitchen.md)
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
+
 
 <br>
 
