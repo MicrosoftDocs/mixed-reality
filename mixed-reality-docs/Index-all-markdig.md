@@ -178,22 +178,22 @@ A key to displaying content that looks realistic in holographic form is to mimic
 :::row:::
     :::column:::
        [![Try it out](images/icon-hololensuser.jpg)](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)
-        ### [Try out mixed reality](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)
+        **[Try out mixed reality](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
     :::column-end:::
     :::column:::
         [![Become a creator](images/icon-design.jpg)](design.md)
-         ### [Become a creator](design.md)
+        **[Become a creator](design.md)**
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
         [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)
-         ### [Come to an event](sf-academy-events.md)
+        **[Come to an event](sf-academy-events.md)**
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
         [![Start developing](images/icon-developer.jpg)](development.md)
-         ### [Start developing](development.md)
+        **[Start developing](development.md)**
         Choose a development path based on your skill level, work style or platform interest.
     :::column-end:::
 :::row-end:::
