@@ -129,7 +129,7 @@ All of the essentials you need to start writing a mixed reality app using Direct
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
-        [![Install the tools](images/icon-design.jpg)](install-the-tools.md)<br>
+        [![Install the tools](images/icon-developer.jpg)](install-the-tools.md)<br>
          **[Install the tools](install-the-tools.md)**<br>
         Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
     :::column-end:::

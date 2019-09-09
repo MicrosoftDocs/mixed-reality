@@ -13,6 +13,22 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 ## Style
 
+:::row:::
+    :::column:::
+       [![Color, light and materials](images/640px-fragments.jpg)](color,-light-and-materials.md)
+        ### [Color, light and materials](color,-light-and-materials.md)
+    :::column-end:::
+    :::column:::
+       [![Scale](images/volvo-cars-microsoft-hololens-experience01-640px.jpg)](scale.md)
+        ### [Scale](scale.md)
+    :::column-end:::
+    :::column:::
+       [![Spatial sound](images/SpatialAudio.gif)](spatial-sound.md)
+        ### [Spatial sound](spatial-sound.md)
+    :::column-end:::
+:::row-end:::
+
+
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
                                     <a href="color,-light-and-materials.md" title="Color, light and materials" data-linktype="absolute-path">
