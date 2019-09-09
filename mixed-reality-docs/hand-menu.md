@@ -8,14 +8,12 @@ keywords: hand, menu, button, quick access, layout
 ---
 # Hand menu
 
-Hand is one of the most versatile tools in our body. With HoloLens2, you can make our hand become even more powerful by augmenting it with new capabilities, like quick action menus. 
-Compared to other placement mechanisms such as world lock or tag-along, hand locked menus are highly accessible without getting in the way of users.
-
 Have you ever wanted to become a cyborg by augmenting yourself with extra capabilities? With HoloLens 2, now you can! Thanks to fully articulated hand tracking, you can make holograms follow your hand, as if they are extension of your body.
 
 This placement method is similar to body-locked behavior in terms’ it’s tethered to users’ body parts and making holograms highly discoverable. However, different from body-locked holograms, hand-locked menu can be completely invisible when hand is not in view, allowing unobstructed view of holographic content placed in front of users.
 
-Due to these strength, UI menu is a good candidate for the hand-locked hologram, and you can find an example scene in [MRTK toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
+Due to these strength, UI menu is a good candidate for the hand-locked hologram, and below are best practices we found based on 
+our exploration. You can also find an example scene in [MRTK toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
 
 ## What are they?
 2D Holographic buttons, the main function of these buttons is to get a quick access to the most common used functions of your Holographic experiences.
@@ -57,7 +55,7 @@ Do not assume both of users' hands are always available. Consider a wide range o
 If you use just palm-up as an event to trigger hand menu, it may accidentally appear when you don't need it (false-positive), because people moves their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience many false-positive in your app, especially because it requires many other hand interactions, consider adding additional step besides palm-up event to invoke hand menu such as fully opened fingers.
 
 **F. Avoid adding buttons near home button:**
-A good design practice is to help users to avoid false positives to get a good experience, adding buttons near home button can potentially cause to show home button without having the intention to see home menu
+If hand menu buttons are placed too close to the home button, it may get accidentally triggered while interacting with hand menu.
 
 **G. Test, test, test:**
 People have different bodies, different positions of comfort and discomfort, etc.
