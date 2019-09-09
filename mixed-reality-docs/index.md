@@ -94,31 +94,6 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 </ul>
 
 
-:::row:::
-    :::column:::
-       [![I'm new to mixed reality](images/Tile-New.jpg)](index.md#understand-the-basics)
-        **[I'm new to mixed reality](index.md#understand-the-basics)**<br>
-        Understand the basics
-    :::column-end:::
-    :::column:::
-       [![I'm a designer](images/Tile-Create.jpg)](design.md)
-        **[I'm a designer](design.md)**<br>
-        Start designing and prototyping
-    :::column-end:::
-    :::column:::
-       [![I'm a developer](images/Tile-Develop.jpg)](development.md)<br>
-        ### [I'm a developer](development.md)<br>
-        Learn the tools and architecture
-    :::column-end:::
-    :::column:::
-       [![Jump in with Unity and MRTK](images/Tile-New.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-        ### [Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-        Optimize Unity for MR development
-    :::column-end:::
-:::row-end:::
-
-
-
 ---
 
 <br>
