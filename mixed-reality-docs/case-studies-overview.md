@@ -14,6 +14,27 @@ keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios
 Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
 
 
+:::row:::
+    :::column:::
+       [![3 HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
+        **[3 HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+        HoloStudio was one of the first Microsoft apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through a lot of user testing, prototyping, and trial and error.<br>
+         <i>July 2016<i>
+    :::column-end:::
+    :::column:::
+       [![Building HoloSketch, a spatial layout and UX sketching app for HoloLens](images/holosketch-image-01-640px.png)](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
+        **[Building HoloSketch, a spatial layout and UX sketching app for HoloLens](case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+        HoloSketch is an on-device spatial layout and UX sketching tool for HoloLens to help build holographic experiences.<br>
+        <i>July 2017<i>
+    :::column-end:::
+    :::column:::
+       [![Creating an immersive experience in Fragments](images/surfacereconstruction.jpg)](case-study-creating-an-immersive-experience-in-fragments.md)
+        **[Creating an immersive experience in Fragments](case-study-creating-an-immersive-experience-in-fragments.md)**<br>
+        Fragments is an interactive crime drama for Microsoft Hololens, where you follow the clues to solve a mystery that takes place in your real-world space.<br>
+        <i>August 2016<i>
+    :::column-end:::
+:::row-end:::
+
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
                                     <a href="case-study-3-holostudio-ui-and-interaction-design-learnings.md" title="3 HoloStudio UI and interaction design learnings" data-linktype="absolute-path">
