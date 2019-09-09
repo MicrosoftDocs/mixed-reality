@@ -58,175 +58,50 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
     :::column-end:::
 :::row-end:::
 
-
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                                    <a href="interactable-object.md" title="Interactable object" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/640px-interactibleobject-hero-640px.jpg" alt="Interactable object icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Interactable object</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                               <li>
-                                  <a href="object-collection.md" title="Object collection" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/640px-objectcollection-hero-640px.jpg" alt="Object collection icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Object collection</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                            <li>
-                              <a href="app-bar-and-bounding-box.md" title="Bounding box and App bar" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/640px-boundingbox-hero.jpg" alt="Bounding box and App bar icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Bounding box and App bar</h3>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>
-                            <li>
-                            <a href="progress.md" title="Displaying progress" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/hololens2_loader.gif" alt="Displaying progress icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Displaying progress</h3>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>          
-                            <li>
-                            <a href="cursors.md" title="Cursors" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/gazetargeting-highlighting-640px.jpg" alt="Cursors icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Cursors</h3>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>     
-</ul>
+:::row:::
+    :::column:::
+       [![Displaying progress](images/hololens2_loader.gif)](progress.md)
+        **[Displaying progress](progress.md)**
+    :::column-end:::
+    :::column:::
+        [![Cursors](images/gazetargeting-highlighting-640px.jpg)](cursors.md)
+        **[Cursors](cursors.md)**
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
 
 <br>
 
 ## App patterns
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                                    <a href="types-of-mixed-reality-apps.md" title="Types of mixed reality apps" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/enhancedenvironmentapps-640px.jpg" alt="Types of mixed reality apps icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Types of mixed reality apps</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                               <li>
-                                  <a href="room-scan-visualization.md" title="Room scan visualization" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/sr-mixedworld-140429-8pm-00068-1000px.png" alt="Room scan visualization icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Room scan visualization</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>          
-                              <li>
-                              <a href="billboarding-and-tag-along.md" title="Billboarding and tag-along" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/billboarding-fragments.gif" alt="Billboarding and tag-along icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Billboarding and tag-along</h3>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>      
-                               <li>
-                               <a href="case-study-lessons-from-the-lowes-kitchen.md" title="Updating 2D UWP apps for mixed reality" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/500px-fix-a-broken-switch-with-hololens.jpg" alt="Updating 2D UWP apps for mixed reality icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Updating 2D UWP apps for mixed reality</h3>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                             </a>
-                            </li> 
-</ul>
+:::row:::
+    :::column:::
+       [![Types of mixed reality apps](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)
+        **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
+    :::column-end:::
+    :::column:::
+       [![Room scan visualization](images/sr-mixedworld-140429-8pm-00068-1000px.png)](room-scan-visualization.md)
+        **[Room scan visualization](room-scan-visualization.md)**
+    :::column-end:::
+    :::column:::
+       [![Billboarding and tag-along](images/billboarding-fragments.gif)](billboarding-and-tag-along.md)
+        **[Billboarding and tag-along](billboarding-and-tag-along.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Updating 2D UWP apps for mixed reality](images/text_in_unity_viewingangle.jpg)](building-2d-apps.md)
+        **[Updating 2D UWP apps for mixed reality](building-2d-apps.md)**
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+<br>
+
