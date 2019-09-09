@@ -32,7 +32,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
         Learn the tools and architecture
     :::column-end:::
     :::column:::
-       [![Jump in with Unity and MRTK](images/Tile-New.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
+       [![Jump in with Unity and MRTK](images/Tile-JumpIn.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
         **[Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)**<br>
         Optimize Unity for MR
     :::column-end:::
