@@ -104,6 +104,8 @@ The fastest path to building a mixed reality app is with Babylon. We recommend t
 ### [Native development overview](directx-development-overview.md)
 The fastest path to building a native mixed reality app.
 
+<br>
+
 ### [DirectX UWP app templates for mixed reality](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
 All of the essentials you need to start writing a mixed reality app using DirectX
 
@@ -137,3 +139,8 @@ All of the essentials you need to start writing a mixed reality app using Direct
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
 :::row-end:::
+
+
+<br>
+
+<br>

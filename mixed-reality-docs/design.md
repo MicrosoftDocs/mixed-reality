@@ -93,86 +93,28 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 ## Choose a prototyping option  
 
-
-
-<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                            <a href="https://learn.unity.com/" title="Learn Unity" target="_blank" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/unity_logo.png" alt="Unity logo">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Learn Unity</h3>
-                                                    <p>Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                            <li>
-                              <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" title="Mixed Reality Toolkit" target="_blank" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/MRTK-small_logo.png" alt="Mixed Reality Toolkit image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Mixed Reality Toolkit (MRTK)</h3>
-                                                    <p>With spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                            <li>
-                              <a href="https://github.com/Microsoft/MRDL_Unity_PeriodicTable" title="Mixed Reality Design Labs" target="_blank" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/MRDL_logo.png" alt="Mixed Reality Design Labs image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Mixed Reality Design Labs</h3>
-                                                    <p>Mixed Reality Design Lab's sample apps show you how to use MRTK's building blocks to create beautiful mixed reality experiences.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                             <li>
-                              <a href="https://www.maquette.ms/" target="_blank" title="Microsoft Maquette" target="_blank" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/Maquette_logo.png" alt="Microsoft Maquette image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Microsoft Maquette</h3>
-                                                    <p>Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-</ul>
+:::row:::	
+    :::column:::	
+       [![Learn Unity](images/unity_logo.png)](https://learn.unity.com/)
+        ### [Learn Unity](https://learn.unity.com/)	
+        Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
+    :::column-end:::	
+    :::column:::	
+        [![Mixed Reality Toolkit (MRTK)](images/MRTK-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)
+         ### [Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)	
+        With spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity.	
+    :::column-end:::
+    :::column:::	
+        [![Mixed Reality Design Labs](images/MRDL_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)	
+         ### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)	
+        Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
+    :::column-end:::		
+    :::column:::	
+        [![Microsoft Maquette](images/Maquette_logo.png)](https://www.maquette.ms/)
+         ### [Microsoft Maquette](https://www.maquette.ms/)	
+        Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.	
+    :::column-end:::	
+:::row-end:::
 
 <br>
 
@@ -182,29 +124,32 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 ## What would you like to do next?
 
-
 :::row:::
     :::column:::
-       ![Understand the basics](images/icon-lightbulb.jpg)
-        ### [Understand the basics](index.md#understand-the-basics)
+       [![Understand the basics](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+        **[Understand the basics](index.md#understand-the-basics)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        ![Install the tools](images/icon-design.jpg)
-         ### [Install the tools](quick-start-creating.md)
-        Use the installation checklist to get the tools you need to build applications for Microsoft HoloLens and Windows Mixed Reality.
-    :::column-end:::
-    :::column:::
-        ![Come to an event](images/icon-calendar.jpg)
-         ### [Come to an event](sf-academy-events.md)
+        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)<br>
+         **[Come to an event](sf-academy-events.md)**<br>
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        ![Start developing](images/icon-developer.jpg)
-         ### [Start developing](development.md)
+        [![Install the tools](images/icon-design.jpg)](install-the-tools.md)<br>
+         **[Install the tools](install-the-tools.md)**<br>
+        Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
+    :::column-end:::
+    :::column:::
+        [![Start developing](images/icon-developer.jpg)](development.md)<br>
+        **[Start developing](development.md)**<br>
         Choose a development path based on your skill level, work style. or platform interest.
     :::column-end:::
 :::row-end:::
 
+
+<br>
+
+<br>
 
 
