@@ -95,23 +95,23 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 :::row:::	
     :::column:::	
-       [![Learn Unity](images/unity_logo.png)](https://learn.unity.com/)
-        ### [Learn Unity](https://learn.unity.com/)	
+       [![Learn Unity](images/unity_logo.png)](https://learn.unity.com/)<br>
+        **[Learn Unity](https://learn.unity.com/)**<br>
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	
     :::column:::	
         [![Mixed Reality Toolkit (MRTK)](images/MRTK-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-         ### [Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)	
-        With spatial interaction and UI building blocks, you can jumpstart your mixed reality design and development with Unity.	
+        **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
+        With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
     :::column-end:::
     :::column:::	
         [![Mixed Reality Design Labs](images/MRDL_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)	
-         ### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)	
+        **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
         Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
     :::column-end:::		
     :::column:::	
         [![Microsoft Maquette](images/Maquette_logo.png)](https://www.maquette.ms/)
-         ### [Microsoft Maquette](https://www.maquette.ms/)	
+        **[Microsoft Maquette](https://www.maquette.ms/)**<br>	
         Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.	
     :::column-end:::	
 :::row-end:::
