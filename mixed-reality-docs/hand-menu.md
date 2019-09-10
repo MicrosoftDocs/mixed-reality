@@ -61,7 +61,8 @@ If hand menu buttons are placed too close to the home button, it may get acciden
 People have different bodies, different positions of comfort and discomfort, etc.
 Complex menu placement – anything that requires extended interaction times should be more persistent. Suggestions include body-locking or world-locking
 
-**H. Suboptimal positions:** We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
+## Suboptimal positions:
+We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
 
 ![Above Arm](images/AboveArm.gif)
 
