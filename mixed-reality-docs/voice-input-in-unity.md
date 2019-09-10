@@ -12,6 +12,9 @@ keywords: Voice input, KeywordRecognizer, GrammarRecognizer, microphone, dictati
 
 # Voice input in Unity
 
+>[!NOTE]
+>Instead of the below information, consider using the Unity plug-in for the Cognitive Speech Services SDK which has much better speec Accuracy results and provides easy access to speech-to-text decode and advanced speech features like dialog, intent based interaction, translation, text-to-speech synthesis and natural language speech recognition. Find the sample and documentaion here: https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/quickstart-csharp-unity   
+
 Unity exposes three ways to add [Voice input](voice-input.md) to your Unity application.
 
 With the KeywordRecognizer (one of two types of PhraseRecognizers), your app can be given an array of string commands to listen for. With the GrammarRecognizer (the other type of PhraseRecognizer), your app can be given an SRGS file defining a specific grammar to listen for. With the DictationRecognizer, your app can listen for any word and provide the user with a note or other display of their speech.
