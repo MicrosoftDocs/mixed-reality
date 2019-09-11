@@ -7,18 +7,15 @@ ms.topic: article
 keywords: hand, menu, button, quick access, layout
 ---
 # Hand menu
+Have you ever wanted to become a cyborg by augmenting yourself with extra capabilities? With HoloLens 2, now you can! Thanks to fully articulated hand tracking, you can make holograms follow your hand as if they are an extension of your body.
 
-Have you ever wanted to become a cyborg by augmenting yourself with extra capabilities? With HoloLens 2, now you can! Thanks to fully articulated hand tracking, you can make holograms follow your hand, as if they are extension of your body.
+This placement method is similar to body-locked behavior in terms’ it’s tethered to users’ body parts and making holograms highly discoverable. However, different from body-locked holograms, the hand-locked menu can be completely invisible when the hand is not in view, allowing an unobstructed view of holographic content placed in front of users.
 
-This placement method is similar to body-locked behavior in terms’ it’s tethered to users’ body parts and making holograms highly discoverable. However, different from body-locked holograms, hand-locked menu can be completely invisible when hand is not in view, allowing unobstructed view of holographic content placed in front of users.
+Because of these strengths, the menu UI is a good candidate for the hand-locked hologram. Using hand menu, you can quickly show and hide the buttons for frequently used functions. 
 
-Due to these strength, UI menu is a good candidate for the hand-locked hologram, and below are best practices we found based on 
-our exploration. You can also find an example scene in [MRTK toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
+Below are the best practices we found based on our exploration. You can also find an example scene in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
 
-## What are they?
-2D Holographic buttons, the main function of these buttons is to get a quick access to the most common used functions of your Holographic experiences.
-
-## Where are They?
+## Best practices
 These are 2 recommended placements based on our exploration.
 
 **Ulnar** In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The ulna is a long bone found in the forearm that stretches from the elbow to the smallest finger.
