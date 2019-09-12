@@ -1,5 +1,5 @@
 ---
-title: Add custom home environments
+title: Design your own immersive environments
 description: In addition to the Windows Mixed Reality home environments we provide, you can experiment with creating and using your own.
 author: thmignon
 ms.author: thmignon
@@ -9,7 +9,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, C
 ---
 
 
-# Add custom home environments
+# Design your own immersive environments
 
 >[!NOTE]
 >This is an experimental feature. Give it a try and have fun with it, but don't be surprised if everything doesn't quite work as expected. We're evaluating the viability of this feature and interest in using it, so please tell us about your experience (and any bugs you've found) in the [developer forums](https://forums.hololens.com/categories/custom-home-environments).
