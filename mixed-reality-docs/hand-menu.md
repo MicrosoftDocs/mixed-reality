@@ -7,15 +7,37 @@ ms.topic: article
 keywords: hand, menu, button, quick access, layout
 ---
 # Hand menu
-Have you ever wanted to become a cyborg by augmenting yourself with extra capabilities? With HoloLens 2, now you can! Thanks to fully articulated hand tracking, you can make holograms follow your hand as if they are an extension of your body.
+![Ulnar side hand location](images/UlnarSideHandMenu.gif)
 
-This placement method is similar to body-locked behavior in terms’ it’s tethered to users’ body parts and making holograms highly discoverable. However, different from body-locked holograms, the hand-locked menu can be completely invisible when the hand is not in view, allowing an unobstructed view of holographic content placed in front of users.
+Hand menus allow users to quickly bring up and hand-attached UI for frequently used functions. 
 
-Because of these strengths, the menu UI is a good candidate for the hand-locked hologram. Using hand menu, you can quickly show and hide the buttons for frequently used functions. 
+Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand manu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
 
-Below are the best practices we found based on our exploration. You can also find an example scene in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
+## Best practices - Behavior
+**A. Keep the number of buttons small:** 
+Due to the close distance between hand-locked menu and eyes and also users' tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), we recommend keeping the number of buttons small. Based on our exploration, one column with three buttons work well by keeping all the content within the FOV even when users move their hands to the center of FOV. 
 
-## Best practices
+**B. Utilize hand menu for quick action:** 
+Raising arm and maintaining the position could easily cause arm fatigue. Use hand-locked method for the menu requiring short interaction. If your menu is complex and requires extended interaction times, consider using world-lock or body-lock instead. 
+
+**C. Button / Panel angle:**
+Menu should billboard towards opposite shoulder and middle head: This allows a natural hand move to interact with opposite hand with menu and avoids awkward and uncomfortable hand positions when touching buttons. 
+
+**D. Consider supporting one Handed or hands-free operation:**
+Do not assume both of users' hands are always available. Consider a wide range of contexts when user's one or both hands are not available, and accommodate your design for those situations. To support one-handed hand menu, you can try transitioning menu placement from hand-lock to world-lock when hand flips (palm down). For hands-free scenario, you can consider using voice command to invoke the hand menu buttons.
+
+**E. Two-step invocation:**
+If you use just palm-up as an event to trigger hand menu, it may accidentally appear when you don't need it (false-positive), because people moves their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience many false-positives in your app, consider adding additional step besides palm-up event to invoke hand menu such as fully opened fingers.
+
+**F. Avoid adding buttons near the wrist (system home button):**
+If hand menu buttons are placed too close to the home button, it may get accidentally triggered while interacting with hand menu.
+
+**G. Test, test, test:**
+People have different bodies, different positions of comfort and discomfort, etc.
+Complex menu placement – anything that requires extended interaction times should be more persistent. Suggestions include body-locking or world-locking
+
+
+## Best practices - Hand Menu Placement
 These are 2 recommended placements based on our exploration.
 
 **Ulnar** In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The ulna is a long bone found in the forearm that stretches from the elbow to the smallest finger.
@@ -35,28 +57,6 @@ HoloLens 2 cameras identify hands accurately when they are separate from each ot
 
 To read more details for best button size, [click here](https://docs.microsoft.com/en-us/windows/mixed-reality/interactable-object)
 
-## Best practices 
-**A. Keep the number of button small:** 
-Due to the close distance between hand-locked menu and eyes and also users' tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degree), we recommend keeping the number of button small. Based on our exploration, one column with three buttons work well by keeping all the content within the FOV even when users move their hands to the center of FOV. 
-
-**B. Utilize hand menu for quick action:** 
-Raising arm and maintaining the position could easily cause arm fatigue. Use hand-locked method for the menu requiring short interaction. If your menu is complex and requires extended interaction times, consider using world-lock or body-lock instead. 
-
-**C. Button / Panel angle:**
-Menu should billboard towards opposite shoulder and middle head: This allows a natural hand move to interact with opposite hand with menu and avoids awkward and uncomfortable hand positions when touching buttons. 
-
-**D. Consider supporting one Handed or hands-free operation:**
-Do not assume both of users' hands are always available. Consider a wide range of contexts when user's one or both hands are not available, and accommodate your design for those situations. To support one-handed hand menu, you can try transitioning menu placement from hand-lock to world-lock when hand flips (palm down). For hands-free scenario, you can consider using voice command to invoke the hand menu buttons.
-
-**E. Two-step invocation:**
-If you use just palm-up as an event to trigger hand menu, it may accidentally appear when you don't need it (false-positive), because people moves their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience many false-positive in your app, especially because it requires many other hand interactions, consider adding additional step besides palm-up event to invoke hand menu such as fully opened fingers.
-
-**F. Avoid adding buttons near home button:**
-If hand menu buttons are placed too close to the home button, it may get accidentally triggered while interacting with hand menu.
-
-**G. Test, test, test:**
-People have different bodies, different positions of comfort and discomfort, etc.
-Complex menu placement – anything that requires extended interaction times should be more persistent. Suggestions include body-locking or world-locking
 
 ## Suboptimal positions:
 We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
@@ -66,7 +66,6 @@ We have done user research with different menus layouts and locations, the follo
 **Above the arm**
 1. Difficult maintain a good hand tracking
 2. Cause fatigue on users due to unnatural position
-3. Due to some positions hand overlap
 
 ![Above Fingers](images/AboveFingers.gif)
 
