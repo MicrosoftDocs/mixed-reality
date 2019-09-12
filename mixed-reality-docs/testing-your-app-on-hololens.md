@@ -50,7 +50,7 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 **Validate when your app has a different behavior with mouse and touch.** This will identify inconsistencies and help with design decisions to make the experience more natural for users. For example, triggering an action based on hover.
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> More guidance specific to HoloLens 2 [coming soon](news.md).
 
 ### Custom voice commands
 

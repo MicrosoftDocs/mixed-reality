@@ -48,7 +48,7 @@ Hand gestures allow users to take action in mixed reality. Interaction is built 
 </table>
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> More guidance specific to HoloLens 2 [coming soon](news.md).
 
 ## Gaze-and-commit
 

@@ -99,7 +99,7 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 Once the player app is ready for rendering content a connection to the host can be established.
 
-The connection can be established in one of the follwing ways:
+The connection can be established in one of the following ways:
 1) The player app running on HoloLens 2 connects to the host app.
 2) The host app connects to the player app running on HoloLens 2.
 
@@ -186,7 +186,7 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 >[!NOTE]
 >```PlayerContext::BlitRemoteFrame()``` potentially overwrites the focus point for the current frame. 
 >- To specifiy a fallback focus point, call [HolographicCameraRenderingParameters::SetFocusPoint](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) before ```PlayerContext::BlitRemoteFrame()```. 
->- To overrwrite the remote focus point, call [HolographicCameraRenderingParameters::SetFocusPoint](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)  after ```PlayerContext::BlitRemoteFrame()```.
+>- To overwrite the remote focus point, call [HolographicCameraRenderingParameters::SetFocusPoint](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)  after ```PlayerContext::BlitRemoteFrame()```.
 
 On success, ```BlitRemoteFrame()``` returns ```BlitResult::Success_Color```. Otherwise it returns the failure reason:
 - ```BlitResult::Failed_NoRemoteFrameAvailable```: Failed because no remote frame is available.
