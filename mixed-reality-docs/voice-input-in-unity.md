@@ -13,7 +13,7 @@ keywords: Voice input, KeywordRecognizer, GrammarRecognizer, microphone, dictati
 # Voice input in Unity
 
 >[!NOTE]
->Instead of the below information, consider using the Unity plug-in for the Cognitive Speech Services SDK which has much better speec Accuracy results and provides easy access to speech-to-text decode and advanced speech features like dialog, intent based interaction, translation, text-to-speech synthesis and natural language speech recognition. Find the sample and documentaion here: https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/quickstart-csharp-unity   
+>Instead of the below information, consider using the Unity plug-in for the Cognitive Speech Services SDK which has much better Speech Accuracy results and provides easy access to speech-to-text decode and advanced speech features like dialog, intent based interaction, translation, text-to-speech synthesis and natural language speech recognition. Find the sample and documentaion here: https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/quickstart-csharp-unity   
 
 Unity exposes three ways to add [Voice input](voice-input.md) to your Unity application.
 
