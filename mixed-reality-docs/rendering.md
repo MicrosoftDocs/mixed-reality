@@ -90,7 +90,7 @@ When rendering medical MRIs or engineering volumes in 3D, [volume rendering](vol
 ## Supported resolutions on HoloLens 2
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> More guidance specific to HoloLens 2 [coming soon](news.md).
 
 
 ## See also
