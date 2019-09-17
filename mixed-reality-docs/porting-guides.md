@@ -13,7 +13,7 @@ keywords: port, porting, unity, middleware, engine, UWP
 # Porting guides
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> More guidance specific to HoloLens 2 [coming soon](news.md).
 
 Windows 10 includes support for immersive and holographic headsets directly. If you have built content for another device such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) only work in the Universal Windows Platform (UWP) app model. So if your app is not already built for UWP, porting to UWP will be part of the porting experience.
 

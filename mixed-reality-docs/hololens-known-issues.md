@@ -25,7 +25,7 @@ Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual 
  
 **Workaround**: 
 
-Our team is currently working on a fix. In the meantime, you can use the following steps to work around the issue and help unblock deployment and debugging:  
+While this issue is fixed in Visual Studio 2019 16.2, developers who choose to stay in previous versions of Visual Studio can use the following steps to work around the issue and help unblock deployment and debugging:  
 1. Open Visual Studio
 2. File -> New -> Project
 3. Visual C# -> Windows Desktop -> Console App (.NET Framework)
@@ -71,7 +71,6 @@ Our team is currently working on a fix. In the meantime, you can use the followi
  
 15. Once the tool has exited without any messages (this should only take a few seconds), you will now be able to deploy and debug from Visual Studio 2017 or newer.  Continued use of the tool is not necessary.
 
-We will provide further updates as they become available.
 
 ## Issues launching the Microsoft Store and apps on HoloLens
 
