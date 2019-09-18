@@ -78,6 +78,7 @@ HoloLens lets you create holograms, objects made of light and sound that appear 
 
 ### [A new vision for work](https://dynamics.microsoft.com/en-us/mixed-reality/overview/)
 Internally at Microsoft we are creating mixed reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities: Remote Assist, Layout and Guides.
+
 <br>
 
 ### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
