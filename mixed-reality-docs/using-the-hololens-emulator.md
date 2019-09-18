@@ -3,7 +3,7 @@ title: Using the HoloLens Emulator
 description: The HoloLens Emulator allows you to test mixed reality apps on your PC without a physical HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 04/25/2019
+ms.date: 09/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
@@ -19,10 +19,10 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 
 
 ## Installing the HoloLens Emulator
-Download the HoloLens Emulator and holographic project templates.
+Download the HoloLens Emulator.
 
 Versions: 
-* [HoloLens 2 Emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2098508).
+* [HoloLens 2 Emulator (September 2019 Update)](https://go.microsoft.com/fwlink/?linkid=2103724).
 * [HoloLens Emulator (1st Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
@@ -121,6 +121,10 @@ The Optional Settings tab displays a control to enable or disable hardware accel
 ### Diagnostics Tab
 
 The Diagnostics tab shows the emulator's IP address in the form of a link to Windows Device Portal along with the status of the virtual GPU.
+
+### Network Tab
+
+The Network tab shows the network adapter details for the emulator as well as network adapter details for the host machine.  Note that for the HoloLens 2 Emulator, this tab will only appear when running the emulator on the Windows 10 May 2019 Update or newer.
 
 
 ## Anatomy of the HoloLens (1st Gen) emulator

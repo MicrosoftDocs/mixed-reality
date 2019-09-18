@@ -47,7 +47,7 @@ There are five parts to the lunar module that the user will interact with as sho
 
 > Note: The Game object names that you see in your base scene hierarchy do not correspond to the names of the objects in the scene.
 
-Step 2: Add an audio source to the lunar module. Make sure the lunar module is selected in your base scene hierarchy, and click Add Component. Search for Audio Source, and add it to the object. Leave it blank for now. We will use this to play the launching sound later.
+Step 2: Add an audio source to the lunar module. Make sure the lunar module is selected in your base scene hierarchy, and click Add Component. Search for Audio Source, and add it to the object. Leave it blank for now, but make sure to click the "Spatialize" checkbox to enable spatial audio. We will use this to play the launching sound later.
 
  ![Lesson6 Chapter1 Step2im](images/Lesson6_Chapter1_step2im.PNG)  
 Step 3: Add the script, Toggle Placement Hints. Click Add Component, and search for Toggle Placement Hints. This is a custom script that lets you turn on and off the translucent hints (objects with the x-ray material) mentioned earlier.  

@@ -13,7 +13,7 @@ keywords: HoloLens, Remoting, Holographic Remoting
 # Holographic Remoting Player
 
 >[!IMPORTANT]
->Holographic Remoting for HoloLens 2 is a major version change. [Host applications for **HoloLens 1**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [host applications for **HoloLens 2**](holographic-remoting-create-host.md) must use **2.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa.
+>Holographic Remoting for HoloLens 2 is a major version change. [Host applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [host applications for **HoloLens 2**](holographic-remoting-create-host.md) must use **2.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa.
 
 The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
 
@@ -40,7 +40,7 @@ The quality and performance of your experience will vary based on three factors:
 
 ## Diagnostics
 
-To measure the quality of your connection, say **"enable diagnostics"** while on the main screen of the Holographic Remoting Player. When diagnostics are enabled, on **HoloLens 1** the app will show you:
+To measure the quality of your connection, say **"enable diagnostics"** while on the main screen of the Holographic Remoting Player. When diagnostics are enabled, on **HoloLens (1st gen)** the app will show you:
 
 * **FPS** - The average number of rendered frames the Remoting player is receiving and rendering per second. The ideal is 60 FPS.
 * **Latency** - The average amount of time it takes for a frame to go from your PC to the HoloLens. The lower the better. This is largely dependent on your Wi-Fi network.
@@ -74,7 +74,7 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 * We recommend you connect your PC to your network via ethernet to reduce the number of Wireless hops.
 
 ## See Also
-* [HoloLens 1: Add Holographic Remoting](add-holographic-remoting.md)
+* [HoloLens (1st gen): Add Holographic Remoting](add-holographic-remoting.md)
 * [HoloLens 2: Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
 * [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)
