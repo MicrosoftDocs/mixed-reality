@@ -85,6 +85,7 @@
 ## [Install the tools](install-the-tools.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+
 ## [Tutorials and sample apps](tutorials.md)
 ### Unity
 #### HoloLens 2 tutorials
