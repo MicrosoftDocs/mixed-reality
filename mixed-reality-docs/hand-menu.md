@@ -1,7 +1,8 @@
 ---
-title: Hand Menu
-description: Best practices and recommendations for hand menus
-author: Noe Barragan & Hae Jin Lee
+title: Hand menu
+description: Hand menus allow users to quickly bring up and hand-attached UI for frequently used functions. These are our best practices and recommendations for hand menus.
+author: nbarragan23
+ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
 keywords: hand, menu, button, quick access, layout
@@ -13,7 +14,7 @@ Hand menus allow users to quickly bring up and hand-attached UI for frequently u
 
 Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand manu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
 
-## Best practices - Behavior
+## Behavior best practices
 **A. Keep the number of buttons small:** 
 Due to the close distance between hand-locked menu and eyes and also users' tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), we recommend keeping the number of buttons small. Based on our exploration, one column with three buttons work well by keeping all the content within the FOV even when users move their hands to the center of FOV. 
 
@@ -23,7 +24,7 @@ Raising arm and maintaining the position could easily cause arm fatigue. Use han
 **C. Button / Panel angle:**
 Menu should billboard towards opposite shoulder and middle head: This allows a natural hand move to interact with opposite hand with menu and avoids awkward and uncomfortable hand positions when touching buttons. 
 
-**D. Consider supporting one Handed or hands-free operation:**
+**D. Consider supporting one-handed or hands-free operation:**
 Do not assume both of users' hands are always available. Consider a wide range of contexts when user's one or both hands are not available, and accommodate your design for those situations. To support one-handed hand menu, you can try transitioning menu placement from hand-lock to world-lock when hand flips (palm down). For hands-free scenario, you can consider using voice command to invoke the hand menu buttons.
 
 **E. Two-step invocation:**
@@ -33,51 +34,62 @@ If you use just palm-up as an event to trigger hand menu, it may accidentally ap
 If hand menu buttons are placed too close to the home button, it may get accidentally triggered while interacting with hand menu.
 
 **G. Test, test, test:**
+
 People have different bodies, different positions of comfort and discomfort, etc.
 Complex menu placement – anything that requires extended interaction times should be more persistent. Suggestions include body-locking or world-locking
 
 
-## Best practices - Hand Menu Placement
-These are 2 recommended placements based on our exploration.
+## Hand menu placement best practices
 
-**Ulnar** In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The ulna is a long bone found in the forearm that stretches from the elbow to the smallest finger.
+In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The ulna is a long bone found in the forearm that stretches from the elbow to the smallest finger.
+
+Below are 2 recommended placements based on our exploration:
+
 
 ![Ulnar side hand location](images/UlnarSideHandMenu.gif)
 
-**a. Ulnar inside palm:** This position is very reliable because hands do not overlap to each other which is critical for accurate hand detection and tracking.
+**A. Ulnar inside palm:** This position is very reliable because hands do not overlap to each other which is critical for accurate hand detection and tracking.
+
+<br>
 
 ![Ulnar side hand location](images/UlnarAboveHandMenu.gif)
 
-**b. Ulnar above hand:**
+**B. Ulnar above hand:**
 The location is comfortable for users because is not necessary to raise users’ arm too much to interact with hand menu. We recommend to place menus 13cm above palm and align buttons inside Ulnar palm
 
 For technical reasons we recommend this location with one required implementation, developer need to freeze menus once users get closer with opposite hand to interact with menu, this will avoid jitteriness from overlapping hands, and also allows for fast targeting of buttons.
 
 HoloLens 2 cameras identify hands accurately when they are separate from each other, any overlapping hands can cause hand menus move away from the anchor location
 
-To read more details for best button size, [click here](https://docs.microsoft.com/en-us/windows/mixed-reality/interactable-object)
+[Read more about the optimal button size](interactable-object.md)
 
 
-## Suboptimal positions:
+## Suboptimal positions
 We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
 
-![Above Arm](images/AboveArm.gif)
+![Above arm](images/AboveArm.gif)
 
 **Above the arm**
 1. Difficult maintain a good hand tracking
 2. Cause fatigue on users due to unnatural position
 
-![Above Fingers](images/AboveFingers.gif)
+<br>
 
-**Above Fingers**
+![Above fingers](images/AboveFingers.gif)
+
+**Above fingers**
 1. Hand fatigue due to holding hand for long time
 2. Hand tracking issues on index and middle finger
 
-![Above Center Palm](images/handCenter.gif)
+<br>
+
+![Above center palm](images/handCenter.gif)
 
 **Above-center palm**
 1. Hand track issues due to overlapping hands
 2. Hand fatigue holding hands for long time to interact with menus
+
+<br>
 
 ![Top Fingertip](images/TopFingerTip.gif)
 
@@ -86,8 +98,17 @@ We have done user research with different menus layouts and locations, the follo
 2. Hand fatigue holding hand above a normal posture
 3. Issues pressing buttons with other fingers by accident due to limited space between fingers
 
+<br>
+
 ![Back of the Arm](images/BackOfTheArm.gif)
 
 **Back of the arm**
 1. Tigger home button by accident
 2. Not a natural comfortable position for users
+
+
+## See also
+
+* [Interactable object](interactable-object.md)
+* [Direct manipulation with hands](direct-manipulation.md)
+* [Hands and motion controllers](hands-and-tools.md)
