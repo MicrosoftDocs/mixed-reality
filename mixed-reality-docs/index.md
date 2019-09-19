@@ -17,22 +17,22 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 :::row:::
     :::column:::
-       [![I'm new to mixed reality](images/Tile-New.jpg)](index.md#understand-the-basics)
+       [![I'm new to mixed reality](images/Tile-New.jpg)](index.md#understand-the-basics)<br>
         **[I'm new to mixed reality](index.md#understand-the-basics)**<br>
         Understand the basics
     :::column-end:::
     :::column:::
-       [![I'm a designer](images/Tile-Create.jpg)](design.md)
+       [![I'm a designer](images/Tile-Create.jpg)](design.md)<br>
         **[I'm a designer](design.md)**<br>
         Start designing and prototyping
     :::column-end:::
     :::column:::
-       [![I'm a developer](images/Tile-Develop.jpg)](development.md)
+       [![I'm a developer](images/Tile-Develop.jpg)](development.md)<br>
         **[I'm a developer](development.md)**<br>
         Learn the tools and architecture
     :::column-end:::
     :::column:::
-       [![Jump in with Unity and MRTK](images/Tile-JumpIn.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
+       [![Jump in with Unity and MRTK](images/Tile-JumpIn.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)<br>
         **[Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)**<br>
         Optimize Unity for MR development
     :::column-end:::
@@ -78,6 +78,7 @@ HoloLens lets you create holograms, objects made of light and sound that appear 
 
 ### [A new vision for work](https://dynamics.microsoft.com/en-us/mixed-reality/overview/)
 Internally at Microsoft we are creating mixed reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities: Remote Assist, Layout and Guides.
+
 <br>
 
 ### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
