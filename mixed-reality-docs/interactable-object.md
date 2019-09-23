@@ -40,7 +40,7 @@ You can use techniques such as highlighting or scaling to provide visual cue to 
 ![Observation state, targeted state, and pressed state on holographic button](images/MRTK_InteractableState.png)<br>
 *Observation state, targeted state, and pressed state on holographic button*
 
-#### Near(direct) interactions
+#### Near interactions (direct) 
 
 HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception sometimes it can be hard to tell how far away your hand is from an object, or whether you are touching. It is important to provide enough visual cues to communicate the state of the object and in particular of your hands in relation to holograms.
 
@@ -48,9 +48,9 @@ Use visual feedback to communicate the following:
 * **Default (Observation)**: Default idle state of the object.
 * **Hover**: When hand is near a hologram, change visuals to communicate that hand is targeting hologram. 
 * **Distance and point of interaction**: As hand approaches hologram, design feedback to communicate the projected point of interaction, as well as how far from the object the finger is
-* **Contact Begin**: Change visuals (light, color) to communicate that touch has occured
+* **Contact begins**: Change visuals (light, color) to communicate that touch has occured
 * **Grasped**: Change visuals (light, color) when the object is grasped.
-* **Contact End**: Change visuals (light, color) when touch has ended.
+* **Contact ends**: Change visuals (light, color) when touch has ended.
 
 ![Example of visualizing near interaction states](images/640px-interactibleobject-states-near.jpg)<br>
 *Example of visualizing near interaction states*
@@ -71,10 +71,10 @@ In HoloLens 2, there is an additional visual cue which improves the user's confi
 
 ### Audio cue
 For the direct hand interactions, proper audio feedback can dramatically improve the user experience. Use audio feedback to communicate the following:
-* **Contact begin**: Play sound when touch begins
-* **Contact end**: Play sound on touch end
-* **Grab begin**: Play sound when grab starts
-* **Grab end**: Play sound on grab end
+* **Contact begins**: Play sound when touch begins
+* **Contact ends**: Play sound on touch end
+* **Grab begins**: Play sound when grab starts
+* **Grab ends**: Play sound on grab end
 
 ### Voice command
 For any interactable objects, it is important to support alternative interaction options. In default, it is recommended to support voice command for any objects that are interactable. To improve the discoverability, you can provide tooltip on hover state.
