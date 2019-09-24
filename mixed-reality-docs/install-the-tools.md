@@ -95,9 +95,6 @@ We recommend installing the Unity game engine as the easiest way to get started 
                                     </div>
                                     </a>
                             </li>
-                             
-</ul>
-<ul id="cardtypes-D" class="cardsD panelContent" style="display: flex; margin-top: 0px;">
                             <li>
                               <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank" title="MRTK" data-linktype="absolute-path">
                                     <div class="cardSize">
@@ -116,10 +113,6 @@ We recommend installing the Unity game engine as the easiest way to get started 
                                         </div>
                                     </div>
                                     </a>
-                            </li>
-                            <li>
-                            </li>
-                            <li>
                             </li>
 </ul>
 
