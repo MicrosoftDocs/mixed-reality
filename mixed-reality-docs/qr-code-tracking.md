@@ -58,59 +58,61 @@ There is a sample Unity app that displays a holographic square over QR codes, al
 ### Detecting QR codes in C++
 
 ```
+using namespace winrt::Windows::Foundation;
 using namespace winrt::Microsoft::MixedReality::QR;
 
-    class QRListHelper
+class QRListHelper
+{
+public:
+    QRListHelper(MyApplication& app) :
+        m_app(app)
+    {}
+
+    IAsyncAction SetUpQRCodes()
     {
-    public:
-        QRListHelper(MyApplication& app) :
-            m_app(app)
-        {}
-
-        winrt::Windows::Foundation::IAsyncAction SetUpQRCodes()
+        if (QRCodeWatcher::IsSupported())
         {
-            if (QRCodeWatcher::IsSupported())
-            {
-                QRCodeWatcherAccessStatus status = co_await QRCodeWatcher::RequestAccessAsync();
-                InitializeQR(status);
-            }
+            QRCodeWatcherAccessStatus status = co_await QRCodeWatcher::RequestAccessAsync();
+            InitializeQR(status);
         }
+    }
 
-    private:
-        void OnAddedQRCode(const IInspectable&, const QRCodeAddedEventArgs& args)
-        {
-            m_app.OnAddedQRCode(args);
-        }
-        void OnUpdatedQRCode(const IInspectable&, const QRCodeUpdatedEventArgs& args)
-        {
-            m_app.OnUpdatedQRCode(args);
-        }
-        void OnEnumerationComplete(const IInspectable&, const IInspectable&)
-        {
-            m_app.OnEnumerationComplete();
-        }
+private:
+    void OnAddedQRCode(const IInspectable&, const QRCodeAddedEventArgs& args)
+    {
+        m_app.OnAddedQRCode(args);
+    }
 
-        MyApplication& m_app;
-        QRCodeWatcher m_qrWatcher;
+    void OnUpdatedQRCode(const IInspectable&, const QRCodeUpdatedEventArgs& args)
+    {
+        m_app.OnUpdatedQRCode(args);
+    }
 
-        void InitializeQR(QRCodeWatcherAccessStatus status)
+    void OnEnumerationComplete(const IInspectable&, const IInspectable&)
+    {
+        m_app.OnEnumerationComplete();
+    }
+
+    MyApplication& m_app;
+    QRCodeWatcher m_qrWatcher{ nullptr };
+
+    void InitializeQR(QRCodeWatcherAccessStatus status)
+    {
+        if (status == QRCodeWatcherAccessStatus::Allowed)
         {
-            if (status == QRCodeWatcherAccessStatus::Allowed)
-            {
-                m_qrWatcher = QRCodeWatcher();
-
-                m_qrWatcher.Added(this, &QRListHelper::OnAddedQRCode);
-                m_qrWatcher.Updated(this, &QRListHelper::OnUpdatedQRCode);
-                m_qrWatcher.EnumerationCompleted(this, &QRListHelper::OnEnumerationComplete);
-                m_qrWatcher->Start();
-            }
-            else
-            {
-                // Permission denied by system or user
-                // Handle the failures
-            }
+            m_qrWatcher = QRCodeWatcher();
+            m_qrWatcher.Added({ this, &QRListHelper::OnAddedQRCode });
+            m_qrWatcher.Updated({ this, &QRListHelper::OnUpdatedQRCode });
+            m_qrWatcher.EnumerationCompleted({ this, &QRListHelper::OnEnumerationComplete });
+            m_qrWatcher.Start();
         }
-    }; 
+        else
+        {
+            // Permission denied by system or user
+            // Handle the failures
+        }
+    }
+};
 ```
 
 ## Getting the coordinate system for a QR code
@@ -141,7 +143,7 @@ std::vector<float3> MyApplication::CreateRectangle(float width, float height)
 You can use the physical size to create the QR rectangle:
 
 ```cpp
-std::vector<float3> qrVertices = CreateRectangle(code.PhysicalSizeMeters(), code.PhysicalSizeMeters()); 
+std::vector<float3> qrVertices = CreateRectangle(code.PhysicalSideLength(), code.PhysicalSideLength()); 
 ```
 
 The coordinate system can be used to draw the QR code or attach holograms to the location:
@@ -158,7 +160,7 @@ Altogether, your *QRCodeAddedHandler* may look something like this:
 void MyApplication::OnAddedQRCode(const QRCodeAddedEventArgs& args)
 {
     QRCode code = args.Code();
-    std::vector<float3> qrVertices = CreateRectangle(code.PhysicalSizeMeters(), code.PhysicalSizeMeters());
+    std::vector<float3> qrVertices = CreateRectangle(code.PhysicalSideLength(), code.PhysicalSideLength());
     std::vector<unsigned short> qrCodeIndices = TriangulatePoints(qrVertices);
     XMFLOAT3 qrAreaColor = XMFLOAT3(DirectX::Colors::Aqua);
 
@@ -166,7 +168,7 @@ void MyApplication::OnAddedQRCode(const QRCodeAddedEventArgs& args)
     std::shared_ptr<SceneObject> m_qrShape =
         std::make_shared<SceneObject>(
             m_deviceResources,
-            reinterpret_cast<std::vector<XMFLOAT3>&>(qrVertices),
+            qrVertices,
             qrCodeIndices,
             qrAreaColor,
             qrCoordinateSystem);
