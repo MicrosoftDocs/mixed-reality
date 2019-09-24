@@ -84,7 +84,7 @@ Below we present an example of a structure in both its flat and logical form.
 
 This illustration highlights the difference between the physical and logical layout of the Scene. On the right we see the hierarchical layout of the data that your application sees when enumerating the scene. On the left we see that the scene is actually comprised of 12 distinct components that are accessible individually if necessary. When processing a new scene, we expect applications to walk this hierarchy logically, however when tracking between scene updates, some applications may only be interested in targeting specific components that are shared between two scenes.
 
-## High-level Overview
+## High-level overview
 
 The following section provides a high-level overview of the constructs in Scene Understanding. Reading this section will give you an  understanding of how scenes are represented, and what the various components do/are used for. The next section will provide concrete code examples and additional details that are glossed over in this overview.
 
@@ -354,9 +354,9 @@ mesh.GetVertexPositions(positions);
 
 The index/vertex buffers must be >= the index/vertex counts, but otherwise can be arbitrarily sized allowing for efficient memory re-use.
 
-## Developing with Scene Understandings
+## Developing with scene understandings
 
-At this point you should understand the core building blocks of the Scene Understanding runtime and SDK. The bulk of the power and complexity lies in access patterns, interaction with 3d frameworks, and tools that can be written on top of these APIs to perform more advanced tasks like spatial planning, room analysis, navigation, physics etc... We hope to capture these in samples that should hopefully guide you in the proper direction to make your scenarios shine. If there are samples/scenarios we are not addressing, please let us know and we will try to document/prototype what you need.
+At this point you should understand the core building blocks of the scene understanding runtime and SDK. The bulk of the power and complexity lies in access patterns, interaction with 3D frameworks, and tools that can be written on top of these APIs to perform more advanced tasks like spatial planning, room analysis, navigation, physics etc... We hope to capture these in samples that should hopefully guide you in the proper direction to make your scenarios shine. If there are samples/scenarios we are not addressing, please let us know and we will try to document/prototype what you need.
 
 ## See also
 
