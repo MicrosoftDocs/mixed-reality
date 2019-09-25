@@ -183,7 +183,7 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 
 ## See also
 
-* [Development overview](development-overview.md)
+* [Development overview](development.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md)
 * [Unity development overview](unity-development-overview.md)
