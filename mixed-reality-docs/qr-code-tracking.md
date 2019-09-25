@@ -57,7 +57,7 @@ There is a sample Unity app that displays a holographic square over QR codes, al
 
 ### Detecting QR codes in C++
 
-```
+```cpp
 using namespace winrt::Windows::Foundation;
 using namespace winrt::Microsoft::MixedReality::QR;
 
