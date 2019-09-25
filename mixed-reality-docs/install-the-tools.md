@@ -39,7 +39,7 @@ We recommend installing the Unity game engine as the easiest way to get started 
 
 :::row:::
     :::column:::
-       [![Unity](images/visualstudio_logo.png)](https://unity3d.com/unity/qa/lts-releases?version=2018.4)<br>
+       [![Unity](images/unity_logo.png)](https://unity3d.com/unity/qa/lts-releases?version=2018.4)<br>
         **[Unity](https://unity3d.com/unity/qa/lts-releases?version=2018.4)**<br>
         <p> We typically recommend the Unity LTS (Long Term Support) stream as the best version with which to start new projects, updating to its latest revision to pick up the latest stable fixes.<br> <br>The current recommendation is to use **Unity 2018.4.x**, which is the LTS build required for MRTK v2 below.<br> <br>Some developers might want to use a different version of Unity for specific reasons. For those cases, Unity supports side-by-side installs of different versions.</p>
     :::column-end:::
