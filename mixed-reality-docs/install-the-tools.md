@@ -55,6 +55,7 @@ We recommend installing the Unity game engine as the easiest way to get started 
     :::column-end:::
 :::row-end:::
 
+<br>
 
 ## Mixed Reality Toolkit (MRTK)
 
