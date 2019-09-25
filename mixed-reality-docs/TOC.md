@@ -193,6 +193,7 @@
 #### [Voice input](voice-input-in-directx.md)
 #### [Spatial sound](spatial-sound-in-directx.md)
 #### [Spatial mapping](spatial-mapping-in-directx.md)
+#### [Scene understanding](scene-understanding-sdk.md)
 #### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
 #### [Keyboard, mouse, and controller input](keyboard,-mouse,-and-controller-input-in-directx.md)
 #### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
