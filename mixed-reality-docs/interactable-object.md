@@ -37,6 +37,8 @@ You can use techniques such as highlighting or scaling to provide visual cue to 
 ![Example of visualizing observation state, targeted state, and pressed state](images/640px-interactibleobject-states.png)<br>
 *Example of visualizing observation state, targeted state, and pressed state*
 
+<br>
+
 ![Observation state, targeted state, and pressed state on holographic button](images/MRTK_InteractableState.png)<br>
 *Observation state, targeted state, and pressed state on holographic button*
 
@@ -81,7 +83,8 @@ For any interactable objects, it is important to support alternative interaction
 
 <img src="images/640px-interactibleobject-voicecommand.jpg" alt="Tooltip for the voice command" title="Tooltip for the voice command" width="350"><br/>*Tooltip for the voice command*
 
-## Sizing
+## Sizing recommendations 
+
 To ensure that all interactable objects can easily be touched by users, we recommend that you make sure the interactable meets a minimum size (the visual angle often measured in degrees of visual arc) based on the distance it is placed from the user. Visual angle is based on the distance between the user's eyes and the object and stays constant, while the physical size of the target may change as the distance from the user changes. To determine the necessary physical size of an object based on the distance from the user, try using a visual angle calculator such as [this one](http://elvers.us/perception/visualAngle/).
 
 Below are the recommendations for minimum sizes of interactable content.
