@@ -12,7 +12,7 @@ keywords: sideload, side load, side-load, store, uwp, app, install
 
 # Get apps for HoloLens
 
-As a Windows 10 device, HoloLens supports many existing UWP applications from the app store, as well as new apps built specifically for HoloLens. On top of these, you may even want to [develop](development-overview.md) and install your own apps or those of your friends!
+As a Windows 10 device, HoloLens supports many existing UWP applications from the app store, as well as new apps built specifically for HoloLens. On top of these, you may even want to [develop](development.md) and install your own apps or those of your friends!
 
 ## Installing Apps
 

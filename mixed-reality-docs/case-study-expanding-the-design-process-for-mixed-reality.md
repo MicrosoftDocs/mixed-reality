@@ -1,14 +1,14 @@
 ---
-title: Case study - Expanding the design process for mixed reality
+title: Design process for mixed reality
 description: Adding techniques to your design process to help your team think spatially and more easily envision mixed reality experiences.
-author: mavitazk
-ms.author: mavitazk
+author: danielescudero
+ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Windows Mixed Reality, design, process, case study
 ---
 
-# Case study: Expanding the design process for mixed reality
+# Expand your design process
 
 As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design.
 

@@ -1,181 +1,212 @@
 ---
 layout: LandingPage
-title: Mixed Reality documentation
-description: Learn to build mixed reality experiences for HoloLens and immersive headsets.
-author: varnauld 
-ms.author: vanesa
-ms.date: 02/24/2019
-ms.topic: article
+title: Get started with Mixed Reality
+description: I’m brand new to mixed reality. I would like to learn about what it is and understand it’s capabilities.
+author: grbury 
+ms.author: grbury
+ms.date: 08/24/2019
+ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
 ---
 
-# Mixed Reality documentation
+# Get started with Mixed Reality
 
-Mixed reality blends real-world and virtual content into hybrid environments where physical and digital objects coexist and interact. Learn to build mixed reality experiences for Microsoft HoloLens and Windows Mixed Reality immersive headsets (VR).
+## Choose your track
+
+
+:::row:::
+    :::column:::
+       [![I'm new to mixed reality](images/Tile-New.jpg)](index.md#understand-the-basics)<br>
+        **[I'm new to mixed reality](index.md#understand-the-basics)**<br>
+        Understand the basics
+    :::column-end:::
+    :::column:::
+       [![I'm a designer](images/Tile-Create.jpg)](design.md)<br>
+        **[I'm a designer](design.md)**<br>
+        Start designing and prototyping
+    :::column-end:::
+    :::column:::
+       [![I'm a developer](images/Tile-Develop.jpg)](development.md)<br>
+        **[I'm a developer](development.md)**<br>
+        Learn the tools and architecture
+    :::column-end:::
+    :::column:::
+       [![Jump in with Unity and MRTK](images/Tile-JumpIn.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)<br>
+        **[Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)**<br>
+        Optimize Unity for MR development
+    :::column-end:::
+:::row-end:::
+
 
 <br>
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                            <a href="design.md" title="Design landing" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/DesignIcon.png" alt="Design icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Design</h3>
-                                                    <p>Get design guidance, build user interface and learn interaction and input.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                               </a>
-                            </li>
-                            <li>
-                             <a href="development.md" title="Development landing" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/DevelopIcon.png" alt="Develop icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>Develop</h3>
-                                              <p>Get development guides, learn the technology, and understand the science.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                               </a>
-                            </li>
-                             <li>
-                              <a href="implementing-3d-app-launchers.md" title="Distribute" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/DistributeIcon.png" alt="Distribute icon">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Distribute</h3>
-                                                  <p>Get your application ready for others and consider creating a 3D launcher.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
- </ul>
+---
 
-<h2>Services</h2>
+<br>
 
-<ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
-                            <li>
-                              <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank" title="Azure Spatial Anchors" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/AzureSpatialAnchors.jpg" alt="Azure Spatial Anchors image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Azure Spatial Anchors</h3>
-                                                  <p>Spatial Anchors is a cross-platform developer service that lets you create mixed reality experiences using objects that persist their location across devices over time.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                            <li>
-                              <a href="https://docs.microsoft.com/azure/cognitive-services/speech-service/" target="_blank" title="Speech Services" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/speech.jpg" alt="Speech Services image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Speech Services</h3>
-                                                  <p>Discover and integrate Azure powered speech capabilities like speech to text, speaker recognition, or speech translation into your application.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-                             <li>
-                              <a href="https://docs.microsoft.com/azure/cognitive-services/computer-vision/" target="_blank" title="Vision Services" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img src="images/vision.jpg" alt="Vision Services image">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3 class="x-hidden-focus">Vision Services</h3>
-                                                  <p>Identify and analyze your image or video content using Vision Services like computer vision, face detection, emotion recognition, or video indexer.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </a>
-                            </li>
-</ul>
+# Understand the basics
 
-<h2>Introducing HoloLens 2</h2>
+I’m brand new to mixed reality. I would like to learn about what it is and understand its capabilities.
 
-[![HoloLens 2](images/hololens2.jpg)](https://www.microsoft.com/hololens/hardware)
 
-[HoloLens 2](https://www.microsoft.com/hololens/hardware) offers the most comfortable and immersive mixed reality experience available with industry-leading solutions that deliver value in minutes. All backed by the reliability, security, and scalability of cloud and AI services from Microsoft. The [HoloLens 2 Development Edition](https://www.microsoft.com/en-us/hololens/developers) helps you jump-start your mixed reality plans with an offer that combines HoloLens 2 with free trials of Unity software and Azure credits for cloud services.
 
-<h2>News and notes</h2>
+![mixed reality spectrum](images/RWtpZ1.jpeg)
 
-<h3>June 2019</h3>
+## What is mixed reality?
 
-As promised, we are excited to share more mixed reality goodness with you! We’re looking forward to hearing your feedback and would like to invite you to [join the conversation](https://holodevelopersslack.azurewebsites.net/) around topics you’d like to see from us, people you would like to hear from, tutorials or how-to’s that you would need… You can also reach out to us via [Twitter](https://twitter.com/MxdRealityDev), and [join our developer program](https://aka.ms/iwantmr) for direct updates on new docs, tools, events and more. Stay tuned, there's more to come!
 
-<table>
-<tr>
-<th style="width: 400px; text-align:left;">Content</th><th style="width: 125px; text-align:left;">Delivery</th><th style="width: 125px; text-align:left;">NOW LIVE!</th>
-</tr> 
-<tr>
-<td><b>Porting Guides</b> <br>1. HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) to MRTK Version 2
-<br>2. HoloLens (1st gen) to HoloLens 2 (x86 to ARM, interaction and design recommendations)
-</td></td><td>March - May 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-porting-guide>Getting your existing application ready for HoloLens 2</a><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html>HoloToolKit to MRTK APIs</a></td>
-</tr>
-<tr>
-<td>Monthly open source developer modules (Tutorials/Sample apps)</td><td>March - June 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1>MR learning base module</a></td>
-</tr>
-<tr>
-<td>Preview new capabilities in MRTK for HoloLens 2</td><td>April 2019</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>MRTK docs</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-getting-started>Getting started with MRTK v2</a></td>
-</tr>
-<tr>
-<td>Design and development guidance for HoloLens 2</td><td>April 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools>Install the tools</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator>HoloLens 2 emulator</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/interaction-fundamentals>Instinctual interactions design guidance</a></td>
-</tr>
-<tr>
-  <td>More information on Unreal</td><td>May 2019</td><td> <ul><li><a href=https://www.unrealengine.com/en-US/blog/unreal-engine-4-support-for-hololens-2-released-in-early-access>Unreal Engine 4 early access</a></td>
-</tr>
-</table>
+### [Mixed reality is a spectrum](mixed-reality.md)
+Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations.
+
+<br>
+
+
+### [What is a hologram?](hologram.md)
+HoloLens lets you create holograms, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
+
+<br>
+
+
+---
+
+<br>
+
+![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
+
+## What can you do with mixed reality?
+
+### [A new vision for work](https://dynamics.microsoft.com/en-us/mixed-reality/overview/)
+Internally at Microsoft we are creating mixed reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities: Remote Assist, Layout and Guides.
+
+<br>
+
+### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
+Tomorrow’s opportunities are uncovered by building products today. The solutions these products provide reveal what’s necessary to advance the future. With mixed reality this is especially true: Meaningful insight comes from getting hands-on with real work — real devices, real customers, real problems.
+
+
+<br>
+
+
+
+## See how industry partners are using mixed reality
+
+
+:::row:::
+    :::column:::
+       [![Bentley](images/Bentley-Synchro1.jpg)](https://binged.it/31AR3kP)
+    :::column-end:::
+    :::column span="2":::
+        ### [View complex construction projects with Bentley's digital construction software](https://binged.it/31AR3kP)
+        Synchro is digital construction software that enables viewing complex construction projects in mixed reality. Their 4D digital construction platform combines traditional Gantt chart CPM scheduling with integrated 4D visualization capabilities in real time.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![PTC's Vuforia Studio](images/PTC-Vuforia-Studio1.jpg)](https://binged.it/31ARrjh)
+    :::column-end:::
+    :::column span="2":::
+        ### [PTC's Vuforia Studio authoring solution promotes workforce productivity and safety](https://binged.it/31ARrjh)
+        Vuforia Studio's efficient mixed reality authoring solution promotes workforce productivity and safety by delivering information when and where workers need it most: in the real-world context of their daily work environment.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![Philips-Azurion](images/Philips-Azurion1.jpg)](https://binged.it/31B1RiR)
+    :::column-end:::
+    :::column span="2":::
+        ### [Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures](https://binged.it/31B1RiR)
+        Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+<br>
+
+---
+
+<br>
+
+![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
+
+## What are the capabilities of HoloLens?
+
+### [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com/en-us/hololens/hardware)
+
+HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
+
+<br>
+
+---
+
+<br>
+
+![core experiences](images/text_in_unity_viewingangle.jpg)
+
+## What are the core concepts of an experience?
+
+### [Keep the user comfortable - (Comfort)](comfort.md)
+To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
+
+<br>
+
+### [How the user sees the world - (Holographic frame)](holographic-frame.md)
+Users see the world of mixed reality through a rectangular viewport powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them.
+
+<br>
+
+### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
+Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
+
+<br>
+
+### [Suggesting the scale of an object - (Scale)](scale.md)
+A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
+
+
+<br>
+
+---
+
+## What would you like to do next?
+
+
+:::row:::
+    :::column:::
+       [![Try it out](images/icon-hololensuser.jpg)](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
+        **[Try out mixed reality](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
+        Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
+    :::column-end:::
+    :::column:::
+        [![Become a creator](images/icon-design.jpg)](design.md)<br>
+        **[Become a creator](design.md)**<br>
+        Learn the basic concepts you need to begin designing and prototyping.
+    :::column-end:::
+    :::column:::
+        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)<br>
+        **[Come to an event](sf-academy-events.md)**<br>
+        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
+    :::column-end:::
+    :::column:::
+        [![Start developing](images/icon-developer.jpg)](development.md)<br>
+        **[Start developing](development.md)**<br>
+        Choose a development path based on your skill level, work style or platform interest.
+    :::column-end:::
+:::row-end:::
+
+
+<br>
 
 <br>
 
 
 
 >[!IMPORTANT]
->All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the applicatioin developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
+>All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the application developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 

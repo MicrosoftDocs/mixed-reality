@@ -1,28 +1,36 @@
 ---
 layout: LandingPage
-title: Tutorials and Sample Apps
+title: Tutorials and sample apps
 description: Provides code samples and tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/21/2018
+ms.date: 03/26/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---
 
-# Tutorials and Sample Apps
+# Tutorials and sample apps
 
 Currently all of our tutorials and sample apps are Unity based.  As we develop content for other engines and platforms, you will find them under the relevant heading in the Table of Contents.
 
-## MR Learning Modules
+## HoloLens 2 tutorials
 
-The MR Learning Modules are designed to help developers learn both techniques and best practices for developing mixed reality applications.  The initial modules are for HoloLens 2 and implement the Mixed Reality Toolkit 2.0 (MRTK 2.0).
-* The base module is intended to show developers how to set up their project with MRTK, as well as implement UI, Spatial Mapping, and both basic and advanced interactions
+The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications.  The tutorials are based on the [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity).
 
-## Open Source Sample Apps
+* Getting started tutorials - [1 of 7 Overview and objectives](mrlearning-base.md)
+* Azure Spatial Anchor tutorials - [1 of 3 Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
+* Azure Speech Services tutorials - [1 of 4 Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
+* Multi-user capabilities tutorials - [1 of 5 Setting up Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
+
+## Open source sample apps
 
 The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects.
 
-## Mixed Reality Academy Tutorials
+* [Periodic Table of the Elements](periodic-table-of-the-elements.md)
+* [Lunar Module](lunar-module.md)
+* [Galaxy Explorer](galaxy-explorer.md)
+
+## Mixed Reality Academy tutorials
 
 The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files: 
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.

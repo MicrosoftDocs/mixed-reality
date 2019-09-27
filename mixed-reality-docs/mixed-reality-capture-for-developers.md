@@ -12,7 +12,7 @@ keywords: mrc, photo, video, capture, camera
 
 # Mixed reality capture for developers
 
-> [NOTE!]
+> [!NOTE]
 > See [Render from the PV camera](#render-from-the-pv-camera-opt-in) below for guidance on a new MRC capability for HoloLens 2.
 
 Since a user could take a [mixed reality capture](mixed-reality-capture.md) (MRC) photo or video at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.

@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
 
 # Getting your existing application ready for HoloLens 2
 
-This guide is tailored to help developers who have an existing Unity application for HoloLens (1st Gen) to port their application for the HoloLens 2 device. There are four key steps to porting a HoloLens (1st Gen) Unity application to HoloLens 2. The sections below  detail information for each stage. 
+This guide is tailored to help developers who have an existing Unity application for HoloLens (1st gen) to port their application for the HoloLens 2 device. There are four key steps to porting a HoloLens (1st gen) Unity application to HoloLens 2. The sections below  detail information for each stage. 
 
 | Step 1 | Step 2 | Step 3 | Step 4 |
 |----------|-------------------|-------------------|-------------------|
@@ -34,7 +34,7 @@ To help clarify additional differences between [Unity 2018 LTS](https://unity3d.
 Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project, and whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, then you will have to use Unity 2018 LTS.
 
 
-| Unity 2018.3.x | Unity 2019.1+ |
+| Unity 2018.4.x | Unity 2019.1+ |
 |----------|-------------------|
 | ARM32 build support | ARM32 and ARM64 build support |
 | Stable LTS build release | Beta stability |
@@ -51,11 +51,11 @@ It should be re-iterated that the [.NET scripting back-end](https://docs.unity3d
 > IL2CPP scripting back-end can cause longer build times from Unity to Visual Studio, and developers should set up their developer machine for [optimizing IL2CPP build times](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).
 > It might also be beneficial to set up a [cache server](https://docs.unity3d.com/Manual/CacheServer.html), especially for Unity projects with a large amount of assets (excluding script files) or constantly changing scenes and assets. When opening a project, Unity stores qualifying assets into an internal cache format on the developer machine. Items must be re-imported and re-processed when modified. This process can be done once and saved in a cache server and consequently shared with other developers to save time, as opposed to every developer processing the re-import of new changes locally.
 
-After addressing any breaking changes after moving to the updated Unity version, developers should build and test their current applicationss on HoloLens (1st Gen). This is a good time to create and save a commit into source control. 
+After addressing any breaking changes after moving to the updated Unity version, developers should build and test their current applicationss on HoloLens (1st gen). This is a good time to create and save a commit into source control. 
 
 ## Compile dependencies/plugins for ARM processor
 
-HoloLens (1st Gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Therfore, existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling for ARM32 apps while Unity 2019.x supports compiling for ARM64 apps. Developing for ARM64 applications is generally preferred as there is a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64. 
+HoloLens (1st gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Therfore, existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling for ARM32 apps while Unity 2019.x supports compiling for ARM64 apps. Developing for ARM64 applications is generally preferred as there is a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64. 
 
 Review all DLL dependencies in your application. It is advisable to remove from your project any depencency that is no longer needed. For remaining plugins that are required, ingest the respective ARM32 or ARM64 binaries into your Unity project. 
 
@@ -99,14 +99,14 @@ For more information on specific API differences between HTK/MRTK and MRTK Versi
 
 ### Testing your application
 
-Now that HoloLens 2 components and capabilities are available in MRTK Version 2, as of [RC1](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/tag/v2.0.0-RC1), you can simulate hand interactions directly in Unity as well as develop with the new APIs for hand interactions and eye tracking. The HoloLens 2 device is required to create a satisfying user experience. Your are encouraged to start studying the documentation and tools for greaer understanding. [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) supports development on HoloLens (1st Gen), and traditional input models, such as select via air-tap can be tested on HoloLens (1st Gen). 
+Now that HoloLens 2 components and capabilities are available in MRTK Version 2, as of [RC1](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/tag/v2.0.0-RC1), you can simulate hand interactions directly in Unity as well as develop with the new APIs for hand interactions and eye tracking. The HoloLens 2 device is required to create a satisfying user experience. Your are encouraged to start studying the documentation and tools for greaer understanding. [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) supports development on HoloLens (1st gen), and traditional input models, such as select via air-tap can be tested on HoloLens (1st gen). 
 
-## Updating interaction model for HoloLens 2
+## Updating your interaction model for HoloLens 2
 
-Once your your application is ported and prepped for HoloLens 2, you're ready to consider updating your interaction model and hologram design placements.
-In HoloLens (1st Gen), your application likely has a gaze and commit interaction model with holograms relatively far away to fit into the field of view.
+Once your application is ported and prepped for HoloLens 2, you're ready to consider updating your interaction model and hologram design placements.
+In HoloLens (1st gen), your application likely has a gaze and commit interaction model with holograms relatively far away to fit into the field of view.
 
-Steps to update your applicaiton design to be best suited for HoloLens 2:
+Steps to update your application design to be best suited for HoloLens 2:
 1.	MRTK components: Per the pre-work, if you added [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), there are various components/scripts to leverage that have been designed and optimized for HoloLens 2.
 
 2.	Interaction model: Consider updating your interaction model. For most scenarios, we recommend switching from gaze and commit to hands. With your holograms typically being out of arms reach, switching to hands results in far interaction pointing rays and grab gestures.
@@ -124,13 +124,13 @@ Every application and scenario is different, and we’ll continue to refine and 
 
 - In some cases, a UWP/ARM plugin might not exist for application-required plugins, which blocks the ability to port the application and run it on HoloLens 2. Contact your plugin provider to resolve the issue and provide support for ARM.
 
-- The minfloat (and variants such as min16float, minint, etc…) in shaders might behave differently on HoloLen 2 than on HoloLens (1st Gen). Specifically, these guarantee that at least the specified number of bits will be used. On Intel/Nvidia GPUs for instance, these are largely just treated as 32 bits. On ARM, the number of bits specified is actually adhered to. That means in practice, these numbers might have less precision or range on HoloLens 2 than they did on HoloLens (1st Gen).
+- The minfloat (and variants such as min16float, minint, etc…) in shaders might behave differently on HoloLen 2 than on HoloLens (1st gen). Specifically, these guarantee that at least the specified number of bits will be used. On Intel/Nvidia GPUs for instance, these are largely just treated as 32 bits. On ARM, the number of bits specified is actually adhered to. That means in practice, these numbers might have less precision or range on HoloLens 2 than they did on HoloLens (1st gen).
 
 - The _asm instructions don’t appear to work on ARM, meaning any code using _asm instructions must be rewritten.
 
 - The SIMD instruction set is not supported on ARM because various headers, such as xmmintrin.h, emmintrin.h, tmmintrin.h, and immintrin.h, are not available on ARM.
 
-- The shader compiler on ARM runs during the first draw call after the shader has been loaded or something the shader relies on has changed, not at shader load time. The impact on framerate can be very noticeable, depending on how many shaders need to be compiled. This has various implications for how shaders should be handled, packaged, updated differently on HoloLens 2 vs HoloLens (1st Gen).
+- The shader compiler on ARM runs during the first draw call after the shader has been loaded or something the shader relies on has changed, not at shader load time. The impact on framerate can be very noticeable, depending on how many shaders need to be compiled. This has various implications for how shaders should be handled, packaged, updated differently on HoloLens 2 vs HoloLens (1st gen).
 
 ## See also
 * [Install the tools](install-the-tools.md)

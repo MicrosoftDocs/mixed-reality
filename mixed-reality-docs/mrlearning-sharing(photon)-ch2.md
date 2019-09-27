@@ -1,9 +1,19 @@
+---
+title: Multi-user capabilities tutorials - 2. Getting Unity ready for development 
+description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
+author: jessemcculloch
+ms.author: jemccull
+ms.date: 02/26/2019
+ms.topic: article
+keywords: mixed reality, unity, tutorial, hololens
+---
+
 # 2. Getting Unity ready for development 
 
 
 In this tutorial, we learn how to prepare and configure Unity for application development, including importing the Mixed Reality Toolkit, configuring build settings, and preparing our scene.
 
-Objectives:
+## Objectives
 
 - Configure Unity for application development
 

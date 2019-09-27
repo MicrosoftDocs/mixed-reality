@@ -1,5 +1,5 @@
 ---
-title: MR Learning Base Module - Project Initialization and First Application
+title: Getting started tutorials - 2. Initializing your project and first application
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
