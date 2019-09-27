@@ -68,7 +68,7 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
 
 <br>
 
-On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot on press state. This visual affordance helps the user understand how far they are from the object.
+On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.
 
 ![Fingertip ring visualization](images/640px-interactibleobject-pressablebutton-650px3.jpg)<br>
 *Fingertip ring visualization in HoloLens 2*
