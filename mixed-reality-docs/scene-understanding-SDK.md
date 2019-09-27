@@ -18,7 +18,9 @@ The SceneUnderstanding SDK is downloadable via NuGet.
 
 [SceneUnderstanding SDK](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
 
-Before you begin please note that the SDK runs on top of the UWP, and requires Windows SDK version 18362 or higher. 
+Before you begin please note that the SDK runs on top of the UWP, and requires Windows SDK version 18362 or higher. If you are using the SDK in a Unity project, please use [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity) to install the package into your project.
+
+## Conceptual Overview
 
 ### The Scene
 
@@ -84,9 +86,11 @@ Below we present an example of a structure in both its flat and logical form.
 
 This illustration highlights the difference between the physical and logical layout of the Scene. On the right we see the hierarchical layout of the data that your application sees when enumerating the scene. On the left we see that the scene is actually comprised of 12 distinct components that are accessible individually if necessary. When processing a new scene, we expect applications to walk this hierarchy logically, however when tracking between scene updates, some applications may only be interested in targeting specific components that are shared between two scenes.
 
-## High-level overview
+## API overview
 
 The following section provides a high-level overview of the constructs in Scene Understanding. Reading this section will give you an  understanding of how scenes are represented, and what the various components do/are used for. The next section will provide concrete code examples and additional details that are glossed over in this overview.
+
+All of the types described below reside in the `Microsoft.MixedReality.SceneUnderstanding` namespace.
 
 ### SceneComponents
 
@@ -123,8 +127,6 @@ A SceneMesh is a SceneComponent that approximates the geometry of arbitrary geom
 A SceneQuad is a SceneComponent that represents 2d surfaces that occupy the 3d world. SceneQuads can be used similarly to ARKit ARPlaneAnchor or ARCore Planes but they offer more high level functionality as 2d canvases to be used by flat apps, or augmented UX. 2D specific APIs are provided for quads that make placement and layout simple to use, and developing (with the exception of rendering) with quads should feel more akin to working with 2d canvases than 3d meshes.
 
 ## Scene understanding SDK details and reference
-
-### SDK
 
 The following section will help get you familiar with the basics of SceneUnderstanding. This section should provide you with the basics, at which point you should have enough context to browse through the sample applications to see how SceneUnderstanding is used holistically.
 
@@ -169,10 +171,12 @@ While Scenes can be computed for direct consumption, they can also be computed i
 SceneUnderstanding.QuerySettings querySettings;
 
 // Compute a scene but serialized as a byte array
-byte[] newSceneBlob = SceneObserver.ComputeSerialized(querySettings, 10.0f);
+SceneBuffer newSceneBuffer = SceneObserver.ComputeSerialized(querySettings, 10.0f);
 
-// If we want to use it immediatley we can de-serialize the scene ourselves
-Scene mySceneDeSerialized = Scene.Deserialize(newSceneBlob);
+// If we want to use it immediately we can de-serialize the scene ourselves
+byte[] newSceneData = new byte[newSceneBuffer.Size];
+newSceneBuffer.GetData(newSceneData);
+Scene mySceneDeSerialized = Scene.Deserialize(newSceneData);
 
 // Save newSceneBlob for later
 ```
@@ -200,7 +204,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 There is another function that retrieves components in the Scene called ***FindComponent***. This function is useful when updating tracking objects and finding them in subsequent scenes. The following code will compute a new scene relative to a previous scene and then find the floor in the new scene.
 
 ```cs
-// Compute a new scene, but tell the system that we want to compute relative to the previous scene
+// Compute a new scene, and tell the system that we want to compute relative to the previous scene
 Scene myNextScene = SceneObserver.Compute(querySettings, 10.0f, myScene);
 
 // Use the Id for the floor we found last time, and find it again
@@ -238,20 +242,18 @@ Notice that it is the SceneObject that has the transform that is relative to the
 
 ### Dealing with Transforms
 
-Scene Understanding has made a deliberate attempt to align with traditional 3D scene representations when dealing with transforms. Each Scene is therefore confined to a single coordinate system much like most common 3D environmental representations. If your application is dealing with Scenes that stretch the limit of what a single origin provides it can anchor SceneObjects to SpatialAnchors, or generate several scenes and merge them together, but for simplicity we assume that watertight scenes exist in their own origin that's localized by one NodeId defined by Scene::OriginSpatialGraphNodeId.
+Scene Understanding has made a deliberate attempt to align with traditional 3D scene representations when dealing with transforms. Each Scene is therefore confined to a single coordinate system much like most common 3D environmental representations. If your application is dealing with Scenes that stretch the limit of what a single origin provides it can anchor SceneObjects to SpatialAnchors, or generate several scenes and merge them together, but for simplicity we assume that watertight scenes exist in their own origin that's localized by one NodeId defined by Scene.OriginSpatialGraphNodeId.
 
-The following unity code, for example, shows how to use windows perception and Unity APIs to align coordinate systems together:
-
+The following unity code, for example, shows how to use Windows Perception and Unity APIs to align coordinate systems together. See [SpatialCoordinateSystem](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](https://docs.microsoft.com/en-us/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) for details on the Windows Perception APIs, and [Mixed Reality native objects in Unity](https://docs.microsoft.com/en-us/windows/mixed-reality/unity-xrdevice-advanced) for details on obtaining a SpatialCoordinateSystem that corresponds to Unity's world origin.
 
 ```cs
-    public static System.Numerics.Matrix4x4? GetSceneToUnityTransform(Guid nodeId)
+    public static System.Numerics.Matrix4x4? GetSceneToUnityTransform(SpatialCoordinateSystem unityWorldOrigin, Guid nodeId)
     {
         System.Numerics.Matrix4x4? sceneToUnityTransform; 
        
         SpatialCoordinateSystem sceneSpatialCoordinateSystem = Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(nodeId);
-        SpatialCoordinateSystem unitySpatialCoordinateSystem = (SpatialCoordinateSystem)System.Runtime.InteropServices.Marshal.GetObjectForIUnknown(UnityEngine.XR.WSA.WorldManager.GetNativeISpatialCoordinateSystemPtr());
 
-        sceneToUnityTransform = sceneSpatialCoordinateSystem.TryGetTransformTo(unitySpatialCoordinateSystem);
+        sceneToUnityTransform = sceneSpatialCoordinateSystem.TryGetTransformTo(unityWorldOrigin);
 
         if (sceneToUnityTransform != null)
         {
@@ -283,14 +285,14 @@ The following unity code, for example, shows how to use windows perception and U
 And the following code calls this function:
 
 ```cs
-System.Numerics.Matrix4x4? sceneToUnityTransform = TransformUtils.GetSceneToUnityTransform(scene.OriginSpatialGraphNodeId);
+System.Numerics.Matrix4x4? sceneToWorldTransform = TransformUtils.GetSceneToUnityTransform(unityWorldOrigin, scene.OriginSpatialGraphNodeId);
 
 // Set the root transform
 Vector3 t;
 Quaternion r;
 Vector3 s;
 
-System.Numerics.Matrix4x4.Decompose(sceneToUnityTransform, out s, out r, out t);
+System.Numerics.Matrix4x4.Decompose(sceneToWorldTransform, out s, out r, out t);
 SceneRoot.Transform.SetPositionAndRotation(t, r);
 ```
 
@@ -337,7 +339,7 @@ Meshes represent geometric representations of objects or environments. Much like
 
 ```cs
 void GetTriangleIndices(int[] indices);
-void GetVertices(float[] vertices);
+void GetVertices(System.Numerics.Vector3[] vertices);
 ```
 
 **Note: GetVertices returns a list of vertices where every 3-tuple of floating point values represents a single coordinate in cartesian x,y and z space.
@@ -346,7 +348,7 @@ The following code provides an example of generating a triangle list from the me
 
 ```cs
 uint[] indices = new uint[mesh.TriangleIndexCount];
-float[] positions = new float[mesh.VertexCount * 3];
+System.Numerics.Vector3[] positions = new float[mesh.VertexCount];
 
 mesh.GetTriangleIndices(indices);
 mesh.GetVertexPositions(positions);
