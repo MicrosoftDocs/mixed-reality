@@ -213,6 +213,7 @@
 #### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 #### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 #### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
+#### [Version History](holographic-remoting-version-history.md)
 #### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 #### Holographic Remoting for HoloLens 1
 #### [Add Holographic Remoting](add-holographic-remoting.md)
