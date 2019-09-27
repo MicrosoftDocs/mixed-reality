@@ -19,11 +19,11 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 
 ## Important properties of the interactable object
 
-### Visual cue
+### Visual cues
 
 Visual cues are sensory cues received by the eye in the form of light and processed by the visual system during visual perception. Since the visual system is dominant in many species, especially humans, visual cues are a large source of information in how the world is perceived.
 
-In mixed reality, since the holographic objects are mixed with the real-world environment, it could be difficult to understand which objects are interactable. For any interactable objects in your experience, it is important to provide differentiated visual cue for each input state. This helps the user understand which part of your experience is interactable and makes the user confident with consistent interaction method.
+Since the holographic objects are blended with the real-world environment in mixed reality, it could be difficult to understand which objects you can interact with. For any interactable objects in your experience, it is important to provide differentiated visual cues for each input state. This helps the user understand which part of your experience is interactable and makes the user confident by using a consistent interaction method.
 
 #### Far interactions
 
@@ -32,7 +32,7 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
 * **Targeted (Hover)**: When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
 * **Pressed**: When the object is pressed with air-tap gesture, finger press or motion controller's select button.
 
-You can use techniques such as highlighting or scaling to provide visual cue to the user’s input states. In Windows Mixed Reality, you can find the examples of visualizing different input states on Start menu and App Bar buttons. 
+You can use techniques such as highlighting or scaling to provide visual cues for the user’s input state. In mixed reality, you can find the examples of visualizing different input states on the Start menu and with app bar buttons. 
 
 ![Example of visualizing observation state, targeted state, and pressed state](images/640px-interactibleobject-states.png)<br>
 *Example of visualizing observation state, targeted state, and pressed state*
