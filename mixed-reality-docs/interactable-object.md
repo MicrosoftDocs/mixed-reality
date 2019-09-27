@@ -25,7 +25,7 @@ Visual cues are sensory cues received by the eye in the form of light and proces
 
 Since the holographic objects are blended with the real-world environment in mixed reality, it could be difficult to understand which objects you can interact with. For any interactable objects in your experience, it is important to provide differentiated visual cues for each input state. This helps the user understand which part of your experience is interactable and makes the user confident by using a consistent interaction method.
 
-#### Far interactions
+### Far interactions
 
 For any objects that user can interact with gaze, hand ray, and motion controller's ray, we recommend to have different visual cue for these three input states:
 * **Default (Observation)**: Default idle state of the object.
@@ -42,7 +42,7 @@ You can use techniques such as highlighting or scaling to provide visual cues fo
 ![Observation state, targeted state, and pressed state on holographic button](images/MRTK_InteractableState.png)<br>
 *Observation state, targeted state, and pressed state on holographic button*
 
-#### Near interactions (direct) 
+### Near interactions (direct) 
 
 HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception sometimes it can be hard to tell how far away your hand is from an object, or whether you are touching. It is important to provide enough visual cues to communicate the state of the object and in particular of your hands in relation to holograms.
 
