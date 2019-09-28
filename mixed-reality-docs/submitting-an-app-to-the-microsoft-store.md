@@ -232,7 +232,7 @@ Many consumers will have limited to no experience with virtual reality before bu
 
 ## See also
 * [Mixed reality](mixed-reality.md)
-* [Development overview](development-overview.md)
+* [Development overview](development.md)
 * [App views](app-views.md)
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Performance Recommendations for Unity](performance-recommendations-for-unity.md)

@@ -8,9 +8,9 @@ ms.topic: article
 keywords: Scene Understanding, Spatial Mapping, Windows Mixed Reality, Unity
 ---
 
-## Scene Understanding SDK Overview
+# Scene understanding SDK overview
 
-The goal of Scene Understanding is to transform the un-structured environment sensor data that your Mixed Reality device captures and to convert it into a powerful but abstracted representation that is intuitive and easy to develop for. The SDK acts as the communication layer between your application and the Scene Understanding runtime. It's aimed to mimic existing standard constructs such as 3d scene graphs for 3d representations and 2D rectangles/panels for 2d applications. While the constructs Scene Understanding mimics will map to concrete frameworks you may use, in general SceneUnderstanding is framework agnostic allowing for interop between varied frameworks that interact with it. As Scene Understanding evolves the role of the SDK is to ensure new representations and capabilities continue to be exposed within a unified framework. In this document we will first introduce high level concepts that will help you get familiar with the development environment/usage and then provide more detailed documentation for specific classes and constructs.
+The goal of Scene understanding is to transform the un-structured environment sensor data that your Mixed Reality device captures and to convert it into a powerful but abstracted representation that is intuitive and easy to develop for. The SDK acts as the communication layer between your application and the Scene Understanding runtime. It's aimed to mimic existing standard constructs such as 3d scene graphs for 3d representations and 2D rectangles/panels for 2d applications. While the constructs Scene Understanding mimics will map to concrete frameworks you may use, in general SceneUnderstanding is framework agnostic allowing for interop between varied frameworks that interact with it. As Scene Understanding evolves the role of the SDK is to ensure new representations and capabilities continue to be exposed within a unified framework. In this document we will first introduce high level concepts that will help you get familiar with the development environment/usage and then provide more detailed documentation for specific classes and constructs.
 
 ## Where do I get the SDK?
 
@@ -34,7 +34,7 @@ On the left hand side is a diagram of the mixed reality runtime which is always 
 
 Because each Scene stores it's data in your application's memory space, you can assume that all function of the Scene object or it's internal data is always executed in your application's process.
 
-#### Layout
+### Layout
 
 To work with Scene Understanding it may be valuable to know and understand how the runtime represents components logically and physically. The Scene represents data with a specific layout that was chosen to be simple while maintaining an underlying structure that is pliable to meet future requirements without needing major revisions. The Scene does this by storing all Components (building blocks for all Scene Objects) in a flat list and defining hierarchy and composition through references where specific components reference others.
 
@@ -84,17 +84,17 @@ Below we present an example of a structure in both its flat and logical form.
 
 This illustration highlights the difference between the physical and logical layout of the Scene. On the right we see the hierarchical layout of the data that your application sees when enumerating the scene. On the left we see that the scene is actually comprised of 12 distinct components that are accessible individually if necessary. When processing a new scene, we expect applications to walk this hierarchy logically, however when tracking between scene updates, some applications may only be interested in targeting specific components that are shared between two scenes.
 
-### High-level Overview
+## High-level overview
 
 The following section provides a high-level overview of the constructs in Scene Understanding. Reading this section will give you an  understanding of how scenes are represented, and what the various components do/are used for. The next section will provide concrete code examples and additional details that are glossed over in this overview.
 
-#### SceneComponents
+### SceneComponents
 
 Now that you understand the logical layout of scenes we can now present the concept of SceneComponents and how they are used to compose hierarchy. SceneComponents are the most granular decompositions in SceneUnderstanding representing a single core thing, e.g. a mesh or a quad or a bounding box. SceneComponents are things that can update independently and can be referenced by other SceneComponents, hence they have a single global property a unique Id, that allow for this type of tracking/referencing mechanism. Ids are used for the logical composition of scene hierarchy as well as object persistence (the act of updating one scene relative to another.) 
 
 If you are treating every newly computed scene as being distinct, and simply enumerating all data within it then Ids are largely transparent to you. However, if you are planning to track components over several updates you will use the Ids to index and find SceneComponents between Scene objects.
 
-#### SceneObjects
+### SceneObjects
 
 A SceneObject is a SceneComponent that represents an instance of a "thing" e.g. a wall, a floor, a ceiling, etc... expressed by their Kind property. SceneObjects are geometric, and therefore have functions and properties that represent their location in space, however they don't contain any geometric or logical structure. Instead, SceneObjects reference other SceneComponents, specifically SceneQuads and SceneMeshes which provide the varied representations that are supported by the system. When a new scene is computed, your application will most likely enumerate the Scene's SceneObjects to process what it's interested in.
 
@@ -114,21 +114,21 @@ SceneObjects can have any one of the following:
 </tr>
 </table>
 
-#### SceneMesh
+### SceneMesh
 
 A SceneMesh is a SceneComponent that approximates the geometry of arbitrary geometric objects using a triangle list. SceneMeshes are used in several different contexts, they can represent components of the watertight cell structure or as the WorldMesh which represents the unbounded Surface Reconstruction associated with the Scene. The index and vertex data provided with each mesh uses the same familiar layout as the [vertex and index buffers](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) that are used for rendering triangle meshes in all modern rendering APIs. Note that in Scene Understanding, meshes use 32-bit indices and may need to be broken up into chunks for certain rendering engines.
 
-#### SceneQuad
+### SceneQuad
 
 A SceneQuad is a SceneComponent that represents 2d surfaces that occupy the 3d world. SceneQuads can be used similarly to ARKit ARPlaneAnchor or ARCore Planes but they offer more high level functionality as 2d canvases to be used by flat apps, or augmented UX. 2D specific APIs are provided for quads that make placement and layout simple to use, and developing (with the exception of rendering) with quads should feel more akin to working with 2d canvases than 3d meshes.
 
-### Scene Understanding SDK Details and Reference
+## Scene understanding SDK details and reference
 
-#### SDK
+### SDK
 
 The following section will help get you familiar with the basics of SceneUnderstanding. This section should provide you with the basics, at which point you should have enough context to browse through the sample applications to see how SceneUnderstanding is used holistically.
 
-#### Initialization
+### Initialization
 
 The first step to working with SceneUnderstanding is for your application to gain reference to a Scene object. This can be done in one of two ways, a Scene can either be computed by the driver, or an existing Scene that was computed in the past can be de-serialized. The latter is particularly useful for working with SceneUnderstanding during development, where applications and experiences can be prototyped quickly without a mixed reality device.
 
@@ -160,7 +160,7 @@ querySettings.RequestedMeshLevelOfDetail = SceneMeshLevelOfDetail.Fine;         
 Scene myScene = SceneObserver.Compute(querySettings, 10.0f);
 ```
 
-#### Initialization from Data (aka. the PC Path)
+### Initialization from Data (aka. the PC Path)
 
 While Scenes can be computed for direct consumption, they can also be computed in serialized form for later use. This has proven to be very useful for development as it allows developers to work in and test Scene Understanding without the need for a device. The act of serializing a scene is nearly identical to computing it, the data is returned to your application instead of being deserialized locally by the SDK. You may then deserialize it yourself or save it for future use.
 
@@ -177,7 +177,7 @@ Scene mySceneDeSerialized = Scene.Deserialize(newSceneBlob);
 // Save newSceneBlob for later
 ```
 
-#### SceneObject Enumeration
+### SceneObject Enumeration
 
 Now that your application has a scene, your application will be looking at and interacting with SceneObjects. This is done by accessing the **SceneObjects** property:
 
@@ -195,7 +195,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 }
 ```
 
-#### Component update and re-finding components
+### Component update and re-finding components
 
 There is another function that retrieves components in the Scene called ***FindComponent***. This function is useful when updating tracking objects and finding them in subsequent scenes. The following code will compute a new scene relative to a previous scene and then find the floor in the new scene.
 
@@ -212,7 +212,7 @@ if (firstFloor != null)
 }
 ```
 
-### Accessing Meshes and Quads from Scene Objects
+## Accessing Meshes and Quads from Scene Objects
 
 Once SceneObjects have been found your application will most likely want to access the data that is contained n the quads/meshes that it is comprised of. This data is accessed with the ***Quads*** and ***Meshes*** properties. The following code will enumerate all quads and meshes of our floor object.
 
@@ -354,10 +354,11 @@ mesh.GetVertexPositions(positions);
 
 The index/vertex buffers must be >= the index/vertex counts, but otherwise can be arbitrarily sized allowing for efficient memory re-use.
 
-### Developing with Scene Understandings
+## Developing with scene understandings
 
-At this point you should understand the core building blocks of the Scene Understanding runtime and SDK. The bulk of the power and complexity lies in access patterns, interaction with 3d frameworks, and tools that can be written on top of these APIs to perform more advanced tasks like spatial planning, room analysis, navigation, physics etc... We hope to capture these in samples that should hopefully guide you in the proper direction to make your scenarios shine. If there are samples/scenarios we are not addressing, please let us know and we will try to document/prototype what you need.
+At this point you should understand the core building blocks of the scene understanding runtime and SDK. The bulk of the power and complexity lies in access patterns, interaction with 3D frameworks, and tools that can be written on top of these APIs to perform more advanced tasks like spatial planning, room analysis, navigation, physics etc... We hope to capture these in samples that should hopefully guide you in the proper direction to make your scenarios shine. If there are samples/scenarios we are not addressing, please let us know and we will try to document/prototype what you need.
 
 ## See also
 
-* [spatial mapping](spatial-mapping.md)
+* [Spatial mapping](spatial-mapping.md)
+* [Scene understanding](scene-understanding.md)

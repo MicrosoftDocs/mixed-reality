@@ -45,15 +45,16 @@ Voice input is powered by the [same engine](https://msdn.microsoft.com/library/w
 
 ## The "select" command
 
-**HoloLens 1**
+**HoloLens (First gen)**
 
 Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gestures.md#air-tap) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
 **HoloLens 2**
 
-In order to use the "select" voice command in HL2, you first need to bring up the gaze cursor to use as a pointer. The command to bring it up is easy to remember -- just say, "select". 
+In order to use the "select" voice command in HoloLens 2, you first need to bring up the gaze cursor to use as a pointer. The command to bring it up is easy to remember -- just say, "select". 
 
 To exit the mode, simply use your hands again, either by airtapping, approaching a button with your fingers, or using the system gesture.
+
 
 ![Say "select" to use the voice command for selection](images/kma-voice-select-00170-800px.png)<br>
 *Say "select" to use the voice command for selection*
@@ -84,11 +85,11 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
 
 ## "See It, Say It"
 
-HoloLens has a "see it, say it" model for voice input, where labels on buttons tell users what voice commands they can say as well. For example, when looking at an app window in HoloLens 1, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world.
+HoloLens has a "see it, say it" model for voice input, where labels on buttons tell users what voice commands they can say as well. For example, when looking at an app window in HoloLens (first gen), a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world.
 
 ![When looking at an app window or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)
 
-When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button in HoloLens 1, you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it. To reveal voice tooltips in HoloLens 2, show the voice cursor by saying "select" or "What can I say" (see below). 
+When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button in HoloLens 1 (first gen), you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it. To reveal voice tooltips in HoloLens 2, show the voice cursor by saying "select" or "What can I say" (see below). 
 
 ![See it, say it commands appear below the buttons](images/voice-seeitsayit-600px.png)<br>
 *"See it, say it" commands appear below the buttons*

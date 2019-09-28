@@ -34,7 +34,7 @@ If you have a luxmeter, a steady 500-1000 lux is a good place to start.
 #### Types of lighting
 Different types of light in a space can also influence tracking. Lightbulbs pulse with the AC electricity running through it - if the AC frequency is 50Hz, then the light pulses at 50Hz. For a human, this pulsing is not noticed. However, HoloLens' 30fps camera sees these changes - some frames will be well-lit, some will be poorly lit, and some will be over-exposed as the camera tries to compensate for light pulses.
 
-In the USA, electricity frequency standard is 60Hz, so lightbulb pulses are harmonized with HoloLens' framerate - 60Hz pulses align with Hololens' 30 FPS framerate. However, many countries have an AC frequency standard of 50Hz, which means some Hololens frames will be taken during pulses, and others will not. In particular, fluorescent lighting in Europe has been known to cause issues. 
+In the USA, electricity frequency standard is 60Hz, so lightbulb pulses are harmonized with HoloLens' framerate - 60Hz pulses align with HoloLens' 30 FPS framerate. However, many countries have an AC frequency standard of 50Hz, which means some HoloLens frames will be taken during pulses, and others will not. In particular, fluorescent lighting in Europe has been known to cause issues. 
 
 There are a few things you can try to resolve flickering issues. Temperature, bulb age, and warm-up cycles are common causes of fluorescent flickering and replacing bulbs may help. Tightening bulbs and making sure current draws are constant can also help. 
 
@@ -43,7 +43,7 @@ HoloLens uses unique environmental landmarks, also known as *features*, to locat
 
 A device can almost never track in a feature-poor area, as the device has no way of knowing where in space it is. Adding features to the walls of a space is usually a good way to improve tracking. Posters, symbols taped to a wall, plants, unique objects, or other similar items all help. A messy desk is a good example of an environment that leads to good tracking - there are a lot of different features in a single area. 
 
-Additionally, use unique features in the same space. The same poster repeated multiple times over a wall, for example, will cause device confusion as the HoloLens won't know which of the repetitive posters it is looking at. One common way of adding unique features is to use lines of masking tape to create unique, nonrepetitve patterns along the walls and floor of a space. 
+Additionally, use unique features in the same space. The same poster repeated multiple times over a wall, for example, will cause device confusion as the HoloLens won't know which of the repetitive posters it is looking at. One common way of adding unique features is to use lines of masking tape to create unique, non-repetitive patterns along the walls and floor of a space. 
 
 A good question to ask yourself is - if you saw just a small amount of the scene, could you uniquely locate yourself in the space? If not, it's likely the device will have problems tracking as well.
 
@@ -51,6 +51,15 @@ A good question to ask yourself is - if you saw just a small amount of the scene
 If you have two areas or regions that look the same, the tracker may think they are the same. This results in the device tricking itself into thinking it is somewhere else. We call these types of repetitive areas *wormholes*. 
 
 To prevent wormholes, try to prevent identical areas in the same space. Identical areas can sometimes include factory stations, windows on a building, server racks, or work stations. Labelling areas or adding unique features to each similar-looking areas can help mitigate wormholes.
+
+### QR Codes in Environments.
+HoloLens can use [QR Codes](qr-code-tracking.md) for multiple reasons - such as to label objects or to provide additional context to environments - but they can also be used to improve tracking quality. HoloLens will automatically use the QR codes to help build a map, even if you are not consuming the data embedded in the codes.
+
+If you are using QR codes to assist with tracking, you will want two to three codes within any given field of view. For many scenarios, this translates to placing a QR code every 2-3 meters or 6-9 feet.
+
+Make sure the QR codes are flat and firmly attached to walls or other surfaces.
+
+Best practices for generating and printing QR codes can be found in [Best practices for QR code detection](qr-code-tracking.md#best-practices-for-qr-code-detection).
  
 ### Movement in a space
 If your environment is constantly shifting and changing, the device has no stable features to locate against. 
@@ -107,4 +116,4 @@ If someone else is going to be using your HoloLens, they should run the Calibrat
 * [Spatial mapping design](spatial-mapping-design.md)
 * [Holograms](hologram.md)
 * [Calibration](calibration.md)
-* [Use Hololens in new spaces](use-hololens-in-new-spaces.md)
+* [Use HoloLens in new spaces](use-hololens-in-new-spaces.md)
