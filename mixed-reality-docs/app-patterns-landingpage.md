@@ -47,7 +47,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-       [![Interactable object](images/640px-interactibleobject-hero-640px.jpg)](interactable-object.md)
+       [![Interactable object](images/InteractableExamples.png)](interactable-object.md)
         **[Interactable object](interactable-object.md)**
     :::column-end:::
     :::column:::
