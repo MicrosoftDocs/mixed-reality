@@ -8,7 +8,3 @@ _repo.*/
 .vscode
 
 .openpublishing.buildcore.ps1
-/.vs/MRTK_Docs/v15
-/.vs/ProjectSettings.json
-/.vs/slnx.sqlite
-/.vs/VSWorkspaceState.json
