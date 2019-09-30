@@ -39,7 +39,7 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 </table>
 
 
-Direct manipulation is a primary input model on HoloLens 2, and utilizes the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation. Direct manipluation is not available on HoloLens (1st gen).
+Direct manipulation is a primary input model on HoloLens 2, and utilizes the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation. Direct manipulation is not available on HoloLens (1st gen).
 
 
 ## Collidable fingertip
@@ -78,9 +78,9 @@ The hologram itself also requires the ability to provide both visual and audio f
 
 ## Pressable button
 
-With a collidable fingertip, users are now ready to interact with the fundamental holographic UI component, sucha as a pressable button. A pressable button is a holographic button tailored for a direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback-related issues.
+With a collidable fingertip, users are now ready to interact with the fundamental holographic UI component, such as a pressable button. A pressable button is a holographic button tailored for a direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback-related issues.
 
-* The first mechanism is a bounding box with a proximity shader, which isdetailed in the previous section. It give users a better sense of proximity when as approach and make contact with a button.
+* The first mechanism is a bounding box with a proximity shader, which is detailed in the previous section. It give users a better sense of proximity when as approach and make contact with a button.
 * The second mechanism is depression. Depression creates a sense of pressing down after a fingertip contacts a button. The mechanism is that the button tightly moves with the fingertip along the depth axis. The button can be triggered when it reaches a designated depth (on press) or leaves the depth (on release) after passing through it.
 * The sound effect should be added to enhance feedback when the button is triggered.
 
