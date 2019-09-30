@@ -79,7 +79,7 @@ Dwell region can be larger than inactive icon to make it easier to use, like the
 ### Prevent flickering with delayed feedback
 Use a short delay before starting visual feedback to avoid flickering when someone passes over a dwell target.
 * For buttons interacted with frequently, keep the delay very short so the application feels reactive.
-* For buttons that are interacted infrequently a longer delay can be appropriate to avoid the interface feeling twitchy.
+* For buttons that are interacted with infrequently, a longer delay can be appropriate to avoid the interface feeling twitchy.
 
 ## UI patterns
 
@@ -113,11 +113,11 @@ Toggle buttons require some nuanced logic to work properly. When a person dwells
 *List views present a particular challenge for head-gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets.*
 
 Some tips for designing list views:
-* have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
-* only show the dwell target when the row is highlighted to cut down on visual noise.
-* be clear and consistent with the position of dwell targets.
-* don't show all dwell targets at once to avoid repetitive UI
-* re-use the same pattern as often as possible to establish UX familiarity
+* Have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
+* Only show the dwell target when the row is highlighted to cut down on visual noise.
+* Be clear and consistent with the position of dwell targets.
+* Don't show all dwell targets at once to avoid repetitive UI
+* Re-use the same pattern as often as possible to establish UX familiarity
  
  ## See also
 * [Direct manipulation with hands](direct-manipulation.md)
