@@ -29,7 +29,7 @@
 			"source_path": "mixed-reality-docs/locatable-camera-in-directx.md",
 			"redirect_url": "locatable-camera#locating-the-device-camera-in-the-world",
 			"redirect_document_id": false
-		}
+		},
 		{
 			"source_path": "mixed-reality-docs/calibration.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/hololens-calibration",
@@ -54,7 +54,7 @@
 			"source_path": "mixed-reality-docs/get-apps-for-hololens.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
 			"redirect_document_id": false
-		}
+		},
 		{
 			"source_path": "mixed-reality-docs/give-us-feedback.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/hololens-feedback",
@@ -64,17 +64,17 @@
 			"source_path": "mixed-reality-docs/hololens-hardware-details.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/hololens1-hardware",
 			"redirect_document_id": false
-		}
+		},
 		{
 			"source_path": "mixed-reality-docs/hololens-demo-guide.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/hololens1-setup",
 			"redirect_document_id": false
-		}
+		},
 		{
 			"source_path": "mixed-reality-docs/see-your-photos.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/holographic-photos-and-video",
 			"redirect_document_id": false
-		}
+		},
 		{
 			"source_path": "mixed-reality-docs/use-hololens-in-new-spaces.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/hololens-spaces",
