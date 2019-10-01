@@ -64,6 +64,7 @@
 #### [Object collection](object-collection.md)
 #### [Bounding box and App bar](app-bar-and-bounding-box.md)
 #### [Displaying progress](progress.md)
+#### [Hand menu](hand-menu.md)
 ### App patterns
 #### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 #### [Room scan visualization](room-scan-visualization.md)
@@ -248,4 +249,3 @@
 ## [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 ## [In-app purchases](in-app-purchases.md)
 ## [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
-
