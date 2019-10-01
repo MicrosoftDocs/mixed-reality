@@ -1,5 +1,5 @@
 ---
-title: Scene understanding SDK
+title: Scene understanding SDK 
 description: Programming guide to the Scene Understanding SDK
 author: szymons
 ms.author: szymons
