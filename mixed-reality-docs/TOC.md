@@ -64,6 +64,7 @@
 #### [Object collection](object-collection.md)
 #### [Bounding box and App bar](app-bar-and-bounding-box.md)
 #### [Displaying progress](progress.md)
+#### [Hand menu](hand-menu.md)
 ### App patterns
 #### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 #### [Room scan visualization](room-scan-visualization.md)
@@ -212,6 +213,7 @@
 #### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 #### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 #### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
+#### [Version History](holographic-remoting-version-history.md)
 #### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 #### Holographic Remoting for HoloLens 1
 #### [Add Holographic Remoting](add-holographic-remoting.md)
@@ -248,4 +250,3 @@
 ## [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 ## [In-app purchases](in-app-purchases.md)
 ## [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
-
