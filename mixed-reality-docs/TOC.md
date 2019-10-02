@@ -26,6 +26,20 @@
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
+## Core concepts
+### [Comfort](comfort.md)
+### [Holographic frame](holographic-frame.md)
+### [Gaze](gaze.md)
+### [Gestures](gestures.md)
+### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+### [App model](app-model.md)
+### [App views](app-views.md)
+### [Coordinate systems](coordinate-systems.md)
+### [Scene understanding](scene-understanding.md)
+### [Spatial mapping design](spatial-mapping-design.md)
+### [Spatial mapping](spatial-mapping.md)
+### [Room scan visualization](room-scan-visualization.md)
+### [Spatial anchors](spatial-anchors.md)
 ## Choose an interaction model
 ### [Instinctual interactions](Interaction-fundamentals.md)
 ### Hands and motion controllers model
@@ -36,42 +50,26 @@
 ### Hands-free model
 #### [Hands-free](hands-free.md)
 #### [Voice commanding](Voice-design.md)
+#### [Voice input](voice-input.md)
 #### [Head-gaze and dwell](Gaze-and-dwell.md)
 ### [Head-gaze and commit model](gaze-and-commit.md)
 ### [Eye-gaze](eye-tracking.md)
-## Core building blocks 
-### [Gaze](gaze.md)
-### [Gestures](gestures.md)
-### [Comfort](comfort.md)
-### [Holographic frame](holographic-frame.md)
-### [Voice input](voice-input.md)
-### [Spatial mapping design](spatial-mapping-design.md)
-### [Spatial mapping](spatial-mapping.md)
-### [Scene understanding](scene-understanding.md)
-### [Coordinate systems](coordinate-systems.md)
-### [Spatial anchors](spatial-anchors.md)
-## Learn about UX patterns
-### [UX patterns overview](app-patterns-landingpage.md)
+## UX elements
+### [UX elements overview](app-patterns-landingpage.md)
 ### Style
 #### [Color, light and materials](color,-light-and-materials.md)
 #### [Scale](scale.md)
 #### [Spatial sound](spatial-sound.md)
 #### [Spatial sound design](spatial-sound-design.md)
 #### [Typography](typography.md)
-#### [Cursors](cursors.md)
-### Controls
+### Controls and behaviors
 #### [Interactable object](interactable-object.md)
 #### [Object collection](object-collection.md)
 #### [Bounding box and App bar](app-bar-and-bounding-box.md)
 #### [Displaying progress](progress.md)
 #### [Hand menu](hand-menu.md)
-### App patterns
-#### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
-#### [Room scan visualization](room-scan-visualization.md)
+#### [Cursors](cursors.md)
 #### [Billboarding and tag-along](billboarding-and-tag-along.md)
-#### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
-#### [App model](app-model.md)
-#### [App views](app-views.md)
 ## Design tools and resources
 ### [Learn Unity](https://learn.unity.com/)
 ### [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)
@@ -146,7 +144,7 @@
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
-#### [Accelerate development with Mixed Reality Toolkit v2](mrtk-getting-started.md)
+#### [Getting started with Mixed Reality Toolkit v2](mrtk-getting-started.md)
 #### [Configure Unity Project for Windows Mixed Reality](Configure-Unity-Project.md)
 #### [Recommended settings for Unity](recommended-settings-for-unity.md)
 #### [Unity Play Mode](unity-play-mode.md)
