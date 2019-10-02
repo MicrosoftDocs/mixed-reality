@@ -68,8 +68,8 @@
 #### [Bounding box and App bar](app-bar-and-bounding-box.md)
 #### [Displaying progress](progress.md)
 #### [Hand menu](hand-menu.md)
-#### [Billboarding and tag-along](billboarding-and-tag-along.md)
 #### [Cursors](cursors.md)
+#### [Billboarding and tag-along](billboarding-and-tag-along.md)
 ## Design tools and resources
 ### [Learn Unity](https://learn.unity.com/)
 ### [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)
