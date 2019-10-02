@@ -1,6 +1,6 @@
 ---
 title: Hand menu
-description: Hand menus allow users to quickly bring up and hand-attached UI for frequently used functions. These are our best practices and recommendations for hand menus.
+description: Hand menus allow users to quickly bring up hand-attached UI for frequently used functions. These are our best practices and recommendations for hand menus.
 author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
@@ -10,40 +10,39 @@ keywords: hand, menu, button, quick access, layout
 # Hand menu
 ![Ulnar side hand location](images/MRTK_UX_HandMenu.png)
 
-Hand menus allow users to quickly bring up and hand-attached UI for frequently used functions. 
+Hand menus allow users to quickly bring up hand-attached UI for frequently used functions. 
 
 Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand menu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
 
 ## Behavior best practices
 **A. Keep the number of buttons small:** 
-Due to the close distance between hand-locked menu and eyes and also users' tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), we recommend keeping the number of buttons small. Based on our exploration, one column with three buttons work well by keeping all the content within the FOV even when users move their hands to the center of FOV. 
+Due to the close distance between a hand-locked menu and the eyes and also the user's tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), we recommend keeping the number of buttons small. Based on our exploration, one column with three buttons work well by keeping all the content within the field of view (FOV) even when users move their hands to the center of FOV. 
 
 **B. Utilize hand menu for quick action:** 
-Raising arm and maintaining the position could easily cause arm fatigue. Use hand-locked method for the menu requiring short interaction. If your menu is complex and requires extended interaction times, consider using world-lock or body-lock instead. 
+Raising an arm and maintaining the position could easily cause arm fatigue. Use a hand-locked method for the menu requiring short interaction. If your menu is complex and requires extended interaction times, consider using world-lock or body-lock instead. 
 
 **C. Button / Panel angle:**
-Menu should billboard towards opposite shoulder and middle head: This allows a natural hand move to interact with opposite hand with menu and avoids awkward and uncomfortable hand positions when touching buttons. 
+Menus should billboard towards the opposite shoulder and middle of the head: This allows a natural hand move to interact with the menu with the opposite hand and avoids any awkward or uncomfortable hand positions when touching buttons. 
 
 **D. Consider supporting one-handed or hands-free operation:**
-Do not assume both of users' hands are always available. Consider a wide range of contexts when user's one or both hands are not available, and accommodate your design for those situations. To support one-handed hand menu, you can try transitioning menu placement from hand-lock to world-lock when hand flips (palm down). For hands-free scenario, you can consider using voice command to invoke the hand menu buttons.
+Do not assume both of users' hands are always available. Consider a wide range of contexts when one or both hands are not available, and make sure you design accounts for those situations. To support a one-handed hand menu, you can try transitioning menu placement from hand-lock to world-lock when the hand flips (goes palm down). For hands-free scenarios, consider using a voice command to invoke the hand menu buttons.
 
 **E. Two-step invocation:**
-If you use just palm-up as an event to trigger hand menu, it may accidentally appear when you don't need it (false-positive), because people moves their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience many false-positives in your app, consider adding additional step besides palm-up event to invoke hand menu such as fully opened fingers.
+If you use just palm-up as an event to trigger hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience many false-positives in your app, consider adding additional step besides palm-up event to invoke hand menu such as fully opened fingers.
 
 **F. Avoid adding buttons near the wrist (system home button):**
 If hand menu buttons are placed too close to the home button, it may get accidentally triggered while interacting with hand menu.
 
 **G. Test, test, test:**
-
 People have different bodies, different positions of comfort and discomfort, etc.
-Complex menu placement – anything that requires extended interaction times should be more persistent. Suggestions include body-locking or world-locking
+Complex menu placement – anything that requires extended interaction times should be more persistent. Suggestions include body-locking or world-locking.
 
 
 ## Hand menu placement best practices
 
 In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The ulna is a long bone found in the forearm that stretches from the elbow to the smallest finger.
 
-Below are 2 recommended placements based on our exploration:
+Below are 2 recommended placements based on our explorations:
 
 
 ![Ulnar side hand location](images/UlnarSideHandMenu.gif)
@@ -55,11 +54,11 @@ Below are 2 recommended placements based on our exploration:
 ![Ulnar side hand location](images/UlnarAboveHandMenu.gif)
 
 **B. Ulnar above hand:**
-The location is comfortable for users because is not necessary to raise users’ arm too much to interact with hand menu. We recommend to place menus 13cm above palm and align buttons inside Ulnar palm
+The location is comfortable for users because is not necessary to raise the user's arm too much to interact with the hand menu. We recommend placing menus 13cm above palm and align buttons inside Ulnar palm.
 
-For technical reasons we recommend this location with one required implementation, developer need to freeze menus once users get closer with opposite hand to interact with menu, this will avoid jitteriness from overlapping hands, and also allows for fast targeting of buttons.
+For technical reasons we recommend this location with one required implementation - the developer will need to freeze menus once a user gets close with their opposite hand to interact with the menu. This will avoid jitteriness from overlapping hands and also allows for fast targeting of buttons.
 
-HoloLens 2 cameras identify hands accurately when they are separate from each other, any overlapping hands can cause hand menus move away from the anchor location.
+HoloLens 2 cameras identify hands accurately when they are separate from each other. Any overlapping hands can cause hand menus move away from the anchor location.
 
 [Read more about the optimal button size](interactable-object.md)
 
@@ -70,8 +69,8 @@ We have done user research with different menus layouts and locations, the follo
 ![Above arm](images/AboveArm.gif)
 
 **Above the arm**
-1. Difficult maintain a good hand tracking
-2. Cause fatigue on users due to unnatural position
+1. Difficult to maintain good hand tracking
+2. Causes user fatigue due to unnatural position
 
 <br>
 
@@ -86,8 +85,8 @@ We have done user research with different menus layouts and locations, the follo
 ![Above center palm](images/handCenter.gif)
 
 **Above-center palm**
-1. Hand track issues due to overlapping hands
-2. Hand fatigue holding hands for long time to interact with menus
+1. Hand tracking issues due to overlapping hands
+2. Hand fatigue due to holding hands for long time in order to interact with menus
 
 <br>
 
@@ -95,7 +94,7 @@ We have done user research with different menus layouts and locations, the follo
 
 **Top fingertip**
 1. Hand tracking issues
-2. Hand fatigue holding hand above a normal posture
+2. Hand fatigue holding hand above normal posture
 3. Issues pressing buttons with other fingers by accident due to limited space between fingers
 
 <br>
@@ -104,7 +103,7 @@ We have done user research with different menus layouts and locations, the follo
 
 **Back of the arm**
 1. Can trigger home button by accident
-2. Not a natural comfortable position for users
+2. Not a natural or comfortable position for users
 
 
 ## See also
