@@ -29,7 +29,7 @@ Some specific scenarios might be:
 
 ### [Voice commanding](voice-design.md)
 
-Using your voice to command and control an interface can not only allow the user to operate handsfree, but also skip multiple steps. The usage of this modality can range from allowing the user to simply read any button's name out loud to activate it, as in See-it-say-it, to conversing with an agent who can accomplish tasks for you.
+Using your voice to command and control an interface can not only allow the user to operate hands-free, but also skip multiple steps. The usage of this modality can range from allowing the user to simply read any button's name out loud to activate it, as in See-it-say-it, to conversing with an agent who can accomplish tasks for you.
 
 
 
@@ -42,12 +42,12 @@ In some hands-free situations, using your voice is not ideal or even possible. L
 
 For these scenarios, freeing your hands from interacting with holograms for commanding and navigation can range from being an absolute requirement to operating the application, end-to-end, to an added convenience that the user can transition in and out of at any time. 
 
-If the requirement of the application is that it will always be used hands-free, whether by using dwell, voice commands, or the single voice command, "select", then make sure to make the appropriate accomodations in your UI. 
+If the requirement of the application is that it will always be used hands-free, whether by using dwell, voice commands, or the single voice command, "select", then make sure to make the appropriate accommodations in your UI. 
 
 If your target user needs to be able to switch from hands to hands-free at their discretion, then it is important to take the following principles into account.
 
 ### Assume the user is already in the mode that they want to switch to
-For instance, if the user is on the factory floor, watching a video reference on her Hololens, and decides to pick up a wrench to start working, she most likely would start working in handsfree without having to put down the wrench to press a button. She should be able to invoke a voice session with a voice command, dwell on an already-visible UI to begin dwell, or say the word "select".
+For instance, if the user is on the factory floor, watching a video reference on her HoloLens, and decides to pick up a wrench to start working, she most likely would start working in hands-free without having to put down the wrench to press a button. She should be able to invoke a voice session with a voice command, dwell on an already-visible UI to begin dwell, or say the word "select".
 
 The user should have the ability to: 
 * Switch to hands-free while hands-free
@@ -68,7 +68,7 @@ A mode switch is a big deal--it is important that when these transitions happen 
 ## Usability checklist
 
 **Can the user do everything and anything hands-free, end-to-end?**
-* Every interactible should be accessible hands-free
+* Every interactable should be accessible hands-free
 * Ensure that there is a replacement for all custom gestures, such as resizing, placing, swipes, taps, etc.
 * Ensure that the user has confident control of UI presence, placement, and verbosity at all times
 	* Getting UI out of the way
