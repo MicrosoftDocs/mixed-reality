@@ -12,7 +12,7 @@ keywords: hand, menu, button, quick access, layout
 
 Hand menus allow users to quickly bring up and hand-attached UI for frequently used functions. 
 
-Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand manu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
+Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand menu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
 
 ## Behavior best practices
 **A. Keep the number of buttons small:** 
@@ -59,12 +59,12 @@ The location is comfortable for users because is not necessary to raise users’
 
 For technical reasons we recommend this location with one required implementation, developer need to freeze menus once users get closer with opposite hand to interact with menu, this will avoid jitteriness from overlapping hands, and also allows for fast targeting of buttons.
 
-HoloLens 2 cameras identify hands accurately when they are separate from each other, any overlapping hands can cause hand menus move away from the anchor location
+HoloLens 2 cameras identify hands accurately when they are separate from each other, any overlapping hands can cause hand menus move away from the anchor location.
 
 [Read more about the optimal button size](interactable-object.md)
 
 
-## Suboptimal positions
+## Menu positions that are not recommended
 We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
 
 ![Above arm](images/AboveArm.gif)
@@ -103,7 +103,7 @@ We have done user research with different menus layouts and locations, the follo
 ![Back of the Arm](images/BackOfTheArm.gif)
 
 **Back of the arm**
-1. Tigger home button by accident
+1. Can trigger home button by accident
 2. Not a natural comfortable position for users
 
 
