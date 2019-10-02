@@ -45,7 +45,7 @@ Voice input is powered by the [same engine](https://msdn.microsoft.com/library/w
 
 ## The "select" command
 
-**HoloLens (First gen)**
+**HoloLens (1st gen)**
 
 Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gestures.md#air-tap) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
@@ -95,11 +95,11 @@ When apps follow this rule, users can easily understand what to say to control t
 *"See it, say it" commands appear below the buttons*
 
 
-## Voice commands for fast Hologram Manipulation
+## Voice commands for fast hologram manipulation
 
 There are also a number of voice commands you can say while gazing at a hologram to quickly perform manipulation tasks. These voice commands work on app windows as well as 3D objects you have placed in the world.
 
-**Hologram Manipulation Commands**
+**Hologram manipulation commands**
 * Face me
 * Bigger | Enhance
 * Smaller

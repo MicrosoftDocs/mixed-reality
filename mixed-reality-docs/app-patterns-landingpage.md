@@ -1,15 +1,15 @@
 ---
 layout: LandingPage
-title: App patterns overview
+title: Mixed reality UX elements
 description: This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets). So, consider this work as a set of topics for ‘how to design for Windows head-mounted displays’.
 author: grbury 
 ms.author: grbury
-ms.date: 08/24/2019
+ms.date: 10/02/2019
 ms.topic: overview
-keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction
+keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks
 ---
 
-# Mixed reality UX patterns
+# UX elements overview
 
 ## Style
 
@@ -34,8 +34,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Typography](typography.md)**
     :::column-end:::
     :::column:::
-       [![Cursors](images/gazetargeting-highlighting-640px.jpg)](cursors.md)
-        **[Cursors](cursors.md)**
     :::column-end:::
     :::column:::
     :::column-end:::
@@ -43,7 +41,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 <br>
 
-## Controls
+## Controls and behaviors
 
 :::row:::
     :::column:::
@@ -66,44 +64,26 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Displaying progress](progress.md)**
     :::column-end:::
     :::column:::
+        [![Hand menu](images/mrtk_ux_handmenu.png)](hand-menu.md)
+        **[Hand menu](hand-menu.md)**
     :::column-end:::
     :::column:::
+       [![Cursors](images/gazetargeting-highlighting-640px.jpg)](cursors.md)
+        **[Cursors](cursors.md)**
     :::column-end:::
 :::row-end:::
 
-<br>
-
-## App patterns
-
 :::row:::
     :::column:::
-       [![Types of mixed reality apps](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)
-        **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
-    :::column-end:::
-    :::column:::
-       [![Room scan visualization](images/sr-mixedworld-140429-8pm-00068-1000px.png)](room-scan-visualization.md)
-        **[Room scan visualization](room-scan-visualization.md)**
-    :::column-end:::
-    :::column:::
-       [![Billboarding and tag-along](images/billboarding-fragments.gif)](billboarding-and-tag-along.md)
+        [![Billboarding and tag-along](images/billboarding-fragments.gif)](billboarding-and-tag-along.md)
         **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
+    :::column:::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
 :::row-end:::
 
-:::row:::
-    :::column:::
-       [![Updating 2D UWP apps for mixed reality](images/teleportation-640px.png)](building-2d-apps.md)
-        **[Updating 2D UWP apps for mixed reality](building-2d-apps.md)**
-    :::column-end:::
-    :::column:::
-        [![App model](images/20160112-055908-hololens-500px.jpg)](app-model.md)
-        **[App model](app-model.md)**
-    :::column-end:::
-    :::column:::
-        [![App views](images/designoverview.jpg)](app-views.md)
-        **[App views](app-views.md)**
-    :::column-end:::
-:::row-end:::
 
 <br>
 
