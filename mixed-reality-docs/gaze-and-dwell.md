@@ -14,7 +14,7 @@ When hands are occupied with tools and parts, gestures can be tedious or impossi
 
 ## Scenarios
 
-Head-gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or availible due to environmental or social constraints. A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine. Their hands are busy with tools or supporting their body as they lean into the engine compartment. The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult. Head-gaze and dwell allows the person in the HoloLens to confidently navigate their reference material without interupting their workflow. 
+Head-gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or available due to environmental or social constraints. A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine. Their hands are busy with tools or supporting their body as they lean into the engine compartment. The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult. Head-gaze and dwell allows the person using the HoloLens to confidently navigate their reference material without interrupting their workflow. 
 
 ## Device support
 
@@ -60,7 +60,7 @@ Provide a mechanism for fully hands-free interactions, without using voice.
 ## UX Guidelines and best practices
 
 ### Target sizes
-  To be easily accessible, head-gaze and dwell targets need to be large enough to comforatably target, and hold one's head stabily on the target for the prescribed time. We reccomend a minimum target size of 2 degrees to achieve the most comfortable experience. 
+  To be easily accessible, head-gaze and dwell targets need to be large enough to comfortably look at, and hold one's head stable on the target for the prescribed time. We recommend a minimum target size of 2 degrees to achieve the most comfortable experience. 
 
 ### Visual feedback
 
@@ -78,8 +78,8 @@ Dwell region can be larger than inactive icon to make it easier to use, like the
 
 ### Prevent flickering with delayed feedback
 Use a short delay before starting visual feedback to avoid flickering when someone passes over a dwell target.
-* For buttons inteacted with frequently, keep the delay very short so the application feels reactive.
-* For buttons that are interacted with infrequenctly a longer delay can be approprate to avoid the interface feeling twitchy.
+* For buttons interacted with frequently, keep the delay very short so the application feels reactive.
+* For buttons that are interacted with infrequently, a longer delay can be appropriate to avoid the interface feeling twitchy.
 
 ## UI patterns
 
@@ -113,11 +113,11 @@ Toggle buttons require some nuanced logic to work properly. When a person dwells
 *List views present a particular challenge for head-gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets.*
 
 Some tips for designing list views:
-* have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
-* only show the dwell target when the row is highlighted to cut down on visual noise.
-* be clear and consistent with the position of dwell targets.
-* don't show all dwell targets at once to avoid repetitive UI
-* re-use the same pattern as often as possible to establish UX familiarity
+* Have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
+* Only show the dwell target when the row is highlighted to cut down on visual noise.
+* Be clear and consistent with the position of dwell targets.
+* Don't show all dwell targets at once to avoid repetitive UI
+* Re-use the same pattern as often as possible to establish UX familiarity
  
  ## See also
 * [Direct manipulation with hands](direct-manipulation.md)
