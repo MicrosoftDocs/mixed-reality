@@ -12,7 +12,7 @@ keywords: hand, menu, button, quick access, layout
 
 Hand menus allow users to quickly bring up and hand-attached UI for frequently used functions. 
 
-Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand manu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandBasedMenuExample.unity).
+Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand manu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup).
 
 ## Behavior best practices
 **A. Keep the number of buttons small:** 
