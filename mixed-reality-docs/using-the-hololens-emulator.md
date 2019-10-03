@@ -64,7 +64,7 @@ The emulator may take a minute or more to boot when you first start it. We recom
 
 Controlling the emulator is very similar to many common 3D video games. In nput options are available for using the keyboard, mouse, or Xbox controller. You control the emulator by directing the actions of a simulated user by wearing a HoloLens. Your actions move the simulated user around the environment. Applications running in the emulator respond like they would on a real device.
 
-The cursor on HoloLens (1st Gen) follows head movement and rotation. In the HoloLens 2 Emulator, the cursor follows hand movement and orientation.
+The cursor on HoloLens (1st gen) follows head movement and rotation. In the HoloLens 2 Emulator, the cursor follows hand movement and orientation.
 
 * **Walk forward, back, left, and right** - Use the W,A,S, and D keys on your keyboard, or the left stick on an Xbox controller.
 * **Look up, down, left, and right** - Click and drag the mouse, use the arrow keys on your keyboard, or the right stick on an Xbox controller.
@@ -127,7 +127,7 @@ The Diagnostics tab shows the emulator's IP address in the form of a link to Win
 The Network tab shows the network adapter details for the emulator as well as network adapter details for the host machine.  Note that for the HoloLens 2 Emulator, this tab will only appear when running the emulator on the Windows 10 May 2019 Update or newer.
 
 
-## Anatomy of the HoloLens (1st Gen) emulator
+## Anatomy of the HoloLens (1st gen) emulator
 
 ### Main window
 
@@ -177,7 +177,7 @@ Simulated rooms are useful for testing your application in multiple environments
 * **GreatRoom.xef** - A large open space great room with living room, dining table, and kitchen.
 * **LivingRoom.xef** - A living room with a fireplace, sofa, armchairs, and a coffee table with a vase.
 
-You can also record your own rooms to use in the emulator using the Simulation page of the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens (1st Gen).
+You can also record your own rooms to use in the emulator using the Simulation page of the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens (1st gen).
 
 In the emulator, you will only see holograms that you render. But you will not see the simulated room behind the holograms. This is in contrast to the actual HoloLens where you see both blended together. If you want to see the simulated room in the HoloLens Emulator, you will need to update your application to render the spatial mapping mesh in the scene.
 
