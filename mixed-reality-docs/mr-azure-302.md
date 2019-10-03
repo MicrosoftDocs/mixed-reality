@@ -409,7 +409,7 @@ The **tapsCount** variable will store the number of tap gestures captured from t
 
         void Start()
         {
-            // subscribing to the Hololens API gesture recognizer to track user gestures
+            // subscribing to the HoloLens API gesture recognizer to track user gestures
             recognizer = new GestureRecognizer();
             recognizer.SetRecognizableGestures(GestureSettings.Tap);
             recognizer.Tapped += TapHandler;
