@@ -121,6 +121,17 @@ A: The origin of the playspace is determined by the Room Setup experience, more 
 
 A: The Mixed Reality Spatial Data Packager tool is a beta feature that allows localizing multiple players in the same space by enabling porting of the spatial data from one PC to another. You can access the tool and learn more about it [here](mixedrealityspatialdatapackager.md).
 
+If you opt into the Windows 20H1 or later builds (via our [Insider](https://docs.microsoft.com/en-us/windows-insider/at-home/get-started) program) you can access a new interface for map sharing. 
+This new functionality is available via the Map Manager interface of the Windows Device portal. To use this tool follow these steps:
+- Make sure you are opted into 20H1 or later (as of September 2019 this means using our Insider program)
+- Enable the Windows Device Portal (WDP), instructions are [here](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-desktop)
+- Plug in a Windows Mixed Reality HMD that you wish to either download an existing map from or import a new map
+- Navigate to the WDP in your browser of choice using the URL provided in the settings screen. 
+  - Once there Navigate to the "Mixed Reality" section and select "Map Manager". 
+  - You can now use the "Download" button to export an existing map from the machine. 
+  - You can use the "Upload a map file" button to import an map from a previous export (perhaps on a different machine). 
+  - You can use "Import" to enable the system to use that map for this HMD on this machine.
+  
 ### TRACKING
 
 Q: How does the tracking technology in the Windows Mixed Reality headsets work?  
