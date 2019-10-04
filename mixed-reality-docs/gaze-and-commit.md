@@ -200,7 +200,7 @@ There are three things that you should consider:
 * [Point and commit with hands](point-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Head-gaze and dwell](gaze-and-dwell.md)
-* [Voice commanding](voice-design.md)
+* [Voice input](voice-input.md)
 
 
 

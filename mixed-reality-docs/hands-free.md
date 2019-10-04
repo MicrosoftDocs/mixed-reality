@@ -27,7 +27,7 @@ Some specific scenarios might be:
 
 ## Hands-free modalities
 
-### [Voice commanding](voice-design.md)
+### [Voice input](voice-input.md)
 
 Using your voice to command and control an interface can not only allow the user to operate hands-free, but also skip multiple steps. The usage of this modality can range from allowing the user to simply read any button's name out loud to activate it, as in See-it-say-it, to conversing with an agent who can accomplish tasks for you.
 

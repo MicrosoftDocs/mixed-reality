@@ -146,4 +146,4 @@ MixedRealityToolkit's Standard shader provides various options such as **proximi
 * [Bounding box](app-bar-and-bounding-box.md)
 * [Object collection](object-collection.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
-* [Voice commanding](voice-design.md)
+* [Voice input](voice-input.md)

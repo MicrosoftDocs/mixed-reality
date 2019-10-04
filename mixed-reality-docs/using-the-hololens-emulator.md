@@ -84,12 +84,12 @@ The cursor on HoloLens (1st gen) follows head movement and rotation. In the Holo
 To the right of the main window, find the emulator toolbar. The toolbar contains the following buttons:
 * ![Close icon](images/emulator-close.png) **Close**: Closes the emulator.
 * ![Minimize icon](images/emulator-minimize.png) **Minimize**: Minimizes the emulator window.
-* ![Simulation_icon](images/emulator-simulation-panel.png) **Simulation Control Panel**: Show or hide the [Simulation Control panel](#simulation-control-panel) for configuring and controlling [input to the emulator](#basic-emulator-input).
-* ![Fit to screen icon](images/emulator-fit.png) **Fit to Screen**: Fits the emulator to screen.
+* ![Simulation_icon](images/emulator-simulation-panel.png) **Simulation control panel**: Show or hide the [Simulation control panel](#simulation-control-panel) for configuring and controlling [input to the emulator](#basic-emulator-input).
+* ![Fit to screen icon](images/emulator-fit.png) **Fit to screen**: Fits the emulator to screen.
 * ![Zoom icon](images/emulator-zoom.png) **Zoom**: Make the emulator larger and smaller.
 * ![Help icon](images/emulator-help.png) **Help**: Open emulator help.
 * ![Open device portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.
-* ![Tools icon](images/emulator-tools.png) **Tools**: Open the **Additional Tools** pane.
+* ![Tools icon](images/emulator-tools.png) **Tools**: Open the **Additional tools** pane.
 
 ### Simulation control panel
 
