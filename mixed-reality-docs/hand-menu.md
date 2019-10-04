@@ -48,14 +48,14 @@ Below are 2 recommended placements based on our explorations:
 
 ![Ulnar side hand location](images/UlnarSideHandMenu.gif)
 
-**A. Ulnar inside palm:** This position is very reliable because hands do not overlap to each other which is critical for accurate hand detection and tracking.
+**A. Ulnar inside palm:** This position is reliable because the hands do not overlap each other. This is critical for accurate hand detection and tracking.
 
 <br>
 
 ![Ulnar side hand location](images/UlnarAboveHandMenu.gif)
 
 **B. Ulnar above hand:**
-The location is comfortable for users because is not necessary to raise the user's arm too much to interact with the hand menu. We recommend placing menus 13cm above palm and align buttons inside Ulnar palm.
+The location is comfortable for users because it is not necessary to raise the user's arm too much to interact with the hand menu. We recommend placing menus 13cm above palm and align buttons inside Ulnar palm.
 
 For technical reasons we recommend this location with one required implementation - the developer will need to freeze menus once a user gets close with their opposite hand to interact with the menu. This will avoid jitteriness from overlapping hands and also allows for fast targeting of buttons.
 

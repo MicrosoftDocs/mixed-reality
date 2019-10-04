@@ -337,7 +337,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
     ![Set up the Unity project](images/AzureLabs-Lab312-20.png)
 
-2.	You will now need to provide a Unity project name. Insert **Hololens Bot**. Make sure the project template is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
+2.	You will now need to provide a Unity project name. Insert **HoloLens Bot**. Make sure the project template is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
     ![Set up the Unity project](images/AzureLabs-Lab312-21.png)
 
@@ -351,7 +351,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
 5.	While still in **File > Build Settings** and make sure that:
 
-    1.  **Target Device** is set to **Hololens**
+    1.  **Target Device** is set to **HoloLens**
 
         > For the immersive headsets, set **Target Device** to *Any Device*.
 

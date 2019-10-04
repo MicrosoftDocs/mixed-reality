@@ -29,7 +29,7 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
     :::column:::
        [![Creating an immersive experience in Fragments](images/surfacereconstruction.jpg)](case-study-creating-an-immersive-experience-in-fragments.md)
         **[Creating an immersive experience in Fragments](case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Fragments is an interactive crime drama for Microsoft Hololens, where you follow the clues to solve a mystery that takes place in your real-world space.<br>
+        Fragments is an interactive crime drama for Microsoft HoloLens, where you follow the clues to solve a mystery that takes place in your real-world space.<br>
         <i>August 2016<i>
     :::column-end:::
 :::row-end:::

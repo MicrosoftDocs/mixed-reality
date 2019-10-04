@@ -95,7 +95,7 @@ For more information on specific API differences between HTK/MRTK and MRTK Versi
 - Rebuild canvas-based UI with quads, colliders, and TextMeshPro text.
 - Enable [Depth Buffer Sharing](camera-in-unity.md#sharing-your-depth-buffers-with-windows) and/or [set focus point](focus-point-in-unity.md); use a 16-bit depth buffer for better performance. Ensure when rendering color, to also render depth. Unity generally does not write depth for transparent and text gameobjects. 
 - Set Single Pass Instanced Rendering Path.
-- Utilize the [Hololens 2 configuration profile for MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile)
+- Utilize the [HoloLens 2 configuration profile for MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile)
 
 ### Testing your application
 

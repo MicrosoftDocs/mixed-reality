@@ -72,7 +72,7 @@ With HoloSketch, we wanted to simplify this process without involving developmen
 
 ### Encouraging three-dimensional design thinking and solutions
 
-We thought this tool would give designers an opportunity to explore solutions in a truly three-dimensional space and not be stuck in 2D. They don’t have to think about creating a 3D background for their UI since the background is the real world in the case of Hololens. HoloSketch opens up a way for designers to easily explore 3D design on Hololens.
+We thought this tool would give designers an opportunity to explore solutions in a truly three-dimensional space and not be stuck in 2D. They don’t have to think about creating a 3D background for their UI since the background is the real world in the case of HoloLens. HoloSketch opens up a way for designers to easily explore 3D design on HoloLens.
 
 ## Get Started
 

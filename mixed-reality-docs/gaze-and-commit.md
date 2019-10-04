@@ -67,7 +67,7 @@ To find more details as well as a comprehensive list of available commands and h
 
 
 ### Head-gaze and HoloLens Clicker
-The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st Gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st Gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
+The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
 
 ![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
 *HoloLens Clicker*

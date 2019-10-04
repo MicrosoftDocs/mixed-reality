@@ -124,7 +124,7 @@ Specific manipulation requires precision. We recommend that you use **affordance
 
 ## Instinctual gestures
 
-With HoloLens (1st Gen), we taught users a couple predefined gestures, such as bloom and air tap. For HoloLens 2, we don't ask users to memorize any symbolic gestures. All required user gestures--where users need to interact with holograms and content--are instinctual. The way to achieve instinctual gestures is to help users perform gestures through the design of UI affordances.
+With HoloLens (1st gen), we taught users a couple predefined gestures, such as bloom and air tap. For HoloLens 2, we don't ask users to memorize any symbolic gestures. All required user gestures--where users need to interact with holograms and content--are instinctual. The way to achieve instinctual gestures is to help users perform gestures through the design of UI affordances.
 
 For example, if we encourage the user to grab an object or a control point with a two finger pinch, the object or the control point should be small. If we want the user to perform five finger grab, the object or the control point should be relatively large. Similar to buttons, a tiny button would limit users to press it with a single finger; a large button would encourage users to press it with their palms.
 
