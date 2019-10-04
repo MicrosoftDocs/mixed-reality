@@ -1,4 +1,4 @@
-# What's new?
+# What's new? 
 ## [Latest news](news.md)
 ## [Get your app ready for HL2](mrtk-porting-guide.md)
 ## [Learn about Azure Services](azure-services.md)
