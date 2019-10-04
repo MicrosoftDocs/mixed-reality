@@ -16,7 +16,7 @@ Unity provides a set of default options that are generally the average case for 
 
 ### Low quality settings
 
-It is important to modify the **Unity Quality settings** for your environment to **Very Low**. This will help ensure your application is running performantly at the appropriate framerate. This is extremely significant for Hololens development. For development on immersive headsets, depending on the specs of the desktop powering the VR experience, one can still achieve framerate without the lowest quality parameters. 
+It is important to modify the **Unity Quality settings** for your environment to **Very Low**. This will help ensure your application is running performantly at the appropriate framerate. This is extremely significant for HoloLens development. For development on immersive headsets, depending on the specs of the desktop powering the VR experience, one can still achieve framerate without the lowest quality parameters. 
 
 In Unity 2018 LTS+, the project's quality level can be set by:
 
@@ -58,7 +58,7 @@ To enable this feature in your Unity Project
 1) Open **Player XR Settings** (go to **Edit** > **Project Settings** > **Player** > **XR Settings**)
 2) Select the checkbox for **Enable Depth Buffer Sharing** under **Virtual Reality SDKs** > **Windows Mixed Reality** expansion (**Virtual Reality Supported** checkbox must be checked)
 
-Further, it is recommended to select **16-bit depth** under the **Depth Format** setting in this panel, especially for Hololens Development. Selecting 16-bit compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed.
+Further, it is recommended to select **16-bit depth** under the **Depth Format** setting in this panel, especially for HoloLens Development. Selecting 16-bit compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed.
 
 In order for the Windows Mixed Reality platform to optimize hologram stability, it relies on the depth buffer to be accurate and match any rendered holograms on screen. Thus, with depth buffer sharing on, it is important when rendering color, also render depth. In Unity, most Opaque or TransparentCutout materials will render depth by default but transparent and text objects will generally not render depth although this is shader dependent, etc. 
 
@@ -69,7 +69,7 @@ If using the [Mixed Reality Toolkit Standard shader](https://github.com/microsof
 >[!NOTE]
 > Developers should beware of Z-fighting when changing these values along with the camera's near/far plane settings. Z-Fighting occurs when two gameobjects try to render to the same pixel and due to limitations in fidelity of the depth buffer (i.e z depth), Unity cannot discern which object is in front of the other. Developers will note a flickering between two game objects as they *fight* for the same z-depth value. This can be solved by switching to 24-bit depth format as there will be a larger range of values for each object to calculate upon for their z-depth from the camera.
 >
-> However, it is recommended, particularly for Hololens development, to modify the camera's near and far planes to a smaller range instead and retaining the 16-bit depth format. The z-depth is non-linearly mapped to the range of values along the near and far camera planes. This can be modified by selecting the *Main Camera* in your scene and under **Inspector**, change the **Near & Far Clipping Plane** values to reduce their range (i.e from 1000m to 100m or other x value, etc.)
+> However, it is recommended, particularly for HoloLens development, to modify the camera's near and far planes to a smaller range instead and retaining the 16-bit depth format. The z-depth is non-linearly mapped to the range of values along the near and far camera planes. This can be modified by selecting the *Main Camera* in your scene and under **Inspector**, change the **Near & Far Clipping Plane** values to reduce their range (i.e from 1000m to 100m or other x value, etc.)
 
 ### Building for IL2CPP
 
