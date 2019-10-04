@@ -49,7 +49,6 @@
 #### [Motion controllers](Motion-controllers.md)
 ### Hands-free model
 #### [Hands-free](hands-free.md)
-#### [Voice commanding](Voice-design.md)
 #### [Voice input](voice-input.md)
 #### [Head-gaze and dwell](Gaze-and-dwell.md)
 ### [Head-gaze and commit model](gaze-and-commit.md)

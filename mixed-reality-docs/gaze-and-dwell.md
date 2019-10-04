@@ -124,4 +124,4 @@ Some tips for designing list views:
 * [Point and commit with hands](point-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Head-gaze and commit](gaze-and-commit.md)
-* [Voice commanding](voice-design.md)
+* [Voice input](voice-input.md)
