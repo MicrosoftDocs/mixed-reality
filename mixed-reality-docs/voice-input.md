@@ -3,7 +3,7 @@ title: Voice input
 description: Voice input is a core input for HoloLens and Windows Mixed Reality immersive headsets. Voice can be used for commands, dictation, Cortana, and more.
 author: Hak0n
 ms.author: hakons
-ms.date: 02/24/2019
+ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv, voice, cortana, speech, input
 ---
@@ -14,7 +14,7 @@ keywords: ggv, voice, cortana, speech, input
 
 Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use [gestures](gestures.md). Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces because it lets users cut through nested menus with one command.
 
-Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps.
+Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps. On HoloLens, speech recognition will always function in the Windows display language configured in Settings. 
 
 <br>
 
@@ -59,7 +59,7 @@ Even without specifically adding voice support to your app, your users can activ
 
 In order to use the "select" voice command in HoloLens 2, you first need to bring up the gaze cursor to use as a pointer. The command to bring it up is easy to remember -- just say, "select". 
 
-To exit the mode, simply use your hands again, either by airtapping, approaching a button with your fingers, or using the system gesture.
+To exit the mode, simply use your hands again, either by air tapping, approaching a button with your fingers, or using the system gesture.
 
 
 ![Say "select" to use the voice command for selection](images/kma-voice-select-00170-800px.png)<br>
@@ -71,7 +71,7 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
 
 **HoloLens-specific commands**
 * "What can I say?"
-* "Go home" or "Go to Start" - instead of [bloom](gestures.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
+* "Go to Start" - instead of [bloom](gestures.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
 * "Launch <app>"
 * "Move <app> here"
 * "Take a picture"
@@ -87,15 +87,17 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
 * "Go to sleep"
 * "What time is it?"
 * "How much battery do I have left?"
-* "Call <contact>" (requires Skype for HoloLens)
 
 ## "See It, Say It"
 
-HoloLens has a "see it, say it" model for voice input, where labels on buttons tell users what voice commands they can say as well. For example, when looking at an app window in HoloLens (first gen), a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world.
+HoloLens has a "see it, say it" model for voice input, where labels on buttons tell users what voice commands they can say as well. For example, when looking at an app window in HoloLens (1st gen), a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world.
 
-![When looking at an app window or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)
+![When looking at an app window or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)<br>
+*A user can say the "Adjust" command which they see in the App bar to adjust the position of the app*
 
-When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button in HoloLens 1 (first gen), you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it. To reveal voice tooltips in HoloLens 2, show the voice cursor by saying "select" or "What can I say" (see below). 
+<br>
+
+When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button in HoloLens (1st gen), you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it. To reveal voice tooltips in HoloLens 2, show the voice cursor by saying "select" or "What can I say" (see below). 
 
 ![See it, say it commands appear below the buttons](images/voice-seeitsayit-600px.png)<br>
 *"See it, say it" commands appear below the buttons*
@@ -128,7 +130,7 @@ Rather than typing with [air taps](gestures.md#air-tap), voice dictation can be 
 Any time the holographic keyboard is active, you can switch to dictation mode instead of typing. Select the microphone on the side of the text input box to get started.
 
 
-# Adding voice commands to your app
+## Adding voice commands to your app
 
 Consider adding voice commands to any experience that you build. Voice is a powerful and convenient way control the system and apps. Because users speak with a variety of dialects and accents, proper choice of speech keywords will make sure that your users' commands are interpreted unambiguously.
 

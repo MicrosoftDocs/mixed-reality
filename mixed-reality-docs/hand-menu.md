@@ -55,9 +55,9 @@ Below are 2 recommended placements based on our explorations:
 ![Ulnar side hand location](images/UlnarAboveHandMenu.gif)
 
 **B. Ulnar above hand:**
-The location is comfortable for users because it is not necessary to raise the user's arm too much to interact with the hand menu. We recommend placing menus 13cm above palm and align buttons inside Ulnar palm.
+This location is comfortable for users because they don't need to raise their arm too much to interact with the hand menu. We recommend placing menus 13cm above palm and align buttons inside Ulnar palm.
 
-For technical reasons we recommend this location with one required implementation - the developer will need to freeze menus once a user gets close with their opposite hand to interact with the menu. This will avoid jitteriness from overlapping hands and also allows for fast targeting of buttons.
+For technical reasons we recommend this location with one required implementation: the developer will need to freeze the menu once the user's opposite hand gets close to interacting with it. This will avoid jitteriness from overlapping hands and also allows for a faster targeting of the buttons.
 
 HoloLens 2 cameras identify hands accurately when they are separate from each other. Any overlapping hands can cause hand menus move away from the anchor location.
 

@@ -545,7 +545,6 @@ Input interaction clarity is critical to an app's usability and includes input c
 * [Comfort and gaze](comfort.md#gaze-direction)
 * [Gestures](gestures.md)
 * [Voice input](voice-input.md)
-* [Voice commanding](voice-design.md)
 * [Motion controllers](motion-controllers.md)
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
 * [Keyboard input in Unity](keyboard-input-in-unity.md)
@@ -616,7 +615,7 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 * [Interactable object](interactable-object.md)
 * [Text in Unity](text-in-unity.md)
 * [Bounding box and App bar](app-bar-and-bounding-box.md)
-* [Voice commanding](voice-design.md)
+* [Voice input](voice-input.md)
 
 #### Tools and tutorials
 
