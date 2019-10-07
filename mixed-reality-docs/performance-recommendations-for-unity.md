@@ -112,6 +112,31 @@ public class ExampleClass : MonoBehaviour
 
     [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It is the process of wrapping value-typed variables such as char, int, bool, etc. into reference-typed variables. When a value-typed variable is "boxed", it is wrapped inside of a System.Object which is stored on the managed heap. Thus, memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
 
+    One of the most common forms of boxing in development is the use of [nullable value types](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/). It is common to want to be able to return null for a value type in a function especially when the operation may fail trying to get the value. The potential problem with this approach is that allocation now occur on the heap and consequently need to be garbage collected later.
+
+    **Example of boxing in C#**
+
+    ```csharp
+    // boolean value type is boxed into object boxedMyVar on the heap
+    bool myVar = true;
+    object boxedMyVar = myVar;
+    ```
+
+    **Example of problematic boxing via nullable value types**
+
+    This code demonstrates a dummy particle class that one may create in a Unity project. A call to `TryGetSpeed()` will cause object allocation on the heap which will need to be garbage collected at a later point in time. This example is particularly problematic as there may be 1000+ or many more particles in a scene, each being asked for their current speed. Thus, 1000's of objects would be allocated and consequently de-allocated every frame which would greatly diminish performance. Re-writing the function to return a negative value such as -1 to indicate a failure would avoid this issue and keep memory on the stack.
+
+    ```csharp
+        public class MyParticle
+        {
+            // Example of function returning nullable value type
+            public int? TryGetSpeed()
+            {
+                // Returns current speed int value or null if fails
+            }
+        }
+    ```
+
 #### Repeating code paths
 
 Any repeating Unity callback functions (i.e Update) that are executed many times per second and/or frame should be written very carefully. Any expensive operations here will have huge and consistent impact on performance.
@@ -148,7 +173,9 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
 
 3) **Avoid interfaces and virtual constructs**
 
-    Invoking function calls through interfaces vs direct objects or calling virtual functions can often times be much more expensive than utilizing direct constructs or direct function calls. If the virtual function or interface is unnecessary, then it should be removed. However, the performance hit for these approaches are generally worth the trade-off if utilizing them simplifies development collaboration, code readability, and code maintainability. 
+    Invoking function calls through interfaces vs direct objects or calling virtual functions can often times be much more expensive than utilizing direct constructs or direct function calls. If the virtual function or interface is unnecessary, then it should be removed. However, the performance hit for these approaches are generally worth the trade-off if utilizing them simplifies development collaboration, code readability, and code maintainability.
+
+    Generally, the recommendation is to not mark fields and functions as virtual unless there is a clear expectation that this member needs to be overwritten. One should be especially careful around high-frequency code paths that are called many times per frame or even once per frame such as an `UpdateUI()` method.
 
 4) **Avoid passing structs by value**
 
