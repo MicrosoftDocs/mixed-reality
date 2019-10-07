@@ -64,12 +64,12 @@ The philosophy of simple, instinctual interactions is interwoven throughout the 
 <br>
 
 ### [Hands and motion controllers](hands-and-tools.md)
-Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
+Users can touch and manipulate holograms directly with one or both hands much like they do with real world objects. Or with motion controllers, you can extend the user's physical capabilities by providing precise interactions across a large range of distances.
 
 <br>
 
-### [Voice input](voice-input.md)
-When using voice commands, gaze is typically used as the targeting mechanism, whether as a pointer ("select") or to direct your command to an application ("see it, say it").
+### [Directly commanding objects with voice input](voice-input.md)
+Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use gestures. Voice input can be a natural way to communicate your intent.
 
 <br>
 
@@ -83,7 +83,7 @@ Designing content for mixed reality requires careful consideration of color, lig
 
 <br>
 
-### [Suggesting the scale of an object - (Scale)](scale.md)
+### [Suggesting the scale of an object](scale.md)
 A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
 
 <br>
