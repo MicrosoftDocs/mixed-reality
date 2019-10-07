@@ -15,12 +15,13 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 ![Core concepts](images/text_in_unity_viewingangle.jpg)
 
-## What are the core concepts of an experience?
+## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-### [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design.
+As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design. [Read more](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 <br>
+
+## What are the core concepts of an experience?
 
 ### [Keep the user comfortable - (Comfort)](comfort.md)
 To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
