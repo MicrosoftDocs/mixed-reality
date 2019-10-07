@@ -7,13 +7,21 @@ ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
+keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects, core concepts, interaction
 ---
 
 # Start designing and prototyping
 
 
-![building blocks](images/text_in_unity_viewingangle.jpg)
+![Core concepts](images/text_in_unity_viewingangle.jpg)
+
+## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
+
+As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design. [Read more](case-study-expanding-the-design-process-for-mixed-reality.md)
+
+<br>
+
+---
 
 ## What are the core concepts of an experience?
 
@@ -27,26 +35,21 @@ Users see the world of mixed reality through a rectangular viewport powered by t
 
 <br>
 
-### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
+### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+One of the advantages of developing apps for mixed reality is that there is a spectrum of experiences that the platform can support. From fully immersive, virtual environments, to light information layering over a user’s current environment, mixed reality provides a robust set of tools to bring any experience to life.
+
+<br>
+
+### [Keeping holograms in place - (Coordinate systems)](coordinate-systems.md)
+At their core, mixed reality apps place holograms in your world that look and sound like real objects. This involves precisely positioning those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created.
+
+<br>
+
+### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping-design.md)
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
 
 <br>
 
-### [Suggesting the scale of an object - (Scale)](scale.md)
-A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
-
-<br>
-
-### [Clear and readable typography](typography.md)
-Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
-
-<br>
-
-### [Color, light and materials](color,-light-and-materials.md)
-Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
-
-
-<br>
 
 ---
 
@@ -57,34 +60,38 @@ Designing content for mixed reality requires careful consideration of color, lig
 ## Interaction design factors to consider
 
 
-### [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design.
-
-<br>
-
-### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
-One of the advantages of developing apps for Windows Mixed Reality is that there is a spectrum of experiences that the platform can support. From fully immersive, virtual environments, to light information layering over a user’s current environment, Windows Mixed Reality provides a robust set of tools to bring any experience to life.
-
-<br>
-
 ### [Choose an interaction model for your customer](interaction-fundamentals.md)
 The philosophy of simple, instinctual interactions is interwoven throughout the Mixed Reality platform. We've taken three steps to ensure that application designers and developers can provide their customers with easy and intuitive interactions.
 
 <br>
 
 ### [Hands and motion controllers](hands-and-tools.md)
-Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
+Users can touch and manipulate holograms directly with one or both hands much like they do with real world objects. Or with motion controllers, you can extend the user's physical capabilities by providing precise interactions across a large range of distances.
 
 <br>
 
-### [Voice input](voice-input.md)
-When using voice commands, gaze is typically used as the targeting mechaninism, whether as a pointer ("select") or to direct your command to an application ("see it, say it").
+### [Directly commanding objects with voice input](voice-input.md)
+Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use gestures. Voice input can be a natural way to communicate your intent.
 
 <br>
 
 ### [Leveraging the user's eye-gaze](eye-tracking.md)
 HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at.
 
+<br>
+
+### [Color, light and materials](color,-light-and-materials.md)
+Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
+
+<br>
+
+### [Suggesting the scale of an object](scale.md)
+A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
+
+<br>
+
+### [Clear and readable typography](typography.md)
+Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
 
 <br>
 
@@ -143,7 +150,7 @@ HoloLens 2 allows for a new level of context and human understanding within the 
     :::column:::
         [![Start developing](images/icon-developer.jpg)](development.md)<br>
         **[Start developing](development.md)**<br>
-        Choose a development path based on your skill level, work style. or platform interest.
+        Choose a development path based on your skill level, work style or platform interest.
     :::column-end:::
 :::row-end:::
 

@@ -74,7 +74,7 @@ The HoloLens 2 tutorials are designed to help developers learn both techniques a
 <br>
 
 ### [Example Unity scenes in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
-The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input
+The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
 
 <br>
 
@@ -107,7 +107,7 @@ The fastest path to building a native mixed reality app.
 <br>
 
 ### [DirectX UWP app templates for mixed reality](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
-All of the essentials you need to start writing a mixed reality app using DirectX
+All of the essentials you need to start writing a mixed reality app using DirectX.
 
 <br>
 
