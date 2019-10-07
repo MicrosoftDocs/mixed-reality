@@ -150,7 +150,7 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
     :::column:::
         [![Start developing](images/icon-developer.jpg)](development.md)<br>
         **[Start developing](development.md)**<br>
-        Choose a development path based on your skill level, work style. or platform interest.
+        Choose a development path based on your skill level, work style or platform interest.
     :::column-end:::
 :::row-end:::
 
