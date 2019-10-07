@@ -20,7 +20,7 @@ Voice input is powered by the [same engine](https://msdn.microsoft.com/library/w
 
 ## Voice and gaze
 
-When using voice commands, gaze is typically used as the targeting mechaninism, whether with a cursor ("select") or to direct your command to an application in front of you, even when there is no visible gaze cursor ("see it, say it"). Of course, some voice commands don't require a target at all, like "go to start" or "Hey, Cortana."
+When using voice commands, gaze is typically used as the targeting mechanism, whether with a cursor ("select") or to direct your command to an application in front of you, even when there is no visible gaze cursor ("see it, say it"). Of course, some voice commands don't require a target at all, like "go to start" or "Hey, Cortana."
 
 <br>
 
