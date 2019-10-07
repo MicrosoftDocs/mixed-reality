@@ -21,6 +21,8 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 
 <br>
 
+---
+
 ## What are the core concepts of an experience?
 
 ### [Keep the user comfortable - (Comfort)](comfort.md)
