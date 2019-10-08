@@ -2,7 +2,7 @@
 title: Instinctual interactions
 description: Learn the philosophy of simple instinctual interactions, interwoven throughout the Mixed Reality platform.
 author: shengkait
-ms.author: shengkait
+ms.author: shentan
 ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
