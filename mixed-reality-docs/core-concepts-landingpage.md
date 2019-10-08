@@ -15,7 +15,7 @@ Before diving into the design your experience, it's helpful to understand a few 
 
 :::row:::
     :::column:::
-       [![Comfort](images/distanceguiderendering-950px.png)](comfort.md)
+       [![Comfort](images/comfort-chart.PNG)](comfort.md)
         **[Comfort](comfort.md)**
     :::column-end:::
     :::column:::
