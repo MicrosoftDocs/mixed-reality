@@ -14,7 +14,7 @@ keywords: ggv, voice, cortana, speech, input
 
 Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use [gestures](gestures.md). Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces because it lets users cut through nested menus with one command.
 
-Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps.
+Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps. On HoloLens, speech recognition will always function in the Windows display language configured in Settings. 
 
 <br>
 
@@ -71,7 +71,7 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
 
 **HoloLens-specific commands**
 * "What can I say?"
-* "Go home" or "Go to Start" - instead of [bloom](gestures.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
+* "Go to Start" - instead of [bloom](gestures.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
 * "Launch <app>"
 * "Move <app> here"
 * "Take a picture"
@@ -87,7 +87,6 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
 * "Go to sleep"
 * "What time is it?"
 * "How much battery do I have left?"
-* "Call <contact>" (requires Skype for HoloLens)
 
 ## "See It, Say It"
 

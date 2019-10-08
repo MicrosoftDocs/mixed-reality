@@ -112,6 +112,31 @@ public class ExampleClass : MonoBehaviour
 
     [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It is the process of wrapping value-typed variables such as char, int, bool, etc. into reference-typed variables. When a value-typed variable is "boxed", it is wrapped inside of a System.Object which is stored on the managed heap. Thus, memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
 
+    One of the most common forms of boxing in development is the use of [nullable value types](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/). It is common to want to be able to return null for a value type in a function especially when the operation may fail trying to get the value. The potential problem with this approach is that allocation now occur on the heap and consequently need to be garbage collected later.
+
+    **Example of boxing in C#**
+
+    ```csharp
+    // boolean value type is boxed into object boxedMyVar on the heap
+    bool myVar = true;
+    object boxedMyVar = myVar;
+    ```
+
+    **Example of problematic boxing via nullable value types**
+
+    This code demonstrates a dummy particle class that one may create in a Unity project. A call to `TryGetSpeed()` will cause object allocation on the heap which will need to be garbage collected at a later point in time. This example is particularly problematic as there may be 1000+ or many more particles in a scene, each being asked for their current speed. Thus, 1000's of objects would be allocated and consequently de-allocated every frame which would greatly diminish performance. Re-writing the function to return a negative value such as -1 to indicate a failure would avoid this issue and keep memory on the stack.
+
+    ```csharp
+        public class MyParticle
+        {
+            // Example of function returning nullable value type
+            public int? TryGetSpeed()
+            {
+                // Returns current speed int value or null if fails
+            }
+        }
+    ```
+
 #### Repeating code paths
 
 Any repeating Unity callback functions (i.e Update) that are executed many times per second and/or frame should be written very carefully. Any expensive operations here will have huge and consistent impact on performance.
@@ -148,7 +173,9 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
 
 3) **Avoid interfaces and virtual constructs**
 
-    Invoking function calls through interfaces vs direct objects or calling virtual functions can often times be much more expensive than utilizing direct constructs or direct function calls. If the virtual function or interface is unnecessary, then it should be removed. However, the performance hit for these approaches are generally worth the trade-off if utilizing them simplifies development collaboration, code readability, and code maintainability. 
+    Invoking function calls through interfaces vs direct objects or calling virtual functions can often times be much more expensive than utilizing direct constructs or direct function calls. If the virtual function or interface is unnecessary, then it should be removed. However, the performance hit for these approaches are generally worth the trade-off if utilizing them simplifies development collaboration, code readability, and code maintainability.
+
+    Generally, the recommendation is to not mark fields and functions as virtual unless there is a clear expectation that this member needs to be overwritten. One should be especially careful around high-frequency code paths that are called many times per frame or even once per frame such as an `UpdateUI()` method.
 
 4) **Avoid passing structs by value**
 
@@ -214,29 +241,37 @@ Read *Dynamic Batching* under [Draw Call Batching in Unity](https://docs.unity3d
 
 Batching can only occur if multiple GameObjects are able to share the same material. Typically this will be blocked by the need for GameObjects to have a unique texture for their respective Material. It is common to combine Textures into one big Texture, a method known as [Texture Atlasing](https://en.wikipedia.org/wiki/Texture_atlas).
 
-Further, it is generally preferable to combine meshes into one GameObject where possible and reasonable. Each Renderer in Unity will have it's associated draw call(s) versus submitting a combined mesh under one Renderer. 
+Further, it is generally preferable to combine meshes into one GameObject where possible and reasonable. Each Renderer in Unity will have it's associated draw call(s) versus submitting a combined mesh under one Renderer.
 
 >[!NOTE]
 > Modifying properties of Renderer.material at runtime will create a copy of the Material and thus potentially break batching. Use Renderer.sharedMaterial to modify shared material properties across GameObjects.
 
 ## GPU performance recommendations
 
-Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games) 
+Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games)
 
 ### Optimize depth buffer sharing
 
-It is generally recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it is recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduces the bandwidth (and thus power) associated with depth buffer traffic. This can be a big power win, but is only applicable for experiences with a small depth range as [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) is more likely to occur with 16-bit than 24-bit. To avoid these artifacts, modify the near/far clip planes of the [Unity camera](https://docs.unity3d.com/Manual/class-Camera.html) to account for the lower precision. For HoloLens-based applications, a far clip plane of 50m instead of the Unity default 1000m can generally eliminate any z-fighting.
+It is generally recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it is recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduces the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
+
+**Z-Fighting**
+
+The reduced depth range fidelity makes [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) more likely to occur with 16-bit than 24-bit. To avoid these artifacts, modify the near/far clip planes of the [Unity camera](https://docs.unity3d.com/Manual/class-Camera.html) to account for the lower precision. For HoloLens-based applications, a far clip plane of 50m instead of the Unity default 1000m can generally eliminate any z-fighting.
+
+**Disabled Stencil Buffer**
+
+When Unity creates a [Render Texture with 16-bit depth](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html), there is no stencil buffer created. Selecting 24-bit depth format, per Unity documentation, will create a 24-bit z-buffer as well as an [8-bit stencil buffer](https://docs.unity3d.com/Manual/SL-Stencil.html) (if 32-bit is applicable on device which is generally the case such as HoloLens).
 
 ### Avoid full-screen effects
 
-Techniques that operate on the full screen can be quite expensive since their order of magnitude is millions of operations every frame. Thus, it is recommended to avoid [post-processing effects](https://docs.unity3d.com/Manual/PostProcessingOverview.html) such as anti-aliasing, bloom, and more. 
+Techniques that operate on the full screen can be quite expensive since their order of magnitude is millions of operations every frame. Thus, it is recommended to avoid [post-processing effects](https://docs.unity3d.com/Manual/PostProcessingOverview.html) such as anti-aliasing, bloom, and more.
 
 ### Optimal lighting settings
 
-[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide oustanding visual results but involves quite expensive lighting calculations. It is recommended to disable Realtime Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**. 
+[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide oustanding visual results but involves quite expensive lighting calculations. It is recommended to disable Realtime Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**.
 
-Further, it is recommended to disable all shadow casting as these also add expensive GPU passes onto a Unity scene. Shadows can be disable per light but can also be controlled holistically via Quality settings. 
- 
+Further, it is recommended to disable all shadow casting as these also add expensive GPU passes onto a Unity scene. Shadows can be disable per light but can also be controlled holistically via Quality settings.
+
 **Edit** > **Project Settings**, then select the **Quality** category > Select **Low Quality** for the UWP Platform. One can also just set the **Shadows** property to **Disable Shadows**.
 
 ### Reduce poly count
