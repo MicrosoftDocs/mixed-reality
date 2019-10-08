@@ -30,7 +30,7 @@ Before diving into the design your experience, it's helpful to understand a few 
 
 :::row:::
     :::column:::
-       [![App model](images/20160112-055908-hololens-500px.jpg)](app-model.md)
+       [![App model](images/teleportation-640px.png)](app-model.md)
         **[App model](app-model.md)**
     :::column-end:::
     :::column:::
