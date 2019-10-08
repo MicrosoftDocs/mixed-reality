@@ -29,7 +29,7 @@ Menus should billboard towards the opposite shoulder and middle of the head: Thi
 Do not assume both of the user's hands are always available. Consider a wide range of contexts when one or both hands are not available, and make sure your design accounts for those situations. To support a one-handed hand menu, you can try transitioning the menu placement from hand-locked to world-locked when the hand flips (goes palm down). For hands-free scenarios, consider using a voice command to invoke the hand menu buttons.
 
 **E. Two-step invocation:**
-If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience many false-positives in your app, consider an adding additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
+If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience false-positives in your app, consider adding an additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
 
 **F. Avoid adding buttons near the wrist (system home button):**
 If the hand menu buttons are placed too close to the home button, it may get accidentally triggered while interacting with the hand menu.
