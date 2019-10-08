@@ -1,6 +1,6 @@
 ---
-title: Multimodal interaction overview
-description: Overview of the multimodal interaction
+title: Instinctual interactions
+description: Learn the philosophy of simple instinctual interactions, interwoven throughout the Mixed Reality platform.
 author: shengkait
 ms.author: shengkait
 ms.date: 04/11/2019

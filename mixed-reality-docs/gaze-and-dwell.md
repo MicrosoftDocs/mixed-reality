@@ -116,8 +116,8 @@ Some tips for designing list views:
 * Have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
 * Only show the dwell target when the row is highlighted to cut down on visual noise.
 * Be clear and consistent with the position of dwell targets.
-* Don't show all dwell targets at once to avoid repetitive UI
-* Re-use the same pattern as often as possible to establish UX familiarity
+* Don't show all dwell targets at once to avoid repetitive UI.
+* Re-use the same pattern as often as possible to establish UX familiarity.
  
  ## See also
 * [Direct manipulation with hands](direct-manipulation.md)
