@@ -40,7 +40,7 @@
 ### [Spatial mapping](spatial-mapping.md)
 ### [Room scan visualization](room-scan-visualization.md)
 ### [Spatial anchors](spatial-anchors.md)
-## Choose an interaction model
+## Interaction models
 ### [Instinctual interactions](Interaction-fundamentals.md)
 ### Hands and motion controllers model
 #### [Hands and motion controllers](hands-and-tools.md)
@@ -69,7 +69,7 @@
 #### [Hand menu](hand-menu.md)
 #### [Cursors](cursors.md)
 #### [Billboarding and tag-along](billboarding-and-tag-along.md)
-## Design tools and resources
+## Resources
 ### [Learn Unity](https://learn.unity.com/)
 ### [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 ### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)

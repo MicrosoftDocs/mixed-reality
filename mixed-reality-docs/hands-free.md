@@ -1,7 +1,7 @@
 ---
 title: Hands-free
 description: Optimizing your app for hands-free
-author: liamar
+author: liamartinez
 ms.author: liamar
 ms.date: 04/20/2019
 ms.topic: article

@@ -2,7 +2,7 @@
 title: Hands and motion controllers
 description: Overview of hands and motion controllers interaction
 author: shengkait
-ms.author: shengkait
+ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
 keywords: Mixed Reality, hands, motion controllers, interaction, design
