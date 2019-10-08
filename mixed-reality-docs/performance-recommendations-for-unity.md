@@ -241,29 +241,37 @@ Read *Dynamic Batching* under [Draw Call Batching in Unity](https://docs.unity3d
 
 Batching can only occur if multiple GameObjects are able to share the same material. Typically this will be blocked by the need for GameObjects to have a unique texture for their respective Material. It is common to combine Textures into one big Texture, a method known as [Texture Atlasing](https://en.wikipedia.org/wiki/Texture_atlas).
 
-Further, it is generally preferable to combine meshes into one GameObject where possible and reasonable. Each Renderer in Unity will have it's associated draw call(s) versus submitting a combined mesh under one Renderer. 
+Further, it is generally preferable to combine meshes into one GameObject where possible and reasonable. Each Renderer in Unity will have it's associated draw call(s) versus submitting a combined mesh under one Renderer.
 
 >[!NOTE]
 > Modifying properties of Renderer.material at runtime will create a copy of the Material and thus potentially break batching. Use Renderer.sharedMaterial to modify shared material properties across GameObjects.
 
 ## GPU performance recommendations
 
-Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games) 
+Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games)
 
 ### Optimize depth buffer sharing
 
-It is generally recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it is recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduces the bandwidth (and thus power) associated with depth buffer traffic. This can be a big power win, but is only applicable for experiences with a small depth range as [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) is more likely to occur with 16-bit than 24-bit. To avoid these artifacts, modify the near/far clip planes of the [Unity camera](https://docs.unity3d.com/Manual/class-Camera.html) to account for the lower precision. For HoloLens-based applications, a far clip plane of 50m instead of the Unity default 1000m can generally eliminate any z-fighting.
+It is generally recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it is recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduces the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
+
+**Z-Fighting**
+
+The reduced depth range fidelity makes [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) more likely to occur with 16-bit than 24-bit. To avoid these artifacts, modify the near/far clip planes of the [Unity camera](https://docs.unity3d.com/Manual/class-Camera.html) to account for the lower precision. For HoloLens-based applications, a far clip plane of 50m instead of the Unity default 1000m can generally eliminate any z-fighting.
+
+**Disabled Stencil Buffer**
+
+When Unity creates a [Render Texture with 16-bit depth](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html), there is no stencil buffer created. Selecting 24-bit depth format, per Unity documentation, will create a 24-bit z-buffer as well as an [8-bit stencil buffer](https://docs.unity3d.com/Manual/SL-Stencil.html) (if 32-bit is applicable on device which is generally the case such as HoloLens).
 
 ### Avoid full-screen effects
 
-Techniques that operate on the full screen can be quite expensive since their order of magnitude is millions of operations every frame. Thus, it is recommended to avoid [post-processing effects](https://docs.unity3d.com/Manual/PostProcessingOverview.html) such as anti-aliasing, bloom, and more. 
+Techniques that operate on the full screen can be quite expensive since their order of magnitude is millions of operations every frame. Thus, it is recommended to avoid [post-processing effects](https://docs.unity3d.com/Manual/PostProcessingOverview.html) such as anti-aliasing, bloom, and more.
 
 ### Optimal lighting settings
 
-[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide oustanding visual results but involves quite expensive lighting calculations. It is recommended to disable Realtime Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**. 
+[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide oustanding visual results but involves quite expensive lighting calculations. It is recommended to disable Realtime Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**.
 
-Further, it is recommended to disable all shadow casting as these also add expensive GPU passes onto a Unity scene. Shadows can be disable per light but can also be controlled holistically via Quality settings. 
- 
+Further, it is recommended to disable all shadow casting as these also add expensive GPU passes onto a Unity scene. Shadows can be disable per light but can also be controlled holistically via Quality settings.
+
 **Edit** > **Project Settings**, then select the **Quality** category > Select **Low Quality** for the UWP Platform. One can also just set the **Shadows** property to **Disable Shadows**.
 
 ### Reduce poly count
