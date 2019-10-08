@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Mixed reality core concepts
-description: This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets). So, consider this work as a set of topics for ‘how to design for Windows head-mounted displays’.
+description: Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that fundamentally affects and contributes to the quality of the mixed reality experience you are creating for your user.
 author: grbury 
 ms.author: grbury
 ms.date: 10/02/2019
