@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 # Core concepts overview
 
-Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is a underlying factor that fundamentally affects and contributes to the quality of the mixed reality experience you are creating for your user. 
+Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that fundamentally affects and contributes to the quality of the mixed reality experience you are creating for your user. 
 
 :::row:::
     :::column:::
