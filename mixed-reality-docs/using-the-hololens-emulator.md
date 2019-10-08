@@ -22,7 +22,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 Download the HoloLens Emulator.
 
 Versions: 
-* [HoloLens 2 Emulator (September 2019 Update)](https://go.microsoft.com/fwlink/?linkid=2103724).
+* [HoloLens 2 Emulator (October 2019 Update)](https://go.microsoft.com/fwlink/?linkid=2106649).
 * [HoloLens Emulator (1st Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
@@ -125,6 +125,38 @@ The Diagnostics tab shows the emulator's IP address in the form of a link to Win
 ### Network tab
 
 The Network tab shows the network adapter details for the emulator as well as network adapter details for the host machine.  Note that for the HoloLens 2 Emulator, this tab will only appear when running the emulator on the Windows 10 May 2019 Update or newer.
+
+### NAT Configuration tab
+
+This tab will only appear when running the emulator on the Windows 10 May 2019 Update or newer.
+
+The emulator uses your PC's network connection and sits behind a NAT.  This tab allows you to map ports from your host PC to the emulator, which enables remote devices to connect to applications and services running in the emulator.
+
+For example, if you want to access Device Portal on the emulator from a remote PC:
+
+1. Add an entry for internal port 80 (the port on which Device Portal is listening) by double-clicking on a free row in the table.  For other applications, enter the port number on which that application is listening.
+2. Choose any available external port.  In this example, we'll use port 8080 as the external port.
+3. Select the protocol.  The default is TCP.  Since Device Portal uses TCP, we'll leave the default.
+4. Click "Apply Changes" to enable the mapping.  The 'Status' will change from 'Pending' to 'Active'.
+5. On the remote PC open a browser and navigate to (IP-of-the-PC-running-the-emulator):8080.  The Device Portal interface will appear.  Note that the IP address you use on a remote PC must be the IP address of the PC running the emulator, not of the emulator itself.  You can retrieve the IP through various means such as the Settings app on the PC in the 'Network & Internet' category, 'ipconfig' from a Command Prompt and from the Network tab in the emulator Tools dialog by looking for the Desktop Adapter entry.
+
+Also note that if you add a port mapping for Device Portal, you can control the emulator remotely using the Perception Simulation Control tool included in the emulator installation or with the Perception Simulation APIs by connecting to the host PC's IP address and Device Portal external port, such as 8080 in the example above.  When using Perception Simulation Control to connect to and control the emulator remotely, only specify the PC's IP address and the configured port.  Do not include 'http://'.
+
+There are no port mappings by default.  Any mappings you configure are persistent across launches of the HoloLens 2 Emulator and will be enabled automatically when the emulator has booted fully.
+
+Use the 'Export' button to save your mappings to a file.  You can then share this file with other team members who can use the 'Import' button to automatically configure the same mappings.
+
+![HoloLens Emulator 'NAT Configuration' tab](images/emulator-natconfig-500px.png)
+
+### Updates tab
+
+This tab will only appear when running the emulator on the Windows 10 May 2019 Update or newer.
+
+On startup, the emulator will check for new versions.  If a new version is available, the emulator will display a prompt showing the version you have along with the available version and asking if you want to update.  If you choose 'Yes', the installer for the new version is downloaded.
+
+The Updates tab allows you control whether or not the emulator checks for new versions by toggling the "Automatically check for updates" check box on this tab.  It also allows you to see and download other available emulator versions, starting with the September 2019 Update.  For versions other than the one currently running, a download link is provided.  Clicking this link will download the installer for that version.
+
+![HoloLens Emulator 'Updates' tab](images/emulator-updates-500px.png)
 
 
 ## Anatomy of the HoloLens (1st gen) emulator
