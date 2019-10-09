@@ -59,7 +59,7 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 
 
 ### [Unity development overview](unity-development-overview.md)
-The fastest path to building a mixed reality app is with Unity. We recommend that you take time to explore the Unity tutorials. If you need assets, Unity has a comprehensive Asset Store. 
+We recommend that you take time to explore the Unity tutorials. If you need assets, Unity has a comprehensive Asset Store. 
 
 <br>
 
@@ -83,7 +83,7 @@ The HandInteractionExamples.unity example scene contains various types of intera
 ## Unreal
 
 ### [Unreal development overview](unreal-development-overview.md)
-The fastest path to building a mixed reality app is with Unreal.
+Learn how to build a mixed reality app using Unreal.
 
 <br>
 
@@ -92,7 +92,7 @@ The fastest path to building a mixed reality app is with Unreal.
 ## WebVR	
 
 ### [Babylon development overview](https://doc.babylonjs.com/)	
-The fastest path to building a mixed reality app is with Babylon. We recommend that you take time to explore the Babylon tutorials.
+Learn how to build a mixed reality app with Babylon. We recommend that you take time to explore the Babylon tutorials.
 
 <br>
 
