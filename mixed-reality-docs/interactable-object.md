@@ -83,7 +83,7 @@ Here is what these states look like on a **holographic button**:
 
 ### Near interactions (direct) 
 
-HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception sometimes it can be hard to tell how far away your hand is from an object, or whether you are touching. It is important to provide enough visual cues to communicate the state of the object and in particular of your hands in relation to holograms.
+HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception, it can sometimes be hard to tell how far away your hand is from an object or whether you are touching it. It is important to provide enough visual cues to communicate the state of the object and in particular the state of your hands in relation to that object.
 
 Use visual feedback to communicate the following:
 * **Default (Observation)**: Default idle state of the object.
@@ -129,7 +129,7 @@ Use visual feedback to communicate the following:
 
 ---
 
-A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of visualizing different input interaction states:
+A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of how the different input interaction states are visualized:
 
 :::row:::
     :::column:::
