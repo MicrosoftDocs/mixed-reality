@@ -162,10 +162,10 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
 
 :::row:::
     :::column:::
-        ### An additional visual cue on HoloLens 2<br>
+        ### The "ring" visual cue on HoloLens 2<br>
         On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.<br>
         <br>
-        *Animation: Example of visual feedback based on proximity on a bounding box*
+        *Video loop: Example of visual feedback based on proximity with a bounding box*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -199,7 +199,7 @@ For direct hand interactions, proper audio feedback can dramatically improve the
         *Image: Tooltip for the voice command*
     :::column-end:::
         :::column:::
-       ![voice commanding](images/640px-interactibleobject-voicecommand.jpg)<br>
+       ![voice commanding](images/640px-interactibleobject-voicecommand.png)<br>
     :::column-end:::
 :::row-end:::
 
@@ -234,13 +234,13 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 *Target size for the buttons*
 
 
-### Target size for hand ray or gaze interaction
+### Target size for a hand ray or gaze interaction
 | Distance | Viewing angle | Size |
 |---------|---------|---------|
 | 2m  | no smaller than 1° | 3.5 x 3.5 cm |
 
-![Target size for hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
-*Target size for hand ray or gaze interaction*
+![Target size for a hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
+*Target size for a hand ray or gaze interaction*
 
 
 ## Creating interactable object with Mixed Reality Toolkit (MRTK)
