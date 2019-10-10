@@ -125,6 +125,8 @@ Use visual feedback to communicate the following:
 
 <br>
 
+<br>
+
 ---
 
 A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of visualizing different input interaction states:
@@ -150,7 +152,7 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
     :::column:::
         ![Press](images/640px-interactibleobject-pressablebutton-press.jpg)<br>
         **Press**<br>
-        Moving front plate.
+        Move the front plate.
     :::column-end:::
 :::row-end:::
 
