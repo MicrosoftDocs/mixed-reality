@@ -60,10 +60,28 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
 
 You can use techniques such as highlighting or scaling to provide visual cues for the user’s input state. In mixed reality, you can find the examples of visualizing different input states on the Start menu and with app bar buttons. 
 
+Here is what these states look like on a **holographic button**:
+
 <br>
 
-![Observation state, targeted state, and pressed state on holographic button](images/MRTK_InteractableState.png)<br>
-*Observation state, targeted state, and pressed state on holographic button*
+:::row:::
+    :::column:::
+       ![interactibleobject-states-default](images/MRTK_InteractableState-default.jpg)<br>
+       **Default (Observation) state**<br>
+    :::column-end:::
+    :::column:::
+       ![interactibleobject-states-targeted](images/MRTK_InteractableState-targeted.jpg)<br>
+        **Targeted (Hover) state**<br>
+    :::column-end:::
+    :::column:::
+       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
+       **Pressed state**<br>
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
 
 ### Near interactions (direct) 
 
