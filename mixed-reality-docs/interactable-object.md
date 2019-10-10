@@ -94,11 +94,11 @@ For direct hand interactions, proper audio feedback can dramatically improve the
 
 :::row:::
     :::column:::
-        For any interactable objects, it is important to support alternative interaction options. By default, we recommend that [voice commanding](voice-design.md) be supported for any objects that are interactable. To improve discoverability, you can also provide a tooltip during the hover state.
+        For any interactable objects, it is important to support alternative interaction options. By default, we recommend that [voice commanding](voice-design.md) be supported for any objects that are interactable. To improve discoverability, you can also provide a tooltip during the hover state.<br>
+        *Image: Tooltip for the voice command*
     :::column-end:::
         :::column:::
-       ![voice commanding](images/640px-interactibleobject-voicecommand.jpg)<br>
-       *Tooltip for the voice command*
+       ![voice commanding](images/640px-interactibleobject-voicecommand.jpg)
     :::column-end:::
 :::row-end:::
 
