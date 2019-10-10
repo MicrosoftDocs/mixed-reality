@@ -112,9 +112,9 @@ Use visual feedback to communicate the following:
 * **Grasped**: Change visuals (light, color) when the object is grasped
 * **Contact ends**: Change visuals (light, color) when touch has ended
 
----
-
 <br>
+
+---
 
 :::row:::
     :::column:::
