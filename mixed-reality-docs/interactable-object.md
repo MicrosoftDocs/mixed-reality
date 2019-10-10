@@ -62,8 +62,6 @@ You can use techniques such as highlighting or scaling to provide visual cues fo
 
 Here is what these states look like on a **holographic button**:
 
-<br>
-
 :::row:::
     :::column:::
        ![interactibleobject-states-default](images/MRTK_InteractableState-default.jpg)<br>
