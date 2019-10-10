@@ -25,6 +25,7 @@ Visual cues are sensory cues received by the eye in the form of light and proces
 
 Since the holographic objects are blended with the real-world environment in mixed reality, it could be difficult to understand which objects you can interact with. For any interactable objects in your experience, it is important to provide differentiated visual cues for each input state. This helps the user understand which part of your experience is interactable and makes the user confident by using a consistent interaction method.
 
+<br>
 
 ---
 
@@ -35,19 +36,19 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
 :::row:::
     :::column:::
        ![interactibleobject-states-default](images/interactibleobject-states-default.jpg)<br>
-       **Default (Observation)**<br>
+       **Default (Observation) state**<br>
         Default idle state of the object.
        The cursor is not on the object. Hand is not detected.
     :::column-end:::
     :::column:::
        ![interactibleobject-states-targeted](images/interactibleobject-states-targeted.jpg)<br>
-        **Targeted (Hover)**<br>
+        **Targeted (Hover) state**<br>
         When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
         The cursor is on the object. Hand is detected, ready.
     :::column-end:::
     :::column:::
        ![interactibleobject-states-pressed](images/interactibleobject-states-pressed.jpg)<br>
-       **Pressed**<br>
+       **Pressed state**<br>
         When the object is pressed with an air tap gesture, finger press or motion controller's select button.
         The cursor is on the object. Hand is detected, air tapped.
     :::column-end:::
