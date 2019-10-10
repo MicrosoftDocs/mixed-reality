@@ -67,7 +67,7 @@ We recommend the following hardware and software for this course:
 2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user). 
 
-For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
+For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens-2).
 
 For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](sensor-tuning.md).
 
@@ -200,7 +200,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
 5.  While still in **File > Build Settings** and make sure that:
 
-    1.  **Target Device** is set to **Hololens**
+    1.  **Target Device** is set to **HoloLens**
 
         > For the immersive headsets, set **Target Device** to *Any Device*.
         
@@ -777,7 +777,7 @@ To create this class:
     ```
 
     > [!IMPORTANT]
-    > Ensure that you add your **Service Key** (Training Key) value and **Project Id** value, which you noted down previous; these are the values you [collected from the portal earlier in the course (Chapter 2, step 10 onwards)](#chapter-2---training-your-custom-vision-oroject).
+    > Ensure that you add your **Service Key** (Training Key) value and **Project Id** value, which you noted down previous; these are the values you [collected from the portal earlier in the course (Chapter 2, step 10 onwards)](#chapter-2---training-your-custom-vision-project).
 
 5.  Add the following **Start()** and **Awake()** methods. Those methods are called on initialization and contain the call to set up the UI:
 
@@ -1443,7 +1443,7 @@ To create this class:
                 }
             } 
 
-            // Subscribing to the Hololens API gesture recognizer to track user gestures
+            // Subscribing to the HoloLens API gesture recognizer to track user gestures
             recognizer = new GestureRecognizer();
             recognizer.SetRecognizableGestures(GestureSettings.Tap);
             recognizer.Tapped += TapHandler;

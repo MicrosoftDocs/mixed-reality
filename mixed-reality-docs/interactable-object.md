@@ -14,77 +14,93 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore. Anything can be an **interactable object** that triggers an event. An interactable object can be represented as anything from a coffee cup on the table to a balloon floating in the air. We still do make use of traditional buttons in certain situation such as in dialog UI. The visual representation of the button depends on the context.
 
-![Interactible objects](images/640px-interactibleobject-hero-640px.jpg)
+![Interactible objects](images/InteractableExamples.png)
 
 
 ## Important properties of the interactable object
 
-### Visual cue
+### Visual cues
 
 Visual cues are sensory cues received by the eye in the form of light and processed by the visual system during visual perception. Since the visual system is dominant in many species, especially humans, visual cues are a large source of information in how the world is perceived.
 
-In mixed reality, since the holographic objects are mixed with the real-world environment, it could be difficult to understand which objects are interactable. For any interactable objects in your experience, it is important to provide differentiated visual cue for each input state. This helps the user understand which part of your experience is interactable and makes the user confident with consistent interaction method.
+Since the holographic objects are blended with the real-world environment in mixed reality, it could be difficult to understand which objects you can interact with. For any interactable objects in your experience, it is important to provide differentiated visual cues for each input state. This helps the user understand which part of your experience is interactable and makes the user confident by using a consistent interaction method.
 
-#### Far interactions
+### Far interactions
 
 For any objects that user can interact with gaze, hand ray, and motion controller's ray, we recommend to have different visual cue for these three input states:
 * **Default (Observation)**: Default idle state of the object.
 * **Targeted (Hover)**: When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
 * **Pressed**: When the object is pressed with air-tap gesture, finger press or motion controller's select button.
 
-You can use techniques such as highlighting or scaling to provide visual cue to the user’s input states. In Windows Mixed Reality, you can find the examples of visualizing different input states on Start menu and App Bar buttons. 
+You can use techniques such as highlighting or scaling to provide visual cues for the user’s input state. In mixed reality, you can find the examples of visualizing different input states on the Start menu and with app bar buttons. 
 
 ![Example of visualizing observation state, targeted state, and pressed state](images/640px-interactibleobject-states.png)<br>
 *Example of visualizing observation state, targeted state, and pressed state*
 
+<br>
+
 ![Observation state, targeted state, and pressed state on holographic button](images/MRTK_InteractableState.png)<br>
 *Observation state, targeted state, and pressed state on holographic button*
 
-#### Near(direct) interactions
+### Near interactions (direct) 
 
 HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception sometimes it can be hard to tell how far away your hand is from an object, or whether you are touching. It is important to provide enough visual cues to communicate the state of the object and in particular of your hands in relation to holograms.
 
 Use visual feedback to communicate the following:
 * **Default (Observation)**: Default idle state of the object.
-* **Hover**: When hand is near a hologram, change visuals to communicate that hand is targeting hologram. 
-* **Distance and point of interaction**: As hand approaches hologram, design feedback to communicate the projected point of interaction, as well as how far from the object the finger is
-* **Contact Begin**: Change visuals (light, color) to communicate that touch has occured
-* **Grasped**: Change visuals (light, color) when the object is grasped.
-* **Contact End**: Change visuals (light, color) when touch has ended.
+* **Hover**: When a hand is near a hologram, change visuals to communicate that hand is targeting hologram. 
+* **Distance and point of interaction**: As the hand approaches a hologram, design feedback to communicate the projected point of interaction, as well as how far from the object the finger is
+* **Contact begins**: Change visuals (light, color) to communicate that a touch has occurred
+* **Grasped**: Change visuals (light, color) when the object is grasped
+* **Contact ends**: Change visuals (light, color) when touch has ended
+
+<br>
 
 ![Example of visualizing near interaction states](images/640px-interactibleobject-states-near.jpg)<br>
 *Example of visualizing near interaction states*
 
-The [Button in HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) shows the example of visualizing different input interaction states.
+<br>
 
-![Example of pressable button in HoloLens 2](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
-*Example of pressable button in HoloLens 2*
+A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of visualizing different input interaction states.
 
-In HoloLens 2, there is an additional visual cue which improves the user's confidence on the depth perception. The ring on the fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot on press state. This visual affordance helps the user understand the distance from the object.
+![Example of pressable button on HoloLens 2](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
+*Example of a pressable button on HoloLens 2*
+
+<br>
+
+On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.
 
 ![Fingertip ring visualization](images/640px-interactibleobject-pressablebutton-650px3.jpg)<br>
 *Fingertip ring visualization in HoloLens 2*
+
+<br>
 
 ![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)<br>
 *Example of visual feedback based on the proximity - Bounding box*
 
 
-### Audio cue
-For the direct hand interactions, proper audio feedback can dramatically improve the user experience. Use audio feedback to communicate the following:
-* **Contact begin**: Play sound when touch begins
-* **Contact end**: Play sound on touch end
-* **Grab begin**: Play sound when grab starts
-* **Grab end**: Play sound on grab end
+### Audio cues
 
-### Voice command
-For any interactable objects, it is important to support alternative interaction options. In default, it is recommended to support voice command for any objects that are interactable. To improve the discoverability, you can provide tooltip on hover state.
+For direct hand interactions, proper audio feedback can dramatically improve the user experience. Use audio feedback to communicate the following:
+* **Contact begins**: Play sound when touch begins
+* **Contact ends**: Play sound on touch end
+* **Grab begins**: Play sound when grab starts
+* **Grab ends**: Play sound when grab ends
+
+
+### Voice commanding
+
+For any interactable objects, it is important to support alternative interaction options. By default, we recommend that [voice commanding](voice-design.md) be supported for any objects that are interactable. To improve discoverability, you can also provide a tooltip during the hover state.
 
 <img src="images/640px-interactibleobject-voicecommand.jpg" alt="Tooltip for the voice command" title="Tooltip for the voice command" width="350"><br/>*Tooltip for the voice command*
 
-## Sizing
+
+## Sizing recommendations 
+
 To ensure that all interactable objects can easily be touched by users, we recommend that you make sure the interactable meets a minimum size (the visual angle often measured in degrees of visual arc) based on the distance it is placed from the user. Visual angle is based on the distance between the user's eyes and the object and stays constant, while the physical size of the target may change as the distance from the user changes. To determine the necessary physical size of an object based on the distance from the user, try using a visual angle calculator such as [this one](http://elvers.us/perception/visualAngle/).
 
 Below are the recommendations for minimum sizes of interactable content.
+
 
 ### Target size for direct hand interaction
 | Distance | Viewing angle | Size |
@@ -112,6 +128,7 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 ![Target size for hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
 *Target size for hand ray or gaze interaction*
 
+
 ## Creating interactable object with Mixed Reality Toolkit (MRTK)
 
 In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can find the series of Unity scripts and prefabs that will help you create interactable objects. You can use these to make objects respond to various types of input interaction states.
@@ -129,3 +146,4 @@ MixedRealityToolkit's Standard shader provides various options such as **proximi
 * [Bounding box](app-bar-and-bounding-box.md)
 * [Object collection](object-collection.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
+* [Voice input](voice-input.md)

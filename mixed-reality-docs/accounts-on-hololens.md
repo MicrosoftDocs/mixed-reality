@@ -1,7 +1,7 @@
 ---
 title: Accounts on HoloLens
 description: How to set up and manage user accounts on HoloLens.
-author: 
+author: tmlyon
 ms.author: toddly
 ms.date: 03/21/2018
 ms.topic: article

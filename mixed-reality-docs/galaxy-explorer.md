@@ -89,7 +89,7 @@ You can find even more insights and lessons from developing Galaxy Explorer by r
 ![Galaxy Explorer development team](images/syiteampic.jpg)<br>
 *Galaxy Explorer development team*
 
-We learned the building the right team is one of the most important investments we could make. We decided to organize similarly to a game studio for those of you familiar with that development model. We chose to have eleven core team members to control scope, since we had a fixed timeframe (create something cool before Build on March 30).
+We learned the building the right team is one of the most important investments we could make. We decided to organize similarly to a game studio for those of you familiar with that development model. We chose to have eleven core team members to control scope, since we had a fixed timeframe (create something cool before Build on March 30, 2016).
 
 For this project, we started with a producer, Jessica who conducted planning, reviewing progress, and keeping things running day to day. She's the one with pink hair. We had a design director (Jon) and a senior designer (Peter). They held the creative vision for Galaxy Explorer. Jon is the one in glasses in the front row, and Peter is the second from the right in the back.
 

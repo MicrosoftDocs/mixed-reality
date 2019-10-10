@@ -1,8 +1,8 @@
 ---
-title: Multimodal interaction overview
-description: Overview of the multimodal interaction
+title: Instinctual interactions
+description: Learn the philosophy of simple instinctual interactions, interwoven throughout the Mixed Reality platform.
 author: shengkait
-ms.author: shengkait
+ms.author: shentan
 ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
@@ -160,7 +160,7 @@ A:  Since Head-gaze and commit is the interaction model for HoloLens (1st gen), 
 A:  Any of the interaction models will work for these users.  
 
 > [!NOTE]
-> More guidance specific to app design [coming soon](index.md#news-and-notes).
+> More guidance specific to app design [coming soon](news.md).
 
 
 ## Transitioning interaction models
@@ -178,7 +178,7 @@ If your experience does require multiple interaction models, keep in mind that m
 * [Direct manipulation with hands](direct-manipulation.md)
 * [Point and commit with hands](point-and-commit.md)
 * [Gestures](gestures.md)
-* [Voice commanding](voice-design.md)
+* [Voice input](voice-input.md)
 * [Motion controllers](motion-controllers.md)
 * [Spatial sound design](spatial-sound-design.md)
 * [Spatial mapping design](spatial-mapping-design.md)

@@ -29,6 +29,61 @@
 			"source_path": "mixed-reality-docs/locatable-camera-in-directx.md",
 			"redirect_url": "locatable-camera#locating-the-device-camera-in-the-world",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/calibration.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/hololens-calibration",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/commercial-features.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/hololens-commercial-features",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/connecting-to-wi-fi-on-hololens.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/hololens-network",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/device-sharing.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/hololens-multiple-users",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/get-apps-for-hololens.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/holographic-store-apps",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/give-us-feedback.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/hololens-feedback",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/hololens-hardware-details.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/hololens1-hardware",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/hololens-demo-guide.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/hololens1-setup",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/see-your-photos.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/holographic-photos-and-video",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/use-hololens-in-new-spaces.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/hololens-spaces",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mixed-reality-capture.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/hololens/holographic-photos-and-video",
+			"redirect_document_id": false
 		}
 	]
 }

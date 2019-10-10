@@ -58,6 +58,6 @@ Immersive environment apps are centered around an environment that completely ch
 * An immersive app that orchestrates an event or scenario around the user (i.e. a battle or a performance)
 
 ## See also
-* [Development overview](development-overview.md)
+* [Development overview](development.md)
 * [App model](app-model.md)
 * [App views](app-views.md)

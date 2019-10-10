@@ -99,7 +99,7 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 Once the player app is ready for rendering content a connection to the host can be established.
 
-The connection can be established in one of the follwing ways:
+The connection can be established in one of the following ways:
 1) The player app running on HoloLens 2 connects to the host app.
 2) The host app connects to the player app running on HoloLens 2.
 
@@ -186,11 +186,29 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 >[!NOTE]
 >```PlayerContext::BlitRemoteFrame()``` potentially overwrites the focus point for the current frame. 
 >- To specifiy a fallback focus point, call [HolographicCameraRenderingParameters::SetFocusPoint](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) before ```PlayerContext::BlitRemoteFrame()```. 
->- To overrwrite the remote focus point, call [HolographicCameraRenderingParameters::SetFocusPoint](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)  after ```PlayerContext::BlitRemoteFrame()```.
+>- To overwrite the remote focus point, call [HolographicCameraRenderingParameters::SetFocusPoint](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)  after ```PlayerContext::BlitRemoteFrame()```.
 
 On success, ```BlitRemoteFrame()``` returns ```BlitResult::Success_Color```. Otherwise it returns the failure reason:
 - ```BlitResult::Failed_NoRemoteFrameAvailable```: Failed because no remote frame is available.
 - ```BlitResult::Failed_NoCamera```: Failed because no camera present.
+- ```BlitResult::Failed_RemoteFrameTooOld```: Failed because remote frame is too old (see PlayerContext::BlitRemoteFrameTimeout property).
+
+## Optional: Set BlitRemoteFrameTimeout <a name="BlitRemoteFrameTimeout"></a>
+>[!IMPORTANT]
+> ```PlayerContext::BlitRemoteFrameTimout``` is supported starting with version [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
+
+The ```PlayerContext::BlitRemoteFrameTimeout``` property specifies the amount of time a remote frame is reused if no new remote frame is received. 
+
+A common use-case is to enable the BlitRemoteFrame timeout to display a blank screen if no new frames are received for a certain amount of time. When enabled the return type of the ```BlitRemoteFrame``` method can also be used to switch to a locally rendered fallback content. 
+
+To enable the timeout, set the property value to a duration equal or greater than 100ms. To disable the timeout, set the property to zero duration. If the timeout is enabled and no remote frame is received for the set duration, BlitRemoteFrame will fail and return ```Failed_RemoteFrameTooOld``` until a new remote frame is received.
+
+```cpp
+using namespace std::chrono_literals;
+
+// Set the BlitRemoteFrame timeout to 0.5s
+m_playerContext.BlitRemoteFrameTimeout(500ms);
+```
 
 ## Optional: Get statistics about the last remote frame
 

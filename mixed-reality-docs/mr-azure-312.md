@@ -61,7 +61,7 @@ We recommend the following hardware and software for this course:
 2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user). 
 
-For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
+For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens-2).
 
 For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](sensor-tuning.md).
 
@@ -337,7 +337,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
     ![Set up the Unity project](images/AzureLabs-Lab312-20.png)
 
-2.	You will now need to provide a Unity project name. Insert **Hololens Bot**. Make sure the project template is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
+2.	You will now need to provide a Unity project name. Insert **HoloLens Bot**. Make sure the project template is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
     ![Set up the Unity project](images/AzureLabs-Lab312-21.png)
 
@@ -351,7 +351,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
 5.	While still in **File > Build Settings** and make sure that:
 
-    1.  **Target Device** is set to **Hololens**
+    1.  **Target Device** is set to **HoloLens**
 
         > For the immersive headsets, set **Target Device** to *Any Device*.
 
@@ -412,7 +412,7 @@ The following is a typical set up for developing with mixed reality, and as such
 ## Chapter 5 – Camera setup
 
 > [!IMPORTANT]
-> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [Azure-MR-312-Package.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20312%20-%20Bot%20integration/Azure-MR-312.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 7](#chapter-7-–-create-the-botobjects-class).
+> If you wish to skip the *Unity Set up* component of this course, and continue straight into code, feel free to download this [Azure-MR-312-Package.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20312%20-%20Bot%20integration/Azure-MR-312.unitypackage), import it into your project as a [**Custom Package**](https://docs.unity3d.com/Manual/AssetPackages.html), and then continue from [Chapter 7](#chapter-8--create-the-botobjects-class).
 
 1.	In the *Hierarchy panel*, select the **Main Camera**. 
 2.	Once selected, you will be able to see all the components of the **Main Camera** in the *Inspector panel*.
@@ -1224,7 +1224,7 @@ To create this class:
 To perform a thorough test of your application you will need to sideload it onto your HoloLens.
 Before you do, ensure that:
 
--	All the settings mentioned in the [**Chapter 4**](#Chapter-4-–-Set-up-the-unity-project) are set correctly. 
+-	All the settings mentioned in the [**Chapter 4**](#chapter-4--set-up-the-unity-project) are set correctly. 
 -	The script **SceneOrganiser** is attached to the **Main Camera** object. 
 -	In the **Bot** class, make sure you have inserted your **Bot Secret Key** into the **botSecret** variable.
 

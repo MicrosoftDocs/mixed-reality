@@ -48,26 +48,26 @@ After targeting an object or UI element, the user can interact or click on it us
 - Press the 'A' button on an Xbox adaptive controller
 
 ### Head-gaze and air tap gesture
-Air tap is a tapping gesture with the hand held upright. To perform an air tap, raise your index finger to the ready position, then pinch with your thumb, and raise your index finger back up to release. On HoloLens (1st Gen), air tap is the most common secondary input.
+Air tap is a tapping gesture with the hand held upright. To perform an air tap, raise your index finger to the ready position, then pinch with your thumb, and raise your index finger back up to release. On HoloLens (1st gen), air tap is the most common secondary input.
 
 ![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
 
 Air tap is also available on HoloLens 2. It has been relaxed from the original version. Nearly all types of pinches are now supported as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture. This new air tap replaces the old one through the same API, so existing applications will have the new behavior automatically after recompiling for HoloLens 2.
 
 ### Head-gaze and "Select" voice command
-Voice commanding is one of the primary interaction methods in mixed reality. It provides a very powerful hands-free mechanism to control the system. There are diferent types of voice interaction models:
+Voice commanding is one of the primary interaction methods in mixed reality. It provides a very powerful hands-free mechanism to control the system. There are different types of voice interaction models:
 
 - The generic command Select that performs a click actuation or commit as a secondary input.
 - Object commands like Close or Make it bigger performs and commits to an action as a secondary input.
-- Global commnads like Go to start don't require a target.
+- Global commands like Go to start don't require a target.
 - Conversation user interfaces or entities like Cortana have an AI natural language capability.
-- Custom commnads
+- Custom commands
 
-To find more details as well as a comprenhesive list of available commands and how to use them, check out our [voice commanding](voice-design.md) guidance.
+To find more details as well as a comprehensive list of available commands and how to use them, check out our [voice commanding](voice-design.md) guidance.
 
 
 ### Head-gaze and HoloLens Clicker
-The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st Gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st Gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
+The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
 
 ![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
 *HoloLens Clicker*
@@ -78,7 +78,7 @@ More information and instructions to pair the device can be found [here](hardwar
 
 
 ### Head-gaze and Xbox Wireless Controller
-The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories application to configure your Xbox Wireless Controller.
+The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accessories application to configure your Xbox Wireless Controller.
 
 ![Xbox Wireless Controller](images/xboxcontroller.jpg)<br>
 *Xbox Wireless Controller*
@@ -89,7 +89,7 @@ The Xbox Wireless Controller performs a click actuation as a secondary input by 
 ### Head-gaze and Xbox Adaptive Controller
 Designed primarily to meet the needs of gamers with limited mobility, the Xbox Adaptive Controller is a unified hub for devices that helps make mixed reality more accessible.
 
-The Xbox Adaptive Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accesories application to configure your Xbox Adaptive Controller.
+The Xbox Adaptive Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accessories application to configure your Xbox Adaptive Controller.
 
 ![Xbox Adaptive Controller](images/xbox-adaptive-controller-devices.jpg)<br>
 *Xbox Adaptive Controller*
@@ -147,7 +147,7 @@ This mechanism is useful for pathing movements, reducing the slight jitter and w
 This mechanism can be thought of as a more general version of closest link algorithms--drawing a cursor toward a target or simply increasing hitboxes, whether visibly or not, as users approach likely targets by using some knowledge of the interactive layout to better approach user intent. This can be particularly powerful for small targets.
 
 ### Focus stickiness
-When determining which nearby interactive elements to give focus to, focus stickiness provides a bias to the element that is currently focused. This helps reduce erratic focus switching behaviours when floating at a midpoint between two elements with natural noise.
+When determining which nearby interactive elements to give focus to, focus stickiness provides a bias to the element that is currently focused. This helps reduce erratic focus switching behaviors when floating at a midpoint between two elements with natural noise.
 
 
 ## Composite gestures
@@ -178,7 +178,7 @@ Within 2D apps, users can use vertical navigation gestures to scroll, zoom, or d
 One benefit of using gesture recognition is that you can configure a gesture recognizer only for the gestures the currently targeted hologram can accept. The platform only does disambiguation as necessary to distinguish those particular supported gestures. In this way, a hologram that just supports air tap can accept any length of time between press and release, while a hologram that supports both tap and hold can promote the tap to a hold after the hold time threshold.
 
 ## Hand recognition
-HoloLens recognizes hand gestures by tracking the position of either or both hands that are visible to the device. HoloLens sees hands when they are in either the ready state (back of the hand facing you with index finger up) or the pressed state (back of the hand facing you with the index finger down). When hands are in other poses, HoloLens ignore themz.
+HoloLens recognizes hand gestures by tracking the position of either or both hands that are visible to the device. HoloLens sees hands when they are in either the ready state (back of the hand facing you with index finger up) or the pressed state (back of the hand facing you with the index finger down). When hands are in other poses, HoloLens ignores them.
 For each hand that HoloLens detects, you can access its position without orientation and its pressed state. As the hand nears the edge of the gesture frame, you're also provided with a direction vector, which you can show to the user so they know how to move their hand to get it back where HoloLens can see it.
 
 ## Gesture frame
@@ -200,7 +200,7 @@ There are three things that you should consider:
 * [Point and commit with hands](point-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Head-gaze and dwell](gaze-and-dwell.md)
-* [Voice commanding](voice-design.md)
+* [Voice input](voice-input.md)
 
 
 
