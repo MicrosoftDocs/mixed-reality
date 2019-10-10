@@ -240,7 +240,7 @@ namespace Microsoft.MixedReality.QR
         /// <summary>
         /// Version of this QR code. Version 1-40 are regular QR codes and 41-44 are Micro QR code formats 1-4.
         /// </summary>
-        public VersionInfo Version { get; }
+        public QRVersion Version { get; }
 
         /// <summary>
         /// Physical width and height of this QR code in meters.
@@ -401,7 +401,7 @@ namespace Microsoft.MixedReality.QR
     /// <summary>
     /// Version info for QR codes, including Micro QR codes.
     /// </summary>
-    public enum VersionInfo
+    public enum QRVersion
     {
         QR1 = 1,
         QR2 = 2,
