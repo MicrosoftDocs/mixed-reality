@@ -33,20 +33,20 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
     :::column:::
        ![interactibleobject-states-default](images/interactibleobject-states-default.jpg)<br>
        #### Default (Observation)<br>
-        Default idle state of the object.<br>
-        Cursor is not on the object. Hand not detected.
+        Default idle state of the object.
+       The cursor is not on the object. Hand is not detected.
     :::column-end:::
     :::column:::
        ![interactibleobject-states-targeted](images/interactibleobject-states-targeted.jpg)<br>
         #### Targeted (Hover)<br>
-        When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.<br>
-        Cursor is on the object. Hand detected, ready.
+        When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
+        The cursor is on the object. Hand is detected, ready.
     :::column-end:::
     :::column:::
        ![interactibleobject-states-pressed](images/interactibleobject-states-pressed.jpg)<br>
        #### Pressed<br>
-        When the object is pressed with air-tap gesture, finger press or motion controller's select button.<br>
-        Cursor is on the object. Hand detected, air tapped.
+        When the object is pressed with an air tap gesture, finger press or motion controller's select button.
+        The cursor is on the object. Hand is detected, air tapped.
     :::column-end:::
 :::row-end:::
 
