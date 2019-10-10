@@ -53,6 +53,8 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
     :::column-end:::
 :::row-end:::
 
+<br>
+
 ---
 
 You can use techniques such as highlighting or scaling to provide visual cues for the user’s input state. In mixed reality, you can find the examples of visualizing different input states on the Start menu and with app bar buttons. 
