@@ -77,6 +77,25 @@ Here is what these states look like on a **holographic button**:
     :::column-end:::
 :::row-end:::
 
+:::row:::
+    :::column:::
+       ![interactibleobject-states-default](images/MRTK_InteractableState-default.jpg)<br>
+       **Default (Observation) state**<br>
+    :::column-end:::
+    :::column:::
+       ![interactibleobject-states-targeted](images/MRTK_InteractableState-targeted.jpg)<br>
+        **Targeted (Hover) state**<br>
+    :::column-end:::
+    :::column:::
+       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
+       **Pressed state**<br>
+    :::column-end:::
+    :::column:::
+       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
+       **Pressed state**<br>
+    :::column-end:::
+:::row-end:::
+
 <br>
 
 ---
@@ -93,12 +112,39 @@ Use visual feedback to communicate the following:
 * **Grasped**: Change visuals (light, color) when the object is grasped
 * **Contact ends**: Change visuals (light, color) when touch has ended
 
-<br>
-
-![Example of visualizing near interaction states](images/640px-interactibleobject-states-near.jpg)<br>
-*Example of visualizing near interaction states*
+---
 
 <br>
+
+:::row:::
+    :::column:::
+        ![Hover (Far)](images/640px-interactibleobject-states-near-hover.jpg)<br>
+        **Hover (Far)**<br>
+        Highlighting based on the proximity of the hand.
+    :::column-end:::
+    :::column:::
+        ![Hover (Near)](images/640px-interactibleobject-states-near-hovernear.jpg)<br>
+        **Hover (Near)**<br>
+        Highlight size changes based on the distance to the hand.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        ![Touch / press](images/640px-interactibleobject-states-near-press.jpg)<br>
+        **Touch / press**<br>
+        Visual plus audio feedback.
+    :::column-end:::
+    :::column:::
+        ![Grasp](images/640px-interactibleobject-states-near-grasp.jpg)<br>
+        **Grasp**<br>
+        Visual plus audio feedback.
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
 
 A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of visualizing different input interaction states.
 
