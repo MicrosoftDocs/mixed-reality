@@ -88,9 +88,9 @@ For direct hand interactions, proper audio feedback can dramatically improve the
 * **Grab ends**: Play sound when grab ends
 
 
-### Voice commanding
-
 ---
+
+### Voice commanding
 
 :::row:::
     :::column:::
