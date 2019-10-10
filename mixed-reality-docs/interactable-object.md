@@ -105,17 +105,27 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
 ![Example of pressable button on HoloLens 2](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
 *Example of a pressable button on HoloLens 2*
 
-<br>
-
-On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.
-
-![Fingertip ring visualization](images/640px-interactibleobject-pressablebutton-650px3.jpg)<br>
-*Fingertip ring visualization in HoloLens 2*
 
 <br>
 
-![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)<br>
-*Example of visual feedback based on the proximity - Bounding box*
+---
+
+:::row:::
+    :::column:::
+        ### An additional visual cue on HoloLens 2<br>
+        On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.<br>
+        <br>
+        *Animation: Example of visual feedback based on the proximity - Bounding box**
+    :::column-end:::
+        :::column:::
+       ![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)<br>
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+---
 
 
 ### Audio cues
