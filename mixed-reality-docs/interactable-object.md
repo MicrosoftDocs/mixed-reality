@@ -129,10 +129,6 @@ Use visual feedback to communicate the following:
 
 A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of visualizing different input interaction states:
 
-<br>
-
----
-
 :::row:::
     :::column:::
         ![Default](images/640px-interactibleobject-pressablebutton-default.jpg)<br>
@@ -167,7 +163,7 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
         ### An additional visual cue on HoloLens 2<br>
         On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.<br>
         <br>
-        *Animation: Example of visual feedback based on the proximity - Bounding box**
+        *Animation: Example of visual feedback based on proximity on a bounding box*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
