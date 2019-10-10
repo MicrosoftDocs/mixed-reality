@@ -118,6 +118,7 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
         *Animation: Example of visual feedback based on the proximity - Bounding box**
     :::column-end:::
         :::column:::
+        ![space](images/spacer-20x582.png)<br>
        ![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)<br>
     :::column-end:::
 :::row-end:::
