@@ -87,13 +87,13 @@ For direct hand interactions, proper audio feedback can dramatically improve the
 * **Grab begins**: Play sound when grab starts
 * **Grab ends**: Play sound when grab ends
 
+<br>
 
 ---
 
-### Voice commanding
-
 :::row:::
     :::column:::
+        ### Voice commanding<br>
         For any interactable objects, it is important to support alternative interaction options. By default, we recommend that [voice commanding](voice-design.md) be supported for any objects that are interactable. To improve discoverability, you can also provide a tooltip during the hover state.<br>
         <br>
         *Image: Tooltip for the voice command*
