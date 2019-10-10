@@ -12,9 +12,9 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 # Interactable object
 
-A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore. Anything can be an **interactable object** that triggers an event. An interactable object can be represented as anything from a coffee cup on the table to a balloon floating in the air. We still do make use of traditional buttons in certain situation such as in dialog UI. The visual representation of the button depends on the context.
-
 ![Interactible objects](images/InteractableExamples.png)
+
+A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore. Anything can be an **interactable object** that triggers an event. An interactable object can be represented as anything from a coffee cup on the table to a balloon floating in the air. We still do make use of traditional buttons in certain situation such as in dialog UI. The visual representation of the button depends on the context.
 
 
 ## Important properties of the interactable object
@@ -28,14 +28,30 @@ Since the holographic objects are blended with the real-world environment in mix
 ### Far interactions
 
 For any objects that user can interact with gaze, hand ray, and motion controller's ray, we recommend to have different visual cue for these three input states:
-* **Default (Observation)**: Default idle state of the object.
-* **Targeted (Hover)**: When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
-* **Pressed**: When the object is pressed with air-tap gesture, finger press or motion controller's select button.
+
+:::row:::
+    :::column:::
+        **Default (Observation)**<br>
+       ![interactibleobject-states-default](images/interactibleobject-states-default.jpg)<br>
+        Default idle state of the object.<br>
+        Cursor is not on the object. Hand not detected.
+    :::column-end:::
+    :::column:::
+        **Targeted (Hover)**<br>
+       ![interactibleobject-states-targeted](images/interactibleobject-states-targeted.jpg)<br>
+        When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.<br>
+        Cursor is on the object. Hand detected, ready.
+    :::column-end:::
+    :::column:::
+        **Pressed**<br>
+       ![interactibleobject-states-pressed](images/interactibleobject-states-pressed.jpg)<br>
+        When the object is pressed with air-tap gesture, finger press or motion controller's select button.<br>
+        Cursor is on the object. Hand detected, air tapped.
+    :::column-end:::
+:::row-end:::
+
 
 You can use techniques such as highlighting or scaling to provide visual cues for the user’s input state. In mixed reality, you can find the examples of visualizing different input states on the Start menu and with app bar buttons. 
-
-![Example of visualizing observation state, targeted state, and pressed state](images/640px-interactibleobject-states.png)<br>
-*Example of visualizing observation state, targeted state, and pressed state*
 
 <br>
 
