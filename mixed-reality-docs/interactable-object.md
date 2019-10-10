@@ -77,25 +77,6 @@ Here is what these states look like on a **holographic button**:
     :::column-end:::
 :::row-end:::
 
-:::row:::
-    :::column:::
-       ![interactibleobject-states-default](images/MRTK_InteractableState-default.jpg)<br>
-       **Default (Observation) state**<br>
-    :::column-end:::
-    :::column:::
-       ![interactibleobject-states-targeted](images/MRTK_InteractableState-targeted.jpg)<br>
-        **Targeted (Hover) state**<br>
-    :::column-end:::
-    :::column:::
-       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
-       **Pressed state**<br>
-    :::column-end:::
-    :::column:::
-       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
-       **Pressed state**<br>
-    :::column-end:::
-:::row-end:::
-
 <br>
 
 ---
@@ -146,8 +127,6 @@ Use visual feedback to communicate the following:
 
 ---
 
-<br>
-
 :::row:::
     :::column:::
         ![Hover (Far)](images/640px-interactibleobject-states-near-hover.jpg)<br>
@@ -170,6 +149,11 @@ Use visual feedback to communicate the following:
         Visual plus audio feedback.
     :::column-end:::
 :::row-end:::
+
+
+<br>
+
+---
 
 
 A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of visualizing different input interaction states.
