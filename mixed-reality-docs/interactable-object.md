@@ -146,6 +146,32 @@ Use visual feedback to communicate the following:
 
 ---
 
+<br>
+
+:::row:::
+    :::column:::
+        ![Hover (Far)](images/640px-interactibleobject-states-near-hover.jpg)<br>
+        **Hover (Far)**<br>
+        Highlighting based on the proximity of the hand.
+    :::column-end:::
+    :::column:::
+        ![Hover (Near)](images/640px-interactibleobject-states-near-hovernear.jpg)<br>
+        **Hover (Near)**<br>
+        Highlight size changes based on the distance to the hand.
+    :::column-end:::
+    :::column:::
+        ![Touch / press](images/640px-interactibleobject-states-near-press.jpg)<br>
+        **Touch / press**<br>
+        Visual plus audio feedback.
+    :::column-end:::
+    :::column:::
+        ![Grasp](images/640px-interactibleobject-states-near-grasp.jpg)<br>
+        **Grasp**<br>
+        Visual plus audio feedback.
+    :::column-end:::
+:::row-end:::
+
+
 A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of visualizing different input interaction states.
 
 ![Example of pressable button on HoloLens 2](images/640px-interactibleobject-pressablebutton-650px2.jpg)<br>
