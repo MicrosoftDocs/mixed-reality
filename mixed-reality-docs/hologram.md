@@ -110,7 +110,8 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 :::row:::
     :::column:::
         ## A hologram is whatever<br>you can dream up<br>
-        As a holographic developer, you have the power to break your creativity out of 2D screens and into the world around you. What will *you* build?
+        As a holographic developer, you have the power to break your creativity out of 2D screens and into the world around you.<br>
+        What will *you* build?
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
