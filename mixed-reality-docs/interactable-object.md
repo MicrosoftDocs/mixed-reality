@@ -238,13 +238,13 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 *Target size for the buttons*
 
 
-### Target size for a hand ray or gaze interaction
+### Target size for hand ray or gaze interaction
 | Distance | Viewing angle | Size |
 |---------|---------|---------|
 | 2m  | no smaller than 1° | 3.5 x 3.5 cm |
 
-![Target size for a hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
-*Target size for a hand ray or gaze interaction*
+![Target size for hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
+*Target size for hand ray or gaze interaction*
 
 
 <br>
