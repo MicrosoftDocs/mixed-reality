@@ -107,11 +107,10 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 
 ---
 
-## A hologram is whatever you dream up
-
 :::row:::
     :::column:::
-        ### As a holographic developer, you have the power to break your creativity out of 2D screens and into the world around you. What will *you* build?
+        ## A hologram is whatever you dream up<br>
+        As a holographic developer, you have the power to break your creativity out of 2D screens and into the world around you. What will *you* build?
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -125,5 +124,6 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 
 
 ## See also
+* [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality)
 * [Spatial sound](spatial-sound.md)
 * [Color, light and materials](color,-light-and-materials.md)
