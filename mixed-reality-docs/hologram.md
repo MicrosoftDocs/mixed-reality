@@ -43,6 +43,10 @@ HoloLens lets you create **holograms**, objects made of light and sound that app
     </tr>
 </table>
 
+<br>
+
+---
+
 ## A hologram is made of light and sound
 
 The holograms that HoloLens [renders](rendering.md) appear in the holographic frame directly in front of the user's eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surroundings. HoloLens doesn't remove light from your eyes, so holograms can't be rendered with the color black. Instead, black content appears as transparent.
@@ -52,6 +56,10 @@ Holograms can have many different appearances and behaviors. Some are realistic 
 ![Hands manipulating a hologram](images/hologram-hands-940px.jpg)
 
 Holograms can also make [sounds](spatial-sound.md), which will appear to come from a specific place in your surroundings. On HoloLens, sound comes from two speakers that are located directly above your ears, without covering them. Similar to the displays, the speakers are additive, introducing new sounds without blocking the sounds from your environment.
+
+<br>
+
+---
 
 ## A hologram can be placed in the world or tag along with you
 
@@ -74,6 +82,11 @@ Two meters is the most optimal, and the experience will degrade the closer you g
 
 ![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)
 
+<br>
+
+---
+
+
 ## A hologram interacts with you and your world
 
 Holograms aren't only about light and sound; they're also an active part of your world. Gaze at a hologram and gesture with your hand, and a hologram can start to follow you. Give a voice command to a hologram, and it can reply.
@@ -89,6 +102,10 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 **Tips for integrating holograms and the real world**
 * Aligning to gravitational rules makes holograms easier to relate to and more believable. eg: Place a holographic dog on the ground & a vase on the table rather than have them floating in space.
 * Many designers have found that they can even more believably integrate holograms by creating a "negative shadow" on the surface that the hologram is sitting on. They do this by creating a soft glow on the ground around the hologram and then subtracting the "shadow" from the glow. The soft glow integrates with the light from the real world and the shadow grounds the hologram in the environment.
+
+<br>
+
+---
 
 ## A hologram is whatever you dream up
 
