@@ -12,11 +12,13 @@ keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
 
 # What is a hologram?
 
+<iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your [gaze](gaze.md), [gestures](gestures.md) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
 
 <br>
 
->[!VIDEO https://www.youtube.com/embed/MVXH5V8MVQo]
 
 ## Device support
 
@@ -47,7 +49,7 @@ The holograms that HoloLens [renders](rendering.md) appear in the holographic fr
 
 Holograms can have many different appearances and behaviors. Some are realistic and solid, and others are cartoonish and ethereal. Holograms can highlight features in your surroundings, and they can be elements in your app's user interface.
 
-![Holographic dog walking on the floor](images/fang3-640px.jpg)
+![Hands manipulating a hologram](images/hologram-hands-940px.jpg)
 
 Holograms can also make [sounds](spatial-sound.md), which will appear to come from a specific place in your surroundings. On HoloLens, sound comes from two speakers that are located directly above your ears, without covering them. Similar to the displays, the speakers are additive, introducing new sounds without blocking the sounds from your environment.
 
@@ -55,7 +57,7 @@ Holograms can also make [sounds](spatial-sound.md), which will appear to come fr
 
 When you have a particular location where you want a hologram, you can [place](coordinate-systems.md) it precisely there in the world. As you walk around that hologram, it will appear stable relative to the world around you. If you use a [spatial anchor](coordinate-systems.md#spatial-anchors) to pin that object firmly to the world, the system can even remember where you left it when you come back later.
 
-![Holographic building maquette sitting on a table](images/image5-640px.png)
+![Two men using Microsoft Dynamics 365 Layout in a retail space](images/HLS19_retailLayoutHologram_001-940px.jpg)
 
 Some holograms follow the user instead. These tag-along holograms position themselves relative to the user, no matter where they walk. You may even choose to bring a hologram with you for a while and then place it on the wall once you get to another room.
 
@@ -70,13 +72,13 @@ Some holograms follow the user instead. These tag-along holograms position thems
 
 Two meters is the most optimal, and the experience will degrade the closer you get from one meter. At distances nearer than one meter, holograms that regularly move in depth are more likely to be problematic than stationary holograms. Consider gracefully clipping or fading out your content when it gets too close so as not to jar the user into an unexpected experience.
 
-![Optimal distance for placing holograms from the user.](images/distanceguiderendering-640px.png)
+![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)
 
 ## A hologram interacts with you and your world
 
 Holograms aren't only about light and sound; they're also an active part of your world. Gaze at a hologram and gesture with your hand, and a hologram can start to follow you. Give a voice command to a hologram, and it can reply.
 
-![Holographic motorcycle design fitted on a real-life motorcycle body](images/image8-640px.png)
+![Group of government utility workers using Microsoft HoloLens 2 to collaborate on a wind farm development project](images/HLS19_governmentUtilitiesHologram_001-940px.jpg)
 
 Holograms enable personal interactions that aren't possible elsewhere. Because the HoloLens knows where it is in the world, a holographic character can look you directly in the eyes as you walk around the room.
 

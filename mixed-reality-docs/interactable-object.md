@@ -169,7 +169,7 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
         ### The "ring" visual cue on HoloLens 2<br>
         On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.<br>
         <br>
-        *Video loop: Example of visual feedback based on proximity with a bounding box*
+        *Video loop: Example of visual feedback based on proximity to a bounding box*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
