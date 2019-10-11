@@ -10,6 +10,9 @@ keywords: Mixed Reality, interaction, design, HoloLens, hands, far, point and co
 ---
 
 # Point and commit with hands
+
+![Point and commit with hands hero](images/Hand-interaction-hero.jpg)
+
 Point and commit with hands is an input model that enables users to target, select and manipulate 2D content and 3D objects in the distance. This "far" interaction technique is unique to mixed reality, and is not a way humans naturally interact with the real world. For example, in the super hero movie, *X-Men*, the character [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) is capable of reaching out and manipulating a far object in the distance with his hands. This is not something humans can do in reality. In both HoloLens (AR) and Mixed Reality (MR), we equip users with this magical power, breaking the physical constraint of the real world, not only to have a fun experience with holographic contents but also to make user interactions more effective and efficient.
 
 ## Device support
@@ -96,21 +99,15 @@ Targeting the hand ray at the corners and edges reveals the closest manipulation
 :::row:::
     :::column:::
        ![2d slate interaction click](images/2d-slate-interaction-click.jpg)<br>
-       **Default (Observation) state**<br>
-        Default idle state of the object.
-       The cursor is not on the object. Hand is not detected.
+       **Click**<br>
     :::column-end:::
     :::column:::
        ![2d slate interaction scroll](images/2d-slate-interaction-scroll.jpg)<br>
-        **Targeted (Hover) state**<br>
-        When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
-        The cursor is on the object. Hand is detected, ready.
+        **Scroll**<br>
     :::column-end:::
     :::column:::
        ![2d slate interaction zoom](images/2d-slate-interaction-zoom.jpg)<br>
-       **Pressed state**<br>
-        When the object is pressed with an air tap gesture, finger press or motion controller's select button.
-        The cursor is on the object. Hand is detected, air tapped.
+       **Zoom**<br>
     :::column-end:::
 :::row-end:::
 
