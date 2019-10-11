@@ -111,7 +111,9 @@ Targeting the hand ray at the corners and edges reveals the closest manipulation
     :::column-end:::
 :::row-end:::
 
-**For manipulating the 2D slate:**<br>
+<br>
+
+**For manipulating the 2D slate**<br>
 
 * Users point the hand ray at the corners or edges to reveal the closest manipulation affordance. 
 * By applying a manipulation gesture on the affordance, users can perform uniform scaling through the corner affordance, and can reflow the slate via the edge affordance. 
