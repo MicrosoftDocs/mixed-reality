@@ -18,7 +18,13 @@ The SceneUnderstanding SDK is downloadable via NuGet.
 
 [SceneUnderstanding SDK](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
 
-Before you begin please note that the SDK runs on top of the UWP, and requires Windows SDK version 18362 or higher. If you are using the SDK in a Unity project, please use [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity) to install the package into your project.
+**Note:** the latest release depends on preview pacakges and you will need to enable pre-release packages to see it.
+
+As of version 0.5.2022-rc, Scene Understanding supports language projections for C# and C++ allowing applications to develop applications for Win32 or UWP platforms. As of this version, SceneUnderstanding supports unity in-editor support barring the SceneObserver which is used solely for communicating with HoloLens2. 
+
+SceneUnderstanding requires Windows SDK version 18362 or higher. 
+
+If you are using the SDK in a Unity project, please use [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity) to install the package into your project.
 
 ## Conceptual Overview
 
@@ -51,20 +57,20 @@ Below we present an example of a structure in both its flat and logical form.
   <ul>
   <li>SceneObject_1
     <ul>
-      <li>Mesh_1</li>
-      <li>Quad_1</li>
-      <li>Quad_2</li>
+      <li>SceneMesh_1</li>
+      <li>SceneQuad_1</li>
+      <li>SceneQuad_2</li>
     </ul>
   </li>
   <li>SceneObject_2
     <ul>
-      <li>Quad_1</li>
-      <li>Quad_3</li>
+      <li>SceneQuad_1</li>
+      <li>SceneQuad_3</li>
       </li></ul>
   </li>
   <li>SceneObject_3
     <ul>
-      <li>Mesh_3</li>
+      <li>SceneMesh_3</li>
     </ul>
   </ul>
 </ul>
@@ -74,11 +80,11 @@ Below we present an example of a structure in both its flat and logical form.
   <li>SceneObject_1</li>
   <li>SceneObject_2</li>
   <li>SceneObject_3</li>
-  <li>Quad_1</li>
-  <li>Quad_2</li>
-  <li>Quad_3</li>
-  <li>Mesh_1</li>
-  <li>Mesh_2</li>
+  <li>SceneQuad_1</li>
+  <li>SceneQuad_2</li>
+  <li>SceneQuad_3</li>
+  <li>SceneMesh_1</li>
+  <li>SceneMesh_2</li>
 </ul>
 </td>
 </tr>
@@ -159,7 +165,7 @@ querySettings.EnableWorldMesh = true;                                           
 querySettings.RequestedMeshLevelOfDetail = SceneMeshLevelOfDetail.Fine;            // Requests the finest LOD of the static spatial mapping mesh.
 
 // Initialize a new Scene
-Scene myScene = SceneObserver.Compute(querySettings, 10.0f);
+Scene myScene = SceneObserver.ComputeAsync(querySettings, 10.0f).GetAwaiter().GetResult();
 ```
 
 ### Initialization from Data (aka. the PC Path)
@@ -168,10 +174,10 @@ While Scenes can be computed for direct consumption, they can also be computed i
 
 ```cs
 // Create Query settings for the scene update
-SceneUnderstanding.QuerySettings querySettings;
+SceneQuerySettings querySettings;
 
 // Compute a scene but serialized as a byte array
-SceneBuffer newSceneBuffer = SceneObserver.ComputeSerialized(querySettings, 10.0f);
+SceneBuffer newSceneBuffer = SceneObserver.ComputeSerializedAsync(querySettings, 10.0f).GetAwaiter().GetResult();
 
 // If we want to use it immediately we can de-serialize the scene ourselves
 byte[] newSceneData = new byte[newSceneBuffer.Size];
@@ -205,7 +211,7 @@ There is another function that retrieves components in the Scene called ***FindC
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
-Scene myNextScene = SceneObserver.Compute(querySettings, 10.0f, myScene);
+Scene myNextScene = SceneObserver.ComputeAsync(querySettings, 10.0f, myScene).GetAwaiter().GetResult();
 
 // Use the Id for the floor we found last time, and find it again
 firstFloor = (SceneObject)myNextScene.FindComponent(firstFloor.Id);
@@ -335,7 +341,7 @@ The following code provides an example of generating a triangle list from the me
 
 ```cs
 uint[] indices = new uint[mesh.TriangleIndexCount];
-System.Numerics.Vector3[] positions = new float[mesh.VertexCount];
+System.Numerics.Vector3[] positions = new System.Numerics.Vector3[mesh.VertexCount];
 
 mesh.GetTriangleIndices(indices);
 mesh.GetVertexPositions(positions);
