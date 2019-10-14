@@ -27,6 +27,7 @@
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
 ## Core concepts
+### [Overview](core-concepts-landingpage.md)
 ### [Comfort](comfort.md)
 ### [Holographic frame](holographic-frame.md)
 ### [Gaze](gaze.md)
@@ -54,7 +55,7 @@
 ### [Head-gaze and commit model](gaze-and-commit.md)
 ### [Eye-gaze](eye-tracking.md)
 ## UX elements
-### [UX elements overview](app-patterns-landingpage.md)
+### [Overview](app-patterns-landingpage.md)
 ### Style
 #### [Color, light and materials](color,-light-and-materials.md)
 #### [Scale](scale.md)
