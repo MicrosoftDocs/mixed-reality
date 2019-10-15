@@ -24,6 +24,8 @@ When using voice commands, gaze is typically used as the targeting mechanism, wh
 
 <br>
 
+<iframe width="940" height="530" src="https://www.youtube.com/embed/eHMkOpNUtR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 >[!VIDEO https://www.youtube.com/embed/eHMkOpNUtR8]
 
 ## Device support
@@ -55,15 +57,28 @@ When using voice commands, gaze is typically used as the targeting mechanism, wh
 
 Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gestures.md#air-tap) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
-**HoloLens 2**
+<br>
 
-In order to use the "select" voice command in HoloLens 2, you first need to bring up the gaze cursor to use as a pointer. The command to bring it up is easy to remember -- just say, "select". 
+---
 
-To exit the mode, simply use your hands again, either by air tapping, approaching a button with your fingers, or using the system gesture.
+:::row:::
+    :::column:::
+        **HoloLens 2**<br>
+        In order to use the "select" voice command in HoloLens 2, you first need to bring up the gaze cursor to use as a pointer. The command to bring it up is easy to remember -- just say, "select".<br><br>
+        To exit the mode, simply use your hands again, either by air tapping, approaching a button with your fingers, or using the system gesture.<br>
+        <br>
+        *Image: Say "select" to use the voice command for selection*
+    :::column-end:::
+        :::column:::
+       ![Say "select" to use the voice command for selection](images/kma-voice-select-00170.jpg)<br>
+    :::column-end:::
+:::row-end:::
 
 
-![Say "select" to use the voice command for selection](images/kma-voice-select-00170-800px.png)<br>
-*Say "select" to use the voice command for selection*
+<br>
+
+---
+
 
 ## Hey Cortana
 
@@ -88,19 +103,48 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
 * "What time is it?"
 * "How much battery do I have left?"
 
-## "See It, Say It"
 
-HoloLens has a "see it, say it" model for voice input, where labels on buttons tell users what voice commands they can say as well. For example, when looking at an app window in HoloLens (1st gen), a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world.
-
-![When looking at an app window or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)<br>
-*A user can say the "Adjust" command which they see in the App bar to adjust the position of the app*
 
 <br>
 
-When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button in HoloLens (1st gen), you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it. To reveal voice tooltips in HoloLens 2, show the voice cursor by saying "select" or "What can I say" (see below). 
+---
 
-![See it, say it commands appear below the buttons](images/voice-seeitsayit-600px.png)<br>
-*"See it, say it" commands appear below the buttons*
+:::row:::
+    :::column:::
+        ## "See It, Say It"<br>
+        HoloLens has a "see it, say it" model for voice input, where labels on buttons tell users what voice commands they can say as well. For example, when looking at an app window in HoloLens (1st gen), a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world.<br>
+        <br>
+        *Image: A user can say the "Adjust" command which they see in the App bar to adjust the position of the app*
+    :::column-end:::
+        :::column:::
+       ![When looking at an app window or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)<br>
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+---
+
+<br>
+
+---
+
+:::row:::
+    :::column:::
+        When apps follow this rule, users can easily understand what to say to control the system. To reinforce this, while gazing at a button in HoloLens (1st gen), you will see a "voice dwell" tooltip that comes up after a second if the button is voice-enabled and displays the command to speak to "press" it. To reveal voice tooltips in HoloLens 2, show the voice cursor by saying "select" or "What can I say" (See image). <br>
+        <br>
+        *Image: "See it, say it" commands appear below the buttons*
+    :::column-end:::
+        :::column:::
+       ![See it, say it commands appear below the buttons](images/voice-seeitsayit-600px.png)<br><br>
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+---
 
 
 ## Voice commands for fast hologram manipulation
@@ -164,9 +208,36 @@ Voice input is a natural way to communicate our intents. Voice is especially goo
 
 Voice also has some weaknesses. Fine-grained control is one of them. (for example a user might say "louder," but can’t say how much. "A little" is hard to quantify. Moving or scaling things with voice is also difficult (voice does not offer the granularity of control). Voice can also be imperfect. Sometimes a voice system incorrectly hears a command or fails to hear a command. Recovering from such errors is a challenge in any interface. Lastly, voice may not be socially acceptable in public places. There are some things that users can’t or shouldn’t say. These cliffs allow speech to be used for what it is best at.
 
+
+<br>
+
+---
+
 ### Voice feedback states
 
 When Voice is applied properly, the user understands **what they can say and get clear feedback** the system **heard them correctly**. These two signals make the user feel confident in using Voice as a primary input. Below is a diagram showing what happens to the cursor when voice input is recognized and how it communicates that to the user.
+
+
+:::row:::
+    :::column:::
+       ![1. Regular cursor state](images/voicefeedbackstates-regular.jpg)<br>
+       **1. Regular cursor state**<br>
+    :::column-end:::
+    :::column:::
+       ![2. Communicates voice feedback and then disappears](images/voicefeedbackstates-voice.jpg)<br>
+        **2. Communicates voice feedback and then disappears**<br>
+    :::column-end:::
+    :::column:::
+       ![*3. Regular cursor state](images/voicefeedbackstates-regular.jpg)<br>
+       **3. Regular cursor state**<br>
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
+
+
 
 ![Voice feedback states for cursor](images/voicefeedbackstates.png)<br>
 *Voice feedback states for cursor*
