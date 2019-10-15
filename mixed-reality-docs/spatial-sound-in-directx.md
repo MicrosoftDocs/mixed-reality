@@ -1,23 +1,16 @@
 ---
 title: Spatial sound in DirectX
 description: Add spatial sound to your Windows Mixed Reality apps based on DirectX by using the XAudio2 and xAPO audio libraries.
-author: MikeRiches
-ms.author: mriches
-ms.date: 03/21/2018
+author: kegodin
+ms.author: kegodin
+ms.date: 11/07/2019
 ms.topic: article
 keywords: Windows mixed reality, spatial sound, apps, XAudio2, low level, xAPO, audio library, walkthrough, DirectX
 ---
 
-
-
 # Spatial sound in DirectX
 
-Add spatial sound to your Windows Mixed Reality apps based on DirectX by using the [XAudio2](https://msdn.microsoft.com/library/windows/desktop/hh405049.aspx) and [xAPO](https://msdn.microsoft.com/library/windows/desktop/ee415735.aspx) audio libraries.
-
-This topic uses sample code from the HolographicHRTFAudioSample.
-
->[!NOTE]
->The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+Add spatial sound to your mixed reality apps based on DirectX by using the ISpatialAudioClient (ISAC) interface. On HoloLens2, spatialization via ISAC is hardware accelerated.
 
 ## Overview of Head Relative Spatial Sound
 
@@ -29,10 +22,6 @@ Include these header files in pch.h to access the audio APIs:
 * hrtfapoapi.h
 
 To set up spatial sound:
-1. Call [CreateHrtfApo](https://msdn.microsoft.com/library/windows/desktop/mt186596.aspx) to initialize a new APO for HRTF audio.
-2. Assign the [HRTF parameters](https://msdn.microsoft.com/library/windows/desktop/mt186608.aspx) and [HRTF environment](https://msdn.microsoft.com/library/windows/desktop/mt186604.aspx) to define the acoustic characteristics of the spatial sound APO.
-3. Set up the XAudio2 engine for HRTF processing.
-4. Create an [IXAudio2SourceVoice](https://msdn.microsoft.com/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.aspx) object and call [Start](https://msdn.microsoft.com/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.start.aspx).
 
 ## Implementing HRTF and spatial sound in your DirectX app
 
@@ -210,9 +199,7 @@ if (currentPose != nullptr)
 }
 ```
 
-The HRTF position is applied directly to the sound APO by the OmnidirectionalSound helper class.
 
-From *OmnidirectionalSound::OnUpdate*:
 
 ```
 HRESULT OmnidirectionalSound::OnUpdate(_In_ Numerics::float3 position)
@@ -222,113 +209,4 @@ HRESULT OmnidirectionalSound::OnUpdate(_In_ Numerics::float3 position)
 }
 ```
 
-That's it! Continue reading to learn more about what you can do with HRTF audio and Windows Holographic.
 
-### Initialize spatial sound for a directional source
-
-Some holograms in the user's surroundings emit sound mostly in one direction. This sound pattern is named *cardioid* because it looks like a cartoon heart. The following code shows how to initialize an APO to emit directional sound. For the complete code listing, see [CardioidSound.cpp](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpatialSound/cpp/CardioidSound.cpp) .
-
-After the APO is configured for HRTF, call [Start](https://msdn.microsoft.com/library/windows/desktop/microsoft.directx_sdk.ixaudio2sourcevoice.ixaudio2sourcevoice.start.aspx) on the source voice to play the audio.
-
-```
-// Initializes an APO that emits directional sound.
-HRESULT CardioidSound::Initialize( LPCWSTR filename )
-{
-    // _audioFile is of type AudioFileReader, which is defined in AudioFileReader.cpp.
-    auto hr = _audioFile.Initialize( filename );
-    if ( SUCCEEDED( hr ) )
-    {
-        // Initialize with "Scaling" fully directional and "Order" with broad radiation pattern.
-        // As the order goes higher, the cardioid directivity region becomes narrower.
-        // Any direct path signal outside of the directivity region will be attenuated based on the scaling factor.
-        // For example, if scaling is set to 1 (fully directional) the direct path signal outside of the directivity
-        // region will be fully attenuated and only the reflections from the environment will be audible.
-        hr = ConfigureApo( 1.0f, 4.0f );
-    }
-    return hr;
-}
-
-HRESULT CardioidSound::ConfigureApo( float scaling, float order )
-{
-    // Cardioid directivity configuration:
-    // Directivity is specified at xAPO instance initialization and can't be changed per frame.
-    // To change directivity, stop audio processing and reinitialize another APO instance with the new directivity.
-    HrtfDirectivityCardioid cardioid;
-    cardioid.directivity.type = HrtfDirectivityType::Cardioid;
-    cardioid.directivity.scaling = scaling;
-    cardioid.order = order;
-
-    // APO intialization
-    HrtfApoInit apoInit;
-    apoInit.directivity = &cardioid.directivity;
-    apoInit.distanceDecay = nullptr; // nullptr specifies natural distance decay behavior (simulates real world)
-
-    // CreateHrtfApo fails with E_NOTIMPL on unsupported platforms.
-    ComPtr<IXAPO> xapo;
-    auto hr = CreateHrtfApo( &apoInit, &xapo );
-
-    if ( SUCCEEDED( hr ) )
-    {
-        hr = xapo.As( &_hrtfParams );
-    }
-
-    // Set the initial environment.
-    // Environment settings configure the "distance cues" used to compute the early and late reverberations.
-    if ( SUCCEEDED( hr ) )
-    {
-        hr = _hrtfParams->SetEnvironment( _HrtfEnvironment::Outdoors );
-    }
-
-    // Initialize an XAudio2 graph that hosts the HRTF xAPO.
-    // The source voice is used to submit audio data and control playback.
-    if ( SUCCEEDED( hr ) )
-    {
-        hr = SetupXAudio2( _audioFile.GetFormat(), xapo.Get(), &_xaudio2, &_sourceVoice );
-    }
-
-    // Submit audio data to the source voice
-    if ( SUCCEEDED( hr ) )
-    {
-        XAUDIO2_BUFFER buffer{ };
-        buffer.AudioBytes = static_cast<UINT32>( _audioFile.GetSize() );
-        buffer.pAudioData = _audioFile.GetData();
-        buffer.LoopCount = XAUDIO2_LOOP_INFINITE;
-        hr = _sourceVoice->SubmitSourceBuffer( &buffer );
-    }
-
-    return hr;
-}
-```
-
-### Implement custom decay
-
-You can override the rate at which a spatial sound falls off with distance and/or at what distance it cuts off completely. To implement custom decay behavior on a spatial sound, populate an [HrtfDistanceDecay struct](https://msdn.microsoft.com/library/windows/desktop/mt186602.aspx) and assign it to the **distanceDecay** field in an [HrtfApoInit struct](https://msdn.microsoft.com/library/windows/desktop/mt186597.aspx) before passing it to the [CreateHrtfApo](https://msdn.microsoft.com/library/windows/desktop/mt186596.aspx) function.
-
-Add the following code to the **Initialize** method shown previously to specify custom decay behavior. For the complete code listing, see [CustomDecay.cpp](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpatialSound/cpp/CustomDecay.cpp).
-
-```
-HRESULT CustomDecaySound::Initialize( LPCWSTR filename )
-{
-    auto hr = _audioFile.Initialize( filename );
-
-    ComPtr<IXAPO> xapo;
-    if ( SUCCEEDED( hr ) )
-    {
-        HrtfDistanceDecay customDecay;
-        customDecay.type = HrtfDistanceDecayType::CustomDecay;               // Custom decay behavior, we'll pass in the gain value on every frame.
-        customDecay.maxGain = 0;                                             // 0dB max gain
-        customDecay.minGain = -96.0f;                                        // -96dB min gain
-        customDecay.unityGainDistance = HRTF_DEFAULT_UNITY_GAIN_DISTANCE;    // Default unity gain distance
-        customDecay.cutoffDistance = HRTF_DEFAULT_CUTOFF_DISTANCE;           // Default cutoff distance
-
-        // Setting the directivity to nullptr specifies omnidirectional sound.
-        HrtfApoInit init;
-        init.directivity = nullptr;
-        init.distanceDecay = &customDecay;
-
-        // CreateHrtfApo will fail with E_NOTIMPL on unsupported platforms.
-        hr = CreateHrtfApo( &init, &xapo );
-    }
-...
-}
-```

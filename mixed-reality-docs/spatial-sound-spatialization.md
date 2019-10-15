@@ -1,9 +1,9 @@
 ---
 title: Spatialization
 description: Spatialization techniques and impact.
-author: hak0n
-ms.author: hakons
-ms.date: 03/21/2018
+author: kegodin
+ms.author: kegodin
+ms.date: 11/07/2019
 ms.topic: quickstart
 keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
 ---
