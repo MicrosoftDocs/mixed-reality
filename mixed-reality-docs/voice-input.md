@@ -26,7 +26,6 @@ When using voice commands, gaze is typically used as the targeting mechanism, wh
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/eHMkOpNUtR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
->[!VIDEO https://www.youtube.com/embed/eHMkOpNUtR8]
 
 ## Device support
 
@@ -63,7 +62,7 @@ Even without specifically adding voice support to your app, your users can activ
 
 :::row:::
     :::column:::
-        **HoloLens 2**<br>
+        **HoloLens 2**<br><br>
         In order to use the "select" voice command in HoloLens 2, you first need to bring up the gaze cursor to use as a pointer. The command to bring it up is easy to remember -- just say, "select".<br><br>
         To exit the mode, simply use your hands again, either by air tapping, approaching a button with your fingers, or using the system gesture.<br>
         <br>
@@ -117,18 +116,15 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
         *Image: A user can say the "Adjust" command which they see in the App bar to adjust the position of the app*
     :::column-end:::
         :::column:::
-       ![When looking at an app window or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)<br>
+        ![space](images/spacer-20x582.png)<br>
+        ![When looking at an app window or hologram, a user can say the "Adjust" command which they see in the App bar to adjust the position of the app in the world](images/microphone-600px.png)<br>
     :::column-end:::
 :::row-end:::
 
 
 <br>
 
----
 
-<br>
-
----
 
 :::row:::
     :::column:::
@@ -237,10 +233,7 @@ When Voice is applied properly, the user understands **what they can say and get
 
 ---
 
-
-
-![Voice feedback states for cursor](images/voicefeedbackstates.png)<br>
-*Voice feedback states for cursor*
+<br>
 
 ## Top things users should know about "speech" in mixed reality
 * Say **"Select"** while targeting a button (you can use this anywhere to click a button).
