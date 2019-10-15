@@ -38,7 +38,6 @@ Advancements in sensors and processing are giving rise to a new area of computer
         *Image: The interactions between between computers, humans and environments.*
     :::column-end:::
         :::column:::
-        ![space](images/spacer-20x582.png)<br>
        ![Venn diagram showing interactions between computers, humans and environments](images/mixed-reality-venn-diagram-300px.png)<br> 
     :::column-end:::
 :::row-end:::
