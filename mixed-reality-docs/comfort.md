@@ -24,7 +24,6 @@ In most head-mounted displays users will always accommodate to the focal distanc
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/-606oZKLa_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
->[!VIDEO https://www.youtube.com/embed/-606oZKLa_s]
 
 ### Guidance for holographic devices
 
