@@ -33,7 +33,7 @@ Advancements in sensors and processing are giving rise to a new area of computer
 
 :::row:::
     :::column:::
-        Now, the combination of all three--computer processing, human input, and environmental input--sets the opportunity to create true mixed reality experiences. Movement through the physical world can translate to movement in the digital world. Boundaries in the physical world can influence application experiences, such as game play, in the digital world. Without environmental input, experiences cannot blend between physical and digital realities.<br>
+        Now, the combination of all three--**computer processing, human input, and environmental input**--sets the opportunity to create true mixed reality experiences. Movement through the physical world can translate to movement in the digital world. Boundaries in the physical world can influence application experiences, such as game play, in the digital world. Without environmental input, experiences cannot blend between physical and digital realities.<br>
         <br>
         *Image: The interactions between between computers, humans and environments.*
     :::column-end:::
