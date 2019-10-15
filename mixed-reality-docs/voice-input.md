@@ -69,7 +69,7 @@ Even without specifically adding voice support to your app, your users can activ
         *Image: Say "select" to use the voice command for selection*
     :::column-end:::
         :::column:::
-       ![Say "select" to use the voice command for selection](images/kma-voice-select-00170.jpg)<br>
+       ![A user can say "select" to use the voice command for a selection.](images/kma-voice-select-00170.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -225,7 +225,7 @@ When Voice is applied properly, the user understands **what they can say and get
     :::column-end:::
     :::column:::
        ![*3. Regular cursor state](images/voicefeedbackstates-regular.jpg)<br>
-       **3. Regular cursor state**<br>
+       **3. Returns to regular cursor state**<br>
     :::column-end:::
 :::row-end:::
 
