@@ -1,18 +1,17 @@
 ---
-title: Spatial Audio
-description: Applying spatialization and acoustics to audio in a mixed reality application allows you to immerse users and enhance UI effectiveness.
-author: hak0n
-ms.author: hakons
-ms.date: 03/21/2018
+title: Audio in Mixed Reality
+description: Audio in mixed reality can increase user confidence in UI interactions and immerse users in the experience.
+author: kegodin
+ms.author: kegodin
+ms.date: 11/07/2019
 ms.topic: article
 keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
 ---
 
-# Spatial Audio
+# Audio in Mixed Reality
+Audio is an essential part of design and productivity in mixed reality, from user confidence in gesture- and voice-based interactions, to providing users guidance on next steps, to effectively combining virtual objects with the real world.
 
-Spatial audio takes on new life in mixed reality applications with low-latency head tracking. You can use spatial audio in your application to provide UI feedback, call attention to visual elements, evoke an ambience, and provide cues about the environment and application state. 
-
-Spatial audio can be about more than spatialization. Holograms in your world, especially those that move, beg for environment processing to ground them. Life-size, walk-around holograms increase the emotional impact of realistic acoustics. 
+The low-latency head tracking of mixed reality headsets, including HoloLens, enables the use of high quality HRTF-based spatialization. Among many uses, spatializing audio in your application can help provide UI feedback, call attention to visual elements, evoke an ambience, and provide cues to application state. Layering on acoustics further connects holograms to the mixed world and can provide cues about the environment and object state.
 
 <br>
 
@@ -47,24 +46,20 @@ Spatial audio can be about more than spatialization. Holograms in your world, es
     </tr>
 </table>
 
-## Use cases of spatial sound
-Case studies. Write an intro to each case study so that it's clear to the reader whether it addresses their scenario.
+## Audio
+The APIs and 1st- and 3rd-party tools used to render audio in a mixed reality application are the same as those used on other Windows platforms. However, [sound design in mixed reality](spatial-sound-design.md) can have a different impact on the user and require a different approach than in other modalities such as touch and keyboard-and-mouse. For example, in mixed reality, audio can provide essential feedback for a UI that otherwise lacks tactile response due to lack of a touchscreen or input device. As another example, when no holograms are visible, such as when a HoloLens user has turned in a direction away from all application holograms, audio can help users know that the app is still running, and help them find their way back to the main application elements.
+
+## Spatialization
+[Spatialization](spatial-sound-spatialization.md) tells the listener the source direction of audio. Spatializing over a 7.1 home theater system is as simple as linear panning across the loudspeakers, but when rendering over headphones in mixed reality it's essential to use a technology like HRTFs for accuracy and user comfort. HoloLens2 provides hardware acceleration of HRTF-based spatialization.
+
+## Acoustics
+Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. [Project Acoustics](http://aka.ms/acoustics) is an effective option for cases where the relevant scene geometry is static, such as in many immersive headset applications.
+
+## Mixed reality audio case studies
+Case studies. Write 1-sentence intro for each.
 * [Sound design for HoloTour](case-study-spatial-sound-design-for-holotour.md)
 * [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md)
 
-## Getting started: Adding spatialization
-[Spatialization](spatial-sound-spatialization.md) is the core technology that gives spatial audio a sense of direction. On some devices, hardware acceleration of spatialization is available.
-
-[short video introducing spatialization, acceleration, and our integration options]
-
-## Spatialization and acoustics
-Spatial audio is about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are considered 'acoustics'. [Project Acoustics](http://aka.ms/acoustics) is an effective option for cases where the relevant scene geometry is static, such as in many immersive headset applications.
-
-## More resources
-* [Sample applications](link to documentation in sample app repo)
-* [Design advice](spatial-sound-design.md)
-
 ## See also
-* [Spatial sound in Unity](spatial-sound-in-unity.md)
 * [Spatial sound in DirectX](spatial-sound-in-directx.md)
 
