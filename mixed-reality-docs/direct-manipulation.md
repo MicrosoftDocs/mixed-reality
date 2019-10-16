@@ -152,7 +152,7 @@ With a collidable fingertip, users are now ready to interact with a fundamental 
     :::column-end:::
     :::column:::
        ![pressable button near](images/pressable-button-approach.jpg)<br>
-        **finger approaches the button**<br>
+        **Finger approaches**<br>
     :::column-end:::
     :::column:::
        ![pressable button contact begins](images/pressable-button-contact.jpg)<br>
