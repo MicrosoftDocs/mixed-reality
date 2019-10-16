@@ -65,15 +65,17 @@ Spatialization adds a sense of direction to spatial audio. When using a 7.1 home
 Many sounds in mixed reality applications benefit from spatialization, which takes a sound out of the listener's head and places it in the world. Refer to [Spatial Sound Design](spatial-sound-spatialization.md) for suggestions on the most effective uses of spatialization in your application.
 
 ### Spatializer personalization
-HRTFs manipulate the level and phase differences between ears across the frequency spectrum. They're based on physical models and measurements of the head, torso, and ear shape (pinnae). Our brains respond to these differences to give rise to a perception of direction in sound. 
+HRTFs manipulate the level and phase differences between ears across the frequency spectrum. They're based on physical models and measurements of human head, torso, and ear shapes (pinnae). Our brains respond to these differences to give rise to a perception of direction in sound. 
 
 Every individual has a unique ear shape, head size, and ear position, so the best HRTFs are those that conform to you. HoloLens and HoloLens2 increase spatialization accuracy by using your inter-pupilary distance (IPD) from the headset displays to adjust the HRTFs for your head size.
 
 ### Spatializer platform support
-Windows provides spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound).
+Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound).
 
 ### Spatializer middleware support
-Spatialization is also available via [Unity plugin](spatial-sound-in-unity.md). We also provide an OS API to access hardware offload when writing plugins for other audio engines. [Unity game engine with Unity audio engine](spatial-sound-in-unity.md). [Wwise audio engine with Unity or Unreal](spatial-sound-in-wwise.md). [Spatial sound in Direct-X applications and custom audio engines](spatial-sound-in-directx.md)
+Support for Windows' HRTFs is available for some 3rd-party audio engines:
+* A plugin is available for the [Unity audio engine](spatial-sound-in-unity.md) that calls the HRTF XAPO
+* A plugin is available for the [Wwise audio engine](https://www.audiokinetic.com/products/plug-ins/msspatial/) that calls the ISpatialAudioClient API
 
 ## Acoustics
 Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. [Project Acoustics](http://aka.ms/acoustics) is an effective option for cases where the relevant scene geometry is static, such as in many immersive headset applications.
