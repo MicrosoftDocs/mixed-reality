@@ -41,6 +41,7 @@
 ### [Spatial mapping](spatial-mapping.md)
 ### [Room scan visualization](room-scan-visualization.md)
 ### [Spatial anchors](spatial-anchors.md)
+### [Sound](spatial-sound.md)
 ## Interaction models
 ### [Instinctual interactions](Interaction-fundamentals.md)
 ### Hands and motion controllers model
@@ -59,7 +60,6 @@
 ### Style
 #### [Color, light and materials](color,-light-and-materials.md)
 #### [Scale](scale.md)
-#### [Spatial sound](spatial-sound.md)
 #### [Spatial sound design](spatial-sound-design.md)
 #### [Typography](typography.md)
 ### Controls and behaviors

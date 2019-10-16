@@ -1,9 +1,9 @@
 ---
 title: Spatialization
 description: Spatialization techniques and impact.
-author: hak0n
-ms.author: hakons
-ms.date: 03/21/2018
+author: kegodin
+ms.author: kegodin
+ms.date: 11/07/2019
 ms.topic: quickstart
 keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
 ---
@@ -37,7 +37,7 @@ Software support is available for four combinations of game engine and audio eng
 * [Spatial sound in Direct-X applications and custom audio engines](spatial-sound-in-directx.md)
 
 ## There's more than spatialization...
-The characteristics of sounds also change based on the environment in which they exist. For instance, shouting in a cave will cause your voice to bounce off the walls, floors, and ceilings, creating an echo effect. The room model setting of spatial sound reproduces these reflections to place sounds in a particular audio environment. You can use this setting to match the user's actual location for simulation of sounds in that space to create a more immersive audio experience.
+The characteristics of sounds also change based on the environment in which they exist. For instance, shouting in a cave will cause your voice to bounce off the walls, floors, and ceilings, creating an echo effect. The room model setting of spatial sound reproduces these reflections to place sounds in a particular audio environment. You can use this setting to match the user's actual location for simulation of sounds in that space to create a more immersive audio experience. You can use an acoustics system such as Project Acoustics to add this functionality.
 
 ## Next steps
 
