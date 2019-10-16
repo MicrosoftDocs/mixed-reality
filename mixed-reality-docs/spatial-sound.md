@@ -70,7 +70,7 @@ HRTFs manipulate the level and phase differences between ears across the frequen
 Every individual has a unique ear shape, head size, and ear position, so the best HRTFs are those that conform to you. HoloLens and HoloLens2 increase spatialization accuracy by using your inter-pupilary distance (IPD) from the headset displays to adjust the HRTFs for your head size.
 
 ### Spatializer platform support
-Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). HoloLens2 HRTF hardware acceleration is exposed via this API.
+Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). This API exposes the HoloLens2 HRTF hardware acceleration to applications.
 
 ### Spatializer middleware support
 Support for Windows' HRTFs is available for some 3rd-party audio engines:
