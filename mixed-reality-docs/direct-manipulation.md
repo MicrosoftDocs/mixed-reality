@@ -41,14 +41,38 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 
 Direct manipulation is a primary input model on HoloLens 2, and utilizes the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation. Direct manipulation is not available on HoloLens (1st gen).
 
+<br>
+
+---
 
 ## Collidable fingertip
 
 On HoloLens 2, the user's hands are recognized and interpreted as left and right hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, five colliders could be attached to the five fingertips of each hand skeletal model. However, due to the lack of tactile feedback, ten collidable fingertips can cause unexpected and unpredictable collisions with holograms. 
 
-Hence, we suggest to only put a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as 1-finger press, 1-finger tap, 2-finger press and 5-finger press, as shown in the image below.
+Hence, we suggest only putting a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as One-finger press, One-finger tap, Two-finger press and Five-finger press, as shown in the image below.
 
-![Collidable fingertip image](images/Collidable-Fingertip-720px.jpg)
+:::row:::
+    :::column:::
+       ![collidable fingertip](images/Collidable-Fingertip.jpg)<br>
+       **Collidable fingertip**<br>
+    :::column-end:::
+    :::column:::
+       ![One-finger press](images/Collidable-Fingertip-1-finger-press.jpg)<br>
+        **One-finger press**<br>
+    :::column-end:::
+    :::column:::
+       ![One-finger tap](images/Collidable-Fingertip-1-finger-tap.jpg)<br>
+       **One-finger tap**<br>
+    :::column-end:::
+    :::column:::
+       ![Five-finger press](images/Collidable-Fingertip-5-finger-press.jpg)<br>
+       **Five-finger press**<br>
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
 
 ### Sphere collider
 
