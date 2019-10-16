@@ -55,14 +55,14 @@ HoloTour virtually takes users to tourist and historical sites around the world.
 RoboRaid is a high-energy shooter for HoloLens. The following case study describes the design choices made to ensure spatial audio was used to fullest dramatic effect: [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md).
 
 ## Spatialization
-Spatialization adds a sense of direction to spatial audio. When using a 7.1 home theater setup, spatialization is as simple as panning between loud speakers. But mixed reality is experienced over headphones, and it's essential to use a technology like HRTFs for accuracy and comfort. Windows offers several spatialization technologies depending on the device, and HoloLens2 includes hardware acceleration of HRTF-based spatialization.
+Spatialization adds a sense of direction to spatial audio. When using a 7.1 home theater setup, spatialization is as simple as panning between loud speakers. But mixed reality is experienced over headphones, and with headphones it's essential to use a technology like HRTFs for accuracy and comfort. Windows offers several spatialization technologies depending on the device, and HoloLens2 includes hardware acceleration of HRTF-based spatialization.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
 
 ### Should I spatialize?
-Many sounds in mixed reality applications benefit from spatialization, which takes a sound out of the listener's head and places it in the world. Refer to [Spatial Sound Design](spatial-sound-spatialization.md) for suggestions on the most effective uses of spatialization in your application.
+Many sounds in mixed reality applications benefit from spatialization, which takes a sound out of the listener's head and places it in the world. Refer to [Spatial Sound Design](spatial-sound-design.md) for suggestions on the most effective uses of spatialization in your application.
 
 ### Spatializer personalization
 HRTFs manipulate the level and phase differences between ears across the frequency spectrum. They're based on physical models and measurements of human head, torso, and ear shapes (pinnae). Our brains respond to these differences to give rise to a perception of direction in sound. 
@@ -74,10 +74,13 @@ Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API
 
 ### Spatializer middleware support
 Support for Windows' HRTFs is available for some 3rd-party audio engines:
-* A plugin is available for the [Unity audio engine](spatial-sound-in-unity.md) that calls the HRTF XAPO
-* A plugin is available for the [Wwise audio engine](https://www.audiokinetic.com/products/plug-ins/msspatial/) that calls the ISpatialAudioClient API
+* A [Unity audio engine](spatial-sound-in-unity.md) plugin calls the HRTF XAPO
+* A [Wwise audio engine plugin](https://www.audiokinetic.com/products/plug-ins/msspatial/) calls the ISpatialAudioClient API
 
 ## Acoustics
-Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. [Project Acoustics](http://aka.ms/acoustics) is an effective option for cases where the relevant scene geometry is static, such as in many immersive headset applications.
+Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. Without acoustics, spatialized sounds lack a perceived distance and are heard as being 'stuck' on a sphere surrounding the listener.
 
+Acoustics treatment can range from simple to very complex. By using a simple reverb, such as that supported by any audio engine, you can push spatialized sounds out into the environment surrounding the listener. For more details, see [spatial sound design](spatial-sound-design.md).
+
+Rich and compelling acoustics treatment is available from acoustics systems such as [Project Acoustics](http://aka.ms/acoustics). Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound, and is an effective option for cases where the relevant scene geometry is known at development time.
 
