@@ -41,16 +41,13 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 
 ## Input
 
-### Gaze and gestures
+### Interaction models
 
-[Gaze](gaze.md) is a basic form of input on HoloLens that enable users to aim at holograms and the environment. You can visually see where your gaze is targeting based on the cursor position. It's common to associate the gaze cursor with a mouse cursor.
-
-[Gestures](gestures.md) are how you interact with holograms, like a mouse click. Most of the time the mouse and touch behaviors are the same, but it's important to understand and validate when they differ.
+Make sure the hologram interactions work with your chosen [interaction model](interaction-fundamentals.md).
+It's alos a good idea to validate with different accessories, like mouse and keybouard, if these acccessories are needed to support accessibility.
 
 **Validate when your app has a different behavior with mouse and touch.** This will identify inconsistencies and help with design decisions to make the experience more natural for users. For example, triggering an action based on hover.
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](news.md).
 
 ### Custom voice commands
 
