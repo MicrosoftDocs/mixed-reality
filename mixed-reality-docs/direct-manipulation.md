@@ -104,7 +104,7 @@ With interactive feedback, users can achieve high precision near-targeting tasks
 
 <br>
 
-
+---
 
 ## Bounding box with proximity shader
 
