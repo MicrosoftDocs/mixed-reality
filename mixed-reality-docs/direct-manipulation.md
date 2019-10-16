@@ -87,7 +87,24 @@ In addition to rendering a collidable sphere on the index fingertip, we've creat
 
 With interactive feedback, users can achieve high precision near-targeting tasks, such as triggering a hyperlink or pressing a button as shown below. 
 
-![Fingertip cursor image](images/Fingertip-Cursor-720px.jpg)
+:::row:::
+    :::column:::
+       ![Fingertip cursor far](images/Fingertip-cursor-far.jpg)<br>
+       **Fingertip cursor far**<br>
+    :::column-end:::
+    :::column:::
+       ![Fingertip cursor near](images/Fingertip-cursor-near.jpg)<br>
+        **Fingertip cursor near**<br>
+    :::column-end:::
+    :::column:::
+       ![Fingertip cursor contact](images/Fingertip-cursor-contact.jpg)<br>
+       **Fingertip cursor contact**<br>
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
 
 ## Bounding box with proximity shader
 
