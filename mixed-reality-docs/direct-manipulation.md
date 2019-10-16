@@ -110,12 +110,32 @@ With interactive feedback, users can achieve high precision near-targeting tasks
 
 The hologram itself also requires the ability to provide both visual and audio feedback to compensate the lack of tactile feedback. For that, we generate the concept of a bounding box with a proximity shader. A bounding box is a minimum volumetric area that encloses a 3D object. The bounding box has an interactive rendering mechanism called a proximity shader. The proximity shader behaves:
 
-* When the index finger is within a range, a fingertip spotlight is cast on the surface of the bounding box.
-* When the fingertip gets closer to the surface, the spotlight shrinks accordingly.
-* As soon as the fingertip touches the surface, the entire bounding box changes color or generates visual effects to reflect the touch state.
-* A sound effect can also be activated to enhance the visual touch feedback.
+:::row:::
+    :::column:::
+       ![Hover (far) with visual feedback](images/bounding-box-with-proximity-shader-hover-far.jpg)<br>
+       **Hover (far) with visual feedback**<br>
+       When the index finger is within a range, a fingertip spotlight is cast on the surface of the bounding box.
+    :::column-end:::
+    :::column:::
+       ![Hover (near) with visual feedback](images/bounding-box-with-proximity-shader-hover-near.jpg)<br>
+        **Hover (near) with visual feedback**<br>
+        When the fingertip gets closer to the surface, the spotlight shrinks accordingly.
+    :::column-end:::
+    :::column:::
+       ![Contact begins](images/bounding-box-with-proximity-shader-begin-contact.jpg)<br>
+       **Contact begins with visual and audio feedback**<br>
+       As soon as the fingertip touches the surface, the entire bounding box changes color or generates visual effects to reflect the touch state.
+    :::column-end:::
+    :::column:::
+       ![Contact ends](images/bounding-box-with-proximity-shader-end-contact.jpg)<br>
+       **Contact ends with visual and audio feedback**<br>
+       A sound effect can also be activated to enhance the visual touch feedback.
+    :::column-end:::
+:::row-end:::
 
-![Bounding box with proximity shader image](images/Bounding-Box-With-Proximity-Shader-720px.jpg)
+<br>
+
+---
 
 ## Pressable button
 
