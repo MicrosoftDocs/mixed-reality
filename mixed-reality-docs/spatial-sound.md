@@ -52,7 +52,7 @@ The APIs and 1st- and 3rd-party tools used to render audio in a mixed reality ap
 ## Spatialization
 [Spatialization](spatial-sound-spatialization.md) tells the listener the source direction of audio. Spatializing over a 7.1 home theater system is as simple as panning across the loudspeakers, but when rendering over headphones in mixed reality it's essential to use a technology like HRTFs for accuracy and comfort. HoloLens2 provides hardware acceleration of HRTF-based spatialization.
 
-Windows provides spatialization, including HRTFs, via the [ISpatialAudioClient API](spatial-sound-in-directx.md). Spatialization is also available via [Unity plugin](spatial-sound-unity.md).
+Windows provides spatialization, including HRTFs, via the [ISpatialAudioClient API](spatial-sound-in-directx.md). A Wwise plugin is available for Spatialization is also available via [Unity plugin](spatial-sound-in-unity.md).
 
 ## Acoustics
 Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. [Project Acoustics](http://aka.ms/acoustics) is an effective option for cases where the relevant scene geometry is static, such as in many immersive headset applications.

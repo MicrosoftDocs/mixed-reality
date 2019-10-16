@@ -30,11 +30,7 @@ Get MRTK. Or use Project Acoustics.
 HW offload of spatialization.
 
 ## Supported configurations
-Software support is available for four combinations of game engine and audio engine. We also provide an OS API to access hardware offload when writing plugins for other audio engines.
-* [Unity game engine with Unity audio engine](spatial-sound-in-unity.md)
-* [Unreal game engine with Unreal audio engine](spatial-sound-in-unreal.md)
-* [Wwise audio engine with Unity or Unreal](spatial-sound-in-wwise.md)
-* [Spatial sound in Direct-X applications and custom audio engines](spatial-sound-in-directx.md)
+Windows provides spatialization, including HRTFs, via the [ISpatialAudioClient API](spatial-sound-in-directx.md). Spatialization is also available via [Unity plugin](spatial-sound-in-unity.md). We also provide an OS API to access hardware offload when writing plugins for other audio engines. [Unity game engine with Unity audio engine](spatial-sound-in-unity.md). [Wwise audio engine with Unity or Unreal](spatial-sound-in-wwise.md). [Spatial sound in Direct-X applications and custom audio engines](spatial-sound-in-directx.md)
 
 ## There's more than spatialization...
 The characteristics of sounds also change based on the environment in which they exist. For instance, shouting in a cave will cause your voice to bounce off the walls, floors, and ceilings, creating an echo effect. The room model setting of spatial sound reproduces these reflections to place sounds in a particular audio environment. You can use this setting to match the user's actual location for simulation of sounds in that space to create a more immersive audio experience. You can use an acoustics system such as Project Acoustics to add this functionality.
