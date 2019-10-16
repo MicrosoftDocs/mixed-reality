@@ -124,7 +124,7 @@ The hologram itself also requires the ability to provide both visual and audio f
     :::column:::
        ![Contact begins](images/bounding-box-with-proximity-shader-begin-contact.jpg)<br>
        **Contact begins**<br>
-       When the fingertip touches the surface, the entire bounding box changes color or generates visual effects to reflect the touch state.
+       As soon as the fingertip touches the surface, the entire bounding box changes color or generates visual effects to reflect the touch state.
     :::column-end:::
     :::column:::
        ![Contact ends](images/bounding-box-with-proximity-shader-end-contact.jpg)<br>
