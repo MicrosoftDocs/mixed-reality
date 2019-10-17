@@ -122,7 +122,9 @@ Low frequency buttons are buttons that are not interacted with as regularly thro
 
 :::row:::
     :::column:::
-        When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button. For head-gaze and dwell UIs there are some patterns and considerations for confirmation dialogs:<br>
+        When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button.<br>
+        <br>
+        For head-gaze and dwell UIs there are some patterns and considerations for confirmation dialogs:<br>
         <br>
   * Show selection highlight on main button.
   * Reveal dwell target at same time as selection highlight.
