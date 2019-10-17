@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, App patterns, design, HoloLens, room scan, spatial mapping, surface reconstruction, mesh
+keywords: Windows Mixed Reality, App patterns, design, HoloLens, room scan, spatial mapping, mesh
 ---
 
 
