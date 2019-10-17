@@ -139,8 +139,9 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 
 <a href=https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
+<br>
 
-## Design guidelines
+---
 
 
 ## Head-gaze targeting
