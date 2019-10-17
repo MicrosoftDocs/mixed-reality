@@ -105,8 +105,7 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 
 
 ## Design guidelines
-> [!NOTE]
-> More guidance specific to gaze design [coming soon](index.md).
+
 
 ## Head-gaze targeting
 All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality. In Windows Mixed Reality, this is generally done using the user's gaze.
@@ -118,15 +117,30 @@ As a mixed reality developer, you can do a lot with head or eye gaze:
 * Your app can let the user place holograms on real-world surfaces, by intersecting their gaze ray with the spatial mapping mesh.
 * Your app can know when the user is *not* looking in the direction of an important object, which can lead your app to give visual and audio cues to turn towards that object.
 
-## Cursor
-For head gaze, most apps should use a [cursor](cursors.md) (or other auditory/visual indication) to give the user confidence in what they're about to interact with. 
-You typically position this cursor in the world where their head gaze ray first intersects an object, which may be a hologram or a real-world surface.
+<br>
 
-![An example visual cursor to show gaze](images/cursor.jpg)<br>
-*An example visual cursor to show gaze*
+---
+
+## Cursor
+
+:::row:::
+    :::column:::
+        For head gaze, most apps should use a [cursor](cursors.md) (or other auditory/visual indication) to give the user confidence in what they're about to interact with. 
+        You typically position this cursor in the world where their head gaze ray first intersects an object, which may be a hologram or a real-world surface.<br>
+        <br>
+        *Image: An example visual cursor to show gaze*
+    :::column-end:::
+        :::column:::
+       ![An example visual cursor to show gaze](images/cursor.jpg)<br>
+    :::column-end:::
+:::row-end:::
 
 For eye gaze, we generally recommend *not* to show a cursor, as this can quickly become distracting and annoying for the user. 
 Instead subtly highlight visual targets or use a very faint eye cursor to provide confidence about what the user is about to interact with. For more information, please check out our [design guidance for eye-based input](eye-tracking.md) on HoloLens 2.
+
+<br>
+
+---
 
 
 ## Target sizing and feedback
@@ -135,7 +149,9 @@ The gaze vector has been shown repeatedly to be usable for fine targeting, but o
 ![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
 *Optimal target size at 2 meter distance*
 
-![An example of highlighting a gaze targeted object](images/gazetargeting-highlighting-640px.jpg)<br>
+<br>
+
+![An example of highlighting a gaze targeted object](images/gazetargeting-highlighting-940px.jpg)<br>
 *An example of highlighting a gaze targeted object*
 
 ## Target placement
