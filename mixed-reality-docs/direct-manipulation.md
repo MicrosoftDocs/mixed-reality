@@ -178,7 +178,7 @@ A 2D slate is a holographic container hosting 2D app contents, such as a web bro
     :::column:::
        ![Touch](images/2d-slate-interaction-touch.jpg)<br>
        **Touch**<br>
-       Use an index finger to press a hyperlink or button.
+       Use an index finger to press a hyperlink or a button.
     :::column-end:::
     :::column:::
        ![Scroll](images/2d-slate-interaction-scroll2.jpg)<br>
