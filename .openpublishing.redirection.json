@@ -84,6 +84,28 @@
 			"source_path": "mixed-reality-docs/mixed-reality-capture.md",
 			"redirect_url": "https://docs.microsoft.com/en-us/hololens/holographic-photos-and-video",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/academy.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/tutorials#mixed-reality-academy-tutorials",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/performance-recommendations-for-immersive-headset-apps.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/add-custom-home-environments",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/development-overview.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/development",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/performance-recommendations-for-hololens-apps.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/app-quality-criteria",
+			"redirect_document_id": false
 		}
 	]
 }
+
+
