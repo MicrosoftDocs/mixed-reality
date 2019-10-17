@@ -106,6 +106,7 @@ Use a short delay before starting visual feedback to avoid flickering when someo
 *Image: Microsoft Dynamics 365 Guides next button*
     :::column-end:::
         :::column:::
+       ![space](images/spacer-20x582.png)<br>
        ![Microsoft Dynamics 365 Guides next button](images/GuideNextButton.png)<br>
     :::column-end:::
 :::row-end:::
@@ -139,6 +140,7 @@ Low frequency buttons are buttons that are not interacted with as regularly thro
 *Image: Microsoft Dynamics 365 Guides confirmation dialog*
     :::column-end:::
         :::column:::
+      ![space](images/spacer-20x582.png)<br>
        ![Microsoft Dynamics 365 Guides Confirmation Dialog](images/GuidesConfirmation.png)<br>
     :::column-end:::
 :::row-end:::
@@ -170,6 +172,7 @@ Toggle buttons require some nuanced logic to work properly. When a person dwells
 *Image: Microsoft Dynamics 365 Guides list*
     :::column-end:::
         :::column:::
+      ![space](images/spacer-20x582.png)<br>
        ![Microsoft Dynamics 365 Guides list](images/GuidesListView.png)<br>
     :::column-end:::
 :::row-end:::
