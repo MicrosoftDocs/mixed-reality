@@ -45,17 +45,22 @@ Provide a mechanism for fully hands-free interactions, without using voice.
 
 ## Design principles
 
-1. Avoid "Gaze as a weapon"
+**1. Avoid "Gaze as a weapon"**
 
     Head-gaze and dwell requires visual feedback to be intuitive, but too much feedback can induce anxiety. The feedback should help a user know what they're targeting, but not auto-select it against their intent. Reading text, icons, and labels requires extra consideration to provide a person room to absorb the information before selecting.
 	
-2. Seek Goldilocks speed
+**2. Seek Goldilocks speed**
 	
     Dwell interactions can have different timers based on impact of navigation - more frequently used functions will generally benefit from faster fill times, while more consequential functions may benefit from longer fill times. When using a fill-effect to show these timers, animation curves of the fill color can positively influence a feeling of faster fill times. Consideration should be taken to enable user decision from fast/medium/slow fill speed overrides.
 	
-3. Say no-no to yo-yo effect
+**3. Say no-no to yo-yo effect**
 
     The yo-yo effect is an uncomfortable pattern of head movement that can emerge when the placement of content and head-gaze and dwell controls forces people to constantly look up and down repeatedly. For example, a list nav with the head-gaze and dwell button at the bottom induces a loop of - look down to dwell, look up at results, look down to dwell, etc. This resulting pattern is uncomfortable and should be avoided by placing navigation controls in a centralized location that requires less back-and-forth. Placement of dwell buttons relative to their effects becomes important for comfort.
+
+<br>
+
+---
+
 
 ## UX Guidelines and best practices
 
@@ -81,11 +86,12 @@ Use a short delay before starting visual feedback to avoid flickering when someo
 * For buttons interacted with frequently, keep the delay very short so the application feels reactive.
 * For buttons that are interacted with infrequently, a longer delay can be appropriate to avoid the interface feeling twitchy.
 
-## UI patterns
 
 <br>
 
 ---
+
+## UI patterns
 
 ### High frequency buttons
 
