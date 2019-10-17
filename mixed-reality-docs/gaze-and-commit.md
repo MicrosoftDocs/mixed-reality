@@ -86,6 +86,11 @@ Voice commanding is one of the primary interaction methods in mixed reality. It 
 To find more details as well as a comprehensive list of available commands and how to use them, check out our [voice commanding](voice-design.md) guidance.
 
 
+<br>
+
+---
+
+
 ### Head-gaze and HoloLens Clicker
 
 :::row:::
