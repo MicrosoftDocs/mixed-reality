@@ -96,8 +96,8 @@ Use a short delay before starting visual feedback to avoid flickering when someo
     :::column:::
         High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.<br>
         <br>
-        **High frequency buttons should:**<br>
-  * Be larger buttons, easier to hit with head-gaze
+        **Recommendations**<br>
+  * High frequency buttons should be large, easier to hit with head-gaze
   * Stay near eye height to avoid ergonomic straining.<br>
         <br>
 *Image: Microsoft Dynamics 365 Guides next button*
@@ -127,7 +127,7 @@ Low frequency buttons are buttons that are not interacted with as regularly thro
     :::column:::
         When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button.<br>
         <br>
-        **UI considerations for confirmation dialogs:**<br>
+        **Recommendations**<br>
   * Show selection highlight on main button.
   * Reveal dwell target at same time as selection highlight.
   * For the secondary button, reveal the dwell target on head-gaze.<br>
@@ -156,7 +156,7 @@ Toggle buttons require some nuanced logic to work properly. When a person dwells
     :::column:::
         List views present a particular challenge for head-gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets.<br>
         <br>
-**Some tips for designing list views:**<br>
+**Recommendations**<br>
   * Have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
   * Only show the dwell target when the row is highlighted to cut down on visual noise.
   * Be clear and consistent with the position of dwell targets.
