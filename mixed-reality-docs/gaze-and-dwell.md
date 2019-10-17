@@ -83,41 +83,95 @@ Use a short delay before starting visual feedback to avoid flickering when someo
 
 ## UI patterns
 
+<br>
+
+---
+
 ### High frequency buttons
 ![Microsoft Dynamics 365 Guides Next Button](images/GuideNextButton.png "Microsoft Dynamics 365 Guides Next Button")<br>
 *High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.*
 
-High frequency buttons should...
-* be larger buttons, easier to hit with head-gaze
-* stay near eye height to avoid ergonomic straining.
+
+:::row:::
+    :::column:::
+        High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.<br>
+        <br>
+        High frequency buttons should...<br>
+  * be larger buttons, easier to hit with head-gaze
+  * stay near eye height to avoid ergonomic straining.<br>
+        <br>
+        *Image: Microsoft Dynamics 365 Guides next button*
+    :::column-end:::
+        :::column:::
+       ![Microsoft Dynamics 365 Guides next button](images/GuideNextButton.png)<br>
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
+
 
 ### Low frequency buttons
 Low frequency buttons are buttons that are not interacted with as regularly throughout the application. A good example might be a button to access the settings menu, or a button to clear all work.
 
 * Try to keep these buttons out of the way of frequent head-gaze paths to avoid accidental activation. 
 
+<br>
+
+---
+
 ### Confirmations
-![Microsoft Dynamics 365 Guides Confirmation Dialog](images/GuidesConfirmation.png "Microsoft Dynamics 365 Guides Confirmation Dialog")
 
-When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button. For head-gaze and dwell UIs there are some patterns and considerations for confirmation dialogs:
-
+:::row:::
+    :::column:::
+        When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button. For head-gaze and dwell UIs there are some patterns and considerations for confirmation dialogs:<br>
+        <br>
   * Show selection highlight on main button.
   * Reveal dwell target at same time as selection highlight.
-  * For the secondary button, reveal the dwell target on head-gaze.
+  * For the secondary button, reveal the dwell target on head-gaze.<br>
+        <br>
+        *Image: Microsoft Dynamics 365 Guides confirmation dialog*
+    :::column-end:::
+        :::column:::
+       ![Microsoft Dynamics 365 Guides Confirmation Dialog](images/GuidesConfirmation.png)<br>
+    :::column-end:::
+:::row-end:::
 		
+<br>
+
+---
+
 ### Toggle buttons
 Toggle buttons require some nuanced logic to work properly. When a person dwells on a toggle button and actives it, they need to exit the button and then return to restart the dwell logic. It is important that togglable buttons have a clear active versus inactive state. 
 
-### List views
-![Microsoft Dynamics 365 Guides Confirmation Dialog](images/GuidesListView.png "Microsoft Dynamics 365 Guides Confirmation Dialog")<br>
-*List views present a particular challenge for head-gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets.*
+<br>
 
-Some tips for designing list views:
+---
+
+### List views
+
+:::row:::
+    :::column:::
+        List views present a particular challenge for head-gaze and dwell input. People need to be able to scan the content without feeling like that have to tiptoe around the dwell targets.<br>
+        <br>
+Some tips for designing list views:<br>
 * Have the entire row highlight when head-gazed but doesn’t begin dwell unless head-gaze is on the specific dwell target.
 * Only show the dwell target when the row is highlighted to cut down on visual noise.
 * Be clear and consistent with the position of dwell targets.
 * Don't show all dwell targets at once to avoid repetitive UI.
-* Re-use the same pattern as often as possible to establish UX familiarity.
+* Re-use the same pattern as often as possible to establish UX familiarity.<br>
+        <br>
+        *Image: Microsoft Dynamics 365 Guides list*
+    :::column-end:::
+        :::column:::
+       ![Microsoft Dynamics 365 Guides list](images/GuidesListView.png)<br>
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
  
  ## See also
 * [Direct manipulation with hands](direct-manipulation.md)
