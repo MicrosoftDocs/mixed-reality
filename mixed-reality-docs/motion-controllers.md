@@ -143,7 +143,7 @@ If the controllers are turned off after pairing, their status will show up as Pa
 ## Gazing and pointing
 
 Windows Mixed Reality supports two key models for interaction, **gaze and commit** and **point and commit**:
-* With **gaze and commit**, users target an object with their [gaze](gaze.md) and then select objects with hand air-taps, a gamepad, a clicker or their voice.
+* With **gaze and commit**, users target an object with their [gaze](gaze-and-commit.md) and then select objects with hand air-taps, a gamepad, a clicker or their voice.
 * With **point and commit**, a user can aim a pointing-capable motion controller at the target object and then select objects with the controller's trigger.
 
 Apps that support pointing with motion controllers should also enable gaze-driven interactions where possible, to give users choice in what input devices they use.
