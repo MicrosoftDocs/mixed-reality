@@ -91,6 +91,7 @@ To find more details as well as a comprehensive list of available commands and h
 :::row:::
     :::column:::
         The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).<br>
+        [More information and instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)<br>
         <br>
         *Image: HoloLens Clicker*
     :::column-end:::
@@ -98,8 +99,6 @@ To find more details as well as a comprehensive list of available commands and h
        ![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
     :::column-end:::
 :::row-end:::
-
-More information and instructions to pair the device can be found [here](hardware-accessories.md#pairing-bluetooth-accessories)
 
 <br>
 
@@ -111,6 +110,7 @@ More information and instructions to pair the device can be found [here](hardwar
 :::row:::
     :::column:::
         The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accessories application to configure your Xbox Wireless Controller.<br>
+        [How to pair an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)<br>
         <br>
         *Image: Xbox Wireless Controller*
     :::column-end:::
@@ -119,7 +119,7 @@ More information and instructions to pair the device can be found [here](hardwar
     :::column-end:::
 :::row-end:::
 
-[How to pair an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
+
 
 <br>
 
