@@ -170,7 +170,7 @@ The optimal (resting) gaze angle is considered between 10-20 degrees below horiz
 Muscle fatigue can accumulate when users are expected to keep a hand raised throughout the duration of an experience. It can also be fatiguing to require the user to repeatedly make air tap gestures over long durations. We therefore recommend that experiences avoid requiring constant, repeated gesture input. This goal can be achieved by incorporating short breaks or offering a mixture of gesture and speech input to interact with the app.
 
 ## See also
-* [Gaze](gaze.md)
+* [Gaze](gaze-and-commit.md)
 * [Hologram stability](hologram-stability.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Holographic frame](holographic-frame.md)

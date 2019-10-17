@@ -186,9 +186,9 @@ These are the core building blocks for mixed reality development:
 <tr>
 <th style="width:175px">Input</th><th style="width:125px; text-align: center;"><a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:125px; text-align: center;">HoloLens 2</a></th><th style="width:125px; text-align: center;"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
-<td> <a href="gaze.md">Head gaze</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td> <a href="gaze-and-commit.md">Head gaze</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td> <a href="gaze.md">Eye gaze</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
+<td> <a href="gaze-and-commit.md">Eye gaze</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
 </tr><tr>
  <td> <a href="gestures.md">Articulated hands</a></td><td></td><td style="text-align: center;">✔️</td><td></td>
 </tr><tr>
@@ -212,7 +212,7 @@ These are the core building blocks for mixed reality development:
 
 
 
-The basic interaction model for [HoloLens](hololens-hardware-details.md) is [gaze](gaze.md), [gesture](gestures.md), and [voice](voice-input.md), sometimes referred to as *GGV*. [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md) also use gaze and voice, but swap [motion controllers](motion-controllers.md) for gestures.
+The basic interaction model for [HoloLens](hololens-hardware-details.md) is [gaze](gaze-and-commit.md), [gesture](gestures.md), and [voice](voice-input.md), sometimes referred to as *GGV*. [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md) also use gaze and voice, but swap [motion controllers](motion-controllers.md) for gestures.
 
 All mixed reality devices benefit from the input ecosystem available in Windows, including mouse, keyboard, gamepads, and more. With HoloLens, [hardware accessories](hardware-accessories.md) are connected via Bluetooth. With immersive headsets, accessories connect to the host PC via Bluetooth, USB, and other supported protocols.
 

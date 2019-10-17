@@ -19,7 +19,7 @@ keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tut
 
 >[!VIDEO https://www.youtube.com/embed/XKIIEC5BMWg]
 
-This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md).
+This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze-and-commit.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md).
 
 The tutorial will take approximately 1 hour to complete.
 
@@ -126,7 +126,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 >[!VIDEO https://www.youtube.com/embed/MSO2BoFSQbM]
 
-In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze.md).
+In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze-and-commit.md).
 
 ### Objectives
 
@@ -693,7 +693,7 @@ You are now ready to start creating your own holographic experience!
 ## See also
 
 * [MR Basics 101E: Complete project with emulator](holograms-101e.md)
-* [Gaze](gaze.md)
+* [Gaze](gaze-and-commit.md)
 * [Gestures](gestures.md)
 * [Voice input](voice-input.md)
 * [Spatial sound](spatial-sound.md)

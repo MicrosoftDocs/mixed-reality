@@ -43,7 +43,7 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 
 ### Gaze and gestures
 
-[Gaze](gaze.md) is a basic form of input on HoloLens that enable users to aim at holograms and the environment. You can visually see where your gaze is targeting based on the cursor position. It's common to associate the gaze cursor with a mouse cursor.
+[Gaze](gaze-and-commit.md) is a basic form of input on HoloLens that enable users to aim at holograms and the environment. You can visually see where your gaze is targeting based on the cursor position. It's common to associate the gaze cursor with a mouse cursor.
 
 [Gestures](gestures.md) are how you interact with holograms, like a mouse click. Most of the time the mouse and touch behaviors are the same, but it's important to understand and validate when they differ.
 
