@@ -11,10 +11,20 @@ keywords: 6dof controllers, motion controllers
 
 # Motion controllers
 
-Motion controllers are [hardware accessories](hardware-accessories.md) that allow users to take action in mixed reality. An advantage of motion controllers over [gestures](gestures.md) is that the controllers have a precise position in space, allowing for fine grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.
+:::row:::
+    :::column:::
+        Motion controllers are [hardware accessories](hardware-accessories.md) that allow users to take action in mixed reality. An advantage of motion controllers over [gestures](gestures.md) is that the controllers have a precise position in space, allowing for fine grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.<br>
+        <br>
+        *Image: A Windows Mixed Reality motion controller*
+    :::column-end:::
+        :::column:::
+       ![Windows Mixed Reality motion controllers](images/winmr-ck-1080x1080-350px.jpg)<br> 
+    :::column-end:::
+:::row-end:::
 
-![Windows Mixed Reality motion controllers](images/winmr-ck-1080x1080-350px.jpg)
+<br>
 
+---
 
 ## Device support
 
@@ -41,7 +51,7 @@ Motion controllers are [hardware accessories](hardware-accessories.md) that allo
 
 ## Hardware details
 
->[!VIDEO https://www.youtube.com/embed/1nlcdDNOdm8]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/1nlcdDNOdm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Windows Mixed Reality motion controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. These motion controllers will offer the same ease of setup and portability as Windows Mixed Reality immersive headsets. Our device partners plan to market and sell these controllers on retail shelves this holiday.
 
@@ -78,29 +88,53 @@ Motion controllers can be bonded with host PC using Windows settings like any ot
 4. Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
 5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
 6. Press and hold the pairing button (tab in the battery compartment) until the LEDs begin pulsing.
-7. Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.
 
-   ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)<br>
-   *Select "Motion controller" to pair; if there are multiple instances, select one from the bottom of the list*
+:::row:::
+    :::column:::
+7. Wait "Motion controller - Left" or "Motion controller - Right" to appear to the bottom of the list. Select to pair. Controller will vibrate once when connected.<br>
+        <br>
+        *Image: Select "Motion controller" to pair; if there are multiple instances, select one from the bottom of the list*
+    :::column-end:::
+        :::column:::
+       ![Select Motion controller to pair, if multiple instances select one from appearing bottom of the list](images/450px-bluetooth-add-a-device-300px.png)<br> 
+    :::column-end:::
+:::row-end:::
    
 8. You will see the controller appear in the Bluetooth settings under **“Mouse, keyboard, & pen” category** as **Connected**. At this point, you may get a firmware update – see [next section](motion-controllers.md#updating-controller-firmware).
 9. Reattach battery cover.
 10. Repeat steps 1-9 for the second controller.
 
-After successfully pairing both controllers, your settings should look like this under **“Mouse, keyboard, & pen” category** 
+<br>
 
-   ![Motion controllers connected](images/450px-motion-controller-connected-300px.png)<br>
-   *Motion controllers connected*
+:::row:::
+    :::column:::
+        After successfully pairing both controllers, your settings should look like this under **“Mouse, keyboard, & pen” category** <br>
+        <br>
+        *Image: Motion controllers connected*
+    :::column-end:::
+        :::column:::
+       ![Motion controllers connected](images/450px-motion-controller-connected-300px.png)<br>
+    :::column-end:::
+:::row-end:::
 
 If the controllers are turned off after pairing, their status will show up as Paired. If controllers stay permanently under “Other devices” category pairing may have been only partially completed and need to be performed again to get controller functional.
 
 ### Updating controller firmware
 
 * If an immersive headset is connected to your PC, and new controller firmware is available, the firmware will be pushed to your motion controllers automatically the next time they're turned on. Controller firmware updates are indicated by a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes.
-* After the firmware update completes, the controllers will reboot and reconnect. Both controllers should be connected now. 
-    
-    ![Controllers connected](images/cyk-connected-300px.jpg)<br>
-    *Controllers connected in Bluetooth settings*
+
+
+:::row:::
+    :::column:::
+* After the firmware update completes, the controllers will reboot and reconnect. Both controllers should be connected now. <br>
+        <br>
+        *Image: Controllers connected in Bluetooth settings*
+    :::column-end:::
+        :::column:::
+       ![Controllers connected](images/cyk-connected-300px.jpg)<br>
+    :::column-end:::
+:::row-end:::
+
 
 * Verify your controllers work properly:
     1. Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
@@ -152,9 +186,10 @@ If the user moves the controllers out of the headset's field of view, in most ca
 
 At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing.
 
-&nbsp;
+<br>
 
->[!VIDEO https://www.youtube.com/embed/rkDpRllbLII]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/rkDpRllbLII" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ### Reasoning about tracking state explicitly
 
@@ -210,9 +245,9 @@ For more information about how to load controller models dynamically in Unity, s
 
 ![Preview of motion controllers line art](images/motioncontrollers-black-preview-300px.png)
 
- [Full-resolution motion controllers line art in '''white'''](images/motioncontrollers-white.png)
+![Full-resolution motion controllers line art in '''white'''](images/motioncontrollers-white.png)
  
- [Full-resolution motion controllers line art in '''black'''](images/motioncontrollers-black.png)
+![Full-resolution motion controllers line art in '''black'''](images/motioncontrollers-black.png)
 
 ## FAQ
 
