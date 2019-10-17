@@ -174,19 +174,49 @@ A 2D slate is a holographic container hosting 2D app contents, such as web brows
 
 To interact with the slate contact:
 
-* Use an index finger to press a hyperlink or a button.
-* Use an index finger to scroll a slate content up and down.
-* The user's two index fingers are used to zoom in and out of the slate content, according to the relative motion of the fingers.
+:::row:::
+    :::column:::
+       ![Touch](images/2d-slate-interaction-touch.jpg)<br>
+       **Touch**<br>
+       Use an index finger to press a hyperlink or a button.
+    :::column-end:::
+    :::column:::
+       ![Scroll](images/2d-slate-interaction-scroll2.jpg)<br>
+        **Scroll**<br>
+        Use an index finger to scroll a slate content up and down.
+    :::column-end:::
+    :::column:::
+       ![Zoom](images/2d-slate-interaction-zoom2.jpg)<br>
+       **Zoom**<br>
+       The user's two index fingers are used to zoom in and out of the slate content, according to the relative motion of the fingers.
+    :::column-end:::
+:::row-end:::
 
-![2D slate image](images/2D-Slate-Interaction-720px.jpg)
 
 For manipulating the 2D slate itself:
 
-* Approach your hands toward corners and edges to reveal the closest manipulation affordances.
-* Grab the manipulation affordances, and perform uniform scaling through the corner affordances, and reflow via the edge affordances.
-* Grab the holobar at the top of the 2D slate, which lets you move the whole slate.
+:::row:::
+    :::column:::
+       ![Move](images/manipulate-2d-slate-move.jpg)<br>
+       **Move**<br>
+       Move your hands toward corners and edges to reveal the closest manipulation affordances. Grab the Holobar at the top of the 2D slate, which lets you move the whole slate.
+    :::column-end:::
+    :::column:::
+       ![Scale](images/manipulate-2d-slate-scale.jpg)<br>
+        **Scale**<br>
+        Grab the manipulation affordances and perform uniform scaling through the corner affordances.
+    :::column-end:::
+    :::column:::
+       ![Reflow](images/manipulate-2d-slate-reflow.jpg)<br>
+       **Reflow**<br>
+       Grab the manipulation affordances and perform reflow via the edge affordances.
+    :::column-end:::
+:::row-end:::
 
-![Image of slate manipulation](images/Manipulate-2d-slate-720px.jpg)
+<br>
+
+---
+
 
 ## 3D object manipulation
 
@@ -194,9 +224,27 @@ HoloLens 2 lets lets users enable their hands to direct manipulate 3D holographi
 
 ### Affordance-based manipulation
 
-Affordance-base manipulation lets you manipulate the 3D object through a bounding box along with the manipulation affordances around it. As soon as a user's hand is close to a 3D object, the bounding box and the nearest affordance are revealed. Users can grab the bounding box to move the whole object, the edge affordances to rotate and the corner affordances to scale uniformly.
+Affordance-base manipulation lets you manipulate the 3D object through a bounding box along with the manipulation affordances around it. 
 
-![3D object manipulation image](images/3D-Object-Manipulation-720px.jpg)
+:::row:::
+    :::column:::
+       ![Move](images/3d-object-manipulation-move.jpg)<br>
+       **Move**<br>
+       As soon as a user's hand is close to a 3D object, the bounding box and the nearest affordance are revealed. Users can grab the bounding box to move the whole object.
+    :::column-end:::
+    :::column:::
+       ![Rotate](images/3d-object-manipulation-rotate.jpg)<br>
+        **Rotate**<br>
+        Users can grab the edge affordances to rotate.
+    :::column-end:::
+    :::column:::
+       ![Scale](images/3d-object-manipulation-scale.jpg)<br>
+       **Scale**<br>
+       Users can grab the corner affordances to scale uniformly.
+    :::column-end:::
+:::row-end:::
+
+
 
 ### Non-affordance based manipulation
 
@@ -204,13 +252,37 @@ Non-affordance-based manipulation does not attach affordance to the bounding box
 
 Specific manipulation requires precision. We recommend that you use **affordance-based manipulation** because it provides a high level of granularity. For flexible manipulation, we recommend you use **non-affordance manipulation** as it allows for instant and playful experiences.
 
+<br>
+
+---
+
+
 ## Instinctual gestures
 
 With HoloLens (1st gen), we taught users a couple predefined gestures, such as bloom and air tap. For HoloLens 2, we don't ask users to memorize any symbolic gestures. All required user gestures--where users need to interact with holograms and content--are instinctual. The way to achieve instinctual gestures is to help users perform gestures through the design of UI affordances.
 
 For example, if we encourage the user to grab an object or a control point with a two finger pinch, the object or the control point should be small. If we want the user to perform five finger grab, the object or the control point should be relatively large. Similar to buttons, a tiny button would limit users to press it with a single finger; a large button would encourage users to press it with their palms.
 
-![](images/Instinctual-Gestures-720px.jpg)
+
+:::row:::
+    :::column:::
+       ![Move](images/instinctual-gestures-smallobject.jpg)<br>
+       **Small object**<br>
+    :::column-end:::
+    :::column:::
+       ![Rotate](images/instinctual-gestures-mediumobject.jpg)<br>
+        **Medium object**<br>
+    :::column-end:::
+    :::column:::
+       ![Scale](images/instinctual-gestures-largeobject.jpg)<br>
+       **Large object**<br>
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+---
 
 ## Symmetric design between hands and 6 DoF controllers
 
