@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: spatial mapping, HoloLens, mixed reality, surface reconstruction, mesh, sr
+keywords: spatial mapping, HoloLens, mixed reality, surface reconstruction, mesh
 ---
 
 
