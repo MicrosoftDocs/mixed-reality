@@ -68,8 +68,6 @@ Air tap is a tapping gesture with the hand held upright. To perform an air tap, 
 :::row-end:::
 
 
-![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
-
 Air tap is also available on HoloLens 2. It has been relaxed from the original version. Nearly all types of pinches are now supported as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture. This new air tap replaces the old one through the same API, so existing applications will have the new behavior automatically after recompiling for HoloLens 2.
 
 <br>
@@ -103,7 +101,9 @@ To find more details as well as a comprehensive list of available commands and h
 
 More information and instructions to pair the device can be found [here](hardware-accessories.md#pairing-bluetooth-accessories)
 
+<br>
 
+---
 
 
 ### Head-gaze and Xbox Wireless Controller
@@ -120,6 +120,10 @@ More information and instructions to pair the device can be found [here](hardwar
 :::row-end:::
 
 [How to pair an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
+
+<br>
+
+---
 
 
 ### Head-gaze and Xbox Adaptive Controller
