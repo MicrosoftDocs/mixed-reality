@@ -1,6 +1,6 @@
 ---
 title: Unreal development overview
-description: Getting started building mixed reality apps in Unreal.
+description: To get started building mixed reality apps in Unreal.
 author: sw5813
 ms.author: suwu
 ms.date: 09/04/2019
@@ -9,7 +9,9 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, r
 ---
 # Unreal development overview
 
-Mixed reality support for Unreal Engine 4 is now in beta! If you're new to Unreal development, we recommend that you take time to explore the [Getting Started with Unreal Engine 4](https://docs.unrealengine.com/en-US/GettingStarted/index.html) page. If you need assets, Unreal has a comprehensive [Marketplace](https://www.unrealengine.com/marketplace/en-US/store). Once you've built up a basic understanding of Unreal Engine 4, you can visit the [Microsoft HoloLens Development](https://docs.unrealengine.com/en-US/Platforms/AR/HoloLens2/index.html) page on the Unreal Engine documentation site to learn how to build and run your apps on HoloLens. Be sure to visit the [Unreal Mixed Reality forums](https://forums.unrealengine.com/development-discussion/vr-ar-development) to engage with the rest of the community building mixed reality apps in Unreal and find solutions to problems you might run into.
+Mixed reality support for Unreal Engine 4 is now in beta! If you're new to Unreal development, [Getting Started with Unreal Engine 4](https://docs.unrealengine.com/en-US/GettingStarted/index.html) is a great page to explore. If you need assets, Unreal has a comprehensive [Marketplace](https://www.unrealengine.com/marketplace/en-US/store). 
+
+Once you've built a basic understanding of Unreal Engine 4, you can visit the [Microsoft HoloLens Development](https://docs.unrealengine.com/en-US/Platforms/AR/HoloLens2/index.html) page on the Unreal Engine documentation site to learn how to build and run your apps on HoloLens. Be sure to visit the [Unreal Mixed Reality forums](https://forums.unrealengine.com/development-discussion/vr-ar-development) to engage with the community who build mixed reality apps in Unreal. It's a great place to find solutions to problems you might run into.
 
 ## Installing the prerequisites
 
@@ -24,8 +26,8 @@ First, [package your app for HoloLens 2](https://docs.unrealengine.com/en-US/Pla
 ## Streaming your app to a headset via the Holographic Remoting Player
 
 Streaming your app from your desktop to the Holographic Remoting Player app on a HoloLens headset has two main advantages: 
-* Speed up development- there's no need to repackage and upload your app each time you make a change
-* Leverage the power of your desktop- render as many polygons as your desktop GPU allows, without being limited by the compute available on the headset
+* Speeds up development, so there's no need to repackage and upload your app each time you make a change
+* Leverages the power of your desktop, so you can render as many polygons as your desktop GPU allows, without being limited by the computer available on the headset
 
 To get started with streaming, check out the [HoloLens 2 Streaming Quick Start](https://docs.unrealengine.com/en-US/Platforms/AR/HoloLens2/QuickStartStreaming/index.html).
 
