@@ -38,6 +38,11 @@ Mixed reality headsets use the position and orientation of the user's head to de
 
 In addition to head gaze, some mixed reality headsets, like HoloLens 2, include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze. But this comes with a very different set of design constraints, which will be covered separately in the [eye-gaze article](eye-tracking.md).
 
+
+<br>
+
+---
+
 ## Commit
 After targeting an object or UI element, the user can interact or click on it using a secondary input. This is known as the commit step of the model. The following commit methods are supported:
 
@@ -50,9 +55,26 @@ After targeting an object or UI element, the user can interact or click on it us
 ### Head-gaze and air tap gesture
 Air tap is a tapping gesture with the hand held upright. To perform an air tap, raise your index finger to the ready position, then pinch with your thumb, and raise your index finger back up to release. On HoloLens (1st gen), air tap is the most common secondary input.
 
+
+:::row:::
+    :::column:::
+       ![Finger in the ready position](images/readyandpress-ready.jpg)<br>
+       **Finger in the ready position**<br>
+    :::column-end:::
+    :::column:::
+       ![Press finger down to tap or click](images/readyandpress-press.jpg)<br>
+        **Press finger down to tap or click**<br>
+    :::column-end:::
+:::row-end:::
+
+
 ![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
 
 Air tap is also available on HoloLens 2. It has been relaxed from the original version. Nearly all types of pinches are now supported as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture. This new air tap replaces the old one through the same API, so existing applications will have the new behavior automatically after recompiling for HoloLens 2.
+
+<br>
+
+---
 
 ### Head-gaze and "Select" voice command
 Voice commanding is one of the primary interaction methods in mixed reality. It provides a very powerful hands-free mechanism to control the system. There are different types of voice interaction models:
@@ -67,10 +89,17 @@ To find more details as well as a comprehensive list of available commands and h
 
 
 ### Head-gaze and HoloLens Clicker
-The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
 
-![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
-*HoloLens Clicker*
+:::row:::
+    :::column:::
+        The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).<br>
+        <br>
+        *Image: HoloLens Clicker*
+    :::column-end:::
+        :::column:::
+       ![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
+    :::column-end:::
+:::row-end:::
 
 More information and instructions to pair the device can be found [here](hardware-accessories.md#pairing-bluetooth-accessories)
 
@@ -78,12 +107,19 @@ More information and instructions to pair the device can be found [here](hardwar
 
 
 ### Head-gaze and Xbox Wireless Controller
-The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accessories application to configure your Xbox Wireless Controller.
 
-![Xbox Wireless Controller](images/xboxcontroller.jpg)<br>
-*Xbox Wireless Controller*
+:::row:::
+    :::column:::
+        The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accessories application to configure your Xbox Wireless Controller.<br>
+        <br>
+        *Image: Xbox Wireless Controller*
+    :::column-end:::
+        :::column:::
+       ![Xbox Wireless Controller](images/xboxcontroller.jpg)<br>
+    :::column-end:::
+:::row-end:::
 
-[Pairing an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
+[How to pair an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
 
 
 ### Head-gaze and Xbox Adaptive Controller
