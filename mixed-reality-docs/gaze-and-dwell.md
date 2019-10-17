@@ -128,7 +128,6 @@ Low frequency buttons are buttons that are not interacted with as regularly thro
         When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button.<br>
         <br>
         **UI considerations for confirmation dialogs:**<br>
-        <br>
   * Show selection highlight on main button.
   * Reveal dwell target at same time as selection highlight.
   * For the secondary button, reveal the dwell target on head-gaze.<br>
