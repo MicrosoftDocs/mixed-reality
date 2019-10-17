@@ -104,7 +104,7 @@ With interactive feedback, users can achieve high precision near-targeting tasks
 
 <br>
 
----
+
 
 ## Bounding box with proximity shader
 
@@ -172,7 +172,7 @@ With a collidable fingertip, users are now ready to interact with a fundamental 
 
 A 2D slate is a holographic container hosting 2D app contents, such as a web browser. The design concept for interacting with a 2D slate via direct manipulation is to leverage the mental model of interacting with a physical touch screen.
 
-### To interact with the slate contact
+### To interact with the slate contact:
 
 :::row:::
     :::column:::
@@ -193,7 +193,7 @@ A 2D slate is a holographic container hosting 2D app contents, such as a web bro
 :::row-end:::
 
 
-### For manipulating the 2D slate itself
+### For manipulating the 2D slate itself:
 
 :::row:::
     :::column:::
@@ -290,6 +290,11 @@ For example, if we encourage the user to grab an object or a control point with 
 ## Symmetric design between hands and 6 DoF controllers
 
 You may have noticed that there are interaction parallels we can draw between hands in AR and motion controllers in VR. Both inputs can be used to trigger direct manipulations in their respective environments. In HoloLens 2, grabbing and dragging with hands at a close distance works much the same way as the grab button does on WMR motion controllers. This provides users with interaction familiarity between the two platforms, which might prove useful if you ever decide to port your application from one to the other.
+
+
+<br>
+
+---
 
 
 <br>
