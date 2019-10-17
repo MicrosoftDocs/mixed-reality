@@ -245,9 +245,9 @@ For more information about how to load controller models dynamically in Unity, s
 
 ![Preview of motion controllers line art](images/motioncontrollers-black-preview-300px.png)
 
-![Full-resolution motion controllers line art in '''white'''](images/motioncontrollers-white.png)
+[Full-resolution motion controllers line art in '''white'''](images/motioncontrollers-white.png)
  
-![Full-resolution motion controllers line art in '''black'''](images/motioncontrollers-black.png)
+[Full-resolution motion controllers line art in '''black'''](images/motioncontrollers-black.png)
 
 ## FAQ
 
