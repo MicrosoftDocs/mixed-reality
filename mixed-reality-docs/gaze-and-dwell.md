@@ -96,7 +96,7 @@ Use a short delay before starting visual feedback to avoid flickering when someo
     :::column:::
         High frequency buttons are buttons that are used commonly throughout an application. A good example of these are the next and back buttons in Microsoft Dynamics 365 Guides.<br>
         <br>
-        **High frequency buttons should...**<br>
+        **High frequency buttons should:**<br>
   * Be larger buttons, easier to hit with head-gaze
   * Stay near eye height to avoid ergonomic straining.<br>
         <br>
@@ -127,7 +127,7 @@ Low frequency buttons are buttons that are not interacted with as regularly thro
     :::column:::
         When an action has significant impact, like charging money, deleting work, or starting a long process, it is useful to confirm that a person meant to select a button.<br>
         <br>
-        For head-gaze and dwell UIs there are some patterns and considerations for confirmation dialogs:<br>
+        **UI considerations for confirmation dialogs:**<br>
         <br>
   * Show selection highlight on main button.
   * Reveal dwell target at same time as selection highlight.
