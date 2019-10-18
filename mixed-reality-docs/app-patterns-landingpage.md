@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Mixed reality UX elements
-description: This guidance is authored by Microsoft designers, developers, program managers, and researchers, whose work spans holographic devices (like HoloLens) and immersive devices (like the Acer and HP Windows Mixed Reality headsets). So, consider this work as a set of topics for ‘how to design for Windows head-mounted displays’.
+description: This document contains a set of topics that explain how to design for Windows head-mounted displays.
 author: grbury 
 ms.author: grbury
 ms.date: 10/02/2019

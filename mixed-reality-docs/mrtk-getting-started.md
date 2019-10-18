@@ -1,8 +1,8 @@
 ---
 title: Getting started with MRTK version 2
 description: For new developers who are interested in leveraging MRTK
-author: Yoyoz
-ms.author: Yoyoz
+author: cre8ivepark
+ms.author: dongpark
 ms.date: 05/15/19
 ms.topic: article
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MRTK, tools, SDK, HoloLens, HoloLens 2

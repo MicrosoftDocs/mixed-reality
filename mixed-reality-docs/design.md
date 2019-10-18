@@ -76,7 +76,7 @@ Voice is one of the key forms of input on HoloLens. It allows you to directly co
 <br>
 
 ### [Leveraging the user's eye-gaze](eye-tracking.md)
-HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at.
+HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what users are looking at.
 
 <br>
 
@@ -86,7 +86,7 @@ Designing content for mixed reality requires careful consideration of color, lig
 <br>
 
 ### [Suggesting the scale of an object](scale.md)
-A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
+A key to displaying content that looks realistic in holographic form is to mimic the visual characteristics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
 
 <br>
 
@@ -150,7 +150,7 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
     :::column:::
         [![Start developing](images/icon-developer.jpg)](development.md)<br>
         **[Start developing](development.md)**<br>
-        Choose a development path based on your skill level, work style or platform interest.
+        Choose a development path based on your skill level, work style, or platform interest.
     :::column-end:::
 :::row-end:::
 
