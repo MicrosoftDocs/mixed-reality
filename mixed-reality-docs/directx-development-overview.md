@@ -1,6 +1,6 @@
 ---
 title: DirectX development overview 
-description: Building a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly.
+description: Build a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
@@ -35,7 +35,7 @@ This is a great way to get the code that you need to add holographic rendering s
 The following topics discuss the base requirements of adding Windows Mixed Reality support to DirectX-based middleware:
 
 * [Creating a holographic DirectX project](creating-a-holographic-directx-project.md): The holographic application template coupled with the documentation shows you the differences between what you're used to as well as the special requirements introduced by a device that's designed to function while resting on your head.
-* [Getting a HolographicSpace](getting-a-holographicspace.md): You'll first need to create a HolographicSpace That will provide your application the sequence of HolographicFrame objects that represent each head position from which you'll render.
+* [Getting a HolographicSpace](getting-a-holographicspace.md): You'll first need to create a HolographicSpace that will provide your application the sequence of HolographicFrame objects that represent each head position from which you'll render.
 * [Rendering in DirectX](rendering-in-directx.md): Since a holographic swap chain has two render targets, you'll need to make some changes to the way your application renders.
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md): Windows Mixed Reality learns and updates its understanding of the world as the user walks around. This provides spatial coordinate systems that applications use to reason about the user's surroundings, including spatial anchors and the user's defined spatial stage.
 
