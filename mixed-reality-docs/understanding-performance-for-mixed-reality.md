@@ -118,7 +118,7 @@ Typically shaders perform many transformations and lighting calculations. Althou
 - Rearrange expressions to use MAD intrinsics in order to do a multiply and an add at the same time
 - Precalculate as much as possible on the CPU and pass as constants to the material
 - **Favor moving operations from the pixel shader to the vertex shader**
-    - Generally the number of vertices is much smaller than the number of pixels (720p == 921,600 pixels, 1080p == 2,073,600 pixels, etc.)
+    - Generally the number of vertices is much smaller than the number of pixels (720p is 921,600 pixels, 1080p is 2,073,600 pixels, etc.)
 
 #### Remove GPU stages
 Post-processing effects can be very expensive and increase the fill rate of your application. This includes anti-aliasing techniques such as MSAA. On HoloLens, it is recommended to avoid these techniques entirely, as well as additional shader stages such as geometry, hull, and compute shaders.
