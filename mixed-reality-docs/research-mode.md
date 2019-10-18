@@ -15,7 +15,7 @@ keywords: research mode, cv, rs4, computer vision, research, HoloLens
 
 Research mode is a new capability of HoloLens that provides application access to the key sensors on the device. These include:
 - The four environment tracking cameras used by the system for map building and head tracking.
-- Two versions of the depth camera data – one for high-frequency (30 FPS) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1 FPS) far-depth sensing, currently used by Spatial Mapping,
+- Two versions of the depth camera data – one for high-frequency (30 FPS) near-depth sensing, commonly used in hand tracking, and the other for lower-frequency (1-5 FPS) far-depth sensing, currently used by Spatial Mapping,
 - Two versions of an IR-reflectivity stream, used by the HoloLens to compute depth, but valuable in its own right as these images are illuminated from the HoloLens and reasonably unaffected by ambient light.
 
 ![Research Mode app screenshot](images/sensor-stream-viewer.jpg)<br>
