@@ -16,7 +16,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 
 * Optimize Unity for HoloLens development.
 * Import assets and setup the scene.
-* Visualization of the spatial mesh, hand meshes, and the framerate counter.
+* Visualization of the spatial mapping mesh, hand meshes, and the framerate counter.
 
 ## Instructions
 
@@ -121,7 +121,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 
 ## Congratulations
 
-You have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mesh covering all the surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on application performance. These are just a few of the foundational pieces, included out of the box, with the Mixed Reality Toolkit. In the lessons to come, you will start adding more content and interactivity to your scene so that you can fully explore the capabilities of HoloLens 2 and the Mixed Reality Toolkit.
+You have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mapping mesh covering all the surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on application performance. These are just a few of the foundational pieces, included out of the box, with the Mixed Reality Toolkit. In the lessons to come, you will start adding more content and interactivity to your scene so that you can fully explore the capabilities of HoloLens 2 and the Mixed Reality Toolkit.
 
 > [!NOTE]
 > You will cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md). It is generally recommended to keep the visual profiler visible at all times during development to understand when code changes may have impacted perf. Hololens 2 application should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).
