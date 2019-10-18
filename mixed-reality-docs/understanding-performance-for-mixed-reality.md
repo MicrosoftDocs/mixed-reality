@@ -49,7 +49,7 @@ Below are some common tools to gain deep profiling information for your applicat
 
 ### How to profile in any environment
 
-One way to determine if you are GPU bound or CPU bound in your application is to decrease the resolution of the render target output. By reducing the number of pixels to calculate, this will reduce your GPU load. The device will render to a smaller surface, then up-sample to display your final image.
+One way to determine if you are GPU bound or CPU bound in your application is to decrease the resolution of the render target output. By reducing the number of pixels to calculate, this will reduce your GPU load. The device will render to a smaller texture, then up-sample to display your final image.
 
 After decreasing rendering resolution, if:
 1) Application framerate **increases**, then you are likely **GPU Bound**
