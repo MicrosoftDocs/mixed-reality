@@ -20,7 +20,7 @@ The performant framerate values for each target platform are listed below.
 | [Windows Mixed Reality Ultra PCs](immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality PCs](immersive-headset-hardware-details.md) | 60 FPS |
 
-The framework below outlines best practices for hitting target frame rates. If you're developing in Unity, consider reading the [performance recommendations for Unity article](performance-recommendations-for-unity.md) as well for tips on measuring and improving your framerate in the Unity environment.
+The framework below outlines best practices for hitting target frame rates. If developing in Unity, consider reading the [performance recommendations for Unity article](performance-recommendations-for-unity.md) as well for tips on measuring and improving framerate in the Unity environment.
 
 ## Understanding performance bottlenecks
 
