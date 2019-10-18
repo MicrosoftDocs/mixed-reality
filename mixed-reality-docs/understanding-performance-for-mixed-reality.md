@@ -100,7 +100,7 @@ Higher polygon counts result in more operations for the GPU; reducing the number
 
 #### Limit overdraw
 
-High overdraw occurs when multiple objects are rendered but not output to the screen as they are hidden by an occluding object. Imagine looking at a wall that has objects behind it. All of the geometry would be processed for rendering, but only the opaque wall needs to be rendered. This results in unnecessary operations.
+High overdraw occurs when multiple objects are rendered but not shown on screen as they are hidden by an occluding object. Imagine looking at a wall that has objects behind it. All of the geometry would be processed for rendering, but only the opaque wall needs to be rendered. This results in unnecessary operations.
 
 #### Shaders
 
