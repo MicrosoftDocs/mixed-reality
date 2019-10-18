@@ -2,7 +2,7 @@
 title: Unity development overview
 description: Getting started building mixed reality apps in Unity.
 author: thetuvix
-ms.author: Yoyoz
+ms.author: alexturn
 ms.date: 04/15/2018
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
