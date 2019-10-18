@@ -604,7 +604,7 @@ In this chapter, we'll make the anchor able to be placed on real-world surfaces.
 
 ### Objectives
 
-* Place holograms on the spatial map based on players’ head position.
+* Place holograms on the spatial mapping mesh based on players’ head position.
 
 ### Instructions
 
