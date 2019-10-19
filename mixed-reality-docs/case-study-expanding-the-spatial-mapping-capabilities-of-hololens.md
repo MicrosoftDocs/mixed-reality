@@ -317,7 +317,6 @@ The open-source code is available in [MixedRealityToolkit](https://github.com/Mi
 
 ## See also
 * [Spatial mapping](spatial-mapping.md)
-* [Spatial mapping design](spatial-mapping-design.md)
 * [Room scan visualization](room-scan-visualization.md)
 * [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 * [Asobo Studio: Lessons from the frontline of HoloLens development](http://www.gamesindustry.biz/articles/2016-05-12-asobo-lessons-from-the-frontline-of-ar-development)
