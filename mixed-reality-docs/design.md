@@ -45,7 +45,7 @@ At their core, mixed reality apps place holograms in your world that look and so
 
 <br>
 
-### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping-design.md)
+### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
 
 <br>
