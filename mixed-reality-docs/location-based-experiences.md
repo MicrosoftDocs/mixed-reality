@@ -138,7 +138,7 @@ Q: How does the tracking technology in the Windows Mixed Reality headsets work?
 
 Mixed Reality shares the same tracking technology as the HoloLens. To learn more about the inside-out tracking system, check out the documentation [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/tracking-system).
 
-For a description of how the higher-level spatial mapping system works you can read our description [here](spatial-mapping-design.md).
+For a description of how the higher-level spatial mapping system works you can read our description [here](spatial-mapping.md).
 
 **Q: Are there any best practices for getting a reliable tracking volume?**
 
