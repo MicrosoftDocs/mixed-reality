@@ -222,7 +222,7 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     ![The Azure Portal](images/AzureLabs-Lab6-21.png)
 
-20. You will see your video along with another, which is of **Asset Type *Multi-Bitrate MP4***.
+20. You will see your video along with another, which is of **Asset Type _Multi-Bitrate MP4_**.
 
     ![The Azure Portal](images/AzureLabs-Lab6-22.png)
 

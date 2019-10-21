@@ -33,7 +33,7 @@ To [update to the current release](updating-hololens.md), open the *Settings* ap
 
 ## Improvements and fixes
 
-We are in sync with the rest of the Windows 10 Anniversary update, so in addition to the Hololens specific fixes, you are also receiving all the goodness from the Windows update to increase platform reliability and performance. Your feedback is highly valued and prioritized for fixes in the release.
+We are in sync with the rest of the Windows 10 Anniversary update, so in addition to the HoloLens specific fixes, you are also receiving all the goodness from the Windows update to increase platform reliability and performance. Your feedback is highly valued and prioritized for fixes in the release.
 
 We've improved the following experiences:
 * log in experiences.

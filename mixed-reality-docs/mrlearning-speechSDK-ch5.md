@@ -18,17 +18,17 @@ In this lesson, we will be using Azure Speech Service's Intent feature to unders
 - Learn how to use speech intent voice commands as rocket control input commands.
 
 ## Instructions
-1. In this tutorial, we will be using a "BaseModule" asset to integrate rocket launcher with the speech commands. For that, we need to import the asset into our project. You can download the "Rocket Launcher" asset using this link (Attach the link). 
+1. In this tutorial, we will be using a "BaseModule" asset to integrate rocket launcher with the speech commands. For that, we need to import the asset into our project. You can download the "Rocket Launcher" asset using this [link](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2). 
 
 2. To import the asset, please go to assets->Import package->Custom package-> navigate to the downloaded file and click import.
 
 ![module4chapter5step1](images/module4chapter5step1.PNG)
 
-3. After importing the "Rocket Launcher" asset, navigate inside the "Rocket Launcher" folder->Prefabs-> Select "Rocket Launcher_Complete", and then drag and drop it into the existing scene Hierarchy.
+3. After importing the  "Base Module Assets" asset, navigate inside the "Base Module Assets" folder->Prefabs-> Select "Rocket Launcher_Complete", and then drag and drop it into the existing scene Hierarchy.
 
 ![module4chapter5step2](images/module4chapter5step2.PNG)
 
-4. Now we need to integrate our "Rocket Launcher" with our LUIS project that we worked in our previous lesson (link for lesson4). For that, expand the "Rocket Launcher_Complete" prefab in the hierarchy and find the "LaunchRoundButton", "ResetRoundButton" and "Placement Hints" buttons.
+4. Now we need to integrate our "Rocket Launcher" with our LUIS project that we worked in our previous lesson [lesson](mrlearning-speechSDK-ch4.md). For that, expand the "Rocket Launcher_Complete" prefab in the hierarchy and find the "LaunchRoundButton", "ResetRoundButton" and "Placement Hints" buttons.
 
 ![module4chapter5step3](images/module4chapter5step3.PNG)
 

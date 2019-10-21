@@ -1,8 +1,8 @@
 ---
 title: Asset creation process
 description: Guidance on creating assets for mixed reality experiences.
-author: paseb
-ms.author: paseb
+author: shengkait
+ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: asset, creation, process, budget, polygons, textures, shaders, performance
@@ -57,7 +57,7 @@ Below is an example budget for your experience. Performance is usually not a sin
 
 **Complexity of assets**
 * How many triangles / polygons?
-* How complex is the shader?
+* How complex is the shader? When using the Mixed Reality Toolkit, it is recommended to use the [Mixed Reality Toolkit Standard shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) to reduce shader complexity.
 
 Both the developers and artists have to consider the capabilities of the device and the graphics engine. Microsoft HoloLens has all of the computational and graphics built into the device. It shares the capabilities developers would find on a mobile platform.
 

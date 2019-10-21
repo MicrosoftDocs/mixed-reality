@@ -1,6 +1,6 @@
 ---
 title: Lunar Module
-description: LunarModule is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend Hololens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems.
+description: LunarModule is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend HoloLens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
@@ -15,7 +15,7 @@ keywords: Windows Mixed Reality, Sample apps, Design, HoloLens
 >[!NOTE]
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
 
-[Lunar Module](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend Hololens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems. All of the project's components are available for use in your own mixed reality app experiences.
+[Lunar Module](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend HoloLens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems. All of the project's components are available for use in your own mixed reality app experiences.
 
 ## Rethinking classic experiences for Windows Mixed Reality
 

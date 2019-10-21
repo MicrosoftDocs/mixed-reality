@@ -79,7 +79,7 @@ The following hardware and software is required:
 1. Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup).
 2. It is a good idea to perform **Calibration** and **Sensor Tuning** when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user).
 
-For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens).
+For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens-2).
 
 For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](sensor-tuning.md).
 

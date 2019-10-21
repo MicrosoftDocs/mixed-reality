@@ -47,7 +47,7 @@ There are five parts to the lunar module that the user will interact with as sho
 
 > Note: The Game object names that you see in your base scene hierarchy do not correspond to the names of the objects in the scene.
 
-Step 2: Add an audio source to the lunar module. Make sure the lunar module is selected in your base scene hierarchy, and click Add Component. Search for Audio Source, and add it to the object. Leave it blank for now. We will use this to play the launching sound later.
+Step 2: Add an audio source to the lunar module. Make sure the lunar module is selected in your base scene hierarchy, and click Add Component. Search for Audio Source, and add it to the object. Leave it blank for now, but make sure to click the "Spatialize" checkbox to enable spatial audio. We will use this to play the launching sound later.
 
  ![Lesson6 Chapter1 Step2im](images/Lesson6_Chapter1_step2im.PNG)  
 Step 3: Add the script, Toggle Placement Hints. Click Add Component, and search for Toggle Placement Hints. This is a custom script that lets you turn on and off the translucent hints (objects with the x-ray material) mentioned earlier.  
@@ -74,7 +74,7 @@ Drag the following objects from the lunar module in your base scene:
 
 Now the Toggle Placement Hints script is configured. This allow us to turn hints on and off.
 
-Step 5: Add the Launch Lunar Module script. Click the Add Component button, search for "launch lunar module", and select it. This script launches the lunar module. When we press a configured button, it adds an upward force to the lunar module's rigid body component, and causes the module to launch upwards. If you are indoors, the lunar module may crash against your ceiling mesh. But if you are outdoors, it will fly in to space indefinitely. 
+Step 5: Add the Launch Lunar Module script. Click the Add Component button, search for "launch lunar module", and select it. This script launches the lunar module. When we press a configured button, it adds an upward force to the lunar module's rigid body component, and causes the module to launch upwards. If you are indoors, the lunar module may crash against your ceiling mesh. If you are in an area with high ceilings or no ceilings, the lunar module will fly into space indefinitely. 
 
 ![Lesson6 Chapter1 Step5im](images/Lesson6_Chapter1_step5im.PNG)
 
@@ -132,7 +132,7 @@ Step 3: Select the No Function dropdown menu, and hover over LaunchLunarModule, 
 > Note: Notice that by default, the GameObject.BroadcastMessage is configured to ResetPlacement. This broadcasts a message called, ResetPlacement for every child object of the RocketLauncher_Tutorial. Any object that has a method for ResetPlacement() responds to that message by resetting it's position. 
 
 ### Launching the lunar module
-This section explaings how to configure the Launch button. This permits the user to press the button and launch the lunar module into space.
+This section explains how to configure the Launch button. This permits the user to press the button and launch the lunar module into space.
 
 Step 1: Select the Launch button. In the base scene it’s called, LaunchRoundButton. Drag the lunar module to the empty slot under Touch End in the Inspector panel.
  ![Lesson6 Chapter5 Step1im](images/Lesson6_Chapter5_step1im.PNG)

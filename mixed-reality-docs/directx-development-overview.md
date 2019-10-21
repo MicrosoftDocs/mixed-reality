@@ -1,6 +1,6 @@
 ---
-title: DirectX development overview
-description: Building a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly.
+title: DirectX development overview 
+description: Build a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
@@ -21,7 +21,7 @@ Windows Mixed Reality supports [two kinds of apps](app-views.md):
 * **2D apps** (UWP) that use DirectX, XAML, or other frameworks to render [2D views](app-views.md#2d-views) on slates in the Windows Mixed Reality home.
 
 
-The differences between DirectX development for [2D views and immersive views](app-views.md) are primarily related to holographic rendering and spatial input. Your UWP application's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 application's HWND are required, and remain largely the same, as do the WinRT APIs available to your application. However, you must use a different subset of these APIs to take advantage of holographic features. For example, the swap chain is managed by the system for holographic appslications. You work with the HolographicSpace API rather than DXGI to [present frames](rendering-in-directx.md).
+The differences between DirectX development for [2D views and immersive views](app-views.md) are primarily related to holographic rendering and spatial input. Your UWP application's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 application's HWND are required, and remain largely the same, as do the WinRT APIs available to your application. However, you must use a different subset of these APIs to take advantage of holographic features. For example, the swap chain is managed by the system for holographic applications. You work with the HolographicSpace API rather than DXGI to [present frames](rendering-in-directx.md).
 
 To begin developing immersive applications:
 * For **UWP apps**, [create a new UWP project using the templates in Visual Studio](creating-a-holographic-directx-project.md). Based on your language, **Visual C++** or **Visual C#**, you can find the UWP templates under **Windows Universal** > **Holographic**.
@@ -35,7 +35,7 @@ This is a great way to get the code that you need to add holographic rendering s
 The following topics discuss the base requirements of adding Windows Mixed Reality support to DirectX-based middleware:
 
 * [Creating a holographic DirectX project](creating-a-holographic-directx-project.md): The holographic application template coupled with the documentation shows you the differences between what you're used to as well as the special requirements introduced by a device that's designed to function while resting on your head.
-* [Getting a HolographicSpace](getting-a-holographicspace.md): You'll first need to create a HolographicSpace That will provide your application the sequence of HolographicFrame objects that represent each head position from which you'll render.
+* [Getting a HolographicSpace](getting-a-holographicspace.md): You'll first need to create a HolographicSpace that will provide your application the sequence of HolographicFrame objects that represent each head position from which you'll render.
 * [Rendering in DirectX](rendering-in-directx.md): Since a holographic swap chain has two render targets, you'll need to make some changes to the way your application renders.
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md): Windows Mixed Reality learns and updates its understanding of the world as the user walks around. This provides spatial coordinate systems that applications use to reason about the user's surroundings, including spatial anchors and the user's defined spatial stage.
 
@@ -53,7 +53,6 @@ To enable the best possible experience for users of your immersive appslication,
 There are other key features that many immersive applications will want to use that are also exposed to DirectX applicaitons:
 
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
-* [Locatable camera in DirectX](locatable-camera-in-directx.md)
 * [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
 
 ## See also

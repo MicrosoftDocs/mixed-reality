@@ -10,7 +10,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 4. Placing dynamic content and using solvers
 
-Holograms come to life in the HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK’s available placement tools, known as solvers for the way they solve complex spatial placement scenarios. In the MRTK, solvers are a system of scripts and behaviors that are used to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive. 
+Holograms come to life in the HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK’s available placement tools (known as solvers) to solve complex spatial placement scenarios. In the MRTK, solvers are a system of scripts and behaviors that are used to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive. 
 
 ## Objectives
 
@@ -34,30 +34,30 @@ The goal of this chapter is to enhance the button collection that was previously
 
 ![Lesson3 Chapter2 Step1im](images/Lesson3_chapter2_step1im.PNG)
 
-2. In the Inspector panel, click the Add Component button and search for orbital. The orbital component should appear. Select it to add the orbital component to the Button Collection game object.
+2. In the Inspector panel, click the Add Component button and search for orbital. The Orbital component should appear. Select it to add the Orbital component to the Button Collection game object.
 
 ![Lesson3 Chapter2 Step2im](images/Lesson3_Chapter2_step2im.PNG)
 
->Note: When you add the component you will notice that the system adds the orbital script and the solver handler script in the inspector tab, which is a required component. 
+>Note: When you add the Orbital component you will notice that the system also adds the SolverHandler component, which is a required component. 
 
-3. In order to configure the button collection to follow the user, we need to implement the following adjustments (refer to the image below):
+3. In order to configure the Button Collection to follow the user, we need to implement the following adjustments (refer to the image below):
 - In the Orbital script, set the Orientation Type drop-down list to Yaw Only. This makes it so that only one axis of the object rotates as it follows the user.
-- Set the local offset to 0 on all axes. Set the World Offset to x = 0, y = -0.1 and z = 0.6. This locks movement of the object such that when the user changes height, the object will remain at a fixed height in the physical environment, while still allowing it to follow the user as the user moves about the environment. These values may be adjusted to achieve a wide range of behaviors.
-- For a follow behavior whereby the buttons only follow the user’s view after the user turns his or her head sufficiently far, you could select the Use Angle Stepping for world offset checkbox (Note: This title may be truncated on some screens, as it is in the image below.) For example, to have the object follow the user only every 90 degrees, set the number of steps equal to 4 (marked by a green arrow in the example to the left). 
+- Set the local offset to 0 on all axes. Set the World Offset to x = 0, y = -0.1, and z = 0.6. This locks movement of the object such that when the user changes height, the object will remain at a fixed height in the physical environment, while still allowing it to follow the user as the user moves about the environment. These values may be adjusted to achieve a wide range of behaviors.
+- For a follow behavior whereby the buttons only follow the user’s view after the user turns his or her head sufficiently far, you could select the Use Angle Stepping For World Offset checkbox (Note: This title may be truncated on some screens, as it is in the image below.) For example, to have the object follow the user only every 90 degrees, set the number of steps equal to 4 (marked by a green arrow in the example below). 
 
 ![Lesson3 Chapter2 Step3im](images/Lesson3_chapter2_step3im.PNG)
 
 ### Enabling objects to follow tracked hands
 
-In this section, we will configure the cube game object previously created to follow the user’s tracked hands using the RadialView solver.
+In this section, we will configure the Cube game object previously created to follow the user’s tracked hands using the RadialView solver.
 
-1. Select the cube object in the BaseScene hierarchy. Click Add Component in the Inspector panel. 
+1. Select the Cube object in the BaseScene hierarchy. Click Add Component in the Inspector panel. 
 
 ![Lesson3 Chapter3 Step1im](images/Lesson3_Chapter3_step1im.PNG)
 
-2. Type in RadialView in the search box and select the RadialView component to add it to the cube. The solver handler component will also be automatically added to the cube.
+2. Type in RadialView in the search box and select the RadialView component to add it to the cube. The SolverHandler component will also be automatically added to the cube.
 
-3. Change the radial view to not follow the head but follow the left hand. Select the dropdown menu next to the Tracked Object to Reference option. Then select Hand Joint Left from the menu.
+3. To change the RadialView to follow the left hand instead of the head, select the dropdown menu next to the Tracked Object to Reference option, then select Hand Joint Left from the menu.
 
 ![Lesson3 Chapter3 Step3im](images/Lesson3_chapter3_step3im.PNG)
 
@@ -65,7 +65,7 @@ In this section, we will configure the cube game object previously created to fo
 
 ![Lesson3 Chapter3 Step4im](images/Lesson3_chapter3_step4im.PNG)
 
-5. Set the maximum and minimum distances to 0 so that the cube will not have any distance between it and the user’s wrist. Once set, the cube will be perfectly aligned with the wrist. You might also adjust the Reference Direction field to adjust the behavior of how the cube is oriented, such as if you want to allow the object to rotate with the user's wrist by setting the reference direction to Orient with Tracked Object.
+5. Set the maximum and minimum distances to 0 so that the cube will not have any distance between it and the user’s wrist. Once set, the cube will be perfectly aligned with the wrist. You might also adjust the Reference Direction field to adjust the behavior of how the cube is oriented, such as if you want to allow the object to rotate with the user's wrist by setting the Reference Direction to Orient with Tracked Object.
 
 ![Lesson3 Chapter3 Step5im](images/Lesson3_chapter3_step5im.PNG)
 

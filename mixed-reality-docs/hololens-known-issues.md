@@ -17,15 +17,15 @@ This is the current list of known issues for HoloLens affecting developers. Chec
 ## Unable to connect and deploy to HoloLens through Visual Studio
 
 >[!NOTE]
->Last Update: 7/8 @ 7:25PM - The team has identified the root cause and is currently working on fix. Workaround available below. 
+>Last Update: 8/8 @ 5:11PM - Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
-We were able to identify the root cause of this issue. Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then subsequently used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. 
+Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
-The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Please ensure that target device has developer mode enabled. Could not obtain a developer license on <ip> due to error 80004005.
+Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then subsequently used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Please ensure that target device has developer mode enabled. Could not obtain a developer license on <ip> due to error 80004005.
  
 **Workaround**: 
 
-Our team is currently working on a fix. In the meantime, you can use the following steps to work around the issue and help unblock deployment and debugging:  
+While this issue is fixed in Visual Studio 2019 16.2, developers who choose to stay in previous versions of Visual Studio can use the following steps to work around the issue and help unblock deployment and debugging:  
 1. Open Visual Studio
 2. File -> New -> Project
 3. Visual C# -> Windows Desktop -> Console App (.NET Framework)
@@ -71,7 +71,6 @@ Our team is currently working on a fix. In the meantime, you can use the followi
  
 15. Once the tool has exited without any messages (this should only take a few seconds), you will now be able to deploy and debug from Visual Studio 2017 or newer.  Continued use of the tool is not necessary.
 
-We will provide further updates as they become available.
 
 ## Issues launching the Microsoft Store and apps on HoloLens
 
@@ -124,6 +123,9 @@ We appreciate your patience as we have gone through the process to get this issu
 During OOBE & Settings, there is a credential timeout of 2 mins. The username/password needs to be entered within 2 mins otherwise the username field will be automatically cleared.
 
 We recommend using a Bluetooth keyboard for entering long passwords.
+
+>[!NOTE]
+> If the wrong network is selected during OOBE the device will need to be fully reset. Instructions can be found [here.](https://docs.microsoft.com/en-us/windows/mixed-reality/reset-or-recover-your-hololens#perform-a-full-device-recovery) 
 
 ## Device Update
 * 30 seconds after a new update, the shell may disappear one time. Please perform the **bloom** gesture to resume your session.

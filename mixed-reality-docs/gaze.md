@@ -60,7 +60,7 @@ With immersive headsets, you can target using either head gaze or pointing-capab
 </table>
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> More guidance specific to HoloLens 2 [coming soon](news.md).
 
 
 ## Uses of gaze

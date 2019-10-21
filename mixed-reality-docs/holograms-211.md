@@ -94,7 +94,7 @@ If deploying to HoloLens:
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
-4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens).
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device---hololens-1st-gen).
 5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
 
 If deploying to an immersive headset:
@@ -115,6 +115,9 @@ If deploying to an immersive headset:
 
 * Subscribe to hand tracking events.
 * Use cursor feedback to show users when a hand is being tracked.
+
+>[!NOTE]
+>On HoloLens 2 , hands detected fires whenever hands are visible (not just when a finger is pointing up).
 
 ### Instructions
 

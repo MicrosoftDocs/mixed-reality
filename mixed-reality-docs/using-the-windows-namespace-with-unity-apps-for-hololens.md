@@ -12,9 +12,23 @@ keywords: Unity, WinRT, windows mixed reality, API, walkthrough
 
 This page describes how to make use of WinRT APIs in your Unity project for HoloLens.
 
+## Mixed Reality APIs
+
+A Mixed Reality focused subset of the Windows SDK has been made available in a .NET Standard 2.0 compatible projection, which you can use in your project without preprocessor directives. This includes most APIs in the Windows.Perception and Windows.UI.Input.Spatial namespaces, and may expand to include additional APIs in the future. The projected APIs can be used while running in the Editor, which enables the use of [Play Mode](https://docs.microsoft.com/en-us/windows/mixed-reality/unity-play-mode). To use this projection, make the following modifications to your project:
+
+1) Add a reference to the [Microsoft.Windows.MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) NuGet package using [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity).
+2) Prefix references to the `Windows` namespace with `Microsoft.`:
+```cs
+using namespace Microsoft.Windows.Perception.Spatial;
+```
+3) Replace native pointer casts with `FromNativePtr`:
+```cs
+var worldOrigin = SpatialCoordinateSystem.FromNativePtr(unityWorldOriginPtr);
+```
+
 ## Conditionally include WinRT API calls
 
-WinRT APIs can be leveraged for Unity projects built for the Universal Windows Platform and Xbox One platform; any code that you write in Unity scripts that target WinRT APIs must be conditionally included for only those builds. 
+Alternatively, WinRT APIs can be leveraged for Unity projects built for the Universal Windows Platform and Xbox One platform by using preprocessor directives; any code that you write in Unity scripts that target WinRT APIs must be conditionally included for only those builds. 
 
 This can be done via two steps in Unity:
 1) API compatibility level must be set to **.NET 4.6** or **.NET Standard 2.0** in the player settings
@@ -43,7 +57,7 @@ public class WinRTAPI : MonoBehaviour {
 
 ## Edit your scripts in a Unity C# project
 
-When you double-click a script in the Unity editor, it will by default launch your script in an editor project. The WinRT APIs will appear to be unknown because the Visual Studio project does not reference the Windows Runtime. Further, the **ENALBE_WINMD_SUPPORT** directive will be undefined and any *#if* wrapped code will be ignored until you build your project into a UWP Visual Studio solution.
+When you double-click a script in the Unity editor, it will by default launch your script in an editor project. The WinRT APIs will appear to be unknown because the Visual Studio project does not reference the Windows Runtime. Further, the **ENABLE_WINMD_SUPPORT** directive will be undefined and any *#if* wrapped code will be ignored until you build your project into a UWP Visual Studio solution.
 
 ## See also
 * [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)

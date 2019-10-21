@@ -3,7 +3,7 @@ title: Using the HoloLens Emulator
 description: The HoloLens Emulator allows you to test mixed reality apps on your PC without a physical HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 04/25/2019
+ms.date: 09/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
@@ -13,16 +13,16 @@ keywords: HoloLens, emulator
 
 # Using the HoloLens Emulator
 
-The HoloLens Emulator lets you test holographic applications on your PC without a physical HoloLens. It also includes the HoloLens development toolset. The emulator uses a Hyper-V virtual machine. The human and environmental inputs that are usually read by Hololens sensors are simulated from your keyboard, mouse, or Xbox controller. Applications don't need to be modified to run on the emulator; applications don't know that they aren't running on a real HoloLens.
+The HoloLens Emulator lets you test holographic applications on your PC without a physical HoloLens. It also includes the HoloLens development toolset. The emulator uses a Hyper-V virtual machine. The human and environmental inputs that are usually read by HoloLens sensors are simulated from your keyboard, mouse, or Xbox controller. Applications don't need to be modified to run on the emulator; applications don't know that they aren't running on a real HoloLens.
 
 If you're looking to develop Windows Mixed Reality immersive (VR) headset applications or games for desktop PCs, check out the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md), which lets you simulate desktop headsets.
 
 
 ## Installing the HoloLens Emulator
-Download the HoloLens Emulator and holographic project templates.
+Download the HoloLens Emulator.
 
 Versions: 
-* [HoloLens 2 Emulator and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2098508).
+* [HoloLens 2 Emulator (October 2019 Update)](https://go.microsoft.com/fwlink/?linkid=2106649).
 * [HoloLens Emulator (1st Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
@@ -54,7 +54,7 @@ If your system meets the requirements listed above, **ensure that the "Hyper-V" 
 1. Load your application solution in Visual Studio.
     >[!NOTE]
     >When using Unity, build your project from Unity, and then load the built solution into Visual Studio as usual.
-2. For HoloLens Emulator (1st Gen), ensure that Platform is set to **x86**. For the HoloLens 2 Emulator, ensure Platform is set to **x86** or **x64**.
+2. For HoloLens Emulator (1st gen), ensure that Platform is set to **x86**. For the HoloLens 2 Emulator, ensure Platform is set to **x86** or **x64**.
 3. Select the desired **HoloLens Emulator** version as the target device for debugging.
 4. Go to **Debug > Start Debugging** or press **F5** to launch the emulator and deploy your application for debugging.
 
@@ -62,9 +62,9 @@ The emulator may take a minute or more to boot when you first start it. We recom
 
 ## Basic emulator input
 
-Controlling the emulator is very similar to many common 3D video games. In nput options are available for using the keyboard, mouse, or Xbox controller. You control the emulator by directing the actions of a simulated user by wearing a HoloLens. Your actions move the simulated user around the environment. Applications running in the emulator respond like they would on a real device.
+Controlling the emulator is very similar to many common 3D video games. Input options are available for using the keyboard, mouse, or Xbox controller. You control the emulator by directing the actions of a simulated user by wearing a HoloLens. Your actions move the simulated user around the environment. Applications running in the emulator respond like they would on a real device.
 
-The cursor on HoloLens (1st Gen) follows head movement and rotation. In the HoloLens 2 Emulator, the cursor follows hand movement and orientation.
+The cursor on HoloLens (1st gen) follows head movement and rotation. In the HoloLens 2 Emulator, the cursor follows hand movement and orientation.
 
 * **Walk forward, back, left, and right** - Use the W,A,S, and D keys on your keyboard, or the left stick on an Xbox controller.
 * **Look up, down, left, and right** - Click and drag the mouse, use the arrow keys on your keyboard, or the right stick on an Xbox controller.
@@ -84,16 +84,16 @@ The cursor on HoloLens (1st Gen) follows head movement and rotation. In the Holo
 To the right of the main window, find the emulator toolbar. The toolbar contains the following buttons:
 * ![Close icon](images/emulator-close.png) **Close**: Closes the emulator.
 * ![Minimize icon](images/emulator-minimize.png) **Minimize**: Minimizes the emulator window.
-* ![Simulation_icon](images/emulator-simulation-panel.png) **Simulation Control Panel**: Show or hide the [Simulation Control panel](#simulation-control-panel) for configuring and controlling [input to the emulator](#basic-emulator-input).
-* ![Fit to screen icon](images/emulator-fit.png) **Fit to Screen**: Fits the emulator to screen.
+* ![Simulation_icon](images/emulator-simulation-panel.png) **Simulation control panel**: Show or hide the [Simulation control panel](#simulation-control-panel) for configuring and controlling [input to the emulator](#basic-emulator-input).
+* ![Fit to screen icon](images/emulator-fit.png) **Fit to screen**: Fits the emulator to screen.
 * ![Zoom icon](images/emulator-zoom.png) **Zoom**: Make the emulator larger and smaller.
 * ![Help icon](images/emulator-help.png) **Help**: Open emulator help.
 * ![Open device portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.
-* ![Tools icon](images/emulator-tools.png) **Tools**: Open the **Additional Tools** pane.
+* ![Tools icon](images/emulator-tools.png) **Tools**: Open the **Additional tools** pane.
 
-### Simulation Control Panel
+### Simulation control panel
 
-The Simulation Control Panel lets you view the current position and orientation of the simulated human and input devices. It also allows you to configure both simulated input, such as showing or hiding one or both hands, and devices used for controlling simulated input, such as your PC's keyboard, mouse and gamepad.
+The Simulation control panel lets you view the current position and orientation of the simulated human and input devices. It also allows you to configure both simulated input, such as showing or hiding one or both hands, and devices used for controlling simulated input, such as your PC's keyboard, mouse and gamepad.
 
 ![Simulation control panel](images/emulator-simulation-control-panel.png)
 
@@ -110,20 +110,56 @@ The Simulation Control Panel lets you view the current position and orientation 
 * To undock the simulation panel from the emulator window, click the button at the bottom of the panel or press F9 on your keyboard.  Closing the window or pressing F9 again returns the window to the emulator.
 * The simulation control panel can be launched as a separate application, allowing you to connect to and control the HoloLens 2 Emulator, a HoloLens 2 device, or Windows Mixed Reality simulation by running PerceptionSimulationInput.exe from %ProgramFiles(x86)%\Windows Kits\10\Microsoft XDE\10.0.18362.0\.
 
-### Account Tab
+### Account tab
 
 The Account tab lets you configure the emulator to sign-in with a Microsoft Account. This is useful for testing APIs that require the user to be signed in with an account. Toggling this option requires that you completely close and restart the HoloLens Emulator for the setting to take effect. If this option is enabled, subsequent launches of the emulator will ask you to sign-in, just like a user would the first time HoloLens is started. To enter your credentials using your PC's keyboard, first turn off Use keyboard for simulation in the Simulation Control Panel or press F4 on your keyboard to toggle the keyboard setting on or off.
 
-### Optional Settings Tab
+### Optional settings tab
 
-The Optional Settings tab displays a control to enable or disable hardware accelerated graphics. Hardware accelerated graphics are used by default if supported by your PC's graphics adapter drive. If your graphics adapter's driver does not support GPU-PV, this option will not be visible.
+The Optional settings tab displays a control to enable or disable hardware accelerated graphics. Hardware accelerated graphics are used by default if supported by your PC's graphics adapter drive. If your graphics adapter's driver does not support GPU-PV, this option will not be visible.
 
-### Diagnostics Tab
+### Diagnostics tab
 
 The Diagnostics tab shows the emulator's IP address in the form of a link to Windows Device Portal along with the status of the virtual GPU.
 
+### Network tab
 
-## Anatomy of the HoloLens (1st Gen) emulator
+The Network tab shows the network adapter details for the emulator as well as network adapter details for the host machine.  Note that for the HoloLens 2 Emulator, this tab will only appear when running the emulator on the Windows 10 May 2019 Update or newer.
+
+### NAT Configuration tab
+
+This tab will only appear when running the emulator on the Windows 10 May 2019 Update or newer.
+
+The emulator uses your PC's network connection and sits behind a NAT.  This tab allows you to map ports from your host PC to the emulator, which enables remote devices to connect to applications and services running in the emulator.
+
+For example, if you want to access Device Portal on the emulator from a remote PC:
+
+1. Add an entry for internal port 80 (the port on which Device Portal is listening) by double-clicking on a free row in the table.  For other applications, enter the port number on which that application is listening.
+2. Choose any available external port.  In this example, we'll use port 8080 as the external port.
+3. Select the protocol.  The default is TCP.  Since Device Portal uses TCP, we'll leave the default.
+4. Click "Apply Changes" to enable the mapping.  The 'Status' will change from 'Pending' to 'Active'.
+5. On the remote PC open a browser and navigate to (IP-of-the-PC-running-the-emulator):8080.  The Device Portal interface will appear.  Note that the IP address you use on a remote PC must be the IP address of the PC running the emulator, not of the emulator itself.  You can retrieve the IP through various means such as the Settings app on the PC in the 'Network & Internet' category, 'ipconfig' from a Command Prompt and from the Network tab in the emulator Tools dialog by looking for the Desktop Adapter entry.
+
+Also note that if you add a port mapping for Device Portal, you can control the emulator remotely using the Perception Simulation Control tool included in the emulator installation or with the Perception Simulation APIs by connecting to the host PC's IP address and Device Portal external port, such as 8080 in the example above.  When using Perception Simulation Control to connect to and control the emulator remotely, only specify the PC's IP address and the configured port.  Do not include 'http://'.
+
+There are no port mappings by default.  Any mappings you configure are persistent across launches of the HoloLens 2 Emulator and will be enabled automatically when the emulator has booted fully.
+
+Use the 'Export' button to save your mappings to a file.  You can then share this file with other team members who can use the 'Import' button to automatically configure the same mappings.
+
+![HoloLens Emulator 'NAT Configuration' tab](images/emulator-natconfig-500px.png)
+
+### Updates tab
+
+This tab will only appear when running the emulator on the Windows 10 May 2019 Update or newer.
+
+On startup, the emulator will check for new versions.  If a new version is available, the emulator will display a prompt showing the version you have along with the available version and asking if you want to update.  If you choose 'Yes', the installer for the new version is downloaded.
+
+The Updates tab allows you control whether or not the emulator checks for new versions by toggling the "Automatically check for updates" check box on this tab.  It also allows you to see and download other available emulator versions, starting with the September 2019 Update.  For versions other than the one currently running, a download link is provided.  Clicking this link will download the installer for that version.
+
+![HoloLens Emulator 'Updates' tab](images/emulator-updates-500px.png)
+
+
+## Anatomy of the HoloLens (1st gen) emulator
 
 ### Main window
 
@@ -136,19 +172,19 @@ When the emulator launches, you'll see a window which displays the HoloLens OS.
 To the right of the main window, you'll find the emulator toolbar. The toolbar contains the following buttons:
 * ![Close icon](images/emulator-close.png) **Close**: Closes the emulator.
 * ![Minimize icon](images/emulator-minimize.png) **Minimize**: Minimizes the emulator window.
-* ![Human input icon](images/emulator-control.png) **Human Input**: Mouse and keyboard are used to simulate human [input to the emulator](#basic-emulator-input).
-* ![Keyboard and mouse input icon](images/emulator-input.png) **Keyboard and Mouse Input**: Keyboard and mouse input are passed directly to the HoloLens OS as keyboard and mouse events as if you connected a Bluetooth keyboard and mouse.
-* ![Fit to screen icon](images/emulator-fit.png) **Fit to Screen**: Fits the emulator to screen.
+* ![Human input icon](images/emulator-control.png) **Human input**: Mouse and keyboard are used to simulate human [input to the emulator](#basic-emulator-input).
+* ![Keyboard and mouse input icon](images/emulator-input.png) **Keyboard and mouse input**: Keyboard and mouse input are passed directly to the HoloLens OS as keyboard and mouse events as if you connected a Bluetooth keyboard and mouse.
+* ![Fit to screen icon](images/emulator-fit.png) **Fit to screen**: Fits the emulator to screen.
 * ![Zoom icon](images/emulator-zoom.png) **Zoom**: Makes the emulator larger and smaller.
 * ![Help icon](images/emulator-help.png) **Help**: Opens emulator help.
 * ![Open device portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.
-* ![Tools icon](images/emulator-tools.png) **Tools**: Open the **Additional Tools** pane.
+* ![Tools icon](images/emulator-tools.png) **Tools**: Open the **Additional tools** pane.
 
 ### Simulation tab
 
-The default tab within the **Additional Tools** pane is the **Simulation** tab.
+The default tab within the **Additional tools** pane is the **Simulation** tab.
 
-![HoloLens Emulator 'Additional Tools' pane](images/emulator-simulation-500px.png)
+![HoloLens Emulator 'Additional tools' pane](images/emulator-simulation-500px.png)
 
 The Simulation tab shows the current state of the simulated sensors used to drive the HoloLens OS within the emulator. Hovering over any value in the Simulation tab provides a tooltip describing how to control that value.
 
@@ -160,11 +196,11 @@ The emulator simulates world input in the form of the spatial mapping mesh from 
 
 See [simulated rooms](#simulated-rooms) for more information.
 
-### Account Tab
+### Account tab
 
 The Account tab allows you to configure the emulator to sign-in with a Microsoft Account. This is useful for testing API's that require the user to be signed-in with an account. After checking the box on this page, subsequent launches of the emulator will ask you to sign-in, just like a user would the first time the HoloLens is started.
 
-## Simulated Rooms
+## Simulated rooms
 
 Simulated rooms are useful for testing your application in multiple environments. Several rooms are shipped with the emulator. Once you install the emulation, you will find them in %ProgramFiles(x86)%\Windows Kits\10\Microsoft XDE\\(version)\Plugins\Rooms. All of these rooms were captured in real environments using a HoloLens:
 * **DefaultRoom.xef** - A small living room with a TV, coffee table, and two sofas. Loaded by default when you start the emulator.
@@ -173,7 +209,7 @@ Simulated rooms are useful for testing your application in multiple environments
 * **GreatRoom.xef** - A large open space great room with living room, dining table, and kitchen.
 * **LivingRoom.xef** - A living room with a fireplace, sofa, armchairs, and a coffee table with a vase.
 
-You can also record your own rooms to use in the emulator using the Simulation page of the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens (1st Gen).
+You can also record your own rooms to use in the emulator using the Simulation page of the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens (1st gen).
 
 In the emulator, you will only see holograms that you render. But you will not see the simulated room behind the holograms. This is in contrast to the actual HoloLens where you see both blended together. If you want to see the simulated room in the HoloLens Emulator, you will need to update your application to render the spatial mapping mesh in the scene.
 

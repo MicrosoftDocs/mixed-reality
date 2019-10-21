@@ -10,7 +10,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 3. Adding the Azure Cognitive Services speech translation component
 
-In this tutorial, we learn aabout the Azure Cognitive Services Speech Translation component in our project as well as translate into three different languages. 
+In this tutorial, we learn about the Azure Cognitive Services Speech Translation component in our project as well as translate into three different languages. 
 
 ## Instructions
 
@@ -38,7 +38,7 @@ Below is an example of what your scene should look like:
 
 ## Congratulations
 
-Now  your project can translate the words you speak into several different languages. Feel free to play around with the languages, and test the accuracy of the translation. 
+Now your project can translate the words you speak into several different languages. Feel free to play around with the languages, and test the accuracy of the translation. 
 
-[Next tutorial: 4.	Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
+[Next tutorial: 4. Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
 
