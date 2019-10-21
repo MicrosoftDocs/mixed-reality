@@ -33,7 +33,7 @@ As promised, we are excited to share more mixed reality goodness with you! We’
 <td>Monthly open source developer modules (Tutorials/Sample apps)</td><td>June 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1>MR learning base module</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1>Azure Spatial Anchors tutorials</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-speechsdk-ch1>Azure Speech Services tutorials</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrlearning-sharing(photon)-ch1>Multi-user capabilities tutorials</a></td>
 </tr>
 <tr>
-<td>MRTK for HoloLens 2</td><td>October 2019</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>MRTK docs</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK release 2.1.0</a><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-getting-started>Getting started with MRTK v2</a></td>
+<td>MRTK for HoloLens 2</td><td>October 2019</td><td> <ul><li><a href=https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html>MRTK docs</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK release 2.1.0</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-getting-started>Getting started with MRTK v2</a></td>
 </tr>
 <tr>
 <td>Multi-user app utilities</td><td>October 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>SpectatorView for demos</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>WebRTC optimized for HoloLens</a>></td>
@@ -42,7 +42,7 @@ As promised, we are excited to share more mixed reality goodness with you! We’
 <td>Design and development guidance for HoloLens 2</td><td>October 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/>Mixed reality overview</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/design>Designing and prototyping</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/development>Developer tools and architecture</a></td>
 </tr>
 <tr>
-  <td>New information on Unreal</td><td>October 2019</td><td> <ul><li><a href=https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-development-overview>Unreal development overview</a></td>
+  <td>New information on Unreal</td><td>October 2019</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview>Unreal development overview</a></td>
 </tr>
 <tr>
   <td>Microsoft Fluent design</td><td>October 2019</td><td> <ul><li><a href=https://www.microsoft.com/design/fluent/>Mixed reality design page</a></td>
