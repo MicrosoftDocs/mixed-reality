@@ -21,7 +21,7 @@ Holographic Remoting sample apps have Spectre mitigation (/Qspectre) enabled in 
 
 If you get a fatal linker error which states that 'vccorlib.lib' cannot be opened, make sure that your Visual Studio Workload includes the Spectre mitigated libraries. See https://aka.ms/Ofhn4c for more information.
 
-# Limitations
+## Limitations
 
 The following APIs are currently **not** supported when using Holographic Remoting for HoloLens 2 and will raises an ```ERROR_NOT_SUPPORTED``` error unless otherwise stated:
 
