@@ -15,7 +15,7 @@ The philosophy of simple, instinctual interactions is interwoven throughout the 
 
 First, we've made sure our sensors and input technologies (which includes hand and eye tracking along with natural language input) combine into seamless, multimodal interaction models.  Based on our research, designing and developing within a multimodal framework (and not based on individual inputs) is the key to creating instinctual experiences.
 
-Second, we recognize that many developers target multiple HoloLens devices, such as HoloLens 2 and HoloLens (1st gen) or HoloLens and VR.  So we've designed our interaction models to work across devices, even if the input technology varies on each device.  For example, far interaction on a Windows Immersive headset with a 6DoF controller and far interaction on a HoloLens 2 both use  identical affordances and patterns, making it easy for cross-device application development and providing a natural feel to user interactions. 
+Second, we recognize that many developers target multiple HoloLens devices, such as HoloLens 2 and HoloLens (1st gen) or HoloLens and VR.  So we've designed our interaction models to work across devices, even if the input technology varies on each device.  For example, far interaction on a Windows Immersive headset with a 6DoF controller and far interaction on a HoloLens 2 both use identical affordances and patterns, making it easy for cross-device application development and providing a natural feel to user interactions. 
 
 While we recognize that there are thousands of effective, engaging, and magical interactions possible in mixed reality (MR), we've found that intentionally employing a single interaction model end-to-end in an application is the best way to ensure users are successful and have a great experience. To that end, we've included three things in this interaction guidance:
 * Specific guidance around the three primary interaction models and the components and patterns required for each.
@@ -78,7 +78,7 @@ The sections below walk through the steps for selecting and implementing one of 
 ## Choose an interaction model for your customer
 
 
-Typically developers and creators have thought through the types of interactions that their customers can have. To encourage a customer-focused approach to design, we recommend the following guidance for selecting the interaction model that's optimized for your customer.
+Typically, developers and creators have thought through the types of interactions that their customers can have. To encourage a customer-focused approach to design, we recommend the following guidance for selecting the interaction model that's optimized for your customer.
 
 ### Why follow this guidance?
 
