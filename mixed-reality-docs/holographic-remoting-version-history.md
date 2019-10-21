@@ -3,7 +3,7 @@ title: Holographic Remoting Version History
 description: Version History for Holographic Remoting on HoloLens 2.
 author: NPohl-MSFT
 ms.author: nopohl
-ms.date: 09/27/2019
+ms.date: 10/21/2019
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
