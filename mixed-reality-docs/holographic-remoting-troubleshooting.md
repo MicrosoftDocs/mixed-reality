@@ -3,7 +3,7 @@ title: Holographic Remoting troubleshooting and limitations
 description: Troubleshooting steps for Holographic Remoting on HoloLens 2.
 author: FlorianBagarMicrosoft
 ms.author: flbagar
-ms.date: 08/01/2019
+ms.date: 10/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, troubleshoot, help
 ---
@@ -21,7 +21,7 @@ Holographic Remoting sample apps have Spectre mitigation (/Qspectre) enabled in 
 
 If you get a fatal linker error which states that 'vccorlib.lib' cannot be opened, make sure that your Visual Studio Workload includes the Spectre mitigated libraries. See https://aka.ms/Ofhn4c for more information.
 
-# Limitations
+## Limitations
 
 The following APIs are currently **not** supported when using Holographic Remoting for HoloLens 2 and will raises an ```ERROR_NOT_SUPPORTED``` error unless otherwise stated:
 

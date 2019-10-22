@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Start designing and prototyping
-description: I’m ready to create something. Learn the basic concepts you need to begin designing and prototyping.
+description: If you're ready to create something, learn the basic concepts you need to begin designing and prototyping.
 author: grbury 
 ms.author: grbury
 ms.date: 08/24/2019
@@ -41,7 +41,7 @@ One of the advantages of developing apps for mixed reality is that there is a sp
 <br>
 
 ### [Keeping holograms in place - (Coordinate systems)](coordinate-systems.md)
-At their core, mixed reality apps place holograms in your world that look and sound like real objects. This involves precisely positioning those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created.
+At their core, mixed reality apps place holograms in your world to look and sound like real objects. This involves precisely positioning those holograms at places in the world that are meaningful to the user, whether it's their physical room or a virtual realm you've created.
 
 <br>
 

@@ -163,13 +163,12 @@
 #### [Voice input in Unity](voice-input-in-unity.md)
 #### [Spatial mapping in Unity](spatial-mapping-in-unity.md)
 #### [Spatial sound in Unity](spatial-sound-in-unity.md)
-### Other key features
+### Platform capabilities and APIs
 #### [Shared experiences in Unity](shared-experiences-in-unity.md)
 #### [Locatable camera in Unity](locatable-camera-in-unity.md)
 #### [Focus point in Unity](focus-point-in-unity.md)
 #### [Tracking loss in Unity](tracking-loss-in-unity.md)
 #### [Keyboard input in Unity](keyboard-input-in-unity.md)
-### Advanced topics
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
