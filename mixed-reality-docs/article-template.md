@@ -8,7 +8,7 @@ ms.topic: article
 keywords: none 
 ---
 
-# Guidance article title (be as specific as possible, use human terms) 
+# Title (be as specific as possible, use human terms) 
 
 ![Include hero image. 16:9 aspect ration. Description of what the pictures is here.](images/image-hero-template.jpg)
 
@@ -191,7 +191,7 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.
 
 ![Description of what the pictures is here.](images/image-hero-template.jpg)<br>
-*Description of what the pictures is here*
+*Description of what the pictures is here.*
 
 <br>
 
