@@ -61,6 +61,8 @@ Editorial conventions:
 *   Do not write links of the form, "For more information go [here](contributing.md)." Instead, place links [contextually](contributing.md) without directing the reader to go somewhere else.
 *   This documentation is the source of truth. Information must be accurate and current.
 
+<br>
+
 ### 2 columns
 
 :::row:::
