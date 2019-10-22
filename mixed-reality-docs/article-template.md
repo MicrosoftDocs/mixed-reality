@@ -164,7 +164,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-### Subsection 3.2
+### Subsection 3.2 - Bullet list
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism the following:
 
