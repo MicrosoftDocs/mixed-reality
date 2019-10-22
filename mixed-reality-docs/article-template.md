@@ -63,6 +63,8 @@ Editorial conventions:
 
 <br>
 
+---
+
 ### 2 columns
 
 :::row:::
