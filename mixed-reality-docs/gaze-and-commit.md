@@ -180,6 +180,7 @@ As a mixed reality developer, you can do a lot with head or eye gaze:
         Instead subtly highlight visual targets or use a very faint eye cursor to provide confidence about what the user is about to interact with. For more information, please check out our [design guidance for eye-based input](eye-tracking.md) on HoloLens 2.
     :::column-end:::
         :::column:::
+       ![space](images/spacer-20x582.png)<br> 
        ![An example visual cursor to show gaze](images/cursor.jpg)<br>
        *Image: An example visual cursor to show gaze*
     :::column-end:::
