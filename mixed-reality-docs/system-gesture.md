@@ -7,7 +7,8 @@ ms.date: 10/22/2019
 ms.topic: article
 keywords: Mixed Reality, Gestures, interaction, design
 ---
-System gesture is a hand gesture to call out the Start Menu. It is equivalent to pressing the Windows key on the keyboard or the Xbox button on an Xbox controller or the Windows button on the 6 DoF controller of Windows Mixed Reality.
+System gesture is a hand gesture to invoke the Start Menu. It is equivalent to pressing the Windows key on the keyboard or the Xbox button on an Xbox controller or the Windows button on the 6 DoF controller of Windows Mixed Reality. It will be important for developers to understand preserved system gestures for different version of Mixed Reality devices to prevent conflicts.
+
 <table>
     <colgroup>
     <col width="25%" />
