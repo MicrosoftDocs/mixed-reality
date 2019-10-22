@@ -69,12 +69,12 @@ Editorial conventions:
 
 :::row:::
     :::column:::
-        ![Description of what the pictures is here.](images/image-451x451px-2-columns.jpg)<br>
+        ![Description of what the pictures is here.](images/image-458x458px-2-columns.jpg)<br>
         **Image #1 label text**<br>
         Further clarification and description of image - optional, use as needed
     :::column-end:::
     :::column:::
-        ![Description of what the pictures is here.](images/image-451x451px-2-columns.jpg)<br>
+        ![Description of what the pictures is here.](images/image-458x458px-2-columns.jpg)<br>
         **Image #2 label text**<br>
         Further clarification and description of image - optional, use as needed
     :::column-end:::
