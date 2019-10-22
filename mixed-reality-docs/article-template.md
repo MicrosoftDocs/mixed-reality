@@ -110,7 +110,8 @@ Les nabis photorealism action painting color field painting stuckism internation
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
 
 ### Subsection 2.1
-Users use hand rays to point and reveal the bounding box and manipulation affordances. Users can apply the manipulation gesture on the bounding box to move the whole object, on the edge affordances to rotate, and on the corner affordances to scale uniformly. <br>
+
+Neo-geo humanism structuralism post-impressionism die brücke existentialism superflat, neo-dada idealism gründerzeit.<br>
 
 :::row:::
     :::column:::
@@ -190,7 +191,8 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.
 
 ![Description of what the pictures is here.](images/image-hero-template.jpg)<br>
-*Description of what the pictures is here.*
+
+Description of what the pictures is here.
 ---
 
 <br>
