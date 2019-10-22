@@ -3,7 +3,7 @@ title: MR Sharing 240 - Multiple HoloLens devices
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of sharing holograms.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/19
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, sharing, networking, academy, tutorial
 ---

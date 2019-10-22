@@ -3,7 +3,7 @@ title: MR Input 213
 description: Follow this coding tutorial using Unity, Visual Studio and immersive headsets to learn the details of motion controllers.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/19
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, academy, tutorial
 ---

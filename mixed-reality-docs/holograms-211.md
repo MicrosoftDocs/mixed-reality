@@ -3,7 +3,7 @@ title: MR Input 211 - Gesture
 description: Follow this coding walkthrough using Unity, Visual Studio, and HoloLens to learn the details of gesture concepts.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/19
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, gesture
 ---

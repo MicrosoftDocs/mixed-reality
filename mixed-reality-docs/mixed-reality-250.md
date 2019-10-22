@@ -3,7 +3,7 @@ title: MR Sharing 250 - HoloLens and immersive headsets
 description: Follow this coding walkthrough using Unity, Visual Studio, HoloLens, and Windows Mixed Reality headsets to learn the details of sharing holograms between mixed reality devices.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/19
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, sharing, xbox controller, networking, cross-device
 ---
