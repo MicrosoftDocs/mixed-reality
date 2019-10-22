@@ -3,12 +3,10 @@ title: Camera in Unity
 description: How to use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/21/2018
+ms.date: 10/22/19
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holographic rendering, holographic, immersive, focus point, depth buffer, orientation-only, positional, opaque, transparent, clip
 ---
-
-
 
 # Camera in Unity
 
@@ -21,15 +19,16 @@ However, to fully optimize visual quality and [hologram stability](hologram-stab
 >
 >By default, when you create a new scene in Unity, it will contain a Main Camera GameObject in the Hierarchy which includes the Camera component, but does not have the settings below properly applied.
 
-## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2. 
+## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2
 
 Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically.
 
-You can also manually configure the project without MRTK with the guide in the section below. 
+You can also manually configure the project without MRTK with the guide in the section below.
 
 ## Holographic vs. immersive headsets
 
 The default settings on the Unity Camera component are for traditional 3D applications which need a skybox-like background as they don't have a real world.
+
 * When running on an **[immersive headset](immersive-headset-hardware-details.md)**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
 * However, when running on a **holographic headset** like [HoloLens](hololens-hardware-details.md), the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
     1. Select the Main Camera in the Hierarchy panel
@@ -38,19 +37,20 @@ The default settings on the Unity Camera component are for traditional 3D applic
 
 You can use script code to determine at runtime whether the headset is immersive or holographic by checking [HolographicSettings.IsDisplayOpaque](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html).
 
-
 ## Positioning the Camera
 
 It will be easier to lay out your app if you imagine the starting position of the user as (X: 0, Y: 0, Z: 0). Since the Main Camera is tracking movement of the user's head, the starting position of the user can be set by setting the starting position of the Main Camera.
+
 1. Select Main Camera in the Hierarchy panel
 2. In the Inspector panel, find the Transform component and change the Position from (X: 0, Y: 1, Z: -10) to (X: 0, Y: 0, Z: 0)
 
-   ![Camera in the Inspector pane in Unity](images/maincamera-350px.png)<br>
+   ![Camera in the Inspector pane in Unity](images/maincamera-350px.png)  
    *Camera in the Inspector pane in Unity*
 
 ## Clip planes
 
 Rendering content too close to the user can be uncomfortable in mixed reality. You can adjust the [near and far clip planes](hologram-stability.md#hologram-render-distances) on the Camera component.
+
 1. Select the Main Camera in the Hierarchy panel
 2. In the Inspector panel, find the Camera component Clipping Planes and change the Near textbox from 0.3 to .85. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](hologram-stability.md#hologram-render-distances).
 
@@ -76,17 +76,19 @@ If you know that you are building an [orientation-only experience](coordinate-sy
 ## Sharing your depth buffers with Windows
 
 Sharing your app's depth buffer to Windows each frame will give your app one of two boosts in hologram stability, based on the type of headset you're rendering for:
+
 * **Immersive headsets** can perform positional reprojection when a depth buffer is provided, adjusting your holograms for misprediction in both position and orientation.
-* **Holographic headsets** like HoloLens will automatically select a [focus point](focus-point-in-unity.md) when a depth buffer is provided, optimizing hologram stability along the plane that intersects the most content.
+* **Holographic headsets** have a few different methods. HoloLens 1 will automatically select a [focus point](focus-point-in-unity.md) when a depth buffer is provided, optimizing hologram stability along the plane that intersects the most content. HoloLens 2 will stabilize content using [Depth LSR (see Remarks)](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 To set whether your Unity app will provide a depth buffer to Windows:
+
 1. Go to **Edit** > **Project Settings** > **Player** > **Universal Windows Platform tab** > **XR Settings**.
 2. Expand the **Windows Mixed Reality SDK** item.
 3. Check or uncheck the **Enable Depth Buffer Sharing** check box.  This will be checked by default in new projects created since this feature was added to Unity and will be unchecked by default for older projects that were upgraded.
 
 Providing a depth buffer to Windows can improve visual quality so long as Windows can accurately map the normalized per-pixel depth values in your depth buffer back to distances in meters, using the near and far planes you've set in Unity on the main camera.  If your render passes handle depth values in typical ways, you should generally be fine here, though translucent render passes that write to the depth buffer while showing through to existing color pixels can confuse the reprojection.  If you know that your render passes will leave many of your final depth pixels with inaccurate depth values, you are likely to get better visual quality by unchecking "Enable Depth Buffer Sharing".
 
-
 ## See also
+
 * [Hologram stability](hologram-stability.md)
 * [MixedRealityToolkit Main Camera.prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)
