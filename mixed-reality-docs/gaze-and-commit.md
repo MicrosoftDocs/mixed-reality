@@ -176,15 +176,15 @@ As a mixed reality developer, you can do a lot with head or eye gaze:
         For head gaze, most apps should use a [cursor](cursors.md) (or other auditory/visual indication) to give the user confidence in what they're about to interact with. 
         You typically position this cursor in the world where their head gaze ray first intersects an object, which may be a hologram or a real-world surface.<br>
         <br>
-        *Image: An example visual cursor to show gaze*
+        For eye gaze, we generally recommend *not* to show a cursor, as this can quickly become distracting and annoying for the user. 
+        Instead subtly highlight visual targets or use a very faint eye cursor to provide confidence about what the user is about to interact with. For more information, please check out our [design guidance for eye-based input](eye-tracking.md) on HoloLens 2.
     :::column-end:::
         :::column:::
        ![An example visual cursor to show gaze](images/cursor.jpg)<br>
+       *Image: An example visual cursor to show gaze*
     :::column-end:::
 :::row-end:::
 
-For eye gaze, we generally recommend *not* to show a cursor, as this can quickly become distracting and annoying for the user. 
-Instead subtly highlight visual targets or use a very faint eye cursor to provide confidence about what the user is about to interact with. For more information, please check out our [design guidance for eye-based input](eye-tracking.md) on HoloLens 2.
 
 <br>
 
