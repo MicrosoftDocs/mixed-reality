@@ -45,7 +45,7 @@ keywords: none
 
 A section can contain any or all of the following:  
 
-*   Explanation
+*   Explanations
 *   Considerations
 *   Rules of thumb 
 *   Methods of use 
