@@ -24,7 +24,7 @@ keywords: none
     <col width="22%" />
 </colgroup>
 <tr>
-     <td><strong>Input model</strong></td>
+     <td><strong>Feature</strong></td>
      <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
      <td><strong>HoloLens 2</strong></td>
      <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
