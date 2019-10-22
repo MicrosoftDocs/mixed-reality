@@ -3,7 +3,7 @@ title: Managed debugging with Unity IL2CPP
 description: This article covers how to run a managed debugger on your Unity IL2CPP UWP project.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/19
+ms.date: 10/22/2019
 ms.topic: article
 keywords: unity, visual studio, debugging, il2cpp
 ---
