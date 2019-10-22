@@ -61,7 +61,7 @@ Editorial conventions:
 *   Do not write links of the form, "For more information go here." Instead, place links contextually without directing the reader to go somewhere else.
 
 
-### Subsection 1.1
+### Subsection 1.1 - 2 columns
 
 :::row:::
     :::column:::
@@ -81,7 +81,7 @@ Editorial conventions:
 ---
 
 
-### Subsection 1.2
+### Subsection 1.2 - 3 columns
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
 
@@ -109,7 +109,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
 
-### Subsection 2.1
+### Subsection 2.1 - 4 columns
 
 Neo-geo humanism structuralism post-impressionism die brücke existentialism superflat, neo-dada idealism gründerzeit.<br>
 
@@ -148,7 +148,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 :::row:::
     :::column:::
-        ### Subsection 3.1 Text heading left<br>
+        ### Subsection 3.1 - 2 columns, Text left<br>
         Description text left - Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.<br>
         <br>
         *Image: Description of what the image is here.*
@@ -186,7 +186,7 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 |---------|---------|---------|
 | 45cm  | no smaller than 2° | 1.6 x 1.6 cm |
 
-### Subsection 4.2 Go edge to edge to with large images (min width = 940px)
+### Subsection 4.2 Large edge-to-edge image (min width of asset = 940px)
 
 Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.
 
