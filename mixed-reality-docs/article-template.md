@@ -191,9 +191,7 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.
 
 ![Description of what the pictures is here.](images/image-hero-template.jpg)<br>
-
-Description of what the pictures is here.
----
+*Description of what the pictures is here*
 
 <br>
 
