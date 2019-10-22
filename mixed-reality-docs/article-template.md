@@ -1,6 +1,6 @@
 ---
 title: Article template
-description: Template article that can be copied. Shows how to layout images using  rows and columns.
+description: Template article .md file that can be copied. Shows how to layout images using  rows and columns and other conventions.
 author: rwinj
 ms.author: randyw
 ms.date: 10/22/2019
@@ -133,7 +133,7 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 :::row-end:::
 
 
-### Subsection 2.2
+### Subsection name
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art.<br>
 
