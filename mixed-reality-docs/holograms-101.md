@@ -3,7 +3,7 @@ title: MR Basics 101 - Complete project with device
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the basics of Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/19
+ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial
 ---

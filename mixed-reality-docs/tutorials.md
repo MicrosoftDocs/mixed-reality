@@ -4,7 +4,7 @@ title: Tutorials and sample apps
 description: Provides code samples and tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/19
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---

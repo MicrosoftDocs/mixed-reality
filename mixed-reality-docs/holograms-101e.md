@@ -3,7 +3,7 @@ title: MR Basics 101E - Complete project with emulator
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens Emulator to learn the basics of a holographic application.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/19
+ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial, emulator
 ---
