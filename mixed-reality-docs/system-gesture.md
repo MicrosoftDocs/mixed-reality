@@ -47,9 +47,9 @@ In HoloLens, we design the “Bloom” gesture, which is a symbolic gesture mimi
 
 # Wrist button
 In HoloLens 2, we replace the Bloom gesture with a wrist button, which follows our Instinctual Interaction design principles. By showing users the button on the button of wrist will they have the intuition to press it with another hand. No more training is needed.<br>
-![wrist button](images/wrist button.PNG)<br>
+![wrist button](images/wrist-button.PNG)<br>
 
 # Eye gaze and palm up pinch
 For accessibility purpose, we also have a 1 handed solution, which only requires users to eye gaze at the button, then use the same hand to perfomr palm up pinch.<br>
-![eye gaze and palm up pinch](images/gaze and pinch.PNG)<br>
+![eye gaze and palm up pinch](images/eye-gaze-and-pinch.PNG)<br>
 
