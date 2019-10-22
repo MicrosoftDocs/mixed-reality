@@ -148,7 +148,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 :::row:::
     :::column:::
-        ### Subsection 3.1 - 2 columns, Text left<br>
+        ### 2 columns - text left, image right<br>
         Description text left - Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.<br>
         <br>
         *Image: Description of what the image is here.*
