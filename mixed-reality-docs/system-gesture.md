@@ -42,14 +42,14 @@ System gesture is a hand gesture to call out the Start Menu. It is equivalent to
 </table>
 
 # Bloom
-In HoloLens, we design the “Bloom” gesture, which is a symbolic gesture mimicking the flower blossom, for the ease of perform and recall. To do the bloom gesture on HoloLens, hold out your hand , palm up, with your fingertips together. Then open your hand.
+In HoloLens, we design the “Bloom” gesture, which is a symbolic gesture mimicking the flower blossom, for the ease of perform and recall. To do the bloom gesture on HoloLens, hold out your hand , palm up, with your fingertips together. Then open your hand.<br>
 ![bloom](images/bloom.PNG)<br>
 
 # Wrist button
-In HoloLens 2, we replace the Bloom gesture with a wrist button, which follows our Instinctual Interaction design principles. By showing users the button on the button of wrist will they have the intuition to press it with another hand. No more training is needed.
-![wrist button](images/wrist-button.png)<br>
+In HoloLens 2, we replace the Bloom gesture with a wrist button, which follows our Instinctual Interaction design principles. By showing users the button on the button of wrist will they have the intuition to press it with another hand. No more training is needed.<br>
+![wrist button](images/wrist-button.PNG)<br>
 
 # Eye gaze and palm up pinch
-For accessibility purpose, we also have a 1 handed solution, which only requires users to eye gaze at the button, then use the same hand to perfomr palm up pinch.
-![eye gaze and palm up pinch](images/gaze-and-pinch.png)<br>
+For accessibility purpose, we also have a 1 handed solution, which only requires users to eye gaze at the button, then use the same hand to perfomr palm up pinch.<br>
+![eye gaze and palm up pinch](images/gaze-and-pinch.PNG)<br>
 
