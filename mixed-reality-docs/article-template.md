@@ -12,7 +12,7 @@ keywords: none
 
 ![Include hero image. 16:9 aspect ration. Description of what the pictures is here.](images/image-hero-template.jpg)
 
-Introduction - high-level overview of the topic. Modernipsum dolor sit amet idealism neo-minimalism, pop art street art cubo-futurism cobra, realism expressionism academic jugendstil. Romanticism cubism video game art synchromism neoclassicism international gothic baroque, vorticism street art suprematism abstract expressionism. 
+**Introduction - high-level overview of the topic.** Modernipsum dolor sit amet idealism neo-minimalism, pop art street art cubo-futurism cobra, realism expressionism academic jugendstil. Romanticism cubism video game art synchromism neoclassicism international gothic baroque, vorticism street art suprematism abstract expressionism. 
 
 ## Device support
 
