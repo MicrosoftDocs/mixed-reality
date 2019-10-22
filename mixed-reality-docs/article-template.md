@@ -83,7 +83,7 @@ Editorial conventions:
 
 ### 3 columns
 
-Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
+Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism.<br>
 
 :::row:::
     :::column:::
