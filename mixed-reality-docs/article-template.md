@@ -45,12 +45,21 @@ Introduction - high-level overview of the topic. Modernipsum dolor sit amet idea
 
 A section can contain any or all of the following:  
 
-•	Explanation
-•	Considerations
-•	Rules of thumb 
-•	Methods of use 
-•	Benefits
-•	Do’s and don’t’s
+*   Explanation
+*   Considerations
+*   Rules of thumb 
+*   Methods of use 
+*   Benefits
+*   Do’s and don’t’s
+
+Editorial conventions:
+
+*   Use common sense.
+*   Don't try to be funny.
+*   Write using en-us (United States English) spelling and conventions.
+*   **Use sentence casing for titles, section headings and... well everything.** Within sentences, the only words that should be capitalized are proper nouns (just as you learned in grammar school). Brand names (e.g. Microsoft HoloLens) are proper nouns. Feature names (e.g. spatial mapping) are not proper nouns unless they are trademarks.
+*   Do not write links of the form, "For more information go here." Instead, place links contextually without directing the reader to go somewhere else.
+
 
 ### Subsection 1.1
 
@@ -125,7 +134,7 @@ Users use hand rays to point and reveal the bounding box and manipulation afford
 
 ### Subsection 2.2
 
-Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
+Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art.<br>
 
 <br>
 
@@ -133,13 +142,13 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ## Section #3 of the topic
 
-Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
+Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism.<br>
 
 
 :::row:::
     :::column:::
         ### Subsection 3.1 Text heading left<br>
-        Description text left - Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti <br>
+        Description text left - Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.<br>
         <br>
         *Image: Description of what the image is here.*
     :::column-end:::
@@ -177,6 +186,8 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 | 45cm  | no smaller than 2° | 1.6 x 1.6 cm |
 
 ### Subsection 4.2 Go edge to edge to with large images (min width = 940px)
+
+Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.
 
 ![Description of what the pictures is here.](images/image-hero-template.jpg)<br>
 *Description of what the pictures is here.*
