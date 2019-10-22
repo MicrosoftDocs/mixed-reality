@@ -168,7 +168,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ### Bullet list
 
-Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism the following:
+Les nabis photorealism action painting color field painting stuckism international cloisonnism the following:
 
 * **Bullet item 1** - Further clarification and description (optional, use as needed)
 * **Bullet item 2** - Further clarification and description
