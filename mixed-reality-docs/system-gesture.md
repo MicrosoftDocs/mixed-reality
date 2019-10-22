@@ -43,7 +43,7 @@ System gesture is a hand gesture to call out the Start Menu. It is equivalent to
 
 # Bloom
 In HoloLens, we design the “Bloom” gesture, which is a symbolic gesture mimicking the flower blossom, for the ease of perform and recall. To do the bloom gesture on HoloLens, hold out your hand , palm up, with your fingertips together. Then open your hand.
-![bloom](images/bloom.png)<br>
+![bloom](images/bloom.PNG)<br>
 
 # Wrist button
 In HoloLens 2, we replace the Bloom gesture with a wrist button, which follows our Instinctual Interaction design principles. By showing users the button on the button of wrist will they have the intuition to press it with another hand. No more training is needed.
