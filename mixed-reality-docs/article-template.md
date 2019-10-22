@@ -41,7 +41,7 @@ keywords: none
 
 
 
-## Section #1 of the topic
+## Section #1 name
 
 A section can contain any or all of the following:  
 
@@ -105,7 +105,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #2 of the topic
+## Section #2 name
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
 
@@ -141,7 +141,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #3 of the topic
+## Section #3 name
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism.<br>
 
@@ -176,7 +176,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #4 of the topic
+## Section #4 name
 
 ### Table layout
 
@@ -198,6 +198,7 @@ Action painting color field painting new objectivity stuckism modern art structu
 ---
 
 ## See also
+
 * [Related article 1 name](design.md)
 * [Related article 2 name](design.md)
 * [Related article 3 name](design.md)
