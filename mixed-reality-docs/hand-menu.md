@@ -14,6 +14,9 @@ Hand menus allow users to quickly bring up hand-attached UI for frequently used 
 
 Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand menu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup).
 
+<br>
+
+---
 
 ## Behavior best practices
 **A. Keep the number of buttons small:** 
@@ -37,6 +40,9 @@ If the hand menu buttons are placed too close to the home button, it may get acc
 **G. Test, test, test:**
 People have different bodies, with different thresholds for comfort and discomfort, etc. Be sure to test out your design on and get feedback from a variety of people.
 
+<br>
+
+---
 
 ## Hand menu placement best practices
 
@@ -45,65 +51,85 @@ In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The u
 Below are 2 recommended placements based on our explorations:
 
 
-![Ulnar side hand location](images/UlnarSideHandMenu.gif)
-
-**A. Ulnar inside palm:** This position is reliable because the hands do not overlap each other. This is critical for accurate hand detection and tracking.
+:::row:::
+    :::column:::
+        ![Ulnar side hand location](images/UlnarSideHandMenu.gif)<br>
+        **A. Ulnar inside palm:**<br>
+        This position is reliable because the hands do not overlap each other. This is critical for accurate hand detection and tracking.
+    :::column-end:::
+    :::column:::
+        ![Ulnar side hand location](images/UlnarAboveHandMenu.gif)<br>
+        **B. Ulnar above hand:**<br>
+        This location is comfortable for users because they don't need to raise their arm too much to interact with the hand menu. We recommend placing menus **13cm** above the palm and align the buttons inside the ulnar palm.<br>
+        <br>
+        For technical reasons we recommend this location with one required implementation: the developer will need to freeze the menu once the user's opposite hand gets close to interacting with it. This will avoid jitteriness from overlapping hands and also allows for a faster targeting of the buttons.<br>
+        <br>
+        HoloLens 2 cameras identify hands accurately when they are separate from each other. Any overlapping hands can cause hand menus move away from the anchor location.<br>
+    :::column-end:::
+:::row-end:::
 
 <br>
 
-![Ulnar side hand location](images/UlnarAboveHandMenu.gif)
+**[Read more about the optimal button size](interactable-object.md)**
 
-**B. Ulnar above hand:**
-This location is comfortable for users because they don't need to raise their arm too much to interact with the hand menu. We recommend placing menus **13cm** above the palm and align the buttons inside the ulnar palm.
 
-For technical reasons we recommend this location with one required implementation: the developer will need to freeze the menu once the user's opposite hand gets close to interacting with it. This will avoid jitteriness from overlapping hands and also allows for a faster targeting of the buttons.
+<br>
 
-HoloLens 2 cameras identify hands accurately when they are separate from each other. Any overlapping hands can cause hand menus move away from the anchor location.
-
-[Read more about the optimal button size](interactable-object.md)
-
+---
 
 ## Menu positions that are not recommended
 We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
 
-![Above arm](images/AboveArm.gif)
 
-**Above the arm**
+:::row:::
+    :::column:::
+        ![Above arm](images/AboveArm.gif)<br>
+        **Above the arm**<br>
 1. Difficult to maintain good hand tracking
 2. Causes user fatigue due to unnatural position
-
-<br>
-
-![Above fingers](images/AboveFingers.gif)
-
-**Above fingers**
+    :::column-end:::
+    :::column:::
+        ![Above fingers](images/AboveFingers.gif)<br>
+        **Above fingers**<br>
 1. Hand fatigue due to holding hand for long time
 2. Hand tracking issues on index and middle finger
+    :::column-end:::
+:::row-end:::
 
 <br>
 
-![Above center palm](images/handCenter.gif)
-
-**Above-center palm**
+:::row:::
+    :::column:::
+        ![Above center palm](images/handCenter.gif)<br>
+        **Above-center palm**<br>
 1. Hand tracking issues due to overlapping hands
 2. Hand fatigue due to holding hands for long time in order to interact with menus
-
-<br>
-
-![Top Fingertip](images/TopFingerTip.gif)
-
-**Top fingertip**
+    :::column-end:::
+    :::column:::
+        ![Top Fingertip](images/TopFingerTip.gif)
+        **Top fingertip**<br>
 1. Hand tracking issues
 2. Hand fatigue holding hand above normal posture
 3. Issues pressing buttons with other fingers by accident due to limited space between fingers
+    :::column-end:::
+:::row-end:::
 
 <br>
 
-![Back of the Arm](images/BackOfTheArm.gif)
-
-**Back of the arm**
+:::row:::
+    :::column:::
+        ![Back of the Arm](images/BackOfTheArm.gif)<br>
+        **Back of the arm**<br>
 1. Can trigger home button by accident
 2. Not a natural or comfortable position for users
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
 
 
 ## See also
