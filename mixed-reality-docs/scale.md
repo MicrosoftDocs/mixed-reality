@@ -28,7 +28,7 @@ One common method is to utilize the distance of objects as they are presented to
 
 :::row:::
     :::column:::
-        **[Volvo](https://www.youtube.com/watch?v=DilzwF90vec)** used this technique to create a showroom experience for a new car, utilizing the scale of the holographic car in a way that felt realistic and intuitive to the user. The experience begins with a hologram of the car on a physical table, allowing the user to understand the total size and shape of the model. Later in the experience, the car expands to a larger scale (beyond the size of the device's field of view) but, since the user already acquired a frame of reference from the smaller model, they can adequately navigate around features of the car.<br>
+        **[Volvo](https://www.youtube.com/watch?v=DilzwF90vec) used this technique to create a showroom experience** for a new car, utilizing the scale of the holographic car in a way that felt realistic and intuitive to the user. The experience begins with a hologram of the car on a physical table, allowing the user to understand the total size and shape of the model. Later in the experience, the car expands to a larger scale (beyond the size of the device's field of view) but, since the user already acquired a frame of reference from the smaller model, they can adequately navigate around features of the car.<br>
         <br>
         *Image: Volvo Cars experience for HoloLens*
     :::column-end:::
@@ -48,7 +48,7 @@ Another method is to use holograms to modify the user's real space, replacing th
 
 :::row:::
     :::column:::
-        **[Minecraft](https://minecraft.net/)** developed a concept experience using a similar technique. By adding a virtual window to a physical surface in a room, the existing objects in the room are placed in the context of a vastly larger environment, beyond the physical scale limitations of the room.<br>
+        **[Minecraft](https://minecraft.net/) developed a concept experience** using a similar technique. By adding a virtual window to a physical surface in a room, the existing objects in the room are placed in the context of a vastly larger environment, beyond the physical scale limitations of the room.<br>
         <br>
         *Image: Minecraft concept experience for HoloLens*
     :::column-end:::
