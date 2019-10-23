@@ -57,11 +57,11 @@ Scene understanding provides new constructs specifically designed to simplify pl
 :::row:::
     :::column:::
        ![SceneQuads with inference disabled, capturing placement areas for scanned regions.](images/SUQuads.png)<br>
-       *Image #1: SceneQuads with inference disabled, capturing placement areas for scanned regions.*
+       **Image #1** - SceneQuads with inference disabled, capturing placement areas for scanned regions.
     :::column-end:::
         :::column:::
        ![Quads with inference enabled, placement is no longer limited to scanned areas.](images/SUWatertight.png)<br>
-        *Image #2: Quads with inference enabled, placement is no longer limited to scanned areas.*
+        **Image #2** - Quads with inference enabled, placement is no longer limited to scanned areas.
     :::column-end:::
 :::row-end:::
 
