@@ -17,6 +17,9 @@
 ## [Get started with Mixed Reality](index.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Case study gallery](case-studies-overview.md)
+## HoloLens hardware
+### [HoloLens 2 hardware details](https://docs.microsoft.com/hololens/hololens2-hardware)
+### [HoloLens (1st gen) hardware details](https://docs.microsoft.com/hololens/hololens1-hardware)
 ## Immersive headsets
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
