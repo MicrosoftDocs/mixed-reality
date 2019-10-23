@@ -74,15 +74,44 @@ Placing content at 2.0m is also advantageous because the two displays are design
 **Best practices**
  When holograms cannot be placed at 2m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25m and 5m. In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).
 
-## Stabilization plane
+## Reprojection
+HoloLens performs a sophisticated hardware-assisted holographic stabilization technique known as reprojection. This takes into account motion and change of the point of view (CameraPose) as the scene animates and the user moves their head.  Applications need to take specific actions to best use reprojection.
+
+
+There are four main types of reprojection
+* **Depth Reprojection:**  This produces the best results with the least amount of effort from the application.  All parts of the rendered scene are independently stabilized based on their distance from the user.  Some rendering artifacts may be visible where there are sharp changes in depth.  This option is only available on HoloLens 2 and Immersive Headsets.
+* **Planar Reprojection:**  This allows the application precise control over stabilization.  A plane is set by the application and everything on that plane will be the most stable part of the scene.  The further a hologram is away from the plane, the less stable it will be.  This option is available on all Windows MR platforms.
+* **Automatic Planar Reprojection:**  The system sets a stabilization plane using information in the depth buffer.  This option is available on HoloLens generation 1 and HoloLens 2.
+* **None:** If the application does nothing, Planar Reprojection is used with the stabilization plane fixed at 2 meters in the direction of the user's head gaze.  This will usually produce substandard results.
+
+Applications need to take specific actions to enable the different types of reprojection
+* **Depth Reprojection:** The application submits their depth buffer to the system for every rendered frame.  On Unity this is done with the "Enable Depth Buffer Sharing" option in the Player Settings pane.  DirectX apps call CommitDirect3D11DepthBuffer.  The application should not call SetFocusPoint.
+* **Planar Reprojection:** On every frame, applications tell the system the location of a plane to stabilize.  Unity applications call SetFocusPointForFrame and should have "Enable Depth Buffer Sharing" disabled.  DirectX apps call SetFocusPoint and should not call CommitDirect3D11DepthBuffer.
+* **Automatic Planar Reprojection:** To enable this, the application needs to submit their depth buffer to the system as they would for Depth Reprojection.  On HoloLens 2 the application then needs to SetFocusPoint with a point of 0,0 for every frame.  For HoloLens generation 1, the application should not call SetFocusPoint.
+
+### Choosing Stabilization Technique
+
+Stabilization Type |	On Immersive Headsets |	On HoloLens generation 1 |	On HoloLens 2 |	When using Unity
+--- | --- | --- | --- | ---
+Depth Reprojection |	Recommended |	N/A |	Recommended |	HoloLens 2: Applications must use  Unity 2018.4.12 or later or Unity 2019.2.10 or later. Otherwise use Automatic Planar Reprojection.
+Automatic Planar Reprojection |	N/A |	Recommended default |	Recommended if Depth Reprojection is not giving the best results |	HoloLens 2: Applications are recommended to use Unity 2018.4.12 or later or Unity 2019.2.10 or later
+Planar Reprojection |	Not Recommended |	Recommended if Automatic Planar is not giving the best results |	Use if neither of the depth options give desired results	
+
+### Verifying Depth is Set Correctly
+			
+When a reprojection method uses the depth buffer, it is important to verify that the contents of the depth buffer represents the application's rendered scene.  A number of factors can cause problems.  If there is a second camera used to render, say, user interface overlays, it is likely to overwrite all the depth information from the actual view.  Transparent objects often don't set depth.  Some text rendering will not set depth by default.  There will be visible glitches in the rendering when depth does not match the rendered holograms.
+			
+HoloLens 2 has a visualizer to show where depth is and is not being set.  Enable this from Device Portal.  On the "Views -> Hologram Stability" tab, select the "Display depth visualization in headset" checkbox.  Areas that have depth set properly will be blue.  Rendered things that do not have depth set will be red and therefore need fixing.  Note that the visualization of the depth will not show up in Mixed Reality Capture.  It is only visible through the device.
+			
+Some GPU viewing tools will allow visualization of the depth buffer.  Application developers can use these tools to make sure depth is being set properly.  Consult the documentation for the application's tools.
+
+### Using Planar Reprojection
 > [!NOTE]
 > For desktop immersive headsets, setting a stabilization plane is usually counter-productive, as it offers less visual quality than providing your app's depth buffer to the system to enable per-pixel depth-based reprojection. Unless running on a HoloLens, you should generally avoid setting the stabilization plane.
 
-HoloLens performs a sophisticated hardware-assisted holographic stabilization technique. This is largely automatic and has to do with motion and change of the point of view (CameraPose) as the scene animates and the user moves their head. A single plane, called the stabilization plane, is chosen to maximize this stabilization. While all holograms in the scene receive some stabilization, holograms in the stabilization plane receive the maximum hardware stabilization.
-
 ![Stabilization plane for 3D objects](images/stab-plane-500px.jpg)
 
-The device will automatically attempt to choose this plane, but the application can assist in this process by selecting the focus point in the scene. Unity apps running on a HoloLens should choose the best focus point based on your scene and pass this into [SetFocusPoint()](focus-point-in-unity.md). An example of setting the focus point in DirectX is included in the default spinning cube template.
+The device will automatically attempt to choose this plane, but the application should assist in this process by selecting the focus point in the scene. Unity apps running on a HoloLens should choose the best focus point based on your scene and pass this into [SetFocusPoint()](focus-point-in-unity.md). An example of setting the focus point in DirectX is included in the default spinning cube template.
 
 Note that when your Unity app runs on an immersive headset connected to a desktop PC, Unity will submit your depth buffer to Windows to enable per-pixel reprojection, which will usually provide even better image quality without explicit work by the app. If you provide a Focus Point, that will override the per-pixel reprojection, so you should only do so when your app is running on a HoloLens.
 
@@ -153,3 +182,4 @@ As before, rendering at 60 FPS and setting the stabilization plane are the most 
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Color, light and materials](color,-light-and-materials.md)
 * [Instinctual interactions](interaction-fundamentals.md)
+* [MRTK Hologram Stabilization](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)
