@@ -33,8 +33,6 @@ Bounding is the standard interface for object manipulation in Mixed Reality. It 
 
 <br>
 
----
-
 :::row:::
     :::column:::
         ### Rotating an object<br>
@@ -49,8 +47,6 @@ Bounding is the standard interface for object manipulation in Mixed Reality. It 
 :::row-end:::
 
 <br>
-
----
 
 :::row:::
     :::column:::
