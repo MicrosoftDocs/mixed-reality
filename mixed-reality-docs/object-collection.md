@@ -35,9 +35,9 @@ You can use Object collection to lay out imported 3D objects. The example below 
 
 You can also use 2D images with Object collection. The examples below demonstrate how 2D images can be displayed in a grid.
 
-![An example of 2D images with Object collection](images/640px-layout-3dobjects-3.jpg)
+![An example of 2D images with Object collection](images/940px-layout-3dobjects-3.jpg)
 
-![An example of 2D images with Object collection](images/640px-layout-2dimages.jpg)<br>
+![An example of 2D images with Object collection](images/940px-layout-2dimages.jpg)<br>
 *Examples of using object collection with 2D images*
 
 ## See also
