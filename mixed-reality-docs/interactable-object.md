@@ -270,6 +270,10 @@ MixedRealityToolkit's Standard shader provides various options such as **proximi
 * [MRTK Standard Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
 
 
+<br>
+
+---
+
 ## See also
 
 * [Bounding box](app-bar-and-bounding-box.md)
