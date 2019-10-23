@@ -11,7 +11,6 @@ keywords: Windows Mixed Reality, controls, design
 # Object collection
 
 ![Object collection used in the Periodic Table of the Elements app](images/640px-objectcollection-hero-640px.jpg)<br>
-*Examples of using object collection*
 
 
 Object collection is a layout control which helps you lay out an array of objects in a predefined three-dimensional shape. It supports various surface styles - **plane, cylinder, sphere** and **radial**. You can adjust the radius and size of the objects and the space between them. Object collection supports any object from Unity - both 2D and 3D. In the **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)**, we have created Unity script and examples that will help you create an object collection.
