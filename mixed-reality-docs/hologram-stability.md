@@ -24,7 +24,7 @@ When environment issues, inconsistent or low rendering rates, or other app probl
 * **Judder.** Low rendering frequencies result in uneven motion and double images of holograms. This is especially noticeable in holograms with motion. Developers need to maintain a [constant 60 FPS](hologram-stability.md#frame-rate).
 * **Drift.** Users see this as hologram appears to move away from where it was originally placed. This happens when holograms are placed far away from [spatial anchors](spatial-anchors.md), particularly in parts of the environment that have not been fully mapped. Creating holograms close to spatial anchors lowers the likelihood of drift.
 * **Jumpiness.** When a hologram "pops" or "jumps" away from it's location occasionally. This can occur as tracking adjusts holograms to match updated understanding of your environment.
-* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. This occurs when holograms are not on the [stabilization plane](hologram-stability.md#stabilization-plane), and if the HoloLens is not [calibrated](calibration.md) for the current user. The user can rerun the [calibration](calibration.md) application to fix this. Developers can update the stabilization plane to further enhance stability.
+* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. This occurs when the application has not fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens is not [calibrated](calibration.md) for the current user. The user can rerun the [calibration](calibration.md) application to fix this. Developers can update the stabilization plane to further enhance stability.
 * **Color separation.** The displays in HoloLens are a color sequential display, which flash color channels of red-green-blue-green at 60Hz (individual color fields are shown at 240Hz). Whenever a user tracks a moving hologram with his or her eyes, that hologram's leading and trailing edges separate in their constituent colors, producing a rainbow effect. The degree of separation is dependent upon the speed of the hologram. In some rarer cases, moving ones head rapidly while looking at a stationary hologram can also result in a rainbow effect. This is called *[color separation](hologram-stability.md#color-separation)*.
 
 ## Frame rate
@@ -89,7 +89,7 @@ Applications need to take specific actions to enable the different types of repr
 * **Planar Reprojection:** On every frame, applications tell the system the location of a plane to stabilize.  Unity applications call SetFocusPointForFrame and should have "Enable Depth Buffer Sharing" disabled.  DirectX apps call SetFocusPoint and should not call CommitDirect3D11DepthBuffer.
 * **Automatic Planar Reprojection:** To enable this, the application needs to submit their depth buffer to the system as they would for Depth Reprojection.  On HoloLens 2 the application then needs to SetFocusPoint with a point of 0,0 for every frame.  For HoloLens generation 1, the application should not call SetFocusPoint.
 
-### Choosing Stabilization Technique
+### Choosing Reprojection Technique
 
 Stabilization Type |	On Immersive Headsets |	On HoloLens generation 1 |	On HoloLens 2 |	When using Unity
 --- | --- | --- | --- | ---
@@ -166,7 +166,7 @@ Though it's difficult to completely avoid color separation, there are several te
 
 **Color-separation can be seen on:**
 * Objects that are moving quickly, including head-locked objects such as the [cursor](cursors.md).
-* Objects that are substantially far from the [stabilization plane](hologram-stability.md#stabilization-plane).
+* Objects that are substantially far from the [stabilization plane](hologram-stability.md#reprojection).
 
 **To attenuate the effects of color-separation:**
 * Make the object lag the user's gaze. It should appear as if it has some inertia and is attached to the gaze "on springs". This slows the cursor (reducing separation distance) and puts it behind the user's likely gaze point. So long as it quickly catches up when the user stops shifting their gaze it feels quite natural.
