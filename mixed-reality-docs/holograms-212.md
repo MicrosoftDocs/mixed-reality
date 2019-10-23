@@ -3,13 +3,13 @@ title: MR Input 212 - Voice
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of voice concepts.
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/21/2018
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, voice
 ---
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 <br>
 
@@ -281,7 +281,7 @@ namespace Academy
         // Use this string to cache the text currently displayed in the text box.
         private StringBuilder textSoFar;
 
-        // Using an empty string specifies the default microphone. 
+        // Using an empty string specifies the default microphone.
         private static string deviceName = string.Empty;
         private int samplingRate;
         private const int messageLength = 10;
@@ -479,11 +479,13 @@ namespace Academy
 3. Click the little circle to the right of the **Object To Tag Along** field.
 4. In the window that pops up, search for **SRGSToolbox** and select it from the list.
 5. Take a look at the **SRGSColor.xml** file in the **StreamingAssets** folder.
-* The SRGS design spec can be found on the W3C website [here](https://www.w3.org/TR/speech-grammar/).
-* In our SRGS file, we have three types of rules:
-  * A rule which lets you say one color from a list of twelve colors.
-  * Three rules which listen for a combination of the color rule and one of the three shapes.
-  * The root rule, colorChooser, which listens for any combination of the three "color + shape" rules. The shapes can be said in any order and in any amount from just one to all three. This is the only rule that is listened for, as it's specified as the root rule at the top of the file in the initial &lt;grammar&gt; tag.
+    1. The SRGS design spec can be found on the W3C website [here](https://www.w3.org/TR/speech-grammar/).
+
+In our SRGS file, we have three types of rules:
+
+* A rule which lets you say one color from a list of twelve colors.
+* Three rules which listen for a combination of the color rule and one of the three shapes.
+* The root rule, colorChooser, which listens for any combination of the three "color + shape" rules. The shapes can be said in any order and in any amount from just one to all three. This is the only rule that is listened for, as it's specified as the root rule at the top of the file in the initial &lt;grammar&gt; tag.
 
 ### Build and Deploy
 

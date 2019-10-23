@@ -3,13 +3,13 @@ title: MR Spatial 230 - Spatial mapping
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of spatial mapping concepts.
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/21/2018
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial mapping, surface reconstruction, mesh
 ---
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 <br>
 
@@ -105,14 +105,17 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 >[!VIDEO https://www.youtube.com/embed/888oW51z_cE]
 
 **Objectives**
+
 * Learn about the SurfaceObserver and how its settings impact experience and performance.
 * Create a room scanning experience to collect the meshes of your room.
 
 **Instructions**
+
 * In the **Project** panel **HoloToolkit-SpatialMapping-230\SpatialMapping\Prefabs** folder, find the **SpatialMapping** prefab.
 * Drag & drop the **SpatialMapping** prefab into the **Hierarchy** panel.
 
 **Build and Deploy (part 1)**
+
 * In Unity, select **File > Build Settings**.
 * Click **Add Open Scenes** to add the **Planetarium** scene to the build.
 * Select **Universal Windows Platform** in the **Platform** list and click **Switch Platform**.
@@ -137,6 +140,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 **Build and Deploy (part 2)**
 
 Now let's explore how Spatial Mapping can affect performance.
+
 * In Unity, select **Window > Profiler**.
 * Click **Add Profiler > GPU**.
 * Click **Active Profiler > <Enter IP>**.
@@ -152,6 +156,7 @@ Now let's explore how Spatial Mapping can affect performance.
 **Save and load in Unity**
 
 Finally, let's save our room mesh and load it into Unity.
+
 * Return to Visual Studio and remove the **TrianglesPerCubicMeter** line that you added in the **Awake()** function during the previous section.
 * Redeploy the project to your device. We should now be running with **500** triangles per cubic meter.
 * Open a browser and enter in your HoloLens IPAddress to navigate to the **Windows Device Portal**.
@@ -178,10 +183,12 @@ Finally, let's save our room mesh and load it into Unity.
 >[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4]
 
 **Objectives**
+
 * Learn the basics of shaders.
 * Visualize your surroundings.
 
 **Instructions**
+
 * In Unity's **Hierarchy** panel, select the **SpatialMapping** object.
 * In the **Inspector** panel, find the **Spatial Mapping Manager (Script)** component.
 * Click the circle to the right of the **Surface Material** property.
@@ -193,6 +200,7 @@ Finally, let's save our room mesh and load it into Unity.
     3. Sets the color of the pixel for rendering.
 
 **Build and Deploy**
+
 * Return to Unity and press **Play** to enter preview mode.
 * Blue lines will be rendered on all vertical surfaces of the room mesh (which automatically loaded from our saved scanning data).
 * Switch to the **Scene** tab to adjust your view of the room and see how the entire room mesh appears in Unity.
@@ -210,15 +218,18 @@ Unity does a great job of previewing materials, but it's always a good idea to c
 >[!VIDEO https://www.youtube.com/embed/kaUKiNiDxwY]
 
 **Objectives**
+
 * Learn techniques to process spatial mapping data for use in your application.
 * Analyze spatial mapping data to find planes and remove triangles.
 * Use planes for hologram placement.
 
 **Instructions**
+
 * In Unity's **Project** panel, **Holograms** folder, find the **SpatialProcessing** object.
 * Drag & drop the **SpatialProcessing** object into the **Hierarchy** panel.
 
 The SpatialProcessing prefab includes components for processing the spatial mapping data. **SurfaceMeshesToPlanes.cs** will find and generate planes based on the spatial mapping data. We will use planes in our application to represent walls, floors and ceilings. This prefab also includes **RemoveSurfaceVertices.cs** which can remove vertices from the spatial mapping mesh. This can be used to create holes in the mesh, or to remove excess triangles that are no longer needed (because planes can be used instead).
+
 * In Unity's **Project** panel, **Holograms** folder, find the **SpaceCollection** object.
 * Drag and drop the **SpaceCollection** object into the **Hierarchy** panel.
 * In the **Hierarchy** panel, select the **SpatialProcessing** object.
@@ -226,6 +237,7 @@ The SpatialProcessing prefab includes components for processing the spatial mapp
 * Double-click on **PlaySpaceManager.cs** to open it in Visual Studio.
 
 PlaySpaceManager.cs contains application-specific code. We will add functionality to this script to enable the following behavior:
+
 1. Stop collecting spatial mapping data after we exceed the scanning time limit (10 seconds).
 2. Process the spatial mapping data:
     1. Use SurfaceMeshesToPlanes to create a simpler representation of the world as planes (walls, floors, ceilings, etc).
@@ -379,7 +391,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
         {
             // We do not have enough floors/walls to place our holograms on...
 
-            // 3.a: Re-enter scanning mode so the user can find more surfaces by 
+            // 3.a: Re-enter scanning mode so the user can find more surfaces by
             // calling StartObserver() on the SpatialMappingManager.Instance.
             SpatialMappingManager.Instance.StartObserver();
 
@@ -429,6 +441,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 ```
 
 **Build and Deploy**
+
 * Before deploying to the HoloLens, press the **Play** button in Unity to enter play mode.
 * After the room mesh is loaded from file, wait for 10 seconds before processing starts on the spatial mapping mesh.
 * When processing is complete, planes will appear to represent the floor, walls, ceiling, etc.
@@ -444,10 +457,12 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 >[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc]
 
 **Objectives**
+
 * Determine if a hologram will fit on a surface.
 * Provide feedback to the user when a hologram can/cannot fit on a surface.
 
 **Instructions**
+
 * In Unity's **Hierarchy** panel, select the **SpatialProcessing** object.
 * In the **Inspector** panel, find the **Surface Meshes To Planes (Script)** component.
 * Change the **Draw Planes** property to **Nothing** to clear the selection.
@@ -455,6 +470,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 * In the **Project** panel, **Scripts** folder, double-click on **Placeable.cs** to open it in Visual Studio.
 
 The **Placeable** script is already attached to the posters and projection box that are created after plane finding completes. All we need to do is uncomment some code, and this script will achieve the following:
+
 1. Determine if a hologram will fit on a surface by raycasting from the center and four corners of the bounding cube.
 2. Check the surface normal to determine if it is smooth enough for the hologram to sit flush on.
 3. Render a bounding cube around the hologram to show its actual size while being placed.
@@ -477,7 +493,7 @@ using Academy.HoloToolkit.Unity;
 /// </summary>
 public enum PlacementSurfaces
 {
-    // Horizontal surface with an upward pointing normal.    
+    // Horizontal surface with an upward pointing normal.
     Horizontal = 1,
 
     // Vertical surface with a normal facing the user.
@@ -904,7 +920,7 @@ public class Placeable : MonoBehaviour
     /// The target surface's normal vector.
     /// </param>
     /// <remarks>
-    /// The aligntoVerticalSurface parameter is ignored if the object
+    /// The alignToVerticalSurface parameter is ignored if the object
     /// is to be placed on a horizontalSurface
     /// </remarks>
     private void OrientObject(bool alignToVerticalSurface, Vector3 surfaceNormal)
@@ -1001,7 +1017,7 @@ public class Placeable : MonoBehaviour
             shadowAsset.GetComponent<Renderer>().sharedMaterial = NotPlaceableShadowMaterial;
         }
 
-        // Show the shadow asset as appropriate.        
+        // Show the shadow asset as appropriate.
         if (position != Vector3.zero)
         {
             // Position the shadow a small distance from the target surface, along the normal.
@@ -1047,6 +1063,7 @@ public class Placeable : MonoBehaviour
 ```
 
 **Build and Deploy**
+
 * As before, build the project and deploy to the HoloLens.
 * Wait for scanning and processing of the spatial mapping data to complete.
 * When you see the solar system, gaze at the projection box below and perform a select gesture to move it around. While the projection box is selected, a bounding cube will be visible around the projection box.
@@ -1058,24 +1075,28 @@ public class Placeable : MonoBehaviour
 >[!VIDEO https://www.youtube.com/embed/6Xrzh_w-7SE]
 
 **Objectives**
+
 * Determine if a hologram is occluded by the spatial mapping mesh.
 * Apply different occlusion techniques to achieve a fun effect.
 
 **Instructions**
 
 First, we are going to allow the spatial mapping mesh to occlude other holograms without occluding the real world:
+
 * In the **Hierarchy** panel, select the **SpatialProcessing** object.
 * In the **Inspector** panel, find the **Play Space Manager (Script)** component.
 * Click the circle to the right of the **Secondary Material** property.
 * Find and select the **Occlusion** material and close the window.
 
 Next, we are going to add a special behavior to Earth, so that it has a blue highlight whenever it becomes occluded by another hologram (like the sun), or by the spatial mapping mesh:
+
 * In the **Project** panel, in the **Holograms** folder, expand the **SolarSystem** object.
 * Click on **Earth**.
 * In the **Inspector** panel, find the Earth's material (bottom component).
 * In the **Shader drop-down**, change the shader to **Custom > OcclusionRim**. This will render a blue highlight around Earth whenever it is occluded by another object.
 
 Finally, we are going to enable an x-ray vision effect for planets in our solar system. We will need to edit **PlanetOcclusion.cs** (found in the Scripts\SolarSystem folder) in order to achieve the following:
+
 1. Determine if a planet is occluded by the SpatialMapping layer (room meshes and planes).
 2. Show the wireframe representation of a planet whenever it is occluded by the SpatialMapping layer.
 3. Hide the wireframe representation of a planet when it is not blocked by the SpatialMapping layer.
@@ -1174,6 +1195,7 @@ public class PlanetOcclusion : MonoBehaviour
 ```
 
 **Build and Deploy**
+
 * Build and deploy the application to HoloLens, as usual.
 * Wait for scanning and processing of the spatial mapping data to be complete (you should see blue lines appear on walls).
 * Find and select the solar system's projection box and then set the box next to a wall or behind a counter.
@@ -1184,6 +1206,7 @@ public class PlanetOcclusion : MonoBehaviour
 ## The End
 
 Congratulations! You have now completed **MR Spatial 230: Spatial mapping**.
+
 * You know how to scan your environment and load spatial mapping data to Unity.
 * You understand the basics of shaders and how materials can be used to re-visualize the world.
 * You learned of new processing techniques for finding planes and removing triangles from a mesh.
