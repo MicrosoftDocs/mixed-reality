@@ -37,7 +37,7 @@ Bounding is the standard interface for object manipulation in Mixed Reality. It 
 
 :::row:::
     :::column:::
-        ### Rotation<br>
+        ### Rotating an object<br>
         The vertical rectangular affordances on the edges of the bounding box are rotation indicators. This gives the user more fine adjustment over their placed holograms. Not only can they adjust and scale, but now rotate as well.<br>
         <br>
         *Image: Rotating an object via bounding box*
@@ -67,7 +67,7 @@ Bounding is the standard interface for object manipulation in Mixed Reality. It 
 
 <br>
 
-* For Unity app development, see [Bounding box on Mixed Reality Toolkit-Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
+**For Unity app development, see [Bounding box in the Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**
 
 <br>
 
@@ -75,11 +75,12 @@ Bounding is the standard interface for object manipulation in Mixed Reality. It 
 
 ## What is the App bar?
 
-The App bar is a object-level menu containing a series of buttons that displays on the bottom edge of a hologram's bounds. This pattern is commonly used to give users the ability to remove and adjust holograms.
+The App bar is a object-level menu containing a series of buttons that displays on the bottom edge of a hologram's bounds. This pattern is commonly used to give users the ability to remove and adjust holograms. The App bar was designed primarily as a way to manage placed objects in a user's environment. Coupled with the bounding box, a user has full control over where and how objects are oriented in mixed reality.
 
 :::row:::
     :::column:::
-        Since this pattern is used with objects that are world locked, as a user moves around the object the App bar will always display on the objects' side closest to the user. While this isn't billboarding, it effectively achieves the same result; preventing a user's position to occlude or block functionality that would otherwise be available from a different location in their environment.<br>
+        ### The App bar follows the user<br>
+        Since this pattern is used with objects that are world locked, as a user moves around the object the App bar will always display on the objects' side closest to the user. While this isn't billboarding, it effectively achieves the same result; preventing a user's position to occlude or block functionality that would otherwise be available from a different location in their environment. <br>
         <br>
         *Video loop: Walking around a hologram, the App bar follows*
     :::column-end:::
@@ -91,9 +92,9 @@ The App bar is a object-level menu containing a series of buttons that displays 
 
 <br>
 
-The App bar was designed primarily as a way to manage placed objects in a user's environment. Coupled with the bounding box, a user has full control over where and how objects are oriented in mixed reality.
 
-* For Unity app development, see [App bar on Mixed Reality Toolkit-Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_AppBar.html)
+
+**For Unity app development, see [App bar in the Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_AppBar.html)**
 
 <br>
 
