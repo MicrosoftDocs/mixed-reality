@@ -40,7 +40,7 @@ Placing objects in the periphery can encourage users to look to the side and thi
 
 For mixed reality experiences with large objects or many objects, it is crucial to consider how much head and neck movement is necessary to interact with content. Experiences can be divided into three categories in terms of head movement: **Horizontal** (side to side), **vertical** (up and down), or **immersive** (both horizontal and vertical). When possible, limit the majority of interactions to either horizontal or vertical categories, ideally with most experiences taking place in the center of the holographic frame while the user's head is in a neutral position. Avoid interactions that cause the user to constantly move their view to an unnatural head positions (for example, always looking up to access a key menu interaction).
 
-![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2-750px.png)<br>
+![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2.png)<br>
 *Optimal region for content is 0 to 35 degrees below horizon*
 
 Horizontal head movement is more [comfortable](comfort.md) for frequent interactions, while vertical movements should be reserved for uncommon events. For example, an experience involving a long horizontal timeline should limit vertical head movement for interactions (like looking down at a menu).
@@ -79,7 +79,7 @@ Digital content within the holographic frame of the HoloLens can also be paired 
 
 ### Volvo Cars
 
->[!VIDEO https://www.youtube.com/embed/DilzwF90vec]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/DilzwF90vec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In the showroom experience from Volvo Cars, customers are invited to learn about a new car's capabilities in a HoloLens experience guided by a Volvo associate. Volvo faced a challenge with the holographic frame: a full-size car is too large to put right next to a user. The solution was to begin the experience with a physical landmark, a central table in the showroom, with a smaller digital model of the car placed on top of the table. This ensures the user is seeing the full car when it is introduced, allowing for a sense of spatial understanding once the car grows to its real-world scale later in the experience.
 
