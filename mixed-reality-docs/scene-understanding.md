@@ -50,25 +50,22 @@ Many of the core scenarios for environment aware applications (placement, occlus
 
  The following sections re-visit the core spatial mapping scenarios in the context of the new Scene understanding SDK.
 
+### Placement
+
+Scene understanding provides new constructs specifically designed to simplify placement scenarios. A scene can compute primitives called SceneQuads which describe flat surfaces on which holograms can be placed. SceneQuads have specifically been designed around placement and describe a 2D surface and provide an API for placement on that surface. Previously, when using the triangle mesh to perform placement, one had to scan all areas of the quad and perform hole filling/post-processing to identify good locations for object placement. This is not always necessary with Quads, as the Scene understanding runtime is capable of inferring which areas of the quad that were not scanned, and invalidate areas of the quad that are not part of the surface.
 
 :::row:::
     :::column:::
-        ### Placement<br>
-        Scene understanding provides new constructs specifically designed to simplify placement scenarios. A scene can compute primitives called SceneQuads which describe flat surfaces on which holograms can be placed. SceneQuads have specifically been designed around placement and describe a 2D surface and provide an API for placement on that surface. Previously, when using the triangle mesh to perform placement, one had to scan all areas of the quad and perform hole filling/post-processing to identify good locations for object placement. This is not always necessary with Quads, as the Scene understanding runtime is capable of inferring which areas of the quad that were not scanned, and invalidate areas of the quad that are not part of the surface.<br>
+       ![SceneQuads with inference disabled, capturing placement areas for scanned regions.](images/SUQuads.png)<br>
+       *Image #1: SceneQuads with inference disabled, capturing placement areas for scanned regions.*
     :::column-end:::
         :::column:::
-        ![space](images/spacer-20x582.png)<br>
-       ![SceneQuads with inference disabled, capturing placement areas for scanned regions.](images/SUQuads.png)<br>
-       *Image: SceneQuads with inference disabled, capturing placement areas for scanned regions.*<br>
-       <br>
        ![Quads with inference enabled, placement is no longer limited to scanned areas.](images/SUWatertight.png)<br>
-        *Image: Quads with inference enabled, placement is no longer limited to scanned areas.*<br>
+        *Image #2: Quads with inference enabled, placement is no longer limited to scanned areas.*
     :::column-end:::
 :::row-end:::
 
-
 <br>
-
 
 
 If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene understanding SDK reference](scene-understanding-SDK.md)
