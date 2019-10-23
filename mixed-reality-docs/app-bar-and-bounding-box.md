@@ -23,7 +23,7 @@ Bounding is the standard interface for object manipulation in Mixed Reality. It 
         ### Scaling an object<br>
         The corners of the bounding box tell the user that the object can scale. The handles follow a widely understood pattern for adjusting scale. This visual affordance shows users the total area of the object – even if it’s not visible outside of an adjustment mode. This is especially important because if it weren’t there, an object snapped to another object or surface may appear to behave as if there was space around it that shouldn’t be there.<br>
         <br>
-        *Image: Scaling an object via bounding box*
+        *Video loop: Scaling an object via bounding box*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -40,7 +40,7 @@ Bounding is the standard interface for object manipulation in Mixed Reality. It 
         ### Rotating an object<br>
         The vertical rectangular affordances on the edges of the bounding box are rotation indicators. This gives the user more fine adjustment over their placed holograms. Not only can they adjust and scale, but now rotate as well.<br>
         <br>
-        *Image: Rotating an object via bounding box*
+        *Video loop: Rotating an object via bounding box*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
