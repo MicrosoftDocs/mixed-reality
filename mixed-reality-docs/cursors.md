@@ -10,13 +10,44 @@ keywords: HoloLens (1st gen), HoloLens 2, Mixed Reality, cursors, targeting, gaz
 
 # Cursors
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](news.md).
-
-
-A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where HoloLens believes their current focus is at that time. The cursor allows the user to understand their current targeting point and acts as feedback to indicate what area, hologram, or point will respond to input. It is the digital representation of where the device understands the user's attention to be (though that may not be the same as determining anything about their intentions).
+A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where the headset believes their current focus is at that time. The cursor allows the user to understand their current targeting point and acts as feedback to indicate what area, hologram, or point will respond to input. It is the digital representation of where the device understands the user's attention to be (though that may not be the same as determining anything about their intentions).
 
 The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.
+
+There are 3 different kinds of cursors, including finger cursor, ray cursor and head cursor, to work with different input modalities on HoloLens, HoloLens 2 and immersive headsets.   
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Finger cursor</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
+     <tr>
+        <td>Ray cursor</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
+    <tr>
+        <td>Head cursor</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
+</table>
 
 ## HoloLens (1st gen)
 
