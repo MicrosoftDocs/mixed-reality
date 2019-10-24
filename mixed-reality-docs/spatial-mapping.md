@@ -62,13 +62,15 @@ These volumes may be stationary (in a fixed location with respect to the real wo
 As the HoloLens gathers new data about the environment, and as changes to the environment occur, spatial surfaces will appear, disappear and change.
 
 ## Spatial Mapping vs. Scene Undesranding WorldMesh
-Starting HoloLens 2, it is possible to query a static version of the spatial mapping data using EnableWorldMesh setting of [Scene understanding SDK](scene-understanding-SDK.md). Here are the differences between two way of accessing the spatial mapping data:
-* Spatial Mapping:
-   * Provides real-time updates of changed mesh regions through SurfacesChanged events.
-   * Limited range: the spatial mapping data available to applications in a 'bubble' of limited size around the user.
+For HoloLens 2, it is possible to query a static version of the spatial mapping data using [Scene understanding SDK](scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two way of accessing the spatial mapping data:
+* Spatial Mapping API:
+   * Limited range: the spatial mapping data available to applications in a limited size cached 'bubble' around the user.
+   * Provides low latency updates of changed mesh regions through SurfacesChanged events.
+   * Variable level of details controlled by Triangles Per Cubic Meter parameter.
 * Scene undestanding SDK:
-   * Provides a static snapshot of the spatial mapping data. Getting the updated spatial mapping data requires running a new query for the whole mesh.
    * Unlimited range - provides all the scanned spatial mapping data within the query radius.
+   * Provides a static snapshot of the spatial mapping data. Getting the updated spatial mapping data requires running a new query for the whole mesh.
+   * Consistent level of details controlled by RequestedMeshLevelOfDetail setting.
 
 ## What influences spatial mapping quality?
 
