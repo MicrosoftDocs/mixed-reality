@@ -138,6 +138,9 @@ Visualizing surfaces can be a useful way to show the user nearby spaces that are
 
 The surface meshes provided by spatial mapping may not be particularly 'clean'. Thus it is important to visualize them appropriately. Traditional lighting calculations may highlight errors in surface normals in a visually distracting manner, whilst 'clean' textures projected onto the surface may help to give it a tidier appearance. It is also possible to perform [mesh processing](spatial-mapping.md#mesh-processing) to improve mesh properties, before the surfaces are rendered.
 
+> [!NOTE]
+> HoloLens 2 implements a new [Scene Understanding Runtime](scene-understanding.md), that provides Mixed Reality developers with a structured, high-level environment representation designed to simplify the implementation of placement, occlusion, physics and navigation.
+
 ## Using The Surface Observer
 
 The starting point for spatial mapping is the surface observer. Program flow is as follows:
