@@ -145,7 +145,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #3 split text and image
+## Section #3 split text/image and bullets
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism.<br>
 
