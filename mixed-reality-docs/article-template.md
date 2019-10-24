@@ -41,7 +41,7 @@ keywords: none
 
 
 
-## Section #1 name
+## Section #1 2 & 3 columns
 
 A section can contain any or all of the following:  
 
