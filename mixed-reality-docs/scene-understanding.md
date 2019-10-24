@@ -3,7 +3,7 @@ title: Scene understanding
 description: Introduction to scene understanding capabilities for HoloLens
 author: szymons
 ms.author: szymons
-ms.date: 07/08/19
+ms.date: 07/08/2019
 ms.topic: article
 keywords: Scene understanding, Spatial Mapping, Windows Mixed Reality, Unity
 ---
