@@ -3,13 +3,13 @@ title: MR Sharing 250 - HoloLens and immersive headsets
 description: Follow this coding walkthrough using Unity, Visual Studio, HoloLens, and Windows Mixed Reality headsets to learn the details of sharing holograms between mixed reality devices.
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/21/2018
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, sharing, xbox controller, networking, cross-device
 ---
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 <br>
 
@@ -64,6 +64,7 @@ Make sure the development environment is ready to go with a simple project.
 An application that shows a hologram on either HoloLens or a Windows Mixed Reality immersive headset.
 
 ### Steps
+
 * Open Unity.
     * Select **Open**.
     * Navigate to where you extracted the project files.
@@ -128,6 +129,7 @@ Building on the application from chapter 1, we will add functionality to allow t
 **Input Refresher:** On HoloLens the select gesture is the **air tap**. On immersive headsets, we will use the **A** button on the Xbox controller. For more information on input [start here](gestures.md).
 
 ### Steps
+
 * Add Input manager
     * From **HoloToolkit > Input > Prefabs** drag **InputManager** to **Hierarchy** as a child of **Managers**.
     * From **HoloToolkit > Input > Prefabs > Cursor** drag **Cursor** to **Hierarchy**.
@@ -188,6 +190,7 @@ Ensure that the network is correctly configured and detail how spatial anchors a
 We will convert our project to a multiplayer project. We will add UI and logic to host or join sessions. HoloLens users will see each other in the session with clouds over their heads, and immersive headset users have clouds near to where the anchor is. Users in the immersive headsets will see the HoloLens users relative to the origin of the scene. HoloLens users will all see the hologram of the island in the same place. It is key to note that the users in the immersive headsets will not be on the island during this chapter, but will behave very similarly to HoloLens, with a birds eye view of the island.
 
 ### Steps
+
 * Remove Island and VRRoom
     * In **Hierarchy** right-click **Island** select **Delete**
     * In **Hierarchy** right-click **VRRoom** select **Delete**
@@ -210,7 +213,7 @@ In the start function, notice the check for **IsDisplayOpaque**. In this case, w
 
 **Exporting:**
 
-When a user creates a session, NetworkDiscoveryWithAnchors will call UNETAnchorManagers CreateAnchor function. Let's follow CreateAnchor flow.
+When a user creates a session, NetworkDiscoveryWithAnchors will call UNETAnchorManagers CreateAnchor function. Let's follow CreateAnchor flow.
 
 We start by doing some housekeeping, clearing out any data we may have collected for previous anchors. Then we check if there is a cached anchor to load. The anchor data tends to be between 5 and 20 MB, so reusing cached anchors can save on the amount of data we need to transfer over the network. We'll see how this works a bit later. Even if we are reusing the anchor, we need to get the anchor data ready in case a new client joins that doesn't have the anchor.
 
@@ -245,10 +248,12 @@ Cater the experience to each type of mixed reality device.
 We will update the application to put immersive headset users on the island with an immersive view. HoloLens users will still have the bird's eye view of the island. Users of each device type can see other users as they appear in the world. For instance, immersive headset users can see the other avatars on other paths on the island, and they see the HoloLens users as giant clouds above the island. Immersive headset users will also see the cursor of the HoloLens user's gaze ray if the HoloLens user is looking at the island. HoloLens users will see an avatar on the island to represent each immersive headset user.
 
 **Updated Input for the Immersive device:**
+
 * The left bumper and right bumper buttons on the Xbox controller rotate the player
 * Holding the Y button on the Xbox controller will enable a [teleport](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) cursor. If the cursor has a spinning arrow indicator when you release the Y button, you will be teleported to the cursor's location.
 
 ### Steps
+
 * Add MixedRealityTeleport to MixedRealityCameraParent
     * In **Hierarchy**, select **Usland**.
     * In **Inspector**, enable **Level Control**.
@@ -283,6 +288,7 @@ This time you'll need to find a friend.
 Once again, a user with the HoloLens will host a session. Other users will join the session. The application will place the first three users to join from an immersive headset on one of the three paths on the island. Feel free to explore the island in this section.
 
 Details to notice:
+
 1. You can see faces in the clouds, which helps an immersed user see which direction a HoloLens user is looking.
 2. The avatars on the island have necks that rotate. They won't follow what the user is doing is real reality (we don't have that information) but it makes for a nice experience.
 3. If the HoloLens user is looking at the Island, the immersed users can see their cursor.
@@ -301,6 +307,7 @@ Create a collaborative interactive experience between the two device types.
 Building on chapter 4, when a user with an immersive headset gets near a puzzle on the island, the HoloLens users will get a tool tip with a clue to the puzzle. Once all of the immersive headset users get past their puzzles and onto the "ready pad" in the rocket room, the rocket will launch.
 
 ### Steps
+
 * In **Hierarchy**, select **Usland**.
 * In **Inspector**, in **Level Control**, check **Enable Collaboration**.
 
@@ -318,20 +325,20 @@ CheckGoal does some math to see if we are more or less standing on the pad. When
 
 ```cs
 private void CmdSendAtGoal(int GoalIndex)
-       {
-           levelState.SetGoalIndex(GoalIndex);
-       }
+{
+    levelState.SetGoalIndex(GoalIndex);
+}
 ```
 
 ```cs
 public void SendAtGoal(int GoalIndex)
-       {
-           if (isLocalPlayer)
-           {
-               Debug.Log("sending at goal " + GoalIndex);
-               CmdSendAtGoal(GoalIndex);
-           }
-       }
+{
+    if (isLocalPlayer)
+    {
+        Debug.Log("sending at goal " + GoalIndex);
+        CmdSendAtGoal(GoalIndex);
+    }
+}
 ```
 
 Note that SendAtGoalMessage calls CmdSendAtGoal, which calls levelState.SetGoalIndex, which is back in LevelControl.cs. At first glance this seems strange. Why not just call SetGoalIndex rather than this strange routing through the player controller? The reason is that we are conforming to the data model UNET uses to keep data in sync. To prevent cheating and thrashing, UNET requires that each object has a user who has authority to change the synchronized variables. Further, only the host (the user that started the session) can change data directly. Users who are not the host, but have authority, need to send a 'command' to the host which will change the variable. By default the host has authority over all objects, except for the object spawned to represent the user. In our case this object has the playercontroller script. There is a way to request authority for an object and then make changes, but we choose to leverage the fact that the player controller has self authority and route commands through the player controller.
@@ -345,4 +352,5 @@ Back in LevelControl.cs look at SetGoalIndex. Here we are setting the value of a
 Building on the previous chapter, we will start the session as before. This time as the users in the immersive headset get to the "door" on their path, a tooltip will appear that only the HoloLens users can see. The HoloLens users are responsible for communicating this clue to the users in the immersive headset. The rocket will launch to space once each avatar has stepped on its corresponding brown pad inside the volcano. The scene will reset after 60 seconds so you can do it again.
 
 ## See also
+
 * [MR Input 213: Motion controllers](mixed-reality-213.md)
