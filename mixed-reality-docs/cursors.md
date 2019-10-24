@@ -42,7 +42,7 @@ There are 3 kinds of cursors, including finger cursor, ray cursor and head curso
         <td>✔️</td>
     </tr>
     <tr>
-        <td>Head cursor</td>
+        <td>Head-gaze cursor</td>
         <td>✔️</td>
         <td>✔️</td>
         <td>✔️</td>
@@ -50,26 +50,22 @@ There are 3 kinds of cursors, including finger cursor, ray cursor and head curso
 </table>
 
 ## Finger cursor
-The finger cursor mainly and newly design for HoloLens 2 to enhence the direct manipulation with hands. The idea is to attach a ring cursor at the tip of the index finger. The diameter of the ring changes according to the distance between the index finger tip and the target. 
+The finger cursor mainly and newly design for HoloLens 2 to enhence the "direct manipulation with hands." The idea is to attach a ring cursor at the tip of the index finger. The diameter of the ring changes according to the distance between the index finger tip and the target. 
 
 ## Ray cursor
-The ray cursor is a cursor attached at the end of a far targeting ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from 6Dof controllers with a dot cursor. In HoloLens 2, we leaverage the mental modal of 6 DoF rays to have the rays come from the hand palms.    
+The ray cursor is a cursor attached at the end of a far targeting ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from motion controllers with a dot cursor at the end. In HoloLens 2, we leaverage the mental modal of motion controller rays to have the rays come from the hand palms. This makes the interactions modals of "motion controller" and "point and commit with hands" in sync. We use the a ring shape to represnet the curosr, instead of a dot, to keep consistant with the finger cursor in HoloLens 2.  
 
-## Head cursor
-The head cursor design for 
+## Head-gaze cursor
+The head-gaze cursor is a cursor attached at the end of head-gaze vector (an invisible ray controlled by the position and rotation of the head). In "head-gaze and commit" model, the head-gaze cursor has to work with other commit inputs, such as air tap gesture and voice commands, to execute the manipulation. In HoloLens, users can freely switch between suggested commit inputs. In HoloLens 2, users can also switch between "hand rays" and "Head-gaze and commit" except commit with air tap gesture.    
 
 ## HoloLens (1st gen)
 
 Targeting of content on HoloLens (1st gen) is done primarily with the [gaze](gaze-and-commit.md) vector (a ray controlled by the position and rotation of the head). This provides a form of direct input for the user that needs little teaching. However, users have difficulty using an unmarked center of gaze for precise targeting so a cursor ensures users know the point they are currently targeting. 
 
 
-## Positioning
 
-In general, the indicator should move in approximately a 1:1 ratio with head movement. There are some cases where gain (augmenting or diminishing movement noticeably) might be used as an intentional mechanic, but it will cause trouble for users if used unexpectedly (note that there is a tiny bit of 'lag' recommended for the cursor to avoid issues with fully display-locked content). Most importantly though, experiences should be "honest" in the representation of cursor position - if smoothing, magnetism, gain, or other effects are included, the system should still show the cursor wherever the system's understanding of position is, with those effects included. The cursor is the system's way of telling the user what they can or can't interact with, not the user's way of telling the system.
-
-The indicator should ideally lock in depth to whatever elements the user can plausibly target. This may mean surface-locking if there is some [Spatial Mapping](spatial-mapping.md) mesh or locking to the depth of any "floating" UI elements, to help the user understand what they can interact with in real-time.
-
-## Cursor design principles
+## Cursor customization principles
+If you would like to customize your own cursor feedback behaviors and appearances, please reference principles below:
 
 ### Always present
 * We recommend that the cursor is always present.
