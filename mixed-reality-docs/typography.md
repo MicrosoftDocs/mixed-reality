@@ -55,12 +55,20 @@ In HoloLens, since the holograms are constructed with an additive light system, 
 
 To use dark text, you should use a bright back plate to make it readable. In additive color systems, black is displayed as transparent. This means you will not be able to see the black text without a colored back plate.
 
-![Black text examples](images/typography-whiteonblack.png)
-<br>*Examples of white on back and black on white text*
+:::row:::
+    :::column:::
+        ![Black text examples](images/typography-whiteonblack.png)<br>
+        **Image #1**- Examples of white on back and black on white text<br>
+    :::column-end:::
+    :::column:::
+        ![Black text examples](images/640px-typography-blackonwhite.jpg)<br>
+        **Image #1**- Examples of black text in the system apps - Store and Settings<br>
+    :::column-end:::
+:::row-end:::
 
+<br>
 
-![Black text examples](images/640px-typography-blackonwhite.jpg)
-<br>*Examples of black text in the system apps - Store and Settings*
+---
 
 ## Recommended font size
 
@@ -92,12 +100,29 @@ Segoe UI (the default font for Windows) works well in most cases. However, avoid
 ![Viewing Angle](images/Text_In_Unity_ViewingAngle.jpg)
 *Viewing distance, angle, and text height*
 
-## Resources
-* [Segoe fonts](http://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)
-* [HoloLens font](http://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)
+<br>
 
-![The HoloLens font gives you the symbol glyphs used in Windows Mixed Reality](images/300px-hololensmdl2symbols.jpg)
-<br>*The HoloLens font gives you the symbol glyphs used in Windows Mixed Reality.*
+---
+
+## Resources
+
+:::row:::
+    :::column:::
+    ### [Segoe fonts](http://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)
+    ### [HoloLens font](http://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)<br>
+        <br>
+        *Image: The HoloLens font gives you the symbol glyphs used in Windows Mixed Reality.*
+    :::column-end:::
+        :::column:::
+        ![The HoloLens font gives you the symbol glyphs used in Windows Mixed Reality](images/300px-hololensmdl2symbols.jpg)<br>
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+---
+
 
 ## See also
 * [Text in Unity](text-in-unity.md)
