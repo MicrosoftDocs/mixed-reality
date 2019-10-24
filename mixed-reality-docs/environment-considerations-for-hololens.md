@@ -113,7 +113,7 @@ If you run the Calibration app and are still having problems with hologram quali
 If someone else is going to be using your HoloLens, they should run the Calibration app first so the device is set up properly for them.
 
 ## See also
-* [Spatial mapping design](spatial-mapping-design.md)
+* [Spatial mapping](spatial-mapping.md)
 * [Holograms](hologram.md)
 * [Calibration](calibration.md)
 * [Use HoloLens in new spaces](use-hololens-in-new-spaces.md)

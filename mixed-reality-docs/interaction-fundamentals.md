@@ -177,6 +177,6 @@ If your experience does require multiple interaction models, keep in mind that m
 * [Voice input](voice-input.md)
 * [Motion controllers](motion-controllers.md)
 * [Spatial sound design](spatial-sound-design.md)
-* [Spatial mapping design](spatial-mapping-design.md)
+* [Spatial mapping](spatial-mapping.md)
 * [Comfort](comfort.md)
 

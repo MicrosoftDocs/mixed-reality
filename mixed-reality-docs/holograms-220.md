@@ -19,7 +19,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 * Configure your development environment to use Microsoft Spatial Sound.
 * Use Spatial Sound to enhance interactions.
-* Use Spatial Sound in conjunction with Spatial Mapping.
+* Use Spatial Sound in conjunction with [Spatial Mapping](spatial-mapping.md).
 * Understand sound design and mixing best practices.
 * Use sound to enhance special effects and bring the user into the Mixed Reality world.
 
