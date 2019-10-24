@@ -50,7 +50,8 @@ There are 3 kinds of cursors, including finger cursor, ray cursor and head curso
 </table>
 
 ## Finger cursor
-The finger cursor mainly and newly design for HoloLens 2 to enhence the "direct manipulation with hands." The idea is to attach a ring cursor at the tip of the index finger. The diameter of the ring changes according to the distance between the index finger tip and the target. 
+The finger cursor mainly and newly design for HoloLens 2 to enhence the "direct manipulation with hands." The idea is to attach a ring cursor at the tip of the index finger. The diameter of the ring changes according to the distance between the index finger tip and the target.<br>
+![finger cursor](images/finger-ting-temp.PNG)<br>
 
 ## Ray cursor
 The ray cursor is a cursor attached at the end of a far targeting ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from motion controllers with a dot cursor at the end. In HoloLens 2, we leaverage the mental modal of motion controller rays to have the rays come from the hand palms. This makes the interactions modals of "motion controller" and "point and commit with hands" in sync. We use the a ring shape to represnet the curosr, instead of a dot, to keep consistant with the finger cursor in HoloLens 2.  
