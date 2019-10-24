@@ -9,7 +9,7 @@ keywords: Mixed Reality, Gestures, interaction, design
 ---
 # System gesture
 
-System gesture is a hand gesture to invoke the Start Menu. It is equivalent to pressing the Windows key on the keyboard or the Xbox button on an Xbox controller or the Windows button on the 6 DoF controller of Windows Mixed Reality. It will be important for developers to understand preserved system gestures for different version of Mixed Reality devices to prevent conflicts.
+System gesture is a hand gesture to invoke the Start Menu. It is equivalent to pressing the Windows key on the keyboard, the Xbox button on an Xbox controller, or the Windows button on the immersive headset motion controller. It will be important for developers to understand preserved system gestures for different version of Mixed Reality devices to prevent conflicts.
 
 <table>
     <colgroup>
@@ -45,14 +45,14 @@ System gesture is a hand gesture to invoke the Start Menu. It is equivalent to p
 </table>
 
 # Bloom
-In HoloLens, we design the “Bloom” gesture, which is a symbolic gesture mimicking the flower blossom, for the ease of perform and recall. To do the bloom gesture on HoloLens, hold out your hand , palm up, with your fingertips together. Then open your hand.<br>
+To bring up the start menu in HoloLens, we designed “Bloom”, which is a symbolic gesture mimicking the flower blossom. It's distinctive for surefooted interaction, easy to perform, and quick to recall. To do the bloom gesture on HoloLens, hold out your hand with your palm up and fingertips together, then open your hand by spreading your fingers.<br>
 ![bloom](images/bloom.PNG)<br>
 
 # Wrist button
-In HoloLens 2, we replace the Bloom gesture with a wrist button, which follows our Instinctual Interaction design principles. By showing users the button on the button of wrist will they have the intuition to press it with another hand. No more training is needed.<br>
+In HoloLens 2, we replaced the Bloom gesture with a wrist button, allowing for a more Instinctual Interaction that requires no additional teaching. By showing users the button on the wrist, they can intuitively reach out and press it with the other hand.<br>
 ![wrist button](images/wrist-button.PNG)<br>
 
 # Eye gaze and palm up pinch
-For accessibility purpose, we also have a 1 handed solution, which only requires users to eye gaze at the button, then use the same hand to perfomr palm up pinch.<br>
+We have also designed a one-handed solution for ease of access in HoloLens 2. This gesture requires users to eye gaze at the wrist button, then use the same hand to perform a palm up pinch between the thumb and index finger.<br>
 ![eye gaze and palm up pinch](images/eye-gaze-and-pinch.PNG)<br>
 
