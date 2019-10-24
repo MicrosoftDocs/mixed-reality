@@ -54,15 +54,13 @@ The finger cursor is available only on the HoloLens 2 to enhance the "Direct man
 ![finger cursor](images/finger-cursor.png)<br>
 
 ## Ray cursor
-The ray cursor is attached to the end of a far pointing ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from motion controllers with a dot cursor at the end. In HoloLens 2, we leaverage the mental modal of motion controller rays to have the rays come from the hand palms. This makes the interactions modals of "motion controller" and "point and commit with hands" in sync. We use the a ring shape to represnet the curosr, instead of a dot, to keep consistant with the finger cursor in HoloLens 2. <br>
-
-Ray cursors attach to the end of far pointing rays. In Windows Mixed Reality immersive headsets, the rays shoot out from motion controllers and end in a dot cursor wherever it makes contact with UI. 
+Ray cursors attach to the end of far pointing rays to allow manipulation of objects that are out of hands-reach. In Windows Mixed Reality immersive headsets, the rays shoot out from motion controllers and end in dot cursors. In HoloLens 2, we leverage the mental model of these motion controller rays and designed hand rays that originate from the palms and end in ring-shaped cursors that are consistent with finger cursors used in direct manipulation. <br>
 ![ray cursor controller](images/ray-cursor-controller.png)
 ![ray cursor hand](images/ray-cursor-hand.png)<br>
 
 
 ## Head-gaze cursor
-The head-gaze cursor is a cursor attached at the end of head-gaze vector (an invisible ray controlled by the position and rotation of the head). In "head-gaze and commit" model, the head-gaze cursor has to work with other commit inputs, such as air tap gesture and voice commands, to execute the manipulation. In HoloLens, users can freely switch between suggested commit inputs. In HoloLens 2, users can also switch between "hand rays" and "Head-gaze and commit" excepts using air tap gesture as the way of commit. <br>
+The head-gaze cursor is a dot that attaches to the end of an invisible head-gaze vector that uses the position and rotation of the head to point. To execute actions, this pointing cursor is paired with various commit inputs such as air tap, voice commands, dwell, and button press. In HoloLens 2, head-gaze is best paired with any commit input that is not air tap, as there will be interaction conflict between air tap and far hand rays. <br>
 ![head gaze cursor hand](images/head-gaze-cursor-hand.png)
 ![head gaze cursor voice](images/head-gaze-cursor-voice.png)<br>
 
