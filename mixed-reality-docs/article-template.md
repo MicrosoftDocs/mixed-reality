@@ -14,6 +14,8 @@ keywords: none
 
 **Introduction - high-level overview of the topic.** Modernipsum dolor sit amet idealism neo-minimalism, pop art street art cubo-futurism cobra, realism expressionism academic jugendstil. Romanticism cubism video game art synchromism neoclassicism international gothic baroque, vorticism street art suprematism abstract expressionism. 
 
+<br>
+
 ## Device support
 
 <table>
@@ -41,7 +43,7 @@ keywords: none
 
 
 
-## Section #1 2 & 3 columns
+## Section #1 - 2 & 3 columns
 
 A section can contain any or all of the following:  
 
@@ -109,7 +111,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #2 4 columns
+## Section #2 - 4 columns
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
 
@@ -145,7 +147,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #3 split text/image and bullets
+## Section #3 - Split text/image and bullets
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism.<br>
 
@@ -180,7 +182,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #4 large images
+## Section #4 - Large images
 
 ### Table layout
 
@@ -215,7 +217,7 @@ Set iframe to width="940" height="530".
 
 ---
 
-## Section #5 - pull quotes
+## Section #5 - Pull quotes
 
 > *“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”*<br>
 > — Dr. Seuss
