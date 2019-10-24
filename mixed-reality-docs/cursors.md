@@ -68,20 +68,16 @@ The head-gaze cursor is a dot that attaches to the end of an invisible head-gaze
 ## Cursor customization principles
 If you would like to customize your own cursor feedback behaviors and appearances, please reference principles below:
 
-### Always present
-* We recommend that the cursor is always present.
-* If the user can't find the cursor, then they're lost.
-* Exceptions to this are instances where having a cursor provides a suboptimal experience for the user. An example is when a user is watching a video. The cursor becomes undesirable at this point as it's in the middle of the video all the time. This is a scenario where you may consider making the cursor only visible when the user has their hand up indicating a desire to take action. Otherwise, it's not visible on the video.
 
 ### Cursor scale
 * The cursor should be no larger than the available targets, allowing users to easily interact with and view the content.
-* Depending on the experience you create, scaling the cursor as the user looks around is also an important consideration. For example, as the user looks further away in your experience perhaps the cursor should not become too small such that its lost.
-* When scaling the cursor, consider applying a soft animation to it as it scales giving it an organic feeling.
+* Depending on the experience you create, scaling the cursor as the user looks around is also an important consideration. For example, as the user looks further away in your experience, the cursor should not become too small such that it's lost.
+* When scaling the cursor, consider applying a soft animation to it as it scales to give it an organic feeling.
 * Avoid obstructing content. Holograms are what make the experience memorable and the cursor should not be taking away from them.
 
-### Directionless cursor
-* Although there is no one right cursor shape, we recommend that you use a directionless shape like a torus or something else. A cursor that points in some direction (ex: a traditional arrow cursor) might confuse the user to always look that way.
-* An exception to this is when using the cursor to communicate interaction instruction to the user. For example, when scaling holograms in the Windows Holographic shell, the cursor temporarily includes arrows that help instruct the user on how to move their hand to scale the hologram.
+### Directionless cursor shape
+* Although there is no one right cursor shape, we recommend that you use a directionless shape like a torus. A cursor that points in some direction (ex: a traditional arrow cursor) might confuse the user to always look that way.
+* An exception to this is when using the cursor to communicate interaction instruction to the user. For example, when scaling holograms in the Mixed Reality OS, the cursor temporarily includes arrows that instructs the user on how to move their hand to scale the hologram.
 
 ### Look and feel
 * A donut or torus shaped cursor works for a lot of applications.
