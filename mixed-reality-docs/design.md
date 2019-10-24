@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Start designing and prototyping
-description: I’m ready to create something. Learn the basic concepts you need to begin designing and prototyping.
+description: If you're ready to create something, learn the basic concepts you need to begin designing and prototyping.
 author: grbury 
 ms.author: grbury
 ms.date: 08/24/2019
@@ -41,7 +41,7 @@ One of the advantages of developing apps for mixed reality is that there is a sp
 <br>
 
 ### [Keeping holograms in place - (Coordinate systems)](coordinate-systems.md)
-At their core, mixed reality apps place holograms in your world that look and sound like real objects. This involves precisely positioning those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created.
+At their core, mixed reality apps place holograms in your world to look and sound like real objects. This involves precisely positioning those holograms at places in the world that are meaningful to the user, whether it's their physical room or a virtual realm you've created.
 
 <br>
 
@@ -76,7 +76,7 @@ Voice is one of the key forms of input on HoloLens. It allows you to directly co
 <br>
 
 ### [Leveraging the user's eye-gaze](eye-tracking.md)
-HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at.
+HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what users are looking at.
 
 <br>
 
@@ -86,7 +86,7 @@ Designing content for mixed reality requires careful consideration of color, lig
 <br>
 
 ### [Suggesting the scale of an object](scale.md)
-A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
+A key to displaying content that looks realistic in holographic form is to mimic the visual characteristics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
 
 <br>
 
@@ -150,7 +150,7 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
     :::column:::
         [![Start developing](images/icon-developer.jpg)](development.md)<br>
         **[Start developing](development.md)**<br>
-        Choose a development path based on your skill level, work style or platform interest.
+        Choose a development path based on your skill level, work style, or platform interest.
     :::column-end:::
 :::row-end:::
 

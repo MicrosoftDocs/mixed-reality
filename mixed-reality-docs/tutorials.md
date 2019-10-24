@@ -4,7 +4,7 @@ title: Tutorials and sample apps
 description: Provides code samples and tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/26/2019
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---
@@ -32,14 +32,15 @@ The open source sample apps are applications that have been created by our teams
 
 ## Mixed Reality Academy tutorials
 
-The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files: 
+The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files:
+
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
-* Most courses cover concepts applicable to both HoloLens and immersive (VR) headsets. 
-* Each tutorial is organized by chapter, and most include video demonstrations of the key concepts. 
+* Most courses cover concepts applicable to both HoloLens and immersive (VR) headsets.
+* Each tutorial is organized by chapter, and most include video demonstrations of the key concepts.
 * A Windows 10 PC with the correct [tools installed](install-the-tools.md) is a common prerequiste to complete each tutorial.
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">

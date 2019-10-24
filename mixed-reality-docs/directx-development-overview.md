@@ -1,6 +1,6 @@
 ---
 title: DirectX development overview 
-description: Building a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly.
+description: Build a DirectX-based mixed reality engine using the Windows Mixed Reality APIs directly.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
@@ -13,7 +13,7 @@ keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, 
 # DirectX development overview
 
 
-Windows Mixed Reality applications use the [holographic rendering](rendering.md), [gaze](gaze.md), [gesture](gestures.md), [motion controller](motion-controllers.md), [voice](voice-input.md), and [spatial mapping](spatial-mapping-in-directx.md) APIs to build [mixed reality](mixed-reality.md) experiences for HoloLens and immersive headsets. You can create mixed reality applications using a 3D engine, such as [Unity](unity-development-overview.md), or you can directly code to the Windows Mixed Reality APIs using DirectX 11 or DirectX 12. If you are leveraging the platform directly, you'll essentially be building your own middleware or framework. The Windows APIs support applications written in both C++ and C#. If you choose to use C#, your application can leverage the [SharpDX](http://sharpdx.org/) open source software library.
+Windows Mixed Reality applications use the [holographic rendering](rendering.md), [gaze](gaze-and-commit.md), [gesture](gestures.md), [motion controller](motion-controllers.md), [voice](voice-input.md), and [spatial mapping](spatial-mapping-in-directx.md) APIs to build [mixed reality](mixed-reality.md) experiences for HoloLens and immersive headsets. You can create mixed reality applications using a 3D engine, such as [Unity](unity-development-overview.md), or you can directly code to the Windows Mixed Reality APIs using DirectX 11 or DirectX 12. If you are leveraging the platform directly, you'll essentially be building your own middleware or framework. The Windows APIs support applications written in both C++ and C#. If you choose to use C#, your application can leverage the [SharpDX](http://sharpdx.org/) open source software library.
 
 
 Windows Mixed Reality supports [two kinds of apps](app-views.md):
@@ -35,7 +35,7 @@ This is a great way to get the code that you need to add holographic rendering s
 The following topics discuss the base requirements of adding Windows Mixed Reality support to DirectX-based middleware:
 
 * [Creating a holographic DirectX project](creating-a-holographic-directx-project.md): The holographic application template coupled with the documentation shows you the differences between what you're used to as well as the special requirements introduced by a device that's designed to function while resting on your head.
-* [Getting a HolographicSpace](getting-a-holographicspace.md): You'll first need to create a HolographicSpace That will provide your application the sequence of HolographicFrame objects that represent each head position from which you'll render.
+* [Getting a HolographicSpace](getting-a-holographicspace.md): You'll first need to create a HolographicSpace that will provide your application the sequence of HolographicFrame objects that represent each head position from which you'll render.
 * [Rendering in DirectX](rendering-in-directx.md): Since a holographic swap chain has two render targets, you'll need to make some changes to the way your application renders.
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md): Windows Mixed Reality learns and updates its understanding of the world as the user walks around. This provides spatial coordinate systems that applications use to reason about the user's surroundings, including spatial anchors and the user's defined spatial stage.
 

@@ -13,17 +13,17 @@ keywords: HoloLens, Remoting, Holographic Remoting
 # Holographic Remoting Player
 
 >[!IMPORTANT]
->Holographic Remoting for HoloLens 2 is a major version change. [Host applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [host applications for **HoloLens 2**](holographic-remoting-create-host.md) must use **2.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa.
+>Holographic Remoting for HoloLens 2 is a major version change. [Host applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [host applications for **HoloLens 2**](holographic-remoting-create-host.md) must use **2.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
 
 The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
 
 The Holographic Remoting Player can only be used with PC apps that are specifically designed to support Holographic Remoting.
 
-The Holographic Remoting Player is available for both HoloLens and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remoting with HoloLens 2. Please contact your app provider if you have questions about which versions are supported.
+The Holographic Remoting Player is available for both HoloLens (1st gen) and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remoting with HoloLens 2. Please contact your app provider if you have questions about which versions are supported.
 
 ## Connecting to the Holographic Remoting Player
 
-Follow your app's instructions to connect to the Holographic Remoting Player. You will need to enter the IP address of your HoloLens device, which you can see on the Remoting Player's main screen as follows:
+Follow your app's instructions to connect to the Holographic Remoting Player. You will need to enter the IP address of your HoloLens device, which you can see on the Remoting Player's main screen, as follows:
 
 ![Holographic Remoting Player](images/holographicremotingplayer.png)
 
@@ -53,11 +53,11 @@ On **HoloLens 2** the app will show you:
 
 * **Video frames** - The first number displayed is skipped video frames, the second is reused video frames, and the third is received video frames. All numbers represent the count over the last second.
     * ```Received frames``` is the number of video frames which arrived over the last second. Under normal conditions this should be 60 but if it's not this is an indicator that either frames are dropped because of network issues or the remote/host side does not produce frames with the expected rate.
-    * ```Reused frames``` is the count of video frames which have been used more than once over the last second. For instance, if video frames arrive late the rendering loop of the player still renders a frame but needs to *reuse* the video frame it already used for the previous frame.
-    * ```Skipped frames``` is the count of video frames which have not been used by the rendering loop of the player. For instance, network jitter can have the effect that video frames arriving are not evenly distribute anymore, say some are late and others arrive in time with the result that they do not have a delta of 16.66 milliseconds anymore when running on 60Hz. Taking this it can occur that more than one frame arrives between two ticks of the render loop of the player. In this case the player *skips* one ore more frames as it's supposed to display always the most recent received video frame.
+    * ```Reused frames``` is the count of video frames used more than once over the last second. For instance, if video frames arrive late, the rendering loop of the player still renders a frame but needs to *reuse* the video frame it already used for the previous frame.
+    * ```Skipped frames``` is the count of video frames which have not been used by the rendering loop of the player. For instance, network jitter can have the effect that video frames arriving are not evenly distributed anymore. For example, if some are late and others arrive in time with the result that they do not have a delta of 16.66 milliseconds anymore when running on 60Hz. It can occur that more than one frame arrives between two ticks of the render loop of the player. In this case, the player *skips* one or more frames as it's supposed to always display the most recent received video frame.
 
     >[!NOTE]
-    >When facing network jitter usually skipped and reused frames are about the same. In contrast if you only see skipped frames this is an indicator that the player does not hit it's target frame rate. In this case you should keep an eye on the maximum render delta time when diagnosing issues.
+    >When facing network jitter, skipped and reused frames are usually about the same. In contrast, if you only see skipped frames, this is an indicator that the player does not hit its target frame rate. In this case, you should keep an eye on the maximum render delta time when diagnosing issues.
 
 * **Video frames delta** - The minimum/maximum delta between received video frames over the last second. This number usually correlates with skipped/reused frames in case of issues caused by network jitter.
 * **Latency** - The average turnaround in milliseconds over the last second. 

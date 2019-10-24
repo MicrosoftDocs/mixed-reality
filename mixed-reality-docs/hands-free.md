@@ -91,6 +91,7 @@ Does the user understand ...
 
 
 ## See also
+* [Eye gaze on HoloLens 2](eye-tracking.md)
 * [Head-gaze and commit](gaze-and-commit.md)
 * [Direct manipulation with hands](direct-manipulation.md)
 * [Point and commit with hands](point-and-commit.md)
