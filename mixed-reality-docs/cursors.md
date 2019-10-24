@@ -54,7 +54,7 @@ The finger cursor is available only on the HoloLens 2 to enhance the "Direct man
 ![finger cursor](images/finger-cursor.png)<br>
 
 ## Ray cursor
-Ray cursors attach to the end of far pointing rays to allow manipulation of objects that are out of hands-reach. In Windows Mixed Reality immersive headsets, the rays shoot out from motion controllers and end in dot cursors. In HoloLens 2, we leverage the mental model of these motion controller rays and designed hand rays that originate from the palms and end in ring-shaped cursors that are consistent with finger cursors used in direct manipulation. <br>
+Ray cursors attach to the end of far pointing rays to allow manipulation of objects that are out of hands-reach. In immersive headsets, the rays shoot out from motion controllers and end in dot cursors. In HoloLens 2, we leverage the mental model of these motion controller rays and designed hand rays that originate from the palms and end in ring-shaped cursors that are consistent with finger cursors used in direct manipulation. <br>
 ![ray cursor controller](images/ray-cursor-controller.png)
 ![ray cursor hand](images/ray-cursor-hand.png)<br>
 
