@@ -1,9 +1,9 @@
 ---
 title: Using Visual Studio to deploy and debug 
 description: How to build, debug, and deploy apps for HoloLens and Windows Mixed Reality using Visual Studio.
-author: JonMLyons
+author: pbarnettms
 ms.author: pbarnett
-ms.date: 03/21/2018
+ms.date: 10/24/2019
 ms.topic: article
 keywords: Visual Studio, HoloLens, Mixed Reality, debug, deploy
 ---
