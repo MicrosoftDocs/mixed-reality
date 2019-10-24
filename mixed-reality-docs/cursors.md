@@ -14,7 +14,7 @@ A cursor, or indicator of your current targeting vector, provides continuous fee
 
 The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.
 
-There are 3 kinds of cursors, including finger cursor, ray cursor and head cursor, to work with different input modalities on HoloLens, HoloLens 2 and immersive headsets. According to your chosen interaction model, please adopt a related type of cursor to match the goal. In MRTK, We've made all types of cursors into modules that you can use it by drag and drop.    
+There are 3 kinds of cursors: finger, ray, and head-gaze. These pointing cursors work with different input modalities on HoloLens, HoloLens 2, and immersive headsets. Below is guidance on which type of cursor to use for each type of headset and interaction model. In MRTK, we've created drag-and-drop cursors modules to help you build the right pointing experience.
 
 <table>
     <colgroup>
@@ -50,11 +50,13 @@ There are 3 kinds of cursors, including finger cursor, ray cursor and head curso
 </table>
 
 ## Finger cursor
-The finger cursor mainly and newly design for HoloLens 2 to enhence the "direct manipulation with hands." The idea is to attach a ring cursor at the tip of the index finger. The diameter of the ring changes according to the distance between the index finger tip and the target.<br>
+The finger cursor is available only on the HoloLens 2 to enhance the "Direct manipulation with hands" interaction mode. To better understand where the finger is pointing, we have attached rings to the tips of both index fingers. The ring size is based on the proximity of the finger to the UI surface (the closer the finger, the smaller the ring) and will shrink to a dot shape when the finger makes contact with the UI. <br>
 ![finger cursor](images/finger-cursor.png)<br>
 
 ## Ray cursor
-The ray cursor is a cursor attached at the end of a far targeting ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from motion controllers with a dot cursor at the end. In HoloLens 2, we leaverage the mental modal of motion controller rays to have the rays come from the hand palms. This makes the interactions modals of "motion controller" and "point and commit with hands" in sync. We use the a ring shape to represnet the curosr, instead of a dot, to keep consistant with the finger cursor in HoloLens 2. <br>
+The ray cursor is attached to the end of a far pointing ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from motion controllers with a dot cursor at the end. In HoloLens 2, we leaverage the mental modal of motion controller rays to have the rays come from the hand palms. This makes the interactions modals of "motion controller" and "point and commit with hands" in sync. We use the a ring shape to represnet the curosr, instead of a dot, to keep consistant with the finger cursor in HoloLens 2. <br>
+
+Ray cursors attach to the end of far pointing rays. In Windows Mixed Reality immersive headsets, the rays shoot out from motion controllers and end in a dot cursor wherever it makes contact with UI. 
 ![ray cursor controller](images/ray-cursor-controller.png)
 ![ray cursor hand](images/ray-cursor-hand.png)<br>
 
