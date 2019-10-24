@@ -10,26 +10,63 @@ keywords: HoloLens (1st gen), HoloLens 2, Mixed Reality, cursors, targeting, gaz
 
 # Cursors
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](news.md).
-
-
-A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where HoloLens believes their current focus is at that time. The cursor allows the user to understand their current targeting point and acts as feedback to indicate what area, hologram, or point will respond to input. It is the digital representation of where the device understands the user's attention to be (though that may not be the same as determining anything about their intentions).
+A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where the headset believes their current focus is at that time. The cursor allows the user to understand their current targeting point and acts as feedback to indicate what area, hologram, or point will respond to input. It is the digital representation of where the device understands the user's attention to be (though that may not be the same as determining anything about their intentions).
 
 The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.
 
-## HoloLens (1st gen)
+There are 3 kinds of cursors, including finger cursor, ray cursor and head cursor, to work with different input modalities on HoloLens, HoloLens 2 and immersive headsets. According to your chosen interaction model, please adopt a related type of cursor to match the goal. In MRTK, We've made all types of cursors into modules that you can use it by drag and drop.    
 
-Targeting of content on HoloLens (1st gen) is done primarily with the [gaze](gaze-and-commit.md) vector (a ray controlled by the position and rotation of the head). This provides a form of direct input for the user that needs little teaching. However, users have difficulty using an unmarked center of gaze for precise targeting so a cursor ensures users know the point they are currently targeting. 
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Finger cursor</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
+     <tr>
+        <td>Ray cursor</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
+    <tr>
+        <td>Head-gaze cursor</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️</td>
+    </tr>
+</table>
+
+## Finger cursor
+The finger cursor mainly and newly design for HoloLens 2 to enhence the "direct manipulation with hands." The idea is to attach a ring cursor at the tip of the index finger. The diameter of the ring changes according to the distance between the index finger tip and the target.<br>
+![finger cursor](images/finger-cursor.png)<br>
+
+## Ray cursor
+The ray cursor is a cursor attached at the end of a far targeting ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from motion controllers with a dot cursor at the end. In HoloLens 2, we leaverage the mental modal of motion controller rays to have the rays come from the hand palms. This makes the interactions modals of "motion controller" and "point and commit with hands" in sync. We use the a ring shape to represnet the curosr, instead of a dot, to keep consistant with the finger cursor in HoloLens 2. <br>
+![ray cursor controller](images/ray-cursor-controller.png)
+![ray cursor hand](images/ray-cursor-hand.png)<br>
 
 
-## Positioning
+## Head-gaze cursor
+The head-gaze cursor is a cursor attached at the end of head-gaze vector (an invisible ray controlled by the position and rotation of the head). In "head-gaze and commit" model, the head-gaze cursor has to work with other commit inputs, such as air tap gesture and voice commands, to execute the manipulation. In HoloLens, users can freely switch between suggested commit inputs. In HoloLens 2, users can also switch between "hand rays" and "Head-gaze and commit" excepts using air tap gesture as the way of commit. <br>
+![head gaze cursor hand](images/head-gaze-cursor-hand.png)
+![head gaze cursor voice](images/head-gaze-cursor-voice.png)<br>
 
-In general, the indicator should move in approximately a 1:1 ratio with head movement. There are some cases where gain (augmenting or diminishing movement noticeably) might be used as an intentional mechanic, but it will cause trouble for users if used unexpectedly (note that there is a tiny bit of 'lag' recommended for the cursor to avoid issues with fully display-locked content). Most importantly though, experiences should be "honest" in the representation of cursor position - if smoothing, magnetism, gain, or other effects are included, the system should still show the cursor wherever the system's understanding of position is, with those effects included. The cursor is the system's way of telling the user what they can or can't interact with, not the user's way of telling the system.
 
-The indicator should ideally lock in depth to whatever elements the user can plausibly target. This may mean surface-locking if there is some [Spatial Mapping](spatial-mapping.md) mesh or locking to the depth of any "floating" UI elements, to help the user understand what they can interact with in real-time.
-
-## Cursor design principles
+## Cursor customization principles
+If you would like to customize your own cursor feedback behaviors and appearances, please reference principles below:
 
 ### Always present
 * We recommend that the cursor is always present.
