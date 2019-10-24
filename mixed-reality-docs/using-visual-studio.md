@@ -85,7 +85,7 @@ Follow these instructions when using a Windows Mixed Reality immersive headset t
 2. Select **Local Machine** in the deployment target drop-down menu
 3. Select **Debug > Start debugging** to deploy your app and start debugging
 
-## Pairing your device - HoloLens (1st gen) and HoloLens 2
+## Pairing your device 
 
 The first time you deploy an app from Visual Studio to your HoloLens, you will be prompted for a PIN. On the HoloLens, generate a PIN by launching the Settings app, go to **Update > For Developers** and tap on **Pair**. A PIN will be displayed on your HoloLens; type this PIN in Visual Studio. After pairing is complete, tap **Done** on your HoloLens to dismiss the dialog. This PC is now paired with the HoloLens and you will be able to deploy apps automatically. Repeat these steps for every subsequent PC that is used to deploy apps to your HoloLens.
 
