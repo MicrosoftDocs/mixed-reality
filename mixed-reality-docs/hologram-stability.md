@@ -91,17 +91,17 @@ Applications need to take specific actions to enable the different types of repr
 
 ### Choosing Reprojection Technique
 
-Stabilization Type |	On Immersive Headsets |	On HoloLens generation 1 |	On HoloLens 2 |	When using Unity
---- | --- | --- | --- | ---
-Depth Reprojection |	Recommended |	N/A |	Recommended |	HoloLens 2: Applications must use  Unity 2018.4.12 or later or Unity 2019.3 or later. Otherwise use Automatic Planar Reprojection.
-Automatic Planar Reprojection |	N/A |	Recommended default |	Recommended if Depth Reprojection is not giving the best results |	HoloLens 2: Applications are recommended to use Unity 2018.4.12 or later or Unity 2019.3 or later.  Previous Unity versions will work with slightly degraded reprojection results.
+Stabilization Type |	Immersive Headsets |	HoloLens generation 1 |	HoloLens 2
+--- | --- | --- | ---
+Depth Reprojection |	Recommended |	N/A |	Recommended<br/><br/>Unity applications must use Unity 2018.4.12 or later or Unity 2019.3 or later. Otherwise use Automatic Planar Reprojection.
+Automatic Planar Reprojection |	N/A |	Recommended default |	Recommended if Depth Reprojection is not giving the best results<br/><br/>Unity applications are recommended to use Unity 2018.4.12 or later or Unity 2019.3 or later.  Previous Unity versions will work with slightly degraded reprojection results.
 Planar Reprojection |	Not Recommended |	Recommended if Automatic Planar is not giving the best results |	Use if neither of the depth options give desired results	
 
 ### Verifying Depth is Set Correctly
 			
 When a reprojection method uses the depth buffer, it is important to verify that the contents of the depth buffer represents the application's rendered scene.  A number of factors can cause problems.  If there is a second camera used to render, say, user interface overlays, it is likely to overwrite all the depth information from the actual view.  Transparent objects often don't set depth.  Some text rendering will not set depth by default.  There will be visible glitches in the rendering when depth does not match the rendered holograms.
 			
-HoloLens 2 has a visualizer to show where depth is and is not being set.  Enable this from Device Portal.  On the "Views -> Hologram Stability" tab, select the "Display depth visualization in headset" checkbox.  Areas that have depth set properly will be blue.  Rendered things that do not have depth set will be red and therefore need fixing.  Note that the visualization of the depth will not show up in Mixed Reality Capture.  It is only visible through the device.
+HoloLens 2 has a visualizer to show where depth is and is not being set.  Enable this from Device Portal.  On the **Views** > **Hologram Stability** tab, select the **Display depth visualization in headset** checkbox.  Areas that have depth set properly will be blue.  Rendered things that do not have depth set will be red and therefore need fixing.  Note that the visualization of the depth will not show up in Mixed Reality Capture.  It is only visible through the device.
 			
 Some GPU viewing tools will allow visualization of the depth buffer.  Application developers can use these tools to make sure depth is being set properly.  Consult the documentation for the application's tools.
 
