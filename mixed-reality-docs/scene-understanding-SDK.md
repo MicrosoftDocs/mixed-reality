@@ -3,7 +3,7 @@ title: Scene understanding SDK
 description: Programming guide to the Scene Understanding SDK
 author: szymons
 ms.author: szymons
-ms.date: 07/08/19
+ms.date: 07/08/2019
 ms.topic: article
 keywords: Scene Understanding, Spatial Mapping, Windows Mixed Reality, Unity
 ---
