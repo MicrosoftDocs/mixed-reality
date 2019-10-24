@@ -83,14 +83,14 @@ We have done user research with different menus layouts and locations, the follo
     :::column:::
         ![Above arm](images/AboveArm.gif)<br>
         **Above the arm**<br>
-1. Difficult to maintain good hand tracking
-2. Causes user fatigue due to unnatural position
+        1. Difficult to maintain good hand tracking
+        2. Causes user fatigue due to unnatural position
     :::column-end:::
     :::column:::
         ![Above fingers](images/AboveFingers.gif)<br>
         **Above fingers**<br>
-1. Hand fatigue due to holding hand for long time
-2. Hand tracking issues on index and middle finger
+        1. Hand fatigue due to holding hand for long time
+        2. Hand tracking issues on index and middle finger
     :::column-end:::
 :::row-end:::
 
@@ -100,15 +100,15 @@ We have done user research with different menus layouts and locations, the follo
     :::column:::
         ![Above center palm](images/handCenter.gif)<br>
         **Above-center palm**<br>
-1. Hand tracking issues due to overlapping hands
-2. Hand fatigue due to holding hands for long time in order to interact with menus
+        1. Hand tracking issues due to overlapping hands
+        2. Hand fatigue due to holding hands for long time in order to interact with menus
     :::column-end:::
     :::column:::
         ![Top Fingertip](images/TopFingerTip.gif)
         **Top fingertip**<br>
-1. Hand tracking issues
-2. Hand fatigue holding hand above normal posture
-3. Issues pressing buttons with other fingers by accident due to limited space between fingers
+        1. Hand tracking issues
+        2. Hand fatigue holding hand above normal posture
+        3. Issues pressing buttons with other fingers by accident due to limited space between fingers
     :::column-end:::
 :::row-end:::
 
@@ -118,8 +118,8 @@ We have done user research with different menus layouts and locations, the follo
     :::column:::
         ![Back of the Arm](images/BackOfTheArm.gif)<br>
         **Back of the arm**<br>
-1. Can trigger home button by accident
-2. Not a natural or comfortable position for users
+        1. Can trigger home button by accident
+        2. Not a natural or comfortable position for users
     :::column-end:::
     :::column:::
     :::column-end:::
