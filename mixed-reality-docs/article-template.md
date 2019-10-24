@@ -211,7 +211,21 @@ Set iframe to width="940" height="530".
 
 <br>
 
+<br>
 
+---
+
+## Section #5 - pull quotes
+
+> *“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”*<br>
+> — Dr. Seuss
+
+> *“One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.”*<br>
+> — Carl Sagan
+
+<br>
+
+---
 
 ## See also
 
