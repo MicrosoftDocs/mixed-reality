@@ -14,7 +14,7 @@ A cursor, or indicator of your current targeting vector, provides continuous fee
 
 The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.
 
-There are 3 different kinds of cursors, including finger cursor, ray cursor and head cursor, to work with different input modalities on HoloLens, HoloLens 2 and immersive headsets. According to your chosen interaction model, please adopt a related type of cursor to match the goal. In MRTK, We've made all types of cursors into modules that you can use it by drag and drop.    
+There are 3 kinds of cursors, including finger cursor, ray cursor and head cursor, to work with different input modalities on HoloLens, HoloLens 2 and immersive headsets. According to your chosen interaction model, please adopt a related type of cursor to match the goal. In MRTK, We've made all types of cursors into modules that you can use it by drag and drop.    
 
 <table>
     <colgroup>
@@ -48,6 +48,15 @@ There are 3 different kinds of cursors, including finger cursor, ray cursor and 
         <td>✔️</td>
     </tr>
 </table>
+
+## Finger cursor
+The finger cursor mainly and newly design for HoloLens 2 to enhence the direct manipulation with hands. The idea is to attach a ring cursor at the tip of the index finger. The diameter of the ring changes according to the distance between the index finger tip and the target. 
+
+## Ray cursor
+The ray cursor is a cursor attached at the end of a far targeting ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from 6Dof controllers with a dot cursor. In HoloLens 2, we leaverage the mental modal of 6 DoF rays to have the rays come from the hand palms.    
+
+## Head cursor
+The head cursor design for 
 
 ## HoloLens (1st gen)
 
