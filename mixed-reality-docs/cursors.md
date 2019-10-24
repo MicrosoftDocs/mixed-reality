@@ -14,7 +14,7 @@ A cursor, or indicator of your current targeting vector, provides continuous fee
 
 The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.
 
-There are 3 different kinds of cursors, including finger cursor, ray cursor and head cursor, to work with different input modalities on HoloLens, HoloLens 2 and immersive headsets.   
+There are 3 different kinds of cursors, including finger cursor, ray cursor and head cursor, to work with different input modalities on HoloLens, HoloLens 2 and immersive headsets. According to your chosen interaction model, please adopt a related type of cursor to match the goal. In MRTK, We've made all types of cursors into modules that you can use it by drag and drop.    
 
 <table>
     <colgroup>
