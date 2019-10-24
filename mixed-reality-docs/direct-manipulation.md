@@ -296,6 +296,11 @@ You may have noticed that there are interaction parallels we can draw between ha
 
 ---
 
+
+<br>
+
+---
+
 ## Optimize with eye tracking
 
 Direct manipulation can feel magical if it works as intended. But it can also become frustrating if you can’t move your hand anywhere without unintentionally triggering a hologram. Eye tracking potentially helps to better identify what the user’s intent is.

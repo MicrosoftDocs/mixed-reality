@@ -39,12 +39,14 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 3. **Follow the hologram quality guidelines.** Performant apps that implement the [hologram quality guidance](hologram-stability.md) are less likely to result in user discomfort.
 4. **Distribute holograms horizontally rather than vertically.** Forcing the user to spend extended periods of time looking up or down can lead to fatigue in the neck.
 
+
 ## Input
 
 ### Interaction models
 
 Make sure the hologram interactions work with your chosen [interaction model](interaction-fundamentals.md).
 It's also a good idea to validate with different accessories, like mouse and keybouard, if these acccessories are needed to support accessibility.
+
 
 **Validate when your app has a different behavior with mouse and touch.** This will identify inconsistencies and help with design decisions to make the experience more natural for users. For example, triggering an action based on hover.
 
