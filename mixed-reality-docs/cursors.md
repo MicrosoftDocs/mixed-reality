@@ -61,7 +61,8 @@ The ray cursor is a cursor attached at the end of a far targeting ray. In Window
 
 ## Head-gaze cursor
 The head-gaze cursor is a cursor attached at the end of head-gaze vector (an invisible ray controlled by the position and rotation of the head). In "head-gaze and commit" model, the head-gaze cursor has to work with other commit inputs, such as air tap gesture and voice commands, to execute the manipulation. In HoloLens, users can freely switch between suggested commit inputs. In HoloLens 2, users can also switch between "hand rays" and "Head-gaze and commit" excepts using air tap gesture as the way of commit. <br>
-![head gaze cursor](images/head-cursor-temp.PNG)<br>
+![head gaze cursor hand](images/head-gaze-cursor-hand.png)
+![head gaze cursor voice](images/head-gaze-cursor-voice.png)<br>
 
 
 ## Cursor customization principles
