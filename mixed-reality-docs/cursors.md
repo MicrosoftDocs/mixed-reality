@@ -55,7 +55,7 @@ The finger cursor mainly and newly design for HoloLens 2 to enhence the "direct 
 
 ## Ray cursor
 The ray cursor is a cursor attached at the end of a far targeting ray. In Windows Mixed Realiry of immersive headsets, the rays shoot out from motion controllers with a dot cursor at the end. In HoloLens 2, we leaverage the mental modal of motion controller rays to have the rays come from the hand palms. This makes the interactions modals of "motion controller" and "point and commit with hands" in sync. We use the a ring shape to represnet the curosr, instead of a dot, to keep consistant with the finger cursor in HoloLens 2. <br>
-![ray cursor controller](images/ray-cursor-controller.png)<br>
+![ray cursor controller](images/ray-cursor-controller.png)
 ![ray cursor hand](images/ray-cursor-hand.png)<br>
 
 
