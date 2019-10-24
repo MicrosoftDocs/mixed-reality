@@ -109,7 +109,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #2 name
+## Section #2 4 columns
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art. Luminism situationist international neoclassicism.<br>
 
@@ -145,7 +145,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #3 name
+## Section #3 split text and image
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism.<br>
 
@@ -158,7 +158,7 @@ Les nabis photorealism action painting color field painting stuckism internation
         *Image: Description of what the image is here.*
     :::column-end:::
         :::column:::
-        ![space](images/spacer-20x582.png)<br>
+        ![Add this spacer when trying to top align with H3 text](images/spacer-20x582.png)<br>
        ![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)<br>
     :::column-end:::
 :::row-end:::
@@ -180,7 +180,7 @@ Les nabis photorealism action painting color field painting stuckism internation
 
 ---
 
-## Section #4 name
+## Section #4 large images
 
 ### Table layout
 
