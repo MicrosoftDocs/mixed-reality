@@ -51,6 +51,7 @@ There are 3 kinds of cursors: finger, ray, and head-gaze. These pointing cursors
 
 ## Finger cursor
 The finger cursor is available only on the HoloLens 2 to enhance the "Direct manipulation with hands" interaction mode. To better understand where the finger is pointing, we have attached rings to the tips of both index fingers. The ring size is based on the proximity of the finger to the UI surface (the closer the finger, the smaller the ring) and will shrink to a dot shape when the finger makes contact with the UI. <br>
+
 ![finger cursor](images/finger-cursor.png)<br>
 **Visual feedback states of finger cursor**
 
