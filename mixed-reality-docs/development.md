@@ -73,8 +73,11 @@ The HoloLens 2 tutorials are designed to help developers learn both techniques a
 
 <br>
 
-### [Example Unity scenes in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
+### [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
 The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
+
+### [Eye tracking examples (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html)
+This page covers how to get quickly started with using eye tracking in MRTK by building on our provided MRTK eye tracking examples.
 
 <br>
 

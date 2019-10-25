@@ -22,7 +22,8 @@ In most head-mounted displays users will always accommodate to the focal distanc
 
 <br>
 
->[!VIDEO https://www.youtube.com/embed/-606oZKLa_s]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/-606oZKLa_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ### Guidance for holographic devices
 
@@ -41,7 +42,7 @@ Objects that move in depth are more likely than stationary objects to produce di
 
 ### Additional considerations for HoloLens 2 and near interaction distances
 
-When designing content for direct (near) interaction in HoloLens 2, or **in any applications where content must be placed closer than 1m, extra care should be taken to ensure user comfort**. The odds of discomfort due to the vergence-accommodation conflict increase exponentially with decreasing viewing distance. Additionally, users may experience increased bluriness when viewing content at near interaction distances, so we recommend testing content rendered both within the zone of optimal hologram placement as well as closer (less than 1.0m down to the clipping plane) to ensure it remains clear and comfortable to view. 
+When designing content for direct (near) interaction in HoloLens 2, or **in any applications where content must be placed closer than 1m, extra care should be taken to ensure user comfort**. The odds of discomfort due to the vergence-accommodation conflict increase exponentially with decreasing viewing distance. Additionally, users may experience increased blurriness when viewing content at near interaction distances, so we recommend testing content rendered both within the zone of optimal hologram placement as well as closer (less than 1.0m down to the clipping plane) to ensure it remains clear and comfortable to view. 
 
 **We recommend creating a “depth budget” for apps based on the amount of time a user is expected to view content that is near (less than 1.0m) and moving in depth**. An example is to avoid placing the user in those situations more than 25% of the time. If the depth budget is exceeded, we recommend careful user testing to ensure it remains a comfortable experience. 
 
@@ -161,7 +162,7 @@ To avoid eye and neck strain content should be designed so that excessive eye an
 
 The optimal (resting) gaze angle is considered between 10-20 degrees below horizontal, as the head tends to tilt downward slightly, especially during activities.
 
-![Allowable field of view (FOV) as determined by neck range of motion](images/optimal-field-of-view-2-750px.png)<br>
+![Allowable field of view (FOV) as determined by neck range of motion](images/optimal-field-of-view-2.png)<br>
 *Allowable field of view (FOV) as determined by neck range of motion*
 
 ## Arm positions
@@ -169,7 +170,7 @@ The optimal (resting) gaze angle is considered between 10-20 degrees below horiz
 Muscle fatigue can accumulate when users are expected to keep a hand raised throughout the duration of an experience. It can also be fatiguing to require the user to repeatedly make air tap gestures over long durations. We therefore recommend that experiences avoid requiring constant, repeated gesture input. This goal can be achieved by incorporating short breaks or offering a mixture of gesture and speech input to interact with the app.
 
 ## See also
-* [Gaze](gaze.md)
+* [Gaze](gaze-and-commit.md)
 * [Hologram stability](hologram-stability.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Holographic frame](holographic-frame.md)

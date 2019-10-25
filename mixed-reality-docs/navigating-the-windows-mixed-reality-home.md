@@ -34,7 +34,7 @@ Switch between the pinned apps and All apps views by selecting the plus or minus
 To launch an app, select it on Start. The Start menu will disappear, and the app will open in placement mode, as either a 2D window or a [3D model](implementing-3d-app-launchers.md).
 
 To run the app, you’ll need to then place it in your home:
-1. Use your [gaze](gaze.md) or controller to position the app where you want it. It will automatically adjust (in size and position) to conform to the space where you place it.
+1. Use your [gaze](gaze-and-commit.md) or controller to position the app where you want it. It will automatically adjust (in size and position) to conform to the space where you place it.
 2. Place the app using air-tap (HoloLens) or the Select button (immersive headsets). To cancel and bring back the Start menu, use the bloom gesture or the Windows button.
 
 [2D apps](building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
@@ -70,7 +70,7 @@ With **immersive headsets**, you can similarly get up and walk around in your pl
    * Using a mouse: hold down the right-click mouse button (and use the scroll wheel to rotate the direction you want to face when you teleport).
 2. Place the reticle where you want to teleport.
    * Using [motion controllers](motion-controllers.md): tilt the controller (on which you're holding the thumbstick forward) to move the reticle.
-   * Using an Xbox controller: use your [gaze](gaze.md) to move the reticle.
+   * Using an Xbox controller: use your [gaze](gaze-and-commit.md) to move the reticle.
    * Using a mouse: move your mouse to move the reticle.
 3. Release the button to teleport where the reticle was placed.
 
@@ -106,13 +106,13 @@ Within the Windows Mixed Reality home:
 * Pressing the **left-click** mouse button performs a select and acts like the [air tap](gestures.md#air-tap) gesture.
 * Holding the **right-click** mouse button brings up the [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) reticle.
 * Pressing the **Windows** key on the keyboard brings up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](gestures.md#bloom) gesture.
-* When [gazing](gaze.md) at a 2D desktop app, you can **left-click** to select, **right-click** to bring up context menus, and use the **scroll wheel** to scroll (just like on your PC's desktop).
+* When [gazing](gaze-and-commit.md) at a 2D desktop app, you can **left-click** to select, **right-click** to bring up context menus, and use the **scroll wheel** to scroll (just like on your PC's desktop).
 
 ## Cortana
 
 [Cortana](voice-input.md#hey-cortana) is your personal assistant in Windows Mixed Reality, just like on PC and phone. HoloLens has a built-in microphone, but immersive headsets may require additional hardware. Use Cortana to open apps, restart your device, look things up online, and more. Developers may also choose to [integrate Cortana](https://dev.windows.com/cortana) into their experiences.
 
-You can also use voice commands to get around your home. For example, point at a button (using [gaze](gaze.md) or a controller, depending on the device) and say “Select.” Other voice commands include “Go home,” “Bigger,” “Smaller,” “Close,” and “Face me.”
+You can also use voice commands to get around your home. For example, point at a button (using [gaze](gaze-and-commit.md) or a controller, depending on the device) and say “Select.” Other voice commands include “Go home,” “Bigger,” “Smaller,” “Close,” and “Face me.”
 
 ## Store, Settings, and system apps
 

@@ -111,7 +111,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 >[!VIDEO https://www.youtube.com/embed/W60xG15a8gc]
 
-In this chapter, we'll interact with our holograms. First, we'll add a cursor to visualize our [Gaze](gaze.md). Then, we'll add [Gestures](gestures.md) and use our hand to place our holograms in space.
+In this chapter, we'll interact with our holograms. First, we'll add a cursor to visualize our [Gaze](gaze-and-commit.md). Then, we'll add [Gestures](gestures.md) and use our hand to place our holograms in space.
 
 ### Objectives
 
@@ -613,7 +613,7 @@ In this chapter, we'll make the anchor able to be placed on real-world surfaces.
 
 ### Objectives
 
-* Place holograms on the spatial map based on players’ head position.
+* Place holograms on the spatial mapping mesh based on players’ head position.
 
 ### Instructions
 
