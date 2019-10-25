@@ -94,8 +94,8 @@ Navigation commands coming soon.
   * Tap the thumbstick left, right, or back to move left, right, or back in small increments.
   * Click down on the left thumbstick and hold, then move the thumbstick in the direction you want to [virtually "walk."](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * Tap the **right thumbstick** left or right to rotate the direction you're facing by 45 degrees.
-* Pressing the **A** button performs a select and acts like the [air tap](gestures.md#air-tap) gesture.
-* Pressing the **Guide** button brings up the [Start menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](gestures.md#bloom) gesture.
+* Pressing the **A** button performs a select and acts like the [air tap](gaze-and-commit.md#composite-gestures) gesture.
+* Pressing the **Guide** button brings up the [Start menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](system-gesture.md#bloom) gesture.
 * Pressing the **left and right triggers** lets you zoom in and out of a 2D desktop app you're interacting with in the home.
 
 ### Keyboard and mouse
@@ -103,9 +103,9 @@ Navigation commands coming soon.
 **Note:** Use **Windows Key + Y** to switch the mouse between controlling your PC's desktop and the Windows Mixed Reality home.
 
 Within the Windows Mixed Reality home:
-* Pressing the **left-click** mouse button performs a select and acts like the [air tap](gestures.md#air-tap) gesture.
+* Pressing the **left-click** mouse button performs a select and acts like the [air tap](gaze-and-commit.md#composite-gestures) gesture.
 * Holding the **right-click** mouse button brings up the [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) reticle.
-* Pressing the **Windows** key on the keyboard brings up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](gestures.md#bloom) gesture.
+* Pressing the **Windows** key on the keyboard brings up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](system-gesture.md#bloom) gesture.
 * When [gazing](gaze-and-commit.md) at a 2D desktop app, you can **left-click** to select, **right-click** to bring up context menus, and use the **scroll wheel** to scroll (just like on your PC's desktop).
 
 ## Cortana

@@ -36,7 +36,7 @@ Windows Mixed Reality [motion controllers](motion-controllers.md) are supported 
 
 ## HoloLens Clicker
 
-The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens Development Edition. The HoloLens Clicker allows a user to click and scroll with minimal hand motion as a replacement for the air-tap gesture. It is not a replacement for all [gestures](gestures.md). For instance, [bloom](gestures.md#bloom) and [resize or move](gestures.md#composite-gestures) gestures use hand motions. The HoloLens clicker is an orientation sensor device with a simple button. It connects to the HoloLens using Bluetooth Low Energy (BTLE).
+The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens Development Edition. The HoloLens Clicker allows a user to click and scroll with minimal hand motion as a replacement for the air-tap gesture. It is not a replacement for all [gestures](gaze-and-commit.md#composite-gestures). For instance, [bloom](system-gesture.md#bloom) and [resize or move](gaze-and-commit.md#composite-gestures) gestures use hand motions. The HoloLens clicker is an orientation sensor device with a simple button. It connects to the HoloLens using Bluetooth Low Energy (BTLE).
 
 ![The HoloLens Clicker](images/hololens-clicker-500px.jpg)
 

@@ -167,7 +167,7 @@ In this chapter, you'll learn about designing voice commands. When creating voic
 (If you already built/deployed this project in Visual Studio during set-up, then you can open that instance of VS and click 'Reload All' when prompted).
 
 * In Visual Studio, click **Debug -> Start Without debugging** or press **Ctrl + F5**.
-* After the application deploys to the HoloLens, dismiss the fit box using the [air-tap](gestures.md#air-tap) gesture.
+* After the application deploys to the HoloLens, dismiss the fit box using the [air-tap](gaze-and-commit.md#composite-gestures) gesture.
 * Gaze at the astronaut's watch.
 * When the watch has focus, verify that the cursor changes to a microphone. This provides feedback that the application is listening for voice commands.
 * Verify that a tooltip appears on the watch. This helps users discover the *"Open Communicator"* command.

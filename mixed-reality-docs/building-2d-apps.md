@@ -155,7 +155,7 @@ It is important to test your app to make sure the text is readable, the buttons 
 
 ## New input possibilities
 
-HoloLens uses advanced depth sensors to see the world and see users. This enables advanced hand gestures like [bloom](gestures.md#bloom) and [air-tap](gestures.md#air-tap). Powerful microphones also enable [voice experiences](voice-input.md).
+HoloLens uses advanced depth sensors to see the world and see users. This enables advanced hand gestures like [bloom](system-gesture.md#bloom) and [air-tap](gaze-and-commit.md#composite-gestures). Powerful microphones also enable [voice experiences](voice-input.md).
 
 With Desktop headsets, users can use motion controllers to point at apps and take action. They can also use a gamepad, targeting objects with their gaze.
 
@@ -174,8 +174,7 @@ Once your app is up and running, package your app to [submit it to the Microsoft
 
 ## See also
 * [App model](app-model.md)
-* [Gaze](gaze-and-commit.md)
-* [Gesture](gestures.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Motion controllers](motion-controllers.md)
 * [Voice input](voice-input.md)
 * [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)

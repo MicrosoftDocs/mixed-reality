@@ -23,7 +23,7 @@ On [HoloLens](hololens-hardware-details.md), your app renders its holograms on t
 
 The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) (including the Start menu and holograms you've placed around the environment) does not render while in an immersive view either. On HoloLens, any system notifications that occur while an immersive view is showing will be relayed audibly by Cortana, and the user can respond with voice input.
 
-While in an immersive view, your app is also responsible for handling all input. Input in Windows Mixed Reality is made up of [gaze](gaze-and-commit.md), [gesture](gestures.md) (HoloLens only), [voice](voice-input.md) and [motion controllers](motion-controllers.md) (immersive headsets only).
+While in an immersive view, your app is also responsible for handling all input. Input in Windows Mixed Reality is made up of [gaze](gaze-and-commit.md), [gesture](gaze-and-commit.md#composite-gestures) (HoloLens only), [voice](voice-input.md) and [motion controllers](motion-controllers.md) (immersive headsets only).
 
 ## 2D views
 

@@ -13,7 +13,7 @@ keywords: 6dof controllers, motion controllers
 
 :::row:::
     :::column:::
-        Motion controllers are [hardware accessories](hardware-accessories.md) that allow users to take action in mixed reality. An advantage of motion controllers over [gestures](gestures.md) is that the controllers have a precise position in space, allowing for fine grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.<br>
+        Motion controllers are [hardware accessories](hardware-accessories.md) that allow users to take action in mixed reality. An advantage of motion controllers over [gestures](gaze-and-commit.md#composite-gestures) is that the controllers have a precise position in space, allowing for fine grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.<br>
         <br>
         *Image: A Windows Mixed Reality motion controller*
     :::column-end:::
@@ -152,7 +152,7 @@ Apps that support pointing with motion controllers should also enable gaze-drive
 
 When using motion controllers to point and commit, your users will use the controller to target and then take action by pulling its trigger. Users who pull the trigger vigorously may end up aiming the controller higher at the end of their trigger pull than they'd intended.
 
-To manage any such recoil that may occur when users pull the trigger, your app can snap its targeting ray when the trigger's analog axis value rises above 0.0. You can then take action using that targeting ray a few frames later once the trigger value reaches 1.0, as long as the final press occurs within a short time window. When using the higher-level [composite Tap gesture](gestures.md#composite-gestures), Windows will manage this targeting ray capture and timeout for you.
+To manage any such recoil that may occur when users pull the trigger, your app can snap its targeting ray when the trigger's analog axis value rises above 0.0. You can then take action using that targeting ray a few frames later once the trigger value reaches 1.0, as long as the final press occurs within a short time window. When using the higher-level [composite Tap gesture](gaze-and-commit.md#composite-gestures), Windows will manage this targeting ray capture and timeout for you.
 
 ## Grip pose vs. pointing pose
 
@@ -229,7 +229,7 @@ The core interactions across hands and motion controllers are **Select**, **Menu
 
 ## Composite gestures: High-level spatial input
 
-Both [hand gestures](gestures.md) and motion controllers can be tracked over time to detect a common set of high-level **[composite gestures](gestures.md#composite-gestures)**. This enables your app to detect high-level **tap**, **hold**, **manipulation** and **navigation** gestures, whether users end up using hands or controllers.
+Both [hand gestures](gaze-and-commit.md#composite-gestures) and motion controllers can be tracked over time to detect a common set of high-level **[composite gestures](gaze-and-commit.md#composite-gestures)**. This enables your app to detect high-level **tap**, **hold**, **manipulation** and **navigation** gestures, whether users end up using hands or controllers.
 
 ## Rendering the motion controller model
 
@@ -278,7 +278,7 @@ See [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed
 ## See also
 * [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
-* [Gestures](gestures.md)
+* [Gestures](gaze-and-commit.md#composite-gestures)
 * [MR Input 213: Motion controllers](mixed-reality-213.md)
 * [Enthusiast's Guide: Your Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
 * [Enthusiast's Guide: Using games & apps in Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)

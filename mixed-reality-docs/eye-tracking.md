@@ -254,7 +254,6 @@ To get started developing, check out our information on
 * [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
 * [Calibration](calibration.md)
 * [Head-gaze and commit](gaze-and-commit.md)
-* [Hand gestures](gestures.md)
 * [Voice input](voice-design.md)
 * [Motion controllers](motion-controllers.md)
 * [Comfort](comfort.md)

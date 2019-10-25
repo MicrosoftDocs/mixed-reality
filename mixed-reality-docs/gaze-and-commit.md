@@ -251,7 +251,7 @@ Navigation with rails refers to the ability of recognizing movements in certain 
 
 Within 2D apps, users can use vertical navigation gestures to scroll, zoom, or drag inside the app. This injects virtual finger touches to the app to simulate touch gestures of the same type. Users can select which of these actions take place by toggling between the tools on the bar above the application, either by selecting the button or saying '<Scroll/Drag/Zoom> Tool'.
 
-[More info on composite gestures](gestures.md#composite-gestures)
+[More info on composite gestures](gaze-and-commit.md#composite-gestures)
 
 ## Gesture recognizers
 

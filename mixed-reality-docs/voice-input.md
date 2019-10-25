@@ -12,7 +12,7 @@ keywords: ggv, voice, cortana, speech, input
 
 # Voice input
 
-Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use [gestures](gestures.md). Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces because it lets users cut through nested menus with one command.
+Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use [gestures](gaze-and-commit.md#composite-gestures). Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces because it lets users cut through nested menus with one command.
 
 Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps. On HoloLens, speech recognition will always function in the Windows display language configured in Settings. 
 
@@ -54,7 +54,7 @@ When using voice commands, gaze is typically used as the targeting mechanism, wh
 
 **HoloLens (1st gen)**
 
-Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gestures.md#air-tap) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
+Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gaze-and-commit.md#composite-gestures) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
 <br>
 
@@ -85,7 +85,7 @@ You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to
 
 **HoloLens-specific commands**
 * "What can I say?"
-* "Go to Start" - instead of [bloom](gestures.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
+* "Go to Start" - instead of [bloom](system-gesture.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
 * "Launch <app>"
 * "Move <app> here"
 * "Take a picture"
@@ -162,7 +162,7 @@ If you want a complete list, just say, "Show all commands" anytime.
 
 ## Dictation
 
-Rather than typing with [air taps](gestures.md#air-tap), voice dictation can be more efficient to enter text into an app. This can greatly accelerate input with less effort for the user.
+Rather than typing with [air taps](gaze-and-commit.md#composite-gestures), voice dictation can be more efficient to enter text into an app. This can greatly accelerate input with less effort for the user.
 
 ![Voice dictation starts by selecting the microphone button](images/micbuttonfordictation.png)<br>
 *Voice dictation starts by selecting the microphone button on the keyboard*

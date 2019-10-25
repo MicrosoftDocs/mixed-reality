@@ -13,7 +13,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 # MR Input 211: Gesture
 
-[Gestures](gestures.md) turn user intention into action. With gestures, users can interact with holograms. In this course, we'll learn how to track the user's hands, respond to user input, and give feedback to the user based on hand state and location.
+[Gestures](gaze-and-commit.md#composite-gestures) turn user intention into action. With gestures, users can interact with holograms. In this course, we'll learn how to track the user's hands, respond to user input, and give feedback to the user based on hand state and location.
 
 >[!VIDEO https://www.youtube.com/embed/c9zlpfFeEtc]
 

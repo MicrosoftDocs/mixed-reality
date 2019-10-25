@@ -15,7 +15,7 @@ keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your [gaze](gaze-and-commit.md), [gestures](gestures.md) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
+HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your [gaze](gaze-and-commit.md), [gestures](gaze-and-commit.md#composite-gestures) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
 
 <br>
 
@@ -95,7 +95,7 @@ Holograms aren't only about light and sound; they're also an active part of your
 
 Holograms enable personal interactions that aren't possible elsewhere. Because the HoloLens knows where it is in the world, a holographic character can look you directly in the eyes as you walk around the room.
 
-A hologram can also interact with your surroundings. For example, you can place a holographic bouncing ball above a table. Then, with an [air tap](gestures.md#air-tap), watch the ball bounce and make sound when it hits the table.
+A hologram can also interact with your surroundings. For example, you can place a holographic bouncing ball above a table. Then, with an [air tap](gaze-and-commit.md#composite-gestures), watch the ball bounce and make sound when it hits the table.
 
 Holograms can also be occluded by real-world objects. For example, a holographic character might walk through a door and behind a wall, out of your sight.
 
