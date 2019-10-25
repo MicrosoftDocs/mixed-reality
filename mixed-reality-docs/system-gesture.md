@@ -46,20 +46,44 @@ The system gesture is a hand gesture used to invoke the Start Menu. It is the eq
     </tr>
 </table>
 
-## Bloom
-To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which is a symbolic gesture mimicking the flower blossom. It's distinctive for surefooted interaction, easy to perform, and quick to recall. To do the bloom gesture on HoloLens, hold out your hand with your palm up and fingertips together, then open your hand by spreading your fingers.
+# Bloom
+To bring up the start menu in HoloLens, we designed “Bloom”, which is a symbolic gesture mimicking the flower blossom. It's distinctive for surefooted interaction, easy to perform, and quick to recall. To do the bloom gesture on HoloLens, hold out your hand with your palm up and fingertips together, then open your hand by spreading your fingers.<br>
+:::row:::
+    :::column:::
+        ![Bloom close](images/bloom-close.png)<br>
+        **Palm up with fingertips together**<br>
+    :::column-end:::
+    :::column:::
+        ![Bloom open](images/bloom-open.png)<br>
+        **Palm up with fingertips spreaded**<br>
+    :::column-end:::
+:::row-end:::
 
-![bloom](images/bloom.PNG)<br>
+# Wrist button
+In HoloLens 2, we replaced the Bloom gesture with a wrist button, allowing for a more Instinctual Interaction that requires no additional teaching. By showing users the button on the wrist, they can intuitively reach out and press it with the other hand.<br>
+:::row:::
+    :::column:::
+        ![Wrist button ready](images/wrist-button-ready.png)<br>
+        **Palm up to show the wrist button**<br>
+    :::column-end:::
+    :::column:::
+        ![Wrist button press](images/wrist-button-press.png)<br>
+        **Press the wrist button**<br>
+    :::column-end:::
+:::row-end:::
 
-## Wrist button
-In HoloLens 2, we replaced the Bloom gesture with a wrist button, allowing for a more Instinctual Interaction that requires no additional teaching. By showing users the button on the wrist, they can intuitively reach out and press it with the other hand.
-
-![wrist button](images/wrist-button.PNG)<br>
-
-## Eye gaze and palm up pinch
-We have also designed a one-handed solution for ease of access in HoloLens 2. This gesture requires users to eye gaze at the wrist button, then use the same hand to perform a palm up pinch between the thumb and index finger.
-
-![eye gaze and palm up pinch](images/eye-gaze-and-pinch.PNG)<br>
+# Eye gaze and palm up pinch
+We have also designed a one-handed solution for ease of access in HoloLens 2. This gesture requires users to eye gaze at the wrist button, then use the same hand to perform a palm up pinch between the thumb and index finger.<br>
+:::row:::
+    :::column:::
+        ![Wrist button ready](images/wrist-button-ready.png)<br>
+        **Palm up to show the wrist button**<br>
+    :::column-end:::
+    :::column:::
+        ![Wrist button pinch](images/wrist-button-pinch.png)<br>
+        **Eye gaze at the button then pinch**<br>
+    :::column-end:::
+:::row-end:::
 
 ## See also
 
