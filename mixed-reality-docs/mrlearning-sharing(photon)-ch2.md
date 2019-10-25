@@ -11,7 +11,7 @@ keywords: mixed reality, unity, tutorial, hololens
 # 2. Getting Unity ready for development 
 
 
-In this tutorial, we learn how to prepare and configure Unity for application development, including importing the Mixed Reality Toolkit, configuring build settings, and preparing our scene.
+In this tutorial, you will learn how to prepare and configure Unity for application development, including importing the Mixed Reality Toolkit, configuring build settings, and preparing your scene.
 
 ## Objectives
 
@@ -25,17 +25,17 @@ In this tutorial, we learn how to prepare and configure Unity for application de
 
 1. Download and save the Mixed Reality Toolkit unity package by clicking [here.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC2.1/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC2.1.unitypackage)
 
-2. In Unity, click on the assets menu and select Import Package, then click on Custom Package.
+2. In Unity, click the Assets menu and select Import Package, then click on Custom Package.
 
 ![Module3Chapter2step2im](images/module3chapter2step2im.PNG)
 
-3. Select the Unity package you just downloaded from the link provided in step 1. Once the import pop-up window appears in Unity, click the Import button to begin importing. Importing the MRTK may take several minutes.
+3. Select the Unity package you just downloaded from the link provided in step 1. Once the import pop-up window appears in Unity, click the Import button to begin importing the MRTK. This may take several minutes.
 
 ![Module3Chapter2step3im](images/module3chapter2step3im.PNG)
 
-> Note: The downloaded package is in your local folder where you have saved the file. The image above does not portray where you will find the package.
+> Note: The downloaded package is in your local folder, where you have saved the file. The image above does not portray where you will find the package.
 
-4. Create a new scene. This can be done by clicking File, and selecting New Scene"). Save the scene as HLSharedProjectMain.
+4. Create a new scene. This can be done by clicking File and selecting New Scene". Save it as HLSharedProjectMain.
 
 > Note: you may receive a pop-up that looks similar to the image below. For now, click No.
 >
@@ -53,7 +53,7 @@ In this tutorial, we learn how to prepare and configure Unity for application de
 
 ![Module3Chapter2step6imc](images/module3chapter2step6imc.PNG)
 
-7. Scroll down and uncheck Enable Diagnostics system if you want to hide the diagnostics window. We recommend keeping the diagnostics window enabled during application development to monitor performance, and disabling it during production or application demonstrations. 
+7. Scroll down and uncheck Enable Diagnostics system if you want to hide the diagnostics window. We recommend keeping the diagnostics window enabled during application development to monitor performance, and then disabling it during production or application demonstrations. 
 
 ![Module3Chapter2step7ima](images/module3chapter2step7ima.PNG)
 
@@ -61,19 +61,19 @@ In this tutorial, we learn how to prepare and configure Unity for application de
 
 ![Module3Chapter2step8im](images/module3chapter2step8im.PNG)
 
-9. Once complete, click the box that says Add Open Scenes. Now go to the Inspector panel, and ensure that the check box to the right of Virtual Reality Supported (as shown in the image below) is checked. Also ensure that the check box next to scenes/HLSharedProjectMain is also checked as shown in the image below.
+9. Once complete, click the box called Add Open Scenes. Now go to the Inspector panel and ensure that the check box to the right of Virtual Reality Supported (as shown in the image below) is checked. Also ensure that the check box next to scenes/HLSharedProjectMain is also checked, as shown in the image below.
 
 ![Module3Chapter2step9im](images/module3chapter2step9im.PNG)
 
-10. Under the Publishing Settings section in the Inspector panel, scroll down to Capabilities, and ensure the following check boxes are marked:
+10. Under the Publishing Settings section in the Inspector panel, scroll down to Capabilities and ensure the following check boxes are marked:
 
 ![Module3Chapter2step9imb](images/module3chapter2step9imb.PNG)
 
-11. Import the custom package called SharingAssetCollection which can be downloaded [here.](https://github.com/microsoft/MixedRealityLearning/releases/tag/development)
+11. Import the custom package called SharingAssetCollection, which can be downloaded [here.](https://github.com/microsoft/MixedRealityLearning/releases/tag/development)
 
 ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
 
-12. In the Project panel, go to the Prefabs folder. In next few steps you implement a few prefabs into the scene. In the Prefabs folder, click and drag the prefab, Debug Window into the hierarchy. Once finished, save the project by clicking File, then Save or press Control+S.
+12. In the Project panel, go to the Prefabs folder. In the following steps, you will implement a few prefabs into the scene. In the Prefabs folder, click and drag the prefab, Debug Window into the hierarchy. Once finished, save the project by clicking File, then Save or press Control+S.
 
 ![Module3Chapter2step12im](images/module3chapter2step12im.PNG)
 
