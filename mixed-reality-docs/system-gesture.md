@@ -52,11 +52,11 @@ To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which
 :::row:::
     :::column:::
         ![Bloom close](images/bloom-close.png)<br>
-        **Palm up with fingertips together**<br>
+        **Step 1: Palm up with fingertips together**<br>
     :::column-end:::
     :::column:::
         ![Bloom open](images/bloom-open.png)<br>
-        **Palm up with fingertips spreaded**<br>
+        **Step 2: Palm up with fingertips spreaded**<br>
     :::column-end:::
 :::row-end:::
 
@@ -70,11 +70,11 @@ In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that al
 :::row:::
     :::column:::
         ![Wrist button ready](images/wrist-button-ready.png)<br>
-        **Palm up to show the wrist button**<br>
+        **Step 1: Palm up to show the wrist button**<br>
     :::column-end:::
     :::column:::
         ![Wrist button press](images/wrist-button-press.png)<br>
-        **Press the wrist button**<br>
+        **Step 2: Press the wrist button**<br>
     :::column-end:::
 :::row-end:::
 
@@ -88,11 +88,11 @@ We have also designed a one-handed solution for ease of access in HoloLens 2. Th
 :::row:::
     :::column:::
         ![Wrist button ready](images/wrist-button-ready.png)<br>
-        **Palm up to show the wrist button**<br>
+        **Step 1: Palm up to show the wrist button**<br>
     :::column-end:::
     :::column:::
         ![Wrist button pinch](images/wrist-button-pinch.png)<br>
-        **Eye gaze at the button then pinch**<br>
+        **Step: Eye gaze at the button then pinch**<br>
     :::column-end:::
 :::row-end:::
 
