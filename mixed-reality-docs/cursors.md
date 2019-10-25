@@ -71,6 +71,11 @@ Ray cursors attach to the end of far pointing rays to allow manipulation of obje
     :::column-end:::
 :::row-end:::
 
+<br>
+
+---
+
+
 ## Head-gaze cursor
 The head-gaze cursor is a dot that attaches to the end of an invisible head-gaze vector that uses the position and rotation of the head to point. To execute actions, this pointing cursor is paired with various commit inputs such as air tap, voice commands, dwell, and button press. In HoloLens 2, head-gaze is best paired with any commit input that is not air tap, as there will be interaction conflict between air tap and far hand rays. <br>
 :::row:::
@@ -83,6 +88,10 @@ The head-gaze cursor is a dot that attaches to the end of an invisible head-gaze
         **Head-gaze cursor with voice command**<br>
     :::column-end:::
 :::row-end:::
+
+<br>
+
+---
 
 
 ## Cursor customization recommendations
@@ -128,8 +137,18 @@ If you would like to customize the cursor feedback behaviors and appearances, he
 
 You could also implement these states in a skin-able manner such that you can display different art assets when different states are detected.
 
+<br>
+
+---
+
+
 ## Going "cursor-free"
 Designing without a cursor is recommended when the sense of immersion is a key component of an experience and when pointing interactions (through gaze and gesture) do not require great precision. The system must still meet the needs that are normally met by a cursor by providing users with continuous feedback on the system's understanding of their pointing and helping them to confidently communicate their intentions to the system. This may be achievable through other noticeable state changes.
+
+<br>
+
+---
+
 
 ## See also
 * [Gestures](gestures.md)
