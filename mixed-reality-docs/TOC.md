@@ -33,7 +33,7 @@
 ### [Overview](core-concepts-landingpage.md)
 ### [Comfort](comfort.md)
 ### [Holographic frame](holographic-frame.md)
-### [System gestures](system-gesture.md)
+### [System gesture](system-gesture.md)
 ### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 ### [App model](app-model.md)
 ### [App views](app-views.md)
