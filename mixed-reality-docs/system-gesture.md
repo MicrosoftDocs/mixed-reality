@@ -74,7 +74,7 @@ In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that al
     :::column-end:::
 :::row-end:::
 
-## Eye gaze and palm up pinch
+## Eye-gaze and palm up pinch
 We have also designed a one-handed solution for ease of access in HoloLens 2. This gesture requires users to eye gaze at the wrist button, then use the same hand to perform a palm up pinch using their thumb and index finger.<br>
 :::row:::
     :::column:::
@@ -90,4 +90,5 @@ We have also designed a one-handed solution for ease of access in HoloLens 2. Th
 ## See also
 
 * [Instinctual interactions](interaction-fundamentals.md)
+* [Eye-gaze](eye-tracking.md)
 * [Voice input](voice-input.md)
