@@ -39,7 +39,6 @@
 ### [App views](app-views.md)
 ### [Coordinate systems](coordinate-systems.md)
 ### [Scene understanding](scene-understanding.md)
-### [Spatial mapping design](spatial-mapping-design.md)
 ### [Spatial mapping](spatial-mapping.md)
 ### [Room scan visualization](room-scan-visualization.md)
 ### [Spatial anchors](spatial-anchors.md)

@@ -14,6 +14,9 @@ keywords: Windows Mixed Reality, HoloLens, spatial mapping
 
 When creating our first apps for Microsoft HoloLens, we were eager to see just how far we could push the boundaries of spatial mapping on the device. Jeff Evertt, a software engineer at Microsoft Studios, explains how a new technology was developed out of the need for more control over how holograms are placed in a user's real-world environment.
 
+> [!NOTE]
+> HoloLens 2 implements a new [Scene Understanding Runtime](scene-understanding.md), that provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. 
+
 ## Watch the video
 
 >[!VIDEO https://www.youtube.com/embed/iUmTi3_Ynus]
@@ -317,7 +320,7 @@ The open-source code is available in [MixedRealityToolkit](https://github.com/Mi
 
 ## See also
 * [Spatial mapping](spatial-mapping.md)
-* [Spatial mapping design](spatial-mapping-design.md)
+* [Scene understanding](scene-understanding.md)
 * [Room scan visualization](room-scan-visualization.md)
 * [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 * [Asobo Studio: Lessons from the frontline of HoloLens development](http://www.gamesindustry.biz/articles/2016-05-12-asobo-lessons-from-the-frontline-of-ar-development)

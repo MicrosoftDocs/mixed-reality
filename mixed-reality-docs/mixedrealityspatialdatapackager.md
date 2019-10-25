@@ -15,6 +15,29 @@ keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPacka
 ## Download
  Download [MixedRealitySpatialDataPackager here](http://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
 
+## Device support
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Mixed Reality Spatial Data Packager</td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✔️</td>
+    </tr>
+</table>
+
 ## Quickstart
 
 The Mixed Reality Spatial Data Packager tool copies the spatial data of a target app from one PC to another through a two step export and import process. The tool must be run with administrator privileges and deletes the existing spatial data on import. Export leaves the existing spatial data intact.

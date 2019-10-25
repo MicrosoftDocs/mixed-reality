@@ -61,6 +61,12 @@ At their core, mixed reality apps place [holograms](hologram.md) in your world t
         <td>✔️</td>
         <td>❌</td>
     </tr>
+    <tr>
+        <td><a href="scene-understanding.md">Scene understanding</a></td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 ## Mixed reality experience scales
@@ -88,7 +94,7 @@ These experience scales follow a "nesting dolls" model. The key design principle
 |  **Yes** |  **Yes** |  **Yes** |  **Yes** |  No |  **Room** | 
 |  **Yes** |  **Yes** |  **Yes** |  **Yes** |  **Yes** |  **World** | 
 
-Note that the Stage frame of reference is not yet supported on HoloLens. A room-scale app on HoloLens currently needs to use [spatial mapping](spatial-mapping.md) to find the user's floor and walls.
+Note that the Stage frame of reference is not yet supported on HoloLens. A room-scale app on HoloLens currently needs to use [spatial mapping](spatial-mapping.md) or [scene understanding](scene-understanding.md) to find the user's floor and walls.
 
 ## Spatial coordinate systems
 
