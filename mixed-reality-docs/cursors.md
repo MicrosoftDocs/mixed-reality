@@ -52,22 +52,37 @@ There are 3 kinds of cursors: finger, ray, and head-gaze. These pointing cursors
 ## Finger cursor
 The finger cursor is available only on the HoloLens 2 to enhance the "Direct manipulation with hands" interaction mode. To better understand where the finger is pointing, we have attached rings to the tips of both index fingers. The ring size is based on the proximity of the finger to the UI surface (the closer the finger, the smaller the ring) and will shrink to a dot shape when the finger makes contact with the UI. <br>
 ![finger cursor](images/finger-cursor.png)<br>
+**Visual feedback states of finger cursor**
 
 ## Ray cursor
 Ray cursors attach to the end of far pointing rays to allow manipulation of objects that are out of hands-reach. In immersive headsets, the rays shoot out from motion controllers and end in dot cursors. In HoloLens 2, we leverage the mental model of these motion controller rays and designed hand rays that originate from the palms and end in ring-shaped cursors that are consistent with finger cursors used in direct manipulation. <br>
-![ray cursor controller](images/ray-cursor-controller.png)
-![ray cursor hand](images/ray-cursor-hand.png)<br>
-
+:::row:::
+    :::column:::
+        ![Ray cursor controller](images/ray-cursor-controller.png)<br>
+        **Ray cursors of motion controllers**<br>
+    :::column-end:::
+    :::column:::
+        ![Ray cursor hand](images/ray-cursor-hand.png)<br>
+        **Ray cursors of hands**<br>
+    :::column-end:::
+:::row-end:::
 
 ## Head-gaze cursor
 The head-gaze cursor is a dot that attaches to the end of an invisible head-gaze vector that uses the position and rotation of the head to point. To execute actions, this pointing cursor is paired with various commit inputs such as air tap, voice commands, dwell, and button press. In HoloLens 2, head-gaze is best paired with any commit input that is not air tap, as there will be interaction conflict between air tap and far hand rays. <br>
-![head gaze cursor hand](images/head-gaze-cursor-hand.png)
-![head gaze cursor voice](images/head-gaze-cursor-voice.png)<br>
+:::row:::
+    :::column:::
+        ![Head gaze cursor hand](images/head-gaze-cursor-hand.png)<br>
+        **Head-gaze cursor with hand gesture**<br>
+    :::column-end:::
+    :::column:::
+        ![Head gaze cursor voice](images/head-gaze-cursor-voice.png)<br>
+        **Head-gaze cursor with voice command**<br>
+    :::column-end:::
+:::row-end:::
 
 
 ## Cursor customization recommendations
-If you would like to customize your own cursor feedback behaviors and appearances, please reference principles below:
-
+If developers would like to customize their own cursor feedback behaviors and appearances, here are some design decommendations:
 
 ### Cursor scale
 * The cursor should be no larger than the available targets, allowing users to easily interact with and view the content.
