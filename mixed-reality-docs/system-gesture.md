@@ -52,7 +52,7 @@ To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which
 :::row:::
     :::column:::
         ![Bloom close](images/bloom-close.png)<br>
-        **Palm up with fingertips together**<br>
+        **Step 1: Palm up with fingertips together**<br>
     :::column-end:::
     :::column:::
         ![Bloom open](images/bloom-open.png)<br>
