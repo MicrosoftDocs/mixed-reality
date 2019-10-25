@@ -60,6 +60,10 @@ To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which
     :::column-end:::
 :::row-end:::
 
+<br>
+
+---
+
 ## Wrist button
 In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that allows for more instinctual interactions that require no additional teaching. By showing users the button on the wrist, they can intuitively reach out and press it with their other hand.
 
@@ -74,6 +78,11 @@ In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that al
     :::column-end:::
 :::row-end:::
 
+<br>
+
+---
+
+
 ## Eye-gaze and palm up pinch
 We have also designed a one-handed solution for ease of access in HoloLens 2. This gesture requires users to eye gaze at the wrist button, then use the same hand to perform a palm up pinch using their thumb and index finger.<br>
 :::row:::
@@ -86,6 +95,10 @@ We have also designed a one-handed solution for ease of access in HoloLens 2. Th
         **Eye gaze at the button then pinch**<br>
     :::column-end:::
 :::row-end:::
+
+<br>
+
+---
 
 ## See also
 
