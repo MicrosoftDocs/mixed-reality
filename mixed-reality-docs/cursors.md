@@ -152,5 +152,5 @@ Designing without a cursor is recommended when the sense of immersion is a key c
 
 
 ## See also
-* [Gestures](gestures.md)
-* [Gaze targeting](gaze-targeting.md)
+* [Gestures](gaze-and-commit.md#composite-gestures)
+* [Head-gaze and commit](gaze-and-commit.md)
