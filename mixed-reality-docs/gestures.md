@@ -52,7 +52,7 @@ Hand gestures allow users to take action in mixed reality. Interaction is built 
 
 ## Gaze-and-commit
 
-To take actions, hand gestures use [head gaze](gaze.md) as the targeting mechanism. The combination of **Gaze** and the **Air tap** gesture results in a **gaze-and-commit** interaction. An alternative to gaze-and-commit is **point-and-commit**, enabled by [motion controllers](motion-controllers.md). Apps that run on HoloLens only need to support gaze-and-commit since HoloLens does not support motion controllers. Apps that run on both HoloLens and immersive headsets should support both gaze-driven and pointing-driven interactions, to give users choice in what input device they use.
+To take actions, hand gestures use [head gaze](gaze-and-commit.md) as the targeting mechanism. The combination of **Gaze** and the **Air tap** gesture results in a **gaze-and-commit** interaction. An alternative to gaze-and-commit is **point-and-commit**, enabled by [motion controllers](motion-controllers.md). Apps that run on HoloLens only need to support gaze-and-commit since HoloLens does not support motion controllers. Apps that run on both HoloLens and immersive headsets should support both gaze-driven and pointing-driven interactions, to give users choice in what input device they use.
 
 ## The two core gestures of HoloLens
 
@@ -60,7 +60,7 @@ HoloLens currently recognizes two core component gestures - **Air tap** and **Bl
 
 ### Air tap
 
-Air tap is a tapping gesture with the hand held upright, similar to a mouse click or select. This is used in most HoloLens experiences for the equivalent of a "click" on a UI element after targeting it with [Gaze](gaze.md). It is a universal action that you learn once and then apply across all your apps. Other ways to perform select are by pressing the single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker) or by speaking the voice command "Select".
+Air tap is a tapping gesture with the hand held upright, similar to a mouse click or select. This is used in most HoloLens experiences for the equivalent of a "click" on a UI element after targeting it with [Gaze](gaze-and-commit.md). It is a universal action that you learn once and then apply across all your apps. Other ways to perform select are by pressing the single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker) or by speaking the voice command "Select".
 
 ![Ready state for hand gestures on HoloLens](images/image9.png)<br>
 *Ready state for Air tap on HoloLens.*

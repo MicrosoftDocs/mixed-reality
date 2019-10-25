@@ -16,7 +16,7 @@ Working with holograms can be tricky. The fact that you can move around your spa
 
 ## The tech
 
-To make holograms appear as though they're actually sharing the space with you, they should render properly, without color separation. This is achieved, in part, by technology built-in to the HoloLens hardware which keeps holograms anchored on what we call a [stabilization plane](hologram-stability.md#stabilization-plane).
+To make holograms appear as though they're actually sharing the space with you, they should render properly, without color separation. This is achieved, in part, by technology built-in to the HoloLens hardware which keeps holograms anchored on what we call a [stabilization plane](hologram-stability.md#reprojection).
 
 A plane is defined by a point and a normal, but since we always want the plane to face the camera, we're really just concerned with setting the plane's point. We can tell HoloLens which point to focus its processing on to keep everything anchored and stable, but how to set this focus point is app-specific, and can make or break your app depending on the content.
 

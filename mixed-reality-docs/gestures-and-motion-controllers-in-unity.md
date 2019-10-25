@@ -2,7 +2,7 @@
 title: Gestures and motion controllers in Unity
 description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
 author: thetuvix
-ms.author: yoyoz
+ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestures, motion controllers, unity, gaze, input
@@ -302,7 +302,7 @@ This means that polling gives you a source pose or head pose that is 30-40ms for
 To accurately target based on the user's original intent for a hand or controller press, you should use the historical source pose or head pose from that *InteractionSourcePressed* or *InteractionSourceReleased* input event.
 
 You can target a press or release with historical pose data from the user's head or their controller:
-* The head pose at the moment in time when a gesture or controller press occurred, which can be used for **targeting** to determine what the user was [gazing](gaze.md) at:
+* The head pose at the moment in time when a gesture or controller press occurred, which can be used for **targeting** to determine what the user was [gazing](gaze-and-commit.md) at:
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args) {

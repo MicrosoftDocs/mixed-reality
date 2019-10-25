@@ -17,6 +17,9 @@
 ## [Get started with Mixed Reality](index.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Case study gallery](case-studies-overview.md)
+## HoloLens hardware
+### [HoloLens 2 hardware details](https://docs.microsoft.com/hololens/hololens2-hardware)
+### [HoloLens (1st gen) hardware details](https://docs.microsoft.com/hololens/hololens1-hardware)
 ## Immersive headsets
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
@@ -30,8 +33,7 @@
 ### [Overview](core-concepts-landingpage.md)
 ### [Comfort](comfort.md)
 ### [Holographic frame](holographic-frame.md)
-### [Gaze](gaze.md)
-### [Gestures](gestures.md)
+### [System gesture](system-gesture.md)
 ### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 ### [App model](app-model.md)
 ### [App views](app-views.md)
@@ -163,13 +165,12 @@
 #### [Voice input in Unity](voice-input-in-unity.md)
 #### [Spatial mapping in Unity](spatial-mapping-in-unity.md)
 #### [Spatial sound in Unity](spatial-sound-in-unity.md)
-### Other key features
+### Platform capabilities and APIs
 #### [Shared experiences in Unity](shared-experiences-in-unity.md)
 #### [Locatable camera in Unity](locatable-camera-in-unity.md)
 #### [Focus point in Unity](focus-point-in-unity.md)
 #### [Tracking loss in Unity](tracking-loss-in-unity.md)
 #### [Keyboard input in Unity](keyboard-input-in-unity.md)
-### Advanced topics
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)

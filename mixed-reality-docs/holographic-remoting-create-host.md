@@ -3,7 +3,7 @@ title: Writing a Holographic Remoting host app
 description: By creating a Holographic Remoting host app remote content, that is rendered on a remote machine, can be streamed to HoloLens 2. This article describes how this can be achieved.
 author: bethau
 ms.author: bethau
-ms.date: 08/01/2019
+ms.date: 10/21/2019
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
