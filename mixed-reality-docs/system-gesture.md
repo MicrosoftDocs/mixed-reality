@@ -9,7 +9,7 @@ keywords: Mixed Reality, Gestures, interaction, design
 ---
 # System gesture
 
-The system gesture is a hand gesture used to invoke the Start Menu. It is the equivalent to pressing the Windows key on the keyboard, the Xbox button on an Xbox controller, or the Windows button on the immersive headset motion controller. It will be important to understand which gestures are reserved for the system on each version of Mixed Reality devices to prevent conflicts.
+The system gesture is a hand gesture used to invoke the Start Menu. It is the equivalent of pressing the Windows key on the keyboard, the Xbox button on an Xbox controller, or the Windows button on the immersive headset motion controller. It's important to understand which gestures are reserved for the system on each version of Mixed Reality devices to prevent conflicts.
 
 ## Device support
 
@@ -29,7 +29,7 @@ The system gesture is a hand gesture used to invoke the Start Menu. It is the eq
      <tr>
         <td>Bloom</td>
         <td>✔️</td>
-        <td>✔️</td>
+        <td>❌</td>
         <td>❌</td>
     </tr>
      <tr>
@@ -47,7 +47,7 @@ The system gesture is a hand gesture used to invoke the Start Menu. It is the eq
 </table>
 
 ## Bloom
-To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which is a symbolic gesture mimicking the flower blossom. It's distinctive for surefooted interaction, easy to perform, and quick to recall. To do the bloom gesture on HoloLens, hold out your hand with your palm up and fingertips together, then open your hand by spreading your fingers.
+To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which is a symbolic gesture mimicking the flower blossom. It's distinctive for surefooted interaction, easy to perform, and quick to recall. To do the bloom gesture on HoloLens (1st gen), hold out your hand with your palm up and fingertips together, then open your hand by spreading your fingers.
 
 :::row:::
     :::column:::
