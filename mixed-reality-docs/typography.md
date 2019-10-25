@@ -108,9 +108,9 @@ Segoe UI (the default font for Windows) works well in most cases. However, avoid
 
 :::row:::
     :::column:::
-    ### [Segoe fonts](http://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)<br>
+    ### [Segoe fonts](https://download.microsoft.com/download/1/B/C/1BCF071A-78EE-4968-ACBE-15461C274B61/Segoe%20fonts%20v1705.zip)<br>
     (Zip file)<br>
-    ### [HoloLens font](http://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)<br>
+    ### [HoloLens font](https://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)<br>
     (Zip file)<br>
     <br>
     *Image: The HoloLens font gives you the symbol glyphs used in Windows Mixed Reality.*
