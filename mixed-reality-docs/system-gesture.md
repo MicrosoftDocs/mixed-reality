@@ -9,7 +9,7 @@ keywords: Mixed Reality, Gestures, interaction, design
 ---
 # System gesture
 
-The system gesture is a hand gesture used to invoke the Start Menu. It is the equivalent of pressing the Windows key on the keyboard, the Xbox button on an Xbox controller, or the Windows button on the immersive headset motion controller. It's important to understand which gestures are reserved for the system on each version of Mixed Reality devices to prevent conflicts.
+The system gesture is a hand gesture used to invoke the Start Menu. It is the equivalent of pressing the Windows key on the keyboard, the Xbox button on an Xbox controller, or the Windows button on the immersive headset motion controller. It's important to understand which gestures are reserved for the system on each Mixed Reality device to prevent conflicts.
 
 ## Device support
 
@@ -61,7 +61,7 @@ To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which
 :::row-end:::
 
 ## Wrist button
-In HoloLens 2, we replaced the Bloom gesture with a wrist button, allowing for a more Instinctual Interaction that requires no additional teaching. By showing users the button on the wrist, they can intuitively reach out and press it with the other hand.
+In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that allows for more instinctual interactions that require no additional teaching. By showing users the button on the wrist, they can intuitively reach out and press it with their other hand.
 
 :::row:::
     :::column:::
@@ -75,7 +75,7 @@ In HoloLens 2, we replaced the Bloom gesture with a wrist button, allowing for a
 :::row-end:::
 
 ## Eye gaze and palm up pinch
-We have also designed a one-handed solution for ease of access in HoloLens 2. This gesture requires users to eye gaze at the wrist button, then use the same hand to perform a palm up pinch between the thumb and index finger.<br>
+We have also designed a one-handed solution for ease of access in HoloLens 2. This gesture requires users to eye gaze at the wrist button, then use the same hand to perform a palm up pinch using their thumb and index finger.<br>
 :::row:::
     :::column:::
         ![Wrist button ready](images/wrist-button-ready.png)<br>
