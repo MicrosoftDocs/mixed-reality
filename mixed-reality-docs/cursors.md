@@ -65,7 +65,7 @@ The head-gaze cursor is a dot that attaches to the end of an invisible head-gaze
 ![head gaze cursor voice](images/head-gaze-cursor-voice.png)<br>
 
 
-## Cursor customization principles
+## Cursor customization recommendations
 If you would like to customize your own cursor feedback behaviors and appearances, please reference principles below:
 
 
@@ -84,42 +84,33 @@ If you would like to customize your own cursor feedback behaviors and appearance
 * Pick a color and shape that best represents the experience you are creating.
 * Cursors are especially prone to [color separation](hologram-stability.md#color-separation).
 * A small cursor with balanced opacity keeps it informative without dominating the visual hierarchy.
-* Be cognizant of using shadows or highlights behind your cursor as they might obstruct content and distract from the purpose.
-* Cursors should align to and hug the surfaces in your app, this will give the user a feeling that the system can see where they are looking, but also that the system is aware of their surroundings.
-* For example, in the Windows Holographic OS, the cursor aligns to the surfaces of the user's world, creating a feeling of awareness of the world even when the user isn't looking directly at a hologram..
-* Magnetically locking the cursor to an interactive element when it is within close proximity. This can help improve confidence that user will interact with that element when they perform a selection action.
+* Be cognizant of using shadows or highlights behind your cursor as they might obstruct content and distract from the task at hand.
+* Cursors should align to and hug the surfaces in your app, this will give the user a feeling that the system can see where they are looking, but also that the system is aware of their surroundings. For example, in the Mixed Reality OS, the cursor aligns to the surfaces of the user's world, creating a feeling of awareness of the world even when the user isn't looking directly at a hologram.
+* Magnetically locking the cursor to an interactive element when it is within close proximity can help improve confidence that user will interact with that element when they perform a selection action.
 
 ### Visual cues
-* There is a lot of information in our world and with holograms we are adding more information. A cursor is a great way of communicating to the user what is important.
-* If your experience is focused on a single hologram, then perhaps your cursor aligns and hugs only that hologram and changes shape when you look away from that hologram. This can convey to the user that the hologram is special and they can interact with it.
-* If your application uses spatial mapping, then your cursor could align and hug every surface it sees. This gives feedback to the users that HoloLens and your application can see their space.
-* These things help reinforce the fact that holograms are real and in our world. They help bridge the gap between real and virtual.
+* If your experience is focused on a single hologram, your cursor should align and hug only that hologram and change shape when you look away from that hologram. This can convey to the user that the hologram is actionable and they can interact with it.
+* If your application uses spatial mapping, then your cursor could align and hug every surface it sees. This gives feedback to the users that HoloLens and your application can see their space. This reinforces the fact that holograms are real and in our world and helps bridge the gap between real and virtual.
 * Have an idea of what the cursor should do when there are no holograms or surfaces in view. Placing it at a predetermined distance in front of the user is one option.
 
-## Cursor feedback
-
-As we mentioned it is good practice to have the cursor always be present, as you can use the cursor to convey some important bits of information.
-
 ### Possible actions
-* As the user is gazing at a hologram and the cursor is on that hologram, you could use the cursor to convey possible actions on that hologram.
-* You could display an icon on the cursor that the user can for example purchase that item or perhaps scale that hologram. Or even something as simple like the hologram can be tapped on.
+* The cursor can be represented by different icons to convey possible actions a hologram can perform, such as scaling or rotation.
 * Only add extra information on the cursor if it means something to the user. Otherwise, users might either not notice the state changes or get confused by the cursor.
 
 ### Input state
-* We could use the cursor to display the user's input state. For example, we could display an icon telling the user if the system sees their hand state. This will tell the user that the application knows the user is ready to take action.
-* We could also use the cursor to make the user aware that there is a voice command available. Or perhaps change the color of the cursor momentarily to tell the user that the voice command was heard by the system.
+* We could use the cursor to display the user's input state or intent. For example, we could display an icon telling the user the system sees their hand state and that the application knows they are ready to take action.
+* We could also use the cursor to show users that voice commands have been heard by the system via a momentary color chang
 
-These different cursor states can be implemented in different ways. You might implement these different states by modeling the cursor like a state machine. For example:
+* The following cursor states can be implemented in different ways. You might implement these different states by modeling the cursor like a state machine. For example:
 * Idle state is where you show the default cursor.
 * Ready state is when you have detected the user's hand in the ready position.
 * Interaction state is when the user is performing a particular interaction.
-* Possible Actions state is when you convey possible actions that can be performed on a hologram.
+* Possible Actions state or hover state is when you convey possible actions that can be performed on a hologram.
 
 You could also implement these states in a skin-able manner such that you can display different art assets when different states are detected.
 
 ## Going "cursor-free"
-
-Designing without a cursor is recommended only when the sense of immersion is a key component of an experience, and interactions that involve targeting (through gaze and gesture) do not require great precision. The system must still meet the needs that are normally met by a cursor though - providing users with continuous feedback on the system's understanding of their targeting and helping them to confidently communicate their intentions to the system. This may be achievable through other noticeable state changes.
+Designing without a cursor is recommended when the sense of immersion is a key component of an experience and when pointing interactions (through gaze and gesture) do not require great precision. The system must still meet the needs that are normally met by a cursor by providing users with continuous feedback on the system's understanding of their pointing and helping them to confidently communicate their intentions to the system. This may be achievable through other noticeable state changes.
 
 ## See also
 * [Gestures](gestures.md)
