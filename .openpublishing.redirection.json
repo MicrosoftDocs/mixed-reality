@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+            "source_path": "mixed-reality-docs/reset-or-recover-your-hololens.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-recovery",
+            "redirect_document_id": false
+        },
+		{
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
 			"redirect_url": "updating-hololens",
 			"redirect_document_id": false
