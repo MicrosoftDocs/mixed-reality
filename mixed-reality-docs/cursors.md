@@ -57,6 +57,7 @@ The finger cursor is available only on the HoloLens 2 to enhance the "[direct ma
 
 ![finger cursor](images/finger-cursor.png)<br>
 **Visual feedback states of finger cursor**
+1: The ring shrinks to a dot. 2: The ring aligns with surface. 3: The ring is perpendicular to finger vector. 4: No ring.
 
 ## Ray cursor
 Ray cursors attach to the end of far pointing rays to allow manipulation of objects that are out of hands-reach. In immersive headsets, the rays shoot out from motion controllers and end in dot cursors. In HoloLens 2, we leverage the mental model of these motion controller rays and designed hand rays that originate from the palms and end in ring-shaped cursors that are consistent with finger cursors used in direct manipulation. <br>
