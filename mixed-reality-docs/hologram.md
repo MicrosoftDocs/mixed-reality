@@ -125,6 +125,6 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 
 
 ## See also
-* [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality)
+* [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 * [Spatial sound](spatial-sound.md)
 * [Color, light and materials](color,-light-and-materials.md)
