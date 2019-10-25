@@ -14,7 +14,10 @@ A cursor, or indicator of your current targeting vector, provides continuous fee
 
 The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.
 
-There are 3 kinds of cursors: finger, ray, and head-gaze. These pointing cursors work with different input modalities on HoloLens, HoloLens 2, and immersive headsets. Below is guidance on which type of cursor to use for each type of headset and interaction model. In MRTK, we've created drag-and-drop cursors modules to help you build the right pointing experience.
+There are 3 kinds of cursors: **finger, ray**, and **head-gaze**. These pointing cursors work with different input modalities on HoloLens, HoloLens 2, and immersive headsets. Below is guidance on which type of cursor to use for each type of headset and interaction model. In the Mixed Reality Toolkit (MRTK), we've created drag-and-drop cursors modules to help you build the right pointing experience.
+
+
+## Device support
 
 <table>
     <colgroup>
@@ -50,7 +53,7 @@ There are 3 kinds of cursors: finger, ray, and head-gaze. These pointing cursors
 </table>
 
 ## Finger cursor
-The finger cursor is available only on the HoloLens 2 to enhance the "Direct manipulation with hands" interaction mode. To better understand where the finger is pointing, we have attached rings to the tips of both index fingers. The ring size is based on the proximity of the finger to the UI surface (the closer the finger, the smaller the ring) and will shrink to a dot shape when the finger makes contact with the UI. <br>
+The finger cursor is available only on the HoloLens 2 to enhance the "[direct manipulation with hands](direct-manipulation.md)" interaction mode. To better understand where the finger is pointing, we have attached rings to the tips of both index fingers. The ring size is based on the proximity of the finger to the UI surface (the closer the finger, the smaller the ring) and will shrink to a dot shape when the finger makes contact with the UI. <br>
 
 ![finger cursor](images/finger-cursor.png)<br>
 **Visual feedback states of finger cursor**
@@ -83,7 +86,7 @@ The head-gaze cursor is a dot that attaches to the end of an invisible head-gaze
 
 
 ## Cursor customization recommendations
-If developers would like to customize their own cursor feedback behaviors and appearances, here are some design decommendations:
+If you would like to customize the cursor feedback behaviors and appearances, here are some design recommendations:
 
 ### Cursor scale
 * The cursor should be no larger than the available targets, allowing users to easily interact with and view the content.
