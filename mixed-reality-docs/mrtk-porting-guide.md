@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
 
 # Get your existing app ready for HoloLens 2
 
-This guide is tailored to help developers who have an existing Unity application for HoloLens (1st gen) port their application for the HoloLens 2 device. There are four key steps to porting a HoloLens (1st gen) Unity application to HoloLens 2. 
+This guide is tailored to help developers with an existing Unity application for HoloLens (1st gen) port their application for the HoloLens 2 device. There are four key steps to porting a HoloLens (1st gen) Unity application to HoloLens 2. 
 
 The sections below detail information for each stage:
 
@@ -59,11 +59,11 @@ After addressing any breaking changes after moving to the updated Unity version,
 
 ## Compile dependencies/plugins for ARM processor
 
-HoloLens (1st gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Therefore, existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling ARM32 apps while Unity 2019.x supports compiling ARM32 and ARM64 apps. Developing for ARM64 applications is generally preferred as there is a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64. 
+HoloLens (1st gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Therefore, existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling ARM32 apps while Unity 2019.x supports compiling ARM32 and ARM64 apps. Developing for ARM64 applications is generally preferred, as there is a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64. 
 
 Review all DLL dependencies in your application. It is advisable to remove any depencency that is no longer needed from your project. For remaining plugins that are required, ingest the respective ARM32 or ARM64 binaries into your Unity project. 
 
-After ingesting the relevant DLLs, build a Visual Studio solution from Unity, and then compile an AppX for ARM in Visual Studio to test that your application can be built for ARM processors. It is advised to save the application as a commit in your source control solution.
+After ingesting the relevant DLLs, build a Visual Studio solution from Unity and then compile an AppX for ARM in Visual Studio to test that your application can be built for ARM processors. It is advised to save the application as a commit in your source control solution.
 
 ## Update to MRTK version 2
 
@@ -79,7 +79,7 @@ Please read the following for more information on using MRTK version 2:
 
 Before ingesting the new [*.unitypackage files for MRTK v2](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases), it is recommended to take an inventory of **1) any custom-built code that integrates with MRTK v1** and **2) any custom-built code for input interactions or UX components**. The most common and prevalent conflict for a mixed reality developer ingesting MRTK v2 involves input and interactions. It is advised to begin reading and understanding the [MRTK v2 input model](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html).
 
-Finally, the new [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) has transitioned from a model of scripts and in-scene manager objects to a configuration and services provider architecture. This results in a cleaner scene hierarchy and architecture model but requires a learning curve for understanding the new configuration profiles. Thus, please read the [Mixed Reality Toolkit Configuration Guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) to start becoming familiar with the important settings and profiles to adjust to the needs of your application. 
+Finally, the new [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) has transitioned from a model of scripts and in-scene manager objects to a configuration and services provider architecture. This results in a cleaner scene hierarchy and architecture model, but requires a learning curve for understanding the new configuration profiles. Thus, please read the [Mixed Reality Toolkit Configuration Guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) to start becoming familiar with the important settings and profiles to adjust to the needs of your application. 
 
 ### Perform the migration
 
@@ -92,7 +92,7 @@ For information on the specific API differences between HTK/MRTK and MRTK v2, se
 - Prefer use of the [MRTK standard shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html).
 - Work on one breaking change type at a time (ex: IFocusable to [IMixedRealityFocusHandler](https://microsoft.github.io/MixedRealityToolkit-Unity/api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler.html)).
 - Test after every change and use source control.
-- Use default MRTK UX (buttons, slates, etc) when possible.
+- Use default MRTK UX (buttons, slates, etc), when possible.
 - Refrain from modifying MRTK files directly; create wrappers around MRTK components.
     - This action eases future MRTK ingestions and updates.
 - Review and explore sample scenes provided in the MRTK, especially *HandInteractionExamples.scene*.
@@ -103,7 +103,7 @@ For information on the specific API differences between HTK/MRTK and MRTK v2, se
 
 ### Testing your application
 
-In MRTK Version 2 you can simulate hand interactions directly in Unity as well as develop with the new APIs for hand interactions and eye tracking. The HoloLens 2 device is required to create a satisfying user experience. You are encouraged to start studying the documentation and tools for greater understanding. [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) supports development on HoloLens (1st gen), and traditional input models, such as select via air-tap can be tested on HoloLens (1st gen). 
+In MRTK Version 2, you can simulate hand interactions directly in Unity as well as develop with the new APIs for hand interactions and eye tracking. The HoloLens 2 device is required to create a satisfying user experience. You are encouraged to start studying the documentation and tools for greater understanding. [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) supports development on HoloLens (1st gen) and traditional input models, such as select via air-tap can be tested on HoloLens (1st gen). 
 
 ## Updating your interaction model for HoloLens 2
 
@@ -122,13 +122,13 @@ Every application and scenario are different, and we’ll continue to refine and
 
 ## Additional caveats and learnings about moving applications from x86 to ARM
 
-- Straight-forward Unity applications are simple because you can build an ARM application bundle or deploy directly to the device for the bundle to run. Some Unity native plugins can present certain development challenges. Because of this, you must upgrade all Unity native plugins to Visual Studio 2019, and then rebuild for ARM.
+- Straight-forward Unity applications are simple because you can build an ARM application bundle or deploy directly to the device for the bundle to run. Some Unity native plugins can present certain development challenges. Because of this, you must upgrade all Unity native plugins to Visual Studio 2019 and then rebuild for ARM.
 
-- One application used the Unity AudioKinetic Wwise plugin, and that version of Unity did not have a UWP ARM plugin, which caused a considerable effort to re-work sound capabilities into the applicaion in question to run on ARM. Ensure that all required plugins for your development plans are installed and available in Unity.
+- One application used the Unity AudioKinetic Wwise plugin and that version of Unity did not have a UWP ARM plugin, which caused a considerable effort to re-work sound capabilities into the applicaion in question to run on ARM. Ensure that all required plugins for your development plans are installed and available in Unity.
 
 - In some cases, a UWP/ARM plugin might not exist for application-required plugins, which blocks the ability to port the application and run it on HoloLens 2. Contact your plugin provider to resolve the issue and provide support for ARM.
 
-- The minfloat (and variants such as min16float, minint, etc…) in shaders might behave differently on HoloLens 2 than on HoloLens (1st gen). Specifically, these guarantee that at least the specified number of bits will be used. On Intel/Nvidia GPUs these are largely just treated as 32 bits. On ARM, the number of bits specified is actually adhered to. That means in practice, these numbers might have less precision or range on HoloLens 2 than they did on HoloLens (1st gen).
+- The minfloat (and variants such as min16float, minint, etc…) in shaders might behave differently on HoloLens 2 than on HoloLens (1st gen). Specifically, these guarantee that at least the specified number of bits will be used. On Intel/Nvidia GPUs, these are largely just treated as 32 bits. On ARM, the number of bits specified is actually adhered to. That means in practice, these numbers might have less precision or range on HoloLens 2 than they did on HoloLens (1st gen).
 
 - The _asm instructions don’t appear to work on ARM, meaning any code using _asm instructions must be rewritten.
 

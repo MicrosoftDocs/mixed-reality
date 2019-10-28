@@ -10,11 +10,11 @@ keywords: coordinate system, spatial coordinate system, orientation-only, seated
 
 # Coordinate systems
 
-At their core, mixed reality apps place [holograms](hologram.md) in your world that look and sound like real objects. This involves precisely positioning and orienting those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created. When reasoning about the position and orientation of your holograms, or any other geometry such as the [gaze](gaze.md) ray or [hand positions](gestures.md), Windows provides various real-world coordinate systems in which that geometry can be expressed, known as **spatial coordinate systems**.
+At their core, mixed reality apps place [holograms](hologram.md) in your world that look and sound like real objects. This involves precisely positioning and orienting those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created. When reasoning about the position and orientation of your holograms, or any other geometry such as the [gaze](gaze-and-commit.md) ray or [hand positions](hands-and-tools.md), Windows provides various real-world coordinate systems in which that geometry can be expressed, known as **spatial coordinate systems**.
 
 <br>
 
->[!VIDEO https://www.youtube.com/embed/TneGSeqVAXQ]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/TneGSeqVAXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Device support
 
@@ -61,6 +61,12 @@ At their core, mixed reality apps place [holograms](hologram.md) in your world t
         <td>✔️</td>
         <td>❌</td>
     </tr>
+    <tr>
+        <td><a href="scene-understanding.md">Scene understanding</a></td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
 </table>
 
 ## Mixed reality experience scales
@@ -88,7 +94,7 @@ These experience scales follow a "nesting dolls" model. The key design principle
 |  **Yes** |  **Yes** |  **Yes** |  **Yes** |  No |  **Room** | 
 |  **Yes** |  **Yes** |  **Yes** |  **Yes** |  **Yes** |  **World** | 
 
-Note that the Stage frame of reference is not yet supported on HoloLens. A room-scale app on HoloLens currently needs to use [spatial mapping](spatial-mapping.md) to find the user's floor and walls.
+Note that the Stage frame of reference is not yet supported on HoloLens. A room-scale app on HoloLens currently needs to use [spatial mapping](spatial-mapping.md) or [scene understanding](scene-understanding.md) to find the user's floor and walls.
 
 ## Spatial coordinate systems
 

@@ -2,14 +2,14 @@
 title: Unity development overview
 description: Getting started building mixed reality apps in Unity.
 author: thetuvix
-ms.author: alexturn
-ms.date: 04/15/2018
+ms.author: kurtie
+ms.date: 10/25/2018
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
 ---
 # Unity development overview
 
-The fastest path to building a [mixed reality app](app-views.md) is with [Unity](http://aka.ms/HoloLensUnity). We recommend that you take time to explore the [Unity tutorials](https://unity3d.com/learn/tutorials). If you need assets, Unity has a comprehensive [Asset Store](https://www.assetstore.unity3d.com/). Once you have built up a basic understanding of Unity, you can visit the [tutorials](tutorials.md) to learn the specifics of mixed reality development with Unity. Be sure to visit the [Unity Mixed Reality forums](http://forum.unity3d.com/forums/hololens.102/) to engage with the rest of the community building mixed reality apps in Unity and find solutions to problems you might run into.
+The fastest path to building a [mixed reality app](app-views.md) is with [Unity](https://unity.com). We recommend that you take time to explore the [Unity tutorials](https://unity3d.com/learn/tutorials). If you need assets, Unity has a comprehensive [Asset Store](https://www.assetstore.unity3d.com/). Once you have built up a basic understanding of Unity, you can visit the [tutorials](tutorials.md) to learn the specifics of mixed reality development with Unity. Be sure to visit the [Unity Mixed Reality forums](http://forum.unity3d.com/forums/hololens.102/) to engage with the rest of the community building mixed reality apps in Unity and find solutions to problems you might run into.
 
 To get started building mixed reality apps with Unity, first [install the tools](install-the-tools.md). 
 

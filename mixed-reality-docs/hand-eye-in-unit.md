@@ -45,7 +45,7 @@ You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://git
 
 ## See also
 
-* [Gestures](gestures.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Motion controllers](motion-controllers.md)
 * [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)

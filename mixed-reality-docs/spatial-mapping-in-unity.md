@@ -20,6 +20,29 @@ Unity includes full support for spatial mapping, which is exposed to developers 
 
 To use spatial mapping in your app, the spatialPerception capability needs to be set in your AppxManifest.
 
+## Device support
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Spatial mapping</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
+</table>
+
 ## Setting the SpatialPerception capability
 
 In order for an app to consume spatial mapping data, the SpatialPerception capability must be enabled.
