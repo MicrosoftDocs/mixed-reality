@@ -35,7 +35,7 @@ If your holograms are unstable, jumpy, or don’t look right, try one of these f
 
 ## HoloLens doesn’t respond to my gestures.
 
-To make sure HoloLens can see your gestures, keep your hand in the gesture frame, which extends a couple of feet on either side of you. When HoloLens can see your hand, the cursor will change from a dot to a ring. Learn more about using [gestures](gestures.md).
+To make sure HoloLens can see your gestures, keep your hand in the gesture frame, which extends a couple of feet on either side of you. When HoloLens can see your hand, the cursor will change from a dot to a ring. Learn more about using [gestures](gaze-and-commit.md#composite-gestures).
 
 If your environment is too dark, HoloLens might not see your hand, so make sure there’s enough light.
 
