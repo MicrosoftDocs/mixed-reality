@@ -20,7 +20,7 @@ The performant framerate values for each target platform are listed below.
 | [Windows Mixed Reality Ultra PCs](immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality PCs](immersive-headset-hardware-details.md) | 60 FPS |
 
-The framework below outlines best practices for hitting target frame rates. If developing in Unity, consider reading the [performance recommendations for Unity article](performance-recommendations-for-unity.md) as well for tips on measuring and improving framerate in the Unity environment.
+The framework below outlines best practices for hitting target frame rates. If developing in Unity, consider reading the [performance recommendations for Unity article](performance-recommendations-for-unity.md) for tips on measuring and improving framerate in the Unity environment.
 
 ## Understanding performance bottlenecks
 
@@ -39,7 +39,7 @@ Generally, HoloLens applications will be GPU bound, but not always. Use the tool
 
 ## How to analyze your application
 
-There are many tools that allow you to understand the performance profile of your mixed reality application. These will enable you find where and why you have bottlenecks so you can address them.
+There are many tools that allow you to understand the performance profile of your mixed reality application. These will enable you to find where and why you have bottlenecks, so you can address them.
 
 Below are some common tools to gain deep profiling information for your application:
 - [Intel Graphics Performance Analyzers](https://software.intel.com/gpa)
@@ -79,7 +79,7 @@ Generally, most work in a mixed reality application on the CPU involves performi
 When rendering a frame on the GPU, an application is generally either bound by memory bandwidth or fill rate.
 
 - **Memory bandwidth** is the rate of reads and writes the GPU can perform from memory
-    - To identify bandwidth limitations, reduce texture quality and check if framerate improved.
+    - To identify bandwidth limitations, reduce texture quality and check if the framerate has improved.
     - In Unity, this can be done by changing **Texture Quality** in **Edit** > **Project Settings** > **[Quality Settings](https://docs.unity3d.com/Manual/class-QualitySettings.html)**.
 - **Fill rate** refers to the pixels that can be drawn per second by the GPU.
     - To identify fill rate limitations, decrease the display resolution and check if framerate improved. 
@@ -110,15 +110,15 @@ Shaders are small programs that run on the GPU and perform two important steps i
 2) Determining the color of each pixel (the Pixel shader)
     - The Pixel shader is executed per pixel rendered by the geometry to the texture being rendered to.
 
-Typically shaders perform many transformations and lighting calculations. Although complex lighting models, shadows, and other operations can generate fantastic results, they also come with a price. Reducing the number of operations computed in shaders can greatly reduce the work needed for the GPU per frame.
+Typically, shaders perform many transformations and lighting calculations. Although complex lighting models, shadows, and other operations can generate fantastic results, they also come with a price. Reducing the number of operations computed in shaders can greatly reduce the work needed for the GPU per frame.
 
 ##### Shader coding recommendations
 
-- Use bilinear filtering whenever possible
+- Use bilinear filtering, whenever possible
 - Rearrange expressions to use MAD intrinsics in order to do a multiply and an add at the same time
 - Precalculate as much as possible on the CPU and pass as constants to the material
 - **Favor moving operations from the pixel shader to the vertex shader**
-    - Generally the number of vertices is much smaller than the number of pixels (720p is 921,600 pixels, 1080p is 2,073,600 pixels, etc.)
+    - Generally, the number of vertices is much smaller than the number of pixels (720p is 921,600 pixels, 1080p is 2,073,600 pixels, etc.)
 
 #### Remove GPU stages
 Post-processing effects can be very expensive and increase the fill rate of your application. This includes anti-aliasing techniques such as MSAA. On HoloLens, it is recommended to avoid these techniques entirely, as well as additional shader stages such as geometry, hull, and compute shaders.
