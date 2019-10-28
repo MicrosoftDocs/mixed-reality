@@ -62,7 +62,7 @@ To use dark text, you should use a bright back plate to make it readable. In add
     :::column-end:::
     :::column:::
         ![Black text examples](images/640px-typography-blackonwhite.jpg)<br>
-        **Image #1**- Examples of black text in the system apps - Store and Settings<br>
+        **Image #2**- Examples of black text in the system apps - Store and Settings<br>
     :::column-end:::
 :::row-end:::
 
