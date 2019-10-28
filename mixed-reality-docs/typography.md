@@ -95,7 +95,7 @@ For the near interaction at 0.45m(45cm), the minimum legible font's viewing angl
 
 Segoe UI (the default font for Windows) works well in most cases. However, avoid using light or semi light font families in small size since thin vertical strokes will vibrate and it will degrade the legibility. Modern fonts with enough stroke thickness work well. For example, Helvetica and Arial look gorgeous and are very legible in HoloLens with regular or bold weights.
 
-**For more detailed information about text size calculation in Unity, please refer to the page [Text in Unity](text-in-unity.md)
+**For more detailed information about text size calculation in Unity, please refer to [Text in Unity](text-in-unity.md)**
 
 ![Viewing Angle](images/Text_In_Unity_ViewingAngle.jpg)
 *Viewing distance, angle, and text height*
