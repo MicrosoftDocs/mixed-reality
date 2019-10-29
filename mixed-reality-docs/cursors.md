@@ -90,4 +90,4 @@ Designing without a cursor is recommended only when the sense of immersion is a 
 
 ## See also
 * [Gestures](gestures.md)
-* [Head-gaze and commit](gaze-and-commit.md)
+* [Gaze targeting](gaze-targeting.md)

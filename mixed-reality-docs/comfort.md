@@ -33,7 +33,7 @@ HoloLens displays are fixed at an optical distance approximately 2.0m away from 
 
 ### Best practices for HoloLens (1st gen) and HoloLens 2
 
-For maximum comfort, **the optimal zone for hologram placement is between 1.25m and 5m**. In every case, designers should attempt to structure content scenes to encourage users to interact 1m or farther away from the content (e.g. adjust [content size and default placement parameters](gaze-and-commit.md)). 
+For maximum comfort, **the optimal zone for hologram placement is between 1.25m and 5m**. In every case, designers should attempt to structure content scenes to encourage users to interact 1m or farther away from the content (e.g. adjust [content size and default placement parameters](gaze-targeting.md)). 
 
 Although content may occasionally need to be displayed closer than 1m, we recommend against ever presenting holograms closer than 40cm. Thus, we recommend starting to **fade out content at 40cm and placing a rendering clipping plane at 30cm** to avoid any nearer objects.
 
