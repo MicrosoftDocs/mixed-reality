@@ -37,6 +37,5 @@ In the following, we will address design guidelines when using eye gaze for this
 
 ## See also
 * [Head-gaze and commit](gaze-and-commit.md)
-* [Hand gestures](gestures.md)
 * [Voice input](voice-design.md)
 * [Motion controllers](motion-controllers.md)

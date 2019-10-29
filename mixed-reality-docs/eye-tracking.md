@@ -80,7 +80,7 @@ Other applications in this area can include:
 
 
 ## Available eye tracking data
-Before going into detail about the specific design guidelines for eye-gaze interaction, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose) provides. 
+Before going into detail about the specific design guidelines for eye-gaze interaction, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) provides. 
 Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (30 Hz)_.
 For more detailed information about how to access eye tracking data, please refer to our developer guides on using [eye-gaze in DirectX](gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
 
@@ -212,11 +212,11 @@ Below we first explain how to detect whether eye tracking is available and how t
 
 ### 1. How to detect that eye tracking is available
 There are a few checks to determine whether eye tracking data is available. Check whether...
-* ... the system supports eye tracking at all. Call the following *method*: [Windows.Perception.People.EyesPose.IsSupported()](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
+* ... the system supports eye tracking at all. Call the following *method*: [Windows.Perception.People.EyesPose.IsSupported()](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
 
-* ... the user is calibrated. Call the following *property*: [Windows.Perception.People.EyesPose.IsCalibrationValid](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)
+* ... the user is calibrated. Call the following *property*: [Windows.Perception.People.EyesPose.IsCalibrationValid](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)
 
-* ... the user has given your app permission to use their eye tracking data: Retrieve the current _'GazeInputAccessStatus'_. An example on how to do this is explained at [Requesting access to gaze input](https://docs.microsoft.com/en-us/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input).
+* ... the user has given your app permission to use their eye tracking data: Retrieve the current _'GazeInputAccessStatus'_. An example on how to do this is explained at [Requesting access to gaze input](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input).
 
 In addition, you may want to check that your eye tracking data is not stale by adding a timeout between received eye tracking data updates and otherwise fallback to head-gaze as discussed below. 
 
@@ -254,7 +254,6 @@ To get started developing, check out our information on
 * [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
 * [Calibration](calibration.md)
 * [Head-gaze and commit](gaze-and-commit.md)
-* [Hand gestures](gestures.md)
 * [Voice input](voice-design.md)
 * [Motion controllers](motion-controllers.md)
 * [Comfort](comfort.md)

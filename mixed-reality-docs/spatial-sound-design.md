@@ -18,7 +18,7 @@ If you've ever played [Marco Polo](https://en.wikipedia.org/wiki/Marco_Polo_(gam
 
 <br>
 
-> [!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Device support
 

@@ -111,5 +111,5 @@ When Voice is applied properly, the user understands **what they can say and get
 * Can I use voice to command things out the holographic frame on HoloLens?
 
 ## See also
-* [Gestures](gestures.md)
+* [Gestures](gaze-and-commit.md#composite-gestures)
 * [Head-gaze and dwell](gaze-and-dwell.md)

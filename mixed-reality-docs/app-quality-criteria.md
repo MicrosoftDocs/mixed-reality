@@ -543,7 +543,6 @@ Input interaction clarity is critical to an app's usability and includes input c
 * [Head-gaze and dwell](gaze-and-dwell.md)
 * [Cursors](cursors.md)
 * [Comfort and gaze](comfort.md#gaze-direction)
-* [Gestures](gestures.md)
 * [Voice input](voice-input.md)
 * [Motion controllers](motion-controllers.md)
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
