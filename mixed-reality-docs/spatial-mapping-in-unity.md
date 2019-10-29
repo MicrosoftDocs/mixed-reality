@@ -32,7 +32,7 @@ To use spatial mapping in your app, the spatialPerception capability needs to be
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
