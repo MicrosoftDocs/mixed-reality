@@ -55,5 +55,4 @@ You can access head-gaze from the [Input Manager](https://microsoft.github.io/Mi
 ## See also
 * [Camera](camera-in-unity.md)
 * [Cursors](cursors.md)
-* [Gaze input](gaze-and-commit.md)
-* [Gaze targeting](gaze-targeting.md)
+* [Head-gaze and commit](gaze-and-commit.md)

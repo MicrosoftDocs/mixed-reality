@@ -205,7 +205,7 @@
 #### [Locatable camera](locatable-camera.md)
 #### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 #### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
-### Holographic Remoting
+### Holographic remoting
 #### [Holographic Remoting Player](holographic-remoting-player.md)
 #### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
 #### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
@@ -214,7 +214,7 @@
 #### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
 #### [Version History](holographic-remoting-version-history.md)
 #### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-#### Holographic Remoting for HoloLens 1
+#### Holographic Remoting for HoloLens (1st gen)
 #### [Add Holographic Remoting](add-holographic-remoting.md)
 ### App quality and testing
 #### [App quality criteria](app-quality-criteria.md)
