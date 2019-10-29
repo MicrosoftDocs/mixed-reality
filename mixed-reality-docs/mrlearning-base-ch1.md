@@ -54,18 +54,17 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 
 ### Import the Mixed Reality Toolkit
 
-1. Download the latest [Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/releases) Unity packages, and save them to a folder on your PC.
+1. Download the [Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/releases) Unity [foundation package version 2.1.0](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage) and save it to a folder on your PC.
 
-2. Import each of the *Mixed Reality Toolkit* packages. Start by clicking on **Assets** > **Import** > **Custom Package**. Select one of the *Mixed Reality Toolkit* packages downloaded in Step 1 and open it to begin the importing process. Please allow a few minutes for the importing process.
+2. Import the *Mixed Reality Toolkit* package that you downloaded in the previous step. Start by clicking on **Assets** > **Import** > **Custom Package** and select *Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage* and open it to begin the importing process. Please allow a few minutes for the importing process to complete.
     ![Lesson1 Section3 Step2a](images/mrlearning-base-ch1-3-step2a.JPG)
     ![Lesson1 Section3 Step2b](images/mrlearning-base-ch1-3-step2b.JPG)
 
 3. In the next pop-up window, click **Import** to begin importing the selected package into the Unity project. Ensure all items are checked as shown in the image.
     ![Lesson1 Section3 Step3](images/mrlearning-base-ch1-3-step3.JPG)
-4. Repeat steps 2 and 3 above for each package *Mixed Reality Toolkit* package downloaded.
 
     > [!NOTE]
-    > If you see a pop-up dialog box asking to apply the Mixed Reality Toolkit default settings, click **Apply**. MRTK analyzes your project for any missing recommended settings when imported for automated setup.
+    > If you see a pop-up dialog box asking to apply the Mixed Reality Toolkit default settings, click **Apply**. MRTK analyzes your project for any missing recommended settings when imported for automated setup. Depending on your settings the popup might look differnt then the image below.
 
     ![Lesson1 Section3 Step4 Note1](images/mrlearning-base-ch1-3-step4-note1.JPG)
 
@@ -75,9 +74,9 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
   ![Lesson1 Section4 Step1](images/mrlearning-base-ch1-4-step1.JPG)
 
     > [!NOTE]
-    > You may see a pop-up dialog box asking to select a [profile for the Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html). If so, select **Ok**, and choose the profile named *"DefaultMixedRealityToolkitConfigurationProfile"*.
+    > You may see a pop-up dialog box for selecting a [profile for the Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html). Choose the profile named *DefaultMixedRealityToolkitConfigurationProfile* by double-clicking it.
 
-2. Your scene will have several new items and modifications. Save your scene under a different name by clicking **File** > **Save As**, and give your scene a name, such as *BaseScene*. Keep your scene organized by saving it to the *Scenes* folder in your project’s *Assets* folder.
+2. Your scene will have several new items and modifications. Save your scene under a different name by clicking **File** > **Save As...**, and give your scene a name, such as *BaseScene*. Keep your scene organized by saving it to the *Scenes* folder in your project’s *Assets* folder.
   ![Lesson1 Section4 Step2a](images/mrlearning-base-ch1-4-step2a.JPG)
   ![Lesson1 Section4 Step2b](images/mrlearning-base-ch1-4-step2b.JPG)
 
@@ -106,26 +105,26 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 
     ![Lesson1 Section5 Step5](images/mrlearning-base-ch1-5-step5.JPG)
 
-6. Connect your HoloLens 2 into your PC. While these instructions assume you will be deploying to a HoloLens 2 device, you might also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps>)
+6. Connect your HoloLens 2 to your PC. While these instructions assume you will be deploying to a HoloLens 2 device, you might also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps>)
 
     > [!IMPORTANT]
     > Before building to your device, the device must be in *Developer Mode* and paired with your development machine. Both of these steps can be completed by following [these instructions](using-visual-studio.md)
 
-8. Configure Visual Studio for building to your HoloLens 2 by selecting the *Release* or *Master* configuration and the *ARM* architecture.
-    ![Lesson1 Section5 Step8](images/mrlearning-base-ch1-5-step8.JPG)
+7. Configure Visual Studio for building to your HoloLens 2 by selecting the *Release* or *Master* configuration, the *ARM* architecture, and *Device* as target.
+    ![Lesson1 Section5 Step8](images/mrlearning-base-ch1-5-step7.JPG)
 
-9. The final step is to build and deploy to your device by selecting **Debug** > **Start without debugging**. Selecting *Start without Debugging* causes the application to immediately start on your device upon a successful build, but without the debugger attached and information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application.
+8. The final step is to build and deploy to your device by selecting **Debug** > **Start without debugging**. Selecting *Start without Debugging* causes the application to immediately start on your device upon a successful build, but without the debugger attached and information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application.
 
     > [!NOTE]
     > You might also select **Build** > **Deploy Solution** to deploy to your device without having the application automatically start.
 
-    ![Lesson1 Section5 Step9](images/mrlearning-base-ch1-5-step9-note1.JPG)
+    ![Lesson1 Section5 Step9](images/mrlearning-base-ch1-5-step8.JPG)
 
 ## Congratulations
 
 You have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mapping mesh covering all the surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on application performance. These are just a few of the foundational pieces, included out of the box, with the Mixed Reality Toolkit. In the lessons to come, you will start adding more content and interactivity to your scene so that you can fully explore the capabilities of HoloLens 2 and the Mixed Reality Toolkit.
 
 > [!NOTE]
-> You will cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md). It is generally recommended to keep the visual profiler visible at all times during development to understand when code changes may have impacted perf. HoloLens 2 application should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).
+> In the app you may notice the visual profiler. You will cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md). It is generally recommended to keep the visual profiler visible at all times during development to understand when code changes may have impacted perf. HoloLens 2 application should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).
 
 [Next Lesson: 3. Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md)
