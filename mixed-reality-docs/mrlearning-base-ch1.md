@@ -127,4 +127,4 @@ You have now deployed your first HoloLens 2 application. As you walk around, you
 > [!NOTE]
 > You will cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md). It is generally recommended to keep the visual profiler visible at all times during development to understand when code changes may have impacted perf. Hololens 2 application should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).
 
-[Next Lesson: 3. Creating user interface and configure Mixed Reality Toolkit ](mrlearning-base-ch2.md)
+[Next Lesson: 3. Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md)
