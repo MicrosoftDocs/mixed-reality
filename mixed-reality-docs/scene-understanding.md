@@ -68,7 +68,7 @@ Scene understanding provides new constructs specifically designed to simplify pl
 <br>
 
 
-If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene understanding SDK reference](scene-understanding-SDK.md)
+If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the [spatial mapping](spatial-mapping.md) mesh. For more details on this topic, please see the [Scene understanding SDK reference](scene-understanding-SDK.md)
 
 **Note** For legacy placement code that depends on the spatial mapping mesh, the spatial mapping mesh can be computed along with SceneQuads by setting EnableWorldMesh setting. If Scene understanding API does not satisfy your application's latency requirements, we recommend you continue to use the [Spatial mapping API](spatial-mapping.md#placement).
 
