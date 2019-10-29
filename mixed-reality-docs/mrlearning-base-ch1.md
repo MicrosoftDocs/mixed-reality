@@ -25,6 +25,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 1. Start Unity.
 2. Select **New**.
 ![Lesson1 Section1 Step2](images/mrlearning-base-ch1-1-step2.JPG)
+
 3. Enter a project name (e.g. "MixedRealityBase").
 ![Lesson1 Section1 Step3](images/mrlearning-base-ch1-1-step3.JPG)
 4. Enter a location to save your project.
