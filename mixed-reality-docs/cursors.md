@@ -105,7 +105,7 @@ If you would like to customize the cursor feedback behaviors and appearances, he
 * Avoid obstructing content. Holograms are what make the experience memorable and the cursor should not be taking away from them.
 
 ### Directionless cursor shape
-* Although there is no one right cursor shape, we recommend that you use a directionless shape like a torus. A cursor that points in some direction (ex: a traditional arrow cursor) might confuse the user to always look that way.
+* Although there is no one right cursor shape, we recommend that you use a directionless shape like a torus. A cursor that points in some direction (For example, a traditional arrow cursor) might confuse the user to always look that way.
 * An exception to this is when using the cursor to communicate interaction instruction to the user. For example, when scaling holograms in the Mixed Reality OS, the cursor temporarily includes arrows that instructs the user on how to move their hand to scale the hologram.
 
 ### Look and feel
@@ -131,10 +131,10 @@ If you would like to customize the cursor feedback behaviors and appearances, he
 * We could also use the cursor to show users that voice commands have been heard by the system via a momentary color chang
 
 * The following cursor states can be implemented in different ways. You might implement these different states by modeling the cursor like a state machine. For example:
-* Idle state is where you show the default cursor.
-* Ready state is when you have detected the user's hand in the ready position.
-* Interaction state is when the user is performing a particular interaction.
-* Possible Actions state or hover state is when you convey possible actions that can be performed on a hologram.
+    * Idle state is where you show the default cursor.
+    * Ready state is when you have detected the user's hand in the ready position.
+    * Interaction state is when the user is performing a particular interaction.
+    * Possible Actions state or hover state is when you convey possible actions that can be performed on a hologram.
 
 You could also implement these states in a skin-able manner such that you can display different art assets when different states are detected.
 
