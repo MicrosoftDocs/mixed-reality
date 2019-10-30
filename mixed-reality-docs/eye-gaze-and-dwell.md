@@ -1,8 +1,8 @@
 ---
 title: Eye-gaze and dwell
 description: Overview of the eye-gaze and dwell input model
-author: Sophie Stellmach
-ms.author: Sophie Stellmach
+author: sostel
+ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high

@@ -1,8 +1,8 @@
 ---
 title: Eye-gaze-based interaction
 description: HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at.
-author: Sophie Stellmach
-ms.author: Sophie Stellmach
+author: sostel
+ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Eye Tracking, Mixed Reality, Input, eye-gaze
