@@ -54,6 +54,7 @@
 #### [Hands-free](hands-free.md)
 #### [Voice input](voice-input.md)
 #### [Head-gaze and dwell](Gaze-and-dwell.md)
+#### [Eye-gaze and dwell](eye-gaze-and-dwell.md)
 ### [Eye-gaze and commit](eye-gaze-and-commit.md)
 ### [Head-gaze and commit](gaze-and-commit.md)
 ### [Eye-gaze-based interaction](eye-gaze-interaction.md)
