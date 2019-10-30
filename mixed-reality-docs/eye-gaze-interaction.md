@@ -1,13 +1,13 @@
 ---
-title: Eye tracking
+title: Eye-gaze
 description: HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at.
-author: Sophie Stellmach
-ms.author: Sophie Stellmach
-ms.date: 10/29/2019
+author: sostel
+ms.author: sostel
+ms.date: 04/05/2019
 ms.topic: article
-keywords: Eye tracking, Mixed Reality, input, eye-gaze
+keywords: Eye Tracking, Mixed Reality, Input, eye-gaze
 ---
-# Eye tracking on HoloLens 2
+# Eye-gaze on HoloLens 2
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 

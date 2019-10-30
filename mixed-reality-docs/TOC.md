@@ -42,6 +42,7 @@
 ### [Spatial mapping](spatial-mapping.md)
 ### [Room scan visualization](room-scan-visualization.md)
 ### [Spatial anchors](spatial-anchors.md)
+### [Eye tracking](eye-tracking.md)
 ## Interaction models
 ### [Instinctual interactions](Interaction-fundamentals.md)
 ### Hands and motion controllers model
@@ -53,8 +54,9 @@
 #### [Hands-free](hands-free.md)
 #### [Voice input](voice-input.md)
 #### [Head-gaze and dwell](Gaze-and-dwell.md)
-### [Head-gaze and commit model](gaze-and-commit.md)
-### [Eye-gaze](eye-tracking.md)
+### [Eye-gaze and commit](eye-gaze-and-commit.md)
+### [Head-gaze and commit](gaze-and-commit.md)
+### [Eye-gaze-based interaction](eye-gaze-interaction.md)
 ## UX elements
 ### [Overview](app-patterns-landingpage.md)
 ### Style
