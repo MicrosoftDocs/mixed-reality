@@ -178,5 +178,7 @@ Toggle buttons require some nuanced logic to work properly. When a person dwells
 * [Direct manipulation with hands](direct-manipulation.md)
 * [Point and commit with hands](point-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
+* [Eye-gaze and commit](gaze-and-commit.md)
 * [Head-gaze and commit](gaze-and-commit.md)
+* [Eye-gaze and dwell](eye-gaze-and-dwell.md)
 * [Voice input](voice-input.md)
