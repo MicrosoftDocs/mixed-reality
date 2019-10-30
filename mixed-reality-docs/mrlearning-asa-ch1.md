@@ -129,35 +129,35 @@ Note: After adding the ButtonParent into the scene, a popup will appear asking y
 Now that your scene is configured to demonstrate the basics of Azure Spatial Anchors, we will build and demonstrate the basic behavior of Azure Spatial Anchors. 
 
 1. If you closed the Build Settings window from the previous sections, open the build settings window again by going to File>Build Settings.
-![Lesson1Chapter5Step1](images/Lesson1Chapter5Step1.JPG)
+    ![mrlearning-asa-ch1-3-step1](images/mrlearning-asa-ch1-3-step1.jpg)
 2. Ensure the scene you want to try is in the Scenes in Build list by clicking on the Add Open Scenes button.
 3. Verify the Platform is set to Universal Windows Platform. If not, please set it to the same.
 4. Press the Player Settings button and go to Publishing Settings. Under Capabilities, enable: Internet, Internet Client Server, Private Network Client Server, Removable Storage, Webcam, Microphone and Spatial Perception.
 5. In the same Player Settings, go to XR settings  and select the Virtual Reality Supported to ON.
 6. Press the Build button to begin the build process.
-   ![Lesson1Chapter5Step3](images/Lesson1Chapter5Step3.JPG)
-7. Create and name a new folder for your application. In the image below, a folder with the name App was created to contain the application. Click Select Folder to begin building to the newly created folder. After the build has completed, you may close the Build Setting" window in Unity. 
-    ![Lesson1Chapter5Step4](images/Lesson1Chapter5Step4.JPG)
+   ![mrlearning-asa-ch1-3-step6](images/mrlearning-asa-ch1-3-step6.jpg)
+7. Create and name a new folder for your application. In the image below, a folder with the name App was created to contain the application. Click Select Folder to begin building to the newly created folder. After the build has completed, you may close the Build Setting" window in Unity.
 
-  > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?). You might need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk>) 
-  >
+    ![mrlearning-asa-ch1-3-step7](images/mrlearning-asa-ch1-3-step7.jpg)
+
+    > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?). You might need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk>) 
 
 8. After the build is completed, open the newly created folder containing your newly built application files. Double click on the“MixedRealityBase.sln" solution or the corresponding name. if you used an alternative name for your project to open the solution file in Visual Studio.
 
-  > Note: Be sure to open the newly created folder (i.e., the App folder, if following the naming conventions from the previous steps because there will be a similarly named .sln file outside of that folder that is not to be confused with the .sln file inside the build folder. 
+    > Note: Be sure to open the newly created folder (i.e., the App folder, if following the naming conventions from the previous steps because there will be a similarly named .sln file outside of that folder that is not to be confused with the .sln file inside the build folder.
 
-![Lesson1Chapter5Step5](images/Lesson1Chapter5Step5.JPG)
+    ![mrlearning-asa-ch1-3-step8](images/mrlearning-asa-ch1-3-step8.jpg)
 
-> Note: If Visual Studio asks to install new components, please take a moment to ensure that all prerequisite components are installed as specific in [the "Install the Tools" page](install-the-tools.md) 
+    > Note: If Visual Studio asks to install new components, please take a moment to ensure that all prerequisite components are installed as specific in [the "Install the Tools" page](install-the-tools.md) 
 
 9. Plug your HoloLens 2 into your PC with the USB cable. While these Lesson instructions assume you will be deploying a testing with a HoloLens 2 device, you may also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps>)
 
 10. Before building to your device, ensure that the device is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a pin. Follow [these instructions](https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
 11. Configure Visual Studio for building to your HoloLens 2 by selecting the Release configuration as well as the ARM architecture.
-    ![Lesson1Chapter5Step8](images/Lesson1Chapter5Step8.JPG)
+    ![mrlearning-asa-ch1-3-step11](images/mrlearning-asa-ch1-3-step11.jpg)
 
 12. The final Step is to build to your device by selecting Debug>Start without Debugging. Selecting Start without Debugging causes the application to immediately start on your device upon a successful build without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You might also select Build>Deploy Solution to deploy to your device without having the application automatically start.
-    ![Lesson1Chapter5Step9](images/Lesson1Chapter5Step9.JPG)
+    ![mrlearning-asa-ch1-3-step12](images/mrlearning-asa-ch1-3-step12.jpg)
 
 13. Follow the instructions. 
     When the application is running on your device, follow the on-screen instructions. Press the Scene buttons corresponding to the Steps below.
