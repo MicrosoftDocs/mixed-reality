@@ -104,7 +104,7 @@ For eye tracking to work accurately, each user is required to go through an eye 
 Building an interaction that takes advantage of fast-moving eye targeting can be challenging.
 On the one hand, the eyes move so fast that you need to be careful on how to use eye-gaze input, because otherwise user may find the experience overwhelming or distracting. 
 On the other hand, you can also create truly magical experiences that will excite your users! 
-To help you, we have compiled an overview of key advantages, challenges and design recommendations for [eye-gaze for interaction](eye-gaze-interaction.md) based on extensive investigations. 
+To help you, check out our overview of key advantages, challenges and design recommendations for [eye-gaze for interaction](eye-gaze-interaction.md). 
 
   
 ## Dev guidance: What if eye tracking is not available?
@@ -151,7 +151,7 @@ If eye tracking is not available, these capabilities may simply need to be disab
 <br>
 
 This page has hopefully provided you with a good overview to get you started understanding the role of eye tracking and eye-gaze input for HoloLens 2. 
-To get started developing, check out our information on 
+To get started developing, check out our information on the role of [eye-gaze for interacting with holograms](eye-gaze-interaction.md),
 [eye-gaze in Unity](https://aka.ms/mrtk-eyes) and 
 [eye-gaze in DirectX](gaze-in-directx.md).
 
