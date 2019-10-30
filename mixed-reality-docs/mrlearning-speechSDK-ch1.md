@@ -125,18 +125,18 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 1. Open the build settings window again by going to File>Build Settings.
 
-![Lesson1 Chapter5 Step1](images/Lesson1Chapter5Step1.JPG)
+![images/mrlearning-speach-ch1-2-step1](images/mrlearning-speach-ch1-2-step1.jpg)
 
 2. Ensure the scene you want to try is in the “Scenes in Build” list by clicking on the “Add Open Scenes” button.
 3. Press the Player Settings button and go to Publishing Settings. Under Capabilities, enable: Internet, Internet Client Server, Private Network Client Server, Microphone and Spatial Perception.
 4. In the same Player Settings, go to XR settings  and select the Virtual Reality Supported to ON.
 5. Press the Build button to begin the build process.
 
-![Lesson1 Chapter5 Step3](images/Lesson1Chapter5Step3.JPG)
+![mrlearning-speach-ch1-2-step5](images/mrlearning-speach-ch1-2-step5.jpg)
 
 6. Create and name a new folder for your application. In the image below, a folder with the name “App” was created to contain the application. Click “Select Folder” to begin building to the newly created folder. After the build has completed, you may close the "Build Settings" window in Unity. 
 
-![Lesson1 Chapter5 Step4](images/Lesson1Chapter5Step4.JPG)
+![mrlearning-speach-ch1-2-step6](images/mrlearning-speach-ch1-2-step6.jpg)
 
 > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)", then you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk>)
 
@@ -144,7 +144,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 > Note: Be sure to open the newly created folder (i.e., the "App" folder, if following the naming conventions from the previous steps), as there will be a similarly named .sln file outside of that folder that is not to be confused with the .sln file inside the build folder. 
 
-![Lesson1 Chapter5 Step5](images/Lesson1Chapter5Step5.JPG)
+![mrlearning-speach-ch1-2-step7](images/mrlearning-speach-ch1-2-step7.jpg)
 
 > Note: If Visual Studio asks you to install new components, please take a moment to ensure that all prerequisite components are installed as specified in [the "Install the Tools" page](install-the-tools.md)
 
@@ -153,11 +153,11 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 10. Configure Visual Studio for building to your HoloLens 2 by selecting the “Release” configuration and the “ARM” architecture.
 
-![Lesson1 Chapter5 Step8](images/Lesson1Chapter5Step8.JPG)
+![mrlearning-speach-ch1-2-step10](images/mrlearning-speach-ch1-2-step10.jpg)
 
 11. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting “Start without Debugging” will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You may also select Build>Deploy Solution to deploy to your device without having the application automatically start.
 
-![Lesson1 Chapter5 Step9](images/Lesson1Chapter5Step9.JPG)
+![mrlearning-speach-ch1-2-step11.JPG](images/mrlearning-speach-ch1-2-step11.jpg)
 
 ## Congratulations
 
