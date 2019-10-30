@@ -11,11 +11,18 @@ keywords: Eye tracking, Mixed Reality, input, eye-gaze
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at. This page tells developers how they can benefit from eye tracking for various use cases as well as what to look for when designing eye-gaze-based user interfaces. 
+HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at. 
+This page provides an overview to developers and designers on how they can benefit from eye tracking for various use cases as well as what to look for when designing eye-gaze-based user interfaces. 
+
+
+## Calibration 
+For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md) for which the user has to look at a set of holographic targets. 
+This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
+Eye tracking should work for most users, but there are rare cases in which a user might be unable to calibrate successfully.
+To learn more about the calibration and about how to ensure a smooth experience, please check [Calibration](calibration.md).
 
 
 ## Device support
-
 <table>
 <colgroup>
     <col width="25%" />
@@ -92,11 +99,7 @@ For eye tracking to work accurately, each user is required to go through an eye 
 ![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
 *Optimal target size at a 2-meter distance*
 
-## Calibration 
-For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md) for which the user has to look at a set of holographic targets. 
-This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
-Eye tracking should work for most users, but there are cases in which a user might be unable to calibrate successfully.
-To learn more about the calibration, please check [Calibration](calibration.md).
+
 
 ## Eye-gaze input design guidelines
 Building an interaction that takes advantage of fast-moving eye targeting can be challenging. 
