@@ -78,7 +78,7 @@ In this section, you will learn how to use hand tracking to press a pressable bu
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step2.png)
 
-3. Drag the prefab (represented by a blue box) named "PressableButtonHoloLens2" into your hierarchy.
+3. Drag the prefab (represented by a blue box) named "PressableButtonHoloLens2" into your hierarchy and set set the position values to x = 0, y = 0 and z = 0.2 so the button is in front of the camera. (The camera is positioned at origin).
 
     >[!NOTE]
     >If you get a message about “importing TMP Essentials”, import it at this time. If TMP Essentials was not already part of your project, you might need to repeat this step after importing TMP Essentials, otherwise button text may not appear.
@@ -89,7 +89,7 @@ In this section, you will learn how to use hand tracking to press a pressable bu
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step6a.png)
 
-    Now, a cube should be in your display. It will appear very large. You can adjust the coordinates (while Cube is still selected in the hierarchy area) to decrease the size. Set the scale values to x = 0.02, y = 0.02 and z = 0.02. Be sure to position the cube in your scene to place it near the button, but not overlapping with it. In the image below, the cube’s position is x = 0, y = 0.2, and z = 0.
+    Now, a cube should be in your display. It will appear very large. You can adjust the coordinates (while Cube is still selected in the hierarchy area) to decrease the size. Set the scale values to x = 0.02, y = 0.02 and z = 0.02. Be sure to position the cube in your scene near the button, but not overlapping with it. In the image below, the cube’s position is x = 0, y = 0.4, and z = 0.2.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step6b.png)
 
@@ -100,7 +100,7 @@ In this section, you will learn how to use hand tracking to press a pressable bu
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step4.png)
 
-5. We will modify the existing event to give the button an event to respond to when pushed. As you can see, the Event Receiver Type is set to InteractableOnPressReciever. This allows the button to respond to a pressed event when a tracked hand presses the button.
+5. We will modify the existing event to give the button an event to respond to when pushed. As you can see, the Event Receiver Type is set to InteractableOnPressReciever. This allows the button to respond to a pressed event when a tracked hand presses the button. At this point you should also change the Interaction Filter to Near and Far.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step5.png)
 
