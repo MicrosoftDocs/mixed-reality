@@ -10,7 +10,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 1. Getting started with Azure Spatial Anchors
 
-Welcome to the second module of the HoloLens 2 tutorials. Before getting started, be sure that all of the [prerequisites](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-hololens) are completed. If you have not completed the first, [Base module](mrlearning-base.md) yet, it's recommended that you complete that module first. If you are starting from a new Unity project, follow the new project creation steps in the [Base module](mrlearning-base.md). 
+Welcome to the second module of the HoloLens 2 tutorials. Before getting started, be sure that all of the [prerequisites](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) are completed. If you have not completed the first, [Base module](mrlearning-base.md) yet, it's recommended that you complete that module first. If you are starting from a new Unity project, follow the new project creation steps in the [Base module](mrlearning-base.md). 
 
 ## Objectives
 
@@ -120,7 +120,7 @@ Note: After adding the ButtonParent into the scene, a popup will appear asking y
 
 - For the Button named, Delete Local Anchor, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the RemoveLocalAnchor() method from the ParentAnchor object's ASAmoduleScript component.
 
-  To set up Azure spatial anchors, go to AzureSpatialAnchorsPlugin folder in assets folder and then navigate to Examples -> Resources->AzureSpatialAnchorsDemoConfig file. In the inspector panel add the Azure Account ID and Account Key created earlier. If you haven't created or don't have the them, please follow the [Prerequisites](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-hololens). module2chapter1step13im
+  To set up Azure spatial anchors, go to AzureSpatialAnchorsPlugin folder in assets folder and then navigate to Examples -> Resources->AzureSpatialAnchorsDemoConfig file. In the inspector panel add the Azure Account ID and Account Key created earlier. If you haven't created or don't have the them, please follow the [Prerequisites](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens). module2chapter1step13im
   
   ![module2chapter1step13im](images/module2chapter1step13im.PNG)
 
@@ -140,7 +140,7 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 
     ![mrlearning-asa-ch1-3-step7](images/mrlearning-asa-ch1-3-step7.jpg)
 
-    > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?). You might need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk>) 
+    > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?). You might need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com/windows/downloads/windows-10-sdk>) 
 
 8. After the build is completed, open the newly created folder containing your newly built application files. Double click on the“MixedRealityBase.sln" solution or the corresponding name. if you used an alternative name for your project to open the solution file in Visual Studio.
 
@@ -150,9 +150,9 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 
     > Note: If Visual Studio asks to install new components, please take a moment to ensure that all prerequisite components are installed as specific in [the "Install the Tools" page](install-the-tools.md) 
 
-9. Plug your HoloLens 2 into your PC with the USB cable. While these Lesson instructions assume you will be deploying a testing with a HoloLens 2 device, you may also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps>)
+9. Plug your HoloLens 2 into your PC with the USB cable. While these Lesson instructions assume you will be deploying a testing with a HoloLens 2 device, you may also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps>)
 
-10. Before building to your device, ensure that the device is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a pin. Follow [these instructions](https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
+10. Before building to your device, ensure that the device is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a pin. Follow [these instructions](https://docs.microsoft.com/windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
 11. Configure Visual Studio for building to your HoloLens 2 by selecting the Release configuration as well as the ARM architecture.
     ![mrlearning-asa-ch1-3-step11](images/mrlearning-asa-ch1-3-step11.jpg)
 
