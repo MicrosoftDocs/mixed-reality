@@ -156,12 +156,18 @@ If you're already in the Cortana app you can also click the **?** icon on the si
 
 ## Voice commands for fast hologram manipulation
 
-There are also a number of voice commands you can say while gazing at a hologram to quickly perform manipulation tasks. These voice commands work on app windows as well as 3D objects you have placed in the world.
+There are a number of voice commands you can say while gazing at a hologram to quickly perform manipulation tasks. 
+These voice commands work on app windows as well as 3D objects you have placed in the world.
 
 **Hologram manipulation commands**
 * Face me
 * Bigger | Enhance
 * Smaller
+
+On HoloLens 2, you can also create more natural interactions in combination with eye-gaze which implicitly provides contextual information about what you are referring to. 
+For example, you could simply look at a hologram and say "put _this_" and then look over where you want to place it and say "over _here_".
+Or you could look at a holographic part on a complex machine and say: "give me more information about _this_".
+
 
 
 ## Discovering voice commands
