@@ -862,4 +862,4 @@ The **Azure Face API** is powerful enough to detect up to 64 faces in a single i
 
 ### Exercise 2
 
-The **Azure Face API** is also able to provide back all kinds of attribute information. Integrate this into the application. This could be even more interesting, when combined with the [Emotion API](https://azure.microsoft.com/en-au/services/cognitive-services/emotion/).
+The **Azure Face API** is also able to provide back all kinds of attribute information. Integrate this into the application. This could be even more interesting, when combined with the [Emotion API](https://azure.microsoft.com/services/cognitive-services/emotion/).
