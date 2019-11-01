@@ -105,7 +105,7 @@ This is far from complete and we suggest learning more about eye-gaze targeting 
     </tr>
 </table>
 
-Whether you use head-gaze or eye-gaze for your gaze-and-commit input model comes with different sets of design constraints, which will be covered separately in the [eye-gaze and commit](eye-gaze-and-commit-eyes.md) and [head-gaze and commit](eye-gaze-and-commit-eyes.md) articles.
+Whether you use head-gaze or eye-gaze for your gaze-and-commit input model comes with different sets of design constraints, which will be covered separately in the [eye-gaze and commit](gaze-and-commit-eyes.md) and [head-gaze and commit](gaze-and-commit-head.md) articles.
 
 <br>
 

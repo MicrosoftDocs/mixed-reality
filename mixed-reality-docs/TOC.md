@@ -57,8 +57,8 @@
 ##### [Eye-gaze and dwell](gaze-and-dwell-eyes.md)
 ##### [Head-gaze and dwell](gaze-and-dwell-head.md)
 ### [Gaze and commit](gaze-and-commit.md)
-#### [Eye-gaze and commit](eye-gaze-and-commit.md)
-#### [Head-gaze and commit](head-gaze-and-commit.md)
+#### [Eye-gaze and commit](gaze-and-commit-eyes.md)
+#### [Head-gaze and commit](gaze-and-commit-head.md)
 ### [Eye-gaze-based interaction](eye-gaze-interaction.md)
 ## UX elements
 ### [Overview](app-patterns-landingpage.md)
