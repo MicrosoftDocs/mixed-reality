@@ -1,6 +1,6 @@
 ---
-title: Using the Windows namespace with Unity apps for HoloLens
-description: Explains how to make use of WinRT APIs in your Unity project for HoloLens.
+title: WinRT APIs with Unity for HoloLens
+description: Explains how to make use of WinRT APIs (the Windows namespace) in your Unity project for HoloLens.
 author: MikeRiches
 ms.author: mriches
 ms.date: 03/21/2018
@@ -8,13 +8,13 @@ ms.topic: article
 keywords: Unity, WinRT, windows mixed reality, API, walkthrough 
 ---
 
-# Using the Windows namespace with Unity apps for HoloLens
+# WinRT APIs with Unity for HoloLens
 
 This page describes how to make use of WinRT APIs in your Unity project for HoloLens.
 
 ## Mixed Reality APIs
 
-A Mixed Reality focused subset of the Windows SDK has been made available in a .NET Standard 2.0 compatible projection, which you can use in your project without preprocessor directives. This includes most APIs in the Windows.Perception and Windows.UI.Input.Spatial namespaces, and may expand to include additional APIs in the future. The projected APIs can be used while running in the Editor, which enables the use of [Play Mode](https://docs.microsoft.com/en-us/windows/mixed-reality/unity-play-mode). To use this projection, make the following modifications to your project:
+A Mixed Reality focused subset of the Windows SDK has been made available in a .NET Standard 2.0 compatible projection, which you can use in your project without preprocessor directives. This includes most APIs in the Windows.Perception and Windows.UI.Input.Spatial namespaces, and may expand to include additional APIs in the future. The projected APIs can be used while running in the Editor, which enables the use of [Play Mode](https://docs.microsoft.com//windows/mixed-reality/unity-play-mode). To use this projection, make the following modifications to your project:
 
 1) Add a reference to the [Microsoft.Windows.MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) NuGet package using [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity).
 2) Prefix references to the `Windows` namespace with `Microsoft.`:
@@ -35,7 +35,7 @@ This can be done via two steps in Unity:
     - **Edit** > **Project Settings** > **Player** > **Configuration** > **Api Compatibility Level** to **.NET 4.6** or **.NET Standard 2.0**
 2) The preprocessor directive **ENABLE_WINMD_SUPPORT** must be wrapped around any WinRT-leveraged code
 
-The following code snippet is from the Unity manual page for [Universal Windows Platform: WinRT API in C# scripts](http://docs.unity3d.com/Manual/windowsstore-scripts.html). In this example, an advertising ID is returned, but only on UWP and Xbox One builds:
+The following code snippet is from the Unity manual page for [Universal Windows Platform: WinRT API in C# scripts](https://docs.unity3d.com/Manual/windowsstore-scripts.html). In this example, an advertising ID is returned, but only on UWP and Xbox One builds:
 
 ```
 using UnityEngine;

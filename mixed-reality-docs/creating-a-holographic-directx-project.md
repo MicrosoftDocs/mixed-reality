@@ -46,7 +46,7 @@ To create a new project:
    ![Screenshot of setting Windows 10, version 1903 as the target and minimum versions](images/new-uwp-project.png)<br>
    *Setting **Windows 10, version 1903** as the target and minimum versions*
    >[!IMPORTANT]
-   >If you do not see **Windows 10, version 1903** as an option, you do not have the latest Windows 10 SDK installed.  To get this option to appear, <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk" target="_blank">install version 10.0.18362.0 or later of the Windows 10 SDK</a>.
+   >If you do not see **Windows 10, version 1903** as an option, you do not have the latest Windows 10 SDK installed.  To get this option to appear, <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">install version 10.0.18362.0 or later of the Windows 10 SDK</a>.
 
 The template generates a project using <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gaze-and-commit.md#composite-gestures) or press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze-and-commit.md). You can modify this project to create any mixed reality app.
 

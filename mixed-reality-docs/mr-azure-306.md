@@ -64,7 +64,7 @@ We recommend the following hardware and software for this course:
 2.  Set up and test your Mixed Reality Immersive Headset.
 
     > [!NOTE]
-    > You will **not** require Motion Controllers for this course. If you need support setting up the Immersive Headset, please click [link on how to set up Windows Mixed Reality](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+    > You will **not** require Motion Controllers for this course. If you need support setting up the Immersive Headset, please click [link on how to set up Windows Mixed Reality](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 ## Chapter 1 - The Azure Portal: creating the Azure Storage Account
 

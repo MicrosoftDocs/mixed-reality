@@ -1,5 +1,5 @@
 ---
-title: Updating your SteamVR application for Windows Mixed Reality
+title: Updating your SteamVR application
 description: Best practices for updating your SteamVR application to maximize compatiblity with Windows Mixed Reality headsets.
 author: thmignon
 ms.author: thmignon
@@ -10,13 +10,12 @@ keywords: SteamVR, Compatibility
 
 
 
-# Updating your SteamVR application for Windows Mixed Reality
-
+# Updating your SteamVR application
 We encourage developers to test and optimize their SteamVR experiences to run on Windows Mixed Reality headsets. This documentation covers common improvements developers can make to ensure that their experience runs great on Windows Mixed Reality.
 
 ## Initial setup instructions
 
-To start testing out your game or app on Windows Mixed Reality make sure to first follow our [getting started guide.](http://aka.ms/WindowsMixedRealitySteamVR)
+To start testing out your game or app on Windows Mixed Reality make sure to first follow our [getting started guide.](https://aka.ms/WindowsMixedRealitySteamVR)
 
 ## Controller Models
 1. If your app renders controller models:
@@ -56,7 +55,7 @@ To display Windows Mixed Reality support for your title, go to the "Edit Store P
 
 Your feedback is invaluable when it comes to improving the Windows Mixed Reality SteamVR experience. Please submit all feedback and bugs through the [Windows Feedback Hub](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback). Here are some [tips on how to make your SteamVR feedback as helpful as possible](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr).
 
-If you have questions or comments to share, you can also reach us on our [Steam forum](http://steamcommunity.com/app/719950/discussions/).
+If you have questions or comments to share, you can also reach us on our [Steam forum](https://steamcommunity.com/app/719950/discussions/).
 
 ## FAQs and troubleshooting
 

@@ -19,7 +19,7 @@ This topic explains how to implement [voice commands](voice-input.md), and small
 
 ## Use a SpeechRecognizer for continuous recognition of voice commands
 
-In this section, we describe how to use continuous speech recognition to enable voice commands in your app. This walkthrough uses code from the [HolographicVoiceInput](http://go.microsoft.com/fwlink/p/?LinkId=844964) Sample. When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.
+In this section, we describe how to use continuous speech recognition to enable voice commands in your app. This walkthrough uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) Sample. When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.
 
 First, create a new **Windows::Media::SpeechRecognition::SpeechRecognizer** instance.
 

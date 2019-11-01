@@ -32,7 +32,7 @@ Today, to run high-quality 3D models on mobile devices and mixed reality headset
 
 Bring interactive, high-quality 3D models to untethered devices with every detail intact and no compromise on quality using Azure Remote Rendering Preview.
 
-[Learn more about Azure Remote Rendering](https://azure.microsoft.com/en-us/services/remote-rendering)
+[Learn more about Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)
 
 
 ## Cognitive Services
