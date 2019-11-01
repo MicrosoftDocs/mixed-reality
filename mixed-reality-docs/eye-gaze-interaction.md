@@ -1,6 +1,6 @@
 ---
 title: Eye-gaze-based interaction
-description: HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at.
+description: HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at. This page covers design recommendations for developers who want to use eye-gaze as an input.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
@@ -11,11 +11,13 @@ keywords: Eye Tracking, Mixed Reality, Input, eye-gaze
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
-On [Eye tracking on HoloLens 2](eye-tracking.md) we introduced one of our exciting new capabilities on HoloLens 2: Eye tracking. 
-We mentioned the need for each user to go through a [Calibration](), provided some developer guidance and highlighted use cases for eye tracking. 
-This page now provides a more in-depth discussions for developers and designers interested in using eye-gaze as an input to interact with their holographic applications. 
-You will learn about key advantages of eye targeting, but also learn to understand the unique challenges that come with eye gaze input. 
-Based on this, we provide several design recommendations to help create satisfying eye-gaze-based user interfaces. 
+One of our exciting new capabilities on HoloLens 2 is eye tracking.
+On our [Eye tracking on HoloLens 2](eye-tracking.md) page, we mentioned the need for each user to go through a [Calibration](https://docs.microsoft.com/hololens/hololens-calibration), provided some developer guidance and highlighted use cases for eye tracking.
+Eye-gaze input is still a pretty new type of user input and there is a lot to learn. 
+While eye-gaze input is only used very subtely in our Holographic Shell experience (the first thing you see when you start your HoloLens 2), several apps, such as the ["MR Playground"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), showcase great examples on how eye-gaze input can add to the magic of your holographic experience.
+On this page here, we discuss design considerations for integrating eye-gaze input to interact with your holographic applications.
+You will learn about key advantages and also unique challenges that come with eye-gaze input.  
+Based on these, we provide several design recommendations to help you create satisfying eye-gaze-supported user interfaces. 
 
 
 ## Device support
@@ -63,22 +65,23 @@ Eye-gaze can provide a powerful supporting input for hand and voice input buildi
 Another important benefit is the possibility to infer what a user is paying attention to. 
 This can help in various application areas ranging from more effectively evaluating different designs to aiding in smarter user interfaces and enhanced social cues for remote communication.
 
-In a nutshell, using eye-gaze as an input offers a fast and effortless contextual signal. This is particularly powerful when combined with other inputs such as *voice* and *manual* input to confirm the user's intent.
+In a nutshell, using eye-gaze as an input offers a fast and effortless contextual input signal. 
+This is particularly powerful when combined with other inputs such as *voice* and *manual* input to confirm the user's intent.
 
 
 ### Challenges of eye-gaze as an input
 With lots of power, comes lots of responsibility.
-While eye-gaze can be used to create satisfying user experiences that makes you feel like a superhero, it is also important to know what it is not good at to appropriately account for this. 
-The following discusses some *challenges* to consider as well as how to address them when working with eye-gaze input: 
+While eye-gaze can be used to create satisfying user experiences which make you feel like a superhero, it is also important to know what it is not good at to appropriately account for this. 
+The following discusses some *challenges* to consider and how to address them when working with eye-gaze input: 
 
 - **Your eye-gaze is "always on"** 
 The moment you open your eye lids, your eyes start fixating on things in the environment. 
-Reacting to every look you make and accidentally issuing actions because you looked at something for too long would result in an unsatisfying experience.
-Therefore we recommend combining eye-gaze with a *voice command*, *hand gesture*, *button click* or extended dwell to trigger the selection of a target.
+Reacting to every look you make and accidentally issuing actions, because you looked at something for too long, would result in an unsatisfying experience.
+Therefore, we recommend combining eye-gaze with a *voice command*, *hand gesture*, *button click* or extended dwell to trigger the selection of a target (for more information see [eye-gaze and commit](gaze-and-commit-eyes.md)).
 This solution also allows for a mode in which the user can freely look around without being overwhelmed by involuntarily triggering something. 
-This issue should also be considered when designing visual and auditory feedback when merely looking at a target.
-Do not overwhelm the user with immediate pop-out effects or hover sounds. Subtlety is key. 
-We will discuss some best practices for this further below when talking about design recommendations.
+This issue should also be considered when designing visual and auditory feedback when looking at a target.
+Try not to overwhelm the user with immediate pop-out effects or hover sounds. Subtlety is key. 
+We will discuss some best practices for this further below when talking about [design recommendations](eye-gaze-interaction#design-recommendations).
 
 - **Observation vs. control** 
 Imagine that you want to precisely straighten a photograph on your wall. 
@@ -88,12 +91,12 @@ Difficult, isn't it?
 This describes the double role of eye-gaze when it is required both for input and control. 
 
 - **Leave before click:** 
-For quick target selections, research has shown that a user's eye-gaze can move on before concluding a manual click (e.g., an airtap). 
+For quick target selections, research has shown that a user's eye-gaze can move on before concluding a manual click (e.g., an air tap). 
 Hence, special attention must be paid to synchronizing the fast eye-gaze signal with slower control input (e.g., voice, hands, controller).
 
 - **Small targets:**
 Do you know the feeling when you try to read text that is just a bit too small to read comfortably? 
-This straining feeling on your eyes can cause you to feel tired and worn out because you try to readjust your eyes to focus better.
+This straining feeling on your eyes can cause you to feel tired and worn out, because you try to readjust your eyes to focus better.
 This is a feeling you might invoke in your users when forcing them to select targets that are too small in your application using eye targeting.
 For your design, to create a pleasant and comfortable experience for your users, we recommend that targets should be at least 2° in visual angle, preferably larger.
 
@@ -103,8 +106,8 @@ If you look at scan paths of recorded eye movements, you can see that they look 
 Your eyes move quickly and in spontaneous jumps in comparison to *head-gaze* or *hand motions*.  
 
 - **Tracking reliability:**
-Eye tracking accuracy may degrade a little in changing light as your eye adjust to the new conditions.
-While this should not necessarily affect your application design, as the accuracy should be within the 2° limitation, i might be necessary for the user to calibrate again. 
+Eye tracking accuracy may degrade a little in changing light as your eyes adjust to the new conditions.
+While this should not necessarily affect your application design, as the accuracy should be within the 2° limitation, it may be necessary for the user to calibrate again. 
 
 
 ## Design recommendations
@@ -116,21 +119,25 @@ While our fast and ragged eye movements are great at quickly selecting targets a
 In this case, hand or head pointing should be preferred.
   
     - **Avoid attaching something directly to the user’s eye-gaze (e.g., a slider or cursor).**
-In case of a cursor, this may result in the “fleeing cursor” effect due to slight offsets in the projected eye-gaze signal. 
+In case of a cursor, this may result in a "fleeing cursor" effect due to slight offsets in the projected eye-gaze signal. 
 In case of a slider, it can conflict with the double role of controlling the slider with your eyes while also wanting to check whether the object is at the correct location. 
+For the example of the slider, it makes more sense to use eye-gaze in combination with hand gestures. 
+This means that the user could quickly and effortlessly switch among a number of sliders, raising up their hand and pinching their thumb and index finger to grab and move it. 
+When the pinch is released, the slider stops moving. 
 In a nutshell, users could become overwhelmed and distracted, especially if the signal is imprecise for that user. 
   
 2. **Combine eye-gaze with other inputs:** 
-The integration of eye tracking with other inputs, such as hand gestures, voice commands or button presses, serves several advantages:
+The integration of eye tracking with other inputs, such as hand gestures, voice commands or button presses, provides several advantages:
     - **Allow for free observation:** 
-    Given that the main role of our eyes is to observe our environment, it is important users are allowed to look around without triggering any (visual, auditory, etc.) feedback or actions. 
+    Given that the main role of our eyes is to observe our environment, it is important that users are allowed to look around without triggering any (visual, auditory, etc.) feedback or actions. 
     Combining eye tracking with another input control allows smooth transitioning between eye tracking observation and input control modes.
   
     - **Powerful context provider:** 
-Using information about where and what the user is looking at while uttering a voice command or performing a hand gesture allows seamlessly channeling the input across the field-of-view. For example: “Put that there” to quickly and fluently select and position a hologram across the scene by simply looking at a target and destination. 
+Using information about where and what the user is looking at while saying a voice command or performing a hand gesture allows seamlessly channeling the input across the field-of-view. 
+For example: Say _"put that there"_ to quickly and fluently select and position a hologram across the scene by simply looking at a target and its intended destination. 
 
-    - **Need for synchronizing multimodal inputs (“leave before click” issue):** 
-Combining rapid eye movements with more complex additional inputs, such as long voice commands or hand gestures, bears the risk of continuing your eye-gaze before finishing the additional input command. 
+    - **Need for synchronizing multimodal inputs:** 
+Combining rapid eye movements with more complex additional inputs, such as long voice commands or hand gestures, bears the risk that the user already continues to look around before the additional input command is finished and recognized. 
 Hence, if you create your own input controls (e.g., custom hand gestures), make sure to log the onset of this input or approximate duration to correlate it with what a user had looked at in the past.
     
 3. **Subtle feedback for eye tracking input:**
@@ -146,18 +153,17 @@ We distinguish two types of imprecisions which are noticeable to users: offset a
   
 <br>
 
-This page has hopefully provided you with a good overview to get you started understanding the eye-gaze as an input in mixed reality. 
+This page provided you with a good overview to get you started understanding eye-gaze as an input in mixed reality. 
 To get started developing, check out our information on 
 [eye-gaze in Unity](https://aka.ms/mrtk-eyes) and 
 [eye-gaze in DirectX](gaze-in-directx.md).
 
 
 ## See also
-* [Calibration](calibration.md)
 * [Comfort](comfort.md)
-* [Eye tracking](eye-tracking.md)
 * [Eye-gaze in DirectX](gaze-in-directx.md)
 * [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
-* [Eye-gaze and commit](eye-gaze-and-commit.md)
-* [Head-gaze and commit](gaze-and-commit.md)
+* [Eye-gaze and commit](gaze-and-commit-eyes.md)
+* [Eye-gaze and dwell](gaze-and-dwell-eyes.md)
+* [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Voice input](voice-design.md)
