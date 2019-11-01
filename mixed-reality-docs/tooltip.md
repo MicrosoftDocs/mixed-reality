@@ -10,7 +10,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 # Tooltip
 
-![Tooltip](images/InteractableExamples.png)
+![Tooltip](images/UX/UX_Hero_Tooltip.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
 

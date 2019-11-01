@@ -10,6 +10,8 @@ keywords: HoloLens (1st gen), HoloLens 2, Mixed Reality, cursors, targeting, gaz
 
 # Cursors
 
+![Cursors](images/UX/UX_Hero_Cursor.jpg)
+
 A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where the headset believes their current focus is at that time. The cursor allows the user to understand their current targeting point and acts as feedback to indicate what area, hologram, or point will respond to input. It is the digital representation of where the device understands the user's attention to be (though that may not be the same as determining anything about their intentions).
 
 The feedback provided by the cursor offers users the ability to anticipate how the system will respond, use that signal as feedback to better communicate their intention to the device, and ultimately be more confident about their interactions.

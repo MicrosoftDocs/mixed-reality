@@ -9,7 +9,7 @@ keywords: hand, menu, button, quick access, layout
 ---
 # Hand menu
 
-![Ulnar side hand location](images/MRTK_UX_HandMenu.png)
+![Ulnar side hand location](images/UX/UX_Hero_HandMenu.jpg)
 
 Hand menus allow users to quickly bring up hand-attached UI for frequently used functions. 
 

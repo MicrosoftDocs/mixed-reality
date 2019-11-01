@@ -10,7 +10,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 # Slate
 
-![Slate](images/InteractableExamples.png)
+![Slate](images/UX/UX_Hero_Slate.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
 
