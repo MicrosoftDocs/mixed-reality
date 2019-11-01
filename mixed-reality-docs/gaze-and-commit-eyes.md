@@ -36,6 +36,10 @@ In the following, we will address design guidelines when using eye gaze for this
 **Look out for synchronizing gaze and commit signals**: The synchronization of input signals may be less of a challenge for simple gaze & commit, so, don't worry! It is something to look out for in case you want to use more complicated commit actions though that may involve long voice commands or complicated hand gestures. Imagine you look at target and utter a long voice command. Taken into account the time that you needed to speak and the time that the system needed to detect what you said, your eye gaze has usually long moved on to some new target in the scene. Hence, either make your users aware that they may need to keep looking at a target until the command has been recognized or handle the input in a way to determine the onset of the command and what the user had been looking at back then.
 
 ## See also
-* [Head-gaze and commit](gaze-and-commit.md)
-* [Voice input](voice-design.md)
-* [Motion controllers](motion-controllers.md)
+* [Eye-based interaction] (eye-gaze-interaction.md)
+* [Gaze and dwell](gaze-and-dwell.md)
+* [Hands - Direct manipulation](direct-manipulation.md)
+* [Hands - Gestures](gaze-and-commit.md#composite-gestures)
+* [Hands - Point and commit](point-and-commit.md)
+* [Instinctual interactions](interaction-fundamentals.md)
+* [Voice input](voice-input.md)
