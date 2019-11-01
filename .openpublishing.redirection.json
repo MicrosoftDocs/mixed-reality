@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+            "source_path": "mixed-reality-docs/hololens-known-issues.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-known-issues",
+            "redirect_document_id": true
+        },
+		{
             "source_path": "mixed-reality-docs/hololens-status.md",
             "redirect_url": "https://docs.microsoft.com/hololens/hololens-status",
             "redirect_document_id": true
