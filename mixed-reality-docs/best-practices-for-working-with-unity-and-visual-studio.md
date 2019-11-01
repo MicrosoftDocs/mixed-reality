@@ -30,7 +30,7 @@ Further, consider installing the [*UnityScriptAnalyzer* Visual Studio extension]
 
 ## Visual Studio Tools for Unity
 
-Download [Visual Studio Tools for Unity](https://docs.microsoft.com/en-us/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
+Download [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
 
 **Benefits of Visual Studio Tools for Unity**
 * Debug Unity in-editor play mode from Visual Studio by putting breakpoints, evaluating variables and complex expressions.

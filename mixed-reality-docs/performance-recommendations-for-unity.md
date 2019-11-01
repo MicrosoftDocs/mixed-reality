@@ -112,7 +112,7 @@ public class ExampleClass : MonoBehaviour
 
     [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It is the process of wrapping value-typed variables such as char, int, bool, etc. into reference-typed variables. When a value-typed variable is "boxed", it is wrapped inside of a System.Object which is stored on the managed heap. Thus, memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
 
-    One of the most common forms of boxing in development is the use of [nullable value types](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/). It is common to want to be able to return null for a value type in a function especially when the operation may fail trying to get the value. The potential problem with this approach is that allocation now occur on the heap and consequently need to be garbage collected later.
+    One of the most common forms of boxing in development is the use of [nullable value types](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/). It is common to want to be able to return null for a value type in a function especially when the operation may fail trying to get the value. The potential problem with this approach is that allocation now occur on the heap and consequently need to be garbage collected later.
 
     **Example of boxing in C#**
 

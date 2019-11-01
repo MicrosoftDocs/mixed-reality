@@ -35,7 +35,7 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
     We designed Mixed Reality Dev Days for YOU – experts in mixed reality and the many aspects of cloud and AI technology that come with it, from computer vision to hologram creation. If you are a mixed reality developer looking to get training on our developer platform, tools, services and devices, Mixed Reality Dev Days is a great fit. 
 
-    [Microsoft Build](https://www.microsoft.com/en-us/build) brings developers and experts from product teams across the company together. A wide range of technologies and application patterns are covered. This event does not replace Build, and if that’s your jam, we encourage you to do that, too! 
+    [Microsoft Build](https://www.microsoft.com//build) brings developers and experts from product teams across the company together. A wide range of technologies and application patterns are covered. This event does not replace Build, and if that’s your jam, we encourage you to do that, too! 
 
 * **How much does the event cost?**
 

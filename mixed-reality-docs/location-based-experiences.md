@@ -32,11 +32,11 @@ Acer: [Details](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002)
 
 If your location specializes in mixed or augmented reality experiences requiring the use of a see-through headset, you can procure the Microsoft HoloLens 2 (now open for pre-order interest).  
 
-HoloLens 2: [Pre-order interest](https://www.microsoft.com/en-us/hololens/buy)
+HoloLens 2: [Pre-order interest](https://www.microsoft.com//hololens/buy)
 
 If you’re experimenting with experiences that require advanced computer vision, speech and body tracking, you may find the Azure Kinect DK a fit for your needs.  
 
-Azure Kinect: [Details](https://azure.microsoft.com/en-us/services/kinect-dk/)
+Azure Kinect: [Details](https://azure.microsoft.com//services/kinect-dk/)
 
 **Q: What is the portfolio of backpack PCs I can use to run my PC-tethered VR experiences?**
 
@@ -94,11 +94,11 @@ The JSON file should have the below contents with “true” set for any of the 
  
 **Q: Is there any guidance on configuring the playspace?**
 
-A: Configuring a playspace should be done as you would with a consumer setup experience. The Room Setup process will also let you define your room boundaries. More details on configuring room boundaries can be read [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+A: Configuring a playspace should be done as you would with a consumer setup experience. The Room Setup process will also let you define your room boundaries. More details on configuring room boundaries can be read [here](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 As discussed in the above document the maximum reasonable single coordinate playspace is around 5mx5m. If you want to have a larger area you can make use of the Spatial Anchors capability in the Windows Holographic API stack. Using this API will require custom engineering in the experiences you are producing.  
 
-More details on how to optimize your content for different space sizes can be read [here](https://docs.microsoft.com/en-us/windows/mixed-reality/coordinate-systems).
+More details on how to optimize your content for different space sizes can be read [here](https://docs.microsoft.com//windows/mixed-reality/coordinate-systems).
  
 
 **Q: My space is too large and I’m running into errors when I try to set up a Standing experience with boundaries. What should I do to setup my large free-roam experience work?**
@@ -109,7 +109,7 @@ Instead, you can setup “seated” mode, which will not display the boundary or
 
 The application developer is responsible to display necessary safeguards so that users don’t collide with physical surroundings.  These could be digital walls within the experience or a customized game boundary visual. 
 
-Guidance on setting up the room boundary with WMR can be found [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+Guidance on setting up the room boundary with WMR can be found [here](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 **Q: Where is the origin of the playspace?**
 
@@ -121,10 +121,10 @@ A: The origin of the playspace is determined by the Room Setup experience, more 
 
 A: The Mixed Reality Spatial Data Packager tool is a beta feature that allows localizing multiple players in the same space by enabling porting of the spatial data from one PC to another. You can access the tool and learn more about it [here](mixedrealityspatialdatapackager.md).
 
-If you opt into the Windows 20H1 or later builds (via our [Insider](https://docs.microsoft.com/en-us/windows-insider/at-home/get-started) program) you can access a new interface for map sharing. 
+If you opt into the Windows 20H1 or later builds (via our [Insider](https://docs.microsoft.com//windows-insider/at-home/get-started) program) you can access a new interface for map sharing. 
 This new functionality is available via the Map Manager interface of the Windows Device portal. To use this tool follow these steps:
 - Make sure you are opted into 20H1 or later (as of September 2019 this means using our Insider program)
-- Enable the Windows Device Portal (WDP), instructions are [here](https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-desktop)
+- Enable the Windows Device Portal (WDP), instructions are [here](https://docs.microsoft.com//windows/uwp/debug-test-perf/device-portal-desktop)
 - Plug in a Windows Mixed Reality HMD that you wish to either download an existing map from or import a new map
 - Navigate to the WDP in your browser of choice using the URL provided in the settings screen. 
   - Once there Navigate to the "Mixed Reality" section and select "Map Manager". 
@@ -136,7 +136,7 @@ This new functionality is available via the Map Manager interface of the Windows
 
 Q: How does the tracking technology in the Windows Mixed Reality headsets work?  
 
-Mixed Reality shares the same tracking technology as the HoloLens. To learn more about the inside-out tracking system, check out the documentation [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/tracking-system).
+Mixed Reality shares the same tracking technology as the HoloLens. To learn more about the inside-out tracking system, check out the documentation [here](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/tracking-system).
 
 For a description of how the higher-level spatial mapping system works you can read our description [here](spatial-mapping.md).
 
@@ -174,7 +174,7 @@ LBE Reservation and Booking System
 
 **Q: I’m developing a spatial MMOG to deploy over a massive footprint. Any services that help me manage my content and object persistence?**
 
-A: Azure Spatial Anchors is a new Mixed Reality service that enables multi-user, spatially aware mixed reality experiences across HoloLens, iOS and Android devices. You can learn more about Azure Spatial Anchors [here](https://azure.microsoft.com/en-us/services/spatial-anchors/).
+A: Azure Spatial Anchors is a new Mixed Reality service that enables multi-user, spatially aware mixed reality experiences across HoloLens, iOS and Android devices. You can learn more about Azure Spatial Anchors [here](https://azure.microsoft.com//services/spatial-anchors/).
 
 **Q. Our venue specializes in multi-player experiences and I’d like to focus our development time on content and front-end development. Are there offerings that can help me bootstrap or offload backend development?**
 
@@ -184,18 +184,18 @@ A: Azure PlayFab is a complete backend platform for live games. You can learn mo
 
 **Q: I use SteamVR to deploy my experiences. Does Windows Mixed Reality work with SteamVR?**
 
-A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about SteamVR with WMR [here](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about SteamVR with WMR [here](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
 
 ### Support and community  
 
 Below are a few helpful resources to engage with subject matter experts on our team, get troubleshooting support, and contribute to the broader mixed reality dev community.  
 
-If you run into issues with any publicly released features, please file a bug using Feedback Hub.For guidance, please refer to this [page](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/filing-feedback).
+If you run into issues with any publicly released features, please file a bug using Feedback Hub.For guidance, please refer to this [page](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/filing-feedback).
 
-For additional troubleshooting help with WMR please get in touch with our customer support team by filing a [support request](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782).
+For additional troubleshooting help with WMR please get in touch with our customer support team by filing a [support request](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782).
 
 Join our HoloDevelopers Slack channel to engage with the developers working on mixed reality and subject matter experts from the team: [aka.ms/holodevelopers](https://aka.ms/holodevelopers)
 
 Twitter: Follow our Mixed Reality Developer Relations team for news, events and updates @MxdRealityDev 
 
-If you happen to be in or around San Francisco, there’s always something going on at the Microsoft Reactor. You can see our calendar of events [here](https://developer.microsoft.com/en-us/reactor/Location/San%20Francisco).
+If you happen to be in or around San Francisco, there’s always something going on at the Microsoft Reactor. You can see our calendar of events [here](https://developer.microsoft.com//reactor/Location/San%20Francisco).
