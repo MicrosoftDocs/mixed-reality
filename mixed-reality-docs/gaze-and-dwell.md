@@ -40,13 +40,13 @@ Gaze and dwell allows the person using the HoloLens to confidently navigate thei
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
-        <td>[Head-gaze and dwell](gaze-and-dwell-head.md)</td>
+        <td>Head-gaze and dwell</td>
         <td>✔️ Recommended</td>
         <td>✔️ Recommended</td>
         <td>✔️ Recommended</td>
     </tr>
 	 <tr>
-        <td>[Eye-gaze and dwell](gaze-and-dwell-eyes.md)</td>
+        <td>Eye-gaze and dwell</td>
         <td>❌ Not available</td>
         <td>✔️ Recommended</td>
         <td>❌ Not available</td>
@@ -59,8 +59,8 @@ Gaze and dwell allows the person using the HoloLens to confidently navigate thei
 ---
  
  ## See also
-* [Eye-based interaction] (eye-gaze-interaction.md)
-* [Eye tracking on HoloLens 2] (eye-tracking.md)
+* [Eye-based interaction](eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Hands - Direct manipulation](direct-manipulation.md)
 * [Hands - Gestures](gaze-and-commit.md#composite-gestures)
