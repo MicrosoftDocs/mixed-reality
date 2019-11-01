@@ -28,7 +28,6 @@ Below are a few examples for how you as a mixed reality developer can benefit fr
 * Your app can let the user place holograms on real-world surfaces by intersecting their gaze ray with the spatial mapping mesh.
 * Your app can know when the user is *not* looking in the direction of an important object, which can lead your app to give visual and audio cues to turn towards that object.
 
-
 <br>
 
 
@@ -62,7 +61,9 @@ Below are a few examples for how you as a mixed reality developer can benefit fr
 </table>
 
 
-## Eye- or head-gaze?
+## Gaze
+
+### Eye- or head-gaze?
 There are several considerations to take into account when faced with the question whether you should use the "eye-gaze and commit" or "head-gaze and commit" input model. 
 If you're developing for an immersive headset or for HoloLens (1st gen) then the choice is simple: Head-gaze and commit. 
 If you're developing for HoloLens 2, the choice becomes a little harder which is why it's important to understand the advantages and challenges that come with each of them.
@@ -103,6 +104,26 @@ This is far from complete and we suggest learning more about eye-gaze targeting 
 </table>
 
 Whether you use head-gaze or eye-gaze for your gaze-and-commit input model comes with different sets of design constraints, which will be covered separately in the [eye-gaze and commit](eye-gaze-and-commit-eyes.md) and [head-gaze and commit](eye-gaze-and-commit-eyes.md) articles.
+
+<br>
+
+---
+
+### Cursor
+
+:::row:::
+    :::column:::
+        For head gaze, most apps should use a [cursor](cursors.md) (or other auditory/visual indication) to give the user confidence in what they're about to interact with. 
+        You typically position this cursor in the world where their head gaze ray first intersects an object, which may be a hologram or a real-world surface.<br>
+        <br>
+        For eye gaze, we generally recommend *not* to show a cursor, as this can quickly become distracting and annoying for the user. 
+        Instead subtly highlight visual targets or use a very faint eye cursor to provide confidence about what the user is about to interact with. For more information, please check out our [design guidance for eye-based input](eye-tracking.md) on HoloLens 2.
+    :::column-end:::
+        :::column:::
+       ![An example visual cursor to show gaze](images/cursor.jpg)<br>
+       *Image: An example visual cursor to show gaze*
+    :::column-end:::
+:::row-end:::
 
 <br>
 
@@ -229,36 +250,14 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 
 ---
 
-## Cursor
-
-:::row:::
-    :::column:::
-        For head gaze, most apps should use a [cursor](cursors.md) (or other auditory/visual indication) to give the user confidence in what they're about to interact with. 
-        You typically position this cursor in the world where their head gaze ray first intersects an object, which may be a hologram or a real-world surface.<br>
-        <br>
-        For eye gaze, we generally recommend *not* to show a cursor, as this can quickly become distracting and annoying for the user. 
-        Instead subtly highlight visual targets or use a very faint eye cursor to provide confidence about what the user is about to interact with. For more information, please check out our [design guidance for eye-based input](eye-tracking.md) on HoloLens 2.
-    :::column-end:::
-        :::column:::
-       ![An example visual cursor to show gaze](images/cursor.jpg)<br>
-       *Image: An example visual cursor to show gaze*
-    :::column-end:::
-:::row-end:::
-
-
-<br>
-
----
-
 
 ## See also
 * [Eye-based interaction] (eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2] (eye-tracking.md)
 * [Gaze and dwell](gaze-and-dwell.md)
 * [Hands - Direct manipulation](direct-manipulation.md)
 * [Hands - Gestures](gaze-and-commit.md#composite-gestures)
 * [Hands - Point and commit](point-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Voice input](voice-input.md)
-
-
 
