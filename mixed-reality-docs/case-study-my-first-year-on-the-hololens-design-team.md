@@ -38,7 +38,7 @@ I understood this conceptually, but in the beginning I made the mistake of simpl
 
 ### Fragments: An example of great Diegetic UI
 
-[Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8), a first-person crime thriller developed by [Asobo Studio](http://www.asobostudio.com/) for HoloLens demonstrates a great Diegetic UI. In this game, the user becomes a main character, a detective who tries to solve a mystery. The pivotal clues to solve this mystery get sprinkled in the user’s physical room and are often times embedded inside a fictional object rather than existing on their own. This diegetic UI tends to be less discoverable than body-locked UI, so the Asobo team cleverly used many cues including virtual characters’ gaze direction, sound, light, and guides (e.g., arrow pointing the location of the clue) to grab user’s attention.
+[Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8), a first-person crime thriller developed by [Asobo Studio](https://www.asobostudio.com/) for HoloLens demonstrates a great Diegetic UI. In this game, the user becomes a main character, a detective who tries to solve a mystery. The pivotal clues to solve this mystery get sprinkled in the user’s physical room and are often times embedded inside a fictional object rather than existing on their own. This diegetic UI tends to be less discoverable than body-locked UI, so the Asobo team cleverly used many cues including virtual characters’ gaze direction, sound, light, and guides (e.g., arrow pointing the location of the clue) to grab user’s attention.
 
 ![Fragments - Diegetic UI examples](images/fragments-game-example-1.jpg)<br>
 *Fragments - Diegetic UI examples*
@@ -53,7 +53,7 @@ Skeuomorphism, a digital interface that mimics the shape of real world objects h
 
 ### Job Simulator: An example of skeuomorphic VR design
 
-[Job Simulator](http://jobsimulatorgame.com/), a whimsical game developed by [Owlchemy Labs](https://owlchemylabs.com/) is one of the most popular example for skeuomorphic VR design. Within this game, players are transported into future where robots replace humans and humans visit a museum to experience what it feels like to perform mundane tasks at one of four different jobs: Auto Mechanic, Gourmet Chef, Store Clerk, or Office Worker.
+[Job Simulator](https://jobsimulatorgame.com/), a whimsical game developed by [Owlchemy Labs](https://owlchemylabs.com/) is one of the most popular example for skeuomorphic VR design. Within this game, players are transported into future where robots replace humans and humans visit a museum to experience what it feels like to perform mundane tasks at one of four different jobs: Auto Mechanic, Gourmet Chef, Store Clerk, or Office Worker.
 
 The benefit of Skeuomorphism is clear. Familiar environments and objects within this game help new VR users feel more comfortable and present in virtual space. It also makes them feel like they are in control by associating familiar knowledge and behaviors with objects and their corresponding physical reactions. For example, to drink a cup of coffee, people simply need to walk to the coffee machine, press a button, grab the cup handle and tilt it towards their mouth as they would do in the real world.
 
@@ -90,7 +90,7 @@ Besides gesture and speech, hand-held tracked controllers (e.g., Oculus touch, V
 ![Senso (Left) and Manus VR(Right)](images/senso-and-manus-vr.jpg)<br>
 *Senso (Left) and Manus VR (Right)*
 
-While not as popular as controllers, gloves are gaining momentum again thanks to the MR/VR wave. Most recently, brain/mind input have started to gain traction as an interface for virtual environments by integrating EEG or EMG sensor to headset (e.g., [MindMaze VR](http://www.mindmaze.com/)).
+While not as popular as controllers, gloves are gaining momentum again thanks to the MR/VR wave. Most recently, brain/mind input have started to gain traction as an interface for virtual environments by integrating EEG or EMG sensor to headset (e.g., [MindMaze VR](https://www.mindmaze.com/)).
 
 ### Observations about input methods
 
@@ -98,7 +98,7 @@ These are a just a sample of input devices available in the market for MR/VR. Th
 
 ## Sketch the scene and test in the headset
 
-When I worked in 2D, I mostly sketched just the content. However, in mixed reality space that wasn’t sufficient. I had to sketch out the entire scene to better imagine the relationships between the user and virtual objects. To help my spatial thinking, I started to sketch scenes in [Cinema 4D](https://www.maxon.net/en/products/cinema-4d/overview/) and sometimes create simple assets for prototyping in [Maya](http://www.autodesk.com/products/maya/overview/). I had never used either program before joining the HoloLens team and I am still a newbie, but working with these 3D programs definitely helped me get comfortable with new terminology, such as [shader](https://en.wikipedia.org/wiki/Shader) and [IK (inverse kinematics)](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-07C3BA47-32BB-477B-B6C5-1090E5C9B81C-htm.html/).
+When I worked in 2D, I mostly sketched just the content. However, in mixed reality space that wasn’t sufficient. I had to sketch out the entire scene to better imagine the relationships between the user and virtual objects. To help my spatial thinking, I started to sketch scenes in [Cinema 4D](https://www.maxon.net/en/products/cinema-4d/overview/) and sometimes create simple assets for prototyping in [Maya](https://www.autodesk.com/products/maya/overview/). I had never used either program before joining the HoloLens team and I am still a newbie, but working with these 3D programs definitely helped me get comfortable with new terminology, such as [shader](https://en.wikipedia.org/wiki/Shader) and [IK (inverse kinematics)](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-07C3BA47-32BB-477B-B6C5-1090E5C9B81C-htm.html/).
 
 **“No matter how closely I sketched out the scene in 3D, the actual experience in headset was almost never the same as the sketch. That’s why it’s important to test out the scene in the target headsets.”
 — Hae Jin Lee**
@@ -112,7 +112,7 @@ After acquiring basic understanding of HoloLens prototyping, I wanted to empower
 >[!VIDEO https://www.youtube.com/embed/58612RT2CT8]
 *I made this simple tutorial for non-programmers like myself.*
 
-For VR prototyping, I took courses at [VR Dev School](http://learn.vrdev.school/) and also took [3D Content Creation for Virtual Reality](https://www.lynda.com/Unreal-Engine-tutorials/3D-Content-Creation-Virtual-Reality/482055-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aVirtual+Reality+%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2/) at Lynda.com. VR Dev school provided me more in depth knowledge in coding and the Lynda course offered me a nice short introduction to creating assets for VR.
+For VR prototyping, I took courses at [VR Dev School](https://learn.vrdev.school/) and also took [3D Content Creation for Virtual Reality](https://www.lynda.com/Unreal-Engine-tutorials/3D-Content-Creation-Virtual-Reality/482055-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aVirtual+Reality+%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2/) at Lynda.com. VR Dev school provided me more in depth knowledge in coding and the Lynda course offered me a nice short introduction to creating assets for VR.
 
 ## Take the leap
 

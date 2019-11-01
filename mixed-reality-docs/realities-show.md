@@ -13,7 +13,7 @@ keywords: Realities, Show, calendar, academy, schedule, sf, san francisco, react
 
 **The Realities Show is a 30 minute livestream about HoloLens 2, Mixed Reality Services and MR technologies. In each episode we'll dive into features, capabilities, the tech behind it, how to develop for the different devices, recommend best practices and of course answer questions from our audience. Streamed to developers worldwide from our San Francisco Reactor stage setup as a living room environment (and occasionally from other sites).**
 
-**[Watch live and past episodes here](http://aka.ms/trs)**
+**[Watch live and past episodes here](https://aka.ms/trs)**
 ___
 
 ## **HoloLens 2 and Mixed Reality Services** - March 12, 2019, 8 AM (PDT)

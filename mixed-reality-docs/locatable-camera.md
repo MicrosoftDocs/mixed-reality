@@ -104,9 +104,9 @@ To recognize a visual pattern, and then place that object in the applications wo
 4. Position your virtual models over these world locations
 
 Some important image processing links:
-* [OpenCV](http://opencv.org/)
+* [OpenCV](https://opencv.org/)
 * [QR Tags](https://en.wikipedia.org/wiki/QR_code)
-* [FaceSDK](http://research.microsoft.com/projects/facesdk/)
+* [FaceSDK](https://research.microsoft.com/projects/facesdk/)
 * [Microsoft Translator](https://www.microsoft.com/translator/business)
 
 Keeping an interactive application frame-rate is critical, especially when dealing with long-running image recognition algorithms. For this reason we commonly use the following pattern:

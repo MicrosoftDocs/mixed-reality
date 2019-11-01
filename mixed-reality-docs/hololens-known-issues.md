@@ -107,9 +107,9 @@ If you would not like to take the update, we have released a new version of the 
 
 If your device is still unable to load apps, you can sideload a version of the .NET Native Framework and Runtime through the download center by doing:
 
-1)	Please download [this zip file](http://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) from the Microsoft Download Center.  Unzipping will produce two files.  Microsoft.NET.Native.Runtime.1.7.appx and Microsoft.NET.Native.Framework.1.7.appx
+1)	Please download [this zip file](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) from the Microsoft Download Center.  Unzipping will produce two files.  Microsoft.NET.Native.Runtime.1.7.appx and Microsoft.NET.Native.Framework.1.7.appx
 2)	Please verify that your device is dev unlocked.  If you haven’t done that before the instructions to do that are [here](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2F%2Fwindows%2Fmixed-reality%2Fusing-the-windows-device-portal&data=02%7C01%7Cjalynch%40microsoft.com%7C3622a462ebd04870fccb08d6ae94cad6%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636888351416725140&sdata=ZB6Zdx9GV95PcU6FAVgWaP3eQNMsyIc%2FbNDEby3Sb8A%3D&reserved=0).
-3)	You then want to get into the Windows Device Portal.  Our recommendation is to do this over USB and you would do that by typing http://127.0.0.1:10080 into your browser.  
+3)	You then want to get into the Windows Device Portal.  Our recommendation is to do this over USB and you would do that by typing https://127.0.0.1:10080 into your browser.  
 4)	Once you have the Windows Device Portal up we need you to “side load” the two files that you downloaded.  To do that you need to go down the left side bar until you get to the “Apps” section and click on “Apps”.
 5)	You will then see a screen that is similar to the below.  You want to go to the section that says “Install App” and browse to where you unzipped those two APPX files.  You can only do one at a time, so after you select the first one, then click on “Go” under the Deploy section.  Then do this for the second APPX file. 
   ![Windows Device Portal to Install Side-Loaded app](images/20190322-DevicePortal.png)<br>
@@ -141,7 +141,7 @@ We recommend using a Bluetooth keyboard for entering long passwords.
 
 ## Unity
 * See [Install the tools](install-the-tools.md) for the most up-to-date version of Unity recommended for HoloLens development.
-* Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](http://forum.unity3d.com/threads/known-issues.394627/).
+* Known issues with the Unity HoloLens Technical Preview are documented in the [HoloLens Unity forums](https://forum.unity3d.com/threads/known-issues.394627/).
 
 ## Windows Device Portal
 * The Live Preview feature in Mixed Reality capture may exhibit several seconds of latency.

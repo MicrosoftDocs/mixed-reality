@@ -312,7 +312,7 @@ Unity also provides an unlit, vertex lit, diffuse, and other simplified shader o
 
 #### Shader preloading
 
-Use *Shader preloading* and other tricks to optimize [shader load time](http://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html). In particular, shader preloading means you won't see any hitches due to runtime shader compilation.
+Use *Shader preloading* and other tricks to optimize [shader load time](https://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html). In particular, shader preloading means you won't see any hitches due to runtime shader compilation.
 
 ### Limit overdraw
 

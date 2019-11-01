@@ -92,7 +92,7 @@ To use the **Azure Notification Hubs** Service, you will need to create an Appli
 
 Log into the Application Registration Portal, where your new app will be listed, and retrieve the credentials which will be used to setup the **Notification Hubs Service** within the **Azure Portal**.
 
-1.  Navigate to the [Application Registration Portal](http://apps.dev.microsoft.com).
+1.  Navigate to the [Application Registration Portal](https://apps.dev.microsoft.com).
 
     ![application registration portal](images/AzureLabs-Lab8-03.png)
 

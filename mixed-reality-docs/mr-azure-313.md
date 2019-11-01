@@ -84,7 +84,7 @@ For help on Calibration, please follow this [link to the HoloLens Calibration ar
 For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](sensor-tuning.md).
 
 3. Set up your **Ubuntu Virtual Machine** using **Hyper-V**. The following resources will help you with the process.
-    1.  First, follow this link to [download the Ubuntu 16.04.4 LTS (Xenial Xerus) ISO](http://au.releases.ubuntu.com/16.04/). Select the **64-bit PC (AMD64) desktop image**.
+    1.  First, follow this link to [download the Ubuntu 16.04.4 LTS (Xenial Xerus) ISO](https://au.releases.ubuntu.com/16.04/). Select the **64-bit PC (AMD64) desktop image**.
     2.  Make sure **Hyper-V** is enabled on your Windows 10 machine. You can follow this link for guidance on [installing and enabling Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
     3.  Start Hyper-V and create a new Ubuntu VM. You can follow this link for a [step by step guide on how to create a VM with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). When requested to **"Install an operating system from a bootable image file"**, select the **Ubuntu ISO** you have download earlier.
 

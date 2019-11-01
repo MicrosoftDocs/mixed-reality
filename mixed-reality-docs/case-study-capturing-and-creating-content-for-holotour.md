@@ -73,7 +73,7 @@ Capturing 360° content is only the first step—a lot of processing is needed t
 A rough cut of Pantheon footage before stitching. 
 
 
-To stitch the videos together, we used a tool called [PTGui](http://www.ptgui.com/) and integrated it into our processing pipeline. As part of post-processing we extracted still frames from our videos and found a stitching pattern that looked good for one of those frames. We then applied that pattern to a custom plugin we wrote that allowed our video artists to fine tune and tweak the stitching pattern directly while compositing in After Effects. 
+To stitch the videos together, we used a tool called [PTGui](https://www.ptgui.com/) and integrated it into our processing pipeline. As part of post-processing we extracted still frames from our videos and found a stitching pattern that looked good for one of those frames. We then applied that pattern to a custom plugin we wrote that allowed our video artists to fine tune and tweak the stitching pattern directly while compositing in After Effects. 
 
 ![Screenshot of PTGui showing the stitched Pantheon footage.](images/stitching-tool-pantheon-500px.png)
 

@@ -10,7 +10,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holograph
 
 # Camera in Unity
 
-When you wear a mixed reality headset, it becomes the center of your holographic world. The Unity [Camera](http://docs.unity3d.com/Manual/class-Camera.html) component will automatically handle stereoscopic rendering and will follow your head movement and rotation when your project has "Virtual Reality Supported" selected with "Windows Mixed Reality" as the device (in the Other Settings section of the Windows Store Player Settings). This may be listed as "Windows Holographic" in older versions of Unity.
+When you wear a mixed reality headset, it becomes the center of your holographic world. The Unity [Camera](https://docs.unity3d.com/Manual/class-Camera.html) component will automatically handle stereoscopic rendering and will follow your head movement and rotation when your project has "Virtual Reality Supported" selected with "Windows Mixed Reality" as the device (in the Other Settings section of the Windows Store Player Settings). This may be listed as "Windows Holographic" in older versions of Unity.
 
 However, to fully optimize visual quality and [hologram stability](hologram-stability.md), you should set the camera settings described below.
 

@@ -33,9 +33,9 @@ HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side.
 |  [HoloLens Emulator build 10.0.17763.134](https://go.microsoft.com/fwlink/?linkid=2065980) | November 19, 2018 | Latest HoloLens (1st gen) build. Windows 10 October 2018 Update. |
 |  [HoloLens Emulator build 10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | May 21, 2018 | 
 |  [HoloLens Emulator build 10.0.14393.1358](https://go.microsoft.com/fwlink/?linkid=852626) |  July 7, 2017 |
-|  [HoloLens Emulator build 10.0.14393.0](http://go.microsoft.com/fwlink/?LinkID=823018) |  August 2, 2016 |
-|  [HoloLens Emulator build 10.0.14342.1018](http://go.microsoft.com/fwlink/?LinkID=823018) |  May 31, 2016 |
-|  [HoloLens Emulator build 10.0.11082.1033](http://go.microsoft.com/fwlink/?LinkID=724053) |  March 30, 2016 |
+|  [HoloLens Emulator build 10.0.14393.0](https://go.microsoft.com/fwlink/?LinkID=823018) |  August 2, 2016 |
+|  [HoloLens Emulator build 10.0.14342.1018](https://go.microsoft.com/fwlink/?LinkID=823018) |  May 31, 2016 |
+|  [HoloLens Emulator build 10.0.11082.1033](https://go.microsoft.com/fwlink/?LinkID=724053) |  March 30, 2016 |
 
 ## See also
 * [Install the tools](install-the-tools.md)
