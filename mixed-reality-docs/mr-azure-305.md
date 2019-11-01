@@ -240,7 +240,7 @@ The following is a typical set up for developing with Mixed Reality, and as such
 Set up and test your mixed reality immersive headset.
 
 > [!NOTE]
-> You will **not** require Motion Controllers for this course. If you need support setting up the immersive headset, please [visit the mixed reality set up article](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+> You will **not** require Motion Controllers for this course. If you need support setting up the immersive headset, please [visit the mixed reality set up article](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 1.  Open Unity and click **New**.
 

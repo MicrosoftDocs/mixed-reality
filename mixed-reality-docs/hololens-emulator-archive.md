@@ -8,12 +8,9 @@ ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions
 ---
 
-
-HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side. We generally recommend using the latest available build, but there might be cases where you want or need to test an app against an old emulator. This page includes links to released versions.
-
-
 # HoloLens 2 Emulator archive
 
+HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side. We generally recommend using the latest available build, but there might be cases where you want or need to test an app against an old emulator. This page includes links to released versions.
 
 |  Build |  Release Date |  Notes | 
 |----------|----------|----------|
@@ -24,9 +21,7 @@ HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side.
 |  [HoloLens 2 Emulator build 10.0.18362.1019](https://go.microsoft.com/fwlink/?linkid=2095316) | June 11, 2019 | No longer needs to be run as Administrator.  Start menu shortcut added. |
 |  [HoloLens 2 Emulator build 10.0.18362.1005](https://go.microsoft.com/fwlink/?linkid=2087187) | April 16, 2019 |  |
 
-
-# HoloLens Emulator (1st gen) archive
-
+## HoloLens Emulator (1st gen) archive
 
 |  Build |  Release Date |  Notes | 
 |----------|----------|----------|
