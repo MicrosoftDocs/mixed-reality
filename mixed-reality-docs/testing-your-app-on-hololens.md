@@ -45,8 +45,7 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 ### Interaction models
 
 Make sure the hologram interactions work with your chosen [interaction model](interaction-fundamentals.md).
-It's also a good idea to validate with different accessories, like mouse and keybouard, if these acccessories are needed to support accessibility.
-
+It's also a good idea to validate with different accessories, like mouse and keyboard, if these accessories are needed to support accessibility.
 
 **Validate when your app has a different behavior with mouse and touch.** This will identify inconsistencies and help with design decisions to make the experience more natural for users. For example, triggering an action based on hover.
 

@@ -12,7 +12,6 @@
 ### [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
 ## [Current mixed reality release notes](release-notes-may-2019.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
-
 # Discover
 ## [Get started with Mixed Reality](index.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
@@ -25,36 +24,42 @@
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 ### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Location based entertainment](location-based-experiences.md)
-
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
+
 ## Core concepts
 ### [Overview](core-concepts-landingpage.md)
-### [Comfort](comfort.md)
-### [Holographic frame](holographic-frame.md)
-### [System gesture](system-gesture.md)
-### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
 ### [App model](app-model.md)
 ### [App views](app-views.md)
+### [Comfort](comfort.md)
 ### [Coordinate systems](coordinate-systems.md)
-### [Scene understanding](scene-understanding.md)
-### [Spatial mapping](spatial-mapping.md)
+### [Eye tracking](eye-tracking.md)
+### [Holographic frame](holographic-frame.md)
 ### [Room scan visualization](room-scan-visualization.md)
+### [Scene understanding](scene-understanding.md)
 ### [Spatial anchors](spatial-anchors.md)
+### [Spatial mapping](spatial-mapping.md)
+### [System gesture](system-gesture.md)
+### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+
 ## Interaction models
-### [Instinctual interactions](Interaction-fundamentals.md)
+### [Instinctual interactions](interaction-fundamentals.md)
 ### Hands and motion controllers model
-#### [Hands and motion controllers](hands-and-tools.md)
 #### [Direct manipulation with hands](direct-manipulation.md)
-#### [Point and commit with hands](point-and-commit.md)
+#### [Hands and motion controllers](hands-and-tools.md)
 #### [Motion controllers](Motion-controllers.md)
+#### [Point and commit with hands](point-and-commit.md)
 ### Hands-free model
 #### [Hands-free](hands-free.md)
 #### [Voice input](voice-input.md)
-#### [Head-gaze and dwell](Gaze-and-dwell.md)
-### [Head-gaze and commit model](gaze-and-commit.md)
-### [Eye-gaze](eye-tracking.md)
+#### [Gaze and dwell](gaze-and-dwell.md)
+##### [Eye-gaze and dwell](gaze-and-dwell-eyes.md)
+##### [Head-gaze and dwell](gaze-and-dwell-head.md)
+### [Gaze and commit](gaze-and-commit.md)
+#### [Eye-gaze and commit](gaze-and-commit-eyes.md)
+#### [Head-gaze and commit](gaze-and-commit-head.md)
+### [Eye-gaze-based interaction](eye-gaze-interaction.md)
 ## UX elements
 ### [Overview](app-patterns-landingpage.md)
 ### Style
@@ -78,13 +83,11 @@
 ### [Microsoft Maquette](https://www.maquette.ms)
 ### [Asset creation process](asset-creation-process.md)
 ### [Design your own immersive environments](add-custom-home-environments.md)
-
 # Develop
 ## [Learn the tools and architecture](development.md)
 ## [Install the tools](install-the-tools.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-
 ## [Tutorials and sample apps](tutorials.md)
 ### Unity
 #### HoloLens 2 tutorials
@@ -205,7 +208,7 @@
 #### [Locatable camera](locatable-camera.md)
 #### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 #### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
-### Holographic Remoting
+### Holographic remoting
 #### [Holographic Remoting Player](holographic-remoting-player.md)
 #### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
 #### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
@@ -214,7 +217,7 @@
 #### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
 #### [Version History](holographic-remoting-version-history.md)
 #### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-#### Holographic Remoting for HoloLens 1
+#### Holographic Remoting for HoloLens (1st gen)
 #### [Add Holographic Remoting](add-holographic-remoting.md)
 ### App quality and testing
 #### [App quality criteria](app-quality-criteria.md)
