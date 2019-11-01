@@ -80,7 +80,7 @@ Therefore, we recommend combining eye-gaze with a *voice command*, *hand gesture
 This solution also allows for a mode in which the user can freely look around without being overwhelmed by involuntarily triggering something. 
 This issue should also be considered when designing visual and auditory feedback when looking at a target.
 Try not to overwhelm the user with immediate pop-out effects or hover sounds. Subtlety is key. 
-We will discuss some best practices for this further below when talking about [design recommendations](eye-gaze-interaction#design-recommendations).
+We will discuss some best practices for this further below when talking about [design recommendations](eye-gaze-interaction.md#design-recommendations).
 
 - **Observation vs. control** 
 Imagine that you want to precisely straighten a photograph on your wall. 
