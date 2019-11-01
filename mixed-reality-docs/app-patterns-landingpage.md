@@ -45,31 +45,76 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-       [![Interactable object](images/InteractableExamples.png)](interactable-object.md)
-        **[Interactable object](interactable-object.md)**
+       [![Cursor](images/UX/UX_Hero_Cursor.jpg)](cursors.md)
+        **[Cursor](interactable-object.md)**
     :::column-end:::
     :::column:::
-       [![Object collection](images/640px-objectcollection-hero-640px.jpg)](object-collection.md)
-        **[Object collection](object-collection.md)**
+       [![Hand ray](images/UX/UX_Hero_HandRay.jpg)](hand-ray.md)
+        **[Button](object-collection.md)**
     :::column-end:::
     :::column:::
-       [![Bounding box and App bar](images/640px-boundingbox-hero.jpg)](app-bar-and-bounding-box.md)
-        **[Bounding box and App bar](app-bar-and-bounding-box.md)**
+       [![Button](images/UX/UX_Hero_Button.jpg)](button.md)
+        **[Button](object-collection.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [![Displaying progress](images/hololens2_loader.gif)](progress.md)
-        **[Displaying progress](progress.md)**
+       [![Bounding box](images/UX/UX_Hero_BoundingBox.jpg)](app-bar-and-bounding-box.md)
+        **[Bounding box](app-bar-and-bounding-box.md)**
     :::column-end:::
     :::column:::
-        [![Hand menu](images/mrtk_ux_handmenu.png)](hand-menu.md)
+       [![Interactable object](images/UX/UX_Hero_Interactable.jpg)](interactable-object.md)
+        **[Interactable object](interactable-object.md)**
+    :::column-end:::
+    :::column:::
+       [![Manipulation](images/UX/UX_Hero_Manipulation.jpg)](manipulation.md)
+        **[Manipulation](manipulation.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Hand menu](images/UX/UX_Hero_HandMenu.jpg)](hand-menu.md)
         **[Hand menu](hand-menu.md)**
     :::column-end:::
     :::column:::
-       [![Cursors](images/gazetargeting-highlighting-640px.jpg)](cursors.md)
-        **[Cursors](cursors.md)**
+       [![Near menu](images/UX/UX_Hero_NearMenu.jpg)](near-menu.md)
+        **[Near menu](near-menu.md)**
+    :::column-end:::
+    :::column:::
+       [![Object collection](images/UX/UX_Hero_ObjectCollection.jpg)](object-collection.md)
+        **[Object collection](object-collection.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Voice command](images/UX/UX_Hero_VoiceCommand.jpg)](voice-command.md)
+        **[Voice command](voice-command.md)**
+    :::column-end:::
+    :::column:::
+       [![Keyboard](images/UX/UX_Hero_Keyboard.jpg)](keyboard.md)
+        **[Keyboard](keyboard.md)**
+    :::column-end:::
+    :::column:::
+       [![Tooltip](images/UX/UX_Hero_Tooltip.jpg)](tooltip.md)
+        **[Tooltip](tooltip.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Slate](images/UX/UX_Hero_Slate.jpg)](slate.md)
+        **[Slate](slate.md)**
+    :::column-end:::
+    :::column:::
+       [![Slider](images/UX/UX_Hero_Slider.jpg)](slider.md)
+        **[Slider](slider.md)**
+    :::column-end:::
+    :::column:::
+       [![Tooltip](images/UX/UX_Hero_Tooltip.jpg)](tooltip.md)
+        **[Tooltip](tooltip.md)**
     :::column-end:::
 :::row-end:::
 
@@ -79,8 +124,12 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
     :::column:::
+       [![Progress](images/hololens2_loader.gif)](progress.md)
+        **[Progress](progress.md)**
     :::column-end:::
     :::column:::
+       [![Surface magnetism](images/UX/UX_Hero_Slate.jpg)](surface-magnetism.md)
+        **[Surface magnetism](surface-magnetism.md)**
     :::column-end:::
 :::row-end:::
 
