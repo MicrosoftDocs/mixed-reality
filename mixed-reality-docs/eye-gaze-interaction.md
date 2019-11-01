@@ -12,9 +12,9 @@ keywords: Eye Tracking, Mixed Reality, Input, eye-gaze
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
 On [Eye tracking on HoloLens 2](eye-tracking.md) we introduced one of our exciting new capabilities on HoloLens 2: Eye tracking. 
-We mentioned the need for each user to go through a [Calibration](), provided some developer guidance and highlighted use cases for eye tracking. 
-This page now provides a more in-depth discussions for developers and designers interested in using eye-gaze as an input to interact with their holographic applications. 
-You will learn about key advantages of eye targeting, but also learn to understand the unique challenges that come with eye gaze input. 
+We mentioned the need for each user to go through a [Calibration](https://docs.microsoft.com/en-us/hololens/hololens-calibration), provided some developer guidance and highlighted use cases for eye tracking. 
+This page provides a more in-depth discussions for developers and designers interested in integrating eye-gaze as an input to interact with their holographic applications. 
+You will learn about key advantages of eye targeting, but also learn to understand the unique challenges that come with eye-gaze input. 
 Based on this, we provide several design recommendations to help create satisfying eye-gaze-based user interfaces. 
 
 
@@ -153,7 +153,6 @@ To get started developing, check out our information on
 
 
 ## See also
-* [Calibration](calibration.md)
 * [Comfort](comfort.md)
 * [Eye tracking](eye-tracking.md)
 * [Eye-gaze in DirectX](gaze-in-directx.md)
