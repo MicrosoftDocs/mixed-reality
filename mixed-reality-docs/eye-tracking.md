@@ -5,21 +5,21 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Eye tracking, Mixed Reality, input, eye-gaze
+keywords: Eye tracking, mixed reality, input, eye-gaze, calibration
 ---
 # Eye tracking on HoloLens 2
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
 HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability of using information about what users are looking at. 
-This page provides an overview to developers and designers on how they can benefit from eye tracking for various use cases as well as what to look for when designing eye-gaze-based user interfaces. 
+This page provides an overview of this new capability to developers and designers on how they can benefit from eye tracking for various use cases and basic developer guidance. 
 
 
 ## Calibration 
 For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md) for which the user has to look at a set of holographic targets. 
 This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
 Eye tracking should work for most users, but there are rare cases in which a user might be unable to calibrate successfully.
-To learn more about the calibration and about how to ensure a smooth experience, please check [Calibration](calibration.md).
+To learn more about the calibration and about how to ensure a smooth experience, please check our [eye tracking user calibration](calibration.md) page.
 
 
 ## Device support
@@ -44,50 +44,8 @@ To learn more about the calibration and about how to ensure a smooth experience,
 </tr>
 </table>
 
-## Use cases
-Eye tracking enables applications to track where the user is looking in real time. The following use cases describe some interactions that are possible with eye tracking in mixed reality.
-Keep in mind that the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) is useful for providing several interesting and powerful examples for using eye tracking, such as quick and effortless eye-supported target selections as well as automatically scrolling through text based on what the user looks at. 
-
-### User intent	   
-Information about where and what a user looks at provides a powerful **context for other inputs**, such as voice, hands and controllers.
-This can be used for various tasks.
-For example, this can range from quickly and effortlessly **targeting** across the scene by simply looking at a hologram and saying "select" (also see [Head-gaze and commit](gaze-and-commit.md)) or by saying *"put this..."*, then looking over to where the user wants to place the hologram and say *"...there"*. 
-Examples for this can be found in [Mixed Reality Toolkit - Eye-supported Target Selection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) and [Mixed Reality Toolkit - Eye-supported Target Positioning](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
-
-Additionally, an example for user intent might include using information about what users look at to enhance engagement with embodied virtual agents and interactive holograms. For instance, virtual agents might adapt available options and their behavior based on currently viewed content. 
-
-### Implicit actions
-The category of implicit actions closely relates to user intent.
-The idea is that holograms or user interface elements react in a somewhat instinctual way that may not even feel like the user is interacting with the system at all, but rather that the system and the user are in sync.
-One example is **eye-gaze-based auto scroll** where the user can read a long text which automatically starts scrolling once the user gets to the bottom of the textbox to keep the user in the flow of reading without lifting a finger.  
-A key aspect of this is that the scrolling speed adapts to the reading speed of the user.
-Another example is **eye-supported zoom and pan** where the user can feel like diving exactly toward what he or she is focused on. Triggering zoom and controlling zoom speed can be controlled by voice or hand input, which is important for providing the user with the feeling of control while avoiding being overwhelmed. We will talk about these design guidelines in more detail below. Once zoomed in, the user can  smoothly follow, for example, the course of a street to explore his or her neighborhood by simply using their eye-gaze.
-Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) sample.
-
-Additional use cases for _implicit actions_ can include:
-- **Smart notifications:** Ever get annoyed by notifications popping up right where you were focusing? Taking into account what a user is paying attention to, you can make this experience better by offsetting notifications from where the user is currently gazing. This limits distractions and automatically dismisses them once the user is finished reading. 
-- **Attentive holograms:** Holograms that subtly react when being gazed upon. This can range from slightly glowing UI elements to a slowly blooming flower to a virtual pet starting to look back at the user or trying to avoid the user's eye-gaze after a prolonged stare. This interaction might provide an interesting sense of connectivity and satisfaction in your application.
-
-### Attention tracking	 
-Information about where or what users look at is an immensely powerful tool to assess usability of designs, and to identify problems in efficient workflows. Eye tracking visualization and analytics are a common practice in various application areas. With HoloLens 2, we provide a new dimension to this understanding as 3D holograms can be placed in real-world contexts and assessed accordingly. 
-The [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) provides basic examples for logging and loading eye tracking data and  how to visualize them.
-
-Other applications in this area can include: 
--	**Remote eye-gaze visualization:** Visualize what remote collaborators are looking at to ensure whether instructions are correctly understood and followed.
--	**User research studies:** Attention tracking can be used to explore the way novice vs. expert users visually analyze content or how their hand-eye-coordination for complex tasks, such as for analysis of medical data or while operating machinery.
--	**Training simulations and Performance monitoring:** Practice and optimize the execution of tasks by identifying bottlenecks more effectively in the execution flow.
--	**Design evaluations, advertisement and marketing research:** Eye tracking is a common tool for market research when evaluating website and product designs.
-
-### Additional use cases
-- **Gaming:** Ever wanted to have superpowers? Here's your chance! You can levitate holograms by staring at them. Shoot laser beams from your eyes. Turn enemies into stone or freeze them. Use your x-ray vision to explore buildings. Your imagination is the limit!	
-
-- **Expressive avatars:** Eye tracking aids in more expressive 3D avatars by using live eye tracking data to animate the avatar's eyes that indicate what the user is looking at. 
-
-- **Text entry:** Eye tracking can be used as an alternative for low-effort text entry, especially when speech or hands are inconvenient to use. 
-
-
 ## Available eye tracking data
-Before going into detail about the specific design guidelines for eye-gaze interaction, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) provides. 
+Before going into detail about specific use cases for eye-gaze input, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) provides. 
 Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (30 Hz)_.
 For more detailed information about how to access eye tracking data, please refer to our developer guides on using [eye-gaze in DirectX](gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
 
@@ -98,6 +56,69 @@ For eye tracking to work accurately, each user is required to go through an eye 
 
 ![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
 *Optimal target size at a 2-meter distance*
+
+
+<br>
+
+
+## Use cases
+Eye tracking enables applications to track where the user is looking in real time. 
+The following use cases describe some interactions that are possible with eye tracking on HoloLens 2 in mixed reality.
+Please note that these use cases are not yet part of the Holographic Shell experience (i.e., the interface that you see when you start up your HoloLens 2).
+You can try some of them out in the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) which provides several interesting and powerful examples for using eye tracking, such as quick and effortless eye-supported target selections as well as automatically scrolling through text based on what the user looks at. 
+
+### User intent	   
+Information about where and what a user looks at provides a powerful **context for other inputs**, such as voice, hands and controllers.
+This can be used for various tasks.
+For example, this can range from quickly and effortlessly **targeting** across the scene by simply looking at a hologram and saying *"select"* (also see [gaze and commit](gaze-and-commit.md)) or by saying *"put this..."*, then looking over to where the user wants to place the hologram and say *"...there"*. 
+Examples for this can be found in [Mixed Reality Toolkit - Eye-supported Target Selection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) and [Mixed Reality Toolkit - Eye-supported Target Positioning](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
+
+Additionally, an example for user intent might include using information about what users look at to enhance engagement with embodied virtual agents and interactive holograms. 
+For instance, virtual agents might adapt available options and their behavior based on currently viewed content. 
+
+### Implicit actions
+The category of implicit actions closely relates to user intent.
+The idea is that holograms or user interface elements react in an instinctual way that may not even feel like the user is interacting with the system at all, but rather that the system and the user are in sync.
+One example is **eye-gaze-based auto scroll** where the user can read a long text which automatically starts scrolling once the user gets to the bottom of the textbox to keep the user in the flow of reading without lifting a finger.  
+A key aspect of this is that the scrolling speed adapts to the reading speed of the user.
+Another example is **eye-supported zoom and pan** where the user can feel like diving exactly toward what he or she is focused on. 
+Triggering zoom and controlling zoom speed can be controlled by voice or hand input, which is important for providing the user with the feeling of control while avoiding being overwhelmed. 
+We will talk about these design considerations in more detail below. 
+Once zoomed in, the user can  smoothly follow, for example, the course of a street to explore his or her neighborhood by simply using their eye-gaze.
+Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) sample.
+
+Additional use cases for _implicit actions_ may include:
+- **Smart notifications:** Ever get annoyed by notifications popping up right where you are looking? Taking into account what a user is paying attention to, you can make this experience better by offsetting notifications from where the user is currently gazing. This limits distractions and automatically dismisses them once the user is finished reading. 
+- **Attentive holograms:** Holograms that subtly react when being gazed upon. This can range from slightly glowing UI elements, a slowly blooming flower to a virtual dog starting to look back at the user and wagging its tail. This interaction might provide an interesting sense of connectivity and satisfaction in your application.
+
+### Attention tracking	 
+Information about where or what users look at is an immensely powerful tool to assess usability of designs, and to identify problems in efficient workflows. 
+Eye tracking visualization and analytics are a common practice in various application areas. 
+With HoloLens 2, we provide a new dimension to this understanding as 3D holograms can be placed in real-world contexts and assessed accordingly. 
+The [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) provides basic examples for logging and loading eye tracking data and how to visualize them.
+
+Other applications in this area may include: 
+-	**Remote eye-gaze visualization:** Visualize what remote collaborators are looking at to increase shared understanding.
+-	**User research studies:** Attention tracking can help better understanding how we perceive and engage with our environment which may help in better human intent models for more instinctual human-computer-interactions. 
+-	**Training:** Improved training of novices by better understanding experts' visual search patterns and their hand-eye-coordination for complex tasks, such as for analysis of medical data or while operating machinery.
+-	**Design evaluations and market research:** Eye tracking is a common tool for market research when evaluating website and product designs. With HoloLens 2, we can extend this to 3D spaces by merging digital product design variants with the physical environment. 
+
+### Additional use cases
+- **Gaming:** Ever wanted to have superpowers? 
+Here's your chance! 
+You can levitate holograms by staring at them. 
+Shoot laser beams from your eyes - try it out in [RoboRaid for HoloLens 2](https://www.microsoft.com/p/roboraid/9nblggh5fv3j).
+Turn enemies into stone or freeze them. 
+Use your x-ray vision to explore buildings. 
+Your imagination is the limit!
+Beware of not overwhelming the user though - to find out more, check out our [eye-gaze-based input design guidelines](eye-gaze-interaction.md).
+
+- **Expressive avatars:** Eye tracking aids in more expressive 3D avatars by using live eye tracking data to animate the avatar's eyes that indicate what the user is looking at. 
+
+- **Text entry:** Eye tracking can be used as an alternative for low-effort text entry, especially when speech or hands are inconvenient to use. 
+
+
+<br>
 
 
 ## Using eye-gaze for interaction
