@@ -12,15 +12,21 @@ keywords: ggv, voice, cortana, speech, input
 
 # Voice input
 
-Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use [gestures](gaze-and-commit.md#composite-gestures). Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces because it lets users cut through nested menus with one command.
+Voice is one of the key forms of input on HoloLens. 
+It allows you to directly command a hologram without having to use [hand gestures](gaze-and-commit.md#composite-gestures). 
+Voice input can be a natural way to communicate your intent. 
+Voice is especially good at traversing complex interfaces, because it lets users cut through nested menus with one command.
 
-Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps. On HoloLens, speech recognition will always function in the Windows display language configured in Settings. 
+Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other _Universal Windows Apps_. 
+On HoloLens, speech recognition will always function in the Windows display language configured in Settings. 
 
 <br>
 
 ## Voice and gaze
 
-When using voice commands, gaze is typically used as the targeting mechanism, whether with a cursor ("select") or to direct your command to an application in front of you, even when there is no visible gaze cursor ("see it, say it"). Of course, some voice commands don't require a target at all, like "go to start" or "Hey, Cortana."
+When using voice commands, (head or eye) gaze is typically used as the targeting mechanism, whether with a cursor ("select") or to implicitly channel your command to an application that you are looking at. 
+For this, it may not even be required to show any gaze cursor _("see it, say it")_. 
+Of course, some voice commands don't require a target at all, such as "go to start" or "Hey Cortana."
 
 <br>
 
@@ -54,7 +60,9 @@ When using voice commands, gaze is typically used as the targeting mechanism, wh
 
 **HoloLens (1st gen)**
 
-Even without specifically adding voice support to your app, your users can activate holograms simply by saying "select". This behaves the same as an [air tap](gaze-and-commit.md#composite-gestures) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
+Even without specifically adding voice support to your app, your users can activate holograms simply by saying the system voice command "select". 
+This behaves the same as an [air tap](gaze-and-commit.md#composite-gestures) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). 
+You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
 <br>
 
@@ -81,7 +89,10 @@ Even without specifically adding voice support to your app, your users can activ
 
 ## Hey Cortana
 
-You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to wait for her to appear to continue asking her your question or giving her an instruction - for example, try saying "Hey Cortana what's the weather?" as a single sentence. For more information about Cortana and what you can do, simply ask her! Say "Hey Cortana what can I say?" and she'll pull up a list of working and suggested commands. If you're already in the Cortana app you can also click the **?** icon on the sidebar to pull up this same menu.
+You can also say "Hey Cortana" to bring up Cortana at anytime. You don't have to wait for her to appear to continue asking her your question or giving her an instruction - for example, try saying "Hey Cortana, what's the weather?" as a single sentence. 
+For more information about Cortana and what you can do, simply ask her! 
+Say "Hey Cortana, what can I say?" and she'll pull up a list of working and suggested commands. 
+If you're already in the Cortana app you can also click the **?** icon on the sidebar to pull up this same menu.
 
 **HoloLens-specific commands**
 * "What can I say?"
@@ -155,7 +166,8 @@ There are also a number of voice commands you can say while gazing at a hologram
 
 ## Discovering voice commands
 
-Some commands, like the commands for fast manipulation above, can be hidden. To learn about what commands you can use, gaze at an object and say, "what can I say?". A list of possible commands pops up. You can also use the gaze cursor to look around and reveal the voice tooltips for each button in front of you. 
+Some commands, like the commands for fast manipulation above, can be hidden. To learn about what commands you can use, gaze at an object and say, "what can I say?". A list of possible commands pops up. 
+You can also use the head gaze cursor to look around and reveal the voice tooltips for each button in front of you. 
 
 If you want a complete list, just say, "Show all commands" anytime. 
 
@@ -189,9 +201,14 @@ Below are some practices that will aid in smooth speech recognition.
    * "Select"
    * "Go to start"
 
-### Voice's strengths
+### Advantages of voice input
 
-Voice input is a natural way to communicate our intents. Voice is especially good at interface **traversals** because it can help users cut through multiple steps of an interface (a user might say "go back" while looking at Web page, instead of having to go up and hit the back button in the app). This small time savings has a powerful **emotional effect** on user’s perception of the experience and gives them a small amount superpower. Using voice is also a convenient input method when we have our arms full or are **multi-tasking**. On devices where typing on a keyboard is difficult, **voice dictation** can be an efficient alternative way to input. Lastly, in some cases when the **range of accuracy** for gaze and gesture are limited, Voice might be a user’s only trusted method input.
+Voice input is a natural way to communicate our intents. 
+Voice is especially good at interface **traversals** because it can help users cut through multiple steps of an interface (a user might say "go back" while looking at a webpage, instead of having to go up and hit the back button in the app). 
+This small time saving has a powerful **emotional effect** on user’s perception of the experience and gives them a small amount superpower. 
+Using voice is also a convenient input method when we have our arms full or are **multi-tasking**. 
+On devices where typing on a keyboard is difficult, **voice dictation** can be an efficient alternative way to input text. 
+Lastly, in some cases when the **range of accuracy** for gaze and gesture are limited, voice can help to disambiguate the user's intent. 
 
 **How using voice can benefit the user**
 * Reduces time - it should make the end goal more efficient.
@@ -200,10 +217,35 @@ Voice input is a natural way to communicate our intents. Voice is especially goo
 * It's socially acceptable - it should fit in with societal norms in terms of behavior.
 * It's routine - voice can readily become a habitual behavior.
 
-### Voice's weaknesses
+### Challenges for voice input
 
-Voice also has some weaknesses. Fine-grained control is one of them. (for example a user might say "louder," but can’t say how much. "A little" is hard to quantify. Moving or scaling things with voice is also difficult (voice does not offer the granularity of control). Voice can also be imperfect. Sometimes a voice system incorrectly hears a command or fails to hear a command. Recovering from such errors is a challenge in any interface. Lastly, voice may not be socially acceptable in public places. There are some things that users can’t or shouldn’t say. These cliffs allow speech to be used for what it is best at.
+While voice input is great for a lot of different applications, it also faces several challenges. 
+Understanding both the advantages and challenges for voice input enables app developers to make smarter choices for how and when to use voice input and to create a great experience for their users.
 
+**Voice input for continuous input control**
+Fine-grained control is one of them. 
+For example, a user might want to change their volume in their music app. 
+She can simply say "louder", but it's not clear how much louder the system is supposed to make the volume. 
+The user could say: "Make it a little louder", but "a little" is difficult to quantify. 
+Moving or scaling holograms with voice is similarly difficult. 
+
+**Reliability of voice input detection**
+While voice input systems become better and better, sometimes they may incorrectly hear and interpret a voice command.
+The key is to address this challenge in your application by providing feedback to the user when the system is listening and what the system understood to create clarity on potential issues in correctly understanding the user.  
+
+**Voice input in shared spaces**
+Voice may not be socially acceptable in spaces that you share with others.
+Here are a few examples:
+* The user may not want to disturb others (e.g., in a quiet library or shared office)
+* Users may feel awkward being seen talking to themselves in public,
+* A user may feel uncomfortable dictating a personal or confidential message (including passwords) while others are listening
+
+**Voice input of unique or unknown words**
+Difficulties for voice input also come when users are dictating words that may be unknown to the system, such as nicknames, certain slang words or abbreviations. 
+
+**Learning voice commands**
+While the ultimate goal is to naturally converse with your system, often times apps still rely on specific pre-defined voice commands.
+A challenge associated with a big set of voice commands is how to teach them without overloading the user and how to help the user to retain them. 
 
 <br>
 
@@ -260,7 +302,8 @@ All this audio processing is hardware accelerated which means the features drain
 
 ## Languages
 
-HoloLens 2 also supports additional languages. Keep in mind that speech commands will always run in the system's display language even if multiple keyboards are installed or if apps attempt to create a speech recognizer in a different language.
+HoloLens 2 also supports additional languages. 
+Keep in mind that speech commands will always run in the system's display language even if multiple keyboards are installed or if apps attempt to create a speech recognizer in a different language.
 
 ## Troubleshooting
 
@@ -269,6 +312,8 @@ If you're having any issues using "select" and "Hey Cortana", try moving to a qu
 For the Windows Mixed Reality Developer Edition release 2017, the audio endpoint management logic will work fine (forever) after logging out and back in to the PC desktop after the initial HMD connection. Prior to that first sign out/in event after going through WMR OOBE, the user could experience various audio functionality issues ranging from no audio to no audio switching depending on how the system was set up prior to connecting the HMD for the first time.
 
 ## See also
+* [Gaze and commit](gaze-and-commit.md)
+* [Instinctual interactions](interaction-fundamentals.md)
+* [MR Input 212: Voice](holograms-212.md)
 * [Voice input in DirectX](voice-input-in-directx.md)
 * [Voice input in Unity](voice-input-in-unity.md)
-* [MR Input 212: Voice](holograms-212.md)
