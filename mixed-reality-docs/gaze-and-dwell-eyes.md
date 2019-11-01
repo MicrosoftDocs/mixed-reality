@@ -40,6 +40,7 @@ We recommend using a two-state approach for dwell feedback:
 
 ## See also
 * [Eye tracking](eye-tracking.md)
-* [Eye-gaze and commit](eye-gaze-and-commit.md)[
-* [Head-gaze and dwell](gaze-and-dwell.md)
+* [Eye-gaze and commit](gaze-and-commit-eyes.md)
+* [Gaze and commit](gaze-and-commit.md)
+* [Gaze and dwell](gaze-and-dwell.md)
 * [Voice input](voice-design.md)
