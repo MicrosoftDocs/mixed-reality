@@ -57,9 +57,7 @@ For eye tracking to work accurately, each user is required to go through an eye 
 ![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
 *Optimal target size at a 2-meter distance*
 
-
 <br>
-
 
 ## Use cases
 Eye tracking enables applications to track where the user is looking in real time. 
@@ -117,9 +115,7 @@ Beware of not overwhelming the user though - to find out more, check out our [ey
 
 - **Text entry:** Eye tracking can be used as an alternative for low-effort text entry, especially when speech or hands are inconvenient to use. 
 
-
 <br>
-
 
 ## Using eye-gaze for interaction
 Building an interaction that takes advantage of fast-moving eye targeting can be challenging.
@@ -127,7 +123,8 @@ On the one hand, the eyes move so fast that you need to be careful on how to use
 On the other hand, you can also create truly magical experiences that will excite your users! 
 To help you, check out our overview of key advantages, challenges and design recommendations for [eye-gaze for interaction](eye-gaze-interaction.md). 
 
-  
+<br>
+ 
 ## Dev guidance: What if eye tracking is not available?
 There may be situations in which your app will not receive any eye tracking data due to various reasons including but not limited to:
 * The user skipped the eye tracking calibration.
@@ -167,7 +164,8 @@ If you are a DirectX developer, you need to handle this switch yourself.
 ### 3. Fallback for other eye-tracking-specific applications
 Your app may use eye-gaze in a unique way that is tailored specifically to the eyes - for example, for animating an avatar’s eyes or for eye-based attention heatmaps relying on precise information about visual attention. 
 In this case, there is no clear fallback. 
-If eye tracking is not available, these capabilities may simply need to be disabled. 
+If eye tracking is not available, these capabilities may simply need to be disabled.
+Again, we recommend to clearly communicate this to the user who may be unaware that the capability is not working.
 
 <br>
 

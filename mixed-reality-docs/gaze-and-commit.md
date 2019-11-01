@@ -81,26 +81,32 @@ This is far from complete and we suggest learning more about eye-gaze targeting 
     <col width="25%" />
     <col width="25%" />
     </colgroup>
-    <tr>
+   <tr>
         <td><strong>Eye-gaze targeting</strong></td>
         <td><strong>Head-gaze targeting</strong></td>
     </tr>
-     <tr>
-        <td>Super fast</td>
-		<td>Low effort (barely any body movements necessary)</td>
-        <td>Does not require a cursor, but subtle feedback is recommended</td>
-		<td>Works great for big targets</td>
-		<td>Difficult for very small targets (e.g., tiny buttons or weblinks)</td>
-		<td>...</td>
-		<td></td>
+    <tr>
+        <td>Fast!</td>
+        <td>Slower</td>
     </tr>
-	<tr>
+    <tr>
+        <td>Low effort (barely any body movements necessary)</td>
+        <td>Can be fatiguing - Possible discomfort (e.g., neck strain)</td>
+    </tr>
+    <tr>
+        <td>Does not require a cursor, but subtle feedback is recommended</td>
+        <td>Requires to show a cursor</td>
+    </tr>
+    <tr>
+        <td>No smooth eye movements – e.g., not good for drawing</td>
         <td>More controlled and explicit</td>
-		<td>Very reliable</td>
-		<td>Requires to show a cursor</td>
-		<td>Slower</td>
-        <td>Can be fatiguing</td>
-		<td>Possible discomfort (e.g., neck strain)</td>
+    </tr>
+    <tr>
+        <td>Difficult for very small targets (e.g., tiny buttons or weblinks)</td>
+        <td>Reliable! Great fallback!</td>
+    </tr>
+    <tr>
+        <td>...</td>
         <td>...</td>
     </tr>
 </table>
