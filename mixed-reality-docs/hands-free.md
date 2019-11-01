@@ -59,7 +59,7 @@ While the first principle is about access, the second one is about availability.
 
 Some examples would be: 
 * A button to begin voice interactions
-* A voice command to transition to using head-gaze and dwell
+* A voice command to transition to, using head-gaze and dwell
 
 ### Add a dash of drama
 A mode switch is a big deal--it is important that when these transitions happen that they be an explicit, even dramatic switch, to let the user know what happened. 
@@ -87,7 +87,7 @@ Does the user understand ...
 
 * Example: Dwell affordances are not built-in to typical 2D patterns
 * Example: Voice targeting is better with object highlighting
-* Example: Voice interactions are better with captions that have to be turned on
+* Example: Voice interactions are better with captions that need to be turned on
 
 
 ## See also
