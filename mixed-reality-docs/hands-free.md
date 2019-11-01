@@ -40,7 +40,7 @@ In some hands-free situations, using your voice is not ideal or even possible.
 Loud factory environments, privacy, or social norms can all be constraints. 
 The gaze + dwell model allows the user to navigate an app without any additional input aside from their eye or head gaze: 
 The user simply keeps gazing (with their head or eyes) at the target and lingers there for a moment to activate it. 
-To learn more about the individual design considerations for gaze + dwell, check out [eye-gaze + dwell](eye-gaze-and-dwell.md) and [head-gaze + dwell](head-gaze-and-dwell.md).
+To learn more about the individual design considerations for gaze + dwell, check out [eye-gaze + dwell](gaze-and-dwell-eyes.md) and [head-gaze + dwell](gaze-and-dwell-head.md).
 
 
 ## Transitioning in and out of hands-free

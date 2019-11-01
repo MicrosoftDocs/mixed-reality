@@ -157,6 +157,7 @@ To get started developing, check out our information on
 * [Eye-gaze in DirectX](gaze-in-directx.md)
 * [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
 * [Eye-gaze and commit](gaze-and-commit-eyes.md)
+* [Eye-gaze and dwell](gaze-and-dwell-eyes.md)
 * [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Head-gaze and commit](gaze-and-commit-head.md)
 * [Voice input](voice-design.md)
