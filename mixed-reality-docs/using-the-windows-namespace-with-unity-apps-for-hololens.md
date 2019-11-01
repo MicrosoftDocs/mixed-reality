@@ -1,6 +1,6 @@
 ---
-title: Using the Windows namespace with Unity apps for HoloLens
-description: Explains how to make use of WinRT APIs in your Unity project for HoloLens.
+title: WinRT APIs with Unity for HoloLens
+description: Explains how to make use of WinRT APIs (the Windows namespace) in your Unity project for HoloLens.
 author: MikeRiches
 ms.author: mriches
 ms.date: 03/21/2018
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Unity, WinRT, windows mixed reality, API, walkthrough 
 ---
 
-# Using the Windows namespace with Unity apps for HoloLens
+# WinRT APIs with Unity for HoloLens
 
 This page describes how to make use of WinRT APIs in your Unity project for HoloLens.
 
