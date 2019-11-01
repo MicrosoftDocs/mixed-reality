@@ -175,7 +175,6 @@ Toggle buttons require some nuanced logic to work properly. When a person dwells
 ---
  
  ## See also
-* [Eye-gaze and commit](gaze-and-commit.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Hands - Direct manipulation](direct-manipulation.md)
 * [Hands - Gestures](gaze-and-commit.md#composite-gestures)
