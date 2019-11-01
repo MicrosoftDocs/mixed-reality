@@ -11,6 +11,8 @@ keywords: Mixed Reality, gaze, gaze targeting, interaction, design, eye tracking
 
 _Gaze and commit_ is a fundamental input model that is closely related with the way we're interacting with our computers using the mouse: _Point & click_.
 On this page, we introduce two types of gaze input (head- and eye-gaze) and different types of commit actions. 
+_Gaze and commit_ is considered a far input model with indirect manipulation.
+This means it is best used for interacting with holographic content that is out of reach.
 
 Mixed reality headsets can use the position and orientation of the user's head to determine their head direction vector. 
 You can think of this as a laser that points straight ahead from directly between the user's eyes. 

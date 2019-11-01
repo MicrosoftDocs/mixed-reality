@@ -8,9 +8,7 @@ ms.topic: article
 keywords: Mixed Reality, gaze, gaze targeting, interaction, design
 ---
 # Head-gaze and commit
-Head-gaze and commit is a special case of the [gaze and commit](gaze-and-commit.md) input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input, such as the hand gesture air tap or the voice command "Select". 
-It is considered a far input model with indirect manipulation.
-This means it is best used for interacting with content that is beyond arms reach.
+_Head-gaze and commit_ is a special case of the [gaze and commit](gaze-and-commit.md) input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input, such as the hand gesture air tap or the voice command "Select". 
 
 ## Device support
 
