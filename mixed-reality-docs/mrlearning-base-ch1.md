@@ -3,7 +3,7 @@ title: Getting started tutorials - 2. Initializing your project and first applic
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 11/01/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
