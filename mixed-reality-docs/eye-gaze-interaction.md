@@ -19,7 +19,6 @@ On this page here, we discuss design considerations for integrating eye-gaze inp
 You will learn about key advantages and also unique challenges that come with eye-gaze input.  
 Based on these, we provide several design recommendations to help you create satisfying eye-gaze-supported user interfaces. 
 
-
 ## Device support
 
 <table>
@@ -163,7 +162,7 @@ To get started developing, check out our information on
 * [Comfort](comfort.md)
 * [Eye-gaze in DirectX](gaze-in-directx.md)
 * [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
-* [Eye-gaze and commit](gaze-and-commit-eyes.md)
-* [Eye-gaze and dwell](gaze-and-dwell-eyes.md)
 * [Eye tracking on HoloLens 2](eye-tracking.md)
+* [Gaze and commit](gaze-and-commit.md)
+* [Gaze and dwell](gaze-and-dwell.md)
 * [Voice input](voice-design.md)
