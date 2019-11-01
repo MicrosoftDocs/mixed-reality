@@ -49,13 +49,13 @@ Below are a few examples for how you as a mixed reality developer can benefit fr
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
-        <td>[Head-gaze and commit](gaze-and-commit-head.md)</td>
+        <td>Head-gaze and commit</td>
         <td>✔️ Recommended</td>
         <td>✔️ Recommended (third choice - <a href="interaction-fundamentals.md">See the other options</a>)</td>
         <td>➕ Alternate option</td>
     </tr>
 	     <tr>
-        <td>[Eye-gaze and commit](gaze-and-commit-eyes.md)</td>
+        <td>Eye-gaze and commit</td>
         <td>❌ Not available</td>
         <td>✔️ Recommended (third choice - <a href="interaction-fundamentals.md">See the other options</a>)</td>
         <td>❌ Not available</td>
@@ -299,8 +299,8 @@ There are three things that you should consider:
 
 
 ## See also
-* [Eye-based interaction] (eye-gaze-interaction.md)
-* [Eye tracking on HoloLens 2] (eye-tracking.md)
+* [Eye-based interaction](eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and dwell](gaze-and-dwell.md)
 * [Hands - Direct manipulation](direct-manipulation.md)
 * [Hands - Gestures](gaze-and-commit.md#composite-gestures)
