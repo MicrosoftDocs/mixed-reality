@@ -1,20 +1,16 @@
 ---
-title: Spatial sound design
+title: Using Audio in Mixed Reality Applications
 description: Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed reality applications.
-author: joekellyms
-ms.author: joekelly
-ms.date: 03/21/2018
+author: kegodin
+ms.author: kegodin
+ms.date: 11/02/2019
 ms.topic: article
 keywords: Windows Mixed Reality, spatial sound, design, style
 ---
 
+# Using Audio in Mixed Reality Applications
 
-
-# Spatial sound design
-
-Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed reality applications.
-
-If you've ever played [Marco Polo](https://en.wikipedia.org/wiki/Marco_Polo_(game)), or had someone call your phone to help you locate it, you are already familiar with the importance of spatial sound. We use sound cues in our daily lives to locate objects, get someone's attention, or get a better understanding of our environment. The more closely your app's sound behaves like it does in the real world, the more convincing and engaging your virtual world will be.
+Use sound to inform and reinforce the user's mental model of application state. Use spatialization, when appropriate, to place sounds into the mixed world. Connecting the auditory and the visual in this way deepens the intuitive nature of many interactions and leads to increased user confidence.
 
 <br>
 
@@ -41,68 +37,93 @@ If you've ever played [Marco Polo](https://en.wikipedia.org/wiki/Marco_Polo_(gam
 </table>
 
 
-## Four key things spatial sound does for mixed reality development
+## When should I add sounds?
+Sounds should be added when they either inform or reinforce the user's mental model of your application. Due to their unique user interfaces, mixed reality applications have a greater need for informing and reinforcing sounds than applications on a traditional 2D screen.
 
-By default, sounds are played back in stereo. This means the sound will play with no spatial position, so the user does not know where the sound came from. Spatial sound does four key things for mixed reality development:
+### Inform and reinforce
+* Interactions like button presses often have several stages. Use sounds to reinforce stage transitions. Supplementing the visuals with audio accounts for the lack of a physical interface with tactile feedback.
+* For events not initiated by the user, such as asynchronous process completions and incoming messages, the field of view might not contain related visuals. Use sounds to inform the user.
 
-**Grounding**
+See below for examples of interactions, events, and suggested sound characteristics.
 
-Without sound, virtual objects effectively cease to exist when we turn our head away from them. Just like real objects, you want to be able to hear these objects even when you can't see them, and you want to be able to locate them anywhere around you. Just as virtual objects need to be grounded visually to blend with your real world, they also need to be grounded audibly. Spatial sound seamlessly blends your real world audio environment with the digital audio environment.
+### Exercise restraint
+Users don't have an unlimited capacity for audio information:
+* Limit sounds to communicating specific, valuable pieces of information.
+* When playing informative sounds, duck reinforcing sounds.
+* In augmented reality, avoid chasing the user with sound. The user should have the option to attend to the physical world without inadvertently triggering sounds from virtual objects.
 
-**User attention**
+### Don't rely solely on sounds
+Sounds used well will be valuable when your users can hear them, but ensure your application is usable even with the sound off. Users may be hearing impaired, may be using your application in a loud environment, or may have privacy or other reasons to disable the device audio.
 
-In mixed reality experiences, you can't assume where your user is looking and expect them to see something you place in the world visually. But users can always hear a sound play even when the object playing the sound is behind them. People are used to having their attention drawn by sound - we instinctually look toward an object that we hear around us. When you want to direct your user's gaze to a particular place, rather than using an arrow to point them visually, placing a sound in that location is a very natural and fast way to guide them.
+## Which sounds should I consider adding?
+Sounds reinforce user actions through gesture, direct manipulation, and voice, and inform the user of events and changing application state through notifications.
 
-**Immersion**
+### Gesture interactions
+ButtonsFarfield button interactions need sounds to communicate when the user has hovered over the button and when it has been pushed. Because gesture interactions are less skeuomorphic than direct manipulation on HoloLens 2, detailed feedback on interaction progress is necessary to give the user confidence that the action was successful.
+* Button hover should have a low-frequency thud or bump that evokes the idea of the cursor hitting the button but not yet selecting it. The low frequency ensures that the sound is subtle and does not come across as harsh, as this sound will probably be heard several times, and likely even when the user does not mean to interact with that button.
+* Button presses should have a short, tactile sound like a click when the gesture has successfully been completed to communicate that the user can raise their finger to complete the interaction.
+		: MRTK example: MRTK_ButtonPress.wav
+* Button unpresses should have a similar tactile feel, with the pitch raised a little bit from the press sound that accompanies the user lifting their finger and the action being performed (button actions are generally performed only once the user has released the button rather than when it has been pushed down to allow them to cancel the interaction by moving off of the button before lifting their finger).
+		: MRTK example: MRTK_ButtonUnpress.wav
 
-When objects move or collide, we usually hear those interactions between materials. So when your objects don't make the same sound they would in the real world, a level of immersion is lost - like watching a scary movie with the volume all the way down. All sounds in the real world come from a particular point in space - when we turn our heads, we hear the change in where those sounds are coming from relative to our ears, and we can track the location of any sound this way. Spatialized sounds make up the "feel" of a place beyond what we can see.
 
-**Interaction design**
+### Direct manipulation
+Buttons
 
-In most traditional interactive experiences, interaction sounds like UI sound effects are played in standard mono or stereo. But because everything in mixed reality exists in 3D space - including the UI - these objects benefit from spatialized sounds. When we press a button in the real world, the sound we hear comes from that button. By spatializing interaction sounds, we again provide a more natural and realistic user experience.
+Nearfield button interactions need sounds to communicate when the button has been successfully pushed and released, as the actions that button performs may happen upon press or release depending on the application. We rely on sounds to replace tactile feedback so the user can have more confidence in their actions and be more aware of the application state. Some properties of a button may affect the user's expectation of the sound that should play, such as larger buttons generally having lower frequency sounds.
+* Button presses should have a short, tactile sound like a click when the button has successfully been pushed in to communicate that the user can release the button.
+		? MRTK example: MRTK_ButtonPress.wav
+* Button unpresses should have a similar tactile feel, with the pitch raised a little bit from the press sound.
+		? MRTK example: MRTK_ButtonUnpress.wav
+Grabbing objectsConfirming a grab or release is a difficult thing to communicate visually. The user's hand will often be in the way of any visual effect, and there's no skeuomorphic idea of what effect would communicate grabbing an object because no effect happens in the real world. Instead, users expect a sound that evokes the idea of grabbing an object.
+* Grab actions should have a short, somewhat muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes this is accompanied by a "whoosh" sound leading up to the impact of the sound to communicate the motion of the hand when grabbing.
+		? MRTK example: MRTK_Move_Start.wav
+* Release actions should have a similarly short and tactile sound, usually pitched down from the grab sound and in a reverse order in time - an impact and then a "whoosh" to communicate the object settling into place.
+		? MRTK_Move_End.wav
+Drawing
+* Drawing should have a looping, persistent sound that has its volume controlled by the movement of the user's hand, with it being completely silent when the user's hand is still and at its maximum volume when the user's hand is moving quickly.
 
-## Best practices when using spatial sound
+### Voice interactions
+Voice interactions generally have little to no visual element, leaving audio as the primary way that progress is communicated.Voice interaction sounds are generally more tonal than their hand interaction counterparts.
+* Wake words should have a short, gentle tone to inform the user that the device has started listening for available commands. If this is not accompanied by any visual cue, also consider a subtle looping sound while the application is waiting for a valid command. This not only reinforces the idea that the application is waiting for further input, but will immediately inform the user when it has stopped listening, whether or not a valid command has been given. This is useful for the case where you have to time out the voice interaction so accidental commands aren't registered later when the user is doing something else.
+* Voice command confirmations should play a positive-sounding tone to communicate that the interaction was successful and the application is performing the command. Rising tones and major musical intervals work best for this.
+* Voice command failure should be a shorter, less uplifting sound. Because negative sounds are usually avoided, a more percussive, neutral sound works to communicate that while the interaction was unsuccessful, the application is moving on, and the user can try using the command again if they wish.
 
-**Real sounds work better than synthesized or unnatural sounds**
+### Notifications
+Notifications communicate application state and communication updates like messages and calls.
+* Message notifications should be positive tonal sounds, and should be very brief. These sounds will most likely be heard several times, sometimes in quick succession, so it is important that it doesn't stand out or sound harsh. Mid-range frequencies work best.
+* Animated objects should usually be accompanied by a sound, varying greatly depending on the object and speed of motion. At minimum, it helps to play a spatialized sound at the end of the animation to inform the user of the new position. If the movement is gradual enough, a "whoosh" sound that plays for the duration of the movement will help the user keep track of it during the motion and easily find where it ends up.
+* Calls should have similar qualities to a cell phone ringtone. These are usually looping musical phrases that play until the user has answered the call.
+* Voice communication connection and disconnection should have a short, tonal sound. The connection sound should have a positive tone, indicating the successful connection, while the disconnection sound should be a neutral sound indicating completion of the call.
 
-The more familiar your user is with a type of sound, the more real it will feel, and the more easily they will be able to locate it in their environment. A human voice, for example, is a very common type of sound, and your users will locate it just as quickly as a real person in the room talking to them.
 
-**Expectation trumps simulation**
+## Applying spatialization
+In the same way that stereo displays place 3D visuals into the space as holograms, audio spatialization uses stereo headphones or speakers to place sounds into the mixed world. 
 
-If you are used to a sound coming from a particular direction, your attention will be guided in that direction regardless of spatial cues. For example, most of the time that we hear birds, they are above us. Playing the sound of a bird will most likely cause your user to look up, even if you place the sound below them. This is usually confusing, and it is recommended that you work with expectations like these rather than going against them for a more natural experience.
+### Which sounds should I spatialize?
+Generally, when a sound is associated with an event that has a spatial location, the sound should be spatialized. This includes UI, embodied AI voices, and visual indicators. These objects can benefit from spatialized sounds.  By spatializing interaction sounds, we provide a more natural and realistic user experience.
 
-**Most sounds should be spatialized**
+* UI  -  audio emitting from the location of the user's hand the way it would in reality.  Touching, grabbing, releasing feels more natural when such audio feedback is spatialized.  This also helps declutter user's sonic "space" by limiting the amount of stereo/2D sounds that are locked to their heads.
 
-As mentioned above, everything in Mixed Reality exists in 3D space - your sounds should as well. Even music can sometimes benefit from spatialization, particularly when it's tied to a menu or some other UI.
+* Visual Indicators - spatializing visual indicators helps user hear and locate objects even when they are outside of the field of view.  Human ears use audio cues such as loudness, time delay, attenuation for determining distances.  
+	
+* Faceless Voice Assistance - Consider using mono or stereo settings.  Spatialized voices in this case might cause distractions to the users which will then lead to a poor user experience.
 
-**Avoid invisible emitters**
+Adding spatialization will come with some CPU cost. You can use the MRTK frame rate monitor to judge the impact of adding spatialization. However, when getting started note that many applications will have, at most, two sounds playing simultaneously, and the cost of spatialization in that case can be negligible.
 
-Because we've been conditioned to look at sounds that we hear around us, it can be an unnatural and even unnerving experience to locate a sound that has no visual presence. Sounds in the real world don't come from empty space, so be sure that if an audio emitter is placed within the user's immediate environment that it can also be seen.
+### When should I apply distance-based attenuation?
+In the physical world, sounds that are farther away are quieter. Your audio engine provides a tool to model this attenuation based on the distance from the source to the user. There are cases when you should apply distance attenuation, and others when you should not.
 
-**Avoid spatial masking**
+* Sounds attached to user-initiated events will generally have a visible visual element. These shouldn't have distance attenuation.  Tools that the users frequent might not need the attenuation.  For example, the tactile feedback from the typing keyboard is essential to the user that the volume of it should be consistent regardless of the placement of it.  The distance decay will prompt the user to think negatively about the experience, as if something has gone wrong.
+	
 
-Spatial sound relies on very subtle acoustic cues that can be overpowered by other sounds. If you do have stereo music or ambient sounds, make sure they are low enough in the mix to give room for the details of your spatialized sounds that will allow your users to locate them easily, and keep them sounding realistic and natural.
+* You'll generally find that informative sounds are attached to objects that have a distance in the 3D world. You can apply distance-based attenuation to make the sounds from these objects quieter when farther. The default curve may not apply to the size of your expected space, so adjust the curve for each source to fit your needs.
 
-## General concepts to keep in mind when using spatial sound
+### Which spatialization technology should I use?
+There are several available spatialization technologies. Speaker panning techniques apply total attenuation to the far left side when a sound is on the far right side of the head. Speaker panning is lower in CPU cost, effective for loudspeaker setups, and often the default spatialization technology in audio engines. However, they can cause comfort and accessibility issues when heard over headphones. Users with hearing loss in one ear may not hear a sound source at all when it's panned entirely to their weak ear.
 
-**Spatial sound is a simulation**
+In the physical world, even when a sound source is far on one side of the head, sound propagates to both ears due to diffraction around the head. HRTF (head-related transfer function)-based spatialization technologies capture this and many other effects that are essential to user comfort when listening to spatialized sound over headphones. 
 
-The most frequent use of spatial sound is making a sound seem as though it is emanating from a real or virtual object in the world. Thus, spatialized sounds may make the most sense coming from such objects.
+### Next steps
+Enabling spatialization: [Unity](spatial-sound-in-unity.md)
 
-Note that the perceived accuracy of spatial sound means that a sound shouldn't necessarily emit from the center of an object, as the difference will be noticeable depending on the size of the object and distance from the user. With small objects, the center point of the object is usually sufficient. For larger objects, you may want a sound emitter or multiple emitters at the specific location within the object that is supposed to be producing the sound.
-
-**Normalize all sounds**
-
-Distance attenuation happens quickly within the first meter from the user, as it does in the real world. All audio files should be normalized to ensure physically accurate distance attenuation, and ensure that a sound can be heard when several meters away (when applicable). The spatial audio engine will handle the attenuation necessary for a sound to "feel" like it's at a certain distance (with a combination of attenuation and "distance cues"), and applying any attenuation on top of that could reduce the effect. Outside of simulating a real object, the initial distance decay of *spatial sound* sounds will likely be more than enough for a proper mix of your audio.
-
-**Object discovery and user interfaces**
-
-When using audio cues to direct the user's attention beyond their current view, the sound should be audible and prominent in the mix, well above any stereo sounds, and any other spatialized sounds which might distract from the directional audio cue. For sounds and music that are associated with an element of the user interface (e.g. a menu), the sound emitter should be attached to that object. Stereo and other non-positional audio playing can make spatialized elements difficult for users to locate (See above: Avoid spatial masking).
-
-**Use spatial sound over standard 3D sound as much as possible**
-
-In mixed reality, for the best user experience, 3D audio should be achieved using spatial sound rather than legacy 3D audio technologies. In general, the improved spatialization is worth the small CPU cost over standard 3D sound. Standard 3D audio can be used for low-priority sounds, sounds that are spatialized but not necessarily tied to a physical or virtual object, and objects that the user never need locate to interact with the app.
-
-## See also
-* [Spatial sound](spatial-sound.md)
-* [Spatial mapping](spatial-mapping.md)
