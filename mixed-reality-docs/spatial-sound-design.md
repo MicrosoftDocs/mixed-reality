@@ -38,11 +38,11 @@ Use sound to inform and reinforce the user's mental model of application state. 
 
 
 ## When should I add sounds?
-Sounds should be added when they either inform or reinforce the user's mental model of your application. Due to their unique user interfaces, mixed reality applications have a greater need for informing and reinforcing sounds than applications on a traditional 2D screen.
+Mixed reality applications often have a greater need for sounds than applications on a 2D screen, due to the lack of a physical interface. Sounds should be added when they inform the user or reinforce interactions.
 
 ### Inform and reinforce
-* Interactions like button presses often have several stages. Use sounds to reinforce stage transitions. Supplementing the visuals with audio accounts for the lack of a physical interface with tactile feedback.
-* For events not initiated by the user, such as asynchronous process completions and incoming messages, the field of view might not contain related visuals. Use sounds to inform the user.
+* Interactions often have several stages. Consider using sounds to reinforce stage transitions.
+* For events not initiated by the user, such as asynchronous process completions and incoming messages, the field of view might not contain related visuals. Consider adding sounds to inform the user.
 
 See below for examples of interactions, events, and suggested sound characteristics.
 
@@ -53,10 +53,13 @@ Users don't have an unlimited capacity for audio information:
 * In augmented reality, avoid chasing the user with sound. The user should have the option to attend to the physical world without inadvertently triggering sounds from virtual objects.
 
 ### Don't rely solely on sounds
-Sounds used well will be valuable when your users can hear them, but ensure your application is usable even with the sound off. Users may be hearing impaired, may be using your application in a loud environment, or may have privacy or other reasons to disable the device audio.
+Sounds used well will be valuable when your users can hear them, but ensure your application is usable even with the sound off.
+* Users may be hearing impaired
+* Your application may be used in a loud environment
+* Your users may have privacy or other reasons to disable the device audio
 
 ## Which sounds should I consider adding?
-Sounds reinforce user actions through gesture, direct manipulation, and voice, and inform the user of events and changing application state through notifications.
+Sounds can reinforce user actions through gesture, direct manipulation, and voice, and inform the user of events and changing application state through notifications.
 
 ### Gesture interactions
 ButtonsFarfield button interactions need sounds to communicate when the user has hovered over the button and when it has been pushed. Because gesture interactions are less skeuomorphic than direct manipulation on HoloLens 2, detailed feedback on interaction progress is necessary to give the user confidence that the action was successful.
@@ -97,8 +100,8 @@ Notifications communicate application state and communication updates like messa
 * Voice communication connection and disconnection should have a short, tonal sound. The connection sound should have a positive tone, indicating the successful connection, while the disconnection sound should be a neutral sound indicating completion of the call.
 
 
-## Applying spatialization
-In the same way that stereo displays place 3D visuals into the space as holograms, audio spatialization uses stereo headphones or speakers to place sounds into the mixed world. 
+## Spatialization
+Audio spatialization uses stereo headphones or speakers to place sounds into the mixed world.
 
 ### Which sounds should I spatialize?
 Generally, when a sound is associated with an event that has a spatial location, the sound should be spatialized. This includes UI, embodied AI voices, and visual indicators. These objects can benefit from spatialized sounds.  By spatializing interaction sounds, we provide a more natural and realistic user experience.
@@ -124,6 +127,7 @@ There are several available spatialization technologies. Speaker panning techniq
 
 In the physical world, even when a sound source is far on one side of the head, sound propagates to both ears due to diffraction around the head. HRTF (head-related transfer function)-based spatialization technologies capture this and many other effects that are essential to user comfort when listening to spatialized sound over headphones. 
 
-### Next steps
-Enabling spatialization: [Unity](spatial-sound-in-unity.md)
+## Next steps
+Enabling spatialization:
+* [Unity](spatial-sound-in-unity.md)
 
