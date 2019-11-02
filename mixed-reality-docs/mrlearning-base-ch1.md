@@ -16,7 +16,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 
 * Optimize Unity for HoloLens development.
 * Import assets and setup the scene.
-* Visualization of the spatial mesh, hand meshes, and the framerate counter.
+* Visualization of the spatial mapping mesh, hand meshes, and the framerate counter.
 
 ## Instructions
 
@@ -93,7 +93,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
     ![Lesson1 Chapter5 Step4](images/Lesson1Chapter5Step4.JPG)
 
 > [!IMPORTANT]
-> If the build fails, try building again or restarting Unity and building again. If you see an error, such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?). If so, then you might need to install [Windows 10 SDK (10.0.18362.0)](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk)
+> If the build fails, try building again or restarting Unity and building again. If you see an error, such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?). If so, then you might need to install [Windows 10 SDK (10.0.18362.0)](https://developer.microsoft.com//windows/downloads/windows-10-sdk)
 
 5. After the build is completed, open the newly created folder containing your newly built application files. Double click on the *MixedRealityBase.sln* solution, or the corresponding name, if you used an alternative name for your project, to open the solution file in Visual Studio.
 
@@ -104,7 +104,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 
 ![Lesson1 Chapter5 Step5](images/Lesson1Chapter5Step5.JPG)
 
-6. Connect your HoloLens 2 into your PC. While these instructions assume you will be deploying to a HoloLens 2 device, you might also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/en-us/windows/uwp/packaging/packaging-uwp-apps>)
+6. Connect your HoloLens 2 into your PC. While these instructions assume you will be deploying to a HoloLens 2 device, you might also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com//windows/uwp/packaging/packaging-uwp-apps>)
 
 > [!IMPORTANT]
 > Before building to your device, the device must be in *Developer Mode* and paired with your development machine. Both of these steps can be completed by following [these instructions](using-visual-studio.md)
@@ -121,7 +121,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 
 ## Congratulations
 
-You have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mesh covering all the surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on application performance. These are just a few of the foundational pieces, included out of the box, with the Mixed Reality Toolkit. In the lessons to come, you will start adding more content and interactivity to your scene so that you can fully explore the capabilities of HoloLens 2 and the Mixed Reality Toolkit.
+You have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mapping mesh covering all the surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on application performance. These are just a few of the foundational pieces, included out of the box, with the Mixed Reality Toolkit. In the lessons to come, you will start adding more content and interactivity to your scene so that you can fully explore the capabilities of HoloLens 2 and the Mixed Reality Toolkit.
 
 > [!NOTE]
 > You will cover how to toggle the frame rate counter using a voice command in [Lesson 5](mrlearning-base-ch5.md). It is generally recommended to keep the visual profiler visible at all times during development to understand when code changes may have impacted perf. Hololens 2 application should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).

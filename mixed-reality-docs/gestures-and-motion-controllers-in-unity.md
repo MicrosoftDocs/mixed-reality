@@ -2,7 +2,7 @@
 title: Gestures and motion controllers in Unity
 description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
 author: thetuvix
-ms.author: yoyoz
+ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestures, motion controllers, unity, gaze, input
@@ -12,7 +12,7 @@ keywords: gestures, motion controllers, unity, gaze, input
 
 # Gestures and motion controllers in Unity
 
-There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](gestures.md) and [motion controllers](motion-controllers.md) in HoloLens and Immersive HMD. You access the data for both sources of spatial input through the same APIs in Unity.
+There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](gaze-and-commit.md#composite-gestures) and [motion controllers](motion-controllers.md) in HoloLens and Immersive HMD. You access the data for both sources of spatial input through the same APIs in Unity.
 
 Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common *Input.GetButton/Input.GetAxis* APIs that work across multiple Unity XR SDKs, and an *InteractionManager/GestureRecognizer* API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
 
@@ -302,7 +302,7 @@ This means that polling gives you a source pose or head pose that is 30-40ms for
 To accurately target based on the user's original intent for a hand or controller press, you should use the historical source pose or head pose from that *InteractionSourcePressed* or *InteractionSourceReleased* input event.
 
 You can target a press or release with historical pose data from the user's head or their controller:
-* The head pose at the moment in time when a gesture or controller press occurred, which can be used for **targeting** to determine what the user was [gazing](gaze.md) at:
+* The head pose at the moment in time when a gesture or controller press occurred, which can be used for **targeting** to determine what the user was [gazing](gaze-and-commit.md) at:
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args) {
@@ -398,7 +398,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 **Namespace:** *UnityEngine.XR.WSA.Input*<br>
 **Types**: *GestureRecognizer*, *GestureSettings*, *InteractionSourceKind*
 
-Your app can also recognize higher-level composite gestures for spatial input sources, Tap, Hold, Manipulation and Navigation gestures. You can recognize these composite gestures across both [hands](gestures.md) and [motion controllers](motion-controllers.md) using the GestureRecognizer.
+Your app can also recognize higher-level composite gestures for spatial input sources, Tap, Hold, Manipulation and Navigation gestures. You can recognize these composite gestures across both [hands](gaze-and-commit.md#composite-gestures) and [motion controllers](motion-controllers.md) using the GestureRecognizer.
 
 Each Gesture event on the GestureRecognizer provides the SourceKind for the input as well as the targeting head ray at the time of the event. Some events provide additional context specific information.
 
@@ -526,7 +526,7 @@ Step-by-step tutorials, with more detailed customization examples, are available
 
 ## See also
 
-* [Gestures](gestures.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Motion controllers](motion-controllers.md)
 
 

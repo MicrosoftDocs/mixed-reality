@@ -1,8 +1,8 @@
 ---
 title: Using Vuforia with Unity
 description: Leverage Vuforia to build Windows Mixed Reality applications in Unity.
-author: ailyadis
-ms.author: 
+author: thetuvix
+ms.author: alexturn
 ms.date: 01/28/2019
 ms.topic: article
 keywords: Vuforia, markers, coordinates, frame of reference, tracking
@@ -72,7 +72,7 @@ Developers looking to create their own AR experiences with Vuforia Engine and Ho
 
 **Enabling Extended Tracking on a Target**
 
-Vuforia Engine will automatically transform the pose of a target that uses extended tracking into the HoloLens spatial coordinate system. This allows HoloLens to take over tracking, and to integrate any content augmenting into the spatial map of the target’s surroundings. This process occurs between Vuforia Engine and mixed reality APIs in Unity and does not require any programming by the developer - it's handled automatically.
+Vuforia Engine will automatically transform the pose of a target that uses extended tracking into the HoloLens spatial coordinate system. This allows HoloLens to take over tracking, and to integrate any content augmenting into the spatial mapping of the target’s surroundings. This process occurs between Vuforia Engine and mixed reality APIs in Unity and does not require any programming by the developer - it's handled automatically.
 
 **Here is what occurs...**
 1. Vuforia’s target Tracker recognizes the target

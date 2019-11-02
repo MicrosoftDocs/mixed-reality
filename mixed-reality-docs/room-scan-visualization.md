@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, App patterns, design, HoloLens, room scan, spatial mapping, surface reconstruction, mesh
+keywords: Windows Mixed Reality, App patterns, design, HoloLens, room scan, spatial mapping, mesh
 ---
 
 
@@ -90,6 +90,6 @@ Certain applications may rely on continues scanning to refresh spatial mapping d
 A good case for this method is one where holograms are expected to interact with moving objects, e.g. a holographic car that drives on the floor may want to correctly bump into a door depending on whether it is open or closed.
 
 ## See also
-* [Spatial mapping design](spatial-mapping-design.md)
+* [Spatial mapping](spatial-mapping.md)
 * [Coordinate systems](coordinate-systems.md)
 * [Spatial sound design](spatial-sound-design.md)

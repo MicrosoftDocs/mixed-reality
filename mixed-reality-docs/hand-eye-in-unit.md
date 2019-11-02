@@ -2,7 +2,7 @@
 title: Articulated Hand and Eye Tracking in Unity
 description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
 author: thetuvix
-ms.author: yoyoz
+ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestures, motion controllers, unity, gaze, input
@@ -20,7 +20,7 @@ The easiest way to leverage the new capability in Unity is through MRTK v2. Ther
 * [Get started with Eye Tracking in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
 
 
-# Building Blocks supporting Hands, eyes and others in MRTK v2
+## Building Blocks supporting Hands, eyes and others in MRTK v2
 
 MRTK v2 provides a set of UI Controls and building blocks to help you accelerate your development. 
 
@@ -36,7 +36,7 @@ MRTK v2 provides a set of UI Controls and building blocks to help you accelerate
 |  [![Eye Tracking: Target Selection](images/mrtk_et_targetselect.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) [Eye Tracking: Target Selection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) | [![Eye Tracking: Navigation](images/mrtk_et_navigation.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) [Eye Tracking: Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) | [![Eye Tracking: Heat Map](images/mrtk_et_heatmaps.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) [Eye Tracking: Heat Map](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) |
 | Combine eyes, voice and hand input to quickly and effortlessly select holograms across your scene | Learn how to auto scroll text or fluently zoom into focused content based on what you are looking at| Examples for logging, loading and visualizing what users have been looking at in your app |
 
-# Example Scenes
+## Example Scenes
 Explore MRTK's various types of interactions and UI controls in [this example scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html).
 
 You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) under **Assets/MixedRealityToolkit.Examples/Demos**folder.
@@ -45,7 +45,13 @@ You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://git
 
 ## See also
 
-* [Gestures](gestures.md)
+* [Eye-based interaction] (eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2] (eye-tracking.md)
+* [Gaze and commit](gaze-and-commit.md)
+* [Hands - Direct manipulation](direct-manipulation.md)
+* [Hands - Gestures](gaze-and-commit.md#composite-gestures)
+* [Hands - Point and commit](point-and-commit.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 * [Motion controllers](motion-controllers.md)
 * [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)

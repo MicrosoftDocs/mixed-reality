@@ -3,13 +3,13 @@ title: MR Input 213
 description: Follow this coding tutorial using Unity, Visual Studio and immersive headsets to learn the details of motion controllers.
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/21/2018
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, academy, tutorial
 ---
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 <br>
 
@@ -70,7 +70,8 @@ See the installation checklist for immersive headsets on [this page](install-the
 * Once Unity finishes loading project files, you will be able to see Unity editor.
 * In Unity, select **File > Build Settings**.
 
-![MR213_BuildSettings](images/mr213-buildsettings-450px.png)
+    ![MR213_BuildSettings](images/mr213-buildsettings-450px.png)
+
 * Select **Universal Windows Platform** in the **Platform** list and click the **Switch Platform** button.
 * Set Target Device to **Any device**
 * Set Build Type to **D3D**
@@ -82,7 +83,8 @@ See the installation checklist for immersive headsets on [this page](install-the
 * In XR Settings, check **Virtual Reality Supported**
 * Under Virtual Reality SDKs, select **Windows Mixed Reality**
 
-![MR213_XRSettings](images/mr213-xrsettings-500px.png)
+    ![MR213_XRSettings](images/mr213-xrsettings-500px.png)
+
 * Close **Build Settings** window.
 
 ### Project structure
@@ -92,18 +94,21 @@ This tutorial uses **[Mixed Reality Toolkit - Unity](https://github.com/Microsof
 ![ProjectStructure](images/mr213-projectstructure-650px.png)
 
 **Completed scenes for your reference**
+
 * You will find two completed Unity scenes under **Scenes** folder.
     * **MixedReality213**: Completed scene with single brush
     * **MixedReality213Advanced**: Completed scene for advanced design with multiple brushes
 
 **New Scene setup for the tutorial**
+
 * In Unity, click **File > New Scene**
 * Delete **Main Camera** and **Directional Light**
 * From the **Project panel**, search and drag the following prefabs into the **Hierarchy** panel:
     * Assets/HoloToolkit/Input/Prefabs/**MixedRealityCamera**
     * Assets/AppPrefabs/**Environment**
 
-![Camera and Environment](images/mr213-cameraenvironment-300px.jpg)
+    ![Camera and Environment](images/mr213-cameraenvironment-300px.jpg)
+
 * There are two camera prefabs in Mixed Reality Toolkit:
     * **MixedRealityCamera.prefab**: Camera only
     * **MixedRealityCameraParent.prefab**: Camera + Teleportation + Boundary
@@ -111,19 +116,21 @@ This tutorial uses **[Mixed Reality Toolkit - Unity](https://github.com/Microsof
     * To learn more about the teleportation with **MixedRealityCameraParent**, see [Advanced design - Teleportation and locomotion](#advanced-design---teleportation-and-locomotion)
 
 **Skybox setup**
+
 * Click **Window > Lighting > Settings**
 * Click the circle on the right side of the **Skybox Material field**
-* Type in ‘gray’ and select **SkyboxGray**
+* Type in ‘gray’ and select **SkyboxGray** (Assets/AppPrefabs/Support/Materials/SkyboxGray.mat)
 
-(Assets/AppPrefabs/Support/Materials/SkyboxGray.mat)
+    ![Setting skybox](images/mr123-skyboxsetting-400px.jpg)
 
-![Setting skybox](images/mr123-skyboxsetting-400px.jpg)
 * Check **Skybox** option to be able to see assigned gray gradient skybox
 
-![Toggle skybox option](images/mr213-skyboxcheck-400px.jpg)
+    ![Toggle skybox option](images/mr213-skyboxcheck-400px.jpg)
+
 * The scene with MixedRealityCamera, Environment and gray skybox will look like this.
 
-![MixedReality213 Environment](images/mr213-environment-600px.jpg)
+    ![MixedReality213 Environment](images/mr213-environment-600px.jpg)
+
 * Click **File > Save Scene as**
 * **Save** your scene under Scenes folder with any name
 
@@ -136,6 +143,7 @@ This tutorial uses **[Mixed Reality Toolkit - Unity](https://github.com/Microsof
 * Learn how to render motion controller models in Unity's game mode and at runtime.
 
 Windows Mixed Reality provides an animated controller model for controller visualization. There are several approaches you can take for controller visualization in your app:
+
 * Default - Using default controller without modification
 * Hybrid - Using default controller, but customizing some of its elements or overlaying UI components
 * Replacement - Using your own customized 3D model for the controller
@@ -155,6 +163,7 @@ In this chapter, we will learn about the examples of these controller customizat
 ![MR213_ControllerVisualizer](images/mr213-controllervisualizer-600px.png)
 
 **Instructions**
+
 * In the **Inspector** panel, double click **MotionControllerVisualizer** script to see the code in the Visual Studio
 
 **MotionControllerVisualizer script**
@@ -178,6 +187,7 @@ Once the controller has been delivered, scripts can use **MotionControllerInfo**
 In a later chapter, we will learn how to use these scripts to attach UI elements to the controllers.
 
 *In some scripts, you will find code blocks with **#if !UNITY_EDITOR** or **UNITY_WSA**. These code blocks run only on the UWP runtime when you deploy to Windows. This is because the set of APIs used by the Unity editor and the UWP app runtime are different.*
+
 * **Save** the scene and click the **play** button.
 
 You will be able to see the scene with motion controllers in your headset. You can see detailed animations for button clicks, thumbstick movement, and touchpad touch highlighting.
@@ -205,6 +215,7 @@ In this chapter, you will learn how to add user interface elements to the contro
 The first step is to choose which element of the controller you want the UI to attach to. These elements are defined in **ControllerElementEnum** in **MotionControllerInfo.cs**.
 
 ![MR213 MotionControllerElements](images/mr213-motioncontrollerelements-1000px.jpg)
+
 * **Home**
 * **Menu**
 * **Grasp**
@@ -214,6 +225,7 @@ The first step is to choose which element of the controller you want the UI to a
 * **Pointing pose** – this element represents the tip of the controller pointing forward direction.
 
 **Instructions**
+
 * In the **Project** panel, search **AttachToController** script.
 * From the search result, double click **AttachToController** script to see the code in Visual Studio.
 
@@ -222,6 +234,7 @@ The first step is to choose which element of the controller you want the UI to a
 The **AttachToController** script provides a simple way to attach any objects to a specified controller handedness and element.
 
 In **AttachElementToController()**,
+
 * Check handedness using **MotionControllerInfo.Handedness**
 * Get specific element of the controller using **MotionControllerInfo.TryGetElement()**
 * After retrieving the element's transform from the controller model, parent the object under it and set object's local position & rotation to zero.
@@ -262,6 +275,7 @@ private void AttachElementToController(MotionControllerInfo newController)
 The simplest way to use **AttachToController** script is to inherit from it, as we've done in the case of **ColorPickerWheel.** Simply override the **OnAttachToController** and **OnDetatchFromController** functions to perform your setup / breakdown when the controller is detected / disconnected.
 
 **Instructions**
+
 * In the **Project** panel, type in the search box **ColorPickerWheel**. You can also find it under Assets/AppPrefabs/.
 * Drag **ColorPickerWheel** prefab into the **Hierarchy** panel.
 * Click the **ColorPickerWheel** prefab in the **Hierarchy** panel.
@@ -296,6 +310,7 @@ public class ColorPickerWheel : AttachToController, IPointerTarget
     ...
 }
 ```
+
 * **Save** the scene and click the **play** button.
 
 **Alternative method for attaching objects to the controllers**
@@ -336,6 +351,7 @@ To show and hide the **ColorPickerWheel** UI with animation, we are using [Unity
 ![Unity Animation Controller](images/mr123-animationcontroller-550px.jpg)
 
 **Instructions**
+
 * In the **Hierarchy** panel, select **ColorPickerWheel** prefab
 * In the **Inspector** panel, double click **ColorPickerWheel** script to see the code in the Visual Studio
 
@@ -344,6 +360,7 @@ To show and hide the **ColorPickerWheel** UI with animation, we are using [Unity
 **ColorPickerWheel** subscribes to Unity's **InteractionSourceUpdated** event to listen for touchpad events.
 
 In **InteractionSourceUpdated()**, the script first checks to ensure that it:
+
 * is actually a touchpad event (obj.state.**touchpadTouched**)
 * originates from the left controller (obj.state.source.**handedness**)
 
@@ -429,11 +446,13 @@ In **Update()**, **selectorPosition** is used to cast a ray at the color wheel's
 ![MR213_BrushToolOverrideSlot](images/mr213-motioncontrollersoverride-700px.jpg)
 
 The **BrushController** prefab does not have to be included in the **Hierarchy** panel. However, to check out its child components:
+
 * In the **Project** panel, type in **BrushController** and drag **BrushController** prefab into the **Hierarchy** panel.
 
 ![MR213_BrushTool_Prefab2](images/mr213-brushtool-prefab-1000px.jpg)
 
 You will find the **Tip** component in **BrushController**. We will use its transform to start/stop drawing lines.
+
 * Delete the **BrushController** from the **Hierarchy** panel.
 * **Save** the scene and click the **play** button. You will be able to see the brush model replaced the right-hand motion controller.
 
@@ -526,6 +545,7 @@ private void OnEnable()
     ...
 }
 ```
+
 * **Save** the scene and click the **play** button. You will be able to draw the lines and paint using the select button on the right-hand controller.
 
 ## Chapter 6 - Object spawning with Select input
@@ -545,7 +565,8 @@ private void OnEnable()
 * **ObjectSpawner** has a field named **Color Source**.
 * From the **Hierarchy** panel, drag the **ColorPickerWheel** reference into this field.
 
-![Object Spawner Inspector](images/mr213-objectspawnercolorpickerwheel-650px.jpg)
+    ![Object Spawner Inspector](images/mr213-objectspawnercolorpickerwheel-650px.jpg)
+
 * Click the **ObjectSpawner** prefab in the **Hierarchy** panel.
 * In the **Inspector** panel, double click **ObjectSpawner** Script to see the code in Visual Studio.
 
@@ -608,11 +629,13 @@ private void SpawnObject()
 ```
 
 The **ObjectSpawner** uses the **ColorPickerWheel** to set the color of the display object's material. Spawned objects are given an instance of this material so they will retain their color.
+
 * **Save** the scene and click the **play** button.
 
 You will be able to change the objects with the Grasp button and spawn objects with the Select button.
 
 ## Build and deploy app to Mixed Reality Portal
+
 * In Unity, select **File > Build Settings**.
 * Click **Add Open Scenes** to add current scene to the **Scenes In Build**.
 * Click **Build**.
@@ -647,14 +670,16 @@ In this chapter, you will learn how to replace the default motion controller mod
     * Assets/AppPrefabs/**MarkerThin**
     * Assets/AppPrefabs/**Pencil**
 
-![Brushes](images/mixedreality213-brushes-250px.png)
+    ![Brushes](images/mixedreality213-brushes-250px.png)
+
 * Click **MotionControllers** prefab in the **Hierarchy** panel.
 * In the **Inspector** panel, uncheck **Always Use Alternate Right Model** on the **Motion Controller Visualizer**
 * In the **Hierarchy** panel, click **BrushSelector**
 * **BrushSelector** has a field named **ColorPicker**
 * From the **Hierarchy** panel, drag the **ColorPickerWheel** into **ColorPicker** field in the **Inspector** panel.
 
-![Assign ColorPickerWheel to Brush Selector](images/mr213-brushselector-500px.jpg)
+    ![Assign ColorPickerWheel to Brush Selector](images/mr213-brushselector-500px.jpg)
+
 * In the **Hierarchy** panel, under **BrushSelector** prefab, select the **Menu** object.
 * In the **Inspector** panel, under the **LineObjectCollection** component, open the **Objects** array dropdown. You will see 6 empty slots.
 * From the **Hierarchy** panel, drag each of the prefabs parented under the **Brushes** GameObject into these slots in any order. (Make sure you're dragging the prefabs from the scene, not the prefabs in the project folder.)
@@ -666,6 +691,7 @@ In this chapter, you will learn how to replace the default motion controller mod
 Since the **BrushSelector** inherits **AttachToController**, it shows **Handedness** and **Element** options in the **Inspector** panel. We selected **Right** and **Pointing Pose** to attach brush tools to the right hand controller with forward direction.
 
 The **BrushSelector** makes use of two utilities:
+
 * **Ellipse**: used to generate points in space along an ellipse shape.
 * **LineObjectCollection**: distributes objects using the points generated by any Line class (eg, Ellipse). This is what we'll be using to place our brushes along the Ellipse shape.
 
@@ -700,7 +726,7 @@ protected override void OnAttachToController()
         touchpadRenderer.material = touchpadMaterial;
         touchpadRenderer.enabled = true;
     }
-            
+
     // Subscribe to input now that we're parented under the controller
     InteractionManager.InteractionSourceUpdated += InteractionSourceUpdated;
 }
@@ -780,17 +806,20 @@ If you want to allow the user to move around the scene with teleportation using 
     * Assets/AppPrefabs/Input/Prefabs/**InputManager**
     * Assets/AppPrefabs/Input/Prefabs/Cursor/**DefaultCursor**
 
-![Mixed Reality Camera Parent](images/mr213-cameraparent-300px.png)
+    ![Mixed Reality Camera Parent](images/mr213-cameraparent-300px.png)
+
 * In the **Hierarchy** panel, click **Input Manager**
 * In the **Inspector** panel, scroll down to the **Simple Single Pointer Selector** section
 * From the **Hierarchy** panel, drag **DefaultCursor** into **Cursor** field
 
-![Assigning DefaultCursor](images/mr213-defaultcursor-500px.png)
+    ![Assigning DefaultCursor](images/mr213-defaultcursor-500px.png)
+
 * **Save** the scene and click the **play** button. You will be able to use the thumbstick to rotate left/right or teleport.
 
 ## The end
 
 And that's the end of this tutorial! You learned:
+
 * How to work with motion controller models in Unity's game mode and runtime.
 * How to use different types of button events and their applications.
 * How to overlay UI elements on top of the controller or fully customize it.

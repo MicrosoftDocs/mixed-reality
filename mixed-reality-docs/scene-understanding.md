@@ -3,7 +3,7 @@ title: Scene understanding
 description: Introduction to scene understanding capabilities for HoloLens
 author: szymons
 ms.author: szymons
-ms.date: 07/08/19
+ms.date: 07/08/2019
 ms.topic: article
 keywords: Scene understanding, Spatial Mapping, Windows Mixed Reality, Unity
 ---
@@ -28,7 +28,7 @@ This document is intended to provide a scenario overview and to clarify the rela
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
@@ -54,19 +54,23 @@ Many of the core scenarios for environment aware applications (placement, occlus
 
 Scene understanding provides new constructs specifically designed to simplify placement scenarios. A scene can compute primitives called SceneQuads which describe flat surfaces on which holograms can be placed. SceneQuads have specifically been designed around placement and describe a 2D surface and provide an API for placement on that surface. Previously, when using the triangle mesh to perform placement, one had to scan all areas of the quad and perform hole filling/post-processing to identify good locations for object placement. This is not always necessary with Quads, as the Scene understanding runtime is capable of inferring which areas of the quad that were not scanned, and invalidate areas of the quad that are not part of the surface.
 
-![SceneQuads with inference disabled, capturing placement areas for scanned regions.](images/SUQuads.png)<br>
-*[1] "SceneQuads with inference disabled, capturing placement areas for scanned regions."*
+:::row:::
+    :::column:::
+       ![SceneQuads with inference disabled, capturing placement areas for scanned regions.](images/SUQuads.png)<br>
+       **Image #1** - SceneQuads with inference disabled, capturing placement areas for scanned regions.
+    :::column-end:::
+        :::column:::
+       ![Quads with inference enabled, placement is no longer limited to scanned areas.](images/SUWatertight.png)<br>
+        **Image #2** - Quads with inference enabled, placement is no longer limited to scanned areas.
+    :::column-end:::
+:::row-end:::
 
 <br>
 
-![Quads with inference enabled, placement is no longer limited to scanned areas.](images/SUWatertight.png)<br>
-*[2] "Quads with inference enabled, placement is no longer limited to scanned areas."*
 
-<br>
+If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the [spatial mapping](spatial-mapping.md) mesh. For more details on this topic, please see the [Scene understanding SDK reference](scene-understanding-SDK.md)
 
-If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the Surface mesh. For more details on this topic, please see the [Scene understanding SDK reference](scene-understanding-SDK.md)
-
-**Note** For legacy code that depends on the surface mesh, a scene can be computed that contains spatial mapping output along with SceneQuads, ensuring that any legacy requirements for placement can be maintained. If Scene understanding mesh data does not satisfy your application's latency requirements, we recommend you continue to use the spatial mapping APIs documented here: [Spatial mapping placement](spatial-mapping.md#placement)
+**Note** For legacy placement code that depends on the spatial mapping mesh, the spatial mapping mesh can be computed along with SceneQuads by setting EnableWorldMesh setting. If Scene understanding API does not satisfy your application's latency requirements, we recommend you continue to use the [Spatial mapping API](spatial-mapping.md#placement).
 
 ### Occlusion
 
@@ -76,7 +80,7 @@ If your requirements can tolerate the increased latency of Scene understanding, 
 
 ### Physics
 
-Scene understanding generates watertight meshes that decompose space with semantics specifically to address many limitations to physics that surface meshes impose. Watertight structures ensure physics ray casts always hit, and semantic decomposition allows for simpler generation of nav meshes for indoor navigation. As described in the section on [occlusion](#occlusion) creating a scene with EnableSceneObjectMeshes and EnableWorldMesh will produce the most physically complete mesh possible. The watertight property of the environment mesh will prevent hit tests from failing to hit surfaces and the mesh data will ensure that physics are interacting with all objects in the scene and not just the room structure.
+Scene understanding generates watertight meshes that decompose space with semantics specifically to address many limitations to physics that spatial mapping meshes impose. Watertight structures ensure physics ray casts always hit, and semantic decomposition allows for simpler generation of nav meshes for indoor navigation. As described in the section on [occlusion](#occlusion) creating a scene with EnableSceneObjectMeshes and EnableWorldMesh will produce the most physically complete mesh possible. The watertight property of the environment mesh will prevent hit tests from failing to hit surfaces and the mesh data will ensure that physics are interacting with all objects in the scene and not just the room structure.
 
 ### Navigation
 
