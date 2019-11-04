@@ -73,7 +73,7 @@ In mixed reality, users can interact with buttons using a cursor. Button actions
 ### Direct manipulation
 On HoloLens2, articulated hand tracking supports direct manipulation of user interface elements. Sounds are important replacements for the lack of physical feedback.
 
-Confirming a **grab** or **release** in direct manipulation is difficult to communicate visually. The user's hand will often be in the way of any visual effect, and hard-bodied objects lack a real-world analogue. In contrast, sounds can effectively communicate successful grab and release interactions.
+Confirming a **grab** or **release** in direct manipulation is difficult to communicate visually. The user's hand will often be in the way of any visual effect, and hard-bodied objects lack a real-world visual analogue of "grabbing". In contrast, sounds can effectively communicate successful grab and release interactions.
 * Grab actions should have a short, somewhat muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes this is accompanied by a "whoosh" sound leading up to the impact of the sound to communicate the motion of the hand when grabbing.
 		? MRTK example: MRTK_Move_Start.wav
 * Release actions should have a similarly short and tactile sound, usually pitched down from the grab sound and in a reverse order in time, having an impact and then a "whoosh" to communicate the object settling into place.
@@ -81,7 +81,7 @@ Confirming a **grab** or **release** in direct manipulation is difficult to comm
 
 A **drawing** interaction should have a looping, persistent sound that has its volume controlled by the movement of the user's hand, with it being completely silent when the user's hand is still, and at its maximum volume when the user's hand is moving quickly.
 
-A **button press** sound is important in direct manipulation because the user lacks physical indication of when they've reached bottom of the key travel. Visual indicators of key travel can be small, subtle, and occluded. As with gesture interactions, button presses should have a short, tactile sound like a click, and unpresses should have a similar click with raised pitch.
+A **button press** sound is important in direct manipulation because the user lacks physical indication of when they've reached the bottom of the key travel. Visual indicators of key travel can be small, subtle, and occluded. As with gesture interactions, button presses should have a short, tactile sound like a click, and unpresses should have a similar click with raised pitch.
 * MRTK example: MRTK_ButtonPress.wav
 * MRTK example: MRTK_ButtonUnpress.wav
 
@@ -116,18 +116,15 @@ Generally, when a sound is associated with an event that has a spatial location,
 
 Adding spatialization will come with some CPU cost. Many applications will have, at most, two sounds playing simultaneously. The cost of spatialization in that case can be negligible. You can use the MRTK frame rate monitor to judge the impact of adding spatialization. 
 
-### When should I apply distance-based attenuation?
+### When and how should I apply distance-based attenuation?
 In the physical world, sounds that are farther away are quieter. Your audio engine provides a tool to model this attenuation based on the distance from the source to the user. There are cases when you should apply distance attenuation, and others when you should not.
 
 * Sounds attached to user-initiated events will generally have a visible visual element. These shouldn't have distance attenuation.  Tools that the users frequent might not need the attenuation.  For example, the tactile feedback from the typing keyboard is essential to the user that the volume of it should be consistent regardless of the placement of it.  The distance decay will prompt the user to think negatively about the experience, as if something has gone wrong.
-	
 
 * You'll generally find that informative sounds are attached to objects that have a distance in the 3D world. You can apply distance-based attenuation to make the sounds from these objects quieter when farther. The default curve may not apply to the size of your expected space, so adjust the curve for each source to fit your needs.
 
 ### Which spatialization technology should I use?
-There are several available spatialization technologies. Speaker panning techniques apply total attenuation to the far left side when a sound is on the far right side of the head. Speaker panning is lower in CPU cost, effective for loudspeaker setups, and often the default spatialization technology in audio engines. However, they can cause comfort and accessibility issues when heard over headphones. Users with hearing loss in one ear may not hear a sound source at all when it's panned entirely to their weak ear.
-
-In the physical world, even when a sound source is far on one side of the head, sound propagates to both ears due to diffraction around the head. HRTF (head-related transfer function)-based spatialization technologies capture this and many other effects that are essential to user comfort when listening to spatialized sound over headphones. 
+Use HRTF (head-related transfer function)-based spatialization technologies. They model the sound propagation around the head in the physical world. Even when a sound source is far on one side of the head, sound propagates to the distant ear with some attenuation and delay. Speaker panning, in contrast, relies only on attenuation, and applies total attenuation in the left ear when sounds are on the right side (and vice-versa). This can be uncomfortable for normal-hearing listeners, and be inaccessible for listeners with hearing impairment in one ear.
 
 ## Next steps
 Enabling spatialization:
