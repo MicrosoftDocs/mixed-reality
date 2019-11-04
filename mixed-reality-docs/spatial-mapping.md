@@ -30,7 +30,7 @@ Spatial mapping provides a detailed representation of real-world surfaces in the
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
@@ -235,7 +235,7 @@ Because each surface observer can provide multiple unconnected spatial surfaces,
 
 ## Raycasting and Collision
 
-In order for a physics API (such as [Havok](http://www.havok.com/)) to provide an application with raycasting and collision functionality for spatial surfaces, the application must provide spatial surface meshes to the physics API. Meshes used for physics often have the following properties:
+In order for a physics API (such as [Havok](https://www.havok.com/)) to provide an application with raycasting and collision functionality for spatial surfaces, the application must provide spatial surface meshes to the physics API. Meshes used for physics often have the following properties:
 * They contain only small numbers of triangles. Physics operations are more computationally intensive than rendering operations.
 * They are 'water-tight'. Surfaces intended to be solid should not have small holes in them; even holes too small to be visible can cause problems.
 * They are converted into convex hulls. Convex hulls have few polygons and are free of holes, and they are much more computationally efficient to process than raw triangle meshes.

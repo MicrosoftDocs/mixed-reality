@@ -48,7 +48,7 @@ Win32 applications will appear in the "All apps" list on the Windows Mixed Reali
 ### Sample Visual Elements Manifest
 
 ```xml
-<Application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Application xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance">
   <VisualElements
     ShowNameOnSquare150x150Logo="on"
     Square150x150Logo="YOUR_APP_LOGO_150X150.png"

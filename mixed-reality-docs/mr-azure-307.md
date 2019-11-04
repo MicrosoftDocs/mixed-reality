@@ -19,7 +19,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, machine learning,
 
 In this course, you will learn how to add Machine Learning (ML) capabilities to a mixed reality application using Azure Machine Learning Studio.
 
-*Azure Machine Learning Studio* is a Microsoft service, which provides developers with a large number of machine learning algorithms, which can help with data input, output, preparation, and visualization. From these components, it is then possible to develop a predictive analytics experiment, iterate on it, and use it to train your model. Following training, you can make your model operational within the Azure cloud, so that it can then score new data. For more information, visit the [Azure Machine Learning Studio page](https://azure.microsoft.com/en-au/services/machine-learning-studio/).
+*Azure Machine Learning Studio* is a Microsoft service, which provides developers with a large number of machine learning algorithms, which can help with data input, output, preparation, and visualization. From these components, it is then possible to develop a predictive analytics experiment, iterate on it, and use it to train your model. Following training, you can make your model operational within the Azure cloud, so that it can then score new data. For more information, visit the [Azure Machine Learning Studio page](https://azure.microsoft.com/services/machine-learning-studio/).
 
 Having completed this course, you will have a mixed reality immersive headset application, and will have learned how do the following:
 
@@ -325,7 +325,7 @@ The **Consumption** Info page will display the information you will need to call
 Set up and test your Mixed Reality Immersive Headset.
 
 > [!NOTE]
->  You will **not** require Motion Controllers for this course. If you need support setting up the Immersive Headset, please click [HERE](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+>  You will **not** require Motion Controllers for this course. If you need support setting up the Immersive Headset, please click [HERE](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 1.  Open **Unity** and create a new Unity Project called **MR\_MachineLearning.** Make sure the project type is set to **3D**.
 

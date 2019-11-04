@@ -13,7 +13,7 @@ keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPacka
 > This tool and its operation are offered as-is. It is subject to change without any notice and may not be compatible with future Windows or Windows Mixed Reality HMD releases.
 
 ## Download
- Download [MixedRealitySpatialDataPackager here](http://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
+ Download [MixedRealitySpatialDataPackager here](https://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
 
 ## Device support
 
@@ -27,7 +27,7 @@ keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPacka
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>

@@ -93,8 +93,8 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 4. Create and name a new folder for your application. In the image below, a folder with the name App was created to contain the application. Click **Select Folder** to begin building to the newly created folder. After the build has completed, you can close the *Build Settings* window in Unity.
     ![Lesson1 Section5 Step4](images/mrlearning-base-ch1-5-step4.JPG)
 
-    > [!IMPORTANT]
-    > If the build fails, try building again or restarting Unity and building again. If you see an error, such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?). If so, then you might need to install [Windows 10 SDK (10.0.18362.0)](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+  > [!IMPORTANT]
+  > If the build fails, try building again or restarting Unity and building again. If you see an error, such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?). If so, then you might need to install [Windows 10 SDK (10.0.18362.0)](https://developer.microsoft.com//windows/downloads/windows-10-sdk)
 
 5. After the build is completed, open the newly created folder containing your newly built application files. Double click on the *MixedRealityBase.sln* solution, or the corresponding name, if you used an alternative name for your project, to open the solution file in Visual Studio.
 
@@ -105,7 +105,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
 
     ![Lesson1 Section5 Step5](images/mrlearning-base-ch1-5-step5.JPG)
 
-6. Connect your HoloLens 2 to your PC. While these instructions assume you will be deploying to a HoloLens 2 device, you might also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps>)
+6. Connect your HoloLens 2 into your PC. While these instructions assume you will be deploying to a HoloLens 2 device, you might also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com//windows/uwp/packaging/packaging-uwp-apps>)
 
     > [!IMPORTANT]
     > Before building to your device, the device must be in *Developer Mode* and paired with your development machine. Both of these steps can be completed by following [these instructions](using-visual-studio.md)
