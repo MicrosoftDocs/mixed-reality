@@ -9,9 +9,18 @@ keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
 ---
 
 # Audio in Mixed Reality
-Audio is an essential part of design and productivity in mixed reality, from ensuring user confidence in gesture- and voice-based interactions, to guiding users to next steps, to effectively combining virtual objects with the real world.
+Audio is an essential part of design and productivity in mixed reality, and can:
+* Increase user confidence in gesture- and voice-based interactions
+* Guide users to next steps
+* Effectively combine virtual objects with the real world
 
-The low-latency head tracking of mixed reality headsets, including HoloLens, enables the use of high quality HRTF-based spatialization. Spatializing audio in your application can provide UI feedback, call attention to visual elements, help users maintain awareness of their real-world surroundings, and provide cues to application state. Layering on acoustics connects holograms to the mixed world and can provide cues about the environment and object state.
+The low-latency head tracking of mixed reality headsets, including HoloLens, enables the use of high quality HRTF-based spatialization. Spatializing audio in your application can:
+* Call attention to visual elements
+* Help users maintain awareness of their real-world surroundings
+
+Adding acoustics more deeply connects holograms to the mixed world, and can provide cues about the environment and object state.
+
+For more detailed examples of design using audio, see [sound design](spatial-sound-design.md).
 
 <br>
 
@@ -46,16 +55,16 @@ The low-latency head tracking of mixed reality headsets, including HoloLens, ena
     </tr>
 </table>
 
-## Sound design
-Many of the platform audio APIs and supporting tools used in a mixed reality application are the same as those used in other Windows applications. However, [sound design in mixed reality](spatial-sound-design.md) can require a different approach than in other modalities such as touch and keyboard-and-mouse. Key sound design decisions include which sounds to spatialize and which interactions to sonify. These decisions can have a strong effect on user confidence, productivity, and learning curve.
+## Using sounds in mixed reality
+[Using sounds in mixed reality](spatial-sound-design.md) can require a different approach than in touch and keyboard-and-mouse applications. Key sound design decisions include which sounds to spatialize and which interactions to sonify. These decisions can have a strong effect on user confidence, productivity, and learning curve.
 
-### Sound design case studies
+### Case studies
 HoloTour virtually takes users to tourist and historical sites around the world. The following case study describes the sound design for HoloTour: [Sound design for HoloTour](case-study-spatial-sound-design-for-holotour.md). A special microphone and rendering setup were used to capture the subject spaces.
 
 RoboRaid is a high-energy shooter for HoloLens. The following case study describes the design choices made to ensure spatial audio was used to fullest dramatic effect: [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md).
 
 ## Spatialization
-Spatialization adds a sense of direction to spatial audio. When using a 7.1 home theater setup, spatialization is as simple as panning between loud speakers. But mixed reality is experienced over headphones, and with headphones it's essential to use a technology like HRTFs for accuracy and comfort. Windows offers several spatialization technologies depending on the device, and HoloLens2 includes hardware acceleration of HRTF-based spatialization.
+Spatialization adds a sense of direction to spatial audio. When using a 7.1 home theater setup, spatialization is as simple as panning between loud speakers. But with headphones in mixed reality it's essential to use an HRTF-based technology, for accuracy and comfort. Windows offers HRTF-based spatialization, and this support is hardware-accelerated on HoloLens2.
 
 <br>
 
@@ -78,9 +87,7 @@ Support for Windows' HRTFs is available for some 3rd-party audio engines:
 * A [Wwise audio engine plugin](https://www.audiokinetic.com/products/plug-ins/msspatial/) calls the ISpatialAudioClient API
 
 ## Acoustics
-Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. Without acoustics, spatialized sounds lack a perceived distance and are heard as being 'stuck' on a sphere surrounding the listener.
+Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. Without acoustics, spatialized sounds lack a perceived distance.
 
-Acoustics treatment can range from simple to very complex. By using a simple reverb, such as that supported by any audio engine, you can push spatialized sounds out into the environment surrounding the listener. For more details, see [spatial sound design](spatial-sound-design.md).
-
-Rich and compelling acoustics treatment is available from acoustics systems such as [Project Acoustics](http://aka.ms/acoustics). Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound, and is an effective option for cases where the relevant scene geometry is known at development time.
+Acoustics treatment can range from simple to very complex. By using a simple reverb, such as that supported by any audio engine, you can push spatialized sounds out into the environment surrounding the listener. Richer and more compelling acoustics treatment is available from acoustics systems such as [Project Acoustics](http://aka.ms/acoustics). Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound, and is an effective option for cases where the relevant scene geometry is known at development time.
 

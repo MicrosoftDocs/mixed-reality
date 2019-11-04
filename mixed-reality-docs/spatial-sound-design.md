@@ -56,7 +56,7 @@ Users don't have an unlimited capacity for audio information:
 Sounds used well will be valuable when your users can hear them, but ensure your application is usable even with the sound off.
 * Users may be hearing impaired
 * Your application may be used in a loud environment
-* Your users may have privacy or other reasons to disable the device audio
+* Users may have privacy or other reasons to disable the device audio
 
 ## How should I sonify interactions?
 Interaction types in mixed reality include gesture, direct manipulation, and voice. Use the following suggested characteristics to select or design sounds for these interactions.
@@ -87,46 +87,51 @@ A **button press** sound is important in direct manipulation because the user la
 
 
 ### Voice interactions
-Voice interactions generally have little to no visual element, leaving audio as the primary way that progress is communicated.
+Voice interactions often have subtle visual elements. Reinforce the interaction stages using sounds. Consider choosing more tonal sounds to distinguish them from gesture and direct manipulation sounds.
 
-Voice interaction sounds are generally more tonal than their hand interaction counterparts.
-
-* Wake words should have a short, gentle tone to inform the user that the device has started listening for available commands. If this is not accompanied by any visual cue, also consider a subtle looping sound while the application is waiting for a valid command. This not only reinforces the idea that the application is waiting for further input, but will immediately inform the user when it has stopped listening, whether or not a valid command has been given. This is useful for the case where you have to time out the voice interaction so accidental commands aren't registered later when the user is doing something else.
-* Voice command confirmations should play a positive-sounding tone to communicate that the interaction was successful and the application is performing the command. Rising tones and major musical intervals work best for this.
-* Voice command failure should be a shorter, less uplifting sound. Because negative sounds are usually avoided, a more percussive, neutral sound works to communicate that while the interaction was unsuccessful, the application is moving on, and the user can try using the command again if they wish.
+* Use a positive-sounding tone for voice command **confirmations**. Rising tones and major musical intervals are effective at this.
+* Use a shorter, less-positive sounding tone for voice command **failure**. Avoid negative sounds; instead, use a more percussive, neutral sound to communicate the application is moving on from the interaction.
+* If your application uses a wake word, use a short, gentle tone when the device has **started listening**, and a subtle looping sound while the application listens. 
 
 ### Notifications
-Notifications communicate application state and communication updates like messages and calls.
-* Message notifications should be positive tonal sounds, and should be very brief. These sounds will most likely be heard several times, sometimes in quick succession, so it is important that it doesn't stand out or sound harsh. Mid-range frequencies work best.
-* Animated objects should usually be accompanied by a sound, varying greatly depending on the object and speed of motion. At minimum, it helps to play a spatialized sound at the end of the animation to inform the user of the new position. If the movement is gradual enough, a "whoosh" sound that plays for the duration of the movement will help the user keep track of it during the motion and easily find where it ends up.
+Notifications communicate application state changes and other events not initiated by the user, such as process completions, messages, and calls.
+
+In mixed reality, objects that move can move out of the user's field of view. Accompany **animated objects** with a spatialized sound that depends on the object and speed of motion.
+* It also helps to play a spatialized sound at the end of an animation to inform the user of the new position
+* For gradual movements, a "whoosh" sound during movement will help the user track the object
+
+**Message notifications** will most likely be heard several times, and sometimes in quick succession. It's important that it doesn't stand out or sound harsh. Mid-range positive tonal sounds are effective here.
+
 * Calls should have similar qualities to a cell phone ringtone. These are usually looping musical phrases that play until the user has answered the call.
 * Voice communication connection and disconnection should have a short, tonal sound. The connection sound should have a positive tone, indicating the successful connection, while the disconnection sound should be a neutral sound indicating completion of the call.
 
 ## Spatialization
-Audio spatialization uses stereo headphones or speakers to place sounds into the mixed world.
+Spatialization uses stereo headphones or speakers to place sounds into the mixed world.
 
 ### Which sounds should I spatialize?
-Generally, when a sound is associated with an event that has a spatial location, the sound should be spatialized. This includes UI, embodied AI voices, and visual indicators. These objects can benefit from spatialized sounds.  By spatializing interaction sounds, we provide a more natural and realistic user experience.
+A sound should be spatialized when it's associated with an event that has a spatial location. This includes UI, embodied AI voices, and visual indicators.
 
-* UI  -  audio emitting from the location of the user's hand the way it would in reality.  Touching, grabbing, releasing feels more natural when such audio feedback is spatialized.  This also helps declutter user's sonic "space" by limiting the amount of stereo/2D sounds that are locked to their heads.
+Spatializing **user interface** elements helps declutter user's sonic "space" by limiting the number of stereo sounds locked to their heads. Especially in direct manipulation interactions, touching, grabbing, and releasing feels more natural when audio feedback is spatialized.
 
-* Visual Indicators - spatializing visual indicators helps user hear and locate objects even when they are outside of the field of view.  Human ears use audio cues such as loudness, time delay, attenuation for determining distances.  
+Spatializing **visual indicators** intuitively informs users when they are outside the field of view.
 	
-* Faceless Voice Assistance - Consider using mono or stereo settings.  Spatialized voices in this case might cause distractions to the users which will then lead to a poor user experience.
+For **faceless voice assistance**, and other elements without a well-defined spatial location, avoid spatialization. Spatialization without a related visual element can distract users into thinking there is a visual element that they can't find.
 
 Adding spatialization will come with some CPU cost. Many applications will have, at most, two sounds playing simultaneously. The cost of spatialization in that case can be negligible. You can use the MRTK frame rate monitor to judge the impact of adding spatialization. 
 
 ### When and how should I apply distance-based attenuation?
-In the physical world, sounds that are farther away are quieter. Your audio engine provides a tool to model this attenuation based on the distance from the source to the user. There are cases when you should apply distance attenuation, and others when you should not.
+In the physical world, sounds that are farther away are quieter. Your audio engine can model this attenuation based on the source distance. Use distance-based attenuation when it communicates relevant information.
 
-* Sounds attached to user-initiated events will generally have a visible visual element. These shouldn't have distance attenuation.  Tools that the users frequent might not need the attenuation.  For example, the tactile feedback from the typing keyboard is essential to the user that the volume of it should be consistent regardless of the placement of it.  The distance decay will prompt the user to think negatively about the experience, as if something has gone wrong.
+The distances to **visual indicators**, **animated holograms**, and other informative sounds are usually relevant to the user. Use distance-based attenuation to intuitively provide this cue.
+* Adjust the attenuation curve for each source to fit the size of your mixed world spaces. Your audio engine's default curve is often meant for very large (up to half-kilometer) spaces.
 
-* You'll generally find that informative sounds are attached to objects that have a distance in the 3D world. You can apply distance-based attenuation to make the sounds from these objects quieter when farther. The default curve may not apply to the size of your expected space, so adjust the curve for each source to fit your needs.
+Sounds that reinforce the **progressive stages of buttons** and other interactions shouldn't have attenuation applied. The reinforcing effects of these sounds are generally more important than communicating the distance to the button. Variations can be distracting, especially with keyboards, where many button clicks will be heard in succession.
 
 ### Which spatialization technology should I use?
 Use HRTF (head-related transfer function)-based spatialization technologies. They model the sound propagation around the head in the physical world. Even when a sound source is far on one side of the head, sound propagates to the distant ear with some attenuation and delay. Speaker panning, in contrast, relies only on attenuation, and applies total attenuation in the left ear when sounds are on the right side (and vice-versa). This can be uncomfortable for normal-hearing listeners, and be inaccessible for listeners with hearing impairment in one ear.
 
 ## Next steps
-Enabling spatialization:
-* [Unity](spatial-sound-in-unity.md)
+* [Use spatial sound in Unity](spatial-sound-in-unity.md)
+* [Case study of Roboraid](case-study-using-spatial-sound-in-roboraid.md)
+* [Case study of HoloTour](case-study-spatial-sound-design-for-holotour.md)
 
