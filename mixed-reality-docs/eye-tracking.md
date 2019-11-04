@@ -11,7 +11,7 @@ keywords: Eye tracking, mixed reality, input, eye-gaze, calibration
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what user is looking at. 
+HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what the user is looking at. 
 This page provides an overview of this new capability to developers and designers on how they can benefit from eye tracking for various use cases and basic developer guidance. 
 
 ### Device support
