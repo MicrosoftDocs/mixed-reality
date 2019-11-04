@@ -425,5 +425,4 @@ catch (Exception^ exception)
 
 ## See also
 * [Speech app design](https://msdn.microsoft.com/library/dn596121.aspx)
-* [Spatial sound in DirectX](spatial-sound-in-directx.md)
 * [SpeechRecognitionAndSynthesis sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
