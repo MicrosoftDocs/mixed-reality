@@ -178,18 +178,21 @@ However, for input that routes through the SpatialInteractionManager, there's an
 
 
 ## Calibration
-For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md). This allows the device to adjust the system for a more comfortable and quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
-Developers don’t need to do anything on their end to manage user calibration. The system will ensure the user gets prompted to calibrate the device under the following circumstances:
+For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md). 
+This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
+Developers don’t need to do anything on their end to manage user calibration. 
+The system will ensure that the user gets prompted to calibrate the device under the following circumstances:
 *The user is using the device for the first time
 *The user previously opted out of the calibration process
 *The calibration process did not succeed the last time the user used the device
 
-Developers should make sure to provide adequate support for users for whom eye tracking data may not be available. For design recommendation for the fallback solution see [Eye tracking on Hololens 2](eye-tracking.md).
+Developers should make sure to provide adequate support for users for whom eye tracking data may not be available. 
+Learn more about considerations for fallback solutions at [Eye tracking on Hololens 2](eye-tracking.md).
 
 ## See also
-* [Head-gaze and commit input model](gaze-and-commit.md)
-* [Eye-gaze on HoloLens 2](eye-tracking.md)
 * [Calibration](calibration.md)
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
-* [Voice Input in DirectX](voice-input-in-directx.md)
+* [Eye-gaze on HoloLens 2](eye-tracking.md)
+* [Gaze and commit input model](gaze-and-commit.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
+* [Voice Input in DirectX](voice-input-in-directx.md)
