@@ -71,26 +71,20 @@ In mixed reality, users can interact with buttons using a cursor. Button actions
 
 
 ### Direct manipulation
-On HoloLens2, articulated hand tracking supports direct manipulation of user interface elements. 
+On HoloLens2, articulated hand tracking supports direct manipulation of user interface elements. Sounds are important replacements for the lack of physical feedback.
 
-Buttons
-
-Nearfield button interactions need sounds to communicate when the button has been successfully pushed and released, as the actions that button performs may happen upon press or release depending on the application. We rely on sounds to replace tactile feedback so the user can have more confidence in their actions and be more aware of the application state. Some properties of a button may affect the user's expectation of the sound that should play, such as larger buttons generally having lower frequency sounds.
-* Button presses should have a short, tactile sound like a click when the button has successfully been pushed in to communicate that the user can release the button.
-		? MRTK example: MRTK_ButtonPress.wav
-* Button unpresses should have a similar tactile feel, with the pitch raised a little bit from the press sound.
-		? MRTK example: MRTK_ButtonUnpress.wav
-
-Grabbing objects
-
-Confirming a grab or release is a difficult thing to communicate visually. The user's hand will often be in the way of any visual effect, and there's no skeuomorphic idea of what effect would communicate grabbing an object because no effect happens in the real world. Instead, users expect a sound that evokes the idea of grabbing an object.
+Confirming a **grab** or **release** in direct manipulation is difficult to communicate visually. The user's hand will often be in the way of any visual effect, and hard-bodied objects lack a real-world analogue. In contrast, sounds can effectively communicate successful grab and release interactions.
 * Grab actions should have a short, somewhat muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes this is accompanied by a "whoosh" sound leading up to the impact of the sound to communicate the motion of the hand when grabbing.
 		? MRTK example: MRTK_Move_Start.wav
-* Release actions should have a similarly short and tactile sound, usually pitched down from the grab sound and in a reverse order in time - an impact and then a "whoosh" to communicate the object settling into place.
+* Release actions should have a similarly short and tactile sound, usually pitched down from the grab sound and in a reverse order in time, having an impact and then a "whoosh" to communicate the object settling into place.
 		? MRTK_Move_End.wav
 
-Drawing
-* Drawing should have a looping, persistent sound that has its volume controlled by the movement of the user's hand, with it being completely silent when the user's hand is still and at its maximum volume when the user's hand is moving quickly.
+A **drawing** interaction should have a looping, persistent sound that has its volume controlled by the movement of the user's hand, with it being completely silent when the user's hand is still, and at its maximum volume when the user's hand is moving quickly.
+
+A **button press** sound is important in direct manipulation because the user lacks physical indication of when they've reached bottom of the key travel. Visual indicators of key travel can be small, subtle, and occluded. As with gesture interactions, button presses should have a short, tactile sound like a click, and unpresses should have a similar click with raised pitch.
+* MRTK example: MRTK_ButtonPress.wav
+* MRTK example: MRTK_ButtonUnpress.wav
+
 
 ### Voice interactions
 Voice interactions generally have little to no visual element, leaving audio as the primary way that progress is communicated.
