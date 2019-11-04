@@ -126,14 +126,16 @@ Beware of not overwhelming the user though - to find out more, check out our [ey
 
 ## Using eye-gaze for interaction
 Building an interaction that takes advantage of fast-moving eye targeting can be challenging.
-On the one hand, the eyes move so fast that you need to be careful on how to use eye-gaze input, because otherwise user may find the experience overwhelming or distracting. 
+On the one hand, the eyes move so fast that you need to be careful on how to use eye-gaze input, because otherwise users may find the experience overwhelming or distracting. 
 On the other hand, you can also create truly magical experiences that will excite your users! 
 To help you, check out our overview of key advantages, challenges and design recommendations for [eye-gaze for interaction](eye-gaze-interaction.md). 
 
 <br>
  
 ## Fallback solutions when eye tracking is not available
-In rare cases eye tracking data might not be avalable since the user failed to successfully calibrate. Developers should ensure there is appropriate fallaback support for these users. 
+In rare cases eye tracking data might not be avalable.
+This can be due to different reasons ranging from the system being unable to successfully [calibrate the user](calibration.md), the user not allowing the app access to eye tracking data to temporary interferences (e.g., smudges on the device or hair strains in front of the user's eyes). 
+Hence, developers should ensure that there is appropriate fallback support for these users. 
 
 ### Fallback for apps using eye-gaze as a primary input pointer
 If your app uses eye-gaze as a pointer input to quickly select holograms across the scene, yet eye tracking data is unavailable, we recommend falling back to head-gaze and start showing the head-gaze cursor. 
