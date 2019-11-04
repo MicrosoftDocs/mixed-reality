@@ -270,6 +270,18 @@ If you're having any issues using "select" and "Hey Cortana", try moving to a qu
 
 For the Windows Mixed Reality Developer Edition release 2017, the audio endpoint management logic will work fine (forever) after logging out and back in to the PC desktop after the initial HMD connection. Prior to that first sign out/in event after going through WMR OOBE, the user could experience various audio functionality issues ranging from no audio to no audio switching depending on how the system was set up prior to connecting the HMD for the first time.
 
+<br>
+
+---
+
+## Voice input in MRTK(Mixed Reality Toolkit) for Unity
+With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily assign voice command on any objects. Use MRTK's **Speech Input Profile** to define your keywords. By assigning **SpeechInputHandler** script, you can make any object respond to the keywords defined in the Speech Input Profile. SpeechInputHandler also provides speech confirmation label to improve the user's confidence.
+
+* [MRTK - Voice command](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+
+
+---
+
 ## See also
 * [Voice input in DirectX](voice-input-in-directx.md)
 * [Voice input in Unity](voice-input-in-unity.md)

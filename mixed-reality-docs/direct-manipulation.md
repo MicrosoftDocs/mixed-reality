@@ -294,12 +294,6 @@ For example, if we encourage the user to grab an object or a control point with 
 
 You may have noticed that there are interaction parallels we can draw between hands in AR and motion controllers in VR. Both inputs can be used to trigger direct manipulations in their respective environments. In HoloLens 2, grabbing and dragging with hands at a close distance works much the same way as the grab button does on WMR motion controllers. This provides users with interaction familiarity between the two platforms, which might prove useful if you ever decide to port your application from one to the other.
 
-
-<br>
-
----
-
-
 <br>
 
 ---
@@ -322,6 +316,18 @@ By doing so, you accidentally move your hand across some interactive holographic
 * **Where to**: Use information about what a user is looking at with quick-throwing gestures. Grab a hologram and roughly toss it toward your intended destination.  
 
     While this sometimes works, quickly performing hand gestures may result in highly inaccurate destinations. However, eye tracking could improve the accuracy of the gesture.
+
+<br>
+
+---
+
+## Manipulation in MRTK(Mixed Reality Toolkit) for Unity
+With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily achieve common manipulation behavior using the script **ManipulationHandler**. With ManipulationHandler, you can grab and move objects directly with hands or with hand ray. It also supports two-handed manipulation for scaling and rotating an object.
+
+* [MRTK - Manipulation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html)
+
+
+---
 
 ## See also
 
