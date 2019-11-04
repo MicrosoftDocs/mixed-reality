@@ -74,7 +74,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
   ![Lesson1 Section4 Step1](images/mrlearning-base-ch1-4-step1.JPG)
 
     > [!NOTE]
-    > You may see a pop-up dialog box for selecting a [profile for the Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html). Choose the profile named *DefaultMixedRealityToolkitConfigurationProfile* by double-clicking it.
+    > You may see a pop-up dialog box for selecting a [profile for the Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html). Choose the profile named *DefaultHoloLens2ConfigurationProfile* by double-clicking it.
 
 2. Your scene will have several new items and modifications. Save your scene under a different name by clicking **File** > **Save As...**, and give your scene a name, such as *BaseScene*. Keep your scene organized by saving it to the *Scenes* folder in your project’s *Assets* folder.
   ![Lesson1 Section4 Step2a](images/mrlearning-base-ch1-4-step2a.JPG)

@@ -43,7 +43,7 @@ In this section, you'll learn how to customize and configure the default MRTK pr
 
     Click **Clone** to create a copy of the MRTK profile. With your own copy of the MRTK profile, you now have the ability customize any settings in this profile. You will also need to repeat the copy and customize step for any additional profiles nested under this profile as described in the subsequent steps.
 
-3. Disable the visibility of the spatial awareness mesh. To do this, find Spatial Awareness System Settings as shown in the image below. Click the **Clone** button to the right of the the Spatial Awareness System Profile to replace the default profile with a customizable copy. In the popup window that appears, press the **Clone** button, as shown in the second image below.
+3. Disable the visibility of the spatial awareness mesh. To do this, find Spatial Awareness system settings as shown in the image below. Make sure the **Enable Spatial Awareness System** option is checked. Click the **Clone** button to the right of the the Spatial Awareness System Profile to replace the default profile with a customizable copy. In the popup window that appears, press the **Clone** button, as shown in the second image below.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-1-step3a.png)
 
@@ -85,7 +85,7 @@ In this section, you will learn how to use hand tracking to press a pressable bu
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step3.png)
 
-6. Add a cube to the scene. Right click on the hierarchy area, select a 3D object, then click on Cube.
+4. Add a cube to the scene. Right click on the hierarchy area, select a 3D object, then click on Cube.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step6a.png)
 
@@ -96,11 +96,11 @@ In this section, you will learn how to use hand tracking to press a pressable bu
     >[!NOTE]
     >In general, 1 unit in Unity is roughly equivalent to 1 meter in the physical world. There are exceptions to this, for example when objects are children of scaled objects.
 
-4. With the PressableButtonHoloLens2 game object selected, in the Inspector scroll towards the bottom to locate the Events section of the Interactable (Script) component.
+5. With the PressableButtonHoloLens2 game object selected, in the Inspector scroll towards the bottom to locate the Events section of the Interactable (Script) component.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step4.png)
 
-5. We will modify the existing event to give the button an event to respond to when pushed. As you can see, the Event Receiver Type is set to InteractableOnPressReciever. This allows the button to respond to a pressed event when a tracked hand presses the button. At this point you should also change the Interaction Filter to Near and Far.
+6. We will modify the existing event to give the button an event to respond to when pushed. As you can see, the Event Receiver Type is set to InteractableOnPressReciever. This allows the button to respond to a pressed event when a tracked hand presses the button. At this point you should also change the Interaction Filter to Near and Far.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step5.png)
 
