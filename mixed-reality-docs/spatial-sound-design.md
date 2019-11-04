@@ -20,7 +20,7 @@ Use sound to inform and reinforce the user's mental model of application state. 
 Mixed reality applications often have a greater need for sounds than applications on a 2D screen, due to the lack of a physical interface. Sounds should be added when they inform the user or reinforce interactions.
 
 ### Inform and reinforce
-* For events not initiated by the user, such as asynchronous process completions and incoming messages, the field of view might not contain related visuals. Consider adding sounds to inform the user.
+* For events not initiated by the user, such as notifications, consider adding sounds to inform the user that a change occurred.
 * Interactions may have several stages. Consider using sounds to reinforce stage transitions.
 
 See below for examples of interactions, events, and suggested sound characteristics.
@@ -28,8 +28,8 @@ See below for examples of interactions, events, and suggested sound characterist
 ### Exercise restraint
 Users don't have an unlimited capacity for audio information:
 * Each sound should communicate a specific, valuable pieces of information
-* When playing sounds meant to inform the user, duck sounds meant to reinforce interactions
-* In augmented reality, avoid chasing the user with sound. The user should have the option to attend to the physical world without inadvertently triggering sounds from virtual objects.
+* When playing sounds meant to inform the user, temporarily reduce the volume of other sounds
+* For button hover sounds (see below), add a time delay to prevent excessive triggering of sounds
 
 ### Don't rely solely on sounds
 Sounds used well will be valuable when your users can hear them, but ensure your application is usable even with the sound off.
@@ -89,9 +89,9 @@ A sound should be spatialized when it's associated with an event that has a spat
 
 Spatializing **user interface** elements helps declutter the user's sonic "space" by limiting the number of stereo sounds locked to their heads. Especially in direct manipulation interactions, touching, grabbing, and releasing feels more natural when audio feedback is spatialized. However, see below regarding distance attenuation for these elements.
 
-Spatializing **visual indicators** intuitively informs users when they are outside the field of view.
+Spatializing **visual indicators** and **_embodied_ AI voices** intuitively informs users when they are outside the field of view.
 	
-For **faceless voice assistance**, and other elements without a well-defined spatial location, avoid spatialization. Spatialization without a related visual element can distract users into thinking there is a visual element that they can't find.
+In contrast, avoid spatialization for **_faceless_ AI voices**, and other elements without a well-defined spatial location. Spatialization without a related visual element can distract users into thinking there is a visual element that they can't find.
 
 Adding spatialization will come with some CPU cost. Many applications will have, at most, two sounds playing simultaneously. The cost of spatialization in that case can be negligible. You can use the MRTK frame rate monitor to judge the impact of adding spatialization. 
 
