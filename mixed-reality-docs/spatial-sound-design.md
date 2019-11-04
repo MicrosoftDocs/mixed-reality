@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, spatial sound, design, style
 ---
 
-# Using Audio in Mixed Reality Applications
+# Using Sound in Mixed Reality Applications
 
 Use sound to inform and reinforce the user's mental model of application state. Use spatialization, when appropriate, to place sounds into the mixed world. Connecting the auditory and the visual in this way deepens the intuitive nature of many interactions and leads to increased user confidence.
 
@@ -41,8 +41,8 @@ Use sound to inform and reinforce the user's mental model of application state. 
 Mixed reality applications often have a greater need for sounds than applications on a 2D screen, due to the lack of a physical interface. Sounds should be added when they inform the user or reinforce interactions.
 
 ### Inform and reinforce
-* Interactions often have several stages. Consider using sounds to reinforce stage transitions.
 * For events not initiated by the user, such as asynchronous process completions and incoming messages, the field of view might not contain related visuals. Consider adding sounds to inform the user.
+* Interactions may have several stages. Consider using sounds to reinforce stage transitions.
 
 See below for examples of interactions, events, and suggested sound characteristics.
 
@@ -58,19 +58,21 @@ Sounds used well will be valuable when your users can hear them, but ensure your
 * Your application may be used in a loud environment
 * Your users may have privacy or other reasons to disable the device audio
 
-## Which sounds should I consider adding?
-Sounds can reinforce user actions through gesture, direct manipulation, and voice, and inform the user of events and changing application state through notifications.
+## How should I sonify interactions?
+Interaction types in mixed reality include gesture, direct manipulation, and voice. Use the following suggested characteristics to select or design sounds for these interactions.
 
 ### Gesture interactions
-ButtonsFarfield button interactions need sounds to communicate when the user has hovered over the button and when it has been pushed. Because gesture interactions are less skeuomorphic than direct manipulation on HoloLens 2, detailed feedback on interaction progress is necessary to give the user confidence that the action was successful.
-* Button hover should have a low-frequency thud or bump that evokes the idea of the cursor hitting the button but not yet selecting it. The low frequency ensures that the sound is subtle and does not come across as harsh, as this sound will probably be heard several times, and likely even when the user does not mean to interact with that button.
-* Button presses should have a short, tactile sound like a click when the gesture has successfully been completed to communicate that the user can raise their finger to complete the interaction.
+In mixed reality, users can interact with buttons using a cursor. Button actions are generally performed when the user has released the button, rather than when it has been pressed, to allow the user a chance to cancel the interaction. Use sounds to reinforce these stages. Also, to assist users in targeting distant buttons, consider using a cursor hover sound.
+* Button press sounds should have a short, tactile click.
 		: MRTK example: MRTK_ButtonPress.wav
-* Button unpresses should have a similar tactile feel, with the pitch raised a little bit from the press sound that accompanies the user lifting their finger and the action being performed (button actions are generally performed only once the user has released the button rather than when it has been pushed down to allow them to cancel the interaction by moving off of the button before lifting their finger).
+* Button unpress sounds should have a similar tactile feel. Having a raised pitch versus the press sound reinforces the sense of completion.
 		: MRTK example: MRTK_ButtonUnpress.wav
+* For hover sounds, consider using a subtle and non-threatening sound such as a low-frequency thud or bump.
 
 
 ### Direct manipulation
+On HoloLens2, articulated hand tracking supports direct manipulation of user interface elements. 
+
 Buttons
 
 Nearfield button interactions need sounds to communicate when the button has been successfully pushed and released, as the actions that button performs may happen upon press or release depending on the application. We rely on sounds to replace tactile feedback so the user can have more confidence in their actions and be more aware of the application state. Some properties of a button may affect the user's expectation of the sound that should play, such as larger buttons generally having lower frequency sounds.
@@ -78,16 +80,23 @@ Nearfield button interactions need sounds to communicate when the button has bee
 		? MRTK example: MRTK_ButtonPress.wav
 * Button unpresses should have a similar tactile feel, with the pitch raised a little bit from the press sound.
 		? MRTK example: MRTK_ButtonUnpress.wav
-Grabbing objectsConfirming a grab or release is a difficult thing to communicate visually. The user's hand will often be in the way of any visual effect, and there's no skeuomorphic idea of what effect would communicate grabbing an object because no effect happens in the real world. Instead, users expect a sound that evokes the idea of grabbing an object.
+
+Grabbing objects
+
+Confirming a grab or release is a difficult thing to communicate visually. The user's hand will often be in the way of any visual effect, and there's no skeuomorphic idea of what effect would communicate grabbing an object because no effect happens in the real world. Instead, users expect a sound that evokes the idea of grabbing an object.
 * Grab actions should have a short, somewhat muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes this is accompanied by a "whoosh" sound leading up to the impact of the sound to communicate the motion of the hand when grabbing.
 		? MRTK example: MRTK_Move_Start.wav
 * Release actions should have a similarly short and tactile sound, usually pitched down from the grab sound and in a reverse order in time - an impact and then a "whoosh" to communicate the object settling into place.
 		? MRTK_Move_End.wav
+
 Drawing
 * Drawing should have a looping, persistent sound that has its volume controlled by the movement of the user's hand, with it being completely silent when the user's hand is still and at its maximum volume when the user's hand is moving quickly.
 
 ### Voice interactions
-Voice interactions generally have little to no visual element, leaving audio as the primary way that progress is communicated.Voice interaction sounds are generally more tonal than their hand interaction counterparts.
+Voice interactions generally have little to no visual element, leaving audio as the primary way that progress is communicated.
+
+Voice interaction sounds are generally more tonal than their hand interaction counterparts.
+
 * Wake words should have a short, gentle tone to inform the user that the device has started listening for available commands. If this is not accompanied by any visual cue, also consider a subtle looping sound while the application is waiting for a valid command. This not only reinforces the idea that the application is waiting for further input, but will immediately inform the user when it has stopped listening, whether or not a valid command has been given. This is useful for the case where you have to time out the voice interaction so accidental commands aren't registered later when the user is doing something else.
 * Voice command confirmations should play a positive-sounding tone to communicate that the interaction was successful and the application is performing the command. Rising tones and major musical intervals work best for this.
 * Voice command failure should be a shorter, less uplifting sound. Because negative sounds are usually avoided, a more percussive, neutral sound works to communicate that while the interaction was unsuccessful, the application is moving on, and the user can try using the command again if they wish.
@@ -98,7 +107,6 @@ Notifications communicate application state and communication updates like messa
 * Animated objects should usually be accompanied by a sound, varying greatly depending on the object and speed of motion. At minimum, it helps to play a spatialized sound at the end of the animation to inform the user of the new position. If the movement is gradual enough, a "whoosh" sound that plays for the duration of the movement will help the user keep track of it during the motion and easily find where it ends up.
 * Calls should have similar qualities to a cell phone ringtone. These are usually looping musical phrases that play until the user has answered the call.
 * Voice communication connection and disconnection should have a short, tonal sound. The connection sound should have a positive tone, indicating the successful connection, while the disconnection sound should be a neutral sound indicating completion of the call.
-
 
 ## Spatialization
 Audio spatialization uses stereo headphones or speakers to place sounds into the mixed world.
@@ -112,7 +120,7 @@ Generally, when a sound is associated with an event that has a spatial location,
 	
 * Faceless Voice Assistance - Consider using mono or stereo settings.  Spatialized voices in this case might cause distractions to the users which will then lead to a poor user experience.
 
-Adding spatialization will come with some CPU cost. You can use the MRTK frame rate monitor to judge the impact of adding spatialization. However, when getting started note that many applications will have, at most, two sounds playing simultaneously, and the cost of spatialization in that case can be negligible.
+Adding spatialization will come with some CPU cost. Many applications will have, at most, two sounds playing simultaneously. The cost of spatialization in that case can be negligible. You can use the MRTK frame rate monitor to judge the impact of adding spatialization. 
 
 ### When should I apply distance-based attenuation?
 In the physical world, sounds that are farther away are quieter. Your audio engine provides a tool to model this attenuation based on the distance from the source to the user. There are cases when you should apply distance attenuation, and others when you should not.
