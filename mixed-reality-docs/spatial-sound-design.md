@@ -1,5 +1,5 @@
 ---
-title: Using Audio in Mixed Reality Applications
+title: Using Sound in Mixed Reality Applications
 description: Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed reality applications.
 author: kegodin
 ms.author: kegodin
@@ -48,8 +48,8 @@ See below for examples of interactions, events, and suggested sound characterist
 
 ### Exercise restraint
 Users don't have an unlimited capacity for audio information:
-* Limit sounds to communicating specific, valuable pieces of information.
-* When playing informative sounds, duck reinforcing sounds.
+* Each sound should communicate a specific, valuable pieces of information
+* When playing sounds meant to inform the user, duck sounds meant to reinforce interactions
 * In augmented reality, avoid chasing the user with sound. The user should have the option to attend to the physical world without inadvertently triggering sounds from virtual objects.
 
 ### Don't rely solely on sounds
@@ -63,27 +63,24 @@ Interaction types in mixed reality include gesture, direct manipulation, and voi
 
 ### Gesture interactions
 In mixed reality, users can interact with buttons using a cursor. Button actions are generally performed when the user has released the button, rather than when it has been pressed, to allow the user a chance to cancel the interaction. Use sounds to reinforce these stages. Also, to assist users in targeting distant buttons, consider using a cursor hover sound.
-* Button press sounds should have a short, tactile click.
-		: MRTK example: MRTK_ButtonPress.wav
-* Button unpress sounds should have a similar tactile feel. Having a raised pitch versus the press sound reinforces the sense of completion.
-		: MRTK example: MRTK_ButtonUnpress.wav
+* Button press sounds should have a short, tactile click. Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* Button unpress sounds should have a similar tactile feel. Having a raised pitch versus the press sound reinforces the sense of completion. Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 * For hover sounds, consider using a subtle and non-threatening sound such as a low-frequency thud or bump.
 
 
 ### Direct manipulation
-On HoloLens2, articulated hand tracking supports direct manipulation of user interface elements. Sounds are important replacements for the lack of physical feedback.
+On HoloLens 2, articulated hand tracking supports direct manipulation of user interface elements. Sounds are important replacements for the lack of physical feedback.
+
+A **button press** sound is important in direct manipulation because the user lacks physical indication of when they've reached the bottom of the key travel. Visual indicators of key travel can be small, subtle, and occluded. As with gesture interactions, button presses should have a short, tactile sound like a click, and unpresses should have a similar click with raised pitch.
+* Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress)
 
 Confirming a **grab** or **release** in direct manipulation is difficult to communicate visually. The user's hand will often be in the way of any visual effect, and hard-bodied objects lack a real-world visual analogue of "grabbing". In contrast, sounds can effectively communicate successful grab and release interactions.
-* Grab actions should have a short, somewhat muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes this is accompanied by a "whoosh" sound leading up to the impact of the sound to communicate the motion of the hand when grabbing.
-		? MRTK example: MRTK_Move_Start.wav
-* Release actions should have a similarly short and tactile sound, usually pitched down from the grab sound and in a reverse order in time, having an impact and then a "whoosh" to communicate the object settling into place.
-		? MRTK_Move_End.wav
+* Grab actions should have a short, somewhat muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes this is accompanied by a "whoosh" sound leading up to the impact of the sound to communicate the motion of the hand when grabbing. Example: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
+* Release actions should have a similarly short and tactile sound, usually pitched down from the grab sound and in a reverse order in time, having an impact and then a "whoosh" to communicate the object settling into place.	Example: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Move_End.wav)
 
 A **drawing** interaction should have a looping, persistent sound that has its volume controlled by the movement of the user's hand, with it being completely silent when the user's hand is still, and at its maximum volume when the user's hand is moving quickly.
 
-A **button press** sound is important in direct manipulation because the user lacks physical indication of when they've reached the bottom of the key travel. Visual indicators of key travel can be small, subtle, and occluded. As with gesture interactions, button presses should have a short, tactile sound like a click, and unpresses should have a similar click with raised pitch.
-* MRTK example: MRTK_ButtonPress.wav
-* MRTK example: MRTK_ButtonUnpress.wav
 
 
 ### Voice interactions
@@ -111,7 +108,7 @@ Spatialization uses stereo headphones or speakers to place sounds into the mixed
 ### Which sounds should I spatialize?
 A sound should be spatialized when it's associated with an event that has a spatial location. This includes UI, embodied AI voices, and visual indicators.
 
-Spatializing **user interface** elements helps declutter user's sonic "space" by limiting the number of stereo sounds locked to their heads. Especially in direct manipulation interactions, touching, grabbing, and releasing feels more natural when audio feedback is spatialized.
+Spatializing **user interface** elements helps declutter the user's sonic "space" by limiting the number of stereo sounds locked to their heads. Especially in direct manipulation interactions, touching, grabbing, and releasing feels more natural when audio feedback is spatialized. However, see below regarding distance attenuation for these elements.
 
 Spatializing **visual indicators** intuitively informs users when they are outside the field of view.
 	
@@ -128,7 +125,7 @@ The distances to **visual indicators**, **animated holograms**, and other inform
 Sounds that reinforce the **progressive stages of buttons** and other interactions shouldn't have attenuation applied. The reinforcing effects of these sounds are generally more important than communicating the distance to the button. Variations can be distracting, especially with keyboards, where many button clicks will be heard in succession.
 
 ### Which spatialization technology should I use?
-Use HRTF (head-related transfer function)-based spatialization technologies. They model the sound propagation around the head in the physical world. Even when a sound source is far on one side of the head, sound propagates to the distant ear with some attenuation and delay. Speaker panning, in contrast, relies only on attenuation, and applies total attenuation in the left ear when sounds are on the right side (and vice-versa). This can be uncomfortable for normal-hearing listeners, and be inaccessible for listeners with hearing impairment in one ear.
+When using headphones or the HoloLens speakers, use HRTF (head-related transfer function)-based spatialization technologies. They model the sound propagation around the head in the physical world. Even when a sound source is far on one side of the head, sound propagates to the distant ear with some attenuation and delay. Speaker panning, in contrast, relies only on attenuation, and applies total attenuation in the left ear when sounds are on the right side (and vice-versa). This can be uncomfortable for normal-hearing listeners, and inaccessible for listeners with hearing impairment in one ear.
 
 ## Next steps
 * [Use spatial sound in Unity](spatial-sound-in-unity.md)

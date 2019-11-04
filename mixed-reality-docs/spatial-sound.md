@@ -64,7 +64,7 @@ HoloTour virtually takes users to tourist and historical sites around the world.
 RoboRaid is a high-energy shooter for HoloLens. The following case study describes the design choices made to ensure spatial audio was used to fullest dramatic effect: [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md).
 
 ## Spatialization
-Spatialization adds a sense of direction to spatial audio. When using a 7.1 home theater setup, spatialization is as simple as panning between loud speakers. But with headphones in mixed reality it's essential to use an HRTF-based technology, for accuracy and comfort. Windows offers HRTF-based spatialization, and this support is hardware-accelerated on HoloLens2.
+Spatialization is the directional component of spatial audio. When using a 7.1 home theater setup, spatialization is as simple as panning between loud speakers. But with headphones in mixed reality it's essential to use an HRTF-based technology, for accuracy and comfort. Windows offers HRTF-based spatialization, and this support is hardware-accelerated on HoloLens2.
 
 <br>
 
@@ -89,5 +89,5 @@ Support for Windows' HRTFs is available for some 3rd-party audio engines:
 ## Acoustics
 Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. Without acoustics, spatialized sounds lack a perceived distance.
 
-Acoustics treatment can range from simple to very complex. By using a simple reverb, such as that supported by any audio engine, you can push spatialized sounds out into the environment surrounding the listener. Richer and more compelling acoustics treatment is available from acoustics systems such as [Project Acoustics](http://aka.ms/acoustics). Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound, and is an effective option for cases where the relevant scene geometry is known at development time.
+Acoustics treatment can range from simple to very complex. By using a simple reverb, such as that supported by any audio engine, you can push spatialized sounds out into the environment surrounding the listener. Richer and more compelling acoustics treatment is available from acoustics systems such as [Project Acoustics](https://aka.ms/acoustics). Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound, and is an effective option for cases where the relevant scene geometry is known at development time.
 

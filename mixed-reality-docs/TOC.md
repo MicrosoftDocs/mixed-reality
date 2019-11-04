@@ -193,7 +193,6 @@
 #### [Head and eye gaze](gaze-in-directx.md)
 #### [Hands and motion controllers](hands-and-motion-controllers-in-directx.md)
 #### [Voice input](voice-input-in-directx.md)
-#### [Spatial sound](spatial-sound-in-directx.md)
 #### [Spatial mapping](spatial-mapping-in-directx.md)
 #### [Scene understanding](scene-understanding-sdk.md)
 #### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
