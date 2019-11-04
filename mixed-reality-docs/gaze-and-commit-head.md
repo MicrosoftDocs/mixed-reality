@@ -79,7 +79,7 @@ When determining which nearby interactive elements to give focus to, focus stick
 
 
 ## See also
-* [Eye-based interaction] (eye-gaze-interaction.md)
+* [Eye-based interaction](eye-gaze-interaction.md)
 * [Gaze and dwell](gaze-and-dwell.md)
 * [Hands - Direct manipulation](direct-manipulation.md)
 * [Hands - Gestures](gaze-and-commit.md#composite-gestures)
