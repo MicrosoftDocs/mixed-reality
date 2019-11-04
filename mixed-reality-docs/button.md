@@ -12,7 +12,30 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 ![Button](images/UX/UX_Hero_Button.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+A button gives the user a way to trigger an immediate action. It is one of the most foundational components in mixed reality. In HoloLens 2, button has many visual cues and affordances to increase the user's confidence on interaction. 
+
+
+:::row:::
+    :::column:::
+       ![Move](images/UX/UX_Button_Affordance_ProximityLight.jpg)<br>
+       **Proximity light**<br>
+    :::column-end:::
+    :::column:::
+       ![Rotate](images/UX/UX_Button_Affordance_FocusHighlight.jpg)<br>
+        **Focus highlight**<br>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       ![Move](images/UX/UX_Button_Affordance_Compression.jpg)<br>
+       **Compressing cage**<br>
+    :::column-end:::
+    :::column:::
+       ![Rotate](images/UX/UX_Button_Affordance_Pulse.jpg)<br>
+        **Pulse on trigger**<br>
+    :::column-end:::
+:::row-end:::
 
 <br>
 
