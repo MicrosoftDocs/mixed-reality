@@ -12,6 +12,8 @@ keywords: ggv, voice, cortana, speech, input
 
 # Voice input
 
+![Voice input](images/UX/UX_Hero_VoiceCommand.jpg)
+
 Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use [gestures](gaze-and-commit.md#composite-gestures). Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces because it lets users cut through nested menus with one command.
 
 Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other Universal Windows Apps. On HoloLens, speech recognition will always function in the Windows display language configured in Settings. 

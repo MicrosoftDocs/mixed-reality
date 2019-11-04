@@ -10,6 +10,9 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, 
 ---
 
 # Direct manipulation with hands
+
+![Button](images/UX/UX_Hero_Manipulation.jpg)
+
 Direct manipulation is an input model that involves touching holograms directly with your hands. The idea behind this concept is that objects behave just as they would in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen. This makes direct manipulation easy for users to learn, and fun. It's considered a "near" input model in that it's best used for interacting with content within arms reach.
 
 Direct manipulation is affordance-based, meaning it's user friendly. There are no symbolic gestures to teach users. All interactions are built around a visual element that you can touch or grab.
