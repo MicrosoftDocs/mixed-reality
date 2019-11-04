@@ -18,6 +18,34 @@ In Windows Mixed Reality, eye and head gaze input is used to determine what the 
 
 Both head and eye-gaze rays are accessible through the  [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API. Simply call [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to receive a new SpatialPointerPose object at the specified timestamp and [coordinate system](coordinate-systems-in-directx.md). This SpatialPointerPose contains a head-gaze origin and direction. It also contains an eye-gaze origin and direction if eye tracking is available.
 
+### Device support
+<table>
+<colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+</colgroup>
+<tr>
+     <td><strong>Feature</strong></td>
+     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+</tr>
+<tr>
+     <td>Head-gaze</td>
+     <td>✔️</td>
+     <td>✔️</td>
+     <td>✔️</td>
+</tr>
+<tr>
+     <td>Eye-gaze</td>
+     <td>❌</td>
+     <td>✔️</td>
+     <td>❌</td>
+</tr>
+</table>
+
 ## Using head-gaze
 
 To access the head-gaze, start by calling  [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to receive a new SpatialPointerPose object. You need to pass the following parameters.
@@ -147,6 +175,16 @@ This is less of an issue for a simple Air Tap, but becomes more critical when co
 One way to handle this scenario is to make an additional call to  [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), using a historical timestamp that corresponds to the input event.  
 
 However, for input that routes through the SpatialInteractionManager, there's an easier method. The [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) has its very own [TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) function. Calling that will provide a perfectly correlated [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) without the guesswork. For more information on working with SpatialInteractionSourceStates, take a look at the [Hands and Motion Controllers in DirectX](hands-and-motion-controllers-in-directx.md) documentation.
+
+
+## Calibration
+For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md). This allows the device to adjust the system for a more comfortable and quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
+Developers don’t need to do anything on their end to manage user calibration. The system will ensure the user gets prompted to calibrate the device under the following circumstances:
+*The user is using the device for the first time
+*The user previously opted out of the calibration process
+*The calibration process did not succeed the last time the user used the device
+
+Developers should make sure to provide adequate support for users for whom eye tracking data may not be available. For design recommendation for the fallback solution see [Eye tracking on Hololens 2](eye-tracking.md).
 
 ## See also
 * [Head-gaze and commit input model](gaze-and-commit.md)
