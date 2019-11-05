@@ -1,6 +1,6 @@
 ---
 title: Eye tracking
-description: HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what user is looking at. 
+description: HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what the user is looking at. 
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
@@ -11,7 +11,7 @@ keywords: Eye tracking, mixed reality, input, eye-gaze, calibration
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what user is looking at. 
+HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what the user is looking at. 
 This page provides an overview of this new capability to developers and designers on how they can benefit from eye tracking for various use cases and basic developer guidance. 
 
 ### Device support
@@ -36,19 +36,6 @@ This page provides an overview of this new capability to developers and designer
 </tr>
 </table>
 
-## Available eye tracking data
-Before going into detail about specific use cases for eye-gaze input, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) provides. 
-Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (30 Hz)_.
-For more detailed information about how to access eye tracking data, please refer to our developer guides on using [eye-gaze in DirectX](gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
-
-The predicted eye-gaze is approximately within 1.5 degrees in visual angle around the actual target (see the illustration below). 
-As slight imprecisions are expected, developers should plan for some margin around this lower bound value (e.g., 2.0-3.0 degrees may result in a much more comfortable experience). 
-We will discuss how to address the selection of small targets in more detail below. 
-For eye tracking to work accurately, each user is required to go through an eye tracking user calibration. 
-
-![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
-*Optimal target size at a 2-meter distance*
-
 <br>
 
 ## Calibration 
@@ -65,6 +52,23 @@ Eye tracking should work for most users, but there are rare cases in which a use
 Developers should make sure to provide adequate support for users for whom eye tracking data may not be available (who are not able to calibrate successfully). We have provided recommendations for fallback solutions in the section at the bottom of this page. 
 
 To learn more about the calibration and about how to ensure a smooth experience, please check our [eye tracking user calibration](calibration.md) page.
+
+<br>
+
+## Available eye tracking data
+Before going into detail about specific use cases for eye-gaze input, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) provides. 
+Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (30 Hz)_.
+For more detailed information about how to access eye tracking data, please refer to our developer guides on using [eye-gaze in DirectX](gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
+
+The predicted eye-gaze is approximately within 1.5 degrees in visual angle around the actual target (see the illustration below). 
+As slight imprecisions are expected, developers should plan for some margin around this lower bound value (e.g., 2.0-3.0 degrees may result in a much more comfortable experience). 
+We will discuss how to address the selection of small targets in more detail below. 
+For eye tracking to work accurately, each user is required to go through an eye tracking user calibration. 
+
+![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
+*Optimal target size at a 2-meter distance*
+
+<br>
 
 ## Use cases
 Eye tracking enables applications to track where the user is looking in real time. 
@@ -126,14 +130,31 @@ Beware of not overwhelming the user though - to find out more, check out our [ey
 
 ## Using eye-gaze for interaction
 Building an interaction that takes advantage of fast-moving eye targeting can be challenging.
-On the one hand, the eyes move so fast that you need to be careful on how to use eye-gaze input, because otherwise user may find the experience overwhelming or distracting. 
+On the one hand, the eyes move so fast that you need to be careful on how to use eye-gaze input, because otherwise users may find the experience overwhelming or distracting. 
 On the other hand, you can also create truly magical experiences that will excite your users! 
 To help you, check out our overview of key advantages, challenges and design recommendations for [eye-gaze for interaction](eye-gaze-interaction.md). 
 
 <br>
  
 ## Fallback solutions when eye tracking is not available
-In rare cases eye tracking data might not be avalable since the user failed to successfully calibrate. Developers should ensure there is appropriate fallaback support for these users. 
+In rare cases eye tracking data might not be available.
+This can be due to different reasons from which the most common are listed below:
+* The system failed to [calibrate the user](calibration.md).
+* The user skipped the [calibration](calibration.md).	
+* The user is calibrated, but decided to not give permission to your app to use their eye tracking data.	
+* The user has unique eyeglasses or some eye condition that the system does not yet support.	
+* External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight and occlusions due to hair in front of the eyes.	
+Hence, developers should ensure that there is appropriate fallback support for these users. 
+On the [Eye Tracking in DirectX](gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) page, we explain the APIs required to detect whether eye tracking data is available. 
+
+As described above, there are several reasons why eye tracking data may not be available. 	
+While some users may have consciously decided to revoke access to their eye tracking data and are ok with the trade-off of an inferior user experience to the privacy of not providing access to their eye tracking data, in some cases this may be unintentional. 	
+Hence, if your app uses eye tracking, and this is an important part of the experience, we recommend clearly communicating this to the user. 	
+Kindly informing the user why eye tracking is critical for your application (maybe even listing some enhanced features) to experience the full potential of your application can help the user to better understand what they are giving up. 	
+Help the user to identify why eye tracking may not be working (based on the above checks) and offer some suggestions to quickly troubleshoot potential issues. 	
+For example, if you can detect that the system supports eye tracking, the user is calibrated and even has given their permission, yet no eye tracking data is received, then this may point to some other issues such as smudges or the eyes being occluded. 	
+Please note though that there are rare cases of users for whom eye tracking may simply not work. 	
+Hence, please be respectful of that by allowing to dismiss or even disable reminders for enabling eye tracking in your app.
 
 ### Fallback for apps using eye-gaze as a primary input pointer
 If your app uses eye-gaze as a pointer input to quickly select holograms across the scene, yet eye tracking data is unavailable, we recommend falling back to head-gaze and start showing the head-gaze cursor. 
