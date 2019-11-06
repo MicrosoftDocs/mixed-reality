@@ -81,7 +81,7 @@ There is also the option to capture objects in 3D. Capturing inanimate objects i
 
 ### Purchasing assets
 
-Another excellent option is to purchase assets for your experience. There are a ton of assets available through services such as the [Unity Asset Store](https://www.assetstore.unity3d.com/) or [TurboSquid](http://www.turbosquid.com/) among others.
+Another excellent option is to purchase assets for your experience. There are a ton of assets available through services such as the [Unity Asset Store](https://www.assetstore.unity3d.com/) or [TurboSquid](https://www.turbosquid.com/) among others.
 
 When you purchase assets from a 3rd party you always want to check the following:
 * **What's the poly count?**
@@ -89,7 +89,7 @@ When you purchase assets from a 3rd party you always want to check the following
 * **Are there levels of detail (LODs) for the model?**
   * Level of detail of a model allow you to scale the detail of a model for performance.
 * **Is the source file available?**
-  * Usually not included with [Unity Asset Store](https://www.assetstore.unity3d.com/) but always included with services like [TurboSquid](http://www.turbosquid.com/).
+  * Usually not included with [Unity Asset Store](https://www.assetstore.unity3d.com/) but always included with services like [TurboSquid](https://www.turbosquid.com/).
   * Without the source file you won't be able to modify the asset.
   * Make sure the source file provided can be imported by your 3D tools.
 * **Know what you're getting**

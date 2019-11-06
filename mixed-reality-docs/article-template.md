@@ -138,7 +138,6 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
     :::column-end:::
 :::row-end:::
 
-
 ### Subsection name
 
 Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism. Divisionism international gothic baroque situationist international lettrism vorticism gothic art.<br>

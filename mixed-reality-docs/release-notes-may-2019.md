@@ -35,7 +35,7 @@ To launch a Win32 application in Windows Mixed Reality, bring up the Pins Panel 
 ![Win32 Pin_Panel](images/mr-win32-slates-pinspanel.png)
 
 #### Please help us improve!
-We continually look to improve compatibility.  If you find your favorite classic Win32 application not behaving correctly while in Windows Mixed Reality, please submit feedback via our [Feedback Hub](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
+We continually look to improve compatibility.  If you find your favorite classic Win32 application not behaving correctly while in Windows Mixed Reality, please submit feedback via our [Feedback Hub](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
 ## HoloLens (1st gen) Long Term Servicing
 
