@@ -84,10 +84,10 @@ There are three kinds of OpenXR extensions:
 By the end of the year, the Windows Mixed Reality OpenXR Runtime will support a set of MSFT and EXT extensions that bring the full set of HoloLens 2 features to OpenXR applications:
 * [Unbounded reference space (world-scale experiences)](coordinate-systems.md#building-a-world-scale-experience)
 * [Spatial anchors + storage](spatial-anchors.md)
-* [Hand articulation + hand mesh​](hands-and-tools.md)
+* [Hand articulation + hand mesh](hands-and-tools.md)
 * [Eye gaze](eye-tracking.md)
-* [Secondary view configurations (Mixed Reality Capture)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)​
-* [Spatial mapping​](spatial-mapping.md)
+* [Secondary view configurations (Mixed Reality Capture)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)
+* [Scene understanding](scene-understanding.md)
 * Interop with Windows SDK APIs
 
 While some of these extensions may start out as vendor-specific MSFT extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor EXT or KHR extensions for many of these feature areas.  This will enable the code you write for those features to be portable across runtime vendors, just as with the core specification.
