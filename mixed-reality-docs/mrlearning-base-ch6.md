@@ -28,7 +28,8 @@ In this section, we introduce the various components needed to create our sample
 
 1. Add the Lunar Module Assembly prefab to your base scene. To do this, in the Project tab navigate to Assets > BaseModuleAssets > Prefabs. You will see two rocket launcher prefabs, drag the Rocket Launcher_Tutorial prefab into your scene, and position as you wish.
 
-    >[!NOTE] The Rocket Launcher_Complete prefab is the completed launcher, provided for reference.
+    >[!NOTE]
+    >The Rocket Launcher_Complete prefab is the completed launcher, provided for reference.
 
     ![Lesson6 Chapter1 Step1im](images/Lesson6_Chapter1_step1im.PNG)
 
@@ -46,7 +47,8 @@ In this section, we introduce the various components needed to create our sample
 
     ![Lesson6 Chapter1 Notebim](images/Lesson6_Chapter1_notebim.PNG)
 
-    >[!NOTE] The game object names that you see in your base scene hierarchy do not correspond to the names of the objects in the scene.
+    >[!NOTE]
+    >The game object names that you see in your base scene hierarchy do not correspond to the names of the objects in the scene.
 
 2. Add an audio source to the LunarModule game object. Make sure the LunarModule is selected in your scene hierarchy and click Add Component. Search for Audio Source and add it to the game object. Leave the AudioClip field blank for now, but change the Special Blend setting from 0 to 1 so to enable spatial audio. You will use this audio source to play the launching sound later.
 
@@ -127,7 +129,8 @@ There will be situations where the user makes a mistake, accidently throws the o
 
     ![Lesson6 Chapter4 Step3im](images/Lesson6_Chapter4_step3im.PNG)
 
-    >[!NOTE] Notice that by default, the GameObject.BroadcastMessage is configured to ResetPlacement. This broadcasts a message named ResetPlacement for every child object of the RocketLauncher_Tutorial. Any object that has a method for ResetPlacement() responds to that message by resetting it's position.
+    >[!NOTE]
+    >Notice that by default, the GameObject.BroadcastMessage is configured to ResetPlacement. This broadcasts a message named ResetPlacement for every child object of the RocketLauncher_Tutorial. Any object that has a method for ResetPlacement() responds to that message by resetting it's position.
 
 ### Configuring the Launch button
 

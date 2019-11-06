@@ -179,7 +179,8 @@ In this section, we will explore how to enable eye tracking in our demo. We will
 
 1. Ensure the MRTK profiles are properly configured for eye tracking. To do this, go to the [Getting started with eye tracking in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html) instructions and verify that eye tracking is properly configured by reviewing the steps in the [Setting up eye tracking step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-eye-tracking-step-by-step) section. Complete any remaining steps in the documentation.
 
-    >[!NOTE] If you used the DefaultHoloLens2InputSystemProfile, as instructed in the [Configure the Mixed Reality Toolkit](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1#configure-the-mixed-reality-toolkit) lesson, to clone your custom MRTK configuration profile, eye tracking is enabled by default in the Unity project but you will still have to set up eye tracking simulation for the Unity editor and configure Visual Studio to allow eye tracking for the build.
+    >[!NOTE]
+    >If you used the DefaultHoloLens2InputSystemProfile, as instructed in the [Configure the Mixed Reality Toolkit](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#configure-the-mixed-reality-toolkit) lesson, to clone your custom MRTK configuration profile, eye tracking is enabled by default in the Unity project but you will still have to set up eye tracking simulation for the Unity editor and configure Visual Studio to allow eye tracking for the build.
 
     The link above provides brief instructions for:
 
@@ -190,7 +191,8 @@ In this section, we will explore how to enable eye tracking in our demo. We will
 
 2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we'll need to add the EyeTrackingTarget component on each object that we want to interact with by using eye gaze. Add this component to each of the nine 3D objects that are part of the grid collection.
 
-    >[!TIP] You can use the shift and/or crtl keys to select multiple items in the scene hierarchy and then bulk-add the EyeTrackingTarget component.
+    >[!TIP]
+    >You can use the shift and/or crtl keys to select multiple items in the scene hierarchy and then bulk-add the EyeTrackingTarget component.
 
     ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
 
