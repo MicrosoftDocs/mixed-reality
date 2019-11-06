@@ -200,9 +200,9 @@ For eye tracking to work accurately, each user is required to go through an [eye
 This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
 Developers don’t need to do anything on their end to manage user calibration. 
 The system will ensure that the user gets prompted to calibrate the device under the following circumstances:
-*The user is using the device for the first time
-*The user previously opted out of the calibration process
-*The calibration process did not succeed the last time the user used the device
+* The user is using the device for the first time
+* The user previously opted out of the calibration process
+* The calibration process did not succeed the last time the user used the device
 
 Developers should make sure to provide adequate support for users for whom eye tracking data may not be available. 
 Learn more about considerations for fallback solutions at [Eye tracking on Hololens 2](eye-tracking.md).
