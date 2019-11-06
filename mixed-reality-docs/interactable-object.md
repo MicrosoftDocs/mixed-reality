@@ -258,9 +258,9 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 ---
 
 
-## Creating interactable object with Mixed Reality Toolkit (MRTK)
+## Interactable object in MRTK(Mixed Reality Toolkit) for Unit
 
-In the **[Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can find the series of Unity scripts and prefabs that will help you create interactable objects. You can use these to make objects respond to various types of input interaction states.
+In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script **Interactable** to make objects respond to various types of input interaction states. It supports various types of themes that allows you define visual states by controlling object properties such as color, size, material, and shader.
 
 * [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 * [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
