@@ -39,6 +39,7 @@
 ### [Room scan visualization](room-scan-visualization.md)
 ### [Scene understanding](scene-understanding.md)
 ### [Spatial anchors](spatial-anchors.md)
+### [Sound](spatial-sound.md)
 ### [Spatial mapping](spatial-mapping.md)
 ### [System gesture](system-gesture.md)
 ### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
@@ -65,7 +66,6 @@
 ### Style
 #### [Color, light and materials](color,-light-and-materials.md)
 #### [Scale](scale.md)
-#### [Spatial sound](spatial-sound.md)
 #### [Spatial sound design](spatial-sound-design.md)
 #### [Typography](typography.md)
 ### Controls and behaviors
@@ -193,7 +193,6 @@
 #### [Head and eye gaze](gaze-in-directx.md)
 #### [Hands and motion controllers](hands-and-motion-controllers-in-directx.md)
 #### [Voice input](voice-input-in-directx.md)
-#### [Spatial sound](spatial-sound-in-directx.md)
 #### [Spatial mapping](spatial-mapping-in-directx.md)
 #### [Scene understanding](scene-understanding-sdk.md)
 #### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)

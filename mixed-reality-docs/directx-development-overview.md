@@ -46,7 +46,7 @@ To enable the best possible experience for users of your immersive appslication,
 * [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](voice-input-in-directx.md)
-* [Spatial sound in DirectX](spatial-sound-in-directx.md)
+* [Spatial sound](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound)
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
 
 
