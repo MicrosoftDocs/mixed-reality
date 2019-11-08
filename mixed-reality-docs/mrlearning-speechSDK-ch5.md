@@ -19,7 +19,7 @@ In this lesson, we will be using Azure Speech Service's Intent feature to unders
 
 ## Instructions
 
-1. In this tutorial, we will be using a "BaseModule" asset to integrate rocket launcher with the speech commands. For that, we need to import the asset into our project. You can download the "Rocket Launcher" asset using this [link](https://github.com/microsoft/MixedRealityLearning/releases/tag/1.2).
+1. In this tutorial, we will be using a "BaseModule" asset to integrate rocket launcher with the speech commands. For that, we need to import the asset into our project. You can download the "Rocket Launcher" asset using this [link](https://github.com/Developer-OI/MixedRealityLearning/releases/download/1.2.1/BaseModuleAssets-1.2.1.unitypackage).
 
 2. To import the asset, please go to assets->Import package->Custom package-> navigate to the downloaded file and click import.
 
