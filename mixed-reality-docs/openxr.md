@@ -154,17 +154,17 @@ Rather than submitting quad layers as composition layers with `XrCompositionLaye
 ## OpenXR app performance on HoloLens 2
 
 On HoloLens 2, there are a number of ways to submit composition data through `xrEndFrame` which will result in post-processing that will have a noticeable performance penalty.
-To avoid performance penalities, [submit a single `XrCompositionProjectionLayer`](#Use-a-single-projection-layer) with the following characteristics:
-* [Use a texture array swapchain](#Render-with-texture-array-and-VPRT)
-* [Use the primary color swapchain format](#Select-a-pixel-format)
-* [Set the texture-source-alpha blending flag](#Support-mixed-reality-capture)
-* [Use the recommended view dimensions](#Render-with-recommended-rendering-parameters-and-frame-timing)
+To avoid performance penalities, [submit a single `XrCompositionProjectionLayer`](#use-a-single-projection-layer) with the following characteristics:
+* [Use a texture array swapchain](#render-with-texture-array-and-vprt)
+* [Use the primary color swapchain format](#select-a-pixel-format)
+* [Set the texture-source-alpha blending flag](#support-mixed-reality-capture)
+* [Use the recommended view dimensions](#render-with-recommended-rendering-parameters-and-frame-timing)
 * Do not set the `XR_COMPOSITION_LAYER_UNPREMULTIPLIED_ALPHA_BIT` flag
 * Set the `XrCompositionLayerDepthInfoKHR` `minDepth` to 0.0f and `maxDepth` to 1.0f
 
 Additional considerations will result in better performance:
-* [Use the 16-bit depth format](#Choose-a-reasonable-depth-range)
-* [Make instanced draw calls](#Render-with-texture-array-and-VPRT)
+* [Use the 16-bit depth format](#choose-a-reasonable-depth-range)
+* [Make instanced draw calls](#render-with-texture-array-and-vprt)
 
 ## Roadmap
 
