@@ -125,9 +125,6 @@ In this section, you will learn how to use the pan gesture. This is useful for s
     >[!NOTE]
     >The Pan Content material is not included in the MRTK, but an asset in this module's asset package as imported in previous lessons.
 
-    >[!NOTE]
-    >When you add the pan content, it may look stretched. You can fix this by adjusting the values x, y and z values of the size of the quad until you are satisfied with the way it looks.
-
     To use the pan gesture, you will need a collider on your object. You may see the quad already has a mesh collider. However, the mesh collider is not ideal, because it is extremely thin and difficult to select. We suggest replacing the mesh collider with a box collider.
 
 5. Right-click the mesh collider that’s on the quad from the Inspector panel. Then remove it by clicking Remove Component.
