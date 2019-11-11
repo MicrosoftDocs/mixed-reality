@@ -161,7 +161,7 @@ Leverage [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc)
 
 ## Presenter-Spectator applications and Demos
 
-Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) to bring [specator view functionality](spectator-view.md) into your app.  Enable other devices (HL, Android, iOS, and video cameras) to see what the HoloLens sees from a different perspective in the same location, and receive updates on interactions of the host HoloLens user interacting with the holograms.  Watch, take pictures, and record video of what the host does with the holograms in the application from your own spatial perspective with the spectator companion of the same app.
+Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) to bring [spectator view functionality](spectator-view.md) into your app.  Enable other devices (HL, Android, iOS, and video cameras) to see what the HoloLens sees from a different perspective in the same location, and receive updates on interactions of the host HoloLens user interacting with the holograms.  Watch, take pictures, and record video of what the host does with the holograms in the application from your own spatial perspective with the spectator companion of the same app.
 
 **Note:** Pictures are taken via screenshot on iOS/Android devices.
 

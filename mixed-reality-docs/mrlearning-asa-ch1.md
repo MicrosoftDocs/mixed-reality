@@ -101,7 +101,7 @@ Note: If you want to check the debug logs in the HoloLens. You can drag and drop
 
 - For the Button named, CreateAnchor, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the CreateAzureAnchor() method from the ParentAnchor object's ASAmoduleScript component.  **After this, drag the ParentAnchor again into the next empty "Game Object" field.**
 
-- For the Button named, Start Looking For Anchor, create a new event under the Button Presse" event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the FindAzureAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
+- For the Button named, Start Looking For Anchor, create a new event under the Button Press" event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the FindAzureAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
 
 - For the Button named, DeleteAzureAnchor, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the DeleteAzureAnchor() method from the ParentAnchor object's ASAmoduleScript component.  
 

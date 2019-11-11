@@ -726,7 +726,7 @@ To create this class:
 
             Debug.LogFormat("Score request built");
 
-            // Serialise the request
+            // Serialize the request
             string json = JsonConvert.SerializeObject(ro);
 
             using (UnityWebRequest www = UnityWebRequest.Post(serviceEndpoint, "POST"))

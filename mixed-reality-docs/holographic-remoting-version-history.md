@@ -16,7 +16,7 @@ keywords: HoloLens, Remoting, Holographic Remoting
 ## Version 2.0.14 (October 26, 2019) <a name="v2.0.14"></a>
 * Support for new PerceptionDevice APIs (Windows 10 November 2019 Update).
 * Fixed issue which prevent hold gesture events being triggered by SpatialGestureRecognizer.
-* Fixed theading issue when using SpatialSurfaceObserver.SetBoundingVolume.
+* Fixed threading issue when using SpatialSurfaceObserver.SetBoundingVolume.
 
 ## Version 2.0.12 (October 18, 2019) <a name="v2.0.12"></a>
 * Fixed crash in SpatialGestureRecognizer when using NavigationRail(X/Y/Z).

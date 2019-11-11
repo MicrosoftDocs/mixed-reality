@@ -272,7 +272,7 @@ private void AttachElementToController(MotionControllerInfo newController)
 }
 ```
 
-The simplest way to use **AttachToController** script is to inherit from it, as we've done in the case of **ColorPickerWheel.** Simply override the **OnAttachToController** and **OnDetatchFromController** functions to perform your setup / breakdown when the controller is detected / disconnected.
+The simplest way to use **AttachToController** script is to inherit from it, as we've done in the case of **ColorPickerWheel.** Simply override the **OnAttachToController** and **OnDetachFromController** functions to perform your setup / breakdown when the controller is detected / disconnected.
 
 **Instructions**
 
@@ -289,7 +289,7 @@ Since **ColorPickerWheel** inherits **AttachToController**, it shows **Handednes
 
 ![ColorPickerWheel script](images/mr213-attachtocontroller-300px.jpg)
 
-**ColorPickerWheel** overrides the **OnAttachToController** and **OnDetatchFromController** to subscribe to the input event which will be used in next chapter for color selection with touchpad input.
+**ColorPickerWheel** overrides the **OnAttachToController** and **OnDetachFromController** to subscribe to the input event which will be used in next chapter for color selection with touchpad input.
 
 ```cs
 public class ColorPickerWheel : AttachToController, IPointerTarget
@@ -341,7 +341,7 @@ private IEnumerator Start() {
 ### Instructions
 
 * In the **Hierarchy** panel, click **ColorPickerWheel**
-* In the **Inspector** panel, under **Animatior**, double click **ColorPickerWheelController**
+* In the **Inspector** panel, under **Animator**, double click **ColorPickerWheelController**
 * You will be able to see **Animator** tab opened
 
 **Showing/hiding UI with Unity's Animation controller**
@@ -619,7 +619,7 @@ private void SpawnObject()
 {
     // Instantiate the spawned object
     GameObject newObject = Instantiate(displayObject.gameObject, spawnParent);
-    // Detatch the newly spawned object
+    // Detach the newly spawned object
     newObject.transform.parent = null;
     // Reset the scale transform to 1
     scaleParent.localScale = Vector3.one;
@@ -796,7 +796,7 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 ## Advanced design - Teleportation and locomotion
 
-If you want to allow the user to move around the scene with teleportation using thumbstick, use **MixedRealityCameraParent** instead of **MixedRealityCamera**. You also need to add **InputManager** and **DefaultCusor**. Since **MixedRealityCameraParent** already includes **MotionControllers** and **Boundary** as child components, you should remove existing **MotionControllers** and **Environment** prefab.
+If you want to allow the user to move around the scene with teleportation using thumbstick, use **MixedRealityCameraParent** instead of **MixedRealityCamera**. You also need to add **InputManager** and **DefaultCursor**. Since **MixedRealityCameraParent** already includes **MotionControllers** and **Boundary** as child components, you should remove existing **MotionControllers** and **Environment** prefab.
 
 ### Instructions
 
@@ -829,7 +829,7 @@ You are now ready to start creating your own immersive experience with motion co
 ## Completed scenes
 
 * In Unity's **Project** panel click on the **Scenes** folder.
-* You will find two Unity sceens **MixedReality213** and **MixedReality213Advanced**.
+* You will find two Unity scenes **MixedReality213** and **MixedReality213Advanced**.
     * **MixedReality213**: Completed scene with single brush
     * **MixedReality213Advanced**: Completed scene with multiple brush with select button's press amount example
 

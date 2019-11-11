@@ -462,7 +462,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 310: Object detection</h3>
-                                              <p>Train a machine learning model, and use the trained model to recognize similiar objects and their positions in the physical world.</p>
+                                              <p>Train a machine learning model, and use the trained model to recognize similar objects and their positions in the physical world.</p>
                                           </div>
                                       </div>
                                   </div>
