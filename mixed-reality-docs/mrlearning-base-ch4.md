@@ -33,7 +33,7 @@ In this tutorial, you will learn about basic 3D content and user experience, suc
 
     ![mrlearning-base-ch4-1-step1.png](images/mrlearning-base-ch4-1-step1.png)
 
-2. Download the Unity package [BaseModuleAssets version 1.2](https://github.com/microsoft/MixedRealityLearning/releases/download/1.2/BaseModuleAssets-1.2.unitypackage) and import it using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). This package includes 3D models and other useful assets that are used throughout this tutorial.
+2. Download the Unity package [BaseModuleAssets version 1.2.1](https://github.com/Developer-OI/MixedRealityLearning/releases/download/1.2.1/BaseModuleAssets-1.2.1.unitypackage) and import it using the same instructions to import custom packages outlined in [Lesson1](mrlearning-base-ch1.md). This package includes 3D models and other useful assets that are used throughout this tutorial.
 
 3. In the Project panel, navigate to Assets > BaseModuleAssets > Base Module Prefabs and search for "incomplete", we will use some of these prefabs.
 
