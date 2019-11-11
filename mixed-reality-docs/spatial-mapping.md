@@ -61,7 +61,7 @@ These volumes may be stationary (in a fixed location with respect to the real wo
 
 As the HoloLens gathers new data about the environment, and as changes to the environment occur, spatial surfaces will appear, disappear and change.
 
-## Spatial Mapping vs. Scene Undesranding WorldMesh
+## Spatial Mapping vs. Scene Understanding WorldMesh
 For HoloLens 2, it is possible to query a static version of the spatial mapping data using [Scene understanding SDK](scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two way of accessing the spatial mapping data:
 * Spatial Mapping API:
    * Limited range: the spatial mapping data available to applications in a limited size cached 'bubble' around the user.

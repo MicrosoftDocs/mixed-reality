@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+            "source_path": "mixed-reality-docs/updating-hololens.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-updates",
+            "redirect_document_id": false
+        },
+		{
             "source_path": "mixed-reality-docs/hololens-known-issues.md",
             "redirect_url": "https://docs.microsoft.com/hololens/hololens-known-issues",
             "redirect_document_id": true
@@ -22,7 +27,7 @@
         },
 		{
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
-			"redirect_url": "updating-hololens",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-updates",
 			"redirect_document_id": false
 		},
 		{
