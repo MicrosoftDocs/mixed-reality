@@ -10,9 +10,9 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 5. Integrating Azure Spatial Anchors into a shared experience
 
-In this lesson, we learn how to integrate Azure Spatial Anchors (ASA) into our shared experience. ASA allows multiple co-located devices to have a common reference if their physical environment is to anchor virtual experiences such that all participants see objects in the same physical place.
+In this lesson, you'll learn how to integrate Azure Spatial Anchors (ASA) into our shared experience. ASA allows multiple co-located devices to have a common reference if their physical environment is to anchor virtual experiences such that all participants see objects in the same physical place.
 
-Before proceeding with this lesson, we'll need to complete the ASA learning module, which will cover ASA basics, Azure account and resource creation, and other fundamental buildings blocks that are required before we can integrate ASA into our shared experience.
+Before proceeding with this lesson, you'll need to complete the ASA learning module, which will cover ASA basics, Azure account and resource creation, as well as other fundamental building blocks required before integrating ASA into our shared experience.
 
 Objectives:
 
@@ -36,7 +36,7 @@ Objectives:
 
 ![Module3hapter5step6im](images/module3chapter5step6im.PNG)
 
-5. Select GetAzureAnchorButton (see Step 4) and move your attention back to the Inspector panel. Scroll down to the drop-down menu shown in the image below, and select AnchorModuleScript, and click GetSharedAnchorNetwork(), and save.
+5. Select GetAzureAnchorButton (see Step 4) and move your attention back to the Inspector panel. Scroll down to the drop-down menu displayed in the image below, select AnchorModuleScript, click GetSharedAnchorNetwork(), and save.
 
 ![Module3hapter5step7im](images/module3chapter5step7im.PNG)
 
@@ -50,5 +50,5 @@ Objectives:
 
 ## Congratulations
 
-In this lesson you learned how to integrate Azure's powerful new Spatial Anchors to align co-located devices in a shared experience! This also concludes the Sharing Module. We learned how to set up a new Photon account, integrate Photon and PUN into a new Unity application, configure avatars and shared objects, and finally align multiple participants using ASA. 
+In this lesson, you learned how to integrate Azure's powerful new Spatial Anchors to align co-located devices in a shared experience! This also concludes the Sharing Module. We learned how to set up a new Photon account, integrate Photon and PUN into a new Unity application, configure avatars and shared objects, and finally align multiple participants using ASA. 
 
