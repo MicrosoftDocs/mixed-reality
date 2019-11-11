@@ -138,10 +138,9 @@ Building an interaction that takes advantage of fast-moving eye targeting can be
 On the one hand, the eyes move so fast that you need to be careful on how to use eye-gaze input, because otherwise users may find the experience overwhelming or distracting. 
 On the other hand, you can also create truly magical experiences that will excite your users! 
 To help you, check out our overview of key advantages, challenges and design recommendations for [eye-gaze for interaction](eye-gaze-interaction.md). 
-
-<br>
  
 ## Fallback solutions when eye tracking is not available
+
 In rare cases eye tracking data might not be available.
 This can be due to different reasons from which the most common are listed below:
 * The system failed to [calibrate the user](calibration.md).
