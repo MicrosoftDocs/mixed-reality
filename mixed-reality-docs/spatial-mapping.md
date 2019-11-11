@@ -67,7 +67,7 @@ For HoloLens 2, it is possible to query a static version of the spatial mapping 
    * Limited range: the spatial mapping data available to applications in a limited size cached 'bubble' around the user.
    * Provides low latency updates of changed mesh regions through SurfacesChanged events.
    * Variable level of details controlled by Triangles Per Cubic Meter parameter.
-* Scene undestanding SDK:
+* Scene understanding SDK:
    * Unlimited range - provides all the scanned spatial mapping data within the query radius.
    * Provides a static snapshot of the spatial mapping data. Getting the updated spatial mapping data requires running a new query for the whole mesh.
    * Consistent level of details controlled by RequestedMeshLevelOfDetail setting.
@@ -363,7 +363,7 @@ Here are some examples of different types of mesh processing that you may find u
 * It is a good idea to perform testing with real (and ideally un-coached) users, because they may not use the HoloLens or your application in exactly the same way that you do. In fact, it may surprise you how divergent people's behavior, knowledge and assumptions can be!
 
 ## Troubleshooting
-* In order for the surface meshes to be orientated correctly, each GameObject needs to be active before it is sent to the SurfaceObeserver to have its mesh constructed. Otherwise, the meshes will show up in your space but rotated at weird angles.
+* In order for the surface meshes to be orientated correctly, each GameObject needs to be active before it is sent to the SurfaceObserver to have its mesh constructed. Otherwise, the meshes will show up in your space but rotated at weird angles.
 * The GameObject that runs the script that communicates with the SurfaceObserver needs to be set to the origin. Otherwise, all of GameObjects that you create and send to the SurfaceObserver to have their meshes constructed will have an offset equal to the offset of the Parent Game Object. This can make your meshes show up several meters away which makes it very hard to debug what is going on.
 
 ## See also

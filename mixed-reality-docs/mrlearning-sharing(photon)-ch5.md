@@ -32,7 +32,7 @@ Objectives:
 
 ![Module3hapter5step5im](images/module3chapter5step5im.PNG)
 
-4. Now in the hierarchy, select ShareAzureAnchorButton and move your attention to the Inaspector panel. Scroll down to the drop-down menu shown in the image below, select AnchorModuleScript and click ShareAnchorNetework().
+4. Now in the hierarchy, select ShareAzureAnchorButton and move your attention to the Inspector panel. Scroll down to the drop-down menu shown in the image below, select AnchorModuleScript and click ShareAnchorNetwork().
 
 ![Module3hapter5step6im](images/module3chapter5step6im.PNG)
 
@@ -42,7 +42,7 @@ Objectives:
 
 6. To test the sharing module, click the "Start Azure ASA Session" button which will start the azure spatial anchors session and then create the azure anchor by clicking the "Create Azure Anchor" button. Wait for the azure anchor to get created. Once the azure anchor is created, click the "Share Azure Anchor" button to share the created azure anchor from the HoloLens.
 
-7. To recieve the shared azure anchor in another HoloLens, click the "Start Azure ASA Session" to start and get in to the current ASA session
+7. To receive the shared azure anchor in another HoloLens, click the "Start Azure ASA Session" to start and get in to the current ASA session
 
 8. Click the "Get Azure Anchor" button to get the shared azure anchor from the other HoloLens.
 

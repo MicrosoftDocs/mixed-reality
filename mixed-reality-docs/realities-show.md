@@ -26,14 +26,14 @@ This episode is all about Human Understanding: near interactions, far interactio
 
 ___
 ## **World Understanding** - Coming soon
-How intelligent edge devices leveredge the cloud's compute power to understand the world. Including HoloLens 2, Computer vision, Shared Anchor Service, Semantic Labelling and Azure Kinect DK.
+How intelligent edge devices leverage the cloud's compute power to understand the world. Including HoloLens 2, Computer vision, Shared Anchor Service, Semantic Labelling and Azure Kinect DK.
 
 ___
 ## **MixedRealityToolkit** - Coming soon
-The MixedRealityToolkit (MRTK) provides a set of foundational components and features to accelerate MR app development. The latest Release of MRTK-Unity (V2) supports HoloLens/HoloLens 2, Windows Mixed Reality, and OpenVR platforms.Let's take a deep dive with the endineers and designers behind it.
+The MixedRealityToolkit (MRTK) provides a set of foundational components and features to accelerate MR app development. The latest Release of MRTK-Unity (V2) supports HoloLens/HoloLens 2, Windows Mixed Reality, and OpenVR platforms.Let's take a deep dive with the engineers and designers behind it.
 
 ___
 ## **Designing for HoloLens 2** - Coming soon
-The biggest challenge in Mixed Reality development is designing for it. It's so new, so screen-less and so real, that traditional design does not necesarily apply. Let's take a look at how to design for HoloLens 2 and check out the design tools that the MixedRealityToolkit gives us.
+The biggest challenge in Mixed Reality development is designing for it. It's so new, so screen-less and so real, that traditional design does not necessarily apply. Let's take a look at how to design for HoloLens 2 and check out the design tools that the MixedRealityToolkit gives us.
 
 

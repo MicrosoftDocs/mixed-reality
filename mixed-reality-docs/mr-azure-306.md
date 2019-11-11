@@ -615,7 +615,7 @@ To create this class:
 
 ## Chapter 6 - Create the Gaze class
 
-This class is responsible for creating a **Raycast** that will beprojected forward from the **Main Camera**, to detect which object the user is looking at. In this case, the **Raycast** will need to identify if the user is looking at the **GazeButton** object in the scene and trigger a behavior.
+This class is responsible for creating a **Raycast** that will be projected forward from the **Main Camera**, to detect which object the user is looking at. In this case, the **Raycast** will need to identify if the user is looking at the **GazeButton** object in the scene and trigger a behavior.
 
 To create this Class:
 
@@ -824,7 +824,7 @@ To Build:
 
 3.  Go to **File > Build Settings**, click on **Build**.
 
-4.  You will be prompted to select the folder where you want to buildthe Solution.
+4.  You will be prompted to select the folder where you want to build the Solution.
 
 5.  Create a **BUILDS** folder and within that folder create another folder with an appropriate name of your choice.
 

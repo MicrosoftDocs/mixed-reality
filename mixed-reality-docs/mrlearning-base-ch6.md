@@ -78,7 +78,7 @@ In this section, we introduce the various components needed to create our sample
 
 ### Lunar Module Parts overview
 
-The Lunar Module Parts parent object is the collection of the objects that the user interacts with. The Game object names with scene labeled names in paretheses, are provided in the list below:
+The Lunar Module Parts parent object is the collection of the objects that the user interacts with. The Game object names with scene labeled names in parentheses, are provided in the list below:
 
 - Backpack (Energy Cell)
 - GasTank (Fuel Tank)
@@ -117,7 +117,7 @@ The goal is to configure our button so that every time the user presses the Plac
 
 ### Configuring the Reset button
 
-There will be situations where the user makes a mistake, accidently throws the object away or just wants to reset the experience. The Reset button adds the ability to restart the experience.
+There will be situations where the user makes a mistake, accidentally throws the object away or just wants to reset the experience. The Reset button adds the ability to restart the experience.
 
 1. Select the Reset button. In the base scene, it’s named ResetRoundButton.
 
