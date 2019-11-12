@@ -121,7 +121,7 @@ While wearing the device and viewing the experience:
 * Move around the holograms and environment, look for behaviors such as swim and jumpiness. This type of motion is likely caused by the device not tracking the environment, or the distance to the spatial anchor.
 * If large or multiple holograms are in the frame, observe hologram behavior at various depths while moving your head position from side to side, if shakiness appears this is likely caused by the stabilization plane.
 
-### Recomendations
+### Recommendations
 
 * Add an frame rate counter at the beginning of the development work.
 * Use the stabilization plane.
@@ -185,7 +185,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 * Spatial map is useful for placing objects on surfaces when precision isn’t required.
 * For the best precision, use markers or posters to set the holograms and an Xbox controller (or some manual alignment mechanism) for final calibration.
 * Consider breaking extra-large holograms into logical parts and aligning each part to the surface.
-* Improperly set interpupilary distance (IPD) can also effect hologram alignment. Always configure HoloLens to the user's IPD.
+* Improperly set interpupillary distance (IPD) can also effect hologram alignment. Always configure HoloLens to the user's IPD.
 
 ### Resources
 
@@ -520,7 +520,7 @@ Input interaction clarity is critical to an app's usability and includes input c
 ### How to measure
 
 * The app uses consistent [standard input methods.](interaction-fundamentals.md)
-* If the app has custome input, it is clearly communicated through:
+* If the app has custom input, it is clearly communicated through:
 * First-run experience
 * Introductory screens
 * Tooltips

@@ -268,7 +268,7 @@ Techniques that operate on the full screen can be quite expensive since their or
 
 ### Optimal lighting settings
 
-[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide oustanding visual results but involves quite expensive lighting calculations. It is recommended to disable Realtime Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**.
+[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide outstanding visual results but involves quite expensive lighting calculations. It is recommended to disable Realtime Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**.
 
 Further, it is recommended to disable all shadow casting as these also add expensive GPU passes onto a Unity scene. Shadows can be disable per light but can also be controlled holistically via Quality settings.
 
@@ -296,7 +296,7 @@ An easy approximation to compare shaders in performance is to identify the avera
 
     ![Unity Standard Shader Operations](images/unity-standard-shader-compilation.png)
 
-#### Optmize pixel shaders
+#### Optimize pixel shaders
 
 Looking at the compiled statistic results using the method above, the [fragment shader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) will generally execute more operations than the [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders) on average. The fragment shader, also known as the pixel shader, is executed per pixel on the screen output while the vertex shader is only executed per-vertex of all meshes being drawn to the screen. 
 

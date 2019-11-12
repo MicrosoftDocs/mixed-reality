@@ -41,7 +41,7 @@ The following topics discuss the base requirements of adding Windows Mixed Reali
 
 ## Adding mixed reality capabilities and inputs
 
-To enable the best possible experience for users of your immersive appslication, you'll want to support the following key building blocks:
+To enable the best possible experience for users of your immersive application, you'll want to support the following key building blocks:
 
 * [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
@@ -50,7 +50,7 @@ To enable the best possible experience for users of your immersive appslication,
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
 
 
-There are other key features that many immersive applications will want to use that are also exposed to DirectX applicaitons:
+There are other key features that many immersive applications will want to use that are also exposed to DirectX applications:
 
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
 * [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)

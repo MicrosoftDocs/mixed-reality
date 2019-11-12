@@ -64,7 +64,7 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
     ![Lesson1 Section3 Step3](images/mrlearning-base-ch1-3-step3.JPG)
 
     > [!NOTE]
-    > If you see a pop-up dialog box asking to apply the Mixed Reality Toolkit default settings, click **Apply**. MRTK analyzes your project for any missing recommended settings when imported for automated setup. Depending on your settings the popup might look differnt then the image below.
+    > If you see a pop-up dialog box asking to apply the Mixed Reality Toolkit default settings, click **Apply**. MRTK analyzes your project for any missing recommended settings when imported for automated setup. Depending on your settings the popup might look different then the image below.
 
     ![Lesson1 Section3 Step4 Note1](images/mrlearning-base-ch1-3-step4-note1.JPG)
 

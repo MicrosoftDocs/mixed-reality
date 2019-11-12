@@ -18,7 +18,7 @@ The SceneUnderstanding SDK is downloadable via NuGet.
 
 [SceneUnderstanding SDK](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
 
-**Note:** the latest release depends on preview pacakges and you will need to enable pre-release packages to see it.
+**Note:** the latest release depends on preview packages and you will need to enable pre-release packages to see it.
 
 As of version 0.5.2022-rc, Scene Understanding supports language projections for C# and C++ allowing applications to develop applications for Win32 or UWP platforms. As of this version, SceneUnderstanding supports unity in-editor support barring the SceneObserver which is used solely for communicating with HoloLens2. 
 
@@ -30,15 +30,15 @@ If you are using the SDK in a Unity project, please use [NuGet for Unity](https:
 
 ### The Scene
 
-Your mixed reality device is constantly integrating information about what it sees in your environment. Scene Understanding funnels all of these data sources and produces one single cohesive abstraction. Scene Understanding generates Scenes which are a composition of [SceneObjects](scene-understanding-SDK.md#sceneobjects) that represent an instance of a single thing, (e.g. a wall/ceiling/floor.) Scene Objects themselves are a composition of [SceneComponents](scene-understanding-SDK.md#scenecomponents) which represent more granular pieces that make up this SceneObject. Examples of components are quads and meshes, but in the future could represent bounding boxes, collision mehses, metadata etc...
+Your mixed reality device is constantly integrating information about what it sees in your environment. Scene Understanding funnels all of these data sources and produces one single cohesive abstraction. Scene Understanding generates Scenes which are a composition of [SceneObjects](scene-understanding-SDK.md#sceneobjects) that represent an instance of a single thing, (e.g. a wall/ceiling/floor.) Scene Objects themselves are a composition of [SceneComponents](scene-understanding-SDK.md#scenecomponents) which represent more granular pieces that make up this SceneObject. Examples of components are quads and meshes, but in the future could represent bounding boxes, collision meshes, metadata etc...
 
-The process of converting the raw sensor data into a Scene is a potentially expensive operation that could take seconds for medium spaces (~10x10m) to minutes for very large spaces (~50x50m) and therefore it is not something that is being computed by the device without application request. Instead, Scene generation is triggered by your application on demand. The SceneObserver class has static methods that can Compute or Deserialize a scene, which you can then enumerate/interact with. The "Compute" action is executed on-demand and executes on the CPU but in a seperate process (the Mixed Reality Driver). However, while we do compute in another process the resulting Scene data is stored and maintained in your application in the Scene object. 
+The process of converting the raw sensor data into a Scene is a potentially expensive operation that could take seconds for medium spaces (~10x10m) to minutes for very large spaces (~50x50m) and therefore it is not something that is being computed by the device without application request. Instead, Scene generation is triggered by your application on demand. The SceneObserver class has static methods that can Compute or Deserialize a scene, which you can then enumerate/interact with. The "Compute" action is executed on-demand and executes on the CPU but in a separate process (the Mixed Reality Driver). However, while we do compute in another process the resulting Scene data is stored and maintained in your application in the Scene object. 
 
 Below is a diagram that illustrates this process flow and shows examples of two applications interfacing with the Scene Understanding runtime. 
 
 ![Process Diagram](images/SU-ProcessFlow.png)
 
-On the left hand side is a diagram of the mixed reality runtime which is always on and running in its own process. This runtime is responsible for performing device tracking, spatial mapping, and other operations that Scene Understanding uses to understand and reason about the world around you. On the right side of the diagram, we show two theoretical applications that make use of Scene Understanding. The first application interfaces with MRTK which uses the Scene Understanding SDK internally, the second app computes and uses two sepereate scene instances. All 3 Scenes in this diagram generate distinct instances of the scenes, the driver is not tracking global state that is shared between applications and Scene Objects in one scene are not found in another. Scene Understanding does provide a mechanism to track over time, but this is done using the SDK and code the code that performs this tracking is running in the SDK in your app's process.
+On the left hand side is a diagram of the mixed reality runtime which is always on and running in its own process. This runtime is responsible for performing device tracking, spatial mapping, and other operations that Scene Understanding uses to understand and reason about the world around you. On the right side of the diagram, we show two theoretical applications that make use of Scene Understanding. The first application interfaces with MRTK which uses the Scene Understanding SDK internally, the second app computes and uses two separate scene instances. All 3 Scenes in this diagram generate distinct instances of the scenes, the driver is not tracking global state that is shared between applications and Scene Objects in one scene are not found in another. Scene Understanding does provide a mechanism to track over time, but this is done using the SDK and the code that performs this tracking is running in the SDK in your app's process.
 
 Because each Scene stores it's data in your application's memory space, you can assume that all function of the Scene object or it's internal data is always executed in your application's process.
 
@@ -90,7 +90,7 @@ Below we present an example of a structure in both its flat and logical form.
 </tr>
 </table>
 
-This illustration highlights the difference between the physical and logical layout of the Scene. On the right we see the hierarchical layout of the data that your application sees when enumerating the scene. On the left we see that the scene is actually comprised of 12 distinct components that are accessible individually if necessary. When processing a new scene, we expect applications to walk this hierarchy logically, however when tracking between scene updates, some applications may only be interested in targeting specific components that are shared between two scenes.
+This illustration highlights the difference between the physical and logical layout of the Scene. On the left we see the hierarchical layout of the data that your application sees when enumerating the scene. On the right we see that the scene is actually comprised of 12 distinct components that are accessible individually if necessary. When processing a new scene, we expect applications to walk this hierarchy logically, however when tracking between scene updates, some applications may only be interested in targeting specific components that are shared between two scenes.
 
 ## API overview
 
@@ -218,7 +218,7 @@ firstFloor = (SceneObject)myNextScene.FindComponent(firstFloor.Id);
 
 if (firstFloor != null)
 {
-    // We found it again, we can now update the transforms of all objects we attatched to this floor transform
+    // We found it again, we can now update the transforms of all objects we attached to this floor transform
 }
 ```
 
@@ -244,7 +244,7 @@ foreach (var mesh in firstFloor.Meshes)
 }
 ```
 
-Notice that it is the SceneObject that has the transform that is relative to the Scene origin. This is because the SceneObject represents an instance of a "thing" and is locatable in space, the quads and meshes represent geometry that is transformed relative to their parent. It is possible for separate SceneObjects to reference the same SceneMesh/SceneQuad SceneComponewnts, and it is also possible that a SceneObject has more than one SceneMesh/SceneQuad.
+Notice that it is the SceneObject that has the transform that is relative to the Scene origin. This is because the SceneObject represents an instance of a "thing" and is locatable in space, the quads and meshes represent geometry that is transformed relative to their parent. It is possible for separate SceneObjects to reference the same SceneMesh/SceneQuad SceneComponents, and it is also possible that a SceneObject has more than one SceneMesh/SceneQuad.
 
 ### Dealing with Transforms
 
@@ -280,7 +280,7 @@ public class SceneRootComponent : MonoBehavior
 }
 ```
 
-Each `SceneObject` has a `Position` and `Orientation` property which can be used to position corresponding content relative to the origin of the containing `Scene`. For example, the followig example assumes that the game is a child of the scene root, and assigns its local position and rotation to align to a given `SceneObject`:
+Each `SceneObject` has a `Position` and `Orientation` property which can be used to position corresponding content relative to the origin of the containing `Scene`. For example, the following example assumes that the game is a child of the scene root, and assigns its local position and rotation to align to a given `SceneObject`:
 
 ```cs
 void SetLocalTransformFromSceneObject(GameObject gameObject, SceneObject sceneObject)
@@ -319,14 +319,14 @@ foreach (var sceneObject in myScene.SceneObjects)
                 // Step 1: Create a new game object for the quad itself as a child of the scene root
                 // Step 2: Set the local transform from quads[0].Position and quads[0].Orientation
                 // Step 3: Create your hologram and set it as a child of the quad's game object
-                // Step 4: Set the hologram's local tranform to a translation (location.x, location.y, 0)
+                // Step 4: Set the hologram's local transform to a translation (location.x, location.y, 0)
             }
         }
     }
 }
 ```
 
-Steps 1-4 are highly dependent on your particular framework/implementation, but the themes should be similar. It is important to note that the Quad simply represents a bounded 2D plane that is localized in space. By having your engine/framework know where the quad is and rooting your objects relative to the quad, your holograms will be located correctly with repect to the real world. For more detailed information please see our samples on quads which show specific implementations.
+Steps 1-4 are highly dependent on your particular framework/implementation, but the themes should be similar. It is important to note that the Quad simply represents a bounded 2D plane that is localized in space. By having your engine/framework know where the quad is and rooting your objects relative to the quad, your holograms will be located correctly with respect to the real world. For more detailed information please see our samples on quads which show specific implementations.
 
 ### Mesh
 

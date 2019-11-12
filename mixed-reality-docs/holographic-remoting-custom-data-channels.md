@@ -33,7 +33,7 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-After a connection was successfully established, the creation of new data channels can be initiated from either the host side and/or the player side. Both the RemoteContext and the PlayerContext provide a ```CreateDataChannel()``` method to do this. The first parameter is the channel ID which is used to identify the data channel in susequent operations. The second paramter is the priority which specifies the priority with which data of this channel is transfered to the other side. The valid range for channel IDs is 0 up to and including 63 for the host side and 64 up to and including 127 for the player side. Valid priorities are ```Low```, ```Medium``` or ```High``` (on both sides).
+After a connection was successfully established, the creation of new data channels can be initiated from either the host side and/or the player side. Both the RemoteContext and the PlayerContext provide a ```CreateDataChannel()``` method to do this. The first parameter is the channel ID which is used to identify the data channel in subsequent operations. The second parameter is the priority which specifies the priority with which data of this channel is transferred to the other side. The valid range for channel IDs is 0 up to and including 63 for the host side and 64 up to and including 127 for the player side. Valid priorities are ```Low```, ```Medium``` or ```High``` (on both sides).
 
 To initiate the creation of a data channel on the **host** side:
 ```cpp
@@ -90,7 +90,7 @@ m_customChannelClosedEventRevoker = m_customDataChannel.OnClosed(winrt::auto_rev
 
 ## Sending data
 
-To send data over a custom data channel, use the ```IDataChannel::SendData()``` method. The first paramter is a ```winrt::array_view<const uint8_t>``` to the data that should be send. The second parameter specifies wheter the data should be resend, until the other side acknowledge the reception. 
+To send data over a custom data channel, use the ```IDataChannel::SendData()``` method. The first parameter is a ```winrt::array_view<const uint8_t>``` to the data that should be send. The second parameter specifies where the data should be resend, until the other side acknowledge the reception. 
 
 >[!IMPORTANT]
 >In case of bad network conditions, the same data packet might arrive more than once. The receiving code must be able to handle this situation.

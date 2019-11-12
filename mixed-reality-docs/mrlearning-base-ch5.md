@@ -146,7 +146,7 @@ In this section, you will learn how to use the pan gesture. This is useful for s
 
     ![mrlearning-base-ch5-2-step7b.png](images/mrlearning-base-ch5-2-step7b.png)
 
-8. Add the ability to recognize the pan gesture. Click Add Component, type “hand interaction” in the serach field and add the Hand Interaction Pan Zoom script component.
+8. Add the ability to recognize the pan gesture. Click Add Component, type “hand interaction” in the search field and add the Hand Interaction Pan Zoom script component.
 
     ![mrlearning-base-ch5-2-step8a.png](images/mrlearning-base-ch5-2-step8a.png)
 
@@ -192,7 +192,7 @@ In this section, we will explore how to enable eye tracking in our demo. We will
 2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we'll need to add the EyeTrackingTarget component on each object that we want to interact with by using eye gaze. Add this component to each of the nine 3D objects that are part of the grid collection.
 
     >[!TIP]
-    >You can use the shift and/or crtl keys to select multiple items in the scene hierarchy and then bulk-add the EyeTrackingTarget component.
+    >You can use the shift and/or ctrl keys to select multiple items in the scene hierarchy and then bulk-add the EyeTrackingTarget component.
 
     ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
 

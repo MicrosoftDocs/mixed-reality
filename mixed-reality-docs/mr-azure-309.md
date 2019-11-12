@@ -863,7 +863,7 @@ To create the script:
         /// <returns></returns>
         private IEnumerator GetWebRequest(KeyValuePair<string, int> webQueryPair)
         {
-            // Set the URL and count as their own variables (for readibility).
+            // Set the URL and count as their own variables (for readability).
             string url = webQueryPair.Key;
             int currentCount = webQueryPair.Value;
 
