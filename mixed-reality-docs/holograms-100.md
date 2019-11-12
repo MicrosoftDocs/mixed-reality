@@ -151,7 +151,7 @@ Now that we have created our cube, it is time to do a quick check in device. You
 ### Initial setup
 
 1. On your development PC, in Unity, open **File > Build Settings** window.
-2. Change **Platform** to **Universal Windows Platform** and click **Switch Platfrom**
+2. Change **Platform** to **Universal Windows Platform** and click **Switch Platform**
 
 ### For HoloLens use Unity Remoting
 

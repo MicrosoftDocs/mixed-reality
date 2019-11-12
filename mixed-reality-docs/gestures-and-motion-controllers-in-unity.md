@@ -142,7 +142,7 @@ Unity currently uses its general *Input.GetButton/Input.GetAxis* APIs to expose 
 
 To use the general Unity input APIs, you'll typically start by wiring up buttons and axes to logical names in the [Unity Input Manager](https://docs.unity3d.com/Manual/ConventionalGameInput.html), binding a button or axis IDs to each name. You can then write code that refers to that logical button/axis name.
 
-For example, to map the left motion controller's trigger button to the Submit action, go to **Edit > Project Settings > Input** within Unity, and expand the properties of the Submit section under Axes. Change the **Postive Button** or **Alt Positive Button** property to read **joystick button 14**, like this:
+For example, to map the left motion controller's trigger button to the Submit action, go to **Edit > Project Settings > Input** within Unity, and expand the properties of the Submit section under Axes. Change the **Positive Button** or **Alt Positive Button** property to read **joystick button 14**, like this:
 
 ![Unity's InputManager](images/unity-input-manager.png)<br>
 *Unity InputManager*
@@ -443,7 +443,7 @@ void Start()
 
 ### Start capturing gestures
 
-By default, a *GestureRecognizer* does not monitor input until *StartCapturingGestures()* is called. It is possible that a gesture event may be generated after *StopCapturingGestures()* is called if input was performed before the frame where *StopCapturingGestures()* was processed. The *GestureRecognizer* will remember whether it was on or off during the previou frame in which the gesture actually occurred, and so it is reliable to start and stop gesture monitoring based on this frame's gaze targeting.
+By default, a *GestureRecognizer* does not monitor input until *StartCapturingGestures()* is called. It is possible that a gesture event may be generated after *StopCapturingGestures()* is called if input was performed before the frame where *StopCapturingGestures()* was processed. The *GestureRecognizer* will remember whether it was on or off during the previous frame in which the gesture actually occurred, and so it is reliable to start and stop gesture monitoring based on this frame's gaze targeting.
 
 ```cs
 recognizer.StartCapturingGestures();

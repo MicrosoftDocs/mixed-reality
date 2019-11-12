@@ -1239,7 +1239,7 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
     ![Power BI](images/AzureLabs-Lab313-86.png)
 
 > [!WARNING]
-> The following Chapter is HoloLens specific. Power BI is not currently availble as an immersive application, however you can run the desktop version in the Windows Mixed Reality Portal (aka Cliff House), through the Desktop app.
+> The following Chapter is HoloLens specific. Power BI is not currently available as an immersive application, however you can run the desktop version in the Windows Mixed Reality Portal (aka Cliff House), through the Desktop app.
 
 ## Chapter 16 - Display Power BI data on HoloLens
 

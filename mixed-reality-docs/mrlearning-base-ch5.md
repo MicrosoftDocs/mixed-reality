@@ -143,7 +143,7 @@ In this section, you will learn how to use the pan gesture. This is useful for s
 
     ![mrlearning-base-ch5-2-step7b.png](images/mrlearning-base-ch5-2-step7b.png)
 
-8. Add the ability to recognize the pan gesture. Click Add Component, type “hand interaction” in the serach field and add the Hand Interaction Pan Zoom script component.
+8. Add the ability to recognize the pan gesture. Click Add Component, type “hand interaction” in the search field and add the Hand Interaction Pan Zoom script component.
 
     ![mrlearning-base-ch5-2-step8a.png](images/mrlearning-base-ch5-2-step8a.png)
 
@@ -188,8 +188,6 @@ In this section, you will learn how to use the pan gesture. This is useful for s
     Now, if you disable the **Quad**'s **Mesh Renderer** component by un-checking it in the Inspector panel, you will have an invisible quad where you can pan through a list of 3D objects.
 
     ![mrlearning-base-ch5-2-step10d.png](images/mrlearning-base-ch5-2-step10d.png)
-
-
 
 ### Eye Tracking
 

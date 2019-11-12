@@ -64,21 +64,21 @@ In this first lesson, you'll learn about some of the capabilities the [Mixed Rea
     ![Lesson1 Section3 Step3](images/mrlearning-base-ch1-3-step3.JPG)
 
     > [!NOTE]
-    > If you see a pop-up dialog box asking to apply the Mixed Reality Toolkit default settings, click **Apply**. MRTK analyzes your project for any missing recommended settings when imported for automated setup. Depending on your settings the popup might look differnt then the image below.
+    > If you see a pop-up dialog box asking to apply the Mixed Reality Toolkit default settings, click **Apply**. MRTK analyzes your project for any missing recommended settings when imported for automated setup. Depending on your settings the popup might look different then the image below.
 
     ![Lesson1 Section3 Step4 Note1](images/mrlearning-base-ch1-3-step4-note1.JPG)
 
 ### Configure the Mixed Reality Toolkit
 
 1. Add the *Mixed Reality Toolkit* to your current scene by selecting **Mixed Reality Toolkit** > **Add to Scene and Configure..** from the menu bar. If you don't see this menu item after importing the mixed reality toolkit, please restart Unity.
-  ![Lesson1 Section4 Step1](images/mrlearning-base-ch1-4-step1.JPG)
+    ![Lesson1 Section4 Step1](images/mrlearning-base-ch1-4-step1.JPG)
 
     > [!NOTE]
     > You may see a pop-up dialog box for selecting a [profile for the Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html). Choose the profile named *DefaultHoloLens2ConfigurationProfile* by double-clicking it.
 
 2. Your scene will have several new items and modifications. Save your scene under a different name by clicking **File** > **Save As...**, and give your scene a name, such as *BaseScene*. Keep your scene organized by saving it to the *Scenes* folder in your project’s *Assets* folder.
-  ![Lesson1 Section4 Step2a](images/mrlearning-base-ch1-4-step2a.JPG)
-  ![Lesson1 Section4 Step2b](images/mrlearning-base-ch1-4-step2b.JPG)
+    ![Lesson1 Section4 Step2a](images/mrlearning-base-ch1-4-step2a.JPG)
+    ![Lesson1 Section4 Step2b](images/mrlearning-base-ch1-4-step2b.JPG)
 
 ### Build your application to your device
 

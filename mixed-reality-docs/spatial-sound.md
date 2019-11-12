@@ -64,7 +64,7 @@ HoloTour virtually takes users to tourist and historical sites around the world.
 RoboRaid is a high-energy shooter for HoloLens. The following case study describes the design choices made to ensure spatial audio was used to fullest dramatic effect: [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md).
 
 ## Spatialization
-Spatialization is the directional component of spatial audio. When using a 7.1 home theater setup, spatialization is as simple as panning between loud speakers. But with headphones in mixed reality it's essential to use an HRTF-based technology, for accuracy and comfort. Windows offers HRTF-based spatialization, and this support is hardware-accelerated on HoloLens2.
+Spatialization is the directional component of spatial audio. When using a 7.1 home theater setup, spatialization is as simple as panning between loud speakers. But with headphones in mixed reality it's essential to use an HRTF-based technology for accuracy and comfort. Windows offers HRTF-based spatialization, and this support is hardware-accelerated on HoloLens 2.
 
 <br>
 
@@ -76,10 +76,10 @@ Many sounds in mixed reality applications benefit from spatialization, which tak
 ### Spatializer personalization
 HRTFs manipulate the level and phase differences between ears across the frequency spectrum. They're based on physical models and measurements of human head, torso, and ear shapes (pinnae). Our brains respond to these differences to give rise to a perception of direction in sound. 
 
-Every individual has a unique ear shape, head size, and ear position, so the best HRTFs are those that conform to you. HoloLens and HoloLens2 increase spatialization accuracy by using your inter-pupilary distance (IPD) from the headset displays to adjust the HRTFs for your head size.
+Every individual has a unique ear shape, head size, and ear position, so the best HRTFs are those that conform to you. HoloLens increases spatialization accuracy by using your inter-pupilary distance (IPD) from the headset displays to adjust the HRTFs for your head size.
 
 ### Spatializer platform support
-Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). This API exposes the HoloLens2 HRTF hardware acceleration to applications.
+Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). This API exposes the HoloLens 2 HRTF hardware acceleration to applications.
 
 ### Spatializer middleware support
 Support for Windows' HRTFs is available for some 3rd-party audio engines:

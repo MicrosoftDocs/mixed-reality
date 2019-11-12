@@ -70,7 +70,9 @@ if (pointerPose)
 
 ## Using eye-gaze
 
-The eye-gaze API is very similar to head-gaze.  It uses the same  [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API, which provides a ray origin and direction that you can raycast against your scene.  The only difference is that you need to explicitly enable eye tracking before using it. For this, you need to do two steps:
+Please note that for your users to use eye-gaze input, each user has to go through an [eye tracking user calibration](calibration.md) the first time they use the device. 
+The eye-gaze API is very similar to head-gaze.
+It uses the same [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API, which provides a ray origin and direction that you can raycast against your scene.  The only difference is that you need to explicitly enable eye tracking before using it. For this, you need to do two steps:
 1. Request user permission to use eye tracking in your app.
 2. Enable the "Gaze Input" capability in your package manifest.
 
@@ -94,7 +96,8 @@ std::thread requestAccessThread([this]()
 requestAccessThread.detach();
 
 ```
-Starting a detached thread is just one option for handling async calls.  Alternatively, you could use the new [co_await](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/concurrency) functionality supported by C++/WinRT.
+Starting a detached thread is just one option for handling async calls. 
+Alternatively, you could use the new [co_await](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/concurrency) functionality supported by C++/WinRT.
 Here is another example for asking for user permission:
 -	EyesPose::IsSupported() allows the application to trigger the permission dialog only if there is an eye tracker.
 - 	GazeInputAccessStatus m_gazeInputAccessStatus; // This is to prevent popping up the permission prompt over and over again.
@@ -123,7 +126,6 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 
 ```
 
-
 ### Declaring the *Gaze Input* capability
 
 Double click the appxmanifest file in *Solution Explorer*.  Then navigate to the *Capabilities* section and check the *Gaze Input* capability. 
@@ -139,7 +141,7 @@ This adds the following lines to the *Package* section in the appxmanifest file:
 
 ### Getting the eye-gaze ray
 Once you have received access to ET, you are free to grab the eye-gaze ray every frame.
-Just as with head-gaze, get the [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) by calling [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) with a desired timestamp and coordinate system. The SpatialPointerPose contains an [EyesPose](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose) object through the [Eyes](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) property. This is non-null only if eye tracking is enabled. From there you can check if the user in the device has an eye tracking calibration by calling [EyesPose::IsCalibrationValid](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Next, use the [Gaze](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) property to get the a [SpatialRay](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) contianing the eye-gaze position and direction. The Gaze property can sometimes be null, so be sure to check for this. This can happen is if a calibrated user temporarily closes their eyes.
+Just as with head-gaze, get the [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) by calling [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) with a desired timestamp and coordinate system. The SpatialPointerPose contains an [EyesPose](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose) object through the [Eyes](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) property. This is non-null only if eye tracking is enabled. From there you can check if the user in the device has an eye tracking calibration by calling [EyesPose::IsCalibrationValid](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Next, use the [Gaze](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) property to get the a [SpatialRay](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) containing the eye-gaze position and direction. The Gaze property can sometimes be null, so be sure to check for this. This can happen is if a calibrated user temporarily closes their eyes.
 
 The following code shows how to access the eye-gaze ray.
 
@@ -165,8 +167,23 @@ if (pointerPose)
 
 ```
 
-## Correlating gaze with other inputs
+## Fallback when eye tracking is not available
+As mentioned in our [eye tracking design docs](eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available), both designers as well as developers should be aware that there may be instances in which eye tracking data may not be available to your app.
+There are various reasons for this ranging from a user not being calibrated, the user having denied the app access to his/her eye tracking data or simply temporary interferences (such as smudges on the HoloLens visor or hair occluding the user's eyes). 
+While some of the APIs have already been mentioned in this document, in the following, we provide a summary of how to detect that eye tracking is available as a quick reference: 
 
+* Check that the system supports eye tracking at all. Call the following *method*: [Windows.Perception.People.EyesPose.IsSupported()](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
+
+* Check that the user is calibrated. Call the following *property*: [Windows.Perception.People.EyesPose.IsCalibrationValid](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)	
+
+* Check that the user has given your app permission to use their eye tracking data: Retrieve the current _'GazeInputAccessStatus'_. An example on how to do this is explained at [Requesting access to gaze input](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input).	
+
+In addition, you may want to check that your eye tracking data is not stale by adding a timeout between received eye tracking data updates and otherwise fallback to head-gaze as discussed below. 	
+Please visit our [fallback design considerations](eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) for more information.
+
+<br>
+
+## Correlating gaze with other inputs
 Sometimes you may find that you need a [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) that corresponds with an event in the past. 
 For example, if the user performs an Air Tap, your app might want to know what they were looking at. 
 For this purpose, simply using [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) with the predicted frame time would be inaccurate because of the latency between system input processing and display time. 
@@ -176,20 +193,26 @@ One way to handle this scenario is to make an additional call to  [SpatialPointe
 
 However, for input that routes through the SpatialInteractionManager, there's an easier method. The [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) has its very own [TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) function. Calling that will provide a perfectly correlated [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) without the guesswork. For more information on working with SpatialInteractionSourceStates, take a look at the [Hands and Motion Controllers in DirectX](hands-and-motion-controllers-in-directx.md) documentation.
 
+<br>
 
 ## Calibration
-For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md). This allows the device to adjust the system for a more comfortable and quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
-Developers don’t need to do anything on their end to manage user calibration. The system will ensure the user gets prompted to calibrate the device under the following circumstances:
-*The user is using the device for the first time
-*The user previously opted out of the calibration process
-*The calibration process did not succeed the last time the user used the device
+For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md). 
+This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
+Developers don’t need to do anything on their end to manage user calibration. 
+The system will ensure that the user gets prompted to calibrate the device under the following circumstances:
+* The user is using the device for the first time
+* The user previously opted out of the calibration process
+* The calibration process did not succeed the last time the user used the device
 
-Developers should make sure to provide adequate support for users for whom eye tracking data may not be available. For design recommendation for the fallback solution see [Eye tracking on Hololens 2](eye-tracking.md).
+Developers should make sure to provide adequate support for users for whom eye tracking data may not be available. 
+Learn more about considerations for fallback solutions at [Eye tracking on Hololens 2](eye-tracking.md).
+
+<br>
 
 ## See also
-* [Head-gaze and commit input model](gaze-and-commit.md)
-* [Eye-gaze on HoloLens 2](eye-tracking.md)
 * [Calibration](calibration.md)
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
-* [Voice Input in DirectX](voice-input-in-directx.md)
+* [Eye-gaze on HoloLens 2](eye-tracking.md)
+* [Gaze and commit input model](gaze-and-commit.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
+* [Voice Input in DirectX](voice-input-in-directx.md)
