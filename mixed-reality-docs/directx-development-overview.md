@@ -13,7 +13,7 @@ keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, 
 # DirectX development overview
 
 
-Windows Mixed Reality applications use the [holographic rendering](rendering.md), [gaze](gaze.md), [gesture](gestures.md), [motion controller](motion-controllers.md), [voice](voice-input.md), and [spatial mapping](spatial-mapping.md) APIs to build [mixed reality](mixed-reality.md) experiences for HoloLens and immersive headsets. You can create mixed reality applications using a 3D engine, such as [Unity](unity-development-overview.md), or you can directly code to the Windows Mixed Reality APIs using DirectX 11 or DirectX 12. If you are leveraging the platform directly, you'll essentially be building your own middleware or framework. The Windows APIs support applications written in both C++ and C#. If you choose to use C#, your application can leverage the [SharpDX](http://sharpdx.org/) open source software library.
+Windows Mixed Reality applications use the [holographic rendering](rendering.md), [gaze](gaze-and-commit.md), [gesture](gaze-and-commit.md#composite-gestures), [motion controller](motion-controllers.md), [voice](voice-input.md), and [spatial mapping](spatial-mapping.md) APIs to build [mixed reality](mixed-reality.md) experiences for HoloLens and immersive headsets. You can create mixed reality applications using a 3D engine, such as [Unity](unity-development-overview.md), or you can directly code to the Windows Mixed Reality APIs using DirectX 11 or DirectX 12. If you are leveraging the platform directly, you'll essentially be building your own middleware or framework. The Windows APIs support applications written in both C++ and C#. If you choose to use C#, your application can leverage the [SharpDX](https://sharpdx.org/) open source software library.
 
 
 Windows Mixed Reality supports [two kinds of apps](app-views.md):
@@ -41,16 +41,16 @@ The following topics discuss the base requirements of adding Windows Mixed Reali
 
 ## Adding mixed reality capabilities and inputs
 
-To enable the best possible experience for users of your immersive appslication, you'll want to support the following key building blocks:
+To enable the best possible experience for users of your immersive application, you'll want to support the following key building blocks:
 
 * [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](voice-input-in-directx.md)
-* [Spatial sound in DirectX](spatial-sound-in-directx.md)
+* [Spatial sound](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound)
 * [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
 
 
-There are other key features that many immersive applications will want to use that are also exposed to DirectX applicaitons:
+There are other key features that many immersive applications will want to use that are also exposed to DirectX applications:
 
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
 * [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)

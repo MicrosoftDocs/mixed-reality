@@ -126,7 +126,7 @@ Show how to handle input for a Windows Mixed Reality application.
 
 Building on the application from chapter 1, we will add functionality to allow the user to pick up the hologram and place it on a real world surface in HoloLens or on a virtual table in an immersive headset.
 
-**Input Refresher:** On HoloLens the select gesture is the **air tap**. On immersive headsets, we will use the **A** button on the Xbox controller. For more information on input [start here](gestures.md).
+**Input Refresher:** On HoloLens the select gesture is the **air tap**. On immersive headsets, we will use the **A** button on the Xbox controller. For more information check out the [interaction model overview](interaction-fundamentals.md).
 
 ### Steps
 

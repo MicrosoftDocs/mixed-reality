@@ -613,7 +613,7 @@ During the update, we now obtain the coordinate system at the time stamp obtaine
 
 ### Get a spatial pointer pose, and follow the user's Gaze
 
-We want our example hologram to follow the user's [gaze](gaze.md), similar to how the holographic shell can follow the user's gaze. For this, we need to get the SpatialPointerPose from the same time stamp.
+We want our example hologram to follow the user's [gaze](gaze-and-commit.md), similar to how the holographic shell can follow the user's gaze. For this, we need to get the SpatialPointerPose from the same time stamp.
 
 ```
 SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordinateSystem, prediction->Timestamp);

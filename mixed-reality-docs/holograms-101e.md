@@ -17,7 +17,7 @@ keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tut
 
  >[!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
 
-This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
+This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze-and-commit.md), [gestures](gaze-and-commit.md#composite-gestures), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
 
 ## Device support
 
@@ -117,7 +117,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 >[!VIDEO https://www.youtube.com/embed/BPWTbAC210k]
 
-In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze.md).
+In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze-and-commit.md).
 
 ### Objectives
 
@@ -193,7 +193,7 @@ public class WorldCursor : MonoBehaviour
 
 >[!VIDEO https://www.youtube.com/embed/6d-0RHeKHq4]
 
-In this chapter, we'll add support for [gestures](gestures.md). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
+In this chapter, we'll add support for [gestures](gaze-and-commit.md#composite-gestures). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
 
 ### Objectives
 
@@ -636,8 +636,8 @@ You are now ready to start creating your own holographic apps!
 ## See also
 
 * [MR Basics 101: Complete project with device](holograms-101.md)
-* [Gaze](gaze.md)
-* [Gestures](gestures.md)
+* [Gaze](gaze-and-commit.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Voice input](voice-input.md)
 * [Spatial sound](spatial-sound.md)
 * [Spatial mapping](spatial-mapping.md)

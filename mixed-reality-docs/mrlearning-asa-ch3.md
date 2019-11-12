@@ -40,28 +40,11 @@ In this lesson, you'll learn how to provide users with feedback about anchor dis
 
 ![module2chapter3step4im](images/module2chapter3step4im.PNG)
 
-5. In the project panel, select "assets" and right click, then select "show in explorer."
-   
-
-![module2chapter3step4im](images/module2chapter3step5im.PNG)
-
-Click [here](https://onedrive.live.com/?authkey=%21ABXEC8PvyQu8Qd8&id=5B7335C4342BCB0E%21395636&cid=5B7335C4342BCB0E) to download the files needed in the next few steps.
-
-6. Once Explorer opens, select the Assets folder, then the "ASAmodulesAssets" folder and copy the anchor feedback script and the anchor module script files into the folder. 
-
-![module2chapter3step5im](images/module2chapter3step6im.PNG)
-
-> note: if you get a pop-up message asking if you to overwrite the old or keep the old, select overwrite.
-
-7. Return to the Assets folder. Then, go into the "AzureSpatialAnchorsPlugin" folder, followed by the Examples folder and finally the Scripts folder. Then copy the Azure Spatial Anchors demo wrapper into that folder. 
-
-![module2chapter3step8im](images/module2chapter3step7im.PNG)
-
-8. Now that the files are uploaded, ensure that the "feedbackpanel" text is selected in the ASA_feedback hierarchy, click "add component" and add the anchor feedback script by searching for it and selecting it once it appears. 
+5. Ensure that the "feedbackpanel" text is selected in the ASA_feedback hierarchy, click "add component" and add the anchor feedback script by searching for it and selecting it once it appears. 
 
 ![module2chapter3step8im](images/module2chapter3step8im.PNG)
 
-9. Drag the "feedbackPanel" text object from the ASA_Feedback hierarchy into the empty slot beneath the script as seen in the picture below. 
+6. Drag the "feedbackPanel" text object from the ASA_Feedback hierarchy into the empty slot beneath the script as seen in the picture below. 
 
 ![module2chapter3step9im](images/module2chapter3step9im.PNG)
 

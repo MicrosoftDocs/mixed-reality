@@ -104,14 +104,14 @@ In this chapter, we'll setup our first Unity project and step through the build 
     * Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
     * Leave the **Authentication Mode** set to **Universal**.
     * Click **Select**
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device---hololens-1st-gen).
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device).
 * Put on your HoloLens and find the EnergyHub hologram.
 
 ## Chapter 2 - Interaction
 
 >[!VIDEO https://www.youtube.com/embed/W60xG15a8gc]
 
-In this chapter, we'll interact with our holograms. First, we'll add a cursor to visualize our [Gaze](gaze.md). Then, we'll add [Gestures](gestures.md) and use our hand to place our holograms in space.
+In this chapter, we'll interact with our holograms. First, we'll add a cursor to visualize our [Gaze](gaze-and-commit.md). Then, we'll add [Gestures](gaze-and-commit.md#composite-gestures) and use our hand to place our holograms in space.
 
 ### Objectives
 
@@ -613,7 +613,7 @@ In this chapter, we'll make the anchor able to be placed on real-world surfaces.
 
 ### Objectives
 
-* Place holograms on the spatial map based on players’ head position.
+* Place holograms on the spatial mapping mesh based on players’ head position.
 
 ### Instructions
 

@@ -45,7 +45,13 @@ You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://git
 
 ## See also
 
-* [Gestures](gestures.md)
+* [Eye-based interaction] (eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2] (eye-tracking.md)
+* [Gaze and commit](gaze-and-commit.md)
+* [Hands - Direct manipulation](direct-manipulation.md)
+* [Hands - Gestures](gaze-and-commit.md#composite-gestures)
+* [Hands - Point and commit](point-and-commit.md)
+* [Instinctual interactions](interaction-fundamentals.md)
 * [Motion controllers](motion-controllers.md)
 * [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)

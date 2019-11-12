@@ -19,7 +19,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 * Configure your development environment to use Microsoft Spatial Sound.
 * Use Spatial Sound to enhance interactions.
-* Use Spatial Sound in conjunction with Spatial Mapping.
+* Use Spatial Sound in conjunction with [Spatial Mapping](spatial-mapping.md).
 * Understand sound design and mixing best practices.
 * Use sound to enhance special effects and bring the user into the Mixed Reality world.
 
@@ -106,7 +106,7 @@ If deploying to HoloLens:
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
-4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device---hololens-1st-gen).
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device).
 
 If deploying to an immersive headset:
 
@@ -400,7 +400,7 @@ Imagining your mix as an inverted funnel, with the least important (and generall
 
 Voice overs are an interesting scenario. Based on the experience you are creating you may wish to have a stereo (not localized) sound or to spatialize your voice overs. Two Microsoft published experiences illustrate excellent examples of each scenario.
 
-[HoloTour](http://www.microsoft.com/store/p/holotour/9nblggh5pj87) uses a stereo voice over. When the narrator is describing the location being viewed, the sound is consistent and does not vary based on the user's position. This enables the narrator to describe the scene without taking away from the spatialized sounds of the environment.
+[HoloTour](https://www.microsoft.com/store/p/holotour/9nblggh5pj87) uses a stereo voice over. When the narrator is describing the location being viewed, the sound is consistent and does not vary based on the user's position. This enables the narrator to describe the scene without taking away from the spatialized sounds of the environment.
 
 [Fragments](https://www.microsoft.com/store/p/fragments/9nblggh5ggm8) utilizes a spatialized voice over in the form of a detective. The detective's voice is used to help bring the user's attention to an important clue as if an actual human was in the room. This enables an even greater sense of immersion into the experience of solving the mystery.
 

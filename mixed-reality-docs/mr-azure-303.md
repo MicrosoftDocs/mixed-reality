@@ -716,7 +716,7 @@ To create this class:
                 entityDic.Add(ed.type, ed.entity);
             }
 
-            // Depending on the topmost recognised intent, read the entities name
+            // Depending on the topmost recognized intent, read the entities name
             switch (aQuery.topScoringIntent.intent)
             {
                 case "ChangeObjectColor":
@@ -866,7 +866,7 @@ To create this class:
 
     ```csharp
         /// <summary>
-        /// Determines which obejct reference is the target GameObject by providing its name
+        /// Determines which object reference is the target GameObject by providing its name
         /// </summary>
         private GameObject FindTarget(string name)
         {
@@ -1059,7 +1059,7 @@ To Deploy on Local Machine:
 ## Chapter 12 – Improving your LUIS service
 
 >[!IMPORTANT] 
-> This chapter is incredibly important, and may need to be interated upon several times, as it will help improve the accuracy of your LUIS service: ensure you complete this.
+> This chapter is incredibly important, and may need to be iterated upon several times, as it will help improve the accuracy of your LUIS service: ensure you complete this.
 
 To improve the level of understanding provided by LUIS you need to capture new utterances and use them to re-train your LUIS App.
 

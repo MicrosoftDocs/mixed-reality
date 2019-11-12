@@ -36,16 +36,24 @@ One technique to achieve this is to provide persistent points (also known as lan
 
 Placing objects in the periphery can encourage users to look to the side and this can be aided by attention directors, as described below.
 
+<br>
+
+---
+
 ## User comfort
 
 For mixed reality experiences with large objects or many objects, it is crucial to consider how much head and neck movement is necessary to interact with content. Experiences can be divided into three categories in terms of head movement: **Horizontal** (side to side), **vertical** (up and down), or **immersive** (both horizontal and vertical). When possible, limit the majority of interactions to either horizontal or vertical categories, ideally with most experiences taking place in the center of the holographic frame while the user's head is in a neutral position. Avoid interactions that cause the user to constantly move their view to an unnatural head positions (for example, always looking up to access a key menu interaction).
 
-![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2-750px.png)<br>
+![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2.png)<br>
 *Optimal region for content is 0 to 35 degrees below horizon*
 
 Horizontal head movement is more [comfortable](comfort.md) for frequent interactions, while vertical movements should be reserved for uncommon events. For example, an experience involving a long horizontal timeline should limit vertical head movement for interactions (like looking down at a menu).
 
 Consider encouraging full-body movement, rather than just head movement, by placing objects around the user's space. Experiences with moving objects or large objects should pay special attention to head movement, especially where they require frequent movement along both the horizontal and vertical axes.
+
+<br>
+
+---
 
 ## Interaction considerations
 
@@ -65,9 +73,13 @@ Alternatively, consider placing interface elements directly on the specific cont
 
 ### Gaze and gaze targeting
 
-The holographic frame presents a tool for the developer to trigger interactions as well as evaluate where a user's attention dwells. [Gaze](gaze.md) is one of the [key interactions on HoloLens](interaction-fundamentals.md), where gaze can be paired with [gestures](gestures.md) (such as with air-tapping) or [voice](voice-input.md) (allowing for shorter, more natural voice-based interactions). As such, this makes the holographic frame both a space for observing digital content as well as interacting with it. If the experience calls for interacting with multiple objects around the user's space (for example, multi-selecting objects around the user's space with gaze + gesture), consider bringing those objects into the user's view or limiting the amount of necessary head movement to promote [user comfort](comfort.md).
+The holographic frame presents a tool for the developer to trigger interactions as well as evaluate where a user's attention dwells. [Gaze](gaze-and-commit.md) is one of the [key interactions on HoloLens](interaction-fundamentals.md), where gaze can be paired with [gestures](gaze-and-commit.md#composite-gestures) (such as with air-tapping) or [voice](voice-input.md) (allowing for shorter, more natural voice-based interactions). As such, this makes the holographic frame both a space for observing digital content as well as interacting with it. If the experience calls for interacting with multiple objects around the user's space (for example, multi-selecting objects around the user's space with gaze + gesture), consider bringing those objects into the user's view or limiting the amount of necessary head movement to promote [user comfort](comfort.md).
 
 Gaze can also be used to track user attention through an experience and see which objects or parts of the scene the user paid the most attention to. This can be especially use for debugging an experience, allowing for analytical tools like heatmaps to see where users are spending the most time or are missing certain objects or interaction. Gaze tracking can also provide a powerful tool for facilitators in experiences (see the [Lowe's Kitchen](holographic-frame.md#lowes-kitchen) example).
+
+<br>
+
+---
 
 ## Performance
 
@@ -75,15 +87,23 @@ Proper use of the holographic frame is fundamental to the [performance quality](
 
 Digital content within the holographic frame of the HoloLens can also be paired with the [stabilization plane](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) for optimal performance and [hologram stability](hologram-stability.md).
 
+<br>
+
+---
+
 ## Examples
 
 ### Volvo Cars
 
->[!VIDEO https://www.youtube.com/embed/DilzwF90vec]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/DilzwF90vec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In the showroom experience from Volvo Cars, customers are invited to learn about a new car's capabilities in a HoloLens experience guided by a Volvo associate. Volvo faced a challenge with the holographic frame: a full-size car is too large to put right next to a user. The solution was to begin the experience with a physical landmark, a central table in the showroom, with a smaller digital model of the car placed on top of the table. This ensures the user is seeing the full car when it is introduced, allowing for a sense of spatial understanding once the car grows to its real-world scale later in the experience.
 
 Volvo's experience also makes use of visual directors, creating a long visual effect from the small-scale car model on the table to a wall in the show room. This leads to a 'magic window' effect, showing the full view of the car at a distance, illustrating further features of the car at real-world scale. The head movement is horizontal, without any direct interaction from the user (instead gathering cues visually and from the Volvo associate's narration of the experience).
+
+<br>
+
+---
 
 ### Lowe's Kitchen
 
@@ -98,6 +118,10 @@ The user's experience is managed, in part, by a tablet experience controlled by 
 
 For a deeper look at the Lowe's Kitchen experience, see [Microsoft's keynote at Ignite 2016](https://www.youtube.com/watch?v=gC_4JxF0e_k).
 
+<br>
+
+---
+
 ### Fragments
 
 In the HoloLens game Fragments, you living room is transformed into virtual crime scene showing clues and evidence, as well as a virtual meeting room, where you talk with characters that sit on your chairs and lean on your walls.
@@ -108,6 +132,10 @@ In the HoloLens game Fragments, you living room is transformed into virtual crim
 When users initially begin the experience, they are given a short period of adjustment, where very little interaction is required, instead encouraging them to look around. This also helps ensure the room is properly mapped for the game's interactive content.
 
 Throughout the experience, characters become focal points and act as visual directors (head movements between characters, turning to look or gesture toward areas of interest). The game also relies on more prominent visual cues when a user takes too long to find an object or event and makes heavy use of spatial audio (especially with characters voices when entering a scene).
+
+<br>
+
+---
 
 ### Destination: Mars
 

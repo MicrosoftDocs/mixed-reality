@@ -22,7 +22,7 @@ keywords: mixed reality, unity, tutorial, hololens
     <tr>
         <td><strong>Course</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://www.microsoft.com/en-us/hololens/hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>

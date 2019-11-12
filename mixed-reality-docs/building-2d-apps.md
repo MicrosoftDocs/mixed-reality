@@ -113,7 +113,7 @@ Now that your UWP app is running on immersive headsets and/or HoloLens as a 2D h
 
 ![From responsive design](images/scale-500px.png)
 
-Windows 10 moves all visual design from real screen pixels to **effective pixels**. That means, developers design their UI following the Windows 10 Human Interface Guidelines for effective pixels, and Windows scaling ensures those effective pixels are the right size for usability across devices, resolutions, DPI, etc. See this [great read on MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) to learn more as well as this [BUILD presentation](http://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
+Windows 10 moves all visual design from real screen pixels to **effective pixels**. That means, developers design their UI following the Windows 10 Human Interface Guidelines for effective pixels, and Windows scaling ensures those effective pixels are the right size for usability across devices, resolutions, DPI, etc. See this [great read on MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) to learn more as well as this [BUILD presentation](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx).
 
 Even with the unique ability to place apps in your world at a range of distances, TV-like viewing distances are recommended to produce the best readability and interaction with gaze/gesture. Because of that, a virtual slate in the Mixed Reality Home will display your flat UWP view at:
 
@@ -155,14 +155,14 @@ It is important to test your app to make sure the text is readable, the buttons 
 
 ## New input possibilities
 
-HoloLens uses advanced depth sensors to see the world and see users. This enables advanced hand gestures like [bloom](gestures.md#bloom) and [air-tap](gestures.md#air-tap). Powerful microphones also enable [voice experiences](voice-input.md).
+HoloLens uses advanced depth sensors to see the world and see users. This enables advanced hand gestures like [bloom](system-gesture.md#bloom) and [air-tap](gaze-and-commit.md#composite-gestures). Powerful microphones also enable [voice experiences](voice-input.md).
 
 With Desktop headsets, users can use motion controllers to point at apps and take action. They can also use a gamepad, targeting objects with their gaze.
 
-Windows takes care of all of this complexity for UWP apps, translating your [gaze](gaze.md), gestures, voice and motion controller input to [pointer events](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) that abstract away the input mechanism. For example, a user may have done an air-tap with their hand or pulled the Select trigger on a motion controller, but 2D applications don't need to know where the input came from - they just see a 2D touch press, as if on a touchscreen.
+Windows takes care of all of this complexity for UWP apps, translating your [gaze](gaze-and-commit.md), gestures, voice and motion controller input to [pointer events](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) that abstract away the input mechanism. For example, a user may have done an air-tap with their hand or pulled the Select trigger on a motion controller, but 2D applications don't need to know where the input came from - they just see a 2D touch press, as if on a touchscreen.
 
 Here are the high level concepts/scenarios you should understand for input when bringing your UWP app to HoloLens:
-* [Gaze](gaze.md) turns into hover events, which can unexpectedly trigger menus, flyouts or other user interface elements to pop up just by gazing around your app.
+* [Gaze](gaze-and-commit.md) turns into hover events, which can unexpectedly trigger menus, flyouts or other user interface elements to pop up just by gazing around your app.
 * Gaze is not as precise as mouse input. Use appropriately sized hit targets for HoloLens, similar to touch-friendly mobile applications. Small elements near the edges of the app are especially hard to interact with.
 * Users must switch input modes to go from scrolling to dragging to two finger panning. If your app was designed for touch input, consider ensuring that no major functionality is locked behind two finger panning. If so, consider having alternative input mechanisms like buttons that can initiate two finger panning. For example, the Maps app can zoom with two finger panning but has a plus, minus, and rotate button to simulate the same zoom interactions with single clicks.
 
@@ -174,8 +174,7 @@ Once your app is up and running, package your app to [submit it to the Microsoft
 
 ## See also
 * [App model](app-model.md)
-* [Gaze](gaze.md)
-* [Gesture](gestures.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Motion controllers](motion-controllers.md)
 * [Voice input](voice-input.md)
 * [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)

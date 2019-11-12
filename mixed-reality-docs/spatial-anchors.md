@@ -31,7 +31,7 @@ These spatial anchor guidelines will help you render stable holograms that accur
 
 Typically, users are the ones explicitly placing spatial anchors.
 
-For example, on HoloLens, an application can intersect the user's [gaze](gaze.md) ray with the [spatial mapping](spatial-mapping.md) mesh to let the user decide where to place a hologram. When the user taps to place that hologram, create a spatial anchor at the intersection point, and then place the hologram at the origin of that anchor's coordinate system.
+For example, on HoloLens, an application can intersect the user's [gaze](gaze-and-commit.md) ray with the [spatial mapping](spatial-mapping.md) mesh to let the user decide where to place a hologram. When the user taps to place that hologram, create a spatial anchor at the intersection point, and then place the hologram at the origin of that anchor's coordinate system.
 
 Local spatial anchors are easy and performant to create. The system will consolidate their internal data if multiple anchors can share their underlying sensor data. You should typically create a new local spatial anchor for each hologram that a user explicitly places, except in cases outlined below, such as rigid groups of holograms.
 

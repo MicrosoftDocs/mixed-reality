@@ -24,7 +24,7 @@ In this tutorial, you will learn how to prepare for creating a shared experience
 
 ## Setting up Photon
 
-1. Set up a [Photon](https://dashboard.photonengine.com/en-US/Account/SignUp) account. Navigate to the Photon Sign-up page by clicking on [this link](https://dashboard.photonengine.com/en-US/Account/SignUp). Follow the instructions on the sign-up page to create the account. 
+1. Set up a [Photon](https://dashboard.photonengine.com//Account/SignUp) account. Navigate to the Photon Sign-up page by clicking on [this link](https://dashboard.photonengine.com//Account/SignUp). Follow the instructions on the sign-up page to create the account. 
    
 
 ![Module3Chapter1step1im](images/module3chapter1step1im.PNG)
@@ -43,7 +43,7 @@ In this tutorial, you will learn how to prepare for creating a shared experience
 
 ![Module3Chapter1step8im](images/module3chapter1step8im.PNG)
 
-5. Create a new unity project and name it HLSharingProject. For instructions on how to create a new Unity project, please refer to [the Base Module's "Create Unity Project" section](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1#create-new-unity-project). 
+5. Create a new unity project and name it HLSharingProject. For instructions on how to create a new Unity project, please refer to [the Base Module's "Create Unity Project" section](https://docs.microsoft.com//windows/mixed-reality/mrlearning-base-ch1#create-new-unity-project). 
 
 6. Once the project loads, click the Assets Store tab, as shown in the image below. Then, in the search box highlighted in the image below, type in PUN, and select the Photon PUN 2 - FREE" asset from the search results. 
 

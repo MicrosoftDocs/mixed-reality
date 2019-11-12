@@ -76,5 +76,5 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 ## See Also
 * [HoloLens (1st gen): Add Holographic Remoting](add-holographic-remoting.md)
 * [HoloLens 2: Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
-* [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

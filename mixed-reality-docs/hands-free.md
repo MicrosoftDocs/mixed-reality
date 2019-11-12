@@ -11,38 +11,43 @@ keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design
 
 # Hands-free
 
-
-
 ## Scenarios
 
-As outlined in the [Interaction model overview](interaction-fundamentals.md), once you have identified the users and their goals, ask yourself what environmental or situational challenges they might face as they work to accomplish their tasks. For example, many users need to use their hands to accomplish their real-world goals, and will have difficulty interacting with a hands-and-controllers based interface. 
+As outlined in the [interaction model overview](interaction-fundamentals.md), once you have identified your users and their goals, ask yourself what environmental or situational challenges they might face as they work to accomplish their tasks. 
+For example, many users need to use their hands to accomplish their real-world goals, and they will have difficulty interacting with a hands-and-controllers based interface. 
 
-Some specific scenarios might be: 
-* Being guided through a task, while hands are busy
-* Referencing materials while your hands are busy
+Some specific scenarios include: 
+* Being guided through a task, while the user's hands are busy
+* Referencing materials while the user's hands are busy
 * Hand fatigue
 * Gloves that can't be tracked
-* Carrying something
+* Carrying something in their hands
+* Social awkwardness to perform large hand gestures
+* Tight spaces
 
 
 ## Hands-free modalities
 
 ### [Voice input](voice-input.md)
 
-Using your voice to command and control an interface can not only allow the user to operate hands-free, but also skip multiple steps. The usage of this modality can range from allowing the user to simply read any button's name out loud to activate it, as in See-it-say-it, to conversing with an agent who can accomplish tasks for you.
+Using your voice to command and control an interface offers a convenient way to operate hands-free and to use shortcuts to flexibly skip multiple steps if desired. 
+With voice input, the user can simply read any button's name out loud to activate it _("see it, say it")_ and converse with a digital agent who can accomplish tasks for you.
 
 
+### [Gaze and dwell](gaze-and-dwell.md)
 
-### [Head-gaze and dwell](gaze-and-dwell.md)
-
-In some hands-free situations, using your voice is not ideal or even possible. Loud factory environments, privacy, or social norms can all be constraints. The head gaze + dwell model allows the user to navigate the app by using their head vector to point, while lingering, or dwelling on a button will activate it after a certain amount of time, typically around 1 second or so. 
+In some hands-free situations, using your voice is not ideal or even possible. 
+Loud factory environments, privacy, or social norms can all be constraints. 
+The gaze + dwell model allows the user to navigate an app without any additional input aside from their eye or head gaze: 
+The user simply keeps gazing (with their head or eyes) at the target and lingers there for a moment to activate it. 
+To learn more about the individual design considerations for gaze + dwell, check out [eye-gaze + dwell](gaze-and-dwell-eyes.md) and [head-gaze + dwell](gaze-and-dwell-head.md).
 
 
 ## Transitioning in and out of hands-free
 
 For these scenarios, freeing your hands from interacting with holograms for commanding and navigation can range from being an absolute requirement to operating the application, end-to-end, to an added convenience that the user can transition in and out of at any time. 
 
-If the requirement of the application is that it will always be used hands-free, whether by using dwell, voice commands, or the single voice command, "select", then make sure to make the appropriate accommodations in your UI. 
+If the requirement of the application is that it will always be used hands-free, whether by using dwell, custom voice commands, or the single voice command, "select", then make sure to make the appropriate accommodations in your UI. 
 
 If your target user needs to be able to switch from hands to hands-free at their discretion, then it is important to take the following principles into account.
 
@@ -59,10 +64,10 @@ While the first principle is about access, the second one is about availability.
 
 Some examples would be: 
 * A button to begin voice interactions
-* A voice command to transition to using head-gaze and dwell
+* A voice command to transition to, using head-gaze and dwell
 
 ### Add a dash of drama
-A mode switch is a big deal--it is important that when these transitions happen that they be an explicit, even dramatic switch, to let the user know what happened. 
+A mode switch is a big deal--it is important that when these transitions happen that they be an explicit, even a dramatic switch, to let the user know what happened. 
 
 
 ## Usability checklist
@@ -87,11 +92,15 @@ Does the user understand ...
 
 * Example: Dwell affordances are not built-in to typical 2D patterns
 * Example: Voice targeting is better with object highlighting
-* Example: Voice interactions are better with captions that have to be turned on
+* Example: Voice interactions are better with captions that need to be turned on
 
 
 ## See also
-* [Eye gaze on HoloLens 2](eye-tracking.md)
-* [Head-gaze and commit](gaze-and-commit.md)
-* [Direct manipulation with hands](direct-manipulation.md)
-* [Point and commit with hands](point-and-commit.md)
+* [Eye tracking on HoloLens 2](eye-tracking.md)
+* [Gaze and commit](gaze-and-commit.md)
+* [Gaze and dwell](gaze-and-dwell.md)
+* [Hands - Direct manipulation](direct-manipulation.md)
+* [Hands - Gestures](gaze-and-commit.md#composite-gestures)
+* [Hands - Point and commit](point-and-commit.md)
+* [Instinctual interactions](interaction-fundamentals.md)
+* [Voice input](voice-input.md)

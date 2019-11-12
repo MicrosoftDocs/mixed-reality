@@ -51,11 +51,23 @@ Due to the nature of additive displays, dark colors appear transparent. A solid 
 ## Storytelling with light and color
 
 Light and color can help make your holograms appear more naturally in a user's environment as well as offer guidance and help for the user. For holographic experiences, consider these factors as you explore lighting and color:
-* **Vignetting** - A 'vignette' effect to darken materials can help focus the user's attention on the center of the field of view. This effect darkens the hologram's material at some radius from the user's gaze vector. Note that this is also effective when the user's views holograms from an oblique or glancing angle.
-* **Emphasis** - Draw attention to objects or points of interaction by contrasting colors, brightness, and lighting. For a more detailed look at lighting methods in storytelling, see [Pixel Cinematography - A Lighting Approach for Computer Graphics](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).
 
-![Use of color to show emphasis for storytelling elements, shown here in a scene from Fragments.](images/640px-fragments.jpg)<br>
-*Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8).*
+:::row:::
+    :::column:::
+* **Vignetting** - A 'vignette' effect to darken materials can help focus the user's attention on the center of the field of view. This effect darkens the hologram's material at some radius from the user's gaze vector. Note that this is also effective when the user's views holograms from an oblique or glancing angle.<br>
+* **Emphasis** - Draw attention to objects or points of interaction by contrasting colors, brightness, and lighting. For a more detailed look at lighting methods in storytelling, see [Pixel Cinematography - A Lighting Approach for Computer Graphics](https://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).<br>
+        <br>
+        *Image: Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8).*
+    :::column-end:::
+        :::column:::
+        ![Use of color to show emphasis for storytelling elements, shown here in a scene from Fragments.](images/640px-fragments.jpg)<br>
+    :::column-end:::
+:::row-end:::
+
+
+<br>
+
+---
 
 ## See also
 * [Color Separation](hologram-stability.md#color-separation)

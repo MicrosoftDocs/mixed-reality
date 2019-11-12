@@ -122,7 +122,7 @@ Please read [Unity's Splash Screen documentation](https://docs.unity3d.com/Manua
 
 A Mixed reality headset depends on seeing the environment around it to construct [world-locked coordinate systems](coordinate-systems-in-unity.md), which allow holograms to remain in position. When the headset is unable to locate itself in the world, the headset is said to have *lost tracking*. In these cases, functionality dependent on world-locked coordinate systems, such as spatial stages, spatial anchors and spatial mapping, do not work.
 
-If a loss of tracking occurs, Unity's default behavior is to stop rendering holograms, pause the [game loop](http://docs.unity3d.com/Manual/ExecutionOrder.html), and display a tracking lost notification that comfortably follows the users gaze. Custom notifications can also be provided in the form of a tracking loss image. For apps that depend upon tracking for their whole experience, it's sufficient to let Unity handle this entirely until tracking is regained. Developers can supply a custom image to be shown during tracking loss.
+If a loss of tracking occurs, Unity's default behavior is to stop rendering holograms, pause the [game loop](https://docs.unity3d.com/Manual/ExecutionOrder.html), and display a tracking lost notification that comfortably follows the users gaze. Custom notifications can also be provided in the form of a tracking loss image. For apps that depend upon tracking for their whole experience, it's sufficient to let Unity handle this entirely until tracking is regained. Developers can supply a custom image to be shown during tracking loss.
 
 To customize the tracking lost image:
 

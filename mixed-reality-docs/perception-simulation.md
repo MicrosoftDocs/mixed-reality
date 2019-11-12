@@ -37,7 +37,7 @@ To control simulation, you'll issue updates to objects retrieved from an IPercep
 ![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.  For Windows Mixed Reality, this can be retrieved in the Settings app under "Update & Security", then "For developers" in the "Connect using:" section under "Enable Device Portal."  Be sure to note both the IP address and port.
 
 First, you'll call RestSimulationStreamSink.Create to get a RestSimulationStreamSink object. This is the target device or emulator that you will control over an http connection. Your commands will be passed to and handled by the [Windows Device Portal](using-the-windows-device-portal.md) running on the device or emulator. The four parameters you'll need to create an object are:
-* Uri uri - IP address of the target device (e.g., "http://123.123.123.123" or "http://123.123.123.123:50080")
+* Uri uri - IP address of the target device (e.g., "https://123.123.123.123" or "https://123.123.123.123:50080")
 * System.Net.NetworkCredential credentials - Username/password for connecting to the [Windows Device Portal](using-the-windows-device-portal.md) on the target device or emulator. If you are connecting to the emulator via its local address (e.g., 168.*.*.*) on the same PC, any credentials will be accepted.
 * bool normal - True for normal priority, false for low priority. You generally want to set this to *true* for test scenarios, which allows your test to take control.  The emulator and Windows Mixed Reality simulation use low priority connections.  If your test also uses a low priority connection, the most recently established connection will be in control.
 * System.Threading.CancellationToken token - Token to cancel the async operation.
@@ -78,7 +78,7 @@ namespace ConsoleApplication1
                 {
                     sink = await RestSimulationStreamSink.Create(
                         // use the IP address for your device/emulator
-                        new Uri("http://169.254.227.115"),
+                        new Uri("https://169.254.227.115"),
                         // no credentials are needed for the emulator
                         new System.Net.NetworkCredential("", ""),
                         // normal priorty
@@ -134,7 +134,7 @@ namespace ConsoleApplication1
                 {
                     sink = await RestSimulationStreamSink.Create(
                         // use the IP address for your device/emulator
-                        new Uri("http://169.254.227.115"),
+                        new Uri("https://169.254.227.115"),
                         // no credentials are needed for the emulator
                         new System.Net.NetworkCredential("", ""),
                         // normal priorty

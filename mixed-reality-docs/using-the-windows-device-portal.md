@@ -27,12 +27,12 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 ## Setting up HoloLens to use Windows Device Portal
 
 1. Power on your HoloLens and put on the device.
-2. Perform the [bloom](gestures.md#bloom) gesture to launch the main menu.
-3. Gaze at the **Settings** tile and perform the [air-tap](gestures.md#air-tap) gesture. Perform a second air-tap to place the app in your environment. The Settings app will launch after you place it.
+2. Perform the [bloom](system-gesture.md#bloom) gesture to launch the main menu.
+3. Gaze at the **Settings** tile and perform the [air-tap](gaze-and-commit.md#composite-gestures) gesture. Perform a second air-tap to place the app in your environment. The Settings app will launch after you place it.
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
 6. Enable **Developer Mode**.
-7. [Scroll down](gestures.md#composite-gestures) and enable **Device Portal**.
+7. [Scroll down](gaze-and-commit.md#composite-gestures) and enable **Device Portal**.
 8. If you are setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, click **Pair** to [generate a pairing PIN](using-visual-studio.md). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
 
    ![Enabling developer mode in the Settings app for Windows Holographic](images/deviceportalsettings.png)
@@ -49,7 +49,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 1. [Install the tools](install-the-tools.md) to make sure you have Visual Studio Update 1 with the Windows 10 developer tools installed on your PC. This enables USB connectivity.
 2. Connect your HoloLens to your PC with a micro-USB cable.
-3. From a web browser on your PC, go to [http://127.0.0.1:10080](http://127.0.0.1:10080).
+3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
 ## Connecting to an emulator
 
@@ -158,7 +158,7 @@ Use the Mixed Reality Capture page to save media streams from the HoloLens.
 > [!NOTE]
 > There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#simultaneous-mrc-limitations):
 > * If an app tries to access the photo/video camera while Windows Device Portal is recording a video, the video recording will stop.
->   * HoloLens 2 will not stop recording video if the app acesses the photo/video camera with SharedReadOnly mode.
+>   * HoloLens 2 will not stop recording video if the app accesses the photo/video camera with SharedReadOnly mode.
 > * If an app is actively using the photo/video camera, Windows Device Portal is able to take a photo or record a video.
 > * Live streaming:
 >   * HoloLens (1st gen) prevents an app from accessing the photo/video camera while live streaming from Windows Device Portal.
