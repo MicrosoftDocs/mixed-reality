@@ -23,7 +23,7 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
 
 ## Instructions
 
-1. Download and save the Mixed Reality Toolkit unity package by clicking [here.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.0.0-RC2.1/Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC2.1.unitypackage)
+1. Download and save the Mixed Reality Toolkit Foundation unity package by clicking [here.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage)
 
 2. In Unity, click the Assets menu and select Import Package, then click on Custom Package.
 
@@ -45,13 +45,15 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
 
 ![Module3Chapter2step5im](images/module3chapter2step5im.PNG)
 
-6. Once that is complete, a new configuration file appears, giving you the choice to customize the profile. Click Copy and Customize.
+6. Once that is complete, a new configuration file appears, giving you the choice to customize the profile. 
 
-![Module3Chapter2step6ima](images/module3chapter2step6ima.PNG)
+![Module2Chapter1step4im](images/Module2Chapter1step4im.PNG)
 
-![Module3Chapter2step6imb](images/module3chapter2step6imb.PNG)
+7. Select Mixed-Reality Toolkit (MRTK) from the  hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and press the "Copy & Customize" button  as shown in the figure below.  A pop will appear after this and select clone option in the pop up menu.
 
 ![Module3Chapter2step6imc](images/module3chapter2step6imc.PNG)
+
+![Module3Chapter2step6imd](images/module3chapter2step6imd.PNG)
 
 7. Scroll down and uncheck Enable Diagnostics system if you want to hide the diagnostics window. We recommend keeping the diagnostics window enabled during application development to monitor performance, and then disabling it during production or application demonstrations. 
 

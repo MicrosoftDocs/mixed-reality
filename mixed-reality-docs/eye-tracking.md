@@ -11,8 +11,10 @@ keywords: Eye tracking, mixed reality, input, eye-gaze, calibration
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what the user is looking at. 
-This page provides an overview of this new capability to developers and designers on how they can benefit from eye tracking for various use cases and basic developer guidance. 
+HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what the user is looking at. This page tells developers how they can benefit from eye tracking for various use cases as well as what to look for when designing eye-gaze-based user interactions. 
+
+Eye tracking API has been designed with user’s privacy in mind, avoiding passing any identifiable information, particularly any biometrics. For eye-tracking capable applications, the user needs to grant app permission to use eye tracking information. 
+
 
 ### Device support
 <table>
@@ -101,16 +103,19 @@ Additional use cases for _implicit actions_ may include:
 - **Attentive holograms:** Holograms that subtly react when being gazed upon. This can range from slightly glowing UI elements, a slowly blooming flower to a virtual dog starting to look back at the user and wagging its tail. This interaction might provide an interesting sense of connectivity and satisfaction in your application.
 
 ### Attention tracking	 
-Information about where or what users look at is an immensely powerful tool to assess usability of designs, and to identify problems in efficient workflows. 
+Information about where or what users look at can be an immensely powerful tool – it can help assess usability of designs and identify problems in workflows to make them more efficient.
 Eye tracking visualization and analytics are a common practice in various application areas. 
 With HoloLens 2, we provide a new dimension to this understanding as 3D holograms can be placed in real-world contexts and assessed accordingly. 
 The [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) provides basic examples for logging and loading eye tracking data and how to visualize them.
+Microsoft is dedicated to facilitating innovation while ensuring that users are provided an informed and transparent experience with how their eye tracking information is used.  We will work with our developers and UX teams to provide guidance for third parties that ensures experiences are centered around the user.  
+
 
 Other applications in this area may include: 
--	**Remote eye-gaze visualization:** Visualize what remote collaborators are looking at to increase shared understanding.
--	**User research studies:** Attention tracking can help better understanding how we perceive and engage with our environment which may help in better human intent models for more instinctual human-computer-interactions. 
--	**Training:** Improved training of novices by better understanding experts' visual search patterns and their hand-eye-coordination for complex tasks, such as for analysis of medical data or while operating machinery.
--	**Design evaluations and market research:** Eye tracking is a common tool for market research when evaluating website and product designs. With HoloLens 2, we can extend this to 3D spaces by merging digital product design variants with the physical environment. 
+-	**Remote eye-gaze visualization:** Remote eye-gaze visualizations: Visualize what remote collaborators are looking at to be able to provide immediate feedback and facilitate more accurate information processing.
+-	**User research studies:** Attention tracking can help researchers get more insights into how users perceive and engage with natural environment,  without interfering, to design more instinctual human-computer-interactions. 
+Eye tracking can provide information that is not directly articulated by participants in the study, that otherwise might be easily missed by the researcher. 
+-	**Training and performance monitoring:** Practice and optimize the execution of tasks by identifying bottlenecks more effectively in the execution flow. Eye tracking can provide natural, real-time and objective information to help improve training, productivity, and safety in the workplace. 
+-	**Design evaluations, marketing and consumer research:** Eye tracking enables commercial companies to perform marketing and consumer studies in real-world environments or analyze what captures user’s attention to improve product or space design. 
 
 ### Additional use cases
 - **Gaming:** Ever wanted to have superpowers? 
@@ -133,10 +138,9 @@ Building an interaction that takes advantage of fast-moving eye targeting can be
 On the one hand, the eyes move so fast that you need to be careful on how to use eye-gaze input, because otherwise users may find the experience overwhelming or distracting. 
 On the other hand, you can also create truly magical experiences that will excite your users! 
 To help you, check out our overview of key advantages, challenges and design recommendations for [eye-gaze for interaction](eye-gaze-interaction.md). 
-
-<br>
  
 ## Fallback solutions when eye tracking is not available
+
 In rare cases eye tracking data might not be available.
 This can be due to different reasons from which the most common are listed below:
 * The system failed to [calibrate the user](calibration.md).
@@ -144,10 +148,10 @@ This can be due to different reasons from which the most common are listed below
 * The user is calibrated, but decided to not give permission to your app to use their eye tracking data.	
 * The user has unique eyeglasses or some eye condition that the system does not yet support.	
 * External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight and occlusions due to hair in front of the eyes.	
+
 Hence, developers should ensure that there is appropriate fallback support for these users. 
 On the [Eye Tracking in DirectX](gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) page, we explain the APIs required to detect whether eye tracking data is available. 
 
-As described above, there are several reasons why eye tracking data may not be available. 	
 While some users may have consciously decided to revoke access to their eye tracking data and are ok with the trade-off of an inferior user experience to the privacy of not providing access to their eye tracking data, in some cases this may be unintentional. 	
 Hence, if your app uses eye tracking, and this is an important part of the experience, we recommend clearly communicating this to the user. 	
 Kindly informing the user why eye tracking is critical for your application (maybe even listing some enhanced features) to experience the full potential of your application can help the user to better understand what they are giving up. 	

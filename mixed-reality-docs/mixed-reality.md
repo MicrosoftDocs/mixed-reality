@@ -68,7 +68,7 @@ Most mobile phones on the market today have little to no environmental understan
 <br>
 
 ![The mixed reality spectrum](images/MixedRealitySpectrum.jpg)<br>
-*The mixed reality specturm*
+*The mixed reality spectrum*
 
 <br>
 

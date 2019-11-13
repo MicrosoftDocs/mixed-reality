@@ -25,7 +25,7 @@ There is only a certain amount of information that can be transferred from the a
 * 1028 * 720 * 2 * 256 = 378961920 (100%) (full res volume: too many samples)
 * 1028 * 720 * 2 * 1 = 1480320 (0.3% of full) (thin slice: 1 sample per pixel, runs smoothly)
 * 1028 * 720 * 2 * 10 = 14803200 (3.9% of full) (sub-volume slice: 10 samples per pixel, runs fairly smoothly, looks 3d)
-* 200 * 200 * 2 * 256 = 20480000 (5% of full) (lower res volume: fewer pixels, full volume, looks 3d but a bit blury)
+* 200 * 200 * 2 * 256 = 20480000 (5% of full) (lower res volume: fewer pixels, full volume, looks 3d but a bit blurry)
 
 ## Representing 3D Textures
 
