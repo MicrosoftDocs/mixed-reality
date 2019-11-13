@@ -167,14 +167,14 @@ In this section, you will learn how to use the pan gesture. This is useful for s
 
 10. Add the MoveWithPan script to all the cubes by holding down the CTRL key while selecting each **Cube** object in the Hierarchy panel. In the Inspector panel, click Add Component, and search for and select the **Move With Pan** script to add it to all the cubes.
 
-    ![NEW mrlearning-base-ch5-2-step10a.png](images/mrlearning-base-ch5-2-step10a.png)
+    ![mrlearning-base-ch5-2-step10a.png](images/mrlearning-base-ch5-2-step10a.png)
 
     >[!NOTE]
     >The MoveWithPan script is not part of MRTK but included with the BaseModuleAssets asset imported in the previous lesson.
 
     With the cubes still selected, drag the **Quad** object from the Hierarchy panel into the **Pan Input Source** field of the **Move With Pan** script component.
 
-    ![NEW mrlearning-base-ch5-2-step10b.png](images/mrlearning-base-ch5-2-step10b.png)
+    ![mrlearning-base-ch5-2-step10b.png](images/mrlearning-base-ch5-2-step10b.png)
 
     Now, the cubes will move with your pan gesture.
 
@@ -212,9 +212,12 @@ In this section, we will explore how to enable eye tracking in our demo. We will
 
     ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
 
-3. Next, we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series repository. It is not included by default with the Mixed Reality Toolkit. For each 3D object in the grid collection, add the EyeTrackingTutorialDemo script by searching for the component in the Add Component menu.
+3. Next, we will add the EyeTrackingTutorialDemo script for some exciting interactions. For each 3D object in the grid collection, add the EyeTrackingTutorialDemo script by searching for the component in the Add Component menu.
 
-   ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
+    ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
+
+    >[!NOTE]
+    >The EyeTrackingTutorialDemo script material is not part of MRTK but included with the BaseModuleAssets asset imported in the previous lesson.
 
 4. Spin the object while looking at the target. We want to configure our 3D objects to spin while we are looking at them. To do this, insert a new field in the While Looking At Target() section of the EyeTrackingTarget component, as shown in the image below.
 
