@@ -73,11 +73,12 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
 
 11. Import the listed custom packages:
 
-    a. [Base module assets](https://github.com/Developer-OI/MixedRealityLearning/releases/tag/1.2.1)
+    a. [Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage)
 
     b. [Sharing module assets](https://github.com/Developer-OI/MixedRealityLearning/releases/tag/2.0)
 
-    > Note: If you have already completed [Getting started tutorials](mrlearning-base-ch1.md) you might have already have the "Base module assets"  in your download directory. If so, you can skip downloading assets in step "a".
+    >[!TIP]
+    >If you have completed the [Getting started tutorials](mrlearning-base-ch1.md), you might still have the Unity package named _Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage_ stored on your computer. If so, you can skip downloading the asset listed in step a above.
 
 ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
 
