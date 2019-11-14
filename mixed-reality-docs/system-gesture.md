@@ -56,7 +56,7 @@ To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which
     :::column-end:::
     :::column:::
         ![Bloom open](images/bloom-open.png)<br>
-        **Step 2: Palm up with fingertips spreaded**<br>
+        **Step 2: Palm up with fingertips spread**<br>
     :::column-end:::
 :::row-end:::
 
@@ -92,7 +92,7 @@ We have also designed a one-handed solution for ease of access in HoloLens 2. Th
     :::column-end:::
     :::column:::
         ![Wrist button pinch](images/wrist-button-pinch.png)<br>
-        **Step: Eye gaze at the button then pinch**<br>
+        **Step 2: Eye gaze at the button then pinch**<br>
     :::column-end:::
 :::row-end:::
 

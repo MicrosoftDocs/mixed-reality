@@ -112,7 +112,7 @@ public class ExampleClass : MonoBehaviour
 
     [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It is the process of wrapping value-typed variables such as char, int, bool, etc. into reference-typed variables. When a value-typed variable is "boxed", it is wrapped inside of a System.Object which is stored on the managed heap. Thus, memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
 
-    One of the most common forms of boxing in development is the use of [nullable value types](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/nullable-types/). It is common to want to be able to return null for a value type in a function especially when the operation may fail trying to get the value. The potential problem with this approach is that allocation now occur on the heap and consequently need to be garbage collected later.
+    One of the most common forms of boxing in development is the use of [nullable value types](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/). It is common to want to be able to return null for a value type in a function especially when the operation may fail trying to get the value. The potential problem with this approach is that allocation now occur on the heap and consequently need to be garbage collected later.
 
     **Example of boxing in C#**
 
@@ -268,7 +268,7 @@ Techniques that operate on the full screen can be quite expensive since their or
 
 ### Optimal lighting settings
 
-[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide oustanding visual results but involves quite expensive lighting calculations. It is recommended to disable Realtime Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**.
+[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide outstanding visual results but involves quite expensive lighting calculations. It is recommended to disable Realtime Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**.
 
 Further, it is recommended to disable all shadow casting as these also add expensive GPU passes onto a Unity scene. Shadows can be disable per light but can also be controlled holistically via Quality settings.
 
@@ -296,7 +296,7 @@ An easy approximation to compare shaders in performance is to identify the avera
 
     ![Unity Standard Shader Operations](images/unity-standard-shader-compilation.png)
 
-#### Optmize pixel shaders
+#### Optimize pixel shaders
 
 Looking at the compiled statistic results using the method above, the [fragment shader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) will generally execute more operations than the [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders) on average. The fragment shader, also known as the pixel shader, is executed per pixel on the screen output while the vertex shader is only executed per-vertex of all meshes being drawn to the screen. 
 
@@ -312,7 +312,7 @@ Unity also provides an unlit, vertex lit, diffuse, and other simplified shader o
 
 #### Shader preloading
 
-Use *Shader preloading* and other tricks to optimize [shader load time](http://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html). In particular, shader preloading means you won't see any hitches due to runtime shader compilation.
+Use *Shader preloading* and other tricks to optimize [shader load time](https://docs.unity3d.com/Manual/OptimizingShaderLoadTime.html). In particular, shader preloading means you won't see any hitches due to runtime shader compilation.
 
 ### Limit overdraw
 

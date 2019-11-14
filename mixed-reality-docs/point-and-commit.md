@@ -13,8 +13,7 @@ keywords: Mixed Reality, interaction, design, HoloLens, hands, far, point and co
 
 ![Cursors](images/UX/UX_Hero_HandRay.jpg)
 
-
-Point and commit with hands is an input model that enables users to target, select and manipulate 2D content and 3D objects in the distance. This "far" interaction technique is unique to mixed reality, and is not a way humans naturally interact with the real world. For example, in the super hero movie, *X-Men*, the character [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) is capable of reaching out and manipulating a far object in the distance with his hands. This is not something humans can do in reality. In both HoloLens (AR) and Mixed Reality (MR), we equip users with this magical power, breaking the physical constraint of the real world, not only to have a fun experience with holographic contents but also to make user interactions more effective and efficient.
+Point and commit with hands is an input model that enables users to target, select and manipulate 2D content and 3D objects that are out of reach. This "far" interaction technique is unique to mixed reality, and is not a way humans naturally interact with the real world. For example, in the super hero movie, *X-Men*, the character [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) is capable of reaching out and manipulating a far object in the distance with his hands. This is not something humans can do in reality. In both HoloLens (AR) and Mixed Reality (MR), we equip users with this magical power, breaking the physical constraint of the real world, not only to have a fun experience with holographic content but also to make user interactions more effective and efficient.
 
 ## Device support
 
@@ -40,7 +39,8 @@ Point and commit with hands is an input model that enables users to target, sele
 </table>
 
 
-Point and commit, also known as hands far, is one of the new features that utilizes the new articulated hand-tracking system. This input model is also the primary input model on immersive headsets through the use of motion controllers.
+_"Point and commit with hands"_ is one of the new features that utilizes the new articulated hand-tracking system. 
+This input model is also the primary input model on immersive headsets through the use of motion controllers.
 
 <br>
 
@@ -208,7 +208,8 @@ By default, MRTK provides a hand ray prefab([DefaultControllerPointer.prefab](ht
 ---
 
 ## See also
-* [Head-gaze and commit](gaze-and-commit.md)
 * [Direct manipulation with hands](direct-manipulation.md)
+* [Gaze and commit](gaze-and-commit.md)
+* [Hands - Direct manipulation](direct-manipulation.md)
+* [Hands - Gestures](gaze-and-commit.md#composite-gestures)
 * [Instinctual interactions](interaction-fundamentals.md)
-

@@ -13,7 +13,7 @@ keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPacka
 > This tool and its operation are offered as-is. It is subject to change without any notice and may not be compatible with future Windows or Windows Mixed Reality HMD releases.
 
 ## Download
- Download [MixedRealitySpatialDataPackager here](http://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
+ Download [MixedRealitySpatialDataPackager here](https://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
 
 ## Device support
 
@@ -60,7 +60,7 @@ Key requirements and limitations:
 4. Minimize blank, textureless surfaces e.g. place a range of different posters on white walls
 5. Map the space without dynamic objects in the scene such as moving people
 6. Lock the map on import (available via Insider Preview)
-7. Unlock the map and rescan the enviornment when tracking quality degrades and/or there are changes in the environment (lighting or changes in object layout)
+7. Unlock the map and rescan the environment when tracking quality degrades and/or there are changes in the environment (lighting or changes in object layout)
 ***
 
 ## Running Mixed Reality Spatial Data Packager with Companion Script
@@ -101,7 +101,7 @@ The script parameters are defined below:
 ```
 Package Family Name for holoshell: HoloShell_cw5n1h2txyewy
 User SID for Administrator: S-1-5-21-1279937937-3984375698-1043392598-499
-Lock map value succesfully set to 0
+Lock map value successfully set to 0
 
 Running: C:\bin\MixedRealitySpatialDataPackager.exe export D:\temp\ HoloShell_cw5n1h2txyewy S-1-5-21-1279937937-3984375698-1043392598-499
 
@@ -191,7 +191,7 @@ Failed to find local user for passed in user SID
 3. Unable to create directory at <PATH> for export
 ```
 
-### If there was an error related to starting and stoping Spectrum/SharedRealitySvc
+### If there was an error related to starting and stopping Spectrum/SharedRealitySvc
 ```
 1. Unable to open service manager <SERVICE>
 2. Timed out trying to start/stop <SERVICE>

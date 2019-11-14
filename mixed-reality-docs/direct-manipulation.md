@@ -127,7 +127,7 @@ The hologram itself also requires the ability to provide both visual and audio f
     :::column:::
        ![Contact begins](images/bounding-box-with-proximity-shader-begin-contact.jpg)<br>
        **Contact begins**<br>
-       When the fingertip touches the surface, the entire bounding box changes color or generates visual effects to reflect the touch state.
+       As soon as the fingertip touches the surface, the entire bounding box changes color or generates visual effects to reflect the touch state.
     :::column-end:::
     :::column:::
        ![Contact ends](images/bounding-box-with-proximity-shader-end-contact.jpg)<br>
@@ -142,7 +142,7 @@ The hologram itself also requires the ability to provide both visual and audio f
 
 ## Pressable button
 
-With a collidable fingertip, users are now ready to interact with the fundamental holographic UI component, such as a pressable button. This is a holographic button tailored for a direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback-related issues.
+With a collidable fingertip, users are now ready to interact with a fundamental holographic UI component, such as a pressable button. A pressable button is a holographic button tailored for a direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback-related issues.
 
 * The first mechanism is a bounding box with a proximity shader, which is detailed in the previous section. It gives users a better sense of proximity when they approach and make contact with a button.
 * The second mechanism is depression. Depression creates a sense of pressing down after a fingertip contacts a button. The mechanism ensures that the button tightly moves with the fingertip along the depth axis. The button can be triggered when it reaches a designated depth (on press) or leaves the depth (on release) after passing through it.
@@ -181,7 +181,7 @@ A 2D slate is a holographic container hosting 2D app contents, such as a web bro
     :::column:::
        ![Touch](images/2d-slate-interaction-touch.jpg)<br>
        **Touch**<br>
-       Use an index finger to press a hyperlink or button.
+       Use an index finger to press a hyperlink or a button.
     :::column-end:::
     :::column:::
        ![Scroll](images/2d-slate-interaction-scroll2.jpg)<br>

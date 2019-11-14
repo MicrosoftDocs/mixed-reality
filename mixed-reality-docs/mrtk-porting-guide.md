@@ -3,7 +3,7 @@ title: Get your existing app ready for HoloLens 2
 description: Designed for developers who have an existing app on HoloLens (1st gen) and/or older MRTK, and are looking to port to MRTK version 2 and HoloLens 2.
 author: grbury
 ms.author: grbury
-ms.date: 10/14/19
+ms.date: 10/14/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
@@ -61,7 +61,7 @@ After addressing any breaking changes after moving to the updated Unity version,
 
 HoloLens (1st gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Therefore, existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling ARM32 apps while Unity 2019.x supports compiling ARM32 and ARM64 apps. Developing for ARM64 applications is generally preferred, as there is a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64. 
 
-Review all DLL dependencies in your application. It is advisable to remove any depencency that is no longer needed from your project. For remaining plugins that are required, ingest the respective ARM32 or ARM64 binaries into your Unity project. 
+Review all DLL dependencies in your application. It is advisable to remove any dependency that is no longer needed from your project. For remaining plugins that are required, ingest the respective ARM32 or ARM64 binaries into your Unity project. 
 
 After ingesting the relevant DLLs, build a Visual Studio solution from Unity and then compile an AppX for ARM in Visual Studio to test that your application can be built for ARM processors. It is advised to save the application as a commit in your source control solution.
 
@@ -124,7 +124,7 @@ Every application and scenario are different, and we’ll continue to refine and
 
 - Straight-forward Unity applications are simple because you can build an ARM application bundle or deploy directly to the device for the bundle to run. Some Unity native plugins can present certain development challenges. Because of this, you must upgrade all Unity native plugins to Visual Studio 2019 and then rebuild for ARM.
 
-- One application used the Unity AudioKinetic Wwise plugin and that version of Unity did not have a UWP ARM plugin, which caused a considerable effort to re-work sound capabilities into the applicaion in question to run on ARM. Ensure that all required plugins for your development plans are installed and available in Unity.
+- One application used the Unity AudioKinetic Wwise plugin and that version of Unity did not have a UWP ARM plugin, which caused a considerable effort to re-work sound capabilities into the application in question to run on ARM. Ensure that all required plugins for your development plans are installed and available in Unity.
 
 - In some cases, a UWP/ARM plugin might not exist for application-required plugins, which blocks the ability to port the application and run it on HoloLens 2. Contact your plugin provider to resolve the issue and provide support for ARM.
 
