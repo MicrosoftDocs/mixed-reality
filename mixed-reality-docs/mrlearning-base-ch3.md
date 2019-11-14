@@ -67,7 +67,7 @@ In this section, we will configure the Cube game object previously created to fo
 
     ![mrlearning-base-ch3-3-step2b.png](images/mrlearning-base-ch3-3-step2b.png)
 
-3. Set the maximum and minimum distances of the Radial View to 0 so that the cube will not have any distance between it and the user’s wrist. Once set, the cube will be perfectly aligned with the wrist. You might also adjust the Reference Direction field to adjust the behavior of how the cube is oriented, such as if you want to allow the object to rotate with the user's wrist by setting the Reference Direction to Orient with Tracked Object.
+3. Set the maximum and minimum distances of the Radial View to 0 so that the cube will not have any distance between it and the user’s wrist. Once set, the cube will be perfectly aligned with the wrist. You might also adjust the Reference Direction field to adjust the behavior of how the cube is oriented, such as if you want to allow the object to rotate with the user's wrist by setting the Reference Direction to Object Oriented.
 
     ![mrlearning-base-ch3-3-step3.png](images/mrlearning-base-ch3-3-step3.png)
 

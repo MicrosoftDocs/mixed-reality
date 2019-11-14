@@ -92,7 +92,7 @@ We have also designed a one-handed solution for ease of access in HoloLens 2. Th
     :::column-end:::
     :::column:::
         ![Wrist button pinch](images/wrist-button-pinch.png)<br>
-        **Step: Eye gaze at the button then pinch**<br>
+        **Step 2: Eye gaze at the button then pinch**<br>
     :::column-end:::
 :::row-end:::
 
