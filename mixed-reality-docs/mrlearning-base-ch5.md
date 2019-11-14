@@ -149,7 +149,7 @@ In this section, you will learn how to use the pan gesture. This is useful for s
 
     And with that, you have a pan-enabled quad.
 
-    As you can see, the Hand Interaction Pan Zoom script component has various setting, as an optional exercise, feel free to play around with them.
+    As you can see, the Hand Interaction Pan Zoom script component has various settings, as an optional exercise, feel free to play around with them.
 
     ![mrlearning-base-ch5-2-step8b.png](images/mrlearning-base-ch5-2-step8b.png)
 
