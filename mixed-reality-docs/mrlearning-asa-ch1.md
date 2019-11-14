@@ -25,7 +25,7 @@ Before beginning, download and import the following assets:
 
 [Azure Spatial Anchors v1.1.0](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v1.1.0/AzureSpatialAnchors.unitypackage)
 
-[MR Base module Asset Pack v1.2](https://github.com/Developer-OI/MixedRealityLearning/releases/tag/1.2.1)
+[Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage)
 
 [ASA module Asset Pack v1.3.1](https://github.com/Developer-OI/MixedRealityLearning/releases/download/ASA_1.3/ASAModuleAssets_1.3.1.unitypackage)
 
@@ -62,7 +62,7 @@ A pop-up appears, providing a list of tools and settings, and asking you what to
 
 > Note: Be patient, it will take a few minutes to import. 
 
-6. Import [MR Base module Asset Pack](https://github.com/Developer-OI/MixedRealityLearning/releases/tag/1.2.1) next. Much like Step 5, go back in to Unity, click Assets, and hover over Import Package. Click Custom Package... Your computer files will appear again. Go to where you stored the Base module Asset Pack. and select it. Click Open.
+6. Import [Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage) next. Much like Step 5, go back in to Unity, click Assets, and hover over Import Package. Click Custom Package... Your computer files will appear again. Go to where you stored the Base module Asset Pack. and select it. Click Open.
 
 ![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
 
