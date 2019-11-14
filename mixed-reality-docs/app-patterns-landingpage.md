@@ -120,7 +120,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-        [![Billboarding and tag-along](images/billboarding-fragments.gif)](billboarding-and-tag-along.md)
+        [![Billboarding and tag-along](images/UX/MRTK_TagAlong.gif)](billboarding-and-tag-along.md)
         **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
     :::column:::
@@ -128,7 +128,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Progress](progress.md)**
     :::column-end:::
     :::column:::
-       [![Surface magnetism](images/UX/UX_Hero_Slate.jpg)](surface-magnetism.md)
+       [![Surface magnetism](images/UX/MRTK_SurfaceMagnetism.gif)](surface-magnetism.md)
         **[Surface magnetism](surface-magnetism.md)**
     :::column-end:::
 :::row-end:::
