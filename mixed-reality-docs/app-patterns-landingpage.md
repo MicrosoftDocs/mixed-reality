@@ -68,8 +68,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Interactable object](interactable-object.md)**
     :::column-end:::
     :::column:::
-       [![Manipulation](images/UX/UX_Hero_Manipulation.jpg)](manipulation.md)
-        **[Manipulation](manipulation.md)**
+       [![Manipulation](images/UX/UX_Hero_Manipulation.jpg)](direct-manipulation.md)
+        **[Manipulation](direct-manipulation.md)**
     :::column-end:::
 :::row-end:::
 
@@ -90,8 +90,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-       [![Voice command](images/UX/UX_Hero_VoiceCommand.jpg)](voice-command.md)
-        **[Voice command](voice-command.md)**
+       [![Voice command](images/UX/UX_Hero_VoiceCommand.jpg)](voice-input.md)
+        **[Voice command](voice-input.md)**
     :::column-end:::
     :::column:::
        [![Keyboard](images/UX/UX_Hero_Keyboard.jpg)](keyboard.md)
