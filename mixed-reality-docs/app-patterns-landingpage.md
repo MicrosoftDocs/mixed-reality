@@ -46,15 +46,15 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 :::row:::
     :::column:::
        [![Cursor](images/UX/UX_Hero_Cursor.jpg)](cursors.md)
-        **[Cursor](interactable-object.md)**
+        **[Cursor](cursors.md)**
     :::column-end:::
     :::column:::
-       [![Hand ray](images/UX/UX_Hero_HandRay.jpg)](hand-ray.md)
-        **[Button](object-collection.md)**
+       [![Hand ray](images/UX/UX_Hero_HandRay.jpg)](point-and-commit.md)
+        **[Hand ray](point-and-commit.md)**
     :::column-end:::
     :::column:::
        [![Button](images/UX/UX_Hero_Button.jpg)](button.md)
-        **[Button](object-collection.md)**
+        **[Button](button.md)**
     :::column-end:::
 :::row-end:::
 
@@ -68,8 +68,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Interactable object](interactable-object.md)**
     :::column-end:::
     :::column:::
-       [![Manipulation](images/UX/UX_Hero_Manipulation.jpg)](manipulation.md)
-        **[Manipulation](manipulation.md)**
+       [![Manipulation](images/UX/UX_Hero_Manipulation.jpg)](direct-manipulation.md)
+        **[Manipulation](direct-manipulation.md)**
     :::column-end:::
 :::row-end:::
 
@@ -90,8 +90,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-       [![Voice command](images/UX/UX_Hero_VoiceCommand.jpg)](voice-command.md)
-        **[Voice command](voice-command.md)**
+       [![Voice command](images/UX/UX_Hero_VoiceCommand.jpg)](voice-input.md)
+        **[Voice command](voice-input.md)**
     :::column-end:::
     :::column:::
        [![Keyboard](images/UX/UX_Hero_Keyboard.jpg)](keyboard.md)
@@ -120,15 +120,15 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-        [![Billboarding and tag-along](images/billboarding-fragments.gif)](billboarding-and-tag-along.md)
+        [![Billboarding and tag-along](images/UX/MRTK_TagAlong.gif)](billboarding-and-tag-along.md)
         **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
     :::column:::
-       [![Progress](images/hololens2_loader.gif)](progress.md)
+       [![Progress](images/UX/UX_Hero_Progress.jpg)](progress.md)
         **[Progress](progress.md)**
     :::column-end:::
     :::column:::
-       [![Surface magnetism](images/UX/UX_Hero_Slate.jpg)](surface-magnetism.md)
+       [![Surface magnetism](images/UX/MRTK_SurfaceMagnetism.gif)](surface-magnetism.md)
         **[Surface magnetism](surface-magnetism.md)**
     :::column-end:::
 :::row-end:::

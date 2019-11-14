@@ -260,7 +260,7 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 
 ## Interactable object in MRTK(Mixed Reality Toolkit) for Unit
 
-In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script **Interactable** to make objects respond to various types of input interaction states. It supports various types of themes that allows you define visual states by controlling object properties such as color, size, material, and shader.
+In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allows you define visual states by controlling object properties such as color, size, material, and shader.
 
 * [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 * [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
@@ -274,9 +274,23 @@ MixedRealityToolkit's Standard shader provides various options such as **proximi
 
 ---
 
+
 ## See also
 
-* [Bounding box](app-bar-and-bounding-box.md)
+* [Cursors](cursors.md)
+* [Hand ray](point-and-commit.md)
+* [Button](button.md)
+* [Interactable object](interactable-object.md)
+* [Bounding box and App bar](app-bar-and-bounding-box.md)
+* [Manipulation](direct-manipulation.md)
+* [Hand menu](hand-menu.md)
+* [Near menu](near-menu.md)
 * [Object collection](object-collection.md)
+* [Voice command](voice-input.md)
+* [Keyboard](keyboard.md)
+* [Tooltip](tooltip.md)
+* [Slate](slate.md)
+* [Slider](slider.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
-* [Voice input](voice-input.md)
+* [Displaying progress](progress.md)
+* [Surface magnetism](surface-magnetism.md)
