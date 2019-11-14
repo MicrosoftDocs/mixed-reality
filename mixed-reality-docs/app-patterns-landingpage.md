@@ -124,7 +124,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
     :::column:::
-       [![Progress](images/hololens2_loader.gif)](progress.md)
+       [![Progress](images/UX/UX_Hero_Progress.jpg)](progress.md)
         **[Progress](progress.md)**
     :::column-end:::
     :::column:::
