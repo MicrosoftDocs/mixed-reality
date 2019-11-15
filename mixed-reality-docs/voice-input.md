@@ -12,10 +12,9 @@ keywords: ggv, voice, cortana, speech, input
 
 # Voice input
 
-Voice is one of the key forms of input on HoloLens. 
-It allows you to directly command a hologram without having to use [hand gestures](gaze-and-commit.md#composite-gestures). 
-Voice input can be a natural way to communicate your intent. 
-Voice is especially good at traversing complex interfaces, because it lets users cut through nested menus with one command.
+![Voice input](images/UX/UX_Hero_VoiceCommand.jpg)
+
+Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use [hand gestures](gaze-and-commit.md#composite-gestures). Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces, because it lets users cut through nested menus with one command.
 
 Voice input is powered by the [same engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) that supports speech in all other _Universal Windows Apps_. 
 On HoloLens, speech recognition will always function in the Windows display language configured in Settings. 
@@ -316,6 +315,18 @@ Keep in mind that speech commands will always run in the system's display langua
 If you're having any issues using "select" and "Hey Cortana", try moving to a quieter space, turning away from the source of noise, or by speaking louder. At this time, all speech recognition on HoloLens is tuned and optimized specifically to native speakers of United States English.
 
 For the Windows Mixed Reality Developer Edition release 2017, the audio endpoint management logic will work fine (forever) after logging out and back in to the PC desktop after the initial HMD connection. Prior to that first sign out/in event after going through WMR OOBE, the user could experience various audio functionality issues ranging from no audio to no audio switching depending on how the system was set up prior to connecting the HMD for the first time.
+
+<br>
+
+---
+
+## Voice input in MRTK(Mixed Reality Toolkit) for Unity
+With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily assign voice command on any objects. Use MRTK's **Speech Input Profile** to define your keywords. By assigning **SpeechInputHandler** script, you can make any object respond to the keywords defined in the Speech Input Profile. SpeechInputHandler also provides speech confirmation label to improve the user's confidence.
+
+* [MRTK - Voice command](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+
+
+---
 
 ## See also
 * [Gaze and commit](gaze-and-commit.md)

@@ -8,11 +8,11 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, controls, ui, ux
 ---
 
-# Displaying progress
+# Progress indicator
 
 <br>
 
-<img src="images/HoloLens2_Loader.gif" alt="Progress ring example in HoloLens" width="940px">
+<img src="images/UX/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
 A progress control provides feedback to the user that a long-running operation is underway. It can mean that the user cannot interact with the app when the progress indicator is visible, and can also indicate how long the wait time might be, depending on the indicator used.
 
@@ -83,9 +83,32 @@ It is important to provide the user information about what is happening. In mixe
 
 ---
 
+## Progress indicator in MRTK(Mixed Reality Toolkit) for Unity
+
+* [MRTK - Progress indicator prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/ProgressIndicators)
+* [MRTK - Scene transition service](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
+
+
+<br>
+
+---
+
 ## See also
-* [Progress scripts and prefabs on Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Loader)
-* [Bounding box](app-bar-and-bounding-box.md)
+
+* [Cursors](cursors.md)
+* [Hand ray](point-and-commit.md)
+* [Button](button.md)
 * [Interactable object](interactable-object.md)
+* [Bounding box and App bar](app-bar-and-bounding-box.md)
+* [Manipulation](direct-manipulation.md)
+* [Hand menu](hand-menu.md)
+* [Near menu](near-menu.md)
 * [Object collection](object-collection.md)
+* [Voice command](voice-input.md)
+* [Keyboard](keyboard.md)
+* [Tooltip](tooltip.md)
+* [Slate](slate.md)
+* [Slider](slider.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
+* [Displaying progress](progress.md)
+* [Surface magnetism](surface-magnetism.md)
