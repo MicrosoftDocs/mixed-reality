@@ -4,7 +4,7 @@ title: Mixed reality UX elements
 description: This document contains a set of topics that explain how to design for Windows head-mounted displays.
 author: grbury 
 ms.author: grbury
-ms.date: 10/02/2019
+ms.date: 11/15/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks
 ---
@@ -113,16 +113,12 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Slider](slider.md)**
     :::column-end:::
     :::column:::
-       [![Tooltip](images/UX/UX_Hero_Tooltip.jpg)](tooltip.md)
-        **[Tooltip](tooltip.md)**
+        [![Billboarding and tag-along](images/UX/MRTK_TagAlong.gif)](billboarding-and-tag-along.md)
+        **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
-    :::column:::
-        [![Billboarding and tag-along](images/UX/MRTK_TagAlong.gif)](billboarding-and-tag-along.md)
-        **[Billboarding and tag-along](billboarding-and-tag-along.md)**
-    :::column-end:::
     :::column:::
        [![Progress indicator](images/UX/MRTK_ProgressIndicator.gif)](progress.md)
         **[Progress indicator](progress.md)**
@@ -130,6 +126,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
     :::column:::
        [![Surface magnetism](images/UX/MRTK_SurfaceMagnetism.gif)](surface-magnetism.md)
         **[Surface magnetism](surface-magnetism.md)**
+    :::column-end:::
+    :::column:::
     :::column-end:::
 :::row-end:::
 
