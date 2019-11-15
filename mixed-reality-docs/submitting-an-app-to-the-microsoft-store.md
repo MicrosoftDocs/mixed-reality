@@ -73,6 +73,14 @@ If your app is created for **HoloLens**, then you can ensure that it is only ins
 </Dependencies>
 ```
 
+If your app requires functionality of **HoloLens 2** specifically, like eye-tracking or hand-trakcing, then you can ensure that it is targeted to HoloLens versions 18362 or greater by specifying a target device family of "Windows.Holographic" and MinVersion 10.0.18362.0. 
+
+```
+<Dependencies>
+   <TargetDeviceFamily Name="Windows.Holographic" MinVersion="10.0.18362.0" MaxVersionTested="10.0.18362.0" />
+</Dependencies>
+```
+
 If your app is created for **Windows Mixed Reality immersive headsets**, then you can ensure that it is only installed on Windows 10 PCs with the Windows 10 Fall Creators Update (necessary for Windows Mixed Reality) by specifying a target device family of "Windows.Desktop" and MinVersion of "10.0.16299.0".
 
 ```
@@ -116,6 +124,11 @@ The general guidance is that the highest version number package that is applicab
 If there is a Windows.Universal package and a Windows.Holographic package and the Windows.Universal package has a higher version number, a HoloLens user will download the higher version number Windows.Universal package instead of the Windows.Holographic package. There are several solutions to this problem:
 1. Ensure your platform specific packages such as Windows.Holographic always have a higher version number than your platform agnostic packages such as Windows.Universal
 2. Do not package apps as Windows.Universal if you also have platform specific packages - instead package the Windows.Universal package for the specific platforms you want it available on
+
+>[!NOTE]
+> To support your app on both HoloLens (1st Gen) and HoloLen 2, you will need to upload two app packages; one containing x86 for HoloLens (1st Gen) and one containing ARM or ARM64 for HoloLens 2. 
+> 
+> If you include both ARM and ARM64 in your package, the ARM64 version will be used on HoloLens 2. 
 
 >[!NOTE]
 > You can declare a single package to be applicable to multiple target device families
