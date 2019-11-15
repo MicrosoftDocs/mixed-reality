@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, App bar, bounding box
 ---
 # Bounding box and App bar
-![Bounding is the standard interface for object manipulation in Mixed Reality.](images/640px-boundingbox-hero.jpg)<br>
+![Bounding is the standard interface for object manipulation in Mixed Reality.](images/UX/UX_Hero_BoundingBox.jpg)<br>
 <br>
 
 ## What is the Bounding box?
@@ -113,6 +113,7 @@ The App bar is a object-level menu containing a series of buttons that displays 
 * [Tooltip](tooltip.md)
 * [Slate](slate.md)
 * [Slider](slider.md)
+* [MRTK Standard shader](mrtk-standard-shader.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
 * [Displaying progress](progress.md)
 * [Surface magnetism](surface-magnetism.md)

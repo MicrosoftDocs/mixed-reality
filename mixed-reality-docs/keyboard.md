@@ -43,6 +43,7 @@ Your mixed reality application can invoke the system keyboard at any time. Note 
 * [Tooltip](tooltip.md)
 * [Slate](slate.md)
 * [Slider](slider.md)
+* [MRTK Standard shader](mrtk-standard-shader.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
 * [Displaying progress](progress.md)
 * [Surface magnetism](surface-magnetism.md)
