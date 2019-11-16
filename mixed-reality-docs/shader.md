@@ -1,5 +1,5 @@
 ---
-title: MRTK Standard shader
+title: Shader
 description: 
 author: cre8ivepark
 ms.author: dongpark
@@ -8,9 +8,9 @@ ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux
 ---
 
-# MRTK Standard shader
+# Shader
 
-![MRTK Standard shader](images/UX/UX_Hero_StandardShader.jpg)
+![Shader](images/UX/UX_Hero_StandardShader.jpg)
 
 Since holographic objects are mixed with the physical ones in the environment, providing visual cue is important in mixed reality. MRTK Standard shader provides various types of visual effects that can be used with holograms. MRTK Standard shading system utilizes a single, flexible shader that can achieve visuals similar to Unity's Standard Shader, implement Fluent Design System principles, and remain performant on mixed reality devices.
 <br>
