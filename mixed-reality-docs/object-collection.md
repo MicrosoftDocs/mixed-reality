@@ -69,7 +69,7 @@ You can also use 2D images with Object collection. The examples below demonstrat
 * [Tooltip](tooltip.md)
 * [Slate](slate.md)
 * [Slider](slider.md)
-* [MRTK Standard shader](mrtk-standard-shader.md)
+* [Shader](shader.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
 * [Displaying progress](progress.md)
 * [Surface magnetism](surface-magnetism.md)
