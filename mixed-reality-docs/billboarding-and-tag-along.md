@@ -70,7 +70,7 @@ Just like truly head-locked content, tag-along objects can prove overwhelming or
 * [Tooltip](tooltip.md)
 * [Slate](slate.md)
 * [Slider](slider.md)
-* [MRTK Standard shader](mrtk-standard-shader.md)
+* [Shader](shader.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
 * [Displaying progress](progress.md)
 * [Surface magnetism](surface-magnetism.md)
