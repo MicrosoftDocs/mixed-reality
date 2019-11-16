@@ -113,8 +113,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Slider](slider.md)**
     :::column-end:::
     :::column:::
-        [![MRTK Standard shader](images/UX/UX_Hero_StandardShader.jpg)](mrtk-standard-shader.md)
-        **[MRTK Standard shader](mrtk-standard-shader.md)**
+        [![Shader](images/UX/UX_Hero_StandardShader.jpg)](shader.md)
+        **[Shader](shader.md)**
     :::column-end:::
 :::row-end:::
 
