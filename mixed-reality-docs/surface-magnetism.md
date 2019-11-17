@@ -45,6 +45,7 @@ Using the surface magnetism technique, you can place objects on the real-world p
 * [Tooltip](tooltip.md)
 * [Slate](slate.md)
 * [Slider](slider.md)
+* [Shader](shader.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
 * [Displaying progress](progress.md)
 * [Surface magnetism](surface-magnetism.md)

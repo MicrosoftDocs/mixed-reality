@@ -47,6 +47,7 @@ You can re-enable the tag-along by pressing the pin button and make the menu fol
 * [Tooltip](tooltip.md)
 * [Slate](slate.md)
 * [Slider](slider.md)
+* [Shader](shader.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
 * [Displaying progress](progress.md)
 * [Surface magnetism](surface-magnetism.md)
