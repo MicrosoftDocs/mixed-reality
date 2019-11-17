@@ -70,6 +70,7 @@ A button gives the user a way to trigger an immediate action. It is one of the m
 * [Tooltip](tooltip.md)
 * [Slate](slate.md)
 * [Slider](slider.md)
+* [Shader](shader.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
 * [Displaying progress](progress.md)
 * [Surface magnetism](surface-magnetism.md)

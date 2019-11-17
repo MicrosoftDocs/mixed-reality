@@ -4,7 +4,7 @@ title: Mixed reality UX elements
 description: This document contains a set of topics that explain how to design for Windows head-mounted displays.
 author: grbury 
 ms.author: grbury
-ms.date: 10/02/2019
+ms.date: 11/15/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks
 ---
@@ -113,8 +113,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Slider](slider.md)**
     :::column-end:::
     :::column:::
-       [![Tooltip](images/UX/UX_Hero_Tooltip.jpg)](tooltip.md)
-        **[Tooltip](tooltip.md)**
+        [![Shader](images/UX/UX_Hero_StandardShader.jpg)](shader.md)
+        **[Shader](shader.md)**
     :::column-end:::
 :::row-end:::
 
