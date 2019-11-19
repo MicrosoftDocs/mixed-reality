@@ -12,16 +12,16 @@ keywords: walkthrough, voice command, phrase, recognition, speech, directx, plat
 
 # Voice input in DirectX
 
-This topic explains how to implement [voice commands](voice-input.md), and small phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
+This topic explains how to implement [voice commands](voice-input.md) and small phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
 
 >[!NOTE]
->The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, but you need to translate the code.
 
 ## Use a SpeechRecognizer for continuous recognition of voice commands
 
-In this section, we describe how to use continuous speech recognition to enable voice commands in your app. This walkthrough uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) Sample. When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.
+This section describes how to use continuous speech recognition to enable voice commands in your app. This walk-through uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) sample. When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.
 
-First, create a new **Windows::Media::SpeechRecognition::SpeechRecognizer** instance.
+First, create a new *Windows::Media::SpeechRecognition::SpeechRecognizer* instance.
 
 From *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:
 
@@ -29,7 +29,7 @@ From *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:
 m_speechRecognizer = ref new SpeechRecognizer();
 ```
 
-You'll need to create a list of speech commands for the recognizer to listen for. Here, we construct a set of commands to change the color of a hologram. For the sake of convenience, we also create the data that we'll use for the commands later on.
+You need to create a list of speech commands for the recognizer to listen for. Here, we construct a set of commands to change the color of a hologram. For convenience, we also create the data that we'll use for the commands later.
 
 ```
 m_speechCommandList = ref new Platform::Collections::Vector<String^>();
@@ -54,7 +54,7 @@ m_speechCommandList = ref new Platform::Collections::Vector<String^>();
    m_speechCommandData.push_back(float4(1.f, 0.f, 1.f, 1.f));
 ```
 
-Commands can be specified using phonetic words that might not be in a dictionary:
+You can use phonetic words that might not be in a dictionary to specify commands:
 
 ```
 m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
@@ -89,7 +89,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Your **OnResultGenerated** event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance. If the confidence is greater than the threshold you have defined, your app should note that the event happened. Save the event data so that you can make use of it in a subsequent update loop.
+Your *OnResultGenerated* event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance. If the confidence is greater than the threshold that you defined, your app should note that the event happened. Save the event data so that you can use it in a subsequent update loop.
 
 From *HolographicVoiceInputSampleMain.cpp*:
 
@@ -131,15 +131,15 @@ From *HolographicVoiceInputSampleMain::Update*:
 
 ## Use dictation for one-shot recognition of speech phrases and sentences
 
-You can configure a speech recognizer to listen for phrases or sentences spoken by the user. In this case, we apply a SpeechRecognitionTopicConstraint that tells the speech recognizer what type of input to expect. The app workflow is as follows, for this type of use case:
+You can configure a speech recognizer to listen for phrases or sentences spoken by the user. In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect. The app workflow is as follows for this type of use case:
 1. Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a command to be spoken immediately.
-2. The user speaks a phrase, or sentence.
-3. Recognition of the user's speech is performed, and a result is returned to the app. At this point, your app should provide a UI prompt indicating that recognition has occurred.
-4. Depending on the confidence level you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.
+1. The user speaks a phrase or sentence.
+1. Recognition of the user's speech is performed, and a result is returned to the app. At this point, your app should provide a UI prompt to indicate that recognition has occurred.
+1. Depending on the confidence level you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.
 
 This section describes how to create a SpeechRecognizer, compile the constraint, and listen for speech input.
 
-The following code compiles the topic constraint, which in this case is optimized for Web search.
+The following code compiles the topic constraint, which in this case is optimized for web search.
 
 ```
 auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::WebSearch, L"webSearch");
@@ -165,7 +165,7 @@ try
                {
 ```
 
-The result is then returned to the app. If we are confident enough in the result, we can process the command. This code example processes results with at least Medium confidence.
+The result is then returned to the app. If we are confident enough in the result, we can process the command. This code example processes results with at least medium confidence.
 
 ```
 try
@@ -206,7 +206,7 @@ try
                    }
 ```
 
-Whenever you use speech recognition, you should watch for exceptions that could indicate the user has turned off the microphone in the system privacy settings. This can happen during initialization, or during recognition.
+Whenever you use speech recognition, watch for exceptions that could indicate that the user has turned off the microphone in the system privacy settings. This can happen during initialization or during recognition.
 
 ```
 catch (Exception^ exception)
@@ -249,39 +249,41 @@ catch (Exception^ exception)
    });
 ```
 
-**NOTE:** There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) available for optimizing speech recognition.
-* If you want to optimize for dictation, use the Dictation scenario:
+> [NOTE!
+> There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) available for optimizing speech recognition.
 
-```
-// Compile the dictation topic constraint, which optimizes for speech dictation.
+* If you want to optimize for dictation, use the Dictation scenario:<br/><br/>
+   ```
+   // Compile the dictation topic constraint, which optimizes for speech dictation.
    auto dictationConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::Dictation, "dictation");
    m_speechRecognizer->Constraints->Append(dictationConstraint);
-```
-* When using speech to perform a Web search, you can use a Web-specific scenario constraint as follows:
+   ```
+
+* For speech web searches, you can use a Web-specific scenario constraint as follows:
 
 ```
 // Add a web search topic constraint to the recognizer.
    auto webSearchConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::WebSearch, "webSearch");
    speechRecognizer->Constraints->Append(webSearchConstraint);
 ```
-* Use the form constraint to fill out forms. In this case, it is best to apply your own grammar that is optimized for filling out your form.
+* Use the form constraint to fill out forms. In this case, it is best to apply your own grammar that's optimized for filling out the form.
 
 ```
 // Add a form constraint to the recognizer.
    auto formConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::FormFilling, "formFilling");
    speechRecognizer->Constraints->Append(formConstraint );
 ```
-* You can provide your own grammar using the SRGS format.
+* You can provide your own grammar in the SRGS format.
 
 ## Use continuous, freeform speech dictation
 
-See the Windows 10 UWP speech code sample for the continuous dictation scenario [here.](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)
+For the continuous dictation scenario, see the [Windows 10 UWP speech code sample](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).
 
 ## Handle degradation in quality
 
-Conditions in the environment can sometimes prevent speech recognition from working. For example, the room might be too noisy or the user might speak at too high a volume. The speech recognition API provides info, where possible, about conditions that have caused a degradation in quality.
+Conditions in the environment can sometimes prevent speech recognition from working. For example, the room might be too noisy, or the user might speak too loudly. Whenever possible, the speech recognition API provides information about conditions that have caused a degradation in quality.
 
-This information is pushed to your app using a WinRT event. Here is an example of how to subscribe to this event.
+This information is pushed to your app through a WinRT event. Here's an example of how to subscribe to this event:
 
 ```
 m_speechRecognizer->RecognitionQualityDegrading +=
