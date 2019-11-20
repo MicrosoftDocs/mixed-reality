@@ -12,19 +12,19 @@ keywords: Windows Mixed Reality, HoloLens, HoloTour, spatial sound, case study
 
 # Case study - Spatial sound design for HoloTour
 
-To create a truly immersive 3D virtual tour for Microsoft HoloLens, the panoramic videos and holographic scenery are only part of the formula. Audio designer Jason Syltebo talks about how sound was captured and processed to make you feel like you're actually in each of the locations in HoloTour.
+To create a truly immersive 3D virtual tour for Microsoft HoloLens, the panoramic videos and holographic scenery are only part of the formula. In this article audio designer Jason Syltebo talks about how sound was captured and processed to make you feel like you're actually in each HoloTour location.
 
 ## The tech
 
-The beautiful imagery and holographic scenes that you see in HoloTour are only one part of creating a believable mixed-reality experience. While holograms can only appear visually in front of a user, the [spatial sound](spatial-sound.md) feature of HoloLens delivers audio from all directions, which gives the user a more-complete sensory experience.
+The beautiful imagery and holographic scenes that you see in HoloTour are only one part of a believable mixed-reality experience. While holograms can only appear visually in front of a user, the [spatial sound](spatial-sound.md) feature of HoloLens delivers audio from all directions, which gives the user a more-complete sensory experience.
 
-We use spatial sound to give audio cues to indicate a direction in which the user should turn, or to let the user know there are more holograms to see within their space. We can also attach a sound directly to a hologram and continually update the direction and distance the hologram is from a user to make it seem as if the sound is coming directly from that object.
+We use spatial sound to give audio cues to indicate a direction in which the user should turn, or to let the user know there are more holograms to see within their space. We can also attach a sound directly to a hologram and continually update the direction and distance that the hologram is from a user to make it seem as if the sound is coming directly from that object.
 
-For HoloTour, we wanted to take advantage of the spatial sound capabilities of HoloLens to create a 360-degree ambient environment, synchronized with the video to reveal the sonic highlights of specific locations.
+For HoloTour, we wanted to take advantage of the spatial sound capabilities of HoloLens to create a 360-degree ambient environment synchronized with the video to reveal the sonic highlights of specific locations.
 
 ## Behind the scenes
 
-We created HoloTour experiences of two different locations: Rome and Machu Picchu. To make these tours feel authentic and compelling we wanted to avoid using generic sounds and instead capture audio directly from the locations where we were filming.
+We created HoloTour experiences of two different locations: Rome and Machu Picchu. To make these tours feel authentic and compelling, we wanted to avoid using generic sounds and instead capture audio directly from the locations where we filmed.
 
 ### Capture the audio
 
@@ -33,11 +33,11 @@ In our [case study about capturing the visual content for HoloTour](case-study-c
 ![Custom camera and microphone rig](images/camera-rig-microphones-300px.png)<br>
 *Custom camera and microphone rig*
 
-This setup captured sound in four directions. We recorded enough information to re-create a 3D aural panorama of spatial sound, which we could synchronize to the 360-degree video.
+This setup captures sound in four directions. We recorded enough information to re-create a 3D aural panorama of spatial sound, which we could later synchronize to the 360-degree video.
 
-One of the challenges with the camera array audio is that you are at the mercy of off-camera sounds, such as sirens, airplanes, or high winds. To make sure that we had all the elements we needed, we used a series of stereo and mono mobile recording units to get asynchronous, ambient elements at specific points of interest in each location. These recordings give the sound designer clean content to add interest and improve directionality in post-production.
+One of the challenges of using the camera array audio is that you're at the mercy of off-camera sounds, such as sirens, airplanes, or high winds. To make sure that we had all the sound elements that we needed, we also used stereo and mono mobile recording units to capture asynchronous, ambient sound at specific points of interest in each location. These recordings give the sound designer clean content to add interest and improve directionality in post-production.
 
-Every capture day generates many files. It was important to develop a system to track which files correspond to a particular location or camera shot. Our recording unit was set up to auto-name files by date and "take" number, and we'd back up to external drives at the end of the day. At the very least, verbally slating the beginning of audio recordings was important. This allows easy contextual identification of the content in case of problems with  file names. It was also important to visually slate the camera rig capture, because the video and audio were recorded as separate media and had to be synchronized during post-production.
+Every capture day generates many files. It was important to develop a system to track which files correspond to a particular location or camera shot. Our recording unit was set up to automatically name files by date and "take" number. And we backed up to external drives at the end of each day. We also found it important to verbally slate the beginning of audio recordings. This allows easy contextual identification of the content in case file name problems occur. It was also important to visually slate the camera rig capture, because the video and audio were recorded as separate media and had to be synchronized during post-production.
 
 ### Edit the audio
 

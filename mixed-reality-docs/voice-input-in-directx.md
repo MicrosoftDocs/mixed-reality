@@ -281,9 +281,7 @@ For the continuous dictation scenario, see the [Windows 10 UWP speech code sampl
 
 ## Handle degradation in quality
 
-Conditions in the environment can sometimes prevent speech recognition from working. For example, the room might be too noisy, or the user might speak too loudly. Whenever possible, the speech recognition API provides information about conditions that have caused a degradation in quality.
-
-This information is pushed to your app through a WinRT event. Here's an example of how to subscribe to this event:
+Environmental conditions can sometimes prevent speech recognition from working. For example, the room might be too noisy, or the user might speak too loudly. Whenever possible, the speech recognition API provides information about conditions that have caused a degradation in quality. This information is pushed to your app through a WinRT event. Here's an example of how to subscribe to this event:
 
 ```
 m_speechRecognizer->RecognitionQualityDegrading +=
@@ -292,7 +290,7 @@ m_speechRecognizer->RecognitionQualityDegrading +=
            );
 ```
 
-In our code sample, we choose to write the conditions info to the debug console. An app might want to provide feedback to the user via UI, speech synthesis, and so on, or it might need to behave differently when speech is interrupted by a temporary reduction in quality.
+In our code sample, we choose to write the conditions information to the debug console. An app might want to provide feedback to the user via UI, speech synthesis, and another method. Or it might need to behave differently when speech is interrupted by a temporary reduction in quality.
 
 ```
 void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer^ recognizer, SpeechRecognitionQualityDegradingEventArgs^ args)
@@ -331,7 +329,7 @@ void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer
    }
 ```
 
-If you are not using ref classes to create your DirectX app, you must unsubscribe from the event before releasing or recreating your speech recognizer. The HolographicSpeechPromptSample has a routine to stop recognition, and unsubscribe from events like so:
+If you're not using ref classes to create your DirectX app, you must unsubscribe from the event before you release or recreate your speech recognizer. The HolographicSpeechPromptSample has a routine to stop recognition and unsubscribe from events:
 
 ```
 Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizerIfExists()
@@ -358,11 +356,11 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
    }
 ```
 
-## Use speech synthesis to provide audible voice prompts
+## Use speech synthesis to provide audible prompts
 
-The holographic speech samples use speech synthesis to provide audible instructions to the user. This topic walks through the process of creating a synthesized voice sample, and playing it back using the HRTF audio APIs.
+The holographic speech samples use speech synthesis to provide audible instructions to the user. This topic walks through how to create a synthesized voice sample  and then play it back by using the HRTF audio APIs.
 
-You should provide your own speech prompts when requesting phrase input. This can also be helpful for indicating when speech commands can be spoken, for a continuous recognition scenario. Here is an example of how to do that with a speech synthesizer; note that you could also use a pre-recorded voice clip, a visual UI, or other indicator of what to say, for example in scenarios where the prompt is not dynamic.
+You should provide your own speech prompts when you request phrase input. This can also help indicate when speech commands can be spoken for a continuous recognition scenario. The following example demonstrated how to do that with a speech synthesizer. Note that you could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt is not dynamic.
 
 First, create the SpeechSynthesizer object:
 
@@ -370,14 +368,14 @@ First, create the SpeechSynthesizer object:
 auto speechSynthesizer = ref new Windows::Media::SpeechSynthesis::SpeechSynthesizer();
 ```
 
-You also need a string with the text to be synthesized:
+You also need a string that includes the text to be synthesized:
 
 ```
 // Phrase recognition works best when requesting a phrase or sentence.
    StringReference voicePrompt = L"At the prompt: Say a phrase, asking me to change the cube to a specific color.";
 ```
 
-Speech is synthesized asynchronously using SynthesizeTextToStreamAsync. Here, we kick off an async task to synthesize the speech.
+Speech is synthesized asynchronously by using SynthesizeTextToStreamAsync. Here, we start an async task to synthesize the speech.
 
 ```
 create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_continuation_context::use_current())
@@ -387,7 +385,7 @@ create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_co
        {
 ```
 
-The speech synthesis is sent as a byte stream. We can initialize an XAudio2 voice using that byte stream; for our holographic code samples, we play it back as an HRTF audio effect.
+The speech synthesis is sent as a byte stream. We can initialize an XAudio2 voice by using that byte stream. For our holographic code samples, we play it back as an HRTF audio effect.
 
 ```
 Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStreamTask.get();
