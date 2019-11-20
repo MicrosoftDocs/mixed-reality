@@ -94,7 +94,7 @@ That leads to the following best practices when rendering and targeting with han
 ## Cross-device input properties
 The SpatialInteractionSource API supports controllers and hand tracking systems with a wide range of capabilities. A number of these capabilities are common between device types. For example, hand tracking and motion controllers both provide a 'select' action and a 3D position. Wherever possible, the API maps these common capabilities to the same properties on the SpatialInteractionSource.  This enables applications to more easily support a wide range of input types. The following table describes the properties that are supported, and how they compare across input types.
 
-| Property | Description | HoloLens Gestures | Motion Controllers | Articulated Hands|
+| Property | Description | HoloLens(1st gen) Gestures | Motion Controllers | Articulated Hands|
 |--- |--- |--- |--- |--- |
 | [SpatialInteractionSource::**Handedness**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Right or left hand / controller. | Not Supported | Supported | Supported |
 | [SpatialInteractionSourceState::**IsSelectPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | Current state of the primary button. | Air Tap | Trigger | Relaxed Air Tap (upright pinch) |
