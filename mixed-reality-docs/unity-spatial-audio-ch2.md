@@ -54,11 +54,15 @@ On the **Inspector** pane of the **Render Texture**, set the **Size** property t
 
 ![Render Texture properties](images/spatial-audio/render-texture-properties.png)
 
-Next, use your new **Render Texture** as the texture for the **Quad**. To do so, drag the **Render Texture** from the **Project** pane onto the **Quad** in the **Hierarchy**. Then, to ensure good performance on HoloLens2, on the **Inspector** pane for the **Quad**, select the **Mixed Reality Toolkit Standard Shader**. With these settings, the **Texture** component on the **Inspector** pane for the **Quad** will look like this:
+Next, use your new **Render Texture** as the texture for the **Quad**:
+1. Drag the **Render Texture** from the **Project** pane onto the **Quad** in the **Hierarchy**
+2. To ensure good performance on HoloLens2, on the **Inspector** pane for the **Quad**, select the **Mixed Reality Toolkit Standard Shader**.
+
+With these settings, the **Texture** component on the **Inspector** pane for the **Quad** will look like this:
 
 ![Quad texture properties](images/spatial-audio/quad-texture-properties.png)
 
-Next, use this **Video Player** to play your video clip. To do so, on the **Inspector** pane for the **Video Player**:
+Next, use this **Video Player** to play your video clip. On the **Inspector** pane for the **Video Player**:
 * Set the **Video Clip** property to your video file
 * Check the **Loop** checkbox
 * Set **Target Texture** to your new render texture
@@ -72,7 +76,11 @@ The **Audio Mixer** pane is where you'll define destinations, called **Mixer Gro
 
 ![Mixer panel with first mixer](images/spatial-audio/mixer-panel-with-first-mixer.png)
 
-Then, create an **Audio Source**, to which you'll route the audio from the video. To do so, on the **Inspector** pane for the **Quad**, click **Add Component** at the bottom of the pane and add an **Audio Source**. Then, on the **Audio Source**:
+Then, create an **Audio Source**, to which you'll route the audio from the video. On the **Inspector** pane for the **Quad**:
+* Click **Add Component** at the bottom of the pane
+* Add an **Audio Source**
+
+Then, on the **Audio Source**:
 * Set **Output** to your mixer
 * Check the **Spatialize** box
 * Move the **Spatial Blend** slider to 1 (3D)
