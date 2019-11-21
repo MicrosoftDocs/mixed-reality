@@ -106,7 +106,7 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 > [!NOTE]
-> Several lines of the script are commented out. These lines will be uncommented in Chapter 4.
+> Several lines of the script are commented out. These lines will be uncommented in [Chapter 4](unity-spatial-audio-ch4.md).
 
 > [!NOTE]
 > To enable or disable spatialization, the script only adjusts the **spatialBlend** property, leaving the **spatialization** property enabled. In this mode, Unity still applies the **Volume** curve. Otherwise, if the user were to disable spatialization when far from the source, they would hear the volume increase abruptly.
@@ -116,9 +116,9 @@ On the **Inspector** pane of the **Quad**, click **Add Component** and add the *
 
 ![Add script to quad](images/spatial-audio/add-script-to-quad.png)
 
-On the **Spatialize On Off** component of the **Quad**, set the **Source Object** property to the **Quad**.
-
-Then, find the **PressableButtonHoloLens2 -> IconAndText -> TextMeshPro** subobject in the **Hierarchy**, and drag it onto the **Button** field of the Spatialize On Off component.
+On the **Spatialize On Off** component of the **Quad**:
+1. Set the **Source Object** property to the **Quad**.
+2. Find the **PressableButtonHoloLens2 -> IconAndText -> TextMeshPro** subobject in the **Hierarchy**, and drag it onto the **Button** field of the Spatialize On Off component.
 
 After these changes, the **Spatialize On Off** component of the **Quad** will look like this:
 
