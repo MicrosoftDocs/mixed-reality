@@ -20,7 +20,7 @@ In the **Project** pane, select **Assets** and type "PressableButtonHoloLens2" i
 
 ![Button prefab in Assets](images/spatial-audio/button-prefab-in-assets.png)
 
-The prefab is the entry represented by a blue box, rather than a white box. Drag the prefab named **PressableButtonHoloLens2** into your hierarchy. In the **Inspector** pane for your new button, set the **Position** property to (0,-0.4,2). This places the button just below the video quad. The **Transform** component of the button will look like this:
+The prefab is the entry represented by a blue icon, rather than a white icon. Drag the prefab named **PressableButtonHoloLens2** into your hierarchy. In the **Inspector** pane for your new button, set the **Position** property to (0,-0.4,2). This places the button just below the video quad. The **Transform** component of the button will look like this:
 
 ![Button transform](images/spatial-audio/button-transform.png)
 
@@ -134,7 +134,7 @@ After these changes, the **Pressable Button Holo Lens 2** component will look li
 ![Button action settings](images/spatial-audio/button-action-settings.png)
 
 ## Next steps
-Try out your app on a HoloLens2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video. If testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. 
+Try out your app on a HoloLens 2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video. If testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. 
 
 Continue on to [Chapter 4](unity-spatial-audio-ch4.md) to add perceived distance to sound sources using reverb.
 

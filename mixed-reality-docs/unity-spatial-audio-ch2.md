@@ -23,7 +23,7 @@ Drag a video file into the **Project** pane in your Unity project. You can use [
 
 ![Assets folder with video](images/spatial-audio/assets-folder-with-video.png)
 
-We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens2. Click on the video file in the **Project** pane. Then in the **Inspector** pane for the video file, override the settings for Windows Store Apps, and:
+We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens 2. Click on the video file in the **Project** pane. Then in the **Inspector** pane for the video file, override the settings for Windows Store Apps, and:
 * Enable **Transcode**
 * Set **Codec** to H264
 * Set **Bitrate Mode** to Low
@@ -50,13 +50,13 @@ To texture the **Quad** with video, create a new **Render Texture**. In the **Pr
 
 ![Create Render Texture](images/spatial-audio/create-render-texture.png)
 
-On the **Inspector** pane of the **Render Texture**, set the **Size** property to match the video's native resolution of 1280x720. Then, to ensure good rendering performance on HoloLens2, set the **Depth Buffer** property to **At least 16 bits depth**. After these settings, the **Inspector** pane for the **Render Texture** will look like this:
+On the **Inspector** pane of the **Render Texture**, set the **Size** property to match the video's native resolution of 1280x720. Then, to ensure good rendering performance on HoloLens 2, set the **Depth Buffer** property to **At least 16 bits depth**. After these settings, the **Inspector** pane for the **Render Texture** will look like this:
 
 ![Render Texture properties](images/spatial-audio/render-texture-properties.png)
 
 Next, use your new **Render Texture** as the texture for the **Quad**:
 1. Drag the **Render Texture** from the **Project** pane onto the **Quad** in the **Hierarchy**
-2. To ensure good performance on HoloLens2, on the **Inspector** pane for the **Quad**, select the **Mixed Reality Toolkit Standard Shader**.
+2. To ensure good performance on HoloLens 2, on the **Inspector** pane for the **Quad**, select the **Mixed Reality Toolkit Standard Shader**.
 
 With these settings, the **Texture** component on the **Inspector** pane for the **Quad** will look like this:
 
@@ -104,5 +104,5 @@ After these changes, the **Inspector** pane for the **Video Player** will look l
 ![Video player set audio source](images/spatial-audio/video-player-set-audio-source.png)
 
 ## Next steps
-Try out your app on a HoloLens2 or in the Unity editor. Then, continue to [Chapter 3](unity-spatial-audio-ch3.md) to add a button, and use it to enable and disable spatialization at run time.
+Try out your app on a HoloLens 2 or in the Unity editor. Then, continue to [Chapter 3](unity-spatial-audio-ch3.md) to add a button, and use it to enable and disable spatialization at run time.
 

@@ -116,7 +116,7 @@ Uncommenting these lines adds two variables to the **Inspector** pane for the sc
 
 ## Next steps
 
-Try out your app on a HoloLens2 or in the Unity editor. Now, when touching the button in the app to activate spatialization, the script will route the video's audio to the Room Effect Group to add reverb. When switching to stereo, it will route the audio to the Master group, and avoid adding reverb.
+Try out your app on a HoloLens 2 or in the Unity editor. Now, when touching the button in the app to activate spatialization, the script will route the video's audio to the Room Effect Group to add reverb. When switching to stereo, it will route the audio to the Master group, and avoid adding reverb.
 
-You've completed the HoloLens2 spatial audio tutorials for Unity. Congratulations!
+You've completed the HoloLens 2 spatial audio tutorials for Unity. Congratulations!
 
