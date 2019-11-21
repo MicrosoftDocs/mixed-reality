@@ -19,68 +19,71 @@ Drag a video file into the Project pane in your Unity project. You can use [this
 
 ![Assets folder with video](images/spatial-audio/assets-folder-with-video.png)
 
-We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens2. To adjust these settings, Click on the video file in the Project pane. Then in the Inspector pane, override the settings for Windows Store Apps, and:
+We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens2. To adjust these settings, Click on the video file in the **Project** pane. Then in the Inspector pane, override the settings for Windows Store Apps, and:
 * Enable **Transcode**
 * Set **Codec** to H264
 * Set **Bitrate Mode** to Low
 * Set **Spatial Quality** to Medium Spatial Quality
-After these adjustments, the Inspector pane will look like this:
+
+After these adjustments, the **Inspector** pane will look like this:
 
 ![Video property pane](images/spatial-audio/video-property-pane.png)
 
-Next, add a **Video Player** object to the Hierarchy by right-clicking on the Hierarchy pane and choosing **Video Player**:
+Next, add a **Video Player** object to the **Hierarchy** by right-clicking on the **Hierarchy** pane and choosing **Video -> Video Player**:
 
 ![Video player in Hierarchy](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## Play video onto a quadrangle
-The **Video Player** object needs a textured game object on which to render the video. First, add a Quad to your Hierarchy by right-clicking on the Hierarchy pane and choosing **3D Object -> Quad**:
+The **Video Player** object needs a textured game object on which to render the video. First, add a **Quad** to your **Hierarchy** by right-clicking on the **Hierarchy** pane and choosing **3D Object -> Quad**:
 
 ![Add Quad to Hierarchy](images/spatial-audio/add-quad-to-hierarchy.png)
 
-To ensure the Quad appears in front of the user when the application starts, set the Quad's Position property to (0,0,2) and the scale to (1.28, 0.72, 1). The Transform component on the Quad's Inspector pane will look like this:
+To ensure the **Quad** appears in front of the user when the application starts, set the **Position** property of the **Quad** to (0,0,2), and the **Scale** property to (1.28, 0.72, 1). After these changes, the **Transform** component on the **Inspector** pane for the **Quad** will look like this:
 
 ![Quad transform](images/spatial-audio/quad-transform.png)
 
-The Quad will be the surface on which the video renders. To texture that surface with the video, create a new RenderTexture. In the Project pane, right-click and choose **Create -> Render Texture**:
+To texture the **Quad** with video, create a new **Render Texture**. In the **Project** pane, right-click and choose **Create -> Render Texture**:
 
 ![Create Render Texture](images/spatial-audio/create-render-texture.png)
 
-To play the video we've chosen, set the Size of the render texture to match the video's native resolution of 1280x720. Then, to ensure good rendering performance on HoloLens, set the **Depth Buffer** property to **At least 16 bits depth**. After these settings, the Inspector pane for the Render Texture will look like this:
+On the **Inspector** pane of the **Render Texture**, set the **Size** property to match the video's native resolution of 1280x720. Then, to ensure good rendering performance on HoloLens2, set the **Depth Buffer** property to **At least 16 bits depth**. After these settings, the **Inspector** pane for the **Render Texture** will look like this:
 
 ![Render Texture properties](images/spatial-audio/render-texture-properties.png)
 
-Next, use your new **Render Texture** as the texture for the **Quad**. To do so, drag the **Render Texture** from the Project view onto the **Quad** in the Hierarchy. Then, to ensure good performance on HoloLens2, on the Inspector panel for the Quad, select the **Mixed Reality Toolkit Standard Shader** for the render texture. With these settings, the Texture component of the Quad's Inspector panel will look like this:
+Next, use your new **Render Texture** as the texture for the **Quad**. To do so, drag the **Render Texture** from the **Project** pane onto the **Quad** in the Hierarchy. Then, to ensure good performance on HoloLens2, on the **Inspector** pane for the **Quad**, select the **Mixed Reality Toolkit Standard Shader**. With these settings, the **Texture** component on the **Inspector** pane for the **Quad** will look like this:
 
 ![Quad texture properties](images/spatial-audio/quad-texture-properties.png)
 
-Next, use this **Video Player** to play your video clip. To do so, on the Inspector panel for the **Video Player**:
+Next, use this **Video Player** to play your video clip. To do so, on the **Inspector** pane for the **Video Player**:
 * Set the **Video Clip** property to your video file
 * Check the **Loop** checkbox
-* Set Target Texture to your new render texture
-The **Video Player** Inspector pane will now look like this:
+* Set **Target Texture** to your new render texture
+
+The **Inspector** pane for the **Video Player** will now look like this:
 
 ![Video player properties](images/spatial-audio/video-player-properties.png)
 
 ## Route audio from the video to the quadrangle, and spatialize the audio
-The **Audio Mixer** panel is where you'll define destinations, called **Mixer Groups**, for audio playback from **Audio Source** components in your project. Open the **Audio Mixer** panel using **Window -> Audio -> Audio Mixer**. Then create a Mixer by clicking the '+' next to **Mixers**. The new mixer will include a default **Group** called **Master**. Your mixer panel will now look like this:
+The **Audio Mixer** pane is where you'll define destinations, called **Mixer Groups**, for audio playback from **Audio Source** components. Open the **Audio Mixer** pane using **Window -> Audio -> Audio Mixer**. Then create a **Mixer** by clicking the '+' next to **Mixers**. The new mixer will include a default **Group** called **Master**. Your **Mixer** pane will now look like this:
 
 ![Mixer panel with first mixer](images/spatial-audio/mixer-panel-with-first-mixer.png)
 
-Then, create an **Audio Source**, to which you'll route the audio from the video. To do so, on the Inspector panel for the **Quad**, click **Add Component** at the bottom of the Inspector Panel and add an **Audio Source**. Then, on the **Audio Source**:
-* Set Output to your mixer
-* Check the Spatialize box
-* Move the Spatial Blend slider to 1 (3D)
-After these changes, the **Audio Source** Inspector panel will look like this:
+Then, create an **Audio Source**, to which you'll route the audio from the video. To do so, on the **Inspector** pane for the **Quad**, click **Add Component** at the bottom of the pane and add an **Audio Source**. Then, on the **Audio Source**:
+* Set **Output** to your mixer
+* Check the **Spatialize** box
+* Move the **Spatial Blend** slider to 1 (3D)
+
+After these changes, the **Inspector** pane for the **Audio Source** will look like this:
 
 ![Quad audio source inspector](images/spatial-audio/quad-audio-source-inspector.png)
 
 > [!NOTE]
-> In versions of Unity prior to 2019, the 'Spatialize' checkbox is at the bottom of the Inspector panel for the Audio Source.
+> In versions of Unity prior to 2019, the 'Spatialize' checkbox is at the bottom of the **Inspector** pane for the **Audio Source**.
 
 > [!NOTE]
 > Important: You must both modify the **Spatial Blend** parameter **and** check the **Spatialize** checkbox. If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its internal panning spatializer, instead the Microsoft Spatializer with HRTFs.
 
-Finally, set the **Video Player** to route its audio to the **Audio Source** on the **Quad**. On the Inspector panel for the **Video Player**:
+Finally, set the **Video Player** to route its audio to the **Audio Source** on the **Quad**. On the **Inspector** pane for the **Video Player**:
 * Set the **Audio Output Mode** to 'Audio Source'
 * Set the **Audio Source** property to your Quad
 
