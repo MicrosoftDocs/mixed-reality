@@ -95,6 +95,10 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
 
 <br>
 
+### [UX elements for the mixed reality](app-patterns-landingpage.md)
+Learn about the building blocks for spatial interactions and UI in mixed reality.
+<br>
+
 
 ---
 
