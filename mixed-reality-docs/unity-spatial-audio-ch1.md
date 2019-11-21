@@ -10,9 +10,13 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 
 # Adding spatial audio to your project
 
-Welcome to the spatial audio module of the HoloLens 2 tutorials. This module shows how to use spatialization offload on HoloLens 2 in a Unity project, including enabling reverb and applying spatialization to common types of sounds in mixed reality applications. See the [spatializer GitHub repository](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2F&version=GBdevelop) to download a completed Unity project of this tutorial sequence. 
+This tutorial sequence shows:
+* How to use HRTF offload on HoloLens 2 in Unity
+* How to enable reverb when using HRTF offload
 
-For our recommendations on using sounds in mixed reality, and when to enable spatialization on sounds in your application, see [spatial sound design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design).
+The [Microsoft Spatializer GitHub repository](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2F&version=GBdevelop) has a completed Unity project of this tutorial sequence. 
+
+For our recommendations on when it can be helpful to spatialize sounds, see [spatial sound design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design).
 
 ## Objectives
 In this first chapter, you'll:
@@ -22,18 +26,44 @@ In this first chapter, you'll:
 * Enable spatial audio on your developer workstation
 
 ## Create a project and import MRTK
-Create an empty Unity 3D project. Then follow the instructions at [MRTK NuGet instructions](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) to use Nuget to install MRTK.
+Start with an empty Unity project, and use NuGet to install MRTK:
+1. Download the latest [NuGetForUnity .unitypackage](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest)
+2. In the Unity menu bar, click **Assets -> Import Package -> Custom Package...** and install the NuGetForUnity package:
+
+![Import custom package](images/spatial-audio/import-custom-package.png)
+
+3. In the Unity menu bar, click on NuGet > Manage NuGet Packages.
+
+![Manage NuGet packages](images/spatial-audio/manage-nuget-packages.png)
+
+4. In the **Search** box, enter "Microsoft.MixedReality.Toolkit"
+
+5. Choose the MRTK core package: **Microsoft.MixedReality.Toolkit.Foundation**
+
+The page [MRTK NuGet Package](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) has additional context and details.
 
 ## Set up MRTK in your project
-See Chapter 1 of the [MR Learning Base Module](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1) to set up your project to use MRTK. Because you've already installed MRTK using NuGet, you can skip the step to import the MRTK .unitypackage, moving on to the setup instructions.
+
+1. Open the Build Settings window by going to **File > Build Settings**.
+
+2. Select the _Universal Windows Platform_ and click **Switch Platform**.
+
+3. Click **Player Settings** in the **Build Window** to open the **Player Settings** properties in the **Inspector** pane.
+* Under **XR Settings**, check the **Virtual Reality Supported** checkbox
+* Under **XR Settings**, change the **Stereo Rendering Mode** to **Single Pass Instanced**.
+* Under **Publishing Settings**, check the **Spatial Perception** checkbox in the **Capabilities** section
+
+4. On the menu bar, click **Mixed Reality Toolkit > Add to Scene and Configure..** to add MRTK to your scene.
+
+[Chapter 1 of the MR Learning Base Module](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1) has pictures and additional guidance.
 
 ## Import the Microsoft Spatializer plugin
-The Microsoft spatializer plugin enables spatialization hardware acceleration on HoloLens 2 and is available via Nuget. Open the file **Assets/NuGet.config** in your Unity project to add the Microsoft Spatializer package feed, by adding the following element to the **packageSources** element: 
+The **Microsoft Spatializer** plugin enables HRTF hardware offload on HoloLens 2. In your Unity project folder, open **Assets/NuGet.config** in a text editor and add the following to the **packageSources** element: 
 > [!NOTE]
 > TODO: Change the link below to the public NuGet feed before publishing this page
 
 ```xml
-<add key="Spatializer" value="https://pkgs.dev.azure.com/microsoft/_packaging/Microsoft.SpatialAudio.Unity/nuget/v2/" />
+<add key="Spatializer" value="https://microsoft.pkgs.visualstudio.com/Analog/_packaging/Microsoft-SpatialAudio-Unity/nuget/v2/" />
 ```
 
 After editing, your NuGet.config will look like this:
@@ -45,7 +75,7 @@ After editing, your NuGet.config will look like this:
 <configuration>
     <packageSources>
        <add key="NuGet" value="http://www.nuget.org/api/v2/" />
-       <add key="Spatializer" value="https://pkgs.dev.azure.com/microsoft/_packaging/Microsoft.SpatialAudio.Unity/nuget/v2/" />
+       <add key="Spatializer" value="https://microsoft.pkgs.visualstudio.com/Analog/_packaging/Microsoft-SpatialAudio-Unity/nuget/v2/" />
     </packageSources>
     <disabledPackageSources />
     <activePackageSource>
@@ -59,12 +89,12 @@ After editing, your NuGet.config will look like this:
 ```
 
 ## Enable the Microsoft Spatializer plugin
-After importing the plugin, enable the Microsoft spatializer plugin. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
+Enable the **Microsoft Spatializer** plugin. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer". The **Audio** section of the **Project Settings** will now look like this:
 
 ![Project Settings showing spatializer plugin](images/spatial-audio/project-settings.png)
 
-## Enable spatial audio on your developer workstation
-On desktop versions of Windows, spatial sound is disabled by default. To enable testing your project in the Unity Editor, right-click on the volume icon in the task bar and enable Spatial sound. Choose **Windows Sonic for Headphones** to match the algorithm used on HoloLens 2.
+## Enable spatial audio on your workstation
+On desktop versions of Windows, spatial audio is disabled by default. Right-click on the volume icon in the task bar and choose **Spatial sound -> Windows Sonic for Headphones**.
 
 ![Desktop spatial audio settings](images/spatial-audio/desktop-audio-settings.png)
 
