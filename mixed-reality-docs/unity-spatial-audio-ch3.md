@@ -20,17 +20,18 @@ In the **Project** pane, select **Assets** and type "PressableButtonHoloLens2" i
 
 ![Button prefab in Assets](images/spatial-audio/button-prefab-in-assets.png)
 
-The prefab is the entry represented by a blue box, rather than a white box. Drag the prefab named "PressableButtonHoloLens2" into your hierarchy. In the **Inspector** pane for your new button, set the **Position** property to (0,-0.4,2). This places the button just below the video quad. The **Transform** component of the button will look like this:
+The prefab is the entry represented by a blue box, rather than a white box. Drag the prefab named **PressableButtonHoloLens2** into your hierarchy. In the **Inspector** pane for your new button, set the **Position** property to (0,-0.4,2). This places the button just below the video quad. The **Transform** component of the button will look like this:
 
 ![Button transform](images/spatial-audio/button-transform.png)
 
 ## Enable and spatialize audio feedback for button interactions
 In this step, you'll spatialize the audio feedback for the button. For related design suggestions, see https://docs.microsoft.com/en-us/windows/mixed-reality/spatial-sound-design. 
 
-To enable the button click sound, and spatialize it, open the **Inspector** pane for the **PressableButtonHoloLens2** in your **Hierarchyi**. Then:
+To enable the button click sound, and spatialize it, open the **Inspector** pane for the **PressableButtonHoloLens2** in your **Hierarchy**. Then:
 * Find the **Audio Source** component
 * For the **Output** property, click the selector and choose your mixer
-* Check the **Spatialize** checkbox, and move the **Spatial Blend** slider to 3D.
+* Check the **Spatialize** checkbox
+* Move the **Spatial Blend** slider to 3D (1).
 
 After these changes, the **Audio Source** component of your **PressableButtonHoloLens2** will look like this:
 
@@ -68,7 +69,6 @@ public class SpatializeOnOff : MonoBehaviour
     private bool m_IsSpatialized;
     private TMPro.TextMeshPro m_TextMeshPro;
 
-    // Start is called before the first frame update
     public void Start()
     {
         m_TextMeshPro = Button.GetComponent<TMPro.TextMeshPro>();
@@ -105,15 +105,18 @@ public class SpatializeOnOff : MonoBehaviour
 
 }
 ```
-
 > [!NOTE]
 > Several lines of the script are commented out. These lines will be uncommented in Chapter 4.
+
+> [!NOTE]
+> To enable or disable spatialization, the script only adjusts the **spatialBlend** property, leaving the **spatialization** property enabled. In this mode, Unity still applies the **Volume** curve. Otherwise, if the user were to disable spatialization when far from the source, they would hear the volume increase abruptly.
+> To fully disable spatialization, you can modify the script to also adjust the **spatialization** property of the **SourceObject** variable.
 
 On the **Inspector** pane of the **Quad**, click **Add Component** and add the **Spatialize On Off** script:
 
 ![Add script to quad](images/spatial-audio/add-script-to-quad.png)
 
-On the **Spatialize On Off** component of the Quad, set the **Source Object** property to the **Quad**.
+On the **Spatialize On Off** component of the **Quad**, set the **Source Object** property to the **Quad**.
 
 Then, find the **PressableButtonHoloLens2 -> IconAndText -> TextMeshPro** subobject in the **Hierarchy**, and drag it onto the **Button** field of the Spatialize On Off component.
 
@@ -131,7 +134,7 @@ After these changes, the **Pressable Button Holo Lens 2** component will look li
 ![Button action settings](images/spatial-audio/button-action-settings.png)
 
 ## Next steps
-Try out your app on a HoloLens2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video (if testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation). 
+Try out your app on a HoloLens2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video. If testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. 
 
 Continue on to [Chapter 4](unity-spatial-audio-ch4.md) to add perceived distance to sound sources using reverb.
 
