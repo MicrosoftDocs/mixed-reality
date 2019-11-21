@@ -110,7 +110,7 @@ public class SpatializeOnOff : MonoBehaviour
 
 > [!NOTE]
 > To enable or disable spatialization, the script only adjusts the **spatialBlend** property, leaving the **spatialization** property enabled. In this mode, Unity still applies the **Volume** curve. Otherwise, if the user were to disable spatialization when far from the source, they would hear the volume increase abruptly.
-> To fully disable spatialization, you can modify the script to also adjust the **spatialization** property of the **SourceObject** variable.
+> If you prefer to fully disable spatialization, modify the script to also adjust the **spatialization** boolean property of the **SourceObject** variable.
 
 On the **Inspector** pane of the **Quad**, click **Add Component** and add the **Spatialize On Off** script:
 

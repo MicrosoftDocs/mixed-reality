@@ -29,22 +29,24 @@ Each **Group** has its own set of effects. Add a reverb effect to the new group 
 In audio terminology, the original, unreverberated audio is called the _dry path_ and the audio after filtering with the reverb filter is called the _wet path_. Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_. The wet/dry mix strongly affects the sense of distance.
 
 The **SFX Reverb** includes controls to adjust the wet/dry mix within the effect. Because the **Microsoft Spatializer** plugin handles the dry path, we'll be using the **SFX Reverb** only for the wet path. On the **Inspector** pane of your **SFX Reverb**:
-* Set the Dry Level to the lowest setting (-10000 mB)
-* Set the wet level (Room) to the highest setting (0 mB)
+* Set the Dry Level property to the lowest setting (-10000 mB)
+* Set the Room property to the highest setting (0 mB)
 
 After these changes, the **Inspector** pane of the **SFX Reverb** will look like this:
 
 ![SFX Reverb properties](images/spatial-audio/sfx-reverb-properties.png)
 
-The other settings control how the reverb sounds. In particular, **Decay Time** is related to perceived room size. 
+The other settings control the feel of the simulated room. In particular, **Decay Time** is related to perceived room size. 
 
 ## Enable reverb on the video playback
 There are two steps to enable reverb on an audio source:
 * Route the **Audio Source** to the appropriate **Group**
 * Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing
 
+Below, we'll adjust our script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.
+
 > [!NOTE]
-> By default, the Microsoft Spatializer plugin takes audio out of the Unity audio engine and routes it directly the Windows spatialization API. To apply effects on the audio using the Unity audio engine, you must enable the plugin feature that routes audio back into the Unity audio engine.
+> By default, the Microsoft Spatializer plugin takes audio out of the Unity audio engine and routes it directly to the [Windows spatialization API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). To apply effects to the audio using the Unity audio engine, you must enable the plugin feature that routes audio back into the Unity audio engine.
 
 On the **Inspector** pane for the **Quad**, click **Add Component** and add the **Room Effect Send Level** script:
 
