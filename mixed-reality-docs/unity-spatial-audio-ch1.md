@@ -10,7 +10,7 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 
 # 1. Adding spatial audio to your project
 
-Welcome to the spatial audio module of the HoloLens 2 tutorials. This module shows how to use spatialization offload on HoloLens 2 in a Unity project, including enabling reverb and applying spatialization to common types of sounds in mixed reality applications. See the [spatializer GitHub repository](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2FSamples%2FMicrosoftSpatializerSample&version=GBuser%2Fkegodin%2Finitiallearningmodule) to download a completed Unity project of this tutorial sequence. 
+Welcome to the spatial audio module of the HoloLens 2 tutorials. This module shows how to use spatialization offload on HoloLens 2 in a Unity project, including enabling reverb and applying spatialization to common types of sounds in mixed reality applications. See the [spatializer GitHub repository](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2F&version=GBdevelop) to download a completed Unity project of this tutorial sequence. 
 
 For our recommendations on using sounds in mixed reality, and when to enable spatialization on sounds in your application, see [spatial sound design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design).
 
@@ -22,7 +22,7 @@ In this first chapter, you'll:
 * Enable spatial audio on your developer workstation
 
 ## Create a project and import MRTK
-Create an empty Unity 3D project and follow the instructions at [MRTK NuGet instructions](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) to use Nuget to install MRTK.
+Create an empty Unity 3D project. Then follow the instructions at [MRTK NuGet instructions](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) to use Nuget to install MRTK.
 
 ## Set up MRTK in your project
 See Chapter 1 of the [MR Learning Base Module](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1) to set up your project to use MRTK. Because you've already installed MRTK using NuGet, you can skip the step to import the MRTK .unitypackage, moving on to the setup instructions.
@@ -67,4 +67,7 @@ After importing the plugin, enable the Microsoft spatializer plugin. Open **Edit
 On desktop versions of Windows, spatial sound is disabled by default. To enable testing your project in the Unity Editor, right-click on the volume icon in the task bar and enable Spatial sound. Choose **Windows Sonic for Headphones** to match the algorithm used on HoloLens2.
 
 ![Desktop spatial audio settings](images/spatial-audio/desktop-audio-settings.png)
+
+## Next steps
+Continue on to [Unity spatial audio chapter 2](unity-spatial-audio-ch2.md) to add a video player, and spatialize the audio from the video.
 
