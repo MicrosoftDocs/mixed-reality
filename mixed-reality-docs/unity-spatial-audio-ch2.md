@@ -15,17 +15,21 @@ In this second chapter of the spatial audio module of the HoloLens 2 Unity tutor
 * Route audio from the video to the quadrangle, and spatialize the audio
 
 ## Import a video and add a Video Player
+
+> [!NOTE]
+> TODO: Change the video link below to the public link before publishing this page
+
 Drag a video file into the Project pane in your Unity project. You can use [this video](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2FSamples%2FMicrosoftSpatializerSample%2FAssets%2FMicrosoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4&version=GBdevelop) from the spatial audio sample project.
 
 ![Assets folder with video](images/spatial-audio/assets-folder-with-video.png)
 
-We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens2. To adjust these settings, Click on the video file in the **Project** pane. Then in the Inspector pane, override the settings for Windows Store Apps, and:
+We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens2. To adjust these settings, click on the video file in the **Project** pane. Then in the **Inspector** pane for the video file, override the settings for Windows Store Apps, and:
 * Enable **Transcode**
 * Set **Codec** to H264
 * Set **Bitrate Mode** to Low
 * Set **Spatial Quality** to Medium Spatial Quality
 
-After these adjustments, the **Inspector** pane will look like this:
+After these adjustments, the **Inspector** pane for the video file will look like this:
 
 ![Video property pane](images/spatial-audio/video-property-pane.png)
 
@@ -50,7 +54,7 @@ On the **Inspector** pane of the **Render Texture**, set the **Size** property t
 
 ![Render Texture properties](images/spatial-audio/render-texture-properties.png)
 
-Next, use your new **Render Texture** as the texture for the **Quad**. To do so, drag the **Render Texture** from the **Project** pane onto the **Quad** in the Hierarchy. Then, to ensure good performance on HoloLens2, on the **Inspector** pane for the **Quad**, select the **Mixed Reality Toolkit Standard Shader**. With these settings, the **Texture** component on the **Inspector** pane for the **Quad** will look like this:
+Next, use your new **Render Texture** as the texture for the **Quad**. To do so, drag the **Render Texture** from the **Project** pane onto the **Quad** in the **Hierarchy**. Then, to ensure good performance on HoloLens2, on the **Inspector** pane for the **Quad**, select the **Mixed Reality Toolkit Standard Shader**. With these settings, the **Texture** component on the **Inspector** pane for the **Quad** will look like this:
 
 ![Quad texture properties](images/spatial-audio/quad-texture-properties.png)
 
@@ -81,7 +85,7 @@ After these changes, the **Inspector** pane for the **Audio Source** will look l
 > In versions of Unity prior to 2019, the 'Spatialize' checkbox is at the bottom of the **Inspector** pane for the **Audio Source**.
 
 > [!NOTE]
-> Important: You must both modify the **Spatial Blend** parameter **and** check the **Spatialize** checkbox. If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its internal panning spatializer, instead the Microsoft Spatializer with HRTFs.
+> You must both modify the **Spatial Blend** parameter **and** check the **Spatialize** checkbox. If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its internal panning spatializer, instead the Microsoft Spatializer with HRTFs.
 
 Finally, set the **Video Player** to route its audio to the **Audio Source** on the **Quad**. On the **Inspector** pane for the **Video Player**:
 * Set the **Audio Output Mode** to 'Audio Source'
