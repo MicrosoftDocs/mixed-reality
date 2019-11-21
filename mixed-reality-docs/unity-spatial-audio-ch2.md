@@ -19,11 +19,11 @@ In this second chapter of the spatial audio module of the HoloLens 2 Unity tutor
 > [!NOTE]
 > TODO: Change the video link below to the public link before publishing this page
 
-Drag a video file into the Project pane in your Unity project. You can use [this video](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2FSamples%2FMicrosoftSpatializerSample%2FAssets%2FMicrosoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4&version=GBdevelop) from the spatial audio sample project.
+Drag a video file into the **Project** pane in your Unity project. You can use [this video](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2FSamples%2FMicrosoftSpatializerSample%2FAssets%2FMicrosoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4&version=GBdevelop) from the spatial audio sample project.
 
 ![Assets folder with video](images/spatial-audio/assets-folder-with-video.png)
 
-We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens2. To adjust these settings, click on the video file in the **Project** pane. Then in the **Inspector** pane for the video file, override the settings for Windows Store Apps, and:
+We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens2. Click on the video file in the **Project** pane. Then in the **Inspector** pane for the video file, override the settings for Windows Store Apps, and:
 * Enable **Transcode**
 * Set **Codec** to H264
 * Set **Bitrate Mode** to Low
@@ -77,7 +77,7 @@ Then, create an **Audio Source**, to which you'll route the audio from the video
 * Check the **Spatialize** box
 * Move the **Spatial Blend** slider to 1 (3D)
 
-After these changes, the **Inspector** pane for the **Audio Source** will look like this:
+After these changes, the **Audio Source** component on the **Inspector** pane for the **Quad** will look like this:
 
 ![Quad audio source inspector](images/spatial-audio/quad-audio-source-inspector.png)
 
@@ -91,8 +91,10 @@ Finally, set the **Video Player** to route its audio to the **Audio Source** on 
 * Set the **Audio Output Mode** to 'Audio Source'
 * Set the **Audio Source** property to your Quad
 
+After these changes, the **Inspector** pane for the **Video Player** will look like this:
+
 ![Video player set audio source](images/spatial-audio/video-player-set-audio-source.png)
 
 ## Next steps
-Try out your app on a HoloLens2 or in the Unity editor. Then, continue [Chapter 3](unity-spatial-audio-ch3.md) to add a button, and use it to enable and disable spatialization at run time.
+Try out your app on a HoloLens2 or in the Unity editor. Then, continue to [Chapter 3](unity-spatial-audio-ch3.md) to add a button, and use it to enable and disable spatialization at run time.
 
