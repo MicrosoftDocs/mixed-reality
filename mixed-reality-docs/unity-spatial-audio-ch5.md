@@ -65,17 +65,18 @@ using UnityEngine.Audio;
 
 public class SpatializeOnOff : MonoBehaviour
 {
-    public AudioSource SourceObject;
-    public GameObject Button;
+    public GameObject ButtonTextObject;
     public AudioMixerGroup RoomEffectGroup;
     public AudioMixerGroup MasterGroup;
 
+    private AudioSource m_SourceObject;
     private bool m_IsSpatialized;
     private TMPro.TextMeshPro m_TextMeshPro;
 
     public void Start()
     {
-        m_TextMeshPro = Button.GetComponent<TMPro.TextMeshPro>();
+        m_SourceObject = gameObject.GetComponent<AudioSource>();
+        m_TextMeshPro = ButtonTextObject.GetComponent<TMPro.TextMeshPro>();
         SetSpatialized();
     }
 
@@ -94,17 +95,17 @@ public class SpatializeOnOff : MonoBehaviour
     private void SetSpatialized()
     {
         m_IsSpatialized = true;
-        SourceObject.spatialBlend = 1;
+        m_SourceObject.spatialBlend = 1;
         m_TextMeshPro.SetText("Set Stereo");
-        SourceObject.outputAudioMixerGroup = RoomEffectGroup;
+        m_SourceObject.outputAudioMixerGroup = RoomEffectGroup;
     }
 
     private void SetStereo()
     {
         m_IsSpatialized = false;
-        SourceObject.spatialBlend = 0;
+        m_SourceObject.spatialBlend = 0;
         m_TextMeshPro.SetText("Set Spatialized");
-        SourceObject.outputAudioMixerGroup = MasterGroup;
+        m_SourceObject.outputAudioMixerGroup = MasterGroup;
     }
 
 }

@@ -23,7 +23,7 @@ Drag a video file into the **Project** pane in your Unity project. You can use [
 
 ![Assets folder with video](images/spatial-audio/assets-folder-with-video.png)
 
-We recommend adjusting the quality settings on the video clip to ensure smooth playback on HoloLens 2. Click on the video file in the **Project** pane. Then in the **Inspector** pane for the video file, override the settings for Windows Store Apps, and:
+Adjusting the quality settings on the video clip can ensure smooth playback on HoloLens 2. Click on the video file in the **Project** pane. Then in the **Inspector** pane for the video file, override the settings for Windows Store Apps, and:
 * Enable **Transcode**
 * Set **Codec** to H264
 * Set **Bitrate Mode** to Low
@@ -62,7 +62,7 @@ With these settings, the **Texture** component on the **Inspector** pane for the
 
 ![Quad texture properties](images/spatial-audio/quad-texture-properties.png)
 
-Next, use this **Video Player** to play your video clip. On the **Inspector** pane for the **Video Player**:
+To set your new **Video Player** and **Render Texture** to play your video clip, open the **Inspector** pane for the **Video Player** and:
 * Set the **Video Clip** property to your video file
 * Check the **Loop** checkbox
 * Set **Target Texture** to your new render texture
@@ -71,7 +71,7 @@ The **Inspector** pane for the **Video Player** will now look like this:
 
 ![Video player properties](images/spatial-audio/video-player-properties.png)
 
-## Route audio from the video to the quadrangle, and spatialize the audio
+## Spatialize the audio from the video
 In the **Inspector** pane for the **Quad**, create an **Audio Source** to which you'll route the audio from the video:
 * Click **Add Component** at the bottom of the pane
 * Add an **Audio Source**
@@ -85,7 +85,7 @@ After these changes, the **Audio Source** component on the **Inspector** pane fo
 
 ![Quad audio source inspector](images/spatial-audio/quad-audio-source-inspector.png)
 
-Set the **Video Player** to route its audio to the **Audio Source** on the **Quad**. On the **Inspector** pane for the **Video Player**:
+To set the **Video Player** to route its audio to the **Audio Source** on the **Quad**, open the **Inspector** pane for the **Video Player** and:
 * Set the **Audio Output Mode** to 'Audio Source'
 * Set the **Audio Source** property to your Quad
 
