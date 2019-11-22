@@ -85,12 +85,6 @@ After these changes, the **Audio Source** component on the **Inspector** pane fo
 
 ![Quad audio source inspector](images/spatial-audio/quad-audio-source-inspector.png)
 
-> [!NOTE]
-> In versions of Unity prior to 2019, the 'Spatialize' checkbox is at the bottom of the **Inspector** pane for the **Audio Source**.
-
-> [!NOTE]
-> If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its internal panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.
-
 Set the **Video Player** to route its audio to the **Audio Source** on the **Quad**. On the **Inspector** pane for the **Video Player**:
 * Set the **Audio Output Mode** to 'Audio Source'
 * Set the **Audio Source** property to your Quad
