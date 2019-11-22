@@ -73,7 +73,7 @@ If your app is created for **HoloLens**, then you can ensure that it is only ins
 </Dependencies>
 ```
 
-If your app requires functionality of **HoloLens 2** specifically, like eye-tracking or hand-trakcing, then you can ensure that it is targeted to HoloLens versions 18362 or greater by specifying a target device family of "Windows.Holographic" and MinVersion 10.0.18362.0. 
+If your app requires functionality of **HoloLens 2** specifically, like eye-tracking or hand-tracking, then you can ensure that it is targeted to Windows versions 18362 or greater by specifying a target device family of "Windows.Holographic" and MinVersion 10.0.18362.0. 
 
 ```
 <Dependencies>
