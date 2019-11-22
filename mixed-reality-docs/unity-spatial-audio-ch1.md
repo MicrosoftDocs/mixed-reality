@@ -72,9 +72,13 @@ Using NuGet for Unity, install the MRTK and Microsoft Spatializer plugins:
 
 3. Choose the MRTK core package: **Microsoft.MixedReality.Toolkit.Foundation**
 
+![MRTK NuGet package](images/spatial-audio/mrtk-nuget-package.png)
+
 4. In the **Search** box, enter "Microsoft.SpatialAudio"
 
 5. Choose the Microsoft Spatializer package: **Microsoft.SpatialAudio.Spatializer.Unity**
+
+![Spatializer plugin NuGet](images/spatial-audio/spatializer-plugin-nuget.png)
 
 [MRTK NuGet Package](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) has additional context and details.
 
