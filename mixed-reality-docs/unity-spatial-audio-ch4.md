@@ -106,7 +106,7 @@ After these changes, the **Pressable Button Holo Lens 2** component will look li
 ![Button action settings](images/spatial-audio/button-action-settings.png)
 
 ## Next steps
-Try out your app on a HoloLens 2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video. If testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. 
+Try out your app on a HoloLens 2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video. When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. 
 
 Continue on to [Chapter 5](unity-spatial-audio-ch5.md) to add perceived distance to sound sources using reverb.
 

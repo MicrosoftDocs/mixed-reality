@@ -11,7 +11,7 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 # Using reverb to add distance to spatial audio
 
 ## Objectives
-In previous chapters, we added spatialization to sounds to give them a sense of direction. In this 4th chapter, we'll add a reverb effect to give sounds a sense of distance. This is useful for holograms, such as the video playback, that are meant to be out in the listener's world. Our objectives are to:
+In previous chapters, we added spatialization to sounds to give them a sense of direction. In this 5th chapter, we'll add a reverb effect to give sounds a sense of distance. Our objectives are to:
 * Improve perceived distance of sound sources by adding reverb
 * Control perceived distance of the sound using the listener's distance to the hologram
 
@@ -26,7 +26,7 @@ Each **Group** has its own set of effects. Add a reverb effect to the new group 
 
 ![Add SFX Reverb](images/spatial-audio/add-sfx-reverb.png)
 
-In audio terminology, the original, unreverberated audio is called the _dry path_ and the audio after filtering with the reverb filter is called the _wet path_. Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_. The wet/dry mix strongly affects the sense of distance.
+In audio terminology, the original, unreverberated audio is called the _dry path_, and the audio after filtering with the reverb filter is called the _wet path_. Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_. The wet/dry mix strongly affects the sense of distance.
 
 The **SFX Reverb** includes controls to adjust the wet/dry mix within the effect. Because the **Microsoft Spatializer** plugin handles the dry path, we'll be using the **SFX Reverb** only for the wet path. On the **Inspector** pane of your **SFX Reverb**:
 * Set the Dry Level property to the lowest setting (-10000 mB)
@@ -43,16 +43,16 @@ There are two steps to enable reverb on an audio source:
 * Route the **Audio Source** to the appropriate **Group**
 * Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing
 
-Below, we'll adjust our script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.
+In the following steps, we'll adjust our script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.
 
 > [!NOTE]
-> By default, the Microsoft Spatializer plugin takes audio out of the Unity audio engine and routes it directly to the [Windows spatialization API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). To apply effects to the audio using the Unity audio engine, you must enable the plugin feature that routes audio back into the Unity audio engine.
+> Unless you enable **Room Effect Send Level** feature of the **Microsoft Spatializer** plugin, it doesn't send any audio back to the Unity audio engine for effect processing.
 
 On the **Inspector** pane for the **Quad**, click **Add Component** and add the **Room Effect Send Level** script:
 
 ![Add send level script](images/spatial-audio/add-send-level-script.png)
 
-The **Room Effect Send Level** component includes a graph control that sets the level of the audio sent to the Unity audio engine for reverb processing. Set the level to about -30dB:
+The **Room Effect Send Level** component includes a graph control that sets the level of the audio sent to the Unity audio engine for reverb processing. Click and drag the curve downwards to set the level to about -30dB:
 
 ![Adjust reverb curve](images/spatial-audio/adjust-reverb-curve.png)
 
@@ -111,9 +111,13 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Uncommenting these lines adds two variables to the **Inspector** pane for the script. On the **Inspector** pane of the **Spatialize On Off** component of the **Quad**, set the new **Room Effect Group** and **Master Group** variables to the appropriate mixer groups. After these changes, the component properties will look like this:
+Uncommenting these lines adds two variables to the **Inspector** pane for the script. To set these, on the **Inspector** pane of the **Spatialize On Off** component of the **Quad**:
+* Set the **Room Effect Group** property to your new Room Effect mixer group
+* Set the **Master Group** property to the Master mixer group
 
-![Spatialize On Off Ch4](images/spatial-audio/spatialize-on-off-ch4.png)
+After these changes, the **Spatialize On Off** properties will look like this:
+
+![Spatialize On Off Extended](images/spatial-audio/spatialize-on-off-extended.png)
 
 ## Next steps
 
