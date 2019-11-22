@@ -45,12 +45,12 @@ There are two steps to enable reverb on an audio source:
 
 In the following steps, we'll adjust our script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.
 
-> [!NOTE]
-> Unless you enable **Room Effect Send Level** feature of the **Microsoft Spatializer** plugin, it doesn't send any audio back to the Unity audio engine for effect processing.
-
 On the **Inspector** pane for the **Quad**, click **Add Component** and add the **Room Effect Send Level** script:
 
 ![Add send level script](images/spatial-audio/add-send-level-script.png)
+
+> [!NOTE]
+> Unless you enable **Room Effect Send Level** feature of the **Microsoft Spatializer** plugin, it doesn't send any audio back to the Unity audio engine for effect processing.
 
 The **Room Effect Send Level** component includes a graph control that sets the level of the audio sent to the Unity audio engine for reverb processing. Click and drag the curve downwards to set the level to about -30dB:
 
