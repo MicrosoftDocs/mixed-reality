@@ -62,6 +62,15 @@ After editing, your NuGet.config will look like this:
 </configuration>
 ```
 
+## Add the Windows Mixed Reality package
+Windows Mixed Reality support in Unity 2019 and later is contained in an option package. To add it to your project, open **Window -> Package Manager** from the Unity menu bar:
+
+![Package manager menu](images/spatial-audio/package-manager-menu.png)
+
+Then find and install the **Windows Mixed Reality** package:
+
+![Package manager window](images/spatial-audio/package-manager-window.png)
+
 ## Install the MRTK and Microsoft Spatializer plugins
 Using NuGet for Unity, install the MRTK and Microsoft Spatializer plugins:
 1. In the Unity menu bar, click on **NuGet -> Manage NuGet Packages**.

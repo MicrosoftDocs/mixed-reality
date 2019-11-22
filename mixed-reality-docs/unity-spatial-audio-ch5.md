@@ -111,7 +111,7 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Uncommenting these lines adds two variables to the **Inspector** pane for the script. To set these, on the **Inspector** pane of the **Spatialize On Off** component of the **Quad**:
+Uncommenting these lines adds two properties to the **Inspector** pane for the script. To set these, on the **Inspector** pane of the **Spatialize On Off** component of the **Quad**:
 * Set the **Room Effect Group** property to your new Room Effect mixer group
 * Set the **Master Group** property to the Master mixer group
 

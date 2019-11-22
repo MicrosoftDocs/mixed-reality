@@ -57,7 +57,7 @@ By default, Unity will attenuate spatialized sounds as they get farther from the
 To disable this attenuation, adjust the **Volume** curve. In the **Audio Source** component of the **Inspector** pane for the **PressableButtonHoloLens2**, there is a section called **3D Sound Settings**. In that section:
 1. Set the **Volume Rolloff** property to Linear
 2. Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'
-3. Adjust the shape of the **Volume** curve to be flat across the entire X axis
+3. To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis
 
 After these changes, the **3D Sound Settings** section of the **Audio Source** properties of the **PressableButtonHoloLens2** will look like this:
 
