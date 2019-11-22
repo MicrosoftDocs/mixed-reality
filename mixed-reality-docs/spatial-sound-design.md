@@ -41,41 +41,41 @@ Sounds that are used well are valuable to your users. But make sure your applica
 Interaction types in mixed reality include gesture, direct manipulation, and voice. Use the following suggested characteristics to select or design sounds for these interactions.
 
 ### Gesture interactions
-In mixed reality, users can interact with buttons by using a mouse. Button actions  generally occur when the user releases the button, rather than when it's pressed, to give the user a chance to cancel the interaction. Use sounds to reinforce these stages. Also, to assist users in targeting distant buttons, consider using a cursor-hover sound.
+In mixed reality, users can interact with buttons by using a mouse. Button actions generally occur when the user releases the button, rather than when it's pressed, to give the user a chance to cancel the interaction. Use sounds to reinforce these stages. Also, to assist users in targeting distant buttons, consider using a cursor-hover sound.
 * Button-press sounds should have a short, tactile "click." Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
 * Button-unpress sounds should have a similar tactile feel. A higher pitch than the press sound reinforces the sense of completion. Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 * For hover sounds, consider using a subtle and non-threatening sound, such as a low-frequency thud or bump.
 
 ### Direct manipulation
-On HoloLens 2, articulated hand tracking supports direct manipulation of user interface elements. Sounds are important replacements when there's no other physical feedback.
+On HoloLens 2, articulated hand tracking supports direct manipulation of user-interface elements. Sounds are important when there's no other physical feedback.
 
-A *button press* sound is important in direct manipulation because the user doesn't get any other indication of when they reached the bottom of the key stroke. Sound indicators of key travel can be small, subtle, and occluded. As with gesture interactions, button presses should have a short, tactile sound like a click, and unpresses should have a similar click with raised pitch.
+A *button press* sound is important in direct manipulation because the user doesn't get any other indication when they reach the bottom of the key stroke. Sound indicators of key travel can be small, subtle, and occluded. As with gesture interactions, button presses should have a short, tactile sound like a click. Unpresses should have a similar click sound but with raised pitch.
 * Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
 * Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress)
 
 It's difficult to visual confirm a *grab* or *release* action. The user's hand will often be in the way of any visual effect, and hard-bodied objects lack a real-world visual analogue of "grabbing." In contrast, sounds can effectively communicate successful grab and release interactions.
 * Grab actions should have a short, somewhat muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes this is accompanied by a "whoosh" sound leading up to the impact of the sound to communicate the motion of the hand when grabbing. Example: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
-* Release actions should have a similarly short and tactile sound, usually pitched down from the grab sound and in a reverse order in time, with an impact and then a "whoosh" to communicate that the object is settling into place.	Example: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Move_End.wav)
+* Release actions should get a similarly short and tactile sound. It's usually pitched down from the grab sound and in reverse order in time, with an impact and then a "whoosh" to communicate that the object is settling into place.Example: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Move_End.wav)
 
 A *drawing* interaction should have a looping, persistent sound whose volume is controlled by the movement of the user's hand. It should be silent when the user's hand is still and at maximum volume when the user's hand is moving quickly.
 
 ### Voice interactions
-Voice interactions often have subtle visual elements. Reinforce the interaction stages by using sounds. You may want to use more-tonal sounds to distinguish them them from gesture and direct manipulation sounds.
+Voice interactions often have subtle visual elements. Use sounds to reinforce the interaction stages. You may want to use more-tonal sounds to distinguish them them from gesture and direct manipulation sounds.
 
 * Use a positive-sounding tone for voice command *confirmations*. Rising tones and major musical intervals are effective for this.
-* Use a shorter, less-positive sounding tone for voice command *failure*. Avoid negative sounds. Instead, use a more percussive, neutral sound to communicate the application is moving on from the interaction.
-* If your application has a wake word, use a short, gentle tone when the device *starts listening*. Use  a subtle looping sound while the application listens.
+* Use a shorter, less-positive-sounding tone for voice command *failure*. Avoid negative sounds. Instead, use a more percussive, neutral sound to communicate that the application is moving on from the interaction.
+* If your application has a wake word, use a short, gentle tone when the device *starts listening.* Use  a subtle looping sound while the application is listening.
 
 ### Notifications
-Notifications communicate application state changes and other events that aren't initiated by the user, such as process completions, messages, and calls.
+Notifications communicate application state changes and other events that aren't initiated by the user, such as process completions, messages, and phone calls.
 
 In mixed reality, objects sometimes move out of the user's field of view. Accompany *animated objects* with a spatialized sound that depends on the object and speed of motion.
-* It also helps to play a spatialized sound at the end of an animation to inform the user of the object's new position.
-* For gradual movements, a "whoosh" sound during movement helps the user track the object
+* It helps to play a spatialized sound at the end of an animation to inform the user of the object's new position.
+* For gradual movements, a "whoosh" sound during movement helps the user track the object.
 
-*Message notifications* will most likely be heard several times, and sometimes in quick succession. It's important that it doesn't stand out or sound harsh. Mid-range positive tonal sounds are effective.
+*Message notifications* will most likely be heard several times and sometimes in quick succession. It's important that the notification doesn't stand out or sound harsh. Mid-range positive tonal sounds are effective.
 
-* Calls should have similar qualities to a cell phone ringtone. These are usually looping musical phrases that play until the user answers the call.
+* Call sounds should have similar qualities to a cell phone ringtone. These are usually looping musical phrases that play until the user answers the call.
 * Voice communication connection and disconnection should have a short, tonal sound. The connection sound should be a positive tone, to indicate a successful connection. The disconnection sound should be a neutral sound to indicate completion of the call.
 
 ## Spatialization
