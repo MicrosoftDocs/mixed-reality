@@ -40,7 +40,7 @@ Start with an empty Unity project, and use NuGet to install MRTK:
 
 5. Choose the MRTK core package: **Microsoft.MixedReality.Toolkit.Foundation**
 
-The page [MRTK NuGet Package](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) has additional context and details.
+[MRTK NuGet Package](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) has additional context and details.
 
 ## Set up MRTK in your project
 
@@ -99,5 +99,5 @@ On desktop versions of Windows, spatial audio is disabled by default. Right-clic
 ![Desktop spatial audio settings](images/spatial-audio/desktop-audio-settings.png)
 
 ## Next steps
-Continue on to [Unity spatial audio chapter 2](unity-spatial-audio-ch2.md) to add a video player, and spatialize the audio from the video.
+Continue on to [Unity spatial audio chapter 2](unity-spatial-audio-ch2.md) to spatialize button interaction sounds.
 

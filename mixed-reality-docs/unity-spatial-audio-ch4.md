@@ -1,6 +1,6 @@
 ---
-title: Spatial audio tutorials - 4. Using reverb to add distance to spatial audio
-description: Add a reverb effect to enhance the sense of distance variation to spatial audio.
+title: Spatial audio tutorials - 4. Enabling and disabling spatial audio at run time
+description: Use a button to enable and disable spatialization of audio at run time.
 author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
@@ -8,55 +8,20 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 ---
 
-# Using reverb to add distance to spatial audio
+# Enabling and disabling spatial audio at run time
 
 ## Objectives
-In previous chapters, we added spatialization to sounds to give them a sense of direction. In this 4th chapter, we'll add a reverb effect to give sounds a sense of distance. This is useful for holograms, such as the video playback, that are meant to be out in the listener's world. Our objectives are to:
-* Improve perceived distance of sound sources by adding reverb
-* Control perceived distance of the sound using the listener's distance to the hologram
+In this chapter, you'll:
+* Add a new script to control spatialization on a game object
+* Drive the spatialization control script from button actions
 
-## Add a mixer group and a reverb effect
-In Chapter 2, we added a mixer. The mixer includes one **Group** by default called **Master**. Because we'll only want to apply a reverb effect to some sounds, let's add a second **Group** for those sounds. To add a **Group**, right click on the **Master** group in the **Audio Mixer** and choose **Add child group**:
+## Add a new script to control spatialization on a game object
+Right-click in the **Project** pane and create a new C# script by choosing **Create -> C# Script**. Name your script "SpatializeOnOff".
 
-![Add child group](images/spatial-audio/add-child-group.png)
+![Create script](images/spatial-audio/create-script.png)
 
-In this example, we've named the new group "Room Effect".
+Double-click the script in the **Project** pane to open it in Visual Studio. Replace the default script contents with the following:
 
-Each **Group** has its own set of effects. Add a reverb effect to the new group by clicking **Add...** on the new group, and choosing **SFX Reverb**:
-
-![Add SFX Reverb](images/spatial-audio/add-sfx-reverb.png)
-
-In audio terminology, the original, unreverberated audio is called the _dry path_ and the audio after filtering with the reverb filter is called the _wet path_. Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_. The wet/dry mix strongly affects the sense of distance.
-
-The **SFX Reverb** includes controls to adjust the wet/dry mix within the effect. Because the **Microsoft Spatializer** plugin handles the dry path, we'll be using the **SFX Reverb** only for the wet path. On the **Inspector** pane of your **SFX Reverb**:
-* Set the Dry Level property to the lowest setting (-10000 mB)
-* Set the Room property to the highest setting (0 mB)
-
-After these changes, the **Inspector** pane of the **SFX Reverb** will look like this:
-
-![SFX Reverb properties](images/spatial-audio/sfx-reverb-properties.png)
-
-The other settings control the feel of the simulated room. In particular, **Decay Time** is related to perceived room size. 
-
-## Enable reverb on the video playback
-There are two steps to enable reverb on an audio source:
-* Route the **Audio Source** to the appropriate **Group**
-* Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing
-
-Below, we'll adjust our script to control the audio routing, and attach a control script provided with the **Microsoft Spatializer** plugin to feed data into the reverb.
-
-> [!NOTE]
-> By default, the Microsoft Spatializer plugin takes audio out of the Unity audio engine and routes it directly to the [Windows spatialization API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). To apply effects to the audio using the Unity audio engine, you must enable the plugin feature that routes audio back into the Unity audio engine.
-
-On the **Inspector** pane for the **Quad**, click **Add Component** and add the **Room Effect Send Level** script:
-
-![Add send level script](images/spatial-audio/add-send-level-script.png)
-
-The **Room Effect Send Level** component includes a graph control that sets the level of the audio sent to the Unity audio engine for reverb processing. Set the level to about -30dB:
-
-![Adjust reverb curve](images/spatial-audio/adjust-reverb-curve.png)
-
-Next, uncomment the 4 commented lines in the **SpatializeOnOff** script. The script will now look like this:
 ```c#
 using System.Collections;
 using System.Collections.Generic;
@@ -67,8 +32,8 @@ public class SpatializeOnOff : MonoBehaviour
 {
     public AudioSource SourceObject;
     public GameObject Button;
-    public AudioMixerGroup RoomEffectGroup;
-    public AudioMixerGroup MasterGroup;
+    //public AudioMixerGroup RoomEffectGroup;
+    //public AudioMixerGroup MasterGroup;
 
     private bool m_IsSpatialized;
     private TMPro.TextMeshPro m_TextMeshPro;
@@ -96,7 +61,7 @@ public class SpatializeOnOff : MonoBehaviour
         m_IsSpatialized = true;
         SourceObject.spatialBlend = 1;
         m_TextMeshPro.SetText("Set Stereo");
-        SourceObject.outputAudioMixerGroup = RoomEffectGroup;
+        //SourceObject.outputAudioMixerGroup = RoomEffectGroup;
     }
 
     private void SetStereo()
@@ -104,19 +69,42 @@ public class SpatializeOnOff : MonoBehaviour
         m_IsSpatialized = false;
         SourceObject.spatialBlend = 0;
         m_TextMeshPro.SetText("Set Spatialized");
-        SourceObject.outputAudioMixerGroup = MasterGroup;
+        //SourceObject.outputAudioMixerGroup = MasterGroup;
     }
 
 }
 ```
+> [!NOTE]
+> Several lines of the script are commented out. These lines will be uncommented in [Chapter 5](unity-spatial-audio-ch5.md).
 
-Uncommenting these lines adds two variables to the **Inspector** pane for the script. On the **Inspector** pane of the **Spatialize On Off** component of the **Quad**, set the new **Room Effect Group** and **Master Group** variables to the appropriate mixer groups. After these changes, the component properties will look like this:
+> [!NOTE]
+> To enable or disable spatialization, the script only adjusts the **spatialBlend** property, leaving the **spatialization** property enabled. In this mode, Unity still applies the **Volume** curve. Otherwise, if the user were to disable spatialization when far from the source, they would hear the volume increase abruptly. <br>
+> If you prefer to fully disable spatialization, modify the script to also adjust the **spatialization** boolean property of the **SourceObject** variable.
 
-![Spatialize On Off Ch4](images/spatial-audio/spatialize-on-off-ch4.png)
+## Attach your script and drive it from the button
+On the **Inspector** pane of the **Quad**, click **Add Component** and add the **Spatialize On Off** script:
+
+![Add script to quad](images/spatial-audio/add-script-to-quad.png)
+
+On the **Spatialize On Off** component of the **Quad**:
+1. Set the **Source Object** property to the **Quad**
+2. Find the **PressableButtonHoloLens2 -> IconAndText -> TextMeshPro** subobject in the **Hierarchy**, and drag it onto the **Button** field of the **Spatialize On Off** component
+
+After these changes, the **Spatialize On Off** component of the **Quad** will look like this:
+
+![Spatialize script ch3](images/spatial-audio/spatialize-script-ch3.png)
+
+Set the button to call the **Spatialize On Off** script when the button is released. In the **Inspector** pane of the **PressableButtonHoloLens2** object, find the **Pressable Button Holo Lens 2** component, and:
+1. Click the + icon under the **Button Released** section to add an action.
+2. Drag the **Quad** from the **Hierarchy** into the target object slot.
+3. Select **SpatializeOnOff.SwapSpatialization** from the action drop-down box.
+
+After these changes, the **Pressable Button Holo Lens 2** component will look like this:
+
+![Button action settings](images/spatial-audio/button-action-settings.png)
 
 ## Next steps
+Try out your app on a HoloLens 2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video. If testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. 
 
-Try out your app on a HoloLens 2 or in the Unity editor. Now, when touching the button in the app to activate spatialization, the script will route the video's audio to the Room Effect Group to add reverb. When switching to stereo, it will route the audio to the Master group, and avoid adding reverb.
-
-You've completed the HoloLens 2 spatial audio tutorials for Unity. Congratulations!
+Continue on to [Chapter 5](unity-spatial-audio-ch5.md) to add perceived distance to sound sources using reverb.
 
