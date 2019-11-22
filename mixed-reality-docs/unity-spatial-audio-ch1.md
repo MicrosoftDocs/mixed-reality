@@ -63,7 +63,7 @@ After editing, your NuGet.config will look like this:
 ```
 
 ## Add the Windows Mixed Reality package
-Windows Mixed Reality support in Unity 2019 and later is contained in an option package. To add it to your project, open **Window -> Package Manager** from the Unity menu bar:
+Windows Mixed Reality support in Unity 2019 and later is contained in an optional package. To add it to your project, open **Window -> Package Manager** from the Unity menu bar:
 
 ![Package manager menu](images/spatial-audio/package-manager-menu.png)
 
@@ -104,7 +104,7 @@ Using NuGet for Unity, install the MRTK and Microsoft Spatializer plugins:
 
 4. On the menu bar, click **Mixed Reality Toolkit -> Add to Scene and Configure..** to add MRTK to your scene.
 
-[Chapter 1 of the MR Learning Base Module](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1) has pictures and additional guidance.
+For additional guidance, including how to build your app and deploy to a HoloLens 2, see [Chapter 1 of the MR Learning Base Module](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1).
 
 ## Enable the Microsoft Spatializer plugin
 Enable the **Microsoft Spatializer** plugin. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer". The **Audio** section of the **Project Settings** will now look like this:
