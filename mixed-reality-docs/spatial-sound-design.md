@@ -1,6 +1,6 @@
 ---
-title: Using Sound in mixed-reality applications
-description: Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed reality applications.
+title: Use Sound in mixed-reality applications
+description: Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed-reality applications.
 author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
@@ -8,32 +8,32 @@ ms.topic: article
 keywords: Windows Mixed Reality, spatial sound, design, style
 ---
 
-# Use Sound in mixed-reality applications
+# Use sound in mixed-reality applications
 
-You can use sound to inform and reinforce the user's mental model of application state. Use spatialization, when appropriate, to place sounds into the mixed world. When you connecting the auditory and the visual in this way, you deepen the intuitive nature of many interactions and increase user confidence.
+You can use sound to inform and reinforce the user's mental model of application state. Use spatialization, when appropriate, to place sounds in the mixed world. When you connect the auditory and the visual in this way, you deepen the intuitive nature of many interactions and increase user confidence.
 
 <br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## When should I add sounds?
-Mixed-reality applications often have a greater need for sounds than 2D applications, due to the lack of a physical interface. You should add sounds when they inform the user or reinforce interactions.
+Mixed-reality applications often have a greater need for sound than 2D applications, due to their lack of a physical interface. You should add sounds when they inform the user or reinforce interactions.
 
 ### Inform and reinforce
-* For events that aren't initiated by the user, such as notifications, consider adding sounds to inform the user that a change occurred.
-* Interactions may have several stages. Consider using sounds to reinforce stage transitions.
+* For events that aren't initiated by the user, such as notifications, use sound to inform the user that a change occurred.
+* Interactions may have several stages. Use sound to reinforce stage transitions.
 
-See the following secdtions for examples of interactions, events, and suggested sound characteristics.
+See the following examples of interactions, events, and suggested sound characteristics.
 
 ### Exercise restraint
 Users don't have an unlimited capacity for audio information.
 * Each sound should communicate specific, valuable information.
-* When your app plays sounds to inform the user, temporarily reduce the volume of other sounds.
-* For button hover sounds (see the following information)), add a time delay to prevent excessive triggering of sounds.
+* When your app plays a sound to inform the user, temporarily reduce the volume of other sounds.
+* For button hover sounds (see the following information), add a time delay to prevent excessive triggering of sounds.
 
 ### Don't rely solely on sounds
 Sounds that are used well are valuable to your users. But make sure your application is usable even with the sound turned off.
-* Users may be hearing impaired
+* Users may be hearing impaired.
 * Your application may be used in a loud environment.
 * Users may have privacy concerns or other reasons to disable device audio.
 
@@ -41,7 +41,7 @@ Sounds that are used well are valuable to your users. But make sure your applica
 Interaction types in mixed reality include gesture, direct manipulation, and voice. Use the following suggested characteristics to select or design sounds for these interactions.
 
 ### Gesture interactions
-In mixed reality, users can interact with buttons using a cursor. Button actions are generally performed when the user releases the button, rather than when it is pressed, to give the user a chance to cancel the interaction. Use sounds to reinforce these stages. Also, to assist users in targeting distant buttons, consider using a cursor-hover sound.
+In mixed reality, users can interact with buttons by using a mouse. Button actions  generally occur when the user releases the button, rather than when it's pressed, to give the user a chance to cancel the interaction. Use sounds to reinforce these stages. Also, to assist users in targeting distant buttons, consider using a cursor-hover sound.
 * Button-press sounds should have a short, tactile "click." Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
 * Button-unpress sounds should have a similar tactile feel. A higher pitch than the press sound reinforces the sense of completion. Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 * For hover sounds, consider using a subtle and non-threatening sound, such as a low-frequency thud or bump.
