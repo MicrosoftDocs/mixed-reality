@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 ---
 
 # Spatializing audio from a video
-In this second chapter of the spatial audio module of the HoloLens 2 Unity tutorials, you'll:
+In this 3rd chapter of the spatial audio module of the HoloLens 2 Unity tutorials, you'll:
 * Import a video and add a Video Player
 * Play the video onto a quadrangle
 * Route audio from the video to the quadrangle, and spatialize the audio

@@ -11,7 +11,7 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 # Spatializing button interaction sounds
 
 ## Objectives
-In this chapter of the spatial audio module of the HoloLens 2 tutorials, you'll:
+In this second chapter of the spatial audio module of the HoloLens 2 tutorials, you'll:
 * Add a button
 * Spatialize the button click sounds
 

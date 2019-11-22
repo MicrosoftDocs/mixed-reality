@@ -11,7 +11,7 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 # Enabling and disabling spatialization at run time
 
 ## Objectives
-In this chapter, you'll:
+In this 4th chapter, you'll:
 * Add a new script to control spatialization on a game object
 * Drive the spatialization control script from button actions
 
