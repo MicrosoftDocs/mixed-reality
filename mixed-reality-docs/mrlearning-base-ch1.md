@@ -5,7 +5,8 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 11/01/2019
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
+keywords: mixed reality,unity, tutorial, hololens
 ---
 
 # 2. Initializing your project and first application
