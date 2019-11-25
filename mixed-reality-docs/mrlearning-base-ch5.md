@@ -105,7 +105,7 @@ In this section, two voice commands are implemented. First, the ability to toggl
 
 ### The Pan Gesture
 
-In this section, you will learn how to use the pan gesture. This is useful for scrolling by using your finger or hand to scroll through content. You can also use the pan gesture to rotate objects, cycle through a collection of 3D objects, or even to scroll a 2D UI. <!--TMP You will also learn how to use the pan gesture to warp a texture, and how to move a collection of 3D objects.-->
+In this section, you will learn how to use the pan gesture. This is useful for scrolling by using your finger or hand to scroll through content. You can also use the pan gesture to rotate objects, cycle through a collection of 3D objects, or even to scroll a 2D UI.
 
 1. Create a quad. In your BaseScene hierarchy, right-click, select "3D Object" followed by Quad.
 
@@ -123,10 +123,7 @@ In this section, you will learn how to use the pan gesture. This is useful for s
 4. In your Projects panel, type “pan content” in the Search box. Drag that material onto the quad in your scene.
 
     >[!NOTE]
-    >The Pan Content material is not included in the MRTK, but an asset in this module's asset package as imported in previous lessons.
-
-    >[!NOTE]
-    >When you add the pan content, it may look stretched. You can fix this by adjusting the values x, y and z values of the size of the quad until you are satisfied with the way it looks.
+    >The PanContent material is not part of MRTK but included with the BaseModuleAssets asset imported in the previous lesson.
 
     To use the pan gesture, you will need a collider on your object. You may see the quad already has a mesh collider. However, the mesh collider is not ideal, because it is extremely thin and difficult to select. We suggest replacing the mesh collider with a box collider.
 
@@ -152,26 +149,45 @@ In this section, you will learn how to use the pan gesture. This is useful for s
 
     And with that, you have a pan-enabled quad.
 
-    As you can see, the Hand Interaction Pan Zoom component has various setting, as an optional exercise, feel free to play around with them.
+    As you can see, the Hand Interaction Pan Zoom script component has various settings, as an optional exercise, feel free to play around with them.
 
     ![mrlearning-base-ch5-2-step8b.png](images/mrlearning-base-ch5-2-step8b.png)
 
-<!--TMP
-   Next, we will learn how to pan 3D objects. 
+9. Next, we will learn how to pan 3D objects.
 
-10. Right-click the quad object, select 3D object and click Cube. Scale the cube so that it’s roughly x = 0.1, y = 0.1 and z = 0.1. Copy that cube three times by right-clicking the cube and pressing duplicate, or by pressing control/command D. Space them out evenly. Your scene should look similar to the image below.
+    In the Hierarchy, right-click the Quad object, to open the contextual popup menu, then select **3D Object** > **Cube** to add a cube to your scene.
 
-![Lesson5 Chapter2 Step10im](images/Lesson5_chapter2_step10im.PNG)
+    Ensure the Cube's **Position** is set to  _0, 0, 0_ so it's positioned neatly within the Quad. Scale the Cube down to a **Scale** of _0.1, 0.1, 0.1_.
 
-11. Select the quad again and under the hand interaction pan script, set the pan actions to each of the cubes. Under Pan Event Receivers, we want to specify the number of objects receiving the event. Since there are four cubes, type “4” and press Enter. Four empty fields should appear.
+    ![mrlearning-base-ch5-2-step9.png](images/mrlearning-base-ch5-2-step9.png)
 
-![Lesson5 Chapter2 Step11im](images/Lesson5_chapter2_step11im.PNG)
+    Duplicate the Cube three times by right-clicking the Cube, to open the contextual popup menu, and selecting **Duplicate**.
 
-12. Drag each of the cubes into each of the empty element slots.
-     ![Lesson5 Chapter2 Step12im](images/Lesson5_chapter2_step12im.PNG)
-    
-13. Add the Move with Pan script to all of the cubes by pressing and holding control/command and select each object. From the Inspector panel, click Add Component and search for “move with pan.” Click the script and it is added to each cube. Now the 3D objects will move with your pan gesture. If you remove the mesh render on your quad, you should now have an invisible quad where you can pan through a list of 3D objects.
--->
+    Space the cubes out evenly. Your scene should look similar to the image below.
+
+10. Add the MoveWithPan script to all the cubes by holding down the CTRL key while selecting each **Cube** object in the Hierarchy panel. In the Inspector panel, click Add Component, and search for and select the **Move With Pan** script to add it to all the cubes.
+
+    ![mrlearning-base-ch5-2-step10a.png](images/mrlearning-base-ch5-2-step10a.png)
+
+    >[!NOTE]
+    >The MoveWithPan script is not part of MRTK but included with the BaseModuleAssets asset imported in the previous lesson.
+
+    With the cubes still selected, drag the **Quad** object from the Hierarchy panel into the **Pan Input Source** field of the **Move With Pan** script component.
+
+    ![mrlearning-base-ch5-2-step10b.png](images/mrlearning-base-ch5-2-step10b.png)
+
+    Now, the cubes will move with your pan gesture.
+
+    >[!TIP]
+    >The MoveWithPan instance on each cube listens for the PanUpdated event sent from the HandInteractionPanZoom instance on the Quad object, that we added to the Pan Input Source field on each of the cubes, and updates the respective cube object's position accordingly.
+
+    With the cubes still selected, move them forward along their Z axis so each cube's mesh is inside the **Quad**'s **Box Collider** by changing their **Position Z** values to _0.7_.
+
+    ![mrlearning-base-ch5-2-step10c.png](images/mrlearning-base-ch5-2-step10c.png)
+
+    Now, if you disable the **Quad**'s **Mesh Renderer** component by un-checking it in the Inspector panel, you will have an invisible quad where you can pan through a list of 3D objects.
+
+    ![mrlearning-base-ch5-2-step10d.png](images/mrlearning-base-ch5-2-step10d.png)
 
 ### Eye Tracking
 
@@ -192,13 +208,16 @@ In this section, we will explore how to enable eye tracking in our demo. We will
 2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we'll need to add the EyeTrackingTarget component on each object that we want to interact with by using eye gaze. Add this component to each of the nine 3D objects that are part of the grid collection.
 
     >[!TIP]
-    >You can use the shift and/or ctrl keys to select multiple items in the scene hierarchy and then bulk-add the EyeTrackingTarget component.
+    >You can use the Shift and/or CRTL keys to select multiple items in the Hierarchy and then bulk-add the EyeTrackingTarget component.
 
     ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
 
-3. Next, we will add the EyeTrackingTutorialDemo script for some exciting interactions. The EyeTrackingTutorialDemo script is included as part of this tutorial series repository. It is not included by default with the Mixed Reality Toolkit. For each 3D object in the grid collection, add the EyeTrackingTutorialDemo script by searching for the component in the Add Component menu.
+3. Next, we will add the EyeTrackingTutorialDemo script for some exciting interactions. For each 3D object in the grid collection, add the EyeTrackingTutorialDemo script by searching for the component in the Add Component menu.
 
-   ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
+    ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
+
+    >[!NOTE]
+    >The EyeTrackingTutorialDemo script material is not part of MRTK but included with the BaseModuleAssets asset imported in the previous lesson.
 
 4. Spin the object while looking at the target. We want to configure our 3D objects to spin while we are looking at them. To do this, insert a new field in the While Looking At Target() section of the EyeTrackingTarget component, as shown in the image below.
 

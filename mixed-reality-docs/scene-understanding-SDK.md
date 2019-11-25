@@ -128,9 +128,19 @@ SceneObjects can have any one of the following:
 
 A SceneMesh is a SceneComponent that approximates the geometry of arbitrary geometric objects using a triangle list. SceneMeshes are used in several different contexts, they can represent components of the watertight cell structure or as the WorldMesh which represents the unbounded spatial mapping mesh associated with the Scene. The index and vertex data provided with each mesh uses the same familiar layout as the [vertex and index buffers](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) that are used for rendering triangle meshes in all modern rendering APIs. Note that in Scene Understanding, meshes use 32-bit indices and may need to be broken up into chunks for certain rendering engines.
 
+#### Winding Order and Coordinate Systems
+
+All meshes produced by Scene Understanding are expected to return meshes in a Right-Handed coordinate system using clockwise winding order. 
+
+Note: OS builds prior to .191105 may have a known bug where "World" meshes were returning in Counter-Clockwise winding order, which has subsequently been fixed.
+
 ### SceneQuad
 
 A SceneQuad is a SceneComponent that represents 2d surfaces that occupy the 3d world. SceneQuads can be used similarly to ARKit ARPlaneAnchor or ARCore Planes but they offer more high level functionality as 2d canvases to be used by flat apps, or augmented UX. 2D specific APIs are provided for quads that make placement and layout simple to use, and developing (with the exception of rendering) with quads should feel more akin to working with 2d canvases than 3d meshes.
+
+#### SceneQuad shape
+
+SceneQuads define a bounded rectangular surface in 2d. However, SceneQuads are representing surfaces with arbitrary and potentially complex shapes (e.g. a donut shaped table.) To represent the complex shape of the surface of a quad you may use the GetSurfaceMask API to render the shape of the surface onto an image buffer you provide. If the SceneObject that has the quad also has a mesh, the mesh triangles should be equivalent to this rendered image, they both represent real geometry of the surface, just either in 2d or 3d coordinates.
 
 ## Scene understanding SDK details and reference
 

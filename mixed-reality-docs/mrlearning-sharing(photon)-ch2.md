@@ -47,7 +47,7 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
 
 6. Once that is complete, a new configuration file appears, giving you the choice to customize the profile. 
 
-![Module2Chapter1step4im](images/Module2Chapter1step4im.PNG)
+![Module2Chapter1step4ima](images/Module2Chapter1step4ima.PNG)
 
 7. Select Mixed-Reality Toolkit (MRTK) from the  hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and press the "Copy & Customize" button  as shown in the figure below.  A pop will appear after this and select clone option in the pop up menu.
 
@@ -71,7 +71,14 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
 
 ![Module3Chapter2step9imb](images/module3chapter2step9imb.PNG)
 
-11. Import the custom package called SharingAssetCollection, which can be downloaded [here.](https://github.com/microsoft/MixedRealityLearning/releases/tag/development)
+11. Import the listed custom packages:
+
+    a. [Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage)
+
+    b. [Unity.HoloLens2.MultiUserCapabilities.Tutorials.Asset.2.1.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.1.0.0/Unity.HoloLens2.MultiUserCapabilities.Tutorials.Asset.2.1.0.0.unitypackage)
+
+    >[!TIP]
+    >If you have completed the [Getting started tutorials](mrlearning-base-ch1.md), you might still have the Unity package named _Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage_ stored on your computer. If so, you can skip downloading the asset listed in step a above.
 
 ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
 

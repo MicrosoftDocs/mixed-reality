@@ -16,7 +16,7 @@ HoloLens 2 introduced some new exciting capabilities: articulated hands and eye 
 
 The easiest way to leverage the new capability in Unity is through MRTK v2. There are also some example scenes to help you get started. 
 
-* [Get started with Articulated Hand  in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSystem/HandTracking.html)
+* [Get started with Articulated Hand  in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
 * [Get started with Eye Tracking in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
 
 
