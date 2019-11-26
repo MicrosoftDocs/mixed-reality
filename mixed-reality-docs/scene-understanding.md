@@ -14,7 +14,29 @@ Scene understanding provides Mixed Reality developers with a structured, high-le
 
 ![Spatial mapping mesh, labeled planar surfaces, watertight mesh](images/SUScenarios.png)
 
-This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share. For details on how Scene understanding works and how to develop for it, please see the [Scene understanding SDK overview](scene-understanding-SDK.md) documentation.
+This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share.
+
+## Developing with Scene Understanding
+
+This article only serves to introduce the Scene Understanding runtime and concepts. If you are looking for documentation on how to develop with Scene Understanding you may be interested in the following:
+
+[Scene Understanding SDK overview](scene-understanding-SDK.md)
+
+You can download the Scene Understanding Sample app from the sample GitHub site:
+
+[Scene Understanding Sample](https://github.com/sceneunderstanding-microsoft/unitysample)
+
+If you do not have a device and wish to access sample scenes to try Scene Understanding out, there are scenes in the sample asset folder:
+
+[Scene Understanding Sample Scenes](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
+
+### SDK
+
+If you are looking for  specific details on how to develop for Scene Understandiing, For details on how Scene understanding works and how to develop for it, please see the [Scene Understanding SDK overview](scene-understanding-SDK.md) documentation.
+
+
+### Sample
+
 
 ## Device support
 
