@@ -5,6 +5,7 @@ author: thetuvix
 ms.author: kurtie
 ms.date: 10/25/2018
 ms.topic: article
+ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
 ---
 # Unity development overview
