@@ -89,7 +89,6 @@ The script parameters are defined below:
 -LockMap <Int32>
     0 to unlock map
     1 to lock map
-    This functionality requires an updated driver from Insider Preview Builds with the Map Locking feature
 
 -BinPath <String>
     Path to MixedRealitySpatialDataPackager.exe, default value is current directory
