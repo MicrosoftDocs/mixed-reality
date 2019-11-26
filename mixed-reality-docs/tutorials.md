@@ -12,6 +12,8 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 # Tutorials and sample apps
 
+![HoloLens 2 user](images/08_Tutorials.png)
+
 Currently all of our tutorials and sample apps are Unity based.  As we develop content for other engines and platforms, you will find them under the relevant heading in the Table of Contents.
 
 ## HoloLens 2 tutorials

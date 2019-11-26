@@ -13,7 +13,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 # Start designing and prototyping
 
 
-![Core concepts](images/text_in_unity_viewingangle.jpg)
+![3D Mesh art](images/03_Design.png)
 
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
@@ -93,6 +93,10 @@ A key to displaying content that looks realistic in holographic form is to mimic
 ### [Clear and readable typography](typography.md)
 Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
 
+<br>
+
+### [UX elements for the mixed reality](app-patterns-landingpage.md)
+Learn about the building blocks for spatial interactions and UI in mixed reality.
 <br>
 
 
