@@ -5,6 +5,7 @@ author: sw5813
 ms.author: suwu
 ms.date: 10/24/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, remoting, mixed reality, development, getting started, new project, emulator, documentation
 ---
 # Unreal development overview
