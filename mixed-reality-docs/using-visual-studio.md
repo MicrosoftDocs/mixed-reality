@@ -5,6 +5,7 @@ author: pbarnettms
 ms.author: pbarnett
 ms.date: 10/24/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, debug, deploy
 ---
 
