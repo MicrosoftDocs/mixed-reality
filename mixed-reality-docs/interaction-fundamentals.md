@@ -11,6 +11,8 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hololens, MM
 
 # Introducing instinctual interactions
 
+![Far manipulation with hands](images/04_InteractionFundamentals.png)
+
 The philosophy of simple, instinctual interactions is interwoven throughout the mixed reality (MR) platform. 
  We've taken three steps to ensure that application designers and developers can provide their customers with easy and intuitive interactions. 
 
