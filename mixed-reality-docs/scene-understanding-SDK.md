@@ -363,7 +363,20 @@ The index/vertex buffers must be >= the index/vertex counts, but otherwise can b
 
 At this point you should understand the core building blocks of the scene understanding runtime and SDK. The bulk of the power and complexity lies in access patterns, interaction with 3D frameworks, and tools that can be written on top of these APIs to perform more advanced tasks like spatial planning, room analysis, navigation, physics etc. We hope to capture these in samples that should hopefully guide you in the proper direction to make your scenarios shine. If there are samples/scenarios we are not addressing, please let us know and we will try to document/prototype what you need.
 
+### Where can I get sample code?
+
+Scene Understanding sample code for Unity can be found on our [Unity Sample Page](https://github.com/sceneunderstanding-microsoft/unitysample) page. This application will allow you to communicate with your device and render the various scene objects, or, it will allow you to load a serialized scene on your PC and allow you to experience Scene Understanding without a device.
+
+### Where can I get sample scenes?
+
+If you have a HoloLens2 you can save any scene you've captured by saving the output of ComputeSerializedAsync to file and deserializing it at your own convenience. 
+
+If you do not have a HoloLens2 device but want to play with Scene Understanding you will need to download a pre-captured scene. The Scene Understanding sample currently ships with serialized scenes that can be downloaded and used at your own convenience. You can find them here:
+
+[Scene Understanding Sample Scenes](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
+
 ## See also
 
 * [Spatial mapping](spatial-mapping.md)
 * [Scene understanding](scene-understanding.md)
+* [Unity Sample](https://github.com/sceneunderstanding-microsoft/unitysample)
