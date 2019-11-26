@@ -43,7 +43,7 @@ In this section, you'll learn how to customize and configure the default MRTK pr
 
     Click **Clone** to create a copy of the MRTK profile. With your own copy of the MRTK profile, you now have the ability customize any settings in this profile. You will also need to repeat the copy and customize step for any additional profiles nested under this profile as described in the subsequent steps.
 
-3. Disable the visibility of the spatial awareness mesh. To do this, find Spatial Awareness system settings as shown in the image below. Make sure the **Enable Spatial Awareness System** option is checked. Click the **Clone** button to the right of the the Spatial Awareness System Profile to replace the default profile with a customizable copy. In the popup window that appears, press the **Clone** button, as shown in the second image below.
+3. Disable the visibility of the spatial awareness mesh. To do this, find Spatial Awareness system settings as shown in the image below. Make sure the **Enable Spatial Awareness System** option is checked. Click the **Clone** button to the right of the Spatial Awareness System Profile to replace the default profile with a customizable copy. In the popup window that appears, press the **Clone** button, as shown in the second image below.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-1-step3a.png)
 
