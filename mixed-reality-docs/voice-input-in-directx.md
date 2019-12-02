@@ -12,7 +12,7 @@ keywords: walkthrough, voice command, phrase, recognition, speech, directx, plat
 
 # Voice input in DirectX
 
-This topic explains how to implement [voice commands](voice-input.md) plus small phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
+This article explains how to implement [voice commands](voice-input.md) plus small phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
 
 >[!NOTE]
 >The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, but you need to translate the code.
@@ -29,7 +29,7 @@ From *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:
 m_speechRecognizer = ref new SpeechRecognizer();
 ```
 
-You need to create a list of speech commands for the recognizer to listen for. Here, we construct a set of commands to change the color of a hologram. For convenience, we also create the data that we'll use for the commands later.
+Create a list of speech commands for the recognizer to listen for. Here, we construct a set of commands to change the color of a hologram. For convenience, we also create the data that we'll use for the commands later.
 
 ```
 m_speechCommandList = ref new Platform::Collections::Vector<String^>();
@@ -61,7 +61,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-You load the commands list into the list of constraints for the speech recognizer. To do this, use a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.
+To load the commands list into the list of constraints for the speech recognizer use a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -134,8 +134,8 @@ From *HolographicVoiceInputSampleMain::Update*:
 You can configure a speech recognizer to listen for phrases or sentences that the user speaks. In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect. HEr'es app workflow for this scenario:
 1. Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a spoken command.
 2. The user speaks a phrase or sentence.
-3. Recognition of the user's speech is performed, and a result is returned to the app. At this point, your app should provide a UI prompt to indicate that recognition has occurred.
-4. Depending on the confidence level you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.
+3. Recognition of the user's speech occurs, and a result is returned to the app. At this point, your app should provide a UI prompt to indicate that recognition has occurred.
+4. Depending on the confidence level, you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.
 
 This section describes how to create a SpeechRecognizer, compile the constraint, and listen for speech input.
 
@@ -165,7 +165,7 @@ try
                {
 ```
 
-The result is then returned to the app. If we are confident enough in the result, we can process the command. This code example processes results with at least medium confidence.
+The result is then returned to the app. If we're confident enough in the result, we can process the command. This code example processes results with at least medium confidence.
 
 ```
 try
@@ -281,7 +281,7 @@ For the continuous-dictation scenario, see the [Windows 10 UWP speech code sampl
 
 ## Handle degradation in quality
 
-Environmental conditions sometimes interfere with speech recognition. For example, the room might be too noisy, or the user might speak too loudly. Whenever possible, the speech recognition API provides information about that conditions that caused degradation in quality. This information is pushed to your app through a WinRT event. Here's an example of how to subscribe to this event:
+Environmental conditions sometimes interfere with speech recognition. For example, the room might be too noisy, or the user might speak too loudly. Whenever possible, the speech recognition API provides information about the conditions that caused degradation in quality. This information is pushed to your app through a WinRT event. Here's an example of how to subscribe to this event:
 
 ```
 m_speechRecognizer->RecognitionQualityDegrading +=
@@ -360,7 +360,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 The holographic speech samples use speech synthesis to provide audible instructions to the user. This section shows how to create a synthesized voice sample  and then play it back by using the HRTF audio APIs.
 
-You should provide your own speech prompts when you request phrase input. Promts can also help indicate when speech commands can be spoken for a continuous-recognition scenario. The following example demonstrates how use a speech sythesizer to do this. Note that you could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt is not dynamic.
+You should provide your own speech prompts when you request phrase input. Prompts can also help indicate when speech commands can be spoken for a continuous-recognition scenario. The following example demonstrates how to use a speech synthesizer to do this. You could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt is not dynamic.
 
 First, create the SpeechSynthesizer object:
 
@@ -385,7 +385,7 @@ create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_co
        {
 ```
 
-The speech synthesis is sent as a byte stream. We can use that byste stream to initialize an XAudio2 voice. For our holographic code samples, we play it back as an HRTF audio effect.
+The speech synthesis is sent as a byte stream. We can use that byte stream to initialize an XAudio2 voice. For our holographic code samples, we play it back as an HRTF audio effect.
 
 ```
 Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStreamTask.get();
