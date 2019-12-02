@@ -5,6 +5,7 @@ author: erickjpaul
 ms.author: erpau
 ms.date: 04/5/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
 ---
 

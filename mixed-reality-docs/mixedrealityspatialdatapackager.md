@@ -2,7 +2,7 @@
 title: Mixed Reality Spatial Data Packager Documentation
 description: Documentation for using Mixed Reality Spatial Data Packager
 author: alfred-msft 
-ms.author: alreynol
+ms.author: yuripek
 ms.date: 05/16/2019
 ms.topic: article
 keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
@@ -89,7 +89,6 @@ The script parameters are defined below:
 -LockMap <Int32>
     0 to unlock map
     1 to lock map
-    This functionality requires an updated driver from Insider Preview Builds with the Map Locking feature
 
 -BinPath <String>
     Path to MixedRealitySpatialDataPackager.exe, default value is current directory

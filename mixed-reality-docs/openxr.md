@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, Mixed Reality OpenXR Developer Portal, DirectX, native, native app custom engine, middleware
+keywords: OpenXR, Khronos, BasicXRApp, Mixed Reality OpenXR Developer Portal, DirectX, native, native app, custom engine, middleware
 ---
 
 
@@ -25,13 +25,13 @@ The OpenXR API uses a loader that connects your application directly to your hea
 ## What is OpenXR?
 
 The core OpenXR 1.0 API provides the base functionality you'll need to build an engine that can target both holographic devices like HoloLens 2 and immersive devices like Windows Mixed Reality headsets:
-* Systems + sessions​
-* Reference spaces (view, local, stage)​
-* View configurations (mono, stereo)​
-* Swapchains + frame timing​
-* Composition layers​
-* Input and haptics​
-* Graphics API + platform integration​
+* Systems + sessions
+* Reference spaces (view, local, stage)
+* View configurations (mono, stereo)
+* Swapchains + frame timing
+* Composition layers
+* Input and haptics
+* Graphics API + platform integration
 
 To learn about the OpenXR API, check out the OpenXR 1.0 <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">specification</a>, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">API reference</a> and <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">quick reference guide</a>.  For more information, see the <a href="https://www.khronos.org/openxr/" target="_blank">Khronos OpenXR page</a>.
 
@@ -71,6 +71,10 @@ To try out the Windows Mixed Reality OpenXR Runtime, you can install the <a href
 The <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
 
 Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is 100% the same!
+
+After building an OpenXR Win32 desktop .EXE, you can use it with a VR headset on any desktop VR platform that supports OpenXR, whether it's a Windows Mixed Reality headset or any other headset.
+
+After building an OpenXR UWP app package, you can [deploy that package](using-visual-studio.md) to either a HoloLens 2 device or the HoloLens 2 Emulator.
 
 ## OpenXR app best practices for HoloLens 2
 
