@@ -11,6 +11,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 # UX elements overview
 
+![HoloLens 2 user interacting with holographic buttons](images/06_AppPatterns.png)
+
 ## Style
 
 :::row:::

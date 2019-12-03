@@ -50,7 +50,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 If you're new to mixed reality, you will learn what it is and understand its capabilities.
 
 
-![mixed reality spectrum](images/RWtpZ1.jpeg)
+![Virtual hummingbird with human hand](images/01_MixedReality.png)
 
 ## What is mixed reality?
 
