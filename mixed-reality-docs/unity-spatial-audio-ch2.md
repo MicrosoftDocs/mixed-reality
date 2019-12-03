@@ -35,6 +35,9 @@ Your **Mixer** pane will now look like this:
 
 ![Mixer panel with first mixer](images/spatial-audio/mixer-panel-with-first-mixer.png)
 
+> [!NOTE]
+> Until reverb is enabled in [Chapter 5](unity-spatial-audio-ch5.md), the mixer's volume meter doesn't show activity for sounds played through the Microsoft Spatializer
+
 Click the **PressableButtonHoloLens2** in the **Hierarchy** pane. In the **Inspector** pane:
 1. Find the **Audio Source** component
 2. For the **Output** property, click the selector and choose your mixer
@@ -65,7 +68,9 @@ After these changes, the **3D Sound Settings** section of the **Audio Source** p
 
 ## Next steps
 
-Try out your app on a HoloLens 2, or in the Unity editor. In the app, you can touch the button and hear the spatialized button interaction sounds. When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation.
+Try out your app on a HoloLens 2, or in the Unity editor. In the app, you can touch the button and hear the spatialized button interaction sounds.
+
+When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. For more info, see the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene).
 
 Continue to [Chapter 3](unity-spatial-audio-ch3.md) to add a video to your app, and spatialize the audio from the video.
 

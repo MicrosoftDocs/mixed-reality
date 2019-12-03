@@ -31,6 +31,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
+[RequireComponent(typeof(AudioSource))]
 public class SpatializeOnOff : MonoBehaviour
 {
     public GameObject ButtonTextObject;
@@ -96,12 +97,12 @@ After these changes, the **Spatialize On Off** component of the **Quad** will lo
 
 ![Spatialize on off basic](images/spatial-audio/spatialize-on-off-basic.png)
 
-To set the button to call the **Spatialize On Off** script when the button is released, open the **Inspector** pane of the **PressableButtonHoloLens2** object, find the **Pressable Button Holo Lens 2** component, and:
-1. Click the + icon under the **Button Released** section to add an action.
+To set the button to call the **Spatialize On Off** script when the button is released, open the **Inspector** pane of the **PressableButtonHoloLens2** object, find the **Interactable** component, and:
+1. Find the **OnClick ()** region of the **Events** subsection
 2. Drag the **Quad** from the **Hierarchy** into the target object slot.
 3. Select **SpatializeOnOff.SwapSpatialization** from the action drop-down box.
 
-After these changes, the **Pressable Button Holo Lens 2** component will look like this:
+After these changes, the **Interactable** component will look like this:
 
 ![Button action settings](images/spatial-audio/button-action-settings.png)
 

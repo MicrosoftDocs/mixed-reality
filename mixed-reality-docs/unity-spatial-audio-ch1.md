@@ -8,9 +8,9 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 ---
 
-# Adding spatial audio to your project
+# Adding spatial audio to your Unity project
 
-This tutorial sequence shows:
+Welcome to the spatial audio tutioral for Unity on HoloLens2. This tutorial sequence shows:
 * How to use HRTF offload on HoloLens 2 in Unity
 * How to enable reverb when using HRTF offload
 
@@ -77,19 +77,15 @@ Using NuGet for Unity, install the MRTK and Microsoft Spatializer plugins:
 
 ![Manage NuGet packages](images/spatial-audio/manage-nuget-packages.png)
 
-2. In the **Search** box, enter "Microsoft.MixedReality.Toolkit"
-
-3. Choose the MRTK core package: **Microsoft.MixedReality.Toolkit.Foundation**
+2. In the **Search** box, enter "Microsoft.MixedReality.Toolkit" and install the MRTK core package: **Microsoft.MixedReality.Toolkit.Foundation**
 
 ![MRTK NuGet package](images/spatial-audio/mrtk-nuget-package.png)
 
-4. In the **Search** box, enter "Microsoft.SpatialAudio"
+[MRTK NuGet Package](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) has additional context and details.
 
-5. Choose the Microsoft Spatializer package: **Microsoft.SpatialAudio.Spatializer.Unity**
+4. In the **Search** box, enter "Microsoft.SpatialAudio" and install the Microsoft Spatializer package: **Microsoft.SpatialAudio.Spatializer.Unity**
 
 ![Spatializer plugin NuGet](images/spatial-audio/spatializer-plugin-nuget.png)
-
-[MRTK NuGet Package](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MRTKNuGetPackage.html) has additional context and details.
 
 ## Set up MRTK in your project
 
@@ -112,7 +108,7 @@ Enable the **Microsoft Spatializer** plugin. Open **Edit -> Project Settings -> 
 ![Project Settings showing spatializer plugin](images/spatial-audio/project-settings.png)
 
 ## Enable spatial audio on your workstation
-On desktop versions of Windows, spatial audio is disabled by default. Right-click on the volume icon in the task bar and choose **Spatial sound -> Windows Sonic for Headphones**.
+On desktop versions of Windows, spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens2, choose **Spatial sound -> Windows Sonic for Headphones**.
 
 ![Desktop spatial audio settings](images/spatial-audio/desktop-audio-settings.png)
 
