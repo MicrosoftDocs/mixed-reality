@@ -20,8 +20,8 @@ At Microsoft, we believe that having access to strong communities is essential f
 |---------|---------|---------|
 |HoloDevelopers Slack|[Join Here](https://aka.ms/holodevelopers)||
 |Stack Overflow|[MR Questions](https://stackoverflow.com/questions/tagged/windows-mixed-reality)||
-|Reddit WMR Headsets|[WMR SubReddit](https://www.reddit.com/r/WindowsMR/)|         |
-|Reddit HoloLens|[HoloLens SubReddit](https://www.reddit.com/r/HoloLens/)|         |
+|Reddit WMR Headsets|[WMR subreddit](https://www.reddit.com/r/WindowsMR/)|         |
+|Reddit HoloLens|[HoloLens subreddit](https://www.reddit.com/r/HoloLens/)|         |
 
 <br>
 
