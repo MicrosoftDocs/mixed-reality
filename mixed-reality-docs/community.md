@@ -16,16 +16,16 @@ At Microsoft, we believe that having access to strong communities is essential f
 
 ## Online Communities
 
-
-
-|HoloDevelopers Slack Community|[https://aka.ms/holodevelopers](https://aka.ms/holodevelopers)|Description|
-|StackOverflow|[https://stackoverflow.com/questions/tagged/windows-mixed-reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)|Description|
-|Reddit|[HoloLens]() <BR> [Mixed Reality Headsets]()|Description|
+|Community Name  |Link  |Description  |
+|---------|---------|---------|
+|HoloDevelopers Slack|[Join Here](https://aka.ms/holodevelopers)||
+|Stack Overflow|[MR Questions](https://stackoverflow.com/questions/tagged/windows-mixed-reality)||
+|Reddit WMR Headsets|[WMR SubReddit](https://www.reddit.com/r/WindowsMR/)|         |
+|Reddit HoloLens|[HoloLens SubReddit](https://www.reddit.com/r/HoloLens/)|         |
 
 <br>
 
 ## Local Communities
-
 
 |Community Name|Country|City|Link|
 |---------|---------|---------|---------|
