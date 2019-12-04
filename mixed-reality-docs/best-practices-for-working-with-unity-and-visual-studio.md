@@ -30,7 +30,7 @@ Further, consider installing the [*UnityScriptAnalyzer* Visual Studio extension]
 
 ## Visual Studio Tools for Unity
 
-Download [Visual Studio Tools for Unity](https://docs.microsoft.com/en-us/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
+Download [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
 
 **Benefits of Visual Studio Tools for Unity**
 * Debug Unity in-editor play mode from Visual Studio by putting breakpoints, evaluating variables and complex expressions.
@@ -40,7 +40,7 @@ Download [Visual Studio Tools for Unity](https://docs.microsoft.com/en-us/visual
 
 ## Expose C# class variables for easy tuning
 
-There are two ways to expose class variables. The recommended way to do so is to add the [SerializeField] attribute to your private variables. This allows them to be accessed from the editor but not programatically exposed.  The other option is to make C# class variables public to expose them in the editor UI. 
+There are two ways to expose class variables. The recommended way to do so is to add the [SerializeField] attribute to your private variables. This allows them to be accessed from the editor but not programmatically exposed.  The other option is to make C# class variables public to expose them in the editor UI. 
 
 Both approaches make it possible to easily tweak variables while playing in-editor. This is especially useful for tuning interaction mechanic properties.
 

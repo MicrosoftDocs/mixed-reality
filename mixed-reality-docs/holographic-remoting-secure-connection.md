@@ -3,7 +3,7 @@ title: Establishing a secure connection with Holographic Remoting
 description: This page explains how to establish a secure encrypted connection when using Holographic Remoting.
 author: bethau
 ms.author: bethau
-ms.date: 08/01/2019
+ms.date: 10/21/2019
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
@@ -31,7 +31,7 @@ The encryption is achieved by using the underlying platforms TLS implementation.
 The following objects need to be implemented to allow for a certificate exchange.
 
 >[!TIP]
->Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
+>Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
 
 >[!IMPORTANT]
 >The ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` inside the NuGet package contains detailed documentation for the API related to secure connections.
@@ -61,5 +61,5 @@ Once these objects are implemented ```ListenSecure``` needs to be called instead
 * [Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

@@ -3,7 +3,7 @@ title: Writing a Holographic Remoting host app
 description: By creating a Holographic Remoting host app remote content, that is rendered on a remote machine, can be streamed to HoloLens 2. This article describes how this can be achieved.
 author: bethau
 ms.author: bethau
-ms.date: 08/01/2019
+ms.date: 10/21/2019
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
@@ -13,7 +13,7 @@ keywords: HoloLens, Remoting, Holographic Remoting
 # Writing a Holographic Remoting host app
 
 >[!IMPORTANT]
->This document describes the creation of a host application for HoloLens 2. Host application for **HoloLens 1** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
+>This document describes the creation of a host application for HoloLens 2. Host application for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
 
 By creating a Holographic Remoting host app remote content that is rendered on a remote machine can be streamed to HoloLens 2. This article describes how this can be achieved. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
@@ -26,7 +26,7 @@ A typical remoting connection will have as low as 50 ms of latency. The player a
 A good starting point is a working DirectX based Desktop or UWP app which targets the Windows Mixed Reality API. For details see [DirectX development overview](directx-development-overview.md). The [C++ holographic project template](creating-a-holographic-directx-project.md) is a good starting point.
 
 >[!IMPORTANT]
->Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](https://docs.microsoft.com/en-us/windows/win32/com/multithreaded-apartments). The use of a [single-threaded apartment](https://docs.microsoft.com/en-us/windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.
+>Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). The use of a [single-threaded apartment](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.
 
 
 
@@ -41,7 +41,7 @@ The following steps are required to add the NuGet package to a project in Visual
 6. The next dialog that appears is the license agreement. Click on **I Accept** to accept the license agreement.
 
 >[!NOTE]
->Version **1.x.x** of the NuGet package is still available for developers who want to target HoloLens 1. For details see [Add Holographic Remoting (HoloLens 1)](add-holographic-remoting.md).
+>Version **1.x.x** of the NuGet package is still available for developers who want to target HoloLens 1. For details see [Add Holographic Remoting (HoloLens (1st gen))](add-holographic-remoting.md).
 
 ## Create the remote context
 
@@ -103,7 +103,7 @@ catch(winrt::hresult_error& e)
 >As with any C++/WinRT API ```Connect``` might throw an winrt::hresult_error which needs to be handled.
 
 >[!TIP]
->To avoid using [C++/WinRT](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/) language projection the file ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` located inside the Holographic Remoting NuGet package can be included. It contains declarations of the underlying COM interfaces. The use of C++/WinRT is recommended though.
+>To avoid using [C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/) language projection the file ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` located inside the Holographic Remoting NuGet package can be included. It contains declarations of the underlying COM interfaces. The use of C++/WinRT is recommended though.
 
 Listening for incoming connections on the host app can be done by calling the ```Listen``` method. Both the handshake port and transport port can be specified during this call. The handshake port is used for the initial handshake. The data is then send over the transport port. By default **8265** and **8266** are used.
 
@@ -196,7 +196,7 @@ if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
 }
 ```
 
-Using an asynchronous helper method you can then initialize the remote speech. This should be done asynchronously as initializing might take a considerable amount of time. [Concurrency and asynchronous operations with C++/WinRT](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/concurrency) explains how to author asynchronous functions with C++/WinRT.
+Using an asynchronous helper method you can then initialize the remote speech. This should be done asynchronously as initializing might take a considerable amount of time. [Concurrency and asynchronous operations with C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/concurrency) explains how to author asynchronous functions with C++/WinRT.
 
 ```cpp
 winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Storage::StorageFile> LoadGrammarFileAsync()
@@ -228,12 +228,12 @@ winrt::fire_and_forget InitializeSpeechAsync(
     dictionary.push_back(L"Default");
     dictionary.push_back(L"Aquamarine");
 
-    remoteSpeech.ApplyParameters(L"en-US", grammarFile, dictionary);
+    remoteSpeech.ApplyParameters(L"", grammarFile, dictionary);
 }
 ```
 
 There are two ways of specifying phrases to be recognized.
-1) Specification inside a speech grammar xml file. See [How to create a basic XML Grammar](https://docs.microsoft.com/en-us/previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) for details.
+1) Specification inside a speech grammar xml file. See [How to create a basic XML Grammar](https://docs.microsoft.com//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) for details.
 2) Specify by passing them inside the dictionary vector to ```ApplyParameters```.
 
 Inside the OnRecognizedSpeech callback the speech events can then be processed:
@@ -297,5 +297,5 @@ Custom data channels can be used to send user data over the already established 
 * [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

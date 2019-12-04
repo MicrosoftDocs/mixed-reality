@@ -3,13 +3,13 @@ title: MR Basics 101 - Complete project with device
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the basics of Windows Mixed Reality.
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/21/2018
+ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial
 ---
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 <br>
 
@@ -19,7 +19,7 @@ keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tut
 
 >[!VIDEO https://www.youtube.com/embed/XKIIEC5BMWg]
 
-This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze.md), [gestures](gestures.md), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md).
+This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze-and-commit.md), [gestures](gaze-and-commit.md#composite-gestures), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md).
 
 The tutorial will take approximately 1 hour to complete.
 
@@ -117,7 +117,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
   * Leave the **Authentication Mode** set to **Universal**.
   * Click **Select**
 
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device-hololens-(1st-gen)).
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device).
 
 * The Origami project will now build, deploy to your HoloLens, and then run.
 * Put on your HoloLens and look around to see your new holograms.
@@ -126,7 +126,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 >[!VIDEO https://www.youtube.com/embed/MSO2BoFSQbM]
 
-In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze.md).
+In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze-and-commit.md).
 
 ### Objectives
 
@@ -202,7 +202,7 @@ public class WorldCursor : MonoBehaviour
 
 >[!VIDEO https://www.youtube.com/embed/kW3ThJ2MbvQ]
 
-In this chapter, we'll add support for [gestures](gestures.md). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
+In this chapter, we'll add support for [gestures](gaze-and-commit.md#composite-gestures). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
 
 ### Objectives
 
@@ -693,8 +693,8 @@ You are now ready to start creating your own holographic experience!
 ## See also
 
 * [MR Basics 101E: Complete project with emulator](holograms-101e.md)
-* [Gaze](gaze.md)
-* [Gestures](gestures.md)
+* [Gaze](gaze-and-commit.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Voice input](voice-input.md)
 * [Spatial sound](spatial-sound.md)
 * [Spatial mapping](spatial-mapping.md)

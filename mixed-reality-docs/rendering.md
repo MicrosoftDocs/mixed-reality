@@ -12,7 +12,7 @@ keywords: rendering, hologram
 
 # Rendering
 
-Holographic rendering enables your application to draw a hologram in a precise location in the world around the user, whether it's precisely placed in the physical world or within a virtual realm you've created. [Holograms](hologram.md) are objects made of sound and light. Rendering enables your applicaition to add the light.
+Holographic rendering enables your application to draw a hologram in a precise location in the world around the user, whether it's precisely placed in the physical world or within a virtual realm you've created. [Holograms](hologram.md) are objects made of sound and light. Rendering enables your application to add the light.
 
 ## Device support
 
@@ -26,7 +26,7 @@ Holographic rendering enables your application to draw a hologram in a precise l
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
@@ -90,7 +90,7 @@ When rendering medical MRIs or engineering volumes in 3D, [volume rendering](vol
 ## Supported resolutions on HoloLens 2
 
 > [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](index.md#news-and-notes).
+> More guidance specific to HoloLens 2 [coming soon](news.md).
 
 
 ## See also

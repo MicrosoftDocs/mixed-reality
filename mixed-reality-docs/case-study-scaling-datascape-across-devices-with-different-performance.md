@@ -40,7 +40,7 @@ We managed to get both the UI and the map to rendering at budget where we did no
 
 ## Background on cloud data
 
-Our cloud data was downloaded from NOAA servers (http://nomads.ncep.noaa.gov/) and came to us in three distinct 2D layers, each with the top and bottom height of the cloud, as well as the density of the cloud for each cell of the grid. The data got processed into a cloud info texture where each component was stored in the red, green, and blue component of the texture for easy access on the GPU.
+Our cloud data was downloaded from NOAA servers (https://nomads.ncep.noaa.gov/) and came to us in three distinct 2D layers, each with the top and bottom height of the cloud, as well as the density of the cloud for each cell of the grid. The data got processed into a cloud info texture where each component was stored in the red, green, and blue component of the texture for easy access on the GPU.
 
 ## Geometry clouds
 

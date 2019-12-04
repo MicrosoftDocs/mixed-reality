@@ -1,7 +1,7 @@
 ---
 title: Accounts on HoloLens
 description: How to set up and manage user accounts on HoloLens.
-author: 
+author: tmlyon
 ms.author: toddly
 ms.date: 03/21/2018
 ms.topic: article
@@ -37,7 +37,7 @@ Within a single device account, users can link additional web account credential
 
 ## Using single sign-on within an app
 
-As an app developer, you can take advantage of having a connected identity on HoloLens with the [Windows Account Manager APIs](https://msdn.microsoft.com/library/windows/apps/xaml/windows.security.authentication.web.core.aspx), just as you would on other Windows devices. Some code samples for these APIs are available [here](http://go.microsoft.com/fwlink/p/?LinkId=620621).
+As an app developer, you can take advantage of having a connected identity on HoloLens with the [Windows Account Manager APIs](https://msdn.microsoft.com/library/windows/apps/xaml/windows.security.authentication.web.core.aspx), just as you would on other Windows devices. Some code samples for these APIs are available [here](https://go.microsoft.com/fwlink/p/?LinkId=620621).
 
 Any account interrupts that may occur such as requesting user consent for account information, two-factor authentication etc. must be handled when the app requests an authentication token.
 

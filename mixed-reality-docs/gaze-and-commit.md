@@ -1,14 +1,37 @@
 ---
-title: Head-gaze and commit
-description: Overview of the head-gaze and commit input model
-author: caseymeekhof
-ms.author: cmeekhof
-ms.date: 03/31/2019
+title: Gaze and commit
+description: General overview of the "gaze and commit" input model - using either eye or head input.
+author: sostel
+ms.author: sostel
+ms.date: 10/31/2019
 ms.topic: article
-keywords: Mixed Reality, gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, gaze, gaze targeting, interaction, design, eye tracking, head tracking
 ---
-# Head-gaze and commit
-Head-gaze and commit is an input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input, such as the hand gesture air tap or the voice command Select. It is considered a far input model with indirect manipulation, meaning it is best used for interacting with content that is beyond arms reach.
+# Gaze and commit
+
+_Gaze and commit_ is a fundamental input model that is closely related with the way we're interacting with our computers using the mouse: _Point & click_.
+On this page, we introduce two types of gaze input (head- and eye-gaze) and different types of commit actions. 
+_Gaze and commit_ is considered a far input model with indirect manipulation.
+This means it is best used for interacting with holographic content that is out of reach.
+
+Mixed reality headsets can use the position and orientation of the user's head to determine their head direction vector. 
+You can think of this as a laser that points straight ahead from directly between the user's eyes. 
+This is a fairly coarse approximation of where the user is looking. 
+Your application can intersect this ray with virtual or real-world objects, and draw a cursor at that location to let the user know what they are currently targeting.
+
+In addition to head gaze, some mixed reality headsets, such as HoloLens 2, include eye tracking systems that produce an eye-gaze vector. 
+This provides a fine-grained measurement of where the user is looking. 
+In both cases, the gaze represents an important signal for the user's intent. 
+The better the system can interpret and predict the user's intended actions, user satisfaction increases and performance improves.
+
+Below are a few examples for how you as a mixed reality developer can benefit from head- or eye-gaze:
+* Your app can intersect gaze with the holograms in your scene to determine where the user's attention is (more precise with eye-gaze).
+* Your app can channel gestures and controller presses based on the user's gaze, letting the user seamlessly select, activate, grab, scroll, or otherwise interact with their holograms.
+* Your app can let the user place holograms on real-world surfaces by intersecting their gaze ray with the spatial mapping mesh.
+* Your app can know when the user is *not* looking in the direction of an important object, which can lead your app to give visual and audio cues to turn towards that object.
+
+<br>
+
 
 ## Device support
 
@@ -22,7 +45,7 @@ Head-gaze and commit is an input model that involves targeting an object with th
     <tr>
         <td><strong>Input model</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
@@ -31,65 +54,193 @@ Head-gaze and commit is an input model that involves targeting an object with th
         <td>✔️ Recommended (third choice - <a href="interaction-fundamentals.md">See the other options</a>)</td>
         <td>➕ Alternate option</td>
     </tr>
+	     <tr>
+        <td>Eye-gaze and commit</td>
+        <td>❌ Not available</td>
+        <td>✔️ Recommended (third choice - <a href="interaction-fundamentals.md">See the other options</a>)</td>
+        <td>❌ Not available</td>
+    </tr>
 </table>
 
-## Head-gaze
-Mixed reality headsets use the position and orientation of the user's head to determine their head direction vector. You can think of this as a laser that points straight ahead from directly between the user's eyes. This is a fairly coarse approximation of where the user is looking. Your application can intersect this ray with virtual or real-world objects, and draw a cursor at that location to let the user know what they are currently targeting.
 
-In addition to head gaze, some mixed reality headsets, like HoloLens 2, include eye tracking systems that produce an eye-gaze vector. This provides a fine-grained measurement of where the user is looking. It is possible to build gaze and commit interactions using eye gaze. But this comes with a very different set of design constraints, which will be covered separately in the [eye-gaze article](eye-tracking.md).
+## Gaze
+
+### Eye- or head-gaze?
+There are several considerations to take into account when faced with the question whether you should use the "eye-gaze and commit" or "head-gaze and commit" input model. 
+If you're developing for an immersive headset or for HoloLens (1st gen) then the choice is simple: Head-gaze and commit. 
+If you're developing for HoloLens 2, the choice becomes a little harder which is why it's important to understand the advantages and challenges that come with each of them.
+We compiled some broad pro's and con's in the table below to contrast head- vs. eye-gaze targeting. 
+This is far from complete and we suggest learning more about eye-gaze targeting in mixed reality here:
+* [Eye tracking on HoloLens 2](eye-tracking.md): General introduction of our new eye tracking capability on HoloLens 2 including some developer guidance. 
+* [Eye-gaze interaction](eye-gaze-interaction.md): Design considerations and recommendations when planning to use eye tracking as an input.
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+   <tr>
+        <td><strong>Eye-gaze targeting</strong></td>
+        <td><strong>Head-gaze targeting</strong></td>
+    </tr>
+    <tr>
+        <td>Fast!</td>
+        <td>Slower</td>
+    </tr>
+    <tr>
+        <td>Low effort (barely any body movements necessary)</td>
+        <td>Can be fatiguing - Possible discomfort (e.g., neck strain)</td>
+    </tr>
+    <tr>
+        <td>Does not require a cursor, but subtle feedback is recommended</td>
+        <td>Requires to show a cursor</td>
+    </tr>
+    <tr>
+        <td>No smooth eye movements – e.g., not good for drawing</td>
+        <td>More controlled and explicit</td>
+    </tr>
+    <tr>
+        <td>Difficult for very small targets (e.g., tiny buttons or weblinks)</td>
+        <td>Reliable! Great fallback!</td>
+    </tr>
+    <tr>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+</table>
+
+Whether you use head-gaze or eye-gaze for your gaze-and-commit input model comes with different sets of design constraints, which will be covered separately in the [eye-gaze and commit](gaze-and-commit-eyes.md) and [head-gaze and commit](gaze-and-commit-head.md) articles.
+
+<br>
+
+---
+
+### Cursor
+
+:::row:::
+    :::column:::
+        For head gaze, most apps should use a [cursor](cursors.md) (or other auditory/visual indication) to give the user confidence in what they're about to interact with. 
+        You typically position this cursor in the world where their head gaze ray first intersects an object, which may be a hologram or a real-world surface.<br>
+        <br>
+        For eye gaze, we generally recommend *not* to show a cursor, as this can quickly become distracting and annoying for the user. 
+        Instead subtly highlight visual targets or use a very faint eye cursor to provide confidence about what the user is about to interact with. For more information, please check out our [design guidance for eye-based input](eye-tracking.md) on HoloLens 2.
+    :::column-end:::
+        :::column:::
+       ![An example visual cursor to show gaze](images/cursor.jpg)<br>
+       *Image: An example visual cursor to show gaze*
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
 
 ## Commit
-After targeting an object or UI element, the user can interact or click on it using a secondary input. This is known as the commit step of the model. The following commit methods are supported:
+After talking about different ways to _gaze_ at a target, let's talk a bit more about the _commit_ part in _gaze and commit_.
+After targeting an object or UI element, the user can interact or click on it using a secondary input. 
+This is known as the commit step of the input model. 
 
-- Air tap gesture
-- Speak the voice command, Select, or one of the targeted voice commands
+The following commit methods are supported:
+- Air tap hand gesture (i.e., raise your hand in front of you and bring together your index finger and thumb)
+- Say _"select"_ or one of the targeted voice commands
 - Press a single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker)
 - Press the 'A' button on an Xbox gamepad
 - Press the 'A' button on an Xbox adaptive controller
 
-### Head-gaze and air tap gesture
-Air tap is a tapping gesture with the hand held upright. To perform an air tap, raise your index finger to the ready position, then pinch with your thumb, and raise your index finger back up to release. On HoloLens (1st Gen), air tap is the most common secondary input.
+### Gaze and air tap gesture
+Air tap is a tapping gesture with the hand held upright. 
+To perform an air tap, raise your index finger to the ready position, then pinch with your thumb, and raise your index finger back up to release. 
+On HoloLens (1st gen), air tap is the most common secondary input.
 
-![Finger in the ready position and then a tap or click motion](images/readyandpress.jpg)<br>
 
-Air tap is also available on HoloLens 2. It has been relaxed from the original version. Nearly all types of pinches are now supported as long as the hand is upright and holding still. This makes it much easier for users to learn and perform the gesture. This new air tap replaces the old one through the same API, so existing applications will have the new behavior automatically after recompiling for HoloLens 2.
+:::row:::
+    :::column:::
+       ![Finger in the ready position](images/readyandpress-ready.jpg)<br>
+       **Finger in the ready position**<br>
+    :::column-end:::
+    :::column:::
+       ![Press finger down to tap or click](images/readyandpress-press.jpg)<br>
+        **Press finger down to tap or click**<br>
+    :::column-end:::
+:::row-end:::
 
-### Head-gaze and "Select" voice command
-Voice commanding is one of the primary interaction methods in mixed reality. It provides a very powerful hands-free mechanism to control the system. There are diferent types of voice interaction models:
 
-- The generic command Select that performs a click actuation or commit as a secondary input.
-- Object commands like Close or Make it bigger performs and commits to an action as a secondary input.
-- Global commnads like Go to start don't require a target.
+Air tap is also available on HoloLens 2. 
+It has been relaxed from the original version. 
+Nearly all types of pinches are now supported as long as the hand is upright and holding still. 
+This makes it much easier for users to learn and perform the gesture. 
+This new air tap replaces the old one through the same API, so existing applications will have the new behavior automatically after recompiling for HoloLens 2.
+
+<br>
+
+---
+
+### Gaze and "Select" voice command
+Voice commanding is one of the primary interaction methods in mixed reality. 
+It provides a very powerful hands-free mechanism to control the system. 
+There are different types of voice interaction models:
+
+- The generic "Select" command that performs a click actuation or commit as a secondary input.
+- Object commands (e.g., "Close" or "Make it bigger") perform and commit to an action as a secondary input.
+- Global commands (e.g., "Go to start") don't require a target.
 - Conversation user interfaces or entities like Cortana have an AI natural language capability.
-- Custom commnads
+- Custom voice commands
 
-To find more details as well as a comprenhesive list of available commands and how to use them, check out our [voice commanding](voice-design.md) guidance.
+To find out more details as well as a comprehensive list of available voice commands and how to use them, check out our [voice commanding](voice-design.md) guidance.
 
+<br>
 
-### Head-gaze and HoloLens Clicker
-The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st Gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st Gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).
-
-![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
-*HoloLens Clicker*
-
-More information and instructions to pair the device can be found [here](hardware-accessories.md#pairing-bluetooth-accessories)
+---
 
 
+### Gaze and HoloLens Clicker
+
+:::row:::
+    :::column:::
+        The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).<br>
+        <br>
+        [More information and instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)<br>
+        <br>
+        *Image: HoloLens Clicker*
+    :::column-end:::
+        :::column:::
+       ![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
+    :::column-end:::
+:::row-end:::
+
+<br>
+
+---
 
 
-### Head-gaze and Xbox Wireless Controller
-The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and controll the system. If you want to customize the controller, use the Xbox Accesories application to configure your Xbox Wireless Controller.
+### Gaze and Xbox Wireless Controller
 
-![Xbox Wireless Controller](images/xboxcontroller.jpg)<br>
-*Xbox Wireless Controller*
+:::row:::
+    :::column:::
+        The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accessories application to configure your Xbox Wireless Controller.<br>
+        <br>
+        [How to pair an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)<br>
+        <br>
+        *Image: Xbox Wireless Controller*
+    :::column-end:::
+        :::column:::
+       ![Xbox Wireless Controller](images/xboxcontroller.jpg)<br>
+    :::column-end:::
+:::row-end:::
 
-[Pairing an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)
 
 
-### Head-gaze and Xbox Adaptive Controller
+<br>
+
+---
+
+
+### Gaze and Xbox Adaptive Controller
 Designed primarily to meet the needs of gamers with limited mobility, the Xbox Adaptive Controller is a unified hub for devices that helps make mixed reality more accessible.
 
-The Xbox Adaptive Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accesories application to configure your Xbox Adaptive Controller.
+The Xbox Adaptive Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accessories application to configure your Xbox Adaptive Controller.
 
 ![Xbox Adaptive Controller](images/xbox-adaptive-controller-devices.jpg)<br>
 *Xbox Adaptive Controller*
@@ -101,54 +252,11 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 
 [Instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)
 
-<a href=https://www.xbox.com/en-US/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
+<a href=https://www.xbox.com/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 
+<br>
 
-## Design guidelines
-> [!NOTE]
-> More guidance specific to gaze design [coming soon](index.md).
-
-## Head-gaze targeting
-All interactions are built upon the ability of a user to target the element they want to interact with, regardless of the input modality. In Windows Mixed Reality, this is generally done using the user's gaze.
-To enable a user to work with an experience successfully, the system's calculated understanding of a user's intent and the user's actual intent must align as closely as possible. To the degree that the system interprets the user's intended actions correctly, satisfaction increases and performance improves.
-
-
-## Target sizing and feedback
-The gaze vector has been shown repeatedly to be usable for fine targeting, but often works best for gross targeting--acquiring somewhat larger targets. Minimum target sizes of 1 to 1.5 degrees allows successful user actions in most scenarios, though targets of 3 degrees often allow for greater speed. Note that the size that the user targets is effectively a 2D area even for 3D elements--whichever projection is facing them should be the targetable area. Providing some salient cue that an element is "active" (that the user is targeting it) is extremely helpful. This can include treatments like visible "hover" effects, audio highlights or clicks, or clear alignment of a cursor with an element.
-
-![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
-*Optimal target size at 2 meter distance*
-
-![An example of highlighting a gaze targeted object](images/gazetargeting-highlighting-640px.jpg)<br>
-*An example of highlighting a gaze targeted object*
-
-## Target placement
-Users often fail to find UI elements that are positioned very high or very low in their field of view, focusing most of their attention on areas around their main focus, which is approximately at eye level. Placing most targets in some reasonable band around eye level can help. Given the tendency for users to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), grouping UI elements together to the degree that they're related conceptually can leverage attention-chaining behaviors from item to item as a user moves their gaze through an area. When designing UI, keep in mind the potential large variation in field of view between HoloLens and immersive headsets.
-
-![An example of grouped UI elements for easier gaze targeting in Galaxy Explorer](images/gazetargeting-grouping-1000px.jpg)<br>
-*An example of grouped UI elements for easier gaze targeting in Galaxy Explorer*
-
-## Improving targeting behaviors
-If user intent to target something can be determined (or approximated closely), it can be very helpful to accept near miss attempts at interaction as though they were targeted correctly. Here are a handful of successful methods that can be incorporated in mixed reality experiences:
-
-### Head-gaze stabilization ("gravity wells")
-This should be turned on most or all of the time. This technique removes the natural head and neck jitters that users might have as well movement due to looking and speaking behaviors.
-
-### Closest link algorithms
-These work best in areas with sparse interactive content. If there is a high probability that you can determine what a user was attempting to interact with, you can supplement their targeting abilities by assuming some level of intent.
-
-### Backdating and postdating actions
-This mechanism is useful in tasks requiring speed. When a user is moving through a series of targeting and activation maneuvers at speed, it is useful to assume some intent, and allow missed steps to act upon targets that the user had in focus slightly before or slightly after the tap (50 ms before/after was effective in early testing).
-
-### Smoothing
-This mechanism is useful for pathing movements, reducing the slight jitter and wobble due to natural head movement characteristics. When smoothing over pathing motions, smooth by the size and distance of movements rather than over time.
-
-### Magnetism
-This mechanism can be thought of as a more general version of closest link algorithms--drawing a cursor toward a target or simply increasing hitboxes, whether visibly or not, as users approach likely targets by using some knowledge of the interactive layout to better approach user intent. This can be particularly powerful for small targets.
-
-### Focus stickiness
-When determining which nearby interactive elements to give focus to, focus stickiness provides a bias to the element that is currently focused. This helps reduce erratic focus switching behaviours when floating at a midpoint between two elements with natural noise.
-
+---
 
 ## Composite gestures
 
@@ -171,14 +279,14 @@ Navigation with rails refers to the ability of recognizing movements in certain 
 
 Within 2D apps, users can use vertical navigation gestures to scroll, zoom, or drag inside the app. This injects virtual finger touches to the app to simulate touch gestures of the same type. Users can select which of these actions take place by toggling between the tools on the bar above the application, either by selecting the button or saying '<Scroll/Drag/Zoom> Tool'.
 
-[More info on composite gestures](gestures.md#composite-gestures)
+[More info on composite gestures](gaze-and-commit.md#composite-gestures)
 
 ## Gesture recognizers
 
 One benefit of using gesture recognition is that you can configure a gesture recognizer only for the gestures the currently targeted hologram can accept. The platform only does disambiguation as necessary to distinguish those particular supported gestures. In this way, a hologram that just supports air tap can accept any length of time between press and release, while a hologram that supports both tap and hold can promote the tap to a hold after the hold time threshold.
 
 ## Hand recognition
-HoloLens recognizes hand gestures by tracking the position of either or both hands that are visible to the device. HoloLens sees hands when they are in either the ready state (back of the hand facing you with index finger up) or the pressed state (back of the hand facing you with the index finger down). When hands are in other poses, HoloLens ignore themz.
+HoloLens recognizes hand gestures by tracking the position of either or both hands that are visible to the device. HoloLens sees hands when they are in either the ready state (back of the hand facing you with index finger up) or the pressed state (back of the hand facing you with the index finger down). When hands are in other poses, HoloLens ignores them.
 For each hand that HoloLens detects, you can access its position without orientation and its pressed state. As the hand nears the edge of the gesture frame, you're also provided with a direction vector, which you can show to the user so they know how to move their hand to get it back where HoloLens can see it.
 
 ## Gesture frame
@@ -195,14 +303,14 @@ There are three things that you should consider:
 - Consequences of breaking the gesture frame boundaries should be minimized. In general, this means that the outcome of a gesture should be stopped at the boundary, and not reversed. For example, if a user is moving some holographic object across a room, the movement should stop when the gesture frame is breached, and not returned to the starting point. The user might experience some frustration, but might more quickly understand the boundaries, and not have to restart their full intended actions each time.
 
 
+
 ## See also
-* [Direct manipulation with hands](direct-manipulation.md)
-* [Point and commit with hands](point-and-commit.md)
+* [Eye-based interaction](eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2](eye-tracking.md)
+* [Gaze and dwell](gaze-and-dwell.md)
+* [Hands - Direct manipulation](direct-manipulation.md)
+* [Hands - Gestures](gaze-and-commit.md#composite-gestures)
+* [Hands - Point and commit](point-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
-* [Head-gaze and dwell](gaze-and-dwell.md)
-* [Voice commanding](voice-design.md)
-
-
-
-
+* [Voice input](voice-input.md)
 

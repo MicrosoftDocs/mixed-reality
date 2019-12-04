@@ -1,8 +1,8 @@
 ---
 title: Asset creation process
 description: Guidance on creating assets for mixed reality experiences.
-author: paseb
-ms.author: paseb
+author: shengkait
+ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: asset, creation, process, budget, polygons, textures, shaders, performance
@@ -57,7 +57,7 @@ Below is an example budget for your experience. Performance is usually not a sin
 
 **Complexity of assets**
 * How many triangles / polygons?
-* How complex is the shader?
+* How complex is the shader? When using the Mixed Reality Toolkit, it is recommended to use the [Mixed Reality Toolkit Standard shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) to reduce shader complexity.
 
 Both the developers and artists have to consider the capabilities of the device and the graphics engine. Microsoft HoloLens has all of the computational and graphics built into the device. It shares the capabilities developers would find on a mobile platform.
 
@@ -81,7 +81,7 @@ There is also the option to capture objects in 3D. Capturing inanimate objects i
 
 ### Purchasing assets
 
-Another excellent option is to purchase assets for your experience. There are a ton of assets available through services such as the [Unity Asset Store](https://www.assetstore.unity3d.com/) or [TurboSquid](http://www.turbosquid.com/) among others.
+Another excellent option is to purchase assets for your experience. There are a ton of assets available through services such as the [Unity Asset Store](https://www.assetstore.unity3d.com/) or [TurboSquid](https://www.turbosquid.com/) among others.
 
 When you purchase assets from a 3rd party you always want to check the following:
 * **What's the poly count?**
@@ -89,7 +89,7 @@ When you purchase assets from a 3rd party you always want to check the following
 * **Are there levels of detail (LODs) for the model?**
   * Level of detail of a model allow you to scale the detail of a model for performance.
 * **Is the source file available?**
-  * Usually not included with [Unity Asset Store](https://www.assetstore.unity3d.com/) but always included with services like [TurboSquid](http://www.turbosquid.com/).
+  * Usually not included with [Unity Asset Store](https://www.assetstore.unity3d.com/) but always included with services like [TurboSquid](https://www.turbosquid.com/).
   * Without the source file you won't be able to modify the asset.
   * Make sure the source file provided can be imported by your 3D tools.
 * **Know what you're getting**

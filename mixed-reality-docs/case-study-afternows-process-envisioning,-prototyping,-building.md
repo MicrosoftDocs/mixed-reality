@@ -1,5 +1,5 @@
 ---
-title: Case study - AfterNow's process - envisioning, prototyping, building
+title: Case study - AfterNow's process
 description: AfterNow's process - envisioning, prototyping, building
 author: rwinj
 ms.author: randyw
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, AfterNow, envisioning, prototyping, building
 ---
 
-# Case study - AfterNow's process - envisioning, prototyping, building
+# Case study - AfterNow's process
 
 At [AfterNow](https://www.afternow.io/), we work with you to turn your ideas and aspirations into concrete, fully operational products and experiences ready for the market. But before we write a single line of code, we create a blueprint through a process called envisioning.
 

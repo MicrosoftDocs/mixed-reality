@@ -10,10 +10,10 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 
 
 
-# Add Holographic Remoting (HoloLens 1)
+# Add Holographic Remoting (HoloLens (1st gen))
 
 >[!IMPORTANT]
->This document describes the creation of a host application for HoloLens 1. Host application for **HoloLens 1** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 1 are not compatible with HoloLens 2 and vice versa.
+>This document describes the creation of a host application for HoloLens 1. Host application for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 1 are not compatible with HoloLens 2 and vice versa.
 
 ## HoloLens 2
 

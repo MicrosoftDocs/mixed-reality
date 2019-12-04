@@ -8,14 +8,13 @@ ms.topic: article
 keywords: Windows Mixed Reality, controls, design
 ---
 
-
-
 # Object collection
+
+![Object collection used in the Periodic Table of the Elements app](images/UX/UX_Hero_ObjectCollection.jpg)<br>
+
 
 Object collection is a layout control which helps you lay out an array of objects in a predefined three-dimensional shape. It supports various surface styles - **plane, cylinder, sphere** and **radial**. You can adjust the radius and size of the objects and the space between them. Object collection supports any object from Unity - both 2D and 3D. In the **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)**, we have created Unity script and examples that will help you create an object collection.
 
-![Object collection used in the Periodic Table of the Elements app](images/640px-objectcollection-hero-640px.jpg)<br>
-*Examples of using object collection*
 
 ## Object collection examples
 
@@ -35,12 +34,42 @@ You can use Object collection to lay out imported 3D objects. The example below 
 
 You can also use 2D images with Object collection. The examples below demonstrate how 2D images can be displayed in a grid.
 
-![An example of 2D images with Object collection](images/640px-layout-3dobjects-3.jpg)
+![An example of 2D images with Object collection](images/940px-layout-3dobjects-3.jpg)
 
-![An example of 2D images with Object collection](images/640px-layout-2dimages.jpg)<br>
+![An example of 2D images with Object collection](images/940px-layout-2dimages.jpg)<br>
 *Examples of using object collection with 2D images*
 
+<br>
+
+---
+
+## Object collection in MRTK(Mixed Reality Toolkit) for Unity
+
+* [MRTK - Object collection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)
+
+
+<br>
+
+---
+
+
 ## See also
-* [Scripts and prefabs for Object collection in the Mixed Reality Toolkit on GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_ObjectCollection.md)
+
+* [Cursors](cursors.md)
+* [Hand ray](point-and-commit.md)
+* [Button](button.md)
 * [Interactable object](interactable-object.md)
-* [Bounding Box](app-bar-and-bounding-box.md)
+* [Bounding box and App bar](app-bar-and-bounding-box.md)
+* [Manipulation](direct-manipulation.md)
+* [Hand menu](hand-menu.md)
+* [Near menu](near-menu.md)
+* [Object collection](object-collection.md)
+* [Voice command](voice-input.md)
+* [Keyboard](keyboard.md)
+* [Tooltip](tooltip.md)
+* [Slate](slate.md)
+* [Slider](slider.md)
+* [Shader](shader.md)
+* [Billboarding and tag-along](billboarding-and-tag-along.md)
+* [Displaying progress](progress.md)
+* [Surface magnetism](surface-magnetism.md)

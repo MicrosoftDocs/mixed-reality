@@ -19,7 +19,7 @@ The DirectX 11 holographic UWP app template is much like the DirectX 11 UWP app 
 The mixed reality app, however, has some additional capabilities that aren't present in a typical Direct3D 11 UWP app. The Windows Holographic app template is able to:
 * Handle Direct3D device resources associated with holographic cameras.
 * Retrieve camera back buffers from the system.
-* Handle [gaze](gaze.md) input, and recognize a simple [gesture](gestures.md).
+* Handle [gaze](gaze-and-commit.md) input, and recognize a simple [gesture](gaze-and-commit.md#composite-gestures).
 * Go into full-screen stereo rendering mode.
 
 ## How do I get started?
@@ -46,9 +46,9 @@ To create a new project:
    ![Screenshot of setting Windows 10, version 1903 as the target and minimum versions](images/new-uwp-project.png)<br>
    *Setting **Windows 10, version 1903** as the target and minimum versions*
    >[!IMPORTANT]
-   >If you do not see **Windows 10, version 1903** as an option, you do not have the latest Windows 10 SDK installed.  To get this option to appear, <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk" target="_blank">install version 10.0.18362.0 or later of the Windows 10 SDK</a>.
+   >If you do not see **Windows 10, version 1903** as an option, you do not have the latest Windows 10 SDK installed.  To get this option to appear, <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">install version 10.0.18362.0 or later of the Windows 10 SDK</a>.
 
-The template generates a project using <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gestures.md#air-tap) or press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
+The template generates a project using <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gaze-and-commit.md#composite-gestures) or press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze-and-commit.md). You can modify this project to create any mixed reality app.
 
 Alternatively, you can create a new project using the **Visual C#** holographic project template, which is based on SharpDX.  If your holographic C# project did not start from the Windows Holographic app template, you will need to copy the ms.fxcompile.targets file from a Windows Mixed Reality C# template project and import it in your .csproj file in order to compile HLSL files that you add to your project.
 
@@ -78,7 +78,7 @@ From that point on, the AppView class handles interaction with Windows basic inp
 
 The easiest way to get started building a Win32 holographic project is to adapt the <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/BasicHologram" target="_blank">*BasicHologram* Win32 sample</a>.
 
-This Win32 sample uses <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze.md). You can modify this project to create any mixed reality app.
+This Win32 sample uses <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze-and-commit.md). You can modify this project to create any mixed reality app.
 
 ### Win32 app entry point
 

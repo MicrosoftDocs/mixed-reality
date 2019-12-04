@@ -12,16 +12,23 @@ keywords: Windows Mixed Reality, billboarding, tag-along
 
 # Billboarding and tag-along
 
-Billboarding is a behavioral concept that can be applied to objects in mixed reality. Objects with billboarding always orient themselves to face the user. This is especially helpful with text and menuing systems where static objects placed in the user's environment (world-locked) would be otherwise obscured or unreadable if a user were to move around.
+<br>
 
-![HoloLens perspective of a menu system that always faces the user](images/billboarding-fragments.gif)<br>
-*HoloLens perspective of a menu system that always faces the user*
+<img src="images/UX/MRTK_TagAlong.gif" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
+<br>
+
+## What is billboarding?
+
+Billboarding is a behavioral concept that can be applied to objects in mixed reality. Objects with billboarding always orient themselves to face the user. This is especially helpful with text and menuing systems where static objects placed in the user's environment (world-locked) would be otherwise obscured or unreadable if a user were to move around.
 
 Objects with billboarding enabled can rotate freely in the user's environment. They can also be constrained to a single axis depending on design considerations. Keep in mind, billboarded objects may clip or occlude themselves if they are placed too close to other objects, or in HoloLens, too close scanned surfaces. To avoid this, think about the total footprint an object may produce when rotated on the axis enabled for billboarding.
 
+<br>
+
+---
 ## What is a tag-along?
 
-Tag-along is a behavioral concept that can be added to holograms, including billboarded objects. This interaction is a more natural and friendly way of achieving the effect of head-locked content. A tag-along object attempts to never leave the user's view. This allows the user to freely interact with what is front of them while also still seeing the holograms outside their direct view.
+Tag-along is a behavioral concept that can be added to holograms. A tag-along object attempts to stay in a range that allows the user to interact comfortably.
 
 ![The HoloLens pins panel is a great example of how tag-along behaves](images/tagalong-1000px.jpg)<br>
 *The HoloLens Start menu is a great example of tag-along behavior*
@@ -32,7 +39,38 @@ Additional parameters can make the tag-along object feel attached to the user's 
 
 Just like truly head-locked content, tag-along objects can prove overwhelming or nauseating if they move wildly or spring too much in the user’s view. As a user looks around and then quickly stop, their senses tell them they have stopped. Their balance informs them that their head has stopped turning as well as their vision sees the world stop turning. However, if tag-along keeps on moving when the user has stopped, it may confuse their senses.
 
+<br>
+
+---
+
+## Billboarding and Tag-along in MRTK(Mixed Reality Toolkit) for Unity
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts for the Billboarding and Tag-along behavior. Simply assign Billboard.cs script onto any object to add billboarding behavior and make the object always face you. To add tag-along behavior, use RadialView.cs script. You can adjust various options such as lerping time, distance, and degree.
+
+* [MRTK - Radial View Solver](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#radialview)
+* [MRTK - Billboard script](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
+
+
+<br>
+
+---
+
 ## See also
+
 * [Cursors](cursors.md)
-* [Instinctual interactions](interaction-fundamentals.md)
-* [Comfort](comfort.md)
+* [Hand ray](point-and-commit.md)
+* [Button](button.md)
+* [Interactable object](interactable-object.md)
+* [Bounding box and App bar](app-bar-and-bounding-box.md)
+* [Manipulation](direct-manipulation.md)
+* [Hand menu](hand-menu.md)
+* [Near menu](near-menu.md)
+* [Object collection](object-collection.md)
+* [Voice command](voice-input.md)
+* [Keyboard](keyboard.md)
+* [Tooltip](tooltip.md)
+* [Slate](slate.md)
+* [Slider](slider.md)
+* [Shader](shader.md)
+* [Billboarding and tag-along](billboarding-and-tag-along.md)
+* [Displaying progress](progress.md)
+* [Surface magnetism](surface-magnetism.md)

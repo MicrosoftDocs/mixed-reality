@@ -1,7 +1,7 @@
 ---
 title: Voice commanding
 description: Gaze, gesture and voice (GGV) are the primary means of interaction on HoloLens. This article provides thoughtful guidance on voice design.
-author: shentan
+author: shengkait
 ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, design, interaction, voice
 
 # Voice commanding
 
-When using voice commands, gaze is typically used as the targeting mechaninism, whether as a pointer ("select") or to direct your command to an application ("see it, say it"). Of course, some voice commands don't require a target at all, like "go to start" or "Hey, Cortana."
+When using voice commands, gaze is typically used as the targeting mechanism, whether as a pointer ("select") or to direct your command to an application ("see it, say it"). Of course, some voice commands don't require a target at all, like "go to start" or "Hey, Cortana."
 
 
 ## Device support
@@ -27,7 +27,7 @@ When using voice commands, gaze is typically used as the targeting mechaninism, 
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
@@ -111,5 +111,5 @@ When Voice is applied properly, the user understands **what they can say and get
 * Can I use voice to command things out the holographic frame on HoloLens?
 
 ## See also
-* [Gestures](gestures.md)
+* [Gestures](gaze-and-commit.md#composite-gestures)
 * [Head-gaze and dwell](gaze-and-dwell.md)
