@@ -17,7 +17,7 @@ This article explains how to implement [voice commands](voice-input.md) plus sma
 >[!NOTE]
 >The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, but you need to translate the code.
 
-## Use SpeechRecognizer for continuous recognition of voice commands
+## Use SpeechRecognizer for continuous recognition
 
 This section describes how to use continuous speech recognition to enable voice commands in your app. This walk-through uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) sample. When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.
 
@@ -129,9 +129,9 @@ From *HolographicVoiceInputSampleMain::Update*:
    }
 ```
 
-## Use dictation for one-shot recognition of speech phrases and sentences
+## Use dictation for single recognition of speech
 
-You can configure a speech recognizer to listen for phrases or sentences that the user speaks. In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect. HEr'es app workflow for this scenario:
+You can configure a speech recognizer to listen for phrases or sentences that the user speaks. In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect. Here's an app workflow for this scenario:
 1. Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a spoken command.
 2. The user speaks a phrase or sentence.
 3. Recognition of the user's speech occurs, and a result is returned to the app. At this point, your app should provide a UI prompt to indicate that recognition has occurred.
@@ -261,18 +261,19 @@ catch (Exception^ exception)
 
 * For speech web searches, use the following web-specific scenario constraint:
 
-```
-// Add a web search topic constraint to the recognizer.
+   ```
+   // Add a web search topic constraint to the recognizer.
    auto webSearchConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::WebSearch, "webSearch");
    speechRecognizer->Constraints->Append(webSearchConstraint);
-```
+   ```
+
 * Use the form constraint to fill out forms. In this case, it's best to apply your own grammar that's optimized for filling out the form.
 
-```
-// Add a form constraint to the recognizer.
+   ```
+   // Add a form constraint to the recognizer.
    auto formConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::FormFilling, "formFilling");
    speechRecognizer->Constraints->Append(formConstraint );
-```
+   ```
 * You can provide your own grammar in the SRGS format.
 
 ## Use continuous, freeform speech dictation

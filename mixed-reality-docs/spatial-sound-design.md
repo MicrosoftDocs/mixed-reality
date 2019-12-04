@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, spatial sound, design, style
 # How to use sound in mixed-reality applications
 
 You can use sound to inform and reinforce the user's mental model of application state. Use spatialization, when appropriate, to place sounds in the mixed-reality world. When you connect the auditory and the visual in this way, you deepen the intuitive nature of interactions and increase user confidence.
-<br>
+<br><br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -41,8 +41,8 @@ Interaction types in mixed reality include gesture, direct manipulation, and voi
 
 ### Gesture interactions
 In mixed reality, users may interact with buttons by using a mouse. Button actions generally occur when the user releases rather than presses the button to give the user a chance to cancel the interaction. Use sounds to reinforce these stages. To assist users in targeting distant buttons, also consider using a pointer-hover sound.
-* Button-press sounds should be a short, tactile "click." Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* Button-unpress sounds should have a similar tactile feel. A higher pitch than the press sound reinforces the sense of completion. Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+* Button-press sounds should be a short, tactile "click."<br/>Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* Button-unpress sounds should have a similar tactile feel. A higher pitch than the press sound reinforces the sense of completion.<br/>Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 * For hover sounds, consider using a subtle and non-threatening sound, such as a low-frequency thud or bump.
 
 ### Direct manipulation
@@ -95,7 +95,8 @@ Spatialization does come with some CPU cost. Many applications have at most two 
 In the physical world, sounds that are farther away are quieter. Your audio engine can model this attenuation based on the source distance. Use distance-based attenuation when it communicates relevant information.
 
 The distances to *visual indicators*, *animated holograms*, and other informative sounds are usually relevant to the user. Use distance-based attenuation to intuitively provide cues.
-* Adjust the attenuation curve for each source to fit the size of your mixed-reality world's spaces. Your audio engine's default curve is often meant for very large (up to half-kilometer) spaces.
+
+Adjust the attenuation curve for each source to fit the size of your mixed-reality world's spaces. Your audio engine's default curve is often meant for very large (up to half-kilometer) spaces.
 
 Sounds that reinforce the *progressive stages of button actions* and other interactions shouldn't get attenuation applied. The reinforcing effects of these sounds are generally more important than communicating the distance to the button. Variations can be distracting, especially with keyboards, when many button clicks may be heard in succession.
 

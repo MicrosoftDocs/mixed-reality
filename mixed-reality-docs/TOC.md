@@ -13,7 +13,7 @@
 ## [Current mixed reality release notes](release-notes-may-2019.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
 # Discover
-## [Get started with Mixed Reality](index.md)
+## [Get started with mixed reality](index.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Case study gallery](case-studies-overview.md)
 ## HoloLens hardware
