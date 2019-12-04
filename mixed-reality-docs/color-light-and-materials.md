@@ -55,7 +55,7 @@ Light and color can help make your holograms appear more naturally in a user's e
 :::row:::
     :::column:::
 * **Vignetting** - A 'vignette' effect to darken materials can help focus the user's attention on the center of the field of view. This effect darkens the hologram's material at some radius from the user's gaze vector. Note that this is also effective when the user's views holograms from an oblique or glancing angle.<br>
-* **Emphasis** - Draw attention to objects or points of interaction by contrasting colors, brightness, and lighting. For a more detailed look at lighting methods in storytelling, see [Pixel Cinematography - A Lighting Approach for Computer Graphics](https://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).<br>
+* **Emphasis** - Draw attention to objects or points of interaction by contrasting colors, brightness, and lighting. For a more detailed look at lighting methods in storytelling, see [Pixel Cinematography - A Lighting Approach for Computer Graphics](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).<br>
         <br>
         *Image: Use of color to show emphasis for storytelling elements, shown here in a scene from [Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8).*
     :::column-end:::
