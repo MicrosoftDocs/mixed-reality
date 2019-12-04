@@ -129,7 +129,7 @@ To use the Azure Translator API, you will need to configure an instance of the S
 Set up and test your mixed reality immersive headset.
 
 > [!NOTE]
-> You will not need motion controllers for this course. If you need support setting up an immersive headset, please [follow these steps](https://support.microsoft.com/en-au/help/4043101/windows-10-set-up-windows-mixed-reality).
+> You will not need motion controllers for this course. If you need support setting up an immersive headset, please [follow these steps](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality).
 
 The following is a typical set up for developing with mixed reality and, as such, is a good template for other projects:
 
@@ -603,7 +603,7 @@ To create this Class:
 
     > [!NOTE]
     > -	The languages inserted into the languages **enum** are just examples. Feel free to add more if you wish; the [API supports over 60 languages](https://docs.microsoft.com/azure/cognitive-services/translator/languages) (including Klingon)!
-    > - There is a [more interactive page covering available languages](https://www.microsoft.com/translator/business/languages/), though be aware the page only appears to work when the site language is set to 'en-us' (and the Microsoft site will likely redirect to your native language). You can change site language at the bottom of the page or by altering the URL.
+    > - There is a [more interactive page covering available languages](https://www.microsoft.com/translator/business/languages/), though be aware the page only appears to work when the site language is set to '' (and the Microsoft site will likely redirect to your native language). You can change site language at the bottom of the page or by altering the URL.
     > -	The **authorizationKey** value, in the above code snippet, must be the **Key**  you received when you subscribed to the *Azure Translator Text API*. This was covered in [Chapter 1](#chapter-1--the-azure-portal).
 
 6.	Code for the *Awake()* and *Start()* methods now needs to be added. 
@@ -727,7 +727,7 @@ Ensure that:
 - The *Results*, *Translator*, and *MicrophoneManager*, scripts are attached to the **Main Camera** object. 
 - You have placed your *Azure Translator Text API* Service **Key** within the **authorizationKey** variable within the *Translator* Script.  
 - All the fields in the *Main Camera Inspector Panel* are assigned properly.
-- Your microphone is working when running your scene (if not, check that your attached microphone is the *default* device, and that you have [set it up correctly within Windows](https://support.microsoft.com/en-au/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)).
+- Your microphone is working when running your scene (if not, check that your attached microphone is the *default* device, and that you have [set it up correctly within Windows](https://support.microsoft.com/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)).
 
 You can test the immersive headset by pressing the **Play** button in the *Unity Editor*.
 The App should be functioning through the attached immersive headset.

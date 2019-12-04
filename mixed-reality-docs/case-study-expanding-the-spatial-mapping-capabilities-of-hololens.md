@@ -25,7 +25,7 @@ When creating our first apps for Microsoft HoloLens, we were eager to see just h
 
 While we were working on [Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8) and [Young Conker](https://www.microsoft.com/p/young-conker/9nblggh5ggk1), two of the first games for HoloLens, we found that when we were doing procedural placement of holograms in the physical world, we needed a higher level of understanding about the user's environment. Each game had its own specific placement needs: In Fragments, for example, we wanted to be able to distinguish between different surfaces—such as the floor or a table—to place clues in relevant locations. We also wanted to be able to identify surfaces that life-size holographic characters could sit on, such as a couch or a chair. In Young Conker, we wanted Conker and his opponents to be able to use raised surfaces in a player's room as platforms.
 
-[Asobo Studios](http://www.asobostudio.com/index.html), our development partner for these games, faced this problem head-on and created a technology that extends the spatial mapping capabilities of HoloLens. Using this, we could analyze a player's room and identify surfaces such as walls, tables, chairs, and floors. It also gave us the ability to optimize against a set of constraints to determine the best placement for holographic objects.
+[Asobo Studios](https://www.asobostudio.com/index.html), our development partner for these games, faced this problem head-on and created a technology that extends the spatial mapping capabilities of HoloLens. Using this, we could analyze a player's room and identify surfaces such as walls, tables, chairs, and floors. It also gave us the ability to optimize against a set of constraints to determine the best placement for holographic objects.
 
 ## The spatial understanding code
 
@@ -323,4 +323,4 @@ The open-source code is available in [MixedRealityToolkit](https://github.com/Mi
 * [Scene understanding](scene-understanding.md)
 * [Room scan visualization](room-scan-visualization.md)
 * [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-* [Asobo Studio: Lessons from the frontline of HoloLens development](http://www.gamesindustry.biz/articles/2016-05-12-asobo-lessons-from-the-frontline-of-ar-development)
+* [Asobo Studio: Lessons from the frontline of HoloLens development](https://www.gamesindustry.biz/articles/2016-05-12-asobo-lessons-from-the-frontline-of-ar-development)

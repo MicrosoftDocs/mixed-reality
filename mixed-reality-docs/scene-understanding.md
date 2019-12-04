@@ -14,7 +14,29 @@ Scene understanding provides Mixed Reality developers with a structured, high-le
 
 ![Spatial mapping mesh, labeled planar surfaces, watertight mesh](images/SUScenarios.png)
 
-This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share. For details on how Scene understanding works and how to develop for it, please see the [Scene understanding SDK overview](scene-understanding-SDK.md) documentation.
+This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share.
+
+## Developing with Scene Understanding
+
+This article only serves to introduce the Scene Understanding runtime and concepts. If you are looking for documentation on how to develop with Scene Understanding you may be interested in the following:
+
+[Scene Understanding SDK overview](scene-understanding-SDK.md)
+
+You can download the Scene Understanding Sample app from the sample GitHub site:
+
+[Scene Understanding Sample](https://github.com/sceneunderstanding-microsoft/unitysample)
+
+If you do not have a device and wish to access sample scenes to try Scene Understanding out, there are scenes in the sample asset folder:
+
+[Scene Understanding Sample Scenes](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
+
+### SDK
+
+If you are looking for  specific details on how to develop for Scene Understandiing, For details on how Scene understanding works and how to develop for it, please see the [Scene Understanding SDK overview](scene-understanding-SDK.md) documentation.
+
+
+### Sample
+
 
 ## Device support
 
@@ -90,7 +112,7 @@ Generating accurate nav-meshes currently still requires post-processing, namely 
 
 ### Visualization
 
-While [spatial mapping visualization](spatial-mapping.md#visualization) can be used for real-time feedback of the environment, there are many scenarios where the simplicity of planar and watertight objects provides more performance or visual quality. Shadow projection and grounding techniques that are described using spatial mapping may be more pleasing if projected on the planar surfaces provided by Quads or the planar watertight mesh. This is especially true for environments/scenarios where through pre-scanning is not optimal due to the fact that the scene will infer, and complete environments and planar assumptions will minimize artifacts.
+While [spatial mapping visualization](spatial-mapping.md#visualization) can be used for real-time feedback of the environment, there are many scenarios where the simplicity of planar and watertight objects provides more performance or visual quality. Shadow projection and grounding techniques that are described using spatial mapping may be more pleasing if projected on the planar surfaces provided by Quads or the planar watertight mesh. This is especially true for environments/scenarios where thorough pre-scanning is not optimal due to the fact that the scene will infer, and complete environments and planar assumptions will minimize artifacts.
 
 Additionally, the total number of surfaces returned by Spatial Mapping is limited by the internal spatial cache, while Scene understanding's version of the Spatial Mapping mesh is able to access spatial mapping data that is not cached. Because of this, Scene understanding is more suited to capturing mesh representations for larger spaces (for example, larger than a single room) for visualization or further mesh processing. The world mesh returned with EnableWorldMesh will have a consistent level of detail throughout, which may yield a more pleasing visualization if rendered as wireframe.
 

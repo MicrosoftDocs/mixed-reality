@@ -58,11 +58,13 @@ Note: If you click one of the prefab objects and release, the inspector will swi
 >Note:  Make sure that both the Main Camera and SharedPlayground positions are set to 0,0,0.
 >
 
-9. Create a new game object set as a child object to the SharedPlayground parent object to create a new object. Right-click the parent object and select Create Empty. 
+9. Select "SharedPlayground" object and right click the mouse to choose "create empty" option to create an empty game object as a child of "SharedPlayground" game object.
+
+   ![Module3chapter4step6im](images/module3chapter4step6im.PNG)
 
 10. With the new object selected in your hierarchy, change the name of the object to TableAnchor in the Inspector panel. Also, click Add Component and search for the TableAnchor component. Select it and add it to the object. 
 
-![Module3Chapter4step6im](images/module3chapter4step7im.PNG)
+![Module3Chapter4step7im](images/module3chapter4step7im.PNG)
 
 11. From the Project panel in the Prefabs folder, drag the Table prefab into the "TableAnchor" child object that you just created.
 
@@ -75,9 +77,9 @@ Note: If you click one of the prefab objects and release, the inspector will swi
 ## Congratulations
 
 
-Once this is complete, all users that join your Unity project can move the lunar launcher around. All movements are synchronized so that each user can see each others' interactions. These concepts serve as the fundamental building blocks for full-featured, shared collaboration experiences. 
+Once this is complete, look around to find the lunar module. After this, all users that join your Unity project can move the lunar launcher around.  All movements are synchronized so that each user can see each others' interactions. These concepts serve as the fundamental building blocks for full-featured, shared collaboration experiences. 
 
-Although all users are connected as part of a shared experience and can see the relative movements of objects, the application is still unable to accurately align avatars and objects so that local users see each other and objects in the same place within the physical world. In order to anchor a local shared experiences, every device requires a common understanding of the physical environment. In this module, we'll achieve this by using [Azure Spatial Anchors](<https://azure.microsoft.com/en-us/services/spatial-anchors/>) (ASA) which will be implemented in the next lesson.
+Although all users are connected as part of a shared experience and can see the relative movements of objects, the application is still unable to accurately align avatars and objects so that local users were not able see each other and objects in the same place within the physical world. In order to anchor a local shared experiences, every device requires a common understanding of the physical environment. In this module, we'll achieve this by using [Azure Spatial Anchors](<https://azure.microsoft.com//services/spatial-anchors/>) (ASA) which will be implemented in the next lesson.
 
 Before proceeding to the next lesson, we'll need to complete the ASA Learning Module that covers ASA basics, Azure account and resource creation, as well as other fundamental buildings blocks required before we can integrate this into our shared experience.
 

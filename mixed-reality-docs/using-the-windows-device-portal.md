@@ -49,7 +49,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 1. [Install the tools](install-the-tools.md) to make sure you have Visual Studio Update 1 with the Windows 10 developer tools installed on your PC. This enables USB connectivity.
 2. Connect your HoloLens to your PC with a micro-USB cable.
-3. From a web browser on your PC, go to [http://127.0.0.1:10080](http://127.0.0.1:10080).
+3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
 ## Connecting to an emulator
 
@@ -158,7 +158,7 @@ Use the Mixed Reality Capture page to save media streams from the HoloLens.
 > [!NOTE]
 > There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#simultaneous-mrc-limitations):
 > * If an app tries to access the photo/video camera while Windows Device Portal is recording a video, the video recording will stop.
->   * HoloLens 2 will not stop recording video if the app acesses the photo/video camera with SharedReadOnly mode.
+>   * HoloLens 2 will not stop recording video if the app accesses the photo/video camera with SharedReadOnly mode.
 > * If an app is actively using the photo/video camera, Windows Device Portal is able to take a photo or record a video.
 > * Live streaming:
 >   * HoloLens (1st gen) prevents an app from accessing the photo/video camera while live streaming from Windows Device Portal.

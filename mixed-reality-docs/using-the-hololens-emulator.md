@@ -37,7 +37,7 @@ The HoloLens Emulator uses Hyper-V with RemoteFx (1st Gen Emulator) or GPU-PV (H
 * 64-bit CPU
 * CPU with 4 cores (or multiple CPUs with a total of 4 cores)
 * 8 GB of RAM or more
-* In the BIOS, the following features must be [supported and enabled](http://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx):
+* In the BIOS, the following features must be [supported and enabled](https://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx):
    * Hardware-assisted virtualization
    * Second Level Address Translation (SLAT)
    * Hardware-based Data Execution Prevention (DEP)
@@ -140,7 +140,7 @@ For example, if you want to access Device Portal on the emulator from a remote P
 4. Click "Apply Changes" to enable the mapping.  The 'Status' will change from 'Pending' to 'Active'.
 5. On the remote PC, open a browser and navigate to (IP-of-the-PC-running-the-emulator):8080.  The Device Portal interface will appear.  Note that the IP address you use on a remote PC must be the IP address of the PC running the emulator, not of the emulator itself.  You can retrieve the IP through various means such as the Settings app on the PC in the 'Network & Internet' category, 'ipconfig' from a Command Prompt and from the Network tab in the emulator Tools dialog by looking for the Desktop Adapter entry.
 
-Also note that if you add a port mapping for Device Portal, you can control the emulator remotely using the Perception Simulation Control tool included in the emulator installation or with the Perception Simulation APIs by connecting to the host PC's IP address and Device Portal external port, such as 8080 in the example above.  When using Perception Simulation Control to connect to and control the emulator remotely, only specify the PC's IP address and the configured port.  Do not include 'http://'.
+Also note that if you add a port mapping for Device Portal, you can control the emulator remotely using the Perception Simulation Control tool included in the emulator installation or with the Perception Simulation APIs by connecting to the host PC's IP address and Device Portal external port, such as 8080 in the example above.  When using Perception Simulation Control to connect to and control the emulator remotely, only specify the PC's IP address and the configured port.  Do not include 'https://'.
 
 There are no port mappings by default.  Any mappings you configure are persistent across launches of the HoloLens 2 Emulator and will be enabled automatically when the emulator has booted fully.
 

@@ -6,10 +6,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---
 
 # Tutorials and sample apps
+
+![HoloLens 2 user](images/08_Tutorials.png)
 
 Currently all of our tutorials and sample apps are Unity based.  As we develop content for other engines and platforms, you will find them under the relevant heading in the Table of Contents.
 
@@ -462,7 +465,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 310: Object detection</h3>
-                                              <p>Train a machine learning model, and use the trained model to recognize similiar objects and their positions in the physical world.</p>
+                                              <p>Train a machine learning model, and use the trained model to recognize similar objects and their positions in the physical world.</p>
                                           </div>
                                       </div>
                                   </div>

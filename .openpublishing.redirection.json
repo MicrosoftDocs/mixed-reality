@@ -1,6 +1,16 @@
 {
 	"redirections": [
 		{
+            "source_path": "mixed-reality-docs/updating-hololens.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-updates",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "mixed-reality-docs/hololens-known-issues.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-known-issues",
+            "redirect_document_id": true
+        },
+		{
             "source_path": "mixed-reality-docs/hololens-status.md",
             "redirect_url": "https://docs.microsoft.com/hololens/hololens-status",
             "redirect_document_id": true
@@ -17,7 +27,7 @@
         },
 		{
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
-			"redirect_url": "updating-hololens",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-updates",
 			"redirect_document_id": false
 		},
 		{
@@ -99,6 +109,28 @@
 			"source_path": "mixed-reality-docs/mixed-reality-capture.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/holographic-photos-and-video",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/academy.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/tutorials#mixed-reality-academy-tutorials",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/performance-recommendations-for-immersive-headset-apps.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/add-custom-home-environments",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/development-overview.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/development",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/performance-recommendations-for-hololens-apps.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/app-quality-criteria",
+			"redirect_document_id": false
 		}
 	]
 }
+
+
