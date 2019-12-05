@@ -64,7 +64,7 @@
 ## UX elements
 ### [Overview](app-patterns-landingpage.md)
 ### Style
-#### [Color, light and materials](color,-light-and-materials.md)
+#### [Color, light, and materials](color-light-and-materials.md)
 #### [Scale](scale.md)
 #### [Spatial sound design](spatial-sound-design.md)
 #### [Typography](typography.md)
@@ -208,7 +208,7 @@
 #### [Spatial mapping](spatial-mapping-in-directx.md)
 #### [Scene understanding](scene-understanding-sdk.md)
 #### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
-#### [Keyboard, mouse, and controller input](keyboard,-mouse,-and-controller-input-in-directx.md)
+#### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
 #### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
 #### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
