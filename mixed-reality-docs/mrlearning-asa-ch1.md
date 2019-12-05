@@ -10,198 +10,268 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 1. Getting started with Azure Spatial Anchors
 
-Welcome to the second module of the HoloLens 2 tutorials. Before getting started, be sure that all of the [prerequisites](https://docs.microsoft.com//azure/spatial-anchors/quickstarts/get-started-unity-hololens) are completed. If you have not completed the first, [Base module](mrlearning-base.md) yet, it's recommended that you complete that module first. If you are starting from a new Unity project, follow the new project creation steps in the [Base module](mrlearning-base.md). 
+## Overview
+
+Welcome to the second series of the HoloLens 2 tutorials. In this three-part tutorial series, you will learn the fundamentals of Azure Spatial Anchors.
+
+In this first tutorial, [Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md), you will explore the various steps required to start and stop an Azure session and create, upload, and download Azure anchors on a single device.
+
+In the second tutorial, [Saving, retrieving, and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md), you will learn how to save Azure Spatial Anchors across multiple app sessions by saving anchor information to the HoloLens 2's storage and how to share this anchor information to other devices for a multi-device anchor alignment.
+
+In the third tutorial, [Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md), you will learn how to provide users with feedback about anchor events and statuses when using Azure Spatial Anchors.
 
 ## Objectives
 
-* Learn the fundamentals of developing with Azure Spatial Anchors with HoloLens 2
-
+* Learn the fundamentals of developing with Azure Spatial Anchors for HoloLens 2
 * Create, upload, and download spatial anchors
 
-## Instructions
+## Prerequisites
 
-### Downloading and importing assets
-Before beginning, download and import the following assets:
+* Meet the requirements listed in the [Prerequisites](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#prerequisites) section of the  [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial.
+* Complete the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial.
+* If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
 
-[Azure Spatial Anchors v1.1.0](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v1.1.0/AzureSpatialAnchors.unitypackage)
+## Creating the Unity project
 
-[Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage)
+In this section, you will create a new Unity project and configure it for Windows Mixed Reality.
 
-[Unity.HoloLens2.AzureSpatialAnchor.Tutorials.Asset.2.1.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchor-v2.1.0.0/Unity.HoloLens2.AzureSpatialAnchor.Tutorials.Asset.2.1.0.0.unitypackage)
+1. Create a Unity project and give it a suitable name, for example, _Azure Spatial Anchors tutorial_.
 
-[Mixed Reality Toolkit  Foundation Package 2.1.0](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.1.0)
+2. Configure the Unity project for Windows Mixed Reality.
 
-1. Create a new scene in your project. Right-click your Scene folder, click Create, then Scene. Name the new scene as "ASALearningModule".
+    >[!TIP]
+    >For a reminder on how to create a Unity project and configure it for Windows Mixed Reality, you can refer to the [Create new Unity project](mrlearning-base-ch1#create-new-unity-project) and the [Configure the Unity project for Windows Mixed Reality](mrlearning-base-ch1#configure-the-unity-project-for-windows-mixed-reality) sections of the [Initializing your project and first application](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1) tutorial which is part of the the [Getting started tutorials](mrlearning-base.md) series.
 
-![module2chapter1step1im](images/module2chapter1step1im.PNG)
+## Adding inbuilt Unity packages
 
-2. Double-click "ASALearningmodule" scene to see some pre-defined items to appear along with the new scene. 
-3. Configure the scene for mixed reality development. 
+In this section, you will add inbuilt Unity assets and packages required by the toolkits and SDKs you will be using in the project.
 
-![module2chapter1step3im](images/module2chapter1step3im.PNG)
+1. Import TMP Essential Resources.
 
-> Note:
-> You may see a pop-up dialog box for selecting a [profile for the Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html). Choose the profile named *DefaultHoloLens2ConfigurationProfile* by double-clicking it.
+    >[!NOTE]
+    >We are adding this package because it is required by the Mixed Reality Toolkit.
 
-4. When choosing a file for the MRTK, select DefaultMixedRealityToolkitConfigurationProfile.
+    In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources**.
 
-> Note: If you have your own configuration profile, feel free to use that instead.
->
+    ![mrlearning-asa](images/mrlearning-asa-ch1-2-1.1.png)
 
-![module2chapter1step4im](images/module2chapter1step4im.PNG)
+    In the Import Unity Package pop-up window, first make sure all the assets are selected by clicking the **All** button, then import the assets by clicking the **Import** button.
 
-The scene is now configured for mixed reality. Make sure you save your scene (do this with either control/command+S or click on file, followed by Save). 
+    ![mrlearning-asa](images/mrlearning-asa-ch1-2-1.2.png)
 
-5. Import the [Azure Spatial Anchors v1.1.0](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v1.1.0/AzureSpatialAnchors.unitypackage) unity package that we downloaded in step 1. For that, click Assets, go down to Import Package and then click Custom Package... Your computer files will open. When they do, find where you saved the Azure Spatial Anchors package, and select it. Then click Open.
+2. Install AR Foundation.
 
-![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
+    >[!NOTE]
+    >We are adding this package because it is required by the Azure Spatial Anchors SDK.
 
-A pop-up appears, providing a list of tools and settings and asking you what to import. Select ***all*** of the options available, then click Import.
+    In the Unity menu, select **Window** > **Package Manager**.
 
-![module2chapter1step5cim](images/module2chapter1step5cim.PNG)
+    ![mrlearning-asa](images/mrlearning-asa-ch1-2-2.1.png)
 
-> Note: Be patient, it will take a few minutes to import. 
+    In the Package Manager window, select **AR Foundation** and install the package by clicking the **Install** button.
 
-6. Import [Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.0/Unity.HoloLens2.GettingStarted.Tutorials.Asset.2.1.0.0.unitypackage) next. Much like Step 5, go back into Unity, click Assets, and hover over Import Package. Click Custom Package... Your computer files will appear again. Go to where you stored the Base module Asset Pack. and select it. Click Open.
+    >[!IMPORTANT]
+    >It might take a few seconds before the AR Foundation package appears in the list.
 
-![module2chapter1step5bim](images/module2chapter1step5bim.PNG)
+    ![mrlearning-asa](images/mrlearning-asa-ch1-2-2.2.png)
 
-> Note: There might be more assets needed later in this module. Follow these steps to import any assets mentioned from this point on. 
+## Importing the tutorial assets
 
-7. Import the [ASA module pack 1.3.1](https://github.com/Developer-OI/MixedRealityLearning/releases/download/ASA_1.3/ASAModuleAssets_1.3.1.unitypackage), using the same steps as importing the previous packages.
+In this section, you will download and import all the tutorial assets.
 
-### Configuring your scene
+1. Download the assets.
 
-In this section, we will add prefabs and scripts into the scene to create a series of buttons that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
+    * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.0.0/AzureSpatialAnchors.unitypackage) (version 2.0.0)
+    * [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.1.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.1.0.1.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.1.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.1.0.1.unitypackage)
 
-8. In the Project tab, underneath the Assets folder, click on ASAmoduleAssets. Once selected, you will see two prefabs: ButtonParent and ParentAnchor.
+2. Import the assets.
 
-![module2chapter1step7im](images/module2chapter1step7im.PNG)
+    In the Unity menu, select **Assets** > **Import Package** > **Custom Package...**.
 
-9. Drag both prefabs into the scene. 
+    ![mrlearning-asa](images/mrlearning-asa-ch1-3-2.1.png)
 
-![module2chapter1step8im](images/module2chapter1step8im.PNG)
+    In the Import package... pop-up window, select the **AzureSpatialAnchors.unitypackage** and click the **Open** button.
 
-Note: After adding the ButtonParent into the scene, a pop-up will appear asking you to import TMP assets. Import the "TMP Essentials". After this, If you see any large font text in the scene, delete the ButtonParent object and add it again from the ASAmoduleAssets folder.
+    ![mrlearning-asa](images/mrlearning-asa-ch1-3-2.2.png)
 
-Note: If you want to check the debug logs in the HoloLens, you can drag and drop the DebugWindow prefab from ASAModuleAssets folder into the scene. Attach the DebugWindowMessaging script in the DebugWindow inspector panel and enable the Debug Window Enabled option. After that, drag  and drop the DebugWindow prefab into the DebugText empty field. You can also adjust the DebugWindow position wherever appropriate for you.
+    In the Import Unity Package pop-up window, first make sure all the assets are selected by clicking the **All** button, then import the assets by clicking the **Import** button.
 
-10. In order to zoom in to the scene, double-click the parent anchor in the hierarchy and adjust your view to see the entire scene as needed. Currently, ParentAnchor is a colored cube used only for demonstration purposes. Eventually, we will hide the cube and place our content as a child of the ParentAnchor. 
+    ![mrlearning-asa](images/mrlearning-asa-ch1-3-2.3.png)
 
-11. Now let's configure the buttons for operating the scene. For that, expand the ButtonParent prefab and you'll notice several labeled buttons, which are created from the MRTK's PressableButton prefabs. Learn more about how to create PressableButton from the [Base module](mrlearning-base-ch2.md). For these buttons to operate, you need to add an event which will be triggered when the user presses or selects the individual buttons. 
+    Repeat these steps to import the remaining asset packages. Once complete, your Unity project's **Assets** folder should contain these sub-folders.
 
-- For the Button named StartAzureSession, create a new event under the Button Pressed event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field and assign the StartAzureSession() method from the ParentAnchor object's ASAmoduleScript component as shown in the below screenshot.
-- ![module2chapter1step10aim](images/module2chapter1step10aim.PNG)
+    ![mrlearning-asa](images/mrlearning-asa-ch1-3-2.4.png)
 
-![module2chapter1step10bim](images/module2chapter1step10bim.PNG)
+## Creating and preparing the scene
 
-![module2chapter1step10cim](images/module2chapter1step10fim.PNG)
+In this section, you will create and prepare the scene by adding the Mixed Reality Toolkit and some of the tutorial prefabs.
 
-- For the Button named StopAzureSession, create a new event under the Button Pressed event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field and assign the StopAzureSession() method from the ParentAnchor object's ASAmoduleScript component.
+1. Create a new scene.
 
-- For the Button named CreateAnchor, create a new event under the Button Pressed event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field and assign the CreateAzureAnchor() method from the ParentAnchor object's ASAmoduleScript component.  **After this, drag the ParentAnchor again into the next empty "Game Object" field.**
+    In the Unity menu, select **File** > **New Scene**.
 
-- For the Button named Start Looking For Anchor, create a new event under the Button Press" event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field and assign the FindAzureAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-1.1.png)
 
-- For the Button named DeleteAzureAnchor, create a new event under the Button Pressed event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field and assign the DeleteAzureAnchor() method from the ParentAnchor object's ASAmoduleScript component.  
+    In the Unity menu, select **File** > **Save As...**.
 
-- For the Button named Delete Local Anchor, create a new event under the Button Pressed event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field and assign the RemoveLocalAnchor() method from the ParentAnchor object's ASAmoduleScript component. **After this, drag the ParentAnchor object again into the next empty "Game Object" field.**
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-1.2.png)
 
-12. To set up Azure spatial anchors, go to the AzureSpatialAnchorsPlugin folder in the assets folder and navigate to Examples -> Resources->AzureSpatialAnchorsDemoConfig file. In the inspector panel, add the Azure Account ID and Account Key that you created earlier. If you haven't created them or don't have the them, please follow the [Prerequisites](https://docs.microsoft.com//azure/spatial-anchors/quickstarts/get-started-unity-hololens). 
+    In the Save Scene pop-up window, navigate to your project's **Scenes** folder, give your scene a suitable name, for example, _ASATutorialScene_, and save the scene by clicking the **Save** button.
 
-  ![module2chapter1step13im](images/module2chapter1step13im.PNG)
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-1.3.png)
 
-### Build and demonstrate Base Application
+    >[!TIP]
+    >You can save the scene anywhere you like as long as it is inside the project's Assets folder. However, to keep your project organized, it's generally recommended to save it in the project's Scenes folder.
 
-Now that your scene is configured to demonstrate the basics of Azure Spatial Anchors, we will build and demonstrate the basic behavior of Azure Spatial Anchors. 
+2. Add the Mixed Reality Toolkit.
 
-1. Open the build settings window again, by going to File>Build Settings.
-    ![mrlearning-asa-ch1-3-step1](images/mrlearning-asa-ch1-3-step1.jpg)
-2. Ensure the scene you want to try is in the Scenes in the build list, by clicking on the Add Open Scenes button.
-3. Verify the Platform is set to the Universal Windows Platform. If not, please set it to the same.
-4. Press the Player Settings button and go to Publishing Settings. Under Capabilities, enable: Internet, Internet Client Server, Private Network Client Server, Removable Storage, Webcam, Microphone and Spatial Perception.
-5. In the same Player Settings, go to XR settings  and select the Virtual Reality Supported to ON.
-6. Press the Build button to begin the build process.
-   ![mrlearning-asa-ch1-3-step6](images/mrlearning-asa-ch1-3-step6.jpg)
-7. Create and name a new folder for your application. In the image below, a folder with the name App was created to contain the application. Click Select Folder to begin building to the newly created folder. After the build has completed, you may close the Build Setting" window in Unity.
+    In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...**.
 
-    ![mrlearning-asa-ch1-3-step7](images/mrlearning-asa-ch1-3-step7.jpg)
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-2.1.png)
 
-    > NOTE: If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?), you might need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com//windows/downloads/windows-10-sdk>) 
+    In the Select MixedRealityToolkitConfigurationProfile pop-up window, click the **DefaultHoloLens2ConfigurationProfile** to set it as the scene's MRTK configuration profile.
 
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-2.2.png)
 
-8. Even after a successful build, you might get some errors as shown below, but if the build is successful you can ignore them and proceed with next steps.
+    In the Unity menu, select **File** > **Save** to save the scene.
 
-    ![mrlearning-asa-ch1-3-step7B](images/mrlearning-asa-ch1-3-step7B.png)
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-2.3.png)
 
-    
+    >[!TIP]
+    >You can use the keyboard shortcut CTRL+S (command + S on macOS) to quickly save your scene as you are working through this tutorial.
 
-9. After the build is completed, open the newly created folder containing your newly built application files. Double-click on the“MixedRealityBase.sln" solution or the corresponding name, if you used an alternative name for your project to open the solution file in Visual Studio.
+3. Add the tutorial prefabs.
 
-    > Note: Be sure to open the newly created folder (i.e., the App folder, if following the naming conventions from the previous steps, as there will be a similarly named .sln file outside of that folder that is not to be confused with the .sln file inside the build folder.
+    In the Project panel, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button (command on macOS), click on **ButtonParent**, **DebugWindow**, and **ParentAnchor** to select the three prefabs.
 
-    ![mrlearning-asa-ch1-3-step8](images/mrlearning-asa-ch1-3-step8.jpg)
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-3.1.png)
 
-    > Note: If Visual Studio asks to install new components, ensure that all prerequisite components are installed as specific in [the "Install the Tools" page](install-the-tools.md)
+    With the three prefabs still selected, drag them into the Hierarchy panel to add them to the scene.
 
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-3.2.png)
 
-9. Plug your HoloLens 2 into your PC with the USB cable. While these Lesson instructions assume you will be deploying a testing with a HoloLens 2 device, you may also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com//windows/uwp/packaging/packaging-uwp-apps>)
+    To focus in on the objects in the scene, you can double-click on the ParentAnchor object, and then zoom slightly out again.
 
-10. Before building to your device, ensure that it is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a PIN. Follow [these instructions](https://docs.microsoft.com//windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
+    ![mrlearning-asa](images/mrlearning-asa-ch1-4-3.3.png)
 
-11. Configure Visual Studio for building to your HoloLens 2, by selecting the Release configuration as well as the ARM architecture.
+    >[!TIP]
+    >If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
 
-    ![mrlearning-asa-ch1-3-step11](images/mrlearning-asa-ch1-3-step11.jpg)
+## Configuring the buttons to operate the scene
 
+In this section, you will add prefabs and scripts into the scene to create a series of buttons that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
 
-12. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting Start without Debugging causes the application to immediately start on your device upon a successful build without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You might also select Build>Deploy Solution to deploy to your device without having the application automatically start.
+1. Configure the Pressable Button Holo Lens 2 (script) component.
 
-    ![mrlearning-asa-ch1-3-step12](images/mrlearning-asa-ch1-3-step12.jpg)
+    In the Hierarchy panel, expand the **ButtonParent** object and select the first child object named **StartAzureSession**.
 
->Note: The Azure spatial anchors uses the internet to save and load the anchor data so make sure your device is connected to the internet before testing the ASA app.
+    ![mrlearning-asa](images/mrlearning-asa-ch1-5-1.1.png)
 
-13. Follow the instructions. 
-    When the application is running on your device, follow the on-screen instructions. Press the Scene buttons corresponding to the Steps below. If you added the debug window as mentioned in the previous steps, you can see the feedback for individual button press and the progress of individual operations related to Azure spatial anchors.
+    In the Inspector panel, scroll down to the **Pressable Button Holo Lens 2 (script)** component and add a new event listener to the **Button Pressed ()** event by clicking the **+** icon.
 
-![module2chapter1step10eim](images/module2chapter1step10eim.PNG)
-    
-    1. Start the spatial anchors session.
-    
-    2. Move the cube to a different location.
-    
-    3. Save the Azure spatial anchors at the location of the cube.
-    
-    4. Stop the Azure spatial anchors session.
-    
-    5. Remove the local anchor on the cube to allow the user to move the cube.
-    
-    6. Move the cube somewhere else.
-    
-    7. Start Azure spatial anchors session.
-    
-    8. Find Azure Spatial Anchors. 
-    You should go back to the original place you put it when you created the anchor.
-    
-    9. Delete Azure spatial anchor.
-    
-    10. Stop Azure session.
+    ![mrlearning-asa](images/mrlearning-asa-ch1-5-1.2.png)
 
-### Anchoring an experience
+    With the StartAzureSession object still selected in the Hierarchy panel, click-and-drag the **ParentAnchor** object from the Hierarchy panel into the empty **None (Object)** field of the event listener you just added to make the ParentAnchor object listen for button pressed events from this button.
 
-In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We've used a cube to represent and visualize the parent game object with the attached anchor. In this section, you'll learn how to anchor an entire experience by placing it as a child of the ParentAnchor object. For this example, we use the lunar module Assembly demonstration application that was created during [Base module Lesson 6](mrlearning-base-ch6.md).
+    ![mrlearning-asa](images/mrlearning-asa-ch1-5-1.3.png)
 
-1. Search for the "Rocket Launcher Complete" prefab and drag it into your hierarchy as a child of the object (see the image below).
+    Click the **No Function** dropdown of the same event listener, then select **AnchorModuleScript** > **StartAzureSession ()** to set the StartAzureSession () function as the action that is triggered when the button pressed events is fired from this button.
 
-![module2chapter1step11](images/module2chapter1step11im.PNG)
+    ![mrlearning-asa](images/mrlearning-asa-ch1-5-1.4.png)
 
-2. Position the module assembly experience so that the cube is still exposed, as shown in the image below. In the application, users may reposition the entire experience by moving the cube. 
+2. Configure the Interactable (script) component.
 
-![module2chapter1step12im](images/module2chapter1step12im.PNG)
+    With the StartAzureSession object still selected in the Hierarchy panel, in the Inspector panel, scroll down to the **Interactable (Script)** component and repeat the same process as in step 1 above for the **OnClick ()** event.
 
-> Note: There are a variety of user experience flows for repositioning experiences, including the use of a button to toggle a bounding box that surrounds the experience, use of a repositioning object (such as the cube used in this step), the use of position and rotation gizmos, and more.
+    ![mrlearning-asa](images/mrlearning-asa-ch1-5-2.1.png)
+
+3. Configure the remaining buttons
+
+    For each of the remaining buttons, complete the process outlined in step 1 and 2 above to assign functions to both the Button Pressed () and OnClick () events following:
+
+    * For the **StopAzureSession** object, assign the **StopAzureSession()** function.
+    * For the **CreateAnchor** object, assign the **CreateAzureAnchor()** function, then drag the **ParentAnchor** again into the empty **None (Game Object)** field.
+    * For the **Start Looking for Anchor** object, assign the **FindAzureAnchor()** function.
+    * For the **Delete Azure Anchor** object, assign the **DeleteAzureAnchor()** function.
+    * For the **Delete Local Anchor** object, assign the **RemoveLocalAnchor()** function, then drag the **ParentAnchor** again into the empty **None (Game Object)** field.
+
+4. Connect the scene to the Azure resource
+
+    In the Hierarchy panel, select the **ParentAnchor** object and in the Inspector panel, scroll down to the **Spatial Anchor Manager (Script)** component.
+
+    Then, in the **Credentials** section, paste your Spatial Anchors Account ID and Key into the corresponding **Spatial Anchors Account Id** and **Spatial Anchors Account Key** fields.
+
+    >[!NOTE]
+    >You created your Spatial Anchors Account Id and Key as part of this tutorial's [Prerequisites](mrlearning-asa-ch1#prerequisites).
+
+    ![mrlearning-asa](images/mrlearning-asa-ch1-5-4.1.png)
+
+    >[!CAUTION]
+    >Make sure you save your scene.
+
+## Trying the basic behaviors of Azure Spatial Anchors
+
+Now that your scene is configured to demonstrate the basics of Azure Spatial Anchors, it is time to deploy the app so you can experience Azure Spatial Anchors firsthand.
+
+1. Add additional required capabilities.
+
+    In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings panel.
+
+    ![mrlearning-asa](images/mrlearning-asa-ch1-6-1.1.png)
+
+    In the Player Settings panel, select **Player** and then **Publishing Settings**.
+
+    ![mrlearning-asa](images/mrlearning-asa-ch1-6-1.2.png)
+
+    In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that **SpatialPerception**, which you enabled when you created the project at the beginning of the tutorial, is enabled. Then, enabled the **InternetClient**, **InternetClientServer**, **PrivateNetworkClientServer**, **RemovableStorage**, **Webcam**, and **Microphone** capabilities.
+
+    ![mrlearning-asa](images/mrlearning-asa-ch1-6-1.3.png)
+
+2. Deploy the app to your HoloLens 2.
+
+    >[!TIP]
+    >For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1#create-new-unity-project) and the [Configure the Unity project for Windows Mixed Reality](mrlearning-base-ch1#build-your-application-to-your-device) sections of the [Initializing your project and first application](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1) tutorial which is part of the the [Getting started tutorials](mrlearning-base.md) series.
+
+3. Run the app and follow the in-app instructions.
+
+    >[!CAUTION]
+    >Azure Spatial Anchors uses the internet to save and load the anchor data so make sure your device is connected to the internet.
+
+    When the application is running on your device, follow the on-screen instructions displayed on the **Azure Spatial Anchor Module Instructions** panel.
+
+    ![mrlearning-asa](images/mrlearning-asa-ch1-6-3.1.png)
+
+## Anchoring an experience
+
+In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We used a cube to represent and visualize the parent game object with the attached anchor. In this section, you will learn how to anchor an entire experience by placing it as a child of the ParentAnchor object.
+
+1. Add the Rocket Launcher experience.
+
+    In the Project panel, navigate to **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder and select the **Rocket Launcher_Complete** prefab.
+
+    ![mrlearning-asa](images/mrlearning-asa-ch1-7-1.1.png)
+
+    With the Rocket Launcher_Complete prefab still selected, drag it on top of the **ParentAnchor** object in the Hierarchy panel to make it a child of the ParentAnchor object.
+
+    ![mrlearning-asa](images/mrlearning-asa-ch1-7-1.2.png)
+
+2. Reposition the Rocket Launcher experience.
+
+    Move module **Rocket Launcher_Complete** object so that the **ParentAnchor** (the cube) is still exposed.
+
+    ![mrlearning-asa](images/mrlearning-asa-ch1-7-2.1.png)
+
+    In the application, users may now reposition the entire Rocket Launcher experience by moving the cube.
+
+    >[!TIP]
+    >There are a variety of user experience flows for repositioning experiences including the use of a repositioning object (such as the cube used in this tutorial), the use of a button to toggle a bounding box that surrounds the experience, the use of position and rotation gizmos, and more.
 
 ## Congratulations
-In this tutorial, you learned the fundamentals of Azure Spatial Anchors. This Lesson provided you with several buttons that let you  explore the various steps required to start and stop an Azure session and create, upload and download azure anchors on a single device. In the next lesson, you'll learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted. During the series, you will also learn how to transfer anchor IDs between multiple devices to achieve spatial alignment and learn about multi-user shared sessions, forthcoming as part of the Sharing tutorial.
+
+In this tutorial, you learned the fundamentals of Azure Spatial Anchors. This Lesson provided you with several buttons that let you  explore the various steps required to start and stop an Azure session and create, upload and download azure anchors on a single device.
+
+In the next lesson, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
 
 [Next Lesson: 2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
-
