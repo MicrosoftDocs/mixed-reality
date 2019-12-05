@@ -14,7 +14,7 @@ Audio is an essential part of design and productivity in mixed reality. Sound ca
 * Guide users to next steps.
 * Effectively combine virtual objects with the real world.
 
-The low-latency head tracking of mixed reality headsets, including HoloLens, support high-quality HRTF-based spatialization. You can spatialize audio in your application to:
+The low-latency head tracking of mixed reality headsets, including HoloLens, supports high-quality HRTF-based spatialization. You can spatialize audio in your application to:
 * Call attention to visual elements.
 * Help users maintain awareness of their real-world surroundings.
 
@@ -55,13 +55,13 @@ See detailed [examples of design that uses audio](spatial-sound-design.md).
     </tr>
 </table>
 
-## Use sounds in mixed reality
+## Use of sounds in mixed reality
 [Use of sounds in mixed reality](spatial-sound-design.md) requires a different approach than in touch and keyboard-and-mouse applications. Key sound design decisions include which sounds to spatialize and which interactions to sonify. These decisions strongly effect user confidence, productivity, and learning curve.
 
 ### Case studies
 HoloTour virtually takes users to tourist and historical sites around the world. See the [Sound design for HoloTour](case-study-spatial-sound-design-for-holotour.md) case study. A special microphone and rendering setup were used to capture the subject spaces.
 
-RoboRaid is a high-energy shooter for HoloLens. The [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md) case study describes the design choices that were made to ensure spatial audio was used to fullest dramatic effect.
+RoboRaid is a high-energy shooter for HoloLens. The [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md) case study describes the design choices that were made to ensure spatial audio was used to the fullest dramatic effect.
 
 ## Spatialization
 Spatialization is the directional component of spatial audio. For a 7.1 home theater setup, spatialization is as simple as panning between loudspeakers. But for headphones in mixed reality, it's essential to use an HRTF-based technology for accuracy and comfort. Windows offers HRTF-based spatialization, and this support is hardware-accelerated on HoloLens 2.
@@ -82,11 +82,11 @@ Every individual has a unique ear shape, head size, and ear position. So the bes
 Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). This API exposes the HoloLens 2 HRTF hardware acceleration to applications.
 
 ### Spatializer middleware support
-Support for Windows' HRTFs is available for these third-party audio engines:
+Support for Windows' HRTFs is available for the following third-party audio engines.
 * A [Unity audio engine](spatial-sound-in-unity.md) plug-in calls the HRTF XAPO.
 * A [Wwise audio engine plugin](https://www.audiokinetic.com/products/plug-ins/msspatial/) calls the ISpatialAudioClient API.
 
 ## Acoustics
-Spatial audio can be about more than direction. Other dimensions include occlusion, obstruction, reverb, portalling, and source modeling. Collectively these dimensions are referred to as *acoustics*. Without acoustics, spatialized sounds lack a perceived distance.
+Spatial audio is about more than direction. Other dimensions include occlusion, obstruction, reverb, portalling, and source modeling. Collectively these dimensions are referred to as *acoustics*. Without acoustics, spatialized sounds lack perceived distance.
 
 Acoustics treatments range from simple to very complex. You can use a simple reverb that's supported by any audio engine to push spatialized sounds into the environment of the listener. Acoustics systems such as [Project Acoustics](https://aka.ms/acoustics)  provide richer and more compelling acoustics treatment. Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound. It's an effective option for cases where the relevant scene geometry is known at development time.

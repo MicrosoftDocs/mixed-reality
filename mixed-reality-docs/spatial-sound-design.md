@@ -16,7 +16,7 @@ You can use sound to inform and reinforce the user's mental model of application
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## When should I add sounds?
-Mixed-reality applications often have a greater need for sound than 2D applications, because of their lack of a tactile interface. Add sounds when they inform the user or reinforce interactions.
+Mixed-reality applications often have a greater need for sound than 2D apps, because of their lack of a tactile interface. Add sounds when they inform the user or reinforce interactions.
 
 ### Inform and reinforce
 * For events that aren't initiated by the user, such as notifications, use sound to inform the user that a change occurred.
@@ -52,8 +52,8 @@ A *button press* sound is important in direct manipulation because the user does
 * Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
 * Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress)
 
-It's difficult to visual confirm a *grab* or *release* action. The user's hand will often be in the way of any visual effect, and hard-bodied objects lack a real-world visual analogue of "grabbing." Sounds can effectively communicate successful grab and release interactions.
-* Grab actions should have a short, somewhat-muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes there's also a "whoosh" sound that's leading up to the grabbing sound to communicate the motion of the hand.<br/>Example: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
+It's difficult to visually confirm a grab or release action. The user's hand will often be in the way of any visual effect, and hard-bodied objects lack a real-world visual analogue of "grabbing." Sounds can effectively communicate successful grab and release interactions.
+* Grab actions should have a short, somewhat-muffled tactile sound that evokes the idea of fingers closing around an object. Sometimes there's also a "whoosh" sound that leads up to the grabbing sound to communicate the motion of the hand.<br/>Example: [MRTK_Move_Start.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
 * Release actions should get a similarly short and tactile sound. It's usually lower pitched than the grab sound and in reverse order, with an impact and then a "whoosh" to communicate that the object is settling into place.<br/>Example: [MRTK_Move_End.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_Move_End.wav)
 
 A *drawing* interaction should get a persistent, looping sound whose volume is determined by the movement of the user's hand. It should be silent when the user's hand is still and loudest when the hand is moving quickly.
@@ -62,8 +62,8 @@ A *drawing* interaction should get a persistent, looping sound whose volume is d
 Voice interactions often have subtle visual elements. Use sounds to reinforce interaction stages. You may want to use more-tonal sounds to distinguish them from gesture and direct-manipulation sounds.
 
 * Use a positive-sounding tone for voice command *confirmations*. Rising tones and major musical intervals are effective.
-* Use a shorter, less-positive-sounding tone for voice command *failure*. Avoid negative sounds. Instead, use a more percussive, neutral sound to communicate that the application is moving on from the interaction.
-* If your application has a wake word, use a short, gentle tone when the device *starts listening.* Use  a subtle looping sound while the application is listening.
+* Use a shorter, less-positive-sounding tone for voice command *failures*. Avoid negative sounds. Instead, use a more percussive, neutral sound to communicate that the application is moving on from the interaction.
+* If your application has a wake word, use a short, gentle tone when the device *starts listening*. Use  a subtle looping sound while the application *is* listening.
 
 ### Notifications
 Notifications communicate application-state changes and other events that aren't initiated by the user, such as process completions, messages, and phone calls.

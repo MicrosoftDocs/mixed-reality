@@ -12,12 +12,12 @@ keywords: walkthrough, voice command, phrase, recognition, speech, directx, plat
 
 # Voice input in DirectX
 
-This article explains how to implement [voice commands](voice-input.md) plus small phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
+This article explains how to implement [voice commands](voice-input.md) plus small-phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
 
 >[!NOTE]
->The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, but you need to translate the code.
+>The code snippets in this article use C++/CX rather than C++17-compliant C++/WinRT, which is used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, but you need to translate the code.
 
-## Use SpeechRecognizer for continuous recognition
+## Use SpeechRecognizer for continuous speech recognition
 
 This section describes how to use continuous speech recognition to enable voice commands in your app. This walk-through uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) sample. When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.
 
@@ -54,7 +54,7 @@ m_speechCommandList = ref new Platform::Collections::Vector<String^>();
    m_speechCommandData.push_back(float4(1.f, 0.f, 1.f, 1.f));
 ```
 
-You can use phonetic words that might not be in a dictionary to specify commands:
+You can use phonetic words that might not be in a dictionary to specify commands.
 
 ```
 m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
@@ -129,13 +129,13 @@ From *HolographicVoiceInputSampleMain::Update*:
    }
 ```
 
-## Use dictation for single recognition of speech
+## Use dictation for phrase recognition
 
 You can configure a speech recognizer to listen for phrases or sentences that the user speaks. In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect. Here's an app workflow for this scenario:
 1. Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a spoken command.
 2. The user speaks a phrase or sentence.
 3. Recognition of the user's speech occurs, and a result is returned to the app. At this point, your app should provide a UI prompt to indicate that recognition has occurred.
-4. Depending on the confidence level, you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.
+4. Depending on the confidence level that you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.
 
 This section describes how to create a SpeechRecognizer, compile the constraint, and listen for speech input.
 
@@ -250,16 +250,16 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) available for optimizing speech recognition.
+> There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) that you can use to optimize speech recognition.
 
-* To optimize for dictation, use the dictation scenario:<br/>
+* To optimize for dictation, use the dictation scenario.<br/>
    ```
    // Compile the dictation topic constraint, which optimizes for speech dictation.
    auto dictationConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::Dictation, "dictation");
    m_speechRecognizer->Constraints->Append(dictationConstraint);
    ```
 
-* For speech web searches, use the following web-specific scenario constraint:
+* For speech web searches, use the following web-specific scenario constraint.
 
    ```
    // Add a web search topic constraint to the recognizer.
@@ -280,9 +280,9 @@ catch (Exception^ exception)
 
 For the continuous-dictation scenario, see the [Windows 10 UWP speech code sample](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).
 
-## Handle degradation in quality
+## Handle quality degradation
 
-Environmental conditions sometimes interfere with speech recognition. For example, the room might be too noisy, or the user might speak too loudly. Whenever possible, the speech recognition API provides information about the conditions that caused degradation in quality. This information is pushed to your app through a WinRT event. Here's an example of how to subscribe to this event:
+Environmental conditions sometimes interfere with speech recognition. For example, the room might be too noisy, or the user might speak too loudly. Whenever possible, the speech recognition API provides information about the conditions that caused the quality degradation. This information is pushed to your app through a WinRT event. The following example shows  how to subscribe to this event.
 
 ```
 m_speechRecognizer->RecognitionQualityDegrading +=
@@ -291,7 +291,7 @@ m_speechRecognizer->RecognitionQualityDegrading +=
            );
 ```
 
-In our code sample, we write the conditions information to the debug console. An app might want to provide feedback to the user via UI, speech synthesis, and another method. Or it might need to behave differently when speech is interrupted by a temporary reduction in quality.
+In our code sample, we write the conditions information to the debug console. An app might want to provide feedback to the user through the UI, speech synthesis, and another method. Or it might need to behave differently when speech is interrupted by a temporary reduction in quality.
 
 ```
 void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer^ recognizer, SpeechRecognitionQualityDegradingEventArgs^ args)
@@ -330,7 +330,7 @@ void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer
    }
 ```
 
-If you're not using ref classes to create your DirectX app, you must unsubscribe from the event before you release or recreate your speech recognizer. The HolographicSpeechPromptSample has a routine to stop recognition and unsubscribe from events:
+If you're not using ref classes to create your DirectX app, you must unsubscribe from the event before you release or recreate your speech recognizer. The HolographicSpeechPromptSample has a routine to stop recognition and unsubscribe from events.
 
 ```
 Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizerIfExists()
@@ -359,17 +359,17 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 ## Use speech synthesis to provide audible prompts
 
-The holographic speech samples use speech synthesis to provide audible instructions to the user. This section shows how to create a synthesized voice sample  and then play it back by using the HRTF audio APIs.
+The holographic speech samples use speech synthesis to provide audible instructions to the user. This section shows how to create a synthesized voice sample  and then play it back through the HRTF audio APIs.
 
 You should provide your own speech prompts when you request phrase input. Prompts can also help indicate when speech commands can be spoken for a continuous-recognition scenario. The following example demonstrates how to use a speech synthesizer to do this. You could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt is not dynamic.
 
-First, create the SpeechSynthesizer object:
+First, create the SpeechSynthesizer object.
 
 ```
 auto speechSynthesizer = ref new Windows::Media::SpeechSynthesis::SpeechSynthesizer();
 ```
 
-You also need a string that includes the text to  synthesize:
+You also need a string that includes the text to  synthesize.
 
 ```
 // Phrase recognition works best when requesting a phrase or sentence.

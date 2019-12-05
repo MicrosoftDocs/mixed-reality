@@ -10,18 +10,18 @@ keywords: Unity, spatial sound, HRTF, room size
 
 # Spatial sound in Unity
 
-This page links to resources that help you design with the Microsoft HRTF spatializer in Unity mixed-reality projects.
+This article links to resources that help you design by using the Microsoft HRTF spatializer in Unity mixed-reality projects.
 
 ## Enable spatialization
 
-Enable the **MS HRTF Spatializer** in your project's audio settings. For details, see the [Unity spatializer documentation](https://docs.unity3d.com/Manual/VRAudioSpatializer.html).
+Enable the *MS HRTF Spatializer* in your project's audio settings. For details, see the [Unity spatializer documentation](https://docs.unity3d.com/Manual/VRAudioSpatializer.html).
 
-Attach an **Audio Source** to an object in the hierarchy. To enable spatialization, select the **Enable spatialization** check box, and move the **Spatial Blend** slider to "1." For details, see the [Unity audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html).
+Attach an *Audio Source* to an object in the hierarchy. To enable spatialization, select the **Enable spatialization** check box, and move the **Spatial Blend** slider to "1." For details, see the [Unity audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html).
 
 ## Design with spatialization
 
 ### Distance-based attenuation
-The default Unity default distance-based decay has a minimum distance of 1 meter and a maximum of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find sources attenuate too quickly or too slowly. For recommended settings for the distance decay curve, see [sound design in mixed reality](spatial-sound-design.md). For information about setting these curves in Unity, see the [Unity audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) .
+The default distance-based decay in Unity has a minimum distance of 1 meter and a maximum of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For recommended settings for the distance decay curve, see [sound design in mixed reality](spatial-sound-design.md). For information about setting these curves in Unity, see the [Unity audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) .
 
 ### Environment
 The *MS HRTF Spatializer* includes a room reverb component with [four reverb settings](https://docs.microsoft.com/windows/win32/api/hrtfapoapi/ne-hrtfapoapi-hrtfenvironment). The default value is "small." You can change the room setting programmatically for each audio source. To change it, attach the following C# script to each object in Unity that has a spatialized audio source:

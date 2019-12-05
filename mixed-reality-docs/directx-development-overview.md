@@ -25,10 +25,10 @@ Windows Mixed Reality supports [two kinds of apps](app-views.md):
 * **Mixed-reality applications** (UWP or Win32) that use the [HolographicSpace API](getting-a-holographicspace.md) to render an [immersive view](app-views.md) to the user that fills the headset display
 * **2D apps** (UWP) that use DirectX, XAML, or another framework to render [2D views](app-views.md#2d-views) on slates in the Windows Mixed Reality home
 
-The differences between DirectX development for [2D views and immersive views](app-views.md) primarily concern holographic rendering and spatial input. Your UWP application's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 application's HWND are required and remain largely the same. The same is true for the WinRT APIs that are available to your app. But you must use a different subset of these APIs to take advantage of holographic features. For example, the swap chain is managed by the system for holographic applications. And you the HolographicSpace API rather than DXGI to [present frames](rendering-in-directx.md).
+The differences between DirectX development for [2D views and immersive views](app-views.md) primarily concern holographic rendering and spatial input. Your UWP application's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 application's HWND are required and remain largely the same. The same is true for the WinRT APIs that are available to your app. But you must use a different subset of these APIs to take advantage of holographic features. For example, the swap chain is managed by the system for holographic applications. And you use the HolographicSpace API rather than DXGI to [present frames](rendering-in-directx.md).
 
 To begin developing immersive applications:
-* For **UWP apps**, [create a new UWP project by using the templates in Visual Studio](creating-a-holographic-directx-project.md). Based on your language, Visual C++ or Visual C#, find the UWP templates under **Windows Universal** > **Holographic**.
+* For **UWP apps**, [use the templates in Visual Studio to create a new UWP project](creating-a-holographic-directx-project.md). Based on your language, Visual C++ or Visual C#, find the UWP templates under **Windows Universal** > **Holographic**.
 * For **Win32 applications**, [start from the *BasicHologram* Win32 sample](creating-a-holographic-directx-project.md#creating-a-win32-project).
 
 This step is a great way to get the code that you need to add holographic rendering support to an existing application or engine. The code and concepts are presented in the template in a way that's familiar to any developer of real-time interactive software.
@@ -37,14 +37,14 @@ This step is a great way to get the code that you need to add holographic render
 
 The following topics describe the base requirements when you add Windows Mixed Reality support to DirectX-based middleware.
 
-* [Create a holographic DirectX project](creating-a-holographic-directx-project.md): The holographic application template coupled with the documentation shows the differences compared to what you're used. It also describes the special requirements for a device that's designed to function while resting on your head.
+* [Create a holographic DirectX project](creating-a-holographic-directx-project.md): The holographic application template coupled with the documentation shows the differences compared to what you're used to. It also describes the special requirements for a device that's designed to function while resting on your head.
 * [Get a HolographicSpace](getting-a-holographicspace.md): You first need to create a HolographicSpace that gives your application the sequence of HolographicFrame objects that represent each head position from which you'll render.
 * [Render in DirectX](rendering-in-directx.md): Because a holographic swap chain has two render targets, you must make some changes to the way your app renders.
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md): Windows Mixed Reality learns and updates its understanding of the world as the user walks around. This provides spatial coordinate systems that applications use to reason about the user's surroundings, including spatial anchors and the user's defined spatial stage.
 
 ## Add mixed reality capabilities and inputs
 
-To enable the best possible experience for users of your immersive app, you should support the following key building blocks:
+To provide the best possible experience for users of your immersive app, you should support the following key building blocks:
 
 * [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
