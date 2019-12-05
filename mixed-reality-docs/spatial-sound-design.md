@@ -42,7 +42,7 @@ Interaction types in mixed reality include gesture, direct manipulation, and voi
 ### Gesture interactions
 In mixed reality, users may interact with buttons by using a mouse. Button actions generally occur when the user releases rather than presses the button to give the user a chance to cancel the interaction. Use sounds to reinforce these stages. To assist users in targeting distant buttons, also consider using a pointer-hover sound.
 * Button-press sounds should be a short, tactile "click."<br/>Example: [MRTK_ButtonPress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* Button-unpress sounds should have a similar tactile feel. A higher pitch than the press sound reinforces the sense of completion.<br/>Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+* Button-"unpress" sounds should have a similar tactile feel. A higher pitch than the press sound reinforces the sense of completion.<br/>Example: [MRTK_ButtonUnpress.wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 * For hover sounds, consider using a subtle and non-threatening sound, such as a low-frequency thud or bump.
 
 ### Direct manipulation
