@@ -252,7 +252,7 @@ catch (Exception^ exception)
 > [!NOTE]
 > There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) available for optimizing speech recognition.
 
-* To optimize for dictation, use the dictation scenario:<br/><br/>
+* To optimize for dictation, use the dictation scenario:<br/>
    ```
    // Compile the dictation topic constraint, which optimizes for speech dictation.
    auto dictationConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::Dictation, "dictation");
