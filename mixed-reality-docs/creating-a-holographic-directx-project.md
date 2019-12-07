@@ -171,6 +171,10 @@ Your mixed reality app updates in a game loop, which by default is implemented i
 
 The **Render** method in `AppMain.cpp` takes the <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> and renders the current frame to each holographic camera, according to the current app and spatial positioning state.
 
+## Notes
+
+The Windows Mixed Reality app template now enables SPECTRE mitigation by default. Make sure to install the SPECTRE-mitigated version of the VC++ runtime libraries prior to compiling with a release configuration. To install the SPECTRE-mitigated C++ libraries, launch the Visual Studio Installer and select **Modify**. Navigate to **Individual components** and search for "SPECTRE". Select the boxes corresponding to the target platforms and VC++ version that your project uses, and click **Modify** to begin the install.
+
 ## See also
 * [Getting a HolographicSpace](getting-a-holographicspace.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
