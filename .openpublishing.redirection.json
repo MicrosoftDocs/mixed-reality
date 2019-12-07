@@ -129,6 +129,16 @@
 			"source_path": "mixed-reality-docs/performance-recommendations-for-hololens-apps.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/app-quality-criteria",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/color,-light-and-materials.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/color-light-and-materials",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/keyboard,-mouse,-and-controller-input-in-directx.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/keyboard-mouse-and-controller-input-in-directx",
+			"redirect_document_id": false
 		}
 	]
 }
