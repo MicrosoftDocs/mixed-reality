@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, HoloLens, HoloTour, spatial sound, case study
 
 # Case study: Spatial sound design for HoloTour
 
-Panoramic videos and holographic scenery are only part of the formula for a truly immersive virtual Microsoft HoloLens tour. In this article, audio designer Jason Syltebo describes how sound was used to make you feel like you're actually in each HoloTour location.
+Panoramic videos and holographic scenery are only part of the formula for a truly immersive virtual Microsoft HoloLens tour. This article describes how sound was used to make you feel like you're actually in each HoloTour location.
 
 ## The tech
 
@@ -61,15 +61,6 @@ There are some additional ways to highlight directionality and improve immersion
 * **Enhanced directionality:** Within many scenes, we placed sounds in various ways to add to directionality. In the Pantheon scene, for example, the sound of the fountain was placed as a separate emitter close enough to the user that they could get a sense of "sonic parallax" as they walk around the play space. In Peru's Salinas de Maras scene, the sounds of individual little streams were placed as separate emitters to build a more immersive ambient environment, surrounding the user with the authentic sounds of that location.
 * **Spline emitter:** These emitters move in 3D space relative to the visual position of the object that they're attached to. An example is the train in Machu Picchu, where we used a spline emitter to give a distinct sense of directionality and movement.
 * **Music and SFX:** Certain aspects of HoloTour that represent a more stylized or cinematic approach use music and sound effects to heighten emotional impact. In the gladiator battle at the end of the Rome tour, for example, special effects like whooshes and stingers help strengthen the effect of labels that appear in the scenes.
-
-## About the author
-
-<table style="border-collapse:collapse">
-<tr>
-<td style="border-style: none" width="60px"><img alt="Picture of Jason Syltebo" width="60" height="60" src="images/syltebo.png"></td>
-<td style="border-style: none"><b>Jason Syltebo</b><br>Audio Designer @Microsoft</td>
-</tr>
-</table>
 
 ## See also
 * [Spatial sound](spatial-sound.md)
