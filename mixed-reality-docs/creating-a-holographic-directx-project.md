@@ -14,7 +14,7 @@ keywords: Windows Mixed Reality, holographic app, new app, UWP app, template app
 
 A holographic app you create for a HoloLens will be a <a href="https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide" target="_blank">Universal Windows Platform (UWP) app</a>.  If targeting desktop Windows Mixed Reality headsets, you can create a UWP app or a Win32 app.
 
-The DirectX holographic UWP app template is much like the DirectX 11 UWP app template; it includes a program loop (or "game loop"), a **DeviceResources** class to manage the Direct3D device and context, and a simplified content renderer class. It also has an <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a>, just like any other UWP app.
+The DirectX 11 holographic UWP app template is much like the DirectX 11 UWP app template; it includes a program loop (or "game loop"), a **DeviceResources** class to manage the Direct3D device and context, and a simplified content renderer class. It also has an <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a>, just like any other UWP app.
 
 The mixed reality app, however, has some additional capabilities that aren't present in a typical Direct3D UWP app. The Windows Mixed Reality app template is able to:
 * Handle Direct3D device resources associated with holographic cameras.
