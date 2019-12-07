@@ -14,7 +14,7 @@ keywords: Windows Mixed Reality, holographic app, new app, UWP app, template app
 
 A holographic app you create for a HoloLens will be a <a href="https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide" target="_blank">Universal Windows Platform (UWP) app</a>.  If targeting desktop Windows Mixed Reality headsets, you can create a UWP app or a Win32 app.
 
-The DirectX holographic UWP app template is much like the DirectX 11 UWP app template; it includes a program loop (or "game loop"), a **DeviceResources** class to manage the Direct3D device and context, and a simplified content renderer class. It also has an <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a>, just like any other UWP app.
+The DirectX 11 holographic UWP app template is much like the DirectX 11 UWP app template; it includes a program loop (or "game loop"), a **DeviceResources** class to manage the Direct3D device and context, and a simplified content renderer class. It also has an <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a>, just like any other UWP app.
 
 The mixed reality app, however, has some additional capabilities that aren't present in a typical Direct3D UWP app. The Windows Mixed Reality app template is able to:
 * Handle Direct3D device resources associated with holographic cameras.
@@ -40,7 +40,7 @@ To create a new project in Visual Studio 2019:
    ![Screenshot of the Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio 2019](images/holographic-directx-app-cpp-new-project-2019.png)<br>
    *Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio 2019*
    >[!IMPORTANT]
-   >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install them](install-the-tools.md) as an extension to Visual Studio 2017 or Visual Studio 2019.
+   >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install them](install-the-tools.md) as an extension to Visual Studio 2019.
 5. Click **Next**.
 5. Fill in the **Project name** and **Location** text boxes, and click or tap **Create**. The holographic app project is created.
 6. For development targeting only HoloLens 2, ensure that the **Target version** and **Minimum version** are set to **Windows 10, version 1903**.  If you are also targeting HoloLens (1st gen) or desktop Windows Mixed Reality headsets, you can set **Minimum version** to **Windows 10, version 1809** instead, although this will require some <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">version adaptive checks</a> in your code when using new features of HoloLens 2.
@@ -57,7 +57,7 @@ To create a new project in Visual Studio 2017:
    ![Screenshot of the Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio 2017](images/holographic-directx-app-cpp-new-project.png)<br>
    *Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio 2017*
    >[!IMPORTANT]
-   >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install them](install-the-tools.md) as an extension to Visual Studio 2017 or Visual Studio 2019.
+   >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install them](install-the-tools.md) as an extension to Visual Studio 2017.
 5. Fill in the **Name** and **Location** text boxes, and click or tap **OK**. The holographic app project is created.
 6. For development targeting only HoloLens 2, ensure that the **Target version** and **Minimum version** are set to **Windows 10, version 1903**.  If you are also targeting HoloLens (1st gen) or desktop Windows Mixed Reality headsets, you can set **Minimum version** to **Windows 10, version 1809** instead, although this will require some <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">version adaptive checks</a> in your code when using new features of HoloLens 2.
    ![Screenshot of setting Windows 10, version 1903 as the target and minimum versions](images/new-uwp-project.png)<br>
@@ -67,7 +67,7 @@ To create a new project in Visual Studio 2017:
 
 The template generates a project using <a href="https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/" target="_blank">C++/WinRT</a>, a C++17 language projection of the Windows Runtime APIs that supports any standards-compliant C++17 compiler.  The project shows how to create a world-locked cube that's placed two meters from the user. The user can [air-tap](gaze-and-commit.md#composite-gestures) or press a button on the controller to place the cube in a different position that's specified by the user's [gaze](gaze-and-commit.md). You can modify this project to create any mixed reality app.
 
-Alternatively, you can create a new project using the **Visual C#** holographic project template, which is based on SharpDX, or Direct3D12.  If your holographic C# project did not start from the Windows Holographic app template, you will need to copy the ms.fxcompile.targets file from a Windows Mixed Reality C# template project and import it in your .csproj file in order to compile HLSL files that you add to your project.
+Alternatively, you can create a new project using the **Visual C#** holographic project template, which is based on SharpDX.  If your holographic C# project did not start from the Windows Holographic app template, you will need to copy the ms.fxcompile.targets file from a Windows Mixed Reality C# template project and import it in your .csproj file in order to compile HLSL files that you add to your project. A Direct3D 12 template is also provided in the Windows Mixed Reality app templates extension to Visual Studio.
 
 Review [Using Visual Studio to deploy and debug](using-visual-studio.md) for information on how to build and deploy the sample to your HoloLens, PC with immersive device attached, or an emulator.
 
