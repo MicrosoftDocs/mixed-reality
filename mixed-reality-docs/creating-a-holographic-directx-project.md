@@ -173,7 +173,7 @@ The **Render** method in `AppMain.cpp` takes the <a href="https://docs.microsoft
 
 ## Notes
 
-The Windows Mixed Reality app template now supports compilation with the Spectre mitigation flag enabled. Make sure to install the Spectre-mitigated version of the Microsoft Visual C++ (MSVC) runtime libraries prior to compiling a configuration with Spectre enabled. To install the Spectre-mitigated C++ libraries, launch the Visual Studio Installer and select **Modify**. Navigate to **Individual components** and search for "spectre". Select the boxes corresponding to the target platforms and MSVC version that you need to compile Spectre-mitigated code for, and click **Modify** to begin the install.
+The Windows Mixed Reality app template now supports compilation with the Spectre mitigation flag enabled (/Qspectre). Make sure to install the Spectre-mitigated version of the Microsoft Visual C++ (MSVC) runtime libraries prior to compiling a configuration with Spectre mitigation enabled. To install the Spectre-mitigated C++ libraries, launch the Visual Studio Installer and select **Modify**. Navigate to **Individual components** and search for "spectre". Select the boxes corresponding to the target platforms and MSVC version that you need to compile Spectre-mitigated code for, and click **Modify** to begin the install.
 
 ## See also
 * [Getting a HolographicSpace](getting-a-holographicspace.md)
