@@ -40,7 +40,7 @@ In this section, you will create a new Unity project and configure it for Window
 2. Configure the Unity project for Windows Mixed Reality.
 
     >[!TIP]
-    >For a reminder on how to create a Unity project and configure it for Windows Mixed Reality, you can refer to the [Create new Unity project](mrlearning-base-ch1#create-new-unity-project) and the [Configure the Unity project for Windows Mixed Reality](mrlearning-base-ch1#configure-the-unity-project-for-windows-mixed-reality) sections of the [Initializing your project and first application](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1) tutorial which is part of the the [Getting started tutorials](mrlearning-base.md) series.
+    >For a reminder on how to create a Unity project and configure it for Windows Mixed Reality, you can refer to the [Create new Unity project](mrlearning-base-ch1.md#create-new-unity-project) and the [Configure the Unity project for Windows Mixed Reality](mrlearning-base-ch1.md#configure-the-unity-project-for-windows-mixed-reality) sections of the [Initializing your project and first application](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1) tutorial which is part of the the [Getting started tutorials](mrlearning-base.md) series.
 
 ## Adding inbuilt Unity packages
 
@@ -204,7 +204,7 @@ In this section, you will add prefabs and scripts into the scene to create a ser
     Then, in the **Credentials** section, paste your Spatial Anchors Account ID and Key into the corresponding **Spatial Anchors Account Id** and **Spatial Anchors Account Key** fields.
 
     >[!NOTE]
-    >You created your Spatial Anchors Account Id and Key as part of this tutorial's [Prerequisites](mrlearning-asa-ch1#prerequisites).
+    >You created your Spatial Anchors Account Id and Key as part of this tutorial's [Prerequisites](mrlearning-asa-ch1.md#prerequisites).
 
     ![mrlearning-asa](images/mrlearning-asa-ch1-5-4.1.png)
 
@@ -232,7 +232,7 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 2. Deploy the app to your HoloLens 2.
 
     >[!TIP]
-    >For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1#create-new-unity-project) and the [Configure the Unity project for Windows Mixed Reality](mrlearning-base-ch1#build-your-application-to-your-device) sections of the [Initializing your project and first application](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1) tutorial which is part of the the [Getting started tutorials](mrlearning-base.md) series.
+    >For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) sections of the [Initializing your project and first application](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1) tutorial which is part of the the [Getting started tutorials](mrlearning-base.md) series.
 
 3. Run the app and follow the in-app instructions.
 
