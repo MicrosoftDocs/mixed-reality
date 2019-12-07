@@ -40,7 +40,7 @@ To create a new project in Visual Studio 2019:
    ![Screenshot of the Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio 2019](images/holographic-directx-app-cpp-new-project-2019.png)<br>
    *Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio 2019*
    >[!IMPORTANT]
-   >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install them](install-the-tools.md) as an extension to Visual Studio 2017 or Visual Studio 2019.
+   >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install them](install-the-tools.md) as an extension to Visual Studio 2019.
 5. Click **Next**.
 5. Fill in the **Project name** and **Location** text boxes, and click or tap **Create**. The holographic app project is created.
 6. For development targeting only HoloLens 2, ensure that the **Target version** and **Minimum version** are set to **Windows 10, version 1903**.  If you are also targeting HoloLens (1st gen) or desktop Windows Mixed Reality headsets, you can set **Minimum version** to **Windows 10, version 1809** instead, although this will require some <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">version adaptive checks</a> in your code when using new features of HoloLens 2.
@@ -57,7 +57,7 @@ To create a new project in Visual Studio 2017:
    ![Screenshot of the Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio 2017](images/holographic-directx-app-cpp-new-project.png)<br>
    *Holographic DirectX 11 C++/WinRT UWP app project template in Visual Studio 2017*
    >[!IMPORTANT]
-   >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install them](install-the-tools.md) as an extension to Visual Studio 2017 or Visual Studio 2019.
+   >Be sure that the project template's name includes "(C++/WinRT)".  If not, you have an older version of the holographic project templates installed.  To get the latest project templates, [install them](install-the-tools.md) as an extension to Visual Studio 2017.
 5. Fill in the **Name** and **Location** text boxes, and click or tap **OK**. The holographic app project is created.
 6. For development targeting only HoloLens 2, ensure that the **Target version** and **Minimum version** are set to **Windows 10, version 1903**.  If you are also targeting HoloLens (1st gen) or desktop Windows Mixed Reality headsets, you can set **Minimum version** to **Windows 10, version 1809** instead, although this will require some <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">version adaptive checks</a> in your code when using new features of HoloLens 2.
    ![Screenshot of setting Windows 10, version 1903 as the target and minimum versions](images/new-uwp-project.png)<br>
