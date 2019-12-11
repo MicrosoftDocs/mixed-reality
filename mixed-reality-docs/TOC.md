@@ -66,8 +66,11 @@
 ### Style
 #### [Color, light, and materials](color-light-and-materials.md)
 #### [Scale](scale.md)
-#### [Spatial sound design](spatial-sound-design.md)
 #### [Typography](typography.md)
+### Spatial sound
+#### [Spatial sound design](spatial-sound-design.md)
+#### [Case study: Holotour ](case-study-spatial-sound-design-for-holotour.md)
+#### [Case study: Roboraid](case-study-using-spatial-sound-in-roboraid.md)
 
 ### Controls and behaviors
 #### [Cursors](cursors.md)
