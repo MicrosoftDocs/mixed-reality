@@ -49,9 +49,9 @@ We recommend installing the Unity game engine as the easiest way to get started 
         Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints.<br> <br>HoloLens support for Unreal Engine 4.23 is currently in beta.
     :::column-end:::
     :::column:::
-        [![DirectX templates](images/DirectX_logo.png)](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)<br>
-        **[DirectX templates](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)**<br>
-        All of the essentials you need to start writing a mixed reality app using DirectX. Includes a rendering loop (or "game loop"), a DeviceResources helper class to manage the Direct3D device and context, and a simple example renderer.
+        [![DirectX app templates](images/DirectX_logo.png)](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)<br>
+        **[DirectX](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)**<br>
+        The Windows Mixed Reality app templates provide all of the essentials you need to start writing a mixed reality app using DirectX with native APIs. Includes a rendering loop (or "game loop"), a DeviceResources helper class to manage the Direct3D device and context, and a simple example hologram renderer. Available for Direct3D11 and Direct3D 12.
     :::column-end:::
 :::row-end:::
 

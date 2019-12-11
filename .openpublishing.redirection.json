@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+            "source_path": "mixed-reality-docs/troubleshooting.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-troubleshooting",
+            "redirect_document_id": false
+        },
+		{
             "source_path": "mixed-reality-docs/updating-hololens.md",
             "redirect_url": "https://docs.microsoft.com/hololens/hololens-updates",
             "redirect_document_id": false
@@ -8,17 +13,17 @@
 		{
             "source_path": "mixed-reality-docs/hololens-known-issues.md",
             "redirect_url": "https://docs.microsoft.com/hololens/hololens-known-issues",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
 		{
             "source_path": "mixed-reality-docs/hololens-status.md",
             "redirect_url": "https://docs.microsoft.com/hololens/hololens-status",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
 		{
             "source_path": "mixed-reality-docs/environment-considerations-for-hololens.md",
             "redirect_url": "https://docs.microsoft.com/hololens/hololens-environment-considerations",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
 		{
             "source_path": "mixed-reality-docs/reset-or-recover-your-hololens.md",
