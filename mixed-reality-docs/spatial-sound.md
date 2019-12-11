@@ -90,3 +90,7 @@ Support for Windows' HRTFs is available for the following third-party audio engi
 Spatial audio is about more than direction. Other dimensions include occlusion, obstruction, reverb, portalling, and source modeling. Collectively these dimensions are referred to as *acoustics*. Without acoustics, spatialized sounds lack perceived distance.
 
 Acoustics treatments range from simple to very complex. You can use a simple reverb that's supported by any audio engine to push spatialized sounds into the environment of the listener. Acoustics systems such as [Project Acoustics](https://aka.ms/acoustics)  provide richer and more compelling acoustics treatment. Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound. It's an effective option for cases where the relevant scene geometry is known at development time.
+
+## Next steps
+- [Spatial sound in Unity](spatial-sound-in-unity.md)
+- [How to use sound in mixed-reality applications](spatial-sound-design.md)

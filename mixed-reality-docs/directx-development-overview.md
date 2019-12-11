@@ -1,5 +1,5 @@
 ---
-title: DirectX development overview 
+title: Native development overview 
 description: Build a DirectX-based mixed-reality engine by using the Windows Mixed Reality APIs directly.
 author: thetuvix
 ms.author: alexturn
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, platform APIs, custom engine, middleware
 ---
 
-# DirectX development overview
+# Native development overview
 
 Windows Mixed Reality applications use the following APIs to build [mixed-reality](mixed-reality.md) experiences for HoloLens and other immersive headsets:
 

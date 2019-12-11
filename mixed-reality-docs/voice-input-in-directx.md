@@ -104,7 +104,7 @@ From *HolographicVoiceInputSampleMain.cpp*:
    }
 ```
 
-Make use of the data however applicable to your app scenario. In our example code, we change the color of the spinning hologram cube according to the user's command.
+In our example code, we change the color of the spinning hologram cube according to the user's command.
 
 From *HolographicVoiceInputSampleMain::Update*:
 
@@ -129,7 +129,7 @@ From *HolographicVoiceInputSampleMain::Update*:
    }
 ```
 
-## Use dictation for phrase recognition
+## Use "one-shot" recognition
 
 You can configure a speech recognizer to listen for phrases or sentences that the user speaks. In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect. Here's an app workflow for this scenario:
 1. Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a spoken command.
@@ -276,7 +276,7 @@ catch (Exception^ exception)
    ```
 * You can provide your own grammar in the SRGS format.
 
-## Use continuous, freeform speech dictation
+## Use continuous recognition
 
 For the continuous-dictation scenario, see the [Windows 10 UWP speech code sample](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).
 
