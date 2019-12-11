@@ -10,7 +10,7 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 4. Setting up intent and natural language understanding
 
-In this lesson, we will explore the Azure Speech Service's Intent feature. The Intent feature allows us to equip our application with AI-powered voice commands, where users can say non-specific voice commands, and still have their intent understood by the system. During this lesson, we will set up our Azure LUIS Portal, setup our Intent/Entities/Utterances, publish our Intent Resource, connect our Unity app to our Intent Resource, and make our first Intent API call.
+In this lesson, you will explore the Azure Speech Service's Intent feature. The Intent feature allows you to equip our application with AI-powered voice commands, where users can say non-specific voice commands and still have their intent understood by the system. During this lesson, we will set up our Azure LUIS Portal, setup our Intent/Entities/Utterances, publish our Intent Resource, connect our Unity app to our Intent Resource, and make our first Intent API call.
 
 ## Objectives
 
@@ -20,7 +20,7 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
 ## Instructions
 
-1. Allow your machine to enable Dictation, to do this, go to Windows Settings, select "privacy," then "speech," and finally "inking & typing" and turn on speech services and typing suggestions.
+1. Allow your machine to enable Dictation. To do this, go to Windows Settings, select "privacy," then "speech," followed by "inking & typing" and turn on speech services and typing suggestions.
 
     ![Module4Chapter4step1aim](images/module4chapter4step1aim.PNG)
 
@@ -28,7 +28,7 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
     ![Module4Chapter4step1cim](images/module4chapter4step1cim.PNG)
 
-2. Log in to the [Azure Portal](https://portal.azure.com/). Once you are logged in, click on Create a resource, and search for "Language Understanding," and click enter.
+2. Log in to the [Azure Portal](https://portal.azure.com/). Once you are logged in, click on Create a resource, search for "Language Understanding" and click Enter.
 
     ![mrlearning-speech-ch4-1-step2.png](images/mrlearning-speech-ch4-1-step2.png)
 
@@ -36,16 +36,16 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
     ![mrlearning-speech-ch4-1-step3a.png](images/mrlearning-speech-ch4-1-step3a.png)
 
-    Give your resource a **Name**, for example, *Speech-SDK-Learning-Module*. For **Subscription**, select *Pay As You Go* or *Free Trail* if you have a trial account. Next, create a new **Resource Group** by clicking the **Create new** link, enter a name, for example, *HoloLens-2-Tutorials-Resource-Group*, and clicking the **OK** button.
+    Give your resource a **Name**, for example, *Speech-SDK-Learning-Module*. For **Subscription**, select *Pay As You Go* or *Free Trail* if you have a trial account. Next, create a new **Resource Group** by clicking the **Create new** link, enter a name, for example, *HoloLens-2-Tutorials-Resource-Group*, and click the **OK** button.
 
     ![mrlearning-speech-ch4-1-step3b.png](images/mrlearning-speech-ch4-1-step3b.png)
 
-4. Select your **Authoring location** and **Runtime location**, for the purpose of this tutorial, use *(US) West US*. Then choose *F0 (5 Calls per second, 10K Calls per month)* for the **Authoring pricing tier** and **Runtime pricing tier**. Finally, click the **Create** button to create the resource as well as the new resource group.
+4. Select your **Authoring location** and **Runtime location**. For the purpose of this tutorial, use *(US) West US*, then choose *F0 (5 Calls per second, 10K Calls per month)* for the **Authoring pricing tier** and **Runtime pricing tier**. Finally, click the **Create** button to create the resource, as well as the new resource group.
 
     ![mrlearning-speech-ch4-1-step4.png](images/mrlearning-speech-ch4-1-step4.png)
 
     >[!NOTE]
-    >After you click the Create button you will have to wait for the service to be created, this might take a few minute.
+    >After you click the Create button, you will have to wait for the service to be created, which might take a few minutes.
 
 5. Once the resource creation process is complete, you will see the message **Your deployment is complete**.
 
@@ -54,9 +54,9 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 6. Using the same user account, sign in to the [Language Understanding Intelligent Service (LUIS)](https://www.luis.ai/) portal, select your country, and agree to the terms of use.
 
     >[!NOTE]
-    >Upon reaching the Language Understanding portal, you may need to login, if you are not already, with the same credentials as your Azure portal. If this is your first time using LUIS, you will need to scroll down to the bottom of the welcome page, to find and click on the "Create LUIS" app button.
+    >Upon reaching the Language Understanding portal, you may need to log in, if you are not already, with the same credentials as your Azure portal. If this is your first time using LUIS, you will need to scroll down to the bottom of the Welcome page to find and click the "Create LUIS" app button.
 
-7. Once logged in, click My Apps (if you are not in that section currently). You can then click on Create new app. Name the new app “Speech SDK Learning Module.” Add “Speech SDK Learning Module" to the description field, as well. Then click "done."
+7. Once logged in, click My Apps (if you are not currently in that section). You can then click on Create new app. Name the new app “Speech SDK Learning Module.” Add “Speech SDK Learning Module" to the description field, as well. Then click "done."
 
     ![Module4Chapter4step8aim](images/module4chapter4step8aim.PNG)
 
@@ -77,11 +77,11 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
     >[!NOTE]
     >You should now have 2 Intents - “PressButton” and “None."
 
-10. Under App Assets on the left, select “Entities” and click “Create New Entity” and name it “Action” and keep the Entity Type as “Simple.”
+10. Under App Assets on the left, select “Entities”, click “Create New Entity”, name it “Action” and keep the Entity Type as “Simple.”
 
     ![Module4Chapter4step11im](images/module4chapter4step11im.PNG)
 
-11. Click “Create New Entity” again and name it “Target” and keep the Entity Type as “Simple” as well.
+11. Click “Create New Entity” again and name it “Target”. Keep the Entity Type as “Simple”, as well.
 
     ![Module4Chapter4step12im](images/module4chapter4step12im.PNG)
 
@@ -89,15 +89,15 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
     ![Module4Chapter4step13im](images/module4chapter4step13im.PNG)
 
-13. Click on the "View options" dropdown on the right and select "show entity values."
+13. Click the "View options" dropdown on the right and select "show entity values."
 
     ![Module4Chapter4step14aim](images/module4chapter4step14aim.PNG)
 
-    Click on the “Enter an example…” textbox. Then, enter the following utterances:
+    Click the “Enter an example…” textbox. Then, enter the following utterances:
 
     ![Module4Chapter4step14bim](images/module4chapter4step14bim.PNG)
 
-14. Click on the "View options" dropdown on the right and select "Show entity names."
+14. Click the "View options" dropdown on the right and select "Show entity names."
 
     ![Module4Chapter4step15im](images/module4chapter4step15im.PNG)
 
@@ -112,28 +112,28 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 17. Enter in “select the launch button” in  the textbox.
 
     >[!NOTE]
-    >We did not add “select” as an action in any of our Utterances - but if you click on “Inspect,” the model recognized “select” as an action entity.
+    >We did not add “select” as an action in any of our Utterances, but if you click on “Inspect,” the model recognized “select” as an action entity.
     >
     > ![Module4Chapter4noteim](images/module4chapter4noteim.PNG)
 
-18. Now, click "publish" in the top right. Ensure the dropdown says “Production” and click "publish" on the popup as well.
+18. Click "publish" in the top right. Ensure the dropdown says “Production” and click "publish" on the popup, as well.
 
     ![Module4Chapter4step19im](images/module4chapter4step19im.PNG)
 
-19. Once published, a green bar should appear at the top of the page.  Click on the green bar to be taken to the "Manage" page.
+19. Once published, a green bar should appear at the top of the page. Click the green bar to view the "Manage" page.
 
     ![Module4Chapter4step20im](images/module4chapter4step20im.PNG)
 
-20. Click on "Keys and Endpoints" under “Application Settings” to the left. Then, set the drop down "Publish To" as "Production." Set the time-zone to match yours, and check the box to include all predicted intent scores. Lastly, Click on "Assign resource."
+20. Click "Keys and Endpoints" under “Application Settings” to the left. Then, set the drop down "Publish To" as "Production." Set the time-zone to match yours, and check the box to include all predicted intent scores. Lastly, click "Assign resource."
 
     ![Module4Chapter4step21im](images/module4chapter4step21im.PNG)
 
-21. Select tenant from the first dropdown, and select “Pay-as-you-go” in the Subscription Name dropdown. Under LUIS resource name, choose the resource that we created above in steps 1-5. Then, click on "Assign resource."
+21. Select tenant from the first dropdown and select “Pay-as-you-go” in the Subscription Name dropdown. Under LUIS resource name, choose the resource that we created above in steps 1-5. Then, click on "Assign resource."
 
     ![Module4Chapter4step22im](images/module4chapter4step22im.PNG)
 
     >[!NOTE]
-    >Ensure to copy and save the Endpoint URL associated with the resource we just assigned so that it is easily accessible for the next section.
+    >Ensure to copy and save the Endpoint URL associated with the resource we just assigned so it is easily accessible for the next section.
 
     >[!NOTE]
     >For the Tenant name, put your corporation or profile that you created for this application.
@@ -158,4 +158,4 @@ In this lesson, we will explore the Azure Speech Service's Intent feature. The I
 
 ## Congratulations
 
-In this lesson, we learned how to add AI-powered speech commands! Now your program can recognize users' intent even if they do not utter precise voice commands.
+In this lesson, you learned how to add AI-powered speech commands. Now your program can recognize users' intent, even if they do not utter precise voice commands!
