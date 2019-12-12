@@ -42,7 +42,11 @@ Unity's default distance-based decay has a minimum distance of 1 meter and a max
 * [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) for instructions on setting these curves.
 
 ## Reverb
-The _Microsoft Spatializer_ changes the way reverb is handled for spatialized sources in the Unity audio graph. See [Chapter 5 of the spatializer tutorial](unity-spatial-audio-ch5.md) for instructions.
+The _Microsoft Spatializer_ disables post-spatializer effects by default. To enable reverb and other effects for spatialized sources:
+* Attach the **Room Effect Send Level** component to each source
+* Adjust the send level curve for each source, to control the gain on the audio sent back to the graph for effects processing
+
+See [Chapter 5 of the spatializer tutorial](unity-spatial-audio-ch5.md) for details.
 
 ## Unity spatial sound examples
 For examples of spatial sound in Unity, see:
