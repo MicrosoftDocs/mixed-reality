@@ -13,7 +13,7 @@
 ## [Current mixed reality release notes](release-notes-may-2019.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
 # Discover
-## [Get started with Mixed Reality](index.md)
+## [Get started with mixed reality](index.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Case study gallery](case-studies-overview.md)
 ## HoloLens hardware
@@ -64,10 +64,13 @@
 ## UX elements
 ### [Overview](app-patterns-landingpage.md)
 ### Style
-#### [Color, light and materials](color,-light-and-materials.md)
+#### [Color, light, and materials](color-light-and-materials.md)
 #### [Scale](scale.md)
-#### [Spatial sound design](spatial-sound-design.md)
 #### [Typography](typography.md)
+### Spatial sound
+#### [Spatial sound design](spatial-sound-design.md)
+#### [Case study: Holotour ](case-study-spatial-sound-design-for-holotour.md)
+#### [Case study: Roboraid](case-study-using-spatial-sound-in-roboraid.md)
 
 ### Controls and behaviors
 #### [Cursors](cursors.md)
@@ -214,7 +217,7 @@
 #### [Spatial mapping](spatial-mapping-in-directx.md)
 #### [Scene understanding](scene-understanding-sdk.md)
 #### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
-#### [Keyboard, mouse, and controller input](keyboard,-mouse,-and-controller-input-in-directx.md)
+#### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
 #### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
 #### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
