@@ -14,7 +14,7 @@ Welcome to the spatial audio tutioral for Unity on HoloLens2. This tutorial sequ
 * How to use HRTF offload on HoloLens 2 in Unity
 * How to enable reverb when using HRTF offload
 
-The [Microsoft Spatializer GitHub repository](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2F&version=GBdevelop) has a completed Unity project of this tutorial sequence. 
+The [Microsoft Spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity) has a completed Unity project of this tutorial sequence. 
 
 For our recommendations on when it can be helpful to spatialize sounds, see [spatial sound design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design).
 
@@ -31,36 +31,6 @@ Start with an empty Unity project, then add and configure NuGet for Unity:
 2. In the Unity menu bar, click **Assets -> Import Package -> Custom Package...** and install the NuGetForUnity package:
 
 ![Import custom package](images/spatial-audio/import-custom-package.png)
-
-3. In your Unity project folder, open **Assets/NuGet.config** in a text editor and add the following to the **packageSources** element: 
-> [!NOTE]
-> TODO: Change the link below to the public NuGet feed before publishing this page
-
-```xml
-<add key="Spatializer" value="https://microsoft.pkgs.visualstudio.com/Analog/_packaging/Microsoft-SpatialAudio-Unity/nuget/v2/" />
-```
-
-After editing, your NuGet.config will look like this:
-> [!NOTE]
-> TODO: Change the link below to the public NuGet feed before publishing this page
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-    <packageSources>
-       <add key="NuGet" value="http://www.nuget.org/api/v2/" />
-       <add key="Spatializer" value="https://microsoft.pkgs.visualstudio.com/Analog/_packaging/Microsoft-SpatialAudio-Unity/nuget/v2/" />
-    </packageSources>
-    <disabledPackageSources />
-    <activePackageSource>
-       <add key="All" value="(Aggregate source)" />
-    </activePackageSource>
-    <config>
-       <add key="repositoryPath" value="./Packages" />
-       <add key="DefaultPushSource" value="http://www.nuget.org/api/v2/" />
-    </config>
-</configuration>
-```
 
 ## Add the Windows Mixed Reality package
 Windows Mixed Reality support in Unity 2019 and later is contained in an optional package. To add it to your project, open **Window -> Package Manager** from the Unity menu bar:

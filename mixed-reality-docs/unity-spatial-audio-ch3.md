@@ -19,7 +19,7 @@ In this 3rd chapter of the spatial audio module of the HoloLens 2 Unity tutorial
 > [!NOTE]
 > TODO: Change the video link below to the public link before publishing this page
 
-Drag a video file into the **Project** pane in your Unity project. You can use [this video](https://microsoft.visualstudio.com/Analog/_git/mixedreality.spatialaudio.unity?path=%2FSamples%2FMicrosoftSpatializerSample%2FAssets%2FMicrosoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4&version=GBdevelop) from the spatial audio sample project.
+Drag a video file into the **Project** pane in your Unity project. You can use [this video](https://github.com/microsoft/spatialaudio-unity/blob/develop/Samples/MicrosoftSpatializerSample/Assets/Microsoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4?raw=true) from the spatial audio sample project.
 
 ![Assets folder with video](images/spatial-audio/assets-folder-with-video.png)
 
