@@ -17,7 +17,7 @@ Note you will have at least 2 spatializer options for mixed reality applications
 * The **MS HRTF Spatializer**. Unity provides this as part of the _Windows Mixed Reality_ optional package.
   * This runs on CPU in a higher-cost 'single-source' architecture.
   * This is provided for backwards compatibility with original HoloLens applications.
-* The **Microsoft Spatializer**. This is available from the [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity)
+* The **Microsoft Spatializer**. This is available from the [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity).
   * This uses a lower-cost 'multi-source' architecture.
   * On HoloLens 2, this is offloaded from CPU to an attached accelerator chip.
 

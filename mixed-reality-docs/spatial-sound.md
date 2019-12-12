@@ -83,8 +83,8 @@ Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API
 
 ### Spatializer middleware support
 Support for Windows' HRTFs is available for some 3rd-party audio engines:
-* A [Unity audio engine](spatial-sound-in-unity.md) plugin calls the HRTF XAPO
-* A [Wwise audio engine plugin](https://www.audiokinetic.com/products/plug-ins/msspatial/) calls the ISpatialAudioClient API
+* A [Unity audio engine plugin](spatial-sound-in-unity.md)
+* A [Wwise audio engine plugin](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
 ## Acoustics
 Spatial audio can be about more than direction. Other dimensions, including occlusion, obstruction, reverb, portalling, and source modelling, are collectively referred to as 'acoustics'. Without acoustics, spatialized sounds lack a perceived distance.
