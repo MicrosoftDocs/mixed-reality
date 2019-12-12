@@ -15,7 +15,7 @@ In this 4th chapter, you'll:
 * Add a new script to control spatialization on a game object
 * Drive the spatialization control script from button actions
 
-## Add a new script to control spatialization on a game object
+## Add spatialization control script
 Right-click in the **Project** pane and create a new C# script by choosing **Create -> C# Script**. Name your script "SpatializeOnOff".
 
 ![Create script](images/spatial-audio/create-script.png)

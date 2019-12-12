@@ -41,7 +41,7 @@ Then find and install the **Windows Mixed Reality** package:
 
 ![Package manager window](images/spatial-audio/package-manager-window.png)
 
-## Install the MRTK and Microsoft Spatializer plugins
+## Install MRTK and Microsoft Spatializer
 Using NuGet for Unity, install the MRTK and Microsoft Spatializer plugins:
 1. In the Unity menu bar, click on **NuGet -> Manage NuGet Packages**.
 
