@@ -38,8 +38,8 @@ For more details, see:
 
 ## Distance-based attenuation
 Unity's default distance-based decay has a minimum distance of 1 meter and a maximum distance of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For more details, see:
-* [Sound design in mixed reality](spatial-sound-design.md) for recommended settings
-* [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) for instructions on setting these curves
+* [Sound design in mixed reality](spatial-sound-design.md) for recommended settings.
+* [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) for instructions on setting these curves.
 
 ## Reverb
 The _Microsoft Spatializer_ changes the way reverb is handled for spatialized sources in the Unity audio graph. See [Chapter 5 of the spatializer tutorial](unity-spatial-audio-ch5.md) for instructions.
