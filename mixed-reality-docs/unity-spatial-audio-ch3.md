@@ -39,7 +39,7 @@ The **Video Player** object needs a textured game object on which to render the 
 
 ![Add Quad to Hierarchy](images/spatial-audio/add-quad-to-hierarchy.png)
 
-To ensure the **Quad** appears in front of the user when the application starts, set the **Position** property of the **Quad** to (0,0,2), and the **Scale** property to (1.28, 0.72, 1). After these changes, the **Transform** component on the **Inspector** pane for the **Quad** will look like this:
+To ensure the **Quad** appears in front of the user when the application starts, set the **Position** property of the **Quad** to (0, 0, 2), and the **Scale** property to (1.28, 0.72, 1). After these changes, the **Transform** component on the **Inspector** pane for the **Quad** will look like this:
 
 ![Quad transform](images/spatial-audio/quad-transform.png)
 

@@ -78,7 +78,7 @@ Enable the **Microsoft Spatializer** plugin. Open **Edit -> Project Settings -> 
 ![Project Settings showing spatializer plugin](images/spatial-audio/project-settings.png)
 
 ## Enable spatial audio on your workstation
-On desktop versions of Windows, spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens2, choose **Spatial sound -> Windows Sonic for Headphones**.
+On desktop versions of Windows, spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens 2, choose **Spatial sound -> Windows Sonic for Headphones**.
 
 ![Desktop spatial audio settings](images/spatial-audio/desktop-audio-settings.png)
 

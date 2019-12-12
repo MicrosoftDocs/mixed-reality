@@ -20,7 +20,7 @@ In the **Project** pane, select **Assets** and type "PressableButtonHoloLens2" i
 
 ![Button prefab in Assets](images/spatial-audio/button-prefab-in-assets.png)
 
-The button prefab is the entry represented by a blue icon, rather than a white icon. Drag the prefab named **PressableButtonHoloLens2** into the **Hierarchy** pane. In the **Inspector** pane for your new button, set the **Position** property to (0,-0.4,2) so that it will appear in front of the user when the application starts. The **Transform** component of the button will look like this:
+The button prefab is the entry represented by a blue icon, rather than a white icon. Drag the prefab named **PressableButtonHoloLens2** into the **Hierarchy** pane. In the **Inspector** pane for your new button, set the **Position** property to (0, -0.4, 2) so that it will appear in front of the user when the application starts. The **Transform** component of the button will look like this:
 
 ![Button transform](images/spatial-audio/button-transform.png)
 
