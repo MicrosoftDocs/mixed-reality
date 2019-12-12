@@ -1,5 +1,5 @@
 ---
-title: Spatial audio tutorials - 4. Using reverb to add distance to spatial audio
+title: Spatial audio tutorials - 5. Using reverb to add distance to spatial audio
 description: Add a reverb effect to enhance the sense of distance variation to spatial audio.
 author: kegodin
 ms.author: kegodin
