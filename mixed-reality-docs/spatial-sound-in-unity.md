@@ -1,6 +1,6 @@
 ---
 title: Spatial sound in Unity
-description: Playing spatial sound that comes from a specific 3D point within your Unity scene.
+description: Play spatial sound from a specific 3D point within your Unity scene.
 author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
@@ -8,23 +8,23 @@ ms.topic: article
 keywords: Unity, spatial sound, HRTF, room size
 ---
 
-# Spatial Sound in Unity
+# Spatial sound in Unity
 
-This page links to resources to help you use and design with the Microsoft HRTF spatializer in your Unity mixed reality projects.
+This article links to resources that help you design by using the Microsoft HRTF spatializer in Unity mixed-reality projects.
 
 ## Enable spatialization
 
-Enable the **MS HRTF Spatializer** in your project's audio settings. For more details, see [Unity's spatializer documentation](https://docs.unity3d.com/Manual/VRAudioSpatializer.html). 
+Enable the *MS HRTF Spatializer* in your project's audio settings. For details, see the [Unity spatializer documentation](https://docs.unity3d.com/Manual/VRAudioSpatializer.html).
 
-Attach an **Audio Source** to an object in the hierarchy, and enable spatialization by checking the **Enable spatialization** checkbox and moving the **Spatial Blend** slider to '1'. For more details, see [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html). 
+Attach an *Audio Source* to an object in the hierarchy. To enable spatialization, select the **Enable spatialization** check box, and move the **Spatial Blend** slider to "1." For details, see the [Unity audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html).
 
-## Design with spatialization
+## Design for spatialization 
 
 ### Distance-based attenuation
-Unity's default distance-based decay has a minimum distance of 1 meter and a maximum distance of 500 meters, with a logarithmic rolloff. This may work for your scenario, or you may find sources attenuate too quickly or too slowly. See [sound design in mixed reality](spatial-sound-design.md) for recommended settings for distance decay curves, and see [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) for information on setting these curves in Unity.
+The default distance-based decay in Unity has a minimum distance of 1 meter and a maximum of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For recommended settings for the distance decay curve, see [sound design in mixed reality](spatial-sound-design.md). For information about setting these curves in Unity, see the [Unity audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) .
 
 ### Environment
-The **MS HRTF Spatializer** includes a room reverb component with [four reverb settings](https://docs.microsoft.com/windows/win32/api/hrtfapoapi/ne-hrtfapoapi-hrtfenvironment) and a default of 'small'. The room setting can be changed programmatically for each audio source by attaching the following C# script to each object in Unity that has a spatialized Audio Source:
+The *MS HRTF Spatializer* includes a room reverb component with [four reverb settings](https://docs.microsoft.com/windows/win32/api/hrtfapoapi/ne-hrtfapoapi-hrtfenvironment). The default value is "small." You can change the room setting programmatically for each audio source. To change it, attach the following C# script to each object in Unity that has a spatialized audio source:
 
 ```cs
 using UnityEngine;
@@ -51,6 +51,5 @@ using UnityEngine;
    }
 ```
 
-## Unity spatial sound examples
-The Mixed Reality Toolkit (MRTK) includes examples of ways to apply audio effects in mixed reality: [MRTK demos](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio).
-
+## Next steps
+The Mixed Reality Toolkit (MRTK) includes [demos of how to apply audio effects in mixed reality](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio).
