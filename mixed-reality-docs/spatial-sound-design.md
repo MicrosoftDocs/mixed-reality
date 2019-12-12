@@ -15,7 +15,7 @@ You can use sound to inform and reinforce the user's mental model of application
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## When should I add sounds?
+## When to add sounds
 Mixed-reality applications often have a greater need for sound than 2D apps, because of their lack of a tactile interface. Add sounds when they inform the user or reinforce interactions.
 
 ### Inform and reinforce
@@ -36,7 +36,7 @@ Sounds that are used well are valuable to your users. But make sure your applica
 * Your application may be used in a loud environment.
 * Users may have privacy concerns or other reasons to disable device audio.
 
-## How should I sonify interactions?
+## How to sonify interactions
 Interaction types in mixed reality include gesture, direct manipulation, and voice. Use the following suggested characteristics to select or design sounds for these interactions.
 
 ### Gesture interactions
@@ -77,7 +77,7 @@ In mixed reality, objects sometimes move out of the user's field of view. Accomp
 * Incoming-call sounds should have similar qualities to a cell phone ringtone. These are usually looping musical phrases that play until the user answers the call.
 * Voice communication connection and disconnection should have a short, tonal sound. The connection sound should be a positive tone to indicate a successful connection. The disconnection sound should be a neutral sound to indicate completion of the call.
 
-## Spatialization
+## Handle spatialization
 Spatialization uses stereo headphones or speakers to place sounds in the mixed-reality world.
 
 ### Which sounds to spatialize
