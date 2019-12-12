@@ -10,7 +10,6 @@ keywords: Unity, spatial sound, HRTF, room size
 
 # Spatial sound in Unity
 
-<<<<<<< HEAD
 This page links to resources for spatial sound in Unity.
 
 ## Spatializer options
