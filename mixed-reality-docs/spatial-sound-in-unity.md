@@ -10,46 +10,50 @@ keywords: Unity, spatial sound, HRTF, room size
 
 # Spatial sound in Unity
 
-This article links to resources that help you design by using the Microsoft HRTF spatializer in Unity mixed-reality projects.
+This page links to resources for spatial sound in Unity.
+
+## Spatializer options
+Spatializer options for mixed reality applications include:
+* The *MS HRTF Spatializer*. Unity provides this as part of the *Windows Mixed Reality* optional package.
+  * This runs on CPU in a higher-cost 'single-source' architecture.
+  * This is provided for backwards compatibility with original HoloLens applications.
+* The *Microsoft Spatializer*. This is available from the [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity).
+  * This uses a lower-cost 'multi-source' architecture.
+  * On HoloLens 2, this is offloaded to a hardware accelerator.
+
+For new applications, we recommend the *Microsoft Spatializer*.
 
 ## Enable spatialization
 
-Enable the *MS HRTF Spatializer* in your project's audio settings. For details, see the [Unity spatializer documentation](https://docs.unity3d.com/Manual/VRAudioSpatializer.html).
+Use [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest) to install _Microsoft.SpatialAudio.Spatializer.Unity_ and choose **Microsoft Spatializer** in your project's audio settings. Then:
+* Attach an **Audio Source** to an object in the hierarchy
+* Check the **Enable spatialization** checkbox
+* Move the **Spatial Blend** slider to '1'
 
-Attach an *Audio Source* to an object in the hierarchy. To enable spatialization, select the **Enable spatialization** check box, and move the **Spatial Blend** slider to "1." For details, see the [Unity audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html).
+For more details, see:
+* [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity)
+* [Microsoft's spatializer tutorial](unity-spatial-audio-ch1.md)
+* [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html)
+* [Unity's spatializer documentation](https://docs.unity3d.com/Manual/VRAudioSpatializer.html)
 
-## Design for spatialization 
+## Distance-based attenuation
+Unity's default distance-based decay has a minimum distance of 1 meter and a maximum distance of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For more details, see:
+* [Sound design in mixed reality](spatial-sound-design.md) for recommended settings.
+* [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) for instructions on setting these curves.
 
-### Distance-based attenuation
-The default distance-based decay in Unity has a minimum distance of 1 meter and a maximum of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For recommended settings for the distance decay curve, see [sound design in mixed reality](spatial-sound-design.md). For information about setting these curves in Unity, see the [Unity audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) .
+## Reverb
+The _Microsoft Spatializer_ disables post-spatializer effects by default. To enable reverb and other effects for spatialized sources:
+* Attach the **Room Effect Send Level** component to each source
+* Adjust the send level curve for each source, to control the gain on the audio sent back to the graph for effects processing
 
-### Environment
-The *MS HRTF Spatializer* includes a room reverb component with [four reverb settings](https://docs.microsoft.com/windows/win32/api/hrtfapoapi/ne-hrtfapoapi-hrtfenvironment). The default value is "small." You can change the room setting programmatically for each audio source. To change it, attach the following C# script to each object in Unity that has a spatialized audio source:
+See [Chapter 5 of the spatializer tutorial](unity-spatial-audio-ch5.md) for details.
 
-```cs
-using UnityEngine;
-   using System.Collections;
-   public class SetHRTF : MonoBehaviour    {
-       public enum ROOMSIZE { Small, Medium, Large, None };
-       public ROOMSIZE room = ROOMSIZE.Small;  // Small is regarded as the "most average"
-       // defaults and docs from MSDN
-       // https://msdn.microsoft.com/library/windows/desktop/mt186602(v=vs.85).aspx
-       AudioSource audiosource;
-       void Awake()
-       {
-           audiosource = this.gameObject.GetComponent<AudioSource>();
-           if (audiosource == null)
-           {
-               print("SetHRTFParams needs an audio source to do anything.");
-               return;
-           }
-           audiosource.spatialize = 1; // we DO want spatialized audio
-           audiosource.spread = 0; // we dont want to reduce our angle of hearing
-           audiosource.spatialBlend = 1;   // we do want to hear spatialized audio
-           audiosource.SetSpatializerFloat(1, (float)room);    // 1 is the roomsize param
-       }
-   }
-```
+## Unity spatial sound examples
+For examples of spatial sound in Unity, see:
+* [MRTK demos](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio)
+* The [Microsoft Spatializer sample project](https://github.com/microsoft/spatialaudio-unity/tree/master/Samples/MicrosoftSpatializerSample)
 
 ## Next steps
-The Mixed Reality Toolkit (MRTK) includes [demos of how to apply audio effects in mixed reality](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio).
+* [Sound design in mixed reality](spatial-sound-design.md)
+* [Microsoft's spatializer tutorial](unity-spatial-audio-ch1.md)
+
