@@ -14,7 +14,7 @@ keywords: HoloLens, Remoting, Holographic Remoting
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
 ## Version 2.0.18.0 (December 17, 2019) <a name="v2.0.18"></a>
-* Added support for HolographicViewConfiguration: https://docs.microsoft.com/en-us/uwp/api/windows.graphics.holographic.holographicviewconfiguration
+* Added support for HolographicViewConfiguration: https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration
 * Fixed various bugs that lead to crashes.
 * Fixed bug where a HolographicSpace.CameraAdded callback was required for a HolographicCamera to get accepted and show up as added camera in the HoloraphicFrame.
 
