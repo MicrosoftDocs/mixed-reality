@@ -64,7 +64,7 @@ To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which
 
 ---
 
-## Wrist button
+## Start gesture
 In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that allows for more instinctual interactions that require no additional teaching. By showing users the button on the wrist, they can intuitively reach out and press it with their other hand.
 
 :::row:::
@@ -83,8 +83,15 @@ In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that al
 ---
 
 
-## Eye-gaze and palm up pinch
-We have also designed a one-handed solution for ease of access in HoloLens 2. This gesture requires users to eye gaze at the wrist button, then use the same hand to perform a palm up pinch using their thumb and index finger.<br>
+## One-handed Start gesture
+
+> [!IMPORTANT]
+> For the one-handed Start gesture to work:
+>
+> 1. You must update to the November 2019 update (build 18363.1039) or later.
+> 1. Your eyes must be calibrated on the device so that eye tracking functions correctly. If you do not see orbiting dots around the Start icon when you look at it, your eyes are not calibrated on the device.
+
+You can also perform the Start gesture with only one hand. To do this, hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together.<br>
 :::row:::
     :::column:::
         ![Wrist button ready](images/wrist-button-ready.png)<br>
