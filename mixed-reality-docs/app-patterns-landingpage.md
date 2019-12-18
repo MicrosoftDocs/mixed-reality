@@ -32,8 +32,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Typography](typography.md)**
     :::column-end:::
     :::column:::
-       [![Spatial sound](images/spatialaudio.png)](spatial-sound.md)
-        **[Spatial sound](spatial-sound.md)**
+       [![Sound](images/spatialaudio.png)](spatial-sound.md)
+        **[Sound](spatial-sound.md)**
     :::column-end:::
 :::row-end:::
 
