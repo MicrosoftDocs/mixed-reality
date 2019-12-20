@@ -20,6 +20,19 @@ In this tutorial, you will learn how to prepare for creating a shared experience
 * Learn how to find and import Photon Unity Networking
 * Set up a local Photon server
 
+## Prerequisites
+
+>[!TIP]
+>If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
+
+* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* Windows 10 SDK 10.0.18362.0 or later
+* Some basic C# programming ability
+* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+
+>[!IMPORTANT]
+>This tutorial series requires <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity 2019.1</a> and the recommended version is Unity 2019.1.14. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+
 ## Setting up Photon
 
 1. Set up a [Photon](https://dashboard.photonengine.com//Account/SignUp) account. Navigate to the Photon Sign-up page by clicking on [this link](https://dashboard.photonengine.com//Account/SignUp). Follow the instructions on the sign-up page to create the account.
