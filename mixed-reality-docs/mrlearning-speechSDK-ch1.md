@@ -16,9 +16,22 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 ## Objectives
 
-- Learn how to integrate the Azure Speech SDK into a HoloLens 2 application
-- Learn how to use voice commands
-- Learn how to use speech-to-text capabilities
+* Learn how to integrate the Azure Speech SDK into a HoloLens 2 application
+* Learn how to use voice commands
+* Learn how to use speech-to-text capabilities
+
+## Prerequisites
+
+>[!TIP]
+>If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
+
+* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* Windows 10 SDK 10.0.18362.0 or later
+* Some basic C# programming ability
+* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+
+>[!IMPORTANT]
+>This tutorial series requires <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity 2019.1</a> and the recommended version is Unity 2019.1.14. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Getting Started
 
