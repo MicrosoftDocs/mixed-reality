@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 307 - Machine learning
-description: Complete this course to learn how to implement Azure Machine Learning Studio within a mixed reality application.
+description: Complete this course to learn how to implement Azure Machine Learning Studio (classic) within a mixed reality application.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
@@ -17,13 +17,13 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, machine learning,
 
 ![final product -start](images/AzureLabs-Lab7-0.png)
 
-In this course, you will learn how to add Machine Learning (ML) capabilities to a mixed reality application using Azure Machine Learning Studio.
+In this course, you will learn how to add Machine Learning (ML) capabilities to a mixed reality application using Azure Machine Learning Studio (classic).
 
-*Azure Machine Learning Studio* is a Microsoft service, which provides developers with a large number of machine learning algorithms, which can help with data input, output, preparation, and visualization. From these components, it is then possible to develop a predictive analytics experiment, iterate on it, and use it to train your model. Following training, you can make your model operational within the Azure cloud, so that it can then score new data. For more information, visit the [Azure Machine Learning Studio page](https://azure.microsoft.com/services/machine-learning-studio/).
+*Azure Machine Learning Studio (classic)* is a Microsoft service, which provides developers with a large number of machine learning algorithms, which can help with data input, output, preparation, and visualization. From these components, it is then possible to develop a predictive analytics experiment, iterate on it, and use it to train your model. Following training, you can make your model operational within the Azure cloud, so that it can then score new data. For more information, visit the [Azure Machine Learning Studio (classic) page](https://azure.microsoft.com/services/machine-learning-studio/).
 
 Having completed this course, you will have a mixed reality immersive headset application, and will have learned how do the following:
 
-1.  Provide a table of sales data to the *Azure Machine Learning Studio* portal, and        design an algorithm to predict future sales of popular items.
+1.  Provide a table of sales data to the *Azure Machine Learning Studio (classic)* portal, and design an algorithm to predict future sales of popular items.
 2.  Create a **Unity Project**, which can receive and interpret prediction data from the ML service.
 3.  Display the predication data visually within the **Unity Project**, through providing the most popular sales items, on a shelf.
 
@@ -107,13 +107,13 @@ To use the Azure Translator API, you will need to configure an instance of the s
 
     ![Azure Storage Account Setup](images/AzureLabs-Lab7-4.png)
 
-## Chapter 2 - The Azure Machine Learning Studio
+## Chapter 2 - The Azure Machine Learning Studio  (classic)
 
 To use the *Azure Machine Learning*, you will need to configure an instance of the Machine Learning service to be made available to your application.
 
 1.  In the Azure Portal, click on **New** in the top left corner, and search for **Machine Learning Studio Workspace**, press **Enter**.
 
-    ![The Azure Machine Learning Studio](images/AzureLabs-Lab7-5.png)
+    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-5.png)
 
 2.  The new page will provide a description of the **Machine Learning Studio Workspace**  service. At the bottom left of this prompt, click the **Create** button, to create an association with this service.
 
@@ -141,30 +141,30 @@ To use the *Azure Machine Learning*, you will need to configure an instance of t
 
     10. Click **Create**.
 
-        ![The Azure Machine Learning Studio](images/AzureLabs-Lab7-6.png)
+        ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-6.png)
 
 4.  Once you have clicked on **Create**, you will have to wait for the service to be created, this might take a minute.
 
 5.  A notification will appear in the portal once the Service instance is created.
 
-    ![The Azure Machine Learning Studio](images/AzureLabs-Lab7-7.png)
+    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-7.png)
 
 6.  Click on the notification to explore your new Service instance.
 
-    ![The Azure Machine Learning Studio](images/AzureLabs-Lab7-8.png)
+    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-8.png)
 
 7.  Click the **Go to resource** button in the notification to explore your new Service instance.
 
 8.  In the page displayed, under the **Additional Links** section, click **Launch Machine Learning Studio**, which will direct your browser to the **Machine Learning Studio** portal.
 
-    ![The Azure Machine Learning Studio](images/AzureLabs-Lab7-9.png)
+    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-9.png)
 
-9.  Use the **Sign In** button, at the top right or in the center, to log into your Machine Learning Studio.
+9.  Use the **Sign In** button, at the top right or in the center, to log into your Machine Learning Studio (classic).
 
-    ![The Azure Machine Learning Studio](images/AzureLabs-Lab7-10.png)
+    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-10.png)
 
 
-## Chapter 3 - The Machine Learning Studio: Dataset setup
+## Chapter 3 - The Machine Learning Studio (classic): Dataset setup
 
 One of the ways Machine Learning algorithms work is by analyzing existing data and then attempting to predict future results based on the existing data set. This generally means that the more existing data you have, the better the algorithm will be at predicting future results.
 
@@ -175,25 +175,25 @@ A sample table is provided to you, for this course, called [ProductsTableCSV and
 
 This sample data set contains a record of the best-selling objects at every hour of each day of the year 2017.
         
-![The Machine Learning Studio: Dataset setup](images/AzureLabs-Lab7-11.png)
+![The Machine Learning Studio (classic): Dataset setup](images/AzureLabs-Lab7-11.png)
 
 For example, on day 1 of 2017, at 1pm (hour 13), the best-selling item was salt and pepper.
 
 This sample table contains 9998 entries.
 
-1.  Head back to the **Machine Learning Studio** portal, and add this table as a **Dataset** for your ML. Do this by clicking the **+ New** button in the bottom left corner of the screen.
+1.  Head back to the **Machine Learning Studio (classic)** portal, and add this table as a **Dataset** for your ML. Do this by clicking the **+ New** button in the bottom left corner of the screen.
 
-    ![The Machine Learning Studio: Dataset setup](images/AzureLabs-Lab7-12.png)
+    ![The Machine Learning Studio (classic): Dataset setup](images/AzureLabs-Lab7-12.png)
 
 2.  A section will come up from the bottom, and within that there is navigation panel on the left. Click **Dataset**, then to the right of that, **From Local File**.
 
-    ![The Machine Learning Studio: Dataset setup](images/AzureLabs-Lab7-13.png)
+    ![The Machine Learning Studio (classic): Dataset setup](images/AzureLabs-Lab7-13.png)
 
 3.  Upload the new **Dataset** by following these steps:
 
     1. The upload window will appear, where you can **Browse** your hard drive for the new dataset.
 
-        ![The Machine Learning Studio: Dataset setup](images/AzureLabs-Lab7-14.png)
+        ![The Machine Learning Studio (classic): Dataset setup](images/AzureLabs-Lab7-14.png)
 
     2.  Once selected, and back in the upload window, leave the checkbox unticked.
 
@@ -203,7 +203,7 @@ This sample table contains 9998 entries.
 
     5.  Press the tick in the bottom right of the upload window, and your **Dataset** will be uploaded.
 
-## Chapter 4 - The Machine Learning Studio: The Experiment
+## Chapter 4 - The Machine Learning Studio (classic): The Experiment
 
 Before you can build your machine learning system, you will need to build an experiment, to validate your theory about your data. With the results, you will know whether you need more data, or if there is no correlation between the data and a possible outcome.
 
@@ -211,39 +211,39 @@ To start creating an experiment:
 
 1.  Click again on the **+ New** button on the bottom left of the page, then click on **Experiment** > **Blank Experiment**.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-15.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-15.png)
 
 2.  A new page will be displayed with a blank Experiment:
 
 3.  From the panel on the left expand **Saved Datasets** > **My Datasets** and drag the  **ProductsTableCSV** on to the **Experiment Canvas**.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-16.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-16.png)
 
 4.  In the panel on the left, expand **Data Transformation** > **Sample and Split**. Then drag the **Split Data** item in to the **Experiment Canvas**. The Split Data item will split the data set into two parts. One part you will use for training the machine learning algorithm. The second part will be used to evaluate the accuracy of the algorithm generated.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-17.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-17.png)
 
 5.  In the right panel (while the Split Data item on the canvas is selected), edit the **Fraction of rows in the first output dataset** to **0.7**. This will split the data into two parts, the first part will be 70% of the data, and the second part will be the remaining 30%. To ensure that the data is split randomly, make sure the **Randomized split** checkbox remains checked.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-18.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-18.png)
 
 6.  Drag a connection from the base of the **ProductsTableCSV** item on the canvas to the top of the Split Data item. This will connect the items and send the **ProductsTableCSV** dataset output (the data) to the Split Data input.  
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-19.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-19.png)
 
 7.  In the **Experiments** panel on the left side, expand **Machine Learning** > **Train**. Drag the **Train Model** item out in to the Experiment canvas. Your canvas should look the same as the below.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-20.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-20.png)
 
 8.  From the ***bottom left*** of the **Split Data** item drag a connection to the **top right** of the **Train Model** item. The first 70% split from the dataset will be used by the Train Model to train the algorithm.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-21.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-21.png)
 
 9.  Select the **Train Model** item on the canvas, and in the **Properties** panel (on the right-hand side of your browser window) click the **Launch column selector** button.
 
 10. In the text box type **product** and then press **Enter**, *product* will be set as a column to train predictions. Following this, click on the **tick** in the bottom-right corner to close the selection dialog.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-22.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-22.png)
 
 11. You are going to train a **Multiclass Logistic Regression** algorithm to predict the most sold **product** based on the hour of the day and the date. It is beyond the scope of this document to explain the details of the different algorithms provided by the Azure Machine Learning studio, though, you can find out more from the [Machine Learning Algorithm Cheat Sheet](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
 
@@ -251,7 +251,7 @@ To start creating an experiment:
 
 13. Connect the output, from the bottom of the **Multiclass Logistic Regression**, to the top-left input of the **Train Model** item.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-23.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-23.png)
 
 14. In list of experiment items in the panel on the left, expand **Machine Learning** > **Score**, and drag the **Score Model** item on to the canvas.
 
@@ -259,60 +259,60 @@ To start creating an experiment:
 
 16. Connect the bottom-right output from **Split Data**, to the top-right input of the **Score Model** item.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-24.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-24.png)
 
 17. In the list of **Experiment** items in the panel on the left, expand **Machine Learning** > **Evaluate**, and drag the **Evaluate Model** item onto the canvas.
 
 18. Connect the output from the **Score Model** to the top-left input of the **Evaluate Model**.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-25.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-25.png)
 
 19. You have built your first Machine Learning Experiment. You can now save and run the experiment. In the menu at the bottom of the page, click on the **Save** button to save your experiment and then click **Run** to the start the experiment.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-26.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-26.png)
 
 20. You can see the **status** of the experiment in the top-right of the canvas. Wait a few moments for the experiment to finish.
 
     > If you have a big (real world) dataset it is likely that the experiment could take hours to run.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-27.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-27.png)
 
 21. Right click on the **Evaluate Model** item in the canvas and from the context menu hover the mouse over **Evaluation Results**, then select **Visualize**.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-28.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-28.png)
 
 22. The evaluation results will be displayed showing the predicted outcomes versus the actual outcomes. This uses the 30% of the original dataset, that was split earlier, for evaluating the model. You can see the results are not great, ideally you would have the highest number in each row be the highlighted item in the columns.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-29.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-29.png)
 
 23. Close the **Results**.
 
 24. To use your newly trained Machine Learning model you need to expose it as a **Web Service**. To do this, click on the **Set Up Web Service** menu item in the menu at the bottom of the page, and click on **Predictive Web Service**.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-30.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-30.png)
 
 25. A new tab will be created, and the train model merged to create the new web service. 
 
 26. In the menu at the bottom of the page click **Save**, then click **Run**. You will see the status updated in the top-right corner of the experiment canvas.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-31.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-31.png)
 
 27. Once it has finished running, a **Deploy Web Service** button will appear at the bottom of the page. You are ready to deploy the web service. Click **Deploy Web Service** (Classic) in the menu at the bottom of the page.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-32.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-32.png)
 
     > Your browser may prompt to allow a pop-up, which you should **allow**, though you may need to press **Deploy Web Service** again, if the deploy page does not show. 
 
 28. Once the Experiment has been created you will be redirected to a **Dashboard** page where you will have your **API Key** displayed. Copy it into a notepad for the moment, you will need it in your code very soon. Once you have noted your API Key, click on the **REQUEST/RESPONSE** button in the **Default Endpoint** section underneath the Key.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-33.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-33.png)
 
     > [!NOTE] 
     > If you click Test in this page, you will be able to enter input data and view the output. Enter the **day** and **hour**. Leave the **product** entry blank. Then click the **Confirm** button. The output on the bottom of the page will show the JSON representing the likelihood of each product being the choice.
 
-29. A new web page will open up, displaying the instructions and some examples about the Request structure required by the Machine Learning Studio. Copy the **Request URI** displayed in this page, into your notepad.
+29. A new web page will open up, displaying the instructions and some examples about the Request structure required by the Machine Learning Studio (classic). Copy the **Request URI** displayed in this page, into your notepad.
 
-    ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-34.png)
+    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-34.png)
 
 You have now built a machine learning system that provides the most likely product to be sold based on historical purchasing data, correlated with the time of the day and day of the year.
 
@@ -643,9 +643,9 @@ To create this class:
     > [!IMPORTANT]
     > Make sure to insert the **primary key** and **request-response endpoint**, from the Machine Learning Portal, into the variables here. The below images show where you would have taken the key and endpoint from. 
     >  
-    > ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-53-1.png)
+    > ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-53-1.png)
     >
-    > ![The Machine Learning Studio: The Experiment](images/AzureLabs-Lab7-53-2.png)
+    > ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-53-2.png)
 
 8.  Insert this code within the **Start()** method. The **Start()** method is called when the class initializes:
 
