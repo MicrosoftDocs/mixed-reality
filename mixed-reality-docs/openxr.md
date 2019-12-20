@@ -80,7 +80,7 @@ After building an OpenXR UWP app package, you can [deploy that package](using-vi
 
 You can see an example of the best practices below in BasicXrApp's [OpenXRProgram.cpp](https://github.com/microsoft/OpenXR-SDK-VisualStudio/blob/master/samples/BasicXrApp/OpenXrProgram.cpp) file. The Run() function at the beginning captures a typical OpenXR app code flow from initialization to the event and rendering loop.
 
-### Select a pixel format
+### Select a swapchain format
 
 Always enumerate supported pixel formats using `xrEnumerateSwapchainFormats`, and choose the first color and depth pixel format from the runtime that the app supports, because that's what the runtime prefers. Note, on HoloLens 2, `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` and `DXGI_FORMAT_D16_UNORM` is typically the first choice to achieve better rendering performance. This preference can be different on VR headsets running on a Desktop PC.  
   
@@ -145,9 +145,7 @@ That will keep that hologram independently stable over time.
 ### Support mixed reality capture
 
 Although HoloLens 2's primary display uses additive environment blending, when the user initiates [mixed reality capture](mixed-reality-capture-for-developers.md), the app's rendering content will be alpha-blended with the environment video stream.
-To achieve the best visual quality in mixed reality capture videos, it's best to set the `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` in your projection layer's `layerFlags`.  
-
-**Performance Warning:** Omitting the `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` flag on the single projection layer will result in runtime post-processing which comes at a significant performance penalty.
+To achieve the best visual quality in mixed reality capture videos, it's best to set the `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` in your projection layer's `layerFlags`.
 
 ### Avoid quad layers
 
@@ -161,7 +159,6 @@ On HoloLens 2, there are a number of ways to submit composition data through `xr
 To avoid performance penalities, [submit a single `XrCompositionProjectionLayer`](#use-a-single-projection-layer) with the following characteristics:
 * [Use a texture array swapchain](#render-with-texture-array-and-vprt)
 * [Use the primary color swapchain format](#select-a-pixel-format)
-* [Set the texture-source-alpha blending flag](#support-mixed-reality-capture)
 * [Use the recommended view dimensions](#render-with-recommended-rendering-parameters-and-frame-timing)
 * Do not set the `XR_COMPOSITION_LAYER_UNPREMULTIPLIED_ALPHA_BIT` flag
 * Set the `XrCompositionLayerDepthInfoKHR` `minDepth` to 0.0f and `maxDepth` to 1.0f
