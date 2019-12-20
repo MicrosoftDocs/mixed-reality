@@ -3,7 +3,7 @@ title: Using Vuforia with Unity
 description: Leverage Vuforia to build Windows Mixed Reality applications in Unity.
 author: thetuvix
 ms.author: alexturn
-ms.date: 01/28/2019
+ms.date: 12/20/2019
 ms.topic: article
 keywords: Vuforia, markers, coordinates, frame of reference, tracking
 ---
@@ -77,7 +77,7 @@ Vuforia Engine automatically fuses the poses from camera tracking and HoloLens's
 Since the process is handled automatically, it does not require any programming by the developer.
 
 
-**Here is what occurs...**
+**The following is a high-level description of the process:**
 1. Vuforia’s target Tracker recognizes the target
 2. Target tracking is then initialized
 3. The position and rotation of the target are analyzed to provide a robust pose estimate for HoloLens
