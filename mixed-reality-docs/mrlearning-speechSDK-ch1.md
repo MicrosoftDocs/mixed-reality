@@ -10,6 +10,8 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 1. Integrating and using speech recognition and transcription
 
+## Overview
+
 This tutorial creates a Mixed Reality application that explores the use of Azure Cognitive Services Speech SDK with the HoloLens 2. When finished with this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Speech SDK’s Intent feature to understand voice commands using artificial intelligence.
 
 ## Objectives
@@ -18,9 +20,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 - Learn how to use voice commands
 - Learn how to use speech-to-text capabilities
 
-## Instructions
-
-### Getting Started
+## Getting Started
 
 1. Start Unity, and create a new project. Enter the project name Speech SDK Learning Module. Choose a location for where to save your project. Then click Create Project.
 
@@ -124,7 +124,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![Module4Chapter1step18im](images/module4chapter1step22im.PNG)
 
-### Build your application to your device
+## Build your application to your device
 
 1. Open the build settings window again by going to File>Build Settings.
 
