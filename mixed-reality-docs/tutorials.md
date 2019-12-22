@@ -408,7 +408,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 307: Machine learning</h3>
-                                              <p>Leverage Azure Machine Learning Studio within your mixed reality app to deploy a large number of machine learning (ML) algorithms.</p>
+                                              <p>Leverage Azure Machine Learning Studio (classic) within your mixed reality app to deploy a large number of machine learning (ML) algorithms.</p>
                                           </div>
                                       </div>
                                   </div>
