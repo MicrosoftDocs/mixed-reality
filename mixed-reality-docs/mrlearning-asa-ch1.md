@@ -27,9 +27,17 @@ In the third tutorial, [Displaying Azure Spatial Anchor feedback](mrlearning-asa
 
 ## Prerequisites
 
-* Meet the requirements listed in the [Prerequisites](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#prerequisites) section of the  [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial.
+>[!TIP]
+>If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
+
+* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* Windows 10 SDK 10.0.18362.0 or later
+* Some basic C# programming ability
+* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 * Complete the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial.
-* If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
+
+>[!IMPORTANT]
+>This tutorial series requires <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity 2019.1</a> and the recommended version is Unity 2019.1.14. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating the Unity project
 

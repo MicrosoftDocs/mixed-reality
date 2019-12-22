@@ -10,17 +10,30 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 1. Integrating and using speech recognition and transcription
 
+## Overview
+
 This tutorial creates a Mixed Reality application that explores the use of Azure Cognitive Services Speech SDK with the HoloLens 2. When you complete this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Speech SDK’s Intent feature to understand voice commands using artificial intelligence.
 
 ## Objectives
 
-- Learn how to integrate the Azure Speech SDK into a HoloLens 2 application
-- Learn how to use voice commands
-- Learn how to use speech-to-text capabilities
+* Learn how to integrate the Azure Speech SDK into a HoloLens 2 application
+* Learn how to use voice commands
+* Learn how to use speech-to-text capabilities
 
-## Instructions
+## Prerequisites
 
-### Getting Started
+>[!TIP]
+>If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
+
+* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* Windows 10 SDK 10.0.18362.0 or later
+* Some basic C# programming ability
+* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+
+>[!IMPORTANT]
+>This tutorial series requires <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity 2019.1</a> and the recommended version is Unity 2019.1.14. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+
+## Getting Started
 
 1. Start Unity, and create a new project. Enter the project name Speech SDK Learning Module. Choose a location for where to save your project. Click Create Project.
 
@@ -124,7 +137,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![Module4Chapter1step18im](images/module4chapter1step22im.PNG)
 
-### Build your application to your device
+## Build your application to your device
 
 1. Open the build settings window again by going to File>Build Settings.
 

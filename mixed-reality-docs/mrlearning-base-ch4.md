@@ -25,9 +25,7 @@ In this tutorial, you will learn about basic 3D content and user experience, suc
 * Explore near and far interaction
 * Learn about additional hand tracking gestures, such as grab and touch
 
-## Instructions
-
-### Organizing 3D Objects in a Collection
+## Organizing 3D Objects in a Collection
 
 1. Right-click on your hierarchy and select Create Empty to create an empty game object, rename it to 3DObjectCollection, and make sure it is positioned at x = 0, y = 0, and z = 0.
 
@@ -65,7 +63,7 @@ In this tutorial, you will learn about basic 3D content and user experience, suc
     >[!NOTE]
     >You might notice that some of the objects are off-center, such as the objects in the image above. This is because prefabs or objects may have child objects that are not aligned. Feel free to make any necessary adjustments to object positions or child object positions to achieve a well-aligned grid.
 
-### Manipulating 3D Objects
+## Manipulating 3D Objects
 
 1. Add the ability to manipulate a cube. To add the ability to manipulate 3D objects, do the following:
     * Select the 3D object you want to manipulate in your hierarchy (i.e. one of your cubes).
@@ -127,7 +125,7 @@ In this tutorial, you will learn about basic 3D content and user experience, suc
     >[!NOTE]
     >This setting is useful for scenarios, such as creating a ball that you can throw. Keeping the appropriate velocity and angular velocity to ensure that once the ball is released, it will continue to move at the velocity it was released at; similar to how a physical ball would behave.
 
-### Adding Bounding Boxes
+## Adding Bounding Boxes
 
 Bounding boxes make it easier and more intuitive to manipulate objects with one hand for both direct manipulation (near interaction) and ray-based manipulation (far interaction.) Bounding boxes provide handles that can be grabbed for scaling and rotating objects along a specific axis.
 
@@ -175,7 +173,7 @@ Bounding boxes make it easier and more intuitive to manipulate objects with one 
     >[!NOTE]
     >The bounding box visualizations only appear when in play mode.
 
-### Adding touch effects
+## Adding touch effects
 
 In this example, we are going to play a sound effect when you touch an object with your hand.
 

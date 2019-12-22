@@ -20,9 +20,7 @@ In this tutorial, multiple concepts are combined from previous lessons to create
 - Use rigidbody physics and forces
 - Explore the use of tool tips
 
-## Instructions
-
-### Configuring the Lunar Module
+## Configuring the Lunar Module
 
 In this section, we introduce the various components needed to create our sample experience.
 
@@ -33,7 +31,7 @@ In this section, we introduce the various components needed to create our sample
 
     ![Lesson6 Chapter1 Step1im](images/Lesson6_Chapter1_step1im.PNG)
 
-    If you expand the Rocket Launcher_Tutorial game object in your hierarchy and further expand the Lunar Module object, you find several child objects that have a material called "x-ray." The "x-ray" material allows for a slightly translucent color that will be used as placement hints for the user. 
+    If you expand the Rocket Launcher_Tutorial game object in your hierarchy and further expand the Lunar Module object, you find several child objects that have a material called "x-ray." The "x-ray" material allows for a slightly translucent color that will be used as placement hints for the user.
 
     ![Lesson6 Chapter1 Noteaim](images/Lesson6_Chapter1_noteaim.PNG)
 
@@ -76,7 +74,7 @@ In this section, we introduce the various components needed to create our sample
 
     ![Lesson6 Chapter1 Step6im](images/Lesson6_Chapter1_step6im.PNG)
 
-### Lunar Module Parts overview
+## Lunar Module Parts overview
 
 The Lunar Module Parts parent object is the collection of the objects that the user interacts with. The Game object names with scene labeled names in parentheses, are provided in the list below:
 
@@ -101,7 +99,7 @@ The Tool Tip Object is the tool tip label in the scene. When the objects are sna
 
 The Audio Source is automatically grabbed.
 
-### Configuring the Placement Hints button
+## Configuring the Placement Hints button
 
 In [Lesson 2](mrlearning-base-ch2.md), you learned how to place and configure buttons to do things like change the color of an item or make it play a sound when pushed. We will continue to use those principles as we configure our buttons for toggling placement hints.
 
@@ -115,7 +113,7 @@ The goal is to configure our button so that every time the user presses the Plac
 
     ![Lesson6 Chapter3 Step2im](images/Lesson6_Chapter3_step2im.PNG)
 
-### Configuring the Reset button
+## Configuring the Reset button
 
 There will be situations where the user makes a mistake, accidentally throws the object away or just wants to reset the experience. The Reset button adds the ability to restart the experience.
 
@@ -132,7 +130,7 @@ There will be situations where the user makes a mistake, accidentally throws the
     >[!NOTE]
     >Notice that by default, the GameObject.BroadcastMessage is configured to ResetPlacement. This broadcasts a message named ResetPlacement for every child object of the RocketLauncher_Tutorial. Any object that has a method for ResetPlacement() responds to that message by resetting it's position.
 
-### Configuring the Launch button
+## Configuring the Launch button
 
 This section explains how to configure the Launch button, which permits the user to press the button and launch the lunar module into space.
 
@@ -156,6 +154,6 @@ This section explains how to configure the Launch button, which permits the user
 
     ![Lesson6 Chapter5 Step6im](images/Lesson6_Chapter5_step6im.PNG)
 
-### Congratulations
+## Congratulations
 
 You have fully configured this application. Now, when you press play, you can fully assemble the lunar module, toggle hints, launch the lunar module and reset it to start again.
