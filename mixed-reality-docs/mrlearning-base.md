@@ -42,4 +42,7 @@ keywords: mixed reality, unity, tutorial, hololens
 * Some basic C# programming ability
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 
+>[!IMPORTANT]
+>This tutorial series requires <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity 2019.1</a> and the recommended version is Unity 2019.1.14. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+
 [Next lesson: 2. Initializing your project and first application](mrlearning-base-ch1.md)

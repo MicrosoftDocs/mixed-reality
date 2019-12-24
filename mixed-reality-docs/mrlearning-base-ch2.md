@@ -18,9 +18,7 @@ In the previous lesson, you learned about some of the capabilities the Mixed Rea
 * Interact with holograms using UI elements and buttons
 * Basic hand-tracking input and interactions
 
-## Instructions
-
-### How to Configure the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)
+## How to Configure the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)
 
 In this section, you'll learn how to customize and configure the default MRTK profiles by adjusting the display option of the spatial awareness mesh. You may follow these same principles for adjusting any settings or values in the MRTK profiles.
 
@@ -68,7 +66,7 @@ In this section, you'll learn how to customize and configure the default MRTK pr
 
 Congratulations! You just learned how to modify a setting in the MRTK profile. As you can see, in order to modify MRTK settings you need to create copies of the default profiles so that you can edit them. You will always have the default profiles, which are not editable, to go back to if you wanted to create a profile with new settings or you can refer back to the default profiles. There are numerous settings that you can adjust. For full reference to MRTK profile settings, refer to the MRTK documentation here: [https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 
-### Hand Tracking Gestures and Interactable buttons
+## Hand Tracking Gestures and Interactable buttons
 
 In this section, you will learn how to use hand tracking to press a pressable button.
 
@@ -89,7 +87,7 @@ In this section, you will learn how to use hand tracking to press a pressable bu
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step6a.png)
 
-    Now, a cube should be in your display. It will appear very large. You can adjust the coordinates (while Cube is still selected in the hierarchy area) to decrease the size. Set the scale values to x = 0.02, y = 0.02 and z = 0.02. Be sure to position the cube in your scene near the button, but not overlapping with it. In the image below, the cube’s position is x = 0, y = 0.4, and z = 0.2.
+    Now, a cube should be in your display. It will appear very large. You can adjust the coordinates (while Cube is still selected in the hierarchy area) to decrease the size. Set the scale values to x = 0.02, y = 0.02 and z = 0.02. Be sure to position the cube in your scene near the button, but not overlapping with it. In the image below, the cube’s position is x = 0, y = 0.04, and z = 0.2.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step6b.png)
 
@@ -124,7 +122,7 @@ In this section, you will learn how to use hand tracking to press a pressable bu
 
     Now when the button is pressed, it will change to a new color; cyan. When the button is released, it will change back to the default color you specified (e.g., light gray.) Press the Play button on the top of the screen to try it out in the editor or deploy to your HoloLens 2, to test. To learn more about in-editor simulation, including hand simulation, read the [MRTK's simulation documentation page](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html>).
 
-### Creating a panel of buttons using MRTK’s Grid Object Collection
+## Creating a panel of buttons using MRTK’s Grid Object Collection
 
 In this section, you will learn how to automatically align multiple buttons into a neat user interface by using the MRTK’s GridObjectCollection tool.
 
@@ -158,7 +156,7 @@ In this section, you will learn how to automatically align multiple buttons into
     >[!NOTE]
     >Depending on the orientation of the child objects or parent object, you will likely need to adjust the orientation setting differently in future projects. The Cell Width and the Cell Height fields may also need to be defined differently, depending on the size of the objects in your collection.
 
-### Adding Text into Your Scene
+## Adding Text into Your Scene
 
 In this section, you will learn how to add and edit text to your mixed reality experiences. If you haven’t already, ensure you have TextMeshPro enabled in Unity by following the instructions [here](https://docs.unity3d.com/Packages/com.unity.textmeshpro@2.0/manual/index.html#installation).
 

@@ -18,9 +18,7 @@ Holograms come to life in HoloLens 2 when they intuitively follow the user and a
 * Use solvers to have a collection of buttons follow the user
 * Use solvers to have a game object follow the user's tracked hands
 
-## Instructions
-
-### Location of solvers in the MRTK
+## Location of solvers in the MRTK
 
  To find the available solvers in your project, look in the MRTK SDK folder (MixedRealityToolkit.SDK folder). Under the utilities folder, you will see the solvers folder, as shown in the image below.
 
@@ -29,7 +27,7 @@ Holograms come to life in HoloLens 2 when they intuitively follow the user and a
 >[!NOTE]
 >In this lesson, we will only review the implementation of the Orbital solver and the RadialView solver. To learn more about the full range of solvers available in the MRTK, visit: [https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)
 
-### Use a Solver to Follow the User
+## Use a Solver to Follow the User
 
 The goal of this chapter is to enhance the button collection that was previously created so that it follows the user’s gaze direction. In the previous version of the MRTK and HoloToolkit, this was referred to as a tagalong functionality.
 
@@ -45,13 +43,14 @@ The goal of this chapter is to enhance the button collection that was previously
     >When you add the Orbital component you will notice that the system also adds the SolverHandler component, which is a required component.
 
 3. In order to configure the Button Collection to follow the user, we need to implement the following adjustments (refer to the image below):
+
     * In the Orbital script, set the Orientation Type drop-down list to Yaw Only. This makes it so that only one axis of the object rotates as it follows the user.
     * Set the local offset to 0 on all axes. Set the World Offset to x = 0, y = -0.1, and z = 0.6. This locks movement of the object so that when the user changes height, the object will remain at a fixed height in the physical environment, while still allowing it to follow the user as the user moves about the environment. These values may be adjusted to achieve a wide range of behaviors.
     * For a follow behavior whereby the buttons only follow the user’s view after the user turns his or her head sufficiently far, you could select the Use Angle Stepping For World Offset checkbox (Note: This title may be truncated on some screens, as it is in the image below.) For example, to have the object follow the user only every 90 degrees, set the number of steps equal to 4 (marked by a green arrow in the example below).
 
     ![Lesson3 Chapter2 Step3im](images/Lesson3_chapter2_step3im.PNG)
 
-### Enabling objects to follow tracked hands
+## Enabling objects to follow tracked hands
 
 In this section, we will configure the Cube game object previously created to follow the user’s tracked hands using the RadialView solver.
 

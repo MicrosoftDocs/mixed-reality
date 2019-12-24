@@ -72,7 +72,7 @@ This basic gestural command is triggered by using the thumb and index finger to 
 
 ## Transition between near and far
 
-Instead of using specific gestures, such as "pointing with index finger", to direct the ray, we designed the ray coming out from the center of the palm, releasing and reserving the five fingers for more manipulative gestures, such as pinch and grab. With this design, we create only one mental model - the same set of hand gestures are used for both near and far interaction. You can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity based as follows:
+Instead of using specific gestures, such as "pointing with index finger" to direct the ray, we designed the ray coming out from the center of the palm, releasing and reserving the five fingers for more manipulative gestures, such as pinch and grab. With this design, we create only one mental model - the same set of hand gestures are used for both near and far interaction. You can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity-based as follows:
 
 :::row:::
     :::column:::
@@ -198,7 +198,7 @@ The concept of point and commit for far interaction was initially created and de
 ---
 
 ## Hand ray in MRTK(Mixed Reality Toolkit) for Unity
-By default, MRTK provides a hand ray prefab([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) which has the same visual state as the shell's system hand ray. It is assigned in MRTK's Input profile, under Pointers. In Windows Mixed Reality immersive headset, the same rays are used for the motion controllers as well.
+By default, MRTK provides a hand ray prefab([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) which has the same visual state as the shell's system hand ray. It is assigned in MRTK's Input profile, under Pointers. In Windows Mixed Reality immersive headset, the same rays are used for the motion controllers, as well.
 
 * [MRTK - Pointer profile](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
 * [MRTK - Input system](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
