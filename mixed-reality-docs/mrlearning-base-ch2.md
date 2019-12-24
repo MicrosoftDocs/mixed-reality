@@ -87,7 +87,7 @@ In this section, you will learn how to use hand tracking to press a pressable bu
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step6a.png)
 
-    Now, a cube should be in your display. It will appear very large. You can adjust the coordinates (while Cube is still selected in the hierarchy area) to decrease the size. Set the scale values to x = 0.02, y = 0.02 and z = 0.02. Be sure to position the cube in your scene near the button, but not overlapping with it. In the image below, the cube’s position is x = 0, y = 0.4, and z = 0.2.
+    Now, a cube should be in your display. It will appear very large. You can adjust the coordinates (while Cube is still selected in the hierarchy area) to decrease the size. Set the scale values to x = 0.02, y = 0.02 and z = 0.02. Be sure to position the cube in your scene near the button, but not overlapping with it. In the image below, the cube’s position is x = 0, y = 0.04, and z = 0.2.
 
     ![MR213_BuildSettings](images/mrlearning-base-ch2-2-step6b.png)
 
