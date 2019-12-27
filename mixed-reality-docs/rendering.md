@@ -12,7 +12,7 @@ keywords: rendering, hologram
 
 # Rendering
 
-Holographic rendering enables your application to draw a hologram in a precise location in the world around the user, whether it's precisely placed in the physical world or within a virtual realm you've created. [Holograms](hologram.md) are objects made of sound and light. Rendering enables your application to add the light.
+Holographic rendering enables your application to draw a hologram at a precise location in the world around the user, whether it's precisely placed in the physical world or within a virtual realm you've created. [Holograms](hologram.md) are objects made of sound and light. Rendering enables your application to add the light.
 
 ## Device support
 
@@ -39,21 +39,21 @@ Holographic rendering enables your application to draw a hologram in a precise l
 
 ## Holographic rendering
 
-Key to holographic rendering is knowing whether you are rendering to a see-through display like HoloLens that lets the user see both the physical world and your holograms together--or an opaque display like a Windows Mixed Reality immersive headset that blocks out the world.
+Key to holographic rendering is knowing whether you are rendering to a see-through display like HoloLens that lets the user see both the physical world and your holograms together, or an opaque display like a Windows Mixed Reality immersive headset that blocks out the world.
 
-Devices with **see-through displays**, such [HoloLens](hololens-hardware-details.md), add light to the world. Black pixels are fully transparent, while brighter pixels are increasingly opaque. Because the light from the displays is added to the light from the real world, white pixels are somewhat translucent.
+Devices with **see-through displays**, such as [HoloLens](hololens-hardware-details.md), add light to the world. Black pixels are fully transparent, while brighter pixels are increasingly opaque. Because the light from the displays is added to the light from the real world, white pixels are somewhat translucent.
 
 While stereoscopic rendering provides one depth cue for your holograms, adding [grounding effects](interaction-fundamentals.md) can help users see more easily what surface a hologram is near. One grounding technique is to add a glow around a hologram on the nearby surface, and then render a shadow against this glow. In this way, your shadow appears to subtract light from the environment. [Spatial sound](spatial-sound.md) is another extremely important depth cue, letting users reason about the distance and relative location of a hologram.
 
-Devices with **opaque displays**, like [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md), block out the world. Black pixels are solid black, and any other color appear as that color to the user. Your application is responsible for rendering everything the user sees. This makes it even more important to maintain a constant refresh rate so that users have a comfortable experience.
+Devices with **opaque displays**, like [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md), block out the world. Black pixels are solid black, and any other color appears as that color to the user. Your application is responsible for rendering everything the user sees. This makes it even more important to maintain a constant refresh rate so that users have a comfortable experience.
 
 ## Predicted rendering parameters
 
-Mixed reality headsets (both HoloLens and immersive headsets) continually track the position and orientation of the user's head relative to their surroundings. As your application begins preparing its next frame, the system predicts where the user's head will be in the future at the exact moment that the frame shows up on the displays. Based on this prediction, the system calculates the view and projection transforms to use for that frame. Your application **must use these transforms to produce correct results**; if system-supplied transforms are not used, the resulting image will not align with the real world, leading to user discomfort.
+Mixed reality headsets (both HoloLens and immersive headsets) continually track the position and orientation of the user's head relative to their surroundings. As your application begins preparing its next frame, the system predicts where the user's head will be in the future at the exact moment that the frame shows up on the displays. Based on this prediction, the system calculates the view and the projection transforms to use for that frame. Your application **must use these transforms to produce correct results**; if system-supplied transforms are not used, the resulting image will not align with the real world, leading to user discomfort.
 
 Note that to accurately predict when a new frame will reach the displays, the system is constantly measuring the effective end-to-end latency of your application's rendering pipeline. While the system adjusts to the length of your rendering pipeline, you can improve hologram stability by keeping that pipeline as short as possible.
 
-Applications that use advanced techniques to augment the system prediction can override the system view and projection transforms. These applications must must still use system-supplied transforms as a basis for their custom transforms in order to produce meaningful results.
+Applications that use advanced techniques to augment the system prediction can override the system view and projection transforms. These applications must still use system-supplied transforms as a basis for their custom transforms in order to produce meaningful results.
 
 ## Other rendering parameters
 
@@ -71,9 +71,9 @@ Refer to [Rendering in DirectX](rendering-in-directx.md) article for low-level d
 
 ## Holographic cameras
 
-Windows Mixed Reality introduces the concept of a **holographic camera**. Holographic cameras are similar to the traditional camera found in 3D graphics texts: they define both the extrinsic (position and orientation) and intrinsic camera properties. (For example:, field-of-view is used to view a virtual 3D scene.) Unlike traditional 3D cameras, the application is not in control of the position, orientation, and intrinsic properties of the camera. Rather, the position and orientation of the holographic camera is implicitly controlled by the user's movement. The user's movement is relayed to the application on a frame-by-frame basis via a view transform. Likewise, the camera's intrinsic properties are defined by the device's calibrated optics and relayed frame-by-frame via the projection transform.
+Windows Mixed Reality introduces the concept of a **holographic camera**. Holographic cameras are similar to the traditional camera found in 3D graphics texts; they define both the extrinsic (position and orientation) and intrinsic camera properties. (For example:, field-of-view is used to view a virtual 3D scene.) Unlike traditional 3D cameras, the application is not in control of the position, orientation, and intrinsic properties of the camera. Rather, the position and orientation of the holographic camera is implicitly controlled by the user's movement. The user's movement is relayed to the application on a frame-by-frame basis via a view transform. Likewise, the camera's intrinsic properties are defined by the device's calibrated optics and relayed frame-by-frame via the projection transform.
 
-In general your application will render for a single stereo camera. However, a robust rendering loop will support multiple cameras, and will support both mono and stereo cameras. For example, the system might ask your application to render from an alternate perspective when the user activates a feature like [mixed reality capture](mixed-reality-capture.md) (MRC), depending on the shape of the headset in question. Applications that can support multiple cameras get them by [opting-in](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) to the [kind](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) of cameras they can support.
+In general, your application will render for a single stereo camera. However, a robust rendering loop will support multiple cameras, and will support both mono and stereo cameras. For example, the system might ask your application to render from an alternate perspective when the user activates a feature like [mixed reality capture](mixed-reality-capture.md) (MRC), depending on the shape of the headset in question. Applications that can support multiple cameras get them by [opting-in](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) to the [kind](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) of cameras they can support.
 
 ## Volume rendering
 
@@ -89,7 +89,7 @@ When rendering medical MRIs or engineering volumes in 3D, [volume rendering](vol
 ## Supported resolutions on HoloLens 2
 
 * The current and maximum supported render target sizes are properties of the [view configuration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration). HoloLens 2 is set to the maximum render target size, which is 1440x936, by default.
-* Apps can change the size of render target buffers by calling the RequestRenderTargetSize method to request a new render target size. A new render target size will be chosen which meets or exceeds the requested render target size. This API changes the size of the render target buffer, which requires memory reallocation on the GPU. The implications of this include: The render target size can be scaled down to reduce memory pressure on the GPU, and this method should not be called at high frequency.
+* Apps can change the size of render target buffers by calling the RequestRenderTargetSize method to request a new render target size. A new render target size will be chosen, which meets or exceeds the requested render target size. This API changes the size of the render target buffer, which requires memory reallocation on the GPU. The implications of this include: The render target size can be scaled down to reduce memory pressure on the GPU, and this method should not be called at high frequency.
 * Apps can still change the viewport size in the same way that they did for HoloLens 1. This does not cause memory reallocation on the GPU, so it can be changed at high frequency, but it cannot be used to reduce memory pressure on the GPU.
 * The lowest supported viewport size on HoloLens 2 is 634x412. This is a ViewportScaleFactor of approximately 0.44 when the default render target size is in use.
 * If a render target size is provided which is smaller than the lowest supported viewport size, the viewport scale factor will be ignored.
