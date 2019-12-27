@@ -10,26 +10,39 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 1. Integrating and using speech recognition and transcription
 
-This tutorial creates a Mixed Reality application that explores the use of Azure Cognitive Services Speech SDK with the HoloLens 2. When finished with this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Speech SDK’s Intent feature to understand voice commands using artificial intelligence.
+## Overview
+
+This tutorial creates a Mixed Reality application that explores the use of Azure Cognitive Services Speech SDK with the HoloLens 2. When you complete this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Speech SDK’s Intent feature to understand voice commands using artificial intelligence.
 
 ## Objectives
 
-- Learn how to integrate the Azure Speech SDK into a HoloLens 2 application
-- Learn how to use voice commands
-- Learn how to use speech-to-text capabilities
+* Learn how to integrate the Azure Speech SDK into a HoloLens 2 application
+* Learn how to use voice commands
+* Learn how to use speech-to-text capabilities
 
-## Instructions
+## Prerequisites
 
-### Getting Started
+>[!TIP]
+>If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
 
-1. Start Unity, and create a new project. Enter the project name Speech SDK Learning Module. Choose a location for where to save your project. Then click Create Project.
+* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* Windows 10 SDK 10.0.18362.0 or later
+* Some basic C# programming ability
+* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+
+>[!IMPORTANT]
+>This tutorial series requires <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity 2019.1</a> and the recommended version is Unity 2019.1.14. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+
+## Getting Started
+
+1. Start Unity, and create a new project. Enter the project name Speech SDK Learning Module. Choose a location for where to save your project. Click Create Project.
 
     ![Module2Chapter3step1im](images/module4chapter1step1im.PNG)
 
     >[!NOTE]
     >Ensure that the template is set to 3D, as shown in the image above.
 
-2. Download the [Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/releases) Unity [foundation package version 2.1.0](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage) and save it to a folder on your PC. Import the package into your Unity project. For detailed instructions on how to do this, please see the [Getting started tutorials - Lesson 2. Initializing your project and first application](mrlearning-base-ch1.md).
+2. Download the [Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/releases) Unity [foundation package version 2.1.0](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage) and save it to a folder on your PC. Import the package into your Unity project. For detailed instructions on how to do this, see the [Getting started tutorials - Lesson 2. Initializing your project and first application](mrlearning-base-ch1.md).
 
 3. Download and import the Azure [Speech SDK](https://aka.ms/csspeech/unitypackage) for the Unity asset package. Import the Speech SDK package by clicking on Assets, selecting Import package, then selecting Custom Package. Find the Speech SDK package downloaded earlier, and open it to begin the importing process.
 
@@ -37,11 +50,11 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![mrlearning-speech-ch1-1-step3b.png](images/mrlearning-speech-ch1-1-step3b.png)
 
-4. In the next pop-up window, click Import to begin importing the Speech SDK package. Ensure all items are checked as shown in the image below.
+4. In the next pop-up window, click Import to begin importing the Speech SDK package. Ensure all items are checked, as shown in the image below.
 
     ![mrlearning-speech-ch1-1-step4.png](images/mrlearning-speech-ch1-1-step4.png)
 
-5. Download the Speech SDK Module asset pack, also know as Lunarcom package by clicking on [this link](https://github.com/microsoft/MixedRealityLearning/releases/tag/Speech_2). The Lunarcom asset package is a collection of assets and scripts developed for this lesson series to showcase a practical use of Azure's Speech SDK. It is a voice-command terminal that will ultimately interface with the lunar module assembly experience developed in the [Getting started tutorials - Lesson 7. Creating a Lunar Module sample application](mrlearning-base-ch6.md).
+5. Download the Speech SDK Module asset pack, also known as the Lunarcom package, by clicking on [this link](https://github.com/microsoft/MixedRealityLearning/releases/tag/Speech_2). The Lunarcom asset package is a collection of assets and scripts developed for this lesson series to showcase a practical use of Azure's Speech SDK. It is a voice-command terminal that will ultimately interface with the lunar module assembly experience developed in the [Getting started tutorials - Lesson 7. Creating a Lunar Module sample application](mrlearning-base-ch6.md).
 
 6. Import the Lunarcom asset package into your Unity project by following similar steps you took to import the Mixed Reality Toolkit and Speech SDK.
 
@@ -60,7 +73,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
     >[!NOTE]
     >If you press Play on your scene after you add the MRTK to your project, and it doesn't enter play mode, you might need to restart Unity.
 
-9. With the MixedRealityToolkit object selected in your scene hierarchy, click Copy & Customize in the Inspector panel to open the Clone Profile popup. In the Clone Profile popup, enter a suitable name for your custom profile, for example, Custom HoloLens2ConfigurationProfile, and then click Clone to create your custom configuration profile and set it as the active profile.
+9. With the MixedRealityToolkit object selected in your scene hierarchy, click Copy & Customize in the Inspector panel to open the Clone Profile popup. In the Clone Profile popup, enter a suitable name for your custom profile, for example, Custom HoloLens2ConfigurationProfile. Click Clone to create your custom configuration profile and set it as the active profile.
 
     ![mrlearning-speech-ch1-1-step9.png](images/mrlearning-speech-ch1-1-step9.png)
 
@@ -68,7 +81,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![mrlearning-speech-ch1-1-step10.png](images/mrlearning-speech-ch1-1-step10.png)
 
-11. In this tutorial, we are using the input speech commands for speech recognition and transcription. Lets clone the input profile to make changes to speech settings.
+11. In this tutorial, we are using the input speech commands for speech recognition and transcription. Let's clone the input profile to make changes to speech settings.
 
     With the MixedRealityToolkit object still selected in your scene hierarchy, click the small Clone button in the Inspector panel to open the Clone Profile popup. In the Clone Profile popup, enter a suitable name for your custom profile, for example, Custom HoloLens2InputSystemProfile, and then click Clone to create your custom input system profile and set it as the active profile.
 
@@ -78,7 +91,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![mrlearning-speech-ch1-1-step12.png](images/mrlearning-speech-ch1-1-step12.png)
 
-13. Now under Speech section, go to General Settings and change Start Behavior to Manual Start.
+13. Under the Speech section, go to General Settings and change Start Behavior to Manual Start.
 
     ![mrlearning-speech-ch1-1-step13.png](images/mrlearning-speech-ch1-1-step13.png)
 
@@ -94,7 +107,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![Module4Chapter1step13im](images/module4chapter1step13im.PNG)
 
-17. To connect our application to Azure Cognitive Services, you must enter a subscription key (also known as an API Key), for the Speech Service. Follow the instructions at [here](https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started) to obtain a free subscription key. Once you obtain the subscription key, enter it into the Speech Service API Key field of the LunarcomController component in the Inspector panel as shown in the image below.
+17. To connect our application to Azure Cognitive Services, you must enter a subscription key (also known as an API Key), for the Speech Service. Follow the instructions at [here](https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started) to obtain a free subscription key. Once you obtain the subscription key, enter it into the Speech Service API Key field of the LunarcomController component in the Inspector panel, as shown in the image below.
 
 18. Enter the Region that you chose when you signed up for the subscription key into the Speech Service Region field of the LunarcomController component in the Inspector panel. For example, for the region West US type in "westus".
 
@@ -102,7 +115,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 19. In your hierarchy, expand the Lunarcom_Base object by clicking the arrow to the left of it. Then do the same for its child object, "Terminal, as shown in the image below.
 
-20. While Lunarcom_Base is selected, click and drag Lunarcom Text from the hierarchy to the Output Text slot in the LunarcomController component in the Inspector panel as shown in the image below.
+20. While Lunarcom_Base is selected, click and drag Lunarcom Text from the hierarchy to the Output Text slot in the LunarcomController component in the Inspector panel, as shown in the image below.
 
 21. Do the same thing with the Terminal object into the Terminal slot and the Connection Light object to the Connection Light Controller slot.
 
@@ -124,7 +137,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![Module4Chapter1step18im](images/module4chapter1step22im.PNG)
 
-### Build your application to your device
+## Build your application to your device
 
 1. Open the build settings window again by going to File>Build Settings.
 
@@ -145,17 +158,17 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
     ![mrlearning-speach-ch1-2-step6](images/mrlearning-speach-ch1-2-step6.jpg)
 
     >[!NOTE]
-    >If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)", then you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com//windows/downloads/windows-10-sdk>)
+    >If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)", you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com//windows/downloads/windows-10-sdk>)
 
-7. After the build is completed, open the newly created folder containing your newly built application files. Double click on the “.sln” solution file to open the solution file in Visual Studio.
+7. After the build is completed, open the newly created folder containing your newly built application files. Double-click on the “.sln” solution file to open the solution file in Visual Studio.
 
     >[!NOTE]
-    >Be sure to open the newly created folder (i.e., the "App" folder, if following the naming conventions from the previous steps), as there will be a similarly named .sln file outside of that folder that is not to be confused with the .sln file inside the build folder. 
+    >Be sure to open the newly created folder (i.e., the "App" folder, if following the naming conventions from the previous steps), as there will be a similarly named .sln file outside of that folder that is different from the .sln file inside the build folder. 
 
     ![mrlearning-speach-ch1-2-step7](images/mrlearning-speach-ch1-2-step7.jpg)
 
     >[!NOTE]
-    >If Visual Studio asks you to install new components, please take a moment to ensure that all prerequisite components are installed as specified in [the "Install the Tools" page](install-the-tools.md)
+    >If Visual Studio asks you to install new components, ensure that all prerequisite components are installed as specified in [the "Install the Tools" page](install-the-tools.md)
 
 8. Plug your HoloLens 2 into your PC with the USB cable. While these lesson instructions assume you will be deploying a testing with a HoloLens 2 device, you may also choose to deploy to the [HoloLens 2 emulator](using-the-hololens-emulator.md) or choose to create an [app package for sideloading](<https://docs.microsoft.com//windows/uwp/packaging/packaging-uwp-apps>)
 
@@ -171,6 +184,6 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 ## Congratulations
 
-You've set up voice recognition in your application, powered by Azure. Run the application to ensure all functions and features are working properly. Start with saying the wake word you typed in Step 22, Activate Terminal. Select the Microphone button to start voice recognition. Begin speaking. You will see your words transcribed in the terminal as you speak. Press the Microphone button a second time to stop voice recognition. Say Dismiss Terminal to hide the Lunarcom terminal. In the next lesson, we'll learn how to dynamically switch to using device-powered voice recognition for situations where Azure's speech SDK isn't available due to the HoloLens 2 being offline.
+You've set up voice recognition in your application, powered by Azure. Run the application to ensure all functions and features are working properly. Start with saying the wake word you typed in Step 22, Activate Terminal. Select the Microphone button to start voice recognition. Begin speaking. You will see your words transcribed in the terminal as you speak. Press the Microphone button a second time to stop voice recognition. Say Dismiss Terminal to hide the Lunarcom terminal. In the next lesson, you'll learn how to dynamically switch to using device-powered voice recognition for situations where Azure's speech SDK isn't available due to the HoloLens 2 being offline.
 
 [Next tutorial: 2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)

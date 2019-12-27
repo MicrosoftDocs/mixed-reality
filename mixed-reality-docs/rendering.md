@@ -80,17 +80,21 @@ In general your application will render for a single stereo camera. However, a r
 When rendering medical MRIs or engineering volumes in 3D, [volume rendering](volume-rendering.md) techniques are often used. These techniques can be particularly interesting in mixed reality, where users can naturally view such a volume from key angles, simply by moving their head.
 
 ## Supported resolutions on HoloLens (1st gen)
-> [!NOTE]
-> More updates are forthcoming. [View the update list](release-notes-april-2018.md)
 
-* The current and maximum supported resolutions are properties of the [view configuration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration). HoloLens is set to the maximum resolution, which is 720p (1268x720), by default.
-* The lowest supported viewport size is 50% of 720p, which is 360p (634x360). On HoloLens, this is a ViewportScaleFactor of 0.5.
-* Anything lower than 540p is **not recommended** due to visual degradation, but can be used to identify bottle necks in pixel fill rate.
+* The max viewport size is a property of the [HolographicDisplay](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay). HoloLens is set to the maximum viewport size, which is 720p (1268x720), by default.
+* The viewport size can be changed by setting the ViewportScaleFactor on the HolographicCamera. This scale factor is in the range of 0 to 1.
+* The lowest supported viewport size on HoloLens (1st gen) is 50% of 720p, which is 360p (634x360). This is a ViewportScaleFactor of 0.5.
+* Anything lower than 540p is not recommended due to visual degradation, but can be used to identify bottlenecks in pixel fill rate.
 
 ## Supported resolutions on HoloLens 2
 
-> [!NOTE]
-> More guidance specific to HoloLens 2 [coming soon](news.md).
+* The current and maximum supported render target sizes are properties of the [view configuration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration). HoloLens 2 is set to the maximum render target size, which is 1440x936, by default.
+* Apps can change the size of render target buffers by calling the RequestRenderTargetSize method to request a new render target size. A new render target size will be chosen which meets or exceeds the requested render target size. This API changes the size of the render target buffer, which requires memory reallocation on the GPU. The implications of this include: The render target size can be scaled down to reduce memory pressure on the GPU, and this method should not be called at high frequency.
+* Apps can still change the viewport size in the same way that they did for HoloLens 1. This does not cause memory reallocation on the GPU, so it can be changed at high frequency, but it cannot be used to reduce memory pressure on the GPU.
+* The lowest supported viewport size on HoloLens 2 is 634x412. This is a ViewportScaleFactor of approximately 0.44 when the default render target size is in use.
+* If a render target size is provided which is smaller than the lowest supported viewport size, the viewport scale factor will be ignored.
+* Anything lower than 540p is not recommended due to visual degradation, but can be used to identify bottlenecks in pixel fill rate.
+
 
 
 ## See also

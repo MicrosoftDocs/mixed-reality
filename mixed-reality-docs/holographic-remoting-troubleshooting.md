@@ -3,7 +3,7 @@ title: Holographic Remoting troubleshooting and limitations
 description: Troubleshooting steps for Holographic Remoting on HoloLens 2.
 author: FlorianBagarMicrosoft
 ms.author: flbagar
-ms.date: 10/28/2019
+ms.date: 12/17/2019
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, troubleshoot, help
 ---
@@ -28,13 +28,23 @@ The following APIs are currently **not** supported when using Holographic Remoti
 [Windows.Graphics.Holographic](https://docs.microsoft.com/uwp/api/windows.graphics.holographic)
 
 * [HolographicCamera.ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration)
+  - Supported starting with version [2.0.18](holographic-remoting-version-history.md#v2.0.18)
+  - On previous versions always raises an error.
+* [HolographicViewConfiguration.RequestRenderTargetSize](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
+  - Does not fail, but the render target size will not be changed.
 * [HolographicCameraPose.OverrideProjectionTransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideprojectiontransform)
 * [HolographicCameraPose.OverrideViewport](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewport)
 * [HolographicCameraPose.OverrideViewTransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewtransform)
 * [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
   - Does not fail but depth buffer will not be remoted.
 * [HolographicDisplay.TryGetViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
+  - Querying HolographicViewConfigurationKind.PhotoVideoCamera will always return a ```nullptr```.
+  - Supported starting with version [2.0.18](holographic-remoting-version-history.md#v2.0.18)
+  - On previous versions always raises an error.
 * [HolographicSpace.CreateFramePresentationMonitor](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createframepresentationmonitor)
+* [HolographicDisplay.GetDefault](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.getdefault#Windows_Graphics_Holographic_HolographicDisplay_GetDefault)
+  - Will report an error if called before a connection was established.
+
 
 [Windows.Perception.Spatial](https://docs.microsoft.com/uwp/api/windows.perception.spatial)
 
