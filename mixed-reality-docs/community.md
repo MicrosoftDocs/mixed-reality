@@ -12,13 +12,13 @@ keywords: Mixed Reality, community, mvp, meetup
 
 # Mixed Reality Community
 
-At Microsoft, we believe that having access to strong communities is essential for the growth of developers, platforms, and ecosystems.  
+At Microsoft, we believe that having access to strong communities is essential for the growth of developers, platforms, and ecosystems.  This page is meant to help developers find the many places they can take part in communities, as well as introduce you to some of the team and community members who are here to help you.
 
 ## Online Communities
 
 |Community Name  |Link  |Description  |
 |---------|---------|---------|
-|HoloDevelopers Slack|[Join Here](https://aka.ms/holodevelopers)||
+|HoloDevelopers Slack|[Join Here](https://aka.ms/holodevelopers)|The HoloDevelopers Slack was initially created as a place for developers exploring HoloLens to get to know one another, form friendships, build trust, and get help from each other.  It has grown into a thriving community that is still focused on these, but conversations that happen there cover the spectrum of mixed reality across many platforms, devices, and companies.|
 |Stack Overflow|[MR Questions](https://stackoverflow.com/questions/tagged/windows-mixed-reality)||
 |Reddit WMR Headsets|[WMR subreddit](https://www.reddit.com/r/WindowsMR/)|         |
 |Reddit HoloLens|[HoloLens subreddit](https://www.reddit.com/r/HoloLens/)|         |
