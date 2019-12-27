@@ -3,7 +3,7 @@ title: Community
 description: Documents our online, local, Microsoft, and MVP communities
 author: jessemcculloch    
 ms.author: jemccull
-ms.date: 12/4/2019
+ms.date: 12/27/2019
 ms.topic: article
 keywords: Mixed Reality, community, mvp, meetup
 ---
