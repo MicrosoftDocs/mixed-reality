@@ -125,7 +125,7 @@ All of the essentials you need to start writing a mixed reality app using Direct
 
 :::row:::
     :::column:::
-       [![Understand the basics](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+       [![Understand the basics](images/icon-lightbulb.png)](index.md#understand-the-basics)<br>
         **[Understand the basics](index.md#understand-the-basics)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::

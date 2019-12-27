@@ -13,7 +13,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 # Start designing and prototyping
 
 
-![3D Mesh art](images/03_Design.png)
+![mixed reality design abstract](images/03_Design.png)
 
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
@@ -106,22 +106,22 @@ Learn about the building blocks for spatial interactions and UI in mixed reality
 
 :::row:::	
     :::column:::	
-       [![Learn Unity](images/unity_logo.png)](https://learn.unity.com/)<br>
+       [![Learn Unity](images/Final_unity_logo.png)](https://learn.unity.com/)<br>
         **[Learn Unity](https://learn.unity.com/)**<br>
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	
     :::column:::	
-        [![Mixed Reality Toolkit (MRTK)](images/MRTK-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
         With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
     :::column-end:::
     :::column:::	
-        [![Mixed Reality Design Labs](images/MRDL_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
         Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
     :::column-end:::		
     :::column:::	
-        [![Microsoft Maquette](images/Maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>	
         Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.	
     :::column-end:::	
@@ -137,7 +137,7 @@ Learn about the building blocks for spatial interactions and UI in mixed reality
 
 :::row:::
     :::column:::
-       [![Understand the basics](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+       [![Understand the basics](images/icon-lightbulb.png)](index.md#understand-the-basics)<br>
         **[Understand the basics](index.md#understand-the-basics)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
