@@ -25,7 +25,7 @@ At Microsoft, we believe that having access to strong communities is essential f
 
 <br>
 
-## Local Communities
+<!-- ## Local Communities
 
 |Community Name|Country|City|Link|
 |---------|---------|---------|---------|
@@ -36,7 +36,7 @@ At Microsoft, we believe that having access to strong communities is essential f
 |Row5     |         |         |         |
 |Row6     |         |         |         |
 
-<br>
+<br> -->
 
 <!-- ## Microsoft Mixed Reality MVP's
 
