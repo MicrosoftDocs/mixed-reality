@@ -44,12 +44,12 @@ At Microsoft, we believe that having access to strong communities is essential f
 
 |||||||
 |---------|---------|---------|---------|---------|---------|
-|![Daniel Escudero](images/BiographyImages/)|**Daniel Escudero**|Title|Bio|San Francisco, Ca|[Email](mailto:daescu@microsoft.com)|
-|![Daniel Gonzalez](images/BiographyImages/)|**Daniel Gonzalez**|Title|Bio|Redmond, Wa|[Email](mailto:dgonza@microsoft.com)|
-|![Jane Fang](images/BiographyImages/)|**Jane Fang**|Title|Bio|San Francisco, Ca|[Email](mailto:jafang@microsoft.com)|
-|![Jesse McCulloch](images/BiographyImages/JesseMcCulloch270x270.png)|**Jesse McCulloch**|Program Manager II|Jesse is a Program Manager on the Mixed Reality Developer Ecosystem team at Microsoft. Starting as a Mixed Reality Developer in 2016, he built up a strong community around HoloLens and Immersive Headsets, and then joined Microsoft in 2018 to help lead efforts in cultivating the developer ecosystem. He is often found hanging out in developer Slack groups, on Twitter trying to keep up with everything going on in this rapidly growing space, or in a big metal tube flying through the air on his way to engage with developers in the real world.|Redmond, Wa|[Email](mailto:jemccull@microsoft.com)|
-|![Jo Ryall](images/BiographyImages/)|**Jo Ryall**|Title|Bio|San Francisco, Ca|[Email](mailto:joryal@microsoft.com)|
-|![Nick Klingensmith](images/BiographyImages/)|**Nick Klingensmith**|Title|Bio|San Francisco, Ca|[Email](mailto:niklinge@microsoft.com)|
+|<!-- ![Daniel Escudero](images/BiographyImages/) -->|**Daniel Escudero**|*MR Academy Lead Designer*|Bio|San Francisco, Ca|[Email](mailto:daescu@microsoft.com)|
+|<!-- ![Daniel Gonzalez](images/BiographyImages/) -->|**Daniel Gonzalez**|*Program Manager II*|Bio|Redmond, Wa|[Email](mailto:dgonza@microsoft.com)|
+|<!-- ![Jane Fang](images/BiographyImages/) -->|**Jane Fang**|*Principal Program Manager Lead*|Bio|San Francisco, Ca|[Email](mailto:jafang@microsoft.com)|
+|![Jesse McCulloch](images/BiographyImages/JesseMcCulloch270x270.png)|**Jesse McCulloch**|*Program Manager II*|Jesse is a Program Manager on the Mixed Reality Developer Ecosystem team at Microsoft. Starting as a Mixed Reality Developer in 2016, he built up a strong community around HoloLens and Immersive Headsets, and then joined Microsoft in 2018 to help lead efforts in cultivating the developer ecosystem. He is often found hanging out in developer Slack groups, on Twitter trying to keep up with everything going on in this rapidly growing space, or in a big metal tube flying through the air on his way to engage with developers in the real world.|Redmond, Wa|[Email](mailto:jemccull@microsoft.com)|
+|<!-- ![Jo Ryall](images/BiographyImages/) -->|**Jo Ryall**|*Head of Marketing, SF Academy*|Bio|San Francisco, Ca|[Email](mailto:joryal@microsoft.com)|
+|<!-- ![Nick Klingensmith](images/BiographyImages/) -->|**Nick Klingensmith**|*MR Academy Lead Engineer*|Bio|San Francisco, Ca|[Email](mailto:niklinge@microsoft.com)|
 
 <br>
 
