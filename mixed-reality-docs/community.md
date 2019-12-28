@@ -55,6 +55,10 @@ At Microsoft, we believe that having access to strong communities is essential f
 
 ## Azure Cloud Advocate Spatial Computing Team
 
+The Azure Cloud Advocates charter is to help every technologist on the planet succeed, be they students or those working in enterprises or startups. They engage in outreach to developers and others in the software ecosystem, all designed to further technical education and proficiency with the Microsoft Cloud + AI platform.
+
+The members listed here are the Cloud Advocates that work on the Spatial Computing team within the Cloud Advocate organization. They work extremely close with the Mixed Reality Developer Ecosystem team, and it's often hard to tell where one team stops, and the other one starts.
+
 More info coming soon....
 
 <br>
