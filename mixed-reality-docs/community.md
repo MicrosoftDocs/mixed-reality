@@ -53,11 +53,11 @@ At Microsoft, we believe that having access to strong communities is essential f
 
 <br>
 
-<!-- ## Azure Cloud Advocate Spatial Computing Team
+## Azure Cloud Advocate Spatial Computing Team
 
-content here
+More info coming soon....
 
-<br> -->
+<br>
 
 ## Microsoft Mixed Reality MVP's
 
