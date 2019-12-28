@@ -18,10 +18,10 @@ At Microsoft, we believe that having access to strong communities is essential f
 
 |Community Name  |Link  |Description  |
 |---------|---------|---------|
-|HoloDevelopers Slack|[Join Here](https://aka.ms/holodevelopers)|The HoloDevelopers Slack was initially created as a place for developers exploring HoloLens to get to know one another, form friendships, build trust, and get help from each other.  It has grown into a thriving community that is still focused on these, but conversations that happen there cover the spectrum of mixed reality across many platforms, devices, and companies.|
-|Stack Overflow|[MR Questions](https://stackoverflow.com/questions/tagged/windows-mixed-reality)||
-|Reddit WMR Headsets|[WMR subreddit](https://www.reddit.com/r/WindowsMR/)|         |
-|Reddit HoloLens|[HoloLens subreddit](https://www.reddit.com/r/HoloLens/)|         |
+|**HoloDevelopers Slack**|[Join Here](https://aka.ms/holodevelopers)|The HoloDevelopers Slack was initially created as a place for developers exploring HoloLens to get to know one another, form friendships, build trust, and get help from each other.  It has grown into a thriving community that is still focused on these, but conversations that happen there cover the spectrum of mixed reality across many platforms, devices, and companies.|
+|**Stack Overflow**|[MR Questions](https://stackoverflow.com/questions/tagged/windows-mixed-reality)||
+|**Reddit WMR Headsets**|[WMR subreddit](https://www.reddit.com/r/WindowsMR/)|         |
+|**Reddit HoloLens**|[HoloLens subreddit](https://www.reddit.com/r/HoloLens/)|         |
 
 <br>
 
@@ -29,7 +29,7 @@ At Microsoft, we believe that having access to strong communities is essential f
 
 |Community Name|Country|City|Link|
 |---------|---------|---------|---------|
-|Chicago AWE Nite     |USA         |Chicago         |[Link](https://www.meetup.com/AWENiteChicago/)         |
+|**Chicago AWE Nite**|USA|Chicago|[Link](https://www.meetup.com/AWENiteChicago/)|
 <!-- 
 |Row2     |         |         |         |
 |Row3     |         |         |         |
