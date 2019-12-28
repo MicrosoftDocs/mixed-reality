@@ -60,6 +60,21 @@ The Azure Cloud Advocates charter is to help every technologist on the planet su
 The members listed here are the Cloud Advocates that work on the Spatial Computing team within the Cloud Advocate organization. They work extremely close with the Mixed Reality Developer Ecosystem team, and it's often hard to tell where one team stops, and the other one starts.
 
 More info coming soon....
+<!--
+|||||||
+|---------|---------|---------|---------|---------|---------|
+|![Adi Polak](images/BiographyImages/)|**Adi Polak**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![April Speight](images/BiographyImages/)|**April Speight**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Aysegul Yonet](images/BiographyImages/)|**Aysegul Yonet**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Cassie Breviu](images/BiographyImages/)|**Cassie Breviu**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Chris Noring](images/BiographyImages/)|**Chris Noring**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Christopher Maneu](images/BiographyImages/)|**Christopher Maneu**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Em Lazer-Walker](images/BiographyImages/)|**Em Lazer-Walker**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Karissa Peth](images/BiographyImages/)|**Karissa Peth**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Madoka Chiyoda](images/BiographyImages/)|**Madoka Chiyoda**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Thomas Lewis](images/BiographyImages/)|**Thomas Lewis**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+|![Vanessa Diaz](images/BiographyImages/)|**Vanessa Diaz**|*Title*|Bio|Location|[Email](mailto:test@microsoft.com)|
+-->
 
 <br>
 
