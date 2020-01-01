@@ -149,16 +149,6 @@
 			"source_path": "mixed-reality-docs/gestures.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/interaction-fundamentals",
 			"redirect_document_id": false
-		},
-		{
-			"source_path": "mixed-reality-docs/hand-ray.md",
-			"redirect_url": "https://docs.microsoft.com/hololens/hololens2-basic-usage",
-			"redirect_document_id": false
-		},
-		{
-			"source_path": "mixed-reality-docs/saving-and-finding-your-files.md",
-			"reidrect_url": "https://docs.microsoft.com/hololens/hololens-find-and-save-files",
-			"redirect_document_id": false
 		}
 	]
 }
