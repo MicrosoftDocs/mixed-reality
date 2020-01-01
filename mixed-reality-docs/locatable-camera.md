@@ -10,7 +10,7 @@ keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer
 
 # Locatable camera
 
-HoloLens includes a world-facing camera mounted on the front of the device which enables apps to see what the user sees. Developers have access to and control of the camera just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has also wrapped these windows APIs](locatable-camera-in-unity.md) to abstract simple usage of the camera on HoloLens for tasks such as taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
+HoloLens includes a world-facing camera mounted on the front of the device, which enables apps to see what the user sees. Developers have access to and control of the camera, just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has also wrapped these windows APIs](locatable-camera-in-unity.md) to abstract simple usage of the camera on HoloLens for tasks such as taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
 
 ## Device camera information
 
@@ -64,11 +64,11 @@ When HoloLens takes photos and videos, the captured frames include the location 
 
 "Camera" elsewhere in HoloLens documentation may refer to the "virtual game camera" (the frustum the app renders to). Unless denoted otherwise, "camera" on this page refers to the real-world RGB color camera.
 
-The details on this page cover using the [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) class, however there are also APIs to pull camera intrinsics and locations using [Media Foundation Attributes](https://msdn.microsoft.com/library/windows/desktop/mt740395(v=vs.85).aspx). Please refer to the [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) for more information.
+The details on this page cover using the [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) class. However, there are also APIs to pull camera intrinsics and locations using [Media Foundation Attributes](https://msdn.microsoft.com/library/windows/desktop/mt740395(v=vs.85).aspx). Refer to the [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) for more information.
 
 ### Images with Coordinate Systems
 
-Each image frame (whether photo or video) includes a [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) rooted at the camera at the time of capture which can be accessed using the [CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) property of your [MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). In addition, each frame contains a description of the camera lens model which can be found in the [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) property. Together, these transforms define for each pixel a ray in 3D space representing the path taken by the photons that produced the pixel. These rays can be related to other content in the app by obtaining the transform from the frame's coordinate system to some other coordinate system (e.g. from a [stationary frame of reference](coordinate-systems.md#stationary-frame-of-reference)). To summarize, each image frame provides the following:
+Each image frame (whether photo or video) includes a [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) rooted at the camera at the time of capture, which can be accessed using the [CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) property of your [MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). In addition, each frame contains a description of the camera lens model, which can be found in the [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) property. Together, these transforms define for each pixel a ray in 3D space representing the path taken by the photons that produced the pixel. These rays can be related to other content in the app by obtaining the transform from the frame's coordinate system to some other coordinate system (e.g. from a [stationary frame of reference](coordinate-systems.md#stationary-frame-of-reference)). To summarize, each image frame provides the following:
 * Pixel Data (in RGB/NV12/JPEG/etc. format)
 * A [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) from the location of capture
 * A [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) class containing the lens mode of the camera
@@ -85,13 +85,13 @@ To go from the 'CameraIntrinsics' and 'CameraCoordinateSystem' to your applicati
 
 On HoloLens, the video and still image streams are undistorted in the system's image processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume image frames represent a perfect pinhole camera.
 
-On HoloLens (first-generation) the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error will not matter, but if you are aligning holograms to real world posters/markers, for example, and you notice a <10px offset (roughly 11mm for holograms positioned 2 meters away) this distortion error could be the cause. 
+On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error will not matter, but if you are aligning holograms to real world posters/markers, for example, and you notice a <10px offset (roughly 11mm for holograms positioned 2 meters away), this distortion error could be the cause. 
 
 ## Locatable Camera Usage Scenarios
 
 ### Show a photo or video in the world where it was captured
 
-The Device Camera frames come with a "Camera To World" transform, that can be used to show exactly where the device was when the image was taken. For example you could position a small holographic icon at this location (CameraToWorld.MultiplyPoint(Vector3.zero)) and even draw a little arrow in the direction that the camera was facing (CameraToWorld.MultiplyVector(Vector3.forward)).
+The Device Camera frames come with a "Camera To World" transform, that can be used to show exactly where the device was when the image was taken. For example, you could position a small holographic icon at this location (CameraToWorld.MultiplyPoint(Vector3.zero)) and even draw a little arrow in the direction that the camera was facing (CameraToWorld.MultiplyVector(Vector3.forward)).
 
 ### Tag / Pattern / Poster / Object Tracking
 
@@ -100,7 +100,7 @@ Many mixed reality applications use a recognizable image or visual pattern to cr
 To recognize a visual pattern, and then place that object in the applications world space, you'll need a few things:
 1. An image pattern recognition toolkit, such as QR code, AR tags, face finder, circle trackers, OCR etc.
 2. Collect image frames at runtime, and pass them to the recognition layer
-3. Unproject their image locations back into world positions, or likely world rays. See
+3. Unproject their image locations back into world positions, or likely world rays. 
 4. Position your virtual models over these world locations
 
 Some important image processing links:
@@ -109,7 +109,7 @@ Some important image processing links:
 * [FaceSDK](https://research.microsoft.com/projects/facesdk/)
 * [Microsoft Translator](https://www.microsoft.com/translator/business)
 
-Keeping an interactive application frame-rate is critical, especially when dealing with long-running image recognition algorithms. For this reason we commonly use the following pattern:
+Keeping an interactive application frame-rate is critical, especially when dealing with long-running image recognition algorithms. For this reason, we commonly use the following pattern:
 1. Main Thread: manages the camera object
 2. Main Thread: requests new frames (async)
 3. Main Thread: pass new frames to tracking thread
@@ -117,7 +117,7 @@ Keeping an interactive application frame-rate is critical, especially when deali
 5. Main Thread: moves virtual model to match found key points
 6. Main Thread: repeat from step 2
 
-Some image marker systems only provide a single pixel location (others provide the full transform in which case this section will not be needed), which equates to a ray of possible locations. To get to a single 3d location we can then leverage multiple rays and find the final result by their approximate intersection. To do this you'll need to:
+Some image marker systems only provide a single pixel location (others provide the full transform in which case this section will not be needed), which equates to a ray of possible locations. To get to a single 3d location, we can then leverage multiple rays and find the final result by their approximate intersection. To do this, you'll need to:
 1. Get a loop going collecting multiple camera images
 2. Find the associated feature points, and their world rays
 3. When you have a dictionary of features, each with multiple world rays, you can use the following code to solve for the intersection of those rays:
@@ -140,7 +140,7 @@ public static Vector3 ClosestPointBetweenRays(
  }
 ```
 
-Given two or more tracked tag locations, you can position a modelled scene to fit the users current scenario. If you can't assume gravity, then you'll need three tag locations. In many cases we use a simple color scheme where white spheres represent real-time tracked tag locations, and blue spheres represent modelled tag locations, this allows the user to visually gauge the alignment quality. We assume the following setup in all our applications:
+Given two or more tracked tag locations, you can position a modelled scene to fit the user's current scenario. If you can't assume gravity, then you'll need three tag locations. In many cases, we use a simple color scheme where white spheres represent real-time tracked tag locations, and blue spheres represent modelled tag locations. This allows the user to visually gauge the alignment quality. We assume the following setup in all our applications:
 * Two or more modelled tag locations
 * One 'calibration space' which in the scene is the parent of the tags
 * Camera feature identifier
