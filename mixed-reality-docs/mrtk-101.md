@@ -52,7 +52,7 @@ ManipulationHandler.cs supports two-handed scale/rotation. This works with vario
 <img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.gif">
 
 ## How to move or rotate an object with precision?
-Assign BoundingBox.cs to an object to use Bounding Box which is the interface for scaling and rotating an object. By default, it shows HoloLens 1 style blue handles and wires. To use HoloLens 2 style proximity-based animated handles, you need to assign prefabs and materials. Please refer to Bounding Box documentation and the BoundingBoxExamples.unity scene for the configuration details.
+Assign BoundingBox.cs to an object to use Bounding Box which is the interface for scaling and rotating an object. By default, it shows HoloLens 1 style blue handles and wires. To use HoloLens 2 style proximity-based animated handles, you need to assign prefabs and materials. Please refer to [Bounding Box documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) and the BoundingBoxExamples.unity scene for the configuration details.
 
 <img alt="BoundingBox.cs assigned to an object" width="800" src="images/MRTK101/MRTK_BoundingBox.png">
 
