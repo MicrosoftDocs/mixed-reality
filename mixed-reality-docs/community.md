@@ -42,14 +42,14 @@ At Microsoft, we believe that having access to strong communities is essential f
 
 ## Microsoft MR Developer Ecosystem Team
 
-|||||||
-|---------|---------|---------|---------|---------|---------|
-|<!-- ![Daniel Escudero](images/BiographyImages/) -->|**Daniel Escudero**|*MR Academy Lead Designer*|Bio|San Francisco, Ca|[Email](mailto:daescu@microsoft.com)|
-|<!-- ![Daniel Gonzalez](images/BiographyImages/) -->|**Daniel Gonzalez**|*Program Manager II*|Bio|Redmond, Wa|[Email](mailto:dgonza@microsoft.com)|
-|<!-- ![Jane Fang](images/BiographyImages/) -->|**Jane Fang**|*Principal Program Manager Lead*|Bio|San Francisco, Ca|[Email](mailto:jafang@microsoft.com)|
-|![Jesse McCulloch](images/BiographyImages/JesseMcCulloch270x270.png)|**Jesse McCulloch**|*Program Manager II*|Jesse is a Program Manager on the Mixed Reality Developer Ecosystem team at Microsoft. He is often found hanging out in developer Slack groups, on Twitter trying to keep up with everything going on in this rapidly growing space, or in a big metal tube flying through the air on his way to engage with developers in the real world.|Redmond, Wa|[Email](mailto:jemccull@microsoft.com)|
-|<!-- ![Jo Ryall](images/BiographyImages/) -->|**Jo Ryall**|*Head of Marketing, SF Academy*|Bio|San Francisco, Ca|[Email](mailto:joryal@microsoft.com)|
-|<![Nick Klingensmith](images/BiographyImages/NickKlingensmith_270x270.png)|**Nick Klingensmith**|*MR Academy Lead Engineer*|Nick is an experienced game developer specializing in tool development, graphics programming, MR, and Unity! With over 100 published games, he's worked on small arcade games, mobile high fidelity GPU pushing titles, all the way to massive networked social games. The tools he's published on the Unity Asset Store are also used in thousands of games, on just about every modern platform imaginable. Nick has collected most of the official Unity certifications, and also helped write them. Nick currently works for Microsoft as the lead engineer on the Mixed Reality Academy team in San Francisco.|San Francisco, Ca|[Email](mailto:niklinge@microsoft.com)|
+|||||
+|---------|---------|---------|---------|
+|<!-- ![Daniel Escudero](images/BiographyImages/) --></br>**Daniel Escudero**</br>*MR Academy Lead Designer*|Bio|San Francisco, Ca|[Email](mailto:daescu@microsoft.com)|
+|<!-- ![Daniel Gonzalez](images/BiographyImages/) --></br>**Daniel Gonzalez**</br>*Program Manager II*|Bio|Redmond, Wa|[Email](mailto:dgonza@microsoft.com)|
+|<!-- ![Jane Fang](images/BiographyImages/) --></br>**Jane Fang**</br>*Principal Program Manager Lead*|Bio|San Francisco, Ca|[Email](mailto:jafang@microsoft.com)|
+|![Jesse McCulloch](images/BiographyImages/JesseMcCulloch270x270.png)</br>**Jesse McCulloch**</br>*Program Manager II*|Jesse is a Program Manager on the Mixed Reality Developer Ecosystem team at Microsoft. He is often found hanging out in developer Slack groups, on Twitter trying to keep up with everything going on in this rapidly growing space, or in a big metal tube flying through the air on his way to engage with developers in the real world.|Redmond, Wa|[Email](mailto:jemccull@microsoft.com)|
+|<!-- ![Jo Ryall](images/BiographyImages/) --></br>**Jo Ryall**</br>*Head of Marketing, SF Academy*|Bio|San Francisco, Ca|[Email](mailto:joryal@microsoft.com)|
+|<![Nick Klingensmith](images/BiographyImages/NickKlingensmith_270x270.png)</br>**Nick Klingensmith**</br>*MR Academy Lead Engineer*|Nick is an experienced game developer specializing in tool development, graphics programming, MR, and Unity! With over 100 published games, he's worked on small arcade games, mobile high fidelity GPU pushing titles, all the way to massive networked social games. The tools he's published on the Unity Asset Store are also used in thousands of games, on just about every modern platform imaginable. Nick has collected most of the official Unity certifications, and also helped write them. Nick currently works for Microsoft as the lead engineer on the Mixed Reality Academy team in San Francisco.|San Francisco, Ca|[Email](mailto:niklinge@microsoft.com)|
 
 <br>
 
