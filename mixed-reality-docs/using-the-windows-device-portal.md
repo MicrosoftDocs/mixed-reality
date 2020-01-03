@@ -73,7 +73,7 @@ If you wish to change this username or password at any time, you can repeat this
 
 ## Security certificate
 
-If you are see a "certificate error" in your browser, you can fix it by creating a trust relationship with the device.
+If you see a "certificate error" in your browser, you can fix it by creating a trust relationship with the device.
 
 Each HoloLens generates a unique self-signed certificate for its SSL connection. By default, this certificate is not trusted by your PC's web browser and you may get a "certificate error". By downloading this certificate from your HoloLens (over USB or a Wi-Fi network you trust) and trusting it on your PC, you can securely connect to your device.
 1. **Make sure you are on a secure network (USB or a Wi-Fi network you trust).**
@@ -82,7 +82,7 @@ Each HoloLens generates a unique self-signed certificate for its SSL connection.
 3. Install the certificate in the "Trusted Root Certification Authorities" store on your PC.
    * From the Windows menu, type: Manage Computer Certificates and start the applet.
    * Expand the **Trusted Root Certification Authority** folder.
-   * Click on the **Certificates** folder.
+   * Click the **Certificates** folder.
    * From the Action menu, select: All Tasks > Import...
    * Complete the Certificate Import Wizard, using the certificate file you downloaded from the Device Portal.
 4. Restart the browser.
@@ -134,7 +134,7 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
   * **Show spatial anchors**: Displays spatial anchors for the active app. You must click the Update button to get and refresh the anchors.
   * **Show details**: Displays hand positions, head rotation quaternions, and the device origin vector as they change in real time.
   * **Full screen button**: Shows the 3D View in full screen mode. Press ESC to exit full screen view.
-* **Surface reconstruction**: Click or tap **Update** to display the latest spatial mapping mesh from the device. A full pass may take some time to complete, up to a few seconds. The mesh does not update automatically in the 3D view, and you must manually click **Update** to get the latest mesh from the device. Click **Save** to save the current spatial mapping mesh as an obj file on your PC.
+* **Surface reconstruction**: Click or tap **Update** to display the latest spatial mapping mesh from the device. A full pass may take some time to complete (up to a few seconds). The mesh does not update automatically in the 3D view, and you must manually click **Update** to get the latest mesh from the device. Click **Save** to save the current spatial mapping mesh as an obj file on your PC.
 * **Spatial anchors**: Click Update to display or update the spatial anchors for the active app.
 
 ### Mixed Reality Capture
@@ -175,7 +175,7 @@ Capture [Windows Performance Recorder](https://msdn.microsoft.com/library/window
 * **Available profiles**: Select the WPR profile from the dropdown, and click or tap **Start** to start tracing.
 * **Custom profiles**: Click or tap **Browse** to choose a WPR profile from your PC. Click or tap **Upload and start** to start tracing.
 
-To stop the trace click on the stop link. Stay on this page until the trace file has completed downloading.
+To stop the trace, click the stop link. Stay on this page until the trace file has completed downloading.
 
 Captured ETL files can be opened for analysis in [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx).
 
@@ -234,7 +234,7 @@ Use the file explorer to browse, upload, and download files. You can work with f
 >[!NOTE]
 >Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](commercial-features.md).
 
-Please check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
+Check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
 
 ### Logging
 
@@ -254,10 +254,10 @@ Click or tap **Enable** to start tracing. The provider is added to the **Enabled
 * **Custom providers**: Select a custom ETW provider and the tracing level. Identify the provider by its GUID. Don't include brackets in the GUID.
 * **Enabled providers**: Lists the enabled providers. Select a provider from the dropdown and click or tap **Disable** to stop tracing. Click or tap **Stop all** to suspend all tracing.
 * **Providers history**: Shows the ETW providers that were enabled during the current session. Click or tap **Enable** to activate a provider that was disabled. Click or tap **Clear** to clear the history.
-* **Events**: Lists ETW events from the selected providers in table format. This table is updated in real time. Beneath the table, click on the **Clear** button to delete all ETW events from the table. This does not disable any providers. You can click **Save to file** to export the currently collected ETW events to a CSV file locally.
+* **Events**: Lists ETW events from the selected providers in table format. This table is updated in real time. Beneath the table, click the **Clear** button to delete all ETW events from the table. This does not disable any providers. You can click **Save to file** to export the currently collected ETW events to a CSV file locally.
 * **Filters**: Allow you to filter the ETW events collected by ID, Keyword, Level, Provider Name, Task Name, or Text. You can combine several criteria together:
-   1. For criteria applying to the same property - events can satisfy any one of these criteria are shown.
-   2. For criteria applying to different property - events must satisfy all of the criteria
+   1. For criteria applying to the same property, events that can satisfy any one of these criteria are shown.
+   2. For criteria applying to a different property, events must satisfy all of the criteria
 
 For example, you can specify the criteria *(Task Name contains 'Foo' or 'Bar') AND (Text contains 'error' or 'warning')*
 
