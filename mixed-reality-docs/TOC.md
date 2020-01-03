@@ -3,14 +3,10 @@
 ## [Get your app ready for HL2](mrtk-porting-guide.md)
 ## [Learn about Azure Services](azure-services.md)
 ## Programs and events
-### [Mixed Reality Dev Days](mr-dev-days.md)
-#### [Mixed Reality Dev Days Sessions](mr-dev-days-sessions.md)
-#### [Mixed Reality Dev Days FAQ](mr-dev-days-faq.md)
 ### [San Francisco Reactor Academy events calendar](sf-academy-events.md)
-### [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
-### [ECCV 2018 HoloLens as a tool for computer vision research](eccv-2018.md)
 ### [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
 ## [Current mixed reality release notes](release-notes-may-2019.md)
+## [Community Resources](community.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
 # Discover
 ## [Get started with mixed reality](index.md)
@@ -24,6 +20,7 @@
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 ### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Location based entertainment](location-based-experiences.md)
+## [Community Resources](community.md)
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
