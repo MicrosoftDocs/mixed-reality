@@ -26,6 +26,7 @@ At Microsoft, we believe that having access to strong communities is essential f
 <br>
 
 ## Local Communities
+If you run a community that you would like included on this page, please send an [email here](mailto:jemccull@microsoft.com) with the details
 
 |Community Name|Country|City|Link|
 |---------|---------|---------|---------|
