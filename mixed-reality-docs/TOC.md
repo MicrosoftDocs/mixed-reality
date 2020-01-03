@@ -20,6 +20,7 @@
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 ### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Location based entertainment](location-based-experiences.md)
+## [Community Resources](community.md)
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
