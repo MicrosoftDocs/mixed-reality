@@ -1,6 +1,6 @@
 ---
 title: Near menu
-description: 
+description: A near menu is a collection of buttons on a panel that follow you with tag-along behavior.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
