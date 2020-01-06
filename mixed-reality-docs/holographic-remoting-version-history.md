@@ -13,6 +13,15 @@ keywords: HoloLens, Remoting, Holographic Remoting
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.0.18.0 (December 17, 2019) <a name="v2.0.18"></a>
+* Added support for HolographicViewConfiguration: https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration
+* Fixed various bugs that lead to crashes.
+* Fixed bug where a HolographicSpace.CameraAdded callback was required for a HolographicCamera to get accepted and show up as added camera in the HoloraphicFrame.
+
+## Version 2.0.16 (November 11, 2019) <a name="2.0.16"></a>
+* Fixed deadlock in QR code tracking.
+* Fixed unhandeled exception due to blocking wait in main thread.
+
 ## Version 2.0.14 (October 26, 2019) <a name="v2.0.14"></a>
 * Support for new PerceptionDevice APIs (Windows 10 November 2019 Update).
 * Fixed issue which prevent hold gesture events being triggered by SpatialGestureRecognizer.

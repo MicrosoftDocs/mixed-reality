@@ -18,9 +18,7 @@ In this tutorial, several advanced input options for HoloLens 2 are explored, in
 - Use tracked hands to pan textures and 3D objects with tracked hands
 - Leverage HoloLens 2 eye tracking capabilities to select objects
 
-## Instructions
-
-### Enabling Voice Commands
+## Enabling Voice Commands
 
 In this section, two voice commands are implemented. First, the ability to toggle the frame rate diagnostics panel is introduced by saying "toggle diagnostics". Second, the ability to play a sound with a voice command is explored. The MRTK profiles and settings responsible for configuring voice commands is reviewed first.
 
@@ -103,7 +101,7 @@ In this section, two voice commands are implemented. First, the ability to toggl
 
     ![Lesson5 Chapter1 Step16im](images/Lesson5_chapter1_step16im.PNG)
 
-### The Pan Gesture
+## The Pan Gesture
 
 In this section, you will learn how to use the pan gesture. This is useful for scrolling by using your finger or hand to scroll through content. You can also use the pan gesture to rotate objects, cycle through a collection of 3D objects, or even to scroll a 2D UI.
 
@@ -189,7 +187,7 @@ In this section, you will learn how to use the pan gesture. This is useful for s
 
     ![mrlearning-base-ch5-2-step10d.png](images/mrlearning-base-ch5-2-step10d.png)
 
-### Eye Tracking
+## Eye Tracking
 
 In this section, we will explore how to enable eye tracking in our demo. We will slowly spin our 3D menu items when they are being gazed upon with your eye gaze. We will also trigger a fun effect when the gazed-upon item is selected.
 

@@ -17,7 +17,7 @@ Some specific scenarios might be:
 * Providing first line workers tutorials and guides for factory assembly lines
 * Developing professional tools for assisting and educating medical professionals  
 * Using 3D virtual objects to decorate the real world or to create a second world 
-* Creating location based services and games using the real world as a background
+* Creating location-based services and games using the real world as a background
 
 <br>
 
@@ -34,7 +34,7 @@ Some specific scenarios might be:
     :::column:::
        [![Point and commit with hands](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
         ### [Point and commit with hands](point-and-commit.md)<br>
-        This modality empowers users to interact with holograms in a distance. It enables users to make the best use of surroundings. Users can place holograms anywhere and can still access them from any distances. The mental models and gestures for controlling and manipulating 2D and 3D holograms are highly in sync with those of direct manipulation.
+        This modality empowers users to interact with holograms in a distance. It enables users to make the best use of surroundings. Users can place holograms anywhere and still access them from any distance. The mental models and gestures for controlling and manipulating 2D and 3D holograms are highly in sync with those of direct manipulation.
     :::column-end:::
     :::column:::
        [![Motion controllers](images/hands-and-controllers-motion-controllers.jpg)](motion-controllers.md)<br>

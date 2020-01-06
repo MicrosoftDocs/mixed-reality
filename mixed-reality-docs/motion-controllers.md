@@ -83,7 +83,7 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 Motion controllers can be bonded with host PC using Windows settings like any other Bluetooth device.
 
 1. Insert 2 AA batteries into the back of the controller. Leave the battery cover off for now.
-2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, please review the [Bluetooth best practices](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, please ensure antenna is connected.
+2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, review the [Bluetooth best practices](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, ensure antenna is connected.
 3. Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
 4. Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
 5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
@@ -108,7 +108,7 @@ Motion controllers can be bonded with host PC using Windows settings like any ot
 
 :::row:::
     :::column:::
-        After successfully pairing both controllers, your settings should look like this under **“Mouse, keyboard, & pen” category** <br>
+        After successfully pairing both controllers, your settings should look like the following, under **“Mouse, keyboard, & pen” category** <br>
         <br>
         *Image: Motion controllers connected*
     :::column-end:::
@@ -117,7 +117,7 @@ Motion controllers can be bonded with host PC using Windows settings like any ot
     :::column-end:::
 :::row-end:::
 
-If the controllers are turned off after pairing, their status will show up as Paired. If controllers stay permanently under “Other devices” category pairing may have been only partially completed and need to be performed again to get controller functional.
+If the controllers are turned off after pairing, their status will show up as Paired. If controllers stay permanently under the “Other devices” category, pairing may have been only partially completed and need to be performed again to get controller functional.
 
 ### Updating controller firmware
 
@@ -142,11 +142,11 @@ If the controllers are turned off after pairing, their status will show up as Pa
 
 ## Gazing and pointing
 
-Windows Mixed Reality supports two key models for interaction, **gaze and commit** and **point and commit**:
+Windows Mixed Reality supports two key models for interaction; **gaze and commit** and **point and commit**:
 * With **gaze and commit**, users target an object with their [gaze](gaze-and-commit.md) and then select objects with hand air-taps, a gamepad, a clicker or their voice.
 * With **point and commit**, a user can aim a pointing-capable motion controller at the target object and then select objects with the controller's trigger.
 
-Apps that support pointing with motion controllers should also enable gaze-driven interactions where possible, to give users choice in what input devices they use.
+Apps that support pointing with motion controllers should also enable gaze-driven interactions where possible, to give users a choice in what input devices they use.
 
 ### Managing recoil when pointing
 
@@ -158,7 +158,7 @@ To manage any such recoil that may occur when users pull the trigger, your app c
 
 Windows Mixed Reality supports motion controllers in a variety of form factors, with each controller's design differing in its relationship between the user's hand position and the natural "forward" direction that apps should use for pointing when rendering the controller.
 
-To better represent these controllers, there are two kinds of poses you can investigate for each interaction source, the **grip pose** and the **pointer pose**.
+To better represent these controllers, there are two kinds of poses you can investigate for each interaction source; the **grip pose** and the **pointer pose**.
 
 ### Grip pose
 
@@ -220,12 +220,12 @@ These motion controller tracking states are defined as follows:
 ## Interactions: Low-level spatial input
 
 The core interactions across hands and motion controllers are **Select**, **Menu**, **Grasp**, **Touchpad**, **Thumbstick**, and **Home**.
-* **Select** is the primary interaction to activate a hologram, consisting of a press followed by a release. For motion controllers, you perform a Select press using the controller's trigger. Other ways to perform a Select are by speaking the [voice command](voice-input.md) "Select". The same select interaction can be used within any app. Think of Select as the equivalent of a mouse click, a universal action that you learn once and then apply across all your apps.
+* **Select** is the primary interaction to activate a hologram, consisting of a press followed by a release. For motion controllers, you perform a Select press using the controller's trigger. Other ways to perform a Select are by speaking the [voice command](voice-input.md) "Select". The same select interaction can be used within any app. Think of Select as the equivalent of a mouse click; a universal action that you learn once and then apply across all your apps.
 * **Menu** is the secondary interaction for acting on an object, used to pull up a context menu or take some other secondary action. With motion controllers, you can take a menu action using the controller's *menu* button. (i.e. the button with the hamburger "menu" icon on it)
 * **Grasp** is how users can directly take action on objects at their hand to manipulate them. With motion controllers, you can do a grasp action by squeezing your fist tightly. A motion controller may detect a Grasp with a grab button, palm trigger or other sensor.
 * **Touchpad** allows the user to adjust an action in two dimensions along the surface of a motion controller's touchpad, committing the action by clicking down on the touchpad. Touchpads provide a pressed state, touched state and normalized XY coordinates. X and Y range from -1 to 1 across the range of the circular touchpad, with a center at (0, 0). For X, -1 is on the left and 1 is on the right. For Y, -1 is on the bottom and 1 is on the top.
 * **Thumbstick** allows the user to adjust an action in two dimensions by moving a motion controller's thumbstick within its circular range, committing the action by clicking down on the thumbstick. Thumbsticks also provide a pressed state and normalized XY coordinates. X and Y range from -1 to 1 across the range of the circular touchpad, with a center at (0, 0). For X, -1 is on the left and 1 is on the right. For Y, -1 is on the bottom and 1 is on the top.
-* **Home** is a special system action that is used to go back to the Start Menu. It is similar to pressing the Windows key on a keyboard or the Xbox button on an Xbox controller. You can go home by pressing the Windows button on a motion controller. Note, you can also always return to Start by saying "Hey Cortana, Go Home". Apps cannot react specifically to home actions, as these are handled by the system.
+* **Home** is a special system action that is used to go back to the Start Menu. It is similar to pressing the Windows key on a keyboard or the Xbox button on an Xbox controller. You can go Home by pressing the Windows button on a motion controller. Note, you can always return to Start by saying "Hey Cortana, Go Home". Apps cannot react specifically to Home actions, as these are handled by the system.
 
 ## Composite gestures: High-level spatial input
 
@@ -257,7 +257,7 @@ Motion controllers support pairing with a single PC. Follow instructions on [mot
 
 ### How do I update motion controller firmware?
 
-Motion controller firmware is part of the headset driver and will be updated automatically on connection if required. Firmware updates typically take 1-2 minutes depending on Bluetooth radio and link quality. In rare cases, controller firmware updates may take up to 10 minutes, which can indicate poor Bluetooth connectivity or radio interference. Please see [Bluetooth best practices in the Enthusiast Guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) to troubleshoot connectivity issues. After a firmware update, controllers will reboots and reconnect to the host PC (you may notice the LEDs go bright for tracking). If a firmware update is interrupted (for example, the controllers lose power), it will be attempted again the next time the controllers are powered on.
+Motion controller firmware is part of the headset driver and will be updated automatically on connection, if required. Firmware updates typically take 1-2 minutes depending on Bluetooth radio and link quality. In rare cases, controller firmware updates may take up to 10 minutes, which can indicate poor Bluetooth connectivity or radio interference. See [Bluetooth best practices in the Enthusiast Guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) to troubleshoot connectivity issues. After a firmware update, controllers will reboot and reconnect to the host PC (you may notice the LEDs go bright for tracking). If a firmware update is interrupted (for example, the controllers lose power), it will be attempted again the next time the controllers are powered on.
 
 ### How I can check battery level?
 

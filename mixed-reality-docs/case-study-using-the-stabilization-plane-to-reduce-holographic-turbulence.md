@@ -62,7 +62,7 @@ Fragments and Young Conker also design around you straying too far from the holo
 
 ## Do it yourself
 
-If you have a HoloLens and would like to play around with the concepts I've discussed, you can download a test scene and try out the exercises below. It uses Unity’s built-in gizmo API and it should help you visualize where your plane is being set. This code was also used to capture the screenshots in this case study.
+If you have a HoloLens and would like to play around with the concepts within this article, you can download a test scene and try out the exercises below. It uses Unity’s built-in gizmo API and should help you visualize where your plane is being set. This code was also used to capture the screenshots in this case study.
 1. Sync the latest version of [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity).
 2. Open the [HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) scene.
 3. Build and configure the generated project.
@@ -70,15 +70,15 @@ If you have a HoloLens and would like to play around with the concepts I've disc
 
 ### Exercise 1
 
-You'll see several white dots around you at different orientations. In front of you, you’ll see three dots at different depths. Air tap to change which dot the plane is set to. For this exercise, and for the other two, move around your space while gazing at the dots. Turn your head left, right, up, and down. Move closer to and father from the dots. See how they react when the stabilization plane is set to different targets.
+You'll see several white dots around you at different orientations. In front of you, you’ll see three dots at different depths. Air tap to change which dot the plane is set to. For this exercise, and for the other two, move around your space while gazing at the dots. Turn your head left, right, up, and down. Move closer to and farther from the dots. See how they react when the stabilization plane is set to different targets.
 
 ### Exercise 2
 
-Now, turn to your right until you see two moving dots, one oscillating on a horizontal path and one on a vertical path. Once again, air-tap to change which dot the plane is set to. Notice how color separation is lessened appears on the dot that is connected to the plane. Tap again to use the dot’s velocity in the plane setting function. This parameter gives a hint to HoloLens about the object’s intended motion. It’s important to know when to use this, as you’ll notice when velocity is used on one dot, the other moving dot will show greater color separation. Keep this in mind when designing your apps—having a cohesive flow to the motion of your objects can help prevent artifacts from appearing.
+Now, turn to your right until you see two moving dots, one oscillating on a horizontal path and one on a vertical path. Once again, air-tap to change which dot the plane is set to. Notice how color separation is lessened and appears on the dot that is connected to the plane. Tap again to use the dot’s velocity in the plane setting function. This parameter gives a hint to HoloLens about the object’s intended motion. It’s important to know when to use this, as you’ll notice when velocity is used on one dot, the other moving dot will show greater color separation. Keep this in mind when designing your apps—having a cohesive flow to the motion of your objects can help prevent artifacts from appearing.
 
 ### Exercise 3
 
-Turn to your right once more until you see a new configuration of dots. In this case there are dots in the distance and one dot spiraling in and out in front of them. Air tap to change which dot the plane is set to, alternating between the dots in the back and the dot in motion. Notice how setting the plane position and the velocity to that of the spiraling dot makes artifacts appear everywhere.
+Turn to your right once more until you see a new configuration of dots. In this case, there are dots in the distance and one dot spiraling in and out in front of them. Air tap to change which dot the plane is set to, alternating between the dots in the back and the dot in motion. Notice how setting the plane position and the velocity to that of the spiraling dot makes artifacts appear everywhere.
 
 **Tips**
 * Keep your plane setting logic simple. As you’ve seen, you don’t need complex plane setting algorithms to make an immersive experience. The stabilization plane is only one piece of the puzzle.
