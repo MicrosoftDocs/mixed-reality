@@ -1,6 +1,6 @@
 ---
 title: Button
-description: 
+description: A button gives the user a way to trigger an immediate action. It is one of the most foundational components in mixed reality.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
@@ -12,7 +12,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 ![Button](images/UX/UX_Hero_Button.jpg)
 
-A button gives the user a way to trigger an immediate action. It is one of the most foundational components in mixed reality. In HoloLens 2, button has many visual cues and affordances to increase the user's confidence on interaction. 
+A button gives the user a way to trigger an immediate action. It is one of the most foundational components in mixed reality. In HoloLens 2, a button has many visual cues and affordances to increase the user's interaction confidence. 
 
 
 :::row:::
@@ -43,7 +43,7 @@ A button gives the user a way to trigger an immediate action. It is one of the m
 ---
 
 ## Button in MRTK(Mixed Reality Toolkit) for Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides various types of button prefabs. You can find shell-style buttons for HoloLens 2 and HoloLens 1st gen as well as customized examples. HoloLens 2 button prefab contains a lot of detailed affordances that improves user's confidence. It includes proximity-based highlight, compressing front cage, and the pulse effect on trigger.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides various types of button prefabs. You can find shell-style buttons for HoloLens 2 and HoloLens (1st gen) as well as customized examples. HoloLens 2 button prefab contains a lot of detailed affordances that help improve the user's confidence. It includes proximity-based highlight, compressing front cage, and a pulse effect on trigger.
 
 * [MRTK - Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
 
