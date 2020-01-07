@@ -1,6 +1,6 @@
 ---
 title: Slider
-description: 
+description: A slider is a UI component that allow you to set a value by moving a knob or lever on a track.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
@@ -12,13 +12,13 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 ![Slider](images/UX/UX_Hero_Slider.jpg)
 
-Sliders are UI components that allow you to continuously change a value by moving a slider on a track. The Pinch Slider can be moved by directly grabbing the slider, either directly or at a distance. Sliders work with various input types such as gaze and air-tap as well as the motion controller.
+A slider is a UI component used to set a value. It provides a visual indication of adjustable content, as well as the current setting in the total range of content. It is displayed as a track with options on either side. A knob or lever is dragged to one end or the other to make the choice, indicating the current value. The Pinch Slider can be moved by directly grabbing the slider, either directly or at a distance. Sliders work with various input types such as gaze and air-tap as well as a motion controller.
 
 <br>
 
 ---
 
-## Slider in MRTK(Mixed Reality Toolkit) for Unity
+## Slider in MRTK (Mixed Reality Toolkit) for Unity
 
 * [MRTK - Slider](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Sliders.html)
 

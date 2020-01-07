@@ -173,7 +173,7 @@ With a collidable fingertip, users are now ready to interact with a fundamental 
 
 ## 2D slate interaction
 
-A 2D slate is a holographic container hosting 2D app contents, such as a web browser. The design concept for interacting with a 2D slate via direct manipulation is to leverage the mental model of interacting with a physical touch screen.
+A 2D [slate](slate.md) is a holographic container used to host 2D app content, such as a web browser. The design concept for interacting with a 2D slate via direct manipulation is to leverage the mental model of interacting with a physical touch screen.
 
 ### To interact with the slate contact
 
