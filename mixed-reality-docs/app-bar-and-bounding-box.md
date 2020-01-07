@@ -86,7 +86,7 @@ The App bar is a object-level menu containing a series of buttons that displays 
 <br>
 
 
-## Bounding box in MRTK(Mixed Reality Toolkit) for Unity
+## Bounding box in MRTK (Mixed Reality Toolkit) for Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and prefabs for the Bounding box and App bar. You can add a Bounding box by simply assigning the BoundingBox.cs script onto any object.
 
 * [MRTK - Bounding Box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)

@@ -12,14 +12,14 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 ![Keyboard](images/UX/UX_Hero_Keyboard.jpg)
 
-Your mixed reality application can invoke the system keyboard at any time. Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support gaze and air-tap gesture input.
+Your mixed reality application can invoke the system keyboard at any time. Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 supports direct hand interactions, while the keyboard on HoloLens (1st gen) supports gaze and air-tap gesture input.
 
 
 <br>
 
 ---
 
-## System keyboard in MRTK(Mixed Reality Toolkit) for Unity
+## System keyboard in MRTK (Mixed Reality Toolkit) for Unity
 
 * [MRTK - System keyboard](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_SystemKeyboard.html)
 
