@@ -2,6 +2,7 @@
 ## [Latest news](news.md)
 ## [Get your app ready for HL2](mrtk-porting-guide.md)
 ## [Learn about Azure Services](azure-services.md)
+## [Get ready for the new Microsoft Edge](new-microsoft-edge.md)
 ## Programs and events
 ### [San Francisco Reactor Academy events calendar](sf-academy-events.md)
 ### [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)

@@ -258,7 +258,7 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 ---
 
 
-## Interactable object in MRTK(Mixed Reality Toolkit) for Unit
+## Interactable object in MRTK (Mixed Reality Toolkit) for Unity
 
 In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allows you define visual states by controlling object properties such as color, size, material, and shader.
 
