@@ -12,8 +12,6 @@ keywords: edge, new, immersive web, microsoft edge, browser, vr
 
 As you may have heard, the [new Microsoft Edge is coming soon](https://blogs.windows.com/windowsexperience/2019/11/04/introducing-the-new-microsoft-edge-and-bing/)! With general availability targeted for January 15, 2020, we wanted to let Windows Mixed Reality customers know what to expect from the new Microsoft Edge and inform you of some pending updates that will improve your web browsing experience in Windows Mixed Reality.
 
-![New Microsoft Edge logo animation](images/new_edge.gif)<br>
-
 ## Introducing the new Microsoft Edge
 
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) on the desktop to create better web compatibility for customers and less fragmentation of the web for all web developers. It will also support WebXR at launch, the new standard for creating immersive web experiences for VR headsets, in place of WebVR.
