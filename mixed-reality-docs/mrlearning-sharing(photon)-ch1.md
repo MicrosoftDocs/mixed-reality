@@ -23,7 +23,7 @@ In this tutorial, you will learn how to prepare for creating a shared experience
 ## Prerequisites
 
 >[!TIP]
->If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
+>If you have not completed the [Getting started tutorials](mrlearning-base.md) and [Azure Spatial Anchors started tutorials](mrlearning-asa-ch1.md) tutorial series yet, it's recommended that you complete those tutorials first.
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
