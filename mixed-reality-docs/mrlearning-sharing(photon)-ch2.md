@@ -79,7 +79,7 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
     d. [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.1.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.1.0.1.unitypackage)
 
     >[!TIP]
-    >For a reminder on how to configure a Unity project for Azure Spatial Anchors, you can refer to the [Getting started with Azure Spatial Anchors](mrlearning-asa-ch1) tutorial which is part of the the [Azure Spatial Anchors](mrlearning-base.md) tutorial series.
+    >For a reminder on how to configure a Unity project for Azure Spatial Anchors, you can refer to the [Getting started with Azure Spatial Anchors](https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1) tutorial which is part of the the [Azure Spatial Anchors](https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1) tutorial series.
 
     ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
 
