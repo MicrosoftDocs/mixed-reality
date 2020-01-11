@@ -70,10 +70,6 @@ In this Tutorial, you'll learn how to share the movements of objects so that all
 
     ![Module3Chapter4step8im](images/module3chapter4step8im.PNG)
 
-12. In the DebugWindow object, change the width to 50 and the height to 20.
-
-    ![Module3Chapter4step9im](images/module3chapter4step11im.PNG)
-
 ## Congratulations
 
 Once this is complete, look around to find the lunar module. After this, all users that join your Unity project can move the lunar launcher around.  All movements are synchronized so that each user can see each others' interactions. These concepts serve as the fundamental building blocks for full-featured, shared collaboration experiences.
