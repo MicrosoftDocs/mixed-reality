@@ -44,7 +44,7 @@ The current interaction model represents a wide variety of gesture controls such
 ![Example of HandFlip](images\HandCoach\HandFlip.gif)<br>
 *   Exmaple of Hand Flip – Another way to bring up Hand Menus 
 
-![Example of Scroll](images\HandCoach\Scroll.gif)<br>
+![Example of Scroll](images\HandCoach\Scoll.gif)<br>
 *	Example of Scroll – Used for scrolling a list or a long document 
 
 
