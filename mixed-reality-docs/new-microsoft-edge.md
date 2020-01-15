@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality and the new Microsoft Edge
-description: How to contribute to the Windows Mixed Reality documentation. 
+description: Get ready for the new Microsoft Edge in Windows Mixed Reality. Includes changes to expect, updates to look out for, and known issues.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 01/15/2020
