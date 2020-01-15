@@ -45,7 +45,7 @@ For the best possible Microsoft Edge experience in the mixed reality home, we al
 
 -	Websites open in Windows Mixed Reality will be lost when Mixed Reality Portal closes, though the Microsoft Edge windows will remain where they were placed in the mixed reality home.
 -	Audio from Microsoft Edge windows is not spatialized.
--	Opening a 360 video from YouTube in Windows Mixed Reality may result in the video being distorted in the headset. Refreshing the YouTube video’s page and relaunching the 360 video should fix the issue.
+-	Opening a 360 video from YouTube in Windows Mixed Reality may result in the video being distorted in the headset. Refreshing the YouTube video’s page and relaunching the 360 video *may* fix the issue, but we've heard feedback that the issue may persist.
 -	During Windows Mixed Reality sessions, virtual monitors will appear as generic physical monitors in Settings > System > Display.
 
 
