@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+            "source_path": "mixed-reality-docs/accounts-on-hololens.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-identity",
+            "redirect_document_id": false
+		},
+		{
             "source_path": "mixed-reality-docs/troubleshooting.md",
             "redirect_url": "https://docs.microsoft.com/hololens/hololens-troubleshooting",
             "redirect_document_id": false
