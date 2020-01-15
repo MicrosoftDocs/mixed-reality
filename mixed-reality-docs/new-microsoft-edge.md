@@ -10,7 +10,7 @@ keywords: edge, new, immersive web, microsoft edge, browser, vr
 
 # Windows Mixed Reality and the new Microsoft Edge
 
-The [new Microsoft Edge is now available for download](https://blogs.windows.com/windowsexperience/?p=173496), but [customers can also wait for it to be installed in a future update to Windows 10](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/), following a measured roll-out approach over the next several months. 
+The [new Microsoft Edge is now available for download](https://blogs.windows.com/windowsexperience/?p=173496), but customers can also [wait for it to be installed in a future update to Windows 10](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/), following a measured roll-out approach over the next several months. 
 
 With this news, **we wanted to let Windows Mixed Reality VR headset customers know what to expect from the new Microsoft Edge and inform you of some pending updates that will improve your web browsing experience in Windows Mixed Reality**.
 
