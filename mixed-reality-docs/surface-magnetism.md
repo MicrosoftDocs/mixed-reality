@@ -12,7 +12,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 ![Surface magnetism](images/UX/MRTK_SurfaceMagnetism.gif)
 
-Using the surface magnetism technique, you can place a holographic object on a real-world physical surface. By aligning the object's orientation with the real-world surface, you can create more immersive and natural experience.
+Using the surface magnetism technique, you can place a holographic object on a real-world physical surface. By aligning the object's orientation with the real-world surface, you can create a more immersive and natural experience for the user.
 
 <br>
 
