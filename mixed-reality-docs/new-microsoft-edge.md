@@ -3,18 +3,21 @@ title: Windows Mixed Reality and the new Microsoft Edge
 description: How to contribute to the Windows Mixed Reality documentation. 
 author: mattzmsft
 ms.author: mazeller
-ms.date: 01/07/2020
+ms.date: 01/15/2020
 ms.topic: article
 keywords: edge, new, immersive web, microsoft edge, browser, vr
 ---
 
 # Windows Mixed Reality and the new Microsoft Edge
 
-As you may have heard, the [new Microsoft Edge is coming soon](https://blogs.windows.com/windowsexperience/2019/11/04/introducing-the-new-microsoft-edge-and-bing/)! With general availability targeted for January 15, 2020, we wanted to let Windows Mixed Reality VR headset customers know what to expect from the new Microsoft Edge and inform you of some pending updates that will improve your web browsing experience in Windows Mixed Reality.
+The [new Microsoft Edge is now available for download](https://blogs.windows.com/windowsexperience/?p=173496), but [customers can also wait for it to be installed in a future update to Windows 10](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/), following a measure roll-out approach over the next several months. With this news, **we wanted to let Windows Mixed Reality VR headset customers know what to expect from the new Microsoft Edge and inform you of some pending updates that will improve your web browsing experience in Windows Mixed Reality**.
 
 ## Introducing the new Microsoft Edge
 
 The new Microsoft Edge [adopts the Chromium open source project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) on the desktop to create better web compatibility for customers and less fragmentation of the web for all web developers. It will also support WebXR at launch, the new standard for creating immersive web experiences for VR headsets, in place of WebVR.
+
+>[!IMPORTANT]
+>When you install Microsoft Edge on an up-to-date Windows 10 device, it will replace the previous (legacy) version on your PC.
 
 ## Getting ready for the new Microsoft Edge
 
