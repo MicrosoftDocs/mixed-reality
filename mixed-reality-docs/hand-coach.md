@@ -15,7 +15,7 @@ keywords: Windows Mixed Reality, design, Hand coach, immersive headset, MRTK, ha
 Hand Coach is 3D modeled hands that are triggered when the system does not detect the user’s hands. This is implemented as a “teaching” component that helps guide the user when the gesture has not been taught. If users have not done the specified gesture for a period, the hands will loop with a delay. The Hand coach could be used to represent pressing a button or picking up a hologram.  
 
 
-![Example: Hand coach](images\HandCoach\MRTK_handCoach.jpg)<br>
+![Example: Hand coach](images/HandCoach/MRTK_handCoach.jpg)<br>
 *HandCoach Example from MRTK*
 
 ## Hand coach provided
@@ -23,28 +23,28 @@ Hand Coach is 3D modeled hands that are triggered when the system does not detec
 The current interaction model represents a wide variety of gesture controls such as scrolling, far select, and near tap. Below is a full list of existing hand gestures provided in<a href="https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets"> MRTK</a>:
 
  
- ![Example of Near Select](images\HandCoach\NearSelect.gif)<br>
+ ![Example of Near Select](images/HandCoach/NearSelect.gif)<br>
 *    Example of Near Select - Used show how to select buttons or close interactable objects
 
-![Example of Air Tap](images\HandCoach\AirTap.gif)<br>
+![Example of Air Tap](images/HandCoach/AirTap.gif)<br>
 *    Example of Air Tap - Used to show how to select objects that are far away
 
-![Example of Move](images\HandCoach\Move.gif)<br>
+![Example of Move](images/HandCoach/Move.gif)<br>
 *    Example of Moving an object in space-Used to show how to move a hologram in space
 
-![Example of Rotate](images\HandCoach\Rotate.gif)<br>
+![Example of Rotate](images/HandCoach/Rotate.gif)<br>
 *    Example of Rotate-Used to show how to rotate holograms or objects
 
-![Example of Scale](images\HandCoach\Scale.gif)<br>
+![Example of Scale](images/HandCoach/Scale.gif)<br>
 *	Example of Scale- Used to show how to manipulate holograms to be bigger or smaller 
 
-![Example of Palm Up](images\HandCoach\PalmUp.gif)<br>
+![Example of Palm Up](images/HandCoach/PalmUp.gif)<br>
 *	Example of Palm up – Suggested use, to bring up hand menus
 
-![Example of HandFlip](images\HandCoach\HandFlip.gif)<br>
+![Example of HandFlip](images/HandCoach/HandFlip.gif)<br>
 *   Exmaple of Hand Flip – Another way to bring up Hand Menus 
 
-![Example of Scroll](images\HandCoach\Scoll.gif)<br>
+![Example of Scroll](images/HandCoach/Scoll.gif)<br>
 *	Example of Scroll – Used for scrolling a list or a long document 
 
 
@@ -58,7 +58,7 @@ When animating hands, it should be obvious and shoudn't cause any confusion. The
 
 For example, if you wish a user to press a button, a hand pressing a button would be triggered.
 
-![Example: Hand Coach Near Tap](images\HandCoach\NearSelect_unity.gif)<br>
+![Example: Hand Coach Near Tap](images/HandCoach/NearSelect_unity.gif)<br>
 *Hand Coach demonstrating Near Tapping a Gem*  
 
 ### Hand scale
@@ -73,19 +73,19 @@ Don’t expect users can listen to one set of instructions via VO and watch diff
 ## Can I create my own?
 
 Yes! We encourage you to create your own unique gesture for your game and contribute back to the community!
-We have provided a Maya file of a Rigged hand that can be used for your app which can be downloaded here: <a href="files\HandCoach_MRTK.zip"> Download HandCoach_MRTK.zip</a>
+We have provided a Maya file of a Rigged hand that can be used for your app which can be downloaded here: <a href="files/HandCoach_MRTK.zip"> Download HandCoach_MRTK.zip</a>
 
-![Example of Animated Hands in Maya](images\HandCoach\MayaSelect_Gif.gif)<br>
+![Example of Animated Hands in Maya](images/HandCoach/MayaSelect_Gif.gif)<br>
 *Example of animated Hand Poking a box in Maya*
 
 
 **Recommended authoring tool**
 
-Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to use HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) to transform the way assets are created. The hands file provided is a Maya Binary File, so it is recommended to use Maya to animate and export the hands. If you prefer to use another 3D program, here is a <b>.FBX</b>: <a href="files\HandCoachMRTK_FBX.zip">           Download HandCoachMRTK_FBX.zip</a> to create your own controller setup. 
+Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to use HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) to transform the way assets are created. The hands file provided is a Maya Binary File, so it is recommended to use Maya to animate and export the hands. If you prefer to use another 3D program, here is a <b>.FBX</b>: <a href="files/HandCoachMRTK_FBX.zip">           Download HandCoachMRTK_FBX.zip</a> to create your own controller setup. 
 
 If using the downloadable maya Hand File provided, it is suggested to scale down the hands in unity to 0.6.
 
-![Example: Hand Coach rig in Maya](images\HandCoach\MayaExample.png)<br>
+![Example: Hand Coach rig in Maya](images/HandCoach/MayaExample.png)<br>
 *Rigged Hands*
 
 ### Technical Specs
@@ -108,26 +108,26 @@ If using the downloadable maya Hand File provided, it is suggested to scale down
 After you are satisfied with your animation
 * Select all joints: Select > Hierarchy
 
-     ![Example: Menu Location](images\HandCoach\Hierarchy.png)<br>
+     ![Example: Menu Location](images/HandCoach/Hierarchy.png)<br>
 * Bake out your animation: Switch to Animation > Key > Bake Animation
 
-     ![Example: Menu Location](images\HandCoach\BakeAnimation.png)<br>
+     ![Example: Menu Location](images/HandCoach/BakeAnimation.png)<br>
 * Delete the Controller Rig: Outliner > MainR_Grp or MainL_Grp
 
-     ![Example: Menu Location](images\HandCoach\ControllerRig.png)<br>
+     ![Example: Menu Location](images/HandCoach/ControllerRig.png)<br>
 
 * Export as FBX: Select JNT + Mesh: File > Export Selection (option box) > Export Selection
 
-     ![Example: Menu Location](images\HandCoach\OptionBox.png)<br>
+     ![Example: Menu Location](images/HandCoach/OptionBox.png)<br>
 
-     ![Example: Menu Location](images\HandCoach\SelectionExport.png)<br>
+     ![Example: Menu Location](images/HandCoach/SelectionExport.png)<br>
 
-     ![Example: Menu Location](images\HandCoach\FBXSelection.png)<br>
+     ![Example: Menu Location](images/HandCoach/FBXSelection.png)<br>
 
 
  When exporting as a FBX and brought into Unity, scale the hands down to 0.6. We found that this was perfect balance for displaying the hands. 
 
-![Example: Unity Settings](images\HandCoach\HandHintScale.png)<br>
+![Example: Unity Settings](images/HandCoach/HandHintScale.png)<br>
 *Unity Settings for HandCoach_R prefab found in MRTK*
 
 
@@ -145,7 +145,7 @@ After you are satisfied with your animation
 * If you notice distortion on the hands, you need to go to Unity's Quality settings increase the amount of bones. 
  Go to Unity's Edit > Project Settings > Quality > Other > Blend Weights. Make sure "4 bones" are selected to see Smooth Joints. 
 
-   ![Example: Menu Location](images\HandCoach\ProjectSettings.png)<br>
+   ![Example: Menu Location](images/HandCoach/ProjectSettings.png)<br>
 
 
 
