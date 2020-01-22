@@ -217,7 +217,7 @@ In the emulator, you will only see holograms that you render. But you will not s
 
 You may see an error message while installing the emulator, indicating that you need *"Visual Studio 2015 Update 1 and UWP tools version 1.2"*. There are three possible causes of this error:
 * You do not have a recent enough version of Visual Studio (Visual Studio 2019, Visual Studio 2017, or Visual Studio 2015 Update 1 or later). To correct this, install the latest release of Visual Studio.
-* You have a recent version of Visual Studio, but you do not have the Universal Windows Platform (UWP) tools installed. This is an optional feature for Visual Studio.
+* You have a recent version of Visual Studio, but you do not have the Universal Windows Platform (UWP) tools installed. This is an optional feature for Visual Studio. For HoloLens (1st Gen) you will need UWP Tools for Visual Studio 2015 or Visual Studio 2017.
 
 You may also see an error installing the emulator on a non-Pro/Enterprise/Education SKU of Windows or if you do not have Hyper-V feature enabled.
 * Read the [system requirements](#hololens-emulator-system-requirements) section above for a complete set of requirements.
