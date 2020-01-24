@@ -72,7 +72,7 @@ In this Tutorial, you'll learn how to share the movements of objects so that all
    
 12. Open the "Rocket Launcher_Complete Variant" prefab from Assets->Resources->Prefabs.
 
-13. Select the "LunarModule" GameObject and add the following two components: "Photon Transform View" and "Photon View"
+13. Select the "LunarModule" GameObject and add the following two components: "Photon Transform View" and "Photon View".
 
 14. With the "LunarModule" GameObject still selected, drag the "Photon Transform View" component into the "Observed Components" slot in the "Photon View" component.
 
