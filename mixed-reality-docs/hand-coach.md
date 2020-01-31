@@ -22,31 +22,43 @@ Hand Coach is 3D modeled hands that are triggered when the system does not detec
 
 The current interaction model represents a wide variety of gesture controls such as scrolling, far select, and near tap. Below is a full list of existing hand gestures provided in<a href="https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets"> MRTK</a>:
 
- 
- ![Example of Near Select](images/HandCoach/NearSelect.gif)<br>
-*    Example of Near Select - Used show how to select buttons or close interactable objects
+:::row:::
+    :::column:::
+       ![Example of Near Select](images/HandCoach/NearSelect.gif)<br>
+       **Example of Near Select - Used show how to select buttons or close interactable objects**<br>
+    :::column-end:::
+    :::column:::
+       ![Example of Air Tap](images/HandCoach/AirTap.gif)<br>
+        **Example of Air Tap - Used to show how to select objects that are far away**<br>
+    :::column-end:::
+    :::column:::
+       ![Example of Move](images/HandCoach/Move.gif)<br>
+       **Example of Moving an object in space-Used to show how to move a hologram in space**<br>
+    :::column-end:::
+    :::column:::
+       ![Example of Rotate](images/HandCoach/Rotate.gif)<br>
+       **Example of Rotate-Used to show how to rotate holograms or objects**<br>
+    :::column-end:::
+:::row-end:::
 
-![Example of Air Tap](images/HandCoach/AirTap.gif)<br>
-*    Example of Air Tap - Used to show how to select objects that are far away
-
-![Example of Move](images/HandCoach/Move.gif)<br>
-*    Example of Moving an object in space-Used to show how to move a hologram in space
-
-![Example of Rotate](images/HandCoach/Rotate.gif)<br>
-*    Example of Rotate-Used to show how to rotate holograms or objects
-
-![Example of Scale](images/HandCoach/Scale.gif)<br>
-*	Example of Scale- Used to show how to manipulate holograms to be bigger or smaller 
-
-![Example of Palm Up](images/HandCoach/PalmUp.gif)<br>
-*	Example of Palm up – Suggested use, to bring up hand menus
-
-![Example of HandFlip](images/HandCoach/HandFlip.gif)<br>
-*   Exmaple of Hand Flip – Another way to bring up Hand Menus 
-
-![Example of Scroll](images/HandCoach/Scoll.gif)<br>
-*	Example of Scroll – Used for scrolling a list or a long document 
-
+:::row:::
+    :::column:::
+       ![Example of Scale](images/HandCoach/Scale.gif)<br>
+       **Example of Scale- Used to show how to manipulate holograms to be bigger or smaller**<br>
+    :::column-end:::
+    :::column:::
+       ![Example of Palm Up](images/HandCoach/PalmUp.gif)<br>
+        **Example of Palm up – Suggested use, to bring up hand menus**<br>
+    :::column-end:::
+    :::column:::
+       ![Example of HandFlip](images/HandCoach/HandFlip.gif)<br>
+       **Exmaple of Hand Flip – Another way to bring up Hand Menus**<br>
+    :::column-end:::
+    :::column:::
+       ![Example of Scroll](images/HandCoach/Scoll.gif)<br>
+       **Example of Scroll – Used for scrolling a list or a long document**<br>
+    :::column-end:::
+:::row-end:::
 
 ## Design concepts
 
