@@ -89,7 +89,7 @@ We have done user research with different menus layouts and locations, the follo
     :::column:::
         ![Above fingers](images/AboveFingers.gif)<br>
         **Above fingers**<br>
-        1 - Hand fatigue due to holding hand for long time<br>
+        1 - Hand fatigue due to holding out hand for a long time<br>
         2 - Hand tracking issues on index and middle finger
     :::column-end:::
 :::row-end:::
