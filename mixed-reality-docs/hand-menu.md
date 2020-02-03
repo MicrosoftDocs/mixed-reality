@@ -90,7 +90,7 @@ We have done user research with different menus layouts and locations, the follo
         ![Above fingers](images/AboveFingers.gif)<br>
         **Above fingers**<br>
         1 - Hand fatigue due to holding out hand for a long time<br>
-        2 - Hand tracking issues on index and middle finger
+        2 - Hand tracking issues on index and middle fingers
     :::column-end:::
 :::row-end:::
 
@@ -107,7 +107,7 @@ We have done user research with different menus layouts and locations, the follo
         ![Top Fingertip](images/TopFingerTip.gif)
         **Top fingertip**<br>
         1 - Hand tracking issues<br>
-        2 - Hand fatigue holding hand above normal posture<br>
+        2 - Hand fatigue from holding hand above normal posture<br>
         3 - Issues pressing buttons with other fingers by accident due to limited space between fingers
     :::column-end:::
 :::row-end:::
@@ -119,7 +119,7 @@ We have done user research with different menus layouts and locations, the follo
         ![Back of the Arm](images/BackOfTheArm.gif)<br>
         **Back of the arm**<br>
         1 - Can trigger home button by accident<br>
-        2 - Not a natural or comfortable position for users
+        2 - Not a natural or comfortable position
     :::column-end:::
     :::column:::
     :::column-end:::
