@@ -3,7 +3,7 @@ title: HoloLens Emulator archive
 description: List of released builds of the Microsoft HoloLens Emulator.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 12/5/2019
+ms.date: 1/13/2020
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions
 ---
@@ -14,6 +14,7 @@ HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side.
 
 |  Build |  Release Date |  Notes | 
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.18362.1044](https://go.microsoft.com/fwlink/?linkid=2114824) | January 13, 2020 | January 2020 HoloLens 2 build.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1042](https://go.microsoft.com/fwlink/?linkid=2112589) | December 6, 2019 | December 2019 HoloLens 2 build.  Addresses an issue where a Holographic app running in the emulator will be suspended unexpectedly when displaying the pins panel.  Enables connectivity to a remote emulator when using the Perception Simulation API or the Perception Simulation Control app.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1034](https://go.microsoft.com/fwlink/?linkid=2106649) | October 8, 2019 | October 2019 HoloLens 2 build.  The emulator will prompt to update to a new version when running a version older than the latest available.  When using the emulator on the Windows 10 May 2019 Update or newer, the new NAT Configuration tab allows developers to open ports for applications running on separate devices to connect to the emulator and the Updates tab shows available emulator versions.  See the [HoloLens emulator documentation](using-the-hololens-emulator.md) for additional details. |
 |  [HoloLens 2 Emulator build 10.0.18362.1031](https://go.microsoft.com/fwlink/?linkid=2103724) | September 11, 2019 | September 2019 HoloLens 2 build.  The Network tab will appear in the emulator Tools window when running the emulator on the Windows 10 May 2019 Update or newer. |

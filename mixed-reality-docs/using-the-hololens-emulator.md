@@ -3,7 +3,7 @@ title: Using the HoloLens Emulator
 description: Using the HoloLens Emulator to test mixed reality apps on your PC without a physical HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 12/5/2019
+ms.date: 1/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
@@ -22,7 +22,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 Download the HoloLens Emulator.
 
 Versions: 
-* [HoloLens 2 Emulator (December 2019 Update)](https://go.microsoft.com/fwlink/?linkid=2112589).
+* [HoloLens 2 Emulator (January 2020 Update)](https://go.microsoft.com/fwlink/?linkid=2114824).
 * [HoloLens Emulator (1st Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find release notes and older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
@@ -217,7 +217,7 @@ In the emulator, you will only see holograms that you render. But you will not s
 
 You may see an error message while installing the emulator, indicating that you need *"Visual Studio 2015 Update 1 and UWP tools version 1.2"*. There are three possible causes of this error:
 * You do not have a recent enough version of Visual Studio (Visual Studio 2019, Visual Studio 2017, or Visual Studio 2015 Update 1 or later). To correct this, install the latest release of Visual Studio.
-* You have a recent version of Visual Studio, but you do not have the Universal Windows Platform (UWP) tools installed. This is an optional feature for Visual Studio.
+* You have a recent version of Visual Studio, but you do not have the Universal Windows Platform (UWP) tools installed. This is an optional feature for Visual Studio. For HoloLens (1st Gen) you will need UWP Tools for Visual Studio 2015 or Visual Studio 2017.
 
 You may also see an error installing the emulator on a non-Pro/Enterprise/Education SKU of Windows or if you do not have Hyper-V feature enabled.
 * Read the [system requirements](#hololens-emulator-system-requirements) section above for a complete set of requirements.
