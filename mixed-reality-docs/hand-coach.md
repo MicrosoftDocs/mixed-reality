@@ -77,9 +77,9 @@ For example, if you wish a user to press a button, a hand pressing a button woul
 
 We tested various hand sizes with the UI menus and felt that if the hands were true to size, it gave a menacing feeling but if they were too small then it was hard to see and understand the gesture. 
 
-**VO and hands**
+**Voice over and hands**
 
-Don’t expect users can listen to one set of instructions via VO and watch different instructions via Hand Coach. Sequence your instructions to help users focus versus compete for their attention to reduce sensory overload.
+Don’t expect users can listen to one set of instructions via voice over and watch different instructions via Hand Coach. Sequence your instructions to help users focus versus compete for their attention to reduce sensory overload.
 
 
 ## Can I create my own?
