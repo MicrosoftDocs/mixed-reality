@@ -17,7 +17,7 @@ The sections below detail information for each stage:
 
 | Step 1 | Step 2 | Step 3 | Step 4 |
 |----------|-------------------|-------------------|-------------------|
-| ![Visual Studio logo](images/visualstudio_logo.png) | ![Unity logo](images/unity_logo.png)| ![Unity icon](images/hololens2_icon.jpg) | ![MRTK logo](images/MRTKIcon.jpg) |
+| ![Visual Studio logo](images/visualstudio_logo.png) | ![Unity logo](images/final_unity_logo.png)| ![Unity icon](images/hololens2_icon.jpg) | ![MRTK logo](images/final_mrtk-small_logo.png) |
 | Download latest tools | Update Unity Project | Compile for ARM | Migrate to MRTK v2
 
 Prerequisities:
