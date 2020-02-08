@@ -31,8 +31,8 @@ If you run a community that you would like included on this page, please send an
 |Community Name|Country|City|Link|
 |---------|---------|---------|---------|
 |**Chicago AWE Nite**|USA|Chicago|[Link](https://www.meetup.com/AWENiteChicago/)|
-<!-- 
-|Row2     |         |         |         |
+|**VR Philippines**|Philoppines|N/A|[Link](https://www.facebook.com/vrphilippines/)|
+<!--
 |Row3     |         |         |         |
 |Row4     |         |         |         |
 |Row5     |         |         |         |
