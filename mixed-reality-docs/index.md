@@ -50,7 +50,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 If you're new to mixed reality, you will learn what it is and understand its capabilities.
 
 
-![mixed reality spectrum](images/RWtpZ1.jpeg)
+![Virtual hummingbird with human hand](images/01_MixedReality.png)
 
 ## What is mixed reality?
 
@@ -75,7 +75,7 @@ HoloLens lets you create holograms, which are objects made of light and sound th
 
 ## What can you do with mixed reality?
 
-### [A new vision for work](https://dynamics.microsoft.com/en-us/mixed-reality/overview/)
+### [A new vision for work](https://dynamics.microsoft.com//mixed-reality/overview/)
 Internally at Microsoft, we are creating mixed reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities: Remote Assist, Layout and Guides.
 
 <br>
@@ -137,7 +137,7 @@ Tomorrow’s opportunities are uncovered by building products today. The solutio
 
 ## What are the capabilities of HoloLens?
 
-### [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com/en-us/hololens/hardware)
+### [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com//hololens/hardware)
 
 HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.
 
@@ -179,8 +179,8 @@ A key to displaying content that looks realistic in holographic form is to mimic
 
 :::row:::
     :::column:::
-       [![Try it out](images/icon-hololensuser.jpg)](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
-        **[Try out mixed reality](https://www.microsoft.com/en-us/windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
+       [![Try it out](images/icon-hololensuser.jpg)](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
+        **[Try out mixed reality](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
     :::column-end:::
     :::column:::

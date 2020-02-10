@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Start designing and prototyping
-description: I’m ready to create something. Learn the basic concepts you need to begin designing and prototyping.
+description: If you're ready to create something, learn the basic concepts you need to begin designing and prototyping.
 author: grbury 
 ms.author: grbury
 ms.date: 08/24/2019
@@ -13,7 +13,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 # Start designing and prototyping
 
 
-![Core concepts](images/text_in_unity_viewingangle.jpg)
+![mixed reality design abstract](images/03_Design.png)
 
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
@@ -41,11 +41,11 @@ One of the advantages of developing apps for mixed reality is that there is a sp
 <br>
 
 ### [Keeping holograms in place - (Coordinate systems)](coordinate-systems.md)
-At their core, mixed reality apps place holograms in your world that look and sound like real objects. This involves precisely positioning those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created.
+At their core, mixed reality apps place holograms in your world to look and sound like real objects. This involves precisely positioning those holograms at places in the world that are meaningful to the user, whether it's their physical room or a virtual realm you've created.
 
 <br>
 
-### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping-design.md)
+### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
 
 <br>
@@ -95,6 +95,10 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
 
 <br>
 
+### [UX elements for the mixed reality](app-patterns-landingpage.md)
+Learn about the building blocks for spatial interactions and UI in mixed reality.
+<br>
+
 
 ---
 
@@ -102,22 +106,22 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
 
 :::row:::	
     :::column:::	
-       [![Learn Unity](images/unity_logo.png)](https://learn.unity.com/)<br>
+       [![Learn Unity](images/Final_unity_logo.png)](https://learn.unity.com/)<br>
         **[Learn Unity](https://learn.unity.com/)**<br>
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	
     :::column:::	
-        [![Mixed Reality Toolkit (MRTK)](images/MRTK-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
         With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
     :::column-end:::
     :::column:::	
-        [![Mixed Reality Design Labs](images/MRDL_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
         Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
     :::column-end:::		
     :::column:::	
-        [![Microsoft Maquette](images/Maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>	
         Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.	
     :::column-end:::	
@@ -133,7 +137,7 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
 
 :::row:::
     :::column:::
-       [![Understand the basics](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+       [![Understand the basics](images/icon-lightbulb.png)](index.md#understand-the-basics)<br>
         **[Understand the basics](index.md#understand-the-basics)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::

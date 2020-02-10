@@ -39,12 +39,12 @@ First, locate the app package manifest in your current project. By default, the 
 At the top of the manifest, add the uap5 schema and include it as an ignorable namespace:
 
 ```xml
-<Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
-         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
-         xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
-         xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+<Package xmlns:mp="https://schemas.microsoft.com/appx/2014/phone/manifest" 
+         xmlns:uap="https://schemas.microsoft.com/appx/manifest/uap/windows10" 
+         xmlns:uap2="https://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
+         xmlns:uap5="https://schemas.microsoft.com/appx/manifest/uap/windows10/5"
          IgnorableNamespaces="uap uap2 uap5 mp"
-         xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+         xmlns="https://schemas.microsoft.com/appx/manifest/foundation/windows10">
 ```
 
 Next specify the "MixedRealityModel" in the default tile for your application:
@@ -82,13 +82,13 @@ A bounding box can be used to optionally add an additional buffer region around 
 Support for the bounding box attribute will come with the Windows RS4 update as a property on the MixedRealityModel element. To define a bounding box first at the top of the app manifest add the uap6 schema and include it them as ignorable namespaces:
 
 ```xml
-<Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
-         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
-         xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
-         xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
-         xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6"
+<Package xmlns:mp="https://schemas.microsoft.com/appx/2014/phone/manifest" 
+         xmlns:uap="https://schemas.microsoft.com/appx/manifest/uap/windows10" 
+         xmlns:uap2="https://schemas.microsoft.com/appx/manifest/uap/windows10/2" 
+         xmlns:uap5="https://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+         xmlns:uap6="https://schemas.microsoft.com/appx/manifest/uap/windows10/6"
          IgnorableNamespaces="uap uap2 uap5 uap6 mp"
-         xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10">
+         xmlns="https://schemas.microsoft.com/appx/manifest/foundation/windows10">
 ```
 Next, on the MixedRealityModel set the SpatialBoundingBox property to define the bounding box: 
 
@@ -161,7 +161,7 @@ A bounding box can be used to add an additional buffer region around the object.
 > [!NOTE]
 > This feature will be supported as of the Windows RS4 update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 if you plan to use this feature
 
-You can define the activation behavior for a 3D secondaryTile to control how it reacts when a user selects it. This can be used to place 3D objects in the Mixed Reality home that are purley informative or decorative. The following activation behavior types are supported:
+You can define the activation behavior for a 3D secondaryTile to control how it reacts when a user selects it. This can be used to place 3D objects in the Mixed Reality home that are purely informative or decorative. The following activation behavior types are supported:
 1. Default: When a user selects the 3D secondaryTile the app is activated
 2. None: When the users selects the 3D secondaryTile nothing happens and the app is not activated.
 

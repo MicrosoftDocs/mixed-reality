@@ -16,7 +16,7 @@ Windows Mixed Reality devices support accessories. You'll pair supported accesso
 
 Two common scenarios for using accessories with HoloLens are as substitutes for the air tap gesture and the virtual keyboard. For this, the two most common accessories are the **HoloLens Clicker** and **Bluetooth keyboards**. Microsoft HoloLens includes a Bluetooth 4.1 radio and supports [Bluetooth HID](https://en.wikipedia.org/wiki/List_of_Bluetooth_profiles#Human_Interface_Device_Profile_.28HID.29) and [Bluetooth GATT](https://en.wikipedia.org/wiki/List_of_Bluetooth_profiles#Generic_Attribute_Profile_.28GATT.29) profiles.
 
-Windows Mixed Reality immersive headsets require accessories for input beyond [gaze](gaze.md) and [voice](voice-input.md). Supported accessories include **keyboard and mouse**, **gamepad**, and **[motion controllers](motion-controllers.md)**.
+Windows Mixed Reality immersive headsets require accessories for input beyond [gaze](gaze-and-commit.md) and [voice](voice-input.md). Supported accessories include **keyboard and mouse**, **gamepad**, and **[motion controllers](motion-controllers.md)**.
 
 ## Pairing Bluetooth accessories
 
@@ -36,7 +36,7 @@ Windows Mixed Reality [motion controllers](motion-controllers.md) are supported 
 
 ## HoloLens Clicker
 
-The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens Development Edition. The HoloLens Clicker allows a user to click and scroll with minimal hand motion as a replacement for the air-tap gesture. It is not a replacement for all [gestures](gestures.md). For instance, [bloom](gestures.md#bloom) and [resize or move](gestures.md#composite-gestures) gestures use hand motions. The HoloLens clicker is an orientation sensor device with a simple button. It connects to the HoloLens using Bluetooth Low Energy (BTLE).
+The HoloLens Clicker is the first peripheral device built specifically for HoloLens and is included with the HoloLens Development Edition. The HoloLens Clicker allows a user to click and scroll with minimal hand motion as a replacement for the air-tap gesture. It is not a replacement for all [gestures](gaze-and-commit.md#composite-gestures). For instance, [bloom](system-gesture.md#bloom) and [resize or move](gaze-and-commit.md#composite-gestures) gestures use hand motions. The HoloLens clicker is an orientation sensor device with a simple button. It connects to the HoloLens using Bluetooth Low Energy (BTLE).
 
 ![The HoloLens Clicker](images/hololens-clicker-500px.jpg)
 

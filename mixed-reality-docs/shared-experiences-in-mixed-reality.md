@@ -1,6 +1,6 @@
 ---
 title: Shared experiences in mixed reality
-description: Holographic apps may share spatial anchors from one HoloLens to another, enabling users to render a hologram at the same place in the real world across multiple devices.
+description: Holographic apps may share spatial anchors from one HoloLens to another, enabling users to render a hologram at the same place in the real world, across multiple devices.
 author: thetuvix
 ms.author: grbury
 ms.date: 02/10/2019
@@ -26,7 +26,7 @@ A presentation might be led by a single virtual user, while multiple users can c
 
 There are many ways to share, but we’ve found that most of them fall into three categories:
 
-* **Presentation**: When the same content is being shown to several users. For example: A professor is giving out a lecture to several students using the same holographic material being presented to everyone. The professor however could have his/her own hints and notes that may not be visible to others.
+* **Presentation**: When the same content is being shown to several users. For example: A professor is giving out a lecture to several students using the same holographic material being presented to everyone. The professor, however, could have his/her own hints and notes that may not be visible to others.
 * **Collaboration**: When people are working together to achieve some common goals. For example: The professor gave out a project to learn about performing a heart surgery. Students pair up and create a shared skills lab experience which allows medical students to collaborate on the heart model and learn.
 * **Guidance**: When one person is helping someone to solve a problem in a more one-to-one style interaction. For example: The professor giving guidance to a student when he/she is performing the heart surgery skills lab in the shared experience.
 
@@ -47,7 +47,7 @@ Group size makes for an important question because it influences:
 
 ### 3. Where is everyone?
 
-The strength of mixed reality comes into play when a shared experience can take place in the same location. We call that **co-located**. Conversely, when the group is distributed and at least one participant is not in the same physical space (as is often the case with VR) we call that a **remote experience**. Often it’s the case that your group has **both** co-located and remote participants (e.g., two groups in conference rooms).
+The strength of mixed reality comes into play when a shared experience can take place in the same location. We call that **co-located**. Conversely, when the group is distributed and at least one participant is not in the same physical space (as is often the case with VR) we call that a **remote experience**. Often, it’s the case that your group has **both** co-located and remote participants (e.g. two groups in conference rooms).
 
 ![Three people with holograph on table](images/three-people-with-holograph-on-table-500px.png)
 
@@ -66,13 +66,13 @@ This question is crucial because it influences:
 
 ### 4. When are they sharing?
 
-We typically think of **synchronous** experiences when shared experiences come to mind: We’re all doing it together. But include a single, virtual element that was added by someone else and you have an **asynchronous** scenario. Imagine a note, or voice memo, left in a virtual environment. How do you handle 100 virtual memos left on your design? What if they’re from dozens of people with different levels of privacy?
+We typically think of **synchronous** experiences when shared experiences come to mind: We’re all doing it together. But if we include a single, virtual element that was added by someone else, we have an **asynchronous** scenario. Imagine a note, or voice memo, left in a virtual environment. How do you handle 100 virtual memos left on your design? What if they’re from dozens of people with different levels of privacy?
 
 Consider your experiences as one of these categories of time:
 
 * **Synchronously**: Sharing the holographic experience at the same time. For example: Two students performing the skills lab at the same time.
 * **Asynchronously**: Sharing the holographic experience at different times. For example: Two students performing the skills lab but working on separate sections at different times.
-* **Both**: Your users will sometimes be sharing synchronously but other times asynchronously. For example: Professor grading the assignment performed by the students at a later time and leaving notes for student for the next day.
+* **Both**: Your users will sometimes be sharing synchronously but other times asynchronously. For example: A professor grading the assignment performed by the students at a later time and leaving notes for students for the next day.
 
 This question is important because it influences:
 
@@ -81,18 +81,18 @@ This question is important because it influences:
 
 ### 5. How similar are their physical environments?
 
-The likelihood of two identical real-life environments, outside of co-located experiences, is slim unless those environments have been designed to be identical. You’re more likely to have **similar** environments. For example, conference rooms are similar — they typically have a centrally located table surrounded by chairs. Living rooms, on the other hand, are usually **dissimilar** and can include any number of pieces of furniture in an infinite array of layouts.
+The likelihood of two identical real-life environments, outside of co-located experiences, is slim unless those environments have been designed to be identical. You’re more likely to have **similar** environments. For example, conference rooms are similar — they typically have a centrally-located table surrounded by chairs. Living rooms, on the other hand, are usually **dissimilar** and can include any number of pieces of furniture in an infinite array of layouts.
 
 ![Holograph on table](images/holograph-on-table-500px.png)
 
 Consider your sharing experiences fitting into one of these two categories:
 
 * **Similar**: Environments that tend to have similar furniture, ambient light and sound, physical room size. For example: Professor is in lecture hall A and students are in lecture hall B. Lecture hall A might have fewer chairs than B but they both may have a physical desk to place holograms on.
-* **Dissimilar**: Environments that are quite different in furniture settings, room sizes, light and sound considerations. For example: Professor is in a focus room whereas students are in a large lecture hall filled with students and teachers.
+* **Dissimilar**: Environments that are quite different in furniture settings, room sizes, light and sound considerations. For example: A professor is in a focus room whereas students are in a large lecture hall, filled with students and teachers.
 
-It's important to [think about the environment](environment-considerations-for-hololens.md) as it will influence:
+It's important to [think about the environment](environment-considerations-for-hololens.md), as it will influence:
 
-* How will people experience these objects. For example: If your experience works best on a table and the user has no table? Or on a flat floor surface but the user has a cluttered space.
+* How people will experience these objects. For example: If your experience works best on a table and the user has no table? Or on a flat floor surface but the user has a cluttered space.
 * Scale of the objects. For example: Placing a 6 feet human model on a table could be challenging but a heart model would work great.
 
 ### 6. What devices are they using?
@@ -111,7 +111,7 @@ For example, consider one of Skype’s scenarios from the HoloLens launch: a use
 
 An experience like this is a step-change from our current experience — applying the paradigm of video and voice to a new medium. But as we look to the future, we must better define the opportunity of our scenarios and build experiences that reflect the strength of mixed reality.
 
-Consider the [OnSight collaboration tool](https://www.youtube.com/watch?v=XtUyUJAVQ6w) developed by NASA’s Jet Propulsion Laboratory. Scientists working on data from the Mars rover missions can collaborate with colleagues in real-time within the data from the Martian landscape.
+Consider the [OnSight collaboration tool](https://www.youtube.com/watch?v=XtUyUJAVQ6w), developed by NASA’s Jet Propulsion Laboratory. Scientists working on data from the Mars rover missions can collaborate with colleagues in real-time within the data from the Martian landscape.
 
 ![Collaborating between colleagues separated remotely to plan work for the Mars Rover](images/onsight-nasa-jpl.gif)
 
@@ -119,23 +119,23 @@ Consider the [OnSight collaboration tool](https://www.youtube.com/watch?v=XtUyUJ
 
 Experiences like OnSight present new opportunities to collaborate. From physically pointing out elements in the virtual environment to standing next to a colleague and sharing their perspective as they explain their findings. OnSight uses the lens of immersion and presence to rethink sharing experiences in mixed reality.
 
-Intuitive collaboration is the bedrock of conversation and working together and understanding how we can apply this intuition to the complexity of mixed reality is crucial. If we can not only recreate sharing experiences in mixed reality but supercharge them, it will be a paradigm shift for the future of work. Designing for shared experiences in mixed reality is new and exciting space — and we’re only at the beginning.
+Intuitive collaboration is the bedrock of conversation, working together and understanding how we can apply this intuition to the complexity of mixed reality is crucial. If we can not only recreate sharing experiences in mixed reality but supercharge them, it will be a paradigm shift for the future of work. Designing for shared experiences in mixed reality is new and exciting space — and we’re only at the beginning.
 
 ## Get started building shared experiences
 
 Depending on your application and scenario, there will be various requirements to achieve your desired experience. Some of these include:
 
-* **Match-making**: Ability to create sessions, advertise session, and discover and invite specific people, both locally and remotely to join your session.
+* **Match-making**: Ability to create sessions, advertise sessions, discover and invite specific people, both locally and remotely to join your session.
 * **Anchor sharing**: Ability to align coordinates across multiple devices in a common local space, so holograms appear in the same place for all people.
-* **Networking**: Ability to have positions, interactions, and movements of people and holograms synchronized in real-time across all participants.
+* **Networking**: Ability to have positions, interactions and movements of people and holograms synchronized in real-time across all participants.
 * **State storage**: Ability to store hologram characteristics and locations in space for mid-session join, recall at a later time, and robustness against network issues.
 
-The key to shared experiences is multiple users seeing the same holograms in the world on their own device, frequently done by sharing anchors to align coordinates across devices.
+The key to shared experiences is having multiple users seeing the same holograms in the world on their own device, frequently done by sharing anchors to align coordinates across devices.
 
 To share anchors, use the [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors):
 
 * First the user places the hologram.
-* App creates a [spatial anchor](spatial-anchors.md) to pin that hologram precisely in the world.
+* App creates a [spatial anchor](spatial-anchors.md), to pin that hologram precisely in the world.
 * The anchors can be shared to HoloLens, iOS and Android devices via [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/).
 
 With a shared spatial anchor, the app on each device now has a [common coordinate system](coordinate-systems.md) in which they can place content. Now the app can ensure to position and orient the hologram at the same location.
@@ -154,14 +154,14 @@ Leverage [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchor
 
 Leverage built-in Miracast support, for local users when you have a supported Miracast receiver, such as a PC or TV – no additional app code is needed.
 
-Leverage [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) in your app, for remote users or when you have non-Miracast devices that you’d like to share to.  Enabling a WebRTC connection enables 1:1 audio/video streams between users, with a data channel for messaging across devices as well.  The mixed reality implementation optimizes for HoloLens, by providing mixed reality capture video stream of the view of the HoloLens user to others.  If you desire to scale up video streaming to multiple remote clients, an [MCU service provider](https://webrtcglossary.com/mcu/) (Multipoint Conferencing Unit) is typically used, such as [SignalWire](https://signalwire.com/).  A one-click SignalWire deployment to Azure is available via [Freeswitch](https://github.com/andywolk/azure-freeswitch-gpu-windows).
+Leverage [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) in your app, for remote users or when you have non-Miracast devices that you’d like to share to.  Enabling a WebRTC connection enables 1:1 audio/video streams between users, with a data channel for messaging across devices, as well.  The mixed reality implementation optimizes for HoloLens, by providing mixed reality capture video stream of the view of the HoloLens user to others.  If you desire to scale up video streaming to multiple remote clients, an [MCU service provider](https://webrtcglossary.com/mcu/) (Multipoint Conferencing Unit) is typically used, such as [SignalWire](https://signalwire.com/).  A one-click SignalWire deployment to Azure is available via [Freeswitch](https://github.com/andywolk/azure-freeswitch-gpu-windows).
 
 > [!NOTE]
 > Please note that SignalWire is a paid service and is not owned/affiliated with Microsoft.
 
 ## Presenter-Spectator applications and Demos
 
-Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) to bring [specator view functionality](spectator-view.md) into your app.  Enable other devices (HL, Android, iOS, and video cameras) to see what the HoloLens sees from a different perspective in the same location, and receive updates on interactions of the host HoloLens user interacting with the holograms.  Watch, take pictures, and record video of what the host does with the holograms in the application from your own spatial perspective with the spectator companion of the same app.
+Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) to bring [spectator view functionality](spectator-view.md) into your app.  Enable other devices (HL, Android, iOS, and video cameras) to see what the HoloLens sees from a different perspective in the same location, and receive updates on interactions of the host HoloLens user interacting with the holograms.  Watch, take pictures, and record video of what the host does with the holograms in the application from your own spatial perspective with the spectator companion of the same app.
 
 **Note:** Pictures are taken via screenshot on iOS/Android devices.
 

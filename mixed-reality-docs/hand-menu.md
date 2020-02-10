@@ -8,16 +8,20 @@ ms.topic: article
 keywords: hand, menu, button, quick access, layout
 ---
 # Hand menu
-![Ulnar side hand location](images/MRTK_UX_HandMenu.png)
+
+![Ulnar side hand location](images/UX/UX_Hero_HandMenu.jpg)
 
 Hand menus allow users to quickly bring up hand-attached UI for frequently used functions. 
 
 Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand menu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup).
 
+<br>
+
+---
 
 ## Behavior best practices
 **A. Keep the number of buttons small:** 
-Due to the close distance between a hand-locked menu and the eyes and also the user's tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), we recommend keeping the number of buttons small. Based on our exploration, one column with three buttons work well by keeping all the content within the field of view (FOV) even when users move their hands to the center of the FOV. 
+Due to the close distance between a hand-locked menu and the eyes and also the user's tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), we recommend keeping the number of buttons small. Based on our exploration, one column with three buttons works well by keeping all the content within the field of view (FOV) even when a user moves their hands to the center of the FOV. 
 
 **B. Utilize hand menu for quick action:** 
 Raising an arm and maintaining the position could easily cause arm fatigue. Use a hand-locked method for the menu requiring a short interaction. If your menu is complex and requires extended interaction times, consider using world-locked or body-locked instead. 
@@ -37,6 +41,9 @@ If the hand menu buttons are placed too close to the home button, it may get acc
 **G. Test, test, test:**
 People have different bodies, with different thresholds for comfort and discomfort, etc. Be sure to test out your design on and get feedback from a variety of people.
 
+<br>
+
+---
 
 ## Hand menu placement best practices
 
@@ -45,69 +52,112 @@ In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The u
 Below are 2 recommended placements based on our explorations:
 
 
-![Ulnar side hand location](images/UlnarSideHandMenu.gif)
+:::row:::
+    :::column:::
+        ![Ulnar side hand location](images/UlnarSideHandMenu.gif)<br>
+        **A. Ulnar inside palm**<br>
+        This position is reliable because the hands do not overlap each other. This is critical for accurate hand detection and tracking.
+    :::column-end:::
+    :::column:::
+        ![Ulnar side hand location](images/UlnarAboveHandMenu.gif)<br>
+        **B. Ulnar above hand**<br>
+        This location is comfortable for users because they don't need to raise their arm too much to interact with the hand menu. We recommend placing menus **13cm** above the palm and align the buttons inside the ulnar palm. [Read more about the optimal button size](interactable-object.md)<br>
+        <br>
+        For technical reasons we recommend this location with one required implementation: the developer will need to freeze the menu once the user's opposite hand gets close to interacting with it. This will avoid jitteriness from overlapping hands and also allows for a faster targeting of the buttons.<br>
+        <br>
+        HoloLens 2 cameras identify hands accurately when they are separate from each other. Any overlapping hands can cause hand menus move away from the anchor location.<br>
+    :::column-end:::
+:::row-end:::
 
-**A. Ulnar inside palm:** This position is reliable because the hands do not overlap each other. This is critical for accurate hand detection and tracking.
+
 
 <br>
 
-![Ulnar side hand location](images/UlnarAboveHandMenu.gif)
-
-**B. Ulnar above hand:**
-This location is comfortable for users because they don't need to raise their arm too much to interact with the hand menu. We recommend placing menus **13cm** above the palm and align the buttons inside the ulnar palm.
-
-For technical reasons we recommend this location with one required implementation: the developer will need to freeze the menu once the user's opposite hand gets close to interacting with it. This will avoid jitteriness from overlapping hands and also allows for a faster targeting of the buttons.
-
-HoloLens 2 cameras identify hands accurately when they are separate from each other. Any overlapping hands can cause hand menus move away from the anchor location.
-
-[Read more about the optimal button size](interactable-object.md)
-
+---
 
 ## Menu positions that are not recommended
 We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
 
-![Above arm](images/AboveArm.gif)
 
-**Above the arm**
-1. Difficult to maintain good hand tracking
-2. Causes user fatigue due to unnatural position
-
-<br>
-
-![Above fingers](images/AboveFingers.gif)
-
-**Above fingers**
-1. Hand fatigue due to holding hand for long time
-2. Hand tracking issues on index and middle finger
-
-<br>
-
-![Above center palm](images/handCenter.gif)
-
-**Above-center palm**
-1. Hand tracking issues due to overlapping hands
-2. Hand fatigue due to holding hands for long time in order to interact with menus
+:::row:::
+    :::column:::
+        ![Above arm](images/AboveArm.gif)<br>
+        **Above the arm**<br>
+        1 - Difficult to maintain good hand tracking<br>
+        2 - Causes user fatigue due to unnatural position
+    :::column-end:::
+    :::column:::
+        ![Above fingers](images/AboveFingers.gif)<br>
+        **Above fingers**<br>
+        1 - Hand fatigue due to holding out hand for a long time<br>
+        2 - Hand tracking issues on index and middle fingers
+    :::column-end:::
+:::row-end:::
 
 <br>
 
-![Top Fingertip](images/TopFingerTip.gif)
-
-**Top fingertip**
-1. Hand tracking issues
-2. Hand fatigue holding hand above normal posture
-3. Issues pressing buttons with other fingers by accident due to limited space between fingers
+:::row:::
+    :::column:::
+        ![Above center palm](images/handCenter.gif)<br>
+        **Above-center palm**<br>
+        1 - Hand tracking issues due to overlapping hands<br>
+        2 - Hand fatigue due to holding hands for long time in order to interact with menus
+    :::column-end:::
+    :::column:::
+        ![Top Fingertip](images/TopFingerTip.gif)
+        **Top fingertip**<br>
+        1 - Hand tracking issues<br>
+        2 - Hand fatigue from holding hand above normal posture<br>
+        3 - Issues pressing buttons with other fingers by accident due to limited space between fingers
+    :::column-end:::
+:::row-end:::
 
 <br>
 
-![Back of the Arm](images/BackOfTheArm.gif)
+:::row:::
+    :::column:::
+        ![Back of the Arm](images/BackOfTheArm.gif)<br>
+        **Back of the arm**<br>
+        1 - Can trigger home button by accident<br>
+        2 - Not a natural or comfortable position
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
 
-**Back of the arm**
-1. Can trigger home button by accident
-2. Not a natural or comfortable position for users
+<br>
+
+---
+
+## Hand menu in MRTK (Mixed Reality Toolkit) for Unity
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. HandConstraintPalmUp solver script allows you easily attach any objects to the hands with various configurable options.
+
+* [MRTK - Hand Menu with HandConstraint and HandConstraintPalmUp
+](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup)
+
+
+<br>
+
+---
 
 
 ## See also
 
+* [Cursors](cursors.md)
+* [Hand ray](point-and-commit.md)
+* [Button](button.md)
 * [Interactable object](interactable-object.md)
-* [Direct manipulation with hands](direct-manipulation.md)
-* [Hands and motion controllers](hands-and-tools.md)
+* [Bounding box and App bar](app-bar-and-bounding-box.md)
+* [Manipulation](direct-manipulation.md)
+* [Hand menu](hand-menu.md)
+* [Near menu](near-menu.md)
+* [Object collection](object-collection.md)
+* [Voice command](voice-input.md)
+* [Keyboard](keyboard.md)
+* [Tooltip](tooltip.md)
+* [Slate](slate.md)
+* [Slider](slider.md)
+* [Shader](shader.md)
+* [Billboarding and tag-along](billboarding-and-tag-along.md)
+* [Displaying progress](progress.md)
+* [Surface magnetism](surface-magnetism.md)

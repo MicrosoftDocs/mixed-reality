@@ -12,8 +12,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
 
 # Learn the tools and architecture
 
-
-![Teams working with materials in the Mixed Reality Academy](images/Development_Hero.png)
+![Abstract 3D sphere](images/07_Development.png)
 
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
@@ -73,8 +72,15 @@ The HoloLens 2 tutorials are designed to help developers learn both techniques a
 
 <br>
 
-### [Example Unity scenes in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
+### [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor)
 The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
+>[!NOTE]
+>Requires the install of MRTK Foundation and Example Unity packages.
+
+### [Eye tracking examples (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html)
+This page covers how to get quickly started with using eye tracking in MRTK by building on our provided MRTK eye tracking examples.
+>[!NOTE]
+>Requires the install of MRTK Foundation and Example Unity packages.
 
 <br>
 
@@ -119,7 +125,7 @@ All of the essentials you need to start writing a mixed reality app using Direct
 
 :::row:::
     :::column:::
-       [![Understand the basics](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+       [![Understand the basics](images/icon-lightbulb.png)](index.md#understand-the-basics)<br>
         **[Understand the basics](index.md#understand-the-basics)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::

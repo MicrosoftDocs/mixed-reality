@@ -20,6 +20,29 @@ Unity includes full support for spatial mapping, which is exposed to developers 
 
 To use spatial mapping in your app, the spatialPerception capability needs to be set in your AppxManifest.
 
+## Device support
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Spatial mapping</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
+</table>
+
 ## Setting the SpatialPerception capability
 
 In order for an app to consume spatial mapping data, the SpatialPerception capability must be enabled.
@@ -456,6 +479,6 @@ For more information on using Spatial Mapping with Mixed Reality Toolkit v2, see
 * [Coordinate systems](coordinate-systems.md)
 * [Coordinate systems in Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>
-* <a href="http://docs.unity3d.com/ScriptReference/MeshFilter.html" target="_blank">UnityEngine.MeshFilter</a>
-* <a href="http://docs.unity3d.com/ScriptReference/MeshCollider.html" target="_blank">UnityEngine.MeshCollider</a>
-* <a href="http://docs.unity3d.com/ScriptReference/Bounds.html" target="_blank">UnityEngine.Bounds</a>
+* <a href="https://docs.unity3d.com/ScriptReference/MeshFilter.html" target="_blank">UnityEngine.MeshFilter</a>
+* <a href="https://docs.unity3d.com/ScriptReference/MeshCollider.html" target="_blank">UnityEngine.MeshCollider</a>
+* <a href="https://docs.unity3d.com/ScriptReference/Bounds.html" target="_blank">UnityEngine.Bounds</a>

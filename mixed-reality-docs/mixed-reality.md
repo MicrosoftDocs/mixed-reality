@@ -12,26 +12,36 @@ keywords: mixed reality, holographic, ar, vr, mr, xr, augmented reality, virtual
 
 # What is mixed reality?
 
-Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations. It is made possible by advancements in computer vision, graphical processing power, display technology, and input systems. The term *mixed reality* was originally introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](http://etclab.mie.utoronto.ca/people/paul_dir/IEICE94/ieice.html)." Their paper introduced the concept of the *virtuality continuum*, and focused on how the categorization of taxonomy applied to displays. Since then, the application of mixed reality goes beyond displays. It also includes environmental input, spatial sound, and location.
+![Point and commit with hands on HoloLens 2](images/02_MixedRealitySlashMixedReality.png)
 
-![The mixed reality spectrum](images/MixedRealitySpectrum-worlds.jpg)<br>
-*Mixed reality is the result of blending the physical world with the digital world.*
+Mixed reality is the result of blending the physical world with the digital world. Mixed reality is the next evolution in human, computer, and environment interaction and unlocks possibilities that before now were restricted to our imaginations. It is made possible by advancements in computer vision, graphical processing power, display technology, and input systems. The term *mixed reality* was originally introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](https://etclab.mie.utoronto.ca/people/paul_dir/IEICE94/ieice.html)." Their paper introduced the concept of the *virtuality continuum*, and focused on how the categorization of taxonomy applied to displays. Since then, the application of mixed reality goes beyond displays. It also includes environmental input, spatial sound, and location.
+
+![The mixed reality spectrum](images/mixedrealityspectrum-worlds.png)<br>
+*Image: Mixed reality is the result of blending the physical world with the digital world.*
 
 <br>
+
+---
 
 ## Environmental input and perception
 
 Over the past several decades, the relationship between human and computer input has been well explored. It even has a widely studied discipline known as *human computer interaction* or HCI. Human input happens through a variety of means, including keyboards, mice, touch, ink, voice, and even Kinect skeletal tracking.
 
-Advancements in sensors and processing are giving rise to a new area of computer input from environments. The interaction between computers and environments is effectively environmental understanding or *perception*. Hence the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world (e.g. [head tracking](coordinate-systems.md)), surfaces and boundaries (e.g. [spatial mapping](spatial-mapping.md) and [spatial understanding](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)), ambient lighting, environmental sound, object recognition, and location.
-
-
-![Venn diagram showing interactions between computers, humans and environments](images/mixed-reality-venn-diagram-300px.png)<br> 
-*The interactions between between computers, humans and environments.*
+Advancements in sensors and processing are giving rise to a new area of computer input from environments. The interaction between computers and environments is effectively environmental understanding or *perception*. Hence the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world (e.g. [head tracking](coordinate-systems.md)), surfaces and boundaries (e.g. [spatial mapping](spatial-mapping.md) and [scene understanding](scene-understanding.md)), ambient lighting, environmental sound, object recognition, and location.
 
 <br>
 
-Now, the combination of all three--computer processing, human input, and environmental input--sets the opportunity to create true mixed reality experiences. Movement through the physical world can translate to movement in the digital world. Boundaries in the physical world can influence application experiences, such as game play, in the digital world. Without environmental input, experiences cannot blend between physical and digital realities.
+![Venn diagram showing interactions between computers, humans and environments](images/mixed-reality-venn-diagram-300px.png)<br> 
+*Image: The interactions between between computers, humans and environments.*
+
+<br>
+
+Now, the combination of all three--**computer processing, human input, and environmental input**--sets the opportunity to create true mixed reality experiences. Movement through the physical world can translate to movement in the digital world. Boundaries in the physical world can influence application experiences, such as game play, in the digital world. Without environmental input, experiences cannot blend between physical and digital realities.<br>
+
+<br>
+
+---
+
 
 ## The mixed reality spectrum
 
@@ -39,7 +49,7 @@ Since mixed reality blends both physical and digital worlds, these two realities
 
 <br>
 
->[!VIDEO https://www.youtube.com/embed/_xpI0JosYUk]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/_xpI0JosYUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
@@ -53,8 +63,8 @@ Most mobile phones on the market today have little to no environmental understan
 
 <br>
 
-![The mixed reality spectrum](images/MixedRealitySpectrum.jpg)<br>
-*The mixed reality specturm*
+![The mixed reality spectrum](images/mixedrealityspectrum.png)<br>
+*Image: The mixed reality spectrum*
 
 <br>
 
@@ -72,15 +82,17 @@ There are two main types of devices that deliver Windows Mixed Reality experienc
 
 <table>
 <tr>
-<th width="20%"> Characteristic</th><th width="40%"> Holographic Devices</th><th width="40%"> Immersive Devices</th>
+<th width="30%"> Characteristic</th><th width="35%"> Holographic devices</th><th width="35%"> Immersive devices</th>
 </tr><tr>
-<td> Example Device</td><td> Microsoft HoloLens<br /> <img alt="Microsoft HoloLens image" width="300" height="169" src="images/mshololens-hero1-whitbg-rgb-300px.png" /></td><td> Acer Windows Mixed Reality Development Edition<br /> <img alt="Acer Windows Mixed Reality Development Edition image" width="300" height="169" src="images/acer-windows-mixed-reality-development-edition-headset-300px.jpg" /></td>
+<td><strong>Example device</strong></td><td> Microsoft HoloLens<br><br> <img alt="Microsoft HoloLens 2 image" width="300" height="169" src="images/HoloLens2.jpg" /></td><td> Samsung HMD Odyssey+<br><br> <img alt="Samsung HMD Odyssey+ image" width="300" height="169" src="images/Samsung-HMD-Odyssey.jpg" /></td>
 </tr><tr>
-<td> Display</td><td> <i>See-through display.</i> Allows user to see the physical environment while wearing the headset.</td><td> <i>Opaque display.</i> Blocks out the physical environment while wearing the headset.</td>
+<td><strong>Display</strong></td><td> See-through display. Allows user to see the physical environment while wearing the headset.</td><td> Opaque display. Blocks out the physical environment while wearing the headset.</td>
 </tr><tr>
-<td> Movement</td><td> Full six-degrees-of-freedom movement, both rotation and translation.</td><td> Full six-degrees-of-freedom movement, both rotation and translation.</td>
+<td><strong>Movement</strong></td><td> Full six-degrees-of-freedom movement, both rotation and translation.</td><td> Full six-degrees-of-freedom movement, both rotation and translation.</td>
 </tr>
 </table>
+
+
 
 Note, whether a device is connected to or tethered to a separate PC (via USB cable or Wi-Fi) or self-contained (untethered) does not reflect whether a device is holographic or immersive. Certainly, features that improve mobility lead to better experiences, and both holographic and immersive devices could be tethered or untethered.
 
@@ -89,8 +101,8 @@ Technological advancement is what has enabled mixed reality experiences. There a
 
 <br>
 
-![Device types in the mixed reality spectrum](images/MixedRealitySpectrum-devices.jpg)<br>
-*Where devices exist on the mixed reality spectrum*
+![Device types in the mixed reality spectrum](images/Final_WhatIsMixedReality07.png)<br>
+*Image: Where devices exist on the mixed reality spectrum*
 
 Often, it is best to think what type of experience an application or game developer wants to create. The experiences will typically target a specific point or part on the spectrum. Then, developers should consider the capabilities of devices they want to target. For example, experiences that rely on the physical world will run best on HoloLens.
 * **Towards the left (near physical reality).** Users remain present in their physical environment and are never made to believe they have left that environment.

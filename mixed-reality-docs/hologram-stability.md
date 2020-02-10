@@ -22,9 +22,9 @@ When environment issues, inconsistent or low rendering rates, or other app probl
 * **Accuracy.** Once the hologram is world-locked and placed in the real world, it should stay where it was placed, relative to the surrounding environment, independent of user motion or small and sparse environment changes. If a hologram later appears in an unexpected location, it is an *accuracy* problem. Such scenarios can happen if two distinct rooms look identical.
 * **Jitter.** Users observe this as high frequency shaking of a hologram. This can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](sensor-tuning.md).
 * **Judder.** Low rendering frequencies result in uneven motion and double images of holograms. This is especially noticeable in holograms with motion. Developers need to maintain a [constant 60 FPS](hologram-stability.md#frame-rate).
-* **Drift.** Users see this as hologram appears to move away from where it was originally placed. This happens when holograms are placed far away from [spatial anchors](spatial-anchors.md), particularly in parts of the environment that have not been fully mapped. Creating holograms close to spatial anchors lowers the likelihood of drift.
-* **Jumpiness.** When a hologram "pops" or "jumps" away from it's location occasionally. This can occur as tracking adjusts holograms to match updated understanding of your environment.
-* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. This occurs when holograms are not on the [stabilization plane](hologram-stability.md#stabilization-plane), and if the HoloLens is not [calibrated](calibration.md) for the current user. The user can rerun the [calibration](calibration.md) application to fix this. Developers can update the stabilization plane to further enhance stability.
+* **Drift.** Users see this as a hologram appears to move away from where it was originally placed. This happens when holograms are placed far away from [spatial anchors](spatial-anchors.md), particularly in parts of the environment that have not been fully mapped. Creating holograms close to spatial anchors lowers the likelihood of drift.
+* **Jumpiness.** When a hologram "pops" or "jumps" away from its location occasionally. This can occur as tracking adjusts holograms to match updated understanding of your environment.
+* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. This occurs when the application has not fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens is not [calibrated](calibration.md) for the current user. The user can rerun the [calibration](calibration.md) application to fix this. Developers can update the stabilization plane to further enhance stability.
 * **Color separation.** The displays in HoloLens are a color sequential display, which flash color channels of red-green-blue-green at 60Hz (individual color fields are shown at 240Hz). Whenever a user tracks a moving hologram with his or her eyes, that hologram's leading and trailing edges separate in their constituent colors, producing a rainbow effect. The degree of separation is dependent upon the speed of the hologram. In some rarer cases, moving ones head rapidly while looking at a stationary hologram can also result in a rainbow effect. This is called *[color separation](hologram-stability.md#color-separation)*.
 
 ## Frame rate
@@ -45,7 +45,7 @@ By rendering at 60 FPS, you are doing three things to help make stable holograms
 On a related note, the operating system will throttle applications down to 30 FPS when [mixed reality capture](mixed-reality-capture.md) is running.
 
 **Performance analysis**
- There are a variety of tools that can be used to benchmark your application frame rate such as:
+ There are a variety of tools that can be used to benchmark your application frame rate, such as:
 * GPUView
 * Visual Studio Graphics Debugger
 * Profilers built into 3D engines such as Unity
@@ -60,7 +60,7 @@ The human visual system integrates multiple distance-dependent signals when it f
 * [Binocular vision](https://en.wikipedia.org/wiki/Stereopsis) - Disparities between the left- and right-eye images that are dependent on an object's distance away from your fixation point.
 * Shading, relative angular size, and other monocular (single eye) cues.
 
-Convergence and accommodation are unique because they are extra-retinal cues related to how the eyes change to perceive objects at different distances. In natural viewing, convergence and accommodation are linked. When the eyes view something near (e.g. your nose) the eyes cross and accommodate to a near point. When the eyes view something at infinity the eyes become parallel and the eye accommodates to infinity. Users wearing HoloLens will always accommodate to 2.0m to maintain a clear image because the HoloLens displays are fixed at an optical distance approximately 2.0m away from the user. App developers control where users' eyes converge by placing content and holograms at various depths. When users accommodate and converge to different distances, the natural link between the two cues are broken and this can lead to visual discomfort or fatigue, especially when the magnitude of the conflict is large. Discomfort from the vergence-accommodation conflict can be avoided or minimized by keeping content that users converge to as close to 2.0m as possible (i.e. in a scene with lots of depth place the areas of interest near 2.0m when possible). When content cannot be placed near 2.0m discomfort from the vergence-accomodation conflict is greatest when user’s gaze back and forth between different distances. In other words, it is much more comfortable to look at a stationary hologram that stays 50cm away than to look at a hologram 50cm away that moves toward and away from you over time.
+Convergence and accommodation are unique because they are extra-retinal cues related to how the eyes change to perceive objects at different distances. In natural viewing, convergence and accommodation are linked. When the eyes view something near (e.g. your nose), the eyes cross and accommodate to a near point. When the eyes view something at infinity, the eyes become parallel and the eye accommodates to infinity. Users wearing HoloLens will always accommodate to 2.0m to maintain a clear image because the HoloLens displays are fixed at an optical distance approximately 2.0m away from the user. App developers control where users' eyes converge by placing content and holograms at various depths. When users accommodate and converge to different distances, the natural link between the two cues are broken, which can lead to visual discomfort or fatigue, especially when the magnitude of the conflict is large. Discomfort from the vergence-accommodation conflict can be avoided or minimized by keeping content that users converge to as close to 2.0m as possible (i.e. in a scene with lots of depth place the areas of interest near 2.0m, when possible). When content cannot be placed near 2.0m, discomfort from the vergence-accommodation conflict is greatest when user’s gaze back and forth between different distances. In other words, it is much more comfortable to look at a stationary hologram that stays 50cm away than to look at a hologram 50cm away that moves toward and away from you over time.
 
 Placing content at 2.0m is also advantageous because the two displays are designed to fully overlap at this distance. For images placed off this plane, as they move off the side of the holographic frame they will disappear from one display while still being visible on the other. This binocular rivalry can be disruptive to the depth perception of the hologram.
 
@@ -69,20 +69,49 @@ Placing content at 2.0m is also advantageous because the two displays are design
 ![Optimal distance for placing holograms from the user](images/distanceguiderendering-750px.png)
 
 **Clip Planes**
- For maximum comfort we recommend clipping render distance at 85cm with fadeout of content starting at 1m. In applications where holograms and users are both stationary holograms can be viewed comfortably as near as 50cm. In those cases, applications should place a clip plane no closer than 30cm and fade out should start at least 10cm away from the clip plane. Whenever content is closer than 85cm it is important to ensure that users do not frequently move closer or farther from holograms or that holograms do not frequently move closer to or farther from the user as these situations are most likely to cause discomfort from the vergence-accommodation conflict. Content should be designed to minimize the need for interaction closer than 85cm from the user, but when content must be rendered closer than 85cm a good rule of thumb for developers is to design scenarios where users and/or holograms do not move in depth more than 25% of the time.
+ For maximum comfort, we recommend clipping render distance at 85cm with fadeout of content starting at 1m. In applications where holograms and users are both stationary, holograms can be viewed comfortably as near as 50cm. In those cases, applications should place a clip plane no closer than 30cm and fade out should start at least 10cm away from the clip plane. Whenever content is closer than 85cm, it is important to ensure that users do not frequently move closer or farther from holograms or that holograms do not frequently move closer to or farther from the user as these situations are most likely to cause discomfort from the vergence-accommodation conflict. Content should be designed to minimize the need for interaction closer than 85cm from the user, but when content must be rendered closer than 85cm, a good rule of thumb for developers is to design scenarios where users and/or holograms do not move in depth more than 25% of the time.
 
 **Best practices**
  When holograms cannot be placed at 2m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25m and 5m. In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).
 
-## Stabilization plane
+## Reprojection
+HoloLens performs a sophisticated hardware-assisted holographic stabilization technique known as reprojection. This takes into account motion and change of the point of view (CameraPose) as the scene animates and the user moves their head.  Applications need to take specific actions to best use reprojection.
+
+
+There are four main types of reprojection
+* **Depth Reprojection:**  This produces the best results with the least amount of effort from the application.  All parts of the rendered scene are independently stabilized based on their distance from the user.  Some rendering artifacts may be visible where there are sharp changes in depth.  This option is only available on HoloLens 2 and Immersive Headsets.
+* **Planar Reprojection:**  This allows the application precise control over stabilization.  A plane is set by the application and everything on that plane will be the most stable part of the scene.  The further a hologram is away from the plane, the less stable it will be.  This option is available on all Windows MR platforms.
+* **Automatic Planar Reprojection:**  The system sets a stabilization plane using information in the depth buffer.  This option is available on HoloLens generation 1 and HoloLens 2.
+* **None:** If the application does nothing, Planar Reprojection is used with the stabilization plane fixed at 2 meters in the direction of the user's head gaze.  This will usually produce substandard results.
+
+Applications need to take specific actions to enable the different types of reprojection
+* **Depth Reprojection:** The application submits their depth buffer to the system for every rendered frame.  On Unity, this is done with the "Enable Depth Buffer Sharing" option in the Player Settings pane.  DirectX apps call CommitDirect3D11DepthBuffer.  The application should not call SetFocusPoint.
+* **Planar Reprojection:** On every frame, applications tell the system the location of a plane to stabilize.  Unity applications call SetFocusPointForFrame and should have "Enable Depth Buffer Sharing" disabled.  DirectX apps call SetFocusPoint and should not call CommitDirect3D11DepthBuffer.
+* **Automatic Planar Reprojection:** To enable this, the application needs to submit their depth buffer to the system as they would for Depth Reprojection.  On HoloLens 2, the application then needs to SetFocusPoint with a point of 0,0 for every frame.  For HoloLens generation 1, the application should not call SetFocusPoint.
+
+### Choosing Reprojection Technique
+
+Stabilization Type |	Immersive Headsets |	HoloLens generation 1 |	HoloLens 2
+--- | --- | --- | ---
+Depth Reprojection |	Recommended |	N/A |	Recommended<br/><br/>Unity applications must use Unity 2018.4.12 or later or Unity 2019.3 or later. Otherwise use Automatic Planar Reprojection.
+Automatic Planar Reprojection |	N/A |	Recommended default |	Recommended if Depth Reprojection is not giving the best results<br/><br/>Unity applications are recommended to use Unity 2018.4.12 or later or Unity 2019.3 or later.  Previous Unity versions will work with slightly degraded reprojection results.
+Planar Reprojection |	Not Recommended |	Recommended if Automatic Planar is not giving the best results |	Use if neither of the depth options give desired results	
+
+### Verifying Depth is Set Correctly
+			
+When a reprojection method uses the depth buffer, it is important to verify that the contents of the depth buffer represents the application's rendered scene.  A number of factors can cause problems.  If there is a second camera used to render user interface overlays, for example, it is likely to overwrite all the depth information from the actual view.  Transparent objects often don't set depth.  Some text rendering will not set depth by default.  There will be visible glitches in the rendering when depth does not match the rendered holograms.
+			
+HoloLens 2 has a visualizer to show where depth is and is not being set.  Enable this from Device Portal.  On the **Views** > **Hologram Stability** tab, select the **Display depth visualization in headset** checkbox.  Areas that have depth set properly will be blue.  Rendered items that do not have depth set will be red and therefore need fixing.  Note that the visualization of the depth will not show up in Mixed Reality Capture.  It is only visible through the device.
+			
+Some GPU viewing tools will allow visualization of the depth buffer.  Application developers can use these tools to make sure depth is being set properly.  Consult the documentation for the application's tools.
+
+### Using Planar Reprojection
 > [!NOTE]
 > For desktop immersive headsets, setting a stabilization plane is usually counter-productive, as it offers less visual quality than providing your app's depth buffer to the system to enable per-pixel depth-based reprojection. Unless running on a HoloLens, you should generally avoid setting the stabilization plane.
 
-HoloLens performs a sophisticated hardware-assisted holographic stabilization technique. This is largely automatic and has to do with motion and change of the point of view (CameraPose) as the scene animates and the user moves their head. A single plane, called the stabilization plane, is chosen to maximize this stabilization. While all holograms in the scene receive some stabilization, holograms in the stabilization plane receive the maximum hardware stabilization.
-
 ![Stabilization plane for 3D objects](images/stab-plane-500px.jpg)
 
-The device will automatically attempt to choose this plane, but the application can assist in this process by selecting the focus point in the scene. Unity apps running on a HoloLens should choose the best focus point based on your scene and pass this into [SetFocusPoint()](focus-point-in-unity.md). An example of setting the focus point in DirectX is included in the default spinning cube template.
+The device will automatically attempt to choose this plane, but the application should assist in this process by selecting the focus point in the scene. Unity apps running on a HoloLens should choose the best focus point based on your scene and pass this into [SetFocusPoint()](focus-point-in-unity.md). An example of setting the focus point in DirectX is included in the default spinning cube template.
 
 Note that when your Unity app runs on an immersive headset connected to a desktop PC, Unity will submit your depth buffer to Windows to enable per-pixel reprojection, which will usually provide even better image quality without explicit work by the app. If you provide a Focus Point, that will override the per-pixel reprojection, so you should only do so when your app is running on a HoloLens.
 
@@ -104,7 +133,7 @@ renderingParameters.SetFocusPoint(
     );
 ```
 
-Placement of the focus point largely depends on the hologram is looking at. The app has the gaze vector for reference and the app designer knows what content they want the user to observe.
+Placement of the focus point largely depends on what the hologram is looking at. The app has the gaze vector for reference and the app designer knows what content they want the user to observe.
 
 The single most important thing a developer can do to stabilize holograms is to render at 60 FPS. Dropping below 60 FPS will dramatically reduce hologram stability, regardless of the stabilization plane optimization.
 
@@ -137,15 +166,15 @@ Though it's difficult to completely avoid color separation, there are several te
 
 **Color-separation can be seen on:**
 * Objects that are moving quickly, including head-locked objects such as the [cursor](cursors.md).
-* Objects that are substantially far from the [stabilization plane](hologram-stability.md#stabilization-plane).
+* Objects that are substantially far from the [stabilization plane](hologram-stability.md#reprojection).
 
 **To attenuate the effects of color-separation:**
 * Make the object lag the user's gaze. It should appear as if it has some inertia and is attached to the gaze "on springs". This slows the cursor (reducing separation distance) and puts it behind the user's likely gaze point. So long as it quickly catches up when the user stops shifting their gaze it feels quite natural.
-* If you do want to move a hologram, try to keep it's movement speed below 5 degrees/second if you anticipate that the user will follow it with their eyes.
+* If you do want to move a hologram, try to keep its movement speed below 5 degrees/second if you anticipate that the user will follow it with their eyes.
 * Use *light* instead of *geometry* for the cursor. A source of virtual illumination attached to the gaze will be perceived as an interactive pointer but will not cause color-separation.
 * Adjust the stabilization plane to match the holograms the user is gazing at.
 * Make the object red, green or blue.
-* Switch to a blurred version of the content. For example, a round white cursor could be change to a slightly blurred line oriented in the direction of motion.
+* Switch to a blurred version of the content. For example, a round white cursor could be changed to a slightly blurred line oriented in the direction of motion.
 
 As before, rendering at 60 FPS and setting the stabilization plane are the most important techniques for hologram stability. If facing noticeable color separation, first make sure the frame rate meets expectations.
 
@@ -153,3 +182,4 @@ As before, rendering at 60 FPS and setting the stabilization plane are the most 
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Color, light and materials](color,-light-and-materials.md)
 * [Instinctual interactions](interaction-fundamentals.md)
+* [MRTK Hologram Stabilization](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)
