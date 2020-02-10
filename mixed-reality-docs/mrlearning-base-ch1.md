@@ -113,7 +113,7 @@ When Unity has finished adding the SDK, optimize the XR Settings as follows:
 ![mrlearning-base](images/mrlearning-base/tutorial1-section2-step2-5.png)
 
 > [!TIP]
-> To learn more about optimizing Unity for Windows Mixed Reality, you can refer to the [Recommended settings for Unity](recommended-settings-for-unity) documentation.
+> To learn more about optimizing Unity for Windows Mixed Reality, you can refer to the [Recommended settings for Unity](recommended-settings-for-unity.md) documentation.
 
 ### 3. Enable spatial perception
 
