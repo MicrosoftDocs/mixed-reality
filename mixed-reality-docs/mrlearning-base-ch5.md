@@ -10,229 +10,253 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 6. Exploring advanced input options
 
-In this tutorial, several advanced input options for HoloLens 2 are explored, including the use of voice commands, panning gesture, and eye tracking. 
+In this tutorial, you will explore a few advanced input options for HoloLens 2, including the use of voice commands, panning gesture, and eye tracking.
 
 ## Objectives
 
-- Trigger events using voice commands and keywords
-- Use tracked hands to pan textures and 3D objects with tracked hands
-- Leverage HoloLens 2 eye tracking capabilities to select objects
+* Trigger events using voice commands and keywords
+* Use tracked hands to pan textures and 3D objects with tracked hands
+* Leverage HoloLens 2 eye tracking capabilities to select objects
 
 ## Enabling Voice Commands
+<!-- TODO: Consider changing to 'Enabling Speech Commands -->
 
-In this section, two voice commands are implemented. First, the ability to toggle the frame rate diagnostics panel is introduced by saying "toggle diagnostics". Second, the ability to play a sound with a voice command is explored. The MRTK profiles and settings responsible for configuring voice commands is reviewed first.
+In this section, you will implement a speech command to let the user play a sound on the Octa object. For this, you will create a new speech command and then configure the event so it triggers the desired action when the speech command keyword is spoken.
 
-1. In the BaseScene hierarchy, select MixedRealityToolkit. Then, in the Inspector panel, select Input and click the small Clone button to the left of the DefaultMixedRealityInputSystemProfile to open the Clone Profile popup. In the popup click Clone to create a new profile MixedRealityInputSystemProfile.
+The main steps you will take to achieve this are:
 
-    ![mrlearning-base-ch5-1-step1a.png](images/mrlearning-base-ch5-1-step1a.png)
+1. Clone the default Input System Profile
+2. Clone the default Speech Commands Profile
+3. Create a new speech command
+4. Add and configure the Speech Input Handler (Script) component
+5. Implement the Response event for the speech command
 
-    This will also auto-populate the MixedRealityToolkitConfigurationProfile with the newly created MixedRealityInputSystemProfile.
+### 1. Clone the default Input System Profile
 
-    ![mrlearning-base-ch5-1-step1b.png](images/mrlearning-base-ch5-1-step1b.png)
+In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the **Input** tab and clone the **DefaultHoloLens2InputSystemProfile** to replace it with your own customizable **Input System Profile**:
 
-2. In the input system profile, there are a variety of settings. For voice commands, expand the Speech section and follow the same process as in the previous step to clone the DefaultMixedRealitySpeechCommandsProfile and replace it with your own editable copy.
+![mrlearning-base](images/mrlearning-base/tutorial5-section1-step1-1.png)
 
-    ![mrlearning-base-ch5-1-step2.png](images/mrlearning-base-ch5-1-step2.png)
+> [!TIP]
+> For a reminder on how to clone MRTK profiles, you can refer to the [How to configure the Mixed Reality Toolkit Profiles](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions.
 
-    In the speech command profile, you’ll notice a range of settings. For a full description of these settings, refer to the [MRTK speech documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html>).
+### 2. Clone the default Speech Commands Profile
 
-    By default, the general behavior is auto-start. This can be changed to manual-start, if desired. But for this example, keep it on auto-start. The MRTK comes with several default voice commands, such as menu, toggle diagnostics and toggle profiler. We will use the keyword “toggle diagnostics,” in order to turn on and off the diagnostics framerate counter. We will also add a new voice command in the steps below.
+Expand the **Speech** section and clone the **DefaultMixedRealitySpeechCommandsProfile** to replace it with your own customizable **Speech Commands Profile**:
 
-3. Add a new voice command. To do this, click the + Add a New Speech Command button. You'll see a new line that appears below the list of existing voice commands. Type the voice command you want to use. In this example, use the command “play music".
+![mrlearning-base](images/mrlearning-base/tutorial5-section1-step2-1.png)
 
-    ![mrlearning-base-ch5-1-step3.png](images/mrlearning-base-ch5-1-step3.png)
+### 3. Create a new speech command
 
-    >[!NOTE]
-    >You can also set a keycode for speech commands. This allows for voice commands to trigger events upon the press of a keyboard key.
+In the **Speech Commands** section, click the **+ Add a New Speech Command** button to add a new speech command to the bottom of the list of existing speech commands, then in the **Keyword** field enter a suitable word or phrase, for example **Play Music**:
 
-4. Add the ability to respond to voice commands. Select any object in the BaseScene hierarchy that does not have any other input scripts attached to it, for example, the MixedRealityPlayspace game object. In the Inspector panel, click Add Component, search for "speech", and select the Speech Input Handler script.
+![mrlearning-base](images/mrlearning-base/tutorial5-section1-step3-1.png)
 
-    ![mrlearning-base-ch5-1-step4.png](images/mrlearning-base-ch5-1-step4.png)
+> [!TIP]
+> If your computer doesn't have a microphone and you would like to test the speech command using the in-editor simulation, you can assign a KeyCode to the speech command which will let you trigger it when the corresponding key is pressed.
 
-    By default, you will see two checkboxes. One is the Is Focus Required checkbox. So, as long as you are pointing at the object with a ray-eye-gaze, head-gaze, controller-gaze, or hand-gaze, the voice command will be triggered. Uncheck this checkbox so that the user does not have to look at the object to use the voice command.
+### 4. Add and configure the Speech Input Handler (Script) component
 
-5. Add the ability to respond to a voice command. To do this, click the + button that’s in the Speech Input Handler.
+In the Hierarchy window, select the **Octa** object and add the **Speech Input Handler (Script)** component to the Octa object. Then uncheck the **Is Focus Required** checkbox so the user is not required to look at the Octa object to trigger the speech command:
 
-    ![mrlearning-base-ch5-1-step5.png](images/mrlearning-base-ch5-1-step5.png)
+![mrlearning-base](images/mrlearning-base/tutorial5-section1-step4-1.png)
 
-6. Next to Keyword, you'll see a dropdown menu. Select Toggle Diagnostics so that whenever the user says the phrase “toggle diagnostics”, it triggers an action. Note that you might need to expand Element 0 by pressing the arrow next to it.
+### 5. Implement the Response event for the speech command
 
-    ![mrlearning-base-ch5-1-step6.png](images/mrlearning-base-ch5-1-step6.png)
+On the Speech Input Handler (Script) component, click the small **+** button to add a keyword, and then, from the **Keyword** dropdown, choose the **Play Music** keyword you created earlier:
 
-    >[!NOTE]
-    >These keywords are populated, based on the profile you edited in the step 3.
+![mrlearning-base](images/mrlearning-base/tutorial5-section1-step5-1.png)
 
-7. Add the Diagnostics System Voice Controls script to toggle the framerate counter diagnostic on and off. To do this, press Add Component, search for Diagnostics System Voice Controls script and add it from the menu. This script can be added to any object, but for simplicity, we will add it to the same object as the speech input handler.
+> [!NOTE]
+> The keywords in the Keyword dropdown are populated based on the keywords defined in the Speech Commands list in the Speech Commands Profile.
 
-    ![mrlearning-base-ch5-1-step7.png](images/mrlearning-base-ch5-1-step7.png)
+Create a new **Response ()** event, configure the **Octa** object to receive the event, define **AudioSource.PlayOneShot** as the action to be triggered, and assign a suitable audio clip to the **Audio Clip** field, for example, the MRTK_Gem audio clip:
 
-8. Add a new response in the speech input handler. To do this, click the "+" icon to add a new response to the response list.
+![mrlearning-base](images/mrlearning-base/tutorial5-section1-step5-2.png)
 
-    ![mrlearning-base-ch5-1-step8.png](images/mrlearning-base-ch5-1-step8.png)
-
-9. Drag the object that has the Diagnostics System Voice Controls script to the new response you just created in the previous step.
-
-    ![mrlearning-base-ch5-1-step9.png](images/mrlearning-base-ch5-1-step9.png)
-
-10. Click the function dropdown (where it says No Function), then Diagnostics System Voice Controls, and select the ToggleDiagnostics () function which toggles your diagnostics on and off.
-
-    ![mrlearning-base-ch5-1-step10.png](images/mrlearning-base-ch5-1-step10.png)
-
-    >[!IMPORTANT]
-    > Before building to your device, you need to enable mic settings. To do this, click File and go to Build Settings, Player Settings and ensure that the microphone capability is set.
-
-    Next, add the ability to play an audio file from voice command using the Octa object. Recall from [lesson 4](mrlearning-base-ch4.md) that the ability to play an audio clip from touching the Octa object was added. We will leverage this same audio source for our music voice command.
-
-11. Select the Octa object in the BaseScene hierarchy.
-
-12. Add another speech input handler (repeat Steps 4 and 5), but with the octa object.
-
-13. Instead of adding the Toggle Diagnostics voice command from step 6, add the Play Music voice command as shown in the image below.
-
-    ![mrlearning-base-ch5-1-step13.png](images/mrlearning-base-ch5-1-step13.png)
-
-14. As with Steps 8 and 9, add a new response and drag the Octa object, the object that has the Diagnostics System Voice Controls script on it, to the empty response slot.
-
-15. Select the dropdown menu that says No Function. Then select Audio Source, followed by PlayOneShot (AudioClip).
-
-    ![Lesson5 Chapter1 Step15im](images/Lesson5_chapter1_step15im.PNG)
-
-16. For this example, we are going to use the same audio clip from [Lesson 4](mrlearning-base-ch4.md). Go into your Project panel, search for “MRTK_Gem” audio clip and drag it into the audio source slot as shown in the image below. Now your application will respond to the voice commands “toggle diagnostics” to toggle the Frame Rate Counter panel and Play Music to play the MRTK_Gem song.
-
-    ![Lesson5 Chapter1 Step16im](images/Lesson5_chapter1_step16im.PNG)
+> [!TIP]
+> For a reminder on how to implement events and assign an audio clip, you can refer to the [Implement the On Touch Started event](mrlearning-base-ch4.md#4-implement-the-on-touch-started-event) instructions.
 
 ## The Pan Gesture
 
-In this section, you will learn how to use the pan gesture. This is useful for scrolling by using your finger or hand to scroll through content. You can also use the pan gesture to rotate objects, cycle through a collection of 3D objects, or even to scroll a 2D UI.
+The pan gesture is useful for scrolling by using your finger or hand to scroll through content. In this example, you will first learn how to scroll a 2D UI and then expand on that to be able to scroll through a collection of 3D objects.
 
-1. Create a quad. In your BaseScene hierarchy, right-click, select "3D Object" followed by Quad.
+The main steps you will take to achieve this are:
 
-    ![Lesson5 Chapter2 Step2im](images/Lesson5_chapter2_step2im.PNG)
+1. Create a Quad object that can be used for panning
+2. Add the Near Interaction Touchable (Script) component
+3. Add the Hand Interaction Pan Zoom (Script) component
+4. Add 2D content to be scrolled
+5. Add 3D content to be scrolled
+6. Add the Move With Pan (Script) component
 
-2. Reposition the quad, as appropriate. For our example, we set the x = 0, the y = 0 and the z = 1.5 away from the camera for a comfortable position from HoloLens 2.
+> [!NOTE]
+> The Move With Pan (Script) component is not part of MRTK. It was provided with this tutorial's assets.
 
-    >[!NOTE]
-    >If the quad blocks or is in front of any content from the previous lessons, be sure to move it so that it doesn’t block any of the other objects.
+### 1. Create a Quad object that can be used for panning
 
-3. Apply a material to the quad. This material will be what we will be scrolling through with the pan gesture.
+In the Hierarchy window, right-click at an empty area and select **3D Object** > **Quad** to add a quad to your scene. Give it a suitable name, for example, **PanGesture**, and position it in a suitable location, for example, X = 0, Y = -0.2, Z = 2.
 
-    ![Lesson5 Chapter2 Step3im](images/Lesson5_chapter2_step3im.PNG)
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step1-1.png)
 
-4. In your Projects panel, type “pan content” in the Search box. Drag that material onto the quad in your scene.
+> [!TIP]
+> For a reminder on how to add Unity primitives, such as a 3D quad, to your scene, you can refer to the [Add a cube to the scene](mrlearning-base-ch2.md#2-add-a-cube-to-the-scene) instructions.
 
-    >[!NOTE]
-    >The PanContent material is not part of MRTK but included with the BaseModuleAssets asset imported in the previous lesson.
+As with any other interaction, the the pan gesture also requires a collider. By default, a Quad has a mesh collider. However, the mesh collider is not ideal because it is extremely thin. To make it easier for the user to interact with the collider, we will replace the mesh collider with a box collider.
 
-    To use the pan gesture, you will need a collider on your object. You may see the quad already has a mesh collider. However, the mesh collider is not ideal, because it is extremely thin and difficult to select. We suggest replacing the mesh collider with a box collider.
+With the PanGesture object still selected, click the **Mesh Collider** component's **Settings** icon and select **Remove Component** to remove the Mesh Collider:
 
-5. Right-click the mesh collider that’s on the quad from the Inspector panel. Then remove it by clicking Remove Component.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step1-2.png)
 
-    ![Lesson5 Chapter2 Step5im](images/Lesson5_chapter2_step5im.PNG)
+In the Inspector window, use the **Add Component** button to add a **Box Collider**, then change the Box Collider **Size** Z to 0.15 to increase the thickness of the box collider:
 
-6. Now add the box collider by clicking Add Component and searching “box collider”. The default added box collider is still too thin, so click the Edit Collider button to edit. When it’s pressed in, you can adjust the size using the x, y and z values or the elements in the scene editor. For our example, we want to extend the box collider a little behind the quad. In the scene editor, drag the box collider from the back, outwards (see the image below). This lets the user not only use their finger, but their entire hand to scroll.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step1-3.png)
 
-    ![Lesson5 Chapter2 Step6im](images/Lesson5_chapter2_step6im.PNG)
+### 2. Add the Near Interaction Touchable (Script) component
 
-7. Make it interactive. Since we want to interact with the quad directly, we want to use the Near Interaction Touchable component that we used this in Lesson 4 for playing music from the Octa object. Click Add Component, search for “near interaction touchable” and select it as shown in the images below.
+With the **PanGesture** object still selected, add the **Near Interaction Touchable (Script)** component to the PanGesture object, and then click the **Fix Bounds** and **Fix Center** buttons to update the Local Center and Bounds properties of the Near Interaction Touchable (Script) to match the BoxCollider:
 
-    ![mrlearning-base-ch5-2-step7a.png](images/mrlearning-base-ch5-2-step7a.png)
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step2-1.png)
 
-    If you see a yellow warning about bounds and/or center not matching the BoxCollider's size and/or center, click the Fix Bounds and/or Fix Center buttons to update the center and bounds values.
+### 3. Add the Hand Interaction Pan Zoom (Script) component
 
-    ![mrlearning-base-ch5-2-step7b.png](images/mrlearning-base-ch5-2-step7b.png)
+With the **PanGesture** object still selected, add the **Hand Interaction Pan Zoom (Script)** component to the PanGesture object, and then check the **Lock Horizontal** checkbox to allow vertical scrolling only:
 
-8. Add the ability to recognize the pan gesture. Click Add Component, type “hand interaction” in the search field and add the Hand Interaction Pan Zoom script component.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step3-1.png)
 
-    ![mrlearning-base-ch5-2-step8a.png](images/mrlearning-base-ch5-2-step8a.png)
+### 4. Add 2D content to be scrolled
 
-    And with that, you have a pan-enabled quad.
+In the Project panel, search for the **PanContent** material and then click-and-drag it on to the **PanGesture** object's Mesh Renderer **Material** Element 0 property:
 
-    As you can see, the Hand Interaction Pan Zoom script component has various settings, as an optional exercise, feel free to play around with them.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step4-1.png)
 
-    ![mrlearning-base-ch5-2-step8b.png](images/mrlearning-base-ch5-2-step8b.png)
+In the Inspector window, expand the newly added **PanContent** material component, and then change it's **Tiling** Y value to 0.5 so it matches the X value and the tiles appear square:
 
-9. Next, we will learn how to pan 3D objects.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step4-2.png)
 
-    In the Hierarchy, right-click the Quad object, to open the contextual popup menu, then select **3D Object** > **Cube** to add a cube to your scene.
+If you now enter Game mode, you can test scrolling the 2D content using the pan gesture in the in-editor simulation:
 
-    Ensure the Cube's **Position** is set to  _0, 0, 0_ so it's positioned neatly within the Quad. Scale the Cube down to a **Scale** of _0.1, 0.1, 0.1_.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step4-3.png)
 
-    ![mrlearning-base-ch5-2-step9.png](images/mrlearning-base-ch5-2-step9.png)
+### 5. Add 3D content to be scrolled
 
-    Duplicate the Cube three times by right-clicking the Cube, to open the contextual popup menu, and selecting **Duplicate**.
+In the Hierarchy window, **create four cubes** as a child objects of the **PanContent** and set their Transform **Scale** to X = 0.15, Y = 0.15, Z = 0.15:
 
-    Space the cubes out evenly. Your scene should look similar to the image below.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step5-1.png)
 
-10. Add the MoveWithPan script to all the cubes by holding down the CTRL key while selecting each **Cube** object in the Hierarchy panel. In the Inspector panel, click Add Component, and search for and select the **Move With Pan** script to add it to all the cubes.
+To space the cubes out evenly, and save some time, add the Grid Object Collection (Script) component, to the cubes' parent object, i.e. the PanGesture object, and configure the Grid Object Collection (Script) as follows:
 
-    ![mrlearning-base-ch5-2-step10a.png](images/mrlearning-base-ch5-2-step10a.png)
+* Change **Num Rows** to 1 to have all the cubes aligned on one single row
+* Change **Cell Width** to 0.25 to space out the cubes within the row
 
-    >[!NOTE]
-    >The MoveWithPan script is not part of MRTK but included with the BaseModuleAssets asset imported in the previous lesson.
+Then click the **Update Collection** button to apply the new configuration:
 
-    With the cubes still selected, drag the **Quad** object from the Hierarchy panel into the **Pan Input Source** field of the **Move With Pan** script component.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step5-2.png)
 
-    ![mrlearning-base-ch5-2-step10b.png](images/mrlearning-base-ch5-2-step10b.png)
+### 6. Add the Move With Pan (Script) component
 
-    Now, the cubes will move with your pan gesture.
+In the Hierarchy window, select all the **Cube child objects**, then in the Inspector window, use the **Add Component** button to add the **Move With Pan (Script)** component to all the cubes:
 
-    >[!TIP]
-    >The MoveWithPan instance on each cube listens for the PanUpdated event sent from the HandInteractionPanZoom instance on the Quad object, that we added to the Pan Input Source field on each of the cubes, and updates the respective cube object's position accordingly.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step6-1.png)
 
-    With the cubes still selected, move them forward along their Z axis so each cube's mesh is inside the **Quad**'s **Box Collider** by changing their **Position Z** values to _0.7_.
+> [!TIP]
+> For a reminder on how to select multiple objects in the Hierarchy window, tou can refer to the [Add the Manipulation Handler (Script) component to all the objects](mrlearning-base-ch4.md#1-add-the-manipulation-handler-script-component-to-all-the-objects) instructions.
 
-    ![mrlearning-base-ch5-2-step10c.png](images/mrlearning-base-ch5-2-step10c.png)
+With all the cubes still selected, click-and-drag the **PanGesture** object to the **Pan Input Source** field:
 
-    Now, if you disable the **Quad**'s **Mesh Renderer** component by un-checking it in the Inspector panel, you will have an invisible quad where you can pan through a list of 3D objects.
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step6-2.png)
 
-    ![mrlearning-base-ch5-2-step10d.png](images/mrlearning-base-ch5-2-step10d.png)
+> [!TIP]
+> The Move With Pan (Script) component on each cube listens for the Pan Updated event sent by the HandInteractionPanZoom (Script) component on the PanGesture object, which you assigned as the Pan Input Source in the step above, and updates each cube's position accordingly.
+
+In the Hierarchy window, select the **PanGesture** object, then in the inspector **un-check** the **Mesh Renderer** checkbox to disable the Mesh Renderer component:
+
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step6-3.png)
+
+If you now enter Game mode, you can test scrolling the 3D content using the pan gesture in the in-editor simulation:
+
+![mrlearning-base](images/mrlearning-base/tutorial5-section2-step6-4.png)
 
 ## Eye Tracking
 
-In this section, we will explore how to enable eye tracking in our demo. We will slowly spin our 3D menu items when they are being gazed upon with your eye gaze. We will also trigger a fun effect when the gazed-upon item is selected.
+In this section, you will explore how to enable eye tracking in your project. For this example, you will implement functionality to make each object in the 3DObjectCollection spin slowly while being looked at by the user's eye gaze, as well as, trigger a blip effect when the object being looked at is selected by air-tap or speech command.
 
-1. Ensure the MRTK profiles are properly configured for eye tracking. To do this, go to the [Getting started with eye tracking in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html) instructions and verify that eye tracking is properly configured by reviewing the steps in the [Setting up eye tracking step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#setting-up-eye-tracking-step-by-step) section. Complete any remaining steps in the documentation.
+The main steps you will take to achieve this are:
 
-    >[!NOTE]
-    >If you used the DefaultHoloLens2InputSystemProfile, as instructed in the [Configure the Mixed Reality Toolkit](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#configure-the-mixed-reality-toolkit) lesson, to clone your custom MRTK configuration profile, eye tracking is enabled by default in the Unity project but you will still have to set up eye tracking simulation for the Unity editor and configure Visual Studio to allow eye tracking for the build.
+1. Add the Eye Tracking Target (Script) component to all target objects
+2. Add the Eye Tracking Tutorial Demo (Script) component  to all target objects
+3. Implement the While Looking At Target event
+4. Implement the On Selected event
+5. Enable simulated eye tracking for in-editor simulations
+6. Enable Gaze Input in the Visual Studio project's app capabilities
 
-    The link above provides brief instructions for:
+### 1. Add the Eye Tracking Target (Script) component to all target objects
 
-    - Creating the Windows Mixed Reality Eye Gaze Data Provider for use in the MRTK profile
-    - Enabling eye tracking in the Gaze Provider attached to the camera
-    - Setting up an eye tracking simulation in the Unity editor
-    - Editing the Visual Studio solution's capabilities to allow eye tracking in the built application
+In the Hierarchy window, expand the **3DObjectCollection** object and select all the **child objects**, then in the Inspector window, use the **Add Component** button to add the **Eye Tracking Target (Script)** component to all the child objects:
 
-2. Add the Eye Tracking Target component to target objects. To allow an object to respond to eye gaze events, we'll need to add the EyeTrackingTarget component on each object that we want to interact with by using eye gaze. Add this component to each of the nine 3D objects that are part of the grid collection.
+![mrlearning-base](images/mrlearning-base/tutorial5-section3-step1-1.png)
 
-    >[!TIP]
-    >You can use the Shift and/or CRTL keys to select multiple items in the Hierarchy and then bulk-add the EyeTrackingTarget component.
+With all the **child objects** still selected, configure the **Eye Tracking Target (Script)** component as follows:
 
-    ![Lesson5 Chapter3 Step2](images/Lesson5Chapter3Step2.JPG)
+* Change **Select Action** to **Select**, to define the air-tap action for this object as Select
+* Expand **Voice Select** and set the voice command list **Size** to 1, and then, in the new element list that appear, change **Element 0** to **Select**, to define the speech command action for this object as Select
 
-3. Next, we will add the EyeTrackingTutorialDemo script for some exciting interactions. For each 3D object in the grid collection, add the EyeTrackingTutorialDemo script by searching for the component in the Add Component menu.
+![mrlearning-base](images/mrlearning-base/tutorial5-section3-step1-2.png)
 
-    ![Lesson5 Chapter3 Step3](images/Lesson5Chapter3Step3.JPG)
+### 2. Add the Eye Tracking Tutorial Demo (Script) component  to all target objects
 
-    >[!NOTE]
-    >The EyeTrackingTutorialDemo script material is not part of MRTK but included with the BaseModuleAssets asset imported in the previous lesson.
+With all the **child objects** still selected, use the **Add Component** button to add the **Eye Tracking Tutorial Demo (Script)** component to all the child objects:
 
-4. Spin the object while looking at the target. We want to configure our 3D objects to spin while we are looking at them. To do this, insert a new field in the While Looking At Target() section of the EyeTrackingTarget component, as shown in the image below.
+![mrlearning-base](images/mrlearning-base/tutorial5-section3-step2-1.png)
 
-    ![Lesson5 Chapter3 Step4a](images/Lesson5Chapter3Step4a.JPG)
+> [!NOTE]
+> The Eye Tracking Target (Script) component is not part of MRTK. It was provided with this tutorial's assets.
 
-    In the newly-created field, add the current Game Object to the empty field, and select EyeTrackingTutorialDemo>RotateTarget(), as shown in the image below. Now the 3D object is configured to spin when it is being gazed upon with eye tracking.
+### 3. Implement the While Looking At Target event
 
-    ![Lesson5 Chapter3 Step4b](images/Lesson5Chapter3Step4b.JPG)
+In the Hierarchy window, select the **Cheese** object, then create a new **While Looking At Target ()** event, configure the **Cheese** object to receive the event, and define **EyeTrackingTutorialDemo.RotateTarget** as the action to be triggered:
 
-5. Add in the ability to “blip target” that is being gazed at upon select by air-tap or saying “select”. Similar to Step 4, we want to trigger EyeTrackingTutorialDemo>BlipTarget() by assigning it to the game object’s Select() field of the EyeTrackingTarget component, as shown in the figure below. With this now configured, you will notice a slight blip in the game object whenever you trigger a select action, such as air-tap or the voice command “select”.
+![mrlearning-base](images/mrlearning-base/tutorial5-section3-step3-1.png)
 
-    ![Lesson5 Chapter3 Step5](images/Lesson5Chapter3Step5.JPG)
+**Repeat** for each of the child objects in the 3DObjectCollection.
 
-6. Ensure eye tracking capabilities are properly configured before building to HoloLens 2. As of this writing, Unity does not yet have the ability to set the gaze input for eye tracking capabilities. Setting this capability is required for eye tracking to work in HoloLens 2. Follow the [Testing your Unity app on a HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#testing-your-unity-app-on-a-hololens-2) instructions to enable the gaze input capability.
+> [!TIP]
+> For a reminder on how to implement events, you can refer to the [Hand tracking gestures and interactable buttons](mrlearning-base-ch2.md#hand-tracking-gestures-and-interactable-buttons) instructions.
+
+### 4. Implement the On Selected event
+
+In the Hierarchy window, select the **Cheese** object, then create a new **On Selected ()** event, configure the **Cheese** object to receive the event, and define **EyeTrackingTutorialDemo.RotateTarget** as the action to be triggered:
+
+![mrlearning-base](images/mrlearning-base/tutorial5-section3-step4-1.png)
+
+**Repeat** for each of the child objects in the 3DObjectCollection.
+
+### 5. Enable simulated eye tracking for in-editor simulations
+
+In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the **Input** tab, expand the **Input Data Providers** section and then the **Input Simulation Service** section, and clone the **DefaultMixedRealityInputSimulationProfile** to replace it with your own customizable **Input Simulation Profile**:
+
+![mrlearning-base](images/mrlearning-base/tutorial5-section3-step5-1.png)
+
+> [!TIP]
+> For a reminder on how to clone MRTK profiles, you can refer to the [How to configure the Mixed Reality Toolkit Profiles](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions.
+
+In the **Eye Simulation** section, check the **Simulate Eye Position** checkbox to enable eye tracking simulation:
+
+![mrlearning-base](images/mrlearning-base/tutorial5-section3-step5-2.png)
+
+If you now enter Game mode, you can test the spin and blip effects you implemented by adjusting the view so the cursor hits one of the objects and using hand interaction or speech command to select the object:
+
+![mrlearning-base](images/mrlearning-base/tutorial5-section3-step5-3.png)
+
+> [!NOTE]
+> If you did not use the DefaultHoloLens2ConfigurationProfile to clone your customizable MRTK configuration profile, as instructed in the [Configure the Mixed Reality Toolkit](mrlearning-base-ch1.md#configure-the-mixed-reality-toolkit) instructions, eye tracking may not be enable in your project and will need to be enabled. For that, you can refer to the [Getting started with eye tracking in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html) instructions.
+
+### 6. Enable Gaze Input in the Visual Studio project's app capabilities
+
+Before building and deploying your app from Visual Studio to your device, Gaze Input has to been enabled in the project's app capabilities. For this, you can follow the [Testing your Unity app on a HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#testing-your-unity-app-on-a-hololens-2) instructions.
 
 ## Congratulations
 
-You’ve successfully added basic eye tracking capabilities to your application. These actions are only the beginning of a world of possibilities with eye tracking. This chapter also concludes Lesson 5, where we learned about advanced input functionality, such as voice commands, panning gestures, and eye tracking.
+You have successfully added basic eye tracking capabilities to your application. These actions are only the beginning of a world of possibilities with eye tracking. In this tutorial, you also learned about other advanced input features, such as voice commands and panning gestures.
 
 [Next Lesson: 7. Creating a Lunar Module sample application](mrlearning-base-ch6.md)
