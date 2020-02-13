@@ -3,13 +3,13 @@ title: MR Input 212 - Voice
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens to learn the details of voice concepts.
 author: keveleigh
 ms.author: kurtie
-ms.date: 03/21/2018
+ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, voice
 ---
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 <br>
 
@@ -104,7 +104,7 @@ If deploying to HoloLens:
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
-4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device---hololens-1st-gen).
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device).
 5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
 
 If deploying to an immersive headset:
@@ -167,7 +167,7 @@ In this chapter, you'll learn about designing voice commands. When creating voic
 (If you already built/deployed this project in Visual Studio during set-up, then you can open that instance of VS and click 'Reload All' when prompted).
 
 * In Visual Studio, click **Debug -> Start Without debugging** or press **Ctrl + F5**.
-* After the application deploys to the HoloLens, dismiss the fit box using the [air-tap](gestures.md#air-tap) gesture.
+* After the application deploys to the HoloLens, dismiss the fit box using the [air-tap](gaze-and-commit.md#composite-gestures) gesture.
 * Gaze at the astronaut's watch.
 * When the watch has focus, verify that the cursor changes to a microphone. This provides feedback that the application is listening for voice commands.
 * Verify that a tooltip appears on the watch. This helps users discover the *"Open Communicator"* command.
@@ -281,7 +281,7 @@ namespace Academy
         // Use this string to cache the text currently displayed in the text box.
         private StringBuilder textSoFar;
 
-        // Using an empty string specifies the default microphone. 
+        // Using an empty string specifies the default microphone.
         private static string deviceName = string.Empty;
         private int samplingRate;
         private const int messageLength = 10;
@@ -479,11 +479,13 @@ namespace Academy
 3. Click the little circle to the right of the **Object To Tag Along** field.
 4. In the window that pops up, search for **SRGSToolbox** and select it from the list.
 5. Take a look at the **SRGSColor.xml** file in the **StreamingAssets** folder.
-* The SRGS design spec can be found on the W3C website [here](https://www.w3.org/TR/speech-grammar/).
-* In our SRGS file, we have three types of rules:
-  * A rule which lets you say one color from a list of twelve colors.
-  * Three rules which listen for a combination of the color rule and one of the three shapes.
-  * The root rule, colorChooser, which listens for any combination of the three "color + shape" rules. The shapes can be said in any order and in any amount from just one to all three. This is the only rule that is listened for, as it's specified as the root rule at the top of the file in the initial &lt;grammar&gt; tag.
+    1. The SRGS design spec can be found on the W3C website [here](https://www.w3.org/TR/speech-grammar/).
+
+In our SRGS file, we have three types of rules:
+
+* A rule which lets you say one color from a list of twelve colors.
+* Three rules which listen for a combination of the color rule and one of the three shapes.
+* The root rule, colorChooser, which listens for any combination of the three "color + shape" rules. The shapes can be said in any order and in any amount from just one to all three. This is the only rule that is listened for, as it's specified as the root rule at the top of the file in the initial &lt;grammar&gt; tag.
 
 ### Build and Deploy
 

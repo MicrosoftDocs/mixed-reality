@@ -8,9 +8,10 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ---
 
-# 3. Creating user interface and configure Mixed Reality Toolkit 
+# 3. Creating user interface and configure Mixed Reality Toolkit
+<!-- TODO: Consider renaming to 'Configuring Mixed Reality Toolkit profiles and creating user interfaces' -->
 
-In the previous lesson, you learned about some of the capabilities the Mixed Reality Toolkit (MRTK) has to offer by starting your first application for the HoloLens 2. In this next lesson you'll learn how to create and organize buttons along with UI text panels, and use default interaction (touch) to interact with each button. You will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects. This module will introduce basic concepts about modifying MRTK profiles, starting with turning off the spatial mesh visualization. 
+In the previous tutorial, you learned about some of the capabilities the Mixed Reality Toolkit (MRTK) has to offer by starting your first application for the HoloLens 2. In this tutorial you will learn how to create and organize buttons along with UI text panels, and use default interaction (touch) to interact with each button. You will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects. This module will introduce basic concepts about modifying MRTK profiles, starting with turning off the [spatial mapping](spatial-mapping.md) mesh visualization.
 
 ## Objectives
 
@@ -18,152 +19,301 @@ In the previous lesson, you learned about some of the capabilities the Mixed Rea
 * Interact with holograms using UI elements and buttons
 * Basic hand-tracking input and interactions
 
-## Instructions
+## How to configure the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)
+<!-- TODO: Consider renaming to 'How to customize the MRTK profiles' -->
 
-### How to Configure the Mixed-Reality Toolkit Profiles (Change Spatial Awareness Display Option)
-In this section, you'll learn how to customize and configure the default MRTK profiles by adjusting the display option of the spatial awareness mesh. You may follow these same principles for adjusting any settings or values in the MRTK profiles.
+In this section, you will learn how to customize and configure the default MRTK profiles.
 
-1. Select Mixed-Reality Toolkit (MRTK) from the BaseScene hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and select the active profile as shown in the figure below. Double click to open it.
+This particular example will show you how to hide the spatial awareness mesh by changing the settings of the Spatial Mesh Observer. However, you may follow these same principles to customize any setting or value in the MRTK profiles.
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step1im.PNG)
+The main steps you will take to hide the spatial awareness mesh are:
 
->Note: By default, the MRTK profiles are not editable. These are default profile templates that you can copy and customize. There are several layers of customization and profiles. So, it is standard practice to copy and customize several profiles when configuring one or more settings.
->
->To discover more about MRTK profiles and their architecture, visit the [MRTK documentation](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html>).
+1. Clone the default Configuration Profile
+2. Enable the Spatial Awareness System
+3. Clone the default Spatial Awareness System Profile
+4. Clone the default Spatial Awareness Mesh Observer Profile
+5. Change the visibility of the spatial awareness mesh
 
-2. Create a copy of the default profile to customize it. To copy a default profile, click Copy & Customize (see image). This creates a copy of the MRTK profile. With your own copy of the MRTK profile, you now have the ability customize any settings in this profile. You will also need to repeat the copy and customize step for any additional profiles nested under this profile as described in the subsequent steps.
+> [!NOTE]
+> By default, the MRTK profiles are not editable. These are default profile templates that you have to clone before they can be edited. There are several nested layers of profiles. Therefore, it is common to clone and edit several profiles when configuring one or more settings.
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step2im.PNG)
+### 1. Clone the default Configuration Profile
 
-3. Disable the visibility of the spatial awareness mesh. To do this, find Spatial Awareness System Settings as shown in the image. Click the Clone button to the right of the the Spatial Awareness System Profile to replace the default profile with a customizable copy. If a pop-up window appears, press the Clone button, as shown in the second image below.
+> [!NOTE]
+> The Configuration Profile is the top level profile. Consequently, to be able to edit any other profiles, you first have to clone the Configuration Profile.
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step3im.PNG)
+With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, click the **Copy & Customize** button to open the Clone Profile window:
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step3bim.jpg)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-1.png)
 
-4. Create a custom copy of the Default Mixed Reality Spatial Mesh Observer. Click the down arrow next to Windows Mixed Reality Spatial Mesh Observer to see additional options. In these options, you will see the Default Mixed Reality Spatial Mesh Observer that is greyed-out (not editable). You must replace this default profile with a customizable copy so you can edit it. Click the button to the right (marked by a green arrow) to clone a copy.
+In the Clone Profile window, click the **Clone** button to create an editable copy of the **DefaultHololens2ConfigurationProfile**:
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step4im.PNG)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-2.png)
 
-5. Next, you will adjust the settings for the display option to say “occlusion.” This makes the spatial mesh invisible, but still hides game objects behind the spatial mesh, also known as occlusion.
+The newly created Configuration Profile is now assigned as the Configuration Profile for your scene:
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step5im.PNG)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-3.png)
 
->Note: While the spatial mapping mesh is not visible, it is still present and you can interact with it. Any holograms behind the spatial mapping mesh, such as a hologram behind your visible wall, will not be visible because of the occlusion setting.
+In the Unity menu, select **File** > **Save** to save your scene.
 
-Congratulations! You just learned how to modify a setting in the MRTK profile. As you can see, in order to modify MRTK settings you need to create copies of the default profiles so that you can edit them. You will always have the default profiles, which are not editable, to go back to if you wanted to create a profile with new settings or you can refer back to the default profiles. There are numerous settings that you can adjust. For full reference to MRTK profile settings, refer to the MRTK documentation here: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html
+> [!TIP]
+> Remember to save your work throughout the tutorial.
 
-### Hand Tracking Gestures and Interactable buttons
-In this section, you will learn how to use hand tracking to press a pressable button.
+### 2. Enable the Spatial Awareness System
 
-1. Select Assets from the projects folder.
+With the **MixedRealityToolkit** object still selected in the Hierarchy window, in the Inspector window, select the **Spatial Awareness** tab, and then check the **Enable Spatial Awareness System** checkbox:
 
-2. Type in the search bar, “pressablebutton.”
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step2-1.png)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step1im.PNG)
+### 3. Clone the default Spatial Awareness System Profile
 
-3. Drag the prefab (represented by a blue box) named "PressableButton" into your hierarchy. 
+In the **Spatial Awareness** tab, click the **Clone** button to open the Clone Profile window:
 
-   > Note: If you get a message about “importing TMP Essentials”, import it at this time. If TMP Essentials was not already part of your project, you might need to repeat this step after importing TMP Essentials, otherwise button text may not appear.
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step3-1.png)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step3im.PNG)
+In the Clone Profile window, click the **Clone** button to create an editable copy of the **DefaultMixedRealitySpatialAwarenessSystemProfile**:
 
-4. Double click the PressableButton game object, which should now be in your BaseScene hierarchy, to view it in your scene as shown in the image below. Your button graphics might appear different than the image below. 
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step3-2.png)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step4im.PNG)
+The newly created Spatial Awareness System Profile is now automatically assigned to your Configuration Profile:
 
-5. From the inspector panel, click Add Event to give the button an event to respond to when pushed. In the option that appears, select the drop-down menu, and select InteractableOnPressReciever. This allows the button to respond to a pressed event when a tracked hand presses the button.
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step3-3.png)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step5im.PNG)
+### 4. Clone the default Spatial Awareness Mesh Observer Profile
 
-6. Add a cube to the scene. Right click on the hierarchy area, select a 3D object, then click on Cube. Now, a cube should be in your display. It will appear very large. You can adjust the coordinates (while Cube is still selected in the hierarchy area) to decrease the size. Set the scale values to x = 0.1, y = 0.1 and z = 0.1. Be sure to position the cube in your scene to place it near the pressable button, but not overlapping with the button. In the image below, the cube’s position is x = 0, y = 0.2, and z = 1. 
+With the **Spatial Awareness** tab still selected, expand the **Windows Mixed Reality Spatial Mesh Observer** section, then click the **Clone** button to open the Clone Profile window:
 
-   > Note: In general, 1 unit in Unity is roughly equivalent to 1 meter in the physical world. There are exceptions to this, for example when objects are children of scaled objects.
-   
-   ![MR213_BuildSettings](images/mrlearning-base-ch2-1step6ima.PNG)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step4-1.png)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step6imb.PNG)
+In the Clone Profile window, click the **Clone** button to create an editable copy of the **DefaultMixedRealitySpatialAwarenessMeshObserverProfile**:
 
-7. In this step you will set up the cube to change color when your button is pressed. Select the PressableButton in the BaseScene menu. From the inspector panel, under the Select Event Type box, click the + button. Drag the cube from the BaseScene menu into the Runtime Only box as shown in the image below
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step4-2.png)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step7ima.PNG)
+The newly created Spatial Awareness Mesh Observer Profile is now automatically assigned to your Spatial Awareness System Profile:
 
-Click the dropdown list that says No Function. Select MeshRenderer, then select Material material. This lets you change the material when the button is pressed. 
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step4-3.png)
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step7imb.PNG)
+### 5. Change the visibility of the spatial awareness mesh
 
-Go to the Project panel and search for the material you wish to change it to. You are going to use the material, MRTK_Standard_Cyan, for this example, found by typing in “cyan” in the Project tab’s search bar. (The MRTK includes many materials and colors to choose from.) Drag the material to the box underneath MeshRenderer.material. The MRTK materials can be found in Assets>MixedRealityToolkit.SDK>StandardAssets>Materials.
+In the **Spatial Mesh Observer Settings**, change the **Display Option** to **Occlusion** to make the spatial mapping mesh invisible while still being functional:
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-1step7imc.PNG)
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step5-1.png)
 
-The event is now set so that when the button is pressed, the cube will change color based on the material you specified. In this example, the cube will change to the cyan color.
+> [!NOTE]
+> Although the spatial mapping mesh is not visible, it is still present and functional. For example, any holograms behind the spatial mapping mesh, such as a hologram behind a physical wall, will not be visible.
 
-8. Next you are going to set up the release action so that upon release, the button will go back to its default color. Repeat Step 7 above. But this time with the OnRelease event instead of the OnPress event as shown in the image below.
+You just learned how to modify a setting in the MRTK profile. As you can see, in order to customize the MRTK settings, you first need to create copies of the default profiles. Because the default profiles are not editable, you will always have them as reference if you want revert back to the default settings. To learn more about MRTK profiles and their architecture, you can visit the [Mixed Reality Toolkit profile configuration guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-9.  In the Project panel, search for a material for the cube to default to upon button release. In this case, we chose MRTK_Standard_LightGray. Drag the material into the box below the MeshRenderer.material field.
+## Hand tracking gestures and interactable buttons
 
-![MR213_BuildSettings](images/mrlearning-base-ch2-2step8im.PNG)
+In this section, you will learn how to use hand tracking to press a button and trigger events to cause an action when the button is pressed.
 
-Now when the button is pressed, it will change to a new color, cyan. When the button is released it will change back to the default color you specified (e.g., light gray.) Press the Play button on the top of the screen to try it out in the editor or deploy to your HoloLens 2 to test. To learn more about in-editor simulation, including hand simulation, read the [MRTK's simulation documentation page](<https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html>). 
+This particular example will show you how to change the color of a cube when the button is pressed and change it back to it's original color when the button is released. However, you may follow these same principles to create other events.
 
-### Creating a panel of buttons using MRTK’s Grid Object Collection
+The main steps you will take to change the color of the cube are:
 
-In this section, you will learn how to automatically align multiple buttons into a neat user interface by using the MRTK’s GridObjectCollection tool.
+1. Add a pressable button prefab to the scene
+2. Add a cube to the scene
+3. Configure the InteractableOnPressReceiver event type
+4. Configure the cube to receive the On Press event
+5. Define the action to be triggered by the On Press event
+6. Configure the cube to receive the On Release event
+7. Define the action to be triggered by the On Release event
+8. Test the button using the in-editor simulation
 
-1. Duplicate the button from the previous section until you have five buttons. There are several ways to do this:
-- Right click on the button, and click Copy. Then go down to below the button and right click again, and click Paste. 
-- Right click on the button and click Duplicate. 
-- Use the keyboard command by clicking on the cube, and pressing Ctrl D on your keyboard.
+### 1. Add a pressable button prefab to the scene
 
-Repeat this until you have five buttons; see the five red arrows in image below.
+> [!TIP]
+> A <a href="https://docs.unity3d.com/Manual/Prefabs.html" target="_blank">prefab</a> is a pre-configured GameObject stored as a Unity Asset and can be reused throughout your project.
 
-![Mrlearning Base Ch2 3Step1im](images/mrlearning-base-ch2-3step1im.PNG)
+In the **Project window**, search for **PressableButtonHoloLens2** to locate the prefab you will use for this example:
 
-2. Group the buttons under an empty parent game object. In order to have the buttons in the grid collection, you need to group your buttons under a common parent object. Right click in the hiearachy, and click Create Empty. This creates a new empty game object for you to put all the buttons in. It shows up as gameObject. Right click and rename it, ButtonCollection.
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step1-1.png)
 
-![Mrlearning Base Ch2 3Step2im](images/mrlearning-base-ch2-3step2im.PNG)
+In the **Search** result, select the **PressableButtonHoloLens2** prefab and **drag** it into the **Hierarchy** window to add it to your scene:
 
-3. Move all the buttons into the new collection. Do this by selecting all five of the button objects in your heirarchy, and drag them all under ButtonCollection game object as shown in the image below. Tip: select multiple items by holding the Ctrl key while selecting items.
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step1-2.png)
 
-![Mrlearning Base Ch2 3Step3imb](images/mrlearning-base-ch2-3step3imb.PNG)
+> [!TIP]
+> To display your scene as shown in the image below, double-click the PressableButtonHoloLens2 object in the Hierarchy window to bring it into focus, then use the <a href="https://docs.unity3d.com/Manual/SceneViewNavigation.html" target="_blank">Scene Gizmo</a>, located in the top right corner of the Scene window, to adjust the viewing angle to be along the forward Z axis.
 
-4. Add MRTK’s Grid Object Collection component to the button collection. To do this, select the ButtonCollection parent object. From the Inspector panel, click the Add Component button. Search for Grid Object Collection in the search bar, and select it when it appears in the list.
+With the PressableButtonHoloLens2 object still selected, in the **Inspector** window:
 
-![Mrlearning Base Ch2 3Step4im](images/mrlearning-base-ch2-3step4im.PNG)
+* Change its Transform **Position** so it's positioned in front of the camera, which is positioned at origin, for example, x = 0, y = 0, and z = 0.5
 
-The Grid Object Collection component lets you organize buttons or any set of objects in a neat row, column, or grid. This is one of the building blocks provided by the MRTK that gives you a quick and easy way to create enticing user interfaces.
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step1-3.png)
 
-5. Configure the grid object collection. To ensure all the buttons face the user, select Orient Type. Then select Face Parent Forward as shown in the image below. Next, change the cell size to set the space between your buttons. Start with 0.12 units by 0.12 units for the Cell Width and Cell Height as shown in the image below. You might need to adjust these values, depending on object and button assets that were chosen. Make sure Rows is set to 1. Click Update Collection. The scene will look similar to the picture below. 
+> [!NOTE]
+> In general, 1 position unit in Unity is roughly equivalent to 1 meter in the physical world. However, there are exceptions to this, for example, when objects are children of scaled objects.
 
+### 2. Add a cube to the scene
 
-![Mrlearning Base Ch2 3Step5im](images/mrlearning-base-ch2-3step5im.PNG)
+Right-click on an empty spot inside the Hierarchy window and select **3D Object** > **Cube** to add a cube to your scene:
 
->Note: Depending on the orientation of the child objects or parent object, you will likely need to adjust the orientation setting differently in future projects. The Cell Width and the Cell Height fields may also need to be defined differently, depending on the size of the objects in your collection.
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step2-1.png)
 
-### Adding Text into Your Scene
+With the Cube object still selected, in the **Inspector** window:
 
-In this section, you will learn how to add and edit text to your mixed reality experiences. If you haven’t already, please ensure you have TextMeshPro enabled in Unity by following the instructions [here](https://docs.unity3d.com/Packages/com.unity.textmeshpro@2.0/manual/index.html#installation).
+* Change its Transform **Position** so its located near the pressable button, but not overlapping with it, for example, x = 0, y = 0.04, and z = 0.5
+* Change its Transform **Scale** to a suitable size, for example, x = 0.02, y = 0.02, and z = 0.02
 
-1. Select the ButtonCollection parent object, and right click the collection. Expand 3D object in the dropdown menu. Then select TextMeshPro - Text. You should see a TextMeshPro object under the button collection as shown in the image below.
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step2-2.png)
 
-![Lesson2 Chapter4 Step1a](images/Lesson2_Chapter4_Step1a.JPG)
-![Lesson2 Chapter4 Step1b](images/Lesson2_Chapter4_Step1b.JPG)
+### 3. Configure the InteractableOnPressReceiver event type
 
-2. To improve the text size and placement for readability, adjust the Font Size field in the TextMeshPro component to change the size of the font. You will also need to adjust the Rect Transform position and scale as shown in the image below. See the images below for values used for our text configuration. Feel free to use these values as a starting point to further improve the size and placement of your text field.
+With the PressableButtonHoloLens2 object selected in the Hierarchy window, in the **Inspector** window **hamburger menu**, select **Collaps All Components** to get an overview of all components on this object:
 
-![Lesson2 Chapter4 Step3](images/Lesson2_Chapter4_Step3.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-1.png)
 
-3. In the TextMeshPro component’s text field in the Inspector panel as shown below. Type in Button Collection Text. The text appears in the scene, but will be hidden behind the buttons and/or the wrong size.
+Expand the **Interactable (Script)** component, then locate and expand the **Events** > **Receivers** section:
 
-![Lesson2 Chapter4 Step2](images/Lesson2_Chapter4_Step2.JPG)
-![Lesson2 Chapter4 Step4](images/Lesson2_Chapter4_Step4.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-2.png)
 
-4. To modify the text values on the button objects, click the arrow next to any button to expand it and navigate to the SeeItSayItLabel object. Navigate to TextMeshPro where you can edit the text to your buttons as described in the steps above.
+For the Event Receiver Type **InteractableOnPressReceiver**, change the **Interaction Filter** to **Near and Far**:
 
-![Lesson2 Chapter4 Step5](images/Lesson2_Chapter4_Step5.JPG)
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-3.png)
+
+> [!NOTE]
+> The Event Receiver Type named InteractableOnPressReceiver allows the button to respond to a pressed event when a tracked hand presses the button.
+
+### 4. Configure the cube to receive the On Press event
+
+From the Hierarchy window, **click-and-drag** the **Cube** into the **Event Properties** object field for the **On Press ()** event to assign the Cube as a receiver of the On Press () event:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step4-1.png)
+
+### 5. Define the action to be triggered by the On Press event
+
+Click the action dropdown, currently assigned **No Function**, and select **MeshRenderer** > **Material material** to set the Cube's material property to be changed when the On Press () event is triggered:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step5-1.png)
+
+Click the small **circle** icon next to the material field, currently populated with **None (Material)**, to open the Select Material window:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step5-2.png)
+
+In the Select Material window, **search** for **MRTK_Standard** and select a suitable material, for example, **MRTK_Standard_Cyan** so the Cube's color changes to cyan when the button is pressed:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step5-3.png)
+
+### 6. Configure the cube to receive the On Release event
+
+**Repeat** Step 4 for the On Release event to assign the Cube as a receiver of the On Release () event.
+
+### 7. Define the action to be triggered by the On Release event
+
+**Repeat** Step 5 for the On Release event, but choose the **MRTK_Standard_LightGray** material so the Cube's color returns to its original light gray color when the button is released:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step7-1.png)
+
+### 8. Test the button using the in-editor simulation
+
+Press the **Play** button to enter Game mode and use the in-editor input simulation to test your newly configured button.
+
+Button not pressed (spacebar + mouse scroll wheel backward):
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step8-1.png)
+
+Button pressed (spacebar + mouse scroll wheel forward):
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step8-2.png)
+
+> [!TIP]
+> To learn how to use the in-editor input simulation, you can refer to the [Using the In-Editor Hand Input Simulation to test a scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+
+## Creating a panel of buttons using MRTK’s Grid Object Collection
+
+In this section, you will learn how to automatically align multiple buttons into a neat user interface by using the MRTK’s Grid Object Collection tool.
+
+This particular example will show you how to a create a panel with five buttons aligned horizontally. However, you may follow these same principles to create other layouts.
+
+The main steps you will take to achieve this are:
+
+1. Parent the button objects to a parent object
+2. Add and configure the Grid Object Collection (Script) component
+3. Test the buttons using the in-editor simulation
+
+### 1. Parent the button objects to a parent object
+
+Right-click on an empty spot inside the Hierarchy window and select **Create Empty**:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step1-1.png)
+
+Right-click on the newly created object, select **Rename**, and give it a suitable name, for example, **ButtonCollection**:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step1-2.png)
+
+Select the **PressableButtonHoloLens2** object and **drag** it on top of the **ButtonCollection** object to make it a child of the ButtonCollection object:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step1-3.png)
+
+Right-click the **PressableButtonHoloLens2** object and select **Duplicate** to create a copy of it:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step1-4.png)
+
+**Repeat** this step four more times until you have a total of five PressableButtonHoloLens2 objects.
+
+### 2. Add and configure the Grid Object Collection (Script) component
+
+With the ButtonCollection object selected in the Hierarchy window, in the Inspector window, click the **Add Component** button, then search for and select **Grid Object Collection** to add a Grid Object Collection (Script) component to the ButtonCollection object:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step2-1.png)
+
+Configure the Grid Object Collection (Script) as follows:
+
+* Change **Num Rows** to 1 to have all buttons aligned on one single row
+* Change **Cell Width** to 0.05 to space out the buttons within the row
+
+Then click the **Update Collection** button to apply the new configuration:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step2-2.png)
+
+> [!NOTE]
+> The configuration changes you just applied represent the minimum changes required to achieve the objective of placing the buttons in a single row. However, in future projects, depending on factors such as, for example, the orientation of the parent and child objects, you might need to adjust other settings such as, for example, the Orient Type. To learn more about MRTK's Grid Object Collection, you can visit the [Object collection scripts](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html#object-collection-scripts) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+
+With the ButtonCollection object still selected in the Hierarchy window, in the Inspector window, change the ButtonCollection object's Transform **Position** so its child button objects are positioned in front of the camera, which is positioned at origin, for example, x = 0, y = 0, and z = 0.5:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step2-3.png)
+
+> [!NOTE]
+> When you first added the PressableButtonHoloLens2 prefab to the scene in the [Hand tracking gestures and interactable buttons](mrlearning-base-ch2.md#hand-tracking-gestures-and-interactable-buttons) section above, you positioned it in front of the camera. However, because the Grid Object Collection controls its immediate child objects' position, the PressableButtonHoloLens2 child objects' Z Position were reset to 0 according to the Grid Object Collection's default Distance from parent value of 0. This, and to keep the parent/child positional relationship organized, is why we moved the parent ButtonCollection object's position forward instead of configuring the Distance from parent value to move the PressableButtonHoloLens2 child objects forward.
+
+### 3. Test the buttons using the in-editor simulation
+
+Press the Play button to enter Game mode and use the in-editor input simulation to test each of the buttons in in your newly created panel of buttons:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section3-step3-1.png)
+
+> [!TIP]
+> Currently, when your press any of the five buttons, the cube color changes to cyan. To make the experience more interesting, use what you just learn to configure each button to change the cube to a different color.
+
+## Adding text into your scene
+
+In this section, you will learn how to add text to your mixed reality experiences using Unity's TextMesh Pro, which you prepared in the [Import TextMesh Pro Essential Resources](mrlearning-base-ch1.md#import-textmesh-pro-essential-resources) section of the previous tutorial.
+
+In this particular example, you will add a simple label underneath the button collection you created in the previous section.
+
+Right-click on the ButtonCollection object and select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro object as a child of the ButtonCollection object:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section4-step1-1.png)
+
+With the newly created TextMeshPro object, named Text (TMP), still selected, in the Inspector window change its position and size so the label is placed neatly underneath the button collection, for example:
+
+* Change the Rect Transform **Pos Y** to -0.0425
+* Change the Rect Transform **Width** to 0.24
+* Change the Rect Transform **Height** to 0.024
+
+Then update the text to reflect what the label is for and choose font properties so the text fits within the label, for example:
+
+* Change the Text Mesh Pro (Script) **Text** to Button Collection
+* Change the Text Mesh Pro (Script) **Font Style** to Bold
+* Change the Text Mesh Pro (Script) **Font Size** to 0.2
+* Change the Text Mesh Pro (Script) **Alignment** to Center and Middle
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section4-step1-2.png)
 
 ## Congratulations
-In this lesson, you learned how to copy, customize, and configure an MRTK profile setting (i.e., spatial awareness mesh visibility.) You also learned how to interact with a button to trigger events using tracked hands on the HoloLens 2. Finally, you learned how to create a simple UI interface using Unity's Text Mesh Pro the MRTK's Grid Object Collection component.
 
-[Next Lesson: 4. Placing dynamic content and using solvers](mrlearning-base-ch3.md)
+In this tutorial, you learned how to clone, customize, and configure an MRTK profile setting. You also learned how to interact with buttons to trigger events using tracked hands on the HoloLens 2. Finally, you learned how to create a simple UI interface using the MRTK's Grid Object Collection component and Unity's Text Mesh Pro.
 
+[Next Tutorial: 4. Placing dynamic content and using solvers](mrlearning-base-ch3.md)

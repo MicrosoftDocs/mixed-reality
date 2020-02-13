@@ -1,91 +1,106 @@
-# What's new?
+# What's new? 
 ## [Latest news](news.md)
 ## [Get your app ready for HL2](mrtk-porting-guide.md)
 ## [Learn about Azure Services](azure-services.md)
+## [Get ready for the new Microsoft Edge](new-microsoft-edge.md)
 ## Programs and events
-### [Mixed Reality Dev Days](mr-dev-days.md)
-#### [Mixed Reality Dev Days Sessions](mr-dev-days-sessions.md)
-#### [Mixed Reality Dev Days FAQ](mr-dev-days-faq.md)
 ### [San Francisco Reactor Academy events calendar](sf-academy-events.md)
-### [CVPR 2018 HoloLens Research mode session](cvpr-2018.md)
-### [ECCV 2018 HoloLens as a tool for computer vision research](eccv-2018.md)
 ### [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
 ## [Current mixed reality release notes](release-notes-may-2019.md)
+## [Community Resources](community.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
-
 # Discover
-## [Get started with Mixed Reality](index.md)
+## [Get started with mixed reality](index.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Case study gallery](case-studies-overview.md)
+## HoloLens hardware
+### [HoloLens 2 hardware details](https://docs.microsoft.com/hololens/hololens2-hardware)
+### [HoloLens (1st gen) hardware details](https://docs.microsoft.com/hololens/hololens1-hardware)
 ## Immersive headsets
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 ### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Location based entertainment](location-based-experiences.md)
-
+## [Community Resources](community.md)
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
-## Choose an interaction model
-### [Instinctual interactions](Interaction-fundamentals.md)
+
+## Core concepts
+### [Overview](core-concepts-landingpage.md)
+### [App model](app-model.md)
+### [App views](app-views.md)
+### [Comfort](comfort.md)
+### [Coordinate systems](coordinate-systems.md)
+### [Eye tracking](eye-tracking.md)
+### [Holographic frame](holographic-frame.md)
+### [Room scan visualization](room-scan-visualization.md)
+### [Scene understanding](scene-understanding.md)
+### [Spatial anchors](spatial-anchors.md)
+### [Sound](spatial-sound.md)
+### [Spatial mapping](spatial-mapping.md)
+### [System gesture](system-gesture.md)
+### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+
+## Interaction models
+### [Instinctual interactions](interaction-fundamentals.md)
 ### Hands and motion controllers model
-#### [Hands and motion controllers](hands-and-tools.md)
 #### [Direct manipulation with hands](direct-manipulation.md)
-#### [Point and commit with hands](point-and-commit.md)
+#### [Hands and motion controllers](hands-and-tools.md)
 #### [Motion controllers](Motion-controllers.md)
+#### [Point and commit with hands](point-and-commit.md)
 ### Hands-free model
 #### [Hands-free](hands-free.md)
-#### [Voice commanding](Voice-design.md)
-#### [Head-gaze and dwell](Gaze-and-dwell.md)
-### [Head-gaze and commit model](gaze-and-commit.md)
-### [Eye-gaze](eye-tracking.md)
-## Core building blocks 
-### [Gaze](gaze.md)
-### [Gestures](gestures.md)
-### [Comfort](comfort.md)
-### [Holographic frame](holographic-frame.md)
-### [Motion controllers](motion-controllers.md)
-### [Voice input](voice-input.md)
-### [Spatial mapping design](spatial-mapping-design.md)
-### [Spatial mapping](spatial-mapping.md)
-### [Scene understanding](scene-understanding.md)
-### [Coordinate systems](coordinate-systems.md)
-### [Spatial anchors](spatial-anchors.md)
-## Learn about UX patterns
-### [UX patterns overview](app-patterns-landingpage.md)
+#### [Voice input](voice-input.md)
+#### [Gaze and dwell](gaze-and-dwell.md)
+##### [Eye-gaze and dwell](gaze-and-dwell-eyes.md)
+##### [Head-gaze and dwell](gaze-and-dwell-head.md)
+### [Gaze and commit](gaze-and-commit.md)
+#### [Eye-gaze and commit](gaze-and-commit-eyes.md)
+#### [Head-gaze and commit](gaze-and-commit-head.md)
+### [Eye-gaze-based interaction](eye-gaze-interaction.md)
+## UX elements
+### [Overview](app-patterns-landingpage.md)
 ### Style
-#### [Color, light and materials](color,-light-and-materials.md)
+#### [Color, light, and materials](color-light-and-materials.md)
 #### [Scale](scale.md)
-#### [Spatial sound](spatial-sound.md)
-#### [Spatial sound design](spatial-sound-design.md)
 #### [Typography](typography.md)
+### Spatial sound
+#### [Spatial sound design](spatial-sound-design.md)
+#### [Case study: Holotour ](case-study-spatial-sound-design-for-holotour.md)
+#### [Case study: Roboraid](case-study-using-spatial-sound-in-roboraid.md)
+
+### Controls and behaviors
 #### [Cursors](cursors.md)
-### Controls
+#### [Hand ray](point-and-commit.md)
+#### [Button](button.md)
 #### [Interactable object](interactable-object.md)
-#### [Object collection](object-collection.md)
 #### [Bounding box and App bar](app-bar-and-bounding-box.md)
-#### [Displaying progress](progress.md)
-### App patterns
-#### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
-#### [Room scan visualization](room-scan-visualization.md)
+#### [Manipulation](direct-manipulation.md)
+#### [Hand menu](hand-menu.md)
+#### [Near menu](near-menu.md)
+#### [Object collection](object-collection.md)
+#### [Voice command](voice-input.md)
+#### [Keyboard](keyboard.md)
+#### [Tooltip](tooltip.md)
+#### [Slate](slate.md)
+#### [Slider](slider.md)
+#### [Shader](shader.md)
 #### [Billboarding and tag-along](billboarding-and-tag-along.md)
-#### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
-#### [App model](app-model.md)
-#### [App views](app-views.md)
-## Design tools and resources
+#### [Displaying progress](progress.md)
+#### [Surface magnetism](surface-magnetism.md)
+## Resources
 ### [Learn Unity](https://learn.unity.com/)
 ### [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 ### [Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)
 ### [Microsoft Maquette](https://www.maquette.ms)
 ### [Asset creation process](asset-creation-process.md)
 ### [Design your own immersive environments](add-custom-home-environments.md)
-
 # Develop
 ## [Learn the tools and architecture](development.md)
 ## [Install the tools](install-the-tools.md)
 ## Mixed reality cloud services
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
-
 ## [Tutorials and sample apps](tutorials.md)
 ### Unity
 #### HoloLens 2 tutorials
@@ -112,6 +127,12 @@
 ###### [3. Connecting multiple users](mrlearning-sharing(photon)-ch3.md)
 ###### [4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
 ###### [5. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
+##### Spatial audio tutorials
+###### [1. Adding spatial audio in your project](unity-spatial-audio-ch1.md)
+###### [2. Spatializing button interaction sounds](unity-spatial-audio-ch2.md)
+###### [3. Spatializing audio from a video](unity-spatial-audio-ch3.md)
+###### [4. Enabling and disabling spatial audio at run time](unity-spatial-audio-ch4.md)
+###### [5. Using reverb to add distance to spatial audio](unity-spatial-audio-ch5.md)
 #### HoloLens (1st gen) open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
@@ -146,31 +167,31 @@
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
-#### [Accelerate development with Mixed Reality Toolkit v2](mrtk-getting-started.md)
+#### [Getting started with Mixed Reality Toolkit v2](mrtk-getting-started.md)
 #### [Configure Unity Project for Windows Mixed Reality](Configure-Unity-Project.md)
 #### [Recommended settings for Unity](recommended-settings-for-unity.md)
-#### [Text in Unity](text-in-unity.md)
 #### [Unity Play Mode](unity-play-mode.md)
 #### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
 #### [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
 #### [Managed debugging with Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
 ### Core building blocks
+#### [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions](mrtk-101.md)
 #### [Camera in Unity](camera-in-unity.md)
 #### [Coordinate systems in Unity](coordinate-systems-in-unity.md)
 #### [Persistence in Unity](persistence-in-unity.md)
 #### [Gaze in Unity](gaze-in-unity.md)
+#### [Text in Unity](text-in-unity.md)
 #### [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
 #### [Hand and Eye Tracking in Unity](hand-eye-in-unit.md)
 #### [Voice input in Unity](voice-input-in-unity.md)
 #### [Spatial mapping in Unity](spatial-mapping-in-unity.md)
 #### [Spatial sound in Unity](spatial-sound-in-unity.md)
-### Other key features
+### Platform capabilities and APIs
 #### [Shared experiences in Unity](shared-experiences-in-unity.md)
 #### [Locatable camera in Unity](locatable-camera-in-unity.md)
 #### [Focus point in Unity](focus-point-in-unity.md)
 #### [Tracking loss in Unity](tracking-loss-in-unity.md)
 #### [Keyboard input in Unity](keyboard-input-in-unity.md)
-### Advanced topics
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
@@ -191,11 +212,10 @@
 #### [Head and eye gaze](gaze-in-directx.md)
 #### [Hands and motion controllers](hands-and-motion-controllers-in-directx.md)
 #### [Voice input](voice-input-in-directx.md)
-#### [Spatial sound](spatial-sound-in-directx.md)
 #### [Spatial mapping](spatial-mapping-in-directx.md)
 #### [Scene understanding](scene-understanding-sdk.md)
 #### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
-#### [Keyboard, mouse, and controller input](keyboard,-mouse,-and-controller-input-in-directx.md)
+#### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
 #### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
 #### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
@@ -206,15 +226,16 @@
 #### [Locatable camera](locatable-camera.md)
 #### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 #### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
-### Holographic Remoting
+### Holographic remoting
 #### [Holographic Remoting Player](holographic-remoting-player.md)
 #### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
 #### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
 #### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 #### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 #### [Troubleshooting and Limitations](holographic-remoting-troubleshooting.md)
-#### [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
-#### Holographic Remoting for HoloLens 1
+#### [Version History](holographic-remoting-version-history.md)
+#### [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+#### Holographic Remoting for HoloLens (1st gen)
 #### [Add Holographic Remoting](add-holographic-remoting.md)
 ### App quality and testing
 #### [App quality criteria](app-quality-criteria.md)
@@ -249,4 +270,3 @@
 ## [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 ## [In-app purchases](in-app-purchases.md)
 ## [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
-

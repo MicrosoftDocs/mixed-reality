@@ -12,8 +12,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, directx
 
 # Learn the tools and architecture
 
-
-![Teams working with materials in the Mixed Reality Academy](images/Development_Hero.png)
+![Abstract 3D sphere](images/07_Development.png)
 
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
@@ -59,7 +58,7 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 
 
 ### [Unity development overview](unity-development-overview.md)
-The fastest path to building a mixed reality app is with Unity. We recommend that you take time to explore the Unity tutorials. If you need assets, Unity has a comprehensive Asset Store. 
+We recommend that you take time to explore the Unity tutorials. If you need assets, Unity has a comprehensive Asset Store. 
 
 <br>
 
@@ -73,8 +72,15 @@ The HoloLens 2 tutorials are designed to help developers learn both techniques a
 
 <br>
 
-### [Example Unity scenes in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
-The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input
+### [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor)
+The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
+>[!NOTE]
+>Requires the install of MRTK Foundation and Example Unity packages.
+
+### [Eye tracking examples (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html)
+This page covers how to get quickly started with using eye tracking in MRTK by building on our provided MRTK eye tracking examples.
+>[!NOTE]
+>Requires the install of MRTK Foundation and Example Unity packages.
 
 <br>
 
@@ -83,7 +89,7 @@ The HandInteractionExamples.unity example scene contains various types of intera
 ## Unreal
 
 ### [Unreal development overview](unreal-development-overview.md)
-The fastest path to building a mixed reality app is with Unreal.
+Learn how to build a mixed reality app using Unreal.
 
 <br>
 
@@ -92,7 +98,7 @@ The fastest path to building a mixed reality app is with Unreal.
 ## WebVR	
 
 ### [Babylon development overview](https://doc.babylonjs.com/)	
-The fastest path to building a mixed reality app is with Babylon. We recommend that you take time to explore the Babylon tutorials.
+Learn how to build a mixed reality app with Babylon. We recommend that you take time to explore the Babylon tutorials.
 
 <br>
 
@@ -107,7 +113,7 @@ The fastest path to building a native mixed reality app.
 <br>
 
 ### [DirectX UWP app templates for mixed reality](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
-All of the essentials you need to start writing a mixed reality app using DirectX
+All of the essentials you need to start writing a mixed reality app using DirectX.
 
 <br>
 
@@ -119,7 +125,7 @@ All of the essentials you need to start writing a mixed reality app using Direct
 
 :::row:::
     :::column:::
-       [![Understand the basics](images/icon-lightbulb.jpg)](index.md#understand-the-basics)<br>
+       [![Understand the basics](images/icon-lightbulb.png)](index.md#understand-the-basics)<br>
         **[Understand the basics](index.md#understand-the-basics)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::

@@ -12,110 +12,235 @@ keywords: event, calendar, academy, schedule, sf, san francisco, reactor
 
 Join the Microsoft Mixed Reality Team at these upcoming events!
 
-**[San Francisco Reactor](https://developer.microsoft.com/reactor/#ReactorSF)**<br>
+[San Francisco Reactor](https://developer.microsoft.com/reactor/#ReactorSF)<br>
 680 Folsom St.<br>
 San Francisco, CA 94107
 
 <br>
 
 ---
+###  Feb 24, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
 
+---
+###  March 9, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
 
-## [Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### August 5, 2019
-As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
+---
+### March 23, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
 
-[Sign up for this workgroup event](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
+---
+### March 31, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
+<br>
 
+---
+###  April 2-3, 2020
+## Mixed Reality Accelerator
+MR Accelerator is a hackathon-style workshop, aimed at accelerating the development of Mixed Reality applications and porting from HoloLens gen 1 to HoloLens 2 (Intermediate/Advanced Level).
+<br>
+
+---
+###  April 27, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  May 11-12, 2020
+## Mixed Reality Mentor Days
+Hands-on workshop for HoloLens 2 design and development. Invitation only.
+<br>
+
+---
+###  May 26, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  June 8-9, 2020
+## Mixed Reality Accelerator
+MR Accelerator is a hackathon-style workshop, aimed at accelerating the development of Mixed Reality applications and porting from HoloLens gen 1 to HoloLens 2 (Intermediate/Advanced Level).
 <br>
 
 ---
 
-
-## [HoloLens, Mixed Reality Design and Development Meetup](https://www.meetup.com/hololens-mr/events/263232210/)
-### August 12, 2019
-Join us at the HoloLens and MR Meetup where Jesse McCulloch, Developer Ecosystem Program Manager, will do a hands-on tutorial to make your first HoloLens 2 application.
-
-[Sign up for this meetup](https://www.meetup.com/hololens-mr/events/263232210/)
-
+###  June 8, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
 <br>
 
 ---
-
-
-## [Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### August 19, 2019
-As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
-
-[Sign up for this workgroup event](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-
+###  June 22, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
 <br>
 
 ---
-
-
-## [Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### September 9, 2019
-As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
-
-[Sign up for this workgroup event](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-
+###  July 9-10, 2020
+## Mixed Reality Mentor Days
+Hands-on workshop for HoloLens 2 design and development. Invitation only.
 <br>
 
 ---
-
-
-## [HoloLens, Mixed Reality Design and Development Meetup](https://www.meetup.com/hololens-mr/)
-### September 16, 2019
-More information coming soon!
-
-[Sign up for this meetup](https://www.meetup.com/hololens-mr/)
-
+###  July 13, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
 <br>
 
 ---
-
-
-## [Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### September 23, 2019
-As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
-
-[Sign up for this workgroup event](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-
+###  July 21, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
 <br>
 
 ---
-
-
-## [Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### October 10, 2019
-As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
-
-[Sign up for this workgroup event](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-
+###  July 27, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
 <br>
 
 ---
-
-
-## [HoloLens, Mixed Reality Design and Development Meetup](https://www.meetup.com/hololens-mr/)
-### October 16, 2019
-More information coming soon!
-
-[Sign up for this meetup](https://www.meetup.com/hololens-mr/)
-
+###  July 27-28, 2020
+## Mixed Reality Accelerator
+MR Accelerator is a hackathon-style workshop, aimed at accelerating the development of Mixed Reality applications and porting from HoloLens gen 1 to HoloLens 2 (Intermediate/Advanced Level).
 <br>
 
 ---
-
-## [Mixed Reality Workgroup, San Francisco Reactor](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-### October 21, 2019
-As a workgroup, we want to keep things pretty casual, just show up around 6:00, hang out and work for a while! It's a great opportunity to get feedback from other developers, seek out help and advice from someone who's tried it before, or chill for a while after work and code! So bring a laptop, bring a project, and bring an open mind! The Microsoft Reactor is a roomy place, and we're keeping attendance limited so it's not a busy crowd. We hope to see you there!
-
-[Sign up for this workgroup event](https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.meetup.com%2Fhololens-mr%2F&data=02%7C01%7Cdaescu%40microsoft.com%7Ca8ddee063b7949a9992308d6903e62b0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636854994961124360&sdata=YmnAAiWVxIJ700mO9gj%2BOz4W8%2BgKDjDhiJhYtfCzCFU%3D&reserved=0)
-
+###  August 3, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
 <br>
 
 ---
+###  August 13-14, 2020
+## Mixed Reality Mentor Days
+[Register here.](Hands-on workshop for HoloLens 2 design and development. Invitation only.
+<br>
 
-## More Mixed Reality events coming soon...
+---
+###  August 17, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  August 24, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  August 27-28, 2020
+## Mixed Reality Accelerator
+MR Accelerator is a hackathon-style workshop, aimed at accelerating the development of Mixed Reality applications and porting from HoloLens gen 1 to HoloLens 2 (Intermediate/Advanced Level).
+<br>
+
+---
+###  September 17-18, 2020
+## Mixed Reality Accelerator
+MR Accelerator is a hackathon-style workshop, aimed at accelerating the development of Mixed Reality applications and porting from HoloLens gen 1 to HoloLens 2 (Intermediate/Advanced Level).
+<br>
+
+---
+###  September 21, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  September 22, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  October 5-6, 2020
+## Mixed Reality Mentor Days
+Hands-on workshop for HoloLens 2 design and development. Invitation only.
+<br>
+
+---
+###  October 5, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  October 19, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  October 26, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  October 26-27, 2020
+## Mixed Reality Mentor Days
+Hands-on workshop for HoloLens 2 design and development. Invitation only.
+<br>
+
+---
+###  November 9-10, 2020
+## Mixed Reality Mentor Days
+ Hands-on workshop for HoloLens 2 design and development. Invitation only.
+<br>
+
+---
+###  November 9, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  November 16, 2020
+## HoloLens & Mixed Reality Meetup
+Let's get together to talk and learn about HoloLens and Mixed Reality. There's a huge opportunity for developers to reach thousands of enterprises and millions of customers by building experiences to help people in their daily lives!
+[Register here.](https://www.meetup.com/hololens-mr/)
+<br>
+
+---
+###  November 23, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)
+<br>
+
+---
+###  December 7, 2020
+## Mixed Reality Workgroup
+The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
+[Register here.](https://www.meetup.com/hololens-mr/events/)

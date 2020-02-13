@@ -2,7 +2,7 @@
 title: Case study - Representing humans in mixed reality
 description: What kind of opportunities emerge when we cannot only create fantastic elements, but utilize the most realistic captures of environments, objects, and people in mixed reality?
 author: mavitazk
-ms.author: mavitazk
+ms.author: jemccull
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, humans, avatar, mixed reality capture, volumetric video
@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, humans, avatar, mixed reality capture, volumetr
 
 # Case study - Representing humans in mixed reality
 
-James Turrell designs with light. Stepping into his work blurs one’s sense of depth and focus. Walls seem both close and infinite, brightness gives way to shadows. Unfamiliar perceptions designed by carefully balancing the light’s color and diffusion. [Turrell describes these sensations](http://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) as *‘feeling with your eyes’*, a way of extending one’s understanding of reality. Fantastic worlds, like the ones Turrell imagines, are powerful tools to exploit our senses, not unlike the immersive environments of mixed reality today.
+James Turrell designs with light. Stepping into his work blurs one’s sense of depth and focus. Walls seem both close and infinite, brightness gives way to shadows. Unfamiliar perceptions designed by carefully balancing the light’s color and diffusion. [Turrell describes these sensations](https://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) as *‘feeling with your eyes’*, a way of extending one’s understanding of reality. Fantastic worlds, like the ones Turrell imagines, are powerful tools to exploit our senses, not unlike the immersive environments of mixed reality today.
 
 ![Wide Out - James Turrell (1998)](images/wide-out-james-turrell.jpg)
 
@@ -24,7 +24,7 @@ Turrell’s stark, surreal minimalism is the hallmark of his work, but what if w
 
 ![Bang - Ai Weiwei (2013)](images/bang-ai-weiwie.jpg)
 
-In 2013, the artist Ai Weiwei unveiled [a tangling work of art](http://www.designboom.com/art/ai-weiwei-bang-installation-at-venice-art-biennale-2013/) featuring 886 antique stools at the Venice Biennale. Each wooden stool came from an era where Chinese craftsmanship was highly valued, where these stools would have been passed down between generations. The stools themselves — the intricacies of the wood, the precision of the pieces, their careful placement — are critical to Ai’s commentary on modern culture.
+In 2013, the artist Ai Weiwei unveiled [a tangling work of art](https://www.designboom.com/art/ai-weiwei-bang-installation-at-venice-art-biennale-2013/) featuring 886 antique stools at the Venice Biennale. Each wooden stool came from an era where Chinese craftsmanship was highly valued, where these stools would have been passed down between generations. The stools themselves — the intricacies of the wood, the precision of the pieces, their careful placement — are critical to Ai’s commentary on modern culture.
 
 The antique stools deliver the artist’s message through their authenticity. Their realistic representation is critical to the experience, creating a technical challenge: Sculpting each of the 886 stools by hand would be enormously exhaustive and expensive. How long would it take to model and position? How would you maintain the authenticity of the material? Recreating these objects from scratch becomes, in many ways, an interpretation of the artwork itself. How can you preserve the artist’s intent?
 
@@ -48,7 +48,7 @@ Humans are central to storytelling — in the most literal sense: a human speaki
 
 ![Mindshow in VR](images/mindshow-in-vr-640px.jpg)
 
-Avatars in immersive experiences enable a new kind of embodiment in storytelling. The latest apps are rethinking the concept of virtual body ownership and setting up a generational leap in eliminating the distance between people. Companies like [Mindshow](http://mindshow.com/) are developing creative tools that leverage avatars, letting users take on entirely new personas and characters. Others are exploring [methods of artistic expression](https://en.wikipedia.org/wiki/Uncanny_valley), a potentially limitless creative opportunity to explore the nature (and necessity) of human-like attributes. Today, this absence of realism helps avoid the [uncanny valley of human likeness](https://en.wikipedia.org/wiki/Uncanny_valley) along with a host of technical issues for everyday developers. For these reasons (and more) it is very likely that non-realistic avatars will become the default for the foreseeable future. And yet, while realism poses an enormous challenge for mixed reality, *there are key scenarios that require authentic representation of humans in 3D space*.
+Avatars in immersive experiences enable a new kind of embodiment in storytelling. The latest apps are rethinking the concept of virtual body ownership and setting up a generational leap in eliminating the distance between people. Companies like [Mindshow](https://mindshow.com/) are developing creative tools that leverage avatars, letting users take on entirely new personas and characters. Others are exploring [methods of artistic expression](https://en.wikipedia.org/wiki/Uncanny_valley), a potentially limitless creative opportunity to explore the nature (and necessity) of human-like attributes. Today, this absence of realism helps avoid the [uncanny valley of human likeness](https://en.wikipedia.org/wiki/Uncanny_valley) along with a host of technical issues for everyday developers. For these reasons (and more) it is very likely that non-realistic avatars will become the default for the foreseeable future. And yet, while realism poses an enormous challenge for mixed reality, *there are key scenarios that require authentic representation of humans in 3D space*.
 
 At Microsoft, a small team borne out of Microsoft Research has spent the past several years developing a method for capturing humans through a form of volumetric video. The process today is similar to video production: rather than applying movement to a sculpted asset it is a full, 3D recording. The performance and the image are captured in real-time — it’s not the work of an artist, it’s an authentic representation. And while the technology is just beginning to expand into commercial applications, the implications of volumetric video are critical to [Microsoft’s vision of More Personal Computing](https://www.youtube.com/watch?v=tcyj-_IEWt8).
 
@@ -62,7 +62,7 @@ Today the team is pushing the bounds of volumetric video by focusing on sectors 
 
 Designing ways to make these videos seem natural poses a challenge but one in which the team sees enormous potential. And these opportunities will expand as the technology becomes more accessible and moves from recordings to real-time capture.
 
-[Holoportation](https://www.microsoft.com/en-us/research/project/holoportation-3/) is a research effort that builds upon the same fundamental technology, authentically capturing visual and depth information, and rendering the result in real-time. The team is exploring what the power of realistic human representation means for the future of conversations and shared experiences. What happens when a three-dimensional capture of someone, from anywhere in the world, can be added into your environment?
+[Holoportation](https://www.microsoft.com/research/project/holoportation-3/) is a research effort that builds upon the same fundamental technology, authentically capturing visual and depth information, and rendering the result in real-time. The team is exploring what the power of realistic human representation means for the future of conversations and shared experiences. What happens when a three-dimensional capture of someone, from anywhere in the world, can be added into your environment?
 
 ![Future of conversation](images/girl-with-dress.jpg)
 

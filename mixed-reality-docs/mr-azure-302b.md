@@ -200,7 +200,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
 5.  While still in **File > Build Settings** and make sure that:
 
-    1.  **Target Device** is set to **Hololens**
+    1.  **Target Device** is set to **HoloLens**
 
         > For the immersive headsets, set **Target Device** to *Any Device*.
         
@@ -1443,7 +1443,7 @@ To create this class:
                 }
             } 
 
-            // Subscribing to the Hololens API gesture recognizer to track user gestures
+            // Subscribing to the HoloLens API gesture recognizer to track user gestures
             recognizer = new GestureRecognizer();
             recognizer.SetRecognizableGestures(GestureSettings.Tap);
             recognizer.Tapped += TapHandler;
