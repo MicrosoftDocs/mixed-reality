@@ -10,71 +10,77 @@ keywords: mixed reality, unity, tutorial, hololens
 
 # 2. Saving, retrieving, and sharing Azure Spatial Anchors
 
-In this tutorial, you will learn how to save our Azure Spatial Anchors across multiple app sessions by saving our anchor information to the HoloLens 2's storage. You will also learn how to share this anchor information to other devices for a multi-device anchor alignment.
+In this tutorial, you will learn how to save Azure Spatial Anchors across multiple app sessions by saving the anchor ID to the HoloLens 2's storage. You will also learn how to share this anchor ID to other devices for a multi-device anchor alignment.
 
 ## Objectives
 
-* Learn how to save and retrieve Azure Spatial Anchor information from the HoloLens 2 local disk, for persistence between app sessions
-* Learn how to share Azure Spatial Anchor information between users in a multi-device scenario
+* Learn how to save and retrieve Azure Spatial Anchor IDs to and from the HoloLens 2 local disk, for persistence between app sessions
+* Learn how to share Azure Spatial Anchor IDs between users in a multi-device scenario
 
-## Persist Azure anchors between app sessions - Save anchor ID to Disk
+## Preparing the scene
 
-1. Search for and add the SaveAnchorToDisk prefab to your scene. These include two buttons; one button for saving any available Azure Anchor IDs to the HoloLens 2 storage, and another for retrieving any IDs from the disk.
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent_SaveAnchorId** and **ButtonParent_ShareAnchorId** to select the two prefabs, then drag them into the Hierarchy window to add them to the scene:
 
-    ![module2chapter2step1im](images/module2chapter2step1im.PNG)
+![mrlearning-asa](images/mrlearning-asa/tutorial2-section1-step1-1.png)
 
-2. Configure Each button according to the instructions below
+## Persist Azure Anchors between app sessions - Save anchor ID to disk
+<!-- TODO: Consider renaming to 'Persist Azure Anchors between app sessions' -->
 
-    For the Button named SaveToDisk, create a new event under the Button Pressed event trigger as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the SaveAzureAnchorIDToDisk() method from the ParentAnchor Object's ASAmoduleScript component.
+In this section, you will learn how to save and retrieve the Azure Anchor ID to and from the HoloLens 2 local disk. This will allow you to query Azure for the same anchor ID between different app sessions, allowing the anchored holograms to be position at the same location as in the previous app session.
 
-    >[!NOTE]
-    >Some of the buttons may appear overlapping the other buttons in the scene. Feel free to adjust the button's positioning.
+In the Hierarchy window, expand the **ButtonParent_SaveAnchorId** object which contains two buttons, one button for saving the Azure Anchor ID to the HoloLens 2 storage and another for retrieving the saved ID from the disk:
 
-    ![module2chapter2step2aim](images/module2chapter2step2aim.PNG)
+![mrlearning-asa](images/mrlearning-asa/tutorial2-section2-step1-1.png)
 
-    ![module2chapter2step2aim](images/module2chapter2step2bim.PNG)
+Follow the same steps as in the [configuring the buttons to operate the scene](mrlearning-asa-ch1.md#configuring-the-buttons-to-operate-the-scene) instructions from the previous tutorial to configure the **Pressable Button Holo Lens 2 (Script)** component and the **Interactable (Script)** component on each of the two buttons:
 
-    ![module2chapter2step2aim](images/module2chapter2step2cim.PNG)
+* For the **SaveAzureAnchorIdToDisk** object, assign the AnchorModuleScript > **SaveAzureAnchorIdToDisk ()** function.
+* For the **GetAzureAnchorIdFromDisk** object, assign the AnchorModuleScript > **GetAzureAnchorIdFromDisk ()** function.
 
-    For the button named GetFromDisk, create a new event under the Button Pressed event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the LoadAzureAnchorIDsFromDisk() method from the ParentAnchor Object's ASAmoduleScript component.
+If you build the updated application to your HoloLens, you can now persist Azure Spatial Anchors between app sessions by saving the Azure Anchor ID. To test it out, you can follow these steps:
 
-3. Follow the instructions from Tutorial 1 to build the updated application to your device. After pressing the Create Azure Anchor button, as you did in the previous lesson, you may now save the Azure Anchor ID to disk by pressing the save to disk button.
-
-4. Restart the application, start the Azure Session, Press Load Anchor ID, and then press Locate Azure Anchor to locate the anchor associated with the ID we saved to the disk. The entire scene should now snap into position, at the location you saved the anchor previously!
+1. Move the Rocket Launcher experience to desired location.
+2. Start Azure Session.
+3. Create Azure Anchor (creates anchors at the location of the Rocket Launcher experience).
+4. Save Azure Anchor ID to Disk.
+5. Restart the application.
+6. Get Azure Anchor from Disk (loads the anchor ID you just saved).
+7. Start Azure Session.
+8. Find Azure Anchor (positions the Rocket Launcher experience at the location from step 3).
 
 ## Share Azure Anchors between multiple devices
 
-In this section, we'll learn how to share the Azure Anchor ID between multiple devices. This will allow multiple devices to query Azure for the same anchor ID, allowing our anchored holograms and scenes to be spatially aligned. Spatial alignment (seeing the same holograms in the same physical location between multiple devices) is key to local shared experiences in the HoloLens 2. There are many ways to transfer information regarding azure IDs between devices, including methods outlined in the Azure Spatial Anchors shared experiences tutorials [Tutorials](mrlearning-sharing(photon)-ch1.md). This example uses a simple web service to upload and download Anchor IDs between devices.
+In this section, you will learn how to share the Azure Anchor ID between multiple devices. This will allow multiple devices to query Azure for the same anchor ID, allowing the anchored holograms to be spatially aligned. Spatial alignment, i.e. seeing the same holograms in the same physical location between multiple devices, is key to local shared experiences in the HoloLens 2.
 
-1. Add the ShareAnchor prefab into your hierarchy. This prefab adds two new buttons to your scene; one for uploading anchor ID information and another for downloading anchor ID information.
+There are many ways to transfer Azure Anchor IDs between devices, including methods outlined in the the [Multi-user capabilities tutorials](mrlearning-sharing(photon)-ch1.md) series. In this example, you will use a simple web service to upload and download anchor IDs between devices.
 
-    ![module2chapter2step5im](images/module2chapter2step5im.PNG)
+In the Hierarchy window, expand the **ButtonParent_ShareAnchorId** object which contains two buttons; one button for uploading the Azure Anchor ID to the web server, and another for downloading the ID from the web server:
 
-2. Configure Each button according to the instructions below
+![mrlearning-asa](images/mrlearning-asa/tutorial2-section3-step1-1.png)
 
-    For the Button named SendSharedAnchor, create a new event under the Button Pressed event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the ShareAnchor() method from the ParentAnchor Object's ASAmoduleScript component.
+Follow the same steps as in the [configuring the buttons to operate the scene](mrlearning-asa-ch1.md#configuring-the-buttons-to-operate-the-scene) instructions from the previous tutorial to configure the **Pressable Button Holo Lens 2 (Script)** component and the **Interactable (Script)** component on each of the two buttons:
 
-    ![module2chapter2step6aim](images/module2chapter2step6aim.PNG)
+* For the **ShareAzureAnchorIdToNetwork** object, assign the AnchorModuleScript > **ShareAzureAnchorIdToNetwork ()** function.
+* For the **GetAzureAnchorIdFromNetwork** object, assign the AnchorModuleScript > **GetAzureAnchorIdFromNetwork ()** function.
 
-    ![module2chapter2step6bim](images/module2chapter2step6bim.PNG)
+If you build the updated application to two HoloLens devices, you can now achieve spatial alignment between them by sharing the Azure Anchor ID. To test it out, you can follow these steps:
 
-    For the Button named GetSharedAnchor, create a new event under the Button Pressed event trigger, as well as the On Click event trigger. Drag the ParentAnchor object into the empty field, and assign the GetSharedAzureAnchor() method from the ParentAnchor object's ASAmoduleScript component.
+1. On HoloLens device 1: Move the Rocket Launcher experience to desired location.
+2. On HoloLens device 1: Start Azure Session.
+3. On HoloLens device 1: Create Azure Anchor (creates anchors at the location of the Rocket Launcher experience).
+4. On HoloLens device 1: Share Azure Anchor ID to Network.
+5. On HoloLens device 2: Restart the application.
+6. On HoloLens device 2: Get Shared Anchor ID from Network (fetches the anchor ID just shared from HoloLens device 1).
+7. On HoloLens device 2: Start Azure Session.
+8. On HoloLens device 2: Find Azure Anchor (positions the Rocket Launcher experience at the location from step 3).
 
-3. Follow the instructions from [Tutorial 1](mrlearning-base-ch1.md) to build the updated application to your device. After pressing the Create Azure Anchor button, as you did in the previous lesson, you may now share the Azure Anchor ID to other devices by pressing the Share To Other Device button.
-
-    >[!NOTE]
-    >Select the parent anchor and scroll down to the parent anchor script. Ensure that your public sharing pin is unique (You can change the pin to another number), so that when you share it, you know it is yours that you are sharing. There could be thousands of users sharing their Azure anchors, so doing this will allow you to ensure you are sharing the correct Azure anchors.
-
-    ![module2chapter2step7bim](images/module2chapter2step7bim.PNG)
-
-4. If you have another HoloLens 2 device, start the application and then start the Azure Session. Press the Get Shared Anchor ID button, and then press the Locate Azure Anchor button to locate the anchor associated with the ID we shared using the web service. The entire scene should now snap into position, at where it was placed on the other HoloLens 2 device! If you only have one HoloLens 2, you may still test functionality by restarting the application, starting the Azure Session, and then press the "Get Shared Anchor ID" button, followed by the "Locate Azure Anchor button" to locate the anchor associated with the ID we saved to the disk. The entire scene should now snap into position, at the location you saved the anchor previously!
+> [!TIP]
+> If you only have one HoloLens, you can still test the functionality by restarting the application instead of using a second HoloLens device.
 
 ## Congratulations
 
-In this Lesson you learned how to persist Azure Spatial Anchors between application sessions and application restarts by saving the Azure Spatial Anchor ID to the local disk on HoloLens 2. You also learned how to share Azure Spatial Anchors between multiple devices for a basic multi-user, static hologram shared experience.
+In this tutorial you learned how to persist Azure Spatial Anchors between application sessions and application restarts by saving the Azure Spatial Anchor ID to the local disk on HoloLens. You also learned how to share Azure Spatial Anchors between multiple devices for a basic multi-user, static hologram shared experience.
 
-We learn how to implement Azure Spatial Anchors as part of a fully-interactive local shared experience during the final lesson of the Sharing Module. A local sharing experience may include functionality such as synchronized 3D object position, rotation, and scale, identifiers for each user, and shared application states. Azure Spatial Anchors enhances these shared scenarios by providing each participant with a common anchor that lets all users see virtual objects in the same physical location. This is true across a range of device platforms, including HoloLens, Android, and iOS devices. To learn how to develop a shared experience, complete all lessons in the Sharing module.
-
-In the next Lesson, you will learn how to provide users with real-time feedback. This feedback will include information about Anchor creation, the quality of environment understanding, and the state of the Azure session. Without feedback, users may not know whether an anchor has successfully been uploaded to Azure, whether the quality of the environment is sufficient for anchor creation, or the current state.
+In the next tutorial you will learn how to provide users with real-time feedback. This feedback will include information about Anchor creation, the quality of environment understanding, and the state of the Azure session. Without feedback, users may not know whether an anchor has successfully been uploaded to Azure, whether the quality of the environment is sufficient for anchor creation, or the current state.
 
 [Next Lesson: 3. Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md)
