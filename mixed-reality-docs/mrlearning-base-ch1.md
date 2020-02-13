@@ -167,7 +167,8 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 
 <!-- TODO: Consider adding info about configuring Unity for WMR vs MRTK, or removing WMR section -->
 
-In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** to open the MRTK Project Configurator window:
+After the package has been imported, the MRTK Project Configurator window should appear. If it does not, open it by 
+selecting **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** in the Unity menu.
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section5-step1-1.png)
 
