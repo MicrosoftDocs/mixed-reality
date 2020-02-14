@@ -149,13 +149,13 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 
 Download the Unity custom package:
 
-* [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.2.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage)
+* [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.3.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage)
 
 In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section4-step1-1.png)
 
-In the Import package... window, select the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage** you downloaded and click the **Open** button:
+In the Import package... window, select the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage** you downloaded and click the **Open** button:
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section4-step1-2.png)
 
@@ -167,8 +167,7 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 
 <!-- TODO: Consider adding info about configuring Unity for WMR vs MRTK, or removing WMR section -->
 
-After the package has been imported, the MRTK Project Configurator window should appear. If it does not, open it by 
-selecting **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** in the Unity menu.
+After the package has been imported, the MRTK Project Configurator window should appear. If it does not, open it by selecting **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** in the Unity menu.
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section5-step1-1.png)
 
@@ -186,15 +185,18 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configu
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-1.png)
 
-With the MixedRealityToolkit object selected in the Hierarchy window, in the Inspector window, change the Mixed Reality Toolkit configuration profile to **DefaultHoloLens2ConfigurationProfile**:
+With the MixedRealityToolkit object selected in the Hierarchy window, in the Inspector window, verify the Mixed Reality Toolkit configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-2.png)
+
+> [!IMPORTANT]
+> Typically, you will use the DefaultHoloLens2ConfigurationProfile when developing for HoloLens 2. However, for the purpose of this tutorial, you will use the DefaultMixedRealityToolkitConfigurationProfile, then in the next tutorial, [Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md), you will change to the DefaultHoloLens2ConfigurationProfile.
 
 In the Unity menu, select **File** > **Save As...** to open the Save Scene window:
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-3.png)
 
-In the Save Scene window, navigate to your project's **Scenes** folder, give your scene a suitable name, for example, _Getting Started_, and click the **Save** button to save the scene:
+In the Save Scene window, navigate to your project's **Scenes** folder, give your scene a suitable name, for example, _GettingStarted_, and click the **Save** button to save the scene:
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section6-step1-4.png)
 
