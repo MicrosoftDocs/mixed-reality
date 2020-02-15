@@ -24,7 +24,7 @@ In this tutorial, you will learn about basic 3D content and user experience, suc
 
 Download and import the Unity custom package:
 
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.2.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.2.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.2.0.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.0.unitypackage)
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
@@ -35,7 +35,7 @@ After you have imported the tutorial assets your Project window should look simi
 
 ## Decluttering the scene view
 
-To make it easier to work with your scene, set the **scene visibility** for the Cube and ButtonCollection objects to off by clicking the **eye** icon to the left of the objects. This hides the object in the Scene window without changing their in-game visibility:
+To make it easier to work with your scene, set the **scene visibility** for the **Cube** and **ButtonCollection** objects to off by clicking the **eye** icon to the left of the objects. This hides the object in the Scene window without changing their in-game visibility:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section2-step1-1.png)
 
@@ -55,7 +55,7 @@ Similarly to when you [created a panel of buttons](mrlearning-base-ch2.md#creati
 
 In the Hierarchy window, **create an empty object**, give it a suitable name, for example, **3DObjectCollection**, and position it in a suitable location, for example, X = 0, Y = -0.2, Z = 2.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs**, then **Parent** the following prefabs to the **3DObjectCollection**:
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs**, then **parent** the following prefabs to the **3DObjectCollection**:
 
 * Cheese
 * CoffeeCup
@@ -70,7 +70,6 @@ In the Hierarchy window, **create three cubes** as a child objects of the **3DOb
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-2.png)
 
-<!-- TODO: Finish -->
 > [!TIP]
 > For a reminder on how to do the steps listed above, you can refer to the [Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md) tutorial.
 
@@ -84,15 +83,15 @@ In the Project window, navigate to **Assets** > **MixedRealityToolkit.SDK** > **
 
 * MRTK_Standard_GlowingCyan
 * MRTK_Standard_GlowingOrange
-* MRTK_Standard_Green:
+* MRTK_Standard_Green
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-4.png)
 
 ### 2. Add and configure the Grid Object Collection (Script) component
 
-Add a **Grid Object Collection (Script)** component to the 3DObjectCollection object, and configure it as follows:
+Add a **Grid Object Collection (Script)** component to the **3DObjectCollection** object, and configure it as follows:
 
-* Change **Sort Type** to Child Order to ensure the child objects are sorted in the order you have placed them under the parent object
+* Change **Sort Type** to **Child Order** to ensure the child objects are sorted in the order you have placed them under the parent object
 
 Then click the **Update Collection** button to apply the new configuration:
 
@@ -122,7 +121,7 @@ The main steps you will take to achieve this are:
 
 ### 1. Add the Manipulation Handler (Script) component to all the objects
 
-In the Hierarchy window, select the **Cheese** object, hold down the **Shift** key, and then select the **Cube ()** object and add the **Manipulation Handler (Script)** component to all the objects:
+In the Hierarchy window, select the **Cheese** object, hold down the **Shift** key, and then select the **Cube () 2** object and add the **Manipulation Handler (Script)** component to all the objects:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section4-step1-1.png)
 
@@ -148,13 +147,13 @@ For the **Cube** object, leave all properties at default, to experience the defa
 
 #### Restrict manipulation to scale only
 
-For the **Cube (1)** object, change **Two Handed Manipulation Type** to Scale to only allow the user to change the object's size:
+For the **Cube (1)** object, change **Two Handed Manipulation Type** to **Scale** to only allow the user to change the object's size:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-2.png)
 
 #### Constrain the movement to a fixed distance from the user
 
-For the **Cube (2)** object, change **Constraint On Movement** to Fix Distance From Head so that when the object is moved, it stays at the same distance from the user:
+For the **Cube (2)** object, change **Constraint On Movement** to **Fix Distance From Head** so that when the object is moved, it stays at the same distance from the user:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-3.png)
 
@@ -166,21 +165,25 @@ For the **Cheese**, **CoffeCup**, and **EarthCore** objects, leave all propertie
 
 #### Remove the ability of far manipulation
 
-For the **Octa** object, uncheck the **Allow Far Manipulation** checkbox to make it so the user can only interact with the object directly using tracked hands:
+For the **Octa** object, un-check the **Allow Far Manipulation** checkbox to make it so the user can only interact with the object directly using tracked hands:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-5.png)
 
 #### Make an object rotate around its center
 
-For the **Platonic** object, change **One Hand Rotation Mode Near** and **One Hand Rotation Mode Far** to Rotate About Object Center to make it so when the user rotates the object with one hand, it rotates around the object's center:
+For the **Platonic** object, change **One Hand Rotation Mode Near** and **One Hand Rotation Mode Far** to **Rotate About Object Center** to make it so when the user rotates the object with one hand, it rotates around the object's center:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-6.png)
 
-#### Prevent movement after object is released
+#### Keep movement after object is released
 
-For the **TheModule** object, change **Release Behavior** to Nothing so that once the object is released from the user's hand, it doesn’t continue to move:
+For the **TheModule** object, add a **Rigidbody** component to enable physics, and then un-check the **Use Gravity** checkbox so the object is not affected by gravity:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-7.png)
+
+Back on the Manipulation Handler (Script) component, verify that the **Release Behavior** is set to both **Keep Velocity** and **Keep Angular Velocity** so that once the object is released from the user's hand, it continues to move:
+
+![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-8.png)
 
 To learn more about the Manipulation handler component and its associated properties, you can visit the [Manipulation handler](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -255,7 +258,7 @@ With the **Octa** object still selected, add the **Hand Interaction Touch (Scrip
 
 ### 4. Implement the On Touch Started event
 
-On the Hand Interaction Touch (Script) component, click the small **+** icon to create a new **On Touch Started ()** event. Then configure the **Octa** object to receive the event and define **AudioSource.PlayOneShot** as the action to be triggered:
+On the **Hand Interaction Touch (Script)** component, click the small **+** icon to create a new **On Touch Started ()** event. Then configure the **Octa** object to receive the event and define **AudioSource.PlayOneShot** as the action to be triggered:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-1.png)
 
