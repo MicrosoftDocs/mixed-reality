@@ -63,16 +63,20 @@ In the Hierarchy window, select the **Octa** object and add the **Speech Input H
 
 ### 5. Implement the Response event for the speech command
 
-On the Speech Input Handler (Script) component, click the small **+** button to add a keyword, and then, from the **Keyword** dropdown, choose the **Play Music** keyword you created earlier:
+On the Speech Input Handler (Script) component, click the small **+** button to add a keyword element to the list of keywords:
 
 ![mrlearning-base](images/mrlearning-base/tutorial5-section1-step5-1.png)
+
+Click the newly created **Element 0** to expand it, and then, from the **Keyword** dropdown, choose the **Play Music** keyword you created earlier:
+
+![mrlearning-base](images/mrlearning-base/tutorial5-section1-step5-2.png)
 
 > [!NOTE]
 > The keywords in the Keyword dropdown are populated based on the keywords defined in the Speech Commands list in the Speech Commands Profile.
 
 Create a new **Response ()** event, configure the **Octa** object to receive the event, define **AudioSource.PlayOneShot** as the action to be triggered, and assign a suitable audio clip to the **Audio Clip** field, for example, the MRTK_Gem audio clip:
 
-![mrlearning-base](images/mrlearning-base/tutorial5-section1-step5-2.png)
+![mrlearning-base](images/mrlearning-base/tutorial5-section1-step5-3.png)
 
 > [!TIP]
 > For a reminder on how to implement events and assign an audio clip, you can refer to the [Implement the On Touch Started event](mrlearning-base-ch4.md#4-implement-the-on-touch-started-event) instructions.
@@ -140,11 +144,11 @@ If you now enter Game mode, you can test scrolling the 2D content using the pan 
 
 ### 5. Add 3D content to be scrolled
 
-In the Hierarchy window, **create four cubes** as a child objects of the **PanContent** and set their Transform **Scale** to X = 0.15, Y = 0.15, Z = 0.15:
+In the Hierarchy window, **create four cubes** as a child objects of the **PanGesture** object and set their Transform **Scale** to X = 0.15, Y = 0.15, Z = 0.15:
 
 ![mrlearning-base](images/mrlearning-base/tutorial5-section2-step5-1.png)
 
-To space the cubes out evenly, and save some time, add the Grid Object Collection (Script) component, to the cubes' parent object, i.e. the PanGesture object, and configure the Grid Object Collection (Script) as follows:
+To space the cubes out evenly, and save some time, add the **Grid Object Collection (Script)** component, to the cubes' parent object, i.e. the **PanGesture** object, and configure the Grid Object Collection (Script) as follows:
 
 * Change **Num Rows** to 1 to have all the cubes aligned on one single row
 * Change **Cell Width** to 0.25 to space out the cubes within the row
@@ -225,7 +229,7 @@ In the Hierarchy window, select the **Cheese** object, then create a new **While
 
 ### 4. Implement the On Selected event
 
-In the Hierarchy window, select the **Cheese** object, then create a new **On Selected ()** event, configure the **Cheese** object to receive the event, and define **EyeTrackingTutorialDemo.RotateTarget** as the action to be triggered:
+In the Hierarchy window, select the **Cheese** object, then create a new **On Selected ()** event, configure the **Cheese** object to receive the event, and define **EyeTrackingTutorialDemo.BlipTarget** as the action to be triggered:
 
 ![mrlearning-base](images/mrlearning-base/tutorial5-section3-step4-1.png)
 
