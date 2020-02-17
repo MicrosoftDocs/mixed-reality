@@ -31,7 +31,7 @@ If you run a community that you would like included on this page, please send an
 |Community Name|Country|City|Link|
 |---------|---------|---------|---------|
 |**Chicago AWE Nite**|USA|Chicago|[Link](https://www.meetup.com/AWENiteChicago/)|
-|**VR Philippines**|Philoppines|N/A|[Link](https://www.facebook.com/vrphilippines/)|
+|**VR Philippines**|Philippines|N/A|[Link](https://www.facebook.com/vrphilippines/)|
 <!--
 |Row3     |         |         |         |
 |Row4     |         |         |         |
@@ -104,5 +104,5 @@ Microsoft Most Valuable Professionals, or MVPs, are technology experts who passi
 |![Takahiro Miyaura](images/BiographyImages/TakahiroMiyaura_270x270.jpg)</br>**Takahiro Miyaura**</br>*Nara, Japan*|I'm working as a software engineer,and developer in IT industry . In particular, I've been doing research XR(VR/AR/MR etc.. ) technologies,and various technologies(AI, IoT etc...) that can take advantage of XR.|[Email](mailto:cafe.kobe@gmail.com)|
 |![Tamás Deme](images/BiographyImages/tamasdeme_270.png)</br>**Tamás Deme**</br>*Budapest, Hungary*|Tamás is a mixed reality engineer working at the Atlanta based VIM, where he develops solutions for devices ranging from servers to a headset that shows you holograms. He’s a 5 times Microsoft MVP in Windows Development, interested in open source projects, teaching and mentoring. You can find him online at [https://tomzorz.me](https://tomzorz.me) or on twitter at [https://twitter.com/tomzorz_](https://twitter.com/tomzorz_).|[Email](mailto:mixedreality@tomzorz.me)|
 |![Tatsuro Ueda](images/BiographyImages/TatsuroUeda_270x270.png)</br>**Tatsuro Ueda**</br>*Mie, Japan*|MR Educator of Physics in 5 countries including Afrika, President of Feel Physics|[Email](mailto:tatsuro.ueda@feel-physics.jp)|
-|![Vincent Guigui](images/BiographyImages/VincentGuigui_270x270.jpg)</br>**Vincent Guigui**</br>*Paris, France*|In charge of the Innovative Interactions division at OCTO Technology, I help our customers develop new interactions between human and digital world.</br></br>I am a lecturer on Innovation and Natural User Interfaces topics, talking about Immersive Experiences (VR/AR/MR), Conversational Interfaces (Bot) and potential future of the user interfaces...</br></br>Since 2013, I have been awarded by Microsoft as one of the european leading experts on Kinect, Natural User Interfaces and HoloLens (Most Valuable Professional award).|[Email](mailto:vincent@guigui.fr)|
+|![Vincent Guigui](images/BiographyImages/VincentGuigui_270x270.jpg)</br>**Vincent Guigui**</br>*Paris, France*|In charge of the Innovative Interactions division at [OCTO Technology](https://www.octo.com), I help our customers develop new interactions between human and digital world.</br></br>I am a lecturer on Innovation and Natural User Interfaces topics, talking about Immersive Experiences (VR/AR/MR), Conversational Interfaces (Bot) and potential future of the user interfaces...</br></br>Since 2013, I have been awarded by Microsoft as one of the european leading experts on Kinect, Natural User Interfaces and HoloLens (Most Valuable Professional award).|[Email](mailto:vincent@guigui.fr)|
 
