@@ -177,7 +177,7 @@ In the Player Settings window, select **Player** and then **Publishing Settings*
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-2.png)
 
-In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enabled the **InternetClientServer**, **PrivateNetworkClientServer**, **RemovableStorage**, and **Webcam** capabilities:
+In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, **RemovableStorage**, and **Webcam** capabilities:
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-3.png)
 
