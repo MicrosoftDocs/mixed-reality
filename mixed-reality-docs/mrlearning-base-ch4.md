@@ -24,7 +24,7 @@ In this tutorial, you will learn about basic 3D content and user experience, suc
 
 Download and import the Unity custom package:
 
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.1.unitypackage)
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
