@@ -142,7 +142,7 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
 
     ![Module4Chapter4step23im](images/module4chapter4step23im.PNG)
 
-23. In the Luis Endpoint field of the "LunarcomIntentRecognizer" in the inspector panel, enter the Endpoint URL that you saved in step 22.
+23. In the Luis Endpoint field of the "LunarcomIntentRecognizer" in the inspector panel, enter the Endpoint URL that you saved in step 21.
 
     ![Module4Chapter4step24im](images/module4chapter4step24im.PNG)
 
