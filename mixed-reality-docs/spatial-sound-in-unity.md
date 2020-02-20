@@ -29,6 +29,7 @@ Use [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity/releases/lates
 * Attach an **Audio Source** to an object in the hierarchy
 * Check the **Enable spatialization** checkbox
 * Move the **Spatial Blend** slider to '1'
+* Ensure spatial audio is enabled on your developer workstation. Enable it by right-clicking on the volume icon in the task bar and making sure that Spatial Sound is set to something other than "off." To get the best representation of what you'll hear on HoloLens 2, choose **Windows Sonic for Headphones**.
 
 For more details, see:
 * [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity)
