@@ -42,17 +42,21 @@ The main steps you will take to hide the spatial awareness mesh are:
 > [!NOTE]
 > The Configuration Profile is the top level profile. Consequently, to be able to edit any other profiles, you first have to clone the Configuration Profile.
 
-With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, click the **Copy & Customize** button to open the Clone Profile window:
+With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, change the Mixed Reality Toolkit **Configuration Profile** to **DefaultHoloLens2ConfigurationProfile**:
 
 ![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-1.png)
 
-In the Clone Profile window, click the **Clone** button to create an editable copy of the **DefaultHololens2ConfigurationProfile**:
+With the **MixedRealityToolkit** object still selected, in the Inspector window, click the **Copy & Customize** button to open the Clone Profile window:
 
 ![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-2.png)
 
-The newly created Configuration Profile is now assigned as the Configuration Profile for your scene:
+In the Clone Profile window, click the **Clone** button to create an editable copy of the **DefaultHololens2ConfigurationProfile**:
 
 ![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-3.png)
+
+The newly created Configuration Profile is now assigned as the Configuration Profile for your scene:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section1-step1-4.png)
 
 In the Unity menu, select **File** > **Save** to save your scene.
 
@@ -137,7 +141,7 @@ In the **Search** result, select the **PressableButtonHoloLens2** prefab and **d
 > [!TIP]
 > To display your scene as shown in the image below, double-click the PressableButtonHoloLens2 object in the Hierarchy window to bring it into focus, then use the <a href="https://docs.unity3d.com/Manual/SceneViewNavigation.html" target="_blank">Scene Gizmo</a>, located in the top right corner of the Scene window, to adjust the viewing angle to be along the forward Z axis.
 
-With the PressableButtonHoloLens2 object still selected, in the **Inspector** window:
+With the **PressableButtonHoloLens2** object still selected, in the **Inspector** window:
 
 * Change its Transform **Position** so it's positioned in front of the camera, which is positioned at origin, for example, x = 0, y = 0, and z = 0.5
 
@@ -152,7 +156,7 @@ Right-click on an empty spot inside the Hierarchy window and select **3D Object*
 
 ![mrlearning-base](images/mrlearning-base/tutorial2-section2-step2-1.png)
 
-With the Cube object still selected, in the **Inspector** window:
+With the **Cube** object still selected, in the **Inspector** window:
 
 * Change its Transform **Position** so its located near the pressable button, but not overlapping with it, for example, x = 0, y = 0.04, and z = 0.5
 * Change its Transform **Scale** to a suitable size, for example, x = 0.02, y = 0.02, and z = 0.02
@@ -161,7 +165,7 @@ With the Cube object still selected, in the **Inspector** window:
 
 ### 3. Configure the InteractableOnPressReceiver event type
 
-With the PressableButtonHoloLens2 object selected in the Hierarchy window, in the **Inspector** window **hamburger menu**, select **Collaps All Components** to get an overview of all components on this object:
+In the Hierarchy window, select the **PressableButtonHoloLens2** object, then in the **Inspector** window **hamburger menu**, select **Collapse All Components** to get an overview of all components on this object:
 
 ![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-1.png)
 
@@ -169,12 +173,16 @@ Expand the **Interactable (Script)** component, then locate and expand the **Eve
 
 ![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-2.png)
 
-For the Event Receiver Type **InteractableOnPressReceiver**, change the **Interaction Filter** to **Near and Far**:
+Click the **Add Event** button, to create a new event receiver of Event Receiver Type **InteractableOnPressReceiver**:
 
 ![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-3.png)
 
 > [!NOTE]
 > The Event Receiver Type named InteractableOnPressReceiver allows the button to respond to a pressed event when a tracked hand presses the button.
+
+For the newly created event receiver, change the **Interaction Filter** to **Near and Far**:
+
+![mrlearning-base](images/mrlearning-base/tutorial2-section2-step3-4.png)
 
 ### 4. Configure the cube to receive the On Press event
 
@@ -198,7 +206,7 @@ In the Select Material window, **search** for **MRTK_Standard** and select a sui
 
 ### 6. Configure the cube to receive the On Release event
 
-**Repeat** Step 4 for the On Release event to assign the Cube as a receiver of the On Release () event.
+**Repeat** Step 4 for the On Release event to assign the **Cube** as a receiver of the **On Release ()** event.
 
 ### 7. Define the action to be triggered by the On Release event
 

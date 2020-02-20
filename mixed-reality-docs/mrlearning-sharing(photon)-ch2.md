@@ -20,7 +20,7 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
 
 ## Instructions
 
-1. Download and save the Mixed Reality Toolkit Foundation unity package by clicking [here.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage)
+1. Download and save the Mixed Reality Toolkit Foundation unity package by clicking [here.](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.3.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage)
 
 2. In Unity, click the Assets menu and select Import Package, then click on Custom Package.
 
@@ -33,18 +33,24 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
     >[!NOTE]
     >The downloaded package is in your local folder, where you have saved the file. The image above does not portray where you will find the package.
 
-4. Create a new scene. This can be done by clicking File and selecting New Scene". Save it as HLSharedProjectMain.
+    After the package has been imported, the MRTK Project Configurator window should appear. If it does not, open it by selecting Mixed Reality Toolkit > Utilities > Configure Unity Project in the Unity menu.
 
-    You may receive a pop-up that looks similar to the image below. For now, click No.
-    ![Module3Chapter2note1im](images/module3chapter2note1im.PNG)
+    In the MRTK Project Configurator window, expand the Modify Configurations section, uncheck the Enable MSBuild for Unity checkbox, ensure all other options are checked, and click the Apply button to apply the settings.
+
+    ![Module3Chapter2note1im](images/module3chapter2note1im-missing01.png)
+
+    > [!CAUTION]
+    > MSBuild for Unity may not support all SDKs you will be using and can be challenging to disable after it has been enabled. Consequently, it is strongly recommended to not enable MSBuild for Unity.
+    
+4. Create a new scene. This can be done by clicking File and selecting New Scene". Save it as HLSharedProjectMain.
 
 5. Under Mixed Reality Toolkit, click on Add to Scene and Configure.
 
     ![Module3Chapter2step5im](images/module3chapter2step5im.PNG)
 
-6. Once that is complete, a new configuration file appears, giving you the choice to customize the profile.
+6. Once that is complete, select Mixed-Reality Toolkit (MRTK) from the hierarchy. In the inspector panel, change the MRTK configuration profile to DefaultHoloLens2ConfigurationProfile.
 
-    ![Module2Chapter1step4ima](images/Module2Chapter1step4ima.PNG)
+    ![Module2Chapter1step4ima](images/Module2Chapter1step4ima-missing01.png)
 
 7. Select Mixed-Reality Toolkit (MRTK) from the  hierarchy. In the inspector panel, look for the Mixed Reality Toolkit Script and press the "Copy & Customize" button  as shown in the figure below.  A pop will appear after this and select clone option in the pop up menu.
 
@@ -70,18 +76,14 @@ In this tutorial, you will learn how to prepare and configure Unity for applicat
 
 12. Import the listed custom packages:
 
-    a. [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.0.0/AzureSpatialAnchors.unitypackage) (version 2.0.0)
-
-    b. [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.1.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.1.0.1.unitypackage)
-
-    c. [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.1.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.1.0.1.unitypackage)
-
-    d. [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.1.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.1.0.1.unitypackage)
+    * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) (version 2.1.1)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage)
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.1.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.1.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.1.0.1.unitypackage)
 
     >[!TIP]
     >For a reminder on how to configure a Unity project for Azure Spatial Anchors, you can refer to the [Getting started with Azure Spatial Anchors](https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1) tutorial which is part of the the [Azure Spatial Anchors](https://docs.microsoft.com/windows/mixed-reality/mrlearning-asa-ch1) tutorial series.
 
-    ![Module3Chapter2step12im](images/module3chapter2step11im.PNG)
 
 13. In the Project panel, go to the Prefabs folder. In the following steps, you will implement a few prefabs into the scene. In the Prefabs folder, click and drag the prefab, Debug Window into the hierarchy. Once finished, save the project by clicking File, then Save or press Control+S.
 

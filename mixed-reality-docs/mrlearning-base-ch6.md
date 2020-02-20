@@ -50,8 +50,8 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStar
 
 In the Hierarchy window, locate the RocketLauncher > **LunarModuleParts** object and select all the **child objects**, add the **Manipulation Handler (Script)** component and the **Near Interaction Grabbable (Script)** component, and then configure the Manipulation Handler (Script) as follows:
 
-* Change **Two Handed Manipulation Type** to Move Rotate so scaling is disabled
 * Un-check the **Allow Far Manipulation** checkbox to only allow near interaction
+* Change **Two Handed Manipulation Type** to **Move Rotate** so scaling is disabled
 
 ![mrlearning-base](images/mrlearning-base/tutorial6-section1-step1-2.png)
 
@@ -74,10 +74,10 @@ With all the LunarModuleParts child objects still selected, add the **Part Assem
 
 In the Hierarchy window, select the **RoverEnclosure** object and configure its **Part Assembly Demo (Script)** component as follows:
 
-* To the **Object To Place** field, assign the object itself, in this case, the **RoverEnclosure** object
-* To the **Location To Place** field, assign the corresponding PlacementHints object, in this case, the **RoverEnclosure_PlacementHints** object
-* To the **Tool Tip Object** field, assign the corresponding ToolTipObject, in this case, the **RoverEnclosure_ToolTip** object
-* To the **Audio Source** field, assign the object itself, in this case, the **RoverEnclosure** object
+* To the **Object To Place** field, assign the object **itself**, in this case, the RoverEnclosure object
+* To the **Location To Place** field, assign the corresponding **PlacementHints** object, in this case, the RoverEnclosure_PlacementHint object
+* To the **Tool Tip Object** field, assign the corresponding **ToolTip**, in this case, the RoverEnclosure_ToolTip object
+* To the **Audio Source** field, assign the object **itself**, in this case, the RoverEnclosure object
 
 ![mrlearning-base](images/mrlearning-base/tutorial6-section1-step2-3.png)
 
@@ -100,7 +100,7 @@ In this section, you will add additional features to the Rocket Launcher applica
 
 * Interact with the Lunar Module
 * Launch the Lunar Module into space and play a sound when it is launched
-* Reset the application so the Lunar Module and all the part are placed back to their original position
+* Reset the application so the Lunar Module and all the parts are placed back to their original position
 * Hide the placement hints to make the part assembly challenge more difficult.
 
 The main steps you will take to achieve this are:
@@ -118,14 +118,14 @@ The main steps you will take to achieve this are:
 
 In the Hierarchy window, select the RocketLauncher > **LunarModule** object, add the **Manipulation Handler (Script)** component and the **Near Interaction Grabbable (Script)** component, and then configure the Manipulation Handler (Script) as follows:
 
-* Change **Two Handed Manipulation Type** to Move Rotate so scaling is disabled
 * Un-check the **Allow Far Manipulation** checkbox to only allow near interaction
+* Change **Two Handed Manipulation Type** to Move Rotate so scaling is disabled
 
 ![mrlearning-base](images/mrlearning-base/tutorial6-section2-step1-1.png)
 
 ### 2. Enable physics
 
-With the RocketLauncher > **LunarModule** object still selected, add a Rigidbody component and then configure it as follows:
+With the RocketLauncher > **LunarModule** object still selected, add a **Rigidbody** component and then configure it as follows:
 
 * Un-check the **Use Gravity** checkbox so the Lunar Module is not affected by gravity
 * Check the **Is Kinematic** checkbox so the Lunar Module initially isn't affected by physic forces
@@ -153,7 +153,7 @@ With the RocketLauncher > **LunarModule** object still selected, add the **Launc
 With the RocketLauncher > **LunarModule** object still selected, add the **Toggle Placement Hints (Script)** component and then configure it as follows:
 
 * Set the Game Object Array **Size** property to 5
-* Assign each of the **PlacementHints** object's **child objects** to the an **Element** field in the Game Object Array:
+* Assign each of the RocketLauncher > LunarModule > **PlacementHints** object's **child objects** to the an **Element** field in the Game Object Array:
 
 ![mrlearning-base](images/mrlearning-base/tutorial6-section2-step5-1.png)
 
@@ -170,7 +170,7 @@ With the RocketLauncher > Buttons > **LaunchButton** object still selected, on t
 
 ![mrlearning-base](images/mrlearning-base/tutorial6-section3-step1-2.png)
 
-With the RocketLauncher > Buttons > **LaunchButton** object still selected, on the **Pressable Button (Script)** component, create a new **Touch Ended ()** event, configure the **LunarModule** object to receive the event, and define **LaunchLunarModule.StopThruster** as the action to be triggered:
+With the RocketLauncher > Buttons > **LaunchButton** object still selected, on the **Pressable Button (Script)** component, create a new **Touch End ()** event, configure the **LunarModule** object to receive the event, and define **LaunchLunarModule.StopThruster** as the action to be triggered:
 
 ![mrlearning-base](images/mrlearning-base/tutorial6-section3-step1-3.png)
 
@@ -191,14 +191,14 @@ With the RocketLauncher > Buttons > **ResetButton** object still selected, on th
 > [!TIP]
 > The GameObject.BroadcastMessage action sends the ResetPlacement message from the RocketLauncher object to all its child object. Any child object that has the ResetPlacement function, which is defined in the Part Assembly Demo (Script) component you added to all the LunarModuleParts child object, will invoke the ResetPlacement function which resets that child object's placement.
 
-If you now enter Game mode and press the Reset button you will hear the audio clip being played and see the Lunar Module being launched into space:
+If you now enter Game mode, move some parts and/or launch the Lunar Module, and then press the Reset button you will see the parts and/or the Lunar Module being reset to their original position:
 
 ![mrlearning-base](images/mrlearning-base/tutorial6-section4-step1-3.png)
 
 ## Configuring the Placement Hints button
 <!-- TODO: Rename to 'Configuring the Hints button'-->
 
-In the Hierarchy window, select the RocketLauncher > Buttons > **HintsButton** object, then on the **Pressable Button (Script)** component, create a new **Button Pressed ()** event, configure the **LunarModule** object to receive the event, and define **TogglePlacementHints.ToggleGameObjects** the action to be triggered:
+In the Hierarchy window, select the RocketLauncher > Buttons > **HintsButton** object, then on the **Pressable Button (Script)** component, create a new **Button Pressed ()** event, configure the **LunarModule** object to receive the event, and define **TogglePlacementHints.ToggleGameObjects** as the action to be triggered:
 
 ![mrlearning-base](images/mrlearning-base/tutorial6-section5-step1-1.png)
 

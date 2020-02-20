@@ -44,7 +44,7 @@ With the **Feedback** object still selected, in the Inspector window, use the **
 
 ![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-3.png)
 
-Assign the **Feedback** object to the **Anchor Feedback Script (Script)** component's **Feedback Text** field:
+Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)** component's **Feedback Text** field:
 
 ![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-4.png)
 

@@ -31,7 +31,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 
 >[!IMPORTANT]
->This tutorial series requires <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Unity 2019.1</a> and the recommended version is Unity 2019.1.14. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Getting Started
 
@@ -42,7 +42,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
     >[!NOTE]
     >Ensure that the template is set to 3D, as shown in the image above.
 
-2. Download the [Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/releases) Unity [foundation package version 2.1.0](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.1.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.1.0.unitypackage) and save it to a folder on your PC. Import the package into your Unity project. For detailed instructions on how to do this, see the [Getting started tutorials - Lesson 2. Initializing your project and first application](mrlearning-base-ch1.md).
+2. Download the [Mixed Reality Toolkit](https://github.com/microsoft/MixedRealityToolkit-Unity/releases) Unity [foundation package version 2.3.0](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.3.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage) and save it to a folder on your PC. Import the package into your Unity project. For detailed instructions on how to do this, see the [Getting started tutorials - Lesson 2. Initializing your project and first application](mrlearning-base-ch1.md).
 
 3. Download and import the Azure [Speech SDK](https://aka.ms/csspeech/unitypackage) for the Unity asset package. Import the Speech SDK package by clicking on Assets, selecting Import package, then selecting Custom Package. Find the Speech SDK package downloaded earlier, and open it to begin the importing process.
 
@@ -54,9 +54,13 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![mrlearning-speech-ch1-1-step4.png](images/mrlearning-speech-ch1-1-step4.png)
 
-5. Download the Speech SDK Module asset pack, also known as the Lunarcom package, by clicking on [this link](https://github.com/microsoft/MixedRealityLearning/releases/tag/Speech_2). The Lunarcom asset package is a collection of assets and scripts developed for this lesson series to showcase a practical use of Azure's Speech SDK. It is a voice-command terminal that will ultimately interface with the lunar module assembly experience developed in the [Getting started tutorials - Lesson 7. Creating a Lunar Module sample application](mrlearning-base-ch6.md).
+5. Download the tutorial assets:
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage)
+    * [SpeechSDKAssets.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/Speech_2/SpeechSDKAssets.unitypackage) (version 1.2)
 
-6. Import the Lunarcom asset package into your Unity project by following similar steps you took to import the Mixed Reality Toolkit and Speech SDK.
+    The SpeechSDKAssets asset package is a collection of assets and scripts developed for this tutorial series to showcase practical use of Azure's Speech SDK. It is a voice-command terminal that will ultimately interface with the Rocket Launcher assembly experience developed in the [Getting started tutorials - Lesson 7. Creating a Lunar Module sample application](mrlearning-base-ch6.md).
+
+6. Import the two tutorial asset packages into your Unity project by following similar steps you took to import the Mixed Reality Toolkit and Speech SDK.
 
 7. Configure the Mixed Reality Toolkit (MRTK).
 
@@ -64,7 +68,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![mrlearning-speech-ch1-1-step7a.png](images/mrlearning-speech-ch1-1-step7a.png)
 
-    In the popup that appears, select DefaultHoloLens2ConfigurationProfile to make it the Active Profile for the Mixed Reality Toolkit.
+    With the MixedRealityToolkit object selected in your scene hierarchy, in the Inspector window, select DefaultHoloLens2ConfigurationProfile to make it the Active Profile for the Mixed Reality Toolkit.
 
     ![mrlearning-speech-ch1-1-step7b.png](images/mrlearning-speech-ch1-1-step7b.png)
 
@@ -184,6 +188,6 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 ## Congratulations
 
-You've set up voice recognition in your application, powered by Azure. Run the application to ensure all functions and features are working properly. Start with saying the wake word you typed in Step 22, Activate Terminal. Select the Microphone button to start voice recognition. Begin speaking. You will see your words transcribed in the terminal as you speak. Press the Microphone button a second time to stop voice recognition. Say Dismiss Terminal to hide the Lunarcom terminal. In the next lesson, you'll learn how to dynamically switch to using device-powered voice recognition for situations where Azure's speech SDK isn't available due to the HoloLens 2 being offline.
+You've set up voice recognition in your application, powered by Azure. Run the application to ensure all functions and features are working properly. Start with saying the wake word you typed in Step 25, Activate Terminal. Select the Microphone button to start voice recognition. Begin speaking. You will see your words transcribed in the terminal as you speak. Press the Microphone button a second time to stop voice recognition. Say Dismiss Terminal to hide the Lunarcom terminal. In the next lesson, you'll learn how to dynamically switch to using device-powered voice recognition for situations where Azure's speech SDK isn't available due to the HoloLens 2 being offline.
 
 [Next tutorial: 2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)
