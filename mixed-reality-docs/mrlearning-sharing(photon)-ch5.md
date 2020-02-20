@@ -37,11 +37,17 @@ In this lesson, you'll learn how to integrate Azure Spatial Anchors (ASA) into o
 
     ![Module3hapter5step7im](images/module3chapter5step7im.PNG)
 
-6. To test the sharing module, click the "Start Azure ASA Session" button which will start the azure spatial anchors session and then create the azure anchor by clicking the "Create Azure Anchor" button. Wait for the azure anchor to get created. Once the azure anchor is created, click the "Share Azure Anchor" button to share the created azure anchor from the HoloLens.
+6. Repeat step 4 to hook up the StartAzureSession () function to the StartAzureSessionButton.
 
-7. To receive the shared azure anchor in another HoloLens, click the "Start Azure ASA Session" to start and get in to the current ASA session
+7. Repeat step 4 to hook up the CreateAzureAnchor () function to the CreateAzureAnchorButton and verify that the TableAnchor object is assigned to the function's parameter 'Game Object' field.
 
-8. Click the "Get Azure Anchor" button to get the shared azure anchor from the other HoloLens.
+8. Follow the [Connect the scene to the Azure resource](mrlearning-asa-ch1.md#4-connect-the-scene-to-the-azure-resource) instructions to add your Azure Spatial Anchors service credentials.
+
+9. To test the sharing module, click the "Start Azure ASA Session" button which will start the azure spatial anchors session and then create the azure anchor by clicking the "Create Azure Anchor" button. Wait for the azure anchor to get created. Once the azure anchor is created, click the "Share Azure Anchor" button to share the created azure anchor from the HoloLens.
+
+10. To receive the shared azure anchor in another HoloLens, click the "Start Azure ASA Session" to start and get in to the current ASA session
+
+11. Click the "Get Azure Anchor" button to get the shared azure anchor from the other HoloLens.
 
 ## Congratulations
 

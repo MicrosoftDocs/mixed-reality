@@ -49,11 +49,11 @@ In the Hierarchy window, select the **ButtonCollection** object, then in the Ins
 
 Configure the **Solver Handler (Script)** component:
 
-* Verify that **Tracked Target Type**  is set to **Head**
+* Verify that **Tracked Target Type** is set to **Head**
 
 Configure the **Orbital (Script)** component:
 
-* Change **Orientation Type** to **Follow Tracked Object**
+* Verify that **Orientation Type** is set to **Follow Tracked Object**
 * Reset **Local Offset** to X = 0, Y = 0, Z = 0
 * Change **World Offset** to X = 0, Y = -0.4, Z = 0.3
 
