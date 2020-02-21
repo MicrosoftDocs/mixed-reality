@@ -9,29 +9,14 @@ ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
 
-# Mixed Reality Dev Days 2019
+# Mixed Reality Dev Days & Tour 2020
 
-Applications are currently closed. Thanks for your interest!
+Planing for MR Dev Days 2020 is under way, but we don't have any details to share other than the date and location of the Redmond event.
 
-With the [announcements](https://blogs.microsoft.com/blog/2019/02/24/microsoft-at-mwc-barcelona-introducing-microsoft-hololens-2/) Microsoft recently made in the mixed reality and cloud space, we’re thrilled to open applications for **Mixed Reality Dev Days**, a chance to build the skills, network, and ideas you need to take your mixed reality applications to the next level. Mixed Reality Dev Days will offer attendees a chance to code alongside our engineering teams, learn and test the latest in our portfolio, and connect with a community of developers like you who are leading a new era of mixed reality applications.  </br>
+This year MR Dev Days in Redmond is being held at the Microsoft conference center on May 16th & 17th, 2020.
 
-We’ll also hold [sessions](mr-dev-days-sessions.md) led by our teams to dive deeper on what’s new and share tips for getting started. </br>
+More details to come soon, including registration info.  For the latest updates, please make sure you are signed up for our developer program at [https://aka.ms/IWantMR](https://aka.ms/IWantMR).
 
-Our tentative list of sessions can be found [here](mr-dev-days-sessions.md).
-
-Attendees will also have a chance to get hands-on with our technology both in our hands-on labs and our demo stations.
-</br>
-
-## Details
-
-*	**Date: May 2-3, 2019**
-* **Location:**
-Microsoft Building 92
-5010 NE 36th St 
-Redmond, WA 98052
-* **Evening Networking Reception:**
-Thursday evening, 6-8pm
-* **Cost: This event is free to attend. You are responsible for travel expenses.**
 
 
 </br>
