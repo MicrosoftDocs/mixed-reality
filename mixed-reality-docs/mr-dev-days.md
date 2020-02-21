@@ -9,7 +9,7 @@ ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
 
-# Mixed Reality Dev Days
+# Mixed Reality Dev Days 2019
 
 Applications are currently closed. Thanks for your interest!
 
