@@ -86,6 +86,7 @@
 #### [Slate](slate.md)
 #### [Slider](slider.md)
 #### [Shader](shader.md)
+#### [Hand Coach](hand-coach.md)
 #### [Billboarding and tag-along](billboarding-and-tag-along.md)
 #### [Displaying progress](progress.md)
 #### [Surface magnetism](surface-magnetism.md)
