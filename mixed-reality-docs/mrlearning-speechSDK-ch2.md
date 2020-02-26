@@ -9,32 +9,34 @@ keywords: mixed reality, unity, tutorial, hololens
 ---
 
 # 2. Adding an offline mode for local speech-to-text translation
+<!-- TODO: Consider renaming to 'Adding an offline mode for local speech-to-text transcription' -->
 
-In this tutorial, we'll add an offline mode that lets you perform local speech-to-text translation when we are unable to connect to the Azure service. We will also *simulate* a disconnected state.
+In this tutorial, you will add an offline mode that lets you perform local speech-to-text transcription when you are unable to connect to the Azure service. You will also simulate a disconnected state
+
+## Objectives
+
+* Learn how to integrate an offline mode for local speech-to-text transcription
 
 ## Instructions
 
-1. Select the Lunarcom_Base object in the hierarchy.
+In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Offline Recognizer (Script)** component to the Lunarcom object and configure it as follows:
 
-2. Click Add Component in the Inspector panel. Search for and select the Lunarcom Offline Recognition.
+* Change the **Simulate Offline Mode** to **Enabled** to enable offline mode
 
-    ![Module4Chapter2step1im](images/module4chapter2step1im.PNG)
+![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
-3. Click the drop-down in the LunarcomOfflineRecognizer and select Enabled. This programs the project to act like the user doesn't have a connection.
+> [!NOTE]
+> The Lunarcom Offline Recognizer (Script) component is not part of MRTK. It was provided with this tutorial's assets.
 
-    ![Module4Chapter2step1im](images/module4chapter2step2im.PNG)
+If you now enter Game mode, you can test the speech recognition in offline mode by first pressing the microphone button. Then, assuming your computer has a microphone, when you say something, your speech will be transcribed on the terminal panel:
 
-4. Press Play in Unity Editor, and test it. Press the microphone in the bottom-left corner in the scene and begin speaking.
+![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
-    >[!NOTE]
-    >Because we’re offline, wake word functionality has been disabled. You'll need to physically click the microphone every time you wish to have your speech recognized when offline.
-
-    Below is an example of what your scene could look like.
-
-    ![Module4Chapter2exampleim](images/module4chapter2exampleim.PNG)
+> [!NOTE]
+> Because offline mode is enabled, the wake word functionality has been automatically disabled and the terminal panel is enabled by default.
 
 ## Congratulations
 
-The offline mode has been enabled. Now, when you're offline, you can still work on your project with the speech-SDK!
+The offline mode has been enabled. Now, when your device is offline, you can still work on your project with the speech SDK.
 
 [Next Tutorial: 3. Adding the Azure Cognitive Services speech translation component](mrlearning-speechSDK-ch3.md)
