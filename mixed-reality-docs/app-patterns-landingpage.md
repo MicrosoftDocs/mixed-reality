@@ -131,6 +131,16 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
     :::column-end:::
 :::row-end:::
 
+:::row:::
+    :::column:::
+       [![Hand Coach](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md)
+        **[Hand Coach](hand-coach.md)**
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
 
 <br>
 
