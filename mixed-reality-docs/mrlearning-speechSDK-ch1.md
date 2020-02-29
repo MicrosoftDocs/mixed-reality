@@ -18,7 +18,6 @@ In this tutorial series, you will create a Mixed Reality application that explor
 
 * Learn how to integrate Azure Speech Services with a HoloLens 2 application
 * Learn how to use speech recognition to transcribe text
-* Learn how to use speech recognition to execute commands
 
 ## Prerequisites
 
@@ -149,32 +148,12 @@ Then, assuming your computer has a microphone, when you say something, your spee
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-3.png)
 
 > [!CAUTION]
-> The application needs to connect to Azure, so make sure your computer is connected to the internet.
-
-## Using speech recognition to execute commands
-
-In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Wake Word Recognizer (Script)** component to the Lunarcom object and configure it as follows:
-
-* In the **Wake Word** field, enter a suitable phrase, for example, _Activate terminal_.
-* In the **Dismiss Word** field, enter a suitable phrase, for example, _Dismiss terminal_.
-
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section8-step1-1.png)
-
-> [!NOTE]
-> The Lunarcom Wake Word Recognizer (Script) component is not part of MRTK. It was provided with this tutorial's assets.
-
-If you now enter Game mode, you will notice that the terminal panel is hidden by default:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section8-step1-2.png)
-
-But that you can turn it on by saying they Wake Word, **Activate terminal**, and hide it again by saying the Dismiss Word, **Dismiss terminal**:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section8-step1-3.png)
+> The application needs to connect to Azure, so make sure your computer/device is connected to the internet.
 
 ## Congratulations
 
-You have implemented voice recognition powered by Azure. Run the application on your device to ensure all functions and features are working properly. Start by saying the wake word, Activate Terminal. Then press the microphone button to start voice recognition. Begin speaking and you will see your words transcribed on the terminal panel as you speak. Press the microphone button a second time to stop voice recognition. Say the dismiss word, Dismiss Terminal, to hide the terminal.
+You have implemented speech recognition powered by Azure. Run the application on your device to ensure the feature is working properly.
 
-In the next tutorial, you will learn how to dynamically switch to using device-powered voice recognition for situations where Azure's speech service isn't available due to the HoloLens being offline.
+In the next tutorial, you will learn how to execute commands using Azure speech recognition.
 
-[Next tutorial: 2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)
+[Next tutorial: 2. Using speech recognition to execute commands](mrlearning-speechSDK-ch2.md)
