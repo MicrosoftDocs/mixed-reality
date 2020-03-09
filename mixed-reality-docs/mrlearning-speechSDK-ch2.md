@@ -6,6 +6,7 @@ ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 2. Adding an offline mode for local speech-to-text translation
@@ -27,7 +28,7 @@ In this tutorial, we'll add an offline mode that lets you perform local speech-t
 4. Press Play in Unity Editor, and test it. Press the microphone in the bottom-left corner in the scene and begin speaking.
 
     >[!NOTE]
-    >Because we’re offline, wake word functionality has been disabled. You'll need to physically click the microphone every time you wish to have your speech recognized when offline.
+    >Because we're offline, wake word functionality has been disabled. You'll need to physically click the microphone every time you wish to have your speech recognized when offline.
 
     Below is an example of what your scene could look like.
 

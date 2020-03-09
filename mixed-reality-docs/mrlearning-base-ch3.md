@@ -6,12 +6,13 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 4. Placing dynamic content and using Solvers
 <!-- Consider renaming to 'Placing dynamic content using Solvers' -->
 
-Holograms come to life in HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK’s available placement tools, known as Solvers, to solve complex spatial placement scenarios. In the MRTK, Solvers are a system of scripts and behaviors that are used to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive.
+Holograms come to life in HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK's available placement tools, known as Solvers, to solve complex spatial placement scenarios. In the MRTK, Solvers are a system of scripts and behaviors that are used to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive.
 
 ## Objectives
 
@@ -30,7 +31,7 @@ In this tutorial, we will review the implementation of the Orbital Solver and th
 ## Use a Solver to follow the user
 <!-- Consider renaming to 'Use a Solver to have an object follow the user' -->
 
-In this section, you will enhance the button collection you created in the previous tutorial so it follows the user’s gaze direction. Additionally, you will also configure the Solver so the button collection is always:
+In this section, you will enhance the button collection you created in the previous tutorial so it follows the user's gaze direction. Additionally, you will also configure the Solver so the button collection is always:
 
 * Rotated parallel to the user's reading direction, for natural left to right reading
 * Positioned slightly below the user horizontal gaze direction, so it's not obstructing the other objects you will add later in this tutorial
@@ -75,7 +76,7 @@ Press the Play button to enter Game mode and press and hold the right mouse butt
 
 ## Enabling objects to follow tracked hands
 
-In this section, you will configure the Cube object you created in the previous tutorial so it follows the user’s tracked hands, specifically the right hand wrist. Additionally, you will also configure the Solver so the cube:
+In this section, you will configure the Cube object you created in the previous tutorial so it follows the user's tracked hands, specifically the right hand wrist. Additionally, you will also configure the Solver so the cube:
 
 * Changes it's orientation with the user's hand rotation
 * Positioned on the user's wrist
@@ -109,6 +110,6 @@ Press the Play button to enter Game mode and then press and hold the spacebar to
 
 ## Congratulations
 
-In this tutorial, you learned how to use the MRTK’s solvers to have a UI intuitively follow the user. You also learned how to attach a Solver to an object (i.e., cube) to follow the user’s tracked hands. To learn more about these and other solvers included with the MRTK,  you can visit the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+In this tutorial, you learned how to use the MRTK's solvers to have a UI intuitively follow the user. You also learned how to attach a Solver to an object (i.e., cube) to follow the user's tracked hands. To learn more about these and other solvers included with the MRTK,  you can visit the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 [Next Tutorial: 5. Interacting with 3D objects](mrlearning-base-ch4.md)
