@@ -6,6 +6,7 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 3. Creating user interface and configure Mixed Reality Toolkit
@@ -229,9 +230,9 @@ Button pressed (spacebar + mouse scroll wheel forward):
 > [!TIP]
 > To learn how to use the in-editor input simulation, you can refer to the [Using the In-Editor Hand Input Simulation to test a scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-## Creating a panel of buttons using MRTK’s Grid Object Collection
+## Creating a panel of buttons using MRTK's Grid Object Collection
 
-In this section, you will learn how to automatically align multiple buttons into a neat user interface by using the MRTK’s Grid Object Collection tool.
+In this section, you will learn how to automatically align multiple buttons into a neat user interface by using the MRTK's Grid Object Collection tool.
 
 This particular example will show you how to a create a panel with five buttons aligned horizontally. However, you may follow these same principles to create other layouts.
 

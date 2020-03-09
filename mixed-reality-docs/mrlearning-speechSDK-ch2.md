@@ -6,6 +6,7 @@ ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 2. Using speech recognition to execute commands

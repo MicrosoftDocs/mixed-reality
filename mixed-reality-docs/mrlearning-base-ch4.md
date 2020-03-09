@@ -6,6 +6,7 @@ ms.author: jemccull
 ms.date: 05/02/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 5. Interacting with 3D objects

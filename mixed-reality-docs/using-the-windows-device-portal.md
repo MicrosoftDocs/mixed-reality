@@ -79,6 +79,8 @@ Each HoloLens generates a unique self-signed certificate for its SSL connection.
 1. **Make sure you are on a secure network (USB or a Wi-Fi network you trust).**
 2. Download this device's certificate from the "Security" page on the Device Portal.
    * Navigate to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm
+   * Open the node for System > Preferences. 
+   * Scroll down to Device Security, click the "Download this device's certificate" button.
 3. Install the certificate in the "Trusted Root Certification Authorities" store on your PC.
    * From the Windows menu, type: Manage Computer Certificates and start the applet.
    * Expand the **Trusted Root Certification Authority** folder.
@@ -86,6 +88,10 @@ Each HoloLens generates a unique self-signed certificate for its SSL connection.
    * From the Action menu, select: All Tasks > Import...
    * Complete the Certificate Import Wizard, using the certificate file you downloaded from the Device Portal.
 4. Restart the browser.
+
+>[!NOTE]
+> This certificate will only be trusted for the device and the user will have to go through the process again if the device is flashed.
+
 
 ## Device Portal Pages
 

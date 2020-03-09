@@ -1,5 +1,5 @@
 ---
-title: MRTK hand coach design guidance
+title: Hand coach
 description: 3D hands that are triggered when the system does not detect the user's hands to help assist them.
 author: grayclee
 ms.author: glee
@@ -10,9 +10,9 @@ keywords: Windows Mixed Reality, design, Hand coach, immersive headset, MRTK, ha
 
 
 
-# Hand coach design guidance
+# Hand coach
 
-Hand Coach is 3D modeled hands that are triggered when the system does not detect the user’s hands. This is implemented as a “teaching” component that helps guide the user when the gesture has not been taught. If users have not done the specified gesture for a period, the hands will loop with a delay. The Hand coach could be used to represent pressing a button or picking up a hologram.  
+Hand coach is 3D modeled hands that are triggered when the system does not detect the user’s hands. This is implemented as a “teaching” component that helps guide the user when the gesture has not been taught. If users have not done the specified gesture for a period, the hands will loop with a delay. The Hand coach could be used to represent pressing a button or picking up a hologram.  
 
 
 ![Example: Hand coach](images/HandCoach/MRTK_handCoach.jpg)<br>
@@ -62,7 +62,7 @@ The current interaction model represents a wide variety of gesture controls such
 
 ## Design concepts
 
-For Hololens2, we designed out hand interactions based on instinctual and natural hand gestures. We believe these to be intuitive to most users and thus did not create dedicated gesture learning moments. Instead, we created the hand coach to help users who might get stuck or are unfamiliar with interacting with holograms learn about these gestures. Without a learning moment, we felt that showing users how to perform an action by demonstrating it would be the best option. In our studies, we found that users were able to figure out the gesture but needed a little guidance. If we detect that a user does not interact with an object for a period, a Hand Coach would be triggered demonstrating the correct hand and finger placement. 
+For Hololens2, we designed out hand interactions based on instinctual and natural hand gestures. We believe these to be intuitive to most users and thus did not create dedicated gesture learning moments. Instead, we created the hand coach to help users who might get stuck or are unfamiliar with interacting with holograms learn about these gestures. Without a learning moment, we felt that showing users how to perform an action by demonstrating it would be the best option. In our studies, we found that users were able to figure out the gesture but needed a little guidance. If we detect that a user does not interact with an object for a period, a Hand coach would be triggered demonstrating the correct hand and finger placement. 
 
 ### Intuitive
 
@@ -70,7 +70,7 @@ When animating hands, it should be obvious and shoudn't cause any confusion. The
 
 For example, if you wish a user to press a button, a hand pressing a button would be triggered.
 
-![Example: Hand Coach Near Tap](images/HandCoach/NearSelect_unity.gif)<br>
+![Example: Hand coach Near Tap](images/HandCoach/NearSelect_unity.gif)<br>
 *Hand Coach demonstrating Near Tapping a Gem*  
 
 ### Hand scale
@@ -79,7 +79,7 @@ We tested various hand sizes with the UI menus and felt that if the hands were t
 
 **Voice over and hands**
 
-Don’t expect users can listen to one set of instructions via voice over and watch different instructions via Hand Coach. Sequence your instructions to help users focus versus compete for their attention to reduce sensory overload.
+Don’t expect users can listen to one set of instructions via voice over and watch different instructions via Hand coach. Sequence your instructions to help users focus versus compete for their attention to reduce sensory overload.
 
 
 ## Can I create my own?
@@ -97,7 +97,7 @@ Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to 
 
 If using the downloadable maya Hand File provided, it is suggested to scale down the hands in unity to 0.6.
 
-![Example: Hand Coach rig in Maya](images/HandCoach/MayaExample.png)<br>
+![Example: Hand coach rig in Maya](images/HandCoach/MayaExample.png)<br>
 *Rigged Hands*
 
 ### Technical Specs
@@ -169,7 +169,7 @@ After you are satisfied with your animation
 * Hands should only be taught once. Over teaching can cause confusion and messiness
 *	Bringing it into Unity, please download the latest MRTK  here: https://github.com/microsoft/MixedRealityToolkit-Unity
     *	Material: Teaching_Hand2
-    *	Scripts: Refer to MRTK guidelines for <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md"> MRTK hand Coach </a>
+    *	Scripts: Refer to MRTK guidelines for <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md"> MRTK hand coach </a>
     *	Per- project setting
         *	Scene set to UWP: Instruction can be found on the [Configure Unity Project](Configure-Unity-Project.md) for Windows Mixed Reality
 

@@ -6,6 +6,7 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 1. Integrating and using speech recognition and transcription
@@ -146,6 +147,7 @@ If you now enter Game mode, you can test the speech recognition by first pressin
 Then, assuming your computer has a microphone, when you say something, your speech will be transcribed on the terminal panel:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-3.png)
+
 
 > [!CAUTION]
 > The application needs to connect to Azure, so make sure your computer/device is connected to the internet.

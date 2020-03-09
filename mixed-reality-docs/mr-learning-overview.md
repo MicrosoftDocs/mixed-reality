@@ -6,6 +6,7 @@ ms.author: jemccull
 ms.date: 04/28/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # MR Learning Modules

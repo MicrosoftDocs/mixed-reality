@@ -6,6 +6,7 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 4. Setting up intent and natural language understanding
@@ -135,6 +136,7 @@ When the new intent has been created, you will be taken to that intent's page:
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step2-2.png)
 
 ### 3. Create example utterances
+
 
 To the **PressButton** intent's **Example utterance** list, add the following example utterances:
 
