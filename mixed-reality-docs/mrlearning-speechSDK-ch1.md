@@ -6,13 +6,14 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 1. Integrating and using speech recognition and transcription
 
 ## Overview
 
-This tutorial creates a Mixed Reality application that explores the use of Azure Cognitive Services Speech SDK with the HoloLens 2. When you complete this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Speech SDK’s Intent feature to understand voice commands using artificial intelligence.
+This tutorial creates a Mixed Reality application that explores the use of Azure Cognitive Services Speech SDK with the HoloLens 2. When you complete this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Speech SDK's Intent feature to understand voice commands using artificial intelligence.
 
 ## Objectives
 
@@ -147,7 +148,7 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![images/mrlearning-speach-ch1-2-step1](images/mrlearning-speach-ch1-2-step1.jpg)
 
-2. Ensure the scene you want to try is in the “Scenes in Build” list by clicking on the “Add Open Scenes” button.
+2. Ensure the scene you want to try is in the "Scenes in Build" list by clicking on the "Add Open Scenes" button.
 
 3. Press the Player Settings button and go to Publishing Settings. Under Capabilities, enable: Internet, Internet Client Server, Private Network Client Server, Microphone and Spatial Perception.
 
@@ -157,14 +158,14 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
     ![mrlearning-speach-ch1-2-step5](images/mrlearning-speach-ch1-2-step5.jpg)
 
-6. Create and name a new folder for your application. In the image below, a folder with the name “App” was created to contain the application. Click “Select Folder” to begin building to the newly created folder. After the build has completed, you may close the "Build Settings" window in Unity.
+6. Create and name a new folder for your application. In the image below, a folder with the name "App" was created to contain the application. Click "Select Folder" to begin building to the newly created folder. After the build has completed, you may close the "Build Settings" window in Unity.
 
     ![mrlearning-speach-ch1-2-step6](images/mrlearning-speach-ch1-2-step6.jpg)
 
     >[!NOTE]
-    >If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name “XX” could not be found (are you missing a using directive or an assembly reference?)", you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com//windows/downloads/windows-10-sdk>)
+    >If the build fails, try building again or restarting Unity and building again. If you see an error such as "Error: CS0246 = The type or namespace name "XX" could not be found (are you missing a using directive or an assembly reference?)", you may need to install [Windows 10 SDK (10.0.18362.0)](<https://developer.microsoft.com//windows/downloads/windows-10-sdk>)
 
-7. After the build is completed, open the newly created folder containing your newly built application files. Double-click on the “.sln” solution file to open the solution file in Visual Studio.
+7. After the build is completed, open the newly created folder containing your newly built application files. Double-click on the ".sln" solution file to open the solution file in Visual Studio.
 
     >[!NOTE]
     >Be sure to open the newly created folder (i.e., the "App" folder, if following the naming conventions from the previous steps), as there will be a similarly named .sln file outside of that folder that is different from the .sln file inside the build folder. 
@@ -178,11 +179,11 @@ This tutorial creates a Mixed Reality application that explores the use of Azure
 
 9. Before building to your device, ensure that the device is in Developer Mode. If this is your first time deploying to the HoloLens 2, Visual Studio may ask you to pair your HoloLens 2 with a pin. Please follow [these instructions](https://docs.microsoft.com//windows/mixed-reality/using-visual-studio) if you need to enable developer mode or pair with Visual Studio.
 
-10. Configure Visual Studio for building to your HoloLens 2 by selecting the “Release” configuration and the “ARM” architecture.
+10. Configure Visual Studio for building to your HoloLens 2 by selecting the "Release" configuration and the "ARM" architecture.
 
     ![mrlearning-speach-ch1-2-step10](images/mrlearning-speach-ch1-2-step10.jpg)
 
-11. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting “Start without Debugging” will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You may also select Build>Deploy Solution to deploy to your device without having the application automatically start.
+11. The final step is to build to your device by selecting Debug>Start without Debugging. Selecting "Start without Debugging" will cause the application to immediately start on your device upon a successful build, but without Debugging information appearing in Visual Studio. This also means that you can disconnect your USB cable while your application is running on your HoloLens 2 without stopping the application. You may also select Build>Deploy Solution to deploy to your device without having the application automatically start.
 
     ![mrlearning-speach-ch1-2-step11.JPG](images/mrlearning-speach-ch1-2-step11.jpg)
 

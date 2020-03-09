@@ -6,6 +6,7 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 4. Setting up intent and natural language understanding
@@ -56,7 +57,7 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
     >[!NOTE]
     >Upon reaching the Language Understanding portal, you may need to log in, if you are not already, with the same credentials as your Azure portal. If this is your first time using LUIS, you will need to scroll down to the bottom of the Welcome page to find and click the "Create LUIS" app button.
 
-7. Once logged in, click My Apps (if you are not currently in that section). You can then click on Create new app. Name the new app “Speech SDK Learning Module.” Add “Speech SDK Learning Module" to the description field, as well. Then click "done."
+7. Once logged in, click My Apps (if you are not currently in that section). You can then click on Create new app. Name the new app "Speech SDK Learning Module." Add "Speech SDK Learning Module" to the description field, as well. Then click "done."
 
     ![Module4Chapter4step8aim](images/module4chapter4step8aim.PNG)
 
@@ -65,9 +66,9 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
     >[!NOTE]
     >If your app is supposed to understand a language different from English, you should change the "Culture" to the appropriate language.
 
-8. Click “Build” located in the top right.
+8. Click "Build" located in the top right.
 
-9. Under App Assets on the left, select “Intents” then click “Create New Intent” and name it “PressButton.”
+9. Under App Assets on the left, select "Intents" then click "Create New Intent" and name it "PressButton."
 
     ![Module4Chapter4step10im](images/module4chapter4step10im.PNG)
 
@@ -75,13 +76,13 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
     >It is important to use the names of Intents and Entities used in this tutorial because the Lunarcom app will be referencing them by name.
 
     >[!NOTE]
-    >You should now have 2 Intents - “PressButton” and “None."
+    >You should now have 2 Intents - "PressButton" and "None."
 
-10. Under App Assets on the left, select “Entities”, click “Create New Entity”, name it “Action” and keep the Entity Type as “Simple.”
+10. Under App Assets on the left, select "Entities", click "Create New Entity", name it "Action" and keep the Entity Type as "Simple."
 
     ![Module4Chapter4step11im](images/module4chapter4step11im.PNG)
 
-11. Click “Create New Entity” again and name it “Target”. Keep the Entity Type as “Simple”, as well.
+11. Click "Create New Entity" again and name it "Target". Keep the Entity Type as "Simple", as well.
 
     ![Module4Chapter4step12im](images/module4chapter4step12im.PNG)
 
@@ -93,7 +94,7 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
 
     ![Module4Chapter4step14aim](images/module4chapter4step14aim.PNG)
 
-    Click the “Enter an example…” textbox. Then, enter the following utterances:
+    Click the "Enter an example…" textbox. Then, enter the following utterances:
 
     ![Module4Chapter4step14bim](images/module4chapter4step14bim.PNG)
 
@@ -109,14 +110,14 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
 
     ![Module4Chapter4step17im](images/module4chapter4step17im.PNG)
 
-17. Enter in “select the launch button” in  the textbox.
+17. Enter in "select the launch button" in  the textbox.
 
     >[!NOTE]
-    >We did not add “select” as an action in any of our Utterances, but if you click on “Inspect,” the model recognized “select” as an action entity.
+    >We did not add "select" as an action in any of our Utterances, but if you click on "Inspect," the model recognized "select" as an action entity.
     >
     > ![Module4Chapter4noteim](images/module4chapter4noteim.PNG)
 
-18. Click "publish" in the top right. Ensure the dropdown says “Production” and click "publish" on the popup, as well.
+18. Click "publish" in the top right. Ensure the dropdown says "Production" and click "publish" on the popup, as well.
 
     ![Module4Chapter4step19im](images/module4chapter4step19im.PNG)
 
@@ -124,11 +125,11 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
 
     ![Module4Chapter4step20im](images/module4chapter4step20im.PNG)
 
-20. Click "Keys and Endpoints" under “Application Settings” to the left. Then, set the drop down "Publish To" as "Production." Set the time-zone to match yours, and check the box to include all predicted intent scores. Lastly, click "Assign resource."
+20. Click "Keys and Endpoints" under "Application Settings" to the left. Then, set the drop down "Publish To" as "Production." Set the time-zone to match yours, and check the box to include all predicted intent scores. Lastly, click "Assign resource."
 
     ![Module4Chapter4step21im](images/module4chapter4step21im.PNG)
 
-21. Select tenant from the first dropdown and select “Pay-as-you-go” in the Subscription Name dropdown. Under LUIS resource name, choose the resource that we created above in steps 1-5. Then, click on "Assign resource."
+21. Select tenant from the first dropdown and select "Pay-as-you-go" in the Subscription Name dropdown. Under LUIS resource name, choose the resource that we created above in steps 1-5. Then, click on "Assign resource."
 
     ![Module4Chapter4step22im](images/module4chapter4step22im.PNG)
 
@@ -138,7 +139,7 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
     >[!NOTE]
     >For the Tenant name, put your corporation or profile that you created for this application.
 
-22. Now, open the new app in Unity and select the Lunarcom_Base object in the hierarchy. Click “Add Component” in the inspector panel and search for and select “LunarcomIntentRecognizer.”
+22. Now, open the new app in Unity and select the Lunarcom_Base object in the hierarchy. Click "Add Component" in the inspector panel and search for and select "LunarcomIntentRecognizer."
 
     ![Module4Chapter4step23im](images/module4chapter4step23im.PNG)
 
@@ -147,7 +148,7 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
     ![Module4Chapter4step24im](images/module4chapter4step24im.PNG)
 
     >[!NOTE]
-    >In the "LunarcomOfflineRecognizer" component in the inspector panel, make sure that “disable” is selected for "SimulateOfflineMode" otherwise, testing the program will not work.
+    >In the "LunarcomOfflineRecognizer" component in the inspector panel, make sure that "disable" is selected for "SimulateOfflineMode" otherwise, testing the program will not work.
 
 24. In the Project window, navigate to the Assets > MRTK.Tutorials.GettingStarted > Prefabs > RocketLauncher folder, drag the RocketLauncher_Complete prefab into your Hierarchy window, and position it in front of the Lunarcom_Base object.
 
@@ -157,7 +158,7 @@ In this lesson, you will explore the Azure Speech Service's Intent feature. The 
 
     ![Module4Chapter4step24im](images/module4chapter4step24im-missing02.png)
 
-26. Press the Play button in the Unity Editor and click the rocket button to start intent recognition. Utter the phrase “select the launch rocket button.”
+26. Press the Play button in the Unity Editor and click the rocket button to start intent recognition. Utter the phrase "select the launch rocket button."
 
     >[!NOTE]
     >The app recognized the desired function and activated the rocket button.
