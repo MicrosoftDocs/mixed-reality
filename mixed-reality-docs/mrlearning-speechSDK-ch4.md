@@ -137,7 +137,6 @@ When the new intent has been created, you will be taken to that intent's page:
 
 ### 3. Create example utterances
 
-
 To the **PressButton** intent's **Example utterance** list, add the following example utterances:
 
 * activate launch sequence
