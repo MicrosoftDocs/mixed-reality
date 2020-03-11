@@ -3,7 +3,7 @@ title: Custom Holographic Remoting data channels
 description: Custom data channels can be used to send user data over the already established Holographic Remoting connection.
 author: FlorianBagarMicrosoft
 ms.author: flbagar
-ms.date: 11/03/2020
+ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---

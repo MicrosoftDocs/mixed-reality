@@ -3,7 +3,7 @@ title: Establishing a secure connection with Holographic Remoting
 description: This page explains how to establish a secure encrypted connection when using Holographic Remoting.
 author: FlorianBagarMicrosoft
 ms.author: flbagar
-ms.date: 11/03/2020
+ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
