@@ -33,8 +33,8 @@ If you run a community that you would like included on this page, please send an
 |**Chicago AWE Nite**|USA|Chicago|[Link](https://www.meetup.com/AWENiteChicago/)|
 |**Mixed Reality User Group - Netherlands**|Netherlands|Rijswijk|[Link](https://www.mixug.com)|
 |**VR Philippines**|Philippines|N/A|[Link](https://www.facebook.com/vrphilippines/)|
+|**XRLA**|USA|Los Angeles|[Link](https://www.meetup.com/XRLA_Meetup/)|
 <!--
-|Row3     |         |         |         |
 |Row4     |         |         |         |
 |Row5     |         |         |         |
 |Row6     |         |         |         |
