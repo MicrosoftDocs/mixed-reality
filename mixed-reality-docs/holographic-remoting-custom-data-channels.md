@@ -1,9 +1,9 @@
 ---
 title: Custom Holographic Remoting data channels
 description: Custom data channels can be used to send user data over the already established Holographic Remoting connection.
-author: NPohl-MSFT
-ms.author: nopohl
-ms.date: 10/21/2019
+author: FlorianBagarMicrosoft
+ms.author: flbagar
+ms.date: 11/03/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
@@ -16,10 +16,10 @@ keywords: HoloLens, Remoting, Holographic Remoting
 Use custom data channels to send custom data over an established remoting connection.
 
 >[!IMPORTANT]
->Custom data channels require a custom host app and a custom player app, as it allows for communication between the two custom apps.
+>Custom data channels require a custom remote app and a custom player app, as it allows for communication between the two custom apps.
 
 >[!TIP]
->A simple ping-pong example can be found in the host and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples). Uncomment ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` inside the SampleHostMain.h / SamplePlayerMain.h files to enable the sample code.
+>A simple ping-pong example can be found in the remote and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples). Uncomment ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` inside the SampleRemoteMain.h / SamplePlayerMain.h files to enable the sample code.
 
 
 ## Create a custom data channel
@@ -33,11 +33,11 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-After a connection was successfully established, the creation of new data channels can be initiated from either the host side and/or the player side. Both the RemoteContext and the PlayerContext provide a ```CreateDataChannel()``` method to do this. The first parameter is the channel ID which is used to identify the data channel in subsequent operations. The second parameter is the priority which specifies the priority with which data of this channel is transferred to the other side. The valid range for channel IDs is 0 up to and including 63 for the host side and 64 up to and including 127 for the player side. Valid priorities are ```Low```, ```Medium``` or ```High``` (on both sides).
+After a connection was successfully established, the creation of new data channels can be initiated from either the remote side and/or the player side. Both the RemoteContext and the PlayerContext provide a ```CreateDataChannel()``` method to do this. The first parameter is the channel ID which is used to identify the data channel in subsequent operations. The second parameter is the priority which specifies the priority with which data of this channel is transferred to the other side. The valid range for channel IDs is 0 up to and including 63 for the remote side and 64 up to and including 127 for the player side. Valid priorities are ```Low```, ```Medium``` or ```High``` (on both sides).
 
-To initiate the creation of a data channel on the **host** side:
+To initiate the creation of a data channel on the **remote** side:
 ```cpp
-// Valid channel ids for channels created on the host side are 0 up to and including 63
+// Valid channel ids for channels created on the remote side are 0 up to and including 63
 m_remoteContext.CreateDataChannel(0, DataChannelPriority::Low);
 ```
 
@@ -48,11 +48,11 @@ m_playerContext.CreateDataChannel(64, DataChannelPriority::Low);
 ```
 
 >[!NOTE]
->To create a new custom data channel, only one side (either host or player) needs to call the ```CreateDataChannel``` method.
+>To create a new custom data channel, only one side (either remote or player) needs to call the ```CreateDataChannel``` method.
 
 ## Handling custom data channel events
 
-To establish a custom data channel, the ```OnDataChannelCreated``` event needs to be handled (on both the player and the host side). It triggers when a user data channel has been created by either side and provides a ```IDataChannel``` object, which can be used to send and receive data over this channel.
+To establish a custom data channel, the ```OnDataChannelCreated``` event needs to be handled (on both the player and the remote side). It triggers when a user data channel has been created by either side and provides a ```IDataChannel``` object, which can be used to send and receive data over this channel.
 
 To register a listener on the ```OnDataChannelCreated``` event:
 ```cpp
@@ -109,7 +109,7 @@ m_customDataChannel.Close();
 ```
 
 ## See Also
-* [Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
+* [Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
 * [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

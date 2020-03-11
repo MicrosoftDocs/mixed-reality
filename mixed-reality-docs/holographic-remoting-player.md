@@ -1,9 +1,9 @@
 ---
 title: Holographic Remoting Player
 description: The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
-author: JonMLyons
-ms.author: jlyons
-ms.date: 08/01/2019
+author: FlorianBagarMicrosoft
+ms.author: flbagar
+ms.date: 11/03/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
@@ -13,9 +13,9 @@ keywords: HoloLens, Remoting, Holographic Remoting
 # Holographic Remoting Player
 
 >[!IMPORTANT]
->Holographic Remoting for HoloLens 2 is a major version change. [Host applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [host applications for **HoloLens 2**](holographic-remoting-create-host.md) must use **2.x.x**. This implies that host applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
+>Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](holographic-remoting-create-host.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
 
-The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
+The [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
 
 The Holographic Remoting Player can only be used with PC apps that are specifically designed to support Holographic Remoting.
 
@@ -52,7 +52,7 @@ On **HoloLens 2** the app will show you:
 * **Render** - The number of frames the Remoting player rendered during the last second. Note, this is independent from the number of frames which arrived via the network (see **Video frames**). Additionally, the average/maximum render delta time in milliseconds over the last second between rendered frames is displayed.
 
 * **Video frames** - The first number displayed is skipped video frames, the second is reused video frames, and the third is received video frames. All numbers represent the count over the last second.
-    * ```Received frames``` is the number of video frames which arrived over the last second. Under normal conditions this should be 60 but if it's not this is an indicator that either frames are dropped because of network issues or the remote/host side does not produce frames with the expected rate.
+    * ```Received frames``` is the number of video frames which arrived over the last second. Under normal conditions this should be 60 but if it's not this is an indicator that either frames are dropped because of network issues or the remote/remote side does not produce frames with the expected rate.
     * ```Reused frames``` is the count of video frames used more than once over the last second. For instance, if video frames arrive late, the rendering loop of the player still renders a frame but needs to *reuse* the video frame it already used for the previous frame.
     * ```Skipped frames``` is the count of video frames which have not been used by the rendering loop of the player. For instance, network jitter can have the effect that video frames arriving are not evenly distributed anymore. For example, if some are late and others arrive in time with the result that they do not have a delta of 16.66 milliseconds anymore when running on 60Hz. It can occur that more than one frame arrives between two ticks of the render loop of the player. In this case, the player *skips* one or more frames as it's supposed to always display the most recent received video frame.
 
@@ -61,7 +61,7 @@ On **HoloLens 2** the app will show you:
 
 * **Video frames delta** - The minimum/maximum delta between received video frames over the last second. This number usually correlates with skipped/reused frames in case of issues caused by network jitter.
 * **Latency** - The average turnaround in milliseconds over the last second. 
-Turnaround in this context means the time from sending pose/sensor data from the HoloLens to the remote/host side till displaying the video frame for that pose/telemetry data on the HoloLens display.
+Turnaround in this context means the time from sending pose/sensor data from the HoloLens to the remote/remote side till displaying the video frame for that pose/telemetry data on the HoloLens display.
 * **Video frames discarded** - The number of discarded video frames over the last second and since a connection has been established. The primary cause for discarded video frames is when a video frame does not arrive in order and for that reason needs to be discarded as there is already a newer one. This is similar to *discarded frames* but the cause is at a lower level in the Remoting stack. Discarded video frames are only expected under quite bad network conditions.
 
 
@@ -75,6 +75,6 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 
 ## See Also
 * [HoloLens (1st gen): Add Holographic Remoting](add-holographic-remoting.md)
-* [HoloLens 2: Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
+* [HoloLens 2: Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
 * [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

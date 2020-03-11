@@ -3,7 +3,7 @@ title: Holographic Remoting troubleshooting and limitations
 description: Troubleshooting steps for Holographic Remoting on HoloLens 2.
 author: FlorianBagarMicrosoft
 ms.author: flbagar
-ms.date: 12/17/2019
+ms.date: 11/03/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, troubleshoot, help
 ---
@@ -37,6 +37,7 @@ The following APIs are currently **not** supported when using Holographic Remoti
 * [HolographicCameraPose.OverrideViewTransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewtransform)
 * [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
   - Does not fail but depth buffer will not be remoted.
+  - Supported starting with version [2.1.0](holographic-remoting-version-history.md#v2.1.0)
 * [HolographicDisplay.TryGetViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
   - Querying HolographicViewConfigurationKind.PhotoVideoCamera will always return a ```nullptr```.
   - Supported starting with version [2.0.18](holographic-remoting-version-history.md#v2.0.18)
@@ -87,7 +88,7 @@ The following APIs are currently **not** supported when using Holographic Remoti
 
 ## See Also
 * [Holographic Remoting Version History](holographic-remoting-version-history.md)
-* [Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
+* [Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting software license terms](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)
