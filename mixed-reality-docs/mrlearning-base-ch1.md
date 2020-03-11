@@ -232,6 +232,9 @@ Configure Visual Studio for HoloLens 2 by selecting the **Master** or **Release*
 
 ![mrlearning-base](images/mrlearning-base/tutorial1-section7-step2-2.png)
 
+> [!NOTE]
+> If you don't see Device as an option you may need to change the default start up project from the IC2Lpp project to your UWP Project. In the **Solution Explorer**, right click on **yourprojectname (Universal Windows)** and select **Set as StartUp Project**. 
+
 Connect your HoloLens 2 to your computer.
 
 > [!IMPORTANT]
