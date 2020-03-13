@@ -96,7 +96,8 @@ Fill rate is focused on reducing the number of operations that need to be comput
 4) Number of pixels to render (display resolution)
 
 #### Reduce polygon count
-Higher polygon counts result in more operations for the GPU; reducing the number of polygons in your scene will reduce the render time. There are other factors involved in shading the geometry that can be expensive, but polygon count is the simplest metric to determine how expensive a scene will be to render.
+
+Higher polygon counts result in more operations for the GPU; [reducing the number of polygons](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) in your scene will reduce the render time. There are other factors involved in shading the geometry that can be expensive, but polygon count is the simplest metric to determine how expensive a scene will be to render.
 
 #### Limit overdraw
 
@@ -121,9 +122,11 @@ Typically, shaders perform many transformations and lighting calculations. Altho
     - Generally, the number of vertices is much smaller than the number of pixels (720p is 921,600 pixels, 1080p is 2,073,600 pixels, etc.)
 
 #### Remove GPU stages
+
 Post-processing effects can be very expensive and increase the fill rate of your application. This includes anti-aliasing techniques such as MSAA. On HoloLens, it is recommended to avoid these techniques entirely, as well as additional shader stages such as geometry, hull, and compute shaders.
 
 ## Memory recommendations
+
 Excessive memory allocation and deallocation operations can result in inconsistent performance, frozen frames, and other detrimental behavior. It is especially important to understand memory considerations when developing in Unity, since memory management is controlled by the garbage collector.
 
 #### Object pooling
@@ -133,3 +136,6 @@ Object pooling is a popular technique to reduce the cost of continuous allocatio
 ## See also
 - [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 - [Recommended settings for Unity](recommended-settings-for-unity.md)
+- [Optimize 3D models](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [Best practices for converting and optimizing real-time 3D Models](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/import-tool/best-practices)
+
