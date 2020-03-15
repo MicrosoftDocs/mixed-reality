@@ -44,7 +44,7 @@ There are three kinds of OpenXR extensions:
 
 By June 2020, the Windows Mixed Reality OpenXR Runtime will support a set of MSFT and EXT extensions that bring the full set of HoloLens 2 features to OpenXR applications:
 | Feature area | Extension | Availability |
-| --- | --- | --- |
+|---|---|---|
 | Systems + sessions | Core spec: `XrInstance`, `XrSystemId`, `XrSession` | **Released in OpenXR 1.0** |
 | Reference spaces (view, local, stage) | Core spec: `XrSpace` | **Released in OpenXR 1.0** |
 | View configurations (mono, stereo) | Core spec: `XrView*` | **Released in OpenXR 1.0** |
@@ -56,11 +56,11 @@ By June 2020, the Windows Mixed Reality OpenXR Runtime will support a set of MSF
 | [Spatial anchors](spatial-anchors.md) | [`XR_MSFT_spatial_anchor`](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_spatial_anchor) | **Released as `MSFT` extension** |
 | [Hand interaction (grip/aim pose, air-tap, grasp)](hands-and-tools.md) | [`XR_MSFT_hand_interaction_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_interaction_preview) | **`MSFT_preview` extension available**<br />March 2020: `MSFT` release
 | [Hand articulation + hand mesh](hands-and-tools.md) | [`XR_MSFT_hand_tracking_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_preview)<br />[`XR_MSFT_hand_tracking_mesh_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_mesh_preview) | **`MSFT_preview` extension available**<br />April 2020: `MSFT` release
+| [Mixed Reality Capture (third render)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) | [`XR_MSFT_secondary_view_configuration_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_secondary_view_configuration_preview)<br />[`XR_MSFT_first_person_observer_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_first_person_observer_preview) | **`MSFT_preview` extension available**<br />April 2020: `MSFT` release
+| Interop with other HoloLens SDKs (e.g. [QR](qr-code-tracking.md)) | [`XR_MSFT_spatial_graph_bridge_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_spatial_graph_bridge_preview) | **`MSFT_preview` extension available**<br />April 2020: `MSFT` release
 | [Eye gaze](eye-tracking.md) | *Upcoming:* `MSFT` vendor or `EXT` cross-vendor extension | March 2020: `MSFT_preview`<br />April 2020: `MSFT` or `EXT` release
-| [Mixed Reality Capture (third render)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) | [`XR_MSFT_secondary_view_configuration_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_secondary_view_configuration_preview)<br />[`XR_MSFT_first_person_observer_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_first_person_observer_preview) | **`MSFT_preview` extension available**<br />June 2020: `MSFT` release
 | [Motion controller render models](motion-controllers.md#rendering-the-motion-controller-model) | *Upcoming:* `MSFT` vendor extension | March 2020: `MSFT_preview`<br />June 2020: `MSFT` release
 | [Scene understanding (planes, meshes)](scene-understanding.md) | *Upcoming:* `MSFT` vendor extension | April 2020: `MSFT_preview`<br />June 2020: `MSFT` release
-| Interop with other HoloLens SDKs | [`XR_MSFT_spatial_graph_bridge_preview`](https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_spatial_graph_bridge_preview) | **`MSFT_preview` extension available**<br />June 2020: `MSFT` release
 
 While some of these extensions may start out as vendor-specific `MSFT` extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor `EXT` or `KHR` extensions for many of these feature areas.  This will enable the code you write for those features to be portable across runtime vendors, just as with the core specification.
 
