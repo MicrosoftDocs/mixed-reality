@@ -13,7 +13,7 @@ keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engin
 # OpenXR performance
 
 On HoloLens 2, there are a number of ways to submit composition data through `xrEndFrame` which will result in post-processing that will have a noticeable performance penalty.
-To avoid performance penalities, [submit a single `XrCompositionProjectionLayer`](#use-a-single-projection-layer) with the following characteristics:
+To avoid performance penalities, [submit a single `XrCompositionProjectionLayer`](openxr-best-practices.md#use-a-single-projection-layer) with the following characteristics:
 * [Use a texture array swapchain](openxr-best-practices.md#render-with-texture-array-and-vprt)
 * [Use the primary color swapchain format](openxr-best-practices.md#select-a-swapchain-format)
 * [Use the recommended view dimensions](openxr-best-practices.md#render-with-recommended-rendering-parameters-and-frame-timing)
