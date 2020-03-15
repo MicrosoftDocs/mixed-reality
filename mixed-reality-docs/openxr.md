@@ -43,8 +43,9 @@ There are three kinds of OpenXR extensions:
 * **Official KHR extensions:** Official Khronos extensions ratified as part of a core spec release.  KHR extensions are covered by the same license as the core spec itself.
 
 By June 2020, the Windows Mixed Reality OpenXR Runtime will support a set of MSFT and EXT extensions that bring the full set of HoloLens 2 features to OpenXR applications:
+
 | Feature area | Extension | Availability |
-|---|---|---|
+|--------------|-----------|--------------|
 | Systems + sessions | Core spec: `XrInstance`, `XrSystemId`, `XrSession` | **Released in OpenXR 1.0** |
 | Reference spaces (view, local, stage) | Core spec: `XrSpace` | **Released in OpenXR 1.0** |
 | View configurations (mono, stereo) | Core spec: `XrView*` | **Released in OpenXR 1.0** |
