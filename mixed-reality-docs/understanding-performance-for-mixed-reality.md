@@ -97,7 +97,7 @@ Fill rate is focused on reducing the number of operations that need to be comput
 
 #### Reduce polygon count
 
-Higher polygon counts result in more operations for the GPU; [reducing the number of polygons](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) in your scene will reduce the render time. There are other factors involved in shading the geometry that can be expensive, but polygon count is the simplest metric to determine how expensive a scene will be to render.
+Higher polygon counts result in more operations for the GPU; [reducing the number of polygons](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) in your scene will reduce the render time. There are other factors involved in shading the geometry that can be expensive, but polygon count is the simplest metric to determine how expensive a scene will be to render.
 
 #### Limit overdraw
 
@@ -136,6 +136,6 @@ Object pooling is a popular technique to reduce the cost of continuous allocatio
 ## See also
 - [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 - [Recommended settings for Unity](recommended-settings-for-unity.md)
-- [Optimize 3D models](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [Best practices for converting and optimizing real-time 3D Models](https://docs.microsoft.com/en-us/dynamics365/mixed-reality/import-tool/best-practices)
+- [Optimize 3D models](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [Best practices for converting and optimizing real-time 3D Models](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
 
