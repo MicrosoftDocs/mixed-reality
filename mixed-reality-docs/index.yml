@@ -1,0 +1,108 @@
+### YamlMime:Hub
+
+title: Mixed reality documentation # < 60 chars
+summary: summary # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: windows
+
+metadata:
+  title: Mixed reality documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: To help someone new to mixed reality learn what it is and understand its capabilities. # Required; article description that is displayed in search results. < 160 chars.
+  services: guidance
+  ms.service: guidance #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: grbury #Required; your GitHub user alias, with correct capitalization.
+  ms.author: grbury #Required; microsoft alias of author; optional team alias.
+  ms.localizationpriority: high
+  ms.date: 08/24/2019 #Required; mm/dd/yyyy format.
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: What is mixed reality?
+      itemType: overview
+      url: mixed-reality.md
+    # Card
+    - title: What is a hologram?
+      itemType: overview
+      url: hologram.md
+    # Card
+    - title: Design and prototype as a designer
+      itemType: get-started
+      url: design.md
+    # Card
+    - title: Learn the tools and architecture as a developer
+      itemType: get-started
+      url: development.md
+    # Card
+    - title: Jump in with Unity and MRTK
+      itemType: overview
+      url: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: Understand the basics # < 60 chars (optional)
+  summary: If you're new to mixed reality, you will learn what it is and understand its capabilities. # < 160 chars (optional)
+  items:
+    # Card
+    - title: What can you do with mixed reality?
+      links:
+        - url: https://dynamics.microsoft.com//mixed-reality/overview/
+          itemType: overview
+          text: A new vision for work
+        - url: case-study-the-pursuit-of-more-personal-computing.md
+          itemType: learn
+          text: The pursuit of more personal computing
+    # Card
+    - title: See how industry partners are using mixed reality
+      links:
+        - url: https://binged.it/31AR3kP
+          itemType: video
+          text: View complex construction projects with Bentley's digital construction software
+        - url: https://binged.it/31ARrjh
+          itemType: video
+          text: PTC's Vuforia Studio authoring solution promotes workforce productivity and safety
+        - url: https://binged.it/31B1RiR
+          itemType: video
+          text: Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures
+    # Card
+    - title: Capabilities of HoloLens and core concepts
+      links:
+        - url: https://www.microsoft.com//hololens/hardware
+          itemType: overview
+          text: HoloLens 2
+        - url: comfort.md
+          itemType: concept
+          text: Keep the user comfortable
+        - url: holographic-frame.md
+          itemType: concept
+          text: How the user sees the world
+        - url: spatial-mapping.md
+          itemType: concept
+          text: Make holographic objects feel real
+        - url: scale.md
+          itemType: concept
+          text: Suggest the scale of an object
+        
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title:  # < 60 chars (optional)
+      summary:  # < 160 chars (optional)
+      items:
+        # Card
+        - title: Try out mixed reality
+          summary: Get a demo of Mixed Reality and HoloLens at your local Microsoft Store.
+          url: https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator
+        # Card
+        - title: Come to an event
+          summary: See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
+          url: sf-academy-events.md
+  # footer (optional)
+  footer: "IMPORTANT：All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the application developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement)"
