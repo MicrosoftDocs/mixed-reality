@@ -112,7 +112,7 @@ Often, it is best to think what type of experience an application or game develo
 ## See also
 
 * [What is a hologram?](hologram.md)
-* [Understand the basics of mixed reality](index.md#understand-the-basics)
+* [Understand the basics of mixed reality](index.yml)
 * [Start creating and prototyping](design.md)
 * [Learn the tools and architecture](development.md)
 
