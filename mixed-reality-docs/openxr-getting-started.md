@@ -46,6 +46,8 @@ If using the emulator, the easiest way to install the Mixed Reality OpenXR Devel
 
 ## Building a sample OpenXR app
 
+Be sure to [install the tools](install-the-tools.md) you'll need for OpenXR development if you haven't already.
+
 The <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
 
 Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is 100% the same!
