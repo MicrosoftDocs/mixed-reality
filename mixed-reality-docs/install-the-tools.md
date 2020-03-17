@@ -45,9 +45,9 @@ We recommend installing the Unity game engine as the easiest way to get started 
         <p>The current recommendation is to use **Unity 2018.4.x**, which is the LTS build required for MRTK v2 below.</p>
         <p>Some developers might want to use a different version of Unity for specific reasons. For those cases, Unity supports side-by-side installs of different versions.</p>
         <p>See the [Unity development overview](unity-development-overview.md) to get started with Unity development for HoloLens 2 or Windows Mixed Reality immersive headsets.</p>
-        <p><a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">![MRTK](images/final_mrtk-small_logo.png)<br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">![MRTK](images/final_mrtk-small_logo.png)<br>
         **Mixed Reality Toolkit (MRTK)**</a><br>
-        Mixed Reality Toolkit (MRTK) v2 for Unity is an open source cross-platform development kit for mixed reality applications.</p>
+        Mixed Reality Toolkit (MRTK) v2 for Unity is an open source cross-platform development kit for mixed reality applications.
         <p>MRTK v2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform. The project is aimed at reducing the barriers to entry in creating mixed reality applications and contributing back to the community as things evolve.</p>
     :::column-end:::
     :::column:::
@@ -61,8 +61,8 @@ We recommend installing the Unity game engine as the easiest way to get started 
         ![Native app development](images/visualstudio-small_logo.png)<br>
         <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">**Native (WinRT)**</a><br>
         The Windows Mixed Reality app templates provide all of the essentials you need to start writing a mixed reality app using DirectX with native APIs. Includes a rendering loop (or "game loop"), a DeviceResources helper class to manage the Direct3D device and context, and a simple example hologram renderer. Available for Direct3D11 and Direct3D 12.
-        <p><a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">**Native (OpenXR)**</a><br>
-        OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from many vendors that span across the mixed reality spectrum.  The **BasicXrApp** project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.</p>
+        <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">**Native (OpenXR)**</a><br>
+        OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from many vendors that span across the mixed reality spectrum.  The **BasicXrApp** project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.
         <p>See the [Native development overview](directx-development-overview.md) to get started with native app development using WinRT or OpenXR for HoloLens 2 or Windows Mixed Reality immersive headsets.</p>
     :::column-end:::
 :::row-end:::
