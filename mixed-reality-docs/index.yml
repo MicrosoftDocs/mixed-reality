@@ -93,8 +93,8 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title:  # < 60 chars (optional)
-      summary:  # < 160 chars (optional)
+    - title: What would you like to do next? # < 60 chars (optional)
+      summary: Find related links to mixed reality. # < 160 chars (optional)
       items:
         # Card
         - title: Try out mixed reality
