@@ -38,7 +38,7 @@ The OpenXR specification defines an extension mechanism that enables runtime imp
 
 There are three kinds of OpenXR extensions:
 * **Vendor extensions (e.g. `MSFT`):** Enables per-vendor innovation in hardware or software features.  Any runtime vendor can introduce and ship a vendor extension at any time.
-  * **Experimental vendor extensions (e.g. `MSFT_preview`):** Experimental vendor extensions being previewed to gather feedback.  `MSFT_preview` extensions are for developers only and will be removed when the real extension ships.  To preview them as a developer, you can enable "Use latest preview OpenXR runtime" on the OpenXR tab of [Device Portal](using-the-windows-device-portal.md) on the target device.
+  * **Experimental vendor extensions (e.g. `MSFT_preview`):** Experimental vendor extensions being previewed to gather feedback.  `MSFT_preview` extensions are for developers only and will be removed when the real extension ships.  To preview them as a developer, you can enable "Use latest preview OpenXR runtime" on the OpenXR page of [Device Portal](using-the-windows-device-portal.md) on the target device.
 * **Cross-vendor `EXT` extensions:** Cross-vendor extensions that multiple companies define and implement.  Groups of interested companies can introduce EXT extensions at any time.
 * **Official `KHR` extensions:** Official Khronos extensions ratified as part of a core spec release.  KHR extensions are covered by the same license as the core spec itself.
 
@@ -46,14 +46,14 @@ By July 2020, the Windows Mixed Reality OpenXR Runtime will support a set of `MS
 
 | Feature area | Extension availability |
 |--------------|------------------------|
-| Systems + sessions | **OpenXR 1.0 core spec:**<br />`XrInstance`, `XrSystemId`, `XrSession` |
-| Reference spaces (view, local, stage) | **OpenXR 1.0 core spec:**<br />`XrSpace` |
-| View configurations (mono, stereo) | **OpenXR 1.0 core spec:**<br />`XrView...` |
-| Swapchains + frame timing | **OpenXR 1.0 core spec:**<br />`XrSwapchain...` |
-| Composition layers | **OpenXR 1.0 core spec:**<br />`XrCompositionLayer...` |
-| Input and haptics | **OpenXR 1.0 core spec:**<br />`XrAction...` |
-| Direct3D 11 integration | **`KHR` extension released:**<br /><code>XR_KHR_D3D11_enable</code><br /> |
-| Direct3D 12 integration | **`KHR` extension defined:** *(not yet supported)*<br /><code>XR_KHR_D3D12_enable</code><br /><p>**Preview support**: April 2020 *(planned)*</p><p>**Full support**: May 2020 *(planned)*</p> |
+| Systems + sessions | **OpenXR 1.0 core spec:**<br /><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#instance" target="_blank">`XrInstance`</a>, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#system" target="_blank">`XrSystemId`</a>, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#session" target="_blank">`XrSession`</a> |
+| [Reference spaces (view, local, stage)](coordinate-systems.md) | **OpenXR 1.0 core spec:**<br /><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#spaces" target="_blank">`XrSpace`</a> |
+| View configurations (mono, stereo) | **OpenXR 1.0 core spec:**<br /><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#view_configurations" target="_blank">`XrView...`</a> |
+| [Swapchains](rendering.md) + [frame timing](understanding-performance-for-mixed-reality.md) | **OpenXR 1.0 core spec:**<br /><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#rendering" target="_blank">`XrSwapchain...`</a> + <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#frame-synchronization" target="_blank">`xrWaitFrame`</a> |
+| Composition layers<br />(projection, quad) | **OpenXR 1.0 core spec:**<br /><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#compositing" target="_blank">`XrCompositionLayer...`</a> + <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#frame-submission" target="_blank">`xrEndFrame`</a> |
+| [Input and haptics](interaction-fundamentals.md) | **OpenXR 1.0 core spec:**<br /><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#input" target="_blank">`XrAction...`</a> |
+| Direct3D 11 integration | **Official `KHR` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_KHR_D3D11_enable" target="_blank">XR_KHR_D3D11_enable</a></code><br /> |
+| Direct3D 12 integration | **Official `KHR` extension defined:** *(not yet supported)*<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_KHR_D3D12_enable" target="_blank">XR_KHR_D3D12_enable</a></code><br /><p>**Preview support**: April 2020 *(planned)*</p><p>**Full support**: May 2020 *(planned)*</p> |
 | [Unbounded reference space<br />(world-scale experiences)](coordinate-systems.md#building-a-world-scale-experience) | **`MSFT` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_unbounded_reference_space" target="_blank">XR_MSFT_unbounded_reference_space</a></code> |
 | [Spatial anchors](spatial-anchors.md) | **`MSFT` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_spatial_anchor">XR_MSFT_spatial_anchor</a></code> |
 | [Hand interaction<br />(grip/aim pose, air-tap, grasp)](hands-and-tools.md) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_interaction_preview">XR_MSFT_hand_interaction_preview</a></code><p>**`MSFT` release**: April 2020 *(planned)*</p> |
