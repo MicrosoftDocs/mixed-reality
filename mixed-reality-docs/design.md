@@ -137,8 +137,8 @@ Learn about the building blocks for spatial interactions and UI in mixed reality
 
 :::row:::
     :::column:::
-       [![Understand the basics](images/icon-lightbulb.png)](index.md#understand-the-basics)<br>
-        **[Understand the basics](index.md#understand-the-basics)**<br>
+       [![Understand the basics](images/icon-lightbulb.png)](index.yml)<br>
+        **[Understand the basics](index.yml)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
