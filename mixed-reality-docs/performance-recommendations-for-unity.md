@@ -6,6 +6,7 @@ ms.author: trferrel
 ms.date: 03/26/2019
 ms.topic: article
 keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
+ms.localizationpriority: high
 ---
 
 # Performance recommendations for Unity

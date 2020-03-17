@@ -6,6 +6,7 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
+ms.localizationpriority: high
 ---
 
 
@@ -43,7 +44,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 2. Look up your device's IP address.
    * Find the IP address on the device under **Settings > Network & Internet > Wi-Fi > Advanced Options**.
 3. From a web browser on your PC, go to https://<YOUR_HOLOLENS_IP_ADDRESS>
-   * The browser will display the following message: "There’s a problem with this website’s security certificate". This happens because the certificate which is issued to the Device Portal is a test certificate. You can ignore this certificate error for now and proceed.
+   * The browser will display the following message: "There's a problem with this website's security certificate". This happens because the certificate which is issued to the Device Portal is a test certificate. You can ignore this certificate error for now and proceed.
 
 ## Connecting over USB
 
