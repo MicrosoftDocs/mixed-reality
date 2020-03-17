@@ -38,30 +38,31 @@ The OpenXR specification defines an extension mechanism that enables runtime imp
 
 There are three kinds of OpenXR extensions:
 * **Vendor extensions (e.g. `MSFT`):** Enables per-vendor innovation in hardware or software features.  Any runtime vendor can introduce and ship a vendor extension at any time.
-  * **Experimental vendor extensions (e.g. `MSFT_preview`):** Experimental vendor extensions being previewed to gather feedback.  `MSFT_preview` extensions are for developers only and will be removed when the real extension ships, so you must manually enable them.
+  * **Experimental vendor extensions (e.g. `MSFT_preview`):** Experimental vendor extensions being previewed to gather feedback.  `MSFT_preview` extensions are for developers only and will be removed when the real extension ships.  To preview them as a developer, you can enable "Use latest preview OpenXR runtime" on the OpenXR tab of [Device Portal](using-the-windows-device-portal.md) on the target device.
 * **Cross-vendor `EXT` extensions:** Cross-vendor extensions that multiple companies define and implement.  Groups of interested companies can introduce EXT extensions at any time.
 * **Official `KHR` extensions:** Official Khronos extensions ratified as part of a core spec release.  KHR extensions are covered by the same license as the core spec itself.
 
-By June 2020, the Windows Mixed Reality OpenXR Runtime will support a set of MSFT and EXT extensions that bring the full set of HoloLens 2 features to OpenXR applications:
+By July 2020, the Windows Mixed Reality OpenXR Runtime will support a set of `MSFT` and `EXT` extensions that bring the full set of HoloLens 2 features to OpenXR applications:
 
 | Feature area | Extension availability |
 |--------------|------------------------|
-| Systems + sessions | **Released in OpenXR 1.0 core spec:**<br />`XrInstance`, `XrSystemId`, `XrSession` |
-| Reference spaces (view, local, stage) | **Released in OpenXR 1.0 core spec:**<br />`XrSpace` |
-| View configurations (mono, stereo) | **Released in OpenXR 1.0 core spec:**<br />`XrView*` |
-| Swapchains + frame timing | **Released in OpenXR 1.0 core spec:**<br />`XrSwapchain*` |
-| Composition layers | **Released in OpenXR 1.0 core spec:**<br />`XrCompositionLayer*` |
-| Input and haptics | **Released in OpenXR 1.0 core spec:**<br />`XrAction*` |
-| Graphics API integration (D3D11) | **Released in OpenXR 1.0:**<br /><code>XR_KHR_D3D11_enable</code> |
-| [Unbounded reference space<br />(world-scale experiences)](coordinate-systems.md#building-a-world-scale-experience) | **Released as `MSFT` extension:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_unbounded_reference_space" target="_blank">XR_MSFT_unbounded_reference_space</a></code> |
-| [Spatial anchors](spatial-anchors.md) | **Released as `MSFT` extension:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_spatial_anchor">XR_MSFT_spatial_anchor</a></code> |
-| [Hand interaction<br />(grip/aim pose, air-tap, grasp)](hands-and-tools.md) | **`MSFT_preview` extension available:**<br/><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_interaction_preview">XR_MSFT_hand_interaction_preview</a></code><p>**`MSFT` release**: March 2020</p> |
-| [Hand articulation + hand mesh](hands-and-tools.md) | **`MSFT_preview` extension available:**<br/><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_preview">XR_MSFT_hand_tracking_preview</a></code><br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_mesh_preview">XR_MSFT_hand_tracking_mesh_preview</a></code><p>**`MSFT` release**: April 2020</p> |
-| [Mixed Reality Capture (third render)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) | **`MSFT_preview` extension available:**<br/><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_secondary_view_configuration_preview">XR_MSFT_secondary_view_configuration_preview</a></code><br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_first_person_observer_preview">XR_MSFT_first_person_observer_preview</a></code><br /><p>**`MSFT` release**: April 2020</p> |
-| Interop with other HoloLens SDKs (e.g. [QR](qr-code-tracking.md)) | **`MSFT_preview` extension available:**<br/><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_spatial_graph_bridge_preview">XR_MSFT_spatial_graph_bridge_preview</a></code><p>**`MSFT` release**: April 2020</p> |
-| [Eye gaze](eye-tracking.md) | <p>**`MSFT_preview`**: March 2020</p><p>**`MSFT` or `EXT` release**: June 2020</p> |
-| [Motion controller render models](motion-controllers.md#rendering-the-motion-controller-model) | <p>**`MSFT_preview`**: March 2020</p><p>**`MSFT` release**: June 2020</p> |
-| [Scene understanding (planes, meshes)](scene-understanding.md) | <p>**`MSFT_preview`**: April 2020</p><p>**`MSFT` release**: June 2020</p> |
+| Systems + sessions | **OpenXR 1.0 core spec:**<br />`XrInstance`, `XrSystemId`, `XrSession` |
+| Reference spaces (view, local, stage) | **OpenXR 1.0 core spec:**<br />`XrSpace` |
+| View configurations (mono, stereo) | **OpenXR 1.0 core spec:**<br />`XrView...` |
+| Swapchains + frame timing | **OpenXR 1.0 core spec:**<br />`XrSwapchain...` |
+| Composition layers | **OpenXR 1.0 core spec:**<br />`XrCompositionLayer...` |
+| Input and haptics | **OpenXR 1.0 core spec:**<br />`XrAction...` |
+| Direct3D 11 integration | **`KHR` extension released:**<br /><code>XR_KHR_D3D11_enable</code><br /> |
+| Direct3D 12 integration | **`KHR` extension defined:** *(not yet supported)*<br /><code>XR_KHR_D3D12_enable</code><br /><p>**Preview support**: April 2020 *(planned)*</p><p>**Full support**: May 2020 *(planned)*</p> |
+| [Unbounded reference space<br />(world-scale experiences)](coordinate-systems.md#building-a-world-scale-experience) | **`MSFT` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_unbounded_reference_space" target="_blank">XR_MSFT_unbounded_reference_space</a></code> |
+| [Spatial anchors](spatial-anchors.md) | **`MSFT` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_spatial_anchor">XR_MSFT_spatial_anchor</a></code> |
+| [Hand interaction<br />(grip/aim pose, air-tap, grasp)](hands-and-tools.md) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_interaction_preview">XR_MSFT_hand_interaction_preview</a></code><p>**`MSFT` release**: April 2020 *(planned)*</p> |
+| [Hand articulation + hand mesh](hands-and-tools.md) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_preview">XR_MSFT_hand_tracking_preview</a></code><br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_mesh_preview">XR_MSFT_hand_tracking_mesh_preview</a></code><p>**`MSFT` release**: May 2020 *(planned)*</p> |
+| Interop with other HoloLens SDKs (e.g. [QR](qr-code-tracking.md)) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_spatial_graph_bridge_preview">XR_MSFT_spatial_graph_bridge_preview</a></code><p>**`MSFT` release**: May 2020 *(planned)*</p> |
+| [Eye gaze](eye-tracking.md) | <p>**`MSFT_preview`**: April 2020 *(planned)*</p><p>**`MSFT` or `EXT` release**: May 2020 *(planned)*</p> |
+| [Mixed Reality Capture<br />(third render from PV camera)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_secondary_view_configuration_preview">XR_MSFT_secondary_view_configuration_preview</a></code><br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_first_person_observer_preview">XR_MSFT_first_person_observer_preview</a></code><br /><p>**`MSFT` release**: June 2020 *(planned)*</p> |
+| [Motion controller render models](motion-controllers.md#rendering-the-motion-controller-model) | <p>**`MSFT_preview`**: April 2020 *(planned)*</p><p>**`MSFT` release**: July 2020 *(planned)*</p> |
+| [Scene understanding (planes, meshes)](scene-understanding.md) | <p>**`MSFT_preview`**: May 2020 *(planned)*</p><p>**`MSFT` release**: July 2020 *(planned)*</p> |
 
 While some of these extensions may start out as vendor-specific `MSFT` extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor `EXT` or `KHR` extensions for many of these feature areas.  This will enable the code you write for those features to be portable across runtime vendors, just as with the core specification.
 
