@@ -56,6 +56,39 @@ After building an OpenXR Win32 desktop .EXE, you can use it with a VR headset on
 
 After building an OpenXR UWP app package, you can [deploy that package](using-visual-studio.md) to either a HoloLens 2 device or the HoloLens 2 Emulator.
 
+## Integrate the OpenXR loader into a project
+
+To get started with OpenXR in an existing project, you'll include the OpenXR loader.  The loader discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements.
+
+You can either reference the official OpenXR NuGet package from your Visual Studio project or include the official OpenXR loader source from the Khronos GitHub repo.  If you want to use `MSFT_preview` extensions, you can then copy in preview headers from the Mixed Reality GitHub repo.
+
+### Reference official OpenXR NuGet package
+
+The <a href="https://www.nuget.org/packages/OpenXR.Loader/" target="_blank">OpenXR.Loader NuGet package</a> is the easiest way to reference a prebuilt OpenXR loader .DLL in your Visual Studio C++ solution.  This will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
+
+To add an OpenXR.Loader NuGet package reference to your Visual Studio C++ solution:
+1. In **Solution Explorer**, right-click the project that will use OpenXR and select **Manage NuGet Packages...**.
+1. Switch to the **Browse** tab and search for **"OpenXR.Loader"**.
+1. Select the **OpenXR.Loader** package and click Install in the details pane to the right.
+1. Click OK to accept the changes to your project.
+1. Add `#include <openxr/openxr.h>` to a source file to start using the OpenXR API.
+
+### Include official OpenXR loader source
+
+If you want to build the loader yourself, for example to avoid the extra loader .DLL, you can pull in the official Khronos OpenXR loader sources to build the loader yourself.  This will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
+
+To get started here, follow the instructions in the [Khronos *OpenXR-SDK* repo](https://github.com/KhronosGroup/OpenXR-SDK).
+
+### Include preview OpenXR loader source
+
+If you're interested to try out some of the available `MSFT_preview` extensions listed in the [Roadmap](openxr.md#roadmap), you can pull in the preview Mixed Reality OpenXR loader sources to build the preview loader yourself.
+
+Follow the instructions above for [including the official OpenXR loader source](#include-official-openxr-loader-source) and then replace the OpenXR headers in your project with the [preview headers from the Mixed Reality OpenXR repo](https://github.com/microsoft/OpenXR-MixedReality/tree/master/openxr_preview/include/openxr).
+
+You can find [documentation for these preview extensions and samples of how to use them](https://github.com/Microsoft/OpenXR-MixedReality#openxr-preview-extensions) in that repo as well.
+
+Note that `MSFT_preview` extensions are for developers only and will be removed when the real extension ships.  To preview them as a developer, you can enable "Use latest preview OpenXR runtime" on the OpenXR page of [Device Portal](using-the-windows-device-portal.md) on the target device.
+
 ## Troubleshooting
 
 If you have trouble getting up and running with OpenXR development, check out our [troubleshooting tips](openxr-troubleshooting.md).
