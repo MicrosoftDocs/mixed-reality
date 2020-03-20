@@ -15,7 +15,7 @@ This article builds on the discussion outlined in [performance recommendations f
 
 ## Use recommended Unity project settings
 
-The most important first step when optimizing performance of mixed reality apps in Unity is to be sure you are using the [recommended environment settings for Unity](Recommended-settings-for-unity.md). That article contains content with some of the most important scene configurations for building performant Mixed Reality apps. Some of these recommended settings are highlighted below, as well.
+The most important first step when optimizing performance of mixed reality apps in Unity is to be sure you are using the [recommended environment settings for Unity](recommended-settings-for-unity.md). That article contains content with some of the most important scene configurations for building performant Mixed Reality apps. Some of these recommended settings are highlighted below, as well.
 
 ## How to profile with Unity
 
