@@ -6,9 +6,8 @@ ms.author: branbray
 ms.date: 03/21/2018
 ms.topic: article
 keywords: mixed reality, holographic, ar, vr, mr, xr, augmented reality, virtual reality, explanation
+ms.localizationpriority: high
 ---
-
-
 
 # What is mixed reality?
 

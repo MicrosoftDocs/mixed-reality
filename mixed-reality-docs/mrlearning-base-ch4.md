@@ -1,11 +1,12 @@
 ---
 title: Getting started tutorials - 5. Interacting with 3D objects
-description:
+description: Learn about basic 3D content and user experiences, such as organizing 3D objects and bounding boxes for basic manipulation.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 05/02/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 5. Interacting with 3D objects

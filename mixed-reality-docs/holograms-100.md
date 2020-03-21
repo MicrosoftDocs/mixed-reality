@@ -163,7 +163,7 @@ Now that we have created our cube, it is time to do a quick check in device. You
 6. Ensure the **Connection Status** changes to green **Connected**.
 7. Now you can now click **Play** in the Unity editor.
 
-You will now be able to see the cube in device and in the editor. You can pause, inspect objects, and debug just like you are running an app in the editor, because that’s essentially what’s happening, but with video, audio, and device input transmitted back and forth across the network between the host machine and the device.
+You will now be able to see the cube in device and in the editor. You can pause, inspect objects, and debug just like you are running an app in the editor, because that's essentially what's happening, but with video, audio, and device input transmitted back and forth across the network between the host machine and the device.
 
 ### For other mixed reality supported headsets
 
