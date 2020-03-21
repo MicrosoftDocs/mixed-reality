@@ -59,24 +59,28 @@ After building an OpenXR UWP app package, you can [deploy that package](using-vi
 
 To get started with OpenXR in an existing project, you'll include the OpenXR loader.  The loader discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements.
 
-You can either [reference the official OpenXR NuGet package from your Visual Studio project](#reference-official-openxr-nuget-package) or [include the official OpenXR loader source from the Khronos GitHub repo](#include-official-openxr-loader-source).  Either approach will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.  If you then want to try out `MSFT_preview` extensions as well, you can [copy in preview OpenXR headers from the Mixed Reality GitHub repo](#using-preview-extensions).
+You can either [reference the official OpenXR NuGet package](#reference-official-openxr-nuget-package) from your Visual Studio project or [include the official OpenXR loader source](#include-official-openxr-loader-source)  from the Khronos GitHub repo.  Either approach will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
+
+If you're interested to experiment with `MSFT_preview` extensions as well, you can [copy in preview OpenXR headers](#using-preview-extensions) from the Mixed Reality GitHub repo.
 
 ### Reference official OpenXR NuGet package
 
-The <a href="https://www.nuget.org/packages/OpenXR.Loader/" target="_blank">OpenXR.Loader NuGet package</a> is the easiest way to reference a prebuilt OpenXR loader .DLL in your Visual Studio C++ solution.  This will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
+The <a href="https://www.nuget.org/packages/OpenXR.Loader/" target="_blank">**OpenXR.Loader** NuGet package</a> is the easiest way to reference a prebuilt OpenXR loader .DLL in your Visual Studio C++ solution.  This will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
 
 To add an OpenXR.Loader NuGet package reference to your Visual Studio C++ solution:
 1. In **Solution Explorer**, right-click the project that will use OpenXR and select **Manage NuGet Packages...**.
-1. Switch to the **Browse** tab and search for **"OpenXR.Loader"**.
+1. Switch to the **Browse** tab and search for **OpenXR.Loader**.
 1. Select the **OpenXR.Loader** package and click Install in the details pane to the right.
 1. Click OK to accept the changes to your project.
 1. Add `#include <openxr/openxr.h>` to a source file to start using the OpenXR API.
 
+To see an example of the OpenXR API in action, check out the <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> sample app.
+
 ### Include official OpenXR loader source
 
-If you want to build the loader yourself, for example to avoid the extra loader .DLL, you can pull in the official Khronos OpenXR loader sources to build the loader yourself.  This will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
+If you want to build the loader yourself, for example to avoid the extra loader .DLL, you can pull the official Khronos OpenXR loader sources into your project.  This will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
 
-To get started here, follow the instructions in the <a href="https://github.com/KhronosGroup/OpenXR-SDK" target="_blank">Khronos OpenXR-SDK repo on GitHub</a>.
+To get started here, follow the instructions in the <a href="https://github.com/KhronosGroup/OpenXR-SDK" target="_blank">Khronos OpenXR-SDK repo on GitHub</a>.  The build instructions there require CMake - if you are using Visual Studio.
 
 ## Using preview extensions
 
