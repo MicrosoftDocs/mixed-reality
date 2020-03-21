@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, windows Mixed Reality OpenXR Developer Portal, DirectX, native, native app, custom engine, middleware, getting started, 101
+keywords: OpenXR, Khronos, BasicXRApp, windows Mixed Reality OpenXR Developer Portal, DirectX, native, native app, custom engine, middleware, getting started, 101, preview extensions
 ---
 
 
@@ -19,8 +19,7 @@ You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive 
 To start developing OpenXR applications for HoloLens 2:
 
 1. Set up a HoloLens 2 or follow the instructions to [install a recent version of the HoloLens 2 emulator](using-the-hololens-emulator.md).  If your device has updated its OS recently or if you're using a recent emulator image, you should already have OpenXR 1.0 ready to go.
-1. To make sure you've got the latest OpenXR runtime with all [extensions](openxr.md#roadmap) present, launch the Store app from within the device or emulator and ensure all apps are updated.  This will ensure that the OpenXR runtime on your HoloLens is up to date.
-   * If using the emulator, the easiest way to update your OpenXR runtime is using [Device Portal](using-the-windows-device-portal.md), by navigating to the "OpenXR" page and then clicking the "Update" button under "Runtime Status". (this works on a physical HoloLens 2 device as well)
+1. To make sure you've got the latest OpenXR runtime with all [extensions](openxr.md#roadmap) present, launch the Store app from within the device or emulator, open the menu in the upper-right, click **Downloads and updates** and click **Get updates**.  This ensures that the OpenXR runtime on your HoloLens is up to date.  Note that if you're using the emulator, the emulator image will reset each time you start it, and so your best bet is to just make sure that you have [the latest version of the HoloLens 2 emulator image](using-the-hololens-emulator.md).
 
 ## Getting started with OpenXR for Windows Mixed Reality headsets
 
@@ -40,7 +39,7 @@ If you ever need to make the Windows Mixed Reality OpenXR Runtime active again, 
 
 To try out the Windows Mixed Reality OpenXR Runtime, you can install the <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">Mixed Reality OpenXR Developer Portal app</a>.  This app provides a demo scene that exercises various features of OpenXR, along with a System Status page that provides key information about the active runtime and the current headset.
 
-If using the emulator, the easiest way to install the Mixed Reality OpenXR Developer Portal is using [Device Portal](using-the-windows-device-portal.md), by navigating to the "OpenXR" page and then clicking the "Install" button under "Developer Features". (this works on a physical HoloLens 2 device as well)
+If using the emulator, the easiest way to install the Mixed Reality OpenXR Developer Portal is using [Windows Device Portal](using-the-windows-device-portal.md), by navigating to the "OpenXR" page and then clicking the "Install" button under "Developer Features". (this works on a physical HoloLens 2 device as well)
 
 ![Mixed Reality OpenXR Developer Portal app](images/mixed-reality-openxr-developer-portal.png)
 
@@ -60,7 +59,7 @@ After building an OpenXR UWP app package, you can [deploy that package](using-vi
 
 To get started with OpenXR in an existing project, you'll include the OpenXR loader.  The loader discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements.
 
-You can either reference the official OpenXR NuGet package from your Visual Studio project or include the official OpenXR loader source from the Khronos GitHub repo.  If you want to use `MSFT_preview` extensions, you can then copy in preview headers from the Mixed Reality GitHub repo.
+You can either [reference the official OpenXR NuGet package from your Visual Studio project](#reference-official-openxr-nuget-package) or [include the official OpenXR loader source from the Khronos GitHub repo](#include-official-openxr-loader-source).  Either approach will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.  If you then want to try out `MSFT_preview` extensions as well, you can [copy in preview OpenXR headers from the Mixed Reality GitHub repo](#using-preview-extensions).
 
 ### Reference official OpenXR NuGet package
 
@@ -77,17 +76,23 @@ To add an OpenXR.Loader NuGet package reference to your Visual Studio C++ soluti
 
 If you want to build the loader yourself, for example to avoid the extra loader .DLL, you can pull in the official Khronos OpenXR loader sources to build the loader yourself.  This will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
 
-To get started here, follow the instructions in the [Khronos *OpenXR-SDK* repo](https://github.com/KhronosGroup/OpenXR-SDK).
+To get started here, follow the instructions in the <a href="https://github.com/KhronosGroup/OpenXR-SDK" target="_blank">Khronos OpenXR-SDK repo on GitHub</a>.
 
-### Include preview OpenXR loader source
+## Using preview extensions
 
-If you're interested to try out some of the available `MSFT_preview` extensions listed in the [Roadmap](openxr.md#roadmap), you can pull in the preview Mixed Reality OpenXR loader sources to build the preview loader yourself.
+The `MSFT_preview` extensions listed in the [extension roadmap](openxr.md#roadmap) are experimental vendor extensions being previewed to gather feedback.  These extensions are for developer devices only and will be removed when the real extension ships.
 
-Follow the instructions above for [including the official OpenXR loader source](#include-official-openxr-loader-source) and then replace the OpenXR headers in your project with the [preview headers from the Mixed Reality OpenXR repo](https://github.com/microsoft/OpenXR-MixedReality/tree/master/openxr_preview/include/openxr).
+If you're interested to try out the available `MSFT_preview` extensions, go through the following steps to update your project:
+1. Follow either of the approaches above to integrate an OpenXR loader into your project.
+1. Replace the standard OpenXR headers in your project with the <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/openxr_preview/include/openxr" target="_blank">preview headers from the Mixed Reality OpenXR repo on GitHub</a>.
 
-You can find [documentation for these preview extensions and samples of how to use them](https://github.com/Microsoft/OpenXR-MixedReality#openxr-preview-extensions) in that repo as well.
+To then activate preview extensions on your target HoloLens 2 or desktop PC:
+  1. Enable Windows Device Portal on the target device:
+     * If your target device is a HoloLens 2 device, [follow these instructions](using-the-windows-device-portal.md) on the target device.  Note that this requires a physical headset, as a known issue in the HoloLens 2 emulator will prevent the UI in the next step from appearing in the emulator.
+     * If your target device is a desktop PC with an immersive headset peripheral attached, <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#set-up-device-portal-on-windows-desktop" target="_blank">follow these instructions</a> on the target desktop PC.
+  1. Navigate to the **OpenXR** tab in the left pane and enable **Use latest preview OpenXR runtime**.  This enables the preview runtime on your device, which has preview extensions activated.
 
-Note that `MSFT_preview` extensions are for developers only and will be removed when the real extension ships.  To preview them as a developer, you can enable "Use latest preview OpenXR runtime" on the OpenXR page of [Device Portal](using-the-windows-device-portal.md) on the target device.
+See the <a href="https://github.com/Microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">Mixed Reality OpenXR repo</a> for documentation of these preview extensions and samples of how to use them.
 
 ## Troubleshooting
 
