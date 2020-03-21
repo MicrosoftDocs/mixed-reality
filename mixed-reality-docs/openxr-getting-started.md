@@ -80,7 +80,7 @@ To see an example of the OpenXR API in action, check out the <a href="https://gi
 
 If you want to build the loader yourself, for example to avoid the extra loader .DLL, you can pull the official Khronos OpenXR loader sources into your project.  This will give you access to OpenXR 1.0 core features, plus published `KHR`, `EXT` and `MSFT` extensions.
 
-To get started here, follow the instructions in the <a href="https://github.com/KhronosGroup/OpenXR-SDK" target="_blank">Khronos OpenXR-SDK repo on GitHub</a>.  The build instructions there require CMake - if you are using Visual Studio.
+To get started here, follow the instructions in the <a href="https://github.com/KhronosGroup/OpenXR-SDK" target="_blank">Khronos OpenXR-SDK repo on GitHub</a>.  The project is set up to build with CMake - if you are using MSBuild, you will need to copy to the code into your own project.
 
 ## Using preview extensions
 

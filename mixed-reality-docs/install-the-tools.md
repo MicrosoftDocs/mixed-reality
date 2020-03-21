@@ -69,7 +69,7 @@ We recommend installing the Unity game engine as the easiest way to get started 
         [**Native (OpenXR)**](openxr-getting-started.md)<br>
         OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from many vendors that span across the mixed reality spectrum.  The <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.<br>
         <br>
-        <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">**Native WinRT templates**</a><br>
+        <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">**Native (WinRT)**</a><br>
         The <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">Windows Mixed Reality native app templates</a> provide all of the essentials you need to start writing a mixed reality app using DirectX with native APIs. Includes a rendering loop (or "game loop"), a DeviceResources helper class to manage the Direct3D device and context, and a simple example hologram renderer. Available for Direct3D11 and Direct3D 12.<br>
         <br>
         See the [Native development overview](directx-development-overview.md) to get started with native app development using WinRT or OpenXR for HoloLens 2 or Windows Mixed Reality immersive headsets.
