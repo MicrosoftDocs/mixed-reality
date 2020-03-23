@@ -13,7 +13,9 @@ ms.localizationpriority: high
 
 This article builds on the discussion outlined in [performance recommendations for mixed reality](understanding-performance-for-mixed-reality.md) but focuses on learnings specific to the Unity engine environment.
 
-It is also highly advisable that developers review the [recommended environment settings for Unity article](Recommended-settings-for-unity.md). This article contains content with some of the most important scene configurations for building performant Mixed Reality apps. Some of these recommended settings are highlighted below, as well.
+## Use recommended Unity project settings
+
+The most important first step when optimizing performance of mixed reality apps in Unity is to be sure you are using the [recommended environment settings for Unity](recommended-settings-for-unity.md). That article contains content with some of the most important scene configurations for building performant Mixed Reality apps. Some of these recommended settings are highlighted below, as well.
 
 ## How to profile with Unity
 
