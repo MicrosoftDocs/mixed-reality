@@ -12,7 +12,7 @@ keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engin
 
 # OpenXR app best practices
 
-You can see an example of the best practices below in BasicXrApp's [OpenXRProgram.cpp](https://github.com/microsoft/OpenXR-SDK-VisualStudio/blob/master/samples/BasicXrApp/OpenXrProgram.cpp) file. The Run() function at the beginning captures a typical OpenXR app code flow from initialization to the event and rendering loop.
+You can see an example of the best practices below in <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a>'s OpenXRProgram.cpp file. The Run() function at the beginning captures a typical OpenXR app code flow from initialization to the event and rendering loop.
 
 ## Best practices for visual quality and stability
 
