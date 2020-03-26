@@ -70,7 +70,7 @@ If you build the updated application to two HoloLens devices, you can now achiev
 2. On HoloLens device 1: Start Azure Session.
 3. On HoloLens device 1: Create Azure Anchor (creates anchors at the location of the Rocket Launcher experience).
 4. On HoloLens device 1: Share Azure Anchor ID to Network.
-5. On HoloLens device 2: Restart the application.
+5. On HoloLens device 2: Start the application.
 6. On HoloLens device 2: Get Shared Anchor ID from Network (fetches the anchor ID just shared from HoloLens device 1).
 7. On HoloLens device 2: Start Azure Session.
 8. On HoloLens device 2: Find Azure Anchor (positions the Rocket Launcher experience at the location from step 3).

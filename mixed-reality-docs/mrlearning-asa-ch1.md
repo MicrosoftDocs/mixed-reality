@@ -42,13 +42,13 @@ In the third tutorial, [Displaying Azure Spatial Anchor feedback](mrlearning-asa
 > The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating the Unity project
-<!-- TODO: Consider renaming to 'Creating and preparing the Unity scene and project'-->
+<!-- TODO: Consider renaming to 'Creating and preparing the Unity project'-->
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
 For this, first follow the [Initializing your project and first application](mrlearning-base-ch1.md), excluding the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions, which includes the following steps:
 
-1. [Create new Unity project](mrlearning-base-ch1.md#create-new-unity-project) and give it a suitable name, for example, *MRTK Tutorials*.
+1. [Create new Unity project](mrlearning-base-ch1.md#create-new-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
 
 2. [Configure the Unity project for Windows Mixed Reality](mrlearning-base-ch1.md#configure-the-unity-project-for-windows-mixed-reality)
 
