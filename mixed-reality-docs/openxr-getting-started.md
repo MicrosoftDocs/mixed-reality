@@ -47,7 +47,7 @@ If using the emulator, the easiest way to install the Mixed Reality OpenXR Devel
 
 Be sure to [install the tools](install-the-tools.md) you'll need for OpenXR development if you haven't already.
 
-The <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
+The <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
 
 Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is 100% the same!
 
@@ -74,7 +74,7 @@ To add an OpenXR.Loader NuGet package reference to your Visual Studio C++ soluti
 1. Click OK to accept the changes to your project.
 1. Add `#include <openxr/openxr.h>` to a source file to start using the OpenXR API.
 
-To see an example of the OpenXR API in action, check out the <a href="https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> sample app.
+To see an example of the OpenXR API in action, check out the <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> sample app.
 
 ### Include official OpenXR loader source
 
@@ -96,7 +96,7 @@ To then activate preview extensions on your target HoloLens 2 or desktop PC:
      * If your target device is a desktop PC with an immersive headset peripheral attached, <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#set-up-device-portal-on-windows-desktop" target="_blank">follow these instructions</a> on the target desktop PC.
   1. Navigate to the **OpenXR** tab in the left pane and enable **Use latest preview OpenXR runtime**.  This enables the preview runtime on your device, which has preview extensions activated.
 
-See the <a href="https://github.com/Microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">Mixed Reality OpenXR repo</a> for documentation of these preview extensions and samples of how to use them.
+See the <a href="https://github.com/microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">Mixed Reality OpenXR repo</a> for documentation of these preview extensions and samples of how to use them.
 
 ## Troubleshooting
 

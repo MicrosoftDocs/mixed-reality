@@ -263,7 +263,7 @@ On the **Hand Interaction Touch (Script)** component, click the small **+** icon
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-1.png)
 
-Navigate to **Assets** > **MixedRealityToolkit.SDK** > **StandardAssets** > Materials to see audio clips provided with the MRTK, and then assign a suitable audio clip to the **Audio Clip** field, for example, the MRTK_Gem audio clip:
+Navigate to **Assets** > **MixedRealityToolkit.SDK** > **StandardAssets** > **Audio** to see audio clips provided with the MRTK, and then assign a suitable audio clip to the **Audio Clip** field, for example, the MRTK_Gem audio clip:
 
 ![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-2.png)
 

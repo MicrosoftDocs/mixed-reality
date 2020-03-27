@@ -49,6 +49,9 @@ If you build the updated application to your HoloLens, you can now persist Azure
 7. Start Azure Session.
 8. Find Azure Anchor (positions the Rocket Launcher experience at the location from step 3).
 
+> [!NOTE]
+> To fully restart the application, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching the application from the Start menu. For additional details, you can refer to the [Using apps on HoloLens](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens) documentation.
+
 ## Share Azure Anchors between multiple devices
 
 In this section, you will learn how to share the Azure Anchor ID between multiple devices. This will allow multiple devices to query Azure for the same anchor ID, allowing the anchored holograms to be spatially aligned. Spatial alignment, i.e. seeing the same holograms in the same physical location between multiple devices, is key to local shared experiences in the HoloLens 2.
@@ -70,7 +73,7 @@ If you build the updated application to two HoloLens devices, you can now achiev
 2. On HoloLens device 1: Start Azure Session.
 3. On HoloLens device 1: Create Azure Anchor (creates anchors at the location of the Rocket Launcher experience).
 4. On HoloLens device 1: Share Azure Anchor ID to Network.
-5. On HoloLens device 2: Restart the application.
+5. On HoloLens device 2: Start the application.
 6. On HoloLens device 2: Get Shared Anchor ID from Network (fetches the anchor ID just shared from HoloLens device 1).
 7. On HoloLens device 2: Start Azure Session.
 8. On HoloLens device 2: Find Azure Anchor (positions the Rocket Launcher experience at the location from step 3).
