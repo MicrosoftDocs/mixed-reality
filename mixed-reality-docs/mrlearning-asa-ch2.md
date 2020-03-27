@@ -50,7 +50,7 @@ If you build the updated application to your HoloLens, you can now persist Azure
 8. Find Azure Anchor (positions the Rocket Launcher experience at the location from step 3).
 
 > [!NOTE]
-> To fully restart the application, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching the application from the Start menu. For additional details, you can refer to the [Using apps on HoloLens](https://docs.microsoft.com/en-us/hololens/holographic-home#using-apps-on-hololens) documentation.
+> To fully restart the application, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching the application from the Start menu. For additional details, you can refer to the [Using apps on HoloLens](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens) documentation.
 
 ## Share Azure Anchors between multiple devices
 
