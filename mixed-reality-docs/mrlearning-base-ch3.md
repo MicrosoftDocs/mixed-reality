@@ -34,7 +34,7 @@ In this tutorial, we will review the implementation of the Orbital Solver and th
 In this section, you will enhance the button collection you created in the previous tutorial so it follows the user's gaze direction. Additionally, you will also configure the Solver so the button collection is always:
 
 * Rotated parallel to the user's reading direction, for natural left to right reading
-* Positioned slightly below the user horizontal gaze direction, so it's not obstructing the other objects you will add later in this tutorial
+* Positioned below the user horizontal gaze direction, so it's not obstructing the other objects you will add later in this tutorial
 * Positioned approximately a half arm's-length from the user, so the buttons can easily be pressed
 
 For this, you will use the **Orbital Solver** which locks the object to a specified position and offset from the referenced object.
