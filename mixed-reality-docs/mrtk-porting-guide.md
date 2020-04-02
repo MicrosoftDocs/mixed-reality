@@ -72,7 +72,7 @@ After ingesting the relevant DLLs, build a Visual Studio solution from Unity and
 Please read the following for more information on using MRTK version 2:
 - [MRTK Landing Page](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 - [Getting started with MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-- [MRTK Hands](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSystem/HandTracking.html)
+- [MRTK Hands](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
 - [MRTK Eye Tracking](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
 
 ### Prepare for the migration
