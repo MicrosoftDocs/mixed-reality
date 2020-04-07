@@ -11,61 +11,103 @@ ms.localizationpriority: high
 
 # 3. Connecting multiple users
 
-In this lesson, we learn how to connect multiple users as part of a live shared experience. By the end of this lesson, you'll be able to open the application on multiple devices and see the avatar, represented by a sphere for each person that joins.
+In this tutorial, you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
 
 ## Objectives
 
-* Configure PUN within your application
-* Configure players
 * Learn how to connect multiple users in a shared experience
 
-## Instructions
+## Preparing the scene
 
-1. In the Assets->Resources->Prefabs folder of the Project panel, drag and drop the NetworkLobby prefab into the hierarchy as shown in the image below.
+In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-    ![Module3Chapter3step1im](images/module3chapter3step1im.PNG)
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder. While holding down the CTRL button, click on **DebugWindow**, **NetworkLobby**, and **SharedPlayground** to select the three prefabs:
 
-2. When you expand NetworkLobby, you'll see a child object called NetworkRoom. With NetworkRoom selected, go into the Inspector panel and click Add Component. Search for PhotonView and add the component.
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section1-step1-1.png)
 
-    ![Module3Chapter3tep2im](images/module3chapter3step2im.PNG)
+With the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-3. Create a new empty game object in the hierarchy. Right-click in the hierarchy and select Empty from the Context menu. Ensure the positioning is set to x =0, y=0, z=0 and name the object, PhotonUser.
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section1-step1-2.png)
 
-    ![Module3Chapter3step3im](images/module3chapter3step3im.PNG)
+## Creating the user prefab
 
-4. Click Add Component and type Generic Net Sync. Select the Generic Net Sync class. When the class appears, click the User check box to turn it on.
+In this section, you will create a prefab that will be used to represent the users in the shared experience.
 
-    ![module3chapter3updateStep4im](images/module3chapter3updateStep4im.png)
+### 1. Create and configure the user
 
-5. Click Add Component again, and type Photon View. Select the Photon View class that appears in the drop-down list.
+In the Hierarchy window, right-click on an empty area and select **Create Empty** to add an empty object to your scene, name the object **PhotonUser**, and configure it as follows:
 
-    ![module3chapter3updateStep5im](images/module3chapter3updateStep5im.png)
+* Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0:
 
-6. Click the File icon for the Generic Net Sync class. Drag and drop it in the Photon View's Observed Components field.
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-1.png)
 
-    ![module3chapter3updateStep6im.png](images/module3chapter3updateStep6im.png)
+With the **PhotonUser** object still selected, in the Inspector window, use the **Add Component** button to add the **Photon User (Script)** component to the PhotonUser object:
 
-7. Next, we create spheres to represent each person that joins a shared experience. Right-click the PhotonUser object you just created, scroll-down to "3D Object and click Sphere. This will create a sphere game object as a child of the PhotonUser object.
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-2.png)
 
-    ![Module3Chapter3step4im](images/module3chapter3step4im.PNG)
+In the Inspector window, use the **Add Component** button to add the **Generic Net Sync (Script)** component to the PhotonUser object and configure it as follows:
 
-8. Scale the sphere down to x=0.06, y=0.06, ad z=0.06.
+* Check the **Is User** checkbox
 
-    ![Module3hapter3step5im](images/module3chapter3step5im.PNG)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-3.png)
 
-9. Drag the PhotonUser game object into the Prefabs folder in the Project panel and then delete it from the scene. You have now created a prefab that can be used when spawning or instantiating new players in a shared experience.
+In the Inspector window, use the **Add Component** button to add the **Photon View (Script)** component to the PhotonUser object and configure it as follows:
 
-    ![Module3Chapter3step6im](images/module3chapter3step6im.PNG)
+* To the **Observed Components** field, assign the Generic Net Sync (Script) component
 
-    >[!NOTE]
-    >Ensure that the game object has successfully copied into the Prefabs folder before deleting it from your hierarchy.
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-4.png)
 
-10. Create a new object in the hierarchy by following the instructions in Step 3 and name it SharedPlayground. Then, click Add Component and search for generic network manager.  Click it again to add the Generic Network Manager component. Change the position of the object to x=0, y=0, and z =0.
+### 2. Create the avatar
 
-    ![Module3Chapter3step7im](images/module3chapter3step7im.PNG)
+In the Hierarchy window, right-click on the **PhotonUser** object and select **3D Object** > **Sphere** to create a sphere object as a child of the PhotonUser object and configure it as follows:
+
+* Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0
+* Change the Transform **Scale** to a suitable size, for example, X = 0.15, Y = 0.15, Z = 0.15
+
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step2-1.png)
+
+### 3. Create the prefab
+
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder:
+
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-1.png)
+
+With the Resources folder still selected, **click-and-drag** the **PhotonUser** object from the Hierarchy window into the **Resources** folder to make the PhotonUser object a prefab:
+
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-2.png)
+
+In the Hierarchy window, right-click on the **PhotonUser** object and select **Delete** to remove it from the scene:
+
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-3.png)
+
+## Configuring PUN to instantiate the user prefab
+
+In this section, you will configure the project to use the PhotonUser prefab you created in the previous section.
+
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder.
+
+In the Hierarchy window, expand the **NetworkLobby** object and select the **NetworkRoom** child object, then in the Inspector window, locate the **Photon Room (Script)** component and configure it as follows:
+
+* To the **Photon User Prefab** field, assign the **PhotonUser** prefab from the Resources folder
+
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section3-step1-1.png)
+
+## Trying the experience with multiple users
+
+If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
+
+<!-- TODO: Replace with animated -->
+![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section4-step1-1.gif)
+
+> [!TIP]
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions.
+
+> [!CAUTION]
+> The application needs to connect to Photon, so make sure your computer/device is connected to the internet.
 
 ## Congratulations
 
-Once all the steps above are complete and the build process is also complete, press the Play button and connect your HoloLens 2. You should see a sphere moving around as you move your head. This will be shown for any user that joins your Unity project!
+You have successfully configured your project to allow multiple users to connect to the same experience and see each other's movements. In the next tutorial, you will implement functionality so that the movements of objects are also shared across multiple devices.
 
+<!-- TODO: Change -->
 [Next Lesson: 4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
