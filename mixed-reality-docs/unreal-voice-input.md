@@ -14,7 +14,7 @@ To enable speech recognition on HoloLens, the developer needs to enable “Micro
 
 ![Windows Speech recognition settings](images/unreal/speech-recognition-settings.png)
 
-It’s recommended to enable Online speech recognition too for the best possible quality of the service. Technical details for speech recognition on HoloLens can be found [here](https://docs.microsoft.com/en-us/windows/mixed-reality/voice-input)
+It’s recommended to enable Online speech recognition too for the best possible quality of the service. Technical details for speech recognition on HoloLens can be found [here](voice-input.md)
 
 Then user will see a dialog about enabling the microphone when the application first starts. If a user selects Yes, the application will begin getting voice input.
 
