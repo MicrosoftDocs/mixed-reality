@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: HoloLens, emulator
 ---
 
-
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Emulator-Overview]
 
 # Using the HoloLens Emulator
 
