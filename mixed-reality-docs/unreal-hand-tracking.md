@@ -14,7 +14,7 @@ The hand tracking system uses a person’s palms and fingers as input to Unreal.
 
 ## Hand Pose
 
-Using the hand pose, developers can track the hands and fingers of the active user as input. This system is exposed through both Blueprints and C++. Technical details are in the corresponding WinRT class [windows.perception.people.handpose](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handpose) This Unreal API provides the data in the format of Unreal’s coordinate system and ticks are synchronised with the Unreal Engine.
+Using the hand pose, developers can track the hands and fingers of the active user as input. This system is exposed through both Blueprints and C++. Technical details are in the corresponding WinRT class [Windows.Perception.People.HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) This Unreal API provides the data in the format of Unreal’s coordinate system and ticks are synchronised with the Unreal Engine.
 
 ### Enum
 
@@ -59,7 +59,7 @@ enum class EWMRHandKeypoint : uint8
 
 ![Hand Skeleton](images/hand-skeleton.png)
 
-The numerical values can be found in the table [windows.perception.people.handjointkind](https://docs.microsoft.com/en-us/uwp/api/windows.perception.people.handjointkind)
+The numerical values can be found in the table [Windows.Perception.People.HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind)
  
 ### Functions
 
@@ -183,7 +183,7 @@ And overwrite On Add/Update/Remove Tracked Geometry with code like the below:
  
 ## Hand Rays
 
-Developers can use a hand ray as a pointing device. The system is available in C++ and Blueprint. Technically it exposes [windows.ui.input.spatial.spatialpointerinteractionsourcepose](https://docs.microsoft.com/en-us/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose)
+Developers can use a hand ray as a pointing device. The system is available in C++ and Blueprint. Technically it exposes [Windows.UI.Input.Spatial.SpatialPointerInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose)
 
 It’s important to mention that since the results of all the functions changes every frame, they are all made callable. For more information about pure vs impure or callable functions, see [that](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)
 
@@ -272,7 +272,7 @@ Returns the tracking status in this frame.
 
 ## Gestures
 
-The Hololens 2 can track spatial gestures. Details about these gestures are [here](https://docs.microsoft.com/en-us/hololens/hololens2-basic-usage) A developer can capture them as input to their mixed reality application. 
+The Hololens 2 can track spatial gestures. Details about these gestures are [here](https://docs.microsoft.com/hololens/hololens2-basic-usage) A developer can capture them as input to their mixed reality application. 
 
 The C++ function is in "WindowsMixedRealitySpatialInputFunctionLibrary.h"
 
