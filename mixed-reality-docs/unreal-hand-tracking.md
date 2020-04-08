@@ -91,15 +91,14 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransfo
 
 This function returns spatial data of the hand. The data updates every frame, inside a frame the returned values are cached. It is not recommended to have heavy logic on this function for performance reasons. 
 
-* **Hand** –- hand of the user, may be left or right
-* **Keypoint** –- the bone of the hand. 
-* **Transform** –- coordinates and orientation of bone’s base. To get the transform data for the end of a bone, the base of the next bone should be requested. A special Tip bone gives end of distal. 
-* **Radius** —- radius of the base of the bone.
-* **Return Value** —- true if the bone is tracked this frame, false if the bone is not tracked.
+* **Hand** – hand of the user, may be left or right
+* **Keypoint** – the bone of the hand. 
+* **Transform** – coordinates and orientation of bone’s base. To get the transform data for the end of a bone, the base of the next bone should be requested. A special Tip bone gives end of distal. 
+* **Radius** — radius of the base of the bone.
+* **Return Value** — true if the bone is tracked this frame, false if the bone is not tracked.
 
 ## Hand Live Link Animation
-Hand poses are exposed to Animation using the Live Link plugin. The plugin documentation is [here]
-(https://docs.unrealengine.com/en-US/Engine/Animation/LiveLinkPlugin/index.html)
+Hand poses are exposed to Animation using the Live Link plugin. The plugin documentation is [here](https://docs.unrealengine.com/en-US/Engine/Animation/LiveLinkPlugin/index.html)
 
 If the Windows Mixed Reality and Live Link plugins are enabled, go to **Window > Live Link** to open the Live Link editor window. Click the **+ Source button** and enable Windows Mixed Reality Hand Tracking Source
 
@@ -211,7 +210,7 @@ enum class EHMDInputControllerButtons : uint8
 enum class EHMDTrackingStatus : uint8
 {
 	NotTracked,
-//......
+	//......
 	Tracked
 };
 ```
@@ -231,13 +230,13 @@ struct FPointerPoseInfo
 	EHMDTrackingStatus TrackingStatus;
 };
 ```
-* **Origin** –– origin of the hand
-* **Direction** –– direction of the hand
-* **Up** –– up vector of the hand
-* **Orientation** –– orientation quaternion 
-* **Tracking Status** –– current tracking status
+* **Origin** – origin of the hand
+* **Direction** – direction of the hand
+* **Up** – up vector of the hand
+* **Orientation** – orientation quaternion 
+* **Tracking Status** – current tracking status
 
-###Functions
+### Functions
 
 All the functions should be callable on every frame for continuous monitoring. 
 
