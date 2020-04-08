@@ -197,6 +197,7 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
+### [Unreal Gaze Input](unreal-gaze-input.md)
 ## WebVR
 ### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
 ## Native
