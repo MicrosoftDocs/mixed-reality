@@ -197,7 +197,6 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
-### [Unreal Gaze Input](unreal-gaze-input.md)
 ### [Unreal Hand tracking](unreal-hand-tracking.md)
 ### [Unreal Voice Input](unreal-voice-input.md)
 ## WebVR
