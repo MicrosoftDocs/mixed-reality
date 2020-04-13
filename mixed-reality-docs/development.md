@@ -39,9 +39,9 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
         Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.	
     :::column-end:::
     :::column:::	
-        [![WebVR](images/WebVR_logo.png)](development.md#webvr)<br>
-        **[WebVR](development.md#webvr)**<br>
-        WebVR is an open specification that makes it possible to experience VR in your browser.	
+        [![JavaScript](images/web-logo.png)](development.md#JavaScript)<br>
+        **[JavaScript](development.md#javascript)**<br>
+        JavaScript and WebXR Device API is an open specification that makes it possible to experience Mixed Reality in your browser in any platform.	
     :::column-end:::		
     :::column:::	
         [![Native](images/VisualStudio-small_logo.png)](development.md#native)<br>
@@ -95,10 +95,10 @@ Learn how to build a mixed reality app using Unreal.
 
 ---
 
-## WebVR	
+## JavaScript	
 
-### [Babylon development overview](https://doc.babylonjs.com/)	
-Learn how to build a mixed reality app with Babylon. We recommend that you take time to explore the Babylon tutorials.
+### [JavaScript development overview](javascript-development-overview.md)	
+Learn how to build a mixed reality app using JavaScript for any platform.
 
 <br>
 

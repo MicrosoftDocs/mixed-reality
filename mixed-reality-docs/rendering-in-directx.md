@@ -1,7 +1,7 @@
 ---
 title: Rendering in DirectX
 description: Explains holographic rendering for Windows Mixed Reality.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article

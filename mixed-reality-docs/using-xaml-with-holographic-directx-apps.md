@@ -1,7 +1,7 @@
 ---
 title: Using XAML with holographic DirectX apps
 description: Explains the impact of switching between 2D XAML views and immersive views in your DirectX app, and how to make efficient use of both a XAML view and immersive view.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article

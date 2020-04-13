@@ -1,7 +1,7 @@
 ---
 title: Local anchor transfers in Unity
 description: Transfer anchors between multiple HoloLens devices in a Unity application.
-author: fieldsJacksonG
+author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article

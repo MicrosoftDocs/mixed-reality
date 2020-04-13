@@ -1,7 +1,7 @@
 ---
 title: Holographic Remoting Version History
 description: Version History for Holographic Remoting on HoloLens 2.
-author: FlorianBagarMicrosoft
+author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article

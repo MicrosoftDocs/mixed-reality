@@ -1,7 +1,7 @@
 ---
 title: Spatial mapping in DirectX
 description: Explains how to implement spatial mapping in your DirectX app. This includes a detailed explanation of the spatial mapping sample application that is included with the Universal Windows Platform SDK.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article

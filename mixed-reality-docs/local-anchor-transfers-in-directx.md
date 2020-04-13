@@ -1,7 +1,7 @@
 ---
 title: Local anchor transfers in DirectX
 description: Explains how to synchronize two HoloLens devices by transferring spatial anchors.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article

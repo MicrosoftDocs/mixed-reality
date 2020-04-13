@@ -1,7 +1,7 @@
 ---
 title: Understanding Performance for Mixed Reality
 description: Advanced topics and details on optimizing performance for Windows Mixed Reality Apps
-author: Troy-Ferrell
+author: troy-ferrell
 ms.author: trferrel
 ms.date: 3/26/2019
 ms.topic: article
