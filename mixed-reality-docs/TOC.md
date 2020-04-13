@@ -199,9 +199,9 @@
 ### [Unreal development overview](unreal-development-overview.md)
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
-### [WebXR](webxr-overview)
+### [WebXR](webxr-overview.md)
 ### [WebVR](webvr-overview.md)
-### [BabylonJS](babylonjs-overview)
+### [BabylonJS](babylonjs-overview.md)
 ## Native
 ### [Native development overview](directx-development-overview.md)
 ### OpenXR
