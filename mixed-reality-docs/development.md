@@ -39,7 +39,7 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
         Production-ready support for HoloLens 2 will also be included in Unreal Engine 4.23.	
     :::column-end:::
     :::column:::	
-        [![JavaScript](images/web-logo.png)](development.md#JavaScript)<br>
+        [![JavaScript](images/web-logo.png)](development.md#javascript)<br>
         **[JavaScript](development.md#javascript)**<br>
         JavaScript and WebXR Device API is an open specification that makes it possible to experience Mixed Reality in your browser in any platform.	
     :::column-end:::		
