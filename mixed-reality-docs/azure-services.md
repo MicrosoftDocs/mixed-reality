@@ -26,9 +26,9 @@ Build multi-user, spatially aware mixed reality applications using Spatial Ancho
 
 ![ Remote rendering image](images/RemoteRendering.jpg)
 
-In scenarios where every detail matters—industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more—3D visualization brings that detail to life. It’s what helps designers, engineers, doctors, and students better understand complex information and make the right call.
+In scenarios where every detail matters—industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more—3D visualization brings that detail to life. It's what helps designers, engineers, doctors, and students better understand complex information and make the right call.
 
-Today, to run high-quality 3D models on mobile devices and mixed reality headsets, you often need to “decimate” 3D models and simplify them enough to run on target hardware. But this simplification can result in a loss of important detail that’s needed in key business and design decisions.
+Today, to run high-quality 3D models on mobile devices and mixed reality headsets, you often need to "decimate" 3D models and simplify them enough to run on target hardware. But this simplification can result in a loss of important detail that's needed in key business and design decisions.
 
 Bring interactive, high-quality 3D models to untethered devices with every detail intact and no compromise on quality using Azure Remote Rendering Preview.
 
@@ -58,8 +58,6 @@ Bring interactive, high-quality 3D models to untethered devices with every detai
         Recognize, identify, caption, index, and moderate your pictures, videos, and digital ink content.Learn how Vision makes it possible for apps and services to accurately identify and analyze content within images, videos, and digital ink.
     :::column-end:::
 :::row-end:::
-
-
 
 
 ## See also
