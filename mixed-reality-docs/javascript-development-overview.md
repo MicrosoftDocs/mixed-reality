@@ -15,7 +15,7 @@ keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mix
 
 ## Mixed Reality applications on the web
 
-Mixed Reality features are available on the web by the use of [WebXR Device APIs](mixed-reality-docs/webxr-overview.md) and [deprecated WebVR APIs](mixed-reality-docs/webvr-overview.md). For browsers that do not support full WebXR features, you can add [WebXR Polyfills](https://github.com/immersive-web/webxr-polyfill) to your website.
+Mixed Reality features are available on the web by the use of [WebXR Device APIs](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) and [deprecated WebVR APIs]([WebXR Overview](webxr-overview.md). For browsers that do not support full WebXR features, you can add [WebXR Polyfills](https://github.com/immersive-web/webxr-polyfill) to your website.
 
 ## What is WebXR Polyfill
 
@@ -55,7 +55,7 @@ With the help of few JavaScript libraries you can write your mixed reality exper
 
 ## See Also
 
-* [WebXR Overview](webxr-overview)
+* [WebXR Overview](webxr-overview.md)
 * [WebXR Device API specification](https://immersive-web.github.io/webxr/)
 * [WebXR Device API documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 * [Immersiveweb.dev](https://immersiveweb.dev/)
@@ -65,4 +65,4 @@ With the help of few JavaScript libraries you can write your mixed reality exper
 * [Immersive Web W3C Github](https://github.com/immersive-web)
 * [WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
 * [Gamepad API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
-* [WebVR Overview](webvr-overview)
+* [WebVR Overview](webvr-overview.md)
