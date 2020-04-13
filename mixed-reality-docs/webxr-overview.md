@@ -8,27 +8,30 @@ ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 video, 360 videos, 360 photo, 360 photos, 360 content, immersive web, immersiveweb, IW
 ---
 
-# Using WebXR with Windows Mixed Reality
+# WebXR Overview
 
-updated to reflect changes to specifications to bring alignment and consistency with other browsers.
+## What is WebXR?
 
-## Creating WebVR content for Windows Mixed reality immersive headsets
+The **WebXR device API** is for accessing **virtual reality (VR)** and **augmented reality (AR)** devices, including **sensors** and **head-mounted displays** on the **Web**. WebXR device API is currently available on Microsoft Edge and Chrome version 79 and later versions supports WebXR as a default. You can check the latest browser support status for WebXR at [caniuse.com](https://caniuse.com/#search=webxr).
 
-WebVR 1.1 is available in Microsoft Edge beginning with the Windows 10 Fall Creators Update. Developers can now use this API to create immersive VR experiences on the web.
+Learn more about the [Windows Mixed Reality and the new Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)in [What's new](https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide) section.
 
-The WebVR API provides HMD pose data to the page which can be used to render a stereo WebGL scene back to the HMD. Details on API support is available on the [Microsoft Edge Platform Status page](https://developer.microsoft.com/microsoft-edge/platform/status/webvr/). The WebVR API surface area is present at all times within Microsoft Edge. However, a call to getVRDisplays() will only return a headset if either a headset is plugged in or the simulator has been turned on.
+## Viewing WebXR
 
-## Viewing WebVR content in Windows Mixed Reality immersive headsets
-
-Instructions for accessing WebVR content in your immersive headset can be found in the [Enthusiast's Guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr).
+To test if your browser supports WebXR, you can navigate to [WebXR Samples](https://immersive-web.github.io/webxr-samples/) in your browser.
 
 ## See Also
-<!-- * [WebVR information](https://webvr.info)
-* [WebVR specification](https://w3c.github.io/webvr/)
-* [WebVR API](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx)
+
+* [WebXR Device API specification](https://immersive-web.github.io/webxr/)
+* [WebXR Device API documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
+* [Immersiveweb.dev](https://immersiveweb.dev/)
+* [WebXR Samples](https://immersive-web.github.io/webxr-samples/)
+* [Windows Mixed Reality and the new Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
+* [Immersive Web W3C Github](https://github.com/immersive-web)
 * [WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
 * [Gamepad API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 * [Handling Lost Context in WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
 * [Pointerlock](https://www.w3.org/TR/pointerlock/)
 * [glTF](https://www.khronos.org/gltf)
-* [Using Babylon.js to enable WebVR](https://docs.microsoft.com/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game) -->
+* [Using Babylon.js to create WebXR experiences](https://doc.babylonjs.com/how_to/introduction_to_webxr)
+* [Immersive web community group](https://www.w3.org/community/immersive-web/)

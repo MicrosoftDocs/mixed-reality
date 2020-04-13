@@ -20,8 +20,10 @@ WebVR 1.1 APIs are deprecated and removed from Chrome and the new Microsoft Edge
 Instructions for accessing WebVR content in your immersive headsets with **older versions of Microsoft Edge(15-18)** can be found in the [Enthusiast's Guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr). You can check your edge version by typing "edge://version/" in your Edge browsers search bar.
 
 ## See Also
+
 * [WebXR Overview](webxr-overview.md)
 * [WebXR Device API specification](https://immersive-web.github.io/webxr/)
+* [Windows Mixed Reality and the new Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge)
 * [WebVR information](https://webvr.info)
 * [WebVR specification](https://w3c.github.io/webvr/)
 * [WebVR API](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx)

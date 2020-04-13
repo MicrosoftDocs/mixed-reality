@@ -197,13 +197,11 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
-
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview)
 ### [WebVR](webvr-overview.md)
-
-
+### [BabylonJS](babylonjs-overview)
 ## Native
 ### [Native development overview](directx-development-overview.md)
 ### OpenXR
