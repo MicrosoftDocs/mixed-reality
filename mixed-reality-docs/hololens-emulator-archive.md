@@ -1,9 +1,9 @@
 ---
 title: HoloLens Emulator archive
 description: List of released builds of the Microsoft HoloLens Emulator.
-author: hamalawi
-ms.author: moelhama
-ms.date: 3/10/2020
+author: pbarnettms
+ms.author: pbarnett
+ms.date: 4/13/2020
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions
 ---
@@ -14,6 +14,7 @@ HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side.
 
 |  Build |  Release Date |  Notes | 
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.18362.1059](https://go.microsoft.com/fwlink/?linkid=2126826) | April 13, 2020 | April 2020 HoloLens 2 build.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1056](https://go.microsoft.com/fwlink/?linkid=2121323) | March 10, 2020 | March 2020 HoloLens 2 build.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1053](https://go.microsoft.com/fwlink/?linkid=2118321) | February 11, 2020 | February 2020 HoloLens 2 build.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1044](https://go.microsoft.com/fwlink/?linkid=2114824) | January 13, 2020 | January 2020 HoloLens 2 build.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
