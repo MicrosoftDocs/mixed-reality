@@ -1,7 +1,7 @@
 ---
 title: Add holographic remoting
 description: Explains how to use Holographic Remoting to render holograms to a HoloLens over the network.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 05/24/2019
 ms.topic: article

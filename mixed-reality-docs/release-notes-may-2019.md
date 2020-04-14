@@ -41,6 +41,10 @@ We continually look to improve compatibility.  If you find your favorite classic
 
 HoloLens (1st gen) is entering Long Term Servicing (LTS) state. Future updates will focus on issue and security fixes, while maintaining feature parity with the [Windows 10 October 2018 release](release-notes-october-2018.md) for HoloLens (also known as RS5). 
 
+## Known issues
+
+We're tracking an issue that requires a monitor to be connected to the PC in order for the immersive headset to work correctly. Backpack PC users may want to use an active display adapter (or EDID emulator) to ensure their immersive headset continues to render when no PC monitor is in use. 
+
 ## Provide feedback and report issues
 
 Please use the [Feedback Hub app on your Windows 10 PC](give-us-feedback.md) or your HoloLens device to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.

@@ -1,7 +1,7 @@
 ---
 title: Getting a HolographicSpace
 description: Explains the HolographicSpace API, a core concept for holographic rendering and spatial input.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article

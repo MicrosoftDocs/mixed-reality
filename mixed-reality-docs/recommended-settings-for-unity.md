@@ -1,7 +1,7 @@
 ---
 title: Recommended settings for Unity
 description: Unity offers some behaviors specific to mixed reality that can be toggled through project settings.
-author: Troy-Ferrell
+author: troy-ferrell
 ms.author: trferrel
 ms.date: 03/26/2019
 ms.topic: article
