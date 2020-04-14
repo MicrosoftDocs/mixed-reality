@@ -44,16 +44,16 @@ If you are working with a Windows Mixed Reality headset connected to your PC, yo
 4. Enable **Developer Mode**, read the disclaimer for the setting you chose, then click Yes to accept the change.
 
 ## Deploying an app over Wi-Fi - HoloLens (1st gen)
-1. Select an **x86** build configuration for your app
-![x86 build configuration in Visual Studio](images/x86setting.png)
-2. Select **Remote Machine** in the deployment target drop-down menu
-![Remote machine deployment target in Visual Studio](images/remotemachinesetting.png)
+1. Select an **x86** build configuration for your app</br>
+![x86 build configuration in Visual Studio](images/x86setting.png)</br>
+2. Select **Remote Machine** in the deployment target drop-down menu</br>
+![Remote machine deployment target in Visual Studio](images/remotemachinesetting.png)</br>
 3. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. For C# projects, a dialog will automatically appear to configure your connection.
   a. Enter the IP address of your device in the **Address** or **Machine Name** field. Find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
-  b. Set Authentication Mode to **Universal (Unencrypted protocol)**
-  ![Remote connection dialog in Visual Studio](images/remotedeploy.png)
-4. Select **Debug > Start debugging** to deploy your app and start debugging
-![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
+  b. Set Authentication Mode to **Universal (Unencrypted protocol)**</br>
+  ![Remote connection dialog in Visual Studio](images/remotedeploy.png)</br>
+4. Select **Debug > Start debugging** to deploy your app and start debugging</br>
+![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)</br>
 5. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
 ## Deploying an app over Wi-Fi - HoloLens 2
