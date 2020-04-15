@@ -81,6 +81,9 @@ If your HoloLens IP address changes, you can change the IP address of the target
 4. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
 ## Deploying an app over USB - HoloLens 2
+
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
+
 1. Select an **ARM** or **ARM64** build configuration for your app</br>
 ![ARM64 build configuration in Visual Studio](images/arm64setting.png)</br>
 2. Select **Device** in the deployment target drop-down menu</br>
