@@ -14,6 +14,8 @@ The fastest path to building a [mixed reality app](app-views.md) is with [Unity]
 
 To get started building mixed reality apps with Unity, first [install the tools](install-the-tools.md). 
 
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
+
 ## New Unity Project with Mixed Reality Toolkit 
 
 The easiest way to develop in Unity is with the Mixed Reality Toolkit. This will help you setup with the project automatically, and provide a set of mixed reality features to accelerate your development. Please check out [Mixed Reality Toolkit v2](mrtk-getting-started.md) to learn more and get started. 
