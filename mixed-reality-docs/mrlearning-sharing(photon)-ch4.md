@@ -11,72 +11,49 @@ ms.localizationpriority: high
 
 # 4. Sharing object movements with multiple users
 
-In this Tutorial, you'll learn how to share the movements of objects so that all participants of a shared session can collaborate and view each others' interactions. This lesson builds upon the Lunar Launcher that was built as part of the [Base Module Tutorials](mrlearning-base.md).
+In this tutorial, you will learn how to share the movements of objects so that all participants of a shared experience can collaborate and view each others' interactions.
 
 ## Objectives
 
-- Bring in the lunar launcher as the 3D model to be shared
-- Configure your project to share the movements of the 3D model
-- Learn how to build a basic multi-user collaborative application
+* Configure your project to share the movements of objects
+* Learn how to build a basic multi-user collaborative application
 
-## Instructions
+## Preparing the scene
 
-1. Save the scene from the previous lesson (Control+S). You can name it HLSharedProjectMainPart4.unity so it's easier to find when you need it.
+In this section, you will prepare the scene by adding the tutorial prefab.
 
-2. From the Project window, in the Assets->Scripts folder, double-click GenericNetSync to open it in Visual Studio or which ever code editor you are using.  
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **TableAnchor** prefab on top of the **SharedPlayground** object in the Hierarchy window to add it to your scene as a child of the SharedPlayground object:
 
-    ![module3chapter4updatestep2](images/module3chapter4updatestep2.png)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial3-section1-step1-1.png)
 
-3. On Lines 34 and 38, remove "//" to activate the code for the table that you will use in this lesson. Next, save the file.
+## Configuring PUN to instantiate the objects
 
-    ![module3chapter4updatestep3](images/module3chapter4updatestep3.png)
+In this section, you will configure the project to use the RocketLauncher_Complete_Variant prefab you created in the previous section and define where it will be instantiated.
 
-4. In the Project window, double-click the PhotonRoom.cs file in the Assets->Scripts folder to open it in Visual Studio.
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder.
 
-    ![module3chapter4updatestep4](images/module3chapter4updatestep4.png)
+In the Hierarchy window, expand the **NetworkLobby** object and select the **NetworkRoom** child object, then in the Inspector window, locate the **Photon Room (Script)** component and configure it as follows:
 
-5. Just like in Step 3, we need to remove "//" to activate the code at Lines 25, 26, and 106.
+* To the **Photon User Prefab** field, assign the **PhotonUser** prefab from the Resources folder
 
-    ![module3chapter4updatestep5a](images/module3chapter4updatestep5a.png)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial3-section2-step1-1.png)
 
-    ![module3chapter4updatestep5b](images/module3chapter4updatestep5b.png)
+With the **NetworkRoom** child object still selected, in the Hierarchy window, expand the **TableAnchor** object, then in the Inspector window, locate the **Photon Room (Script)** component and configure it as follows:
 
-6. In the Hierarchy view, select the NetworkRoom object.
+* To the **Rocket Launcher Location** field, assign the **Table** child object from the Hierarchy window
 
-    ![module3chapter4updatestep6](images/module3chapter4updatestep6.png)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial3-section2-step1-2.png)
 
-7. In the Project view, navigate to Assets->Resources->Prefabs. First, drag and drop the Table prefab to the Tableprefab slot on the PhotonRoom class. Next, drag and drop the RocketLauncherCompleteVariantprefab to the Module Prefab slot on the PhotonRoom class.
+## Trying the experience with shared object movement
 
-    ![module3chapter4updatestep7](images/module3chapter4updatestep7.png)
+If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the object move in Unity when you move the object in HoloLens:
 
-    >[!NOTE]
-    >If you click one of the prefab objects and release, the inspector will switch to that object. Click, drag, drop, and release each object to its appropriate slot.
-
-8. Click the arrow to the left of MixedRealityPlayspace and move the child game object MainCamera down into the SharedPlayground prefab. Next, delete the prefab, MixedRealityPlayspace by selecting the prefab and tap "delete" on your keyboard).
-
-    ![Module3hapter4step5im](images/module3chapter4step5im.PNG)
-
-    >[!NOTE]
-    >Make sure that both the Main Camera and SharedPlayground positions are set to 0,0,0.
-
-9. Select "SharedPlayground" object and right click the mouse to choose "create empty" option to create an empty game object as a child of "SharedPlayground" game object.
-
-   ![Module3chapter4step6im](images/module3chapter4step6im.PNG)
-
-10. With the new object selected in your hierarchy, change the name of the object to TableAnchor in the Inspector panel. Also, click Add Component and search for the TableAnchor component. Select it and add it to the object.
-
-    ![Module3Chapter4step7im](images/module3chapter4step7im.PNG)
-
-11. From the Project panel in the Prefabs folder, drag the Table prefab into the "TableAnchor" child object that you just created.
-
-    ![Module3Chapter4step8im](images/module3chapter4step8im.PNG)
+<!-- TODO: Create new animated gif -->
+![mrlearning-sharing](images/mrlearning-sharing/tutorial3-section3-step1-1.gif)
 
 ## Congratulations
 
-Once this is complete, look around to find the lunar module. After this, all users that join your Unity project can move the lunar launcher around.  All movements are synchronized so that each user can see each others' interactions. These concepts serve as the fundamental building blocks for full-featured, shared collaboration experiences.
+You have successfully configured your project so object movements are synchronized and users can see the objects move when other users move the objects. In the next tutorial, you will implement functionality so the shared experience is aligned in the physical world and the users see each other in their actual physical location and so the objects appear in the same physical position and rotation for all users.
 
-Although all users are connected as part of a shared experience and can see the relative movements of objects, the application is still unable to accurately align avatars and objects so that local users were not able see each other and objects in the same place within the physical world. In order to anchor a local shared experiences, every device requires a common understanding of the physical environment. In this module, we'll achieve this by using [Azure Spatial Anchors](<https://azure.microsoft.com//services/spatial-anchors/>) (ASA) which will be implemented in the next lesson.
-
-Before proceeding to the next lesson, we'll need to complete the ASA Learning Module that covers ASA basics, Azure account and resource creation, as well as other fundamental buildings blocks required before we can integrate this into our shared experience.
-
+<!-- TODO: Change -->
 [Next Lesson: 5. Integration Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
