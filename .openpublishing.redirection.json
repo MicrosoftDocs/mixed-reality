@@ -175,6 +175,12 @@
 			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-speechsdk-ch1",
 			"redirect_document_id": true
 		}
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch5.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-sharing(photon)-ch4",
+			"redirect_document_id": true
+		}
 	]
 }
 
