@@ -1,5 +1,5 @@
 ---
-title: Multi-user capabilities tutorials - 3. Connecting multiple users
+title: Multi-user capabilities tutorials - 4. Sharing object movements with multiple users
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,80 +9,26 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 3. Connecting multiple users
+# 3. Sharing object movements with multiple users
 
-In this tutorial, you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
+In this tutorial, you will learn how to share the movements of objects so that all participants of a shared experience can collaborate and view each others' interactions.
 
 ## Objectives
 
-* Learn how to connect multiple users in a shared experience
+* Configure your project to share the movements of objects
+* Learn how to build a basic multi-user collaborative application
 
 ## Preparing the scene
 
-In this section, you will prepare the scene by adding some of the tutorial prefabs.
+In this section, you will prepare the scene by adding the tutorial prefab.
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder. While holding down the CTRL button, click on **DebugWindow**, **NetworkLobby**, and **SharedPlayground** to select the three prefabs:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **TableAnchor** prefab on top of the **SharedPlayground** object in the Hierarchy window to add it to your scene as a child of the SharedPlayground object:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section1-step1-1.png)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial3-section1-step1-1.png)
 
-With the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+## Configuring PUN to instantiate the objects
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section1-step1-2.png)
-
-## Creating the user prefab
-
-In this section, you will create a prefab that will be used to represent the users in the shared experience.
-
-### 1. Create and configure the user
-
-In the Hierarchy window, right-click on an empty area and select **Create Empty** to add an empty object to your scene, name the object **PhotonUser**, and configure it as follows:
-
-* Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0:
-
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-1.png)
-
-With the **PhotonUser** object still selected, in the Inspector window, use the **Add Component** button to add the **Photon User (Script)** component to the PhotonUser object:
-
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-2.png)
-
-In the Inspector window, use the **Add Component** button to add the **Generic Net Sync (Script)** component to the PhotonUser object and configure it as follows:
-
-* Check the **Is User** checkbox
-
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-3.png)
-
-In the Inspector window, use the **Add Component** button to add the **Photon View (Script)** component to the PhotonUser object and configure it as follows:
-
-* To the **Observed Components** field, assign the Generic Net Sync (Script) component
-
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-4.png)
-
-### 2. Create the avatar
-
-In the Hierarchy window, right-click on the **PhotonUser** object and select **3D Object** > **Sphere** to create a sphere object as a child of the PhotonUser object and configure it as follows:
-
-* Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0
-* Change the Transform **Scale** to a suitable size, for example, X = 0.15, Y = 0.15, Z = 0.15
-
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step2-1.png)
-
-### 3. Create the prefab
-
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder:
-
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-1.png)
-
-With the Resources folder still selected, **click-and-drag** the **PhotonUser** object from the Hierarchy window into the **Resources** folder to make the PhotonUser object a prefab:
-
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-2.png)
-
-In the Hierarchy window, right-click on the **PhotonUser** object and select **Delete** to remove it from the scene:
-
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-3.png)
-
-## Configuring PUN to instantiate the user prefab
-
-In this section, you will configure the project to use the PhotonUser prefab you created in the previous section.
+In this section, you will configure the project to use the RocketLauncher_Complete_Variant prefab you created in the previous section and define where it will be instantiated.
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder.
 
@@ -90,24 +36,22 @@ In the Hierarchy window, expand the **NetworkLobby** object and select the **Net
 
 * To the **Photon User Prefab** field, assign the **PhotonUser** prefab from the Resources folder
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section3-step1-1.png)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial3-section2-step1-1.png)
 
-## Trying the experience with multiple users
+With the **NetworkRoom** child object still selected, in the Hierarchy window, expand the **TableAnchor** object, then in the Inspector window, locate the **Photon Room (Script)** component and configure it as follows:
 
-If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
+* To the **Rocket Launcher Location** field, assign the **Table** child object from the Hierarchy window
 
-<!-- TODO: Replace with animated -->
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section4-step1-1.gif)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial3-section2-step1-2.png)
 
-> [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions.
+## Trying the experience with shared object movement
 
-> [!CAUTION]
-> The application needs to connect to Photon, so make sure your computer/device is connected to the internet.
+If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the object move in Unity when you move the object in HoloLens:
+
+![mrlearning-sharing](images/mrlearning-sharing/tutorial3-section3-step1-1.gif)
 
 ## Congratulations
 
-You have successfully configured your project to allow multiple users to connect to the same experience and see each other's movements. In the next tutorial, you will implement functionality so that the movements of objects are also shared across multiple devices.
+You have successfully configured your project so object movements are synchronized and users can see the objects move when other users move the objects. In the next tutorial, you will implement functionality so the shared experience is aligned in the physical world and the users see each other in their actual physical location and so the objects appear in the same physical position and rotation for all users.
 
-<!-- TODO: Change -->
-[Next Lesson: 4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
+[Next tutorial: 4. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch4.md)
