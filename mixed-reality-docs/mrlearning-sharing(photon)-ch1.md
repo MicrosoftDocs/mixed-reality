@@ -102,7 +102,7 @@ After you have imported the tutorial assets your Project window should look simi
 ![mrlearning-sharing](images/mrlearning-sharing/tutorial1-section4-step1-1.png)
 
 > [!NOTE]
-> After importing the MultiUserCapabilities tutorial assets package, you will see several [CS0246](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0246) errors in the Console window stating that the type or namespace is missing. This is to be expected and will be resolved in the next section when you import the Photon assets.
+> After importing the MultiUserCapabilities tutorial assets package, you will see several [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) errors in the Console window stating that the type or namespace is missing. This is to be expected and will be resolved in the next section when you import the Photon assets.
 
 ## Importing the Photon assets
 
