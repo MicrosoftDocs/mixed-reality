@@ -196,8 +196,10 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
-## WebVR
-### [Using WebVR in Edge with Windows Mixed Reality](using-webvr-in-edge-with-windows-mixed-reality.md)
+## JavaScript
+### [JavaScript development overview](javascript-development-overview.md)
+### [WebXR](webxr-overview.md)
+### [WebVR](webvr-overview.md)
 ## Native
 ### [Native development overview](directx-development-overview.md)
 ### OpenXR
@@ -232,7 +234,7 @@
 #### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
 ### Holographic remoting
 #### [Holographic Remoting Player](holographic-remoting-player.md)
-#### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
+#### [Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
 #### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
 #### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 #### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)

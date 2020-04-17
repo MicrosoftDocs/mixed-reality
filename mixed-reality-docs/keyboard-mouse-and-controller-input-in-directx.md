@@ -1,7 +1,7 @@
 ---
 title: Keyboard, mouse, and controller input in DirectX
 description: Explains how to create an app for Windows Mixed Reality that uses keyboard, mouse, and game controllers.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article

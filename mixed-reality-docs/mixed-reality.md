@@ -1,7 +1,7 @@
 ---
 title: What is mixed reality?
 description: This article defines mixed reality and demonstrates where simple AR and VR devices, as well as Windows Mixed Reality devices like Microsoft HoloLens and Windows Mixed Reality immersive headsets, sit along the mixed reality spectrum.
-author: BrandonBray
+author: brandonbray
 ms.author: branbray
 ms.date: 03/21/2018
 ms.topic: article

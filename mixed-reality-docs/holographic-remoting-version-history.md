@@ -1,7 +1,7 @@
 ---
 title: Holographic Remoting Version History
 description: Version History for Holographic Remoting on HoloLens 2.
-author: FlorianBagarMicrosoft
+author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
@@ -13,6 +13,14 @@ keywords: HoloLens, Remoting, Holographic Remoting
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.1.2 (April 5, 2020) <a name="v2.1.2"></a>
+* Fixed audio backwards compatibility issue between latest Holographic Remoting player and remote apps using version smaller than 2.1.0.
+* Fixed spatial anchor issue which unexpectedly closed the Holographic Remoting player. This issue also affects custom players.
+
+## Version 2.1.1 (March 20, 2020) <a name="v2.1.1"></a>
+* Fixed video encoding issue with remote apps when using AMD GPUs.
+* Holographic Remoting Player performance improvements.
+
 ## Version 2.1.0 (March 11, 2020) <a name="v2.1.0"></a>
 * Switched network transport to use [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) via UDP. Secure connections use [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) now. Note, the [Holographic Remoting Player](holographic-remoting-player.md) is still compatible with all previously release Holographic Remoting versions. To benefit from the new network transport both, the Holographic Remoting Player and the remote app in question, have to use version 2.1.0.
 * Added support for [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_). 
@@ -23,7 +31,7 @@ keywords: HoloLens, Remoting, Holographic Remoting
 ## Version 2.0.18 (December 17, 2019) <a name="v2.0.18"></a>
 * Added support for [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration)
 * Fixed various bugs that lead to crashes.
-* Fixed bug where a HolographicSpace.CameraAdded callback was required for a HolographicCamera to get accepted and show up as added camera in the HoloraphicFrame.
+* Fixed bug where a HolographicSpace.CameraAdded callback was required for a HolographicCamera to get accepted and show up as added camera in the HolographicFrame.
 
 ## Version 2.0.16 (November 11, 2019) <a name="2.0.16"></a>
 * Fixed deadlock in QR code tracking.

@@ -1,7 +1,7 @@
 ---
 title: Case study - Spatial sound design for HoloTour
 description: To create a truly immersive 3D virtual tour for Microsoft HoloLens, the panoramic videos and holographic scenery are only part of the formula.
-author:  JSyltebo
+author:  jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article

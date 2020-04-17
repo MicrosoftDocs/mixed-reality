@@ -1,7 +1,7 @@
 ---
 title: Case study - Looking through holes in your reality
 description: This case study explains how to implement the "magic window" effect on HoloLens, allowing the user to see behind walls, under the floor, and into virtual openings within their actual environment.
-author: EricRehmeyer
+author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article

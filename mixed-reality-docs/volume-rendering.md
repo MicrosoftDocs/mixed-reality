@@ -1,7 +1,7 @@
 ---
 title: Volume rendering
 description: Volumetric images contain rich information with opacity and color throughout the volume that cannot be easily expressed as surfaces. Learn how to efficiently render volumetric images within Windows Mixed Reality. 
-author: KevinKennedy
+author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
