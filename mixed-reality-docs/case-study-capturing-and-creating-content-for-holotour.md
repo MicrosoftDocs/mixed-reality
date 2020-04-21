@@ -1,7 +1,7 @@
 ---
-title: Case study - Capturing and creating content for HoloTour
-description: HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. 
-author: DannyAskew
+title: Case study - HoloTour
+description: HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. This case study will walk through the process of capturing and creating the content used for HoloTour.
+author: dannyaskew
 ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article
@@ -10,9 +10,9 @@ keywords: HoloTour, HoloLens, Windows Mixed Reality
 
 
 
-# Case study - Capturing and creating content for HoloTour
+# Case study - HoloTour
 
-HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. As the designers, artists, producers, audio designers, and developers working on this project found out, creating a convincingly real 3D rendering of a well-known location takes a unique blend of creative and technological wizardry.
+HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic locations around the world. As the designers, artists, producers, audio designers, and developers working on this project found out, creating a convincingly real 3D rendering of a well-known location takes a unique blend of creative and technological wizardry. This case study will walk through the process of capturing and creating the content used for HoloTour.
 
 ## The tech
 
@@ -38,7 +38,6 @@ We upgraded our rig from Velcro and cardboard to a 3D-printed camera housing and
 ![The 360° camera rig filming in Machu Picchu.](images/camera-machu-pichu-500px.png)
 
 The 360° camera rig filming in Machu Picchu. 
-
 
 ## Behind the scenes
 
@@ -74,7 +73,7 @@ Capturing 360° content is only the first step—a lot of processing is needed t
 A rough cut of Pantheon footage before stitching. 
 
 
-To stitch the videos together, we used a tool called [PTGui](http://www.ptgui.com/) and integrated it into our processing pipeline. As part of post-processing we extracted still frames from our videos and found a stitching pattern that looked good for one of those frames. We then applied that pattern to a custom plugin we wrote that allowed our video artists to fine tune and tweak the stitching pattern directly while compositing in After Effects. 
+To stitch the videos together, we used a tool called [PTGui](https://www.ptgui.com/) and integrated it into our processing pipeline. As part of post-processing we extracted still frames from our videos and found a stitching pattern that looked good for one of those frames. We then applied that pattern to a custom plugin we wrote that allowed our video artists to fine tune and tweak the stitching pattern directly while compositing in After Effects. 
 
 ![Screenshot of PTGui showing the stitched Pantheon footage.](images/stitching-tool-pantheon-500px.png)
 

@@ -63,7 +63,7 @@ The Windows Mixed Reality home does not support models with more than 64 nodes o
 
 ## Material guidelines
 
-Textures should be prepared using a PBR metal roughness workflow. Begin by creating a full set of textures including Albedo, Normal, Occlusion, Metallic, and Roughness. Windows Mixed Reality supports textures with resolutions up to 4096x4096 but its recommended that you author at 512x512. Additionally textures should be authored at resolutions in multiples of 4 as this is a requirement for the compression format applied to textures in the exporting steps outlined below. Finally, when gerating mip maps or a texture the lowest mip must be a maximum of 4x4.
+Textures should be prepared using a PBR metal roughness workflow. Begin by creating a full set of textures including Albedo, Normal, Occlusion, Metallic, and Roughness. Windows Mixed Reality supports textures with resolutions up to 4096x4096 but its recommended that you author at 512x512. Additionally textures should be authored at resolutions in multiples of 4 as this is a requirement for the compression format applied to textures in the exporting steps outlined below. Finally, when generating mip maps or a texture the lowest mip must be a maximum of 4x4.
 <br>
 
 |  Recommended Texture Size  |  Max Texture Size | Lowest Mip
@@ -92,7 +92,7 @@ Tells the shader if something is metal or not. Raw Metal = 1.0 white Non metal =
 
 ## Optimizations
 
-Windows Mixed Reality home offers a series of optimizations on top of the core glTF spec defined using custom extensions. These optimizations are required on Windows versions <= 1709 and recommended on newer versions of Windows. You can easily optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter available on GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). This tool will perform the correct texture packing and optimizations as specified below. For general usage we recommend using the WindowsMRAssetConverter, but if you need more control over the experience and would like to build your own optmization pipeline then you can refer to the detailed specification below.  
+Windows Mixed Reality home offers a series of optimizations on top of the core glTF spec defined using custom extensions. These optimizations are required on Windows versions <= 1709 and recommended on newer versions of Windows. You can easily optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter available on GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). This tool will perform the correct texture packing and optimizations as specified below. For general usage we recommend using the WindowsMRAssetConverter, but if you need more control over the experience and would like to build your own optimization pipeline then you can refer to the detailed specification below.  
 
 ### Materials
 
@@ -194,7 +194,7 @@ First, download the following tools if you don't have them already. These tools 
 
 
 ### Opening and previewing the model
-Start by opening up the glTF model in VSCode by dragging the .glTF file into the editor window. Note that if you have a .glb instead of a .glTF file you can import it into VSCode using the glTF Tools addin that you downloaded. Go to "View -> Command Palette" and then begin typing "glTF" in the command palette and select "glTF: Import from glb" which will pop up a file picker for you to import a .glb with. 
+Start by opening up the glTF model in VSCode by dragging the .glTF file into the editor window. Note that if you have a .glb instead of a .glTF file you can import it into VSCode using the glTF Tools addon that you downloaded. Go to "View -> Command Palette" and then begin typing "glTF" in the command palette and select "glTF: Import from glb" which will pop up a file picker for you to import a .glb with. 
 
 Once you've opened your glTF model you should see the JSON in the editor window. Note that you can also preview the model in a live 3D viewer using the by right clicking the file name and selecting the "glTF: Preview 3D Model" command shortcut from the right click menu. 
 
@@ -229,7 +229,7 @@ The following animation triggers semantics are supported by the Windows Mixed Re
 Once you've made the changes to your glTF model you can save it directly as glTF or you can right click the name of the file in the editor and select "glTF: Export to GLB (binary file)" to instead export a .glb. 
 
 ### Restrictions
-Animations cannot be longer than 20 minutes and cannot contain more than 36,000 keyframes (20 mins at 30 FPS). Additionally when using morph target based animations do not exceed 8192 morph target vertices or less. Exceeding these count will cuase the animated asset to be unsupported in the Windows Mixed Reality home. 
+Animations cannot be longer than 20 minutes and cannot contain more than 36,000 keyframes (20 mins at 30 FPS). Additionally when using morph target based animations do not exceed 8192 morph target vertices or less. Exceeding these count will cause the animated asset to be unsupported in the Windows Mixed Reality home. 
 
 |Feature|Maximum|
 |-----|-----|

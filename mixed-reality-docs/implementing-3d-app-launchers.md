@@ -161,7 +161,7 @@ A bounding box can be used to add an additional buffer region around the object.
 > [!NOTE]
 > This feature will be supported as of the Windows RS4 update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.17125 if you plan to use this feature
 
-You can define the activation behavior for a 3D secondaryTile to control how it reacts when a user selects it. This can be used to place 3D objects in the Mixed Reality home that are purley informative or decorative. The following activation behavior types are supported:
+You can define the activation behavior for a 3D secondaryTile to control how it reacts when a user selects it. This can be used to place 3D objects in the Mixed Reality home that are purely informative or decorative. The following activation behavior types are supported:
 1. Default: When a user selects the 3D secondaryTile the app is activated
 2. None: When the users selects the 3D secondaryTile nothing happens and the app is not activated.
 

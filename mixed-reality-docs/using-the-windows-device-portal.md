@@ -1,11 +1,12 @@
 ---
 title: Using the Windows Device Portal
 description: The Windows Device Portal for HoloLens lets you configure and manage your device remotely over Wi-Fi or USB. The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. The Device Portal includes many tools that will help you manage your HoloLens and debug and optimize your apps.
-author: JonMLyons
+author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
+ms.localizationpriority: high
 ---
 
 
@@ -27,12 +28,12 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 ## Setting up HoloLens to use Windows Device Portal
 
 1. Power on your HoloLens and put on the device.
-2. Perform the [bloom](gestures.md#bloom) gesture to launch the main menu.
-3. Gaze at the **Settings** tile and perform the [air-tap](gestures.md#air-tap) gesture. Perform a second air-tap to place the app in your environment. The Settings app will launch after you place it.
+2. Perform the [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) for HoloLens2 or [Bloom](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) on HoloLens (1st Gen) to launch the main menu. 
+3. Gaze at the **Settings** tile and perform the [air-tap](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) gesture on HoloLens (1st Gen) or select it on HoloLens 2 by [touching it or using a Hand ray](https://docs.microsoft.com/hololens/hololens2-basic-usage). 
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
 6. Enable **Developer Mode**.
-7. [Scroll down](gestures.md#composite-gestures) and enable **Device Portal**.
+7. [Scroll down](gaze-and-commit.md#composite-gestures) and enable **Device Portal**.
 8. If you are setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, click **Pair** to [generate a pairing PIN](using-visual-studio.md). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
 
    ![Enabling developer mode in the Settings app for Windows Holographic](images/deviceportalsettings.png)
@@ -43,13 +44,13 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 2. Look up your device's IP address.
    * Find the IP address on the device under **Settings > Network & Internet > Wi-Fi > Advanced Options**.
 3. From a web browser on your PC, go to https://<YOUR_HOLOLENS_IP_ADDRESS>
-   * The browser will display the following message: "There’s a problem with this website’s security certificate". This happens because the certificate which is issued to the Device Portal is a test certificate. You can ignore this certificate error for now and proceed.
+   * The browser will display the following message: "There's a problem with this website's security certificate". This happens because the certificate which is issued to the Device Portal is a test certificate. You can ignore this certificate error for now and proceed.
 
 ## Connecting over USB
 
 1. [Install the tools](install-the-tools.md) to make sure you have Visual Studio Update 1 with the Windows 10 developer tools installed on your PC. This enables USB connectivity.
-2. Connect your HoloLens to your PC with a micro-USB cable.
-3. From a web browser on your PC, go to [http://127.0.0.1:10080](http://127.0.0.1:10080).
+2. Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
+3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
 ## Connecting to an emulator
 
@@ -73,19 +74,25 @@ If you wish to change this username or password at any time, you can repeat this
 
 ## Security certificate
 
-If you are see a "certificate error" in your browser, you can fix it by creating a trust relationship with the device.
+If you see a "certificate error" in your browser, you can fix it by creating a trust relationship with the device.
 
 Each HoloLens generates a unique self-signed certificate for its SSL connection. By default, this certificate is not trusted by your PC's web browser and you may get a "certificate error". By downloading this certificate from your HoloLens (over USB or a Wi-Fi network you trust) and trusting it on your PC, you can securely connect to your device.
 1. **Make sure you are on a secure network (USB or a Wi-Fi network you trust).**
 2. Download this device's certificate from the "Security" page on the Device Portal.
    * Navigate to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm
+   * Open the node for System > Preferences. 
+   * Scroll down to Device Security, click the "Download this device's certificate" button.
 3. Install the certificate in the "Trusted Root Certification Authorities" store on your PC.
    * From the Windows menu, type: Manage Computer Certificates and start the applet.
    * Expand the **Trusted Root Certification Authority** folder.
-   * Click on the **Certificates** folder.
+   * Click the **Certificates** folder.
    * From the Action menu, select: All Tasks > Import...
    * Complete the Certificate Import Wizard, using the certificate file you downloaded from the Device Portal.
 4. Restart the browser.
+
+>[!NOTE]
+> This certificate will only be trusted for the device and the user will have to go through the process again if the device is flashed.
+
 
 ## Device Portal Pages
 
@@ -134,7 +141,7 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
   * **Show spatial anchors**: Displays spatial anchors for the active app. You must click the Update button to get and refresh the anchors.
   * **Show details**: Displays hand positions, head rotation quaternions, and the device origin vector as they change in real time.
   * **Full screen button**: Shows the 3D View in full screen mode. Press ESC to exit full screen view.
-* **Surface reconstruction**: Click or tap **Update** to display the latest spatial mapping mesh from the device. A full pass may take some time to complete, up to a few seconds. The mesh does not update automatically in the 3D view, and you must manually click **Update** to get the latest mesh from the device. Click **Save** to save the current spatial mapping mesh as an obj file on your PC.
+* **Surface reconstruction**: Click or tap **Update** to display the latest spatial mapping mesh from the device. A full pass may take some time to complete (up to a few seconds). The mesh does not update automatically in the 3D view, and you must manually click **Update** to get the latest mesh from the device. Click **Save** to save the current spatial mapping mesh as an obj file on your PC.
 * **Spatial anchors**: Click Update to display or update the spatial anchors for the active app.
 
 ### Mixed Reality Capture
@@ -158,7 +165,7 @@ Use the Mixed Reality Capture page to save media streams from the HoloLens.
 > [!NOTE]
 > There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#simultaneous-mrc-limitations):
 > * If an app tries to access the photo/video camera while Windows Device Portal is recording a video, the video recording will stop.
->   * HoloLens 2 will not stop recording video if the app acesses the photo/video camera with SharedReadOnly mode.
+>   * HoloLens 2 will not stop recording video if the app accesses the photo/video camera with SharedReadOnly mode.
 > * If an app is actively using the photo/video camera, Windows Device Portal is able to take a photo or record a video.
 > * Live streaming:
 >   * HoloLens (1st gen) prevents an app from accessing the photo/video camera while live streaming from Windows Device Portal.
@@ -175,7 +182,7 @@ Capture [Windows Performance Recorder](https://msdn.microsoft.com/library/window
 * **Available profiles**: Select the WPR profile from the dropdown, and click or tap **Start** to start tracing.
 * **Custom profiles**: Click or tap **Browse** to choose a WPR profile from your PC. Click or tap **Upload and start** to start tracing.
 
-To stop the trace click on the stop link. Stay on this page until the trace file has completed downloading.
+To stop the trace, click the stop link. Stay on this page until the trace file has completed downloading.
 
 Captured ETL files can be opened for analysis in [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx).
 
@@ -234,7 +241,7 @@ Use the file explorer to browse, upload, and download files. You can work with f
 >[!NOTE]
 >Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](commercial-features.md).
 
-Please check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
+Check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
 
 ### Logging
 
@@ -254,10 +261,10 @@ Click or tap **Enable** to start tracing. The provider is added to the **Enabled
 * **Custom providers**: Select a custom ETW provider and the tracing level. Identify the provider by its GUID. Don't include brackets in the GUID.
 * **Enabled providers**: Lists the enabled providers. Select a provider from the dropdown and click or tap **Disable** to stop tracing. Click or tap **Stop all** to suspend all tracing.
 * **Providers history**: Shows the ETW providers that were enabled during the current session. Click or tap **Enable** to activate a provider that was disabled. Click or tap **Clear** to clear the history.
-* **Events**: Lists ETW events from the selected providers in table format. This table is updated in real time. Beneath the table, click on the **Clear** button to delete all ETW events from the table. This does not disable any providers. You can click **Save to file** to export the currently collected ETW events to a CSV file locally.
+* **Events**: Lists ETW events from the selected providers in table format. This table is updated in real time. Beneath the table, click the **Clear** button to delete all ETW events from the table. This does not disable any providers. You can click **Save to file** to export the currently collected ETW events to a CSV file locally.
 * **Filters**: Allow you to filter the ETW events collected by ID, Keyword, Level, Provider Name, Task Name, or Text. You can combine several criteria together:
-   1. For criteria applying to the same property - events can satisfy any one of these criteria are shown.
-   2. For criteria applying to different property - events must satisfy all of the criteria
+   1. For criteria applying to the same property, events that can satisfy any one of these criteria are shown.
+   2. For criteria applying to a different property, events must satisfy all of the criteria
 
 For example, you can specify the criteria *(Task Name contains 'Foo' or 'Bar') AND (Text contains 'error' or 'warning')*
 

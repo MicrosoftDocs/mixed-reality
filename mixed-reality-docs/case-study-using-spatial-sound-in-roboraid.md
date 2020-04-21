@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, HoloLens, RoboRaid, spatial sound
 
 # Case study - Using spatial sound in RoboRaid
 
-Charles Sinex, audio lead on the Microsoft HoloLens Experience Team, talks about the unique challenges he encountered when creating audio for [RoboRaid](https://www.microsoft.com/en-us/p/roboraid/9nblggh5fv3j), a mixed reality first-person shooter.
+This article describes the unique challenges that the Microsoft HoloLens Experience Team encountered when creating audio for [RoboRaid](https://www.microsoft.com/p/roboraid/9nblggh5fv3j), a mixed-reality first-person shooter.
 
 ## The tech
 
@@ -32,7 +32,7 @@ Spatial sound can be demanding on the CPU. For a busy experience like RoboRaid i
 
 The dodging mechanic is one of the most important aspects of gameplay in RoboRaid, and also something that we felt was truly unique to the HoloLens experience. As such, we wanted to make successful dodges very rewarding to the player. We got the Doppler "whizz-by" to sound compelling fairly early on in the development. Initially, my plan was to use a loop and manipulate it in real-time using volume, pitch, and filter. The implementation for this was going to be very elaborate, so before committing resources to actually build this we created a cheap prototype using an asset with the Doppler effect baked in just to find out how it felt*. Our talented dev made it so that this whizz-by asset would play back exactly 0.7 seconds before the projectile will have passed by the player’s ear and the results felt really amazing! Needless to say, we ditched the more complex solution and implemented the prototype.
 
-**(If you'd like more information about creating an audio asset with the Doppler effect built in, check out an article by sound designer Charles Deenan called [100 Whooshes in 2 Minutes](http://designingsound.org/2010/02/charles-deenen-special-100-whooshes-in-2-minutes/).) * 
+*(For more information about creating an audio asset with the Doppler effect built in, see [100 Whooshes in 2 Minutes](http://designingsound.org/2010/02/26/charles-deenen-special-100-whooshes-in-2-minutes/).)* 
 <br>
 ![Successfully dodging an enemy's projectile rewards the player with a satisfying whizz-by sound.](images/successful-dodge-roboraid-500px.jpg)
 
@@ -80,15 +80,8 @@ You can try this yourself using the audio assets below:
 2. Play this asset by itself then compare it to the event from Scenario 1.
 3. Try different balance of mono and stereo files.
 
-## About the author
 
-<table style="border-collapse:collapse">
-<tr>
-<td style="border-style: none" width="60px"><img alt="Picture of Charles Sinex" width="60" height="60" src="images/genericusertile.jpg"></td>
-<td style="border-style: none"><b>Charles Sinex</b><br>Audio Engineer @Microsoft</td>
-</tr>
-</table>
 
-## See Also
+## See also
 * [Spatial sound](spatial-sound.md)
-* [RoboRaid for Microsoft HoloLens](https://www.microsoft.com/en-us/p/roboraid/9nblggh5fv3j)
+* [RoboRaid for Microsoft HoloLens](https://www.microsoft.com/p/roboraid/9nblggh5fv3j)

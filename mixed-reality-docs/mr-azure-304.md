@@ -573,7 +573,7 @@ To create the *FaceAnalysis* class:
             facesToIdentify.maxNumOfCandidatesReturned = 1;
             facesToIdentify.confidenceThreshold = 0.5;
 
-            // Serialise to Json format
+            // Serialize to Json format
             string facesToIdentifyJson = JsonConvert.SerializeObject(facesToIdentify);
             // Change the object into a bytes array
             byte[] facesData = Encoding.UTF8.GetBytes(facesToIdentifyJson);
@@ -767,7 +767,7 @@ To create the *ImageCapture* class:
         }
 
         /// <summary>
-        /// Register the full execution of the Photo Capture. If successfull, it will begin the Image Analysis process.
+        /// Register the full execution of the Photo Capture. If successful, it will begin the Image Analysis process.
         /// </summary>
         void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
         {
@@ -862,4 +862,4 @@ The **Azure Face API** is powerful enough to detect up to 64 faces in a single i
 
 ### Exercise 2
 
-The **Azure Face API** is also able to provide back all kinds of attribute information. Integrate this into the application. This could be even more interesting, when combined with the [Emotion API](https://azure.microsoft.com/en-au/services/cognitive-services/emotion/).
+The **Azure Face API** is also able to provide back all kinds of attribute information. Integrate this into the application. This could be even more interesting, when combined with the [Emotion API](https://azure.microsoft.com/services/cognitive-services/emotion/).

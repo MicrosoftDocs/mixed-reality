@@ -1,8 +1,43 @@
 {
 	"redirections": [
 		{
+            "source_path": "mixed-reality-docs/accounts-on-hololens.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-identity",
+            "redirect_document_id": false
+		},
+		{
+            "source_path": "mixed-reality-docs/troubleshooting.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-troubleshooting",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "mixed-reality-docs/updating-hololens.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-updates",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "mixed-reality-docs/hololens-known-issues.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-known-issues",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "mixed-reality-docs/hololens-status.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-status",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "mixed-reality-docs/environment-considerations-for-hololens.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-environment-considerations",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "mixed-reality-docs/reset-or-recover-your-hololens.md",
+            "redirect_url": "https://docs.microsoft.com/hololens/hololens-recovery",
+            "redirect_document_id": false
+        },
+		{
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
-			"redirect_url": "updating-hololens",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-updates",
 			"redirect_document_id": false
 		},
 		{
@@ -22,13 +57,135 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/microsoft-holographic-remoting-software-license-terms.md",
-			"redirect_url": "https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms",
+			"redirect_url": "https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/locatable-camera-in-directx.md",
 			"redirect_url": "locatable-camera#locating-the-device-camera-in-the-world",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/calibration.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-calibration",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/commercial-features.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-commercial-features",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/connecting-to-wi-fi-on-hololens.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-network",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/device-sharing.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-multiple-users",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/get-apps-for-hololens.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/give-us-feedback.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-feedback",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/hololens-hardware-details.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens1-hardware",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/hololens-demo-guide.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens1-setup",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/see-your-photos.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/holographic-photos-and-video",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/use-hololens-in-new-spaces.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-spaces",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mixed-reality-capture.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/holographic-photos-and-video",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/academy.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/tutorials#mixed-reality-academy-tutorials",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/performance-recommendations-for-immersive-headset-apps.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/add-custom-home-environments",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/development-overview.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/development",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/performance-recommendations-for-hololens-apps.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/app-quality-criteria",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/color,-light-and-materials.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/color-light-and-materials",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/keyboard,-mouse,-and-controller-input-in-directx.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/keyboard-mouse-and-controller-input-in-directx",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/gestures.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/interaction-fundamentals",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/hand-ray.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens2-basic-usage",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/saving-and-finding-your-files.md",
+			"redirect_url": "https://docs.microsoft.com/hololens/hololens-find-and-save-files",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-speechSDK-ch1.md#build-your-application-to-your-device",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-speechSDK-ch1.md#getting-started",
+			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-speechsdk-ch1",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/using-webvr-in-edge-with-windows-mixed-reality.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/webvr-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch5.md",
+			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-sharing(photon)-ch4",
+			"redirect_document_id": true
 		}
 	]
 }
+
+

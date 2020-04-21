@@ -1,44 +1,42 @@
 ---
 title: Azure Speech Services tutorials - 3. Adding the Azure Cognitive Services speech translation component
-description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
+description: In this course, you will learn how to implement Azure Speech SDK within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
 # 3. Adding the Azure Cognitive Services speech translation component
 
-In this tutorial, we learn about the Azure Cognitive Services Speech Translation component in our project as well as translate into three different languages. 
+In this tutorial, you will add speech translation to your project which will allow you to translate and transcribed your speech into three different languages.
+
+## Objectives
+
+* Learn how to integrate Azure speech translation
 
 ## Instructions
 
-1. Select the Lunarcom_Base object in the hierarchy, and click Add Component in the inspector panel. Search for and select LunarcomTranslationRecognizer.
+In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Translation Recognizer (Script)** component to the Lunarcom object and configure it as follows:
 
-![Module4Chapter3step1im](images/module4chapter3step1im.PNG)
+* Change the **Target Language** to a language of your choosing, for example, _German_
 
-> Note: Ensure the offline mode simulator is disabled before testing the Speech-SDK translator. In order to translate, you must be connected to the internet. See image below on where to find this setting. 
->
-> ![Module4Chapter3noteim](images/module4chapter3noteim.PNG)
+![mrlearning-speech](images/mrlearning-speech/tutorial3-section1-step1-1.png)
 
-2. Click the drop-down in the LunarcomTranslationRecognizer, and select the language you would like to translate to.
+> [!NOTE]
+> The Lunarcom Translation Recognizer (Script) component is not part of MRTK. It was provided with this tutorial's assets.
 
-![Module4Chapter3step2im](images/module4chapter3step2im.PNG)
+If you now enter Game mode, you can test the speech translation by first pressing the satellite button. Then, assuming your computer has a microphone, when you say something, your speech will be translated into the chosen language and transcribed on the terminal panel:
 
-3. Now, run the application and test the translator by clicking the Satellite button, and begin speaking. Press the Satellite button again to stop the recognition. Below is an example of what your scene should look like. Feel free to change the language under the "Target Language" dropdown (see image above) to explore translation into other languages.
+![mrlearning-speech](images/mrlearning-speech/tutorial3-section1-step1-2.png)
 
-> Note: Before testing, ensure that the offline simulator is disabled, as shown in the image below.
->
-> ![Module4Chapter3noteim](images/module4chapter3noteim.PNG)
-
-Below is an example of what your scene should look like:
-
-![Module4Chapter3exampleim](images/module4chapter3exampleim.PNG)
+> [!CAUTION]
+> The application needs to connect to Azure, so make sure your computer/device is connected to the internet.
 
 ## Congratulations
 
-Now your project can translate the words you speak into several different languages. Feel free to play around with the languages, and test the accuracy of the translation. 
+Your project can now successfully translate the words you speak into several different languages. Run the application on your device to ensure the feature is working properly.
 
 [Next tutorial: 4. Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
-

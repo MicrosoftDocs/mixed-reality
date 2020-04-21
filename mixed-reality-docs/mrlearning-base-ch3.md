@@ -6,71 +6,110 @@ ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
-# 4. Placing dynamic content and using solvers
+# 4. Placing dynamic content and using Solvers
+<!-- Consider renaming to 'Placing dynamic content using Solvers' -->
 
-Holograms come to life in the HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK’s available placement tools, known as solvers for the way they solve complex spatial placement scenarios. In the MRTK, solvers are a system of scripts and behaviors that are used to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive. 
+Holograms come to life in HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK's available placement tools, known as Solvers, to solve complex spatial placement scenarios. In the MRTK, Solvers are a system of scripts and behaviors that are used to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive.
 
 ## Objectives
 
-* Introduce the MRTK's solvers
-* Use solvers to have a collection of buttons follow the user
-* Use solvers to have a game object follow the user's tracked hands
+* Introduce the MRTK's Solvers
+* Use Solvers to have a collection of buttons follow the user
+* Use Solvers to have a game object follow the user's tracked hands
 
-## Instructions
+## Location of Solvers in the MRTK
 
-### Location of solvers in the MRTK
- To find the available solvers in your project, look in the MRTK SDK folder (MixedRealityToolkit.SDK folder), then under the utilities folder you will see the solvers folder, as shown in the image below.
+ The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Assets** > **MixedRealityToolkit.SDK** > **Features** > **Utilities** > **Solvers**:
 
-![Solvers](images/lesson3_chapter1_step1im.PNG)
+![mrlearning-base](images/mrlearning-base/tutorial3-section1-step1-1.png)
 
->Note: In this lesson we will only go over the implementation of the Orbital solver and the RadialView solver. To learn more about the full range of solvers available in the MRTK, please visit: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html
+In this tutorial, we will review the implementation of the Orbital Solver and the Radial View Solver. To learn more about the full range of Solvers available in the MRTK, you can visit the the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-### Use a Solver to Follow the User
-The goal of this chapter is to enhance the button collection that was previously created so that it follows the user’s gaze direction. In previous version of the MRTK and HoloToolkit, this was referred to as a tagalong functionality.
+## Use a Solver to follow the user
+<!-- Consider renaming to 'Use a Solver to have an object follow the user' -->
 
-1. Select the Button Collection parent object from the previous lesson.
+In this section, you will enhance the button collection you created in the previous tutorial so it follows the user's gaze direction. Additionally, you will also configure the Solver so the button collection is always:
 
-![Lesson3 Chapter2 Step1im](images/Lesson3_chapter2_step1im.PNG)
+* Rotated parallel to the user's reading direction, for natural left to right reading
+* Positioned below the user horizontal gaze direction, so it's not obstructing the other objects you will add later in this tutorial
+* Positioned approximately a half arm's-length from the user, so the buttons can easily be pressed
 
-2. In the Inspector panel, click the Add Component button and search for orbital. The orbital component should appear. Select it to add the orbital component to the Button Collection game object.
+For this, you will use the **Orbital Solver** which locks the object to a specified position and offset from the referenced object.
 
-![Lesson3 Chapter2 Step2im](images/Lesson3_Chapter2_step2im.PNG)
+### 1. Add the Orbital Solver
 
->Note: When you add the component you will notice that the system adds the orbital script and the solver handler script in the inspector tab, which is a required component. 
+In the Hierarchy window, select the **ButtonCollection** object, then in the Inspector window, use the **Add Component** button to add the **Orbital (Script)** component to the ButtonCollection object.
 
-3. In order to configure the button collection to follow the user, we need to implement the following adjustments (refer to the image below):
-- In the Orbital script, set the Orientation Type drop-down list to Yaw Only. This makes it so that only one axis of the object rotates as it follows the user.
-- Set the local offset to 0 on all axes. Set the World Offset to x = 0, y = -0.1 and z = 0.6. This locks movement of the object such that when the user changes height, the object will remain at a fixed height in the physical environment, while still allowing it to follow the user as the user moves about the environment. These values may be adjusted to achieve a wide range of behaviors.
-- For a follow behavior whereby the buttons only follow the user’s view after the user turns his or her head sufficiently far, you could select the Use Angle Stepping for world offset checkbox (Note: This title may be truncated on some screens, as it is in the image below.) For example, to have the object follow the user only every 90 degrees, set the number of steps equal to 4 (marked by a green arrow in the example to the left). 
+> [!NOTE]
+> When you add a Solver, in this case the Orbital (Script) component, the Solver Handler (Script) component is automatically added because it is required by the Solver.
 
-![Lesson3 Chapter2 Step3im](images/Lesson3_chapter2_step3im.PNG)
+### 2. Configure the Orbital Solver
 
-### Enabling objects to follow tracked hands
+Configure the **Solver Handler (Script)** component:
 
-In this section, we will configure the cube game object previously created to follow the user’s tracked hands using the RadialView solver.
+* Verify that **Tracked Target Type** is set to **Head**
 
-1. Select the cube object in the BaseScene hierarchy. Click Add Component in the Inspector panel. 
+Configure the **Orbital (Script)** component:
 
-![Lesson3 Chapter3 Step1im](images/Lesson3_Chapter3_step1im.PNG)
+* Verify that **Orientation Type** is set to **Follow Tracked Object**
+* Reset **Local Offset** to X = 0, Y = 0, Z = 0
+* Change **World Offset** to X = 0, Y = -0.4, Z = 0.3
 
-2. Type in RadialView in the search box and select the RadialView component to add it to the cube. The solver handler component will also be automatically added to the cube.
+![mrlearning-base](images/mrlearning-base/tutorial3-section2-step2-1.png)
 
-3. Change the radial view to not follow the head but follow the left hand. Select the dropdown menu next to the Tracked Object to Reference option. Then select Hand Joint Left from the menu.
+### 3. Test the Orbital Solver using the in-editor simulation
 
-![Lesson3 Chapter3 Step3im](images/Lesson3_chapter3_step3im.PNG)
+Press the Play button to enter Game mode and press and hold the right mouse button to rotate your gaze direction, and notice the following:
 
-4. Once you select the hand joint, you can choose which part of the hand you want the cube to follow. For this example, we are going to use the wrist. Next to the option Tracked Hand Joint select the dropdown menu and select Wrist. 
+* The ButtonCollection's Transform Position is now driven by the Solver settings
+* The Cube, which is not affected by the Solver, remains in the same position
 
-![Lesson3 Chapter3 Step4im](images/Lesson3_chapter3_step4im.PNG)
+![mrlearning-base](images/mrlearning-base/tutorial3-section2-step3-1.png)
 
-5. Set the maximum and minimum distances to 0 so that the cube will not have any distance between it and the user’s wrist. Once set, the cube will be perfectly aligned with the wrist. You might also adjust the Reference Direction field to adjust the behavior of how the cube is oriented, such as if you want to allow the object to rotate with the user's wrist by setting the reference direction to Orient with Tracked Object.
+> [!TIP]
+> If you don't see the camera ray in your Scene window, make sure your Gizmos menu is enabled. To learn more about the Gizmos menu and how you can use it to optimize your scene view, you can visit Unity's <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">Gizmos menu</a> documentation.
+>
+> To display your Scene and Game window side by side as shown in the image above, simply drag the Game window to the right side of the Scene window. To learn more about customizing your workspace, you can visit Unity's <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">Customizing Your Workspace</a> documentation.
 
-![Lesson3 Chapter3 Step5im](images/Lesson3_chapter3_step5im.PNG)
+## Enabling objects to follow tracked hands
+
+In this section, you will configure the Cube object you created in the previous tutorial so it follows the user's tracked hands, specifically the right hand wrist. Additionally, you will also configure the Solver so the cube:
+
+* Changes it's orientation with the user's hand rotation
+* Positioned on the user's wrist
+
+For this, you will use the **Radial View Solver** which keeps the object within a view cone cast by the referenced object.
+
+### 1. Add the Radial View Solver
+
+In the Hierarchy window, select the **Cube** object, then in the Inspector window, use the **Add Component** button to add the **Radial View (Script)** component Cube object.
+
+### 2. Configure the Radial View Solver
+
+Configure the **Solver Handler (Script)** component:
+
+* Change **Tracked Target Type** to **Hand Joint**
+* Change **Tracked Handness** to **Right**
+* Change **Tracked Hand Joint** to **Wrist**
+
+Configure the **Radial View (Script)** component:
+
+* Change **Reference Direction** to **Object Oriented**, then check the **Orient To Reference Direction** checkbox
+* Change **Min Distance** and **Max Distance** to 0
+
+![mrlearning-base](images/mrlearning-base/tutorial3-section3-step2-1.png)
+
+### 3. Test the Radial View Solver using the in-editor simulation
+
+Press the Play button to enter Game mode and then press and hold the spacebar to bring up the hand. Move the mouse cursor around to move the hand, and click and hold the left mouse button to rotate the hand:
+
+![mrlearning-base](images/mrlearning-base/tutorial3-section3-step3-1.png)
 
 ## Congratulations
-In this tutorial, you learned how to use the MRTK’s solvers to have a UI intuitively follow the user. You also learned how to attach a solver to a game object (i.e., cube) to follow the user’s tracked hands. To learn more about these and other solvers included with the MRTK, feel free to visit the [MRTK solvers documentation page](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html).
 
-[Next Lesson: 5.	Interacting with 3D objects](mrlearning-base-ch4.md)
+In this tutorial, you learned how to use the MRTK's solvers to have a UI intuitively follow the user. You also learned how to attach a Solver to an object (i.e., cube) to follow the user's tracked hands. To learn more about these and other solvers included with the MRTK,  you can visit the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
+[Next Tutorial: 5. Interacting with 3D objects](mrlearning-base-ch4.md)

@@ -1,7 +1,7 @@
 ---
 title: Spatial mapping in DirectX
 description: Explains how to implement spatial mapping in your DirectX app. This includes a detailed explanation of the spatial mapping sample application that is included with the Universal Windows Platform SDK.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
@@ -18,6 +18,29 @@ This topic uses code from the [HolographicSpatialMapping](https://github.com/Mic
 
 >[!NOTE]
 >The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+
+## Device support
+
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Spatial mapping</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
+</table>
 
 ## DirectX development overview
 
@@ -71,10 +94,10 @@ The capability comes from the **uap2** namespace. To get access to this namespac
 
 ```xml
 <Package
-    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-    xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2"
+    xmlns="https://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:mp="https://schemas.microsoft.com/appx/2014/phone/manifest"
+    xmlns:uap="https://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:uap2="https://schemas.microsoft.com/appx/manifest/uap/windows10/2"
     IgnorableNamespaces="uap uap2 mp"
     >
 ```
@@ -635,7 +658,7 @@ We can also just draw the surface meshes to the stereo display buffers. We chose
 Here, our code sample tells the mesh renderer to draw the collection. This time we don't specify a depth-only pass, so it will attach a pixel shader and complete the rendering pipeline using the targets that we specified for the current virtual camera.
 
 ```cpp
-// SR mesh rendering pass: Draw SR mesh over the world.
+// Spatial Mapping mesh rendering pass: Draw Spatial Mapping mesh over the world.
 context->ClearDepthStencilView(pCameraResources->GetSurfaceOcclusionDepthStencilView(), D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 
 // Set the render target to the current holographic camera's back buffer, and set the depth buffer.

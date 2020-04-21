@@ -1,6 +1,6 @@
 ---
 title: Lunar Module
-description: LunarModule is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend Hololens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems.
+description: LunarModule is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend HoloLens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
@@ -15,7 +15,7 @@ keywords: Windows Mixed Reality, Sample apps, Design, HoloLens
 >[!NOTE]
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
 
-[Lunar Module](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend Hololens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems. All of the project's components are available for use in your own mixed reality app experiences.
+[Lunar Module](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend HoloLens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems. All of the project's components are available for use in your own mixed reality app experiences.
 
 ## Rethinking classic experiences for Windows Mixed Reality
 
@@ -57,7 +57,7 @@ Requiring the user to learn the input scheme, control the ship, and have a small
 
 ### Adding input for hand gestures
 
-HoloLens base input has only two gestures - [Air Tap and Bloom](gestures.md). Users don’t need to remember contextual nuances or a laundry list of specific gestures which makes the platform’s interface both versatile and easy to learn. While the system may only expose these two gestures, HoloLens as a device is capable of tracking two hands at once. Our ode to Lunar Lander is an [immersive app](app-model.md) which means we have the ability to extend the base set of gestures to leverage two hands and add our own delightfully tactile means for lunar module navigation.
+HoloLens base input has only two gestures - [Air Tap and Bloom](gaze-and-commit.md#composite-gestures). Users don’t need to remember contextual nuances or a laundry list of specific gestures which makes the platform’s interface both versatile and easy to learn. While the system may only expose these two gestures, HoloLens as a device is capable of tracking two hands at once. Our ode to Lunar Lander is an [immersive app](app-model.md) which means we have the ability to extend the base set of gestures to leverage two hands and add our own delightfully tactile means for lunar module navigation.
 
 Looking back at the original control scheme, **we needed to solve for thrust and rotation**. The caveat is rotation in the new context adds an additional axis (technically two, but the Y axis is less important for landing). The two distinct ship movements naturally lend themselves to be mapped to each hand:
 
@@ -102,5 +102,5 @@ You can find scripts and prefabs for the Lunar Module sample app on the [Mixed R
 
 ## See also
 * [Motion controllers](motion-controllers.md)
-* [Gestures](gestures.md)
+* [Head-gaze and commit](gaze-and-commit.md)
 * [Types of mixed reality apps](types-of-mixed-reality-apps.md)

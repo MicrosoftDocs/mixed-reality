@@ -1,11 +1,11 @@
 ---
 title: Rendering in DirectX
 description: Explains holographic rendering for Windows Mixed Reality.
-author: MikeRiches
+author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, rendering, 3D graphics, HolographicFrame, render loop, update loop, walkthrough, sample code
+keywords: Windows Mixed Reality, holograms, rendering, 3D graphics, HolographicFrame, render loop, update loop, walkthrough, sample code, Direct3D
 ---
 
 
@@ -13,6 +13,8 @@ keywords: Windows Mixed Reality, holograms, rendering, 3D graphics, HolographicF
 # Rendering in DirectX
 
 Windows Mixed Reality is built on DirectX to produce rich, 3D graphical experiences for users. The rendering abstraction sits just above DirectX and lets an app reason about the position and orientation of one or more observers of a holographic scene, as predicted by the system. The developer can then locate their holograms relative to each camera, letting the app render these holograms in various spatial coordinate systems as the user moves around.
+
+Note: This walkthrough describes holographic rendering in Direct3D 11. A Direct3D 12 Windows Mixed Reality app template is also supplied with the Mixed Reality app templates extension.
 
 ## Update for the current frame
 

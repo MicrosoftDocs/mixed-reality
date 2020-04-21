@@ -5,6 +5,7 @@ author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
+ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit, demo, record
 ---
 

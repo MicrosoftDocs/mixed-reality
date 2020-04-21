@@ -15,7 +15,7 @@ keywords: Unity, focus point, focus plane, stabilization plane, stabilization po
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type**: *HolographicSettings*
 
-The [focus point](hologram-stability.md#stabilization-plane) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
+The [focus point](hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
 
 If you want to set the Focus Point in Unity, it needs to be set every frame using *HolographicSettings.SetFocusPointForFrame()*. If the Focus Point is not set for a frame, the default stabilization plane will be used.
 
@@ -24,11 +24,11 @@ If you want to set the Focus Point in Unity, it needs to be set every frame usin
 > * On an immersive desktop headset, this will enable per-pixel depth-based reprojection.
 > * On a HoloLens running the Windows 10 April 2018 Update or later, this will analyze the depth buffer to pick an optimal stabilization plane automatically.
 >
-> Either approach should provide even better image quality without explicit work by your app to select a focus point each frame.  Note that if you do provide a focus point manually, that will override the automatic behavior described above, and will usually reduce hologram stability.  Generally, you should only specify a manual focus point when your app is running on a HoloLens that has not yet been updated to the Windows 10 April 2018 Update.
+> Either approach should provide even better image quality without explicit work by your app to select a focus point for each frame.  Note that if you do provide a focus point manually, that will override the automatic behavior described above, and will usually reduce hologram stability.  Generally, you should only specify a manual focus point when your app is running on a HoloLens that has not yet been updated to the Windows 10 April 2018 Update.
 
 ### Example
 
-There are many ways to set the Focus Point, as suggested by the overloads available on the *SetFocusPointForFrame* static function. Presented below is a simple example to set the focus plane to the provided object each frame:
+There are many ways to set the Focus Point, as suggested by the overloads available on the *SetFocusPointForFrame* static function. Presented below is a simple example to set the focus plane to the provided object for each frame:
 
 ```cs
 public GameObject focusedObject;
@@ -48,4 +48,4 @@ void Update()
 Note that the simple code above may end up reducing hologram stability if the focused object ends up behind the user.  This is why you should generally set "Enable Depth Buffer Sharing" instead of manually specifying a focus point.
 
 ### See also
-* [Stabilization plane](hologram-stability.md#stabilization-plane)
+* [Stabilization plane](hologram-stability.md#reprojection)

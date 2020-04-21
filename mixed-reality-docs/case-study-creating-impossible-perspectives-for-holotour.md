@@ -1,7 +1,7 @@
 ---
 title: Case study - Creating impossible perspectives for HoloTour
 description: We wanted your experiences in HoloTour for Microsoft HoloLens to be unforgettable. In addition to the traditional tourist stops, we planned out some "impossible perspectives".
-author: DannyAskew
+author: dannyaskew
 ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article

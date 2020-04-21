@@ -5,14 +5,14 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, Mixed Reality OpenXR Developer Portal, DirectX, native, native app custom engine, middleware
+keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engine, middleware
 ---
 
 
 
 # OpenXR
 
-OpenXR is an open royalty-free API standard from [Khronos](https://www.khronos.org/) that provides engines native access to a wide range of devices from many vendors that span across the [mixed reality spectrum](mixed-reality.md).
+OpenXR is an open royalty-free API standard from <a href="https://www.khronos.org/" target="_blank">Khronos</a> that provides engines native access to a wide range of devices from many vendors that span across the [mixed reality spectrum](mixed-reality.md).
 
 You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.  If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
 
@@ -24,95 +24,57 @@ The OpenXR API uses a loader that connects your application directly to your hea
 
 ## What is OpenXR?
 
-The core OpenXR 1.0 API provides the base functionality you'll need to build an engine that can target both holographic devices like HoloLens 2 and immersive devices like Windows Mixed Reality headsets:
-* Systems + sessions​
-* Reference spaces (view, local, stage)​
-* View configurations (mono, stereo)​
-* Swapchains + frame timing​
-* Composition layers​
-* Input and haptics​
-* Graphics API + platform integration​
+The OpenXR API provides the core pose prediction, frame timing and spatial input functionality you'll need to build an engine that can target both holographic devices like HoloLens 2 and immersive devices like Windows Mixed Reality headsets.
 
-To learn about the OpenXR API, check out the [OpenXR 1.0 specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) and [OpenXR 1.0 API reference](https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html).  For more information, see the [Khronos OpenXR page](https://www.khronos.org/openxr/).
+To learn about the OpenXR API, check out the OpenXR 1.0 <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">specification</a>, <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">API reference</a> and <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">quick reference guide</a>.  For more information, see the <a href="https://www.khronos.org/openxr/" target="_blank">Khronos OpenXR page</a>.
 
-To target the full feature set of HoloLens 2, you'll also use cross-vendor and vendor-specific OpenXR extensions that enable additional features beyond the OpenXR 1.0 core, such as articulated hand tracking, eye tracking, spatial mapping and spatial anchors.  See the [Roadmap section](openxr.md#roadmap) section below for more information on the extensions coming later this year.
+To target the full feature set of HoloLens 2, you'll also use cross-vendor and vendor-specific OpenXR extensions that enable additional features beyond the OpenXR 1.0 core, such as articulated hand tracking, eye tracking, spatial mapping and spatial anchors.  See the [Roadmap section](#roadmap) below for more information on the extensions coming later this year.
 
 Note that OpenXR is not itself a mixed reality engine.  Instead, OpenXR enables engines like Unity and Unreal to write portable code once that can then access the native platform features of the user's holographic or immersive device, regardless of which vendor built that platform.
 
-## Getting started with OpenXR for HoloLens 2
-
-To start developing OpenXR applications for HoloLens 2:
-
-1. Set up a HoloLens 2 or follow the instructions to [install the HoloLens 2 emulator](using-the-hololens-emulator.md).
-1. Launch the Store app from within the device or emulator and ensure all apps are updated.  This will ensure that the OpenXR runtime on your HoloLens is updated to OpenXR 1.0.  If using the emulator, you'll want to consult the [emulator input instructions](using-the-hololens-emulator.md#basic-emulator-input) to help you use the Store app within the emulator.
-
-## Getting started with OpenXR for Windows Mixed Reality headsets
-
-To start developing OpenXR applications for immersive Windows Mixed Reality headsets:
-
-1. Be sure you are running the Windows 10 May 2019 Update (1903), which is the minimum requirement for Windows Mixed Reality end users to run OpenXR applications.  If you're on an earlier version of Windows 10, you can upgrade to the May 2019 Update using the [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).  If you're not able to update your PC, it is also possible to [develop your OpenXR app using Windows 10 October 2018 Update (1809)](openxr.md#developing-on-windows-10-october-2018-update), although you may experience lower performance or other issues.
-1. Set up a Windows Mixed Reality headset or follow the instructions to [enable the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md).
-1. Install the [Mixed Reality OpenXR Developer Portal app](https://www.microsoft.com/store/productId/9n5cvvl23qbt).  Installing this app will automatically install the Mixed Reality OpenXR Runtime.  After the OpenXR runtime is installed, the Microsoft Store will keep the runtime up to date.
-1. Run the Mixed Reality OpenXR Developer Portal app from the Start menu and follow the instructions to make the runtime active.
-
-![Mixed Reality OpenXR Developer Portal app](images/mixed-reality-openxr-developer-portal.png)
-
-> [!NOTE]
-> The Mixed Reality OpenXR Runtime will shortly be available to all Windows Mixed Reality end users through the Mixed Reality Portal app.
-
-## Building a sample OpenXR app
-
-The [BasicXrApp](https://github.com/Microsoft/OpenXR-SDK-VisualStudio/tree/master/samples/BasicXrApp) project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
-
-Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is 100% the same!
-
 ## Roadmap
 
-The OpenXR specification defines an extension mechanism that enables runtime implementers to expose additional functionality beyond the [core features](openxr.md#what-is-openxr) defined in the [base OpenXR 1.0 specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html).
+The OpenXR specification defines an extension mechanism that enables runtime implementers to expose additional functionality beyond the [core features](#what-is-openxr) defined in the <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">base OpenXR 1.0 specification</a>.
 
 There are three kinds of OpenXR extensions:
-* **Vendor extensions (e.g. MSFT):** Enables per-vendor innovation in hardware or software features.  Any runtime vendor can introduce and ship a vendor extension at any time.
-* **EXT extensions:** Cross-vendor extensions that multiple companies define and implement.  Groups of interested companies can introduce EXT extensions at any time.
-* **KHR extensions:** Official Khronos extensions ratified as part of a core spec release.  KHR extensions are covered by the same license as the core spec itself.
+* **Vendor extensions (e.g. `MSFT`):** Enables per-vendor innovation in hardware or software features.  Any runtime vendor can introduce and ship a vendor extension at any time.
+  * **Experimental vendor extensions (e.g. `MSFT_preview`):** Experimental vendor extensions being previewed to gather feedback.  `MSFT_preview` extensions are for developer devices only and will be removed when the real extension ships.  To experiment with them, you can [enable preview extensions on your developer device](openxr-getting-started.md#using-preview-extensions).
+* **Cross-vendor `EXT` extensions:** Cross-vendor extensions that multiple companies define and implement.  Groups of interested companies can introduce EXT extensions at any time.
+* **Official `KHR` extensions:** Official Khronos extensions ratified as part of a core spec release.  KHR extensions are covered by the same license as the core spec itself.
 
-By the end of the year, the Mixed Reality OpenXR Runtime will support a set of MSFT and EXT extensions that bring the full set of HoloLens 2 features to OpenXR applications:
-* [Unbounded reference space (world-scale experiences)](coordinate-systems.md#building-a-world-scale-experience)
-* [Spatial anchors + storage](spatial-anchors.md)
-* [Hand articulation + hand mesh​](hands-and-tools.md)
-* [Eye gaze](eye-tracking.md)
-* [Secondary view configurations (Mixed Reality Capture)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)​
-* [Spatial mapping​](spatial-mapping.md)
-* Interop with Windows SDK APIs
+By July 2020, the Windows Mixed Reality OpenXR Runtime will support a set of `MSFT` and `EXT` extensions that bring the full set of HoloLens 2 features to OpenXR applications:
 
-While some of these extensions may start out as vendor-specific MSFT extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor EXT or KHR extensions for many of these feature areas.  This will enable the code you write for those features to be portable across runtime vendors, just as with the core specification.
+| Feature area | Extension availability |
+|--------------|------------------------|
+| Systems + sessions | **OpenXR 1.0 core spec:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#instance" target="_blank">XrInstance</a></code>, <code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#system" target="_blank">XrSystemId</a></code>, <code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#session" target="_blank">XrSession</a></code> |
+| [Reference spaces (view, local, stage)](coordinate-systems.md) | **OpenXR 1.0 core spec:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#spaces" target="_blank">XrSpace</a></code> |
+| View configurations (mono, stereo) | **OpenXR 1.0 core spec:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#view_configurations" target="_blank">XrView...</a></code> |
+| [Swapchains](rendering.md) + [frame timing](understanding-performance-for-mixed-reality.md) | **OpenXR 1.0 core spec:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#rendering" target="_blank">XrSwapchain...</a></code> + <code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#frame-synchronization" target="_blank">xrWaitFrame</a></code> |
+| Composition layers<br />(projection, quad) | **OpenXR 1.0 core spec:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#compositing" target="_blank">XrCompositionLayer...</a></code> + <code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#frame-submission" target="_blank">xrEndFrame</a></code> |
+| [Input and haptics](interaction-fundamentals.md) | **OpenXR 1.0 core spec:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#input" target="_blank">XrAction...</a></code> |
+| Direct3D 11 integration | **Official `KHR` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_KHR_D3D11_enable" target="_blank">XR_KHR_D3D11_enable</a></code><br /> |
+| Direct3D 12 integration | **Official `KHR` extension defined:** *(not yet supported)*<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_KHR_D3D12_enable" target="_blank">XR_KHR_D3D12_enable</a></code><br /><p>**Preview support**: April 2020 *(planned)*</p><p>**Full support**: May 2020 *(planned)*</p> |
+| [Unbounded reference space<br />(world-scale experiences)](coordinate-systems.md#building-a-world-scale-experience) | **`MSFT` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_unbounded_reference_space" target="_blank">XR_MSFT_unbounded_reference_space</a></code> |
+| [Spatial anchors](spatial-anchors.md) | **`MSFT` extension released:**<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_MSFT_spatial_anchor">XR_MSFT_spatial_anchor</a></code> |
+| [Hand interaction<br />(grip/aim pose, air-tap, grasp)](hands-and-tools.md) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_interaction_preview">XR_MSFT_hand_interaction_preview</a></code><p>**`MSFT` release**: April 2020 *(planned)*</p> |
+| [Hand articulation + hand mesh](hands-and-tools.md) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_preview">XR_MSFT_hand_tracking_preview</a></code><br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_hand_tracking_mesh_preview">XR_MSFT_hand_tracking_mesh_preview</a></code><p>**`MSFT` release**: May 2020 *(planned)*</p> |
+| Interop with other HoloLens SDKs (e.g. [QR](qr-code-tracking.md)) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_spatial_graph_bridge_preview">XR_MSFT_spatial_graph_bridge_preview</a></code><p>**`MSFT` release**: May 2020 *(planned)*</p> |
+| [Eye gaze](eye-tracking.md) | <p>**`EXT` extension defined**: *(not yet supported)*<br /><code><a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#XR_EXT_eye_gaze_interaction" target="_blank">XR_EXT_eye_gaze_interaction</a></code><p>**Preview support**: April 2020 *(planned)*</p><p>**Full support**: May 2020 *(planned)*</p> |
+| [Mixed Reality Capture<br />(third render from PV camera)](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) | **`MSFT_preview` extension available:**<br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_secondary_view_configuration_preview">XR_MSFT_secondary_view_configuration_preview</a></code><br /><code><a href="https://microsoft.github.io/OpenXR-MixedReality/openxr_preview/specs/openxr.html#XR_MSFT_first_person_observer_preview">XR_MSFT_first_person_observer_preview</a></code><br /><p>**`MSFT` release**: June 2020 *(planned)*</p> |
+| [Motion controller render models](motion-controllers.md#rendering-the-motion-controller-model) | <p>**`MSFT_preview`**: April 2020 *(planned)*</p><p>**`MSFT` release**: July 2020 *(planned)*</p> |
+| [Scene understanding (planes, meshes)](scene-understanding.md) | <p>**`MSFT_preview`**: May 2020 *(planned)*</p><p>**`MSFT` release**: July 2020 *(planned)*</p> |
 
-## Troubleshooting
+While some of these extensions may start out as vendor-specific `MSFT` extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor `EXT` or `KHR` extensions for many of these feature areas.  This will enable the code you write for those features to be portable across runtime vendors, just as with the core specification.
 
-Here are some troubleshooting tips for the Mixed Reality OpenXR Runtime.  If you have any other questions about the [OpenXR 1.0 specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html), please visit the [Khronos OpenXR Forums](https://community.khronos.org/c/openxr) or [Slack #openxr channel](https://khr.io/slack).
+## Get started with OpenXR
 
-### Developing on Windows 10 October 2018 Update
+You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.  If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
 
-If you're not able to [upgrade your development PC to the May 2019 Update](https://www.microsoft.com/en-us/software-download/windows10), you can set up your Windows 10 October 2018 Update (1809) PC for development by following one more step:
-
-1. Follow the steps above to get started with OpenXR on your desktop PC.
-1. To set the Mixed Reality OpenXR Runtime as your system's active OpenXR runtime, install the [Mixed Reality OpenXR Developer Compatibility Pack](https://aka.ms/openxr-compat).
-
-> [!NOTE]
-> Although Windows 10 October 2018 Update (1809) can be used when developing your OpenXR applications, the Windows 10 May 2019 Update (1903) is the minimum requirement for end users to use OpenXR with Windows Mixed Reality.  You may experience lower performance or other issues when running your OpenXR app on the October 2018 Update.  It is strongly recommended that you upgrade your development PC to the Windows 10 May 2019 Update (1903).
-
-### OpenXR app not starting Windows Mixed Reality
-
-If your OpenXR app is not starting Windows Mixed Reality when you run it, the Mixed Reality OpenXR Runtime may not be set as the active runtime.  Be sure to run the Mixed Reality OpenXR Developer Portal app and follow the instructions to make the runtime active.
-
-### Mixed Reality OpenXR Developer Portal app cannot be installed 
-
-Be sure you are running at least the Windows 10 October 2018 Update (1809).  If you're on an earlier version of Windows 10, you can upgrade to the May 2019 Update (1903) using the [Windows 10 Update Assistant](https://www.microsoft.com/en-us/software-download/windows10).
-
-If the Install button on the Mixed Reality OpenXR Developer Portal app does nothing on Windows 10 October 2018 Update, your system may have cached stale system requirements for the app.  You can run the command `wsreset.exe` from a command prompt to clear the cache.
+To start developing OpenXR applications for HoloLens 2 or immersive Windows Mixed Reality headsets, see [how to get started with OpenXR development](openxr-getting-started.md).
 
 ## See also
 
-* [More information on OpenXR](https://www.khronos.org/openxr/)
-* [OpenXR 1.0 specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html)
-* [OpenXR 1.0 API reference](https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html)
-* [OpenXR 1.0 quick reference guide](https://www.khronos.org/registry/OpenXR/specs/1.0/refguide/OpenXR-1.0-web.pdf)
+* <a href="https://www.khronos.org/openxr/" target="_blank">More information on OpenXR</a>
+* <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">OpenXR 1.0 specification</a>
+* <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">OpenXR 1.0 API reference</a>
+* <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">OpenXR 1.0 quick reference guide</a>

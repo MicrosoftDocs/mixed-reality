@@ -1,7 +1,7 @@
 ---
 title: Unity Play Mode
 description: Using Play Mode in the Unity editor to preview your changes on a device without deploying an app.
-author: JonMLyons
+author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
@@ -12,7 +12,7 @@ keywords: Unity, remoting, holographic remoting, holographic remoting player
 
 # Unity Play Mode
 
-A fast way to work on your Unity project is to use "Play Mode". This runs your app locally in the Unity editor on your PC. Unity uses Holographic Remoting to provide a fast way to preview your content on a real HoloLens device.
+A fast way to work on your Unity project is to use "Play Mode". This runs your app locally in the Unity editor on your PC. Unity uses Holographic Remoting to provide a fast way to preview your content on a real HoloLens device. Play Mode can also be used with a Windows Mixed Reality headset attached to your development PC.
 
 ## Unity Play Mode with Holographic Remoting
 

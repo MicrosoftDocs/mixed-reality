@@ -1,24 +1,30 @@
 ---
-title: Spatial sound
-description: Using spatial sound in a mixed reality application allows you to convincingly place sounds in a 3D space.
-author: hak0n
-ms.author: hakons
-ms.date: 03/21/2018
+title: Audio in mixed reality
+description: Audio in mixed reality can increase user confidence in UI interactions and immerse users in the experience.
+author: kegodin
+ms.author: kegodin
+ms.date: 11/07/2019
 ms.topic: article
 keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
 ---
 
+# Audio in mixed reality
+Audio is an essential part of design and productivity in mixed reality. Sound can:
+* Increase user confidence in gesture and voice interactions.
+* Guide users to next steps.
+* Effectively combine virtual objects with the real world.
 
+The low-latency head tracking of mixed reality headsets, including HoloLens, supports high-quality HRTF-based spatialization. You can spatialize audio in your application to:
+* Call attention to visual elements.
+* Help users maintain awareness of their real-world surroundings.
 
-# Spatial sound
+Acoustics more deeply connect holograms to the mixed-reality world. It provides cues about the environment and object state.
 
-When objects are out of our line of sight, one of the ways that we can perceive what's going on around us is through sound. In Windows Mixed Reality, the audio engine provides the aural component of the mixed-reality experience by simulating 3D sound using direction, distance, and environmental simulations. Using spatial sound in an application allows developers to convincingly place sounds in a 3 dimensional space (sphere) all around the user. Those sounds will then seem as if they were coming from real physical objects or the mixed reality holograms in the user's surroundings. Given that [holograms](hologram.md) are objects made of light and sometimes sound, the sound component helps ground holograms making them more believable and creating a more immersive experience.
-
-Although holograms can only appear visually where the user's gaze is pointing, your app's sound can come from all directions; above, below, behind, to the side, etc. You can use this feature to draw attention to an object that might not currently be in the user's view. A user can perceive sounds to be emanating from a source in the mixed-reality world. For example, as the user gets closer to an object or the object gets closer to them, the volume increases. Similarly, as objects move around a user, or vice versa, spatial sounds give the illusion that sounds are coming directly from the object.
+See detailed [examples of design that uses audio](spatial-sound-design.md).
 
 <br>
 
->[!VIDEO https://www.youtube.com/embed/PTPvx7mDon4]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/PTPvx7mDon4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Device support
 
@@ -31,43 +37,60 @@ Although holograms can only appear visually where the user's gaze is pointing, y
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><strong>HoloLens 2</strong></td>
+        <td><a href="hololens-hardware-details.md"><strong>HoloLens (first gen)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
-        <td>Spatial sound</td>
+        <td>Spatialization</td>
         <td>✔️</td>
         <td>✔️</td>
-        <td>✔️ (with headphones)</td>
+        <td>✔️</td>
+    </tr>
+     <tr>
+        <td>Spatialization hardware acceleration</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
     </tr>
 </table>
 
-## Simulating the perceived location and distance of sounds
+## Use of sounds in mixed reality
+[Use of sounds in mixed reality](spatial-sound-design.md) requires a different approach than in touch and keyboard-and-mouse applications. Key sound design decisions include which sounds to spatialize and which interactions to sonify. These decisions strongly effect user confidence, productivity, and learning curve.
 
-By analyzing how sound reaches both our ears, our brain determines the distance and direction of the object emitting the sound. An HRTF (or Head Related Transfer Function) simulates this interaction by modeling the spectral response that characterizes how an ear receives sound from a point in space. The spatial audio engine uses personalized HRTFs to expand the mixed reality experience, and simulate sounds that are coming from various directions and distances.
+### Case studies
+HoloTour virtually takes users to tourist and historical sites around the world. See the [Sound design for HoloTour](case-study-spatial-sound-design-for-holotour.md) case study. A special microphone and rendering setup were used to capture the subject spaces.
+
+RoboRaid is a high-energy shooter for HoloLens. The [Sound design for RoboRaid](case-study-using-spatial-sound-in-roboraid.md) case study describes the design choices that were made to ensure spatial audio was used to the fullest dramatic effect.
+
+## Spatialization
+Spatialization is the directional component of spatial audio. For a 7.1 home theater setup, spatialization is as simple as panning between loudspeakers. But for headphones in mixed reality, it's essential to use an HRTF-based technology for accuracy and comfort. Windows offers HRTF-based spatialization, and this support is hardware-accelerated on HoloLens 2.
 
 <br>
 
->[!VIDEO https://www.youtube.com/embed/aB3TDjYklmo]
+<iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Left or right audio (azimuth) cues originate from differences in the time sound arrives at each ear. Up and down cues originate from spectral changes produced by the outer ear shape (pinnae). By designating where audio is coming from, the system can simulate the experience of sound arriving at different times to our ears. Note that on HoloLens, while azimuth spatialization is personalized, the simulation of elevation is based on an average set of anthropometrics. Thus, elevation accuracy may be less accurate than azimuth accuracy.
+### Should I spatialize?
+Spatialization can improve many sounds in mixed-reality applications. Spatialization takes a sound out of the listener's head and places it in the world. For suggestions on effective use of spatialization in your application, see [Spatial sound design](spatial-sound-design.md).
 
-The characteristics of sounds also change based on the environment in which they exist. For instance, shouting in a cave will cause your voice to bounce off the walls, floors, and ceilings, creating an echo effect. The room model setting of spatial sound reproduces these reflections to place sounds in a particular audio environment. You can use this setting to match the user's actual location for simulation of sounds in that space to create a more immersive audio experience.
+### Spatializer personalization
+HRTFs manipulate the level and phase differences between ears across the frequency spectrum. They're based on physical models and measurements of human head, torso, and ear shapes (pinnae). Our brains respond to these differences to provide perceived direction in sound.
 
-## Integrating spatial sound
+Every individual has a unique ear shape, head size, and ear position. So the best HRTFs conform to you. To increase spatialization accuracy, HoloLens uses your inter-pupilary distance (IPD) from the headset displays to adjust the HRTFs for your head size.
 
-Because the general principle of mixed reality is to ground [holograms](hologram.md) in the user's physical world or virtual environment, most sounds from holograms should be spatialized. On HoloLens, there are naturally CPU and memory budget considerations, but you can use 10-12 spatial sound voices there while using less than ~12% of the CPU (~70% of one of the four cores). Recommended use for spatial sound voices include:
-* Gaze Mixing (highlighting objects, particularly when out of view). When a hologram needs a user's attention, play a sound on that hologram (e.g. have a virtual dog bark). This helps the user to find the hologram when it is not in view.
-* Audio Haptics (reactive audio for touchless interactions). For example, play a sound when the user's hand or motion controller enters and exits the gesture frame. Or play a sound when the user selects a hologram.
-* Immersion (ambient sounds surrounding the user).
+### Spatializer platform support
+Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). This API exposes the HoloLens 2 HRTF hardware acceleration to applications.
 
-It is also important to note that while blending standard stereo sounds with spatial sound can be effective in creating realistic environments, the stereo sounds should be relatively quiet to leave room for the subtle aspects of spatial sound, such as reflections (distance cues) that can be difficult to hear in a noisy environment.
+### Spatializer middleware support
+Support for Windows' HRTFs is available for the following third-party audio engines.
+* A [Unity audio engine plugin](spatial-sound-in-unity.md)
+* A [Wwise audio engine plugin](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
-Windows' spatial sound engine only supports a 48k sample rate for playback. Most middleware, such as Unity, will automatically convert sound files into the supported format, but when using Windows Audio APIs directly please match the format of the content to the format supported by the effect.
+## Acoustics
+Spatial audio is about more than direction. Other dimensions include occlusion, obstruction, reverb, portalling, and source modeling. Collectively these dimensions are referred to as *acoustics*. Without acoustics, spatialized sounds lack perceived distance.
 
-## See also
-* [MR Spatial 220](holograms-220.md)
-* [Spatial sound in Unity](spatial-sound-in-unity.md)
-* [Spatial sound in DirectX](spatial-sound-in-directx.md)
-* [Spatial sound design](spatial-sound-design.md)
+Acoustics treatments range from simple to very complex. You can use a simple reverb that's supported by any audio engine to push spatialized sounds into the environment of the listener. Acoustics systems such as [Project Acoustics](https://aka.ms/acoustics)  provide richer and more compelling acoustics treatment. Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound. It's an effective option for cases where the relevant scene geometry is known at development time.
+
+## Next steps
+- [Spatial sound in Unity](spatial-sound-in-unity.md)
+- [How to use sound in mixed-reality applications](spatial-sound-design.md)

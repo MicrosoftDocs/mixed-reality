@@ -1,85 +1,102 @@
 ---
-title: Multi-user capabilities tutorials - 4. Sharing object movements with multiple users
+title: Multi-user capabilities tutorials - 5. Integrating Azure Spatial Anchors into a shared experience
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
+ms.localizationpriority: high
 ---
 
+# 4. Integrating Azure Spatial Anchors into a shared experience
 
-# 4. Sharing object movements with multiple users
+In this tutorial, you will learn how to integrate Azure Spatial Anchors (ASA) into the shared experience. ASA allows multiple devices to have a common reference to the physical world so that the users see each other in their actual physical location and see the shared experience in the same place.
 
-In this Tutorial, we learn how to share the movements of objects so that all participants of a shared session can collaborate together and view each others' interactions. This lesson builds upon the Lunar Launcher that was built as part of the [Base Module Tutorials](mrlearning-base.md).
+## Objectives
 
-Objectives:
+* Integrate ASA into a shared experience for multi-device alignment
+* Learn the fundamentals of how ASA works in the context of a local shared experience
 
-- Bring in the lunar launcher as the 3D model to be shared
-- Configure your project to share the movements of the 3D model.
-- Learn how to build a basic multi-user collaborative application
+## Preparing the scene
 
-## Instructions
+In the Hierarchy window, expand the **SharedPlayground** object, then expand the **TableAnchor** object to expose its child objects:
 
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section1-step1-1.png)
 
-1. Save the scene from the previous lesson (Control+S). You can name it, HLSharedProjectMainPart4.unity, so that it's easier to find when you need it.
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **Buttons** prefab on top of the **TableAnchor** child object in the Hierarchy window to add it to your scene as a child of the TableAnchor object:
 
-2. From the Project window, in the Assets->Scripts folder, double click on GenericNetSync to open it in Visual Studio or which ever code editor you are using.  
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section1-step1-2.png)
 
-![module3chapter4updatestep2](images/module3chapter4updatestep2.png)
+## Configuring the buttons to operate the scene
 
-3. On Lines 34 and 38, remove the // to activate the code for the table that we will use in this lesson. next, Save the file. 
+In this section, you will configure a series of button events that demonstrate the fundamentals of how Azure Spatial Anchors can be used to achieve spatial alignment in a shared experience.
 
-![module3chapter4updatestep3](images/module3chapter4updatestep3.png)
+In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**:
 
-4. In the Project window, double click on the PhotonRoom.cs file in the Assets->Scripts folder to open it in Visual Studio. 
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-1.png)
 
-![module3chapter4updatestep4](images/module3chapter4updatestep4.png)
+In the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
-5. Just like in Step 3, we need to remove the // to activate the code at Lines 25, 26, and 106.
+* To **None (Object)** field, assign the **TableAnchor** object
+* From **No Function** dropdown, select the **AnchorModuleScript** > **StartAzureSession ()** function
 
-![module3chapter4updatestep5a](images/module3chapter4updatestep5a.png) 
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-2.png)
 
-![module3chapter4updatestep5b](images/module3chapter4updatestep5b.png)
+In the Hierarchy window, select the second child button object named **CreateAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
-6. In the Hierarchy view, select the NetworkRoom object.
+* To **None (Object)** field, assign the **TableAnchor** object
+* From **No Function** dropdown, select the **AnchorModuleScript** > **CreateAzureAnchor ()** function
+* To the new **None (Game Object)** field that appears, assign the **TableAnchor** object
 
-![module3chapter4updatestep6](images/module3chapter4updatestep6.png)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-3.png)
 
-7. In the Project view, navigate to Assets->Resources->Prefabs. First, drag and drop the Table prefab to the Tableprefab slot on the PhotonRoom class. Next drag and drop the RocketLauncherCompleteVariantprefab to the Module Prefab slot on the PhotonRoom class.
+In the Hierarchy window, select the third child button object named **ShareAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
-![module3chapter4updatestep7](images/module3chapter4updatestep7.png)
+* To **None (Object)** field, assign the **TableAnchor** object
+* From **No Function** dropdown, select the **SharingModuleScript** > **ShareAzureAnchor ()** function
 
-   Note: If you click on one of the prefab objects and release, the inspector will switch to that object. Click, drag, drop, and release each object to its appropriate slot.
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-4.png)
 
-8. Click the arrow to the left of MixedRealityPlayspace, and move the child game object, MainCamera down into the SharedPlayground prefab. Next, delete the prefab, MixedRealityPlayspace, to delete, select the prefab, and tap "delete" on your keyboard).
-![Module3hapter4step5im](images/module3chapter4step5im.PNG)
+In the Hierarchy window, select the third child button object named **ShareAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
->Note:  Make sure that both the Main Camera and SharedPlayground positions are set to 0,0,0.
->
+* To **None (Object)** field, assign the **TableAnchor** object
+* From **No Function** dropdown, select the **SharingModuleScript** > **GetAzureAnchor ()** function
 
-9. Create a new game object set as a child object to the SharedPlayground parent object to create a new object. Right click on the parent object, and select Create Empty. 
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-5.png)
 
-10. With the new object selected in your hierarchy, change the name of the object to TableAnchor in the Inspector panel. Also, click Add Component, and search for the TableAnchor component. Select it and add it to the object. 
+## Connecting the scene to the Azure resource
 
-![Module3Chapter4step6im](images/module3chapter4step7im.PNG)
+In the Hierarchy window, expand the **SharedPlayground** object and select the **TableAnchor** object. Then in the Inspector window, locate the **Spatial Anchor Manager (Script)** component and configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the [Prerequisites](mrlearning-sharing(photon)-ch1.md#prerequisites) for this tutorial series:
 
-11. Now from the Project panel in the Prefabs folder, drag the Table prefab into the "TableAnchor" child object you just created.
+* In the **Spatial Anchors Account ID** field, paste the **Account ID** from your Azure Spatial Anchors account
+* In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
 
-![Module3Chapter4step8im](images/module3chapter4step8im.PNG)
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section3-step1-1.png)
 
-12. Finally, in the DebugWindow object, change the width to 50 and the height to 20.
+With the **TableAnchor** object still selected, in the Inspector window, make sure all the script components are enabled:
 
-![Module3Chapter4step9im](images/module3chapter4step11im.PNG)
+* Check the checkbox next to the **Spatial Anchor Manager (Script)** components to enable it
+* Check the checkbox next to the **Anchor Module Script (Script)** components to enable it
+* Check the checkbox next to the **Sharing Module Script (Script)** components to enable it
+
+![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section3-step1-2.png)
+
+## Trying the experience with spatial alignment
+
+> [!NOTE]
+> Azure Spatial Anchors can not run in Unity. Consequently, to test the Azure Spatial Anchors functionality, you need to deploy the project to a minimum of two HoloLens devices.
+
+If you now build and deploy the Unity project to two HoloLens devices, you can achieve spatial alignment between the devices by sharing the Azure Anchor ID. To test it out, you can follow these steps:
+
+1. On HoloLens device 1: **Start the application** (the Rocket Launcher is instantiated and placed on the table)
+2. On HoloLens device 2: **Start the application** (both users see the table with the Rocket Launcher, however, the table does not appear in the same place and the user avatars do not appear where the users are)
+3. On HoloLens device 1: Press the **Start Azure Session** button
+4. On HoloLens device 1: Press the **Create Azure Anchor** button (creates anchor at the location of the TableAnchor object and stores the anchor information in the Azure resource).
+5. On HoloLens device 1: Press the **Share Azure Anchor** button (shares the anchor ID with other users in real-time)
+6. On HoloLens device 2: Press the **Start Azure Session** button
+7. On HoloLens device 2: Press the **Get Azure Anchor** button (connects to the Azure resource to retrieve the anchor information for the shared anchor ID, then moves the TableAnchor object to the location where the anchor was created with the HoloLens device 1)
 
 ## Congratulations
 
-
-Once this is complete, all users that join your Unity project can move the lunar launcher around. All movements are synchronized so that each user can see each others' interactions. These concepts serve as the fundamental building blocks for full-featured, shared collaboration experiences. 
-
-Although all users are connected as part of a shared experience, and can see the relative movements of objects, the application is still unable to accurately align avatars and objects so that local users see each other and objects in the same place within the physical world. In order to anchor a local shared experiences, every device requires a common understanding of the physical environment. In this module, we'll achieve this by using [Azure Spatial Anchors](<https://azure.microsoft.com/en-us/services/spatial-anchors/>) (ASA) that will be implemented in the next lesson.
-
-Before proceeding to the next lesson, we'll need to complete the ASA Learning Module that covers ASA basics, Azure account and resource creation, and other fundamental buildings blocks required before we can integrate this into our shared experience.
-
-[Next Lesson: 5. Integration Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
-
+In this tutorial, you learned how to integrate Azure's powerful Spatial Anchors to align devices in a shared experience. This also concludes this tutorial series where you have learned how to set up a Photon account and application, integrate Photon and PUN into a Unity application, configure user avatars and shared objects, and finally align multiple participants using ASA.

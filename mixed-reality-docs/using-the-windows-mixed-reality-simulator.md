@@ -1,6 +1,6 @@
 ---
 title: Using the Windows Mixed Reality simulator
-description: The Windows Mixed Reality simulator allows you to test mixed reality apps on your PC without a Windows Mixed Reality immersive headset. 
+description: The Windows Mixed Reality simulator allows you to test mixed reality apps on your PC without a Windows Mixed Reality immersive headset.
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 04/25/2019
@@ -28,6 +28,8 @@ The Windows Mixed Reality simulator allows you to test mixed reality apps on you
    * Enabling simulation installs and enables the left simulated 6-DOF controller by default.  Prior to the Windows 10 May 2019 update, installing a simulated 6-DOF controller requires administrator permissions.  You must accept the User Account Control dialog if one appears.
 
 You should now be running with simulation!
+
+If you want to disable Developer mode in Settings, you should first turn the Simulation toggle switch to **Off** in the **For developers** section of the Mixed Reality Portal.
 
 ## Deploying apps to the Mixed Reality simulator
 

@@ -238,7 +238,7 @@ There are certain limitations around multiple apps accessing MRC at the same tim
 
 The photo/video camera is limited to the number of processes that can access it at the same time. While a process is recording video or taking a photo any other process will fail to acquire the photo/video camera. (this applies to both Mixed Reality Capture and standard photo/video capture)
 
-With HoloLens 2, an app can use MediaCaptureInitializationSettings's [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) property to indicate that they want to run SharedReadOnly if they don't need exclusive control over the photo/video camera. Doing so means the resolution and framerate of the capture will be limited to what other apps have configured the camera to provide.
+With HoloLens 2, an app can use MediaCaptureInitializationSettings' [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) property to indicate that they want to run SharedReadOnly if they don't need exclusive control over the photo/video camera. Doing so means the resolution and framerate of the capture will be limited to what other apps have configured the camera to provide.
 
 ##### Built-in MRC photo/video camera access
 

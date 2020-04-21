@@ -10,7 +10,7 @@ keywords: deploy, unity, visual studio, HoloLens, HoloLens 2, immersive headset
 
 # Best practices for working with Unity and Visual Studio
 
-A developer creating a mixed reality application with Unity will need to switch between Unity and Visual Studio to build the application package that is deployed to HoloLens and/or an immersive headset. By default two instances of Visual Studio are required (one to modify Unity scripts and one to deploy to the device and debug). The following procedure allows development using single Visual Studio instance, reduces the frequency of exporting Unity projects, and improves the debugging experience.
+A developer creating a mixed reality application with Unity will need to switch between Unity and Visual Studio to build the application package that is deployed to HoloLens and/or an immersive headset. By default, two instances of Visual Studio are required (one to modify Unity scripts and one to deploy to the device and debug). The following procedure allows development using single Visual Studio instance, reduces the frequency of exporting Unity projects, and improves the debugging experience.
 
 ## Improving iteration time
 
@@ -21,16 +21,16 @@ Support for .NET scripting back-end in Unity is being deprecated in Unity 2018 a
    - Open **Virus & threat protection** under your Windows 10 settings app
    - Select **Manage Settings** under **Virus & threat protection settings**
    - Select **Add or remove exclusions** under the **Exclusions** section
-   - Click **Add an exclusion** and select the folder contain your Unity project code and build outputs
+   - Click **Add an exclusion** and select the folder containing your Unity project code and build outputs
 3) Utilize an SSD for building
 
-Please read [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) for more info. Also please read [Debugging on IL2CPP Scripting Back-end](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html).
+Review [Optimizing Build Times for IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html) for more info. Also, review [Debugging on IL2CPP Scripting Back-end](https://docs.unity3d.com/Manual/windowsstore-debugging-il2cpp.html).
 
-Further, consider installing the [*UnityScriptAnalyzer* Visual Studio extension](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer). This tool analyzes your Unity C# scripts for code that may be able to be written in a more optimized manner.
+Furthermore, consider installing the [*UnityScriptAnalyzer* Visual Studio extension](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer). This tool analyzes your Unity C# scripts for code that may be able to be written in a more optimized manner.
 
 ## Visual Studio Tools for Unity
 
-Download [Visual Studio Tools for Unity](https://docs.microsoft.com/en-us/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
+Download [Visual Studio Tools for Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity?view=vs-2019)
 
 **Benefits of Visual Studio Tools for Unity**
 * Debug Unity in-editor play mode from Visual Studio by putting breakpoints, evaluating variables and complex expressions.
@@ -40,7 +40,7 @@ Download [Visual Studio Tools for Unity](https://docs.microsoft.com/en-us/visual
 
 ## Expose C# class variables for easy tuning
 
-There are two ways to expose class variables. The recommended way to do so is to add the [SerializeField] attribute to your private variables. This allows them to be accessed from the editor but not programatically exposed.  The other option is to make C# class variables public to expose them in the editor UI. 
+There are two ways to expose class variables. The recommended way is to add the [SerializeField] attribute to your private variables. This allows them to be accessed from the editor but not programmatically exposed.  The other option is to make C# class variables public to expose them in the editor UI. 
 
 Both approaches make it possible to easily tweak variables while playing in-editor. This is especially useful for tuning interaction mechanic properties.
 

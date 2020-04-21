@@ -1,9 +1,9 @@
 ---
 title: Establishing a secure connection with Holographic Remoting
 description: This page explains how to establish a secure encrypted connection when using Holographic Remoting.
-author: bethau
-ms.author: bethau
-ms.date: 08/01/2019
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 03/11/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
@@ -22,7 +22,7 @@ When streaming content to HoloLens 2 over a insecure Network such as an open WiF
 >[!IMPORTANT]
 >Even when using a trusted local WiFi using an encrypted connection should be considered.
 
-To be able to use a encrypted connection you will need to implement both a [custom player](holographic-remoting-create-player.md) and a [custom host app](holographic-remoting-create-host.md).
+To be able to use a encrypted connection you will need to implement both a [custom player](holographic-remoting-create-player.md) and a [custom remote app](holographic-remoting-create-host.md).
 
 The encryption is achieved by using the underlying platforms TLS implementation.
 
@@ -31,7 +31,7 @@ The encryption is achieved by using the underlying platforms TLS implementation.
 The following objects need to be implemented to allow for a certificate exchange.
 
 >[!TIP]
->Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](https://docs.microsoft.com/en-us/windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
+>Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
 
 >[!IMPORTANT]
 >The ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` inside the NuGet package contains detailed documentation for the API related to secure connections.
@@ -58,8 +58,8 @@ Furthermore, to allow for the exchange of a secure token the following objects n
 Once these objects are implemented ```ListenSecure``` needs to be called instead of ```Listen``` and ```ConnectSecure``` instead of ```Connect``` on the remote context and player context respectively. ```ListenSecure``` requires an additional certificate provider and authentication receiver over ```Listen```. ```ConnectSecure``` requires an additional authentication provider and certificate validator over ```Connect```.
 
 ## See Also
-* [Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
+* [Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting software license terms](https://docs.microsoft.com/en-us/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)
