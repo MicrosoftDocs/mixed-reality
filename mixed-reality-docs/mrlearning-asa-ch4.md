@@ -71,7 +71,7 @@ And Rename Profile name with “UnityARConfigurationProfile ”  2 and click on 
 
 **Step 3:**
 
-While Selecting MixedRealitytToolKit in Hierarchy section expand the camera setting providers in inspector window and  click on **+Add Camera Setting Provider** > expand **New data provider 1**> select Type **None** >select **Microsoft .MixedReality.Toolkit.Experimental.UnityAR**  > Select **UnityARCameraSettings**
+While Selecting MixedRealitytToolKit in Hierarchy expand the camera setting providers in inspector window and  click on **+Add Camera Setting Provider** > expand **New data provider 1**> select Type **None** >select **Microsoft .MixedReality.Toolkit.Experimental.UnityAR**  > Select **UnityARCameraSettings**
 
 ![image-20200422092357030](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422092357030.png)
 
@@ -79,13 +79,15 @@ While Selecting MixedRealitytToolKit in Hierarchy section expand the camera sett
 
 Adding supporting scripts
 
+While Selecting MixedRealitytToolKit in Hierarchy click on Add component button at inspector window
 
+And type **AR reference Point manager** in search bar and  select the script
 
+![image-20200422093717471](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422093717471.png)
 
+2 script **AR Session Origin** and  **AR reference Point manager** will be added to inspector window like below 
 
-
-
-
+![image-20200422093845833](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422093845833.png)
 
 
 
