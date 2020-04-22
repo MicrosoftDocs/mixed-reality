@@ -11,6 +11,106 @@ ms.localizationpriority: high
 
 # 4. Build your Azure spatial anchors application for android/iOS device using AR Foundation
 
+## **Section 1.0**
+
+## Adding inbuilt Unity packages
+
+To support Android device we have to import  below unity packages with specific versions 
+
+a. **ARFoundation 2.1.4**
+
+b.  **ARCore XR plugin 2.2.0 preview 2**
+
+**Step 1:**
+
+In the Unity menu, select **Window** > **Package Manager**:
+
+![image-20200422075550526](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422075550526.png)
+
+It might take a few seconds before the AR Foundation package appears in the list.
+
+In the Package Manager window, select **AR Foundation** , select See all version and select version 2.1.4 and install the package by clicking the **Install** button:
+
+![image-20200422075910777](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422075910777.png)
+
+**Step 2:**
+
+Repeat the same process of step 1 to import  **ARCore XR plugin 2.2.0 preview 2**
+
+if you not able to find specific ARCore XR plugin , first install version 2.0.2  
+
+![image-20200422080455672](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422080455672.png)
+
+After installation we can  update specific version 2.2.0 preview 2
+
+![image-20200422080652614](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422080652614.png)
+
+
+
+## Section 1.1
+
+## Customize MRTK to support ARFoundation (ARCore / ARkit) Camera
+
+**Step 1:**
+
+Select MixedRealitytToolKit in Hierarchy section and select clone button on Mixed Reality ToolKit (Script) at inspector section(Right side of Window)
+
+![image-20200422083043653](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422083043653.png)
+
+Here we are just taking the copy of setting to make it in editable format
+
+After selecting clone button a new Clone Profile window will we opened , Rename Profile name with “UnityARConfigurationProfile” and click on Clone button
+
+**Step 2:**
+
+Similar to Step 1 clone the Camera settings at inspector window (Right bottom of window) 
+
+![image-20200422085303818](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422085303818.png)
+
+And Rename Profile name with “UnityARConfigurationProfile ”  2 and click on Clone button
+
+**Step 3:**
+
+While Selecting MixedRealitytToolKit in Hierarchy section expand the camera setting providers in inspector window and  click on **+Add Camera Setting Provider** > expand **New data provider 1**> select Type **None** >select **Microsoft .MixedReality.Toolkit.Experimental.UnityAR**  > Select **UnityARCameraSettings**
+
+![image-20200422092357030](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422092357030.png)
+
+**Step 4:**
+
+Adding supporting scripts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
