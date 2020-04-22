@@ -77,7 +77,7 @@ While Selecting MixedRealitytToolKit in Hierarchy expand the camera setting prov
 
 **Step 4:**
 
-Adding supporting scripts
+**Adding supporting scripts**
 
 While Selecting MixedRealitytToolKit in Hierarchy click on Add component button at inspector window
 
@@ -91,39 +91,55 @@ And type **AR reference Point manager** in search bar and  select the script
 
 
 
+## Section 2.0
+
+## Build Application to Android Device
+
+Go to File at top of window and select Build setting 
+
+![image-20200422100920036](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422100920036.png)
+
+A new window will be appear on screen,then select Android and click on switch platform
+
+![image-20200422105815525](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422105815525.png)
+
+It will take few minutes to switch 
+
+Then click on **Add open scenes** and make sure your scene added correctly
+
+![image-20200422103018560](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422103018560.png)
+
+Click on Player setting to make changes for Android
+
+In player settings expand XR setting and select **Virtual Reality Support**  and **None** by selecting "+" Symbol
+
+![image-20200422103744879](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422103744879.png)
+
+In player settings expand Other setting and select **Vulkan**  and remove it by selecting "-" Symbol
+
+![image-20200422104317725](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422104317725.png)
+
+Close player setting and click on Build button and save the Apk file 
 
 
 
+## Section 3.0
 
+## Build Application to ios Device
 
+To support ios device we have to import below one more unity packages with specific versions 
 
+**ARKit XR plugin 2.1.1**
 
+To do this repeat the same procedure of  **Section 1.0** > **step 1** and install the package
 
+![image-20200422113237530](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422113237530.png)
 
+Go to File at top of window and select Build setting
 
+![image-20200422100920036](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422100920036.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+A new window will be appear on screen,then select iOS and click on switch platform and keep the same player settings like Android
 
 
 
