@@ -109,7 +109,7 @@ This takes few minutes to switch ,after switching to Android platform  click on 
 
 ![image-20200422103018560](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422103018560.png)
 
-To make changes for Android ,click on Player setting
+To make changes for Android ,click on Player settings
 
 In player settings expand XR setting and select **Virtual Reality Support**  and **None** by selecting "+" Symbol
 
