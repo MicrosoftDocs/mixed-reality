@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors tutorials - 1. Getting started with Azure Spatial Anchors
+title: Azure Spatial Anchors tutorials - 4. Getting started with Azure Spatial Anchors
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,136 +9,109 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 4. Build your Azure spatial anchors application for android/iOS device using AR Foundation
+# 4. Azure spatial anchors for android and iOS 
 
-## **Section 1.0**
+In this tutorial, you will learn how to build the existing HoloLens UWP azure spatial anchors application to android and iOS devices using AR Foundation.
+
+## Objectives
+
+* Learn how to build existing HoloLens UWP application using Unity's AR Foundation and ARCore XR Plugin to android devices.
+* Learn how to build existing HoloLens UWP application using Unity's AR Foundation and ARKit XR Plugin to iOS devices.
 
 ## Adding inbuilt Unity packages
 
-Here we install Unity's inbuilt AR Foundation package of specific versions that is required to  support Android device .
+In this section, you will install Unity's inbuilt AR Foundation and ARCore XR plugin packages of specific versions that is required to support Android device .
 
-The unity packages that we import are
+Make sure you install right version of unity packages as listed below:
 
-a. **ARFoundation 2.1.4**
+a. **AR Foundation 2.1.4**
 
-b.  **ARCore XR plugin 2.2.0 preview 2**
-
-**Step 1:**
+b. **ARCore XR plugin 2.2.0 preview 2**
 
 In the Unity menu, select **Window** > **Package Manager**:
 
-![image-20200424153821840](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424153821840.png)
+![image-20200422075550526](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422075550526.png)
 
 It might take a few seconds before the AR Foundation package appears in the list.
 
 In the Package Manager window, select **AR Foundation** , here we see many version  and need to  select version 2.1.4 and install the package by clicking the **Install** button:
 
-![image-20200424154330202](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424154330202.png)
-
-**Step 2:**
+![image-20200422075910777](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422075910777.png)
 
 Similarly follow the same process of step 1 to import ARCore XR plugin 2.2.0 preview 2. 
 
-Installing version 2.0.2 first is suggested if you are not able to find the given version of ARCore XR plugin 
+Installing version 2.0.2 first is suggested if you are not able to find the given version of ARCore XR plugin.
 
-![image-20200424154631566](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424154631566.png)
+![image-20200422080455672](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422080455672.png)
 
-After installation we can update specific version 2.2.0 preview 2
+After installation we can  update specific version 2.2.0 preview 2
 
-![image-20200424154846319](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424154846319.png)
+![image-20200422080652614](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422080652614.png)
 
-## Section 1.1
+## Customize MRTK to support AR Foundation camera
 
-## Customize MRTK to support ARFoundation (ARCore / ARkit) Camera
+Here we see to customize MRTK to support ARFoundation. Select MixedRealitytToolKit in Hierarchy section and select clone button on Mixed Reality ToolKit in inspector window.
 
-**Step 1:**
+![image-20200422083043653](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422083043653.png).
 
-Here we see to customize MRTK to support ARFoundation. Select MixedRealitytToolKit in Hierarchy section and select clone button on Mixed Reality ToolKit (Script) at inspector section (Right side of Window)
+In this step we are taking the copy of MRTK settings to make it in editable format.
 
-![image-20200424155116670](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424155116670.png)
+After you select clone button, this opens a new Clone Profile window, now you can rename this profile as "UnityARConfigurationProfile" and click Clone button.
 
-In this step we are taking the copy of setting to make it in editable format.
+Similarly, clone the camera settings in the inspector window and Rename Profile name with “UnityARConfigurationProfile ” and click on Clone button
 
-After you select clone button,this opens a new Clone Profile window, now we rename this Profile with 
-
-"UnityARConfigurationProfile" and then click Clone button.
-
-**Step 2:**
-
-Similar to Step 1 clone the Camera settings at inspector window (Right bottom of window) 
-
-![image-20200424155936412](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424155936412.png)
-
-And Rename Profile name with “UnityARConfigurationProfile ”  2 and click on Clone button
-
-**Step 3:**
+![image-20200422085303818](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422085303818.png)
 
 While Selecting MixedRealitytToolKit in Hierarchy expand the camera setting providers in inspector window and  click on **+Add Camera Setting Provider** > expand **New data provider 1**> select Type **None** >select **Microsoft .MixedReality.Toolkit.Experimental.UnityAR**  > Select **UnityARCameraSettings**
 
-![image-20200424160900647](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424160900647.png)
+![image-20200422092357030](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422092357030.png)
 
-**Step 4:**
+While Selecting MixedRealityToolKit in Hierarchy, attach supporting scripts by clicking on Add component button and type in AR reference Point manager and select the script. 
 
-**Adding supporting scripts**
+Adding "AR Reference Point Manager" script will automatically adds "AR session origin" along with it in the the inspector window.
 
-While Selecting MixedRealityToolKit in Hierarchy ,to attach supporting scripts ,click on Add component button and type in AR reference Point manager and select the script. By this it  automatically  adds AR session origin along with AR reference Point manager to the inspector window.
+![image-20200422093717471](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422093717471.png)
 
+After adding the supporting scripts, the inspector window should look like this,
 
-
-![image-20200424161148068](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161148068.png)
-
- inspector window will look  like below 
-
-![image-20200424161440282](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161440282.png)
-
-
-
-## Section 2.0
+![image-20200422093845833](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422093845833.png)
 
 ## Build Application to Android Device
 
 To build this application to android device ,click on File at the top of window and select Build setting
 
-![image-20200424161541417](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161541417.png)
+![image-20200422100920036](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422100920036.png)
 
 A new window will be appear on screen, select Android and then click on switch platform
 
-![image-20200424161800507](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161800507.png)
+![image-20200422105815525](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422105815525.png)
 
-This takes few minutes to switch ,after switching to Android platform  click on **Add open scenes** and make sure your scene is added correctly
+This will take few minutes to switch ,after switching to Android platform, click on **Add open scenes** and make sure your current scene is added for building. 
 
-![image-20200424162157389](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424162157389.png)
+![image-20200422103018560](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422103018560.png)
 
-To make changes for Android ,click on Player settings
+To make changes for Android platform build settings ,click on Player settings
 
-In player settings expand XR setting and select **Virtual Reality Support**  and **None** by selecting "+" Symbol
+In player settings expand XR setting and select **Virtual Reality Support**  and click "+" Symbol to add **None** under the default SDK section.
 
 ![image-20200422103744879](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422103744879.png)
 
-In player settings expand Other setting and select **Vulkan**  and remove it by selecting "-" Symbol
+In player settings, expand other setting and select **Vulkan**  and remove it by selecting "-" Symbol
 
 ![image-20200422104317725](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422104317725.png)
 
-Close player setting and click on Build button and save the Apk file 
+Close player settings, click on Build button to build and  save the apk file in 
 
-**TO DO: Need one more screenshot** 
+## Build Application to iOS Device
 
+To support iOS devices, we import **ARKit XR plugin 2.1.1**  unity package from the package manager. 
 
+![image-20200422113237530](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422113237530.png)Click on  File at top of window and select Build setting
 
-## Section 3.0
-
-## Build Application to ios Device
-
-To support ios device we  import one more unity packages with specific versions 
-
-**ARKit XR plugin 2.1.1**
-
-To do this repeat the same procedure of  **Section 1.0** > **step 1** and install the package
-
-![image-20200424162600599](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424162600599.png)
-
-Click on  File at top of window and select Build setting
-
-![image-20200424161541417](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161541417.png)
+![image-20200422100920036](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422100920036.png)
 
 A new window will be appear on screen,then select iOS and click on switch platform and keep the same player settings as Android.
+
+## Congratulations
+
+In this tutorial you learned how to build existing HoloLens UWP application to android and iOS devices. You also learned how to use AR Foundation, ARCore XR plugin and ARKit XR plugin in the existing project to make it work on the android and iOS devices.
