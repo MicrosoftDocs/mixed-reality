@@ -27,13 +27,13 @@ b.  **ARCore XR plugin 2.2.0 preview 2**
 
 In the Unity menu, select **Window** > **Package Manager**:
 
-![image-20200422075550526](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422075550526.png)
+![image-20200424153821840](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424153821840.png)
 
 It might take a few seconds before the AR Foundation package appears in the list.
 
 In the Package Manager window, select **AR Foundation** , here we see many version  and need to  select version 2.1.4 and install the package by clicking the **Install** button:
 
-![image-20200422075910777](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422075910777.png)
+![image-20200424154330202](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424154330202.png)
 
 **Step 2:**
 
@@ -41,13 +41,11 @@ Similarly follow the same process of step 1 to import ARCore XR plugin 2.2.0 pre
 
 Installing version 2.0.2 first is suggested if you are not able to find the given version of ARCore XR plugin 
 
-![image-20200422080455672](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422080455672.png)
+![image-20200424154631566](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424154631566.png)
 
-After installation we can  update specific version 2.2.0 preview 2
+After installation we can update specific version 2.2.0 preview 2
 
-![image-20200422080652614](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422080652614.png)
-
-
+![image-20200424154846319](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424154846319.png)
 
 ## Section 1.1
 
@@ -57,7 +55,9 @@ After installation we can  update specific version 2.2.0 preview 2
 
 Here we see to customize MRTK to support ARFoundation. Select MixedRealitytToolKit in Hierarchy section and select clone button on Mixed Reality ToolKit (Script) at inspector section (Right side of Window)
 
-![image-20200422083043653](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422083043653.png) In this step we are taking the copy of setting to make it in editable format.
+![image-20200424155116670](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424155116670.png)
+
+In this step we are taking the copy of setting to make it in editable format.
 
 After you select clone button,this opens a new Clone Profile window, now we rename this Profile with 
 
@@ -67,7 +67,7 @@ After you select clone button,this opens a new Clone Profile window, now we rena
 
 Similar to Step 1 clone the Camera settings at inspector window (Right bottom of window) 
 
-![image-20200422085303818](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422085303818.png)
+![image-20200424155936412](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424155936412.png)
 
 And Rename Profile name with “UnityARConfigurationProfile ”  2 and click on Clone button
 
@@ -75,7 +75,7 @@ And Rename Profile name with “UnityARConfigurationProfile ”  2 and click on 
 
 While Selecting MixedRealitytToolKit in Hierarchy expand the camera setting providers in inspector window and  click on **+Add Camera Setting Provider** > expand **New data provider 1**> select Type **None** >select **Microsoft .MixedReality.Toolkit.Experimental.UnityAR**  > Select **UnityARCameraSettings**
 
-![image-20200422092357030](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422092357030.png)
+![image-20200424160900647](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424160900647.png)
 
 **Step 4:**
 
@@ -85,11 +85,11 @@ While Selecting MixedRealityToolKit in Hierarchy ,to attach supporting scripts ,
 
 
 
-![image-20200422093717471](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422093717471.png)
+![image-20200424161148068](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161148068.png)
 
  inspector window will look  like below 
 
-![image-20200422093845833](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422093845833.png)
+![image-20200424161440282](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161440282.png)
 
 
 
@@ -99,15 +99,15 @@ While Selecting MixedRealityToolKit in Hierarchy ,to attach supporting scripts ,
 
 To build this application to android device ,click on File at the top of window and select Build setting
 
-![image-20200422100920036](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422100920036.png)
+![image-20200424161541417](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161541417.png)
 
 A new window will be appear on screen, select Android and then click on switch platform
 
-![image-20200422105815525](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422105815525.png)
+![image-20200424161800507](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161800507.png)
 
 This takes few minutes to switch ,after switching to Android platform  click on **Add open scenes** and make sure your scene is added correctly
 
-![image-20200422103018560](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422103018560.png)
+![image-20200424162157389](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424162157389.png)
 
 To make changes for Android ,click on Player settings
 
@@ -135,8 +135,10 @@ To support ios device we  import one more unity packages with specific versions
 
 To do this repeat the same procedure of  **Section 1.0** > **step 1** and install the package
 
-![image-20200422113237530](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422113237530.png)Click on  File at top of window and select Build setting
+![image-20200424162600599](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424162600599.png)
 
-![image-20200422100920036](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422100920036.png)
+Click on  File at top of window and select Build setting
+
+![image-20200424161541417](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200424161541417.png)
 
 A new window will be appear on screen,then select iOS and click on switch platform and keep the same player settings as Android.
