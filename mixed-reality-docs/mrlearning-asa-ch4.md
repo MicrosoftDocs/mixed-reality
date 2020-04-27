@@ -103,12 +103,14 @@ To support iOS devices, you should import **ARKit XR plugin 2.1.1** unity packag
 
 Click on File at top of the window and select Build settings.
 
+To make changes to iOS build settings, click on Player settings, expand XR setting and select **Virtual Reality Support**  and click "+" Symbol to add **None** under the default SDK section.
+
 ![image-20200422100920036](C:\Users\Veeruby Technology\AppData\Roaming\Typora\typora-user-images\image-20200422100920036.png)
 
 A new window will appear on screen, then select iOS and click on switch platform and keep the same player settings as Android. Once the platform switching is complete, click on Build to build the iOS XCode project.
 
-
+Follow this guide to learn how to build this project in to your [iOS device](https://hangouts.google.com/call/nCtoXV2WpWf_xQZotpR_AEEF).
 
 ## Congratulations
 
-In this tutorial you learned how to build existing HoloLens UWP application to android and iOS devices. You also learned how to use AR Foundation, ARCore XR plugin and ARKit XR plugin in the existing project to make it work on the android and iOS devices.
+In this tutorial you learned how to build existing project to android and iOS devices. You also learned how to use AR Foundation, ARCore XR plugin and ARKit XR plugin in the existing project to make it work on the android and iOS devices.
