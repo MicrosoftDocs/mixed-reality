@@ -95,7 +95,7 @@ A new window will appear on screen, then select iOS and click on switch platform
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step2.png)
 
-Follow this guide to learn how to build this project in to your [iOS device](https://hangouts.google.com/call/nCtoXV2WpWf_xQZotpR_AEEF).
+Follow this guide to learn how to build this project in to your [iOS device](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project)
 
 ## Congratulations
 
