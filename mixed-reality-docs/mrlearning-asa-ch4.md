@@ -19,8 +19,7 @@ In this tutorial, you will learn how to build the existing project to Android an
 * Learn how to build existing project to iOS device using Unity's AR Foundation and ARKit XR Plugin.
 
 > [!NOTE]
-
-> To complete this tutorial, make sure you have completed Azure Spatial Anchors Tutorials -> [Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
+> To complete this tutorial, make sure you have completed Azure Spatial Anchors Tutorials -> [Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md).
 
 ## Adding inbuilt Unity packages
 
@@ -32,7 +31,7 @@ Make sure you install right version of unity packages as listed below:
 
 - **ARCore XR plugin 2.2.0 preview 2**
 
-- ##### ARKit XR plugin 2.1.1
+- **ARKit XR plugin 2.1.1**
 
 > [!NOTE]
 > If you are developing this project for Android device then no need to install ARKit XR plugin 2.1.1 package. Similarly, If you are developing this project for iOS device then no need to install ARCore XR plugin 2.1.1.
@@ -83,11 +82,11 @@ To build this application to Android device, click on **File** at the top of the
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-1.png)
 
-In player settings, expand other setting and select **Vulkan** and remove it by selecting "-" Symbol.
+Close **Build settings** and select Mixed **Reality Toolkit** > **Utilities** > **Configure Unity Project** and click on **apply** to configure unity project for android platform.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-2.png)
 
-To make changes to Android platform build settings, click on **Player settings** and expand **XR settings**, select **Virtual Reality Support**  and click "+" Symbol to add **None** under the default SDK section. 
+In player settings, expand other setting and select **Vulkan** and remove it by selecting "-" Symbol.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-3.png)
 
@@ -95,13 +94,22 @@ Close player settings, select your device in **Run Device** and click **Build An
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-4.png)
 
+[!NOTE]
+If you get any error related to Android SDK,NDK and JDK modules, please consider opening Unity Hub and installing Android build support with associated SDK, NDK and JDK modules.
+
 ## Build application to iOS Device
 
-To build this application to iOS device, click on **File** at the top of the window and select **Build settings**. A new window will appear on screen, then select **iOS** and click on **switch platform**. Once the platform switching is complete, click on **Build** to build the iOS XCode project.
+To build this application to iOS device, click on **File** at the top of the window and select **Build settings**. A new window will appear on screen, then select **iOS** and click on **switch platform**. 
 
-![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-1.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-2.png)
 
-Follow this guide to learn, how to build this project in to your [iOS device](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project)
+Close **Build settings** and select Mixed **Reality Toolkit** > **Utilities** > **Configure Unity Project** and click on **apply** to configure unity project for iOS platform.
+
+![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-2.png)
+
+To build the iOS XCode project, go to Build settings and click on **Build**. 
+
+Follow this guide to learn, how to build this project in to your [iOS device](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project).
 
 ## Congratulations
 
