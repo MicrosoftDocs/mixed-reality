@@ -101,7 +101,7 @@ If you get any error related to Android SDK,NDK and JDK modules, please consider
 
 To build this application to iOS device, click on **File** at the top of the window and select **Build settings**. A new window will appear on screen, then select **iOS** and click on **switch platform**. 
 
-![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-2.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-1.png)
 
 Close **Build settings** and select Mixed **Reality Toolkit** > **Utilities** > **Configure Unity Project** and click on **apply** to configure unity project for iOS platform.
 
