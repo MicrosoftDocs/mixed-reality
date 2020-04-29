@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 4. Azure Spatial Anchors for Android and iOS 
+# 4. Azure Spatial Anchors for Android and iOS
 
 In this tutorial, you will learn how to build the existing project to Android and iOS devices using AR Foundation, ARCore XR plugin and ARKit XR plugin.
 
@@ -27,11 +27,11 @@ In this section, you will install Unity's inbuilt AR Foundation and ARCore XR pl
 
 Make sure you install right version of unity packages as listed below:
 
-- **AR Foundation 2.1.4**
+* **AR Foundation 2.1.4**
 
-- **ARCore XR plugin 2.2.0 preview 2**
+* **ARCore XR plugin 2.2.0 preview 2**
 
-- **ARKit XR plugin 2.1.1**
+* **ARKit XR plugin 2.1.1**
 
 > [!NOTE]
 > If you are developing this project for Android device then no need to install ARKit XR plugin 2.1.1 package. Similarly, If you are developing this project for iOS device then no need to install ARCore XR plugin 2.1.1.
@@ -48,11 +48,11 @@ In the Package Manager window, select **AR Foundation**, here you see many versi
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-3.png)
 
-Similarly follow the same process to import ARCore XR plugin 2.2.0 preview 2. 
+Similarly follow the same process to import ARCore XR plugin 2.2.0 preview 2.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-4.png)
 
-To support iOS devices, you should import **ARKit XR plugin 2.1.1** unity package from the package manager. 
+To support iOS devices, you should import **ARKit XR plugin 2.1.1** unity package from the package manager.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-5.png)
 
@@ -70,7 +70,7 @@ Similarly, clone the camera settings in the inspector window and rename the prof
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-3.png)
 
-While Selecting MixedRealityToolKit in Hierarchy, attach supporting scripts by clicking on **Add component** button and type in AR reference Point manager and select the script. 
+While Selecting MixedRealityToolKit in Hierarchy, attach supporting scripts by clicking on **Add component** button and type in AR reference Point manager and select the script.
 
 Adding "AR Reference Point Manager" script will automatically adds "AR session origin" along with it in the the inspector window. After adding the supporting scripts, the inspector window should look like this.
 
@@ -99,7 +99,7 @@ If you get any error related to Android SDK,NDK and JDK modules, please consider
 
 ## Build application to iOS Device
 
-To build this application to iOS device, click on **File** at the top of the window and select **Build settings**. A new window will appear on screen, then select **iOS** and click on **switch platform**. 
+To build this application to iOS device, click on **File** at the top of the window and select **Build settings**. A new window will appear on screen, then select **iOS** and click on **switch platform**.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-1.png)
 
@@ -107,11 +107,10 @@ Close **Build settings** and select Mixed **Reality Toolkit** > **Utilities** > 
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-2.png)
 
-To build the iOS XCode project, go to Build settings and click on **Build**. 
+To build the iOS XCode project, go to Build settings and click on **Build**.
 
-Follow this guide to learn, how to build this project in to your [iOS device](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project).
+Follow this guide to learn, how to build this project in to your [iOS device](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project).
 
 ## Congratulations
 
 In this tutorial you learned how to build existing project to Android and iOS devices. You also learned how to use AR Foundation, ARCore XR plugin and ARKit XR plugin in the existing project to make it work on the Android and iOS devices.
-
