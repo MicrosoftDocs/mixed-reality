@@ -9,22 +9,20 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 1. Getting Appx started with Azure Spatial Anchors
+# 1. Getting started with AppxHoloLens Remoting.
 
 ## Overview
 
-Welcome to the second series of the HoloLens 2 tutorials. In this three-part tutorial series, you will learn the fundamentals of Azure Spatial Anchors.
+Welcome to the second series of the HoloLens 2 tutorials. In this Two-part tutorial series, you will learn how to create simple Mixed reality experience demonstration and how to create Standalone UWP HoloLens remoting App.
 
-In this first tutorial, [Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md), you will explore the various steps required to start and stop an Azure session and create, upload, and download Azure anchors on a single device.
+In the first tutorial “create simple Mixed reality experience” you will learn how to create a simple Mixed reality experience demonstrating UI Elements, 3D model manipulation Model clipping features and Eye Tracking Tool tip Highlight, .
 
-In the second tutorial, [Saving, retrieving, and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md), you will learn how to save Azure Spatial Anchors across multiple app sessions by saving anchor information to the HoloLens 2's storage and how to share this anchor information to other devices for a multi-device anchor alignment.
-
-In the third tutorial, [Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md), you will learn how to provide users with feedback about anchor events and statuses when using Azure Spatial Anchors.
+In the second tutorial “create Standalone UWP HoloLens remoting” you will learn how to create a Standalone UWP PC Holographic emulation app and connect to HoloLens 2 at any point providing a way to Visualize 3D content in in Mixed reality.
 
 ## Objectives
 
-* Learn the fundamentals of developing with Azure Spatial Anchors for HoloLens 2
-* Create, upload, and download spatial anchors
+* Learn To Create a Simple Mixed reality experience.
+* Create Standalone UWP HoloLens remoting Application to Connect to HoloLens.
 
 ## Prerequisites
 
@@ -35,15 +33,12 @@ In the third tutorial, [Displaying Azure Spatial Anchor feedback](mrlearning-asa
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added
-* Complete the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial.
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added
 
 > [!IMPORTANT]
-> The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating the Unity project
-<!-- TODO: Consider renaming to 'Creating and preparing the Unity project'-->
-
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
 For this, first follow the [Initializing your project and first application](mrlearning-base-ch1.md), excluding the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions, which includes the following steps:
@@ -58,181 +53,305 @@ For this, first follow the [Initializing your project and first application](mrl
 
 5. [Configure the Unity project for the Mixed Reality Toolkit](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit)
 
-6. [Add the Mixed Reality Toolkit to the Unity scene](mrlearning-base-ch1.md#configure-the-mixed-reality-toolkit) and give the scene a suitable name, for example, *AzureSpatialAnchors*
+6. [Add the Mixed Reality Toolkit to the Unity scene](mrlearning-base-ch1.md#configure-the-mixed-reality-toolkit) and give the scene a suitable name, for example, AppxHololensRemoting
 
-Then follow the [How to configure the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
-
-> [!CAUTION]
-> As mentioned in the [Configure the Unity project for the Mixed Reality Toolkit](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit) instructions linked above, it is strongly recommended to not enable MSBuild for Unity.
-
-## Adding inbuilt Unity packages
-<!-- TODO: Consider renaming to 'Installing AR Foundation' -->
-
-In this section, you will install Unity's inbuilt AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
-
-In the Unity menu, select **Window** > **Package Manager**:
-
-[mrlearning-appx](images/mrlearning-appx/tutorial1-section2-step1-1.png)
-
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section2-step1-1.png)
-
-> [!NOTE]
-> It might take a few seconds before the AR Foundation package appears in the list.
-
-In the Package Manager window, select **AR Foundation** and install the package by clicking the **Install** button:
-
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section2-step1-2.png)
+   
 
 ## Importing the tutorial assets
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
 
-* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) (version 2.1.1)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.2.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.0.unitypackage)
+<!-- TODO: provide correct tutorial Pakage and include if any other pakages -->
+
+* ·    MRTK.Tutorials.[AppxHoloLensRemoting.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) 
+
+  
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section3-step1-1.png)
+<!-- TODO: add Screenshot -->
 
 ## Creating and preparing the scene
 <!-- TODO: Consider renaming to 'Preparing the scene' -->
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **DebugWindow**, **Instructions**, and **ParentAnchor** to select the four prefabs:
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppxHoloLenseRemoting**> **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **Clipping Objects**, **ModelsParant**, **Instructions**, and **Platform** to select the five prefabs:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-1.png)
+<!-- TODO: add Screenshot -->
 
-With the four prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+With the five prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-2.png)
+<!-- TODO: add Screenshot -->
 
-To focus in on the objects in the scene, you can double-click on the ParentAnchor object, and then zoom slightly out again:
+To focus in on the objects in the scene, you can double-click on the **ModelsParant** object, and then zoom slightly in again:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-3.png)
+<!-- TODO: add Screenshot -->
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
 
-## Configuring the buttons to operate the scene
+## Configuring the buttons, Clipping Objects and Eye Tracking Tool Tip to operate the scene
 
 In this section, you will add scripts into the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
 
-### 1. Configure the Pressable Button Holo Lens 2 (Script) component
+### 1.Configuring the ButtonsParant component:
 
-In the Hierarchy window, expand the **ButtonParent** object and select the first child object named **StartAzureSession**:
+in the Hierarchy window, Expand the **ButtonsParant** Object which consists of three Buttons. **NextButton** and **Previous Button** are Used to Change the 3D Objects in the Scene and **ClippingPlaneButton** is used to toggle the **Clipping Object** ON and OFF.
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-1.png)
+<!-- TODO: add Screenshot -->
 
-In the Inspector window, locate the **Pressable Button Holo Lens 2 (Script)** component and add a new event listener to the **Button Pressed ()** event by clicking the **+** icon:
+Now Lets Configure the **ButtonsParan**t Object to Operate the **Next Button Previous Button** and **Clipping Plane Button.**
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-2.png)
+ 
 
-With the StartAzureSession object still selected in the Hierarchy window, click-and-drag the **ParentAnchor** object from the Hierarchy window into the empty **None (Object)** field of the event listener you just added to make the ParentAnchor object listen for button pressed events from this button:
+To the **ButtonsParant** object you will notice two Scrips are attached to it one **ViewButtonControl (Script)** to change the 3D model in the Scene and another **ToogleButton(Script)** to turn on and off the Clipping Objects.
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-3.png)
+<!-- TODO: add Screenshot -->
 
-Click the **No Function** dropdown of the same event listener, then select **AnchorModuleScript** > **StartAzureSession ()** to set the StartAzureSession () function as the action that is triggered when the button pressed events is fired from this button:
+In the Hierarchy window, expand the **ButtonsParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and add a new event listener to the **Events onclick()** event by clicking the **+** icon:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-4.png)
+<!-- TODO: add Screenshot -->
 
-### 2. Configure the Interactable (Script) component
+click-and-drag the **ButtonsParant** object from the Hierarchy window into the empty **None (Object)** field of the Onclick() you just added to make the object listen for button pressed events from this button:
 
-With the StartAzureSession object still selected in the Hierarchy window, in the Inspector window, locate the **Interactable (Script)** component and repeat the same process as in step 1 above for the **OnClick ()** event:
+<!-- TODO: add Screenshot -->
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step2-1.png)
 
-### 3. Configure the remaining buttons
 
-For each of the remaining buttons, complete the process outlined in step 1 and 2 above to assign functions to both the **Button Pressed ()** and **OnClick ()** events:
+Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel()** to set the Next Model function as the action that is triggered when the button pressed events is fired from this button:
 
-* For the **StopAzureSession** object, assign the AnchorModuleScript > **StopAzureSession ()** function.
-* For the **CreateAzureAnchor** object, assign the AnchorModuleScript > **CreateAzureAnchor ()** function,
-  * then drag the **ParentAnchor** again into the empty **None (Game Object)** field.
-* For the **RemoveLocalAnchor** object, assign the AnchorModuleScript > **RemoveLocalAnchor ()** function,
-  * then drag the **ParentAnchor** again into the empty **None (Game Object)** field.
-* For the **FindAzureAnchor** object, assign the AnchorModuleScript > **FindAzureAnchor ()** function.
-* For the **DeleteAzureAnchor** object, assign the AnchorModuleScript > **DeleteAzureAnchor ()** function.
+<!-- TODO: add Screenshot -->
 
-### 4. Connect the scene to the Azure resource
+Similarly by following the above Steps also Configure the **PreviousButton,** and **ClippingPlaneButton** the only Change would be to select the function when the button pressed event is fired.
 
-In the Hierarchy window, select the **ParentAnchor** object and in the Inspector window, scroll down to the **Spatial Anchor Manager (Script)** component.
 
-Then, in the **Credentials** section, paste your Spatial Anchors Account ID and Key, which you created as part of this tutorial's [Prerequisites](mrlearning-asa-ch1.md#prerequisites), into the corresponding **Spatial Anchors Account Id** and **Spatial Anchors Account Key** fields:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step4-1.png)
+For **PreviousButton** select **ViewButtonControl** >**PreviousModel()** to set the previous Model function. 
 
-## Trying the basic behaviors of Azure Spatial Anchors
+<!-- TODO: add Screenshot -->
 
-Now that your scene is configured to demonstrate the basics of Azure Spatial Anchors, it is time to deploy the app so you can experience Azure Spatial Anchors firsthand.
 
-### 1. Add additional required capabilities
 
-In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window:
+For **ClippingPlaneButton** select **ToggleButton**> **ToggleClipping()** to set the Toggle function for Clipping Object.
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-1.png)
+<!-- TODO: add Screenshot -->
 
-In the Player Settings window, select **Player** and then **Publishing Settings**:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-2.png)
 
-In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, **RemovableStorage**, and **Webcam** capabilities:
+### 2. Adding Models and Clipping Objects to the Scene:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-3.png)
+Now that the Buttons are Configured let us add some Models and the Clipping Objects to the Scene.
 
-### 2. Deploy the app to your HoloLens 2
+in the Hierarchy Click on **ButtonsParant** object and on the Inspector widow Expand the ViewControlScript now you could find the **Modles[]** Game object which indicates the No of 3D models in the Scene.
 
-Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
+<!-- TODO: add Screenshot -->
 
-> [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions.
+For demonstration we have provided with 5 different 3D models for this tutorial, which are present as the child Objects of the **ModelsParant** in the Hierarchy. 
 
-### 3. Run the app on your HoloLens 2 and follow the in-app instructions
+<!-- TODO: add Screenshot -->
 
-> [!CAUTION]
-> Azure Spatial Anchors uses the internet to save and load the anchor data so make sure your device is connected to the internet.
 
-When the application is running on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step3-1.png)
+Now in the Inspector window expand the **Models** object in the **ViewButtonScript** attached to the **ButtonsParant** object. Enter the No of 3D model you would like to have on the Scene, hear in our case it would be 5.
 
-## Anchoring an experience
+<!-- TODO: add Screenshot -->
 
-In the previous sections, you learned the fundamentals of Azure Spatial Anchors. We used a cube to represent and visualize the parent game object with the attached anchor. In this section, you will learn how to anchor an entire experience by placing it as a child of the ParentAnchor object.
 
-### 1. Add the Rocket Launcher experience
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **RocketLauncher** folder and select the **RocketLauncher_Complete** prefab:
+Now Drag and Drop the 3D Models one by one From the **ModelsParant** Object in the hierarchy. 
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step1-1.png)
 
-With the RocketLauncher_Complete prefab still selected, drag it on top of the **ParentAnchor** object in the Hierarchy window to make it a child of the ParentAnchor object:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step1-2.png)
+<!-- TODO: add Screenshot -->
 
-### 2. Reposition the Rocket Launcher experience
+To add the **Clipping object** to the Scene in the Hierarchy  Click on **ButtonsParant** object and on the Inspector widow Expand the **ToggleButtonScript** hear you will find a field "ClippingObject" to add the **Clipping object** Component.
 
-Position, rotate, and scale the **RocketLauncher_Complete** object to a suitable scale and orientation, while also ensuring the **ParentAnchor** object is still exposed, for example:
+<!-- TODO: add Screenshot -->
 
-* Transform **Position** X = 0, Y = 0, Z = 3.75
-* Transform **Rotation** X = 0, Y = 90, Z = 0
-* Transform **Scale** X = 10, Y = 10, Z = 10
+To this ClippingObject Field add the **Clippingobjects** component present in the hierarchy,
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step2-1.png)
+<!-- TODO: add Screenshot -->
 
-In the application, users may now reposition the entire Rocket Launcher experience by moving the cube.
+### 3. Configure the Clipping Objects to Work:
 
-> [!TIP]
-> There are a variety of user experience flows for repositioning experiences including the use of a repositioning object (such as the cube used in this tutorial), the use of a button to toggle a bounding box that surrounds the experience, the use of position and rotation gizmos, and more.
+Now Lets Configure the Clipping Object Component to work for Model clipping in the scene.
+
+Expand the **Clipping object** Component in the hierarchy you will find three child objects that specifies the Clipping Shape.**ClippingSphere** for Sphere shape, **ClippingBox** for Box shape and **clippingPlane** for plane. 
+
+<!-- TODO: add Screenshot -->
+
+To configure the **ClippingSphere** Object click on it and in the inspector you will notice **ClippingSphere Script** attached to it, expand the **ClippingSphere Script**  in this we need to Specify the Renderers(Materials) of the all the 3D model which we are using.
+
+<!-- TODO: add Screenshot -->
+
+To add the Renderers to the Clipping Object Expand the **ModelsParant>MarsCuriosityRover>nodeid51** Child objects of the **nodeid51** are the renderers of this model.
+
+<!-- TODO: add Screenshot -->
+
+Count the no of renderers, in this case it is 10, enter the renderer size as 10 in the **ClippingSphereScript**.
+
+<!-- TODO: add Screenshot -->
+
+Drag and drop the each components(nodeid31 to nodeid49) to the Renderers field in **ClippingSphereScript**
+
+<!-- TODO: add Screenshot -->
+
+Similarly add the renderers of all 5 3D models in the scene to the **ClippingSphereScript.**
+
+
+
+By following the above procedure configure also for the **ClippingBox** and **ClippingPlane** objects
+
+<!-- TODO: add Screenshot for clipping Box -->
+
+<!-- TODO: add Screenshot for clipping Plane -->
+
+
+
+### 4.Adding Eye Tracking Tool Tip Highlight Features to the Model:
+
+In order to add this Eye Tracking features to the Models first we need to Configure the Eye Tracking to the Scene.
+
+##### Setting up the MRTK profiles required for eye tracking
+
+In the Hierarchy select **MixedRealityToolkit** and in the Inspector,  you will be asked to choose a profile for MRTK. You can simply select **DefaultMixedRealityToolkitConfigurationProfile** and then select the 'Copy & Customize' option. 
+
+<!-- TODO: add Screenshot -->
+
+A new “**clone profile**” window appears click on clone.
+
+<!-- TODO: add Screenshot -->
+
+##### **Creating an "eye gaze data provider"**
+
+Click on the **'Input'** tab in your MRTK profile.
+
+<!-- TODO: add Screenshot -->
+
+To edit the default one ( '**DefaultMixedRealityInputSystemProfile**' ), click the 'Clone' button next to it. A '**Clone Profile**' menu appears. Simply click on 'Clone' at the bottom of that menu.
+
+<!-- TODO: add Screenshot -->
+
+Double click on your new input profile, expand '**Input Data Providers**', and select '**+ Add Data Provider**'.
+
+<!-- TODO: add Screenshot -->
+
+A New Data provider is added to the Input data provider expand it under type select **Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input** > **WindowsMixedRealityEyeGazeDataProvider** For Platform(s) select '**Windows Universa**l'.
+
+<!-- TODO: add Screenshot -->
+
+##### Simulating eye tracking in the Unity Editor.
+
+Now that the Setup for Eye Tracking is done You can simulate eye tracking input in the Unity Editor to ensure that events are correctly triggered before deploying the app to your HoloLens 2, in order to do this follow below two steps
+
+1. ###### **Enable simulated eye tracking**:
+
+   Click on the '**Input**' tab on the inspector of **MixedRealityToolKit** From there, navigate to 'I**nput Data Providers**' -> '**Input Simulation Service**'.
+
+   Now Clone the '**DefaultMixedRealityInputSimpulationProfile**' to make changes to it.
+
+   <!-- TODO: add Screenshot -->
+
+   Check the 'Simulate Eye Position' checkbox.
+
+   <!-- TODO: add Screenshot -->
+
+   
+
+2. ###### **Disable default head gaze cursor**: 
+
+   In general, it is recommended to avoid showing an eye gaze cursor or if absolutely required to make it very subtle. We do recommend to hide the default head gaze cursor that is attached to the MRTK gaze pointer profile by default.
+
+   Navigate to your MRTK configuration profile -> *'**Input**'* -> *'**Pointers'*Clone** the *'**DefaultMixedRealityInputPointerProfile**'* to make changes to it.
+
+   <!-- TODO: add Screenshot -->
+
+   
+
+   At the top of the *'**Pointer Settings**'*, you should assign an invisible cursor prefab to the *'**GazeCursor**'*. You can do this by selecting the *'**EyeGazeCursor**'* prefab from the MRTK Foundation.
+
+   <!-- TODO: add Screenshot -->
+
+   In order to use eye tracking option in our current Appx HoloLens remoting application switch from **DefaultMixedRealityToolkitConfigurationProfile** to **DefaultHoloLens2ConfigurationProfile**
+
+   <!-- TODO: add Screenshot -->
+
+
+
+##### **Adding Tool Tip Highlight to the 3D models**
+
+Now let us add the Eye Tracking feature to our 3D models in the Scene,
+
+What we are doing hear is when you look at the particular area in the 3D model we need a Tool tip Highlight to show the details of this area, 
+
+Expand the **MarsCuriosityRover Model** in the **ButtonsParant** Object, there you will find the 5 different parts of the Model ie “CAMARA”, “WHEELS”, “SPECTROMETER” “ANTENNA” and “RUHF Antena”,
+
+For each of these models there is a tool tip present(SimpleLineToolTip(0 to 5))
+
+<!-- TODO: add Screenshot -->
+
+Now let us attach the tool tip to the each parts of the Model.
+
+Select the the POI-CAMARA in the **MarsCuriosityRover** Model by expanding it, In the inspector window observe that **EyeTrackingTarget** Script is attached to it.
+
+<!-- TODO: add Screenshot -->
+
+Expand the **EyeTrackingScript** in the inspector window and add a new event listener to the **Events While Looking at target() and on look away()** by clicking the **+** icon:
+
+<!-- TODO: add Screenshot -->
+
+Expand the **MarsCuriocityRover** model and add **Simplelinetooltip** object which represent the “CAMARA” to the none object for both the events.
+
+<!-- TODO: add Screenshot -->
+
+
+
+To the Event **while looking at target ()** add the function by click on **Nofunction>GameObject>SetActive**. and select the Check box, this enables the tooltip when you look at the gameobject
+
+ 
+
+Similarly to the event **on** **look away()** add the function **Nofunction>GameObject>SetActive**. Hear don’t select the check box, this disables the tooltip when you look away from the gameobject.
+
+<!-- TODO: add Screenshot -->
+
+
+
+By Following the above procedure attach the Tool tip Highlight  to the remaining 4 parts of the Model, and to the all 5 of the 3D models which are Used in the Scene..
+
+
+
+### 5. Testing your Scene in the Unity Editor:
+
+<!-- TODO: change clipping plane name -->
+
+with the above Procedures you have Successfully configured the Scene to operate, now before Building the scene to the HoloLens test the Scene in the Editor to Ensure everything works perfectly.
+
+Click On Play in the Editor, test the **NextButton** and **PreviousButton** by clicking it the 3D model in the Scene should change. when Clicked on ClippingObject the Clipping Objects should appear and disappear.
+
+<!-- TODO: add Vidio or Screenshot -->
+
+when the Clipping plane appears Grab one of the Clipping Object and run over the 3D model. this should clip the 3D model.
+
+<!-- TODO: add Vidio or Screenshot -->
+
+to test the Eye Tracking tooltip locate the small white dot in the window move this dot using keys A,W,S,D when this dot points at the part of the 3D model, a tool tip with the name should apper.
+
+<!-- TODO: add Vidio or Screenshot -->
+
+This Completes your tutorial for Building a Simple Mixed reality Experience consisting of UI Elements, Eye Tracking Tool tip Highlight, 3D model manipulation and Model clipping features.
 
 ## Congratulations
 
-In this tutorial, you learned the fundamentals of Azure Spatial Anchors. The tutorial provided you with several buttons that let you explore the various steps required to start and stop an Azure Spatial Anchors session and create, upload and download Azure Spatial Anchors on a single device.
+In this tutorial, you learned to build a simple Mixed reality Experience consisting of UI Elements, Eye Tracking Tool tip Highlight, 3D model manipulation and Model clipping features.. 
 
-In the next lesson, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
+In the next lesson, you will learn how to create a Standalone UWP PC Holographic emulation app and connect to HoloLens 2 at any point providing a way to Visualize 3D content in in Mixed reality.
+
+
+
+<!-- TODO: change this -->
 
 [Next Lesson: 2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
