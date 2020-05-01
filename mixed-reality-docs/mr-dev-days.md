@@ -15,4 +15,5 @@ We look forward to having you join us at Mixed Reality Dev Days! Get ready for a
 
 ---
 
-Test
+## Register Now
+
