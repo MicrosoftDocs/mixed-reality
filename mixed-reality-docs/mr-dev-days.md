@@ -11,10 +11,4 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysBanner.png)
 
-# Mixed Reality Dev Days 2020
-
-Planing for MR Dev Days 2020 is under way, but we don't have any details to share other than the date.
-
-This year MR Dev Days is a virtual conference being held on May 21st & 22nd, 2020.
-
-More details to come soon, including registration info.  For the latest updates, please make sure you are signed up for our developer program at [https://aka.ms/IWantMR](https://aka.ms/IWantMR).
+We look forward to having you join us at Mixed Reality Dev Days! Get ready for a new event format, tailored to a completely digital experience in 2D and 3D with AltspaceVR, with opportunities to hear from Microsoft leaders, learn from experts, and connect with the mixed reality developer community. Register for the digital experience today, at no cost to you!
