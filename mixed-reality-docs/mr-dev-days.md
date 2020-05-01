@@ -9,8 +9,6 @@ ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
 
-![MixedRealityDevDays](images/MRDD/MR Dev Days Banner.png)
-
 # Mixed Reality Dev Days 2020
 
 ![Mixed Reality Dev Days](images/MRDD/MR Dev Days Banner.png)
