@@ -29,7 +29,7 @@ Download and import the Unity custom package:
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section1-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section1-step1-1.png)
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
@@ -38,7 +38,7 @@ After you have imported the tutorial assets your Project window should look simi
 
 To make it easier to work with your scene, set the **scene visibility** for the **Cube** and **ButtonCollection** objects to off by clicking the **eye** icon to the left of the objects. This hides the object in the Scene window without changing their in-game visibility:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section2-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section2-step1-1.png)
 
 > [!TIP]
 > To learn more about the Scene Visibility controls and how you can use them to optimize your scene view and workflow, you can visit Unity's <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> documentation.
@@ -65,18 +65,18 @@ In the Project window, navigate to **Assets** > **MRTK.Tutorials.GettingStarted*
 * Platonic
 * TheModule
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section3-step1-1.png)
 
 In the Hierarchy window, **create three cubes** as a child objects of the **3DObjectCollection** and set their Transform **Scale** to X = 0.15, Y = 0.15, Z = 0.15:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-2.png)
+![mr-learning-base](images/mr-learning-base/base-05-section3-step1-2.png)
 
 > [!TIP]
 > For a reminder on how to do the steps listed above, you can refer to the [Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md) tutorial.
 
 Reposition the cubes so you can see each cube:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-3.png)
+![mr-learning-base](images/mr-learning-base/base-05-section3-step1-3.png)
 
 In the Project window, navigate to **Assets** > **MixedRealityToolkit.SDK** > **StandardAssets** > **Materials** to see materials provided with the MRTK.
 
@@ -86,7 +86,7 @@ In the Project window, navigate to **Assets** > **MixedRealityToolkit.SDK** > **
 * MRTK_Standard_GlowingOrange
 * MRTK_Standard_Green
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section3-step1-4.png)
+![mr-learning-base](images/mr-learning-base/base-05-section3-step1-4.png)
 
 ### 2. Add and configure the Grid Object Collection (Script) component
 
@@ -96,7 +96,7 @@ Add a **Grid Object Collection (Script)** component to the **3DObjectCollection*
 
 Then click the **Update Collection** button to apply the new configuration:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section3-step2-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section3-step2-1.png)
 
 ## Manipulating 3D objects
 
@@ -124,7 +124,7 @@ The main steps you will take to achieve this are:
 
 In the Hierarchy window, select the **Cheese** object, hold down the **Shift** key, and then select the **Cube () 2** object and add the **Manipulation Handler (Script)** component to all the objects:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step1-1.png)
 
 > [!NOTE]
 > For the purpose of this tutorial, colliders have already been added to the prefabs. For Unity primitives, such as the Cube objects, the Collider component is automatically added when the object is created. In the image above, the colliders are represented by the green outlines. To learn more about colliders, you can visit Unity's <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collider</a> documentation.
@@ -133,7 +133,7 @@ In the Hierarchy window, select the **Cheese** object, hold down the **Shift** k
 
 In the Hierarchy window, select the **Cheese** object, hold down the **Shift** key, and then select the **TheModule** object and add the **Near Interaction Grabbable (Script)** component to all the objects:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step2-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step2-1.png)
 
 ### 3. Configure the Manipulation Handler (Script) component
 
@@ -141,7 +141,7 @@ In the Hierarchy window, select the **Cheese** object, hold down the **Shift** k
 
 For the **Cube** object, leave all properties at default, to experience the default manipulation behavior:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step3-1.png)
 
 > [!TIP]
 > To reset a component to its default values, you can select the component's Settings icon and select Reset.
@@ -150,41 +150,41 @@ For the **Cube** object, leave all properties at default, to experience the defa
 
 For the **Cube (1)** object, change **Two Handed Manipulation Type** to **Scale** to only allow the user to change the object's size:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-2.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step3-2.png)
 
 #### Constrain the movement to a fixed distance from the user
 
 For the **Cube (2)** object, change **Constraint On Movement** to **Fix Distance From Head** so that when the object is moved, it stays at the same distance from the user:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-3.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step3-3.png)
 
 #### Default grabbable manipulation
 
 For the **Cheese**, **CoffeCup**, and **EarthCore** objects, leave all properties at default, to experience the default grabbable manipulation behavior:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-4.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step3-4.png)
 
 #### Remove the ability of far manipulation
 
 For the **Octa** object, un-check the **Allow Far Manipulation** checkbox to make it so the user can only interact with the object directly using tracked hands:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-5.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step3-5.png)
 
 #### Make an object rotate around its center
 
 For the **Platonic** object, change **One Hand Rotation Mode Near** and **One Hand Rotation Mode Far** to **Rotate About Object Center** to make it so when the user rotates the object with one hand, it rotates around the object's center:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-6.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step3-6.png)
 
 #### Keep movement after object is released
 
 For the **TheModule** object, add a **Rigidbody** component to enable physics, and then un-check the **Use Gravity** checkbox so the object is not affected by gravity:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-7.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step3-7.png)
 
 Back on the Manipulation Handler (Script) component, verify that the **Release Behavior** is set to both **Keep Velocity** and **Keep Angular Velocity** so that once the object is released from the user's hand, it continues to move:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section4-step3-8.png)
+![mr-learning-base](images/mr-learning-base/base-05-section4-step3-8.png)
 
 To learn more about the Manipulation handler component and its associated properties, you can visit the [Manipulation handler](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -204,7 +204,7 @@ In this example, you will add a bounding box to the EarthCore object so this obj
 
 In the Inspector window, select the **EarthCore** object and add the **Bounding Box (Script)** component to the EarthCore object:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section5-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section5-step1-1.png)
 
 > [!NOTE]
 > The Bounding Box visualizations is created at run time and therefore not visible before you enter Game mode.
@@ -213,7 +213,7 @@ In the Inspector window, select the **EarthCore** object and add the **Bounding 
 
 Press the Play button to enter Game mode. Then press and hold the spacebar to bring up the hand and use the mouse to interact with the bounding box:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section5-step2-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section5-step2-1.png)
 
 To learn more about the Bounding Box component and its associated properties, you can visit the [Bounding box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -243,29 +243,29 @@ The main steps you will take to achieve this are:
 
 In the Hierarchy window, select the **Octa** object, add an **Audio Source** component to the Octa object, and then change **Spatial Blend** to 1 to enable spatial audio:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section6-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section6-step1-1.png)
 
 ### 2. Add the Near Interaction Touchable (Script) component to the object
 
 With the **Octa** object still selected, add the **Near Interaction Touchable (Script)** component to the Octa object, and then click the **Fix Bounds** and **Fix Center** buttons to update the Local Center and Bounds properties of the Near Interaction Touchable (Script) to match the BoxCollider:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section6-step2-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section6-step2-1.png)
 
 ### 3. Add the Hand Interaction Touch (Script) component to the object
 
 With the **Octa** object still selected, add the **Hand Interaction Touch (Script)** component to the Octa object:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section6-step3-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section6-step3-1.png)
 
 ### 4. Implement the On Touch Started event
 
 On the **Hand Interaction Touch (Script)** component, click the small **+** icon to create a new **On Touch Started ()** event. Then configure the **Octa** object to receive the event and define **AudioSource.PlayOneShot** as the action to be triggered:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section6-step4-1.png)
 
 Navigate to **Assets** > **MixedRealityToolkit.SDK** > **StandardAssets** > **Audio** to see audio clips provided with the MRTK, and then assign a suitable audio clip to the **Audio Clip** field, for example, the MRTK_Gem audio clip:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section6-step4-2.png)
+![mr-learning-base](images/mr-learning-base/base-05-section6-step4-2.png)
 
 > [!TIP]
 > For a reminder on how to implement events, you can refer to the [Hand tracking gestures and interactable buttons](mrlearning-base-ch2.md#hand-tracking-gestures-and-interactable-buttons) instructions.
@@ -274,7 +274,7 @@ Navigate to **Assets** > **MixedRealityToolkit.SDK** > **StandardAssets** > **Au
 
 Press the Play button to enter Game mode. Then press and hold the spacebar to bring up the hand and use the mouse to touch the Octa object and trigger the sound effect:
 
-![mrlearning-base](images/mrlearning-base/tutorial4-section6-step5-1.png)
+![mr-learning-base](images/mr-learning-base/base-05-section6-step5-1.png)
 
 > [!NOTE]
 > As you saw when testing the touch interaction, and as shown in the image above, the Octa object color pulsated while it was touched. This effect is hard coded into the Hand Interaction Touch (Script) component and not a result of the event configuration you completed in the steps above.

@@ -23,11 +23,11 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder. While holding down the CTRL button, click on **DebugWindow**, **NetworkLobby**, and **SharedPlayground** to select the three prefabs:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section1-step1-1.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
 
 With the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section1-step1-2.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
 
 ## Creating the user prefab
 
@@ -39,23 +39,23 @@ In the Hierarchy window, right-click on an empty area and select **Create Empty*
 
 * Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-1.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
 
 With the **PhotonUser** object still selected, in the Inspector window, use the **Add Component** button to add the **Photon User (Script)** component to the PhotonUser object:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-2.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
 
 In the Inspector window, use the **Add Component** button to add the **Generic Net Sync (Script)** component to the PhotonUser object and configure it as follows:
 
 * Check the **Is User** checkbox
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-3.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
 
 In the Inspector window, use the **Add Component** button to add the **Photon View (Script)** component to the PhotonUser object and configure it as follows:
 
 * To the **Observed Components** field, assign the Generic Net Sync (Script) component
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step1-4.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### 2. Create the avatar
 
@@ -64,21 +64,21 @@ In the Hierarchy window, right-click on the **PhotonUser** object and select **3
 * Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0
 * Change the Transform **Scale** to a suitable size, for example, X = 0.15, Y = 0.15, Z = 0.15
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step2-1.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
 
 ### 3. Create the prefab
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-1.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
 
 With the Resources folder still selected, **click-and-drag** the **PhotonUser** object from the Hierarchy window into the **Resources** folder to make the PhotonUser object a prefab:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-2.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
 
 In the Hierarchy window, right-click on the **PhotonUser** object and select **Delete** to remove it from the scene:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section2-step3-3.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
 
 ## Configuring PUN to instantiate the user prefab
 
@@ -90,13 +90,13 @@ In the Hierarchy window, expand the **NetworkLobby** object and select the **Net
 
 * To the **Photon User Prefab** field, assign the **PhotonUser** prefab from the Resources folder
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section3-step1-1.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
 
 ## Trying the experience with multiple users
 
 If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial2-section4-step1-1.gif)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions.

@@ -22,7 +22,7 @@ In this tutorial, you will learn how to provide users with feedback about anchor
 
 In the Hierarchy window, right-click on the **Instructions** > **TextContent** object and select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro text object as a child of the Instructions > TextContent object and give it a suitable name, for example, **Feedback**:
 
-![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > To make it easier to work with your scene, set the  <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> for the ParentAnchor object to off by clicking the eye icon to the left of the object. This hides the object in the Scene window without changing their in-game visibility.
@@ -39,15 +39,15 @@ Then choose font properties so the text fits nicely within the text area, for ex
 * Change the Text Mesh Pro (Script) **Font Size** to 0.17
 * Change the Text Mesh Pro (Script) **Alignment** to Center and Middle
 
-![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-2.png)
+![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
 With the **Feedback** object still selected, in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component to the Feedback object:
 
-![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-3.png)
+![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
 Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)** component's **Feedback Text** field:
 
-![mrlearning-base](images/mrlearning-asa/tutorial3-section1-step1-4.png)
+![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-4.png)
 
 ## Congratulations
 

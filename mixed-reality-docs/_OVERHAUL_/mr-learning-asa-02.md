@@ -72,14 +72,14 @@ In this section, you will install Unity's inbuilt AR Foundation package because 
 
 In the Unity menu, select **Window** > **Package Manager**:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section2-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
 > [!NOTE]
 > It might take a few seconds before the AR Foundation package appears in the list.
 
 In the Package Manager window, select **AR Foundation** and install the package by clicking the **Install** button:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section2-step1-2.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section2-step1-2.png)
 
 ## Importing the tutorial assets
 
@@ -94,7 +94,7 @@ Download and **import** the following Unity custom packages **in the order they 
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section3-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section3-step1-1.png)
 
 ## Creating and preparing the scene
 <!-- TODO: Consider renaming to 'Preparing the scene' -->
@@ -103,15 +103,15 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **DebugWindow**, **Instructions**, and **ParentAnchor** to select the four prefabs:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-1.png)
 
 With the four prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-2.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-2.png)
 
 To focus in on the objects in the scene, you can double-click on the ParentAnchor object, and then zoom slightly out again:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section4-step1-3.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
@@ -124,25 +124,25 @@ In this section, you will add scripts into the scene to create a series of butto
 
 In the Hierarchy window, expand the **ButtonParent** object and select the first child object named **StartAzureSession**:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 In the Inspector window, locate the **Pressable Button Holo Lens 2 (Script)** component and add a new event listener to the **Button Pressed ()** event by clicking the **+** icon:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-2.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 With the StartAzureSession object still selected in the Hierarchy window, click-and-drag the **ParentAnchor** object from the Hierarchy window into the empty **None (Object)** field of the event listener you just added to make the ParentAnchor object listen for button pressed events from this button:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-3.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
 Click the **No Function** dropdown of the same event listener, then select **AnchorModuleScript** > **StartAzureSession ()** to set the StartAzureSession () function as the action that is triggered when the button pressed events is fired from this button:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step1-4.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
 ### 2. Configure the Interactable (Script) component
 
 With the StartAzureSession object still selected in the Hierarchy window, in the Inspector window, locate the **Interactable (Script)** component and repeat the same process as in step 1 above for the **OnClick ()** event:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step2-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step2-1.png)
 
 ### 3. Configure the remaining buttons
 
@@ -162,7 +162,7 @@ In the Hierarchy window, select the **ParentAnchor** object and in the Inspector
 
 Then, in the **Credentials** section, paste your Spatial Anchors Account ID and Key, which you created as part of this tutorial's [Prerequisites](mrlearning-asa-ch1.md#prerequisites), into the corresponding **Spatial Anchors Account Id** and **Spatial Anchors Account Key** fields:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section5-step4-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step4-1.png)
 
 ## Trying the basic behaviors of Azure Spatial Anchors
 
@@ -172,15 +172,15 @@ Now that your scene is configured to demonstrate the basics of Azure Spatial Anc
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step1-1.png)
 
 In the Player Settings window, select **Player** and then **Publishing Settings**:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-2.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step1-2.png)
 
 In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, **RemovableStorage**, and **Webcam** capabilities:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step1-3.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step1-3.png)
 
 ### 2. Deploy the app to your HoloLens 2
 
@@ -196,7 +196,7 @@ Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors
 
 When the application is running on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section6-step3-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step3-1.png)
 
 ## Anchoring an experience
 
@@ -206,11 +206,11 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **RocketLauncher** folder and select the **RocketLauncher_Complete** prefab:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
 With the RocketLauncher_Complete prefab still selected, drag it on top of the **ParentAnchor** object in the Hierarchy window to make it a child of the ParentAnchor object:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step1-2.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-2.png)
 
 ### 2. Reposition the Rocket Launcher experience
 
@@ -220,7 +220,7 @@ Position, rotate, and scale the **RocketLauncher_Complete** object to a suitable
 * Transform **Rotation** X = 0, Y = 90, Z = 0
 * Transform **Scale** X = 10, Y = 10, Z = 10
 
-![mrlearning-asa](images/mrlearning-asa/tutorial1-section7-step2-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step2-1.png)
 
 In the application, users may now reposition the entire Rocket Launcher experience by moving the cube.
 

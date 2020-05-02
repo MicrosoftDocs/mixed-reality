@@ -22,7 +22,7 @@ In this tutorial, you will learn how to save Azure Spatial Anchors across multip
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent_SaveAnchorId** and **ButtonParent_ShareAnchorId** to select the two prefabs, then drag them into the Hierarchy window to add them to the scene:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial2-section1-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
 ## Persist Azure Anchors between app sessions - Save anchor ID to disk
 <!-- TODO: Consider renaming to 'Persist Azure Anchors between app sessions' -->
@@ -31,7 +31,7 @@ In this section, you will learn how to save and retrieve the Azure Anchor ID to 
 
 In the Hierarchy window, expand the **ButtonParent_SaveAnchorId** object which contains two buttons, one button for saving the Azure Anchor ID to the HoloLens 2 storage and another for retrieving the saved ID from the disk:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial2-section2-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 Follow the same steps as in the [configuring the buttons to operate the scene](mrlearning-asa-ch1.md#configuring-the-buttons-to-operate-the-scene) instructions from the previous tutorial to configure the **Pressable Button Holo Lens 2 (Script)** component and the **Interactable (Script)** component on each of the two buttons:
 
@@ -60,7 +60,7 @@ There are many ways to transfer Azure Anchor IDs between devices, including meth
 
 In the Hierarchy window, expand the **ButtonParent_ShareAnchorId** object which contains two buttons; one button for uploading the Azure Anchor ID to the web server, and another for downloading the ID from the web server:
 
-![mrlearning-asa](images/mrlearning-asa/tutorial2-section3-step1-1.png)
+![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 Follow the same steps as in the [configuring the buttons to operate the scene](mrlearning-asa-ch1.md#configuring-the-buttons-to-operate-the-scene) instructions from the previous tutorial to configure the **Pressable Button Holo Lens 2 (Script)** component and the **Interactable (Script)** component on each of the two buttons:
 

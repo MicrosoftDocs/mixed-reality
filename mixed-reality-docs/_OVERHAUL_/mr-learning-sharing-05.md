@@ -22,11 +22,11 @@ In this tutorial, you will learn how to integrate Azure Spatial Anchors (ASA) in
 
 In the Hierarchy window, expand the **SharedPlayground** object, then expand the **TableAnchor** object to expose its child objects:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section1-step1-1.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **Buttons** prefab on top of the **TableAnchor** child object in the Hierarchy window to add it to your scene as a child of the TableAnchor object:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section1-step1-2.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
 
 ## Configuring the buttons to operate the scene
 
@@ -34,14 +34,14 @@ In this section, you will configure a series of button events that demonstrate t
 
 In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**:
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-1.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
 In the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
 * To **None (Object)** field, assign the **TableAnchor** object
 * From **No Function** dropdown, select the **AnchorModuleScript** > **StartAzureSession ()** function
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-2.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
 In the Hierarchy window, select the second child button object named **CreateAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
@@ -49,21 +49,21 @@ In the Hierarchy window, select the second child button object named **CreateAzu
 * From **No Function** dropdown, select the **AnchorModuleScript** > **CreateAzureAnchor ()** function
 * To the new **None (Game Object)** field that appears, assign the **TableAnchor** object
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-3.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
 
 In the Hierarchy window, select the third child button object named **ShareAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
 * To **None (Object)** field, assign the **TableAnchor** object
 * From **No Function** dropdown, select the **SharingModuleScript** > **ShareAzureAnchor ()** function
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-4.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
 
 In the Hierarchy window, select the forth child button object named **GetAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
 * To **None (Object)** field, assign the **TableAnchor** object
 * From **No Function** dropdown, select the **SharingModuleScript** > **GetAzureAnchor ()** function
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-5.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
 
 ## Connecting the scene to the Azure resource
 
@@ -72,7 +72,7 @@ In the Hierarchy window, expand the **SharedPlayground** object and select the *
 * In the **Spatial Anchors Account ID** field, paste the **Account ID** from your Azure Spatial Anchors account
 * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section3-step1-1.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
 
 With the **TableAnchor** object still selected, in the Inspector window, make sure all the script components are enabled:
 
@@ -80,7 +80,7 @@ With the **TableAnchor** object still selected, in the Inspector window, make su
 * Check the checkbox next to the **Anchor Module Script (Script)** components to enable it
 * Check the checkbox next to the **Sharing Module Script (Script)** components to enable it
 
-![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section3-step1-2.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
 ## Trying the experience with spatial alignment
 

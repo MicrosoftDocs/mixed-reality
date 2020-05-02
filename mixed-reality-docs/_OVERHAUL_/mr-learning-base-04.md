@@ -24,7 +24,7 @@ Holograms come to life in HoloLens 2 when they intuitively follow the user and a
 
  The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Assets** > **MixedRealityToolkit.SDK** > **Features** > **Utilities** > **Solvers**:
 
-![mrlearning-base](images/mrlearning-base/tutorial3-section1-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-04-section1-step1-1.png)
 
 In this tutorial, we will review the implementation of the Orbital Solver and the Radial View Solver. To learn more about the full range of Solvers available in the MRTK, you can visit the the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -58,7 +58,7 @@ Configure the **Orbital (Script)** component:
 * Reset **Local Offset** to X = 0, Y = 0, Z = 0
 * Change **World Offset** to X = 0, Y = -0.4, Z = 0.3
 
-![mrlearning-base](images/mrlearning-base/tutorial3-section2-step2-1.png)
+![mr-learning-base](images/mr-learning-base/base-04-section2-step2-1.png)
 
 ### 3. Test the Orbital Solver using the in-editor simulation
 
@@ -67,7 +67,7 @@ Press the Play button to enter Game mode and press and hold the right mouse butt
 * The ButtonCollection's Transform Position is now driven by the Solver settings
 * The Cube, which is not affected by the Solver, remains in the same position
 
-![mrlearning-base](images/mrlearning-base/tutorial3-section2-step3-1.png)
+![mr-learning-base](images/mr-learning-base/base-04-section2-step3-1.png)
 
 > [!TIP]
 > If you don't see the camera ray in your Scene window, make sure your Gizmos menu is enabled. To learn more about the Gizmos menu and how you can use it to optimize your scene view, you can visit Unity's <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">Gizmos menu</a> documentation.
@@ -100,13 +100,13 @@ Configure the **Radial View (Script)** component:
 * Change **Reference Direction** to **Object Oriented**, then check the **Orient To Reference Direction** checkbox
 * Change **Min Distance** and **Max Distance** to 0
 
-![mrlearning-base](images/mrlearning-base/tutorial3-section3-step2-1.png)
+![mr-learning-base](images/mr-learning-base/base-04-section3-step2-1.png)
 
 ### 3. Test the Radial View Solver using the in-editor simulation
 
 Press the Play button to enter Game mode and then press and hold the spacebar to bring up the hand. Move the mouse cursor around to move the hand, and click and hold the left mouse button to rotate the hand:
 
-![mrlearning-base](images/mrlearning-base/tutorial3-section3-step3-1.png)
+![mr-learning-base](images/mr-learning-base/base-04-section3-step3-1.png)
 
 ## Congratulations
 
