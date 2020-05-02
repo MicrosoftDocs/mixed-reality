@@ -150,10 +150,6 @@ For demonstration we have provided with 5 different 3D models for this tutorial,
 
 In the Hierarchy Click on **ButtonParent** object and on the Inspector widow Expand the **ViewControlScript** now you could find the **Modles[]** Field which indicates the No of 3D models in the Scene.
 
-<!-- TODO: change this Screenshot with model size 0 -->
-
-
-
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-2.png)
 
 
