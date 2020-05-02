@@ -61,35 +61,33 @@ For this, first follow the [Initializing your project and first application](mrl
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
 
-<!-- TODO: provide correct tutorial Pakage and include if any other pakages -->
+<!-- TODO: provide correct tutorial Pakage UR and include if any other pakages -->
 
 * ·    MRTK.Tutorials.[AppxHoloLensRemoting.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) 
 
-  
-
-> [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
+  [!TIP]
+  For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section2-Step1-1.png)
+
+
 
 ## Creating and preparing the scene
-<!-- TODO: Consider renaming to 'Preparing the scene' -->
-
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppxHoloLenseRemoting**> **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **Clipping Objects**, **ModelsParant**, **Instructions**, and **Platform** to select the five prefabs:
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section3-Step1-1.png)
 
 With the five prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section3-Step1-2.png)
 
-To focus in on the objects in the scene, you can double-click on the **ModelsParant** object, and then zoom slightly in again:
+To focus in on the objects in the scene, you can double-click on the **ModelsParant** object, and then zoom slightly in again and adjust the scene:
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section3-Step1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
@@ -102,29 +100,25 @@ In this section, you will add scripts into the scene to create a series of butto
 
 in the Hierarchy window, Expand the **ButtonsParant** Object which consists of three Buttons. **NextButton** and **Previous Button** are Used to Change the 3D Objects in the Scene and **ClippingPlaneButton** is used to toggle the **Clipping Object** ON and OFF.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-1.png)
 
 Now Lets Configure the **ButtonsParan**t Object to Operate the **Next Button Previous Button** and **Clipping Plane Button.**
 
- 
-
-To the **ButtonsParant** object you will notice two Scrips are attached to it one **ViewButtonControl (Script)** to change the 3D model in the Scene and another **ToogleButton(Script)** to turn on and off the Clipping Objects.
-
-<!-- TODO: add Screenshot -->
+ To the **ButtonsParant** object you will notice two Scrips are attached to it one **ViewButtonControl (Script)** to change the 3D model in the Scene and another **ToogleButton(Script)** to turn on and off the Clipping Objects.
 
 In the Hierarchy window, expand the **ButtonsParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and add a new event listener to the **Events onclick()** event by clicking the **+** icon:
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-2.png)
 
-click-and-drag the **ButtonsParant** object from the Hierarchy window into the empty **None (Object)** field of the Onclick() you just added to make the object listen for button pressed events from this button:
+click-and-drag the **ButtonsParant** object from the Hierarchy window into the empty **None (Object)** field of the **Onclick**() you just added to make the object listen for button pressed events from this button:
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-3.png)
 
 
 
 Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel()** to set the Next Model function as the action that is triggered when the button pressed events is fired from this button:
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-4.png)
 
 Similarly by following the above Steps also Configure the **PreviousButton,** and **ClippingPlaneButton** the only Change would be to select the function when the button pressed event is fired.
 
@@ -132,13 +126,13 @@ Similarly by following the above Steps also Configure the **PreviousButton,** an
 
 For **PreviousButton** select **ViewButtonControl** >**PreviousModel()** to set the previous Model function. 
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-5.png)
 
 
 
 For **ClippingPlaneButton** select **ToggleButton**> **ToggleClipping()** to set the Toggle function for Clipping Object.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-6.png)
 
 
 
@@ -146,69 +140,55 @@ For **ClippingPlaneButton** select **ToggleButton**> **ToggleClipping()** to set
 
 Now that the Buttons are Configured let us add some Models and the Clipping Objects to the Scene.
 
-in the Hierarchy Click on **ButtonsParant** object and on the Inspector widow Expand the ViewControlScript now you could find the **Modles[]** Game object which indicates the No of 3D models in the Scene.
+in the Hierarchy Click on **ButtonsParant** object and on the Inspector widow Expand the **ViewControlScript** now you could find the **Modles[]** Field which indicates the No of 3D models in the Scene.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step2-1.png)
 
 For demonstration we have provided with 5 different 3D models for this tutorial, which are present as the child Objects of the **ModelsParant** in the Hierarchy. 
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step2-2.png)
 
 
 
-Now in the Inspector window expand the **Models** object in the **ViewButtonScript** attached to the **ButtonsParant** object. Enter the No of 3D model you would like to have on the Scene, hear in our case it would be 5.
-
-<!-- TODO: add Screenshot -->
-
-
+Now in the Inspector window expand the **Models** object Field in the **ViewButtonScript** attached to the **ButtonsParant** object. Enter the No of 3D model you would like to have on the Scene, hear in our case it would be 5.
 
 Now Drag and Drop the 3D Models one by one From the **ModelsParant** Object in the hierarchy. 
 
-
-
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step2-3.png)
 
 To add the **Clipping object** to the Scene in the Hierarchy  Click on **ButtonsParant** object and on the Inspector widow Expand the **ToggleButtonScript** hear you will find a field "ClippingObject" to add the **Clipping object** Component.
 
-<!-- TODO: add Screenshot -->
-
 To this ClippingObject Field add the **Clippingobjects** component present in the hierarchy,
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step2-4.png)
 
 ### 3. Configure the Clipping Objects to Work:
 
 Now Lets Configure the Clipping Object Component to work for Model clipping in the scene.
 
-Expand the **Clipping object** Component in the hierarchy you will find three child objects that specifies the Clipping Shape.**ClippingSphere** for Sphere shape, **ClippingBox** for Box shape and **clippingPlane** for plane. 
+Expand the **Clipping object** Component in the hierarchy you will find three child objects that specifies the Clipping Shape. **ClippingSphere** for Sphere shape, **ClippingBox** for Box shape and **clippingPlane** for plane. 
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step3-1.png)
 
 To configure the **ClippingSphere** Object click on it and in the inspector you will notice **ClippingSphere Script** attached to it, expand the **ClippingSphere Script**  in this we need to Specify the Renderers(Materials) of the all the 3D model which we are using.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step3-2.png)
 
 To add the Renderers to the Clipping Object Expand the **ModelsParant>MarsCuriosityRover>nodeid51** Child objects of the **nodeid51** are the renderers of this model.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step3-3.png)
 
 Count the no of renderers, in this case it is 10, enter the renderer size as 10 in the **ClippingSphereScript**.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step3-4.png)
 
 Drag and drop the each components(nodeid31 to nodeid49) to the Renderers field in **ClippingSphereScript**
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step3-5.png)
 
 Similarly add the renderers of all 5 3D models in the scene to the **ClippingSphereScript.**
 
-
-
 By following the above procedure configure also for the **ClippingBox** and **ClippingPlane** objects
-
-<!-- TODO: add Screenshot for clipping Box -->
-
-<!-- TODO: add Screenshot for clipping Plane -->
 
 
 
@@ -218,31 +198,31 @@ In order to add this Eye Tracking features to the Models first we need to Config
 
 ##### Setting up the MRTK profiles required for eye tracking
 
-In the Hierarchy select **MixedRealityToolkit** and in the Inspector,  you will be asked to choose a profile for MRTK. You can simply select **DefaultMixedRealityToolkitConfigurationProfile** and then select the 'Copy & Customize' option. 
+In the Hierarchy select **MixedRealityToolkit** and in the Inspector,  you will be asked to choose a profile for MRTK. You can simply select **DefaultMixedRealityToolkitConfigurationProfile** .
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-1-1.png)
 
-A new “**clone profile**” window appears click on clone.
+select the '**Copy & Customize**' option, A new “**clone profile**” window appears click on clone.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-1-2.png)
 
 ##### **Creating an "eye gaze data provider"**
 
 Click on the **'Input'** tab in your MRTK profile.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-2-1.png)
 
 To edit the default one ( '**DefaultMixedRealityInputSystemProfile**' ), click the 'Clone' button next to it. A '**Clone Profile**' menu appears. Simply click on 'Clone' at the bottom of that menu.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-2-2.png)
 
 Double click on your new input profile, expand '**Input Data Providers**', and select '**+ Add Data Provider**'.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-2-3.png)
 
-A New Data provider is added to the Input data provider expand it under type select **Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input** > **WindowsMixedRealityEyeGazeDataProvider** For Platform(s) select '**Windows Universa**l'.
+A New Data provider is added to the Input data provider expand it under type select **Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input** > **WindowsMixedRealityEyeGazeDataProvider** For Platform(s) select '**Windows Universa**l'. then Simply click on 'Clone'.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-2-4.png)
 
 ##### Simulating eye tracking in the Unity Editor.
 
@@ -250,15 +230,15 @@ Now that the Setup for Eye Tracking is done You can simulate eye tracking input 
 
 1. ###### **Enable simulated eye tracking**:
 
-   Click on the '**Input**' tab on the inspector of **MixedRealityToolKit** From there, navigate to 'I**nput Data Providers**' -> '**Input Simulation Service**'.
+   Click on the '**Input**' tab on the inspector of **MixedRealityToolKit** From there, navigate to '**Input Data Providers**' -> '**Input Simulation Service**'.
 
    Now Clone the '**DefaultMixedRealityInputSimpulationProfile**' to make changes to it.
 
-   <!-- TODO: add Screenshot -->
+   ![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-3-1-1.png)
 
    Check the 'Simulate Eye Position' checkbox.
 
-   <!-- TODO: add Screenshot -->
+   ![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-3-1-2.png)
 
    
 
@@ -266,19 +246,19 @@ Now that the Setup for Eye Tracking is done You can simulate eye tracking input 
 
    In general, it is recommended to avoid showing an eye gaze cursor or if absolutely required to make it very subtle. We do recommend to hide the default head gaze cursor that is attached to the MRTK gaze pointer profile by default.
 
-   Navigate to your MRTK configuration profile -> *'**Input**'* -> *'**Pointers'*Clone** the *'**DefaultMixedRealityInputPointerProfile**'* to make changes to it.
+   Navigate to your MRTK configuration profile -> *'**Input**'* -> PointersClone the *'**DefaultMixedRealityInputPointerProfile**'* to make changes to it.
 
-   <!-- TODO: add Screenshot -->
+   ![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-3-2-1.png)
 
    
 
    At the top of the *'**Pointer Settings**'*, you should assign an invisible cursor prefab to the *'**GazeCursor**'*. You can do this by selecting the *'**EyeGazeCursor**'* prefab from the MRTK Foundation.
 
-   <!-- TODO: add Screenshot -->
+   ![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-3-2-2.png)
 
    In order to use eye tracking option in our current Appx HoloLens remoting application switch from **DefaultMixedRealityToolkitConfigurationProfile** to **DefaultHoloLens2ConfigurationProfile**
 
-   <!-- TODO: add Screenshot -->
+   ![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-3-2-3.png)
 
 
 
@@ -290,33 +270,31 @@ What we are doing hear is when you look at the particular area in the 3D model w
 
 Expand the **MarsCuriosityRover Model** in the **ButtonsParant** Object, there you will find the 5 different parts of the Model ie “CAMARA”, “WHEELS”, “SPECTROMETER” “ANTENNA” and “RUHF Antena”,
 
-For each of these models there is a tool tip present(SimpleLineToolTip(0 to 5))
+For each of these models there is a tool tip present(**SimpleLineToolTip(0 to 5)**)
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-4-1.png)
 
 Now let us attach the tool tip to the each parts of the Model.
 
 Select the the POI-CAMARA in the **MarsCuriosityRover** Model by expanding it, In the inspector window observe that **EyeTrackingTarget** Script is attached to it.
 
-<!-- TODO: add Screenshot -->
-
 Expand the **EyeTrackingScript** in the inspector window and add a new event listener to the **Events While Looking at target() and on look away()** by clicking the **+** icon:
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-4-2.png)
 
 Expand the **MarsCuriocityRover** model and add **Simplelinetooltip** object which represent the “CAMARA” to the none object for both the events.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-4-3.png)
 
 
 
 To the Event **while looking at target ()** add the function by click on **Nofunction>GameObject>SetActive**. and select the Check box, this enables the tooltip when you look at the gameobject
 
- 
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-4-4.png)
 
 Similarly to the event **on** **look away()** add the function **Nofunction>GameObject>SetActive**. Hear don’t select the check box, this disables the tooltip when you look away from the gameobject.
 
-<!-- TODO: add Screenshot -->
+![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step4-4-5.png)
 
 
 
