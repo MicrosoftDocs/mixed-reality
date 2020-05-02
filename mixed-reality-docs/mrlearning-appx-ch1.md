@@ -9,20 +9,24 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 1. Getting started with AppxHoloLens Remoting.
+# 1. Getting started with AppX Holographic Remoting
 
 ## Overview
 
-Welcome to the second series of the HoloLens 2 tutorials. In this Two-part tutorial series, you will learn how to create simple Mixed reality experience demonstration and how to create Standalone UWP HoloLens remoting App.
+Welcome to the second series of the HoloLens 2 tutorials. In this two-part tutorial series, you will learn, how to create Mixed Reality experience demonstration and how to create Holographic Remoting remote app.
 
-In the first tutorial “create simple Mixed reality experience” you will learn how to create a simple Mixed reality experience demonstrating UI Elements, 3D model manipulation Model clipping features and Eye Tracking Tool tip Highlight, .
+In the first tutorial, [Create Mixed Reality experience](mrlearning-appx-ch1.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping and eye tracking features.
 
-In the second tutorial “create Standalone UWP HoloLens remoting” you will learn how to create a Standalone UWP PC Holographic emulation app and connect to HoloLens 2 at any point providing a way to Visualize 3D content in in Mixed reality.
+<!-- TODO:add link to second tutorial -->
+
+In the second tutorial, [Create Holographic Remoting remote app](mrlearning-appx-ch2.md), you will learn how to create Holographic Remoting remote app and connect to HoloLens 2 at any point providing a way to visualize 3D content in Mixed Reality.
 
 ## Objectives
 
-* Learn To Create a Simple Mixed reality experience.
-* Create Standalone UWP HoloLens remoting Application to Connect to HoloLens.
+* Import assets and set up the scene
+* Interact with holograms using UI elements and buttons
+* Configure 3D objects for clipping feature.
+* Learn about eye tracking select target and highlight tooltips.
 
 ## Prerequisites
 
@@ -53,114 +57,120 @@ For this, first follow the [Initializing your project and first application](mrl
 
 5. [Configure the Unity project for the Mixed Reality Toolkit](mrlearning-base-ch1.md#configure-the-unity-project-for-the-mixed-reality-toolkit)
 
-6. [Add the Mixed Reality Toolkit to the Unity scene](mrlearning-base-ch1.md#configure-the-mixed-reality-toolkit) and give the scene a suitable name, for example, AppxHololensRemoting
+6. [Add the Mixed Reality Toolkit to the Unity scene](mrlearning-base-ch1.md#configure-the-mixed-reality-toolkit) and give the scene a suitable name, for example,  *AppXHolographicRemoting*
 
-   
+Then follow the [How to configure the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Importing the tutorial assets
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
 
-<!-- TODO: provide correct tutorial Pakage UR and include if any other pakages -->
+<!-- TODO: provide correct tutorial Pakage URL and include if any other pakages -->
 
-* ·    MRTK.Tutorials.[AppxHoloLensRemoting.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) 
+* [MRTK.Tutorials.AppxHoloLensRemoting.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) 
 
   [!TIP]
   For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section2-Step1-1.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section2-Step1-1.png)
 
 
 
 ## Creating and preparing the scene
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppxHoloLenseRemoting**> **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **Clipping Objects**, **ModelsParant**, **Instructions**, and **Platform** to select the five prefabs:
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **ClippingObjects**, **ModelParent**, **Instructions**, and **Platform** to select the five prefabs:
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section3-Step1-1.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section3-Step1-1.png)
 
 With the five prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section3-Step1-2.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section3-Step1-2.png)
 
-To focus in on the objects in the scene, you can double-click on the **ModelsParant** object, and then zoom slightly in again and adjust the scene:
+To focus in on the objects in the scene, you can double-click on the **ModelParent** object, and then zoom slightly in again:
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section3-Step1-3.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section3-Step1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
 
-## Configuring the buttons, Clipping Objects and Eye Tracking Tool Tip to operate the scene
+## Configuring the buttons to operate the scene
 
-In this section, you will add scripts into the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
+In this section, you will add scripts into the scene to make buttons to switch models and enable clipping objects that demonstrate the models switching between next and previous models, enable or disable the clipping objects. 
 
-### 1.Configuring the ButtonsParant component:
+### 1. Configure the Interactable (Script) component
 
-in the Hierarchy window, Expand the **ButtonsParant** Object which consists of three Buttons. **NextButton** and **Previous Button** are Used to Change the 3D Objects in the Scene and **ClippingPlaneButton** is used to toggle the **Clipping Object** ON and OFF.
+In the Hierarchy window, select the **ButtonParent** object and in the Inspector window, notice two scripts are attached to it, one **ViewButtonControl (Script)** to change the 3D model in the Scene and another **ToogleButton(Script)** to turn on and off the clipping objects.
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-1.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-1.png)
 
-Now Lets Configure the **ButtonsParan**t Object to Operate the **Next Button Previous Button** and **Clipping Plane Button.**
+Now that the scripts are attached to the **ButtonParent** object, it is time to configure **NextButton, PreviousButton** and **ClippingButton.**
 
- To the **ButtonsParant** object you will notice two Scrips are attached to it one **ViewButtonControl (Script)** to change the 3D model in the Scene and another **ToogleButton(Script)** to turn on and off the Clipping Objects.
+In the Hierarchy window, expand the **ButtonParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and add a new event listener to the **OnClick()** event by clicking the **+** icon:
 
-In the Hierarchy window, expand the **ButtonsParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and add a new event listener to the **Events onclick()** event by clicking the **+** icon:
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-2.png)
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-2.png)
+click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the **Onclick()** you just added to make the object listen for button pressed events from this button.
 
-click-and-drag the **ButtonsParant** object from the Hierarchy window into the empty **None (Object)** field of the **Onclick**() you just added to make the object listen for button pressed events from this button:
-
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-3.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-3.png)
 
 
 
 Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel()** to set the Next Model function as the action that is triggered when the button pressed events is fired from this button:
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-4.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-4.png)
 
-Similarly by following the above Steps also Configure the **PreviousButton,** and **ClippingPlaneButton** the only Change would be to select the function when the button pressed event is fired.
+Similarly by following the above Steps also Configure the **PreviousButton,** and **ClippingButton** the only Change would be to select the function when the button pressed event is fired.
 
 
 
 For **PreviousButton** select **ViewButtonControl** >**PreviousModel()** to set the previous Model function. 
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-5.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-5.png)
 
 
 
-For **ClippingPlaneButton** select **ToggleButton**> **ToggleClipping()** to set the Toggle function for Clipping Object.
+For **ClippingButton** select **ToggleButton**> **ToggleClipping()** to set the Toggle function for Clipping Object.
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step1-6.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-6.png)
 
+------ > Clipping Objects and Eye Tracking Tool Tip to operate the scene <----------
 
-
-### 2. Adding Models and Clipping Objects to the Scene:
+### 2. Adding Models and Clipping Objects to the Script:
 
 Now that the Buttons are Configured let us add some Models and the Clipping Objects to the Scene.
 
-in the Hierarchy Click on **ButtonsParant** object and on the Inspector widow Expand the **ViewControlScript** now you could find the **Modles[]** Field which indicates the No of 3D models in the Scene.
+For demonstration we have provided with 5 different 3D models for this tutorial, which are present as the child Objects of the **ModelParent** in the Hierarchy. 
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step2-1.png)
-
-For demonstration we have provided with 5 different 3D models for this tutorial, which are present as the child Objects of the **ModelsParant** in the Hierarchy. 
-
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step2-2.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-2.png)
 
 
 
-Now in the Inspector window expand the **Models** object Field in the **ViewButtonScript** attached to the **ButtonsParant** object. Enter the No of 3D model you would like to have on the Scene, hear in our case it would be 5.
+In the Hierarchy Click on **ButtonParent** object and on the Inspector widow Expand the **ViewControlScript** now you could find the **Modles[]** Field which indicates the No of 3D models in the Scene.
 
-Now Drag and Drop the 3D Models one by one From the **ModelsParant** Object in the hierarchy. 
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-1.png)
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step2-3.png)
 
-To add the **Clipping object** to the Scene in the Hierarchy  Click on **ButtonsParant** object and on the Inspector widow Expand the **ToggleButtonScript** hear you will find a field "ClippingObject" to add the **Clipping object** Component.
+
+Now in the Inspector window expand the **Models[]** field. Enter the No of 3D model you would like to have on the Scene, hear in our case it would be 5.
+
+Now Drag and Drop the 3D Models one by one From the **ModelParent** Object in the hierarchy. 
+
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-3.png)
+
+
+
+Now we will add the **Clipping object** to the Scene,
+
+In the Hierarchy  Click on **ButtonParent** object and on the Inspector widow Expand the **ToggleButtonScript** hear you will find a field "**ClippingObject**" to add the **Clipping object** Component.
 
 To this ClippingObject Field add the **Clippingobjects** component present in the hierarchy,
 
-![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step2-4.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-4.png)
+
+
 
 ### 3. Configure the Clipping Objects to Work:
 
@@ -174,7 +184,7 @@ To configure the **ClippingSphere** Object click on it and in the inspector you 
 
 ![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step3-2.png)
 
-To add the Renderers to the Clipping Object Expand the **ModelsParant>MarsCuriosityRover>nodeid51** Child objects of the **nodeid51** are the renderers of this model.
+To add the Renderers to the Clipping Object Expand the **ModelParent>MarsCuriosityRover>nodeid51** Child objects of the **nodeid51** are the renderers of this model.
 
 ![](C:\Users\vinay\Documents\GitHub\mixed-reality\mixed-reality-docs\images\mrlearning-appx\Tutorial1-Section4-Step3-3.png)
 
@@ -268,7 +278,7 @@ Now let us add the Eye Tracking feature to our 3D models in the Scene,
 
 What we are doing hear is when you look at the particular area in the 3D model we need a Tool tip Highlight to show the details of this area, 
 
-Expand the **MarsCuriosityRover Model** in the **ButtonsParant** Object, there you will find the 5 different parts of the Model ie “CAMARA”, “WHEELS”, “SPECTROMETER” “ANTENNA” and “RUHF Antena”,
+Expand the **MarsCuriosityRover Model** in the **ButtonParent** Object, there you will find the 5 different parts of the Model ie “CAMARA”, “WHEELS”, “SPECTROMETER” “ANTENNA” and “RUHF Antena”,
 
 For each of these models there is a tool tip present(**SimpleLineToolTip(0 to 5)**)
 
