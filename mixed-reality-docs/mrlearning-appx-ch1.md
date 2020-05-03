@@ -76,8 +76,6 @@ After you have imported the tutorial assets your Project window should look simi
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section2-Step1-1.png)
 
-
-
 ## Creating and preparing the scene
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
@@ -116,21 +114,15 @@ click-and-drag the **ButtonParent** object from the Hierarchy window into the em
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-3.png)
 
-
-
 Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel()** to set the Next Model function as the action that is triggered when the button pressed events is fired from this button:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-4.png)
 
 Similarly by following the above Steps also Configure the **PreviousButton,** and **ClippingButton** the only Change would be to select the function when the button pressed event is fired.
 
-
-
 For **PreviousButton** select **ViewButtonControl** >**PreviousModel()** to set the previous Model function. 
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-5.png)
-
-
 
 For **ClippingButton** select **ToggleButton**> **ToggleClipping()** to set the Toggle function for Clipping Object.
 
@@ -142,25 +134,19 @@ For **ClippingButton** select **ToggleButton**> **ToggleClipping()** to set the 
 
 Now that the Buttons are Configured let us add some Models and the Clipping Objects to the Scene.
 
-For demonstration we have provided with 5 different 3D models for this tutorial, which are present as the child Objects of the **ModelParent** in the Hierarchy. 
+For demonstration, we have provided with 5 different 3D models for this tutorial, which are present as the child Objects of the **ModelParent** in the Hierarchy. 
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-1.png)
-
-
 
 In the Hierarchy Click on **ButtonParent** object and on the Inspector widow Expand the **ViewControlScript** now you could find the **Modles[]** Field which indicates the No of 3D models in the Scene.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-2.png)
-
-
 
 Now in the Inspector window expand the **Models[]** field. Enter the No of 3D model you would like to have on the Scene, hear in our case it would be 5.
 
 Now Drag and Drop the 3D Models one by one From the **ModelParent** Object in the hierarchy. 
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-3.png)
-
-
 
 Now we will add the **Clipping object** to the Scene,
 
@@ -169,8 +155,6 @@ In the Hierarchy  Click on **ButtonParent** object and on the Inspector widow Ex
 To this ClippingObject Field add the **Clippingobjects** component present in the hierarchy,
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-4.png)
-
-
 
 ### 3. Configure the Clipping Objects to Work:
 
@@ -200,9 +184,7 @@ Similarly add the renderers of all 5 3D models in the scene to the **ClippingSph
 
 By following the above procedure configure also for the **ClippingBox** and **ClippingPlane** objects
 
-
-
-### 4.Adding Eye Tracking Tool Tip Highlight Features to the Model:
+### 4. Adding Eye Tracking Tool Tip Highlight Features to the Model:
 
 In order to add this Eye Tracking features to the Models first we need to Configure the Eye Tracking to the Scene.
 
@@ -270,8 +252,6 @@ Now that the Setup for Eye Tracking is done You can simulate eye tracking input 
 
    ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-3-2-3.png)
 
-
-
 ##### **Adding Tool Tip Highlight to the 3D models**
 
 Now let us add the Eye Tracking feature to our 3D models in the Scene,
@@ -296,8 +276,6 @@ Expand the **MarsCuriocityRover** model and add **Simplelinetooltip** object whi
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-3.png)
 
-
-
 To the Event **while looking at target ()** add the function by click on **Nofunction>GameObject>SetActive**. and select the Check box, this enables the tooltip when you look at the gameobject
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-4.png)
@@ -306,19 +284,13 @@ Similarly to the event **on** **look away()** add the function **Nofunction>Game
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-5.png)
 
-
-
 By Following the above procedure attach the Tool tip Highlight  to the remaining 4 parts of the Model, and to the all 5 of the 3D models which are Used in the Scene..
-
-
 
 ## Congratulations
 
 In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping and eye tracking features. you can test this in your editor in Unity,Click On Play in the Editor, test the **NextButton** and **PreviousButton** by clicking it the 3D model in the Scene should change. when Clicked on **ClippingObject** the Clipping Objects should appear and disappear. when the Clipping plane appears Grab one of the Clipping Object and run over the 3D model. this should clip the 3D model.to test the Eye Tracking tooltip locate the small white dot in the window move this dot using keys A,W,S,D when this dot points at the part of the 3D model, a tool tip with the name should appear.
 
 In the next lesson, you will learn how to create a Standalone UWP PC Holographic emulation app and connect to HoloLens 2 at any point providing a way to Visualize 3D content in in Mixed reality.
-
-
 
 <!-- TODO: change this -->
 
