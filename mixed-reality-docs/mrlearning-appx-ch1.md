@@ -19,7 +19,7 @@ In the first tutorial, [Create Mixed Reality experience](mrlearning-appx-ch1.md)
 
 <!-- TODO:add link to second tutorial -->
 
-In the second tutorial, [Create Holographic Remoting remote app](mrlearning-appx-ch2.md), you will learn how to create Holographic Remoting remote app and connect to HoloLens 2 at any point providing a way to visualize 3D content in Mixed Reality.
+In the second tutorial, [Create Holographic Remoting remote application](mrlearning-appx-ch2.md), you will learn how to create Holographic Remoting remote app and connect to HoloLens 2 at any point providing a way to visualize 3D content in Mixed Reality.
 
 ## Objectives
 
@@ -96,67 +96,71 @@ To focus in on the objects in the scene, you can double-click on the **ModelPare
 
 ## Configuring the buttons to operate the scene
 
-In this section, you will add scripts into the scene to create button events that demonstrate the fundamentals of model switching and clipping functionality in an application. 
+In this section, you will add scripts into the scene to create button events that demonstrate the fundamentals of model switching and clipping functionality. 
 
 ### 1. Configure the Interactable (Script) component
 
-In the Hierarchy window, select the **ButtonParent** object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the Scene and another **Toggle Button (Script)** to enable and disable the **ClippingObjects** object.
+In the Hierarchy window, select the **ButtonParent** object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the Scene and another **Toggle Button (Script)** to enable and disable the ClippingObjects object.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-1.png)
 
-Now that the scripts are attached to the **ButtonParent** object, it is time to configure **NextButton, PreviousButton** and **ClippingButton.**
+Now that the scripts are attached to the ButtonParent object, it is time to configure **NextButton, PreviousButton** and **ClippingButton.**
 
-In the Hierarchy window, expand the **ButtonParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and add a new event listener to the **OnClick()** event by clicking the **+** icon:
+In the Hierarchy window, expand the ButtonParent object and select the NextButton. In the Inspector window, locate the **Interactable (Script)** component and add a new event listener to the **OnClick()** event by clicking the **+** icon:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-2.png)
 
-click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the **Onclick()** you just added to make the object listen for button pressed events from this button.
+With the NextButton object still selected in the Hierarchy window,  click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event listener you just added to make the ButtonParent object listen for button click events from this button:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-3.png)
 
-Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel()** to set the Next Model function as the action that is triggered when the button pressed events is fired from this button:
+Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel ()** to set the NextModel () function as the action that is triggered when the button pressed events is fired from this button:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-4.png)
 
-Similarly by following the above Steps also Configure the **PreviousButton,** and **ClippingButton** the only Change would be to select the function when the button pressed event is fired.
+### 2. Configure the remaining buttons
 
-For **PreviousButton** select **ViewButtonControl** >**PreviousModel()** to set the previous Model function. 
+For each of the remaining buttons, complete the process outlined above to assign functions to **OnClick ()** events:
+
+* For **PreviousButton** object, assign the ViewButtonControl > **PreviousModel ()** function. 
+
+  <!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-5.png)
 
-For **ClippingButton** select **ToggleButton**> **ToggleClipping()** to set the Toggle function for Clipping Object.
+* For **ClippingButton** select **ToggleButton** > **ToggleClipping ()** function.
+
+  <!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-6.png)
 
------- > Clipping Objects and Eye Tracking Tool Tip to operate the scene <----------
+### 3. Adding Models and Clipping Objects to the Script:
 
-### 2. Adding Models and Clipping Objects to the Script:
+Now that your buttons are configured to demonstrate the model switching and clipping functionality, it is time to add models and the clipping objects to the script.
 
-Now that the Buttons are Configured let us add some Models and the Clipping Objects to the Scene.
+For demonstration, we have provided 5 different models, expand **ModelParent** object to find these models.
 
-For demonstration, we have provided with 5 different 3D models for this tutorial, which are present as the child Objects of the **ModelParent** in the Hierarchy. 
+<!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-1.png)
 
-In the Hierarchy Click on **ButtonParent** object and on the Inspector widow Expand the **ViewControlScript** now you could find the **Modles[]** Field which indicates the No of 3D models in the Scene.
+With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand **Models** variable. 
+
+Enter the number of models you would like to have on your scene, in this case, it would be five. This will create placeholders for adding new models, drag-and-drop ModelParent Object's child model objects into those placeholders. 
+
+<!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-2.png)
 
-Now in the Inspector window expand the **Models[]** field. Enter the No of 3D model you would like to have on the Scene, hear in our case it would be 5.
-
-Now Drag and Drop the 3D Models one by one From the **ModelParent** Object in the hierarchy. 
-
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-3.png)
 
-Now we will add the **Clipping object** to the Scene,
-
-In the Hierarchy  Click on **ButtonParent** object and on the Inspector widow Expand the **ToggleButtonScript** hear you will find a field "**ClippingObject**" to add the **Clipping object** Component.
-
-To this ClippingObject Field add the **Clippingobjects** component present in the hierarchy,
+Follow the same steps to add **ClippingObjects** object from the Hierarchy window to **Toggle Button Script (Script)** component's empty field.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-4.png)
 
-### 3. Configure the Clipping Objects to Work:
+<!-- TODO: Improve this title -->
+
+### Configure the clipping objects to enable clipping feature
 
 Now Lets Configure the Clipping Object Component to work for Model clipping in the scene.
 
@@ -184,7 +188,9 @@ Similarly add the renderers of all 5 3D models in the scene to the **ClippingSph
 
 By following the above procedure configure also for the **ClippingBox** and **ClippingPlane** objects
 
-### 4. Adding Eye Tracking Tool Tip Highlight Features to the Model:
+<!-- TODO: Improve this title -->
+
+### Configure eye tracking to enable highlight tool tips
 
 In order to add this Eye Tracking features to the Models first we need to Configure the Eye Tracking to the Scene.
 
@@ -294,4 +300,4 @@ In the next lesson, you will learn how to create a Standalone UWP PC Holographic
 
 <!-- TODO: change this -->
 
-[Next Lesson: 2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
+[Next Lesson: 2. Create Holgraphic Remoting remote application ](mrlearning-appx-ch2.md)
