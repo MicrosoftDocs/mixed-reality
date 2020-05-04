@@ -96,11 +96,11 @@ To focus in on the objects in the scene, you can double-click on the **ModelPare
 
 ## Configuring the buttons to operate the scene
 
-In this section, you will add scripts into the scene to make buttons to switch models and enable clipping objects that demonstrate the models switching between next and previous models, enable or disable the clipping objects. 
+In this section, you will add scripts into the scene to create button events that demonstrate the fundamentals of model switching and clipping functionality in an application. 
 
 ### 1. Configure the Interactable (Script) component
 
-In the Hierarchy window, select the **ButtonParent** object and in the Inspector window, notice two scripts are attached to it, one **ViewButtonControl (Script)** to change the 3D model in the Scene and another **ToogleButton(Script)** to turn on and off the clipping objects.
+In the Hierarchy window, select the **ButtonParent** object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the Scene and another **Toggle Button (Script)** to enable and disable the **ClippingObjects** object.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-1.png)
 
