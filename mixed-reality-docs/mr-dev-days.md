@@ -56,7 +56,7 @@ When the schedule gets finalized, we will post it here. Please check back for up
 ## Frequently Asked Questions
 
 *Q* - Can I participate without a VR Headset  
-*A* - Absolutely. While we feel the event will be best experienced within a VR Headset, we want to be inclusive of people who can't join us in that format.  Altspace has a PC client that can be used to join the event.  
+*A* - Absolutely. While we feel the event will be best experienced with a VR Headset, we want to be inclusive of people who can't join us in that format.  Altspace has a PC client that can be used to join the event.  
   
 *Q* -  
 *A* -  
