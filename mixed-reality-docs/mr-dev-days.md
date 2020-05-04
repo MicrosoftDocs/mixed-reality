@@ -23,3 +23,20 @@ We look forward to having you join us at Mixed Reality Dev Days! Get ready for a
 
 ### Price - **FREE**
 
+---
+
+## Registration
+
+[Register Now](https://mixedrealityprod.microsoftcrmportals.com/MRDDRegistration/)
+
+We are very excited to open up registration for Mixed Reality Dev Days.  The event is free and being held in AltspaceVR, however we are still requesting that attendees register so we can send email updates as the event gets closer, as well as to make sure that we are staffed up for the number of attendees.
+
+---
+
+## About Altspace
+
+AltspaceVR is the premier place to attend live shows, meetups, cool classes, and more with friendly people from around the world. All thanks to the magic of Virtual Reality.  Altspace became part of the Microsoft family in 2017 and we are very excited to showcase how events in virtual space can be run.
+
+Altspace supports the following platforms: HTC Vive; Oculus Rift, Go, and Quest; Samsung GearVR; Windows Mixed Reality; and 2D Mode on PC.
+
+You will need an Altspace account to attend Mixed Reality Dev Days. You can sign up for an account [here](https://account.altvr.com/users/sign_up).
