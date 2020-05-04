@@ -54,19 +54,21 @@ When the schedule gets finalized, we will post it here. Please check back for up
 ---
 
 ## Frequently Asked Questions
+This section will be updated frequently as we get more questions from you!
 
-*Q* - Can I participate without a VR Headset  
-*A* - Absolutely. While we feel the event will be best experienced with a VR Headset, we want to be inclusive of people who can't join us in that format.  Altspace has a PC client that can be used to join the event.  
+**Q** - Can I participate without a VR Headset  
+**A** - Absolutely. While we feel the event will be best experienced with a VR Headset, we want to be inclusive of people who can't join us in that format.  Altspace has a PC client that can be used to join the event.  
   
-*Q* -  
-*A* -  
+**Q** - Who should attend Mixed Reality Dev Days  
+**A** - This event is inclusive of everyone who works or plays in the Mixed Reality space. While most of the content is going to be developer focused, we also know that there is interesting content for a wide variety of roles beyond developers. Please remember to check the schedule for updates to see the kind of content we will be providing.  
+
+<!--  
+**Q** -  
+**A** -  
   
-*Q* -  
-*A* -  
+**Q** -  
+**A** -  
   
-*Q* -  
-*A* -  
-  
-*Q* -  
-*A* -  
-  
+**Q** -  
+**A** -  
+-->
