@@ -17,5 +17,7 @@ We look forward to having you join us at Mixed Reality Dev Days! Get ready for a
 
 ## Important Details
 
+### Date - May 21st and 22nd
 
+### Location - AltspaceVR
 
