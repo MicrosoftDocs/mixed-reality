@@ -69,7 +69,7 @@ When the schedule gets finalized, we will post it here. Please check back for up
 
 ### Microsoft reserves the right to refuse admittance to, or remove any person from a party at any time at its sole discretion.
 
-### We make this policy visible for all Microsoft parties so all attendees can see what is expected and what steps they should take if they see or experience behavior not consistent with this policy ###
+### We make this policy visible for all Microsoft parties so all attendees can see what is expected and what steps they should take if they see or experience behavior not consistent with this policy
 
 ---
 
