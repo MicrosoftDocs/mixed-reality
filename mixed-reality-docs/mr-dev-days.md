@@ -21,7 +21,7 @@ We look forward to having you join us at Mixed Reality Dev Days! Get ready for a
 
 ### Location - **AltspaceVR**
 
-### Price - **FREE**
+### Registration - **FREE**
 
 ---
 
@@ -35,7 +35,7 @@ We are very excited to open up registration for Mixed Reality Dev Days.  The eve
 
 ## About Altspace
 
-AltspaceVR is the premier place to attend live shows, meetups, cool classes, and more with friendly people from around the world. All thanks to the magic of Virtual Reality.  Altspace became part of the Microsoft family in 2017 and we are very excited to showcase how events in virtual space can be run.
+[AltspaceVR](https://altvr.com/) is the premier place to attend live shows, meetups, cool classes, and more with friendly people from around the world. All thanks to the magic of Virtual Reality.  Altspace became part of the Microsoft family in 2017 and we are very excited to showcase how events in virtual space can be run.
 
 Altspace supports the following platforms: HTC Vive; Oculus Rift, Go, and Quest; Samsung GearVR; Windows Mixed Reality; and 2D Mode on PC.
 
@@ -45,19 +45,22 @@ You will need an Altspace account to attend Mixed Reality Dev Days. You can sign
 
 ## Schedule
 
-Our event team is hard at work setting up the schedule of sessions for you. 
+Our event team is hard at work setting up the schedule of sessions for you.  
 
-At a high level, the event will start on Thursday, May 21st at 9am Pacific Daylight Time.
+At a high level, the event will start on Thursday, May 21st at 9am Pacific Daylight Time.  
 
-When the schedule gets finalized, we will post it here. Please check back for updates.
+When the schedule gets finalized, we will post it here. Please check back for updates.  
 
 ---
 
 ## Frequently Asked Questions
 This section will be updated frequently as we get more questions from you!
 
-**Q** - Can I participate without a VR Headset  
-**A** - Absolutely. While we feel the event will be best experienced with a VR Headset, we want to be inclusive of people who can't join us in that format.  Altspace has a PC client that can be used to join the event.  
+**Q** - Can I participate without a VR Headset?  
+**A** - Absolutely. While we feel the event will be best experienced with a VR Headset, we want to be inclusive of people who can't join us in that format.  Altspace has a PC client that can be used to join the event. ***Altspace does not currently have a client that works on the Mac platform***.  
+  
+**Q** - How do I join the 2D experience?  
+**A** - From a PC you have the option to [download the Altspace Client](https://altvr.com/get-altspacevr/) via the Windows Store or Steam. After downloading the client, you will need to create an account, and log in. Info on how to navigate within the 2D experience can be found [here](https://help.altvr.com/hc/en-us/articles/115003528373-How-do-I-control-my-avatar-with-Mouse-Keyboard-).
   
 **Q** - Who should attend Mixed Reality Dev Days  
 **A** - This event is inclusive of everyone who works or plays in the Mixed Reality space. While most of the content is going to be developer focused, we also know that there is interesting content for a wide variety of roles beyond developers. Please remember to check the schedule for updates to see the kind of content we will be providing.  
