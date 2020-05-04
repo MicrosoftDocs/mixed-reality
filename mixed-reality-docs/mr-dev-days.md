@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Mixed Reality Dev Days
-description: Learn to build mixed reality experiences for HoloLens and immersive headsets.
+description: Event page for Mixed Reality Dev Days
 author: jessemcculloch 
 ms.author: jemccull
 ms.date: 02/21/2020
@@ -40,3 +40,18 @@ AltspaceVR is the premier place to attend live shows, meetups, cool classes, a
 Altspace supports the following platforms: HTC Vive; Oculus Rift, Go, and Quest; Samsung GearVR; Windows Mixed Reality; and 2D Mode on PC.
 
 You will need an Altspace account to attend Mixed Reality Dev Days. You can sign up for an account [here](https://account.altvr.com/users/sign_up).
+
+---
+
+## Schedule
+
+Our event team is hard at work setting up the schedule of sessions for you. 
+
+At a high level, the event will start on Thursday, May 21st at 9am Pacific Daylight Time.
+
+When the schedule gets finalized, we will post it here. Please check back for updates.
+
+---
+
+### Frequently Asked Questions
+
