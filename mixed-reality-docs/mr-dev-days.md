@@ -59,17 +59,17 @@ When the schedule gets finalized, we will post it here. Please check back for up
 
 ### Microsoft Standard Event Guidelines
 
-### Microsoft's mission is to empower every person and every organization on the planet to achieve more. This includes Microsoft parties where we seek to create a respectful, friendly, fun and inclusive experience for all participants.
+***Microsoft's mission is to empower every person and every organization on the planet to achieve more. This includes Microsoft parties where we seek to create a respectful, friendly, fun and inclusive experience for all participants.***
 
-### We do not tolerate harassing or disrespectful behavior, messages, images, or interactions by any party participant, in any form, at any aspect of the program including business and social activities, regardless of location.
+***We do not tolerate harassing or disrespectful behavior, messages, images, or interactions by any party participant, in any form, at any aspect of the program including business and social activities, regardless of location.***
 
-### We do not tolerate any behavior that is degrading to any gender, race, sexual orientation or disability, or any behavior that would violate the company's Anti-Harassment and Anti-Discrimination Policy, Equal Employment Opportunity Policy, or Standards of Business Conduct, even if the entertainment is not paid for by Microsoft. In short, the entire experience at the venue must meet our culture standards.
+***We do not tolerate any behavior that is degrading to any gender, race, sexual orientation or disability, or any behavior that would violate the company's Anti-Harassment and Anti-Discrimination Policy, Equal Employment Opportunity Policy, or Standards of Business Conduct, even if the entertainment is not paid for by Microsoft. In short, the entire experience at the venue must meet our culture standards.***
 
-### We encourage everyone to assist in creating a welcoming and safe environment. Please report any concerns, harassing behavior, or suspicious or disruptive activity to venue staff, the event host or owner, or the nearest event staff. We also encourage employees to contact their Microsoft Manager or our Business Conduct Hotline (1-877-320-MSFT or [buscond@microsoft.com](mailto:buscond@microsoft.com)) at any time if you feel a party is against our policy or inconsistent with the Microsoft culture. Outside the United States, call collect to 1-470-219-7087.
+***We encourage everyone to assist in creating a welcoming and safe environment. Please report any concerns, harassing behavior, or suspicious or disruptive activity to venue staff, the event host or owner, or the nearest event staff. We also encourage employees to contact their Microsoft Manager or our Business Conduct Hotline (1-877-320-MSFT or [buscond@microsoft.com](mailto:buscond@microsoft.com)) at any time if you feel a party is against our policy or inconsistent with the Microsoft culture. Outside the United States, call collect to 1-470-219-7087.***
 
-### Microsoft reserves the right to refuse admittance to, or remove any person from a party at any time at its sole discretion.
+***Microsoft reserves the right to refuse admittance to, or remove any person from a party at any time at its sole discretion.***
 
-### We make this policy visible for all Microsoft parties so all attendees can see what is expected and what steps they should take if they see or experience behavior not consistent with this policy
+***We make this policy visible for all Microsoft parties so all attendees can see what is expected and what steps they should take if they see or experience behavior not consistent with this policy.***
 
 ---
 
