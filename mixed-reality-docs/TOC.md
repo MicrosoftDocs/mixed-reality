@@ -197,9 +197,9 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
-### [Unreal Gaze Input](unreal-gaze-input.md)
-### [Unreal Hand tracking](unreal-hand-tracking.md)
-### [Unreal Voice Input](unreal-voice-input.md)
+### [Gaze Input](unreal-gaze-input.md)
+### [Hand tracking](unreal-hand-tracking.md)
+### [Voice Input](unreal-voice-input.md)
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)
