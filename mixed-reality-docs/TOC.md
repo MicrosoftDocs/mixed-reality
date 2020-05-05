@@ -123,10 +123,9 @@
 ###### [4. Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
 ##### Multi-user capabilities tutorials
 ###### [1. Setting up Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
-###### [2. Getting Unity ready for development](mrlearning-sharing(photon)-ch2.md)
-###### [3. Connecting multiple users](mrlearning-sharing(photon)-ch3.md)
-###### [4. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch4.md)
-###### [5. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch5.md)
+###### [2. Connecting multiple users](mrlearning-sharing(photon)-ch2.md)
+###### [3. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch3.md)
+###### [4. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch4.md)
 ##### Spatial audio tutorials
 ###### [1. Adding spatial audio in your project](unity-spatial-audio-ch1.md)
 ###### [2. Spatializing button interaction sounds](unity-spatial-audio-ch2.md)
@@ -164,6 +163,13 @@
 ##### [MR and Azure 311: Microsoft Graph](mr-azure-311.md)
 ##### [MR and Azure 312: Bot integration](mr-azure-312.md)
 ##### [MR and Azure 313: IoT Hub Service](mr-azure-313.md)
+### Unreal
+#### [1. Getting started](unreal-uxt-ch1.md)
+#### [2. Initializing your project and first application](unreal-uxt-ch2.md)
+#### [3. Setting up your project for mixed reality](unreal-uxt-ch3.md)
+#### [4. Making your scene interactive](unreal-uxt-ch4.md)
+#### [5. Adding a button & resetting piece locations](unreal-uxt-ch5.md)
+#### [6. Packaging & deploying to device or emulator](unreal-uxt-ch6.md)
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -200,6 +206,11 @@
 ### [Gaze Input](unreal-gaze-input.md)
 ### [Hand tracking](unreal-hand-tracking.md)
 ### [Voice Input](unreal-voice-input.md)
+### [Spatial Anchors in Unreal](unreal-spatial-anchors.md)
+### [Spatial Mapping in Unreal](unreal-spatial-mapping.md)
+### [HoloLens Camera in Unreal](unreal-hololens-camera.md)
+### [QR Codes in Unreal](unreal-qr-codes.md)
+### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)
@@ -238,7 +249,7 @@
 #### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
 ### Holographic remoting
 #### [Holographic Remoting Player](holographic-remoting-player.md)
-#### [Writing a Holographic Remoting Host app](holographic-remoting-create-host.md)
+#### [Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
 #### [Writing a custom Holographic Remoting player](holographic-remoting-create-player.md)
 #### [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 #### [Secure Connection with Holographic Remoting](holographic-remoting-secure-connection.md)
