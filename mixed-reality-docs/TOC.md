@@ -203,6 +203,9 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
+### [Gaze Input](unreal-gaze-input.md)
+### [Hand tracking](unreal-hand-tracking.md)
+### [Voice Input](unreal-voice-input.md)
 ### [Spatial Anchors in Unreal](unreal-spatial-anchors.md)
 ### [Spatial Mapping in Unreal](unreal-spatial-mapping.md)
 ### [HoloLens Camera in Unreal](unreal-hololens-camera.md)
