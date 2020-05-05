@@ -22,7 +22,7 @@ This section introduces you to the open source Mixed Reality Toolkit UX Tools pl
 
 ## Download the Mixed Reality Toolkit UX Tools plugin
 
-1.	Clone or download and unzip the MRTK UX Tools plugin from the [UX Tools GitHub repository](https://github.com/microsoft/MixedReality-UXTools-Unreal)
+1.	Clone or download and unzip the latest release of the MRTK UX Tools plugin from the [UX Tools GitHub repository](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases)
 
 2.	In your chess project root folder, create a new folder called “Plugins”. Copy /UXToolsGame/Plugins/UXTools/ from the MixedReality-UXTools-Unreal repository into this folder. Restart the Unreal editor. 
 

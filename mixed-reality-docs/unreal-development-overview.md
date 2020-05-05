@@ -22,17 +22,6 @@ Learn how to [build and deploy a simple chess app](unreal-uxt-ch1.md) for HoloLe
 
 The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) is a set of components, in the form of plugins, samples, and documentation, designed to accelerate the development of mixed reality applications using the Unreal Engine. The first component released as part of this toolkit is the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal), a plugin that can be added to your HoloLens 2 project to provide UX features for HoloLens 2 applications. Documentation for the Mixed Reality Toolkit and UX Tools for Unreal can be found in their respective GitHub repositories. 
 
-## Guides to specific features
-
-To learn how to use specific features in Unreal, check out the below guides: 
-* [Hand Tracking](unreal-hand-tracking.md)
-* [Eye Tracking](unreal-gaze-input.md)
-* [Spatial Mapping](unreal-spatial-mapping.md)
-* [Voice Input](unreal-voice-input.md)
-* [Spatial Anchors](unreal-spatial-anchors.md)
-* [HoloLens Camera](unreal-hololens-camera.md)
-* [QR Codes](unreal-qr-codes.md)
-
 ## Performance
 
 A HoloLens 2 app must run at 60 frames per second for holograms to appear stable and responsive. To achieve this in your app, we highly recommend following our [performance recommendations for Unreal](performance-recommendations-for-unreal.md). 

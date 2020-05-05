@@ -166,7 +166,7 @@
 ### Unreal
 #### [1. Getting started](unreal-uxt-ch1.md)
 #### [2. Initializing your project and first application](unreal-uxt-ch2.md)
-#### [3. Setting up your project for mixed reality)
+#### [3. Setting up your project for mixed reality](unreal-uxt-ch3.md)
 #### [4. Making your scene interactive](unreal-uxt-ch4.md)
 #### [5. Adding a button & resetting piece locations](unreal-uxt-ch5.md)
 #### [6. Packaging & deploying to device or emulator](unreal-uxt-ch6.md)
