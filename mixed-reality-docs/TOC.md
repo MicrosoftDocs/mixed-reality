@@ -163,6 +163,13 @@
 ##### [MR and Azure 311: Microsoft Graph](mr-azure-311.md)
 ##### [MR and Azure 312: Bot integration](mr-azure-312.md)
 ##### [MR and Azure 313: IoT Hub Service](mr-azure-313.md)
+### Unreal
+#### [1. Getting started](unreal-uxt-ch1.md)
+#### [2. Initializing your project and first application](unreal-uxt-ch2.md)
+#### [3. Setting up your project for mixed reality)
+#### [4. Making your scene interactive](unreal-uxt-ch4.md)
+#### [5. Adding a button & resetting piece locations](unreal-uxt-ch5.md)
+#### [6. Packaging & deploying to device or emulator](unreal-uxt-ch6.md)
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -196,6 +203,7 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
+### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)

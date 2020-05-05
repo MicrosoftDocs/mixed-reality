@@ -60,7 +60,7 @@ We recommend installing the Unity game engine as the easiest way to get started 
         **Unreal**</a><br>
         Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints.<br>
         <br>
-        HoloLens support for Unreal Engine 4.24 is currently in beta.<br>
+        As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready.<br>
         <br>
         See the [Unreal development overview](unreal-development-overview.md) to get started with Unreal development for HoloLens 2.
     :::column-end:::
@@ -83,6 +83,7 @@ We recommend installing the Unity game engine as the easiest way to get started 
 The Mixed Reality Toolkit provides components and features that are intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality headsets and OpenVR platform. The project is aimed at reducing barriers to entry, to create mixed reality applications and contribute back to the community as things evolve.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit" target="_blank">Mixed Reality Toolkit</a> - a collection of scripts and components intended to accelerate the development of mixed reality applications.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit-Unity</a> - uses code from the base toolkit, making it easier to consume in Unity.
+* <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">Mixed Reality Toolkit-Unreal</a> - a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine.
 * <a href="https://github.com/Microsoft/MixedRealityCompanionKit" target="_blank">Mixed Reality Companion Kit</a> - code bits and components that might not run directly on HoloLens or immersive (VR) headsets, but instead pair with them to build experiences targeting Windows Mixed Reality.
 
 ## Setting up your PC for mixed reality development
