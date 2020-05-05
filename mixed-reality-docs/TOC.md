@@ -203,6 +203,10 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
+### [Spatial Anchors in Unreal](unreal-spatial-anchors.md)
+### [Spatial Mapping in Unreal](unreal-spatial-mapping.md)
+### [HoloLens Camera in Unreal](unreal-hololens-camera.md)
+### [QR Codes in Unreal](unreal-qr-codes.md)
 ### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
