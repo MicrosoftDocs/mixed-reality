@@ -58,7 +58,7 @@ This section gets you started with creating a new Unreal application for HoloLen
 
 ![Show or hide the sources panel](images/unreal-uxt/2-showhidesources.PNG)
 
-2. Download the zip file of assets from [GitHub](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp/ChessAssets.zip). This file contains the 3D models for a chess board and chess set. Unzip this file.
+2. Download the zip file of assets from [GitHub](https://github.com/microsoft/MixedReality-Unreal-Samples/blob/master/ChessApp/ChessAssets.7z). This file contains the 3D models for a chess board and chess set. Unzip this file.
 
 3. At the top of the Content Browser, click on **Import**. Navigate to the folder that you just unzipped and select all the items within. This folder contains FBX files which are the 3D object meshes for our chess board and pieces, as well as TGA files which are the texture maps we’ll use to create materials for our board and pieces. Click **Open**. 
 
