@@ -29,13 +29,13 @@ A HoloLens 2 app must run at 60 frames per second for holograms to appear stable
 ## Guides to specific features
 
 To learn how to use specific features in Unreal, check out the below guides: 
-* [Hand Tracking](unreal-hand-tracking.md)
-* [Eye Tracking](unreal-gaze-input.md)
-* [Spatial Mapping](unreal-spatial-mapping.md)
-* [Spatial Anchors](unreal-spatial-anchors.md)
-* [Voice Input](unreal-voice-input.md)
-* [HoloLens Camera](unreal-hololens-camera.md)
-* [QR Codes](unreal-qr-codes.md)
+* [Hand tracking](unreal-hand-tracking.md)
+* [Eye tracking](unreal-gaze-input.md)
+* [Spatial mapping](unreal-spatial-mapping.md)
+* [Spatial anchors](unreal-spatial-anchors.md)
+* [Voice input](unreal-voice-input.md)
+* [HoloLens camera](unreal-hololens-camera.md)
+* [QR codes](unreal-qr-codes.md)
 
 ## Supported Features
 
@@ -43,24 +43,24 @@ To learn how to use specific features in Unreal, check out the below guides:
 | ----------- | ----------- |
 | ARM64 support | 4.23 |
 | Streaming from a PC | 4.23 |
-| Spatial Mapping | 4.23 |
-| Hand and Joint Tracking | 4.23 |
-| Eye Tracking | 4.23 |
-| Voice Input | 4.23 |
-| Spatial Anchors | 4.23 |
-| Camera Access | 4.23 |
-| QR Codes | 4.23 |
-| Spatial Audio | 4.23 |
+| Spatial mapping | 4.23 |
+| Hand and joint tracking | 4.23 |
+| Eye tracking | 4.23 |
+| Voice input | 4.23 |
+| Spatial anchors | 4.23 |
+| Camera access | 4.23 |
+| QR codes | 4.23 |
+| Spatial audio | 4.23 |
 | Spectator Screen support for streaming | 4.24 |
 | Planar LSR over streaming | 4.24 |
-| Sample Apps ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) and [Mission AR](https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html)) | 4.24 |
-| Mobile Multi-View: Performance hits 60 fps | 4.25 |
-| 3rd Camera Render | 4.25 |
+| Sample apps ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) and [Mission AR](https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html)) | 4.24 |
+| Mobile multi-View: Performance hits 60 fps | 4.25 |
+| 3rd camera render | 4.25 |
 | Streaming from a packaged desktop app | 4.25 |
 | Azure Spatial Anchors for HoloLens 2 (beta) | 4.25 |
 | OpenXR support (beta) | 4.25 |
 | UX Tools support (0.8) | 4.25 |
-| Developer Docs & Tutorials | 4.25 |
+| Developer docs & tutorials | 4.25 |
 
 ## See also
 * <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/index.html" target="_blank">Unreal docs for streaming, deploying to emulator and device</a>
