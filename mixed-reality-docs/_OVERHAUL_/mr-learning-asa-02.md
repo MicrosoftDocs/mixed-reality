@@ -15,31 +15,12 @@ ms.localizationpriority: high
 
 Welcome to the second series of the HoloLens 2 tutorials. In this three-part tutorial series, you will learn the fundamentals of Azure Spatial Anchors.
 
-In this first tutorial, [Getting started with Azure Spatial Anchors](mr-learning-asa-02.md), you will explore the various steps required to start and stop an Azure session and create, upload, and download Azure anchors on a single device.
-
-In the second tutorial, [Saving, retrieving, and sharing Azure Spatial Anchors](mr-learning-asa-03.md), you will learn how to save Azure Spatial Anchors across multiple app sessions by saving anchor information to the HoloLens 2's storage and how to share this anchor information to other devices for a multi-device anchor alignment.
-
-In the third tutorial, [Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md), you will learn how to provide users with feedback about anchor events and statuses when using Azure Spatial Anchors.
+In this chapter you will explore the various steps required to start and stop an Azure session and create, upload, and download Azure anchors on a single device.
 
 ## Objectives
 
 * Learn the fundamentals of developing with Azure Spatial Anchors for HoloLens 2
 * Create, upload, and download spatial anchors
-
-## Prerequisites
-
->[!TIP]
->If you have not completed the [Getting started tutorials](mr-learning-base-01.md) series yet, it's recommended that you complete those tutorials first.
-
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
-* Windows 10 SDK 10.0.18362.0 or later
-* Some basic C# programming ability
-* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added
-* Complete the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial.
-
-> [!IMPORTANT]
-> The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating the Unity project
 <!-- TODO: Consider renaming to 'Creating and preparing the Unity project'-->
@@ -123,7 +104,7 @@ In the Hierarchy window, expand the **ButtonParent** object and select the first
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
-In the Inspector window, under the **Interactable (Script)** component locate the **OnClick()** event listener:
+In the Inspector window, under the **Interactable (Script)** component locate the **OnClick ()** event listener:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
