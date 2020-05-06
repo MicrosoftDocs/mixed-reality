@@ -294,7 +294,7 @@ By Following the above procedure attach the Tool tip Highlight  to the remaining
 
 ## Congratulations
 
-In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping and eye tracking features. You can test this in your editor in Unity,Click On Play in the Editor, test the **NextButton** and **PreviousButton** by clicking it ,the 3D model in the Scene should change. when Clicked on **ClippingObject** the Clipping Objects should appear and disappear. When the Clipping plane appears Grab one of the Clipping Object and run over the 3D model. This should clip the 3D model.To test the Eye Tracking tooltip, locate the small white dot in the window move this dot using keys A,W,S,D when this dot points at the part of the 3D model, a tool tip with the name should appear.
+In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping and eye tracking features. You can test this in your editor in Unity,Click On Play in the Editor, test the **NextButton** and **PreviousButton** by clicking it, the 3D model in the Scene should change. when Clicked on **ClippingObject** the Clipping Objects should appear and disappear. When the Clipping Objects appears Grab one of the Clipping Object and run over the 3D model. This should clip the 3D model. To test the Eye Tracking tooltip, locate the small white dot in the window move this dot to point at the part of the 3D model, a tool tip with the name should appear.
 
 In the next lesson, you will learn how to create a Standalone UWP PC Holographic emulation app and connect to HoloLens 2 at any point providing a way to Visualize 3D content in in Mixed reality.
 
