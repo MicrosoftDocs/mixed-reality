@@ -13,9 +13,7 @@ ms.localizationpriority: high
 
 ## Overview
 
-Welcome to the second series of the HoloLens 2 tutorials. In this three-part tutorial series, you will learn the fundamentals of Azure Spatial Anchors.
-
-In this chapter you will explore the various steps required to start and stop an Azure session and create, upload, and download Azure anchors on a single device.
+In this tutorial, you will explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
 
 ## Objectives
 
@@ -79,7 +77,7 @@ After you have imported the tutorial assets your Project window should look simi
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **DebugWindow**, **Instructions**, and **ParentAnchor** to select the four prefabs:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **DebugWindow**, **Instructions**, and **ParentAnchor** to select the four prefabs:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-1.png)
 
@@ -96,7 +94,7 @@ To focus in on the objects in the scene, you can double-click on the ParentAncho
 
 ## Configuring the buttons to operate the scene
 
-In this section, you will add scripts into the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
+In this section, you will add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
 
 ### 1. Configure the Interactible (Script) component
 
@@ -104,15 +102,15 @@ In the Hierarchy window, expand the **ButtonParent** object and select the first
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
-In the Inspector window, under the **Interactable (Script)** component locate the **OnClick ()** event listener:
+In the Inspector window, on the **Interactable (Script)** component, locate the **OnClick ()** event:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
-With the StartAzureSession object still selected in the Hierarchy window, click-and-drag the **ParentAnchor** object from the Hierarchy window into the empty **None (Object)** field of the event listener to make the ParentAnchor object listen for on click events from this button:
+With the StartAzureSession object still selected in the Hierarchy window, click-and-drag the **ParentAnchor** object from the Hierarchy window into the empty **None (Object)** field of the event to make the ParentAnchor object listen for OnClick events from this button:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
-Click the **No Function** dropdown of the same event listener, then select **AnchorModuleScript** > **StartAzureSession ()** to set the StartAzureSession () function as the action that is triggered when the button pressed events is fired from this button:
+Click the **No Function** dropdown of the same OnClick event, then select **AnchorModuleScript** > **StartAzureSession ()** to set the StartAzureSession () function as the action that is triggered when the button pressed event is sent from this button:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
@@ -130,7 +128,7 @@ For each of the remaining buttons, complete the process outlined in step 1 above
 
 ### 3. Connect the scene to the Azure resource
 
-In the Hierarchy window, select the **ParentAnchor** object and in the Inspector window, scroll down to the **Spatial Anchor Manager (Script)** component.
+In the Hierarchy window, select the **ParentAnchor** object and in the Inspector window, locate the **Spatial Anchor Manager (Script)** component.
 
 Then, in the **Credentials** section, paste your Spatial Anchors Account ID and Key, which you created as part of this tutorial's [Prerequisites](mr-learning-asa-02.md#prerequisites), into the corresponding **Spatial Anchors Account Id** and **Spatial Anchors Account Key** fields:
 
@@ -186,7 +184,7 @@ With the RoverModule_Complete prefab still selected, drag it on top of the **Par
 
 ### 2. Reposition the Rover Module experience
 
-Position, rotate, and scale the **RoverModule_Complete** object to a suitable and orientation, while also ensuring the **ParentAnchor** object is still exposed, for example:
+Position, rotate, and scale the **RoverModule_Complete** object to a suitable scale and orientation, while also ensuring the **ParentAnchor** object is still exposed, for example:
 
 * Transform **Position** X = 0, Y = 0, Z = 4.25
 * Transform **Rotation** X = 0, Y = 0, Z = 0
@@ -194,15 +192,15 @@ Position, rotate, and scale the **RoverModule_Complete** object to a suitable an
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step2-1.png)
 
-In the application, users may now reposition the entire Rover Module experience by moving the cube.
+If you rebuild and deploy the application to your device, users can now reposition the entire Rover Module experience by moving the cube.
 
 > [!TIP]
 > There are a variety of user experience flows for repositioning experiences including the use of a repositioning object (such as the cube used in this tutorial), the use of a button to toggle a bounding box that surrounds the experience, the use of position and rotation gizmos, and more.
 
 ## Congratulations
 
-In this tutorial, you learned the fundamentals of Azure Spatial Anchors. The tutorial provided you with several buttons that let you explore the various steps required to start and stop an Azure Spatial Anchors session and create, upload and download Azure Spatial Anchors on a single device.
+In this tutorial, you learned the fundamentals of Azure Spatial Anchors. The tutorial provided you with several buttons that let you explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
 
-In the next lesson, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
+In the next tutorial, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
 
 [Next Lesson: 3. Saving, retrieving and sharing Azure Spatial Anchors](mr-learning-asa-03.md)
