@@ -180,16 +180,21 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStar
 
 With the RoverModule_Complete prefab still selected, drag it on top of the **ParentAnchor** object in the Hierarchy window to make it a child of the ParentAnchor object:
 
+<!-- TODO: Update image when prefab is finalized -->
+<!-- TODO: Image should probably show RoverModule_Complete with blue highlight (Hierarchy window should be selected) -->
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-2.png)
 
 ### 2. Reposition the Rover Module experience
 
 Position, rotate, and scale the **RoverModule_Complete** object to a suitable scale and orientation, while also ensuring the **ParentAnchor** object is still exposed, for example:
 
+<!-- TODO: Update Transform values when prefab is finalized -->
 * Transform **Position** X = 0, Y = 0, Z = 4.25
 * Transform **Rotation** X = 0, Y = 0, Z = 0
 * Transform **Scale** X = 5, Y = 5, Z = 5
 
+<!-- TODO: Update image when prefab is finalized -->
+<!-- TODO: Image should probably show RoverModule_Complete with blue highlight (Hierarchy window should be selected) -->
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step2-1.png)
 
 If you rebuild and deploy the application to your device, users can now reposition the entire Rover Module experience by moving the cube.
