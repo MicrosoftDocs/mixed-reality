@@ -24,7 +24,7 @@ In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnc
 
 ![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
-## Persist Azure Anchors between app sessions
+## Persisting Azure Spatial Anchors between app sessions
 
 In this section, you will learn how to save and retrieve the Azure Anchor ID to and from the HoloLens 2 local disk. This will allow you to query Azure for the same anchor ID between different app sessions, allowing the anchored holograms to be position at the same location as in the previous app session.
 
