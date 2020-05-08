@@ -16,72 +16,75 @@ In this tutorial you will learn how to create Holographic Remoting remote app an
 ## Objectives
 
 * Configure Unity for HoloLens Remoting
-* Learn how to Build and deploy the application with Visual studio
-* Installing the remote application and connecting to HoloLens
+* Learn how to build and deploy the application with Visual Studio
+* Installing the Holographic Remoting remote application and connecting to HoloLens
 
-## Set up Holographic Remoting.
+## Configure your scene for Holographic Remoting.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select **Holographic Remote** prefab:
+In this section, you will configure your project to stream your Mixed Reality experience on to your HoloLens 2 device from your PC in real-time over a WIFI connection.
 
-
-
-pic
-
-
-
-With the prefab still selected, drag it into the Hierarchy window to add it to the scene:
-
-
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select and drag **HolographicRemoting** prefab into your scene.
 
 pic
 
+With the HolographicRemoting object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
+## Build your Holographic Remoting application to PC
 
-Now you need to Build and Deploy this Application to UWP, so that you can connect to HoloLens using this Application.
+In this section, you will configure the project's player settings to support Holographic Remoting and build the application to PC.
 
-[!TIP]
-For a reminder on how to Build the application, you can refer to the [Build your application to your device](https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device) instructions.
+In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window. In the Project Settings window select the **Player** tab, expand the **XR Settings** section.
 
-While Building the Application the Only changes need to be done are listed below.
+In the XR Settings, select  the **Virtual Reality Supported** checkbox to enable Mixed Reality. Click on **+** option to add Virtual Reality SDK's. In our scenario,  select **Windows Mixed Reality** SDK.
 
-select the  **Release** configuration instead of **debug**, 
+Pic
 
-select **XR64** architecture instead of **ARM**, 
+When Unity has finished adding the SDK, optimize the XR Settings as follows:
 
-and select **Local Machin** as target instead of Device:
+* Set Windows Mixed Reality **Depth Format** to **16-bit depth**
+* Check the Windows Mixed Reality **Enable Depth Sharing** checkbox
+* Set **Stereo Rendering Mode** to **Single Pass Instanced**
+* Select the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
 
+In the same Player settings, locate **Publishing Settings**, scroll down to the **Capabilities** section and select the below capabilities checkbox:
 
+Pic
 
-pic
+* Internet Client Server
+* Internet Client
+* Private Network Client Server
+* WebCam
+* Spatial Perception
+* Gaze Input
 
+For a reminder on how to Build the application, you can refer to the [Build your application to your device](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device) instructions.
 
+Consider adding below options 
 
-Press Ctrl+Shift+B, or select **Build** > **Build Solution** to Build the App.
+Pic
 
+* Select the  **Release** configuration instead of debug, 
+* Select **XR64** architecture instead of ARM, 
+* Select **Local Machine** as target instead of Device:
 
+## How to test the Holographic Remoting remote application:
 
-## How to test application:
+### Install the Remoting Player application in HoloLens 2 device
 
-### Install the Remoting Player app in HoloLens
-
- 	1. On your Microsoft HoloLens, visit the Store app and search for "**Remoting Player**".
-      	2. Select the **Remoting Player app**.
-         	3. Tap **Install* to start the download and install the Remoting Player app.
-
-
+1. On your Microsoft HoloLens, visit the Store app and search for "**Remoting Player**".
+2. Select the **Remoting Player app**.
+3. Tap **Install** to start downloading and install the Remoting Player app.
 
 ### Connect the remoting host sample to the Remoting Player
 
 1. Start the **Remoting Player** on your Microsoft HoloLens.
 2. Take note of the HoloLens **IP address**. It will be displayed as a hologram by the **Remoting Player** as soon as it launches.
-3. Open Installed Application in your PC.
-4. Once application is lunched Enter the **IP address** and click on connect button
-
-
+3. Open the installed application in your PC.
+4. Once application is launched, enter the **IP address** and click on **Connect** button to connect.
 
 ## Congratulations
 
-In this tutorial, you learned how to create Holographic Remoting remote app and connect to HoloLens 2 at any point providing a way to visualize 3D content in Mixed Reality. Once the HoloLens is connected to the Remote Application, you should see the Mixed Reality Experience that is been Streaming in the PC App. Mixed Reality Experience of this tutorial includes demonstration of UI elements, 3D model manipulation, model clipping and eye tracking features.  when **NextButton** and **PreviousButton** are pressed, the 3D model in the Scene will change. when Clicked on **ClippingObject** the Clipping Objects will appear and disappear. one of the Clipping Object and run over the 3D model to experience the Clipping feature. when you look at the part of the 3D model, a tool tip with the name will appear.
+In this tutorial, you learned how to create Holographic Remoting remote app and connect to HoloLens 2 at any point providing a way to visualize 3D content in Mixed Reality. Once the HoloLens is connected to the Holographic Remoting PC application, you should see the Mixed Reality experience that is been streaming into your HoloLens 2 device. 
 
 
 

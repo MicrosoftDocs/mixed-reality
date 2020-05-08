@@ -134,19 +134,19 @@ For each of the remaining buttons, complete the process outlined above to assign
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-6.png)
 
-### 3. Adding Models and Clipping Objects to the Script:
+### 3. Adding  3D Models and Clipping Objects to the Script:
 
-Now that your buttons are configured to demonstrate the model switching and clipping functionality, it is time to add models and the clipping objects to the script.
+Now that your buttons are configured to demonstrate the model switching and clipping functionality, it is time to add 3D models and the clipping objects to the script.
 
-For demonstration, we have provided 5 different models, expand **ModelParent** object to find these models.
+For demonstration, we have provided 5 different 3D models, expand **ModelParent** object to find these 3D models.
 
 <!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-1.png)
 
-With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand **Models** variable. 
+With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand 3D **Models** variable. 
 
-Enter the number of models you would like to have on your scene, in this case, it would be five. This will create placeholders for adding new models, drag-and-drop ModelParent Object's child model objects into those placeholders. 
+Enter the number of 3D models you would like to have on your scene, in this case, it would be five. This will create placeholders for adding new 3D models, drag-and-drop ModelParent Object's child model objects into these placeholders. 
 
 <!-- TODO: Don't need this screenshot -->
 
@@ -154,149 +154,87 @@ Enter the number of models you would like to have on your scene, in this case, i
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-3.png)
 
-Follow the same steps to add **ClippingObjects** object from the Hierarchy window to **Toggle Button Script (Script)** component's empty field.
+Drag-and-drop **ClippingObjects** object from the Hierarchy window to **Toggle Button (Script)** component's empty field.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-4.png)
 
 <!-- TODO: Improve this title -->
 
-### Configure the clipping objects to enable clipping feature
+## Configure the clipping objects to enable clipping feature
 
-Now Lets Configure the Clipping Object Component to work for Model clipping in the scene.
+In this section, you will add **MarsCuriosityRover**  object's child objects renderer in to individual clipping object to demonstrate the clipping of MarsCuriosityRover.
 
-Expand the **Clipping object** Component in the Hierarchy window you will find three child objects that specifies the Clipping Shape. **ClippingSphere** for Sphere shape, **ClippingBox** for Box shape and **clippingPlane** for plane. 
+In the Hierarchy window, expand the **ClippingObjects** object and find 3 different clipping objects that are in your scene.
+
+<!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-1.png)
 
-To configure the **ClippingSphere** Object click on it and in the Inspector window you will notice **ClippingSphere Script** attached to it, expand the **ClippingSphere Script**  in this you need to Specify the Renderers(Materials) of the all the 3D model which you are using.
+To configure the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)**  component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. This will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
+
+<!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-2.png)
 
-To add the Renderers to the Clipping Object Expand the **ModelParent>MarsCuriosityRover>nodeid51** Child objects of the **nodeid51** are the renderers of this model.
+<!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-3.png)
 
-Count the number of renderers, in this case it is ten, enter the renderer size as ten in the **ClippingSphereScript**.
+<!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-4.png)
 
-Drag and drop the each components(nodeid31 to nodeid49) to the Renderers field in **ClippingSphereScript**
+
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-5.png)
 
-Similarly add the renderers of all 5 3D models in the scene to the **ClippingSphereScript.**
+Follow the same steps and add MarsCuriosityRover 's child objects renderers to the **ClippingBox** and **ClippingPlane** objects. 
 
-By following the above procedure also configure for the **ClippingBox** and **ClippingPlane** objects
+In this tutorial only MarsCuriosityRover model is used for demonstrating the clipping feature. You can follow the same steps and add clipping feature for rest of the models.
 
 <!-- TODO: Improve this title -->
 
-### Configure eye tracking to enable highlight tool tips
+## Configure eye tracking to highlight tooltips
 
-In order to add this Eye Tracking features to the Models first we need to Configure the Eye Tracking to the Scene.
+In this section, you will explore how to enable eye tracking in your project. For this example, you will implement functionality to highlight tooltips that are attached to MarsCuriosityRover 's parts while looking at them and hiding them while you are looking away from them.
 
-##### Setting up the MRTK profiles required for eye tracking
+### 1. Identify target objects and associated tooltips.
 
-In the Hierarchy select **MixedRealityToolkit** and in the Inspector,  you will be asked to choose a profile for MRTK. You can simply select **DefaultMixedRealityToolkitConfigurationProfile** .
+In the Hierarchy window, select ModelParent object and expand MarsCuriosityRover to find five main parts of the MarsCuriosityRover: POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna.
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-1-1.png)
-
-select the '**Copy & Customize**' option, A new “**clone profile**” window appears click on clone.
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-1-2.png)
-
-##### **Creating an "eye gaze data provider"**
-
-Click on the **'Input'** tab in your MRTK profile.
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-2-1.png)
-
-To edit the default one ( '**DefaultMixedRealityInputSystemProfile**' ), click the 'Clone' button next to it. A '**Clone Profile**' menu appears. Simply click on 'Clone' at the bottom of that menu.
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-2-2.png)
-
-Double click on your new input profile, expand '**Input Data Providers**', and select '**+ Add Data Provider**'.
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-2-3.png)
-
-A New Data provider is added to the Input data provider expand it under type select **Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input** > **WindowsMixedRealityEyeGazeDataProvider** For Platform(s) select '**Windows Universa**l'. then Simply click on 'Clone'.
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-2-4.png)
-
-##### Simulating eye tracking in the Unity Editor.
-
-Now that the Setup for Eye Tracking is done You can simulate eye tracking input in the Unity Editor to ensure that events are correctly triggered before deploying the app to your HoloLens 2, in order to do this follow below two steps
-
-1. ###### **Enable simulated eye tracking**:
-
-   Click on the '**Input**' tab on the inspector of **MixedRealityToolKit** From there, navigate to '**Input Data Providers**' -> '**Input Simulation Service**'.
-
-   Now Clone the '**DefaultMixedRealityInputSimpulationProfile**' to make changes to it.
-
-   ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-3-1-1.png)
-
-   Check the 'Simulate Eye Position' checkbox.
-
-   ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-3-1-2.png)
-
-   
-
-2. ###### **Disable default head gaze cursor**: 
-
-   In general, it is recommended to avoid showing an eye gaze cursor or if absolutely required to make it very subtle. We do recommend to hide the default head gaze cursor that is attached to the MRTK gaze pointer profile by default.
-
-   Navigate to your MRTK configuration profile -> *'**Input**'* -> PointersClone the *'**DefaultMixedRealityInputPointerProfile**'* to make changes to it.
-
-   ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-3-2-1.png)
-
-   
-
-   At the top of the *'**Pointer Settings**'*, you should assign an invisible cursor prefab to the *'**GazeCursor**'*. You can do this by selecting the *'**EyeGazeCursor**'* prefab from the MRTK Foundation.
-
-   ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-3-2-2.png)
-
-   In order to use eye tracking option in our current Appx HoloLens remoting application switch from **DefaultMixedRealityToolkitConfigurationProfile** to **DefaultHoloLens2ConfigurationProfile**
-
-   ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-3-2-3.png)
-
-##### **Adding Tool Tip Highlight to the 3D models**
-
-Now let us add the Eye Tracking feature to our 3D models in the Scene,
-
-What we are doing hear is when you look at the particular area in the 3D model we need a Tool tip Highlight to show the details of this area, 
-
-Expand the **MarsCuriosityRover Model** in the **ButtonParent** Object, there you will find the 5 different parts of the Model ie “CAMARA”, “WHEELS”, “SPECTROMETER” “ANTENNA” and “RUHF Antena”,
-
-For each of these models there is a tool tip present(**SimpleLineToolTip(0 to 5)**)
+Notice five **Simple Line ToolTip** objects associated with MarsCuriosityRover parts in your scene, you will be configuring these objects to highlight in the experience when you look at the MarsCuriosityRover parts.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-1.png)
 
-Now let us attach the tool tip to the each parts of the Model.
+### 2. Implement the While Looking At Target  &  On Look Away event
 
-Select the the POI-CAMARA in the **MarsCuriosityRover** Model by expanding it, In the inspector window observe that **EyeTrackingTarget** Script is attached to it.
-
-Expand the **EyeTrackingScript** in the inspector window and add a new event listener to the **Events While Looking at target() and on look away()** by clicking the **+** icon:
+In the Hierarchy window, expand the **MarsCuriosityRover's** object and select the POI-Camera object. In the Inspector window, locate the **Eye Tracking Target (Script)** component and find **POI-Camera ToolTip** and click-and-drag the object from Hierarchy window in to the empty **None(Object)** field of **While Looking At Target ()** & **On Look Away ()** events.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-2.png)
 
+Click the **No Function** dropdown of the **While Looking At Target () **event listener, then select **GameObject** > **SetActive (bool**) and select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
+
+Follow similar step and click the **No Function** dropdown of the **On Look Away ()** event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action that is triggered when you look away from the target object.
+
 Expand the **MarsCuriocityRover** model and add **Simplelinetooltip** object which represent the “CAMARA” to the none object for both the events.
+
+<!-- TODO: Don't need this screenshot -->
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-3.png)
 
-To the Event **while looking at target ()** add the function by click on **Nofunction>GameObject>SetActive**. and select the Check box, this enables the tooltip when you look at the gameobject
-
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-4.png)
-
-Similarly to the event **on** **look away()** add the function **Nofunction>GameObject>SetActive**. Hear don’t select the check box, this disables the tooltip when you look away from the gameobject.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-5.png)
 
-By Following the above procedure attach the Tool tip Highlight  to the remaining 4 parts of the Model, and to the all 5 of the 3D models which are Used in the Scene..
+Follow the same process and assign respective tooltip objects to their respective **MarsCuriocityRover** part's **While Looking At Target ()** & **On Look Away ()** events.
+
+To enable simulated eye tracking for in-editor simulations, please follow these (guidelines)[https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations].
 
 ## Congratulations
 
-In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping and eye tracking features. You can test this in your editor in Unity,Click On Play in the Editor, test the **NextButton** and **PreviousButton** by clicking it, the 3D model in the Scene should change. when Clicked on **ClippingObject** the Clipping Objects should appear and disappear. When the Clipping Objects appears Grab one of the Clipping Object and run over the 3D model. This should clip the 3D model. To test the Eye Tracking tooltip, locate the small white dot in the window move this dot to point at the part of the 3D model, a tool tip with the name should appear.
+In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features. The tutorial provided you with NextButton and PreviousButton that let you explore the 3D model viewer experience. The ClippingObjectButton let you turn on clipping objects and experience clipping feature. The tutorial also provided you with eye tracking feature to enable highlighting the tooltips in the experience.
 
-In the next lesson, you will learn how to create a Standalone UWP PC Holographic emulation app and connect to HoloLens 2 at any point providing a way to Visualize 3D content in in Mixed reality.
+In the next lesson, you will learn how to create a Holographic Remoting remote application for PC to connect HoloLens 2 at any point providing a way to Visualize 3D content in Mixed reality.
 
 <!-- TODO: change this -->
 
