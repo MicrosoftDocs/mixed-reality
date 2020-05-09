@@ -79,15 +79,15 @@ After you have imported the tutorial assets your Project window should look simi
 ## Creating and preparing the scene
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **ClippingObjects**, **ModelParent**, **Instructions**, and **Platform** to select the five prefabs:
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **ClippingObjects**, **ModelParent**, **Instructions**, **HandSpatialMapButton** and **Platform** to select the six prefabs:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section3-Step1-1.png)
 
-With the five prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+With the six prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section3-Step1-2.png)
 
-To focus in on the objects in the scene, you can double-click on the **ModelParent** object, and then zoom slightly in again:
+To focus in on the objects in the scene, you can double-click on the ModelParent object, and then zoom slightly in again:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section3-Step1-3.png)
 
@@ -100,7 +100,7 @@ In this section, you will add scripts into the scene to create button events tha
 
 ### 1. Configure the Interactable (Script) component
 
-In the Hierarchy window, select the **ButtonParent** object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the Scene and another **Toggle Button (Script)** to enable and disable the ClippingObjects object.
+In the Hierarchy window, select the ButtonParent object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the Scene and another **Toggle Button (Script)** to enable and disable the ClippingObjects object.
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-1.png)
 
@@ -110,11 +110,11 @@ In the Hierarchy window, expand the ButtonParent object and select the NextButto
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-2.png)
 
-With the NextButton object still selected in the Hierarchy window,  click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event listener you just added to make the ButtonParent object listen for button click events from this button:
+With the NextButton object still selected in the Hierarchy window,  click-and-drag the ButtonParent object from the Hierarchy window into the empty **None (Object)** field of the event listener you just added to make the ButtonParent object listen for button click events from this button:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-3.png)
 
-Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel ()** to set the NextModel () function as the action that is triggered when the button pressed events is fired from this button:
+Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel ()** to set the **NextModel ()** function as the action that is triggered when the button pressed events is fired from this button:
 
 ![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-4.png)
 
@@ -122,41 +122,29 @@ Click the **No Function** dropdown of the same event listener, then select **Vie
 
 For each of the remaining buttons, complete the process outlined above to assign functions to **OnClick ()** events:
 
-* For **PreviousButton** object, assign the ViewButtonControl > **PreviousModel ()** function. 
+* For PreviousButton object, assign the **ViewButtonContro**l > **PreviousModel ()** function. 
 
-  <!-- TODO: Don't need this screenshot -->
+* For ClippingButton select **ToggleButton** > **ToggleClipping ()** function.
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-5.png)
-
-* For **ClippingButton** select **ToggleButton** > **ToggleClipping ()** function.
-
-  <!-- TODO: Don't need this screenshot -->
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step1-6.png)
+  
 
 ### 3. Adding  3D Models and Clipping Objects to the Script:
 
 Now that your buttons are configured to demonstrate the model switching and clipping functionality, it is time to add 3D models and the clipping objects to the script.
 
-For demonstration, we have provided 5 different 3D models, expand **ModelParent** object to find these 3D models.
-
-<!-- TODO: Don't need this screenshot -->
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-1.png)
+For demonstration, we have provided 5 different 3D models, expand ModelParent object to find these 3D models.
 
 With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand 3D **Models** variable. 
 
 Enter the number of 3D models you would like to have on your scene, in this case, it would be five. This will create placeholders for adding new 3D models, drag-and-drop ModelParent Object's child model objects into these placeholders. 
 
-<!-- TODO: Don't need this screenshot -->
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-2.png)
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-3.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-1.png)
 
 Drag-and-drop **ClippingObjects** object from the Hierarchy window to **Toggle Button (Script)** component's empty field.
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step2-4.png)
+Note: In the Hierarchy window select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects.
+
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-2.png)
 
 <!-- TODO: Improve this title -->
 
@@ -164,29 +152,17 @@ Drag-and-drop **ClippingObjects** object from the Hierarchy window to **Toggle B
 
 In this section, you will add **MarsCuriosityRover**  object's child objects renderer in to individual clipping object to demonstrate the clipping of MarsCuriosityRover.
 
-In the Hierarchy window, expand the **ClippingObjects** object and find 3 different clipping objects that are in your scene.
+<!-- TODO: Improve below sentence it is not clear to follow for others -->
 
-<!-- TODO: Don't need this screenshot -->
+In the Hierarchy window, expand the ClippingObjects object and find 3 different clipping objects that are in your scene.
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-1.png)
-
-To configure the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)**  component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. This will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
-
-<!-- TODO: Don't need this screenshot -->
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-2.png)
-
-<!-- TODO: Don't need this screenshot -->
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-3.png)
-
-<!-- TODO: Don't need this screenshot -->
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-4.png)
+To configure the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)**  component. Enter the number of renderers that you need to add for your 3D model. In this case add 10 for MarsCuriosityRover child objects. This will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
 
 
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step3-5.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section5-Step1-1.png)
+
+
 
 Follow the same steps and add MarsCuriosityRover 's child objects renderers to the **ClippingBox** and **ClippingPlane** objects. 
 
@@ -204,27 +180,27 @@ In the Hierarchy window, select ModelParent object and expand MarsCuriosityRover
 
 Notice five **Simple Line ToolTip** objects associated with MarsCuriosityRover parts in your scene, you will be configuring these objects to highlight in the experience when you look at the MarsCuriosityRover parts.
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-1.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section6-Step1-1.png)
 
 ### 2. Implement the While Looking At Target  &  On Look Away event
 
 In the Hierarchy window, expand the **MarsCuriosityRover's** object and select the POI-Camera object. In the Inspector window, locate the **Eye Tracking Target (Script)** component and find **POI-Camera ToolTip** and click-and-drag the object from Hierarchy window in to the empty **None(Object)** field of **While Looking At Target ()** & **On Look Away ()** events.
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-2.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section6-Step2-1.png)
+
+
 
 Click the **No Function** dropdown of the **While Looking At Target () **event listener, then select **GameObject** > **SetActive (bool**) and select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section6-Step2-2.png)
+
+
+
 Follow similar step and click the **No Function** dropdown of the **On Look Away ()** event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action that is triggered when you look away from the target object.
 
-Expand the **MarsCuriocityRover** model and add **Simplelinetooltip** object which represent the “CAMARA” to the none object for both the events.
 
-<!-- TODO: Don't need this screenshot -->
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-3.png)
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-4.png)
-
-![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section4-Step4-4-5.png)
+![mrlearning-appx](images\mrlearning-appx\Tutorial1-Section6-Step2-3.png)
 
 Follow the same process and assign respective tooltip objects to their respective **MarsCuriocityRover** part's **While Looking At Target ()** & **On Look Away ()** events.
 

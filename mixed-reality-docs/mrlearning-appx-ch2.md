@@ -25,7 +25,7 @@ In this section, you will configure your project to stream your Mixed Reality ex
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select and drag **HolographicRemoting** prefab into your scene.
 
-pic
+![mrlearning-appx](images\mrlearning-appx\Tutorial2-Section1-1.png)
 
 With the HolographicRemoting object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
@@ -37,7 +37,7 @@ In the Unity menu, select **Edit** > **Project Settings...** to open the Project
 
 In the XR Settings, select  the **Virtual Reality Supported** checkbox to enable Mixed Reality. Click on **+** option to add Virtual Reality SDK's. In our scenario,  select **Windows Mixed Reality** SDK.
 
-Pic
+![mrlearning-appx](\images\mrlearning-appx\Tutorial2-Section2-1.png)
 
 When Unity has finished adding the SDK, optimize the XR Settings as follows:
 
@@ -46,26 +46,25 @@ When Unity has finished adding the SDK, optimize the XR Settings as follows:
 * Set **Stereo Rendering Mode** to **Single Pass Instanced**
 * Select the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
 
-In the same Player settings, locate **Publishing Settings**, scroll down to the **Capabilities** section and select the below capabilities checkbox:
+In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, **Webcam**and **Gaze Input** capabilities:
 
-Pic
+![mrlearning-appx](images\mrlearning-appx\Tutorial2-Section2-2.png)
 
-* Internet Client Server
-* Internet Client
-* Private Network Client Server
-* WebCam
-* Spatial Perception
-* Gaze Input
+
 
 For a reminder on how to Build the application, you can refer to the [Build your application to your device](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device) instructions.
 
 Consider adding below options 
 
-Pic
-
 * Select the  **Release** configuration instead of debug, 
 * Select **XR64** architecture instead of ARM, 
 * Select **Local Machine** as target instead of Device:
+
+![mrlearning-appx](images\mrlearning-appx\Tutorial2-Section2-3.png)
+
+
+
+
 
 ## How to test the Holographic Remoting remote application:
 
