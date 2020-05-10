@@ -18,6 +18,7 @@ In this tutorial, you will learn how to save Azure Spatial Anchors across multip
 * Learn how to save and retrieve Azure Spatial Anchor IDs to and from the HoloLens 2 local disk, for persistence between app sessions
 * Learn how to share Azure Spatial Anchor IDs between users in a multi-device scenario
 
+<!-- TODO: Update image when prefab is finalized -->
 ## Preparing the scene
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent_SaveAnchorId** and **ButtonParent_ShareAnchorId** to select the two prefabs, then drag them into the Hierarchy window to add them to the scene:
