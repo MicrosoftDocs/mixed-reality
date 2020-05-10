@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors tutorials - 3. Displaying Azure Spatial Anchor feedback
+title: Azure Spatial Anchors tutorials - 3. Displaying Azure Spatial Anchors feedback
 description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,16 +9,16 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 3. Displaying Azure Spatial Anchor feedback
+# 3. Displaying feedback from Azure Spatial Anchors
 
-In this tutorial, you will learn how to provide users with feedback about anchor discovery, events, and status when using Azure Spatial Anchors (ASA).
+In this tutorial, you will learn how to provide users with feedback about anchors discovery, events, and status when using Azure Spatial Anchors (ASA).
 
 ## Objectives
 
 * Learn how to set up a UI panel that displays important information about the current ASA session
 * Understand and explore feedback elements that the ASA SDK makes available to users
 
-## Set up ASA feedback UI panel
+## Setting up ASA feedback panel
 
 In the Hierarchy window, right-click on the **Instructions** > **TextContent** object and select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro text object as a child of the Instructions > TextContent object and give it a suitable name, for example, **Feedback**:
 
@@ -51,4 +51,4 @@ Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)**
 
 ## Congratulations
 
-In this tutorial, you learned how to create a UI panel to display the current status of the Azure Spatial Anchor experience for providing users with real-time feedback.
+In this tutorial, you learned how to create a UI panel to display the current status of the Azure Spatial Anchors experience for providing users with real-time feedback.
