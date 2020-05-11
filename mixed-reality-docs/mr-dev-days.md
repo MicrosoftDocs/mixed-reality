@@ -57,12 +57,12 @@ You will need an Altspace account to attend Mixed Reality Dev Days. You can sign
 |11:00am - 12:00pm|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|Unreal Engine support for HoloLens 2 reached production-ready status with the release of UE 4.25 in May! Alongside UE 4.25, in response to the top ask we've been hearing from developers since Unreal's HoloLens support first shipped in preview, our team released the first component of the Mixed Reality Toolkit for Unreal: UX Tools 0.8. In this talk, we'll provide an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.||
 |11:00am - 12:00pm|Getting started with the HoloLens 2 and Unity|Dan Miller - Unity|Learn the basics of setting up Unity and building for the HoloLens 2. This presentation will cover best practices, basic features of the HoloLens 2 and how to quickly add hand tracking support and interactivity with MRTK.||
 |12:00pm - 1:00pm|**Lunch**||||
-|1:00pm - 2:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons|||
-|1:00pm - 2:00pm|Intro to MRTK-Unity|Catherine Diaz|||
-|1:00pm - 2:00pm|Learnings from the MR Surfaces App|Lars Simkins|||
+|1:00pm - 2:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons|Azure Remote Rendering just entered public preview.  Learn how you can use ARR to render interactive 3D models with hundreds of millions of polygons and stream them to devices like HoloLens 2 in real-time.||
+|1:00pm - 2:00pm|Intro to MRTK-Unity|Catherine Diaz|The Introduction to MRTK session will be a tutorial on how to create a simple MRTK app from start to finish.  This talk will go over interaction concepts and show MRTK’s multi-platform capabilities.||
+|1:00pm - 2:00pm|Learnings from the MR Surfaces App|Lars Simkins|Join the engineers behind the MRDL Surfaces app for HoloLens 2 as they talk about the app’s design story and technical highlights.||
 |2:00pm - 2:30pm|**Break**||||
-|2:30pm - 3:30pm|Azure Kinect Body Tracking Unity Integration|Angus Antley|||
-|2:30pm - 3:30pm|MRTK’s UX Building Blocks|Yoon Park|||
+|2:30pm - 3:30pm|Azure Kinect Body Tracking Unity Integration|Angus Antley| Learn how to drive characters in Unity using the Azure Kinect Body Tracking SDK.||
+|2:30pm - 3:30pm|MRTK’s UX Building Blocks|Yoon Park|Deep dive on the MRTK’s UX components that help you build beautiful mixed reality experiences.||
 |2:30pm - 3:30pm|MRTK Performance Tools|Kurtis Eveleigh|||
 |3:30pm - 4:00pm|**Break**||||
 |4:00pm - 5:00pm|Closing Session|Ori Amiga & Matt Fleckenstein|||
