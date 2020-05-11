@@ -173,7 +173,7 @@ In this section, you will explore how to enable eye tracking in your project. Fo
 
 In the Hierarchy window, select ModelParent object and expand MarsCuriosityRover to find five main parts of the MarsCuriosityRover: POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna.
 
-Notice five **Simple Line ToolTip** objects associated with MarsCuriosityRover parts in your scene, you will be configuring these objects to highlight in the experience when you look at the MarsCuriosityRover parts.
+Notice five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window, you will be configuring these objects to highlight in the experience when you look at the MarsCuriosityRover parts.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section6-Step1-1.png)
 
