@@ -54,8 +54,36 @@ When the schedule gets finalized, we will post it here. Please check back for up
 ||||||
 |---------|---------|---------|---------|---------|---------|
 |Date|Time|Session Title|Speaker|Description|Link to Event Page|
-|May 21st|9:30am|Opening Keynote|Alex Kipman|||
+|May 21st|9:30am - 10:30am Pacific|Opening Keynote|Alex Kipman|||
+|May 21st|10:30am - 11:00am Pacific|**Break**||||
+|May 21st||||||
+|May 21st||||||
+|May 21st||||||
+|May 21st||**Lunch**||||
+|May 21st||||||
+|May 21st||||||
+|May 21st||||||
+|May 21st||**Break**||||
+|May 21st||||||
+|May 21st||||||
+|May 21st||||||
+|May 21st||**Break**||||
+|May 21st||||||
 |||||||
+|May 22nd||||||
+|May 22nd||**Break**||||
+|May 22nd||||||
+|May 22nd||||||
+|May 22nd||||||
+|May 22nd||**Lunch**||||
+|May 22nd||||||
+|May 22nd||||||
+|May 22nd||||||
+|May 22nd||**Break**||||
+|May 22nd||||||
+|May 22nd||||||
+|May 22nd||||||
+|May 22nd||||||
 |||||||
 
 ---
