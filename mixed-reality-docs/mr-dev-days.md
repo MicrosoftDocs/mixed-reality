@@ -79,14 +79,14 @@ When the schedule gets finalized, we will post it here. Please check back for up
 |9:30am - 10:30am|Fireside Chat|Alex Kipman & Rene Schulte|||
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Designing AR/VR experiences using Microsoft Maquette|Ricardo Acosta & Jia Wang|||
-|11:00am - 12:00pm|MRTK Unity v2 and beyond - How community feedback helped us improve MRTK|Bernadette Thalhammer|||
+|11:00am - 12:00pm|MRTK Unity v2 & beyond - How community feedback helped us improve MRTK|Bernadette Thalhammer|||
 |11:00am - 12:00pm|Dark Slope's Unreal Engine plugin for the Azure Kinect DK|Ben Unsworth - Dark Slope|||
 |12:00pm - 1:00pm|**Lunch**||||
 |1:00pm - 2:00pm|Building Data Driven Mixed Reality Applications|Aysegul Yonet|||
 |1:00pm - 2:00pm|Building Immersive MR Experiences with Babylon.js and WebXR|Jason Carter|||
 |1:00pm - 2:00pm|Using Project Acoustics with HoloLens 2|Mike Chemistruck|||
 |2:00pm - 2:30pm|**Break**||||
-|2:30pm - 3:30pm|Holographic Remoting - Rapid iteration and superharged graphics on HoloLens|Brent Jackson|||
+|2:30pm - 3:30pm|Holographic Remoting - Rapid iteration & supercharged graphics on HoloLens|Brent Jackson|||
 |2:30pm - 3:30pm|OpenXR on HoloLens 2: Cross-platform native mixed reality|Alex Turner|||
 |2:30pm - 3:30pm|Introducing StereoKit - MR Made Easy!|Nick Klingensmith|||
 |2:30pm - 3:30pm|Tips from a Year of HoloLens 2 Development |Peter Vale|||
