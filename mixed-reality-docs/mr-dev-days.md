@@ -51,12 +51,12 @@ At a high level, the event will start on Thursday, May 21st at 9am Pacific Dayli
 
 When the schedule gets finalized, we will post it here. Please check back for updates.  
 
-|||||
-|---------|---------|---------|---------|
-|Session Title|Speaker|Description|Link to Event Page|
-|Opening Keynote|Alex Kipman|||
-|||||
-|||||
+||||||
+|---------|---------|---------|---------|---------|---------|
+|Date|Time|Session Title|Speaker|Description|Link to Event Page|
+|May 21st|9:30am|Opening Keynote|Alex Kipman|||
+|||||||
+|||||||
 
 ---
 
