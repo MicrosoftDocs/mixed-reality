@@ -62,13 +62,15 @@ Configure Visual Studio for PC with the below settings:
 
 ## How to test the Holographic Remoting remote application:
 
-### Install the Remoting Player application in HoloLens 2 device
+To connect your Holographic Remoting PC application to your HoloLens 2, follow the below procedure:
+
+### 1. Install the Remoting Player application in HoloLens 2 device
 
 1. On your Microsoft HoloLens, visit the Store app and search for "**Remoting Player**".
 2. Select the **Remoting Player app**.
 3. Tap **Install** to start downloading and install the Remoting Player app.
 
-### Connect the remoting host sample to the Remoting Player
+### 2. Connect the remoting host sample to the Remoting Player
 
 1. Start the **Remoting Player** on your Microsoft HoloLens.
 2. Take note of the HoloLens **IP address**. It will be displayed as a hologram by the **Remoting Player** as soon as it launches.
