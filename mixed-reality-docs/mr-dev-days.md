@@ -60,30 +60,30 @@ When the schedule gets finalized, we will post it here. Please check back for up
 |May 21st|11:00am - 12:00pm Pacific|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|||
 |May 21st|11:00am - 12:00pm Pacific|Getting started with the HoloLens 2 and Unity|Dan Miller|||
 |May 21st|12:00pm - 1:00pm Pacific|**Lunch**||||
-|May 21st||||||
-|May 21st||||||
-|May 21st||||||
-|May 21st||**Break**||||
-|May 21st||||||
-|May 21st||||||
-|May 21st||||||
-|May 21st||**Break**||||
-|May 21st||||||
+|May 21st|1:00pm - 2:00pm Pacific|Intro to Azure Mixed Reality Services: Azure Remote Rendering||||
+|May 21st|1:00pm - 2:00pm Pacific|Intro to MRTK-Unity||||
+|May 21st|1:00pm - 2:00pm Pacific|Learnings from the MR Surfaces App||||
+|May 21st|2:00pm - 2:30pm Pacific|**Break**||||
+|May 21st|2:30pm - 3:30pm Pacific|Azure Kinect Body Tracking Unity Integration||||
+|May 21st|2:30pm - 3:30pm Pacific|MRTK’s UX Building Blocks||||
+|May 21st|2:30pm - 3:30pm Pacific|MRTK Performance Tools||||
+|May 21st|3:30pm - 4:00pm Pacific|**Break**||||
+|May 21st|4:00pm - 5:00pm Pacific|Closing Session||||
 |||||||
-|May 22nd|9:30am - 10:30am Pacific|||||
+|May 22nd|9:30am - 10:30am Pacific|Fireside Chat|Alex Kipman & Rene Schulte|||
 |May 22nd|10:30am - 11:00am Pacific|**Break**||||
-|May 22nd|11:00am - 12:00pm Pacific|||||
-|May 22nd|11:00am - 12:00pm Pacific|||||
-|May 22nd|11:00am - 12:00pm Pacific|||||
+|May 22nd|11:00am - 12:00pm Pacific|Designing AR/VR experiences using Microsoft Maquette||||
+|May 22nd|11:00am - 12:00pm Pacific|MRTK Unity v2 and beyond - How community feedback helped us improve MRTK||||
+|May 22nd|11:00am - 12:00pm Pacific|Dark Slope's Unreal Engine plugin for the Azure Kinect DK||||
 |May 22nd|12:00pm - 1:00pm Pacific|**Lunch**||||
-|May 22nd||||||
-|May 22nd||||||
-|May 22nd||||||
-|May 22nd||**Break**||||
-|May 22nd||||||
-|May 22nd||||||
-|May 22nd||||||
-|May 22nd||||||
+|May 22nd|1:00pm - 2:00pm Pacific|Building Data Driven Mixed Reality Applications||||
+|May 22nd|1:00pm - 2:00pm Pacific|Building Immersive MR Experiences with Babylon.js and WebXR||||
+|May 22nd|1:00pm - 2:00pm Pacific|Using Project Acoustics with HoloLens 2||||
+|May 22nd|2:00pm - 2:30pm Pacific|**Break**||||
+|May 22nd|2:30pm - 3:30pm Pacific|Holographic Remoting - Rapid iteration and superharged graphics on HoloLens||||
+|May 22nd|2:30pm - 3:30pm Pacific|OpenXR on HoloLens 2: Cross-platform native mixed reality||||
+|May 22nd|2:30pm - 3:30pm Pacific|Introducing StereoKit - MR Made Easy!||||
+|May 22nd|2:30pm - 3:30pm Pacific|Tips from a Year of HoloLens 2 Development ||||
 |||||||
 
 ---
