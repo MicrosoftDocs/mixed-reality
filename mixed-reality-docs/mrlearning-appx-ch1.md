@@ -61,11 +61,7 @@ Then follow the [How to configure the Mixed Reality Toolkit Profiles (Change Spa
 
 ## Importing the tutorial assets
 
-Download and **import** the following Unity custom packages **in the order they are listed**:
-
-<!-- TODO: provide correct tutorial Pakage URL and include if any other pakages -->
-
-* [MRTK.Tutorials.AppxHoloLensRemoting.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) 
+Download and **import** the [MRTK.Tutorials.AppxHoloLensRemoting.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage).
 
 >[!TIP]
 >For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
