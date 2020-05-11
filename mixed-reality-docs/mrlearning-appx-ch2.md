@@ -52,10 +52,10 @@ In the  **Publishing Settings**, scroll down to the **Capabilities** section and
 
 For a reminder on how to Build the application, you can refer to the [Build your application to your device](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device) instructions.
 
-Consider adding below options 
+Configure Visual Studio for PC with the below settings:
 
 * Select the  **Release** configuration instead of debug, 
-* Select **XR64** architecture instead of ARM, 
+* Select **X64** architecture instead of ARM, 
 * Select **Local Machine** as target instead of Device:
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-3.png)
