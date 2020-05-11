@@ -43,13 +43,9 @@ You will need an Altspace account to attend Mixed Reality Dev Days. You can sign
 
 ---
 
-## Schedule
+## Schedule - Subject to change
 
-Our event team is hard at work setting up the schedule of sessions for you.  
-
-At a high level, the event will start on Thursday, May 21st at 9am Daylight Time.  
-
-When the schedule gets finalized, we will post it here. Please check back for updates.  
+**All times are Pacific Daylight Time** 
 
 ### May 21st
 ||||||
@@ -57,9 +53,9 @@ When the schedule gets finalized, we will post it here. Please check back for up
 |__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
 |9:30am - 10:30am|Opening Keynote|Alex Kipman|||
 |10:30am - 11:00am|**Break**||||
-|11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Spatial Anchors|Archana Iyer|||
-|11:00am - 12:00pm|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|||
-|11:00am - 12:00pm|Getting started with the HoloLens 2 and Unity|Dan Miller - Unity|||
+|11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Spatial Anchors|Archana Iyer|An overview of Azure Spatial Anchors (ASA) and relevant scenarios. This talk will go over new capabilities developed in the past year, with code samples on how to use them. We will go over best practices while building with ASA and how you can start integrating it into your||
+|11:00am - 12:00pm|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|Unreal Engine support for HoloLens 2 reached production-ready status with the release of UE 4.25 in May! Alongside UE 4.25, in response to the top ask we've been hearing from developers since Unreal's HoloLens support first shipped in preview, our team released the first component of the Mixed Reality Toolkit for Unreal: UX Tools 0.8. In this talk, we'll provide an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.||
+|11:00am - 12:00pm|Getting started with the HoloLens 2 and Unity|Dan Miller - Unity|Learn the basics of setting up Unity and building for the HoloLens 2. This presentation will cover best practices, basic features of the HoloLens 2 and how to quickly add hand tracking support and interactivity with MRTK.||
 |12:00pm - 1:00pm|**Lunch**||||
 |1:00pm - 2:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons|||
 |1:00pm - 2:00pm|Intro to MRTK-Unity|Catherine Diaz|||
