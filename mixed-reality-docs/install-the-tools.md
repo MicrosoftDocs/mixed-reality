@@ -39,8 +39,7 @@ We recommend installing the Unity game engine as the easiest way to get started 
 
 :::row:::
     :::column:::
-        <a href="https://unity3d.com/unity/qa/lts-releases?version=2018.4" target="_blank">![Unity](images/unity_logo.png)<br>
-        **Unity**</a><br>
+        <a href="https://unity3d.com/unity/qa/lts-releases?version=2018.4" target="_blank">![Unity](images/unity_logo.png)<br>**Unity**</a><br>
         We typically recommend the Unity LTS (Long Term Support) stream as the best version with which to start new projects, updating to its latest revision to pick up the latest stable fixes.<br>
         <br>
         The current recommendation is to use **Unity 2018.4.x**, which is the LTS build required for MRTK v2 below.<br>
@@ -49,18 +48,16 @@ We recommend installing the Unity game engine as the easiest way to get started 
         <br>
         See the [Unity development overview](unity-development-overview.md) to get started with Unity development for HoloLens 2 or Windows Mixed Reality immersive headsets.<br>
         <br>
-        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">![MRTK](images/final_mrtk-small_logo.png)<br>
-        **Mixed Reality Toolkit (MRTK)**</a><br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/releases" target="_blank">![MRTK](images/final_mrtk-small_logo.png)<br>**Mixed Reality Toolkit (MRTK)**</a><br>
         Mixed Reality Toolkit (MRTK) v2 for Unity is an open source cross-platform development kit for mixed reality applications.<br>
         <br>
         MRTK v2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform. The project is aimed at reducing the barriers to entry in creating mixed reality applications and contributing back to the community as things evolve.
     :::column-end:::
     :::column:::
-        <a href="https://docs.unrealengine.com//GettingStarted/Installation/index.html" target="_blank">![Unreal](images/Unreal_logo.png)<br>
-        **Unreal**</a><br>
+        <a href="https://docs.unrealengine.com//GettingStarted/Installation/index.html" target="_blank">![Unreal](images/Unreal_logo.png)<br>**Unreal**</a><br>
         Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints.<br>
         <br>
-        HoloLens support for Unreal Engine 4.24 is currently in beta.<br>
+        As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready.<br>
         <br>
         See the [Unreal development overview](unreal-development-overview.md) to get started with Unreal development for HoloLens 2.
     :::column-end:::
@@ -83,6 +80,7 @@ We recommend installing the Unity game engine as the easiest way to get started 
 The Mixed Reality Toolkit provides components and features that are intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality headsets and OpenVR platform. The project is aimed at reducing barriers to entry, to create mixed reality applications and contribute back to the community as things evolve.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit" target="_blank">Mixed Reality Toolkit</a> - a collection of scripts and components intended to accelerate the development of mixed reality applications.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit-Unity</a> - uses code from the base toolkit, making it easier to consume in Unity.
+* <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">Mixed Reality Toolkit-Unreal</a> - a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine.
 * <a href="https://github.com/Microsoft/MixedRealityCompanionKit" target="_blank">Mixed Reality Companion Kit</a> - code bits and components that might not run directly on HoloLens or immersive (VR) headsets, but instead pair with them to build experiences targeting Windows Mixed Reality.
 
 ## Setting up your PC for mixed reality development
