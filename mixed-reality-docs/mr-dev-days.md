@@ -53,7 +53,7 @@ When the schedule gets finalized, we will post it here. Please check back for up
 
 ||||||
 |---------|---------|---------|---------|---------|---------|
-|Date|Time|Session Title|Speaker|Description|Link to Event Page|
+|__***Date***__|__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
 |May 21st|9:30am - 10:30am Pacific|Opening Keynote|Alex Kipman|||
 |May 21st|10:30am - 11:00am Pacific|**Break**||||
 |May 21st|11:00am - 12:00pm Pacific|Intro to Azure Mixed Reality Services: Azure Spatial Anchors|Archana Iyer|||
