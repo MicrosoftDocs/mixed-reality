@@ -47,7 +47,7 @@ You will need an Altspace account to attend Mixed Reality Dev Days. You can sign
 
 Our event team is hard at work setting up the schedule of sessions for you.  
 
-At a high level, the event will start on Thursday, May 21st at 9am Pacific Daylight Time.  
+At a high level, the event will start on Thursday, May 21st at 9am Daylight Time.  
 
 When the schedule gets finalized, we will post it here. Please check back for updates.  
 
@@ -55,41 +55,41 @@ When the schedule gets finalized, we will post it here. Please check back for up
 ||||||
 |---------|---------|---------|---------|---------|
 |__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
-|9:30am - 10:30am Pacific|Opening Keynote|Alex Kipman|||
-|10:30am - 11:00am Pacific|**Break**||||
-|11:00am - 12:00pm Pacific|Intro to Azure Mixed Reality Services: Azure Spatial Anchors|Archana Iyer|||
-|11:00am - 12:00pm Pacific|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|||
-|11:00am - 12:00pm Pacific|Getting started with the HoloLens 2 and Unity|Dan Miller|||
-|12:00pm - 1:00pm Pacific|**Lunch**||||
-|1:00pm - 2:00pm Pacific|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons|||
-|1:00pm - 2:00pm Pacific|Intro to MRTK-Unity|Catherine Diaz|||
-|1:00pm - 2:00pm Pacific|Learnings from the MR Surfaces App|Lars Simkins|||
-|2:00pm - 2:30pm Pacific|**Break**||||
-|2:30pm - 3:30pm Pacific|Azure Kinect Body Tracking Unity Integration|Angus Antley|||
-|2:30pm - 3:30pm Pacific|MRTK’s UX Building Blocks|Yoon Park|||
-|2:30pm - 3:30pm Pacific|MRTK Performance Tools|Kurtis Eveleigh|||
-|3:30pm - 4:00pm Pacific|**Break**||||
-|4:00pm - 5:00pm Pacific|Closing Session|Ori Amiga & Matt Fleckenstein|||
+|9:30am - 10:30am|Opening Keynote|Alex Kipman|||
+|10:30am - 11:00am|**Break**||||
+|11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Spatial Anchors|Archana Iyer|||
+|11:00am - 12:00pm|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|||
+|11:00am - 12:00pm|Getting started with the HoloLens 2 and Unity|Dan Miller|||
+|12:00pm - 1:00pm|**Lunch**||||
+|1:00pm - 2:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons|||
+|1:00pm - 2:00pm|Intro to MRTK-Unity|Catherine Diaz|||
+|1:00pm - 2:00pm|Learnings from the MR Surfaces App|Lars Simkins|||
+|2:00pm - 2:30pm|**Break**||||
+|2:30pm - 3:30pm|Azure Kinect Body Tracking Unity Integration|Angus Antley|||
+|2:30pm - 3:30pm|MRTK’s UX Building Blocks|Yoon Park|||
+|2:30pm - 3:30pm|MRTK Performance Tools|Kurtis Eveleigh|||
+|3:30pm - 4:00pm|**Break**||||
+|4:00pm - 5:00pm|Closing Session|Ori Amiga & Matt Fleckenstein|||
 ||||||
 
 ### May 22nd
 ||||||
 |---------|---------|---------|---------|---------|
 |__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
-|9:30am - 10:30am Pacific|Fireside Chat|Alex Kipman & Rene Schulte|||
-|10:30am - 11:00am Pacific|**Break**||||
-|11:00am - 12:00pm Pacific|Designing AR/VR experiences using Microsoft Maquette|Ricardo Acosta & Jia Wang|||
-|11:00am - 12:00pm Pacific|MRTK Unity v2 and beyond - How community feedback helped us improve MRTK|Bernadette Thalhammer|||
-|11:00am - 12:00pm Pacific|Dark Slope's Unreal Engine plugin for the Azure Kinect DK|Ben Unsworth - Dark Slope|||
-|12:00pm - 1:00pm Pacific|**Lunch**||||
-|1:00pm - 2:00pm Pacific|Building Data Driven Mixed Reality Applications|Aysegul Yonet|||
-|1:00pm - 2:00pm Pacific|Building Immersive MR Experiences with Babylon.js and WebXR|Jason Carter|||
-|1:00pm - 2:00pm Pacific|Using Project Acoustics with HoloLens 2|Mike Chemistruck|||
-|2:00pm - 2:30pm Pacific|**Break**||||
-|2:30pm - 3:30pm Pacific|Holographic Remoting - Rapid iteration and superharged graphics on HoloLens|Brent Jackson|||
-|2:30pm - 3:30pm Pacific|OpenXR on HoloLens 2: Cross-platform native mixed reality|Alex Turner|||
-|2:30pm - 3:30pm Pacific|Introducing StereoKit - MR Made Easy!|Nick Klingensmith|||
-|2:30pm - 3:30pm Pacific|Tips from a Year of HoloLens 2 Development |Peter Vale|||
+|9:30am - 10:30am|Fireside Chat|Alex Kipman & Rene Schulte|||
+|10:30am - 11:00am|**Break**||||
+|11:00am - 12:00pm|Designing AR/VR experiences using Microsoft Maquette|Ricardo Acosta & Jia Wang|||
+|11:00am - 12:00pm|MRTK Unity v2 and beyond - How community feedback helped us improve MRTK|Bernadette Thalhammer|||
+|11:00am - 12:00pm|Dark Slope's Unreal Engine plugin for the Azure Kinect DK|Ben Unsworth - Dark Slope|||
+|12:00pm - 1:00pm|**Lunch**||||
+|1:00pm - 2:00pm|Building Data Driven Mixed Reality Applications|Aysegul Yonet|||
+|1:00pm - 2:00pm|Building Immersive MR Experiences with Babylon.js and WebXR|Jason Carter|||
+|1:00pm - 2:00pm|Using Project Acoustics with HoloLens 2|Mike Chemistruck|||
+|2:00pm - 2:30pm|**Break**||||
+|2:30pm - 3:30pm|Holographic Remoting - Rapid iteration and superharged graphics on HoloLens|Brent Jackson|||
+|2:30pm - 3:30pm|OpenXR on HoloLens 2: Cross-platform native mixed reality|Alex Turner|||
+|2:30pm - 3:30pm|Introducing StereoKit - MR Made Easy!|Nick Klingensmith|||
+|2:30pm - 3:30pm|Tips from a Year of HoloLens 2 Development |Peter Vale|||
 ||||||
 
 ---
