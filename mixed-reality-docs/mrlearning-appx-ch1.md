@@ -69,14 +69,15 @@ Download and **import** the following Unity custom packages **in the order they 
 
 * [MRTK.Tutorials.AppxHoloLensRemoting.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) 
 
-  [!TIP]
-  For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
+>[!TIP]
+>For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section2-Step1-1.png)
 
 ## Creating and preparing the scene
+
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **ClippingObjects**, **ModelParent**, **Instructions**, **HandSpatialMapButton** and **Platform** to select the six prefabs:
@@ -126,9 +127,7 @@ For each of the remaining buttons, complete the process outlined above to assign
 
 * For ClippingButton select **ToggleButton** > **ToggleClipping ()** function.
 
-  
-
-### 3. Adding  3D Models and Clipping Objects to the Script:
+### 3. Configure the View Button Control (Script)  and Toggle Button (Script) component:
 
 Now that your buttons are configured to demonstrate the model switching and clipping functionality, it is time to add 3D models and the clipping objects to the script.
 
@@ -158,11 +157,7 @@ In the Hierarchy window, expand the ClippingObjects object and find 3 different 
 
 To configure the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)**  component. Enter the number of renderers that you need to add for your 3D model. In this case add 10 for MarsCuriosityRover child objects. This will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
 
-
-
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section5-Step1-1.png)
-
-
 
 Follow the same steps and add MarsCuriosityRover 's child objects renderers to the **ClippingBox** and **ClippingPlane** objects. 
 
@@ -182,29 +177,23 @@ Notice five **Simple Line ToolTip** objects associated with MarsCuriosityRover p
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section6-Step1-1.png)
 
-### 2. Implement the While Looking At Target  &  On Look Away event
+### 2. Implement While Looking At Target ()  &  On Look Away () events
 
 In the Hierarchy window, expand the **MarsCuriosityRover's** object and select the POI-Camera object. In the Inspector window, locate the **Eye Tracking Target (Script)** component and find **POI-Camera ToolTip** and click-and-drag the object from Hierarchy window in to the empty **None(Object)** field of **While Looking At Target ()** & **On Look Away ()** events.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section6-Step2-1.png)
 
-
-
-Click the **No Function** dropdown of the **While Looking At Target () **event listener, then select **GameObject** > **SetActive (bool**) and select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
+Click the **No Function** dropdown of the While Looking At Target () event listener, then select **GameObject** > **SetActive (bool**) and select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section6-Step2-2.png)
 
-
-
-Follow similar step and click the **No Function** dropdown of the **On Look Away ()** event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action that is triggered when you look away from the target object.
-
-
+Follow similar step and click the **No Function** dropdown of the On Look Away () event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action that is triggered when you look away from the target object.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section6-Step2-3.png)
 
-Follow the same process and assign respective tooltip objects to their respective **MarsCuriocityRover** part's **While Looking At Target ()** & **On Look Away ()** events.
+Follow the same process and assign respective tooltip objects to their respective **MarsCuriocityRover** part's While Looking At Target () & On Look Away () events.
 
-To enable simulated eye tracking for in-editor simulations, please follow these (guidelines)[https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations].
+To enable simulated eye tracking for in-editor simulations, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
 
 ## Congratulations
 
