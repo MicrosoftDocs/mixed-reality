@@ -59,7 +59,7 @@ When the schedule gets finalized, we will post it here. Please check back for up
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Spatial Anchors|Archana Iyer|||
 |11:00am - 12:00pm|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|||
-|11:00am - 12:00pm|Getting started with the HoloLens 2 and Unity|Dan Miller|||
+|11:00am - 12:00pm|Getting started with the HoloLens 2 and Unity|Dan Miller - Unity|||
 |12:00pm - 1:00pm|**Lunch**||||
 |1:00pm - 2:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons|||
 |1:00pm - 2:00pm|Intro to MRTK-Unity|Catherine Diaz|||
