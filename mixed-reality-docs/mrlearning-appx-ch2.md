@@ -15,15 +15,15 @@ In this tutorial you will learn how to create Holographic Remoting remote app an
 
 ## Objectives
 
-* Configure Unity for HoloLens Remoting
+* Configure Unity for Holographic Remoting remote
 * Learn how to build and deploy the application with Visual Studio
 * Installing the Holographic Remoting remote application and connecting to HoloLens
 
-## Configure your scene for Holographic Remoting.
+## Configure your scene for Holographic Remoting
 
 In this section, you will configure your project to stream your Mixed Reality experience on to your HoloLens 2 device from your PC in real-time over a WIFI connection.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select and drag **HolographicRemoting** prefab into your scene.
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select-and-drag **HolographicRemoting** prefab into your scene.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section1-Step1-1.png)
 
@@ -46,7 +46,7 @@ When Unity has finished adding the SDK, optimize the XR Settings as follows:
 * Set **Stereo Rendering Mode** to **Single Pass Instanced**
 * Select the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
 
-In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, **Webcam** and **Gaze Input** capabilities:
+In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, **Webcam** and **Gaze Input** capabilities:
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-2.png)
 
@@ -54,9 +54,9 @@ For a reminder on how to Build the application, you can refer to the [Build your
 
 Configure Visual Studio for PC with the below settings:
 
-* Select the  **Release** configuration instead of debug, 
-* Select **X64** architecture instead of ARM, 
-* Select **Local Machine** as target instead of Device:
+* Select the  **Release** configuration instead of debug
+* Select **X64** architecture instead of ARM
+* Select **Local Machine** as target instead of Device
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-3.png)
 
