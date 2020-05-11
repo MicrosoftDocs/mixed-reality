@@ -25,7 +25,7 @@ In this section, you will configure your project to stream your Mixed Reality ex
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select and drag **HolographicRemoting** prefab into your scene.
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial2-Section1-1.png)
+![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section1-1.png)
 
 With the HolographicRemoting object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
@@ -37,7 +37,7 @@ In the Unity menu, select **Edit** > **Project Settings...** to open the Project
 
 In the XR Settings, select  the **Virtual Reality Supported** checkbox to enable Mixed Reality. Click on **+** option to add Virtual Reality SDK's. In our scenario,  select **Windows Mixed Reality** SDK.
 
-![mrlearning-appx](\images\mrlearning-appx\Tutorial2-Section2-1.png)
+![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-1.png)
 
 When Unity has finished adding the SDK, optimize the XR Settings as follows:
 
@@ -48,7 +48,7 @@ When Unity has finished adding the SDK, optimize the XR Settings as follows:
 
 In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, **Webcam**and **Gaze Input** capabilities:
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial2-Section2-2.png)
+![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-2.png)
 
 
 
@@ -60,7 +60,7 @@ Consider adding below options
 * Select **XR64** architecture instead of ARM, 
 * Select **Local Machine** as target instead of Device:
 
-![mrlearning-appx](images\mrlearning-appx\Tutorial2-Section2-3.png)
+![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-3.png)
 
 
 
