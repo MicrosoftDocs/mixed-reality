@@ -56,10 +56,10 @@ When the schedule gets finalized, we will post it here. Please check back for up
 |Date|Time|Session Title|Speaker|Description|Link to Event Page|
 |May 21st|9:30am - 10:30am Pacific|Opening Keynote|Alex Kipman|||
 |May 21st|10:30am - 11:00am Pacific|**Break**||||
-|May 21st||||||
-|May 21st||||||
-|May 21st||||||
-|May 21st||**Lunch**||||
+|May 21st|11:00am - 12:00pm Pacific|Intro to Azure Mixed Reality Services: Azure Spatial Anchors|Archana Iyer|||
+|May 21st|11:00am - 12:00pm Pacific|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|||
+|May 21st|11:00am - 12:00pm Pacific|Getting started with the HoloLens 2 and Unity|Dan Miller|||
+|May 21st|12:00pm - 1:00pm Pacific|**Lunch**||||
 |May 21st||||||
 |May 21st||||||
 |May 21st||||||
@@ -70,12 +70,12 @@ When the schedule gets finalized, we will post it here. Please check back for up
 |May 21st||**Break**||||
 |May 21st||||||
 |||||||
-|May 22nd||||||
-|May 22nd||**Break**||||
-|May 22nd||||||
-|May 22nd||||||
-|May 22nd||||||
-|May 22nd||**Lunch**||||
+|May 22nd|9:30am - 10:30am Pacific|||||
+|May 22nd|10:30am - 11:00am Pacific|**Break**||||
+|May 22nd|11:00am - 12:00pm Pacific|||||
+|May 22nd|11:00am - 12:00pm Pacific|||||
+|May 22nd|11:00am - 12:00pm Pacific|||||
+|May 22nd|12:00pm - 1:00pm Pacific|**Lunch**||||
 |May 22nd||||||
 |May 22nd||||||
 |May 22nd||||||
