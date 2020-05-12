@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 2. Create Holographic Remoting remote Application
 
-In this tutorial you will learn how to create Holographic Remoting remote app and connect to HoloLens 2 at any point providing a way to visualize 3D content in Mixed Reality.
+In this tutorial, you will learn how to create a Holographic Remoting remote app and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
 
 ## Objectives
 
@@ -33,20 +33,20 @@ With the HolographicRemoting object still selected in the Hierarchy window, loca
 
 In this section, you will configure the project's player settings to support Holographic Remoting and build the application to PC.
 
-In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window. In the Project Settings window select the **Player** tab, expand the **XR Settings** section.
+In the Unity menu, select **Edit** > **Project Settings** to open the Project Settings window. In the Project Settings, window picks the **Player** tab, expand the **XR Settings** section.
 
-In the XR Settings, select  the **Virtual Reality Supported** checkbox to enable Mixed Reality. Click on **+** option to add Virtual Reality SDK's. In our scenario,  select **Windows Mixed Reality** SDK.
+In the XR Settings, select the **Virtual Reality Supported** checkbox to enable Mixed Reality. Click on **+** option to add Virtual Reality SDK's. In our scenario, choose **Windows Mixed Reality** SDK.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-1.png)
 
 When Unity has finished adding the SDK, optimize the XR Settings as follows:
 
-* Set Windows Mixed Reality **Depth Format** to **16-bit depth**
-* Check the Windows Mixed Reality **Enable Depth Sharing** checkbox
-* Set **Stereo Rendering Mode** to **Single Pass Instanced**
-* Select the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
+- Set Windows Mixed Reality **Depth Format** to **16-bit depth**
+- Check the Windows Mixed Reality **Enable Depth Sharing** checkbox
+- Set **Stereo Rendering Mode** to **Single-Pass Instanced**
+- Select the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
 
-In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, **Webcam** and **Gaze Input** capabilities:
+In the **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial. Then, allow the **InternetClientServer**, **PrivateNetworkClientServer**, **Webcam,** and **Gaze Input** capabilities:
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-2.png)
 
@@ -54,9 +54,9 @@ For a reminder on how to Build the application, you can refer to the [Build your
 
 Configure Visual Studio for PC with the below settings:
 
-* Select the  **Release** configuration instead of debug
+* Select the  **Release** configuration instead of debugging
 * Select **X64** architecture instead of ARM
-* Select **Local Machine** as target instead of Device
+* Select **Local Machine** as the target instead of Device
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-3.png)
 
@@ -74,12 +74,10 @@ To connect your Holographic Remoting PC application to your HoloLens 2, follow t
 
 * Start the **Remoting Player** on your Microsoft HoloLens.
 * Take note of the HoloLens **IP address**. It will be displayed as a hologram by the **Remoting Player** as soon as it launches.
-* Open the installed application in your PC.
-* Once application is launched, enter the **IP address** and click on **Connect** button to connect.
+* Open the installed application on your PC.
+* Once the application is launched, enter the **IP address** and click on the **Connect** button to connect.
 
 ## Congratulations
 
-In this tutorial, you learned how to create Holographic Remoting remote app and connect to HoloLens 2 at any point providing a way to visualize 3D content in Mixed Reality. Once the HoloLens is connected to the Holographic Remoting PC application, you should see the Mixed Reality experience that is been streaming into your HoloLens 2 device. 
-
-
+In this tutorial, you learned how to create a Holographic Remoting remote app and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality. Once the HoloLens connected to the Holographic Remoting PC application, you should see the Mixed Reality experience that has been streaming into your HoloLens 2 device. 
 
