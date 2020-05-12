@@ -15,13 +15,13 @@ In this tutorial, you will learn how to create a Holographic Remoting remote app
 
 ## Objectives
 
-* Configure Unity for Holographic Remoting remote
+* Configuring Unity for Holographic Remoting remote
 * Learn how to build and deploy the application with Visual Studio
 * Installing the Holographic Remoting remote application and connecting to HoloLens
 
-## Configure your scene for Holographic Remoting
+## configuring your scene for Holographic Remoting
 
-In this section, you will configure your project to stream your Mixed Reality experience on to your HoloLens 2 device from your PC in real-time over a WIFI connection.
+In this section, you will configuring your project to stream your Mixed Reality experience on to your HoloLens 2 device from your PC in real-time over a WIFI connection.
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select-and-drag **HolographicRemoting** prefab into your scene.
 
@@ -31,7 +31,7 @@ With the HolographicRemoting object still selected in the Hierarchy window, loca
 
 ## Build your Holographic Remoting application to PC
 
-In this section, you will configure the project's player settings to support Holographic Remoting and build the application to PC.
+In this section, you will configuring the project's player settings to support Holographic Remoting and build the application to PC.
 
 In the Unity menu, select **Edit** > **Project Settings** to open the Project Settings window. In the Project Settings, window picks the **Player** tab, expand the **XR Settings** section.
 
@@ -52,7 +52,7 @@ In the **Publishing Settings**, scroll down to the **Capabilities** section and 
 
 For a reminder on how to Build the application, you can refer to the [Build your application to your device](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device) instructions.
 
-Configure Visual Studio for PC with the below settings:
+configuring Visual Studio for PC with the below settings:
 
 * Select the  **Release** configuration instead of debugging
 * Select **X64** architecture instead of ARM
