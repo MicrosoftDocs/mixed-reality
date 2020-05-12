@@ -73,7 +73,7 @@ The cursor on HoloLens (1st gen) follows head movement and rotation. In the Holo
 * **Hand movement for scrolling** - Simultaneously hold the Alt key and the right mouse button, and drag the mouse up or down, or in an Xbox controller, hold the right trigger and A button down and move the right stick up and down.
 * **Hand movement and orientation** (HoloLens 2 Emulator only) - Hold the Alt key and drag the mouse up or down, left or right to move the hand, or use the arrow keys and Q or E to rotate and tilt the hand. For an Xbox controller, hold the left or right bumper and use the left thumbstick to move the hand left, right, forward, and back, the right thumbstick to rotate it and up or down on the Dpad to raise or lower the hand.
 
-Have a Windows Mixed Reality immersive headset?  Starting with the HoloLens 2 Emulator (Windows Holographic, version 2004), you can use your Windows Mixed Reality immersive headset and motion controllers to control the HoloLens 2 Emulator and view it in stereo.  See [Using a Windows Mixed Reality immersive headset and motion controllers with the HoloLens 2 Emulator](#Using-a-Windows-Mixed-Reality-immersive-headset-and-motion-controllers-with-the-HoloLens-2-Emulator)
+Have a Windows Mixed Reality immersive headset?  Starting with the HoloLens 2 Emulator (Windows Holographic, version 2004), you can use your Windows Mixed Reality immersive headset and motion controllers to control the HoloLens 2 Emulator and view it in stereo.  See [Using a Windows Mixed Reality immersive headset and motion controllers with the HoloLens 2 Emulator](#using-a-windows-mixed-reality-immersive-headset-and-motion-controllers-with-the-hololens-2-emulator)
 
 ## Anatomy of the HoloLens 2 Emulator 
 
