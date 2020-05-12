@@ -153,7 +153,7 @@ The first step to working with SceneUnderstanding is for your application to gai
 Scenes are computed using a SceneObserver. Before creating a Scene, your application should query your device to ensure that it supports SceneUnderstanding, as well as to request user access for information that SceneUnderstanding needs.
 
 ```cs
-if (SceneObserver.IsSupported())
+if (!SceneObserver.IsSupported())
 {
     // Handle the error
 }
