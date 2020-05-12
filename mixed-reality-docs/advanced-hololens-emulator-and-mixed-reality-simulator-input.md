@@ -3,7 +3,7 @@ title: Advanced HoloLens Emulator and Mixed Reality Simulator input
 description: Detailed instructions for using the keyboard, mouse, and Xbox controller to simulate input for the HoloLens Emulator and Windows Mixed Reality simulator.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 04/26/2019
+ms.date: 05/12/2020
 ms.topic: article
 keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality
 ---
@@ -127,6 +127,24 @@ The following set of controls is suggested for day-to-day use:
 |  Scrolling |  Alt + right mouse button + drag mouse up / down |  Shoulder + trigger + right thumbstick up / down | 
 |  Move/rotate faster | Left or right Shift key | Press and hold the right thumbstick |
 |  Move/rotate slow | Left or right Ctrl key | Press and hold the left thumbstick |
+
+## Using a Windows Mixed Reality immersive headset and motion controllers with the HoloLens 2 Emulator
+
+When using a Windows Mixed Reality immersive headset with the HoloLens 2 Emulator, movement and rotation are automatically mapped to headset movement and rotation.  Motion controller position and orientation are automatically mapped to hand position and orientation in the emulator.  The table below lists additional actions available when using a motion controller.
+
+Note that when using a headset, standard keyboard, mouse and gamepad controls are automatically ignored.
+
+|  Operation |  Action |  Notes | 
+|----------|----------|----------|
+|  Body X |  Thumbstick Left / Right |   | 
+|  Body Z |  Thumbstick Forward / Back |   | 
+|  Body Y |  Keyboard Page Up /Down | Ensure that Windows Mixed Reality has focus.  Press Win+Y if focus is on the Windows Desktop to return focus to Windows Mixed Reality. |
+|  Eyes Look Left / Right |  DPad Left / Right | |
+|  Eyes Look Up / Down | DPad Up / Down | |
+|  Tap | Trigger | |
+|  Pinch/Grasp | Grip button | |
+|  System Gesture | Menu button | |
+|  Reset Position | Thumbstick click | |
 
 ## Perception Simulation Control Panel keyboard shortcuts
 
