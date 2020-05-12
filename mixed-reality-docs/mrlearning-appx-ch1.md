@@ -187,6 +187,6 @@ To enable simulated eye tracking for in-editor simulations, please follow these 
 
 In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features. The tutorial provided you with NextButton and PreviousButton that let you explore the 3D model viewer experience. The ClippingObjectButton let you turn on clipping objects and experience clipping feature. The tutorial also provided you with eye tracking feature to enable highlighting the tooltips in the experience.
 
-In the next lesson, you will learn how to create a Holographic Remoting remote application for PC to connect HoloLens 2 at any point providing a way to Visualize 3D content in Mixed reality.
+In the next tutorial, you will learn how to create a Holographic Remoting remote application for PC to connect HoloLens 2 at any point providing a way to Visualize 3D content in Mixed reality.
 
-[Next Lesson: 2. Create Holographic Remoting remote application ](mrlearning-appx-ch2.md)
+[Next Tutorial: 2. Create Holographic Remoting remote application ](mrlearning-appx-ch2.md)
