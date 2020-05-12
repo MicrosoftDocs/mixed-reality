@@ -14,10 +14,6 @@ HoloLens can locate QR codes in world space to render holograms at known positio
 
 To enable QR detection on HoloLens, ensure the “Webcam” capability is checked in the Unreal editor under Project Settings > Platform > HoloLens > Capabilities.  
 
-To opt into using QR detection at runtime, call the StartQRCodeCapture function.  This will prompt for webcam permissions in the application, then will start monitoring for QR codes.  When finished looking for QR codes, stop monitoring with the StopQRCodeCapture function. 
-
-![QR Start Stop](images/unreal-qr-startstop.PNG)
-
 QR Codes are surfaced through Unreal’s AR tracked geometry system as a tracked image.  To use this, add an AR Trackable Notify component to a Blueprint actor: 
 
 ![QR AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
