@@ -43,33 +43,62 @@ You will need an Altspace account to attend Mixed Reality Dev Days. You can sign
 
 ---
 
-## Schedule
+## Schedule - Subject to change
 
-Our event team is hard at work setting up the schedule of sessions for you.  
+**All times are Pacific Daylight Time** 
 
-At a high level, the event will start on Thursday, May 21st at 9am Pacific Daylight Time.  
+### May 21st
+||||||
+|---------|---------|---------|---------|---------|
+|__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
+|9:30am - 10:30am|Opening Keynote|Alex Kipman|||
+|10:30am - 11:00am|**Break**||||
+|11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Spatial Anchors|Archana Iyer|An overview of Azure Spatial Anchors (ASA) and relevant scenarios. This talk will go over new capabilities developed in the past year, with code samples on how to use them. We will go over best practices while building with ASA and how you can start integrating it into your||
+|11:00am - 12:00pm|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|Unreal Engine support for HoloLens 2 reached production-ready status with the release of UE 4.25 in May! Alongside UE 4.25, in response to the top ask we've been hearing from developers since Unreal's HoloLens support first shipped in preview, our team released the first component of the Mixed Reality Toolkit for Unreal: UX Tools 0.8. In this talk, we'll provide an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.||
+|11:00am - 12:00pm|Getting started with the HoloLens 2 and Unity|Dan Miller - Unity|Learn the basics of setting up Unity and building for the HoloLens 2. This presentation will cover best practices, basic features of the HoloLens 2 and how to quickly add hand tracking support and interactivity with MRTK.||
+|12:00pm - 1:00pm|**Lunch**||||
+|1:00pm - 2:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons, Christopher Manthei, and Marc Appelsmeier|Azure Remote Rendering just entered public preview.  Learn how you can use ARR to render interactive 3D models with hundreds of millions of polygons and stream them to devices like HoloLens 2 in real-time.||
+|1:00pm - 2:00pm|Intro to MRTK-Unity|Catherine Diaz|The Introduction to MRTK session will be a tutorial on how to create a simple MRTK app from start to finish.  This talk will go over interaction concepts and show MRTK’s multi-platform capabilities.||
+|1:00pm - 2:00pm|Learnings from the MR Surfaces App|Lars Simkins|Join the engineers behind the MRDL Surfaces app for HoloLens 2 as they talk about the app’s design story and technical highlights.||
+|2:00pm - 2:30pm|**Break**||||
+|2:30pm - 3:30pm|Azure Kinect Body Tracking Unity Integration|Angus Antley| Learn how to drive characters in Unity using the Azure Kinect Body Tracking SDK.||
+|2:30pm - 3:30pm|MRTK’s UX Building Blocks|Yoon Park|Deep dive on the MRTK’s UX components that help you build beautiful mixed reality experiences.||
+|2:30pm - 3:30pm|MRTK Performance Tools|Kurtis Eveleigh|||
+|3:30pm - 4:00pm|**Break**||||
+|4:00pm - 5:00pm|Closing Session|Ori Amiga & Matt Fleckenstein|||
+||||||
 
-When the schedule gets finalized, we will post it here. Please check back for updates.  
+### May 22nd
+||||||
+|---------|---------|---------|---------|---------|
+|__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
+|9:30am - 10:30am|Fireside Chat|Alex Kipman & Rene Schulte|||
+|10:30am - 11:00am|**Break**||||
+|11:00am - 12:00pm|Designing AR/VR experiences using Microsoft Maquette|Ricardo Acosta & Jia Wang|Designing a phone app or a website has a well defined workflow. Unfortunately, due to its novelty designing spatial reality experiences can be tricky if you use the same 2D workflow or toolset. Luckily, the new Microsoft Maquette app focuses on helping UX designers to design.||
+|11:00am - 12:00pm|MRTK Unity v2 & beyond - How community feedback helped us improve MRTK|Bernadette Thalhammer|A talk about how we've improved the developer experience over the last year by listening to feedback from the community and how developers can leverage some these improvements. We will dive into documentation and unit testing, the new object manipulator component, using the migration window and will explore some code snippets around our most frequently asked questions from the dev community.||
+|11:00am - 12:00pm|Dark Slope's Unreal Engine plugin for the Azure Kinect DK|Ben Unsworth - Dark Slope|||
+|12:00pm - 1:00pm|**Lunch**||||
+|1:00pm - 2:00pm|Building Data Driven Mixed Reality Applications|Aysegul Yonet|Data Driven Applications give the ability to incorporate data into an application as well as dynamically share real time operations data. When used in Mixed Reality, Data visualizations can enable analysis and insights from the data to help with decision making process in the right place and right context. How Data visualization can help making sense of our data is clear to most of us but how to turn data into useful visualizations and get actionable insights is not a straight forward task. In this talk, we will explore the processes, design decisions as well as technical tools and examples of creating insightful data driven mixed Reality applications.||
+|1:00pm - 2:00pm|Building Immersive MR Experiences with Babylon.js and WebXR|Jason Carter|Discover how easy and powerful it can be to develop MR experiences directly on the web. Babylon.js strives to be one of the most powerful, beautiful, simple, and open web rendering platforms in the world, making it easy to unlock full MR capabilities across platforms, devices, and ecosystems. Come check out the latest developments of Babylon.js and its support of WebXR.||
+|1:00pm - 2:00pm|Using Project Acoustics with HoloLens 2|Mike Chemistruck|See how Project Acoustics, previously only available for VR and Console titles, can be applied to Mixed Reality! Learn how the system recreates real-world effects such as diffracted occlusion and re-direction of sounds around physical doorways and corners, and reverberation in complex geometries with multiple connected spaces, all within the compute budget of a HoloLens 2.||
+|2:00pm - 2:30pm|**Break**||||
+|2:30pm - 3:30pm|Holographic Remoting - Rapid iteration & supercharged graphics on HoloLens|Brent Jackson|HoloLens delivers a revolutionary mobile computing platform like no other, but it’s limited to the processing power of a mobile device. Holographic remoting brings the raw power of a VR capable computer to HoloLens, and with Unity in-editor remoting you no longer have to build and deploy your apps to test them on device. Learn how Holographic remoting can increase the performance of your applications, and your developers.||
+|2:30pm - 3:30pm|OpenXR on HoloLens 2: Cross-platform native mixed reality|Alex Turner|OpenXR 1.0 is here! Are you building mixed reality support into your own engine or native app from the ground up? If so, learn about the key details of the OpenXR native API surface, the extensions that bring the full feature set of HoloLens 2 to life, and the partners from Firefox Reality to StereoKit already shipping apps and frameworks built on OpenXR! With OpenXR, you can build cross-vendor mixed reality engines and native apps that span the breadth of devices in the industry!||
+|2:30pm - 3:30pm|Introducing StereoKit - MR Made Easy!|Nick Klingensmith|StereoKit is an easy-to-use open source mixed reality library for building HoloLens and VR applications with C# and OpenXR! StereoKit prioritizes mixed reality application development above all else, allowing for features such as a first class mixed reality input system, fast performance by default even on mobile devices, quick iteration time on-device, and a runtime asset pipeline that lets users and developers load real assets from the file-system. All of this and more are packaged in a terse API that’s well documented, easy to learn, and easy to write!||
+|2:30pm - 3:30pm|Tips from a Year of HoloLens 2 Development |Peter Vale|The HoloLens commercialization team will share tips and lessons learned from the past year working with our partners.  Gain insight into the most common issues along with best practices and techniques that you can use to get your HoloLens 2 application ready to share with your customers.||
+||||||
 
 ---
 
 ## Code of Conduct and Microsoft Standard Event Guidelines
 
-### Code of Conduct (Coming Soon)
+### Code of Conduct 
 
-### Microsoft Standard Event Guidelines
+***Microsoft's mission is to empower every person and every organization on the planet to achieve more. This includes all Microsoft events and gatherings, including on digital platforms, where we seek to create a respectful, friendly, fun and inclusive experience for all participants.***  
 
-***Microsoft's mission is to empower every person and every organization on the planet to achieve more. This includes Microsoft parties where we seek to create a respectful, friendly, fun and inclusive experience for all participants.***
+***We expect all digital event participants to uphold the principles of this Code of Conduct, which covers the main digital event and all related activities. We do not tolerate disruptive or disrespectful behavior, messages, images, or interactions by any party participant, in any form, at any aspect of the program including business and social activities, regardless of location. Microsoft will not tolerate harassment or discrimination based on age, ancestry, color, gender identity or expression, national origin, physical or mental disability, religion, sexual orientation, or any other characteristic protected by applicable local laws, regulations, and ordinances.***  
 
-***We do not tolerate harassing or disrespectful behavior, messages, images, or interactions by any party participant, in any form, at any aspect of the program including business and social activities, regardless of location.***
-
-***We do not tolerate any behavior that is degrading to any gender, race, sexual orientation or disability, or any behavior that would violate the company's Anti-Harassment and Anti-Discrimination Policy, Equal Employment Opportunity Policy, or Standards of Business Conduct, even if the entertainment is not paid for by Microsoft. In short, the entire experience at the venue must meet our culture standards.***
-
-***We encourage everyone to assist in creating a welcoming and safe environment. Please report any concerns, harassing behavior, or suspicious or disruptive activity to venue staff, the event host or owner, or the nearest event staff. We also encourage employees to contact their Microsoft Manager or our Business Conduct Hotline (1-877-320-MSFT or [buscond@microsoft.com](mailto:buscond@microsoft.com)) at any time if you feel a party is against our policy or inconsistent with the Microsoft culture. Outside the United States, call collect to 1-470-219-7087.***
-
-***Microsoft reserves the right to refuse admittance to, or remove any person from a party at any time at its sole discretion.***
-
-***We make this policy visible for all Microsoft parties so all attendees can see what is expected and what steps they should take if they see or experience behavior not consistent with this policy.***
+***Photography, video or recording of session content or presentations in any format shared in social channels is prohibited. We encourage everyone to assist in creating a welcoming and safe environment. Please report any concerns, harassing behavior, suspicious, or disruptive activity to Business Conduct Hotline (1-877-320-MSFT or [buscond@microsoft.com](mailto:buscond@microsoft.com)). Microsoft reserves the right to refuse admittance to or remove any person from Mixed Reality Dev Days at any time at its sole discretion.***  
 
 ---
 
