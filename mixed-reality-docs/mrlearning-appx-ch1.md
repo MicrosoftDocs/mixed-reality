@@ -30,10 +30,10 @@ ms.localizationpriority: high
 
 >[!TIP] If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, its recommended that you complete those tutorials first.
 >
->- A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+>- A Windows 10 PC configuringd with the correct [tools installed](install-the-tools.md)
 >- Windows 10 SDK 10.0.18362.0 or later
 >- Some essential C# programming ability
->- A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+>- A HoloLens 2 device [configuringd for development](using-visual-studio.md#enabling-developer-mode)
 >- [Unity Hub](https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html) with Unity 2019.3.X mounted, and the Universal Windows Platform Build Support module added
 >
 >[!IMPORTANT] The recommended Unity version for this tutorial series is Unity 2019.3.X. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
