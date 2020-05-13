@@ -23,17 +23,17 @@ ms.localizationpriority: high
 
   - Import assets and set up the scene
   - Interact with holograms using UI elements and buttons
-  - configuring 3D objects for the clipping feature.
+  - Configuring 3D objects for the clipping feature.
   - Learn about eye tracking target select and highlight tooltips.
 
 ## Prerequisites
 
 >[!TIP] If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, its recommended that you complete those tutorials first.
 >
->- A Windows 10 PC configuringd with the correct [tools installed](install-the-tools.md)
+>- A Windows 10 PC Configured with the correct [tools installed](install-the-tools.md)
 >- Windows 10 SDK 10.0.18362.0 or later
 >- Some essential C# programming ability
->- A HoloLens 2 device [configuringd for development](using-visual-studio.md#enabling-developer-mode)
+>- A HoloLens 2 device Configured for development](using-visual-studio.md#enabling-developer-mode)
 >- [Unity Hub](https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html) with Unity 2019.3.X mounted, and the Universal Windows Platform Build Support module added
 >
 >[!IMPORTANT] The recommended Unity version for this tutorial series is Unity 2019.3.X. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
@@ -45,13 +45,13 @@ ms.localizationpriority: high
 >For this, first follow the [Initializing your project and first application](mrlearning-base-ch1.md), excluding the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions, which includes the following steps:
 >
 >1. [Create a new Unity project](mrlearning-base-ch1.md#create-new-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
->2. [configuring the Unity project for Windows Mixed Reality](mrlearning-base-ch1.md#configuring-the-unity-project-for-windows-mixed-reality)
+>2. [Configuring the Unity project for Windows Mixed Reality](mrlearning-base-ch1.md#Configuring-the-unity-project-for-windows-mixed-reality)
 >3. [Import TextMesh Pro Essential Resources](mrlearning-base-ch1.md#import-textmesh-pro-essential-resources)
 >4. [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit)
->5. [configuring the Unity project for the Mixed Reality Toolkit](mrlearning-base-ch1.md#configuring-the-unity-project-for-the-mixed-reality-toolkit)
+>5. [Configuring the Unity project for the Mixed Reality Toolkit](mrlearning-base-ch1.md#Configuring-the-unity-project-for-the-mixed-reality-toolkit)
 >6. [Add the Mixed Reality Toolkit to the Unity scene](mrlearning-base-ch1.md#configuring-the-mixed-reality-toolkit) and give the scene a suitable name, for example, *AppXHolographicRemoting*
 >
->Then follow the [How to configuring the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)](mrlearning-base-ch2.md#how-to-configuring-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+>Then follow the [How to Configuring the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)](mrlearning-base-ch2.md#how-to-Configuring-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions to change the MRTK Configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Importing the tutorial assets
 
@@ -86,13 +86,13 @@ To focus in on the objects in the scene, you can double-click on the ModelParent
 
 In this section, you will add scripts into the scene to create button events that demonstrate the fundamentals of model switching and clipping functionality. 
 
-### 1. configuring the Interactable (Script) component
+### 1. Configuring the Interactable (Script) component
 
 In the Hierarchy window, select the ButtonParent object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the scene and another **Toggle Button (Script)** to enable and disable the ClippingObjects object.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section4-Step1-1.png)
 
-Now the scripts are attached to the ButtonParent object, and it is time to configuring **NextButton, PreviousButton,** and **ClippingButton.**
+Now the scripts are attached to the ButtonParent object, and it is time to Configuring **NextButton, PreviousButton,** and **ClippingButton.**
 
 In the Hierarchy window, expand the ButtonParent object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and add a new event listener to the **OnClick()** event by clicking the **+** icon:
 
@@ -106,7 +106,7 @@ Click the **No Function** dropdown of the same event listener, then select **Vie
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section4-Step1-4.png)
 
-### 2. configuring the remaining buttons
+### 2. Configuring the remaining buttons
 
 For each of the remaining buttons, complete the process outlined above to assign functions to **OnClick ()** events:
 
@@ -114,9 +114,9 @@ For each of the remaining buttons, complete the process outlined above to assign
 
 * For ClippingButton select **ToggleButton** > **ToggleClipping ()** function.
 
-### 3. configuring the View Button Control (Script)  and Toggle Button (Script) component:
+### 3. Configuring the View Button Control (Script)  and Toggle Button (Script) component:
 
-Now your buttons are configuringd to demonstrate the model switching and clipping functionality, and it is time to add 3D models and the clipping objects to the script.
+Now your buttons are Configured to demonstrate the model switching and clipping functionality, and it is time to add 3D models and the clipping objects to the script.
 
 For demonstration, we have provided five different 3D models, expand ModelParent object to find these 3D models.
 
@@ -132,13 +132,13 @@ Note: In the Hierarchy window, select the **ClippingObjects** prefab and enable 
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section4-Step3-2.png)
 
-## configuring the clipping objects to enable clipping feature
+## Configuring the clipping objects to enable clipping feature
 
 In this section, you will add **MarsCuriosityRover** object's child objects renderer into an individual clipping object to demonstrate the clipping of MarsCuriosityRover.
 
 In the Hierarchy window, expand the ClippingObjects object and find three different clipping objects that will be using in the project.
 
-To configuring the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
+To Configuring the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section5-Step1-1.png)
 
@@ -146,7 +146,7 @@ Follow the same steps and add MarsCuriosityRover 's child objects renderers to t
 
 In this tutorial, only the MarsCuriosityRover model is used for demonstrating the clipping feature. You can follow the same steps and add a clipping feature for the rest of the models.
 
-## configuring eye tracking to highlight tooltips
+## Configuring eye tracking to highlight tooltips
 
 In this section, you will explore how to enable eye tracking in your project. For example, you will implement the functionality to highlight tooltips that are attached to MarsCuriosityRover's parts, while looking at them and hiding them, while you are looking away from them.
 
@@ -154,7 +154,7 @@ In this section, you will explore how to enable eye tracking in your project. Fo
 
 In the Hierarchy window, select ModelParent object and expand MarsCuriosityRover to find five main parts of the MarsCuriosityRover: POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna.
 
-Notice five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
+Notice five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. You will be Configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section6-Step1-1.png)
 
