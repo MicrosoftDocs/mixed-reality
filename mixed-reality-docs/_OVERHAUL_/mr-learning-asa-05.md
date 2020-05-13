@@ -1,6 +1,6 @@
 ---
-title: Azure Spatial Anchors tutorials - 5. Getting started with Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Azure Spatial Anchors tutorials - 5. Azure Spatial Anchors for Android and iOS
+description: Complete this course to learn how to set up an ASA project for Android and iOS.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -23,7 +23,7 @@ In this tutorial, you will learn how to build the your project to Android and iO
 
 ## Adding inbuilt Unity packages
 
-In this section, you will install Unity's inbuilt AR Foundation, ARCore XR Plugin, and ARKit XR Plugin packages required to support Android and iOS devices.
+In this section, you will install Unity's inbuilt AR Foundation, Legacy Input Helpers, ARCore XR Plugin, and ARKit XR Plugin packages required to support Android and iOS devices.
 
 Make sure you install correct version of these Unity packages as listed below:
 
@@ -38,7 +38,7 @@ It might take a few seconds before all packages appear in the list. Display prev
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-2.png)
 
-In the Package Manager window, select the **AR Foundation** dropdown, here you see many version and need to select **version 3.1.0 preview 8** and update the package by clicking **Update to 3.1.0-preview.8**:
+In the Package Manager window, select the **AR Foundation** dropdown. Here you will see many versions and need to select **version 3.1.0 preview 8** then update the package by clicking **Update to 3.1.0-preview.8**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-3.png)
 
@@ -63,21 +63,14 @@ with the **MixedRealityToolkit** still selected, In the Inspector window, under 
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
- Select Type > **Microsoft .MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**.
+Select Type > **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**.
 
-<!-- TODO: VEERUBY:
-    Required: Change image, it does not show the Clone Profile window you are referring to.
-    Required: Change image, Project window is inconsistent with previous image, it doesn't show the newly created MRTK profile.
--->
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
 With the **MixedRealityToolkit** object still selected, in the Inspector window, attach supporting scripts by clicking on the **Add component** button and type in "AR Anchor Manager" then select the script.
 
 Adding "AR Reference Point Manager" script will automatically add "AR session origin" along with it in the the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
 
-<!-- TODO: VEERUBY:
-    Required: Change image, Project window is inconsistent with previous image, it doesn't show the newly created MRTK profiles.
--->
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
 ## Build application to Android device
