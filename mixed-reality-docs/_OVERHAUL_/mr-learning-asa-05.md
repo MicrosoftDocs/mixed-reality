@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 5. Azure Spatial Anchors for Android and iOS
+# 5. Building Azure Spatial Anchors for mobile devices
 
 In this tutorial, you will learn how to build the your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
@@ -53,7 +53,7 @@ Follow the same process to import the following as needed:
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
 
-## Customize MRTK to support AR Foundation camera
+## Configure MRTK for AR Foundation
 
 In the Hierarchy window select the **MixedRealityToolkit**, then in the Inspector clone the camera profile and give it an suitable name, for example “ARCameraConfigurationProfile” and click on the **Clone** button:
 
@@ -73,7 +73,7 @@ Adding "AR Reference Point Manager" script will automatically add "AR session or
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
-## Build application to Android device
+## Build and deploy project to Android device
 
 In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Configure the Unity project for Windows Mixed Reality](mr-learning-base-02.md#configure-the-unity-project-for-windows-mixed-reality).
 
