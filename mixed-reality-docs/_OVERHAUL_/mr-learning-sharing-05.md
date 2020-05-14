@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 4. Integrating Azure Spatial Anchors into a shared experience
+# 5. Integrating Azure Spatial Anchors into a shared experience
 
 In this tutorial, you will learn how to integrate Azure Spatial Anchors (ASA) into the shared experience. ASA allows multiple devices to have a common reference to the physical world so that the users see each other in their actual physical location and see the shared experience in the same place.
 
@@ -32,14 +32,11 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCa
 
 In this section, you will configure a series of button events that demonstrate the fundamentals of how Azure Spatial Anchors can be used to achieve spatial alignment in a shared experience.
 
-In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**:
+In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**. Then in the Inspector window, on the **Interactable (Script)** component locate the **OnClick ()** event and to the **None (Object)** field assign the **TableAnchor** object:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
-In the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
-
-* To **None (Object)** field, assign the **TableAnchor** object
-* From **No Function** dropdown, select the **AnchorModuleScript** > **StartAzureSession ()** function
+In the Inspector window, in the **OnClick ()** event, from the **No Function** dropdown, select the **AnchorModuleScript** > **StartAzureSession ()** function:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
@@ -67,7 +64,7 @@ In the Hierarchy window, select the forth child button object named **GetAzureAn
 
 ## Connecting the scene to the Azure resource
 
-In the Hierarchy window, expand the **SharedPlayground** object and select the **TableAnchor** object. Then in the Inspector window, locate the **Spatial Anchor Manager (Script)** component and configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the [Prerequisites](mrlearning-sharing(photon)-ch1.md#prerequisites) for this tutorial series:
+In the Hierarchy window, expand the **SharedPlayground** object and select the **TableAnchor** object. Then in the Inspector window, locate the **Spatial Anchor Manager (Script)** component and configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the [Prerequisites](mr-learning-sharing-01.md#prerequisites) for this tutorial series:
 
 * In the **Spatial Anchors Account ID** field, paste the **Account ID** from your Azure Spatial Anchors account
 * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
@@ -89,8 +86,8 @@ With the **TableAnchor** object still selected, in the Inspector window, make su
 
 If you now build and deploy the Unity project to two HoloLens devices, you can achieve spatial alignment between the devices by sharing the Azure Anchor ID. To test it out, you can follow these steps:
 
-1. On HoloLens device 1: **Start the application** (the Rocket Launcher is instantiated and placed on the table)
-2. On HoloLens device 2: **Start the application** (both users see the table with the Rocket Launcher, however, the table does not appear in the same place and the user avatars do not appear where the users are)
+1. On HoloLens device 1: **Start the application** (the Rover Module is instantiated and placed on the table)
+2. On HoloLens device 2: **Start the application** (both users see the table with the Rover Module, however, the table does not appear in the same place and the user avatars do not appear where the users are)
 3. On HoloLens device 1: Press the **Start Azure Session** button
 4. On HoloLens device 1: Press the **Create Azure Anchor** button (creates anchor at the location of the TableAnchor object and stores the anchor information in the Azure resource).
 5. On HoloLens device 1: Press the **Share Azure Anchor** button (shares the anchor ID with other users in real-time)
