@@ -53,7 +53,7 @@ In the  **Publishing Settings**, scroll down to the **Capabilities** section and
 
 ## Adding inbuilt Unity packages
 <!-- TODO: Consider renaming to 'Installing AR Foundation' -->
-<!-- TODO: Consider if Legacy Input Helpers needs to be imported at this stage-->
+<!-- TODO: Determine if Legacy Input Helpers needs to be imported at this stage-->
 
 In this section, you will install Unity's inbuilt AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
 
