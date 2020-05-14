@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 2. Connecting multiple users
+# 3. Connecting multiple users
 
 In this tutorial, you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
 
@@ -97,9 +97,10 @@ In the Hierarchy window, expand the **NetworkLobby** object and select the **Net
 If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
+<!-- TODO: update gif when everything else is done-->
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mr-learning-base-02.md#build-your-application-to-your-device) instructions.
 
 > [!CAUTION]
 > The application needs to connect to Photon, so make sure your computer/device is connected to the internet.
@@ -108,4 +109,4 @@ If you now build and deploy the Unity project to your HoloLens, and then, back i
 
 You have successfully configured your project to allow multiple users to connect to the same experience and see each other's movements. In the next tutorial, you will implement functionality so that the movements of objects are also shared across multiple devices.
 
-[Next tutorial: 2. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch3.md)
+[Next tutorial: 4. Sharing object movements with multiple users](mr-learning-sharing(photon)-04.md)
