@@ -34,11 +34,11 @@ In the Unity menu, select **Window** > **Package Manager**:
 It might take a few seconds before all packages appear in the list. Display preview packages by clicking on Advanced option and select "**Show preview packages**".
 
 >[!NOTE]
-> You might get a pop up message telling you "Preview packages are not verified to work with Unity and might be unstable. They are not supported in production environments." In that case just select ok.
+> You might get a pop up message telling you **Preview packages are not verified to work with Unity and might be unstable. They are not supported in production environments.** In that case just select ok.
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-2.png)
 
-In the Package Manager window, select the **AR Foundation** dropdown. Here you will see many versions and need to select **version 3.1.0 preview 8** then update the package by clicking **Update to 3.1.0-preview.8**:
+In the Package Manager window, select the **AR Foundation** dropdown. Here you will see many versions and need to select **Version 3.1.0 preview 8** then update the package by clicking **Update to 3.1.0-preview.8**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-3.png)
 
@@ -46,7 +46,7 @@ Follow the same process to import the following as needed:
 
 * **Legacy Input Helpers 1.3.11** Required
 
-* **ARCore XR Plugin 3.1.0 Preview 8** To support Android devices
+* **ARCore XR Plugin 3.1.0 preview 8** To support Android devices
 
 * **ARKit XR plugin 3.1.0 preview 8** To support iOS devices
 
@@ -54,6 +54,8 @@ Follow the same process to import the following as needed:
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
 
 ## Configure MRTK for AR Foundation Camera
+
+In this section, you will learn how to configure MRTK for deploying to a mobile device.
 
 In the Hierarchy window select the **MixedRealityToolkit** object, then in the Inspector clone the camera profile and give it an suitable name, for example **ARCameraConfigurationProfile** and click on the **Clone** button:
 
@@ -73,7 +75,9 @@ Adding **AR Reference Point Manager** script will automatically add **AR session
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
-## Build and deploy project to Android device
+## Build your application to an Android device
+
+In this section, you will learn how to configure your project to build and deploy to an Android device.
 
 In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Configure the Unity project for Windows Mixed Reality](mr-learning-base-02.md#configure-the-unity-project-for-windows-mixed-reality).
 
@@ -101,7 +105,9 @@ If you get any error in the Unity Console window related to Android SDK, NDK, an
 
 When the build process is complete, your applications should automatically load on your Android device.
 
-## Build application to iOS Device
+## Build your application to an iOS Device
+
+In this section, you will learn how to configure your project to build to an iOS device.
 
 In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Configure the Unity project for Windows Mixed Reality](mr-learning-base-02.md#configure-the-unity-project-for-windows-mixed-reality).
 
