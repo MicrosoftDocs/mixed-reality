@@ -64,22 +64,125 @@ When HoloLens takes photos and videos, the captured frames include the location 
 
 "Camera" elsewhere in HoloLens documentation may refer to the "virtual game camera" (the frustum the app renders to). Unless denoted otherwise, "camera" on this page refers to the real-world RGB color camera.
 
-The details on this page cover using the [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) class. However, there are also APIs to pull camera intrinsics and locations using [Media Foundation Attributes](https://msdn.microsoft.com/library/windows/desktop/mt740395(v=vs.85).aspx). Refer to the [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) for more information.
+### Using Unity
 
-### Images with Coordinate Systems
+To go from the 'CameraIntrinsics' and 'CameraCoordinateSystem' to your application/world coordinate system, follow the instructions in the [Locatable camera in Unity](locatable-camera-in-unity.md) article.  CameraToWorldMatrix is automatically provided by PhotoCaptureFrame class, and so you don't need to worry about the CameraCoordinateSystem transforms discussed below.
+
+### Using MediaFrameReference
+
+These instructions apply if you are using the [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) class to read image frames from the camera.
 
 Each image frame (whether photo or video) includes a [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) rooted at the camera at the time of capture, which can be accessed using the [CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) property of your [MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). In addition, each frame contains a description of the camera lens model, which can be found in the [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) property. Together, these transforms define for each pixel a ray in 3D space representing the path taken by the photons that produced the pixel. These rays can be related to other content in the app by obtaining the transform from the frame's coordinate system to some other coordinate system (e.g. from a [stationary frame of reference](coordinate-systems.md#stationary-frame-of-reference)). To summarize, each image frame provides the following:
 * Pixel Data (in RGB/NV12/JPEG/etc. format)
 * A [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) from the location of capture
 * A [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) class containing the lens mode of the camera
 
-### Camera to Application-specified Coordinate System
+The [HolographicFaceTracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) shows the fairly straightforward way to query for the transform between the camera's coordinate system and your own application coordinate systems.
 
-To go from the 'CameraIntrinsics' and 'CameraCoordinateSystem' to your application/world coordinate system, you'll need the following:
+### Using Media Foundation
 
-[Locatable camera in Unity](locatable-camera-in-unity.md): CameraToWorldMatrix is automatically provided by PhotoCaptureFrame class(so you don't need to worry about the CameraCoordinateSystem transforms).
+If you are using Media Foundation directly to read image frames from the camera, you can use each frame's [MFSampleExtension_CameraExtrinsics attribute](https://docs.microsoft.com/en-us/windows/win32/medfound/mfsampleextension-cameraextrinsics) and [MFSampleExtension_PinholeCameraIntrinsics attribute](https://docs.microsoft.com/en-us/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) to locate camera frames relative to your application's other coordinate systems, as shown in this sample code:
 
-[Locatable camera in DirectX](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking): The Holographic Face Tracking sample shows the fairly straightforward way to query for the transform between the camera's coordinate system and your own application coordinate system(s).
+```cpp
+#include <winrt/windows.perception.spatial.preview.h>
+#include <mfapi.h>
+#include <mfidl.h>
+ 
+using namespace winrt::Windows::Foundation;
+using namespace winrt::Windows::Foundation::Numerics;
+using namespace winrt::Windows::Perception;
+using namespace winrt::Windows::Perception::Spatial;
+using namespace winrt::Windows::Perception::Spatial::Preview;
+ 
+class CameraFrameLocator
+{
+public:
+    struct CameraFrameLocation
+    {
+        SpatialCoordinateSystem CoordinateSystem;
+        float4x4 CameraViewToCoordinateSytemTransform;
+        MFPinholeCameraIntrinsics Intrinsics;
+    };
+ 
+    std::optional<CameraFrameLocation> TryLocateCameraFrame(IMFSample* pSample)
+    {
+        MFCameraExtrinsics cameraExtrinsics;
+        MFPinholeCameraIntrinsics cameraIntrinsics;
+        UINT32 sizeCameraExtrinsics = 0;
+        UINT32 sizeCameraIntrinsics = 0;
+        UINT64 sampleTimeQpc = 0;
+ 
+        // query sample for calibration and validate
+        if (FAILED(pSample->GetUINT64(MFSampleExtension_DeviceTimestamp, &sampleTimeQpc)) ||
+            FAILED(pSample->GetBlob(MFSampleExtension_CameraExtrinsics, (UINT8*)& cameraExtrinsics, sizeof(cameraExtrinsics), &sizeCameraExtrinsics)) ||
+            FAILED(pSample->GetBlob(MFSampleExtension_PinholeCameraIntrinsics, (UINT8*)& cameraIntrinsics, sizeof(cameraIntrinsics), &sizeCameraIntrinsics)) ||
+            (sizeCameraExtrinsics != sizeof(cameraExtrinsics)) ||
+            (sizeCameraIntrinsics != sizeof(cameraIntrinsics)) ||
+            (cameraExtrinsics.TransformCount == 0))
+        {
+            return std::nullopt;
+        }
+ 
+        // compute extrinsic transform
+        const auto& calibratedTransform = cameraExtrinsics.CalibratedTransforms[0];
+        const GUID& dynamicNodeId = calibratedTransform.CalibrationId;
+        const float4x4 cameraToDynamicNode =
+            make_float4x4_from_quaternion(quaternion{ calibratedTransform.Orientation.x, calibratedTransform.Orientation.y, calibratedTransform.Orientation.z, calibratedTransform.Orientation.w }) *
+            make_float4x4_translation(calibratedTransform.Position.x, calibratedTransform.Position.y, calibratedTransform.Position.z);
+ 
+        // update locator cache for dynamic node
+        if (dynamicNodeId != m_currentDynamicNodeId || !m_locator)
+        {
+            m_locator = SpatialGraphInteropPreview::CreateLocatorForNode(dynamicNodeId);
+            if (!m_locator)
+            {
+                return std::nullopt;
+            }
+ 
+            m_frameOfReference = m_locator.CreateAttachedFrameOfReferenceAtCurrentHeading();
+            m_currentDynamicNodeId = dynamicNodeId;
+        }
+ 
+        // locate dynamic node
+        auto timestamp = PerceptionTimestampHelper::FromSystemRelativeTargetTime(TimeSpanFrodmQpcTicks(sampleTimeQpc));
+        auto coordinateSystem = m_frameOfReference.GetStationaryCoordinateSystemAtTimestamp(timestamp);
+        auto location = m_locator.TryLocateAtTimestamp(timestamp, coordinateSystem);
+        if (!location)
+        {
+            return std::nullopt;
+        }
+ 
+        const float4x4 dynamicNodeToCoordinateSystem = make_float4x4_from_quaternion(location.Orientation()) * make_float4x4_translation(location.Position());
+ 
+        return CameraFrameLocation{ coordinateSystem, cameraToDynamicNode * dynamicNodeToCoordinateSystem, cameraIntrinsics };
+    }
+ 
+private:
+    GUID m_currentDynamicNodeId{ GUID_NULL };
+    SpatialLocator m_locator{ nullptr };
+    SpatialLocatorAttachedFrameOfReference m_frameOfReference{ nullptr };
+ 
+    // Convert a duration value from a source tick frequency to a destination tick frequency.
+    static inline int64_t SourceDurationTicksToDestDurationTicks(int64_t sourceDurationInTicks, int64_t sourceTicksPerSecond, int64_t destTicksPerSecond)
+    {
+        int64_t whole = (sourceDurationInTicks / sourceTicksPerSecond) * destTicksPerSecond;                          // 'whole' is rounded down in the target time units.
+        int64_t part = (sourceDurationInTicks % sourceTicksPerSecond) * destTicksPerSecond / sourceTicksPerSecond;    // 'part' is the remainder in the target time units.
+        return whole + part;
+    }
+ 
+    static inline TimeSpan TimeSpanFromQpcTicks(int64_t qpcTicks)
+    {
+        static const int64_t qpcFrequency = []
+        {
+            LARGE_INTEGER frequency;
+            QueryPerformanceFrequency(&frequency);
+            return frequency.QuadPart;
+        }();
+ 
+        return TimeSpan{ SourceDurationTicksToDestDurationTicks(qpcTicks, qpcFrequency, winrt::clock::period::den) / winrt::clock::period::num };
+    }
+};
+```
 
 ### Distortion Error
 
