@@ -53,13 +53,13 @@ Follow the same process to import the following as needed:
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
 
-## Configure MRTK for AR Foundation
+## Configure MRTK for AR Foundation Camera
 
-In the Hierarchy window select the **MixedRealityToolkit**, then in the Inspector clone the camera profile and give it an suitable name, for example “ARCameraConfigurationProfile” and click on the **Clone** button:
+In the Hierarchy window select the **MixedRealityToolkit** object, then in the Inspector clone the camera profile and give it an suitable name, for example **ARCameraConfigurationProfile** and click on the **Clone** button:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
-with the **MixedRealityToolkit** still selected, In the Inspector window, under the Camera tab, Expand the **Camera Setting Providers**, then click on **+ Add Camera Setting Provider**. Now expand **New data provider 1** that was created:
+with the **MixedRealityToolkit** object still selected, In the Inspector window, under the Camera tab, expand the **Camera Setting Providers**, then click on **+ Add Camera Setting Provider** button. Now expand **New data provider 1** that was created:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
@@ -67,9 +67,9 @@ Select Type > **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityA
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
-With the **MixedRealityToolkit** object still selected, in the Inspector window, attach supporting scripts by clicking on the **Add component** button and type in "AR Anchor Manager" then select the script.
+With the **MixedRealityToolkit** object still selected, in the Inspector window, attach supporting scripts by clicking on the **AddComponent** button and type in **AR Anchor Manager** then select the script.
 
-Adding "AR Reference Point Manager" script will automatically add "AR session origin" along with it in the the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
+Adding **AR Reference Point Manager** script will automatically add **AR session origin** along with it in the the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
@@ -85,11 +85,11 @@ Close the **Build settings** window. In the Unity menu, select **Mixed Reality T
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
-In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window. In the Project Settings window select the **Player** tab, expand the Other Settings section, select **Vulkan** and remove it by clicking the "-" symbol.
+In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window. In the Project Settings window select the **Player** tab, expand the **Other Settings** section, select **Vulkan** and remove it by clicking the **-** symbol.
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
-Close the Player Settings window and open the Build Settings window again. Then, using a USB cable, connect your Android device to your computer and select your device in the **Build and Run on** dropdown, then click **Build And Run**. You will be asked to save an `.apk` file which you can pick any name for.
+Close the Player Settings window and open the Build Settings window again. Then, using a USB cable, connect your Android device to your computer and select your device in the **Build and Run on** dropdown, then click **Build And Run**. You will be asked to save an `.apk` file that you can give a suitable name, for example, *ASATutorials*
 
 >[!NOTE]
 > You might need to press the refresh button next to the dropdown in order to see your device.
