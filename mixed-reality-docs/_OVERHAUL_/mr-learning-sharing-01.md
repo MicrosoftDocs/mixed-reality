@@ -40,14 +40,23 @@ In the fourth tutorial, [Integrating Azure Spatial Anchors into a shared experie
 >[!TIP]
 >If you have not completed the [Getting started tutorials](mr-learning-base-01.md) and [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) tutorial series yet, it's recommended that you complete those tutorials first.
 
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* A Windows 10 computer configured with the correct [tools installed](install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
-* Some basic C# programming ability
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added
-* Complete the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.10 installed and the Universal Windows Platform Build Support module added
+* Completed the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial
+* Completed the [Getting started tutorials](mrlearning-base.md) series or some basic prior experience with Unity and MRTK
+* Completed the [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) series or prior experience creating an Azure Spatial Anchors Account
+* If you intend to deploy to Android as well as HoloLens
+  * A <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">developer enabled</a> and <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">ARCore capable</a>
+ Android device with USB connection to your Windows or macOS computer
+  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.10 installed and the Android Build Support module added
+* If you intend to deploy to iOS as well as HoloLens
+  * A macOS computer with the the latest version of <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> and <a href="https://cocoapods.org" target="_blank">CocoaPods</a> installed
+  * An <a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">ARKit compatible</a> iOS device with USB connection to your macOS computer
+  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.10 installed and the iOS Build Support module added
 
 > [!IMPORTANT]
-> The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> The recommended Unity version for this tutorial series is Unity 2019.3.10. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 [Next tutorial: 2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)
