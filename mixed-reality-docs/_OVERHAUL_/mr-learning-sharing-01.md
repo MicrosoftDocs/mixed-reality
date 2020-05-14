@@ -9,14 +9,21 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
+<!-- TODO: Sync entire Introduction page with Base and Asa -->
 # 1. Introduction
+
+<!-- TODO: Most likely remove this section, design seems outdated and not seeing it being used in new tutorials. Waiting confirmation from MS
+## Device support
+-->
 
 ## Overview
 
-Welcome to the third series of the HoloLens 2 tutorials. In this four-part tutorial series, you will learn the fundamentals of building a muilt-user experience using Photon. Photon is one of several networking options available to Mixed Reality developers to create shared experiences.
+<!-- TODO: Consider removing 'Photon' from 'Photon PUN' as it is repeat (it was added for clarity) -->
+<!-- TODO: Consider change "Welcome to the third..." something like "This tutorial builds on the Getting started tutorial series and uses the RoverWhateverName prefab you created during those tutorials and also uses the same Azure resource that you created during the Azure Spatial Anchors tutorial series. You can continue building on the Unity project or etc..." -->
 Welcome to the third series of the HoloLens 2 tutorials. In this four-part tutorial series, you will learn the fundamentals of building a multi-user experience using Photon. Photon is one of several networking options available to mixed reality developers to create shared experiences.
 
-In the first tutorial, [Setting up Photon Unity Networking](mr-learning-sharing-02.md), you will learn how to prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a Photon PUN application, import Photon PUN assets into your Unity project, and connect your Unity project to the Photon PUN application.
+<!-- TODO: For the following four paragraphs, consider changing to list so it's more like a table of content and easier to read -->
+<!-- TODO: For the following four paragraphs, consider removing reference to first, second, etc. since values won't match tutorial number -->In the first tutorial, [Setting up Photon Unity Networking](mr-learning-sharing-02.md), you will learn how to prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a Photon PUN application, import Photon PUN assets into your Unity project, and connect your Unity project to the Photon PUN application.
 
 In the second tutorial, [Connecting multiple users](mr-learning-sharing-03.md), you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
 
@@ -26,6 +33,7 @@ In the fourth tutorial, [Integrating Azure Spatial Anchors into a shared experie
 
 ## Objectives
 
+<!-- TODO: Update to exact wording used in the following tutorials' Objectives section -->
 * Learn how to create a Photon PUN application
 * Learn how to find and import the Photon PUN assets
 * Learn how to connect your Unity project to the Photon PUN application
@@ -58,5 +66,8 @@ In the fourth tutorial, [Integrating Azure Spatial Anchors into a shared experie
 
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.3.10. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+
+<!-- TODO: Consider adding a 'What you will create' section with animations/images -->
+## What you will create
 
 [Next tutorial: 2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)
