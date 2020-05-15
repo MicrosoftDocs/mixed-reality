@@ -64,16 +64,19 @@ In the Hierarchy window, right-click on the **PhotonUser** object and select **3
 * Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0
 * Change the Transform **Scale** to a suitable size, for example, X = 0.15, Y = 0.15, Z = 0.15
 
+<!-- TODO: Update image with lighting. Will also need to touch up all images to change the message in lower right corner. (Looks like Unity at some point has change default setting to Auto Generate Lighting off, so students should probably turn it on so objects are properly lit, manual generation will create unnecessary project assets in the given scenario). -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
 
 ### 3. Create the prefab
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder:
 
+<!-- TODO: Update image with lighting. Will also need to touch up all images to change the message in lower right corner. (Looks like Unity at some point has change default setting to Auto Generate Lighting off, so students should probably turn it on so objects are properly lit, manual generation will create unnecessary project assets in the given scenario). -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
 
 With the Resources folder still selected, **click-and-drag** the **PhotonUser** object from the Hierarchy window into the **Resources** folder to make the PhotonUser object a prefab:
 
+<!-- TODO: Update image with lighting. Will also need to touch up all images to change the message in lower right corner. (Looks like Unity at some point has change default setting to Auto Generate Lighting off, so students should probably turn it on so objects are properly lit, manual generation will create unnecessary project assets in the given scenario). -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
 
 In the Hierarchy window, right-click on the **PhotonUser** object and select **Delete** to remove it from the scene:
@@ -96,8 +99,8 @@ In the Hierarchy window, expand the **NetworkLobby** object and select the **Net
 
 If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 <!-- TODO: update gif when everything else is done-->
+![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mr-learning-base-02.md#build-your-application-to-your-device) instructions.
