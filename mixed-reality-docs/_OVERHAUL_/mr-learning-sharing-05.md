@@ -22,6 +22,7 @@ In this tutorial, you will learn how to integrate Azure Spatial Anchors (ASA) in
 
 In the Hierarchy window, expand the **SharedPlayground** object, then expand the **TableAnchor** object to expose its child objects:
 
+<!-- TODO: Change image, it doesn't align with instructions, instructions says to expand TableAnchor object, not to select the Buttons object as shown in image (it should be in scene yet) -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **Buttons** prefab on top of the **TableAnchor** child object in the Hierarchy window to add it to your scene as a child of the TableAnchor object:
@@ -34,6 +35,7 @@ In this section, you will configure a series of button events that demonstrate t
 
 In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**:
 
+<!-- TODO: Update image, instructions reference Button object, so that should be the object with light grey highlight, not the TableAnchor -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
 In the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
@@ -86,6 +88,8 @@ With the **TableAnchor** object still selected, in the Inspector window, make su
 
 > [!NOTE]
 > Azure Spatial Anchors can not run in Unity. Consequently, to test the Azure Spatial Anchors functionality, you need to deploy the project to a minimum of two HoloLens devices.
+
+<!-- TODO: Consider adding TIP informing students that they can also deploy to mobile (link back to ASA AR Foundation tutorial) -->
 
 If you now build and deploy the Unity project to two HoloLens devices, you can achieve spatial alignment between the devices by sharing the Azure Anchor ID. To test it out, you can follow these steps:
 
