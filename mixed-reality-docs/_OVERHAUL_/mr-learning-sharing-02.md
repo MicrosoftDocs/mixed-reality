@@ -45,6 +45,7 @@ Then follow the [How to configure the Mixed Reality Toolkit Profiles (Change Spa
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Publishing Settings** section:
 
+<!-- TODO: Update image, it shows product name as 'MixedRealityTest', however, the suggested project name in the previous section was 'MRTK Tutorials' -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
 In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **RemovableStorage** capabilities:
@@ -53,7 +54,7 @@ In the  **Publishing Settings**, scroll down to the **Capabilities** section and
 
 ## Adding inbuilt Unity packages
 <!-- TODO: Consider renaming to 'Installing AR Foundation' -->
-<!-- TODO: Determine if Legacy Input Helpers needs to be imported at this stage-->
+<!-- TODO: Add instructions to install Legacy Input Helpers -->
 
 In this section, you will install Unity's inbuilt AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
 
