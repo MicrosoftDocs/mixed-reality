@@ -1,6 +1,6 @@
 ---
-title: Azure Spatial Anchors tutorials - 1. Getting started with Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Standalone Holographic Remoting tutorials - 1. Getting started with Standalone Holographic Remoting
+description: Complete this course to learn how to remote mixed reality experience form your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -9,31 +9,31 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 1. Getting started with AppX Holographic Remoting
+# 1. Getting started with Standalone Holographic Remoting
 
 * ## Overview
 
-  Welcome to the second series of the HoloLens 2 tutorials. In this two-part tutorial series, you will learn how to create a Mixed Reality experience demonstration and how to create a Holographic Remoting remote app.
+  Welcome to the second series of the HoloLens 2 tutorials. In this two-part tutorial series, you will learn how to create a Mixed Reality experience demonstration and how to create a PC app for Holographic Remoting.
 
-  In the first tutorial, [Create Mixed Reality experience](mrlearning-appx-ch1.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye-tracking features.
+  In the first tutorial, [Create Mixed Reality experience](mrlearning-appx-ch1.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features.
 
-  In the second tutorial, [Create Holographic Remoting remote application](mrlearning-appx-ch2.md), you will learn how to create a Holographic Remoting remote app and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
+  In the second tutorial, [Create Holographic Remoting application](mrlearning-appx-ch2.md), you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
 
   ## Objectives
 
   - Import assets and set up the scene
   - Interact with holograms using UI elements and buttons
-  - Configuring 3D objects for the clipping feature.
+  - Configure 3D objects for the clipping feature.
   - Learn about eye tracking target select and highlight tooltips.
 
 ## Prerequisites
 
 >[!TIP] If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, its recommended that you complete those tutorials first.
 >
->- A Windows 10 PC Configured with the correct [tools installed](install-the-tools.md)
+>- A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
 >- Windows 10 SDK 10.0.18362.0 or later
 >- Some essential C# programming ability
->- A HoloLens 2 device Configured for development](using-visual-studio.md#enabling-developer-mode)
+>- A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 >- [Unity Hub](https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html) with Unity 2019.3.X mounted, and the Universal Windows Platform Build Support module added
 >
 >[!IMPORTANT] The recommended Unity version for this tutorial series is Unity 2019.3.X. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
@@ -116,13 +116,13 @@ For each of the remaining buttons, complete the process outlined above to assign
 
 ### 3. Configuring the View Button Control (Script)  and Toggle Button (Script) component:
 
-Now your buttons are Configured to demonstrate the model switching and clipping functionality, and it is time to add 3D models and the clipping objects to the script.
+Now your buttons are configured to demonstrate the model switching and clipping functionality, and it is time to add 3D models and the clipping objects to the script.
 
 For demonstration, we have provided five different 3D models, expand ModelParent object to find these 3D models.
 
-With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand the 3D **Models** variable. 
+With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand the **Models** variable. 
 
-Enter the number of 3D models you would like to have on your scene. In this case, it would be five. It will create placeholders for adding new 3D models. Drag and drop ModelParent Object's child model objects into these placeholders. 
+Enter the number of 3D models you would like to have on your scene. In this case, it would be five. It will create placeholders for adding new 3D models. Drag-and-drop ModelParent Object's child model objects into these placeholders. 
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section4-Step3-1.png)
 
@@ -138,13 +138,13 @@ In this section, you will add **MarsCuriosityRover** object's child objects rend
 
 In the Hierarchy window, expand the ClippingObjects object and find three different clipping objects that will be using in the project.
 
-To Configuring the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
+To Configuring the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create placeholders for adding renderers, Drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
 
 ![mrlearning-appx](images/mrlearning-appx/Tutorial1-Section5-Step1-1.png)
 
 Follow the same steps and add MarsCuriosityRover 's child objects renderers to the **ClippingBox** and **ClippingPlane** objects. 
 
-In this tutorial, only the MarsCuriosityRover model is used for demonstrating the clipping feature. You can follow the same steps and add a clipping feature for the rest of the models.
+In this tutorial, only the MarsCuriosityRover model will be used for demonstrating the clipping feature. You can follow the same steps and add a clipping feature for the rest of the models.
 
 ## Configuring eye tracking to highlight tooltips
 
@@ -174,12 +174,12 @@ Follow the similar step and click the **No Function** dropdown of the On Look Aw
 
 Follow the same process and assign respective tooltip objects to their similar **MarsCuriocityRover** parts While Looking At Target () & On Look Away () events.
 
-To enable simulated eye-tracking for in-editor simulations, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
+To enable simulated eye tracking for in-editor simulations, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
 
 ## Congratulations
 
-In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye-tracking features. The tutorial provided you with NextButton and PreviousButton that let you explore the 3D model viewer experience. The ClippingObjectButton made you turn on clipping objects and experience clipping feature. The tutorial also provided you with an eye-tracking element to enable highlighting the tooltips in the experience.
+In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features. The tutorial provided you with NextButton and PreviousButton that let you explore the 3D model viewer experience. The ClippingObjectButton made you turn on clipping objects and experience clipping feature. The tutorial also provided you with an eye tracking element to enable highlighting the tooltips in the experience.
 
-In the next lesson, you will learn how to create a Holographic Remoting remote application for PC to connect HoloLens 2 at any point, providing a way to Visualize 3D content in Mixed reality.
+In the next lesson, you will learn how to create a Holographic Remoting application for PC to connect HoloLens 2 at any point, providing a way to Visualize 3D content in Mixed reality.
 
-[Next Lesson: 2. Create Holographic Remoting remote application ](mrlearning-appx-ch2.md)
+[Next Lesson: 2. Create Holographic Remoting application ](mrlearning-appx-ch2.md)

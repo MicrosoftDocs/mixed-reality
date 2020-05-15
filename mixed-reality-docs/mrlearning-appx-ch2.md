@@ -1,6 +1,6 @@
 ---
-title: Azure Spatial Anchors tutorials - 2. Saving, retrieving, and sharing Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Standalone Holographic Remoting tutorials - 2. Create Standalone Holographic Remoting application
+description: Complete this course to learn how to remote mixed reality experience form your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -9,19 +9,19 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 2. Create Holographic Remoting remote Application
+# 2. Create Standalone Holographic Remoting application
 
-In this tutorial, you will learn how to create a Holographic Remoting remote app and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
+In this tutorial, you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
 
 ## Objectives
 
-* Configuring Unity for Holographic Remoting remote
+* Configure Unity for Holographic Remoting
 * Learn how to build and deploy the application with Visual Studio
-* Installing the Holographic Remoting remote application and connecting to HoloLens
+* Installing the Holographic Remoting application and connecting to HoloLens
 
 ## Configuring your scene for Holographic Remoting
 
-In this section, you will Configuring your project to stream your Mixed Reality experience on to your HoloLens 2 device from your PC in real-time over a WIFI connection.
+In this section, you will be configuring your project to stream your Mixed Reality experience on to your HoloLens 2 device from your PC in real-time over a WIFI connection.
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select-and-drag **HolographicRemoting** prefab into your scene.
 
@@ -29,32 +29,17 @@ In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicR
 
 With the HolographicRemoting object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
-## Build your Holographic Remoting application to PC
+Now your Holographic Remoting app is ready, follow these instructions to [build it to your PC](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). 
 
-In this section, you will Configuring the project's player settings to support Holographic Remoting and build the application to PC.
+Note: Apart from the **Player Settings** mentioned in the instructions, make the following changes that are specific for the Holographic Remoting application.
 
-In the Unity menu, select **Edit** > **Project Settings** to open the Project Settings window. In the Project Settings, window picks the **Player** tab, expand the **XR Settings** section.
+1. Select the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
 
-In the XR Settings, select the **Virtual Reality Supported** checkbox to enable Mixed Reality. Click on **+** option to add Virtual Reality SDK's. In our scenario, choose **Windows Mixed Reality** SDK.
+   ![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-1.png)
 
-![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-1.png)
+2. Configuring Visual Studio for PC with the below settings:
 
-When Unity has finished adding the SDK, optimize the XR Settings as follows:
-
-- Set Windows Mixed Reality **Depth Format** to **16-bit depth**
-- Check the Windows Mixed Reality **Enable Depth Sharing** checkbox
-- Set **Stereo Rendering Mode** to **Single-Pass Instanced**
-- Select the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
-
-In the **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial. Then, allow the **InternetClientServer**, **PrivateNetworkClientServer**, **Webcam,** and **Gaze Input** capabilities:
-
-![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-2.png)
-
-For a reminder on how to Build the application, you can refer to the [Build your application to your device](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device) instructions.
-
-Configuring Visual Studio for PC with the below settings:
-
-* Select the  **Release** Configuration instead of debugging
+* Select the  **Release** configuration instead of debugging
 * Select **X64** architecture instead of ARM
 * Select **Local Machine** as the target instead of Device
 
