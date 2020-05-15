@@ -32,11 +32,14 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCa
 
 In this section, you will configure a series of button events that demonstrate the fundamentals of how Azure Spatial Anchors can be used to achieve spatial alignment in a shared experience.
 
-In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**. Then in the Inspector window, on the **Interactable (Script)** component locate the **OnClick ()** event and to the **None (Object)** field assign the **TableAnchor** object:
+In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
-In the Inspector window, in the **OnClick ()** event, from the **No Function** dropdown, select the **AnchorModuleScript** > **StartAzureSession ()** function:
+In the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
+
+* To **None (Object)** field, assign the **TableAnchor** object
+* From **No Function** dropdown, select the **AnchorModuleScript** > **StartAzureSession ()** function
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
