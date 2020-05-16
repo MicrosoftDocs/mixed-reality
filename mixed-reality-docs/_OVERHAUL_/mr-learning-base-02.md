@@ -23,25 +23,16 @@ In this first tutorial, you will learn about some of the capabilities the <a hre
 * Import assets and set up the scene
 * Visualization of the spatial mapping mesh, hand meshes, and the framerate counter
 
-## Prerequisites
-
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
-* Windows 10 SDK 10.0.18362.0 or later
-* Some basic C# programming ability
-* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added
-
-> [!IMPORTANT]
-> The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
-
 ## Create new Unity project
 
 Launch **Unity Hub**, select the **Projects** tab, and click the **down arrow** next to the **New** button:
 
+<!-- TODO: updated image-->
 ![mr-learning-base](images/mr-learning-base/base-02-section1-step1-1.png)
 
 Select the Unity version specified in the [Prerequisites](#prerequisites) section above:
 
+<!-- TODO: updated image-->
 ![mr-learning-base](images/mr-learning-base/base-02-section1-step1-2.png)
 
 In the Create a new project window:
@@ -51,6 +42,7 @@ In the Create a new project window:
 * Choose a suitable **Location** to store your project, for example, _D:\MixedRealityLearning_
 * Click the **Create** button to create and launch your new Unity project
 
+<!-- TODO: updated image-->
 ![mr-learning-base](images/mr-learning-base/base-02-section1-step1-3.png)
 
 > [!CAUTION]
@@ -58,93 +50,22 @@ In the Create a new project window:
 
 Wait for Unity to create the project:
 
+<!-- TODO: Consider if we should change this image with a new open unity project or add second image-->
 ![mr-learning-base](images/mr-learning-base/base-02-section1-step1-4.png)
-
-## Configure the Unity project for Windows Mixed Reality
-
-<!-- TODO: Consider adding info about configuring Unity for WMR vs MRTK, or removing WMR section -->
-
-In this section, you will switch build platform, enable virtual reality, and enable spatial perception.
-
-### 1. Switch build platform
-
-In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step1-1.png)
-
-In the Build Settings window, select **Universal Windows Platform** and click the **Switch Platform** button:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step1-2.png)
-
-Wait for Unity to finish switching the platform:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step1-3.png)
-
-When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step1-4.png)
-
-### 2. Enable virtual reality
-
-> [!NOTE]
-> Enabling virtual reality also applies to mixed reality and augmented reality headsets because it refers to enabling stereoscopic vision, i.e. rendering different images for each eye.
-
-In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step2-1.png)
-
-In the Project Settings window, select **Player** > **XR Settings** to expand the XR Settings:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step2-2.png)
-
-In the XR Settings, check the **Virtual Reality Supported** checkbox to enable virtual reality, then click the **+** icon and select **Windows Mixed Reality** to add the Windows Mixed Reality SDK:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step2-3.png)
-
-Wait for Unity to finish adding the SDK:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step2-4.png)
-
-When Unity has finished adding the SDK, optimize the XR Settings as follows:
-
-* Set Windows Mixed Reality **Depth Format** to **16-bit depth**
-* Check the Windows Mixed Reality **Enable Depth Sharing** checkbox
-* Set Stereo **Rendering Mode\*** to **Single Pass Instanced**
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step2-5.png)
-
-> [!TIP]
-> To learn more about optimizing Unity for Windows Mixed Reality, you can refer to the [Recommended settings for Unity](recommended-settings-for-unity.md) documentation.
-
-### 3. Enable spatial perception
-
-> [!NOTE]
-> Spatial perception allows visualization of the spatial mapping mesh on Windows Mixed Reality devices.
-
-In the Project Settings window, select **Player** > **Publishing Settings** to expand the Publishing Settings:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step3-1.png)
-
-In the Publishing Settings, scroll down to the **Capabilities** section and check the **SpatialPerception** checkbox:
-
-![mr-learning-base](images/mr-learning-base/base-02-section2-step3-2.png)
-
-<!-- TODO: Consider adding info about audio spatializer plugin setting -->
-
-Close the Project Settings window.
 
 ## Import TextMesh Pro Essential Resources
 
+<!-- TODO: Consider changing-->
 > [!NOTE]
-> We are importing this package because it is required by Mixed Reality Toolkit's UI elements.
+> We are importing this package because it is required by Mixed Reality Toolkit's UI elements. Although we will not be using it in this lesson it is very important for upcoming lessons.
 
 In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources**:
 
-![mr-learning-base](images/mr-learning-base/base-02-section3-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-02-section2-step1-1.png)
 
 In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
 
-![mr-learning-base](images/mr-learning-base/base-02-section3-step1-2.png)
+![mr-learning-base](images/mr-learning-base/base-02-section2-step1-2.png)
 
 ## Import the Mixed Reality Toolkit
 
@@ -154,60 +75,151 @@ Download the Unity custom package:
 
 In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
-![mr-learning-base](images/mr-learning-base/base-02-section4-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-02-section3-step1-1.png)
 
 In the Import package... window, select the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.3.0.unitypackage** you downloaded and click the **Open** button:
 
-![mr-learning-base](images/mr-learning-base/base-02-section4-step1-2.png)
+![mr-learning-base](images/mr-learning-base/base-02-section3-step1-2.png)
 
 In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
 
-![mr-learning-base](images/mr-learning-base/base-02-section4-step1-3.png)
+![mr-learning-base](images/mr-learning-base/base-02-section3-step1-3.png)
+
+> [!NOTE]
+> When it is finished importing the MRTK Project Configurator window will pop up. We don't need this at this stage so just close it by pressing the red **x** at the top.
 
 ## Configure the Unity project for the Mixed Reality Toolkit
 
-<!-- TODO: Consider adding info about configuring Unity for WMR vs MRTK, or removing WMR section -->
+In this section, you will switch the build platform to Universal Windows Platform (UWP) and configure the Mixed Reality capabilities.
 
-After the package has been imported, the MRTK Project Configurator window should appear. If it does not, open it by selecting **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** in the Unity menu.
+### 1. Switch build platform
+
+In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window:
+
+![mr-learning-base](images/mr-learning-base/base-02-section4-step1-1.png)
+
+In the Build Settings window, select **Universal Windows Platform** and click the **Switch Platform** button:
+
+![mr-learning-base](images/mr-learning-base/base-02-section4-step1-2.png)
+
+Wait for Unity to finish switching the platform:
+
+![mr-learning-base](images/mr-learning-base/base-02-section4-step1-3.png)
+
+When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window:
+
+![mr-learning-base](images/mr-learning-base/base-02-section4-step1-4.png)
+
+### 2. Configure the MRTK capabilities 
+
+After the platform has switched, the MRTK Project Configurator window should appear. If it does not, open it by selecting **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** in the Unity menu.
+
+![mr-learning-base](images/mr-learning-base/base-02-section4-step2-1.png)
+
+In the MRTK Project Configurator window, expand the **Modify Configurations** section, ensure all options are checked, and click the **Apply** button to apply the settings:
+
+![mr-learning-base](images/mr-learning-base/base-02-section4-step2-2.png)
+
+## Creating and preparing the scene
+
+In this section, you will create a new scene, change the light settings, and add the MRTK to the scene.
+
+### 1. Make a new scene
+
+In the Unity menu, select **File** > **New Scene** to create a new scene:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section5-step1-1.png)
 
-In the MRTK Project Configurator window, expand the **Modify Configurations** section, <u>uncheck</u> the **Enable MSBuild for Unity** checkbox, ensure all other options are checked, and click the **Apply** button to apply the settings:
-
-![mr-learning-base](images/mr-learning-base/base-02-section5-step1-2.png)
-
-> [!CAUTION]
-> MSBuild for Unity may not support all SDKs you will be using and can be challenging to disable after it has been enabled. Consequently, it is strongly recommended to not enable MSBuild for Unity.
-
-## Configure the Mixed Reality Toolkit
-<!-- TODO: Consider renaming to 'Add the Mixed Reality Toolkit to the Unity scene' -->
+### 2. Add Mixed Reality to the scene and configure
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add the Mixed Reality Toolkit to your current scene:
 
-![mr-learning-base](images/mr-learning-base/base-02-section6-step1-1.png)
+![mr-learning-base](images/mr-learning-base/base-02-section5-step2-1.png)
 
 With the MixedRealityToolkit object selected in the Hierarchy window, in the Inspector window, verify the Mixed Reality Toolkit configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
 
-![mr-learning-base](images/mr-learning-base/base-02-section6-step1-2.png)
+![mr-learning-base](images/mr-learning-base/base-02-section5-step2-2.png)
 
 > [!IMPORTANT]
 > Typically, you will use the DefaultHoloLens2ConfigurationProfile when developing for HoloLens 2. However, for the purpose of this tutorial, you will use the DefaultMixedRealityToolkitConfigurationProfile, then in the next tutorial, [Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md), you will change to the DefaultHoloLens2ConfigurationProfile.
 
+### 3. Enable Auto Generate Lighting
+
+In the Unity menu, select **Windows** > **Rendering** > **Light Settings** to open the light settings window:
+
+![mr-learning-base](images/mr-learning-base/base-02-section5-step3-1.png)
+
+At the bottom of the **Light Settings** window, check the **Auto Generate** box:
+
+![mr-learning-base](images/mr-learning-base/base-02-section5-step3-2.png)
+
+> [!NOTE]
+> For bigger projects you will probably leave this setting off due to how much it can slow your computer, but in our case it will be fine.
+
+### 4. Save scene
+
 In the Unity menu, select **File** > **Save As...** to open the Save Scene window:
 
-![mr-learning-base](images/mr-learning-base/base-02-section6-step1-3.png)
+![mr-learning-base](images/mr-learning-base/base-02-section5-step4-1.png)
 
 In the Save Scene window, navigate to your project's **Scenes** folder, give your scene a suitable name, for example, _GettingStarted_, and click the **Save** button to save the scene:
 
-![mr-learning-base](images/mr-learning-base/base-02-section6-step1-4.png)
+![mr-learning-base](images/mr-learning-base/base-02-section5-step4-2.png)
 
-## Build your application to your device
+## Configure Project settings for Hololens
+
+In this section, you will change the package name, enable spatial audio, and enable Windows Mixed Reality (WMR) SDK.
+
+### 1. Configure UWP package settings
+
+In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
+
+![mr-learning-base](images/mr-learning-base/base-02-section6-step1-1.png)
+
+In the Project Settings window, select the **Player** tab, and at the top, in the **Company Name** slot, type your name:
+
+![mr-learning-base](images/mr-learning-base/base-02-section6-step1-2.png)
+
+Expand the **Publishing Settings** section, and in the **Package Name** slot, enter a suitable name, for example _MRTKTutorials-GettingStarted_:
+
+![mr-learning-base](images/mr-learning-base/base-02-section6-step1-3.png)
+
+> [!TIP]
+> The Package Name slot does not except spaces. Any spaces will be removed pushing everything together.
+
+### 2. Configure XR settings
+
+with the **Player** tab still selected, Expand the **XR Settings** section. Under **Virtual Reality SDKs**, press the **+** icon, to add an SDK, and select **Windows Mixed Reality**:
+
+![mr-learning-base](images/mr-learning-base/base-02-section6-step2-1.png)
+
+When Unity has finished adding the SDK, optimize the XR Settings as follows:
+
+* Set Windows Mixed Reality **Depth Format** to **16-Bit Depth**
+* Check the Windows Mixed Reality **Enable Depth Buffer Sharing**
+* Set **Stereo Render Mode\*** to **Single Pass Instanced**
+
+![mr-learning-base](images/mr-learning-base/base-02-section6-step2-2.png)
+
+### 3. Enable spatial sound
+
+In the Project settings window, select the **Audio** tab:
+
+![mr-learning-base](images/mr-learning-base/base-02-section6-step3-1.png)
+
+Click on the **Spatializer Plugin** dropdown, and select **MS HRTF Spatializer**:
+
+![mr-learning-base](images/mr-learning-base/base-02-section6-step3-2.png)
+
+## Build your application to your Hololens 2
+
+In this section, you will learn how to build and deploy to a Hololens 2.
 
 ### 1. Build the Unity project
 
 In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window.
 
-In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list, then click the **Build** button to open the Build Universal Windows Platform window:
+In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list. Expand the **Architecture** dropdown and select **ARM**, then click the **Build** button to open the Build Universal Windows Platform window:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section7-step1-1.png)
 
@@ -233,7 +245,7 @@ Configure Visual Studio for HoloLens 2 by selecting the **Master** or **Release*
 ![mr-learning-base](images/mr-learning-base/base-02-section7-step2-2.png)
 
 > [!NOTE]
-> If you don't see Device as an option you may need to change the default start up project from the IC2Lpp project to your UWP Project. In the **Solution Explorer**, right click on **yourprojectname (Universal Windows)** and select **Set as StartUp Project**. 
+> If you don't see Device as an option you may need to change the default start up project from the IC2Lpp project to your UWP Project. In the **Solution Explorer**, right click on **yourprojectname (Universal Windows)** and select **Set as StartUp Project**.
 
 Connect your HoloLens 2 to your computer.
 
@@ -258,4 +270,4 @@ You have now deployed your first HoloLens 2 application. As you walk around, you
 > [!NOTE]
 > In the app, you may notice the Diagnostics profiler, you can toggle it's visibility using the speech command **Toggle Diagnostics**. However, it is generally recommended to keep the profiler visible at all times during development to understand when changes to the app may have impacted performance, for example, HoloLens 2 application should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).
 
-[Next Tutorial: 3. Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md)
+[Next Tutorial: 3. Creating user interface and configure Mixed Reality Toolkit](mr-learning-base-03.md)
