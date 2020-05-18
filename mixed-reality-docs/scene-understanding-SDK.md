@@ -153,7 +153,7 @@ The first step to working with SceneUnderstanding is for your application to gai
 Scenes are computed using a SceneObserver. Before creating a Scene, your application should query your device to ensure that it supports SceneUnderstanding, as well as to request user access for information that SceneUnderstanding needs.
 
 ```cs
-if (SceneObserver.IsSupported())
+if (!SceneObserver.IsSupported())
 {
     // Handle the error
 }
@@ -373,10 +373,10 @@ If you have a HoloLens2 you can save any scene you've captured by saving the out
 
 If you do not have a HoloLens2 device but want to play with Scene Understanding you will need to download a pre-captured scene. The Scene Understanding sample currently ships with serialized scenes that can be downloaded and used at your own convenience. You can find them here:
 
-[Scene Understanding Sample Scenes](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
+[Scene Understanding Sample Scenes](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/Resources/SerializedScenesForPCPath)
 
 ## See also
 
 * [Spatial mapping](spatial-mapping.md)
 * [Scene understanding](scene-understanding.md)
-* [Unity Sample](https://github.com/sceneunderstanding-microsoft/unitysample)
+* [Unity Sample](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)

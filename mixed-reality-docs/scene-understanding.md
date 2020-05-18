@@ -24,7 +24,7 @@ This article only serves to introduce the Scene Understanding runtime and concep
 
 You can download the Scene Understanding Sample app from the sample GitHub site:
 
-[Scene Understanding Sample](https://github.com/sceneunderstanding-microsoft/unitysample)
+[Scene Understanding Sample](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 If you do not have a device and wish to access sample scenes to try Scene Understanding out, there are scenes in the sample asset folder:
 

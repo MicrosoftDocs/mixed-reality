@@ -100,6 +100,7 @@
 ## [Learn the tools and architecture](development.md)
 ## [Install the tools](install-the-tools.md)
 ## Mixed reality cloud services
+### [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering)
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 ## [Tutorials and sample apps](tutorials.md)
 ### Unity
@@ -163,6 +164,13 @@
 ##### [MR and Azure 311: Microsoft Graph](mr-azure-311.md)
 ##### [MR and Azure 312: Bot integration](mr-azure-312.md)
 ##### [MR and Azure 313: IoT Hub Service](mr-azure-313.md)
+### Unreal
+#### [1. Getting started](unreal-uxt-ch1.md)
+#### [2. Initializing your project and first application](unreal-uxt-ch2.md)
+#### [3. Setting up your project for mixed reality](unreal-uxt-ch3.md)
+#### [4. Making your scene interactive](unreal-uxt-ch4.md)
+#### [5. Adding a button & resetting piece locations](unreal-uxt-ch5.md)
+#### [6. Packaging & deploying to device or emulator](unreal-uxt-ch6.md)
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -196,6 +204,14 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
+### [Hand tracking in Unreal](unreal-hand-tracking.md)
+### [Gaze input in Unreal](unreal-gaze-input.md)
+### [Spatial mapping in Unreal](unreal-spatial-mapping.md)
+### [Spatial anchors in Unreal](unreal-spatial-anchors.md)
+### [Voice input in Unreal](unreal-voice-input.md)
+### [HoloLens camera in Unreal](unreal-hololens-camera.md)
+### [QR codes in Unreal](unreal-qr-codes.md)
+### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)

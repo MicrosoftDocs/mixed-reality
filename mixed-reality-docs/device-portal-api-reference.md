@@ -181,6 +181,10 @@ Open a web socket connection for a control stream.
 
 Create a control stream (priority is required) or post data to a created stream (streamId required). Posted data is expected to be of type 'application/octet-stream'.
 
+**/api/holographic/simulation/display/stream (GET/WebSocket)**
+
+Request a simulation video stream containing the content rendered to the system display when in 'Simulation' mode.  A simple format descriptor header will be sent initially, followed by H.264-encoded textures, each preceded by a header indicating the eye index and texture size.
+
 ## Perception Simulation Playback
 
 **/api/holographic/simulation/playback/file (DELETE)**
