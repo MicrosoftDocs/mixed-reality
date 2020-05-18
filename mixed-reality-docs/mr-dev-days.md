@@ -39,7 +39,17 @@ We are very excited to open up registration for Mixed Reality Dev Days.  The eve
 
 Altspace supports the following platforms: HTC Vive; Oculus Rift, Go, and Quest; Samsung GearVR; Windows Mixed Reality; and 2D Mode on PC.
 
-You will need an Altspace account to attend Mixed Reality Dev Days. You can sign up for an account [here](https://account.altvr.com/users/sign_up).
+### Creating an account
+
+There are two ways to create an account:
+
+The most efficient way is to download the AltspaceVR client of choice for your setup, complete the install, and then launch the client. Once you are in the program, there will be an option to create an account.  Minimum system specifications can be found [here](https://help.altvr.com/hc/en-us/articles/115003538414-Minimum-System-Specifications).
+
+The other option is to visit the [Online account sign up](https://account.altvr.com/users/sign_up).
+
+### Troubleshooting
+
+If you run into any issues with Altspace, please check the [troubleshooting page](https://help.altvr.com/hc/en-us/sections/115000792634-Troubleshooting). If that doesn't solve the issue you are experinceing, please file a [support request](https://help.altvr.com/hc/en-us/requests/new).
 
 ---
 
