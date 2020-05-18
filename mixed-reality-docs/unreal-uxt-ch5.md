@@ -41,13 +41,13 @@ This section continues demonstrating the capabilities of the Mixed Reality Toolk
 
 ![Create a variable](images/unreal-uxt/5-var.PNG)
 
-4.	Drag the WhiteKing variable from **My Blueprint > Variables** onto the Simple Button Event Graph. Choose **Get WhiteKing**. 
+4.	Drag the WhiteKing variable from **My Blueprint > Variables** onto the Reset Button Event Graph. Choose **Get WhiteKing**. 
 
 5.	Drag the WhiteKing output pin and release to place a new node. Select the **Reset Location** function. Finally, drag the outgoing execution pin from **On Button Pressed** to the incoming execution pin on **Reset Location**. **Compile** and **Save** the ResetButton Blueprint, then return to the Main window. 
 
 ![Call Reset Location function from On Button Pressed](images/unreal-uxt/5-callresetloc.PNG)
 
-6.	Drag **SimpleButton** into the viewport and set its location to X = 50, Y = -25, Z = 10. Under **Default**, set the value of the WhiteKing variable to **WhiteKing**.
+6.	Drag **ResetButton** into the viewport and set its location to X = 50, Y = -25, Z = 10. Under **Default**, set the value of the WhiteKing variable to **WhiteKing**.
 
 ![Set the variable](images/unreal-uxt/5-buttonlevel.PNG)
 

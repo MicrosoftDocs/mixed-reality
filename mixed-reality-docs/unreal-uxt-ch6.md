@@ -30,6 +30,10 @@ This section walks you through the steps of preparing your app to run on a HoloL
 
 ## Package and deploy your app 
 
+>[!NOTE]
+>If this is your first time packaging an Unreal app for HoloLens, you'll need to download supporting files from the Epic Launcher. To do so, go to the **Library** tab in the Epic Games Launcher. Select the dropdown arrow next to **Launch** and select **Options**. Under **Target Platforms**, select **HoloLens 2** and click **Apply**. 
+>![Project Settings - Description](images/unreal-uxt/6-installationoptions.PNG)
+
 1.	Go to **Edit > Project Settings**. Under **Project > Description > About > Project Name**, give your project a name. Under **Project > Description > Publisher > Company Distinguished Name** put “CN={INSERT COMPANY NAME}”. Leaving either of these fields blank will result in an error. 
 
 ![Project Settings - Description](images/unreal-uxt/6-cn.PNG)
