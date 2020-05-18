@@ -61,7 +61,7 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 ||||||
 |---------|---------|---------|---------|---------|
 |__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
-|9:30am - 10:30am|Opening Keynote|Alex Kipman|||
+|9:30am - 10:30am|Opening Keynote|Alex Kipman||[RSVP Page](https://account.altvr.com/events/1475172303389065242)|
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons, Christopher Manthei, and Marc Appelsmeier|Azure Remote Rendering just entered public preview.  Learn how you can use ARR to render interactive 3D models with hundreds of millions of polygons and stream them to devices like HoloLens 2 in real-time.|[RSVP Page](https://account.altvr.com/events/1475002657985790153)|
 |11:00am - 12:00pm|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|Unreal Engine support for HoloLens 2 reached production-ready status with the release of UE 4.25 in May! Alongside UE 4.25, in response to the top ask we've been hearing from developers since Unreal's HoloLens support first shipped in preview, our team released the first component of the Mixed Reality Toolkit for Unreal: UX Tools 0.8. In this talk, we'll provide an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.|[RSVP Page](https://account.altvr.com/events/1475006046102618860)|
@@ -82,7 +82,7 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 ||||||
 |---------|---------|---------|---------|---------|
 |__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
-|9:30am - 10:30am|Fireside Chat|Alex Kipman & Rene Schulte|||
+|9:30am - 10:30am|Fireside Chat|Alex Kipman & René Schulte|Opening up day two we have invited Microsoft MVP, Regional Director, and community member extraordinaire René Schulte to stand around a fire and chat about the topics the community is interested in. René has been gathering questions from the community for about a week, and we anticipate it's going to be a great conversation.|https://account.altvr.com/events/1472969601032651685|
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Designing AR/VR experiences using Microsoft Maquette|Ricardo Acosta & Jia Wang|Designing a phone app or a website has a well defined workflow. Unfortunately, due to its novelty designing spatial reality experiences can be tricky if you use the same 2D workflow or toolset. Luckily, the new Microsoft Maquette app focuses on helping UX designers to design.|[RSVP Page](https://account.altvr.com/events/1475022385332618137)|
 |11:00am - 12:00pm|MRTK Unity v2 & beyond - How community feedback helped us improve MRTK|Bernadette Thalhammer|A talk about how we've improved the developer experience over the last year by listening to feedback from the community and how developers can leverage some these improvements. We will dive into documentation and unit testing, the new object manipulator component, using the migration window and will explore some code snippets around our most frequently asked questions from the dev community.|[RSVP Page](https://account.altvr.com/events/1475021020329935837)|
