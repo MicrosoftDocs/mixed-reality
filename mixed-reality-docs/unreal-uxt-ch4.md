@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
 ---
 
-# 3. Making your scene interactive
+# 4. Making your scene interactive
 
 This section introduces you to the open source Mixed Reality Toolkit UX Tools plugin, which provides a set of tools to easily make your scene interactive. By the end of this section, your chess pieces will respond to user input. 
 
