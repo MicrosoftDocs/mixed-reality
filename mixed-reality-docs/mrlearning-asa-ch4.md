@@ -1,11 +1,11 @@
 ---
-title: Azure Spatial Anchors tutorials - 4. Getting started with Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Azure Spatial Anchors tutorials - 4. Azure Spatial Anchors for Android and iOS
+description: Complete this tutorial to learn how to implement Azure Spatial Anchors within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 05/18/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, course, hololens, azure, spatial anchors
 ms.localizationpriority: high
 ---
 
