@@ -51,6 +51,12 @@ The other option is to visit the [Online account sign up](https://account.altvr.
 
 If you run into any issues with Altspace, please check the [troubleshooting page](https://help.altvr.com/hc/en-us/sections/115000792634-Troubleshooting). If that doesn't solve the issue you are experinceing, please file a [support request](https://help.altvr.com/hc/en-us/requests/new).
 
+### Additional tips
+
+- If this is your first time using AltspaceVR, please give yourself time before the first event to go through the tutorial.
+- Optionally we recommend attending one of the AltspaceVR 101 events for more tips and tricks.
+- Favorite/Register Interest before the event to easily find it later in the client
+
 ---
 
 ## Schedule - Subject to change
@@ -75,7 +81,7 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 |2:30pm - 3:30pm|MRTK’s UX Building Blocks|Yoon Park|Deep dive on the MRTK’s UX components that help you build beautiful mixed reality experiences.|[RSVP Page](https://account.altvr.com/events/1475017558024257973)|
 |2:30pm - 3:30pm|MRTK Performance Tools|Kurtis Eveleigh|An introduction to performance tools, both in MRTK and external, as well as an overview of the MRTK Standard Shader.|[RSVP Page](https://account.altvr.com/events/1475019477857861856)|
 |3:30pm - 4:00pm|**Break**||||
-|4:00pm - 5:00pm|Closing Session|Ori Amiga & Matt Fleckenstein|||
+|4:00pm - 5:00pm|The State of Mixed Reality -- Where Companies are finding Success|Ori Amiga & Matt Fleckenstein||[RSVP Page](https://account.altvr.com/events/1475759753555608230)|
 ||||||
 
 ### May 22nd
