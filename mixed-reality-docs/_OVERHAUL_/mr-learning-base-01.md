@@ -18,36 +18,32 @@ ms.localizationpriority: high
 
 ## Overview
 <!-- TODO: update wording to match the tutorials -->
-Welcome to the first series of Hololens 2 tutorials. In this twelve-part series you will learn about some of the capabilities the <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"> Mixed Reality Toolkit (MRTK)</a> has to offer and the fundamentals of building an application for Hololens 2.
+<!-- TODO: Give overview of the application -->
+Welcome to the first of three series of Hololens 2 tutorials. In this twelve-part series you will learn about some of the capabilities the <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"> Mixed Reality Toolkit (MRTK)</a> has to offer and leverage the power it holds to build a RoverModule experience.
 
-<!-- TODO: Consider new format "In [leason-name](leason-link) tutorial, you will..."-->
-In the first tutorial [Initializing your project and first application](mr-learning-base-02.md), you will start your first application for the HoloLens 2, and deploy it to the device.
+In the next series [Azure Spatial Anchors tutorials](mr-learning-asa-01.md), we will cover the basics of ASA and leverage the power it holds to anchor our experience in the real world.
 
-In the second tutorial [Configure the Mixed Reality Toolkit](mr-learning-base-03.md), you will learn how to configure the MRTK profile giving greater flexibility in the applications you can create.
+In the last series [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will learn how to leverage the power of Photon and ASA to make a shared experience that updates in real time.
 
-In the third tutorial [Positioning objects in scene](mr-learning-base-04.md), you will learn about positioning 3D objects for Mixed Reality applications.
+Lessons covered in this series:
 
-In the forth tutorial [Scene understanding](mr-learning-base-05.md), you will learn the basics of scene understanding.
-
-In the fifth tutorial [Interacting with 3D objects](mr-learning-base-06.md), you will learn the different ways of interacting with 3D objects.
-
-In the sixth tutorial [Adding tooltips to scene](mr-learning-base-07.md), you will learn how to set up tooltips and how useful they are.
-
-In the seventh tutorial [Creating user interface](mr-learning-base-08.md), you will learn how to set up UI with MRTK assets or how to replace MRTK assets with your own.
-
-In the eighth tutorial [Using solvers](mr-learning-base-09.md), you will learn the massive potential of solvers and how to use them.
-
-In the Ninth tutorial [Using Voice Commands](mr-learning-base-10.md), you will learn how to set up custom voice commands.
-
-In the tenth tutorial [Using eye Tracking](mr-learning-base-11.md), you will learn how to use eye tracking.
-
-In the eleventh tutorial [Functionality to drive rover](mr-learning-base-12.md), you finalize the app you have been build to this point.
-
-In the twelfth tutorial [Build your application to a mobile device](mr-learning-base-13.md), you will learn how to build an MRTK project to a mobile device.
+* [Initializing your project and first application](mr-learning-base-02.md) - You will start your first application for the HoloLens 2, and deploy it to the device.
+* [Configure the Mixed Reality Toolkit](mr-learning-base-03.md) - You will learn how to configure the MRTK profile giving greater flexibility in the applications you can create.
+* [Positioning objects in scene](mr-learning-base-04.md) - You will learn about positioning 3D objects for Mixed Reality applications.
+* [Scene understanding](mr-learning-base-05.md) - You will learn the basics of scene understanding.
+* [Interacting with 3D objects](mr-learning-base-06.md) - You will learn the different ways of interacting with 3D objects.
+* [Adding tooltips to scene](mr-learning-base-07.md) - You will learn how to set up tooltips and how useful they are.
+* [Creating user interface](mr-learning-base-08.md) - You will learn how to set up UI with MRTK assets or how to replace MRTK assets with your own.
+* [Using solvers](mr-learning-base-09.md) - You will learn the massive potential of solvers and how to use them.
+* [Using Voice Commands](mr-learning-base-10.md) - You will learn how to set up custom voice commands.
+* [Using eye Tracking](mr-learning-base-11.md) - You will learn how to use eye tracking.
+* [Functionality to drive rover](mr-learning-base-12.md) - You will finalize the app you have been build to this point.
+* [Build your application to a mobile device](mr-learning-base-13.md) - You will learn how to build an MRTK project to a mobile device.
 
 ## Objectives
 
 <!-- TODO: Update to exact wording used in the following tutorials' Objectives section and add any missing objectives -->
+<!-- TODO: see if this list can be condensed -->
 * Configure Unity for HoloLens development
 * Import assets and set up the scene
 * Visualization of the spatial mapping mesh, hand meshes, and the framerate counter
@@ -81,5 +77,5 @@ In the twelfth tutorial [Build your application to a mobile device](mr-learning-
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
-
+<!-- TODO: Consider adding a 'What you will create' section with animations/images-->
 [Next lesson: 2. Initializing your project and first application](mr-learning-base-02.md)

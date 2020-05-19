@@ -20,16 +20,14 @@ ms.localizationpriority: high
 
 <!-- TODO: Consider removing 'Photon' from 'Photon PUN' as it is repeat (it was added for clarity) -->
 <!-- TODO: Consider change "Welcome to the third..." something like "This tutorial builds on the Getting started tutorial series and uses the RoverWhateverName prefab you created during those tutorials and also uses the same Azure resource that you created during the Azure Spatial Anchors tutorial series. You can continue building on the Unity project or etc..." -->
-Welcome to the third series of the HoloLens 2 tutorials. In this four-part tutorial series, you will learn the fundamentals of building a multi-user experience using Photon. Photon is one of several networking options available to mixed reality developers to create shared experiences.
+Welcome to the last of three series of HoloLens 2 tutorials. In this four-part tutorial series, you will learn the fundamentals of building a multi-user experience using Photon. Photon is one of several networking options available to mixed reality developers to create shared experiences. This tutorial uses the RoverModule_Complete prefab you created during the first series [Getting started tutorials](mr-learning-base-01.md) and the same Azure resource that you created during the second series [Azure Spatial Anchors tutorials](mr-learning-asa-01.md).
 
-<!-- TODO: For the following four paragraphs, consider changing to list so it's more like a table of content and easier to read -->
-<!-- TODO: For the following four paragraphs, consider removing reference to first, second, etc. since values won't match tutorial number -->In the first tutorial, [Setting up Photon Unity Networking](mr-learning-sharing-02.md), you will learn how to prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a Photon PUN application, import Photon PUN assets into your Unity project, and connect your Unity project to the Photon PUN application.
+Lessons in this series:
 
-In the second tutorial, [Connecting multiple users](mr-learning-sharing-03.md), you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
-
-In the third tutorial, [Sharing object movements with multiple users](mr-learning-sharing-04.md), you will learn how to share the movements of objects so that all participants of a shared experience can collaborate and view each others' interactions.
-
-In the fourth tutorial, [Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md), you will learn how to integrate Azure Spatial Anchors (ASA) into the shared experience. ASA allows multiple devices to have a common reference to the physical world so that the users see each other in their actual physical location and see the shared experience in the same place.
+* [Setting up Photon Unity Networking](mr-learning-sharing-02.md) - You will learn how to prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a Photon PUN application, import Photon PUN assets into your Unity project, and connect your Unity project to the Photon PUN application.
+* [Connecting multiple users](mr-learning-sharing-03.md) - You will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
+* [Sharing object movements with multiple users](mr-learning-sharing-04.md) - You will learn how to share the movements of objects so that all participants of a shared experience can collaborate and view each others' interactions.
+* [Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md) - You will learn how to integrate Azure Spatial Anchors (ASA) into the shared experience. ASA allows multiple devices to have a common reference to the physical world so that the users see each other in their actual physical location and see the shared experience in the same place.
 
 ## Objectives
 
