@@ -15,9 +15,9 @@ ms.localizationpriority: high
 
   Welcome to the second series of the HoloLens 2 tutorials. In this two-part tutorial series, you will learn how to create a Mixed Reality experience demonstration and how to create a PC app for Holographic Remoting.
 
-  In the first tutorial, [Create Mixed Reality experience](mr-learning-appx-ch1.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features.
+  In the first tutorial, [Create Mixed Reality experience](mr-learning-appx-01.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features.
 
-  In the second tutorial, [Create Holographic Remoting application](mr-learning-appx-ch2.md), you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
+  In the second tutorial, [Create Holographic Remoting application](mr-learning-appx-02.md), you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
 
 ## Objectives
 
@@ -189,4 +189,4 @@ In this tutorial, you learned to build a Mixed Reality experience demonstrating 
 
 In the next lesson, you will learn how to create a Holographic Remoting application for PC to connect HoloLens 2 at any point, providing a way to Visualize 3D content in Mixed reality.
 
-[Next Lesson: 2. Create Holographic Remoting application](mr-learning-appx-ch2.md)
+[Next Lesson: 2. Create Holographic Remoting application](mr-learning-appx-02.md)
