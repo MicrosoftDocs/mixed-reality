@@ -6,5 +6,6 @@ _themes*/
 _repo.*/
 
 .vscode
+.DS_Store
 
 .openpublishing.buildcore.ps1

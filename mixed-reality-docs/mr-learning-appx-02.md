@@ -25,7 +25,7 @@ In this section, you will be configuring your project to stream your Mixed Reali
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and select-and-drag **HolographicRemoting** prefab into your scene.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section1-Step1-1.png)
+![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section1-Step1-1.png)
 
 With the HolographicRemoting object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
@@ -35,7 +35,7 @@ Note: Apart from the **Player Settings** mentioned in the instructions, make the
 
 ### 1. Select the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section2-Step1-1.png)
+![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-1.png)
 
 ### 2. Configuring Visual Studio for PC with the below settings:
 
@@ -43,7 +43,7 @@ Note: Apart from the **Player Settings** mentioned in the instructions, make the
 * Select **X64** architecture instead of ARM
 * Select **Local Machine** as the target instead of Device
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section2-Step1-3.png)
+![mrlearning-appx](images/mrlearning-appx/Tutorial2-Section2-Step1-3.png)
 
 ## How to test the Holographic Remoting remote application:
 
