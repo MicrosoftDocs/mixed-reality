@@ -28,7 +28,7 @@ ms.localizationpriority: high
 
 ## Prerequisites
 
->[!TIP] If you have not completed the [Getting started tutorials](mr-learning-base.md) series yet, its recommended that you complete those tutorials first.
+>[!TIP] If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, its recommended that you complete those tutorials first.
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
@@ -43,7 +43,7 @@ ms.localizationpriority: high
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and first application](mr-learning-base-ch1.md), excluding the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions, which includes the following steps:
+For this, first follow the [Initializing your project and first application](mrlearning-base-ch1.md), excluding the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions, which includes the following steps:
 
 1. [Create a new Unity project](mrlearning-base-ch1.md#create-new-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
 
