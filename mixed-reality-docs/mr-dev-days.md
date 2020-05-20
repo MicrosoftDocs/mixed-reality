@@ -66,11 +66,15 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 
 **All times are Pacific Daylight Time** 
 
+### Networking space
+
+We have a networking space that will be opening after the Keynote on day one, and after the Fireside chat on day two and will remain open until 4pm Pacific time each day. If you would like the "RSVP" for this space, you can do so [here](https://account.altvr.com/events/1472955760198550135). The idea of the networking space is similar to the "hallway track" at a physical conference.  A place to meet up with fellow developers, designers, enthusiasts, and even Microsoft staff.
+
 ### May 21st
 ||||||
 |---------|---------|---------|---------|---------|
 |__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
-|9:30am - 10:30am|Opening Keynote|Alex Kipman||[RSVP Page](https://account.altvr.com/events/1475172303389065242)|
+|9:30am - 10:30am|Opening Keynote|Alex Kipman|Come join us as Alex Kipman starts our first ever virtual Mixed Reality Dev Days event. If you are using a VR headset we encourage you to join us in AltspaceVR, and if you are joining from a computer, please check out our livestream at [https://aka.ms/MRDDKeynote](https://aka.ms/MRDDKeynote)|[RSVP Page](https://account.altvr.com/events/1475172303389065242)|
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons, Christopher Manthei, and Marc Appelsmeier|Azure Remote Rendering just entered public preview.  Learn how you can use ARR to render interactive 3D models with hundreds of millions of polygons and stream them to devices like HoloLens 2 in real-time.|[RSVP Page](https://account.altvr.com/events/1475002657985790153)|
 |11:00am - 12:00pm|Intro to Unreal + MRTK for HoloLens 2|Summer Wu & Luis Valverde|Unreal Engine support for HoloLens 2 reached production-ready status with the release of UE 4.25 in May! Alongside UE 4.25, in response to the top ask we've been hearing from developers since Unreal's HoloLens support first shipped in preview, our team released the first component of the Mixed Reality Toolkit for Unreal: UX Tools 0.8. In this talk, we'll provide an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.|[RSVP Page](https://account.altvr.com/events/1475006046102618860)|
@@ -84,7 +88,7 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 |2:30pm - 3:30pm|MRTK’s UX Building Blocks|Yoon Park|Deep dive on the MRTK’s UX components that help you build beautiful mixed reality experiences.|[RSVP Page](https://account.altvr.com/events/1475017558024257973)|
 |2:30pm - 3:30pm|MRTK Performance Tools|Kurtis Eveleigh & David Kline|An introduction to performance tools, both in MRTK and external, as well as an overview of the MRTK Standard Shader.|[RSVP Page](https://account.altvr.com/events/1475019477857861856)|
 |3:30pm - 4:00pm|**Break**||||
-|4:00pm - 5:00pm|The State of Mixed Reality -- Where Companies are finding Success|Ori Amiga & Matt Fleckenstein||[RSVP Page](https://account.altvr.com/events/1475759753555608230)|
+|4:00pm - 5:00pm|The State of Mixed Reality -- Where Companies are finding Success|Ori Amiga & Matt Fleckenstein|Ultra-low latency edge computing, coupled with AI and mixed reality, is the foundation for the next generation of experiences. By blending the digital and the physical worlds into ubiquitous computing experiences, mixed reality is enabling possibilities we could have only dreamed of previously. In this session, Ori and Matt will provide unique insight into the mixed reality market opportunity today and in the future. They will highlight how Microsoft is helping leading enterprises in manufacturing, health care and retail harness the power of mixed reality to drive business efficiency and transform customer and employee experiences.|[RSVP Page](https://account.altvr.com/events/1475759753555608230)|
 ||||||
 
 ### May 22nd
