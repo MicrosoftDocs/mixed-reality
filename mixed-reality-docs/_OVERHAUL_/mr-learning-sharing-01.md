@@ -22,7 +22,7 @@ ms.localizationpriority: high
 <!-- TODO: Consider change "Welcome to the third..." something like "This tutorial builds on the Getting started tutorial series and uses the RoverWhateverName prefab you created during those tutorials and also uses the same Azure resource that you created during the Azure Spatial Anchors tutorial series. You can continue building on the Unity project or etc..." -->
 Welcome to the last of three series of HoloLens 2 tutorials. In this four-part tutorial series, you will learn the fundamentals of building a multi-user experience using Photon. Photon is one of several networking options available to mixed reality developers to create shared experiences. This tutorial uses the RoverModule_Complete prefab you created during the first series [Getting started tutorials](mr-learning-base-01.md) and the same Azure resource that you created during the second series [Azure Spatial Anchors tutorials](mr-learning-asa-01.md).
 
-Lessons in this series:
+Tutorials in this series:
 
 * [Setting up Photon Unity Networking](mr-learning-sharing-02.md) - You will learn how to prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a Photon PUN application, import Photon PUN assets into your Unity project, and connect your Unity project to the Photon PUN application.
 * [Connecting multiple users](mr-learning-sharing-03.md) - You will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.

@@ -23,7 +23,7 @@ Welcome to the second of three series of HoloLens 2 tutorials. In this four-part
 
 In the next series [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will learn how to leverage the power of Photon and ASA to make a shared experience that updates in real time.
 
-Lessons in this series:
+Tutorials in this series:
 
 * [Getting started with Azure Spatial Anchors](mr-learning-asa-02.md) - You will explore the various steps required to start and stop an Azure session and create, upload, and download Azure anchors on a single device.
 * [Saving, retrieving, and sharing Azure Spatial Anchors](mr-learning-asa-03.md) - You will learn how to save Azure Spatial Anchors across multiple app sessions by saving anchor information to the HoloLens 2's storage and how to share this anchor information to other devices for a multi-device anchor alignment.

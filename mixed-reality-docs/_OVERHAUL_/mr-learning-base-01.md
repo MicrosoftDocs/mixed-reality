@@ -25,7 +25,7 @@ In the next series [Azure Spatial Anchors tutorials](mr-learning-asa-01.md), we 
 
 In the last series [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will learn how to leverage the power of Photon and ASA to make a shared experience that updates in real time.
 
-Lessons covered in this series:
+Tutorials in this series:
 
 * [Initializing your project and first application](mr-learning-base-02.md) - You will start your first application for the HoloLens 2, and deploy it to the device.
 * [Configure the Mixed Reality Toolkit](mr-learning-base-03.md) - You will learn how to configure the MRTK profile giving greater flexibility in the applications you can create.
