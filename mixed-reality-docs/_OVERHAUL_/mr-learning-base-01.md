@@ -19,6 +19,7 @@ ms.localizationpriority: high
 ## Overview
 <!-- TODO: update wording to match the tutorials -->
 <!-- TODO: Give overview of the application -->
+<!-- TODO: Consider moving info about the other tutorial series to [!TIP] -->
 Welcome to the first of three series of Hololens 2 tutorials. In this twelve-part series you will learn about some of the capabilities the <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"> Mixed Reality Toolkit (MRTK)</a> has to offer and leverage the power it holds to build a RoverModule experience.
 
 In the next series [Azure Spatial Anchors tutorials](mr-learning-asa-01.md), we will cover the basics of ASA and leverage the power it holds to anchor our experience in the real world.
