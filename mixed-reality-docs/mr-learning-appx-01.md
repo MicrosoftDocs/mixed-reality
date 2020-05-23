@@ -135,7 +135,7 @@ For demonstration, we have provided five different 3D models, expand the ModelPa
 
 With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand the **Models** variable.
 
-In the Size field, enter the number of 3D models you would like to have in your scene. In this case, it would be five. It will create fields for adding new 3D models. Drag-and-drop the ModelParent object's child model objects into these fields:
+In the **Size** field, enter the number of 3D models you would like to have in your scene. In this case, it would be five. It will create fields for adding new 3D models. Drag-and-drop the ModelParent object's child model objects into these fields:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-1.png)
 
