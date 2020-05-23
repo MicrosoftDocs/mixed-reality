@@ -13,9 +13,9 @@ ms.localizationpriority: high
 
 ## Overview
 
-  Welcome to the second series of the HoloLens 2 tutorials. In this two-part tutorial series, you will learn how to create a Mixed Reality experience demonstration and how to create a PC app for Holographic Remoting.
+  Welcome to the HoloLens 2 tutorials. In this two-part tutorial series, you will learn how to create a Mixed Reality experience demonstration and how to create a PC app for Holographic Remoting.
 
-  In the first tutorial, [Create Mixed Reality experience](mr-learning-appx-01.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features.
+  In this tutorial, [Create Mixed Reality experience](mr-learning-appx-01.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features.
 
   In the second tutorial, [Create Holographic Remoting application](mr-learning-appx-02.md), you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
 
@@ -23,18 +23,17 @@ ms.localizationpriority: high
 
 * Import assets and set up the scene
 * Interact with holograms using UI elements and buttons
-* Configure 3D objects for the clipping feature.
-* Learn about eye tracking target select and highlight tooltips.
+* Configure 3D objects for the clipping feature
+* Learn about eye tracking target select and highlight tooltips
 
 ## Prerequisites
 
->[!TIP] If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, its recommended that you complete those tutorials first.
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
-* Windows 10 SDK 10.0.18362.0 or later
 * Some essential C# programming ability
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added
+* Completed the Getting started tutorials series or some basic prior experience with Unity and MRTK
 
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.3.X. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
@@ -74,7 +73,14 @@ After importing the tutorial assets, your Project window should look similar to 
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent**, **ClippingObjects**, **ModelParent**, **Instructions**, **HandSpatialMapButton,** and **Platform** to select the six prefabs:
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button. Click on 
+**ButtonParent**
+**ClippingObjects** 
+**ModelParent**
+**Instructions** 
+**HandSpatialMapButton** 
+**Platform** 
+to select the six prefabs:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section3-Step1-1.png)
 
@@ -95,61 +101,61 @@ In this section, you will add scripts into the scene to create button events tha
 
 ### 1. Configuring the Interactable (Script) component
 
-In the Hierarchy window, select the ButtonParent object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the scene and another **Toggle Button (Script)** to enable and disable the ClippingObjects object.
+In the Hierarchy window, select the **ButtonParent** object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the scene and another **Toggle Button (Script)** to enable and disable the ClippingObjects object.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-1.png)
 
-Now the scripts are attached to the ButtonParent object, and it is time to Configuring **NextButton, PreviousButton,** and **ClippingButton.**
+Now the scripts are attached to the **ButtonParent** object, and it is time to configuring **NextButton, PreviousButton,** and **ClippingButton.**
 
-In the Hierarchy window, expand the ButtonParent object and select the next button. In the Inspector window, locate the **Interactable (Script)** component and add a new event listener to the **OnClick()** event by clicking the **+** icon:
+In the Hierarchy window, expand the ButtonParent object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and add with **OnClick()** event by clicking the + icon:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-2.png)
 
-With the next button object still selected in the Hierarchy window, click-and-drag the ButtonParent object from the Hierarchy window into the empty **None (Object)** field of the event listener you just added to make the ButtonParent object listen for button click events from this button:
+With the **NextButton** object still selected in the Hierarchy window, click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for button click events from this button:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-3.png)
 
-Click the **No Function** dropdown of the same event listener, then select **ViewButtonControl** > **NextModel ()** to set the **NextModel ()** function as the action that is triggered when the button pressed events is fired from this button:
+Click the **No Function** dropdown of the same event, then select **ViewButtonControl** > **NextModel ()** to set the **NextModel ()** function as the action that is triggered when the button pressed events is fired from this button:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-4.png)
 
 ### 2. Configuring the remaining buttons
 
-For each of the remaining buttons, complete the process outlined above to assign functions to **OnClick ()** events:
+For each of the remaining buttons, complete the process outlined above to assign functions to the **OnClick ()** events:
 
 * For PreviousButton object, assign the **ViewButtonContro**l > **PreviousModel ()** function.
 
 * For ClippingButton select **ToggleButton** > **ToggleClipping ()** function.
 
-### 3. Configuring the View Button Control (Script)  and Toggle Button (Script) component
+### 3. Configuring the View Button Control (Script)  and Toggle Button (Script) components
 
 Now your buttons are configured to demonstrate the model switching and clipping functionality, and it is time to add 3D models and the clipping objects to the script.
 
-For demonstration, we have provided five different 3D models, expand ModelParent object to find these 3D models.
+For demonstration, we have provided five different 3D models, expand the ModelParent object to expose these 3D models.
 
 With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand the **Models** variable.
 
-Enter the number of 3D models you would like to have on your scene. In this case, it would be five. It will create placeholders for adding new 3D models. Drag-and-drop ModelParent Object's child model objects into these placeholders.
+In the Size field, enter the number of 3D models you would like to have in your scene. In this case, it would be five. It will create fields for adding new 3D models. Drag-and-drop the ModelParent object's child model objects into these fields:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-1.png)
 
-Drag-and-drop **ClippingObjects** object from the Hierarchy window to **Toggle Button (Script)** component empty field.
+Drag-and-drop the  **ClippingObjects** object from the Hierarchy window to the  **Toggle Button (Script)** component empty field.
 
-Note: In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects.
+![Note]: In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-2.png)
 
 ## Configuring the clipping objects to enable clipping feature
 
-In this section, you will add **MarsCuriosityRover** object's child objects renderer into an individual clipping object to demonstrate the clipping of MarsCuriosityRover.
+In this section, you will add MarsCuriosityRover object's child objects renderer into an individual clipping object to demonstrate the clipping of MarsCuriosityRover.
 
-In the Hierarchy window, expand the ClippingObjects object and find three different clipping objects that will be using in the project.
+In the Hierarchy window, expand the ClippingObjects object to expose the three different clipping objects that you will be using in this project.
 
-To Configuring the **ClippingSphere** Object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create placeholders for adding renderers, Drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
+To configuring the **ClippingSphere** object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section5-Step1-1.png)
 
-Follow the same steps and add MarsCuriosityRover 's child objects renderers to the **ClippingBox** and **ClippingPlane** objects.
+Follow the same steps and add MarsCuriosityRover's child objects renderers to the **ClippingBox** and **ClippingPlane** objects.
 
 In this tutorial, only the MarsCuriosityRover model will be used for demonstrating the clipping feature. You can follow the same steps and add a clipping feature for the rest of the models.
 
@@ -159,9 +165,9 @@ In this section, you will explore how to enable eye tracking in your project. Fo
 
 ### 1. Identify target objects and associated tooltips
 
-In the Hierarchy window, select ModelParent object and expand MarsCuriosityRover to find five main parts of the MarsCuriosityRover: POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna.
+In the Hierarchy window, select the ModelParent object and expand the MarsCuriosityRover to find five main parts of the MarsCuriosityRover: POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna.
 
-Notice five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. You will be Configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
+Notice five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step1-1.png)
 
@@ -179,13 +185,13 @@ Follow the similar step and click the **No Function** dropdown of the On Look Aw
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-3.png)
 
-Follow the same process and assign respective tooltip objects to their similar **MarsCuriocityRover** parts While Looking At Target () & On Look Away () events.
+Follow the same process and assign respective tooltip objects to their same **MarsCuriocityRover** parts While Looking At Target () & On Look Away () events.
 
 To enable simulated eye tracking for in-editor simulations, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
 
 ## Congratulations
 
-In this tutorial, you learned to build a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features. The tutorial provided you with NextButton and PreviousButton that let you explore the 3D model viewer experience. The ClippingObjectButton made you turn on clipping objects and experience clipping feature. The tutorial also provided you with an eye tracking element to enable highlighting the tooltips in the experience.
+In this tutorial, you learned to build a mixed reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features. The tutorial provided you with NextButton and PreviousButton that let you explore the 3D model viewer experience. The ClippingObjectButton made you turn on clipping objects and experience clipping feature. The tutorial also provided you with an eye tracking element to enable highlighting the tooltips in the experience.
 
 In the next lesson, you will learn how to create a Holographic Remoting application for PC to connect HoloLens 2 at any point, providing a way to Visualize 3D content in Mixed reality.
 
