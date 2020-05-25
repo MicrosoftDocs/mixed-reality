@@ -11,13 +11,13 @@ ms.localizationpriority: high
 
 # 2. Creating a PC app for Holographic Remoting application
 
-In this tutorial, you will learn how to create a PC app for holographic remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
+In this tutorial, you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
 
 ## Objectives
 
 * Configure Unity for Holographic Remoting
 * Learn how to build and deploy the application with Visual Studio
-* To develop an app using the Holographic Remoting application and connecting to HoloLens
+* Developing Holographic Remoting application and connecting to HoloLens
 
 ## Configuring your scene for Holographic Remoting
 
@@ -29,21 +29,23 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AppXHologra
 
 With the HolographicRemoting object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
-Now your Holographic Remoting app is ready, follow these instructions to [build it to your PC][Import the Mixed Reality Toolkit instructions](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device).
+Now your Holographic Remoting app is ready, follow these instructions to [build your application to your PC](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device).
 
-![Note]: Apart from the **Player Settings** mentioned in the instructions, make the following changes that are specific for the Holographic Remoting application.
+![Note]: Apart from the **Player Settings** mentioned in the above instructions, make the following changes that are specific for the Holographic Remoting application.
 
 ### 1. Check the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section2-Step1-1.png)
 
-### 2. Deploying Visual Studio for PC with the below settings
+### 2. Configuring Visual Studio for PC with the below settings
 
 * Select the  **Release** configuration instead of debugging
-* Select **X64** 
+* Select **X64** architecture
 * Select **Local Machine** as the target instead of Device
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section2-Step1-3.png)
+
+Once the build process is complete, your Holographic Remoting app will be installed by default on your PC.
 
 ## How to test the Holographic Remoting remote application
 
@@ -51,7 +53,7 @@ To connect your Holographic Remoting PC application to your HoloLens 2, follow t
 
 ### 1. Install the Remoting Player application on HoloLens 2 device
 
-* On your HoloLens, visit the Store app and search for "**Remoting Player**".
+* On your HoloLens 2, visit the Store app and search for "**Remoting Player**".
 * Select the **Remoting Player** app.
 * Tap **Install** to download and install the app.
 

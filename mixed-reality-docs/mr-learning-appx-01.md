@@ -28,7 +28,6 @@ ms.localizationpriority: high
 
 ## Prerequisites
 
-
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
 * Some essential C# programming ability
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
@@ -73,14 +72,13 @@ After importing the tutorial assets, your Project window should look similar to 
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button. Click on 
-**ButtonParent**
-**ClippingObjects** 
-**ModelParent**
-**Instructions** 
-**HandSpatialMapButton** 
-**Platform** 
-to select the six prefabs:
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.HolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button. Click on the below six prefabs. 
+* ButtonParent
+* ClippingObjects
+* ModelParent
+* Instructions
+* HandSpatialMapButton
+* Platform
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section3-Step1-1.png)
 
@@ -105,9 +103,7 @@ In the Hierarchy window, select the **ButtonParent** object and in the Inspector
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-1.png)
 
-Now the scripts are attached to the **ButtonParent** object, and it is time to configuring **NextButton, PreviousButton,** and **ClippingButton.**
-
-In the Hierarchy window, expand the ButtonParent object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and add with **OnClick()** event by clicking the + icon:
+In the Hierarchy window, expand the ButtonParent object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and click on **+** icon under **OnClick()** event.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-2.png)
 
@@ -139,9 +135,9 @@ In the **Size** field, enter the number of 3D models you would like to have in y
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-1.png)
 
-Drag-and-drop the  **ClippingObjects** object from the Hierarchy window to the  **Toggle Button (Script)** component empty field.
+Drag-and-drop the  **ClippingObjects** object from the Hierarchy window to the  **Toggle Button (Script)** component **Clipping Object** field.
 
-![Note]: In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects:
+![Note]: In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-2.png)
 
@@ -149,15 +145,15 @@ Drag-and-drop the  **ClippingObjects** object from the Hierarchy window to the  
 
 In this section, you will add MarsCuriosityRover object's child objects renderer into an individual clipping object to demonstrate the clipping of MarsCuriosityRover.
 
-In the Hierarchy window, expand the ClippingObjects object to expose the three different clipping objects that you will be using in this project.
+In the Hierarchy window, expand the **ClippingObjects** object to expose the three different clipping objects that you will be using in this project.
 
-To configuring the **ClippingSphere** object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create placeholders for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these placeholders.
+To configuring the **ClippingSphere** object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers in size field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these fields.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section5-Step1-1.png)
 
-Follow the same steps and add MarsCuriosityRover's child objects renderers to the **ClippingBox** and **ClippingPlane** objects.
+Follow the same process and add MarsCuriosityRover's child objects renderers to the **ClippingBox** and **ClippingPlane** objects.
 
-In this tutorial, only the MarsCuriosityRover model will be used for demonstrating the clipping feature. You can follow the same steps and add a clipping feature for the rest of the models.
+In this tutorial, only the MarsCuriosityRover model will be used for demonstrating the clipping feature. For adding clipping features to more models, increase the size of the renderer, and add individual mesh renderers.
 
 ## Configuring eye tracking to highlight tooltips
 
@@ -173,15 +169,14 @@ Notice five corresponding tooltip objects associated with MarsCuriosityRover par
 
 ### 2. Implement While Looking At Target ()  &  On Look Away () events
 
-In the Hierarchy window, expand the **MarsCuriosityRover's** object and select the POI-Camera object. In the Inspector window, locate the **Eye Tracking Target (Script)** component and find **POI-Camera ToolTip** and click-and-drag the object from the Hierarchy window into the empty **None(Object)** field of **While Looking At Target ()** & **On Look Away ()** events.
+In the Hierarchy window, expand the **MarsCuriosityRover's** object and select the POI-Camera object. In the Inspector window, locate the **Eye Tracking Target (Script)** component and configure the **While Looking At Target ()** & **On Look Away ()** events as follows:
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-1.png)
-
-Click the **No Function** dropdown of While Looking At Target () event listener, select **GameObject** > **SetActive (bool),** select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
+* To **None (Object)** field, assign the **POI-Camera ToolTip** object
+* From **No Function** dropdown of While Looking At Target () event, select **GameObject** > **SetActive (bool),** select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-2.png)
 
-Follow the similar step and click the **No Function** dropdown of the On Look Away () event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action, that is triggered when you look away from the target object.
+Follow the same process and click on the **No Function** dropdown of the On Look Away () event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action, that is triggered when you look away from the target object.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-3.png)
 
