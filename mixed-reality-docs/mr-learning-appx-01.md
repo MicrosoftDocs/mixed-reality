@@ -1,5 +1,5 @@
 ---
-title: Standalone Holographic Remoting tutorials - 1. Getting started with Standalone Holographic Remoting
+title: PC Holographic Remoting tutorials - 1. Getting started with PC Holographic Remoting
 description: Complete this course to learn how to remote mixed reality experience form your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 1. Getting started with Standalone Holographic Remoting
+# 1. Getting started with PC Holographic Remoting
 
 ## Overview
 
