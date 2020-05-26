@@ -1,34 +1,52 @@
 ---
-title: Unreal development overview
+title: Unreal Development Overview
 description: Overview of mixed reality development using Unreal Engine 4
 author: sw5813
 ms.author: suwu
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
 ---
-# Unreal development overview
+# Unreal Development Overview
 
-Unreal Engine 4 now fully supports development for both Windows Mixed Reality (VR) and HoloLens 2 (AR) devices! If you're new to Unreal development, <a href="https://docs.unrealengine.com//GettingStarted/index.html" target="_blank">Getting Started with Unreal Engine 4</a> is a great page to explore. If you need assets, Unreal has a comprehensive <a href="https://www.unrealengine.com/marketplace//store" target="_blank">Marketplace</a>. 
+Getting started with <a href="https://docs.microsoft.com/en-us/windows/mixed-reality" target="_blank"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Support for <a href="https://www.microsoft.com/en-us/windows/windows-mixed-reality" target="_blank">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/en-us/hololens/hardware" target="_blank">HoloLens 2</a> (AR) is now included in Unreal Engine's newest <a href="https://docs.unrealengine.com/en-US/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank">release</a>. This update includes:
+* Mixed Reality UX Tools plugin support
+* OpenXR support
+* App Remoting from a desktop app
+* Better performance
+* Mixed reality capture
+* Initial support for Azure Spatial Anchors.
 
-Once you've gained a basic understanding of Unreal development, check out the tutorial in the next section to learn how to build and run your apps on HoloLens. Be sure to visit the <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">Unreal Mixed Reality forums</a> to engage with the community building mixed reality apps in Unreal. It's a great place to find solutions to problems you run into.
-
-## Tutorial
-
-Learn how to [build and deploy a simple chess app](unreal-uxt-ch1.md) for HoloLens 2 by following our end-to-end tutorial. This tutorial uses the UX Tools plugin to accelerate developing apps with interactive UX components including a button and a manipulator. For more information about UX Tools plugin, see the next section on MRTK. 
+If you're new to Unreal development don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com//GettingStarted/index.html" target="_blank">tutorial series</a> to get up to speed and look for assets and support in the Unreal <a href="https://www.unrealengine.com/marketplace//store" target="_blank">marketplace</a> and mixed reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in todays mixed reality market.
 
 ## Mixed Reality Toolkit for Unreal
 
-The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) is a set of components, in the form of plugins, samples, and documentation, designed to accelerate the development of mixed reality applications using the Unreal Engine. The first component released as part of this toolkit is the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal), a plugin that can be added to your HoloLens 2 project to provide UX features for HoloLens 2 applications. Documentation for the Mixed Reality Toolkit and UX Tools for Unreal can be found in their respective GitHub repositories. 
+The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) is a set of components designed to speed up your development in Unreal. Each component includes plugins, samples, and documentation for setting up immersive experiences. 
+
+[UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) is the first component to be released and is currently only supported on HoloLens 2. The component plugin includes code, blueprints, and example assets of common UX features including:
+* Input simulation
+* Hand interaction actor
+* Pressable button component
+* Manipulator component
+* Follow behavior component
+
+You can dive into the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) GitHub repository for feature details and information on setting up your project.
+
+## Tutorial
+
+Building something with your own two hands is the best way to learn a new skill. Learning how to [build and deploy a simple chess app](unreal-uxt-ch1.md) for HoloLens 2 with the UX Tools plugin is a great way to start. 
+
+The end-to-end tutorial series provides hands-on contact with common interactive UX components and scenarios. You'll work through the project setup, adding interactions to the scene, and deploying to a device or emulator. All you need is Windows 10, an emulator, and Visual Studio 2019.
+
 
 ## Performance
 
-A HoloLens 2 app must run at 60 frames per second for holograms to appear stable and responsive. To achieve this in your app, we highly recommend following our [performance recommendations for Unreal](performance-recommendations-for-unreal.md). 
+Developing for mixed reality comes with performance checkpoints that depend on the platform. A HoloLens 2 app must run at 60 frames per second for holograms to appear stable and responsive. Luckily, Unreal provides [performance recommendations](performance-recommendations-for-unreal.md) for achieving this in your applications.
 
 ## Guides to specific features
 
-To learn how to use specific features in Unreal, check out the below guides: 
+There are several key features of mixed reality development that our tutorial series doesn't cover. Check out the following guides for details and practical applications: 
 * [Hand tracking](unreal-hand-tracking.md)
 * [Eye tracking](unreal-gaze-input.md)
 * [Spatial mapping](unreal-spatial-mapping.md)
@@ -36,6 +54,7 @@ To learn how to use specific features in Unreal, check out the below guides:
 * [Voice input](unreal-voice-input.md)
 * [HoloLens camera](unreal-hololens-camera.md)
 * [QR codes](unreal-qr-codes.md)
+
 
 ## Supported Features
 
