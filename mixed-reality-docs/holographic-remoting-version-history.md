@@ -13,6 +13,12 @@ keywords: HoloLens, Remoting, Holographic Remoting
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.1.3 (May 25, 2020) <a name="v2.1.3"></a>
+* Changed behavior of [HolographicSpace.CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded?view=winrt-18362) event. In previous versions it was **not** guaranteed that an added [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera?view=winrt-18362) also has a valid [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose?view=winrt-18362) when creating the next frame via [HolographicSpace.CreateNextFrame](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe?view=winrt-18362#Windows_Graphics_Holographic_HolographicSpace_CreateNextFrame). Starting with version 2.1.3 [HolographicSpace.CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded?view=winrt-18362) is synchronized with pose data coming from the Holographic Remoting Player and users can expect that when a camera is added there is also a valid [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose?view=winrt-18362) available for that camera on the the next frame.
+* Added **Disabled** to DepthBufferStreamResolution which can be used to disable depth buffer streaming via RemoteContext.ConfigureDepthVideoStream. Note, if used [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer?view=winrt-18362#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) will fail with *E_ILLEGAL_METHOD_CALL*.
+* The Holographic Remoting Player's startup screen has been re-designed and now does not block the users view.
+* Stability improvements and buf fixes.
+
 ## Version 2.1.2 (April 5, 2020) <a name="v2.1.2"></a>
 * Fixed audio backwards compatibility issue between latest Holographic Remoting player and remote apps using version smaller than 2.1.0.
 * Fixed spatial anchor issue which unexpectedly closed the Holographic Remoting player. This issue also affects custom players.
