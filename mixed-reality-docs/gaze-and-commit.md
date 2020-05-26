@@ -145,7 +145,7 @@ This is known as the commit step of the input model.
 The following commit methods are supported:
 - Air tap hand gesture (i.e., raise your hand in front of you and bring together your index finger and thumb)
 - Say _"select"_ or one of the targeted voice commands
-- Press a single button on a [HoloLens Clicker](hardware-accessories.md#hololens-clicker)
+- Press a single button on a [HoloLens Clicker](https://docs.microsoft.com/hololens/hololens1-clicker)
 - Press the 'A' button on an Xbox gamepad
 - Press the 'A' button on an Xbox adaptive controller
 
