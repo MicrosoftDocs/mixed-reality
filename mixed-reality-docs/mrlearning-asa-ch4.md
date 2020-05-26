@@ -19,7 +19,7 @@ In this tutorial, you will learn how to build your project to Android and iOS de
 * Learn how to build your project to Android device using Unity AR Foundation and ARCore XR Plugin.
 * Learn how to build your project to an iOS device using Unity AR Foundation and ARKit XR Plugin.
 
-[!NOTE] To complete this tutorial, make sure you have completed Azure Spatial Anchors Tutorials -> [Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md).
+> [!NOTE] To complete this tutorial, make sure you have completed Azure Spatial Anchors Tutorials -> [Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md).
 
 ## Adding inbuilt Unity packages
 
@@ -31,7 +31,7 @@ Make sure you install the correct version of these Unity packages as listed belo
 * **ARCore XR plugin 2.2.0 preview 2**
 * **ARKit XR plugin 2.1.1**
 
-[!NOTE] If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
+> [!NOTE] If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
 
 In the Unity menu, select **Window** > **Package Manager**:
 
