@@ -18,10 +18,10 @@ To update to the latest release on PC for Windows Mixed Reality immersive (VR) h
 
 **Latest release for Desktop**: Windows 10 v2004 (10.0.19041.264)
 
-# Updates for Windows Mixed Reality immersive headsets
+## Updates for Windows Mixed Reality immersive headsets
 
 ### Introducing the new Microsoft Edge
-As [previously announced](https://docs.microsoft.com/en-us/windows/mixed-reality/new-microsoft-edge), we've made updates to better support using the new Microsoft Edge browser in Windows Mixed Reality. The new Microsoft Edge adopts the Chromium open source project to create better web compatibility for customers and less fragmentation of the web for all web developers. It also supports WebXR, the new standard for creating immersive web experiences for VR headsets, in place of WebVR.
+As [previously announced](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge), we've made updates to better support using the new Microsoft Edge browser in Windows Mixed Reality. The new Microsoft Edge adopts the Chromium open source project to create better web compatibility for customers and less fragmentation of the web for all web developers. It also supports WebXR, the new standard for creating immersive web experiences for VR headsets, in place of WebVR.
 
 ### Improved Settings for WMR
 Thanks to your feedback, we've added and clarified settings on the Headset display page:
