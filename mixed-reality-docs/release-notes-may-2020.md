@@ -16,7 +16,7 @@ The **Windows 10 May 2020 Update (v2004)** includes new features for Windows Mix
 
 To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the **Windows 10 May 2020 Update** using the [Windows media creation tool](https://www.microsoft.com/software-download/windows10).
 
-**Latest release for Desktop**: Windows 10 v2004 (19041.264)
+**Latest release for Desktop**: Windows 10 v2004 (10.0.19041.264)
 
 # Updates for Windows Mixed Reality immersive headsets
 
