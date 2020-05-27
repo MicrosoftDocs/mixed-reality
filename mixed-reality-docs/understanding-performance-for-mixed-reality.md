@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Perform
 
 # Understanding performance for mixed reality
 
-This article is an introduction to understanding the significance of performance for your Mixed Reality app.  User experience can be greatly degraded if your application does not run at optimal frame rate. Holograms will appear unstable and head tracking of the environment will be inaccurate, leading to an poor experience for the user. Performance must be considered a first class feature for mixed reality development and not a polish task.
+This article is an introduction to understanding the significance of performance for your Mixed Reality app.  User experience can be greatly degraded if your application does not run at optimal frame rate. Holograms will appear unstable and head tracking of the environment will be inaccurate, leading to a poor experience for the user. Performance must be considered a first class feature for mixed reality development and not a polish task.
 
 The performant framerate values for each target platform are listed below.
 
