@@ -23,7 +23,7 @@ In this tutorial, you will learn how to build your project to Android and iOS de
 
 ## Adding inbuilt Unity packages
 
-In this section, you will install Unity's inbuilt AR Foundation, ARCore XR Plugin, and ARKit XR Plugin packages required to support Android and iOS devices.
+In this section, you will install Unity inbuilt AR Foundation, ARCore XR Plugin, and ARKit XR Plugin packages required to support Android and iOS devices.
 
 Make sure you install the correct version of these Unity packages as listed below:
 
@@ -37,15 +37,15 @@ In the Unity menu, select **Window** > **Package Manager**:
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-1.png)
 
-It might take a few seconds before all packages appear in the list. Display preview packages by clicking on Advanced option and select "**Show preview packages.**"
+It might take a few seconds before all packages appear in the list. Display preview packages by clicking on Advanced option and select **Show preview packages.**
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-2.png)
 
-In the Package Manager window, select **AR Foundation**, here you see many version and need to select version 2.1.4 and update the package by clicking the **Update to 2.1.4** button:
+In the Package Manager window, select **AR Foundation**, here you see many version and need to select **version 2.1.4** and update the package by clicking the **Update to 2.1.4** button:
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-3.png)
 
-To support Android devices, follow the same process to import ARCore XR Plugin 2.2.0 preview 2.
+To support Android devices, follow the same process to import **ARCore XR Plugin 2.2.0 preview 2**.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-4.png)
 
@@ -59,23 +59,23 @@ Customize MRTK settings to support AR Foundation by selecting MixedRealityToolKi
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-1.png)
 
-When you click the **Clone** button, a new Clone Profile window will appear, click on the Clone button again to clone the DefaultMixedRealityToolkitProfile.
+When you click the **Clone** button, a new clone Profile window will appear, click on the **Clone** button again to clone the **DefaultMixedRealityToolkitProfile**.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-2.png)
 
-Similarly, clone the camera profile in the Inspector window and rename the profile to “UnityARConfigurationProfile” and click on the **Clone** button. In the Inspector window, locate the MixedReality, select the Camera tab Expand the camera setting providers in the inspector window and click on **+Add Camera Setting Provider** > expand **New data provider 1**> select Type **None** >select **Microsoft .MixedReality.Toolkit.Experimental.UnityAR** > Select **UnityARCameraSettings**.
+Similarly, clone the camera profile in the Inspector window, rename the profile to **UnityARConfigurationProfile**, and click on the **Clone** button. In the Inspector window, locate the MixedReality, select the **Camera** tab. Expand the camera setting providers in the inspector window and click on **+ Add Camera Setting Provider** > expand **New data provider 1** > select type **None** > select **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > select **UnityARCameraSettings**.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-3.png)
 
-With the MixedRealityToolKit object selected in the Hierarchy window, in the Inspector window, attach supporting scripts by clicking on the **Add component** button and type in AR reference Point manager and select the script.
+With the MixedRealityToolKit object selected in the Hierarchy window, In the Inspector window, attach supporting scripts by clicking on the **Add component** button and type in AR reference Point manager and select the script.
 
-Adding the  "AR Reference Point Manager" script will automatically add "AR session origin" along with it in the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
+Adding the  **AR Reference Point Manager** script will automatically add **AR session origin** to the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-4.png)
 
-## Build application to Android device
+## Build an application to an Android device
 
-To build this application to your Android device, click on **File** at the top of the window and select **Build Settings.** A new window will appear on the screen, select **Android,** and click on the **Switch Platform**. It will take a few minutes to switch platform. After switching to the Android platform, click on **Add Open Scenes** and make sure your current scene is the only selected scene in the **Scenes In Build** list.
+To build this application to your Android device, click on **File** at the top of the window and select **Build Settings.** A new window will appear on the screen, select **Android**, and click on the **Switch Platform**. It will take a few minutes to switch platform. After switching to the Android platform, click on **Add Open Scenes** and make sure your current scene is the only selected scene in the **Scenes In Build** list.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-1.png)
 
@@ -83,7 +83,7 @@ Close the **Build Settings** window. In the Unity menu, select **Mixed Reality T
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-2.png)
 
-In the Unity menu, select **Edit** > **Project Settings** to open the Project Settings window. In the Project Settings, window selects the **Player** tab, expand the Other Settings section, select **Vulkan,** and remove it by clicking the "-" symbol.
+In the Unity menu, select **Edit** > **Project Settings** to open the Project Settings window. In the Project Settings, window selects the **Player** tab, expand the **Other Settings** section, select **Vulkan**, and remove it by clicking the "**-**" symbol.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-3.png)
 
@@ -96,7 +96,7 @@ Close the Player Settings window and open the Build Settings window again. Then,
 
 When the build process is complete, your applications should automatically load on your Android device.
 
-## Build application to iOS Device
+## Build an application to iOS Device
 
 To build this application to your iOS device, click on **File** at the top of the window and select **Build Settings.** A new window will appear on the screen, then select **iOS** and click on the **Switch Platform**.
 
@@ -106,7 +106,7 @@ Close the **Build Settings** window. In the Unity menu, select **Mixed Reality T
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-2.png)
 
-To build the iOS XCode project, go to Build Settings and, click on **Build**.
+To build the iOS XCode project, go to Build Settings, and click on **Build**.
 
 Follow [this guide](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) to learn how to deploy this project to your iOS device.
 
