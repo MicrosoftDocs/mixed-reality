@@ -5,12 +5,18 @@ author: AndreyChistyakov
 ms.author: anchisty
 ms.date: 04/08/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens
+keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, voice, voice input, speech recognition, mixed reality, development, features, documentation, guides, holograms, game development
 ---
 
-# Voice Input
+# Voice Input in Unreal
 
-To enable speech recognition on HoloLens, the developer needs to enable “Microphone” in the Unreal editor under Project Settings > Platform > HoloLens > Capabilities. The device must also have Speech recognition enabled in Settings > Privacy > Speech and use the English language.
+//TODO: Add introduction to topic
+
+## Enabling Speech Recognition
+
+To enable speech recognition on HoloLens:
+1. Select **Project Settings > Platform > HoloLens > Capabilities** and enable **Microphone**. 
+2. Enabled speech recogniztion in *Settings > Privacy > Speech* and select English.
 
 ![Windows Speech recognition settings](images/unreal/speech-recognition-settings.png)
 
@@ -19,6 +25,8 @@ It’s recommended to enable Online speech recognition too for the best possible
 Then user will see a dialog about enabling the microphone when the application first starts. If a user selects Yes, the application will begin getting voice input.
 
 Speech input doesn’t require a special Windows Mixed Reality API and is instead built upon the existing Unreal Engine 4 Input mapping API. Details on how to use the Input API are [here](https://docs.unrealengine.com/en-US/Gameplay/Input/index.html)
+
+## Working with Speech Mappings
 
 Speech Mappings have been added to the Bindings section of Engine – Input below Action and Axis Mappings. 
 
