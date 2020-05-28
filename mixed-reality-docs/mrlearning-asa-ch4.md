@@ -63,15 +63,19 @@ When you click the **Clone** button, a new clone Profile window will appear, cli
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-2.png)
 
-Similarly, clone the camera profile in the Inspector window, rename the profile to **UnityARConfigurationProfile**, and click on the **Clone** button. In the Inspector window, locate the MixedReality, select the **Camera** tab. Expand the camera setting providers in the inspector window and click on **+ Add Camera Setting Provider** > expand **New data provider 1** > select type **None** > select **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > select **UnityARCameraSettings**.
+Similarly, clone the **Camera Profile** in the Inspector window.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-3.png)
+
+In the Inspector window, locate the MixedReality, select the **Camera** tab. Expand the camera setting providers in the inspector window and click on **+ Add Camera Setting Provider** > expand **New data provider 1** > select type **None** > select **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > select **UnityARCameraSettings**.
+
+![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-4.png)
 
 With the MixedRealityToolKit object selected in the Hierarchy window, In the Inspector window, attach supporting scripts by clicking on the **Add component** button and type in AR reference Point manager and select the script.
 
 Adding the  **AR Reference Point Manager** script will automatically add **AR session origin** to the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
 
-![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-4.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-5.png)
 
 ## Build an application to an Android device
 
@@ -79,7 +83,7 @@ To build this application to your Android device, click on **File** at the top o
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-1.png)
 
-Close the **Build Settings** window. In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and click on **Apply** to configure the Unity project for the Android platform.
+Close the **Build Settings** window. In the Unity menu, select Mixed Reality Toolkit > Utilities > Configure Unity Project and click on **Apply** to configure the Unity project for the Android platform.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-2.png)
 
@@ -87,7 +91,7 @@ In the Unity menu, select **Edit** > **Project Settings** to open the Project Se
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-3.png)
 
-Close the Player Settings window and open the Build Settings window again. Then, using a USB cable, connect your Android device to your computer and select your device in the **Build and Run on** the dropdown, then click **Build And Run**. You will be asked to save a .apk file, which you can pick any name.
+Close the **Player Settings** window and open the **Build Settings** window again. Then, using a USB cable, connect your Android device to your computer and select your device in the **Build and Run** on the dropdown, then click **Build And Run**. You will be asked to save a .apk file, which you can pick any name.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-4.png)
 
@@ -102,7 +106,7 @@ To build this application to your iOS device, click on **File** at the top of th
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-1.png)
 
-Close the **Build Settings** window. In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and click on **Apply** to configure the Unity project for the iOS platform.
+Close the **Build Settings** window. In the Unity menu, select Mixed Reality Toolkit > Utilities > Configure Unity Project, and click on **Apply** to configure the Unity project for the iOS platform.
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section4-step1-2.png)
 
