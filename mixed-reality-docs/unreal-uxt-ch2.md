@@ -18,7 +18,7 @@ In this first tutorial, you'll get started with a new Unreal application for Hol
 Before continuing, make sure you have all the prerequisite from the [Getting Started](https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-uxt-ch1) page.
 
 ## Objectives
-This tutorial will focus on:
+This tutorial focuses on:
 * Configuring an Unreal projet for HoloLens development
 * Importing assets and setting up a scene
 * Creating Actors and script-level events with blueprints
