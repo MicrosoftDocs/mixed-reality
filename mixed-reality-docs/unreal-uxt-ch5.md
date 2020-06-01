@@ -1,8 +1,8 @@
 ---
 title: 5. Adding a button & resetting piece locations
-description: Part 5 of a tutorial to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
-author: sw5813
-ms.author: suwu
+description: Part 5 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
+author: hferrone
+ms.author: h-vaferr
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
@@ -11,15 +11,16 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 
 # 5. Adding a button & resetting piece locations
 
-This section continues demonstrating the capabilities of the Mixed Reality Toolkit UX Tools plugin and building out the features of your chess app. You’ll create a new function and learn how to get references to Actors from your Level into a Blueprint.
+In the previous tutorial, you added Hand Interaction Actors to the Pawn and Manipulator components to the chess board, which made them both interactive. In this section, you'll continue working with the Mixed Reality Toolkit UX Tools plugin by building out the features of your chess app. This includes creating a new function and learning how to get references to Actors in a Blueprint.
 
 ## Objectives
 
-* Add a button to your project
-* Create a new “Reset Location” function that sends a piece back to its original location
-* Hook the button up to trigger the newly created function when pressed
+* Adding an interactive button
+* Creating a function to reset a pieces' location
+* Hooking the button up to trigger the function when pressed
 
-## Create a function to reset location
+## Creating a reset function
+
 
 1.	Open **WhiteKing**. In the **My Blueprint** panel, click the “+” button next to the **Functions** section to create a new function. Name this function “Reset Location”. 
 
@@ -27,9 +28,9 @@ This section continues demonstrating the capabilities of the Mixed Reality Toolk
 
 ![Reset Location function](images/unreal-uxt/5-function.PNG)
 
-3.	Compile and Save **WhiteKing**. Return to the Main window. 
+3.	**Compile** and **Save** then return to the Main window. 
 
-## Add a button
+## Adding a button
 
 1.	In your **Blueprints** folder, create a new Blueprint that subclasses SimpleButton. SimpleButton is a 3D button Blueprint Actor that is provided as part of the UX Tools plugin. Name this button “ResetButton” and double click to open the Blueprint. 
 
@@ -43,11 +44,13 @@ This section continues demonstrating the capabilities of the Mixed Reality Toolk
 
 4.	Drag the WhiteKing variable from **My Blueprint > Variables** onto the Reset Button Event Graph. Choose **Get WhiteKing**. 
 
-5.	Drag the WhiteKing output pin and release to place a new node. Select the **Reset Location** function. Finally, drag the outgoing execution pin from **On Button Pressed** to the incoming execution pin on **Reset Location**. **Compile** and **Save** the ResetButton Blueprint, then return to the Main window. 
+## Firing the function
+
+1.	Drag the WhiteKing output pin and release to place a new node. Select the **Reset Location** function. Finally, drag the outgoing execution pin from **On Button Pressed** to the incoming execution pin on **Reset Location**. **Compile** and **Save** the ResetButton Blueprint, then return to the Main window. 
 
 ![Call Reset Location function from On Button Pressed](images/unreal-uxt/5-callresetloc.PNG)
 
-6.	Drag **ResetButton** into the viewport and set its location to X = 50, Y = -25, Z = 10. Under **Default**, set the value of the WhiteKing variable to **WhiteKing**.
+2.	Drag **ResetButton** into the viewport and set its location to X = 50, Y = -25, Z = 10. Under **Default**, set the value of the WhiteKing variable to **WhiteKing**.
 
 ![Set the variable](images/unreal-uxt/5-buttonlevel.PNG)
 

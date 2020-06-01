@@ -15,10 +15,9 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 
 In this first tutorial, you'll get started with a new Unreal application for HoloLens 2. This is going to include adding the HoloLens plugin, creating and lighting a level, and populating it with a game board and chess piece. You'll be using pre-made assets for the 3D chess piece and object materials, so don't worry about modeling anything from scratch. By the end of this tutorial you'll have a blank canvas that's ready for mixed reality.
 
-Before continuing, make sure you have all the prerequisite from the [Getting Started](https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-uxt-ch1) page.
+Before continuing, make sure you have all the prerequisite from the [Getting Started](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1) page.
 
 ## Objectives
-This tutorial focuses on:
 * Configuring an Unreal projet for HoloLens development
 * Importing assets and setting up a scene
 * Creating Actors and script-level events with blueprints
@@ -199,10 +198,10 @@ Now you'll follow the same steps to create a chess piece as you did with the boa
     * Set **Static Mesh** to **Chess_King** and **Material** to a new Material called **M_ChessWhite** in the Details panel. 
 
 4. Open **M_ChessWhite** in the Material editor and hook up the following **Texture Sample** nodes to the following:
-    * Set **Texture** to **ChessBlack_AO** and link the **RGB** to the **Ambient Occlusion** pin.
-    * Set **Texture** to **ChessBlack_Metal** and link the **RGB** to the **Metallic** pin. 
-    * Set **Texture** to **ChessBlack_Normal** and link the **RGB** to the **Normal** pin.
-    * Set **Texture** to **ChessBlack_Rough** and link the **RGB** to the **Roughness** pin. 
+    * Set **Texture** to **ChessWhite_AO** and link the **RGB** to the **Ambient Occlusion** pin.
+    * Set **Texture** to **ChessWhite_Metal** and link the **RGB** to the **Metallic** pin. 
+    * Set **Texture** to **ChessWhite_Normal** and link the **RGB** to the **Normal** pin.
+    * Set **Texture** to **ChessWhite_Rough** and link the **RGB** to the **Roughness** pin. 
     * Click **Save**. 
 
 Your **M_ChessKing** material should look like the following image before continuing.

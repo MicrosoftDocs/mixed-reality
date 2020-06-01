@@ -16,7 +16,6 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 In the previous tutorial, you spent time setting up the chess app project. This section is going to walk you through setting up the app for mixed reality development, which means adding an AR session. You'll be using an ARSessionConfig data asset for this task, which has a lot of useful AR settings like spatial mapping and occlusion. If you want to dive deeper, the Unreal Engine documentation has more details on the [ARSessionConfig](https://docs.unrealengine.com/en-US/PythonAPI/class/ARSessionConfig.html) asset and the [UARSessionConfig](https://docs.unrealengine.com/en-US/API/Runtime/AugmentedReality/UARSessionConfig/index.html) class.
 
 ## Objectives
-This tutorial focuses on:
 * Working with Unreal Engine's AR settings 
 * Using an ARSessionConfig data asset
 * Setting up a Pawn and game mode
