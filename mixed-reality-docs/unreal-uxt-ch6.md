@@ -1,8 +1,8 @@
 ---
 title: 6. Packaging & deploying to device or emulator
-description: Part 6 of a tutorial to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
-author: sw5813
-ms.author: suwu
+description: Part 6 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
+author: hferrone
+ms.author: v-haferr
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
@@ -11,47 +11,62 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 
 # 6. Packaging & deploying to device or emulator
 
-This section walks you through the steps of preparing your app to run on a HoloLens 2 device or Emulator. If you have a device, you can either stream from your computer to the device or package the app to run directly on the device. If you do not have a device, you will need to package the app for it to run on the Emulator. 
+## Overview
+
+In the previous tutorial, you added a simple button that resets the chess piece to its original position. In this final section, you'll get the app ready to run on a HoloLens 2 or an Emulator. If you have a HoloLens 2, you can either stream from your computer or package the app to run directly on the device. If you don't have a device, you'll be packaging the app to run on the Emulator. By the end of this section, you'll have a deployed mixed reality app that you can play, complete with interactions and UI.
 
 ## Objectives
 
-* [Device only] Stream your app to HoloLens 2 via holographic app remoting
-* Package and deploy your app to a HoloLens 2 device or emulator
+* [Device only] Streaming to HoloLens 2 with holographic app remoting
+* Packaging and deploying the app to a HoloLens 2 device or emulator
 
-## [Device Only] Stream
+## [Device Only] Streaming
+[Holographic Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) in this case means streaming data from a PC or standalone UWP device to the HoloLens 2, not switching the channel. The way this works is a remoting host app receives an input data stream from a HoloLens, renders content in a virtual immersive view, and streams content frames back to HoloLens over Wi-Fi. Streaming allows you to add remote immersive views into existing desktop PC software and has access to more system resources. 
 
-1.	Install the **Holographic Remoting Player** from the Microsoft Store on your HoloLens 2 and run the app
+If you're going this route with the chess app, you'll need a few things:
 
-2.	Go to **Edit > Project Settings**. In the Holographic Remoting section, check the box to enable remoting and restart the editor.
+1.	Install the **Holographic Remoting Player** from the Microsoft Store on your HoloLens 2 and run the app.
 
-3.	Input the IP address of your device and click Connect.
+2.	Go to **Edit > Project Settings** and check **enable remoting** in the **Holographic Remoting** section.
 
-4.	Once you’re connected, in your UE4 Editor, click the drop-down arrow to the right of the Play button and select VR Preview.
+3.	Restart the editor, [find your device's IP address](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens#connect-over-wi-fi) and enter it, then click **Connect**.
 
-## Package and deploy your app 
+Once you’re connected, click the drop-down arrow to the right of the **Play** button and select **VR Preview**. This will run the app in the VR Preview Window, which is streamed to the HoloLens headset. 
+
+## Packaging and deploying the app 
 
 >[!NOTE]
->If this is your first time packaging an Unreal app for HoloLens, you'll need to download supporting files from the Epic Launcher. To do so, go to the **Library** tab in the Epic Games Launcher. Select the dropdown arrow next to **Launch** and select **Options**. Under **Target Platforms**, select **HoloLens 2** and click **Apply**. 
+>If this is your first time packaging an Unreal app for HoloLens, you'll need to download supporting files from the Epic Launcher. 
+>- Go to the **Library** tab in the Epic Games Launcher, select the dropdown arrow next to **Launch** >and click **Options**. 
+>- Under **Target Platforms**, select **HoloLens 2** and click **Apply**. 
 >![Project Settings - Description](images/unreal-uxt/6-installationoptions.PNG)
 
-1.	Go to **Edit > Project Settings**. Under **Project > Description > About > Project Name**, give your project a name. Under **Project > Description > Publisher > Company Distinguished Name** put “CN={INSERT COMPANY NAME}”. Leaving either of these fields blank will result in an error. 
+1.	Go to **Edit > Project Settings**. 
+    * Add a project name under **Project > Description > About > Project Name**. 
+    * Add **CN={INSERT COMPANY NAME}** under **Project > Description > Publisher > Company Distinguished Name**.
+
+> [!IMPORTANT]
+> Leaving either of these fields blank will result in an error. 
 
 ![Project Settings - Description](images/unreal-uxt/6-cn.PNG)
 
-2.	Under **Platforms > HoloLens** choose Emulation and/or Device based on which you want to target.
+2.	Enable **Build for HoloLens Emulation** and/or **Build for HoloLens Device** under **Platforms > HoloLens**.
 
-3.	In the **Packaging** section, next to **Signing Certificate**, click the **Generate new** button to generate a new signing certificate. Return to the Main window.
+3.	Click **Generate new** in the **Packaging** section (next to **Signing Certificate**), then return to the Main window.
 
 ![Project Settings - Platforms - HoloLens](images/unreal-uxt/6-packaging.PNG)
 
-4.	Go to **File > Package Project** and select **HoloLens**. Create a new folder to save your package in and click **Select Folder**. 
+4.	Go to **File > Package Project** and select **HoloLens**. 
+    * Create a new folder to save your package in and click **Select Folder**. 
 
-5.	Once the app has been successfully packaged, open the **Windows Device Portal**, go to **Views > Apps**, and find the **Deploy apps** section.
+5.	Open the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal) once the app is packaged, go to **Views > Apps** and find the **Deploy apps** section.
 
-6.	Click**Browse...** and navigate to your **ChessApp.appxbundle** file. Click **Open**. 
+6.	Click **Browse...**, go to your **ChessApp.appxbundle** file and click **Open**. 
 
-    * If this is the first time you are installing the app on your device, check the box next to **Allow me to select framework packages**. In the next dialogue, include the appropriate VCLibs appx file (arm64 for device, x64 for emulator). 
+    * Check the box next to **Allow me to select framework packages** if this is the first time you're installing the app on your device. 
+    * In the next dialogue, include the appropriate **VCLibs** and **appx** files (arm64 for device, x64 for emulator). You can find these under **HoloLens** inside the folder where you saved your package.
 
 7.	Click **Install**
+    * You can now go to **All Apps** and tap the the newly installed app to run it, or you can start the app directly from the **Windows Device Portal**. 
 
-Congratulations on finishing this tutorial!  
+Congratulations! You're HoloLens mixed reality application is finished and ready to go. However, this isn't the end of the road. MRTK has lots of standalone features that you can add to your projects, including spatial mapping, gaze and voice input, and even QR codes. More information on these features can be found in the [Unreal development overview](https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-development-overview).

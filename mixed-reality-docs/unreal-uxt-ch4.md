@@ -11,6 +11,8 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 
 # 4. Making your scene interactive
 
+## Overview
+
 In the previous tutorial you added an ARSession, Pawn, and Game Mode to complete the mixed reality setup for the chess app. This section focuses on using the open source [Mixed Reality Toolkit UX Tools](https://github.com/microsoft/MixedReality-UXTools-Unreal) plugin, which provides tools to make the scene interactive. By the end of this section you'll be able to move the chess pieces with user input. 
 
 ## Objectives

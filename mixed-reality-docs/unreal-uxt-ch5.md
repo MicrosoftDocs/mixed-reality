@@ -2,7 +2,7 @@
 title: 5. Adding a button & resetting piece locations
 description: Part 5 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
 author: hferrone
-ms.author: h-vaferr
+ms.author: v-haferr
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
@@ -10,6 +10,9 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 ---
 
 # 5. Adding a button & resetting piece locations
+
+
+## Overview
 
 In the previous tutorial, you added Hand Interaction Actors to the Pawn and Manipulator components to the chess board to make them both interactive. In this section, you'll continue working with the Mixed Reality Toolkit UX Tools plugin by building out the features of your chess app. This includes creating a new function and learning how to get references to Actors in a Blueprint. By the end of this section, you'll be ready to package and deploy the mixed reality app on a device or emulator.
 
