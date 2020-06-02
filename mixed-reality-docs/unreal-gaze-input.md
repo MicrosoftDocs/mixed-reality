@@ -35,7 +35,8 @@ Gaze input needs to be enabled in the HoloLens project settings before you can u
 
 ![Eye Input Permissions](images/unreal/eye-input-permissions.png)
 
-> [!NOTE] HoloLens eye tracking in Unreal only has a single gaze ray for both eyes instead of the two rays needed for stereoscopic tracking, which is not supported.
+> [!NOTE] 
+> HoloLens eye tracking in Unreal only has a single gaze ray for both eyes instead of the two rays needed for stereoscopic tracking, which is not supported.
 
 That's all the setup you'll need to start adding gaze input to your HoloLens 2 apps in Unreal. More information on gaze input and how it affects users in mixed reality can be found at the links below. Be sure to think about these when building your interactive experiences. 
 
