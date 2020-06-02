@@ -59,7 +59,7 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 4.	Go to **File > Package Project** and select **HoloLens**. 
     * Create a new folder to save your package in and click **Select Folder**. 
 
-5.	Open the [Windows Device Portal](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal) once the app is packaged, go to **Views > Apps** and find the **Deploy apps** section.
+5.	Open the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) once the app is packaged, go to **Views > Apps** and find the **Deploy apps** section.
 
 6.	Click **Browse...**, go to your **ChessApp.appxbundle** file and click **Open**. 
 
@@ -69,4 +69,4 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 7.	Click **Install**
     * You can now go to **All Apps** and tap the the newly installed app to run it, or you can start the app directly from the **Windows Device Portal**. 
 
-Congratulations! You're HoloLens mixed reality application is finished and ready to go. However, this isn't the end of the road. MRTK has lots of standalone features that you can add to your projects, including spatial mapping, gaze and voice input, and even QR codes. More information on these features can be found in the [Unreal development overview](https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-development-overview).
+Congratulations! You're HoloLens mixed reality application is finished and ready to go. However, this isn't the end of the road. MRTK has lots of standalone features that you can add to your projects, including spatial mapping, gaze and voice input, and even QR codes. More information on these features can be found in the [Unreal development overview](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
