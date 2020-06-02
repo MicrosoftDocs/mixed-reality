@@ -1,14 +1,16 @@
 ---
 title: QR codes in Unreal
-description: Guide to using QR codes in Unreal
-author: sw5813
-ms.author: jacksonf
+description: A guide to using QR codes in Unreal
+author: hferrone
+ms.author: v-haferr
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, qr codes
 ---
 # QR codes in Unreal
+
+## Overview
 
 HoloLens can locate QR codes in world space to render holograms at known positions in the real world.  This can also be used to render holograms on multiple devices in the same location to create a shared experience. 
 

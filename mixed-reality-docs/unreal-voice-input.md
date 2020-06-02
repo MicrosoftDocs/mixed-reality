@@ -53,10 +53,10 @@ To add a new Speech Mapping for a jump command:
 Speech Mappings can be used as Input components like Action or Axis Mappings or as blueprint nodes in the Event Graph. For example, you could link the jump command to print out two different logs depending on when the word is spoken:
 
 1. Double-click a blueprint to open it in the **Event Graph**.
-2. **Right-click** and search for the **Action Name** of your speech mapping (in this case **jumpWord**), then hit **Enter** to add an **Input Action** node to the graph.
-3. Drag and drop the **Pressed** and **Released** pins to the actions you want them to take, as shown below:
+2. **Right-click** and search for the **Action Name** of your speech mapping (in this case **jumpWord**), then hit **Enter**. This adds an **Input Action** node to the graph.
+3. Drag and drop the **Pressed** pin to **Print String** node as shown in the image below. You can leave the **Released** pin empty, it won't execute anything for speech mappings.
  
-![Simple action for voice](images/unreal/input-action-bp.png)
+![Simple action for voice](images/unreal/voice-input-img-03.png)
 
 4. Play the app, say the word **jump** and watch the console print out the logs!
 
