@@ -23,7 +23,7 @@ The HoloLens 2 tutorials are designed to help developers learn both techniques a
 * Getting started tutorials
     * Unity - [1 of 7 Overview and objectives](mrlearning-base.md)
     * Unreal - [1 of 6 Getting started](unreal-uxt-ch1.md)
-* Azure Spatial Anchor tutorials - [1 of 3 Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
+* Azure Spatial Anchor tutorials - [1 of 4 Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
 * Azure Speech Services tutorials - [1 of 4 Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
 * Multi-user capabilities tutorials - [1 of 5 Setting up Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
 
