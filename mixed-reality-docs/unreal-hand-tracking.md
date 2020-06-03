@@ -5,10 +5,10 @@ author: AndreyChistyakov
 ms.author: anchisty
 ms.date: 04/08/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, hand tracking
+keywords: Windows Mixed Reality, hand tracking, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, game development
 ---
 
-# Hand Tracking
+# Hand tracking in Unreal
 
 The hand tracking system uses a person’s palms and fingers as input to Unreal. A developer can get every finger’s position and rotation, the entire palm, and even hand gestures to use in their own code. 
 
