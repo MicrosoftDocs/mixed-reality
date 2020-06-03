@@ -14,6 +14,8 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 
 HoloLens can locate QR codes in world space to render holograms at known positions in the real world.  This can also be used to render holograms on multiple devices in the same location to create a shared experience. 
 
+## Enabling QR detection
+
 To enable QR detection on HoloLens, ensure the “Webcam” capability is checked in the Unreal editor under Project Settings > Platform > HoloLens > Capabilities.  
 
 Opt into using QR code tracking in Unreal by starting an ARSession with the StartARSession function. 
@@ -38,3 +40,7 @@ Every QR code also has a unique guid ID:
 
 ## See also
 * [QR code tracking](qr-code-tracking.md)
+* [Spatial mapping](spatial-mapping.md)
+* [Holograms](hologram.m)
+* [Coordinate systems](coordinate-systems.md)
+* [Environment considerations for HoloLens](hololens-environment-considerations.md)
