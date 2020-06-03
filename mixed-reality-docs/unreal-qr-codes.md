@@ -41,6 +41,6 @@ Every QR code also has a unique guid ID:
 ## See also
 * [QR code tracking](qr-code-tracking.md)
 * [Spatial mapping](spatial-mapping.md)
-* [Holograms](hologram.m)
+* [Holograms](hologram.md)
 * [Coordinate systems](coordinate-systems.md)
-* [Environment considerations for HoloLens](hololens-environment-considerations.md)
+* [Environment considerations for HoloLens](environment-considerations-for-hololens.md)
