@@ -42,10 +42,14 @@ If the hand menu buttons are placed too close to the home button, it may get acc
 
 <br>
 
-## Hand menu with a large and complex UI controls
+## Hand menu with large and complex UI controls
 <img src="images/UX/HandMenu_SizeExample.png" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 
-As described in the best practices section, it is recommended to limit the number of buttons or UI controls. However, if your experience requires an extended interaction time with a large number of UI elements, it would cause arm fatigue. In this case, instead of keeping the menu leashed to the hand, world-lock the menu on hand drop. This way, you can interact with various UI elements comfortably and confidently over an extended period of time. When the menu is world-locked, make sure to provide a way to move it to the preferred location and close when the menu is no longer needed.
+It is recommended to limit the number of buttons or UI controls on hand-attached menus. This is because extended interaction with a large number of UI elements can cause arm fatigue. Instead of keeping the menu leashed to the hand, provide an easy way for the user to world lock the menu. One technique we recommend are to world-lock when the hand drops or flips away from the user. A second technique is to allow the user to grab the menu with the other hand. When the user releases the menu, the menu should world lock. This way, you can interact with various UI elements comfortably and confidently over an extended period of time. 
+
+When the menu is world-locked, make sure to provide a way to move the menu, and close the menu when it is no longer needed. Make the menu movable by providing handles on the sides or top of menu. Add a close button to allow the menu to close. Allow for the menu to re-attach to the hand when the user hand faces the user. We also recommend requiring that the users gazes at his/her hand to prevent false activations (see below).
+
+[TODO: DIAGRAM SHOWING CLOSE BUTTON AND MOVE HANDLES]
 
 **World-locked menu on hand drop**
 
@@ -55,11 +59,19 @@ As described in the best practices section, it is recommended to limit the numbe
 
 [TODO: INSERT VIDEO]
 
-
-## Preventing false activation
-If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience false-positives in your app, consider adding an additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
+**Move and close world-locked menu**
 
 [TODO: INSERT VIDEO]
+
+## Preventing false activation
+If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands both intentionally (for communication and object manipulation) and unintentionally. To reduce false activations, add an additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
+
+[TODO: INSERT VIDEO]
+
+## Complex hand menu example
+
+[TODO: INSERT LINK TO MRTK EXAMPLE SCENE]
+[TODO: INSERT LINK TO STORE EXAMPLES HUB]
 
 ---
 
