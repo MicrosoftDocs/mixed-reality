@@ -93,7 +93,9 @@ This is done for you automatically by Unity.
 
 ##### Enable the PhotoVideoCamera HolographicViewConfiguration in Unreal
 
-To opt-in, you need to configure SetEnabledMixedRealityCamera and ResizeMixedRealityCamera nodes as described in [Third Camera Mixed Reality Capture](unreal-hololens-camera.md#third-camera-mixed-reality-capture).
+To opt-in, call SetEnabledMixedRealityCamera and ResizeMixedRealityCamera with the desired video dimensions. 
+
+![Camera 3rd](images/unreal-camera-3rd.PNG)
 
 > [!NOTE]
 > This requires Unreal 4.25 or newer.
