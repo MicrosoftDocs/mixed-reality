@@ -98,7 +98,7 @@ Function parameter breakdown:
 * **Return Value** — true if the bone is tracked this frame, false if the bone is not tracked.
 
 ## Hand Live Link Animation
-Hand poses are exposed to Animation using the [Live Link plugin]((https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)).
+Hand poses are exposed to Animation using the [Live Link plugin](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html).
 
 If the Windows Mixed Reality and Live Link plugins are enabled: 
 1. Select **Window > Live Link** to open the Live Link editor window. 
