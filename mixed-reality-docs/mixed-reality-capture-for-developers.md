@@ -56,7 +56,7 @@ There are three steps to enable rendering from the PV camera:
 2. Handle the additional HolographicCamera render
 3. Verify your shaders and code render correctly from this additional HolographicCamera
 
-##### Enable the PhotoVideoCamera HolographicViewConfiguration
+##### Enable the PhotoVideoCamera HolographicViewConfiguration in DirectX
 
 To opt-in, an app simply enables the PhotoVideoCamera's [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
 ```csharp
@@ -78,10 +78,29 @@ When mixed reality capture stops (or if the app disables the view configuration 
 
 A [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) property has been added to HolographicCamera to help identify the configuration a camera belongs to.
 
+##### Enable the PhotoVideoCamera HolographicViewConfiguration in Unity
+
+To opt-in, when using the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), enable the [Windows Mixed Reality Camera Settings](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) provider and check the "Render from PV Camera" setting.
+
+If not using the Mixed Reality Toolkit, you can use a component to [manually opt-in](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) as described above for DirectX.
+
+> [!NOTE]
+> This requires Unity 2018.4.13f1 or newer or 2019.3.0f1 or newer.
+
 ##### Handle the additional HolographicCamera render in Unity
 
->[!NOTE]
-> Unity support to render from the PV camera is under development and can't be used, yet. This documentation will be updated when a build of Unity with support for rendering from the PV camera is available.
+This is done for you automatically by Unity.
+
+##### Enable the PhotoVideoCamera HolographicViewConfiguration in Unreal
+
+To opt-in, you need to configure SetEnabledMixedRealityCamera and ResizeMixedRealityCamera nodes as described in [Third Camera Mixed Reality Capture](unreal-hololens-camera.md#third-camera-mixed-reality-capture).
+
+> [!NOTE]
+> This requires Unreal 4.25 or newer.
+
+##### Handle the additional HolographicCamera render in Unreal
+
+This is done for you automatically by Unreal.
 
 ##### Verify shaders and code support additional cameras
 
