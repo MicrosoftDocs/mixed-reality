@@ -317,7 +317,7 @@ Sets the default mixed reality capture settings.  Some of these settings are app
 
 **/api/holographic/mrc/status (GET)**
 
-Gets the status of the mixed reality recorded (running, stopped)
+Gets the state of mixed reality capture within the Windows Device Portal (IsRecoding is true while Windows Device Portal is recording video)
 
 **/api/holographic/mrc/thumbnail (GET)**
 
