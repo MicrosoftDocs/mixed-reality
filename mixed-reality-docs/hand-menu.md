@@ -68,11 +68,6 @@ If you use just palm-up as an event to trigger the hand menu, it may accidentall
 
 [TODO: INSERT VIDEO]
 
-## Complex hand menu example
-
-[TODO: INSERT LINK TO MRTK EXAMPLE SCENE]
-[TODO: INSERT LINK TO STORE EXAMPLES HUB]
-
 ---
 
 ## Hand menu placement best practices
@@ -159,12 +154,12 @@ We have done user research with different menus layouts and locations, the follo
 
 ---
 
-## Hand menu in MRTK (Mixed Reality Toolkit) for Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. HandConstraintPalmUp solver script allows you easily attach any objects to the hands with various configurable options.
+## Hand Menu Examples in MRTK (Mixed Reality Toolkit) for Unity
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. The HandConstraintPalmUp solver script allows you easily attach any objects to the hands with various configurable options.
 
-* [MRTK - Hand Menu with HandConstraint and HandConstraintPalmUp
-](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup)
-
+* [Hand Menu Documentations](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
+* [Hand Menu Example Scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
+* [Hand Menu Scene in MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab)
 
 <br>
 
