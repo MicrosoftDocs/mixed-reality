@@ -1,26 +1,37 @@
 ---
-title: HoloLens Camera in Unreal
-description: Guide to using the HoloLens camera in Unreal
+title: HoloLens Photo/Video Camera in Unreal
+description: Guide to using the HoloLens photo/video camera in Unreal
 author: hferrone
 ms.author: v-haferr
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, camera, 3rd camera, MRC
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, camera, PV camera, MRC
 ---
-# HoloLens Camera in Unreal
+# HoloLens Photo/Video Camera in Unreal
 
-## Overview
+The HoloLens has a Photo/Video (PV) Camera that is used for both Mixed Reality Capture (MRC) and can be used by an app to access real-world visuals.
 
-Third camera Mixed Reality Capture (MRC) renders a mixed reality capture from the position of the HoloLens visor camera instead of the eye textures in the scene. This improves the mapping between the real world and the holograms in the MRC video. 
+## Render from the PV Camera for MRC
 
-To opt into using third camera MRC:
+> [!NOTE]
+> This requires **Unreal Engine 4.25** or newer.
+
+The system, and custom MRC recorders, create mixed reality captures by combining the PV Camera with holograms rendered by the immersive app.
+
+By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) then that will be used instead. This improves the mapping between the real world and the holograms in the MRC video.
+
+To opt-in to rendering from the PV Camera:
+
 1. Call **SetEnabledMixedRealityCamera** and **ResizeMixedRealityCamera**
-    * Use the **Size X** and **Size Y** values to set the video dimensions. 
+    * Use the **Size X** and **Size Y** values to set the video dimensions.
 
 ![Camera 3rd](images/unreal-camera-3rd.PNG)
 
-2. Record an MRC video in the HoloLens device portal. 
+Unreal will then handle requests from MRC to render from the PV Camera's perspective.
+
+> [!NOTE]
+> Only when [Mixed Reality Capture](mixed-reality-capture.md) is triggered will the app be asked to render from the photo/video camera's perspective.
 
 ## Using the PV Camera
 

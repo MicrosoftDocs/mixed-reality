@@ -11,15 +11,7 @@ keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, voice
 # Voice Input in Unreal
 
 ## Overview
-Voice input allows you to interact with a hologram without having to use hand gestures and is supported on HoloLens (1st Gen) and HoloLens 2. It's powered by the same engine that supports speech in all other Universal Windows Apps and can add a natural feeling to the way you interact in mixed reality. 
-
-Supported voice features include:
-- The [Select command](https://docs.microsoft.com/windows/mixed-reality/voice-input#the-select-command)
-- [Hey, Cortana](https://docs.microsoft.com/windows/mixed-reality/voice-input#hey-cortana)
-- "See it, say it" for button and label interaction
-- Dictation
-
-For more information, check out the main [Voice Input](voice-input.md) documentation.
+Voice input in Unreal allows you to interact with a hologram without having to use hand gestures and is only supported HoloLens 2. Even though voice input on HoloLens 2 is powered by the same engine that supports speech in all other Universal Windows Apps, Unreal uses a more limited engine of its own to process voice input. This limits voice input features in Unreal to predefined speech mappings, which is covered in the following sections. 
 
 ## Enabling Speech Recognition
 
@@ -63,6 +55,8 @@ Speech Mappings can be used as Input components like Action or Axis Mappings or 
 That's all the setup you'll need to start adding voice input to your HoloLens apps in Unreal. You can find more information on speech and interactivity can be found at the links below, and be sure to think about the experience you're creating for your users.
 
 ## See also
+* [Voice Input](voice-input.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [MR Input 212: Voice](holograms-212.md)
+
