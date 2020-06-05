@@ -58,7 +58,7 @@ There are three steps to enable rendering from the PV camera:
 
 ##### Enable the PhotoVideoCamera HolographicViewConfiguration in DirectX
 
-To opt-in, an app simply enables the PhotoVideoCamera's [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
+To opt-in to rendering from the PV Camera, an app simply enables the PhotoVideoCamera's [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
 var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfiguration.PhotoVideoCamera);
@@ -83,7 +83,7 @@ A [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.hologr
 > [!NOTE]
 > This requires **Unity 2018.4.13f1**, **Unity 2019.3.0f1**, or newer.
 
-To opt-in, when using the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), enable the [Windows Mixed Reality Camera Settings](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) provider and check the **Render from PV Camera** setting.
+To opt-in to rendering from the PV Camera, when using the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), enable the [Windows Mixed Reality Camera Settings](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) provider and check the **Render from PV Camera** setting.
 
 If you're not using the Mixed Reality Toolkit, you can use a component to [manually opt-in](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) as described above for DirectX.
 
@@ -96,7 +96,10 @@ This is done for you automatically by Unity.
 > [!NOTE]
 > This requires **Unreal Engine 4.25** or newer.
 
-To opt-in, call `SetEnabledMixedRealityCamera` and `ResizeMixedRealityCamera` with the desired video dimensions.
+To opt-in to rendering from the PV Camera:
+
+1. Call **SetEnabledMixedRealityCamera** and **ResizeMixedRealityCamera**
+    * Use the **Size X** and **Size Y** values to set the video dimensions.
 
 ![Camera 3rd](images/unreal-camera-3rd.PNG)
 
