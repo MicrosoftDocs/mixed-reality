@@ -42,10 +42,14 @@ If the hand menu buttons are placed too close to the home button, it may get acc
 
 <br>
 
-## Hand menu with a large and complex UI controls
+## Hand menu with large and complex UI controls
 <img src="images/UX/HandMenu_SizeExample.png" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 
-As described in the best practices section, it is recommended to limit the number of buttons or UI controls. However, if your experience requires an extended interaction time with a large number of UI elements, it would cause arm fatigue. In this case, instead of keeping the menu leashed to the hand, world-lock the menu on hand drop. This way, you can interact with various UI elements comfortably and confidently over an extended period of time. When the menu is world-locked, make sure to provide a way to move it to the preferred location and close when the menu is no longer needed.
+It is recommended to limit the number of buttons or UI controls on hand-attached menus. This is because extended interaction with a large number of UI elements can cause arm fatigue. Instead of keeping the menu leashed to the hand, provide an easy way for the user to world lock the menu. One technique we recommend is to world-lock then menu when the hand drops or flips away from the user. A second technique is to allow the user to grab the menu with the other hand. When the user releases the menu, the menu should world lock. This way, a user can interact with various UI elements comfortably and confidently over an extended period of time. 
+
+When the menu is world-locked, make sure to provide a way to move the menu, and close the menu when it is no longer needed. Make the menu movable by providing handles on the sides or top of menu. Add a close button to allow the menu to close. Allow for the menu to re-attach to the hand when the user hand faces the user. We also recommend requiring that the users gazes at his/her hand to prevent false activations (see below).
+
+[TODO: DIAGRAM SHOWING CLOSE BUTTON AND MOVE HANDLES]
 
 **World-locked menu on hand drop**
 
@@ -55,9 +59,12 @@ As described in the best practices section, it is recommended to limit the numbe
 
 [TODO: INSERT VIDEO]
 
+**Move and close world-locked menu**
+
+[TODO: INSERT VIDEO]
 
 ## Preventing false activation
-If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience false-positives in your app, consider adding an additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
+If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands both intentionally (for communication and object manipulation) and unintentionally. To reduce false activations, add an additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
 
 [TODO: INSERT VIDEO]
 
@@ -147,12 +154,12 @@ We have done user research with different menus layouts and locations, the follo
 
 ---
 
-## Hand menu in MRTK (Mixed Reality Toolkit) for Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. HandConstraintPalmUp solver script allows you easily attach any objects to the hands with various configurable options.
+## Hand Menu Examples in MRTK (Mixed Reality Toolkit) for Unity
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. The HandConstraintPalmUp solver script allows you easily attach any objects to the hands with various configurable options.
 
-* [MRTK - Hand Menu with HandConstraint and HandConstraintPalmUp
-](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup)
-
+* [Hand Menu Documentations](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
+* [Hand Menu Example Scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
+* [Hand Menu Scene in MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab)
 
 <br>
 
