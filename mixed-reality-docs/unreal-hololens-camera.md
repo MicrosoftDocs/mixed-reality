@@ -15,7 +15,7 @@ The HoloLens has a Photo/Video (PV) Camera that is used for both Mixed Reality C
 ## Render from the PV Camera for MRC
 
 > [!NOTE]
-> This requires Unreal 4.25 or newer.
+> This requires **Unreal Engine 4.25** or newer.
 
 The system, and custom MRC recorders, create mixed reality captures by combining the PV Camera with holograms rendered by the immersive app.
 

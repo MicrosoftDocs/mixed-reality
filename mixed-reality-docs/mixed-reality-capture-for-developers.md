@@ -80,12 +80,12 @@ A [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.hologr
 
 ##### Enable the PhotoVideoCamera HolographicViewConfiguration in Unity
 
-To opt-in, when using the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), enable the [Windows Mixed Reality Camera Settings](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) provider and check the "Render from PV Camera" setting.
-
-If not using the Mixed Reality Toolkit, you can use a component to [manually opt-in](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) as described above for DirectX.
-
 > [!NOTE]
-> This requires Unity 2018.4.13f1 or newer or 2019.3.0f1 or newer.
+> This requires **Unity 2018.4.13f1**, **Unity 2019.3.0f1**, or newer.
+
+To opt-in, when using the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), enable the [Windows Mixed Reality Camera Settings](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) provider and check the **Render from PV Camera** setting.
+
+If you're not using the Mixed Reality Toolkit, you can use a component to [manually opt-in](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) as described above for DirectX.
 
 ##### Handle the additional HolographicCamera render in Unity
 
@@ -93,12 +93,12 @@ This is done for you automatically by Unity.
 
 ##### Enable the PhotoVideoCamera HolographicViewConfiguration in Unreal
 
-To opt-in, call SetEnabledMixedRealityCamera and ResizeMixedRealityCamera with the desired video dimensions. 
+> [!NOTE]
+> This requires **Unreal Engine 4.25** or newer.
+
+To opt-in, call `SetEnabledMixedRealityCamera` and `ResizeMixedRealityCamera` with the desired video dimensions.
 
 ![Camera 3rd](images/unreal-camera-3rd.PNG)
-
-> [!NOTE]
-> This requires Unreal 4.25 or newer.
 
 ##### Handle the additional HolographicCamera render in Unreal
 
@@ -271,5 +271,8 @@ With the Windows 10 April 2018 Update, there is no longer a limitation around mu
 Previous to the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
 
 ## See also
+
 * [Mixed reality capture](mixed-reality-capture.md)
 * [Spectator view](spectator-view.md)
+* [Unity Development Overview](unity-development-overview.md)
+* [Unreal development overview](unreal-development-overview.md)
