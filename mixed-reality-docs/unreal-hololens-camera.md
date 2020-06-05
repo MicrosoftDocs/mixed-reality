@@ -1,12 +1,12 @@
 ---
-title: HoloLens Camera in Unreal
-description: Guide to using the HoloLens camera in Unreal
+title: HoloLens Photo/Video Camera in Unreal
+description: Guide to using the HoloLens photo/video camera in Unreal
 author: hferrone
 ms.author: v-haferr
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, camera, 3rd camera, MRC
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, camera, PV camera, MRC
 ---
 # HoloLens Photo/Video Camera in Unreal
 
