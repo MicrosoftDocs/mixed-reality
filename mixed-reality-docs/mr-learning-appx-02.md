@@ -27,11 +27,9 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AppXHologra
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section1-Step1-1.png)
 
-With the HolographicRemoting object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
+With the **HolographicRemoting** object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
-Now your Holographic Remoting app is ready, follow these instructions to [build your application to your PC](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device).
-
-![Note]: Apart from the **Player Settings** mentioned in the above instructions, make the following changes that are specific for the Holographic Remoting application.
+Now your Holographic Remoting app is ready to build your application to your PC follow these instructions  [build your application to your PC](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). while building your application do the following changes that are specific for the Holographic Remoting application.
 
 ### 1. Check the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
 
