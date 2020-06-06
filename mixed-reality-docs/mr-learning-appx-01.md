@@ -137,9 +137,9 @@ image
 
 Drag-and-drop the  **ClippingObjects** object from the Hierarchy window to the  **Toggle Button (Script)** component **Clipping Object** field.
 
-![Note]: In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects.
-
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-2.png)
+
+In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects.
 
 ## Configuring the clipping objects to enable clipping feature
 
@@ -161,7 +161,7 @@ In this section, you will explore how to enable eye tracking in your project. Fo
 
 ### 1. Identify target objects and associated tooltips
 
-In the Hierarchy window, select the ModelParent object and expand the MarsCuriosityRover to find five main parts of the MarsCuriosityRover: POI-Camera, POI-Wheels, POI-Antena, POI-Spectrometer, POI-RUHF Antenna.
+In the Hierarchy window, select the ModelParent object and expand the MarsCuriosityRover to find five main parts of the MarsCuriosityRover: **POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**.
 
 Notice five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
 
@@ -169,18 +169,19 @@ Notice five corresponding tooltip objects associated with MarsCuriosityRover par
 
 ### 2. Implement While Looking At Target ()  &  On Look Away () events
 
-In the Hierarchy window, expand the **MarsCuriosityRover's** object and select the POI-Camera object. In the Inspector window, locate the **Eye Tracking Target (Script)** component and configure the **While Looking At Target ()** & **On Look Away ()** events as follows:
+In the Hierarchy window, select the POI-Camera object. In the Inspector window, locate the **Eye Tracking Target (Script)** component and configure the **While Looking At Target ()** & **On Look Away ()** events as follows:
 
 * To **None (Object)** field, assign the **POI-Camera ToolTip** object
 * From **No Function** dropdown of While Looking At Target () event, select **GameObject** > **SetActive (bool),** select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-2.png)
 
-Follow the same process and click on the **No Function** dropdown of the On Look Away () event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action, that is triggered when you look away from the target object.
+* Follow the same process and click on the **No Function** dropdown of the On Look Away () event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action, that is triggered when you look away from the target object.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-3.png)
 
-Follow the same process and assign respective tooltip objects to their same **MarsCuriocityRover** parts While Looking At Target () & On Look Away () events.
+Follow the same process and assign respective tooltip objects to their same **MarsCuriocityRover** parts 
+**While Looking At Target ()** & **On Look Away ()** events.
 
 To enable simulated eye tracking for in-editor simulations, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
 
