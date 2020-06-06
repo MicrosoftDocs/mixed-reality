@@ -49,11 +49,11 @@ For this, first follow the [Initializing your project and first application](mrl
 
 3. [Import TextMesh Pro Essential Resources](mrlearning-base-ch1.md#import-textmesh-pro-essential-resources)
 
-4. [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit)
+4. [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) Version 2.4
 
 5. [Configuring the Unity project for the Mixed Reality Toolkit](mrlearning-base-ch1.md#Configuring-the-unity-project-for-the-mixed-reality-toolkit)
 
-6. [Add the Mixed Reality Toolkit to the Unity scene](mrlearning-base-ch1.md#configuring-the-mixed-reality-toolkit) and give the scene a suitable name, for example, *AppXHolographicRemoting*
+6. [Add the Mixed Reality Toolkit to the Unity scene](mrlearning-base-ch1.md#configuring-the-mixed-reality-toolkit) and give the scene a suitable name, for example, **PC Holographic Remoting**
 
 Then follow the [How to Configuring the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)](mrlearning-base-ch2.md#how-to-Configuring-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions to change the MRTK Configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
