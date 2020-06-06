@@ -68,7 +68,7 @@ After importing the tutorial assets, your Project window should look similar to 
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section2-Step1-1.png)
 
-## Creating and preparing the scene
+## Configure and preparing the scene
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
@@ -99,21 +99,17 @@ In this section, you will add scripts into the scene to create button events tha
 
 ### 1. Configuring the Interactable (Script) component
 
-In the Hierarchy window, select the **ButtonParent** object and in the Inspector window, notice two scripts are attached to it, one **View Button Control (Script)** to change the 3D model in the scene and another **Toggle Button (Script)** to enable and disable the ClippingObjects object.
+In the Hierarchy window, expand the **ButtonParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and click on **+** icon under **OnClick()** event.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-1.png)
 
-In the Hierarchy window, expand the ButtonParent object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and click on **+** icon under **OnClick()** event.
+With the **NextButton** object still selected in the Hierarchy window, click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for button click events from this button:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-2.png)
 
-With the **NextButton** object still selected in the Hierarchy window, click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for button click events from this button:
-
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-3.png)
-
 Click the **No Function** dropdown of the same event, then select **ViewButtonControl** > **NextModel ()** to set the **NextModel ()** function as the action that is triggered when the button pressed events is fired from this button:
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-4.png)
+![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-3.png)
 
 ### 2. Configuring the remaining buttons
 
@@ -131,9 +127,13 @@ For demonstration, we have provided five different 3D models, expand the ModelPa
 
 With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand the **Models** variable.
 
-In the **Size** field, enter the number of 3D models you would like to have in your scene. In this case, it would be five. It will create fields for adding new 3D models. Drag-and-drop the ModelParent object's child model objects into these fields:
+In the **Size** field, enter the number of 3D models you would like to have in your scene. In this case, it would be six. It will create fields for adding new 3D models.
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-1.png)
+
+Drag-and-drop the ModelParent object's child model objects into these fields.
+
+image
 
 Drag-and-drop the  **ClippingObjects** object from the Hierarchy window to the  **Toggle Button (Script)** component **Clipping Object** field.
 
