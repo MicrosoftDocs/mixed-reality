@@ -68,7 +68,7 @@ After importing the tutorial assets, your Project window should look similar to 
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section2-Step1-1.png)
 
-## Configure and preparing the scene
+## Configuring and preparing the scene
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
@@ -133,11 +133,11 @@ In the **Size** field, enter the number of 3D models you would like to have in y
 
 Drag-and-drop the ModelParent object's child model objects into these fields.
 
-image
+![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-2.png)
 
 Drag-and-drop the  **ClippingObjects** object from the Hierarchy window to the  **Toggle Button (Script)** component **Clipping Object** field.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-2.png)
+![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-3.png)
 
 In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects.
 
