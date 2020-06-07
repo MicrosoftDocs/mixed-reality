@@ -174,11 +174,11 @@ In the Hierarchy window, select the POI-Camera object. In the Inspector window, 
 * To **None (Object)** field, assign the **POI-Camera ToolTip** object
 * From **No Function** dropdown of While Looking At Target () event, select **GameObject** > **SetActive (bool),** select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-2.png)
+![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-1.png)
 
 * Follow the same process and click on the **No Function** dropdown of the On Look Away () event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action, that is triggered when you look away from the target object.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-3.png)
+![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-2.png)
 
 Follow the same process and assign respective tooltip objects to their same **MarsCuriocityRover** parts 
 **While Looking At Target ()** & **On Look Away ()** events.

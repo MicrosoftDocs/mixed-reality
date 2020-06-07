@@ -41,7 +41,7 @@ Now your Holographic Remoting app is ready to build your application to your PC 
 * Select **X64** architecture
 * Select **Local Machine** as the target instead of Device
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section2-Step1-3.png)
+![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section2-Step1-2.png)
 
 Once the build process is complete, your Holographic Remoting app will be installed by default on your PC.
 
