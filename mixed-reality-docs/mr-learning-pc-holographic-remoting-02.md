@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 2. Creating a Holographic Remoting PC application
+# 2. Creating a Holographic Rem   oting PC application
 
 In this tutorial, you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
 
@@ -29,7 +29,7 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhi
 
 With the **HolographicRemoting** object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
-## Build your application to your PC
+## Build your application to PC
 
 Your Holographic Remoting app is now ready to build on your PC. Follow the below steps and make these changes to build this application on to your PC.
 
@@ -49,7 +49,7 @@ In the Build Settings window, click the Add Open Scenes button to add your curre
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
-In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, Documents\MixedRealityLearning, create a new folder and give it a suitable name, for example, GettingStarted, and then click the Select Folder button to start the build process:
+In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, Documents\MixedRealityLearning, create a new folder and give it a suitable name, for example, PCHolographicRemoting, and then click the Select Folder button to start the build process:
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
 
@@ -72,7 +72,7 @@ Configure Visual Studio for PC by selecting the Release configuration, the x64 a
 
 Click the Local Machine button to start building and deploying the application on to your PC. The application will be installed in your PC by default.
 
-## How to test the Holographic Remoting remote application
+## Testing Holographic Remoting remote application
 
 To connect your Holographic Remoting PC application to your HoloLens 2, follow the below process:
 
