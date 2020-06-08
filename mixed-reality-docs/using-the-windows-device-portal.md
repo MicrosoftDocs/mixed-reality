@@ -1,8 +1,8 @@
 ---
 title: Using the Windows Device Portal
 description: The Windows Device Portal for HoloLens lets you configure and manage your device remotely over Wi-Fi or USB. The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. The Device Portal includes many tools that will help you manage your HoloLens and debug and optimize your apps.
-author: jonmlyons
-ms.author: jlyons
+author: hamalawi
+ms.author: moelhama
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
@@ -150,17 +150,44 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
 Use the Mixed Reality Capture page to save media streams from the HoloLens.
-* **Settings**: Control the media streams that are captured by checking the following settings:
+* **Capture Settings**: Control the media streams that are captured by checking the following settings:
   * **Holograms**: Captures the holographic content in the video stream. Holograms are rendered in mono, not stereo.
   * **PV camera**: Captures the video stream from the photo/video camera.
   * **Mic Audio**: Captures audio from the microphone array.
   * **App Audio**: Captures audio from the currently running app.
   * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if [supported by the running app](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (HoloLens 2 only).
   * **Live preview quality**: Select the screen resolution, frame rate, and streaming rate for the live preview.
+* **Audio Settings** (HoloLens 2 only):
+  * **Audio Media Category**: Select the category is used when processing the microphone. **Default**  will include some of the environment whereas **Communications** applies background noise cancellation.
+  * **App Audio Gain**: The gain applied to app audio's volume.
+  * **Mic Audio Gain**: The gain applied to mic audio's volume.
+* **Photo and Video Settings** (HoloLens 2, version 2004 or later):
+  * **Capture Profile**: Select the profile used when taking photos and videos. The profile determines which resolutions and frame-rates are available.
+  * **Photo Resolution**: The resolution the photo will be taken with.
+  * **Video Resolution and Frame-rate**: The resolution and frame-rate the video will be taken with.
+  * **Video Stabilization Buffer**: The buffer size used when taking a video. The higher the value, the better it can compensate for quick movements.
 * Click or tap the **Live preview** button to show the capture stream. **Stop live preview** stops the capture stream.
 * Click or tap **Record** to start recording the mixed-reality stream, using the specified settings. **Stop recording** ends the recording and saves it.
 * Click or tap **Take photo** to take a still image from the capture stream.
+* Click or tap **Restore Default Settings** to restore the default settings for audio, photo, and video settings.
 * **Videos and photos**: Shows a list of video and photo captures taken on the device.
+
+All settings on this page apply to captures taken using Windows Device Portal, but some additionally apply to System MRC (start menu, hardware buttons, global voice commands, Miracast) and to custom MRC Recorders.
+|  Setting  |  Applies to System MRC  |  Applies to Custom MRC Recorders |
+|----------|----------|----------|
+|  Holograms  |  No  |  No |
+|  PV camera  |  No  |  No |
+|  Mic Audio  |  No  |  No |
+|  App Audio  |  No  |  No |
+|  Render from Camera  |  Yes    |  Yes (can be overridden) |
+|  Live preview quality  |  No  |  No |
+|  Audio Media Category  |  Yes  |  No |
+|  App Audio Gain  |  Yes  |  Yes (can be overridden) |
+|  Mic Audio Gain  |  Yes  |  Yes (can be overridden) |
+|  Capture Profile  |  Yes  |  No |
+|  Photo Resolution  |  Yes  |  No |
+|  Video Resolution and Frame-rate  |  Yes  |  No |
+|  Video Stabilization Buffer  |  Yes  |  Yes (can be overridden) |
 
 > [!NOTE]
 > There are [limitations to simultaneous MRC](mixed-reality-capture-for-developers.md#simultaneous-mrc-limitations):

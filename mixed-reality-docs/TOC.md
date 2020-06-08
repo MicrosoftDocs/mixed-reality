@@ -4,8 +4,9 @@
 ## [Get ready for the new Microsoft Edge](new-microsoft-edge.md)
 ## Programs and events
 ### [San Francisco Reactor Academy events calendar](sf-academy-events.md)
-### [CVPR 2019 Mixed Reality workshop](cvpr-2019.md)
-## [Current mixed reality release notes](release-notes-may-2019.md)
+### [Mixed Reality Dev Days](mr-dev-days.md)
+#### [Session Recordings](mr-dev-days-sessions.md)
+## [Current mixed reality release notes](release-notes-may-2020.md)
 ## [Community Resources](community.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
 # Discover
@@ -20,6 +21,7 @@
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 ### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Location based entertainment](location-based-experiences.md)
+## [Hardware accessories](hardware-accessories.md)
 ## [Community Resources](community.md)
 # Design
 ## [Start designing and prototyping](design.md)
@@ -117,6 +119,7 @@
 ###### [1. Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
 ###### [2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
 ###### [3. Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md)
+###### [4. Azure Spatial Anchors for Android and iOS](mrlearning-asa-ch4.md)
 ##### Azure Speech Services tutorials
 ###### [1. Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
 ###### [2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)

@@ -1,79 +1,117 @@
 ---
 title: 4. Making your scene interactive
-description: Part 4 of a tutorial to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
-author: sw5813
-ms.author: suwu
+description: Part 4 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
+author: hferrone
+ms.author: v-haferr
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
 ---
 
-# 3. Making your scene interactive
+# 4. Making your scene interactive
 
-This section introduces you to the open source Mixed Reality Toolkit UX Tools plugin, which provides a set of tools to easily make your scene interactive. By the end of this section, your chess pieces will respond to user input. 
+## Overview
+
+In the previous tutorial you added an ARSession, Pawn, and Game Mode to complete the mixed reality setup for the chess app. This section focuses on using the open source [Mixed Reality Toolkit UX Tools](https://github.com/microsoft/MixedReality-UXTools-Unreal) plugin, which provides tools to make the scene interactive. By the end of this section you'll be able to move the chess pieces with user input. 
 
 ## Objectives
 
-* Include the Mixed Reality Toolkit UX Tools plugin in your project
-* Add Hand Interaction Actors to your fingertips
-* Create and attach Manipulators to your chess board and pieces 
-* Use input simulation to validate your project
+* Downloading the Mixed Reality Toolkit UX Tools plugin 
+* Adding Hand Interaction Actors to your fingertips
+* Creating and adding Manipulators to objects in the scene
+* Using input simulation to validate the project
 
-## Download the Mixed Reality Toolkit UX Tools plugin
+## Downloading the MRTK UX Tools plugin
+Before you start working with user input, you'll need to add the plugin to the project.
 
-1.	Clone or download and unzip the latest release of the MRTK UX Tools plugin from the [UX Tools GitHub repository](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases)
+1.	Clone or download the latest MRTK UX Tools plugin from the [GitHub repository](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) and unzip the file.
 
-2.	In your chess project root folder, create a new folder called “Plugins”. Copy your unzipped UXTools plugin into this folder. Restart the Unreal editor. 
+2.	Create a new folder called **Plugins** in the root folder of the project. Copy the unzipped UXTools plugin into this folder and restart the Unreal editor. 
 
 ![Create a project plugins folder](images/unreal-uxt/4-plugins.PNG)
 
-3.	After restarting, if you don’t see UXTools plugin content in your sources panel, you may need to click on **View Options > Show Plugin Content**. You’ll see that the UXTools plugin provides a Content folder with Pointers, Input Simulation, and a Simple Button, as well as a C++ Classes folder with subfolders separated by function.  
+3.	The UXTools plugin has a Content folder with subfolders for **Pointers**, **Input Simulation**, and **Simple Button**, as well as a C++ Classes folder separated by function.  
+
+> [!NOTE]
+> If you don’t see the **UXTools Content** section in the **Content Browser**, click **View Options > Show Plugin Content**. 
 
 ![Show plugin content](images/unreal-uxt/4-showplugincontent.PNG)
 
-## Spawn Hand Interaction Actors
+With the plugin safely installed, you're ready to start using the tools it has to offer, starting with hand interaction actors.
 
-1.	Let’s start by spawning Hand Interaction Actors from our MRPawn so that 1) we can visualize MRPawn with a cursor on the tips of the Pawn’s index fingers, 2) we can provide articulated hand input events (and thus, directly manipulate actors) through the Pawn, and 3) we can provide far interaction input events through hand rays extending from our palms. Open the **MRPawn** Blueprint and navigate to the **Event Graph**. 
+## Spawning Hand Interaction Actors
+Hand interaction with UX elements is performed with Hand Interaction Actors, which create and drive the pointers and visuals for near and far interactions.
+- *Near interactions* are performed by pinching elements between index finger and thumb or by poking them with a fingertip. 
+- *Far interactions* are performed by pointing a ray from the virtual hand at an element and pressing index and thumb together.
 
-2.	Drag the execution pin from Event BeginPlay and release to place a new node. Select the **Spawn Actor from Class** node. Click the dropdown next to the **Class** pin and search for **Uxt Hand Interaction Actor**. Drag the execution pin from the SpawnActor Uxt Hand Interaction node, release, and search for the **Set Hand** function contained in the Uxt Hand Interaction Actor class. Connect the SpawnActor node’s Return Value to the Target pin of the Set Hand node to set the hand of the Hand Interaction Actor to **Left**. Spawn a second **Uxt Hand Interaction Actor**, this time setting the hand to **Right**, so that when the event begins, a Uxt Hand Interaction Actor will be spawned on each hand. 
+In our case, adding a Hand Interaction Actor to **MRPawn** will:
+- Add a cursor to the tips of the Pawn’s index fingers.
+- Provide articulated hand input events that can be manipulated through the Pawn.
+- Allow far interaction input events through hand rays extending from the palms of the virtual hands.
+
+In order to drive these concepts home, you're encouraged to read through the [documentation](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/HandInteraction.md) on hand interactions before continuing. 
+
+Once you're ready, open the **MRPawn** Blueprint and go to the **Event Graph**. 
+
+1. Drag and release the execution pin from **Event BeginPlay** to place a new node. 
+    * Select **Spawn Actor from Class**, click the dropdown next to the **Class** pin and search for **Uxt Hand Interaction Actor**. 
+
+2. Drag and release the execution pin from the **SpawnActor Uxt Hand Interaction** node and search for the **Set Hand** function in the **Uxt Hand Interaction Actor** class. 
+    * Connect the **SpawnActor** node’s **Return Value** to the **Target** pin of the **Set Hand** node. This sets the hand of the Hand Interaction Actor to **Left**. 
+
+3. Spawn a second **Uxt Hand Interaction Actor**, this time setting the hand to **Right**. When the event begins, a Uxt Hand Interaction Actor will be spawned on each hand. 
+
+Your **Event Graph** should match the following screenshot:
 
 ![Spawn UXT Hand Interaction Actors](images/unreal-uxt/4-spawnactor.PNG)
 
-3.	Next, we need to provide our Uxt Hand Interaction Actors with an initial transform at which to spawn, and an owner. Drag the pin off one of the **Spawn Transform** pins and release to place a new node. Search for the **Make Transform** node. The initial transform really doesn’t matter since the Hand Interaction Actors will jump to our hands as soon as they are visible (code that’s already written for us in the UX Tools plugin), otherwise, they’ll disappear. However, the SpawnActor function requires a Transform as input to avoid a compiler error, so we’ll just leave the default values in Make Transform as is. Drag Make Transform’s **Return Value** to the other hand’s Interaction Actor Spawn Transform as well. 
+Both Uxt Hand Interaction Actors need owners and initial transform locations. The initial transform  doesn’t matter since the Hand Interaction Actors will jump to the virtual hands as soon as they're visible (this behavior is included in the UX Tools plugin). However, the `SpawnActor` function requires a Transform input to avoid a compiler error, so you'll use the default values. 
 
-4.	Click the **down arrow** at the bottom of both SpawnActor nodes to reveal the **Owner** pin. Drag the pin off one of the **Owner** pins and release to place a new node. Search for “self” and select the **Get a reference to self** variable. Create a link between the Self object reference node and the other Hand Interaction Actor’s Owner pin as well. Feel free to drag around nodes to make your Blueprint more readable. **Compile**, **save**, and return to the Main window. 
+1. Drag and release the pin off one of the **Spawn Transform** pins to place a new node. 
+    * Search for the **Make Transform** node, then drag the **Return Value** to the other hand’s **Spawn Transform** so that both **SpawnActor** nodes are connected. 
 
-![Complete UXT Hand Interaction Actor setup](images/unreal-uxt/4-fingerptrs.PNG)
+3.	Click the **down arrow** at the bottom of both **SpawnActor** nodes to reveal the **Owner** pin.    
+    * Drag the pin off one of the **Owner** pins and release to place a new node. 
+    * Search for **self** and select the **Get a reference to self** variable, then create a link between the **Self** object reference node and the other Hand Interaction Actor’s **Owner** pin. 
+    * **Compile**, **save**, and return to the Main window. 
 
-For more information about the Hand Interaction Actor provided in the MRTK UX Tools plugin, check out the official [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.8.x/Docs/HandInteraction.html).
+Make sure the connections match the following screenshot, but feel free to drag around nodes to make your Blueprint more readable
 
-## Attach Manipulators
+![Complete UXT Hand Interaction Actor setup](images/unreal-uxt/4-fingerptrs.PNG) 
 
-1.	Next, we’ll attach Manipulators to our chess board and king Actors. A Manipulator is a component that responds to articulated hand input and can be grabbed, rotated, and translated; by applying the Manipulator’s transform to that of an Actor, Actors can be directly manipulated. 
+You can find more information about the Hand Interaction Actor provided in the MRTK UX Tools plugin in the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.8.x/Docs/HandInteraction.html).
 
-2.	Open your Board Blueprint. In the **Components** panel, click **Add Component** and search for **Uxt Generic Manipulator**. In the Details panel, you’ll find a section titled **Generic Manipulator** where you can set whether you want to enable one-handed or two-handed manipulation, the rotation mode, and smoothing. Feel free to select whichever modes you wish, then **Compile** and **Save** Board. 
+Now the virtual hands in the project have a way of selecting objects, but they still can't manipulate them. Your last task before testing the app is to add Manipulator components to the actors in the scene.
+
+## Attaching Manipulators
+
+A Manipulator is a component that responds to articulated hand input and can be grabbed, rotated, and translated. Applying the Manipulator’s transform to an Actors transform allows direct Actor manipulation. 
+
+1. Open the **Board** blueprint, click **Add Component** and search for **Uxt Generic Manipulator** in the **Components** panel.
 
 ![Add a generic manipulator](images/unreal-uxt/4-addmanip.PNG)
 
+2. Expand the **Generic Manipulator** section in the **Details** panel. You can set one-handed or two-handed manipulation, rotation mode, and smoothing from here. Feel free to select whichever modes you wish, then **Compile** and **Save** Board. 
+
 ![Set the mode](images/unreal-uxt/4-setrotmode.PNG)
 
-3.	Repeat the steps above for the WhiteKing Actor.
+3. Repeat the steps above for the **WhiteKing** Actor.
 
-For more information about the Manipulator Components provided in the MRTK UX Tools plugin, visit the official [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.8.x/Docs/Manipulator.html).
+You can find more information about the Manipulator Components provided in the MRTK UX Tools plugin in the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.8.x/Docs/Manipulator.html).
 
-## Test out your scene with simulated hands
-
-1.	In the Main window, press **Play**. You should see two mesh hands provided by the MRTK UX Tools plugin, with hand rays extending from each hand’s palm! 
+## Testing the scene
+Good news everyone! You're ready to test out the app with its new virtual hands and user input. Press **Play** in the Main Window and you'll see two mesh hands provided by the MRTK UX Tools plugin with hand rays extending from each hand’s palm. You can control the hands and their interactions as follows:
+- Hold down the **left Alt** key to control the **left hand** and the **left Shift** key to control the **right hand**. 
+- Move your mouse to move the hand and scroll with your **mouse wheel** to move the hand **forwards** or **backwards**. 
+- Click the left mouse button to **pinch**, click the middle mouse button to **poke**. 
 
 ![Simulated hands in the viewport](images/unreal-uxt/4-handsim.PNG)
 
-2.	To control the **right hand**, hold down the **left Alt** button. Move your mouse to move the hand. Scroll with your **mouse wheel** to move the hand **forwards** or **backwards**. Click your left mouse to **pinch**, click the middle mouse button to **poke**.
+Try using the simulated hands to pick up, move, and set down the white chess king and manipulate the board! Experiment with both near and far interaction - notice that when your hands get close enough to grab the board and king directly, the hand ray disappears and is replaced with a finger cursor at the tip of the index finger. 
 
-3.	To control the **left hand**, hold down the **left Shift** button. The controls for moving the left hand are the same as those for the right hand. 
+You can find more information about the simulated hands feature provided by the MRTK UX Tools plugin in the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.8.x/Docs/InputSimulation.html).
 
-4.	Now try using the simulated hands to pick up, move, and set down the white chess king. You can also manipulate the board! Experiment with both near and far interaction- notice that when your hands get close enough to grab the board and king directly, the hand ray disappears and is replaced with a finger cursor on the index tip. 
-
-For more information about the simulated hands feature provided by the MRTK UX Tools plugin, visit the official [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.8.x/Docs/InputSimulation.html).
+Now that your virtual hands can interact with objects, you're ready to move on to the next tutorial and add user interfaces and events.
 
 [Next Section: 5. Adding a button & resetting piece locations](unreal-uxt-ch5.md)
