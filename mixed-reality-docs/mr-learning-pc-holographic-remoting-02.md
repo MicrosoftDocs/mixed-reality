@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 2. Creating a Holographic Rem   oting PC application
+# 2. Creating a Holographic Remoting PC application
 
 In this tutorial, you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
 
@@ -27,15 +27,13 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhi
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
 
-With the **HolographicRemoting** object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
-
 ## Build your application to PC
 
 Your Holographic Remoting app is now ready to build on your PC. Follow the below steps and make these changes to build this application on to your PC.
 
 ### 1. Set the player settings
 
-In the Unity menu, select File > Edit > Project Settings... to open the Player Settings window.
+In the Unity menu, select Edit > Project Settings... to open the Player Settings window.
 
 In **XR Settings** section, select the **WSA Holographic Remoting Supported** checkbox and enable the Holographic Remoting.
 
@@ -59,7 +57,7 @@ Wait for Unity to finish the build process:
 
 ### 3. Build and deploy the application
 
-When the build process is completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
+When the build process is completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the .sln file to open it in Visual Studio:
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-1.png)
 
@@ -68,7 +66,7 @@ When the build process is completed, Unity will prompt Windows File Explorer to 
 
 Configure Visual Studio for PC by selecting the Release configuration, the x64 architecture, and Local Machine as target:
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-2.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
 
 Click the Local Machine button to start building and deploying the application on to your PC. The application will be installed in your PC by default.
 

@@ -59,7 +59,7 @@ Then follow the [How to Configuring the Mixed Reality Toolkit Profiles (Change S
 
 ## Importing the tutorial assets
 
-Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/onginnovations/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.PCHolographicRemoting.2.3.0.0.unitypackage).
+Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/onginnovations/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
@@ -83,7 +83,7 @@ In the Project window, navigate to **Assets** > **MRTK.Tutorials.PCHolograhicRem
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-1.png)
 
-With the six prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+Drag-and-drop these models from prefabs folder into the **Hierarchy window**.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
 
@@ -164,7 +164,7 @@ In this section, you will explore how to enable eye tracking in your project. Fo
 
 In the Hierarchy window, select the ModelParent object and expand the MarsCuriosityRover to find five main parts of the MarsCuriosityRover: **POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**.
 
-Notice five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
+Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
 
