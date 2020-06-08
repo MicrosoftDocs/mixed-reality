@@ -66,13 +66,14 @@ Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](
 
 After importing the tutorial assets, your Project window should look similar to this:
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section2-Step1-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
 
 ## Configuring and preparing the scene
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.PCHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button. Click on the below six prefabs. 
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.PCHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button. Click on the below six prefabs.
+
 * ButtonParent
 * ClippingObjects
 * HandSpatialMapButton
@@ -80,15 +81,15 @@ In the Project window, navigate to **Assets** > **MRTK.Tutorials.PCHolograhicRem
 * ModelParent
 * Platform
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section3-Step1-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-1.png)
 
 With the six prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section3-Step1-2.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
 
 To focus in on the objects in the scene, you can double-click on the **ModelParent** object, and then zoom slightly in again:
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section3-Step1-3.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
@@ -101,15 +102,15 @@ In this section, you will add scripts into the scene to create button events tha
 
 In the Hierarchy window, expand the **ButtonParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and click on **+** icon under **OnClick()** event.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
 
 With the **NextButton** object still selected in the Hierarchy window, click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for button click events from this button:
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-2.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-2.png)
 
 Click the **No Function** dropdown of the same event, then select **ViewButtonControl** > **NextModel ()** to set the **NextModel ()** function as the action that is triggered when the button pressed events is fired from this button:
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step1-3.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-3.png)
 
 ### 2. Configuring the remaining buttons
 
@@ -129,15 +130,15 @@ With the ButtonParent object still selected in the Hierarchy window, in the Insp
 
 In the **Size** field, enter the number of 3D models you would like to have in your scene. In this case, it would be six. It will create fields for adding new 3D models.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
 
 Drag-and-drop the ModelParent object's child model objects into these fields.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-2.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-2.png)
 
 Drag-and-drop the  **ClippingObjects** object from the Hierarchy window to the  **Toggle Button (Script)** component **Clipping Object** field.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section4-Step3-3.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-3.png)
 
 In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects.
 
@@ -149,7 +150,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 To configuring the **ClippingSphere** object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers in size field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers, drag-and-drop MarsCuriosityRover Object's child model objects into these fields.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section5-Step1-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
 
 Follow the same process and add MarsCuriosityRover's child objects renderers to the **ClippingBox** and **ClippingPlane** objects.
 
@@ -165,7 +166,7 @@ In the Hierarchy window, select the ModelParent object and expand the MarsCurios
 
 Notice five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step1-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
 
 ### 2. Implement While Looking At Target ()  &  On Look Away () events
 
@@ -174,13 +175,13 @@ In the Hierarchy window, select the POI-Camera object. In the Inspector window, 
 * To **None (Object)** field, assign the **POI-Camera ToolTip** object
 * From **No Function** dropdown of While Looking At Target () event, select **GameObject** > **SetActive (bool),** select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
 * Follow the same process and click on the **No Function** dropdown of the On Look Away () event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action, that is triggered when you look away from the target object.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section6-Step2-2.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 
-Follow the same process and assign respective tooltip objects to their same **MarsCuriocityRover** parts 
+Follow the same process and assign respective tooltip objects to their same **MarsCuriocityRover** parts
 **While Looking At Target ()** & **On Look Away ()** events.
 
 To enable simulated eye tracking for in-editor simulations, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).

@@ -25,7 +25,7 @@ In this section, you will configure your project to stream your Mixed Reality ex
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AppXHolograhicRemoting**> **Prefabs** folder, and click-and-drag **HolographicRemoting** prefab into your scene.
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section1-Step1-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
 
 With the **HolographicRemoting** object still selected in the Hierarchy window, locate the **Holographic Remote Connect (Script)** component. The script uses HolographicRemoting API to connect, disconnect, and check the connection status.
 
@@ -33,7 +33,7 @@ Now your Holographic Remoting app is ready to build your application to your PC 
 
 ### 1. Check the Windows Mixed Reality **WSA Holographic Remoting Supported** checkbox
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section2-Step1-1.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
 
 ### 2. Configuring Visual Studio for PC with the below settings
 
@@ -41,7 +41,7 @@ Now your Holographic Remoting app is ready to build your application to your PC 
 * Select **X64** architecture
 * Select **Local Machine** as the target instead of Device
 
-![mr-learning-appx](images/mr-learning-appx/Tutorial2-Section2-Step1-2.png)
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-2.png)
 
 Once the build process is complete, your Holographic Remoting app will be installed by default on your PC.
 
