@@ -47,13 +47,21 @@ In the Unity menu, select File > Build Settings... to open the Build Settings wi
 
 In the Build Settings window, click the Add Open Scenes button to add your current scene to the Scenes In Build list, then click the Build button to open the Build Universal Windows Platform window:
 
-In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, D:\MixedRealityLearning\Builds, create a new folder and give it a suitable name, for example, GettingStarted, and then click the Select Folder button to start the build process:
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
+
+In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, Documents\MixedRealityLearning, create a new folder and give it a suitable name, for example, GettingStarted, and then click the Select Folder button to start the build process:
+
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
 
 Wait for Unity to finish the build process:
+
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-3.png)
 
 ### 3. Build and deploy the application
 
 When the build process is completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
+
+![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-1.png)
 
 > [!NOTE]
 > If Visual Studio asks you to install new components, take a moment to ensure that all prerequisite components are installed as specified in the Install the Tools documentation.
