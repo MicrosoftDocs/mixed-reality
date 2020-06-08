@@ -48,7 +48,7 @@ The Event Graph in the following image shows the **OnUpdateTrackedImage** event 
 
 ![QR Render Example](images/unreal-qr-render.PNG)
 
-Here's waht's going on:
+Here's what's going on:
 1. First, the tracked image is cast to an **ARTrackedQRCode** to check that the current updated image is a QR code.  
 2. The encoded data is retrieved from the **QRCode** variable. You can get the top-left of the QR code from the location of **GetLocalToWorldTransform** and the dimensions with **GetEstimateSize**. 
 

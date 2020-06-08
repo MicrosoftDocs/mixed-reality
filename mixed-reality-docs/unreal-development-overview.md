@@ -27,11 +27,14 @@ The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedReality
 [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) is the first component to be released and is currently only supported on HoloLens 2. The component plugin includes code, blueprints, and example assets of common UX features including:
 * Input simulation
 * Hand interaction actor
-* Pressable button component
+* Press-able button component
 * Manipulator component
 * Follow behavior component
 
 You can dive into the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) GitHub repository for feature details and information on setting up your project.
+
+## Additional files
+If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) from the Epic Launcher.
 
 ## Tutorial
 
