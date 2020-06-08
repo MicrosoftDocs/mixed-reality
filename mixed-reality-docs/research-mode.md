@@ -16,7 +16,7 @@ Research mode was introduced in the 1st Generation HoloLens to give access to ke
 
 * **Visible Light Environment Tracking Cameras** - Used by the system for head tracking and map building.
 * **Depth Camera** – Operates in two modes:  
-    + Short-throw, high-frequency (30 FPS) near-depth sensing used for [Hand Tracking](interaction-fundamentals)
+    + Short-throw, high-frequency (30 FPS) near-depth sensing used for [Hand Tracking](interaction-fundamentals.md)
     + Long-throw, low-frequency (1-5 FPS) far-depth sensing used by [Spatial Mapping](spatial-mapping.md)
 * **Two versions of the IR-reflectivity stream** - Used by the HoloLens to compute depth. These images are illuminated by infrared and unaffected by ambient visible light.
 
