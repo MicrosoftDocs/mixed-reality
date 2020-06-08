@@ -23,7 +23,7 @@ In this tutorial, you will learn how to create a PC app for Holographic Remoting
 
 In this section, you will configure your project to stream your Mixed Reality experience to your HoloLens 2 device from your PC in real-time over a Wi-Fi connection.
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting**> **Prefabs** folder, and click-and-drag **HolographicRemoting** prefab into your scene.
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder, and click-and-drag **HolographicRemoting** prefab into your scene.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
 

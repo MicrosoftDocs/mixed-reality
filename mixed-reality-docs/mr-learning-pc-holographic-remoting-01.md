@@ -173,11 +173,11 @@ Observe five corresponding tooltip objects associated with MarsCuriosityRover pa
 In the Hierarchy window, select the POI-Camera object. In the Inspector window, locate the **Eye Tracking Target (Script)** component and configure the **While Looking At Target ()** & **On Look Away ()** events as follows:
 
 * To **None (Object)** field, assign the **POI-Camera ToolTip** object
-* From **No Function** dropdown of While Looking At Target () event, select **GameObject** > **SetActive (bool),** select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
+* From **No Function** dropdown of **While Looking At Target ()** event, select **GameObject** > **SetActive (bool),** select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
-* Follow the same process and click on the **No Function** dropdown of the On Look Away () event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action, that is triggered when you look away from the target object.
+* Follow the same process and click on the **No Function** dropdown of the **On Look Away ()** event listener, then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action, that is triggered when you look away from the target object.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 
