@@ -20,7 +20,7 @@ Research mode was introduced in the 1st Generation HoloLens to give access to ke
     + Long-throw, low-frequency (1-5 FPS) far-depth sensing used by [Spatial Mapping](spatial-mapping.md)
 * **Two versions of the IR-reflectivity stream** - Used by the HoloLens to compute depth. These images are illuminated by infrared and unaffected by ambient visible light.
 
-If you're using a HoloLens 2 you can also access the following inputs:
+If you're using a HoloLens 2 you will also be able to access the following inputs:
 
 * **Accelerometer** – Used by the system to determine linear acceleration along the X, Y and Z axes and gravity.
 * **Gyro** – Used by the system to determine rotations.
