@@ -49,7 +49,7 @@ Now that the function is setup correctly, your next task is to create a button t
 
 ![Subclass the new Blueprint from SimpleButton](images/unreal-uxt/5-subclass.PNG)
 
-2. Click **PressableButton (Inherited)** from the **Components** panel and scroll down the **Details** panel to the **Events** section. 
+2. Click **Pressable Button (Inherited)** from the **Components** panel and scroll down the **Details** panel to the **Events** section. 
     * Click the green **+** button next to **On Button Pressed** to add an event to the Event Graph, which will be called when the button is pressed. 
     
 From here, you’ll want to call **WhiteKing**’s **Reset Location** function, which needs a reference to the **WhiteKing** Actor in the Level. 
