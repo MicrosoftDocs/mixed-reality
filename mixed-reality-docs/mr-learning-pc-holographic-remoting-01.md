@@ -15,9 +15,9 @@ ms.localizationpriority: high
 
   Welcome to the HoloLens 2 tutorials. In this two-part tutorial series, you will learn how to create a Mixed Reality experience demonstration and how to create a PC app for Holographic Remoting.
 
-  In this tutorial, [Create Mixed Reality experience](mr-learning-appx-01.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features.
+  In this tutorial, [Create Mixed Reality experience](mr-learning-pc-holographic-remoting-01.md), you will learn how to create a Mixed Reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye tracking features.
 
-  In the second tutorial, [Create Holographic Remoting application](mr-learning-appx-02.md), you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
+  In the second tutorial, [Create Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md), you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in Mixed Reality.
 
 ## Objectives
 
@@ -49,7 +49,7 @@ For this, first follow the [Initializing your project and first application](mrl
 
 3. [Import TextMesh Pro Essential Resources](mrlearning-base-ch1.md#import-textmesh-pro-essential-resources)
 
-4. [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) Version 2.4
+4. [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit)
 
 5. [Configuring the Unity project for the Mixed Reality Toolkit](mrlearning-base-ch1.md#Configuring-the-unity-project-for-the-mixed-reality-toolkit)
 
@@ -59,7 +59,7 @@ Then follow the [How to Configuring the Mixed Reality Toolkit Profiles (Change S
 
 ## Importing the tutorial assets
 
-Download and **import** the [MRTK.Tutorials.AppxHoloLensRemoting.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage).
+Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/onginnovations/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.PCHolographicRemoting.2.3.0.0.unitypackage).
 
 >[!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
@@ -72,12 +72,12 @@ After importing the tutorial assets, your Project window should look similar to 
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.HolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button. Click on the below six prefabs. 
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.PCHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button. Click on the below six prefabs. 
 * ButtonParent
 * ClippingObjects
-* ModelParent
-* Instructions
 * HandSpatialMapButton
+* Instructions
+* ModelParent
 * Platform
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section3-Step1-1.png)
@@ -86,7 +86,7 @@ With the six prefabs still selected, drag them into the Hierarchy window to add 
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section3-Step1-2.png)
 
-To focus in on the objects in the scene, you can double-click on the ModelParent object, and then zoom slightly in again:
+To focus in on the objects in the scene, you can double-click on the **ModelParent** object, and then zoom slightly in again:
 
 ![mr-learning-appx](images/mr-learning-appx/Tutorial1-Section3-Step1-3.png)
 
@@ -123,7 +123,7 @@ For each of the remaining buttons, complete the process outlined above to assign
 
 Now your buttons are configured to demonstrate the model switching and clipping functionality, and it is time to add 3D models and the clipping objects to the script.
 
-For demonstration, we have provided five different 3D models, expand the ModelParent object to expose these 3D models.
+For demonstration, we have provided five different 3D models, expand the **ModelParent** object to expose these 3D models.
 
 With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand the **Models** variable.
 
@@ -143,7 +143,7 @@ In the Hierarchy window, select the **ClippingObjects** prefab and enable it in 
 
 ## Configuring the clipping objects to enable clipping feature
 
-In this section, you will add MarsCuriosityRover object's child objects renderer into an individual clipping object to demonstrate the clipping of MarsCuriosityRover.
+In this section, you will add MarsCuriosityRover object's child objects renderer into an individual clipping object to demonstrate the clipping of MarsCuriosityRover model.
 
 In the Hierarchy window, expand the **ClippingObjects** object to expose the three different clipping objects that you will be using in this project.
 
@@ -153,7 +153,7 @@ To configuring the **ClippingSphere** object, click on it, and in the Inspector 
 
 Follow the same process and add MarsCuriosityRover's child objects renderers to the **ClippingBox** and **ClippingPlane** objects.
 
-In this tutorial, only the MarsCuriosityRover model will be used for demonstrating the clipping feature. For adding clipping features to more models, increase the size of the renderer, and add individual mesh renderers.
+In this tutorial, only the MarsCuriosityRover model will be used for demonstrating the clipping feature. For adding clipping features to more models, increase the size of the renderer, and add their individual mesh renderers.
 
 ## Configuring eye tracking to highlight tooltips
 
@@ -191,4 +191,4 @@ In this tutorial, you learned to build a mixed reality experience demonstrating 
 
 In the next lesson, you will learn how to create a Holographic Remoting application for PC to connect HoloLens 2 at any point, providing a way to Visualize 3D content in Mixed reality.
 
-[Next Lesson: 2. Create Holographic Remoting application](mr-learning-appx-02.md)
+[Next Lesson: 2. Create Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md)
