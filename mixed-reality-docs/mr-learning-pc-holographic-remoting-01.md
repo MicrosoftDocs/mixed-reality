@@ -72,7 +72,7 @@ After importing the tutorial assets, your Project window should look similar to 
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.PCHolograhicRemoting**> **Prefabs** folder. While holding down the CTRL button. Click on the below six prefabs.
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder. While holding down the CTRL button. Click on the below six prefabs.
 
 * ButtonParent
 * ClippingObjects
@@ -100,7 +100,7 @@ In this section, you will add scripts into the scene to create button events tha
 
 ### 1. Configuring the Interactable (Script) component
 
-In the Hierarchy window, expand the **ButtonParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and click on **+** icon under **OnClick()** event.
+In the Hierarchy window, expand the **ButtonParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and click on **+** icon under **OnClick ()** event.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
 
@@ -124,7 +124,7 @@ For each of the remaining buttons, complete the process outlined above to assign
 
 Now your buttons are configured to demonstrate the model switching and clipping functionality, and it is time to add 3D models and the clipping objects to the script.
 
-For demonstration, we have provided five different 3D models, expand the **ModelParent** object to expose these 3D models.
+For demonstration, we have provided six different 3D models, expand the **ModelParent** object to expose these 3D models.
 
 With the ButtonParent object still selected in the Hierarchy window, in the Inspector window, locate the **View Button Control (Script)** component and expand the **Models** variable.
 
@@ -181,7 +181,7 @@ In the Hierarchy window, select the POI-Camera object. In the Inspector window, 
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 
-Follow the same process and assign respective tooltip objects to their same **MarsCuriocityRover** parts
+Follow the same process and assign respective tooltip objects to their same **MarsCuriosityRover** parts
 **While Looking At Target ()** & **On Look Away ()** events.
 
 To enable simulated eye tracking for in-editor simulations, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
