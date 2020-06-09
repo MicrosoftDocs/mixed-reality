@@ -3,7 +3,7 @@ title: Advanced HoloLens Emulator and Mixed Reality Simulator input
 description: Detailed instructions for using the keyboard, mouse, and Xbox controller to simulate input for the HoloLens Emulator and Windows Mixed Reality simulator.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 05/12/2020
+ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality
 ---
@@ -58,7 +58,7 @@ The following table shows how each type of input maps to the keyboard, mouse, an
 |  Z |  W / S |  |  Left thumbstick up / down | 
 |  Action |  Enter or space |  Right button |  A button or either trigger | 
 |  Bloom/System |  F2 or Windows key |  |  B button | 
-|  Controller grip button |  G  |  |  | 
+|  Controller grip button / Hand grasp |  G  |  |  | 
 |  Controller menu button |  M  |  |  | 
 |  Controller touchpad touch |  U  |  |  | 
 |  Controller touchpad press |  P  |  |  | 
