@@ -173,6 +173,7 @@ Use the Mixed Reality Capture page to save media streams from the HoloLens.
 * **Videos and photos**: Shows a list of video and photo captures taken on the device.
 
 All settings on this page apply to captures taken using Windows Device Portal, but some additionally apply to System MRC (start menu, hardware buttons, global voice commands, Miracast) and to custom MRC Recorders.
+
 |  Setting  |  Applies to System MRC  |  Applies to Custom MRC Recorders |
 |----------|----------|----------|
 |  Holograms  |  No  |  No |
