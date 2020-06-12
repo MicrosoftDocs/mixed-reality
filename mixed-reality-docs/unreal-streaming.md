@@ -1,6 +1,6 @@
 ---
 title: Streaming in Unreal
-description: Part 1 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
+description: A guide to streaming in Unreal to HoloLens 2
 author: suwu
 ms.author: suwu
 ms.date: 6/8/2020
