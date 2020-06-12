@@ -12,19 +12,19 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, str
 # Streaming in Unreal
 
 ## Overview
-Streaming from a PC to HoloLens provides two major advantages which can be useful for certain use cases: it enables your mixed reality app to take advantage of the computational power available on the PC, and it helps speed up development iteration time. By downloading the [Holographic Remoting Player](https://docs.microsoft.com/en-us/windows/mixed-reality/holographic-remoting-player) on your HoloLens, you can stream your app directly to the remoting player on your HoloLens from one of two sources:
+Streaming from a PC to HoloLens provides two major advantages which can be useful for certain use cases: it enables your mixed reality app to take advantage of the computational power available on the PC, and it helps speed up development iteration time. By downloading the [Holographic Remoting Player](holographic-remoting-player.md) on your HoloLens, you can stream your app directly to the remoting player on your HoloLens from one of two sources:
 
 * The Unreal Engine editor
 * A packaged Windows executable 
 
-When streaming, you have access to almost all the same HoloLens capabilities you would as for an application running on device (ex: hand joint tracking, spatial mapping, spatial anchors, etc.), except for this [list of limitations](https://docs.microsoft.com/en-us/windows/mixed-reality/holographic-remoting-troubleshooting). Note that streaming quality is highly dependent on the quality of your wifi network.
+When streaming, you have access to almost all the same HoloLens capabilities you would as for an application running on device (ex: hand joint tracking, spatial mapping, spatial anchors, etc.), except for this [list of limitations](holographic-remoting-troubleshooting.md). Note that streaming quality is highly dependent on the quality of your wifi network.
 
 ## Streaming from the Unreal editor
 
 A major benefit to developers of streaming from the Unreal editor is the ability to instantly test your app on device, without needing to first wait for your app to build and deploy.
 
 See the last section of the Getting Started with Unreal tutorial for instructions for 
-[streaming from the Unreal editor](https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-uxt-ch6#device-only-streaming).
+[streaming from the Unreal editor](unreal-uxt-ch6.md#device-only-streaming).
 
 ## Streaming from a packaged Windows executable
 
