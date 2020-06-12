@@ -7,34 +7,79 @@ ms.date: 6/8/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, streaming, PC, holographic app remoting, holographic remoting player, documentation
+appliesto:
+- HoloLens 
+- HoloLens 2
 ---
 
 # Streaming in Unreal
 
 ## Overview
-Streaming from a PC to HoloLens provides two major advantages which can be useful for certain use cases: it enables your mixed reality app to take advantage of the computational power available on the PC, and it helps speed up development iteration time. By downloading the [Holographic Remoting Player](holographic-remoting-player.md) on your HoloLens, you can stream your app directly to the remoting player on your HoloLens from one of two sources:
+Streaming from a PC to HoloLens provides two major advantages: 
+* It lets your mixed reality app take advantage of your PCs computational power. 
+* It helps speed up development iteration time. 
+
+To get started, you'll need to download the [Holographic Remoting Player](holographic-remoting-player.md) to your HoloLens device. This allows your app to stream  directly to the remoting player on your HoloLens from the following sources:
 
 * The Unreal Engine editor
 * A packaged Windows executable 
 
-When streaming, you have access to almost all the same HoloLens capabilities you would as for an application running on device (ex: hand joint tracking, spatial mapping, spatial anchors, etc.), except for this [list of limitations](holographic-remoting-troubleshooting.md). Note that streaming quality is highly dependent on the quality of your wifi network.
+When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) (if you're on a HoloLens 2), [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list of limitations](holographic-remoting-troubleshooting.md). 
+
+> [!NOTE]
+> Streaming quality is highly dependent on the strength of your wifi network.
+
+## Device support
+
+<table>
+    <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+    </colgroup>
+    <tr>
+        <td><strong>Source</strong></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens 1st Gen</strong></a></td>
+        <td><a href="https://www.microsoft.com/hololens/hardware"><strong>HoloLens 2</strong></a></td>
+        <td><strong>Immersive Headsets</strong></td>
+    </tr>
+     <tr>
+        <td>Unreal editor</td>
+        <td>✔</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
+    <tr>
+        <td>Windows package</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
+    </tr>
+
+</table>
 
 ## Streaming from the Unreal editor
 
-A major benefit to developers of streaming from the Unreal editor is the ability to instantly test your app on device, without needing to first wait for your app to build and deploy.
+As a developer, you'll find that streaming from the Unreal editor to your HoloLens device provides big benefits when testing, namely that you no longer have to wait for your app to build and deploy before trying out your updates.
 
-See the last section of the Getting Started with Unreal tutorial for instructions for 
-[streaming from the Unreal editor](unreal-uxt-ch6.md#device-only-streaming).
+You can find detailed instructions on [streaming from the Unreal editor](unreal-uxt-ch6.md#device-only-streaming) in the last section of the Getting Started with Unreal tutorial series.
 
 ## Streaming from a packaged Windows executable
 
-As of Unreal 4.25.1, you can stream your app to a HoloLens 2 device from a packaged Windows executable. 
+As of Unreal 4.25.1, you can stream your app to a HoloLens 2 device from a packaged Windows executable by following the steps below: 
 
-1. In the Main window of the Unreal editor, go to **File > Package Project**, and select **Windows**. 
-    * Choose a location to save your package in and click **Select Folder**.
-2. Once your package has finished building, open the Holographic Remoting Player on your HoloLens 2 and make note of the displayed IP Address. 
-3. Open the command prompt and run the following command: 
-```<App Name>.exe -vr -HoloLensRemoting=<IP Address>```
+1. Go to **File > Package Project > Windows** in the editor menu. 
+    * Choose a location to save your package and click **Select Folder**.
+
+2. Once the package has finished building, open the **Holographic Remoting Player** on your HoloLens 2 and make note of the IP Address. 
+3. Leave the **Holographic Remoting Player** open and use the command line prompt to: 
+    * cd into the local directory where you saved your package.
+    * Enter the following command: ```<App Name>.exe -vr -HoloLensRemoting=<IP Address>```
+
+> [!NOTE]
+> The application name in your project settings should be automatically used to create the Windows package. If these are different for some reason, use the Windows executable name in the command prompt.
+
+Hit enter and watch your application start streaming!
 
 ## See also
 * [Holographic remoting version history](holographic-remoting-version-history.md)
