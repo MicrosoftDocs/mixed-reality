@@ -32,17 +32,21 @@ AR sessions in Unreal don't happen by themselves. To use a session you need an A
 
 ![AR Session Config](images/unreal-uxt/3-arsessionconfig.PNG)
 
-With that done, your next step is to make sure that the AR session starts when the level loads. Luckily, Unreal has a special kind of blueprint called a **Level Blueprint** that acts as a level-wide global event graph. Connecting the ARSessionConfig asset in the **Level Blueprint** guarantees the AR session will fire right when the game starts playing.
+With that done, your next step is to make sure that the AR session starts when the level loads and stops when the level ends. Luckily, Unreal has a special kind of blueprint called a **Level Blueprint** that acts as a level-wide global event graph. Connecting the ARSessionConfig asset in the **Level Blueprint** guarantees the AR session will fire right when the game starts playing.
 
 1. Click **Blueprints > Open Level Blueprint** from the editor toolbar: 
 
 ![Open Level Blueprint](images/unreal-uxt/3-level-blueprint.PNG)
 
-5. Drag the execution node (left-facing arrow icon) off **Event BeginPlay** and release. Search for the **Start AR Session** and hit enter.  
+5. Drag the execution node (left-facing arrow icon) off **Event BeginPlay** and release. Search for the **Start AR Session** node and hit enter.  
     * Click the **Select Asset** dropdown under **Session Config** and choose the **ARSessionConfig** asset. 
-    * Hit **Compile**, then **Save** and return to the Main window.
 
 ![Start AR Session](images/unreal-uxt/3-start-ar-session.PNG)
+
+6. Right-click anywhere in the EventGraph and create a new **Event EndPlay** node. Drag the execution pin and release. Search for a **Stop AR Session** node and hit enter. If the AR session isn't stopped when the level ends, certain features may stop working if you restart your app while streaming to a headset. 
+    * Hit **Compile**, then **Save** and return to the Main window.
+
+![Stop AR Session](images/unreal-uxt/3-stoparsession.PNG)
 
 ## Create a Pawn
 At this point, the project still needs a player object. In Unreal, a **Pawn** represents the user in the game, but in this case it's going to be the HoloLens 2 experience.
