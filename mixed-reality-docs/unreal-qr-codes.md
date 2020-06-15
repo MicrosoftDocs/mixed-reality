@@ -3,7 +3,7 @@ title: QR codes in Unreal
 description: A guide to using QR codes in Unreal
 author: hferrone
 ms.author: v-haferr
-ms.date: 5/5/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, qr codes
@@ -48,7 +48,7 @@ The Event Graph in the following image shows the **OnUpdateTrackedImage** event 
 
 ![QR Render Example](images/unreal-qr-render.PNG)
 
-Here's waht's going on:
+Here's what's going on:
 1. First, the tracked image is cast to an **ARTrackedQRCode** to check that the current updated image is a QR code.  
 2. The encoded data is retrieved from the **QRCode** variable. You can get the top-left of the QR code from the location of **GetLocalToWorldTransform** and the dimensions with **GetEstimateSize**. 
 
