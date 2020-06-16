@@ -25,8 +25,9 @@ The first step to adding spatial sound to your project is installing the Microso
 * Restarting the Unreal Editor by selecting **Restart Now** from the plugins page. 
 
 > [!NOTE]
-> * If you're working Ensuring that the **Microsoft Windows Mixed Reality** and **HoloLens** plugins are already enabled.
-    + You can find detailed instructions on installing these two plugins in the [Initializing your project](unreal-uxt-ch2.md) section of our Unreal tutorial series.
+> * If you're working strictly on a desktop PC, you need to install the **Microsoft Windows Mixed Reality** and **HoloLens** plugins.
+> * If you're testing or deploying to HoloLens 2, you need to install the...
+>    + You can find detailed instructions on installing these two plugins in the **[Initializing your project](unreal-uxt-ch2.md)** section of our Unreal tutorial series.
 
 ![Unreal spatial audio plugin](images/unreal-spatial-audio-img-01.png)
 
@@ -60,15 +61,21 @@ Spatial audio is disabled by default on desktop versions of Windows. You can ena
 ![Spatialization plugin](images/unreal-spatial-audio-img-03.png)
 
 ## Configuring objects for spatialization
-// TODO
+Working with spatial audio means you're in charge of managing how sound behaves in a virtual environment. Your main focus is creating sound objects that appear louder when the user is close, and quieter when the user is far away. This is referred to as sound attenuation, making sounds appear as if they are positioned in a fixed spot.
 
-[Enabling Spatialization in Unreal](https://docs.unrealengine.com/Engine/Audio/DistanceModelAttenuation/index.html)
+All attenuation objects come with modifiable settings for:
+* Distance
+* Spatialization
+* Air Absorption
+* Listener Focus
+* Reverb Send
+* Occlusion
+
+[Sound attenuation in Unreal](https://docs.unrealengine.com/Engine/Audio/DistanceModelAttenuation/index.html) has details and implementation specifics on each of these topics.
 
 
-## Using the Resonance Audio plugin
-// TODO
-
-[Spatializing sound with the Resonance Audio plugin](https://resonance-audio.github.io/resonance-audio/develop/unreal/getting-started#spatialize-sounds-with-the-resonance-audio-plugin)
+## Resonance Audio plugin
+If you're looking for a multi-platform spatial audio SDK that delivers high fidelity sound at scale, check out the [Resonance Audio plugin](https://resonance-audio.github.io/resonance-audio/develop/unreal/getting-started#spatialize-sounds-with-the-resonance-audio-plugin).
 
 
 ## See also
