@@ -22,9 +22,11 @@ The first step to adding spatial sound to your project is installing the Microso
 
 * Clicking **Edit > Plugins** and searching for **MicrosoftSpatialSound** in the search box. 
 * Selecting the **Enabled** checkbox in the **MicrosoftSpatialSound** plugin. 
-* Ensuring that the **Microsoft Windows Mixed Reality** and **HoloLens** plugins are already enabled.
-    + You can find detailed instructions on installing these two plugins in the [Initializing your project](unreal-uxt-ch2.md) section of our Unreal tutorial series.
 * Restarting the Unreal Editor by selecting **Restart Now** from the plugins page. 
+
+> [!NOTE]
+> * If you're working Ensuring that the **Microsoft Windows Mixed Reality** and **HoloLens** plugins are already enabled.
+    + You can find detailed instructions on installing these two plugins in the [Initializing your project](unreal-uxt-ch2.md) section of our Unreal tutorial series.
 
 ![Unreal spatial audio plugin](images/unreal-spatial-audio-img-01.png)
 
@@ -36,7 +38,11 @@ Configuring the spatialization plugin is done on a per-platform basis.  You can 
 1. Selecting **Edit > Project Settings**, scrolling to **Platforms** and clicking **HoloLens**.
 2. Expanding the **Audio** properties and setting the **Spatialization Plugin** field to **Microsoft Spatial Sound**.
 
-![Spatialization plugin](images/unreal-spatial-audio-img-02.png)
+![Spatialization plugin for HoloLens platform](images/unreal-spatial-audio-img-02.png)
+
+If you're going to be previewing your application on a desktop PC, you'll need to repeat the above steps for the **Windows** platform:
+
+![Spatializaing plugin for Windows platform](images/unreal-spatial-audio-img-05.png)
 
 ## Enabling spatial audio on your workstation
 Spatial audio is disabled by default on desktop versions of Windows. You can enable it by:
