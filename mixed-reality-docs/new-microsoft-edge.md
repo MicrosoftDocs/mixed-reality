@@ -47,6 +47,7 @@ For the best possible Microsoft Edge experience in the mixed reality home, we al
 -	Audio from Microsoft Edge windows is not spatialized.
 -	**Fixed in 360 Viewer extension version 2.3.8**: Opening a 360 video from YouTube in Windows Mixed Reality may result in the video being distorted in the headset. Restarting Edge should invisibly update the 360 Viewer extension to resolve this issue. You can confirm which version of the extension you have by entering `edge://system/` in the address bar and selecting the **Expand** button next to "extensions."
 -	During Windows Mixed Reality sessions, virtual monitors will appear as generic physical monitors in Settings > System > Display.
+- Hybrid GPU systems are not yet fully supported in the new Microsoft Edge when entering immersive sessions.
 
 
 
