@@ -44,10 +44,10 @@ For the best possible Microsoft Edge experience in the mixed reality home, we al
 ### Additional known issues
 
 -	Websites open in Windows Mixed Reality will be lost when Mixed Reality Portal closes, though the Microsoft Edge windows will remain where they were placed in the mixed reality home.
+- WebXR experiences, including the 360 Viewer extension, may not launch correctly on PCs with a Hybrid GPU setup. You may be able to work around this issue by selecting your dedicated GPU as the default GPU in your graphics card software.
 -	Audio from Microsoft Edge windows is not spatialized.
 -	**Fixed in 360 Viewer extension version 2.3.8**: Opening a 360 video from YouTube in Windows Mixed Reality may result in the video being distorted in the headset. Restarting Edge should invisibly update the 360 Viewer extension to resolve this issue. You can confirm which version of the extension you have by entering `edge://system/` in the address bar and selecting the **Expand** button next to "extensions."
 -	During Windows Mixed Reality sessions, virtual monitors will appear as generic physical monitors in Settings > System > Display.
-- Hybrid GPU systems are not yet fully supported in the new Microsoft Edge when entering immersive sessions.
 
 
 
