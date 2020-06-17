@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure custom vis
 ms.localizationpriority: high
 ---
 
-# 2. Integrating Azure Custom Vision
+# 3. Integrating Azure Custom Vision
 
 In this tutorial, you will learn how to use **Azure Custom Vision**. We will upload a set of photos to associate it with a *Tracked Object*, upload them to the **Custom Vision** service and start the training process. Then we will use the service to detect the *Tracked Object* by capturing photos from the webcam feed.
 
@@ -22,6 +22,8 @@ In this tutorial, you will learn how to use **Azure Custom Vision**. We will upl
 ## Understanding Azure Custom Vision
 
 **Azure Custom Vision** is part of the **Cognitive Services** family and is used to train image classifiers. The image classifier is a AI service that uses the trained model to apply matching tags. This classification feature will be used by our application to detect *Tracked Objects*.
+
+Learn more about [Azure Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home).
 
 ## Preparing Azure Custom Vision
 
