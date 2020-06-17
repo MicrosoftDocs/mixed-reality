@@ -23,7 +23,7 @@ In this tutorial, you will learn how to save entity data to Azure Table Storage 
 
 **Azure Storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and but is easily approachable by any developer. Under its umbrella all services can be consumed with an **Azure Storage Account**. For our use case we will use Table Storage and Blob Storage.
 
-Learn more about [Azure Storage services](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+Learn more about [Azure Storage services](https://docs.microsoft.com/en-us/azure/storage/common/storage-introduction?toc=%2fazure%2fstorage%2fblobs%2ftoc.json).
 
 ### Azure Table storage
 
@@ -98,6 +98,6 @@ Now rerun the application and search for the *Tracked Object* and the previously
 
 In this tutorial you learned how Azure Storage services can be used to persist unstructured data and binaries for our **HoloLens 2** application on the cloud.
 
-In the next tutorial you will learn how to use Azure Custom Vision to detect images associated with a *Tracked Object.*
+In the next tutorial you will learn how to use Azure Custom Vision to detect images associated with a *Tracked Object*.
 
 [Next Lesson: 3. Integrating Azure Custom Vision](mrlearning-azure-03.md)
