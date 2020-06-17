@@ -30,8 +30,8 @@ With the fifth tutorial, [Integrating Azure Bot Service with LUIS](mrlearning-az
 
 ## Demo Application Goals
 
-In this tutorial series we will build a **HoloLens 2** application that can detect objects from images and find its spatial location.
-The user can create an object entity to either or both associate a set of images via computer vision and a spatial location. All data must be persisted into the cloud. Furthermore some aspects of the application will be optionally be controlled by natural language assisted through a bot.
+In this tutorial series we will build a **HoloLens 2** application that can detect objects from images and find its spatial location. To set a domain language, we call such entities from now **Tracked Object**.
+The user can create a **Tracked Object** to either or both associate a set of images via computer vision and a spatial location. All data must be persisted into the cloud. Furthermore some aspects of the application will be optionally be controlled by natural language assisted through a bot.
 
 ### Features
 * Basic CRUD for data and images
@@ -47,10 +47,10 @@ To solve the required features for the demo application, we will use these **Azu
 We will use [Azure Storage](https://azure.microsoft.com/en-us/services/storage/) for our persistence solution. It allows us to store data on a table and upload large binaries like images.
 
 ### Azure Custom Vision
-With [Azure Custom Vision](https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/) (part of the [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/)) we can associate to our object a set images, train a machine learning model on those and detect the object.
+With [Azure Custom Vision](https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/) (part of the [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/)) we can associate to our *Tracked Object* a set images, train a machine learning model on the set and detect the *Tracked Object*.
 
 ### Azure Spatial Anchors
-To store an object location and give a guided directions to find it, we use [Azure Spatial Anchors](https://azure.microsoft.com/en-us/services/spatial-anchors/).
+To store a *Tracked Object* location and give a guided directions to find it, we use [Azure Spatial Anchors](https://azure.microsoft.com/en-us/services/spatial-anchors/).
 
 ### Azure Bot Service
 The application is mainly driven by traditional UI, so we use the [Azure Bot Service](https://azure.microsoft.com/en-us/services/bot-service/) to add it some personality and acts as a new interaction method.
@@ -76,14 +76,6 @@ The application is mainly driven by traditional UI, so we use the [Azure Bot Ser
 
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
-
- ### Optional Prerequisites
-
-> [!TIP]
-> * [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) to verify data changes in the Azure Storage
-> * If you intend to test Azure Storage locally from the Unity Editor:
->   * on Windows 10 you can use [Azure Storage Emulator](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-emulator)
->   * on MacOS/Linux you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite)
 
 ## Creating the Unity project
 <!-- TODO: Consider renaming to 'Creating and preparing the Unity project'-->
@@ -129,11 +121,17 @@ After you have imported the tutorial assets your Project window should look simi
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder. While holding down the CTRL button, click on **SceneController**, **DataManager** and **RootMenu** to select the three prefabs:
+In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder. While holding down the CTRL button, click on **SceneController**, **RootMenu** and **DataManager** to select the three prefabs:
 
 ![mrlearning-asa](images/mrlearning-azure/tutorial1-section5-step1-1.png)
 
-With the four prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
+
+The **RootMenu (prefab)** is the primary UI prefab that holds all UI windows that are connected with each through various small script components and control the general UX flow if the application.
+
+The **DataManager (prefab)** is responsible for talking to Azure storage and will be explained further in the next lesson.
+
+Let's continue, now with the four prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
 ![mrlearning-asa](images/mrlearning-azure/tutorial1-section5-step1-2.png)
 
