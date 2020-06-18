@@ -93,7 +93,7 @@ Once you find the object, the object name will appear at the top and the arrow m
 
 ## Congratulations
 
-...
+In this tutorial you learned how Azure Spatial Anchors can be used to save and retrieve object location on Hololense 2.
 
 In the final tutorial you will learn how to use the Azure Bot Service to add natural language as a new interaction method for our application.
 
