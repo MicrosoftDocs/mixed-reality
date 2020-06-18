@@ -277,6 +277,8 @@ Furthermore, it is recommended to disable all shadow casting as these also add e
 
 **Edit** > **Project Settings**, then select the **Quality** category > Select **Low Quality** for the UWP Platform. One can also just set the **Shadows** property to **Disable Shadows**.
 
+It is recommended that you use baked lighting with your models in Unity.
+
 ### Reduce poly count
 
 Polygon count is usually reduced by either
