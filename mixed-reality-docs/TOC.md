@@ -117,7 +117,7 @@
 ###### [7. Interacting with 3D objects](mr-learning-base-07.md)
 ###### [8. Interacting with 3D objects](mr-learning-base-08.md)
 ###### [9. Interacting with 3D objects](mr-learning-base-09.md)
-###### [10. Interacting with 3D objects](mr-learning-base-010.md)
+###### [10. Interacting with 3D objects](mr-learning-base-10.md)
 ##### Azure Spatial Anchor tutorials
 ###### [1. Introduction](mr-learning-asa-01.md)
 ###### [2. Getting started with Azure Spatial Anchors](mr-learning-asa-02.md)
