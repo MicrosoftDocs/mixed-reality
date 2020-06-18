@@ -40,7 +40,8 @@ In this tutorial, you will learn how to configure the scene and make necessary c
 In the Project window, navigate to 
 Assets > MRTK.Tutorials.AzureCloudServices > Prefabs >Manager > AnchorManager
 
-... TO DO Add image
+![mrlearning-asa](images/mrlearning-azure/tutorial4-section1-step1-1.png)
+
 
 From there move the prefab AnchorManager into the scene hierarchy.
 
@@ -48,11 +49,13 @@ Once you add the AnchorManager to the scene,
 
 Click on AnchorManager component. In the inspector you will find Spatial Anchor Manager account ID and key which you would have created in the prerequisite in the earlier stage, copy and paste it.
 
-... TO DO Add image
+![mrlearning-asa](images/mrlearning-azure/tutorial4-section1-step2-1.png)
+
 
 Now find the SceneController object in your scene hierarchy and select it. You will see the SceneController inspector.
 
-... TO DO Add image
+![mrlearning-asa](images/mrlearning-azure/tutorial4-section1-step3-1.png)
+
 
 You will observe that Anchor Manager field in the SceneController component is empty, drag and drop the AnchorManager from the hierarchy in the scene into that field and save the scene.
 
