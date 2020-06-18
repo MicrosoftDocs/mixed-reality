@@ -78,7 +78,18 @@ Now the object location is saved successfully.
 
 ## Query for an Anchor to find a location
 
-...
+Once after you successfully saved the anchor location, now you can find the anchor location by selecting SearchObject in the main menu.
+
+After clicking on SearchObject, a new window will pop up in which you should give the name of the object you want to search.
+
+Enter the name of the object and click on SearchObject. If the object is saved previously and is found in the database, you will get the object card with all the details of the object which you would have saved earlier.
+
+Now you can click on ShowLocation to find the object. Once you click on ShowLocation, the system will query the object address from the cloud storage.
+
+After successfully retrieving the location, an arrow will direct you towards the location of the object. Follow the arrow mark until you find the location of the object.
+
+Once you find the object, the object name will appear at the top and the arrow mark will disappear and now you can click on object tag to see the details of the object. 
+
 
 ## Congratulations
 
