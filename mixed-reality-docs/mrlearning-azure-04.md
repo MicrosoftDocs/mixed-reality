@@ -59,7 +59,22 @@ You will observe that Anchor Manager field in the SceneController component is e
 
 ## Create an Anchor to store a location
 
-...
+In this section you will see how to save the object location.
+After configuring the scene and making necessary changes to the AnchorManager,
+Run the application and click on SetObject in the main menu of the experience.
+
+Give the name of the object you want to save and click on SetObject to continue.
+
+To add more information about the object, select the image and give the description of the object.
+
+To save the Location, click on SaveLocation
+
+You will see an anchor pointer which you can move and place on the location where you want to save. After which you will get a confirmation popup, if you want to confirm and save the location click on Yes else you can change the location by clicking on No and selecting the location again.
+
+Once you confirm the location by clicking on Yes, the location and the Anchor ID will be saved in the Azure cloud storage. Once it is saved, you will see the Object tag in the anchor with the name of the object. 
+
+Now the object location is saved successfully.
+
 
 ## Query for an Anchor to find a location
 
