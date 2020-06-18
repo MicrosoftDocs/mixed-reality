@@ -105,8 +105,8 @@ Then follow the [How to configure the Mixed Reality Toolkit Profiles (Change Spa
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
 
-* [-TODO- LINK TO OUR BASE PROJECT UNITY PACKAGE](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity)
-* [-TODO- LINK TO OUR CUSTOM AZURE STORAGE LIBRARY](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity)
+* [MRTK.Tutorials.AzureCloudServices](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/MRTK.Tutorials.AzureCloudServices.unitypackage)
+* [Azure Storage for Unity](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/AzureStorageForUnity.unitypackage)
 * [-TODO- LINK TO SPATIAL ANCHORS LIBRARY](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity)
 
 > [!TIP]
