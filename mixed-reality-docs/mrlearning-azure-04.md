@@ -35,7 +35,27 @@ Learn how to make a [spatial anchor resource](https://docs.microsoft.com/en-us/a
 
 ## Preparing the scene
 
-...
+In this tutorial, you will learn how to configure the scene and make necessary changes.
+
+In the Project window, navigate to 
+Assets > MRTK.Tutorials.AzureCloudServices > Prefabs >Manager > AnchorManager
+
+... TO DO Add image
+
+From there move the prefab AnchorManager into the scene hierarchy.
+
+Once you add the AnchorManager to the scene,
+
+Click on AnchorManager component. In the inspector you will find Spatial Anchor Manager account ID and key which you would have created in the prerequisite in the earlier stage, copy and paste it.
+
+... TO DO Add image
+
+Now find the SceneController object in your scene hierarchy and select it. You will see the SceneController inspector.
+
+... TO DO Add image
+
+You will observe that Anchor Manager field in the SceneController component is empty, drag and drop the AnchorManager from the hierarchy in the scene into that field and save the scene.
+
 
 ## Create an Anchor to store a location
 
