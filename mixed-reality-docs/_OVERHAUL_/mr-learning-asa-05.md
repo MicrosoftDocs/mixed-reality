@@ -1,11 +1,11 @@
 ---
 title: Azure Spatial Anchors tutorials - 5. Azure Spatial Anchors for Android and iOS
-description: Complete this course to learn how to set up an ASA project for Android and iOS.
+description: Complete this course to learn how to deploy a Unity project with Mixed Reality Toolkit and Azure Spatial Anchors to Android and iOS.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, hololens, android, ios
 ms.localizationpriority: high
 ---
 

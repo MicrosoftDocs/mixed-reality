@@ -1,6 +1,6 @@
 ---
-title: Azure Spatial Anchors tutorials - 1. Getting started with Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Azure Spatial Anchors tutorials - 1. Introduction
+description: Complete this course to learn how to implement Azure Spatial Anchors within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -58,7 +58,4 @@ Tutorials in this series:
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
-<!-- TODO: Consider adding a 'What you will create' section with animations/images -->
-## What you will create
-
-[Next tutorial: 2. Getting started with Azure Spatial Anchors](mr-learning-asa-02.md)
+[Next Tutorial: 2. Getting started with Azure Spatial Anchors](mr-learning-asa-02.md)

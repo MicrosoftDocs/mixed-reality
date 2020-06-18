@@ -55,4 +55,4 @@ If you now build and deploy the Unity project to your HoloLens, and then, back i
 
 You have successfully configured your project so object movements are synchronized and users can see the objects move when other users move the objects. In the next tutorial, you will implement functionality so the shared experience is aligned in the physical world and the users see each other in their actual physical location and so the objects appear in the same physical position and rotation for all users.
 
-[Next tutorial: 5. Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md)
+[Next Tutorial: 5. Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md)

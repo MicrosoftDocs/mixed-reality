@@ -112,4 +112,4 @@ If you now build and deploy the Unity project to your HoloLens, and then, back i
 
 You have successfully configured your project to allow multiple users to connect to the same experience and see each other's movements. In the next tutorial, you will implement functionality so that the movements of objects are also shared across multiple devices.
 
-[Next tutorial: 4. Sharing object movements with multiple users](mr-learning-sharing(photon)-04.md)
+[Next Tutorial: 4. Sharing object movements with multiple users](mr-learning-sharing(photon)-04.md)

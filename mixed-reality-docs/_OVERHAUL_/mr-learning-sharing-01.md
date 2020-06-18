@@ -1,5 +1,5 @@
 ---
-title: Multi-user capabilities tutorials - 1. Setting up Photon Unity Networking
+title: Multi-user capabilities tutorials - 1. Introduction
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -68,4 +68,4 @@ Tutorials in this series:
 <!-- TODO: Consider adding a 'What you will create' section with animations/images -->
 ## What you will create
 
-[Next tutorial: 2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)
+[Next Tutorial: 2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)

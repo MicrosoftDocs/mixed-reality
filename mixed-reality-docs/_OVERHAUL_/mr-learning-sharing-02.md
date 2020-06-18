@@ -159,4 +159,4 @@ Once Unity has finished the PUN setup process, the PUN Setup menu will display t
 
 You have successfully created a Photon PUN application and connected it to your Unity project. Your next step is to allow connections with other users so that multiple users can see each other.
 
-[Next tutorial: 3. Connecting multiple users](mr-learning-sharing-03.md)
+[Next Tutorial: 3. Connecting multiple users](mr-learning-sharing-03.md)

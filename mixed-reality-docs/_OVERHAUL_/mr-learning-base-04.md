@@ -1,6 +1,6 @@
 ---
-title: Getting started tutorials - 4. Placing dynamic content and using solvers
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Getting started tutorials - 4. Positioning objects in the scene
+description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -9,107 +9,130 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 4. Placing dynamic content and using Solvers
-<!-- Consider renaming to 'Placing dynamic content using Solvers' -->
+# 4. Positioning objects in the scene
 
-Holograms come to life in HoloLens 2 when they intuitively follow the user and are placed in the physical environment in a way that makes interaction seamless and elegant. In this tutorial, we explore ways to dynamically place holograms using the MRTK's available placement tools, known as Solvers, to solve complex spatial placement scenarios. In the MRTK, Solvers are a system of scripts and behaviors that are used to allow UI elements to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive.
+## Overview
+
+In this tutorial, you will import the tutorial assets and position the provided objects in the scene.
 
 ## Objectives
 
-* Introduce the MRTK's Solvers
-* Use Solvers to have a collection of buttons follow the user
-* Use Solvers to have a game object follow the user's tracked hands
+* Learn how to position objects in the scene
+* Learn how to use MRTK's Grid Object Collection feature
 
-## Location of Solvers in the MRTK
+## Importing the tutorial assets
 
- The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Assets** > **MixedRealityToolkit.SDK** > **Features** > **Utilities** > **Solvers**:
+Download and import the following Unity custom package:
+
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.0.unitypackage)
+
+After you have imported the tutorial assets your Project window should look similar to this:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section1-step1-1.png)
 
-In this tutorial, we will review the implementation of the Orbital Solver and the Radial View Solver. To learn more about the full range of Solvers available in the MRTK, you can visit the the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+> [!TIP]
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
 
-## Use a Solver to follow the user
-<!-- Consider renaming to 'Use a Solver to have an object follow the user' -->
+## Creating the parent object
 
-In this section, you will enhance the button collection you created in the previous tutorial so it follows the user's gaze direction. Additionally, you will also configure the Solver so the button collection is always:
+In the Hierarchy window, right-click on an empty spot and select **3D Object** > **Create Empty** to add an empty object to your scene:
 
-* Rotated parallel to the user's reading direction, for natural left to right reading
-* Positioned below the user horizontal gaze direction, so it's not obstructing the other objects you will add later in this tutorial
-* Positioned approximately a half arm's-length from the user, so the buttons can easily be pressed
-
-For this, you will use the **Orbital Solver** which locks the object to a specified position and offset from the referenced object.
-
-### 1. Add the Orbital Solver
-
-In the Hierarchy window, select the **ButtonCollection** object, then in the Inspector window, use the **Add Component** button to add the **Orbital (Script)** component to the ButtonCollection object.
-
-> [!NOTE]
-> When you add a Solver, in this case the Orbital (Script) component, the Solver Handler (Script) component is automatically added because it is required by the Solver.
-
-### 2. Configure the Orbital Solver
-
-Configure the **Solver Handler (Script)** component:
-
-* Verify that **Tracked Target Type** is set to **Head**
-
-Configure the **Orbital (Script)** component:
-
-* Verify that **Orientation Type** is set to **Follow Tracked Object**
-* Reset **Local Offset** to X = 0, Y = 0, Z = 0
-* Change **World Offset** to X = 0, Y = -0.4, Z = 0.3
-
-![mr-learning-base](images/mr-learning-base/base-04-section2-step2-1.png)
-
-### 3. Test the Orbital Solver using the in-editor simulation
-
-Press the Play button to enter Game mode and press and hold the right mouse button to rotate your gaze direction, and notice the following:
-
-* The ButtonCollection's Transform Position is now driven by the Solver settings
-* The Cube, which is not affected by the Solver, remains in the same position
-
-![mr-learning-base](images/mr-learning-base/base-04-section2-step3-1.png)
+![mr-learning-base](images/mr-learning-base/base-04-section2-step1-1.png)
 
 > [!TIP]
-> If you don't see the camera ray in your Scene window, make sure your Gizmos menu is enabled. To learn more about the Gizmos menu and how you can use it to optimize your scene view, you can visit Unity's <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">Gizmos menu</a> documentation.
->
-> To display your Scene and Game window side by side as shown in the image above, simply drag the Game window to the right side of the Scene window. To learn more about customizing your workspace, you can visit Unity's <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">Customizing Your Workspace</a> documentation.
+> To display your Scene and Game window side by side as shown in the image above, simply drag the Game window to the right side of the Scene window. To learn more about customizing your workspace, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">Customizing Your Workspace</a> documentation.
 
-## Enabling objects to follow tracked hands
+Right-click on the newly created object, select **Rename**, and change the name to **RoverExplorer**:
 
-In this section, you will configure the Cube object you created in the previous tutorial so it follows the user's tracked hands, specifically the right hand wrist. Additionally, you will also configure the Solver so the cube:
+![mr-learning-base](images/mr-learning-base/base-04-section2-step1-2.png)
 
-* Changes it's orientation with the user's hand rotation
-* Positioned on the user's wrist
+With the RoverExplorer object still selected, in the Inspector window, configure the **Transform** component as follows:
 
-For this, you will use the **Radial View Solver** which keeps the object within a view cone cast by the referenced object.
+* **Position**: X = 0, Y = -0.6, Z = 2
+* **Rotation**: X = 0, Y = 0, Z = 0
+* **Scale**: X = 1, Y = 1, Z = 1
 
-### 1. Add the Radial View Solver
+![mr-learning-base](images/mr-learning-base/base-04-section2-step1-3.png)
 
-In the Hierarchy window, select the **Cube** object, then in the Inspector window, use the **Add Component** button to add the **Radial View (Script)** component Cube object.
+> [!NOTE]
+> The camera represents the users head and is positioned at origin, X = 0, Y = 0, Z = 0. In general, 1 position unit in Unity is roughly equivalent to 1 meter in the physical world. However, there are exceptions to this, for example, when objects are children of scaled objects. In the scenario above, the RoverExplorer is positioned approximately 2 meters in front of the users and 0.6 meters below the users head.
 
-### 2. Configure the Radial View Solver
+## Adding the tutorial prefabs
 
-Configure the **Solver Handler (Script)** component:
+> [!TIP]
+> A <a href="https://docs.unity3d.com/Manual/Prefabs.html" target="_blank">prefab</a> is a pre-configured GameObject stored as a Unity Asset and can be reused throughout your project.
 
-* Change **Tracked Target Type** to **Hand Joint**
-* Change **Tracked Handness** to **Right**
-* Change **Tracked Hand Joint** to **Wrist**
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder:
 
-Configure the **Radial View (Script)** component:
+![mr-learning-base](images/mr-learning-base/base-04-section3-step1-1.png)
 
-* Change **Reference Direction** to **Object Oriented**, then check the **Orient To Reference Direction** checkbox
-* Change **Min Distance** and **Max Distance** to 0
+From the Project window, click-and-drag the **Table** prefab on to the **RoverExplorer** object to make it a child of the RoverExplorer object, then in the Inspector window, configure the **Transform** component as follows:
 
-![mr-learning-base](images/mr-learning-base/base-04-section3-step2-1.png)
+* **Position**: X = 0, Y = -0.005, Z = 0
+* **Rotation**: X = 0, Y = 0, Z = 0
+* **Scale**: X = 1.2, Y = 0.01, Z = 1.2
 
-### 3. Test the Radial View Solver using the in-editor simulation
+![mr-learning-base](images/mr-learning-base/base-04-section3-step1-2.png)
 
-Press the Play button to enter Game mode and then press and hold the spacebar to bring up the hand. Move the mouse cursor around to move the hand, and click and hold the left mouse button to rotate the hand:
+> [!TIP]
+> To display your scene as shown in the image above, use the <a href="https://docs.unity3d.com/Manual/SceneViewNavigation.html" target="_blank">Scene Gizmo</a>, located in the top right corner of the Scene window, to adjust the viewing angle to be along the forward Z axis, double-click the MixedRealityPlayspace object to focus on the camera, and zoom in as needed.
 
-![mr-learning-base](images/mr-learning-base/base-04-section3-step3-1.png)
+From the Project window, click-and-drag the **RoverAssembly** prefab on to the **RoverExplorer** object to make it a child of the RoverExplorer object, then in the Inspector window, configure the **Transform** component as follows:
+
+* **Position**: X = -0.1, Y = 0, Z = 0
+* **Rotation**: X = 0, Y = -135, Z = 0
+* **Scale**: X = 1, Y = 1, Z = 1
+
+![mr-learning-base](images/mr-learning-base/base-04-section3-step1-3.png)
+
+## Organizing objects in a collection
+
+In the Hierarchy window, right-click on the **RoverExplorer** object and select **3D Object** > **Create Empty** to add an empty object as a child of the RoverExplorer, name the object **RoverParts**, and configure the **Transform** component as follows:
+
+* **Position**: X = 0, Y = 0.06, Z = 0
+* **Rotation**: X = 0, Y = 90, Z = 0
+* **Scale**: X = 1, Y = 1, Z = 1
+
+![mr-learning-base](images/mr-learning-base/base-04-section4-step1-1.png)
+
+In the Hierarchy window, select all the RoverExplorer > RoverAssembly > RoverModel > **Parts** child objects, right click on them and select **Duplicate** to create a copy of each of the parts:
+
+![mr-learning-base](images/mr-learning-base/base-04-section4-step1-2.png)
+
+With the newly duplicated Parts child objects still selected, click-and-drag them on to the **RoverParts** object to make them child objects of the RoverParts object:
+
+![mr-learning-base](images/mr-learning-base/base-04-section4-step1-3.png)
+
+To make it easier to work with your scene, set the **scene visibility** for the **RoverExplorer** object to off by clicking the **eye** icon to the left of the object in the Hierarchy window. This hide the object in the Scene window without changing it's in-game visibility:
+
+![mr-learning-base](images/mr-learning-base/base-04-section4-step1-4.png)
+
+> [!TIP]
+> To learn more about the Scene Visibility controls and how you can use them to optimize your scene view and workflow, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> documentation.
+
+In the Hierarchy window, clean up the names of the RoverParts child objects by replacing the appended **(1)** with **_Part**:
+
+![mr-learning-base](images/mr-learning-base/base-04-section4-step1-5.png)
+
+In the Hierarchy window, select the **RoverParts** object, then in the Inspector window, click the **Add Component** button, and search for and select **GridObjectCollection** to add a GridObjectCollection component to the RoverParts object:
+
+![mr-learning-base](images/mr-learning-base/base-04-section4-step1-6.png)
+
+Change the **GridObjectCollection** component values as follows:
+
+* **Sort Type**: Alphabetic
+* **Layout**: Horizontal
+* **Cell Width**: 0.25
+* **Distance from parent**: 0.38
+
+![mr-learning-base](images/mr-learning-base/base-04-section4-step1-7.png)
+
+Then click the **Update Collection** button to update the position of the RoverParts child objects:
+
+![mr-learning-base](images/mr-learning-base/base-04-section4-step1-8.png)
 
 ## Congratulations
 
-In this tutorial, you learned how to use the MRTK's solvers to have a UI intuitively follow the user. You also learned how to attach a Solver to an object (i.e., cube) to follow the user's tracked hands. To learn more about these and other solvers included with the MRTK,  you can visit the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+In this tutorial, you learned how to position objects in the scene relative to the user and how to use MRTK's Grid Object Collection feature to organize object in a collection.
 
-[Next Tutorial: 5. Interacting with 3D objects](mrlearning-base-ch4.md)
+[Next Tutorial: 5. Using Solvers to create dynamic content](mr-learning-base-05.md)

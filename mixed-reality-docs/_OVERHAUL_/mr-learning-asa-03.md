@@ -1,6 +1,6 @@
 ---
-title: Azure Spatial Anchors tutorials - 2. Saving, retrieving, and sharing Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Azure Spatial Anchors tutorials - 3. Saving, retrieving, and sharing Azure Spatial Anchors
+description: Complete this course to learn how to implement Azure Spatial Anchors within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 2. Saving, retrieving, and sharing Azure Spatial Anchors
+# 3. Saving, retrieving, and sharing Azure Spatial Anchors
 
 In this tutorial, you will learn how to save Azure Spatial Anchors across multiple app sessions by saving the anchor ID to the HoloLens 2's storage. You will also learn how to share this anchor ID to other devices for a multi-device anchor alignment.
 
@@ -90,4 +90,4 @@ In this tutorial you learned how to persist Azure Spatial Anchors between applic
 
 In the next tutorial you will learn how to provide users with real-time feedback. This feedback will include information about Anchor creation, the quality of environment understanding, and the state of the Azure session. Without feedback, users may not know whether an anchor has successfully been uploaded to Azure, whether the quality of the environment is sufficient for anchor creation, or the current state.
 
-[Next Lesson: 4. Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md)
+[Next Tutorial: 4. Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md)

@@ -1,6 +1,6 @@
 ---
-title: Getting started tutorials - 1. Overview and objectives
-description: This course shows you how to implement Azure Face Recognition within a mixed reality application.
+title: Getting started tutorials - 1. Introduction
+description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -9,22 +9,11 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-<!-- TODO: Sync entire Introduction page with Base and Sharing -->
 # 1. Introduction
 
-<!-- TODO: Most likely remove this section, design seems outdated and not seeing it being used in new tutorials. Waiting confirmation from MS
-## Device support
--->
-
 ## Overview
-<!-- TODO: update wording to match the tutorials -->
-<!-- TODO: Give overview of the application -->
-<!-- TODO: Consider moving info about the other tutorial series to [!TIP] -->
-Welcome to the first of three series of Hololens 2 tutorials. In this twelve-part series you will learn about some of the capabilities the <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"> Mixed Reality Toolkit (MRTK)</a> has to offer and leverage the power it holds to build a RoverModule experience.
 
-In the next series [Azure Spatial Anchors tutorials](mr-learning-asa-01.md), we will cover the basics of ASA and leverage the power it holds to anchor our experience in the real world.
-
-In the last series [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will learn how to leverage the power of Photon and ASA to make a shared experience that updates in real time.
+Welcome to the Getting Started tutorials! Through this tutorial series, you will learn about some of the features the <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"> Mixed Reality Toolkit (MRTK)</a> has to offer while building a mixed reality experience where the user can explore a hologram modelled after NASA's Mars Curiosity Rover.
 
 Tutorials in this series:
 
@@ -43,40 +32,19 @@ Tutorials in this series:
 
 ## Objectives
 
-<!-- TODO: Update to exact wording used in the following tutorials' Objectives section and add any missing objectives -->
-<!-- TODO: see if this list can be condensed -->
-* Configure Unity for HoloLens development
-* Import assets and set up the scene
-* Visualization of the spatial mapping mesh, hand meshes, and the framerate counter
-* Customize and configure Mixed Reality Toolkit profiles
-* Create a panel of 3D objects which will be used for the other learning objectives
-* Implement bounding boxes
-* Configure 3D objects for basic manipulation such as move, rotate, and scale
-* Explore near and far interaction
-* Learn about additional hand tracking gestures, such as grab and touch
-* Interact with holograms using UI elements and buttons
-* Basic hand-tracking input and interactions
-* Introduce the MRTK's Solvers
-* Use Solvers to have a collection of buttons follow the user
-* Use Solvers to have a game object follow the user's tracked hands
-* Trigger events using voice commands and keywords
-* Use tracked hands to pan textures and 3D objects with tracked hands
-* Leverage HoloLens 2 eye tracking capabilities to select objects
-* Combine multiple concepts from previous lessons to create a unique experience
-* Learn how to toggle objects
-* Trigger complex events using pressable buttons
-* Use rigidbody physics and forces
-* Explore the use of tool tips
+* Learn how to configure Unity for MRTK
+* Learn how to build and deploy to device
+* Learn how to use some of MRTK's features
+* Create a complete mixed reality experience
 
 ## Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added
 
 > [!IMPORTANT]
-> The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> The recommended Unity version for this tutorial series is Unity 2019.3.15. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
-<!-- TODO: Consider adding a 'What you will create' section with animations/images-->
-[Next lesson: 2. Initializing your project and first application](mr-learning-base-02.md)
+[Next Tutorial: 2. Initializing your project and first application](mr-learning-base-02.md)

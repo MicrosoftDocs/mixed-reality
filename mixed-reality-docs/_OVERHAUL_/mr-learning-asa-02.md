@@ -1,6 +1,6 @@
 ---
-title: Azure Spatial Anchors tutorials - 1. Getting started with Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Azure Spatial Anchors tutorials - 2. Getting started with Azure Spatial Anchors
+description: Complete this course to learn how to implement Azure Spatial Anchors within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -208,4 +208,4 @@ In this tutorial, you learned the fundamentals of Azure Spatial Anchors. The tut
 
 In the next tutorial, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
 
-[Next Lesson: 3. Saving, retrieving and sharing Azure Spatial Anchors](mr-learning-asa-03.md)
+[Next Tutorial: 3. Saving, retrieving and sharing Azure Spatial Anchors](mr-learning-asa-03.md)
