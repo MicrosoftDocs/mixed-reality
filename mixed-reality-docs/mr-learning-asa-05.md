@@ -79,7 +79,7 @@ Adding **AR Reference Point Manager** script will automatically add **AR session
 
 In this section, you will learn how to configure your project to build and deploy to an Android device.
 
-In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Configure the Unity project for Windows Mixed Reality](mr-learning-base-02.md#configure-the-unity-project-for-windows-mixed-reality).
+In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform).
 
 After switching to Android platform, click on **Add Open Scenes** and make sure your current scene is the only selected scene in the **Scenes In Build** list.
 
@@ -109,7 +109,7 @@ When the build process is complete, your applications should automatically load 
 
 In this section, you will learn how to configure your project to build to an iOS device.
 
-In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Configure the Unity project for Windows Mixed Reality](mr-learning-base-02.md#configure-the-unity-project-for-windows-mixed-reality).
+In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform).
 
 After switching to Android platform, click on **Add Open Scenes** and make sure your current scene is the only selected scene in the **Scenes In Build** list.
 

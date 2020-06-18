@@ -20,26 +20,20 @@ In this tutorial, you will explore the various steps required to start and stop 
 * Learn the fundamentals of developing with Azure Spatial Anchors for HoloLens 2
 * Create, upload, and download spatial anchors
 
-## Creating the Unity project
-<!-- TODO: Consider renaming to 'Creating and preparing the Unity project'-->
+## Creating and preparing the Unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#build-your-application-to-your-device) instructions, which includes the following steps:
+For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
-1. [Create new Unity project](mr-learning-base-02.md#create-new-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
+1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
+2. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
+3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
+6. [Creating and configuring the scene](creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureSpatialAnchors*
 
-2. [Configure the Unity project for Windows Mixed Reality](mr-learning-base-02.md#configure-the-unity-project-for-windows-mixed-reality)
-
-3. [Import TextMesh Pro Essential Resources](mr-learning-base-02.md#import-textmesh-pro-essential-resources)
-
-4. [Import the Mixed Reality Toolkit](mr-learning-base-02.md#import-the-mixed-reality-toolkit)
-
-5. [Configure the Unity project for the Mixed Reality Toolkit](mr-learning-base-02.md#configure-the-unity-project-for-the-mixed-reality-toolkit)
-
-6. [Add the Mixed Reality Toolkit to the Unity scene](mr-learning-base-02.md#configure-the-mixed-reality-toolkit) and give the scene a suitable name, for example, *AzureSpatialAnchors*
-
-Then follow the [How to configure the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)](mr-learning-base-03.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Adding inbuilt Unity packages
 <!-- TODO: Consider renaming to 'Installing AR Foundation' -->
@@ -66,7 +60,7 @@ Download and **import** the following Unity custom packages **in the order they 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.1.unitypackage)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-02.md#import-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
@@ -130,7 +124,7 @@ For each of the remaining buttons, complete the process outlined in step 1 above
 
 In the Hierarchy window, select the **ParentAnchor** object and in the Inspector window, locate the **Spatial Anchor Manager (Script)** component.
 
-Then, in the **Credentials** section, paste your Spatial Anchors Account ID and Key, which you created as part of this tutorial's [Prerequisites](mr-learning-asa-02.md#prerequisites), into the corresponding **Spatial Anchors Account Id** and **Spatial Anchors Account Key** fields:
+Then, in the **Credentials** section, paste your Spatial Anchors Account ID and Key, which you created as part of this tutorial's [Prerequisites](mr-learning-asa-01.md#prerequisites), into the corresponding **Spatial Anchors Account Id** and **Spatial Anchors Account Key** fields:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step3-1.png)
 
@@ -157,7 +151,7 @@ In the  **Publishing Settings**, scroll down to the **Capabilities** section and
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mr-learning-base-02.md#build-your-application-to-your-device) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
 
 ### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 

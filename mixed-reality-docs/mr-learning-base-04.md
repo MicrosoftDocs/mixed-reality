@@ -135,4 +135,4 @@ Then click the **Update Collection** button to update the position of the RoverP
 
 In this tutorial, you learned how to position objects in the scene relative to the user and how to use MRTK's Grid Object Collection feature to organize object in a collection.
 
-[Next Tutorial: 5. Using Solvers to create dynamic content](mr-learning-base-05.md)
+[Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)

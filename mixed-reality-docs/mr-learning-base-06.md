@@ -85,7 +85,7 @@ In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **UX** 
 
 ## Adding text into your scene
 
-In this section, you will learn how to add text to your mixed reality experiences using Unity's TextMesh Pro, which you prepared in the [Import TextMesh Pro Essential Resources](mrlearning-base-ch1.md#import-textmesh-pro-essential-resources) section of the previous tutorial.
+In this section, you will learn how to add text to your mixed reality experiences using Unity's TextMesh Pro, which you prepared in the [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources) section of the previous tutorial.
 
 In this particular example, you will add a simple label underneath the button collection you created in the previous section.
 

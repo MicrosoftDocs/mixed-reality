@@ -25,21 +25,16 @@ In this tutorial, you will learn how to prepare for creating a shared experience
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#build-your-application-to-your-device) instructions, which includes the following steps:
+For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
-1. [Create new Unity project](mr-learning-base-02.md#create-new-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
+1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
+2. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
+3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
+6. [Creating and configuring the scene](creating-and-configuring-the-scene) and give the scene a suitable name, for example, *MultiUserCapabilities*
 
-2. [Configure the Unity project for Windows Mixed Reality](mr-learning-base-02.md#configure-the-unity-project-for-windows-mixed-reality)
-
-3. [Import TextMesh Pro Essential Resources](mr-learning-base-02.md#import-textmesh-pro-essential-resources)
-
-4. [Import the Mixed Reality Toolkit](mr-learning-base-02.md#import-the-mixed-reality-toolkit)
-
-5. [Configure the Unity project for the Mixed Reality Toolkit](mr-learning-base-02.md#configure-the-unity-project-for-the-mixed-reality-toolkit)
-
-6. [Add the Mixed Reality Toolkit to the Unity scene](mr-learning-base-02.md#configure-the-mixed-reality-toolkit) and give the scene a suitable name, for example, *MultiUserCapabilities*
-
-Then follow the [How to configure the Mixed Reality Toolkit Profiles (Change Spatial Awareness Display Option)](mr-learning-base-03.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Configuring the capabilities
 
@@ -79,7 +74,7 @@ Download and **import** the following Unity custom packages **in the order they 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.3.0.0.unitypackage)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-02.md#import-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 

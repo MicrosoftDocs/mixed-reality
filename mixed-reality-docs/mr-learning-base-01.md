@@ -17,18 +17,15 @@ Welcome to the Getting Started tutorials! Through this tutorial series, you will
 
 Tutorials in this series:
 
-* [Initializing your project and first application](mr-learning-base-02.md) - You will start your first application for the HoloLens 2, and deploy it to the device.
-* [Configure the Mixed Reality Toolkit](mr-learning-base-03.md) - You will learn how to configure the MRTK profile giving greater flexibility in the applications you can create.
-* [Positioning objects in scene](mr-learning-base-04.md) - You will learn about positioning 3D objects for Mixed Reality applications.
-* [Scene understanding](mr-learning-base-05.md) - You will learn the basics of scene understanding.
-* [Interacting with 3D objects](mr-learning-base-06.md) - You will learn the different ways of interacting with 3D objects.
-* [Adding tooltips to scene](mr-learning-base-07.md) - You will learn how to set up tooltips and how useful they are.
-* [Creating user interface](mr-learning-base-08.md) - You will learn how to set up UI with MRTK assets or how to replace MRTK assets with your own.
-* [Using solvers](mr-learning-base-09.md) - You will learn the massive potential of solvers and how to use them.
-* [Using Voice Commands](mr-learning-base-10.md) - You will learn how to set up custom voice commands.
-* [Using eye Tracking](mr-learning-base-11.md) - You will learn how to use eye tracking.
-* [Functionality to drive rover](mr-learning-base-12.md) - You will finalize the app you have been build to this point.
-* [Build your application to a mobile device](mr-learning-base-13.md) - You will learn how to build an MRTK project to a mobile device.
+* [Initializing your project and first application](mr-learning-base-02.md)
+* [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md)
+* [Positioning objects in the scene](mr-learning-base-04.md)
+* [Creating dynamic content using Solvers](mr-learning-base-05.md)
+* [Creating user interface](mr-learning-base-06.md)
+* [Interacting with 3D objects](mr-learning-base-07.md)
+* [Adding tooltips](mr-learning-base-08.md)
+* [Using eye tracking](mr-learning-base-09.md)
+* [Using voice commands](mr-learning-base-10.md)
 
 ## Objectives
 

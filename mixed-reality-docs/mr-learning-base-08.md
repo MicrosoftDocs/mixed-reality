@@ -39,9 +39,6 @@ The main steps you will take to achieve this are:
 
 In the Hierarchy window, right-click at an empty area and select **3D Object** > **Quad** to add a quad to your scene. Give it a suitable name, for example, **PanGesture**, and position it in a suitable location, for example, X = 0, Y = -0.2, Z = 2.
 
-> [!TIP]
-> For a reminder on how to add Unity primitives, such as a 3D quad, to your scene, you can refer to the [Add a cube to the scene](mrlearning-base-ch2.md#2-add-a-cube-to-the-scene) instructions.
-
 As with any other interaction, the the pan gesture also requires a collider. By default, a Quad has a mesh collider. However, the mesh collider is not ideal because it is extremely thin. To make it easier for the user to interact with the collider, we will replace the mesh collider with a box collider.
 
 With the PanGesture object still selected, click the **Mesh Collider** component's **Settings** icon and select **Remove Component** to remove the Mesh Collider:
@@ -78,9 +75,6 @@ Then click the **Update Collection** button to apply the new configuration:
 ### 6. Add the Move With Pan (Script) component
 
 In the Hierarchy window, select all the **Cube child objects**, then in the Inspector window, use the **Add Component** button to add the **Move With Pan (Script)** component to all the cubes:
-
-> [!TIP]
-> For a reminder on how to select multiple objects in the Hierarchy window, tou can refer to the [Add the Manipulation Handler (Script) component to all the objects](mrlearning-base-ch4.md#1-add-the-manipulation-handler-script-component-to-all-the-objects) instructions.
 
 With all the cubes still selected, click-and-drag the **PanGesture** object to the **Pan Input Source** field:
 

@@ -1,5 +1,5 @@
 ---
-title: Getting started tutorials - 5. Using Solvers to create dynamic content
+title: Getting started tutorials - 5. Creating dynamic content using Solvers
 description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 5. Using Solvers to create dynamic content
+# 5. Creating dynamic content using Solvers
 
 ## Overview
 

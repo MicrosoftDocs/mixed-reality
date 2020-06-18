@@ -5,7 +5,6 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 11/01/2019
 ms.topic: article
-ms.localizationpriority: high
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
@@ -156,7 +155,7 @@ With the **MixedRealityToolkit** object selected in the Hierarchy window, in the
 ![mr-learning-base](images/mr-learning-base/base-02-section6-step1-3.png)
 
 > [!IMPORTANT]
-> Typically, you will use the DefaultHoloLens2ConfigurationProfile when developing for HoloLens 2. However, for the purpose of this tutorial, you will use the DefaultMixedRealityToolkitConfigurationProfile, then in the next tutorial, [Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md), you will change to the DefaultHoloLens2ConfigurationProfile.
+> Typically, you will use the DefaultHoloLens2ConfigurationProfile when developing for HoloLens 2. However, for the purpose of this tutorial, you will use the DefaultMixedRealityToolkitConfigurationProfile, then in the next tutorial, [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md), you will change to the DefaultHoloLens2ConfigurationProfile.
 
 In the Unity menu, select **File** > **Save As...** to open the Save Scene window:
 
