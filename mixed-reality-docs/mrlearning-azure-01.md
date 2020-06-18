@@ -107,7 +107,7 @@ Download and **import** the following Unity custom packages **in the order they 
 
 * [MRTK.Tutorials.AzureCloudServices](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/MRTK.Tutorials.AzureCloudServices.unitypackage)
 * [Azure Storage for Unity](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/AzureStorageForUnity.unitypackage)
-* [-TODO- LINK TO SPATIAL ANCHORS LIBRARY](https://docs.microsoft.com/en-us/sandbox/gamedev/unity/azure-storage-unity)
+* [Azure Spatial Anchors](https://github.com/Azure/azure-spatial-anchors-samples/releases/tag/v2.2.1)
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
