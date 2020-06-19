@@ -15,15 +15,13 @@ In this tutorial, you will learn how to save Azure Spatial Anchors across multip
 
 ## Objectives
 
-* Learn how to save and retrieve Azure Spatial Anchor IDs to and from the HoloLens 2 local disk, for persistence between app sessions
-* Learn how to share Azure Spatial Anchor IDs between users in a multi-device scenario
+* Learn how to achieve spatial alignment across multiple app sessions
+* Learn how to achieve spatial alignment between multiple devices
 
-<!-- TODO: Update image when prefab is finalized -->
 ## Preparing the scene
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder. While holding down the CTRL button, click on **ButtonParent_SaveAnchorId** and **ButtonParent_ShareAnchorId** to select the two prefabs, then drag them into the Hierarchy window to add them to the scene:
 
-<!-- TODO: Update image when prefab is finalized -->
 ![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
 ## Persisting Azure Spatial Anchors between app sessions
@@ -32,7 +30,6 @@ In this section, you will learn how to save and retrieve the Azure Anchor ID to 
 
 In the Hierarchy window, expand the **ButtonParent_SaveAnchorId** object which contains two buttons, one button for saving the Azure Anchor ID to the HoloLens 2 storage and another for retrieving the saved ID from the disk:
 
-<!-- TODO: Update image when prefab is finalized -->
 ![mr-learning-asa](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 Follow the same steps as in the [configuring the buttons to operate the scene](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
@@ -62,7 +59,6 @@ There are many ways to transfer Azure Anchor IDs between devices, including meth
 
 In the Hierarchy window, expand the **ButtonParent_ShareAnchorId** object which contains two buttons; one button for uploading the Azure Anchor ID to the web server, and another for downloading the ID from the web server:
 
-<!-- TODO: Update image when prefab is finalized -->
 ![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 Follow the same steps as in the [configuring the buttons to operate the scene](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
