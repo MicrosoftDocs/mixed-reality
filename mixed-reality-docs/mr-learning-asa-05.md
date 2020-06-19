@@ -62,7 +62,10 @@ Select Type > **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityA
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
-With the **MixedRealityToolkit** object still selected, in the Inspector window, attach supporting scripts by clicking on the **AddComponent** button and type in **AR Anchor Manager** then select the script.
+With the **MixedRealityToolkit** object still selected, in the Inspector window, attach supporting scripts by clicking on the **AddComponent** button and typing the following:
+
+* **AR Anchor Manager**
+* **DisableDiagnosticsSystem**
 
 Adding **AR Reference Point Manager** script will automatically add **AR session origin** along with it in the the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
 
