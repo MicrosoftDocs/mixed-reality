@@ -2,7 +2,7 @@
 layout: LandingPage
 title: Mixed reality UX elements
 description: This document contains a set of topics that explain how to design for mixed reality devices.
-author: Yoon Park
+author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
