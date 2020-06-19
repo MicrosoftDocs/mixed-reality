@@ -38,22 +38,22 @@ Follow this [quickstart tutorial](https://docs.microsoft.com/en-us/azure/cogniti
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
-![mrlearning-asa](images/mrlearning-azure/tutorial3-section4-step1-1.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial3-section4-step1-1.png)
 
 From there move the prefab **ObjectDetectionManager** into the scene hierarchy.
 
-![mrlearning-asa](images/mrlearning-azure/tutorial3-section4-step1-2.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial3-section4-step1-2.png)
 
 In the hierarchy window locate the **ObjectDetectionManager** object and select it.
 The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the inspector window it depends on several settings. Those settings you have to retrieve from two places, first from the **Azure Portal** and secondly from the **Custom Vision Dashboard** website.
 
 Now find the **SceneController** object in your scene hierarchy and select it.
 
-![mrlearning-asa](images/mrlearning-azure/tutorial3-section4-step1-3.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial3-section4-step1-3.png)
 
 You see *Object Detection Manager* field in the **SceneController** component is empty, drag the **ObjectDetectionManager** from the hierarchy into that field and save the scene.
 
-![mrlearning-asa](images/mrlearning-azure/tutorial3-section4-step1-4.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial3-section4-step1-4.png)
 
 ## Take and upload images
 

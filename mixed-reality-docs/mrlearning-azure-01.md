@@ -108,7 +108,7 @@ Download and **import** the following Unity custom packages **in the order they 
  
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section4-step1-1.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section4-step1-1.png)
 
 ## Creating and preparing the scene
 <!-- TODO: Consider renaming to 'Preparing the scene' -->
@@ -117,7 +117,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder. While holding down the CTRL button, click on **SceneController**, **RootMenu** and **DataManager** to select the three prefabs:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section5-step1-1.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section5-step1-1.png)
 
 The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
 
@@ -127,11 +127,11 @@ The **DataManager (prefab)** is responsible for talking to Azure storage and wil
 
 Let's continue, now with the four prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section5-step1-2.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section5-step1-2.png)
 
 To focus in on the objects in the scene, you can double-click on the ParentAnchor object, and then zoom slightly out again:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section5-step1-3.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section5-step1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
@@ -144,23 +144,23 @@ In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* t
 
 In the Hierarchy window, select the **DataManager** object:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section6-step1-1.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-1.png)
 
 In the Inspector window, locate the **DataManager (Script)** component and add a new event listener to the **On Data Manager Ready ()** event by clicking the **+** icon:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section6-step1-2.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-2.png)
 
 Now select in the Hierarchy window the **SceneController** object and drag it into the **On Data Manager Ready ()** event and select from the dropdown menu **SceneController.Init**
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section6-step1-3.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-3.png)
 
 From the Inspector window, select the **SceneController** object, there in the inspector you will find the **SceneController (script)** component. 
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section6-step1-4.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-4.png)
 
 You will see that there several unpopulated fields, let's change that. Move the **DataManager** object from the Hierarchy into the *Data Manager* field and move the **RootMenu** GameObject from the Hierarchy into the *Main Menu* field.
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section6-step1-5.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-5.png)
 
 Now your scene is ready for the upcoming tutorials. Don't forget to save it into your project.
 
@@ -172,15 +172,15 @@ While we have jet to fill the project with life, let's do some preparations so t
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section7-step1-1.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section7-step1-1.png)
 
 In the Player Settings window, select **Player** and then **Publishing Settings**:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section7-step1-2.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section7-step1-2.png)
 
 In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone** and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **Webcam** capabilities:
 
-![mrlearning-asa](images/mrlearning-azure/tutorial1-section7-step1-3.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial1-section7-step1-3.png)
 
 ### 2. Deploy the app to your HoloLens 2
 

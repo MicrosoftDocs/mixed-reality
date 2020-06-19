@@ -60,7 +60,7 @@ While you can see and verify all data changes from the UI inside the application
 
 In the hierarchy window locate the **DataManager** object and select it.
 
-![mrlearning-asa](images/mrlearning-azure/tutorial2-section4-step1-1.png)
+![mrlearning-azure](images/mrlearning-azure/tutorial2-section4-step1-1.png)
 
 From the inspector window you will see that in the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure Portal. If you are using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
 
