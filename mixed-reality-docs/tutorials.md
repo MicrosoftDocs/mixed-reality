@@ -31,10 +31,15 @@ The HoloLens 2 tutorials are designed to help developers learn both techniques a
 
 The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects.
 
-* [Periodic Table of the Elements](periodic-table-of-the-elements.md) (HoloLens, HoloLens 2, Immersive Headset)
-* [Surfaces](sampleapp-surfaces.md) (HoloLens 2 only)
-* [Galaxy Explorer](galaxy-explorer.md) (HoloLens, HoloLens 2)
-* [Lunar Module](lunar-module.md) (HoloLens 1st gen only)
+### HoloLens 2 open source sample apps
+* [Surfaces](sampleapp-surfaces.md)
+* [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)
+
+### HoloLens (1st gen) open source sample apps
+* [Periodic Table of the Elements 1.0](periodic-table-of-the-elements.md)
+* [Galaxy Explorer 1.0](galaxy-explorer.md)
+* [Lunar Module](lunar-module.md)
 
 ## Mixed Reality Academy tutorials
 
