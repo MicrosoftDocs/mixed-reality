@@ -30,7 +30,6 @@ You can use this project's components to create your own mixed reality app exper
 [Learnings from the MR Surfaces App](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
 
 Lars Simkins, Senior designer behind the MRDL Surfaces app talks about the app's design story and technical highlights.
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App]
 
 ## Project repository on GitHub
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
