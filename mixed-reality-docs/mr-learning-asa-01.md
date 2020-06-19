@@ -19,31 +19,35 @@ ms.localizationpriority: high
 ## Overview
 
 <!-- TODO: Consider change "Welcome to the second..." something like "This tutorial builds on the Getting started tutorial series and uses the RoverWhateverName prefab you created during those tutorials. You can continue building on the Unity project or etc..." -->
-Welcome to the second of three series of HoloLens 2 tutorials. In this four-part tutorial series, you will learn the fundamentals of Azure Spatial Anchors and leverage the power it holds, to anchor the RoverModule_Complete prefab you built in the previous series [Getting started tutorials](mr-learning-base-01.md), to the real world.
+Welcome to the second of three series of HoloLens 2 tutorials. Through this tutorial series, you will learn the fundamentals of Azure Spatial Anchors and leverage the power it holds, to anchor the RoverModule_Complete prefab you built in the previous series [Getting started tutorials](mr-learning-base-01.md), to the real world.
 
 In the next series [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will learn how to leverage the power of Photon and ASA to make a shared experience that updates in real time.
 
 Tutorials in this series:
 
-* [Getting started with Azure Spatial Anchors](mr-learning-asa-02.md) - You will explore the various steps required to start and stop an Azure session and create, upload, and download Azure anchors on a single device.
-* [Saving, retrieving, and sharing Azure Spatial Anchors](mr-learning-asa-03.md) - You will learn how to save Azure Spatial Anchors across multiple app sessions by saving anchor information to the HoloLens 2's storage and how to share this anchor information to other devices for a multi-device anchor alignment.
-* [Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md) - You will learn how to provide users with feedback about anchor events and statuses when using Azure Spatial Anchors.
-* [Azure Spatial Anchors for Android and iOS](mr-learning-asa-05.md) - You will learn how to build and deploy your project to Android and iOS devices.
+1. [Getting started with Azure Spatial Anchors](mr-learning-asa-02.md)
+2. [Saving, retrieving, and sharing Azure Spatial Anchors](mr-learning-asa-03.md)
+3. [Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md)
+4. [Azure Spatial Anchors for Android and iOS](mr-learning-asa-05.md)
 
 ## Objectives
 
 <!-- TODO: Update to exact wording used in the following tutorials' Objectives section -->
+* Learn the fundamentals of developing with Azure Spatial Anchors for HoloLens 2
 * Learn how to create spatial anchors and fetch them from Azure
 * Learn how to achieve spatial alignment across multiple app sessions
 * Learn how to achieve spatial alignment between multiple devices
-* Learn how to configure, build, and deploy the MRTK and ASA based project to Android and iOS
+* Learn how to set up a UI panel that displays important information about the current ASA session
+* Learn about and explore feedback elements that the ASA SDK makes available to users
+* Learn how to build your project to Android device using Unity's AR Foundation and ARCore XR Plugin.
+* Learn how to build your project to iOS device using Unity's AR Foundation and ARKit XR Plugin.
 
 ## Prerequisites
 
 * A Windows 10 computer configured with the correct [tools installed](install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.10 installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added
 * Complete the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial
 * Completed the [Getting started tutorials](mr-learning-base-01.md) series or some basic prior experience with Unity and MRTK
 * If you intend to deploy to Android as well as HoloLens
