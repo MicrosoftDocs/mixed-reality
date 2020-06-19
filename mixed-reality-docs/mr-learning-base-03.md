@@ -40,7 +40,7 @@ The main steps you will take to hide the spatial awareness mesh are:
 > [!NOTE]
 > The Configuration Profile is the top level profile. Consequently, to be able to edit any other profiles, you first have to clone the Configuration Profile.
 
-With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, change the **MixedRealityToolkit** Configuration Profile to **DefaultHoloLens2ConfigurationProfile**:
+In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, change the **MixedRealityToolkit** Configuration Profile to **DefaultHoloLens2ConfigurationProfile**:
 
 ![mr-learning-base](images/mr-learning-base/base-03-section1-step1-1.png)
 
