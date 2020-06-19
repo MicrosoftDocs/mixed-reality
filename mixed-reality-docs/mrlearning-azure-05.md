@@ -179,3 +179,9 @@ Try out what happens if you look up for an **Tracked Objects** that does not exi
 ## Congratulations
 
 In this tutorial you learned how Azure Bot Framework can be used to interact with the application via conversation with natural langue. You learned how to develope your own bot and what all the moving pieces are to get it running,
+
+## Conclusion
+
+Through the course of this tutorial series you experienced how **Azure Cloud services** brought new and exciting features to your application.
+You can now store data and images on the cloud with **Azure Storage**, use **Azure Custom Vision** to associate images and train a model, bring objects to a local context with **Azure Spatial Anchors** and add with **Azure Bot Framework powered by LUIS** a conversational bot for a new and natural interaction pattern.
+
