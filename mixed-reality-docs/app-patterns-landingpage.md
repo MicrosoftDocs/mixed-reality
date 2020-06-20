@@ -87,8 +87,8 @@ Learn about frequently used common spatial interaction patterns and UI building 
 
 :::row:::
     :::column:::
-       [![Voice command](images/UX/UX_Hero_VoiceCommand.jpg)](voice-input.md)
-        **[Voice command](voice-input.md)**
+       [![Voice input](images/UX/UX_Hero_VoiceCommand.jpg)](voice-input.md)
+        **[Voice input](voice-input.md)**
     :::column-end:::
     :::column:::
        [![Keyboard](images/UX/UX_Hero_Keyboard.jpg)](keyboard.md)

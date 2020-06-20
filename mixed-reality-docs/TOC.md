@@ -80,7 +80,7 @@
 #### [Hand menu](hand-menu.md)
 #### [Near menu](near-menu.md)
 #### [Object collection](object-collection.md)
-#### [Voice command](voice-input.md)
+#### [Voice input](voice-input.md)
 #### [Keyboard](keyboard.md)
 #### [Tooltip](tooltip.md)
 #### [Slate](slate.md)

@@ -18,8 +18,6 @@ Since it is imporant to allow the user focus and interact with content, continou
 <br>
 
 
----
-
 ## Spatial mesh visualization in MRTK (Mixed Reality Toolkit) for Unity
 MRTK provides several material for the spatial mesh visualization.
 
