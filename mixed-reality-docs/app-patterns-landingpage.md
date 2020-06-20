@@ -11,7 +11,7 @@ keywords: UX design, Mixed Reality UX, UX, app patterns, controls, style, HoloLe
 
 # UX elements overview
 ## Foundational elements
-Learn about the foundational design elements that you need to create a great mixed reality experience.
+Learn about the foundational elements that you need to design a great mixed reality experience.
 
 :::row:::
     :::column:::
@@ -38,7 +38,7 @@ Learn about the foundational design elements that you need to create a great mix
 <br>
 
 ## Common controls and behaviors
-Learn about frequently used common spatial interaction patterns and UI building blocks for mixed reality experiences.
+Learn about frequently used common spatial interactions and UI building blocks for mixed reality experiences.
 
 :::row:::
     :::column:::
