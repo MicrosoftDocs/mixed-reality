@@ -117,6 +117,21 @@ Learn about frequently used common spatial interaction patterns and UI building 
 
 :::row:::
     :::column:::
+       [![Dialog](images/UX/MRTK_UX_Dialog.jpg)](dialog-ui.md)
+        **[Dialog](dialog-ui.md)**
+    :::column-end:::
+    :::column:::
+       [![Hand coach](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md)
+        **[Hand coach](hand-coach.md)**
+    :::column-end:::
+    :::column:::
+       [![Spatial mesh](images/UX/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md)
+        **[Spatial mesh](spatial-mesh-ux.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
         [![Billboarding and tag-along](images/UX/MRTK_TagAlong.gif)](billboarding-and-tag-along.md)
         **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
@@ -129,19 +144,6 @@ Learn about frequently used common spatial interaction patterns and UI building 
         **[Surface magnetism](surface-magnetism.md)**
     :::column-end:::
 :::row-end:::
-
-:::row:::
-    :::column:::
-       [![Hand Coach](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md)
-        **[Hand Coach](hand-coach.md)**
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-:::row-end:::
-
-<br>
 
 <br>
 
