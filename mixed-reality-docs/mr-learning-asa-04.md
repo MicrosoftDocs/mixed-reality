@@ -16,7 +16,7 @@ In this tutorial, you will learn how to provide users with feedback about anchor
 ## Objectives
 
 * Learn how to set up a UI panel that displays important information about the current ASA session
-* Understand and explore feedback elements that the ASA SDK makes available to users
+* learn about and explore feedback elements that the ASA SDK makes available to users
 
 ## Setting up ASA feedback panel
 

@@ -18,7 +18,7 @@ In this tutorial, you will explore the various steps required to start and stop 
 ## Objectives
 
 * Learn the fundamentals of developing with Azure Spatial Anchors for HoloLens 2
-* Create, upload, and download spatial anchors
+* Learn how to create spatial anchors and fetch them from Azure
 
 ## Creating and preparing the Unity project
 
@@ -35,8 +35,7 @@ For this, first follow the [Initializing your project and first application](mr-
 
 Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Adding inbuilt Unity packages
-<!-- TODO: Consider renaming to 'Installing AR Foundation' -->
+## Installing AR Foundation
 
 In this section, you will install Unity's inbuilt AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
 
@@ -55,9 +54,9 @@ In the Package Manager window, select **AR Foundation** and install the package 
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
 
-* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.1.1/AzureSpatialAnchors.unitypackage) (version 2.1.1)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.1.unitypackage)
+* [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (version 2.2.1)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.4.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.4.0.0.unitypackage)
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
@@ -66,8 +65,7 @@ After you have imported the tutorial assets your Project window should look simi
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section3-step1-1.png)
 
-## Creating and preparing the scene
-<!-- TODO: Consider renaming to 'Preparing the scene' -->
+## Preparing the scene
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
@@ -168,27 +166,22 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
 
 ### 1. Add the Rover Module experience
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **RoverModule** folder and select the **RoverModule_Complete** prefab:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** folder and select the **RoverExplorer_Complete** prefab:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
 With the RoverModule_Complete prefab still selected, drag it on top of the **ParentAnchor** object in the Hierarchy window to make it a child of the ParentAnchor object:
 
-<!-- TODO: Update image when prefab is finalized -->
-<!-- TODO: Image should probably show RoverModule_Complete with blue highlight (Hierarchy window should be selected) -->
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-2.png)
 
 ### 2. Reposition the Rover Module experience
 
 Position, rotate, and scale the **RoverModule_Complete** object to a suitable scale and orientation, while also ensuring the **ParentAnchor** object is still exposed, for example:
 
-<!-- TODO: Update Transform values when prefab is finalized -->
-* Transform **Position** X = 0, Y = 0, Z = 4.25
+* Transform **Position** X = 0, Y = 0, Z = 0
 * Transform **Rotation** X = 0, Y = 0, Z = 0
-* Transform **Scale** X = 5, Y = 5, Z = 5
+* Transform **Scale** X = 10, Y = 10, Z = 10
 
-<!-- TODO: Update image when prefab is finalized -->
-<!-- TODO: Image should probably show RoverModule_Complete with blue highlight (Hierarchy window should be selected) -->
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step2-1.png)
 
 If you rebuild and deploy the application to your device, users can now reposition the entire Rover Module experience by moving the cube.

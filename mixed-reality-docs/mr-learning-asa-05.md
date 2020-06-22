@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 5. Building Azure Spatial Anchors for mobile devices
 
-In this tutorial, you will learn how to build the your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
+In this tutorial, you will learn how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
 ## Objectives
 
@@ -31,24 +31,17 @@ In the Unity menu, select **Window** > **Package Manager**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-1.png)
 
-It might take a few seconds before all packages appear in the list. Display preview packages by clicking on Advanced option and select "**Show preview packages**".
-
->[!NOTE]
-> You might get a pop up message telling you **Preview packages are not verified to work with Unity and might be unstable. They are not supported in production environments.** In that case just select ok.
+In the Package Manager window, select the **AR Foundation** dropdown. Here you will see many versions and need to select **Version 3.1.3** then update the package by clicking **Update to 3.1.3**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-2.png)
 
-In the Package Manager window, select the **AR Foundation** dropdown. Here you will see many versions and need to select **Version 3.1.0 preview 8** then update the package by clicking **Update to 3.1.0-preview.8**:
-
-![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-3.png)
-
 Follow the same process to import the following as needed:
 
-* **Legacy Input Helpers 1.3.11** Required
+* **Legacy Input Helpers 2.1.4** Required
 
-* **ARCore XR Plugin 3.1.0 preview 8** To support Android devices
+* **ARCore XR Plugin 3.1.3** To support Android devices
 
-* **ARKit XR plugin 3.1.0 preview 8** To support iOS devices
+* **ARKit XR plugin 3.1.3** To support iOS devices
 
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
@@ -69,7 +62,10 @@ Select Type > **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityA
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
-With the **MixedRealityToolkit** object still selected, in the Inspector window, attach supporting scripts by clicking on the **AddComponent** button and type in **AR Anchor Manager** then select the script.
+With the **MixedRealityToolkit** object still selected, in the Inspector window, attach supporting scripts by clicking on the **AddComponent** button and typing the following:
+
+* **AR Anchor Manager**
+* **DisableDiagnosticsSystem**
 
 Adding **AR Reference Point Manager** script will automatically add **AR session origin** along with it in the the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
 
