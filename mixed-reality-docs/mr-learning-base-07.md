@@ -101,7 +101,7 @@ In the Hierarchy window, expand the RoverAssembly > RoverModel_PlacementHints_XR
 In the Hierarchy window, select the RoverExplorer > Buttons > **Reset** button object, then in the Inspector window, configure the Interactable **OnClick ()** event as follows:
 
 * Assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **GameObject** > **BroadcastMessage (string)** to set the BroadcastMessage () function as the action to be executed when the event is triggered
+* From the **No Function** dropdown, select **GameObject** > **BroadcastMessage (string)** to set this function as the action to be executed when the event is triggered
 * Set the argument to **ResetPlacement** by copy/paste it into the field
 
 ![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
@@ -140,11 +140,11 @@ In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal
 
 * Change the **Main Label Text** to **Enable**
 * Assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **BoundingBox** > **bool Enabled** to update the BoundingBox.enabled property value when the event is triggered
+* From the **No Function** dropdown, select **BoundingBox** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **checked**
 * Click the small **+** icon to add another event
 * Assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **ObjectManipulator** > **bool Enabled** to update the ObjectManipulator.enabled property value when the event is triggered
+* From the **No Function** dropdown, select **ObjectManipulator** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **checked**
 * Leave the **Icon** as the 'cube with bounding box' icon
 
@@ -154,11 +154,11 @@ Rename the forth and last button to **BoundingBox_Disable**, then in the Inspect
 
 * Change the **Main Label Text** to **Disable**
 * Assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **BoundingBox** > **bool Enabled** to update the BoundingBox.enabled property value when the event is triggered
+* From the **No Function** dropdown, select **BoundingBox** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
 * Click the small **+** icon to add another event
 * Assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **ObjectManipulator** > **bool Enabled** to update the ObjectManipulator.enabled property value when the event is triggered
+* From the **No Function** dropdown, select **ObjectManipulator** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
 * Change the **Icon** to the 'cube with bounding box" icon
 

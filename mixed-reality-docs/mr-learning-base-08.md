@@ -73,13 +73,13 @@ In the Hierarchy window, select the Hints > SeeItSayItLabel > **TextMeshPro** ob
 
 * In the **On Look At Start ()** event section
   * Click the small **+** icon to add another event
-  * Assign the the object itself, i.e. the same **TextMeshPro** object to the **None (Object)** field
-  * From the **No Function** dropdown, select **TextMeshPro** > **float fontSize** to update the TextMeshPro.fontSize property value when the event is triggered
+  * Assign the object itself, i.e. the same **TextMeshPro** object, to the **None (Object)** field
+  * From the **No Function** dropdown, select **TextMeshPro** > **float fontSize** to update this property value when the event is triggered
   * Set the argument to **0.06** to increase the font current size of 0.04 by 50%
 * In the **On Look Away ()** event section
   * Click the small **+** icon to add another event
-  * Assign the the object itself, i.e. the same **TextMeshPro** object to the **None (Object)** field
-  * From the **No Function** dropdown, select **TextMeshPro** > **float fontSize** to update the TextMeshPro.fontSize property value when the event is triggered
+  * Assign the object itself, i.e. the same **TextMeshPro** object, to the **None (Object)** field
+  * From the **No Function** dropdown, select **TextMeshPro** > **float fontSize** to update this property value when the event is triggered
   * Set the argument to **0.04** to reset the font size back to 0.04
 
 ![mr-learning-base](images/mr-learning-base/base-08-section4-step1-3.png)
@@ -92,6 +92,6 @@ If you now enter Game mode, you can use near or far interaction to move, rotate,
 
 ## Congratulations
 
-In this tutorial, you will learned how to enable eye tracking for HoloLens 2 and how to add eye tracking to objects to automatically trigger actions when the objects are looked at.
+In this tutorial, you learned how to enable eye tracking for HoloLens 2 and how to add eye tracking to objects to automatically trigger actions when the objects are looked at.
 
 [Next Tutorial: 9. Using speech commands](mr-learning-base-09.md)

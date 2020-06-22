@@ -55,14 +55,14 @@ Once done, collapse the Buttons child objects.
 In the Hierarchy window, select the **Hints** button object, then in the Inspector window, configure the Interactable **OnClick ()** event as follows:
 
 * Assign the **RoverAssembly** object to the **None (Object)** field
-* From the **No Function** dropdown, select **PlacementHintsController** > **TogglePlacementHints ()** to set the TogglePlacementHints () function as the action to be executed when the event is triggered
+* From the **No Function** dropdown, select **PlacementHintsController** > **TogglePlacementHints ()** to set this function as the action to be executed when the event is triggered
 
 ![mr-learning-base](images/mr-learning-base/base-06-section1-step1-5.png)
 
 In the Hierarchy window, select the **Explode** button object, then in the Inspector window, configure the Interactable **OnClick ()** event as follows:
 
 * Assign the **RoverAssembly** object to the **None (Object)** field
-* From the **No Function** dropdown, select **ExplodedViewController** > **ToggleExplodedView ()** to set the ToggleExplodedView () function as the action to be executed when the event is triggered
+* From the **No Function** dropdown, select **ExplodedViewController** > **ToggleExplodedView ()** to set this function as the action to be executed when the event is triggered
 
 ![mr-learning-base](images/mr-learning-base/base-06-section1-step1-6.png)
 
@@ -91,7 +91,7 @@ Rename the first button to **Indicator**, then in the Inspector window, configur
 
 * Change the **Main Label Text** to match the name of the button
 * Assign the **Indicator** object to the **None (Object)** field
-* From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set the SetActive () function as the action to be executed when the event is triggered
+* From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered
 * Verify that the argument checkbox is **checked**
 * Change the **Icon** to the 'search' icon
 
@@ -108,7 +108,7 @@ Rename the second button to **TapToPlace**, then in the Inspector window, config
 
 * Change the **Main Label Text** to match the name of the button
 * Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
-* From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update the TapToPlace.enabled property value when the event is triggered
+* From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **checked**
 * Change the **Icon** to the 'hand with ray' icon
 
@@ -119,7 +119,7 @@ In the Hierarchy window, select the **RoverAssembly** object, then in the Inspec
 * Uncheck the checkbox next to it's name to make it inactive by default
 * Click the small **+**icon to add another event
 * Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
-* From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update the TapToPlace.enabled property value when the event is triggered
+* From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-6.png)

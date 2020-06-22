@@ -61,39 +61,79 @@ In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Featu
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-1.png)
 
-In the Hierarchy window, expand the Menu > **ButtonCollection** object and select its four child objects, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component to all the selected objects:
+In the Hierarchy window, right-click on an empty spot and select **3D Object** > **Create Empty** to add an empty object to your scene, name the object **SpeechInputHandler_Global**, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
+
+* **Uncheck** the **Is Focus Required** checkbox, so the user is not require to look at the object with the SpeechInputHandler component to trigger the speech command
+* From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-2.png)
 
-In the Hierarchy window, select the first button, i.e. the ButtonCollection > **Indicator** object, then in the Inspector window, take the following steps to configure the **SpeechInputHandler**:
+On the SpeechInputHandler component, click the small **+** icon three times to add three keyword elements:
 
-* **Uncheck* the **Is Focus Required** checkbox
+![mr-learning-base](images/mr-learning-base/base-09-section3-step1-3.png)
 
+Expand **Element 0** and configure it as follows:
 
-* Assign the **Indicator** object to the **None (Object)** field
-* From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set the SetActive () function as the action to be executed when the event is triggered
-* Verify that the argument checkbox is **checked**
+* In the **Keyword** field, enter **Enable Indicator**, to reference the Enable Indicator speech command you created in the previous section
+* Click the small **+** icon to add an event
+* From the Hierarchy window, assign the **Indicator** object to the **None (Object)** field
+* From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered
+* Check the argument checkbox so it is **checked**
 
+![mr-learning-base](images/mr-learning-base/base-09-section3-step1-4.png)
 
+Expand **Element 1** and configure it as follows:
 
+* In the **Keyword** field, enter **Enable Bounding Box**, to reference the Enable Bounding Box command you created in the previous section
+* Click the small **+** icon to add an event
+* From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **BoundingBox** > **bool enabled** to update this property value when the event is triggered
+* Check the argument checkbox so it is **checked**
+* Click the small **+** icon to add another event
+* From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
+* Check the argument checkbox so it is **checked**
 
-### 4. Add and configure the Speech Input Handler (Script) component
+![mr-learning-base](images/mr-learning-base/base-09-section3-step1-5.png)
 
-In the Hierarchy window, select the **Octa** object and add the **Speech Input Handler (Script)** component to the Octa object. Then uncheck the **Is Focus Required** checkbox Octa object to trigger the speech command:
+Expand **Element 2** and configure it as follows:
 
-### 5. Implement the Response event for the speech command
+* In the **Keyword** field, enter **Disable Bounding Box**, to reference the Disable Bounding Box command you created in the previous section
+* Click the small **+** icon to add an event
+* From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **BoundingBox** > **bool enabled** to update this property value when the event is triggered
+* Verify that the argument checkbox is **unchecked**
+* Click the small **+** icon to add another event
+* From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
+* Verify that the argument checkbox is **unchecked**
 
-On the Speech Input Handler (Script) component, click the small **+** button to add a keyword element to the list of keywords:
+![mr-learning-base](images/mr-learning-base/base-09-section3-step1-6.png)
 
-Click the newly created **Element 0** to expand it, and then, from the **Keyword** dropdown, choose the **Play Music** keyword you created earlier:
+In the Hierarchy window, select the RoverExplorer > **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
 
-> [!NOTE]
-> The keywords in the Keyword dropdown are populated based on the keywords defined in the Speech Commands list in the Speech Commands Profile.
+* Verify that the **Is Focus Required** checkbox is **check**, so the user is require to look at the object with the SpeechInputHandler component, i.e. the RoverAssembly, to trigger the speech command
+* From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized
 
-Create a new **Response ()** event, configure the **Octa** object to receive the event, define **AudioSource.PlayOneShot** as the action to be triggered, and assign a suitable audio clip to the **Audio Clip** field, for example, the MRTK_Gem audio clip:
+![mr-learning-base](images/mr-learning-base/base-09-section3-step1-7.png)
+
+On the SpeechInputHandler component, click the small **+** icon to add a keyword element, expand the newly created element, then configure it as follows:
+
+* In the **Keyword** field, enter **Enable Tap to Place**, to reference the Enable Tap to Place command you created in the previous section
+* Click the small **+** icon to add an event
+* From the Hierarchy window, assign the object itself, i.e. the same **RoverAssembly** object, to the **None (Object)** field
+* From the **No Function** dropdown, select **TapToPlace** > **bool enabled** to update this property value when the event is triggered
+* Check the argument checkbox so it is **checked**
+
+![mr-learning-base](images/mr-learning-base/base-09-section3-step1-8.png)
 
 ## Congratulations
 
-You have successfully added basic eye tracking capabilities to your application. These actions are only the beginning of a world of possibilities with eye tracking. In this tutorial, you also learned about other advanced input features, such as voice commands and panning gestures.
+In this tutorial, you learned how to create speech commands and how to control them globally. You also learned how to control local speech commands that require the user to look at the object that controls the speech command.
 
-You have fully configured this application. Now, your application allows users to fully assemble the Lunar Module, launch the Lunar Module, toggle hints, and reset the application to start again.
+This also concludes the [Getting started tutorials](mr-learning-base-01.md) series. Through these tutorials, you have successfully built a complete mixed reality experience from scratch using the Mixed Reality Toolkit.
+
+In the next two tutorial series, [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) and [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will first learn how to integrate Azure Spatial Anchors into your project to anchor the Rover Explorer experience you created in the real world. Then, you will learn how add multi-user capabilities to your project to share user and object movements in real-time.
+
+to set the BroadcastMessage () function as the action to be executed when the event is triggered
+to update the TextMeshPro.fontSize property value when the event is triggered
