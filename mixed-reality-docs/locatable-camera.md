@@ -110,10 +110,10 @@ public:
         MFPinholeCameraIntrinsics cameraIntrinsics;
         UINT32 sizeCameraExtrinsics = 0;
         UINT32 sizeCameraIntrinsics = 0;
-        UINT64 sampleTimeQpc = 0;
+        UINT64 sampleTimeHns = 0;
  
         // query sample for calibration and validate
-        if (FAILED(pSample->GetUINT64(MFSampleExtension_DeviceTimestamp, &sampleTimeQpc)) ||
+        if (FAILED(pSample->GetUINT64(MFSampleExtension_DeviceTimestamp, &sampleTimeHns)) ||
             FAILED(pSample->GetBlob(MFSampleExtension_CameraExtrinsics, (UINT8*)& cameraExtrinsics, sizeof(cameraExtrinsics), &sizeCameraExtrinsics)) ||
             FAILED(pSample->GetBlob(MFSampleExtension_PinholeCameraIntrinsics, (UINT8*)& cameraIntrinsics, sizeof(cameraIntrinsics), &sizeCameraIntrinsics)) ||
             (sizeCameraExtrinsics != sizeof(cameraExtrinsics)) ||
@@ -144,7 +144,7 @@ public:
         }
  
         // locate dynamic node
-        auto timestamp = PerceptionTimestampHelper::FromSystemRelativeTargetTime(TimeSpanFrodmQpcTicks(sampleTimeQpc));
+        auto timestamp = PerceptionTimestampHelper::FromSystemRelativeTargetTime(TimeSpan{ sampleTimeHns });
         auto coordinateSystem = m_frameOfReference.GetStationaryCoordinateSystemAtTimestamp(timestamp);
         auto location = m_locator.TryLocateAtTimestamp(timestamp, coordinateSystem);
         if (!location)
@@ -156,31 +156,11 @@ public:
  
         return CameraFrameLocation{ coordinateSystem, cameraToDynamicNode * dynamicNodeToCoordinateSystem, cameraIntrinsics };
     }
- 
+
 private:
     GUID m_currentDynamicNodeId{ GUID_NULL };
     SpatialLocator m_locator{ nullptr };
     SpatialLocatorAttachedFrameOfReference m_frameOfReference{ nullptr };
- 
-    // Convert a duration value from a source tick frequency to a destination tick frequency.
-    static inline int64_t SourceDurationTicksToDestDurationTicks(int64_t sourceDurationInTicks, int64_t sourceTicksPerSecond, int64_t destTicksPerSecond)
-    {
-        int64_t whole = (sourceDurationInTicks / sourceTicksPerSecond) * destTicksPerSecond;                          // 'whole' is rounded down in the target time units.
-        int64_t part = (sourceDurationInTicks % sourceTicksPerSecond) * destTicksPerSecond / sourceTicksPerSecond;    // 'part' is the remainder in the target time units.
-        return whole + part;
-    }
- 
-    static inline TimeSpan TimeSpanFromQpcTicks(int64_t qpcTicks)
-    {
-        static const int64_t qpcFrequency = []
-        {
-            LARGE_INTEGER frequency;
-            QueryPerformanceFrequency(&frequency);
-            return frequency.QuadPart;
-        }();
- 
-        return TimeSpan{ SourceDurationTicksToDestDurationTicks(qpcTicks, qpcFrequency, winrt::clock::period::den) / winrt::clock::period::num };
-    }
 };
 ```
 
