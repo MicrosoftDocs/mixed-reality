@@ -21,7 +21,7 @@ Currently, all of our tutorials and sample apps are Unity or Unreal based. As we
 The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications. The Unity tutorials are based on the [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), and the Unreal tutorial is based on the [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
 * Getting started tutorials
-    * Unity - [1 of 10 Introduction](mr-learning-base-01.md)
+    * Unity - [1 of 9 Introduction](mr-learning-base-01.md)
     * Unreal - [1 of 6 Getting started](unreal-uxt-ch1.md)
 * Azure Spatial Anchors tutorials - [1 of 5 Introduction](mr-learning-asa-01.md)
 * Multi-user capabilities tutorials - [1 of 5 Introduction](mr-learning-sharing-01.md)
