@@ -24,7 +24,7 @@ In this tutorial, you will import the tutorial assets and position the provided 
 
 Download and import the following Unity custom package:
 
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0..unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0./MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
@@ -95,9 +95,12 @@ In the Hierarchy window, right-click on the **RoverExplorer** object and select 
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-1.png)
 
-In the Hierarchy window, select all the RoverExplorer > RoverAssembly > RoverModel > **Parts** child objects, right click on them and select **Duplicate** to create a copy of each of the parts:
+In the Hierarchy window, select all the RoverExplorer > RoverAssembly > RoverModel > **Parts** child objects, right-click on them and select **Duplicate** to create a copy of each of the parts:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-2.png)
+
+> [!TIP]
+> To select multiple adjacent objects, press-and-hold the SHIFT key while using the mouse to select the first and last object.
 
 With the newly duplicated Parts child objects still selected, click-and-drag them on to the **RoverParts** object to make them child objects of the RoverParts object:
 

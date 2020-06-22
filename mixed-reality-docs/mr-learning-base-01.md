@@ -17,21 +17,21 @@ Welcome to the Getting Started tutorials! Through this tutorial series, you will
 
 Tutorials in this series:
 
-* [Initializing your project and first application](mr-learning-base-02.md)
-* [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md)
-* [Positioning objects in the scene](mr-learning-base-04.md)
-* [Creating dynamic content using Solvers](mr-learning-base-05.md)
-* [Creating user interface](mr-learning-base-06.md)
-* [Interacting with 3D objects](mr-learning-base-07.md)
-* [Adding tooltips](mr-learning-base-08.md)
-* [Using eye tracking](mr-learning-base-09.md)
-* [Using voice commands](mr-learning-base-10.md)
+1. [Introduction](mr-learning-base-01.md)
+2. [Initializing your project and first application](mr-learning-base-02.md)
+3. [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md)
+4. [Positioning objects in the scene](mr-learning-base-04.md)
+5. [Creating dynamic content using Solvers](mr-learning-base-05.md)
+6. [Creating user interface](mr-learning-base-06.md)
+7. [Interacting with 3D objects](mr-learning-base-07.md)
+8. [Using eye tracking](mr-learning-base-08.md)
+9. [Using voice commands](mr-learning-base-09.md)
 
 ## Objectives
 
 * Learn how to configure Unity for MRTK
 * Learn how to build and deploy to device
-* Learn how to use some of MRTK's features
+* Learn how to use some of MRTK's key features
 * Create a complete mixed reality experience
 
 ## Prerequisites
@@ -41,7 +41,7 @@ Tutorials in this series:
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added
 
-> [!IMPORTANT]
+> [!CAUTION]
 > The recommended Unity version for this tutorial series is Unity 2019.3.15. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 [Next Tutorial: 2. Initializing your project and first application](mr-learning-base-02.md)

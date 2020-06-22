@@ -13,13 +13,13 @@ ms.localizationpriority: high
 
 ## Overview
 
-In this tutorial you will learn how to create and organize buttons along with UI text panels, and use default interaction (touch) to interact with each button. You will also explore the addition of simple actions and effects, such as changing the size, sound and color of objects.
+In this tutorial, you will learn how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You will also learn how to add dynamic tooltip UI elements to provide the user with additional information.
 
 ## Objectives
 
-* Customize and configure Mixed Reality Toolkit profiles
-* Interact with holograms using UI elements and buttons
-* Basic hand-tracking input and interactions
+* Learn how to organize buttons in a collection
+* Learn how to use MRTK's menu prefabs
+* Learn how to interact with holograms using UI menus and buttons
 
 ## Creating a static panel of buttons
 
@@ -31,7 +31,7 @@ In the Hierarchy window, right-click on the **RoverExplorer** object and select 
 
 ![mr-learning-base](images/mr-learning-base/base-06-section1-step1-1.png)
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab on to the **Buttons** object, then right click on the PressableRoundButton and select **Duplicate** to create a copy, repeat until you have a total of three PressableRoundButton objects:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab on to the **Buttons** object, then right-click on the PressableRoundButton and select **Duplicate** to create a copy, repeat until you have a total of three PressableRoundButton objects:
 
 ![mr-learning-base](images/mr-learning-base/base-06-section1-step1-2.png)
 
@@ -83,29 +83,102 @@ In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **UX** 
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-1.png)
 
-## Adding text into your scene
+In the Hierarchy window, rename the object to **Menu**, expand it's **ButtonCollection** child object to reveal the four buttons:
 
-In this section, you will learn how to add text to your mixed reality experiences using Unity's TextMesh Pro, which you prepared in the [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources) section of the previous tutorial.
+![mr-learning-base](images/mr-learning-base/base-06-section2-step1-2.png)
 
-In this particular example, you will add a simple label underneath the button collection you created in the previous section.
+Rename the first button to **Indicator**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
-Right-click on the ButtonCollection object and select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro object as a child of the ButtonCollection object:
+* Change the **Main Label Text** to match the name of the button
+* Assign the **Indicator** object to the **None (Object)** field
+* From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set the SetActive () function as the action to be executed when the event is triggered
+* Verify that the argument checkbox is **checked**
+* Change the **Icon** to the 'search' icon
 
-With the newly created TextMeshPro object, named Text (TMP), still selected, in the Inspector window change its position and size so the label is placed neatly underneath the button collection, for example:
+![mr-learning-base](images/mr-learning-base/base-06-section2-step1-3.png)
 
-* Change the Rect Transform **Pos Y** to -0.0425
-* Change the Rect Transform **Width** to 0.24
-* Change the Rect Transform **Height** to 0.024
+In the Hierarchy window, select the **Indicator** object, then in the Inspector window, uncheck the checkbox next to it's name to make it inactive by default:
 
-Then update the text to reflect what the label is for and choose font properties so the text fits within the label, for example:
+![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
 
-* Change the Text Mesh Pro (Script) **Text** to Button Collection
-* Change the Text Mesh Pro (Script) **Font Style** to Bold
-* Change the Text Mesh Pro (Script) **Font Size** to 0.2
-* Change the Text Mesh Pro (Script) **Alignment** to Center and Middle
+> [!NOTE]
+> Now when the application starts, the Indicator is disabled by default and can be enabled by pressing the Indicator button.
+
+Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+
+* Change the **Main Label Text** to match the name of the button
+* Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
+* From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update the TapToPlace.enabled property value when the event is triggered
+* Verify that the argument checkbox is **checked**
+* Change the **Icon** to the 'hand with ray' icon
+
+![mr-learning-base](images/mr-learning-base/base-06-section2-step1-5.png)
+
+In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
+
+* Uncheck the checkbox next to it's name to make it inactive by default
+* Click the small **+**icon to add another event
+* Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
+* From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update the TapToPlace.enabled property value when the event is triggered
+* Verify that the argument checkbox is **unchecked**
+
+![mr-learning-base](images/mr-learning-base/base-06-section2-step1-6.png)
+
+> [!NOTE]
+> Now when the application starts, the Tap to Place functionality is disabled by default and can be enabled by pressing the Tap to Place button.
+
+## Adding text to the scene
+
+In the Hierarchy window, right-click on the **Table** object and select **3D Object** > **Text - TextMeshPro** to add a text object as a child of the Table object, then in the Inspector window, configure the **Rect Transform** component as follows:
+
+* Change **Pos Y** to 1
+* Change **Width** to 1
+* Change **Height** to 1
+* Change **Rotation X** to 90
+
+![mr-learning-base](images/mr-learning-base/base-06-section3-step1-1.png)
+
+Then configure the **TextMeshPro - Text** component as follows::
+
+* Change **Text** to Button Collection
+* Change **Font Style** to Bold
+* Change **Font Size** to 1
+* Change Extra Settings > **Margins** to 0.03
+
+![mr-learning-base](images/mr-learning-base/base-06-section3-step1-2.png)
+
+## Adding tooltips
+
+In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+
+![mr-learning-base](images/mr-learning-base/base-06-section4-step1-1.png)
+
+In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects, then in the Inspector window, use the **Add Component** button to add the **ToolTipSpawner** component and configure it as follows:
+
+* Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear
+* Assign the **Simple Line ToolTip** prefab from the Project window to the **Tool Tip Prefab** field
+
+![mr-learning-base](images/mr-learning-base/base-06-section4-step1-2.png)
+
+In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
+
+* Change **Tool Tip Text** to reflect the name of the part, i.e. **Camera**
+
+![mr-learning-base](images/mr-learning-base/base-06-section4-step1-3.png)
+
+**Repeat** this step for each of the rover part objects to configure the **ToolTipSpawner** component as follows:
+
+* For the **Generator_Part**, change the **Tool Tip Text** to **Generator**
+* For the **Lights_Part**, change the **Tool Tip Text** to **Lights**
+* For the **RUHFAntenna_Part**, change the **Tool Tip Text** to **RUHF Antenna** field
+* For the **Spectrometer_Part**, change the **Tool Tip Text** to **Spectrometer**
+
+Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the parts and the tooltip for that part will be displayed:
+
+![mr-learning-base](images/mr-learning-base/base-06-section4-step1-4.png)
 
 ## Congratulations
 
-In this tutorial, you learned how to clone, customize, and configure an MRTK profile setting. You also learned how to interact with buttons to trigger events using tracked hands on the HoloLens 2. Finally, you learned how to create a simple UI interface using the MRTK's Grid Object Collection component and Unity's Text Mesh Pro.
+In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
 
 [Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)

@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 7. Interacting with 3D objects
 
-In this tutorial, you will learn about basic 3D content and user experience, such as organizing 3D objects as part of a collection, bounding boxes for basic manipulation, near and far interaction, and touch and grab gestures with hand tracking.
+In this tutorial, you will learn how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You will also learn how to add Bounding Boxes around 3D objects to make it easier to control the object manipulation.
 
 ## Objectives
 
@@ -23,150 +23,155 @@ In this tutorial, you will learn about basic 3D content and user experience, suc
 
 ## Manipulating 3D objects
 
-In this section, you will add the ability to manipulate all the 3D objects in the panel you created in the previous section. Additionally, for the prefab objects, you will enable users to reach out and grab these objects with tracked hands. Then you will explore a few manipulation behaviors that you can apply to your objects.
+In this section, you will add the ability to manipulate all the Rover parts you organized on the table during the [Positioning objects in the scene](mr-learning-base-4.md) tutorial
 
 The main steps you will take to achieve this are:
 
-1. Add the Manipulation Handler (Script) component to all the objects
-2. Add the Near Interaction Grabbable (Script) component to the prefab objects
-3. Configure the Manipulation Handler (Script) component
+1. Add the Object Manipulator (Script) component to all the part objects
+2. Add the NearInteractionGrabbable component to the prefab objects
+3. Configure the Object Manipulator (Script) component
 
 > [!IMPORTANT]
 > To be able to **manipulate an object**, the object must have the following components:
 >
 > * **Collider** component, for example, a Box Collider
-> * **Manipulation Handler (Script)** component
+> * **Object Manipulator (Script)** component
 >
 > To be able to **manipulate** and **grab an object with tracked hands**, the object must have the following components:
 >
 > * **Collider** component, for example, a Box Collider
-> * **Manipulation Handler (Script)** component
-> * **Near Interaction Grabbable (Script)** component
+> * **Object Manipulator (Script)** component
+> * **NearInteractionGrabbable** component
 
-### 1. Add the Manipulation Handler (Script) component to all the objects
+Additionally, you will configure the Rover Explorer so that you can place the rover parts on to the Rover to make it a complete rover assembly.
 
-In the Hierarchy window, select the **Cheese** object, hold down the **Shift** key, and then select the **Cube () 2** object and add the **Manipulation Handler (Script)** component to all the objects:
+In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects as well as the **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the following components to all the selected objects:
 
-> [!NOTE]
-> For the purpose of this tutorial, colliders have already been added to the prefabs. For Unity primitives, such as the Cube objects, the Collider component is automatically added when the object is created. In the image above, the colliders are represented by the green outlines. To learn more about colliders, you can visit Unity's <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collider</a> documentation.
+* **Object Manipulator (Script)** component
+* **NearInteractionGrabbable** component
+* **Part Assembly Controller (Script)** component
+* **Audio Source** component
 
-### 2. Add the Near Interaction Grabbable (Script) component to the prefab objects
-
-In the Hierarchy window, select the **Cheese** object, hold down the **Shift** key, and then select the **TheModule** object and add the **Near Interaction Grabbable (Script)** component to all the objects:
-
-### 3. Configure the Manipulation Handler (Script) component
-
-#### Default manipulation
-
-For the **Cube** object, leave all properties at default, to experience the default manipulation behavior:
+![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
 
 > [!TIP]
-> To reset a component to its default values, you can select the component's Settings icon and select Reset.
+> To select multiple objects that are not next to each other, press-and-hold the CTRL key while using the mouse to select any object.
 
-#### Restrict manipulation to scale only
+> [!NOTE]
+> For the purpose of this tutorial, colliders have already been added to the rover parts. To learn more about colliders, you can visit Unity's <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collider</a> documentation.
 
-For the **Cube (1)** object, change **Two Handed Manipulation Type** to **Scale** to only allow the user to change the object's size:
+> [!NOTE]
+> The Part Assembly Controller (Script) is not part of the MRTK but was included with the tutorial assets.
 
-#### Constrain the movement to a fixed distance from the user
+With all the rover part objects and the RoverAssembly object still selected, in the Inspector window, configure the **Object Manipulator (Script)** component as follows:
 
-For the **Cube (2)** object, change **Constraint On Movement** to **Fix Distance From Head** so that when the object is moved, it stays at the same distance from the user:
+* From the **Two Handed Manipulation Type** dropdown, uncheck the Scale so only **Move** and **Rotate** is enabled
 
-#### Default grabbable manipulation
+![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
 
-For the **Cheese**, **CoffeCup**, and **EarthCore** objects, leave all properties at default, to experience the default grabbable manipulation behavior:
+> [!NOTE]
+> At this point, you have enabled object manipulation for all the rover part objects.
 
-#### Remove the ability of far manipulation
+In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** folder to locate the audio clips:
 
-For the **Octa** object, un-check the **Allow Far Manipulation** checkbox to make it so the user can only interact with the object directly using tracked hands:
+![mr-learning-base](images/mr-learning-base/base-07-section1-step1-3.png)
 
-#### Make an object rotate around its center
+In the Hierarchy window, reselect all the **rover part objects**, then in the Inspector window, use the **Add Component** button to add the **Audio Sources** component and configure it as follows:
 
-For the **Platonic** object, change **One Hand Rotation Mode Near** and **One Hand Rotation Mode Far** to **Rotate About Object Center** to make it so when the user rotates the object with one hand, it rotates around the object's center:
+* Assign the **MRTK_Scale_Start** audio clip to the **AudioClip** field
+* Uncheck the **Play On Awake** checkbox
+* Change **Spatial Blend** to 1
 
-#### Keep movement after object is released
+![mr-learning-base](images/mr-learning-base/base-07-section1-step1-4.png)
 
-For the **TheModule** object, add a **Rigidbody** component to enable physics, and then un-check the **Use Gravity** checkbox so the object is not affected by gravity:
+In the Hierarchy window, expand the RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** object to reveal all of the placement hint objects, then select the first rover part, RoverParts > **Camera_Part**, and configure the **Part Assembly Controller (Script)** component as follows:
 
-Back on the Manipulation Handler (Script) component, verify that the **Release Behavior** is set to both **Keep Velocity** and **Keep Angular Velocity** so that once the object is released from the user's hand, it continues to move:
+* Assign the **Camera_PlacementHint** object to the **Location To Place** field
 
-To learn more about the Manipulation handler component and its associated properties, you can visit the [Manipulation handler](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+![mr-learning-base](images/mr-learning-base/base-07-section1-step1-5.png)
+
+**Repeat** this step for each of the remaining rover part objects and the RoverAssembly object to configure the **Part Assembly Controller (Script)** component as follows:
+
+* For the **Generator_Part**, assign the **Generator_PlacementHint** object to the **Location To Place** field
+* For the **Lights_Part**, assign the **Lights_PlacementHint** object to the **Location To Place** field
+* For the **UHFAntenna_Part**, assign the **UHFAntenna_PlacementHint** object to the **Location To Place** field
+* For the **Spectrometer_Part**, assign the **Spectrometer_PlacementHint** object to the **Location To Place** field
+* For the **RoverAssembly**, leave the **Location To Place** field **unassigned**
+
+In the Hierarchy window, select the RoverExplorer > Buttons > **Reset** button object, then in the Inspector window, configure the Interactable **OnClick ()** event as follows:
+
+* Assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **GameObject** > **BroadcastMessage (string)** to set the BroadcastMessage () function as the action to be executed when the event is triggered
+* Set the argument to **ResetPlacement** by copy/paste it into the field
+
+![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
+
+> [!NOTE]
+> When the event is triggered, the message 'ResetPlacement' will be sent to all of the RoverExplorer's child objects, which will trigger the ResetPlacement function for all the child objects that has the Part Assembly Controller (Script) component, in this case, the RoverAssembly and all the rover parts.
+
+If you now enter Game mode, you can use near or far interaction to place the rover parts on to the Rover. Once the part is close to the corresponding placement hint, it will snap into place and become part of the Rover. To reset the placements, you can press the Reset button:
+
+![mr-learning-base](images/mr-learning-base/base-07-section1-step1-7.png)
+
+To learn more about the Object Manipulator component and its associated properties, you can visit the [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 ## Adding bounding boxes
 
 Bounding boxes make it easier and more intuitive to manipulate objects with one hand for both near and far interaction by providing handles that can be used for scaling and rotating.
 
-In this example, you will add a bounding box to the EarthCore object so this object can now be interacted with using the object manipulation you configured in the previous section, as well as, scaled and rotated using the bounding box handles.
+In this example, you will add a bounding box to the RoverExplorer object so the whole experience can easily be moved, rotated, and scaled. Additionally, you will configure the Menu so you can turn the Bounding Box on and off.
 
-> [!IMPORTANT]
-> To be able to use a **bounding box**, the object must have the following components:
->
-> * **Collider** component, for example, a Box Collider
-> * **Bounding Box (Script)** component
+In the Hierarchy window, select the **RoverExplorer** object, then in the Inspector window, use the **Add Component** button to add the following components:
 
-### 1. Add the Bounding Box (Script) component to the EarthCore object
+* **BoundingBox** component
+* **Object Manipulator (Script)** component
 
-In the Inspector window, select the **EarthCore** object and add the **Bounding Box (Script)** component to the EarthCore object:
+Then **uncheck** the checkbox next to both components to make them **disabled** by default:
+
+![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> The Bounding Box visualizations is created at run time and therefore not visible before you enter Game mode.
+> The Bounding Box visualizations is created at runtime and therefore not visible before you enter Game mode.
 
-### 2. Visualize and test the bounding box using the in-editor simulation
+> [!NOTE]
+> The Bounding Box (Script) component will be automatically add the NearInteractionGrabbable component at runtime, therefore, we do not need to add this component to grab the enclosed objects with tracked hands.  
 
-Press the Play button to enter Game mode. Then press and hold the spacebar to bring up the hand and use the mouse to interact with the bounding box:
+In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal the four buttons and rename the third button to **BoundingBox_Enable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+
+* Change the **Main Label Text** to **Enable**
+* Assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **BoundingBox** > **bool Enabled** to update the BoundingBox.enabled property value when the event is triggered
+* Verify that the argument checkbox is **checked**
+* Click the small **+** icon to add another event
+* Assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **ObjectManipulator** > **bool Enabled** to update the ObjectManipulator.enabled property value when the event is triggered
+* Verify that the argument checkbox is **checked**
+* Leave the **Icon** as the 'cube with bounding box' icon
+
+![mr-learning-base](images/mr-learning-base/base-07-section2-step1-2.png)
+
+Rename the forth and last button to **BoundingBox_Disable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+
+* Change the **Main Label Text** to **Disable**
+* Assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **BoundingBox** > **bool Enabled** to update the BoundingBox.enabled property value when the event is triggered
+* Verify that the argument checkbox is **unchecked**
+* Click the small **+** icon to add another event
+* Assign the **RoverExplorer** object to the **None (Object)** field
+* From the **No Function** dropdown, select **ObjectManipulator** > **bool Enabled** to update the ObjectManipulator.enabled property value when the event is triggered
+* Verify that the argument checkbox is **unchecked**
+* Change the **Icon** to the 'cube with bounding box" icon
+
+![mr-learning-base](images/mr-learning-base/base-07-section2-step1-3.png)
+
+If you now enter Game mode and enable the Bounding Box by clicking the Enable button, you can use near or far interaction to move, rotate, and scale the Bounding Box, and use the Disable button to disable the Bounding Box again:
+
+![mr-learning-base](images/mr-learning-base/base-07-section2-step1-4.png)
 
 To learn more about the Bounding Box component and its associated properties, you can visit the [Bounding box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-## Adding touch effects
-
-In this example, you will enable events to be triggered when you touch an object with your hand. Specifically, you will configure the Octa object to play a sound effect when the user touches it.
-
-The main steps you will take to achieve this are:
-
-1. Add an Audio Source component to the object
-2. Add the Near Interaction Touchable (Script) component to the object
-3. Add the Hand Interaction Touch (Script) component to the object
-4. Implement the On Touch Started event
-5. Test the touch interaction using the in-editor simulation
-
-> [!IMPORTANT]
-> To be able to **trigger touch events**, the object must have the following components:
->
-> * **Collider** component, preferably a Box Collider
-> * **Near Interaction Touchable (Script)** component
-> * **Hand Interaction Touch (Script)** component
-
-> [!NOTE]
-> The Hand Interaction Touch (Script) component is not part of MRTK. It was imported with this tutorial's assets and originally part of the MixedReality Toolkit Unity Examples.
-
-### 1. Add an Audio Source component to the object
-
-In the Hierarchy window, select the **Octa** object, add an **Audio Source** component to the Octa object, and then change **Spatial Blend** to 1 to enable spatial audio:
-
-### 2. Add the Near Interaction Touchable (Script) component to the object
-
-With the **Octa** object still selected, add the **Near Interaction Touchable (Script)** component to the Octa object, and then click the **Fix Bounds** and **Fix Center** buttons to update the Local Center and Bounds properties of the Near Interaction Touchable (Script) to match the BoxCollider:
-
-### 3. Add the Hand Interaction Touch (Script) component to the object
-
-With the **Octa** object still selected, add the **Hand Interaction Touch (Script)** component to the Octa object:
-
-### 4. Implement the On Touch Started event
-
-On the **Hand Interaction Touch (Script)** component, click the small **+** icon to create a new **On Touch Started ()** event. Then configure the **Octa** object to receive the event and define **AudioSource.PlayOneShot** as the action to be triggered:
-
-Navigate to **Assets** > **MixedRealityToolkit.SDK** > **StandardAssets** > **Audio** to see audio clips provided with the MRTK, and then assign a suitable audio clip to the **Audio Clip** field, for example, the MRTK_Gem audio clip:
-
-### 5. Test the touch interaction using the in-editor simulation
-
-Press the Play button to enter Game mode. Then press and hold the spacebar to bring up the hand and use the mouse to touch the Octa object and trigger the sound effect:
-
-> [!NOTE]
-> As you saw when testing the touch interaction, and as shown in the image above, the Octa object color pulsated while it was touched. This effect is hard coded into the Hand Interaction Touch (Script) component and not a result of the event configuration you completed in the steps above.
->
-> If you want to disable this effect, you can, for example, comment out or line 32 'TargetRenderer = GetComponentInChildren<Renderer>();' which will result in the TargetRenderer remaining null and the color not pulsating.
-
 ## Congratulations
 
-In this tutorial, you learned how to organize 3D objects in a grid collection and how to manipulate these objects (scaling, rotating, and moving) using near interaction (directly grabbing with tracked hands) and far interaction (using gaze rays or hand rays). You also learned how to put bounding boxes around 3D objects, and learned how to use and customize the handles on the bounding boxes. Finally, you learned how to trigger events when touching an object.
+In this tutorial, you learned how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You will learned how to add Bounding Boxes around 3D objects to make it easier to control the object manipulation.
 
-[Next Lesson: 8. Adding tooltips](mr-learning-base-08.md)
+[Next Tutorial: 8. Using eye tracking](mr-learning-base-08.md)

@@ -1,5 +1,5 @@
 ---
-title: Getting started tutorials - 9. Using eye tracking
+title: Getting started tutorials - 9. Using speech commands
 description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,7 +9,9 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 9. Using eye tracking
+# 9. Using speech commands
+
+## Overview
 
 In this tutorial, you will explore a few advanced input options for HoloLens 2, including the use of voice commands, panning gesture, and eye tracking.
 
@@ -19,67 +21,79 @@ In this tutorial, you will explore a few advanced input options for HoloLens 2, 
 * Use tracked hands to pan textures and 3D objects with tracked hands
 * Leverage HoloLens 2 eye tracking capabilities to select objects
 
-## Eye Tracking
+## Ensuring the Microphone capability is enabled
 
-In this section, you will explore how to enable eye tracking in your project. For this example, you will implement functionality to make each object in the 3DObjectCollection spin slowly while being looked at by the user's eye gaze, as well as, trigger a blip effect when the object being looked at is selected by air-tap or speech command.
+In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Microphone Capability** is greyed out:
 
-The main steps you will take to achieve this are:
-
-1. Add the Eye Tracking Target (Script) component to all target objects
-2. Add the Eye Tracking Tutorial Demo (Script) component  to all target objects
-3. Implement the While Looking At Target event
-4. Implement the On Selected event
-5. Enable simulated eye tracking for in-editor simulations
-6. Enable Gaze Input in the Visual Studio project's app capabilities
-
-### 1. Add the Eye Tracking Target (Script) component to all target objects
-
-In the Hierarchy window, expand the **3DObjectCollection** object and select all the **child objects**, then in the Inspector window, use the **Add Component** button to add the **Eye Tracking Target (Script)** component to all the child objects:
-
-With all the **child objects** still selected, configure the **Eye Tracking Target (Script)** component as follows:
-
-* Change **Select Action** to **Select**, to define the air-tap action for this object as Select
-* Expand **Voice Select** and set the voice command list **Size** to 1, and then, in the new element list that appear, change **Element 0** to **Select**, to define the speech command action for this object as Select
-
-### 2. Add the Eye Tracking Tutorial Demo (Script) component  to all target objects
-
-With all the **child objects** still selected, use the **Add Component** button to add the **Eye Tracking Tutorial Demo (Script)** component to all the child objects:
+![mr-learning-base](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> The Eye Tracking Target (Script) component is not part of MRTK. It was provided with this tutorial's assets.
+> The Microphone capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#apply-the-mrtk-project-configurator-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
 
-### 3. Implement the While Looking At Target event
+## Creating speech commands
 
-In the Hierarchy window, select the **Cheese** object, then create a new **While Looking At Target ()** event, configure the **Cheese** object to receive the event, and define **EyeTrackingTutorialDemo.RotateTarget** as the action to be triggered:
+In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the MixedRealityToolkit > **Input** tab and take the following steps:
 
-**Repeat** for each of the child objects in the 3DObjectCollection.
+* Expand the **Speech** section
+* Clone the **DefaultMixedRealitySpeechCommandsProfile** and give it a suitable name, for example, _GettingStarted_MixedRealitySpeechCommandsProfile_
+* Verify that **Start Behaviour** is set to **Auto Start**
 
-### 4. Implement the On Selected event
-
-In the Hierarchy window, select the **Cheese** object, then create a new **On Selected ()** event, configure the **Cheese** object to receive the event, and define **EyeTrackingTutorialDemo.BlipTarget** as the action to be triggered:
-
-**Repeat** for each of the child objects in the 3DObjectCollection.
-
-### 5. Enable simulated eye tracking for in-editor simulations
-
-In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the **Input** tab, expand the **Input Data Providers** section and then the **Input Simulation Service** section, and clone the **DefaultMixedRealityInputSimulationProfile** to replace it with your own customizable **Input Simulation Profile**:
+![mr-learning-base](images/mr-learning-base/base-09-section2-step1-1.png)
 
 > [!TIP]
 > For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md) instructions.
 
-In the **Eye Simulation** section, check the **Simulate Eye Position** checkbox to enable eye tracking simulation:
+In the Speech > **Speech Commands** section, click the **+ Add a New Speech Command** button four times to add four new speech commands to the list of the existing speech commands, then in the **Keyword** fields enter the following phrases:
 
-If you now enter Game mode, you can test the spin and blip effects you implemented by adjusting the view so the cursor hits one of the objects and using hand interaction or speech command to select the object:
+* Enable Indicator
+* Enable Tap to Place
+* Enable Bounding Box
+* Disable Bounding Box
+
+![mr-learning-base](images/mr-learning-base/base-09-section2-step1-2.png)
+
+> [!TIP]
+> If your computer doesn't have a microphone and you would like to test the speech commands using the in-editor simulation, you can assign a KeyCode to the speech commands which will let you trigger it when the corresponding key is pressed.
+
+## Controlling speech commands
+
+In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+
+![mr-learning-base](images/mr-learning-base/base-09-section3-step1-1.png)
+
+In the Hierarchy window, expand the Menu > **ButtonCollection** object and select its four child objects, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component to all the selected objects:
+
+![mr-learning-base](images/mr-learning-base/base-09-section3-step1-2.png)
+
+In the Hierarchy window, select the first button, i.e. the ButtonCollection > **Indicator** object, then in the Inspector window, take the following steps to configure the **SpeechInputHandler**:
+
+* **Uncheck* the **Is Focus Required** checkbox
+
+
+* Assign the **Indicator** object to the **None (Object)** field
+* From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set the SetActive () function as the action to be executed when the event is triggered
+* Verify that the argument checkbox is **checked**
+
+
+
+
+### 4. Add and configure the Speech Input Handler (Script) component
+
+In the Hierarchy window, select the **Octa** object and add the **Speech Input Handler (Script)** component to the Octa object. Then uncheck the **Is Focus Required** checkbox Octa object to trigger the speech command:
+
+### 5. Implement the Response event for the speech command
+
+On the Speech Input Handler (Script) component, click the small **+** button to add a keyword element to the list of keywords:
+
+Click the newly created **Element 0** to expand it, and then, from the **Keyword** dropdown, choose the **Play Music** keyword you created earlier:
 
 > [!NOTE]
-> If you did not use the DefaultHoloLens2ConfigurationProfile to clone your customizable MRTK configuration profile, as instructed in the [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md) instructions, eye tracking may not be enable in your project and will need to be enabled. For that, you can refer to the [Getting started with eye tracking in MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html) instructions.
+> The keywords in the Keyword dropdown are populated based on the keywords defined in the Speech Commands list in the Speech Commands Profile.
 
-### 6. Enable Gaze Input in the Visual Studio project's app capabilities
-
-Before building and deploying your app from Visual Studio to your device, Gaze Input has to been enabled in the project's app capabilities. For this, you can follow the [Testing your Unity app on a HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_BasicSetup.html#testing-your-unity-app-on-a-hololens-2) instructions.
+Create a new **Response ()** event, configure the **Octa** object to receive the event, define **AudioSource.PlayOneShot** as the action to be triggered, and assign a suitable audio clip to the **Audio Clip** field, for example, the MRTK_Gem audio clip:
 
 ## Congratulations
 
 You have successfully added basic eye tracking capabilities to your application. These actions are only the beginning of a world of possibilities with eye tracking. In this tutorial, you also learned about other advanced input features, such as voice commands and panning gestures.
 
-[Next Lesson: 10. Using voice commands](mr-learning-base-10.md)
+You have fully configured this application. Now, your application allows users to fully assemble the Lunar Module, launch the Lunar Module, toggle hints, and reset the application to start again.
