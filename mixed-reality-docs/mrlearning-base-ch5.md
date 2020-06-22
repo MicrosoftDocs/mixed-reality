@@ -33,10 +33,11 @@ The main steps you will take to achieve this are:
 5. Implement the Response event for the speech command
 
 ### 1. Clone the default Input System Profile
-
 In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the **Input** tab and clone the **DefaultHoloLens2InputSystemProfile** to replace it with your own customizable **Input System Profile**:
 
 ![mrlearning-base](images/mrlearning-base/tutorial5-section1-step1-1.png)
+
+Select the **MixedRealityToolkit** object from the Hierarchy tab, then click the **Input** tab in the Inspector window and expand the **Pointers** section. Clone the **DefaultMixedRealityInputPointerProfile**, replace it with your own customizable **Input Pointer Profile**, and check that **Is Eye Tracked Enabled** is true in the Gaze Settings section. 
 
 > [!TIP]
 > For a reminder on how to clone MRTK profiles, you can refer to the [How to configure the Mixed Reality Toolkit Profiles](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions.
