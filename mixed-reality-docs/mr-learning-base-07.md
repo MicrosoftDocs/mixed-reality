@@ -23,7 +23,7 @@ In this tutorial, you will learn how to enable near and far manipulation for 3D 
 
 ## Manipulating 3D objects
 
-In this section, you will add the ability to manipulate all the Rover parts you organized on the table during the [Positioning objects in the scene](mr-learning-base-4.md) tutorial
+In this section, you will add the ability to manipulate all the Rover parts you organized on the table during the [Positioning objects in the scene](mr-learning-base-04.md) tutorial.
 
 The main steps you will take to achieve this are:
 
