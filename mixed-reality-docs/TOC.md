@@ -62,14 +62,13 @@
 ### [Eye-gaze-based interaction](eye-gaze-interaction.md)
 ## UX elements
 ### [Overview](app-patterns-landingpage.md)
-### Style
+### Foundational elements
 #### [Color, light, and materials](color-light-and-materials.md)
 #### [Scale](scale.md)
 #### [Typography](typography.md)
-### Spatial sound
-#### [Spatial sound design](spatial-sound-design.md)
-#### [Case study: Holotour ](case-study-spatial-sound-design-for-holotour.md)
-#### [Case study: Roboraid](case-study-using-spatial-sound-in-roboraid.md)
+#### [Sound](spatial-sound-design.md)
+##### [Case study: Holotour ](case-study-spatial-sound-design-for-holotour.md)
+##### [Case study: Roboraid](case-study-using-spatial-sound-in-roboraid.md)
 
 ### Controls and behaviors
 #### [Cursors](cursors.md)
@@ -81,13 +80,15 @@
 #### [Hand menu](hand-menu.md)
 #### [Near menu](near-menu.md)
 #### [Object collection](object-collection.md)
-#### [Voice command](voice-input.md)
+#### [Voice input](voice-input.md)
 #### [Keyboard](keyboard.md)
 #### [Tooltip](tooltip.md)
 #### [Slate](slate.md)
 #### [Slider](slider.md)
 #### [Shader](shader.md)
-#### [Hand Coach](hand-coach.md)
+#### [Dialog](dialog-ui.md)
+#### [Hand coach](hand-coach.md)
+#### [Spatial mesh](spatial-mesh-ux.md)
 #### [Billboarding and tag-along](billboarding-and-tag-along.md)
 #### [Displaying progress](progress.md)
 #### [Surface magnetism](surface-magnetism.md)
