@@ -11,10 +11,10 @@ keywords: Mixed Reality, HoloLens, UI Controls, interaction, ui, ux, UX Design, 
 
 ![Spatial mesh](images/UX/MRTK_PulseShader_SpatialMesh.gif)
 
-Through the spatial mesh visualization, the user can learn how device perceives and understands the physical environment. In addition to providing spatial context, proper spatial mesh visualization can create a delightful and magical experience.  
+Through the spatial mesh visualization, the user can learn how a device perceives and understands the physical environment. In addition to providing spatial context, proper spatial mesh visualization can create a delightful and magical experience.  
 
 ## Design guideline
-Since it is important to allow the user to focus and interact with content, continuous and repeated visualization of the spatial mesh in the background could be distracting. Because of this, it is recommended to visualize the environment sparingly, either only once in the initial launch or when the user shows clear intention to see the environmental mesh by targeting and air-tapping space. You can observe this behavior in the HoloLens shell.
+Since it's important to allow the user to focus and interact with content, continuous and repeated visualization of the spatial mesh in the background could be distracting. It is recommended to visualize the environment sparingly, either only once in the initial launch or when the user shows clear intention to see the environmental mesh by targeting and air-tapping space. You can observe this behavior in the HoloLens shell.
 <br>
 
 
