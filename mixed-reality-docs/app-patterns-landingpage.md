@@ -1,19 +1,17 @@
 ---
 layout: LandingPage
 title: Mixed reality UX elements
-description: This document contains a set of topics that explain how to design for Windows head-mounted displays.
-author: grbury 
-ms.author: grbury
-ms.date: 11/15/2019
+description: This document contains a set of topics that explain how to design for mixed reality devices.
+author: cre8ivepark
+ms.author: dongpark
+ms.date: 06/19/2020
 ms.topic: overview
-keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks
+keywords: UX design, Mixed Reality UX, UX, app patterns, controls, style, HoloLens, interaction, spatial interaction, spatial UI, UX elements, behaviors, building blocks, typography, color
 ---
 
 # UX elements overview
-
-![HoloLens 2 user interacting with holographic buttons](images/06_AppPatterns.png)
-
-## Style
+## Foundational elements
+Learn about the foundational elements that you need to design a great mixed reality experience.
 
 :::row:::
     :::column:::
@@ -28,18 +26,19 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-       [![Typography](images/text_in_unity_viewingangle.png)](typography.md)
+       [![Typography](images/typography-cover.png)](typography.md)
         **[Typography](typography.md)**
     :::column-end:::
     :::column:::
-       [![Sound](images/spatialaudio.png)](spatial-sound.md)
-        **[Sound](spatial-sound.md)**
+       [![Sound](images/spatialaudio.png)](spatial-sound-design.md)
+        **[Sound](spatial-sound-design.md)**
     :::column-end:::
 :::row-end:::
 
 <br>
 
-## Controls and behaviors
+## Common controls and behaviors
+Learn about frequently used common spatial interactions and UI building blocks for mixed reality experiences.
 
 :::row:::
     :::column:::
@@ -88,8 +87,8 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
-       [![Voice command](images/UX/UX_Hero_VoiceCommand.jpg)](voice-input.md)
-        **[Voice command](voice-input.md)**
+       [![Voice input](images/UX/UX_Hero_VoiceCommand.jpg)](voice-input.md)
+        **[Voice input](voice-input.md)**
     :::column-end:::
     :::column:::
        [![Keyboard](images/UX/UX_Hero_Keyboard.jpg)](keyboard.md)
@@ -118,6 +117,21 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 :::row:::
     :::column:::
+       [![Dialog](images/UX/MRTK_UX_Dialog.jpg)](dialog-ui.md)
+        **[Dialog](dialog-ui.md)**
+    :::column-end:::
+    :::column:::
+       [![Hand coach](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md)
+        **[Hand coach](hand-coach.md)**
+    :::column-end:::
+    :::column:::
+       [![Spatial mesh](images/UX/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md)
+        **[Spatial mesh](spatial-mesh-ux.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
         [![Billboarding and tag-along](images/UX/MRTK_TagAlong.gif)](billboarding-and-tag-along.md)
         **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
@@ -130,19 +144,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
         **[Surface magnetism](surface-magnetism.md)**
     :::column-end:::
 :::row-end:::
-
-:::row:::
-    :::column:::
-       [![Hand Coach](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md)
-        **[Hand Coach](hand-coach.md)**
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-:::row-end:::
-
-<br>
 
 <br>
 
