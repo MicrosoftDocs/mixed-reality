@@ -25,9 +25,10 @@ The first step to adding spatial sound to your project is installing the Microso
 * Restarting the Unreal Editor by selecting **Restart Now** from the plugins page. 
 
 > [!NOTE]
-> * If you're working strictly on a desktop PC, you need to install the **Microsoft Windows Mixed Reality** and **HoloLens** plugins.
-> * If you're testing or deploying to HoloLens 2, you need to install the...
->    + You can find detailed instructions on installing these two plugins in the **[Initializing your project](unreal-uxt-ch2.md)** section of our Unreal tutorial series.
+> * If you're working strictly on a desktop PC, you need to install the **Microsoft Windows Mixed Reality** plugin.
+> * If you're testing or deploying to HoloLens 2, you need to install the **HoloLens** plugin.
+>
+> You can find detailed instructions on installing these plugins in the **[Initializing your project](unreal-uxt-ch2.md)** section of our Unreal tutorial series.
 
 ![Unreal spatial audio plugin](images/unreal-spatial-audio-img-01.png)
 
@@ -56,9 +57,14 @@ Spatial audio is disabled by default on desktop versions of Windows. You can ena
 >This setting is only required if you plan to test your project in the Unreal editor.
 
 ## Creating Attenuation objects
-// TODO
+After you've installed and configured the necessary plugins you can create a new Sound Attenuation asset by:
+*  Right-clicking on the **Content Browser** and selecting **Create Advanced Asset -> Sounds -> Sound Attenuation**:
 
-![Spatialization plugin](images/unreal-spatial-audio-img-03.png)
+![Creating sound attenuation asset](images/unreal-spatial-audio-img-06.png)
+
+You're new sound asset will be created with a **Details** and all the spatial sound settings you could ask for:
+
+![New sound attenuation asset](images/unreal-spatial-audio-img-03.png)
 
 ## Configuring objects for spatialization
 Working with spatial audio means you're in charge of managing how sound behaves in a virtual environment. Your main focus is creating sound objects that appear louder when the user is close, and quieter when the user is far away. This is referred to as sound attenuation, making sounds appear as if they are positioned in a fixed spot.
