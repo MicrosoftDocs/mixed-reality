@@ -39,7 +39,7 @@ The first thing you need is a project to work with. If this is your first time c
     * Choose a save location and click **Create Project**. 
 
 > [!NOTE]
-> You must select a C++ project rather than a Blueprint project in order to build the UX Tools plugin, which we will be setting up in section 4.
+> You must select a C++ project rather than a Blueprint project in order to build the UX Tools plugin, which you'll be setting up later on in section 4.
 
 ![Initial project settings](images/unreal-uxt/2-project-settings.PNG)
 
