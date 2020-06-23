@@ -38,6 +38,9 @@ The first thing you need is a project to work with.
 4. Set **C++**, **Scalable 3D or 2D, Mobile/Tablet**, and **No Starter Content** as your **Project Settings**. 
     * Choose a save location and click **Create Project**. 
 
+> [!NOTE]
+> You must select a C++ project rather than a Blueprint project in order to build the UX Tools plugin, which we will be setting up in section 4.
+
 ![Initial project settings](images/unreal-uxt/2-project-settings.PNG)
 
 The project should open up automatically in the Unreal editor, which means you're ready for the next section.
@@ -58,7 +61,7 @@ Before you start adding objects to the scene you'll need to enable two plugins.
 > [!NOTE]
 > Both plugins are required for HoloLens 2 development.
 
-With that done you're empty level is ready for company.
+With that done your empty level is ready for company.
 
 ## Creating a level
 Your next task is to create a simple player setup with a starting point and a cube for reference and scale.
