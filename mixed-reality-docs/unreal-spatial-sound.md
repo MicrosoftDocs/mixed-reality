@@ -16,7 +16,7 @@ Unlike vision, humans hear in 360 degree surround sound. Spatial sound emulates 
 
 High quality spatial sound processing is complex, but the HoloLens 2 comes with dedicated hardware for processing those sound objects.  Before you can access this hardware processing support, you'll need to install the **MicrosoftSpatialSound** plugin in your Unreal project. This article will walk you through the installation and configuration of that plugin and point you towards more in-depth resources for using spatial sound in the Unreal engine. 
 
-## Installing Microsoft Spatial Sound plugin 
+## Installing the Microsoft Spatial Sound plugin 
 
 The first step to adding spatial sound to your project is installing the Microsoft Spatial Sound plugin, which you can find by: 
 
@@ -35,7 +35,7 @@ The first step to adding spatial sound to your project is installing the Microso
 Once the editor restarts, your project is all set!
 
 
-## Setting spatialization plugin for HoloLens 2 platform
+## Setting the spatialization plugin for HoloLens 2 platform
 Configuring the spatialization plugin is done on a per-platform basis.  You can enable the Microsoft Spatial Sound plugin for the HoloLens 2 by:
 1. Selecting **Edit > Project Settings**, scrolling to **Platforms** and clicking **HoloLens**.
 2. Expanding the **Audio** properties and setting the **Spatialization Plugin** field to **Microsoft Spatial Sound**.
@@ -62,7 +62,7 @@ After you've installed and configured the necessary plugins you can create a new
 
 ![Creating sound attenuation asset](images/unreal-spatial-audio-img-06.png)
 
-You're new sound asset will be created with a **Details** and all the spatial sound settings you could ask for:
+Your new sound asset will be created with a **Details** and all the spatial sound settings you could ask for:
 
 ![New sound attenuation asset](images/unreal-spatial-audio-img-03.png)
 
