@@ -21,11 +21,16 @@ In this tutorial, you will learn how to connect multiple users as part of a live
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder. While holding down the CTRL button, click on **DebugWindow**, **NetworkLobby**, and **SharedPlayground** to select the three prefabs:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder, then click-and-drag the following prefabs into the Hierarchy window to add them to your scene:
+
+* **NetworkLobby** prefab
+* **SharedPlayground** prefab
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
 
-With the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder, then click-and-drag the following prefab into the Hierarchy window to add it to your scene:
+
+* **DebugWindow** prefab
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
 
@@ -53,30 +58,30 @@ In the Inspector window, use the **Add Component** button to add the **Generic N
 
 In the Inspector window, use the **Add Component** button to add the **Photon View (Script)** component to the PhotonUser object and configure it as follows:
 
-* To the **Observed Components** field, assign the Generic Net Sync (Script) component
+* To the **Observed Components** field, assign the **Generic Net Sync (Script)** component
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### 2. Create the avatar
 
-In the Hierarchy window, right-click on the **PhotonUser** object and select **3D Object** > **Sphere** to create a sphere object as a child of the PhotonUser object and configure it as follows:
+In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Materials** folder to locate the MRTK materials.
+
+Then, in the Hierarchy window, right-click on the **PhotonUser** object and select **3D Object** > **Sphere** to create a sphere object as a child of the PhotonUser object and configure it as follows:
 
 * Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0
 * Change the Transform **Scale** to a suitable size, for example, X = 0.15, Y = 0.15, Z = 0.15
+* To the MeshRenderer > Materials > **Element 0** field, assign the **MRTK_Standard_White** material
 
-<!-- TODO: Update image with lighting. Will also need to touch up all images to change the message in lower right corner. (Looks like Unity at some point has change default setting to Auto Generate Lighting off, so students should probably turn it on so objects are properly lit, manual generation will create unnecessary project assets in the given scenario). -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
 
 ### 3. Create the prefab
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder:
 
-<!-- TODO: Update image with lighting. Will also need to touch up all images to change the message in lower right corner. (Looks like Unity at some point has change default setting to Auto Generate Lighting off, so students should probably turn it on so objects are properly lit, manual generation will create unnecessary project assets in the given scenario). -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
 
 With the Resources folder still selected, **click-and-drag** the **PhotonUser** object from the Hierarchy window into the **Resources** folder to make the PhotonUser object a prefab:
 
-<!-- TODO: Update image with lighting. Will also need to touch up all images to change the message in lower right corner. (Looks like Unity at some point has change default setting to Auto Generate Lighting off, so students should probably turn it on so objects are properly lit, manual generation will create unnecessary project assets in the given scenario). -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
 
 In the Hierarchy window, right-click on the **PhotonUser** object and select **Delete** to remove it from the scene:
@@ -95,11 +100,11 @@ In the Hierarchy window, expand the **NetworkLobby** object and select the **Net
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
 
+<!-- TODO: Create new gif animation
 ## Trying the experience with multiple users
 
 If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
 
-<!-- TODO: update gif when everything else is done-->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
@@ -107,6 +112,7 @@ If you now build and deploy the Unity project to your HoloLens, and then, back i
 
 > [!CAUTION]
 > The application needs to connect to Photon, so make sure your computer/device is connected to the internet.
+-->
 
 ## Congratulations
 

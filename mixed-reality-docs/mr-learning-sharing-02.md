@@ -13,56 +13,55 @@ ms.localizationpriority: high
 
 ## Overview
 
-In this tutorial, you will learn how to prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a Photon PUN application, import Photon PUN assets into your Unity project, and connect your Unity project to the Photon PUN application.
+In this tutorial, you will prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a PUN application, import PUN assets into your Unity project, and connect your Unity project to the PUN application.
 
 ## Objectives
 
-* Learn how to create a Photon PUN application
-* Learn how to find and import the Photon PUN assets
-* Learn how to connect your Unity project to the Photon PUN application
+* Learn how to create a PUN application
+* Learn how to find and import the PUN assets
+* Learn how to connect your Unity project to the PUN application
 
-## Creating the Unity project
+## Creating and preparing the Unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
 For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
 1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
-2. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
-3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *MultiUserCapabilities*
+1. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
+1. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+1. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+1. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
+1. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *MultiUserCapabilities*
 
-Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to:
 
-## Configuring the capabilities
+1. Change the **MRTK configuration profile** for to the **DefaultHoloLens2ConfigurationProfile**
+1. Change the **spatial awareness mesh display options** to **Occlusion**.
+
+## Enabling additional capabilities
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Publishing Settings** section:
 
-<!-- TODO: Update image, it shows product name as 'MixedRealityTest', however, the suggested project name in the previous section was 'MRTK Tutorials' -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **RemovableStorage** capabilities:
+In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, **SpatialPerception**, and **GazeInput** capabilities, which you enabled during the [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project) step above, are enabled.
+
+Then enable the following additional capabilities:
+
+* **InternetClientServer** capability
+* **PrivateNetworkClientServer** capability
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
-## Adding inbuilt Unity packages
-<!-- TODO: Consider renaming to 'Installing AR Foundation' -->
-<!-- TODO: Add instructions to install Legacy Input Helpers -->
+## Installing inbuilt Unity packages
 
-In this section, you will install Unity's inbuilt AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
-
-In the Unity menu, select **Window** > **Package Manager**:
+In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 
 > [!NOTE]
-> It might take a few seconds before the AR Foundation package appears in the list.
-
-In the Package Manager window, select **AR Foundation** and install the package by clicking the **Install** button:
-
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section3-step1-2.png)
+> You are installing the AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
 
 ## Importing the tutorial assets
 
@@ -73,37 +72,33 @@ Download and **import** the following Unity custom packages **in the order they 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.3.0.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.3.0.1.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.3.0.0.unitypackage)
 
-> [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
-
 After you have imported the tutorial assets your Project window should look similar to this:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
+> [!TIP]
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
+
 > [!NOTE]
-> After importing the MultiUserCapabilities tutorial assets package, you will see several [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) errors in the Console window stating that the type or namespace is missing. This is to be expected and will be resolved in the next section when you import the Photon assets.
+> After importing the MultiUserCapabilities tutorial assets package, you will see several [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) errors in the Console window stating that the type or namespace is missing. This is to be expected and will be resolved in the next section when you import the PUN assets.
 
-## Importing the Photon assets
+## Importing the PUN assets
 
-In this section, you will import the Photon Unity Network (PUN) assets from Unity's Asset Store.
-
-In the Unity menu, select **Window** > **Asset Store** to open the Asset Store window, search for and select **PUN 2 - FREE** from Exit Games, and then click the **Download** button to download the asset package to your Unity account:
-
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
+In the Unity menu, select **Window** > **Asset Store** to open the Asset Store window, search for and select **PUN 2 - FREE** from Exit Games, click the **Download** button to download the asset package to your Unity account.
 
 When the download is complete, click the **Import** button to open the Import Unity Package window:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
 
 In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
 
 Once Unity has completed the import process, the Pun Wizard window will appear with the PUN Setup menu loaded, you can ignore or close this window for now:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-4.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
 
-## Setting up Photon
+## Creating the PUN application
 
 In this section, you will create a Photon account, if you don't already have one, and create a new PUN application.
 
@@ -117,7 +112,7 @@ Once signed in, click the **Create a New App** button:
 
 On the Create a New Application page, enter the following values:
 
-* For Photon Type, select Photon PUN
+* For Photon Type, select PUN
 * For Name, enter a suitable name, for example, _MRTK Tutorials_
 * For Description, optionally enter a suitable description
 * For Url, leave the field empty
@@ -152,6 +147,6 @@ Once Unity has finished the PUN setup process, the PUN Setup menu will display t
 
 ## Congratulations
 
-You have successfully created a Photon PUN application and connected it to your Unity project. Your next step is to allow connections with other users so that multiple users can see each other.
+You have successfully created a PUN application and connected it to your Unity project. Your next step is to allow connections with other users so that multiple users can see each other.
 
 [Next Tutorial: 3. Connecting multiple users](mr-learning-sharing-03.md)

@@ -22,10 +22,9 @@ In this tutorial, you will learn how to integrate Azure Spatial Anchors (ASA) in
 
 In the Hierarchy window, expand the **SharedPlayground** object, then expand the **TableAnchor** object to expose its child objects:
 
-<!-- TODO: Change image, it doesn't align with instructions, instructions says to expand TableAnchor object, not to select the Buttons object as shown in image (it should be in scene yet) -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **Buttons** prefab on top of the **TableAnchor** child object in the Hierarchy window to add it to your scene as a child of the TableAnchor object:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **Buttons** prefab onto the **TableAnchor** child object to add it to your scene as a child of the TableAnchor object:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
 
@@ -35,46 +34,53 @@ In this section, you will configure a series of button events that demonstrate t
 
 In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**:
 
-<!-- TODO: Update image, instructions reference Button object, so that should be the object with light grey highlight, not the TableAnchor -->
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
 In the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
-* To **None (Object)** field, assign the **TableAnchor** object
-* From **No Function** dropdown, select the **AnchorModuleScript** > **StartAzureSession ()** function
+* To the **None (Object)** field, assign the **TableAnchor** object
+* From the **No Function** dropdown, select the **AnchorModuleScript** > **StartAzureSession ()** function
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
 In the Hierarchy window, select the second child button object named **CreateAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
-* To **None (Object)** field, assign the **TableAnchor** object
-* From **No Function** dropdown, select the **AnchorModuleScript** > **CreateAzureAnchor ()** function
+* To the **None (Object)** field, assign the **TableAnchor** object
+* From the **No Function** dropdown, select the **AnchorModuleScript** > **CreateAzureAnchor ()** function
 * To the new **None (Game Object)** field that appears, assign the **TableAnchor** object
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
 
 In the Hierarchy window, select the third child button object named **ShareAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
-* To **None (Object)** field, assign the **TableAnchor** object
-* From **No Function** dropdown, select the **SharingModuleScript** > **ShareAzureAnchor ()** function
+* To the **None (Object)** field, assign the **TableAnchor** object
+* From the **No Function** dropdown, select the **SharingModuleScript** > **ShareAzureAnchor ()** function
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
 
 In the Hierarchy window, select the forth child button object named **GetAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
-* To **None (Object)** field, assign the **TableAnchor** object
-* From **No Function** dropdown, select the **SharingModuleScript** > **GetAzureAnchor ()** function
+* To the **None (Object)** field, assign the **TableAnchor** object
+* From the **No Function** dropdown, select the **SharingModuleScript** > **GetAzureAnchor ()** function
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
 
 ## Connecting the scene to the Azure resource
 
-In the Hierarchy window, expand the **SharedPlayground** object and select the **TableAnchor** object. Then in the Inspector window, locate the **Spatial Anchor Manager (Script)** component and configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the [Prerequisites](mr-learning-sharing-01.md#prerequisites) for this tutorial series:
+In the Hierarchy window, expand the **SharedPlayground** object and select the **TableAnchor** object.
+
+Then, in the Inspector window, locate the **Spatial Anchor Manager (Script)** component and configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the [Prerequisites](mr-learning-sharing-01.md#prerequisites) for this tutorial series:
 
 * In the **Spatial Anchors Account ID** field, paste the **Account ID** from your Azure Spatial Anchors account
 * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
+
+With the **TableAnchor** object still selected, in the Inspector window, locate the **Sharing Module (Script)** component and configure it as follows:
+
+* In the **Public Sharing Pin** field, change a few of the digits so the pin becomes unique to your project
+
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
 With the **TableAnchor** object still selected, in the Inspector window, make sure all the script components are enabled:
 
@@ -82,25 +88,28 @@ With the **TableAnchor** object still selected, in the Inspector window, make su
 * Check the checkbox next to the **Anchor Module Script (Script)** components to enable it
 * Check the checkbox next to the **Sharing Module Script (Script)** components to enable it
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
+![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-3.png)
 
 ## Trying the experience with spatial alignment
 
 > [!NOTE]
-> Azure Spatial Anchors can not run in Unity. Consequently, to test the Azure Spatial Anchors functionality, you need to deploy the project to a minimum of two HoloLens devices.
+> Azure Spatial Anchors can not run in Unity. Consequently, to test the Azure Spatial Anchors functionality, you need to deploy the project to a minimum of two devices.
 
-<!-- TODO: Consider adding TIP informing students that they can also deploy to mobile (link back to ASA AR Foundation tutorial) -->
+If you now build and deploy the Unity project to two devices, you can achieve spatial alignment between the devices by sharing the Azure Anchor ID. To test it out, you can follow these steps:
 
-If you now build and deploy the Unity project to two HoloLens devices, you can achieve spatial alignment between the devices by sharing the Azure Anchor ID. To test it out, you can follow these steps:
+1. On device 1: **Start the application** (the Rover Explorer is instantiated and placed on the table)
+2. On device 2: **Start the application** (both users see the table with the Rover Explorer, however, the table does not appear in the same place and the user avatars do not appear where the users are)
+3. On device 1: Press the **Start Azure Session** button
+4. On device 1: Press the **Create Azure Anchor** button (creates anchor at the location of the TableAnchor object and stores the anchor information in the Azure resource).
+5. On device 1: Press the **Share Azure Anchor** button (shares the anchor ID with other users in real-time)
+6. On device 2: Press the **Start Azure Session** button
+7. On device 2: Press the **Get Azure Anchor** button (connects to the Azure resource to retrieve the anchor information for the shared anchor ID, then moves the TableAnchor object to the location where the anchor was created with the device 1)
 
-1. On HoloLens device 1: **Start the application** (the Rover Module is instantiated and placed on the table)
-2. On HoloLens device 2: **Start the application** (both users see the table with the Rover Module, however, the table does not appear in the same place and the user avatars do not appear where the users are)
-3. On HoloLens device 1: Press the **Start Azure Session** button
-4. On HoloLens device 1: Press the **Create Azure Anchor** button (creates anchor at the location of the TableAnchor object and stores the anchor information in the Azure resource).
-5. On HoloLens device 1: Press the **Share Azure Anchor** button (shares the anchor ID with other users in real-time)
-6. On HoloLens device 2: Press the **Start Azure Session** button
-7. On HoloLens device 2: Press the **Get Azure Anchor** button (connects to the Azure resource to retrieve the anchor information for the shared anchor ID, then moves the TableAnchor object to the location where the anchor was created with the HoloLens device 1)
+> [!TIP]
+> If you don't have access to two HoloLens devices, you may follow the [Building Azure Spatial Anchors for mobile devices](mr-learning-asa-05.md) to deploy the project to your mobile device.
 
 ## Congratulations
 
-In this tutorial, you learned how to integrate Azure's powerful Spatial Anchors to align devices in a shared experience. This also concludes this tutorial series where you have learned how to set up a Photon account and application, integrate Photon and PUN into a Unity application, configure user avatars and shared objects, and finally align multiple participants using ASA.
+In this tutorial, you learned how to integrate Azure's powerful Spatial Anchors to align devices in a shared experience.
+
+This also concludes this tutorial series where you learned how to set up a Photon account and create a PUN application, integrate PUN into the Unity project, configure user avatars and shared objects, and finally align multiple participants using Azure Spatial Anchors.
