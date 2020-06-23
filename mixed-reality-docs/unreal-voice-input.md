@@ -3,7 +3,7 @@ title: Voice Input
 description: Tutorial on setting up and using voice input in HoloLens 2 and Unreal engine
 author: hferrone
 ms.author: v-haferr
-ms.date: 04/08/2020
+ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, voice, voice input, speech recognition, mixed reality, development, features, documentation, guides, holograms, game development
 ---
@@ -17,7 +17,7 @@ Voice input in Unreal allows you to interact with a hologram without having to u
 
 To enable speech recognition on HoloLens:
 1. Select **Project Settings > Platform > HoloLens > Capabilities** and enable **Microphone**. 
-2. Enabled speech recogniztion in **Settings > Privacy > Speech** and select **English**.
+2. Enabled speech recognition in **Settings > Privacy > Speech** and select **English**.
 
 > [!NOTE]
 > Speech recognition always functions in the Windows display language configured in the **Settings** app. It’s recommended that you also enable **Online speech recognition** for the best service quality.
@@ -40,7 +40,7 @@ To add a new Speech Mapping for a jump command:
 > [!NOTE]
 > Any English word(s) or short sentence(s) can be used as a keyword. 
 
-![UE4 Engine Input Setttings](images/unreal/engine-input.png)
+![UE4 Engine Input Settings](images/unreal/engine-input.png)
 
 Speech Mappings can be used as Input components like Action or Axis Mappings or as blueprint nodes in the Event Graph. For example, you could link the jump command to print out two different logs depending on when the word is spoken:
 

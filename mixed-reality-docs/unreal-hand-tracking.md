@@ -3,7 +3,7 @@ title: Hand tracking in Unreal
 description: Explains how to use Hand tracking in Unreal
 author: hferrone
 ms.author: v-haferr
-ms.date: 04/08/2020
+ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hand tracking, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, game development
 ---
@@ -118,7 +118,7 @@ It can also be subclassed in the editor:
 
 ![Live Link Remap](images/unreal/live-link-remap.png)
  
-## Accesssing Hand Mesh Data
+## Accessing Hand Mesh Data
 
 ![Hand Mesh](images/unreal/hand-mesh.png)
 
@@ -214,7 +214,7 @@ enum class EHMDInputControllerButtons : uint8
 
 Below is a breakdown of the two applicable enum cases:
 * **Select** - User triggered Select event. 
-    * The event can be triggered in HoloLens 2 by airtap, gaze and commit, or by saying “Select” with [voice input](unreal-voice-input.md) enabled. 
+    * The event can be triggered in HoloLens 2 by air-tap, gaze and commit, or by saying “Select” with [voice input](unreal-voice-input.md) enabled. 
 * **Grasp** - User triggered Grasp event. 
     * This event can be triggered in HoloLens 2 by closing the user’s fingers on a hologram. 
 
@@ -321,7 +321,7 @@ static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrac
 
 The Hololens 2 can track spatial gestures, which means you can capture those gestures as input. You can find more details about gestures are the [HoloLens 2 Basic Usage](https://docs.microsoft.com/hololens/hololens2-basic-usage) document.
 
-You can find the Blueprint function in under **Windows Mixed Reality Spatial Input**, and the C++ function by adding `WindowsMixedRealitySpatialInputFunctionLibrary.h` in your callind code file.
+You can find the Blueprint function in under **Windows Mixed Reality Spatial Input**, and the C++ function by adding `WindowsMixedRealitySpatialInputFunctionLibrary.h` in your calling code file.
 
 ![Capture Gestures](images/unreal/capture-gestures.png)
 

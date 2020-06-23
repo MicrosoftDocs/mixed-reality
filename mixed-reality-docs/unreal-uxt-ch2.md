@@ -3,7 +3,7 @@ title: 2. Initializing your project and first application
 description: Part 2 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
 author: hferrone
 ms.author: v-haferr
-ms.date: 5/5/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
@@ -18,12 +18,12 @@ In this first tutorial, you'll get started with a new Unreal application for Hol
 Before continuing, make sure you have all the prerequisite from the [Getting Started](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1) page.
 
 ## Objectives
-* Configuring an Unreal projet for HoloLens development
+* Configuring an Unreal project for HoloLens development
 * Importing assets and setting up a scene
 * Creating Actors and script-level events with blueprints
 
 ## Creating a new Unreal project
-The first thing you need is a project to work with.
+The first thing you need is a project to work with. If this is your first time creating an Unreal app for HoloLens, you'll need to [download supporting files](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) from the Epic Launcher.
 
 1. Launch Unreal Engine
 

@@ -3,7 +3,7 @@ title: 5. Adding a button & resetting piece locations
 description: Part 5 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
 author: hferrone
 ms.author: v-haferr
-ms.date: 5/5/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
@@ -49,7 +49,7 @@ Now that the function is setup correctly, your next task is to create a button t
 
 ![Subclass the new Blueprint from SimpleButton](images/unreal-uxt/5-subclass.PNG)
 
-2. Click **PressableButton (Inherited)** from the **Components** panel and scroll down the **Details** panel to the **Events** section. 
+2. Click **Pressable Button (Inherited)** from the **Components** panel and scroll down the **Details** panel to the **Events** section. 
     * Click the green **+** button next to **On Button Pressed** to add an event to the Event Graph, which will be called when the button is pressed. 
     
 From here, you’ll want to call **WhiteKing**’s **Reset Location** function, which needs a reference to the **WhiteKing** Actor in the Level. 
