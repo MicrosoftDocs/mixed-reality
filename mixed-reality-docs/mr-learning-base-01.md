@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 ## Overview
 
-Welcome to the Getting Started tutorials! Through this tutorial series, you will learn about some of the features the <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"> Mixed Reality Toolkit (MRTK)</a> has to offer while building a mixed reality experience where the user can explore a hologram modelled after NASA's Mars Curiosity Rover.
+Welcome to the Getting Started tutorials! Through this tutorial series, you will learn about some of the features the <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"> Mixed Reality Toolkit</a> (MRTK) has to offer while building a mixed reality experience where the user can explore a hologram modelled after NASA's Mars Curiosity Rover.
 
 Tutorials in this series:
 
@@ -42,6 +42,9 @@ Tutorials in this series:
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added
 
 > [!CAUTION]
-> The recommended Unity version for this tutorial series is Unity 2019.3.15. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> The recommended Mixed Reality Toolkit version for this tutorial series is MRTK 2.4.0.
+
+> [!CAUTION]
+> The recommended Unity version for this tutorial series is Unity 2019.3.15. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
 [Next Tutorial: 2. Initializing your project and first application](mr-learning-base-02.md)
