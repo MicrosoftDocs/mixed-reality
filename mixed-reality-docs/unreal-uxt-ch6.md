@@ -43,16 +43,22 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 
 1.	Go to **Edit > Project Settings**. 
     * Add a project name under **Project > Description > About > Project Name**. 
-    * Add **CN={INSERT COMPANY NAME}** under **Project > Description > Publisher > Company Distinguished Name**.
+    * Add **CN=YourCompanyName** under **Project > Description > Publisher > Company Distinguished Name**.
 
 > [!IMPORTANT]
 > Leaving either of these fields blank will result in an error when you try and generate a new certificate in step 3. 
+
+> [!IMPORTANT]
+> The publisher's name must be in in [LADPv3 Distinguished Names Format](https://www.ietf.org/rfc/rfc2253.txt). A malformed publisher's name leads to the "Signing key not found. The app could not be digitally signed." error on packaging stage.
 
 ![Project Settings - Description](images/unreal-uxt/6-cn.PNG)
 
 2.	Enable **Build for HoloLens Emulation** and/or **Build for HoloLens Device** under **Platforms > HoloLens**.
 
 3.	Click **Generate new** in the **Packaging** section (next to **Signing Certificate**).
+
+> [!IMPORTANT]
+> If you use an already generated certificate, then the certificate's publisher name must be same as the application's publisher name. Otherwise it leads to "Signing key not found. The app could not be digitally signed." error.
 
 ![Project Settings - Platforms - HoloLens](images/unreal-uxt/6-packaging.PNG)
 
