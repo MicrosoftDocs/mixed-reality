@@ -14,7 +14,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 
 Unlike vision, humans hear in 360 degree surround sound. Spatial sound emulates how human hearing works, providing the cues needed to identify sound locations in world-space. When you add spatial sound in your mixed reality applications, you're enhancing the level of immersion your users experience.  
 
-High quality spatial sound processing is complex, but the HoloLens 2 comes with dedicated hardware for processing those sound objects.  Before you can access this hardware processing support, you'll need to install the **MicrosoftSpatialSound** plugin in your Unreal project. This article will walk you through the installation and configuration of that plugin and point you towards more in-depth resources for using spatial sound in the Unreal engine. 
+High quality spatial sound processing is complex, so the HoloLens 2 comes with dedicated hardware for processing those sound objects.  Before you can access this hardware processing support, you'll need to install the **MicrosoftSpatialSound** plugin in your Unreal project. This article will walk you through the installation and configuration of that plugin and point you towards more in-depth resources for using spatial sound in the Unreal engine. 
 
 ## Installing the Microsoft Spatial Sound plugin 
 
@@ -54,14 +54,35 @@ Spatial audio is disabled by default on desktop versions of Windows. You can ena
 >This setting is only required if you plan to test your project in the Unreal editor.
 
 ## Creating Attenuation objects
-After you've installed and configured the necessary plugins you can create a new Sound Attenuation asset by:
-*  Right-clicking on the **Content Browser** and selecting **Create Advanced Asset -> Sounds -> Sound Attenuation**:
+After you've installed and configured the necessary plugins:
+* Place an **Ambient Sound actor** in the scene from the **Place Actors** window.
+
+    // TODO: What visual qualities? How is this connected to spatial audio?
+    * Once the Ambient Sound is created, the actor can be attached to a parent, which has visual qualities.
+
+// TODO: Add image for this step
+
+To create a sound attenuation asset:
+*  Right-click on the **Content Browser** and selecting **Create Advanced Asset -> Sounds -> Sound Attenuation**:
 
 ![Creating sound attenuation asset](images/unreal-spatial-audio-img-06.png)
 
-Your new sound asset will be created with a **Details** and all the spatial sound settings you could ask for:
+* Then switch the **Spatialization Method** to **Binaural**.
 
 ![New sound attenuation asset](images/unreal-spatial-audio-img-03.png)
+
+Putting it all together:
+* Add the sound attenuation asset and the attenuation settings to the **Ambient Sound actor** in yoru scene:
+
+// TODO: Add image for this step
+
+// TODO: Clarify the instruction below
+
+The Ambient Sound actor has properties for setting a Sound Attenuation setting as well as the sound asset to use for the Ambient Sound actor.
+
+// TODO: How do you do this? What is the hardware offload support? More details...
+
+Once all of this is configured, then the ambient sound should be spatialized using the dedicated hardware offload support on HL2.
 
 ## Configuring objects for spatialization
 Working with spatial audio means you're in charge of managing how sound behaves in a virtual environment. Your main focus is creating sound objects that appear louder when the user is close, and quieter when the user is far away. This is referred to as sound attenuation, making sounds appear as if they are positioned in a fixed spot.
