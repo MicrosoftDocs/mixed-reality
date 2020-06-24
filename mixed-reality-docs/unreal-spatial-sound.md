@@ -55,12 +55,12 @@ Spatial audio is disabled by default on desktop versions of Windows. You can ena
 
 ## Creating Attenuation objects
 After you've installed and configured the necessary plugins:
-* Place an **Ambient Sound actor** in the scene from the **Place Actors** window.
+* Search for an **Ambient Sound** actor in the **Place Actors** window and hit Enter to place it in the scene.
 
-    // TODO: What visual qualities? How is this connected to spatial audio?
-    * Once the Ambient Sound is created, the actor can be attached to a parent, which has visual qualities.
+![Adding ambient sound actor](images/unreal-spatial-audio-img-07.png)
 
-// TODO: Add image for this step
+* Make the **Ambient Sound** actor a child of a visual element in your scene. 
+    * An Ambient Sound actor doesn't have any visual representation by default, so you'll only hear a sound from its position in the scene. Attaching it to a visual element let's you see and move the actor like any other asset.
 
 To create a sound attenuation asset:
 *  Right-click on the **Content Browser** and selecting **Create Advanced Asset -> Sounds -> Sound Attenuation**:
@@ -72,17 +72,12 @@ To create a sound attenuation asset:
 ![New sound attenuation asset](images/unreal-spatial-audio-img-03.png)
 
 Putting it all together:
-* Add the sound attenuation asset and the attenuation settings to the **Ambient Sound actor** in yoru scene:
+* Select the **Ambient Sound** actor and scroll down to the **Attenuation** section in the **Details** panel. 
+    * Set the **Attenuation Settings** property to the **Sound Attenuation** asset you created.
 
-// TODO: Add image for this step
+![New sound attenuation asset](images/unreal-spatial-audio-img-08.png)
 
-// TODO: Clarify the instruction below
-
-The Ambient Sound actor has properties for setting a Sound Attenuation setting as well as the sound asset to use for the Ambient Sound actor.
-
-// TODO: How do you do this? What is the hardware offload support? More details...
-
-Once all of this is configured, then the ambient sound should be spatialized using the dedicated hardware offload support on HL2.
+Once all of this is configured the ambient sound can be spatialized using the dedicated hardware offload support on HoloLens 2.
 
 ## Configuring objects for spatialization
 Working with spatial audio means you're in charge of managing how sound behaves in a virtual environment. Your main focus is creating sound objects that appear louder when the user is close, and quieter when the user is far away. This is referred to as sound attenuation, making sounds appear as if they are positioned in a fixed spot.
