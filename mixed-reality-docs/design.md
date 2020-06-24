@@ -55,7 +55,7 @@ Spatial mapping makes it possible to place objects on real surfaces. This helps 
 
 <br>
 
-![Interaction design factors](images/MRTK_BoundingBox_Main.png)
+![Interaction design factors](images/UX/UX_Hero_Manipulation.jpg)
 
 ## Interaction design factors to consider
 
@@ -80,6 +80,17 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 
 <br>
 
+
+---
+
+<br>
+
+
+![UX Elements](images/UX/UX_Hero_BoundingBox.jpg)
+
+## User experience elements for mixed reality
+
+
 ### [Color, light and materials](color,-light-and-materials.md)
 Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
 
@@ -95,8 +106,11 @@ Just like typography on 2D screens, the goal is to be clear and readable. With t
 
 <br>
 
-### [UX elements for the mixed reality](app-patterns-landingpage.md)
-Learn about the building blocks for spatial interactions and UI in mixed reality.
+### [Common controls and behaviors](app-patterns-landingpage.md)
+Learn about frequently used common spatial interactions and UI building blocks for mixed reality experiences.
+
+
+
 <br>
 
 

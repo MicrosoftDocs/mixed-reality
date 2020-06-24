@@ -43,30 +43,40 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 
 1.	Go to **Edit > Project Settings**. 
     * Add a project name under **Project > Description > About > Project Name**. 
-    * Add **CN={INSERT COMPANY NAME}** under **Project > Description > Publisher > Company Distinguished Name**.
+    * Add **CN=YourCompanyName** under **Project > Description > Publisher > Company Distinguished Name**.
 
 > [!IMPORTANT]
-> Leaving either of these fields blank will result in an error. 
+> Leaving either of these fields blank will result in an error when you try and generate a new certificate in step 3. 
+
+> [!IMPORTANT]
+> The publisher's name must be in in [LADPv3 Distinguished Names Format](https://www.ietf.org/rfc/rfc2253.txt). A malformed publisher's name leads to the "Signing key not found. The app could not be digitally signed." error on packaging stage.
 
 ![Project Settings - Description](images/unreal-uxt/6-cn.PNG)
 
 2.	Enable **Build for HoloLens Emulation** and/or **Build for HoloLens Device** under **Platforms > HoloLens**.
 
-3.	Click **Generate new** in the **Packaging** section (next to **Signing Certificate**), then return to the Main window.
+3.	Click **Generate new** in the **Packaging** section (next to **Signing Certificate**).
+
+> [!IMPORTANT]
+> If you use an already generated certificate, then the certificate's publisher name must be same as the application's publisher name. Otherwise it leads to "Signing key not found. The app could not be digitally signed." error.
 
 ![Project Settings - Platforms - HoloLens](images/unreal-uxt/6-packaging.PNG)
 
-4.	Go to **File > Package Project** and select **HoloLens**. 
+4. Click **None** for testing purposes when you're prompted to create a Private Key Password.
+
+![Generating new certificate](images/unreal-uxt/6-private-key-testing.png)
+
+5. Go to **File > Package Project** and select **HoloLens**. 
     * Create a new folder to save your package in and click **Select Folder**. 
 
-5.	Open the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) once the app is packaged, go to **Views > Apps** and find the **Deploy apps** section.
+6.	Open the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) once the app is packaged, go to **Views > Apps** and find the **Deploy apps** section.
 
-6.	Click **Browse...**, go to your **ChessApp.appxbundle** file and click **Open**. 
+7.	Click **Browse...**, go to your **ChessApp.appxbundle** file and click **Open**. 
 
     * Check the box next to **Allow me to select framework packages** if this is the first time you're installing the app on your device. 
     * In the next dialogue, include the appropriate **VCLibs** and **appx** files (arm64 for device, x64 for emulator). You can find these under **HoloLens** inside the folder where you saved your package.
 
-7.	Click **Install**
+8.	Click **Install**
     * You can now go to **All Apps** and tap the the newly installed app to run it, or you can start the app directly from the **Windows Device Portal**. 
 
 Congratulations! Your HoloLens mixed reality application is finished and ready to go. However, this isn't the end of the road. MRTK has lots of standalone features that you can add to your projects, including spatial mapping, gaze and voice input, and even QR codes. More information on these features can be found in the [Unreal development overview](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
