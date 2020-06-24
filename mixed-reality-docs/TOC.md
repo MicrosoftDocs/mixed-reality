@@ -62,14 +62,13 @@
 ### [Eye-gaze-based interaction](eye-gaze-interaction.md)
 ## UX elements
 ### [Overview](app-patterns-landingpage.md)
-### Style
+### Foundational elements
 #### [Color, light, and materials](color-light-and-materials.md)
 #### [Scale](scale.md)
 #### [Typography](typography.md)
-### Spatial sound
-#### [Spatial sound design](spatial-sound-design.md)
-#### [Case study: Holotour ](case-study-spatial-sound-design-for-holotour.md)
-#### [Case study: Roboraid](case-study-using-spatial-sound-in-roboraid.md)
+#### [Sound](spatial-sound-design.md)
+##### [Case study: Holotour ](case-study-spatial-sound-design-for-holotour.md)
+##### [Case study: Roboraid](case-study-using-spatial-sound-in-roboraid.md)
 
 ### Controls and behaviors
 #### [Cursors](cursors.md)
@@ -81,13 +80,15 @@
 #### [Hand menu](hand-menu.md)
 #### [Near menu](near-menu.md)
 #### [Object collection](object-collection.md)
-#### [Voice command](voice-input.md)
+#### [Voice input](voice-input.md)
 #### [Keyboard](keyboard.md)
 #### [Tooltip](tooltip.md)
 #### [Slate](slate.md)
 #### [Slider](slider.md)
 #### [Shader](shader.md)
-#### [Hand Coach](hand-coach.md)
+#### [Dialog](dialog-ui.md)
+#### [Hand coach](hand-coach.md)
+#### [Spatial mesh](spatial-mesh-ux.md)
 #### [Billboarding and tag-along](billboarding-and-tag-along.md)
 #### [Displaying progress](progress.md)
 #### [Surface magnetism](surface-magnetism.md)
@@ -98,12 +99,15 @@
 ### [Microsoft Maquette](https://www.maquette.ms)
 ### [Asset creation process](asset-creation-process.md)
 ### [Design your own immersive environments](add-custom-home-environments.md)
+
 # Develop
 ## [Learn the tools and architecture](development.md)
 ## [Install the tools](install-the-tools.md)
+
 ## Mixed reality cloud services
 ### [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering)
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+
 ## [Tutorials and sample apps](tutorials.md)
 ### Unity
 #### HoloLens 2 tutorials
@@ -178,6 +182,7 @@
 #### [4. Making your scene interactive](unreal-uxt-ch4.md)
 #### [5. Adding a button & resetting piece locations](unreal-uxt-ch5.md)
 #### [6. Packaging & deploying to device or emulator](unreal-uxt-ch6.md)
+
 ## Unity
 ### [Unity development overview](unity-development-overview.md)
 ### Getting started
@@ -209,21 +214,25 @@
 #### [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 #### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
+
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
 ### [Hand tracking in Unreal](unreal-hand-tracking.md)
 ### [Gaze input in Unreal](unreal-gaze-input.md)
 ### [Spatial mapping in Unreal](unreal-spatial-mapping.md)
+### [Spatial audio in Unreal](unreal-spatial-sound.md)
 ### [Spatial anchors in Unreal](unreal-spatial-anchors.md)
 ### [Voice input in Unreal](unreal-voice-input.md)
 ### [HoloLens camera in Unreal](unreal-hololens-camera.md)
 ### [QR codes in Unreal](unreal-qr-codes.md)
 ### [Streaming in Unreal](unreal-streaming.md)
 ### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
+
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)
 ### [WebVR](webvr-overview.md)
+
 ## Native
 ### [Native development overview](directx-development-overview.md)
 ### OpenXR
@@ -236,6 +245,7 @@
 #### [Creating a native holographic project](creating-a-holographic-directx-project.md)
 #### [Getting a HolographicSpace](getting-a-holographicspace.md)
 #### [Native rendering](rendering-in-directx.md)
+
 ## Platform capabilities and APIs
 ### Core building blocks
 #### [Coordinate systems](coordinate-systems-in-directx.md)
@@ -286,12 +296,14 @@
 #### [Using the Windows Device Portal](using-the-windows-device-portal.md)
 #### [Device portal API reference](device-portal-api-reference.md)
 #### [HoloLens Research mode](research-mode.md)
+
 ## Porting apps
 ### [Porting HTK/MRTK to MRTK v2](mrtk-porting-guide.md)
 ### [Porting guide for immersive apps](porting-guides.md)
 ### [Input porting guide for Unity](input-porting-guide-for-unity.md)
 ### [Updating your SteamVR application for Windows Mixed Reality](updating-your-steamvr-application-for-windows-mixed-reality.md)
 ### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
+
 # Distribute
 ## [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
 ## [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
