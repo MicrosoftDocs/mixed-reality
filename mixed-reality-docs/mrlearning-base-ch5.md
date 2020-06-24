@@ -37,7 +37,11 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 
 ![mrlearning-base](images/mrlearning-base/tutorial5-section1-step1-1.png)
 
-Select the **MixedRealityToolkit** object from the Hierarchy tab, then click the **Input** tab in the Inspector window and expand the **Pointers** section. Clone the **DefaultMixedRealityInputPointerProfile**, replace it with your own customizable **Input Pointer Profile**, and check that **Is Eye Tracked Enabled** is true in the Gaze Settings section. 
+> [!NOTE]
+> If you're using MRTK 2.4.0 or later:
+> * Select the **MixedRealityToolkit** object from the Hierarchy tab, then click the **Input** tab in the Inspector window and expand the **Pointers** section. 
+> * Clone the **DefaultMixedRealityInputPointerProfile** and replace it with your own customizable **Input Pointer Profile**.
+> * Check that **Is Eye Tracked Enabled** is true in the **Gaze Settings** section. 
 
 > [!TIP]
 > For a reminder on how to clone MRTK profiles, you can refer to the [How to configure the Mixed Reality Toolkit Profiles](mrlearning-base-ch2.md#how-to-configure-the-mixed-reality-toolkit-profiles-change-spatial-awareness-display-option) instructions.
