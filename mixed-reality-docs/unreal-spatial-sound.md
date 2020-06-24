@@ -39,7 +39,7 @@ Configuring the spatialization plugin is done on a per-platform basis.  You can 
 
 ![Spatialization plugin for HoloLens platform](images/unreal-spatial-audio-img-02.png)
 
-If you're going to be previewing your application on a desktop PC, you'll need to repeat the above steps for the **Windows** platform:
+If you're going to be previewing your application in the Unreal editor on a desktop PC, you'll need to repeat the above steps for the **Windows** platform:
 
 ![Spatializaing plugin for Windows platform](images/unreal-spatial-audio-img-05.png)
 
