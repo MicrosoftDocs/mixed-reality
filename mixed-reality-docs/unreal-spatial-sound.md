@@ -80,10 +80,6 @@ All attenuation objects come with modifiable settings for:
 [Sound attenuation in Unreal](https://docs.unrealengine.com/Engine/Audio/DistanceModelAttenuation/index.html) has details and implementation specifics on each of these topics.
 
 
-## Resonance Audio plugin
-If you're looking for a multi-platform spatial audio SDK that delivers high fidelity sound at scale, check out the [Resonance Audio plugin](https://resonance-audio.github.io/resonance-audio/develop/unreal/getting-started#spatialize-sounds-with-the-resonance-audio-plugin).
-
-
 ## See also
 * [Spatial Sound](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)
 * [Spatial Sound Design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)
