@@ -54,7 +54,7 @@ Before you start adding objects to the scene you'll need to enable two plugins.
 ![Enabling HoloLens plugins](images/unreal-uxt/2-plugins.PNG)
 
 2. Select **Virtual Reality** from the built-in options list. 
-    * Scroll down to **Microsoft Windows Mixed Reality**., check **Enabled**, and restart your editor. 
+    * Scroll down to **Microsoft Windows Mixed Reality**, check **Enabled**, and restart your editor. 
 
 ![Enabling Windows Mixed Reality plugin](images/unreal-uxt/2-virtual-reality-plugin.PNG)
 
