@@ -25,10 +25,7 @@ The first step to adding spatial sound to your project is installing the Microso
 * Restarting the Unreal Editor by selecting **Restart Now** from the plugins page. 
 
 > [!NOTE]
-> * If you're working strictly on a desktop PC, you need to install the **Microsoft Windows Mixed Reality** plugin.
-> * If you're testing or deploying to HoloLens 2, you need to install the **HoloLens** plugin.
->
-> You can find detailed instructions on installing these plugins in the **[Initializing your project](unreal-uxt-ch2.md)** section of our Unreal tutorial series.
+> If you haven't already, you'll need to install the **Microsoft Windows Mixed Reality** and **HoloLens** plugins by following the instructions in the **[Initializing your project](unreal-uxt-ch2.md)** section of our Unreal tutorial series.
 
 ![Unreal spatial audio plugin](images/unreal-spatial-audio-img-01.png)
 
@@ -68,6 +65,9 @@ Your new sound asset will be created with a **Details** and all the spatial soun
 
 ## Configuring objects for spatialization
 Working with spatial audio means you're in charge of managing how sound behaves in a virtual environment. Your main focus is creating sound objects that appear louder when the user is close, and quieter when the user is far away. This is referred to as sound attenuation, making sounds appear as if they are positioned in a fixed spot.
+
+> [!NOTE]
+> Spatialization with the **Microsoft Spatial Sound** plugin will only work with SoundWave objects that are mono. Make sure that your audio files are correctly configured to mono before importing them into your project.
 
 All attenuation objects come with modifiable settings for:
 * Distance
