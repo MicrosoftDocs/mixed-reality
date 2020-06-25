@@ -220,7 +220,7 @@
 ### [Hand tracking in Unreal](unreal-hand-tracking.md)
 ### [Gaze input in Unreal](unreal-gaze-input.md)
 ### [Spatial mapping in Unreal](unreal-spatial-mapping.md)
-### [Spatial audio in Unreal](unreal-spatial-sound.md)
+### [Spatial audio in Unreal](unreal-spatial-audio.md)
 ### [Spatial anchors in Unreal](unreal-spatial-anchors.md)
 ### [Voice input in Unreal](unreal-voice-input.md)
 ### [HoloLens camera in Unreal](unreal-hololens-camera.md)
