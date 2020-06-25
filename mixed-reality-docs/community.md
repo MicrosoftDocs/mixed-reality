@@ -30,12 +30,12 @@ If you run a community that you would like included on this page, please send an
 
 |Community Name|Country|City|Link|
 |---------|---------|---------|---------|
-|**Augmented Reality Melbourne**|Australia|Melbourne|[Link](https://www.meetup.com/armelbourne/)|
-|**Chicago AWE Nite**|USA|Chicago|[Link](https://www.meetup.com/AWENiteChicago/)|
-|**HoloMagicians**|Japan|Tokyo|[Link](https://hololens.connpass.com/)|
-|**Mixed Reality User Group - Netherlands**|Netherlands|Rijswijk|[Link](https://www.mixug.com)|
-|**VR Philippines**|Philippines|N/A|[Link](https://www.facebook.com/vrphilippines/)|
-|**XRLA**|USA|Los Angeles|[Link](https://www.meetup.com/XRLA_Meetup/)|
+|**_Augmented Reality Melbourne_**|Australia|Melbourne|[Link](https://www.meetup.com/armelbourne/)|
+|**_Chicago AWE Nite_**|USA|Chicago|[Link](https://www.meetup.com/AWENiteChicago/)|
+|**_HoloMagicians_**|Japan|Tokyo|[Link](https://hololens.connpass.com/)|
+|**_Mixed Reality User Group - Netherlands_**|Netherlands|Rijswijk|[Link](https://www.mixug.com)|
+|**_VR Philippines_**|Philippines|N/A|[Link](https://www.facebook.com/vrphilippines/)|
+|**_XRLA_**|USA|Los Angeles|[Link](https://www.meetup.com/XRLA_Meetup/)|
 
 <br>
 
