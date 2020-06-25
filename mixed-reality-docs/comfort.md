@@ -129,6 +129,22 @@ Optimal text legibility can help reduce eye strain and maintain user comfort, es
 
 In general, we recommend testing specific applications for legibility and making font sizes as large as possible for a comfortable experience. You can find more detailed guidance for holographic and immersive devices in our [Typography](typography.md) and [Text in Unity](text-in-unity.md) pages.
 
+## Holographic frame considerations
+
+For mixed reality experiences with large objects or many objects, it is crucial to consider how much head and neck movement is necessary to interact with content. Experiences can be divided into three categories in terms of head movement: 
+* **Horizontal** (side to side)
+* **Vertical** (up and down)
+* **Immersive** (both horizontal and vertical)
+ 
+When possible, limit the majority of interactions to either horizontal or vertical categories, ideally with most experiences taking place in the center of the holographic frame while the user's head is in a neutral position. Avoid interactions that cause the user to constantly move their view to an unnatural head positions (for example, always looking up to access a key menu interaction).
+
+![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2.png)<br>
+*Optimal region for content is 0 to 35 degrees below horizon*
+
+Horizontal head movement is more for frequent interactions, while vertical movements should be reserved for uncommon events. For example, an experience involving a long horizontal timeline should limit vertical head movement for interactions (like looking down at a menu).
+
+Consider encouraging full-body movement, rather than just head movement, by placing objects around the user's space. Experiences with moving objects or large objects should pay special attention to head movement, especially where they require frequent movement along both the horizontal and vertical axes.
+
 ## Gaze direction
 
 To avoid eye and neck strain content should be designed so that excessive eye and neck movements are avoided.
