@@ -81,7 +81,7 @@ After you've installed and configured the necessary plugins:
 ![Set sound asset](images/unreal-spatial-audio-img-09.png)
 
 > [!NOTE] 
-> The SoundAsset file needs to be mono to be spatializes with the Microsoft Spatial Sound plug-in. You can find the sound file properties by hovering over the asset in the Content Browser window as shown in the screenshot below.
+> The SoundAsset file needs to be mono to be spatialized with the Microsoft Spatial Sound plug-in. You can find the sound file properties by hovering over the asset in the Content Browser window as shown in the screenshot below.
 
 ![New sound attenuation asset](images/unreal-spatial-audio-img-10.png)
 
