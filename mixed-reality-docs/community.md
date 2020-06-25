@@ -58,8 +58,6 @@ The Azure Cloud Advocates charter is to help every technologist on the planet su
 
 The members listed here are the Cloud Advocates that work on the Spatial Computing team within the Cloud Advocate organization. They work extremely close with the Mixed Reality Developer Ecosystem team, and it's often hard to tell where one team stops, and the other one starts.
 
-More info coming soon....
-
 ||||
 |---------|---------|---------|
 |![April Speight](images/BiographyImages/april-speight_270x270.png)</br>**April Speight**</br>*Cloud Advocate*|I've been in the tech industry for 7 years after a career in luxury fashion as a menswear stylist and visual merchandiser. I love working with bots and voice enabled devices. However, I'm currently creating new realities within the world of spatial computing!</br>I like meeting new coders and people on their journey to transition into the tech industry. I provide advice and code tutorials on both my [website](https://www.joincomputerclub.com/) and [YouTube channel](https://www.youtube.com/c/vogueandcode). In my spare time, you can either find me crafting or scratchin' on turntables!|[Twitter](https://twitter.com/vogueandcode)|
