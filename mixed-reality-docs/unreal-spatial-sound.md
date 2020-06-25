@@ -20,9 +20,9 @@ High quality spatial sound processing is complex, so the HoloLens 2 comes with d
 
 The first step to adding spatial sound to your project is installing the Microsoft Spatial Sound plugin, which you can find by: 
 
-* Clicking **Edit > Plugins** and searching for **MicrosoftSpatialSound** in the search box. 
-* Selecting the **Enabled** checkbox in the **MicrosoftSpatialSound** plugin. 
-* Restarting the Unreal Editor by selecting **Restart Now** from the plugins page. 
+1. Clicking **Edit > Plugins** and searching for **MicrosoftSpatialSound** in the search box. 
+2. Selecting the **Enabled** checkbox in the **MicrosoftSpatialSound** plugin. 
+3. Restarting the Unreal Editor by selecting **Restart Now** from the plugins page. 
 
 > [!NOTE]
 > If you haven't already, you'll need to install the **Microsoft Windows Mixed Reality** and **HoloLens** plugins by following the instructions in the **[Initializing your project](unreal-uxt-ch2.md)** section of our Unreal tutorial series.
@@ -55,35 +55,40 @@ Spatial audio is disabled by default on desktop versions of Windows. You can ena
 
 ## Creating Attenuation objects
 After you've installed and configured the necessary plugins:
-* Search for an **Ambient Sound** actor in the **Place Actors** window and hit Enter to place it in the scene.
+1. Search for an **Ambient Sound** actor in the **Place Actors** window and drag it into the **Scene** window.
 
 ![Adding ambient sound actor](images/unreal-spatial-audio-img-07.png)
 
-* Make the **Ambient Sound** actor a child of a visual element in your scene. 
+2. Make the **Ambient Sound** actor a child of a visual element in your scene. 
     * An Ambient Sound actor doesn't have any visual representation by default, so you'll only hear a sound from its position in the scene. Attaching it to a visual element let's you see and move the actor like any other asset.
 
-To create a sound attenuation asset:
-*  Right-click on the **Content Browser** and selecting **Create Advanced Asset -> Sounds -> Sound Attenuation**:
+3.  Right-click on the **Content Browser** and selecting **Create Advanced Asset -> Sounds -> Sound Attenuation**:
 
 ![Creating sound attenuation asset](images/unreal-spatial-audio-img-06.png)
 
-* Then switch the **Spatialization Method** to **Binaural**.
+4. Right-click on the **Sound Attenuation** asset in the **Content Browser** window and select the **Edit** option to bring up the properties window.
+    * Switch the **Spatialization Method** to **Binaural**.
 
-![New sound attenuation asset](images/unreal-spatial-audio-img-03.png)
+![Set spatialization method](images/unreal-spatial-audio-img-03.png)
 
-Putting it all together:
-* Select the **Ambient Sound** actor and scroll down to the **Attenuation** section in the **Details** panel. 
+5. Select the **Ambient Sound** actor and scroll down to the **Attenuation** section in the **Details** panel. 
     * Set the **Attenuation Settings** property to the **Sound Attenuation** asset you created.
 
-![New sound attenuation asset](images/unreal-spatial-audio-img-08.png)
+![Set attenuation setting](images/unreal-spatial-audio-img-08.png)
+
+6. Set the **Sound Asset** you want to attach to the Ambient Sound actor by updating the **Sound** property of the Ambient Sound actor to specify the SoundAsset file to use.
+
+![Set sound asset](images/unreal-spatial-audio-img-09.png)
+
+> [!NOTE] 
+> The SoundAsset file needs to be mono to be spatializes with the Microsoft Spatial Sound plug-in. You can find the sound file properties by hovering over the asset in the Content Browser window as shown in the screenshot below.
+
+![New sound attenuation asset](images/unreal-spatial-audio-img-10.png)
 
 Once all of this is configured the ambient sound can be spatialized using the dedicated hardware offload support on HoloLens 2.
 
 ## Configuring objects for spatialization
 Working with spatial audio means you're in charge of managing how sound behaves in a virtual environment. Your main focus is creating sound objects that appear louder when the user is close, and quieter when the user is far away. This is referred to as sound attenuation, making sounds appear as if they are positioned in a fixed spot.
-
-> [!NOTE]
-> Spatialization with the **Microsoft Spatial Sound** plugin will only work with SoundWave objects that are mono. Make sure that your audio files are correctly configured to mono before importing them into your project.
 
 All attenuation objects come with modifiable settings for:
 * Distance
