@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 4. Integrating Azure Spatial Anchors
 
-In this tutorial, you will learn how to use **Azure Spatial Anchors**. We will store the location of a **Tracked Object** as an Azure Spatial Anchor. Then we will query and present the user with a guiding arrow pointing to the location. 
+In this tutorial, you will learn how to use **Azure Spatial Anchors**. We will store the location of a **Tracked Object** as an Azure Spatial Anchor. Then we will query and present the user with a guiding arrow pointing to the location.
 
 ## Objectives
 
@@ -23,14 +23,12 @@ In this tutorial, you will learn how to use **Azure Spatial Anchors**. We will s
 
  **Azure Spatial Anchors** is part of the Azure Cloud Services family and is used to save anchor locations. The saved anchor locations can be retrieved based on the *anchor ID* from the cloud. This anchor location can be shared and accessed by multi-platform devices like HoloLens, iOS, and Android devices.
 
-Learn more about [Azure Spatial Anchors](https://docs.microsoft.com/en-us/azure/spatial-anchors/overview).
+Learn more about [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview).
 
 ## Preparing Azure Spatial Anchors
 
 Before we can start, you have to create a spatial anchor resource in your Azure portal.
-Learn how to make a [spatial anchor resource](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
-
-
+Learn how to make a [spatial anchor resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
 ## Preparing the scene
 
@@ -42,8 +40,7 @@ In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServi
 
 From the **Manager** folder, move the prefab **Anchor Manager** into the scene hierarchy.
 
-
- Select **Anchor Manager** GameObject in the hierarchy, and in the inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
+Select **Anchor Manager** GameObject in the hierarchy, and in the inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial4-section1-step2-1.png)
 
