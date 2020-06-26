@@ -139,22 +139,22 @@ In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServi
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial5-section6-step1-1.png)
 
-From there move the prefab **ChatBotManager** into the scene hierarchy.
+From there move the prefab **ChatBotManager** into the scene Hierarchy.
 
 Once you add the ChatBotManager to the scene, click on the **Chat Bot Manager** component.
-In the Inspector you will find the **SceneController** field, locate the **SceneController** object from the hierarchy and drag it to the empty field. You will see that there is also the empty **Chat Bot Endpoint** field. The ChatBotManager will use the Rest API to talk with ChatBotManager, so in this field you have to provide the endpoint where the *bot* is hosted.
+In the Inspector you will find the **SceneController** field, locate the **SceneController** object from the Hierarchy and drag it to the empty field. You will see that there is also the empty **Chat Bot Endpoint** field. The ChatBotManager will use the Rest API to talk with ChatBotManager, so in this field you have to provide the endpoint where the *bot* is hosted.
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial5-section6-step1-2.png)
 
 Now you need a method to invoke the chatbot, the main menu has a *Chat Bot button* you will use for this.
 
-In the hierarchy locate **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** and locate in the inspector the *ButtonConfigHelper* script. There you will find the **OnClick()** event callback. Drag and drop the **ChatBotManager** and from the dropdown select *ChatBotManager.StartConversation*.
+In the Hierarchy locate **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** and locate in the Inspector the *ButtonConfigHelper* script. There you will find the **OnClick()** event callback. Drag and drop the **ChatBotManager** and from the dropdown select *ChatBotManager.StartConversation*.
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial5-section6-step1-3.png)
 
 This way you can now invoke the chat bot but you must prevent the button from being pressed again while a conversation is running.
 
-Select from the hierarchy the **ChatBotManager** object and you will find on the *Chat Bot Manager* that it has two event callbacks. For both events click on the **+** icon and drop the **ButtonChatBot** object on each. For *On Conversation Started* select from the dropdown menu *Interactable.IsEnabled*, do the same for *On Conversation Finished* but enabled the checkbox.
+Select from the Hierarchy the **ChatBotManager** object and you will find on the *Chat Bot Manager* that it has two event callbacks. For both events click on the **+** icon and drop the **ButtonChatBot** object on each. For *On Conversation Started* select from the dropdown menu *Interactable.IsEnabled*, do the same for *On Conversation Finished* but enabled the checkbox.
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial5-section6-step1-4.png)
 
@@ -176,7 +176,7 @@ It should tell you the quantity and end the conversation.
 
 #### Asking about a tracked object
 
-Now run the application again and this time ask **find me a specific object**, the bot will be asking you the name to which you should respond with the name of a *Tracked Object* you know exists in the database. The bot will tell you details like description and if it has a spatial anchor assigned.
+Now run the demo application again and this time ask **find me a specific object**, the bot will be asking you the name to which you should respond with the name of a *Tracked Object* you know exists in the database. The bot will tell you details like description and if it has a spatial anchor assigned.
 
 Try out what happens if you ask for an **Tracked Objects** that does not exist.
 

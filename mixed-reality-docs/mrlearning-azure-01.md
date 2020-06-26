@@ -149,7 +149,7 @@ Now select in the Hierarchy window the **SceneController** object and drag it in
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-3.png)
 
-From the Hierarchy window, select the **SceneController** object, there in the inspector you will find the **SceneController** (script) component.
+From the Hierarchy window, select the **SceneController** object, there in the Inspector you will find the **SceneController** (script) component.
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-4.png)
 

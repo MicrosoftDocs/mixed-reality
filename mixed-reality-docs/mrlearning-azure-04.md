@@ -38,17 +38,17 @@ In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServi
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial4-section1-step1-1.png)
 
-From the **Manager** folder, move the prefab **Anchor Manager** into the scene hierarchy.
+From the **Manager** folder, move the prefab **Anchor Manager** into the scene Hierarchy.
 
-Select **Anchor Manager** GameObject in the hierarchy, and in the inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
+Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial4-section1-step2-1.png)
 
-Now find the **Scene Controller** object in your scene hierarchy and select it. You will see the **Scene Controller** inspector.
+Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial4-section1-step3-1.png)
 
-You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the hierarchy in the scene into that field and save the scene.
+You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
 
 ## Build and Deploy the app to your HoloLens 2
 
