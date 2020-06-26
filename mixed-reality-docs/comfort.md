@@ -13,6 +13,8 @@ keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
 
 # Comfort
 
+## Overview
+
 During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative positions of objects. Some cues rely only on a single eye (monocular cues), including [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)), [familiar size](https://en.wikipedia.org/wiki/Size#Perception_of_size), occlusion, [depth-of-field blur](https://en.wikipedia.org/wiki/Depth_of_field), and [accommodation](https://en.wikipedia.org/wiki/Accommodation_(eye)). Other cues rely on both eyes (binocular cues), and include [vergence](https://en.wikipedia.org/wiki/Vergence) (essentially the relative rotations of the eyes required to look at an object) and [binocular disparity](https://en.wikipedia.org/wiki/Stereopsis) (the pattern of differences between the projections of the scene on the back of the two eyes). To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world. From a physical perspective, it is also important to design content that does not require fatiguing motions of the neck or arms. In this article, we’ll go over key considerations to keep in mind to achieve these goals.
 
 ## Vergence-accommodation conflict
@@ -153,9 +155,6 @@ To avoid eye and neck strain content should be designed so that excessive eye an
 * **Avoid** neck rotations more than 45 degrees off-center (horizontal movement)
 
 The optimal (resting) gaze angle is considered between 10-20 degrees below horizontal, as the head tends to tilt downward slightly, especially during activities.
-
-![Allowable field of view (FOV) as determined by neck range of motion](images/optimal-field-of-view-2.png)<br>
-*Allowable field of view (FOV) as determined by neck range of motion*
 
 ## Arm positions
 
