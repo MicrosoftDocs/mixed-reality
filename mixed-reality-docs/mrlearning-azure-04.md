@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 4. Integrating Azure Spatial Anchors
 
-In this tutorial, you will learn how to use **Azure Spatial Anchors**. We will store the location of a **Tracked Object** as an Azure Spatial Anchor. Then we will query and present the user with a guiding arrow pointing to the location.
+In this tutorial, you will learn how to use **Azure Spatial Anchors**. You will store the location of a **Tracked Object** as an Azure Spatial Anchor. Then you will query and present the user with a guiding arrow pointing to the location.
 
 ## Objectives
 
@@ -27,7 +27,7 @@ Learn more about [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatia
 
 ## Preparing Azure Spatial Anchors
 
-Before we can start, you have to create a spatial anchor resource in your Azure portal.
+Before you can start, you have to create a spatial anchor resource in your Azure portal.
 Learn how to make a [spatial anchor resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
 ## Preparing the scene
@@ -86,4 +86,4 @@ In this tutorial, you learned how Azure Spatial Anchors could save and retrieve 
 
 In the final tutorial, you will learn how to use the **Azure Bot Service** to add natural language as a new interaction method for our application.
 
-[Next Lesson: 5. Integrating Azure Bot Service with LUIS](mrlearning-azure-05.md)
+[Next tutorial: 5. Integrating Azure Bot Service with LUIS](mrlearning-azure-05.md)
