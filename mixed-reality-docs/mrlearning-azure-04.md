@@ -50,11 +50,20 @@ Now find the **Scene Controller** object in your scene hierarchy and select it. 
 
 You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the hierarchy in the scene into that field and save the scene.
 
-## Create a simulated anchor to store a location in-editor simulation
+## Build and Deploy the app to your HoloLens 2
 
-In this section, you will learn how to save the object location.
+Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 
-After configuring the scene and making necessary changes to the **Anchor Manager**, Run the application and click on **Set Object** in the main menu of the experience.
+> [!TIP]
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions.
+
+## Run the app on your HoloLens 2 and follow the in-app instructions
+
+### Create an anchor to store a location
+
+In this section you will see how to save the object location.
+
+Run the application and click on **Set Object** in the main menu of the experience.
 
 Give the **name** of the object you want to save and click on **Set Object** to continue. To add more information about the object, select the **image**, and describe the object.
 
@@ -66,7 +75,7 @@ Once you confirm the location by clicking on **Yes**, the location and the Ancho
 
 Now the object location is saved successfully.
 
-## The query for a simulated anchor to find a location in-editor simulation
+### Query for finding an anchor location
 
 Once after you successfully saved the anchor location, now you can find the anchor location by selecting **Search Object** in the main menu.
 
