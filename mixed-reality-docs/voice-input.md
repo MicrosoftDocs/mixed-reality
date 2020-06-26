@@ -101,6 +101,8 @@ If you're already in the Cortana app you can also click the **?** icon on the si
 * "Take a picture"
 * "Start recording"
 * "Stop recording"
+* "Show hand ray"
+* "Hide hand ray"
 * "Increase the brightness"
 * "Decrease the brightness"
 * "Increase the volume"
