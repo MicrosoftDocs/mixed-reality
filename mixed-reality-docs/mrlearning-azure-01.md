@@ -34,26 +34,31 @@ In this tutorial series we will build a **HoloLens 2** application that can dete
 The user can create a **Tracked Object** to either or both associate a set of images via computer vision and a spatial location. All data must be persisted into the cloud. Furthermore some aspects of the application will be optionally be controlled by natural language assisted through a bot.
 
 ### Features
+
 * Basic CRUD for data and images
-* Image training and detection 
+* Image training and detection
 * Storing a spatial location and guidance to it
-* Bot Assistant to use some features via natural language 
+* Bot Assistant to use some features via natural language
 
 ## Azure Cloud services
 
 To solve the required features for the demo application, we will use these **Azure Cloud** services:
 
 ### Azure Storage
-We will use [Azure Storage](https://azure.microsoft.com/en-us/services/storage/) for our persistence solution. It allows us to store data on a table and upload large binaries like images.
+
+We will use [Azure Storage](https://azure.microsoft.com/services/storage/) for our persistence solution. It allows us to store data on a table and upload large binaries like images.
 
 ### Azure Custom Vision
-With [Azure Custom Vision](https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/) (part of the [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/)) we can associate to our *Tracked Object* a set images, train a machine learning model on the set and detect the *Tracked Object*.
+
+With [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/)) we can associate to our *Tracked Object* a set images, train a machine learning model on the set and detect the *Tracked Object*.
 
 ### Azure Spatial Anchors
-To store a *Tracked Object* location and give a guided directions to find it, we use [Azure Spatial Anchors](https://azure.microsoft.com/en-us/services/spatial-anchors/).
+
+To store a *Tracked Object* location and give a guided directions to find it, we use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
 
 ### Azure Bot Service
-The application is mainly driven by traditional UI, so we use the [Azure Bot Service](https://azure.microsoft.com/en-us/services/bot-service/) to add it some personality and acts as a new interaction method.
+
+The application is mainly driven by traditional UI, so we use the [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) to add it some personality and acts as a new interaction method.
 
 ## Prerequisites
 
@@ -66,13 +71,13 @@ The application is mainly driven by traditional UI, so we use the [Azure Bot Ser
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added
 * If you intend to deploy to Android
-    * A <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">developer enabled</a> and <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">ARCore capable</a>
+  * A <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">developer enabled</a> and <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">ARCore capable</a>
  Android device with USB connection to your Windows or macOS computer
-    * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Android Build Support module added
+  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Android Build Support module added
 * If you intend to deploy to iOS
-    * A macOS computer with the the latest version of <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> and <a href="https://cocoapods.org" target="_blank">CocoaPods</a> installed
-    * An <a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">ARKit compatible</a> iOS device with USB connection to your macOS computer
-    * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the iOS Build Support module added
+  * A macOS computer with the the latest version of <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> and <a href="https://cocoapods.org" target="_blank">CocoaPods</a> installed
+  * An <a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">ARKit compatible</a> iOS device with USB connection to your macOS computer
+  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the iOS Build Support module added
 
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
@@ -83,7 +88,7 @@ In this section, you will create a new Unity project and get it ready for MRTK d
 
 For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
-1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
+1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *Azure Cloud Tutorials*
 2. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
 3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
@@ -105,7 +110,7 @@ Download and **import** the following Unity custom packages **in the order they 
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
- 
+
 After you have imported the tutorial assets your Project window should look similar to this:
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial1-section4-step1-1.png)
@@ -154,7 +159,7 @@ Now select in the Hierarchy window the **SceneController** object and drag it in
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-3.png)
 
-From the Inspector window, select the **SceneController** object, there in the inspector you will find the **SceneController (script)** component. 
+From the Inspector window, select the **SceneController** object, there in the inspector you will find the **SceneController (script)** component.
 
 ![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-4.png)
 

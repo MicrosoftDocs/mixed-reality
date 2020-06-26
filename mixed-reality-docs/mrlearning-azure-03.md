@@ -23,16 +23,16 @@ In this tutorial, you will learn how to use **Azure Custom Vision**. We will upl
 
 **Azure Custom Vision** is part of the **Cognitive Services** family and is used to train image classifiers. The image classifier is a AI service that uses the trained model to apply matching tags. This classification feature will be used by our application to detect *Tracked Objects*.
 
-Learn more about [Azure Custom Vision](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home).
+Learn more about [Azure Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
 
 ## Preparing Azure Custom Vision
 
 Before we can start, you have to create a project, the fastest way is doing this from the web portal.
 
-Follow this [quickstart tutorial](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) to setup your account and project until section **Upload and tag images**.
+Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) to setup your account and project until section **Upload and tag images**.
 
 > [!WARNING]
-> To train a model you need to have at least 2 tags and 5 images per tag. To use this application you should at least create one tag with 5 images, so that the training process later won't fail. 
+> To train a model you need to have at least 2 tags and 5 images per tag. To use this application you should at least create one tag with 5 images, so that the training process later won't fail.
 
 ## Preparing the scene
 
@@ -62,7 +62,7 @@ Run the scene and click on **Set Object**, type in the name for one of the **Tra
 A new window will open where you have to take six photos to train the model for image recognition. Click on the **Camera** button and perform an AirTap when you look on the object you like to track, so this six times.
 
 > [!TIP]
-> To improve the model training try to take each image from different angles and lighting conditions. 
+> To improve the model training try to take each image from different angles and lighting conditions.
 
 Once you have enough images click on the **Train** button to start the model training process on the cloud. Activating the training will upload all images and then start the training, this can take up to a minute or more. A message inside the menu indicates the current progress and once it indicates the completion you can stop the application
 

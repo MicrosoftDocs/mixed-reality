@@ -23,7 +23,7 @@ In this tutorial, you will learn how to save entity data to Azure Table Storage 
 
 **Azure Storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and but is easily approachable by any developer. Under its umbrella all services can be consumed with an **Azure Storage Account**. For our use case we will use Table Storage and Blob Storage.
 
-Learn more about [Azure Storage services](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-overview).
+Learn more about [Azure Storage services](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
 
 ### Azure Table storage
 
@@ -31,7 +31,7 @@ This services allows us to store data in a NoSQL fashion, in this project we wil
 
 In context of our application we need two Tables, one to store information about the project with information about the state of trained models ([more about that in the next tutorial](mrlearning-azure-03.md)) and a second table to store information about *Tracked Objects*.
 
-Learn more about [Azure Table storage](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview).
+Learn more about [Azure Table storage](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
 
 ### Azure Blob storage
 
@@ -39,21 +39,22 @@ In this application we will add the ability to take a photo of the *Tracked Obje
 
 For of our application we need one Blob Container to store our images.
 
-Learn more about [Azure Blob storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction).
+Learn more about [Azure Blob storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction).
 
 ## Preparing Azure Storage
 
-To consume the Azure Storage services we will need an Azure Storage account. To create a storage account, see [Create a storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see Azure storage account overview.
+To consume the Azure Storage services we will need an Azure Storage account. To create a storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see Azure storage account overview.
 
 Once you have a storage account, you can retrieve the connection string from the **Azure Portal** which will be needed in the next section of this lesson.
 
 ### Optional Azure Storage Explorer
 
-While you can see and verify all data changes from the UI inside the application, we recommend to install [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/). This tool allows you to visually see the data in the Azure Storage and is of great help when debugging and learning.
+While you can see and verify all data changes from the UI inside the application, we recommend to install [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure Storage and is of great help when debugging and learning.
 
 > [!TIP]
 > For testing from inside the Unity editor you can use a local emulator:
-> * on Windows 10 you can use [Azure Storage Emulator](https://docs.microsoft.com/de-de/azure/storage/common/storage-use-emulator)
+
+> * on Windows 10 you can use [Azure Storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
 > * on MacOS/Linux you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) for Docker
 
 ## Preparing the scene
@@ -81,7 +82,7 @@ Now this time click on **Search Object** and type in the *search bar* the name y
 Feel free to close the **Object Card** and create new *Tracked Objects* and edit their data.
 
 > [!TIP]
-> If you have installed the [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/) then look into the *objects* table and you will see there the created *Tracked Object*.
+> If you have installed the [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) then look into the *objects* table and you will see there the created *Tracked Object*.
 
 ## Uploading and Download image from Azure Blob storage
 
