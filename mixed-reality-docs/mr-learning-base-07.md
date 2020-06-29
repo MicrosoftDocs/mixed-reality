@@ -96,18 +96,14 @@ In the Hierarchy window, expand the RoverAssembly > RoverModel_PlacementHints_XR
 * For the **Lights_Part**, assign the **Lights_PlacementHint** object to the **Location To Place** field
 * For the **UHFAntenna_Part**, assign the **UHFAntenna_PlacementHint** object to the **Location To Place** field
 * For the **Spectrometer_Part**, assign the **Spectrometer_PlacementHint** object to the **Location To Place** field
-* For the **RoverAssembly**, leave the **Location To Place** field **unassigned**
+* For the **RoverAssembly**, assign the object itself, i.e. the same **RoverAssembly** object, to the **Location To Place** field
 
 In the Hierarchy window, select the RoverExplorer > Buttons > **Reset** button object, then in the Inspector window, configure the Interactable **OnClick ()** event as follows:
 
-* Assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **GameObject** > **BroadcastMessage (string)** to set this function as the action to be executed when the event is triggered
-* Set the argument to **ResetPlacement** by copy/paste it into the field
+* Assign the **RoverAssembly** object to the **None (Object)** field
+* From the **No Function** dropdown, select **PartAssemblyController** > **ResetPlacement ()** to set this function as the action to be executed when the event is triggered
 
 ![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
-
-> [!NOTE]
-> When the event is triggered, the message 'ResetPlacement' will be sent to all of the RoverExplorer's child objects, which will trigger the ResetPlacement function for all the child objects that has the Part Assembly Controller (Script) component, in this case, the RoverAssembly and all the rover parts.
 
 If you now enter Game mode, you can use near or far interaction to place the rover parts on to the Rover. Once the part is close to the corresponding placement hint, it will snap into place and become part of the Rover. To reset the placements, you can press the Reset button:
 
