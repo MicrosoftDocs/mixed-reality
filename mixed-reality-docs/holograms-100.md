@@ -88,7 +88,7 @@ Finally, let us save our progress so far. To save the scene changes, select **Fi
 
 >[!VIDEO https://www.youtube.com/embed/ItRoiXccC0g]
 
-In this chapter, we will set some Unity project settings that help us target the Windows Holographic SDK for development. We will also set some quality settings for our application. Finally, we will ensure our build targets are set to Windows Store.
+In this chapter, we will set some Unity project settings that help us target the Windows Holographic SDK for development. We will also set some quality settings for our application. Finally, we will ensure our build targets are set to Universal Windows Platform.
 
 ### Unity performance and quality settings
 
@@ -99,7 +99,6 @@ In this chapter, we will set some Unity project settings that help us target the
 Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
 
 1. Select **Edit > Project Settings > Quality**
-2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green.
 2. Select the **dropdown** under the **Universal Windows Platform** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Universal Windows Platform column and **Very Low** row is green.
 
 **For mixed reality applications targeted to occluded displays**, you can leave the quality settings to its default values.
@@ -113,13 +112,13 @@ Since maintaining high framerate on HoloLens is so important, we want the qualit
 We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK.
 
 1. Go to **Edit > Project Settings > Player**.
-2. In the **Inspector Panel** for Player Settings, select the **Windows Store** icon.
+2. In the **Inspector Panel** for Player Settings, select the **Universal Windows Platform** icon.
 3. Expand the **XR Settings** group.
 4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality SDKs** list.
 5. Verify that **Windows Mixed Reality** appears in the list. If not, select the **+** button at the bottom of the list and choose **Windows Mixed Reality**.
 
 >[!NOTE]
->If you do not see the **Windows Store** icon, double check to make sure you selected the Windows Store .NET Scripting Backend prior to installation. If not, you may need to reinstall Unity with the correct Windows installation.
+>If you do not see the **Universal Windows Platform** icon, double check to make sure you selected Universal Windows Platform Build Support during installation. If not, you may need to reinstall Unity with the correct Windows installation.
 
 Awesome job on getting all the project settings applied. Next, let us add a hologram!
 
