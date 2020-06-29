@@ -80,7 +80,7 @@ If using the [Mixed Reality Toolkit Standard shader](https://github.com/microsof
 
 ### Building for IL2CPP
 
-Unity has deprecated support for the .NET scripting backend and thus recommends that developers utilize **IL2CPP** for their UWP visual studio builds. Although this brings various advantages, building your visual studio solution from Unity for **Il2CPP** can be significantly slower than the old .NET method. Thus, it is highly recommended to follow best practices for building **IL2CPP** to save on development iteration time.
+Unity has deprecated support for the .NET scripting backend and thus recommends that developers utilize **IL2CPP** for their UWP visual studio builds. Although this brings various advantages, building your visual studio solution from Unity for **IL2CPP** can be significantly slower than the old .NET method. Thus, it is highly recommended to follow best practices for building **IL2CPP** to save on development iteration time.
 
 1) Leverage incremental building by building your project to the same directory every time, re-using the pre-built files there
 2) Disable anti-malware software scans for your project & build folders
