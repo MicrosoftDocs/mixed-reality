@@ -41,8 +41,12 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 ## Connecting over Wi-Fi
 
 1. [Connect your HoloLens to Wi-Fi](connecting-to-wi-fi-on-hololens.md).
-2. Look up your device's IP address.
-   * Find the IP address on the device under **Settings > Network & Internet > Wi-Fi > Advanced Options**.
+2. Look up your device's IP address by either:
+   * Going to **Settings > Network & Internet > Wi-Fi > Advanced Options**.
+   * Going to **Settings > Network & Internet** and selecting **Hardware properties**.
+
+![HoloLens 2 settings](images/windows-device-portal-img-16.png)
+
 3. From a web browser on your PC, go to https://<YOUR_HOLOLENS_IP_ADDRESS>
    * The browser will display the following message: "There's a problem with this website's security certificate". This happens because the certificate which is issued to the Device Portal is a test certificate. You can ignore this certificate error for now and proceed.
 
