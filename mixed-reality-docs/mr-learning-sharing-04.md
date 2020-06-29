@@ -44,13 +44,11 @@ With the **NetworkRoom** child object still selected, in the Hierarchy window, e
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 
-<!-- TODO: Create new gif animation
 ## Trying the experience with shared object movement
 
 If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the object move in Unity when you move the object in HoloLens:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
--->
 
 ## Congratulations
 

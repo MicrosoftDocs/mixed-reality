@@ -100,7 +100,6 @@ In the Hierarchy window, expand the **NetworkLobby** object and select the **Net
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
 
-<!-- TODO: Create new gif animation
 ## Trying the experience with multiple users
 
 If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
@@ -112,7 +111,6 @@ If you now build and deploy the Unity project to your HoloLens, and then, back i
 
 > [!CAUTION]
 > The application needs to connect to Photon, so make sure your computer/device is connected to the internet.
--->
 
 ## Congratulations
 
