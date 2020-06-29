@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 3. Connecting multiple users
 
-In this tutorial, you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
+In this tutorial, you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial, you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
 
 ## Objectives
 
