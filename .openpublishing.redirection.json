@@ -181,11 +181,6 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch5.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrlearning-sharing(photon)-ch4",
-			"redirect_document_id": true
-		},
-		{
 			"source_path": "mixed-reality-docs/mrlearning-base.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-base-01",
 			"redirect_document_id": true
@@ -257,6 +252,11 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch4.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-sharing-05",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch5.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-sharing-05",
 			"redirect_document_id": true
 		}
