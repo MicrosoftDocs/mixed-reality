@@ -25,7 +25,7 @@ In this tutorial, you will learn how to create a simple user interface using MRT
 
 ## Creating a static panel of buttons
 
-In the Hierarchy window, right-click on the **RoverExplorer** object and select **3D Object** > **Create Empty** to add an empty object as a child of the RoverExplorer, name the object **Buttons**, and configure the **Transform** component as follows:
+In the Hierarchy window, right-click on the **RoverExplorer** object and select **Create Empty** to add an empty object as a child of the RoverExplorer, name the object **Buttons**, and configure the **Transform** component as follows:
 
 * **Position**: X = -0.6, Y = 0.036, Z = -0.5
 * **Rotation**: X = 90, Y = 0, Z = 0

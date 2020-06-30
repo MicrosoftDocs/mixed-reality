@@ -23,14 +23,14 @@ In this tutorial, you will explore ways to dynamically place holograms using the
 
 ## Location of Solvers in the MRTK
 
- The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Assets** > **MRTK** > **Features** > **Utilities** > **Solvers**:
+ The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers**:
 
 ![mr-learning-base](images/mr-learning-base/base-05-section1-step1-1.png)
 
 In this tutorial, we will review the implementation of the Directional Indicator Solver and the Tap To Place Solver. To learn more about the full range of Solvers available in the MRTK, you can refer to the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 > [!NOTE]
-> The Directional Indicator Solver is not located in the Solvers folders referenced above, but in the Assets > MRTK > Experimental > Features > Utilities folders, because it is an experimental feature.
+> The Directional Indicator Solver is not located in the Solvers folders referenced above, but in the Assets > MRTK > SDK > Experimental > Features > Utilities folders, because it is an experimental feature.
 
 ## Using the Directional Indicator Solver to direct the user to objects
 
@@ -112,21 +112,25 @@ In the Hierarchy window, right-click on an empty spot and select **3D Object** >
 
 ![mr-learning-base](images/mr-learning-base/base-05-section3-step1-4.png)
 
-Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse down until the gaze hit's the RoverAssembly object:
+With the temporary Cube still selected in the Hierarchy window, in the Inspector window, use the **Layers** dropdown to change the Cube's Layer setting to only include the **Spatial Awareness** layer:
 
 ![mr-learning-base](images/mr-learning-base/base-05-section3-step1-5.png)
 
-Click the left mouse button to start the tap-to-place process:
+Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse down until the gaze hit's the RoverAssembly object:
 
 ![mr-learning-base](images/mr-learning-base/base-05-section3-step1-6.png)
 
-Press-and-hold the right mouse button while moving your mouse to the left or right to rotate your gaze direction, when you are happy with the placement, click the left mouse button:
+Click the left mouse button to start the tap-to-place process:
 
 ![mr-learning-base](images/mr-learning-base/base-05-section3-step1-7.png)
 
-Once you are done testing the feature in the Game mode, right-click on the Cube object and select **Delete** to remove it from the scene:
+Press-and-hold the right mouse button while moving your mouse to the left or right to rotate your gaze direction, when you are happy with the placement, click the left mouse button:
 
 ![mr-learning-base](images/mr-learning-base/base-05-section3-step1-8.png)
+
+Once you are done testing the feature in the Game mode, right-click on the Cube object and select **Delete** to remove it from the scene:
+
+![mr-learning-base](images/mr-learning-base/base-05-section3-step1-9.png)
 
 ## Congratulations
 

@@ -60,7 +60,7 @@ In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Featu
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-1.png)
 
-In the Hierarchy window, right-click on an empty spot and select **3D Object** > **Create Empty** to add an empty object to your scene, name the object **SpeechInputHandler_Global**, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
+In the Hierarchy window, right-click on an empty spot and select **Create Empty** to add an empty object to your scene, name the object **SpeechInputHandler_Global**, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
 
 * **Uncheck** the **Is Focus Required** checkbox, so the user is not required to look at the object with the SpeechInputHandler component to trigger the speech command
 * From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized

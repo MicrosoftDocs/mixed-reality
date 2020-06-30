@@ -35,7 +35,7 @@ After you have imported the tutorial assets your Project window should look simi
 
 ## Creating the parent object
 
-In the Hierarchy window, right-click on an empty spot and select **3D Object** > **Create Empty** to add an empty object to your scene:
+In the Hierarchy window, right-click on an empty spot and select **Create Empty** to add an empty object to your scene:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section2-step1-1.png)
 
@@ -87,7 +87,7 @@ From the Project window, click-and-drag the **RoverAssembly** prefab on to the *
 
 ## Organizing objects in a collection
 
-In the Hierarchy window, right-click on the **RoverExplorer** object and select **3D Object** > **Create Empty** to add an empty object as a child of the RoverExplorer, name the object **RoverParts**, and configure the **Transform** component as follows:
+In the Hierarchy window, right-click on the **RoverExplorer** object and select **Create Empty** to add an empty object as a child of the RoverExplorer, name the object **RoverParts**, and configure the **Transform** component as follows:
 
 * **Position**: X = 0, Y = 0.06, Z = 0
 * **Rotation**: X = 0, Y = 90, Z = 0
