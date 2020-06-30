@@ -20,6 +20,8 @@ In this tutorial, you will learn how to create a simple user interface using MRT
 * Learn how to organize buttons in a collection
 * Learn how to use MRTK's menu prefabs
 * Learn how to interact with holograms using UI menus and buttons
+* Learn how to add text elements
+* Learn how to dynamically spawn tooltips on objects
 
 ## Creating a static panel of buttons
 
@@ -35,22 +37,24 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStar
 
 ![mr-learning-base](images/mr-learning-base/base-06-section1-step1-2.png)
 
-In the Hierarchy window, select the **Buttons** object, then in the Inspector window, use the **Add Component** button to add the **GridObjectCollection** component, and change the following values:
+In the Hierarchy window, select the **Buttons** object, then in the Inspector window, use the **Add Component** button to add the **GridObjectCollection** component and configure it as follows:
 
 * **Sort Type**: Child Order
 * **Layout**: Horizontal
 * **Cell Width**: 0.2
 * **Anchor**: Middle Left
 
-Then click the **Update Collection** button to update the position of the Buttons child objects:
+Then click the **Update Collection** button to update the position of the Buttons object's child objects:
 
 ![mr-learning-base](images/mr-learning-base/base-06-section1-step1-3.png)
 
-In the Hierarchy window, name the buttons **Hints**, **Explode**, and **Reset**, then for each button select the **SeeItSayItLabel** > **TextMeshPro** child object, and in the Inspector window change the **TextMeshPro - Text** component text to match the button names:
+In the Hierarchy window, name the buttons **Hints**, **Explode**, and **Reset**.
+
+For each button, select the **SeeItSayItLabel** > **TextMeshPro** child object, then in the Inspector window, change the respective **TextMeshPro - Text** component text to match the button names:
 
 ![mr-learning-base](images/mr-learning-base/base-06-section1-step1-4.png)
 
-Once done, collapse the Buttons child objects.
+Once done, collapse the Buttons object's child objects.
 
 In the Hierarchy window, select the **Hints** button object, then in the Inspector window, configure the Interactable **OnClick ()** event as follows:
 
@@ -76,14 +80,14 @@ and the **Explode** button to toggle the exploded view on and off:
 
 ## Creating a dynamic menu that follows the user
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu3x1** prefab into the Hierarchy window, set it's Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
+In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
 
 * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
 * Check the checkbox next to the **RadialView** Solver component so it is enabled by default
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-1.png)
 
-In the Hierarchy window, rename the object to **Menu**, expand it's **ButtonCollection** child object to reveal the four buttons:
+In the Hierarchy window, rename the object to **Menu**, then expand its **ButtonCollection** child object to reveal the four buttons:
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-2.png)
 
@@ -97,7 +101,7 @@ Rename the first button to **Indicator**, then in the Inspector window, configur
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-3.png)
 
-In the Hierarchy window, select the **Indicator** object, then in the Inspector window, uncheck the checkbox next to it's name to make it inactive by default:
+In the Hierarchy window, select the **Indicator** object, then in the Inspector window, uncheck the checkbox next to its name to make it inactive by default:
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
 
@@ -116,8 +120,8 @@ Rename the second button to **TapToPlace**, then in the Inspector window, config
 
 In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
 
-* Uncheck the checkbox next to it's name to make it inactive by default
-* Click the small **+**icon to add another event
+* Uncheck the checkbox next to its name to make it inactive by default
+* Click the small **+** icon to add another event
 * Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
 * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
@@ -125,7 +129,7 @@ In the Hierarchy window, select the **RoverAssembly** object, then in the Inspec
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-6.png)
 
 > [!NOTE]
-> Now when the application starts, the Tap to Place functionality is disabled by default and can be enabled by pressing the Tap to Place button.
+> Now when the application starts, the Tap to Place functionality is disabled by default and can be enabled by pressing the Tap to Place button. Additionally, when the the tap to place is completed, it will disable itself.
 
 ## Adding text to the scene
 
@@ -157,6 +161,8 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 
 * Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear
 * Assign the **Simple Line ToolTip** prefab from the Project window to the **Tool Tip Prefab** field
+* Change the ToolTip Override Settings > **Settings Mode** to **Override**
+* Change the ToolTip Override Settings > **Manual Pivot Location Position Y** to **1.5**
 
 ![mr-learning-base](images/mr-learning-base/base-06-section4-step1-2.png)
 
@@ -170,7 +176,7 @@ In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part
 
 * For the **Generator_Part**, change the **Tool Tip Text** to **Generator**
 * For the **Lights_Part**, change the **Tool Tip Text** to **Lights**
-* For the **RUHFAntenna_Part**, change the **Tool Tip Text** to **RUHF Antenna** field
+* For the **UHFAntenna_Part**, change the **Tool Tip Text** to **UHF Antenna** field
 * For the **Spectrometer_Part**, change the **Tool Tip Text** to **Spectrometer**
 
 Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the parts and the tooltip for that part will be displayed:
@@ -179,6 +185,6 @@ Press the Play button to enter Game mode, then press-and-hold the right mouse bu
 
 ## Congratulations
 
-In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
+In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
 
 [Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)

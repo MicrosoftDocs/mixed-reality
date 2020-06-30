@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 ## Overview
 
-In this tutorial, you will explore ways to dynamically place holograms using the MRTK's available placement tools, known as Solvers, to solve complex spatial placement scenarios. In the MRTK, Solvers are a system of scripts and behaviors that are used to allow objects to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions quickly, making your application more intuitive.
+In this tutorial, you will explore ways to dynamically place holograms using the MRTK's available placement tools, known as Solvers, to solve complex spatial placement scenarios. In the MRTK, Solvers are a system of scripts and behaviors that are used to allow objects to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions, making your application more intuitive.
 
 ## Objectives
 
@@ -41,12 +41,12 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStar
 > [!TIP]
 > If you find that the camera or any other icons in your scene are hiding the objects or are distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position, as shown in the image above. To learn more about the Gizmos menu and how you can use it to optimize your scene view, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">Gizmos menu</a> documentation.
 
-Rename the newly created object **Indicator**, then in the Inspector window, use the **Add Component** button to add the **DirectionalIndicator** component, which will automatically also add the **SolverHandler** component, and the **Directional Indicator Controller (Script)** component:
+Rename the newly added Chevron object **Indicator**, then in the Inspector window, use the **Add Component** button to add the **DirectionalIndicator** and the **Directional Indicator Controller (Script)** component:
 
 ![mr-learning-base](images/mr-learning-base/base-05-section2-step1-2.png)
 
 > [!NOTE]
-> When you add a Solver, in this case the DirectionalIndicator component, the SolverHandler component is automatically added because it is required by the Solvers.
+> When you add a Solver, in this case, the DirectionalIndicator component, the SolverHandler component is automatically added because it is required by Solvers.
 
 > [!NOTE]
 > The Directional Indicator Controller (Script) is not part of the MRTK but was included with the tutorial assets.
@@ -61,7 +61,7 @@ Configure the DirectionalIndicator and SolverHandler components as follows:
 
 Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse to the left or right to rotate your gaze direction, and notice the following:
 
-* When you look away from the RoverExplorer object, the Chevron object will appear and point towards the RoverExplorer object
+* When you look away from the RoverExplorer object, the Indicator object will appear and point towards the RoverExplorer object
 
 ![mr-learning-base](images/mr-learning-base/base-05-section2-step1-4.png)
 
@@ -72,7 +72,7 @@ Press the Play button to enter Game mode, then press-and-hold the right mouse bu
 > To learn how to use the in-editor input simulation, you can refer to the [Using the In-Editor Hand Input Simulation to test a scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 > [!TIP]
-> If your computer has a microphone, you can easily toggle the active state of the Diagnostics Window that appear in the Game window by using the speech command "toggle diagnostics". Alternatively, you can disable it in the MRTK Configuration Profile > Diagnostics > Enable Diagnostics System. However, it is generally recommended to keep the Diagnostics System during development.
+> If your computer has a microphone, you can easily toggle the active state of the Diagnostics panel that appears in the Game window by using the speech command "toggle diagnostics". Alternatively, you can disable it in the MRTK Configuration Profile > Diagnostics > Enable Diagnostics System. However, it is generally recommended to keep the Diagnostics System active during development.
 
 ## Using the Tap to Place Solver to reposition objects
 
@@ -90,17 +90,16 @@ In the Hierarchy window, select the RoverExplorer > **RoverAssembly** object, th
 >To learn more about Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Layers</a> documentation.
 
 > [!TIP]
-> If you want to see the Spatial Awareness Mesh when testing the Tap To Place functionality on your HoloLens, you can temporary set the Spatial Mesh Observer's Display Option to Visible. For a reminder on how to change the Display Option, you can refer to the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions.
+> If you want to see the Spatial Awareness Mesh when testing the Tap To Place functionality on your HoloLens, you can temporarily set the Spatial Mesh Observer's Display Option to Visible. For a reminder on how to change the Display Option, you can refer to the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions.
 
-
-With the RoverAssembly object still selected, in the Hierarchy window, locate the **On Placing Started ()** and click the **+** icon to add a new event:
+With the RoverAssembly object still selected in the Hierarchy window, in the Inspector window, locate the **On Placing Started ()** event and click the **+** icon to add a new event:
 
 ![mr-learning-base](images/mr-learning-base/base-05-section3-step1-2.png)
 
 Configure the event as follows:
 
 * Assign the **RoverAssembly** object as a listener for the On Placing Started () event by dragging it from the Hierarchy window into the **None (Object)** field
-* From the **No Function** dropdown, select **TapToPlace** > **float SurfaceNormalOffset** update set the SurfaceNormalOffset property value when the event is triggered
+* From the **No Function** dropdown, select **TapToPlace** > **float SurfaceNormalOffset** to update the SurfaceNormalOffset property value when the event is triggered
 * Verify that the argument is set to **0**
 
 ![mr-learning-base](images/mr-learning-base/base-05-section3-step1-3.png)

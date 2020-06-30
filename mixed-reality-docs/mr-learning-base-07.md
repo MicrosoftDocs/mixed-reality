@@ -11,15 +11,12 @@ ms.localizationpriority: high
 
 # 7. Interacting with 3D objects
 
-In this tutorial, you will learn how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You will also learn how to add Bounding Boxes around 3D objects to make it easier to control the object manipulation.
+In this tutorial, you will learn how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You will also learn how to add bounding boxes around 3D objects to make it easier to control the object manipulation.
 
 ## Objectives
 
-* Create a panel of 3D objects which will be used for the other learning objectives
-* Implement bounding boxes
-* Configure 3D objects for basic manipulation such as move, rotate, and scale
-* Explore near and far interaction
-* Learn about additional hand tracking gestures, such as grab and touch
+* Learn how to configure 3D objects so they can be interacted with
+* Learn how to add bounding boxes to 3D objects
 
 ## Manipulating 3D objects
 
@@ -28,10 +25,10 @@ In this section, you will add the ability to manipulate all the Rover parts you 
 The main steps you will take to achieve this are:
 
 1. Add the Object Manipulator (Script) component to all the part objects
-2. Add the NearInteractionGrabbable component to the prefab objects
+2. Add the NearInteractionGrabbable component to all the part objects
 3. Configure the Object Manipulator (Script) component
 
-> [!IMPORTANT]
+> [!NOTE]
 > To be able to **manipulate an object**, the object must have the following components:
 >
 > * **Collider** component, for example, a Box Collider
@@ -50,7 +47,6 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 * **Object Manipulator (Script)** component
 * **NearInteractionGrabbable** component
 * **Part Assembly Controller (Script)** component
-* **Audio Source** component
 
 ![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
 
@@ -70,7 +66,7 @@ With all the rover part objects and the RoverAssembly object still selected, in 
 ![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
 
 > [!NOTE]
-> At this point, you have enabled object manipulation for all the rover part objects.
+> At this point, you have enabled object manipulation for all the rover part objects and the RoverAssembly object.
 
 In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** folder to locate the audio clips:
 
@@ -127,10 +123,10 @@ Then **uncheck** the checkbox next to both components to make them **disabled** 
 ![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> The Bounding Box visualizations is created at runtime and therefore not visible before you enter Game mode.
+> The Bounding Box visualization is created at runtime and therefore not visible before you enter Game mode.
 
 > [!NOTE]
-> The Bounding Box (Script) component will be automatically add the NearInteractionGrabbable component at runtime, therefore, we do not need to add this component to grab the enclosed objects with tracked hands.  
+> The BoundingBox component will automatically add the NearInteractionGrabbable component at runtime, therefore, we do not need to add this component to grab the enclosed objects with tracked hands.  
 
 In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal the four buttons and rename the third button to **BoundingBox_Enable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -168,6 +164,6 @@ To learn more about the Bounding Box component and its associated properties, yo
 
 ## Congratulations
 
-In this tutorial, you learned how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You will learned how to add Bounding Boxes around 3D objects to make it easier to control the object manipulation.
+In this tutorial, you learned how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You also learned how to add bounding boxes around 3D objects to make it easier to control the object manipulation.
 
 [Next Tutorial: 8. Using eye tracking](mr-learning-base-08.md)

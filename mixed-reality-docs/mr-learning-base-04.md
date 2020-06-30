@@ -55,16 +55,16 @@ With the RoverExplorer object still selected, in the Inspector window, configure
 ![mr-learning-base](images/mr-learning-base/base-04-section2-step1-3.png)
 
 > [!NOTE]
-> The camera represents the users head and is positioned at origin, X = 0, Y = 0, Z = 0. In general, 1 position unit in Unity is roughly equivalent to 1 meter in the physical world. However, there are exceptions to this, for example, when objects are children of scaled objects. In the scenario above, the RoverExplorer is positioned approximately 2 meters in front of the users and 0.6 meters below the users head.
+> The camera represents the users head and is positioned at origin, X = 0, Y = 0, Z = 0. In general, 1 unit in Unity is roughly 1 meter in the physical world. However, there are exceptions to this, for example, when objects are children of scaled objects. In the scenario above, the RoverExplorer is positioned approximately 2 meters in front of the users and 0.6 meters below the user's head.
 
 ## Adding the tutorial prefabs
-
-> [!TIP]
-> A <a href="https://docs.unity3d.com/Manual/Prefabs.html" target="_blank">prefab</a> is a pre-configured GameObject stored as a Unity Asset and can be reused throughout your project.
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section3-step1-1.png)
+
+> [!TIP]
+> A <a href="https://docs.unity3d.com/Manual/Prefabs.html" target="_blank">prefab</a> is a pre-configured GameObject stored as a Unity Asset and can be reused throughout your project.
 
 From the Project window, click-and-drag the **Table** prefab on to the **RoverExplorer** object to make it a child of the RoverExplorer object, then in the Inspector window, configure the **Transform** component as follows:
 
@@ -106,7 +106,7 @@ With the newly duplicated Parts child objects still selected, click-and-drag the
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-3.png)
 
-To make it easier to work with your scene, set the **scene visibility** for the **RoverExplorer** object to off by clicking the **eye** icon to the left of the object in the Hierarchy window. This hide the object in the Scene window without changing it's in-game visibility:
+To make it easier to work with your scene, set the **scene visibility** for the **RoverExplorer** object to off by clicking the **eye** icon to the left of the object in the Hierarchy window. This hides the object in the Scene window without changing its in-game visibility:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-4.png)
 
@@ -117,11 +117,11 @@ In the Hierarchy window, clean up the names of the RoverParts child objects by r
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-5.png)
 
-In the Hierarchy window, select the **RoverParts** object, then in the Inspector window, click the **Add Component** button, and search for and select **GridObjectCollection** to add a GridObjectCollection component to the RoverParts object:
+In the Hierarchy window, select the **RoverParts** object, then in the Inspector window, click the **Add Component** button, and search for and select **GridObjectCollection** to add the GridObjectCollection component to the RoverParts object:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-6.png)
 
-Change the **GridObjectCollection** component values as follows:
+Configure the **GridObjectCollection** component values as follows:
 
 * **Sort Type**: Alphabetic
 * **Layout**: Horizontal
@@ -136,6 +136,6 @@ Then click the **Update Collection** button to update the position of the RoverP
 
 ## Congratulations
 
-In this tutorial, you learned how to position objects in the scene relative to the user and how to use MRTK's Grid Object Collection feature to organize object in a collection.
+In this tutorial, you learned how to position objects in the scene relative to the user and how to use MRTK's Grid Object Collection feature to organize objects in a collection.
 
 [Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)

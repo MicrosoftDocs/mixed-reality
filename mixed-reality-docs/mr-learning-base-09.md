@@ -13,13 +13,12 @@ ms.localizationpriority: high
 
 ## Overview
 
-In this tutorial, you will explore a few advanced input options for HoloLens 2, including the use of voice commands, panning gesture, and eye tracking.
+In this tutorial, you will learn how to create speech commands and how to control them globally. You will also learn how to control local speech commands that require the user to look at the object that controls the speech command.
 
 ## Objectives
 
-* Trigger events using voice commands and keywords
-* Use tracked hands to pan textures and 3D objects with tracked hands
-* Leverage HoloLens 2 eye tracking capabilities to select objects
+* Learn how to create speech commands
+* Learn how to control speech commands globally and locally
 
 ## Ensuring the Microphone capability is enabled
 
@@ -63,7 +62,7 @@ In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Featu
 
 In the Hierarchy window, right-click on an empty spot and select **3D Object** > **Create Empty** to add an empty object to your scene, name the object **SpeechInputHandler_Global**, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
 
-* **Uncheck** the **Is Focus Required** checkbox, so the user is not require to look at the object with the SpeechInputHandler component to trigger the speech command
+* **Uncheck** the **Is Focus Required** checkbox, so the user is not required to look at the object with the SpeechInputHandler component to trigger the speech command
 * From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-2.png)
@@ -112,7 +111,7 @@ Expand **Element 2** and configure it as follows:
 
 In the Hierarchy window, select the RoverExplorer > **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
 
-* Verify that the **Is Focus Required** checkbox is **check**, so the user is require to look at the object with the SpeechInputHandler component, i.e. the RoverAssembly, to trigger the speech command
+* Verify that the **Is Focus Required** checkbox is **check**, so the user is required to look at the object with the SpeechInputHandler component, i.e. the RoverAssembly, to trigger the speech command
 * From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-7.png)
@@ -133,7 +132,4 @@ In this tutorial, you learned how to create speech commands and how to control t
 
 This also concludes the [Getting started tutorials](mr-learning-base-01.md) series. Through these tutorials, you have successfully built a complete mixed reality experience from scratch using the Mixed Reality Toolkit.
 
-In the next two tutorial series, [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) and [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will first learn how to integrate Azure Spatial Anchors into your project to anchor the Rover Explorer experience you created in the real world. Then, you will learn how add multi-user capabilities to your project to share user and object movements in real-time.
-
-to set the BroadcastMessage () function as the action to be executed when the event is triggered
-to update the TextMeshPro.fontSize property value when the event is triggered
+In the next two tutorial series, [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) and [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will first learn how to integrate Azure Spatial Anchors into your project to anchor the Rover Explorer experience you created in the real world. Then, you will learn how to add multi-user capabilities to your project to share user and object movements in real-time.

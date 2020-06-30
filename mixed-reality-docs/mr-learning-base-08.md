@@ -39,7 +39,7 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 * Clone the **DefaultHoloLens2InputSystemProfile** and give it a suitable name, for example, _GettingStarted_HoloLens2InputSystemProfile_
 * Expand the **Pointers** section
 * Clone the **DefaultMixedRealityPointerProfile** and give it a suitable name, for example, _GettingStarted_MixedRealityPointerProfile_
-* Located the **Gaze Settings** section and check the **Is Eye Tracking Enabled** checkbox
+* Locate the **Gaze Settings** section and check the **Is Eye Tracking Enabled** checkbox
 
 ![mr-learning-base](images/mr-learning-base/base-08-section2-step1-1.png)
 
@@ -52,7 +52,7 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 
 * Expand the **Input Data Providers** > **Input Simulation Service** section
 * Clone the **DefaultMixedRealityInputSimulationProfile** and give it a suitable name, for example, _GettingStarted_MixedRealityInputSimulationProfile_
-* Located the **Eye Simulation** section and check the **Simulate Eye Position** checkbox
+* Locate the **Eye Simulation** section and check the **Simulate Eye Position** checkbox
 
 ![mr-learning-base](images/mr-learning-base/base-08-section3-step1-1.png)
 
@@ -69,13 +69,13 @@ With the three TextMeshPro objects still selected, in the Inspector window, use 
 
 ![mr-learning-base](images/mr-learning-base/base-08-section4-step1-2.png)
 
-In the Hierarchy window, select the Hints > SeeItSayItLabel > **TextMeshPro** object, then configure the **EyeTrackingTarget** component as follows:
+In the Hierarchy window, select the **Hints** > SeeItSayItLabel > **TextMeshPro** object, then configure the **EyeTrackingTarget** component as follows:
 
 * In the **On Look At Start ()** event section
   * Click the small **+** icon to add another event
   * Assign the object itself, i.e. the same **TextMeshPro** object, to the **None (Object)** field
   * From the **No Function** dropdown, select **TextMeshPro** > **float fontSize** to update this property value when the event is triggered
-  * Set the argument to **0.06** to increase the font current size of 0.04 by 50%
+  * Set the argument to **0.06** to increase the current font size of 0.04 by 50%
 * In the **On Look Away ()** event section
   * Click the small **+** icon to add another event
   * Assign the object itself, i.e. the same **TextMeshPro** object, to the **None (Object)** field
@@ -84,9 +84,9 @@ In the Hierarchy window, select the Hints > SeeItSayItLabel > **TextMeshPro** ob
 
 ![mr-learning-base](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Repeat** this step for the Explode > SeeItSayItLabel > **TextMeshPro** object and the Reset > SeeItSayItLabel > **TextMeshPro** object.
+**Repeat** this step for the **Explode** > SeeItSayItLabel > **TextMeshPro** object and the **Reset** > SeeItSayItLabel > **TextMeshPro** object.
 
-If you now enter Game mode, you can use near or far interaction to move, rotate, and scale the Bounding Box, and use the Enable and Disable buttons to enable and disable the Bounding Box functionality:
+If you now enter Game mode and then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the labels, you will see the font size increase by 50% and reset back to its original size when looking away:
 
 ![mr-learning-base](images/mr-learning-base/base-08-section4-step1-4.png)
 

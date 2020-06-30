@@ -17,9 +17,9 @@ In this tutorial, you will learn how to create and configure your Unity project 
 
 ## Objectives
 
-* Configure Unity for HoloLens development
-* Import assets and set up the scene
-* Visualization of the spatial mapping mesh, hand meshes, and the framerate counter
+* Learn how to configure Unity for HoloLens 2 development
+* Learn how to build and deploy your application to HoloLens 2
+* Experience the visualization of the spatial mapping mesh, hand meshes, and the framerate counter
 
 ## Creating the Unity project
 
@@ -30,6 +30,9 @@ Launch **Unity Hub**, select the **Projects** tab, and click the **down arrow** 
 In the dropdown, select the Unity **version** specified in the [Prerequisites](mr-learning-base-01.md#prerequisites):
 
 ![mr-learning-base](images/mr-learning-base/base-02-section1-step1-2.png)
+
+> [!TIP]
+> If you do not have the a particular Unity version installed and it is not available directly in Unity Hub, you can you can initiate the installation from Unity's <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Download Archive</a>.
 
 In the Create a new project window:
 
@@ -67,7 +70,7 @@ When Unity has finished switching the platform, click the red **x** icon to clos
 
 ## Importing the TextMeshPro Essential Resources
 
-In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources**:
+In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources** to open the the Import Unity Package window:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section3-step1-1.png)
 
@@ -118,13 +121,13 @@ In the Project Settings window, select **Player** > **XR Settings**, then click 
 
 ![mr-learning-base](images/mr-learning-base/base-02-section5-step2-2.png)
 
-After Unity has finished importing the SDK from the previous step, the MRTK Project Configurator window should appear again. If it does not, use the Unity menu to open it.
+After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Project Configurator window should appear again. If it does not, use the Unity menu to open it.
 
 In the MRTK Project Configurator window, use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section5-step2-3.png)
 
-In the Project Settings window, select **Player** > **XR Settings**, then click the **Depth Format** icon and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
+In the Project Settings window, select **Player** > **XR Settings**, then use the **Depth Format** dropdown to select **16-bit depth**:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section5-step2-4.png)
 
@@ -136,7 +139,7 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 > The 'Package name' is the unique identifier for the application. Consequently, it is recommended to change this identifier before deploying the application to avoid accidentally overwriting previously installed applications.
 
 > [!TIP]
-> The 'Product Name' is the name that will displayed in the HoloLens Start menu. To make the application easier to locate during development, you may add an underscore in front of the name so the application is displayed at the top of the HoloLens Start menu.
+> The 'Product Name' is the name that will be displayed in the HoloLens Start menu. To make the application easier to locate during development, you may add an underscore in front of the name so the application is displayed at the top of the HoloLens Start menu.
 
 ## Creating and configuring the scene
 
@@ -148,7 +151,7 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configu
 
 ![mr-learning-base](images/mr-learning-base/base-02-section6-step1-2.png)
 
-With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, verify that the **MixedRealityToolkit** configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
+With the **MixedRealityToolkit** object still selected in the Hierarchy window, in the Inspector window, verify that the **MixedRealityToolkit** configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section6-step1-3.png)
 
@@ -198,12 +201,12 @@ Configure Visual Studio for HoloLens 2 by selecting the **Master** or **Release*
 > If you are deploying to HoloLens (1st generation), select the x86 architecture.
 
 > [!NOTE]
-> For HoloLens 2 you will typically build for the ARM architecture. However, there is a  <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">known issue</a> in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended work around is to build for ARM64. If that is not an option, please disable Graphics Jobs in Edit > Project Settings > Player > Other Settings.
+> For HoloLens 2 you will typically build for the ARM architecture. However, there is a  <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">known issue</a> in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that is not an option, please disable Graphics Jobs in Edit > Project Settings > Player > Other Settings.
 
 > [!NOTE]
-> If you don't see Device as a target option you may need to change the default start up project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select Set as StartUp Project.
+> If you don't see Device as a target option you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select Set as StartUp Project.
 
-Connect your HoloLens to your computer, then build and deploy to your device by selecting **Debug** > **Start Without Debugging**:
+Connect your HoloLens to your computer, then select **Debug** > **Start Without Debugging** to build and deploy to your device:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section8-step1-3.png)
 
@@ -213,15 +216,15 @@ Connect your HoloLens to your computer, then build and deploy to your device by 
 > [!TIP]
 > You can also deploy to the [HoloLens Emulator](using-the-hololens-emulator.md) or create an [App Package](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 
-Selecting Start without Debugging causes the application to automatically start on your device upon a successful build, but without the debugger attached and information appearing in Visual Studio.
+Using Start Without Debugging causes the application to automatically start on your device, but without the debugger attached and information appearing in Visual Studio.
 
 To deploy to your device without having the application start automatically, you can select Build > Deploy Solution.
 
 > [!NOTE]
-> In the app, you may notice the Diagnostics profiler, you can toggle it's visibility using the speech command **Toggle Diagnostics**. However, it is generally recommended to keep the profiler visible at all times during development to understand when changes to the app may have impacted performance, for example, HoloLens 2 application should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).
+> In the app, you may notice the Diagnostics profiler, you can toggle its visibility using the speech command **Toggle Diagnostics**. However, it is generally recommended to keep the profiler visible at all times during development to understand when changes to the app may have impacted performance, for example, HoloLens 2 application should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).
 
 ## Congratulations
 
-You have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mapping mesh covering all the surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on application performance. These are just a few of the foundational pieces included out of the box with the Mixed Reality Toolkit. In the tutorials to come, you will start adding more content and interactivity to your scene so that you can fully explore the capabilities of HoloLens 2 and the Mixed Reality Toolkit.
+You have now deployed your first HoloLens 2 application. As you walk around, you should see a spatial mapping mesh covering all the surfaces that have been perceived by the HoloLens 2. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on application performance. These are just a few of the foundational pieces included out of the box with the Mixed Reality Toolkit. In the upcoming tutorials, you will add content and interactivity to your scene so you can fully explore the capabilities of HoloLens 2 and the Mixed Reality Toolkit.
 
 [Next Tutorial: 3. Configuring the Mixed Reality Toolkit](mr-learning-base-03.md)
