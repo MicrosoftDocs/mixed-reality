@@ -17,7 +17,7 @@ Below are the best practices we have found for hand menus. You can also find an 
 
 <br>
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAg]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAg]
 
 ---
 
@@ -51,15 +51,15 @@ As described in the best practices section, it is recommended to limit the numbe
 
 **Large menu that shows a usability issue**
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AOPx]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AOPx]
 
 **World-locked menu on hand drop**
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AGZi]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AGZi]
 
 **Manual grab & pull to world-lock the menu**
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAf]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAf]
 
 
 ## How to prevent false activation
@@ -69,7 +69,7 @@ By requiring a flat open hand, you can prevent false activation.
 **Require Gaze**
 If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience false-positives in your app, consider adding an additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Asn4]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Asn4]
 
 ---
 
