@@ -37,7 +37,7 @@ Menus should billboard towards the opposite shoulder and middle of the head: Thi
 
 **Consider supporting one-handed or hands-free operation**
 
-Do not assume both of the user's hands are always available. Consider a wide range of contexts when one or both hands are not available, and make sure your design accounts for those situations. To support a one-handed hand menu, you can try transitioning the menu placement from hand-locked to world-locked when the hand flips (goes palm down). For hands-free scenarios, consider using a voice command to invoke the hand menu buttons.
+Do not assume both of the user's hands are always available. Consider a wide range of contexts when one or both hands are not available, and make sure your design accounts for those situations. To support a one-handed hand menu, you can try transitioning the menu placement from hand-locked to world-locked when the hand flips (goes palm down). For hands-free scenarios, consider using a voice command to invoke the hand menu.
 
 **Avoid adding buttons near the wrist (system home button)**
 
