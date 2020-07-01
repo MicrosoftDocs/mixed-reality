@@ -65,11 +65,14 @@ When the menu is world-locked, make sure to provide a way to move the menu, and 
 
 
 ## How to prevent false activation
+
+If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands both intentionally (for communication and object manipulation) and unintentionally. To reduce false activations, add an additional step besides the palm-up event to invoke the hand menu (such as fully opened fingers, or the user intentionally gazing at their hand).
+
 **Require Flat Palm**
-By requiring a flat open hand, you can prevent false activation. 
+By requiring a flat open hand, you can prevent false activation that might occur as the user manipulates objects or gestures while communicating within an environment. 
 
 **Require Gaze**
-If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands both intentionally (for communication and object manipulation) and unintentionally. To reduce false activations, add an additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
+By requiring the user to gaze at their hand (either with eye gaze or head gaze), it prevents false activations due to the user having to intentionally direct their attention to the hand as a secondary activation step (with a tunable distance threshold used to allow for user comfort).  
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Asn4]
 
