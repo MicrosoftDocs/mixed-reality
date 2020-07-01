@@ -9,39 +9,32 @@ keywords: mixed reality, unity, tutorial, hololens, android, ios
 ms.localizationpriority: high
 ---
 
-# 5. Building Azure Spatial Anchors for mobile devices
+# 5. Azure Spatial Anchors for Android and iOS
 
 In this tutorial, you will learn how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
 
 ## Objectives
 
-* Learn how to build your project to Android device using Unity's AR Foundation and ARCore XR Plugin.
-* Learn how to build your project to iOS device using Unity's AR Foundation and ARKit XR Plugin.
+* Learn how to build your project to your Android device using Unity's AR Foundation and ARCore XR Plugin
+* Learn how to build your project to your iOS device using Unity's AR Foundation and ARKit XR Plugin
 
-> [!NOTE]
-> To complete this tutorial, make sure you have completed Azure Spatial Anchors Tutorials -> [Getting started with Azure Spatial Anchors](mr-learning-asa-02.md).
+## Installing inbuilt Unity packages
 
-## Adding inbuilt Unity packages
+In this section, you will upgrade and install the following inbuilt packages:
 
-In this section, you will install Unity's inbuilt AR Foundation, Legacy Input Helpers, ARCore XR Plugin, and ARKit XR Plugin packages required to support Android and iOS devices.
+* AR Foundation 3.1.3
+* Legacy Input Helpers 2.1.4
+* ARCore XR Plugin 3.1.3 for Android support
+* ARKit XR plugin 3.1.3 for iOS support
 
-Make sure you install correct version of these Unity packages as listed below:
+> [!CAUTION]
+> Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
 
-In the Unity menu, select **Window** > **Package Manager**:
+In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** > **3.1.3** and click the **Update to 3.1.3** button to update the package:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-1.png)
 
-In the Package Manager window, select the **AR Foundation** dropdown. Here you will see many versions and need to select **Version 3.1.3** then update the package by clicking **Update to 3.1.3**:
-
-![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-2.png)
-
-Follow the same process to import the following as needed:
-
-* **Legacy Input Helpers 2.1.4** Required
-
-* **ARCore XR Plugin 3.1.3** To support Android devices
-
-* **ARKit XR plugin 3.1.3** To support iOS devices
+Follow the same process to import the remaining packages as needed.
 
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
@@ -50,75 +43,107 @@ Follow the same process to import the following as needed:
 
 In this section, you will learn how to configure MRTK for deploying to a mobile device.
 
-In the Hierarchy window select the **MixedRealityToolkit** object, then in the Inspector clone the camera profile and give it an suitable name, for example **ARCameraConfigurationProfile** and click on the **Clone** button:
+In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the **Camera** tab, clone the camera profile, and give it a suitable name, for example, **AzureSpatialAnchors_ARCameraProfile**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
-with the **MixedRealityToolkit** object still selected, In the Inspector window, under the Camera tab, expand the **Camera Setting Providers**, then click on **+ Add Camera Setting Provider** button. Now expand **New data provider 1** that was created:
+> [!TIP]
+> For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md) instructions.
+
+With the **Camera** tab still selected in the Inspector window, expand the **Camera Setting Providers** and click the **+ Add Camera Setting Provider** button, then expand the newly added **New data provider 1**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
-Select Type > **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**.
+Using the **Type** dropdown, change the type to **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
-With the **MixedRealityToolkit** object still selected, in the Inspector window, attach supporting scripts by clicking on the **AddComponent** button and typing the following:
+With the **MixedRealityToolkit** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the following components:
 
-* **AR Anchor Manager**
-* **DisableDiagnosticsSystem**
-
-Adding **AR Reference Point Manager** script will automatically add **AR session origin** along with it in the the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
+* AR Anchor Manager (Script)
+* DisableDiagnosticsSystem (Script)
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
-## Build your application to an Android device
+> [!NOTE]
+> When you add the AR Reference Point Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Reference Point Manager (Script) component.
 
-In this section, you will learn how to configure your project to build and deploy to an Android device.
+## Building your application to your Android device
 
-In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform).
+In this section, you will learn how to configure your project to build and deploy it to an Android device.
 
-After switching to Android platform, click on **Add Open Scenes** and make sure your current scene is the only selected scene in the **Scenes In Build** list.
+In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window and switch platform to Android:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-1.png)
 
-Close the **Build settings** window. In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and click on **Apply** to configure the Unity project for the Android platform.
+> [!TIP]
+> For a reminder on how to switch build platform, you can refer to the [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform) instructions.
+
+Close the Build Settings window.
+
+In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** to open the **MRTK Project Configurator** window, ensure all options are selected, then click the **Apply** button to apply the settings:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
-In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window. In the Project Settings window select the **Player** tab, expand the **Other Settings** section, select **Vulkan** and remove it by clicking the **-** symbol.
+In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, select **Vulkan** and remove it by clicking the **-** symbol:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
-Close the Player Settings window and open the Build Settings window again. Then, using a USB cable, connect your Android device to your computer and select your device in the **Build and Run on** dropdown, then click **Build And Run**. You will be asked to save an `.apk` file that you can give a suitable name, for example, *ASATutorials*
+Close the Player Settings window and open the Build Settings window again.
 
->[!NOTE]
-> You might need to press the refresh button next to the dropdown in order to see your device.
+In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list, then, using a USB cable, connect your Android device to your computer and select it from the **Run Device** dropdown:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-4.png)
 
+>[!NOTE]
+> If your device does not appear in the Run Device dropdown, you might need to press the Refresh button next to the dropdown.
+
+In the Build Settings window, click the **Build And Run** button to open the Build Android window.
+
+Choose a suitable location to store your build, for example, _D:\MixedRealityLearning\Builds_, then give the apk a suitable name, for example, _MRTKTutorials-AzureSpatialAnchors_, and click the **Save** button to start the build process:
+
+![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-5.png)
+
 > [!NOTE]
-If you get any error in the Unity Console window related to Android SDK, NDK, and/or JDK modules, you need to open Unity Hub and install the associated SDK, NDK, and JDK modules for the Android Build Support module.
+If you get any error in the Unity Console window related to Android SDK, NDK, and/or JDK modules, you need to open Unity Hub and install the associated Android Build Support modules.
 
 When the build process is complete, your applications should automatically load on your Android device.
 
-## Build your application to an iOS Device
+## Building your application to your iOS device
 
-In this section, you will learn how to configure your project to build to an iOS device.
+In this section, you will learn how to configure your project to build and deploy it to your iOS device.
 
-In the Build Settings window, switch the build platform to Android. If you need a reminder on how to do this you can refer back to [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform).
-
-After switching to Android platform, click on **Add Open Scenes** and make sure your current scene is the only selected scene in the **Scenes In Build** list.
+In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window and switch platform to iOS:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-1.png)
 
-Close the **Build Settings** window. In the Unity menu select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and click on **Apply** to configure the Unity project for the iOS platform.
+> [!TIP]
+> For a reminder on how to switch build platform, you can refer to the [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform) instructions.
+
+Close the Build Settings window.
+
+In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** to open the **MRTK Project Configurator** window, ensure all options are selected, then click the **Apply** button to apply the settings:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-2.png)
 
-To build the iOS XCode project, go to Build settings and click on **Build**.
+In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, uncheck the **Strip Engine Code** checkbox to disable it:
 
-Follow [this guide](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) to learn how to deploy this project to your iOS device.
+![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-3.png)
+
+Close the Player Settings window and open the Build Settings window again.
+
+In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list:
+
+![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-4.png)
+
+In the Build Settings window, click the **Build** button to open the Build iOS window.
+
+Choose a suitable location to store your Xcode project, for example, _D:\MixedRealityLearning\Builds_, create a new folder and give it a suitable name, for example, _MRTKTutorials-AzureSpatialAnchors_, and then click the **Select Folder** button to start the build process:
+
+![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-5.png)
+
+When the build process is complete, follow the [Export the Xcode project](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn how to deploy your Xcode project to your iOS device.
 
 ## Congratulations
 
-In this tutorial you learned how to build your project for Android and iOS devices. You also learned how to use AR Foundation, ARCore XR Plugin, and ARKit XR Plugin in to make your project work for Android and iOS devices.
+In this tutorial, you learned how to build your project to Android and iOS devices using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.

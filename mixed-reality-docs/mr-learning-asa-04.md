@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 4. Displaying feedback from Azure Spatial Anchors
 
-In this tutorial, you will learn how to provide users with feedback about anchors discovery, events, and status when using Azure Spatial Anchors (ASA).
+In this tutorial, you will learn how to provide users with feedback about anchor discovery, events, and status when using Azure Spatial Anchors (ASA).
 
 ## Objectives
 
@@ -20,34 +20,32 @@ In this tutorial, you will learn how to provide users with feedback about anchor
 
 ## Setting up ASA feedback panel
 
-In the Hierarchy window, right-click on the **Instructions** > **TextContent** object and select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro text object as a child of the Instructions > TextContent object and give it a suitable name, for example, **Feedback**:
+In the Hierarchy window, right-click on the **Instructions** > **TextContent** object and select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro text object as a child of the Instructions > TextContent object:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > To make it easier to work with your scene, set the  <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> for the ParentAnchor object to off by clicking the eye icon to the left of the object. This hides the object in the Scene window without changing their in-game visibility.
 
-With the **Feedback** object still selected, in the Inspector window change its position and size so it is placed neatly underneath the instruction text, for example:
+Rename the newly created Text (TMP) object **Feedback**, then, in the Inspector window, change its position and size so it is placed neatly underneath the instruction text, for example:
 
-* Change the Rect Transform **Pos Y** to -0.24
-* Change the Rect Transform **Width** to 0.555
-* Change the Rect Transform **Height** to 0.1
+* Change the Rect Transform component's **Pos Y** to -0.24
+* Change the Rect Transform component's **Width** to 0.555
+* Change the Rect Transform component's **Height** to 0.1
 
 Then choose font properties so the text fits nicely within the text area, for example:
 
-* Change the Text Mesh Pro (Script) **Font Style** to Bold
-* Change the Text Mesh Pro (Script) **Font Size** to 0.17
-* Change the Text Mesh Pro (Script) **Alignment** to Center and Middle
+* Change the TextMeshPro - Text component's **Font Style** to Bold
+* Change the TextMeshPro - Text component's **Font Size** to 0.17
+* Change the TextMeshPro - Text component's **Alignment** to Center and Middle
 
 ![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
-With the **Feedback** object still selected, in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component to the Feedback object:
+With the **Feedback** object still selected, in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component and configure it as follows:
+
+* Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)** component's **Feedback Text** field
 
 ![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
-
-Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)** component's **Feedback Text** field:
-
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-4.png)
 
 ## Congratulations
 
