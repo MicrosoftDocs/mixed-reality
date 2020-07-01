@@ -57,8 +57,10 @@ The following APIs are currently **not** supported when using Holographic Remoti
 * [SpatialLocation.AbsoluteLinearAcceleration](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearacceleration)
 * [SpatialLocation.AbsoluteLinearVelocity](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearvelocity)
 * [SpatialStageFrameOfReference.Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)
-  - Always returns ```nullptr```.
+  - Supported starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
+  - On previous versions always returns ```nullptr```.
 * [SpatialStageFrameOfReference.RequestNewStageAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)
+  - Supported starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 * [SpatialAnchor.RemovedByUser](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.removedbyuser)
 * [SpatialAnchorExporter.GetDefault](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
 )
@@ -81,6 +83,7 @@ The following APIs are currently **not** supported when using Holographic Remoti
 * [SpatialInteractionSource.TryCreateHandMeshObserver](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserver#Windows_UI_Input_Spatial_SpatialInteractionSource_TryCreateHandMeshObserver)
 * [SpatialInteractionSource.TryCreateHandMeshObserverAsync](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync)
 * [SpatialInteractionSource.Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)
+  - Supported starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 
 [Windows.Perception.Spatial.Preview](https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview)
 
