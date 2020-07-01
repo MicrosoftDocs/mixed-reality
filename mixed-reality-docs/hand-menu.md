@@ -160,7 +160,7 @@ We have done user research with different menus layouts and locations, the follo
 ---
 
 ## Hand menu in MRTK (Mixed Reality Toolkit) for Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. The HandConstraintPalmUp solver script allows you easily attach any objects to the hands with various configurable options.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. The HandConstraintPalmUp solver script allows you to attach any objects to the hands with various configurable options. MRTK's hand menu examples include useful options such as flat palm and gaze requirement for preventing false activation.
 
 * [Hand Menu Documentations](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
 * [Hand Menu Example Scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
