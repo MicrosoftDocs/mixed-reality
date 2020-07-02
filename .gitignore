@@ -9,3 +9,4 @@ _repo.*/
 .DS_Store
 
 .openpublishing.buildcore.ps1
+*.icloud

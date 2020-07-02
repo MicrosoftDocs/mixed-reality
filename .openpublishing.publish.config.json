@@ -15,6 +15,20 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
+    },
+    {
+      "docset_name": "mrtk-docs",
+      "build_source_folder": "mrtk-docs",
+      "build_output_subfolder": "mrtk-docs",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
@@ -54,4 +68,4 @@
   "docs_build_engine": {
     "name": "docfx_v3"
   }
- }
+}

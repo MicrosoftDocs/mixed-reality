@@ -1,0 +1,54 @@
+---
+title: Surfaces
+description: Surfaces is an open-source sample app from Microsoft's Mixed Reality Design Labs. It explores how we can create a tactile sensation with visual, audio, and fully articulated hand-tracking.
+author: cre8ivepark
+ms.author: dongpark
+ms.date: 06/18/2020
+ms.topic: article
+keywords: Windows Mixed Reality, HoloLens, mrtk, design, sample app, controls
+---
+
+
+
+# Surfaces
+
+>[!NOTE]
+>This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
+
+[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)  is an open-source sample app from Microsoft's Mixed Reality Design Labs. It explores how we can create a tactile sensation with visual, audio, and fully articulated hand-tracking.
+
+![Surfaces](images/MRDL_Surfaces_1.jpg)
+
+## About the app
+Surfaces demonstrates how to use Mixed Reality Toolkit(MRTK)'s input system and building blocks to create an app experience for HoloLens 2. In this project, you can find the examples of:
+- Use MRTK's [Input System](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html), specifically hand / joint tracking.
+- Use MRTK's [Standard Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) for performant graphics.
+
+You can use this project's components to create your own mixed reality app experiences.
+
+## MR Dev Days 2020 - Learnings from the MR Surfaces App
+[Learnings from the MR Surfaces App](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
+
+Lars Simkins, Senior designer behind the MRDL Surfaces app talks about the app's design story and technical highlights.
+
+## Project repository on GitHub
+[https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
+
+## Download app from Microsoft Store in HoloLens 2
+https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
+
+(The app is only available on HoloLens 2)
+
+## About the author
+
+<table style="border-collapse:collapse" padding-left="0px">
+<tr>
+<td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>UX Designer @Microsoft</td>
+</tr>
+</table>
+
+## See also
+
+* [Interactable object](interactable-object.md)
+* [Object collection](object-collection.md)

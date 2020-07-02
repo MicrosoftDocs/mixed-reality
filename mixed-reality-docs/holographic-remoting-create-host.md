@@ -290,7 +290,7 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
 
 ## Depth Reprojection
 
-Starting with version [2.1.0](holographic-remoting-version-history.md#v2.1.0), Holographic Remoting supports [Depth Reprojection](hologram-stability.md#reprojection). This requires, in addition to the color buffer, to also stream the depth buffer from the Remote application to the HoloLens 2. By default the depth buffer is streamed at half the resolution of the color buffer. This can be changed as follows:
+Starting with version [2.1.0](holographic-remoting-version-history.md#v2.1.0), Holographic Remoting supports [Depth Reprojection](hologram-stability.md#reprojection). This requires, in addition to the color buffer, to also stream the depth buffer from the Remote application to the HoloLens 2. By default depth buffer streaming is enabled and configured to use half the resolution of the color buffer. This can be changed as follows:
 
 ```cpp
 // class implementation
@@ -305,7 +305,14 @@ m_remoteContext.ConfigureDepthVideoStream(DepthBufferStreamResolution::Half_Reso
 
 ```
 
-Note, ```ConfigureDepthVideoStream``` must be called before establishing a connection to the HoloLens 2. The best place is right after you have created the remote context. Possible values are full, half, and quater resolution. Default is half resolution. Keep in mind that using a full resolution depth buffer also affects bandwidth requirements and needs to be accounted for in the maximum bandwidth value you provide to ```CreateRemoteContext```.
+Note, if default values should not be used ```ConfigureDepthVideoStream``` must be called before establishing a connection to the HoloLens 2. The best place is right after you have created the remote context. Possible values for DepthBufferStreamResolution are:
+
+* Full_Resolution
+* Half_Resolution
+* Quarter_Resolution
+* Disabled (added with version [2.1.3](holographic-remoting-version-history.md#v2.1.3) and if used no additional depth video stream is created)
+
+Keep in mind that using a full resolution depth buffer also affects bandwidth requirements and needs to be accounted for in the maximum bandwidth value you provide to ```CreateRemoteContext```.
 
 Beside configuring the resolution you also have to commit a depth buffer via [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
 
