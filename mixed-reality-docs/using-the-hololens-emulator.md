@@ -3,7 +3,7 @@ title: Using the HoloLens Emulator
 description: Using the HoloLens Emulator to test mixed reality apps on your PC without a physical HoloLens.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 4/13/2020
+ms.date: 6/8/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
@@ -22,7 +22,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 Download the HoloLens Emulator.
 
 Versions: 
-* [HoloLens 2 Emulator (April 2020 Update)](https://go.microsoft.com/fwlink/?linkid=2126826).
+* [HoloLens 2 Emulator (Windows Holographic, version 2004 June 2020 Update)](https://go.microsoft.com/fwlink/?linkid=2132415).
 * [HoloLens Emulator (1st Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find release notes and older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
@@ -72,6 +72,8 @@ The cursor on HoloLens (1st gen) follows head movement and rotation. In the Holo
 * **Bloom/System gesture** - Press the Windows key or F2 key on your keyboard or press the B button on an Xbox controller.
 * **Hand movement for scrolling** - Simultaneously hold the Alt key and the right mouse button, and drag the mouse up or down, or in an Xbox controller, hold the right trigger and A button down and move the right stick up and down.
 * **Hand movement and orientation** (HoloLens 2 Emulator only) - Hold the Alt key and drag the mouse up or down, left or right to move the hand, or use the arrow keys and Q or E to rotate and tilt the hand. For an Xbox controller, hold the left or right bumper and use the left thumbstick to move the hand left, right, forward, and back, the right thumbstick to rotate it and up or down on the Dpad to raise or lower the hand.
+
+Have a Windows Mixed Reality immersive headset?  Starting with the HoloLens 2 Emulator (Windows Holographic, version 2004), you can use your Windows Mixed Reality immersive headset and motion controllers to control the HoloLens 2 Emulator and view it in stereo.  See [Using a Windows Mixed Reality immersive headset and motion controllers with the HoloLens 2 Emulator](#using-a-windows-mixed-reality-immersive-headset-and-motion-controllers-with-the-hololens-2-emulator)
 
 ## Anatomy of the HoloLens 2 Emulator 
 
@@ -158,6 +160,34 @@ The Updates tab allows you control whether or not the emulator checks for new ve
 
 ![HoloLens Emulator 'Updates' tab](images/emulator-updates-500px.png)
 
+### Using a Windows Mixed Reality immersive headset and motion controllers with the HoloLens 2 Emulator
+
+Starting with the HoloLens 2 Emulator (Windows Holographic, version 2004), you can use a Windows Mixed Reality headset and motion controllers to view and interact with the HoloLens 2 Emulator in stereo.  This allows you to make faster, more natural movements with your head and hands without a HoloLens 2 device.  Note that it is not a complete replacement for a HoloLens 2 device, but is intended to give an improved experience beyond interacting with the emulator using keyboard, mouse and gamepad in a 2D desktop window.  To enable this feature:
+
+1. Ensure that Windows Mixed Reality is configured on your PC and your Windows Mixed Reality immersive headset is connected.
+2. Launch the HoloLens 2 Emulator
+3. Open the Simulation panel by clicking the toolbar button or pressing F7.
+4. Scroll the panel to the bottom.
+5. Check the box labeled "Use HMD for simulation"
+6. Windows Mixed Reality will start and the emulator display will change slightly.  Without a headset, the emulator places both eyes in the center of the head and displays only one eye.  With a headset, the emulator generates true stereo output but only renders one eye to its desktop window, while both eyes are rendered to your headset.
+7. Optionally turn on one or both motion controllers.  Controller input is mapped to hand input in the emulator.  For example, to tap, pull the trigger on the motion controller.  To move around, use the thumbstick.  For a complete list of controls, see [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
+
+Having trouble seeing content in your headset?
+
+- If the display is blank in both the headset and Mixed Reality Portal, but you see content in the HoloLens 2 Emulator window on your desktop, verify that hardware graphics acceleration is enabled in the emulator.  Windows Mixed Reality immersive headset support requires hardware graphics acceleration to be enabled in the emulator.
+- If you see content in the headset but holograms are blurry or you see a double image, use the following steps to adjust the stereo view for your eyes:
+
+1. Temporarily turn off "Use HMD for simulation".
+2. Launch Registry Editor (regedit.exe)
+3. Navigate to HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulation
+4. Create a new DWORD value named "EnableEyePoseControl" and set its value to 1.
+5. Enable "Use HMD for simulation" in the emulator.
+6. When content appears in the headset, use the arrow keys to adjust eye rotation.  Hold Left Alt to adjust the left eye and Right Alt to adjust the right eye.  Use 'Q' and 'E' to adjust the roll for each eye, again holding the appropriate Alt key for the eye.  Use the '+' and '-' keys to adjust the distance between the eyes.  (Note that +/- on a number pad will not work.  Use the buttons on the main keyboard.)
+7. When the stereo view appears correct, press 'S' to save your changes.  The new configuration will be saved for future launches of the emulator.
+8. If you want to abandon your changes and revert to the previous configuration, press 'L' to load the default or previous configuration.
+9. Change the "EnableEyePoseControl" value in the registry to 0 and cycle the "Use HMD for simulation" option.
+
+Note that if you have saved a configuration and want to remove it, you can delete the value named "DisplayConfiguration" at HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulation.  If you are currently using the headset with the emulator, you will need to turn off "Use HMD for simulation" and turn it back on to see this change take effect.
 
 ## Anatomy of the HoloLens (1st gen) emulator
 
@@ -212,6 +242,11 @@ Simulated rooms are useful for testing your application in multiple environments
 You can also record your own rooms to use in the emulator using the Simulation page of the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens (1st gen).
 
 In the emulator, you will only see holograms that you render. But you will not see the simulated room behind the holograms. This is in contrast to the actual HoloLens where you see both blended together. If you want to see the simulated room in the HoloLens Emulator, you  need to update your application to render the spatial mapping mesh in the scene.
+
+## Known Issues
+
+* When uninstalling the HoloLens 2 Emulator, the hard disk image (Flash.vhdx) may be left on your hard drive in the Windows Kits\10\Emulation\HoloLens\<build number> folder.  It is safe to delete this file.
+* Hardware graphics acceleration may cause Holographic apps to crash on some systems with AMD or Intel graphics.  Disabling hardware graphics acceleration in the emulator Tools window works around this issue.
 
 ## Troubleshooting
 

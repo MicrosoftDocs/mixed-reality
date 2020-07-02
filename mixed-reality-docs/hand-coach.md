@@ -11,12 +11,9 @@ keywords: Windows Mixed Reality, design, Hand coach, immersive headset, MRTK, ha
 
 
 # Hand coach
+![Example: Hand coach](images/HandCoach/MRTK_handCoach.jpg)<br>
 
 Hand coach is 3D modeled hands that are triggered when the system does not detect the user’s hands. This is implemented as a “teaching” component that helps guide the user when the gesture has not been taught. If users have not done the specified gesture for a period, the hands will loop with a delay. The Hand coach could be used to represent pressing a button or picking up a hologram.  
-
-
-![Example: Hand coach](images/HandCoach/MRTK_handCoach.jpg)<br>
-*HandCoach Example from MRTK*
 
 ## Hand coach provided
 
