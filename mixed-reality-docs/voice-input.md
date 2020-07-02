@@ -60,7 +60,7 @@ Of course, some voice commands don't require a target at all, such as "go to sta
 **HoloLens (1st gen)**
 
 Even without specifically adding voice support to your app, your users can activate holograms simply by saying the system voice command "select". 
-This behaves the same as an [air tap](gaze-and-commit.md#composite-gestures) on HoloLens, pressing the select button on the [HoloLens clicker](hardware-accessories.md#hololens-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). 
+This behaves the same as an [air tap](gaze-and-commit.md#composite-gestures) on HoloLens, pressing the select button on the [HoloLens clicker](https://docs.microsoft.com/hololens/hololens1-clicker), or pressing the trigger on a [Windows Mixed Reality motion controller](motion-controllers.md). 
 You will hear a sound and see a tooltip with "select" appear as confirmation. "Select" is enabled by a low power keyword detection algorithm so it is always available for you to say at any time with minimal battery life impact, even with your hands at your side.
 
 <br>
@@ -101,6 +101,8 @@ If you're already in the Cortana app you can also click the **?** icon on the si
 * "Take a picture"
 * "Start recording"
 * "Stop recording"
+* "Show hand ray"
+* "Hide hand ray"
 * "Increase the brightness"
 * "Decrease the brightness"
 * "Increase the volume"
@@ -307,8 +309,7 @@ All this audio processing is hardware accelerated which means the features drain
 
 ## Languages
 
-HoloLens 2 also supports additional languages. 
-Keep in mind that speech commands will always run in the system's display language even if multiple keyboards are installed or if apps attempt to create a speech recognizer in a different language.
+HoloLens 2 [supports multiple languages](https://docs.microsoft.com/hololens/hololens2-language-support). Keep in mind that speech commands will always run in the system's display language even if multiple keyboards are installed or if apps attempt to create a speech recognizer in a different language.
 
 ## Troubleshooting
 

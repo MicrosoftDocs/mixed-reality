@@ -14,7 +14,7 @@ keywords: Eye Tracking, Mixed Reality, Input, eye-gaze
 One of our exciting new capabilities on HoloLens 2 is eye tracking.
 On our [Eye tracking on HoloLens 2](eye-tracking.md) page, we mentioned the need for each user to go through a [Calibration](https://docs.microsoft.com/hololens/hololens-calibration), provided some developer guidance and highlighted use cases for eye tracking.
 Eye-gaze input is still a pretty new type of user input and there is a lot to learn. 
-While eye-gaze input is only used very subtly in our Holographic Shell experience (the user interface that you see when you start your HoloLens 2), several apps, such as the ["MR Playground"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), showcase great examples on how eye-gaze input can add to the magic of your holographic experience.
+While eye-gaze input is only used very subtly in our Holographic Shell experience (the user interface that you see when you start your HoloLens 2), several apps, such as the ["HoloLens Playground"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), showcase great examples on how eye-gaze input can add to the magic of your holographic experience.
 On this page, we discuss design considerations for integrating eye-gaze input to interact with your holographic applications.
 You will learn about key advantages and also unique challenges that come with eye-gaze input.  
 Based on these, we provide several design recommendations to help you create satisfying eye-gaze-supported user interfaces. 

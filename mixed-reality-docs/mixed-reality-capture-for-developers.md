@@ -56,15 +56,15 @@ There are three steps to enable rendering from the PV camera:
 2. Handle the additional HolographicCamera render
 3. Verify your shaders and code render correctly from this additional HolographicCamera
 
-##### Enable the PhotoVideoCamera HolographicViewConfiguration
+##### Enable the PhotoVideoCamera HolographicViewConfiguration in DirectX
 
-To opt-in, an app simply enables the PhotoVideoCamera's [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
+To opt-in to rendering from the PV Camera, an app simply enables the PhotoVideoCamera's [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration):
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
-var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfiguration.PhotoVideoCamera);
+var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfigurationKind.PhotoVideoCamera);
 if (view != null)
 {
-   view.IsEnabled = true;
+    view.IsEnabled = true;
 }
 ```
 
@@ -78,10 +78,34 @@ When mixed reality capture stops (or if the app disables the view configuration 
 
 A [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) property has been added to HolographicCamera to help identify the configuration a camera belongs to.
 
+##### Enable the PhotoVideoCamera HolographicViewConfiguration in Unity
+
+> [!NOTE]
+> This requires **Unity 2018.4.13f1**, **Unity 2019.3.0f1**, or newer.
+
+To opt-in to rendering from the PV Camera, when using the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), enable the [Windows Mixed Reality Camera Settings](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) provider and check the **Render from PV Camera** setting.
+
+If you're not using the Mixed Reality Toolkit, you can use a component to [manually opt-in](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) as described above for DirectX.
+
 ##### Handle the additional HolographicCamera render in Unity
 
->[!NOTE]
-> Unity support to render from the PV camera is under development and can't be used, yet. This documentation will be updated when a build of Unity with support for rendering from the PV camera is available.
+This is done for you automatically by Unity.
+
+##### Enable the PhotoVideoCamera HolographicViewConfiguration in Unreal
+
+> [!NOTE]
+> This requires **Unreal Engine 4.25** or newer.
+
+To opt-in to rendering from the PV Camera:
+
+1. Call **SetEnabledMixedRealityCamera** and **ResizeMixedRealityCamera**
+    * Use the **Size X** and **Size Y** values to set the video dimensions.
+
+![Camera 3rd](images/unreal-camera-3rd.PNG)
+
+##### Handle the additional HolographicCamera render in Unreal
+
+This is done for you automatically by Unreal.
 
 ##### Verify shaders and code support additional cameras
 
@@ -194,41 +218,36 @@ Applications have two options to add the effect:
 
 MRC Video Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureVideoEffect**)
 
-|  Property Name  |  Type  |  Default Value  |  Description | 
+|  Property Name  |  Type  |  Default Value  |  Description |
 |----------|----------|----------|----------|
-|  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Describe which capture stream this effect is used for. Audio is not available. | 
-|  HologramCompositionEnabled  |  boolean  |  TRUE  |  Flag to enable or disable holograms in video capture. | 
-|  RecordingIndicatorEnabled  |  boolean  |  TRUE  |  Flag to enable or disable recording indicator on screen during hologram capturing. | 
-|  VideoStabilizationEnabled  |  boolean  |  FALSE  |  Flag to enable or disable video stabilization powered by the HoloLens tracker. | 
-|  VideoStabilizationBufferLength  |  UINT32  |  0  |  Set how many historical frames are used for video stabilization. 0 is 0-latency and nearly "free" from a power and performance perspective. 15 is recommended for highest quality (at the cost of 15 frames of latency and memory). | 
-|  GlobalOpacityCoefficient  |  float  |  0.9 (HoloLens) 1.0 (Immersive headset)  |  Set global opacity coefficient of hologram in range from 0.0 (fully transparent) to 1.0 (fully opaque). | 
+|  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (VideoRecord)  |  Describe which capture stream this effect is used for. Audio is not available. |
+|  HologramCompositionEnabled  |  boolean  |  TRUE  |  Flag to enable or disable holograms in video capture. |
+|  RecordingIndicatorEnabled  |  boolean  |  TRUE  |  Flag to enable or disable recording indicator on screen during hologram capturing. |
+|  VideoStabilizationEnabled  |  boolean  |  FALSE  |  Flag to enable or disable video stabilization powered by the HoloLens tracker. |
+|  VideoStabilizationBufferLength  |  UINT32  |  0  |  Set how many historical frames are used for video stabilization. 0 is 0-latency and nearly "free" from a power and performance perspective. 15 is recommended for highest quality (at the cost of 15 frames of latency and memory). |
+|  GlobalOpacityCoefficient  |  float  |  0.9 (HoloLens) 1.0 (Immersive headset)  |  Set global opacity coefficient of hologram in range from 0.0 (fully transparent) to 1.0 (fully opaque). |
 |  BlankOnProtectedContent  |  boolean  |  FALSE  |  Flag to enable or disable returning an empty frame if there is a 2d UWP app showing protected content. If this flag is false and a 2d UWP app is showing protected content, the 2d UWP app will be replaced by a protected content texture in both the headset and in the mixed reality capture. |
 |  ShowHiddenMesh  |  boolean  |  FALSE  |  Flag to enable or disable showing the holographic camera's hidden area mesh and neighboring content. |
 | OutputSize | Size | 0, 0 | Set the desired output size after cropping for video stabilization. A default crop size is chosen if 0 or an invalid output size is specified. |
-| PreferredHologramPerspective | UINT32 | 1 (PhotoVideoCamera) | Enum used to indicate which holographic camera view configuration should be captured. Setting 0 (Display) means that the app won't be asked to render from the photo/video camera |
+| PreferredHologramPerspective | UINT32 | **Render from Camera** setting in the Windows Device Portal | Enum used to indicate which holographic camera view configuration should be captured: 0 (Display) means that the app won't be asked to render from the photo/video camera, 1 (PhotoVideoCamera) will ask the app to render from the photo/video camera (if the app supports it). Only supported on HoloLens 2 |
+
+>[!NOTE]
+> You can change the default value of **PreferredHologramPerspective** in the Windows Device Portal by going to the [Mixed Reality Capture page](using-the-windows-device-portal.md#mixed-reality-capture) and unchecking **Render from Camera**. The setting defaults to **1 (PhotoVideoCamera)**, but can be unchecked to set it to **0 (Display)**.
+>
+> The default value of **PreferredHologramPerspective** was **0 (Display)** prior to the June 2020 update (Windows Holographic, version 2004 build 19041.1106 and Windows Holographic, version 1903 build 18362.1064).
 
 MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEffect**)
 
-<table>
-<tr>
-<th>Property Name</th>
-<th>Type</th>
-<th>Default Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>MixerMode</td>
-<td>UINT32</td>
-<td>2</td>
-<td>
-<ul>
-<li>0 : Mic audio only</li>
-<li>1 : System audio only</li>
-<li>2 : Mic and System audio</li>
-</ul>
-</td>
-</tr>
-</table>
+| Property Name | Type | Default Value | Description |
+|----------|----------|----------|----------|
+| MixerMode | UINT32 | 2 (Mic and System audio) | Enum used to indicate which audio sources should be used: 0 (Mic audio only), 1 (System audio only), 2 (Mic and System audio) |
+| LoopbackGain | float | **App Audio Gain** setting in the Windows Device Portal | Gain to apply to system audio volume. Ranges from 0.0 to 5.0. Only supported on HoloLens 2 |
+| MicrophoneGain | float | **Mic Audio Gain** setting in the Windows Device Portal | Gain to apply to mic volume. Ranges from 0.0 to 5.0. Only supported on HoloLens 2 |
+
+>[!NOTE]
+> You can change the default value of **LoopbackGain** or **MicrophoneGain** in the Windows Device Portal by going to the [Mixed Reality Capture page](using-the-windows-device-portal.md#mixed-reality-capture) and adjusting the slider next to their respective settings. Both settings default to **1.0**, but can be set to any value between **0.0** and **5.0**.
+>
+> Using Windows Device Portal to configure the default gain values was added with the June 2020 update (Windows Holographic, version 2004 build 19041.1106 and Windows Holographic, version 1903 build 18362.1064).
 
 ### Simultaneous MRC limitations
 
@@ -265,5 +284,8 @@ With the Windows 10 April 2018 Update, there is no longer a limitation around mu
 Previous to the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
 
 ## See also
+
 * [Mixed reality capture](mixed-reality-capture.md)
 * [Spectator view](spectator-view.md)
+* [Unity Development Overview](unity-development-overview.md)
+* [Unreal development overview](unreal-development-overview.md)
