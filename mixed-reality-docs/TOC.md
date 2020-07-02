@@ -142,8 +142,6 @@
 ##### [3. Integrating Azure Custom Vision](mr-learning-azure-03.md)
 ##### [4. Integrating Azure Spatial Anchors](mr-learning-04.md)
 ##### [5. Integrating Azure Bot Service](mr-learning-05.md)
-
-
 #### HoloLens (1st gen) open source sample apps
 ##### [Periodic Table of the Elements](periodic-table-of-the-elements.md)
 ##### [Lunar Module](lunar-module.md)
