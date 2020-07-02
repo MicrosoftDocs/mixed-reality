@@ -79,4 +79,4 @@ In this tutorial you learned how Azure Custom Vision can be used to train images
 
 In the next tutorial you will learn how to use Azure Spatial Anchors to link a *Tracked Object* with a location in the physical world and how to display an arrow that will guide the user back to the Tracked Object's linked location.
 
-[Next tutorial: 4. Integrating Azure Spatial Anchors](mr-learning-azure-04.md)
+[Next tutorial: 4. Integrating Azure Spatial Anchors](mrlearning-azure-04.md)

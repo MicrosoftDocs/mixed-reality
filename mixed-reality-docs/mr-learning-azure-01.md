@@ -18,15 +18,15 @@ Welcome to this series of tutorials focused on bringing **Azure Cloud** services
 > [!NOTE]
 > This tutorial series will focus on the **HoloLens 2** but due the cross-platform nature of Unity, most of your learnings will also apply for Desktop and Smartphone applications.
 
-In this first tutorial, [Introducing Azure Cloud Services for HoloLens 2](mrlearning-azure-01.md), you begin by explaining the goals of the application, briefly introduce you to each Azure Cloud service and set up the unity project.
+In this first tutorial, [Introducing Azure Cloud Services for HoloLens 2](mr-learning-azure-01.md), you begin by explaining the goals of the application, briefly introduce you to each Azure Cloud service and set up the unity project.
 
-In the second tutorial, [Integrating Azure Storage](mrlearning-azure-02.md), you start off by integrating Azure Storage as the persistence solution for the demo application, learn the differences between Blob Storage and Table Storage, prepare the needed project resources, setup the scene and verify the read, update and delete data operations.
+In the second tutorial, [Integrating Azure Storage](mr-learning-azure-02.md), you start off by integrating Azure Storage as the persistence solution for the demo application, learn the differences between Blob Storage and Table Storage, prepare the needed project resources, setup the scene and verify the read, update and delete data operations.
 
-Continuing with the third tutorial, [Integrating Azure Custom Vision](mrlearning-azure-03.md), you will use Azure Custom Vision to train and detect images in the HoloLens 2 application. The chapter starts off with setting up your own Azure Custom Vision resource, preparing the scene components and getting into action by training and detecting your own images from inside the application.
+Continuing with the third tutorial, [Integrating Azure Custom Vision](mr-learning-azure-03.md), you will use Azure Custom Vision to train and detect images in the HoloLens 2 application. The chapter starts off with setting up your own Azure Custom Vision resource, preparing the scene components and getting into action by training and detecting your own images from inside the application.
 
-Next you advance in the fourth tutorial, [Integrating Azure Spatial Anchors](mrlearning-azure-04.md), with exploring Azure Spatial Anchors service to save and find locations, learn the core concepts, prepare necessary resources, setup the scene and start using the new feature in the application.
+Next you advance in the fourth tutorial, [Integrating Azure Spatial Anchors](mr-learning-azure-04.md), with exploring Azure Spatial Anchors service to save and find locations, learn the core concepts, prepare necessary resources, setup the scene and start using the new feature in the application.
 
-With the fifth tutorial, [Integrating Azure Bot Service with LUIS](mrlearning-azure-05.md), you finalize by giving the application a new method of user interaction: natural language! This feature will be realized by using the Azure Bot Framework together with Language Understanding (LUIS). This final chapter teaches you the basics of Azure Bot Service and to speed up the process you will be using the Bot Framework Composer as a zero code solution. Once the bot is created, you will integrate it into the scene and give it a run with the final stage of the HoloLens 2 application.
+With the fifth tutorial, [Integrating Azure Bot Service with LUIS](mr-learning-azure-05.md), you finalize by giving the application a new method of user interaction: natural language! This feature will be realized by using the Azure Bot Framework together with Language Understanding (LUIS). This final chapter teaches you the basics of Azure Bot Service and to speed up the process you will be using the Bot Framework Composer as a zero code solution. Once the bot is created, you will integrate it into the scene and give it a run with the final stage of the HoloLens 2 application.
 
 ## Application goals
 
@@ -63,7 +63,7 @@ The application is mainly driven by traditional UI, so you use the [Azure Bot Se
 ## Prerequisites
 
 >[!TIP]
->If you have not completed the [Getting started tutorials](mrlearning-base.md) series yet, it's recommended that you complete those tutorials first.
+>If you have not completed the [Getting started tutorials](mr-learning-base.md) series yet, it's recommended that you complete those tutorials first.
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
@@ -99,11 +99,11 @@ Download and **import** the following Unity custom packages **in the order they 
 * [MRTK.Tutorials.AzureCloudServices](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section4-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section4-step1-1.png)
 
 ## Creating and preparing the scene
 <!-- TODO: Consider renaming to 'Preparing the scene' -->
@@ -112,7 +112,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder. While holding down the CTRL button, click on **SceneController**, **RootMenu** and **DataManager** to select the three prefabs:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section5-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
 The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
 
@@ -122,40 +122,40 @@ The **DataManager (prefab)** is responsible for talking to Azure storage and wil
 
 Now with the four prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section5-step1-2.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section5-step1-2.png)
 
 To focus in on the objects in the scene, you can double-click on the **RootMenu** object, and then zoom slightly out again:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section5-step1-3.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section5-step1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
 
 ## Configuring the scene
 
-In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* together to have a working scene to be ready for the following [Integrating Azure storage](mrlearning-azure-01.md) tutorial.
+In this section, you will connect *SceneManager*, *DataManager* and *RootMenu* together to have a working scene to be ready for the following [Integrating Azure storage](mr-learning-azure-01.md) tutorial.
 
 ### Connect the objects
 
 In the Hierarchy window, select the **DataManager** object:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-1.png)
 
 In the Inspector window, locate the **DataManager (Script)** component and add a new event listener to the **On Data Manager Ready ()** event by clicking the **+** icon:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-2.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-2.png)
 
 Now select in the Hierarchy window the **SceneController** object and drag it into the **On Data Manager Ready ()** event and select from the dropdown menu **SceneController.Init**:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-3.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
 From the Hierarchy window, select the **SceneController** object, there in the Inspector you will find the **SceneController** (script) component.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-4.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-4.png)
 
 You will see that there are several unpopulated fields, let's change that. Move the **DataManager** object from the Hierarchy into the *Data Manager* field and move the **RootMenu** GameObject from the Hierarchy into the *Main Menu* field.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section6-step1-5.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-5.png)
 
 Now your scene is ready for the upcoming tutorials. Don't forget to save it into your project.
 
@@ -167,22 +167,22 @@ While the project yet has to be filled with content, you have to perform some pr
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section7-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section7-step1-1.png)
 
 In the Project Settings window, select **Player** and then **Publishing Settings**:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section7-step1-2.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section7-step1-2.png)
 
 In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone** and **SpatialPerception** capabilities, which you enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer**, **PrivateNetworkClientServer**, and **Webcam** capabilities:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial1-section7-step1-3.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial1-section7-step1-3.png)
 
 ### 2. Deploy the app to your HoloLens 2
 
-Features like Azure Spatial Anchors from the fourth [Integrating Azure Spatial Anchors](mrlearning-azure-04.md) tutorial can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
+Features like Azure Spatial Anchors from the fourth [Integrating Azure Spatial Anchors](mr-learning-azure-04.md) tutorial can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-ch1.md#build-your-application-to-your-device) instructions.
 
 ### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 
@@ -201,4 +201,4 @@ In this tutorial, you were introduced to the tutorial series, learned about the 
 
 In the next lesson, you will use Azure storage as a cloud based persistence solution for storing data and images.
 
-[Next tutorial: 2. Integrating Azure storage](mrlearning-azure-02.md)
+[Next tutorial: 2. Integrating Azure storage](mr-learning-azure-02.md)
