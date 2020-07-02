@@ -58,7 +58,7 @@ In the Hierarchy window, select the third child button object named **ShareAzure
 
 ![mrlearning-sharing](images/mrlearning-sharing/tutorial4-section2-step1-4.png)
 
-In the Hierarchy window, select the forth child button object named **GetAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
+In the Hierarchy window, select the third child button object named **ShareAzureAnchor**, then in the Inspector window, locate the **Interactable (Script)** component and configure the **OnClick ()** event as follows:
 
 * To **None (Object)** field, assign the **TableAnchor** object
 * From **No Function** dropdown, select the **SharingModuleScript** > **GetAzureAnchor ()** function

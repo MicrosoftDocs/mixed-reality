@@ -3,7 +3,7 @@ title: Perception simulation
 description: A guide to using the Perception Simulation library to automate simulated input for immersive applications
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 05/12/2020
+ms.date: 04/26/2019
 ms.topic: article
 keywords: HoloLens, simulation, testing
 ---
@@ -655,52 +655,6 @@ The horizontal field of view of the frustum, in radians (less than PI).
 
 The ratio of horizontal field of view to vertical field of view.
 
-### Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration
-
-Describes the configuration of the simulated headset's display.
-
-```
-public struct SimulatedDisplayConfiguration
-{
-    public Vector3 LeftEyePosition;
-    public Rotation3 LeftEyeRotation;
-    public Vector3 RightEyePosition;
-    public Rotation3 RightEyeRotation;
-    public float Ipd;
-    public bool ApplyEyeTransforms;
-    public bool ApplyIpd;
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.LeftEyePosition**
-
-The transform from the center of the head to the left eye for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.LeftEyeRotation**
-
-The rotation of the left eye for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.RightEyePosition**
-
-The transform from the center of the head to the right eye for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.RightEyeRotation**
-
-The rotation of the right eye for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.Ipd**
-
-The Ipd value reported by the system for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyEyeTransforms**
-
-Whether or not the values provided for left and right eye transforms should be considered valid and applied to the running system.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyIpd**
-
-Whether or not the value provided for Ipd should be considered valid and applied to the running system.
-
-
 ### Microsoft.PerceptionSimulation.IPerceptionSimulationManager
 
 Root for generating the packets used to control a device.
@@ -753,27 +707,6 @@ Set the properties of the simulated device to match the provided device type.
 
 Parameters
 * type - The new type of Simulated Device
-
-### Microsoft.PerceptionSimulation.ISimulatedDevice2
-
-Additional properties are available by casting the ISimulatedDevice to ISimulatedDevice2
-
-```
-public interface ISimulatedDevice2
-{
-    bool IsUserPresent { [return: MarshalAs(UnmanagedType.Bool)] get; [param: MarshalAs(UnmanagedType.Bool)] set; }
-    SimulatedDisplayConfiguration DisplayConfiguration { get; set; }
-
-};
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedDevice2.IsUserPresent**
-
-Retrieve or set whether or not the simulated human is actively wearing the headset.
-
-**Microsoft.PerceptionSimulation.ISimulatedDevice2.DisplayConfiguration**
-
-Retrieve or set the properties of the simulated display.
 
 ### Microsoft.PerceptionSimulation.ISimulatedHeadTracker
 
@@ -1319,10 +1252,7 @@ public enum StreamDataTypes
     SpatialMapping = 0x08,
     Calibration = 0x10,
     Environment = 0x20,
-    SixDofControllers = 0x40,
-    Eyes = 0x80,
-    DisplayConfiguration = 0x100
-    All = None | Head | Hands | SpatialMapping | Calibration | Environment | SixDofControllers | Eyes | DisplayConfiguration
+    All = None | Head | Hands | SpatialMapping | Calibration | Environment
 }
 ```
 
@@ -1349,18 +1279,6 @@ Stream of data regarding calibration of the device. Calibration packets are only
 **Microsoft.PerceptionSimulation.StreamDataTypes.Environment**
 
 Stream of data regarding the environment of the device.
-
-**Microsoft.PerceptionSimulation.StreamDataTypes.SixDofControllers**
-
-Stream of data regarding motion controllers.
-
-**Microsoft.PerceptionSimulation.StreamDataTypes.Eyes**
-
-Stream of data regarding the eyes of the simulated human.
-
-**Microsoft.PerceptionSimulation.StreamDataTypes.DisplayConfiguration**
-
-Stream of data regarding the display configuration of the device.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.All**
 

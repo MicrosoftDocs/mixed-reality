@@ -1,89 +1,36 @@
 ---
-title: Unreal Development Overview
-description: Overview of mixed reality development using Unreal Engine 4
-author: hferrone
-ms.author: v-haferr
-ms.date: 06/10/2020
+title: Unreal development overview
+description: To get started building mixed reality apps in Unreal.
+author: sw5813
+ms.author: suwu
+ms.date: 10/24/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, beta, streaming, remoting, mixed reality, development, getting started, new project, emulator, documentation
 ---
-# Unreal Development Overview
+# Unreal development overview
 
-Getting started with <a href="https://docs.microsoft.com/en-us/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Support for <a href="https://www.microsoft.com/en-us/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/en-us/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) is now included in Unreal Engine's newest <a href="https://docs.unrealengine.com/en-US/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 release notes">release</a>. This update includes:
-* Mixed Reality UX Tools plugin support
-* OpenXR support
-* App Remoting from a desktop app
-* Better performance
-* Mixed reality capture
-* Initial support for Azure Spatial Anchors
+Mixed reality support for Unreal Engine 4 is now in beta! If you're new to Unreal development, <a href="https://docs.unrealengine.com//GettingStarted/index.html" target="_blank">Getting Started with Unreal Engine 4</a> is a great page to explore. If you need assets, Unreal has a comprehensive <a href="https://www.unrealengine.com/marketplace//store" target="_blank">Marketplace</a>. 
 
-If you're new to Unreal development don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com//GettingStarted/index.html" target="_blank">tutorial series</a> to get up to speed and look for assets and support in the Unreal <a href="https://www.unrealengine.com/marketplace//store" target="_blank">marketplace</a> and mixed reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in todays mixed reality market.
+Once you've built a basic understanding of Unreal Engine 4, you can visit the <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/index.html" target="_blank">Microsoft HoloLens Development</a> page on the Unreal Engine documentation site to learn how to build and run your apps on HoloLens. Be sure to visit the <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">Unreal Mixed Reality forums</a> to engage with the community who build mixed reality apps in Unreal. It's a great place to find solutions to problems you might run into.
 
-## Mixed Reality Toolkit for Unreal
+## Installing the prerequisites
 
-The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) is a set of components designed to speed up your development in Unreal. Each component includes plugins, samples, and documentation for setting up immersive experiences. 
+To get started with building a HoloLens 2 app in Unreal, you'll need the [HoloLens 2 Emulator](using-the-hololens-emulator.md) or a HoloLens headset. You'll also need to install the latest version of Visual Studio with the workloads and components listed in <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/Prerequisites/index.html" target="_blank">HoloLens 2 Prerequisites for Unreal</a>.
 
-[UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) is the first component to be released and is currently only supported on HoloLens 2. The component plugin includes code, blueprints, and example assets of common UX features including:
-* Input simulation
-* Hand interaction actor
-* Press-able button component
-* Manipulator component
-* Follow behavior component
+## Building and running your Unreal app
 
-You can dive into the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) GitHub repository for feature details and information on setting up your project.
+First, <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/HowTo/PackageApp/index.html" target="_blank">package your app for HoloLens 2</a>. Next, choose where you want to deploy your package:
+* <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/QuickStartEmulator/index.html" target="_blank">Deploy to the HoloLens 2 Emulator</a>
+* <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/QuickStartDevice/index.html" target="_blank">Deploy to a HoloLens 2 Headset</a>
 
-## Additional files
-If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) from the Epic Launcher.
+## Streaming your app to a headset via the Holographic Remoting Player
 
-## Tutorial
+Streaming your app from your desktop to the Holographic Remoting Player app on a HoloLens headset has two main advantages: 
+* Speeds up development, so there's no need to repackage and upload your app each time you make a change
+* Leverages the power of your desktop, so you can render as many polygons as your desktop GPU allows, without being limited by the computer available on the headset
 
-Building something with your own two hands is the best way to learn a new skill. Learning how to [build and deploy a simple chess app](unreal-uxt-ch1.md) for HoloLens 2 with the UX Tools plugin is a great way to start. 
-
-The end-to-end tutorial series provides hands-on contact with common interactive UX components and scenarios. You'll work through the project setup, adding interactions to the scene, and deploying to a device or emulator. All you need is Windows 10, an emulator, and Visual Studio 2019.
-
-
-## Performance
-
-Developing for mixed reality comes with performance checkpoints that depend on the platform. A HoloLens 2 app must run at 60 frames per second for holograms to appear stable and responsive. Luckily, Unreal provides [performance recommendations](performance-recommendations-for-unreal.md) for achieving this in your applications.
-
-## Guides to specific features
-
-There are several key features of mixed reality development that our tutorial series doesn't cover. Check out the following guides for details and practical applications: 
-* [Hand tracking](unreal-hand-tracking.md)
-* [Eye tracking](unreal-gaze-input.md)
-* [Spatial mapping](unreal-spatial-mapping.md)
-* [Spatial anchors](unreal-spatial-anchors.md)
-* [Voice input](unreal-voice-input.md)
-* [HoloLens camera](unreal-hololens-camera.md)
-* [QR codes](unreal-qr-codes.md)
-
-
-## Supported Features
-
-| HoloLens 2 Feature | Earliest Supported Unreal Engine Version |
-| ----------- | ----------- |
-| ARM64 support | 4.23 |
-| Streaming from a PC | 4.23 |
-| Spatial mapping | 4.23 |
-| Hand and joint tracking | 4.23 |
-| Eye tracking | 4.23 |
-| Voice input | 4.23 |
-| Spatial anchors | 4.23 |
-| Camera access | 4.23 |
-| QR codes | 4.23 |
-| Spatial audio | 4.23 |
-| Spectator Screen support for streaming | 4.24 |
-| Planar LSR over streaming | 4.24 |
-| Sample apps ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) and [Mission AR](https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html)) | 4.24 |
-| Mobile multi-View: Performance hits 60 fps | 4.25 |
-| 3rd camera render | 4.25 |
-| Streaming from a packaged desktop app | 4.25 |
-| Azure Spatial Anchors for HoloLens 2 (beta) | 4.25 |
-| OpenXR support (beta) | 4.25 |
-| UX Tools support (0.8) | 4.25 |
-| Developer docs & tutorials | 4.25 |
+To get started with streaming, check out the <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/QuickStartStreaming/index.html" target="_blank">HoloLens 2 Streaming Quick Start</a>[]().
 
 ## See also
-* <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/index.html" target="_blank">Unreal docs for streaming, deploying to emulator and device</a>
 * <a href="https://docs.unrealengine.com//Platforms/Mobile/Performance/index.html" target="_blank">Unreal performance guidelines for mobile devices</a>

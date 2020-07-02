@@ -67,10 +67,9 @@ With any Unity update, there is a good chance that you need to update one or mor
 ### Unity step 4: Target your application to run on Universal Windows Platform (UWP)
 
 After installing the tools, you need to get your app running as a Universal Windows app.
-
 * Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. Please note that you should stay on the latest LTS release (any 20xx.4 release) for Windows MR.
 * For more UWP development resources, take a look at the [Windows 10 game development guide](https://docs.microsoft.com/windows/uwp/gaming/e2e).
-* Please note that Unity continues to improve IL2CPP support; IL2CPP makes some UWP ports significantly easier. If you are currently targeting the .NET scripting backend, you should consider converting to leverage the IL2CPP backend instead.
+* Please note that Unity continues to improve IL2CPP support; IL2CPP makes some UWP ports significantly easier. If you are currently targeting the .Net scripting backend, you should consider converting to leverage the IL2CPP backend instead.
 
 Note: If your application has any dependencies on device specific services, such as match making from Steam, you will need to disable them at this step. At a later time, you can hook up to the equivalent services that Windows provides.
 

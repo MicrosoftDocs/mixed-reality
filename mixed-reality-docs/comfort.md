@@ -3,7 +3,7 @@ title: Comfort
 description: During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative position of objects.
 author: erickjpaul
 ms.author: erpau
-ms.date: 06/25/2020
+ms.date: 04/5/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
@@ -12,8 +12,6 @@ keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
 
 
 # Comfort
-
-## Overview
 
 During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative positions of objects. Some cues rely only on a single eye (monocular cues), including [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)), [familiar size](https://en.wikipedia.org/wiki/Size#Perception_of_size), occlusion, [depth-of-field blur](https://en.wikipedia.org/wiki/Depth_of_field), and [accommodation](https://en.wikipedia.org/wiki/Accommodation_(eye)). Other cues rely on both eyes (binocular cues), and include [vergence](https://en.wikipedia.org/wiki/Vergence) (essentially the relative rotations of the eyes required to look at an object) and [binocular disparity](https://en.wikipedia.org/wiki/Stereopsis) (the pattern of differences between the projections of the scene on the back of the two eyes). To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world. From a physical perspective, it is also important to design content that does not require fatiguing motions of the neck or arms. In this article, we’ll go over key considerations to keep in mind to achieve these goals.
 
@@ -124,28 +122,37 @@ In first-person-shooter videogames, heads-up displays (HUDs) persistently presen
 
 ## Text legibility
 
-Optimal text legibility can help reduce eye strain and maintain user comfort, especially in applications or scenarios that require users to read while using an HMD. Text legibility depends on a variety of factors including:
-* Display properties such as pixel density, brightness, and contrast. 
-* Lens properties like chromatic aberration
-* Text/font properties such as weight, spacing, serifs, and font/background color.  
+Optimal text legibility can help reduce eye strain and maintain user comfort, especially in applications or scenarios that require users to read while in an HMD. Text legibility depends on a variety of factors including various display properties (for example, pixel density, brightness, contrast), lens properties (for example, chromatic aberration), and text/font properties (for example, the specific font characteristics like weight, spacing, serifs, etc., color of font, color of background).  
 
-In general, we recommend testing specific applications for legibility and making font sizes as large as possible for a comfortable experience. You can find more detailed guidance for holographic and immersive devices in our [Typography](typography.md) and [Text in Unity](text-in-unity.md) pages.
+In general, we recommend testing specific applications for legibility and making font sizes as large as is feasible for a comfortable experience. Below we offer general guidance as a starting point for development. Note that all font sizes are reported in degrees of [visual angle](https://en.wikipedia.org/wiki/Visual_angle) rather than specific physical sizes, which provides guidance for any distance within the zone of optimal hologram placement because it accounts for both the size of the text and the distance it appears to the viewer. 
 
-## Holographic frame considerations
+See [Typography](typography.md) and [Text in Unity](text-in-unity.md) pages for more detailed guidelines.
 
-For mixed reality experiences with large objects or many objects, it is crucial to consider how much head and neck movement is necessary to interact with content. Experiences can be divided into three categories in terms of head movement: 
-* **Horizontal** (side to side)
-* **Vertical** (up and down)
-* **Immersive** (both horizontal and vertical)
- 
-When possible, limit the majority of interactions to either horizontal or vertical categories, ideally with most experiences taking place in the center of the holographic frame while the user's head is in a neutral position. Avoid interactions that cause the user to constantly move their view to an unnatural head positions (for example, always looking up to access a key menu interaction).
+### Guidance for holographic devices
 
-![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2.png)<br>
-*Optimal region for content is 0 to 35 degrees below horizon*
+For holographic devices, rendering black/dark text on a white/light background provides the most consistent contrast ratio because the background will occlude interference from the real-world behind the rendering. Rendering white/light text on a black/dark background allows more of real-world environment to show through, which may interfere with text legibility. 
 
-Horizontal head movement is more for frequent interactions, while vertical movements should be reserved for uncommon events. For example, an experience involving a long horizontal timeline should limit vertical head movement for interactions (like looking down at a menu).
+#### HoloLens (1st gen)
 
-Consider encouraging full-body movement, rather than just head movement, by placing objects around the user's space. Experiences with moving objects or large objects should pay special attention to head movement, especially where they require frequent movement along both the horizontal and vertical axes.
+The minimum legible font size (measuring from font baseline to ascender) is approximately 0.35° and a comfortable font size is at least approximately 0.5° for reading content presented at a distance of 2m to the user. 
+
+#### HoloLens 2
+
+The minimum legible font size (measuring from font baseline to ascender) is at least approximately: 
+   - 0.4°-0.5° at 45cm (direct manipulation distance) 
+   - 0.35°-0.4° at 2.0m
+   
+The comfortably legible font size (measuring from font baseline to ascender) is at least approximately: 
+   - 0.65°-0.8° at 45cm (direct manipulation distance)
+   - 0.6°-0.75° at 2.0m
+
+Note that font sizes need to be slightly larger for text at direct manipulation distances because of the vergence-accommodation conflict described above (users' eyes are accommodating at a distance of 2.0m on the HoloLens display, so content rendered at, e.g., 45cm may appear more blurry to users). 
+
+### Guidance for immersive devices
+
+Immersive devices generally have higher contrast ratios due to the complete occlusion of the outside environment, but may have lower effective pixel density in part because of the magnification of the lenses in front of the displays. 
+
+For Windows Mixed Reality immersive HMDs, the minimum legible vertical font size (measuring from font baseline to ascender) is approximately 0.7-0.9° and a comfortable vertical font size is approximately 1.0° for reading content presented at a distance of 2m to the user.
 
 ## Gaze direction
 
@@ -155,6 +162,9 @@ To avoid eye and neck strain content should be designed so that excessive eye an
 * **Avoid** neck rotations more than 45 degrees off-center (horizontal movement)
 
 The optimal (resting) gaze angle is considered between 10-20 degrees below horizontal, as the head tends to tilt downward slightly, especially during activities.
+
+![Allowable field of view (FOV) as determined by neck range of motion](images/optimal-field-of-view-2.png)<br>
+*Allowable field of view (FOV) as determined by neck range of motion*
 
 ## Arm positions
 

@@ -1,8 +1,8 @@
 ---
 title: Device portal API reference
 description: API reference for the Windows Device Portal on HoloLens
-author: hamalawi
-ms.author: moelhama
+author: jonmlyons
+ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, Windows Device Portal, API
@@ -181,10 +181,6 @@ Open a web socket connection for a control stream.
 
 Create a control stream (priority is required) or post data to a created stream (streamId required). Posted data is expected to be of type 'application/octet-stream'.
 
-**/api/holographic/simulation/display/stream (GET/WebSocket)**
-
-Request a simulation video stream containing the content rendered to the system display when in 'Simulation' mode.  A simple format descriptor header will be sent initially, followed by H.264-encoded textures, each preceded by a header indicating the eye index and texture size.
-
 ## Perception Simulation Playback
 
 **/api/holographic/simulation/playback/file (DELETE)**
@@ -317,15 +313,7 @@ Sets the default mixed reality capture settings.  Some of these settings are app
 
 **/api/holographic/mrc/status (GET)**
 
-Gets the state of mixed reality capture within the Windows Device Portal.
-
-***Response***
-
-The response contains a JSON property indicating if Windows Device Portal is recording video or not.
-
-``` javascript
-{"IsRecording" : boolean}
-```
+Gets the status of the mixed reality recorded (running, stopped)
 
 **/api/holographic/mrc/thumbnail (GET)**
 

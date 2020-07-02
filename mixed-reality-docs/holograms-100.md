@@ -8,10 +8,12 @@ ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, immersive, vr, mr, get started, hologram, academy, tutorial
 ---
 
-# MR Basics 100: Getting started with Unity
-
->[!IMPORTANT]
+>[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
+
+<br>
+
+# MR Basics 100: Getting started with Unity
 
 This tutorial will walk you through creating a basic mixed reality app built with Unity.
 
@@ -86,7 +88,7 @@ Finally, let us save our progress so far. To save the scene changes, select **Fi
 
 >[!VIDEO https://www.youtube.com/embed/ItRoiXccC0g]
 
-In this chapter, we will set some Unity project settings that help us target the Windows Holographic SDK for development. We will also set some quality settings for our application. Finally, we will ensure our build targets are set to Universal Windows Platform.
+In this chapter, we will set some Unity project settings that help us target the Windows Holographic SDK for development. We will also set some quality settings for our application. Finally, we will ensure our build targets are set to Windows Store.
 
 ### Unity performance and quality settings
 
@@ -97,7 +99,7 @@ In this chapter, we will set some Unity project settings that help us target the
 Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
 
 1. Select **Edit > Project Settings > Quality**
-2. Select the **dropdown** under the **Universal Windows Platform** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Universal Windows Platform column and **Very Low** row is green.
+2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green.
 
 **For mixed reality applications targeted to occluded displays**, you can leave the quality settings to its default values.
 
@@ -110,13 +112,21 @@ Since maintaining high framerate on HoloLens is so important, we want the qualit
 We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK.
 
 1. Go to **Edit > Project Settings > Player**.
-2. In the **Inspector Panel** for Player Settings, select the **Universal Windows Platform** icon.
+2. In the **Inspector Panel** for Player Settings, select the **Windows Store** icon.
 3. Expand the **XR Settings** group.
 4. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality SDKs** list.
 5. Verify that **Windows Mixed Reality** appears in the list. If not, select the **+** button at the bottom of the list and choose **Windows Mixed Reality**.
 
 >[!NOTE]
->If you do not see the **Universal Windows Platform** icon, double check to make sure you selected Universal Windows Platform Build Support during installation. If not, you may need to reinstall Unity with the correct Windows installation.
+>If you do not see the **Windows Store** icon, double check to make sure you selected the Windows Store .NET Scripting Backend prior to installation. If not, you may need to reinstall Unity with the correct Windows installation.
+
+**Verify .NET Configuration**
+
+![Verify .NET Configuration](images/configoptions-375px.png)
+
+1. Go to **Edit > Project Settings > Player** (you may still have this up from the previous step).
+2. In the **Inspector Panel** for Player Settings, select the **Windows Store** icon.
+3. In the **Other Settings** Configuration section, make sure that **Scripting Backend** is set to **.NET**
 
 Awesome job on getting all the project settings applied. Next, let us add a hologram!
 
@@ -171,19 +181,20 @@ We are now ready to compile our project to Visual Studio and deploy to our targe
 
 ### Export to the Visual Studio solution
 
-1. Open **File > Build Settings** window.
-1. Click **Add Open Scenes** to add the scene.
-1. Change **Platform** to **Universal Windows Platform** and click **Switch Platform**.
-1. In **Universal Windows Platform** settings, ensure **SDK** is **Universal 10**.
-1. For Target device, leave to **Any Device** for occluded displays or switch to **HoloLens**.
-1. **UWP Build Type** should be **D3D**.
-1. **UWP SDK** could be left at **Latest installed**.
-1. Click **Build**.
-1. In the file explorer, click **New Folder** and name the folder **"App"**.
-1. With the **App** folder selected, click the **Select Folder** button.
-1. When Unity is done building, a Windows File Explorer window will appear.
-1. Open the **App** folder in file explorer.
-1. Open the generated Visual Studio solution (MixedRealityIntroduction.sln in this example)
+1.  Open **File > Build Settings** window.
+2.  Click **Add Open Scenes** to add the scene.
+3.  Change **Platform** to **Universal Windows Platform** and click **Switch Platform**.
+4.  In **Windows Store** settings ensure, **SDK** is **Universal 10**.
+5.  For Target device, leave to **Any Device** for occluded displays or switch to **HoloLens**.
+6.  **UWP Build Type** should be **D3D**.
+7.  **UWP SDK** could be left at **Latest installed**.
+8.  Check **Unity C# Projects** under Debugging.
+9.  Click **Build**.
+10. In the file explorer, click **New Folder** and name the folder **"App"**.
+11. With the **App** folder selected, click the **Select Folder** button.
+12. When Unity is done building, a Windows File Explorer window will appear.
+13. Open the **App** folder in file explorer.
+14. Open the generated Visual Studio solution (MixedRealityIntroduction.sln in this example)
 
 ### Compile the Visual Studio solution
 

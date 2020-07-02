@@ -1,4 +1,5 @@
 ---
+layout: LandingPage
 title: Get started with Mixed Reality
 description: To help someone new to mixed reality learn what it is and understand its capabilities.
 author: grbury 

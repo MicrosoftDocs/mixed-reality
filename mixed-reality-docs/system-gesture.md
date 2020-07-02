@@ -1,15 +1,15 @@
 ---
-title: Start gesture
-description: Start gesture to call out the Start Menu. 
+title: System gesture
+description: System gesture to call out the Start Menu. 
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Mixed Reality, Gestures, interaction, design
 ---
-# Start gesture
+# System gesture
 
-The Start gesture is a hand gesture used to invoke the Start Menu. It is the equivalent of pressing the Windows key on the keyboard, the Xbox button on an Xbox controller, or the Windows button on the immersive headset motion controller. It's important to understand which gestures are reserved for the system on each Mixed Reality device to prevent conflicts when designing your interactions.
+The system gesture is a hand gesture used to invoke the Start Menu. It is the equivalent of pressing the Windows key on the keyboard, the Xbox button on an Xbox controller, or the Windows button on the immersive headset motion controller. It's important to understand which gestures are reserved for the system on each Mixed Reality device to prevent conflicts when designing your interactions.
 
 ## Device support
 

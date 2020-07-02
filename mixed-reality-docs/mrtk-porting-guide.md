@@ -31,11 +31,12 @@ It is **highly recommended** that, before beginning the porting process, develop
 
 ## Migrate project to the latest version of Unity
 
-If you are using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) is the best long-term support path with no breaking changes in Unity or in MRTK. Also, the MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
+If you are using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) is the best long-term support path with no breaking changes in Unity or in MRTK. Also, the MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x. 
 
-To help clarify additional differences between [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) and Unity 2019.x, the following outlines the trade-offs between these two versions. The primary difference between the two is the ability to compile for ARM64 in Unity 2019.
+To help clarify additional differences between [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) and Unity 2019.x, the following outlines the trade-offs between these two versions. The primary difference between the two is the ability to compile for ARM64 in Unity 2019. 
 
-Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project, and determine whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, you may need to continue building your app for ARM.
+Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project, and determine whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, you need to use Unity 2018 LTS.
+
 
 | Unity 2018 LTS | Unity 2019.x |
 |----------|-------------------|
@@ -48,19 +49,19 @@ Developers should assess any [plugin dependencies](https://docs.unity3d.com/Manu
 
 After updating to [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) or Unity 2019+, it is recommended to update particular settings in Unity for optimal results on the device. These settings are outlined in detail under **[Recommended settings for Unity](Recommended-settings-for-Unity.md)**.
 
-It should be reiterated that the [.NET scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) is being deprecated in Unity 2018 and *removed* in Unity 2019. Developers should strongly consider switching their project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
+It should be reiterated that the [.NET scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) is being deprecated in Unity 2018 and *removed* in Unity 2019. Developers should strongly consider switching their project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). 
 
 > [!NOTE]
 > IL2CPP scripting back-end can cause longer build times from Unity to Visual Studio, and developers should set up their developer machine for [optimizing IL2CPP build times](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).
 > It might also be beneficial to set up a [cache server](https://docs.unity3d.com/Manual/CacheServer.html), especially for Unity projects with a large amount of assets (excluding script files) or constantly changing scenes and assets. When opening a project, Unity stores qualifying assets into an internal cache format on the developer machine. Items must be re-imported and re-processed when modified. This process can be done once and saved in a cache server and consequently shared with other developers to save time, as opposed to every developer processing the re-import of new changes locally.
 
-After addressing any breaking changes after moving to the updated Unity version, developers should build and test their current applications on HoloLens (1st gen). This is a good time to create and save a commit into source control.
+After addressing any breaking changes after moving to the updated Unity version, developers should build and test their current applications on HoloLens (1st gen). This is a good time to create and save a commit into source control. 
 
 ## Compile dependencies/plugins for ARM processor
 
-HoloLens (1st gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Therefore, existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling ARM32 apps while Unity 2019.x supports compiling ARM32 and ARM64 apps. Developing for ARM64 applications is generally preferred, as there is a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64.
+HoloLens (1st gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Therefore, existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling ARM32 apps while Unity 2019.x supports compiling ARM32 and ARM64 apps. Developing for ARM64 applications is generally preferred, as there is a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64. 
 
-Review all DLL dependencies in your application. It is advisable to remove any dependency that is no longer needed from your project. For remaining plugins that are required, ingest the respective ARM32 or ARM64 binaries into your Unity project.
+Review all DLL dependencies in your application. It is advisable to remove any dependency that is no longer needed from your project. For remaining plugins that are required, ingest the respective ARM32 or ARM64 binaries into your Unity project. 
 
 After ingesting the relevant DLLs, build a Visual Studio solution from Unity and then compile an AppX for ARM in Visual Studio to test that your application can be built for ARM processors. It is advised to save the application as a commit in your source control solution.
 
@@ -69,7 +70,6 @@ After ingesting the relevant DLLs, build a Visual Studio solution from Unity and
 [MRTK Version 2](https://github.com/microsoft/MixedRealityToolkit-Unity) is the new toolkit on top of Unity that supports both HoloLens (1st gen) and HoloLens 2. It is also where all the new HoloLens 2 capabilities have been added, such as hand interactions and eye tracking.
 
 Please read the following for more information on using MRTK version 2:
-
 - [MRTK Landing Page](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 - [Getting started with MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 - [MRTK Hands](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
@@ -79,11 +79,11 @@ Please read the following for more information on using MRTK version 2:
 
 Before ingesting the new [*.unitypackage files for MRTK v2](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases), it is recommended to take an inventory of **1) any custom-built code that integrates with MRTK v1** and **2) any custom-built code for input interactions or UX components**. The most common and prevalent conflict for a mixed reality developer ingesting MRTK v2 involves input and interactions. It is advised to begin reading and understanding the [MRTK v2 input model](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html).
 
-Finally, the new [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) has transitioned from a model of scripts and in-scene manager objects to a configuration and services provider architecture. This results in a cleaner scene hierarchy and architecture model, but requires a learning curve for understanding the new configuration profiles. Thus, please read the [Mixed Reality Toolkit Configuration Guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) to start becoming familiar with the important settings and profiles to adjust to the needs of your application.
+Finally, the new [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) has transitioned from a model of scripts and in-scene manager objects to a configuration and services provider architecture. This results in a cleaner scene hierarchy and architecture model, but requires a learning curve for understanding the new configuration profiles. Thus, please read the [Mixed Reality Toolkit Configuration Guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) to start becoming familiar with the important settings and profiles to adjust to the needs of your application. 
 
 ### Perform the migration
 
-After importing [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), your Unity project most likely has many compiler related errors. These are commonly due to the new namespace structure and new component names. Proceed to resolve these errors by modifying your scripts to the new namespaces and components.
+After importing [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), your Unity project most likely has many compiler related errors. These are commonly due to the new namespace structure and new component names. Proceed to resolve these errors by modifying your scripts to the new namespaces and components. 
 
 For information on the specific API differences between HTK/MRTK and MRTK v2, see the porting guide on the [MRTK Version 2 wiki](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html).
 
