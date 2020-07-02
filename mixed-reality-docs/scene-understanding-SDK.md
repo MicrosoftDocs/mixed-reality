@@ -194,7 +194,7 @@ byte[] newSceneData = new byte[newSceneBuffer.Size];
 newSceneBuffer.GetData(newSceneData);
 Scene mySceneDeSerialized = Scene.Deserialize(newSceneData);
 
-// Save newSceneBlob for later
+// Save newSceneData for later
 ```
 
 ### SceneObject Enumeration
@@ -306,6 +306,9 @@ Quads were designed to facilitate 2D placement scenarios and should be thought o
 
 Quads have rectangular extents, but they represent arbitrarily shaped 2D surfaces. To enable placement on these 2D surfaces that interact with the 3D environment quads offer utilities to make this interaction possible. Currently Scene Understanding provides two such functions, **FindCentermostPlacement** and **GetOcclusionMask**. FindCentermostPlacement is a high level API that locates a position on the quad where an object can be placed and will try to find the best location for your object guaranteeing that the bounding box you provide will reside on the underlying surface.
 
+> [!NOTE]
+> The coordinates of the output are relative to the quad in "quad space" with the top left corner being (x = 0, y = 0), just as it would be with other windows Rect types. Be sure to take this into account when working with the origins of your own objects. 
+
 The following example shows how to find the centermost placeable location and anchor a hologram to the quad.
 
 ```cs
@@ -336,7 +339,12 @@ foreach (var sceneObject in myScene.SceneObjects)
 }
 ```
 
-Steps 1-4 are highly dependent on your particular framework/implementation, but the themes should be similar. It is important to note that the Quad simply represents a bounded 2D plane that is localized in space. By having your engine/framework know where the quad is and rooting your objects relative to the quad, your holograms will be located correctly with respect to the real world. For more detailed information please see our samples on quads which show specific implementations.
+Steps 1-4 are highly dependent on your particular framework/implementation, but the themes should be similar. It is important to note that the Quad simply represents a bounded 2D plane that is localized in space. By having your engine/framework know where the quad is and rooting your objects relative to the quad, your holograms will be located correctly with respect to the real world. 
+
+<!-- 
+// TODO: Add sample link when released
+For more detailed information please see our samples on quads which show specific implementations.
+-->
 
 ### Mesh
 

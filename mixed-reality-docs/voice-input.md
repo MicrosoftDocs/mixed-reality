@@ -101,6 +101,8 @@ If you're already in the Cortana app you can also click the **?** icon on the si
 * "Take a picture"
 * "Start recording"
 * "Stop recording"
+* "Show hand ray"
+* "Hide hand ray"
 * "Increase the brightness"
 * "Decrease the brightness"
 * "Increase the volume"
@@ -307,8 +309,7 @@ All this audio processing is hardware accelerated which means the features drain
 
 ## Languages
 
-HoloLens 2 also supports additional languages. 
-Keep in mind that speech commands will always run in the system's display language even if multiple keyboards are installed or if apps attempt to create a speech recognizer in a different language.
+HoloLens 2 [supports multiple languages](https://docs.microsoft.com/hololens/hololens2-language-support). Keep in mind that speech commands will always run in the system's display language even if multiple keyboards are installed or if apps attempt to create a speech recognizer in a different language.
 
 ## Troubleshooting
 
