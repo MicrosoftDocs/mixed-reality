@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 3. Connecting multiple users
 
-In this tutorial, you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial, you will be able to run the application on multiple devices and have each user see the avatar of other users move in real-time.
+In this tutorial, you will learn how to connect multiple users as part of a live shared experience. By the end of the tutorial, you will be able to run the app on multiple devices and have each user see the avatar of other users move in real-time.
 
 ## Objectives
 
@@ -46,7 +46,7 @@ In the Hierarchy window, right-click on an empty area and select **Create Empty*
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
 
-With the **PhotonUser** object still selected, in the Inspector window, use the **Add Component** button to add the **Photon User (Script)** component to the PhotonUser object:
+In the Hierarchy window, select the **PhotonUser** object, then in the Inspector window, use the **Add Component** button to add the **Photon User (Script)** component to the PhotonUser object:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
 
@@ -102,15 +102,15 @@ In the Hierarchy window, expand the **NetworkLobby** object and select the **Net
 
 ## Trying the experience with multiple users
 
-If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
+If you now build and deploy the Unity project to your HoloLens, then, back in Unity, enter Game mode while the app is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
 
 > [!CAUTION]
-> The application needs to connect to Photon, so make sure your computer/device is connected to the internet.
+> The app needs to connect to Photon, so make sure your computer/device is connected to the internet.
 
 ## Congratulations
 

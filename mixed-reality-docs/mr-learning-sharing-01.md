@@ -24,7 +24,7 @@ Tutorials in this series:
 
 ## Objectives
 
-* Learn how to create a PUN application and connect your Unity project to it
+* Learn how to create a PUN app and connect your Unity project to it
 * Learn how to connect multiple users in a shared experience
 * Learn how to share the object movements with other users
 * Learn how to achieve spatial alignment between multiple devices

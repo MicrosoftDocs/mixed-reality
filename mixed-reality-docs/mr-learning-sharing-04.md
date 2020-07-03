@@ -11,12 +11,12 @@ ms.localizationpriority: high
 
 # 4. Sharing object movements with multiple users
 
-In this tutorial, you will learn how to share the movements of objects so that all participants of a shared experience can collaborate and view each others' interactions.
+In this tutorial, you will learn how to share the movements of objects so that all participants of a shared experience can collaborate and view each other's interactions.
 
 ## Objectives
 
 * Configure your project to share the movements of objects
-* Learn how to build a basic multi-user collaborative application
+* Learn how to build a basic multi-user collaborative app
 
 ## Preparing the scene
 
@@ -28,7 +28,7 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCa
 
 ## Configuring PUN to instantiate the objects
 
-In this section, you will configure the project to use the Rover Explorer experience that was created during the [Getting started tutorials](mr-learning-base-01.md) and define where it will be instantiated.
+In this section, you will configure the project to use the Rover Explorer experience created during the [Getting started tutorials](mr-learning-base-01.md) and define where it will be instantiated.
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder.
 
@@ -46,12 +46,12 @@ With the **NetworkRoom** child object still selected, in the Hierarchy window, e
 
 ## Trying the experience with shared object movement
 
-If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the application is running on your HoloLens, you will see the object move in Unity when you move the object in HoloLens:
+If you now build and deploy the Unity project to your HoloLens, and then, back in Unity, press the Play button to enter Game mode while the app is running on your HoloLens, you will see the object move in Unity when you move the object in HoloLens:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
 
 ## Congratulations
 
-You have successfully configured your project so object movements are synchronized and users can see the objects move when other users move the objects. In the next tutorial, you will implement functionality so the shared experience is aligned in the physical world and the users see each other in their actual physical location and so the objects appear in the same physical position and rotation for all users.
+You have successfully configured your project to synchronize object movements so users can see the objects move when other users move them. In the next tutorial, you will implement functionality to align the experience in the physical world. This will ensure the users see each other in their actual physical location, and so the objects appear in the same physical position and rotation for all users.
 
 [Next Tutorial: 5. Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md)
