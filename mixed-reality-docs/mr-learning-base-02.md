@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 ## Overview
 
-In this tutorial, you will learn how to create and configure your Unity project and scene for <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> development.
+In this tutorial, you'll learn how to create and configure your Unity project and scene for <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> development.
 
 ## Objectives
 
