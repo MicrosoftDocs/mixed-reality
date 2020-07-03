@@ -1,28 +1,26 @@
-# What's new? 
-## [Get your app ready for HL2](mrtk-porting-guide.md)
-## [Learn about Azure Services](azure-services.md)
-## [Get ready for the new Microsoft Edge](new-microsoft-edge.md)
-## Programs and events
-### [San Francisco Reactor Academy events calendar](sf-academy-events.md)
-### [Mixed Reality Dev Days](mr-dev-days.md)
-#### [Session Recordings](mr-dev-days-sessions.md)
-## [Current mixed reality release notes](release-notes-may-2020.md)
-## [Community Resources](community.md)
-## [Contributing to this documentation](CONTRIBUTING.md)
+<!-- Hub landing page -->
+# [Welcome to Mixed Reality](mixed-reality-hub-index.yml)
+
+<!-- Discover top level folder -->
 # Discover
 ## [Get started with mixed reality](index.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-## [Case study gallery](case-studies-overview.md)
+
 ## HoloLens hardware
 ### [HoloLens 2 hardware details](https://docs.microsoft.com/hololens/hololens2-hardware)
 ### [HoloLens (1st gen) hardware details](https://docs.microsoft.com/hololens/hololens1-hardware)
+
 ## Immersive headsets
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
 ### [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 ### [Enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)
 ### [Location based entertainment](location-based-experiences.md)
-## [Hardware accessories](hardware-accessories.md)
+
 ## [Community Resources](community.md)
+## [Case study gallery](case-studies-overview.md)
+## [Hardware accessories](hardware-accessories.md)
+
+<!-- Design top level folder -->
 # Design
 ## [Start designing and prototyping](design.md)
 ## [About this design guidance](about-this-design-guidance.md)
@@ -100,9 +98,11 @@
 ### [Asset creation process](asset-creation-process.md)
 ### [Design your own immersive environments](add-custom-home-environments.md)
 
+<!-- Develop top level folder -->
 # Develop
 ## [Learn the tools and architecture](development.md)
 ## [Install the tools](install-the-tools.md)
+## [Get your app ready for HL2](mrtk-porting-guide.md)
 
 ## Mixed reality cloud services
 ### [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering)
@@ -304,11 +304,27 @@
 ### [Updating your SteamVR application for Windows Mixed Reality](updating-your-steamvr-application-for-windows-mixed-reality.md)
 ### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
 
+<!-- Distribute top level folder -->
 # Distribute
-## [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
-## [Create 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
-## [Implement 3D app launchers (UWP apps)](implementing-3d-app-launchers.md)
-## [Implement 3D app launchers (Win32 apps)](implementing-3d-app-launchers-win32.md)
-## [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
+## 3D app launchers
+### [Design guidance](3d-app-launcher-design-guidance.md)
+### [Creating 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+### Implementing 3D app launchers
+#### UWP apps](implementing-3d-app-launchers.md)
+#### Win32 apps](implementing-3d-app-launchers-win32.md)
+### [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 ## [In-app purchases](in-app-purchases.md)
 ## [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
+
+<!-- What's new? top level folder -->
+# What's new? 
+## [Learn about Azure Services](azure-services.md)
+## [Get ready for the new Microsoft Edge](new-microsoft-edge.md)
+## Programs and events
+### [San Francisco Reactor Academy events calendar](sf-academy-events.md)
+### [Mixed Reality Dev Days](mr-dev-days.md)
+#### [Session Recordings](mr-dev-days-sessions.md)
+## [Current mixed reality release notes](release-notes-may-2020.md)
+## [Community Resources](community.md)
+## [Contributing to this documentation](CONTRIBUTING.md)
+## [Deploying HoloLens at scare](https://docs.microsoft.com/hololens/)
