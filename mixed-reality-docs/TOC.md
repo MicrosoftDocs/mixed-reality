@@ -144,6 +144,9 @@
 ###### [3. Spatializing audio from a video](unity-spatial-audio-ch3.md)
 ###### [4. Enabling and disabling spatial audio at run time](unity-spatial-audio-ch4.md)
 ###### [5. Using reverb to add distance to spatial audio](unity-spatial-audio-ch5.md)
+#### PC Holographic Remoting tutorials
+##### [1. Getting started with PC Holographic Remoting](mr-learning-pc-holographic-remoting-01.md)
+##### [2. Creating a Holographic Remoting PC application](mr-learning-pc-holographic-remoting-02.md)
 #### HoloLens 2 open source sample apps
 ##### [Surfaces](sampleapp-surfaces.md)
 ##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
