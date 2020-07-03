@@ -4,7 +4,7 @@
 <!-- Discover top level folder -->
 # Discover
 ## [Get started with mixed reality](index.md)
-## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
+## [Thinking differently for mixed reality](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 ## HoloLens hardware
 ### [HoloLens 2 hardware details](https://docs.microsoft.com/hololens/hololens2-hardware)
@@ -310,8 +310,8 @@
 ### [Design guidance](3d-app-launcher-design-guidance.md)
 ### [Creating 3D models for use in the home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 ### Implementing 3D app launchers
-#### UWP apps](implementing-3d-app-launchers.md)
-#### Win32 apps](implementing-3d-app-launchers-win32.md)
+#### [UWP apps](implementing-3d-app-launchers.md)
+#### [Win32 apps](implementing-3d-app-launchers-win32.md)
 ### [Enable placement of 3D models in the home](enable-placement-of-3d-models-in-the-home.md)
 ## [In-app purchases](in-app-purchases.md)
 ## [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
