@@ -48,7 +48,7 @@ Once you have a storage account, you can retrieve the connection string from the
 
 ### Optional Azure Storage Explorer
 
-While you can see and verify all data changes from the UI inside the application, you recommend to install [Azure storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure storage and is of great help when debugging and learning.
+While you can see and verify all data changes from the UI inside the application, we recommend to install [Azure storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure storage and is of great help when debugging and learning.
 
 > [!TIP]
 > For testing from inside the Unity editor you can use a local emulator:
@@ -70,13 +70,13 @@ The **DataManager (script)** is responsible for talking to the **Table storage**
 
 With everything prepared it's time to create a *Tracked Object*.
 
-Build the application and deploy to your HoloLens, now click on the **Set Object**, you will see how the *EnterObjectName* object will become active in the hierarchy. In this menu click on the *search bar* and type in the name you want to give the *Tracked Object*. After providing a name click on the **Set object** button. This will create the *Tracked Object* on the Azure Table storage and you will see now the **Object Card**.
+Open the application on your HoloLens, click on the **Set Object** and you will see how the *EnterObjectName* object will become active in the hierarchy. In this menu click on the *search bar* and type in the name you want to give the *Tracked Object*. After providing a name click on the **Set object** button. This will create the *Tracked Object* on the Azure Table storage and you will see now the **Object Card**.
 
 This **Object Card** is a UI representation of the *Tracked Object* and will have an important role several times in this tutorial series.
 
-Now click on the description *text box* and type in something, after that click on the **Save** button to save the changes. Stop the application and rerun it.
+Now click on the description *text box* and type in "Car", after that click on the **Save** button to save the changes. Stop the application and rerun it.
 
-Now this time click on **Search Object** and type in the *search bar* the name you have used before when creating the *Tracked Object*. You will see that the **Object Card** with all the data is restored from the **Azure Table storage**.
+Now this time click on **Search Object** and type in the *search bar* the name you have used before when creating the *Tracked Object*. You will see that the **Object Card** with all the data is retrieved from the **Azure Table storage**.
 
 Feel free to close the **Object Card** and create new *Tracked Objects* and edit their data.
 
@@ -90,13 +90,21 @@ In this section you will use the Azure Blob storage to upload and download image
 > [!NOTE]
 > In this tutorial the application will take photos to upload images to the Blob storage. If you are running this locally from the Unity editor, then make sure that you have a webcam connected to your computer.
 
-Build the updated application and deploy to your HoloLens, click on **Set Object** and type in the *search bar* the name of the *Tracked Object* you have created before. Now you should see the **Object Card**, click on the **Camera** button and you will be instructed to do an AirTap to take a photo. After taking a photo you will see a message that informs you about the active upload and after a while the image should appear where the placeholder was before.
+Open the application on your HoloLens, click on **Set Object** and type in the *search bar* the name "Car". Now you should see the **Object Card**, click on the **Camera** button and you will be instructed to do an AirTap to take a photo. After taking a photo you will see a message that informs you about the active upload and after a while the image should appear where the placeholder was before.
 
 Now rerun the application and search for the *Tracked Object* and the previously uploaded image should appear as thumbnail.
 
+## Deleting image from Azure Blob storage
+
+In the previous section you uploaded new images to Azure Blob storage, in this section you will delete an image thumbnail for *Tracked Objects*.
+
+Open the application on your HoloLens, click on **Set Object** and type in the *search bar* the name "Car". Now you should see the **Object Card** with the thumbnail image, click on the **Delete** button. You will notice that the thumbnail image is replaced by the placeholder image.
+
+Now rerun the application and search for the *Tracked Object* of the previously deleted thumbnail, you should only see the placeholder image.
+
 ## Congratulations
 
-In this tutorial you learned how Azure storage services can be used to persist unstructured data and binaries for the demo **HoloLens 2** application on the cloud.
+In this tutorial you learned how Azure storage services can be used to persist unstructured data, like in our case **Tracked Objects** and binaries in form of thumbnail images for the **HoloLens 2** demo application on the cloud.
 
 In the next tutorial you will learn how to use Azure Custom Vision to detect images associated with a *Tracked Object*.
 

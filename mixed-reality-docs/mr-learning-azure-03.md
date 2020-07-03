@@ -29,7 +29,7 @@ Learn more about [Azure Custom Vision](https://docs.microsoft.com/azure/cognitiv
 
 Before you can start, you have to create a custom vision project, the fastest way is by using the web portal.
 
-Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) to setup your account and project until section [Upload and tag images](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#upload-and-tag-images).
+Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) to setup your account and project until section *Upload and tag images*.
 
 > [!WARNING]
 > To train a model you need to have at least 2 tags and 5 images per tag. To use this application you should at least create one tag with 5 images, so that the training process later won't fail.
@@ -38,22 +38,32 @@ Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-ser
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial3-section4-step1-1.png)
+![mrlearning-azure](images/mr-learning-azure/tutorial3-section4-step1-1.png)
 
 From there drag the prefab **ObjectDetectionManager** into the scene Hierarchy.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial3-section4-step1-2.png)
+![mrlearning-azure](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 In the Hierarchy window locate the **ObjectDetectionManager** object and select it.
-The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on several settings. Those settings you have to retrieve from two places, first from the **Azure Portal** and secondly from the **Custom Vision Dashboard** website.
+The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on several settings.
 
-Now find the **SceneController** object in your scene Hierarchy and select it.
+## Retrieving Azure api resource credentials
 
-![mrlearning-azure](images/mrlearning-azure/tutorial3-section4-step1-3.png)
+The necessary credentials for the **ObjectDetectionManager (script)** settings can be retrieve from the Azure Portal and the custom vision portal.
+
+### Azure Portal
+Find and locate the custom vision resource of type **Cognitive Services** you have created in the *Preparing the scene* section of this tutorial. There click on *Keys and Endpoint* to retrieve the necessary credentials.
+
+### Custom Vision Dashboard
+In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you have created for this tutorial and click on the top right corner of the page on the gear icon to open the settings page. Here on the right hand *Resources* section you will find the necessary credentials.
+
+Now with the **ObjectDetectionManager (script)** setup correctly, find the **SceneController** object in your scene Hierarchy and select it.
+
+![mrlearning-azure](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
 You see *Object Detection Manager* field in the **SceneController** component is empty, drag the **ObjectDetectionManager** from the Hierarchy into that field and save the scene.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial3-section4-step1-4.png)
+![mrlearning-azure](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
 ## Take and upload images
 
@@ -71,7 +81,7 @@ Once you have enough images click on the **Train** button to start the model tra
 
 ## Detect objects
 
-Let's put the trained model to the test, run the application and from the *main menu* click on **Set Object** and type the name of the **Tracked Object** in question. The **Object Card** will appear and click on the **Custom Vision** button. From here the **ObjectDetectionManager** will start taking captures from the camera and the progress will be indicated on the menu. Point the camera to the object you used to train the model and you will see that after a short while it will detect the object.
+You can now put the trained model to the test, run the application and from the *main menu* click on **Search Object** and type the name of the **Tracked Object** in question. The **Object Card** will appear and click on the **Custom Vision** button. From here the **ObjectDetectionManager** will start taking image captures in the background from the camera and the progress will be indicated on the menu. Point the camera to the object you used to train the model and you will see that after a short while it will detect the object.
 
 ## Congratulations
 

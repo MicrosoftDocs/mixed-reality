@@ -95,7 +95,7 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 Download and **import** the following Unity custom packages **in the order they are listed**:
 
 * [Azure storage for Unity](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/AzureStorageForUnity.unitypackage)
-* [Azure Spatial Anchors](https://github.com/Azure/azure-spatial-anchors-samples/releases/tag/v2.2.1)
+* [Azure Spatial Anchors](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
 * [MRTK.Tutorials.AzureCloudServices](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
@@ -120,7 +120,7 @@ The **RootMenu (prefab)** is the primary UI prefab that holds all UI windows tha
 
 The **DataManager (prefab)** is responsible for talking to Azure storage and will be explained further in the next tutorial.
 
-Now with the four prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
 ![mr-learning-azure](images/mr-learning-azure/tutorial1-section5-step1-2.png)
 
@@ -145,7 +145,7 @@ In the Inspector window, locate the **DataManager (Script)** component and add a
 
 ![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-2.png)
 
-Now select in the Hierarchy window the **SceneController** object and drag it into the **On Data Manager Ready ()** event and select from the dropdown menu **SceneController.Init**:
+Now select in the Hierarchy window the **SceneController** object and drag it into the **On Data Manager Ready ()** event. You will notice that the dropdown menu of the event can be now changed, click on the dropdown menu and navigate to **SceneController** and finally in the sub menu click **Init ()**:
 
 ![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
@@ -179,7 +179,7 @@ In the  **Publishing Settings**, scroll down to the **Capabilities** section and
 
 ### 2. Deploy the app to your HoloLens 2
 
-Features like Azure Spatial Anchors from the fourth [Integrating Azure Spatial Anchors](mr-learning-azure-04.md) tutorial can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
+Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-ch1.md#build-your-application-to-your-device) instructions.
