@@ -36,17 +36,17 @@ In this section, you will learn how to configure the scene and make the necessar
 
 In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-![mrlearning-azure](images/mrlearning-azure/tutorial4-section1-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
 Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial4-section1-step2-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
 Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial4-section1-step3-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
 
@@ -55,7 +55,7 @@ You will observe that the **Anchor Manager** field in the **Scene Controller** c
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mrlearning-base-ch1.md#build-your-application-to-your-device) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mr-learning-base-ch1.md#build-your-application-to-your-device) instructions.
 
 ## Run the app on your HoloLens 2 and follow the in-app instructions
 
@@ -95,4 +95,4 @@ In this tutorial, you learned how Azure Spatial Anchors could save and retrieve 
 
 In the final tutorial, you will learn how to use the **Azure Bot Service** to add natural language as a new interaction method for our application.
 
-[Next tutorial: 5. Integrating Azure Bot Service with LUIS](mrlearning-azure-05.md)
+[Next tutorial: 5. Integrating Azure Bot Service with LUIS](mr-learning-azure-05.md)

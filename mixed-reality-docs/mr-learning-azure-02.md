@@ -29,7 +29,7 @@ Learn more about [Azure storage services](https://docs.microsoft.com/azure/stora
 
 This services allows us to store data in a NoSQL fashion, in this project we will use it to store information about the *Tracked Object* such as: name, description, spatial anchor id, and more.
 
-In context of the demo application, you need two Tables, one to store information about the project with information about the state of trained models more about that in the ([Integrating Azure Custom Vision](mrlearning-azure-03.md)) tutorial and a second table to store information about *Tracked Objects*.
+In context of the demo application, you need two Tables, one to store information about the project with information about the state of trained models more about that in the ([Integrating Azure Custom Vision](mr-learning-azure-03.md)) tutorial and a second table to store information about *Tracked Objects*.
 
 Learn more about [Azure Table storage](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
 
@@ -60,9 +60,9 @@ While you can see and verify all data changes from the UI inside the application
 
 In the Hierarchy window, locate the **DataManager** object and select it.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial2-section4-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
-From the Inspector window you will see that in the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure Portal. If you are using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
+From the Inspector window you will see that the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure Portal. If you are using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
 
 The **DataManager (script)** is responsible for talking to the **Table storage** and **Blob storage** which is consumed by other controller scripts on the UI components.
 
@@ -108,4 +108,4 @@ In this tutorial you learned how Azure storage services can be used to persist u
 
 In the next tutorial you will learn how to use Azure Custom Vision to detect images associated with a *Tracked Object*.
 
-[Next tutorial: 3. Integrating Azure Custom Vision](mrlearning-azure-03.md)
+[Next tutorial: 3. Integrating Azure Custom Vision](mr-learning-azure-03.md)

@@ -62,14 +62,14 @@ You can download the latest releases from the [Github repository](https://github
 
 Once the **Bot Framework Composer** is installed, start the application and you should see this interface:
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section4-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section4-step1-1.png)
 
 You have prepared a bot composer project which provides the needed dialogues and triggers for this tutorial.
 Download the project: [Bot Framework Composer project](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/BotComposerProject_TrackedObjectsBot.zip)
 
 On the top bar click on **Open** and select the Bot Framework project you have downloaded which is named **TrackedObjectsBot**. After the project is fully loaded, you should see the project ready.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section4-step1-2.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section4-step1-2.png)
 
 Let's focus on the left side where you can see the **Dialogs Panel**. There you have one dialog named **TrackedObjectsBot** under which you can see several **Triggers**.
 
@@ -81,7 +81,7 @@ These triggers do the following:
 
 This is the entry point of the chat *bot* when ever a *user* initiates a conversation.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section4-step1-3.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section4-step1-3.png)
 
 #### AskingForCount
 
@@ -91,7 +91,7 @@ These are the trigger phrases:
 >* count me all
 >* how many are stored
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section4-step1-4.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section4-step1-4.png)
 
 Thanks to [LUIS](https://docs.microsoft.com/composer/how-to-use-luis) the *user* does not have to ask the phrases in that exact way which allows a natural conversation for the *user*.
 
@@ -101,14 +101,14 @@ In this dialog the *bot* will also talk to the **Count** Azure Function, more ab
 
 This dialogue is triggered if the input from the *user* does not fit any other trigger condition and responses the user with trying his question again.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section4-step1-5.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section4-step1-5.png)
 
 #### FindEntity
 
 The last dialogue is more complex with branching and storing data in the *bots* memory.
 It asks the user for the *name* of the **Tracked Object** it want's to know more information about, performs a query to the **Find** Azure Function, and uses the response to proceed with the conversation.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section4-step1-6.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section4-step1-6.png)
 
 If the **Tracked Object** is not found, the user is informed and the conversation ends. When the **Tracked Object** in question is found, the boot will check what properties are available and report on them.
 
@@ -118,11 +118,11 @@ The **AskingForCount** and **FindEntity** trigger need to talk to the backend, t
 
 On the dialog panel click on **AskingForCount** and locate the *Send an HTTP request* action, here you can see the field **URL** which you need to change the correct URL for the **Count** function endpoint.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section5-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section5-step1-1.png)
 
 Finally, look for the **FindEntity** trigger and locate the *Send an HTTP request* action, in the **URL** field change the URL to the **Find** function endpoint.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section5-step1-2.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section5-step1-2.png)
 
 With everything set you are now ready to deploy the Bot. Since you have Bot Framework composer installed, you can publish it directly from there.
 
@@ -137,29 +137,29 @@ Learn more about [Publish a bot from Bot Composer](https://docs.microsoft.com/co
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section6-step1-1.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section6-step1-1.png)
 
 From there move the prefab **ChatBotManager** into the scene Hierarchy.
 
 Once you add the ChatBotManager to the scene, click on the **Chat Bot Manager** component.
-In the Inspector you will find the **SceneController** field, locate the **SceneController** object from the Hierarchy and drag it to the empty field. You will see that there is also the empty **Chat Bot Endpoint** field. The ChatBotManager will use the Rest API to talk with ChatBotManager, so in this field you have to provide the endpoint where the *bot* is hosted.
+In the Inspector you will see that there is an empty **Direct Line Secret Key** field which you need to fill out.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section6-step1-2.png)
+> [!TIP]
+> You can retrieve the *secret key* from the Azure portal by looking for the resource of type **Bot Channels Registration** you have created in the first part of this tutorial.
 
-Now you need a method to invoke the chatbot, the main menu has a *Chat Bot button* you will use for this.
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section6-step1-2.png)
 
-In the Hierarchy locate **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** and locate in the Inspector the *ButtonConfigHelper* script. There you will find the **OnClick()** event callback. Drag and drop the **ChatBotManager** and from the dropdown select *ChatBotManager.StartConversation*.
+Now you will connect the **ChatBotManager** object with the **ChatBotController** component that is attached to the **ChatBotPanel** object. In the Hierarchy select the **ChatBotPanel** and you will see an empty **Chat Bot Manager** field, drag from the Hierarchy the **ChatBotManager** object into the empty **Chat Bot Manager** field.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section6-step1-3.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section6-step1-3.png)
 
-This way you can now invoke the chat bot but you must prevent the button from being pressed again while a conversation is running.
+Next you need a way to open the **ChatBotPanel** so that the user can interact with it. From the Scene window you may have noticed that there is a *Chat Bot* side button on the **MainMenu** object, you will use it to solve this problem.
 
-Select from the Hierarchy the **ChatBotManager** object and you will find on the *Chat Bot Manager* that it has two event callbacks. For both events click on the **+** icon and drop the **ButtonChatBot** object on each. For *On Conversation Started* select from the dropdown menu *Interactable.IsEnabled*, do the same for *On Conversation Finished* but enabled the checkbox.
+In the Hierarchy locate **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** and locate in the Inspector the *ButtonConfigHelper* script. There you will see an empty slot on the **OnClick()** event callback. Drag and drop the **ChatBotPanel** to the event slot, from the dropdown list navigate *GameObject*, then select in the sub menu *SetActive (bool)* and enable the checkbox.
 
-![mrlearning-azure](images/mrlearning-azure/tutorial5-section6-step1-4.png)
+![mr-learning-azure](images/mr-learning-azure/tutorial5-section6-step1-4.png)
 
-This will make sure that the **ButtonChatBot** button stays disabled while a conversation is active.
-Now everything is setup you can test the bot in the demo application.
+Now the chat bot can be stared from the main menu and with that the scene is ready for use.
 
 ### Putting the bot to a test
 
@@ -168,17 +168,18 @@ Now everything is setup you can test the bot in the demo application.
 First you test asking the bot how many **Tracked Objects** are stored in the database.
 
 > [!NOTE]
-> This time you must run the application from the HoloLens 2 because services like text to speech may not be available on your system.
+> This time you must run the application from the HoloLens 2 because services like *text-to-speech* may not be available on your system.
 
-Run the application and click on the *Chat Bot* button.
-The bot will be greeting you, now ask **how many objects do you have?**
+Run the application on your HoloLens 2 and click on the *Chat Bot* button next to the main menu.
+The bot will be greeting you, now ask **how many objects do we have?**
 It should tell you the quantity and end the conversation.
 
 #### Asking about a tracked object
 
-Now run the demo application again and this time ask **find me a specific object**, the bot will be asking you the name to which you should respond with the name of a *Tracked Object* you know exists in the database. The bot will tell you details like description and if it has a spatial anchor assigned.
+Now run the application again and this time ask **find me a tracked object**, the bot will be asking you the name to which you should respond with the "car" or the name of an other *Tracked Object* you know exists in the database. The bot will tell you details like description and if it has a spatial anchor assigned.
 
-Try out what happens if you ask for an **Tracked Objects** that does not exist.
+> [!TIP]
+> Try out asking for an **Tracked Objects** that does not exist and hear how the bot responds.
 
 ## Congratulations
 

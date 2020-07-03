@@ -141,11 +141,11 @@ In the Hierarchy window, select the **DataManager** object:
 
 ![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-1.png)
 
-In the Inspector window, locate the **DataManager (Script)** component and add a new event listener to the **On Data Manager Ready ()** event by clicking the **+** icon:
+In the Inspector window, locate the **DataManager (Script)** component and you will see an empty slot on the **On Data Manager Ready ()** event. Now from the Hierarchy window drag the **SceneController** object into the **On Data Manager Ready ()** event.
 
 ![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-2.png)
 
-Now select in the Hierarchy window the **SceneController** object and drag it into the **On Data Manager Ready ()** event. You will notice that the dropdown menu of the event can be now changed, click on the dropdown menu and navigate to **SceneController** and finally in the sub menu click **Init ()**:
+You will notice that the dropdown menu of the event became active, click on the dropdown menu and navigate to **SceneController** and in the sub menu select the **Init ()** option:
 
 ![mr-learning-azure](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
