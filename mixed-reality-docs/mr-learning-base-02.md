@@ -81,7 +81,7 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 > [!TIP]
 > The TextMeshPro Essential Resources are required by MRTK's UI elements. You can skip this step if you are not planning to use MRTK's UI elements in your project.
 
-## Importing the MRTK
+## Importing the Mixed Reality Toolkit
 
 Download the Unity custom package:
 
