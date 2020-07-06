@@ -13,6 +13,11 @@ keywords: HoloLens, Remoting, Holographic Remoting
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.2.1 (July 6, 2020) <a name="v2.2.0"></a>
+> [!IMPORTANT]
+> [Windows App Certification Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit/) validation with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) will fail. In case you are on version [2.2.0](holographic-remoting-version-history.md#v2.2.0) please updated to at least version [2.2.1](holographic-remoting-version-history.md#v2.2.1)
+* Fixed [Windows App Certification Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit/) compliance issues.
+
 ## Version 2.2.0 (July 1, 2020) <a name="v2.2.0"></a>
 * The Holographic Remoting player can now be installed on PCs running [Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md) and thus streaming to immersive headsets is now possible.
 * [Motion controllers](motion-controllers.md) are now supported by Holographic Remoting and controller specific data can be retrieved via [SpatialInteractionSource.Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller).
