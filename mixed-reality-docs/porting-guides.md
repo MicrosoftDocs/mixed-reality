@@ -12,7 +12,7 @@ keywords: port, porting, unity, middleware, engine, UWP
 
 # Porting guides
 
-Windows 10 includes support for immersive and holographic headsets directly. If you have built content for another device such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) only work in the Universal Windows Platform (UWP) app model. So if your app is not already built for UWP, porting to UWP will be part of the porting experience.
+Windows 10 includes support for immersive and holographic headsets directly. If you have built content for another device such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) work with both the Windows x86 and the Universal Windows Platform (UWP) app model. If your app is not already built for UWP, porting to UWP will be part of the porting experience.
 
 ## Porting overview
 
@@ -37,10 +37,10 @@ The Windows Mixed Reality platform is still under active development, and to be 
 3. Enable [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
 4. Switch to the [Windows Insider Fast flights](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) through Settings --> Update & Security Section
 
-### Common step 3: Upgrade to the most recent build of Visual Studio
+### Common step 3: Upgrade to the most recent build of Visual Studio (UWP only)
 * Please see [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2019
 
-### Common step 4: Be Ready for The Store
+### Common step 4: Be Ready for The Store (UWP only)
 * Use [Windows App Certification Kit](https://developer.microsoft.com/windows/develop/app-certification-kit) (aka WACK) early and often!
 * Use [Portability Analyzer](https://docs.microsoft.com/dotnet/standard/portability-analyzer) ([Download](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer))
 
@@ -66,17 +66,27 @@ With any Unity update, there is a good chance that you need to update one or mor
 
 ### Unity step 4: Target your application to run on Universal Windows Platform (UWP)
 
+If you are targeting Windows x86 then you can skip this step and continue to step 5.
+
 After installing the tools, you need to get your app running as a Universal Windows app.
 
 * Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. Please note that you should stay on the latest LTS release (any 20xx.4 release) for Windows MR.
 * For more UWP development resources, take a look at the [Windows 10 game development guide](https://docs.microsoft.com/windows/uwp/gaming/e2e).
 * Please note that Unity continues to improve IL2CPP support; IL2CPP makes some UWP ports significantly easier. If you are currently targeting the .NET scripting backend, you should consider converting to leverage the IL2CPP backend instead.
+* You can skip "Unity step 5" since you are targeting UWP, not x86.
 
 Note: If your application has any dependencies on device specific services, such as match making from Steam, you will need to disable them at this step. At a later time, you can hook up to the equivalent services that Windows provides.
 
-### Unity step 5: (Deprecated)
+### Unity step 5: Target your application to run on Windows x86
 
-Step 5 is no longer required. We are leaving it here so that the indexing of steps remains the same.
+From inside your Unity application:
+
+* Navigate to File -> Build Settings
+* Select "PC, Mac, Linux Standalone"
+* Set target platform to "Windows"
+* Set architecture to "x86"
+Select "Switch Platform"
+
 
 ### Unity step 6: Get your Windows Mixed Reality hardware set up
 1. Review steps in [Immersive headset setup](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
