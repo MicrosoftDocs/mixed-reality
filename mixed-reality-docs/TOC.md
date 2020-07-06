@@ -103,10 +103,13 @@
 ## [Learn the tools and architecture](development.md)
 ## [Install the tools](install-the-tools.md)
 ## [Get your app ready for HL2](mrtk-porting-guide.md)
+## [Cloud services overview](mixed-reality-cloud-services.md)
 
+<!-- Deprecated 
 ## Mixed reality cloud services
 ### [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering)
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+-->
 
 ## [Tutorials and sample apps](tutorials.md)
 ### Unity

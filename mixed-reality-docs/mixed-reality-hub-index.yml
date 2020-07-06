@@ -86,9 +86,11 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-          - text: Learn about Azure Spatial Anchors
+          - text: Cloud services overview
+            url: mixed-reality-cloud-services.md
+          - text: Jump into Azure Spatial Anchors
             url: https://docs.microsoft.com/azure/spatial-anchors/
-          - text: Learn about Azure Remote Rendering
+          - text: Develop with Azure Remote Rendering
             url: https://docs.microsoft.com/azure/remote-rendering/
 
   - title: Check out what's new!
