@@ -1,7 +1,7 @@
 ---
 title: Porting guides
 description: A step by step walthrough explaining how to port an existing immersive application to Windows Mixed Reality.
-author: chimerascorn
+author: JBrentJ
 ms.author: alexturn
 ms.date: 10/02/2018
 ms.topic: article
