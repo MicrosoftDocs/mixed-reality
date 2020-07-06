@@ -13,9 +13,9 @@ keywords: HoloLens, Remoting, Holographic Remoting
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
-## Version 2.2.1 (July 6, 2020) <a name="v2.2.0"></a>
+## Version 2.2.1 (July 6, 2020) <a name="v2.2.1"></a>
 > [!IMPORTANT]
-> [Windows App Certification Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit/) validation with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) will fail. In case you are on version [2.2.0](holographic-remoting-version-history.md#v2.2.0) please updated to at least version [2.2.1](holographic-remoting-version-history.md#v2.2.1)
+> [Windows App Certification Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit/) validation with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) will fail. In case you are on version [2.2.0](holographic-remoting-version-history.md#v2.2.0) and want to submit your application to the Microsoft store please updated to at least version 2.2.1.
 * Fixed [Windows App Certification Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit/) compliance issues.
 
 ## Version 2.2.0 (July 1, 2020) <a name="v2.2.0"></a>
