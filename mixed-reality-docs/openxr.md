@@ -12,7 +12,9 @@ keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engin
 
 # OpenXR
 
-<img style="float: right;" src="images/openxr.png" alt="OpenXR logo">
+<div style="float: right">
+![OpenXR logo](images/openxr.png)
+</div>
 
 OpenXR is an open royalty-free API standard from <a href="https://www.khronos.org/" target="_blank">Khronos</a> that provides engines native access to a wide range of devices from many vendors that span across the [mixed reality spectrum](mixed-reality.md).
 
