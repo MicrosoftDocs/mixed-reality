@@ -15,22 +15,22 @@ In this tutorial, you will learn how to save Azure Spatial Anchors across multip
 
 ## Objectives
 
-* Learn how to achieve spatial alignment across multiple app sessions
-* Learn how to achieve spatial alignment between multiple devices
+* Learn how to achieve spatial alignment across multiple app sessions.
+* Learn how to achieve spatial alignment between multiple devices.
 
 ## Preparing the scene
 
-In the Hierarchy window, expand the **ButtonParent** object and select the **last four child button** objects, then in the Inspector window, **check** the checkbox next to the name field to make all the objects active:
+In the Hierarchy window, expand the **ButtonParent** object. Select the **last four child button** objects. In the Inspector window, **check** the checkbox next to the name field to make all the objects active.
 
 ![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
-In the Hierarchy window, select the **ButtonParent** objects, then in the Inspector window, locate the **GridObjectCollection** component and click the **Update Collection** button to update the position of all the **ButtonParent** object's child objects:
+In the Hierarchy window, select the **ButtonParent** objects. Then in the Inspector window, locate the **GridObjectCollection** component and click the **Update Collection** button to update the position of all the **ButtonParent** object's child objects.
 
 ![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-2.png)
 
 ## Persisting Azure Spatial Anchors between app sessions
 
-In this section, you will learn how to save and retrieve the Azure Anchor ID to and from the HoloLens' local disk. This will allow you to query Azure for the same anchor ID between different app sessions, allowing the anchored holograms to be position at the same location as in the previous app session.
+In this section, you will learn how to save and retrieve the Azure Anchor ID to and from the HoloLens' local disk. This will allow you to query Azure for the same anchor ID between different app sessions. It allows the anchored holograms to be positioned at the same location as in the previous app session.
 
 In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **SaveAzureAnchorIdToDisk** and **GetAzureAnchorIdFromDisk**:
 
@@ -43,25 +43,25 @@ Follow the same steps as in the [configuring the buttons to operate the scene](m
 
 If you build the updated application to your HoloLens, you can now persist Azure Spatial Anchors between app sessions by saving the Azure Anchor ID. To test it out, you can follow these steps:
 
-1. Move the Rover Explorer to desired location
-2. Start Azure Session
-3. Create Azure Anchor (creates anchors at the location of the Rover Explorer)
-4. Save Azure Anchor ID to Disk
-5. Restart the application
-6. Get Azure Anchor from Disk (loads the anchor ID you just saved)
-7. Start Azure Session
-8. Find Azure Anchor (positions the Rover Explorer at the location from step 3)
+1. Move the Rover Explorer to the desired location.
+2. Start Azure Session.
+3. Create Azure Anchor (creates anchors at the location of the Rover Explorer).
+4. Save Azure Anchor ID to Disk.
+5. Restart the application.
+6. Get Azure Anchor from Disk (loads the anchor ID you just saved).
+7. Start Azure Session.
+8. Find Azure Anchor (positions the Rover Explorer at the location from step 3).
 
 > [!NOTE]
 > To fully restart the application, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching the application from the Start menu. For additional details, you can refer to the [Using apps on HoloLens](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens) documentation.
 
 ## Sharing Azure Spatial Anchors between devices
 
-In this section, you will learn how to share the Azure Anchor ID between multiple devices. This will allow multiple devices to query Azure for the same anchor ID, allowing the anchored holograms to be spatially aligned. Spatial alignment, i.e. seeing the same holograms in the same physical location between multiple devices, is key to local shared experiences in the HoloLens 2.
+In this section, you will learn how to share the Azure Anchor ID between multiple devices. This will allow various devices to query Azure for the same anchor ID, allowing the anchored holograms to be spatially aligned. Spatial alignment, i.e., seeing the same holograms in the same physical location between multiple devices, is key to local shared experiences in the HoloLens 2.
 
 There are many ways to transfer Azure Anchor IDs between devices, including methods outlined in the [Multi-user capabilities tutorials](mr-learning-sharing-02.md) series. In this example, you will use a simple web service to upload and download anchor IDs between devices.
 
-In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **ShareAzureAnchorIdToNetwork** and **GetAzureAnchorIdFromNetwork**:
+In the Hierarchy window, expand the **ButtonParent** object.   Locate the two buttons named **ShareAzureAnchorIdToNetwork** and **GetAzureAnchorIdFromNetwork**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
@@ -70,9 +70,9 @@ Follow the same steps as in the [configuring the buttons to operate the scene](m
 * For the **ShareAzureAnchorIdToNetwork** object, assign the AnchorModuleScript > **ShareAzureAnchorIdToNetwork ()** function.
 * For the **GetAzureAnchorIdFromNetwork** object, assign the AnchorModuleScript > **GetAzureAnchorIdFromNetwork ()** function.
 
-If you build the updated application to two HoloLens devices, you can now achieve spatial alignment between them by sharing the Azure Anchor ID. To test it out, you can follow these steps:
+If you build the updated application to two HoloLens devices, you can now achieve spatial alignment by sharing the Azure Anchor ID. To test it out, you can follow these steps:
 
-1. On HoloLens device 1: Move the Rover Explorer to desired location.
+1. On HoloLens device 1: Move the Rover Explorer to the desired location.
 2. On HoloLens device 1: Start Azure Session.
 3. On HoloLens device 1: Create Azure Anchor (creates anchors at the location of the Rover Explorer).
 4. On HoloLens device 1: Share Azure Anchor ID to Network.
