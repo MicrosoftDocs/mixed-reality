@@ -33,11 +33,11 @@ It's **highly recommended** that you use source control to save a snapshot your 
 
 ## Migrate project to the latest version of Unity
 
-If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) is the best long-term support path with no breaking changes in Unity or in MRTK. MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
+If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) is the best long-term support path with no breaking changes in Unity or in MRTK. You should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project, and determine whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, you may need to continue building your app for ARM.
+
+<!-- MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
 
 To help clarify additional differences between [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) and Unity 2019.x, the following table outlines the trade-offs between the two versions. The primary difference between the two is the ability to compile for ARM64 in Unity 2019.
- 
-You should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project, and determine whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, you may need to continue building your app for ARM.
 
 | Unity 2018 LTS | Unity 2019.x |
 |----------|-------------------|
@@ -46,9 +46,11 @@ You should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plug
 | [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *deprecated* | [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *removed* |
 | UNET Networking *deprecated* | UNET Networking *deprecated* |
 
+-->
+
 ## Update scene/project settings in Unity
 
-After updating to [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) or Unity 2019+, it's recommended that you update particular settings in Unity for optimal results on the device. These settings are outlined in detail under **[Recommended settings for Unity](Recommended-settings-for-Unity.md)**.
+After updating to [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases), it's recommended that you update particular settings in Unity for optimal results on the device. These settings are outlined in detail under [recommended settings for Unity](Recommended-settings-for-Unity.md).
 
 It should be reiterated that the [.NET scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) is being deprecated in Unity 2018 and *removed* in Unity 2019. Developers should strongly consider switching their project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
 
