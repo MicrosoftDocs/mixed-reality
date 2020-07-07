@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 ## Overview
 
-Welcome to the Azure Spatial Anchors tutorials! Through this tutorial series, you will learn the fundamentals of <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a> (ASA) and how to anchor a complete mixed reality experience in the real world. You will also learn how to deploy your project to Android and/or iOS.
+Welcome to the Azure Spatial Anchors tutorials! Through this tutorial series, you will learn the fundamentals of <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a> (ASA) and how to anchor a complete mixed reality experience in the real world. You will also learn how to deploy your project to Android or iOS.
 
 Tutorials in this series:
 
@@ -27,7 +27,7 @@ Tutorials in this series:
 
 * Learn how to create spatial anchors and fetch them from Azure
 * Learn how to achieve spatial alignment across application sessions
-* Learn how to achieve spatial alignment between multiple devices
+* Learn how to perform spatial arrangement between multiple devices
 * Learn how to prepare, build, and deploy your project to Android and/or iOS
 
 ## Prerequisites
@@ -37,8 +37,8 @@ Tutorials in this series:
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added
 * Completed the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial
-* Completed the [Getting started tutorials](mr-learning-base-01.md) series or some basic prior experience with Unity and MRTK
-* Completed the [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) series or prior experience creating an Azure Spatial Anchors Account
+* Finished the [Getting started tutorials](mr-learning-base-01.md) series or some basic prior experience with Unity and MRTK
+* Completed the [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) series or previous experience creating an Azure Spatial Anchors Account
 * If you intend to deploy to Android as well as HoloLens
   * A <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">developer enabled</a> and <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">ARCore capable</a>
  Android device with USB connection to your Windows or macOS computer
@@ -52,6 +52,6 @@ Tutorials in this series:
 > The recommended Mixed Reality Toolkit version for this tutorial series is MRTK 2.4.0.
 
 > [!CAUTION]
-> The recommended Unity version for this tutorial series is Unity 2019.3.15. This supersedes any Unity version requirements stated in the prerequisites linked above.
+> The recommended Unity version for this tutorial series is Unity 2019.3.15. The supersedes any Unity version requirements stated in the prerequisites linked above.
 
 [Next Tutorial: 2. Getting started with Azure Spatial Anchors](mr-learning-asa-02.md)
