@@ -13,9 +13,9 @@ ms.localizationpriority: high
 
 ## Overview
 
-Welcome to the Getting Started tutorials! Through this tutorial series, you will learn about some of the features the MRTK has to offer while building a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover.
+Welcome to the Getting Started tutorial series! Over the course of these tutorials, you'll learn about the Mixed Reality Toolkit (MRTK) and some of the features it has to offer. You'll also build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. By the end of this series, you'll have a firm grasp of MRTK and how it can speed up your development process.
 
-Tutorials in this series:
+Tutorials in this series are meant to be sequential, so please go through them in the correct order:
 
 1. [Introduction](mr-learning-base-01.md)
 2. [Initializing your project and deploying your first application](mr-learning-base-02.md)
@@ -37,7 +37,7 @@ Tutorials in this series:
 ## Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
-* Windows 10 SDK 10.0.18362.0 or later
+* [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added
 
