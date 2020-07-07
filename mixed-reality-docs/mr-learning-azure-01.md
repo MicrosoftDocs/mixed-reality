@@ -94,9 +94,9 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
 
-* [Azure storage for Unity](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/AzureStorageForUnity.unitypackage)
+* [Azure storage for Unity](https://github.com/microsoft/MixedRealityLearning/releases/download/a-tag/AzureStorageForUnity.unitypackage)
 * [Azure Spatial Anchors](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
-* [MRTK.Tutorials.AzureCloudServices](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/MRTK.Tutorials.AzureCloudServices.unitypackage)
+* [MRTK.Tutorials.AzureCloudServices](https://github.com/microsoft/MixedRealityLearning/releases/download/a-tag/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
@@ -190,6 +190,7 @@ Not all features that you will use in this tutorial series can run inside the Un
 > All Azure Services uses the internet, so make sure your device is connected to the internet.
 
 When the application is running on your device, accept access to the following requested capabilities:
+
 * Microphone
 * Camera
 
