@@ -30,7 +30,7 @@ In the Hierarchy window, select the **ButtonParent** objects. Then in the Inspec
 
 ## Persisting Azure Spatial Anchors between app sessions
 
-In this section, you will learn how to save and retrieve the Azure Anchor ID to and from the HoloLens' local disk. This will allow you to query Azure for the same anchor ID between different app sessions. It allows the anchored holograms to be positioned at the same location as in the previous app session.
+In this section, you will learn how to save and retrieve the Azure Anchor ID to and from the HoloLens' local disk. This will allow you to query Azure for the same anchor ID between different app sessions. It will enable the anchored holograms to be positioned at the same location as in the previous app session.
 
 In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **SaveAzureAnchorIdToDisk** and **GetAzureAnchorIdFromDisk**:
 
