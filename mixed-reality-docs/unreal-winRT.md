@@ -12,7 +12,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 
 ## Overview
 
-When writing HoloLens applications, you may need to use a feature that is written in the Windows SDK in winrt code.  For example, opening a file dialogue in a HoloLens application must use the FileSavePicker in winrt/Windows.Storage.Pickers.h.  Unreal does not natively compile winrt code, so it must be built in a separate binary and consumed through Unreal’s build system. 
+When writing HoloLens applications, you may need to use a feature that is written in the Windows SDK in WinRT code.  For example, opening a file dialogue in a HoloLens application must use the FileSavePicker in winrt/Windows.Storage.Pickers.h.  Unreal does not natively compile WinRT code, so it must be built in a separate binary and consumed through Unreal’s build system. 
 
 ## Objectives
 - Create a Universal Windows DLL that opens a FileSaveDialogue
@@ -44,7 +44,7 @@ Before you add any code you need to update the project properties to ensure the 
 
 ![Configuring the DLL](images/unreal-winrt-img-03.png)
 
-Update the DLL’s source with our winrt code to open a file dialogue and save a file to the HoloLens disk.  
+Update the DLL’s source with our WinRT code to open a file dialogue and save a file to the HoloLens disk.  
 
 ## Adding the DLL code
 Open **HoloLensWinrtDLL.h** and add a dll exported function for Unreal to consume: 
@@ -233,7 +233,7 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-Open **WinrtActor.h** and add two function definitions, one a UFUNCTION that can be called from a blueprint, and another to use the DLL code: 
+Open **WinrtActor.h** and add two function definitions, one that can be called from a blueprint, and another to use the DLL code: 
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
@@ -273,7 +273,7 @@ In the level blueprint, drag the output node from WinrtActor and search for **Op
 
 ## Summary 
 
-The code in this document can be used as a starting point for using any winrt code in Unreal.  It allows you to save files to the HoloLens disk when user interaction is necessary to select the file name and location, using the same file dialogue you would find on Windows.  More functions can be exported from the HoloLensWinrtDLL header and used in Unreal in the same way.  Furthermore, the code in the DLL shows how to wait on any async winrt code in a background MTA thread, which is often necessary to avoid deadlocking the Unreal game thread. 
+The code in this document can be used as a starting point for using any WinRT code in Unreal.  It allows you to save files to the HoloLens disk when user interaction is necessary to select the file name and location, using the same file dialogue you would find on Windows.  More functions can be exported from the HoloLensWinrtDLL header and used in Unreal in the same way.  Furthermore, the code in the DLL shows how to wait on any async WinRT code in a background MTA thread, which is often necessary to avoid deadlocking the Unreal game thread. 
 
 ## See also
 * [C++/WinRT APIs](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
