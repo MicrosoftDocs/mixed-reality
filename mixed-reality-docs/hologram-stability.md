@@ -68,7 +68,7 @@ Users wearing HoloLens will always accommodate to 2.0 m to maintain a clear imag
 
 Discomfort from the vergence-accommodation conflict can be avoided or minimized by keeping converged content as close to 2.0 m as possible (that is, in a scene with lots of depth place the areas of interest near 2.0 m, when possible). When content can't be placed near 2.0 m, discomfort from the vergence-accommodation conflict is greatest when user’s gaze back and forth between different distances. In other words, it's much more comfortable to look at a stationary hologram that stays 50 cm away than to look at a hologram 50 cm away that moves toward and away from you over time.
 
-Placing content at 2.0 m is also advantageous because the two displays are designed to fully overlap at this distance. For images placed off this plane, as they move off the side of the holographic frame they'll appear from one display while still being visible on the other. This binocular rivalry can be disruptive to the depth perception of the hologram.
+Placing content at 2.0 m is also advantageous because the two displays are designed to fully overlap at this distance. For images placed off this plane, as they move off the side of the holographic frame they'll appear from one display while still being visible on the other. This binocular rivalry can be disruptive to the depth perception of the holorgam.
 
 **Optimal distance for placing holograms from the user**
 
