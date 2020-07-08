@@ -10,14 +10,18 @@ ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, cloud services
 ---
 
-# Mixed reality cloud services
+# Azure Cloud Services
 
-Azure Cloud Services has several features that can go hand-in-hand with Mixed Reality, which are broken up and listed below.
+## Overview
 
-## Azure Remote Rendering
+Azure Cloud Services can now go hand-in-hand with Mixed Reality on a variety of platforms with Azure Remote Rendering and Azure Spatial Anchors. If you're developing in Unity, you also have access to a wide array of add-on cloud APIs that can be easily integrated into your projects.
+
+## Mixed Reality services
+
+### Azure Remote Rendering
 [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering) (ARR) is a service that lets you to render highly complex 3D models in real time. ARR is currently in public preview and can be added to your Unity or Native C++ projects  if you're targeting HoloLens 2 or Windows desktop PC.
 
-## Azure Spatial Anchors
+### Azure Spatial Anchors
 [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors) (ASA) is a cross-platform service that allows you to create mixed reality experiences using objects that persist their location across devices. The service can be developed in a host of environments and deployed to a large group of devices and platforms. This gives them special dispensation for their own list of available platforms:
 * Unity for HoloLens
 * Unity for iOS
@@ -28,7 +32,7 @@ Azure Cloud Services has several features that can go hand-in-hand with Mixed Re
 * Xamarin for iOS
 * Xamarin for Android
 
-## Azure Services in Unity
+## Add-on services
 If you're developing in Unity, check out the tutorials listed below for step-by-step cloud services integration into your new or existing projects.
 
 ### Device support
