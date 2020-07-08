@@ -21,9 +21,9 @@ When writing HoloLens applications, you may need to use a feature that is writte
 
 ## Getting started
 1. Check that you have all [required tools](unreal-uxt-ch1.md) installed
-2. [Create a new Unreal project](unreal-uxt-ch2#creating-a-new-unreal-project) and name it **Consumewinrt**
-3. Enable the [required plugins](unreal-uxt-ch2#enabling-required-plugins) for HoloLens development
-4. [Setup for deployment](unreal-uxt-ch6) to a device or emulator
+2. [Create a new Unreal project](unreal-uxt-ch2.md#creating-a-new-unreal-project) and name it **Consumewinrt**
+3. Enable the [required plugins](unreal-uxt-ch2.md#enabling-required-plugins) for HoloLens development
+4. [Setup for deployment](unreal-uxt-ch6.md) to a device or emulator
 
 ## Creating a WinRT DLL 
 Open a new Visual Studio project and create a **DLL (Universal Windows)** project adjacent to the Unreal game’s **uproject** file. 
