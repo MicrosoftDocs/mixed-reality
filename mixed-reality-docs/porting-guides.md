@@ -5,14 +5,14 @@ author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
-keywords: port, porting, unity, middleware, engine, UWP
+keywords: port, porting, unity, middleware, engine, UWP, Win32
 ---
 
 # Porting guides
 
 ## Overview
 
-Windows 10 includes direct support for immersive and holographic headsets. If you've built content for other devices, such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) work with both the Windows x86 and the Universal Windows Platform (UWP) app model. If your app isn't already built for UWP, changing over to UWP will be part of the porting experience.
+Windows 10 includes direct support for immersive and holographic headsets. If you've built content for other devices, such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) work with both the Win32 and the Universal Windows Platform (UWP) app model. If your app isn't already built for UWP, changing over to UWP will be part of the porting experience.
 
 ## Porting overview
 
@@ -69,7 +69,7 @@ With any Unity update, there's a good chance that you'll need to update one or m
 
 ### Unity step 4: Target your application to run on Universal Windows Platform (UWP)
 
-If you're targeting Windows x86, you can skip this step and continue to step 5.
+If you're targeting Win32, you can skip this step and continue to step 5.
 
 After installing the tools, you need to get your app running as a Universal Windows app.
 
@@ -79,12 +79,12 @@ After installing the tools, you need to get your app running as a Universal Wind
 > [!NOTE]
 > Unity continues to improve IL2CPP support; IL2CPP makes some UWP ports easier. If you are currently targeting the .NET scripting backend, you should consider converting to leverage the IL2CPP backend instead.
 
-* You can skip "Unity step 5" since you're targeting UWP instead of x86.
+* You can skip "Unity step 5" since you're targeting UWP instead of Win32.
 
 > [!NOTE] 
 > If your application has any dependencies on device-specific services, such as match making from Steam, you'll need to disable them at this step. You can hook up to the equivalent services that Windows provides later on.
 
-### Unity step 5: Target your application to run on Windows x86
+### Unity step 5: Target your application to run on Win32
 
 From inside your Unity application:
 
