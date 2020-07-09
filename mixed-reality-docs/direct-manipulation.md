@@ -322,9 +322,9 @@ By doing so, you accidentally move your hand across some interactive holographic
 ---
 
 ## Manipulation in MRTK (Mixed Reality Toolkit) for Unity
-With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily achieve common manipulation behavior using the script **ManipulationHandler**. With ManipulationHandler, you can grab and move objects directly with hands or with hand ray. It also supports two-handed manipulation for scaling and rotating an object.
+With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily achieve common manipulation behavior using the script **ObjectManipulator**. With ObjectManipulator, you can grab and move objects directly with hands or with hand ray. It also supports two-handed manipulation for scaling and rotating an object.
 
-* [MRTK - Manipulation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html)
+* [MRTK - Manipulation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
 
 
 ---
