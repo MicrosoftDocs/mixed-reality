@@ -12,7 +12,8 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 
 ## Overview
 
-When writing HoloLens applications, you may need to use a feature that is written in the Windows SDK in WinRT code.  For example, opening a file dialogue in a HoloLens application must use the FileSavePicker in winrt/Windows.Storage.Pickers.h.  Unreal does not natively compile WinRT code, so it must be built in a separate binary and consumed through Unreal’s build system. 
+<!-- TODO: Can you clarify if we can simplify the first sentence -->
+Over the course of your HoloLens development you may need a feature written in WinRT code using the Windows SDK.  For example, opening a file dialogue in a HoloLens application would need the FileSavePicker in winrt/Windows.Storage.Pickers.h header file.  Since Unreal doesn't natively compile WinRT code, it's your job to build a separate binary and that can be consumed by Unreal’s build system. This tutorial will walk you through just such a scenario.
 
 ## Objectives
 - Create a Universal Windows DLL that opens a FileSaveDialogue
@@ -26,28 +27,32 @@ When writing HoloLens applications, you may need to use a feature that is writte
 4. [Setup for deployment](unreal-uxt-ch6.md) to a device or emulator
 
 ## Creating a WinRT DLL 
-Open a new Visual Studio project and create a **DLL (Universal Windows)** project adjacent to the Unreal game’s **uproject** file. 
+<!-- TODO: Is there another wording than "adjacent to" -->
+1. Open a new Visual Studio project and create a **DLL (Universal Windows)** project adjacent to the Unreal game’s **uproject** file. 
 
 ![Creating a DLL](images/unreal-winrt-img-01.png)
 
-Name the project **HoloLensWinrtDLL** and set the location as a **ThirdParty** subdirectory to the Unreal game’s uproject file. 
-* Select **Place solution and project in the same directory** to simplify looking for paths later. 
+2. Name the project **HoloLensWinrtDLL** and set the location as a **ThirdParty** subdirectory to the Unreal game’s uproject file. 
+    * Select **Place solution and project in the same directory** to simplify looking for paths later. 
 
 ![Configuring the DLL](images/unreal-winrt-img-02.png)
 
-You now have a project, but the files you want to pay special attention to are the blank cpp and header files named **HoloLensWinrtDLL.cpp** and **HoloLensWinrtDLL.h** respectively. The header will be the include file to use the DLL in Unreal, while the cpp will hold the body of any functions we export and will include any WinRT code that Unreal would not otherwise be able to compile. 
+> [!IMPORTANT]
+> After the new project compiles, you want to pay special attention to the blank cpp and header files, named **HoloLensWinrtDLL.cpp** and **HoloLensWinrtDLL.h** respectively. The header is the include file that uses the DLL in Unreal, while the cpp holds the body of any functions you export and includes any WinRT code that Unreal wouldn't otherwise be able to compile. 
 
-Before you add any code you need to update the project properties to ensure the WinRT code you'll need can compile: 
-* Right click on the HoloLensWinrtDLL project and select **properties**  
-* Change the **Configuration** dropdown to **All Configurations** and the **Platform** dropdown to **All Platforms**  
-* Under **Configuration Properties> C/C++> All Options**, add **await** to **Additional Options** to ensure we can wait on async tasks.  Also change **C++ Language Standard** to **ISO C++17 Standard (/std:c++17)** to include any WinRT code. 
+3. Before you add any code, you need to update the project properties to ensure the WinRT code you need can compile: 
+    * Right click on the HoloLensWinrtDLL project and select **properties**  
+    * Change the **Configuration** dropdown to **All Configurations** and the **Platform** dropdown to **All Platforms**  
+    * Under **Configuration Properties> C/C++> All Options**:
+        * Add **await** to **Additional Options** to ensure we can wait on async tasks  
+        * Change **C++ Language Standard** to **ISO C++17 Standard (/std:c++17)** to include any WinRT code
 
 ![Configuring the DLL](images/unreal-winrt-img-03.png)
 
-Update the DLL’s source with our WinRT code to open a file dialogue and save a file to the HoloLens disk.  
+Your project is ready to update the DLL’s source with WinRT code that opens a file dialogue and saves a file to the HoloLens disk.  
 
 ## Adding the DLL code
-Open **HoloLensWinrtDLL.h** and add a dll exported function for Unreal to consume: 
+1. Open **HoloLensWinrtDLL.h** and add a dll exported function for Unreal to consume: 
 
 ```cpp
 #pragma once
@@ -59,10 +64,7 @@ public:
 };
 ```
 
-Open **HoloLensWinrtDLL.cpp** and add all the headers the class will use.  
-
-> [!NOTE]
-> All WinRT code is stored in **HoloLensWinrtDLL.cpp** so Unreal doesn't try to include any WinRT code when referencing the header. 
+2. Open **HoloLensWinrtDLL.cpp** and add all headers the class will use:  
 
 ```cpp
 #include "pch.h"
@@ -79,8 +81,11 @@ Open **HoloLensWinrtDLL.cpp** and add all the headers the class will use.
 #include <thread>
 ```
 
+> [!NOTE]
+> All WinRT code is stored in **HoloLensWinrtDLL.cpp** so Unreal doesn't try to include any WinRT code when referencing the header. 
+
 <!-- TODO: Is this in cpp or header file? -->
-Then add the function body for OpenFileDialogue() and all supported code: 
+3. Add the function body for OpenFileDialogue() and all supported code: 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -93,7 +98,7 @@ void HoloLensWinrtDLL::OpenFileDialogue()
 }
 ```
 
-Add a SaveGameManager class to the cpp to handle opening the file dialogue and saving the file: 
+4. Add a SaveGameManager class to **HoloLensWinrtDLL.cpp** to handle the file dialogue and saving the file: 
 
 ```cpp
 class SaveGameManager
@@ -162,25 +167,24 @@ private:
 };
 ```
 
-Build the solution for **Release > ARM64** to build the DLL to the child directory ARM64/Release/HoloLensWinrtDLL from the DLL solution. 
+5. Build the solution for **Release > ARM64** to build the DLL to the child directory ARM64/Release/HoloLensWinrtDLL from the DLL solution. 
 
 ## Adding the WinRT binary to Unreal 
-Linking and using a DLL in Unreal requires a C++ project. If you're using a Blueprint project, it can be converted to a C++ project by adding a C++ class:  
+Linking and using a DLL in Unreal requires a C++ project. If you're using a Blueprint project, it can be easily converted to a C++ project by adding a C++ class:  
 
-1. In the Unreal editor, open **File > New C++ Class…** 
-2. Create a new **Actor** named **WinrtActor** to run the code in the DLL: 
+1. In the Unreal editor, open **File > New C++ Class…** and create a new **Actor** named **WinrtActor** to run the code in the DLL: 
 
 ![Configuring the DLL](images/unreal-winrt-img-04.png)
 
 > [!NOTE]
-> A solution has now been created in the same directory as the uproject file along with a new build script: Source/ConsumeWinRT/ConsumerWinRT.Build.cs.
+> A solution has now been created in the same directory as the uproject file along with a new build script named Source/ConsumeWinRT/ConsumerWinRT.Build.cs.
 
-3. Open the solution and browse for **Games/ConsumeWinRT/Source/ConsumeWinRT**:
+2. Open the solution, browse for the **Games/ConsumeWinRT/Source/ConsumeWinRT** folder, and open **ConsumeWinRT.build.cs**:
 
 ![Configuring the DLL](images/unreal-winrt-img-05.png)
 
 ### Linking the DLL
-Open **ConsumeWinRT.build.cs** and add a property to find the include path for the DLL (the directory containing HoloLensWinrtDLL.h). The DLL is in a child directory to this, so this property will be used as the binary root dir:
+1. In **ConsumeWinRT.build.cs**, add a property to find the include path for the DLL (the directory containing HoloLensWinrtDLL.h). The DLL is in a child directory to the include path, so this property will be used as the binary root dir:
 
 ```cpp
 public class ConsumeWinRT : ModuleRules
@@ -203,7 +207,7 @@ public class ConsumeWinRT : ModuleRules
 }
 ```
 
-In the constructor, add code to update the include path, link the new lib, and add the DLL to be delay-loaded and copied to the packaged appx location: 
+2. Declare a class constructor and add the following code to update the include path, link the new lib, and delay-load and copy the DLL to the packaged appx location:
 ```cpp
 public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 {
@@ -233,17 +237,14 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-Open **WinrtActor.h** and add two function definitions, one that can be called from a blueprint, and another to use the DLL code: 
+3. Open **WinrtActor.h** and add two function definitions, one that a blueprint can use and another that uses the DLL code: 
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
     static void OpenFileDialogue;
 ```
 
-Open **WinrtActor.cpp** and load the DLL in BeginPlay: 
-
->[!IMPORTANT]
-> The DLL must be loaded before calling any of its functions.
+4. Open **WinrtActor.cpp** and load the DLL in BeginPlay: 
 
 ```cpp
 void AWinfrtActor::BeginPlay()
@@ -254,26 +255,31 @@ void AWinfrtActor::BeginPlay()
 }
 ``` 
 
+>[!CAUTION]
+> The DLL must be loaded before calling any of its functions.
+
 ### Building the game
-Build the game solution to launch the Unreal editor opened to the game project. 
-* In the **Place Actors** tab, search for the new **WinrtActor** and drag it into the scene. 
-* Open the level blueprint to execute the blueprint callable function in the **WinrtActor**. 
+1. Build the game solution to launch the Unreal editor opened to the game project: 
+    * In the **Place Actors** tab, search for the new **WinrtActor** and drag it into the scene 
+    * Open the level blueprint to execute the blueprint callable function in the **WinrtActor** 
 
 ![Configuring the DLL](images/unreal-winrt-img-06.png)
 
-In the **World Outliner**, find the **WindrtActor** previously dropped into the scene and drag it into the level blueprint: 
+2. In the **World Outliner**, find the **WindrtActor** previously dropped into the scene and drag it into the level blueprint: 
 
 ![Configuring the DLL](images/unreal-winrt-img-07.png)
 
-In the level blueprint, drag the output node from WinrtActor and search for **Open File Dialogue**, then route this from any user input.  In this case, Open File Dialogue is being called from a speech event: 
+3. In the level blueprint, drag the output node from WinrtActor, search for **Open File Dialogue**, then route the node from any user input.  In this case, Open File Dialogue is being called from a speech event: 
 
 ![Configuring the DLL](images/unreal-winrt-img-08.png)
 
-[Package this game for HoloLens](unreal-uxt-ch6.md), deploy it, and run.  When OpenFileDialogue is called from Unreal, a File Dialogue will open on the HoloLens prompting for a .txt file name.  After saving, that file can be found from the **File explorer** tab in the device portal with the contents “Hello WinRT”. 
+4. [Package this game for HoloLens](unreal-uxt-ch6.md), deploy it, and run.  
+
+When Unreal calls OpenFileDialogue, a File Dialogue opens on the HoloLens prompting for a .txt file name.  After the file is saved, go to the **File explorer** tab in the device portal to see the contents “Hello WinRT”. 
 
 ## Summary 
 
-The code in this document can be used as a starting point for using any WinRT code in Unreal.  It allows you to save files to the HoloLens disk when user interaction is necessary to select the file name and location, using the same file dialogue you would find on Windows.  More functions can be exported from the HoloLensWinrtDLL header and used in Unreal in the same way.  Furthermore, the code in the DLL shows how to wait on any async WinRT code in a background MTA thread, which is often necessary to avoid deadlocking the Unreal game thread. 
+We encourage you to use the code in this tutorial as a starting point for consuming WinRT code in Unreal.  It allows users to save files to the HoloLens disk using the same file dialogue as Windows.  Follow the same process to export any additional functions from the HoloLensWinrtDLL header and used in Unreal.  Note the DLL code that waits on any async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread. 
 
 ## See also
 * [C++/WinRT APIs](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
