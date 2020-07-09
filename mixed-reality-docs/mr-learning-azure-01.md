@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Tutorials - 1. Introducing Azure Cloud Services for HoloLens 2
+title: Azure Cloud Tutorials - 1. Azure Cloud Services for HoloLens 2
 description: Complete this course to learn how to implement various Azure Services within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,7 +9,7 @@ keywords: azure, mixed reality, unity, tutorial, hololens, hololens 2, azure blo
 ms.localizationpriority: high
 ---
 
-# 1. Introducing Azure Cloud Services for HoloLens 2
+# 1. Azure Cloud Services for HoloLens 2
 
 ## Overview
 
@@ -182,11 +182,7 @@ In the  **Publishing Settings**, scroll down to the **Capabilities** section and
 Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
-<<<<<<< HEAD
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
-=======
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-holoLens-2) instructions.
->>>>>>> azure-develop
 
 ### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 
