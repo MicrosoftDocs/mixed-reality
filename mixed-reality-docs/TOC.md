@@ -148,8 +148,8 @@
 ##### [1. Introducing Azure Cloud Services for HoloLens 2](mr-learning-azure-01.md)
 ##### [2. Integrating Azure Storage](mr-learning-azure-02.md)
 ##### [3. Integrating Azure Custom Vision](mr-learning-azure-03.md)
-##### [4. Integrating Azure Spatial Anchors](mr-learning-04.md)
-##### [5. Integrating Azure Bot Service](mr-learning-05.md)
+##### [4. Integrating Azure Spatial Anchors](mr-learning-azure-04.md)
+##### [5. Integrating Azure Bot Service](mr-learning-azure-05.md)
 #### PC Holographic Remoting tutorials
 ##### [1. Getting started with PC Holographic Remoting](mr-learning-pc-holographic-remoting-01.md)
 ##### [2. Creating a Holographic Remoting PC application](mr-learning-pc-holographic-remoting-02.md)
