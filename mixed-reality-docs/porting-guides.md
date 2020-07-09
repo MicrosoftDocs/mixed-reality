@@ -12,14 +12,14 @@ keywords: port, porting, unity, middleware, engine, UWP, Win32
 
 ## Overview
 
-Windows 10 includes direct support for immersive and holographic headsets. If you've built content for other devices, such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) work with both the Win32 and the Universal Windows Platform (UWP) app model. If your app isn't already built for UWP, changing over to UWP will be part of the porting experience.
+Windows 10 includes direct support for immersive and holographic headsets. If you've built content for other devices, such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) works with Win32.
 
 ## Porting overview
 
 At a high level, the following steps are involved in porting existing content:
 1. **Make sure your PC is running the Windows 10 Fall Creators Update (16299).** We no longer recommend receiving preview builds from the Insider Skip Ahead ring, as those builds won't be the most stable for mixed reality development.
 2. **Upgrade to the latest version of your graphics or game engine.** Game engines will need to support the Windows 10 SDK version 10.0.15063.0 (released in April 2017) or higher.
-3. **Upgrade any middleware, plug-ins, or components.** If your app contains any components, it's a good idea to upgrade to the latest version. Newer versions of most common plug-ins have support for UWP.
+3. **Upgrade any middleware, plug-ins, or components.** If your app contains any components, it's a good idea to upgrade to the latest version.
 4. **Remove dependencies on duplicate SDKs**. Depending on which device your content was targeting, you'll need to remove or conditionally compile out that SDK (for example, SteamVR) so you can target the Windows APIs instead.
 5. **Work through build issues.** At this point, the porting exercise is specific to your app, your engine, and the component dependencies you have.
 
@@ -37,26 +37,23 @@ The Windows Mixed Reality platform is still under active development. We recomme
 3. Enable [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
 4. Switch to the [Windows Insider Fast flights](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) through **Settings > Update & Security Section**
 
-### Common step 3: Upgrade to the most recent build of Visual Studio (UWP only)
+### Common step 3: Upgrade to the most recent build of Visual Studio
+* If you are using Visual Studio then upgrade to the most recent build
 * See [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2019
 
-### Common step 4: Be Ready for The Store (UWP only)
-* Use [Windows App Certification Kit](https://developer.microsoft.com/windows/develop/app-certification-kit) (also known as WACK) early and often!
-* Use [Portability Analyzer](https://docs.microsoft.com/dotnet/standard/portability-analyzer) ([Download](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer))
-
-### Common step 5: Choose the correct Adapter
+### Common step 6: Choose the correct Adapter
 * In systems like notebooks with two GPUs, [target the correct adapter](rendering-in-directx.md#hybrid-graphics-pcs-and-mixed-reality-applications). This applies to Unity and native DirectX apps where a ID3D11Device is created, either explicitly or implicitly (Media Foundation), for its functionality.
 
 ## Unity porting guidance
 
-### Unity step 1: Follow the common porting steps
+### Unity step 1: Review the common porting steps listed above
 
-Follow all of the common steps. When in step #3, select the **Game Development with Unity** workload. You may deselect the Unity Editor optional component since you'll be installing a newer version of Unity from the instructions below.
+Review the common steps listed above to make sure your dev environment is set up correctly. In step #3, if you are using Visual Studio you should select the **Game Development with Unity** workload. You may deselect the "Unity Editor optional" component since you'll be installing a newer version of Unity in teh next step.
 
 ### Unity step 2: Upgrade to the latest public build of Unity with Windows MR Support
 1. Download the latest [recommended public build of Unity](install-the-tools.md) with mixed reality support.
 2. Save a copy of your project before you get started
-3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuides.html) available from Unity on porting.
+3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuides.html) available from Unity on upgrading if your project was build on anolder version of Unity.
 4. Follow the [instructions](https://docs.unity3d.com/Manual/APIUpdater.html) on Unity's site for using their automatic API updater
 5. Check and see if there are additional changes that you need to make to get your project running, and work through any remaining errors and warnings. 
 
@@ -65,26 +62,9 @@ Follow all of the common steps. When in step #3, select the **Game Development w
 
 ### Unity step 3: Upgrade your middleware to the latest versions
 
-With any Unity update, there's a good chance that you'll need to update one or more middleware packages that your game or application depends on. Additionally, being up to date with the latest middleware increases the likelihood of success throughout the rest of the porting process. Many middleware packages have recently added support for Universal Windows Platform (UWP), and upgrading to the most recent versions will let you leverage that work.
+With any Unity update, there's a good chance that you'll need to update one or more middleware packages that your game or application depends on. Additionally, being up to date with the latest middleware increases the likelihood of success throughout the rest of the porting process.
 
-### Unity step 4: Target your application to run on Universal Windows Platform (UWP)
-
-If you're targeting Win32, you can skip this step and continue to step 5.
-
-After installing the tools, you need to get your app running as a Universal Windows app.
-
-* Follow the [detailed step by step walk through](https://unity3d.com/partners/microsoft/porting-guides) provided by Unity. You should stay on the latest LTS release (any 20xx.4 release) for Windows MR.
-* For more UWP development resources, take a look at the [Windows 10 game development guide](https://docs.microsoft.com/windows/uwp/gaming/e2e).
-
-> [!NOTE]
-> Unity continues to improve IL2CPP support; IL2CPP makes some UWP ports easier. If you are currently targeting the .NET scripting backend, you should consider converting to leverage the IL2CPP backend instead.
-
-* You can skip "Unity step 5" since you're targeting UWP instead of Win32.
-
-> [!NOTE] 
-> If your application has any dependencies on device-specific services, such as match making from Steam, you'll need to disable them at this step. You can hook up to the equivalent services that Windows provides later on.
-
-### Unity step 5: Target your application to run on Win32
+### Unity step 4: Target your application to run on Win32
 
 From inside your Unity application:
 
@@ -94,15 +74,17 @@ From inside your Unity application:
 * Set architecture to "x86"
 Select "Switch Platform"
 
+> [!NOTE] 
+> If your application has any dependencies on device-specific services, such as match making from Steam, you'll need to disable them at this step. You can hook up to the equivalent services that Windows provides later on.
 
-### Unity step 6: Setup your Windows Mixed Reality hardware
+### Unity step 5: Setup your Windows Mixed Reality hardware
 1. Review steps in [Immersive headset setup](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
 )
 2. Learn about [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 
 ### Unity step 7: Target your application to run on Windows Mixed Reality
 1. First, you must remove or conditionally compile out any other library support specific to a particular VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with other VR SDKs, such as Windows Mixed Reality.
-    * For example, if your project references the SteamVR SDK, you'll need to update your project to exclude those prefabs and script API calls when exporting for the Windows Store build target.
+    * For example, if your project references the SteamVR SDK, you'll need to update your project to exclude those prefabs and script API calls when exporting for the Win32 build target.
     * Specific steps for conditionally excluding other VR SDKs are coming soon.
 2. In your Unity project, [target the Windows 10 SDK](holograms-100.md#target-windows-10-sdk)
 3. For each scene, [setup the camera](holograms-100.md#chapter-2---setup-the-camera)
@@ -172,4 +154,3 @@ Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
-* [Add Xbox Live support to Unity for UWP](https://docs.microsoft.com/windows/uwp/xbox-live/get-started-with-partner/partner-add-xbox-live-to-unity-uwp)
