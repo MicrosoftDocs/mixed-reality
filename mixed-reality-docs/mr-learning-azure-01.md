@@ -99,7 +99,7 @@ Download and **import** the following Unity custom packages **in the order they 
 * [MRTK.Tutorials.AzureCloudServices](https://github.com/microsoft/MixedRealityLearning/releases/download/a-tag/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-01.md#import-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-02.md#import-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
@@ -182,7 +182,7 @@ In the  **Publishing Settings**, scroll down to the **Capabilities** section and
 Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-01.md#build-your-application-to-your-device) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-02.md#build-your-application-to-your-device) instructions.
 
 ### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 
