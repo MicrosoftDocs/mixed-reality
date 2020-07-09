@@ -145,7 +145,7 @@
 ###### [4. Enabling and disabling spatial audio at run time](unity-spatial-audio-ch4.md)
 ###### [5. Using reverb to add distance to spatial audio](unity-spatial-audio-ch5.md)
 #### Azure Cloud Services tutorials
-##### [1. Introducing Azure Cloud Services for HoloLens 2](mr-learning-azure-01.md)
+##### [1. Azure Cloud Services for HoloLens 2](mr-learning-azure-01.md)
 ##### [2. Integrating Azure Storage](mr-learning-azure-02.md)
 ##### [3. Integrating Azure Custom Vision](mr-learning-azure-03.md)
 ##### [4. Integrating Azure Spatial Anchors](mr-learning-azure-04.md)
