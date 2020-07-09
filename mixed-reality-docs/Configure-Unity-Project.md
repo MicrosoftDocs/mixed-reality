@@ -24,7 +24,7 @@ If you choose the WMR manual setup, the settings you need to change are broken-d
 
 ## Per-project settings
 
-The first thing setting you need to change for WMR is the project platform: 
+The first setting you need to change for WMR is the project platform: 
 1. Select **File > Build Settings...**
 2. Select **Universal Windows Platform** in the Platform list and click **Switch Platform**
 3. Set **SDK** to **Universal 10**
@@ -32,7 +32,6 @@ The first thing setting you need to change for WMR is the project platform:
 5. Set **Build Type** to **D3D**
 6. Set **UWP SDK** to **Latest installed**
 
-<!-- TODO: Add build settings screenshot-->
 ![Unity XR settings](images/unity-uwp-settings.png)<br>
 *Unity XR settings*
 
