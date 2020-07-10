@@ -33,7 +33,7 @@ It's **highly recommended** that you use source control to save a snapshot your 
 
 ## Migrate project to the latest version of Unity
 
-If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) is the best long-term support path with no breaking changes in Unity or in MRTK. You should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in their project, and determine whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, you may need to continue building your app for ARM.
+If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) is the best long-term support path with no breaking changes in Unity or in MRTK. You should assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in your project, and determine whether or not these DLLs can be built for ARM64. If a hard dependency plugin cannot be built for ARM64, you may need to continue building your app for ARM.
 
 <!-- MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
 
