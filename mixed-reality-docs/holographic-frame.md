@@ -3,12 +3,10 @@ title: Holographic frame
 description: Users see the world of mixed reality through the holographic frame.
 author: cre8ivepark
 ms.author: dongpark
-ms.date: 03/21/2018
+ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, Windows Mixed Reality, holographic frame, field of view
 ---
-
-
 
 # Holographic frame
 
@@ -34,22 +32,7 @@ Experiences with many objects or components should consider using the full space
 
 One technique to achieve this is to provide persistent points (also known as landmarks) in the experience that anchor content to the real world. For example, a landmark could be a physical object in the real-world, such as a table where digital content appears, or a digital object, such as a set of digital screens where content frequently appears. Objects can also be placed in the periphery of the holographic frame to encourage user to look toward key content, while the discovery of content beyond the periphery can be aided by [attention directors](holographic-frame.md#attention-directors).
 
-Placing objects in the periphery can encourage users to look to the side and this can be aided by attention directors, as described below.
-
-<br>
-
----
-
-## User comfort
-
-For mixed reality experiences with large objects or many objects, it is crucial to consider how much head and neck movement is necessary to interact with content. Experiences can be divided into three categories in terms of head movement: **Horizontal** (side to side), **vertical** (up and down), or **immersive** (both horizontal and vertical). When possible, limit the majority of interactions to either horizontal or vertical categories, ideally with most experiences taking place in the center of the holographic frame while the user's head is in a neutral position. Avoid interactions that cause the user to constantly move their view to an unnatural head positions (for example, always looking up to access a key menu interaction).
-
-![Optimal region for content is 0 to 35 degrees below horizon](images/optimal-field-of-view-2.png)<br>
-*Optimal region for content is 0 to 35 degrees below horizon*
-
-Horizontal head movement is more [comfortable](comfort.md) for frequent interactions, while vertical movements should be reserved for uncommon events. For example, an experience involving a long horizontal timeline should limit vertical head movement for interactions (like looking down at a menu).
-
-Consider encouraging full-body movement, rather than just head movement, by placing objects around the user's space. Experiences with moving objects or large objects should pay special attention to head movement, especially where they require frequent movement along both the horizontal and vertical axes.
+Placing objects in the periphery can encourage users to look to the side and this can be aided by attention directors, as described below. Refer to [Comfort](comfort.md#holographic-frame-considerations) for more detailed information on holographic frame considerations.
 
 <br>
 
