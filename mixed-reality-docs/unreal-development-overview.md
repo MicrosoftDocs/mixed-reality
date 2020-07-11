@@ -3,7 +3,7 @@ title: Unreal Development Overview
 description: Overview of mixed reality development using Unreal Engine 4
 author: hferrone
 ms.author: v-haferr
-ms.date: 06/10/2020
+ms.date: 7/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
@@ -33,8 +33,8 @@ The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedReality
 
 You can dive into the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) GitHub repository for feature details and information on setting up your project.
 
-## Additional files
-If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) from the Epic Launcher.
+## HoloLens 2 platform support
+If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting platform support files](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) from the Epic Launcher.
 
 ## Tutorial
 
@@ -42,10 +42,13 @@ Building something with your own two hands is the best way to learn a new skill.
 
 The end-to-end tutorial series provides hands-on contact with common interactive UX components and scenarios. You'll work through the project setup, adding interactions to the scene, and deploying to a device or emulator. All you need is Windows 10, an emulator, and Visual Studio 2019.
 
+## Debugging
+
+To debug an app running on HoloLens 2 with Visual Studio, follow the instructions here for [debugging an installed UWP app on a remote device](https://docs.microsoft.com/en-us/visualstudio/debugger/debug-installed-app-package?view=vs-2019#remote).
 
 ## Performance
 
-Developing for mixed reality comes with performance checkpoints that depend on the platform. A HoloLens 2 app must run at 60 frames per second for holograms to appear stable and responsive. Luckily, Unreal provides [performance recommendations](performance-recommendations-for-unreal.md) for achieving this in your applications.
+Developing for mixed reality comes with performance checkpoints that depend on the platform. A HoloLens 2 app must run at 60 frames per second for holograms to appear stable and responsive. Luckily, we have [performance recommendations](performance-recommendations-for-unreal.md) for achieving this in your Unreal applications.
 
 ## Guides to specific features
 
@@ -53,11 +56,11 @@ There are several key features of mixed reality development that our tutorial se
 * [Hand tracking](unreal-hand-tracking.md)
 * [Eye tracking](unreal-gaze-input.md)
 * [Spatial mapping](unreal-spatial-mapping.md)
+* [Spatial audio](unreal-spatial-audio.md)
 * [Spatial anchors](unreal-spatial-anchors.md)
 * [Voice input](unreal-voice-input.md)
 * [HoloLens camera](unreal-hololens-camera.md)
 * [QR codes](unreal-qr-codes.md)
-
 
 ## Supported Features
 
@@ -78,7 +81,7 @@ There are several key features of mixed reality development that our tutorial se
 | Sample apps ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) and [Mission AR](https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html)) | 4.24 |
 | Mobile multi-View: Performance hits 60 fps | 4.25 |
 | 3rd camera render | 4.25 |
-| Streaming from a packaged desktop app | 4.25 |
+| Streaming from a packaged desktop app | 4.25.1 |
 | Azure Spatial Anchors for HoloLens 2 (beta) | 4.25 |
 | OpenXR support (beta) | 4.25 |
 | UX Tools support (0.8) | 4.25 |

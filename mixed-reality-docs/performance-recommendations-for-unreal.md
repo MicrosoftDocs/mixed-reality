@@ -27,10 +27,11 @@ You can find each of the following settings in **Edit > Project Settings**.
     * Scroll to the **Engine** section, select **Rendering**, expand the **Culling** section, and uncheck **Occlusion Culling**.
         + If you need occlusion culling for a detailed scene being rendered, it's recommended that you enable **Support Software Occlusion Culling** in **Engine > Rendering**. This lets Unreal to do the work on the CPU and avoid GPU occlusion queries, which perform poorly on HoloLens 2.
 
-![Mobile target setting](images/unreal/performance-recommendations-img-02.png)
+![Disable occlusion culling](images/unreal/performance-recommendations-img-02.png)
 
-3. Updating VR rendering:
-    * Scroll to the **Engine** section, select **Rendering**, expand the **VR** section, and enable both **Instanced Stereo** and **Mobile Multi-View**.
-        + You may need to uncheck **Mobile Post-Processing** in order to be able to check **Mobile Multi-View**
+3. Using mobile multi-view:
+    * Scroll to the **Engine** section, select **Rendering**, expand the **VR** section, and enable both **Instanced Stereo** and **Mobile Multi-View**. Mobile HDR should be unchecked.
 
-![Mobile target setting](images/unreal/performance-recommendations-img-03.png)
+![VR rendering settings](images/unreal/performance-recommendations-img-03.png)
+
+4. Setting the **Maximum number of CSM cascades to render** to **1** and **Max Movable Spotlights / Point Lights** to **0**. 

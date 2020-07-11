@@ -226,6 +226,7 @@
 ### [HoloLens camera in Unreal](unreal-hololens-camera.md)
 ### [QR codes in Unreal](unreal-qr-codes.md)
 ### [Streaming in Unreal](unreal-streaming.md)
+### [Deploy to device in Unreal](unreal-deploying.md)
 ### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
 
 ## JavaScript
