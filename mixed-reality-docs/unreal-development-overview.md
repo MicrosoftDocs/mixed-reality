@@ -34,7 +34,7 @@ The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedReality
 You can dive into the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) GitHub repository for feature details and information on setting up your project.
 
 ## HoloLens 2 platform support
-If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting platform support files](unreal-uxt-ch6.md#packaging-and-deploying-the-app) from the Epic Launcher.
+If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting platform support files](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher.
 
 ## Tutorial
 
