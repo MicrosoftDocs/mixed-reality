@@ -10,7 +10,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 ---
 # Unreal Development Overview
 
-Getting started with <a href="https://docs.microsoft.com/en-us/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Support for <a href="https://www.microsoft.com/en-us/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/en-us/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) is now included in Unreal Engine's newest <a href="https://docs.unrealengine.com/en-US/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 release notes">release</a>. This update includes:
+Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) is now included in Unreal Engine's newest <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 release notes">release</a>. This update includes:
 * Mixed Reality UX Tools plugin support
 * OpenXR support
 * App Remoting from a desktop app
@@ -18,7 +18,7 @@ Getting started with <a href="https://docs.microsoft.com/en-us/windows/mixed-rea
 * Mixed reality capture
 * Initial support for Azure Spatial Anchors
 
-If you're new to Unreal development don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com//GettingStarted/index.html" target="_blank">tutorial series</a> to get up to speed and look for assets and support in the Unreal <a href="https://www.unrealengine.com/marketplace//store" target="_blank">marketplace</a> and mixed reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in todays mixed reality market.
+If you're new to Unreal development don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">tutorial series</a> to get up to speed and look for assets and support in the Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a> and mixed reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in todays mixed reality market.
 
 ## Mixed Reality Toolkit for Unreal
 
@@ -34,7 +34,7 @@ The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedReality
 You can dive into the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal) GitHub repository for feature details and information on setting up your project.
 
 ## HoloLens 2 platform support
-If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting platform support files](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) from the Epic Launcher.
+If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting platform support files](unreal-uxt-ch6.md#packaging-and-deploying-the-app) from the Epic Launcher.
 
 ## Tutorial
 
@@ -44,7 +44,7 @@ The end-to-end tutorial series provides hands-on contact with common interactive
 
 ## Debugging
 
-To debug an app running on HoloLens 2 with Visual Studio, follow the instructions here for [debugging an installed UWP app on a remote device](https://docs.microsoft.com/en-us/visualstudio/debugger/debug-installed-app-package?view=vs-2019#remote).
+To debug an app running on HoloLens 2 with Visual Studio, follow the instructions here for [debugging an installed UWP app on a remote device](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package?view=vs-2019#remote).
 
 ## Performance
 
@@ -78,7 +78,7 @@ There are several key features of mixed reality development that our tutorial se
 | Spatial audio | 4.23 |
 | Spectator Screen support for streaming | 4.24 |
 | Planar LSR over streaming | 4.24 |
-| Sample apps ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) and [Mission AR](https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html)) | 4.24 |
+| Sample apps ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) and [Mission AR](https://docs.unrealengine.com/Resources/Showcases/MissionAR/index.html)) | 4.24 |
 | Mobile multi-View: Performance hits 60 fps | 4.25 |
 | 3rd camera render | 4.25 |
 | Streaming from a packaged desktop app | 4.25.1 |
@@ -88,5 +88,5 @@ There are several key features of mixed reality development that our tutorial se
 | Developer docs & tutorials | 4.25 |
 
 ## See also
-* <a href="https://docs.unrealengine.com//Platforms/AR/HoloLens2/index.html" target="_blank">Unreal docs for streaming, deploying to emulator and device</a>
-* <a href="https://docs.unrealengine.com//Platforms/Mobile/Performance/index.html" target="_blank">Unreal performance guidelines for mobile devices</a>
+* <a href="https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html" target="_blank">Unreal docs for streaming, deploying to emulator and device</a>
+* <a href="https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html" target="_blank">Unreal performance guidelines for mobile devices</a>
