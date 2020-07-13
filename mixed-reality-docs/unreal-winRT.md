@@ -12,8 +12,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 
 ## Overview
 
-<!-- TODO: Can you clarify if we can simplify the first sentence -->
-Over the course of your HoloLens development you may need a feature written in WinRT code using the Windows SDK.  For example, opening a file dialogue in a HoloLens application would need the FileSavePicker in winrt/Windows.Storage.Pickers.h header file.  Since Unreal doesn't natively compile WinRT code, it's your job to build a separate binary and that can be consumed by Unreal’s build system. This tutorial will walk you through just such a scenario.
+Over the course of your HoloLens development you may need to write a feature using WinRT. For example, opening a file dialogue in a HoloLens application would need the FileSavePicker in winrt/Windows.Storage.Pickers.h header file.  Since Unreal doesn't natively compile WinRT code, it's your job to build a separate binary and that can be consumed by Unreal’s build system. This tutorial will walk you through just such a scenario.
 
 ## Objectives
 - Create a Universal Windows DLL that opens a FileSaveDialogue
@@ -27,8 +26,7 @@ Over the course of your HoloLens development you may need a feature written in W
 4. [Setup for deployment](unreal-uxt-ch6.md) to a device or emulator
 
 ## Creating a WinRT DLL 
-<!-- TODO: Is there another wording than "adjacent to" -->
-1. Open a new Visual Studio project and create a **DLL (Universal Windows)** project adjacent to the Unreal game’s **uproject** file. 
+1. Open a new Visual Studio project and create a **DLL (Universal Windows)** project in the same directory to the Unreal game’s **uproject** file. 
 
 ![Creating a DLL](images/unreal-winrt-img-01.png)
 
@@ -84,8 +82,7 @@ public:
 > [!NOTE]
 > All WinRT code is stored in **HoloLensWinrtDLL.cpp** so Unreal doesn't try to include any WinRT code when referencing the header. 
 
-<!-- TODO: Is this in cpp or header file? -->
-3. Add the function body for OpenFileDialogue() and all supported code: 
+3. Still in **HoloLensWinrtDLL.cpp**, add a function body for OpenFileDialogue() and all supported code: 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -129,7 +126,6 @@ private:
     winrt::Windows::Foundation::IAsyncAction OpenFileDialogueAction()
     {
         std::vector<winrt::hstring> extensions;
-        // TODO: Is "L" a typo?
         extensions.push_back(L".txt");
 
         auto picker = winrt::Windows::Storage::Pickers::FileSavePicker();
@@ -186,7 +182,7 @@ Linking and using a DLL in Unreal requires a C++ project. If you're using a Blue
 ### Linking the DLL
 1. In **ConsumeWinRT.build.cs**, add a property to find the include path for the DLL (the directory containing HoloLensWinrtDLL.h). The DLL is in a child directory to the include path, so this property will be used as the binary root dir:
 
-```cpp
+```cs
 public class ConsumeWinRT : ModuleRules
 {
     private string WinrtIncPath
@@ -203,12 +199,12 @@ public class ConsumeWinRT : ModuleRules
                    "../../ThirddParty/HoloLensWinrtDLL"));
         }
     }
-// TODO: Is there a semi-colon missing at the end of the class here?
 }
 ```
 
-2. Declare a class constructor and add the following code to update the include path, link the new lib, and delay-load and copy the DLL to the packaged appx location:
-```cpp
+2. In the class constructor, add the following code to update the include path, link the new lib, and delay-load and copy the DLL to the packaged appx location:
+
+```cs
 public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 {
     // This is the directory the DLL's include header is in.
