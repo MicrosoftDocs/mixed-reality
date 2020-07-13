@@ -15,8 +15,8 @@ In this tutorial, you will learn how to provide users with feedback about anchor
 
 ## Objectives
 
-* Learn how to set up a UI panel that displays important information about the current ASA session.
-* Learn and explore the feedback elements that the ASA SDK makes available to users.
+* Learn how to set up a UI panel that displays essential information about the current ASA session
+* learn about and explore feedback elements that the ASA SDK makes available to users
 
 ## Setting up ASA feedback panel
 
@@ -27,7 +27,7 @@ In the Hierarchy window, right-click on the **Instructions** > **TextContent** o
 > [!TIP]
 > To make it easier to work with your scene, set the  <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> for the ParentAnchor object to off by clicking the eye icon to the left of the object. This hides the object in the Scene window without changing their in-game visibility.
 
-Rename the newly created Text (TMP) object **Feedback**. In the Inspector window, change its position and size so it is placed neatly underneath the instruction text, for example:
+Rename the newly created Text (TMP) object **Feedback**, then, in the Inspector window, change its position and size, so it is placed neatly underneath the instruction text, for example:
 
 * Change the Rect Transform component's **Pos Y** to -0.24.
 * Change the Rect Transform component's **Width** to 0.555.
@@ -41,7 +41,7 @@ Then choose font properties, so the text fits nicely within the text area, for e
 
 ![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
-With the **Feedback** object still selected, use the **Add Component** button in the Inspector window to add the **Anchor Feedback Script (Script)** component. Configure it as follows:
+In the Hierarchy window, select the **Feedback** object still, then in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component and configure it as follows:
 
 * Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)** component's **Feedback Text** field.
 

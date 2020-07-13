@@ -30,7 +30,7 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCa
 
 ## Configuring the buttons to operate the scene
 
-In this section, you will configure a series of button events that demonstrate the fundamentals of how Azure Spatial Anchors can be used to achieve spatial alignment in a shared experience.
+In this section, you will configure a series of button events demonstrating the fundamentals of how Azure Spatial Anchors can be used to achieve spatial alignment in a shared experience.
 
 In the Hierarchy window, expand the **Button** object and select the first child button object named **StartAzureSession**:
 
@@ -79,9 +79,9 @@ In the Inspector window, locate the **Spatial Anchor Manager (Script)** componen
 > [!TIP]
 > Instead of setting the Spatial Anchors Account ID and Key in the scene, you can set it for your entire project, this can be advantageous if you have multiple scenes using ASA. To do this, in the Project window, navigate to the Assets > AzureSpatialAnchors.SDK > Resources > **SpatialAnchorConfig** asset, then set the values in the Inspector window.
 
-With the **TableAnchor** object still selected, in the Inspector window, locate the **Sharing Module (Script)** component and configure it as follows:
+In the Hierarchy window, select the **TableAnchor** object, then in the Inspector window, locate the **Anchor Module (Script)** component and configure it as follows:
 
-* In the **Public Sharing Pin** field, change a few of the digits so the pin becomes unique to your project
+* In the **Public Sharing Pin** field, change a few digits, so the pin becomes unique to your project
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
@@ -100,8 +100,8 @@ With the **TableAnchor** object still selected, in the Inspector window, make su
 
 If you now build and deploy the Unity project to two devices, you can achieve spatial alignment between the devices by sharing the Azure Anchor ID. To test it out, you can follow these steps:
 
-1. On device 1: **Start the application** (the Rover Explorer is instantiated and placed on the table)
-2. On device 2: **Start the application** (both users see the table with the Rover Explorer, however, the table does not appear in the same place and the user avatars do not appear where the users are)
+1. On device 1: **Start the app** (the Rover Explorer is instantiated and placed on the table)
+2. On device 2: **Start the app** (both users see the table with the Rover Explorer, but the table does not appear in the same place, and the user avatars do not appear where the users are)
 3. On device 1: Press the **Start Azure Session** button
 4. On device 1: Press the **Create Azure Anchor** button (creates anchor at the location of the TableAnchor object and stores the anchor information in the Azure resource).
 5. On device 1: Press the **Share Azure Anchor** button (shares the anchor ID with other users in real-time)
@@ -115,4 +115,4 @@ If you now build and deploy the Unity project to two devices, you can achieve sp
 
 In this tutorial, you learned how to integrate Azure's powerful Spatial Anchors to align devices in a shared experience.
 
-This also concludes this tutorial series where you learned how to set up a Photon account and create a PUN application, integrate PUN into the Unity project, configure user avatars and shared objects, and finally align multiple participants using Azure Spatial Anchors.
+This also concludes this tutorial series where you learned how to set up a Photon account, create a PUN app, integrate PUN into the Unity project, configure user avatars and shared objects, and finally align multiple participants using Azure Spatial Anchors.

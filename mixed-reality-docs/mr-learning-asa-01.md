@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 ## Overview
 
-Welcome to the Azure Spatial Anchors tutorials! In this tutorial series, you will learn the fundamentals of <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a> (ASA) and how to anchor a complete mixed reality experience in the real world. You will also learn how to deploy your project to Android or iOS.
+Welcome to the Azure Spatial Anchors tutorials! Through this tutorial series, you will learn the fundamentals of <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a> (ASA) and how to anchor a complete mixed reality experience in the real world. You will also learn how to deploy your project to Android and iOS.
 
 Tutorials in this series:
 
@@ -26,9 +26,9 @@ Tutorials in this series:
 ## Objectives
 
 * Learn how to create spatial anchors and fetch them from Azure
-* Learn how to achieve spatial alignment across application sessions
-* Learn how to perform spatial arrangement between multiple devices
-* Learn how to prepare, build, and deploy your project to Android or iOS
+* Learn how to achieve spatial alignment across app sessions
+* Learn how to achieve spatial alignment between multiple devices
+* Learn how to prepare, build, and deploy your project to Android and iOS
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 ---
-title: Getting started tutorials - 6. Creating user interface
-description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+title: Getting started tutorials - 6. Creating user interfaces
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -9,11 +9,11 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 6. Creating user interface
+# 6. Creating user interfaces
 
 ## Overview
 
-In this tutorial, you will learn how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You will also learn how to add dynamic tooltip UI elements to provide the user with additional information.
+In this tutorial, you will learn how to create a simple user interface using MRTK's button and menu prefabs alongside Unity's TextMeshPro component. You will also learn how to configure the buttons to trigger events and add dynamic tooltip UI elements to provide the user with additional information.
 
 ## Objectives
 
@@ -21,7 +21,7 @@ In this tutorial, you will learn how to create a simple user interface using MRT
 * Learn how to use MRTK's menu prefabs
 * Learn how to interact with holograms using UI menus and buttons
 * Learn how to add text elements
-* Learn how to dynamically spawn tooltips on objects
+* Learn how to spawn tooltips on objects dynamically
 
 ## Creating a static panel of buttons
 
@@ -106,7 +106,7 @@ In the Hierarchy window, select the **Indicator** object, then in the Inspector 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> Now when the application starts, the Indicator is disabled by default and can be enabled by pressing the Indicator button.
+> Now, when the app starts, the Indicator is disabled by default and can be enabled by pressing the Indicator button.
 
 Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -129,7 +129,7 @@ In the Hierarchy window, select the **RoverAssembly** object, then in the Inspec
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-6.png)
 
 > [!NOTE]
-> Now when the application starts, the Tap to Place functionality is disabled by default and can be enabled by pressing the Tap to Place button. Additionally, when the the tap to place is completed, it will disable itself.
+> Now, when the app starts, the Tap to Place functionality is disabled by default and can be enabled by pressing the Tap to Place button. Additionally, when the tap to place is completed, it will disable itself.
 
 ## Adding text to the scene
 
@@ -168,7 +168,7 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 
 In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
 
-* Change **Tool Tip Text** to reflect the name of the part, i.e. **Camera**
+* Change **Tool Tip Text** to reflect the name of the part, i.e., **Camera**
 
 ![mr-learning-base](images/mr-learning-base/base-06-section4-step1-3.png)
 
