@@ -90,6 +90,15 @@ For this, first follow the [Initializing your project and first application](mr-
 
 Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
+## Installing inbuilt Unity packages
+
+In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
+
+![mr-learning-azure](images/mr-learning-asa/asa-02-section2-step1-1.png)
+
+> [!NOTE]
+> You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
+
 ## Importing the tutorial assets
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
