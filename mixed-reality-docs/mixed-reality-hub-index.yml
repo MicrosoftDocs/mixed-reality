@@ -5,7 +5,7 @@ summary: Dive into the expanding world of Mixed Reality applications with Window
 
 metadata:
   title: Welcome to Mixed Reality
-  description: Learn how to use mixed reality tools and features on devices such as HoloLens 2.
+  description: Learn how to use Mixed Reality tools and features on devices such as HoloLens 2.
   ms.topic: landing-page
   author: hferrone
   ms.author: v-haferr
@@ -19,19 +19,19 @@ landingContent:
   # Card (optional)
   - title: Discover new immersive worlds
     linkLists:
-      - linkListType: learn
+      - linkListType: overview
         links:
-          - text: What is mixed reality?
+          - text: What is Mixed Reality?
             url: index.md
-          - text: Understand the mixed reality landscape
+          - text: Understand the Mixed Reality landscape
             url: case-study-expanding-the-design-process-for-mixed-reality.md
           - text: Get involved with the community
             url: community.md
             
   # Card
-  - title: Design for mixed reality
+  - title: Design for Mixed Reality
     linkLists:
-      - linkListType: learn
+      - linkListType: concept
         links:
           - text: Start designing and prototyping
             url: design.md
@@ -40,11 +40,11 @@ landingContent:
           - text: Incorporate UX elements
             url: app-patterns-landingpage.md
 
-  - title: Develop for mixed reality
+  - title: Develop for Mixed Reality
     linkLists:
       - linkListType: learn
         links:
-          - text: Choose your mixed reality development journey
+          - text: Choose your Mixed Reality development journey
             url: development.md
           - text: Install your tools
             url: install-the-tools.md
@@ -57,7 +57,7 @@ landingContent:
 
   - title: Distribute your apps
     linkLists:
-      - linkListType: learn
+      - linkListType: deploy
         links:
           - text: 3D app launcher design guidance
             url: 3d-app-launcher-design-guidance.md
@@ -84,7 +84,7 @@ landingContent:
     
   - title: Azure Developer Services
     linkLists:
-      - linkListType: learn
+      - linkListType: concept
         links:
           - text: Cloud services overview
             url: mixed-reality-cloud-services.md
