@@ -16,7 +16,7 @@ keywords: Mixed Reality, develop, development, HoloLens, cloud services
 
 Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial Anchors** help developers build compelling immersive experiences on a variety of platforms. These services allow you to integrate spatial awareness into your projects when you're making applications for 3D training, predictive equipment maintenance, and design review, all in the context of your users’ environments.
 
-In addition, there are other Azure Services that you can easily add into your existing projects that don't fall under the Mixed Reality umbrella. If you're developing for Unity, we have a wide range of [tutorials](#add-on-services) listed at the bottom of this page to get you started.
+In addition, there are other Azure Services that you can easily add into your existing projects that don't fall under the Mixed Reality umbrella. If you're developing for Unity, we have a wide range of [tutorials](#standalone-services) listed at the bottom of this page to get you started.
 
 ## Mixed Reality services
 
