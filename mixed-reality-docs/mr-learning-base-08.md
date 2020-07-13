@@ -1,6 +1,6 @@
 ---
-title: Getting started tutorials - 8. Using eye tracking
-description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+title: Getting started tutorials - 8. Using eye-tracking
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -9,19 +9,19 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 8. Using eye tracking
+# 8. Using eye-tracking
 
 ## Overview
 
-In this tutorial, you will learn how to enable eye tracking for HoloLens 2 and how to add eye tracking to objects to trigger actions when the objects are looked at.
+In this tutorial, you will learn how to enable eye-tracking for HoloLens 2 and add eye-tracking to objects to trigger actions when the user looks at the objects.
 
 > [!NOTE]
-> If you are also deploying this project to HoloLens (1st generation), note that eye tracking is only supported on HoloLens 2.
+> If you are also deploying this project to HoloLens (1st generation), note that eye-tracking is only supported on HoloLens 2.
 
 ## Objectives
 
-* Learn how to enable eye tracking for HoleLens 2
-* learn how to use eye tracking to trigger action
+* Learn how to enable eye-tracking for HoleLens 2
+* Learn how to use eye-tracking to trigger action
 
 ## Ensuring the Eye Gaze Input capability is enabled
 
@@ -44,9 +44,9 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 ![mr-learning-base](images/mr-learning-base/base-08-section2-step1-1.png)
 
 > [!TIP]
-> For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md) instructions.
+> For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the MRTK profiles](mr-learning-base-03.md) instructions.
 
-## Enabling simulated eye tracking for the Unity editor
+## Enabling simulated eye-tracking for the Unity editor
 
 In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, navigate to the **Input** tab, then:
 
@@ -56,7 +56,7 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 
 ![mr-learning-base](images/mr-learning-base/base-08-section3-step1-1.png)
 
-## Adding eye tracking to objects
+## Adding eye-tracking to objects
 
 In the Hierarchy window, expand the RoverExplorer > **Buttons** object, then for each of the three child button objects, expand and select the SeeItSayItLabel > **TextMeshPro** object:
 
@@ -92,6 +92,6 @@ If you now enter Game mode and then press-and-hold the right mouse button while 
 
 ## Congratulations
 
-In this tutorial, you learned how to enable eye tracking for HoloLens 2 and how to add eye tracking to objects to automatically trigger actions when the objects are looked at.
+In this tutorial, you learned how to enable eye-tracking for HoloLens 2 and how to add eye-tracking to objects to trigger actions when the user looks at the objects.
 
 [Next Tutorial: 9. Using speech commands](mr-learning-base-09.md)

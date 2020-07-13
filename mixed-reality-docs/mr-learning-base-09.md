@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 9. Using speech commands
-description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -40,7 +40,7 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 ![mr-learning-base](images/mr-learning-base/base-09-section2-step1-1.png)
 
 > [!TIP]
-> For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md) instructions.
+> For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the MRTK profiles](mr-learning-base-03.md) instructions.
 
 In the Speech > **Speech Commands** section, click the **+ Add a New Speech Command** button four times to add four new speech commands to the list of the existing speech commands, then in the **Keyword** fields enter the following phrases:
 
@@ -52,7 +52,7 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 ![mr-learning-base](images/mr-learning-base/base-09-section2-step1-2.png)
 
 > [!TIP]
-> If your computer doesn't have a microphone and you would like to test the speech commands using the in-editor simulation, you can assign a KeyCode to the speech commands which will let you trigger it when the corresponding key is pressed.
+> If your computer does not have a microphone you can assign a KeyCode to the speech commands, which will let you trigger them when the corresponding key is pressed.
 
 ## Controlling speech commands
 
@@ -60,7 +60,9 @@ In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Featu
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-1.png)
 
-In the Hierarchy window, right-click on an empty spot and select **Create Empty** to add an empty object to your scene, name the object **SpeechInputHandler_Global**, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
+In the Hierarchy window, right-click on an empty spot and select **Create Empty** to add an empty object to your scene.
+
+Name the object **SpeechInputHandler_Global**, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
 
 * **Uncheck** the **Is Focus Required** checkbox, so the user is not required to look at the object with the SpeechInputHandler component to trigger the speech command
 * From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized
@@ -77,7 +79,7 @@ Expand **Element 0** and configure it as follows:
 * Click the small **+** icon to add an event
 * From the Hierarchy window, assign the **Indicator** object to the **None (Object)** field
 * From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered
-* Check the argument checkbox so it is **checked**
+* Check the argument checkbox, so it is **checked**
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-4.png)
 
@@ -87,11 +89,11 @@ Expand **Element 1** and configure it as follows:
 * Click the small **+** icon to add an event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
 * From the **No Function** dropdown, select **BoundingBox** > **bool enabled** to update this property value when the event is triggered
-* Check the argument checkbox so it is **checked**
+* Check the argument checkbox, so it is **checked**
 * Click the small **+** icon to add another event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
 * From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
-* Check the argument checkbox so it is **checked**
+* Check the argument checkbox, so it is **checked**
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-5.png)
 
@@ -111,7 +113,7 @@ Expand **Element 2** and configure it as follows:
 
 In the Hierarchy window, select the RoverExplorer > **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
 
-* Verify that the **Is Focus Required** checkbox is **check**, so the user is required to look at the object with the SpeechInputHandler component, i.e. the RoverAssembly, to trigger the speech command
+* Verify that the **Is Focus Required** checkbox is **check**, so the user is required to look at the object with the SpeechInputHandler component, i.e., the RoverAssembly, to trigger the speech command
 * From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-7.png)
@@ -120,9 +122,9 @@ On the SpeechInputHandler component, click the small **+** icon to add a keyword
 
 * In the **Keyword** field, enter **Enable Tap to Place**, to reference the Enable Tap to Place command you created in the previous section
 * Click the small **+** icon to add an event
-* From the Hierarchy window, assign the object itself, i.e. the same **RoverAssembly** object, to the **None (Object)** field
+* From the Hierarchy window, assign the object itself, i.e., the same **RoverAssembly** object, to the **None (Object)** field
 * From the **No Function** dropdown, select **TapToPlace** > **bool enabled** to update this property value when the event is triggered
-* Check the argument checkbox so it is **checked**
+* Check the argument checkbox, so it is **checked**
 
 ![mr-learning-base](images/mr-learning-base/base-09-section3-step1-8.png)
 
@@ -130,6 +132,6 @@ On the SpeechInputHandler component, click the small **+** icon to add a keyword
 
 In this tutorial, you learned how to create speech commands and how to control them globally. You also learned how to control local speech commands that require the user to look at the object that controls the speech command.
 
-This also concludes the [Getting started tutorials](mr-learning-base-01.md) series. Through these tutorials, you have successfully built a complete mixed reality experience from scratch using the Mixed Reality Toolkit.
+This also concludes the [Getting started tutorials](mr-learning-base-01.md) series. Through these tutorials, you have successfully built a complete mixed reality experience from scratch using the MRTK.
 
 In the next two tutorial series, [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) and [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will first learn how to integrate Azure Spatial Anchors into your project to anchor the Rover Explorer experience you created in the real world. Then, you will learn how to add multi-user capabilities to your project to share user and object movements in real-time.

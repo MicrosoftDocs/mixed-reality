@@ -24,7 +24,7 @@ In this tutorial, you will explore the various steps required to start and stop 
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
+For this, first follow the [Initializing your project and deploying your first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
 1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
 1. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
@@ -80,7 +80,7 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpatia
 
 ## Configuring the buttons to operate the scene
 
-In this section, you will add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an application.
+In this section, you will add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an app.
 
 In the Hierarchy window, expand the **ButtonParent** object and select the first child object named **StartAzureSession**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
@@ -137,16 +137,16 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 
 ## Trying the basic behaviors of Azure Spatial Anchors
 
-Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to build the project and deploy the application to your device.
+Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 
 > [!TIP]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
 
-When the application is running on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
+When the app runs on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
 
 1. Move the cube to a different location
 1. Start Azure Session
-1. Create Azure Anchor (creates anchor at the location of the cube).
+1. Create Azure Anchor (creates an anchor at the location of the cube).
 1. Stop Azure Session
 1. Remove Local Anchor (allows the user to move the cube)
 1. Move the cube somewhere else
@@ -158,7 +158,7 @@ When the application is running on your device, follow the on-screen instruction
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
 > [!CAUTION]
-> Azure Spatial Anchors uses the internet to save and load the anchor data so make sure your device is connected to the internet.
+> Azure Spatial Anchors uses the internet to save and load the anchor data, so make sure your device is connected to the internet.
 
 ## Anchoring an experience
 
@@ -179,7 +179,7 @@ With the newly added RoverModule_Complete object still selected in the Hierarchy
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-3.png)
 
-If you now rebuild the project and deploy the application to your device, you can now reposition the entire Rover Explorer experience by moving the resized cube.
+If you now rebuild the project and deploy the app to your device, you can now reposition the entire Rover Explorer experience by moving the resized cube.
 
 > [!TIP]
 > There is a variety of user experience flows for repositioning experiences including the use of a repositioning object (such as the cube used in this tutorial), the use of a button to toggle a bounding box that surrounds the experience, the use of position and rotation gizmos, and more.
@@ -188,6 +188,6 @@ If you now rebuild the project and deploy the application to your device, you ca
 
 In this tutorial, you learned the fundamentals of Azure Spatial Anchors. The tutorial provided you with several buttons that let you explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
 
-In the next tutorial, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the application is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
+In the next tutorial, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the app is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
 
 [Next Tutorial: 3. Saving, retrieving and sharing Azure Spatial Anchors](mr-learning-asa-03.md)

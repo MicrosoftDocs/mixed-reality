@@ -107,7 +107,7 @@ Choose a suitable location to store your build, for example, _D:\MixedRealityLea
 > [!NOTE]
 If you get any error in the Unity Console window related to Android SDK, NDK, and/or JDK modules, you need to open Unity Hub and install the associated Android Build Support modules.
 
-When the build process is complete, your applications should automatically load on your Android device.
+When the build process is complete, your apps should automatically load on your Android device.
 
 ## Building your application to your iOS device
 
