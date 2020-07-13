@@ -42,7 +42,7 @@ landingContent:
 
   - title: Develop for Mixed Reality
     linkLists:
-      - linkListType: learn
+      - linkListType: get-started
         links:
           - text: Choose your Mixed Reality development journey
             url: development.md
