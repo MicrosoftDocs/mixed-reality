@@ -69,7 +69,7 @@ Review all DLL dependencies in your application. It is advisable to remove any d
 After ingesting the relevant DLLs, build a Visual Studio solution from Unity and then compile an AppX for ARM in Visual Studio to test that your application can be built for ARM processors. It is advised to save the application as a commit in your source control solution.
 
 > [!IMPORTANT]
-> Applications using MRTK v1 can be run on HoloLens 2 after changing the build target to ARM, assuming that all other requirements are met. This includes making sure you have ARM versions of all your plugins. However, your app won't have access to HoloLens 2 specific functions like articulated hand and eye tracking. MRTK v1 and MRTK v2 have different namespaces that allow both versions to be in the same project, which is useful for transitioning from one to the other.
+> Application's using MRTK v1 can be run on HoloLens 2 after changing the build target to ARM, assuming that all other requirements are met. This includes making sure you have ARM versions of all your plugins. However, your app won't have access to HoloLens 2 specific functions like articulated hand and eye tracking. MRTK v1 and MRTK v2 have different namespaces that allow both versions to be in the same project, which is useful for transitioning from one to the other.
 
 ## Update to MRTK version 2
 

@@ -1,5 +1,5 @@
 ---
-title: Configure a New Unity Project for Windows Mixed Reality 
+title: Configure a New Unity project for Windows Mixed Reality 
 description: Instructions on configuring a Unity project for Windows Mixed Reality
 author: thetuvix
 ms.author: alexturn
@@ -9,13 +9,13 @@ keywords: Unity, mixed reality, development, getting started, new project
 ---
 
 
-# Configure a New Unity Project for Windows Mixed Reality 
+# Configure a New Unity project for Windows Mixed Reality 
 
 ## Overview
 
-Windows Mixed Reality (WMR) is a Microsoft platform introduced as part of the Windows 10 operating system. The WMR platform lets you build applications that render digital content on holographic and immersive display devices.
+Windows Mixed Reality (WMR) is a Microsoft platform introduced as part of the Windows 10 operating system. The WMR platform lets you build applications that render digital content on holographic and VR display devices.
 
-When setting up for WMR, there are two paths you can take. Your first option is to install the Mixed Reality Toolkit (MRTK) v2, which will automatically set up the WMR environment. The second option is to manually change a few Unity settings to get rolling with WMR. 
+When setting up for WMR, there are two paths you can take. Your first option is to install the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) (MRTK) v2, which will automatically set up the WMR environment. The second option is to manually change a few Unity settings to get rolling with WMR. 
 
 > [!NOTE]
 > You can always import MRTK later on, so there's no penalty for going the manual route first.
