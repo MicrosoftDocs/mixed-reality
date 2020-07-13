@@ -10,19 +10,21 @@ ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, cloud services
 ---
 
-# Azure Cloud Services
+# Cloud Services
 
 ## Overview
 
-Azure Cloud Services can now go hand-in-hand with Mixed Reality on a variety of platforms with Azure Remote Rendering and Azure Spatial Anchors. If you're developing in Unity, you also have access to a wide array of add-on cloud APIs that can be easily integrated into your projects.
+Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial Anchors** help developers build compelling immersive experiences on a variety of platforms. These services allow you to integrate spatial awareness into your projects when you're making applications for 3D training, predictive equipment maintenance, and design review, all in the context of your users’ environments.
+
+In addition, there are other Azure Services that you can easily add into your existing projects that don't fall under the Mixed Reality umbrella. If you're developing for Unity, we have a wide range of [tutorials](#add-on-services) listed at the bottom of this page to get you started.
 
 ## Mixed Reality services
 
 ### Azure Remote Rendering
-[Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering) (ARR) is a service that lets you to render highly complex 3D models in real time. ARR is currently in public preview and can be added to your Unity or Native C++ projects  if you're targeting HoloLens 2 or Windows desktop PC.
+[Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering) (ARR) is a service that lets you to render highly complex 3D models in real time. ARR is currently in public preview. It can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
 
 ### Azure Spatial Anchors
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors) (ASA) is a cross-platform service that allows you to create mixed reality experiences using objects that persist their location across devices. The service can be developed in a host of environments and deployed to a large group of devices and platforms. This gives them special dispensation for their own list of available platforms:
+[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors) (ASA) is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices, at real-world scale. The service can be developed in a host of environments and deployed to a large group of devices and platforms. This gives them special dispensation for their own list of available platforms:
 * Unity for HoloLens
 * Unity for iOS
 * Unity for Android
@@ -32,8 +34,8 @@ Azure Cloud Services can now go hand-in-hand with Mixed Reality on a variety of 
 * Xamarin for iOS
 * Xamarin for Android
 
-## Add-on services
-If you're developing in Unity, check out the tutorials listed below for step-by-step cloud services integration into your new or existing projects.
+## Standalone services
+The standalone services listed below do not apply to Mixed Reality, but can be helpful in a wide range of development contexts. If you're developing in Unity, each of these services can integrated into your new or existing projects.
 
 ### Device support
 <table>
