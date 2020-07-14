@@ -53,14 +53,16 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 ## Guides to specific features
 
 There are several key features of mixed reality development that our tutorial series doesn't cover. Check out the following guides for details and practical applications: 
-* [Hand tracking](unreal-hand-tracking.md)
 * [Eye tracking](unreal-gaze-input.md)
+* [Hand tracking](unreal-hand-tracking.md)
+* [HoloLens camera](unreal-hololens-camera.md)
+* [Spatial anchors](unreal-spatial-anchors.md)
 * [Spatial mapping](unreal-spatial-mapping.md)
 * [Spatial audio](unreal-spatial-audio.md)
-* [Spatial anchors](unreal-spatial-anchors.md)
+* [Streaming](unreal-streaming.md)
 * [Voice input](unreal-voice-input.md)
-* [HoloLens camera](unreal-hololens-camera.md)
 * [QR codes](unreal-qr-codes.md)
+* [Performance recommendations](performance-recommendations-for-unreal.md)
 
 ## Supported Features
 
