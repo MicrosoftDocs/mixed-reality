@@ -16,8 +16,8 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 :::row:::
     :::column:::
-       [![I'm new to mixed reality](images/Tile-New.jpg)](index.md#understand-the-basics)<br>
-        **[I'm new to mixed reality](index.md#understand-the-basics)**<br>
+       [![I'm new to mixed reality](images/Tile-New.jpg)](get-started-with-mr.md#understand-the-basics)<br>
+        **[I'm new to mixed reality](get-started-with-mr.md#understand-the-basics)**<br>
         Understand the basics
     :::column-end:::
     :::column:::
@@ -44,7 +44,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 <br>
 
-# Understand the basics
+## Understand the basics
 
 If you're new to mixed reality, you will learn what it is and understand its capabilities.
 

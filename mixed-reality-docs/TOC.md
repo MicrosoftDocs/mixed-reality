@@ -1,5 +1,5 @@
 <!-- Hub landing page -->
-# [Welcome to Mixed Reality](mixed-reality-hub-index.yml)
+# [Welcome to Mixed Reality](index.yml)
 
 <!-- Discover top level folder -->
 # Discover

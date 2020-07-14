@@ -22,7 +22,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Mixed Reality?
-            url: index.md
+            url: get-started-with-mr.md
           - text: Understand the Mixed Reality landscape
             url: case-study-expanding-the-design-process-for-mixed-reality.md
           - text: Get involved with the community
