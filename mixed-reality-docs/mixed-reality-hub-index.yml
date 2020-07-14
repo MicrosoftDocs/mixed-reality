@@ -77,10 +77,8 @@ landingContent:
             url: https://docs.microsoft.com/hololens/hololens2-hardware
           - text: Getting around HoloLens 2
             url:  https://docs.microsoft.com/hololens/hololens2-basic-usage
-          - text: HoloLens (1st Gen) hardware
-            url: https://docs.microsoft.com/hololens/hololens1-hardware
-          - text: Getting around HoloLens (1st Gen)
-            url: https://docs.microsoft.com/en-us/hololens/hololens1-basic-usage
+          - text: Deploy HoloLens in a commercial environment
+            url: https://docs.microsoft.com/hololens/hololens-requirements
     
   - title: Azure Developer Services
     linkLists:
