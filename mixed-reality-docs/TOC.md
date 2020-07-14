@@ -112,34 +112,47 @@
 ### Unity
 #### HoloLens 2 tutorials
 ##### Getting started tutorials
-###### [1. Overview and objectives](mrlearning-base.md)
-###### [2. Initializing your project and first application](mrlearning-base-ch1.md)
-###### [3. Creating user interface and configure Mixed Reality Toolkit](mrlearning-base-ch2.md)
-###### [4. Placing dynamic content and using solvers](mrlearning-base-ch3.md)
-###### [5. Interacting with 3D objects](mrlearning-base-ch4.md)
-###### [6. Exploring advanced input options](mrlearning-base-ch5.md)
-###### [7. Creating a Lunar Module sample application](mrlearning-base-ch6.md)
+###### [1. Introduction](mr-learning-base-01.md)
+###### [2. Initializing your project and first application](mr-learning-base-02.md)
+###### [3. Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md)
+###### [4. Positioning objects in the scene](mr-learning-base-04.md)
+###### [5. Creating dynamic content using Solvers](mr-learning-base-05.md)
+###### [6. Creating user interface](mr-learning-base-06.md)
+###### [7. Interacting with 3D objects](mr-learning-base-07.md)
+###### [8. Using eye tracking](mr-learning-base-08.md)
+###### [9. Using voice commands](mr-learning-base-09.md)
 ##### Azure Spatial Anchor tutorials
-###### [1. Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
-###### [2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
-###### [3. Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md)
-###### [4. Azure Spatial Anchors for Android and iOS](mrlearning-asa-ch4.md)
+###### [1. Introduction](mr-learning-asa-01.md)
+###### [2. Getting started with Azure Spatial Anchors](mr-learning-asa-02.md)
+###### [3. Saving, retrieving, and sharing Azure Spatial Anchors](mr-learning-asa-03.md)
+###### [4. Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md)
+###### [5. Azure Spatial Anchors for Android and iOS](mr-learning-asa-05.md)
+##### Multi-user capabilities tutorials
+###### [1. Introduction](mr-learning-sharing-01.md)
+###### [2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)
+###### [3. Connecting multiple users](mr-learning-sharing-03.md)
+###### [4. Sharing object movements with multiple users](mr-learning-sharing-04.md)
+###### [5. Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md)
 ##### Azure Speech Services tutorials
 ###### [1. Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
 ###### [2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)
 ###### [3. Adding the Azure Cognition Services speech translation component](mrlearning-speechSDK-ch3.md)
 ###### [4. Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
-##### Multi-user capabilities tutorials
-###### [1. Setting up Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
-###### [2. Connecting multiple users](mrlearning-sharing(photon)-ch2.md)
-###### [3. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch3.md)
-###### [4. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch4.md)
 ##### Spatial audio tutorials
 ###### [1. Adding spatial audio in your project](unity-spatial-audio-ch1.md)
 ###### [2. Spatializing button interaction sounds](unity-spatial-audio-ch2.md)
 ###### [3. Spatializing audio from a video](unity-spatial-audio-ch3.md)
 ###### [4. Enabling and disabling spatial audio at run time](unity-spatial-audio-ch4.md)
 ###### [5. Using reverb to add distance to spatial audio](unity-spatial-audio-ch5.md)
+#### Azure Cloud Services tutorials
+##### [1. Azure Cloud Services for HoloLens 2](mr-learning-azure-01.md)
+##### [2. Integrating Azure Storage](mr-learning-azure-02.md)
+##### [3. Integrating Azure Custom Vision](mr-learning-azure-03.md)
+##### [4. Integrating Azure Spatial Anchors](mr-learning-azure-04.md)
+##### [5. Integrating Azure Bot Service](mr-learning-azure-05.md)
+#### PC Holographic Remoting tutorials
+##### [1. Getting started with PC Holographic Remoting](mr-learning-pc-holographic-remoting-01.md)
+##### [2. Creating a Holographic Remoting PC application](mr-learning-pc-holographic-remoting-02.md)
 #### HoloLens 2 open source sample apps
 ##### [Surfaces](sampleapp-surfaces.md)
 ##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
