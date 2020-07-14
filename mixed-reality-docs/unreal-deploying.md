@@ -22,24 +22,24 @@ Both options require you to set up your HoloLens to use the [device portal](usin
 
 ## Deploying to device from the Unreal editor
 
-1. Click the dropdown arrow next to the "Launch" button. Initially the HoloLens device option will be grayed out.
+1. Click the dropdown arrow next to the **Launch** button. Initially, the HoloLens device option will be grayed out.
 
 ![Launch dropdown options](images/unreal/launch-dropdown.png)
 
-2. Open the **Device Manager**.
+2. Open the **Device Manager**. Note that your HoloLens won't automatically appear in the device list.
 
-3. Your HoloLens will not appear in the device list automatically. Expand the **Add An Unlisted Device** section.
+3. Expand the **Add An Unlisted Device** section.
 
-4. Select "HoloLens" as your **Platform**.
+4. Select **HoloLens** as your **Platform**.
 
-5. Enter the IP address and port of the device as the device identifier, e.g. "127.0.0.1:10080" (when connected via USB). Use the same user name and password as used by the Device Portal. 
+5. Enter your devices' IP address and port information separated by a colon as the device identifier. For example, "127.0.0.1:10080" (when connected via USB). Use your Device Portal username and password credentials.
 
 6. Hit **Add** and close the device manager. 
-    * In the case of an error (such as wrong address, user name or password), an error message will be printed to the Output Log.
+    * In the case of an error (such as wrong address, user name or password), a message will be printed to the Output Log.
 
 ![Adding an unlisted device](images/unreal/add-unlisted-device.png)
 
-7. Click the dropdown arrow next to the "Launch" button again- this time you should see the HoloLens device you just added. Select the HoloLens device to build and deploy to your HoloLens. 
+7. Click the dropdown arrow next to the **Launch** button again - this time you should see the HoloLens device you just added. Select the HoloLens device to build and deploy to your HoloLens. 
 
 >[!NOTE]
 >Building for the device may involve recompiling shaders (especially on the first run)- this can take a while. Don't let the device go to sleep until the app is running (you may have to wear it). Otherwise shader compilation will fail!
