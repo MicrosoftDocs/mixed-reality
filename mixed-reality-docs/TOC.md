@@ -225,6 +225,7 @@
 ### [Spatial audio in Unreal](unreal-spatial-audio.md)
 ### [Spatial anchors in Unreal](unreal-spatial-anchors.md)
 ### [Streaming in Unreal](unreal-streaming.md)
+### [Deploy to device in Unreal](unreal-deploying.md)
 ### [Voice input in Unreal](unreal-voice-input.md)
 ### [WinRT in Unreal](unreal-winrt.md)
 ### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)

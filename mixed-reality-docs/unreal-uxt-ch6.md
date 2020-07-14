@@ -25,15 +25,15 @@ In the previous tutorial, you added a simple button that resets the chess piece 
 
 If you're going this route with the chess app, you'll need a few things:
 
-1.	Install the **Holographic Remoting Player** from the Microsoft Store on your HoloLens 2 and run the app.
+1.	Install the **Holographic Remoting Player** from the Microsoft Store on your HoloLens 2 and run the app. Note your IP address displayed in the app.
 
-2.	Go to **Edit > Project Settings** and check **enable remoting** in the **Holographic Remoting** section.
+2.	Back in the Unreal editor, go to **Edit > Project Settings** and check **Enable Remoting** in the **Holographic Remoting** section.
 
-3.	Restart the editor, [find your device's IP address](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens#connect-over-wi-fi) and enter it, then click **Connect**.
+3.	Restart the editor, then enter your device's IP address (as displayed in the Holographic Remoting Player app), then click **Connect**.
 
-Once you’re connected, click the drop-down arrow to the right of the **Play** button and select **VR Preview**. This will run the app in the VR Preview Window, which is streamed to the HoloLens headset. 
+Once you’re connected, click the drop-down arrow to the right of the **Play** button and select **VR Preview**. This will run the app in the VR Preview window, which is streamed to the HoloLens headset. 
 
-## Packaging and deploying the app 
+## Packaging and deploying the app via device portal
 
 >[!NOTE]
 >If this is your first time packaging an Unreal app for HoloLens, you'll need to download supporting files from the Epic Launcher. 
