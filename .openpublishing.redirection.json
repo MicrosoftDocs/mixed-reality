@@ -172,17 +172,92 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mrlearning-speechSDK-ch1.md#getting-started",
-			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-speechsdk-ch1",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrlearning-speechsdk-ch1",
 			"redirect_document_id": true
 		},
 		{
 			"source_path": "mixed-reality-docs/using-webvr-in-edge-with-windows-mixed-reality.md",
-			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/webvr-overview",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/webvr-overview",
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "mixed-reality-docs/mrlearning-base.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-base-01",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-base-ch1.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-base-02",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-base-ch2.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-base-03",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-base-ch3.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-base-05",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-base-ch4.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-base-07",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-base-ch5.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-base-08",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-base-ch6.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-base-01",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-asa-ch1.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-asa-02",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-asa-ch2.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-asa-03",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-asa-ch3.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-asa-04",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-asa-ch4.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-asa-05",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch1.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-sharing-02",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch2.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-sharing-03",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch3.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-sharing-04",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch4.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-sharing-05",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "mixed-reality-docs/mrlearning-sharing(photon)-ch5.md",
-			"redirect_url": "https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-sharing(photon)-ch4",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mr-learning-sharing-05",
 			"redirect_document_id": true
 		}
 	]
