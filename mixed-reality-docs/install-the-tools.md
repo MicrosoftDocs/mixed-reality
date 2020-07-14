@@ -37,7 +37,7 @@ We recommend installing the Unity game engine as the easiest way to get started 
 
 :::row:::
     :::column:::
-        <a href="https://unity.com/releases/2019-lts?_ga=2.107420935.42523534.1594266381-1883497824.1589387944" target="_blank">![Unity](images/unity_logo.png)<br>**Unity**</a><br>
+        <a href="https://unity3d.com/unity/qa/lts-releases" target="_blank">![Unity](images/unity_logo.png)<br>**Unity**</a><br>
         We typically recommend the Unity LTS (Long Term Support) stream as the best version with which to start new projects, updating to its latest revision to pick up the latest stable fixes.<br>
         <br>
         The current recommendation is to use **Unity 2019**, which is the LTS build required for MRTK v2 below.<br>
