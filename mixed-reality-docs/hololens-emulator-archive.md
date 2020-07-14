@@ -1,8 +1,8 @@
 ---
 title: HoloLens Emulator archive
 description: List of released builds of the Microsoft HoloLens Emulator.
-author: pbarnettms
-ms.author: pbarnett
+author: hamalawi
+ms.author: moelhama
 ms.date: 6/8/2020
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions
@@ -14,6 +14,8 @@ HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side.
 
 |  Build |  Release Date |  Notes | 
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.19041.1109](https://go.microsoft.com/fwlink/?linkid=2135188) | July 14, 2020 | Windows Holographic, version 2004 July 2020 Update.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator build 10.0.18362.1071](https://go.microsoft.com/fwlink/?linkid=2135245) | July 14, 2020 | Windows Holographic, version 1903 July 2020 Update.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1106](https://go.microsoft.com/fwlink/?linkid=2132415) | June 9, 2020 | Windows Holographic, version 2004 June 2020 Update.  Resolves issues with DirectX 12 applications not rendering, the on-screen keyboard not appearing, grasping objects with hands not working as expected and the emulator failing to start with an error about nested virtualization on AMD-based systems.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1064](https://go.microsoft.com/fwlink/?linkid=2132601) | June 9, 2020 | Windows Holographic, version 1903 June 2020 Update.  Resolves issues with DirectX 12 applications not rendering, the on-screen keyboard not appearing and grasping objects with hands not working as expected.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1103](https://go.microsoft.com/fwlink/?linkid=2129088) | May 12, 2020 | Windows Holographic, version 2004.  Windows Mixed Reality headsets and motion controllers can be used to control and view the HoloLens 2 Emulator in stereo.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
