@@ -230,18 +230,21 @@
 
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
-### [Gaze input in Unreal](unreal-gaze-input.md)
-### [Hand tracking in Unreal](unreal-hand-tracking.md)
-### [HoloLens camera in Unreal](unreal-hololens-camera.md)
-### [QR codes in Unreal](unreal-qr-codes.md)
-### [Spatial mapping in Unreal](unreal-spatial-mapping.md)
-### [Spatial audio in Unreal](unreal-spatial-audio.md)
-### [Spatial anchors in Unreal](unreal-spatial-anchors.md)
-### [Streaming in Unreal](unreal-streaming.md)
-### [Deploy to device in Unreal](unreal-deploying.md)
-### [Voice input in Unreal](unreal-voice-input.md)
-### [WinRT in Unreal](unreal-winrt.md)
-### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
+### Core building blocks
+#### [Gaze input in Unreal](unreal-gaze-input.md)
+#### [Hand tracking in Unreal](unreal-hand-tracking.md)
+#### [Spatial mapping in Unreal](unreal-spatial-mapping.md)
+#### [Spatial audio in Unreal](unreal-spatial-audio.md)
+#### [Spatial anchors in Unreal](unreal-spatial-anchors.md)
+#### [Voice input in Unreal](unreal-voice-input.md)
+### Platform capabilities and APIs
+#### [HoloLens camera in Unreal](unreal-hololens-camera.md)
+#### [QR codes in Unreal](unreal-qr-codes.md)
+#### [WinRT in Unreal](unreal-winrt.md)
+### Deployment and performance
+#### [Deploy to device in Unreal](unreal-deploying.md)
+#### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
+#### [Streaming in Unreal](unreal-streaming.md)
 
 ## JavaScript
 ### [JavaScript development overview](javascript-development-overview.md)
