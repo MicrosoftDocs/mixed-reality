@@ -13,6 +13,10 @@ keywords: HoloLens, Remoting, Holographic Remoting
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.2.2 (July 10, 2020) <a name="v2.2.2"></a>
+* Fixed issue with [HolographicCamera.LeftViewportParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters?view=winrt-19041#Windows_Graphics_Holographic_HolographicCamera_LeftViewportParameters) and [HolographicCamera.RightViewportParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters?view=winrt-19041#Windows_Graphics_Holographic_HolographicCamera_RightViewportParameters) not returning any hidden area mesh vertices when streaming from a Windows Mixed Reality headset.
+* Fixed crash which can happen with poor network connection.
+
 ## Version 2.2.1 (July 6, 2020) <a name="v2.2.1"></a>
 > [!IMPORTANT]
 > [Windows App Certification Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit/) validation with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) will fail. In case you're on version [2.2.0](holographic-remoting-version-history.md#v2.2.0) and want to submit your application to the Microsoft store please updated to at least version 2.2.1.
