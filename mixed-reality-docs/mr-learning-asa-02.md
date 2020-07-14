@@ -45,7 +45,7 @@ In the Unity menu, select **Window** > **Package Manager** to open the Package M
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
 > [!NOTE]
-> You are installing the AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
+> You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
 
 ## Importing the tutorial assets
 
@@ -82,7 +82,7 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpatia
 
 In this section, you will add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and Azure Spatial Anchors behave in an app.
 
-In the Hierarchy window, expand the **ButtonParent** object and select the first child object named **StartAzureSession**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+In the Hierarchy window, expand the **ButtonParent** object and select the first child object named **StartAzureSession**, in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
 * Assign the **ParentAnchor** object to the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **StartAzureSession ()** to set this function as the action to be executed when the event is triggered
@@ -104,7 +104,7 @@ In the Hierarchy window, select the next button named **CreateAzureAnchor**, the
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
-In the Hierarchy window, select the next button named **RemoveLocalAnchor**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+In the Hierarchy window, select the next button named **RemoveLocalAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
 * Assign the **ParentAnchor** object to the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **RemoveLocalAnchor ()** to set this function as the action to be executed when the event is triggered
@@ -112,7 +112,7 @@ In the Hierarchy window, select the next button named **RemoveLocalAnchor**, the
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
-In the Hierarchy window, select the next button named **FindAzureAnchor**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+In the Hierarchy window, select the next button named **FindAzureAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
 * Assign the **ParentAnchor** object to the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **FindAzureAnchor ()** to set this function as the action to be executed when the event is triggered
@@ -128,7 +128,7 @@ In the Hierarchy window, select the next button named **DeleteAzureAnchor**, the
 
 ## Connecting the scene to the Azure resource
 
-In the Hierarchy window, select the **ParentAnchor** object, then in the Inspector window, locate the **Spatial Anchor Manager (Script)** component and configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the [Prerequisites](mr-learning-asa-01.md#prerequisites) for this tutorial series:
+In the Hierarchy window, select the **ParentAnchor** object, then in the Inspector window, locate the **Spatial Anchor Manager (Script)** component. Configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the [Prerequisites](mr-learning-asa-01.md#prerequisites) for this tutorial series:
 
 * In the **Spatial Anchors Account ID** field, paste the **Account ID** from your Azure Spatial Anchors account
 * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
@@ -182,11 +182,11 @@ With the newly added RoverModule_Complete object still selected in the Hierarchy
 If you now rebuild the project and deploy the app to your device, you can now reposition the entire Rover Explorer experience by moving the resized cube.
 
 > [!TIP]
-> There is a variety of user experience flows for repositioning experiences including the use of a repositioning object (such as the cube used in this tutorial), the use of a button to toggle a bounding box that surrounds the experience, the use of position and rotation gizmos, and more.
+> A variety of user experience flows for repositioning experiences, including the use of a repositioning object (such as the cube used in this tutorial), the use of a button to toggle a bounding box that surrounds the experience, the use of position and rotation gizmos, and more.
 
 ## Congratulations
 
-In this tutorial, you learned the fundamentals of Azure Spatial Anchors. The tutorial provided you with several buttons that let you explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
+In this tutorial, you learned the fundamentals of Azure Spatial Anchors. This tutorial provided you with several buttons to let you explore the various steps required to start and stop an Azure Spatial Anchors session. Also, to create, upload, and download Azure Spatial Anchors on a single device.
 
 In the next tutorial, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the app is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
 

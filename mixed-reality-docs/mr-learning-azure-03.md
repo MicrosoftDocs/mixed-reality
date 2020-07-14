@@ -52,9 +52,11 @@ The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (scr
 The necessary credentials for the **ObjectDetectionManager (script)** settings can be retrieve from the Azure Portal and the custom vision portal.
 
 ### Azure Portal
+
 Find and locate the custom vision resource of type **Cognitive Services** you have created in the *Preparing the scene* section of this tutorial. There click on *Keys and Endpoint* to retrieve the necessary credentials.
 
 ### Custom Vision Dashboard
+
 In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you have created for this tutorial and click on the top right corner of the page on the gear icon to open the settings page. Here on the right hand *Resources* section you will find the necessary credentials.
 
 Now with the **ObjectDetectionManager (script)** setup correctly, find the **SceneController** object in your scene Hierarchy and select it.

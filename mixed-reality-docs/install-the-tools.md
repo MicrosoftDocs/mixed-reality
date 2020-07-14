@@ -23,8 +23,6 @@ We recommend installing the Unity game engine as the easiest way to get started 
 
 <br>
 
->[!VIDEO https://www.youtube.com/embed/3l20TWhw4S8]
-
 ## Installation checklist
 
 

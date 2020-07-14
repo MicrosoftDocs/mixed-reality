@@ -42,7 +42,7 @@ Learn more about [Azure Blob storage](https://docs.microsoft.com/azure/storage/b
 
 ## Preparing Azure Storage
 
-To consume the Azure storage services you will need an Azure storage account. To create a storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see [Azure storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
+To consume the Azure storage services you will need an Azure storage account. To create a storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see [Azure storage account overview](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
 
 Once you have a storage account, you can retrieve the connection string from the **Azure Portal** which will be needed in the next section of this lesson.
 
