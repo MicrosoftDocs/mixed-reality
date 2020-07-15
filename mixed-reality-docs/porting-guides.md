@@ -49,7 +49,7 @@ The Windows Mixed Reality platform is still under active development. We recomme
 
 ### Unity step 1: Review the common porting steps listed above
 
-Review the common steps listed above to make sure your dev environment is set up correctly. In step #3, if you are using Visual Studio you should select the **Game Development with Unity** workload. You may deselect the "Unity Editor optional" component since you'll be installing a newer version of Unity in teh next step.
+Review the common steps listed above to make sure your development environment is set up correctly. In step #3, if you're using Visual Studio you should select the **Game Development with Unity** workload. You may deselect the "Unity Editor optional" component since you'll be installing a newer version of Unity in the next step.
 
 ### Unity step 2: Upgrade to the latest public build of Unity with Windows MR Support
 1. Download the latest [recommended public build of Unity](install-the-tools.md) with mixed reality support.
