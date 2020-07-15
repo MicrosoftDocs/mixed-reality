@@ -85,7 +85,7 @@ Select "Switch Platform"
 
 ### Unity step 6: Target your application to run on Windows Mixed Reality
 1. First, you must remove or conditionally compile out any other library support specific to a particular VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with other VR SDKs, such as Windows Mixed Reality.
-    * For example, if your project references the SteamVR SDK, you'll need to update your project to exclude those prefabs and script API calls when exporting for the Win32 build target.
+    * For example, if your project references the SteamVR SDK, you'll need to update your project to instead use Unity's common VR APIs that support both Windows Mixed Reality and SteamVR.
     * Specific steps for conditionally excluding other VR SDKs are coming soon.
 2. In your Unity project, [target the Windows 10 SDK](holograms-100.md#target-windows-10-sdk)
 3. For each scene, [setup the camera](holograms-100.md#chapter-2---setup-the-camera)
