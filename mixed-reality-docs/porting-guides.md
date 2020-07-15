@@ -42,7 +42,7 @@ The Windows Mixed Reality platform is still under active development. We recomme
 * If you're using Visual Studio then upgrade to the most recent build
 * See [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2019
 
-### Common step 6: Choose the correct Adapter
+### Common step 4: Choose the correct Adapter
 * In systems like notebooks with two GPUs, [target the correct adapter](rendering-in-directx.md#hybrid-graphics-pcs-and-mixed-reality-applications). This applies to Unity and native DirectX apps where a ID3D11Device is created, either explicitly or implicitly (Media Foundation), for its functionality.
 
 ## Unity porting guidance
@@ -83,14 +83,14 @@ Select "Switch Platform"
 )
 2. Learn about [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
 
-### Unity step 7: Target your application to run on Windows Mixed Reality
+### Unity step 6: Target your application to run on Windows Mixed Reality
 1. First, you must remove or conditionally compile out any other library support specific to a particular VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with other VR SDKs, such as Windows Mixed Reality.
     * For example, if your project references the SteamVR SDK, you'll need to update your project to exclude those prefabs and script API calls when exporting for the Win32 build target.
     * Specific steps for conditionally excluding other VR SDKs are coming soon.
 2. In your Unity project, [target the Windows 10 SDK](holograms-100.md#target-windows-10-sdk)
 3. For each scene, [setup the camera](holograms-100.md#chapter-2---setup-the-camera)
 
-### Unity step 8: Use the stage to place content on the floor
+### Unity step 7: Use the stage to place content on the floor
 
 You can build Mixed Reality experiences across a wide range of [experience scales](coordinate-systems.md).
 
@@ -136,7 +136,7 @@ Example of results:
 
 Algorithm is based on a blog by Daniel Smilkov: [Largest rectangle in a polygon](https://d3plus.org/blog/behind-the-scenes/2014/07/08/largest-rect/)
 
-### Unity step 9: Work through your input model
+### Unity step 8: Work through your input model
 
 Each game or application targeting an existing HMD will have a set of inputs that it handles, types of inputs that it needs for the experience, and specific APIs that it calls to get those inputs. We've invested in trying to make it as simple and straightforward as possible to take advantage of the inputs available in Windows Mixed Reality.
 1. Read through the **[Input porting guide for Unity](input-porting-guide-for-unity.md)** for details of how Windows Mixed Reality exposes input, and how that maps to what your application may do today.
@@ -144,7 +144,7 @@ Each game or application targeting an existing HMD will have a set of inputs tha
     * You can access motion controller data in Unity using either the general cross-VR-SDK Input.GetButton/Input.GetAxis APIs or the MR-specific UnityEngine.XR.WSA.Input APIs. (previously in the UnityEngine.XR.WSA.Input namespace in Unity 5.6)
     * See the [example in Toolkit](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) that combines gamepad and motion controllers.
 
-### Unity step 10: Performance testing and tuning
+### Unity step 9: Performance testing and tuning
 
 Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you're targeting, there's a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you're likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
