@@ -39,7 +39,7 @@ The Windows Mixed Reality platform is still under active development. We recomme
 4. Switch to the [Windows Insider Fast flights](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) through **Settings > Update & Security Section**
 
 ### Common step 3: Upgrade to the most recent build of Visual Studio
-* If you are using Visual Studio then upgrade to the most recent build
+* If you're using Visual Studio then upgrade to the most recent build
 * See [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2019
 
 ### Common step 6: Choose the correct Adapter
