@@ -5,7 +5,6 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation
 appliesto:
 - HoloLens 2
