@@ -53,7 +53,7 @@ Review the common steps listed above to make sure your dev environment is set up
 ### Unity step 2: Upgrade to the latest public build of Unity with Windows MR Support
 1. Download the latest [recommended public build of Unity](install-the-tools.md) with mixed reality support.
 2. Save a copy of your project before you get started
-3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuides.html) available from Unity on upgrading if your project was build on anolder version of Unity.
+3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuides.html) available from Unity on upgrading if your project was built on an older version of Unity.
 4. Follow the [instructions](https://docs.unity3d.com/Manual/APIUpdater.html) on Unity's site for using their automatic API updater
 5. Check and see if there are additional changes that you need to make to get your project running, and work through any remaining errors and warnings. 
 
