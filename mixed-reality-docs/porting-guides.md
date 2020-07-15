@@ -12,7 +12,8 @@ keywords: port, porting, unity, middleware, engine, UWP, Win32
 
 ## Overview
 
-Windows 10 includes direct support for immersive and holographic headsets. If you've built content for other devices, such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing content over to Windows Mixed Reality involves retargeting usage of these other SDKs to the Windows APIs. The [Windows platform APIs for mixed reality](https://docs.microsoft.com/uwp/api/Windows.Perception) works with Win32.
+Windows 10 includes direct support for immersive and holographic headsets. If you've built content for other devices, such as the Oculus Rift or HTC Vive, these have dependencies on libraries that exist above the operating system's platform API. Bringing existing Win32 Unity VR apps over to Windows Mixed Reality involves retargeting usage of vendor-specific VR SDKs to Unity's cross-vendor VR APIs.
+
 
 ## Porting overview
 
