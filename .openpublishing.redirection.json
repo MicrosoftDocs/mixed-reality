@@ -39,7 +39,7 @@
 			"source_path": "mixed-reality-docs/sensor-tuning.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/hololens-updates",
 			"redirect_document_id": false
-		},
+	},
 		{
 			"source_path": "mixed-reality-docs/implementing-3d-deep-links-for-your-app-in-the-windows-mixed-reality-home.md",
 			"redirect_url": "implementing-3d-app-launchers.#3d-deep-links-secondarytiles",
