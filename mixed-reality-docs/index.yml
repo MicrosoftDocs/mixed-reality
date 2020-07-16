@@ -37,6 +37,8 @@ landingContent:
             url: design.md
           - text: Explore core design concepts
             url: core-concepts-landingpage.md
+          - text: Learn about interaction fundamentals
+            url: interaction-fundamentals.md
           - text: Incorporate UX elements
             url: app-patterns-landingpage.md
 
