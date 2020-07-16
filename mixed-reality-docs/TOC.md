@@ -104,7 +104,6 @@
 # Develop
 ## [Learn the tools and architecture](development.md)
 ## [Install the tools](install-the-tools.md)
-## [Get your app ready for HL2](mrtk-porting-guide.md)
 ## [Cloud services overview](mixed-reality-cloud-services.md)
 
 <!-- Deprecated
@@ -119,11 +118,7 @@
 ### Getting started
 #### [Getting started with Mixed Reality Toolkit v2](mrtk-getting-started.md)
 #### [Configure Unity Project for Windows Mixed Reality](Configure-Unity-Project.md)
-#### [Recommended settings for Unity](recommended-settings-for-unity.md)
-#### [Unity Play Mode](unity-play-mode.md)
-#### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
-#### [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
-#### [Managed debugging with Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
+#### [Get your app ready for HL2](mrtk-porting-guide.md)
 
 ### Tutorials
 #### [Overview](tutorials.md)
@@ -236,17 +231,25 @@
 ##### [Galaxy Explorer 1.0](galaxy-explorer.md)
 ##### [Lunar Module](lunar-module.md)
 
+### Settings and debugging
+#### [Managed debugging with Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
+#### [Recommended settings for Unity](recommended-settings-for-unity.md)
+#### [Unity Play Mode](unity-play-mode.md)
+### Visual Studio solutions
+#### [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
+#### [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
+
 <!-- Unreal section -->
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
 ### Tutorials
 #### Build a chess app with MRTK UX Tools
-##### [Getting started](unreal-uxt-ch1.md)
-##### [Initializing your project](unreal-uxt-ch2.md)
-##### [Mixed Reality setup](unreal-uxt-ch3.md)
-##### [Adding interactivity](unreal-uxt-ch4.md)
-##### [UI and functions](unreal-uxt-ch5.md)
-##### [Packaging and deploying](unreal-uxt-ch6.md)
+##### [1. Getting started](unreal-uxt-ch1.md)
+##### [2. Initializing your project](unreal-uxt-ch2.md)
+##### [3. Mixed Reality setup](unreal-uxt-ch3.md)
+##### [4. Adding interactivity](unreal-uxt-ch4.md)
+##### [5. UI and functions](unreal-uxt-ch5.md)
+##### [6. Packaging and deploying](unreal-uxt-ch6.md)
 ### Core building blocks
 #### [Gaze input in Unreal](unreal-gaze-input.md)
 #### [Hand tracking in Unreal](unreal-hand-tracking.md)
