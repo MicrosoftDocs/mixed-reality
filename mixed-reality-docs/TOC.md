@@ -125,7 +125,7 @@
 #### [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
 #### [Managed debugging with Unity IL2CPP](managed-debugging-with-unity-il2cpp.md)
 
-### [Tutorials and sample apps](tutorials.md)
+### Tutorials
 #### [Overview](tutorials.md)
 #### HoloLens 2 tutorials
 ##### Getting started tutorials
