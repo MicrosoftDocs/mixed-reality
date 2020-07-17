@@ -366,4 +366,4 @@
 ## [Current mixed reality release notes](release-notes-may-2020.md)
 ## [Community Resources](community.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
-## [Deploying HoloLens at scare](https://docs.microsoft.com/hololens/)
+## [Deploying HoloLens at scale](https://docs.microsoft.com/hololens/)
