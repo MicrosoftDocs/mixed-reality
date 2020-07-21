@@ -56,7 +56,7 @@ landingContent:
             url: unity-development-overview.md
           - text: Start your Unreal journey
             url: unreal-development-overview.md
-          - text: Start your Javascript journey
+          - text: Start your JavaScript journey
             url: javascript-development-overview.md
           - text: Start your Native (OpenXR/WinRT) journey
             url: directx-development-overview.md
