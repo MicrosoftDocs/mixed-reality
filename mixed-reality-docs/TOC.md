@@ -134,20 +134,22 @@
 ###### [8. Using eye tracking](mr-learning-base-08.md)
 ###### [9. Using voice commands](mr-learning-base-09.md)
 ##### Azure Spatial Anchor tutorials
-###### [1. Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
-###### [2. Saving, retrieving and sharing Azure Spatial Anchors](mrlearning-asa-ch2.md)
-###### [3. Displaying Azure Spatial Anchor feedback](mrlearning-asa-ch3.md)
-###### [4. Azure Spatial Anchors for Android and iOS](mrlearning-asa-ch4.md)
+###### [1. Introduction](mr-learning-asa-01.md)
+###### [2. Getting started with Azure Spatial Anchors](mr-learning-asa-02.md)
+###### [3. Saving, retrieving and sharing Azure Spatial Anchors](mr-learning-asa-03.md)
+###### [4. Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md)
+###### [5. Azure Spatial Anchors for Android and iOS](mr-learning-asa-05.md)
+##### Multi-user capabilities tutorials
+###### [1. Introduction](mr-learning-sharing-01.md)
+###### [2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)
+###### [3. Connecting multiple users](mr-learning-sharing-03.md)
+###### [4. Sharing object movements with multiple users](mr-learning-sharing-04.md)
+###### [5. Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md)
 ##### Azure Speech Services tutorials
 ###### [1. Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
 ###### [2. Adding an offline mode for local speech-to-text translation](mrlearning-speechSDK-ch2.md)
 ###### [3. Adding the Azure Cognition Services speech translation component](mrlearning-speechSDK-ch3.md)
 ###### [4. Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
-##### Multi-user capabilities tutorials
-###### [1. Setting up Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
-###### [2. Connecting multiple users](mrlearning-sharing(photon)-ch2.md)
-###### [3. Sharing object movements with multiple users](mrlearning-sharing(photon)-ch3.md)
-###### [4. Integrating Azure Spatial Anchors into a shared experience](mrlearning-sharing(photon)-ch4.md)
 ##### Spatial audio tutorials
 ###### [1. Adding spatial audio in your project](unity-spatial-audio-ch1.md)
 ###### [2. Spatializing button interaction sounds](unity-spatial-audio-ch2.md)
