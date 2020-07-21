@@ -129,14 +129,14 @@ Started SPECTRUM
 IMPORT SUCCESS
 ```
 
-### How to Export using MixedRealityPackager.exe
+### How to Export using MixedRealitySpatialDataPackager.exe
 ```
 MixedRealitySpatialDataPackager.exe export <folderpath to mapx files> <source package family name>    
 ```
 
 Exporting maps off device generates two mapx files, het.mapx and sa.mapx. During the export process all spatial anchors are removed except for the specified app and the user-created boundary (if it exists). The source package family name must match an existing installed app or the exe will fail.
 
-### How to Import using MixedRealityPackager.exe
+### How to Import using MixedRealitySpatialDataPackager.exe
 ```
 MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target package family name> <user SID>
 ```

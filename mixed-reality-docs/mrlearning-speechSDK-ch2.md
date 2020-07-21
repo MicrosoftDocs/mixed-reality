@@ -41,7 +41,7 @@ And enable it again by saying the Wake Word, **Activate terminal**:
 > The application needs to connect to Azure, so make sure your computer/device is connected to the internet.
 
 > [!TIP]
-> If you anticipate frequently not being able to connect to Azure, you can also implement speech commands using MRTK by following the [Enabling Voice Commands](mrlearning-base-ch5.md#enabling-voice-commands) instructions.
+> If you anticipate frequently not being able to connect to Azure, you can also implement speech commands using MRTK by following the [Using speech commands](mr-learning-base-09.md) instructions.
 
 ## Congratulations
 
