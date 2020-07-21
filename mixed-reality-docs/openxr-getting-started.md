@@ -26,20 +26,18 @@ To start developing OpenXR applications for HoloLens 2:
 To start developing OpenXR applications for immersive Windows Mixed Reality headsets:
 
 1. Be sure you are running at least the Windows 10 May 2019 Update (1903), which is the minimum requirement for Windows Mixed Reality end users to run OpenXR applications.  If you're on an earlier version of Windows 10, you can upgrade by using the <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Windows 10 Update Assistant</a>.
-2. Set up a Windows Mixed Reality headset or follow the instructions to [enable the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md).  As you set up Windows Mixed Reality, Mixed Reality Portal will automatically install the Windows Mixed Reality OpenXR Runtime.  The Microsoft Store will then keep the runtime up to date.
-3. Make the Windows Mixed Reality OpenXR Runtime active by launching Mixed Reality Portal from the Start menu, clicking the ... menu in the lower-left and selecting "Set up OpenXR".<br>
+2. Set up a Windows Mixed Reality headset or follow the instructions to [enable the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md).
+
+That's it!  The Windows Mixed Reality OpenXR runtime is installed and made active automatically for all Windows Mixed Reality users.  The Microsoft Store then keeps the runtime up to date.
+
+If you ever need to make the Windows Mixed Reality OpenXR Runtime active again, launch Mixed Reality Portal from the Start menu, click the ... menu in the lower-left and select "Set up OpenXR".  If that menu item is missing, the OpenXR runtime is already active.<br>
 ![Setting up OpenXR in the Mixed Reality Portal](images/mixed-reality-portal-set-up-openxr.png)
-
-If you ever need to make the Windows Mixed Reality OpenXR Runtime active again, repeat step 3.
-
-> [!NOTE]
-> The Windows Mixed Reality OpenXR Runtime will soon be made active automatically for all Windows Mixed Reality end users.
 
 ## Getting the Windows Mixed Reality OpenXR Developer Tools
 
 To try out the Windows Mixed Reality OpenXR Runtime, you can install the <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">Mixed Reality OpenXR Developer Tools app</a>.  This app provides a demo scene that exercises various features of OpenXR, along with a System Status page that provides key information about the active runtime and the current headset.
 
-If using the emulator, the easiest way to install the Mixed Reality OpenXR Developer Tools is using [Windows Device Portal](using-the-windows-device-portal.md), by navigating to the "OpenXR" page and then clicking the "Install" button under "Developer Features". (this works on a physical HoloLens 2 device as well)
+If using the HoloLens 2 emulator, the easiest way to install the Mixed Reality OpenXR Developer Tools is using [Windows Device Portal](using-the-windows-device-portal.md), by navigating to the "OpenXR" page and then clicking the "Install" button under "Developer Features". (this works on a physical HoloLens 2 device as well)
 
 ![Mixed Reality OpenXR Developer Tools app](images/mixed-reality-openxr-developer-tools.png)
 
@@ -49,7 +47,7 @@ Be sure to [install the tools](install-the-tools.md) you'll need for OpenXR deve
 
 The <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.  Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
 
-Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is 100% the same!
+Note that while the Win32 and UWP project files are separate due to differences in packaging and deployment, the app code inside each project is almost exactly the same!
 
 After building an OpenXR Win32 desktop .EXE, you can use it with a VR headset on any desktop VR platform that supports OpenXR, whether it's a Windows Mixed Reality headset or any other headset.
 
@@ -96,6 +94,7 @@ To then activate preview extension support on your target HoloLens 2 or desktop 
      * If your target device is a HoloLens 2 device, [follow these instructions](using-the-windows-device-portal.md) on the target device.  Note that this requires a physical headset, as a known issue in the HoloLens 2 emulator will prevent the UI in the next step from appearing in the emulator.
      * If your target device is a desktop PC with an immersive headset peripheral attached, <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#set-up-device-portal-on-windows-desktop" target="_blank">follow these instructions</a> on the target desktop PC.
   1. Navigate to the **OpenXR** tab in the left pane and enable **Use latest preview OpenXR runtime**.  This enables the preview runtime on your device, which has preview extensions activated.
+     ![Device Portal OpenXR preview runtime checkbox](images/device-portal-openxr-preview-runtime.png)
   1. Confirm that the **Runtime version** shown on the **System Status** tab of the [Windows Mixed Reality OpenXR Developer Tools](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) now matches the required version of the preview extensions you plan to try.  If so, you should see the extension in the **Extensions** list.  Note that once a stable extension is available, its preview extension will be removed.<br />
      ![Mixed Reality OpenXR Developer Tools app System Status tab](images/mixed-reality-openxr-developer-tools-status.png)
 
