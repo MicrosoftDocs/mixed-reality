@@ -3,7 +3,7 @@ title: Multi-user capabilities tutorials - 2. Setting up Photon Unity Networking
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
@@ -13,19 +13,19 @@ ms.localizationpriority: high
 
 ## Overview
 
-In this tutorial, you will prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a PUN application, import PUN assets into your Unity project, and connect your Unity project to the PUN application.
+In this tutorial, you will prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a PUN app, import PUN assets into your Unity project, and connect your Unity project to the PUN app.
 
 ## Objectives
 
-* Learn how to create a PUN application
+* Learn how to create a PUN app
 * Learn how to find and import the PUN assets
-* Learn how to connect your Unity project to the PUN application
+* Learn how to connect your Unity project to the PUN app
 
 ## Creating and preparing the Unity project
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
+For this, first follow the [Initializing your project and deploying your first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
 1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
 1. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
@@ -80,7 +80,7 @@ After you have imported the tutorial assets your Project window should look simi
 > For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
 
 > [!NOTE]
-> After importing the MultiUserCapabilities tutorial assets package, you will see several [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) errors in the Console window stating that the type or namespace is missing. This is to be expected and will be resolved in the next section when you import the PUN assets.
+> After importing the MultiUserCapabilities tutorial assets package, you will see several [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) errors in the Console window stating that the type or namespace is missing. This is expected and will be resolved in the next section when you import the PUN assets.
 
 ## Importing the PUN assets
 
@@ -100,7 +100,7 @@ Once Unity has completed the import process, the Pun Wizard window will appear w
 
 ## Creating the PUN application
 
-In this section, you will create a Photon account, if you don't already have one, and create a new PUN application.
+In this section, you will create a Photon account, if you don't already have one, and create a new PUN app.
 
 Navigate to the Photon <a href="https://dashboard.photonengine.com/account/signin" target="_blank">dashboard</a> and sign in if you already have an account you want to use, otherwise, click the **Create One** link and follow the instructions to register a new account:
 
@@ -117,17 +117,17 @@ On the Create a New Application page, enter the following values:
 * For Description, optionally enter a suitable description
 * For Url, leave the field empty
 
-Then click the **Create** button to create the new application:
+Then click the **Create** button to create the new app:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
 
-Once Photon has finished the creation process, the new PUN application will appear on your dashboard:
+Once Photon has finished the creation process, the new PUN app will appear on your dashboard:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
 
 ## Connecting the Unity project to the PUN application
 
-In this section, you will connect your Unity project to the PUN application you created in the previous section.
+In this section, you will connect your Unity project to the PUN app you created in the previous section.
 
 On the Photon dashboard, click the **App ID** field to reveal the app ID, then copy it to your clipboard:
 
@@ -141,12 +141,12 @@ Then click the **Setup Project** button to apply the app ID:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
 
-Once Unity has finished the PUN setup process, the PUN Setup menu will display the message **Done!** and automatically select the **PhotonServerSettings** asset in the Project window so its properties are displayed in the Inspector window:
+Once Unity has finished the PUN setup process, the PUN Setup menu will display the message **Done!** and automatically select the **PhotonServerSettings** asset in the Project window, so its properties are displayed in the Inspector window:
 
 ![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
 
 ## Congratulations
 
-You have successfully created a PUN application and connected it to your Unity project. Your next step is to allow connections with other users so that multiple users can see each other.
+You have successfully created a PUN app and connected it to your Unity project. Your next step is to allow connections with other users so that multiple users can see each other.
 
 [Next Tutorial: 3. Connecting multiple users](mr-learning-sharing-03.md)

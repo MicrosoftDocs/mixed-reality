@@ -11,37 +11,72 @@ keywords: hand, menu, button, quick access, layout
 
 ![Ulnar side hand location](images/UX/UX_Hero_HandMenu.jpg)
 
-Hand menus allow users to quickly bring up hand-attached UI for frequently used functions. 
+The hand menu is one of the most unique UX patterns in HoloLens 2. It allows you to quickly bring up hand-attached UI. Since it's accessible anytime and can be shown and hidden easily, it's great for quick actions.
 
-Below are the best practices we have found for hand menus. You can also find an example scene demonstrating the hand menu in [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup).
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAg]
+
+You'll find our recommended best practices for working with hand menus in the list below. You can also find an example scene demonstrating the hand menu in [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html).
 
 <br>
+
 
 ---
 
-## Behavior best practices
-**A. Keep the number of buttons small:** 
+## Best practices
+**Keep the number of buttons small** 
+
 Due to the close distance between a hand-locked menu and the eyes and also the user's tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), we recommend keeping the number of buttons small. Based on our exploration, one column with three buttons works well by keeping all the content within the field of view (FOV) even when a user moves their hands to the center of the FOV. 
 
-**B. Utilize hand menu for quick action:** 
+**Utilize hand menu for quick action** 
+
 Raising an arm and maintaining the position could easily cause arm fatigue. Use a hand-locked method for the menu requiring a short interaction. If your menu is complex and requires extended interaction times, consider using world-locked or body-locked instead. 
 
-**C. Button / Panel angle:**
+**Button / Panel angle**
+
 Menus should billboard towards the opposite shoulder and middle of the head: This allows a natural hand move to interact with the menu with the opposite hand and avoids any awkward or uncomfortable hand positions when touching buttons. 
 
-**D. Consider supporting one-handed or hands-free operation:**
-Do not assume both of the user's hands are always available. Consider a wide range of contexts when one or both hands are not available, and make sure your design accounts for those situations. To support a one-handed hand menu, you can try transitioning the menu placement from hand-locked to world-locked when the hand flips (goes palm down). For hands-free scenarios, consider using a voice command to invoke the hand menu buttons.
+**Consider supporting one-handed or hands-free operation**
 
-**E. Two-step invocation:**
-If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands a lot both intentionally (for communication and object manipulation) and unintentionally. If you experience false-positives in your app, consider adding an additional step besides the palm-up event to invoke the hand menu such as fully opened fingers.
+Do not assume both of the user's hands are always available. Consider a wide range of contexts when one or both hands are not available, and make sure your design accounts for those situations. To support a one-handed hand menu, you can try transitioning the menu placement from hand-locked to world-locked when the hand flips (goes palm down). For hands-free scenarios, consider using a voice command to invoke the hand menu.
 
-**F. Avoid adding buttons near the wrist (system home button):**
-If the hand menu buttons are placed too close to the home button, it may get accidentally triggered while interacting with the hand menu.
+**Avoid adding buttons near the wrist (system home button)**
 
-**G. Test, test, test:**
-People have different bodies, with different thresholds for comfort and discomfort, etc. Be sure to test out your design on and get feedback from a variety of people.
+If the hand menu buttons are placed too close to the home button, it may accidentally trigger while interacting with the hand menu.
 
 <br>
+
+## Hand menu with large and complex UI controls
+<img src="images/UX/HandMenu_SizeExample.png" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
+It's recommended to limit the number of buttons or UI controls on hand-attached menus. This is because extended interaction with a large number of UI elements can cause arm fatigue. If your experience requires a large menu, provide an easy way for the user to world lock the menu. One technique we recommend is to world-lock then menu when the hand drops or flips away from the user. A second technique is to allow the user to directly grab the menu with the other hand. When the user releases the menu, the menu should world lock. This way, a user can interact with various UI elements comfortably and confidently over an extended period of time. 
+
+When the menu is world-locked, make sure to provide a way to move the menu, and close the menu when it's no longer needed. Make the menu movable by providing handles on the sides or top of menu. Add a close button to allow the menu to close. Allow for the menu to re-attach to the hand when the user hand faces the user. We also recommend requiring that the users gazes at their hand to prevent false activations (see below).
+
+**Large menu that shows a usability issue**
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AOPx]
+
+**World-locked menu on hand drop**
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AGZi]
+
+**Manual grab & pull to world-lock the menu**
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAf]
+
+
+## How to prevent false activation
+
+If you use just palm-up as an event to trigger the hand menu, it may accidentally appear when you don't need it (false-positive), because people move their hands both intentionally (for communication and object manipulation) and unintentionally. To reduce false activations, add an additional step besides the palm-up event to invoke the hand menu (such as fully opened fingers, or the user intentionally gazing at their hand).
+
+**Require Flat Palm**
+
+By requiring a flat open hand, you can prevent false activation that might occur as the user manipulates objects or gestures while communicating within an environment. 
+
+**Require Gaze**
+
+By requiring the user to gaze at their hand (either with eye gaze or head gaze), it prevents false activations due to the user having to intentionally direct their attention to the hand as a secondary activation step (with a tunable distance threshold used to allow for user comfort).  
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Asn4]
 
 ---
 
@@ -130,11 +165,13 @@ We have done user research with different menus layouts and locations, the follo
 ---
 
 ## Hand menu in MRTK (Mixed Reality Toolkit) for Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. HandConstraintPalmUp solver script allows you easily attach any objects to the hands with various configurable options.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. The HandConstraintPalmUp solver script allows you to attach any objects to the hands with various configurable options. MRTK's hand menu examples include useful options such as flat palm and gaze requirement for preventing false activation.
 
-* [MRTK - Hand Menu with HandConstraint and HandConstraintPalmUp
-](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Solver.md#hand-menu-with-handconstraint-and-handconstraintpalmup)
+* [Hand Menu Documentations](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
+* [Hand Menu Example Scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
 
+You can try hand menu examples in HoloLens 2 with MRTK Examples Hub app. 
+* [Hand Menu Scene in MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab)
 
 <br>
 

@@ -1,25 +1,25 @@
 ---
-title: Getting started tutorials - 3. Configuring the Mixed Reality Toolkit profiles
-description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+title: Getting started tutorials - 3. Configuring the MRTK profiles
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 3. Configuring the Mixed Reality Toolkit profiles
+# 3. Configuring the MRTK profiles
 
 ## Overview
 
-In this tutorial, you will learn how to customize and configure the <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> profiles.
+In this tutorial, you will learn how to customize and configure the MRTK profiles.
 
 This particular example will show you how to hide the spatial awareness mesh by changing the settings of the Spatial Mesh Observer. However, you may follow these same principles to customize any setting or value in the MRTK profiles.
 
 ## Objectives
 
-* Learn how to customize and configure Mixed Reality Toolkit profiles
+* Learn how to customize and configure MRTK profiles
 * Hide the spatial awareness mesh
 
 ## Changing the Spatial Awareness Display Option
@@ -63,7 +63,7 @@ In the Unity menu, select **File** > **Save** to save your scene.
 
 ### 2. Enable the Spatial Awareness System
 
-With the **MixedRealityToolkit** object still selected in the Hierarchy window, in the Inspector window, select the **Spatial Awareness** tab, and then check the **Enable Spatial Awareness System** checkbox:
+In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the **Spatial Awareness** tab, and then check the **Enable Spatial Awareness System** checkbox:
 
 ![mr-learning-base](images/mr-learning-base/base-03-section1-step2-1.png)
 
@@ -97,17 +97,17 @@ The newly created Spatial Awareness Mesh Observer Profile is now automatically a
 
 ### 5. Change the visibility of the spatial awareness mesh
 
-In the **Spatial Mesh Observer Settings**, change the **Display Option** to **Occlusion** to make the spatial mapping mesh invisible while still being functional:
+In the **Spatial Mesh Observer Settings**, change the **Display Option** to **Occlusion** to make the spatial mapping mesh invisible while still functional:
 
 ![mr-learning-base](images/mr-learning-base/base-03-section1-step5-1.png)
 
 > [!NOTE]
 > Although the spatial mapping mesh is not visible, it is still present and functional. For example, any holograms behind the spatial mapping mesh, such as a hologram behind a physical wall, will not be visible.
 
-You just learned how to modify a setting in the MRTK profile. As you can see, to customize the MRTK settings, you first need to create copies of the default profiles. Because the default profiles are not editable, you will always have them as references if you want to revert back to the default settings. To learn more about MRTK profiles and their architecture, you can refer to the [Mixed Reality Toolkit profile configuration guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+You just learned how to modify a setting in the MRTK profile. As you can see, to customize the MRTK settings, you first need to create copies of the default profiles. Because the default profiles are not editable, you will always have them as references if you want to revert to the default settings. To learn more about MRTK profiles and their architecture, you can refer to the [MRTK profile configuration guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html) in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 ## Congratulations
 
-In this tutorial, you learned how to clone, customize, and configure Mixed Reality Toolkit profiles and settings.
+In this tutorial, you learned how to clone, customize, and configure MRTK profiles and settings.
 
 [Next Tutorial: 4. Positioning objects in the scene](mr-learning-base-04.md)

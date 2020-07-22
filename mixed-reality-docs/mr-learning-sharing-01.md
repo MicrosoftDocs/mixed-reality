@@ -3,7 +3,7 @@ title: Multi-user capabilities tutorials - 1. Introduction
 description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
@@ -24,7 +24,7 @@ Tutorials in this series:
 
 ## Objectives
 
-* Learn how to create a PUN application and connect your Unity project to it
+* Learn how to create a PUN app and connect your Unity project to it
 * Learn how to connect multiple users in a shared experience
 * Learn how to share the object movements with other users
 * Learn how to achieve spatial alignment between multiple devices

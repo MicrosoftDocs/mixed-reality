@@ -1,9 +1,9 @@
 ---
 title: Streaming in Unreal
 description: A guide to streaming in Unreal to HoloLens 2
-author: suwu
+author: sw5813
 ms.author: suwu
-ms.date: 6/8/2020
+ms.date: 7/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, streaming, PC, holographic app remoting, holographic remoting player, documentation
@@ -27,7 +27,8 @@ To get started, you'll need to download the [Holographic Remoting Player](hologr
 When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) (if you're on a HoloLens 2), [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list of limitations](holographic-remoting-troubleshooting.md). 
 
 > [!NOTE]
-> Streaming quality is highly dependent on the strength of your wifi network.
+> * Streaming quality is highly dependent on the strength of your wifi network.
+> * All capabilities are automatically enabled for the holographic remoting player. If you find a capability that requires user permission (ex: eye tracking) to be working over streaming but not when running on device, check to ensure you've enabled the proper capabilities under your project settings.
 
 ## Device support
 
@@ -45,7 +46,7 @@ When streaming, you have access to almost all of the same HoloLens capabilities 
     </tr>
      <tr>
         <td>Unreal editor</td>
-        <td>✔</td>
+        <td>✔️</td>
         <td>✔️</td>
         <td>❌</td>
     </tr>

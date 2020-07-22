@@ -1,9 +1,9 @@
 ---
 title: Getting started tutorials - 7. Interacting with 3D objects
-description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 05/02/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 7. Interacting with 3D objects
 
-In this tutorial, you will learn how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You will also learn how to add bounding boxes around 3D objects to make it easier to control the object manipulation.
+In this tutorial, you will learn how to enable near and far manipulation of 3D objects and limit the allowed types of manipulation. You will also learn how to add bounding boxes around 3D objects to make it easier to control the object manipulation.
 
 ## Objectives
 
@@ -42,7 +42,7 @@ The main steps you will take to achieve this are:
 
 Additionally, you will configure the Rover Explorer so that you can place the rover parts on to the Rover to make it a complete rover assembly.
 
-In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects as well as the **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the following components to all the selected objects:
+In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects and the **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the following components to all the selected objects:
 
 * **Object Manipulator (Script)** component
 * **NearInteractionGrabbable** component
@@ -61,7 +61,7 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 
 With all the rover part objects and the RoverAssembly object still selected, in the Inspector window, configure the **Object Manipulator (Script)** component as follows:
 
-* From the **Two Handed Manipulation Type** dropdown, uncheck the Scale so only **Move** and **Rotate** is enabled
+* From the **Two Handed Manipulation Type** dropdown, uncheck the Scale, so only **Move** and **Rotate** is enabled
 
 ![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
 
@@ -123,10 +123,10 @@ Then **uncheck** the checkbox next to both components to make them **disabled** 
 ![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> The Bounding Box visualization is created at runtime and therefore not visible before you enter Game mode.
+> The Bounding Box visualization is created at runtime and, therefore, not visible before you enter Game mode.
 
 > [!NOTE]
-> The BoundingBox component will automatically add the NearInteractionGrabbable component at runtime, therefore, we do not need to add this component to grab the enclosed objects with tracked hands.  
+> The BoundingBox component will automatically add the NearInteractionGrabbable component at runtime. Therefore, we do not need to add this component to grab the enclosed objects with tracked hands.
 
 In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal the four buttons and rename the third button to **BoundingBox_Enable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -166,4 +166,4 @@ To learn more about the Bounding Box component and its associated properties, yo
 
 In this tutorial, you learned how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You also learned how to add bounding boxes around 3D objects to make it easier to control the object manipulation.
 
-[Next Tutorial: 8. Using eye tracking](mr-learning-base-08.md)
+[Next Tutorial: 8. Using eye-tracking](mr-learning-base-08.md)

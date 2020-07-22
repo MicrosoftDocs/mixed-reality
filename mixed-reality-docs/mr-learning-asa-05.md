@@ -3,7 +3,7 @@ title: Azure Spatial Anchors tutorials - 5. Azure Spatial Anchors for Android an
 description: Complete this course to learn how to deploy a Unity project with Mixed Reality Toolkit and Azure Spatial Anchors to Android and iOS.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, android, ios
 ms.localizationpriority: high
@@ -43,7 +43,7 @@ Follow the same process to import the remaining packages as needed.
 
 In this section, you will learn how to configure MRTK for deploying to a mobile device.
 
-In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the **Camera** tab, clone the camera profile, and give it a suitable name, for example, **AzureSpatialAnchors_ARCameraProfile**:
+In the Hierarchy window, select the **MixedRealityToolkit** object. Then in the Inspector window, select the **Camera** tab, clone the camera profile, and give it a suitable name, for example, **AzureSpatialAnchors_ARCameraProfile**:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
@@ -58,7 +58,7 @@ Using the **Type** dropdown, change the type to **Microsoft.MixedReality.Toolkit
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
-With the **MixedRealityToolkit** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the following components:
+With the **MixedRealityToolkit** object still selected in the Hierarchy window, use the **Add Component** button in the Inspector window to add the following components:
 
 * AR Anchor Manager (Script)
 * DisableDiagnosticsSystem (Script)
@@ -72,7 +72,7 @@ With the **MixedRealityToolkit** object still selected in the Hierarchy window, 
 
 In this section, you will learn how to configure your project to build and deploy it to an Android device.
 
-In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window and switch platform to Android:
+In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window and then switch the platform to Android:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-1.png)
 
@@ -85,13 +85,13 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configur
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
-In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, select **Vulkan** and remove it by clicking the **-** symbol:
+In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, select **Vulkan** and remove it by clicking the **"-"** symbol:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
 Close the Player Settings window and open the Build Settings window again.
 
-In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list, then, using a USB cable, connect your Android device to your computer and select it from the **Run Device** dropdown:
+In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list. Then, use a USB cable, connect your Android device to your computer and select it from the **Run Device** dropdown:
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-4.png)
 
@@ -105,13 +105,13 @@ Choose a suitable location to store your build, for example, _D:\MixedRealityLea
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
 > [!NOTE]
-If you get any error in the Unity Console window related to Android SDK, NDK, and/or JDK modules, you need to open Unity Hub and install the associated Android Build Support modules.
+If you get any error in the Unity Console window related to Android SDK, NDK, or JDK modules, you need to open Unity Hub and install the associated Android Build Support modules.
 
-When the build process is complete, your applications should automatically load on your Android device.
+When the build process is complete, your apps should automatically load on your Android device.
 
 ## Building your application to your iOS device
 
-In this section, you will learn how to configure your project to build and deploy it to your iOS device.
+In this section, you will learn how to configure your project, to build and deploy it to your iOS device.
 
 In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window and switch platform to iOS:
 
@@ -130,7 +130,7 @@ In the Unity menu, select **Edit** > **Project Settings...** to open the Player 
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-3.png)
 
-Close the Player Settings window and open the Build Settings window again.
+Close the Player Settings window and open the **Build Settings** window again.
 
 In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list:
 
@@ -142,7 +142,7 @@ Choose a suitable location to store your Xcode project, for example, _D:\MixedRe
 
 ![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
-When the build process is complete, follow the [Export the Xcode project](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn how to deploy your Xcode project to your iOS device.
+When the build process is complete, follow the [Export the Xcode project](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
 
 ## Congratulations
 

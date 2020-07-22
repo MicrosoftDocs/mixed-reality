@@ -1,9 +1,9 @@
 ---
 title: Getting started tutorials - 4. Positioning objects in the scene
-description: This course shows you how to use Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
@@ -31,16 +31,16 @@ After you have imported the tutorial assets your Project window should look simi
 ![mr-learning-base](images/mr-learning-base/base-04-section1-step1-1.png)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the MRTK](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
 
 ## Creating the parent object
 
-In the Hierarchy window, right-click on an empty spot and select **Create Empty** to add an empty object to your scene:
+In the Hierarchy window, right-click on an empty spot, and select **Create Empty** to add an empty object to your scene:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section2-step1-1.png)
 
 > [!TIP]
-> To display your Scene and Game window side by side as shown in the image above, simply drag the Game window to the right side of the Scene window. To learn more about customizing your workspace, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">Customizing Your Workspace</a> documentation.
+> To display your Scene and Game window side by side as shown in the image above, drag the Game window to the right side of the Scene window. To learn more about customizing your workspace, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">Customizing Your Workspace</a> documentation.
 
 Right-click on the newly created object, select **Rename**, and change the name to **RoverExplorer**:
 
@@ -55,7 +55,7 @@ With the RoverExplorer object still selected, in the Inspector window, configure
 ![mr-learning-base](images/mr-learning-base/base-04-section2-step1-3.png)
 
 > [!NOTE]
-> The camera represents the users head and is positioned at origin, X = 0, Y = 0, Z = 0. In general, 1 unit in Unity is roughly 1 meter in the physical world. However, there are exceptions to this, for example, when objects are children of scaled objects. In the scenario above, the RoverExplorer is positioned approximately 2 meters in front of the users and 0.6 meters below the user's head.
+> The camera represents the users head and is positioned at origin, X = 0, Y = 0, Z = 0. In general, 1 unit in Unity is roughly 1 meter in the physical world. However, there are exceptions to this, for example, when objects are children of scaled objects. In the scenario above, the RoverExplorer is positioned 2 meters in front of and 0.6 meters below the user's head.
 
 ## Adding the tutorial prefabs
 
@@ -106,14 +106,14 @@ With the newly duplicated Parts child objects still selected, click-and-drag the
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-3.png)
 
-To make it easier to work with your scene, set the **scene visibility** for the **RoverExplorer** object to off by clicking the **eye** icon to the left of the object in the Hierarchy window. This hides the object in the Scene window without changing its in-game visibility:
+To make it easier to work with your scene, in the Hierarchy window, click the **eye** icon to the left of the object to toggle the **scene visibility** for the **RoverExplorer** object off. This hides the object in the Scene window without changing its in-game visibility:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-4.png)
 
 > [!TIP]
 > To learn more about the Scene Visibility controls and how you can use them to optimize your scene view and workflow, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> documentation.
 
-In the Hierarchy window, clean up the names of the RoverParts child objects by replacing the appended **(1)** with **_Part**:
+In the Hierarchy window, clean up the RoverParts child objects' names by replacing the appended **(1)** with **_Part**:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-5.png)
 
@@ -136,6 +136,6 @@ Then click the **Update Collection** button to update the position of the RoverP
 
 ## Congratulations
 
-In this tutorial, you learned how to position objects in the scene relative to the user and how to use MRTK's Grid Object Collection feature to organize objects in a collection.
+In this tutorial, you learned how to position objects in the scene relative to the user and use MRTK's Grid Object Collection feature to organize objects in a collection.
 
 [Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)

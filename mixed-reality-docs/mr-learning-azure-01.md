@@ -1,15 +1,15 @@
 ---
-title: Azure Cloud Tutorials - 1. Introducing Azure Cloud Services for HoloLens 2
+title: Azure Cloud Tutorials - 1. Azure Cloud Services for HoloLens 2
 description: Complete this course to learn how to implement various Azure Services within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, mixed reality, unity, tutorial, hololens, hololens 2, azure blob storage, azure table storage, azure spatial anchors, azure bot framework
 ms.localizationpriority: high
 ---
 
-# 1. Introducing Azure Cloud Services for HoloLens 2
+# 1. Azure Cloud Services for HoloLens 2
 
 ## Overview
 
@@ -63,7 +63,7 @@ The application is mainly driven by traditional UI, so you use the [Azure Bot Se
 ## Prerequisites
 
 >[!TIP]
->If you have not completed the [Getting started tutorials](mr-learning-base.md) series yet, it's recommended that you complete those tutorials first.
+>If you have not completed the [Getting started tutorials](mr-learning-base-01.md) series yet, it's recommended that you complete those tutorials first.
 
 * A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
@@ -90,16 +90,25 @@ For this, first follow the [Initializing your project and first application](mr-
 
 Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
+## Installing inbuilt Unity packages
+
+In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
+
+![mr-learning-azure](images/mr-learning-asa/asa-02-section2-step1-1.png)
+
+> [!NOTE]
+> You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
+
 ## Importing the tutorial assets
 
 Download and **import** the following Unity custom packages **in the order they are listed**:
 
-* [Azure storage for Unity](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/AzureStorageForUnity.unitypackage)
+* [Azure storage for Unity](https://github.com/microsoft/MixedRealityLearning/releases/download/a-tag/AzureStorageForUnity.unitypackage)
 * [Azure Spatial Anchors](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
-* [MRTK.Tutorials.AzureCloudServices](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-cloud/MRTK.Tutorials.AzureCloudServices.unitypackage)
+* [MRTK.Tutorials.AzureCloudServices](https://github.com/microsoft/MixedRealityLearning/releases/download/a-tag/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
@@ -182,7 +191,7 @@ In the  **Publishing Settings**, scroll down to the **Capabilities** section and
 Not all features that you will use in this tutorial series can run inside the Unity editor, this means that you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-ch1.md#build-your-application-to-your-device) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
 
 ### 3. Run the app on your HoloLens 2 and follow the in-app instructions
 
@@ -190,6 +199,7 @@ Not all features that you will use in this tutorial series can run inside the Un
 > All Azure Services uses the internet, so make sure your device is connected to the internet.
 
 When the application is running on your device, accept access to the following requested capabilities:
+
 * Microphone
 * Camera
 
