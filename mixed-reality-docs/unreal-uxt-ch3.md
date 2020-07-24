@@ -65,7 +65,7 @@ At this point, the project still needs a player object. In Unreal, a **Pawn** re
 
 ![Adjust the Pawn's Collision Presets](images/unreal-uxt/3-nocollision.PNG)
 
-3. Click **Add Component > Camera** from the **Components** panel and name it **Camera**. This allows the player camera to move with the Hololens device.
+3. Click **Add Component > Camera** from the **Components** panel and name it **Camera**. This allows the player camera to move with the HoloLens 2 device.
 
 4. **Compile** and **Save** the Blueprint.
 
