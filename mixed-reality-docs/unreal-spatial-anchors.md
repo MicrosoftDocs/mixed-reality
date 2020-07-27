@@ -14,7 +14,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 
 Spatial anchors are used to save holograms in real-world space between application sessions. These get surfaced through Unreal as **ARPin**s and saved in the HoloLens’ anchor store, which is loaded in future sessions. Local anchors are ideal as a fallback when there is no internet connectivity.
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud. If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md). Note that you can have local and Azure anchors in the same project without conflict.
 
 ## Checking the anchor store
