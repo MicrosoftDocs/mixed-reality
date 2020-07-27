@@ -54,7 +54,7 @@ Now that the function is setup correctly, your next task is to create a button t
     
 From here, you’ll want to call **WhiteKing**’s **Reset Location** function, which needs a reference to the **WhiteKing** Actor in the Level. 
 
-1.	Scroll to the **Variables** section in the **Details** panel, click the **+** button and name the variable **WhiteKing**. 
+1.	Open the **Variables** section in the Blueprints **Details** panel, click the **+** button and name the variable **WhiteKing**. 
     * Select the dropdown next to **Variable Type**, search for **WhiteKing**, and select the **Object Reference**. 
     * Check the box next to **Instance Editable**. This will allow the variable to be set from the Main Level. 
 
