@@ -257,7 +257,8 @@
 #### [Hand tracking in Unreal](unreal-hand-tracking.md)
 #### [Spatial mapping in Unreal](unreal-spatial-mapping.md)
 #### [Spatial audio in Unreal](unreal-spatial-audio.md)
-#### [Spatial anchors in Unreal](unreal-spatial-anchors.md)
+#### [Local spatial anchors in Unreal](unreal-spatial-anchors.md)
+#### [Azure spatial anchors in Unreal](unreal-azure-spatial-anchors.md)
 #### [Voice input in Unreal](unreal-voice-input.md)
 ### Platform capabilities and APIs
 #### [HoloLens camera in Unreal](unreal-hololens-camera.md)

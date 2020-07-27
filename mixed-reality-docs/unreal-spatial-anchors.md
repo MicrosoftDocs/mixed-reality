@@ -1,5 +1,5 @@
 ---
-title: Spatial Anchors in Unreal
+title: Local Spatial Anchors in Unreal
 description: Guide to using spatial anchors in Unreal
 author: hferrone
 ms.author: v-haferr
@@ -8,11 +8,14 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, spatial anchors
 ---
-# Spatial Anchors in Unreal
+# Local Spatial Anchors in Unreal
 
 ## Overview
 
-Spatial anchors are used to save holograms in real-world space between application sessions.  These get surfaced through Unreal as **ARPin**s and saved in the HoloLens’ anchor store, which is loaded in future sessions. 
+Spatial anchors are used to save holograms in real-world space between application sessions. These get surfaced through Unreal as **ARPin**s and saved in the HoloLens’ anchor store, which is loaded in future sessions. Local anchors are ideal as a fallback when there is no internet connectivity.
+
+[!IMPORTANT]
+> Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud. If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md). Note that you can have local and Azure anchors in the same project without conflict.
 
 ## Checking the anchor store
 
@@ -59,5 +62,6 @@ When you're done with an anchor you can clear individual anchors or the entire a
 > Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.
 
 ## See also
+* [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
 * [Spatial anchors](spatial-anchors.md)
 * [Coordinate systems](coordinate-systems.md)
