@@ -3,7 +3,7 @@ title: Azure Cloud Tutorials - 4. Integrating Azure Spatial Anchors
 description: Complete this course to learn how to implement Azure Spatial Anchors within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, Azure spatial anchors
 ms.localizationpriority: high
@@ -55,7 +55,7 @@ You will observe that the **Anchor Manager** field in the **Scene Controller** c
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Build your application to your device](mr-learning-base-ch1.md#build-your-application-to-your-device) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
 
 ## Run the app on your HoloLens 2 and follow the in-app instructions
 

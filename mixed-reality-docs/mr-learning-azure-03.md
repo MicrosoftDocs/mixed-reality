@@ -3,7 +3,7 @@ title: Azure Cloud Tutorials - 3. Integrating Azure Custom Vision
 description: Complete this course to learn how to implement Azure Custom Vision within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure custom vision, azure cognitive services
 ms.localizationpriority: high

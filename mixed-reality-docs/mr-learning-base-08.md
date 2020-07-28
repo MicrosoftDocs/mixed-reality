@@ -3,7 +3,7 @@ title: Getting started tutorials - 8. Using eye-tracking
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high

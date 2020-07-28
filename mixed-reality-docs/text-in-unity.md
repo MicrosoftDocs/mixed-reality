@@ -8,8 +8,6 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, Controls, font, typography, ui, ux
 ---
 
-
-
 # Text in Unity
 
 Text is one of the most important components in holographic apps. To display text in Unity, there are three types of text components you can use — UI Text, 3D Text Mesh, and Text Mesh Pro. By default, UI Text and 3D Text Mesh appear blurry and are too big. You need to tweak a few variables to get sharp, high-quality text that has a manageable size in HoloLens. By applying a scaling factor to get proper dimensions when using the UI Text and 3D Text Mesh components, you can achieve better rendering quality.
@@ -96,7 +94,7 @@ Unity's default font material does not support occlusion. Because of this, you w
 
 
 ## See also
-* [Text Prefab in the MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MixedRealityToolkit.SDK/StandardAssets/Prefabs/Text)
+* [Text Prefab in the MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [Typography](typography.md)
 
  

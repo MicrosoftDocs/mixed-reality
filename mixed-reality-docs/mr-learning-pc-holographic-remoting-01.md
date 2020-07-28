@@ -3,7 +3,7 @@ title: PC Holographic Remoting tutorials - 1. Getting started with PC Holographi
 description: Complete this course to learn how to remote mixed reality experience form your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 05/19/2020
+ms.date: 07/01/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
@@ -33,8 +33,8 @@ ms.localizationpriority: high
 * A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X mounted, and the Universal Windows Platform Build Support module added
 
->[!STRONGLY RECOMMENDED]
->Completed the Getting started tutorials series or some basic prior experience with Unity and MRTK
+> [!IMPORTANT]
+> Completed the Getting started tutorials series or some basic prior experience with Unity and MRTK.
 
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.3.X. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
@@ -164,11 +164,11 @@ In this tutorial, only the MarsCuriosityRover model will be used for demonstrati
 
 In this section, you will explore how to enable eye tracking in your project. For example, you will implement the functionality to highlight tooltips attached to MarsCuriosityRover's parts while looking at them and hiding them, while you are looking away from them.
 
-### 1. Identify target objects and associated tooltips.
+### 1. Identify target objects and associated tooltips
 
 In the Hierarchy window, select the ModelParent object. Expand the ***MarsCuriosity -> Rover*** to find five main parts of the MarsCuriosityRover: **POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**.
 
-* Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. 
+* Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window.
 * You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
