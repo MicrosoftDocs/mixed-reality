@@ -23,7 +23,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 </table>
 
 >[!NOTE]
->Support for immersive Windows Mixed Reality headsets on desktop PCs is not currently supported with the NuGet package below.  Stay tuned for further updates on desktop support.
+>Support for immersive Windows Mixed Reality headsets on desktop PCs is supported from windows 10 verion 2004.
 
 ## Getting the QR package
 You can download the NuGet package for QR code detection [here](https://nuget.org/Packages/Microsoft.MixedReality.QR).
