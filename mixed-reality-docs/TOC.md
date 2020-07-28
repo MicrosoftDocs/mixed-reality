@@ -156,17 +156,15 @@
 ###### [3. Spatializing audio from a video](unity-spatial-audio-ch3.md)
 ###### [4. Enabling and disabling spatial audio at run time](unity-spatial-audio-ch4.md)
 ###### [5. Using reverb to add distance to spatial audio](unity-spatial-audio-ch5.md)
-
-#### Azure Cloud Services tutorials
-##### [1. Azure Cloud Services for HoloLens 2](mr-learning-azure-01.md)
-##### [2. Integrating Azure Storage](mr-learning-azure-02.md)
-##### [3. Integrating Azure Custom Vision](mr-learning-azure-03.md)
-##### [4. Integrating Azure Spatial Anchors](mr-learning-azure-04.md)
-##### [5. Integrating Azure Bot Service](mr-learning-azure-05.md)
-
-#### PC Holographic Remoting tutorials
-##### [1. Getting started with PC Holographic Remoting](mr-learning-pc-holographic-remoting-01.md)
-##### [2. Creating a Holographic Remoting PC application](mr-learning-pc-holographic-remoting-02.md)
+##### Azure Cloud Services tutorials
+###### [1. Azure Cloud Services for HoloLens 2](mr-learning-azure-01.md)
+###### [2. Integrating Azure Storage](mr-learning-azure-02.md)
+###### [3. Integrating Azure Custom Vision](mr-learning-azure-03.md)
+###### [4. Integrating Azure Spatial Anchors](mr-learning-azure-04.md)
+###### [5. Integrating Azure Bot Service](mr-learning-azure-05.md)
+##### PC Holographic Remoting tutorials
+###### [1. Getting started with PC Holographic Remoting](mr-learning-pc-holographic-remoting-01.md)
+###### [2. Creating a Holographic Remoting PC application](mr-learning-pc-holographic-remoting-02.md)
 
 #### HoloLens (1st gen) and immersive headset tutorials
 ##### [MR Basics 100: Getting started with Unity](holograms-100.md)
