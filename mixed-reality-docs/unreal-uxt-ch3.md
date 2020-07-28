@@ -52,7 +52,7 @@ With that done, your next step is to make sure that the AR session starts when t
 At this point, the project still needs a player object. In Unreal, a **Pawn** represents the user in the game, but in this case it's going to be the HoloLens 2 experience.
 
 1. Click **Add New > Blueprint Class** in the **Content** folder and expand the **All Classes** section at the bottom. 
-    * Search for **DefaultPawn**, click **Select** and double-click the asset to open. 
+    * Search for **DefaultPawn**, click **Select**, name it **MRPawn**, and double-click the asset to open. 
 
 ![Create a new Pawn inheriting from DefaultPawn](images/unreal-uxt/3-defaultpawn.PNG)
 
@@ -61,9 +61,13 @@ At this point, the project still needs a player object. In Unreal, a **Pawn** re
 
 2. Select **CollisionComponent** from the **Components** panel and scroll down to the **Collision** section of the **Details** panel. 
     * Click the **Collision Presets** dropdown and change the value to **NoCollision**. 
-    * Do the same for the **MeshComponent**, then **Compile** and **Save** the Blueprint. 
+    * Do the same for the **MeshComponent**
 
 ![Adjust the Pawn's Collision Presets](images/unreal-uxt/3-nocollision.PNG)
+
+3. Click **Add Component > Camera** from the **Components** panel and name it **Camera**. This allows the player camera to move with the HoloLens 2 device.
+
+4. **Compile** and **Save** the Blueprint.
 
 With your work here done, return to the Main Window.
 
