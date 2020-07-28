@@ -35,8 +35,7 @@ The first thing you need is a project to work with. If this is your first time c
 
 ![Select the Blank template](images/unreal-uxt/2-template.PNG)
 
-4. Set **C++**, **Scalable 3D or 2D, Mobile/Tablet**, and **No Starter Content** as your **Project Settings**. 
-    * Choose a save location and click **Create Project**. 
+4. Set **C++**, **Scalable 3D or 2D, Mobile/Tablet**, and **No Starter Content** as your **Project Settings**, then choose a save location and click **Create Project**. 
 
 > [!NOTE]
 > You must select a C++ project rather than a Blueprint project in order to build the UX Tools plugin, which you'll be setting up later on in section 4.
