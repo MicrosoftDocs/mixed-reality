@@ -25,9 +25,7 @@ Existing Vuforia Engine apps that were built for phones and tablets can easily b
 
 When installing Unity, be sure to install the “Windows Store IL2CPP Scripting Backend”.
 
-Adding  Vuforia Engine Support works differently depending on your version of Unity:
-*	Unity 2018.4: Download the Vuforia Engine installer for Unity 2018.4 from the Vuforia developer portal
-*	Unity 2019.2: Get the latest [Vuforia Engine package](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/vuforia-engine-package-hosting-for-unity.html) 
+Add the Vuforia Engine package as described [here.](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/vuforia-engine-package-hosting-for-unity.html).
 
 ## Getting started with Vuforia Engine
 
@@ -44,33 +42,32 @@ Developing a Vuforia Engine app for HoloLens is fundamentally the same as develo
 ## Build and Run the Vuforia Engine Sample for HoloLens
 1.	Download the [Vuforia Engine Sample for HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) from the Unity Asset Store
 2.	Apply the [recommended Unity engine options for power and performance](performance-recommendations-for-unity.md)
-3.	Add the sample scenes to Scenes in Build.
-4.	Set your platform build target for “Universal Windows Platform” in File > Build Settings.
-5.	Select the following platform build configuration settings: 
-   * Target Device = HoloLens
-   * Build Type = D3D
-   * SDK = Latest Installed
-   * Visual Studio Version = Latest Installed
-   * Build and Run on = Local Machine
-6.	Define a unique **Product Name**, in **Player Settings**, to serve as the name of the app when installed on the HoloLens.
-7.	Check **Vuforia Augmented Reality** and **Virtual Reality Supported** in **Player Settings > XR Settings**
-8.	Also under **XR Settings**, make sure that “Windows Mixed Reality” is added to the **Virtual Reality SDKs** List
-9.	Check the following Capabilities in Player Settings > Publish Settings 
-   * InternetClient
-   * WebCam
-   * SpatialPerception - if you intend to use the Surface Observer API
-10. Select Build to generate a Visual Studio project
-11. Build the executable from Visual Studio and install it on your HoloLens
-
-Note: Starting with version 7.2, the Vuforia Engine Sample for HoloLens includes a sample scene including example usage of Model Targets
+3.	Add the sample scenes to **Scenes** in **Build.**
+4.	In **Build Settings**, switch build platform to **UWP.**
+5.	Click the **Player Settings** button.  
+   * Select the **UWP** icon and expand the **XR Settings** section.
+   * Ensure that **Virtual Reality Supported** is enabled.    
+   * Under **Virtual Reality SDKs** ensure that:
+     * **Window Mixed Reality** is included in the list and that **Enable Depth Buffer** Sharing is enabled. 
+     * The **Depth Format** is set to **16-bit depth.** 
+   * Ensure that the **Stereo Rendering Mode** is set to **Single Pass Instanced.**
+6.	Expand the **Publishing Settings** section.
+   * Under **Capabilities** ensure that **Internet Client, WebCam, Microphone,** and **SpatialPerception** are selected.
+   * **NOTE: SpatialPerception** should only be selected if you intend to use the Surface Observer API.
+   * Under **Supported Device Families**, ensure that **Holographic** is selected. 
+7.	Expand the **Resolution and Presentation** section.
+   * Disable **Run in Background** so that Vuforia Engine pauses when the app is put into the background and can access the camera again when the app is resumed. 
+   * In the **Default Orientation** dropdown, ensure that **Landscape Left** is selected.
+8.	Return to the **Build Settings** window and select **Build** to generate a Visual Studio project.
+9.	Build the executable from Visual Studio and install it on your HoloLens.
 
 ## The Vuforia Developer Portal
 
 Developers looking to create their own AR experiences with Vuforia Engine and HoloLens should sign up on our Vuforia Developer Portal at [developer.vuforia.com](https://developer.vuforia.com/). In the portal, developers have access to the [Vuforia Engine Forums](https://developer.vuforia.com/forum) where they can join community discussions, a [library](https://library.vuforia.com/) with in-depth documentation on all the Vuforia Engine Features, and the [Vuforia Target Manager](https://developer.vuforia.com/target-manager) where users can create their own custom Targets. Developers can also sign up for a free Developer License using the [Vuforia License Manager](https://developer.vuforia.com/license-manager).
 
-## Extended tracking with Vuforia
+## Device Tracking with Vuforia
 
-[Extended tracking](https://library.vuforia.com/articles/Training/Extended-Tracking) maintains tracking even when a target is no longer in view. It is automatically enabled for all targets when the Positional Device Tracker is enabled. For HoloLens applications, the Positional Device Tracker is started automatically in Unity.
+[Device Tracking](https://library.vuforia.com/features/environments/device-tracker-overview.html) maintains tracking even when a target is no longer in view. It is automatically enabled for all targets when the Positional Device Tracker is enabled. For HoloLens applications, the Positional Device Tracker is started automatically in Unity.
 
 Vuforia Engine automatically fuses the poses from camera tracking and HoloLens's spatial tracking to provide stable target poses independent of whether the target is seen by the camera or not.
 
@@ -80,7 +77,7 @@ Since the process is handled automatically, it does not require any programming 
 **The following is a high-level description of the process:**
 1. Vuforia’s target Tracker recognizes the target
 2. Target tracking is then initialized
-3. The position and rotation of the target are analyzed to provide a robust pose estimate for HoloLens
+3. The position and rotation of the target are analyzed to provide a robust pose estimate for the HoloLens
 4. Vuforia Engine transforms the target's pose into the HoloLens spatial mapping coordinate space
 5. HoloLens takes over tracking if the target is no longer in view. Whenever you look again at the target, Vuforia will continue to track the images and objects accurately.
 
@@ -110,4 +107,5 @@ To change the performance mode in Unity, navigate to Vuforia Configuration (Ctrl
 * [Vuforia documentation: Developing for Windows 10 in Unity](https://library.vuforia.com/articles/Solution/Developing-for-Windows-10-in-Unity)
 * [Vuforia documentation: How to install the Vuforia Unity extension](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
 * [Vuforia documentation: Working with the HoloLens sample in Unity](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
-* [Vuforia documentation: Extended tracking in Vuforia](https://library.vuforia.com/articles/Training/Extended-Tracking)
+* [Vuforia documentation: Device Tracking in Vuforia](https://library.vuforia.com/features/environments/device-tracker-overview.html)
+* [Vuforia documentation: Framerate and Performance Optomization](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
