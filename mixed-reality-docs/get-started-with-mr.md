@@ -1,7 +1,7 @@
 ---
 title: Get started with Mixed Reality
 description: To help someone new to mixed reality learn what it is and understand its capabilities.
-author: grbury 
+author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
@@ -51,16 +51,16 @@ If you're new to mixed reality, you will learn what it is and understand its cap
 
 ![Virtual hummingbird with human hand](images/01_MixedReality.png)
 
-## What is mixed reality?
+### What is mixed reality?
 
 
-### [Mixed reality is a spectrum](mixed-reality.md)
+#### [Mixed reality is a spectrum](mixed-reality.md)
 Mixed reality is the result of blending the physical world with the digital world. It is the next evolution in human, computer, and environment interaction and unleashes possibilities that until now were only restricted to our imaginations.
 
 <br>
 
 
-### [What is a hologram?](hologram.md)
+#### [What is a hologram?](hologram.md)
 HoloLens lets you create holograms, which are objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
 
 <br>
@@ -72,19 +72,18 @@ HoloLens lets you create holograms, which are objects made of light and sound th
 
 ![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
 
-## What can you do with mixed reality?
+### What can you do with mixed reality?
 
-### [A new vision for work](https://dynamics.microsoft.com//mixed-reality/overview/)
+#### [A new vision for work](https://dynamics.microsoft.com//mixed-reality/overview/)
 Internally at Microsoft, we are creating mixed reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities: Remote Assist, Layout and Guides.
 
 <br>
 
-### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
+#### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
 Tomorrow’s opportunities are uncovered by building products today. The solutions these products provide reveal what’s necessary to advance the future. With mixed reality, this is especially true: Meaningful insight comes from getting hands-on with real work — real devices, real customers, real problems.
 
 
 <br>
-
 
 
 ## See how industry partners are using mixed reality
@@ -180,7 +179,7 @@ A key to displaying content that looks realistic in holographic form is to mimic
     :::column:::
        [![Try it out](images/icon-hololensuser.jpg)](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
         **[Try out mixed reality](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
-        Get a demo of Mixed Reality and HoloLens at your local Microsoft Store. 
+        Get a demo of Mixed Reality and HoloLens at your local Microsoft Store.
     :::column-end:::
     :::column:::
         [![Become a creator](images/icon-design.jpg)](design.md)<br>
@@ -207,4 +206,4 @@ A key to displaying content that looks realistic in holographic form is to mimic
 
 
 >[!IMPORTANT]
->All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the application developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement). 
+>All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the application developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).

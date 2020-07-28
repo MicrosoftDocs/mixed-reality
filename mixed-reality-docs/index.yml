@@ -27,7 +27,7 @@ landingContent:
             url: case-study-expanding-the-design-process-for-mixed-reality.md
           - text: Get involved with the community
             url: community.md
-            
+
   # Card
   - title: Design for Mixed Reality
     linkLists:
@@ -37,6 +37,8 @@ landingContent:
             url: design.md
           - text: Explore core design concepts
             url: core-concepts-landingpage.md
+          - text: Learn about interaction fundamentals
+            url: interaction-fundamentals.md
           - text: Incorporate UX elements
             url: app-patterns-landingpage.md
 
@@ -54,6 +56,10 @@ landingContent:
             url: unity-development-overview.md
           - text: Start your Unreal journey
             url: unreal-development-overview.md
+          - text: Start your JavaScript journey
+            url: javascript-development-overview.md
+          - text: Start your Native (OpenXR/WinRT) journey
+            url: directx-development-overview.md
 
   - title: Distribute your apps
     linkLists:
@@ -67,7 +73,7 @@ landingContent:
             url: submitting-an-app-to-the-microsoft-store.md
 
     # Card
-  - title: Dive into HoloLens 
+  - title: Dive into HoloLens
     linkLists:
       - linkListType: reference
         links:
@@ -79,7 +85,7 @@ landingContent:
             url:  https://docs.microsoft.com/hololens/hololens2-basic-usage
           - text: Deploy HoloLens in a commercial environment
             url: https://docs.microsoft.com/hololens/hololens-requirements
-    
+
   - title: Azure Developer Services
     linkLists:
       - linkListType: concept

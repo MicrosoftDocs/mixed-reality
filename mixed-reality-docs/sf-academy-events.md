@@ -14,99 +14,17 @@ Join the Microsoft Mixed Reality Team at these upcoming events!
 
 <br>
 
----
-###  Feb 24, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
+|Event|Date|Theme|
+|-------------|-------------|-----|
+| [HoloLens & Mixed Reality Meetup (online event)](https://www.meetup.com/hololens-mr/)| July 20, 2020|An Introduction to Azure Spatial Anchors|
+| [HoloLens & Mixed Reality Meetup (online event)](https://www.meetup.com/hololens-mr/)| July 23, 2020|An Introduction to Azure Spatial Anchors|
+| Mixed Reality Speaker Series - Link coming soon|July 30, 2020|Azure MR Services: Azure Remote Rendering|
+| [HoloLens & Mixed Reality Meetup](https://www.meetup.com/hololens-mr/)|August 11, 2020|Designing AR/VR experiences using Maquette|
+| [HoloLens & Mixed Reality Meetup](https://www.meetup.com/hololens-mr/)|August 13, 2020|Designing AR/VR experiences using Maquette|
+| VR Summit - Link coming soon!|August 20, 2020|VR Mini Summit|
+| Mixed Reality Speaker Series - Link coming soon|August 25, 2020|MR Best Practices using Unreal Engine|
+| Mixed Reality Speaker Series - Link coming soon|September 1, 2020|Creating Entertaining Characters for AR/VR|
+| HoloLens & Mixed Reality Meetup - Link coming soon|September 8, 2020|Human perception and Mixed Reality|
+| HoloLens & Mixed Reality Meetup - Link coming soon|September 14, 2020|Human perception and Mixed Reality|
 
----
-###  March 9, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
 
----
-### March 23, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  June 8, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  July 13, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  July 27, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  August 3, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  August 17, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  September 21, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  October 5, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  October 26, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  November 9, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  November 23, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)
-<br>
-
----
-###  December 7, 2020
-## Mixed Reality Workgroup
-The Mixed Reality Workgroup is an opportunity for MR developers to come together, share ideas and get work done in a friendly and supportive environment.
-[Register here.](https://www.meetup.com/hololens-mr/events/)

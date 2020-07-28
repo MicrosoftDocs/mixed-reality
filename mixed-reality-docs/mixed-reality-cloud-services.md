@@ -23,8 +23,14 @@ In addition, there are other Azure Services that you can easily add into your ex
 ### Azure Remote Rendering
 [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering) (ARR) is a service that lets you to render highly complex 3D models in real time. ARR is currently in public preview. It can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
 
+![Example of Azure Remote Rendering in Unity showcase app](images/showcase-app.png)
+
 ### Azure Spatial Anchors
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors) (ASA) is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices, at real-world scale. The service can be developed in a host of environments and deployed to a large group of devices and platforms. This gives them special dispensation for their own list of available platforms:
+[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors) (ASA) is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices, at real-world scale.
+
+![Example of Azure Spatial Anchors](images/persistence.gif)
+
+The service can be developed in a host of environments and deployed to a large group of devices and platforms. This gives them special dispensation for their own list of available platforms:
 * Unity for HoloLens
 * Unity for iOS
 * Unity for Android
