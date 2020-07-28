@@ -54,8 +54,8 @@ Now that the function is setup correctly, your next task is to create a button t
     
 From here, you’ll want to call **WhiteKing**’s **Reset Location** function, which needs a reference to the **WhiteKing** Actor in the Level. 
 
-1.	Open the **Variables** section in the Blueprints **Details** panel, click the **+** button and name the variable **WhiteKing**. 
-    * Select the dropdown next to **Variable Type**, search for **WhiteKing**, and select the **Object Reference**. 
+1.	In the **My Blueprint** panel, navigate to the **Variables** section , click the **+** button and name the variable **WhiteKing**. 
+    * In the **Details** panel, select the dropdown next to **Variable Type**, search for **WhiteKing**, and select the **Object Reference**. 
     * Check the box next to **Instance Editable**. This will allow the variable to be set from the Main Level. 
 
 ![Create a variable](images/unreal-uxt/5-var.PNG)
