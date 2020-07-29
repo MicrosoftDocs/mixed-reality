@@ -1,109 +1,272 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
-title: Welcome to Mixed Reality
-summary: Dive into the expanding world of Mixed Reality applications with Windows Mixed Reality, Mixed Reality Toolkit (MRTK), Unity, Unreal, and more for HoloLens and Windows Immersive Headsets.
+title: Mixed Reality documentation # < 60 chars
+summary: Explore the expanding world of Mixed Reality applications with Windows Mixed Reality, Mixed Reality Toolkit (MRTK), Unity, Unreal, and more for HoloLens and Windows Immersive Headsets. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: windows
 
 metadata:
-  title: Welcome to Mixed Reality
-  description: Learn how to use Mixed Reality tools and features on devices such as HoloLens 2.
-  ms.topic: landing-page
-  author: hferrone
-  ms.author: v-haferr
-  ms.date: 07/03/2020
+  title: Mixed Reality documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Dive into the expanding world of Mixed Reality applications with Windows Mixed Reality, Mixed Reality Toolkit (MRTK), Unity, Unreal, and more for HoloLens and Windows Immersive Headsets. # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: hub-page # Required
+  ms.collection: collection # Optional; Remove if no collection is used.
+  author: hferrone #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-haferr #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/23/2020 #Required; mm/dd/yyyy format.
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: What is Mixed Reality?
+      itemType: overview
+      url: mixed-reality.md 
+    # Card
+    - title: Introducing HoloLens 2
+      itemType: overview
+      url: https://docs.microsoft.com/hololens/hololens2-hardware
+    # Card
+    - title: Immersive headsets
+      itemType: overview
+      url: https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details
+    # Card
+    - title: Enterprise deployment
+      itemType: concept
+      url: https://docs.microsoft.com/hololens/hololens-requirements
+    # Card
+    - title: MRTK Examples Hub
+      itemType: sample
+      url: https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Discover new immersive worlds
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Mixed Reality?
-            url: get-started-with-mr.md
-          - text: Understand the Mixed Reality landscape
-            url: case-study-expanding-the-design-process-for-mixed-reality.md
-          - text: Get involved with the community
-            url: community.md
+# productDirectory section (optional)
+productDirectory:
+  title: Dive into Mixed Reality # < 60 chars (optional)
+  summary: Whether you're a designer, developer, IT professional, we have the right curated path to get you walking before you run.  # < 160 chars (optional)
+  items:
+    # Card
+    - title: Design
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: images/Tile-Create.jpg
+      links:
+        - url: design.md
+          text: Design and prototype
+        - url: types-of-mixed-reality-apps.md
+          text: Choose your type of Mixed Reality app
+        - url: case-study-expanding-the-design-process-for-mixed-reality.md
+          text: Expand your design process
+        - url: comfort.md
+          text: Learn about user comfort
+        - url: interaction-fundamentals.md
+          text: Understand interaction fundamentals
+    # Card
+    - title: Develop
+      imageSrc: images/Tile-Develop.jpg
+      links:
+        - url: development.md
+          text: Choose your development environment
+        - url: install-the-tools.md
+          text: Install the tools
+        - url: unity-development-overview.md
+          text: Get started with Unity
+        - url: unreal-development-overview.md
+          text: Get started with Unreal
+        - url: directx-development-overview.md
+          text: Get started with Native
+        - url: 3d-app-launcher-design-guidance.md
+          text: Distribute your apps
+    # Card
+    - title: IT TBD 
+      imageSrc: images/Tile-New.jpg
+      links:
+        - url: file3a.md OR https://docs.microsoft.com/file3a
+          text: TBD
 
-  # Card
-  - title: Design for Mixed Reality
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Start designing and prototyping
-            url: design.md
-          - text: Explore core design concepts
-            url: core-concepts-landingpage.md
-          - text: Learn about interaction fundamentals
-            url: interaction-fundamentals.md
-          - text: Incorporate UX elements
-            url: app-patterns-landingpage.md
-
-  - title: Develop for Mixed Reality
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Choose your Mixed Reality development journey
-            url: development.md
-          - text: Install your tools
-            url: install-the-tools.md
-          - text: Follow along with tutorials
-            url: tutorials.md
-          - text: Start your Unity journey
-            url: unity-development-overview.md
-          - text: Start your Unreal journey
-            url: unreal-development-overview.md
-          - text: Start your JavaScript journey
-            url: javascript-development-overview.md
-          - text: Start your Native (OpenXR/WinRT) journey
-            url: directx-development-overview.md
-
-  - title: Distribute your apps
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: 3D app launcher design guidance
-            url: 3d-app-launcher-design-guidance.md
-          - text: Integrate In-app purchaches
-            url: in-app-purchases.md
-          - text: Upload to the Microsoft store
-            url: submitting-an-app-to-the-microsoft-store.md
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: Frameworks # < 60 chars (optional)
+  summary: Whether your development process depends on an engine or language you prefer or hardware you have on hand, we've got you covered. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Unity
+      summary: Create, configure, and deploy applications in Unity with the Mixed Reality Toolkit SDK.  
+      links:
+        - url: unity-development-overview.md
+          itemType: overview
+          text: Unity development overview
+        - url: mrtk-getting-started.md
+          itemType: overview
+          text: What is MRTK?
+        - url: mr-learning-base-01.md
+          itemType: tutorial
+          text: HoloLens 2 tutorial series
+        - url: unity-development-overview.md
+          itemType: concept
+          text: Core building blocks
+        - url: unity-development-overview.md
+          itemType: concept
+          text: Platform capabilities and APIs
+        - url: unity-development-overview.md
+          itemType: deploy
+          text: Deployment overview
+      # footerLink (optional)
+      footerLink:
+        url: unity-development-overview.md
+        text: See more
 
     # Card
-  - title: Dive into HoloLens
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: What is HoloLens?
-            url: https://docs.microsoft.com/hololens/
-          - text: HoloLens 2 hardware
-            url: https://docs.microsoft.com/hololens/hololens2-hardware
-          - text: Getting around HoloLens 2
-            url:  https://docs.microsoft.com/hololens/hololens2-basic-usage
-          - text: Deploy HoloLens in a commercial environment
-            url: https://docs.microsoft.com/hololens/hololens-requirements
+    - title: Unreal 
+      summary: Build, customize, and deploy applications in Unreal with the Mixed Reality Toolkit SDK.
+      links:
+        - url: unreal-development-overview.md
+          itemType: overview
+          text: Unreal development overview
+        - url: unreal-uxt-ch1.md
+          itemType: tutorial
+          text: Build a chess app tutorial series
+        - url: unreal-gaze-input.md
+          itemType: concept
+          text: Core building blocks
+        - url: unreal-deploying.md
+          itemType: deploy
+          text: Deploying to device
+        - url: unreal-hololens-camera.md
+          itemType: concept
+          text: Platform capabilities and APIs
+        - url: performance-recommendations-for-unreal.md
+          itemType: concept
+          text: Performance recommendations
+      # footerLink (optional)
+      footerLink:
+        url: unreal-development-overview.md
+        text: See more
 
-  - title: Azure Developer Services
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: Cloud services overview
-            url: mixed-reality-cloud-services.md
-          - text: Jump into Azure Spatial Anchors
-            url: https://docs.microsoft.com/azure/spatial-anchors/
-          - text: Develop with Azure Remote Rendering
-            url: https://docs.microsoft.com/azure/remote-rendering/
+    # Card
+    - title: Native
+      summary: Construct native holographic experiences with OpenXR, WinRT, and DirectX.
+      links:
+        - url: directx-development-overview.md
+          itemType: overview
+          text: Native development overview
+        - url: openxr.md
+          itemType: overview
+          text: What is OpenXR?
+        - url: openxr-getting-started.md
+          itemType: get-started
+          text: Get started with OpenXR
+        - url: openxr-best-practices.md
+          itemType: concept
+          text: OpenXR best practices
+        - url: openxr-troubleshooting.md
+          itemType: reference
+          text: OpenXR troubleshooting
+      # footerLink (optional)
+      footerLink:
+        url: directx-development-overview.md
+        text: See more
 
-  - title: Check out what's new!
-    linkLists:
-      - linkListType: whats-new
-        links:
-          - text: Learn about Azure Services
-            url: azure-services.md
-          - text: The new Microsoft Edge
-            url: new-microsoft-edge.md
-          - text: Join the Mixed Reality community
-            url: community.md
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Resources # < 60 chars (optional)
+      summary: Get your apps ready for porting, Azure cloud services, enterprise deployment, and more. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Porting guides
+          links:
+            - text: Get your app ready for HoloLens 2
+              url: mrtk-porting-guide.md
+            - text: Porting guide for immersive apps
+              url: porting-guides.md
+            - text: Input porting guide for Unity
+              url: input-porting-guide-for-unity.md
+            - text: Updating your SteamVR applications
+              url: updating-your-steamvr-application-for-windows-mixed-reality.md
+            - text: Updating 2D UWP apps for Mixed Reality
+              url: building-2d-apps.mdd
+        # Card
+        - title: Learn modules
+          links:
+            - text: MRTK TBD
+              url: mr-learning-overview.md
+            - text: Azure Cognitive Services TBD 
+              url: https://docs.microsoft.com/hololens/hololens-identity
+            - text: Azure Spatial Anchors TBD 
+              url: https://docs.microsoft.com/hololens/hololens-enroll-mdmk
+        # Card
+        - title: HoloLens 2 Sample apps
+          links:
+            - text: Surfaces
+              url: sampleapp-surfaces.md
+            - text: Periodic Table of Elements 2.0
+              url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
+            - text: Galaxy Explorer 2.0 
+              url: galaxy-explorer-update.md
+        # Card
+        - title: Enterprise Deployment for HoloLens
+          links:
+            - text: Prepare
+              url: https://docs.microsoft.com/hololens/hololens-requirements
+            - text: Configure
+              url: https://docs.microsoft.com/hololens/hololens-identity
+            - text: Deploy
+              url: https://docs.microsoft.com/hololens/hololens-enroll-mdm
+            - text: Maintain
+              url: https://docs.microsoft.com/hololens/hololens-updates
+            - text: Release notes
+              url: https://docs.microsoft.com/hololens/hololens-release-notes
+            - text: Troubleshooting & support
+              url: https://docs.microsoft.com/hololens/hololens-feedback
+        # Card
+        - title: Azure Cloud Services
+          links:
+            - text: Cloud Services overview
+              url: mixed-reality-cloud-services.md
+            - text: Jump into Azure Spatial Anchorsyy
+              url: https://docs.microsoft.com/azure/spatial-anchors/
+            - text: Azure Spatial Anchors tutorials
+              url: mr-learning-asa-01
+            - text: Develop with Azure Remote Rendering 
+              url: https://docs.microsoft.com/azure/remote-rendering/
+            - text: Azure Remote Rendering Tutorials
+              url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
+            
+
+# tools section (optional)
+tools:
+  title: SDKs and APIs # < 60 chars (optional)
+  summary: Get started with the Mixed Reality Toolkit SDK in your favorite game engine. # < 160 chars (optional)
+  items:
+    # Card
+    - title: MRTK for Unity
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: images/MRTK_Badge_Unity.png
+      url: https://github.com/microsoft/MixedRealityToolkit-Unity
+    # Card
+    - title: MRTK for Unreal 
+      imageSrc: images/MRTK_Badge_Unreal.png
+      url: https://github.com/microsoft/MixedRealityToolkit-Unreal
+    # Card
+    - title: Windows XR Plugin for Unity 
+      imageSrc: images/MRTK_Badge_Unreal.png
+      url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
+    # Card
+    - title: OpenXR Specifications 
+      imageSrc: images/MRTK_Badge_Unreal.png
+      url: https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html
+    # Card
+    - title: OpenXR API 
+      imageSrc: images/MRTK_Badge_Unreal.png
+      url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
+
+
+      
+      
+
