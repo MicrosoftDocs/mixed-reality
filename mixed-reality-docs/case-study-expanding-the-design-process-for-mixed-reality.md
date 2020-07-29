@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, process, case study
 ---
 
-# Expand your design process
+# Thinking differently for Mixed Reality
 
 When Microsoft launched the HoloLens (1st gen) to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design.
 

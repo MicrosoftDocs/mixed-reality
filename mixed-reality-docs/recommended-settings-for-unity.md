@@ -3,7 +3,7 @@ title: Recommended settings for Unity
 description: Unity offers some behaviors specific to mixed reality that can be toggled through project settings.
 author: troy-ferrell
 ms.author: trferrel
-ms.date: 03/26/2019
+ms.date: 07/07/2020
 ms.topic: article
 keywords: unity, settings, mixed reality
 ---
@@ -18,9 +18,7 @@ Unity provides a set of default options that are generally the average case for 
 
 It is important to modify the **Unity Quality settings** for your environment to **Very Low**. This will help ensure your application is running performantly at the appropriate framerate. This is extremely significant for HoloLens development. For development on immersive headsets, depending on the specs of the desktop powering the VR experience, one can still achieve framerate without the lowest quality parameters.
 
-In Unity 2018 LTS+, the project's quality level can be set by:
-
-Under **Edit** > **Project Settings** > **Quality** > Set the **Default** by clicking on the downward arrow to the **Very Low** quality level
+In Unity 2019 LTS+, the project's quality level can be set by going to **Edit** > **Project Settings** > **Quality**  and setting the **Default** by clicking on the downward arrow to the **Very Low** quality level.
 
 ### Lighting settings
 

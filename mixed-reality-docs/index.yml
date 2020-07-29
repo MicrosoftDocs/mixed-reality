@@ -27,7 +27,7 @@ landingContent:
             url: case-study-expanding-the-design-process-for-mixed-reality.md
           - text: Get involved with the community
             url: community.md
-            
+
   # Card
   - title: Design for Mixed Reality
     linkLists:
@@ -73,7 +73,7 @@ landingContent:
             url: submitting-an-app-to-the-microsoft-store.md
 
     # Card
-  - title: Dive into HoloLens 
+  - title: Dive into HoloLens
     linkLists:
       - linkListType: reference
         links:
@@ -85,7 +85,7 @@ landingContent:
             url:  https://docs.microsoft.com/hololens/hololens2-basic-usage
           - text: Deploy HoloLens in a commercial environment
             url: https://docs.microsoft.com/hololens/hololens-requirements
-    
+
   - title: Azure Developer Services
     linkLists:
       - linkListType: concept
