@@ -12,15 +12,16 @@ keywords: research mode, cv, rs4, computer vision, research, HoloLens, HoloLens 
 
 ## Overview
 
-Research mode was introduced in the 1st Generation HoloLens to give access to key sensors on the device, specifically for research applications that are not intended for deployment. You can now gather data from the following inputs:
+Research mode was introduced in the 1st Generation HoloLens to give access to key sensors on the device, specifically for research applications that are not intended for deployment.  Research mode for HoloLens 2 retains the capabilities of HoloLens 1, adding access to additional streams:
 
-* **Visible Light Environment Tracking Cameras** - Used by the system for head tracking and map building.
+* **Visible Light Environment Tracking Cameras** - Gray-scale cameras used by the system for head tracking and map building.
 * **Depth Camera** – Operates in two modes:  
-    + Short-throw, high-frequency (30 FPS) near-depth sensing used for [Hand Tracking](interaction-fundamentals.md)
+    + AHAT, high-frequency (45 FPS) near-depth sensing used for hand tracking. Differently from the 1st version short-throw mode, AHAT gives pseudo-depth with phase wrap beyond 1 meter. 
     + Long-throw, low-frequency (1-5 FPS) far-depth sensing used by [Spatial Mapping](spatial-mapping.md)
+
 * **Two versions of the IR-reflectivity stream** - Used by the HoloLens to compute depth. These images are illuminated by infrared and unaffected by ambient visible light.
 
-If you're using a HoloLens 2 you will also be able to access the following inputs:
+If you're using a HoloLens 2 you also have access to the following inputs:
 
 * **Accelerometer** – Used by the system to determine linear acceleration along the X, Y and Z axes and gravity.
 * **Gyro** – Used by the system to determine rotations.
@@ -42,44 +43,43 @@ Additionally, Microsoft doesn't provide assurances that research mode or equival
 
 Be aware that enabling research mode uses more battery power than using the HoloLens 2 under normal conditions. This is true even if the application using the research mode features is not running.  Enabling this mode can also lower the overall security of your device because applications may misuse sensor data.  You can find more information on device security in the [HoloLens security FAQ](https://docs.microsoft.com/hololens/hololens-faq-security).  
 
-
+<!-- TODO: Is this device support correct? -->
 ## Device support
-
 <table>
     <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    <!-- <col width="33%" /> -->
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" /> 
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="hololens-hardware-details.md"><strong>HoloLens 1st Gen</strong></a></td>
-        <!-- <td><a href="hololens2-hardware.md"><strong>HoloLens 2</strong></a></td> -->
+        <td><a href="hololens2-hardware.md"><strong>HoloLens 2</strong></a></td>
     </tr>
      <tr>
         <td>Head Tracking Cameras</td>
         <td>✔️</td>
-        <!-- <td>❌</td> -->
+        <td>✔️</td>
     </tr>
     <tr>
         <td>Depth & IR Camera</td>
         <td>✔️</td>
-        <!-- <td>❌</td> -->
+        <td>✔️</td>
     </tr>
     <tr>
         <td>Accelerometer</td>
         <td>❌</td>
-        <!-- <td>❌</td> -->
+        <td>✔️</td>
     </tr>
     <tr>
         <td>Gyroscope</td>
         <td>❌</td>
-        <!-- <td>❌</td> -->
+        <td>✔️</td>
     </tr>
     <tr>
         <td>Magnetometer</td>
         <td>❌</td>
-        <!-- <td>❌</td> -->
+        <td>✔️</td>
     </tr>
 </table>
 
@@ -107,8 +107,264 @@ Once you've restarted the device, the applications loaded through the **Device P
 ![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.png)<br>
 *Research mode window in the HoloLens Device Portal*
 
+<!-- TODO: Is enabling different in HL2? If so, please add instructions and screenshot. -->
 ### On HoloLens 2:
 
+## API structure
+
+<!-- TODO: Need to know how/why this section is important to using Research Mode -->
+The Research Mode API is structured as follows:
+1. A Research Mode Device is the first object created and used to:
+    * Enumerate available Sensors by type
+    * Create Sensor objects
+    * Request access consent
+ 	
+See the [Main Sensor Loop](#Main-Sensor-Loop) section for more details and sample code.
+
+2. Sensors provide the following functionalities:
+    * Return Sensor name and type
+    * Start and stop streaming
+    * Wait for and retrieve frames in Streaming state
+    * Return extrinsics matrices that give the relative position of the Sensor relative to a device-attached origin (rigOrigin)
+    * Return Sensor Frames with sensor-specific (cameras or IMUs) payload formats
+
+See [Sensors](#Sensors) and [Sensors coordinate frames](#Sensor-coordinate-frames) sections for more details, a description of the device coordinate frame (rigOrigin), and sample code.
+
+3. Sensor Frames provide:
+    * Timestamps
+    * Frame sizes
+    * Specialized per-sensor properties and payload formats.
+
+See [Sensor frames](#Sensor-frames) section below for more details and sample code
+
+## Main Sensor Loop
+
+<!-- TODO: Needs more explanation of the how/why -->
+Sample code for the main sensor loop is listed below, with a breakdown at the end of the section.
+
+```cpp
+#include <windows.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <vector>
+#include <fstream>
+#include <iostream>
+#include "ResearchModeApi.h"
+
+int main(int argc, _In_reads_(argc) char** ppArgv)
+{
+    HRESULT hr = S_OK;
+    IResearchModeSensorDevice *pSensorDevice;
+    std::vector<ResearchModeSensorDescriptor> sensorDescriptors;
+    size_t sensorCount = 0;
+
+    wchar_t msgBuffer[1000];
+  
+    // Create Research Mode device
+    hr = CreateResearchModeSensorDevice(&pSensorDevice);
+ 
+    if (FAILED(hr))
+    {
+        return -1;
+    }
+     
+    pSensorDevice->DisableEyeSelection();
+ 
+    // Get the device coordinate frame (rigNode)
+    GUID guid;
+    IResearchModeSensorDevicePerception* pSensorDevicePerception;
+    hr = m_pSensorDevice->QueryInterface(IID_PPV_ARGS(&pSensorDevicePerception));
+    if (FAILED(hr))
+    {
+	return -1;
+    }
+    hr = pSensorDevicePerception->GetRigNodeId(&guid);
+    if (FAILED(hr))
+    {
+	return -1;
+    }
+
+    // Enumerate sensors
+    hr = pSensorDevice->GetSensorCount(&sensorCount);
+ 
+    if (FAILED(hr))
+    {
+        return -1;
+    }
+ 
+    sensorDescriptors.resize(sensorCount);
+ 
+    // Get sensor descriptors
+    hr = pSensorDevice->GetSensorDescriptors(sensorDescriptors.data(),  sensorDescriptors.size(), &sensorCount);
+ 
+    if (FAILED(hr))
+    {
+        return -1;
+    }
+ 
+    // Loop over sensors to get sensor-specific information
+    for (auto sensorDescriptor : sensorDescriptors)
+    {
+        IResearchModeSensor *pSensor = nullptr;        
+        IResearchModeSensorFrame* pSensorFrame = nullptr;
+        size_t sampleBufferSize;
+        DirectX::XMFLOAT4X4 cameraPose;
+ 
+        hr = pSensorDevice->GetSensor(sensorDescriptor.sensorType, &pSensor);        
+ 
+	 // Get sensor name
+        swprintf_s(msgBuffer, L"Sensor %ls\n", pSensor->GetFriendlyName());
+        OutputDebugStringW(msgBuffer);
+ 
+        if (FAILED(hr))
+        {
+            break;
+        }
+ 
+        // Get sample buffer size
+        hr = pSensor->GetSampleBufferSize(&sampleBufferSize);
+ 
+        if (FAILED(hr))
+        {
+            break;
+        }
+        
+	 // Get Camera object to access calibration info
+        IResearchModeCameraSensor *pCameraSensor = nullptr;
+        float xy[2] = {0};
+        float uv[2];
+ 
+        hr = pSensor->QueryInterface(IID_PPV_ARGS(&pCameraSensor));
+ 
+        if (FAILED(hr))
+        {
+        	break;
+         }
+             
+         uv[0] = 640.0f / 2;
+         uv[1] = 480.0f / 2;
+ 
+	  // Get matrix of extrinsics wrt the rigNode
+         pCameraSensor->GetCameraExtrinsicsMatrix(&cameraPose);
+ 
+         // Unproject from image pixels to 3D  
+	  uv[0] = 640.0f / 2;
+         uv[1] = 480.0f / 2;
+         for (int i = 0; i <= 10; i++)
+         {
+          	for (int j = 0; j <= 10; j++)
+              {
+                   uv[0] = i * 64.0f;
+                   uv[1] = j * 48.0f;
+ 
+                   pCameraSensor->MapImagePointToCameraUnitPlane(uv, xy);
+                   swprintf_s(msgBuffer, L"(% 5.6f % 5.6f) ", xy[0], xy[1]);
+                   OutputDebugStringW(msgBuffer);
+               }
+               swprintf_s(msgBuffer, L" EOL \n");
+               OutputDebugStringW(msgBuffer);
+           }
+ 
+           pCameraSensor->Release();
+           continue;
+        }
+         
+        // Get frames
+        // …        
+        if (pSensor)
+        {
+            pSensor->Release();
+        }
+    }
+ 
+    pSensorDevice->EnableEyeSelection();
+    pSensorDevice->Release();
+ 
+    return hr;
+}
+
+```
+
+Sample code breakdown:
+1. Creates Research Mode device
+2. Gets the device coordinate frame, in which all sensors are positioned. We call this the rigNode and it is identified by a GUID that can be used with the HoloLens perception APIs to map sensor specific coordinates in other HoloLens perception coordinate frames.
+3. Enumerates sensors
+4. Gets information from sensors:
+    * For cameras, use Camera objects to project / unproject image points to 3D points in the camera coordinate frame,
+    * Extrinsics for positioning the sensor with respect to the device rigNode
+5. Gets frames
+
+The initialization call should be made only once for all sensors. Sensors are not thread-safe. Frames should be read from the thread the sensor was opened on. Sensors can share a thread or have a thread each. The latter is better because it will allow for parallel reading of samples giving better sample/frame rates (see MixedReality.ResearchMode repo for samples).
+
+For sample code using the rigNode in combination with the HoloLens perception APIs, see the MixedReality.ResearchMode repo. 
+For Loop reading [IMU sensor](#Imu-sensors), see Main loop reading [IMU samples Appendix](#code-samples).
+
+## Sensors
+
+<!-- TODO: Need more explanation/background on sensors here -->
+Sensors can be of the following types:
+
+```cpp
+enum ResearchModeSensorType
+{
+    LEFT_FRONT,
+    LEFT_LEFT,
+    RIGHT_FRONT,
+    RIGHT_RIGHT,
+    DEPTH_AHAT,
+    DEPTH_LONG_THROW,
+    IMU_ACCEL,
+    IMU_GYRO,
+    IMU_MAG
+};
+```
+
+* LEFT_FRONT, LEFT_LEFT, RIGHT_FRONT and RIGHT_RIGHT give access to the 4 Visible Light Environment Tracking Cameras
+* DEPTH_AHAT and DEPTH_LONG_THROW give access to the 2 Depth modes
+* IMU_ACCEL, IMU_GYRO and IMU_MAG give access to accelerometer, gyro and magnetometer data.
+
+### Sensor coordinate frames
+Each sensor returns its transform to the rigNode (device origin) expressed as an extrinsics rigid body transform. Figure 1 shows camera coordinate frames relative to rig coordinate frame.
+
+![Depth and Front visible light camera coordinate frames relative to rig node coordinate frame](images/research-mode-img-01.png)<br>
+*Figure 1 Depth and Front visible light camera coordinate frames relative to rig node coordinate frame.*
+
+![Camera Map Unmap methods convert 3d (X,Y,Z) coordinates in camera reference frame in camera (x,y) image coordinates, and (x,y) image coordinates into (X,Y,Z) direction vectors in camera coordinate frames](images/research-mode-img-02.png)<br>
+*Figure 2 Camera Map Unmap methods convert 3d (X,Y,Z) coordinates in camera reference frame in camera (x,y) image coordinates, and (x,y) image coordinates into (X,Y,Z) direction vectors in camera coordinate frames*
+
+#### Sensor frames
+
+<!-- TODO: Need more explanation/background on sensor frames here -->
+All frame types have: 
+    * Timestamps
+    * Sample size in bytes.
+
+Camera frames have:
+    * Getters for resolution, exposure, gain
+    * VLC camera frames return grayscale buffer
+    * Depth Long throw camera frames contain active brightness buffer, distance buffer and the sigma buffer
+    * Depth AHAT camera frames contain active brightness buffer and the distance buffer
+
+IMU frames contain batches of sensor samples.
+
+#### Camera sensors
+
+<!-- TODO: Need more explanation/background on camera sensors here -->
+* Intrinsics (project/unproject)
+* These function in the camera coordinate space 
+* Extrinsics returns R, T transform in rig space
+* Frames are specialized for camera frames
+IMU sensors
+* Extrinsics returns R, T transform in rig space
+* Frames are specialized for IMU frames
+
+#### IMU sensors
+
+<!-- TODO: Need more explanation/background on IMU sensors here -->
+* Extrinsics returns R, T transform in rig space
+* Frames are specialized for IMU frames
+
+<!-- TODO: Is this section still viable? -->
 ## Using sensor data in your apps
 
 ### HoloLens 1st Gen
@@ -122,6 +378,7 @@ You can find sample applications on how to access the various Research mode stre
  > [!NOTE]
  > At this time, the HoloLensForCV sample doesn't work on HoloLens 2.
 
+<!-- TODO: Is this the right place for this content? -->
 ## User Consent Prompts
 Any UWP application using Research Mode API for accessing cameras or IMUs must request for user consent before opening the streams. Depending on the user input the app should further proceed. Below is example code describing a scenario in SensorVisualization app that accesses cameras. The highlighted code is the code newly added to implement consents in a UWP app. 
 
@@ -592,9 +849,131 @@ void SlateCameraRenderer::CameraUpdateThread(SlateCameraRenderer* pSlateCameraRe
 }
 ```
 
+## Support
+<!-- TODO: Add sample from Dorin -->
+For Research Mode support in public preview, please utilize the following [samples](TBD).
+
 ## Known issues
 
 You can use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository to follow known issues.
+
+## Code samples
+
+**Main loop reading IMU samples**
+
+```cpp
+int main(int argc, _In_reads_(argc) char** ppArgv)
+{
+    HRESULT hr = S_OK;
+    IResearchModeSensorDevice *pSensorDevice;
+    IResearchModeSensorDeviceConsent *pSensorDeviceConsent;
+    std::vector<ResearchModeSensorDescriptor> sensorDescriptors;
+    size_t sensorCount = 0;
+    ResearchModeSensorType sensorType;
+
+    if ((argc == 2) && (strcmp(ppArgv[1], "G") == 0)) 
+    {
+        sensorType = IMU_GYRO;
+    }
+    else if ((argc == 2) && (strcmp(ppArgv[1], "M") == 0))
+    {
+        sensorType = IMU_MAG;
+    }
+    else
+    {
+        sensorType = IMU_ACCEL;
+    }
+    hr = CreateResearchModeSensorDevice(&pSensorDevice);
+
+    if (FAILED(hr))
+    {
+        return -1;
+    }
+    pSensorDevice->DisableEyeSelection();
+
+    hr = pSensorDevice->GetSensorCount(&sensorCount);
+
+    if (FAILED(hr))
+    {
+        return -1;
+    }
+
+    sensorDescriptors.resize(sensorCount);
+
+    hr = pSensorDevice->GetSensorDescriptors(sensorDescriptors.data(), sensorDescriptors.size(), &sensorCount);
+
+    if (FAILED(hr))
+    {
+        return -1;
+    }
+
+    for (auto sensorDescriptor : sensorDescriptors)
+    {
+        IResearchModeSensor *pSensor = nullptr;
+        size_t sampleBufferSize;
+        //IResearchModeSensorFrame* pSensorFrame = nullptr;
+
+        if (sensorDescriptor.sensorType != sensorType)
+        {
+            continue;
+        }
+        
+        hr = pSensorDevice->GetSensor(sensorDescriptor.sensorType, &pSensor);
+
+        hr = pSensor->GetSampleBufferSize(&sampleBufferSize);
+
+        swprintf_s(msgBuffer, L"Sensor %S Event size %d\n", pSensor->GetFriendlyName(), sampleBufferSize);
+        OutputDebugStringW(msgBuffer);
+
+        if (FAILED(hr))
+        {
+            break;
+        }
+
+        if (FAILED(hr))
+        {
+            break;
+        }
+
+        hr = pSensor->OpenStream();
+
+        if (FAILED(hr))
+        {
+            break;
+        }
+
+        for (UINT i = 0; i < 100; i++)
+        {
+            IResearchModeSensorFrame *pSensorFrame;
+
+            hr = pSensor->GetNextBuffer(&pSensorFrame);
+
+            if (FAILED(hr))
+            {
+                break;
+            }
+
+            PrintSensorValue(pSensorFrame);
+
+            if (pSensorFrame)
+            {
+                pSensorFrame->Release();
+            }
+        }
+
+        hr = pSensor->CloseStream();
+
+        if (pSensor)
+        {
+            pSensor->Release();
+        }
+    }
+
+    pSensorDevice->EnableEyeSelection();
+
+    pSensorDevice->Release();
+}
+```
 
 ## API reference
 
@@ -1203,6 +1582,7 @@ int main(int argc, _In_reads_(argc) char** ppArgv)
 
 ## See also
 
+<!-- TODO: Any additional links for HL2? -->
 * [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
 * [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV)
 * [Using the Windows Device Portal](using-the-windows-device-portal.md)
