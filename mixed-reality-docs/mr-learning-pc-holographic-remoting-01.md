@@ -3,7 +3,7 @@ title: PC Holographic Remoting tutorials - 1. Getting started with PC Holographi
 description: Complete this course to learn how to remote mixed reality experience form your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 07/29/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high

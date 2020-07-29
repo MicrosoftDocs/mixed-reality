@@ -3,7 +3,7 @@ title: Configure a New Unity project for Windows Mixed Reality
 description: Instructions on configuring a Unity project for Windows Mixed Reality
 author: thetuvix
 ms.author: alexturn
-ms.date: 04/15/2018
+ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project
 ---
