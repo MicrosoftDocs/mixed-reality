@@ -164,11 +164,11 @@ In this tutorial, only the MarsCuriosityRover model will be used for demonstrati
 
 In this section, you will explore how to enable eye tracking in your project. For example, you will implement the functionality to highlight tooltips attached to MarsCuriosityRover's parts while looking at them and hiding them, while you are looking away from them.
 
-### 1. Identify target objects and associated tooltips.
+### 1. Identify target objects and associated tooltips
 
 In the Hierarchy window, select the ModelParent object. Expand the ***MarsCuriosity -> Rover*** to find five main parts of the MarsCuriosityRover: **POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**.
 
-* Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window. 
+* Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window.
 * You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
 
 ![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
