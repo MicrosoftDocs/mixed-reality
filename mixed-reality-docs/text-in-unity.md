@@ -78,16 +78,18 @@ Segoe UI (the default font for Windows) works well in most cases. However, avoid
 ![Viewing Angle](images/Text_In_Unity_ViewingAngle.jpg)
 *Viewing distance, angle, and text height*
 
-## Sharp text rendering quality with proper dimension
+## Text with Mixed Reality Toolkit
+
+### Sharp text rendering quality with proper dimension
 
 Based on these scaling factors, we have created [text prefabs with UI Text and 3D Text Mesh](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text). Developers can use these prefabs to get sharp text and consistent font size.
 
 ![Sharp text rendering quality with proper dimension](images/hug-text-06-1000px.png)<br>
 *Sharp text rendering quality with proper dimension*
 
-## Shader with occlusion support
+### Shader with occlusion support
 
-Unity's default font material does not support occlusion. Because of this, you will see the text behind the objects by default. We have included a simple [shader that supports the occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit/StandardAssets/Shaders/Text3DShader.shader). The image below shows the text with default font material (left) and the text with proper occlusion (right).
+Unity's default font material does not support occlusion. Because of this, you will see the text behind the objects by default. We have included a simple [shader that supports the occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit/StandardAssets/Shaders/Text3DShader.shader). The image below shows the text with default font material (left) and the text with proper occlusion (right).
 
 ![Shader with occlusion support](images/hug-text-07-1000px.png)<br>
 *Shader with occlusion support*
