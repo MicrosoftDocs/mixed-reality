@@ -26,7 +26,7 @@ In addition, there are other Azure Services that you can easily add into your ex
 ![Example of Azure Remote Rendering in Unity showcase app](images/showcase-app.png)
 
 ### Azure Spatial Anchors
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors) (ASA) is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices, at real-world scale. 
+[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors) (ASA) is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices, at real-world scale.
 
 ![Example of Azure Spatial Anchors](images/persistence.gif)
 

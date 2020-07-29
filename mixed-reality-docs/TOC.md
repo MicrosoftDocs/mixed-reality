@@ -222,7 +222,7 @@
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 
 ### Sample Apps
-#### HoloLens 2 
+#### HoloLens 2
 ##### [Surfaces](sampleapp-surfaces.md)
 ##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 ##### [Galaxy Explorer 2.0](galaxy-explorer-update.md)

@@ -1,6 +1,6 @@
 ---
-title: Configure a New Unity Project for Windows Mixed Reality 
-description: configure Unity project without MRTK
+title: Configure a New Unity project for Windows Mixed Reality 
+description: Instructions on configuring a Unity project for Windows Mixed Reality
 author: thetuvix
 ms.author: alexturn
 ms.date: 04/15/2018
@@ -9,15 +9,22 @@ keywords: Unity, mixed reality, development, getting started, new project
 ---
 
 
-# Configure a New Unity Project for Windows Mixed Reality 
+# Configure a New Unity project for Windows Mixed Reality 
 
-(skip if you have already imported MRTK v2 into your Unity Project)
+## Overview
 
-If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality, broken-down into two categories: per-project and per-scene.
+Windows Mixed Reality (WMR) is a Microsoft platform introduced as part of the Windows 10 operating system. The WMR platform lets you build applications that render digital content on holographic and VR display devices.
+
+When setting up for WMR, there are two paths you can take. Your first option is to install the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) (MRTK) v2, which will automatically set up the WMR environment. The second option is to manually change a few Unity settings to get rolling with WMR. 
+
+> [!NOTE]
+> You can always import MRTK later on, so there's no penalty for going the manual route first.
+
+If you choose the WMR manual setup, the settings you need to change are broken-down into two categories: per-project and per-scene.
 
 ## Per-project settings
 
-To target Windows Mixed Reality, you first need to set your Unity project to export as a Universal Windows Platform app: 
+The first setting you need to change for WMR is the project platform: 
 1. Select **File > Build Settings...**
 2. Select **Universal Windows Platform** in the Platform list and click **Switch Platform**
 3. Set **SDK** to **Universal 10**
@@ -25,17 +32,23 @@ To target Windows Mixed Reality, you first need to set your Unity project to exp
 5. Set **Build Type** to **D3D**
 6. Set **UWP SDK** to **Latest installed**
 
-You then need to let Unity know that the app you are trying to export should create an [immersive view](app-views.md) instead of a 2D view. You do that by enabling "Virtual Reality Supported":
+![Unity XR settings](images/unity-uwp-settings.png)<br>
+*Unity XR settings*
+
+After the platform is configured correctly, you need to let Unity know that your app should create an [immersive view](app-views.md) instead of a 2D view when exported:
 1. From the **Build Settings...** window, open **Player Settings...**
-2. Select the **Settings for Universal Windows Platform** tab
-3. Expand the **XR Settings** group
-4. In the **XR Settings** section, check the **Virtual Reality Supported** checkbox to add the **Virtual Reality Devices** list.
-5. In the **XR Settings** group, confirm that **"Windows Mixed Reality"** is listed as a supported device. (this may appear as "Windows Holographic" in older versions of Unity)
+2. Select the **Settings for Universal Windows Platform** tab and expand the **XR Settings** group
+3. In the **XR Settings** section, check the **Virtual Reality Supported** checkbox to add the **Virtual Reality Devices** list.
+4. In the **XR Settings** group, confirm that **"Windows Mixed Reality"** is listed as a supported device. (this option may appear as **Windows Holographic** in older versions of Unity)
 
-![Unity quality settings](images/getting-started-unity-quality-settings.jpg)<br>
-*Unity xr settings*
+![Unity UWP settings](images/xrsettings.png)<br>
+*Unity XR settings*
 
-Your app can now do basic holographic rendering and spatial input. To go further and take advantage of certain functionality, your app must declare the appropriate capabilities in its manifest. The manifest declarations can be made in Unity so they are included in every subsequent project export. The settings are found in **Player Settings > Settings for Universal Windows Platform > Publishing Settings > Capabilities**. The applicable capabilities for enabling commonly-used Unity APIs for Mixed Reality are:
+### Updating the manifest
+
+Your app can now handle holographic rendering and spatial input. However, your app needs to declare the appropriate capabilities in its manifest to take advantage of certain functionality. You can find your projects capabilities by going to **Player Settings > Settings for Universal Windows Platform > Publishing Settings > Capabilities**. 
+
+It's recommended that you make the manifest declarations in Unity to include them in all future projects that you export. The applicable capabilities for enabling commonly used Unity APIs for Mixed Reality are:
 
 |  Capability  |  APIs requiring capability | 
 |----------|----------|
@@ -45,33 +58,33 @@ Your app can now do basic holographic rendering and spatial input. To go further
 |  Microphone  |  VideoCapture (when capturing audio), DictationRecognizer, GrammarRecognizer, and KeywordRecognizer | 
 |  InternetClient  |  DictationRecognizer (and to use the Unity Profiler) | 
 
-**Unity quality settings**
+### Quality settings
+
+HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want the quality settings in your app tuned for fastest performance to ensure it maintains full frame-rate:
+1. Select **Edit > Project Settings > Quality**
+2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green.
 
 ![Unity quality settings](images/getting-started-unity-quality-settings.jpg)<br>
 *Unity quality settings*
 
-HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want the quality settings tuned for fastest performance to ensure we maintain full framerate:
-1. Select **Edit > Project Settings > Quality**
-2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green.
-
 ## Per-scene settings
 
-**Unity camera settings**
+### Unity camera settings
 
-![Unity camera settings](images/Unitycamerasettings.png)<br>
-*Unity camera settings*
+With **Virtual Reality Supported** checked, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](rendering.md). That means there's no need for you to replace the Main Camera object with a custom camera.
 
-Once you enable the "Virtual Reality Supported" checkbox, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](rendering.md). There is no need to replace it with a custom camera to do this.
-
-If your app is targeting HoloLens specifically, there are a few settings that need to be changed to optimize for the device's transparent displays, so your app will show through to the physical world:
+If your app is targeting HoloLens specifically, you need to change a few settings to optimize for the device's transparent displays. These settings allow your holographic content to show through to the physical world:
 1. In the **Hierarchy**, select the **Main Camera**
 2. In the **Inspector** panel, set the transform **position** to **0, 0, 0** so the location of the user's head starts at the Unity world origin.
 3. Change **Clear Flags** to **Solid Color**.
 4. Change the **Background** color to **RGBA 0,0,0,0**. Black renders as transparent in HoloLens.
 5. Change **Clipping Planes - Near** to the [HoloLens recommended](camera-in-unity.md#clip-planes) 0.85 (meters).
 
-If you delete and create a new camera, make sure your camera is **Tagged** as **MainCamera**.
+![Unity camera settings](images/Unitycamerasettings.png)<br>
+*Unity camera settings*
 
+> [!IMPORTANT]
+> If you delete and create a new camera, make sure your new camera is tagged as **MainCamera**.
 
 ## See also
 * [Mixed Reality Toolkit v2](mrtk-getting-started.md)
