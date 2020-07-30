@@ -35,11 +35,15 @@ highlightedContent:
       itemType: overview
       url: https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details
     # Card
+    - title: Choose your tools
+      itemType: overview
+      url: development.md
+    # Card
     - title: Enterprise deployment
       itemType: concept
       url: https://docs.microsoft.com/hololens/hololens-requirements
     # Card
-    - title: MRTK Examples Hub
+    - title: Try MRTK sample apps
       itemType: sample
       url: https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab
 
@@ -80,11 +84,21 @@ productDirectory:
         - url: 3d-app-launcher-design-guidance.md
           text: Distribute your apps
     # Card
-    - title: IT TBD 
+    - title: Distribute
       imageSrc: images/Tile-New.jpg
       links:
-        - url: file3a.md OR https://docs.microsoft.com/file3a
-          text: TBD
+        - url: 3d-app-launcher-design-guidance.md
+          text: Designing a 3D app launcher
+        - url: creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
+          text: Creating 3D models for the Mixed Reality Home
+        - url: implementing-3d-app-launchers.md
+          text: Implementing 3D app launchers in UWP apps
+        - url: in-app-purchases.md
+          text: Adding in-app purchases
+        - url: submitting-an-app-to-the-microsoft-store.md
+          text: Submitting to the Microsoft Store
+        - url: https://docs.microsoft.com/hololens/hololens-requirements
+          text: Get ready for commercial deployment
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -175,22 +189,9 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Resources # < 60 chars (optional)
-      summary: Get your apps ready for porting, Azure cloud services, enterprise deployment, and more. # < 160 chars (optional)
+    - title: Learning modules and samples # < 60 chars (optional)
+      summary: Follow along with learning resources and sample applications.   # < 160 chars (optional)
       items:
-        # Card
-        - title: Porting guides
-          links:
-            - text: Get your app ready for HoloLens 2
-              url: mrtk-porting-guide.md
-            - text: Porting guide for immersive apps
-              url: porting-guides.md
-            - text: Input porting guide for Unity
-              url: input-porting-guide-for-unity.md
-            - text: Updating your SteamVR applications
-              url: updating-your-steamvr-application-for-windows-mixed-reality.md
-            - text: Updating 2D UWP apps for Mixed Reality
-              url: building-2d-apps.mdd
         # Card
         - title: Learn modules
           links:
@@ -209,6 +210,10 @@ additionalContent:
               url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
             - text: Galaxy Explorer 2.0 
               url: galaxy-explorer-update.md
+  sections:
+    - title: Enterprise and Cloud Services # < 60 chars (optional)
+      summary: Follow along with learning resources and sample applications.   # < 160 chars (optional)
+      items:
         # Card
         - title: Enterprise Deployment for HoloLens
           links:
@@ -237,6 +242,23 @@ additionalContent:
               url: https://docs.microsoft.com/azure/remote-rendering/
             - text: Azure Remote Rendering Tutorials
               url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
+  sections:
+    - title: Resources # < 60 chars (optional)
+      summary: Get your apps ready for porting, Azure cloud services, enterprise deployment, and more. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Porting guides
+          links:
+            - text: Get your app ready for HoloLens 2
+              url: mrtk-porting-guide.md
+            - text: Porting guide for immersive apps
+              url: porting-guides.md
+            - text: Input porting guide for Unity
+              url: input-porting-guide-for-unity.md
+            - text: Updating your SteamVR applications
+              url: updating-your-steamvr-application-for-windows-mixed-reality.md
+            - text: Updating 2D UWP apps for Mixed Reality
+              url: building-2d-apps.mdd
             
 
 # tools section (optional)
