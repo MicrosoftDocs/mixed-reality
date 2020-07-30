@@ -53,8 +53,8 @@ Be aware that enabling research mode uses more battery power than using the Holo
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens 1st Gen</strong></a></td>
-        <td><a href="hololens2-hardware.md"><strong>HoloLens 2</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens 1st Gen</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
     </tr>
      <tr>
         <td>Head Tracking Cameras</td>
@@ -127,7 +127,7 @@ The Research Mode API is structured as follows:
     * Create Sensor objects
     * Request access consent
  	
-See the [Main Sensor Loop](#Main-Sensor-Loop) section for more details and sample code.
+See the [Main Sensor Loop](#main-sensor-loop) section for more details and sample code.
 
 2. Sensors provide the following functionalities:
     * Return Sensor name and type
@@ -136,14 +136,14 @@ See the [Main Sensor Loop](#Main-Sensor-Loop) section for more details and sampl
     * Return extrinsics matrices that give the relative position of the Sensor relative to a device-attached origin (rigOrigin)
     * Return Sensor Frames with sensor-specific (cameras or IMUs) payload formats
 
-See [Sensors](#Sensors) and [Sensors coordinate frames](#Sensor-coordinate-frames) sections for more details, a description of the device coordinate frame (rigOrigin), and sample code.
+See [Sensors](#sensors) and [Sensors coordinate frames](#sensor-coordinate-frames) sections for more details, a description of the device coordinate frame (rigOrigin), and sample code.
 
 3. Sensor Frames provide:
     * Timestamps
     * Frame sizes
     * Specialized per-sensor properties and payload formats.
 
-See [Sensor frames](#Sensor-frames) section below for more details and sample code
+See [Sensor frames](#sensor-frames) section below for more details and sample code
 
 ### Main Sensor Loop
 
@@ -305,7 +305,7 @@ Sample code breakdown:
 The initialization call should be made only once for all sensors. Sensors are not thread-safe. Frames should be read from the thread the sensor was opened on. Sensors can share a thread or have a thread each. The latter is better because it will allow for parallel reading of samples giving better sample/frame rates (see MixedReality.ResearchMode repo for samples).
 
 For sample code using the rigNode in combination with the HoloLens perception APIs, see the MixedReality.ResearchMode repo. 
-For Loop reading [IMU sensor](#Imu-sensors), see Main loop reading [IMU samples Appendix](#code-samples).
+For Loop reading [IMU sensor](#imu-sensors), see Main loop reading [IMU samples Appendix](#code-samples).
 
 ### Sensors
 
@@ -1566,7 +1566,7 @@ int main(int argc, _In_reads_(argc) char** ppArgv)
 
 ## Support
 <!-- TODO: Add sample from Dorin -->
-For Research Mode support in public preview, please utilize the following [samples](TBD).
+For Research Mode support in public preview, please utilize the following samples.
 
 ## Known issues
 
