@@ -236,7 +236,7 @@ additionalContent:
             - text: Jump into Azure Spatial Anchorsyy
               url: https://docs.microsoft.com/azure/spatial-anchors/
             - text: Azure Spatial Anchors tutorials
-              url: mr-learning-asa-01
+              url: mr-learning-asa-01.md
             - text: Develop with Azure Remote Rendering 
               url: https://docs.microsoft.com/azure/remote-rendering/
             - text: Azure Remote Rendering Tutorials
