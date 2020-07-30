@@ -43,8 +43,6 @@ This page covers how to get quickly started with using eye tracking in MRTK by b
 >[!NOTE]
 >Both of the MRTK example scenes require MRTK Foundation and Example Unity packages to be installed.
 
----
-
 # [Unreal](#tab/unreal)
 
 ![Unreal](../images/unreal_logo_banner.png)
@@ -78,7 +76,6 @@ You have several hardware, emulator, and streaming options when building Mixed R
 ### [Microsoft’s Mixed Reality Toolkit (MRTK) for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal)
 The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine.
 
----
 
 # [Javscript](#tab/javascript)
 
@@ -88,7 +85,6 @@ The JavaScript and WebXR Device API is an open specification that allows you to 
 
 ## Available tools and SDKs 
 
----
 
 # [Native](#tab/native)
 
@@ -108,5 +104,3 @@ OpenXR is an open royalty-free API standard from Khronos that provides engines n
 
 Feel free to play around with the sample app to get a feel for what's possible with Native development and Mixed Reality.
 * [BasicXrApp](https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp) - Demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.
-
----

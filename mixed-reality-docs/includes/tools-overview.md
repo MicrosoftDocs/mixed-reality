@@ -78,7 +78,6 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 * [Using the Windows Mixed Reality simulator](../using-the-windows-mixed-reality-simulator.md)
 * [Unity development overview](../unity-development-overview.md)
 * [HoloLens emulator archive](../hololens-emulator-archive.md)
----
 
 # [Unreal](#tab/unreal)
 
@@ -160,8 +159,6 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 * [Unreal development overview](../unreal-development-overview.md)
 * [HoloLens emulator archive](../hololens-emulator-archive.md)
 
----
-
 # [Native](#tab/native)
 
  ![Native app development](../images/native_logo_banner.png)
@@ -237,6 +234,3 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 * [Using the Windows Mixed Reality simulator](../using-the-windows-mixed-reality-simulator.md)
 * [Native development overview](../directx-development-overview.md)
 * [HoloLens emulator archive](../hololens-emulator-archive.md)
-
-
----
