@@ -34,10 +34,10 @@ The MRTK v2 with Unity is an open source cross-platform development kit for mixe
 ## Examples
 
 We have several open source [sample apps](../samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
-* [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor)
+* [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) -
 The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
 
-* [Eye tracking examples (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html)
+* [Eye tracking examples (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html) - 
 This page covers how to get quickly started with using eye tracking in MRTK by building on our provided MRTK eye tracking examples.
 
 >[!NOTE]
@@ -84,12 +84,7 @@ The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in th
 
 ![JavaScript](../images/javascript_logo_banner.png)
 
-JavaScript and WebXR Device API is an open specification that makes it possible to experience Mixed Reality in your browser in any platform.
-
-See the [Javascript development overview](../javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
-
-## Available hardware platforms
-
+The JavaScript and WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [Javascript development overview](../javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
 
 ## Available tools and SDKs 
 
@@ -97,26 +92,21 @@ See the [Javascript development overview](../javascript-development-overview.md)
 
 # [Native](#tab/native)
 
- ![Native app development](../images/native_logo_banner.png)<br>[**Native (OpenXR)**](../openxr-getting-started.md)<br>
+ ![Native](../images/native_logo_banner.png)
 
-Create mixed reality apps by directly coding to the Windows Mixed Reality APIs.
+Create mixed reality apps by directly coding to the Windows Mixed Reality APIs. See the [Native development overview](../directx-development-overview.md) to get started with native app development using WinRT or OpenXR for HoloLens 2 or Windows Mixed Reality immersive headsets.
 
-### [Native development overview](../directx-development-overview.md)
-The fastest path to building a native mixed reality app.
+## What does OpenXR offer?
 
-### [DirectX UWP app templates for mixed reality](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
-All of the essentials you need to start writing a mixed reality app using DirectX.
-
-OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from many vendors that span across the mixed reality spectrum.  The <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.
-
-<a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">**Native (WinRT)**</a><br>
-        
-The <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">Windows Mixed Reality native app templates</a> provide all of the essentials you need to start writing a mixed reality app using DirectX with native APIs. Includes a rendering loop (or "game loop"), a DeviceResources helper class to manage the Direct3D device and context, and a simple example hologram renderer. Available for Direct3D11 and Direct3D 12.
-        
-See the [Native development overview](../directx-development-overview.md) to get started with native app development using WinRT or OpenXR for HoloLens 2 or Windows Mixed Reality immersive headsets.
+OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from many vendors across the mixed reality spectrum. 
 
 ## Available hardware platforms
 
 ## Available tools and SDKs
+
+## Examples
+
+Feel free to play around with the sample app to get a feel for what's possible with Native development and Mixed Reality.
+* [BasicXrApp](https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp) - Demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.
 
 ---

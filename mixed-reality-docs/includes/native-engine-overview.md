@@ -1,9 +1,6 @@
- ![Native app development](../images/native_logo_banner.png)<br>[**Native (OpenXR)**](../openxr-getting-started.md)<br>
+ ![Native app development](../images/native_logo_banner.png)
 
-![Native app development](../images/visualstudio-small_logo.png)<br>
-        [**Native (OpenXR)**](../openxr-getting-started.md)<br>
-        The <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.<br>
-        <br>
+
         <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">**Native (WinRT)**</a><br>
         The <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">Windows Mixed Reality native app templates</a> provide all of the essentials you need to start writing a mixed reality app using DirectX with native APIs. Includes a rendering loop (or "game loop"), a DeviceResources helper class to manage the Direct3D device and context, and a simple example hologram renderer. Available for Direct3D11 and Direct3D 12.<br>
 
@@ -72,7 +69,5 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 * [Development overview](../development.md)
 * [Using the HoloLens emulator](../using-the-hololens-emulator.md)
 * [Using the Windows Mixed Reality simulator](../using-the-windows-mixed-reality-simulator.md)
-* [Unity development overview](../unity-development-overview.md)
-* [Unreal development overview](../unreal-development-overview.md)
-* [DirectX development overview](../directx-development-overview.md)
+* [Native development overview](../directx-development-overview.md)
 * [HoloLens emulator archive](../hololens-emulator-archive.md)

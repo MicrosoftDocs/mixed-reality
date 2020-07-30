@@ -34,14 +34,4 @@ We recommend installing the Unity game engine as the easiest way to get started 
 
 ## Choose your engine
 
-# [Unity](#tab/unity)
-
-[!INCLUDE[](~/includes/unity-engine-overview.md)]
-
-# [Unreal](#tab/unreal)
-
-[!INCLUDE[](~/includes/unreal-engine-overview.md)]
-
-# [Native](#tab/native)
-
-[!INCLUDE[](~/includes/native-engine-overview.md)]
+[!INCLUDE[](~/includes/tools-overview.md)]

@@ -1,6 +1,6 @@
 ![Unreal](../images/unreal_logo_banner.png)
 
-<a href="https://docs.unrealengine.com//GettingStarted/Installation/index.html" target="_blank">![Unreal](../images/Unreal_logo.png)<br>**Unreal**</a><br>
+We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
 
 ## Mixed Reality Toolkit (MRTK)
 ![MRTK](../images/UX/MRTK_UX_Hero.png)
@@ -73,7 +73,5 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 * [Development overview](../development.md)
 * [Using the HoloLens emulator](../using-the-hololens-emulator.md)
 * [Using the Windows Mixed Reality simulator](../using-the-windows-mixed-reality-simulator.md)
-* [Unity development overview](../unity-development-overview.md)
 * [Unreal development overview](../unreal-development-overview.md)
-* [DirectX development overview](../directx-development-overview.md)
 * [HoloLens emulator archive](../hololens-emulator-archive.md)
