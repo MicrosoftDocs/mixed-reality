@@ -210,7 +210,6 @@ additionalContent:
               url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
             - text: Galaxy Explorer 2.0 
               url: galaxy-explorer-update.md
-  sections:
     - title: Enterprise and Cloud Services # < 60 chars (optional)
       summary: Follow along with learning resources and sample applications.   # < 160 chars (optional)
       items:
@@ -242,10 +241,6 @@ additionalContent:
               url: https://docs.microsoft.com/azure/remote-rendering/
             - text: Azure Remote Rendering Tutorials
               url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
-  sections:
-    - title: Resources # < 60 chars (optional)
-      summary: Get your apps ready for porting, Azure cloud services, enterprise deployment, and more. # < 160 chars (optional)
-      items:
         # Card
         - title: Porting guides
           links:
@@ -258,7 +253,7 @@ additionalContent:
             - text: Updating your SteamVR applications
               url: updating-your-steamvr-application-for-windows-mixed-reality.md
             - text: Updating 2D UWP apps for Mixed Reality
-              url: building-2d-apps.mdd
+              url: building-2d-apps.md
             
 
 # tools section (optional)
