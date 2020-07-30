@@ -43,7 +43,7 @@ highlightedContent:
       itemType: concept
       url: https://docs.microsoft.com/hololens/hololens-requirements
     # Card
-    - title: Try MRTK sample apps
+    - title: Try some sample apps
       itemType: sample
       url: https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab
 
