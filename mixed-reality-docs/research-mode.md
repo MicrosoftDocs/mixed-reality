@@ -27,11 +27,11 @@ If you're using a HoloLens 2 you also have access to the following inputs:
 * **Gyro** – Used by the system to determine rotations.
 * **Magnetometer** – Used by the system to estimate absolute orientation.
 
+> [!IMPORTANT]
+> Research Mode is currently in Public Preview. It was added as part of the [Windows 10 April 2018 Update](release-notes-april-2018.md) for HoloLens and isn't available on earlier releases.
+
 ![Research Mode app screenshot](images/sensor-stream-viewer.jpg)<br>
 *A mixed reality capture of a test application that displays the eight sensor streams available in Research mode*
-
-> [!NOTE]
-> The Research Mode feature was added as part of the [Windows 10 April 2018 Update](release-notes-april-2018.md) for HoloLens, and is not available on earlier releases.
 
 ## Usage
 
@@ -83,10 +83,7 @@ Be aware that enabling research mode uses more battery power than using the Holo
     </tr>
 </table>
 
-> [!IMPORTANT]
-> Research Mode support for HoloLens 2 is expected to be available in public preview in July 2020 and will include all the features listed above. Please check back for more information. 
-
-## Enabling Research mode
+## Research Mode on HoloLens (1st Gen)
 
 Research mode is an extension of Developer Mode. Before starting, the developer features of the device need to be enabled to access the research mode settings: 
 
@@ -94,9 +91,7 @@ Research mode is an extension of Developer Mode. Before starting, the developer 
 * Select **For Developers** and enable **Developer Mode**.
 * Scroll down and enable **Device Portal**.
 
-After the developer features  are enabled, [connect to the device portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) to enable the research mode features.
-
-### On HoloLens 1st Gen:
+After the developer features  are enabled, [connect to the device portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) to enable the research mode features:
 
 * Go to **System > Research mode** in the **Device Portal**.
 * Select **Allow access to sensor stream**.
@@ -107,10 +102,23 @@ Once you've restarted the device, the applications loaded through the **Device P
 ![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.png)<br>
 *Research mode window in the HoloLens Device Portal*
 
-<!-- TODO: Is enabling different in HL2? If so, please add instructions and screenshot. -->
-### On HoloLens 2:
+### Using sensor data in your apps
 
-## API structure
+Applications can access the sensor stream data in the same way that photo and video camera streams are accessed through [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197). 
+
+All APIs that work for HoloLens development are also available in Research mode. In particular, the application  knows precisely where HoloLens is in 6DoF space at each sensor frame capture time.
+
+You can find sample applications on how to access the various Research mode streams, how to use the [intrinsics and extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), and how to record streams in the [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV) repo.
+
+<!-- TODO: Does the HoloLensForVC sample work on HL2 now? -->
+ > [!NOTE]
+ > At this time, the HoloLensForCV sample doesn't work on HoloLens 2.
+
+## Research Mode on HoloLens 2
+
+<!-- TODO: Add enable and implementation for HL2 -->
+
+### API structure
 
 <!-- TODO: Need to know how/why this section is important to using Research Mode -->
 The Research Mode API is structured as follows:
@@ -137,7 +145,7 @@ See [Sensors](#Sensors) and [Sensors coordinate frames](#Sensor-coordinate-frame
 
 See [Sensor frames](#Sensor-frames) section below for more details and sample code
 
-## Main Sensor Loop
+### Main Sensor Loop
 
 <!-- TODO: Needs more explanation of the how/why -->
 Sample code for the main sensor loop is listed below, with a breakdown at the end of the section.
@@ -299,7 +307,7 @@ The initialization call should be made only once for all sensors. Sensors are no
 For sample code using the rigNode in combination with the HoloLens perception APIs, see the MixedReality.ResearchMode repo. 
 For Loop reading [IMU sensor](#Imu-sensors), see Main loop reading [IMU samples Appendix](#code-samples).
 
-## Sensors
+### Sensors
 
 <!-- TODO: Need more explanation/background on sensors here -->
 Sensors can be of the following types:
@@ -323,7 +331,7 @@ enum ResearchModeSensorType
 * DEPTH_AHAT and DEPTH_LONG_THROW give access to the 2 Depth modes
 * IMU_ACCEL, IMU_GYRO and IMU_MAG give access to accelerometer, gyro and magnetometer data.
 
-### Sensor coordinate frames
+#### Sensor coordinate frames
 Each sensor returns its transform to the rigNode (device origin) expressed as an extrinsics rigid body transform. Figure 1 shows camera coordinate frames relative to rig coordinate frame.
 
 ![Depth and Front visible light camera coordinate frames relative to rig node coordinate frame](images/research-mode-img-01.png)<br>
@@ -332,7 +340,7 @@ Each sensor returns its transform to the rigNode (device origin) expressed as an
 ![Camera Map Unmap methods convert 3d (X,Y,Z) coordinates in camera reference frame in camera (x,y) image coordinates, and (x,y) image coordinates into (X,Y,Z) direction vectors in camera coordinate frames](images/research-mode-img-02.png)<br>
 *Figure 2 Camera Map Unmap methods convert 3d (X,Y,Z) coordinates in camera reference frame in camera (x,y) image coordinates, and (x,y) image coordinates into (X,Y,Z) direction vectors in camera coordinate frames*
 
-#### Sensor frames
+##### Sensor frames
 
 <!-- TODO: Need more explanation/background on sensor frames here -->
 All frame types have: 
@@ -347,7 +355,7 @@ Camera frames have:
 
 IMU frames contain batches of sensor samples.
 
-#### Camera sensors
+##### Camera sensors
 
 <!-- TODO: Need more explanation/background on camera sensors here -->
 * Intrinsics (project/unproject)
@@ -358,28 +366,14 @@ IMU sensors
 * Extrinsics returns R, T transform in rig space
 * Frames are specialized for IMU frames
 
-#### IMU sensors
+##### IMU sensors
 
 <!-- TODO: Need more explanation/background on IMU sensors here -->
 * Extrinsics returns R, T transform in rig space
 * Frames are specialized for IMU frames
 
-<!-- TODO: Is this section still viable? -->
-## Using sensor data in your apps
-
-### HoloLens 1st Gen
-
-Applications can access the sensor stream data in the same way that photo and video camera streams are accessed through [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197). 
-
-All APIs that work for HoloLens development are also available in Research mode. In particular, the application  knows precisely where HoloLens is in 6DoF space at each sensor frame capture time.
-
-You can find sample applications on how to access the various Research mode streams, how to use the [intrinsics and extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), and how to record streams in the [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV) repo.
-
- > [!NOTE]
- > At this time, the HoloLensForCV sample doesn't work on HoloLens 2.
-
 <!-- TODO: Is this the right place for this content? -->
-## User Consent Prompts
+### User Consent Prompts
 Any UWP application using Research Mode API for accessing cameras or IMUs must request for user consent before opening the streams. Depending on the user input the app should further proceed. Below is example code describing a scenario in SensorVisualization app that accesses cameras. The highlighted code is the code newly added to implement consents in a UWP app. 
 
 You can see the entire change for all the scenarios of the app [here](https://microsoft.visualstudio.com/DefaultCollection/Analog/_git/mixedreality.researchmode/pullrequest/4842004?path=%2FCameraWithCVAndCalibration%2FCameraWithCVAndCalibration%2FContent%2FSlateCameraRenderer.cpp&_a=files). When enabling user consent for the camera and IMU access, please make sure to declare the following capabilities in the app manifest:
@@ -759,8 +753,6 @@ for (int i = 0; i < m_modelRenderers.size(); i++)
 #include "pch.h"
 #include "SlateCameraRenderer.h"
 
-
-
 using namespace BasicHologram;
 using namespace DirectX;
 using namespace winrt::Windows::Foundation::Numerics;
@@ -849,15 +841,7 @@ void SlateCameraRenderer::CameraUpdateThread(SlateCameraRenderer* pSlateCameraRe
 }
 ```
 
-## Support
-<!-- TODO: Add sample from Dorin -->
-For Research Mode support in public preview, please utilize the following [samples](TBD).
-
-## Known issues
-
-You can use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository to follow known issues.
-
-## Code samples
+#### Code samples
 
 **Main loop reading IMU samples**
 
@@ -975,7 +959,7 @@ int main(int argc, _In_reads_(argc) char** ppArgv)
 }
 ```
 
-## API reference
+### API reference
 
 ```cpp
 #pragma once
@@ -1184,7 +1168,7 @@ HRESULT CreateResearchModeSensorDevice(
     _Outptr_result_nullonfailure_ IResearchModeSensorDevice **ppSensorDevice);
 ```
 
-### Reading cameras
+#### Reading cameras
 ```cpp
 #include <nt.h>
 #include <ntrtl.h>
@@ -1579,6 +1563,14 @@ int main(int argc, _In_reads_(argc) char** ppArgv)
     return hr;
 }
 ```
+
+## Support
+<!-- TODO: Add sample from Dorin -->
+For Research Mode support in public preview, please utilize the following [samples](TBD).
+
+## Known issues
+
+You can use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository to follow known issues.
 
 ## See also
 
