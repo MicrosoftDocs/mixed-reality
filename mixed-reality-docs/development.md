@@ -26,19 +26,31 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 
 There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to its tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
 
-# [Unity](#tab/unity)
+[!INCLUDE[](~/includes/tech-path-overview.md)]
 
-[!INCLUDE[](~/includes/unity-tools-overview.md)]
 
-# [Unreal](#tab/unreal)
+## What would you like to do next?
 
-[!INCLUDE[](~/includes/unreal-tools-overview.md)]
-
-# [Javascript](#tab/javascript)
-
-[!INCLUDE[](~/includes/javascript-tools-overview.md)]
-
-# [Native](#tab/native)
-
-[!INCLUDE[](~/includes/native-tools-overview.md)]
+:::row:::
+    :::column:::
+       [![Understand the basics](../images/icon-lightbulb.png)](../get-started-with-mr.md#understand-the-basics)<br>
+        **[Understand the basics](../get-started-with-mr.md#understand-the-basics)**<br>
+        Get a better understanding of what defines mixed reality and how it’s being used.
+    :::column-end:::
+    :::column:::
+        [![Become a creator](../images/icon-design.jpg)](../design.md)<br>
+         **[Become a creator](../design.md)**<br>
+        Learn the basic concepts you need to begin designing and prototyping.
+    :::column-end:::
+    :::column:::
+        [![Install the tools](../images/icon-developer.jpg)](../install-the-tools.md)<br>
+         **[Install the tools](../install-the-tools.md)**<br>
+        Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
+    :::column-end:::
+    :::column:::
+        [![Come to an event](../images/icon-calendar.jpg)](../sf-academy-events.md)<br>
+         **[Come to an event](../sf-academy-events.md)**<br>
+        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
+    :::column-end:::
+:::row-end:::
 

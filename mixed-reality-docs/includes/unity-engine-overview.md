@@ -1,11 +1,13 @@
 ![Unity](../images/unity_logo_banner.png)<br>
 
-<a href="https://unity3d.com/unity/qa/lts-releases" target="_blank">![Unity](../images/unity_logo.png)<br>**Unity**</a><br>
+We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes. 
+* The current recommendation is to use **Unity 2019**, which is the LTS build required for MRTK v2 below.
+* If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
 
 ## Mixed Reality Toolkit (MRTK)
 ![MRTK](../images/UX/MRTK_UX_Hero.png)
 
-Mixed Reality Toolkit (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
+[Mixed Reality Toolkit](mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
 
 :::row:::
     :::column:::
@@ -73,6 +75,4 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 * [Using the HoloLens emulator](../using-the-hololens-emulator.md)
 * [Using the Windows Mixed Reality simulator](../using-the-windows-mixed-reality-simulator.md)
 * [Unity development overview](../unity-development-overview.md)
-* [Unreal development overview](../unreal-development-overview.md)
-* [DirectX development overview](../directx-development-overview.md)
 * [HoloLens emulator archive](../hololens-emulator-archive.md)
