@@ -221,7 +221,8 @@
 #### [Mixed Reality native objects in Unity](unity-xrdevice-advanced.md)
 #### [Using Vuforia with Unity](vuforia-development-overview.md)
 
-### Sample Apps
+### Sample apps
+#### [Overview](samples.md)
 #### HoloLens 2
 ##### [Surfaces](sampleapp-surfaces.md)
 ##### [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)

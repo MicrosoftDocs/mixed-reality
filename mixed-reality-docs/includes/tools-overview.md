@@ -9,7 +9,7 @@ We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lt
 ## Mixed Reality Toolkit (MRTK)
 ![MRTK](../images/UX/MRTK_UX_Hero.png)
 
-[Mixed Reality Toolkit](mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
+[Mixed Reality Toolkit](../mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
 
 :::row:::
     :::column:::
@@ -160,16 +160,15 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 * [Unreal development overview](../unreal-development-overview.md)
 * [HoloLens emulator archive](../hololens-emulator-archive.md)
 
-
 ---
 
 # [Native](#tab/native)
 
  ![Native app development](../images/native_logo_banner.png)
 
-
-        <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">**Native (WinRT)**</a><br>
-        The <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">Windows Mixed Reality native app templates</a> provide all of the essentials you need to start writing a mixed reality app using DirectX with native APIs. Includes a rendering loop (or "game loop"), a DeviceResources helper class to manage the Direct3D device and context, and a simple example hologram renderer. Available for Direct3D11 and Direct3D 12.<br>
+ <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">**Native (WinRT)**</a><br>
+        
+The <a href="https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX" target="_blank">Windows Mixed Reality native app templates</a> provide all of the essentials you need to start writing a mixed reality app using DirectX with native APIs. Includes a rendering loop (or "game loop"), a DeviceResources helper class to manage the Direct3D device and context, and a simple example hologram renderer. Available for Direct3D11 and Direct3D 12.<br>
 
 
 ### [DirectX UWP app templates for mixed reality](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
