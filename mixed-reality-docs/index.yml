@@ -55,7 +55,7 @@ productDirectory:
     # Card
     - title: Design
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: images/Tile-Create.jpg
+      imageSrc: images/icon-design.jpg
       links:
         - url: design.md
           text: Design and prototype
@@ -69,7 +69,7 @@ productDirectory:
           text: Understand interaction fundamentals
     # Card
     - title: Develop
-      imageSrc: images/Tile-Develop.jpg
+      imageSrc: images/icon-developer.jpg
       links:
         - url: development.md
           text: Choose your development environment
@@ -85,7 +85,7 @@ productDirectory:
           text: Distribute your apps
     # Card
     - title: Distribute
-      imageSrc: images/Tile-New.jpg
+      imageSrc: images/icon-calendar.jpg
       links:
         - url: 3d-app-launcher-design-guidance.md
           text: Designing a 3D app launcher
