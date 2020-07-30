@@ -83,8 +83,6 @@ The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in th
 
 The JavaScript and WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [Javascript development overview](../javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
 
-## Available tools and SDKs 
-
 
 # [Native](#tab/native)
 
