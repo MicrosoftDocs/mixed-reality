@@ -1565,12 +1565,10 @@ int main(int argc, _In_reads_(argc) char** ppArgv)
 ```
 
 ## Support
-<!-- TODO: Add sample from Dorin -->
-For Research Mode support in public preview, please utilize the following samples.
 
-## Known issues
-
-You can use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository to follow known issues.
+Please post feedback and track known issues based on your device:
+* For **HoloLens (1st Gen)**, use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository
+* For **HoloLens 2**, use the issue tracker in the < @Dorin Ungureanu > repository
 
 ## See also
 
