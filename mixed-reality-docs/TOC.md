@@ -102,7 +102,7 @@
 
 <!-- Develop top level folder -->
 # Develop
-## [Learn the tools and architecture](development.md)
+## [Introduction to Mixed Reality development](development.md)
 ## [Install the tools](install-the-tools.md)
 ## [Cloud services overview](mixed-reality-cloud-services.md)
 

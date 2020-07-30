@@ -10,7 +10,7 @@ ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx
 ---
 
-# Learn the tools and architecture
+# Introduction to Mixed Reality development
 
 ![Abstract 3D sphere](images/07_Development.png)
 
@@ -23,6 +23,8 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 ---
 
 ## What technology path are you interested in? 
+
+There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to its tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
 
 # [Unity](#tab/unity)
 
