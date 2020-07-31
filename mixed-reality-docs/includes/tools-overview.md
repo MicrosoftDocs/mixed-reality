@@ -73,7 +73,7 @@ If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR
 
  ![Native app development](../images/native_logo_banner.png)
 
-Native OpenXR development doesn't have an engine for you to download. You can find everything you need to begin development in the [Getting started with OpenXR](openxr-getting-started.md) document.
+Native OpenXR development doesn't have an engine for you to download. You can find everything you need to begin development in the [Getting started with OpenXR](../openxr-getting-started.md) document.
 
 ## Setting up your PC for mixed reality development
 

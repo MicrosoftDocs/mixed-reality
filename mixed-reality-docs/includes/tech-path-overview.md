@@ -117,9 +117,9 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 |  Tool/SDK  |  Description  |
 | --- | --- |
-| [OpenXR Developer Tools](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Provides a demo scene that exercises various features of OpenXR, along with a System Status page that provides key information about the active runtime and the current headset. |
+| [OpenXR Developer Tools](../openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Provides a demo scene that exercises various features of OpenXR, along with a System Status page that provides key information about the active runtime and the current headset. |
 | [OpenXR Spec](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) |  Describes what OpenXR is, what capabilities and features it offers, and how to implement it into your own projects. |
-| [OpenXR Loader](openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements. |
+| [OpenXR Loader](../openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements. |
 
 ## Examples
 
