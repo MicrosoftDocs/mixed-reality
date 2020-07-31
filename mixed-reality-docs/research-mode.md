@@ -80,15 +80,13 @@ Be aware that enabling research mode uses more battery power than using the Holo
     </tr>
 </table>
 
-## Enabling Research Mode
+## Enabling Research Mode (HoloLens 1st Gen and HoloLens 2)
 
 Research mode is an extension of Developer Mode. Before starting, the developer features of the device need to be enabled to access the research mode settings: 
 
 * Open **Start Menu > Settings** and select **Updates**.
 * Select **For Developers** and enable **Developer Mode**.
 * Scroll down and enable **Device Portal**.
-
-## HoloLens (1st Gen)
 
 After the developer features  are enabled, [connect to the device portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) to enable the research mode features:
 
@@ -113,10 +111,6 @@ You can find sample applications on how to access the various Research mode stre
  > [!NOTE]
  > At this time, the HoloLensForCV sample doesn't work on HoloLens 2.
 
-## HoloLens 2
-
-<!-- TODO: Add enable and implementation for HL2 -->
-
 ## Support
 
 <!-- TODO: Add issue tracker repo for HL2 -->
@@ -126,7 +120,6 @@ Please post feedback and track known issues based on your device:
 
 ## See also
 
-<!-- TODO: Any additional links for HL2? -->
 * [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
 * [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV)
 * [Using the Windows Device Portal](using-the-windows-device-portal.md)
