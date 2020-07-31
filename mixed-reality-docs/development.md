@@ -14,7 +14,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx
 
 ![Abstract 3D sphere](images/07_Development.png)
 
-Mixed Reality is a big place, a nexus where real and virtual worlds collide with a bang. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
+Mixed Reality is a big place, a nexus where real and virtual worlds collide to form deeply immersive experiences. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
 
 ## What technology path are you interested in? 
 
