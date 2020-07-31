@@ -217,7 +217,7 @@ tools:
 # Card with links style
 additionalContent:
   sections:
-    - title: Enterprise Deployment, Cloud Services, and sample apps # < 60 chars (optional)
+    - title: Additional resources # < 60 chars (optional)
       summary: Get your applications ready for commercial deployment, integrate Azure Cloud Services, or test out our sample applications.   # < 160 chars (optional)
       items:
         # Card
