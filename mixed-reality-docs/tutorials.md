@@ -1,22 +1,22 @@
 ---
 layout: LandingPage
-title: Tutorials and sample apps
-description: Provides code samples and tutorials on mixed reality development.
+title: Tutorials 
+description: Provides tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/2019
+ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---
 
-# Tutorials and sample apps
+# Tutorials 
 
 ![HoloLens 2 user](images/08_Tutorials.png)
 
 Currently, all of our tutorials and sample apps are Unity or Unreal based. As we develop content for other engines and platforms, you will find them under the relevant heading in the Table of Contents.
 
-## HoloLens 2 tutorials
+## HoloLens 2 
 
 The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications. The Unity tutorials are based on the [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), and the Unreal tutorial is based on the [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
@@ -27,21 +27,7 @@ The HoloLens 2 tutorials are designed to help developers learn both techniques a
 * Multi-user capabilities tutorials - [1 of 5 Introduction](mr-learning-sharing-01.md)
 * Azure Speech Services tutorials - [1 of 4 Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
 
-## Open source sample apps
-
-The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects.
-
-### HoloLens 2 open source sample apps
-* [Surfaces](sampleapp-surfaces.md)
-* [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
-* [Galaxy Explorer 2.0](galaxy-explorer-update.md)
-
-### HoloLens (1st gen) open source sample apps
-* [Periodic Table of the Elements 1.0](periodic-table-of-the-elements.md)
-* [Galaxy Explorer 1.0](galaxy-explorer.md)
-* [Lunar Module](lunar-module.md)
-
-## Mixed Reality Academy tutorials
+## Mixed Reality Academy 
 
 The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files:
 

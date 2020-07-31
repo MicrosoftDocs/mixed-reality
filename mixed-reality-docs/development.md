@@ -4,134 +4,33 @@ title: Learn the tools and architecture
 description: Mixed reality developer documentation for HoloLens and immersive headsets.
 author: grbury
 ms.author: grbury
-ms.date: 04/27/2020
+ms.date: 07/31/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx
 ---
 
-# Learn the tools and architecture
+# Introduction to Mixed Reality development
 
-![Abstract 3D sphere](images/07_Development.png)
+![Abstract 3D sphere](images/development-hero-image.png)
 
-## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-
-As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design. [Read more](case-study-expanding-the-design-process-for-mixed-reality.md)
-
-
-<br>
-
----
-
+Mixed Reality is a big place, a nexus where real and virtual worlds collide with a bang. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
 
 ## What technology path are you interested in? 
 
+There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to the respective tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
 
-:::row:::	
-    :::column:::	
-       [![Unity](images/unity_logo.png)](development.md#unity)<br>
-        **[Unity](development.md#unity)**<br>	
-        Build a cross-platform, full-featured mixed reality app with Unity.
-    :::column-end:::	
-    :::column:::	
-        [![Unreal](images/Unreal_logo.png)](development.md#unreal)<br>
-        **[Unreal](development.md#unreal)**<br>	
-        Create beautiful mixed reality experiences with production-ready support in Unreal Engine. 
-    :::column-end:::
-    :::column:::	
-        [![JavaScript](images/web-logo.png)](development.md#javascript)<br>
-        **[JavaScript](development.md#javascript)**<br>
-        JavaScript and WebXR Device API is an open specification that makes it possible to experience Mixed Reality in your browser in any platform.	
-    :::column-end:::		
-    :::column:::	
-        [![Native](images/VisualStudio-small_logo.png)](development.md#native)<br>
-        **[Native](development.md#native)**<br>	
-        Create mixed reality apps by directly coding to the Windows Mixed Reality APIs.	
-    :::column-end:::	
-:::row-end:::
+[!INCLUDE[](~/includes/tech-path-overview.md)]
 
-<br>
+## What's next?
 
----
+Now that you have a technology path in mind, let's equip you with the tools you need to start your journey.
 
-## Unity
+> [!div class="nextstepaction"]
+> [Install the tools](install-the-tools.md)
 
-
-### [Unity development overview](unity-development-overview.md)
-We recommend that you take time to explore the Unity tutorials. If you need assets, Unity has a comprehensive Asset Store. 
-
-<br>
-
-### [Microsoft’s Mixed Reality Toolkit (MRTK) for Unity](mrtk-getting-started.md)
-The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform.
-
-<br>
-
-### [Open source sample apps and step-by-step tutorials](tutorials.md)
-The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications. The tutorials are based on the Mixed Reality Toolkit 2.0 (MRTK 2.0).
-
-<br>
-
-### [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor)
-The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
->[!NOTE]
->Requires the install of MRTK Foundation and Example Unity packages.
-
-### [Eye tracking examples (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html)
-This page covers how to get quickly started with using eye tracking in MRTK by building on our provided MRTK eye tracking examples.
->[!NOTE]
->Requires the install of MRTK Foundation and Example Unity packages.
-
-<br>
-
----
-
-## Unreal
-
-### [Unreal development overview](unreal-development-overview.md)
-Learn how to build a mixed reality app using Unreal.
-
-<br>
-
-### [Microsoft’s Mixed Reality Toolkit (MRTK) for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal)
-The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine.
-
-<br>
-
-### [Open source sample apps and a step-by-step tutorial](unreal-uxt-ch1.md)
-The tutorial for getting started with mixed reality development in Unreal walks developers through the end-to-end process of creating a HoloLens 2 app using the [UX Tools for Unreal v0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
-
-<br>
-
----
-
-## JavaScript	
-
-### [JavaScript development overview](javascript-development-overview.md)	
-Learn how to build a mixed reality app using JavaScript for any platform.
-
-<br>
-
----
-
-## Native
-
-
-### [Native development overview](directx-development-overview.md)
-The fastest path to building a native mixed reality app.
-
-<br>
-
-### [DirectX UWP app templates for mixed reality](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)
-All of the essentials you need to start writing a mixed reality app using DirectX.
-
-<br>
-
----
-
-
+<!-- 
 ## What would you like to do next?
-
 
 :::row:::
     :::column:::
@@ -155,8 +54,5 @@ All of the essentials you need to start writing a mixed reality app using Direct
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
 :::row-end:::
+-->
 
-
-<br>
-
-<br>
