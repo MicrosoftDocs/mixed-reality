@@ -43,7 +43,7 @@ For the best possible Microsoft Edge experience in the mixed reality home, we al
 
 ### Monitor and input handling issues
 
-During Windows Mixed Reality sessions, after taking the 2020-01 Cumulative update for Windows 10 Version 1903 (or later), virtual monitors will appear as generic physical monitors in Settings > System > Display. Some customers, especially those with more than one physical monitor, may notice issues with desktop layout and input handling as a result.
+After taking the 2020-01 Cumulative update for Windows 10 Version 1903 (or later), virtual monitors will appear as generic physical monitors in **Settings > System > Display** during Windows Mixed Reality sessions. Some customers, especially those with more than one physical monitor, may notice issues with desktop layout and input handling as a result.
 
 **Why this happens**
 
@@ -51,7 +51,7 @@ Support for classic Win32 applications in Windows Mixed Reality was introduced w
 
 **Workaround**
 
-We've since received feedback that some customers, especially those with multiple physical monitors, would prefer to disable this virtual monitor pre-allocation. To give customers control and choice, we've enabled a workaround that involves changing a registry key value.
+We've since received feedback that some customers, especially those with multiple physical monitors, would prefer to disable this virtual monitor pre-allocation. To give customers control and choice, we've enabled a workaround that involves changing a registry key value (available with the 2020-07 Cumulative Update for Windows 10 Version 2004).
 
 >[!NOTE]
 >Modifying registry key values is intended for advanced users.
@@ -60,9 +60,10 @@ We've since received feedback that some customers, especially those with multipl
 >Disabling virtual monitor pre-allocation may result in your headset display briefly freezing when you launch a Win32 application (such as Steam, the new Microsoft Edge, or Google Chrome) in Windows Mixed Reality.
 
 To disable virtual monitor pre-allocation:
-1. Launch Registry Editor
-2. Navigate to HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\PreallocateVirtualMonitors
-3. Change the DWORD value from 1 (its default value) to 0 (zero)
+1. Check **Windows Update** for the 2020-07 Cumulative Update for Windows 10 Version 2004 and install the update when available.
+2. Launch **Registry Editor**.
+3. Navigate to HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\PreallocateVirtualMonitors
+4. Change the DWORD value from 1 (its default value) to 0 (zero)
     * TRUE - 1
     * FALSE - 0
 
