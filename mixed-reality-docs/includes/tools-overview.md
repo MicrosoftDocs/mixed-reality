@@ -2,6 +2,8 @@
 
 ![Unity](../images/unity_logo_banner.png)<br>
 
+## Version
+
 We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes. 
 * The current recommendation is to use **Unity 2019**, which is the LTS build required for MRTK v2 below.
 * If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
@@ -71,17 +73,14 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 </tr>
 </table>
 
-## See also
-
-* [Development overview](../development.md)
-* [Using the HoloLens emulator](../using-the-hololens-emulator.md)
-* [Using the Windows Mixed Reality simulator](../using-the-windows-mixed-reality-simulator.md)
-* [Unity development overview](../unity-development-overview.md)
-* [HoloLens emulator archive](../hololens-emulator-archive.md)
+> [!div class="nextstepaction"]
+> [Explore MRTK-Unity >>>](unity-development-overview.md)
 
 # [Unreal](#tab/unreal)
 
 ![Unreal](../images/unreal_logo_banner.png)
+
+
 
 We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
 
@@ -149,13 +148,8 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 </tr>
 </table>
 
-## See also
-
-* [Development overview](../development.md)
-* [Using the HoloLens emulator](../using-the-hololens-emulator.md)
-* [Using the Windows Mixed Reality simulator](../using-the-windows-mixed-reality-simulator.md)
-* [Unreal development overview](../unreal-development-overview.md)
-* [HoloLens emulator archive](../hololens-emulator-archive.md)
+> [!div class="nextstepaction"]
+> [Explore MRTK-Unity >>>](unreal-development-overview.md)
 
 # [Native](#tab/native)
 
@@ -223,10 +217,5 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 </tr>
 </table>
 
-## See also
-
-* [Development overview](../development.md)
-* [Using the HoloLens emulator](../using-the-hololens-emulator.md)
-* [Using the Windows Mixed Reality simulator](../using-the-windows-mixed-reality-simulator.md)
-* [Native development overview](../directx-development-overview.md)
-* [HoloLens emulator archive](../hololens-emulator-archive.md)
+> [!div class="nextstepaction"]
+> [Explore MRTK-Unity >>>](directx-development-overview.md)

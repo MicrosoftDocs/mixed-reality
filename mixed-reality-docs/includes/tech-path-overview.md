@@ -28,8 +28,9 @@ You have several hardware and emulator options when building Mixed Reality apps 
 
 ## Available tools and SDKs
 
-### [Microsoft’s Mixed Reality Toolkit (MRTK) for Unity](../mrtk-getting-started.md)
-The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform.
+|  Tool/SDK  |  Description  |
+| --- | --- |
+| [Mixed Reality Toolkit for Unity](../mrtk-getting-started.md) | The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications, built to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. |
 
 ## Examples
 
@@ -73,8 +74,9 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 ## Available tools and SDKs
 
-### [Microsoft’s Mixed Reality Toolkit (MRTK) for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal)
-The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine.
+|  Tool/SDK  |  Description  |
+| --- | --- |
+| [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine. |
 
 
 # [Javscript](#tab/javascript)

@@ -28,7 +28,10 @@ There are several development paths you can take through our documentation. The 
 
 [!INCLUDE[](~/includes/tech-path-overview.md)]
 
+> [!div class="nextstepaction"]
+> [Explore MRTK-Unity >>>](install-the-tools.md)
 
+<!-- 
 ## What would you like to do next?
 
 :::row:::
@@ -53,4 +56,5 @@ There are several development paths you can take through our documentation. The 
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
 :::row-end:::
+-->
 
