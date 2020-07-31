@@ -31,21 +31,21 @@ highlightedContent:
       itemType: overview
       url: https://docs.microsoft.com/hololens/hololens2-hardware
     # Card
-    - title: Immersive headsets
-      itemType: overview
-      url: https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details
-    # Card
-    - title: Start developing
-      itemType: overview
-      url: development.md
-    # Card
-    - title: Enterprise deployment
-      itemType: concept
-      url: https://docs.microsoft.com/hololens/hololens-requirements
-    # Card
     - title: Try some sample apps
       itemType: sample
       url: https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab
+    # Card
+    - title: Developers
+      itemType: overview
+      url: development.md
+    # Card
+    - title: IT admins
+      itemType: concept
+      url: https://docs.microsoft.com/hololens/hololens-requirements
+    # Card
+    - title: VR enthusiasts
+      itemType: overview
+      url: https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details
 
 # productDirectory section (optional)
 productDirectory:
