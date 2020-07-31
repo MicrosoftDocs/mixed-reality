@@ -121,15 +121,15 @@ conceptualContent:
         - url: mr-learning-base-01.md
           itemType: tutorial
           text: HoloLens 2 tutorial series
-        - url: unity-development-overview.md
+        - url: mrtk-101.md
           itemType: concept
           text: Core building blocks
-        - url: unity-development-overview.md
+        - url: shared-experiences-in-unity.md
           itemType: concept
           text: Platform capabilities and APIs
-        - url: unity-development-overview.md
+        - url: exporting-and-building-a-unity-visual-studio-solution.md
           itemType: deploy
-          text: Deployment overview
+          text: Deploying to device or emulator
       # footerLink (optional)
       footerLink:
         url: unity-development-overview.md
@@ -148,15 +148,15 @@ conceptualContent:
         - url: unreal-gaze-input.md
           itemType: concept
           text: Core building blocks
-        - url: unreal-deploying.md
-          itemType: deploy
-          text: Deploying to device
         - url: unreal-hololens-camera.md
           itemType: concept
           text: Platform capabilities and APIs
         - url: performance-recommendations-for-unreal.md
           itemType: concept
           text: Performance recommendations
+        - url: unreal-deploying.md
+          itemType: deploy
+          text: Deploying to device or emulator
       # footerLink (optional)
       footerLink:
         url: unreal-development-overview.md
@@ -206,11 +206,11 @@ tools:
       url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
     # Card
     - title: OpenXR Specifications 
-      imageSrc: images/Final_mrdl_logo.png.
+      imageSrc: images/Final_mrdl_logo.png
       url: https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html
     # Card
     - title: OpenXR API 
-      imageSrc: images/Final_mrdl_logo.png.
+      imageSrc: images/Final_mrdl_logo.png
       url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
 
 # additionalContent section (optional)
