@@ -3,7 +3,7 @@ title: Windows Mixed Reality and the new Microsoft Edge
 description: Get ready for the new Microsoft Edge in Windows Mixed Reality. Includes changes to expect, updates to look out for, and known issues.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 01/15/2020
+ms.date: 07/31/2020
 ms.topic: article
 keywords: edge, new, immersive web, microsoft edge, browser, vr
 ---
@@ -41,13 +41,41 @@ For the best possible Microsoft Edge experience in the mixed reality home, we al
 - The WebVR Showcase app is present in the mixed reality home, despite WebVR no longer being supported.
 - General improvements to keyboard launch and visuals.
 
+### Monitor and input handling issues
+
+After taking the 2020-01 Cumulative update for Windows 10 Version 1903 (or later), virtual monitors will appear as generic physical monitors in **Settings > System > Display** during Windows Mixed Reality sessions. Some customers, especially those with more than one physical monitor, may notice issues with desktop layout and input handling as a result.
+
+**Why this happens**
+
+Support for classic Win32 applications in Windows Mixed Reality was introduced with the [Windows 10 May 2019 Update](#release-notes-may-2019.md). To enable this support, a virtual monitor must be created to host the Win32 application. Each time a new Win32 application is launched, another virtual monitor has to be created. Unfortunately, creating a virtual monitor is an intensive task that can cause the headset display to briefly freeze. Customers offered feedback that this was an uncomfortable and disruptive experience. Because of that feedback, alongside increased usage of Win32 applications, we made the decision to pre-allocate three virtual monitors during startup of Windows Mixed Reality to prevent this disruption and enable customers to launch up to three concurrent Win32 applications without experiencing the headset display freeze.
+
+**Workaround**
+
+We've since received feedback that some customers, especially those with multiple physical monitors, would prefer to disable this virtual monitor pre-allocation. To give customers control and choice, we've enabled a workaround that involves changing a registry key value (available with the 2020-07 Cumulative Update for Windows 10 Version 2004).
+
+>[!NOTE]
+>Modifying registry key values is intended for advanced users.
+
+>[!WARNING]
+>Disabling virtual monitor pre-allocation may result in your headset display briefly freezing when you launch a Win32 application (such as Steam, the new Microsoft Edge, or Google Chrome) in Windows Mixed Reality.
+
+To disable virtual monitor pre-allocation:
+1. Check **Windows Update** for the 2020-07 Cumulative Update for Windows 10 Version 2004 and install the update when available.
+2. Launch **Registry Editor**.
+3. Navigate to HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\PreallocateVirtualMonitors
+4. Change the DWORD value from 1 (its default value) to 0 (zero)
+    * TRUE - 1
+    * FALSE - 0
+
+Virtual monitors will now allocate when you attempt to launch a Win32 application in Windows Mixed Reality instead of pre-allocating. To reset this and re-enable virtual monitor pre-allocation, return the DWORD value to 1.
+
 ### Additional known issues
 
 -	Websites open in Windows Mixed Reality will be lost when Mixed Reality Portal closes, though the Microsoft Edge windows will remain where they were placed in the mixed reality home.
 - WebXR experiences, including the 360 Viewer extension, may not launch correctly on PCs with a Hybrid GPU setup. You may be able to work around this issue by selecting your dedicated GPU as the default GPU in your graphics card software.
 -	Audio from Microsoft Edge windows is not spatialized.
 -	**Fixed in 360 Viewer extension version 2.3.8**: Opening a 360 video from YouTube in Windows Mixed Reality may result in the video being distorted in the headset. Restarting Edge should invisibly update the 360 Viewer extension to resolve this issue. You can confirm which version of the extension you have by entering `edge://system/` in the address bar and selecting the **Expand** button next to "extensions."
--	During Windows Mixed Reality sessions, virtual monitors will appear as generic physical monitors in Settings > System > Display.
+
 
 
 

@@ -3,7 +3,7 @@ title: Get started with Mixed Reality
 description: To help someone new to mixed reality learn what it is and understand its capabilities.
 author: grbury
 ms.author: grbury
-ms.date: 08/24/2019
+ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
