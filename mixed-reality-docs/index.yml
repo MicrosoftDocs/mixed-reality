@@ -216,31 +216,9 @@ tools:
 # additionalContent section (optional)
 # Card with links style
 additionalContent:
-  # Supports up to 3 sections
   sections:
-    - title: Learn modules and samples # < 60 chars (optional)
-      summary: Follow along with learning resources and sample applications.   # < 160 chars (optional)
-      items:
-        # Card
-        - title: Learn modules
-          links:
-            - text: MRTK TBD
-              url: mr-learning-overview.md
-            - text: Azure Cognitive Services TBD 
-              url: https://docs.microsoft.com/hololens/hololens-identity
-            - text: Azure Spatial Anchors TBD 
-              url: https://docs.microsoft.com/hololens/hololens-enroll-mdmk
-        # Card
-        - title: HoloLens 2 Sample apps
-          links:
-            - text: Surfaces
-              url: sampleapp-surfaces.md
-            - text: Periodic Table of Elements 2.0
-              url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
-            - text: Galaxy Explorer 2.0 
-              url: galaxy-explorer-update.md
-    - title: Enterprise Deployment and Cloud Services # < 60 chars (optional)
-      summary: Get your applications ready for commercial deployment or integrate Azure Cloud Services.   # < 160 chars (optional)
+    - title: Enterprise Deployment, Cloud Services, and sample apps # < 60 chars (optional)
+      summary: Get your applications ready for commercial deployment, integrate Azure Cloud Services, or test out our sample applications.   # < 160 chars (optional)
       items:
         # Card
         - title: Enterprise Deployment for HoloLens
@@ -270,6 +248,15 @@ additionalContent:
               url: https://docs.microsoft.com/azure/remote-rendering/
             - text: Azure Remote Rendering Tutorials
               url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
+        # Card
+        - title: HoloLens 2 Sample apps
+          links:
+            - text: Surfaces
+              url: sampleapp-surfaces.md
+            - text: Periodic Table of Elements 2.0
+              url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
+            - text: Galaxy Explorer 2.0 
+              url: galaxy-explorer-update.md
 
         # Card
         #- title: Porting guides
@@ -287,6 +274,18 @@ additionalContent:
             
 
 
-      
-      
+      # Supports up to 3 sections
+  #sections:
+    #- title: Learn modules and samples # < 60 chars (optional)
+     # summary: Follow along with learning resources and sample applications.   # < 160 chars (optional)
+      #items:
+        # Card
+       # - title: Learn modules
+       #   links:
+       #     - text: MRTK TBD
+        #      url: mr-learning-overview.md
+         #   - text: Azure Cognitive Services TBD 
+         #     url: https://docs.microsoft.com/hololens/hololens-identity
+          #  - text: Azure Spatial Anchors TBD 
+          #    url: https://docs.microsoft.com/hololens/hololens-enroll-mdmk
 
