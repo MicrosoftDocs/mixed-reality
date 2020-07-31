@@ -13,8 +13,8 @@ Unity is one of the leading real-time development platforms on the market, boast
 You have several hardware and emulator options when building Mixed Reality apps with Unity. While our developer documentation focuses on HoloLens devices, you'll find device support sections with details on immersive headset deployment when applicable.
 
 **Augmented reality devices**
-* [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens2-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens1-hardware)
+* [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens1-hardware)
+* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2
@@ -59,8 +59,8 @@ Unreal Engine 4 is a powerful, open source creation engine with full support for
 You have several hardware, emulator, and streaming options when building Mixed Reality apps with Unreal Engine. While our developer documentation focuses on HoloLens devices, you can package your Unreal projects as x64 desktop apps and run them on immersive headsets just fine.
 
 **Augmented reality devices**
-* [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens2-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens1-hardware)
+* [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens1-hardware)
+* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2
@@ -101,7 +101,7 @@ OpenXR is an open royalty-free API standard from Khronos that provides engines n
 You have several hardware, emulator, and streaming options when building Mixed Reality apps with OpenXR development. 
 
 **Augmented reality devices**
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens1-hardware)
+* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2
