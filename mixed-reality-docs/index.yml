@@ -63,12 +63,12 @@ productDirectory:
           text: Choose your type of Mixed Reality app
         - url: case-study-expanding-the-design-process-for-mixed-reality.md
           text: Expand your design process
+        - url: app-patterns-landingpage.md
+          text: Learn about UX elements
         - url: comfort.md
           text: Learn about user comfort
         - url: interaction-fundamentals.md
           text: Understand interaction fundamentals
-        - url: app-patterns-landingpage.md
-          text: Integrate common UX elements
     # Card
     - title: Develop
       imageSrc: images/icon-developer.jpg
@@ -189,7 +189,7 @@ conceptualContent:
 # tools section (optional)
 tools:
   title: SDKs and APIs # < 60 chars (optional)
-  summary: Get started with the Mixed Reality Toolkit SDK in your favorite game engine. # < 160 chars (optional)
+  summary: Get started with the Mixed Reality Toolkit SDK in your favorite game engine. (external sites) # < 160 chars (optional)
   items:
     # Card
     - title: MRTK for Unity
