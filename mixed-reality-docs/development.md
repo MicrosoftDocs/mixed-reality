@@ -24,11 +24,13 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 
 ## What technology path are you interested in? 
 
-There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to its tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
+There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to the respective tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
 
 [!INCLUDE[](~/includes/tech-path-overview.md)]
 
 ## What's next?
+
+Now that you have a technology path in mind, let's equip you with the tools you need to start your journey.
 
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)

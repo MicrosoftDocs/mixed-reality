@@ -34,6 +34,8 @@ We recommend installing the Unity game engine as the easiest way to get started 
 
 ## Choose your engine
 
+Now that you have your Windows 10, Visual Studio, and Windows 10 SDK ready to go, let's choose an engine to build on. 
+
 [!INCLUDE[](~/includes/tools-overview.md)]
 
 ## Immersive (VR) headset requirements
