@@ -67,6 +67,8 @@ productDirectory:
           text: Learn about user comfort
         - url: interaction-fundamentals.md
           text: Understand interaction fundamentals
+        - url: app-patterns-landingpage.md
+          text: Integrate common UX elements
     # Card
     - title: Develop
       imageSrc: images/icon-developer.jpg
@@ -264,23 +266,23 @@ tools:
     # Card
     - title: MRTK for Unity
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: images/MRTK_Badge_Unity.png
+      imageSrc: images/Final_mrtk-small_logo.png
       url: https://github.com/microsoft/MixedRealityToolkit-Unity
     # Card
     - title: MRTK for Unreal 
-      imageSrc: images/MRTK_Badge_Unreal.png
+      imageSrc: images/Final_mrtk-small_logo.png
       url: https://github.com/microsoft/MixedRealityToolkit-Unreal
     # Card
     - title: Windows XR Plugin for Unity 
-      imageSrc: images/MRTK_Badge_Unreal.png
+      imageSrc: images/Final_unity_logo.png
       url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
     # Card
     - title: OpenXR Specifications 
-      imageSrc: images/MRTK_Badge_Unreal.png
+      imageSrc: images/Final_mrdl_logo.png.png
       url: https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html
     # Card
     - title: OpenXR API 
-      imageSrc: images/MRTK_Badge_Unreal.png
+      imageSrc: images/Final_mrdl_logo.png.png
       url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
 
 
