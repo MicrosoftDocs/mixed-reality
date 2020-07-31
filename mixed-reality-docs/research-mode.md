@@ -99,6 +99,9 @@ Once you've restarted the device, the applications loaded through the **Device P
 ![Research Mode tab of HoloLens Device Portal](images/ResearchModeDevPortal.png)<br>
 *Research mode window in the HoloLens Device Portal*
 
+> [!IMPORTANT]
+> Research Mode for HoloLens 2 is available beginning with build 19041.1356. If you need access in an earlier build, sign up for our [Insider Preview](https://docs.microsoft.com/hololens/hololens-insider) program.
+
 ### Using sensor data in your apps
 
 Applications can access the sensor stream data in the same way that photo and video camera streams are accessed through [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197). 
@@ -107,16 +110,12 @@ All APIs that work for HoloLens development are also available in Research mode.
 
 You can find sample applications on how to access the various Research mode streams, how to use the [intrinsics and extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), and how to record streams in the [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV) repo.
 
-<!-- TODO: Does the HoloLensForVC sample work on HL2 now? -->
  > [!NOTE]
  > At this time, the HoloLensForCV sample doesn't work on HoloLens 2.
 
 ## Support
 
-<!-- TODO: Add issue tracker repo for HL2 -->
-Please post feedback and track known issues based on your device:
-* For **HoloLens (1st Gen)**, use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository
-* For **HoloLens 2**, use the issue tracker in the < @Dorin Ungureanu > repository
+Please use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository to post feedback and track known issues.
 
 ## See also
 
