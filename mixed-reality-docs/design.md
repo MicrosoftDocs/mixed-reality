@@ -13,7 +13,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 # Start designing and prototyping
 
 
-![mixed reality design abstract](images/03_Design.png)
+![mixed reality design abstract](images/design-hero-image.png)
 
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
