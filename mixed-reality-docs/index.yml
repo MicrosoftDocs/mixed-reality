@@ -83,7 +83,7 @@ productDirectory:
           text: Get started with Unreal
         - url: directx-development-overview.md
           text: Get started with Native
-        - url: mrtk-porting-guide.md.md
+        - url: mrtk-porting-guide.md
           text: Get your app ready for HoloLens 2
     # Card
     - title: Distribute
