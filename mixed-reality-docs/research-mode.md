@@ -374,20 +374,101 @@ IMU sensors
 
 <!-- TODO: Is this the right place for this content? -->
 ### User Consent Prompts
-Any UWP application using Research Mode API for accessing cameras or IMUs must request for user consent before opening the streams. Depending on the user input the app should further proceed. Below is example code describing a scenario in SensorVisualization app that accesses cameras. The highlighted code is the code newly added to implement consents in a UWP app. 
+Any UWP application using Research Mode API for accessing cameras or IMUs must request for user consent before opening the streams. The app will then proceed depending on the user input.  
 
-You can see the entire change for all the scenarios of the app [here](https://microsoft.visualstudio.com/DefaultCollection/Analog/_git/mixedreality.researchmode/pullrequest/4842004?path=%2FCameraWithCVAndCalibration%2FCameraWithCVAndCalibration%2FContent%2FSlateCameraRenderer.cpp&_a=files). When enabling user consent for the camera and IMU access, please make sure to declare the following capabilities in the app manifest:
+To add consent prompt to a UWP app:
+1.  Enable user consent for the camera and IMU access by declaring the following capabilities to the app manifest:
 
-* <DeviceCapability Name="webcam" />
-* <DeviceCapability Name="backgroundSpatialPerception"/>
+```
+<DeviceCapability Name="webcam" />
+<DeviceCapability Name="backgroundSpatialPerception"/>
+```
+
+2. Query for a new **SensorDeviceConsent** interface that implements the consent checks in the Research Mode API:
+
+```cpp
+hr = m_pSensorDevice->QueryInterface(IID_PPV_ARGS(&m_pSensorDeviceConsent));
+```
+
+3. Define the required consent and event that has to be set when the consent is given:
+
+```cpp
+ResearchModeSensorConsent camAccessCheck;
+HANDLE camConsentGiven;
+
+camConsenGiven = CreateEvent(nullptr, true, false, nullptr);
+```
+
+4. If the query succeeds, register for camera and/or IMU consent callback from the main UI thread of the app:
+
+```cpp
+hr = m_pSensorDeviceConsent->RequestCamAccessAsync(CamAccessOnComplete);
+```
+
+5. Define the callback functions where the user consent will be captured and an event created for this action is set:
+
+```cpp
+void CamAccessOnComplete(ResearchModeConsent consent)
+{
+    camAccessCheck = consent;
+    SetEvent(camConsentGiven);
+}
+```
+
+6. Wait on a worker thread to check if the event is set and if it is, look for the consent provided by the user and proceed forward:
+
+```cpp
+void CameraUpdateThread(SlateCameraRenderer* pSlateCameraRenderer, HANDLE camConsentGiven, ResearchModeSensorConsent *camAccessConsent)
+{
+    HRESULT hr = S_OK;
+    DWORD waitResult = WaitForSingleObject(camConsentGiven, INFINITE);  
+
+   // wait for the event to be set and check for the consent provided by the user.
+
+    if (waitResult == WAIT_OBJECT_0)
+    {
+        switch (*camAccessConsent)
+        {
+        case ResearchModeSensorConsent::Allowed:
+            OutputDebugString(L"Access is granted");
+            break;
+        case ResearchModeSensorConsent::DeniedBySystem:
+            OutputDebugString(L"Access is denied by the system");
+            hr = E_ACCESSDENIED;
+            break;
+        case ResearchModeSensorConsent::DeniedByUser:
+            OutputDebugString(L"Access is denied by the user");
+            hr = E_ACCESSDENIED;
+            break;
+        case ResearchModeSensorConsent::NotDeclaredByApp:
+            OutputDebugString(L"Capability is not declared in the app manifest");
+                        hr = E_ACCESSDENIED;
+            break;
+        case ResearchModeSensorConsent::UserPromptRequired:
+            OutputDebugString(L"Capability user prompt required");
+            hr = E_ACCESSDENIED;
+            break;
+        default:
+            OutputDebugString(L"Access is denied by the system");
+            hr = E_ACCESSDENIED;
+            break;
+        }
+    }
+    else
+    {
+        hr = E_UNEXPECTED;
+    }
+
+    if (SUCCEEDED(hr))
+    { 
+         hr = pSlateCameraRenderer->m_pRMCameraSensor->OpenStream();
+    }
+}
+```
 
 For testing if your app correctly implemented the checks, make sure to verify that the prompts appear for camera/IMU or both before the app output appears. Also, the prompts appear only on the first use of the app after a FRESH FLASH for each user. Make sure to go through OOBE as the prompts are dependent on the user. To revoke the access, go to Settings->Privacy->Camera→App and turn the access off for cameras, go to Settings->Privacy→User Movements→App and turn the access off for IMUs.
 
-The code to be added as the following pieces:
-1. Querying for a new SensorDeviceConsent interface that implements these checks in Research Mode API. (if your app uses a local copy of ResearchModeApi.h file, make sure to update that as well. Look in the PR for changes.)
-2.  If the query succeeds, register for camera and/or IMU consent callback from the main UI thread of the app.
-3. Define the callback functions where the user consent will be captured and an event created for this action is set.
-4. Wait on a worker thread to check if the event is set and if it is, look for the consent provided by the user and proceed forward. 
+You can see the entire change for all the scenarios of the app [here](https://microsoft.visualstudio.com/DefaultCollection/Analog/_git/mixedreality.researchmode/pullrequest/4842004?path=%2FCameraWithCVAndCalibration%2FCameraWithCVAndCalibration%2FContent%2FSlateCameraRenderer.cpp&_a=files). 
 
 **SensorVisualizationScenario.h**
 ```cpp
