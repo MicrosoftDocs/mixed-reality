@@ -4,7 +4,7 @@ title: Learn the tools and architecture
 description: Mixed reality developer documentation for HoloLens and immersive headsets.
 author: grbury
 ms.author: grbury
-ms.date: 04/27/2020
+ms.date: 07/31/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx
