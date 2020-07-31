@@ -30,7 +30,7 @@ You have several hardware and emulator options when building Mixed Reality apps 
 
 |  Tool/SDK  |  Description  |
 | --- | --- |
-| [Mixed Reality Toolkit for Unity](../mrtk-getting-started.md) | The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications, built to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. |
+| [Mixed Reality Toolkit for Unity](../mrtk-getting-started.md) | The Mixed Reality Toolkit for Unity is an open source cross-platform development kit built to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. |
 
 ## Examples
 
@@ -79,7 +79,7 @@ You have several hardware, emulator, and streaming options when building Mixed R
 | [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine. |
 
 
-# [Web](#tab/javascript)
+# [Web](#tab/web)
 
 ![Web](../images/javascript_logo_banner.png)
 
@@ -90,15 +90,15 @@ The WebXR Device API is an open specification that allows you to experience Mixe
 
  ![Native](../images/native_logo_banner.png)
 
-Create mixed reality apps by directly coding to the Windows Mixed Reality APIs. See the [Native development overview](../directx-development-overview.md) to get started with native app development using WinRT or OpenXR for HoloLens 2 or Windows Mixed Reality immersive headsets.
+Create mixed reality apps with a direct line to the Windows Mixed Reality APIs. See the [Native development overview](../directx-development-overview.md) to get started with native app development using OpenXR or legacy WinRT for HoloLens 2 or Windows Mixed Reality immersive headsets. The Windows Mixed Reality API supports applications written in C++ and C#, allowing you to build your own framework or middleware in either language.
 
 ## What does OpenXR offer?
 
-OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from many vendors across the mixed reality spectrum. 
+OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop. If you don't have access to a headset, emulators for HoloLens 2 and Windows Mixed Reality headsets are available.
 
 ## Available hardware platforms
 
-You have several hardware, emulator, and streaming options when building Mixed Reality apps with Native development. 
+You have several hardware, emulator, and streaming options when building Mixed Reality apps with OpenXR development. 
 
 **Augmented reality devices**
 * [HoloLens 2](https://docs.microsoft.com/hololens/hololens1-hardware)
@@ -115,10 +115,11 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 ## Available tools and SDKs
 
-<!-- Link these to DMC doc sections -->
-* OpenXR Developer Tools
-* OpenXR Spec
-* OpenXR SDK (header/loader)
+|  Tool/SDK  |  Description  |
+| --- | --- |
+| [OpenXR Developer Tools](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Provides a demo scene that exercises various features of OpenXR, along with a System Status page that provides key information about the active runtime and the current headset. |
+| [OpenXR Spec](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) |  Describes what OpenXR is, what capabilities and features it offers, and how to implement it into your own projects. |
+| [OpenXR Loader](openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements. |
 
 ## Examples
 

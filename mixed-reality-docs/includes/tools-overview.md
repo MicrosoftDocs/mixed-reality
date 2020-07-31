@@ -37,9 +37,9 @@ If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR
 
 # [Unreal](#tab/unreal)
 
-## Version
-
 ![Unreal](../images/unreal_logo_banner.png)
+
+## Version
 
 We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
 
@@ -73,9 +73,7 @@ If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR
 
  ![Native app development](../images/native_logo_banner.png)
 
-
-<!-- Link to the OpenXR getting started page, as there is no real engine to download -->
-
+Native OpenXR development doesn't have an engine for you to download. You can find everything you need to begin development in the [Getting started with OpenXR](openxr-getting-started.md) document.
 
 ## Setting up your PC for mixed reality development
 
@@ -83,9 +81,7 @@ The Windows 10 SDK works best on the Windows 10 operating system. This SDK is al
 
 ### For HoloLens development
 
-<!-- VSCode and Visual Studio requirements -->
-
-If you plan on using the [HoloLens emulator](../using-the-hololens-emulator.md), you'll want to make sure your PC meets the [HoloLens emulator system requirements](../using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
+When setting up your development PC for HoloLens development, please make sure you meet the system requirements for <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. If you plan on using the [HoloLens emulator](../using-the-hololens-emulator.md), you'll want to make sure your PC meets the [HoloLens emulator system requirements](../using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
 
 If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, use the system recommendations and requirements in the section below.
 

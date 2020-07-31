@@ -28,6 +28,8 @@ There are several development paths you can take through our documentation. The 
 
 [!INCLUDE[](~/includes/tech-path-overview.md)]
 
+## What's next?
+
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)
 
