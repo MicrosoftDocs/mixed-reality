@@ -15,7 +15,7 @@ We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lt
 
 :::row:::
     :::column:::
-        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">![Unity](../images/MRTK_Badge_Unity.png)<br>**Mixed Reality Toolkit-Unity (GitHub)**</a><br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">![Unity](../images/MRTK-Unity-Banner.png)<br>**Mixed Reality Toolkit-Unity (GitHub)**</a><br>
     :::column-end:::
 :::row-end:::
 
@@ -93,7 +93,7 @@ Mixed Reality Toolkit (MRTK) is an open-source, cross-platform development kit f
 
 :::row:::
     :::column:::
-        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">![Unity](../images/MRTK_Badge_Unreal.png)<br>**Mixed Reality Toolkit-Unreal (GitHub)**</a><br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">![Unity](../images/MRTK-Unreal-Banner.png)<br>**Mixed Reality Toolkit-Unreal (GitHub)**</a><br>
     :::column-end:::
 :::row-end:::
 
