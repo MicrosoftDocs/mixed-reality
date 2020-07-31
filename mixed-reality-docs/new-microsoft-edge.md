@@ -46,9 +46,11 @@ For the best possible Microsoft Edge experience in the mixed reality home, we al
 During Windows Mixed Reality sessions, after taking the 2020-01 Cumulative update for Windows 10 Version 1903 (or later), virtual monitors will appear as generic physical monitors in Settings > System > Display. Some customers, especially those with more than one physical monitor, may notice issues with desktop layout and input handling as a result.
 
 **Why this happens**
+
 Support for classic Win32 applications in Windows Mixed Reality was introduced with the [Windows 10 May 2019 Update](#release-notes-may-2019.md). To enable this support, a virtual monitor must be created to host the Win32 application. Each time a new Win32 application is launched, another virtual monitor has to be created. Unfortunately, creating a virtual monitor is an intensive task that can cause the headset display to briefly freeze. Customers offered feedback that this was an uncomfortable and disruptive experience. Because of that feedback, alongside increased usage of Win32 applications, we made the decision to pre-allocate three virtual monitors during startup of Windows Mixed Reality to prevent this disruption and enable customers to launch up to three concurrent Win32 applications without experiencing the headset display freeze.
 
 **Workaround**
+
 We've since received feedback that some customers, especially those with multiple physical monitors, would prefer to disable this virtual monitor pre-allocation. To give customers control and choice, we've enabled a workaround that involves changing a registry key value.
 
 >[!NOTE]
