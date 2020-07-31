@@ -2,13 +2,13 @@
 
 ![Unity](../images/unity_logo_banner.png)<br>
 
-## Version
+## 1. Download the latest version
 
 We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes. 
 * The current recommendation is to use **Unity 2019**, which is the LTS build required for MRTK v2 below.
 * If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
 
-## Mixed Reality Toolkit (MRTK)
+## 2. Import Mixed Reality Toolkit (MRTK)
 ![MRTK](../images/UX/MRTK_UX_Hero.png)
 
 [Mixed Reality Toolkit](../mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
@@ -19,13 +19,19 @@ We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lt
     :::column-end:::
 :::row-end:::
 
-### Other tools
+> [!NOTE]
+> If you don't want to use MRTK for Unity, you'll need to script all interactions and behaviors yourself.
+
+### Other tools [optional]
 * <a href="https://github.com/Microsoft/MixedRealityCompanionKit" target="_blank">Mixed Reality Companion Kit (GitHub)</a> - code bits and components that might not run directly on HoloLens or immersive (VR) headsets, but instead pair with them to build experiences targeting Windows Mixed Reality.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit" target="_blank">Mixed Reality Toolkit - Common (GitHub)</a> - a collection of shared scripts and components.
 
-## Setting up your PC for mixed reality development
+## 3. Set up your PC for Mixed Reality development
 
 The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. 
+
+> [!NOTE]
+> You can develop and deploy your apps for HoloLens, VR immersive headsets, or both. Make sure you fulfill the requirements below depending on your needs.
 
 ### For HoloLens development
 
@@ -35,7 +41,7 @@ To get started with the HoloLens emulator, see [Using the HoloLens emulator](../
 
 If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, use the system recommendations and requirements in the section below.
 
-## Immersive (VR) headset requirements
+### Immersive (VR) headset requirements
 
 >[!NOTE]
 >The following guidelines are the current minimum and recommended specs for your immersive (VR) headset *development PC*, and are updated regularly.
@@ -82,11 +88,11 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 
 ![Unreal](../images/unreal_logo_banner.png)
 
-## Version
+## 1. Download the latest version
 
 We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
 
-## Mixed Reality Toolkit (MRTK)
+## 2. Import Mixed Reality Toolkit (MRTK)
 ![MRTK](../images/UX/MRTK_UX_Hero.png)
 
 Mixed Reality Toolkit (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
@@ -97,14 +103,19 @@ Mixed Reality Toolkit (MRTK) is an open-source, cross-platform development kit f
     :::column-end:::
 :::row-end:::
 
-### Other tools
+> [!NOTE]
+> If you don't want to use MRTK for Unreal, you'll need to script all interactions and behaviors yourself.
+
+### Other tools [optional]
 * <a href="https://github.com/Microsoft/MixedRealityCompanionKit" target="_blank">Mixed Reality Companion Kit (GitHub)</a> - code bits and components that might not run directly on HoloLens or immersive (VR) headsets, but instead pair with them to build experiences targeting Windows Mixed Reality.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit" target="_blank">Mixed Reality Toolkit - Common (GitHub)</a> - a collection of shared scripts and components.
 
-
-## Setting up your PC for mixed reality development
+## 3. Set up your PC for mixed reality development
 
 The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. 
+
+> [!NOTE]
+> You can develop and deploy your apps for HoloLens, VR immersive headsets, or both. Make sure you fulfill the requirements below depending on your needs.
 
 ### For HoloLens development
 
@@ -112,7 +123,7 @@ When setting up your development PC for HoloLens development, please make sure y
 
 If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, use the system recommendations and requirements in the section below.
 
-## Immersive (VR) headset requirements
+### Immersive (VR) headset requirements
 
 >[!NOTE]
 >The following guidelines are the current minimum and recommended specs for your immersive (VR) headset *development PC*, and are updated regularly.
@@ -161,7 +172,7 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 
 Native OpenXR development doesn't have an engine for you to download. You can find everything you need to begin development in the [Getting started with OpenXR](../openxr-getting-started.md) document.
 
-## Setting up your PC for mixed reality development
+## 1. Set up your PC for mixed reality development
 
 The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems.
 
@@ -171,7 +182,10 @@ When setting up your development PC for HoloLens development, please make sure y
 
 If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, use the system recommendations and requirements in the section below.
 
-## Immersive (VR) headset requirements
+> [!NOTE]
+> You can develop and deploy your apps for HoloLens, VR immersive headsets, or both. Make sure you fulfill the requirements below depending on your needs.
+
+### Immersive (VR) headset requirements
 
 >[!NOTE]
 >The following guidelines are the current minimum and recommended specs for your immersive (VR) headset *development PC*, and are updated regularly.
