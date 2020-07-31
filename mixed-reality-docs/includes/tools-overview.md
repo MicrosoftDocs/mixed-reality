@@ -69,7 +69,7 @@ When setting up your development PC for HoloLens development, please make sure y
 
 If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, use the system recommendations and requirements in the section below.
 
-# [Native](#tab/native)
+# [Native (OpenXR)](#tab/native)
 
  ![Native app development](../images/native_logo_banner.png)
 
