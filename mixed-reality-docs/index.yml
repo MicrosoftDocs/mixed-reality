@@ -87,7 +87,7 @@ productDirectory:
           text: Get your app ready for HoloLens 2
     # Card
     - title: Distribute
-      imageSrc: images/icon-lightbulb.png
+      imageSrc: images/icon-distribution.png
       links:
         - url: 3d-app-launcher-design-guidance.md
           text: Designing a 3D app launcher
