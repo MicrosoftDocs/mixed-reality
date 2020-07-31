@@ -29,7 +29,7 @@ There are several development paths you can take through our documentation. The 
 [!INCLUDE[](~/includes/tech-path-overview.md)]
 
 > [!div class="nextstepaction"]
-> [Explore MRTK-Unity >>>](install-the-tools.md)
+> [Install the tools](install-the-tools.md)
 
 <!-- 
 ## What would you like to do next?
