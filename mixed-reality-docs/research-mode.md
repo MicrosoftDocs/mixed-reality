@@ -26,7 +26,7 @@ If you're using a HoloLens 2 you also have access to the additional inputs below
 * **Magnetometer** – Used by the system to estimate absolute orientation.
 
 > [!IMPORTANT]
-> Research Mode is currently in Public Preview. It was added as part of the [Windows 10 April 2018 Update](release-notes-april-2018.md) for HoloLens and isn't available on earlier releases.
+> Research Mode is currently in Public Preview. Samples, tutorials, and full API documentation will be available at EECV 2020 in the Research Mode Git repository.
 
 ![Research Mode app screenshot](images/sensor-stream-viewer.jpg)<br>
 *A mixed reality capture of a test application that displays the eight sensor streams available in Research mode*
