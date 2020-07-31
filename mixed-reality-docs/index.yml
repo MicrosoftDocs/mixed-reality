@@ -86,21 +86,21 @@ productDirectory:
         - url: mrtk-porting-guide.md
           text: Get your app ready for HoloLens 2
     # Card
-    - title: Distribute
+    - title: Deploy HoloLens 2
       imageSrc: images/icon-distribution.png
       links:
-        - url: 3d-app-launcher-design-guidance.md
-          text: Designing a 3D app launcher
-        - url: creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
-          text: Creating 3D models for the Mixed Reality Home
-        - url: implementing-3d-app-launchers.md
-          text: Implementing 3D app launchers in UWP apps
-        - url: in-app-purchases.md
-          text: Adding in-app purchases
-        - url: submitting-an-app-to-the-microsoft-store.md
-          text: Submitting to the Microsoft Store
         - url: https://docs.microsoft.com/hololens/hololens-requirements
-          text: Get ready for commercial deployment
+          text: Prepare for commercial deployment
+        - url: https://docs.microsoft.com/hololens/hololens-identity
+          text: Manage user identity and sign-in
+        - url: https://docs.microsoft.com/hololens/hololens-enroll-mdm
+          text: Enroll your devices 
+        - url: https://docs.microsoft.com/hololens/hololens-updates
+          text: Manage your HoloLens updates
+        - url: https://docs.microsoft.com/hololens/hololens-release-notes
+          text: Release notes
+        - url: https://docs.microsoft.com/hololens/hololens-feedback
+          text: Troubleshooting & support
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -221,20 +221,18 @@ additionalContent:
       summary: Get your applications ready for commercial deployment, integrate Azure Cloud Services, or test out our sample applications.   # < 160 chars (optional)
       items:
         # Card
-        - title: Enterprise Deployment for HoloLens
+        - title: Distribute
           links:
-            - text: Prepare for commercial deployment
-              url: https://docs.microsoft.com/hololens/hololens-requirements
-            - text: Manage user identity and sign-in
-              url: https://docs.microsoft.com/hololens/hololens-identity
-            - text: Enroll your devices 
-              url: https://docs.microsoft.com/hololens/hololens-enroll-mdm
-            - text: Manage your HoloLens updates
-              url: https://docs.microsoft.com/hololens/hololens-updates
-            - text: Release notes
-              url: https://docs.microsoft.com/hololens/hololens-release-notes
-            - text: Troubleshooting & support
-              url: https://docs.microsoft.com/hololens/hololens-feedback
+            - text: Designing a 3D app launcher
+              url: 3d-app-launcher-design-guidance.md
+            - text: Creating 3D models for the Mixed Reality Home
+              url: creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
+            - text: Implementing 3D app launchers in UWP apps
+              url: implementing-3d-app-launchers.md
+            - text: Adding in-app purchases
+              url: in-app-purchases.md
+            - text: Submitting to the Microsoft Store
+              url: submitting-an-app-to-the-microsoft-store.md
         # Card
         - title: Azure Cloud Services
           links:
