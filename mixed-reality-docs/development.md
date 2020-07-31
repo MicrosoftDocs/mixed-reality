@@ -14,13 +14,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx
 
 ![Abstract 3D sphere](images/07_Development.png)
 
-## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-
-As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design. [Read more](case-study-expanding-the-design-process-for-mixed-reality.md)
-
-<br>
-
----
+Mixed Reality is a big place, but it's time to start focusing in on what you're going to build and what tools you're going to use. You know the hardware, the design guidelines, the comfort considerations - now it's time to create.
 
 ## What technology path are you interested in? 
 
