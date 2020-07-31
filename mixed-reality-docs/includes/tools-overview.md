@@ -76,7 +76,7 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 ## What's next?
 
 > [!div class="nextstepaction"]
-> [Start your Unity journey](unity-development-overview.md)
+> [Start your Unity journey](../unity-development-overview.md)
 
 # [Unreal](#tab/unreal)
 
@@ -153,7 +153,7 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 ## What's next?
 
 > [!div class="nextstepaction"]
-> [Start your Unreal journey](unreal-development-overview.md)
+> [Start your Unreal journey](../unreal-development-overview.md)
 
 # [Native (OpenXR)](#tab/native)
 
@@ -212,6 +212,6 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 ## What's next?
 
 > [!div class="nextstepaction"]
-> [Start your Native journey](directx-development-overview.md)
+> [Start your Native journey](../directx-development-overview.md)
 
 
