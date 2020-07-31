@@ -31,9 +31,9 @@ highlightedContent:
       itemType: overview
       url: https://docs.microsoft.com/hololens/hololens2-hardware
     # Card
-    - title: Try some sample apps
+    - title: Try a sample app
       itemType: sample
-      url: https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab
+      url: samples.md
     # Card
     - title: Developers
       itemType: overview
@@ -45,7 +45,7 @@ highlightedContent:
     # Card
     - title: VR enthusiasts
       itemType: overview
-      url: https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details
+      url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
 
 # productDirectory section (optional)
 productDirectory:
@@ -87,7 +87,7 @@ productDirectory:
           text: Get your app ready for HoloLens 2
     # Card
     - title: Distribute
-      imageSrc: images/icon-calendar.jpg
+      imageSrc: images/icon-lightbulb.png
       links:
         - url: 3d-app-launcher-design-guidance.md
           text: Designing a 3D app launcher
