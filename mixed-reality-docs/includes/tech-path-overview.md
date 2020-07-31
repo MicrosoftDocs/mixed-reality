@@ -79,14 +79,14 @@ You have several hardware, emulator, and streaming options when building Mixed R
 | [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine. |
 
 
-# [Javscript](#tab/javascript)
+# [Web](#tab/javascript)
 
-![JavaScript](../images/javascript_logo_banner.png)
+![Web](../images/javascript_logo_banner.png)
 
-The JavaScript and WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [Javascript development overview](../javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
+The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [Javascript development overview](../javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
 
 
-# [Native](#tab/native)
+# [Native (OpenXR)](#tab/native)
 
  ![Native](../images/native_logo_banner.png)
 
@@ -98,9 +98,31 @@ OpenXR is an open royalty-free API standard from Khronos that provides engines n
 
 ## Available hardware platforms
 
+You have several hardware, emulator, and streaming options when building Mixed Reality apps with Native development. 
+
+**Augmented reality devices**
+* [HoloLens 2](https://docs.microsoft.com/hololens/hololens1-hardware)
+
+**Immersive VR headsets**
+* HP Reverb and Reverb G2
+* Samsung Odyssey and Odyssey+
+* HP Windows Mixed Reality headset
+* Lenovo Explorer
+* Acer AH101
+* Dell Visor
+* Asus HC102
+* Acer OJO 500
+
 ## Available tools and SDKs
+
+<!-- Link these to DMC doc sections -->
+* OpenXR Developer Tools
+* OpenXR Spec
+* OpenXR SDK (header/loader)
 
 ## Examples
 
 Feel free to play around with the sample app to get a feel for what's possible with Native development and Mixed Reality.
+
+<!-- Go to actual GH link for more samples -->
 * [BasicXrApp](https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp) - Demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.
