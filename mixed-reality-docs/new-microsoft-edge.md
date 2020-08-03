@@ -62,9 +62,9 @@ We've since received feedback that some customers, especially those with multipl
 To disable virtual monitor pre-allocation:
 1. Check **Windows Update** for the 2020-07 Cumulative Update for Windows 10 Version 2004 and install the update when available
 2. Launch **Registry Editor**
-3. Navigate to *HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\*
-4. If the *PreallocateVirtualMonitors* REG_DWORD is not present, create it by selecting **Edit > New > DWORD (32-bit) Value** and entering "PreallocateVirtualMonitors" as the name
-5. If the *PreallocateVirtualMonitors* REG_DWORD is present (or you just created it), double click the entry and change "Value data" from 1 (its default value) to 0 (zero)
+3. Navigate to "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\"
+4. If the "PreallocateVirtualMonitors" REG_DWORD is not present, create it by selecting **Edit > New > DWORD (32-bit) Value** and entering PreallocateVirtualMonitors as the name
+5. If the "PreallocateVirtualMonitors" REG_DWORD is present (or you just created it), double-click the entry and change "Value data" from 1 (its default value) to 0 (zero)
     * TRUE - 1
     * FALSE - 0
 
