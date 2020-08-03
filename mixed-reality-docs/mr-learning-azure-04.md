@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 4. Integrating Azure Spatial Anchors
 
-In this tutorial, you will learn how to use **Azure Spatial Anchors**. You will store the location of a **Tracked Object** as an Azure Spatial Anchor. Then you will query and present the user with a guiding arrow pointing to the location.
+In this tutorial, you will learn how to use **Azure Spatial Anchors**. You will store the location of a **Tracked Object** as an Azure Spatial Anchor. Once you query for the anchor, an arrow will appear to guide you toward the location.
 
 ## Objectives
 
