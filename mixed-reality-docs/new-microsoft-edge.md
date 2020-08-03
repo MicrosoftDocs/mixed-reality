@@ -47,7 +47,7 @@ After taking the 2020-01 Cumulative update for Windows 10 Version 1903 (or later
 
 **Why this happens**
 
-Support for classic Win32 applications in Windows Mixed Reality was introduced with the [Windows 10 May 2019 Update](#release-notes-may-2019.md). To enable this support, a virtual monitor must be created to host the Win32 application. Each time a new Win32 application is launched, another virtual monitor has to be created. Unfortunately, creating a virtual monitor is an intensive task that can cause the headset display to briefly freeze. Customers offered feedback that this was an uncomfortable and disruptive experience. Because of that feedback, alongside increased usage of Win32 applications, we made the decision to pre-allocate three virtual monitors during startup of Windows Mixed Reality to prevent this disruption and enable customers to launch up to three concurrent Win32 applications without experiencing the headset display freeze.
+Support for classic Win32 applications in Windows Mixed Reality was introduced with the [Windows 10 May 2019 Update](release-notes-may-2019.md). To enable this support, a virtual monitor must be created to host the Win32 application. Each time a new Win32 application is launched, another virtual monitor has to be created. Unfortunately, creating a virtual monitor is an intensive task that can cause the headset display to briefly freeze. Customers offered feedback that this was an uncomfortable and disruptive experience. Because of that feedback, alongside increased usage of Win32 applications, we made the decision to pre-allocate three virtual monitors during startup of Windows Mixed Reality to prevent this disruption and enable customers to launch up to three concurrent Win32 applications without experiencing the headset display freeze.
 
 **Workaround**
 
@@ -60,14 +60,15 @@ We've since received feedback that some customers, especially those with multipl
 >Disabling virtual monitor pre-allocation may result in your headset display briefly freezing when you launch a Win32 application (such as Steam, the new Microsoft Edge, or Google Chrome) in Windows Mixed Reality.
 
 To disable virtual monitor pre-allocation:
-1. Check **Windows Update** for the 2020-07 Cumulative Update for Windows 10 Version 2004 and install the update when available.
-2. Launch **Registry Editor**.
-3. Navigate to HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\PreallocateVirtualMonitors
-4. Change the DWORD value from 1 (its default value) to 0 (zero)
+1. Check **Windows Update** for the 2020-07 Cumulative Update for Windows 10 Version 2004 and install the update when available
+2. Launch **Registry Editor**
+3. Navigate to "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\"
+4. If the "PreallocateVirtualMonitors" REG_DWORD is not present, create it by selecting **Edit > New > DWORD (32-bit) Value** and entering PreallocateVirtualMonitors as the name
+5. If the "PreallocateVirtualMonitors" REG_DWORD is present (or you just created it), double-click the entry and change "Value data" from 1 (its default value) to 0 (zero)
     * TRUE - 1
     * FALSE - 0
 
-Virtual monitors will now allocate when you attempt to launch a Win32 application in Windows Mixed Reality instead of pre-allocating. To reset this and re-enable virtual monitor pre-allocation, return the DWORD value to 1.
+Virtual monitors will now allocate when you attempt to launch a Win32 application in Windows Mixed Reality instead of pre-allocating. To reset this and re-enable virtual monitor pre-allocation, return the DWORD "Value data" to 1.
 
 ### Additional known issues
 
