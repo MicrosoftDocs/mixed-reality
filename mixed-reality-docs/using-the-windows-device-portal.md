@@ -3,7 +3,7 @@ title: Using the Windows Device Portal
 description: The Windows Device Portal for HoloLens lets you configure and manage your device remotely over Wi-Fi or USB. The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. The Device Portal includes many tools that will help you manage your HoloLens and debug and optimize your apps.
 author: hamalawi
 ms.author: moelhama
-ms.date: 02/24/2019
+ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
 ms.localizationpriority: high
@@ -147,6 +147,25 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
   * **Full screen button**: Shows the 3D View in full screen mode. Press ESC to exit full screen view.
 * **Surface reconstruction**: Click or tap **Update** to display the latest spatial mapping mesh from the device. A full pass may take some time to complete (up to a few seconds). The mesh does not update automatically in the 3D view, and you must manually click **Update** to get the latest mesh from the device. Click **Save** to save the current spatial mapping mesh as an obj file on your PC.
 * **Spatial anchors**: Click Update to display or update the spatial anchors for the active app.
+
+### Map Manager
+
+Map Manager allows you to share maps across devices, which can be used to setup shared experiences for Location Based Entertainment customers. The tool allows you to import and export system maps and anchors.  
+
+To access the Map Manager, log into the Device Portal and select **Mixed Reality -> Map Manager**: 
+
+![Map manager page in Windows Device Portal](images/map-manager-img-01.png)
+*Map Manager page in Windows Device Portal on Microsoft HoloLens*
+
+#### Exporting and importing maps
+
+To export maps, click **Export System Map & Anchors**. This could take a while so be prepared to wait for 30-60 seconds while the map is exported. Once it’s complete, the file will be downloaded in your browser.  
+
+To import maps and anchors, click **Upload a map file** and **Upload an anchor file** respectively and select a map or anchor file that you've already exported. The uploaded map or anchor file can come from your or any other HoloLens device. 
+
+> [!NOTE]
+> On HoloLens, it's also possible to import and export the spatial mapping data base. However, this doesn't work on non-HoloLens devices.  
+
 
 ### Mixed Reality Capture
 

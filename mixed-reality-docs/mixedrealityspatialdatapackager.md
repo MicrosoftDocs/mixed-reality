@@ -1,16 +1,21 @@
 ---
 title: Mixed Reality Spatial Data Packager Documentation
 description: Documentation for using Mixed Reality Spatial Data Packager
-author: alfred-msft 
-ms.author: yuripek
-ms.date: 05/16/2019
+author: hferrone 
+ms.author: v-haferr
+ms.date: 08/03/2020
 ms.topic: article
 keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
 ---
 # Mixed Reality Spatial Data Packager Documentation
 
 >[!NOTE]
-> This tool and its operation are offered as-is. It is subject to change without any notice and may not be compatible with future Windows or Windows Mixed Reality HMD releases.
+> DEPRECATED 
+> 
+> As of 8/1/2020 this tool is now deprecated and no longer functions on any platform. We recommend using the [Map Manager](using-the-windows-device-portal.md#map-manager) tool in the Device Portal instead. 
+> 
+> This tool and its operation are offered as-is. It is subject to change without any notice and may not be compatible with future Windows or Windows Mixed Reality HMD releases. 
+
 
 ## Download
  Download [MixedRealitySpatialDataPackager here](https://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip)
