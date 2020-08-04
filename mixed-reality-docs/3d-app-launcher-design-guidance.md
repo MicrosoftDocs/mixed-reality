@@ -20,6 +20,7 @@ When you put on a Windows Mixed Reality immersive (VR) headset, you enter the Wi
 ## 3D app launcher creation process
 
 There are 3 steps to creating a 3D app launcher:
+
 1. Designing and concepting (this article)
 2. [Modeling and exporting](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. Integrating it into your application:
@@ -58,7 +59,6 @@ Your 3D app launcher should instantly express “your app’s brand” to people
 
 Your app deserves more than just putting your logo on a flat plane and calling it a day. Your launcher should feel like an exciting, 3D, physical object in the user’s space. A good approach is to imagine your app was going to have a balloon in the Macy’s Thanksgiving Day Parade. Ask yourself, what would really wow people as it came down the street? What would look great from all viewing angles?
 
-
 :::row:::
     :::column:::
         ![Logo only](images/20171016-140436-mixedreality-640px.jpg)
@@ -69,7 +69,6 @@ Your app deserves more than just putting your logo on a flat plane and calling i
         *More recognizable with a character*
     :::column-end:::
 :::row-end:::
-
 
 :::row:::
     :::column:::
@@ -82,10 +81,8 @@ Your app deserves more than just putting your logo on a flat plane and calling i
     :::column-end:::
 :::row-end:::
 
-
 ## Tips for good 3D models
 
-### Best practices
 * When planning dimensions for your app launcher, shoot for roughly a 30cm cube. So, a 1:1:1 size ratio.
 * Models must be under 10,000 polygons. [Learn more about triangle counts and levels of details (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * Test on an immersive headset when possible.
@@ -99,6 +96,7 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 *Model with subtle details in the texture*
 
 ### What to avoid
+
 * Don't use high-contrast details or small, busy patterns and textures.
 * Don't use thin geometry – it doesn’t work well at a distance and will alias badly.
 * Don't let parts of your model extend too much beyond the 1:1:1 size ratio. It will create scaling problems.
@@ -108,12 +106,10 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 
 ## How to handle type
 
-### Best practices
 * We recommend your type comprises about 1/3 of your app launcher (or more). Type is the main thing that gives people an idea that your launcher is, in fact, a launcher so it’s nice if it’s pretty substantial.
 * Avoid making type super wide – try to keep it within the confines of the app launchers core dimensions (more or less).
 * Flat type can work, but be aware that it can be hard to view from certain angles and in certain environments. You might consider putting it a solid object or backdrop behind it to help with this.
 * Adding dimension to your type feels nice in 3D. Shading the sides of the type a different, darker color can help with readability.
-
 
 :::row:::
     :::column:::
@@ -130,8 +126,8 @@ Your app deserves more than just putting your logo on a flat plane and calling i
     :::column-end:::
 :::row-end:::
 
-
 **Type colors that work**
+
 * White
 * Black
 * Bright semi-saturated color
@@ -139,9 +135,10 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 ![Type colors that work.](images/20171016-112111-mixedreality-640px.jpg)<br>
 *Type colors that work*
 
-### What to avoid
+### Colors to avoid
 
-**Type colors that cause trouble**
+Type colors that cause trouble include:
+
 * Mid-tones
 * Gray
 * Over-saturated colors or desaturated colors
@@ -167,7 +164,7 @@ The end format of your 3D app launcher will be a .glb file, which is made using 
 ![Example: Fresh Note app](images/pbr-freshnote1-640px-500px.png)<br>
 *Fresh Note 3D app launcher example (fictional app)*
 
-**Recommended authoring tool**
+### Recommended authoring tool
 
 We recommend using [Substance Painter](https://www.allegorithmic.com/products/substance-painter) by Allegorithmic to author your final file. If you’re not familiar with authoring PBR shaders in Substance Painter, here’s a [tutorial](https://docs.allegorithmic.com/documentation/display/SPDOC/Tutorials).
 
@@ -179,9 +176,9 @@ We recommend using [Substance Painter](https://www.allegorithmic.com/products/su
 * Our shader is expecting a Metal/Roughness work flow – The Unreal PBR shader is a close facsimile.
 * When exporting your textures keep the [recommended texture sizes](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) in mind.
 * Make sure to build your objects for real-time lighting — this means:
-    * Avoid baked shadows – or painted shadows
-    * Avoid baked lighting in the textures
-    * Use one of the PBR material authoring packages to get the right maps generated for our shader
+  * Avoid baked shadows – or painted shadows
+  * Avoid baked lighting in the textures
+  * Use one of the PBR material authoring packages to get the right maps generated for our shader
 
 ## See also
 
