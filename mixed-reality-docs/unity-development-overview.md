@@ -48,7 +48,7 @@ All of the core building blocks for mixed reality applications are exposed in a 
 
 Other key features that play a role in mixed reality applications are available through Unity APIs without any extra packages or setup. These features can be added to Unity projects with or without MRTK installed. After diving into the more advanced capabilities that Unity offers, you'll be able to build deeper, complex Mixed Reality apps.
 
-|  Capability  |  Description  |
+|  Feature  |  Capabilities  |
 | --- | --- |
 | [Shared experiences](shared-experiences-in-unity.md) | View and interact collectively with the same hologram at a fixed point in space using spatial anchor sharing |
 | [Locatable camera](locatable-camera-in-unity.md) | Capture photos and video content in your Mixed Reality application |

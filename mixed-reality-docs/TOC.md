@@ -284,20 +284,20 @@
 #### [OpenXR performance](openxr-performance.md)
 #### [OpenXR troubleshooting](openxr-troubleshooting.md)
 ### WinRT (Legacy)
-### Getting started
-#### [Creating a native holographic project](creating-a-holographic-directx-project.md)
-#### [Getting a HolographicSpace](getting-a-holographicspace.md)
-#### [Native rendering](rendering-in-directx.md)
-#### [Coordinate systems](coordinate-systems-in-directx.md)
-### Core building blocks
-#### [Head and eye gaze](gaze-in-directx.md)
-#### [Hands and motion controllers](hands-and-motion-controllers-in-directx.md)
-#### [Voice input](voice-input-in-directx.md)
-#### [Spatial mapping](spatial-mapping-in-directx.md)
-### Platform capabilities and APIs
-#### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
-#### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
-#### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
+#### Getting started
+##### [Creating a native holographic project](creating-a-holographic-directx-project.md)
+##### [Getting a HolographicSpace](getting-a-holographicspace.md)
+##### [Native rendering](rendering-in-directx.md)
+##### [Coordinate systems](coordinate-systems-in-directx.md)
+#### Core building blocks
+##### [Head and eye gaze](gaze-in-directx.md)
+##### [Hands and motion controllers](hands-and-motion-controllers-in-directx.md)
+##### [Voice input](voice-input-in-directx.md)
+##### [Spatial mapping](spatial-mapping-in-directx.md)
+#### Platform capabilities and APIs
+##### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
+##### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
+##### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
 
 ## Platform capabilities and APIs
 ### Core building blocks
