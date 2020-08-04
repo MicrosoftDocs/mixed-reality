@@ -10,68 +10,96 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 ---
 # Unity development overview
 
-The fastest path to building a [mixed reality app](app-views.md) is with [Unity](https://unity.com). We recommend that you take time to explore the [Unity tutorials](https://unity3d.com/learn/tutorials). If you need assets, Unity has a comprehensive [Asset Store](https://www.assetstore.unity3d.com/). Once you have built up a basic understanding of Unity, you can visit the [tutorials](tutorials.md) to learn the specifics of mixed reality development with Unity. Be sure to visit the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the rest of the community building mixed reality apps in Unity and find solutions to problems you might run into.
+The fastest path to building a [mixed reality app](app-views.md) in [Unity](https://unity.com) is with the Mixed Reality Toolkit. If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the comprehensive [Asset Store](https://www.assetstore.unity3d.com/) and the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
 
-To get started building mixed reality apps with Unity, first [install the tools](install-the-tools.md).
+> [!IMPORTANT]
+> Take a look at our **[porting guides](porting-guides.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, SteamVR or were developed for immersive headsets such as the Oculus Rift or HTC Vive.
 
-## New Unity Project with Mixed Reality Toolkit 
+## Development checkpoints
 
-The easiest way to develop in Unity is with the Mixed Reality Toolkit, which will help you set up with the project automatically, and provide a set of mixed reality features to accelerate your development. Check out [Mixed Reality Toolkit v2](mrtk-getting-started.md) to learn more and get started. 
+Use the following checkpoints to bring your Unity games and applications into the world of mixed reality.
 
-## Porting an existing Unity app to Windows Mixed Reality
+### 1. Getting started
+The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will help you automatically setup a project for Mixed Reality and provide a set of features to accelerate your development process. By the end of this section, you'll have a basic understanding of the Mixed Reality Toolkit, a properly configured development environment for Mixed Reality apps, and a working MRTK project in Unity that you built yourself.
 
-If you have an existing Unity project that you're porting to Windows Mixed Reality, follow along with the [Unity porting guide](porting-guides.md) to get started.
+|  Checkpoint  |  Description  |
+| --- | --- |
+| [What is MRTK?](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
+| [Install the latest tools](install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [HoloLens 2 tutorial series](mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
 
-## Configuring new Unity project for Windows Mixed Reality
+> [!IMPORTANT]
+> If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. These are broken down into two categories: per-project and per-scene. Take a look at our configuration guide for the step-by-step process.
 
-If you're creating a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you need to change for Windows Mixed Reality. These settings are broken down into two categories: per-project and per-scene. See here for a step-by-step guide to [Configure new Unity Project for Windows Mixed Reality](Configure-Unity-Project.md)
+> [!NOTE]
+> Once you've setup MRTK V2 in your project, standard Unity game objects like the camera will light up immediately for a seated-scale experience. You can find instructions on changing the experience scale of your application on the coordinate systems page.
 
-## Adding mixed reality capabilities and inputs
+### 2. Core building blocks
 
-Once you've setup MRTK V2 with your project or configured your project as described above, standard Unity game objects like the camera will light up immediately for a **seated-scale experience**, with the camera's position updated automatically as the user moves their head through the world.
+All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After exploring the core building blocks listed below, you'll have a toolbox full of features you can integrate into a Mixed Reality project by themselves or through MRTK.
 
-Adding support for Windows Mixed Reality features, such as [spatial stages](coordinate-systems.md#spatial-coordinate-systems), [gestures, motion controllers](gestures-and-motion-controllers-in-unity.md), or [voice input](voice-input-in-unity.md) is achieved using APIs built directly into Unity. 
+[!INCLUDE[](~/includes/unity-building-blocks.md)]
 
-First, review the [experience scales](coordinate-systems.md) that your application can target:
-* If you're looking to build an **orientation-only** or **seated-scale experience**, you'll need to set Unity's tracking space type to [Stationary](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience).
-* If you're looking to build a **standing-scale** or **room-scale experience**, you'll need to ensure Unity's tracking space type is successfully set to [RoomScale](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience).
-* If you're looking to build a **world-scale** experience on HoloLens that lets users roam beyond 5 meters, you'll need to use the [WorldAnchor](coordinate-systems-in-unity.md#building-a-world-scale-experience) component.
+### 3. Platform capabilities and APIs
 
-All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. They are also available through the Mixed Reality Toolkit.
-* [Camera](camera-in-unity.md)
-* [Coordinate systems](coordinate-systems-in-unity.md)
-* [Gaze](gaze-in-unity.md)
-* [Gestures and motion controllers](gestures-and-motion-controllers-in-unity.md)
-* [Voice input](voice-input-in-unity.md)
-* [Persistence](persistence-in-unity.md)
-* [Spatial sound](spatial-sound-in-unity.md)
-* [Spatial mapping](spatial-mapping-in-unity.md)
+Other key features that play a role in mixed reality applications are available through Unity APIs without any extra packages or setup. These features can be added to Unity projects with or without MRTK installed. After diving into the more advanced capabilities that Unity offers, you'll be able to build deeper, complex Mixed Reality apps.
 
-There are other key features that many mixed reality applications will want to use that are also exposed to Unity apps:
-* [Shared experiences](shared-experiences-in-unity.md)
-* [Locatable camera](locatable-camera-in-unity.md)
-* [Focus point](focus-point-in-unity.md)
-* [Tracking loss](tracking-loss-in-unity.md)
-* [Keyboard](keyboard-input-in-unity.md)
+|  Capability  |  Description  |
+| --- | --- |
+| [Shared experiences](shared-experiences-in-unity.md) | View and interact collectively with the same hologram at a fixed point in space using spatial anchor sharing |
+| [Locatable camera](locatable-camera-in-unity.md) | Capture photos and video content in your Mixed Reality application |
+| [Focus point](focus-point-in-unity.md) | Provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed |
+| [Tracking loss](tracking-loss-in-unity.md) | Handle scenarios where your device can't locate itself in the applications world space |
+| [Keyboard input](keyboard-input-in-unity.md) | Get input from real-world and Mixed Reality keyboards in your apps |
 
-## Running your Unity project on a real or simulated device
+### 4. Deploying to a device or emulator
 
-Once you've got your holographic Unity project ready for testing, your next step is to [export and build a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md).
+Once you've got your holographic Unity project ready for testing, your next step is to export and build a Unity Visual Studio solution. With that VS solution in hand, you can run your application in one of three ways on a real or simulated device. By the end of this section, you'll be able to deploy your application on whichever device or emulator fits your development needs.
 
-With that VS solution in hand, you can then run your application in one of three ways, using either a real or simulated device:
-* [Deploy to a real HoloLens or Windows Mixed Reality immersive headset](using-visual-studio.md)
-* [Deploy to the HoloLens emulator](using-the-hololens-emulator.md)
-* [Deploy to the Windows Mixed Reality immersive headset simulator](using-the-windows-mixed-reality-simulator.md)
+* [HoloLens or Windows Mixed Reality immersive headset](using-visual-studio.md)
+* [HoloLens emulator](using-the-hololens-emulator.md)
+* [Windows Mixed Reality immersive headset simulator](using-the-windows-mixed-reality-simulator.md)
 
-## Unity documentation
+## What's next?
 
-In addition to this documentation available on docs.microsoft.com, Unity installs documentation for Windows Mixed Reality functionality alongside the Unity Editor. The Unity provided documentation includes two separate sections:
-1. **Unity scripting reference**
-    * This section of the documentation contains details of the scripting API that Unity provides.
-    * Accessible from the Unity Editor through **Help > Scripting Reference**
-2. **Unity manual**
-    * This manual is designed to help you learn how to use Unity, from basic to advanced techniques.
-    * Accessible from the Unity Editor through **Help > Manual**
+A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!
+
+### Porting
+
+If you have existing apps that you'd like to port over, the articles listed below are your next stop/
+
+* [HoloToolkit/MRTK to MRTK v2](mrtk-porting-guide.md)
+* [Porting guide for immersive apps](porting-guides.md)
+* [Input porting guide](using-the-windows-mixed-reality-simulator.md)
+
+### Tutorials
+
+If you're looking to add specific Mixed Reality features to your applications, we have several curated tutorials that can run you through the process from end-to-end. Our most popular HoloLens 2 and HoloLens (1st Gen) content is listed below, but you can find the entire collection by visiting the tutorials overview.
+
+[!INCLUDE[](~/includes/unity-tutorials.md)]
+
+### Additional resources
+
+Before going out into the world of mixed reality on your own, we recommend taking a look at the MRTK-related documentation listed below. These articles are great jumping off points for understanding how MRTK works in greater detail and will give you insight into making your app more performant.
+
+|  Topic  |  Description  |
+| --- | --- |
+| [MRTK Architecture overview](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/Overview.html) | Get a deeper understanding of how the MRTK SDK works in your projects |
+| [Settings and performance](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) | Profile your app, update your Unity settings, and get the best hologram stabilization performance available |
+| [Getting started with MRTK + XR](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) | Transfer over to the alternative XR pipeline provided by Unity |
+
+### Unity resources
+
+In addition to this documentation available on docs.microsoft.com, Unity installs documentation for Windows Mixed Reality functionality alongside the Unity Editor. The Unity provided documentation includes two separate sections.
+
+|  Resource  |  Description  |
+| --- | --- |
+| [Scripting reference](https://docs.unity3d.com/ScriptReference/) | This section of the documentation contains details of the scripting API that Unity provides and is accessible online from the Unity Editor by clicking **Help > Scripting Reference** |
+| [Manual](https://docs.unity3d.com/Manual/index.html) | This manual is designed to help you learn how to use Unity, from basic to advanced techniques, and is accessible online or from the Unity Editor by clicking **Help > Manual** |
+
+
+> [!div class="nextstepaction"]
+> [Explore MRTK](mrtk-getting-started.md)
 
 ## See also
 * [Mixed Reality Toolkit v2](mrtk-getting-started.md)
