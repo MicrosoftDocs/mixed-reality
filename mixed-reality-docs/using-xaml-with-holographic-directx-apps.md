@@ -3,7 +3,7 @@ title: Using XAML with holographic DirectX apps
 description: Explains the impact of switching between 2D XAML views and immersive views in your DirectX app, and how to make efficient use of both a XAML view and immersive view.
 author: mikeriches
 ms.author: mriches
-ms.date: 03/21/2018
+ms.date: 08/04/2020
 ms.topic: article
 keywords: windows mixed reality, UWP, app view management, xaml, keyboard, walkthrough, DirectX
 ---
@@ -11,6 +11,9 @@ keywords: windows mixed reality, UWP, app view management, xaml, keyboard, walkt
 
 
 # Using XAML with holographic DirectX apps
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 This topic explains the impact of switching between [2D XAML views and immersive views](app-views.md) in your DirectX app, and how to make efficient use of both a XAML view and immersive view.
 

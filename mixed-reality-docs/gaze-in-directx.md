@@ -3,12 +3,15 @@ title: Head and eye gaze in DirectX
 description: Developer guide for using head gaze and eye tracking in native DirectX apps.
 author: caseymeekhof
 ms.author: cmeekhof
-ms.date: 05/09/2019
+ms.date: 08/04/2020
 ms.topic: article
 keywords: eye-gaze, head-gaze, head tracking, eye tracking, directx, input, holograms
 ---
 
 # Head-gaze and eye-gaze input in DirectX
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 In Windows Mixed Reality, eye and head gaze input is used to determine what the user is looking at. This can be used to drive primary input models such as [head-gaze and commit](gaze-and-commit.md), and also to provide context for types of interactions. There are two types of gaze vectors available through the API: head-gaze and eye-gaze.  Both are provided as a three dimensional ray with an origin and direction. Applications can then raycast into their scenes, or the real world, and determine what the user is targeting.
 

@@ -3,7 +3,7 @@ title: Creating a holographic DirectX project
 description: Explains how to create a new holographic app based on the Windows Mixed Reality app template.
 author: mikeriches
 ms.author: mriches
-ms.date: 03/21/2018
+ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holographic app, new app, UWP app, template app, holograms, new project, walkthrough, download, sample code
 ---
@@ -11,6 +11,9 @@ keywords: Windows Mixed Reality, holographic app, new app, UWP app, template app
 
 
 # Creating a holographic DirectX project
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 A holographic app you create for a HoloLens will be a <a href="https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide" target="_blank">Universal Windows Platform (UWP) app</a>.  If targeting desktop Windows Mixed Reality headsets, you can create a UWP app or a Win32 app.
 
