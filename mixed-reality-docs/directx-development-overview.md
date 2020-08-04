@@ -31,13 +31,13 @@ The differences between DirectX development for [2D views and immersive views](a
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [What is OpenXR?](../openxr.md) | Begin your native development journey by getting acquainted with OpenXR and what it has to offer |
-| [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [Setup for HoloLens 2](../openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Configure your device and environment for HoloLens 2 development |
-| [Set up for immersive headsets](../openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Configure your device and environment for Windows Immersive Headset development |
-| [Download the developer tools](../openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Try out the Windows Mixed Reality OpenXR Runtime |
-| [Add the OpenXR Loader](../openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discover the active OpenXR runtime on your device and access the core and extension functions that it implements |
-| [Try a sample app](../openxr-getting-started.md#building-a-sample-openxr-app) | Explore a UWP and Win32 versions of the same basic app on your device |
+| [What is OpenXR?](openxr.md) | Begin your native development journey by getting acquainted with OpenXR and what it has to offer |
+| [Install the latest tools](install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [Setup for HoloLens 2](openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Configure your device and environment for HoloLens 2 development |
+| [Set up for immersive headsets](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Configure your device and environment for Windows Immersive Headset development |
+| [Download the developer tools](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Try out the Windows Mixed Reality OpenXR Runtime |
+| [Add the OpenXR Loader](openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discover the active OpenXR runtime on your device and access the core and extension functions that it implements |
+| [Try a sample app](openxr-getting-started.md#building-a-sample-openxr-app) | Explore a UWP and Win32 versions of the same basic app on your device |
 
 ### 2. Core building blocks
 
@@ -53,7 +53,7 @@ Windows Mixed Reality applications use the following APIs to build [mixed-realit
 | [Voice](voice-input.md) | Capture spoken keywords, phrases, and dictation from your users |
  
 > [!NOTE]
-> You can find upcoming and in-development core features in the OpenXR [roadmap](../openxr.md#roadmap) documentation.
+> You can find upcoming and in-development core features in the OpenXR [roadmap](openxr.md#roadmap) documentation.
 
 ### 3. Deploying and testing
 
