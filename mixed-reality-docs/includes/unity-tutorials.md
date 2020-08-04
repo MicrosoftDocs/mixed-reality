@@ -1,7 +1,7 @@
 # [HoloLens 2](#tab/hl2)
 
 * [Getting started](../mr-learning-base-01.md)
-* [Azure Spatial Anchors](../mr-learning-asa-01?.md)
+* [Azure Spatial Anchors](../mr-learning-asa-01.md)
 * [Multi-user capabilities](../mr-learning-sharing-01.md)
 * [Azure Speech Services](../mrlearning-speechsdk-ch1.md)
 * [Spatial audio](../unity-spatial-audio-ch1.md)
