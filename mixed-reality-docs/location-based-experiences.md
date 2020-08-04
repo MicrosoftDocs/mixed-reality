@@ -3,7 +3,7 @@ title: Location Based Entertainment with Windows Mixed Reality
 description: Get access to the underlying Holographic native objects in Unity.
 author: jessemcculloch
 ms.author: ishitak
-ms.date: 08/22/2019
+ms.date: 08/03/2020
 ms.topic: article
 keywords: mixed reality, vr, lbe, location
 ---
@@ -119,18 +119,18 @@ A: The origin of the playspace is determined by the Room Setup experience, more 
 
 **Q: I’m deploying a multi-player experience in at my venue. Is that supported on Windows Mixed Reality?**
 
-A: The Mixed Reality Spatial Data Packager tool is a beta feature that allows localizing multiple players in the same space by enabling porting of the spatial data from one PC to another. You can access the tool and learn more about it [here](mixedrealityspatialdatapackager.md).
+A: If you opt into the Windows 20H1 or later builds (via our [Insider program](https://docs.microsoft.com/windows-insider/at-home/get-started)) you can access a new interface for map sharing. This new functionality is available via the Map Manager interface of the Windows Device portal. To use this tool follow the steps below:
+* Make sure you are opted into 20H1 or later (as of September 2019 this means using our Insider program)
+* Enable the Windows Device Portal (WDP) using these [instructions](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop)
+* Plug in a Windows Mixed Reality HMD that you wish to either download an existing map from or import a new map
+* Navigate to the WDP in your browser of choice using the URL provided in the settings screen.
+    * Once there Navigate to the "Mixed Reality" section and select "Map Manager".
+    * You can now use the "Download" button to export an existing map from the machine.
+    * You can use the "Upload a map file" button to import an map from a previous export (perhaps on a different machine).
+    * You can use "Import" to enable the system to use that map for this HMD on this machine.
 
-If you opt into the Windows 20H1 or later builds (via our [Insider](https://docs.microsoft.com//windows-insider/at-home/get-started) program) you can access a new interface for map sharing. 
-This new functionality is available via the Map Manager interface of the Windows Device portal. To use this tool follow these steps:
-- Make sure you are opted into 20H1 or later (as of September 2019 this means using our Insider program)
-- Enable the Windows Device Portal (WDP), instructions are [here](https://docs.microsoft.com//windows/uwp/debug-test-perf/device-portal-desktop)
-- Plug in a Windows Mixed Reality HMD that you wish to either download an existing map from or import a new map
-- Navigate to the WDP in your browser of choice using the URL provided in the settings screen. 
-  - Once there Navigate to the "Mixed Reality" section and select "Map Manager". 
-  - You can now use the "Download" button to export an existing map from the machine. 
-  - You can use the "Upload a map file" button to import an map from a previous export (perhaps on a different machine). 
-  - You can use "Import" to enable the system to use that map for this HMD on this machine.
+> [!NOTE] Previously, it was possible to use the Spatial Data Packager Tool, however, that tool was originally released as unsupported and is now officially deprecated and no longer functional on 20H1. Instead, please use the inbox Map Manager tool as described above. 
+
   
 ### TRACKING
 
