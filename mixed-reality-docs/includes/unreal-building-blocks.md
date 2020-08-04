@@ -12,11 +12,11 @@
 
 |  Feature  |  Capabilities  |
 | --- | --- |
-| [Gaze](unreal-gaze-input.md) | Let users target holograms with by looking at them |
-| [Hand tracking](unreal-hand-tracking.md) | Add spatial actions to your users gaze input |
-| [Local Spatial Anchors](unreal-spatial-anchors.md) | Save holograms locally in real-world space between application sessions |
-| [Azure Spatial Anchors](unreal-azure-spatial-anchors.md) | Save holograms to the cloud in real-world space between application sessions |
-| [Spatial mapping](unreal-spatial-mapping.md) | Map your physical space with a virtual mesh overlay to mark the boundaries of your environment |
-| [Spatial audio](unreal-spatial-audio.md) | Enhance your apps with immersive 3D audio |
-| [Voice input](unreal-voice-input.md) | Capture spoken keywords, phrases, and dictation from your users|
+| [Gaze](../unreal-gaze-input.md) | Let users target holograms with by looking at them |
+| [Hand tracking](../unreal-hand-tracking.md) | Add spatial actions to your users gaze input |
+| [Local Spatial Anchors](../unreal-spatial-anchors.md) | Save holograms locally in real-world space between application sessions |
+| [Azure Spatial Anchors]()../unreal-azure-spatial-anchors.md) | Save holograms to the cloud in real-world space between application sessions |
+| [Spatial mapping](../unreal-spatial-mapping.md) | Map your physical space with a virtual mesh overlay to mark the boundaries of your environment |
+| [Spatial audio](../unreal-spatial-audio.md) | Enhance your apps with immersive 3D audio |
+| [Voice input](../unreal-voice-input.md) | Capture spoken keywords, phrases, and dictation from your users|
 

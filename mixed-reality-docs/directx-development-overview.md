@@ -10,7 +10,7 @@ keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, 
 
 # Native development overview
 
-![Native banner logo](../images/native_logo_banner.png)
+![Native banner logo](images/native_logo_banner.png)
 
 3D engines like [Unity](unity-development-overview.md) or [Unreal](unreal-development-overview.md) aren't the only Mixed Reality development paths open to you. You can also create Mixed Reality apps by directly coding to the Windows Mixed Reality APIs with DirectX 11 or DirectX 12. By leveraging the platform directly, you're essentially building your own middleware or framework. 
 

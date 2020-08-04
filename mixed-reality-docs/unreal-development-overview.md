@@ -10,7 +10,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 ---
 # Unreal Development Overview
 
-![Unreal banner logo](../images/unreal_logo_banner.png)
+![Unreal banner logo](images/unreal_logo_banner.png)
 
 Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) is now included in Unreal Engine's newest <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 release notes">release</a>. This update includes:
 * Mixed Reality UX Tools plugin support
@@ -61,7 +61,7 @@ Other key features that play a role in mixed reality applications are available 
 
 ### 4. Deploying to a device
 
-If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](unreal-uxt-ch6.md#packaging-and-deploying-the-app) from the Epic Launcher. Once you have those files installed, you're ready to deploy from either the [Unreal editor](unreal-deploying.md) or the [Device Portal](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal).
+If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher. Once you have those files installed, you're ready to deploy from either the [Unreal editor](unreal-deploying.md) or the [Device Portal](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal).
 
 ## What's next?
 
