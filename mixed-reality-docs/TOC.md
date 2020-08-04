@@ -277,12 +277,14 @@
 <!-- Native section -->
 ## Native
 ### [Native development overview](directx-development-overview.md)
+
 ### OpenXR
 #### [OpenXR overview](openxr.md)
 #### [Getting started with OpenXR](openxr-getting-started.md)
 #### [OpenXR best practices](openxr-best-practices.md)
 #### [OpenXR performance](openxr-performance.md)
 #### [OpenXR troubleshooting](openxr-troubleshooting.md)
+
 ### WinRT (Legacy)
 #### Getting started
 ##### [Creating a native holographic project](creating-a-holographic-directx-project.md)
