@@ -10,7 +10,7 @@
 ## [Community Resources](community.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
 # Discover
-## [Get started with mixed reality](index.md)
+## [Get started with mixed reality](get-started-with-mr.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 ## [Case study gallery](case-studies-overview.md)
 ## HoloLens hardware
