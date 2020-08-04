@@ -3,7 +3,7 @@ title: Device portal API reference
 description: API reference for the Windows Device Portal on HoloLens
 author: hamalawi
 ms.author: moelhama
-ms.date: 03/21/2018
+ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, Windows Device Portal, API
 ---
@@ -156,126 +156,161 @@ Parameters
 
 Get the thermal stage of the device (0 normal, 1 warm, 2 critical)
 
-## Perception Simulation Control
+## Map Manager
 
-**/api/holographic/simulation/control/mode (GET)**
+**/api/holographic/mapmanager/mapFiles (GET)**
 
-Get the simulation mode
+Gets the list of the available map files (.mapx).
 
-**/api/holographic/simulation/control/mode (POST)**
+**/api/holographic/mapmanager/anchorFiles (GET)**
 
-Set the simulation mode
+Gets the list of available anchor files (.ancx).
 
-Parameters
-* mode : simulation mode: default, simulation, remote, legacy
+**/api/holographic/mapmanager/srdbFiles (GET)**
 
-**/api/holographic/simulation/control/stream (DELETE)**
+Gets the list of available spatial reconstruction database files (.srdb).
 
-Delete a control stream.
+**/api/holographic/mapmanager/getanchors (GET)**
 
-**/api/holographic/simulation/control/stream (GET/WebSocket)**
+Gets the list of persisted anchors for the current user. 
 
-Open a web socket connection for a control stream.
+### Download/Upload/Delete Files
+**/api/holographic/mapmanager/download (GET)**
 
-**/api/holographic/simulation/control/stream (POST)**
-
-Create a control stream (priority is required) or post data to a created stream (streamId required). Posted data is expected to be of type 'application/octet-stream'.
-
-**/api/holographic/simulation/display/stream (GET/WebSocket)**
-
-Request a simulation video stream containing the content rendered to the system display when in 'Simulation' mode.  A simple format descriptor header will be sent initially, followed by H.264-encoded textures, each preceded by a header indicating the eye index and texture size.
-
-## Perception Simulation Playback
-
-**/api/holographic/simulation/playback/file (DELETE)**
-
-Delete a recording.
+Downloads a map, anchor, or spatial reconstruction database file. The file must have been previously uploaded or exported.
 
 Parameters
-* recording : Name of recording to delete.
+* FileName: Name of file to download.
 
-**/api/holographic/simulation/playback/file (POST)**
+Example: 
+```
+$.post("/api/holographic/mapmanager/download?FileName=" + spaceID)
+```
 
-Upload a recording.
+**/api/holographic/mapmanager/upload (POST)**
 
-**/api/holographic/simulation/playback/files (GET)**
-
-Get all recordings.
-
-**/api/holographic/simulation/playback/session (GET)**
-
-Get the current playback state of a recording.
+Uploads a map, anchor, or spatial reconstruction database file. Once a file is uploaded it can later be imported to be used by the system.
 
 Parameters
-* recording : Name of recording.
+* file: Name of the file to upload.
 
-**/api/holographic/simulation/playback/session/file (DELETE)**
+Example:
+```
+var form_data = new FormData();
+form_data.append("file", file_data);
 
-Unload a recording.
+$.ajax({
+    url: "/api/holographic/mapmanager/upload",
+    dataType: 'json',
+    cache: false,
+    contentType: false,
+    processData: false,
+    data: form_data,
+    type: 'post'
+})
+```
 
-Parameters
-* recording : Name of recording to unload.
+**/api/holographic/mapmanager/delete (POST)**
 
-**/api/holographic/simulation/playback/session/file (POST)**
-
-Load a recording.
-
-Parameters
-* recording : Name of recording to load.
-
-**/api/holographic/simulation/playback/session/files (GET)**
-
-Get all loaded recordings.
-
-**/api/holographic/simulation/playback/session/pause (POST)**
-
-Pause a recording.
+Deletes a map, anchor, or spatial reconstruction database file. The file must have been previously uploaded or exported.
 
 Parameters
-* recording : Name of recording.
+* FileName: Name of file to delete.
 
-**/api/holographic/simulation/playback/session/play (POST)**
+Example: 
+```
+$.post("/api/holographic/mapmanager/delete?FileName=" + spaceID)
+```
 
-Play a recording.
+### Export
+
+**/api/holographic/mapmanager/export (POST)**
+
+Exports the map currently in use by the system. Once exported, it can be downloaded. 
+
+Example: 
+```
+$.post("/api/holographic/mapmanager/export")
+```
+
+**/api/holographic/mapmanager/exportanchors (POST)**
+
+Exports the map currently in use by the system. Once exported, it can be downloaded. 
+Example: 
+```
+$.post("/api/holographic/mapmanager/exportanchors")
+```
+
+**/api/holographic/mapmanager/exportmapandanchors (POST)**
+
+Exports the map and anchors currently in use by the system. Once are exported, they can be downloaded. 
+Example: 
+```
+$.post("/api/holographic/mapmanager/exportmapandanchors")
+```
+
+**/api/holographic/mapmanager/exportmapandspatialmappingdb (POST)**
+
+Exports the map and spatial reconstruction database currently in use by the system. Once they are exported, they can be downloaded. 
+
+Example: 
+```
+$.post("/api/holographic/mapmanager/exportmapandspatialmappingdb")
+```
+
+### Import
+
+**/api/holographic/mapmanager/import (POST)**
+
+Indicates to the system which map should be used be currently used. Can be called on files that have been exported or uploaded.
 
 Parameters
-* recording : Name of recording.
+* FileName: Name of the map to be used. 
 
-**/api/holographic/simulation/playback/session/stop (POST)**
+Example: 
+```
+$.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
+```
 
-Stop a recording.
+**/api/holographic/mapmanager/importanchors (POST)**
 
-Parameters
-* recording : Name of recording.
-
-**/api/holographic/simulation/playback/session/types (GET)**
-
-Get the types of data in a loaded recording.
+Indicates to the system which anchors should be used be currently used. Can be called on files that have been exported or uploaded.
 
 Parameters
-* recording : Name of recording.
+* FileName: Name of the anchors to be used. 
 
-## Perception Simulation Recording
+Example: 
+```
+$.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
+```
 
-**/api/holographic/simulation/recording/start (POST)**
+**/api/holographic/mapmanager/importspatialmappingdb (POST)**
 
-Start a recording. Only a single recording can be active at once. One of head, hands, spatialMapping or environment must be set.
+Indicates to the system which spatial reconstruction database should be used be currently used. Can be called on files that have been exported or uploaded.
 
 Parameters
-* head : Set to 1 to record head data.
-* hands : Set to 1 to record hand data.
-* spatialMapping : Set to 1 to record spatial mapping.
-* environment : Set to 1 to record environment data.
-* name : Name of the recording.
-* singleSpatialMappingFrame : Set to 1 to record only a single spatial mapping frame.
+* FileName: Name of the spatial mapping db to be used. 
 
-**/api/holographic/simulation/recording/status (GET)**
+Example: 
+```
+$.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
+```
 
-Get recording state.
+### Other
 
-**/api/holographic/simulation/recording/stop (GET)**
+**/api/holographic/mapmanager/resetmapandanchorsandsrdb (POST)**
 
-Stop the current recording. Recording will be returned as a file.
+Reset the system the map, anchors and spatial reconstruction database.
+
+Example: 
+```
+$.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
+```
+
+**/api/holographic/mapmanager/status (GET)**
+
+Gets the status of the system, including which map, anchors, and spatial reconstruction database files that were last imported. 
+
 
 ## Mixed Reality Capture
 
@@ -407,6 +442,127 @@ Sets the machine name
 
 Parameters
 * name : New machine name, hex64 encoded, to set to
+
+## Perception Simulation Control
+
+**/api/holographic/simulation/control/mode (GET)**
+
+Get the simulation mode
+
+**/api/holographic/simulation/control/mode (POST)**
+
+Set the simulation mode
+
+Parameters
+* mode : simulation mode: default, simulation, remote, legacy
+
+**/api/holographic/simulation/control/stream (DELETE)**
+
+Delete a control stream.
+
+**/api/holographic/simulation/control/stream (GET/WebSocket)**
+
+Open a web socket connection for a control stream.
+
+**/api/holographic/simulation/control/stream (POST)**
+
+Create a control stream (priority is required) or post data to a created stream (streamId required). Posted data is expected to be of type 'application/octet-stream'.
+
+**/api/holographic/simulation/display/stream (GET/WebSocket)**
+
+Request a simulation video stream containing the content rendered to the system display when in 'Simulation' mode.  A simple format descriptor header will be sent initially, followed by H.264-encoded textures, each preceded by a header indicating the eye index and texture size.
+
+## Perception Simulation Playback
+
+**/api/holographic/simulation/playback/file (DELETE)**
+
+Delete a recording.
+
+Parameters
+* recording : Name of recording to delete.
+
+**/api/holographic/simulation/playback/file (POST)**
+
+Upload a recording.
+
+**/api/holographic/simulation/playback/files (GET)**
+
+Get all recordings.
+
+**/api/holographic/simulation/playback/session (GET)**
+
+Get the current playback state of a recording.
+
+Parameters
+* recording : Name of recording.
+
+**/api/holographic/simulation/playback/session/file (DELETE)**
+
+Unload a recording.
+
+Parameters
+* recording : Name of recording to unload.
+
+**/api/holographic/simulation/playback/session/file (POST)**
+
+Load a recording.
+
+Parameters
+* recording : Name of recording to load.
+
+**/api/holographic/simulation/playback/session/files (GET)**
+
+Get all loaded recordings.
+
+**/api/holographic/simulation/playback/session/pause (POST)**
+
+Pause a recording.
+
+Parameters
+* recording : Name of recording.
+
+**/api/holographic/simulation/playback/session/play (POST)**
+
+Play a recording.
+
+Parameters
+* recording : Name of recording.
+
+**/api/holographic/simulation/playback/session/stop (POST)**
+
+Stop a recording.
+
+Parameters
+* recording : Name of recording.
+
+**/api/holographic/simulation/playback/session/types (GET)**
+
+Get the types of data in a loaded recording.
+
+Parameters
+* recording : Name of recording.
+
+## Perception Simulation Recording
+
+**/api/holographic/simulation/recording/start (POST)**
+
+Start a recording. Only a single recording can be active at once. One of head, hands, spatialMapping or environment must be set.
+
+Parameters
+* head : Set to 1 to record head data.
+* hands : Set to 1 to record hand data.
+* spatialMapping : Set to 1 to record spatial mapping.
+* environment : Set to 1 to record environment data.
+* name : Name of the recording.
+* singleSpatialMappingFrame : Set to 1 to record only a single spatial mapping frame.
+
+**/api/holographic/simulation/recording/status (GET)**
+
+Get recording state.
+
+**/api/holographic/simulation/recording/stop (GET)**
+
+Stop the current recording. Recording will be returned as a file.
 
 ## Performance data
 
