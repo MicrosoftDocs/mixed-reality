@@ -8,7 +8,11 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
 ---
+
+
 # Unity development overview
+
+![Unity banner logo](../images/unity_logo_banner.png)
 
 The fastest path to building a [mixed reality app](app-views.md) in [Unity](https://unity.com) is with the Mixed Reality Toolkit. If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the comprehensive [Asset Store](https://www.assetstore.unity3d.com/) and the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
 
@@ -36,7 +40,7 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 
 ### 2. Core building blocks
 
-All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After exploring the core building blocks listed below, you'll have a toolbox full of features you can integrate into a Mixed Reality project by themselves or through MRTK.
+All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a Mixed Reality project by themselves or through MRTK.
 
 [!INCLUDE[](~/includes/unity-building-blocks.md)]
 
