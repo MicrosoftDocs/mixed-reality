@@ -10,7 +10,7 @@
 | [Add the OpenXR Loader](../openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discover the active OpenXR runtime on your device and access the core and extension functions that it implements |
 | [Try a sample app](../openxr-getting-started.md#building-a-sample-openxr-app) | Explore a UWP and Win32 versions of the same basic app on your device |
 
-
+<!--
 # [WinRT (Legacy)](#tab/winrt)
 
 |  Checkpoint  |  Outcome  |
@@ -20,7 +20,7 @@
 | [Get a HolographicSpace](../getting-a-holographicspace.md) | Control immersive rendering, provide camera data, and access the spatial reasoning APIs |
 | [Render in DirectX](../rendering-in-directx.md) | Reason about the position and orientation of one or more observers of a holographic scene as predicted by the system |
 | [Coordinate systems in DirectX](../coordinate-systems-in-directx.md) | Explore the basis of spatial understanding offered by Windows Mixed Reality APIs. |
-
+-->
 
 
 

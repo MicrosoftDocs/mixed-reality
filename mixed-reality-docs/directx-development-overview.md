@@ -14,8 +14,8 @@ keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, 
 
 3D engines like [Unity](unity-development-overview.md) or [Unreal](unreal-development-overview.md) aren't the only Mixed Reality development paths open to you. You can also create Mixed Reality apps by directly coding to the Windows Mixed Reality APIs with DirectX 11 or DirectX 12. By leveraging the platform directly, you're essentially building your own middleware or framework. 
 
-> [!NOTE]
-> The Windows APIs support applications that are written in both C++ and C#. If you use C#, your application can leverage the **[SharpDX](https://sharpdx.org/)** open source software library.
+> [!IMPORTANT]
+> If you have an existing WinRT project that you'd like to maintain, head over to our main [WinRT documentation](creating-a-holographic-directx-project.md). 
 
 ## Development checkpoints
 
@@ -29,32 +29,33 @@ Windows Mixed Reality supports [two kinds of apps](app-views.md):
 
 The differences between DirectX development for [2D views and immersive views](app-views.md) primarily concern holographic rendering and spatial input. Your UWP application's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 application's HWND are required and remain largely the same. The same is true for the WinRT APIs that are available to your app. But you must use a different subset of these APIs to take advantage of holographic features. For example, the swapchain and frame present is managed by the system for holographic applications in order to enable a pose-predicted frame loop.
 
-Choose one of the tabs below and start your native journey!
-
-[!INCLUDE[](~/includes/native-getting-started.md)]
+|  Checkpoint  |  Outcome  |
+| --- | --- |
+| [What is OpenXR?](../openxr.md) | Begin your native development journey by getting acquainted with OpenXR and what it has to offer |
+| [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [Setup for HoloLens 2](../openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Configure your device and environment for HoloLens 2 development |
+| [Set up for immersive headsets](../openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Configure your device and environment for Windows Immersive Headset development |
+| [Download the developer tools](../openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Try out the Windows Mixed Reality OpenXR Runtime |
+| [Add the OpenXR Loader](../openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discover the active OpenXR runtime on your device and access the core and extension functions that it implements |
+| [Try a sample app](../openxr-getting-started.md#building-a-sample-openxr-app) | Explore a UWP and Win32 versions of the same basic app on your device |
 
 ### 2. Core building blocks
 
 Windows Mixed Reality applications use the following APIs to build [mixed-reality](mixed-reality.md) experiences for HoloLens and other immersive headsets:
 
- - [Holographic rendering](rendering.md)
- - [Gaze](gaze-and-commit.md)
- - [Gesture](gaze-and-commit.md#composite-gestures)
- - [Motion controller](motion-controllers.md)
- - [Voice](voice-input.md)
- - [Spatial mapping](spatial-mapping.md)
+|  Feature  |  Capability  |
+| --- | --- |
+| [Gaze](gaze-and-commit.md) | Let users target holograms with by looking at them |
+| [Gesture](gaze-and-commit.md#composite-gestures) | Add spatial actions to your apps |
+| [Holographic rendering](rendering.md) | Draw a hologram at a precise location in the world around your users |
+| [Motion controller](motion-controllers.md) | Let your users take action in your Mixed Reality environments |
+| [Spatial mapping](spatial-mapping.md) | Map your physical space with a virtual mesh overlay to mark the boundaries of your environment |
+| [Voice](voice-input.md) | Capture spoken keywords, phrases, and dictation from your users |
  
-You can find supporting documentation for these features in the tabs below:
+> [!NOTE]
+> You can find upcoming and in-development core features in the OpenXR [roadmap](../openxr.md#roadmap) documentation.
 
-[!INCLUDE[](~/includes/native-building-blocks.md)]
-
-### 3. Platform capabilities and APIs
-
-Other key features that play a role in mixed reality applications are available without any extra packages or setup. After diving into these more advanced capabilities, you'll be able to build deeper, more complex Mixed Reality apps.
-
-[!INCLUDE[](~/includes/native-capabilities-apis.md)]
-
-### 4. Deploying and testing
+### 3. Deploying and testing
 
 You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.  If you don't have access to a headset, you can use the [HoloLens 2 Emulator](using-the-hololens-emulator.md) or the [Windows Mixed Reality Simulator](using-the-windows-mixed-reality-simulator.md) instead.
 

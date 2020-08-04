@@ -296,14 +296,13 @@
 ##### [Hands and motion controllers](hands-and-motion-controllers-in-directx.md)
 ##### [Voice input](voice-input-in-directx.md)
 ##### [Spatial mapping](spatial-mapping-in-directx.md)
-#### Platform capabilities and APIs
-##### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
-##### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
-##### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
 
 ## Platform capabilities and APIs
 ### Core building blocks
 #### [Scene understanding](scene-understanding-sdk.md)
+#### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
+#### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
+#### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
 #### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 #### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
