@@ -3,12 +3,15 @@ title: Hands and motion controllers in DirectX
 description: Developer guide for using hand tracking and motion controllers in native DirectX apps.
 author: caseymeekhof
 ms.author: cmeekhof
-ms.date: 04/30/2019
+ms.date: 08/04/2020
 ms.topic: article
 keywords: hands, motion controllers, directx, input, holograms
 ---
 
 # Hands and motion controllers in DirectX
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 In Windows Mixed Reality, both hand and [motion controller](motion-controllers.md) input is handled through the spatial input APIs, found in the [Windows.UI.Input.Spatial](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial) namespace. This enables you to easily handle common actions like **Select** presses the same way across both hands and motion controllers.
 

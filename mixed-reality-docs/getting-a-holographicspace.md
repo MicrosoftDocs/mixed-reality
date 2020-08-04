@@ -3,14 +3,16 @@ title: Getting a HolographicSpace
 description: Explains the HolographicSpace API, a core concept for holographic rendering and spatial input.
 author: mikeriches
 ms.author: mriches
-ms.date: 03/21/2018
+ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, spatial input, rendering, swap chain, holographic frame, update loop, game loop, frame of reference, locatability, sample code, walkthrough
 ---
 
 
-
 # Getting a HolographicSpace
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 The <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> class is your portal into the holographic world. It controls immersive rendering, provides camera data, and provides access to spatial reasoning APIs. You will create one for your UWP app's <a href="https://docs.microsoft.com/api/windows.ui.core.corewindow" target="_blank">CoreWindow</a> or your Win32 app's HWND.
 

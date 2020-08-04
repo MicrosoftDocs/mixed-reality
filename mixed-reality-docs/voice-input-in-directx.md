@@ -3,7 +3,7 @@ title: Voice input in DirectX
 description: Explains how to implement voice commands and small phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
-ms.date: 03/21/2018
+ms.date: 08/04/2020
 ms.topic: article
 keywords: walkthrough, voice command, phrase, recognition, speech, directx, platform, cortana, windows mixed reality
 ---
@@ -11,6 +11,9 @@ keywords: walkthrough, voice command, phrase, recognition, speech, directx, plat
 
 
 # Voice input in DirectX
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 This article explains how to implement [voice commands](voice-input.md) plus small-phrase and sentence recognition in a DirectX app for Windows Mixed Reality.
 
