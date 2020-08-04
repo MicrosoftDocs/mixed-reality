@@ -1,8 +1,8 @@
 ---
 title: Mixed Reality Spatial Data Packager Documentation
 description: Documentation for using Mixed Reality Spatial Data Packager
-author: alfred-msft 
-ms.author: yuripek
+author: hferrone 
+ms.author: v-haferr
 ms.date: 08/03/2020
 ms.topic: article
 keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager

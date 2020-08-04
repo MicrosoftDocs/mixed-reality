@@ -129,7 +129,8 @@ A: If you opt into the Windows 20H1 or later builds (via our [Insider program](h
     * You can use the "Upload a map file" button to import an map from a previous export (perhaps on a different machine).
     * You can use "Import" to enable the system to use that map for this HMD on this machine.
 
-> [!NOTE] Previously, it was possible to use the Spatial Data Packager Tool, however, that tool was originally released as unsupported and is now officially deprecated and no longer functional on 20H1. Instead, please use the inbox Map Manager tool as described above. 
+> [!NOTE] 
+> Previously, it was possible to use the Spatial Data Packager Tool, however, that tool was originally released as unsupported and is now officially deprecated and no longer functional on 20H1. Instead, please use the inbox Map Manager tool as described above. 
 
   
 ### TRACKING
