@@ -85,7 +85,7 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 
 * When planning dimensions for your app launcher, shoot for roughly a 30cm cube. So, a 1:1:1 size ratio.
 * Models must be under 10,000 polygons. [Learn more about triangle counts and levels of details (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
-* Test on an immersive headset when possible.
+* Test on an immersive headset.
 * Build details into your model’s geometry where possible – don’t rely on textures for detail.
 * Build “water tight” closed geometry. No holes that are not modeled in.
 * Use natural materials in your object. Imagine crafting it in the real world.
