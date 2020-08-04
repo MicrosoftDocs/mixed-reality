@@ -3,7 +3,7 @@ title: Unreal Development Overview
 description: Overview of mixed reality development using Unreal Engine 4
 author: hferrone
 ms.author: v-haferr
-ms.date: 7/10/2020
+ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
@@ -34,7 +34,7 @@ The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedReality
 
 By the end of this section, you'll have a basic understanding of the Mixed Reality Toolkit, a properly configured development environment for Mixed Reality apps, and a working MRTK project in Unreal.
 
-|  Checkpoint  |  Description  |
+|  Checkpoint  |  Outcome  |
 | --- | --- |
 | [What is MRTK?](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
 | [Install the latest tools](install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |

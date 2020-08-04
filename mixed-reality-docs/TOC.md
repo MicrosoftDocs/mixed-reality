@@ -268,12 +268,13 @@
 #### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
 #### [Streaming in Unreal](unreal-streaming.md)
 
-<!-- Javascript section -->
-## JavaScript
-### [JavaScript development overview](javascript-development-overview.md)
+<!-- Web section -->
+## Web
+### [Web development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)
 ### [WebVR](webvr-overview.md)
 
+<!-- Native section -->
 ## Native
 ### [Native development overview](directx-development-overview.md)
 ### OpenXR
@@ -282,22 +283,25 @@
 #### [OpenXR best practices](openxr-best-practices.md)
 #### [OpenXR performance](openxr-performance.md)
 #### [OpenXR troubleshooting](openxr-troubleshooting.md)
-### WinRT
+### WinRT (Legacy)
+### Getting started
 #### [Creating a native holographic project](creating-a-holographic-directx-project.md)
 #### [Getting a HolographicSpace](getting-a-holographicspace.md)
 #### [Native rendering](rendering-in-directx.md)
-
-## Platform capabilities and APIs
-### Core building blocks
 #### [Coordinate systems](coordinate-systems-in-directx.md)
+### Core building blocks
 #### [Head and eye gaze](gaze-in-directx.md)
 #### [Hands and motion controllers](hands-and-motion-controllers-in-directx.md)
 #### [Voice input](voice-input-in-directx.md)
 #### [Spatial mapping](spatial-mapping-in-directx.md)
-#### [Scene understanding](scene-understanding-sdk.md)
+### Platform capabilities and APIs
 #### [Shared spatial anchors](shared-spatial-anchors-in-directx.md)
 #### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
 #### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
+
+## Platform capabilities and APIs
+### Core building blocks
+#### [Scene understanding](scene-understanding-sdk.md)
 #### [QR code tracking](qr-code-tracking.md)
 ### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 #### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
