@@ -3,7 +3,7 @@ title: Keyboard, mouse, and controller input in DirectX
 description: Explains how to create an app for Windows Mixed Reality that uses keyboard, mouse, and game controllers.
 author: mikeriches
 ms.author: mriches
-ms.date: 03/21/2018
+ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, keyboard, mouse, game controller, xbox controller, HoloLens, desktop, walkthrough, sample code
 ---
@@ -11,6 +11,9 @@ keywords: Windows Mixed Reality, keyboard, mouse, game controller, xbox controll
 
 
 # Keyboard, mouse, and controller input in DirectX
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 Keyboards, mice, and game controllers can all be useful forms of input for Windows Mixed Reality devices. Bluetooth keyboards and mice are both supported on HoloLens, for use with debugging your app or as an alternate form of input. Windows Mixed Reality also supports immersive headsets attached to PCs - where mice, keyboards, and game controllers have historically been the norm.
 

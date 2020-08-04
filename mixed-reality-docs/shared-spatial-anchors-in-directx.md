@@ -3,7 +3,7 @@ title: Shared spatial anchors in DirectX
 description: Explains how to synchronize two HoloLens devices by sharing spatial anchors.
 author: thetuvix
 ms.author: alexturn
-ms.date: 02/24/2019
+ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, scenario, walkthrough, sample code, Azure, Azure Spatial Anchors, ASA
 ---
@@ -11,6 +11,9 @@ keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, sc
 
 
 # Shared experiences in DirectX
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 A shared experience is one where multiple users, each with their own HoloLens, iOS or Android device, collectively view and interact with the same hologram which is positioned at a fixed point in space. This is accomplished through spatial anchor sharing.
 
