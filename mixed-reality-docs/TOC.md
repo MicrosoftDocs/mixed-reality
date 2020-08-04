@@ -285,7 +285,7 @@
 #### [OpenXR performance](openxr-performance.md)
 #### [OpenXR troubleshooting](openxr-troubleshooting.md)
 
-### WinRT (Legacy)
+### WinRT/Legacy
 #### Getting started
 ##### [Creating a native holographic project](creating-a-holographic-directx-project.md)
 ##### [Getting a HolographicSpace](getting-a-holographicspace.md)
