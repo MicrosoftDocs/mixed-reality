@@ -3,7 +3,7 @@ title: Windows Mixed Reality and the new Microsoft Edge
 description: Get ready for the new Microsoft Edge in Windows Mixed Reality. Includes changes to expect, updates to look out for, and known issues.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 07/31/2020
+ms.date: 08/04/2020
 ms.topic: article
 keywords: edge, new, immersive web, microsoft edge, browser, vr
 ---
@@ -51,7 +51,7 @@ Support for classic Win32 applications in Windows Mixed Reality was introduced w
 
 **Workaround**
 
-We've since received feedback that some customers, especially those with multiple physical monitors, would prefer to disable this virtual monitor pre-allocation. To give customers control and choice, we've enabled a workaround that involves changing a registry key value (available with the 2020-07 Cumulative Update for Windows 10 Version 2004).
+We've since received feedback that some customers, especially those with multiple physical monitors, would prefer to disable this virtual monitor pre-allocation. To give customers control and choice we've enabled a workaround that involves changing a registry key value, available with the "2020-07 Cumulative Update Preview for Windows 10 Version 2004 (KB4568831)."
 
 >[!NOTE]
 >Modifying registry key values is intended for advanced users.
@@ -60,7 +60,7 @@ We've since received feedback that some customers, especially those with multipl
 >Disabling virtual monitor pre-allocation may result in your headset display briefly freezing when you launch a Win32 application (such as Steam, the new Microsoft Edge, or Google Chrome) in Windows Mixed Reality.
 
 To disable virtual monitor pre-allocation:
-1. Check **Windows Update** for the 2020-07 Cumulative Update for Windows 10 Version 2004 and install the update when available
+1. Check **Windows Update** for "2020-07 Cumulative Update Preview for Windows 10 Version 2004 (KB4568831)" and install the update when available (you may find the update under **Optional updates available**)
 2. Launch **Registry Editor**
 3. Navigate to "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\"
 4. If the "PreallocateVirtualMonitors" REG_DWORD is not present, create it by selecting **Edit > New > DWORD (32-bit) Value** and entering PreallocateVirtualMonitors as the name
@@ -76,7 +76,3 @@ Virtual monitors will now allocate when you attempt to launch a Win32 applicatio
 - WebXR experiences, including the 360 Viewer extension, may not launch correctly on PCs with a Hybrid GPU setup. You may be able to work around this issue by selecting your dedicated GPU as the default GPU in your graphics card software.
 -	Audio from Microsoft Edge windows is not spatialized.
 -	**Fixed in 360 Viewer extension version 2.3.8**: Opening a 360 video from YouTube in Windows Mixed Reality may result in the video being distorted in the headset. Restarting Edge should invisibly update the 360 Viewer extension to resolve this issue. You can confirm which version of the extension you have by entering `edge://system/` in the address bar and selecting the **Expand** button next to "extensions."
-
-
-
-
