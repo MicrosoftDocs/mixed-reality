@@ -3,7 +3,7 @@ title: Rendering in DirectX
 description: Explains holographic rendering for Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
-ms.date: 03/21/2018
+ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, rendering, 3D graphics, HolographicFrame, render loop, update loop, walkthrough, sample code, Direct3D
 ---
@@ -11,6 +11,9 @@ keywords: Windows Mixed Reality, holograms, rendering, 3D graphics, HolographicF
 
 
 # Rendering in DirectX
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 Windows Mixed Reality is built on DirectX to produce rich, 3D graphical experiences for users. The rendering abstraction sits just above DirectX and lets an app reason about the position and orientation of one or more observers of a holographic scene, as predicted by the system. The developer can then locate their holograms relative to each camera, letting the app render these holograms in various spatial coordinate systems as the user moves around.
 

@@ -3,7 +3,7 @@ title: Coordinate systems in DirectX
 description: Explains how to use Windows Mixed Reality spatial locators, reference frames, spatial anchors, and coordinate systems, how to use the SpatialStage, how to handle tracking loss, how to save and load anchors, and how to do image stabilization.
 author: thetuvix
 ms.author: alexturn
-ms.date: 02/24/2019
+ms.date: 08/04/2020
 ms.topic: article
 keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coordinate system, spatial stage, sample code, image stabilization, spatial anchor, spatial anchor store, tracking loss, walkthrough
 ---
@@ -11,6 +11,9 @@ keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coord
 
 
 # Coordinate systems in DirectX
+
+> [!NOTE]
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
 [Coordinate systems](coordinate-systems.md) form the basis for spatial understanding offered by Windows Mixed Reality APIs.
 
