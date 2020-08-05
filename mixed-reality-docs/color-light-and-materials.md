@@ -64,7 +64,7 @@ Light and color can help make your holograms appear more naturally in a user's e
 
 :::row:::
     :::column:::
-* **Vignetting** - A 'vignette' effect to darken materials can help focus the user's attention on the center of the field of view. This effect darkens the hologram's material at some radius from the user's gaze vector. Note that this is also effective when the user's views holograms from an oblique or glancing angle.
+* **Vignetting** - A 'vignette' effect to darken materials can help focus the user's attention on the center of the field of view. This effect darkens the hologram's material at some radius from the user's gaze vector. Note that this is also effective when the user views holograms from an oblique or glancing angle.
 
 * **Emphasis** - Draw attention to objects or points of interaction by contrasting colors, brightness, and lighting. For a more detailed look at lighting methods in storytelling, see [Pixel Cinematography - A Lighting Approach for Computer Graphics](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).<br>
         <br>
@@ -79,9 +79,9 @@ Light and color can help make your holograms appear more naturally in a user's e
 
 :::row:::
     :::column:::
-Materials are crucial elements for making realistic holograms. By providing proper visual characteristics, you can make compelling holographic objects that can blend well with physical environment. Materials are also important for providing visual feedback for the various types of user's input interactions.  
+Materials are crucial elements for making realistic holograms. By providing proper visual characteristics, you can make compelling holographic objects that can blend well with the physical environment. Materials are also important for providing visual feedback for the various types of user input interactions.  
 
-[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides MRTK Standard Shader which has various visual effect options that can be used for visual feedback. For example, you can use 'Proximity Light' property to provide a lighting effect when the user's finger is appoaching to the object's surface. Learn more about [MRTK Standard Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
+[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides an MRTK Standard Shader with various visual effect options that can be used for visual feedback. For example, you can use 'Proximity Light' property to provide a lighting effect when the user's finger is appoaching the object's surface. Learn more about [MRTK Standard Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
     :::column-end:::
         :::column:::
     *Video loop: Example of visual feedback based on proximity to a bounding box*

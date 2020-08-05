@@ -11,7 +11,7 @@ keywords: UI design, holographic display, content design, dark theme, light them
 
 ![Ulnar side hand location](images/UX/UX_Hero_DarkTheme.jpg)
 
-When designing content for holographic displays, there are several elements that you need to consider achieving the best experience. Below are some of the recommendations. To learn about the characteristics of the holographic display, see [Color, light and materials](color,-light-and-materials.md) page.
+When designing content for holographic displays, there are several elements that you need to consider for achieving the best experience. We've listed some of our recommendations below and you can learn more about the characteristics of holographic displays at [Color, light and materials](color,-light-and-materials.md) page.
 
 <br>
 
@@ -31,20 +31,20 @@ Bright color makes it difficult for the user to see their hands when directly in
 
 **Color uniformity**
 
-Because of the characteristics of holographic displays, a large bright area on the display can become blotchy. By using dark color scheme, you can minimize this issue. 
+Because of the characteristics of holographic displays, a large bright area on the display can become blotchy. By using dark color schemes, you can minimize this issue. 
 
 ## Design guidelines
 
 **Use dark color for the UI background**
 
-By using the dark color scheme, you can minimize the eye fatigue and improve the confidence on direct hand interactions. 
+By using the dark color scheme, you can minimize eye fatigue and improve the confidence on direct hand interactions. 
 
 ![Dark UI examples](images/color_dark_examples.jpg)
 *Examples of dark color used for the content background*
 
 **Use semibold or bold font weight**
 
-HoloLens allows your experience to show beautiful high-resolution text. However, it is recommended to avoid thin font weight such as light or semi-light because the vertical strokes can jitter in small font size. 
+HoloLens allows your experience to show beautiful high-resolution text. However, it is recommended that you avoid thin font weights such as light or semi-light because the vertical strokes can jitter in small font size. 
 
 ![Dark UI examples](images/color_font_examples.jpg)
 *Bold or semi-bold font weight (upper panel) improves the legibility*
