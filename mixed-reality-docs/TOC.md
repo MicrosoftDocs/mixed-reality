@@ -40,6 +40,7 @@
 ### [Spatial mapping](spatial-mapping.md)
 ### [System gesture](system-gesture.md)
 ### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+### [Designing content for holographic display](designing-content-for-holographic-display.md)
 
 ## Interaction models
 ### [Instinctual interactions](interaction-fundamentals.md)
