@@ -381,7 +381,7 @@ If you have a HoloLens2 you can save any scene you've captured by saving the out
 
 If you do not have a HoloLens2 device but want to play with Scene Understanding you will need to download a pre-captured scene. The Scene Understanding sample currently ships with serialized scenes that can be downloaded and used at your own convenience. You can find them here:
 
-[Scene Understanding Sample Scenes](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/Resources/SerializedScenesForPCPath)
+[Scene Understanding Sample Scenes](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/SceneUnderstanding/Examples/StandardAssets/SUScenes/Kitchen)
 
 ## See also
 
