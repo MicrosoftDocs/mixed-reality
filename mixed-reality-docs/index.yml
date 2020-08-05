@@ -31,6 +31,10 @@ highlightedContent:
       itemType: overview
       url: https://docs.microsoft.com/hololens/hololens2-hardware
     # Card
+    - title: Dynamics 365 Mixed Reality
+      itemType: overview
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    # Card
     - title: Try a sample app
       itemType: sample
       url: samples.md
@@ -40,7 +44,7 @@ highlightedContent:
       url: development.md
     # Card
     - title: IT admins
-      itemType: concept
+      itemType: overview
       url: https://docs.microsoft.com/hololens/hololens-requirements
     # Card
     - title: VR enthusiasts
@@ -99,7 +103,7 @@ productDirectory:
           text: Manage your HoloLens updates
         - url: https://docs.microsoft.com/hololens/hololens-release-notes
           text: Release notes
-        - url: https://docs.microsoft.com/hololens/hololens-feedback
+        - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
           text: Troubleshooting & support
 
 # conceptualContent section (optional)
@@ -233,6 +237,17 @@ additionalContent:
               url: in-app-purchases.md
             - text: Submitting to the Microsoft Store
               url: submitting-an-app-to-the-microsoft-store.md
+        # Card
+        - title: Dynamics 365 Mixed Reality
+          links:
+            - text: Dynamics 365 documentation
+              url: https://docs.microsoft.com/dynamics365/mixed-reality/
+            - text: Using Remote Assist
+              url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
+            - text: User guides
+              url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+            - text: Remote Assist learning modules
+              url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
         # Card
         - title: Azure Cloud Services
           links:
