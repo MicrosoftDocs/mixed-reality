@@ -161,12 +161,12 @@ Learn about frequently used common spatial interactions and UI building blocks f
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        [![Install the tools](images/icon-design.jpg)](install-the-tools.md)<br>
+        [![Install the tools](images/icon-design.png)](install-the-tools.md)<br>
          **[Install the tools](install-the-tools.md)**<br>
         Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
     :::column-end:::
     :::column:::
-        [![Start developing](images/icon-developer.jpg)](development.md)<br>
+        [![Start developing](images/icon-developer.png)](development.md)<br>
         **[Start developing](development.md)**<br>
         Choose a development path based on your skill level, work style, or platform interest.
     :::column-end:::
