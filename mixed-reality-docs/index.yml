@@ -59,7 +59,7 @@ productDirectory:
     # Card
     - title: Design
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: images/icon-design.jpg
+      imageSrc: images/icon-design.png
       links:
         - url: design.md
           text: Design and prototype
@@ -75,7 +75,7 @@ productDirectory:
           text: Understand interaction fundamentals
     # Card
     - title: Develop
-      imageSrc: images/icon-developer.jpg
+      imageSrc: images/icon-developer.png
       links:
         - url: development.md
           text: Choose your technology path
