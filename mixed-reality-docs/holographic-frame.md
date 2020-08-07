@@ -1,6 +1,6 @@
 ---
 title: Holographic frame
-description: Users see the world of mixed reality through the holographic frame.
+description: Learn about the holographic frame—the rectangular viewport of the HoloLens—and how to design experiences that are optimized for it.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020

@@ -1,6 +1,6 @@
 ---
 title: Case study - AfterNow's process
-description: AfterNow's process - envisioning, prototyping, building
+description: AfterNow is a mixed reality design and development studio. Learn about how they use their envisioning process to create a product blueprint. 
 author: rwinj
 ms.author: randyw
 ms.date: 03/21/2018

@@ -1,6 +1,6 @@
 ---
 title: Location Based Entertainment with Windows Mixed Reality
-description: Get access to the underlying Holographic native objects in Unity.
+description: Learn about Windows Mixed Reality for Location Based Entertainment—hardware, backpack PCs, tracking, configuration, and support.
 author: jessemcculloch
 ms.author: ishitak
 ms.date: 08/03/2020

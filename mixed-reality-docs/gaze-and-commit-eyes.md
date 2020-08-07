@@ -1,6 +1,6 @@
 ---
 title: Eye-gaze and commit
-description: Overview of the eye-gaze and commit input model
+description: Learn about the eye-gaze and commit input model, a type of gaze and commit in which the gaze is a simple look at an object.
 author: sostel
 ms.author: sostel
 ms.date: 05/05/2019

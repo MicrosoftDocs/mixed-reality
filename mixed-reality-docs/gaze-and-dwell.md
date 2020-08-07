@@ -1,6 +1,6 @@
 ---
 title: Gaze and dwell
-description: General overview of the (eye/head) gaze and dwell input model
+description: Learn about the gaze and dwell input model, useful when gestures and voice commands are inconvenient or unreliable. 
 author:  sostel
 ms.author: sostel
 ms.date: 10/31/2019
