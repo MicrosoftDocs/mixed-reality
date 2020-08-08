@@ -1,6 +1,6 @@
 ---
 title: Performance recommendations for Unity
-description: Unity-specific tips to improve performance with mixed reality apps.
+description: Learn how to optimize performance in Unity. Contents include project settings recommendations, use of the Unity Profiler, reference caching advice, and more.
 author: troy-ferrell
 ms.author: trferrel
 ms.date: 03/26/2019

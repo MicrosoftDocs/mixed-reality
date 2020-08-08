@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Tutorials 
-description: Provides tutorials on mixed reality development.
+description: Find Unity and Unreal tutorials and sample apps for HoloLens 2, Hololens (1st gen), and Mixed Reality Immersive Headsets.
 author: keveleigh
 ms.author: kurtie
 ms.date: 07/30/2020
